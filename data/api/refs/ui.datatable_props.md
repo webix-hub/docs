@@ -1,0 +1,153 @@
+
+Properties
+==========
+
+{{links
+- api/link/ui.datatable_animate_config.md - defines or disables view change animation.
+- api/ui.datatable_autoheight_config.md - adjusts DataTable to the parent container size vertically
+- api/ui.datatable_autowidth_config.md - adjusts DataTable to the parent container size horizontally
+- api/ui.datatable_blockselect_config.md - enables/disables block selection
+- api/link/ui.datatable_borderless_config.md - used to hide the component borders
+- api/ui.datatable_checkboxrefresh_config.md - controls behavior of checkbox editors in grid
+- api/link/ui.datatable_clipboard_config.md - enables/disables clipboard support
+- api/ui.datatable_columnwidth_config.md - defines the default width for columns (in pixels)
+- api/ui.datatable_columns_config.md - configures columns of the table
+- api/link/ui.datatable_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.datatable_css_config.md - the name of a css class that will be applied to the view container
+- api/link/ui.datatable_data_config.md - an inline dataset that data to the component will be load from.
+- api/link/ui.datatable_datafeed_config.md - the url to the data source that the component will use to reload data from
+- api/ui.datatable_datafetch_config.md - defines the start position DataTable will load data from
+- api/link/ui.datatable_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
+- api/link/ui.datatable_datatype_config.md - the type of loaded data
+- api/link/ui.datatable_delimiter_config.md - sets CSV delimiters
+- api/link/ui.datatable_disabled_config.md - disables item
+- api/link/ui.datatable_drag_config.md - enables or disables drag-and-drop
+- api/ui.datatable_dragcolumn_config.md - enables drag-and-drop support for columns
+- api/link/ui.datatable_editvalue_config.md - defines which data item is editable (in case of several data item in the cell/line)
+- api/link/ui.datatable_editable_config.md - allows/denies editing in the view
+- api/link/ui.datatable_editaction_config.md - defines the action on which editors will be opened
+- api/link/ui.datatable_externaldata_config.md - allows defining custom 'move' logic for the component.
+- api/ui.datatable_filtermode_config.md - defines filtering rules in tree-like components
+- api/ui.datatable_fixedrowheight_config.md - defines whether the height should be fixed for all rows or can vary
+- api/ui.datatable_footer_config.md - enables/disables the footer in DataTable (disabled, by default)
+- api/link/ui.datatable_gravity_config.md - sets the view gravity (1 by default)
+- api/ui.datatable_header_config.md - enables/disables the header in DataTable (enabled, by default)
+- api/ui.datatable_headerrowheight_config.md - sets the heigth of the header row
+- api/link/ui.datatable_height_config.md - sets the height of the component
+- api/link/ui.datatable_hidden_config.md - defines whether the view will be hidden initially
+- api/link/ui.datatable_id_config.md - the component ID
+- api/ui.datatable_leftsplit_config.md - the number of the fixed columns from the left side of the table (actual for the <a href="datatable/frozen_columns.md">split mode</a> )
+- api/ui.datatable_livevalidation_config.md - validation during cell editing
+- api/ui.datatable_loadahead_config.md - sets the number of items that will be loaded on each scroll movement relative to the last item in the scrolling direction
+- api/ui.datatable_math_config.md - enables math formulas in DataTable
+- api/link/ui.datatable_maxheight_config.md - sets the maximum height for the view
+- api/link/ui.datatable_maxwidth_config.md - sets the maximum width for the view
+- api/ui.datatable_mincolumnheight_config.md - sets the minimum height for a row
+- api/ui.datatable_mincolumnwidth_config.md - sets the minimum width for a column
+- api/link/ui.datatable_minheight_config.md - sets the minimal height for the view
+- api/link/ui.datatable_minwidth_config.md - sets the minimal width for the view
+- api/link/ui.datatable_mouseeventdelay_config.md - the delay between a real mouse action and invoking the related events
+- api/ui.datatable_multiselect_config.md - enables the multi selection mode
+- api/link/ui.datatable_navigation_config.md - activates the selection keyboard navigation
+- api/link/ui.datatable_on_config.md - allows attaching custom handlers to inner events of the component
+- api/link/ui.datatable_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
+- api/link/ui.datatable_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
+- api/link/ui.datatable_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.datatable_onmousemove_config.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.datatable_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
+- api/ui.datatable_prerender_config.md - invokes the full rendering of DataTable data
+- api/link/ui.datatable_ready_config.md - a handler that is called just after the page has been completely parsed
+- api/link/ui.datatable_removemissed_config.md - defines how to treat items in case of reloading
+- api/ui.datatable_resizecolumn_config.md - enables/disables horizontal resizing of columns
+- api/ui.datatable_resizerow_config.md - enables/disables vertical resizing of rows
+- api/ui.datatable_rightsplit_config.md - sets the number of the fixed columns from the right side of the table (actual for the <a href="datatable/frozen_columns.md">split mode</a> )
+- api/ui.datatable_rowheight_config.md - sets the default height for rows
+- api/ui.datatable_rowlineheight_config.md - default line height for grid's row
+- api/link/ui.datatable_rules_config.md - set of validation rules for the component
+- api/link/ui.datatable_save_config.md - defines urls for datasaving
+- api/link/ui.datatable_scheme_config.md - defines schemes for data processing
+- api/ui.datatable_scroll_config.md - enables or disables scroll for the datatable
+- api/ui.datatable_scrollaligny_config.md - enables/disables scrolling the table just by whole rows (i.e. you won't be allowed to scroll along the full length of rows)
+- api/ui.datatable_scrollx_config.md - enables/disables horizontal scrolling
+- api/ui.datatable_scrolly_config.md - enables/disables vertical scrolling
+- api/ui.datatable_select_config.md - sets the selection mode in DataTable
+- api/ui.datatable_type_config.md - used for configuring presentation of items
+- api/link/ui.datatable_url_config.md - the url of a data feed which will be loaded after component initialization
+- api/link/ui.datatable_width_config.md - sets the width of the component
+- api/ui.datatable_ycount_config.md - defines height of datatable in rows
+}}
+
+@index:
+- api/link/ui.datatable_animate_config.md
+- api/ui.datatable_autoheight_config.md
+- api/ui.datatable_autowidth_config.md
+- api/ui.datatable_blockselect_config.md
+- api/link/ui.datatable_borderless_config.md
+- api/ui.datatable_checkboxrefresh_config.md
+- api/link/ui.datatable_clipboard_config.md
+- api/ui.datatable_columnwidth_config.md
+- api/ui.datatable_columns_config.md
+- api/link/ui.datatable_container_config.md
+- api/link/ui.datatable_css_config.md
+- api/link/ui.datatable_data_config.md
+- api/link/ui.datatable_datafeed_config.md
+- api/ui.datatable_datafetch_config.md
+- api/link/ui.datatable_datathrottle_config.md
+- api/link/ui.datatable_datatype_config.md
+- api/link/ui.datatable_delimiter_config.md
+- api/link/ui.datatable_disabled_config.md
+- api/link/ui.datatable_drag_config.md
+- api/ui.datatable_dragcolumn_config.md
+- api/link/ui.datatable_editvalue_config.md
+- api/link/ui.datatable_editable_config.md
+- api/link/ui.datatable_editaction_config.md
+- api/link/ui.datatable_externaldata_config.md
+- api/ui.datatable_filtermode_config.md
+- api/ui.datatable_fixedrowheight_config.md
+- api/ui.datatable_footer_config.md
+- api/link/ui.datatable_gravity_config.md
+- api/ui.datatable_header_config.md
+- api/ui.datatable_headerrowheight_config.md
+- api/link/ui.datatable_height_config.md
+- api/link/ui.datatable_hidden_config.md
+- api/link/ui.datatable_id_config.md
+- api/ui.datatable_leftsplit_config.md
+- api/ui.datatable_livevalidation_config.md
+- api/ui.datatable_loadahead_config.md
+- api/ui.datatable_math_config.md
+- api/link/ui.datatable_maxheight_config.md
+- api/link/ui.datatable_maxwidth_config.md
+- api/ui.datatable_mincolumnheight_config.md
+- api/ui.datatable_mincolumnwidth_config.md
+- api/link/ui.datatable_minheight_config.md
+- api/link/ui.datatable_minwidth_config.md
+- api/link/ui.datatable_mouseeventdelay_config.md
+- api/ui.datatable_multiselect_config.md
+- api/link/ui.datatable_navigation_config.md
+- api/link/ui.datatable_on_config.md
+- api/link/ui.datatable_onclick_config.md
+- api/link/ui.datatable_oncontext_config.md
+- api/link/ui.datatable_ondblclick_config.md
+- api/link/ui.datatable_onmousemove_config.md
+- api/link/ui.datatable_pager_config.md
+- api/ui.datatable_prerender_config.md
+- api/link/ui.datatable_ready_config.md
+- api/link/ui.datatable_removemissed_config.md
+- api/ui.datatable_resizecolumn_config.md
+- api/ui.datatable_resizerow_config.md
+- api/ui.datatable_rightsplit_config.md
+- api/ui.datatable_rowheight_config.md
+- api/ui.datatable_rowlineheight_config.md
+- api/link/ui.datatable_rules_config.md
+- api/link/ui.datatable_save_config.md
+- api/link/ui.datatable_scheme_config.md
+- api/ui.datatable_scroll_config.md
+- api/ui.datatable_scrollaligny_config.md
+- api/ui.datatable_scrollx_config.md
+- api/ui.datatable_scrolly_config.md
+- api/ui.datatable_select_config.md
+- api/ui.datatable_type_config.md
+- api/link/ui.datatable_url_config.md
+- api/link/ui.datatable_width_config.md
+- api/ui.datatable_ycount_config.md
+

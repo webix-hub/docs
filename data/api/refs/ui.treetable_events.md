@@ -1,0 +1,120 @@
+
+Events
+=======
+
+{{links
+- api/link/ui.treetable_onafteradd_event.md - fires after adding item to datastore
+- api/link/ui.treetable_onafterclose_event.md - fires after the branch has been closed
+- api/link/ui.treetable_onaftercolumndrop_event.md - fires after the column has been dragged and dropped to the target position
+- api/link/ui.treetable_onaftercolumndroporder_event.md - fires after the column order was changed with the help of drag-and-drop
+- api/link/ui.treetable_onaftercontextmenu_event.md - fires after the context menu was called in the item area
+- api/link/ui.treetable_onafterdelete_event.md - fires after item deleting
+- api/link/ui.treetable_onafterdrop_event.md - fires after drag-n-drop was finished
+- api/link/ui.treetable_onaftereditstart_event.md - fires after edit operation was initiated, editor opened and ready for input
+- api/link/ui.treetable_onaftereditstop_event.md - fires after edit operation finished
+- api/link/ui.treetable_onafterfilter_event.md - occurs after datatable was filtered
+- api/link/ui.treetable_onafterload_event.md - fires after xml loading is complete
+- api/link/ui.treetable_onafteropen_event.md - fires after the branch has been opened
+- api/link/ui.treetable_onafterrender_event.md - occurs each time after the view is rendered
+- api/link/ui.treetable_onafterselect_event.md - fires after a cell is selected
+- api/link/ui.treetable_onaftersort_event.md - fires after sorting dataset
+- api/link/ui.treetable_onafterunselect_event.md - fires after a cell is unselected
+- api/link/ui.treetable_onbeforeadd_event.md - fires before adding item to datastore
+- api/link/ui.treetable_onbeforeclose_event.md - fires the moment you attempt to close the tree branch
+- api/link/ui.treetable_onbeforecolumndrag_event.md - fires the monent you start dragging the column from its source potition
+- api/link/ui.treetable_onbeforecolumndrop_event.md - fires the moment you drop the column to its target position
+- api/link/ui.treetable_onbeforecolumndroporder_event.md - fires the moment you drop the column over the target area
+- api/link/ui.treetable_onbeforecontextmenu_event.md - fires before the context menu is called in the item area
+- api/link/ui.treetable_onbeforedelete_event.md - fires before item deleting
+- api/link/ui.treetable_onbeforedrag_event.md - fires before the mouse button is pressed and the cursor is moved over a draggable item
+- api/link/ui.treetable_onbeforedragin_event.md - fires before a dragged element is moved over the droppable area
+- api/link/ui.treetable_onbeforedrop_event.md - fires before a dragged element is released over the droppable area
+- api/link/ui.treetable_onbeforeeditstart_event.md - fires before edit operation is initiated
+- api/link/ui.treetable_onbeforeeditstop_event.md - fires before stop edit command is received
+- api/link/ui.treetable_onbeforefilter_event.md - called when filtering process is started, but data is not filtered yet
+- api/link/ui.treetable_onbeforeload_event.md - occurs immediately before loading XML data has been started
+- api/link/ui.treetable_onbeforeopen_event.md - fires the moment you attempt to open the tree branch
+- api/link/ui.treetable_onbeforerender_event.md - occurs each time before the view is rendered
+- api/link/ui.treetable_onbeforeselect_event.md - fires before a cell is selected
+- api/link/ui.treetable_onbeforesort_event.md - fires before sorting dataset
+- api/link/ui.treetable_onbeforeunselect_event.md - fired before a cell is unselected
+- api/link/ui.treetable_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.treetable_ondatarequest_event.md - called before exucuting auto-loading data call
+- api/link/ui.treetable_ondataupdate_event.md - fires when data item is in update process
+- api/link/ui.treetable_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
+- api/link/ui.treetable_onheaderclick_event.md - occurs after clicking on header
+- api/link/ui.treetable_onitemcheck_event.md - fires when you check an item in tree and treetable
+- api/link/ui.treetable_onitemclick_event.md - fires when a component item was clicked
+- api/link/ui.treetable_onitemdblclick_event.md - fires when a component item was double-clicked
+- api/link/ui.treetable_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
+- api/link/ui.treetable_onmousemove_event.md - fires when the mouse was moved over the specified component
+- api/link/ui.treetable_onmousemoving_event.md - fires when the mouse was moved over the component
+- api/link/ui.treetable_onmouseout_event.md - fires when the mouse was moved out from the specified item
+- api/link/ui.treetable_onresize_event.md - fires when the width or height of DataTable was changed
+- api/link/ui.treetable_onscrollx_event.md - fires when the user scrolls the table left or right
+- api/link/ui.treetable_onscrolly_event.md - fires when the user scrolls the table up or down
+- api/link/ui.treetable_onselectchange_event.md - fires when selection is changed in DataTable
+- api/link/ui.treetable_onstructureload_event.md - fires when the structure of DataTable (columns configuration) is initialized
+- api/link/ui.treetable_onstructureupdate_event.md - fires when structure of datatable was changed ( column added, hidden or reconfigured )
+- api/link/ui.treetable_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation
+- api/link/ui.treetable_onvalidationsuccess_event.md - fires after the newlyloaded/added/edited data has passes validation successfully
+}}
+
+@index:
+- api/link/ui.treetable_onafteradd_event.md
+- api/link/ui.treetable_onafterclose_event.md
+- api/link/ui.treetable_onaftercolumndrop_event.md
+- api/link/ui.treetable_onaftercolumndroporder_event.md
+- api/link/ui.treetable_onaftercontextmenu_event.md
+- api/link/ui.treetable_onafterdelete_event.md
+- api/link/ui.treetable_onafterdrop_event.md
+- api/link/ui.treetable_onaftereditstart_event.md
+- api/link/ui.treetable_onaftereditstop_event.md
+- api/link/ui.treetable_onafterfilter_event.md
+- api/link/ui.treetable_onafterload_event.md
+- api/link/ui.treetable_onafteropen_event.md
+- api/link/ui.treetable_onafterrender_event.md
+- api/link/ui.treetable_onafterselect_event.md
+- api/link/ui.treetable_onaftersort_event.md
+- api/link/ui.treetable_onafterunselect_event.md
+- api/link/ui.treetable_onbeforeadd_event.md
+- api/link/ui.treetable_onbeforeclose_event.md
+- api/link/ui.treetable_onbeforecolumndrag_event.md
+- api/link/ui.treetable_onbeforecolumndrop_event.md
+- api/link/ui.treetable_onbeforecolumndroporder_event.md
+- api/link/ui.treetable_onbeforecontextmenu_event.md
+- api/link/ui.treetable_onbeforedelete_event.md
+- api/link/ui.treetable_onbeforedrag_event.md
+- api/link/ui.treetable_onbeforedragin_event.md
+- api/link/ui.treetable_onbeforedrop_event.md
+- api/link/ui.treetable_onbeforeeditstart_event.md
+- api/link/ui.treetable_onbeforeeditstop_event.md
+- api/link/ui.treetable_onbeforefilter_event.md
+- api/link/ui.treetable_onbeforeload_event.md
+- api/link/ui.treetable_onbeforeopen_event.md
+- api/link/ui.treetable_onbeforerender_event.md
+- api/link/ui.treetable_onbeforeselect_event.md
+- api/link/ui.treetable_onbeforesort_event.md
+- api/link/ui.treetable_onbeforeunselect_event.md
+- api/link/ui.treetable_onbindrequest_event.md
+- api/link/ui.treetable_ondatarequest_event.md
+- api/link/ui.treetable_ondataupdate_event.md
+- api/link/ui.treetable_ondragout_event.md
+- api/link/ui.treetable_onheaderclick_event.md
+- api/link/ui.treetable_onitemcheck_event.md
+- api/link/ui.treetable_onitemclick_event.md
+- api/link/ui.treetable_onitemdblclick_event.md
+- api/link/ui.treetable_onloaderror_event.md
+- api/link/ui.treetable_onmousemove_event.md
+- api/link/ui.treetable_onmousemoving_event.md
+- api/link/ui.treetable_onmouseout_event.md
+- api/link/ui.treetable_onresize_event.md
+- api/link/ui.treetable_onscrollx_event.md
+- api/link/ui.treetable_onscrolly_event.md
+- api/link/ui.treetable_onselectchange_event.md
+- api/link/ui.treetable_onstructureload_event.md
+- api/link/ui.treetable_onstructureupdate_event.md
+- api/link/ui.treetable_onvalidationerror_event.md
+- api/link/ui.treetable_onvalidationsuccess_event.md
+
+

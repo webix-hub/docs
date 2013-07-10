@@ -1,0 +1,36 @@
+Values 
+=============
+
+
+{{memo Manupilates values of the form and form fields. }}
+
+
+
+Methods
+-------
+
+{{links
+- api/values_clear.md - clears all the field in a specified form
+- api/values_focus.md - sets focus into the necessary component
+- api/values_getvalues.md - derives input values from the form
+- api/values_isdirty.md - checks whether changes within form were made
+- api/values_setdirty.md - marks the form  as the one with changed values
+- api/values_setvalues.md - sets values into all the form inputs
+}}
+
+
+Events
+------
+
+{{links
+- api/values_onafterload_event.md - fires after xml loading is complete
+- api/values_onchange_event.md - fires when data in the input is changed
+}}
+
+
+
+
+@index:
+- api/refs/values_methods.md
+- api/refs/values_events.md
+

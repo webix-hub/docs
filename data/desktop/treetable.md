@@ -1,0 +1,73 @@
+Treetable
+===============
+
+###Overview
+
+Ui-related treetable inherits from [view](desktop/view.md). Being a hybrid between [DataTable](datatable/index.md) and [tree](datatree/index.md) it 
+shares a number of their properties and methods. 
+
+
+<img src="desktop/treetable.png"/>
+
+{{sample 15_datatable/30_treetable/01_init.html }}
+
+###Initialization
+
+{{note
+Note that you need to set **{common.treetable()}** template for a column that should display the tree. Otherwise, you'll get standard datatable. 
+}}
+
+~~~js
+webix.ui({
+	view:"treetable",
+	columns:[
+		{ id:"id",	header:"", width:50},
+		{ id:"value", header:"Film title", template:"{common.treetable()} #value#"},
+		{ id:"chapter",	header:"Mode",	width:200}
+	],
+    data: "..." //dataset, variable or path
+})
+~~~
+{{sample 15_datatable/30_treetable/01_init.html }}
+
+Tree table is populated with hierarchical data coming in <acronym title="Extensible Markup Language">XML</acronym> and <acronym title="JavaScript Object 
+Notation">JSON</acronym> [data formats](desktop/data_types.md). IDs of the coulmns must coincide with data keys from the initial dataset
+
+###Working with Treetable
+
+Common Tasks here include the following and coincide with those of the datatable. 
+
+- [Filtering](datatable/filtering.md) - built-in and custom filtering in various [filter modes](api/ui.datatable_filtermode_config.md). 
+
+{{sample 15_datatable/30_treetable/04_filter.html }}
+
+- [Selection](datatable/selection.md) by cells, row and columns in multiselect and blockselect modes. 
+
+{{sample 15_datatable/30_treetable/06_selection.html }}
+
+- [Data Export to Excel and PDF](datatable/export.md)
+
+{{sample 15_datatable/30_treetable/12_export.html }}
+
+- [Copy-Paste Operations](datatable/copying.md)
+
+{{sample 15_datatable/30_treetable/13_copypaste.html }}
+
+- [Item Editing](desktop/edit.md)
+
+
+
+
+
+###API Reference
+
+[Methods, properties and events](api__refs__ui.treetable.html)
+
+###Related Articles
+- desktop/data_object.md
+- [Tree](datatree/index.md)
+- datatree/node_templates.md
+- [Sizing Components](desktop/dimensions.md)
+- [Resizing](desktop/resizing.md)
+- [Redefinition of the Components](desktop/redefinition.md)
+- [Treetable CSS Image Map](desktop/treetable_css.md)

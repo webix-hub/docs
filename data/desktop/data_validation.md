@@ -1,0 +1,410 @@
+Data Validation
+=============
+
+All the data from input fields must be validated before being sent to server. Data validation is implemented with [dataprocessor](desktop/dataprocessor.md), 
+[htmlform](desktop/htmlform.md) and [form](desktop/form.md) as well as with all the data management componens ([datatable](datatable/index.md), [dataview](desktop/dataview.md), [tree](datatree/index.md), 
+[treetable](desktop/treetable.md), [list](desktop/list.md)). 
+
+Data validation is activated: 
+
+- Generally, validation is started on calling the **validate()** method. You can call it:
+	- on **form submitting**;
+    - on any **inner event** (*onChange* for form, *onAfterEditStop* for data component);
+- With the **DataProcessor** object data is validated each time you save it to server. If validation fails, data isn't sent to server;
+- With **data components** data is validated each time changes are made - [editing](desktop/edit.md), [adding](desktop/add_delete.md) and [updating](desktop/update.md) (the moment *add()* and *update()* methods are called);
+- By means of on-the-go [HTML5 validation](#html5) that works for form and htmlform.
+
+{{note
+While the first three are features of this library and work in conjunction with [validation rules](#rules), the latter is a built-in HTML5 feature. 
+}}
+
+Within form and htmlform, data validation is bound to a **submit** [button](desktop/controls.md#button) with the help of **click** [event handler](desktop/event_handling.md). 
+
+~~~js
+{ view:"button", value: "Submit", click:function(){
+			form.validate(); }
+} 
+~~~
+
+In case of data components, validation can be set on data loading to ensure that data came with right values: 
+ 
+~~~js
+ webix.ui({
+ 	view:"datatable",
+    ..// config
+ 	ready:function(){
+		this.validate();}
+});
+~~~
+ 
+
+{{sample 15_datatable/25_validation/01_existing_data.html }}
+
+##Partial Validation
+
+With the **validate()** method you can validate:
+
+- the whole form/component:
+
+~~~js
+form.validate(); //all fields are validated
+list.validate(); // data of the whole list is validated
+~~~
+
+- specific component item;
+
+~~~js
+list.validate(2); //data item with id=2 will be validated
+~~~
+
+
+##Validation Message
+
+If any record or field fails validation, it is marked with built-in **red highlighting** (true for both in-library and HTML5 validation).
+
+Additionally, a **custom message** can be set. It's done in two ways: 
+
+**1** . Webix message can be used together with the **validate()** method within the **sumbit_form** custom function;
+
+~~~js
+webix.ui({
+	view:"form", 
+	id:"myform", 
+	elements:[
+		{},  //input fields
+		{ view:"button", inputWidth:300, label:"Submit", click:"submit_form"}]
+});
+ 
+submit_form = function(){
+	if (this.getParentView().validate()) //on success
+		webix.message("All is correct");
+	else
+		webix.message({ type:"error", text:"Form data is invalid" });
+};
+~~~
+
+**2** . Webix message can be attached to validation events  with the help of its **on** property. Possible events here are:
+
+- **onAfterValidation** - triggers on validation process complete;
+- **onValidationSuccess** - triggers if data passes validation successfully;
+- **onValidationError** - triggers in case an error during validation happens. 
+
+Here you can see how message can be formed in case of a validation error:
+
+~~~js
+on:{
+webix.ui({
+	view:"form",
+	on:{
+		onValidationError:function(id, value){
+			text = "Login can't be empty";
+			webix.message({ type:"error", text:text });
+	}
+});
+~~~
+
+{{sample 13_form/04_validation/04_message_complex.html }}
+
+Message boxes of all types are described [here](desktop/message_boxes.md). 
+
+##Validation Rules {#rules}
+
+The function checks if data complies to certain rules defined in the **rules** object that contains a collection of **property-rule** pairs. Predefined rules are accessed through **webix.rules** class. 
+
+**Form validation**
+
+Here you need to specify **name** of the validated control and a rule for it. **Name** is read-only property that can be assigned to any input of the form/ htmlform. 
+
+~~~js
+view:"form", //any view
+rules:{
+	field1_name:rule1,
+    field2_name:rule2
+}
+~~~
+
+**Component Data Validation**
+
+Here you need to define which data item you'd like to validate, namely specify its template #value# or, in case of [datatable](datatable/index.md), column ID. 
+
+~~~js
+rules:{
+	"template/ID": rule
+}
+~~~
+
+####Validation rules can be of three types:
+
+- Predefined Rules
+- Custom Rules
+- Rules using Special Validation Keys
+
+##Predefined Rules
+
+There're three of them: 
+
+- **isNotEmpty** - checks whether a value is empty;
+- **isNumber** - checks whether a value is number;
+- **isEmail** - checks whether a value is e-mail (looks for an @-sign, fullstop, text after it).
+
+~~~js
+webix.ui({
+		view:"form1",
+        elements:[
+               { view:"text", label:'Login', name:"login"},
+				....],
+		rules:{
+			login: webix.rules.isNotEmpty,
+			email: webix.rules.isNumber,
+			phone: webix.rules.isEmail
+			}
+	});
+~~~
+
+{{sample 13_form/04_validation/06_validation_rules.html}}
+
+##Custom Rules
+
+Basically, any custom function can define a rule. Such function takes the validated **value** as parameter. 
+
+Validation rules may define the minimal and maximum value for the form field or check whether the input data complies to a certain criterion. 
+
+{{snippet
+Validation Criteria for Numbers
+}}
+~~~js
+webix.ui({
+	view:"form",
+	rules:{
+		text1:function(value){ return value > 100; },  // over 1400
+		text2:function(value){ return value < 100; }, // below 100
+		text3:function((value){ return value > 0;} //positive
+	}
+});
+~~~
+
+{{sample 13_form/04_validation/07_custom_rules.html}}
+
+##Special Validation Keys
+
+The keys are used with both predefined and custom rules for special cases, for instance:
+
+- if you need apply the same rule to each property of data object, use **$all** key; 
+- if you need data from several form fields for validation, use **$obj** key. 
+
+**$all** key
+
+{{snippet
+All the fields must be filled
+}}
+~~~js
+rules:{
+	$all:webix.rules.isNotEmpty
+}
+~~~
+
+{{sample 13_form/04_validation/03_common_rule.html}}
+
+**$obj** key
+
+The whole data object is passed into the rule while field data is accessed as **obj.field_name** or **obj.template/ID**. 
+
+{{snippet
+Both votes and rank values must be positive
+}}
+~~~js
+rules: {
+	$obj:function(obj){
+		return obj.votes > 0 && obj.rank > 0;}
+} 
+~~~
+
+{{sample 15_datatable/25_validation/02_complex_rule.html }}
+
+It is as well used in defining complex rules, e.g. when password confirmation is required. 
+
+{{snippet
+Passwords must be equal
+}}
+~~~js
+rules:{
+	$obj:function(data) //data = obj
+		if (data.pass1 != data.pass2){
+			webix.message("Passwords are not the same"); 
+			return false;
+		}
+	return true;
+}
+~~~
+
+{{sample 13_form/04_validation/08_confirmation.html}}
+
+Note, that even if you don't pass data object into the function, you still can work with all its values deried with form **getValues()** method. 
+
+{{snippet
+Complex Rule
+}}
+~~~js
+webix.ui({
+	view:"form",
+	rules:{
+		$obj:function(){
+			var data = this.getValues(); //!getting data object
+			if (!webix.rules.isEmail( data.email ))  //ckecking email
+            	return false;
+		if (data.name == "") //checking name
+        	return false;
+		return true; //success!
+		}
+	}
+});
+~~~
+
+{{sample 13_form/04_validation/02_complex_rule.html }}
+
+What should be taken into account:
+ 
+- If there are fields without **name** property, the function returns *false*;
+- In case all rules are observed, the function returns *true* and the form is treated as valid. 
+
+
+##Data Validation for Components
+
+As with form, rules are set within the component constructor. With validation enabled, you'll be warned about invalid data in your component on client side while avoiding loading wrong data to server. 
+
+The validated data item is defined by its template, rules being the same as with form elements:
+
+{{snippet
+List Data Validation
+}}
+~~~js
+webix.ui({
+	view:"list",
+    template:"#rank#. #title#",
+    rules:{
+    	title: webix.rules.isNotEmpty
+    },
+    ..//list config
+})
+~~~
+
+As a result, you cannot add an empty record to list data. 
+
+{{sample 05_list/06_validation.html }}
+
+Read more about [data templates](desktop/html_templates.md) here. 
+
+With [datatable](datatable/index.md) component we need a column ID, since it correlates with data items. 
+
+{{snippet
+Datatable Data Validation
+}}
+~~~js
+webix.ui({
+	view:"datatable",
+	columns:[
+		{ id:"rank", header:"", ..},
+		{ id:"title", header:"", ..}
+    ],
+    rules:{
+		"rank": positiveNumber, //custom rule
+		"votes": positiveNumber
+	}
+})
+~~~
+
+{{sample 15_datatable/25_validation/01_existing_data.html}}
+
+Invalid data is highlighted within the component and cannot be sent to server (in case you work with [dataprocessor](desktop/dataprocessor.md)).
+
+**Validation during in_Component editing**
+
+By default, with rules defined, validation is started each time we finish editing and close the editor for this or that data item. 
+
+However, **editing events** allow validation with an editor opened. The obvious bonus of such method is that until new data is valid, it can't be changed within the component. 
+
+Here the **onBeforeEditStop** event comes to our help. It's attached to the component you work with: 
+
+~~~js
+webix.ui({
+	view:"datatable",
+    ..//config
+	on:{
+		onBeforeEditStop:function(state, editor, ignore){
+			var check = ( editor.type.getValue() != "" );
+			if (!ignore && !check){
+				webix.message(editor.column+" must not be empty");
+			return false;
+				}
+			}
+		}
+});
+~~~
+
+{{sample 15_datatable/25_validation/07_edit_validation.html}} 
+
+The function takes three arguments here:
+
+- **state** - the object that stores old and new value of the text editor;
+- **editor** - the editor being used;
+- **ignore** - the flag to indicate user action after editing, whether they save the new data or escape the saving thus restoring the old data. 
+
+More information about text editors you can find in the [dedicated article](desktop/editing.md).
+
+##HTML5 Data Validation {#html5}
+
+Here we speak about clientside, in-browser data validation powered by HTML5 means. 
+
+In HTML5 layout input tags come in a plenty of types and feature a number of attributes that define validation pattern. 
+
+Input types conside with a **type** property of the view **text** while other input attributes are listed within the **attributes** object property: 
+
+<table>
+    <tr class="row0">
+        <th class="col0 centeralign">  HTML  </th><th class="col1 centeralign">  Javascript  </th>
+    </tr>
+    <tr class="row1">
+        <td class="col0 leftalign">  
+~~~html
+<input type="text" id="text1" 
+	title="First name is required!" 
+    maxlength="25"
+    placeholder="Your name" required>
+<label for="text1">First name</label>
+~~~
+        </td>
+        <td class="col1 leftalign"> 
+~~~js
+{ view:"text", type:"text", attributes:{
+			maxlength:25,
+			required:"true",
+			title:"First name is required!"
+	}, value:'', label:"First Name"},
+~~~
+        </td>
+    </tr>
+
+</table>
+
+Here validation is defined by **required** attribute.
+
+The validation process starts as soon as you type the first character into the field. When the necessary pattern is observed, a red highlighting disappears. Furthermore, if you try submitting the form, a validation  error
+message appears for each field that has been incorrectly filled: 
+
+- in case of the wrong filling: "Please enter an email address/ a URL !" - depending on the *type* property value;
+- in case of an empty field: "Please fill out this field!"
+
+HTML5 input types for the library's form component are as follows:: 
+
+- **text** (default type for this lib);
+- **password** - hides typed characters;
+- **email** - requires **@** symbol for validation;
+- **url** - requires **http://** prefix for validation. 
+
+{{sample 13_form/04_validation/10_html5_validation.html}}
+
+###Related Articles
+
+- [Creating Message Boxes](desktop/message_boxes.md)
+
+@complexity:2

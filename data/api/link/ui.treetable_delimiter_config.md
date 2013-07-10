@@ -1,0 +1,1 @@
+@link: api/tablepaste_delimiter_config.md

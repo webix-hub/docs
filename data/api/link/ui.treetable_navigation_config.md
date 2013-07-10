@@ -1,0 +1,1 @@
+@link: api/link/ui.datatable_navigation_config.md

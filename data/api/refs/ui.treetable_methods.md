@@ -1,0 +1,272 @@
+
+Methods
+=======
+
+{{links
+- api/link/ui.treetable_add.md - adds an item to the store
+- api/link/ui.treetable_addcellcss.md - adds a css class to the cell
+- api/link/ui.treetable_addcss.md - applied CSS class to a component item
+- api/link/ui.treetable_addrowcss.md - adds a css class to the row
+- api/link/ui.treetable_adjust.md - adjusts the component to the size of the parent HTML container
+- api/link/ui.treetable_adjustcolumn.md - adjusts a column to the width of the content
+- api/link/ui.treetable_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.treetable_bind.md - binds components
+- api/link/ui.treetable_blockevent.md - temporarily blocks triggering of ALL events of the calling object
+- api/link/ui.treetable_callevent.md - calls an inner event
+- api/link/ui.treetable_checkall.md - check all items in tree
+- api/link/ui.treetable_checkitem.md - checks the checkbox	related to the specified item
+- api/link/ui.treetable_clearall.md - removes all items from the component
+- api/link/ui.treetable_clearcss.md - removes css class from all items
+- api/link/ui.treetable_clearvalidation.md - removes all validation marks from the component
+- api/link/ui.treetable_close.md - closes the branch with the specified id
+- api/link/ui.treetable_closeall.md - closes all branches in the tree
+- api/link/ui.treetable_collectvalues.md - returns an array of unique values of the specified column
+- api/link/ui.treetable_columnid.md - returns the id of the column at the specified index
+- api/link/ui.treetable_copy.md - copies an item to the same or another object
+- api/link/ui.treetable_count.md - returns the count of items in the table
+- api/link/ui.treetable_define.md - redefines a single configuration property (or a hash of properties)
+- api/link/ui.treetable_destructor.md - destructs the calling object
+- api/link/ui.treetable_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
+- api/link/ui.treetable_disable.md - disables the calling view (makes it dimmed and unclickable)
+- api/link/ui.treetable_eachcolumn.md - iterates over all columns in the table
+- api/link/ui.treetable_eachrow.md - iterates over all rows in the table
+- api/link/ui.treetable_edit.md - enables the edit mode for the specified item
+- api/link/ui.treetable_editcancel.md - cancels the edit mode and closes all opened editors. The component is still editable
+- api/link/ui.treetable_editcell.md - enables the edit mode for the specified cell
+- api/link/ui.treetable_editcolumn.md - enables the edit mode for the specified column
+- api/link/ui.treetable_editnext.md - closes the current editor and opens one in the next cell of the row
+- api/link/ui.treetable_editrow.md - enables the edit mode for the specified row
+- api/link/ui.treetable_editstop.md - stops the edit mode and closes all opened editors. The component is still editable
+- api/link/ui.treetable_enable.md - enables the calling view that was disabled by the 'disable' method
+- api/link/ui.treetable_exists.md - checks whether an item with the specified id exists
+- api/link/ui.treetable_exporttoexcel.md - exports data to an Excel file
+- api/link/ui.treetable_exporttopdf.md - exports data to a PDF file
+- api/link/ui.treetable_filter.md - filters the component
+- api/link/ui.treetable_filterbyall.md - refilters DataTable by all specified filters
+- api/link/ui.treetable_focuseditor.md - moves focus to the active editor
+- api/link/ui.treetable_getbranchindex.md - gets index of the node in a specific branch
+- api/link/ui.treetable_getchecked.md - returns ids of the checked items
+- api/link/ui.treetable_getchildviews.md - returns child views of the calling component
+- api/link/ui.treetable_getcolumnconfig.md - returns the configuration object of the specified column
+- api/link/ui.treetable_getcolumnindex.md - returns the index of the column with the specified id
+- api/link/ui.treetable_geteditstate.md - returns info about active editor object
+- api/link/ui.treetable_geteditor.md - returns editor object
+- api/link/ui.treetable_geteditorvalue.md - returns the value of the active (currently open) editor
+- api/link/ui.treetable_getfilter.md - returns the filter object that the component uses to filter the values of the specified column
+- api/link/ui.treetable_getfirstchildid.md - gets the ID of the first child of the specified branch
+- api/link/ui.treetable_getfirstid.md - returns the ID of the first item
+- api/link/ui.treetable_getheadercontent.md - returns set of helpers for header content manipulation
+- api/link/ui.treetable_getidbyindex.md - returns the id of the item with the specified index
+- api/link/ui.treetable_getindexbyid.md - returns the index of the item with the specified id
+- api/link/ui.treetable_getitem.md - gets the object of the data item with the specified id
+- api/link/ui.treetable_getlastid.md - returns the id of the last item
+- api/link/ui.treetable_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
+- api/link/ui.treetable_getnextsiblingid.md - returns the id of the next sibling of the specified node
+- api/link/ui.treetable_getnode.md - returns the main HTML container for the calling object
+- api/link/ui.treetable_getopenitems.md - returns ids of the opened branches
+- api/link/ui.treetable_getpage.md - returns the currently visible page in case of paged view
+- api/link/ui.treetable_getpager.md - returns the pager object associated with the component
+- api/link/ui.treetable_getparentid.md - get the ID of the parent node of the specified item
+- api/link/ui.treetable_getparentview.md - returns the parent view of the component
+- api/link/ui.treetable_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
+- api/link/ui.treetable_getprevsiblingid.md - returns the id of the previous sibling of the specified node
+- api/link/ui.treetable_getscrollstate.md - returns the current position of scrolls
+- api/link/ui.treetable_getselectedid.md - returns the selected cells
+- api/link/ui.treetable_getstate.md - returns the current state of the view
+- api/link/ui.treetable_getvisiblecount.md - returns count of visible rows
+- api/link/ui.treetable_group.md - groups data by the specified data property
+- api/link/ui.treetable_hascss.md - checks if item has specific css class
+- api/link/ui.treetable_hasevent.md - checks whether the component has the specified event
+- api/link/ui.treetable_hide.md - hides the view
+- api/link/ui.treetable_hidecolumn.md - hides the specified column
+- api/link/ui.treetable_hideoverlay.md - hides previously defined overlay
+- api/link/ui.treetable_isbranch.md - checks whether the node has any children
+- api/link/ui.treetable_isbranchopen.md - checks whether the specified branch opened or closed
+- api/link/ui.treetable_ischecked.md - checks whether the specified node is checked
+- api/link/ui.treetable_iscolumnvisible.md - returns true if column is visible
+- api/link/ui.treetable_isenabled.md - checks whether the view is enabled
+- api/link/ui.treetable_isvisible.md - checks whether the view is visible
+- api/link/ui.treetable_load.md - loads data from an external data source
+- api/link/ui.treetable_loadbranch.md - loads data to the specified branch
+- api/link/ui.treetable_loadnext.md - not implmented, do nothing
+- api/link/ui.treetable_locate.md - converts an HTML node or event object to in-table position
+- api/link/ui.treetable_mapcells.md - applies the callback to a range of cells
+- api/link/ui.treetable_mapevent.md - routes events from one object to another
+- api/link/ui.treetable_marksorting.md - cancels sorting and recovers default data presentation
+- api/link/ui.treetable_move.md - moves the specified item to the new position
+- api/link/ui.treetable_movebottom.md - moves the specified item to the last position
+- api/link/ui.treetable_movecolumn.md - moves column to different position
+- api/link/ui.treetable_movedown.md - increases the item index and moves the item to the new position
+- api/link/ui.treetable_moveselection.md - moves selection in the specified direction
+- api/link/ui.treetable_movetop.md - moves the specified item to the first position
+- api/link/ui.treetable_moveup.md - decreases the item index and moves the item to the new position
+- api/link/ui.treetable_open.md - opens the branch with the specified id
+- api/link/ui.treetable_openall.md - opens all branches in the tree
+- api/link/ui.treetable_parse.md - loads data to the component from an inline data source
+- api/link/ui.treetable_refresh.md - repaints the whole view or a certain item
+- api/link/ui.treetable_refreshcolumns.md - refreshes the structure of DataTable
+- api/link/ui.treetable_refreshheadercontent.md - refreshes the header row of DataTable
+- api/link/ui.treetable_registerfilter.md - registers a filter element
+- api/link/ui.treetable_remove.md - removes the specified item from datastore
+- api/link/ui.treetable_removecellcss.md - remove css class from the cell of datatable
+- api/link/ui.treetable_removecss.md - removes CSS class from a component item
+- api/link/ui.treetable_removerowcss.md - remove css class from the row
+- api/link/ui.treetable_render.md - renders the specified item or the whole component
+- api/link/ui.treetable_resize.md - adjusts the view to a new size
+- api/link/ui.treetable_scrollto.md - scrolls the view to the defined position
+- api/link/ui.treetable_serialize.md - serializes data to a json object
+- api/link/ui.treetable_setcolumnwidth.md - sets the width of the specified column
+- api/link/ui.treetable_setpage.md - makes the specified page visible (assuming that the pager was defined )
+- api/link/ui.treetable_setrowheight.md - sets the height of the specified row
+- api/link/ui.treetable_setstate.md - restores the specified state
+- api/link/ui.treetable_show.md - makes the component visible
+- api/link/ui.treetable_showcell.md - scrolls the table (if needed) to make the specified cell visible
+- api/link/ui.treetable_showcolumn.md - shows the column which was previously hidden by method 'hidecolumn'
+- api/link/ui.treetable_showitem.md - 'scrolls' the table to make the specified row visible
+- api/link/ui.treetable_showitembyindex.md - 'scrolls' the table to make the specified row visible
+- api/link/ui.treetable_showoverlay.md - shows the overlay message over the body of DataTable
+- api/link/ui.treetable_sort.md - sorts datastore
+- api/link/ui.treetable_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.treetable_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
+- api/link/ui.treetable_uncheckall.md - uncheck all items in the tree
+- api/link/ui.treetable_uncheckitem.md - unchecks the checkbox	related to the specified item
+- api/link/ui.treetable_ungroup.md - ungroups data
+- api/link/ui.treetable_updateitem.md - sets properties of the data item
+- api/link/ui.treetable_validate.md - validates one record or all dataset against validation rules
+- api/link/ui.treetable_validateeditor.md - validates data in currently active editor
+}}
+
+@index:
+- api/link/ui.treetable_add.md
+- api/link/ui.treetable_addcellcss.md
+- api/link/ui.treetable_addcss.md
+- api/link/ui.treetable_addrowcss.md
+- api/link/ui.treetable_adjust.md
+- api/link/ui.treetable_adjustcolumn.md
+- api/link/ui.treetable_attachevent.md
+- api/link/ui.treetable_bind.md
+- api/link/ui.treetable_blockevent.md
+- api/link/ui.treetable_callevent.md
+- api/link/ui.treetable_checkall.md
+- api/link/ui.treetable_checkitem.md
+- api/link/ui.treetable_clearall.md
+- api/link/ui.treetable_clearcss.md
+- api/link/ui.treetable_clearvalidation.md
+- api/link/ui.treetable_close.md
+- api/link/ui.treetable_closeall.md
+- api/link/ui.treetable_collectvalues.md
+- api/link/ui.treetable_columnid.md
+- api/link/ui.treetable_copy.md
+- api/link/ui.treetable_count.md
+- api/link/ui.treetable_define.md
+- api/link/ui.treetable_destructor.md
+- api/link/ui.treetable_detachevent.md
+- api/link/ui.treetable_disable.md
+- api/link/ui.treetable_eachcolumn.md
+- api/link/ui.treetable_eachrow.md
+- api/link/ui.treetable_edit.md
+- api/link/ui.treetable_editcancel.md
+- api/link/ui.treetable_editcell.md
+- api/link/ui.treetable_editcolumn.md
+- api/link/ui.treetable_editnext.md
+- api/link/ui.treetable_editrow.md
+- api/link/ui.treetable_editstop.md
+- api/link/ui.treetable_enable.md
+- api/link/ui.treetable_exists.md
+- api/link/ui.treetable_exporttoexcel.md
+- api/link/ui.treetable_exporttopdf.md
+- api/link/ui.treetable_filter.md
+- api/link/ui.treetable_filterbyall.md
+- api/link/ui.treetable_focuseditor.md
+- api/link/ui.treetable_getbranchindex.md
+- api/link/ui.treetable_getchecked.md
+- api/link/ui.treetable_getchildviews.md
+- api/link/ui.treetable_getcolumnconfig.md
+- api/link/ui.treetable_getcolumnindex.md
+- api/link/ui.treetable_geteditstate.md
+- api/link/ui.treetable_geteditor.md
+- api/link/ui.treetable_geteditorvalue.md
+- api/link/ui.treetable_getfilter.md
+- api/link/ui.treetable_getfirstchildid.md
+- api/link/ui.treetable_getfirstid.md
+- api/link/ui.treetable_getheadercontent.md
+- api/link/ui.treetable_getidbyindex.md
+- api/link/ui.treetable_getindexbyid.md
+- api/link/ui.treetable_getitem.md
+- api/link/ui.treetable_getlastid.md
+- api/link/ui.treetable_getnextid.md
+- api/link/ui.treetable_getnextsiblingid.md
+- api/link/ui.treetable_getnode.md
+- api/link/ui.treetable_getopenitems.md
+- api/link/ui.treetable_getpage.md
+- api/link/ui.treetable_getpager.md
+- api/link/ui.treetable_getparentid.md
+- api/link/ui.treetable_getparentview.md
+- api/link/ui.treetable_getprevid.md
+- api/link/ui.treetable_getprevsiblingid.md
+- api/link/ui.treetable_getscrollstate.md
+- api/link/ui.treetable_getselectedid.md
+- api/link/ui.treetable_getstate.md
+- api/link/ui.treetable_getvisiblecount.md
+- api/link/ui.treetable_group.md
+- api/link/ui.treetable_hascss.md
+- api/link/ui.treetable_hasevent.md
+- api/link/ui.treetable_hide.md
+- api/link/ui.treetable_hidecolumn.md
+- api/link/ui.treetable_hideoverlay.md
+- api/link/ui.treetable_isbranch.md
+- api/link/ui.treetable_isbranchopen.md
+- api/link/ui.treetable_ischecked.md
+- api/link/ui.treetable_iscolumnvisible.md
+- api/link/ui.treetable_isenabled.md
+- api/link/ui.treetable_isvisible.md
+- api/link/ui.treetable_load.md
+- api/link/ui.treetable_loadbranch.md
+- api/link/ui.treetable_loadnext.md
+- api/link/ui.treetable_locate.md
+- api/link/ui.treetable_mapcells.md
+- api/link/ui.treetable_mapevent.md
+- api/link/ui.treetable_marksorting.md
+- api/link/ui.treetable_move.md
+- api/link/ui.treetable_movebottom.md
+- api/link/ui.treetable_movecolumn.md
+- api/link/ui.treetable_movedown.md
+- api/link/ui.treetable_moveselection.md
+- api/link/ui.treetable_movetop.md
+- api/link/ui.treetable_moveup.md
+- api/link/ui.treetable_open.md
+- api/link/ui.treetable_openall.md
+- api/link/ui.treetable_parse.md
+- api/link/ui.treetable_refresh.md
+- api/link/ui.treetable_refreshcolumns.md
+- api/link/ui.treetable_refreshheadercontent.md
+- api/link/ui.treetable_registerfilter.md
+- api/link/ui.treetable_remove.md
+- api/link/ui.treetable_removecellcss.md
+- api/link/ui.treetable_removecss.md
+- api/link/ui.treetable_removerowcss.md
+- api/link/ui.treetable_render.md
+- api/link/ui.treetable_resize.md
+- api/link/ui.treetable_scrollto.md
+- api/link/ui.treetable_serialize.md
+- api/link/ui.treetable_setcolumnwidth.md
+- api/link/ui.treetable_setpage.md
+- api/link/ui.treetable_setrowheight.md
+- api/link/ui.treetable_setstate.md
+- api/link/ui.treetable_show.md
+- api/link/ui.treetable_showcell.md
+- api/link/ui.treetable_showcolumn.md
+- api/link/ui.treetable_showitem.md
+- api/link/ui.treetable_showitembyindex.md
+- api/link/ui.treetable_showoverlay.md
+- api/link/ui.treetable_sort.md
+- api/link/ui.treetable_sync.md
+- api/link/ui.treetable_unblockevent.md
+- api/link/ui.treetable_uncheckall.md
+- api/link/ui.treetable_uncheckitem.md
+- api/link/ui.treetable_ungroup.md
+- api/link/ui.treetable_updateitem.md
+- api/link/ui.treetable_validate.md
+- api/link/ui.treetable_validateeditor.md
+
+

@@ -1,0 +1,1 @@
+@link: api/dragitem_$dropallow_other.md

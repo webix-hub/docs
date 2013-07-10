@@ -1,0 +1,247 @@
+
+Methods
+=======
+
+{{links
+- api/link/ui.datatable_add.md - adds an item to the store
+- api/ui.datatable_addcellcss.md - adds a css class to the cell
+- api/link/ui.datatable_addcss.md - applied CSS class to a component item
+- api/ui.datatable_addrowcss.md - adds a css class to the row
+- api/link/ui.datatable_adjust.md - adjusts the component to the size of the parent HTML container
+- api/ui.datatable_adjustcolumn.md - adjusts a column to the width of the content
+- api/link/ui.datatable_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.datatable_bind.md - binds components
+- api/link/ui.datatable_blockevent.md - temporarily blocks triggering of ALL events of the calling object
+- api/link/ui.datatable_callevent.md - calls an inner event
+- api/link/ui.datatable_clearall.md - removes all items from the component
+- api/link/ui.datatable_clearcss.md - removes css class from all items
+- api/ui.datatable_clearselection.md - clears selection
+- api/link/ui.datatable_clearvalidation.md - removes all validation marks from the component
+- api/ui.datatable_collectvalues.md - returns an array of unique values of the specified column
+- api/ui.datatable_columnid.md - returns the id of the column at the specified index
+- api/link/ui.datatable_copy.md - copies an item to the same or another object
+- api/link/ui.datatable_count.md - returns the count of items in the table
+- api/link/ui.datatable_define.md - redefines a single configuration property (or a hash of properties)
+- api/link/ui.datatable_destructor.md - destructs the calling object
+- api/link/ui.datatable_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
+- api/link/ui.datatable_disable.md - disables the calling view (makes it dimmed and unclickable)
+- api/ui.datatable_eachcolumn.md - iterates over all columns in the table
+- api/ui.datatable_eachrow.md - iterates over all rows in the table
+- api/link/ui.datatable_edit.md - enables the edit mode for the specified item
+- api/link/ui.datatable_editcancel.md - cancels the edit mode and closes all opened editors. The component is still editable
+- api/ui.datatable_editcell.md - enables the edit mode for the specified cell
+- api/ui.datatable_editcolumn.md - enables the edit mode for the specified column
+- api/link/ui.datatable_editnext.md - closes the current editor and opens one in the next cell of the row
+- api/ui.datatable_editrow.md - enables the edit mode for the specified row
+- api/link/ui.datatable_editstop.md - stops the edit mode and closes all opened editors. The component is still editable
+- api/link/ui.datatable_enable.md - enables the calling view that was disabled by the 'disable' method
+- api/link/ui.datatable_exists.md - checks whether an item with the specified id exists
+- api/ui.datatable_exporttoexcel.md - exports data to an Excel file
+- api/ui.datatable_exporttopdf.md - exports data to a PDF file
+- api/link/ui.datatable_filter.md - filters the component
+- api/ui.datatable_filterbyall.md - refilters DataTable by all specified filters
+- api/link/ui.datatable_focuseditor.md - moves focus to the active editor
+- api/link/ui.datatable_getchildviews.md - returns child views of the calling component
+- api/ui.datatable_getcolumnconfig.md - returns the configuration object of the specified column
+- api/ui.datatable_getcolumnindex.md - returns the index of the column with the specified id
+- api/link/ui.datatable_geteditstate.md - returns info about active editor object
+- api/link/ui.datatable_geteditor.md - returns editor object
+- api/link/ui.datatable_geteditorvalue.md - returns the value of the active (currently open) editor
+- api/ui.datatable_getfilter.md - returns the filter object that the component uses to filter the values of the specified column
+- api/link/ui.datatable_getfirstid.md - returns the ID of the first item
+- api/ui.datatable_getheadercontent.md - returns set of helpers for header content manipulation
+- api/link/ui.datatable_getidbyindex.md - returns the id of the item with the specified index
+- api/link/ui.datatable_getindexbyid.md - returns the index of the item with the specified id
+- api/link/ui.datatable_getitem.md - gets the object of the data item with the specified id
+- api/link/ui.datatable_getlastid.md - returns the id of the last item
+- api/link/ui.datatable_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
+- api/link/ui.datatable_getnode.md - returns the main HTML container for the calling object
+- api/link/ui.datatable_getpage.md - returns the currently visible page in case of paged view
+- api/link/ui.datatable_getpager.md - returns the pager object associated with the component
+- api/link/ui.datatable_getparentview.md - returns the parent view of the component
+- api/link/ui.datatable_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
+- api/ui.datatable_getscrollstate.md - returns the current position of scrolls
+- api/ui.datatable_getselectedid.md - returns the selected cells
+- api/ui.datatable_getselection.md - returns the ids of the selected cell(s)
+- api/link/ui.datatable_getstate.md - returns the current state of the view
+- api/ui.datatable_getvisiblecount.md - returns count of visible rows
+- api/link/ui.datatable_group.md - groups data by the specified data property
+- api/link/ui.datatable_hascss.md - checks if item has specific css class
+- api/link/ui.datatable_hasevent.md - checks whether the component has the specified event
+- api/link/ui.datatable_hide.md - hides the view
+- api/ui.datatable_hidecolumn.md - hides the specified column
+- api/ui.datatable_hideoverlay.md - hides previously defined overlay
+- api/ui.datatable_iscolumnvisible.md - returns true if column is visible
+- api/link/ui.datatable_isenabled.md - checks whether the view is enabled
+- api/link/ui.datatable_isvisible.md - checks whether the view is visible
+- api/link/ui.datatable_load.md - loads data from an external data source
+- api/link/ui.datatable_loadnext.md - sends a request to load the specified number of records to the end or to the specified position 
+of the component
+- api/ui.datatable_locate.md - converts an HTML node or event object to in-table position
+- api/ui.datatable_mapcells.md - applies the callback to a range of cells
+- api/link/ui.datatable_mapevent.md - routes events from one object to another
+- api/ui.datatable_mapselection.md - executes some custom method for all cells in the currently selected block
+- api/ui.datatable_marksorting.md - cancels sorting and recovers default data presentation
+- api/link/ui.datatable_move.md - moves the specified item to a new position
+- api/link/ui.datatable_movebottom.md - moves the specified item to the last position
+- api/ui.datatable_movecolumn.md - moves column to different position
+- api/link/ui.datatable_movedown.md - increases the item index and moves the item to the new position
+- api/ui.datatable_moveselection.md - moves selection in the specified direction
+- api/link/ui.datatable_movetop.md - moves the specified item to the first position
+- api/link/ui.datatable_moveup.md - decreases the item index and moves the item to the new position
+- api/link/ui.datatable_parse.md - loads data to the component from an inline data source
+- api/link/ui.datatable_refresh.md - repaints the whole view or a certain item
+- api/ui.datatable_refreshcolumns.md - refreshes the structure of DataTable
+- api/ui.datatable_refreshheadercontent.md - refreshes the header row of DataTable
+- api/ui.datatable_registerfilter.md - registers a filter element
+- api/link/ui.datatable_remove.md - removes the specified item from datastore
+- api/ui.datatable_removecellcss.md - remove css class from the cell of datatable
+- api/link/ui.datatable_removecss.md - removes CSS class from a component item
+- api/ui.datatable_removerowcss.md - remove css class from the row
+- api/ui.datatable_render.md - renders the specified item or the whole component
+- api/link/ui.datatable_resize.md - adjusts the view to a new size
+- api/ui.datatable_scrollto.md - scrolls the view to the defined position
+- api/ui.datatable_select.md - selects the specified element
+- api/ui.datatable_selectrange.md - selects the specified range of elements
+- api/link/ui.datatable_serialize.md - serializes data to a json object
+- api/ui.datatable_setcolumnwidth.md - sets the width of the specified column
+- api/link/ui.datatable_setpage.md - makes the specified page visible (assuming that the pager was defined )
+- api/ui.datatable_setrowheight.md - sets the height of the specified row
+- api/link/ui.datatable_setstate.md - restores the specified state
+- api/link/ui.datatable_show.md - makes the component visible
+- api/ui.datatable_showcell.md - scrolls the table (if needed) to make the specified cell visible
+- api/ui.datatable_showcolumn.md - shows the column which was previously hidden by method 'hidecolumn'
+- api/ui.datatable_showitem.md - 'scrolls' the table to make the specified row visible
+- api/ui.datatable_showitembyindex.md - 'scrolls' the table to make the specified row visible
+- api/ui.datatable_showoverlay.md - shows the overlay message over the body of DataTable
+- api/link/ui.datatable_sort.md - sorts datastore
+- api/link/ui.datatable_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.datatable_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
+- api/link/ui.datatable_ungroup.md - ungroups data
+- api/ui.datatable_unselect.md - cancels selection of the specified element
+- api/link/ui.datatable_updateitem.md - sets properties of the data item
+- api/link/ui.datatable_validate.md - validates one record or all dataset against validation rules
+- api/link/ui.datatable_validateeditor.md - validates data in currently active editor
+}}
+
+@index:
+- api/link/ui.datatable_add.md
+- api/ui.datatable_addcellcss.md
+- api/link/ui.datatable_addcss.md
+- api/ui.datatable_addrowcss.md
+- api/link/ui.datatable_adjust.md
+- api/ui.datatable_adjustcolumn.md
+- api/link/ui.datatable_attachevent.md
+- api/link/ui.datatable_bind.md
+- api/link/ui.datatable_blockevent.md
+- api/link/ui.datatable_callevent.md
+- api/link/ui.datatable_clearall.md
+- api/link/ui.datatable_clearcss.md
+- api/ui.datatable_clearselection.md
+- api/link/ui.datatable_clearvalidation.md
+- api/ui.datatable_collectvalues.md
+- api/ui.datatable_columnid.md
+- api/link/ui.datatable_copy.md
+- api/link/ui.datatable_count.md
+- api/link/ui.datatable_define.md
+- api/link/ui.datatable_destructor.md
+- api/link/ui.datatable_detachevent.md
+- api/link/ui.datatable_disable.md
+- api/ui.datatable_eachcolumn.md
+- api/ui.datatable_eachrow.md
+- api/link/ui.datatable_edit.md
+- api/link/ui.datatable_editcancel.md
+- api/ui.datatable_editcell.md
+- api/ui.datatable_editcolumn.md
+- api/link/ui.datatable_editnext.md
+- api/ui.datatable_editrow.md
+- api/link/ui.datatable_editstop.md
+- api/link/ui.datatable_enable.md
+- api/link/ui.datatable_exists.md
+- api/ui.datatable_exporttoexcel.md
+- api/ui.datatable_exporttopdf.md
+- api/link/ui.datatable_filter.md
+- api/ui.datatable_filterbyall.md
+- api/link/ui.datatable_focuseditor.md
+- api/link/ui.datatable_getchildviews.md
+- api/ui.datatable_getcolumnconfig.md
+- api/ui.datatable_getcolumnindex.md
+- api/link/ui.datatable_geteditstate.md
+- api/link/ui.datatable_geteditor.md
+- api/link/ui.datatable_geteditorvalue.md
+- api/ui.datatable_getfilter.md
+- api/link/ui.datatable_getfirstid.md
+- api/ui.datatable_getheadercontent.md
+- api/link/ui.datatable_getidbyindex.md
+- api/link/ui.datatable_getindexbyid.md
+- api/link/ui.datatable_getitem.md
+- api/link/ui.datatable_getlastid.md
+- api/link/ui.datatable_getnextid.md
+- api/link/ui.datatable_getnode.md
+- api/link/ui.datatable_getpage.md
+- api/link/ui.datatable_getpager.md
+- api/link/ui.datatable_getparentview.md
+- api/link/ui.datatable_getprevid.md
+- api/ui.datatable_getscrollstate.md
+- api/ui.datatable_getselectedid.md
+- api/ui.datatable_getselection.md
+- api/link/ui.datatable_getstate.md
+- api/ui.datatable_getvisiblecount.md
+- api/link/ui.datatable_group.md
+- api/link/ui.datatable_hascss.md
+- api/link/ui.datatable_hasevent.md
+- api/link/ui.datatable_hide.md
+- api/ui.datatable_hidecolumn.md
+- api/ui.datatable_hideoverlay.md
+- api/ui.datatable_iscolumnvisible.md
+- api/link/ui.datatable_isenabled.md
+- api/link/ui.datatable_isvisible.md
+- api/link/ui.datatable_load.md
+- api/link/ui.datatable_loadnext.md
+- api/ui.datatable_locate.md
+- api/ui.datatable_mapcells.md
+- api/link/ui.datatable_mapevent.md
+- api/ui.datatable_mapselection.md
+- api/ui.datatable_marksorting.md
+- api/link/ui.datatable_move.md
+- api/link/ui.datatable_movebottom.md
+- api/ui.datatable_movecolumn.md
+- api/link/ui.datatable_movedown.md
+- api/ui.datatable_moveselection.md
+- api/link/ui.datatable_movetop.md
+- api/link/ui.datatable_moveup.md
+- api/link/ui.datatable_parse.md
+- api/link/ui.datatable_refresh.md
+- api/ui.datatable_refreshcolumns.md
+- api/ui.datatable_refreshheadercontent.md
+- api/ui.datatable_registerfilter.md
+- api/link/ui.datatable_remove.md
+- api/ui.datatable_removecellcss.md
+- api/link/ui.datatable_removecss.md
+- api/ui.datatable_removerowcss.md
+- api/ui.datatable_render.md
+- api/link/ui.datatable_resize.md
+- api/ui.datatable_scrollto.md
+- api/ui.datatable_select.md
+- api/ui.datatable_selectrange.md
+- api/link/ui.datatable_serialize.md
+- api/ui.datatable_setcolumnwidth.md
+- api/link/ui.datatable_setpage.md
+- api/ui.datatable_setrowheight.md
+- api/link/ui.datatable_setstate.md
+- api/link/ui.datatable_show.md
+- api/ui.datatable_showcell.md
+- api/ui.datatable_showcolumn.md
+- api/ui.datatable_showitem.md
+- api/ui.datatable_showitembyindex.md
+- api/ui.datatable_showoverlay.md
+- api/link/ui.datatable_sort.md
+- api/link/ui.datatable_sync.md
+- api/link/ui.datatable_unblockevent.md
+- api/link/ui.datatable_ungroup.md
+- api/ui.datatable_unselect.md
+- api/link/ui.datatable_updateitem.md
+- api/link/ui.datatable_validate.md
+- api/link/ui.datatable_validateeditor.md
+
+

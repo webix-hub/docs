@@ -1,0 +1,157 @@
+Mixins
+======
+
+{{links
+
+- api/refs/atomdataloader.md - primitive data loader
+- api/refs/atomrender.md - primitive render for views
+- api/refs/autotooltip.md - allows for setting a prompting message for data items
+- api/refs/basebind.md - core of all bind operations
+- api/refs/bindsource.md - logic for source of data in bind operations
+- api/refs/canvas.md - wrapper for HTML Canvas tag
+- api/refs/carouselpanel.md - panel for carousel control
+- api/refs/collectionbind.md - binding rules for collections of objects
+- api/refs/contexthelper.md - provides for subviews seen by right mouse click
+- api/refs/copypaste.md - provides support for copy-paste operations (integration with clipboard)
+- api/refs/datacollection.md - view-less control which stores collections of data objects
+- api/refs/datadriver.md - data parsing for different format
+- api/refs/dataloader.md - loads and process data in to component
+- api/refs/datamarks.md - implements extra data storage
+- api/refs/datamove.md - transfer data between different components
+- api/refs/dataprocessor.md - handles clien-server data saving operations
+- api/refs/datarecord.md - data binding for components which store collection of data object
+- api/refs/datastate.md - enables saving application state
+- api/refs/datastore.md - core of all operations for data-collection based components
+- api/refs/datavalue.md - view-less object, stores single value
+- api/refs/date.md - date formatting | processing logic
+- api/refs/destruction.md - clean object references during object destruction
+- api/refs/dragcontrol.md - handlers drag-n-drop events
+- api/refs/dragitem.md - interface which adds ability to drag items for components with datastore inside
+- api/refs/dragorder.md - implements DND for data collections
+- api/refs/editability.md - implement common edit interactions
+- api/refs/eventsystem.md - inner event system
+- api/refs/group.md - data grouping and sorting logic
+- api/refs/groupmethods.md - a collection of functors for grouping
+- api/refs/groupstore.md - implements grouping of data
+- api/refs/htmlmap.md - wrapper for image maps
+- api/refs/idspace.md - separate layer of ids
+- api/refs/keysnavigation.md - implements keyboard navigation
+- api/refs/modality.md - sets modality to popup views
+- api/refs/mouseevents.md - adds inner events for all mouse actions
+- api/refs/movable.md - adds ability to move data in component or between components
+- api/refs/number.md - number formating|processing logic
+- api/refs/overlaybox.md - show a temporary layer other view
+- api/refs/pagingability.md - interface which adds support for pager
+- api/refs/powerarray.md - extension for arrays
+- api/refs/recordbind.md - binding logic for view which have single data object
+- api/refs/renderstack.md - render strategy for plain datasets
+- api/refs/scrollable.md - adds scroll for the view
+- api/refs/selectionmodel.md - implements basic selection API
+- api/refs/settings.md - allows configuration of component
+- api/refs/singlerender.md - render for single-value views
+- api/refs/tablepaste.md - implements copy-paste for datatable
+- api/refs/touch.md - touch events and touch scroll
+- api/refs/treeapi.md - implements common API for tree like components
+- api/refs/treeclick.md - implements click handler for tree like components
+- api/refs/treecollection.md - non-ui component for hierarchical data
+- api/refs/treedataloader.md - loads hierarchical data
+- api/refs/treedatamove.md - implement copy and move for tree like components
+- api/refs/treerenderstack.md - implements rendering strategy for tree like components
+- api/refs/treestatecheckbox.md - implements tree-state checkbox functionality
+- api/refs/treestore.md - hierarchical store
+- api/refs/treetableclick.md - contains tree specific click handlers
+- api/refs/treetablepaste.md - implements copy-paste for treetable
+- api/refs/treetype.md - contains elements of tree template
+- api/refs/uiextension.md - can be used to extend base views with custom methods
+- api/refs/uimanager.md - controls focus and hotkeys for webix.ui
+- api/refs/uploaddriver.md - implements file uploader driver
+- api/refs/validatecollection.md - implements validation for data collections
+- api/refs/validatedata.md - data validation logic
+- api/refs/valuebind.md - binding logic for single value components
+- api/refs/values.md - manupilates values of the form and form fields
+- api/refs/virtualrenderstack.md - allows on-demand rendering for plain datasets
+- api/refs/ui.baselayout.md - a base class for layout-based UI components
+- api/refs/ui.baseview.md - the very base object for all components
+- api/refs/ui.proto.md - the very base class for UI components
+- api/refs/ui.resizearea.md - visualization and handling resize movements
+- api/refs/ui.view.md - a pure view with borders but without any content inside it
+- api/refs/ui.vscroll.md - virtual scrolls
+
+}}
+
+
+@index:
+
+- api/refs/atomdataloader.md
+- api/refs/atomrender.md
+- api/refs/autotooltip.md
+- api/refs/basebind.md
+- api/refs/bindsource.md
+- api/refs/canvas.md
+- api/refs/carouselpanel.md
+- api/refs/collectionbind.md
+- api/refs/contexthelper.md
+- api/refs/copypaste.md
+- api/refs/datacollection.md
+- api/refs/datadriver.md
+- api/refs/dataloader.md
+- api/refs/datamarks.md
+- api/refs/datamove.md
+- api/refs/dataprocessor.md
+- api/refs/datarecord.md
+- api/refs/datastate.md
+- api/refs/datastore.md
+- api/refs/datavalue.md
+- api/refs/date.md
+- api/refs/destruction.md
+- api/refs/dragcontrol.md
+- api/refs/dragitem.md
+- api/refs/dragorder.md
+- api/refs/editability.md
+- api/refs/eventsystem.md
+- api/refs/group.md
+- api/refs/groupmethods.md
+- api/refs/groupstore.md
+- api/refs/htmlmap.md
+- api/refs/idspace.md
+- api/refs/keysnavigation.md
+- api/refs/modality.md
+- api/refs/mouseevents.md
+- api/refs/movable.md
+- api/refs/number.md
+- api/refs/overlaybox.md
+- api/refs/pagingability.md
+- api/refs/powerarray.md
+- api/refs/recordbind.md
+- api/refs/renderstack.md
+- api/refs/scrollable.md
+- api/refs/selectionmodel.md
+- api/refs/settings.md
+- api/refs/singlerender.md
+- api/refs/tablepaste.md
+- api/refs/touch.md
+- api/refs/treeapi.md
+- api/refs/treeclick.md
+- api/refs/treecollection.md
+- api/refs/treedataloader.md
+- api/refs/treedatamove.md
+- api/refs/treerenderstack.md
+- api/refs/treestatecheckbox.md
+- api/refs/treestore.md
+- api/refs/treetableclick.md
+- api/refs/treetablepaste.md
+- api/refs/treetype.md
+- api/refs/uiextension.md
+- api/refs/uimanager.md
+- api/refs/uploaddriver.md
+- api/refs/validatecollection.md
+- api/refs/validatedata.md
+- api/refs/valuebind.md
+- api/refs/values.md
+- api/refs/virtualrenderstack.md
+- api/refs/ui.baselayout.md
+- api/refs/ui.baseview.md
+- api/refs/ui.proto.md
+- api/refs/ui.resizearea.md
+- api/refs/ui.view.md
+- api/refs/ui.vscroll.md

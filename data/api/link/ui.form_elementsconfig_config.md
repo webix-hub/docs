@@ -1,0 +1,1 @@
+@link: api/ui.toolbar_elementsconfig_config.md

@@ -1,0 +1,1 @@
+@link: api/ui.richselect_getpopupview.md

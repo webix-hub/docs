@@ -1,0 +1,101 @@
+
+Properties
+==========
+
+{{links
+- api/link/ui.dataview_animate_config.md - defines or disables view change animation.
+- api/ui.dataview_autoheight_config.md - enables autosizing to content
+- api/link/ui.dataview_borderless_config.md - used to hide the component borders
+- api/link/ui.dataview_click_config.md - sets an action happening on a button click
+- api/link/ui.dataview_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.dataview_css_config.md - the name of a css class that will be applied to the view container
+- api/link/ui.dataview_data_config.md - an inline dataset that data to the component will be load from.
+- api/link/ui.dataview_datafeed_config.md - the url to the data source that the component will use to reload data from
+- api/link/ui.dataview_datafetch_config.md - defines the start position DataTable will load data from
+- api/link/ui.dataview_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
+- api/link/ui.dataview_datatype_config.md - the type of loaded data
+- api/link/ui.dataview_disabled_config.md - disables item
+- api/link/ui.dataview_drag_config.md - enables or disables drag-and-drop
+- api/link/ui.dataview_externaldata_config.md - allows defining custom 'move' logic for the component.
+- api/link/ui.dataview_gravity_config.md - sets the view gravity (1 by default)
+- api/link/ui.dataview_height_config.md - sets the height of the component
+- api/link/ui.dataview_hidden_config.md - defines whether the view will be hidden initially
+- api/link/ui.dataview_id_config.md - the component ID
+- api/link/ui.dataview_loadahead_config.md - how much records need to be preloaded in additional to mandatory ones
+- api/link/ui.dataview_maxheight_config.md - sets the maximum height for the view
+- api/link/ui.dataview_maxwidth_config.md - sets the maximum width for the view
+- api/link/ui.dataview_minheight_config.md - sets the minimal height for the view
+- api/link/ui.dataview_minwidth_config.md - sets the minimal width for the view
+- api/link/ui.dataview_mouseeventdelay_config.md - the delay between a real mouse action and invoking the related events
+- api/link/ui.dataview_navigation_config.md - activates the selection keyboard navigation
+- api/link/ui.dataview_on_config.md - allows attaching custom handlers to inner events of the component
+- api/link/ui.dataview_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
+- api/link/ui.dataview_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
+- api/link/ui.dataview_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.dataview_onmousemove_config.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.dataview_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
+- api/link/ui.dataview_ready_config.md - a handler that is called just after the page has been completely parsed
+- api/link/ui.dataview_removemissed_config.md - defines how to treat items in case of reloading
+- api/link/ui.dataview_rules_config.md - set of validation rules for the component
+- api/link/ui.dataview_save_config.md - defines urls for datasaving
+- api/link/ui.dataview_scheme_config.md - defines schemes for data processing
+- api/link/ui.dataview_scroll_config.md - enables/disables the scroll bar
+- api/link/ui.dataview_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
+- api/link/ui.dataview_select_config.md - enables/disables item selection or multiselection in grouplist
+- api/link/ui.dataview_template_config.md - the component template
+- api/link/ui.dataview_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.dataview_type_config.md - object that specifies items presentation
+- api/link/ui.dataview_url_config.md - the url of a data feed which will be loaded after component initialization
+- api/link/ui.dataview_width_config.md - sets the width of the component
+- api/ui.dataview_xcount_config.md - adjusts the view width to display the defined number of items in a row
+- api/ui.dataview_ycount_config.md - adjusts the view height to display the defined number of items in a column
+}}
+
+@index:
+- api/link/ui.dataview_animate_config.md
+- api/ui.dataview_autoheight_config.md
+- api/link/ui.dataview_borderless_config.md
+- api/link/ui.dataview_click_config.md
+- api/link/ui.dataview_container_config.md
+- api/link/ui.dataview_css_config.md
+- api/link/ui.dataview_data_config.md
+- api/link/ui.dataview_datafeed_config.md
+- api/link/ui.dataview_datafetch_config.md
+- api/link/ui.dataview_datathrottle_config.md
+- api/link/ui.dataview_datatype_config.md
+- api/link/ui.dataview_disabled_config.md
+- api/link/ui.dataview_drag_config.md
+- api/link/ui.dataview_externaldata_config.md
+- api/link/ui.dataview_gravity_config.md
+- api/link/ui.dataview_height_config.md
+- api/link/ui.dataview_hidden_config.md
+- api/link/ui.dataview_id_config.md
+- api/link/ui.dataview_loadahead_config.md
+- api/link/ui.dataview_maxheight_config.md
+- api/link/ui.dataview_maxwidth_config.md
+- api/link/ui.dataview_minheight_config.md
+- api/link/ui.dataview_minwidth_config.md
+- api/link/ui.dataview_mouseeventdelay_config.md
+- api/link/ui.dataview_navigation_config.md
+- api/link/ui.dataview_on_config.md
+- api/link/ui.dataview_onclick_config.md
+- api/link/ui.dataview_oncontext_config.md
+- api/link/ui.dataview_ondblclick_config.md
+- api/link/ui.dataview_onmousemove_config.md
+- api/link/ui.dataview_pager_config.md
+- api/link/ui.dataview_ready_config.md
+- api/link/ui.dataview_removemissed_config.md
+- api/link/ui.dataview_rules_config.md
+- api/link/ui.dataview_save_config.md
+- api/link/ui.dataview_scheme_config.md
+- api/link/ui.dataview_scroll_config.md
+- api/link/ui.dataview_scrollspeed_config.md
+- api/link/ui.dataview_select_config.md
+- api/link/ui.dataview_template_config.md
+- api/link/ui.dataview_tooltip_config.md
+- api/link/ui.dataview_type_config.md
+- api/link/ui.dataview_url_config.md
+- api/link/ui.dataview_width_config.md
+- api/ui.dataview_xcount_config.md
+- api/ui.dataview_ycount_config.md
+

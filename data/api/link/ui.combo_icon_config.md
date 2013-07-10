@@ -1,0 +1,1 @@
+@link: api/ui.richselect_icon_config.md

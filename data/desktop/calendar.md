@@ -1,0 +1,152 @@
+Calendar
+================
+
+###Overview
+
+UI-related calendar inherits from [view](desktop/view.md) and helps you include a normal calendar inside your app. 
+
+Calendar is a handy tool to pick time and date when filling a form. It's fully interactive annd allows for selecting the necessary year, month and date. The dedicated timepicker
+allows setting the necessary time that will be displayed below the calendar area. 
+
+The initial value of the calendar is set within the **new Date()** function.
+
+<img src="desktop/calendar.png"/>
+
+{{sample 09_calendar/01_init.html }}
+
+###Initialization
+
+~~~js
+webix.ui({
+	view:"calendar",
+    id:"my_calendar"
+	date:new Date(2012,3,16),
+	weekHeader:true,
+	events:webix.Date.isHoliday, 
+    calendarDateFormat: "%Y-%m-%d",
+    width:300,
+	height:250
+	});
+~~~
+
+####Comments: 
+
+Here is a calendar with basic parameters. 
+
+- **weekHeader** (boolean) - if *true* shows weekday above;
+- **events** (CSS class or specific cases) - e.g. **webix.Date.isHoliday** highlights dayoffs;
+- **date** - specifies start date in the "year, month, day" format with months starting from 0. In case of an empty new Date(); you'll be shown current date. 
+
+To see the full list of Calendar properties please refer to the [corresponding chapter of the documentation](api/refs/ui.calendar_props.md).
+
+#### Start Date
+
+By default the calendar starts a week on Sunday. Still, you can set any day as a start day.
+
+~~~js
+webix.Date.startOnMonday = true;
+
+webix.ui({
+	view:"calendar", ...})
+~~~
+<img src="desktop/calendar_start_date.png"/>
+
+{{sample 09_calendar/02_start_date.html }}
+
+###Working with Calendar
+
+####Setting and Getting Dates
+
+**Setting dates** means their selection. Dates can be set programmatically after calendar initialization: 
+
+- **setValue**(new Date(2012,3,30)); - common method for setting values to the controls;
+- **selectDate**(new Date(2012,3,30));  - calendar specific method equal to the above mentioned one;
+- **showCalendar**(new Date(2012,3,30)); - makes the calendar **show** the specified date, but doesn't select it. 
+
+**Getting dates** can be done with two corresponding methods: 
+
+- **getValue()**; - common method for getting the control's value.
+- **getSelectedDate()**; - calendar speciic method. 
+- **getVisibleDate()**; - gets the date even with no selection applied. Date is gotten according to the [specified rules](api/ui.calendar_getvisibleDate.md). 
+
+~~~js
+$$('calendar1').selectDate(new Date(2012,3,30));
+ 
+$$("calendar1").getValue(); // returns the non-formatted date object 
+                            // -> Mon Apr 30 2012 00:00:00 GMT+0300 (EEST)
+~~~
+
+## Datepicker 
+
+Calendar can be displayed on customer request, for instance when a user wants to pick a date and time to fill the form. For these needs a **[datepicker](desktop/controls.md#datepicker)** control
+is used. Note that here you needn't initialize Calendar - it will appear as soon as you click a datepicker icon. In this case the calendar comes with current date displayed. 
+
+<img src="desktop/datepicker.png"/>
+
+~~~js
+webix.ui({
+	view:"toolbar", 
+	type:"MainBar", 
+	elements:[
+    	{view:"datepicker", 
+        	name: "select_date", 
+        	label: 'Select Date'} 
+	]});
+~~~
+{{sample 09_calendar/06_datepicker.html }}
+
+##Timepicker 
+
+Timepicker is a calendar feature that allows picking time. Being one of the component's properties, it is *false* by default: 
+
+<img src="desktop/timepicker.png">
+
+~~~js
+webix.ui({
+	view:"calendar",
+    date: new Date(2012, 3, 16, 8, 35),
+    timepicker:true
+})
+~~~
+
+With timepicker enabled, time is shown below month view within the calendar body. There're three options for the clock: 
+
+- If the time is defined in the *new Date(YYYY, MM, DD, HH, mm)* constructor, it's shown according to the specified values; 
+- If date is set with no time specified (new Date(2012, 3, 16)) - the clock shows midnight;
+- If the *new Date* function comes with no parameters, current date and time is shown. 
+
+{{sample 09_calendar/03_timepicker.html }}
+
+{{note
+Time selector can be hidden and shown back by **timeSelect** property with *true/false* value. 
+}}
+
+##Localization
+
+How do we turn a standard calendar into the one with "foreign" month and day names? Here [localization](desktop/localization.md) can help you.
+
+Locale is a set of rules that tell us how to display months and days. It's a kind of internal "translator" for UI components. 
+
+First of all you should specify a locale or a set of needed **locales** (en-US, fr-FR, ru-RU) and then apply them to the calendar. By default **en-US** locale is used. 
+
+~~~js
+webix.i18n.setLocale('fr-FR');
+~~~
+
+Afterwards the calendar will look like this: 
+
+<img src="desktop/calendar_localized.png"/>
+
+{{sample 09_calendar/07_calendar_localized.html }}
+
+###API Reference
+
+[Methods, properties and events](api__refs__ui.calendar.html)
+
+###Related Articles
+
+- [Date Formatting Methods](helpers/date_formatting_methods.md)
+- [Number Formatting Methods](helpers/number_formatting_methods.md)
+- [Working with Dates](desktop/working_with_dates.md)
+- [Date and Number Localization](desktop/localization.md)
+- [Calendar CSS Image Map](desktop/calendar_css.md)

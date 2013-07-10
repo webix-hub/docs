@@ -1,0 +1,100 @@
+
+Methods
+=======
+
+{{links
+- api/link/ui.property_adjust.md - adjusts the component to the size of the parent HTML container
+- api/link/ui.property_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.property_bind.md - binds components
+- api/link/ui.property_blockevent.md - temporarily blocks triggering of ALL events of the calling object
+- api/link/ui.property_callevent.md - calls an inner event
+- api/link/ui.property_customize.md - redefines the 'type' property
+- api/link/ui.property_define.md - redefines a single configuration property (or a hash of properties)
+- api/link/ui.property_destructor.md - destructs the calling object
+- api/link/ui.property_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
+- api/link/ui.property_disable.md - disables the calling view (makes it dimmed and unclickable)
+- api/link/ui.property_edit.md - enables the edit mode for the specified item
+- api/link/ui.property_editcancel.md - cancels the edit mode and closes all opened editors. The component is still editable
+- api/link/ui.property_editnext.md - closes the current editor and opens one in the next cell of the row
+- api/link/ui.property_editstop.md - stops the edit mode and closes all opened editors. The component is still editable
+- api/link/ui.property_enable.md - enables the calling view that was disabled by the 'disable' method
+- api/link/ui.property_focuseditor.md - moves focus to the active editor
+- api/link/ui.property_getchildviews.md - returns child views of the calling component
+- api/link/ui.property_geteditstate.md - returns info about active editor object
+- api/link/ui.property_geteditor.md - returns editor object
+- api/link/ui.property_geteditorvalue.md - returns the value of the active (currently open) editor
+- api/ui.property_getitem.md - gets the data object for related property
+- api/link/ui.property_getnode.md - returns the main HTML container for the calling object
+- api/link/ui.property_getparentview.md - returns the parent view of the component
+- api/link/ui.property_getscrollstate.md - returns the scroll position
+- api/ui.property_getvalues.md - derives values from the property sheet (like with form)
+- api/link/ui.property_hasevent.md - checks whether the component has the specified event
+- api/link/ui.property_hide.md - hides the view
+- api/link/ui.property_isenabled.md - checks whether the view is enabled
+- api/link/ui.property_isvisible.md - checks whether the view is visible
+- api/link/ui.property_load.md - loads data from an external data source
+- api/ui.property_locate.md - gets the id of an item from the specified HTML event
+- api/link/ui.property_mapevent.md - routes events from one object to another
+- api/link/ui.property_parse.md - loads data to the component from an inline data source
+- api/ui.property_refresh.md - repaints the whole view or a certain item
+- api/ui.property_registertype.md - registeres a new type for property sheet elements
+- api/link/ui.property_render.md - renders the specified item or the whole component
+- api/link/ui.property_resize.md - adjusts the view to a new size
+- api/link/ui.property_scrollto.md - scrolls the data container to a certain position
+- api/ui.property_setvalues.md - sets values into all the form inputs
+- api/link/ui.property_show.md - makes the component visible
+- api/ui.property_showitem.md - 'scrolls' the table to make the specified row visible
+- api/link/ui.property_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.property_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
+- api/ui.property_updateitem.md - alias for refresh, repaints property view
+- api/link/ui.property_validateeditor.md - validates data in currently active editor
+}}
+
+@index:
+- api/link/ui.property_adjust.md
+- api/link/ui.property_attachevent.md
+- api/link/ui.property_bind.md
+- api/link/ui.property_blockevent.md
+- api/link/ui.property_callevent.md
+- api/link/ui.property_customize.md
+- api/link/ui.property_define.md
+- api/link/ui.property_destructor.md
+- api/link/ui.property_detachevent.md
+- api/link/ui.property_disable.md
+- api/link/ui.property_edit.md
+- api/link/ui.property_editcancel.md
+- api/link/ui.property_editnext.md
+- api/link/ui.property_editstop.md
+- api/link/ui.property_enable.md
+- api/link/ui.property_focuseditor.md
+- api/link/ui.property_getchildviews.md
+- api/link/ui.property_geteditstate.md
+- api/link/ui.property_geteditor.md
+- api/link/ui.property_geteditorvalue.md
+- api/ui.property_getitem.md
+- api/link/ui.property_getnode.md
+- api/link/ui.property_getparentview.md
+- api/link/ui.property_getscrollstate.md
+- api/ui.property_getvalues.md
+- api/link/ui.property_hasevent.md
+- api/link/ui.property_hide.md
+- api/link/ui.property_isenabled.md
+- api/link/ui.property_isvisible.md
+- api/link/ui.property_load.md
+- api/ui.property_locate.md
+- api/link/ui.property_mapevent.md
+- api/link/ui.property_parse.md
+- api/ui.property_refresh.md
+- api/ui.property_registertype.md
+- api/link/ui.property_render.md
+- api/link/ui.property_resize.md
+- api/link/ui.property_scrollto.md
+- api/ui.property_setvalues.md
+- api/link/ui.property_show.md
+- api/ui.property_showitem.md
+- api/link/ui.property_sync.md
+- api/link/ui.property_unblockevent.md
+- api/ui.property_updateitem.md
+- api/link/ui.property_validateeditor.md
+
+

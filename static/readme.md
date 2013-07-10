@@ -1,0 +1,1 @@
+Static version of documentation will be stored here

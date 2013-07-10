@@ -1,0 +1,33 @@
+onAfterSelect
+=============
+
+
+@short:
+	fires after a cell is selected
+
+@params:
+- data		object		the selected object
+- prevent    bool    indicates whether the previous selection was saved
+
+@example: 
+	
+some.attachEvent("onAfterSelect", function(data, prevent){
+    //... some code here ... 
+});
+
+@template:	api_event
+
+@related:
+	datatable/selection.md
+@relatedapi:
+	api/ui.datatable_onbeforeselect_event.md
+	api/ui.datatable_selectrange.md
+	api/ui.datatable_getselectedid.md
+    api/ui.datatable_getselection.md
+    api/ui.datatable_mapselection.md
+    api/ui.datatable_unselect.md
+    api/ui.datatable_clearselection.md
+	
+	
+@descr:
+

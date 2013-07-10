@@ -1,0 +1,88 @@
+
+Methods
+=======
+
+{{links
+- api/datastore_add.md - adds an item to the store
+- api/datastore_addmark.md - allows setting custom flag for a data item.
+- api/link/datastore_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/datastore_blockevent.md - temporarily blocks triggering of ALL events of the calling object
+- api/link/datastore_callevent.md - calls an inner event
+- api/datastore_changeid.md - changes the id of a data item
+- api/datastore_clearall.md - removes all items from the component
+- api/datastore_clearmark.md - removes mark from all items in store
+- api/datastore_count.md - returns the count of items in the table
+- api/link/datastore_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
+- api/datastore_each.md - iterates through the collection of data items
+- api/datastore_exists.md - checks whether an item with the specified id exists
+- api/datastore_filter.md - filters the component
+- api/datastore_getfirstid.md - returns the ID of the first item
+- api/datastore_getidbyindex.md - returns the id of the item with the specified index
+- api/datastore_getindexbyid.md - returns the index of the item with the specified id
+- api/datastore_getindexrange.md - gets ids of items in the specified index range
+- api/datastore_getitem.md - gets the object of the data item with the specified id
+- api/datastore_getlastid.md - returns the id of the last item
+- api/datastore_getmark.md - returns mark value by record id and mark name
+- api/datastore_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
+- api/datastore_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
+- api/datastore_getrange.md - gets ids of items in the specified range
+- api/link/datastore_hasevent.md - checks whether the component has the specified event
+- api/datastore_id.md - gets the id of a data item
+- api/link/datastore_mapevent.md - routes events from one object to another
+- api/datastore_move.md - moves the specified item to the new position
+- api/datastore_provideapi.md - assigns methods (and events) of DataStore to an object
+- api/datastore_refresh.md - repaints the whole view or a certain item
+- api/datastore_remove.md - removes the specified item from datastore
+- api/datastore_removemark.md - removes a flag set for the specified item
+- api/datastore_scheme.md - sets hash of default values for properties
+- api/datastore_serialize.md - serializes data to a json object
+- api/datastore_setdriver.md - defines type of used data driver
+- api/datastore_silent.md - code that you pass here as the parameter will not be affected by 'onStoreUpdated' event handler
+- api/datastore_sort.md - sorts datastore
+- api/datastore_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/datastore_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
+- api/datastore_updateitem.md - sets properties of the data item
+}}
+
+@index:
+- api/datastore_add.md
+- api/datastore_addmark.md
+- api/link/datastore_attachevent.md
+- api/link/datastore_blockevent.md
+- api/link/datastore_callevent.md
+- api/datastore_changeid.md
+- api/datastore_clearall.md
+- api/datastore_clearmark.md
+- api/datastore_count.md
+- api/link/datastore_detachevent.md
+- api/datastore_each.md
+- api/datastore_exists.md
+- api/datastore_filter.md
+- api/datastore_getfirstid.md
+- api/datastore_getidbyindex.md
+- api/datastore_getindexbyid.md
+- api/datastore_getindexrange.md
+- api/datastore_getitem.md
+- api/datastore_getlastid.md
+- api/datastore_getmark.md
+- api/datastore_getnextid.md
+- api/datastore_getprevid.md
+- api/datastore_getrange.md
+- api/link/datastore_hasevent.md
+- api/datastore_id.md
+- api/link/datastore_mapevent.md
+- api/datastore_move.md
+- api/datastore_provideapi.md
+- api/datastore_refresh.md
+- api/datastore_remove.md
+- api/datastore_removemark.md
+- api/datastore_scheme.md
+- api/datastore_serialize.md
+- api/datastore_setdriver.md
+- api/datastore_silent.md
+- api/datastore_sort.md
+- api/datastore_sync.md
+- api/link/datastore_unblockevent.md
+- api/datastore_updateitem.md
+
+

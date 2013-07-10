@@ -1,0 +1,97 @@
+Multiview
+==========================
+
+###Overview
+
+Multiview  helps you rationally use space on the page by placing different views into one and the same area. Only one view is visible at a time the others accessable with the help of dedicated buttons. 
+
+Multiview inherits from [layout](desktop/layout.md).
+
+<img src="desktop/multiview.png"/>
+
+{{sample
+20_multiview/05_tabbar_with_icons.html
+}}
+
+###Initialization
+{{snippet
+Multiview with three views
+}}
+~~~js
+webix.ui({
+	view:"multiview", 
+	cells:[
+         {id:"listView", view:"list", .... },
+         {id:"formView", view:"htmlform", .... },
+         {id:"emptyView"}
+    ]
+});
+~~~
+
+{{note
+The direct initialization of the component (**view:"multiview"**) is optional and you can just init **cells** and the view will be automatically recognized.
+}}
+
+~~~js
+webix.ui({
+	cells:[
+         {id:"listView", view:"list", .... },
+         {id:"formView", view:"htmlform", .... },
+         {id:"emptyView"}
+    ]
+});
+~~~
+
+###Switching between Views
+
+1 . **[Tabbar and Segmented Integral Buttons](desktop/tabbar_switching.md).**
+
+Here switching is implemented with the help of special library controls that have built-in switching functionality as soon as they are bound with multiview cells by ID of these cells. 
+
+2 .**[Tabview Functionality](desktop/tabview.md).**
+
+Multiview built-in means of changing the view cells. Look very much like the tabbar from the previous point. 
+
+3 . **[Functions for Switching Actions](desktop/show_switching.md)**. 
+
+Here you use common methods (**show and back**) and create custom buttons each of which can take you to the necessary view. **Show()** method in conjunction with its counterpart **hide()** are as well used for 
+[changing visibility](desktop/visibility.md) of UI components. 
+
+###History API
+
+Learn how to "memorize" the currenty opened tab in the [related article](desktop/history_track.md). 
+
+###MultiView Events 
+
+- **onViewChange** - fires each time current cell changes for another one, regardless of switching pattern. 
+
+~~~js
+{	
+	view:"multiview",
+ 	cells:[...], 
+ 	on:{ 
+ 		onViewChange :function(prevID,nextID){
+    		...} 
+ 	} 
+}
+~~~
+
+###API Reference 
+
+[Methods, properties and events](api__refs__ui.multiview.html)
+
+###Related Articles
+
+- [Sizing Components](desktop/dimensions.md)
+- [Resizing](desktop/resizing.md)
+- [Setting Borders to the Components](desktop/borders.md)
+- [Controls](desktop/controls.md)
+- [Tabview Functionality](desktop/tabview.md)
+- [Layout](desktop/layout.md)
+- [Scrollview](desktop/scrollview.md)
+- [Accordion](desktop/accordion.md)
+- [Carousel](desktop/carousel.md)
+
+@index:
+  - desktop/tabbar_switching.md
+  - desktop/show_switching.md

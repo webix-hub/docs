@@ -1,0 +1,164 @@
+Building App Architecture
+============
+
+##Basic principles
+
+Before using library components you need to draw the scheme of their arrangement and define the way they would be positioned towards each other. It can 
+be done with the help of four interface-building components, namely: 
+
+- [Layout](desktop/layout.md)
+- [Multiview](desktop/multiview.md)
+- [Accordion](desktop/accordion.md)
+- [Scrollview](desktop/scrollview.md)
+- [Carousel](desktop/carousel.md)
+
+All the interface-building components inherit from [view](desktop/view.md), a base class or, simply put, a container where you ought to place the 
+component before working with it.
+
+[Layout](desktop/layout.md) allows dividing a page into **rows** and **columns** to organize sections to put other components. All of them will be visible within the same page
+at the same time. 
+
+Similar functionality you can find with a [form](desktop/form.md) and [toolbar](desktop/toolbar.md) components that house **controls** (input fields, checkboxes, buttons, etc.)  organized under the same pattern as layout 
+(**rows** and **cols**). See [Controls Guide](desktop/controls.md) to learn the variety of controls offered by this lib.
+
+[Mutliview](desktop/multiview.md), [carousel](desktop/carousel.md), [accordion](desktop/accordion.md) and [scrollview](desktop/scrollview.md) allow presenting different views in one and the same area 
+when you are short of space. They differ in the ways of switching between these views:
+
+- for **multiview cells** you need a dedicated button to switch between them;
+- **accordion items** are expanded and collapsed on clicking their headers;
+- **scrollview** allows scrolling through the whole content it houses;
+- **carousel panes** change in turn by clicking on them or swiping (on touch devices).
+
+All layout types are inited within the **webix.ui** constructor and can be nested into each other:
+
+~~~js
+webix.ui({
+	view:"layout", rows:[
+     {...}, //any component
+     {...}
+    ]
+});
+~~~
+
+##Layout
+
+If you just divide the page into **rows** or **columns** (cols) - you'll get standard **layout** to display the components side by side. 
+
+~~~js
+webix.ui({
+	rows:[
+     {...}, //any component
+     {cols:[
+     	{...},
+        {...}
+    ]
+});
+~~~
+
+[More about Layout](desktop/layout.md).
+
+##Accordion
+
+Accordion consists of items each of which takes a separate row or column and can be collapsed to hide the view it houses in its body. 
+
+~~~js
+webix.ui({
+	view:"accordion", rows:[
+    	{view:"accordionitem", header:"Item1", body:{ ...}},
+        {header:"Item2", body:{...}}
+    ]  //two ways of accordion item initialization are equal
+});
+~~~
+
+If you place an array of objects with **body** and **header** into layout row/column - you'll automatically get **accordion** with **accordion items** without direct initialization. 
+
+~~~js
+webix.ui({
+	rows:[
+    	{header:"Item1", body:{ ...}},
+        {header:"Item2", body:{...}}
+    ]  
+});
+~~~
+
+[More about Accordion](desktop/accordion.md).
+
+##Scrollview, Carousel, Form
+
+All of them are divided into **rows** and **cols** like layout, yet you need to initialize them directly.
+	- **scrollview** is standard layout with a **scrollbar**;
+    - **carousel rows** and **cols** are shown in turn, one by one, on clicking dedicated buttons or swiping (on touch devices);
+    - **form rows** and **cols** create a layout for controls. 
+
+{{snippet
+Scrollview
+}}
+~~~js
+webix.ui({
+	view:"scrollview",
+    body:{
+    	rows:[{...}, {...}]
+    },
+    scroll:"y" //scrolling direction
+});
+~~~
+
+{{snippet
+Carousel
+}}
+~~~js
+webix.ui({
+	view:"carousel",
+    cols:[
+    	{...},
+    	{...}
+    ]
+});
+~~~
+
+More about [Scrollview](desktop/scrollview.md), [Carousel](desktop/carousel.md), [Form](desktop/form.md).
+
+##Multiview
+
+~~~js
+webix.ui({
+	view:"multiview", //optional line
+    cells:[
+    	{...},
+        {...}
+    ]
+});
+~~~
+
+Note that with mutliview you should define a [tabbar](desktop/controls.md#tabbar) or [segmented](desktop/controls.md#segmented) button to switch between cells. 
+
+If you just define **cells** you'll automatically get **multiview**, if you add **tabs** to **cells** within one and the same constructor - it will turn into **tabview**. 
+In this case, a switching button is not needed as tabs perform this function.
+
+~~~js
+webix.ui({
+	tabs:[
+    	{id:"1", ...},
+        {id:"2", ...}
+    ],
+    cells:[
+    	{id:"1", ...},
+        {id:"2", ...}
+    ]
+});
+~~~
+
+More about [Multiview](desktop/multiview.md) and [Tabview](desktop/tabview.md). 
+
+###What's Next
+
+To learn how to set various **border types** or create a borderless design, consult the [dedicated article](desktop/borders.md).
+
+To learn how to **set headers** for components in layout rows, cols, multiview cells, etc, study the [corresponding article](desktop/setting_headers.md).
+
+Layouts can be **sized** according to common rules described in the [Sizing Components](desktop/dimensions.md) article. 
+
+@index:
+  - desktop/view.md
+
+@complexity:1

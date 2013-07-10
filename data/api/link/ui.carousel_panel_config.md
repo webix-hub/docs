@@ -1,0 +1,1 @@
+@link: api/carouselpanel_panel_config.md

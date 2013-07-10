@@ -1,0 +1,109 @@
+
+Properties
+==========
+
+{{links
+- api/link/ui.grouplist_animate_config.md - defines or disables view change animation.
+- api/link/ui.grouplist_autoheight_config.md - height of view will be adjusted to show all items
+- api/link/ui.grouplist_autowidth_config.md - width of view will be adjusted to show all items
+- api/link/ui.grouplist_borderless_config.md - used to hide the component borders
+- api/link/ui.grouplist_click_config.md - sets an action happening on a button click
+- api/link/ui.grouplist_clipboard_config.md - enables/disables clipboard support
+- api/link/ui.grouplist_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.grouplist_css_config.md - the name of a css class that will be applied to the view container
+- api/link/ui.grouplist_data_config.md - an inline dataset that data to the component will be load from.
+- api/link/ui.grouplist_datafeed_config.md - the url to the data source that the component will use to reload data from
+- api/link/ui.grouplist_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
+- api/link/ui.grouplist_datatype_config.md - the type of loaded data
+- api/link/ui.grouplist_disabled_config.md - disables item
+- api/link/ui.grouplist_drag_config.md - enables or disables drag-and-drop
+- api/link/ui.grouplist_externaldata_config.md - allows defining custom 'move' logic for the component.
+- api/link/ui.grouplist_gravity_config.md - sets the view gravity (1 by default)
+- api/link/ui.grouplist_height_config.md - sets the height of the component
+- api/link/ui.grouplist_hidden_config.md - defines whether the view will be hidden initially
+- api/link/ui.grouplist_id_config.md - the component ID
+- api/link/ui.grouplist_layout_config.md - defines x or y orientation of layout
+- api/link/ui.grouplist_maxheight_config.md - sets the maximum height for the view
+- api/link/ui.grouplist_maxwidth_config.md - sets the maximum width for the view
+- api/link/ui.grouplist_minheight_config.md - sets the minimal height for the view
+- api/link/ui.grouplist_minwidth_config.md - sets the minimal width for the view
+- api/link/ui.grouplist_mouseeventdelay_config.md - the delay between a real mouse action and invoking the related events
+- api/link/ui.grouplist_on_config.md - allows attaching custom handlers to inner events of the component
+- api/link/ui.grouplist_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
+- api/link/ui.grouplist_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
+- api/link/ui.grouplist_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.grouplist_onmousemove_config.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.grouplist_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
+- api/link/ui.grouplist_ready_config.md - a handler that is called just after the page has been completely parsed
+- api/link/ui.grouplist_removemissed_config.md - defines how to treat items in case of reloading
+- api/link/ui.grouplist_rules_config.md - set of validation rules for the component
+- api/link/ui.grouplist_save_config.md - defines urls for datasaving
+- api/link/ui.grouplist_scheme_config.md - defines schemes for data processing
+- api/link/ui.grouplist_scroll_config.md - enables/disables the scroll bar
+- api/link/ui.grouplist_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
+- api/link/ui.grouplist_select_config.md - enables/disables item selection or multiselection in grouplist
+- api/link/ui.grouplist_template_config.md - the component template
+- api/ui.grouplist_templateback_config.md - an html template that defines data that will be presented in group header in the expanded state
+- api/link/ui.grouplist_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
+- api/ui.grouplist_templategroup_config.md - an html template that defines data that will be presented in group header in the collapsed state
+- api/ui.grouplist_templateitem_config.md - an html template that defines data that will be presented in grouplist
+- api/link/ui.grouplist_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.grouplist_type_config.md - object that specifies items presentation
+- api/link/ui.grouplist_url_config.md - the url of a data feed which will be loaded after component initialization
+- api/link/ui.grouplist_width_config.md - sets the width of the component
+- api/link/ui.grouplist_xcount_config.md - defines width of view in items
+- api/link/ui.grouplist_ycount_config.md - defines height of view in items
+}}
+
+@index:
+- api/link/ui.grouplist_animate_config.md
+- api/link/ui.grouplist_autoheight_config.md
+- api/link/ui.grouplist_autowidth_config.md
+- api/link/ui.grouplist_borderless_config.md
+- api/link/ui.grouplist_click_config.md
+- api/link/ui.grouplist_clipboard_config.md
+- api/link/ui.grouplist_container_config.md
+- api/link/ui.grouplist_css_config.md
+- api/link/ui.grouplist_data_config.md
+- api/link/ui.grouplist_datafeed_config.md
+- api/link/ui.grouplist_datathrottle_config.md
+- api/link/ui.grouplist_datatype_config.md
+- api/link/ui.grouplist_disabled_config.md
+- api/link/ui.grouplist_drag_config.md
+- api/link/ui.grouplist_externaldata_config.md
+- api/link/ui.grouplist_gravity_config.md
+- api/link/ui.grouplist_height_config.md
+- api/link/ui.grouplist_hidden_config.md
+- api/link/ui.grouplist_id_config.md
+- api/link/ui.grouplist_layout_config.md
+- api/link/ui.grouplist_maxheight_config.md
+- api/link/ui.grouplist_maxwidth_config.md
+- api/link/ui.grouplist_minheight_config.md
+- api/link/ui.grouplist_minwidth_config.md
+- api/link/ui.grouplist_mouseeventdelay_config.md
+- api/link/ui.grouplist_on_config.md
+- api/link/ui.grouplist_onclick_config.md
+- api/link/ui.grouplist_oncontext_config.md
+- api/link/ui.grouplist_ondblclick_config.md
+- api/link/ui.grouplist_onmousemove_config.md
+- api/link/ui.grouplist_pager_config.md
+- api/link/ui.grouplist_ready_config.md
+- api/link/ui.grouplist_removemissed_config.md
+- api/link/ui.grouplist_rules_config.md
+- api/link/ui.grouplist_save_config.md
+- api/link/ui.grouplist_scheme_config.md
+- api/link/ui.grouplist_scroll_config.md
+- api/link/ui.grouplist_scrollspeed_config.md
+- api/link/ui.grouplist_select_config.md
+- api/link/ui.grouplist_template_config.md
+- api/ui.grouplist_templateback_config.md
+- api/link/ui.grouplist_templatecopy_config.md
+- api/ui.grouplist_templategroup_config.md
+- api/ui.grouplist_templateitem_config.md
+- api/link/ui.grouplist_tooltip_config.md
+- api/link/ui.grouplist_type_config.md
+- api/link/ui.grouplist_url_config.md
+- api/link/ui.grouplist_width_config.md
+- api/link/ui.grouplist_xcount_config.md
+- api/link/ui.grouplist_ycount_config.md
+

@@ -1,0 +1,1 @@
+@link: api/ui.button_type_config.md

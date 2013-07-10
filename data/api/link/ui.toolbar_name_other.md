@@ -1,0 +1,1 @@
+@link: api/settings_name_other.md

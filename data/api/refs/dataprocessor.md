@@ -1,0 +1,87 @@
+DataProcessor 
+=============
+
+{{memo Handles clien-server data saving operations. }}
+
+
+
+
+Methods
+-------
+
+{{links
+- api/link/dataprocessor_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/dataprocessor_attachprogress.md - asssigns handler for data saving actions
+- api/link/dataprocessor_blockevent.md - temporarily blocks triggering of ALL events of the calling object
+- api/link/dataprocessor_callevent.md - calls an inner event
+- api/link/dataprocessor_clearvalidation.md - removes "data incorrect" highlighting from invalid text fields
+- api/link/dataprocessor_define.md - redefines a single configuration property (or a hash of properties)
+- api/link/dataprocessor_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
+- api/dataprocessor_escape.md - escapes data
+- api/link/dataprocessor_hasevent.md - checks whether the component has the specified event
+- api/dataprocessor_ignore.md - the code that you pass here as the parameter will not react on any data changes (will not be affected by 'onStoreUpdated' event handler)
+- api/link/dataprocessor_mapevent.md - routes events from one object to another
+- api/dataprocessor_off.md - disables dataProcessor
+- api/dataprocessor_on.md - enables dataProcessor
+- api/dataprocessor_processresult.md - process data saving results
+- api/dataprocessor_reset.md - reset updated state for all items
+- api/dataprocessor_save.md - mark data record as changed and initiates data saving
+- api/dataprocessor_send.md - sends a request to server. Allows to save data changes on server.
+- api/link/dataprocessor_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
+- api/link/dataprocessor_validate.md - checks data in the component during adding new item or editing existing ones
+}}
+
+
+Events
+------
+
+{{links
+- api/dataprocessor_onafter_event.md - fires each time after successfull data saving
+- api/dataprocessor_onaftersync_event.md - called when server side response received and processed
+- api/link/dataprocessor_onaftervalidation_event.md - fires after data has been validated
+- api/dataprocessor_onbefore_event.md - fires each time before data sending of any data item
+- api/dataprocessor_onbeforedatasend_event.md - called before sending data to server side
+- api/dataprocessor_onbeforesync_event.md - called when server side response received, but not processed yet
+- api/link/dataprocessor_onbeforevalidate_event.md - called before runing validation
+- api/dataprocessor_onerror_event.md - fires for data saving errors which result in error
+- api/dataprocessor_onloaderror_event.md - occurs when server side response is invalid and can't be procesed
+- api/link/dataprocessor_onvalidationerror_event.md - fires when the form fails to pass validation
+- api/link/dataprocessor_onvalidationsuccess_event.md - fires after the form has passes validation successfully
+}}
+
+
+Properties
+----------
+
+{{links
+- api/dataprocessor_autoupdate_config.md - enables automatic data updating on server while any changes on client-side are done
+- api/dataprocessor_connectorname_config.md - name of parameter which will hold operation type ( in case of connector protocol )
+- api/dataprocessor_escape_config.md - custom escaping function
+- api/link/dataprocessor_id_config.md - the component ID
+- api/dataprocessor_master_config.md - the linked data source. It can be both some independent data source and one of components operated on data (e.g. grid)
+- api/dataprocessor_mode_config.md - type of request
+- api/link/dataprocessor_on_config.md - allows attaching custom handlers to inner events of the component
+- api/dataprocessor_operationname_config.md - name of parameter which will hold operation type
+- api/link/dataprocessor_rules_config.md - defines a set of rules for input field(s) of the form(htmlform)
+- api/dataprocessor_store_config.md - allows to define datastore which will be monitored for changes
+- api/dataprocessor_url_config.md - server side data saving script
+}}
+
+
+
+
+Other
+-----
+
+{{links
+- api/link/dataprocessor_config_other.md - all options from initial component configuration
+- api/link/dataprocessor_name_other.md - indicates the name of the component (a read-only property)
+}}
+
+
+@index:
+- api/refs/dataprocessor_methods.md
+- api/refs/dataprocessor_props.md
+- api/refs/dataprocessor_events.md
+- api/refs/dataprocessor_others.md
+

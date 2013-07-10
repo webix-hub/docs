@@ -1,0 +1,133 @@
+
+Properties
+==========
+
+{{links
+- api/link/ui.contextmenu_animate_config.md - defines or disables view change animation.
+- api/link/ui.contextmenu_autofit_config.md - adjusts window size to the size of an HTML node	it is initiated in
+- api/link/ui.contextmenu_autofocus_config.md - sets focus on the window the moment it appears on the page
+- api/link/ui.contextmenu_autoheight_config.md - height of view will be adjusted to show all items
+- api/link/ui.contextmenu_autowidth_config.md - width of view will be adjusted to show all items
+- api/link/ui.contextmenu_body_config.md - the content of window body: template or view
+- api/link/ui.contextmenu_borderless_config.md - used to hide the component borders
+- api/link/ui.contextmenu_click_config.md - sets an action happening on a button click
+- api/link/ui.contextmenu_clipboard_config.md - enables/disables clipboard support
+- api/link/ui.contextmenu_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.contextmenu_css_config.md - the name of a css class that will be applied to the view container
+- api/link/ui.contextmenu_data_config.md - an inline dataset that data to the component will be load from.
+- api/link/ui.contextmenu_datafeed_config.md - the url to the data source that the component will use to reload data from
+- api/link/ui.contextmenu_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
+- api/link/ui.contextmenu_datatype_config.md - the type of loaded data
+- api/link/ui.contextmenu_disabled_config.md - disables item
+- api/link/ui.contextmenu_drag_config.md - enables or disables drag-and-drop
+- api/link/ui.contextmenu_externaldata_config.md - allows defining custom 'move' logic for the component.
+- api/link/ui.contextmenu_gravity_config.md - sets the view gravity (1 by default)
+- api/link/ui.contextmenu_head_config.md - sets header view
+- api/link/ui.contextmenu_headheight_config.md - defines the header height (43 by default)
+- api/link/ui.contextmenu_height_config.md - sets the height of the component
+- api/link/ui.contextmenu_hidden_config.md - defines whether the view will be hidden initially
+- api/link/ui.contextmenu_id_config.md - the component ID
+- api/link/ui.contextmenu_layout_config.md - defines x or y orientation of layout
+- api/link/ui.contextmenu_left_config.md - the left offset of the window
+- api/link/ui.contextmenu_master_config.md - the area for which context object in inited
+- api/link/ui.contextmenu_maxheight_config.md - sets the maximum height for the view
+- api/link/ui.contextmenu_maxwidth_config.md - sets the maximum width for the view
+- api/link/ui.contextmenu_minheight_config.md - sets the minimal height for the view
+- api/link/ui.contextmenu_minwidth_config.md - sets the minimal width for the view
+- api/link/ui.contextmenu_modal_config.md - switches window modality
+- api/link/ui.contextmenu_mouseeventdelay_config.md - the delay between a real mouse action and invoking the related events
+- api/link/ui.contextmenu_move_config.md - makes view movable
+- api/link/ui.contextmenu_on_config.md - allows attaching custom handlers to inner events of the component
+- api/link/ui.contextmenu_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
+- api/link/ui.contextmenu_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
+- api/link/ui.contextmenu_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.contextmenu_onmousemove_config.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.contextmenu_padding_config.md - sets paddings of the chart content
+- api/link/ui.contextmenu_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
+- api/link/ui.contextmenu_position_config.md - sets position of the window relative to the the screen
+- api/link/ui.contextmenu_ready_config.md - a handler that is called just after the page has been completely parsed
+- api/link/ui.contextmenu_relative_config.md - positions a popup window relative to the component it's connected with
+- api/link/ui.contextmenu_removemissed_config.md - defines how to treat items in case of reloading
+- api/link/ui.contextmenu_rules_config.md - set of validation rules for the component
+- api/link/ui.contextmenu_save_config.md - defines urls for datasaving
+- api/link/ui.contextmenu_scheme_config.md - defines schemes for data processing
+- api/link/ui.contextmenu_scroll_config.md - enables/disables the scroll bar
+- api/link/ui.contextmenu_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
+- api/link/ui.contextmenu_select_config.md - enables/disables item selection or multiselection in grouplist
+- api/link/ui.contextmenu_submenupos_config.md - aligns submenu towards main menu
+- api/link/ui.contextmenu_template_config.md - the component template
+- api/link/ui.contextmenu_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
+- api/link/ui.contextmenu_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.contextmenu_top_config.md - the top offset of a window
+- api/link/ui.contextmenu_type_config.md - object that specifies items presentation
+- api/link/ui.contextmenu_url_config.md - the url of a data feed which will be loaded after component initialization
+- api/link/ui.contextmenu_width_config.md - sets the width of the component
+- api/link/ui.contextmenu_xcount_config.md - defines width of view in items
+- api/link/ui.contextmenu_ycount_config.md - defines height of view in items
+- api/link/ui.contextmenu_zindex_config.md - stack order of the component
+}}
+
+@index:
+- api/link/ui.contextmenu_animate_config.md
+- api/link/ui.contextmenu_autofit_config.md
+- api/link/ui.contextmenu_autofocus_config.md
+- api/link/ui.contextmenu_autoheight_config.md
+- api/link/ui.contextmenu_autowidth_config.md
+- api/link/ui.contextmenu_body_config.md
+- api/link/ui.contextmenu_borderless_config.md
+- api/link/ui.contextmenu_click_config.md
+- api/link/ui.contextmenu_clipboard_config.md
+- api/link/ui.contextmenu_container_config.md
+- api/link/ui.contextmenu_css_config.md
+- api/link/ui.contextmenu_data_config.md
+- api/link/ui.contextmenu_datafeed_config.md
+- api/link/ui.contextmenu_datathrottle_config.md
+- api/link/ui.contextmenu_datatype_config.md
+- api/link/ui.contextmenu_disabled_config.md
+- api/link/ui.contextmenu_drag_config.md
+- api/link/ui.contextmenu_externaldata_config.md
+- api/link/ui.contextmenu_gravity_config.md
+- api/link/ui.contextmenu_head_config.md
+- api/link/ui.contextmenu_headheight_config.md
+- api/link/ui.contextmenu_height_config.md
+- api/link/ui.contextmenu_hidden_config.md
+- api/link/ui.contextmenu_id_config.md
+- api/link/ui.contextmenu_layout_config.md
+- api/link/ui.contextmenu_left_config.md
+- api/link/ui.contextmenu_master_config.md
+- api/link/ui.contextmenu_maxheight_config.md
+- api/link/ui.contextmenu_maxwidth_config.md
+- api/link/ui.contextmenu_minheight_config.md
+- api/link/ui.contextmenu_minwidth_config.md
+- api/link/ui.contextmenu_modal_config.md
+- api/link/ui.contextmenu_mouseeventdelay_config.md
+- api/link/ui.contextmenu_move_config.md
+- api/link/ui.contextmenu_on_config.md
+- api/link/ui.contextmenu_onclick_config.md
+- api/link/ui.contextmenu_oncontext_config.md
+- api/link/ui.contextmenu_ondblclick_config.md
+- api/link/ui.contextmenu_onmousemove_config.md
+- api/link/ui.contextmenu_padding_config.md
+- api/link/ui.contextmenu_pager_config.md
+- api/link/ui.contextmenu_position_config.md
+- api/link/ui.contextmenu_ready_config.md
+- api/link/ui.contextmenu_relative_config.md
+- api/link/ui.contextmenu_removemissed_config.md
+- api/link/ui.contextmenu_rules_config.md
+- api/link/ui.contextmenu_save_config.md
+- api/link/ui.contextmenu_scheme_config.md
+- api/link/ui.contextmenu_scroll_config.md
+- api/link/ui.contextmenu_scrollspeed_config.md
+- api/link/ui.contextmenu_select_config.md
+- api/link/ui.contextmenu_submenupos_config.md
+- api/link/ui.contextmenu_template_config.md
+- api/link/ui.contextmenu_templatecopy_config.md
+- api/link/ui.contextmenu_tooltip_config.md
+- api/link/ui.contextmenu_top_config.md
+- api/link/ui.contextmenu_type_config.md
+- api/link/ui.contextmenu_url_config.md
+- api/link/ui.contextmenu_width_config.md
+- api/link/ui.contextmenu_xcount_config.md
+- api/link/ui.contextmenu_ycount_config.md
+- api/link/ui.contextmenu_zindex_config.md
+

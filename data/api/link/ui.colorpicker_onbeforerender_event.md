@@ -1,0 +1,1 @@
+@link: api/atomrender_onbeforerender_event.md

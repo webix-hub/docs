@@ -1,0 +1,1 @@
+@link: api/ui.segmented_multiview_config.md

@@ -1,0 +1,186 @@
+Headers and Footers
+===================
+Headers and footers in DataTable are enabled by the [header](api/ui.datatable_header_config.md), [footer](api/ui.datatable_footer_config.md) parameters and configured by attributes **header**, **footer** in the [columns](api/ui.datatable_columns_config.md) parameter.
+
+Header can be presented as:
+
+1. [A single line header](#singlelineheader);
+2. [A multiline header](#multilineheader);
+3. [A single line (or multiline) header containing colspans (rowspans), built-in filters](#complexheadercontainingcolspansrowspansbuiltinheaders).
+
+
+Single line header
+------------------------
+To define a simple (single line) header you should specify it as a string.
+
+<img src='datatable/simple_header.png'/>
+
+In this case you can put the following to the header:
+
+- *text labels*;
+- *images*;
+- *html inputs*;
+- *links*.
+
+{{snippet
+Defining a single line header
+}}
+
+~~~js
+columns:[
+	{ id:"col1", header:"<input type='button' value='Do something' 
+class='dummy_button'>"}, //header as a button
+	{ id:"col2", header:"<img src='../common/imdb.png'>"}, // header as an image
+	{ id:"col1", header:"Year"}, //header as a text label
+	{ id:"col4", header:"<a href='http://google.com'>Link</a>"} // header as a link
+]
+~~~
+
+{{sample 15_datatable/12_header_footer/04_content.html }}
+
+Multiline header
+-------------------
+You should use 'array' definition to split header into several subheaders (each value of the array specifies a single subheader).
+
+
+<img src='datatable/multiline_header.png'/>
+
+
+{{snippet
+Defining a multiline header
+}}
+~~~js
+columns:[
+	{ id:"rank",  header:["#", ""]},
+	{ id:"title", header:["Film title", "Second line"]},
+	{ id:"year",  header:["Year", ""]},
+	{ id:"votes", header:["Votes", ""]}
+]
+</code>
+~~~
+
+Note, you can specify different number of subheaders for different columns (number of subheaders is equal to number of values in array).
+
+{{sample 15_datatable/12_header_footer/03_multiline.html }}
+
+Complex header containing colspans (rowspans), built-in headers
+-------------------------------------------------------------
+To specify colspan(rowspan) in the header or put filter into it, you should specify the header as an object or array of objects.
+
+When the header is presented as an object, it has the following properties:
+
+1. *text* - the text label of a column;
+2. *colspan* - the number of columns a cell should span;
+3. *rowspan* - the number of rows a cell should span;
+4. *content* - the built-in filter of a column (textFilter or selectFilter).
+
+###Colspan
+
+<img src='datatable/header_colspan.png'/>
+
+To create a cell that will span across 2 (or more) columns you should use the following technique:
+
+{{snippet
+Using colspans
+}}
+
+~~~js
+columns:[
+	{ id:"title", header:["Film title", {text:"Subheader", colspan:3}]},
+	{ id:"year",  header:["Year", ""]},
+	{ id:"votes", header:["Votes", ""]}
+]
+~~~
+
+{{sample 15_datatable/12_header_footer/09_colspan.html }}
+
+###Rowspan
+
+<img src='datatable/header_rowspan.png'/>
+
+To create a cell that will span across 2 (or more) rows you should use the following technique:
+
+{{snippet
+Using rowspans
+}}
+~~~js
+columns:[
+    { id:"title", header:[{ text:"Film title", rowspan:2}]},
+	{ id:"year",  header:["Year", ""]},
+	{ id:"votes", header:["Votes", ""]}
+]
+~~~
+
+{{sample 15_datatable/12_header_footer/09_colspan.html }}
+
+###Built-in filters
+
+<img src='datatable/header_filters.png'/>
+
+To put filter into the header, you should use the following technique:
+
+{{snippet
+Using filters in the header
+}}
+~~~js
+columns:[
+	{ id:"title", header:["Film title",{ content:"textFilter"}]},
+	{ id:"year",  header:"Year"},
+	{ id:"votes", header:"Votes"}
+]
+~~~
+
+{{sample 15_datatable/12_header_footer/05_filters.html }}
+
+
+Footers
+-------------
+By default, headers are enabled but footers are disabled. <br> So, before to start use footers - enable them.
+
+{{snippet
+Enabling footers in DataTable
+}}
+~~~js
+grid = new webix.ui({
+		view:"datatable",
+		...
+		footer:true
+})
+~~~
+Then, use all the same logic as for headers:
+
+{{snippet Using footers}}
+~~~js
+columns:[
+	{ id:"col1", footer:"<input type='button' value='Do something' 
+class='dummy_button'>"}, //footer as a button
+	{ id:"col2", footer:"<img src='../common/imdb.png'>"},// footer as an image
+	{ id:"col1", footer:"Year"}, //footer as a text label
+	{ id:"col4", footer:"<a href='http://google.com'>Link</a>"} // footer as a link
+]
+~~~
+
+{{sample 15_datatable/12_header_footer/01_basic.html }}
+
+Sum counter in the footer
+----------------------------
+The library provides the **summColumn** counter that can be used to get the total value in the footer of a column.
+
+To put the counter into the footer, you should use the following technique:
+
+{{snippet
+Using the sum counter in the footer
+}}
+~~~js
+columns:[
+	{ id:"title", header:"Film title"},
+	{ id:"year",  header:"Year"},
+	{ id:"votes", header:"Votes", footer:{content:"summColumn"}}
+]
+~~~
+
+{{sample 15_datatable/12_header_footer/06_counter.html }}
+
+@test: test
+@keyword:
+	header, footer,colspan,rowspan,filter,subheader,multiline, counter

@@ -1,0 +1,144 @@
+ui.htmlform 
+=============
+
+
+{{memo A control for integration with an HTML form. }}
+
+The component allows you to get an HTML Form as a lib-based view, so that to use it together with the other lib components (common API, techniques, architecture etc.). Check [htmlform](desktop__htmlform.md) documentation for more detailed description.
+
+### Constructor
+
+~~~js
+	var htmlform = webix.ui({
+		view:"htmlform", 
+		container:"mydiv", 
+		...config options goes here..
+	})
+	//or, in case of jQuery
+	$("#mydiv").webix_htmlform({
+		...config options goes here..
+	});
+~~~
+
+<div class='webixdoc_parents'><span>Based on: </span>
+<a href="api/refs/ui.template.md">ui.template</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/values.md">Values</a>, <a href="api/refs/validatedata.md">ValidateData</a></div>
+
+Methods
+-------
+
+{{links
+- api/link/ui.htmlform_adjust.md - adjusts the component to the size of the parent HTML container
+- api/link/ui.htmlform_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.htmlform_bind.md - binds components
+- api/link/ui.htmlform_blockevent.md - temporarily blocks triggering of ALL events of the calling object
+- api/link/ui.htmlform_callevent.md - calls an inner event
+- api/link/ui.htmlform_clear.md - clears all the field in a specified form
+- api/link/ui.htmlform_clearvalidation.md - removes "data incorrect" highlighting from invalid text fields
+- api/link/ui.htmlform_define.md - redefines a single configuration property (or a hash of properties)
+- api/link/ui.htmlform_destructor.md - destructs the calling object
+- api/link/ui.htmlform_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
+- api/link/ui.htmlform_disable.md - disables the calling view (makes it dimmed and unclickable)
+- api/link/ui.htmlform_enable.md - enables the calling view that was disabled by the 'disable' method
+- api/link/ui.htmlform_focus.md - sets focus into the necessary component
+- api/link/ui.htmlform_getchildviews.md - returns child views of the calling component
+- api/link/ui.htmlform_getnode.md - returns the main HTML container for the calling object
+- api/link/ui.htmlform_getparentview.md - returns the parent view of the component
+- api/link/ui.htmlform_getscrollstate.md - returns the scroll position
+- api/link/ui.htmlform_getvalues.md - derives input values from the form
+- api/link/ui.htmlform_hasevent.md - checks whether the component has the specified event
+- api/link/ui.htmlform_hide.md - hides the view
+- api/link/ui.htmlform_isdirty.md - checks whether changes within form were made
+- api/link/ui.htmlform_isenabled.md - checks whether the view is enabled
+- api/link/ui.htmlform_isvisible.md - checks whether the view is visible
+- api/link/ui.htmlform_load.md - loads data from an external data source
+- api/link/ui.htmlform_mapevent.md - routes events from one object to another
+- api/link/ui.htmlform_parse.md - loads data to the component from an inline data source
+- api/link/ui.htmlform_refresh.md - repaints the component
+- api/link/ui.htmlform_render.md - renders the specified item or the whole component
+- api/link/ui.htmlform_resize.md - adjusts the view to a new size
+- api/link/ui.htmlform_scrollto.md - scrolls the data container to a certain position
+- api/link/ui.htmlform_setdirty.md - marks the form  as the one with changed values
+- api/link/ui.htmlform_sethtml.md - set hmlt for template
+- api/link/ui.htmlform_setvalues.md - sets values into all the form inputs
+- api/link/ui.htmlform_show.md - makes the component visible
+- api/link/ui.htmlform_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.htmlform_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
+- api/link/ui.htmlform_validate.md - checks data in the component during adding new item or editing existing ones
+}}
+
+
+Events
+------
+
+{{links
+- api/link/ui.htmlform_onafterload_event.md - fires after xml loading is complete
+- api/link/ui.htmlform_onafterrender_event.md - occurs immediately after the component has been rendered
+- api/link/ui.htmlform_onaftervalidation_event.md - fires after data has been validated
+- api/link/ui.htmlform_onbeforeload_event.md - occurs immediately before loading XML data has been started
+- api/link/ui.htmlform_onbeforerender_event.md - occurs immediately before the component has been rendered
+- api/link/ui.htmlform_onbeforevalidate_event.md - called before runing validation
+- api/link/ui.htmlform_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.htmlform_onchange_event.md - fires when data in the input is changed
+- api/link/ui.htmlform_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
+- api/link/ui.htmlform_onvalidationerror_event.md - fires when the form fails to pass validation
+- api/link/ui.htmlform_onvalidationsuccess_event.md - fires after the form has passes validation successfully
+}}
+
+
+Properties
+----------
+
+{{links
+- api/link/ui.htmlform_animate_config.md - defines or disables view change animation.
+- api/link/ui.htmlform_autoheight_config.md - lets the component autosize to its contents
+- api/link/ui.htmlform_borderless_config.md - used to hide the component borders
+- api/link/ui.htmlform_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.htmlform_content_config.md - the id or node, whose content will be moved to the view
+- api/link/ui.htmlform_css_config.md - the name of a css class that will be applied to the view container
+- api/link/ui.htmlform_data_config.md - an inline dataset that data to the component will be load from.
+- api/link/ui.htmlform_datafeed_config.md - the url to the data source that the component will use to reload data from
+- api/link/ui.htmlform_datatype_config.md - the type of loaded data
+- api/link/ui.htmlform_disabled_config.md - disables item
+- api/link/ui.htmlform_gravity_config.md - sets the view gravity (1 by default)
+- api/link/ui.htmlform_height_config.md - sets the height of the component
+- api/link/ui.htmlform_hidden_config.md - defines whether the view will be hidden initially
+- api/link/ui.htmlform_id_config.md - the component ID
+- api/link/ui.htmlform_maxheight_config.md - sets the maximum height for the view
+- api/link/ui.htmlform_maxwidth_config.md - sets the maximum width for the view
+- api/link/ui.htmlform_minheight_config.md - sets the minimal height for the view
+- api/link/ui.htmlform_minwidth_config.md - sets the minimal width for the view
+- api/link/ui.htmlform_on_config.md - allows attaching custom handlers to inner events of the component
+- api/link/ui.htmlform_rules_config.md - defines a set of rules for input field(s) of the form(htmlform)
+- api/link/ui.htmlform_scroll_config.md - enables/disables the scroll bar
+- api/link/ui.htmlform_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
+- api/link/ui.htmlform_src_config.md - the path to an external template that is loaded by Ajax
+- api/link/ui.htmlform_template_config.md - the component template
+- api/link/ui.htmlform_url_config.md - the url of a data feed which will be loaded after component initialization
+- api/link/ui.htmlform_waitmessage_config.md - defines whether the loading cover should be displayed while loading (actual in case of 'src' parameter)
+- api/link/ui.htmlform_width_config.md - sets the width of the component
+}}
+
+
+
+
+Other
+-----
+
+{{links
+- api/link/ui.htmlform_$getsize_other.md - returns the current size of the component
+- api/link/ui.htmlform_$height_other.md - current height of the view
+- api/link/ui.htmlform_$setsize_other.md - sets the component size
+- api/link/ui.htmlform_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.htmlform_$view_other.md - reference to top html element of the view
+- api/link/ui.htmlform_$width_other.md - current width of the view
+- api/link/ui.htmlform_config_other.md - all options from initial component configuration
+- api/link/ui.htmlform_name_other.md - indicates the name of the component (a read-only property)
+}}
+
+
+@index:
+- api/refs/ui.htmlform_methods.md
+- api/refs/ui.htmlform_props.md
+- api/refs/ui.htmlform_events.md
+- api/refs/ui.htmlform_others.md
+

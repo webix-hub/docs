@@ -1,0 +1,159 @@
+
+Methods
+=======
+
+{{links
+- api/link/ui.grouplist_add.md - adds an item to the store
+- api/link/ui.grouplist_addcss.md - applied CSS class to a component item
+- api/link/ui.grouplist_adjust.md - adjusts the component to the size of the parent HTML container
+- api/link/ui.grouplist_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.grouplist_bind.md - binds components
+- api/link/ui.grouplist_blockevent.md - temporarily blocks triggering of ALL events of the calling object
+- api/link/ui.grouplist_callevent.md - calls an inner event
+- api/link/ui.grouplist_clearall.md - removes all items from the component
+- api/link/ui.grouplist_clearcss.md - removes css class from all items
+- api/link/ui.grouplist_clearvalidation.md - removes all validation marks from the component
+- api/link/ui.grouplist_copy.md - copies an item to the same or another object
+- api/link/ui.grouplist_count.md - returns the count of items in the table
+- api/link/ui.grouplist_customize.md - redefines the 'type' property
+- api/link/ui.grouplist_define.md - redefines a single configuration property (or a hash of properties)
+- api/link/ui.grouplist_destructor.md - destructs the calling object
+- api/link/ui.grouplist_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
+- api/link/ui.grouplist_disable.md - disables the calling view (makes it dimmed and unclickable)
+- api/link/ui.grouplist_enable.md - enables the calling view that was disabled by the 'disable' method
+- api/link/ui.grouplist_exists.md - checks whether an item with the specified id exists
+- api/link/ui.grouplist_filter.md - filters the component
+- api/link/ui.grouplist_getchildviews.md - returns child views of the calling component
+- api/link/ui.grouplist_getfirstid.md - returns the ID of the first item
+- api/link/ui.grouplist_getidbyindex.md - returns the id of the item with the specified index
+- api/link/ui.grouplist_getindexbyid.md - returns the index of the item with the specified id
+- api/link/ui.grouplist_getitem.md - gets the object of the data item with the specified id
+- api/link/ui.grouplist_getlastid.md - returns the id of the last item
+- api/link/ui.grouplist_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
+- api/link/ui.grouplist_getnode.md - returns the main HTML container for the calling object
+- api/ui.grouplist_getopenstate.md - gets IDs of items taking part in the current group opening
+- api/link/ui.grouplist_getpage.md - returns the currently visible page in case of paged view
+- api/link/ui.grouplist_getpager.md - returns the pager object associated with the component
+- api/link/ui.grouplist_getparentview.md - returns the parent view of the component
+- api/link/ui.grouplist_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
+- api/link/ui.grouplist_getscrollstate.md - returns the scroll position
+- api/link/ui.grouplist_getselectedid.md - returns the id(s) of the selected item(s)
+- api/link/ui.grouplist_getselecteditem.md - returns selected object
+- api/link/ui.grouplist_getvisiblecount.md - returns the number of items that can be seen with the current view height
+- api/link/ui.grouplist_group.md - groups data by the specified data property
+- api/link/ui.grouplist_hascss.md - checks if item has specific css class
+- api/link/ui.grouplist_hasevent.md - checks whether the component has the specified event
+- api/link/ui.grouplist_hide.md - hides the view
+- api/link/ui.grouplist_isenabled.md - checks whether the view is enabled
+- api/link/ui.grouplist_isselected.md - checks whether the specified item is selected or not
+- api/link/ui.grouplist_isvisible.md - checks whether the view is visible
+- api/link/ui.grouplist_load.md - loads data from an external data source
+- api/link/ui.grouplist_loadnext.md - sends a request to load the specified number of records to the end or to the specified position 
+of the component
+- api/link/ui.grouplist_locate.md - gets the id of an item from the specified HTML event
+- api/link/ui.grouplist_mapevent.md - routes events from one object to another
+- api/link/ui.grouplist_move.md - moves the specified item to the new position
+- api/link/ui.grouplist_movebottom.md - moves the specified item to the last position
+- api/link/ui.grouplist_movedown.md - increases the item index and moves the item to the new position
+- api/link/ui.grouplist_movetop.md - moves the specified item to the first position
+- api/link/ui.grouplist_moveup.md - decreases the item index and moves the item to the new position
+- api/link/ui.grouplist_parse.md - loads data to the component from an inline data source
+- api/link/ui.grouplist_refresh.md - repaints the whole view or a certain item
+- api/link/ui.grouplist_remove.md - removes the specified item from datastore
+- api/link/ui.grouplist_removecss.md - removes CSS class from a component item
+- api/link/ui.grouplist_render.md - renders the specified item or the whole component
+- api/link/ui.grouplist_resize.md - adjusts the view to a new size
+- api/link/ui.grouplist_scrollto.md - scrolls the data container to a certain position
+- api/link/ui.grouplist_select.md - selects the specified item(s)
+- api/link/ui.grouplist_selectall.md - selects all items or the specified range
+- api/link/ui.grouplist_serialize.md - serializes data to a json object
+- api/link/ui.grouplist_setpage.md - makes the specified page visible (assuming that the pager was defined )
+- api/link/ui.grouplist_show.md - makes the component visible
+- api/link/ui.grouplist_showitem.md - scrolls the component to make the specified item visible
+- api/link/ui.grouplist_sort.md - sorts datastore
+- api/link/ui.grouplist_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.grouplist_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
+- api/link/ui.grouplist_ungroup.md - ungroups data
+- api/link/ui.grouplist_unselect.md - removes selection from the specified item
+- api/link/ui.grouplist_unselectall.md - removes selection from all items
+- api/link/ui.grouplist_updateitem.md - sets properties of the data item
+- api/link/ui.grouplist_validate.md - validates one record or all dataset against validation rules
+}}
+
+@index:
+- api/link/ui.grouplist_add.md
+- api/link/ui.grouplist_addcss.md
+- api/link/ui.grouplist_adjust.md
+- api/link/ui.grouplist_attachevent.md
+- api/link/ui.grouplist_bind.md
+- api/link/ui.grouplist_blockevent.md
+- api/link/ui.grouplist_callevent.md
+- api/link/ui.grouplist_clearall.md
+- api/link/ui.grouplist_clearcss.md
+- api/link/ui.grouplist_clearvalidation.md
+- api/link/ui.grouplist_copy.md
+- api/link/ui.grouplist_count.md
+- api/link/ui.grouplist_customize.md
+- api/link/ui.grouplist_define.md
+- api/link/ui.grouplist_destructor.md
+- api/link/ui.grouplist_detachevent.md
+- api/link/ui.grouplist_disable.md
+- api/link/ui.grouplist_enable.md
+- api/link/ui.grouplist_exists.md
+- api/link/ui.grouplist_filter.md
+- api/link/ui.grouplist_getchildviews.md
+- api/link/ui.grouplist_getfirstid.md
+- api/link/ui.grouplist_getidbyindex.md
+- api/link/ui.grouplist_getindexbyid.md
+- api/link/ui.grouplist_getitem.md
+- api/link/ui.grouplist_getlastid.md
+- api/link/ui.grouplist_getnextid.md
+- api/link/ui.grouplist_getnode.md
+- api/ui.grouplist_getopenstate.md
+- api/link/ui.grouplist_getpage.md
+- api/link/ui.grouplist_getpager.md
+- api/link/ui.grouplist_getparentview.md
+- api/link/ui.grouplist_getprevid.md
+- api/link/ui.grouplist_getscrollstate.md
+- api/link/ui.grouplist_getselectedid.md
+- api/link/ui.grouplist_getselecteditem.md
+- api/link/ui.grouplist_getvisiblecount.md
+- api/link/ui.grouplist_group.md
+- api/link/ui.grouplist_hascss.md
+- api/link/ui.grouplist_hasevent.md
+- api/link/ui.grouplist_hide.md
+- api/link/ui.grouplist_isenabled.md
+- api/link/ui.grouplist_isselected.md
+- api/link/ui.grouplist_isvisible.md
+- api/link/ui.grouplist_load.md
+- api/link/ui.grouplist_loadnext.md
+- api/link/ui.grouplist_locate.md
+- api/link/ui.grouplist_mapevent.md
+- api/link/ui.grouplist_move.md
+- api/link/ui.grouplist_movebottom.md
+- api/link/ui.grouplist_movedown.md
+- api/link/ui.grouplist_movetop.md
+- api/link/ui.grouplist_moveup.md
+- api/link/ui.grouplist_parse.md
+- api/link/ui.grouplist_refresh.md
+- api/link/ui.grouplist_remove.md
+- api/link/ui.grouplist_removecss.md
+- api/link/ui.grouplist_render.md
+- api/link/ui.grouplist_resize.md
+- api/link/ui.grouplist_scrollto.md
+- api/link/ui.grouplist_select.md
+- api/link/ui.grouplist_selectall.md
+- api/link/ui.grouplist_serialize.md
+- api/link/ui.grouplist_setpage.md
+- api/link/ui.grouplist_show.md
+- api/link/ui.grouplist_showitem.md
+- api/link/ui.grouplist_sort.md
+- api/link/ui.grouplist_sync.md
+- api/link/ui.grouplist_unblockevent.md
+- api/link/ui.grouplist_ungroup.md
+- api/link/ui.grouplist_unselect.md
+- api/link/ui.grouplist_unselectall.md
+- api/link/ui.grouplist_updateitem.md
+- api/link/ui.grouplist_validate.md
+
+

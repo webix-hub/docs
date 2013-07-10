@@ -1,0 +1,315 @@
+Columns Configuration
+=============================
+
+Columns configuration is specified by parameter [columns](api/ui.datatable_columns_config.md) and all settings are managed on its level.
+
+~~~js
+grid = new webix.ui({
+		view:"datatable",
+		columns:[{...}],
+		...
+}); 
+~~~
+<br>
+
+With the help of the [columns](api/ui.datatable_columns_config.md) parameter you can:
+
+- [specify headers/footers](#headersfooters);
+- [set widths of columns](#widthsofcolumns);
+- [add built-in filter](#builtinfilters);
+- [set built-in sorting](#builtinsorting);
+- [set the text alignment in a column](#textalignment);
+- [set the format of data presentation](#dataformats);
+- [specify data of columns through math formulas](#mathincolumns);
+- [specify datasource for the column](#datasource);
+- [define templates for data presentation](#templates);
+- [define individual css class for any column](#styling);
+- [hide/show a column](#hidingshowingcolumns).
+
+
+
+
+Headers/footers
+------------------
+Enabled by parameters [header](api/ui.datatable_header_config.md), [footer](api/ui.datatable_footer_config.md) (by default, headers are enabled).
+
+Specified by attributes **header**, **footer** and can be both *string* and *object*.
+
+In case of *string*, you can specify just the label.
+
+*Object* definition allows you to specify more complex column presentation. As an *object*, header/footer can contain the following properties:
+
+- **text**  - the text label of a column;
+- **colspan** - the number of columns a cell should span;
+- **rowspan** - the number of rows a cell should span;
+- **content** - the built-in filter of a column (textFilter or selectFilter).
+
+{{snippet
+Defining header and footer for a specific column
+}}
+
+~~~js
+//simple string
+grid = new webix.ui({
+		view:"datatable",
+		...
+		footer:true,
+		columns:[{
+			id:"col1",
+			header:"Column 1",
+			footer:"Footer 1"
+		},
+		...]
+})
+//object
+grid = new webix.ui({
+		view:"datatable",
+		...
+		footer:true,
+		columns:[{
+			id:"col1",
+			header:[{ text:"Column1", colspan:"2"}, { content:"selectFilter" }],
+			footer:[{ text:"Total", rowspan:"2"}, { text:" " } ]
+		},
+		...]
+})
+~~~
+{{sample 15_datatable/12_header_footer/01_basic.html }}
+
+
+
+
+For more details, read the [Headers and footers](datatable/headers_footers.md) article.
+
+Widths of columns
+---------------------
+To set widths of columns you should use attribute **width**.
+
+{{snippet Setting the width of a column}}
+
+~~~js
+columns:[{ 
+	 id:"col1", 
+     width:200 
+     },
+...]
+~~~
+
+{{sample 15_datatable/11_sizing/04_fixed_size.html }}
+
+
+For more details, read the [Sizing and resizing](datatable/sizing.md) article.
+
+Built-in filters
+------------------
+The header or footer of a column can contain filter.<br> The following types of filters are available:
+
+- *textFilter* - text filter. Retrieves values which contain mask defined through text field;
+- *selectFilter* - select filter. Retrieves values which contain mask defined through dropdown list of possible values.
+
+
+Filter is set by property **content** of the **header** attribute.
+
+{{snippet
+Adding filter to the header of a specific column
+}}
+
+~~~js
+columns:[{
+	id:"col1",
+	header:[{ text:"Column 1", colspan:"2"}, { content:"selectFilter" }]
+	},
+...]
+~~~
+{{sample 15_datatable/03_filtering/01_builtin.html }}
+
+For more details, read the [Filtering](datatable/filtering.md) article.
+
+
+
+Built-in sorting
+---------------------------
+You are allowed to sort data in columns. The way of sorting depends on the column sorting type. 
+There are 3 predefined sorting types:
+
+- *int*
+- *string*
+- *string_strict* 
+
+Last one is a case-sensitive string sorting  
+
+The sorting is specified by attribute **sort**.
+
+{{snippet 
+Activating sorting for a specific column
+}}
+
+~~~js
+columns:[{
+	id:"col1",
+	sort:"string",
+	},
+...]
+~~~
+{{sample 15_datatable/02_sorting/01_builtin.html }}
+
+For more details, read the [Sorting](datatable/sorting.md) article.
+
+
+Text alignment
+------------------------
+To set the text alignment in a column you should use attribute **css**:
+
+{{snippet Setting the text alignment in a column}}
+
+
+~~~js
+<style>
+.myStyle{
+	text-align:right;
+}
+</style>
+
+~~~
+
+~~~js
+columns:[{
+	id:"col1"
+   	css:"myStyle" //in a separate css class
+},
+{  	id:"col2",
+    css:{'text-align':'right'} //directly in the attribute
+}]
+
+~~~
+
+Read more about using the **css** attribute in the [Styling](datatable/styling.md) article.
+
+Data formats
+------------------
+Formatting is applied to date and number values and defined for each column separately. To set some format for a column, use attribute **format**.
+
+{{snippet
+Setting the format for a specific column
+}}
+
+~~~js
+columns:[{
+	id:"col2",
+	format:function(value){ return webix.ui.numberFormat(value)};
+    }
+    //data will be formatted according to the current locale
+...]
+~~~
+{{sample 15_datatable/20_templates/05_dates.html }}
+
+For more details, read the [Number and date formatting](datatable/formatting.md) article.
+
+Math in columns
+------------------
+You can write simple math formulas to specify values in column cells. Formulas can be set for a whole column or for a single cell.
+
+{{snippet
+ Using formulas for setting values in the whole column
+}}
+~~~js
+columns:[{
+	id:"col1",
+	math:"[row_id,col_name] + [row_id,col_name]"
+	},
+...]
+~~~
+{{sample 15_datatable/08_math/01_basic.html }}
+
+For more details, read the [Using formulas](datatable/formulas.md) article.
+
+External Datasource for the Column
+------------------
+
+The **collection** property of the column allows syncing column data with that of a [dataCollection object](desktop/nonui_objects.md) or any data management [component](desktop/components.md). 
+
+~~~js
+{	id:"order-1",
+	view:"datatable",
+	columns:[
+		{ id:"product", header:"Product", collection:"dash-pro" },
+		{ id:"quantity", header:"Quatity", 	... },
+		{ id:"price", header:"Unit price",  ... }
+	],
+	dataFeed:"data/orderproducts.php", //main datasource
+};
+~~~
+
+Collection for the first column points to other **datatable** with **"dash-pro" ID**. 
+
+~~~js
+{	view:"datatable", id:"dash-pro", 
+	columns:[
+    	{ id:"name", header:"Product name", ..  },
+        {..//other columns}
+    		],
+   url:"data/products.php",
+   save:"connector->data/products.php" //dataprocessor    
+};
+~~~
+
+With the help of this property you can also sync the datatable with various [dataCollections](desktop/nonui_objects.md). 
+
+
+Templates
+----------------
+Through attribute **template** you can set a template of cells presentation corresponding to your needs.
+
+{{snippet
+Using templates for configuration data of a column
+}}
+
+~~~js
+columns:[{
+		id:"col4",
+		template:function(obj){return obj.col1+obj.col2*2+obj.col3*3;}
+		},
+...]
+~~~
+{{sample 15_datatable/20_templates/01_string.html }}
+
+For more details, read the [Data templates](datatable/templates.md) article.
+
+
+Styling
+-------------
+Many aspects of column can be customized to achieve the desired look-and-feel. Column style can be adjusted in a css class and applied through attribute **css**.
+
+{{snippet
+Applying a css class to a specific column
+}}
+
+~~~js
+columns:[{
+		id:"col1",
+		css:"someStyle"
+		}, 
+...]
+~~~
+For more details, read the [Styling](datatable/styling.md) article.
+
+
+
+Hiding/showing columns
+------------------
+Through the [hideColumn()](api/ui.datatable_hidecolumn.md) and [showColumn()](api/ui.datatable_showcolumn.md) methods you can manipulate visibility of columns.
+
+{{snippet
+Hiding a column
+}}
+~~~js
+grid = new webix.ui({
+		view:"datatable",
+		...
+		columns:[{
+			id:"col4",
+			header:"Rating"
+		},...]
+})
+grid.hideColumn("col4");
+~~~

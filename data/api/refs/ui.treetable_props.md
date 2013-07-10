@@ -1,0 +1,155 @@
+
+Properties
+==========
+
+{{links
+- api/link/ui.treetable_animate_config.md - defines or disables view change animation.
+- api/link/ui.treetable_autoheight_config.md - adjusts DataTable to the parent container size vertically
+- api/link/ui.treetable_autowidth_config.md - adjusts DataTable to the parent container size horizontally
+- api/link/ui.treetable_blockselect_config.md - enables/disables block selection
+- api/link/ui.treetable_borderless_config.md - used to hide the component borders
+- api/link/ui.treetable_checkboxrefresh_config.md - controls behavior of checkbox editors in grid
+- api/link/ui.treetable_clipboard_config.md - enables/disables clipboard support
+- api/link/ui.treetable_columnwidth_config.md - defines the default width for columns (in pixels)
+- api/link/ui.treetable_columns_config.md - configures columns of the table
+- api/link/ui.treetable_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.treetable_css_config.md - the name of a css class that will be applied to the view container
+- api/link/ui.treetable_data_config.md - an inline dataset that data to the component will be load from.
+- api/link/ui.treetable_datafeed_config.md - the url to the data source that the component will use to reload data from
+- api/link/ui.treetable_datafetch_config.md - defines the start position DataTable will load data from
+- api/link/ui.treetable_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
+- api/link/ui.treetable_datatype_config.md - the type of loaded data
+- api/link/ui.treetable_delimiter_config.md - sets CSV delimiters
+- api/link/ui.treetable_disabled_config.md - disables item
+- api/link/ui.treetable_drag_config.md - enables or disables drag-and-drop
+- api/link/ui.treetable_dragcolumn_config.md - enables drag-and-drop support for columns
+- api/link/ui.treetable_editvalue_config.md - defines which data item is editable (in case of several data item in the cell/line)
+- api/link/ui.treetable_editable_config.md - allows/denies editing in the view
+- api/link/ui.treetable_editaction_config.md - defines the action on which editors will be opened
+- api/link/ui.treetable_externaldata_config.md - allows defining custom 'move' logic for the component.
+- api/link/ui.treetable_filtermode_config.md - defines the pattern for tree item filtering
+- api/link/ui.treetable_fixedrowheight_config.md - defines whether the height should be fixed for all rows or can vary
+- api/link/ui.treetable_footer_config.md - enables/disables the footer in DataTable (disabled, by default)
+- api/link/ui.treetable_gravity_config.md - sets the view gravity (1 by default)
+- api/link/ui.treetable_header_config.md - enables/disables the header in DataTable (enabled, by default)
+- api/link/ui.treetable_headerrowheight_config.md - sets the heigth of the header row
+- api/link/ui.treetable_height_config.md - sets the height of the component
+- api/link/ui.treetable_hidden_config.md - defines whether the view will be hidden initially
+- api/link/ui.treetable_id_config.md - the component ID
+- api/link/ui.treetable_leftsplit_config.md - the number of the fixed columns from the left side of the table (actual for the <a href="datatable/frozen_columns.md">split mode</a> )
+- api/link/ui.treetable_livevalidation_config.md - validation during cell editing
+- api/link/ui.treetable_loadahead_config.md - sets the number of items that will be loaded on each scroll movement relative to the last item in the scrolling direction
+- api/link/ui.treetable_math_config.md - enables math formulas in DataTable
+- api/link/ui.treetable_maxheight_config.md - sets the maximum height for the view
+- api/link/ui.treetable_maxwidth_config.md - sets the maximum width for the view
+- api/link/ui.treetable_mincolumnheight_config.md - sets the minimum height for a row
+- api/link/ui.treetable_mincolumnwidth_config.md - sets the minimum width for a column
+- api/link/ui.treetable_minheight_config.md - sets the minimal height for the view
+- api/link/ui.treetable_minwidth_config.md - sets the minimal width for the view
+- api/link/ui.treetable_mouseeventdelay_config.md - the delay between a real mouse action and invoking the related events
+- api/link/ui.treetable_multiselect_config.md - enables the multi selection mode
+- api/link/ui.treetable_navigation_config.md - activates the selection keyboard navigation
+- api/link/ui.treetable_on_config.md - allows attaching custom handlers to inner events of the component
+- api/link/ui.treetable_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
+- api/link/ui.treetable_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
+- api/link/ui.treetable_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.treetable_onmousemove_config.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.treetable_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
+- api/link/ui.treetable_prerender_config.md - invokes the full rendering of DataTable data
+- api/link/ui.treetable_ready_config.md - a handler that is called just after the page has been completely parsed
+- api/link/ui.treetable_removemissed_config.md - defines how to treat items in case of reloading
+- api/link/ui.treetable_resizecolumn_config.md - enables/disables horizontal resizing of columns
+- api/link/ui.treetable_resizerow_config.md - enables/disables vertical resizing of rows
+- api/link/ui.treetable_rightsplit_config.md - sets the number of the fixed columns from the right side of the table (actual for the <a href="datatable/frozen_columns.md">split mode</a> )
+- api/link/ui.treetable_rowheight_config.md - sets the default height for rows
+- api/link/ui.treetable_rowlineheight_config.md - default line height for grid's row
+- api/link/ui.treetable_rules_config.md - set of validation rules for the component
+- api/link/ui.treetable_save_config.md - defines urls for datasaving
+- api/link/ui.treetable_scheme_config.md - defines schemes for data processing
+- api/link/ui.treetable_scroll_config.md - enables or disables scroll for the datatable
+- api/link/ui.treetable_scrollaligny_config.md - enables/disables scrolling the table just by whole rows (i.e. you won't be allowed to scroll along the full length of rows)
+- api/link/ui.treetable_scrollx_config.md - enables/disables horizontal scrolling
+- api/link/ui.treetable_scrolly_config.md - enables/disables vertical scrolling
+- api/link/ui.treetable_select_config.md - sets the selection mode in DataTable
+- api/link/ui.treetable_threestate_config.md - defines three-state checkboxes for the tree. Flase by default.
+- api/link/ui.treetable_type_config.md - used for configuring presentation of items
+- api/link/ui.treetable_url_config.md - the url of a data feed which will be loaded after component initialization
+- api/link/ui.treetable_width_config.md - sets the width of the component
+- api/link/ui.treetable_ycount_config.md - defines height of datatable in rows
+}}
+
+@index:
+- api/link/ui.treetable_animate_config.md
+- api/link/ui.treetable_autoheight_config.md
+- api/link/ui.treetable_autowidth_config.md
+- api/link/ui.treetable_blockselect_config.md
+- api/link/ui.treetable_borderless_config.md
+- api/link/ui.treetable_checkboxrefresh_config.md
+- api/link/ui.treetable_clipboard_config.md
+- api/link/ui.treetable_columnwidth_config.md
+- api/link/ui.treetable_columns_config.md
+- api/link/ui.treetable_container_config.md
+- api/link/ui.treetable_css_config.md
+- api/link/ui.treetable_data_config.md
+- api/link/ui.treetable_datafeed_config.md
+- api/link/ui.treetable_datafetch_config.md
+- api/link/ui.treetable_datathrottle_config.md
+- api/link/ui.treetable_datatype_config.md
+- api/link/ui.treetable_delimiter_config.md
+- api/link/ui.treetable_disabled_config.md
+- api/link/ui.treetable_drag_config.md
+- api/link/ui.treetable_dragcolumn_config.md
+- api/link/ui.treetable_editvalue_config.md
+- api/link/ui.treetable_editable_config.md
+- api/link/ui.treetable_editaction_config.md
+- api/link/ui.treetable_externaldata_config.md
+- api/link/ui.treetable_filtermode_config.md
+- api/link/ui.treetable_fixedrowheight_config.md
+- api/link/ui.treetable_footer_config.md
+- api/link/ui.treetable_gravity_config.md
+- api/link/ui.treetable_header_config.md
+- api/link/ui.treetable_headerrowheight_config.md
+- api/link/ui.treetable_height_config.md
+- api/link/ui.treetable_hidden_config.md
+- api/link/ui.treetable_id_config.md
+- api/link/ui.treetable_leftsplit_config.md
+- api/link/ui.treetable_livevalidation_config.md
+- api/link/ui.treetable_loadahead_config.md
+- api/link/ui.treetable_math_config.md
+- api/link/ui.treetable_maxheight_config.md
+- api/link/ui.treetable_maxwidth_config.md
+- api/link/ui.treetable_mincolumnheight_config.md
+- api/link/ui.treetable_mincolumnwidth_config.md
+- api/link/ui.treetable_minheight_config.md
+- api/link/ui.treetable_minwidth_config.md
+- api/link/ui.treetable_mouseeventdelay_config.md
+- api/link/ui.treetable_multiselect_config.md
+- api/link/ui.treetable_navigation_config.md
+- api/link/ui.treetable_on_config.md
+- api/link/ui.treetable_onclick_config.md
+- api/link/ui.treetable_oncontext_config.md
+- api/link/ui.treetable_ondblclick_config.md
+- api/link/ui.treetable_onmousemove_config.md
+- api/link/ui.treetable_pager_config.md
+- api/link/ui.treetable_prerender_config.md
+- api/link/ui.treetable_ready_config.md
+- api/link/ui.treetable_removemissed_config.md
+- api/link/ui.treetable_resizecolumn_config.md
+- api/link/ui.treetable_resizerow_config.md
+- api/link/ui.treetable_rightsplit_config.md
+- api/link/ui.treetable_rowheight_config.md
+- api/link/ui.treetable_rowlineheight_config.md
+- api/link/ui.treetable_rules_config.md
+- api/link/ui.treetable_save_config.md
+- api/link/ui.treetable_scheme_config.md
+- api/link/ui.treetable_scroll_config.md
+- api/link/ui.treetable_scrollaligny_config.md
+- api/link/ui.treetable_scrollx_config.md
+- api/link/ui.treetable_scrolly_config.md
+- api/link/ui.treetable_select_config.md
+- api/link/ui.treetable_threestate_config.md
+- api/link/ui.treetable_type_config.md
+- api/link/ui.treetable_url_config.md
+- api/link/ui.treetable_width_config.md
+- api/link/ui.treetable_ycount_config.md
+

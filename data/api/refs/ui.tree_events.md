@@ -1,0 +1,88 @@
+
+Events
+=======
+
+{{links
+- api/link/ui.tree_onafteradd_event.md - fires after adding item to datastore
+- api/link/ui.tree_onafterclose_event.md - fires after the branch has been closed
+- api/link/ui.tree_onaftercontextmenu_event.md - fires after the context menu was called in the item area
+- api/link/ui.tree_onafterdelete_event.md - fires after item deleting
+- api/link/ui.tree_onafterdrop_event.md - fires after drag-n-drop was finished
+- api/link/ui.tree_onafterload_event.md - fires after xml loading is complete
+- api/link/ui.tree_onafteropen_event.md - fires after the branch has been opened
+- api/link/ui.tree_onafterrender_event.md - occurs immediately after the component has been rendered
+- api/link/ui.tree_onafterselect_event.md - fires after item was selected
+- api/link/ui.tree_onaftersort_event.md - fires after sorting dataset
+- api/link/ui.tree_onbeforeadd_event.md - fires before adding item to datastore
+- api/link/ui.tree_onbeforeclose_event.md - fires the moment you attempt to close the tree branch
+- api/link/ui.tree_onbeforecontextmenu_event.md - fires before the context menu is called in the item area
+- api/link/ui.tree_onbeforedelete_event.md - fires before item deleting
+- api/link/ui.tree_onbeforedrag_event.md - fires before the mouse button is pressed and the cursor is moved over a draggable item
+- api/link/ui.tree_onbeforedragin_event.md - fires before a dragged element is moved over the droppable area
+- api/link/ui.tree_onbeforedrop_event.md - fires before a dragged element is released over the droppable area
+- api/link/ui.tree_onbeforeload_event.md - occurs immediately before loading XML data has been started
+- api/link/ui.tree_onbeforeopen_event.md - fires the moment you attempt to open the tree branch
+- api/link/ui.tree_onbeforerender_event.md - occurs immediately before the component has been rendered
+- api/link/ui.tree_onbeforeselect_event.md - fires before item selection is started
+- api/link/ui.tree_onbeforesort_event.md - fires before sorting dataset
+- api/link/ui.tree_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.tree_ondatarequest_event.md - called before exucuting auto-loading data call
+- api/link/ui.tree_ondataupdate_event.md - fires when data item is in update process
+- api/link/ui.tree_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
+- api/link/ui.tree_onitemcheck_event.md - fires when you check an item in tree and treetable
+- api/link/ui.tree_onitemclick_event.md - fires when a component item was clicked
+- api/link/ui.tree_onitemdblclick_event.md - fires when a component item was double-clicked
+- api/link/ui.tree_onitemrender_event.md - for each item rendering, occurs only for items with custom templates
+- api/link/ui.tree_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
+- api/link/ui.tree_onmousemove_event.md - fires when the mouse was moved over the specified component
+- api/link/ui.tree_onmousemoving_event.md - fires when the mouse was moved over the component
+- api/link/ui.tree_onmouseout_event.md - fires when the mouse was moved out from the specified item
+- api/link/ui.tree_onpartialrender_event.md - called when part of tree is repainted
+- api/link/ui.tree_onpaste_event.md - fires when the user presses CTRL+V keys combination
+- api/link/ui.tree_onselectchange_event.md - fires after selection state was changed
+- api/link/ui.tree_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation
+- api/link/ui.tree_onvalidationsuccess_event.md - fires after the newlyloaded/added/edited data has passes validation successfully
+}}
+
+@index:
+- api/link/ui.tree_onafteradd_event.md
+- api/link/ui.tree_onafterclose_event.md
+- api/link/ui.tree_onaftercontextmenu_event.md
+- api/link/ui.tree_onafterdelete_event.md
+- api/link/ui.tree_onafterdrop_event.md
+- api/link/ui.tree_onafterload_event.md
+- api/link/ui.tree_onafteropen_event.md
+- api/link/ui.tree_onafterrender_event.md
+- api/link/ui.tree_onafterselect_event.md
+- api/link/ui.tree_onaftersort_event.md
+- api/link/ui.tree_onbeforeadd_event.md
+- api/link/ui.tree_onbeforeclose_event.md
+- api/link/ui.tree_onbeforecontextmenu_event.md
+- api/link/ui.tree_onbeforedelete_event.md
+- api/link/ui.tree_onbeforedrag_event.md
+- api/link/ui.tree_onbeforedragin_event.md
+- api/link/ui.tree_onbeforedrop_event.md
+- api/link/ui.tree_onbeforeload_event.md
+- api/link/ui.tree_onbeforeopen_event.md
+- api/link/ui.tree_onbeforerender_event.md
+- api/link/ui.tree_onbeforeselect_event.md
+- api/link/ui.tree_onbeforesort_event.md
+- api/link/ui.tree_onbindrequest_event.md
+- api/link/ui.tree_ondatarequest_event.md
+- api/link/ui.tree_ondataupdate_event.md
+- api/link/ui.tree_ondragout_event.md
+- api/link/ui.tree_onitemcheck_event.md
+- api/link/ui.tree_onitemclick_event.md
+- api/link/ui.tree_onitemdblclick_event.md
+- api/link/ui.tree_onitemrender_event.md
+- api/link/ui.tree_onloaderror_event.md
+- api/link/ui.tree_onmousemove_event.md
+- api/link/ui.tree_onmousemoving_event.md
+- api/link/ui.tree_onmouseout_event.md
+- api/link/ui.tree_onpartialrender_event.md
+- api/link/ui.tree_onpaste_event.md
+- api/link/ui.tree_onselectchange_event.md
+- api/link/ui.tree_onvalidationerror_event.md
+- api/link/ui.tree_onvalidationsuccess_event.md
+
+

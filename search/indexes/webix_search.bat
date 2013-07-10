@@ -1,0 +1,1 @@
+bin\searchd.exe --config webix.conf

@@ -1,0 +1,18 @@
+Options +FollowSymLinks
+Options +Indexes
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.+)\/(.+\.(html)?)$ ./view.php?lang=$1&page=$2 [QSA]
+RewriteRule ^(.+\.(html)?)$ ./view.php?page=$1 [QSA]
+
+RewriteRule ^(.+\/)(assets\/.+)$ $2 [QSA]
+RewriteRule ^(.+\/)(media\/.+)$  $2 [QSA]
+RewriteRule ^(.+\/)(editor\/.+)$ $2 [QSA]
+
+RewriteRule ^(.+\/)(view.php)$ $2 [QSA]
+
+RewriteRule ^(search\.(php)?)$ ./search/search.php? [QSA]
+RewriteRule ^(suggest\.(php)?)$ ./search/suggest.php? [QSA]

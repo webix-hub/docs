@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Docs Editor - #TITLE#</title>
+        <link rel="stylesheet" href="editor/sources/editor.css"/>
+        <script src="editor/sources/editor.js?120508"></script>
+
+        <link rel="stylesheet" href="editor/sources/codemirror/lib/codemirror.css?120508"/>
+        <script src="editor/sources/codemirror/lib/codemirror.js?120508"></script>
+        <script src="editor/sources/codemirror/lib/mode/xml/xml.js?120508"></script>
+        <script src="editor/sources/codemirror/lib/mode/markdown/markdown.js?120508"></script>
+
+    </head>
+    <body onload="init('#EDITOR#', '#SECOND#')">
+        #EDITOR_AREA#
+        <form method="post" id="action_form" action="view.php?edit=true&action=save">
+            <input type="hidden" name="value" id="result_code" />
+            <input type="hidden" name="linked_value" id="linked_code"/>
+            <input type="hidden" name="page" id="page_name" value="#TITLE#"/>
+            <input type="hidden" name="linked_page" value="#LINK#"/>
+        </form>
+
+        <div class="page_controls" ><input class="action_button" type="button" value="Save" onclick="doSave()"/> <input  class="action_button" type="button" value="Cancel" onclick="back()"/></div>
+
+
+    </body>
+</html>

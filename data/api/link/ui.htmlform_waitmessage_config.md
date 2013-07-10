@@ -1,0 +1,1 @@
+@link: api/ui.template_waitmessage_config.md

@@ -1,0 +1,101 @@
+====webix_tpl_begin====:api
+<a name='api'><h2>API <br><span>$$shown $$entries from $$total_found total found</span></h2></a>
+<p>
+$$dataset
+$$viewall
+</p>
+====webix_tpl_end====
+
+
+
+
+====webix_tpl_begin====:api_item
+<h3 class='search'><div class="api_icon $$icon"></div><a href="$$link" target="blank">$$title</a></h3>
+====webix_tpl_end====
+
+
+
+====webix_tpl_begin====:article_item
+<h3 class='search'><a href="$$link" target="blank">$$title</a></h3>
+<p>
+$$content
+</p>
+====webix_tpl_end====
+
+
+
+====webix_tpl_begin====:articles
+<a name='articles'><h2>Articles <br><span>$$shown $$entries from $$total_found total found</span></h2></a>
+<p>
+$$paging
+$$dataset
+$$paging
+</p>
+====webix_tpl_end====
+
+
+
+====webix_tpl_begin====:nothing
+<h2>Oops...<br>
+	<span class="nothing">No results found for your search.</span>
+</h2>
+====webix_tpl_end====
+
+
+
+====webix_tpl_begin====:paging
+<div class="webixdoc_paging">
+	$$links
+	<div class="webixdoc_paging_clear"></div>
+</div>
+====webix_tpl_end====
+
+
+
+====webix_tpl_begin====:paging_active
+<a class="webixdoc_item active">$$number</a>
+====webix_tpl_end====
+
+
+
+====webix_tpl_begin====:paging_btn
+<div class="webixdoc_$$type">$$link</div>
+====webix_tpl_end====
+
+
+====webix_tpl_begin====:paging_normal
+<a class="webixdoc_item" href="$$link">$$number</a>
+====webix_tpl_end====
+
+
+
+====webix_tpl_begin====:samples
+<a name='samples'><h2>Samples <br><span>$$shown $$entries from $$total_found total found</span></h2></a>
+<p>
+$$dataset
+$$viewall
+</p>
+====webix_tpl_end====
+
+
+
+====webix_tpl_begin====:samples_item
+<h3 class='search'><a href="$$link" target="blank">$$title</a></h3>
+====webix_tpl_end====
+
+
+
+====webix_tpl_begin====:viewall
+<h3 class='search' class="viewall">
+	<br>
+	<a href="$$link">
+		View all ...
+	</a>
+</h3>
+====webix_tpl_end====
+
+
+
+====webix_tpl_begin====:rendertime
+<span class="rendertime">Found at $$rendertime seconds</span>
+====webix_tpl_end====

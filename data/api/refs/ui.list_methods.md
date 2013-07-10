@@ -1,0 +1,153 @@
+
+Methods
+=======
+
+{{links
+- api/link/ui.list_add.md - adds an item to the store
+- api/link/ui.list_addcss.md - applied CSS class to a component item
+- api/link/ui.list_adjust.md - adjusts the component to the size of the parent HTML container
+- api/link/ui.list_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.list_bind.md - binds components
+- api/link/ui.list_blockevent.md - temporarily blocks triggering of ALL events of the calling object
+- api/link/ui.list_callevent.md - calls an inner event
+- api/link/ui.list_clearall.md - removes all items from the component
+- api/link/ui.list_clearcss.md - removes css class from all items
+- api/link/ui.list_clearvalidation.md - removes all validation marks from the component
+- api/link/ui.list_copy.md - copies an item to the same or another object
+- api/link/ui.list_count.md - returns the count of items in the table
+- api/link/ui.list_customize.md - redefines the 'type' property
+- api/link/ui.list_define.md - redefines a single configuration property (or a hash of properties)
+- api/link/ui.list_destructor.md - destructs the calling object
+- api/link/ui.list_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
+- api/link/ui.list_disable.md - disables the calling view (makes it dimmed and unclickable)
+- api/link/ui.list_enable.md - enables the calling view that was disabled by the 'disable' method
+- api/link/ui.list_exists.md - checks whether an item with the specified id exists
+- api/link/ui.list_filter.md - filters the component
+- api/link/ui.list_getchildviews.md - returns child views of the calling component
+- api/link/ui.list_getfirstid.md - returns the ID of the first item
+- api/link/ui.list_getidbyindex.md - returns the id of the item with the specified index
+- api/link/ui.list_getindexbyid.md - returns the index of the item with the specified id
+- api/link/ui.list_getitem.md - gets the object of the data item with the specified id
+- api/link/ui.list_getlastid.md - returns the id of the last item
+- api/link/ui.list_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
+- api/link/ui.list_getnode.md - returns the main HTML container for the calling object
+- api/link/ui.list_getpage.md - returns the currently visible page in case of paged view
+- api/link/ui.list_getpager.md - returns the pager object associated with the component
+- api/link/ui.list_getparentview.md - returns the parent view of the component
+- api/link/ui.list_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
+- api/link/ui.list_getscrollstate.md - returns the scroll position
+- api/link/ui.list_getselectedid.md - returns the id(s) of the selected item(s)
+- api/link/ui.list_getselecteditem.md - returns selected object
+- api/ui.list_getvisiblecount.md - returns the number of items that can be seen with the current view height
+- api/link/ui.list_hascss.md - checks if item has specific css class
+- api/link/ui.list_hasevent.md - checks whether the component has the specified event
+- api/link/ui.list_hide.md - hides the view
+- api/link/ui.list_isenabled.md - checks whether the view is enabled
+- api/link/ui.list_isselected.md - checks whether the specified item is selected or not
+- api/link/ui.list_isvisible.md - checks whether the view is visible
+- api/link/ui.list_load.md - loads data from an external data source
+- api/link/ui.list_loadnext.md - sends a request to load the specified number of records to the end or to the specified position 
+of the component
+- api/link/ui.list_locate.md - gets the id of an item from the specified HTML event
+- api/link/ui.list_mapevent.md - routes events from one object to another
+- api/link/ui.list_move.md - moves the specified item to the new position
+- api/link/ui.list_movebottom.md - moves the specified item to the last position
+- api/link/ui.list_movedown.md - increases the item index and moves the item to the new position
+- api/link/ui.list_movetop.md - moves the specified item to the first position
+- api/link/ui.list_moveup.md - decreases the item index and moves the item to the new position
+- api/link/ui.list_parse.md - loads data to the component from an inline data source
+- api/link/ui.list_refresh.md - repaints the whole view or a certain item
+- api/link/ui.list_remove.md - removes the specified item from datastore
+- api/link/ui.list_removecss.md - removes CSS class from a component item
+- api/link/ui.list_render.md - renders the specified item or the whole component
+- api/link/ui.list_resize.md - adjusts the view to a new size
+- api/link/ui.list_scrollto.md - scrolls the data container to a certain position
+- api/link/ui.list_select.md - selects the specified item(s)
+- api/link/ui.list_selectall.md - selects all items or the specified range
+- api/link/ui.list_serialize.md - serializes data to a json object
+- api/link/ui.list_setpage.md - makes the specified page visible (assuming that the pager was defined )
+- api/link/ui.list_show.md - makes the component visible
+- api/link/ui.list_showitem.md - scrolls the component to make the specified item visible
+- api/link/ui.list_sort.md - sorts datastore
+- api/link/ui.list_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.list_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
+- api/link/ui.list_unselect.md - removes selection from the specified item
+- api/link/ui.list_unselectall.md - removes selection from all items
+- api/link/ui.list_updateitem.md - sets properties of the data item
+- api/link/ui.list_validate.md - validates one record or all dataset against validation rules
+}}
+
+@index:
+- api/link/ui.list_add.md
+- api/link/ui.list_addcss.md
+- api/link/ui.list_adjust.md
+- api/link/ui.list_attachevent.md
+- api/link/ui.list_bind.md
+- api/link/ui.list_blockevent.md
+- api/link/ui.list_callevent.md
+- api/link/ui.list_clearall.md
+- api/link/ui.list_clearcss.md
+- api/link/ui.list_clearvalidation.md
+- api/link/ui.list_copy.md
+- api/link/ui.list_count.md
+- api/link/ui.list_customize.md
+- api/link/ui.list_define.md
+- api/link/ui.list_destructor.md
+- api/link/ui.list_detachevent.md
+- api/link/ui.list_disable.md
+- api/link/ui.list_enable.md
+- api/link/ui.list_exists.md
+- api/link/ui.list_filter.md
+- api/link/ui.list_getchildviews.md
+- api/link/ui.list_getfirstid.md
+- api/link/ui.list_getidbyindex.md
+- api/link/ui.list_getindexbyid.md
+- api/link/ui.list_getitem.md
+- api/link/ui.list_getlastid.md
+- api/link/ui.list_getnextid.md
+- api/link/ui.list_getnode.md
+- api/link/ui.list_getpage.md
+- api/link/ui.list_getpager.md
+- api/link/ui.list_getparentview.md
+- api/link/ui.list_getprevid.md
+- api/link/ui.list_getscrollstate.md
+- api/link/ui.list_getselectedid.md
+- api/link/ui.list_getselecteditem.md
+- api/ui.list_getvisiblecount.md
+- api/link/ui.list_hascss.md
+- api/link/ui.list_hasevent.md
+- api/link/ui.list_hide.md
+- api/link/ui.list_isenabled.md
+- api/link/ui.list_isselected.md
+- api/link/ui.list_isvisible.md
+- api/link/ui.list_load.md
+- api/link/ui.list_loadnext.md
+- api/link/ui.list_locate.md
+- api/link/ui.list_mapevent.md
+- api/link/ui.list_move.md
+- api/link/ui.list_movebottom.md
+- api/link/ui.list_movedown.md
+- api/link/ui.list_movetop.md
+- api/link/ui.list_moveup.md
+- api/link/ui.list_parse.md
+- api/link/ui.list_refresh.md
+- api/link/ui.list_remove.md
+- api/link/ui.list_removecss.md
+- api/link/ui.list_render.md
+- api/link/ui.list_resize.md
+- api/link/ui.list_scrollto.md
+- api/link/ui.list_select.md
+- api/link/ui.list_selectall.md
+- api/link/ui.list_serialize.md
+- api/link/ui.list_setpage.md
+- api/link/ui.list_show.md
+- api/link/ui.list_showitem.md
+- api/link/ui.list_sort.md
+- api/link/ui.list_sync.md
+- api/link/ui.list_unblockevent.md
+- api/link/ui.list_unselect.md
+- api/link/ui.list_unselectall.md
+- api/link/ui.list_updateitem.md
+- api/link/ui.list_validate.md
+
+

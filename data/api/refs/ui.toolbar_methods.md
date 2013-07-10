@@ -1,0 +1,92 @@
+
+Methods
+=======
+
+{{links
+- api/link/ui.toolbar_addview.md - add new view to layout or multiview
+- api/link/ui.toolbar_adjust.md - adjusts the component to the size of the parent HTML container
+- api/link/ui.toolbar_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.toolbar_bind.md - binds components
+- api/link/ui.toolbar_blockevent.md - temporarily blocks triggering of ALL events of the calling object
+- api/link/ui.toolbar_callevent.md - calls an inner event
+- api/link/ui.toolbar_clear.md - clears all the field in a specified form
+- api/link/ui.toolbar_clearvalidation.md - removes "data incorrect" highlighting from invalid text fields
+- api/link/ui.toolbar_define.md - redefines a single configuration property (or a hash of properties)
+- api/link/ui.toolbar_destructor.md - destructs the calling object
+- api/link/ui.toolbar_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
+- api/link/ui.toolbar_disable.md - disables the calling view (makes it dimmed and unclickable)
+- api/link/ui.toolbar_enable.md - enables the calling view that was disabled by the 'disable' method
+- api/link/ui.toolbar_focus.md - sets focus into the necessary component
+- api/link/ui.toolbar_getchildviews.md - returns child views of the calling component
+- api/link/ui.toolbar_getnode.md - returns the main HTML container for the calling object
+- api/link/ui.toolbar_getparentview.md - returns the parent view of the component
+- api/link/ui.toolbar_getscrollstate.md - returns the scroll position
+- api/link/ui.toolbar_getvalues.md - derives input values from the form
+- api/link/ui.toolbar_hasevent.md - checks whether the component has the specified event
+- api/link/ui.toolbar_hide.md - hides the view
+- api/link/ui.toolbar_index.md - returns the cell index in the layout collection
+- api/link/ui.toolbar_isdirty.md - checks whether changes within form were made
+- api/link/ui.toolbar_isenabled.md - checks whether the view is enabled
+- api/link/ui.toolbar_isvisible.md - checks whether the view is visible
+- api/link/ui.toolbar_load.md - loads data from an external data source
+- api/link/ui.toolbar_mapevent.md - routes events from one object to another
+- api/link/ui.toolbar_parse.md - loads data to the component from an inline data source
+- api/link/ui.toolbar_reconstruct.md - rebuilds the layout
+- api/ui.toolbar_refresh.md - repaints the component
+- api/link/ui.toolbar_removeview.md - removes view from multiview or layout
+- api/ui.toolbar_render.md - renders the specified item or the whole component
+- api/link/ui.toolbar_resize.md - adjusts the view to a new size
+- api/link/ui.toolbar_resizechildren.md - resizes all children of the calling component
+- api/link/ui.toolbar_scrollto.md - scrolls the data container to a certain position
+- api/link/ui.toolbar_setdirty.md - marks the form  as the one with changed values
+- api/link/ui.toolbar_setvalues.md - sets values into all the form inputs
+- api/link/ui.toolbar_show.md - makes the component visible
+- api/link/ui.toolbar_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
+- api/link/ui.toolbar_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
+- api/link/ui.toolbar_validate.md - checks data in the component during adding new item or editing existing ones
+}}
+
+@index:
+- api/link/ui.toolbar_addview.md
+- api/link/ui.toolbar_adjust.md
+- api/link/ui.toolbar_attachevent.md
+- api/link/ui.toolbar_bind.md
+- api/link/ui.toolbar_blockevent.md
+- api/link/ui.toolbar_callevent.md
+- api/link/ui.toolbar_clear.md
+- api/link/ui.toolbar_clearvalidation.md
+- api/link/ui.toolbar_define.md
+- api/link/ui.toolbar_destructor.md
+- api/link/ui.toolbar_detachevent.md
+- api/link/ui.toolbar_disable.md
+- api/link/ui.toolbar_enable.md
+- api/link/ui.toolbar_focus.md
+- api/link/ui.toolbar_getchildviews.md
+- api/link/ui.toolbar_getnode.md
+- api/link/ui.toolbar_getparentview.md
+- api/link/ui.toolbar_getscrollstate.md
+- api/link/ui.toolbar_getvalues.md
+- api/link/ui.toolbar_hasevent.md
+- api/link/ui.toolbar_hide.md
+- api/link/ui.toolbar_index.md
+- api/link/ui.toolbar_isdirty.md
+- api/link/ui.toolbar_isenabled.md
+- api/link/ui.toolbar_isvisible.md
+- api/link/ui.toolbar_load.md
+- api/link/ui.toolbar_mapevent.md
+- api/link/ui.toolbar_parse.md
+- api/link/ui.toolbar_reconstruct.md
+- api/ui.toolbar_refresh.md
+- api/link/ui.toolbar_removeview.md
+- api/ui.toolbar_render.md
+- api/link/ui.toolbar_resize.md
+- api/link/ui.toolbar_resizechildren.md
+- api/link/ui.toolbar_scrollto.md
+- api/link/ui.toolbar_setdirty.md
+- api/link/ui.toolbar_setvalues.md
+- api/link/ui.toolbar_show.md
+- api/link/ui.toolbar_showbatch.md
+- api/link/ui.toolbar_unblockevent.md
+- api/link/ui.toolbar_validate.md
+
+

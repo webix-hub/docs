@@ -1,0 +1,1 @@
+@link: api/ui.baseview_$skin_other.md

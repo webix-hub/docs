@@ -1,0 +1,72 @@
+.webixdoc_start h1, .front_page h1{
+	font-size:20px;
+	margin-left:65px;
+}
+
+.front_page #top_part{
+	margin-top:10px;
+}
+
+.front_page #top_image{
+	padding-left:70px;
+	padding-top:20px;
+	min-height:250px;
+}
+.front_page .guides_content{
+	clear:both;
+	padding: 0px 65px 0px 0px;
+}
+.front_page .guides_content .single_block{
+	width:230px;
+	min-height:120px;
+	display:block;
+	float:left;
+	margin-top:15px;
+	padding:0px 0px 10px 80px;
+}
+.front_page .guides_content .single_block ul{
+	margin-left:-50px;
+	margin-top:40px;
+}
+.front_page .guides_content .single_tree_block{
+	width:280px;
+	min-height:120px;
+	display:block;
+	float:left;
+	margin-top:25px;
+	margin-left:30px;
+	padding:0px 0px 10px 0px;
+}
+.front_page .guides_content #configuration{
+	background: url('components/configuration_icon.png') no-repeat top left;
+}
+.front_page .guides_content #styling{
+	background: url('components/look_feel_icon.png') no-repeat top left;
+}
+.front_page .guides_content #data_operations{
+	background: url('components/data_operations_icon.png') no-repeat top left;
+}
+.front_page .guides_content #integration{
+	background: url('components/integration_icon.png') no-repeat top left;
+}
+.front_page .guides_content #export{
+	background: url('components/export_icon.png') no-repeat top left;
+}
+.front_page ul{
+	
+	margin:0px;
+	padding-left:15px;
+	line-height:1.3;
+}
+.front_page ul li{
+	line-height:13px;
+}
+.front_page .guides_content .single_block h4{
+	margin-top:5px;
+	font-size:16px;
+}
+.front_page .bottom_div{
+	clear:both;
+	height:195px;
+}
+

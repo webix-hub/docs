@@ -1,0 +1,110 @@
+
+Events
+=======
+
+{{links
+- api/link/ui.datatable_onafteradd_event.md - fires after adding item to datastore
+- api/ui.datatable_onaftercolumndrop_event.md - fires after the column has been dragged and dropped to the target position
+- api/ui.datatable_onaftercolumndroporder_event.md - fires after the column order was changed with the help of drag-and-drop
+- api/link/ui.datatable_onaftercontextmenu_event.md - fires after the context menu was called in the item area
+- api/link/ui.datatable_onafterdelete_event.md - fires after item deleting
+- api/link/ui.datatable_onafterdrop_event.md - fires after drag-n-drop was finished
+- api/link/ui.datatable_onaftereditstart_event.md - fires after edit operation was initiated, editor opened and ready for input
+- api/link/ui.datatable_onaftereditstop_event.md - fires after edit operation finished
+- api/ui.datatable_onafterfilter_event.md - occurs after datatable was filtered
+- api/link/ui.datatable_onafterload_event.md - fires after xml loading is complete
+- api/ui.datatable_onafterrender_event.md - occurs each time after the view is rendered
+- api/ui.datatable_onafterselect_event.md - fires after a cell is selected
+- api/link/ui.datatable_onaftersort_event.md - fires after sorting dataset
+- api/ui.datatable_onafterunselect_event.md - fires after a cell is unselected
+- api/link/ui.datatable_onbeforeadd_event.md - fires before adding item to datastore
+- api/ui.datatable_onbeforecolumndrag_event.md - fires the monent you start dragging the column from its source potition
+- api/ui.datatable_onbeforecolumndrop_event.md - fires the moment you drop the column to its target position
+- api/ui.datatable_onbeforecolumndroporder_event.md - fires the moment you drop the column over the target area
+- api/link/ui.datatable_onbeforecontextmenu_event.md - fires before the context menu is called in the item area
+- api/link/ui.datatable_onbeforedelete_event.md - fires before item deleting
+- api/link/ui.datatable_onbeforedrag_event.md - fires before the mouse button is pressed and the cursor is moved over a draggable item
+- api/link/ui.datatable_onbeforedragin_event.md - fires before a dragged element is moved over the droppable area
+- api/link/ui.datatable_onbeforedrop_event.md - fires before a dragged element is released over the droppable area
+- api/link/ui.datatable_onbeforeeditstart_event.md - fires before edit operation is initiated
+- api/link/ui.datatable_onbeforeeditstop_event.md - fires before stop edit command is received
+- api/ui.datatable_onbeforefilter_event.md - called when filtering process is started, but data is not filtered yet
+- api/link/ui.datatable_onbeforeload_event.md - occurs immediately before loading XML data has been started
+- api/ui.datatable_onbeforerender_event.md - occurs each time before the view is rendered
+- api/ui.datatable_onbeforeselect_event.md - fires before a cell is selected
+- api/link/ui.datatable_onbeforesort_event.md - fires before sorting dataset
+- api/ui.datatable_onbeforeunselect_event.md - fired before a cell is unselected
+- api/link/ui.datatable_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.datatable_ondatarequest_event.md - fires when data from the server side is requested (part of dynamic loading)
+- api/link/ui.datatable_ondataupdate_event.md - fires when data item is in update process
+- api/link/ui.datatable_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
+- api/ui.datatable_onheaderclick_event.md - occurs after clicking on header
+- api/link/ui.datatable_onitemclick_event.md - fires when a component item was clicked
+- api/link/ui.datatable_onitemdblclick_event.md - fires when a component item was double-clicked
+- api/link/ui.datatable_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
+- api/link/ui.datatable_onmousemove_event.md - fires when the mouse was moved over the specified component
+- api/link/ui.datatable_onmousemoving_event.md - fires when the mouse was moved over the component
+- api/link/ui.datatable_onmouseout_event.md - fires when the mouse was moved out from the specified item
+- api/ui.datatable_onresize_event.md - fires when the width or height of DataTable was changed
+- api/ui.datatable_onscrollx_event.md - fires when the user scrolls the table left or right
+- api/ui.datatable_onscrolly_event.md - fires when the user scrolls the table up or down
+- api/ui.datatable_onselectchange_event.md - fires when selection is changed in DataTable
+- api/ui.datatable_onstructureload_event.md - fires when the structure of DataTable (columns configuration) is initialized
+- api/ui.datatable_onstructureupdate_event.md - fires when structure of datatable was changed ( column added, hidden or reconfigured )
+- api/link/ui.datatable_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation
+- api/link/ui.datatable_onvalidationsuccess_event.md - fires after the newlyloaded/added/edited data has passes validation successfully
+}}
+
+@index:
+- api/link/ui.datatable_onafteradd_event.md
+- api/ui.datatable_onaftercolumndrop_event.md
+- api/ui.datatable_onaftercolumndroporder_event.md
+- api/link/ui.datatable_onaftercontextmenu_event.md
+- api/link/ui.datatable_onafterdelete_event.md
+- api/link/ui.datatable_onafterdrop_event.md
+- api/link/ui.datatable_onaftereditstart_event.md
+- api/link/ui.datatable_onaftereditstop_event.md
+- api/ui.datatable_onafterfilter_event.md
+- api/link/ui.datatable_onafterload_event.md
+- api/ui.datatable_onafterrender_event.md
+- api/ui.datatable_onafterselect_event.md
+- api/link/ui.datatable_onaftersort_event.md
+- api/ui.datatable_onafterunselect_event.md
+- api/link/ui.datatable_onbeforeadd_event.md
+- api/ui.datatable_onbeforecolumndrag_event.md
+- api/ui.datatable_onbeforecolumndrop_event.md
+- api/ui.datatable_onbeforecolumndroporder_event.md
+- api/link/ui.datatable_onbeforecontextmenu_event.md
+- api/link/ui.datatable_onbeforedelete_event.md
+- api/link/ui.datatable_onbeforedrag_event.md
+- api/link/ui.datatable_onbeforedragin_event.md
+- api/link/ui.datatable_onbeforedrop_event.md
+- api/link/ui.datatable_onbeforeeditstart_event.md
+- api/link/ui.datatable_onbeforeeditstop_event.md
+- api/ui.datatable_onbeforefilter_event.md
+- api/link/ui.datatable_onbeforeload_event.md
+- api/ui.datatable_onbeforerender_event.md
+- api/ui.datatable_onbeforeselect_event.md
+- api/link/ui.datatable_onbeforesort_event.md
+- api/ui.datatable_onbeforeunselect_event.md
+- api/link/ui.datatable_onbindrequest_event.md
+- api/link/ui.datatable_ondatarequest_event.md
+- api/link/ui.datatable_ondataupdate_event.md
+- api/link/ui.datatable_ondragout_event.md
+- api/ui.datatable_onheaderclick_event.md
+- api/link/ui.datatable_onitemclick_event.md
+- api/link/ui.datatable_onitemdblclick_event.md
+- api/link/ui.datatable_onloaderror_event.md
+- api/link/ui.datatable_onmousemove_event.md
+- api/link/ui.datatable_onmousemoving_event.md
+- api/link/ui.datatable_onmouseout_event.md
+- api/ui.datatable_onresize_event.md
+- api/ui.datatable_onscrollx_event.md
+- api/ui.datatable_onscrolly_event.md
+- api/ui.datatable_onselectchange_event.md
+- api/ui.datatable_onstructureload_event.md
+- api/ui.datatable_onstructureupdate_event.md
+- api/link/ui.datatable_onvalidationerror_event.md
+- api/link/ui.datatable_onvalidationsuccess_event.md
+
+
