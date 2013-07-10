@@ -60,6 +60,10 @@ $configs["api"] = array(
 );
 
 
+$configs["online"] = $configs["export-live"];
+$configs["online"]["use-discuss"] = true;
+
+
 $config_file = dirname(__FILE__)."/.project";
 if (file_exists($config_file))
 	$config = $configs[file_get_contents($config_file)];
@@ -71,7 +75,8 @@ $config["today"]=date("Y-m-d",time());
 $config["analytic"] = "<script type=\"text/javascript\">
 
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'XXXXXXXXXX']);
+  _gaq.push(['_setAccount', 'UA-41866635-1']);
+  _gaq.push(['_setDomainName', 'webix.com']);
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -86,8 +91,7 @@ $config["analytic"] = "<script type=\"text/javascript\">
 $config["discuss"]="<div style='clear:both; height:20px;'></div>
 <div id='disqus_thread'></div>
 <script type='text/javascript'>
-    var disqus_shortname = 'webixdocumentation';
-    var disqus_developer = 1;
+    var disqus_shortname = 'webixdocs';   
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
@@ -95,9 +99,11 @@ $config["discuss"]="<div style='clear:both; height:20px;'></div>
     })();
 </script>";
 
-$config["analytic"] = "";
-if (!$config["use-discuss"])
+
+if (!$config["use-discuss"]){
 	$config["discuss"] = "";
+	$config["analytic"] = "";
+}
 $config["lang"] = "";
 
 ?>
