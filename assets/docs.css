@@ -1319,7 +1319,7 @@ body{
 	.webixdoc_navarea{
 		display:none;
 	}
-	.side_links{
+	.side_links, .abstop_header{
 		display:none;
 	}
 }
