@@ -1054,105 +1054,6 @@ img{
 }
 
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-	.abstop_header, .page_header, .footer_linea, .footer_lineb{
-		min-width: 970px;
-	}
-	.webixdoc_page, .page_inner_header{
-		width:970px;
-	}
-	.webixdoc_start .webixdoc_content{
-		width: 938px;
-	}
-	.webixdoc_start .webixdoc_search {
-		width: 909px;	
-	}
-	.webixdoc_start .webixdoc_search input{
-		width: 859px;	
-		height:23px;
-	}
-	.webixdoc_start .webixdoc_content_inner{
-		width:950px;
-	}
-	.bottom_block li {
-		padding-right:10px;
-	}
-	.webixdoc_navarea{
-		width:170px;
-	}
-	.side_links{
-		margin-left:485px;
-	}
-	.abstop_header{
-		display:none;
-	}
-}
-
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-	.abstop_header, .page_header, .footer_linea, .footer_lineb{
-		min-width: 720px;
-	}
-	.webixdoc_page, .page_inner_header{
-		width:720px;
-	}
-	.webixdoc_content{
-		width:718px;
-	}
-
-	.webixdoc_start .webixdoc_content{
-		width: 718px; overflow:hidden;
-	}
-	.webixdoc_start .webixdoc_search {
-		width: 700px;	
-	}
-	.webixdoc_start .webixdoc_search input{
-		width: 650px;	
-	}
-	.front_page{
-		padding:0px 0px 0px 0px !important;
-		width:710px !important;
-	}
-	.webixdoc_start .webixdoc_content_inner{
-		width:720px;
-	}
-	.webixdoc_navarea{
-		display:none;
-	}
-	.side_links, .abstop_header{
-		display:none;
-	}
-}
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-	.abstop_header, .page_header, .footer_linea, .footer_lineb{
-		width: 470px; overflow:hidden;
-	}
-	.webixdoc_page .page_inner_header{
-		width:470px; overflow:hidden;
-	}
-	.webixdoc_content{
-		width:450px;
-	}
-
-	.webixdoc_start .webixdoc_content{
-		width:450px; overflow:hidden;
-	}
-	.webixdoc_start .webixdoc_search {
-		width:450px;
-	}
-	.front_page{
-		padding:0px 0px 0px 0px !important;
-		width:450px !important;
-	}
-
-	.webixdoc_navarea{
-		display:none;
-	}
-	.side_links{
-		display:none;
-	}
-}
-
 
 .webixdoc_wrong{
 	font-weight:bold;
@@ -1272,6 +1173,9 @@ body{
 	margin-left:-10px;
 	line-height: 20px;
 }
+.copyright_spacer{
+	float:left; width:56px
+}
 
 .bottom_link{
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -1305,3 +1209,118 @@ body{
 	background-position: 0px -48px;
 	margin-top:8px;
 }
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	.content_area, .abstop_header, .page_header, .footer_linea, .footer_lineb{
+		min-width: 970px;
+	}
+	.webixdoc_page, .page_inner_header{
+		width:970px;
+	}
+	.webixdoc_start .webixdoc_content{
+		width: 938px;
+	}
+	.webixdoc_start .webixdoc_search {
+		width: 909px;	
+	}
+	.webixdoc_start .webixdoc_search input{
+		width: 859px;	
+		height:23px;
+	}
+	.webixdoc_start .webixdoc_content_inner{
+		width:950px;
+	}
+	.bottom_block li {
+		padding-right:10px;
+	}
+	.webixdoc_navarea{
+		width:170px;
+	}
+	.side_links{
+		margin-left:485px;
+	}
+	.abstop_header{
+		display:none;
+	}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	.content_area, .abstop_header, .page_header, .footer_linea, .footer_lineb{
+		min-width: 720px;
+	}
+	.webixdoc_page, .page_inner_header{
+		width:750px;
+	}
+	.copyright_spacer{
+		width:30px;
+	}
+	.controls_group{
+		float:left;
+	}
+	.webixdoc_content{
+		width:718px;
+	}
+
+	.webixdoc_start .webixdoc_content{
+		width: 718px; overflow:hidden;
+	}
+	.webixdoc_start .webixdoc_search {
+		width: 700px;	
+	}
+	.webixdoc_start .webixdoc_search input{
+		width: 650px;	
+	}
+	.front_page{
+		padding:0px 0px 0px 0px !important;
+		width:710px !important;
+	}
+	.webixdoc_start .webixdoc_content_inner{
+		width:720px;
+	}
+	.webixdoc_navarea{
+		display:none;
+	}
+	.side_links, .abstop_header{
+		display:none;
+	}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	.content_area, .abstop_header, .page_header, .footer_linea, .footer_lineb{
+		min-width: 470px; overflow:hidden;
+	}
+	.top_webix_logo{
+		display:none;
+	}
+	.controls_group{
+		float:left;
+	}
+	.webixdoc_page, .page_inner_header{
+		width:470px; overflow:hidden;
+	}
+	.webixdoc_start .webixdoc_content_inner, .webixdoc_content_inner, .webixdoc_content{
+		width:450px;
+	}
+
+	.webixdoc_start .webixdoc_content{
+		width:450px; overflow:hidden;
+	}
+	.webixdoc_start .webixdoc_search {
+		width:410px;
+	}
+	.webixdoc_start .webixdoc_search input{
+		width:370px;
+	}
+	.front_page{
+		padding:0px 0px 0px 0px !important;
+		width:450px !important;
+	}
+
+	.webixdoc_navarea{
+		display:none;
+	}
+	.side_links{
+		display:none;
+	}
+}
+
