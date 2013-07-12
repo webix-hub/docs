@@ -7,9 +7,8 @@ Ui-related treetable inherits from [view](desktop/view.md). Being a hybrid betwe
 shares a number of their properties and methods. 
 
 
-<img src="desktop/treetable.png"/>
+<img style="display:block; margin-left:auto;margin-right:auto;"  src="desktop/treetable.png"/>
 
-{{sample 15_datatable/30_treetable/01_init.html }}
 
 ###Initialization
 

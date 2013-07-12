@@ -7,11 +7,8 @@ Multiview  helps you rationally use space on the page by placing different views
 
 Multiview inherits from [layout](desktop/layout.md).
 
-<img src="desktop/multiview.png"/>
+<img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/multiview.png"/>
 
-{{sample
-20_multiview/05_tabbar_with_icons.html
-}}
 
 ###Initialization
 {{snippet
@@ -27,6 +24,10 @@ webix.ui({
     ]
 });
 ~~~
+
+{{sample
+20_multiview/05_tabbar_with_icons.html
+}}
 
 {{note
 The direct initialization of the component (**view:"multiview"**) is optional and you can just init **cells** and the view will be automatically recognized.

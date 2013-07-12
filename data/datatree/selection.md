@@ -1,4 +1,4 @@
-Selection
+Items Selection
 ====================
 Tree provides an ability to select leaves and branches within it.
 

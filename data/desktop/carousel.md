@@ -3,20 +3,18 @@ Carousel
 
 ###Overview
 
-Ui-related carousel helps present images as well as picture-based data-presenting components (e.g. [chart](desktop/chart.md)) in one view with the ability to switch between 
-them on clicking the dedicated buttons or sliding (on touch devices).
+Ui-related carousel helps to present images as well as picture-based data-presenting components (e.g. [chart](desktop/chart.md)) in one view with the ability to switch between 
+them by clicking on the dedicated buttons or sliding (on touch devices).
 
-<img src="desktop/carousel.png"/>
+<img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/carousel.png"/>
 
-{{sample 20_multiview/06_carousel.html}}
 
 ###Initialization
 
 Carousel items are arranged into either rows to scroll through them vertically or in cols to scroll horizontally. Each row/column contains a Webix component. 
 
 ~~~js
-var achart = {
-	view:"chart", id:"cell1"...};
+var achart = { view:"chart", id:"cell1",...};
 var bchart = {...};
 var cchart = {...};
 
@@ -25,6 +23,7 @@ var cchart = {...};
 	]
 }                
 ~~~
+{{sample 20_multiview/06_carousel.html}}
 
 Components for carousel item are stored in the **cols/rows** array. Normally, they are declared beforehand in the variables and later included in the **cols** property. It  makes 
 code clear and easy to read. 

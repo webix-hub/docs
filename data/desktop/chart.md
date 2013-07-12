@@ -6,11 +6,7 @@ Chart
 Chart is a ui-related component that inherits from view and helps present data in different graphic figures like colored columns, pie pieces or lines. 
 Like all the data-presenting components it takes initial data in [various formats](desktop/data_types.md). 
 
-<img src="desktop/charts.png"/>
-
-{{sample
-08_chart/01_initialization/01_load_xml.html
-}}
+<img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/charts.png"/>
 
 ###Initialization
 
@@ -40,10 +36,12 @@ Initialization of a Bar Chart
             data: dataset
         });
 ~~~ 
+{{sample
+	08_chart/01_initialization/01_load_xml.html
+}}
 
 To learn about all the chart properties, please refer to the [corresponding chapter of the manual](api__refs__ui.chart.html). 
 
-{{sample 08_chart/01_initialization/02_load_json.html }}
 
 ###Working with Chart
 

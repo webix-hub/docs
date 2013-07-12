@@ -6,9 +6,8 @@ Grouplist
 Ui-related grouplist inherits from list and allows presenting data in groups. Data grouping is **hierarchical**, which means that any group item can start its
 own group. Hence, this component supports only XML and JSON [data formats](desktop/data_types.md) since they can arrange data in a hierarchical way. 
 
-<img src="desktop/grouplist.png"/>
+<img style="display:block; margin-left:auto;margin-right:auto;"  src="desktop/grouplist.png"/>
 
-{{sample 05_list/03_group_list.html }}
 
 ###Initialization
 

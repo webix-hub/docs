@@ -7,9 +7,6 @@ lies not within your app's layout but as if above other components. The same is 
 
 <img src="desktop/window.png"/>
 
-{{sample 10_window/01_init.html }}
-
-
 ###Initialization
 
 ~~~

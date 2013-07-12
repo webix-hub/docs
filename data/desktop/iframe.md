@@ -10,9 +10,8 @@ You can insert more than one IFrame into the view provided that you initialize a
 
 The component inherits from [view](desktop/view.md).
 
-<img src="desktop/iframe.png"/>
+<img style="display:block; margin-left:auto;margin-right:auto;"  src="desktop/iframe.png"/>
 
-{{sample 98_docs/iframe.html}}
 
 ###IFrame Initialization
 
@@ -21,6 +20,7 @@ webix.ui({
 	view:"iframe", id:"frame-body", src:"data/pageA.html"
 });
 ~~~
+{{sample 98_docs/iframe.html}}
 
 - **src** (path) - defines external site url;
 - **waitMessage** (boolean) - set "Loading.." message to be displayed on page loading. 

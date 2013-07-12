@@ -6,9 +6,9 @@ ContextMenu
 Contextmenu is triggered by right mouseclick. Ui-related Contextmenu inherits from both [window](desktop/window.md) and [list](desktop/list.md). It looks like
 ui-related [menu](desktop/menu.md) and shares most of its properties, methods and events. 
 
-<img src="desktop/contextmenu.png" />
+<img style="display:block; margin-left:auto;margin-right:auto;"   src="desktop/contextmenu.png" />
 
-{{sample 03_menu/04_context.html }}
+
 
 
 ###Initialization
@@ -23,6 +23,7 @@ webix.ui({
 	master:"areaA" //  ID of a DIV container
 		});
 ~~~
+{{sample 03_menu/04_context.html }}
 
 **Data** property includes list items in the window, **separator** stands for a line to divide window areas while **master** property defines the area where 
 the component is initialized. 

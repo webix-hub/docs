@@ -28,15 +28,6 @@
 	margin-left:-50px;
 	margin-top:40px;
 }
-.front_page .guides_content .single_tree_block{
-	width:280px;
-	min-height:120px;
-	display:block;
-	float:left;
-	margin-top:25px;
-	margin-left:30px;
-	padding:0px 0px 10px 0px;
-}
 .front_page .guides_content #configuration{
 	background: url('components/configuration_icon.png') no-repeat top left;
 }

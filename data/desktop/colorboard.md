@@ -3,18 +3,17 @@ Colorboard
 
 ###Overview
 
-UI-related colorboard is a handy built-in tool to get hex code of a color that you are going to use for [styling](desktop/styling.md). 
-By default colors are presented in a rainbow-like manner. The detalization level you set manually. 
+UI-related colorboard is a tool to get the hex code of a color that you are going to use for [styling](desktop/styling.md). 
+By default, colors are presented in a rainbow-like manner. The detalization level you set manually. 
 
-<img src="desktop/colorboard.png"/>
+<img style="display:block; margin-left:auto;margin-right:auto;"  src="desktop/colorboard.png"/>
 
-{{sample 24_colorpicker/01_initialization.html }}
-
-Colorboard is used in conjunction with a [colorpicker](desktop/controls.md#colorpicker) control. With colorpicker you needn't initialize a colorboard since it will appear as soon as you click a control. 
-
-When used separately, colorboard is inited in the following way:
 
 ###Initialization
+
+Colorboard is used in conjunction with a [colorpicker](desktop/controls.md#colorpicker) control. In such a case, you needn't to initialize a colorboard since it will appear as soon as you click a control. 
+
+When used separately, colorboard is inited in the following way:
 
 ~~~js
 webix.ui({
@@ -23,10 +22,12 @@ webix.ui({
 		rows	:30,
 		width	:400,
 		height	:400
-	});
+});
 ~~~
+{{sample 24_colorpicker/01_initialization.html }}
 
-Comments: 
+
+####Comments:
 
 - **width** and **height** denote the dimensions of a square with a color palette;
 - **cols** and **rows** denote the number of colors in each axle - the bigger it is, the more detailed is the palette;

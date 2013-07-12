@@ -3,7 +3,9 @@ Template
 
 Ui-related template looks like a non-editable text field, either filled with text or empty. Its contents is set with the help of *template* parameter. Standard template has no design of it's own. 
 
-<img src="desktop/template.png"/>
+<img  style="display:block; margin-left:auto;margin-right:auto;"  src="desktop/template.png"/>
+
+##Initialization
 
 ~~~js
 webix.ui({

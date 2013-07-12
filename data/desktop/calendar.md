@@ -3,16 +3,10 @@ Calendar
 
 ###Overview
 
-UI-related calendar inherits from [view](desktop/view.md) and helps you include a normal calendar inside your app. 
+UI-related calendar inherits from [view](desktop/view.md) and allows you to include the Date and Time picker calendar into an app.
+It is a handy and fully interactive tool to pick the necessary time and date when filling a form. The dedicated timepicker allows setting the necessary time that will be displayed below the calendar area.
 
-Calendar is a handy tool to pick time and date when filling a form. It's fully interactive annd allows for selecting the necessary year, month and date. The dedicated timepicker
-allows setting the necessary time that will be displayed below the calendar area. 
-
-The initial value of the calendar is set within the **new Date()** function.
-
-<img src="desktop/calendar.png"/>
-
-{{sample 09_calendar/01_init.html }}
+<img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/calendar.png"/>
 
 ###Initialization
 
@@ -26,8 +20,10 @@ webix.ui({
     calendarDateFormat: "%Y-%m-%d",
     width:300,
 	height:250
-	});
+});
 ~~~
+
+{{sample 09_calendar/01_init.html }}
 
 ####Comments: 
 
@@ -35,7 +31,7 @@ Here is a calendar with basic parameters.
 
 - **weekHeader** (boolean) - if *true* shows weekday above;
 - **events** (CSS class or specific cases) - e.g. **webix.Date.isHoliday** highlights dayoffs;
-- **date** - specifies start date in the "year, month, day" format with months starting from 0. In case of an empty new Date(); you'll be shown current date. 
+- **date** - specifies the start date in the "year, month, day" format with months starting from 0. In case of an empty new Date(); you'll be shown current date. 
 
 To see the full list of Calendar properties please refer to the [corresponding chapter of the documentation](api/refs/ui.calendar_props.md).
 
