@@ -207,7 +207,6 @@ div.components_group a{
     width:100px;
     text-align:center;
 }
-
 div.controls_group{
     padding-top:25px;
     padding-bottom:25px;

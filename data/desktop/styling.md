@@ -22,7 +22,7 @@ After that, the styling can be customized in two modes:
          view:"dataview",
          css:"my_style",
          template: "#title#<br/> Year: #year#, rank: #rank#",
-});
+	});
 </script>
 ~~~
 
@@ -64,13 +64,13 @@ other parameters including template and css.
 
 ~~~js
 webix.ui ({
-        view:"dataview", 
-		type:{
-            height: 45,
-	        width: 300,
-			template:"<span style='color:#67B802; font-style:italic'>#name#</span>"				
+	view:"dataview", 
+	type:{
+    	height: 45,
+	    width: 300,
+		template:"<span style='color:#67B802; font-style:italic'>#name#</span>"				
 	}
-        ...
+    ...
 })
 ~~~
 
@@ -79,15 +79,15 @@ Type can also be created separately through the **webix.type** class.
 ~~~js
 webix.type(webix.ui.dataview,{
 	name:"custom",
-        template:"<span style='color:#67B802; font-style:italic'>#name#</span>",
-        height: 45,
-		width: 300,
+	template:"<span style='color:#67B802; font-style:italic'>#name#</span>",
+    height: 45,
+	width: 300
 });
  
 webix.ui ({
-        view:"dataview", 
-		type: "custom",
-        ...
+	view:"dataview", 
+	type: "custom",
+    ...
 })
 ~~~
 
@@ -111,10 +111,10 @@ webix.ui({
 
 Or **redefine default CSS** for this document: 
 
-~~~js
+~~~css
 .mywin .webix_win_head .webix_template{
-		background: #444; color:#AFA;
-	}
+	background: #444; color:#AFA;
+}
 ~~~
 
 <img src="desktop/window_styled.png"/>
@@ -153,15 +153,15 @@ Take, for instance, buttons. If you want to style each button differently, you s
 
 ~~~css
 .bt_1 input{
-			border-radius:12px; -moz-border-radius:12px; -webkit-border-radius:12px;
-			background: #396D9E;
-			...
-		}
+	border-radius:12px; -moz-border-radius:12px; -webkit-border-radius:12px;
+	background: #396D9E;
+	...
+}
 .bt_2 input{
-			border-radius: 4px; -webkit-border-radius: 4px;-moz-border-radius: 4px;
-			border: 1px solid #3D7113;
-			...
-		}
+	border-radius: 4px; -webkit-border-radius: 4px;-moz-border-radius: 4px;
+	border: 1px solid #3D7113;
+	...
+}
 ~~~
 
 Here **.bt1** and  **bt2** are class names for two different buttons while **input** specifies that the button's input area should be styled as well. 

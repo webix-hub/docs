@@ -5,10 +5,7 @@ Uploader is a component that allows users to  upload files. It allows browsing d
 
 Uploader can be used **standalone** as well as integrated into **form** or **UI component** (in an "invisible" mode for the latter). 
 
-<img src="desktop/uploader_01.png"/>
-
-{{sample 21_upload/01_init_list.html}}
-
+<img style="display:block; margin-left:auto;margin-right:auto;"   src="desktop/uploader_01.png"/>
 
 ###Initialization
 

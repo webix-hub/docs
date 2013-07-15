@@ -6,13 +6,13 @@ Popup
 Popup is a variant of a ui-related [window](desktop/window.md). Unlike it, the popup disappears as you click 
 somewhere outside it. Popup is be used to alert some info as well can form a popup menu. 
 
-<img src="desktop/popup.png"/>
+<img style="display:block; margin-left:auto;margin-right:auto;"  src="desktop/popup.png"/>
 
-{{sample 10_window/02_popup.html }}
+
 
 ###Initialization
 
-Popup consists of **head** and **body** (both taking either view or text template) with **head** section being rather optional. 
+Popup consists of **body** (both taking either view or text template) without the **head** section. 
 
 The component should be made visible with the **show()** method you call during the component initialization (if, of course, you want the popup to appear on page loading).
 

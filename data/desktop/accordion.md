@@ -4,15 +4,9 @@ Accordion
 ###Overview
 
 Accordion consists of panes arranged into layout rows and cols. Each pane, or **accordion item**, features **body** and **header** and can be fully expanded and collapsed by clicking its header. 
-You can place text or any component into each pane. 
+You can place text or any component into each pane. The component inherits from [layout](desktop/layout.md). 
 
-The component inherits from [layout](desktop/layout.md). 
-
-<img src="desktop/accordion.png"/>
-
-{{sample
-01_layout/05_header_complex.html
-}}
+<img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/accordion.png"/>
 
 ###Initialization
 
@@ -31,6 +25,10 @@ webix.ui({
 	]
 });
 ~~~
+{{sample
+01_layout/05_header_complex.html
+}}
+
 
 ####Comments: 
 

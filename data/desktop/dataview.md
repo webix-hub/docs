@@ -5,9 +5,8 @@ Dataview
 
 Dataview displays objects with data according to a predefined template. It inherits from [view](desktop/view.md). 
 
-<img src="desktop/dataview.png"/>
+<img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/dataview.png"/>
 
-{{sample 06_dataview/04_manipulations/02_selection.html }}
 
 ###Initialization
 

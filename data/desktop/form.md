@@ -2,21 +2,19 @@ Form
 ===============
 ###Overview
 
-Any form is a means of getting information from users. It contains input fields and select components like checkboxes,
-radiobuttons. etc. alongside with submit/cancel buttons depending on the situation. Find them all in our [Controls Guide](desktop/controls.md).
+Any form is a means of getting an information from users. It contains input fields and select components like checkboxes,
+radiobuttons alongside with submit/cancel buttons depending on the situation. Find them all in our [Controls Guide](desktop/controls.md).
 
+<img  style="display:block; margin-left:auto;margin-right:auto;"   src="desktop/basic_form.png"/>
+
+
+###Initialization
 Ui-related form inherits from [view](desktop/view.md). It resembles [layout](desktop/layout.md) very much as it is divided into columns and rows where controls are put. 
 
 - **columns** - an array of horizontally arranged controls and control groups;
 - **rows** -  an array of vertically arranged controls and control groups;
 - **elements** - the form's specific property, an array of vertically arranged controls and control groups;
 
-<img  src="desktop/basic_form.png"/>
-
-{{sample 13_form/02_api/01_basic.html }}
-
-
-###Initialization
 
 {{snippet
 Login form
@@ -36,6 +34,7 @@ webix.ui({
 		]
 	});
 ~~~
+{{sample 13_form/02_api/01_basic.html }}
 
 {{note
 There exists a possibility to specify [common configuration](desktop/common_config.md) for all controls included in this or that form.

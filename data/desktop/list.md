@@ -5,11 +5,12 @@ List
 
 List is a ui-related components that inherits from [view](desktop/view.md) and presents listed data items. The webix library offers three
 variations of list apart from the standard one - [grouplist](desktop/grouplist.md), [x-list](desktop/xlist.md) and 
-[unitlist](desktop/unitlist.md). 
+[unitlist](desktop/unitlist.md). <br>
 
-<img src="desktop/list.png"/>
 
-{{sample 05_list/01_list.html }}
+<img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/list.png"/>
+
+
 
 ###Initialization
 

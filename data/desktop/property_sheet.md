@@ -6,9 +6,7 @@ Property Sheet
 Property sheet is a list of properties. Ui-related property sheet inherits from [view](desktop/view.md). 
 
  	
-<img src="desktop/property_sheet.png"/>
-
-{{sample 07_property/01_init.html }}
+<img style="display:block; margin-left:auto;margin-right:auto;"  src="desktop/property_sheet.png"/>
 
 ###Initialization
 

@@ -3,9 +3,9 @@ head
 
 
 @short:
-	sets header view
+	sets the view header 
 
-@type: object
+@type: object, string
 @example:
 webix.ui({
 		view:"window",
@@ -19,7 +19,6 @@ webix.ui({
 @template:	api_config
 @related: 
 	desktop/window.md
-    desktop/popup.md
 @relatedsample:
 	10_window/01_init.html
 @relatedapi:

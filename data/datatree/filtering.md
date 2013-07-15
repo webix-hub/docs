@@ -1,4 +1,4 @@
-Tree Filtering
+Filtering in the Tree
 ====================
 Tree allows you to filter nodes on the client side. 
 

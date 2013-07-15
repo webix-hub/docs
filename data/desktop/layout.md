@@ -6,16 +6,16 @@ Layout and Resizer
 Layout is a concept element that doesn't contain anything in itself yet determines the way 'meaningful' components are arranged. It divides the page into 
 **rows** and **columns** where all other components are placed. 
 
-<img src="desktop/layout_01.png"/>
+<img style="display:block; margin-left:auto;margin-right:auto;"   src="desktop/layout_01.png"/>
 
-{{sample 98_docs/layout.html }}
+<br>
 
-Layout consists of rows and columns separated from each other by borders (except for a borderless layout). **Rows** contain an array of 
-[view](desktop/view.md) objects arranged horizontally while **cols** is an array of vertically arranged objects. 
-
-Border setting and border types are described in the [corresponding chapter](desktop/borders.md) of the manual. 
 
 ##Initialization
+Layout consists of rows and columns separated from each other by borders (except for a borderless layout). **Rows** contain an array of 
+[view](desktop/view.md) objects arranged horizontally while **cols** is an array of vertically arranged objects. 
+Border setting and border types are described in the [corresponding chapter](desktop/borders.md) of the manual. 
+
 
 ~~~js
 webix.ui({
@@ -31,6 +31,9 @@ webix.ui({
 	]
 })
 ~~~
+{{sample 98_docs/layout.html }}
+
+<br>
 
 {{note
 When setting layout, you can easily omit the **view:"layout"** line and start setting rows and cols at once:

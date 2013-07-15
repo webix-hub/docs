@@ -5,9 +5,7 @@ Unitlist
 
 Unitlist presents data in groups derived from initial non-hierarchical dataset. Data items are sorted and then united by common values. 
 
-<img src="desktop/unitlist.png"/>
-
-{{sample 05_list/11_unitlist.html }}
+<img style="display:block; margin-left:auto;margin-right:auto;"   src="desktop/unitlist.png"/>
 
 ###Initialization
 
@@ -28,6 +26,9 @@ webix.ui({
         data: set
 })
 ~~~
+
+
+{{sample 05_list/11_unitlist.html }}
 
 - The **uniteBy** property groups data according to the specified criterion, the unit value (here it's the first letter to the data item title);
 - In addition it sets **unit headers**  - the unit values. 

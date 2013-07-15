@@ -1,4 +1,4 @@
-Tree Sorting
+Sorting in the Tree
 ====================
 Tree allows you to sort nodes on the client side. Note, along with the parent nodes, child nodes are sorted as well.
 

@@ -16,6 +16,7 @@ webix.ui({
 		master:"areaA"
 			});
 ~~~
+{{sample 03_menu/07_context_ui.html }}
 
 ####Comments:
 

@@ -6,9 +6,8 @@ Toolbar
 Ui-related toolbar inherits from [layout](desktop/layout.md). It is the place to nest all the possible controls including, buttons, 
 labels, icons, checkboxes, combos, etc. For the full list of controls please refer to the library's [Controls Guide](desktop/controls.md). 
 
-<img src="desktop/toolbar.png" />
+<img style="display:block; margin-left:auto;margin-right:auto;"  src="desktop/toolbar.png" />
 
-{{sample 02_toolbar/14_toolbar_toggle.html }}
 
 ###Initialization
 
@@ -30,7 +29,8 @@ webix.ui({
 });		
 ~~~
 
-{{sample 02_toolbar/04_toolbar_align.html }}
+{{sample 02_toolbar/14_toolbar_toggle.html }}
+
 
 Specify the ID of a toolbar as well as ID-s of all the necessary controls if you want to work with them later. 
 

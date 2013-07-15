@@ -1,4 +1,4 @@
-Editing
+Editing in the Tree
 =======================================
 Initially, Tree is a non-editable component. But you can easily make Tree editable by extending it with a special class - api/refs/editability.md.
 
