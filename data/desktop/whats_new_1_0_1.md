@@ -19,6 +19,7 @@ Version 1.0.1
 
 ### Fixes
 
+- invalid size and focus of popup editors
 - toggle button ignores inputWidth settings
 - regression in treetable checkbox behavior
 - regression in datatable markup parsing
