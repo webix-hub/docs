@@ -1,1 +1,1 @@
-@link: api/ui.template_setHTML.md
+@link: api/ui.template_sethtml.md

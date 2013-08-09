@@ -38,6 +38,7 @@ Methods
 - api/link/ui.dataview_getscrollstate.md - returns the scroll position
 - api/link/ui.dataview_getselectedid.md - returns the id(s) of the selected item(s)
 - api/link/ui.dataview_getselecteditem.md - returns selected object
+- api/link/ui.dataview_gettopparentview.md - returns top parent view
 - api/link/ui.dataview_hascss.md - checks if item has specific css class
 - api/link/ui.dataview_hasevent.md - checks whether the component has the specified event
 - api/link/ui.dataview_hide.md - hides the view
@@ -113,6 +114,7 @@ of the component
 - api/link/ui.dataview_getscrollstate.md
 - api/link/ui.dataview_getselectedid.md
 - api/link/ui.dataview_getselecteditem.md
+- api/link/ui.dataview_gettopparentview.md
 - api/link/ui.dataview_hascss.md
 - api/link/ui.dataview_hasevent.md
 - api/link/ui.dataview_hide.md

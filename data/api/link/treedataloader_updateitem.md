@@ -1,1 +1,1 @@
-@link: api/datastore_updateItem.md
+@link: api/datastore_updateitem.md

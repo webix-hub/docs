@@ -19,6 +19,7 @@ Methods
 - api/ui.window_gethead.md - gets the ui view of the window header
 - api/link/ui.window_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.window_getparentview.md - returns the parent view of the component
+- api/link/ui.window_gettopparentview.md - returns top parent view
 - api/link/ui.window_hasevent.md - checks whether the component has the specified event
 - api/link/ui.window_hide.md - hides the view
 - api/link/ui.window_isenabled.md - checks whether the view is enabled
@@ -48,6 +49,7 @@ Methods
 - api/ui.window_gethead.md
 - api/link/ui.window_getnode.md
 - api/link/ui.window_getparentview.md
+- api/link/ui.window_gettopparentview.md
 - api/link/ui.window_hasevent.md
 - api/link/ui.window_hide.md
 - api/link/ui.window_isenabled.md

@@ -1,4 +1,4 @@
-@link: api/datastore_updateItem.md
+@link: api/datastore_updateitem.md
 
 @related:
 	datatable/get_set_data.md#settingthevalue

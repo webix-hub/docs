@@ -41,6 +41,7 @@ Methods
 - api/link/ui.calendar_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.calendar_getparentview.md - returns the parent view of the component
 - api/ui.calendar_getselecteddate.md - gets the current selected date
+- api/link/ui.calendar_gettopparentview.md - returns top parent view
 - api/ui.calendar_getvalue.md - returns the current value of the component
 - api/ui.calendar_getvisibledate.md - gets  visible date
 - api/link/ui.calendar_hasevent.md - checks whether the component has the specified event

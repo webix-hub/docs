@@ -62,6 +62,7 @@ Methods
 - api/link/ui.unitlist_getscrollstate.md - returns the scroll position
 - api/link/ui.unitlist_getselectedid.md - returns the id(s) of the selected item(s)
 - api/link/ui.unitlist_getselecteditem.md - returns selected object
+- api/link/ui.unitlist_gettopparentview.md - returns top parent view
 - api/ui.unitlist_getunitlist.md - gets ID-s of the data records united by the specified unit value
 - api/ui.unitlist_getunits.md - returns unit values
 - api/link/ui.unitlist_getvisiblecount.md - returns the number of items that can be seen with the current view height

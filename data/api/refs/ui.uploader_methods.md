@@ -20,6 +20,7 @@ Methods
 - api/link/ui.uploader_getinputnode.md - gets the HTML element related to the component
 - api/link/ui.uploader_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.uploader_getparentview.md - returns the parent view of the component
+- api/link/ui.uploader_gettopparentview.md - returns top parent view
 - api/link/ui.uploader_getvalue.md - returns the current value of the control
 - api/link/ui.uploader_hasevent.md - checks whether the component has the specified event
 - api/link/ui.uploader_hide.md - hides the view
@@ -54,6 +55,7 @@ Methods
 - api/link/ui.uploader_getinputnode.md
 - api/link/ui.uploader_getnode.md
 - api/link/ui.uploader_getparentview.md
+- api/link/ui.uploader_gettopparentview.md
 - api/link/ui.uploader_getvalue.md
 - api/link/ui.uploader_hasevent.md
 - api/link/ui.uploader_hide.md

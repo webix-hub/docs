@@ -19,6 +19,7 @@ Methods
 - api/link/ui.search_getinputnode.md - gets the HTML element related to the component
 - api/link/ui.search_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.search_getparentview.md - returns the parent view of the component
+- api/link/ui.search_gettopparentview.md - returns top parent view
 - api/link/ui.search_getvalue.md - returns the current value of the control
 - api/link/ui.search_hasevent.md - checks whether the component has the specified event
 - api/link/ui.search_hide.md - hides the view
@@ -51,6 +52,7 @@ Methods
 - api/link/ui.search_getinputnode.md
 - api/link/ui.search_getnode.md
 - api/link/ui.search_getparentview.md
+- api/link/ui.search_gettopparentview.md
 - api/link/ui.search_getvalue.md
 - api/link/ui.search_hasevent.md
 - api/link/ui.search_hide.md

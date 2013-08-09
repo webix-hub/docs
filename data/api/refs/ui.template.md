@@ -40,6 +40,7 @@ Methods
 - api/link/ui.template_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.template_getparentview.md - returns the parent view of the component
 - api/link/ui.template_getscrollstate.md - returns the scroll position
+- api/link/ui.template_gettopparentview.md - returns top parent view
 - api/link/ui.template_hasevent.md - checks whether the component has the specified event
 - api/link/ui.template_hide.md - hides the view
 - api/link/ui.template_isenabled.md - checks whether the view is enabled

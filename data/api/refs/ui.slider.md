@@ -42,6 +42,7 @@ Methods
 - api/link/ui.slider_getinputnode.md - gets the HTML element related to the component
 - api/link/ui.slider_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.slider_getparentview.md - returns the parent view of the component
+- api/link/ui.slider_gettopparentview.md - returns top parent view
 - api/link/ui.slider_getvalue.md - returns the current value of the control
 - api/link/ui.slider_hasevent.md - checks whether the component has the specified event
 - api/link/ui.slider_hide.md - hides the view

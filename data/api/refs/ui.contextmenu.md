@@ -72,6 +72,7 @@ Methods
 - api/link/ui.contextmenu_getselecteditem.md - returns selected object
 - api/link/ui.contextmenu_getsubmenu.md - gets the submenu object within menu component
 - api/link/ui.contextmenu_gettopmenu.md - returns top menu object
+- api/link/ui.contextmenu_gettopparentview.md - returns top parent view
 - api/link/ui.contextmenu_getvisiblecount.md - returns the number of items that can be seen with the current view height
 - api/link/ui.contextmenu_hascss.md - checks if item has specific css class
 - api/link/ui.contextmenu_hasevent.md - checks whether the component has the specified event
@@ -181,7 +182,7 @@ Properties
 - api/link/ui.contextmenu_drag_config.md - enables or disables drag-and-drop
 - api/link/ui.contextmenu_externaldata_config.md - allows defining custom 'move' logic for the component.
 - api/link/ui.contextmenu_gravity_config.md - sets the view gravity (1 by default)
-- api/link/ui.contextmenu_head_config.md - sets header view
+- api/link/ui.contextmenu_head_config.md - sets the view header
 - api/link/ui.contextmenu_headheight_config.md - defines the header height (43 by default)
 - api/link/ui.contextmenu_height_config.md - sets the height of the component
 - api/link/ui.contextmenu_hidden_config.md - defines whether the view will be hidden initially

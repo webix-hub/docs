@@ -43,6 +43,7 @@ Methods
 - api/ui.window_gethead.md - gets the ui view of the window header
 - api/link/ui.window_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.window_getparentview.md - returns the parent view of the component
+- api/link/ui.window_gettopparentview.md - returns top parent view
 - api/link/ui.window_hasevent.md - checks whether the component has the specified event
 - api/link/ui.window_hide.md - hides the view
 - api/link/ui.window_isenabled.md - checks whether the view is enabled
@@ -79,7 +80,7 @@ Properties
 - api/link/ui.window_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.window_disabled_config.md - disables item
 - api/link/ui.window_gravity_config.md - sets the view gravity (1 by default)
-- api/ui.window_head_config.md - sets header view
+- api/ui.window_head_config.md - sets the view header
 - api/ui.window_headheight_config.md - defines the header height (43 by default)
 - api/link/ui.window_height_config.md - sets the height of the component
 - api/link/ui.window_hidden_config.md - defines whether the view will be hidden initially

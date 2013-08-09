@@ -50,6 +50,7 @@ Methods
 - api/link/ui.tree_getselectedid.md - returns the id(s) of the selected item(s)
 - api/link/ui.tree_getselecteditem.md - returns selected object
 - api/link/ui.tree_getstate.md - returns the current state of the view
+- api/link/ui.tree_gettopparentview.md - returns top parent view
 - api/link/ui.tree_group.md - groups data by the specified data property
 - api/link/ui.tree_hascss.md - checks if item has specific css class
 - api/link/ui.tree_hasevent.md - checks whether the component has the specified event
@@ -143,6 +144,7 @@ Methods
 - api/link/ui.tree_getselectedid.md
 - api/link/ui.tree_getselecteditem.md
 - api/link/ui.tree_getstate.md
+- api/link/ui.tree_gettopparentview.md
 - api/link/ui.tree_group.md
 - api/link/ui.tree_hascss.md
 - api/link/ui.tree_hasevent.md

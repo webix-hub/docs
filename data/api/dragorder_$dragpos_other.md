@@ -1,1 +1,1 @@
-@link: api/dragcontrol_$dragPos_other.md
+@link: api/dragcontrol_$dragpos_other.md

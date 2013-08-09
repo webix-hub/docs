@@ -31,6 +31,7 @@ Methods
 - api/ui.suggest_getmastervalue.md - returns current value of master control
 - api/link/ui.suggest_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.suggest_getparentview.md - returns the parent view of the component
+- api/link/ui.suggest_gettopparentview.md - returns top parent view
 - api/link/ui.suggest_hasevent.md - checks whether the component has the specified event
 - api/link/ui.suggest_hide.md - hides the view
 - api/link/ui.suggest_isenabled.md - checks whether the view is enabled
@@ -70,7 +71,7 @@ Properties
 - api/link/ui.suggest_disabled_config.md - disables item
 - api/ui.suggest_filter_config.md - custom filtering function
 - api/link/ui.suggest_gravity_config.md - sets the view gravity (1 by default)
-- api/link/ui.suggest_head_config.md - sets header view
+- api/link/ui.suggest_head_config.md - sets the view header
 - api/link/ui.suggest_headheight_config.md - defines the header height (43 by default)
 - api/link/ui.suggest_height_config.md - sets the height of the component
 - api/link/ui.suggest_hidden_config.md - defines whether the view will be hidden initially

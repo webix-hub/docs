@@ -12,7 +12,7 @@ Properties
 - api/link/ui.popup_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.popup_disabled_config.md - disables item
 - api/link/ui.popup_gravity_config.md - sets the view gravity (1 by default)
-- api/link/ui.popup_head_config.md - sets header view
+- api/link/ui.popup_head_config.md - sets the view header
 - api/link/ui.popup_headheight_config.md - defines the header height (43 by default)
 - api/link/ui.popup_height_config.md - sets the height of the component
 - api/link/ui.popup_hidden_config.md - defines whether the view will be hidden initially

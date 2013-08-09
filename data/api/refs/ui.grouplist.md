@@ -64,6 +64,7 @@ Methods
 - api/link/ui.grouplist_getscrollstate.md - returns the scroll position
 - api/link/ui.grouplist_getselectedid.md - returns the id(s) of the selected item(s)
 - api/link/ui.grouplist_getselecteditem.md - returns selected object
+- api/link/ui.grouplist_gettopparentview.md - returns top parent view
 - api/link/ui.grouplist_getvisiblecount.md - returns the number of items that can be seen with the current view height
 - api/link/ui.grouplist_group.md - groups data by the specified data property
 - api/link/ui.grouplist_hascss.md - checks if item has specific css class

@@ -16,11 +16,11 @@ webix.ui({
 @template:	api_config
 
 @relatedapi:	
-	api/link/ui.template_scrollTo.md
+	api/link/ui.template_scrollto.md
 @related:
 	desktop/scroll_control.md
 @descr:
-The property is used by the api/link/ui.template_scrollTo.md method and 
+The property is used by the api/link/ui.template_scrollto.md method and 
 sets the time during which the method scrolls the component to the specified position.
 
 The default value is 0ms.

@@ -21,6 +21,7 @@ Methods
 - api/link/ui.richselect_getparentview.md - returns the parent view of the component
 - api/ui.richselect_getpopup.md - return popup element of the input
 - api/ui.richselect_getpopupview.md - returns an object of the dedicated popup view
+- api/link/ui.richselect_gettopparentview.md - returns top parent view
 - api/link/ui.richselect_getvalue.md - returns the current value of the control
 - api/link/ui.richselect_hasevent.md - checks whether the component has the specified event
 - api/link/ui.richselect_hide.md - hides the view
@@ -55,6 +56,7 @@ Methods
 - api/link/ui.richselect_getparentview.md
 - api/ui.richselect_getpopup.md
 - api/ui.richselect_getpopupview.md
+- api/link/ui.richselect_gettopparentview.md
 - api/link/ui.richselect_getvalue.md
 - api/link/ui.richselect_hasevent.md
 - api/link/ui.richselect_hide.md

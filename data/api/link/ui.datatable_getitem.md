@@ -1,4 +1,4 @@
-@link: api/datastore_getItem.md
+@link: api/datastore_getitem.md
 
 @related:
 	datatable/get_set_data.md#gettingthevalue

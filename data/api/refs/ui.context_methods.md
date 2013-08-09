@@ -21,6 +21,7 @@ Methods
 - api/link/ui.context_gethead.md - gets the ui view of the window header
 - api/link/ui.context_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.context_getparentview.md - returns the parent view of the component
+- api/link/ui.context_gettopparentview.md - returns top parent view
 - api/link/ui.context_hasevent.md - checks whether the component has the specified event
 - api/link/ui.context_hide.md - hides the view
 - api/link/ui.context_isenabled.md - checks whether the view is enabled
@@ -52,6 +53,7 @@ Methods
 - api/link/ui.context_gethead.md
 - api/link/ui.context_getnode.md
 - api/link/ui.context_getparentview.md
+- api/link/ui.context_gettopparentview.md
 - api/link/ui.context_hasevent.md
 - api/link/ui.context_hide.md
 - api/link/ui.context_isenabled.md

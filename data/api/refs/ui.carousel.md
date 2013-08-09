@@ -45,6 +45,7 @@ Methods
 - api/link/ui.carousel_getchildviews.md - returns child views of the calling component
 - api/link/ui.carousel_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.carousel_getparentview.md - returns the parent view of the component
+- api/link/ui.carousel_gettopparentview.md - returns top parent view
 - api/link/ui.carousel_hasevent.md - checks whether the component has the specified event
 - api/link/ui.carousel_hide.md - hides the view
 - api/link/ui.carousel_index.md - returns the cell index in the layout collection

@@ -22,7 +22,7 @@ Properties
 - api/link/ui.submenu_drag_config.md - enables or disables drag-and-drop
 - api/link/ui.submenu_externaldata_config.md - allows defining custom 'move' logic for the component.
 - api/link/ui.submenu_gravity_config.md - sets the view gravity (1 by default)
-- api/link/ui.submenu_head_config.md - sets header view
+- api/link/ui.submenu_head_config.md - sets the view header
 - api/link/ui.submenu_headheight_config.md - defines the header height (43 by default)
 - api/link/ui.submenu_height_config.md - sets the height of the component
 - api/link/ui.submenu_hidden_config.md - defines whether the view will be hidden initially

@@ -21,6 +21,7 @@ Methods
 - api/link/ui.combo_getparentview.md - returns the parent view of the component
 - api/link/ui.combo_getpopup.md - return popup element of the input
 - api/link/ui.combo_getpopupview.md - returns an object of the dedicated popup view
+- api/link/ui.combo_gettopparentview.md - returns top parent view
 - api/link/ui.combo_getvalue.md - returns the current value of the control
 - api/link/ui.combo_hasevent.md - checks whether the component has the specified event
 - api/link/ui.combo_hide.md - hides the view
@@ -55,6 +56,7 @@ Methods
 - api/link/ui.combo_getparentview.md
 - api/link/ui.combo_getpopup.md
 - api/link/ui.combo_getpopupview.md
+- api/link/ui.combo_gettopparentview.md
 - api/link/ui.combo_getvalue.md
 - api/link/ui.combo_hasevent.md
 - api/link/ui.combo_hide.md

@@ -59,6 +59,7 @@ Methods
 - api/link/ui.proto_getpager.md - returns the pager object associated with the component
 - api/link/ui.proto_getparentview.md - returns the parent view of the component
 - api/link/ui.proto_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
+- api/link/ui.proto_gettopparentview.md - returns top parent view
 - api/link/ui.proto_hascss.md - checks if item has specific css class
 - api/link/ui.proto_hasevent.md - checks whether the component has the specified event
 - api/link/ui.proto_hide.md - hides the view

@@ -17,6 +17,7 @@ Methods
 - api/ui.iframe_getiframe.md - returns html element of inner iframe
 - api/link/ui.iframe_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.iframe_getparentview.md - returns the parent view of the component
+- api/link/ui.iframe_gettopparentview.md - returns top parent view
 - api/ui.iframe_getwindow.md - gets the window object of an iframe
 - api/link/ui.iframe_hasevent.md - checks whether the component has the specified event
 - api/link/ui.iframe_hide.md - hides the view
@@ -44,6 +45,7 @@ Methods
 - api/ui.iframe_getiframe.md
 - api/link/ui.iframe_getnode.md
 - api/link/ui.iframe_getparentview.md
+- api/link/ui.iframe_gettopparentview.md
 - api/ui.iframe_getwindow.md
 - api/link/ui.iframe_hasevent.md
 - api/link/ui.iframe_hide.md

@@ -23,7 +23,7 @@ Each **data item object** posesses the unique **ID**, **index** in the data arra
 
 Getting the item object
 -------------------------------
-To get the data item object, you should use the api/datastore_getItem.md method:
+To get the data item object, you should use the api/datastore_getitem.md method:
 
 ~~~js
 var mylist = webix.ui({
@@ -192,7 +192,7 @@ mylist.refresh();
 //or
 mylist.updateItem("book2", item2);
 ~~~
-Methods api/datastore_refresh.md and api/datastore_updateItem.md lead to one and the same result and don't have any specificity.
+Methods api/datastore_refresh.md and api/datastore_updateitem.md lead to one and the same result and don't have any specificity.
 
 Manipulations with items in the data set
 ----------------------------------------------

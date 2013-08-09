@@ -13,7 +13,7 @@ Properties
 - api/link/ui.suggest_disabled_config.md - disables item
 - api/ui.suggest_filter_config.md - custom filtering function
 - api/link/ui.suggest_gravity_config.md - sets the view gravity (1 by default)
-- api/link/ui.suggest_head_config.md - sets header view
+- api/link/ui.suggest_head_config.md - sets the view header
 - api/link/ui.suggest_headheight_config.md - defines the header height (43 by default)
 - api/link/ui.suggest_height_config.md - sets the height of the component
 - api/link/ui.suggest_hidden_config.md - defines whether the view will be hidden initially

@@ -50,7 +50,7 @@ webix.ui({
 
 Moving columns
 --------------------------------------------
-To enable the drag-and-drop support for columns, set the api/ui.datatable_dragColumn_config.md parameter to *true*.
+To enable the drag-and-drop support for columns, set the api/ui.datatable_dragcolumn_config.md parameter to *true*.
 
 {{snippet
 Enabling the drag-and-drop support for columns
@@ -77,7 +77,7 @@ There is the 'order' mode for the table columns.
 In that mode, columns can't be dragged out of the table boundaries.
 Also, while dragging a column the remaining columns are automatically rearranged so that when you drop the column to the final destination the remaining columns won't need to do any rearrangements.
 
-To enable the d-n-d support and activate the 'order' mode for columns, just set the api/ui.datatable_dragColumn_config.md parameter to *order*.
+To enable the d-n-d support and activate the 'order' mode for columns, just set the api/ui.datatable_dragcolumn_config.md parameter to *order*.
 
 {{snippet
 Activating the 'order' mode for columns

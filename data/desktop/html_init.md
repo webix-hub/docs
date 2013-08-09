@@ -66,12 +66,13 @@ In the code below, data comes from external XML file, the **node** is incoming d
 
 
 ~~~js
-webix.ajax("data/config.xml", function(text, data){
-		webix.markup.init(data.rawxml(), document.body)
+webix.ajax("data/config.xml?!", function(text, data){
+	var config = webix.markup.parse(text, "xml");
+	webix.ui(config);
 });
 ~~~
 
-{{sample 23_init_from_html/05_xml_file.html}}
+{{sample 23_markup/02_xhtml/04_by_ajax.html }}
 
 
 You can use markup initialization by **parsing markup** to the neccessary part of the Webix script thus creating a Webix object.
@@ -85,7 +86,7 @@ webix.ui({
 function load_grid() {
 	webix.ajax("data/gridconfig.xml", function(text, data){
 		webix.ui(
-			webix.markup.parse(data.rawxml()), //source 
+			webix.markup.parse(text, "xml"), //source 
 			$$("placeholder")) //target 
 	})
 };
@@ -93,7 +94,6 @@ function load_grid() {
 
 Target is not defined within the **parse()** function yet it is specified in the **webix.ui()** constructor as *$$('placeholder')*. 
 
-{{sample 23_init_from_html/06_xml_file_layout.html}}
 
 ##Markup Peculiarities 
 
@@ -138,7 +138,7 @@ HTML Toolbar, List and Form
 </body>
 ~~~
 
-{{sample 23_init_from_html/01_html_markup.html }}
+{{sample 23_markup/01_html/01_init.html }}
 
 ####Comments: 
 
@@ -158,32 +158,32 @@ XML Toolbar, List and Form
 ~~~xml
 <x:ui>
 		<x:rows>
-			My header
+			<x:template>My header</x:template>
 			<x:toolbar>
 				<x:button width="150">Button</x:button>
-				Press the button to run App
+				<x:label>Press the button to run App</x:label>
 			</x:toolbar>
 			<x:cols>
 				<x:list url="data/data.json" select="true">
-					Package: #Package# (#Version#)
+					<x:template>Package: #Package# (#Version#)</x:template>
 				</x:list>
-				<form>
+				<x:htmlform>
 					<input type="submit" />
-				</form>
+				</x:htmlform>
 				<x:list width="320">
-					#id#: #value#
-				   <x:data>     <!-- datasource --> 
+					<x:template>#id#: #value#</x:template>
+				   <x:data>
 						<li id="9998">Item 1</li>
 						<li>Item 2</li>
 				   </x:data>
 				</x:list>
 			</x:cols>
-			My footer
+			<x:template>My footer</x:template>
 		</x:rows>
 	</x:ui>
 ~~~
 
-{{sample 23_init_from_html/02_xml_markup.html}}
+{{sample 23_markup/02_xhtml/01_init.html}}
 
 ####Comments: 
 
@@ -217,7 +217,7 @@ Empty Namespace
 </ui>
 ~~~
 
-{{sample 23_init_from_html/12_xml_without_namespace.html}}
+{{sample 23_markup/03_xml/02_without_namespace.html}}
 
 {{snippet
 Custom Namespace
@@ -230,7 +230,7 @@ Custom Namespace
 </wx:ui>
 ~~~
 
-{{sample 23_init_from_html/11_xml_customt_namespace.html}}
+{{sample 23_markup/03_xml/01_custom_namespace.html}}
 
 Some UI components that multiple items defined by an array in their constructor, require the following XML:
 
@@ -272,7 +272,8 @@ Or:
 </x:headerlayout>
 ~~~
 
-{{sample 23_init_from_html/07_xml_accordion.html}}
+{{sample 23_markup/02_xhtml/05_accordion.html}}
+{{sample 23_markup/01_html/05_accordion.html}}
 
 ####Datatable
 
@@ -300,7 +301,7 @@ Datatable features an array of columns each of which has a set of congiguration 
 </x:datatable>
 ~~~
 
-{{sample 23_init_from_html/06_xml_file_layout.html}}
+{{sample 23_markup/02_xhtml/03_datatable.html}}
 
 ####Form {#XMLform}
 
@@ -313,7 +314,7 @@ If placed in layout rows or cols, form can be inited with standard HTML tags. **
 </x:form>
 ~~~
 
-{{sample 23_init_from_html/08_xml_form.html}}
+{{sample 23_markup/02_xhtml/07_fieldset.html}}
 
 HTMLform has its own [initing patterns](desktop/htmlform.md) including via webix markup class.
 
@@ -352,7 +353,7 @@ During XML init you needn't define IDs - just place necessary conponents within 
 </x:tabview>
 ~~~
 
-{{sample 23_init_from_html/09_xml_tabbar.html}}
+{{sample 23_markup/02_xhtml/06_tabbar.html}}
 
 Related Articles: 
 - [HTMLform](desktop/htmlform.md)

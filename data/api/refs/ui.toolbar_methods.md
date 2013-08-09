@@ -21,6 +21,7 @@ Methods
 - api/link/ui.toolbar_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.toolbar_getparentview.md - returns the parent view of the component
 - api/link/ui.toolbar_getscrollstate.md - returns the scroll position
+- api/link/ui.toolbar_gettopparentview.md - returns top parent view
 - api/link/ui.toolbar_getvalues.md - derives input values from the form
 - api/link/ui.toolbar_hasevent.md - checks whether the component has the specified event
 - api/link/ui.toolbar_hide.md - hides the view
@@ -65,6 +66,7 @@ Methods
 - api/link/ui.toolbar_getnode.md
 - api/link/ui.toolbar_getparentview.md
 - api/link/ui.toolbar_getscrollstate.md
+- api/link/ui.toolbar_gettopparentview.md
 - api/link/ui.toolbar_getvalues.md
 - api/link/ui.toolbar_hasevent.md
 - api/link/ui.toolbar_hide.md

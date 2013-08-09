@@ -5,7 +5,7 @@ Tree provides a set of methods for manipulating the node value and retrieving th
 
 Getting the node object/value
 -----------------------------
-To get the node object, you should use method api/link/ui.tree_getItem.md:
+To get the node object, you should use method api/link/ui.tree_getitem.md:
 
 {{snippet
 Getting the node object
@@ -70,7 +70,7 @@ tree.refresh();
 //or
 tree.updateItem(node_id, nodeObj);
 ~~~
-Methods api/link/ui.tree_refresh.md and    api/link/ui.tree_updateItem.md lead to one and the same result and don't have any specificity.
+Methods api/link/ui.tree_refresh.md and    api/link/ui.tree_updateitem.md lead to one and the same result and don't have any specificity.
 
 
 Getting the node index
