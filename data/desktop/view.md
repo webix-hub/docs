@@ -76,7 +76,7 @@ webix.ui({
 
 ##Basic View Methods
 
-###1 . getParentView();
+###1 . getParentView()
 
 The method is called from any view and is used to get the parent object of this view. 
 
@@ -106,7 +106,7 @@ var bar_id = $$("my_layout").getChildViews()[0].id; //returns toolbar ID
 var but_id = $$("my_toolbar").getChildViews()[1].id //returns the ID of the 2nd button
 ~~~
 
-###3 . getIndex(); 
+###3 . getIndex() 
 
 Like the above mentioned one, this method works with views containing other views that are stored in an array ( the property may be called *cols, rows, elements, options* depending on the component).
 
@@ -138,7 +138,7 @@ webix.ui({
 var box = $$("my_bar").getNode; 
 ~~~
 
-###5 . getInputNode();
+###5 . getInputNode()
 
 The method works with form controls  defined by **input** tag in HTML, the simplest being [text](desktop/controls.md#text). It returns DOM element related to the input with all its properties. 
 

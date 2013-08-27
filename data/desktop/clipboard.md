@@ -14,6 +14,9 @@ webix.ui({
     clipboard: true,
 });
 ~~~
+{{sample
+	05_list/09_copypaste.html
+}}
 
 In 3 components this mixin is already included. These components are:
 

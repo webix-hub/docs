@@ -15,18 +15,18 @@ Initilially, either the first tab is visible, or the one you've set to be "selec
 
 ~~~js
 webix.ui({
- rows:[
-	{view:"segmented", id:'tabbar', selected:"listView", multiview:true, options:[
-		{ value: 'List',  id:'listView'},
-		{ value: 'Form',  id:'formView'},
-		{ value: 'About', id:'aboutView'}]
-    },
-    {cells:[
-		{id:"listView",  view:"list"},
-		{id:"formView",  view:"form"},
-		{id:"aboutView", view:"template"}]
-    }
- ]               
+	rows:[
+	  {view:"segmented", id:'tabbar', selected:"listView", multiview:true, options:[
+			{ value: 'List',  id:'listView'},
+			{ value: 'Form',  id:'formView'},
+			{ value: 'About', id:'aboutView'}]
+      },
+      {cells:[
+			{id:"listView",  view:"list"},
+			{id:"formView",  view:"form"},
+			{id:"aboutView", view:"template"}]
+      }
+ 	]               
 });
 ~~~
 
@@ -40,7 +40,7 @@ History api/history_track.md method allows remembering the currently opened tab 
 - **url** - **ID** of a multiview **cell** that forms the hashbang url that is loaded after page refresh. By default it's the ID of the currently opened cell. 
 
 ~~~js
-	webix.history.track('tabbar');
+webix.history.track('tabbar');
 ~~~
 
 Each time you click the tab to switch for another cell, a **hashbang URL** is generated on the base of **cell ID** (under *http://current_url.html#!/cellID* pattern) and memorized. You'll see it in the url bar of your browser. 
@@ -59,7 +59,7 @@ Now, each time, you refresh the page, the url wil be form according to the info 
 
 In addition, there exists a possiblity to programmatically add a new state to history with the dedicated **push()** method. Its argumnts are: 
 
-- **view - ID of related switching control;
+- **view** - ID of related switching control;
 - **url** -	ID of the cell that will form in-page url for new state (if you pass *cellID*, the url will be formed as *#!/cellID*);
 - **value** - any related data in the form of a JSON object. If will be stored in the **state** object. 
 

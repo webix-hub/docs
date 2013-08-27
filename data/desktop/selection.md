@@ -69,12 +69,12 @@ Datatable and treetable feature more selection modes that are described in the [
 
 You can select items with the help of selection methods triggered by various events;
 
-- **select**( *IDs, [non_modal, continue]* ); function selects the specified items. Check [selection API](api/selectionmodel_select.md) for details.
+- **select**( *IDs, [non_modal, continue]* ) function selects the specified items. Check [selection API](api/selectionmodel_select.md) for details.
 
 If you don't pass any parameter into the function, all items will be selected. 
 
-You can select the first and the last item from the dataset without specifying their IDs. In this case, you should additionally apply **first();** and 
-**last();** methods to the component. 
+You can select the first and the last item from the dataset without specifying their IDs. In this case, you should additionally apply **first()** and 
+**last()** methods to the component. 
 
 ~~~js
 $$('datalist').select($$('datalist').getFirstId();) //selects the first data item in the list
@@ -84,7 +84,7 @@ $$('dataview').select([2,3,4]); the items with IDs equalling to 2, 3 and 4
 ~~~
 
 - **selectAll()** function equalls to select(); with no parameters and highlights all the items at once;
-- **unselect()** and **unselectAll()**; - the functions work  similar to the above mentioned and deselect items according to the same principles;
+- **unselect()** and **unselectAll()** - the functions work  similar to the above mentioned and deselect items according to the same principles;
 - **isSelected(int)** - the function checks whether the item with this ID is selected. Returns *true* or *false*;
 - **getSelectedId()**  - the function doesn't take any parameters. It returns the ID of a selected item or an array of IDs in case of multiselect mode. 
 

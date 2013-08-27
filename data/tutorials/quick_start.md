@@ -1,4 +1,4 @@
-Quick start guide
+Quick Start Guide
 =================
 
 What do you need to start working with **webix UI** library? There's nothing better than practise! So let's create some simple design. 

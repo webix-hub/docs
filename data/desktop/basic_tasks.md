@@ -111,7 +111,7 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
     <tr>
         <td id="internet" class='topics' onclick="displaySubList(this.id)">
             <h4>
-                Web and internet
+                Web and Internet
             </h4>
             <ul id="internet_sublist">
                     <li>desktop/offline.md</li>
@@ -135,7 +135,7 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
     <tr>
         <td id="thirdparty" class='topics' onclick="displaySubList(this.id)">
             <h4>
-                Third party integration
+                Third Party Integration
             </h4>
             <ul id="thirdparty_sublist">
                     <li>desktop/text_editors.md</li>

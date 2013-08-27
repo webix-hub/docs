@@ -61,7 +61,7 @@ webix.ui({
 		<td style="text-align:center;"><img src="desktop/select_editor.png"/></td>
 	</tr>
     <tr>
-		<td> <code>editor:"combo"</code> </br><a href="desktop/editing.md#combo">Learn more</a></td>
+		<td> <code>editor:"combo"</code> </br></td>
 		<td style="text-align:center;"><img src="desktop/combo_editor.png"/></td>
 	</tr>
     <tr>
@@ -86,9 +86,6 @@ webix.ui({
 	</tr>
 	</tbody>
 </table>
-
-
-<img src="desktop/editors.png">
 
 {{sample 98_docs/editors.html }}
 

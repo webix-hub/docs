@@ -44,7 +44,7 @@ There exists a possibility to specify [common configuration](desktop/common_conf
 
 ###Dividing form into sections
 
-Section within a form are set in the following ways:
+Sections within a form are set in the following ways:
 
 - Adding **headers** with **section** type before control arrays;
 - Dividing a form into **fieldsets**.

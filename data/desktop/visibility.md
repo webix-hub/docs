@@ -5,18 +5,18 @@ By default, all ui-related components except for [window](desktop/window.md) and
 
 ##Show() and Hide() methods
 
-To show and hide any component in layout you should call **show();** and **hide()**; methods respectively:
+To show and hide any component in layout you should call **show()** and **hide()** methods respectively:
 
 ~~~js
 $$("my_window").show();
 $$("my_button").hide();
 ~~~
 {{note
-The alternative to the **hide()** is a **hidden:true** parameter that is included into the component constructor. The component can be shown later with the **show();** method. 
+The alternative to the **hide()** is a **hidden:true** parameter that is included into the component constructor. The component can be shown later with the **show()** method. 
 }}
 
 When manipulating visibility of components it seems useful to know whether the component is visible on the page at the moment. This can be checked 
-with the help of **isVisible();** method that return true or false depending on the component's state.
+with the help of **isVisible()** method that return true or false depending on the component's state.
 
 ~~~js
 $$("my_window").isVisible();

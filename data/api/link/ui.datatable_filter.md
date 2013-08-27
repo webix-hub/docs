@@ -1,27 +1,41 @@
-@link: api/datastore_filter.md
+filter
+=============
+
+
+@short:
+	filters the component
 
 @params:
-- callback		function		the callback function
+- text		template,function		a template of filtered value or function
+- value		string		the filtering mask
+- preserve	boolean		if set to <i>true</i>, each next filtering criteria will be applied to the already filtered list	
 
-@callback:
--obj    object    a data object
+	
 
 @example:
-//filters by the 'text' data property. Presents just items with value "abc".
+//filters all fields with 'abc' in the 'text' property
+//using a template
+list.filter('#text#',"abc")
 
-dtable.filter(function(obj){
+//using a function
+list.filter(function(obj){
 	return obj.text.toString().indexOf("abc") != -1;
 });
 
+@template:	api_method
+@defined:	DataStore	
 @descr:
-### Alternative syntax
 
-    
-~~~js
-dtable.filter('#text#',"abc");
-~~~
 
-where
+@related:
+	datatable/filtering.md
+    datatree/filtering.md
+    desktop/filter_sort.md
 
-- <i>'#text#'</i> - the template of data properties that need filtering. 
-- <i>"abc"</i> - the filtering mask.
+@relatedapi:
+	
+
+@relatedsample:
+    08_chart/08_dynamic/04_filtering.html
+    15_datatable/03_filtering/05_custom.html
+    05_list/10_filtering.html

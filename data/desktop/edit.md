@@ -29,17 +29,17 @@ By default, only [datatable](datatable/index.md) and [treetable](desktop/treetab
 
 ~~~js
 webix.ready(function(){
-		webix.ui({
-		view:"datatable",
-		columns:[
-			{ id:"rank", editor:"text", header:""},
-			{ ...},
-			{ ...}
-		],	
-		editable:true,
-		editaction:"click",
-		data: small_wide_film_set //data from external js-file
-			});
+	webix.ui({
+	view:"datatable",
+	columns:[
+		{ id:"rank", editor:"text", header:""},
+		{ ...},
+		{ ...}
+	],	
+	editable:true,
+	editaction:"click",
+	data: small_wide_film_set //data from external js-file
+});
 ~~~
 
 {{sample 15_datatable/04_editing/03_multiple_editors.html }}
@@ -52,23 +52,23 @@ above mentioned functionality.
 For instance, to edit ui-related [list](desktop/list.md), create an editable protptyoe for it first and give it name to your taste:
 
 ~~~js
-		webix.protoUI({
-		name:"editlist" // or "edittree", "dataview-edit" in case you work with them
-		}, webix.EditAbility, webix.ui.list);
+webix.protoUI({
+	name:"editlist" // or "edittree", "dataview-edit" in case you work with them
+}, webix.EditAbility, webix.ui.list);
 ~~~
 
 And proceed with the list object initialization. Note that view is called "editlist" value instead of "list," since it's the name of the newly create object from the code above:  
 
 ~~~js
 webix.ui({
-		container:"listA",
-		view:"editlist",
-		template:"#rank#. #title#",
-		editable:true,
-		editor:"text",
-		editValue:"title", 
-		data:big_film_set
-			});
+	container:"listA",
+	view:"editlist",
+	template:"#rank#. #title#",
+	editable:true,
+	editor:"text",
+	editValue:"title", 
+	data:big_film_set
+});
 ~~~
 
 {{sample 05_list/05_editable.html }}
@@ -95,8 +95,8 @@ See the [datatable API](api/link/ui.datatable_edit.md) for details.
 
 ~~~js
 datatable.edit({
-        row:2,
-        column:"title"
+	row:2,
+	column:"title"
 });
 ~~~
 

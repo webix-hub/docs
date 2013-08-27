@@ -14,10 +14,6 @@ tree.attachEvent("onPaste", function(text) {
 		webix.message("Node is pasted: " + text);
 });
 
-
-$$("list3").attachEvent("onPaste", function(text) {
-				text = text.split(" , ");
-
 @template:	api_event
 @descr:
 

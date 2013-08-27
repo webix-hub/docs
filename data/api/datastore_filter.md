@@ -8,6 +8,7 @@ filter
 @params:
 - text		template,function		a template of filtered value or function
 - value		string		the filtering mask
+- preserve	boolean		if set to <i>true</i>, each next filtering criteria will be applied to the already filtered list	
 
 	
 
