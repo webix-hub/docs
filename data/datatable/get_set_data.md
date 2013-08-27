@@ -6,7 +6,7 @@ API of DataTable allows you to retrieve existing values of cells or set new ones
 Getting the value
 ---------------------
 
-To get the record object, you should use method [item()](api/link/ui.datatable_getItem.md):
+To get the record object, you should use method [item()](api/link/ui.datatable_getitem.md):
 
 {{snippet
 Getting the record object
@@ -44,7 +44,7 @@ grid.refresh();
 grid.updateItem(row_id, record);
 ~~~
 
-Methods [refresh()](api/link/ui.datatable_refresh.md) and [update()](api/link/ui.datatable_updateItem.md) lead to one and the same result and don't have any specificity.
+Methods [refresh()](api/link/ui.datatable_refresh.md) and [update()](api/link/ui.datatable_updateitem.md) lead to one and the same result and don't have any specificity.
 
 
 Getting values of cells range 

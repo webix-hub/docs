@@ -36,6 +36,7 @@ Methods
 - api/link/ui.scrollview_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.scrollview_getparentview.md - returns the parent view of the component
 - api/link/ui.scrollview_getscrollstate.md - returns the scroll position
+- api/link/ui.scrollview_gettopparentview.md - returns top parent view
 - api/link/ui.scrollview_hide.md - hides the view
 - api/link/ui.scrollview_isenabled.md - checks whether the view is enabled
 - api/link/ui.scrollview_isvisible.md - checks whether the view is visible

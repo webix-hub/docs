@@ -21,14 +21,14 @@ $$("calendar1").getValue(); // -> Mon Apr 30 2012 00:00:00 GMT+0300 (EEST)
 
 @template:	api_method
 @relatedapi:
-	api/ui.calendar_getSelectedDate.md
-    api/ui.calendar_getvisibleDate.md
+	api/ui.calendar_getselecteddate.md
+    api/ui.calendar_getvisibledate.md
     api/ui.calendar_setvalue.md
     
 @defined:	ui.calendar	
 @related: 
 	desktop/calendar.md
 @descr:
-The method is analogous to api/ui.calendar_getSelectedDate.md.
+The method is analogous to api/ui.calendar_getselecteddate.md.
 
 

@@ -43,6 +43,8 @@ Methods
 - api/link/ui.datepicker_getinputnode.md - gets the HTML element related to the component
 - api/link/ui.datepicker_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.datepicker_getparentview.md - returns the parent view of the component
+- api/ui.datepicker_getpopup.md - return popup element of the input
+- api/link/ui.datepicker_gettopparentview.md - returns top parent view
 - api/link/ui.datepicker_getvalue.md - returns the current value of the control
 - api/link/ui.datepicker_hasevent.md - checks whether the component has the specified event
 - api/link/ui.datepicker_hide.md - hides the view

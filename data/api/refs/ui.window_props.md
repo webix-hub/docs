@@ -12,7 +12,7 @@ Properties
 - api/link/ui.window_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.window_disabled_config.md - disables item
 - api/link/ui.window_gravity_config.md - sets the view gravity (1 by default)
-- api/ui.window_head_config.md - sets header view
+- api/ui.window_head_config.md - sets the view header
 - api/ui.window_headheight_config.md - defines the header height (43 by default)
 - api/link/ui.window_height_config.md - sets the height of the component
 - api/link/ui.window_hidden_config.md - defines whether the view will be hidden initially

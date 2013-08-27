@@ -21,7 +21,7 @@ some.attachEvent("onStoreUpdated", function(id, obj, mode){
 
 @relatedapi:
 	api/datastore_ondataupdate_event.md
-    api/datastore_updateItem.md
+    api/datastore_updateitem.md
 @related: 
 	desktop/update.md
     datatree/nodes_manipulations.md#updatingthetree

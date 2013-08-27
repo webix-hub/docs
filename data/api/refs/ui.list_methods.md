@@ -38,6 +38,7 @@ Methods
 - api/link/ui.list_getscrollstate.md - returns the scroll position
 - api/link/ui.list_getselectedid.md - returns the id(s) of the selected item(s)
 - api/link/ui.list_getselecteditem.md - returns selected object
+- api/link/ui.list_gettopparentview.md - returns top parent view
 - api/ui.list_getvisiblecount.md - returns the number of items that can be seen with the current view height
 - api/link/ui.list_hascss.md - checks if item has specific css class
 - api/link/ui.list_hasevent.md - checks whether the component has the specified event
@@ -113,6 +114,7 @@ of the component
 - api/link/ui.list_getscrollstate.md
 - api/link/ui.list_getselectedid.md
 - api/link/ui.list_getselecteditem.md
+- api/link/ui.list_gettopparentview.md
 - api/ui.list_getvisiblecount.md
 - api/link/ui.list_hascss.md
 - api/link/ui.list_hasevent.md

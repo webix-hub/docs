@@ -30,6 +30,7 @@ Methods
 - api/link/ui.chart_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.chart_getparentview.md - returns the parent view of the component
 - api/link/ui.chart_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
+- api/link/ui.chart_gettopparentview.md - returns top parent view
 - api/link/ui.chart_group.md - groups data by the specified data property
 - api/link/ui.chart_hasevent.md - checks whether the component has the specified event
 - api/link/ui.chart_hide.md - hides the view
@@ -83,6 +84,7 @@ of the component
 - api/link/ui.chart_getnode.md
 - api/link/ui.chart_getparentview.md
 - api/link/ui.chart_getprevid.md
+- api/link/ui.chart_gettopparentview.md
 - api/link/ui.chart_group.md
 - api/link/ui.chart_hasevent.md
 - api/link/ui.chart_hide.md

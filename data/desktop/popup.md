@@ -54,7 +54,7 @@ webix.ui({
 	});
 ~~~
 
-{{sample 98_docs/Window_offset.html}}
+{{sample 98_docs/window_offset.html}}
 
 To place the popup in the center of the screen, include **position** property into the component's constructor and set its value to **"center"**:
 

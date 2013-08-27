@@ -19,6 +19,7 @@ Methods
 - api/link/ui.textarea_getinputnode.md - gets the HTML element related to the component
 - api/link/ui.textarea_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.textarea_getparentview.md - returns the parent view of the component
+- api/link/ui.textarea_gettopparentview.md - returns top parent view
 - api/link/ui.textarea_getvalue.md - returns the current value of the control
 - api/link/ui.textarea_hasevent.md - checks whether the component has the specified event
 - api/link/ui.textarea_hide.md - hides the view
@@ -51,6 +52,7 @@ Methods
 - api/link/ui.textarea_getinputnode.md
 - api/link/ui.textarea_getnode.md
 - api/link/ui.textarea_getparentview.md
+- api/link/ui.textarea_gettopparentview.md
 - api/link/ui.textarea_getvalue.md
 - api/link/ui.textarea_hasevent.md
 - api/link/ui.textarea_hide.md

@@ -124,7 +124,7 @@ webix.ready(function(){
 
 Regardless of the initialization pattern, all the commom HTMLform functions work fine: 
 
-{{sample 23_init_from_html/03_html_form.html }}
+{{sample 23_markup/01_html/02_form.html  }}
 
 ####4. Initialization from an external file loaded by [Ajax](helpers/ajax_operations.md). 
 

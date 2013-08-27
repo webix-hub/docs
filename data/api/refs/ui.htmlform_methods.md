@@ -20,6 +20,7 @@ Methods
 - api/link/ui.htmlform_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.htmlform_getparentview.md - returns the parent view of the component
 - api/link/ui.htmlform_getscrollstate.md - returns the scroll position
+- api/link/ui.htmlform_gettopparentview.md - returns top parent view
 - api/link/ui.htmlform_getvalues.md - derives input values from the form
 - api/link/ui.htmlform_hasevent.md - checks whether the component has the specified event
 - api/link/ui.htmlform_hide.md - hides the view
@@ -60,6 +61,7 @@ Methods
 - api/link/ui.htmlform_getnode.md
 - api/link/ui.htmlform_getparentview.md
 - api/link/ui.htmlform_getscrollstate.md
+- api/link/ui.htmlform_gettopparentview.md
 - api/link/ui.htmlform_getvalues.md
 - api/link/ui.htmlform_hasevent.md
 - api/link/ui.htmlform_hide.md

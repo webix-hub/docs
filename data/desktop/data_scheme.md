@@ -26,7 +26,7 @@ list1.add({}); //adds { name:"Unknown", age:16} record
 In addition, there are 6 special keys you can use within the property:
 
 - **$init** - runs when data is initially being loaded to the component + while reloading data for new DataStore items + when the [add](api/datastore_add.md) method is called;
-- **$update** - runs for existing items while reloading data (for new items **$init** runs) + when the [update](api/datastore_updateItem.md) method is called;
+- **$update** - runs for existing items while reloading data (for new items **$init** runs) + when the [update](api/datastore_updateitem.md) method is called;
 - **$save** - runs when saving to server is triggered in any of the ways;
 - **$change** - runs each time data in the table is changed (i.e. loaded,added,updated,deleted). Note, the key runs when either the **$init** or the **$update** key runs; 
 - **$serialize** - runs when the [serialize](api/datastore_serialize.md) method is called;
@@ -80,7 +80,7 @@ And called:
 
 - for each data item, while initial data loading;
 - for updated items, while data reloading;
-- for the specified item, when the [update](api/datastore_updateItem.md) method is called.
+- for the specified item, when the [update](api/datastore_updateitem.md) method is called.
 
 ####Usage example
 

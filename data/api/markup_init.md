@@ -14,7 +14,8 @@ webix.markup.init();
 
 @template:	api_method
 @relatedsample:
-	23_init_from_html/02_xml_markup.html
+	23_markup/01_html/01_init.html
+	23_markup/02_xhtml/01_init.html
 @relatedapi:
 	api/markup_parse.md
 @related:
@@ -26,12 +27,13 @@ By default, markup is taken from **document.body** node while the target either 
 Data can be as well taken from separate file or come as server response:
 
 ~~~js
-webix.ajax("data/config.xml", function(text, data){
-		webix.markup.init(data.rawxml(), document.body)
-	})
+	webix.ajax("data/config.xml", function(text, data){
+		var config = webix.markup.parse(text, "xml");
+		webix.ui(config);
+	});
 ~~~
 
-{{sample 23_init_from_html/05_xml_file.html}}
+{{sample 23_markup/02_xhtml/04_by_ajax.html}}
 
 
 

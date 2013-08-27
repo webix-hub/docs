@@ -22,10 +22,10 @@ $$('calendar1').setValue(new Date(2012,3,30));
 @template:	api_method
 @relatedapi:
 	api/ui.calendar_getvalue.md
-	api/ui.calendar_selectDate.md
+	api/ui.calendar_selectdate.md
 @related: 
 	desktop/calendar.md
 @defined:	ui.calendar	
 @descr:
-The method is analogous to  api/ui.calendar_selectDate.md.
+The method is analogous to  api/ui.calendar_selectdate.md.
 

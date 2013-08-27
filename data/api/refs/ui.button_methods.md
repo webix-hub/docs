@@ -19,6 +19,7 @@ Methods
 - api/ui.button_getinputnode.md - gets the HTML element related to the component
 - api/link/ui.button_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.button_getparentview.md - returns the parent view of the component
+- api/link/ui.button_gettopparentview.md - returns top parent view
 - api/ui.button_getvalue.md - returns the current value of the control
 - api/link/ui.button_hasevent.md - checks whether the component has the specified event
 - api/link/ui.button_hide.md - hides the view
@@ -51,6 +52,7 @@ Methods
 - api/ui.button_getinputnode.md
 - api/link/ui.button_getnode.md
 - api/link/ui.button_getparentview.md
+- api/link/ui.button_gettopparentview.md
 - api/ui.button_getvalue.md
 - api/link/ui.button_hasevent.md
 - api/link/ui.button_hide.md

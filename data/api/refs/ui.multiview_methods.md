@@ -19,6 +19,8 @@ Methods
 - api/link/ui.multiview_getchildviews.md - returns child views of the calling component
 - api/link/ui.multiview_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.multiview_getparentview.md - returns the parent view of the component
+- api/link/ui.multiview_gettopparentview.md - returns top parent view
+- api/ui.multiview_getvalue.md - returns id of curren visible view
 - api/link/ui.multiview_hasevent.md - checks whether the component has the specified event
 - api/link/ui.multiview_hide.md - hides the view
 - api/link/ui.multiview_index.md - returns the cell index in the layout collection
@@ -29,6 +31,7 @@ Methods
 - api/link/ui.multiview_removeview.md - removes view from multiview or layout
 - api/link/ui.multiview_resize.md - adjusts the view to a new size
 - api/link/ui.multiview_resizechildren.md - resizes all children of the calling component
+- api/ui.multiview_setvalue.md - defines which view need to be shown in the multiview
 - api/link/ui.multiview_show.md - makes the component visible
 - api/link/ui.multiview_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
 - api/link/ui.multiview_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
@@ -51,6 +54,8 @@ Methods
 - api/link/ui.multiview_getchildviews.md
 - api/link/ui.multiview_getnode.md
 - api/link/ui.multiview_getparentview.md
+- api/link/ui.multiview_gettopparentview.md
+- api/ui.multiview_getvalue.md
 - api/link/ui.multiview_hasevent.md
 - api/link/ui.multiview_hide.md
 - api/link/ui.multiview_index.md
@@ -61,6 +66,7 @@ Methods
 - api/link/ui.multiview_removeview.md
 - api/link/ui.multiview_resize.md
 - api/link/ui.multiview_resizechildren.md
+- api/ui.multiview_setvalue.md
 - api/link/ui.multiview_show.md
 - api/link/ui.multiview_showbatch.md
 - api/link/ui.multiview_unblockevent.md

@@ -35,6 +35,7 @@ Methods
 - api/ui.baseview_getchildviews.md - returns child views of the calling component
 - api/ui.baseview_getnode.md - returns the main HTML container for the calling object
 - api/ui.baseview_getparentview.md - returns the parent view of the component
+- api/ui.baseview_gettopparentview.md - returns top parent view
 - api/ui.baseview_hide.md - hides the view
 - api/ui.baseview_isenabled.md - checks whether the view is enabled
 - api/ui.baseview_isvisible.md - checks whether the view is visible

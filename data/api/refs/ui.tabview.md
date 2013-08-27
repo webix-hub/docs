@@ -39,6 +39,7 @@ Methods
 - api/link/ui.tabview_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.tabview_getparentview.md - returns the parent view of the component
 - api/ui.tabview_gettabbar.md - returns webix ui for Tabbar in tabview
+- api/link/ui.tabview_gettopparentview.md - returns top parent view
 - api/ui.tabview_getvalue.md - returns the current value of the control
 - api/link/ui.tabview_hide.md - hides the view
 - api/link/ui.tabview_index.md - returns the cell index in the layout collection

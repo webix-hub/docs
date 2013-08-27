@@ -156,7 +156,7 @@ columns:[
 You can get the same text input specifying just **template** without using the **editor** attribute. So what is the matter to use the **editor** attribute? 
 
 If you specify the **editor:"inline-text"** attribute DataTable will provide a special processing treat for the editor while editing: invoking edit-related events 
-(api/link/ui.datatable_onBeforeEditStart_event.md, api/link/ui.datatable_onBeforeEditstop_event.md etc.), support for the 'Tab' key navigation and so on.<br>
+(api/link/ui.datatable_onbeforeeditstart_event.md, api/link/ui.datatable_onbeforeeditstop_event.md etc.), support for the 'Tab' key navigation and so on.<br>
 If you don't specify the **editor** attribute you should provide the processing logic for the editor on your own. 
 
 
@@ -260,7 +260,7 @@ webix.UIManager.addHotKey("enter", function(view){
 **To open editors on some action** you should do the following:
 
 - set the  api/link/ui.datatable_editaction_config.md property to value 'custom'.
-- specify the action (through the related event) and define the processing logic (in the event handler function). You can do this with the help of the api/link/ui.datatable_on_config.md parameter or the api/link/ui.datatable_attachEvent.md
+- specify the action (through the related event) and define the processing logic (in the event handler function). You can do this with the help of the api/link/ui.datatable_on_config.md parameter or the api/link/ui.datatable_attachevent.md
 method.
 
 {{snippet
@@ -288,8 +288,8 @@ To open for editing all cells of the specified row/column make the following:
 
 1. Set the  api/link/ui.datatable_editaction_config.md property to value 'custom'.
 2. Use the api/link/ui.datatable_on_config.md parameter to specify the action and define the processing logic:
-	* as an event to handle - api/link/ui.datatable_onItemClick_event.md.
-    * api/ui.datatable_editRow.md, api/ui.datatable_editColumn.md  enables the edit mode for the specified row/column (opens all editors)
+	* as an event to handle - api/link/ui.datatable_onitemclick_event.md.
+    * api/ui.datatable_editrow.md, api/ui.datatable_editcolumn.md  enables the edit mode for the specified row/column (opens all editors)
    
    
 {{snippet

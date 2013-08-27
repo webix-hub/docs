@@ -64,6 +64,7 @@ Methods
 - api/ui.datatable_getselectedid.md - returns the selected cells
 - api/ui.datatable_getselection.md - returns the ids of the selected cell(s)
 - api/link/ui.datatable_getstate.md - returns the current state of the view
+- api/link/ui.datatable_gettopparentview.md - returns top parent view
 - api/ui.datatable_getvisiblecount.md - returns count of visible rows
 - api/link/ui.datatable_group.md - groups data by the specified data property
 - api/link/ui.datatable_hascss.md - checks if item has specific css class
@@ -186,6 +187,7 @@ of the component
 - api/ui.datatable_getselectedid.md
 - api/ui.datatable_getselection.md
 - api/link/ui.datatable_getstate.md
+- api/link/ui.datatable_gettopparentview.md
 - api/ui.datatable_getvisiblecount.md
 - api/link/ui.datatable_group.md
 - api/link/ui.datatable_hascss.md

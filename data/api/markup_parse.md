@@ -2,27 +2,25 @@ parse
 =============
 
 
-@short: inits a component defined by markup into Webix layout
+@short: inits a component defined by markup
 
 @params:
-- node	string	datasource (by default it is document body)
+- data	mixed	data for parsing (html or xml)
+- datatype		string		data type - "html" or "xml"
 
 @example:
 webix.ui(
-	webix.markup.parse(data.rawxml()),
-	$$("placeholder"))
-});
+	webix.markup.parse(text, "xml")
+);
 
 @relatedsample:
-	23_init_from_html/06_xml_file_layout.html
+	23_markup/02_xhtml/04_by_ajax.html
 @related:
 	desktop/html_init.md
 @relatedapi:
 	api/markup_init.md
 
 @template:	api_method
-@descr:
 
-Unlike [init()](api/markup_init.md), parse method doesn't have a target, so the target is set in **webix.ui()** constructor as the view with *"placeholder"* ID. The newly created component replaced this view. 
 
 

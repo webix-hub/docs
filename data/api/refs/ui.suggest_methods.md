@@ -22,6 +22,7 @@ Methods
 - api/ui.suggest_getmastervalue.md - returns current value of master control
 - api/link/ui.suggest_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.suggest_getparentview.md - returns the parent view of the component
+- api/link/ui.suggest_gettopparentview.md - returns top parent view
 - api/link/ui.suggest_hasevent.md - checks whether the component has the specified event
 - api/link/ui.suggest_hide.md - hides the view
 - api/link/ui.suggest_isenabled.md - checks whether the view is enabled
@@ -56,6 +57,7 @@ Methods
 - api/ui.suggest_getmastervalue.md
 - api/link/ui.suggest_getnode.md
 - api/link/ui.suggest_getparentview.md
+- api/link/ui.suggest_gettopparentview.md
 - api/link/ui.suggest_hasevent.md
 - api/link/ui.suggest_hide.md
 - api/link/ui.suggest_isenabled.md

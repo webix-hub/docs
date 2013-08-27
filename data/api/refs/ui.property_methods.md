@@ -27,6 +27,7 @@ Methods
 - api/link/ui.property_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.property_getparentview.md - returns the parent view of the component
 - api/link/ui.property_getscrollstate.md - returns the scroll position
+- api/link/ui.property_gettopparentview.md - returns top parent view
 - api/ui.property_getvalues.md - derives values from the property sheet (like with form)
 - api/link/ui.property_hasevent.md - checks whether the component has the specified event
 - api/link/ui.property_hide.md - hides the view
@@ -75,6 +76,7 @@ Methods
 - api/link/ui.property_getnode.md
 - api/link/ui.property_getparentview.md
 - api/link/ui.property_getscrollstate.md
+- api/link/ui.property_gettopparentview.md
 - api/ui.property_getvalues.md
 - api/link/ui.property_hasevent.md
 - api/link/ui.property_hide.md

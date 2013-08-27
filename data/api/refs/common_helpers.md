@@ -52,6 +52,7 @@ Methods
 - api/_wrap.md - 'wraps' a function around the original function
 - api/ui_delay.md - delays a view from initializing at runtime
 - api/ui_fullscreen.md - hides Safari address bar on iPhone/iPod
+- api/ui_hasmethod.md - check does view in question supports the method
 - api/ui_resize.md - resizes all the top-level UI elements
 - api/ui_zindex.md - returns the maximum used z-index
 }}

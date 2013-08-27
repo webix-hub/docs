@@ -68,6 +68,7 @@ Methods
 - api/link/ui.menu_getselecteditem.md - returns selected object
 - api/ui.menu_getsubmenu.md - gets the submenu object within menu component
 - api/ui.menu_gettopmenu.md - returns top menu object
+- api/link/ui.menu_gettopparentview.md - returns top parent view
 - api/link/ui.menu_getvisiblecount.md - returns the number of items that can be seen with the current view height
 - api/link/ui.menu_hascss.md - checks if item has specific css class
 - api/link/ui.menu_hasevent.md - checks whether the component has the specified event

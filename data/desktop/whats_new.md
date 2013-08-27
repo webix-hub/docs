@@ -5,12 +5,9 @@ What's new & Roadmap
 What's new
 ----------
 
-### version 1.0
-
-- 20 components
-- 5 skins
-- jQuery and BackBone integration
-- works on both desktop and touch devices
+{{index
+- desktop/whats_new_1_0_1.md
+}}
 
 
 Roadmap
@@ -19,7 +16,7 @@ Roadmap
 
 ### version 1.1 
 
-- mobile oriented (small screen devices)  skin
+- skin for mobile devices (small screen touch devices)
 - offline support
 
 ### version 1.2

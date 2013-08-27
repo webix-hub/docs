@@ -13,6 +13,7 @@ Methods
 - api/link/ui.baselayout_getchildviews.md - returns child views of the calling component
 - api/link/ui.baselayout_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.baselayout_getparentview.md - returns the parent view of the component
+- api/link/ui.baselayout_gettopparentview.md - returns top parent view
 - api/link/ui.baselayout_hide.md - hides the view
 - api/ui.baselayout_index.md - returns the cell index in the layout collection
 - api/link/ui.baselayout_isenabled.md - checks whether the view is enabled
@@ -36,6 +37,7 @@ Methods
 - api/link/ui.baselayout_getchildviews.md
 - api/link/ui.baselayout_getnode.md
 - api/link/ui.baselayout_getparentview.md
+- api/link/ui.baselayout_gettopparentview.md
 - api/link/ui.baselayout_hide.md
 - api/ui.baselayout_index.md
 - api/link/ui.baselayout_isenabled.md

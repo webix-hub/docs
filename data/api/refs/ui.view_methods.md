@@ -12,6 +12,7 @@ Methods
 - api/link/ui.view_getchildviews.md - returns child views of the calling component
 - api/link/ui.view_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.view_getparentview.md - returns the parent view of the component
+- api/link/ui.view_gettopparentview.md - returns top parent view
 - api/link/ui.view_hide.md - hides the view
 - api/link/ui.view_isenabled.md - checks whether the view is enabled
 - api/link/ui.view_isvisible.md - checks whether the view is visible
@@ -29,6 +30,7 @@ Methods
 - api/link/ui.view_getchildviews.md
 - api/link/ui.view_getnode.md
 - api/link/ui.view_getparentview.md
+- api/link/ui.view_gettopparentview.md
 - api/link/ui.view_hide.md
 - api/link/ui.view_isenabled.md
 - api/link/ui.view_isvisible.md

@@ -92,7 +92,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 98_docs/Window_offset.html }}
+{{sample 98_docs/window_offset.html }}
 
 To get rid of absolute positioning, you can just place your window in the **center** of the page, which ensures that it will take an adequate position on any screen regardless of its size. 
 

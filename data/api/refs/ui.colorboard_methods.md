@@ -16,6 +16,7 @@ Methods
 - api/link/ui.colorboard_getchildviews.md - returns child views of the calling component
 - api/link/ui.colorboard_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.colorboard_getparentview.md - returns the parent view of the component
+- api/link/ui.colorboard_gettopparentview.md - returns top parent view
 - api/ui.colorboard_getvalue.md - returns the current value of the component
 - api/link/ui.colorboard_hasevent.md - checks whether the component has the specified event
 - api/link/ui.colorboard_hide.md - hides the view
@@ -44,6 +45,7 @@ Methods
 - api/link/ui.colorboard_getchildviews.md
 - api/link/ui.colorboard_getnode.md
 - api/link/ui.colorboard_getparentview.md
+- api/link/ui.colorboard_gettopparentview.md
 - api/ui.colorboard_getvalue.md
 - api/link/ui.colorboard_hasevent.md
 - api/link/ui.colorboard_hide.md

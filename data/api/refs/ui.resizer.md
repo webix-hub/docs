@@ -36,6 +36,7 @@ Methods
 - api/link/ui.resizer_getchildviews.md - returns child views of the calling component
 - api/link/ui.resizer_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.resizer_getparentview.md - returns the parent view of the component
+- api/link/ui.resizer_gettopparentview.md - returns top parent view
 - api/link/ui.resizer_hide.md - hides the view
 - api/link/ui.resizer_isenabled.md - checks whether the view is enabled
 - api/link/ui.resizer_isvisible.md - checks whether the view is visible
