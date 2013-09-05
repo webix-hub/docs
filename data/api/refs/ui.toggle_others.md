@@ -5,8 +5,10 @@ Others
 {{links
 - api/ui.toggle_$formelement_other.md - flag which instruct to process such view as form input
 - api/link/ui.toggle_$getsize_other.md - returns the current size of the component
+- api/link/ui.toggle_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.toggle_$height_other.md - current height of the view
 - api/link/ui.toggle_$setsize_other.md - sets the component size
+- api/link/ui.toggle_$setvalue_other.md - called each time when component need to set value in related html input
 - api/link/ui.toggle_$skin_other.md - method, which will be called when skin defined
 - api/link/ui.toggle_$view_other.md - reference to top html element of the view
 - api/link/ui.toggle_$width_other.md - current width of the view
@@ -19,8 +21,10 @@ Others
 @index:
 - api/ui.toggle_$formelement_other.md
 - api/link/ui.toggle_$getsize_other.md
+- api/link/ui.toggle_$getvalue_other.md
 - api/link/ui.toggle_$height_other.md
 - api/link/ui.toggle_$setsize_other.md
+- api/link/ui.toggle_$setvalue_other.md
 - api/link/ui.toggle_$skin_other.md
 - api/link/ui.toggle_$view_other.md
 - api/link/ui.toggle_$width_other.md

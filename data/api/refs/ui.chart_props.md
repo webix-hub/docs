@@ -32,6 +32,7 @@ Properties
 - api/ui.chart_legend_config.md - defines the chart legend
 - api/ui.chart_line_config.md - defines chart lines
 - api/ui.chart_linecolor_config.md - sets the color for strips dividing the pie sectors
+- api/ui.chart_linemaxlimit_config.md - chart max limit mode
 - api/link/ui.chart_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.chart_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.chart_minheight_config.md - sets the minimal height for the view
@@ -98,6 +99,7 @@ Properties
 - api/ui.chart_legend_config.md
 - api/ui.chart_line_config.md
 - api/ui.chart_linecolor_config.md
+- api/ui.chart_linemaxlimit_config.md
 - api/link/ui.chart_maxheight_config.md
 - api/link/ui.chart_maxwidth_config.md
 - api/link/ui.chart_minheight_config.md

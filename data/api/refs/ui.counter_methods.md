@@ -26,10 +26,13 @@ Methods
 - api/link/ui.counter_isenabled.md - checks whether the view is enabled
 - api/link/ui.counter_isvisible.md - checks whether the view is visible
 - api/link/ui.counter_mapevent.md - routes events from one object to another
+- api/ui.counter_next.md - set next value in counter input
+- api/ui.counter_prev.md - set previous value in counter input
 - api/link/ui.counter_refresh.md - repaints the component
 - api/link/ui.counter_render.md - renders the specified item or the whole component
 - api/link/ui.counter_resize.md - adjusts the view to a new size
 - api/link/ui.counter_setvalue.md - sets a new value for the component
+- api/ui.counter_shift.md - adds value to the counter
 - api/link/ui.counter_show.md - makes the component visible
 - api/link/ui.counter_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.counter_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
@@ -59,10 +62,13 @@ Methods
 - api/link/ui.counter_isenabled.md
 - api/link/ui.counter_isvisible.md
 - api/link/ui.counter_mapevent.md
+- api/ui.counter_next.md
+- api/ui.counter_prev.md
 - api/link/ui.counter_refresh.md
 - api/link/ui.counter_render.md
 - api/link/ui.counter_resize.md
 - api/link/ui.counter_setvalue.md
+- api/ui.counter_shift.md
 - api/link/ui.counter_show.md
 - api/link/ui.counter_sync.md
 - api/link/ui.counter_unblockevent.md
