@@ -101,7 +101,7 @@ grid.exportToPDF(null, {
 	id:true, 
 	columns:{ 
 		customer:{ 
-			template:webix.template("#customer#"),
+			template:"#customer#",
 			width:500
         }
     }
