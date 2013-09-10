@@ -3,18 +3,22 @@ DataProcessor
 
 Webix DataProcessor is a functional library that lets you to ‘communicate’ with server-side backend. It
 
-- resides on the client side;
-- handles data validation before saving into the database;
-- helps manipulate different aspects of data saving operations between client and server;
+- resides on the **client side** as a mixin of Webix library;
+- listens to **component events** (data adding, updating and removing) and passes **changed data** as well as **operation** performed (insert, update, delete) to the server script in **POST request**. 
+- handles **data validation** before passing to server script;
 - can be used for any UI [component](desktop/components.md) and [DataCollection](desktop/nonui_objects.md).
+
+{{note
+Without DataProcessor, you need to attach corresponding functions to component events (onAfterInsert/Update/Delete) to get data ready for processing.
+}}
 
 ##DataProcessor Initialization
 
 DataProcessor object can be inited in both long and short forms. Compulsory parameters include: 
 
-- **url**, a path to the php-script that links to [DataConnector](desktop/serverside.md) and handles data processing. It's the same script you use to load data from the database. 
-You can also use your own code for data saving;
-- **master**, a component you will use the dataProcessor with. 
+- **url**, a path to your own server script or connector-based one (described in [Server Side Connector](desktop/dataconnector.md)). In any case, it should be the script that enables data loading from the database 
+into the component;
+- **master**, a component or DataCollection you will use the dataProcessor with. 
 
 Other parameters (**mode**, validation **rules**, **on**, etc.) and optional and [can be found here](api/refs/dataprocessor.md#properties).
 
@@ -26,10 +30,11 @@ A short form connects the previously created dataProcessor to the component, but
 Short Form (master, url)
 }}
 ~~~js
-var dp = webix.dp("mylist", "some_script.php"); 
+webix.dp("mylist", "some_script.php"); 
 ~~~ 
 
-The **webix.dp()** method is also used for getting a DataProcessor object if changes of the default saving pattern are required: 
+The **webix.dp()** method is also used for **getting a DataProcessor object** of any component (if DataProcessor is inited for it). The object features a set of [methods and properties](api/refs/dataprocessor.md) 
+that can be used to change default processing pattern: 
 
 ~~~js
 var dp = webix.dp("mylist"); //returns dataprocessor object
@@ -45,7 +50,8 @@ Full Form
 ~~~js   
 dp = new webix.DataProcessor({
 	url: "data.php", 
-	master: $$('mylist')
+	master: $$('mylist'),
+    ..//optional properties
 });
 ~~~
 
@@ -53,7 +59,7 @@ dp = new webix.DataProcessor({
 
 ####Implicit Form via Save Property
 
-There exists an implicit way of DataProcessor initialization. You  define **url** as value of **save** property for the needed component (**master**): 
+There exists an implicit way of DataProcessor initialization. You define **url** (path to the necessary script) as value of **save** property for the needed component (**master**): 
 
 ~~~js
 webix.ui({
@@ -61,38 +67,70 @@ webix.ui({
     ..config..
     url: "data.php", //script that links to DataConnector and loads data
     save: "connector -> data.php" //the same script used for data processing
+    
+    or
+    url:"data_load.php", //your custom script for loading
+    save:"data_save.php" //you custom script for saving
 });
 ~~~
 
-DataProcessor features other properties as well as methods and events. [Check its API](api__refs__dataprocessor.html).
+Note that DataProcessor is inited by **save** property anyway, regardless of whether you use Webix Server Side connectors or not.
 
 ##Data Processing Operations
 
-DataProcessor interpretes client-side operations performed on data and automatically generates requests to update data in the database.
+DataProcessor interpretes client-side operations performed on each data item and defines the type of data action for it: 
 
 The default processing looks as follows: 
 
-- If **remove()** function is called within the component, the **DELETE** request is performed on the database record;
-- If **editing** is done, or **update()** function is called, the **UPDATE** request is generated;
-- If you **add()** data to the component, the **INSERT** request is performed to add this record to the datatabse table. 
+- If **remove()** function is called within the component, action type is **delete**;
+- If **editing** is done, or **update()** function is called, data action is of an **update** type;
+- If you **add()** data to the component, the data action is **insert**.
+
+This **data action** together with **data** of edited/added/deleted record is sent to server script the moment any editing operation is performed. Data action is passed as:
+
+- **!nativeeditor_status** parameter in case of implicit DataProcessor initing (with **save** property) and simultaneous usage of connector;
+
+~~~js
+view:"list",
+save:"connector->myscript.php" //link to Server Side Connector
+~~~
+- **webix_operation** parameter in all other cases.
+
+It looks like this: 
+
+~~~js
+id	7
+title	The Shaushenk Redemption
+webix_operation	delete
+~~~
+
+And other protocol with implicit Dataprocessor initing for connector-based scripts:
+
+~~~js
+1_!nativeeditor_status	update
+1_birthday	1965-08-19
+1_id	1
+~~~
+
+The moment Dataprocessor returns data, script execution begins (if other is not stated):
+
+- If serverside integration is enabled with a [Server Side Connector](desktop/dataconnector.md), the connector automatically **generates database request** corresponding to action type to treat changed data;
+- For [custom scripts](desktop/custom_serverside.md), you get **webix_operation** and other data via **POST** request and write corresponding queries for each type of operation.  
 
 ##Changing Default Processing Logic
 
-The event system for dataProcessor helps change the default processing on client-side thus setting other pattern for specified operation within necessary component. 
+The [event system](api__refs__dataprocessor_events.html) for dataProcessor helps change the default processing logic right on client-side. 
 
-The logic is changed with the help of the **action** object and its ID, operation and data properties: 
+To alter processing, you should manually attach processing function to the necessary DataProcessor event (onBeforeDelete, onBeforeInsert, onBeforeUpdate). For instance, set **update** action type on **onBeforeDelete** thus 
+making connector issue UPDATE request instead of DELETE.
 
-- **id** - the ID of the item being processed;
-- **operation** - the database operation being performed ("update", "delete" or "insert" by default). If you use a custom code, you can manipulate with your own operations and operation names;
-- **data**  - refers to data from the table being processed. Here we can get to table columns (action.data.column_name). 
- 
-This is how we change deletion from database for updating the record:
+This is how we change deletion from database by updating this record:
 
 ~~~js
 webix.ui({
 	view:"datatable", 
     id:"emp_grid",
-    ..// config,
+    ..// config options
     url:"data/employee.php", 
 	save:"connector->data/employee.php"
  });
@@ -105,11 +143,16 @@ webix.dp($$("emp_grid")).attachEvent("onbeforedelete", function(id, action){
 });
 ~~~
 
+ where..
+
+- **id** - the ID of the item being processed;
+- **action** - DataAction object;
+- **operation** - the database operation being performed (action type);
+- **data** - refers to component inner DataStore. Here we can get to the desired data item property (*action.data.property_name*). 
+
 Now, when a record is removed from the component, a field **deleted** of this record is updated in the database table. The current date is set into it to track the moment when the record was removed on the client side. 
 
-**Data Operations**
-
-Client-side data item operations are made with the help of dedicated [controls](desktop/controls.md) and include the following ones. 
+Learn more about the possibilities of data manipulation on clent side in related articles:
 
 - [Data Adding and Deletion](desktop/add_delete.md);
 - [Data Updating](desktop/update.md)
@@ -120,7 +163,7 @@ Client-side data item operations are made with the help of dedicated [controls](
 [Data Binding](desktop/data_binding.md) is often used to make one component a datasource for the other one the moment selection in the master one happens. **Binding is performed on client-side** and helps synchronize data
 changes.
 
-Working with server-side, you need to update the master component when changes in the slave one occur, which means you need to reload this data from server.   
+Working with server side, you need to update the master component when changes in the slave one occur, which means you need to reload this data from server.   
 
 Take you have two [datatables](datatable/index.md) ("emp_grid" and "wage_grid") that load data from different "employees" and "wages" tables, the latter being a dependent one. 
 
@@ -154,7 +197,7 @@ $$('wage_grid').bind($$('emp_grid'), function(wage, cursor){
 });
 ~~~
 
-Cursor position is the ID of the item the cursor is set on. Here cursor position is the ID of the employee in the "wages" table, the same ID the employee has in the "employees" table
+Cursor position is the ID of the item the cursor is set on. Here cursor position is the ID of the employee in the "wages" table, the same ID the employee has in the "employees" table.
 
 When you change wage value in the slave **wage_grid** component the data is saved to wages table, where each wage is connected with the employees by their IDs. 
 
@@ -176,7 +219,9 @@ process starts each time you try to save data to the database.
  
 ~~~js   
 dp = new webix.DataProcessor({
-		rules:{$all:webix.rules.isNotEmpty },
+		rules:{
+        	$all:webix.rules.isNotEmpty 
+        },
 		url: "save.php", 
 		master: $$('mylist')
 })
@@ -185,5 +230,6 @@ dp = new webix.DataProcessor({
 ###Related Article
 
 - [Dataprocessor API - Methods, Properties and Events](api/refs/dataprocessor.md)
+- [Server Side Connectors](desktop/dataconnector.md)
 
 @complexity:2
