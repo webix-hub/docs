@@ -40,6 +40,17 @@ webix.ajax("data/load.php",function (text,data){
 
 Serverside script should return **inline data** in any of [supported data types](desktop/data_types.md) so that it can be [parsed](api/link/datarecord_parse.md) into the necessary component. 
 
+Above snippet will set the new data for list. To add new data to the existing list data, define start position for parsing:
+
+~~~js
+webix.ajax("data/load.php",function (text,data){
+	$$("list").parse({
+    	pos: $$("list").count(), //start position
+      	data:text
+    });
+});
+~~~
+
 For setting the necessary **serverside response** manually, [see the dedicated article](desktop/custom_serverside.md#response). As to [Server Side Connector](desktop/dataconnector.md), they return data in JSON or XML format depending 
 on connector type. 
 
