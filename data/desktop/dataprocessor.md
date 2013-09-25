@@ -16,11 +16,28 @@ Without DataProcessor, you need to attach corresponding functions to component e
 
 DataProcessor object can be inited in both long and short forms. Compulsory parameters include: 
 
-- **url**, a path to your own server script or connector-based one (described in [Server Side Connector](desktop/dataconnector.md)). In any case, it should be the script that enables data loading from the database 
+- **url**, a path to your [own server script](desktop/custom_serverside.md) or connector-based one (described in [Server Side Connector](desktop/dataconnector.md)). In any case, it should be the script that enables data loading from the database 
 into the component;
 - **master**, a component or DataCollection you will use the dataProcessor with. 
 
 Other parameters (**mode**, validation **rules**, **on**, etc.) and optional and [can be found here](api/refs/dataprocessor.md#properties).
+
+####Implicit Initialization via Save Property
+
+When you define **url** (path to the necessary script) as value of **save** property for the needed component (**master**) - DataProcessor is automatically inited: 
+
+~~~js
+webix.ui({
+	view:"datatable",
+    ..config..
+    url: "data.php", //script that links to DataConnector and loads data
+    save: "connector -> data.php" //the same script used for data processing
+    
+    or
+    url:"data_load.php", //your custom script for loading
+    save:"data_save.php" //you custom script for saving
+});
+~~~
 
 ####Short Form
 
@@ -56,25 +73,6 @@ dp = new webix.DataProcessor({
 ~~~
 
 {{sample 14_dataprocessor/02_list.html }}
-
-####Implicit Form via Save Property
-
-There exists an implicit way of DataProcessor initialization. You define **url** (path to the necessary script) as value of **save** property for the needed component (**master**): 
-
-~~~js
-webix.ui({
-	view:"datatable",
-    ..config..
-    url: "data.php", //script that links to DataConnector and loads data
-    save: "connector -> data.php" //the same script used for data processing
-    
-    or
-    url:"data_load.php", //your custom script for loading
-    save:"data_save.php" //you custom script for saving
-});
-~~~
-
-Note that DataProcessor is inited by **save** property anyway, regardless of whether you use Webix Server Side connectors or not.
 
 ##Data Processing Operations
 
@@ -129,7 +127,7 @@ This is how we change deletion from database by updating this record:
 ~~~js
 webix.ui({
 	view:"datatable", 
-    id:"emp_grid",
+    id:"grid",
     ..// config options
     url:"data/employee.php", 
 	save:"connector->data/employee.php"
@@ -137,7 +135,7 @@ webix.ui({
  
 ..//function redefining removal into updating
 
-webix.dp($$("emp_grid")).attachEvent("onbeforedelete", function(id, action){
+webix.dp($$("grid")).attachEvent("onbeforedelete", function(id, action){
 		action.operation = "update";
 		action.data.deleted = webix.i18n.parseFormatStr(new Date());
 });
@@ -157,6 +155,24 @@ Learn more about the possibilities of data manipulation on clent side in related
 - [Data Adding and Deletion](desktop/add_delete.md);
 - [Data Updating](desktop/update.md)
 - [Data Editing](desktop/edit.md)
+
+##Cancelling Dataprocessor for Some Operation
+
+Cancelling default Dataprocessor work can be useful in case of [bound](desktop/data_binding.md) data component and form. 
+
+**Grid** populates **form** with data each time its row is selected. At the same time, if you change data in form and save it - new data will be pushed to grid and the DataProcessor will trigger save script execution.
+
+To cancel this and save form data separately, apply api/dataprocessor_ignore.md fucntion to the Dataprocessor object. 
+
+~~~js
+$$("form").bind($$("grid"));
+
+webix.dp("grid").ignore(function(){
+		$$("grid).add(data);	
+	});
+~~~
+
+Form data can be saved via [Webix Ajax Helper](desktop/server_ajaxsave.md).
 
 ##Reloading a Single Record from the Database (for Bound Components)
 
@@ -231,5 +247,6 @@ dp = new webix.DataProcessor({
 
 - [Dataprocessor API - Methods, Properties and Events](api/refs/dataprocessor.md)
 - [Server Side Connectors](desktop/dataconnector.md)
-
+@index:
+	desktop/serverside.md
 @complexity:2

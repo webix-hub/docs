@@ -1,14 +1,14 @@
 Data Connector
 =======================
 
-The Server Side Connector together with [DataProcessor](desktop/dataprocessor.md) use their inner logic to interpret your actions and generate the code to update database tables according to the 
+The Server Side Connectors together with [DataProcessor](desktop/dataprocessor.md) use their inner logic to interpret CRUD operations and generate the code to update database tables according to the 
 changes made. 
 
 - Connectors come in ready-made **PHP, Java, .Net, ColdFusion** versions;
-- they simplify **data loading** from database and **data saving**;
+- they simplify **data loading** from database and **data saving**. You needn't write database queries yourself;
 - allow basic **CRUD operations on server-side**;
 - enable **server-side sorting** and **filtration**;
-- feature **protection** against **CSRF** and **XSS** attacks.
+- feature built-in **protection** against **CSRF** and **XSS** attacks.
 
 As a rule, one and the same connector is used for [loading data](#loading) and [saving](#saving).
 
@@ -23,9 +23,9 @@ There you should search for standard **DataConnector** and **JSONDataConnector**
 
 ##Data Loading {#loading}
 
-Connectors perform database queries and return data in XML format (default) or in JSON (in case of JSONDataConnector). 
+Connectors perform database queries and return data in **XML** format (standard DataConnector) or in **JSON** (JSONDataConnector). [Data formats](desktop/data_types.md) are described separately. 
 
-The simplest way to load database data into the component is as follows: 
+To load data with the help of the necessary connector, you should: 
 
 - write a **connector-based script** that connects to the necessary database AND contains **path to the necessary connector**. In addition, it may contain extra data rendering logic (described below).
 - specify this script as **url** for the Webix component you work with.
@@ -34,16 +34,17 @@ The simplest way to load database data into the component is as follows:
 webix.ui({
 	view: "datatable", 
     ..config..
-    url: "data.php" 
-    datatype:"xml" //for all connectors exept for JSONDataConnector
+    url: "server/data.php" 
+    datatype:"xml"
 });
 
 //or, in case you load data after component init:
 
-$$("grid").load("data.php");
+$$("grid").load("server/data.php");
 ~~~
 
-In case of long datasets, make use of [dynamic loading](desktop/dynamic_loading.md) functionality. 
+- Datatype can be omitted in case of JSONDataConnector usage since it returns data in default JSON format. 
+- In case of long datasets, make use of [dynamic loading](desktop/dynamic_loading.md) functionality. 
 
 ##Connector Based Script (PHP Solution)
 
@@ -160,8 +161,25 @@ Connectos have big possibilities of customization, so consult their [documentati
 
 ##Saving Data with Connectors {#saving}
 
+To enable saving data with the chosen connector, you should specify it as value of the component **save** property (in addition to mentioning as **url** for loading). 
+
+~~~js
+webix.ui({
+	view: "datatable", 
+    ..config..
+    url: "server/data.php" 
+    save:"connector->server/data.php"
+    datatype:"xml"
+});
+~~~
+
+**Note that**
+
+- The must-have detail here is a **connector** prefix before the path. 
+- As soon as you define you connector-based script as **save** script, DataProcessor is inited to send changed data to this script. 
+
 [DataProcessor](desktop/dataprocessor.md) passes changed data from the component alongside with the operation (*update, insert, delete*) performed on it. 
-This operation corresponds to query type the connector will execute over the database table. 
+This operation corresponds to query type the connector will execute over the database table. If you neeed to customize this behavior  - go to [DataProcessor docs](desktop/dataprocessor.md).
 
 There are two protocols for data transfer with Server Side Connectors
 
@@ -205,4 +223,8 @@ webix.ajax().post("myscript.php?action=update",
         	webix.message("Update Failed");
 });
 ~~~
+
+@index:
+	- desktop/serverside.md
+@complexity:3
 

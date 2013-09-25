@@ -1,9 +1,9 @@
 Custom Server Scripts
 =====================
 
-In case of custom server scripts you write all the logic of database connection, execute queries over tables for necessary data as well as queries for data inserting, updating and deleting. 
+In case of custom server scripts you write all the logic of database connection, execute queries that get data from the necessary tables as well as queries for data inserting, updating and deleting. 
 
-It's necessary to remember client-side loading and saving pattern:
+Basic client-side loading and saving pattern remains unchanged:
 
 ~~~js
 webix.ui({
@@ -93,7 +93,7 @@ $res = $db->query("SELECT * FROM films WHERE id={$id}");
 
 ##Data Saving {#save}
 
-In essence defining **save** initializes DataProcessor that gets data ready for sending to server and triggers script executing each time changes are made. 
+In essence defining **save** initializes DataProcessor that gets data ready for sending to server and triggers script executing each time changes are made. Defaut DataProcessor logic can be [customized](desktop/dataprocessor.md).
 
 Scripts gets changed data in body of POST request. For each inserted, updated and deleted record, all properties of its object are sent together with **webix_operation**
 
@@ -211,6 +211,10 @@ webix.ajax().post("server/save.php", {}, function(response) {
 ~~~
 
 More about [Ajax operations in Webix](helpers/ajax_operations.md).
+
+@index:
+	- desktop/serverside.md
+@complexity:3
 
 
 

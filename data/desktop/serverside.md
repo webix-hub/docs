@@ -1,38 +1,33 @@
 Server-side Integration
 =================
 
-Server side integration with Webix components is enabled in several ways:
+Serverside integration is possible with Webix [data components](desktop/components.md), client-side datastores (called [Data Collections](desktop/nonui_objects.md)) and [forms](desktop/form.md). It is enabled in several ways:
 
-- you can write your own **custom scripts** to load data and save changes back;
-- you can make use of ready-made **Server Side Connectors** that enable data loading and saving. They are available in PHP, Java, .Net, ColdFusion versions;
+- you can write your own **[custom scripts](desktop/custom_serverside.md)** in you favourite language to load data and save changes back;
+- you can make use of a **[Server Side Connector](desktop/dataconnector.md)** (ready to use solution for data loading and saving). Connectors are available in PHP, Java, .Net, ColdFusion versions;
 - You can use MVC.Net, Ruby on Rails, PHP Yii **MVC frameworks** coupled with your scripts or connectors.
+
+Any of the above mentioned patterns will do. 
 
 <img src="desktop/connector.png"/>
 
-Any pattern you choose is suitable for working with **Webix data components**, client-side **datastores** ([Data Collection](desktop/nonui_objects.md)) and **forms**. 
+[DataProcessor](desktop/dataprocessor.md) works in the background for Webix components to send necessary data to saving scripts. It can be customized, if needed.
 
-There exist two libraries that enahnce interaction between your app and server: 
+##Data Loading
 
-- [DataProcessor](desktop/dataprocessor.md) - listens to editing events and defines editing operation (*insert, update, delete*) within the component and sends changed data for server script (either custom or connector-based) in POST request. 
-Its initialization is **highly recommended** to avoid monotonous coding while its API helps  adjust it to your needs;
-- [DataConnector](desktop/dataconnector.md) - offers a simplified pattern for loading and, if DataProcessor is inited, saving data to database. The use of connectors simplifies server-client communication and encompasses all
-standard server operations while it's also possible to change their logic to meet your needs. Yet, using connectors is **optional** and is up to your choice. 
-
-###Data Loading
-
-Basic client-side code that loads data to a component during its initing is as follows: 
+Basic client-side code that enables [loading data](desktop/data_loading.md) to a component during its initialization is as follows: 
 
 ~~~js
 webix.ui({
 	view:"datatable",
     id:"dtable",
     ..// config
-    url:"myscript.php", 
+    url:"load_script.php", 
     datatype:"xml" 
 });
 ~~~
 
-Or, if you load data after compomnent init, apply *load()* method: 
+Or, to load data after component init, apply **load()** method to it: 
 
 ~~~js
 $$("dtable").load("myscript.php", "xml");
@@ -40,11 +35,14 @@ $$("dtable").load("myscript.php", "xml");
 
 **Note that**
 
+- Server script you state as **url** parameter or pass into **load()** function executes GET request and returns data from server in either of the [possible data formats](desktop/data_types.md);
 - You should specify **datatype** parameter if incoming data is other than JSON (default);
-- Server script you specify as **url** parameter, can be either a custom one or the connector-based (links to a chosen [Server Side Connector](desktop/dataconnector.md));
-- Custom script can be written on **any language**, not just PHP. If you use a certain type of connector, the linking script should of the same language with connector.
+- In case of long datasets [dynamic loading](desktop/dynamic_loading.md) functionality will be helpful;
+- Default loading pattern can be [customized](desktop/server_customload.md) - specific loading modes, ajax helper for passing params into load script.
 
-###Data Saving
+More info about custom scripts is in the [dedicated article](desktop/custom_serverside.md);
+
+##Data Saving
 
 Basic client-side code that enables data saving from a component to database is as follows:
 
@@ -52,50 +50,79 @@ Basic client-side code that enables data saving from a component to database is 
 webix.ui({
 	view:"datatable",
     id:"dtable",
-    url:"myscript.php", 
-    //for connector-based scripts
-    save:"connector->myscript.php",
-   	//for custom server scripts
-   	save:"my_savescript.php"
-    datatype:"xml" 
+    url:"load_script.php", 
+   	save:"save_script.php"
+    datatype:"xml" //if you use JSON, omit this line
 });
 ~~~
 
 **Note that**
 
-- Component **save** property initializes [DataProcessor](desktop/dataprocessor.md) for this component so that data changes are transmitted to the script you state as its value. There exist other ways of DataProcessor initing, 
-which should be used if customization is needed - [look here](desktop/dataprocessor.md);
-- In case of [connector](desktop/dataconnector.php) usage, **url** and **save** properties house one and the same linking script that leads to this connector. Custom scripts are different, as a rule.
+- Save script gets data in POST request and saves them to database. 
+- Save script typically returns **operation status** and **ID** of the changed item. To tune server-side response, look into the [dedicated article](desktop/custom_serverside.md#response).
+- Saving can be implemented via [Webix Ajax helper](desktop/server_ajaxsave.md), which adds more flexibility.
 
-###Saving Data via Ajax
+In addition, **save** property automatically initializes [DataProcessor](desktop/dataprocessor.md) for this component so that data changes are transmitted to your save script. 
+DataProcessor listens to component events, defines editing operation (as **insert, update** and  **delete** one) and sends changed data to server script in POST request. 
 
-Data you get from users via form and separate inputs is typically saved via Ajax request, so **DataProcessor initing is unnecessary** as data saving is started on some page event
-(e.g. button click) and data is sent to server script in the body of Ajax POST request.
+**Defining Operation Type**
 
-Webix offers its own [API to work with Ajax](helpers/ajax_operations.md).
+By default, operation status comes as **webix_operation** in POST request. Usually, save script single and contains patterns for different operations. 
+
+At the same time you can define a **specific scripts** for each operation. Dataprocessor will define the type of operation and the necessary script will be executed:
 
 ~~~js
-webix.ajax().post("my_script", params, callback);
+save:{
+	"insert":"data/insert.php",
+	"update":"data/update.php",
+	"delete":"data/delete.php"
+}
+~~~
+
+{{sample 14_dataprocessor/08_custom_urls.html}}
+
+If you need to change the default pattern of data processing - look up [Dataprocessor docs](desktop/dataprocessor.md);
+
+##Saving Uploaded files
+
+If you use Webix [Uploader](desktop/file_upload.md), you may wonder about how saving of the files is performed. 
+
+~~~js
+{
+	view:"uploader",
+    id:""uploader1,
+    name:"uploader"
+	upload:"upload.php"
+	autosend:false
+}
+
+$$("uploader1").send();
 ~~~
 
 **Note that**
 
-- **"myscript.php"** can be your own script on any language you choose. It can be as well connector-based script that links to Webix Server Side connector;
-- **params** are sent in form of JSON object (as well returned by [form](desktop/form.md)'s [getValues()](api/link/ui.form_getvalues.md) method:
+- **Autosend** should be set to *false* in order that saving starts only when you call the **send** method. When you call it, the script specified in **upload** property will be executed;
+- **Server part of file upload** is described in detail in the [dedicated part](desktop/uploader_serverside.md) of uploader documentation;
+- The information about how to **save form and uploader data** separately - is [nearby](desktop/uploader_integration.md). 
 
-~~~js
-webix.ajax().post("my_script", {id: some, name: some, address:some }, callback);
+##Saving Form and Input Data
 
-webix.ajax().post("my_script", form.getValues(), callback);
-~~~
+Form data is either 
 
-If combined with connector-based script, [simplified data transfer protocol](desktop/dataconnector.md#simple) can be used.
+- pushed to the component it is [bound](desktop/data_binding.md) with;
+- or (more typically) is sent to server by [Webix Ajax request](desktop/server_ajaxsave.md)
 
 ###Further Reading
 
-- [DataProcessor](desktop/dataprocessor.md)
-- [Server Side Connectors](desktop/dataconnector.md)
-- [Implementing server-side integration with custom scripts](desktop/custom_serverside.md)
+- desktop/server_customload.md
+- desktop/server_ajaxsave.md
+- [Loading and Saving  with Custom Scripts](desktop/custom_serverside.md)
+- [Loading and Saving with Server Side Connectors](desktop/dataconnector.md)
+- [Customizing DataProcessor](desktop/dataprocessor.md)
+- [Offline Support](desktop/server_offline.md)
+- [Working in REST Mode](desktop/server_rest.md)
+- [Working with Proxy Objects](desktop/server_proxy.md)
+
 
 @index: 
   - desktop/dataprocessor.md

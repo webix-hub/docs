@@ -115,6 +115,7 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
             </h4>
             <ul id="internet_sublist">
                     <li>desktop/offline.md</li>
+                    <li>desktop/server_offline.md</li>
                     <li>desktop/history_track.md</li>
             </ul>
         </td>
