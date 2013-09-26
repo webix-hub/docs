@@ -67,8 +67,12 @@ $configs["online"]["use-discuss"] = true;
 $config_file = dirname(__FILE__)."/.project";
 if (file_exists($config_file))
 	$config = $configs[file_get_contents($config_file)];
-else 
-	$config = $configs["desktop"];
+else {
+  if (isset($_GET["project"]))
+    $config = $configs[$_GET["project"]];
+  else
+    $config = $configs["desktop"];
+}
 
 $config["langAllowed"] = array("ru" => true);
 $config["today"]=date("Y-m-d",time());

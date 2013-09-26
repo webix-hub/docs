@@ -1,4 +1,4 @@
-Webix REST Mode Support
+REST Mode Support
 ==========================
 
 Webix features support for REST load and save protocol. 

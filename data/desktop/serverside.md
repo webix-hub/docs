@@ -4,14 +4,9 @@ Server-side Integration
 Serverside integration is possible with Webix [data components](desktop/components.md), client-side datastores (called [Data Collections](desktop/nonui_objects.md)) and [forms](desktop/form.md). It is enabled in several ways:
 
 - you can write your own **[custom scripts](desktop/custom_serverside.md)** in you favourite language to load data and save changes back;
+- you can use server side [rest api](desktop/server_rest.md)
 - you can make use of a **[Server Side Connector](desktop/dataconnector.md)** (ready to use solution for data loading and saving). Connectors are available in PHP, Java, .Net, ColdFusion versions;
 - You can use MVC.Net, Ruby on Rails, PHP Yii **MVC frameworks** coupled with your scripts or connectors.
-
-Any of the above mentioned patterns will do. 
-
-<img src="desktop/connector.png"/>
-
-[DataProcessor](desktop/dataprocessor.md) works in the background for Webix components to send necessary data to saving scripts. It can be customized, if needed.
 
 ##Data Loading
 
@@ -19,11 +14,9 @@ Basic client-side code that enables [loading data](desktop/data_loading.md) to a
 
 ~~~js
 webix.ui({
+	id:"dtable",
 	view:"datatable",
-    id:"dtable",
-    ..// config
-    url:"load_script.php", 
-    datatype:"xml" 
+    url:"data.php"
 });
 ~~~
 
@@ -48,11 +41,9 @@ Basic client-side code that enables data saving from a component to database is 
 
 ~~~js
 webix.ui({
-	view:"datatable",
     id:"dtable",
-    url:"load_script.php", 
+	view:"datatable",
    	save:"save_script.php"
-    datatype:"xml" //if you use JSON, omit this line
 });
 ~~~
 
@@ -125,6 +116,11 @@ Form data is either
 
 
 @index: 
+  
+  - desktop/custom_serverside.md
+  - desktop/server_rest.md
+  - desktop/server_offline.md
+  - desktop/server_proxy.md
   - desktop/dataprocessor.md
   - desktop/dataconnector.md
 
