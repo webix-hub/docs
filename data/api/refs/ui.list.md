@@ -140,6 +140,7 @@ Events
 - api/link/ui.list_onselectchange_event.md - fires after selection state was changed
 - api/link/ui.list_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation
 - api/link/ui.list_onvalidationsuccess_event.md - fires after the newlyloaded/added/edited data has passes validation successfully
+- api/link/ui.list_onviewresize_event.md - view size was changed by resizer
 }}
 
 

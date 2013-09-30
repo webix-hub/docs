@@ -108,6 +108,7 @@ Events
 - api/link/ui.chart_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.chart_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.chart_onmouseout_event.md - fires when the mouse was moved out from the specified item
+- api/link/ui.chart_onviewresize_event.md - view size was changed by resizer
 }}
 
 
@@ -133,6 +134,7 @@ Properties
 - api/link/ui.chart_disabled_config.md - disables item
 - api/ui.chart_eventradius_config.md - sets the radius (in pixels) of the virtual circle which events will fire for items within
 - api/ui.chart_fill_config.md - fills the chart area with the specified background color.
+- api/ui.chart_fixoverflow_config.md - chart max limit mode
 - api/ui.chart_gradient_config.md - specifies the chart gradient
 - api/link/ui.chart_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.chart_height_config.md - sets the height of the component
@@ -144,7 +146,6 @@ Properties
 - api/ui.chart_legend_config.md - defines the chart legend
 - api/ui.chart_line_config.md - defines chart lines
 - api/ui.chart_linecolor_config.md - sets the color for strips dividing the pie sectors
-- api/ui.chart_linemaxlimit_config.md - chart max limit mode
 - api/link/ui.chart_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.chart_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.chart_minheight_config.md - sets the minimal height for the view

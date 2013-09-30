@@ -74,6 +74,7 @@ Events
 - api/link/ui.uploader_onchange_event.md - fires when the value of the control is changed
 - api/ui.uploader_onfileupload_event.md - fires the moment file uploading starts
 - api/ui.uploader_onuploadcomplete_event.md - fires when all files have been successfully uploaded to server
+- api/link/ui.uploader_onviewresize_event.md - view size was changed by resizer
 }}
 
 

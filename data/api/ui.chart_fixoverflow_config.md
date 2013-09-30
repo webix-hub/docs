@@ -1,4 +1,4 @@
-lineMaxLimit
+fixOverflow
 =============
 
 
@@ -8,7 +8,7 @@ lineMaxLimit
 @type: bool
 @example:
 
-$$("chart1").define("lineMaxLimit", true);
+$$("chart1").define("fixOverflow", true);
 
 @template:	api_config
 @descr:

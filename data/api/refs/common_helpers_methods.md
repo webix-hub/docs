@@ -30,6 +30,7 @@ Methods
 - api/_modalbox.md - creates a modal box
 - api/_proto.md - merges the contents of several objects together into the first object
 - api/_protoui.md - merges the contents of several objects together into the first object and creates from it a new view
+- api/_proxy.md - 
 - api/_ready.md - a handler that is called just after the page has been completely parsed
 - api/_require.md - includes and caches a Javascript module
 - api/_send.md - sends an HTTP request to the server (emulates submitting a form)
@@ -78,6 +79,7 @@ Methods
 - api/_modalbox.md
 - api/_proto.md
 - api/_protoui.md
+- api/_proxy.md
 - api/_ready.md
 - api/_require.md
 - api/_send.md

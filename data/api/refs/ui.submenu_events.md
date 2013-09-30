@@ -38,6 +38,7 @@ Events
 - api/link/ui.submenu_onshow_event.md - fires when window is shown
 - api/link/ui.submenu_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation
 - api/link/ui.submenu_onvalidationsuccess_event.md - fires after the newlyloaded/added/edited data has passes validation successfully
+- api/link/ui.submenu_onviewresize_event.md - view size was changed by resizer
 }}
 
 @index:
@@ -76,5 +77,6 @@ Events
 - api/link/ui.submenu_onshow_event.md
 - api/link/ui.submenu_onvalidationerror_event.md
 - api/link/ui.submenu_onvalidationsuccess_event.md
+- api/link/ui.submenu_onviewresize_event.md
 
 
