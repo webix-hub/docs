@@ -44,7 +44,5 @@ $prop2 = $_POST['prop2];
 
 Learn more about the possibilities of [Webix Ajax interface](helpers/ajax_operations.md).
 
-@index:
-	- desktop/serverside.md
 @complexity:2
 

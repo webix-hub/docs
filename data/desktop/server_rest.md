@@ -35,8 +35,6 @@ Save script treats adding, editing and deleting operations separately and should
 
 Serverside response is set like with [any custom script](desktop/custom_serverside.md#response).
 
-@index: 
-  - desktop/custom_serverside.md
 @complexity:2
 
 

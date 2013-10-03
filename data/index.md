@@ -89,6 +89,4 @@ Webix is a cross-browser, cross-device JavaScript framework for building interac
 - desktop/whats_new.md
 - desktop/components.md
 - desktop/basic_tasks.md
-- helpers/index.md
-- tutorials/index.md
 - api/toc/ui.md

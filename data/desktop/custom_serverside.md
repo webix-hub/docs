@@ -212,8 +212,6 @@ webix.ajax().post("server/save.php", {}, function(response) {
 
 More about [Ajax operations in Webix](helpers/ajax_operations.md).
 
-@index:
-	- desktop/serverside.md
 @complexity:3
 
 

@@ -149,6 +149,23 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
         </td>
         <td class='topic_description' onclick="displaySubList('thirdparty')">Says which third-party libraries and how can be integrated with Webix components</td>
     </tr>
+
+    <tr>
+        <td id="thirdparty" class='topics' onclick="displaySubList(this.id)">
+            <h4>
+                Auxiliary Resources
+            </h4>
+            <ul id="thirdparty_sublist">
+                    <li>helpers/top_ten_helpers.md</li>
+                    <li>helpers/ajax_operations.md</li>
+                    <li>helpers/dnd.md</li>
+                    <li>helpers/data_drivers.md</li>
+                    <li>helpers/number_formatting_methods.md</li>
+                    <li>helpers/date_formatting_methods.md</li>
+            </ul>
+        </td>
+        <td class='topic_description' onclick="displaySubList('thirdparty')">Extra goodies in the Webix library</td>
+    </tr>
 	</tbody>
 </table>
 
@@ -169,4 +186,4 @@ function displaySubList(currentList){
 - desktop/web_and_internet.md
 - desktop/extending_components.md
 - desktop/third_party_integration.md
-
+- helpers/index.md

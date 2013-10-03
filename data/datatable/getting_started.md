@@ -16,7 +16,7 @@ For understanding the basic concepts and getting the desired information in the 
   - [Operations with cells](datatable/get_set_data.md) - describes basic operations you surely will use while developing: getting/setting the value of a cell.
   - [Integration](datatable/integration.md) - says which libraries and how can be integrated with DataTable.
   - [Data export to PDF, Excel](datatable/export.md) - shows the process of exporting data from DataTable to PDF and Excel documents. 
-  - [Saving data on server](datatable/server_side.md) - describes server-side work.
+  - [Saving data on server](desktop/serverside.md) - describes server-side work.
 3. [Events handling](datatable/events_handling.md) - says how to use events: to attach and detach, which events can be handled and how.
 4. [API Reference](api/refs/ui.datatable.md) - provides reference information you need for coding: all the available methods, parameters and events of the library. 
 

@@ -10,7 +10,7 @@ $renderInput
 - html      string      inner html of the input
 - id        id          unique id
 
-@returns
+@returns:
 - text		string		html string with full code of input
 
 

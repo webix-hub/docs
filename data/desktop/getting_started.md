@@ -23,6 +23,6 @@ set headers(footers), manipulate visibility, handle events etc.
 5. helpers/index.md - covers advanced techniques implemented by means of helper components. Mostly intended for expert developers to customize the existent functionality.
 6. api/toc/ui.md - provides reference information you need for coding: all the available methods, parameters and events of the library. 
 
+
 @index:
-- tutorials/start_coding.md
-- tutorials/quick_start.md
+- tutorials/index.md

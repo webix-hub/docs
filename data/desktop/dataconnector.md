@@ -224,7 +224,5 @@ webix.ajax().post("myscript.php?action=update",
 });
 ~~~
 
-@index:
-	- desktop/serverside.md
 @complexity:3
 

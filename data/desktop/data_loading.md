@@ -14,7 +14,7 @@ After data has been pushed to component (loaded or parsed) it should be rendered
 
 To load data from an external file or database, you should specify the **path** to this file/or serverside script that fetches data: 
 
-1 . As value of the component **url** property. Data will be loaded right after component initialization. [Type](desktop/data_formats.md) of incoming data should be specified (if it's not JSON) as well.
+1 . As value of the component **url** property. Data will be loaded right after component initialization. [Type](desktop/data_types.md) of incoming data should be specified (if it's not JSON) as well.
 
 ~~~js
 {
@@ -33,7 +33,7 @@ $$("mylist").load("data.xml");
 **Load** function has three parameters:
 
 - **path** to the necessary file or script;
-- [datatype](desktop/data_formats.md) - in case of JSON data this parame can be omitted;
+- [datatype](desktop/data_types.md) - in case of JSON data this parame can be omitted;
 - **callback** function if needed. 
 
 ~~~js

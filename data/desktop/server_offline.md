@@ -100,7 +100,7 @@ In essense, the prefix signifies integration with a dedicated **proxy object** t
 
 ##Working with Cached Data 
 
-Both of these [proxy objects]((desktop/server_proxy.md)), **offline** and **cache**, offer API for working with currently cached data. Methods are applied to the component's **url** property object:
+Both of these [proxy objects](desktop/server_proxy.md), **offline** and **cache**, offer API for working with currently cached data. Methods are applied to the component's **url** property object:
 
 ~~~js
 $$("datatable1").config.url.someMethod();
@@ -148,6 +148,4 @@ if (!static_proxy.getCache())
 
 Proxy objects are described in detail in the [corresponding article](desktop/server_proxy.md).
 
-@index:
-	- desktop/serverside.md
 @complexity: 2

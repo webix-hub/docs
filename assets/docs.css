@@ -1324,3 +1324,19 @@ body{
 	}
 }
 
+/*navigation*/
+.nav_folder_img{
+	background: url("navigation/folder.png");
+	width:32px;
+	height:29px;
+}
+.nav_page_img{
+	background: url("navigation/page.png");
+	width:32px;
+	height:29px;
+}
+.nav_back_img{
+	background: url("navigation/back.png");
+	width:32px;
+	height:32px;
+}

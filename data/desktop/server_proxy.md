@@ -124,6 +124,5 @@ And then use it as prefix to load and save scripts:
 //or, after component init
 $$("datatable1").load("myCustomName->load.php"); 
 ~~~
-@index:
-	- desktop/serverside.md
+
 @complexity:3

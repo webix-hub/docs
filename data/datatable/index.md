@@ -69,7 +69,7 @@ still being  very fast handling  thousands of records.<a href="datatable/overvie
     	    <ul id="operations_sublist">
 				<li><a href="datatable/integration.md#Webix3integration">DHTMLX</a></li>
 				<li><a href="datatable/integration.md#jqueryintegration">jQuery</a></li>
-				<li><a href="datatable/server_side.md">Server-side solutions</a></li>
+				<li><a href="desktop/serverside.md">Server-side solutions</a></li>
             </ul>
         </td>
         <td class='topic_description' onclick="displaySubList('operations')">Says about libraries and platforms you can integrate DataTable with.</td>
@@ -108,6 +108,5 @@ still being  very fast handling  thousands of records.<a href="datatable/overvie
 - datatable/navigation.md
 - datatable/drag_and_drop.md
 - datatable/export.md
-- datatable/server_side.md
 - datatable/events_handling.md
 

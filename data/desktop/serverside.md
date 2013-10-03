@@ -119,6 +119,8 @@ Form data is either
   
   - desktop/custom_serverside.md
   - desktop/server_rest.md
+  - desktop/server_ajaxsave.md
+  - desktop/server_customload.md
   - desktop/server_offline.md
   - desktop/server_proxy.md
   - desktop/dataprocessor.md

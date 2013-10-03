@@ -20,7 +20,7 @@ Main features
 <dt><a href="api/refs/ui.datatable.md">3. Linkable tables</a></dt>
 <dd>This feature allows developers to create multiple DataTable instances on a page and easily implement various relationships through APIs.</dd>
 <br>
-<dt><a href="datatable/server_side.md">4. Simple integration with server side </a></dt>
+<dt><a href="desktop/serverside.md">4. Simple integration with server side </a></dt>
 <dd>Simple integration with any server side solution, such as PHP, .NET, Java.</dd>
 <br>
 <dt><a href="api/refs/ui.datatable.md">5. Full API support</a></dt>

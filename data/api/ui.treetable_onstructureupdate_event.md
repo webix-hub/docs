@@ -1,1 +1,0 @@
-@link: api/ui.datatable_onstructureupdate_event.md

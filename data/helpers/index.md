@@ -1,4 +1,4 @@
-Helper objects
+Auxiliary Resources
 ==============
 
 {{index

@@ -72,7 +72,5 @@ Here you should consult:
 - Proxy object for working in [REST mode](desktop/server_rest.md);
 - Guidlines about [proxy objects](desktop/server_proxy.md) and custom proxy objects in particular.
 
-@index:
-	- desktop/serverside.md
 @complexity:2
 
