@@ -47,11 +47,12 @@ Popup position can be set within the **show();** method as well:
 ~~~js
 webix.ui({
 	view:"popup",
+    autofit:false, //removes size adjustment to HTML node
     ...
 }).show({
-    clientX:650, //left offset from the right side
-    clientY:50 //top offset
-	});
+    x:650, //left offset 
+    y:50 //top offset
+});
 ~~~
 
 {{sample 98_docs/window_offset.html}}
