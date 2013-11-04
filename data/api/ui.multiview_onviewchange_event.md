@@ -3,9 +3,7 @@ onViewChange
 
 
 @short:
-	fires when you swithc between views regardless of the switching mehtod
-
-@params:
+	fires when the views are switched in the component (regardless of the switching method)
 
 @example: 
 	
