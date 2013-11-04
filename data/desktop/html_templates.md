@@ -304,6 +304,26 @@ template:function(obj){
 - If value is defined by JSON/XML tag **value** - you refer to it as **obj.value.**
 - If value is defined by template - you refer to it as **obj.title**, **obj.rank**, **obj.data0** (CSV, JSArray) etc. 
 
+
+## XSS Safe templates
+
+By default, templates markers will be replaced with a value of data without any processing. If you have an HTML data in the data object, it will placed in the template.
+In most cases this is an advantage, but sometimes it may be necessary to output such data as text, not a html 
+
+- when you have text data with html special chars ( < > & characters ) 
+- when you are not sure is data safe or not ( was entered by the user ) 
+
+In such cases you can use a bit different syntax
+
+~~~js
+{
+  template:"My #data#" // will output data as HTML content 
+},
+{
+  template:"My #!data#" // will output data as Text content 
+},
+~~~
+
 @index:
   - desktop/tooltip.md
   - desktop/type.md

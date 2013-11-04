@@ -55,7 +55,6 @@ Properties
 
 {{links
 - api/dataprocessor_autoupdate_config.md - enables automatic data updating on server while any changes on client-side are done
-- api/dataprocessor_connectorname_config.md - name of parameter which will hold operation type ( in case of connector protocol )
 - api/dataprocessor_escape_config.md - custom escaping function
 - api/link/dataprocessor_id_config.md - the component ID
 - api/dataprocessor_master_config.md - the linked data source. It can be both some independent data source and one of components operated on data (e.g. grid)

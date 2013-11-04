@@ -50,10 +50,13 @@ Methods
 - api/link/ui.counter_isenabled.md - checks whether the view is enabled
 - api/link/ui.counter_isvisible.md - checks whether the view is visible
 - api/link/ui.counter_mapevent.md - routes events from one object to another
+- api/ui.counter_next.md - set next value in counter input
+- api/ui.counter_prev.md - set previous value in counter input
 - api/link/ui.counter_refresh.md - repaints the component
 - api/link/ui.counter_render.md - renders the specified item or the whole component
 - api/link/ui.counter_resize.md - adjusts the view to a new size
 - api/link/ui.counter_setvalue.md - sets a new value for the component
+- api/ui.counter_shift.md - adds value to the counter
 - api/link/ui.counter_show.md - makes the component visible
 - api/link/ui.counter_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.counter_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
@@ -68,6 +71,7 @@ Events
 - api/link/ui.counter_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.counter_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.counter_onchange_event.md - fires when the value of the control is changed
+- api/link/ui.counter_onviewresize_event.md - view size was changed by resizer
 }}
 
 
@@ -119,8 +123,11 @@ Other
 {{links
 - api/link/ui.counter_$formelement_other.md - flag which instruct to process such view as form input
 - api/link/ui.counter_$getsize_other.md - returns the current size of the component
+- api/link/ui.counter_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.counter_$height_other.md - current height of the view
+- api/link/ui.counter_$renderinput_other.md - renders html for the input
 - api/link/ui.counter_$setsize_other.md - sets the component size
+- api/link/ui.counter_$setvalue_other.md - called each time when component need to set value in related html input
 - api/link/ui.counter_$skin_other.md - method, which will be called when skin defined
 - api/link/ui.counter_$view_other.md - reference to top html element of the view
 - api/link/ui.counter_$width_other.md - current width of the view

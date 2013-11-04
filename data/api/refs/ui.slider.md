@@ -68,6 +68,7 @@ Events
 - api/link/ui.slider_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.slider_onchange_event.md - fires when the value of the control is changed
 - api/ui.slider_onsliderdrag_event.md - fires when the handle of slider was dragged ( but not released yet )
+- api/link/ui.slider_onviewresize_event.md - view size was changed by resizer
 }}
 
 
@@ -120,8 +121,11 @@ Other
 {{links
 - api/link/ui.slider_$formelement_other.md - flag which instruct to process such view as form input
 - api/link/ui.slider_$getsize_other.md - returns the current size of the component
+- api/link/ui.slider_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.slider_$height_other.md - current height of the view
+- api/link/ui.slider_$renderinput_other.md - renders html for the input
 - api/link/ui.slider_$setsize_other.md - sets the component size
+- api/link/ui.slider_$setvalue_other.md - called each time when component need to set value in related html input
 - api/link/ui.slider_$skin_other.md - method, which will be called when skin defined
 - api/link/ui.slider_$view_other.md - reference to top html element of the view
 - api/link/ui.slider_$width_other.md - current width of the view

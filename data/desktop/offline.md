@@ -1,106 +1,111 @@
-Offline Support
+Webix Storage Interface
 =============
 
-Offline support is a handy feature for developers to keep in mind. It enables application work in an offline mode by storing data locally in your browser cache that acts as a 'medium' storage for data loaded from server. 
+Webix library offers its own API for working with application cache and browser local storages - permanent cache, per session cache and cookies.
 
-Files subject to caching, should be listed in a cache manifest, a typically HTML5 feature, which allows for differentiating between files available in an offline mode from those available when you are connected. 
+Accordingly, **webix.storage** module contains three objects: 
 
-##Cache Manifest
+- [webix.storage.local](api/refs/storage.local.md) - works with window localStorage object;
+- [webix.storage.session](api/refs/storage.session.md) - works with window sessionStorage object;
+- [webix.storage.cookie](api/refs/storage.cookie.md) - works with document cookie object.
 
-Firstly, the manifest is included into each webpage you'd like to be cached. 
+The objects share three methods:
+
+- **put**(*name, data, [domain, expires]*) - the last two params concern only cookie storage. The method allows putting data to browser cache under the stated name. Data is passed as JSON object;
+- **get**(*name*) -  the method derived stored data from local cache for further usage. Data comes in JSON format;
+- **remove**(*name, [domain]*) - the last param concern only cookie storage. The method removes data saved under the stated name from local cache.  
+
+##Working with Local Storage
+
+Local storage can be used for storing any application data, e.g. current state of a component derived with [getState()](api/datastate_getstate.md) method. 
+
+To do this, you **put()** state object into Webix local storage under a **custom name**. Data you save should be in **JSON** format(which is exactly what getState() returns). 
 
 ~~~js
-<!DOCTYPE html>
-<html manifest="app.appcache">
+function save_state(){
+	webix.storage.local.put("state", grid.getState());
+}
 ~~~
 
-Secondly, manifest details are specified in the *app.appcache* file. As a rule, the following files should be cached: 
+If data you'd like to save is plain Javascript object, apply Webix [serialize()](api/datastore_serialize.md) method to it. 
+
+To retrieve data from local storage, use **get()** method pointing to the name under which you've save this or that data. 
 
 ~~~js
-offline_app.html //each application file itself, 
-
-../../../codebase/webix.js //library files
-../../../codebase/webix.css
-
-data/data.json //data-loading file 
-~~~
-
-##Local Storage
-
-Once the connection with the internet has been established, data is loaded into the component and, additionally, is cached to your local machine. In case of a disconnect, the data is loaded from cache as well as all the changes 
-you've made are cached until you can connect to the server again. 
-
-The results of the CRUD (create, read, update, delete) operations are sent back to server each time a user makes an update request. 
-
-- If you are **connected** to the network data is updated on server AND on local machine. 
-- Otherwise(**server is unavailable**), the update concerns only the copy in cache. Later, on successful update request - in an online mode - the latest copy of the cached data is pushed to server.  
-
-This functionality is set within the [load](api/link/dataloader_load.md) function where you specify the loading pattern. 
-
-You can get to the browser cache through the library's **[webix.storage.local](api/refs/storage.local.md)** interface where you put the data and get it later. 
-
-- **webix.storage.local.put**("key", "data"); - adds the specified data to the local storage and saves it under the specified key;
-- **webix.local.storage.get**(key); - gets the data saved from the local storage by the specified key. 
-
-These methods should be used in a **load** function of the **url** object. 
-
-~~~js
-webix.ui({
-	view:"some_component",
-	...
-    url:{
-		$proxy:true, //  a flag used to pass loading to the load function below
-		load:function(){
-        ...}
-        }
-   })        
-~~~
-
-##Offline Support Logic
-
-The logic of the necessary loading pattern is as follows: 
-
-
-1 .  On component initialization the data is **loaded from server** using the url you specify AND **put to the local storage**. (Success!)
-
-2 .  New data you add/edit within the component is **cached** anyway, regardless of current network availability. For these needs, the **put()** method is attached to the view through the **"onEditStop"** event; 
-
-3 .  Since data  is stored locally in **JSON** format, any newly added data must be **serialized**, i.e. transformed to the JSON object. It's performed with the **serialize** function;
-
-4 .  **On update request** the app checks whether it an online or an offline mode:
-	
-- **online** (success): the data is updated in the component and on server using the url you specify AND put to the local storage. 
-- **offline** (error): the data comes from the local storage, both data that was loaded intially plus changes you've made while offline. **Parse()** method is used here to parse a JSON string from your browser cache. 
-
-{{snippet
-Datatable Offline
-}}
-~~~js
-webix.ui({
-	url:
-	{	
-		$proxy: true,	
-		load: function(view) 
-			{	//save data after editing	
-				view.attachEvent("onAfterEditStop", function(){
-				webix.storage.local.put("app_data", this.serialize());
-				});
-				view.load("data/data.json", 
-					{success: function(text) 
-						{//fresh data, save in cache	
-						webix.storage.local.put("app_data", text)
-								},			
-					error: function() {	//probably in offline mode
-						view.parse(webix.storage.local.get("app_data"));			
-								}		
-					});	
-			}
-		} 
-})
+function restore_state() {
+	var state = webix.storage.local.get("state");
+	if (state)
+		grid.setState(state);
+}
 ~~~
 
 {{sample 
 15_datatable/18_state/01_basic.html
 }}
+
+To save and track state of a multiview-based app, follow [other instructions](desktop/history_track.md). 
+
+##Using Local Storage for Offline Support of ServerSide Applications {#app}
+
+Local storage interface can be used for **storing serverside data** in case of disconnect, which ensures that local changes won't be lost even after page refresh.
+
+Local storage functionality is set by adding a prefix of desired mode - **cache** or **offline** to you load and save scripts.
+
+~~~js
+webix.ui({
+	view:"datatable",
+    ..config..
+	url:"offline->load.php",
+	save:"offline->save.php"
+});
+~~~
+
+In either of these modes, serverside data is loaded to a component, and is additionally cached to your machine( **webix.local.put()** function is executed in background). 
+
+What happens next depends on the chosen mode:
+
+**Offline** mode: 
+
+- The component will always try to get up-to-date data data from server. If server is unavailable, data is reloaded from cache (*webix.local.get()* function is executed behind the scene). That's why you can refresh page as
+many times as you wish;
+- Data changes you make while online are pushed to server and to cache. So cache will always contain the latest copy of serverside data;
+- Data changes you make while offline, are pushed to cache only and should be sent to server manually.
+
+**Cache** mode: 
+
+- The component will work only with cached data without trying to get to server;
+- Data changes you make while either offline or online are pushed to cache and should be sent to server manually.
+
+Working with cached data
+
+Read also main [Offline Support](desktop/server_offline.md) article. 
+
+Although Webix library offers a ready-to-use solution, you can write your own [proxy object](desktop/server_proxy.md) to enable offline support and set it as the component's **url** property:
+
+~~~js
+webix.ui({
+	view:"datatable", 
+    ..config..
+    url:{   
+        $proxy: true,   
+        load: function(view) {//save data after editing   
+             view.attachEvent("onAfterEditStop", function(){
+             	webix.storage.local.put("app_data", this.serialize());
+              });
+             view.load("data/data.json", {
+             	success: function(text){//fresh data, save in cache    
+                     webix.storage.local.put("app_data", text)
+                },          
+                error: function(){ //probably in offline mode
+                     view.parse(webix.storage.local.get("app_data"));            
+                }       
+            }); 
+        }
+     } 
+});
+~~~
+
+- **onAfterEditStop** event is used to catch data changes and put edited data to cache;
+- cached data is inline data, that's why it is **parsed** into a component, not loaded. 
 
 @complexity:3

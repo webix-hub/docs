@@ -20,6 +20,7 @@ Events
 - api/link/ui.proto_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.proto_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation
 - api/link/ui.proto_onvalidationsuccess_event.md - fires after the newlyloaded/added/edited data has passes validation successfully
+- api/link/ui.proto_onviewresize_event.md - view size was changed by resizer
 }}
 
 @index:
@@ -40,5 +41,6 @@ Events
 - api/link/ui.proto_onloaderror_event.md
 - api/link/ui.proto_onvalidationerror_event.md
 - api/link/ui.proto_onvalidationsuccess_event.md
+- api/link/ui.proto_onviewresize_event.md
 
 

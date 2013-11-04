@@ -68,6 +68,7 @@ Events
 - api/link/ui.button_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.button_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/ui.button_onchange_event.md - fires when the value of the control is changed
+- api/link/ui.button_onviewresize_event.md - view size was changed by resizer
 }}
 
 
@@ -111,8 +112,10 @@ Other
 
 {{links
 - api/link/ui.button_$getsize_other.md - returns the current size of the component
+- api/ui.button_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.button_$height_other.md - current height of the view
 - api/link/ui.button_$setsize_other.md - sets the component size
+- api/ui.button_$setvalue_other.md - called each time when component need to set value in related html input
 - api/link/ui.button_$skin_other.md - method, which will be called when skin defined
 - api/link/ui.button_$view_other.md - reference to top html element of the view
 - api/link/ui.button_$width_other.md - current width of the view

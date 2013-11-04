@@ -83,6 +83,7 @@ Events
 - api/link/ui.htmlform_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.htmlform_onvalidationerror_event.md - fires when the form fails to pass validation
 - api/link/ui.htmlform_onvalidationsuccess_event.md - fires after the form has passes validation successfully
+- api/link/ui.htmlform_onviewresize_event.md - view size was changed by resizer
 }}
 
 

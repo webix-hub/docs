@@ -88,6 +88,7 @@ Methods
 - api/ui.datatable_getselectedid.md - returns the selected cells
 - api/ui.datatable_getselection.md - returns the ids of the selected cell(s)
 - api/link/ui.datatable_getstate.md - returns the current state of the view
+- api/ui.datatable_gettext.md - returns text value of a cell
 - api/link/ui.datatable_gettopparentview.md - returns top parent view
 - api/ui.datatable_getvisiblecount.md - returns count of visible rows
 - api/link/ui.datatable_group.md - groups data by the specified data property
@@ -204,6 +205,7 @@ Events
 - api/ui.datatable_onstructureupdate_event.md - fires when structure of datatable was changed ( column added, hidden or reconfigured )
 - api/link/ui.datatable_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation
 - api/link/ui.datatable_onvalidationsuccess_event.md - fires after the newlyloaded/added/edited data has passes validation successfully
+- api/link/ui.datatable_onviewresize_event.md - view size was changed by resizer
 }}
 
 

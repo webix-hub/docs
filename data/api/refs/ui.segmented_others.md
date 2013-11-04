@@ -5,8 +5,11 @@ Others
 {{links
 - api/link/ui.segmented_$formelement_other.md - flag which instruct to process such view as form input
 - api/link/ui.segmented_$getsize_other.md - returns the current size of the component
+- api/link/ui.segmented_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.segmented_$height_other.md - current height of the view
+- api/link/ui.segmented_$renderinput_other.md - renders html for the input
 - api/link/ui.segmented_$setsize_other.md - sets the component size
+- api/link/ui.segmented_$setvalue_other.md - called each time when component need to set value in related html input
 - api/link/ui.segmented_$skin_other.md - method, which will be called when skin defined
 - api/link/ui.segmented_$view_other.md - reference to top html element of the view
 - api/link/ui.segmented_$width_other.md - current width of the view
@@ -19,8 +22,11 @@ Others
 @index:
 - api/link/ui.segmented_$formelement_other.md
 - api/link/ui.segmented_$getsize_other.md
+- api/link/ui.segmented_$getvalue_other.md
 - api/link/ui.segmented_$height_other.md
+- api/link/ui.segmented_$renderinput_other.md
 - api/link/ui.segmented_$setsize_other.md
+- api/link/ui.segmented_$setvalue_other.md
 - api/link/ui.segmented_$skin_other.md
 - api/link/ui.segmented_$view_other.md
 - api/link/ui.segmented_$width_other.md

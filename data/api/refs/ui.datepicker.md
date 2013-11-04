@@ -69,6 +69,7 @@ Events
 - api/link/ui.datepicker_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.datepicker_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.datepicker_onchange_event.md - fires when the value of the control is changed
+- api/link/ui.datepicker_onviewresize_event.md - view size was changed by resizer
 }}
 
 
@@ -122,8 +123,11 @@ Other
 {{links
 - api/link/ui.datepicker_$formelement_other.md - flag which instruct to process such view as form input
 - api/link/ui.datepicker_$getsize_other.md - returns the current size of the component
+- api/link/ui.datepicker_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.datepicker_$height_other.md - current height of the view
+- api/link/ui.datepicker_$renderinput_other.md - renders html for the input
 - api/link/ui.datepicker_$setsize_other.md - sets the component size
+- api/link/ui.datepicker_$setvalue_other.md - called each time when component need to set value in related html input
 - api/link/ui.datepicker_$skin_other.md - method, which will be called when skin defined
 - api/link/ui.datepicker_$view_other.md - reference to top html element of the view
 - api/link/ui.datepicker_$width_other.md - current width of the view

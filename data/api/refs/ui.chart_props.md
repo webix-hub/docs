@@ -21,6 +21,7 @@ Properties
 - api/link/ui.chart_disabled_config.md - disables item
 - api/ui.chart_eventradius_config.md - sets the radius (in pixels) of the virtual circle which events will fire for items within
 - api/ui.chart_fill_config.md - fills the chart area with the specified background color.
+- api/ui.chart_fixoverflow_config.md - chart max limit mode
 - api/ui.chart_gradient_config.md - specifies the chart gradient
 - api/link/ui.chart_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.chart_height_config.md - sets the height of the component
@@ -87,6 +88,7 @@ Properties
 - api/link/ui.chart_disabled_config.md
 - api/ui.chart_eventradius_config.md
 - api/ui.chart_fill_config.md
+- api/ui.chart_fixoverflow_config.md
 - api/ui.chart_gradient_config.md
 - api/link/ui.chart_gravity_config.md
 - api/link/ui.chart_height_config.md

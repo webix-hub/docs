@@ -97,6 +97,7 @@ Methods
 - api/link/ui.treetable_getscrollstate.md - returns the current position of scrolls
 - api/link/ui.treetable_getselectedid.md - returns the selected cells
 - api/link/ui.treetable_getstate.md - returns the current state of the view
+- api/link/ui.treetable_gettext.md - returns text value of a cell
 - api/link/ui.treetable_gettopparentview.md - returns top parent view
 - api/link/ui.treetable_getvisiblecount.md - returns count of visible rows
 - api/link/ui.treetable_group.md - groups data by the specified data property
@@ -221,6 +222,7 @@ Events
 - api/link/ui.treetable_onstructureupdate_event.md - fires when structure of datatable was changed ( column added, hidden or reconfigured )
 - api/link/ui.treetable_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation
 - api/link/ui.treetable_onvalidationsuccess_event.md - fires after the newlyloaded/added/edited data has passes validation successfully
+- api/link/ui.treetable_onviewresize_event.md - view size was changed by resizer
 }}
 
 

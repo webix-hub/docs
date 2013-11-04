@@ -11,6 +11,7 @@ Events
 - api/link/ui.resizer_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.resizer_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.resizer_onmouseout_event.md - fires when the mouse was moved out from the specified item
+- api/link/ui.resizer_onviewresize_event.md - view size was changed by resizer
 }}
 
 @index:
@@ -22,5 +23,6 @@ Events
 - api/link/ui.resizer_onmousemove_event.md
 - api/link/ui.resizer_onmousemoving_event.md
 - api/link/ui.resizer_onmouseout_event.md
+- api/link/ui.resizer_onviewresize_event.md
 
 

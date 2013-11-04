@@ -227,5 +227,4 @@ $$("upl1").attachEvent("onUploadComplete", function(){
  - desktop/configuring_uploader.md
  - desktop/uploader_serverside.md
  - desktop/progress_bar.md
- - desktop/uploader_integration.md
  - desktop/apionly_uploader.md

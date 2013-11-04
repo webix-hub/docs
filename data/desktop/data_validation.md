@@ -109,19 +109,37 @@ Message boxes of all types are described [here](desktop/message_boxes.md).
 
 ##Validation Rules {#rules}
 
-The function checks if data complies to certain rules defined in the **rules** object that contains a collection of **property-rule** pairs. Predefined rules are accessed through **webix.rules** class. 
+The **validate()** function checks if data complies to certain rules defined in the **rules** object that contains a collection of **property-rule** pairs. Predefined rules are accessed through **webix.rules** class. 
 
 **Form validation**
 
-Here you need to specify **name** of the validated control and a rule for it. **Name** is read-only property that can be assigned to any input of the form/ htmlform. 
+Here you attach rules to inputs by their **names**. **Name** is read-only property that can be assigned to any input of the form/ htmlform. 
+
+You can do this either within **rules** object property of the form component:
 
 ~~~js
-view:"form", //any view
+view:"form", elements:[
+	{view:"text", name:"field1"},
+    {view:"text", name:"field2"}
+],
 rules:{
-	field1_name:rule1,
-    field2_name:rule2
+	field1:rule1,
+    field2:rule2
 }
 ~~~
+
+{{sample 13_form/04_validation/01_basic.html}}
+
+Or, you can attach a rule right in the **input constructor** as value of its **validate** property:
+
+~~~js
+view:"form", elements:[
+	{ view:"text", label:'Is a Number', validate:webix.rules.isNumber, name:"text2" },
+    { view:"text", label:'Is an Email', validate:webix.rules.isEmail, name:"text3" }
+]    
+~~~
+
+{{sample 13_form/04_validation/11_per_item_validation.html }}
 
 **Component Data Validation**
 
@@ -149,19 +167,32 @@ There're three of them:
 
 ~~~js
 webix.ui({
-		view:"form1",
-        elements:[
-               { view:"text", label:'Login', name:"login"},
-				....],
-		rules:{
-			login: webix.rules.isNotEmpty,
-			email: webix.rules.isNumber,
-			phone: webix.rules.isEmail
-			}
-	});
+	view:"form1",
+	elements:[
+		{ view:"text", label:'Login', name:"login"},
+		....],
+	rules:{
+		login: webix.rules.isNotEmpty,
+		email: webix.rules.isNumber,
+		phone: webix.rules.isEmail
+	}
+});
 ~~~
 
 {{sample 13_form/04_validation/06_validation_rules.html}}
+
+{{note
+Note that in case you define rules within input constructor, the **isNotEmpty** rule can be substituted by **required** property.
+}}
+
+~~~js
+//it's better to use
+{ view:"text", label:'Not empty', required:true }
+//instead of 
+{ view:"text", label:'Not Empty', validate:webix.rules.isNotEmpty }
+
+
+~~~
 
 ##Custom Rules
 

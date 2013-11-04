@@ -73,6 +73,7 @@ Methods
 - api/link/ui.treetable_getscrollstate.md - returns the current position of scrolls
 - api/link/ui.treetable_getselectedid.md - returns the selected cells
 - api/link/ui.treetable_getstate.md - returns the current state of the view
+- api/link/ui.treetable_gettext.md - returns text value of a cell
 - api/link/ui.treetable_gettopparentview.md - returns top parent view
 - api/link/ui.treetable_getvisiblecount.md - returns count of visible rows
 - api/link/ui.treetable_group.md - groups data by the specified data property
@@ -208,6 +209,7 @@ Methods
 - api/link/ui.treetable_getscrollstate.md
 - api/link/ui.treetable_getselectedid.md
 - api/link/ui.treetable_getstate.md
+- api/link/ui.treetable_gettext.md
 - api/link/ui.treetable_gettopparentview.md
 - api/link/ui.treetable_getvisiblecount.md
 - api/link/ui.treetable_group.md

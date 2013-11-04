@@ -64,6 +64,7 @@ Events
 - api/link/ui.pager_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.pager_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.pager_onmouseout_event.md - fires when the mouse was moved out from the specified item
+- api/link/ui.pager_onviewresize_event.md - view size was changed by resizer
 }}
 
 
