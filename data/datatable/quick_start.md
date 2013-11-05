@@ -36,6 +36,30 @@ A basic html page with the included DataTable code files
 </html>
 ~~~
 
+
+###Including Webix files via Package Managers
+
+OR, as an **alternative** to downloading, you can install Webix library via such package managers as **NuGet** and **Bower**.
+
+Installing Webix requires by means of these tools requires executing just a line of code inside them (you don't need to download anything):
+
+{{snippet
+NuGet
+}}
+~~~js
+nuget install Webix
+
+//If you use Microsoft Visual Studio, execute this from Package Manager Console
+install-package Webix
+~~~
+
+{{snippet
+Bower
+}}
+~~~js
+bower install webix
+~~~
+
 Placing DataTable on a page
 ------------------------------------
 

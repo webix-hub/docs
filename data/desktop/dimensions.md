@@ -5,6 +5,7 @@ You can set dimensions for the components and their items in three ways.
 
 - [Fixed Sizing](#fix)
 - [Auto Sizing](#auto)
+- [Adjusting mobile apps to screen size](#mobile)
 - [Relative Sizing](#rel)
 - [Dynamic sizing](#dyn)
 
@@ -175,6 +176,19 @@ Note that even in case these HTML elements are different for different items, th
 At the same time, some of them may be smaller or bigger. 
 
 {{sample 06_dataview/01_initialization/05_type_sizing.html }}
+
+##Adjusting Mobile Apps to Screen Size {#mobile}
+
+Webix offers “full screen” mode to make the application take all available screen space while at the same time hiding browser’s toolbars. In this mode, the app will take up the entire screen of the mobile device. 
+
+Fullscreen mode is enables with **webix.ui.fullScreen()** command before UI initialization:
+
+~~~js
+webix.ui.fullScreen();
+webix.ui({
+	rows:[...]
+});
+~~~
 
 ##Relative Sizing {#rel}
 

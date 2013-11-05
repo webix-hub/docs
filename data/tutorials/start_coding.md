@@ -5,8 +5,8 @@ Working with the Webix library  you should go though typical development stages 
 choosing components and designing the app to foresee the result and finish it all with the coding itself, which is merely a technical side. 
 
 - [Setting the goal](#setgoal)
+- [Preparing Workspace](#coding)
 - [Designing](#design)
-- [Coding](#coding)
 - [Main principles of coding with the webix](#main)
 - [HTML Containers](#html)
 - [Code Optimization](#optim)
@@ -18,35 +18,25 @@ choosing components and designing the app to foresee the result and finish it al
 At this stage your should determine the app's functionlity and evaluate the means of achieving this goal. You should clearly see the purpose 
 of your future app and try to imagine all possible features it may need to meet the requirements. 
 
-##Designing {#design}
 
-Here you think about the app's layout, its look-and-feel, build color scheme and, of course, select all the components for it. You should already 
-decide how the components would be related to each other. [Building App Architecture](desktop/building_app_architecture.md) article will help you
-position components and make you acquainted with layout types the library offers. 
-
-Further on, there're a number of data-presenting [components](desktop/components.md) and special features like toolbar, menu and calendar that would
-breathe life into your app and make it dynamically change to implement all the functions you wish from it. 
-
-The library is supplied with a rich set of samples to show you how the components look and perform in reality. So you won't regret having spent some time 
-studying them.
-
-So, there comes time for creativity, so put on your chinking cap and pass to coding. 
-
-##Coding {#coding}
+##Preparing Workspace {#coding}
 
 At this stage you define all the properties of your app and its components, play with event handlers and apply methods for your app to dance in the
 hands of users. You can check the state of your app in the realtime just as you've put the last braket/brace/colon after the code piece. 
 
-The lib package includes two versions - **debug** and **standard** one. Debug version helps control the app during the development stage while standard script version goes for ready-made products. Both scripts are 
-identical in terms of component building yet **ui_debug.js** version includes a number of handy debugging tools. Read more about the [bonuses of the debug version](desktop/debug.md). 
+The lib package you [download](http://webix.com/download-webix-gpl) from the site includes two versions - **debug** and **standard** one. Debug version helps control the app during the development stage while standard script version goes for ready-made products. Both scripts are 
+identical in terms of component building yet **webix_debug.js** version includes a number of handy debugging tools. Read more about the [bonuses of the debug version](desktop/debug.md). 
 
 All the coding can be done in any text editor that is capable of syntax highlighting (just for convenience sake) and save the code to desired format
 (js, html, php, xml etc.). 
 
-At the initial stage, don't forget to include Webix library files (standard or debug script version) into your html-document, to be more precise - into its head section. Be attentive to 
-specify the right relative path to the files from app directory to their one. It's recommended to use HTML5 doctype.  
+At the initial stage, you need to include Webix library files into your document. It's recommended to use HTML5 doctype.  
 
-  
+###Including Webix Files from Downloaded Package
+
+Compulsory Webix files from the downloaded package are **webix.js** and **webix.css**. They are included via standard script and link attributes. Be attentive to specify the right relative path to the files. 
+
+This method allows choosing between [debug](desktop/debug.md) and production version. 
 
 ~~~html
 <!DOCTYPE HTML>// specifies document type
@@ -63,6 +53,46 @@ specify the right relative path to the files from app directory to their one. It
     </body>
 </html>
 ~~~
+
+###Including Webix files via Package Managers
+
+As an **alternative** to downloading, Webix lib can be installed via special dependency management tools. For now, Webix library is integrated with: 
+
+- **NuGet** package manager for the Microsoft development platform; 
+- **Bower** package manager for the web.
+
+Installing Webix requires by means of these tools requires executing just a line of code inside them (you don't need to download anything):
+
+{{snippet
+NuGet
+}}
+~~~js
+nuget install Webix
+
+//If you use Microsoft Visual Studio, execute this from Package Manager Console
+install-package Webix
+~~~
+
+{{snippet
+Bower
+}}
+~~~js
+bower install webix
+~~~
+
+##Designing {#design}
+
+Here you think about the app's layout, its look-and-feel, build color scheme and, of course, select all the components for it. You should already 
+decide how the components would be related to each other. [Building App Architecture](desktop/building_app_architecture.md) article will help you
+position components and make you acquainted with layout types the library offers. 
+
+Further on, there're a number of data-presenting [components](desktop/components.md) and special features like toolbar, menu and calendar that would
+breathe life into your app and make it dynamically change to implement all the functions you wish from it. 
+
+The library is supplied with a rich set of samples to show you how the components look and perform in reality. So you won't regret having spent some time 
+studying them.
+
+So, there comes time for creativity, so put on your chinking cap and pass to coding. 
 
 ##Main principles of coding with the Webix {#main}
 

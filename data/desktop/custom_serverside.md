@@ -21,6 +21,8 @@ The following basic instructions will help you tune your scripts to return data 
 - [Data Saving](#save)
 - [Tuning serverside response](#response)
 
+If you are unsure what to do in case you need to get data from a **different domain** with relations to your app's one, consult the our solution to [cross-domain data loading](desktop/crossdomain_loading.md).
+
 ##Data Loading {#load}
 
 Webix components support incoming data in JSON, JSArray, XML, HTMLtable and CSV [formats](desktop/data_types.md), so ensure that your script returns data properly formatted. 

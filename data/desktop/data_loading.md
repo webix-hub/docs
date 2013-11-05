@@ -242,6 +242,15 @@ function parse(){
 
 {{sample 06_dataview/03_loading/01_xml.html }}
 
+If you want to parse data in addition to the existing dataset, specify **position** of parsing, namely the **index** from which you insert new data:
+
+~~~js
+$$("datatable").parse({
+      pos: $$("datatable").count(), //number of records will be right the last index +1
+      data:dataset
+  });
+~~~
+
 ##Data Parsing Events
 
 - **onParse** - fires when the component is ready to receive inline data

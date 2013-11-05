@@ -33,7 +33,11 @@ $$("dtable").load("myscript.php", "xml");
 - In case of long datasets [dynamic loading](desktop/dynamic_loading.md) functionality will be helpful;
 - Default loading pattern can be [customized](desktop/server_customload.md) - specific loading modes, ajax helper for passing params into load script.
 
-More info about custom scripts is in the [dedicated article](desktop/custom_serverside.md);
+More info about custom scripts is in the [dedicated article](desktop/custom_serverside.md).
+
+If you are unsure what to do in case you need to get data from a **different domain** with relations to your app's one, consult the our solution to [cross-domain data loading](desktop/crossdomain_loading.md).
+
+
 
 ##Data Saving
 

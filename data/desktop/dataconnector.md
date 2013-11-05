@@ -43,8 +43,9 @@ webix.ui({
 $$("grid").load("server/data.php");
 ~~~
 
-- Datatype can be omitted in case of JSONDataConnector usage since it returns data in default JSON format. 
-- In case of long datasets, make use of [dynamic loading](desktop/dynamic_loading.md) functionality. 
+- Datatype can be omitted in case of JSONDataConnector usage since it returns data in default JSON format;
+- In case of long datasets, make use of [dynamic loading](desktop/dynamic_loading.md) functionality;
+- If you are unsure what to do in case you need to get data from a **different domain** with relations to your app's one, consult the our solution to [cross-domain data loading](desktop/crossdomain_loading.md).
 
 ##Connector Based Script (PHP Solution)
 
