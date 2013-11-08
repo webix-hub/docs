@@ -10,11 +10,11 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
      <tr>
 		<td id="design" class='topics' style="vertical-align:text-top;">
 		    <h4 id='ui' style="margin-bottom:4px;">
-		        <a href="pivot.md"> Pivot </a>
+		        <a href="desktop/pivot.md"> Pivot </a>
 		    </h4>
 		    A pivot table that helps you to summarize large numeric data sets in one spot.
 		</td>
-		<td class='topic_description' style="text-align: center; padding:20px;"> <a href="pivot.md"><img src="media/desktop/pivot_extension.png"></a></td>
+		<td class='topic_description' style="text-align: center; padding:20px;"> <a href="desktop/pivot.md"><img src="media/desktop/pivot_extension.png"></a></td>
 	</tr>
      <tr>
 		<td id="design" class='topics' style="vertical-align:text-top;">
@@ -56,7 +56,11 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
 </table>
 
 @index:
-- pivot.md
+- desktop/pivot.md
+- desktop/text_editors.md
+- desktop/scheduler.md
+- desktop/chart_integration.md
+- desktop/maps.md
 
 
 .webixdoc_content .topic_description {

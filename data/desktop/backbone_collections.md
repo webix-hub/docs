@@ -1,55 +1,62 @@
 Backbone Collections
 ==============
 
-Backbone Collection is a set of Models. Model-View pattern was described [a step earlier](desktop/backbone.md).
+While Webix components has their own logic to load and save data, you can use Backbone Collection as source of data, and handle loading and saving in Backbone's way. 
+There is no any special requirement, andy Backbone Collection can be used as a source of data for Webix Component. 
 
-During Collection initialization we refer to the Model it contains and specify its location on server (Models within the colleciton will construct their own url-s). 
 
-~~~js
-var Borglist = Backbone.Collection.Extend({
-	model: BorgItem;
-    url: '.../common/data.json' 
-  		});
-        
-var borgs = new Borglist(); // instance of the Borglist Collection 
+### Data loading
 
-borgs.bind('all', app.render, app); 
-// collection is bound to views (app) and for any triggered event the view is re-rendered
-~~~
-
-View is compiled of several views, each of which is inited according to the following pattern (notice that here we don't specify the DOM element for the view like we did it earlier)
+Each data component has "sync" method, which can be used to load data from Backbone Collection
 
 ~~~js
-var BorgView = Backbone.View.extend({
-					template:_.template("<h3><%= name %></h3><li>Size: <%= size %></li><li>Age: <%= age %></li>"),
-					render:function(){
-						var html = this.template(this.model.toJSON());
-						$(this.el).html(html);
-					}
-				});
+//creating colleciton 
+FilmRecord = Backbone.Model.extend({});
+FilmList = Backbone.Collection.extend({
+	model: FilmRecord,
+	url:"./common/data.json"
+});
+
+films = new FilmList();
+films.fetch();
+            
+//createing Webix List
+var list = $(".app1_here").webix_list({
+	template:"#title#", select:true
+});
+//loading data from collection in to the list
+list.sync(films);
 ~~~
 
-The views are populated with collection data. Each new instance of the Borgview is populated with data from the model and is added to the previous instance. 
+{{sample 30_backbone/03_load_collection.html }}
+
+
+After sync command any changes to the films collection will be reflected in the list.
+Also, any changes, done by list API ( adding, deleting, editing ) will be reflected in collection as well. 
+
+
+### Data Saving
+
+While changes in component will be reflected in collection, they will not trigger data saving on their own. Instead of that Webix adds additional events, which can be handled to enable data saving
 
 ~~~js
-var BorgsView = Backbone.View.extend({
-					el:$$("center").$view, //DOM element with ID 'center'
-					render:function(){
-						this.collection.forEach(function(borg){
-							var view = new BorgView({model:borg});
-								view.render();
-							this.$el.append(view.el)
-						}, this);
-					}
-				});
-
-var app = new Borgsview({collection:borgs}); //collection for the view is 'BorgList'
-
-app.render(); // the view is rendered
+films.on("webix:add webix:change", function(model){
+	model.save();
+});
+films.on("webix:remove", function(model){
+				model.destroy();
+			});
 ~~~
-{{sample 30_backbone/02_list.html }}
- 
-###Related Articles:
- 
- - [CRUD Operations with Backbone Integration](desktop/backbone_crud.md)
- - [Working with Backbone Routers](desktop/backbone_routers.md)
+
+{{sample 30_backbone/04_save_collection.html }}
+
+
+### Loading data in Form
+
+Not all components can work with Collections directly. Components that represent only one model can't use sync API, instead of it you can use "parse" API to load data in them
+
+~~~js
+$$("form").parse( films.first().toJSON() );
+~~~
+
+This command loads data from the model in the form, but any changes in form or in model will not be reflected or saved. 

@@ -1,86 +1,158 @@
 Working with Backbone Routers
 ===========================
 
-##History API
+## BackBone Router - Webix Way
 
-The most important locations in the app have permalinks for users to easily navigate between them. Earlier these links were defined with the help of hash fragments like *#page*, but 
-with the arrival of history API such links can be defined as standard url-s (*/page*). 
-
-BackboneJS framework features the special **Backbone.Routes** class to enable this functionality and allow for easy navigation between app parts while connecting these parts to user actions and events. 
-
-##BackBone Router
-
-Take that you have a list and a template and you want to manipulate list items. List data is taken from Backbone Collection that contains a dedicated model. See how is was without navigation in the 
-[corresponding chapter](desktop/backbone_crud.md)
-
-Now, let's create a **Backbone Router**. 
-
-The new Router contains **possible routes** within the app and possible actions that are triggered once the navigation operation is performed: 
+Take that you have a list and a template and you want to show one or another based on the app state. 
+To create a UI we can use a Webix code like next:
 
 ~~~js
-var routes = new (Backbone.Router.extend({
-			routes:{
-				"":"index", 
-				"borgs/:id":"details"
-			},
-			details:function(id){
-				$$("listA").select(id);
-				$$("details_tab").show();
-				$$("details").parse(borgs.get(id).attributes);
-			},
-			index:function(){
-				$$("list_tab").show();
-			}
-	}));
-~~~
-
-####Comments: 
-
-Within this app two routes are possible, each of which is explained in corresponding sections of the Router Object:
-
-- the default one, the **index view**, the front page of the app. It is called 'list_tab' and loads initially. 
-- the route that will open the component with the **"details"** ID. The link depends on the list item you select on the front page (**borgs/1, borgs/2**, etc). When you go by this link, *'detils_tab'* is shown and there
-appear properties of a list item you've selected. 
-
-##Navigation 
-
-To start navigation, you should define it start point during page load, after your application has finished creating all of its routers. 
-
-Here navigation starts as soon as Collection has grabbed all the data from the datasource. 
-
-~~~js
-borgs.fetch({  //var borgs = new BorgList(); - our Backbone Collection Object
-		success:function(){
-		Backbone.history.start();		
-			}
+webix.ui({
+	container:"app1_here", rows:[
+		{ template:"Click on item", type:"header" },
+		{
+			cells:[
+				{ view:"list", url:"common/data.json", template:"#title#", select:true, id:"mylist"},
+				{ template:"Details page<br>not implemented :)<br><button onclick='history.back()'>Back</button>", id:"details" }
+			]
+		}
+	]
 });
 ~~~
 
-Navigation between app parts is enabled on user actions: 
-
-1 . When a list item is selected, you go to **bord/id** page, the ID being taken from the list item: 
+Now, let's create a **Backbone Router**. 
 
 ~~~js
-$$("listA").attachEvent("onAfterSelect", function(id){
-					routes.navigate("borgs/"+id, {trigger:true})
-				});
+var routes = new (Backbone.Router.extend({
+	routes:{
+		"":"index", 
+		"films/:id":"details"
+	},
+	details:function(id){
+		$$("details").show();
+	},
+	index:function(){
+		$$("mylist").show();
+	}
+}));
 ~~~
 
-2 . When you click a **Back** button, the app goes back to the front page:
+As you can see the router shows the necessary view based on current document url. To have app working we need to add few more lines of code
 
 ~~~js
-{ view:"button", label:"Back", click:function(){ routes.navigate("", {trigger:true}); }},
+$$("mylist").attachEvent("onAfterSelect", function(id){
+	routes.navigate("films/"+id, { trigger:true });
+});
+Backbone.history.start();
+~~~
+{{sample 30_backbone/06_routes_webix.html}}
+
+Those lines defines the navigation rule, after selecting item in the list and starting the router.  
+That is all. With few lines of code we have attached backbone router to the Webix View
+
+## BackBone Router - Backbone Way
+
+Now lets try to recreate the same app, but more similar to the native Backbone approach. Instead of creating Webiv UI directly, lets define a Views for both states
+
+~~~js
+var layout = new WebixView({
+	el:"#app1_here",
+	config:{
+		rows:[
+			{ template:"Click on item", type:"header" },
+			{
+				view:"list", url:"common/data.json",
+				template:"#title#", select:true,
+				id:"mylist"
+			}
+		]
+	}
+});
+
+DView = Backbone.View.extend({
+	el:"#app1_here",
+    tagName: "div",
+	render: function(){
+        $(this.el).html("Details page<br>not implemented :)<br><button onclick='history.back()'>Back</button>");
+    },
+});
+var template = new DView();
 ~~~
 
-As far as you can see, **navigate();** function has two arguments: 
+Now router will look a bit more different 
 
-- link location to set the desired URL;
-- *trigger:true* property to call the route function and update the URL.
+~~~js
+var routes = new (Backbone.Router.extend({
+	routes:{
+		"":"index", 
+		"films/:id":"details"
+	},
+	details:function(id){
+		template.render();
+	},
+	index:function(){
+		layout.render();
+		$$("mylist").attachEvent("onAfterSelect", function(id){
+			routes.navigate("films/"+id, { trigger:true });
+		});
+	}
+}));
+~~~
+{{sample 30_backbone/07_routes_views.html}}
 
-{{sample 30_backbone/04_routes.html}}
+Instead of switching the active view in Webix Layout, we are rendering different Backbone View based on current state. Still - the result behavior is the same. 
 
-###Related Articles: 
 
-- [Backbone Integration](desktop/backbone.md)
-- [Working with Backbone Collections](desktop/backbone_collections.md)
-- [CRUD Operation with Backbone Integration](desktop/backbone_crud.md)
+### Updating section of layout
+
+When using Views we can update not only top View, but some section in Webix Layout
+
+Lets create 3 View, one will be used as layout, two others - sections which can be shown in our layout in different cases
+
+~~~js
+var template = new WebixView({
+	config:{ template:"Details page<br>not implemented :)<br><button onclick='history.back()'>Back</button>" }
+});
+var list = new WebixView({
+	config:{
+		view:"list", url:"common/data.json",
+		template:"#title#", select:true,
+		id:"mylist"
+	}
+});
+var layout = new WebixView({
+	el:"#app1_here",
+	config:{
+		rows:[
+			{ template:"Click on item", type:"header" },
+			{ }
+		]
+	}
+});
+~~~
+
+Now router will look like next
+
+~~~js
+var routes = new (Backbone.Router.extend({
+	routes:{
+		"":"index", 
+		"films/:id":"details"
+	},
+	details:function(id){
+		template.el = layout.root.getChildViews()[1];
+		template.render();
+	},
+	index:function(){
+		list.el = layout.root.getChildViews()[1];
+		list.render();
+		$$("mylist").attachEvent("onAfterSelect", function(id){
+			routes.navigate("films/"+id, { trigger:true });
+		});
+	}
+}));
+~~~
+
+Above code locates necessary cell in the layout and renders the View in the target cell. 
+
+{{sample 30_backbone/08_routes_layout.html}}
