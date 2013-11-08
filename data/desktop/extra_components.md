@@ -1,6 +1,6 @@
-Extra components
+Extensions
 ================
 
 {{index
-- pivot.md
+- desktop/pivot.md
 }}
