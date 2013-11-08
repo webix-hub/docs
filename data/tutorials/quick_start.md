@@ -14,7 +14,9 @@ allow saving text files to html format as well as correctly process script and s
 
 1 . Create a simple html-page. Specify **HTML5** doctype for it.
 
-2 . Download the library. Include **webix.js** and **webix.css** files into the document's head section.
+2 . Install Webix for your future app. There can be several ways:
+
+- Download and unzip the library to the necessary directory. Include **webix.js** and **webix.css** files into the document's head section.
 
 ~~~html
 <!DOCTYPE HTML>// specifies document type
@@ -31,6 +33,25 @@ allow saving text files to html format as well as correctly process script and s
         </script>
     </body>
 </html>
+~~~
+
+- OR, as an alternative to downloading, include Webix files via **Nuget** or **Bower** package managers by a single command. You don't need to download anything.
+
+{{snippet
+NuGet
+}}
+~~~js
+nuget install Webix
+
+//If you use Microsoft Visual Studio, execute this from Package Manager Console
+install-package Webix
+~~~
+
+{{snippet
+Bower
+}}
+~~~js
+bower install webix
 ~~~
 
 ##Component Initializing
