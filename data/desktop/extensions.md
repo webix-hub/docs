@@ -10,11 +10,11 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
      <tr>
 		<td id="design" class='topics' style="vertical-align:text-top;">
 		    <h4 id='ui' style="margin-bottom:4px;">
-		        <a>Pivot </a>
+		        <a href="pivot.md"> Pivot </a>
 		    </h4>
 		    A pivot table that helps you to summarize large numeric data sets in one spot.
 		</td>
-		<td class='topic_description' style="text-align: center; padding:20px;"><img src="media/desktop/pivot_extension.png"></td>
+		<td class='topic_description' style="text-align: center; padding:20px;"> <a href="pivot.md"><img src="media/desktop/pivot_extension.png"></a></td>
 	</tr>
      <tr>
 		<td id="design" class='topics' style="vertical-align:text-top;">
@@ -30,7 +30,7 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
 		    <h4 id='ui' style="margin-bottom:4px;">
 		        <a href="desktop/maps.md">Map</a>
 		    </h4>
-		    An integration extension that allows you to add 3-rd party web maps to the app: <i>Google Maps, Open Street Maps, Yandex Maps, Here Maps</i>.
+		    An integration extension that allows you to add 3-rd party web maps to the app: <i>Google Maps, Yandex Maps, Here Maps</i>.
 		</td>
 		<td class='topic_description' style="text-align: center; padding:20px;"><a href="desktop/maps.md"><img src="media/desktop/map_extension.png"></a></td>
 	</tr>
@@ -39,7 +39,7 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
 		    <h4 id='ui' style="margin-bottom:4px;">
 		        <a href="desktop/chart_integration.md">Chart</a>
 		    </h4>
-		    An integration extension that allows you to add 3rd-party charts to the app: <i>Raphael, D3, Sigma, Just Cage</i>.
+		    An integration extension that allows you to add 3rd-party charts to the app: <i>Raphael, D3</i>.
 		</td>
 		<td class='topic_description' style="text-align: center; padding:20px;"><a href="desktop/chart_integration.md"><img src="media/desktop/chart_extension.png"></a></td>
 	</tr>
@@ -48,7 +48,7 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
 		    <h4 id='ui' style="margin-bottom:4px;">
 		        <a href="desktop/text_editors.md">Text Editor</a>
 		    </h4>
-		    An integration extension that allows you to add 3rd-party editors to the app: <i>Mercury, TinyMCE, CKEditor, Code Mirror, NicEdit</i>.
+		    An integration extension that allows you to add 3rd-party editors to the app: <i>Mercury, TinyMCE, Code Mirror, NicEdit</i>.
 		</td>
 		<td class='topic_description' style="text-align: center; padding:20px;"><a href="desktop/text_editors.md"><img src="media/desktop/editor_extension.png"></a></td>
 	</tr>
