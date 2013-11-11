@@ -1,10 +1,18 @@
-Pivot
-=====
+Pivot Table
+===========
 
 **Webix Pivot** is fully clientside Javascript datatable with **extended filtering capabilities** to allow for **well-organized visual reports** made over large and complex datasets at a high speed.
 With Pivot you can easily compare, filter and sort data within one table as well as change the analysis pattern on the flow. 
 
-##Pivot design and Usage
+
+## External resources
+
+- You can [download extensions](http://pivot.webix.com/webix_pivot.gpl.zip) from [pivot.webix.com](http://pivot.webix.com)
+- There are online samples at [pivot.webix.com/samples/](http://pivot.webix.com/samples/)
+
+
+
+##Design and Usage
 
 Webix Pivot consists of two functional parts:
 
@@ -37,11 +45,10 @@ Sample data
 
 **Balance amoung Sections**
 {{note
-You cannot drag one and the same element to different sections; inbstead, use each element either for setting a **row**, or a **column** or for **filtering** or don't use it at all (it remains in **Fields**). 
+You cannot drag one and the same element to different sections; instead, use each element either for setting a **row**, or a **column** or for **filtering** or don't use it at all (it remains in **Fields**). 
 However, **Values** section is more indendent since elements dragged to it are still available in other sections exept **Filters**.
  
 }}
-{{sample samples/01_init/01_inline_data.html}}
 
 ###Data Operations
 
@@ -68,7 +75,7 @@ If there is no operator, a filter will use text match for filtering;
 become options.
 
 
-Pivot Initialization
+Initialization
 -----------------
 
 Since Pivot tool comes as an add-on to Webix library you need to include both **Webix and Pivot scripts** and **CSS files** into you document head to make everything work. Make sure you specify relative paths to these files: 
@@ -84,7 +91,7 @@ Since Pivot tool comes as an add-on to Webix library you need to include both **
   <link rel="stylesheet" href="codebase/pivot.css" type="text/css" charset="utf-8">
  </head>
  <body>
-   <div id = "testA"></div>	 <!-- containter for Pivot -->
+   <div id = "testA"></div>  <!-- containter for Pivot -->
  </body>
 </html>
 ~~~
@@ -93,16 +100,16 @@ The initialization of Pivot doesn't differ from that of other [Webix components]
 
 ~~~js
 webix.ui({
-	view:"pivot",
+  view:"pivot",
     container:"testA", 
-	id:"pivot",
+  id:"pivot",
     max:true,
-	structure: { 
-		rows: ["form", "name"],
-		columns: ["year"],
-		values: [{ name:"gdp", operation:"sum"}, { name:"oil", operation:"sum"}],
-		filters:[]
-	}
+  structure: { 
+    rows: ["form", "name"],
+    columns: ["year"],
+    values: [{ name:"gdp", operation:"sum"}, { name:"oil", operation:"sum"}],
+    filters:[]
+  }
 });
 ~~~
 
@@ -123,7 +130,7 @@ webix.ui({
 - **values** - array of fields that will be used as pivot's data (will be displayed in datatable cells);
 - **filters** - array of fields that will be used as filters and will be displayed above the datatable columns. 
 
-Loading Data to Pivot {#load}
+Loading Data {#load}
 -----------------
 
 Pivot supports both inline and external (including serverside) data in any of the [supported data types](desktop/data_types.md):  **XML**, **JSON**, **JSArray** and **CSV**. 
@@ -145,13 +152,12 @@ To load inline data during component init, make use of api/link/dataloader_data_
 
 ~~~js
 webix.ui({
-	view:"pivot",
+  view:"pivot",
     id:"pivot",
-	data:pivot_dataset
+  data:pivot_dataset
 });
 ~~~
 
-{{sample samples/01_init/01_inline_data.html }}
 
 To load inline data after component init on some event, for instance, use the api/link/dataloader_parse.md function:
 
@@ -170,7 +176,7 @@ view:"pivot",
 url:"../load.php" // or "../data.json"
 ~~~
 
-{{sample samples/01_init/02_loading_data.html }}
+
 
 If you load data after the component has been inited (e.g. on some event), use the api/link/dataloader_load.md function:
 
@@ -192,8 +198,8 @@ Operations are set within [Pivot structure object](#struct) in **values** array.
 ~~~js
 view:"pivot",
 structure:{
-	values:[
-     	{ name:"gdp", operation:"sum"}, //gdp values will be summed
+  values:[
+      { name:"gdp", operation:"sum"}, //gdp values will be summed
         { name:"oil", operation:"max"} //max oil value will be shown
     ]
 }
@@ -227,7 +233,7 @@ And use it as:
 values:[ name:"oil", operation:"abssum"]
 ~~~
 
-{{sample samples/01_init/04_define_function.html }}
+
 
 ###Filters
 
@@ -236,8 +242,8 @@ Filters are set within [Pivot structure object](#struct) in **filters** array. *
 ~~~js
 view:"pivot",
 structure:{
-	values:[
-		{name:"name",type:"select"},
+  values:[
+    {name:"name",type:"select"},
         {name:"continent", type:"text"}
     ]
 }
@@ -261,43 +267,43 @@ In this case, you can use **fieldMap** property to set beautiful names for colum
 
 ~~~js
 webix.ui({
-	view:"pivot",
-	fieldMap:{ "a1" : "GDP", "a2" : "Grow ratio" },
+  view:"pivot",
+  fieldMap:{ "a1" : "GDP", "a2" : "Grow ratio" },
   ...
 });
 ~~~
 
-Pivot Localization
+Localization
 --------------------
 
 By defaut all names and titles in Pivot have English names, but you can change it by setting a custom locale for the page. 
 
 ~~~js
 webix.i18n.pivot = {
-	columns: "Columns",
-	count: "count",
-	fields: "Fields",
-	filters: "Filters",
-	max: "max",
-	min: "min",
-	operationNotDefined: "Operation is not defined",
-	pivotMessage: "[Click to configure]",
-	rows: "Rows",
-	select: "select",
-	sum: "sum",
-	text: "text",
-	values: "Values",
-	windowMessage: "[move fields into required sector]"
+  columns: "Columns",
+  count: "count",
+  fields: "Fields",
+  filters: "Filters",
+  max: "max",
+  min: "min",
+  operationNotDefined: "Operation is not defined",
+  pivotMessage: "[Click to configure]",
+  rows: "Rows",
+  select: "select",
+  sum: "sum",
+  text: "text",
+  values: "Values",
+  windowMessage: "[move fields into required sector]"
 };
 
 //and then init Pivot and see you custom names
 webix.ui({
-	view:"pivot",
+  view:"pivot",
     ...
 });
 ~~~
 
-Pivot API
+API
 ----------
 
 ### Getting and Setting Configuration Object
@@ -321,7 +327,7 @@ var config = {
 }
 ~~~
 
-{{sample samples/01_init/03_configuring.html}}
+
 
 ### Data export
 
@@ -345,7 +351,7 @@ This allows you use any of datatable [events](api/refs/ui.datatable_events.md) o
 ~~~js
 //attach event to selection
 datatable.attachEvent("onAfterSelect", function(id){ 
-  	webix.message("selected row: "+id); 
+    webix.message("selected row: "+id); 
 });
 
 //or get the ID of the currently selected item.
