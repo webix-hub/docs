@@ -120,6 +120,7 @@ Events
 - api/link/ui.dataview_onbeforedrag_event.md - fires before the mouse button is pressed and the cursor is moved over a draggable item
 - api/link/ui.dataview_onbeforedragin_event.md - fires before a dragged element is moved over the droppable area
 - api/link/ui.dataview_onbeforedrop_event.md - fires before a dragged element is released over the droppable area
+- api/link/ui.dataview_onbeforedropout_event.md - fires before a dragged element is released over the droppable area
 - api/link/ui.dataview_onbeforeload_event.md - occurs immediately before loading XML data has been started
 - api/link/ui.dataview_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.dataview_onbeforeselect_event.md - fires before item selection is started

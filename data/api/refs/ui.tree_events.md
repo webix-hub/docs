@@ -20,6 +20,7 @@ Events
 - api/link/ui.tree_onbeforedrag_event.md - fires before the mouse button is pressed and the cursor is moved over a draggable item
 - api/link/ui.tree_onbeforedragin_event.md - fires before a dragged element is moved over the droppable area
 - api/link/ui.tree_onbeforedrop_event.md - fires before a dragged element is released over the droppable area
+- api/link/ui.tree_onbeforedropout_event.md - fires before a dragged element is released over the droppable area
 - api/link/ui.tree_onbeforeload_event.md - occurs immediately before loading XML data has been started
 - api/link/ui.tree_onbeforeopen_event.md - fires the moment you attempt to open the tree branch
 - api/link/ui.tree_onbeforerender_event.md - occurs immediately before the component has been rendered
@@ -63,6 +64,7 @@ Events
 - api/link/ui.tree_onbeforedrag_event.md
 - api/link/ui.tree_onbeforedragin_event.md
 - api/link/ui.tree_onbeforedrop_event.md
+- api/link/ui.tree_onbeforedropout_event.md
 - api/link/ui.tree_onbeforeload_event.md
 - api/link/ui.tree_onbeforeopen_event.md
 - api/link/ui.tree_onbeforerender_event.md

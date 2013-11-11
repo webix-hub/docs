@@ -41,6 +41,7 @@ Methods
 - api/link/ui.scrollview_isenabled.md - checks whether the view is enabled
 - api/link/ui.scrollview_isvisible.md - checks whether the view is visible
 - api/link/ui.scrollview_resize.md - adjusts the view to a new size
+- api/ui.scrollview_resizechildren.md - resizes all children of the calling component
 - api/link/ui.scrollview_scrollto.md - scrolls the data container to a certain position
 - api/link/ui.scrollview_show.md - makes the component visible
 - api/ui.scrollview_showview.md - places focus on the necessary scrollview item

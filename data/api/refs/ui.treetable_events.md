@@ -29,6 +29,7 @@ Events
 - api/link/ui.treetable_onbeforedrag_event.md - fires before the mouse button is pressed and the cursor is moved over a draggable item
 - api/link/ui.treetable_onbeforedragin_event.md - fires before a dragged element is moved over the droppable area
 - api/link/ui.treetable_onbeforedrop_event.md - fires before a dragged element is released over the droppable area
+- api/link/ui.treetable_onbeforedropout_event.md - fires before a dragged element is released over the droppable area
 - api/link/ui.treetable_onbeforeeditstart_event.md - fires before edit operation is initiated
 - api/link/ui.treetable_onbeforeeditstop_event.md - fires before stop edit command is received
 - api/link/ui.treetable_onbeforefilter_event.md - called when filtering process is started, but data is not filtered yet
@@ -88,6 +89,7 @@ Events
 - api/link/ui.treetable_onbeforedrag_event.md
 - api/link/ui.treetable_onbeforedragin_event.md
 - api/link/ui.treetable_onbeforedrop_event.md
+- api/link/ui.treetable_onbeforedropout_event.md
 - api/link/ui.treetable_onbeforeeditstart_event.md
 - api/link/ui.treetable_onbeforeeditstop_event.md
 - api/link/ui.treetable_onbeforefilter_event.md

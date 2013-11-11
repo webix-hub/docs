@@ -13,6 +13,7 @@ Properties
 - api/link/ui.tabview_height_config.md - sets the height of the component
 - api/link/ui.tabview_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.tabview_id_config.md - the component ID
+- api/link/ui.tabview_isolate_config.md - masks IDs of all inner element
 - api/link/ui.tabview_margin_config.md - defines the space around elements (applies the specified value to all elements)
 - api/link/ui.tabview_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.tabview_maxwidth_config.md - sets the maximum width for the view
@@ -38,6 +39,7 @@ Properties
 - api/link/ui.tabview_height_config.md
 - api/link/ui.tabview_hidden_config.md
 - api/link/ui.tabview_id_config.md
+- api/link/ui.tabview_isolate_config.md
 - api/link/ui.tabview_margin_config.md
 - api/link/ui.tabview_maxheight_config.md
 - api/link/ui.tabview_maxwidth_config.md

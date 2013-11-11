@@ -17,6 +17,7 @@ Properties
 - api/link/ui.segmented_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.segmented_id_config.md - the component ID
 - api/link/ui.segmented_inputheight_config.md - the height of the input area, or a button's text value area.
+- api/link/ui.segmented_inputpadding_config.md - padding of text in the input
 - api/link/ui.segmented_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.segmented_label_config.md - the text label of the control
 - api/link/ui.segmented_labelposition_config.md - positions label above the control
@@ -52,6 +53,7 @@ Properties
 - api/link/ui.segmented_hidden_config.md
 - api/link/ui.segmented_id_config.md
 - api/link/ui.segmented_inputheight_config.md
+- api/link/ui.segmented_inputpadding_config.md
 - api/link/ui.segmented_inputwidth_config.md
 - api/link/ui.segmented_label_config.md
 - api/link/ui.segmented_labelposition_config.md

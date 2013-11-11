@@ -129,5 +129,6 @@ Form data is either
   - desktop/server_proxy.md
   - desktop/dataprocessor.md
   - desktop/dataconnector.md
+  - desktop/crossdomain_loading.md
 
 @complexity:2

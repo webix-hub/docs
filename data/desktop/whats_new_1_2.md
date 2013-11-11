@@ -3,7 +3,7 @@ Version 1.2
 
 ### Integration with AngularJS
 - webix-ui directive to define webix views directly in HTML
-- webix-show, webix-event, webix-data directives to assign data and link webix components to the scope and controller
+- webix-show, webix-event, webix-data directives to link webix components and scope
 - webix component can be used with angular data bindings
 - [check details](desktop/angular.md)
 

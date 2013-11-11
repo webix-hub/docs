@@ -139,9 +139,9 @@ Data loading issues are explained [separately](desktop/angular_controllers.md).
 
 ###Further Reading
 
-- [Angular Controllers and Data Loading](desktop/angular_controllers.md). **Webix-data** directive;
-- [Event Handling during Webix-Angular Integration](desktop/angular_events.md). **Webix-event** directive; 
-- [Changing Visibility of Components in the App](desktop/angular_visibility.md). **Webix-show** directive;
+- [Angular Controllers and Data Loading](desktop/angular_controllers.md) **Webix-data** directive;
+- [Event Handling during Webix-Angular Integration](desktop/angular_events.md) **Webix-event** directive; 
+- [Changing Visibility of Components in the App](desktop/angular_visibility.md) **Webix-show** directive;
 
 ##Initing from Config Object {#config}
 
@@ -228,6 +228,6 @@ app.controller("webixTestController", function($scope){
 Inside the fucntion invoked by **webix-ready** directive, Webix-Angular integrated app complies to standard Webix [event handling pattern](desktop/event_handling.md).
 
 @index:
-	- desktop/angular_controllers.md;
-    - desktop/angular_events.md;
-    - desktop/angular_visibility.md;
+	- desktop/angular_controllers.md
+    - desktop/angular_events.md
+    - desktop/angular_visibility.md
