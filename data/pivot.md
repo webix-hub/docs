@@ -153,7 +153,7 @@ webix.ui({
 
 {{sample samples/01_init/01_inline_data.html }}
 
-To load inline data after component init on some event, for instance, use the api/link/dataloader_parse.html function:
+To load inline data after component init on some event, for instance, use the api/link/dataloader_parse.md function:
 
 ~~~js
 $$("pivot").parse(pivot_dataset);
@@ -180,7 +180,7 @@ $$("pivot").load("../load.php");
 $$("pivot").load("../data.json");
 ~~~
 
-In essence, Pivot coplies to stadard Webix [Data Loading rules](desktop/data_loading.md).
+In essence, Pivot complies to standard Webix [Data Loading rules](desktop/data_loading.md).
 
 Configuring Pivot
 ----------------

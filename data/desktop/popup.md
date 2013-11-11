@@ -42,6 +42,8 @@ webix.ui({
 }).show();
 ~~~
 
+**Absolute Positioning**
+
 Popup position can be set within the **show();** method as well: 
 
 ~~~js
@@ -57,6 +59,14 @@ webix.ui({
 
 {{sample 98_docs/window_offset.html}}
 
+To set the new position for a window, use the following method: 
+
+~~~js
+$$('my_window').setPosition(100, 100); //left and top offset
+~~~
+
+**Relative Positioning**
+
 To place the popup in the center of the screen, include **position** property into the component's constructor and set its value to **"center"**:
 
 ~~~js
@@ -67,11 +77,29 @@ webix.ui({
 })
 ~~~
 
-To set the new position for a window, use the following method: 
+**Positioning Relative to HTML node**
+
+**Show()** method allows specifying an HTML node near which a window will be shown. 
 
 ~~~js
-$$('my_window').setPosition(100, 100); //left and top offset
+$$("window").show(node);
 ~~~
+
+By default, such pattern places the window below the node. To redefine this, pass position object as well:
+
+~~~js
+$$("window").show(node, {pos:"top"});
+~~~
+
+Possible position values here are **top**, **bottom** (default), **left** and **right**.
+
+To shift a window in relations to the node, pass its vertical and horizontal positions together with pos:
+
+~~~js
+$$("window").show(node, {top:"top", x:10, y:10});
+~~~
+
+{{sample 10_window/08_position.html}}
 
 ###Creating a Popup Menu
 

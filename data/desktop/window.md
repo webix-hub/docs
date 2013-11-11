@@ -80,6 +80,8 @@ The must-have parameters for the window are **width** and **height** since other
 }
 ~~~
 
+**Absolute Positioning**
+
 Window position can be set within the **show();** method as well: 
 
 ~~~js
@@ -87,12 +89,20 @@ webix.ui({
 	view:"window",
     ...
 }). show({
-	clientX:300, //left offset from the right side
-	clientY:50 //top offset
+	x:300, //left offset from the right side
+	y:50 //top offset
 });
 ~~~
 
 {{sample 98_docs/window_offset.html }}
+
+To set the new position for a window, use the following method: 
+
+~~~js
+$$('my_window').setPosition(100, 100); //left and top offset
+~~~
+
+**Relative Positioning**
 
 To get rid of absolute positioning, you can just place your window in the **center** of the page, which ensures that it will take an adequate position on any screen regardless of its size. 
 
@@ -107,10 +117,26 @@ webix.ui({
 
 {{sample 10_window/07_center.html }}
 
-To set the new position for a window, use the following method: 
+**Positioning Relative to HTML Node**
+
+**Show()** method allows specifying an HTML node near which a window will be shown. 
 
 ~~~js
-$$('my_window').setPosition(100, 100); //left and top offset
+$$("window").show(node);
+~~~
+
+By default, such pattern places the window below the node. To redefine this, pass position object as well:
+
+~~~js
+$$("window").show(node, {pos:"top"});
+~~~
+
+Possible position values here are **top**, **bottom** (default), **left** and **right**.
+
+To shift a window in relations to the node, pass its vertical and horizontal positions together with pos:
+
+~~~js
+$$("window").show(node, {top:"top", x:10, y:10});
 ~~~
 
 ###Window Modality

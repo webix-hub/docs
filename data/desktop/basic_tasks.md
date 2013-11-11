@@ -145,6 +145,7 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
                     <li>desktop/maps.md</li>
                     <li>desktop/jquery.md</li>
                     <li>desktop/backbone.md</li>
+                    <li>desktop/angular.md</li>
             </ul>
         </td>
         <td class='topic_description' onclick="displaySubList('thirdparty')">Says which third-party libraries and how can be integrated with Webix components</td>

@@ -1,5 +1,9 @@
-Drag-and-drop
-=============
+Advanced Drag-and-Drop
+==============================
+
+Here we speak about **advanced drag-n-drop options** and find solutions how to make any elements on the page draggable and control each stage of DnD. 
+
+For simple dragging and dropping of items within one and the same component as well as between different views and their instances - study the atricle about [built-in Webix DnD options](desktop/dnd.md).
 
 DnD syntax
 ---------
@@ -11,76 +15,43 @@ webix.DragControl.addDrag(node);
 ~~~
 where *node* - id or html node object ( or object itself )
 
+{{sample 22_dnd/05_html_dnd_in.html}}
 
 If you want to define some area as drop target you can use
 ~~~js
 webix.DragControl.addDrop(node);
 ~~~
-where *node* - id or html node object ( or object itself )
+where *node* - id or html node object ( or object itself ).
 
-### Controlled dnd 
+### Controlled DnD 
 
 
-If you want to control different aspects of dnd process, you can use the above methods but with extra parameters
-
-To make an element draggable
+If you want to control different aspects of dnd process, you can use the above methods but with an extra **control parameter** (**$drag** or **$drop**) with a custom function:
 ~~~js
-webix.DragControl.addDrop(node, ctrl);
-~~~
-where:
-- *node* - id or html node object.
-- *ctrl* - set of the drag control methods.
-
-And similar for the drop target:
-~~~js
-webix.DragControl.addDrag(node, ctrl);
+//for dragging
+webix.DragControl.addDrag(node, $drag:function(source, target, event){...});
+//for dropping
+webix.DragControl.addDrop(node, $drop:function(source, target, event){...});
 ~~~
 
+The control function takes three parameters: 
 
-#### Set of the drag control methods 
+- **source** - source html object;
+- **target** - target html object;
+- **event** - native event. 
 
-There are 6 control methods: 3 of them have sense for drag element  (addDrag) and 3 - for drop target (addDrop).   
-All of these methods have default values and you need to redefine them just if you want to set the custom behavior.
-  
-  
-
-addDrag() related methods:
-+ *onDrag* - defines dragging behavior.
-+ *onDragCreate* - defines starting dnd behavior (if the function is defined it will return html node (not text ) which will be used as drag marker).
-+ *onDragDestroy* - defines ending dnd behavior. 
-
-
-addDrop() related methods:
-+ *onDragIn* - defines marker's behavior within the drop area (If you want to deny drop area, return false).
-+ *onDragOut* - defines marker's behavior  out of the drop area.
-+ *onDrop* - defines dropping behavior.
-
-
-
-
+This is how you can set value of an input by drag-n-drop
 
 ~~~js
-{
-  top:5,  //position of drag marker relative to mouse cursor
-  left:5,
-  onDragIn:function(s,t,e){ ... },   //drag moves in potential drop area
-  onDragOut:function(s,t,e){ ... },  //drag moves out from the drop area
-  onDrop:function(s,t,e){ ... },     //drag was released
-  onDrag:function(s,t,e){ ... },     //drag is started
-  onDragCreate(source_master, e)     //dnd is started
-  onDragDestroy(source_master, text) //dnd is finished
-}
-
+webix.DragControl.addDrop("mytext", {
+	$drop:function(source, target, event){
+		var dnd = webix.DragControl.getContext();
+		target.value = dnd.from.getItem(dnd.source[0]).title; // setting source item title as input value
+	}
+});
 ~~~
-Where:
-+ *s* - source html object.
-+ *t* - target html object.
-+ *e* - native event.
-+ *source_master* - control object related to source of dnd.
-+ *text* - content of drag marker.
 
-If any of onDrag handlers redefined - there won't be the default processing of the action, code expects that your custom handler will do all job. 
-
+{{sample 22_dnd/04_html_dnd.html }}
 
 DnD context 
 -----------
@@ -90,7 +61,6 @@ Context object of dnd can be accessed as:
 ~~~js
 var state = webix.DragControl.getContext();
 ~~~
-
 it is also available as parameter in all dnd related events
 
 ~~~js
@@ -103,14 +73,46 @@ state = {
 }
 ~~~
 
+#### Set of the drag control methods 
+
+There are 6 DnD control event: 3 of them are used for dragged element  (addDrag) and 3 - for drop target (addDrop). All these events can be used to define a custom behavior for elements included in current dra-n-drop. 
+
+**addDrag()** related events:
+
+- *onDrag* - fires when the elements is dragged;
+- *onDragCreate* - fires the moment drag has been created;
+- *onDragDestroy* - fires when drag has been completed; 
+
+**addDrop()** related events:
+
+- *onDragIn* - fires when a dragged element enters the drop area (If you want to deny drop area, return false).
+- *onDragOut* - fires when a dragged elements leaves the drop area.
+- *onDrop* - fires when you drop the dpagged element.
 
 
+~~~js
+{
+  onDragIn:function(source, target, event){ ... },   //drag moves in potential drop area
+  onDragOut:function(source, target, event){ ... },  //drag moves out from the drop area
+  onDrop:function(source, target, event){ ... },     //drag was released
+  onDrag:function(source, target, event){ ... },     //drag is started
+  onDragCreate:function(from, event){ ... }     //dnd is started
+  onDragDestroy:function:(from, text){ ... } //dnd is finished
+}
 
+~~~
+Where:
+
+- **source** - source html object;
+- **target** - target html object;
+- **event** - native event;
+- **from** - control object related to source of dnd;
+- **text** - content of drag marker.
+
+If any of onDrag handlers redefined - there won't be the default processing of the action, code expects that your custom handler will do all job. 
 
 Samples of usage
 ----------------
-
-
 
 ### Drag from custom HTML 
 
