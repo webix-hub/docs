@@ -19,6 +19,7 @@ Properties
 - api/link/ui.tooltip_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.tooltip_minheight_config.md - sets the minimal height for the view
 - api/link/ui.tooltip_minwidth_config.md - sets the minimal width for the view
+- api/link/ui.tooltip_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.tooltip_template_config.md - the component template
 - api/link/ui.tooltip_width_config.md - sets the width of the component
 }}
@@ -40,6 +41,7 @@ Properties
 - api/link/ui.tooltip_maxwidth_config.md
 - api/link/ui.tooltip_minheight_config.md
 - api/link/ui.tooltip_minwidth_config.md
+- api/link/ui.tooltip_on_config.md
 - api/link/ui.tooltip_template_config.md
 - api/link/ui.tooltip_width_config.md
 

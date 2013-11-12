@@ -68,6 +68,7 @@ Events
 - api/link/ui.text_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.text_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.text_onchange_event.md - fires when the value of the control is changed
+- api/link/ui.text_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.text_onviewresize_event.md - view size was changed by resizer
 }}
 

@@ -143,6 +143,7 @@ Events
 - api/link/ui.contextmenu_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.contextmenu_ondatarequest_event.md - fires when data from the server side is requested (part of dynamic loading)
 - api/link/ui.contextmenu_ondataupdate_event.md - fires when data item is in update process
+- api/link/ui.contextmenu_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.contextmenu_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
 - api/link/ui.contextmenu_onhide_event.md - fires when window is hidden
 - api/link/ui.contextmenu_onitemclick_event.md - fires when a component item was clicked

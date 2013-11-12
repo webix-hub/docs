@@ -18,6 +18,7 @@ Events
 - api/link/ui.chart_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.chart_ondatarequest_event.md - fires when data from the server side is requested (part of dynamic loading)
 - api/link/ui.chart_ondataupdate_event.md - fires when data item is in update process
+- api/link/ui.chart_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.chart_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.chart_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.chart_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
@@ -43,6 +44,7 @@ Events
 - api/link/ui.chart_onbindrequest_event.md
 - api/link/ui.chart_ondatarequest_event.md
 - api/link/ui.chart_ondataupdate_event.md
+- api/link/ui.chart_ondestruct_event.md
 - api/link/ui.chart_onitemclick_event.md
 - api/link/ui.chart_onitemdblclick_event.md
 - api/link/ui.chart_onloaderror_event.md

@@ -152,6 +152,7 @@ Events
 - api/link/ui.tree_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.tree_ondatarequest_event.md - called before exucuting auto-loading data call
 - api/link/ui.tree_ondataupdate_event.md - fires when data item is in update process
+- api/link/ui.tree_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.tree_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
 - api/link/ui.tree_onitemcheck_event.md - fires when you check an item in tree and treetable
 - api/link/ui.tree_onitemclick_event.md - fires when a component item was clicked

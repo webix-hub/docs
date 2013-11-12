@@ -131,6 +131,7 @@ Events
 - api/link/ui.unitlist_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.unitlist_ondatarequest_event.md - fires when data from the server side is requested (part of dynamic loading)
 - api/link/ui.unitlist_ondataupdate_event.md - fires when data item is in update process
+- api/link/ui.unitlist_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.unitlist_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
 - api/link/ui.unitlist_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.unitlist_onitemdblclick_event.md - fires when a component item was double-clicked

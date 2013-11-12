@@ -70,6 +70,7 @@ of the component
 - api/link/ui.chart_parse.md - loads data to the component from an inline data source
 - api/link/ui.chart_refresh.md - repaints the whole view or a certain item
 - api/link/ui.chart_remove.md - removes the specified item from datastore
+- api/ui.chart_removeallseries.md - removes all series from the chart
 - api/ui.chart_render.md - renders the specified item or the whole component
 - api/link/ui.chart_resize.md - adjusts the view to a new size
 - api/link/ui.chart_serialize.md - serializes data to a json object
@@ -102,6 +103,7 @@ Events
 - api/link/ui.chart_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.chart_ondatarequest_event.md - fires when data from the server side is requested (part of dynamic loading)
 - api/link/ui.chart_ondataupdate_event.md - fires when data item is in update process
+- api/link/ui.chart_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.chart_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.chart_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.chart_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
