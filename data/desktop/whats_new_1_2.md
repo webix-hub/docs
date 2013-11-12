@@ -17,7 +17,8 @@ Version 1.2
 - [check details](desktop/backbone.md)
 
 ### Others
-- *setContent* method for template component
-- *isolate* configuration property for layout components
-- *onBeforeDropOut* event added
+- api/ui.template_setcontent.md method for template component
+- api/ui.layout_isolate_config.md configuration property for layout components
+- api/dragitem_onbeforedropout_event.md event added
+- api/link/ui.datatable_tooltip_config.md functionality added to the DataTable, TreeTable and Tree
 - more than 50 different fixes
