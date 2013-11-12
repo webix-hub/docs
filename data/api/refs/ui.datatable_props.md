@@ -71,6 +71,7 @@ Properties
 - api/ui.datatable_scrollx_config.md - enables/disables horizontal scrolling
 - api/ui.datatable_scrolly_config.md - enables/disables vertical scrolling
 - api/ui.datatable_select_config.md - sets the selection mode in DataTable
+- api/link/ui.datatable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/ui.datatable_type_config.md - used for configuring presentation of items
 - api/link/ui.datatable_url_config.md - the url of a data feed which will be loaded after component initialization
 - api/link/ui.datatable_width_config.md - sets the width of the component
@@ -146,6 +147,7 @@ Properties
 - api/ui.datatable_scrollx_config.md
 - api/ui.datatable_scrolly_config.md
 - api/ui.datatable_select_config.md
+- api/link/ui.datatable_tooltip_config.md
 - api/ui.datatable_type_config.md
 - api/link/ui.datatable_url_config.md
 - api/link/ui.datatable_width_config.md
