@@ -1,16 +1,13 @@
 Backbone Collections
 ==============
 
-While Webix components has their own logic to load and save data, you can use Backbone Collection as source of data, and handle loading and saving in Backbone's way. 
-There is no any special requirement, andy Backbone Collection can be used as a source of data for Webix Component. 
+While Webix [components](desktop/components.md) have their own logic to load and save data, you can also use Backbone Collection as data source, and handle loading and saving in Backbone's way. 
 
+### Data Loading
 
-### Data loading
-
-Each data component has "sync" method, which can be used to load data from Backbone Collection
+First, we need to create a Backbone collection and add data to it:
 
 ~~~js
-//creating colleciton 
 FilmRecord = Backbone.Model.extend({});
 FilmList = Backbone.Collection.extend({
 	model: FilmRecord,
@@ -18,34 +15,66 @@ FilmList = Backbone.Collection.extend({
 });
 
 films = new FilmList();
-films.fetch();
-            
-//createing Webix List
+films.fetch(); //getting collection data
+~~~
+
+Each data component has [sync](api/link/dataloader_sync.md) method that can be used to load data from a Backbone Collection. 
+
+There can be several methods to add data from a Backbone collection to a Webix view.  It depends on how you init the view. 
+
+{{snippet
+By direct rendering into the needed node
+}}
+~~~js         
 var list = $(".app1_here").webix_list({
 	template:"#title#", select:true
 });
-//loading data from collection in to the list
+
 list.sync(films);
 ~~~
 
 {{sample 30_backbone/03_load_collection.html }}
 
+{{snippet
+By creating a Backbone view that houses this component
+}}
+~~~js
+MyView = WebixView.extend({
+	config:{ view:"list", id:"mylist", width:200,
+			template:"#title#", select:true 
+    },
+    afterRender:function(){
+		this.getChild("mylist").sync(this.options.collection); // syncing after rendering
+	}
+});
+						
+new MyView({
+	el: ".app1_here",
+	collection: films //defining collection as view option
+}).render();
+~~~
 
-After sync command any changes to the films collection will be reflected in the list.
-Also, any changes, done by list API ( adding, deleting, editing ) will be reflected in collection as well. 
+{{sample 30_backbone/05_views_models.html }}
 
+
+After executing the [sync](api/link/dataloader_sync.md) command any changes to the *"films"* collection will be reflected in the [list](desktop/list.md).
+Also, any changes, done by list API ([adding](api/link/ui.list_add.md), [deleting](api/link/ui.list_remove.md), [editing](api/link/ui.list_updateitem.md)) will be reflected in a Backbone collection as well. 
 
 ### Data Saving
 
-While changes in component will be reflected in collection, they will not trigger data saving on their own. Instead of that Webix adds additional events, which can be handled to enable data saving
+Nevetheless, changes in the component don't trigger saving to the Backbone Collection on their own. You need to use additional Webix events that are handled to enable data saving:
+
+- **webix:add** & **webix:change** - fire when a new item is added or an item is updated in the view (here:list);
+- **webix:remove** - fires when a record is removed from the view. 
 
 ~~~js
-films.on("webix:add webix:change", function(model){
+//films is Backbone collection with FilmRecord model
+films.on("webix:add webix:change", function(model){ //no delimiter between events! 
 	model.save();
 });
 films.on("webix:remove", function(model){
-				model.destroy();
-			});
+	model.destroy();
+});
 ~~~
 
 {{sample 30_backbone/04_save_collection.html }}
@@ -53,10 +82,44 @@ films.on("webix:remove", function(model){
 
 ### Loading data in Form
 
-Not all components can work with Collections directly. Components that represent only one model can't use sync API, instead of it you can use "parse" API to load data in them
+Not all Webix components can work with Backbone Collections directly. Components that represent only one model can't use sync API, so instead of it you can use [parse](api/link/dataloader_parse.md) method to load data to them:
 
 ~~~js
-$$("form").parse( films.first().toJSON() );
+$$("form").parse( films.first().toJSON());
 ~~~
 
-This command loads data from the model in the form, but any changes in form or in model will not be reflected or saved. 
+This command loads data from the model into Webix [form](dekstop/form.md), but any changes in the form or in the model are not reflected or saved. 
+
+###Adding extra methods to Collections
+
+Backbone collection can be extended to have as many various methods as you need. These are test methods that change collection data:
+
+~~~js
+FilmRecord = Backbone.Model.extend({}); 
+
+FilmList = Backbone.Collection.extend({
+	//basic properties
+	model: FilmRecord,
+	url:"./common/data.json",
+
+	//necessary for test buttons only
+	addSample:function(){
+		this.add(new FilmRecord({ //adds new record to collection
+			title:"New Record"
+		}));
+	},
+	deleteFirst:function(){ //removes first record from collection
+		this.remove(this.first().cid);
+	}
+});
+~~~
+
+This is how these functions are triggered in the app:
+
+~~~html
+<input type="button" value="Add" onclick='films.addSample()'>
+<input type="button" value="Delete first" onclick='films.deleteFirst()'>
+~~~
+
+{{sample 30_backbone/04_save_collection.html }}
+

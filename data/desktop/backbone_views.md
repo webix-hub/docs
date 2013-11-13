@@ -1,75 +1,88 @@
 Backbone Views
 ===============
 
-{{note This feature is fully optional, you can safely init webix in any html container, so normal backone views will work fine enough.  }}
+{{note This feature is fully optional, you can safely init Webix in any HTML container, so normal Backbone views will work fine enough.  }}
 
 
 ### Creating View
 
-To create new View you can use
+To create a new View you can use the next code:
 
 ~~~js
-var myview = new WebivView({
-   el:"some",
+var myview = new WebixView({
+   el:".app1_here",
    config:{
-      template:"ABC"
+      rows:[
+      	{template:"ABC"},
+        {cols:[...]},
+        {view:"some"}
+      ]
    }
 });
 ~~~
-{{sample 30_backbone/01_view.html}}
 
-Where
+- **el** - HTML locator or HTML node of the element in which a view needs to be rendered;
+- **config** - Webix UI configuration.
 
-- el - html locator or html node of element in which view need to be rendered
-- config - webix ui configuration
-
-To render view somewhere on the page you need to call
+To render view somewhere on the page you should call:
 
 ~~~js
 myview.render();
 ~~~
 
-WebixView is an instance of Backbone.View
+{{sample 30_backbone/01_view.html}}
+
+###Isolating Views
+
+It's a good practive to **isolate** backbone views that are comprised of several Webix views so that you can use same IDs in another Backbone view on the page:
+
+~~~js
+var ui_config={
+	isolate:true, rows:[
+		{template:"ABC", id:"abc"},
+        {cols:[...]},
+        {view:"some"}
+    ]
+};
+
+var firstview = new WebixView({
+   el:".app1_here",
+   config: ui_config
+});
+
+var secondview = new WebixView({
+   el:".app2_here",
+   config:ui_config
+});
+~~~
+
+Each Backbone view has a template with *abc* ID, but since config features an *isolate* property you can still refer to the necessary template (for instance in view functions that refer to these components). 
+
+You can also render any Webix view directly into an HTML element: 
+
+~~~js
+$(".app1_here").webix_list({
+	id:"mylist", width:200, //config
+	template:"#title#", select:true
+});
+~~~
+
+{{sample 30_backbone/03_load_collection.html }}
 
 ### Predefined methods of view
 
-There are few methods which already implemented in view 
+WebixView is an instance of Backbone.View. 
 
-- render - renders the view
-- destroy - calls the view destructor
-- getRoot() - get the top webix control in the view
-- getChild(id) - get the child webix control by its ID
+There is a few methods that are already implemented in views created with this constructor:
 
-### Extending View
+- **render()** - renders the view;
+- **destroy()** - calls the view destructor;
+- **getRoot()** - get the top Webix control in the view;
+- **getChild(id)** - get the child Webix control by its ID.
 
-Same as with Backbone View you can extend WebixView
+### Nesting HTML view into Webix view
 
-~~~js
-MyView = WebixView.extend({
-    config:{
-       view:"list", url:"data.json"
-    },
-    afterRender:function(){
-       this.getRoot().attachEvent("onAfterSelect", function(id){
-             alert(id);
-       });
-    }
-});
-
-var view1 = new MyView({ el : "areaA" });
-var view2 = new MyView({ el : "areaB" });
-~~~
-
-You can predefine config, or add any custom methods to the view. 
-There are 2 special methods which can be defined in such way
-
-- beforeRender - will be called during rendering, before creating a webix ui
-- afterRender - will be called during rendering, when webix ui is already created
-
-
-### Nesting HTML view in Webix view
-
-You can define template view, and later render there a normal Backbone View by using code like next
+You can define a template view, and later render there a normal Backbone View by using the code like next:
 
 ~~~js
 //webix ui config
@@ -106,13 +119,14 @@ var v2 = new cView();
 	v1.getChild("left").setContent(v2.el);
 ~~~
 
-setContent method of webiv ui is used to attach Backbone View to template
+- **getChild** method is used here to get layout child with "left" ID;
+- **setContent(content)** method of Webix view is used here to attach Backbone View to template.
 
 {{sample 30_backbone/02_nested_views.html }}
 
-### Nesting Webix view in other Webix view
+### Nesting Webix view into another Webix view
 
-Similar to above , you can render a Webiv view as child view with code like next
+Similar to the method above, you can render a Webix view as layout child view with the code like next:
 
 ~~~js
 //create top level view
@@ -132,4 +146,53 @@ var v3 = new WebixView({
 
 {{sample 30_backbone/02_nested_views.html }}
 
-Place where ui component need to be attached is defined through "el". New view will replace the target component. 
+The place where a UI component need to be attached is defined through "el". New view (*v3*) will replace the child of *v1* view. 
+
+### Extending View
+
+Same as with Backbone View you can extend WebixView:
+
+~~~js
+MyView = WebixView.extend({
+    config:{
+       view:"list", url:"data.json"
+    },
+    afterRender:function(){ ...},
+    beforeRender:fucntion(){ ...}
+    someMethod:function(){ ...}
+});
+
+var view1 = new MyView({ el : "areaA" });
+~~~
+
+There are 2 special methods that can be defined in such way:
+
+- **beforeRender()** - will be called during rendering before creating a Webix view;
+- **afterRender()** - will be called during rendering when Webix view is already created. It's a good place to **define event handlers** for Webix components of this Backbone view or **load collection data**.
+
+And at the same time you can add you custom methods here. 
+
+~~~js
+MyView = WebixView.extend({
+	config:{
+    	rows:[
+   	 		{view:"list", id:"mylist", ..},
+            {view:"template", id:"details", ..}
+        ]
+    },
+	afterRender:function(){
+    	//adding a handler to list selection
+		this.getChild("mylist").attachEvent("onAfterSelect",_.bind(this.listSelected,this));
+		//syncing view data with collection
+		this.getChild("mylist").sync(this.options.collection);
+	},
+	listSelected:function(id){ 
+		this.getChild("details").parse({ "id": id });
+	}
+});
+~~~
+
+{{sample 30_backbone/05_views_models.html }}
+
+Webix event handling pattern is described in the corresponding [documentation article](desktop/event_handling.md). 
+

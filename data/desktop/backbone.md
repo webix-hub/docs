@@ -18,78 +18,117 @@ To get the profound knowledge of the framework, go to the <a href="http://www.ba
 
 ## How it can be used
 
-Webix and Backbone can be cross-integrated on multiple levels
+Webix and Backbone can be cross-integrated on multiple levels:
 
-- Webix components can load data from backbone collection, check desktop/backbone_collections.md for more details
-- Webix components can be wraped in a Backbone Views, check desktop/backbone_views.md for more details
-- visibility of Webix Components can be controlled by Backbone router, check desktop/backbone_routers.md for more details
+- Webix components can load data from backbone collection, check desktop/backbone_collections.md for more details;
+- Webix components can be wraped in a Backbone Views, check desktop/backbone_views.md for more details;
+- visibility of Webix Components can be controlled by Backbone router, check desktop/backbone_routers.md for more details.
 
 ## Example of usage
 
-To integrate Backbone framework into your webpage your should set links to it the same way you did it with this library (into the document head). Be attentive to specify the right relative paths to the places where the files
+To integrate Backbone framework into your webpage your should include links to it into the document head. Be attentive to specify the right relative paths to the places where the files
 are stored on your machine. The important point - library need to be included BEFORE webix.js: 
 
 ~~~html
-	<head>
-		<link rel="stylesheet" href="../../codebase/webix.css" type="text/css" media="screen" charset="utf-8">
-		
-		<script type="text/javascript" src="./.../jquery.js"></script>
-		<script type="text/javascript" src="./.../underscore.js"></script>
-		<script type="text/javascript" src="./.../backbone.js"></script>
-		<script type="text/javascript" src="../../codebase/webix.js"></script>
+<head>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="./common/underscore.js"></script>
+  <script type="text/javascript" src="./common/backbone.js"></script>
 
-		<title>Backbone integration</title>
-	</head>
+  <link rel="stylesheet" href="../../codebase/webix.css" type="text/css" media="screen" charset="utf-8">
+  <script src="../../codebase/webix.js" type="text/javascript" charset="utf-8"></script>
+</head>
 ~~~
 
 
-### Defining View
+### Creating Views
 
-Instead of warking with raw webix configuration we can create a View similar to normal Backbone View
+In an integrated app, pure Backbone views and Backbone-Webix views co-exist. 
+
+Backbone views are created under Backbone standard pattern:
 
 ~~~js
-var view  = new WebixView({
-	el: document.body,
-	config:{
-		view:"list", template:"#title#"
-	}
+cView = Backbone.View.extend({
+	tagName: "h2",
+	render: function(){
+		$(this.el).html("Child View");
+	},
 });
+var v2 = new cView();
+v2.render();
 ~~~
 
-### Creating a Model
+Backbone-Webix integrated views resemble this pattern yet feature a **config** property where Webix configuration is stored. To instantiate such a view, a special **WebixView()** constructor is used:
+
+~~~js
+var ui_config ={
+	type:"wide", rows:[
+		{ template:"top", height:35 },
+		{ type:"wide", cols:[ ..cols ..]},
+		{ template:"bottom", height:35 }
+	]
+};
+
+var view  = new WebixView({
+	el: ".app1_here", // will be rendered to div with "app1_here" class
+	config:ui_config
+}).render();
+~~~
+
+{{sample 30_backbone/01_view.html}}
+
+In the code above Webix [layout](desktop/layout.md) with 3 rows and columns in the second row is created. It is rendered to a div block with *"app1_here"* class. As a rule, views should be **manually rendered** 
+with a dedicated function. 
+
+For more into about Webix-Backbone integrated views, read the desktop/backbone_views.md article.  
+
+### Creating Models and Collections
 
 ~~~js
 FilmRecord = Backbone.Model.extend({});
 FilmList = Backbone.Collection.extend({
 	model: FilmRecord,
-	url:"./common/data.json"
+	url:"./common/data.json" //adding data to collection
 });
 ~~~
 
-### Rendering the view
+### LOading the Collection into a View
 
-Now, when we have a view and model we can render our page
+First, lets create a Webix data component, for instance view [list](desktop/list.md):
+
+{{snippet
+View: Webix List
+}}
+~~~js
+$(".app1_here").webix_list({
+	id:"mylist", width:200,
+	template:"#title#", select:true
+});
+~~~
+
+Now, when we have a view and a model we can render the model into the list view with the [syncing](api/link/dataloader_sync.md) method:
+
 ~~~js
 //get data
-var list = new FilmList();
-list.fetch();
+var films = new FilmList();
+films.fetch();
 
-//render view
-view.render();
-view.getRoot().sync(list);
+//sync collection data with list 
+$$("mylist").sync(films);
 ~~~
 
 {{sample 30_backbone\03_load_collection.html }}
 
-### Conclusion
-Above code renders View and fill it from collection of Models. As you can see it forms bettwen Backbone code and Webix components. 
+The code above renders [list](desktop/list.md) view and fills it with data from Collection of Models.
 
-Need to say, the above scenario is not the only way to use Webix and Backbone together. Check the below docs for more details. 
+###Conclusion
+
+It should be said that the above scenario is not the only way to use Webix and Backbone together. Check the below docs for more details. 
 
 ## Working with Backbone.js
 
 - [Loading from Backbone Collections](desktop/backbone_collections.md)
-- [Using webix in Backbone Views](desktop/backbone_views.md)
+- [Using Webix in Backbone Views](desktop/backbone_views.md)
 - [Working with Backbone Routers](desktop/backbone_routers.md)
 
 

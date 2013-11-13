@@ -1,22 +1,26 @@
 Working with Backbone Routers
 ===========================
 
-## BackBone Router - Webix Way
+Take that you have a [list](desktop/list.md) and a [template](desktop/template.md) and you want to show either one or another by clicking on their elements. 
+There you can have different patterns depending on how you init the components:
 
-Take that you have a list and a template and you want to show one or another based on the app state. 
+- [Backbone Router for pure Webix Views](#webix)
+- [BackBone Router for Backbone-integrated Views](#backbone)
+- [BackBone Router for Updating Layout Sections](#layout)
+
+## Backbone Router for pure Webix Views {#webix}
+
 To create a UI we can use a Webix code like next:
 
 ~~~js
 webix.ui({
-	container:"app1_here", rows:[
-		{ template:"Click on item", type:"header" },
-		{
-			cells:[
-				{ view:"list", url:"common/data.json", template:"#title#", select:true, id:"mylist"},
-				{ template:"Details page<br>not implemented :)<br><button onclick='history.back()'>Back</button>", id:"details" }
-			]
-		}
-	]
+  container:"app1_here", rows:[
+	 {template:"Click on item", type:"header" },
+	 {cells:[
+	   {view:"list", url:"data.json", template:"#title#", select:true, id:"mylist"},
+	   {template:"<button onclick='history.back()'>Back</button>", id:"details" }
+	]}
+  ]
 });
 ~~~
 
@@ -26,10 +30,10 @@ Now, let's create a **Backbone Router**.
 var routes = new (Backbone.Router.extend({
 	routes:{
 		"":"index", 
-		"films/:id":"details"
+		"films/:id":"details" //details() f-n is triggered
 	},
 	details:function(id){
-		$$("details").show();
+		$$("details").show(); //it shows template with film details
 	},
 	index:function(){
 		$$("mylist").show();
@@ -37,22 +41,25 @@ var routes = new (Backbone.Router.extend({
 }));
 ~~~
 
-As you can see the router shows the necessary view based on current document url. To have app working we need to add few more lines of code
+As you can see the router shows the necessary view based on current document URL. After switching to "details" template, the application receives a hashbang url *localhost/myapp.html#films/id* 
+to show in it the ID of a currently selected list item.
+
+To have the app working we need to add a few extra lines of code:
 
 ~~~js
-$$("mylist").attachEvent("onAfterSelect", function(id){
-	routes.navigate("films/"+id, { trigger:true });
+$$("mylist").attachEvent("onAfterSelect", function(id){  //navigation rule
+	routes.navigate("films/"+id, { trigger:true }); 
 });
-Backbone.history.start();
+Backbone.history.start(); //router starts memorizing its steps
 ~~~
+
 {{sample 30_backbone/06_routes_webix.html}}
 
-Those lines defines the navigation rule, after selecting item in the list and starting the router.  
-That is all. With few lines of code we have attached backbone router to the Webix View
+These lines define the **navigation rule** after selecting an item in the list and **starts the router**.  Template, in its turn, uses an existing router and makes a **step back** on button click (look at its code above).
 
-## BackBone Router - Backbone Way
+## BackBone Router for Backbone-integrated Views {#backbone}
 
-Now lets try to recreate the same app, but more similar to the native Backbone approach. Instead of creating Webiv UI directly, lets define a Views for both states
+Now lets try to recreate the same app, but stick closer to the native Backbone approach. Instead of creating Webix UI directly, lets define Backbone-Webix integrated views for both states:
 
 ~~~js
 var layout = new WebixView({
@@ -70,28 +77,29 @@ var layout = new WebixView({
 });
 
 DView = Backbone.View.extend({
-	el:"#app1_here",
+	el:"#app1_here", //the same element as above
     tagName: "div",
 	render: function(){
-        $(this.el).html("Details page<br>not implemented :)<br><button onclick='history.back()'>Back</button>");
+        $(this.el).html("<button onclick='history.back()'>Back</button>");
     },
 });
 var template = new DView();
 ~~~
 
-Now router will look a bit more different 
+Now a router looks a bit more different: 
 
 ~~~js
 var routes = new (Backbone.Router.extend({
 	routes:{
 		"":"index", 
-		"films/:id":"details"
+		"films/:id":"details" //details() f-n is triggered
 	},
 	details:function(id){
-		template.render();
+		template.render(); //it renders the template into its "el"
 	},
 	index:function(){
-		layout.render();
+		layout.render(); //rendereing layout back
+        //attaching select event after rendering 
 		$$("mylist").attachEvent("onAfterSelect", function(id){
 			routes.navigate("films/"+id, { trigger:true });
 		});
@@ -100,18 +108,24 @@ var routes = new (Backbone.Router.extend({
 ~~~
 {{sample 30_backbone/07_routes_views.html}}
 
-Instead of switching the active view in Webix Layout, we are rendering different Backbone View based on current state. Still - the result behavior is the same. 
+Instead of switching between views in Webix layout we are rendering different Backbone Views into one and the same element depending on current state. Still, the resulting behavior is the same. 
 
+Yet, the router should be triggered separately at once after the app has been inited:
 
-### Updating section of layout
+~~~js
+//init app
+Backbone.history.start();
+~~~
 
-When using Views we can update not only top View, but some section in Webix Layout
+### Updating Layout Section {#layout}
 
-Lets create 3 View, one will be used as layout, two others - sections which can be shown in our layout in different cases
+When using views we can update not only the top view, but any section of Webix [layout](desktop/layout.md) in it.
+
+Lets create 3 views, one is layout while the two others (list and template) are children of this layout. They will be shown in this layout in different cases:
 
 ~~~js
 var template = new WebixView({
-	config:{ template:"Details page<br>not implemented :)<br><button onclick='history.back()'>Back</button>" }
+	config:{ template:"<button onclick='history.back()'>Back</button>" }
 });
 var list = new WebixView({
 	config:{
@@ -120,6 +134,7 @@ var list = new WebixView({
 		id:"mylist"
 	}
 });
+//layout wil Webix config
 var layout = new WebixView({
 	el:"#app1_here",
 	config:{
@@ -131,7 +146,7 @@ var layout = new WebixView({
 });
 ~~~
 
-Now router will look like next
+The router for such pattern is as follows:
 
 ~~~js
 var routes = new (Backbone.Router.extend({
@@ -140,10 +155,12 @@ var routes = new (Backbone.Router.extend({
 		"films/:id":"details"
 	},
 	details:function(id){
-		template.el = layout.root.getChildViews()[1];
+    	//setting node for template as layout child view 
+		template.el = layout.root.getChildViews()[1]; 
 		template.render();
 	},
 	index:function(){
+    	//setting node for list as layout child view 
 		list.el = layout.root.getChildViews()[1];
 		list.render();
 		$$("mylist").attachEvent("onAfterSelect", function(id){
@@ -153,6 +170,6 @@ var routes = new (Backbone.Router.extend({
 }));
 ~~~
 
-Above code locates necessary cell in the layout and renders the View in the target cell. 
+The code above locates the necessary cell in the layout and renders the needed view into the target cell. 
 
 {{sample 30_backbone/08_routes_layout.html}}
