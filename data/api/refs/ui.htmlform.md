@@ -58,6 +58,7 @@ Methods
 - api/link/ui.htmlform_render.md - renders the specified item or the whole component
 - api/link/ui.htmlform_resize.md - adjusts the view to a new size
 - api/link/ui.htmlform_scrollto.md - scrolls the data container to a certain position
+- api/link/ui.htmlform_setcontent.md - attaches html container to the template
 - api/link/ui.htmlform_setdirty.md - marks the form  as the one with changed values
 - api/link/ui.htmlform_sethtml.md - set hmlt for template
 - api/link/ui.htmlform_setvalues.md - sets values into all the form inputs
@@ -80,6 +81,7 @@ Events
 - api/link/ui.htmlform_onbeforevalidate_event.md - called before runing validation
 - api/link/ui.htmlform_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.htmlform_onchange_event.md - fires when data in the input is changed
+- api/link/ui.htmlform_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.htmlform_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.htmlform_onvalidationerror_event.md - fires when the form fails to pass validation
 - api/link/ui.htmlform_onvalidationsuccess_event.md - fires after the form has passes validation successfully

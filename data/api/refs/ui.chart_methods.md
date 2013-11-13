@@ -44,6 +44,7 @@ of the component
 - api/link/ui.chart_parse.md - loads data to the component from an inline data source
 - api/link/ui.chart_refresh.md - repaints the whole view or a certain item
 - api/link/ui.chart_remove.md - removes the specified item from datastore
+- api/ui.chart_removeallseries.md - removes all series from the chart
 - api/ui.chart_render.md - renders the specified item or the whole component
 - api/link/ui.chart_resize.md - adjusts the view to a new size
 - api/link/ui.chart_serialize.md - serializes data to a json object
@@ -97,6 +98,7 @@ of the component
 - api/link/ui.chart_parse.md
 - api/link/ui.chart_refresh.md
 - api/link/ui.chart_remove.md
+- api/ui.chart_removeallseries.md
 - api/ui.chart_render.md
 - api/link/ui.chart_resize.md
 - api/link/ui.chart_serialize.md

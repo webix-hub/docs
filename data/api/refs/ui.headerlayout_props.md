@@ -14,6 +14,7 @@ Properties
 - api/link/ui.headerlayout_height_config.md - sets the height of the component
 - api/link/ui.headerlayout_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.headerlayout_id_config.md - the component ID
+- api/link/ui.headerlayout_isolate_config.md - masks IDs of all inner element
 - api/link/ui.headerlayout_margin_config.md - defines the space around elements (applies the specified value to all elements)
 - api/link/ui.headerlayout_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.headerlayout_maxwidth_config.md - sets the maximum width for the view
@@ -43,6 +44,7 @@ Properties
 - api/link/ui.headerlayout_height_config.md
 - api/link/ui.headerlayout_hidden_config.md
 - api/link/ui.headerlayout_id_config.md
+- api/link/ui.headerlayout_isolate_config.md
 - api/link/ui.headerlayout_margin_config.md
 - api/link/ui.headerlayout_maxheight_config.md
 - api/link/ui.headerlayout_maxwidth_config.md

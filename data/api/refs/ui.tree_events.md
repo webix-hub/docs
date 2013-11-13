@@ -20,6 +20,7 @@ Events
 - api/link/ui.tree_onbeforedrag_event.md - fires before the mouse button is pressed and the cursor is moved over a draggable item
 - api/link/ui.tree_onbeforedragin_event.md - fires before a dragged element is moved over the droppable area
 - api/link/ui.tree_onbeforedrop_event.md - fires before a dragged element is released over the droppable area
+- api/link/ui.tree_onbeforedropout_event.md - fires before a dragged element is released over the droppable area
 - api/link/ui.tree_onbeforeload_event.md - occurs immediately before loading XML data has been started
 - api/link/ui.tree_onbeforeopen_event.md - fires the moment you attempt to open the tree branch
 - api/link/ui.tree_onbeforerender_event.md - occurs immediately before the component has been rendered
@@ -28,6 +29,7 @@ Events
 - api/link/ui.tree_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.tree_ondatarequest_event.md - called before exucuting auto-loading data call
 - api/link/ui.tree_ondataupdate_event.md - fires when data item is in update process
+- api/link/ui.tree_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.tree_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
 - api/link/ui.tree_onitemcheck_event.md - fires when you check an item in tree and treetable
 - api/link/ui.tree_onitemclick_event.md - fires when a component item was clicked
@@ -63,6 +65,7 @@ Events
 - api/link/ui.tree_onbeforedrag_event.md
 - api/link/ui.tree_onbeforedragin_event.md
 - api/link/ui.tree_onbeforedrop_event.md
+- api/link/ui.tree_onbeforedropout_event.md
 - api/link/ui.tree_onbeforeload_event.md
 - api/link/ui.tree_onbeforeopen_event.md
 - api/link/ui.tree_onbeforerender_event.md
@@ -71,6 +74,7 @@ Events
 - api/link/ui.tree_onbindrequest_event.md
 - api/link/ui.tree_ondatarequest_event.md
 - api/link/ui.tree_ondataupdate_event.md
+- api/link/ui.tree_ondestruct_event.md
 - api/link/ui.tree_ondragout_event.md
 - api/link/ui.tree_onitemcheck_event.md
 - api/link/ui.tree_onitemclick_event.md

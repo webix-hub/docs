@@ -29,6 +29,7 @@ Events
 - api/link/ui.treetable_onbeforedrag_event.md - fires before the mouse button is pressed and the cursor is moved over a draggable item
 - api/link/ui.treetable_onbeforedragin_event.md - fires before a dragged element is moved over the droppable area
 - api/link/ui.treetable_onbeforedrop_event.md - fires before a dragged element is released over the droppable area
+- api/link/ui.treetable_onbeforedropout_event.md - fires before a dragged element is released over the droppable area
 - api/link/ui.treetable_onbeforeeditstart_event.md - fires before edit operation is initiated
 - api/link/ui.treetable_onbeforeeditstop_event.md - fires before stop edit command is received
 - api/link/ui.treetable_onbeforefilter_event.md - called when filtering process is started, but data is not filtered yet
@@ -41,6 +42,7 @@ Events
 - api/link/ui.treetable_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.treetable_ondatarequest_event.md - called before exucuting auto-loading data call
 - api/link/ui.treetable_ondataupdate_event.md - fires when data item is in update process
+- api/link/ui.treetable_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.treetable_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
 - api/link/ui.treetable_onheaderclick_event.md - occurs after clicking on header
 - api/link/ui.treetable_onitemcheck_event.md - fires when you check an item in tree and treetable
@@ -88,6 +90,7 @@ Events
 - api/link/ui.treetable_onbeforedrag_event.md
 - api/link/ui.treetable_onbeforedragin_event.md
 - api/link/ui.treetable_onbeforedrop_event.md
+- api/link/ui.treetable_onbeforedropout_event.md
 - api/link/ui.treetable_onbeforeeditstart_event.md
 - api/link/ui.treetable_onbeforeeditstop_event.md
 - api/link/ui.treetable_onbeforefilter_event.md
@@ -100,6 +103,7 @@ Events
 - api/link/ui.treetable_onbindrequest_event.md
 - api/link/ui.treetable_ondatarequest_event.md
 - api/link/ui.treetable_ondataupdate_event.md
+- api/link/ui.treetable_ondestruct_event.md
 - api/link/ui.treetable_ondragout_event.md
 - api/link/ui.treetable_onheaderclick_event.md
 - api/link/ui.treetable_onitemcheck_event.md

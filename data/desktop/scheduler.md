@@ -1,6 +1,8 @@
 Scheduler Integration
 =========================
 
+{{note js files for those components can be taken from [https://github.com/webix-hub/components](https://github.com/webix-hub/components) }}
+
 ###Overview
 
 Sceduler is an organizer to create and display events. It can show a schedule for a day, week and month.

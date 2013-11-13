@@ -1,6 +1,8 @@
 Chart Integration
 ========================
 
+{{note js files for those components can be taken from [https://github.com/webix-hub/components](https://github.com/webix-hub/components) }}
+
 Except for built-in [charts](desktop/chart.md), the webix UI library offers a possibility to integrate third party charts into your app design. 
 
 - Bubble Chart from <a href="http://d3js.org/">D3 JS Library</a>

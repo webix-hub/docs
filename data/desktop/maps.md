@@ -1,6 +1,8 @@
 Maps Integration
 ========
 
+{{note js files for those components can be taken from [https://github.com/webix-hub/components](https://github.com/webix-hub/components) }}
+
 The library allows integration geographical maps into the apps with the help of dedicated components. Three maps are supported: 
 
 - **Google Map**

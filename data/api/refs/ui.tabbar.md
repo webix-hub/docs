@@ -73,6 +73,7 @@ Events
 - api/ui.tabbar_onbeforetabclick_event.md - fired before a user clicks a tab
 - api/link/ui.tabbar_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.tabbar_onchange_event.md - fires when the value of the control is changed
+- api/link/ui.tabbar_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.tabbar_onviewresize_event.md - view size was changed by resizer
 }}
 
@@ -96,6 +97,7 @@ Properties
 - api/link/ui.tabbar_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.tabbar_id_config.md - the component ID
 - api/link/ui.tabbar_inputheight_config.md - the height of the input area, or a button's text value area.
+- api/link/ui.tabbar_inputpadding_config.md - padding of text in the input
 - api/link/ui.tabbar_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.tabbar_label_config.md - the text label of the control
 - api/link/ui.tabbar_labelposition_config.md - positions label above the control

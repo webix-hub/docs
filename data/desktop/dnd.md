@@ -106,5 +106,6 @@ More about the [possibilities of DnD event system](desktop/dnd_events.md)
     - desktop/dnd_hierarchy.md
     - desktop/dnd_external_data.md
     - desktop/dnd_events.md
+    - desktop/dnd_html5.md
 
 @complexity:2

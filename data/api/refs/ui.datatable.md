@@ -21,7 +21,7 @@ The component is full of various possibilities: filtering, sorting, pagination, 
 ~~~
 
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/group.md">Group</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/tablepaste.md">TablePaste</a>, <a href="api/refs/datastate.md">DataState</a>, <a href="api/refs/editability.md">EditAbility</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a></div>
+<a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/group.md">Group</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/tablepaste.md">TablePaste</a>, <a href="api/refs/datastate.md">DataState</a>, <a href="api/refs/editability.md">EditAbility</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a></div>
 
 Methods
 -------
@@ -178,6 +178,7 @@ Events
 - api/link/ui.datatable_onbeforedrag_event.md - fires before the mouse button is pressed and the cursor is moved over a draggable item
 - api/link/ui.datatable_onbeforedragin_event.md - fires before a dragged element is moved over the droppable area
 - api/link/ui.datatable_onbeforedrop_event.md - fires before a dragged element is released over the droppable area
+- api/link/ui.datatable_onbeforedropout_event.md - fires before a dragged element is released over the droppable area
 - api/link/ui.datatable_onbeforeeditstart_event.md - fires before edit operation is initiated
 - api/link/ui.datatable_onbeforeeditstop_event.md - fires before stop edit command is received
 - api/ui.datatable_onbeforefilter_event.md - called when filtering process is started, but data is not filtered yet
@@ -189,6 +190,7 @@ Events
 - api/link/ui.datatable_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.datatable_ondatarequest_event.md - fires when data from the server side is requested (part of dynamic loading)
 - api/link/ui.datatable_ondataupdate_event.md - fires when data item is in update process
+- api/link/ui.datatable_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.datatable_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
 - api/ui.datatable_onheaderclick_event.md - occurs after clicking on header
 - api/link/ui.datatable_onitemclick_event.md - fires when a component item was clicked
@@ -281,6 +283,7 @@ Properties
 - api/ui.datatable_scrollx_config.md - enables/disables horizontal scrolling
 - api/ui.datatable_scrolly_config.md - enables/disables vertical scrolling
 - api/ui.datatable_select_config.md - sets the selection mode in DataTable
+- api/link/ui.datatable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/ui.datatable_type_config.md - used for configuring presentation of items
 - api/link/ui.datatable_url_config.md - the url of a data feed which will be loaded after component initialization
 - api/link/ui.datatable_width_config.md - sets the width of the component

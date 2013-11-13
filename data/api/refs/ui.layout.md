@@ -55,6 +55,7 @@ Events
 
 {{links
 - api/link/ui.layout_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.layout_ondestruct_event.md - occurs when component destroyed
 }}
 
 
@@ -72,6 +73,7 @@ Properties
 - api/link/ui.layout_height_config.md - sets the height of the component
 - api/link/ui.layout_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.layout_id_config.md - the component ID
+- api/ui.layout_isolate_config.md - masks IDs of all inner element
 - api/ui.layout_margin_config.md - defines the space around elements (applies the specified value to all elements)
 - api/link/ui.layout_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.layout_maxwidth_config.md - sets the maximum width for the view
