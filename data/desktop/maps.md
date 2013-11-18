@@ -1,7 +1,7 @@
 Maps Integration
 ========
 
-{{note JS files for these components aren't included in the lib package and the components should be taken from [https://github.com/webix-hub/components](https://github.com/webix-hub/components). }}
+{{note JS files for these components aren't included in the lib package and should be taken from [https://github.com/webix-hub/components](https://github.com/webix-hub/components). }}
 
 Webix library allows to embed geographical maps into the app with the help of its own components. Four maps are supported: 
 
@@ -28,7 +28,7 @@ The extensions are taken from [https://github.com/webix-hub/components](https://
 
 {{sample 32_thirdparty/09_google_map.html}}
 
-- For **Nokia Map**
+- For **Nokia Map** {#nokia}
 
 <img src="desktop/nokiamap.png"/>
 
@@ -114,7 +114,7 @@ Map's properties define the initial position of the map:
 
 - **id** - *string* - defines the component unique ID;
 - **zoom** - *number* - defines how close you'd like to be to the Earth surface;
-- **center** - *array* - sets the center of the map. It's an array of two elements ( latitute and longtitude ) with comma delimiter.
+- **center** - *array* - sets the center of the map. It's an array of two elements ( latitude and longtitude ) with comma delimiter.
 
 {{sample 32_thirdparty/09_google_map.html }}
 
@@ -123,7 +123,7 @@ Map's properties define the initial position of the map:
 To make online maps interactive you should refer to the API reference each of the services provides. 
 
 For instance, the [GoogleMap API](https://developers.google.com/maps/documentation/javascript/) for javascript-based applications offers a rich colection of map options, 
-controls, overlays, services, layers, etc. that you can freely use while working with a **google-map** intergrated into our library. 
+controls, overlays, services, layers, etc. that you can use while working with a **google-map** intergrated into our library. 
 
 For instance, to show the necessary map piece on request, you can use the following function with the desired **lat**, **lng** and **zoom**:
 
@@ -139,7 +139,7 @@ function show_position(lat, lng, zoom) {
 ~~~
 
 - **google.maps.map** class features lots of methods, one of them being **setOptions()** that allows for defining the area on the map;
-- **google.maps.LatLng** class is a point on the map defined  bylatitude and longtitude coordinates;
+- **google.maps.LatLng** class is a point on the map defined  by latitude and longtitude coordinates;
 - **mapTypeId** is a property of *google.maps.mapOptions* object, that allows setting a map type (HYBRID, ROADMAP, SATELLITE, TERRAIN).
  
 ###Related Articles
