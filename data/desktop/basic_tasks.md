@@ -143,9 +143,11 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
                     <li>desktop/scheduler.md</li>
                     <li>desktop/chart_integration.md</li>
                     <li>desktop/maps.md</li>
+                    <li>desktop/dhtmlx.md</li>
                     <li>desktop/jquery.md</li>
                     <li>desktop/backbone.md</li>
                     <li>desktop/angular.md</li>
+                    <li><a href="desktop/custom_integration.md">How Integrate any Thirdparty Tool Using a Custom Component</a></li>
             </ul>
         </td>
         <td class='topic_description' onclick="displaySubList('thirdparty')">Says which third-party libraries and how can be integrated with Webix components</td>

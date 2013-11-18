@@ -1,38 +1,41 @@
-Scheduler Integration
+Scheduler and Gantt Integration
 =========================
 
-{{note js files for those components can be taken from [https://github.com/webix-hub/components](https://github.com/webix-hub/components) }}
+Both Scheduler and Gannt are nice planning tools from <a href="http://dhtmlx.com">DHMLX JS library</a>. While Scheduler is an event calendar, the Gantt is a chart to display a long-term project schedule.
 
-###Overview
+{{note JS files for these components aren't included into Webix lib package and should be taken from [https://github.com/webix-hub/components](https://github.com/webix-hub/components). }}
 
-Sceduler is an organizer to create and display events. It can show a schedule for a day, week and month.
+##DHTMLX Schedular
+
+Scheduler is Javascript feature-rich event calendar that can create and display events as well as show a schedule for a day, week and month. Full into about it can be found in 
+the dedicated section of <a href="http://dhtmlx.com/docs/products/dhtmlxScheduler/index.shtml">DHTMLX site</a>.
 
 <img src="desktop/scheduler.png"/>
 
 ###Scheduler Initialization
 
-To include a scheduler into your app, you need to add a link to a dedicated library file into your document head section.
+To include Scheduler into your app, you need to add a link to a dedicated library file into your document head section. Note that in a documentation sample this file is included in another way, but in your real app you should
+the pattern below: 
 
 ~~~html
-<head>
-	<script src="../../codebase/thirdparty/scheduler.js" type="text/javascript" 
-    charset="utf-8">
-    </script>
-</head>
+<script type="text/javascript" src="./scheduler.js"></script>
 ~~~
 
+And then init the view:
+
 ~~~js
-	webix.ui({
-		view:"webix-scheduler", 
-		date:new Date(2010,0,5),
-		mode:"week",
-		init:function(){...},
-		ready:function(){
-							scheduler.parse("")
-					}
-		});
+//path from which extra libraries are autoloaded
+webix.codebase = "./";
 
-
+webix.ui({
+	view:"webix-scheduler", 
+	date:new Date(2010,0,5),
+	mode:"week",
+	init:function(){...}, //scheduler config
+	ready:function(){
+		scheduler.parse("..events data..")
+	}
+});
 ~~~
 
 {{sample 32_thirdparty/04_scheduler.html }}
@@ -49,7 +52,42 @@ constructor, the component will show current date;
 - **ready** - specifies a function to be executed when the component is fully loaded;
 - **parse** (string) - XML string with predefined events.
 
+Check <a href="http://dhtmlx.com/docs/products/dhtmlxScheduler/index.shtml">Scheduler Documentation</a> for more details.
+
 Read more about date formatting methods in the [corresponding chapter of the manual](helpers/date_formatting_methods.md). 
+
+##DHTMlX Gantt Chart 
+
+DHTMLX Gantt is a chart for visualizing project schedule that allows for easy setting and showing dependencies between tasks.It's highly customizable and features flexible API.  
+Full into about it can be found in the dedicated section of <a href="http://dhtmlx.com/docs/products/dhtmlxGantt/">DHTMLX site</a>.
+
+<img src="desktop/gantt.png"/>
+
+###Gantt Initialization
+
+To include Scheduler into your app, you need to add a link to a dedicated library file into your document head section. 
+
+~~~html
+<script type="text/javascript" src="./gantt.js"></script>
+~~~
+ And then init the view:
+ 
+~~~js
+ webix.ui({
+	view:"dhx-gantt", 
+	init:function(){...},
+	ready:function(){
+		gantt.parse(tasks); //adding tasks
+	}
+});
+~~~
+
+Related Sample: <a href="http://cdns.webix.io/components/gantt/sample.html">DHTMLX Gantt</a>
+
+###Gantt Properties
+
+- **init** - functions to execute on initialization;
+- **ready** - specifies a function to be executed when the component is fully loaded.
 
 ###Related Articles
 
