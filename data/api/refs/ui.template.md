@@ -52,6 +52,7 @@ Methods
 - api/link/ui.template_render.md - renders the specified item or the whole component
 - api/link/ui.template_resize.md - adjusts the view to a new size
 - api/link/ui.template_scrollto.md - scrolls the data container to a certain position
+- api/ui.template_setcontent.md - attaches html container to the template
 - api/ui.template_sethtml.md - set hmlt for template
 - api/ui.template_setvalues.md - sets data hash
 - api/link/ui.template_show.md - makes the component visible
@@ -69,6 +70,7 @@ Events
 - api/link/ui.template_onbeforeload_event.md - occurs immediately before loading XML data has been started
 - api/link/ui.template_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.template_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.template_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.template_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.template_onviewresize_event.md - view size was changed by resizer
 }}

@@ -134,6 +134,7 @@ Events
 - api/link/ui.contextmenu_onbeforedrag_event.md - fires before the mouse button is pressed and the cursor is moved over a draggable item
 - api/link/ui.contextmenu_onbeforedragin_event.md - fires before a dragged element is moved over the droppable area
 - api/link/ui.contextmenu_onbeforedrop_event.md - fires before a dragged element is released over the droppable area
+- api/link/ui.contextmenu_onbeforedropout_event.md - fires before a dragged element is released over the droppable area
 - api/link/ui.contextmenu_onbeforeload_event.md - occurs immediately before loading XML data has been started
 - api/link/ui.contextmenu_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.contextmenu_onbeforeselect_event.md - fires before item selection is started
@@ -142,6 +143,7 @@ Events
 - api/link/ui.contextmenu_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.contextmenu_ondatarequest_event.md - fires when data from the server side is requested (part of dynamic loading)
 - api/link/ui.contextmenu_ondataupdate_event.md - fires when data item is in update process
+- api/link/ui.contextmenu_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.contextmenu_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
 - api/link/ui.contextmenu_onhide_event.md - fires when window is hidden
 - api/link/ui.contextmenu_onitemclick_event.md - fires when a component item was clicked

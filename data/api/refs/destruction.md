@@ -14,8 +14,17 @@ Methods
 }}
 
 
+Events
+------
+
+{{links
+- api/destruction_ondestruct_event.md - occurs when component destroyed
+}}
+
+
 
 
 @index:
 - api/refs/destruction_methods.md
+- api/refs/destruction_events.md
 

@@ -82,6 +82,7 @@ Events
 - api/link/ui.toolbar_onbeforevalidate_event.md - called before runing validation
 - api/link/ui.toolbar_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.toolbar_onchange_event.md - fires when data in the input is changed
+- api/link/ui.toolbar_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.toolbar_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.toolbar_onvalidationerror_event.md - fires when the form fails to pass validation
 - api/link/ui.toolbar_onvalidationsuccess_event.md - fires after the form has passes validation successfully
@@ -107,6 +108,7 @@ Properties
 - api/link/ui.toolbar_height_config.md - sets the height of the component
 - api/link/ui.toolbar_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.toolbar_id_config.md - the component ID
+- api/link/ui.toolbar_isolate_config.md - masks IDs of all inner element
 - api/link/ui.toolbar_margin_config.md - defines the space around elements (applies the specified value to all elements)
 - api/link/ui.toolbar_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.toolbar_maxwidth_config.md - sets the maximum width for the view

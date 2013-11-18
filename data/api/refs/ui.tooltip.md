@@ -21,30 +21,37 @@ Generally, the component isn't intended for direct initialization. But if you de
 ~~~
 
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/singlerender.md">SingleRender</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
+<a href="api/refs/singlerender.md">SingleRender</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
 Methods
 -------
 
 {{links
 - api/link/ui.tooltip_adjust.md - adjusts the component to the size of the parent HTML container
+- api/link/ui.tooltip_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.tooltip_bind.md - binds components
+- api/link/ui.tooltip_blockevent.md - temporarily blocks triggering of ALL events of the calling object
+- api/link/ui.tooltip_callevent.md - calls an inner event
 - api/link/ui.tooltip_customize.md - redefines the 'type' property
 - api/link/ui.tooltip_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.tooltip_destructor.md - destructs the calling object
+- api/link/ui.tooltip_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.tooltip_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.tooltip_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.tooltip_getchildviews.md - returns child views of the calling component
 - api/link/ui.tooltip_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.tooltip_getparentview.md - returns the parent view of the component
 - api/link/ui.tooltip_gettopparentview.md - returns top parent view
+- api/link/ui.tooltip_hasevent.md - checks whether the component has the specified event
 - api/link/ui.tooltip_hide.md - hides the view
 - api/link/ui.tooltip_isenabled.md - checks whether the view is enabled
 - api/link/ui.tooltip_isvisible.md - checks whether the view is visible
+- api/link/ui.tooltip_mapevent.md - routes events from one object to another
 - api/link/ui.tooltip_render.md - renders the specified item or the whole component
 - api/link/ui.tooltip_resize.md - adjusts the view to a new size
 - api/link/ui.tooltip_show.md - makes the component visible
 - api/link/ui.tooltip_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.tooltip_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}
 
 
@@ -55,6 +62,7 @@ Events
 - api/link/ui.tooltip_onafterrender_event.md - occurs immediately after the component has been rendered
 - api/link/ui.tooltip_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.tooltip_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.tooltip_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.tooltip_onviewresize_event.md - view size was changed by resizer
 }}
 
@@ -79,6 +87,7 @@ Properties
 - api/link/ui.tooltip_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.tooltip_minheight_config.md - sets the minimal height for the view
 - api/link/ui.tooltip_minwidth_config.md - sets the minimal width for the view
+- api/link/ui.tooltip_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.tooltip_template_config.md - the component template
 - api/link/ui.tooltip_width_config.md - sets the width of the component
 }}

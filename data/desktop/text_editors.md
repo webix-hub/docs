@@ -1,6 +1,8 @@
 Text Editor Integration
 =================
 
+{{note js files for those components can be taken from [https://github.com/webix-hub/components](https://github.com/webix-hub/components) }}
+
 webix library supports integration of third party elements into the apps. Such components include text editors, [scheduler](desktop/scheduler.md),
 [charts](desktop/chart_integration.md) and [geographical maps](desktop/maps.md). 
 
@@ -29,7 +31,7 @@ Mercury is a fully featured HTML5 editor with **full HTML, simple, markdown, sni
 Link to the library
 }}
 ~~~html
-<script src="../../codebase/thirdparty/nicedit.js" type="text/javascript" charset="utf-8">
+<script src="components/nicedit.js" type="text/javascript" charset="utf-8">
 </script>
 ~~~
 {{snippet
@@ -58,7 +60,7 @@ to rich text editing fields.
 Link to the library
 }}
 ~~~html
-<script src="../../codebase/thirdparty/nicedit.js" type="text/javascript" charset="utf-8">
+<script src="components/nicedit.js" type="text/javascript" charset="utf-8">
 </script>
 ~~~
 
@@ -89,7 +91,7 @@ elements to editor instances.
 Link to the library
 }}
 ~~~html
-<script src="../../codebase/thirdparty/tinymce.js" type="text/javascript" charset="utf-8"></script>
+<script src="components/tinymce.js" type="text/javascript" charset="utf-8"></script>
 ~~~
 
 {{snippet
@@ -117,7 +119,7 @@ color your code, and optionally help with indentation.
 Link to the library
 }}
 ~~~html
-<script src="../../codebase/thirdparty/codemirror.js" type="text/javascript" charset="utf-8"></script>
+<script src="components/codemirror.js" type="text/javascript" charset="utf-8"></script>
 <script>
 ~~~
 

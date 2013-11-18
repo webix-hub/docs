@@ -67,6 +67,7 @@ Events
 - api/link/ui.slider_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.slider_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.slider_onchange_event.md - fires when the value of the control is changed
+- api/link/ui.slider_ondestruct_event.md - occurs when component destroyed
 - api/ui.slider_onsliderdrag_event.md - fires when the handle of slider was dragged ( but not released yet )
 - api/link/ui.slider_onviewresize_event.md - view size was changed by resizer
 }}
@@ -90,6 +91,7 @@ Properties
 - api/link/ui.slider_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.slider_id_config.md - the component ID
 - api/link/ui.slider_inputheight_config.md - the height of the input area, or a button's text value area.
+- api/link/ui.slider_inputpadding_config.md - padding of text in the input
 - api/link/ui.slider_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.slider_label_config.md - the text label of the control
 - api/link/ui.slider_labelposition_config.md - positions label above the control

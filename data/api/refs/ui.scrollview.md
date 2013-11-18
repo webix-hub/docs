@@ -41,6 +41,7 @@ Methods
 - api/link/ui.scrollview_isenabled.md - checks whether the view is enabled
 - api/link/ui.scrollview_isvisible.md - checks whether the view is visible
 - api/link/ui.scrollview_resize.md - adjusts the view to a new size
+- api/ui.scrollview_resizechildren.md - resizes all children of the calling component
 - api/link/ui.scrollview_scrollto.md - scrolls the data container to a certain position
 - api/link/ui.scrollview_show.md - makes the component visible
 - api/ui.scrollview_showview.md - places focus on the necessary scrollview item
@@ -52,6 +53,7 @@ Events
 
 {{links
 - api/link/ui.scrollview_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.scrollview_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.scrollview_onviewresize_event.md - view size was changed by resizer
 }}
 

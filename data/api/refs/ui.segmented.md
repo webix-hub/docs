@@ -71,6 +71,7 @@ Events
 - api/link/ui.segmented_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.segmented_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.segmented_onchange_event.md - fires when the value of the control is changed
+- api/link/ui.segmented_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.segmented_onviewresize_event.md - view size was changed by resizer
 }}
 
@@ -93,6 +94,7 @@ Properties
 - api/link/ui.segmented_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.segmented_id_config.md - the component ID
 - api/link/ui.segmented_inputheight_config.md - the height of the input area, or a button's text value area.
+- api/link/ui.segmented_inputpadding_config.md - padding of text in the input
 - api/link/ui.segmented_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.segmented_label_config.md - the text label of the control
 - api/link/ui.segmented_labelposition_config.md - positions label above the control

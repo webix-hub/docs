@@ -125,6 +125,7 @@ Events
 - api/link/ui.grouplist_onbeforedrag_event.md - fires before the mouse button is pressed and the cursor is moved over a draggable item
 - api/link/ui.grouplist_onbeforedragin_event.md - fires before a dragged element is moved over the droppable area
 - api/link/ui.grouplist_onbeforedrop_event.md - fires before a dragged element is released over the droppable area
+- api/link/ui.grouplist_onbeforedropout_event.md - fires before a dragged element is released over the droppable area
 - api/link/ui.grouplist_onbeforeload_event.md - occurs immediately before loading XML data has been started
 - api/link/ui.grouplist_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.grouplist_onbeforeselect_event.md - fires before item selection is started
@@ -132,6 +133,7 @@ Events
 - api/link/ui.grouplist_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.grouplist_ondatarequest_event.md - fires when data from the server side is requested (part of dynamic loading)
 - api/link/ui.grouplist_ondataupdate_event.md - fires when data item is in update process
+- api/link/ui.grouplist_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.grouplist_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
 - api/link/ui.grouplist_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.grouplist_onitemdblclick_event.md - fires when a component item was double-clicked

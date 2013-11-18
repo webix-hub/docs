@@ -16,6 +16,7 @@ Events
 - api/link/ui.proto_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.proto_ondatarequest_event.md - fires when data from the server side is requested (part of dynamic loading)
 - api/link/ui.proto_ondataupdate_event.md - fires when data item is in update process
+- api/link/ui.proto_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.proto_onitemrender_event.md - for each item rendering, occurs only for items with custom templates
 - api/link/ui.proto_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.proto_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation
@@ -37,6 +38,7 @@ Events
 - api/link/ui.proto_onbindrequest_event.md
 - api/link/ui.proto_ondatarequest_event.md
 - api/link/ui.proto_ondataupdate_event.md
+- api/link/ui.proto_ondestruct_event.md
 - api/link/ui.proto_onitemrender_event.md
 - api/link/ui.proto_onloaderror_event.md
 - api/link/ui.proto_onvalidationerror_event.md

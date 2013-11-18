@@ -14,6 +14,7 @@ Events
 - api/link/ui.property_onbeforeload_event.md - occurs immediately before loading XML data has been started
 - api/link/ui.property_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.property_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.property_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.property_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.property_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.property_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
@@ -35,6 +36,7 @@ Events
 - api/link/ui.property_onbeforeload_event.md
 - api/link/ui.property_onbeforerender_event.md
 - api/link/ui.property_onbindrequest_event.md
+- api/link/ui.property_ondestruct_event.md
 - api/link/ui.property_onitemclick_event.md
 - api/link/ui.property_onitemdblclick_event.md
 - api/link/ui.property_onloaderror_event.md
