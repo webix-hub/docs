@@ -41,7 +41,7 @@ and all [controls](desktop/controls.md)).
 [layout](desktop/layout.md), [multiview](desktop/multiview.md), [accordion](desktop/accordion.md), [carousel](desktop/carousel.md), [form](desktop/form.md) and [toolbar](desktop/toolbar.md). 
 
 ~~~js
-$$("layout").define("rows": [ {view:"button", ...}, {view:"label", ...} ]);
+$$("layout").define("rows", [ {view:"button", ...}, {view:"label", ...} ]);
 $$("layout").reconstruct();
 ~~~
 
@@ -73,10 +73,10 @@ webix.ui({
         { id:"col_2", header:"Released" , width:80}]
         })
 //reading 1st column width 
-var colWidth = $$("mytable").config.columns[o].width; // 200
+var colWidth = $$("mytable").config.columns[0].width; // 200
 
 //resizing the 1st column
-$$("mytable").config.columns[o].width = 300;
+
 dtable.resize();
 
 ~~~
