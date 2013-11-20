@@ -12,7 +12,7 @@ Webix library allows to embed geographical maps into the app with the help of it
 
 Ui-related maps inherit from [view](desktop/view.md).
 
-###Initialization
+###Initialization {#init}
 
 1 . First of all, you need to **add a special file** to the head section of your document. The script helps connect to thirdparty applications without linking to them directly:
 
@@ -28,7 +28,7 @@ The extensions are taken from [https://github.com/webix-hub/components](https://
 
 {{sample 32_thirdparty/09_google_map.html}}
 
-- For **Nokia Map** {#nokia}
+- For **Nokia Map**
 
 <img src="desktop/nokiamap.png"/>
 
