@@ -1,12 +1,9 @@
 Text Editor Integration
 =================
 
-{{note JS files for these components aren't included in the lib package and the components should be taken from [https://github.com/webix-hub/components](https://github.com/webix-hub/components) }}
+{{note JS files for these components aren't included in the lib package and should be taken from [https://github.com/webix-hub/components](https://github.com/webix-hub/components) }}
 
-webix library supports integration of third party elements into the apps. Such components include text editors, [scheduler](desktop/scheduler.md),
-[charts](desktop/chart_integration.md) and [geographical maps](desktop/maps.md). 
-
-The following text editors can be included: 
+Webix library supports integration of popular text editors in the application with the help of its own components. For now, the following text editors can be included: 
 
 - [Mercury](#mercury);
 - [NicEdit](#nicedit);
@@ -15,8 +12,10 @@ The following text editors can be included:
 - [CKEditor](#ckeditor).
 
 
-For each of these components a link to **special javascript file** from the [extensions folder]((https://github.com/webix-hub/components)) should be included into the document's head section. Note that
-in documentation samples files are linked in another way, but in your apps you should follow the patterns below:
+To embed any of the editors into your web page, you should link not only to Webix, but also to a **special javascript file** from the [extensions folder]((https://github.com/webix-hub/components)). This file will connect
+you to the chosen editor as well load extra required files for it. 
+
+Note that in documentation samples files are linked in another way, but in your apps you should follow the patterns described below. 
 
 ##Mercury Text Editor {#mercury}
 
@@ -155,6 +154,8 @@ webix.ui({
 });
 ~~~
 
+Note that here an extra property appears - **mode** that denotes a language you are coding in.
+
 ##CKEditor Text Editor {#ckeditor}
 
 CKEditor is a ready-for-use WYSIWYG editor that brings word processor features directly to your web pages. It is suitable for editing plain texts as well as HTML markup. 
@@ -190,17 +191,25 @@ webix.ui({
 
 ##Common Methods: 
 
-- **setValue(value)**;
-
-Allows setting text for the editor (equal to **value** property, but allows doing it dynamically). The function is called from the component referring to its ID. 
+- **setValue(**value**);** - sets text for the editor (equal to **value** property, but allows doing it dynamically). The function is called from the component referring to its ID. 
 
 ~~~js
 $$("editor"). setValue("<p>some text or code snippet</p>");
 ~~~
 
-- **focus();**
+- **getValue();** - gets the current editor text with current formatting.  Formatted text pieces are wrapped into corresponding HTML tags;
 
-In case of several editors on the page this method allows place cursor mark into the desired editor. The function doesn't take any parameters. 
+~~~js
+$$("editor").getValue(); // returns e.g "some<b> text</b> "
+~~~
+
+- **getEditor();** - gets the editor object so that you can use its specific API (exept for Mercury editor).
+
+~~~js
+$$("editor").getEditor();
+~~~
+
+- **focus();** - in case of several editors on the page this method allows placing cursor mark into the desired editor. 
 
 ~~~js
 $$("editor").focus();
