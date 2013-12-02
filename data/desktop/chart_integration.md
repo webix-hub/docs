@@ -52,7 +52,7 @@ JustGage JS is a handy JavaScript plugin for generating and animating nice gauge
 
 <img src="desktop/justgage.png">
 
-Related Sample: <a href="http://cdns.webix.io/components/justgage/sample.html">JustGage Chart</a>
+Related Sample: <a href="http://webix-hub.github.io/components/justgage/sample.html">JustGage Chart</a>
 
 ####Component Initialization
 
@@ -144,5 +144,23 @@ webix.ui({
 ~~~
 
 - **URL** property specifies a path to a data file or script that will generate data. 
+
+The look-and-feel of a Sigma chart is defined by a currently used **plugin**. By default, Webix-integrated Sigma chart uses Fisheye plugin described in a tutorial on [Sigma JS site](http://sigmajs.org). At the same time, you can 
+easily change the plugin within the component source code in a private **_after_render()** function:
+
+~~~js
+_render_once:function(){
+	webix.require([
+		"sigma/sigma.js", //sigma lib file 
+		"sigma/plugins/sigma.parseGexf.js", //GEXF extension
+		"sigma/plugins/sigma.fisheye.js" //plugin
+   ],function(first_init){ ...}); //chart initializing
+}
+~~~
+
+In our [Github package](https://github.com/webix-hub/components/tree/master/sigma) you'll also find **forceAtlas2** Sigma plugin as well as you can write your own one and place it to the plugin folder 
+and include into the **sigma-chart** Webix component in the way described above. 
+
+In addition, the support for GEXF data included by default.
 
 @complexity:2
