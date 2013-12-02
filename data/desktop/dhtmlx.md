@@ -8,7 +8,7 @@ Webix components resemble DHTMLX ones, so the views from both libraries can natu
 JS file that contains the integration code can be taken from [Github](https://github.com/webix-hub/components) while the needed components are downloaded from [DHTMLX site](http://www.dhtmlx.com).
 }}
 
-**DHTMLX** is comprised from **various components** each of which can be downloaded separately to minimize the total weight of dependent scriptsin the application. Yet, you need to enumerate them all in your document head. 
+**DHTMLX** is comprised from **various components** each of which can be downloaded separately to minimize the total weight of dependent scripts in the application. Yet, you need to enumerate them all in your document head. 
 
 ~~~html
 <!-- compulsory: JS file with the code that integrated Webix and DHTMLX -->

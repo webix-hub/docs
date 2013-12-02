@@ -58,7 +58,7 @@ Read more about date formatting methods in the [corresponding chapter of the man
 
 ##DHTMLX Gantt Chart 
 
-DHTMLX Gantt is a chart for visualizing project schedule that allows for easy setting and showing dependencies between tasks.It's highly customizable and features flexible API.  
+DHTMLX Gantt is a chart for visualizing project schedule that allows for easy setting and showing dependencies between tasks. It's highly customizable and features flexible API.  
 Full into about it can be found in the dedicated section of <a href="http://dhtmlx.com/docs/products/dhtmlxGantt/">DHTMLX site</a>.
 
 <img src="desktop/gantt.png"/>

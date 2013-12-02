@@ -1,9 +1,9 @@
 Chart Integration
 ========================
 
-{{note JS files for these aren't included into the lib package and the components should be taken from [https://github.com/webix-hub/components](https://github.com/webix-hub/components) }}
+{{note JS files for these components aren't included into the lib package and should be taken from [https://github.com/webix-hub/components](https://github.com/webix-hub/components) }}
 
-Except for built-in [charts](desktop/chart.md), the Webix offers a possibility to integrate with third party charts from the following libraries:
+Except for built-in [charts](desktop/chart.md), Webix offers a possibility to integrate with third-party charts of the following libraries:
 
 - <a href="http://d3js.org/">D3 JS Library</a>
 - <a href="http://justgage.com/">JastGage Javascript Plugin</a>
@@ -16,7 +16,7 @@ Note that third-party scripts are included to documentation samples in another w
 
 D3 charts helps manipulate documents based on data and offers powerful visualization tools and a data-driven approach to DOM manipulation. 
 
-One of its implementations, **Bubble chart**, displays data in an area of circles that pack hundreds of values into a small space. It looks like a bundle of multicolored baloons. 
+One of its implementations, **Bubble chart**, displays data in the area of circles that pack hundreds of values into a small space. It looks like a bundle of multicolored baloons. 
 
 <img src="desktop/bubble_chart.png"/>
 
@@ -44,11 +44,11 @@ webix.ui({
 ~~~
 
 - **url** - specifies data source for the chart (data file or script);
-- **ready** - function that is executed when the component is fully loaded. It contains the code of the needed chart (available on their site. 
+- **ready** - function that is executed when the component is fully loaded. It contains the code of the needed chart (available on their site). 
 
 ##Justgage Gauges
 
-JustGage JS handy JavaScript plugin for generating and animating nice gauges. It is based on Raphaël library for vector drawing. 
+JustGage JS is a handy JavaScript plugin for generating and animating nice gauges. It is based on Raphaël library for vector drawing. 
 
 <img src="desktop/justgage.png">
 
@@ -113,11 +113,11 @@ webix.ui({
 ~~~
 
 - **url** - specifies data source for the chart (data file or script);
-- **ready** - function that is triggered when the component is fully loaded. It contains the chart's source code available on Raphael library site. 
+- **ready** - function that is triggered when the component is fully loaded. It contains the chart's source code available on the Raphael library site. 
 
 ##Sigma Charts
 
-Sigma is JS library that aids in drawing graphs, using the HTML canvas element. It offers several graph types.  
+Sigma is JS library that aids in drawing graphs using the HTML canvas element. It offers several graph types.  
 
 <img src="desktop/sigma.png">
 
