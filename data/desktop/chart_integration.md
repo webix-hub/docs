@@ -161,6 +161,6 @@ _render_once:function(){
 In our [Github package](https://github.com/webix-hub/components/tree/master/sigma) you'll also find **forceAtlas2** Sigma plugin as well as you can write your own one and place it to the plugin folder 
 and include into the **sigma-chart** Webix component in the way described above. 
 
-In addition, the support for GEXF data included by default.
+In addition, the support for GEXF data is provided by default.
 
 @complexity:2
