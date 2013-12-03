@@ -88,7 +88,7 @@ Not all Webix components can work with Backbone Collections directly. Components
 $$("form").parse( films.first().toJSON());
 ~~~
 
-This command loads data from the model into Webix [form](dekstop/form.md), but any changes in the form or in the model are not reflected or saved. 
+This command loads data from the model into Webix [form](desktop/form.md), but any changes in the form or in the model are not reflected or saved. 
 
 ###Adding extra methods to Collections
 

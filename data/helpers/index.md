@@ -8,4 +8,5 @@ Auxiliary Resources
 - helpers/data_drivers.md
 - helpers/number_formatting_methods.md
 - helpers/date_formatting_methods.md
+- desktop/resizearea.md
 }}
