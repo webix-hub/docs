@@ -189,6 +189,4 @@ function displaySubList(currentList){
 - desktop/web_and_internet.md
 - desktop/extending_components.md
 - desktop/third_party_integration.md
-- desktop/custom_integration.md
-- desktop/dhtmlx.md
 - helpers/index.md

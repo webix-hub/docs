@@ -5,7 +5,7 @@ Webix offers a number of ready-made solutions that integrate it with other Javas
 
 - integration with structural frameworks [BackBoneJS](desktop/backbone.md) and [Angular JS](desktop/angular.md);
 - integration with popular [text editors](desktop/text_editors.md);
-- intergation with [charts](desktop/chart_integration.md) and [planning tools](desktop/schedular.md).
+- intergation with [charts](desktop/chart_integration.md) and [planning tools](desktop/scheduler.md).
 
 However, it's not possible to provide support for all the libraries or tools that exist in big quantities on the Web. If you haven't found the needed solution among built-in ones,
 you can write **your own integration pattern**. Webix offers rather an elegant way to do this. 
@@ -42,7 +42,7 @@ To learn more about how to **create a custom object in Webix**, go to the [corre
 
 Let's take a [HipChat](https://www.hipchat.com), a  popular professional chat solution that has lately got an apportunity to work on the web. 
 
-<img src="dektop/hipchat.png"/>
+<img src="desktop/hipchat.png"/>
 
 {{snippet
 Prototype Component
