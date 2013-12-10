@@ -22,7 +22,7 @@ The control supports any content inside of it. The content blocks can be arrange
 
 
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/carouselpanel.md">CarouselPanel</a>, <a href="api/refs/ui.layout.md">ui.layout</a>, <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
+<a href="api/refs/navigationbuttons.md">NavigationButtons</a>, <a href="api/refs/ui.layout.md">ui.layout</a>, <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
 Methods
 -------
@@ -73,6 +73,8 @@ Events
 {{links
 - api/link/ui.carousel_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.carousel_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.carousel_onitemclick_event.md - 
+- api/ui.carousel_onshow_event.md - 
 }}
 
 
@@ -96,11 +98,12 @@ Properties
 - api/link/ui.carousel_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.carousel_minheight_config.md - sets the minimal height for the view
 - api/link/ui.carousel_minwidth_config.md - sets the minimal width for the view
+- api/link/ui.carousel_navigation_config.md - 
 - api/link/ui.carousel_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.carousel_padding_config.md - defines the space between the element borders and content (applies the specified value to all sides).
 - api/link/ui.carousel_paddingx_config.md - sets the right and left padding (applies the specified value to both sides)
 - api/link/ui.carousel_paddingy_config.md - sets the top and bottom padding (applies the specified value to both sides)
-- api/link/ui.carousel_panel_config.md - adds to the carousel a panel that  shows the total amount of carousel's items and which one of them is selected.
+- api/ui.carousel_panel_config.md - 
 - api/link/ui.carousel_rows_config.md - array of views objects arranged vertically
 - api/ui.carousel_scrollspeed_config.md - speed of scrolling ('300ms' by default)
 - api/link/ui.carousel_type_config.md - defines the layout borders

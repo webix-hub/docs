@@ -311,9 +311,14 @@ Auxiliary Components
         <td>a bordeless empty view </td>
     </tr> 
     <tr>
-    	<td> <img src="api/toc/tooltip.png"/> </td>
+        <td> <img src="api/toc/tooltip.png"/> </td>
         <td> api/refs/ui.tooltip.md </td>
         <td>a static text that is rendered in the absolutely positioned container </td>
+    </tr>
+    <tr>
+        <td> <img src="api/toc/video.png"/> </td>
+        <td> api/refs/ui.video.md </td>
+        <td>a video player component</td>
     </tr>
     </tbody>
 </table>
@@ -421,5 +426,6 @@ Other
 - api/refs/ui.treetable.md
 - api/refs/ui.unitlist.md
 - api/refs/ui.uploader.md
+- api/refs/ui.video.md
 - api/refs/ui.window.md
 - api/toc/ui_mixins.md

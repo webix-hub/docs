@@ -3,13 +3,13 @@ Mixins
 
 {{links
 
+- api/refs/activecontent.md - dummy stub
 - api/refs/atomdataloader.md - primitive data loader
 - api/refs/atomrender.md - primitive render for views
 - api/refs/autotooltip.md - allows for setting a prompting message for data items
 - api/refs/basebind.md - core of all bind operations
 - api/refs/bindsource.md - logic for source of data in bind operations
 - api/refs/canvas.md - wrapper for HTML Canvas tag
-- api/refs/carouselpanel.md - panel for carousel control
 - api/refs/collectionbind.md - binding rules for collections of objects
 - api/refs/contexthelper.md - provides for subviews seen by right mouse click
 - api/refs/copypaste.md - provides support for copy-paste operations (integration with clipboard)
@@ -39,6 +39,7 @@ Mixins
 - api/refs/modality.md - sets modality to popup views
 - api/refs/mouseevents.md - adds inner events for all mouse actions
 - api/refs/movable.md - adds ability to move data in component or between components
+- api/refs/navigationbuttons.md - NavigationButtons for carousel view
 - api/refs/number.md - number formating|processing logic
 - api/refs/overlaybox.md - show a temporary layer other view
 - api/refs/pagingability.md - interface which adds support for pager
@@ -82,13 +83,13 @@ Mixins
 
 @index:
 
+- api/refs/activecontent.md
 - api/refs/atomdataloader.md
 - api/refs/atomrender.md
 - api/refs/autotooltip.md
 - api/refs/basebind.md
 - api/refs/bindsource.md
 - api/refs/canvas.md
-- api/refs/carouselpanel.md
 - api/refs/collectionbind.md
 - api/refs/contexthelper.md
 - api/refs/copypaste.md
@@ -118,6 +119,7 @@ Mixins
 - api/refs/modality.md
 - api/refs/mouseevents.md
 - api/refs/movable.md
+- api/refs/navigationbuttons.md
 - api/refs/number.md
 - api/refs/overlaybox.md
 - api/refs/pagingability.md
