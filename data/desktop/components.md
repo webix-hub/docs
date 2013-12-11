@@ -134,6 +134,10 @@ Html-oriented components supply handy means for using habitual HTML elements in 
     	<img src="desktop/icons/iframe.png"/>
     	<br>IFrame
     </a>
+	<a href="desktop/video.md">
+    	<img src="desktop/icons/video.png"/>
+    	<br>Video
+    </a>
 	<a href="desktop/template.md">
     	<img src="desktop/icons/template.png"/>
     	<br>Template
