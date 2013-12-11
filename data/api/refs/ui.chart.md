@@ -168,6 +168,7 @@ Properties
 - api/link/ui.chart_ready_config.md - a handler that is called just after the page has been completely parsed
 - api/link/ui.chart_removemissed_config.md - defines how to treat items in case of reloading
 - api/link/ui.chart_save_config.md - defines urls for datasaving
+- api/ui.chart_scale_config.md - 
 - api/link/ui.chart_scheme_config.md - defines schemes for data processing
 - api/ui.chart_series_config.md - defines graphs presented on the chart
 - api/ui.chart_shadow_config.md - enables/disables the pie shadow
