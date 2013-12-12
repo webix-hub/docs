@@ -3,7 +3,7 @@ Carousel
 
 ###Overview
 
-Ui-related carousel is designed to present Webix components in one view with the ability to switch between them by clicking on the dedicated buttons or sliding (on touch devices).
+Ui-related **carousel** is designed to present Webix components in one view with the ability to switch between them by clicking on the dedicated buttons or sliding (on touch devices).
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/carousel.png"/>
 
@@ -13,7 +13,7 @@ Ui-related carousel is designed to present Webix components in one view with the
 
 Carousel items are arranged into either **rows** to scroll through them vertically or in **cols** to scroll horizontally. Each row/column includes Webix component, e.g: 
 
-- simple [template](desktop/template.md) for showing texts and images;
+- simple or data [template](desktop/template.md) for showing texts and images;
 - any data component like [dataview](desktop/dataview.md), [chart](desktop/chart.md), [datatable](datatable/index.md); 
 - [layout](desktop/layout.md) of any complexity.
 
@@ -32,7 +32,7 @@ webix.ui({
 
 {{sample 26_carousel/01_init.html}}
 
-Normally, component configuration is stored separately while **cols/rows** property contains an array of corresponding variables. It makes code clear and easy to read. 
+Normally, component configuration is stored separately while **cols/rows** contain an array of corresponding variables. It makes code clear and easy to read. 
 
 ###Navigation Area
 
@@ -110,7 +110,7 @@ Learn more about how to [show and hide Webix components](desktop/visibility.md) 
 
 ###Scrolling Speed
 
-The **default scrolling speed** of the carousel is **300ms**. To change it, use the following: 
+The **default scrolling speed** of the carousel is **300ms**. To change it use the following: 
 
 ~~~js
 webix.ui({
@@ -119,7 +119,7 @@ webix.ui({
 });
 ~~~
 
-However, in case of significantly slower scrolling smoothness may degrade.
+However, in case of significantly slower scrolling speed smoothness may degrade.
  
 ###Working with Carousel
 

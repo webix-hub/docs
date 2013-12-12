@@ -1,7 +1,7 @@
 Template
 =================
 
-Ui-related template looks like a non-editable text field, either filled with text or empty. Its contents is set with the help of *template* parameter. Standard template has no design of it's own. 
+Ui-related **template** looks like a non-editable area for rendering plain text or a single data record. Its contents is set with the help of the same-name *template* parameter. 
 
 <img  style="display:block; margin-left:auto;margin-right:auto;"  src="desktop/template.png"/>
 
@@ -10,8 +10,8 @@ Ui-related template looks like a non-editable text field, either filled with tex
 ~~~js
 webix.ui({
 	view:"template",
-	template:"Default template with some text inside" // text on the wild field
-})
+	template:"Default template with some text inside" //text content
+});
 ~~~
 
 {{sample
@@ -31,7 +31,7 @@ webix.ui({
 ~~~
 
 {{note
-Template doesn't need to be compulsory placed inside the view. The following code goes as well. 
+Template doesn't need to have **view** attribute. The following code goes as well. 
 }}
 
 ~~~js
@@ -45,15 +45,48 @@ webix.ui({
 ~~~
 
 {{note
-Apart from including plain text into apps, **template** exists as property of a data-presenting component. In this case it allows setting pattern to display data items as well as adding styles to components. 
-The [corresponding chapter of the manual](desktop/html_templates.md) will tell you in detail how to make templates. 
+The same-name property of the component, **template**, is also used by Webix data components. It allows setting pattern to display data items from multiple dataset as well as adding styles to components. 
+The [corresponding chapter of the manual](desktop/html_templates.md) will tell you in detail how to define templates. 
 }}
        
 ##Template Types
 
 ###Default 
 
-With no type specified, template is a white field with predefined text (as described earlier). 
+With no type specified, template is a white field with predefined value that can be:
+
+- **plain text**:
+
+~~~js
+{template:"Plain text"}
+~~~
+
+- **text** with **HTML** markup:
+
+~~~js
+{template:"Text with <b>HTML</b> markup"}
+~~~
+
+- **single data element** defined as **data**:
+
+~~~js
+{ template:"#title#", data:{title:"Image One", src:"imgs/image001.jpg"}} //shows "Image One"
+~~~
+
+Above, template property contains **data key** in **hash** signs to define which data from the data record should be displayed. 
+
+In some cases, **template** property of template component can be a **function**:
+
+~~~js
+{
+	data:{title:"Image One", src:"imgs/image001.jpg"},
+	template:function(obj){ //obj is a data record object
+		return '<img src="'+obj.src+'"/>'
+	}
+}
+~~~
+
+{{sample 26_carousel/01_init.html}}
 
 ###Header
 
