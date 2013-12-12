@@ -83,6 +83,7 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
 		        Styling and Animation
 		    </h4>
 		    <ul id="styling_sublist">
+            	   <li>desktop/skins.md</li>
                    <li>desktop/styling.md</li>
                    <li>desktop/animation.md</li>
                    <li>desktop/icon_types.md</li>
