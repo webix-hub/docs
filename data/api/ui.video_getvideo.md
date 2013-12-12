@@ -6,18 +6,25 @@ getVideo
 	getVideo()
 
 @short:
-	
-
-@params:
+	gets html5 video object
 
 
-@returns:
-	
 
 @example:
 
+var videoObj = $$('myvideo').getVideo();
+videoObj.play();
 
 @template:	api_method
+@defined:	ui.video	
+
+
+
+@relatedsample:
+	41_video/03_api.html
+    
 @descr:
+
+
 
 
