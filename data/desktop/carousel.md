@@ -3,50 +3,112 @@ Carousel
 
 ###Overview
 
-Ui-related carousel helps to present images as well as picture-based data-presenting components (e.g. [chart](desktop/chart.md)) in one view with the ability to switch between 
-them by clicking on the dedicated buttons or sliding (on touch devices).
+Ui-related carousel is designed to present Webix components in one view with the ability to switch between them by clicking on the dedicated buttons or sliding (on touch devices).
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/carousel.png"/>
 
+{{sample 26_carousel/01_init.html}}
 
 ###Initialization
 
-Carousel items are arranged into either rows to scroll through them vertically or in cols to scroll horizontally. Each row/column contains a Webix component. 
+Carousel items are arranged into either **rows** to scroll through them vertically or in **cols** to scroll horizontally. Each row/column includes Webix component, e.g: 
 
-~~~js
-var achart = { view:"chart", id:"cell1",...};
-var bchart = {...};
-var cchart = {...};
-
-{view:"carousel", id:"parts", cols:[
-		achart, bchart, cchart
-	]
-}                
-~~~
-{{sample 20_multiview/06_carousel.html}}
-
-Components for carousel item are stored in the **cols/rows** array. Normally, they are declared beforehand in the variables and later included in the **cols** property. It  makes 
-code clear and easy to read. 
-
-####Carousel Panel
-
-Carousel comes equipped with a **panel**, an area that shows the number of items in the carousel and highlights the opened one. By default, it features **bottom** alignment and **16-pixel** size. Its properties are controlled 
-via the panel object property: 
+- simple [template](desktop/template.md) for showing texts and images;
+- any data component like [dataview](desktop/dataview.md), [chart](desktop/chart.md), [datatable](datatable/index.md); 
+- [layout](desktop/layout.md) of any complexity.
 
 ~~~js
 webix.ui({
 	view:"carousel",
-	panel: {
-		align: "bottom",
-    	itemSize: 16,
-    	size: 14
-	}
+	id:"carousel",
+	cols:[
+		{ view:"template" },
+		{ view:"chart" },
+		{ view:"datatable" },
+    	{ rows:[...]} //layout
+	]
 });
 ~~~
 
-**"Top"** and **"bottom"** alignment suits **horizontal** scrolling when items are arranged in cols, while **"left"** and **right** alignment is used for **vertical** scrolling (items defined in the rows array):
+{{sample 26_carousel/01_init.html}}
 
-####Scrolling Speed
+Normally, component configuration is stored separately while **cols/rows** property contains an array of corresponding variables. It makes code clear and easy to read. 
+
+###Navigation Area
+
+Carousel comes equipped with a **navigation** panel that contains:
+
+- **navigation items** (circles) that show the number of carousel views and highlight the opened one;
+- **navigation buttons** (right/left) placed together to the right of the circles.
+
+You can either click buttons or items to get to the needed view. On touch devices views are switched by swipe movements. 
+
+####Redefining Navigation 
+
+<img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/carousel_side.png"/>
+
+{{sample 26_carousel/02_types.html}}
+
+Navigation area is controlled via **navigation** object property of the carousel component. From there you can:
+
+- **separate navigation buttons** and place them on the right and left sides of the view, define **"side"** type;
+- **remove** navigation **items** (circles) or **buttons** by setting *false* value to the corresponding property.
+
+~~~js
+view:"carousel",
+cols:[...],
+navigation:{
+	type: "side",
+    items:false,
+    //buttons:false
+}
+~~~
+
+####Custom Navigation Area
+
+Any Webix component can be used to navigate through the carousel by using its API.
+
+For instance, you can use one-row [dataview](desktop/dataview.md) with thumbnails of carousel views.
+
+<img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/carousel_nav.png"/>
+
+{{sample 26_carousel/03_outer_navigation.html}}
+
+In [layout](desktop/layout.md) carousel and the component used for navigation are stored in different rows or cols:
+
+~~~js
+rows:[
+	{view: "carousel",
+     id:"carousel",
+	 cols: []
+    },
+	{view: "dataview",
+	 id: "imageList",
+	 yCount: 1, //one row
+	 select: true, //item selection enabled
+	 scroll: false, //non-scrollable
+	 data: [...]
+    }
+]
+~~~
+
+Switching is enabled by catching carousel api/ui.carousel_onshow_event.md and dataview api/link/ui.dataview_onitemclick_event.md events:
+
+~~~js
+// when dataview item is clicked, the needed view is shown
+$$("imageList").attachEvent("onItemClick",function(id){
+	$$(id).show();
+});
+
+//when carousel item is shown, its thumbnail in dataview is selected
+$$("carousel").attachEvent("onShow",function(id){
+	$$("imageList").select(id);
+});
+~~~
+
+Learn more about how to [show and hide Webix components](desktop/visibility.md) and study [selection pattern](desktop/selection.md) of data components.
+
+###Scrolling Speed
 
 The **default scrolling speed** of the carousel is **300ms**. To change it, use the following: 
 
@@ -56,42 +118,46 @@ webix.ui({
     scrollSpeed: "500ms"
 });
 ~~~
+
+However, in case of significantly slower scrolling smoothness may degrade.
  
 ###Working with Carousel
 
-1 . Switching function can be attached to button on each of the carousel sides (right-left or tom-bottom). They are as follows:
+1 . You can programmatically navigate through the carousel with the help of the following switching functions:
 	 - **showPrev()** - takes to the previous view;
      - **showNext()** - takes to the next view.
+     
+These functions can be [attached](desktop/event_handling.md) to custom buttons or any on-page and application events:
 
 ~~~js
- { view:"button", value:"prev", click:function(){ $$('parts').showPrev(); }
+ { view:"button", value:"Previous View", click:function(){ $$('carousel').showPrev(); }
 ~~~
 
 2 . With touch-based devices initial scrolling pattern can be changed depending on the screen orientation. Scrolling is adjusted by the dedicated method: 
 
 ~~~js
-$$("parts").adjustScroll(); 
+$$("carousel").adjustScroll(); 
 ~~~
 
 ####Setting the Active Element for the Carousel
 
-3 . Active carousel item is the one that is currently shown. To items are treated either by their IDs or by their position in the **cols** array. 
+3 . Active carousel item is a view that is currently shown. Carousel views can be treated either by their IDs or by their position in the **cols/rows** array (zero-based numbering). 
 
-- **setActive**('cell1'); 
-- **setActiveIndex**(0);  - the same item is selected (zero-based numbering). 
+- **setActive**(id) - shows a view with the specified ID; 
+- **setActiveIndex**(index) - shows a view with the specified index;. 
 
 4 . The same way you can get the currently shown (active) item: 
 
-- **getActiveId()**; //->returns ID of the active item;
-- **getActiveIdIndex()**; //->returns index of the active item. 
+- **getActiveId()**; - returns ID of the active view;
+- **getActiveIdIndex()**; - returns index of the active view. 
 
 ~~~js
-$$("parts").getIndexActive();
+$$("carousel").getActiveIndex();
 ~~~
 
 ###API Reference
 
-[Methods, properties and Events](api/refs/ui.carousel.md)
+[Methods, Properties and Events](api/refs/ui.carousel.md)
 
 ###Related Articles
 
