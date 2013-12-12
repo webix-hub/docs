@@ -10,6 +10,7 @@ What's new & Roadmap
 - desktop/whats_new_1_0_2.md
 - desktop/whats_new_1_1.md
 - desktop/whats_new_1_2.md
+- desktop/whats_new_1_3.md
 }}
 
 
@@ -18,12 +19,12 @@ What's new & Roadmap
 
 
 
-#### version 1.3 
+#### version 1.4
 
 {{note Will be released on December 2013 }}
 - skin for mobile devices (small screen touch devices)
 
-#### version 1.4
+#### version 1.5
 
 {{note Will be released on February 2014 }}
 - visual editor
