@@ -127,6 +127,7 @@ Other
 - api/link/ui.datepicker_$getsize_other.md - returns the current size of the component
 - api/link/ui.datepicker_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.datepicker_$height_other.md - current height of the view
+- api/ui.datepicker_$rendericon_other.md - optional render for the icon block
 - api/link/ui.datepicker_$renderinput_other.md - renders html for the input
 - api/link/ui.datepicker_$setsize_other.md - sets the component size
 - api/link/ui.datepicker_$setvalue_other.md - called each time when component need to set value in related html input

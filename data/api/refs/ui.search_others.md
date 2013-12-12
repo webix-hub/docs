@@ -7,6 +7,7 @@ Others
 - api/link/ui.search_$getsize_other.md - returns the current size of the component
 - api/link/ui.search_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.search_$height_other.md - current height of the view
+- api/ui.search_$rendericon_other.md - optional render for the icon block
 - api/link/ui.search_$renderinput_other.md - renders html for the input
 - api/link/ui.search_$setsize_other.md - sets the component size
 - api/link/ui.search_$setvalue_other.md - called each time when component need to set value in related html input
@@ -24,6 +25,7 @@ Others
 - api/link/ui.search_$getsize_other.md
 - api/link/ui.search_$getvalue_other.md
 - api/link/ui.search_$height_other.md
+- api/ui.search_$rendericon_other.md
 - api/link/ui.search_$renderinput_other.md
 - api/link/ui.search_$setsize_other.md
 - api/link/ui.search_$setvalue_other.md

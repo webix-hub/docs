@@ -266,4 +266,5 @@ div.controls_group img {
 - desktop/unitlist.md
 - desktop/uploader.md
 - desktop/window.md
+- desktop/video.md
 

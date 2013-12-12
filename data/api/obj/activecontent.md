@@ -1,4 +1,3 @@
 
-{{memo dummy stub}}
+{{memo Allows to place active element in other views}}
 
-{{todo replace with real description }}

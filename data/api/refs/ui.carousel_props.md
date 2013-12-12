@@ -19,12 +19,11 @@ Properties
 - api/link/ui.carousel_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.carousel_minheight_config.md - sets the minimal height for the view
 - api/link/ui.carousel_minwidth_config.md - sets the minimal width for the view
-- api/link/ui.carousel_navigation_config.md - 
+- api/link/ui.carousel_navigation_config.md - defines navigation parameters
 - api/link/ui.carousel_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.carousel_padding_config.md - defines the space between the element borders and content (applies the specified value to all sides).
 - api/link/ui.carousel_paddingx_config.md - sets the right and left padding (applies the specified value to both sides)
 - api/link/ui.carousel_paddingy_config.md - sets the top and bottom padding (applies the specified value to both sides)
-- api/ui.carousel_panel_config.md - 
 - api/link/ui.carousel_rows_config.md - array of views objects arranged vertically
 - api/ui.carousel_scrollspeed_config.md - speed of scrolling ('300ms' by default)
 - api/link/ui.carousel_type_config.md - defines the layout borders
@@ -54,7 +53,6 @@ Properties
 - api/link/ui.carousel_padding_config.md
 - api/link/ui.carousel_paddingx_config.md
 - api/link/ui.carousel_paddingy_config.md
-- api/ui.carousel_panel_config.md
 - api/link/ui.carousel_rows_config.md
 - api/ui.carousel_scrollspeed_config.md
 - api/link/ui.carousel_type_config.md

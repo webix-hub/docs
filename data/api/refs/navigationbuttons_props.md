@@ -3,7 +3,7 @@ Properties
 ==========
 
 {{links
-- api/navigationbuttons_navigation_config.md - 
+- api/navigationbuttons_navigation_config.md - defines navigation parameters
 }}
 
 @index:

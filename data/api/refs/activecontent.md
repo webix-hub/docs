@@ -2,9 +2,8 @@ ActiveContent
 =============
 
 
-{{memo Dummy stub. }}
+{{memo Allows to place active element in other views. }}
 
-{{todo replace with real description. }}
 
 
 
@@ -12,7 +11,7 @@ Properties
 ----------
 
 {{links
-- api/activecontent_activecontent_config.md - 
+- api/activecontent_activecontent_config.md - sets controls that will be use in view template
 }}
 
 

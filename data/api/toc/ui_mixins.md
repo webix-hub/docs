@@ -3,7 +3,7 @@ Mixins
 
 {{links
 
-- api/refs/activecontent.md - dummy stub
+- api/refs/activecontent.md - Allows to place active element in other views
 - api/refs/atomdataloader.md - primitive data loader
 - api/refs/atomrender.md - primitive render for views
 - api/refs/autotooltip.md - allows for setting a prompting message for data items

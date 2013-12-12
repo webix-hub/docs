@@ -13,7 +13,7 @@ Methods
 - api/link/ui.video_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.video_getparentview.md - returns the parent view of the component
 - api/link/ui.video_gettopparentview.md - returns top parent view
-- api/ui.video_getvideo.md - 
+- api/ui.video_getvideo.md - gets html5 video object
 - api/link/ui.video_hide.md - hides the view
 - api/link/ui.video_isenabled.md - checks whether the view is enabled
 - api/link/ui.video_isvisible.md - checks whether the view is visible

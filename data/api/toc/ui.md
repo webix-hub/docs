@@ -316,7 +316,7 @@ Auxiliary Components
         <td>a static text that is rendered in the absolutely positioned container </td>
     </tr>
     <tr>
-        <td> <img src="api/toc/video.png"/> </td>
+        <td> <img src="api/toc/spacer.png"/> </td>
         <td> api/refs/ui.video.md </td>
         <td>a video player component</td>
     </tr>

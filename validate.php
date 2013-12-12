@@ -7,7 +7,7 @@ if (isset($_GET["page"]))
 
 
 $worker = new DocoBot();
-$worker->normalize($page);
+
 $worker->validate($page);
 
 $worker->print_log();

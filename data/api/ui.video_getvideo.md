@@ -21,7 +21,7 @@ videoObj.play();
 
 
 @relatedsample:
-	41_video/03_api.html
+	27_video/03_api.html
     
 @descr:
 
