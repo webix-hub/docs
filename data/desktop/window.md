@@ -67,77 +67,9 @@ webix.ui({
 
 ###Window Sizing and Positioning
 
-The must-have parameters for the window are **width** and **height** since otherwise it will occupy the whole screen. Furthemore, you should specify 
-**left** and **top** offset as by default it will be placed in the top left corner of the screen sticked to browser borders. 
+The must-have parameters for the window are **width** and **height**. If you don't set tham, the window it will occupy the whole screen.
 
-~~~js
-{
-	view:"window"
-    width:300,
-	height:200,
-	top:100, 
-	left:100
-}
-~~~
-
-**Absolute Positioning**
-
-Window position can be set within the **show();** method as well: 
-
-~~~js
-webix.ui({
-	view:"window",
-    ...
-}). show({
-	x:300, //left offset from the right side
-	y:50 //top offset
-});
-~~~
-
-{{sample 98_docs/window_offset.html }}
-
-To set the new position for a window, use the following method: 
-
-~~~js
-$$('my_window').setPosition(100, 100); //left and top offset
-~~~
-
-**Relative Positioning**
-
-To get rid of absolute positioning, you can just place your window in the **center** of the page, which ensures that it will take an adequate position on any screen regardless of its size. 
-
-~~~js
-webix.ui({
-	view:"window",
-    position:"center"
-    //..window config
-
-})
-~~~
-
-{{sample 10_window/07_center.html }}
-
-**Positioning Relative to HTML Node**
-
-**Show()** method allows specifying an HTML node near which a window will be shown. 
-
-~~~js
-$$("window").show(node);
-~~~
-
-By default, such pattern places the window below the node. To redefine this, pass position object as well:
-
-~~~js
-$$("window").show(node, {pos:"top"});
-~~~
-
-Possible position values here are **top**, **bottom** (default), **left** and **right**.
-
-To shift a window in relations to the node, pass its vertical and horizontal positions together with pos:
-
-~~~js
-$$("window").show(node, {top:"top", x:10, y:10});
-~~~
+Furthermore, Webix window features various methods for setting its **position**. All of them are described in a [separate documentation article](desktop/window_positioning.md).
 
 ###Window Modality
 
@@ -161,6 +93,11 @@ When a modal window is inited, the app area is greyed out to indicate that it is
 ###Related articles
 
 - [Popup](desktop/popup.md)
+- [Window and Popip Positioning](desktop/window_positioning.md)
 - [Message Boxes](desktop/message_boxes.md)
 - [Changing Visibility of Components](desktop/visibility.md)
 - [Window CSS Image Map](desktop/window_css.md)
+
+@index:
+
+- desktop/window_positioning.md

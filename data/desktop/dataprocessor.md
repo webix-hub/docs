@@ -247,6 +247,5 @@ dp = new webix.DataProcessor({
 
 - [Dataprocessor API - Methods, Properties and Events](api/refs/dataprocessor.md)
 - [Server Side Connectors](desktop/dataconnector.md)
-@index:
-	desktop/serverside.md
+
 @complexity:2
