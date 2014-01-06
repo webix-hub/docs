@@ -142,7 +142,7 @@ webix.ui({
 $$('list1').select(5); //list1 is an auto-generated ID
 ~~~
 
-{{sample 98_docs/autoid.html }}
+{{sample 80_docs/autoid.html }}
 
 ##HTML Containers {#html}
 

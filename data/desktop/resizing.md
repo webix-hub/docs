@@ -52,7 +52,7 @@ $$("dview").config.height = 700;
 $$('dview').resize();
 ~~~
 
-{{sample 98_docs/dataview_resizing.html}}
+{{sample 80_docs/dataview_resizing.html}}
 
 ##Resizing the Component's Container
 
@@ -82,7 +82,7 @@ document.getElementById('testA').style.height="455px";
 grid.adjust();
 ~~~
 
-{{sample 98_docs/dataview_resizing.html}}
+{{sample 80_docs/dataview_resizing.html}}
 
 - using webix **toNode()** method:
 

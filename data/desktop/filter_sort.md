@@ -170,7 +170,7 @@ $$("filter-list").attachEvent("onTimedKeypress", function(){
 });
 ~~~
 
-{{sample 98_docs/multiple_property_filter.html}}
+{{sample 80_docs/multiple_property_filter.html}}
 
 ##Sorting 
 

@@ -15,7 +15,7 @@ var units = $$('list').getUnits(); // ->[1, C, M, T]
 	api/ui.unitlist_uniteby_config.md
 	api/ui.unitlist_getunitlist.md
 @relatedsample:
-	98_docs/unit_items.html
+	80_docs/unit_items.html
 @related:
 	desktop/unitlist.md
 @descr:

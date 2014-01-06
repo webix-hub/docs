@@ -112,7 +112,7 @@ webix.ui({
 ~~~
 
 {{sample
-98_docs/simple_dataview.html
+80_docs/simple_dataview.html
 }}
 
 ####Comments: 

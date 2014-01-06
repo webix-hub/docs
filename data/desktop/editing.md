@@ -87,7 +87,7 @@ webix.ui({
 	</tbody>
 </table>
 
-{{sample 98_docs/editors.html }}
+{{sample 80_docs/editors.html }}
 
 ###Text {#text}
 
@@ -304,7 +304,7 @@ In this case you extend the existing **text editor** and change render pattern i
 		}}, webix.editors.text);
 ~~~
 
-{{sample 98_docs/custom_ed.html}}
+{{sample 80_docs/custom_ed.html}}
 
 
 @complexity:2

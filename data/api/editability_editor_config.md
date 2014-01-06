@@ -17,7 +17,7 @@ editor
 	api/refs/editors.md
     
 @relatedsample:
-	98_docs/editors.html
+	80_docs/editors.html
 	
 @related: 
 	desktop/editing.md

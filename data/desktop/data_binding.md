@@ -108,7 +108,7 @@ The event system for [selection](desktop/selection.md) offer the **onAfterSelect
             }); ////item ID of datatable row coincides with that of dataview item
 ~~~
 
-{{sample 98_docs/data_binding.html }}
+{{sample 80_docs/data_binding.html }}
 
 [Data Binding and Syncing with Non-UI objects](desktop/nonui_objects.md)
 

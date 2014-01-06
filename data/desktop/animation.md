@@ -53,7 +53,7 @@ $$("multi").config.animate.subtype = "vertical";
 
 
 
-{{sample 98_docs/multiview_animation.html }}
+{{sample 80_docs/multiview_animation.html }}
 
 {{sample 25_pager/08_animate_types.html }}
 

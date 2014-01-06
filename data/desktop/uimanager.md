@@ -206,7 +206,7 @@ then move to the other, then will proceed to other components and return to the 
 
 <img src="desktop/focus.png" />
 
-{{sample 98_docs/tab_navigation.html }}
+{{sample 80_docs/tab_navigation.html }}
 
 If you want to exclude a single component from tab navigation order, make use of the **tabFocus** property, which is true by default:
 

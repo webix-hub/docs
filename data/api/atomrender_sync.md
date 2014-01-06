@@ -31,8 +31,8 @@ $$('dview').data.sync(data, function(){
 	desktop/data_binding.md
     desktop/nonui_objects.md
 @relatedsample:
-	98_docs/nonui.html
-    98_docs/getpopup.html
+	80_docs/nonui.html
+    80_docs/getpopup.html
 
 
 @template:	api_method
