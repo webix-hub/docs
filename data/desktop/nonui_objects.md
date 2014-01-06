@@ -57,7 +57,7 @@ $$('list').attachEvent("onAfterSelect", function(id){  data.setCursor(id); });
 
 As a result, data is saved to dataCollection after editing as well as to all the synced components without any additional manipulations. 
 
-{{sample 98_docs/nonui.html}}
+{{sample 80_docs/nonui.html}}
 
 ##Server-Side Integration with non-UI Components
 

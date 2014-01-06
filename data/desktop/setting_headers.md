@@ -50,7 +50,7 @@ Type:"section"
 During header initing **view:template** line is optional. 
 }}
 
-{{sample 98_docs/header_templates.html }}
+{{sample 80_docs/header_templates.html }}
 
 ##Header as Component Property
 

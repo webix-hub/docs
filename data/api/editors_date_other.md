@@ -29,6 +29,6 @@ webix.editors.$popup = {
 For more info on Calendar check the [dedicated article](desktop/calendar.md). 
 
 @relatedsample:
-	98_docs/editors.html
+	80_docs/editors.html
 @related:
 	desktop/editing.md

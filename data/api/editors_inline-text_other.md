@@ -18,7 +18,7 @@ With an inline-text editor you should define its template (input type, dimension
 
 @relatedsample:
 	15_datatable/04_editing/09_inline_editors.html
-    98_docs/editors.html
+    80_docs/editors.html
 @related:
 	desktop/editing.md
 

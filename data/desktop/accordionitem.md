@@ -44,7 +44,7 @@ webix.ui({
        });
 ~~~
 
-{{sample 98_docs/accordionitem.html}}
+{{sample 80_docs/accordionitem.html}}
 
 Accordionitems can be collapsed and expanded prograsmmatically with the help of dedicated methods: 
 

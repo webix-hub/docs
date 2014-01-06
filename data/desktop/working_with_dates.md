@@ -159,7 +159,7 @@ webix.ui({
 })
 ~~~
 
-{{sample 98_docs/dataview_formatting.html}}
+{{sample 80_docs/dataview_formatting.html}}
 
 When working with **server-side**, initialize a [dataProcessor](desktop/dataprocessor.md) for the component and the changes will be automatically saved back to server. 
 
@@ -188,7 +188,7 @@ HTML Button Triggers Sorting
 <input type='button' value='Sort "Asc"' onclick='grid.sort("#start#", "asc", "date");'>
 ~~~
 
-{{sample 98_docs/dates.html }} 
+{{sample 80_docs/dates.html }} 
 
 [Data Sorting Api](api/link/ui.datatable_sort.md).
 

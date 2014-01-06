@@ -51,7 +51,7 @@ Compare ID-s from the snippet above and hashbang URL-s for each of the tabs on t
 
 <img src="desktop/multiview_history.png"/>
 
-{{sample 98_docs/history.html}} 
+{{sample 80_docs/history.html}} 
 
 Now, each time, you refresh the page, the url wil be form according to the info stored in the state object and th altest opened tab wil be shown. 
 

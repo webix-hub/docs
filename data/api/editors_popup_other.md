@@ -28,7 +28,7 @@ Popup text editor features a **textarea** input in tis body. To configure the po
 ~~~
 
 @relatedsample:
-	98_docs/editors.html
+	80_docs/editors.html
     15_datatable/04_editing/12_text_popup.html
 @related:
 	desktop/editing.md

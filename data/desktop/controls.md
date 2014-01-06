@@ -132,7 +132,7 @@ or parse data](desktop/data_loading.md) as well as sync it with another componen
 $$("my_combo").getPopupView().sync("list1"); //pushes this data into combo popup 
 ~~~
 
-{{sample 98_docs/getpopup.html }}
+{{sample 80_docs/getpopup.html }}
 
 **Combo option**, a list record, may contain:
 
@@ -161,7 +161,7 @@ $$('field_t').getValue(); // ->returns 1
 $$('field_t').getInput().value // -> returns "One"
 ~~~
 
-{{sample 98_docs/unit_items.html}}
+{{sample 80_docs/unit_items.html}}
 
 ####Alternatives to Combo Box
 
@@ -441,7 +441,7 @@ or parse data](desktop/data_loading.md) as well as sync it with another componen
 $$("my_combo").getPopupView().sync("list1"); //pushes this data into combo popup 
 ~~~
 
-{{sample 98_docs/getpopup.html }}
+{{sample 80_docs/getpopup.html }}
 
 **Richselect option**, a list record, may contain:
 
@@ -470,7 +470,7 @@ $$('field_t').getValue(); // ->returns 1
 $$('field_t').getInput().value // -> returns "One"
 ~~~
 
-{{sample 98_docs/unit_items.html}}
+{{sample 80_docs/unit_items.html}}
 
 [Controls Common Functionality](desktop/controls_guide.md)
 

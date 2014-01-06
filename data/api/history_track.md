@@ -16,7 +16,7 @@ webix.history.track('tabbar');
 @related:
 	desktop/history_track.md
 @relatedsample:
-	98_docs/history.html
+	80_docs/history.html
 
 @template:	api_method
 @descr:

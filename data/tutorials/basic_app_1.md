@@ -159,7 +159,7 @@ webix.ui({
 
 
 {{sample
-98_docs/01_basic_app.html
+80_docs/01_basic_app.html
 }}
 
 

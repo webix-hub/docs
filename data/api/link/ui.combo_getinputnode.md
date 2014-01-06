@@ -5,7 +5,7 @@
 
 
 @relatedsample:
-	98_docs/unit_items.html
+	80_docs/unit_items.html
 @descr:
 
 The method can be used to get the actual **text value** of the combo while the

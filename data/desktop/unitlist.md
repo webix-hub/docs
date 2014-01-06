@@ -50,7 +50,7 @@ var unit = $$('unit').getInputNode().value; //getting value of the combo box tex
 var id = $$("list").getUnitList(unit); 
 ~~~
 
-{{sample 98_docs/unit_items.html}}
+{{sample 80_docs/unit_items.html}}
 
 If you know the ID of any data item, you can easily get to all its properties:
 

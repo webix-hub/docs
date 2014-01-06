@@ -22,7 +22,7 @@ $$('list').attachEvent("onAfterSelect", function(id){
 @related:
 	desktop/nonui_objects.md
 @relatedsample:
-	98_docs/nonui.html
+	80_docs/nonui.html
 @template:	api_method
 @defined:	CollectionBind	
 @descr:

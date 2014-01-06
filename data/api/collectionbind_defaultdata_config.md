@@ -16,7 +16,7 @@ $$('mylist').define ("defaultData",{name:"New contact", gender:"Male", age:"18"}
 @related:
 	desktop/binding_details.md
 @relatedsample:
-	98_docs/default_data.html
+	80_docs/default_data.html
 @descr:
 The property can be used to prevent the child from 'undefined' values.
 

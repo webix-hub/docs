@@ -43,7 +43,7 @@ template:function(obj){
 
 The format in use is defined by current locale. EN-US (default) locale sets **dateFormatStr** as *"%m/%d/%Y"* while **price** format is set as *"{obj}currency"* where *obj* is price value. 
 
-{{sample 98_docs/dataview_formatting.html }}
+{{sample 80_docs/dataview_formatting.html }}
 
 ##Locale Structure
  

@@ -16,7 +16,7 @@ webix.ui({
 
 @template:	api_config
 @relatedsample:
-	98_docs/tab_navigation.html
+	80_docs/tab_navigation.html
 @related: 
 	desktop/uimanager.md
 @descr:

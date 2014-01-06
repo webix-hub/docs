@@ -15,7 +15,7 @@ webix.ui({
 ~~~
 
 {{sample
-98_docs/default_template.html
+80_docs/default_template.html
 }}
 
 Template's content can be as well defined by the **content** property that points to an HTML container by its ID. As a result, contents from HTML is
@@ -116,7 +116,7 @@ resort to [borderless](desktop/borders.md) layout design.
 {view:"template", template:"Header template", type:"section"}
 ~~~
 
-{{sample 98_docs/header_templates.html}}
+{{sample 80_docs/header_templates.html}}
 
 {{note
 Note that headers of [accordionitems](desktop/accordionitem.md) are set in a different way. 
