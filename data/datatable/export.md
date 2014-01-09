@@ -31,9 +31,9 @@ Above solution uses online data export service, but you can configure a local co
 
 The latest packages for installation can be found here:
 
-- <a href="http://Webix.com/x/download/regular/grid-pdf-php.zip">PHP package</a> 
-- <a href="http://Webix.com/x/download/regular/grid-pdf-java.zip">Java package</a> 
-- <a href="http://Webix.com/x/download/regular/grid-pdf-net.zip">ASP .NET package</a> 
+- <a href="http://docs.webix.com/packages/export/grid-pdf-php.zip">PHP package</a> 
+- <a href="http://docs.webix.com/packages/export/grid-pdf-java.zip">Java package</a> 
+- <a href="http://docs.webix.com/packages/export/grid-pdf-net.zip">ASP .NET package</a> 
 
 The code will look like this:
 
@@ -53,9 +53,9 @@ onclick="grid.exportToExcel();">
 
 Above solution uses online data export service, but you can configure a local copy as well - you can download and install the Export package. It must be unpacked inside the root of your web server.
 
-- <a href="http://Webix.com/x/download/regular/grid-excel-php.zip">PHP package</a> 
-- <a href="http://Webix.com/x/download/regular/grid-excel-java.zip">Java package</a> 
-- <a href="http://Webix.com/x/download/regular/grid-excel-net.zip">ASP .NET package</a> 
+- <a href="http://docs.webix.com/packages/export/grid-excel-php.zip">PHP package</a> 
+- <a href="http://docs.webix.com/packages/export/grid-excel-java.zip">Java package</a> 
+- <a href="http://docs.webix.com/packages/export/grid-excel-net.zip">ASP .NET package</a> 
 
 The code will look like this:
 
