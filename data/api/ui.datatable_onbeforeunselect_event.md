@@ -19,7 +19,6 @@ some.attachEvent("onBeforeUnSelect", function(data){
 	api/ui.datatable_onafterunselect_event.md
 	api/ui.datatable_selectrange.md
 	api/ui.datatable_getselectedid.md
-    api/ui.datatable_getselection.md
     api/ui.datatable_mapselection.md
     api/ui.datatable_unselect.md
     api/ui.datatable_clearselection.md

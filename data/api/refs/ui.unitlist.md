@@ -21,7 +21,7 @@ Support for various data template formats, sorting and filtering features. Check
 ~~~
 
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/ui.list.md">ui.list</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/selectionmodel.md">SelectionModel</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/ui.proto.md">ui.proto</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/copypaste.md">CopyPaste</a></div>
+<a href="api/refs/ui.list.md">ui.list</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/selectionmodel.md">SelectionModel</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/ui.proto.md">ui.proto</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/copypaste.md">CopyPaste</a></div>
 
 Methods
 -------
@@ -80,6 +80,7 @@ of the component
 - api/link/ui.unitlist_move.md - moves the specified item to the new position
 - api/link/ui.unitlist_movebottom.md - moves the specified item to the last position
 - api/link/ui.unitlist_movedown.md - increases the item index and moves the item to the new position
+- api/link/ui.unitlist_moveselection.md - moves selection in the specified direction
 - api/link/ui.unitlist_movetop.md - moves the specified item to the first position
 - api/link/ui.unitlist_moveup.md - decreases the item index and moves the item to the new position
 - api/link/ui.unitlist_parse.md - loads data to the component from an inline data source
@@ -177,6 +178,7 @@ Properties
 - api/link/ui.unitlist_minheight_config.md - sets the minimal height for the view
 - api/link/ui.unitlist_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.unitlist_mouseeventdelay_config.md - the delay between a real mouse action and invoking the related events
+- api/link/ui.unitlist_navigation_config.md - activates the selection keyboard navigation
 - api/link/ui.unitlist_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.unitlist_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
 - api/link/ui.unitlist_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>

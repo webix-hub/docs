@@ -1,21 +1,5 @@
-moveSelection
-=============
+@link: api/keysnavigation_moveselection.md
 
-
-
-@short: moves selection in the specified direction 
-	
-
-@params:
-- direction	string	the move direction
-
-	
-
-@example:
-dtable.moveSelection('right');
-
-
-@template:	api_method
 @descr:
 The method can take only one of a predefined set of values.<br>
 The predefined values are:
@@ -28,7 +12,6 @@ modes)
 
 @relatedapi:
 	api/ui.datatable_getselectedid.md
-    api/ui.datatable_getselection.md
     api/ui.datatable_unselect.md
     api/ui.datatable_clearselection.md
 @related:

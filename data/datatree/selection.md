@@ -63,7 +63,7 @@ Related methods
 		<td>returns the selected cells</td>
 	</tr>
     <tr>
-    	<td>api/ui.tree_moveselection.md</td>
+    	<td>api/link/ui.tree_moveselection.md</td>
         <td>moves selection in the specified direction</td>
     </tr>
 	<tr>

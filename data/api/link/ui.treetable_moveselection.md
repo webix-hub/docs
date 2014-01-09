@@ -1,1 +1,1 @@
-@link: api/ui.datatable_moveselection.md
+@link: api/link/ui.datatable_moveselection.md

@@ -67,7 +67,7 @@ Methods
 - api/link/ui.tree_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.tree_mapevent.md - routes events from one object to another
 - api/link/ui.tree_move.md - moves the specified item to the new position
-- api/ui.tree_moveselection.md - moves selection in the specified direction
+- api/link/ui.tree_moveselection.md - moves selection in the specified direction
 - api/link/ui.tree_open.md - opens the branch with the specified id
 - api/link/ui.tree_openall.md - opens all branches in the tree
 - api/link/ui.tree_parse.md - loads data to the component from an inline data source
@@ -161,7 +161,7 @@ Methods
 - api/link/ui.tree_locate.md
 - api/link/ui.tree_mapevent.md
 - api/link/ui.tree_move.md
-- api/ui.tree_moveselection.md
+- api/link/ui.tree_moveselection.md
 - api/link/ui.tree_open.md
 - api/link/ui.tree_openall.md
 - api/link/ui.tree_parse.md

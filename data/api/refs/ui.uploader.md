@@ -122,6 +122,7 @@ Other
 -----
 
 {{links
+- api/ui.uploader_$cssname_other.md - name which will be used as part of css class
 - api/ui.uploader_$formelement_other.md - flag which instruct to process such view as form input
 - api/link/ui.uploader_$getsize_other.md - returns the current size of the component
 - api/link/ui.uploader_$getvalue_other.md - called each time when component need to get value from related html input

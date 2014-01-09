@@ -137,15 +137,11 @@ Related methods
 		<td>returns the selected cells</td>
 	</tr>
 	<tr>
-		<td>api/ui.datatable_getselection.md</td>
-		<td>returns the ids of the selected cell(s)</td>
-	</tr>
-	<tr>
 		<td>api/ui.datatable_mapselection.md</td>
 		<td>executes some custom method for all cells in the currently selected block</td>
 	</tr>
     <tr>
-    	<td>api/ui.datatable_moveselection.md</td>
+    	<td>api/link/ui.datatable_moveselection.md</td>
         <td>moves selection to the specified direction</td>
     </tr>
 	<tr>

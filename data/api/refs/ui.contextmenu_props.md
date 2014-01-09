@@ -37,6 +37,7 @@ Properties
 - api/link/ui.contextmenu_modal_config.md - switches window modality
 - api/link/ui.contextmenu_mouseeventdelay_config.md - the delay between a real mouse action and invoking the related events
 - api/link/ui.contextmenu_move_config.md - makes view movable
+- api/link/ui.contextmenu_navigation_config.md - activates the selection keyboard navigation
 - api/link/ui.contextmenu_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.contextmenu_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
 - api/link/ui.contextmenu_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
@@ -55,6 +56,7 @@ Properties
 - api/link/ui.contextmenu_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.contextmenu_select_config.md - enables/disables item selection or multiselection in grouplist
 - api/link/ui.contextmenu_submenupos_config.md - aligns submenu towards main menu
+- api/link/ui.contextmenu_submenu_config.md - defines submenu configuration
 - api/link/ui.contextmenu_template_config.md - the component template
 - api/link/ui.contextmenu_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
 - api/link/ui.contextmenu_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
@@ -102,6 +104,7 @@ Properties
 - api/link/ui.contextmenu_modal_config.md
 - api/link/ui.contextmenu_mouseeventdelay_config.md
 - api/link/ui.contextmenu_move_config.md
+- api/link/ui.contextmenu_navigation_config.md
 - api/link/ui.contextmenu_on_config.md
 - api/link/ui.contextmenu_onclick_config.md
 - api/link/ui.contextmenu_oncontext_config.md
@@ -120,6 +123,7 @@ Properties
 - api/link/ui.contextmenu_scrollspeed_config.md
 - api/link/ui.contextmenu_select_config.md
 - api/link/ui.contextmenu_submenupos_config.md
+- api/link/ui.contextmenu_submenu_config.md
 - api/link/ui.contextmenu_template_config.md
 - api/link/ui.contextmenu_templatecopy_config.md
 - api/link/ui.contextmenu_tooltip_config.md
