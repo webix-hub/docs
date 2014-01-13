@@ -47,3 +47,7 @@ And define **Faye client** and its **ID** that are required for **faye** proxy:
 webix.proxy.faye.client = new Faye.Client('//localhost:8000/');
 webix.proxy.faye.clientId = webix.uid(); //or any custom pattern
 ~~~
+
+**Related Sample**
+
+To play with the feature, load and unzip the [demo](../../samples/40_serverside/04_websockets/01_sockets_chat.zip). Don't forget about NodeJS server running. 
