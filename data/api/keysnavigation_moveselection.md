@@ -10,6 +10,7 @@ moveSelection
 	
 
 @example:
+  $$("list").moveSelection("top");
 
 
 @template:	api_method

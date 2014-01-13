@@ -30,7 +30,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 98_docs/window_offset.html }}
+{{sample 80_docs/window_offset.html }}
 
 Another way is to use **setPosition()**: 
 

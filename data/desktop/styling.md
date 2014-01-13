@@ -28,7 +28,7 @@ After that, the styling can be customized in two modes:
 
 <img src="desktop/dataview_italic.png"/>
 
-{{sample 98_docs/dataview_italic.html}}
+{{sample 80_docs/dataview_italic.html}}
 
 2 . By means of **inline styling** where you insert CSS into HTML tags during [defining an appropriate template](desktop/html_templates.md) for data rendering.
 
@@ -55,7 +55,7 @@ body:{
 
 <img src="desktop/window_styled.png"/>
 
-{{sample 98_docs/styled_window.html }}
+{{sample 80_docs/styled_window.html }}
 
 ##Styling inside Type Parameter
 
@@ -93,7 +93,7 @@ webix.ui ({
 
 <img src="desktop/dataview_type_styling.png"/>
 
-{{sample 98_docs/dataview_type.html }}
+{{sample 80_docs/dataview_type.html }}
 
 ##Adding Predefined Webix CSS Classes
 
@@ -119,7 +119,7 @@ Or **redefine default CSS** for this document:
 
 <img src="desktop/window_styled.png"/>
 
-{{sample 98_docs/styled_window.html }}
+{{sample 80_docs/styled_window.html }}
 
 As far as you've noticed, **Webix default CSS classes** are marked by a **"webix_"** prefix. Moreover, each component part has its peculiar CSS class, you can redefine. Read below to learn more about it.
 

@@ -25,7 +25,7 @@ $$('list').bind($$('richselect'), function(obj, filter){
 
 The function takes **data object** and **filter** as parameters. If you work with serverside data, specify *table name* instead of the "obj". 
 
-{{sample 98_docs/binding_rule.html}}
+{{sample 80_docs/binding_rule.html}}
 
 ##Binding Events 
 
@@ -69,7 +69,7 @@ webix.ui({
 $$("template1").bind($$("list1"));
 ~~~
 
-{{sample 98_docs/default_data.html}}
+{{sample 80_docs/default_data.html}}
 
 Now, when no item is selected in the list, template will show default values (as set by the defaultData) instead of undefined ones. 
 

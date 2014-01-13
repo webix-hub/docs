@@ -63,6 +63,7 @@ of the component
 - api/link/ui.submenu_move.md - moves the specified item to the new position
 - api/link/ui.submenu_movebottom.md - moves the specified item to the last position
 - api/link/ui.submenu_movedown.md - increases the item index and moves the item to the new position
+- api/link/ui.submenu_moveselection.md - moves selection in the specified direction
 - api/link/ui.submenu_movetop.md - moves the specified item to the first position
 - api/link/ui.submenu_moveup.md - decreases the item index and moves the item to the new position
 - api/link/ui.submenu_parse.md - loads data to the component from an inline data source
@@ -149,6 +150,7 @@ of the component
 - api/link/ui.submenu_move.md
 - api/link/ui.submenu_movebottom.md
 - api/link/ui.submenu_movedown.md
+- api/link/ui.submenu_moveselection.md
 - api/link/ui.submenu_movetop.md
 - api/link/ui.submenu_moveup.md
 - api/link/ui.submenu_parse.md

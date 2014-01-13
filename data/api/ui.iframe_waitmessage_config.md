@@ -20,7 +20,7 @@ webix.ui({
 @related:
 	desktop/iframe.md
 @relatedsample:
-	98_docs/iframe.html
+	80_docs/iframe.html
 @descr:
 With data-containing component you can define an **Overlay Box** with a custom wait message. 
 

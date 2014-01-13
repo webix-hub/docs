@@ -86,7 +86,6 @@ Methods
 - api/link/ui.datatable_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
 - api/ui.datatable_getscrollstate.md - returns the current position of scrolls
 - api/ui.datatable_getselectedid.md - returns the selected cells
-- api/ui.datatable_getselection.md - returns the ids of the selected cell(s)
 - api/link/ui.datatable_getstate.md - returns the current state of the view
 - api/ui.datatable_gettext.md - returns text value of a cell
 - api/link/ui.datatable_gettopparentview.md - returns top parent view
@@ -112,7 +111,7 @@ of the component
 - api/link/ui.datatable_movebottom.md - moves the specified item to the last position
 - api/ui.datatable_movecolumn.md - moves column to different position
 - api/link/ui.datatable_movedown.md - increases the item index and moves the item to the new position
-- api/ui.datatable_moveselection.md - moves selection in the specified direction
+- api/link/ui.datatable_moveselection.md - moves selection in the specified direction
 - api/link/ui.datatable_movetop.md - moves the specified item to the first position
 - api/link/ui.datatable_moveup.md - decreases the item index and moves the item to the new position
 - api/link/ui.datatable_parse.md - loads data to the component from an inline data source
@@ -216,6 +215,7 @@ Properties
 
 {{links
 - api/link/ui.datatable_animate_config.md - defines or disables view change animation.
+- api/ui.datatable_autoconfig_config.md - datatable adjust configuration to the data
 - api/ui.datatable_autoheight_config.md - adjusts DataTable to the parent container size vertically
 - api/ui.datatable_autowidth_config.md - adjusts DataTable to the parent container size horizontally
 - api/ui.datatable_blockselect_config.md - enables/disables block selection

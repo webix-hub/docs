@@ -21,7 +21,7 @@ The component is a compliment to the menu component and not intended for direct 
 ~~~
 
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/ui.menu.md">ui.menu</a>, <a href="api/refs/ui.list.md">ui.list</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/selectionmodel.md">SelectionModel</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/ui.proto.md">ui.proto</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/copypaste.md">CopyPaste</a>, <a href="api/refs/ui.popup.md">ui.popup</a>, <a href="api/refs/ui.window.md">ui.window</a>, <a href="api/refs/movable.md">Movable</a>, <a href="api/refs/modality.md">Modality</a></div>
+<a href="api/refs/ui.menu.md">ui.menu</a>, <a href="api/refs/ui.list.md">ui.list</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/selectionmodel.md">SelectionModel</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/ui.proto.md">ui.proto</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/copypaste.md">CopyPaste</a>, <a href="api/refs/ui.popup.md">ui.popup</a>, <a href="api/refs/ui.window.md">ui.window</a>, <a href="api/refs/movable.md">Movable</a>, <a href="api/refs/modality.md">Modality</a></div>
 
 Methods
 -------
@@ -87,6 +87,7 @@ of the component
 - api/link/ui.submenu_move.md - moves the specified item to the new position
 - api/link/ui.submenu_movebottom.md - moves the specified item to the last position
 - api/link/ui.submenu_movedown.md - increases the item index and moves the item to the new position
+- api/link/ui.submenu_moveselection.md - moves selection in the specified direction
 - api/link/ui.submenu_movetop.md - moves the specified item to the first position
 - api/link/ui.submenu_moveup.md - decreases the item index and moves the item to the new position
 - api/link/ui.submenu_parse.md - loads data to the component from an inline data source
@@ -196,6 +197,7 @@ Properties
 - api/link/ui.submenu_modal_config.md - switches window modality
 - api/link/ui.submenu_mouseeventdelay_config.md - the delay between a real mouse action and invoking the related events
 - api/link/ui.submenu_move_config.md - makes view movable
+- api/link/ui.submenu_navigation_config.md - activates the selection keyboard navigation
 - api/link/ui.submenu_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.submenu_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
 - api/link/ui.submenu_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
@@ -214,6 +216,7 @@ Properties
 - api/link/ui.submenu_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.submenu_select_config.md - enables/disables item selection or multiselection in grouplist
 - api/link/ui.submenu_submenupos_config.md - aligns submenu towards main menu
+- api/link/ui.submenu_submenu_config.md - defines submenu configuration
 - api/link/ui.submenu_template_config.md - the component template
 - api/link/ui.submenu_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
 - api/link/ui.submenu_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.

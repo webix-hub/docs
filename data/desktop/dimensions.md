@@ -71,7 +71,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 98_docs/simple_dataview.html}}
+{{sample 80_docs/simple_dataview.html}}
 
 ###Sizing Limits
 

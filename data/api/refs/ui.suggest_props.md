@@ -31,6 +31,8 @@ Properties
 - api/link/ui.suggest_padding_config.md - sets paddings of the chart content
 - api/link/ui.suggest_position_config.md - sets position of the window relative to the the screen
 - api/link/ui.suggest_relative_config.md - positions a popup window relative to the component it's connected with
+- api/ui.suggest_template_config.md - template which will be used to fill parent input from selected record
+- api/ui.suggest_textvalue_config.md - defines which field from suggest list will be used as text after selecting an option
 - api/link/ui.suggest_top_config.md - the top offset of a window
 - api/ui.suggest_type_config.md - defines type of suggest control
 - api/link/ui.suggest_width_config.md - sets the width of the component
@@ -66,6 +68,8 @@ Properties
 - api/link/ui.suggest_padding_config.md
 - api/link/ui.suggest_position_config.md
 - api/link/ui.suggest_relative_config.md
+- api/ui.suggest_template_config.md
+- api/ui.suggest_textvalue_config.md
 - api/link/ui.suggest_top_config.md
 - api/ui.suggest_type_config.md
 - api/link/ui.suggest_width_config.md

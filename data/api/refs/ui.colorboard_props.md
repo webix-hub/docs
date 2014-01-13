@@ -23,6 +23,7 @@ Properties
 - api/ui.colorboard_palette_config.md - sets palette colors
 - api/ui.colorboard_rows_config.md - sets the number of rows in the palette
 - api/ui.colorboard_template_config.md - defines a custom template that will be applied to the component
+- api/ui.colorboard_value_config.md - currently selected color
 - api/link/ui.colorboard_width_config.md - sets the width of the component
 }}
 
@@ -47,5 +48,6 @@ Properties
 - api/ui.colorboard_palette_config.md
 - api/ui.colorboard_rows_config.md
 - api/ui.colorboard_template_config.md
+- api/ui.colorboard_value_config.md
 - api/link/ui.colorboard_width_config.md
 

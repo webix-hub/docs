@@ -76,7 +76,7 @@ $$("myform").bind($$("mylist")); //component binding
 
 Addition and removal of items goes the same way as it was on previous step. 
 
-{{sample 98_docs/03_basic_app.html}}
+{{sample 80_docs/03_basic_app.html}}
 
 Related Articles: 
 

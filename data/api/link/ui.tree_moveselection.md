@@ -1,19 +1,5 @@
-moveSelection
-=============
+@link: api/keysnavigation_moveselection.md
 
-@short: moves selection in the specified direction 
-	
-
-@params:
-- direction	string	the move direction
-
-
-
-
-@example:
-mytree.moveSelection('up');
-
-@template:	api_method
 @descr:
 The method can take only one of a predefined set of values.<br>
 The predefined values are:

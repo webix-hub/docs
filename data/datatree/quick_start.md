@@ -9,7 +9,7 @@ You will learn how to initialize Tree customize it and populate with data.
 The final code of the tutorial can be used as the start point while creating applications using Tree.
 
 {{sample
-	98_docs/quick_start_datatree.html
+	80_docs/quick_start_datatree.html
 }}
 A new HTML file and related code files
 ---------------------------------------------------
@@ -118,7 +118,7 @@ tree = new webix.ui({
 Congratulations! Now you can run your app and it'll produce Tree shown at the very beginning.
 
 {{sample
-	98_docs/quick_start_datatree.html
+	80_docs/quick_start_datatree.html
 }}
 
 

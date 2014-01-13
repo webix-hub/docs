@@ -124,7 +124,7 @@ Hierarchical dataset state
 }
 ~~~
 
-{{sample 98_docs/grouplist_openstate.html}}
+{{sample 80_docs/grouplist_openstate.html}}
 
 ###Working with Grouplist
 - desktop/data_object.md

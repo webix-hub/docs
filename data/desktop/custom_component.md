@@ -151,7 +151,7 @@ on: {'onMouseOver': function(){...);}}
 
 As a result, we've got a multi-colored header template within a three-columnn design and 'elastic' sizing, which means that the app can adjust its size to the current window size. 
 
-{{sample 98_docs/new.html }}
+{{sample 80_docs/new.html }}
 
 
 @complexity: 3

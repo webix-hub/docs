@@ -120,7 +120,7 @@ webix.ui({
 ~~~
 
 
-{{sample 98_docs/suggest_combo.html}}
+{{sample 80_docs/suggest_combo.html}}
 
 
 {{note

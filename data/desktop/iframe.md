@@ -20,7 +20,7 @@ webix.ui({
 	view:"iframe", id:"frame-body", src:"data/pageA.html"
 });
 ~~~
-{{sample 98_docs/iframe.html}}
+{{sample 80_docs/iframe.html}}
 
 - **src** (path) - defines external site url;
 - **waitMessage** (boolean) - set "Loading.." message to be displayed on page loading. 

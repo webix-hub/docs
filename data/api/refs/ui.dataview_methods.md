@@ -53,7 +53,7 @@ of the component
 - api/link/ui.dataview_move.md - moves the specified item to the new position
 - api/link/ui.dataview_movebottom.md - moves the specified item to the last position
 - api/link/ui.dataview_movedown.md - increases the item index and moves the item to the new position
-- api/ui.dataview_moveselection.md - moves selection in the specified direction
+- api/link/ui.dataview_moveselection.md - moves selection in the specified direction
 - api/link/ui.dataview_movetop.md - moves the specified item to the first position
 - api/link/ui.dataview_moveup.md - decreases the item index and moves the item to the new position
 - api/link/ui.dataview_parse.md - loads data to the component from an inline data source
@@ -128,7 +128,7 @@ of the component
 - api/link/ui.dataview_move.md
 - api/link/ui.dataview_movebottom.md
 - api/link/ui.dataview_movedown.md
-- api/ui.dataview_moveselection.md
+- api/link/ui.dataview_moveselection.md
 - api/link/ui.dataview_movetop.md
 - api/link/ui.dataview_moveup.md
 - api/link/ui.dataview_parse.md

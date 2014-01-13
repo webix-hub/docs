@@ -56,6 +56,7 @@ of the component
 - api/link/ui.grouplist_move.md - moves the specified item to the new position
 - api/link/ui.grouplist_movebottom.md - moves the specified item to the last position
 - api/link/ui.grouplist_movedown.md - increases the item index and moves the item to the new position
+- api/link/ui.grouplist_moveselection.md - moves selection in the specified direction
 - api/link/ui.grouplist_movetop.md - moves the specified item to the first position
 - api/link/ui.grouplist_moveup.md - decreases the item index and moves the item to the new position
 - api/link/ui.grouplist_parse.md - loads data to the component from an inline data source
@@ -134,6 +135,7 @@ of the component
 - api/link/ui.grouplist_move.md
 - api/link/ui.grouplist_movebottom.md
 - api/link/ui.grouplist_movedown.md
+- api/link/ui.grouplist_moveselection.md
 - api/link/ui.grouplist_movetop.md
 - api/link/ui.grouplist_moveup.md
 - api/link/ui.grouplist_parse.md

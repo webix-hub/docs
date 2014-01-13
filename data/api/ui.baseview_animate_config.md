@@ -17,7 +17,7 @@ webix.ui({
 @defined:	ui.baseview	
 @relatedsample:
 	25_pager/09_animate_types_datatable.html
-    98_docs/multiview_animation.html
+    80_docs/multiview_animation.html
 @related:
 	desktop/animation.md
 @descr:

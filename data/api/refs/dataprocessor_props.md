@@ -12,6 +12,7 @@ Properties
 - api/dataprocessor_operationname_config.md - name of parameter which will hold operation type
 - api/link/dataprocessor_rules_config.md - defines a set of rules for input field(s) of the form(htmlform)
 - api/dataprocessor_store_config.md - allows to define datastore which will be monitored for changes
+- api/dataprocessor_trackmove_config.md - enables data moving tracking
 - api/dataprocessor_url_config.md - server side data saving script
 }}
 
@@ -25,5 +26,6 @@ Properties
 - api/dataprocessor_operationname_config.md
 - api/link/dataprocessor_rules_config.md
 - api/dataprocessor_store_config.md
+- api/dataprocessor_trackmove_config.md
 - api/dataprocessor_url_config.md
 

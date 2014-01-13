@@ -49,7 +49,7 @@ If you open the "root" branch, there go to "1" and then open the "1.2"
 @related:
 	desktop/grouplist.md
 @relatedsample:
-	98_docs/grouplist_openstate.html
+	80_docs/grouplist_openstate.html
 @descr:
 
 The return object contains two properties:

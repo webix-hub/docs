@@ -62,7 +62,6 @@ Methods
 - api/link/ui.datatable_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
 - api/ui.datatable_getscrollstate.md - returns the current position of scrolls
 - api/ui.datatable_getselectedid.md - returns the selected cells
-- api/ui.datatable_getselection.md - returns the ids of the selected cell(s)
 - api/link/ui.datatable_getstate.md - returns the current state of the view
 - api/ui.datatable_gettext.md - returns text value of a cell
 - api/link/ui.datatable_gettopparentview.md - returns top parent view
@@ -88,7 +87,7 @@ of the component
 - api/link/ui.datatable_movebottom.md - moves the specified item to the last position
 - api/ui.datatable_movecolumn.md - moves column to different position
 - api/link/ui.datatable_movedown.md - increases the item index and moves the item to the new position
-- api/ui.datatable_moveselection.md - moves selection in the specified direction
+- api/link/ui.datatable_moveselection.md - moves selection in the specified direction
 - api/link/ui.datatable_movetop.md - moves the specified item to the first position
 - api/link/ui.datatable_moveup.md - decreases the item index and moves the item to the new position
 - api/link/ui.datatable_parse.md - loads data to the component from an inline data source
@@ -186,7 +185,6 @@ of the component
 - api/link/ui.datatable_getprevid.md
 - api/ui.datatable_getscrollstate.md
 - api/ui.datatable_getselectedid.md
-- api/ui.datatable_getselection.md
 - api/link/ui.datatable_getstate.md
 - api/ui.datatable_gettext.md
 - api/link/ui.datatable_gettopparentview.md
@@ -211,7 +209,7 @@ of the component
 - api/link/ui.datatable_movebottom.md
 - api/ui.datatable_movecolumn.md
 - api/link/ui.datatable_movedown.md
-- api/ui.datatable_moveselection.md
+- api/link/ui.datatable_moveselection.md
 - api/link/ui.datatable_movetop.md
 - api/link/ui.datatable_moveup.md
 - api/link/ui.datatable_parse.md

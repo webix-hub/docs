@@ -65,6 +65,7 @@ of the component
 - api/link/ui.contextmenu_move.md - moves the specified item to the new position
 - api/link/ui.contextmenu_movebottom.md - moves the specified item to the last position
 - api/link/ui.contextmenu_movedown.md - increases the item index and moves the item to the new position
+- api/link/ui.contextmenu_moveselection.md - moves selection in the specified direction
 - api/link/ui.contextmenu_movetop.md - moves the specified item to the first position
 - api/link/ui.contextmenu_moveup.md - decreases the item index and moves the item to the new position
 - api/link/ui.contextmenu_parse.md - loads data to the component from an inline data source
@@ -153,6 +154,7 @@ of the component
 - api/link/ui.contextmenu_move.md
 - api/link/ui.contextmenu_movebottom.md
 - api/link/ui.contextmenu_movedown.md
+- api/link/ui.contextmenu_moveselection.md
 - api/link/ui.contextmenu_movetop.md
 - api/link/ui.contextmenu_moveup.md
 - api/link/ui.contextmenu_parse.md

@@ -16,7 +16,7 @@ checkbox
 @related:
 	desktop/editing.md
 @relatedsample:
-	98_docs/editors.html
+	80_docs/editors.html
 
 @descr:
 

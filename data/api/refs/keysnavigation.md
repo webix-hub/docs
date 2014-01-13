@@ -5,6 +5,13 @@ KeysNavigation
 {{memo Implements keyboard navigation. }}
 
 
+Methods
+-------
+
+{{links
+- api/keysnavigation_moveselection.md - moves selection in the specified direction
+}}
+
 
 Properties
 ----------
@@ -17,5 +24,6 @@ Properties
 
 
 @index:
+- api/refs/keysnavigation_methods.md
 - api/refs/keysnavigation_props.md
 

@@ -13,7 +13,7 @@ inline-checkbox
 @template:	api_config
 
 @relatedsample:
-	98_docs/editors.html
+	80_docs/editors.html
 @related:
 	desktop/editing.md
 @descr:

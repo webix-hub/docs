@@ -134,7 +134,7 @@ result is positive, the **remove();** function is executed.
 Read moew about messabe boxes in the [corresponding chapter](desktop/message_boxes.md).
 
 {{sample
-98_docs/02_basic_app.html
+80_docs/02_basic_app.html
 }}
 
 ####Related articles: 

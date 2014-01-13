@@ -31,7 +31,7 @@ webix.ui({
 	]
 })
 ~~~
-{{sample 98_docs/layout.html }}
+{{sample 80_docs/layout.html }}
 
 <br>
 

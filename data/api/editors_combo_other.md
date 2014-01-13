@@ -18,7 +18,7 @@ combo
 @descr: Combo editor is inited each time you click on the dedicated item. Moreover, the item is simultaneously opened in the text editor that acts like a filter input for list options. 
 
 @relatedsample:
-	98_docs/editors.html
+	80_docs/editors.html
     15_datatable/04_editing/15_combo.html
 @related:
 	desktop/editing.md

@@ -79,6 +79,7 @@ Other
 - api/_version_other.md - returns the current version of the library
 - api/ui_orientation_other.md - 
 - api/ui_scrollsize_other.md - returns the width of the scroll bar
+- api/ui_zindexbase_other.md - 
 }}
 
 

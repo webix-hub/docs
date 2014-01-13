@@ -14,7 +14,7 @@ getPopupView
 $$("my_richselect").getPopupView();
 
 @relatedsample:
-	98_docs/getpopup.html
+	80_docs/getpopup.html
 @related:
 	desktop/controls.md#combo
 
