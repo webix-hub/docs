@@ -10,8 +10,10 @@ There's a list of ready-to-use Webix proxy objects that can be used by adding pr
 - **offline** and **cache**  - for application [offline support](desktop/server_offline.md);
 - **connector**  - for saving data via [Server Side Connector](desktop/dataconnector.md);
 - **rest** - for working with server in [REST mode](desktop/server_rest.md);
-- **post** - for loading data in POST request (GET by default)
-- **sync** - for loading data via a synchronous Ajax request (by default, loading is performed by an asynchronous request).
+- **post** - for loading data in POST request (GET by default);
+- **sync** - for loading data via a synchronous Ajax request (by default, loading is performed by an asynchronous request);
+- **indexdb** - for working with [indexedDB](desktop/server_indexdb.md) in-browser database storage;
+- **faye** - for enabling live data update on all clients currently using the application. [Look here for details](desktop/server_faye.md).
 
 Prefixes are used before the path to you serverside script:
 

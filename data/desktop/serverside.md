@@ -127,6 +127,8 @@ Form data is either
   - desktop/server_customload.md
   - desktop/server_offline.md
   - desktop/server_proxy.md
+  - desktop/server_indexdb.md
+  - desktop/server_faye.md
   - desktop/dataprocessor.md
   - desktop/dataconnector.md
   - desktop/crossdomain_loading.md
