@@ -6,11 +6,11 @@ Version 1.4
 - rich content select box {{sample 32_thirdparty/14_dataselect.html}}
 
 ### New Server Integrations
-- loading and saving data through websockets
-- loading and saving data through indexedDB
+- loading and saving data through websockets ([details](desktop/server_faye.md))
+- loading and saving data through indexedDB ([details](desktop/server_indexdb.md))
 
 ### Improvments in Window Positioning
-- window can have complex relation size and position
+- window can have complex relation size and position ([details](desktop/window_positioning.md))
 - window can be shown in fullscreen mode
 
 ### Other

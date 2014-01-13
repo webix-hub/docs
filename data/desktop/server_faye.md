@@ -1,5 +1,5 @@
-Using Webix Faye Proxy Object
-==========================
+Websockets (Faye)
+=================
 
 Faye [proxy object](desktop/server_proxy.md) is used to ensure **live data update** on all the clients currently using the application with this feature. 
 It is based on [Faye](http://faye.jcoglan.com) publish-subscribe messaging system which is in turn based on the [Bayeux](svn.cometd.com/trunk/bayeux/bayeux.html) protocol. 
