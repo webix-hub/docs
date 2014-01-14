@@ -1,5 +1,5 @@
-Working with IndexedDB in Webix
-===============================
+Working with IndexedDB
+======================
 
 Webix offers a simple way for efficient work with [IndexedDB](https://developer.mozilla.org/en-US/docs/IndexedDB/Using_IndexedDB) in-browser storage. 
 
