@@ -52,9 +52,21 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
 		</td>
 		<td class='topic_description' style="text-align: center; padding:20px;"><a href="desktop/text_editors.md"><img src="desktop/editor_extension.png"></a></td>
 	</tr>
+    <tr>
+		<td id="design" class='topics' style="vertical-align:text-top;">
+		    <h4 id='ui' style="margin-bottom:4px;">
+		        Extended Select Controls
+		    </h4>
+		    An integration extension that allows you to add extended options for select controls: 
+            <ul>
+            	<li><a href="desktop/datasuggest.md">Dataview Suggest</a></li>
+                <li><a href="desktop/gridsuggest.md">Grid Suggest</a></li>
+            </ul>
+		</td>
+		<td class='topic_description' style="text-align: center; padding:20px;"><img src="desktop/datasuggest_extension.png"></td>
+	</tr>
     </tbody>
 </table>
-
 
 @index:
 - desktop/pivot.md
@@ -62,5 +74,4 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
 - desktop/scheduler.md
 - desktop/chart_integration.md
 - desktop/maps.md
-
 
