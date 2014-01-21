@@ -214,7 +214,7 @@ In case of a really big app with lots of components, controls and functions refe
 
 Read more about [HTML templates](desktop/html_templates.md) here. 
 
-For further information please study [Common Tasks](desktop/basic_tasks.md) and [Event Hadling](desktop/event_handling.md) articles. 
+For further information please study [Common Tasks](desktop/basic_tasks.md) and [Event Handling](desktop/event_handling.md) articles. 
 
 @index:
 - desktop/debug.md

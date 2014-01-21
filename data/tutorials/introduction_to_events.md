@@ -19,7 +19,7 @@ To attach an event handler to a Webix component, you should use the api/eventsys
 ~~~js
 $$("componentId").attachEvent("onItemClick", function (id){
     //handler code
-}
+});
 ~~~
 The method takes 2 parameters:
 

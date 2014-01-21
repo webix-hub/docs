@@ -55,13 +55,6 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
     </tbody>
 </table>
 
-.webixdoc_content .topic_description {
-vertical-align: top;
-padding-top: 40px;
-border-right: none;
-text-align: center;
-padding-bottom: 30px;
-}
 
 @index:
 - desktop/pivot.md
