@@ -204,7 +204,7 @@ Controls are mainly responsible for handling events since they enable user-app i
 </div>
 
 <h2 style="clear:both;">UI Extensions</h2>
-UI extensions are helpful components that mostly task-oriented and intended to accomplish a certain purpose. They are already quite configurable and need only initializing on the page to start serving. 
+UI extensions are helpful components that are mostly task-oriented and intended to accomplish a certain purpose. They are already quite configurable and need only initializing on the page to start serving. 
 
 <br>
 To see a complete list of extension components and find out details of their use, please, go to the chapter - desktop/extensions.md.
