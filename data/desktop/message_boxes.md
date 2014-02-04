@@ -66,7 +66,7 @@ webix.message({
 	type:"error", 
     text:"Form Data is Invalid",
     expire:10000
-    //expire:false   for cancelling expire period
+    //expire:-1   for cancelling expire period
 })
 ~~~
 
