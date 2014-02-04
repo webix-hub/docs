@@ -18,10 +18,7 @@ dtable.exportToPDF();
 @template:	api_method
 	
 @descr:
-
-By default, the method uses the online export service available at  [http://Webixgrid.appspot.com/export/pdf](http://Webixgrid.appspot.com/export/pdf).
-
-You can write your own solution ( server side support for PHP, JAVA, .NET). In this case, export will look like:
+You can write your own server-side solution PHP, JAVA, .NET ([check here](datatable/export.md#exporttopdf)). In this case, export will look like:
 
 ~~~js
 dtable.exportToPDF("http://your-site.com/path/generate.php");
