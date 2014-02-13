@@ -22,7 +22,7 @@ The component supports in-line node editing, advanced drag-and-drop, three-state
 ~~~
 
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/group.md">Group</a>, <a href="api/refs/treeapi.md">TreeAPI</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/treedatamove.md">TreeDataMove</a>, <a href="api/refs/selectionmodel.md">SelectionModel</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/ui.proto.md">ui.proto</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/treerenderstack.md">TreeRenderStack</a>, <a href="api/refs/copypaste.md">CopyPaste</a>, <a href="api/refs/treedataloader.md">TreeDataLoader</a>, <a href="api/refs/treestore.md">TreeStore</a>, <a href="api/refs/treestatecheckbox.md">TreeStateCheckbox</a></div>
+<a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/group.md">Group</a>, <a href="api/refs/treeapi.md">TreeAPI</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/treedatamove.md">TreeDataMove</a>, <a href="api/refs/selectionmodel.md">SelectionModel</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/treedataloader.md">TreeDataLoader</a>, <a href="api/refs/treestore.md">TreeStore</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/ui.proto.md">ui.proto</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/treerenderstack.md">TreeRenderStack</a>, <a href="api/refs/copypaste.md">CopyPaste</a>, <a href="api/refs/treestatecheckbox.md">TreeStateCheckbox</a></div>
 
 Methods
 -------
@@ -60,6 +60,7 @@ Methods
 - api/link/ui.tree_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.tree_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.tree_getitem.md - gets the object of the data item with the specified id
+- api/link/ui.tree_getitemnode.md - returns html element of item by item id
 - api/link/ui.tree_getlastid.md - returns the id of the last item
 - api/link/ui.tree_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.tree_getnextsiblingid.md - returns the id of the next sibling of the specified node
@@ -88,7 +89,8 @@ Methods
 - api/link/ui.tree_isvisible.md - checks whether the view is visible
 - api/link/ui.tree_load.md - loads data from an external data source
 - api/link/ui.tree_loadbranch.md - loads data to the specified branch
-- api/link/ui.tree_loadnext.md - not implmented, do nothing
+- api/link/ui.tree_loadnext.md - sends a request to load the specified number of records to the end or to the specified position 
+of the component
 - api/link/ui.tree_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.tree_mapevent.md - routes events from one object to another
 - api/link/ui.tree_move.md - moves the specified item to the new position
@@ -150,7 +152,7 @@ Events
 - api/link/ui.tree_onbeforeselect_event.md - fires before item selection is started
 - api/link/ui.tree_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.tree_onbindrequest_event.md - fires when the component is ready to receive data from the master component
-- api/link/ui.tree_ondatarequest_event.md - called before exucuting auto-loading data call
+- api/link/ui.tree_ondatarequest_event.md - fires when data from the server side is requested (part of dynamic loading)
 - api/link/ui.tree_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.tree_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.tree_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
@@ -237,6 +239,7 @@ Other
 - api/link/ui.tree_$dropallow_other.md - can be redefine if you need custom drop rules
 - api/link/ui.tree_$getsize_other.md - returns the current size of the component
 - api/link/ui.tree_$height_other.md - current height of the view
+- api/link/ui.tree_$scope_other.md - scope for resolving event and method names
 - api/link/ui.tree_$setsize_other.md - sets the component size
 - api/link/ui.tree_$skin_other.md - method, which will be called when skin defined
 - api/link/ui.tree_$view_other.md - reference to top html element of the view

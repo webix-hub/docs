@@ -31,6 +31,7 @@ Properties
 - api/ui.datatable_filtermode_config.md - defines filtering rules in tree-like components
 - api/ui.datatable_fixedrowheight_config.md - defines whether the height should be fixed for all rows or can vary
 - api/ui.datatable_footer_config.md - enables/disables the footer in DataTable (disabled, by default)
+- api/link/ui.datatable_form_config.md - linked form
 - api/link/ui.datatable_gravity_config.md - sets the view gravity (1 by default)
 - api/ui.datatable_header_config.md - enables/disables the header in DataTable (enabled, by default)
 - api/ui.datatable_headerrowheight_config.md - sets the heigth of the header row
@@ -108,6 +109,7 @@ Properties
 - api/ui.datatable_filtermode_config.md
 - api/ui.datatable_fixedrowheight_config.md
 - api/ui.datatable_footer_config.md
+- api/link/ui.datatable_form_config.md
 - api/link/ui.datatable_gravity_config.md
 - api/ui.datatable_header_config.md
 - api/ui.datatable_headerrowheight_config.md

@@ -101,6 +101,7 @@ Other
 {{links
 - api/link/ui.tooltip_$getsize_other.md - returns the current size of the component
 - api/link/ui.tooltip_$height_other.md - current height of the view
+- api/link/ui.tooltip_$scope_other.md - scope for resolving event and method names
 - api/link/ui.tooltip_$setsize_other.md - sets the component size
 - api/link/ui.tooltip_$skin_other.md - method, which will be called when skin defined
 - api/link/ui.tooltip_$view_other.md - reference to top html element of the view

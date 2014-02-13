@@ -33,6 +33,7 @@ Methods
 - api/ui.datatable_addrowcss.md - adds a css class to the row
 - api/link/ui.datatable_adjust.md - adjusts the component to the size of the parent HTML container
 - api/ui.datatable_adjustcolumn.md - adjusts a column to the width of the content
+- api/ui.datatable_adjustrowheight.md - autodetect height of rows in datatable
 - api/link/ui.datatable_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.datatable_bind.md - binds components
 - api/link/ui.datatable_blockevent.md - temporarily blocks triggering of ALL events of the calling object
@@ -77,6 +78,7 @@ Methods
 - api/link/ui.datatable_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.datatable_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.datatable_getitem.md - gets the object of the data item with the specified id
+- api/ui.datatable_getitemnode.md - returns html element of item by item id
 - api/link/ui.datatable_getlastid.md - returns the id of the last item
 - api/link/ui.datatable_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.datatable_getnode.md - returns the main HTML container for the calling object
@@ -242,6 +244,7 @@ Properties
 - api/ui.datatable_filtermode_config.md - defines filtering rules in tree-like components
 - api/ui.datatable_fixedrowheight_config.md - defines whether the height should be fixed for all rows or can vary
 - api/ui.datatable_footer_config.md - enables/disables the footer in DataTable (disabled, by default)
+- api/link/ui.datatable_form_config.md - linked form
 - api/link/ui.datatable_gravity_config.md - sets the view gravity (1 by default)
 - api/ui.datatable_header_config.md - enables/disables the header in DataTable (enabled, by default)
 - api/ui.datatable_headerrowheight_config.md - sets the heigth of the header row
@@ -306,6 +309,7 @@ Other
 - api/link/ui.datatable_$dropallow_other.md - can be redefine if you need custom drop rules
 - api/link/ui.datatable_$getsize_other.md - returns the current size of the component
 - api/link/ui.datatable_$height_other.md - current height of the view
+- api/link/ui.datatable_$scope_other.md - scope for resolving event and method names
 - api/link/ui.datatable_$setsize_other.md - sets the component size
 - api/link/ui.datatable_$skin_other.md - method, which will be called when skin defined
 - api/link/ui.datatable_$view_other.md - reference to top html element of the view

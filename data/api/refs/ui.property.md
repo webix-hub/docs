@@ -48,6 +48,7 @@ Methods
 - api/link/ui.property_geteditor.md - returns editor object
 - api/link/ui.property_geteditorvalue.md - returns the value of the active (currently open) editor
 - api/ui.property_getitem.md - gets the data object for related property
+- api/ui.property_getitemnode.md - returns html element of item by item id
 - api/link/ui.property_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.property_getparentview.md - returns the parent view of the component
 - api/link/ui.property_getscrollstate.md - returns the scroll position
@@ -119,6 +120,7 @@ Properties
 - api/link/ui.property_editable_config.md - allows/denies editing in the view
 - api/link/ui.property_editaction_config.md - defines the action on which editors will be opened
 - api/ui.property_elements_config.md - an array of property items
+- api/link/ui.property_form_config.md - linked form
 - api/link/ui.property_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.property_height_config.md - sets the height of the component
 - api/link/ui.property_hidden_config.md - defines whether the view will be hidden initially
@@ -150,6 +152,7 @@ Other
 {{links
 - api/link/ui.property_$getsize_other.md - returns the current size of the component
 - api/link/ui.property_$height_other.md - current height of the view
+- api/link/ui.property_$scope_other.md - scope for resolving event and method names
 - api/link/ui.property_$setsize_other.md - sets the component size
 - api/link/ui.property_$skin_other.md - method, which will be called when skin defined
 - api/link/ui.property_$view_other.md - reference to top html element of the view

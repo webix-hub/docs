@@ -26,11 +26,12 @@ Methods
 - api/link/ui.suggest_getbody.md - gets the ui view of the window body
 - api/link/ui.suggest_getchildviews.md - returns child views of the calling component
 - api/link/ui.suggest_gethead.md - gets the ui view of the window header
-- api/ui.suggest_getidbyvalue.md - returns id of option by its value
 - api/ui.suggest_getitemtext.md - returns rendered text of suggest's item
+- api/ui.suggest_getlist.md - returns inner data control from suggest
 - api/ui.suggest_getmastervalue.md - returns current value of master control
 - api/link/ui.suggest_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.suggest_getparentview.md - returns the parent view of the component
+- api/ui.suggest_getsuggestion.md - returns id of top suggestion from the suggest list
 - api/link/ui.suggest_gettopparentview.md - returns top parent view
 - api/link/ui.suggest_hasevent.md - checks whether the component has the specified event
 - api/link/ui.suggest_hide.md - hides the view
@@ -55,6 +56,7 @@ Events
 - api/link/ui.suggest_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.suggest_onhide_event.md - fires when window is hidden
 - api/link/ui.suggest_onshow_event.md - fires when window is shown
+- api/ui.suggest_onvaluesuggest_event.md - some item selected in the suggest control
 - api/link/ui.suggest_onviewresize_event.md - view size was changed by resizer
 }}
 
@@ -72,6 +74,7 @@ Properties
 - api/link/ui.suggest_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.suggest_disabled_config.md - disables item
 - api/ui.suggest_filter_config.md - custom filtering function
+- api/ui.suggest_fitmaster_config.md - size suggest box to the master control
 - api/link/ui.suggest_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.suggest_head_config.md - sets the view header
 - api/link/ui.suggest_headheight_config.md - defines the header height (43 by default)
@@ -108,11 +111,11 @@ Other
 {{links
 - api/link/ui.suggest_$getsize_other.md - returns the current size of the component
 - api/link/ui.suggest_$height_other.md - current height of the view
+- api/link/ui.suggest_$scope_other.md - scope for resolving event and method names
 - api/link/ui.suggest_$setsize_other.md - sets the component size
 - api/link/ui.suggest_$skin_other.md - method, which will be called when skin defined
 - api/link/ui.suggest_$view_other.md - reference to top html element of the view
 - api/link/ui.suggest_$width_other.md - current width of the view
-- api/ui.suggest_autofocus_other.md - move focust to view on show
 - api/link/ui.suggest_config_other.md - all options from initial component configuration
 - api/link/ui.suggest_name_other.md - indicates the name of the component (a read-only property)
 }}

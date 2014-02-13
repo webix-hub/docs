@@ -9,7 +9,7 @@ Properties
 - api/link/treecollection_datatype_config.md - the type of loaded data
 - api/link/treecollection_filtermode_config.md - defines the pattern for tree item filtering
 - api/link/treecollection_id_config.md - the component ID
-- api/link/treecollection_on_config.md - 
+- api/link/treecollection_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/treecollection_ready_config.md - a handler that is called just after the page has been completely parsed
 - api/link/treecollection_removemissed_config.md - defines how to treat items in case of reloading
 - api/link/treecollection_rules_config.md - set of validation rules for the component

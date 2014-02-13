@@ -27,6 +27,7 @@ Properties
 - api/link/ui.htmlform_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.htmlform_src_config.md - the path to an external template that is loaded by Ajax
 - api/link/ui.htmlform_template_config.md - the component template
+- api/link/ui.htmlform_type_config.md - name of predefined styling type
 - api/link/ui.htmlform_url_config.md - the url of a data feed which will be loaded after component initialization
 - api/link/ui.htmlform_waitmessage_config.md - defines whether the loading cover should be displayed while loading (actual in case of 'src' parameter)
 - api/link/ui.htmlform_width_config.md - sets the width of the component
@@ -57,6 +58,7 @@ Properties
 - api/link/ui.htmlform_scrollspeed_config.md
 - api/link/ui.htmlform_src_config.md
 - api/link/ui.htmlform_template_config.md
+- api/link/ui.htmlform_type_config.md
 - api/link/ui.htmlform_url_config.md
 - api/link/ui.htmlform_waitmessage_config.md
 - api/link/ui.htmlform_width_config.md

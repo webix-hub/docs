@@ -35,6 +35,7 @@ Methods
 - api/link/ui.tree_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.tree_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.tree_getitem.md - gets the object of the data item with the specified id
+- api/link/ui.tree_getitemnode.md - returns html element of item by item id
 - api/link/ui.tree_getlastid.md - returns the id of the last item
 - api/link/ui.tree_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.tree_getnextsiblingid.md - returns the id of the next sibling of the specified node
@@ -63,7 +64,8 @@ Methods
 - api/link/ui.tree_isvisible.md - checks whether the view is visible
 - api/link/ui.tree_load.md - loads data from an external data source
 - api/link/ui.tree_loadbranch.md - loads data to the specified branch
-- api/link/ui.tree_loadnext.md - not implmented, do nothing
+- api/link/ui.tree_loadnext.md - sends a request to load the specified number of records to the end or to the specified position 
+of the component
 - api/link/ui.tree_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.tree_mapevent.md - routes events from one object to another
 - api/link/ui.tree_move.md - moves the specified item to the new position
@@ -129,6 +131,7 @@ Methods
 - api/link/ui.tree_getidbyindex.md
 - api/link/ui.tree_getindexbyid.md
 - api/link/ui.tree_getitem.md
+- api/link/ui.tree_getitemnode.md
 - api/link/ui.tree_getlastid.md
 - api/link/ui.tree_getnextid.md
 - api/link/ui.tree_getnextsiblingid.md

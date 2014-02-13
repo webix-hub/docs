@@ -9,6 +9,7 @@ Methods
 - api/ui.datatable_addrowcss.md - adds a css class to the row
 - api/link/ui.datatable_adjust.md - adjusts the component to the size of the parent HTML container
 - api/ui.datatable_adjustcolumn.md - adjusts a column to the width of the content
+- api/ui.datatable_adjustrowheight.md - autodetect height of rows in datatable
 - api/link/ui.datatable_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.datatable_bind.md - binds components
 - api/link/ui.datatable_blockevent.md - temporarily blocks triggering of ALL events of the calling object
@@ -53,6 +54,7 @@ Methods
 - api/link/ui.datatable_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.datatable_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.datatable_getitem.md - gets the object of the data item with the specified id
+- api/ui.datatable_getitemnode.md - returns html element of item by item id
 - api/link/ui.datatable_getlastid.md - returns the id of the last item
 - api/link/ui.datatable_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.datatable_getnode.md - returns the main HTML container for the calling object
@@ -132,6 +134,7 @@ of the component
 - api/ui.datatable_addrowcss.md
 - api/link/ui.datatable_adjust.md
 - api/ui.datatable_adjustcolumn.md
+- api/ui.datatable_adjustrowheight.md
 - api/link/ui.datatable_attachevent.md
 - api/link/ui.datatable_bind.md
 - api/link/ui.datatable_blockevent.md
@@ -176,6 +179,7 @@ of the component
 - api/link/ui.datatable_getidbyindex.md
 - api/link/ui.datatable_getindexbyid.md
 - api/link/ui.datatable_getitem.md
+- api/ui.datatable_getitemnode.md
 - api/link/ui.datatable_getlastid.md
 - api/link/ui.datatable_getnextid.md
 - api/link/ui.datatable_getnode.md

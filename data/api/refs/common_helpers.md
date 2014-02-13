@@ -35,6 +35,7 @@ Methods
 - api/link/_mapevent.md - 
 - api/_message.md - shows a message box
 - api/_modalbox.md - creates a modal box
+- api/_once.md - 
 - api/_proto.md - merges the contents of several objects together into the first object
 - api/_protoui.md - merges the contents of several objects together into the first object and creates from it a new view
 - api/_proxy.md - creates proxy object
@@ -77,7 +78,6 @@ Other
 - api/_codebase_other.md - returns the path to the 'codebase' folder
 - api/_name_other.md - returns the name of the component (by default, 'Core')
 - api/_version_other.md - returns the current version of the library
-- api/ui_orientation_other.md - 
 - api/ui_scrollsize_other.md - returns the width of the scroll bar
 - api/ui_zindexbase_other.md - 
 }}

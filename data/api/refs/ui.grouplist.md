@@ -53,6 +53,7 @@ Methods
 - api/link/ui.grouplist_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.grouplist_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.grouplist_getitem.md - gets the object of the data item with the specified id
+- api/link/ui.grouplist_getitemnode.md - returns html element of item by item id
 - api/link/ui.grouplist_getlastid.md - returns the id of the last item
 - api/link/ui.grouplist_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.grouplist_getnode.md - returns the main HTML container for the calling object
@@ -224,6 +225,7 @@ Other
 - api/link/ui.grouplist_$dropallow_other.md - can be redefine if you need custom drop rules
 - api/link/ui.grouplist_$getsize_other.md - returns the current size of the component
 - api/link/ui.grouplist_$height_other.md - current height of the view
+- api/link/ui.grouplist_$scope_other.md - scope for resolving event and method names
 - api/link/ui.grouplist_$setsize_other.md - sets the component size
 - api/link/ui.grouplist_$skin_other.md - method, which will be called when skin defined
 - api/link/ui.grouplist_$view_other.md - reference to top html element of the view

@@ -21,7 +21,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 ~~~
 
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/treeapi.md">TreeAPI</a>, <a href="api/refs/treestatecheckbox.md">TreeStateCheckbox</a>, <a href="api/refs/ui.datatable.md">ui.datatable</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/group.md">Group</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/tablepaste.md">TablePaste</a>, <a href="api/refs/datastate.md">DataState</a>, <a href="api/refs/editability.md">EditAbility</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/treedataloader.md">TreeDataLoader</a>, <a href="api/refs/treestore.md">TreeStore</a></div>
+<a href="api/refs/treeapi.md">TreeAPI</a>, <a href="api/refs/treestatecheckbox.md">TreeStateCheckbox</a>, <a href="api/refs/treedataloader.md">TreeDataLoader</a>, <a href="api/refs/treestore.md">TreeStore</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/ui.datatable.md">ui.datatable</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/group.md">Group</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/tablepaste.md">TablePaste</a>, <a href="api/refs/datastate.md">DataState</a>, <a href="api/refs/editability.md">EditAbility</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a></div>
 
 Methods
 -------
@@ -33,6 +33,7 @@ Methods
 - api/link/ui.treetable_addrowcss.md - adds a css class to the row
 - api/link/ui.treetable_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.treetable_adjustcolumn.md - adjusts a column to the width of the content
+- api/link/ui.treetable_adjustrowheight.md - autodetect height of rows in datatable
 - api/link/ui.treetable_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.treetable_bind.md - binds components
 - api/link/ui.treetable_blockevent.md - temporarily blocks triggering of ALL events of the calling object
@@ -83,6 +84,7 @@ Methods
 - api/link/ui.treetable_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.treetable_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.treetable_getitem.md - gets the object of the data item with the specified id
+- api/link/ui.treetable_getitemnode.md - returns html element of item by item id
 - api/link/ui.treetable_getlastid.md - returns the id of the last item
 - api/link/ui.treetable_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.treetable_getnextsiblingid.md - returns the id of the next sibling of the specified node
@@ -114,12 +116,13 @@ Methods
 - api/link/ui.treetable_isvisible.md - checks whether the view is visible
 - api/link/ui.treetable_load.md - loads data from an external data source
 - api/link/ui.treetable_loadbranch.md - loads data to the specified branch
-- api/link/ui.treetable_loadnext.md - not implmented, do nothing
+- api/link/ui.treetable_loadnext.md - sends a request to load the specified number of records to the end or to the specified position 
+of the component
 - api/link/ui.treetable_locate.md - converts an HTML node or event object to in-table position
 - api/link/ui.treetable_mapcells.md - applies the callback to a range of cells
 - api/link/ui.treetable_mapevent.md - routes events from one object to another
 - api/link/ui.treetable_marksorting.md - cancels sorting and recovers default data presentation
-- api/link/ui.treetable_move.md - moves the specified item to the new position
+- api/link/ui.treetable_move.md - moves the specified item to a new position
 - api/link/ui.treetable_movebottom.md - moves the specified item to the last position
 - api/link/ui.treetable_movecolumn.md - moves column to different position
 - api/link/ui.treetable_movedown.md - increases the item index and moves the item to the new position
@@ -204,7 +207,7 @@ Events
 - api/link/ui.treetable_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.treetable_onbeforeunselect_event.md - fired before a cell is unselected
 - api/link/ui.treetable_onbindrequest_event.md - fires when the component is ready to receive data from the master component
-- api/link/ui.treetable_ondatarequest_event.md - called before exucuting auto-loading data call
+- api/link/ui.treetable_ondatarequest_event.md - fires when data from the server side is requested (part of dynamic loading)
 - api/link/ui.treetable_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.treetable_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.treetable_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
@@ -257,9 +260,10 @@ Properties
 - api/link/ui.treetable_editable_config.md - allows/denies editing in the view
 - api/link/ui.treetable_editaction_config.md - defines the action on which editors will be opened
 - api/link/ui.treetable_externaldata_config.md - allows defining custom 'move' logic for the component.
-- api/link/ui.treetable_filtermode_config.md - defines the pattern for tree item filtering
+- api/link/ui.treetable_filtermode_config.md - defines filtering rules in tree-like components
 - api/link/ui.treetable_fixedrowheight_config.md - defines whether the height should be fixed for all rows or can vary
 - api/link/ui.treetable_footer_config.md - enables/disables the footer in DataTable (disabled, by default)
+- api/link/ui.treetable_form_config.md - linked form
 - api/link/ui.treetable_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.treetable_header_config.md - enables/disables the header in DataTable (enabled, by default)
 - api/link/ui.treetable_headerrowheight_config.md - sets the heigth of the header row
@@ -325,6 +329,7 @@ Other
 - api/link/ui.treetable_$dropallow_other.md - can be redefine if you need custom drop rules
 - api/link/ui.treetable_$getsize_other.md - returns the current size of the component
 - api/link/ui.treetable_$height_other.md - current height of the view
+- api/link/ui.treetable_$scope_other.md - scope for resolving event and method names
 - api/link/ui.treetable_$setsize_other.md - sets the component size
 - api/link/ui.treetable_$skin_other.md - method, which will be called when skin defined
 - api/link/ui.treetable_$view_other.md - reference to top html element of the view

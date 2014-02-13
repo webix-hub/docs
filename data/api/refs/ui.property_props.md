@@ -16,6 +16,7 @@ Properties
 - api/link/ui.property_editable_config.md - allows/denies editing in the view
 - api/link/ui.property_editaction_config.md - defines the action on which editors will be opened
 - api/ui.property_elements_config.md - an array of property items
+- api/link/ui.property_form_config.md - linked form
 - api/link/ui.property_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.property_height_config.md - sets the height of the component
 - api/link/ui.property_hidden_config.md - defines whether the view will be hidden initially
@@ -52,6 +53,7 @@ Properties
 - api/link/ui.property_editable_config.md
 - api/link/ui.property_editaction_config.md
 - api/ui.property_elements_config.md
+- api/link/ui.property_form_config.md
 - api/link/ui.property_gravity_config.md
 - api/link/ui.property_height_config.md
 - api/link/ui.property_hidden_config.md

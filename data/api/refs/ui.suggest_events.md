@@ -7,6 +7,7 @@ Events
 - api/link/ui.suggest_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.suggest_onhide_event.md - fires when window is hidden
 - api/link/ui.suggest_onshow_event.md - fires when window is shown
+- api/ui.suggest_onvaluesuggest_event.md - some item selected in the suggest control
 - api/link/ui.suggest_onviewresize_event.md - view size was changed by resizer
 }}
 
@@ -15,6 +16,7 @@ Events
 - api/link/ui.suggest_ondestruct_event.md
 - api/link/ui.suggest_onhide_event.md
 - api/link/ui.suggest_onshow_event.md
+- api/ui.suggest_onvaluesuggest_event.md
 - api/link/ui.suggest_onviewresize_event.md
 
 

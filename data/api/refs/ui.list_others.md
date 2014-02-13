@@ -12,6 +12,7 @@ Others
 - api/link/ui.list_$dropallow_other.md - can be redefine if you need custom drop rules
 - api/link/ui.list_$getsize_other.md - returns the current size of the component
 - api/link/ui.list_$height_other.md - current height of the view
+- api/link/ui.list_$scope_other.md - scope for resolving event and method names
 - api/link/ui.list_$setsize_other.md - sets the component size
 - api/link/ui.list_$skin_other.md - method, which will be called when skin defined
 - api/link/ui.list_$view_other.md - reference to top html element of the view
@@ -36,6 +37,7 @@ Others
 - api/link/ui.list_$dropallow_other.md
 - api/link/ui.list_$getsize_other.md
 - api/link/ui.list_$height_other.md
+- api/link/ui.list_$scope_other.md
 - api/link/ui.list_$setsize_other.md
 - api/link/ui.list_$skin_other.md
 - api/link/ui.list_$view_other.md

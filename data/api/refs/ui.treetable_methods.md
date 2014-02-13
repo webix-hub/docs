@@ -9,6 +9,7 @@ Methods
 - api/link/ui.treetable_addrowcss.md - adds a css class to the row
 - api/link/ui.treetable_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.treetable_adjustcolumn.md - adjusts a column to the width of the content
+- api/link/ui.treetable_adjustrowheight.md - autodetect height of rows in datatable
 - api/link/ui.treetable_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.treetable_bind.md - binds components
 - api/link/ui.treetable_blockevent.md - temporarily blocks triggering of ALL events of the calling object
@@ -59,6 +60,7 @@ Methods
 - api/link/ui.treetable_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.treetable_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.treetable_getitem.md - gets the object of the data item with the specified id
+- api/link/ui.treetable_getitemnode.md - returns html element of item by item id
 - api/link/ui.treetable_getlastid.md - returns the id of the last item
 - api/link/ui.treetable_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.treetable_getnextsiblingid.md - returns the id of the next sibling of the specified node
@@ -90,12 +92,13 @@ Methods
 - api/link/ui.treetable_isvisible.md - checks whether the view is visible
 - api/link/ui.treetable_load.md - loads data from an external data source
 - api/link/ui.treetable_loadbranch.md - loads data to the specified branch
-- api/link/ui.treetable_loadnext.md - not implmented, do nothing
+- api/link/ui.treetable_loadnext.md - sends a request to load the specified number of records to the end or to the specified position 
+of the component
 - api/link/ui.treetable_locate.md - converts an HTML node or event object to in-table position
 - api/link/ui.treetable_mapcells.md - applies the callback to a range of cells
 - api/link/ui.treetable_mapevent.md - routes events from one object to another
 - api/link/ui.treetable_marksorting.md - cancels sorting and recovers default data presentation
-- api/link/ui.treetable_move.md - moves the specified item to the new position
+- api/link/ui.treetable_move.md - moves the specified item to a new position
 - api/link/ui.treetable_movebottom.md - moves the specified item to the last position
 - api/link/ui.treetable_movecolumn.md - moves column to different position
 - api/link/ui.treetable_movedown.md - increases the item index and moves the item to the new position
@@ -145,6 +148,7 @@ Methods
 - api/link/ui.treetable_addrowcss.md
 - api/link/ui.treetable_adjust.md
 - api/link/ui.treetable_adjustcolumn.md
+- api/link/ui.treetable_adjustrowheight.md
 - api/link/ui.treetable_attachevent.md
 - api/link/ui.treetable_bind.md
 - api/link/ui.treetable_blockevent.md
@@ -195,6 +199,7 @@ Methods
 - api/link/ui.treetable_getidbyindex.md
 - api/link/ui.treetable_getindexbyid.md
 - api/link/ui.treetable_getitem.md
+- api/link/ui.treetable_getitemnode.md
 - api/link/ui.treetable_getlastid.md
 - api/link/ui.treetable_getnextid.md
 - api/link/ui.treetable_getnextsiblingid.md

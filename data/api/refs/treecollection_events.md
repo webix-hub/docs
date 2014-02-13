@@ -12,7 +12,7 @@ Events
 - api/link/treecollection_onbeforeload_event.md - occurs immediately before loading XML data has been started
 - api/link/treecollection_onbeforesort_event.md - fires before sorting dataset
 - api/link/treecollection_onbindrequest_event.md - fires when the component is ready to receive data from the master component
-- api/link/treecollection_ondatarequest_event.md - called before exucuting auto-loading data call
+- api/link/treecollection_ondatarequest_event.md - fires when data from the server side is requested (part of dynamic loading)
 - api/link/treecollection_ondataupdate_event.md - fires when data item is in update process
 - api/link/treecollection_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/treecollection_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation

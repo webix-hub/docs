@@ -82,6 +82,7 @@ Properties
 - api/link/ui.checkbox_animate_config.md - defines or disables view change animation.
 - api/link/ui.checkbox_attributes_config.md - sets an hash of HTML input attributes that will be parsed for the Webix input control
 - api/link/ui.checkbox_borderless_config.md - used to hide the component borders
+- api/ui.checkbox_checkvalue_config.md - result of getValue for checked checkbox
 - api/link/ui.checkbox_click_config.md - click action handler
 - api/link/ui.checkbox_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.checkbox_content_config.md - the id or node, whose content will be moved to the view
@@ -107,6 +108,7 @@ Properties
 - api/link/ui.checkbox_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/link/ui.checkbox_template_config.md - the component template
 - api/link/ui.checkbox_type_config.md - the type of the control
+- api/ui.checkbox_uncheckvalue_config.md - result of getValue for unchecked checkbox
 - api/link/ui.checkbox_value_config.md - sets the initial value for a control
 - api/link/ui.checkbox_width_config.md - sets the width of the component
 }}
@@ -118,11 +120,11 @@ Other
 -----
 
 {{links
-- api/link/ui.checkbox_$formelement_other.md - flag which instruct to process such view as form input
 - api/link/ui.checkbox_$getsize_other.md - returns the current size of the component
 - api/link/ui.checkbox_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.checkbox_$height_other.md - current height of the view
 - api/link/ui.checkbox_$renderinput_other.md - renders html for the input
+- api/link/ui.checkbox_$scope_other.md - scope for resolving event and method names
 - api/link/ui.checkbox_$setsize_other.md - sets the component size
 - api/link/ui.checkbox_$setvalue_other.md - called each time when component need to set value in related html input
 - api/link/ui.checkbox_$skin_other.md - method, which will be called when skin defined

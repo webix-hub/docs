@@ -44,7 +44,6 @@ Methods
 - api/link/ui.combo_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.combo_getparentview.md - returns the parent view of the component
 - api/link/ui.combo_getpopup.md - return popup element of the input
-- api/link/ui.combo_getpopupview.md - returns an object of the dedicated popup view
 - api/link/ui.combo_gettext.md - returns text of currently selected option
 - api/link/ui.combo_gettopparentview.md - returns top parent view
 - api/link/ui.combo_getvalue.md - returns the current value of the control
@@ -124,12 +123,12 @@ Other
 -----
 
 {{links
-- api/link/ui.combo_$formelement_other.md - flag which instruct to process such view as form input
 - api/link/ui.combo_$getsize_other.md - returns the current size of the component
 - api/link/ui.combo_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.combo_$height_other.md - current height of the view
 - api/link/ui.combo_$rendericon_other.md - optional render for the icon block
 - api/link/ui.combo_$renderinput_other.md - renders html for the input
+- api/link/ui.combo_$scope_other.md - scope for resolving event and method names
 - api/link/ui.combo_$setsize_other.md - sets the component size
 - api/link/ui.combo_$setvalue_other.md - called each time when component need to set value in related html input
 - api/link/ui.combo_$skin_other.md - method, which will be called when skin defined

@@ -27,7 +27,7 @@ Events
 - api/link/ui.tree_onbeforeselect_event.md - fires before item selection is started
 - api/link/ui.tree_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.tree_onbindrequest_event.md - fires when the component is ready to receive data from the master component
-- api/link/ui.tree_ondatarequest_event.md - called before exucuting auto-loading data call
+- api/link/ui.tree_ondatarequest_event.md - fires when data from the server side is requested (part of dynamic loading)
 - api/link/ui.tree_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.tree_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.tree_ondragout_event.md - fires when a dragged element is moved outside of the droppable area

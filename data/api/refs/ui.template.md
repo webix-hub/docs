@@ -103,6 +103,7 @@ Properties
 - api/link/ui.template_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/ui.template_src_config.md - the path to an external template that is loaded by Ajax
 - api/link/ui.template_template_config.md - the component template
+- api/ui.template_type_config.md - name of predefined styling type
 - api/link/ui.template_url_config.md - the url of a data feed which will be loaded after component initialization
 - api/ui.template_waitmessage_config.md - defines whether the loading cover should be displayed while loading (actual in case of 'src' parameter)
 - api/link/ui.template_width_config.md - sets the width of the component
@@ -117,6 +118,7 @@ Other
 {{links
 - api/link/ui.template_$getsize_other.md - returns the current size of the component
 - api/link/ui.template_$height_other.md - current height of the view
+- api/link/ui.template_$scope_other.md - scope for resolving event and method names
 - api/link/ui.template_$setsize_other.md - sets the component size
 - api/link/ui.template_$skin_other.md - method, which will be called when skin defined
 - api/link/ui.template_$view_other.md - reference to top html element of the view

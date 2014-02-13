@@ -14,15 +14,15 @@ Methods
 
 {{links
 - api/link/treecollection_add.md - adds an item to the store
-- api/link/treecollection_attachevent.md - 
+- api/link/treecollection_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/treecollection_bind.md - binds components
-- api/link/treecollection_blockevent.md - 
-- api/link/treecollection_callevent.md - 
+- api/link/treecollection_blockevent.md - temporarily blocks triggering of ALL events of the calling object
+- api/link/treecollection_callevent.md - calls an inner event
 - api/link/treecollection_clearall.md - removes all items from the component
 - api/link/treecollection_clearvalidation.md - removes all validation marks from the component
 - api/link/treecollection_count.md - returns the count of items in the table
 - api/link/treecollection_define.md - redefines a single configuration property (or a hash of properties)
-- api/link/treecollection_detachevent.md - 
+- api/link/treecollection_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/treecollection_exists.md - checks whether an item with the specified id exists
 - api/link/treecollection_filter.md - filters the component
 - api/link/treecollection_getbranchindex.md - gets index of the node in a specific branch
@@ -37,20 +37,21 @@ Methods
 - api/link/treecollection_getparentid.md - get the ID of the parent node of the specified item
 - api/link/treecollection_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
 - api/link/treecollection_getprevsiblingid.md - returns the id of the previous sibling of the specified node
-- api/link/treecollection_hasevent.md - 
+- api/link/treecollection_hasevent.md - checks whether the component has the specified event
 - api/link/treecollection_isbranch.md - checks whether the node has any children
 - api/link/treecollection_isvisible.md - returns true if current view is visible
 - api/link/treecollection_load.md - loads data from an external data source
 - api/link/treecollection_loadbranch.md - loads data to the specified branch
-- api/link/treecollection_loadnext.md - not implmented, do nothing
-- api/link/treecollection_mapevent.md - 
+- api/link/treecollection_loadnext.md - sends a request to load the specified number of records to the end or to the specified position 
+of the component
+- api/link/treecollection_mapevent.md - routes events from one object to another
 - api/link/treecollection_parse.md - loads data to the component from an inline data source
 - api/link/treecollection_refresh.md - repaints the whole view or a certain item
 - api/link/treecollection_remove.md - removes the specified item from datastore
 - api/link/treecollection_serialize.md - serializes data to a json object
 - api/link/treecollection_sort.md - sorts datastore
 - api/link/treecollection_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
-- api/link/treecollection_unblockevent.md - 
+- api/link/treecollection_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/treecollection_updateitem.md - sets properties of the data item
 - api/link/treecollection_validate.md - validates one record or all dataset against validation rules
 }}
@@ -69,7 +70,7 @@ Events
 - api/link/treecollection_onbeforeload_event.md - occurs immediately before loading XML data has been started
 - api/link/treecollection_onbeforesort_event.md - fires before sorting dataset
 - api/link/treecollection_onbindrequest_event.md - fires when the component is ready to receive data from the master component
-- api/link/treecollection_ondatarequest_event.md - called before exucuting auto-loading data call
+- api/link/treecollection_ondatarequest_event.md - fires when data from the server side is requested (part of dynamic loading)
 - api/link/treecollection_ondataupdate_event.md - fires when data item is in update process
 - api/link/treecollection_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/treecollection_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation
@@ -87,7 +88,7 @@ Properties
 - api/link/treecollection_datatype_config.md - the type of loaded data
 - api/link/treecollection_filtermode_config.md - defines the pattern for tree item filtering
 - api/link/treecollection_id_config.md - the component ID
-- api/link/treecollection_on_config.md - 
+- api/link/treecollection_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/treecollection_ready_config.md - a handler that is called just after the page has been completely parsed
 - api/link/treecollection_removemissed_config.md - defines how to treat items in case of reloading
 - api/link/treecollection_rules_config.md - set of validation rules for the component

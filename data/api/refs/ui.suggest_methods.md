@@ -17,11 +17,12 @@ Methods
 - api/link/ui.suggest_getbody.md - gets the ui view of the window body
 - api/link/ui.suggest_getchildviews.md - returns child views of the calling component
 - api/link/ui.suggest_gethead.md - gets the ui view of the window header
-- api/ui.suggest_getidbyvalue.md - returns id of option by its value
 - api/ui.suggest_getitemtext.md - returns rendered text of suggest's item
+- api/ui.suggest_getlist.md - returns inner data control from suggest
 - api/ui.suggest_getmastervalue.md - returns current value of master control
 - api/link/ui.suggest_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.suggest_getparentview.md - returns the parent view of the component
+- api/ui.suggest_getsuggestion.md - returns id of top suggestion from the suggest list
 - api/link/ui.suggest_gettopparentview.md - returns top parent view
 - api/link/ui.suggest_hasevent.md - checks whether the component has the specified event
 - api/link/ui.suggest_hide.md - hides the view
@@ -52,11 +53,12 @@ Methods
 - api/link/ui.suggest_getbody.md
 - api/link/ui.suggest_getchildviews.md
 - api/link/ui.suggest_gethead.md
-- api/ui.suggest_getidbyvalue.md
 - api/ui.suggest_getitemtext.md
+- api/ui.suggest_getlist.md
 - api/ui.suggest_getmastervalue.md
 - api/link/ui.suggest_getnode.md
 - api/link/ui.suggest_getparentview.md
+- api/ui.suggest_getsuggestion.md
 - api/link/ui.suggest_gettopparentview.md
 - api/link/ui.suggest_hasevent.md
 - api/link/ui.suggest_hide.md

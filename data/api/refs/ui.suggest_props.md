@@ -12,6 +12,7 @@ Properties
 - api/link/ui.suggest_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.suggest_disabled_config.md - disables item
 - api/ui.suggest_filter_config.md - custom filtering function
+- api/ui.suggest_fitmaster_config.md - size suggest box to the master control
 - api/link/ui.suggest_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.suggest_head_config.md - sets the view header
 - api/link/ui.suggest_headheight_config.md - defines the header height (43 by default)
@@ -49,6 +50,7 @@ Properties
 - api/link/ui.suggest_css_config.md
 - api/link/ui.suggest_disabled_config.md
 - api/ui.suggest_filter_config.md
+- api/ui.suggest_fitmaster_config.md
 - api/link/ui.suggest_gravity_config.md
 - api/link/ui.suggest_head_config.md
 - api/link/ui.suggest_headheight_config.md

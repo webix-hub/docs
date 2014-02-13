@@ -100,6 +100,7 @@ Other
 {{links
 - api/link/ui.iframe_$getsize_other.md - returns the current size of the component
 - api/link/ui.iframe_$height_other.md - current height of the view
+- api/link/ui.iframe_$scope_other.md - scope for resolving event and method names
 - api/link/ui.iframe_$setsize_other.md - sets the component size
 - api/link/ui.iframe_$skin_other.md - method, which will be called when skin defined
 - api/link/ui.iframe_$view_other.md - reference to top html element of the view

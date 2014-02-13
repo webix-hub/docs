@@ -24,6 +24,7 @@ Methods
 - api/link/ui.property_geteditor.md - returns editor object
 - api/link/ui.property_geteditorvalue.md - returns the value of the active (currently open) editor
 - api/ui.property_getitem.md - gets the data object for related property
+- api/ui.property_getitemnode.md - returns html element of item by item id
 - api/link/ui.property_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.property_getparentview.md - returns the parent view of the component
 - api/link/ui.property_getscrollstate.md - returns the scroll position
@@ -73,6 +74,7 @@ Methods
 - api/link/ui.property_geteditor.md
 - api/link/ui.property_geteditorvalue.md
 - api/ui.property_getitem.md
+- api/ui.property_getitemnode.md
 - api/link/ui.property_getnode.md
 - api/link/ui.property_getparentview.md
 - api/link/ui.property_getscrollstate.md

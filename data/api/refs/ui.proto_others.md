@@ -5,6 +5,7 @@ Others
 {{links
 - api/link/ui.proto_$getsize_other.md - returns the current size of the component
 - api/link/ui.proto_$height_other.md - current height of the view
+- api/link/ui.proto_$scope_other.md - scope for resolving event and method names
 - api/link/ui.proto_$setsize_other.md - sets the component size
 - api/link/ui.proto_$skin_other.md - method, which will be called when skin defined
 - api/link/ui.proto_$view_other.md - reference to top html element of the view
@@ -18,6 +19,7 @@ Others
 @index:
 - api/link/ui.proto_$getsize_other.md
 - api/link/ui.proto_$height_other.md
+- api/link/ui.proto_$scope_other.md
 - api/link/ui.proto_$setsize_other.md
 - api/link/ui.proto_$skin_other.md
 - api/link/ui.proto_$view_other.md

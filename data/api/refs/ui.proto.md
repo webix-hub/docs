@@ -52,6 +52,7 @@ Methods
 - api/link/ui.proto_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.proto_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.proto_getitem.md - gets the object of the data item with the specified id
+- api/link/ui.proto_getitemnode.md - returns html element of item by item id
 - api/link/ui.proto_getlastid.md - returns the id of the last item
 - api/link/ui.proto_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.proto_getnode.md - returns the main HTML container for the calling object
@@ -159,6 +160,7 @@ Other
 {{links
 - api/link/ui.proto_$getsize_other.md - returns the current size of the component
 - api/link/ui.proto_$height_other.md - current height of the view
+- api/link/ui.proto_$scope_other.md - scope for resolving event and method names
 - api/link/ui.proto_$setsize_other.md - sets the component size
 - api/link/ui.proto_$skin_other.md - method, which will be called when skin defined
 - api/link/ui.proto_$view_other.md - reference to top html element of the view

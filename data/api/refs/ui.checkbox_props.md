@@ -7,6 +7,7 @@ Properties
 - api/link/ui.checkbox_animate_config.md - defines or disables view change animation.
 - api/link/ui.checkbox_attributes_config.md - sets an hash of HTML input attributes that will be parsed for the Webix input control
 - api/link/ui.checkbox_borderless_config.md - used to hide the component borders
+- api/ui.checkbox_checkvalue_config.md - result of getValue for checked checkbox
 - api/link/ui.checkbox_click_config.md - click action handler
 - api/link/ui.checkbox_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.checkbox_content_config.md - the id or node, whose content will be moved to the view
@@ -32,6 +33,7 @@ Properties
 - api/link/ui.checkbox_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/link/ui.checkbox_template_config.md - the component template
 - api/link/ui.checkbox_type_config.md - the type of the control
+- api/ui.checkbox_uncheckvalue_config.md - result of getValue for unchecked checkbox
 - api/link/ui.checkbox_value_config.md - sets the initial value for a control
 - api/link/ui.checkbox_width_config.md - sets the width of the component
 }}
@@ -41,6 +43,7 @@ Properties
 - api/link/ui.checkbox_animate_config.md
 - api/link/ui.checkbox_attributes_config.md
 - api/link/ui.checkbox_borderless_config.md
+- api/ui.checkbox_checkvalue_config.md
 - api/link/ui.checkbox_click_config.md
 - api/link/ui.checkbox_container_config.md
 - api/link/ui.checkbox_content_config.md
@@ -66,6 +69,7 @@ Properties
 - api/link/ui.checkbox_tabfocus_config.md
 - api/link/ui.checkbox_template_config.md
 - api/link/ui.checkbox_type_config.md
+- api/ui.checkbox_uncheckvalue_config.md
 - api/link/ui.checkbox_value_config.md
 - api/link/ui.checkbox_width_config.md
 

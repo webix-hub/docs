@@ -11,6 +11,7 @@ Others
 - api/editors_inline-checkbox_other.md - a customizable checkbox editor
 - api/editors_inline-text_other.md - a customizable text editor
 - api/editors_popup_other.md - a popup text editor for long texts
+- api/editors_richselect_other.md - 
 - api/editors_select_other.md - allows for picking up one of the predefined values
 - api/editors_text_other.md - a standard editor for editing text data
 }}
@@ -24,6 +25,7 @@ Others
 - api/editors_inline-checkbox_other.md
 - api/editors_inline-text_other.md
 - api/editors_popup_other.md
+- api/editors_richselect_other.md
 - api/editors_select_other.md
 - api/editors_text_other.md
 
