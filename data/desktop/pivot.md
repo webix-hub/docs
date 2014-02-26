@@ -1,7 +1,7 @@
 Pivot Table
 ===========
 
-**Webix Pivot** is fully clientside Javascript datatable with **extended filtering capabilities** to allow for **well-organized visual reports** made over large and complex datasets at a high speed.
+**Webix Pivot** is fully client-side Javascript datatable with **extended filtering capabilities** to allow for **well-organized visual reports** made over large and complex datasets at a high speed.
 With Pivot you can easily compare, filter and sort data within one table as well as change the analysis pattern on the flow. 
 
 
@@ -16,7 +16,7 @@ With Pivot you can easily compare, filter and sort data within one table as well
 
 Webix Pivot consists of two functional parts:
 
-- Webix **datatable** with with configurable columns, rows and filters;
+- Webix **datatable** with configurable columns, rows and filters;
 <img src="pivot/pivot_dtable.png">
 
 Pay attention to the **[click to configure]** area of the datatable upper left corner. It is highlighted each time you mouse over it while clicking this area will make a **configuration window** show up.
@@ -41,18 +41,18 @@ Sample data
 - Fields dragged or initially set to **Columns** area define the **x-scale** of Pivot, namely the upper headers of the datatable;
 - Fields dragged or initially set to **Rows** define the y-scale of Pivot, namely the treetable to the left;
 - Fields dragged or initially set to **Values** define which data will be loaded as well as set the lowest row of datatable headers;
-- Fileds dragged or initially set to **Filters** define data properties that will be used as filters for the datatable.
+- Fields dragged or initially set to **Filters** define data properties that will be used as filters for the datatable.
 
 **Balance amoung Sections**
 {{note
 You cannot drag one and the same element to different sections; instead, use each element either for setting a **row**, or a **column** or for **filtering** or don't use it at all (it remains in **Fields**). 
-However, **Values** section is more indendent since elements dragged to it are still available in other sections exept **Filters**.
+However, **Values** section is more indendent since elements dragged to it are still available in other sections except **Filters**.
  
 }}
 
 ###Data Operations
 
-Current data operations come together with values they are assigned to in the **Values** section. Right here they can be changed with a couple of clicks.
+Current data operations come together with values they are assigned to in the **Values** section. Right there they can be changed with a couple of clicks.
 
 <img src="pivot/pivot_data_operations.png">
 
