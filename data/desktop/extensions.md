@@ -10,11 +10,20 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
      <tr>
 		<td id="design" class='topics' style="vertical-align:text-top;">
 		    <h4 id='ui' style="margin-bottom:4px;">
-		        <a href="desktop/pivot.md"> Pivot </a>
+		        <a href="desktop/pivot.md"> Pivot Table </a>
 		    </h4>
 		    A pivot table that helps you to summarize large numeric data sets in one spot.
 		</td>
 		<td class='topic_description' style="text-align: center; padding:20px;"> <a href="desktop/pivot.md"><img src="desktop/pivot_extension.png"></a></td>
+	</tr>
+     <tr>
+		<td id="design" class='topics' style="vertical-align:text-top;">
+		    <h4 id='ui' style="margin-bottom:4px;">
+		        <a href="desktop/pivot.md"> Pivot Chart </a>
+		    </h4>
+		    A pivot chart that helps you to research and analyze large quantities of data and the relationships between them.
+		</td>
+		<td class='topic_description' style="text-align: center; padding:20px;"> <a href="desktop/pivotchart.md"><img src="desktop/pivotchart_extension.png"></a></td>
 	</tr>
      <tr>
 		<td id="design" class='topics' style="vertical-align:text-top;">
@@ -70,6 +79,7 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
 
 @index:
 - desktop/pivot.md
+- desktop/pivotchart.md
 - desktop/text_editors.md
 - desktop/scheduler.md
 - desktop/chart_integration.md

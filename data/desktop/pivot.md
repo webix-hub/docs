@@ -78,14 +78,15 @@ become options.
 Initialization
 -----------------
 
-Since Pivot tool comes as an add-on to Webix library you need to include both **Webix and Pivot scripts** and **CSS files** into you document head to make everything work. Make sure you specify relative paths to these files: 
+Since Pivot tool comes as an add-on to Webix library you need to include both **Webix and Pivot scripts** and **CSS files** on your page to make everything work. 
+Make sure you specify relative paths to these files:
 
 ~~~html
 <html>
  <head>
   <!-- js files -->
-  <script src="codebase/webix.js" type="text/javascript" charset="utf-8"></script>
-  <script src="codebase/pivot.js" type="text/javascript" charset="utf-8"></script>
+  <script src="codebase/webix.js" type="text/javascript"></script>
+  <script src="codebase/pivot.js" type="text/javascript"></script>
   <!-- css files -->
   <link rel="stylesheet" href="codebase/webix.css" type="text/css" charset="utf-8">
   <link rel="stylesheet" href="codebase/pivot.css" type="text/css" charset="utf-8">
