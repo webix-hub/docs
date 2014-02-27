@@ -67,7 +67,7 @@ Current data operations come together with values they are assigned to in the **
 - **Min** - picks and shows the min value of this property;
 - **Count** - counts the number of occurrencies of this property and shows it. 
 
-In addition to the above-mentioned prebuilt operation types, you can as well create a custom one.
+In addition to the above-mentioned prebuilt operation types, you can as well <a href="#operation">create a custom one</a>.
 
 
 <h3 id="filtering_options">Filtering Options</h3>
@@ -83,7 +83,7 @@ become options.
 
 ###Logarithmic scale
 When difference between compared values is significant, smaller values can be hardly recognizable on the chart. To prevent it and make all values available for analysis, you can use logarithmic scale instead of default linear one. 
-<br>To enable the logarithmic scale, check a checkbox in the configuration window.
+<br>To enable the logarithmic scale, check the "Logarithmic scale" checkbox in the configuration window.
 
 
 <img src="pivot/pivot_chart_logarithmicScale.png">
@@ -134,18 +134,19 @@ webix.ui({
 ###Properties
 
 - **id** - *string, number* - component ID, should be unique within a page. In Webix, any component is referred to by its ID, **$$("id")**, to perform various operations with it;
-- **container** - *string* - ID of an HTML container Pivot will be put to (optional);
-- **fieldMap** - *object* - can be used to define custom labels for fields (optional). [Described in detail below](#fieldmaps); 
-- **data** or **url** - *string* - defines dataset (data loading is [described in detail below](#load));
-- **structure** - *object* - defines initial display and analysis pattern;
-- **chart** - *object* -  defines the chart configuration options that you want to redefine, i.e. object with a set of redefined properties;
+- **container** - *string* - ID of an HTML container Pivot Chart will be put to (optional);
+- **fieldMap** - *object* - can be used to define custom labels for fields (optional) ([details](#fieldmaps)); 
+- **data** or **url** - *string* - defines dataset ([details](#load));
+- **structure** - *object* - defines initial display and analysis pattern ([details](#struct)); 
+- **chart** - *object* -  defines the chart configuration options that you want to redefine, i.e. object with a set of redefined properties ([details](#chart_redefine));
+- **chartType** - *string* - sets the default chart type;
+- **chartMap** - *object* - can be used to redefine default types of a chart ('bar', 'line', 'radar') or add a new one ('stacked bar' or 'area') ([details](#custom_type));
 - **filterWidth** - *number* - sets the width of filters (both input and label) in the header of the chart;
 - **filterLabelWidth** - *number* - sets the width of the filters' labels;
 - **filterLabelAlign** - *string* - sets the horizontal alignment of the filters' labels;
 - **editButtonWidth** - *number* - sets the width of the "Settings" button;
-- **chartType** - *string* - sets the default value of the 'Chart type' control;
 - **singleLegendItem** - *boolean* - specifies whether the legend should be displayed if it contains only 1 item; 
-- **palette** - *array* - specifies the pop-up pallete of the **Values**' values<br> <code>palette:[ ["#e33fc7","#a244ea",...],["#d3ee36","#eed236",.. ],.. ]</code>  - each inner array specifies a row in the pallete
+- **palette** - *array* - specifies the pop-up color pallete of the **Values**' values<br> <code>palette:[ ["#e33fc7","#a244ea",...],["#d3ee36","#eed236",.. ],.. ]</code>  - each inner array specifies a row in the pallete
 
 #### Structure Object {#struct}
 
@@ -193,7 +194,7 @@ $$("pivot").parse(pivot_dataset);
 
 Either you get data from an external file or by a server-side script,use the following pattern:
 
-- If you load the data during component init, specify the path to this file/script as value of api/link/dataloader_url_config.md
+- If you load the data during component init, specify the path to this file/script as value of api/link/dataloader_url_config.md:
 
 ~~~js
 view:"pivot-chart",
@@ -209,4 +210,229 @@ $$("pivot").load("../load.php");
 $$("pivot").load("../data.json");
 ~~~
 
-In essence, Pivot complies to standard Webix [Data Loading rules](desktop/data_loading.md).
+In essence, Pivot Chart complies to standard Webix [Data Loading rules](desktop/data_loading.md).
+
+
+Configuring Pivot Chart
+----------------
+###Defining chart properties {#chart_redefine}
+To redefine the default properties of the chart, such as a legend or width of bars, you can use the **chart** object. 
+Any property that you specify in the **chart** object will redefine the analogous one in the default configuration object:
+
+~~~js
+view:"pivot-chart",
+chart: {
+	scale: "logarithmic",
+	barWidth: 25,
+	legend: {
+		layout: "x",
+		align: "center",
+		valign: "bottom"
+	}
+}
+~~~
+
+Note, you can use any property available for the Chart component ([a list of properties](api/refs/ui.chart_props.md)).
+
+###Defining Operation on Data
+
+Operations are set within [Pivot Chart  structure object](#struct) in **values** array. **Name** refers to data item property, **color** - to the color of the related graph:
+
+~~~js
+view:"pivot-chart",
+id:"pivot",
+structure:{
+	values:[
+		{name:"gdp",operation:"sum",color:"#eed236"},//gdp values will be summed
+		{name:"oil",operation:"max",color:"#36abee"}//max oil value will be shown
+    ]
+}
+~~~
+
+There are **4 prebuilt operations** over data: 
+
+- **sum**  -  default, shows the sum of values of this property;
+- **max**  - shows the max value of this property found in the dataset;
+- **min**  - shows the min value of this property found in the dataset;
+- **count** - shows the number of occurencies of this property in the dataset.
+
+If needed, you can <span id="operation">add your own operation</span>: 
+
+~~~js
+$$('pivot').operations.abssum = function(data) {
+    //data - array of values which need to be processed
+    var sum = 0;
+    for (var i = 0; i < data.length; i++) {
+       var num = window.parseFloat(data[i], 10);
+       if (!window.isNaN(num))
+          sum += Math.abs(num);
+       }
+    return sum;
+};
+~~~
+
+And use it as: 
+
+~~~js
+values:[ name:"oil", operation:"abssum"]
+~~~
+
+
+
+###Filters
+
+Filters are set within [Pivot Chart structure object](#struct) in **filters** array. **Name** refers to data item property used for filtering:
+
+~~~js
+view:"pivot-chart",
+structure:{
+	values:[
+		{name:"name",type:"select"},
+        {name:"continent", type:"text"}
+    ]
+}
+~~~
+
+There are two types of filters: 
+
+- **select**  - filters by options automatically gathered from a dataset (all unique values of this property). For instance, if you choose *Continents*, then all unique continent names from the dataset become options;
+- **text** - filters by symbols in the text field. It supports base **math comparison operators**, so you can type something like "< 100", "> 2.5" or "= 12"  
+If there is no operator, filter will use text match for filtering.
+
+###Renaming fields {#fieldmaps}
+
+By default Pivot Chart uses data item properties for column names. But if you have dataset structured like below, the default pattern becomes unsuitable:
+
+~~~js
+[{ a1:100, a2:1.34 }, ...]
+~~~
+
+In this case, you can use the **fieldMap** property to set beautiful names for columns instead of *a1* and *a2*:
+
+~~~js
+webix.ui({
+  view:"pivot",
+  fieldMap:{ "a1" : "GDP", "a2" : "Grow ratio" },
+  ...
+});
+~~~
+
+###Adding chart types {#custom_type}
+By default, Pivot Chart gives users a possibility to present data in 3 types of a chart: 'bar', 'line', 'radar'. If you need you can redefine the default types or add a new one. 
+
+{{note
+Note, just types 'stacked bar' and 'area'
+can be additionally added to the Pivot Chart.
+}}
+
+To add a new chart's type to Pivot Chart, use the  **chartMap** property:
+
+{{snippet
+Adding a new chart's type
+}}
+~~~js
+view:"pivot-chart",
+chartMap: {
+	"Area Radar": function(color){ //adds a new chart type 'Area Radar'
+		return {
+			type: "radar",
+			alpha: 0.4,
+			disableItems: true,
+			fill: color,
+			line:{
+				color: color,
+				width:1
+			}
+		}
+	},
+    "Line": function(color){ //redefines the default 'Line' type
+    		type:"line",
+            offset:false,
+            preset:"plot"
+    }
+}
+~~~
+The chart's type is identified by its name ("Area Radar" and "Line" in the code above). The names of the default types you can check in the 'Chart type' control of the <a href="#config_window">Configuration window</a>. 
+
+Localization
+--------------------
+
+By defaut all names and titles in Pivot Chart have English names, but you can change it by setting a custom locale for the page. 
+
+~~~js
+webix.i18n.pivot = {
+	apply: "Anwenden",
+	bar: "Balken",
+	cancel: "Abbrechen",
+	groupBy: "Gruppieren nach",
+	chartType: "Diagramm Typ",
+	count: "zahl",
+	fields: "Felder",
+	filters: "Filtern",
+	logScale: "Logarithmischen Skala",
+	line: "Linien",
+	max: "max",
+	min: "min",
+	operationNotDefined: "Operation ist nicht definiert",
+	radar: "Netzdiagramm",
+	select: "auswahl",
+	settings: "Einstellungen",
+	sum: "summe",
+	text: "text",
+	values: "Werte",
+	valuesNotDefined: "Werte oder Gruppenfeld ist nicht definiert",
+	windowMessage: "[ziehen Felder auf gewunschten Sektor]"
+};
+
+
+//and then init Pivot Chart and see you custom names
+webix.ui({
+  view:"pivot",
+    ...
+});
+~~~
+
+
+API
+----------
+
+### Getting and Setting Configuration Object
+
+~~~js
+//get current configuration
+var config = $$("pivot").getStructure();
+
+//set configuration
+$$("pivot").setConfiguration(config);
+~~~
+
+Format of a **config** object is the same as "structure" parameter of the constructor:
+
+~~~js
+var config = {
+	groupBy: "year",
+	values: [{name:"balance", operation:"sum", color: "#eed236"}],
+	filters:[{name:"name", type:"select"}]
+}
+~~~
+
+
+
+### Data export
+
+You can export result to PDF or Excel:
+
+~~~js
+$$("pivot").toPDF();
+$$("pivot").toExcel();
+~~~
+
+###Getting Chart Object
+
+You can access the Chart object by using the next code:
+
+~~~js
+var chart = $$("pivot").$$("chart");
+~~~
+
+This allows you use any of Chart [events](api/refs/ui.chart_events.md) or [API methods](api/refs/ui.chart_methods.md).
