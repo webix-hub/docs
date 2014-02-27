@@ -19,7 +19,7 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
      <tr>
 		<td id="design" class='topics' style="vertical-align:text-top;">
 		    <h4 id='ui' style="margin-bottom:4px;">
-		        <a href="desktop/pivot.md"> Pivot Chart </a>
+		        <a href="desktop/pivotchart.md"> Pivot Chart </a>
 		    </h4>
 		    A pivot chart that helps you to research and analyze large quantities of data and the relationships between them.
 		</td>
