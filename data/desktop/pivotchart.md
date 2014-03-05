@@ -3,6 +3,11 @@ Pivot Chart
 Webix Pivot Chart is fully client-side Javascript tool for graphical representation of data.  A plenty of configuration options allows users to use the tool for understanding, analyzing and researching 
  large quantities of data and the relationships between them.
 
+## External resources
+
+- You can [download extensions](http://pivot.webix.com/webix_pivot.gpl.zip) from [pivot.webix.com](http://pivot.webix.com)
+- There are online samples at [pivot.webix.com/samples/](http://pivot.webix.com/samples/)
+
 
 
 ##Design and Usage
