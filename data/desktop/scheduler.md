@@ -5,7 +5,7 @@ Both Scheduler and Gannt are nice planning tools from <a href="http://dhtmlx.com
 
 {{note JS files for these components aren't included into Webix lib package and should be taken from [https://github.com/webix-hub/components](https://github.com/webix-hub/components). }}
 
-##DHTMLX Schedular
+##DHTMLX Scheduler
 
 Scheduler is Javascript feature-rich event calendar that can create and display events as well as show a schedule for a day, week and month. Full into about it can be found in 
 the dedicated section of <a href="http://dhtmlx.com/docs/products/dhtmlxScheduler/index.shtml">DHTMLX site</a>.
@@ -42,7 +42,7 @@ webix.ui({
 
 ###Scheduler properties
 
-- **date** (function) - defines the start date of the schedular. In the sample above, it is th 5the of January, 2010; If you pass no parameters into the *new Date()*
+- **date** (function) - defines the start date of the scheduler. In the sample above, it is th 5the of January, 2010; If you pass no parameters into the *new Date()*
 constructor, the component will show current date;
 - **mode** (string) - defines the type of presentation - day, week or month;
 - **init** - specifies a function to be executed on component initializing. The property may include:
