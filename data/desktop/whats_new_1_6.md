@@ -3,14 +3,12 @@ Version 1.6
 
 {{note 
 
-Parameters of onBeforeSync, onAfterSync and onLoadError events of dataprocessor was changed, now all events receive id of related record as first parameter
+### Breaking changes in DataProcessor
 
-onError => onBeforeSaveError
-onSaveError => onAfterSaveError
+Parameters of onBeforeSync, onAfterSync was changed  
+onError event replaced with two new events - onBeforeSaveError and onAfterSaveError
 
 }}
-
-
 
 ### Improved support for mobile devices
 - win8 touch support
