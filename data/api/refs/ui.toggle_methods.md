@@ -16,6 +16,7 @@ Methods
 - api/link/ui.toggle_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.toggle_focus.md - sets focus to the control
 - api/link/ui.toggle_getchildviews.md - returns child views of the calling component
+- api/link/ui.toggle_getformview.md - returns master form for the input
 - api/link/ui.toggle_getinputnode.md - gets the HTML element related to the component
 - api/link/ui.toggle_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.toggle_getparentview.md - returns the parent view of the component
@@ -33,6 +34,7 @@ Methods
 - api/link/ui.toggle_show.md - makes the component visible
 - api/link/ui.toggle_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
 - api/ui.toggle_toggle.md - changes the state of the two-state control
+- api/link/ui.toggle_unbind.md - breaks "bind" link
 - api/link/ui.toggle_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}
 
@@ -50,6 +52,7 @@ Methods
 - api/link/ui.toggle_enable.md
 - api/link/ui.toggle_focus.md
 - api/link/ui.toggle_getchildviews.md
+- api/link/ui.toggle_getformview.md
 - api/link/ui.toggle_getinputnode.md
 - api/link/ui.toggle_getnode.md
 - api/link/ui.toggle_getparentview.md
@@ -67,6 +70,7 @@ Methods
 - api/link/ui.toggle_show.md
 - api/link/ui.toggle_sync.md
 - api/ui.toggle_toggle.md
+- api/link/ui.toggle_unbind.md
 - api/link/ui.toggle_unblockevent.md
 
 

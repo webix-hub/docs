@@ -25,6 +25,7 @@ Methods
 - api/link/ui.grouplist_filter.md - filters the component
 - api/link/ui.grouplist_getchildviews.md - returns child views of the calling component
 - api/link/ui.grouplist_getfirstid.md - returns the ID of the first item
+- api/link/ui.grouplist_getformview.md - returns master form for the input
 - api/link/ui.grouplist_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.grouplist_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.grouplist_getitem.md - gets the object of the data item with the specified id
@@ -75,6 +76,7 @@ of the component
 - api/link/ui.grouplist_showitem.md - scrolls the component to make the specified item visible
 - api/link/ui.grouplist_sort.md - sorts datastore
 - api/link/ui.grouplist_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.grouplist_unbind.md - breaks "bind" link
 - api/link/ui.grouplist_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.grouplist_ungroup.md - ungroups data
 - api/link/ui.grouplist_unselect.md - removes selection from the specified item
@@ -106,6 +108,7 @@ of the component
 - api/link/ui.grouplist_filter.md
 - api/link/ui.grouplist_getchildviews.md
 - api/link/ui.grouplist_getfirstid.md
+- api/link/ui.grouplist_getformview.md
 - api/link/ui.grouplist_getidbyindex.md
 - api/link/ui.grouplist_getindexbyid.md
 - api/link/ui.grouplist_getitem.md
@@ -155,6 +158,7 @@ of the component
 - api/link/ui.grouplist_showitem.md
 - api/link/ui.grouplist_sort.md
 - api/link/ui.grouplist_sync.md
+- api/link/ui.grouplist_unbind.md
 - api/link/ui.grouplist_unblockevent.md
 - api/link/ui.grouplist_ungroup.md
 - api/link/ui.grouplist_unselect.md

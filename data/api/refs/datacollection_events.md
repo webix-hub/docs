@@ -14,6 +14,7 @@ Events
 - api/link/datacollection_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/datacollection_ondatarequest_event.md - fires when data from the server side is requested (part of dynamic loading)
 - api/link/datacollection_ondataupdate_event.md - fires when data item is in update process
+- api/link/datacollection_ondestruct_event.md - occurs when component destroyed
 - api/link/datacollection_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/datacollection_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation
 - api/link/datacollection_onvalidationsuccess_event.md - fires after the newlyloaded/added/edited data has passes validation successfully
@@ -31,6 +32,7 @@ Events
 - api/link/datacollection_onbindrequest_event.md
 - api/link/datacollection_ondatarequest_event.md
 - api/link/datacollection_ondataupdate_event.md
+- api/link/datacollection_ondestruct_event.md
 - api/link/datacollection_onloaderror_event.md
 - api/link/datacollection_onvalidationerror_event.md
 - api/link/datacollection_onvalidationsuccess_event.md

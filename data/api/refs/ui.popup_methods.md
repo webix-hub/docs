@@ -16,6 +16,7 @@ Methods
 - api/link/ui.popup_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.popup_getbody.md - gets the ui view of the window body
 - api/link/ui.popup_getchildviews.md - returns child views of the calling component
+- api/link/ui.popup_getformview.md - returns master form for the input
 - api/link/ui.popup_gethead.md - gets the ui view of the window header
 - api/link/ui.popup_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.popup_getparentview.md - returns the parent view of the component
@@ -29,6 +30,7 @@ Methods
 - api/link/ui.popup_resizechildren.md - resizes all children of the calling component
 - api/link/ui.popup_setposition.md - sets window's position
 - api/link/ui.popup_show.md - makes the component visible
+- api/link/ui.popup_unbind.md - breaks "bind" link
 - api/link/ui.popup_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}
 
@@ -46,6 +48,7 @@ Methods
 - api/link/ui.popup_enable.md
 - api/link/ui.popup_getbody.md
 - api/link/ui.popup_getchildviews.md
+- api/link/ui.popup_getformview.md
 - api/link/ui.popup_gethead.md
 - api/link/ui.popup_getnode.md
 - api/link/ui.popup_getparentview.md
@@ -59,6 +62,7 @@ Methods
 - api/link/ui.popup_resizechildren.md
 - api/link/ui.popup_setposition.md
 - api/link/ui.popup_show.md
+- api/link/ui.popup_unbind.md
 - api/link/ui.popup_unblockevent.md
 
 

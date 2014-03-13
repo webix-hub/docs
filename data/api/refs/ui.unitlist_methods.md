@@ -25,6 +25,7 @@ Methods
 - api/link/ui.unitlist_filter.md - filters the component
 - api/link/ui.unitlist_getchildviews.md - returns child views of the calling component
 - api/link/ui.unitlist_getfirstid.md - returns the ID of the first item
+- api/link/ui.unitlist_getformview.md - returns master form for the input
 - api/link/ui.unitlist_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.unitlist_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.unitlist_getitem.md - gets the object of the data item with the specified id
@@ -75,6 +76,7 @@ of the component
 - api/link/ui.unitlist_showitem.md - scrolls the component to make the specified item visible
 - api/link/ui.unitlist_sort.md - sorts datastore
 - api/link/ui.unitlist_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.unitlist_unbind.md - breaks "bind" link
 - api/link/ui.unitlist_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.unitlist_unselect.md - removes selection from the specified item
 - api/link/ui.unitlist_unselectall.md - removes selection from all items
@@ -105,6 +107,7 @@ of the component
 - api/link/ui.unitlist_filter.md
 - api/link/ui.unitlist_getchildviews.md
 - api/link/ui.unitlist_getfirstid.md
+- api/link/ui.unitlist_getformview.md
 - api/link/ui.unitlist_getidbyindex.md
 - api/link/ui.unitlist_getindexbyid.md
 - api/link/ui.unitlist_getitem.md
@@ -154,6 +157,7 @@ of the component
 - api/link/ui.unitlist_showitem.md
 - api/link/ui.unitlist_sort.md
 - api/link/ui.unitlist_sync.md
+- api/link/ui.unitlist_unbind.md
 - api/link/ui.unitlist_unblockevent.md
 - api/link/ui.unitlist_unselect.md
 - api/link/ui.unitlist_unselectall.md

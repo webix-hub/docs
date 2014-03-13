@@ -16,6 +16,7 @@ Methods
 - api/link/ui.colorpicker_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.colorpicker_focus.md - sets focus to the control
 - api/link/ui.colorpicker_getchildviews.md - returns child views of the calling component
+- api/link/ui.colorpicker_getformview.md - returns master form for the input
 - api/link/ui.colorpicker_getinputnode.md - gets the HTML element related to the component
 - api/link/ui.colorpicker_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.colorpicker_getparentview.md - returns the parent view of the component
@@ -33,7 +34,9 @@ Methods
 - api/link/ui.colorpicker_setvalue.md - sets a new value for the component
 - api/link/ui.colorpicker_show.md - makes the component visible
 - api/link/ui.colorpicker_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.colorpicker_unbind.md - breaks "bind" link
 - api/link/ui.colorpicker_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
+- api/link/ui.colorpicker_validate.md - validates value of input
 }}
 
 @index:
@@ -50,6 +53,7 @@ Methods
 - api/link/ui.colorpicker_enable.md
 - api/link/ui.colorpicker_focus.md
 - api/link/ui.colorpicker_getchildviews.md
+- api/link/ui.colorpicker_getformview.md
 - api/link/ui.colorpicker_getinputnode.md
 - api/link/ui.colorpicker_getnode.md
 - api/link/ui.colorpicker_getparentview.md
@@ -67,6 +71,8 @@ Methods
 - api/link/ui.colorpicker_setvalue.md
 - api/link/ui.colorpicker_show.md
 - api/link/ui.colorpicker_sync.md
+- api/link/ui.colorpicker_unbind.md
 - api/link/ui.colorpicker_unblockevent.md
+- api/link/ui.colorpicker_validate.md
 
 

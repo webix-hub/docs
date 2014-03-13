@@ -16,6 +16,7 @@ Methods
 - api/link/ui.suggest_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.suggest_getbody.md - gets the ui view of the window body
 - api/link/ui.suggest_getchildviews.md - returns child views of the calling component
+- api/link/ui.suggest_getformview.md - returns master form for the input
 - api/link/ui.suggest_gethead.md - gets the ui view of the window header
 - api/ui.suggest_getitemtext.md - returns rendered text of suggest's item
 - api/ui.suggest_getlist.md - returns inner data control from suggest
@@ -35,6 +36,7 @@ Methods
 - api/ui.suggest_setmastervalue.md - set value in master control
 - api/link/ui.suggest_setposition.md - sets window's position
 - api/link/ui.suggest_show.md - makes the component visible
+- api/link/ui.suggest_unbind.md - breaks "bind" link
 - api/link/ui.suggest_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}
 
@@ -52,6 +54,7 @@ Methods
 - api/link/ui.suggest_enable.md
 - api/link/ui.suggest_getbody.md
 - api/link/ui.suggest_getchildviews.md
+- api/link/ui.suggest_getformview.md
 - api/link/ui.suggest_gethead.md
 - api/ui.suggest_getitemtext.md
 - api/ui.suggest_getlist.md
@@ -71,6 +74,7 @@ Methods
 - api/ui.suggest_setmastervalue.md
 - api/link/ui.suggest_setposition.md
 - api/link/ui.suggest_show.md
+- api/link/ui.suggest_unbind.md
 - api/link/ui.suggest_unblockevent.md
 
 

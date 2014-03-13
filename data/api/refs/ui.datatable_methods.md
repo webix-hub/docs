@@ -50,6 +50,7 @@ Methods
 - api/link/ui.datatable_geteditorvalue.md - returns the value of the active (currently open) editor
 - api/ui.datatable_getfilter.md - returns the filter object that the component uses to filter the values of the specified column
 - api/link/ui.datatable_getfirstid.md - returns the ID of the first item
+- api/link/ui.datatable_getformview.md - returns master form for the input
 - api/ui.datatable_getheadercontent.md - returns set of helpers for header content manipulation
 - api/link/ui.datatable_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.datatable_getindexbyid.md - returns the index of the item with the specified id
@@ -119,6 +120,7 @@ of the component
 - api/ui.datatable_showoverlay.md - shows the overlay message over the body of DataTable
 - api/link/ui.datatable_sort.md - sorts datastore
 - api/link/ui.datatable_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.datatable_unbind.md - breaks "bind" link
 - api/link/ui.datatable_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.datatable_ungroup.md - ungroups data
 - api/ui.datatable_unselect.md - cancels selection of the specified element
@@ -175,6 +177,7 @@ of the component
 - api/link/ui.datatable_geteditorvalue.md
 - api/ui.datatable_getfilter.md
 - api/link/ui.datatable_getfirstid.md
+- api/link/ui.datatable_getformview.md
 - api/ui.datatable_getheadercontent.md
 - api/link/ui.datatable_getidbyindex.md
 - api/link/ui.datatable_getindexbyid.md
@@ -243,6 +246,7 @@ of the component
 - api/ui.datatable_showoverlay.md
 - api/link/ui.datatable_sort.md
 - api/link/ui.datatable_sync.md
+- api/link/ui.datatable_unbind.md
 - api/link/ui.datatable_unblockevent.md
 - api/link/ui.datatable_ungroup.md
 - api/ui.datatable_unselect.md

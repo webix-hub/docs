@@ -37,6 +37,7 @@ Methods
 - api/link/ui.template_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.template_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.template_getchildviews.md - returns child views of the calling component
+- api/link/ui.template_getformview.md - returns master form for the input
 - api/link/ui.template_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.template_getparentview.md - returns the parent view of the component
 - api/link/ui.template_getscrollstate.md - returns the scroll position
@@ -57,6 +58,7 @@ Methods
 - api/ui.template_setvalues.md - sets data hash
 - api/link/ui.template_show.md - makes the component visible
 - api/link/ui.template_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.template_unbind.md - breaks "bind" link
 - api/link/ui.template_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}
 

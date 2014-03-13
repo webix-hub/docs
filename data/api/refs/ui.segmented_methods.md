@@ -17,6 +17,7 @@ Methods
 - api/link/ui.segmented_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.segmented_focus.md - sets focus to the control
 - api/link/ui.segmented_getchildviews.md - returns child views of the calling component
+- api/link/ui.segmented_getformview.md - returns master form for the input
 - api/link/ui.segmented_getinputnode.md - gets the HTML element related to the component
 - api/link/ui.segmented_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.segmented_getparentview.md - returns the parent view of the component
@@ -35,7 +36,9 @@ Methods
 - api/link/ui.segmented_setvalue.md - sets a new value for the component
 - api/link/ui.segmented_show.md - makes the component visible
 - api/link/ui.segmented_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.segmented_unbind.md - breaks "bind" link
 - api/link/ui.segmented_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
+- api/link/ui.segmented_validate.md - validates value of input
 }}
 
 @index:
@@ -53,6 +56,7 @@ Methods
 - api/link/ui.segmented_enable.md
 - api/link/ui.segmented_focus.md
 - api/link/ui.segmented_getchildviews.md
+- api/link/ui.segmented_getformview.md
 - api/link/ui.segmented_getinputnode.md
 - api/link/ui.segmented_getnode.md
 - api/link/ui.segmented_getparentview.md
@@ -71,6 +75,8 @@ Methods
 - api/link/ui.segmented_setvalue.md
 - api/link/ui.segmented_show.md
 - api/link/ui.segmented_sync.md
+- api/link/ui.segmented_unbind.md
 - api/link/ui.segmented_unblockevent.md
+- api/link/ui.segmented_validate.md
 
 

@@ -20,12 +20,14 @@ Properties
 - api/link/ui.uploader_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.uploader_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.uploader_label_config.md - the text label of the control
+- api/link/ui.uploader_labelposition_config.md - positions label above the control
 - api/ui.uploader_link_config.md - sets the component to display values of the files chosen for upload;
 - api/link/ui.uploader_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.uploader_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.uploader_minheight_config.md - sets the minimal height for the view
 - api/link/ui.uploader_minwidth_config.md - sets the minimal width for the view
 - api/ui.uploader_multiple_config.md - enables uploading of several files at a time. *True* by default.
+- api/link/ui.uploader_name_config.md - name of the control
 - api/link/ui.uploader_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.uploader_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.uploader_tabfocus_config.md - defines whether the control will be included in the tab navigation order
@@ -53,12 +55,14 @@ Properties
 - api/link/ui.uploader_inputheight_config.md
 - api/link/ui.uploader_inputwidth_config.md
 - api/link/ui.uploader_label_config.md
+- api/link/ui.uploader_labelposition_config.md
 - api/ui.uploader_link_config.md
 - api/link/ui.uploader_maxheight_config.md
 - api/link/ui.uploader_maxwidth_config.md
 - api/link/ui.uploader_minheight_config.md
 - api/link/ui.uploader_minwidth_config.md
 - api/ui.uploader_multiple_config.md
+- api/link/ui.uploader_name_config.md
 - api/link/ui.uploader_on_config.md
 - api/link/ui.uploader_popup_config.md
 - api/link/ui.uploader_tabfocus_config.md

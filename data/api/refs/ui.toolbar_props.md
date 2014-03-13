@@ -24,7 +24,6 @@ Properties
 - api/link/ui.toolbar_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.toolbar_minheight_config.md - sets the minimal height for the view
 - api/link/ui.toolbar_minwidth_config.md - sets the minimal width for the view
-- api/ui.toolbar_name_config.md - name of the control
 - api/link/ui.toolbar_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.toolbar_padding_config.md - defines the space between the element borders and content (applies the specified value to all sides).
 - api/link/ui.toolbar_paddingx_config.md - sets the right and left padding (applies the specified value to both sides)
@@ -61,7 +60,6 @@ Properties
 - api/link/ui.toolbar_maxwidth_config.md
 - api/link/ui.toolbar_minheight_config.md
 - api/link/ui.toolbar_minwidth_config.md
-- api/ui.toolbar_name_config.md
 - api/link/ui.toolbar_on_config.md
 - api/link/ui.toolbar_padding_config.md
 - api/link/ui.toolbar_paddingx_config.md

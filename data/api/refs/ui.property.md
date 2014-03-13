@@ -47,6 +47,7 @@ Methods
 - api/link/ui.property_geteditstate.md - returns info about active editor object
 - api/link/ui.property_geteditor.md - returns editor object
 - api/link/ui.property_geteditorvalue.md - returns the value of the active (currently open) editor
+- api/link/ui.property_getformview.md - returns master form for the input
 - api/ui.property_getitem.md - gets the data object for related property
 - api/ui.property_getitemnode.md - returns html element of item by item id
 - api/link/ui.property_getnode.md - returns the main HTML container for the calling object
@@ -71,6 +72,7 @@ Methods
 - api/link/ui.property_show.md - makes the component visible
 - api/ui.property_showitem.md - 'scrolls' the table to make the specified row visible
 - api/link/ui.property_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.property_unbind.md - breaks "bind" link
 - api/link/ui.property_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/ui.property_updateitem.md - alias for refresh, repaints property view
 - api/link/ui.property_validateeditor.md - validates data in currently active editor
@@ -95,6 +97,7 @@ Events
 - api/link/ui.property_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.property_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.property_onitemdblclick_event.md - fires when a component item was double-clicked
+- api/link/ui.property_onliveedit_event.md - occurs when data was changed in the editor
 - api/link/ui.property_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.property_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.property_onmousemoving_event.md - fires when the mouse was moved over the component

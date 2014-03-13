@@ -28,7 +28,7 @@ $$('tree1').getPrevSiblingId("part2"); // returns 'part1'
 @related:
 	datatree/getting_value.md
 @relatedapi:
-	api/link/treedataloader_getprevsiblingid.md
+	api/treestore_getnextsiblingid.md
 @descr:
 
 

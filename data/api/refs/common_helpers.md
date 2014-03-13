@@ -35,7 +35,7 @@ Methods
 - api/link/_mapevent.md - 
 - api/_message.md - shows a message box
 - api/_modalbox.md - creates a modal box
-- api/_once.md - 
+- api/_once.md - allows to call code only once
 - api/_proto.md - merges the contents of several objects together into the first object
 - api/_protoui.md - merges the contents of several objects together into the first object and creates from it a new view
 - api/_proxy.md - creates proxy object

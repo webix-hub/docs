@@ -36,6 +36,7 @@ Events
 - api/link/ui.datatable_onbeforesort_event.md - fires before sorting dataset
 - api/ui.datatable_onbeforeunselect_event.md - fired before a cell is unselected
 - api/link/ui.datatable_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/ui.datatable_oncolumnresize_event.md - fires when width of column was changed
 - api/link/ui.datatable_ondatarequest_event.md - fires when data from the server side is requested (part of dynamic loading)
 - api/link/ui.datatable_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.datatable_ondestruct_event.md - occurs when component destroyed
@@ -43,11 +44,13 @@ Events
 - api/ui.datatable_onheaderclick_event.md - occurs after clicking on header
 - api/link/ui.datatable_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.datatable_onitemdblclick_event.md - fires when a component item was double-clicked
+- api/link/ui.datatable_onliveedit_event.md - occurs when data was changed in the editor
 - api/link/ui.datatable_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.datatable_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.datatable_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.datatable_onmouseout_event.md - fires when the mouse was moved out from the specified item
 - api/ui.datatable_onresize_event.md - fires when the width or height of DataTable was changed
+- api/ui.datatable_onrowresize_event.md - fires when height of row was changed
 - api/ui.datatable_onscrollx_event.md - fires when the user scrolls the table left or right
 - api/ui.datatable_onscrolly_event.md - fires when the user scrolls the table up or down
 - api/ui.datatable_onselectchange_event.md - fires when selection is changed in DataTable
@@ -92,6 +95,7 @@ Events
 - api/link/ui.datatable_onbeforesort_event.md
 - api/ui.datatable_onbeforeunselect_event.md
 - api/link/ui.datatable_onbindrequest_event.md
+- api/ui.datatable_oncolumnresize_event.md
 - api/link/ui.datatable_ondatarequest_event.md
 - api/link/ui.datatable_ondataupdate_event.md
 - api/link/ui.datatable_ondestruct_event.md
@@ -99,11 +103,13 @@ Events
 - api/ui.datatable_onheaderclick_event.md
 - api/link/ui.datatable_onitemclick_event.md
 - api/link/ui.datatable_onitemdblclick_event.md
+- api/link/ui.datatable_onliveedit_event.md
 - api/link/ui.datatable_onloaderror_event.md
 - api/link/ui.datatable_onmousemove_event.md
 - api/link/ui.datatable_onmousemoving_event.md
 - api/link/ui.datatable_onmouseout_event.md
 - api/ui.datatable_onresize_event.md
+- api/ui.datatable_onrowresize_event.md
 - api/ui.datatable_onscrollx_event.md
 - api/ui.datatable_onscrolly_event.md
 - api/ui.datatable_onselectchange_event.md

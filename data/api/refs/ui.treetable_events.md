@@ -40,6 +40,7 @@ Events
 - api/link/ui.treetable_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.treetable_onbeforeunselect_event.md - fired before a cell is unselected
 - api/link/ui.treetable_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.treetable_oncolumnresize_event.md - fires when width of column was changed
 - api/link/ui.treetable_ondatarequest_event.md - fires when data from the server side is requested (part of dynamic loading)
 - api/link/ui.treetable_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.treetable_ondestruct_event.md - occurs when component destroyed
@@ -48,11 +49,13 @@ Events
 - api/link/ui.treetable_onitemcheck_event.md - fires when you check an item in tree and treetable
 - api/link/ui.treetable_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.treetable_onitemdblclick_event.md - fires when a component item was double-clicked
+- api/link/ui.treetable_onliveedit_event.md - occurs when data was changed in the editor
 - api/link/ui.treetable_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.treetable_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.treetable_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.treetable_onmouseout_event.md - fires when the mouse was moved out from the specified item
 - api/link/ui.treetable_onresize_event.md - fires when the width or height of DataTable was changed
+- api/link/ui.treetable_onrowresize_event.md - fires when height of row was changed
 - api/link/ui.treetable_onscrollx_event.md - fires when the user scrolls the table left or right
 - api/link/ui.treetable_onscrolly_event.md - fires when the user scrolls the table up or down
 - api/link/ui.treetable_onselectchange_event.md - fires when selection is changed in DataTable
@@ -101,6 +104,7 @@ Events
 - api/link/ui.treetable_onbeforesort_event.md
 - api/link/ui.treetable_onbeforeunselect_event.md
 - api/link/ui.treetable_onbindrequest_event.md
+- api/link/ui.treetable_oncolumnresize_event.md
 - api/link/ui.treetable_ondatarequest_event.md
 - api/link/ui.treetable_ondataupdate_event.md
 - api/link/ui.treetable_ondestruct_event.md
@@ -109,11 +113,13 @@ Events
 - api/link/ui.treetable_onitemcheck_event.md
 - api/link/ui.treetable_onitemclick_event.md
 - api/link/ui.treetable_onitemdblclick_event.md
+- api/link/ui.treetable_onliveedit_event.md
 - api/link/ui.treetable_onloaderror_event.md
 - api/link/ui.treetable_onmousemove_event.md
 - api/link/ui.treetable_onmousemoving_event.md
 - api/link/ui.treetable_onmouseout_event.md
 - api/link/ui.treetable_onresize_event.md
+- api/link/ui.treetable_onrowresize_event.md
 - api/link/ui.treetable_onscrollx_event.md
 - api/link/ui.treetable_onscrolly_event.md
 - api/link/ui.treetable_onselectchange_event.md

@@ -7,6 +7,7 @@ What's new & Roadmap
 
 {{index
 - desktop/whats_new_1_5.md
+- desktop/whats_new_1_6.md
 - desktop/whats_new_1_4.md
 - desktop/whats_new_1_3.md
 - desktop/whats_new_1_2.md

@@ -19,6 +19,7 @@ Properties
 - api/link/ui.layout_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.layout_minheight_config.md - sets the minimal height for the view
 - api/link/ui.layout_minwidth_config.md - sets the minimal width for the view
+- api/link/ui.layout_on_config.md - allows attaching custom handlers to inner events of the component
 - api/ui.layout_padding_config.md - defines the space between the element borders and content (applies the specified value to all sides).
 - api/ui.layout_paddingx_config.md - sets the right and left padding (applies the specified value to both sides)
 - api/ui.layout_paddingy_config.md - sets the top and bottom padding (applies the specified value to both sides)
@@ -45,6 +46,7 @@ Properties
 - api/link/ui.layout_maxwidth_config.md
 - api/link/ui.layout_minheight_config.md
 - api/link/ui.layout_minwidth_config.md
+- api/link/ui.layout_on_config.md
 - api/ui.layout_padding_config.md
 - api/ui.layout_paddingx_config.md
 - api/ui.layout_paddingy_config.md

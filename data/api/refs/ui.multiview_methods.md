@@ -17,6 +17,7 @@ Methods
 - api/link/ui.multiview_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/ui.multiview_getactiveid.md - returns the id of the currently visible multiview cell
 - api/link/ui.multiview_getchildviews.md - returns child views of the calling component
+- api/link/ui.multiview_getformview.md - returns master form for the input
 - api/link/ui.multiview_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.multiview_getparentview.md - returns the parent view of the component
 - api/link/ui.multiview_gettopparentview.md - returns top parent view
@@ -34,6 +35,7 @@ Methods
 - api/ui.multiview_setvalue.md - defines which view need to be shown in the multiview
 - api/link/ui.multiview_show.md - makes the component visible
 - api/link/ui.multiview_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
+- api/link/ui.multiview_unbind.md - breaks "bind" link
 - api/link/ui.multiview_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}
 
@@ -52,6 +54,7 @@ Methods
 - api/link/ui.multiview_enable.md
 - api/ui.multiview_getactiveid.md
 - api/link/ui.multiview_getchildviews.md
+- api/link/ui.multiview_getformview.md
 - api/link/ui.multiview_getnode.md
 - api/link/ui.multiview_getparentview.md
 - api/link/ui.multiview_gettopparentview.md
@@ -69,6 +72,7 @@ Methods
 - api/ui.multiview_setvalue.md
 - api/link/ui.multiview_show.md
 - api/link/ui.multiview_showbatch.md
+- api/link/ui.multiview_unbind.md
 - api/link/ui.multiview_unblockevent.md
 
 

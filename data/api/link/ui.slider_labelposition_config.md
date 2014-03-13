@@ -1,1 +1,1 @@
-@link: api/ui.text_labelposition_config.md
+@link: api/ui.button_labelposition_config.md

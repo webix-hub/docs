@@ -3,7 +3,7 @@ Dataview Suggest
 
 Dataview suggest extension is used to add extra functionality to Webix select controls, namely [richselect](desktop/controls.md#richselect) and [combo](desktop/controls.md#combo). It is based on Webix [suggest list](desktop/suggest.md).
 
-The extension **redefines dropdown menu** of these controls. By default, they feature Webix [list](desktop/list.md) as a dropdown menu while data suggest extension allows for using Webix [dataview](deskrop/dataview.md) instead, which is great for inserting pictures. 
+The extension **redefines dropdown menu** of these controls. By default, they feature Webix [list](desktop/list.md) as a dropdown menu while data suggest extension allows for using Webix [dataview](desktop/dataview.md) instead, which is great for inserting pictures. 
 
 <img src="desktop/datasuggest.png"/>
 

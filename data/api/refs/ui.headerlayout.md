@@ -21,7 +21,7 @@ The component consists of cells arranged vertically or horizontally. The header 
 ~~~
 
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/ui.accordion.md">ui.accordion</a>, <a href="api/refs/ui.layout.md">ui.layout</a>, <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
+<a href="api/refs/ui.accordion.md">ui.accordion</a>, <a href="api/refs/ui.layout.md">ui.layout</a>, <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
 Methods
 -------
@@ -39,6 +39,7 @@ Methods
 - api/link/ui.headerlayout_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.headerlayout_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.headerlayout_getchildviews.md - returns child views of the calling component
+- api/link/ui.headerlayout_getformview.md - returns master form for the input
 - api/link/ui.headerlayout_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.headerlayout_getparentview.md - returns the parent view of the component
 - api/link/ui.headerlayout_gettopparentview.md - returns top parent view
@@ -54,6 +55,7 @@ Methods
 - api/link/ui.headerlayout_resizechildren.md - resizes all children of the calling component
 - api/link/ui.headerlayout_show.md - makes the component visible
 - api/link/ui.headerlayout_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
+- api/link/ui.headerlayout_unbind.md - breaks "bind" link
 - api/link/ui.headerlayout_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}
 

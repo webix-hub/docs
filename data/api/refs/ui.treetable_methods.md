@@ -56,6 +56,7 @@ Methods
 - api/link/ui.treetable_getfilter.md - returns the filter object that the component uses to filter the values of the specified column
 - api/link/ui.treetable_getfirstchildid.md - gets the ID of the first child of the specified branch
 - api/link/ui.treetable_getfirstid.md - returns the ID of the first item
+- api/link/ui.treetable_getformview.md - returns master form for the input
 - api/link/ui.treetable_getheadercontent.md - returns set of helpers for header content manipulation
 - api/link/ui.treetable_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.treetable_getindexbyid.md - returns the index of the item with the specified id
@@ -132,6 +133,7 @@ of the component
 - api/link/ui.treetable_showoverlay.md - shows the overlay message over the body of DataTable
 - api/link/ui.treetable_sort.md - sorts datastore
 - api/link/ui.treetable_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.treetable_unbind.md - breaks "bind" link
 - api/link/ui.treetable_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.treetable_uncheckall.md - uncheck all items in the tree
 - api/link/ui.treetable_uncheckitem.md - unchecks the checkbox	related to the specified item
@@ -195,6 +197,7 @@ of the component
 - api/link/ui.treetable_getfilter.md
 - api/link/ui.treetable_getfirstchildid.md
 - api/link/ui.treetable_getfirstid.md
+- api/link/ui.treetable_getformview.md
 - api/link/ui.treetable_getheadercontent.md
 - api/link/ui.treetable_getidbyindex.md
 - api/link/ui.treetable_getindexbyid.md
@@ -270,6 +273,7 @@ of the component
 - api/link/ui.treetable_showoverlay.md
 - api/link/ui.treetable_sort.md
 - api/link/ui.treetable_sync.md
+- api/link/ui.treetable_unbind.md
 - api/link/ui.treetable_unblockevent.md
 - api/link/ui.treetable_uncheckall.md
 - api/link/ui.treetable_uncheckitem.md

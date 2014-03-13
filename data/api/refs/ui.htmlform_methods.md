@@ -17,6 +17,9 @@ Methods
 - api/link/ui.htmlform_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.htmlform_focus.md - sets focus into the necessary component
 - api/link/ui.htmlform_getchildviews.md - returns child views of the calling component
+- api/link/ui.htmlform_getcleanvalues.md - returns hash of original form values
+- api/link/ui.htmlform_getdirtyvalues.md - returns hash of changed values
+- api/link/ui.htmlform_getformview.md - returns master form for the input
 - api/link/ui.htmlform_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.htmlform_getparentview.md - returns the parent view of the component
 - api/link/ui.htmlform_getscrollstate.md - returns the scroll position
@@ -40,6 +43,7 @@ Methods
 - api/link/ui.htmlform_setvalues.md - sets values into all the form inputs
 - api/link/ui.htmlform_show.md - makes the component visible
 - api/link/ui.htmlform_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.htmlform_unbind.md - breaks "bind" link
 - api/link/ui.htmlform_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.htmlform_validate.md - checks data in the component during adding new item or editing existing ones
 }}
@@ -59,6 +63,9 @@ Methods
 - api/link/ui.htmlform_enable.md
 - api/link/ui.htmlform_focus.md
 - api/link/ui.htmlform_getchildviews.md
+- api/link/ui.htmlform_getcleanvalues.md
+- api/link/ui.htmlform_getdirtyvalues.md
+- api/link/ui.htmlform_getformview.md
 - api/link/ui.htmlform_getnode.md
 - api/link/ui.htmlform_getparentview.md
 - api/link/ui.htmlform_getscrollstate.md
@@ -82,6 +89,7 @@ Methods
 - api/link/ui.htmlform_setvalues.md
 - api/link/ui.htmlform_show.md
 - api/link/ui.htmlform_sync.md
+- api/link/ui.htmlform_unbind.md
 - api/link/ui.htmlform_unblockevent.md
 - api/link/ui.htmlform_validate.md
 

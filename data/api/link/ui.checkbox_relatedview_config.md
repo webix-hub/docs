@@ -1,0 +1,1 @@
+@link: api/ui.text_relatedview_config.md

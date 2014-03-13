@@ -40,6 +40,7 @@ Methods
 - api/link/ui.button_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/ui.button_focus.md - sets focus to the control
 - api/link/ui.button_getchildviews.md - returns child views of the calling component
+- api/link/ui.button_getformview.md - returns master form for the input
 - api/ui.button_getinputnode.md - gets the HTML element related to the component
 - api/link/ui.button_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.button_getparentview.md - returns the parent view of the component
@@ -56,6 +57,7 @@ Methods
 - api/ui.button_setvalue.md - sets a new value for the component
 - api/link/ui.button_show.md - makes the component visible
 - api/link/ui.button_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.button_unbind.md - breaks "bind" link
 - api/link/ui.button_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}
 
@@ -92,10 +94,12 @@ Properties
 - api/ui.button_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/ui.button_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/ui.button_label_config.md - the text label of the control
+- api/ui.button_labelposition_config.md - positions label above the control
 - api/link/ui.button_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.button_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.button_minheight_config.md - sets the minimal height for the view
 - api/link/ui.button_minwidth_config.md - sets the minimal width for the view
+- api/ui.button_name_config.md - name of the control
 - api/link/ui.button_on_config.md - allows attaching custom handlers to inner events of the component
 - api/ui.button_popup_config.md - allows to attach pop-up menu to the button
 - api/ui.button_tabfocus_config.md - defines whether the control will be included in the tab navigation order

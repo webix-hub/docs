@@ -18,6 +18,7 @@ Methods
 - api/datastore_clearall.md - removes all items from the component
 - api/datastore_clearmark.md - removes mark from all items in store
 - api/datastore_count.md - returns the count of items in the table
+- api/datastore_destructor.md - destroy datastore
 - api/link/datastore_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/datastore_each.md - iterates through the collection of data items
 - api/datastore_exists.md - checks whether an item with the specified id exists
@@ -34,6 +35,7 @@ Methods
 - api/datastore_getrange.md - gets ids of items in the specified range
 - api/link/datastore_hasevent.md - checks whether the component has the specified event
 - api/datastore_id.md - gets the id of a data item
+- api/datastore_importdata.md - import data from different datastore
 - api/link/datastore_mapevent.md - routes events from one object to another
 - api/datastore_move.md - moves the specified item to the new position
 - api/datastore_provideapi.md - assigns methods (and events) of DataStore to an object
@@ -47,6 +49,7 @@ Methods
 - api/datastore_sort.md - sorts datastore
 - api/datastore_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
 - api/link/datastore_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
+- api/datastore_unsync.md - breaks "sync" link
 - api/datastore_updateitem.md - sets properties of the data item
 }}
 

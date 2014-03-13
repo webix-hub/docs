@@ -42,6 +42,7 @@ Methods
 - api/link/ui.context_getbody.md - gets the ui view of the window body
 - api/link/ui.context_getchildviews.md - returns child views of the calling component
 - api/link/ui.context_getcontext.md - gets the master area for contextmenu
+- api/link/ui.context_getformview.md - returns master form for the input
 - api/link/ui.context_gethead.md - gets the ui view of the window header
 - api/link/ui.context_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.context_getparentview.md - returns the parent view of the component
@@ -55,6 +56,7 @@ Methods
 - api/link/ui.context_resizechildren.md - resizes all children of the calling component
 - api/link/ui.context_setposition.md - sets window's position
 - api/link/ui.context_show.md - makes the component visible
+- api/link/ui.context_unbind.md - breaks "bind" link
 - api/link/ui.context_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}
 

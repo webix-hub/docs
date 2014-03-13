@@ -17,6 +17,7 @@ Methods
 - api/link/datarecord_parse.md - loads data to the component from an inline data source
 - api/datarecord_refresh.md - repaints the whole view or a certain item
 - api/datarecord_setvalues.md - sets values for all inputs in the component
+- api/link/datarecord_unbind.md - breaks "bind" link
 - api/link/datarecord_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}
 
@@ -35,6 +36,7 @@ Methods
 - api/link/datarecord_parse.md
 - api/datarecord_refresh.md
 - api/datarecord_setvalues.md
+- api/link/datarecord_unbind.md
 - api/link/datarecord_unblockevent.md
 
 

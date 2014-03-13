@@ -23,6 +23,7 @@ Methods
 - api/link/ui.colorboard_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.colorboard_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.colorboard_getchildviews.md - returns child views of the calling component
+- api/link/ui.colorboard_getformview.md - returns master form for the input
 - api/link/ui.colorboard_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.colorboard_getparentview.md - returns the parent view of the component
 - api/link/ui.colorboard_gettopparentview.md - returns top parent view
@@ -37,6 +38,7 @@ Methods
 - api/link/ui.colorboard_resize.md - adjusts the view to a new size
 - api/ui.colorboard_setvalue.md - sets a new value for the component
 - api/link/ui.colorboard_show.md - makes the component visible
+- api/link/ui.colorboard_unbind.md - breaks "bind" link
 - api/link/ui.colorboard_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}
 

@@ -12,6 +12,7 @@ Methods
 - api/link/datacollection_clearvalidation.md - removes all validation marks from the component
 - api/link/datacollection_count.md - returns the count of items in the table
 - api/link/datacollection_define.md - redefines a single configuration property (or a hash of properties)
+- api/link/datacollection_destructor.md - destructs the calling object
 - api/link/datacollection_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/datacollection_exists.md - checks whether an item with the specified id exists
 - api/link/datacollection_filter.md - filters the component
@@ -34,6 +35,7 @@ of the component
 - api/link/datacollection_serialize.md - serializes data to a json object
 - api/link/datacollection_sort.md - sorts datastore
 - api/link/datacollection_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/datacollection_unbind.md - breaks "bind" link
 - api/link/datacollection_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/datacollection_updateitem.md - sets properties of the data item
 - api/link/datacollection_validate.md - validates one record or all dataset against validation rules
@@ -49,6 +51,7 @@ of the component
 - api/link/datacollection_clearvalidation.md
 - api/link/datacollection_count.md
 - api/link/datacollection_define.md
+- api/link/datacollection_destructor.md
 - api/link/datacollection_detachevent.md
 - api/link/datacollection_exists.md
 - api/link/datacollection_filter.md
@@ -70,6 +73,7 @@ of the component
 - api/link/datacollection_serialize.md
 - api/link/datacollection_sort.md
 - api/link/datacollection_sync.md
+- api/link/datacollection_unbind.md
 - api/link/datacollection_unblockevent.md
 - api/link/datacollection_updateitem.md
 - api/link/datacollection_validate.md
