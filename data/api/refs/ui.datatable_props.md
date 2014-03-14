@@ -3,6 +3,7 @@ Properties
 ==========
 
 {{links
+- api/ui.datatable_adjustheaders_config.md - when enabled column auto-sizing will take header width in account
 - api/link/ui.datatable_animate_config.md - defines or disables view change animation.
 - api/ui.datatable_autoconfig_config.md - datatable adjust configuration to the data
 - api/ui.datatable_autoheight_config.md - adjusts DataTable to the parent container size vertically
@@ -81,6 +82,7 @@ Properties
 }}
 
 @index:
+- api/ui.datatable_adjustheaders_config.md
 - api/link/ui.datatable_animate_config.md
 - api/ui.datatable_autoconfig_config.md
 - api/ui.datatable_autoheight_config.md
