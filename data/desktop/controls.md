@@ -296,7 +296,7 @@ Icon Initialization
 ####Main properties
 
 - **align** (string) - the alignment of component inside designated area;
-- **icon** (string) - a predefined name of an icon, its name. Icons and their names are listed on the [Entypo](http://www.entypo.com/).
+- **icon** (string) - a predefined name of an icon, its name. Icons and their names are listed on the [Font Awesome](http://fortawesome.github.io/Font-Awesome/).
 
 Icons in this lib exist in the form of a separate **view** (as described above), as a **button type** and as **CSS class**. Read more about Icon types in the [dedicated chapter of the documentation](desktop/icon_types.md).
 
@@ -806,7 +806,7 @@ Toggle initialization
 - **onIcon** (string) - icon for a pressed toggle;
 - **offIcon** (string) - icon for an unpressed toggle.
 
-Icons taken from the the [Entype](http://www.entypo.com/), so pick the necessary icon name at their site. 
+Icons taken from the the [Font Awesome](http://fortawesome.github.io/Font-Awesome/), so pick the necessary icon name at their site. 
 
 **Toggle Types**
 

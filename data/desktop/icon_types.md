@@ -10,7 +10,7 @@ Icons can be initialized in three ways:
 - as **button types**;
 - as **CSS classes**.
 
-Icons are taken from the[ Entypo Pictogramm Suite](http://www.entypo.com/) collection. There you can find plenty of icons to your choice and pick their names to insert them in your apps. 
+Icons are taken from the [Font Awesome](http://fortawesome.github.io/Font-Awesome/) collection. There you can find plenty of icons to your choice and pick their names to insert them in your apps. 
 
 {{sample 16_skins/03_icons.html }}
 
