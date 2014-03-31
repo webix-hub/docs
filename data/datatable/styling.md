@@ -179,7 +179,7 @@ General styling of cells
 ~~~js
 function mark_votes(value, config){
 	if (value > 400000)
-		return { value:value, css:{	"text-align":"right"}};
+		return { "text-align":"right" };
 	return value;
 }
 
