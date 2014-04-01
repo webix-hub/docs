@@ -12,6 +12,7 @@ Methods
 - api/link/ui.pager_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.pager_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.pager_getchildviews.md - returns child views of the calling component
+- api/link/ui.pager_getformview.md - returns master form for the input
 - api/link/ui.pager_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.pager_getparentview.md - returns the parent view of the component
 - api/link/ui.pager_gettopparentview.md - returns top parent view
@@ -24,6 +25,7 @@ Methods
 - api/ui.pager_select.md - switches pager to the necessary page (zero-based numbering)
 - api/link/ui.pager_show.md - makes the component visible
 - api/link/ui.pager_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.pager_unbind.md - breaks "bind" link
 }}
 
 @index:
@@ -36,6 +38,7 @@ Methods
 - api/link/ui.pager_disable.md
 - api/link/ui.pager_enable.md
 - api/link/ui.pager_getchildviews.md
+- api/link/ui.pager_getformview.md
 - api/link/ui.pager_getnode.md
 - api/link/ui.pager_getparentview.md
 - api/link/ui.pager_gettopparentview.md
@@ -48,5 +51,6 @@ Methods
 - api/ui.pager_select.md
 - api/link/ui.pager_show.md
 - api/link/ui.pager_sync.md
+- api/link/ui.pager_unbind.md
 
 

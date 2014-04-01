@@ -14,6 +14,7 @@ Methods
 - api/link/ui.calendar_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.calendar_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.calendar_getchildviews.md - returns child views of the calling component
+- api/link/ui.calendar_getformview.md - returns master form for the input
 - api/link/ui.calendar_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.calendar_getparentview.md - returns the parent view of the component
 - api/ui.calendar_getselecteddate.md - gets the current selected date
@@ -33,6 +34,7 @@ Methods
 - api/ui.calendar_setvalue.md - sets a new value for the component
 - api/link/ui.calendar_show.md - makes the component visible
 - api/ui.calendar_showcalendar.md - makes the specified date displayed in the calendar
+- api/link/ui.calendar_unbind.md - breaks "bind" link
 - api/link/ui.calendar_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}
 
@@ -48,6 +50,7 @@ Methods
 - api/link/ui.calendar_disable.md
 - api/link/ui.calendar_enable.md
 - api/link/ui.calendar_getchildviews.md
+- api/link/ui.calendar_getformview.md
 - api/link/ui.calendar_getnode.md
 - api/link/ui.calendar_getparentview.md
 - api/ui.calendar_getselecteddate.md
@@ -67,6 +70,7 @@ Methods
 - api/ui.calendar_setvalue.md
 - api/link/ui.calendar_show.md
 - api/ui.calendar_showcalendar.md
+- api/link/ui.calendar_unbind.md
 - api/link/ui.calendar_unblockevent.md
 
 

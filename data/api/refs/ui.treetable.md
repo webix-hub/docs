@@ -80,6 +80,7 @@ Methods
 - api/link/ui.treetable_getfilter.md - returns the filter object that the component uses to filter the values of the specified column
 - api/link/ui.treetable_getfirstchildid.md - gets the ID of the first child of the specified branch
 - api/link/ui.treetable_getfirstid.md - returns the ID of the first item
+- api/link/ui.treetable_getformview.md - returns master form for the input
 - api/link/ui.treetable_getheadercontent.md - returns set of helpers for header content manipulation
 - api/link/ui.treetable_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.treetable_getindexbyid.md - returns the index of the item with the specified id
@@ -156,6 +157,7 @@ of the component
 - api/link/ui.treetable_showoverlay.md - shows the overlay message over the body of DataTable
 - api/link/ui.treetable_sort.md - sorts datastore
 - api/link/ui.treetable_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.treetable_unbind.md - breaks "bind" link
 - api/link/ui.treetable_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.treetable_uncheckall.md - uncheck all items in the tree
 - api/link/ui.treetable_uncheckitem.md - unchecks the checkbox	related to the specified item
@@ -207,6 +209,7 @@ Events
 - api/link/ui.treetable_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.treetable_onbeforeunselect_event.md - fired before a cell is unselected
 - api/link/ui.treetable_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.treetable_oncolumnresize_event.md - fires when width of column was changed
 - api/link/ui.treetable_ondatarequest_event.md - fires when data from the server side is requested (part of dynamic loading)
 - api/link/ui.treetable_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.treetable_ondestruct_event.md - occurs when component destroyed
@@ -215,11 +218,13 @@ Events
 - api/link/ui.treetable_onitemcheck_event.md - fires when you check an item in tree and treetable
 - api/link/ui.treetable_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.treetable_onitemdblclick_event.md - fires when a component item was double-clicked
+- api/link/ui.treetable_onliveedit_event.md - occurs when data was changed in the editor
 - api/link/ui.treetable_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.treetable_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.treetable_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.treetable_onmouseout_event.md - fires when the mouse was moved out from the specified item
 - api/link/ui.treetable_onresize_event.md - fires when the width or height of DataTable was changed
+- api/link/ui.treetable_onrowresize_event.md - fires when height of row was changed
 - api/link/ui.treetable_onscrollx_event.md - fires when the user scrolls the table left or right
 - api/link/ui.treetable_onscrolly_event.md - fires when the user scrolls the table up or down
 - api/link/ui.treetable_onselectchange_event.md - fires when selection is changed in DataTable
@@ -235,6 +240,7 @@ Properties
 ----------
 
 {{links
+- api/link/ui.treetable_adjustheaders_config.md - when enabled column auto-sizing will take header width in account
 - api/link/ui.treetable_animate_config.md - defines or disables view change animation.
 - api/link/ui.treetable_autoconfig_config.md - datatable adjust configuration to the data
 - api/link/ui.treetable_autoheight_config.md - adjusts DataTable to the parent container size vertically

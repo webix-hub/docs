@@ -14,6 +14,7 @@ Methods
 - api/link/datavalue_mapevent.md - routes events from one object to another
 - api/datavalue_refresh.md - repaints the component
 - api/datavalue_setvalue.md - sets a new value for the component
+- api/link/datavalue_unbind.md - breaks "bind" link
 - api/link/datavalue_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}
 
@@ -29,6 +30,7 @@ Methods
 - api/link/datavalue_mapevent.md
 - api/datavalue_refresh.md
 - api/datavalue_setvalue.md
+- api/link/datavalue_unbind.md
 - api/link/datavalue_unblockevent.md
 
 

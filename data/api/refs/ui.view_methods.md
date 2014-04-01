@@ -10,6 +10,7 @@ Methods
 - api/link/ui.view_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.view_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.view_getchildviews.md - returns child views of the calling component
+- api/link/ui.view_getformview.md - returns master form for the input
 - api/link/ui.view_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.view_getparentview.md - returns the parent view of the component
 - api/link/ui.view_gettopparentview.md - returns top parent view
@@ -18,6 +19,7 @@ Methods
 - api/link/ui.view_isvisible.md - checks whether the view is visible
 - api/link/ui.view_resize.md - adjusts the view to a new size
 - api/link/ui.view_show.md - makes the component visible
+- api/link/ui.view_unbind.md - breaks "bind" link
 }}
 
 @index:
@@ -28,6 +30,7 @@ Methods
 - api/link/ui.view_disable.md
 - api/link/ui.view_enable.md
 - api/link/ui.view_getchildviews.md
+- api/link/ui.view_getformview.md
 - api/link/ui.view_getnode.md
 - api/link/ui.view_getparentview.md
 - api/link/ui.view_gettopparentview.md
@@ -36,5 +39,6 @@ Methods
 - api/link/ui.view_isvisible.md
 - api/link/ui.view_resize.md
 - api/link/ui.view_show.md
+- api/link/ui.view_unbind.md
 
 

@@ -52,7 +52,7 @@ Button
 	</tr>
 </table>
 
-You can find the name of any icon on the [Entypo site](http://www.entypo.com) since icons are taken from there. [Iconization](desktop/icon_types.md) in the library is described separately. 
+You can find the name of any icon on the [Font Awesome site](http://fortawesome.github.io/Font-Awesome/) since icons are taken from there. [Iconization](desktop/icon_types.md) in the library is described separately. 
 
 
 Read more about [Buttons](desktop/controls.md#button).

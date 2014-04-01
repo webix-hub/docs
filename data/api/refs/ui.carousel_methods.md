@@ -18,6 +18,7 @@ Methods
 - api/ui.carousel_getactiveid.md - gets the id of the current selected item
 - api/ui.carousel_getactiveidindex.md - gets the index of the current active item
 - api/link/ui.carousel_getchildviews.md - returns child views of the calling component
+- api/link/ui.carousel_getformview.md - returns master form for the input
 - api/link/ui.carousel_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.carousel_getparentview.md - returns the parent view of the component
 - api/link/ui.carousel_gettopparentview.md - returns top parent view
@@ -38,6 +39,7 @@ Methods
 - api/link/ui.carousel_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
 - api/ui.carousel_shownext.md - shows the next item of the carousel
 - api/ui.carousel_showprev.md - shows the previous item of the carousel
+- api/link/ui.carousel_unbind.md - breaks "bind" link
 - api/link/ui.carousel_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}
 
@@ -57,6 +59,7 @@ Methods
 - api/ui.carousel_getactiveid.md
 - api/ui.carousel_getactiveidindex.md
 - api/link/ui.carousel_getchildviews.md
+- api/link/ui.carousel_getformview.md
 - api/link/ui.carousel_getnode.md
 - api/link/ui.carousel_getparentview.md
 - api/link/ui.carousel_gettopparentview.md
@@ -77,6 +80,7 @@ Methods
 - api/link/ui.carousel_showbatch.md
 - api/ui.carousel_shownext.md
 - api/ui.carousel_showprev.md
+- api/link/ui.carousel_unbind.md
 - api/link/ui.carousel_unblockevent.md
 
 

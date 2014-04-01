@@ -16,6 +16,7 @@ Methods
 - api/link/ui.label_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.label_focus.md - sets focus to the control
 - api/link/ui.label_getchildviews.md - returns child views of the calling component
+- api/link/ui.label_getformview.md - returns master form for the input
 - api/link/ui.label_getinputnode.md - gets the HTML element related to the component
 - api/link/ui.label_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.label_getparentview.md - returns the parent view of the component
@@ -33,6 +34,7 @@ Methods
 - api/link/ui.label_setvalue.md - sets a new value for the component
 - api/link/ui.label_show.md - makes the component visible
 - api/link/ui.label_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.label_unbind.md - breaks "bind" link
 - api/link/ui.label_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}
 
@@ -50,6 +52,7 @@ Methods
 - api/link/ui.label_enable.md
 - api/link/ui.label_focus.md
 - api/link/ui.label_getchildviews.md
+- api/link/ui.label_getformview.md
 - api/link/ui.label_getinputnode.md
 - api/link/ui.label_getnode.md
 - api/link/ui.label_getparentview.md
@@ -67,6 +70,7 @@ Methods
 - api/link/ui.label_setvalue.md
 - api/link/ui.label_show.md
 - api/link/ui.label_sync.md
+- api/link/ui.label_unbind.md
 - api/link/ui.label_unblockevent.md
 
 

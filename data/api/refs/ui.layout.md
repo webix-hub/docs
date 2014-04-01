@@ -20,7 +20,7 @@ The component allows you to programmatically define interface structure by organ
 ~~~
 
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
+<a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
 Methods
 -------
@@ -28,25 +28,34 @@ Methods
 {{links
 - api/link/ui.layout_addview.md - add new view to layout or multiview
 - api/link/ui.layout_adjust.md - adjusts the component to the size of the parent HTML container
+- api/link/ui.layout_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.layout_bind.md - binds components
+- api/link/ui.layout_blockevent.md - temporarily blocks triggering of ALL events of the calling object
+- api/link/ui.layout_callevent.md - calls an inner event
 - api/link/ui.layout_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.layout_destructor.md - destructs the calling object
+- api/link/ui.layout_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.layout_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.layout_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.layout_getchildviews.md - returns child views of the calling component
+- api/link/ui.layout_getformview.md - returns master form for the input
 - api/link/ui.layout_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.layout_getparentview.md - returns the parent view of the component
 - api/link/ui.layout_gettopparentview.md - returns top parent view
+- api/link/ui.layout_hasevent.md - checks whether the component has the specified event
 - api/link/ui.layout_hide.md - hides the view
 - api/link/ui.layout_index.md - returns the cell index in the layout collection
 - api/link/ui.layout_isenabled.md - checks whether the view is enabled
 - api/link/ui.layout_isvisible.md - checks whether the view is visible
+- api/link/ui.layout_mapevent.md - routes events from one object to another
 - api/link/ui.layout_reconstruct.md - rebuilds the layout
 - api/link/ui.layout_removeview.md - removes view from multiview or layout
 - api/link/ui.layout_resize.md - adjusts the view to a new size
 - api/link/ui.layout_resizechildren.md - resizes all children of the calling component
 - api/link/ui.layout_show.md - makes the component visible
 - api/link/ui.layout_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
+- api/link/ui.layout_unbind.md - breaks "bind" link
+- api/link/ui.layout_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}
 
 
@@ -79,6 +88,7 @@ Properties
 - api/link/ui.layout_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.layout_minheight_config.md - sets the minimal height for the view
 - api/link/ui.layout_minwidth_config.md - sets the minimal width for the view
+- api/link/ui.layout_on_config.md - allows attaching custom handlers to inner events of the component
 - api/ui.layout_padding_config.md - defines the space between the element borders and content (applies the specified value to all sides).
 - api/ui.layout_paddingx_config.md - sets the right and left padding (applies the specified value to both sides)
 - api/ui.layout_paddingy_config.md - sets the top and bottom padding (applies the specified value to both sides)

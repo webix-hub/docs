@@ -22,6 +22,7 @@ Methods
 - api/link/treecollection_clearvalidation.md - removes all validation marks from the component
 - api/link/treecollection_count.md - returns the count of items in the table
 - api/link/treecollection_define.md - redefines a single configuration property (or a hash of properties)
+- api/link/treecollection_destructor.md - destructs the calling object
 - api/link/treecollection_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/treecollection_exists.md - checks whether an item with the specified id exists
 - api/link/treecollection_filter.md - filters the component
@@ -51,6 +52,7 @@ of the component
 - api/link/treecollection_serialize.md - serializes data to a json object
 - api/link/treecollection_sort.md - sorts datastore
 - api/link/treecollection_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/treecollection_unbind.md - breaks "bind" link
 - api/link/treecollection_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/treecollection_updateitem.md - sets properties of the data item
 - api/link/treecollection_validate.md - validates one record or all dataset against validation rules
@@ -72,6 +74,7 @@ Events
 - api/link/treecollection_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/treecollection_ondatarequest_event.md - fires when data from the server side is requested (part of dynamic loading)
 - api/link/treecollection_ondataupdate_event.md - fires when data item is in update process
+- api/link/treecollection_ondestruct_event.md - occurs when component destroyed
 - api/link/treecollection_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/treecollection_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation
 - api/link/treecollection_onvalidationsuccess_event.md - fires after the newlyloaded/added/edited data has passes validation successfully

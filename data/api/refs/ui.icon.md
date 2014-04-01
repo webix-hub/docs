@@ -40,6 +40,7 @@ Methods
 - api/link/ui.icon_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.icon_focus.md - sets focus to the control
 - api/link/ui.icon_getchildviews.md - returns child views of the calling component
+- api/link/ui.icon_getformview.md - returns master form for the input
 - api/link/ui.icon_getinputnode.md - gets the HTML element related to the component
 - api/link/ui.icon_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.icon_getparentview.md - returns the parent view of the component
@@ -56,6 +57,7 @@ Methods
 - api/link/ui.icon_setvalue.md - sets a new value for the component
 - api/link/ui.icon_show.md - makes the component visible
 - api/link/ui.icon_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.icon_unbind.md - breaks "bind" link
 - api/link/ui.icon_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}
 
@@ -92,10 +94,12 @@ Properties
 - api/link/ui.icon_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.icon_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.icon_label_config.md - the text label of the control
+- api/link/ui.icon_labelposition_config.md - positions label above the control
 - api/link/ui.icon_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.icon_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.icon_minheight_config.md - sets the minimal height for the view
 - api/link/ui.icon_minwidth_config.md - sets the minimal width for the view
+- api/link/ui.icon_name_config.md - name of the control
 - api/link/ui.icon_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.icon_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.icon_tabfocus_config.md - defines whether the control will be included in the tab navigation order

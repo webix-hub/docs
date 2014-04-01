@@ -21,7 +21,7 @@ The component provides validation and the ability to save user input to the back
 ~~~
 
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/ui.toolbar.md">ui.toolbar</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/values.md">Values</a>, <a href="api/refs/ui.layout.md">ui.layout</a>, <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/validatedata.md">ValidateData</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
+<a href="api/refs/ui.toolbar.md">ui.toolbar</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/values.md">Values</a>, <a href="api/refs/ui.layout.md">ui.layout</a>, <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/validatedata.md">ValidateData</a></div>
 
 Methods
 -------
@@ -42,6 +42,9 @@ Methods
 - api/link/ui.form_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.form_focus.md - sets focus into the necessary component
 - api/link/ui.form_getchildviews.md - returns child views of the calling component
+- api/link/ui.form_getcleanvalues.md - returns hash of original form values
+- api/link/ui.form_getdirtyvalues.md - returns hash of changed values
+- api/link/ui.form_getformview.md - returns master form for the input
 - api/link/ui.form_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.form_getparentview.md - returns the parent view of the component
 - api/link/ui.form_getscrollstate.md - returns the scroll position
@@ -67,6 +70,7 @@ Methods
 - api/link/ui.form_setvalues.md - sets values into all the form inputs
 - api/link/ui.form_show.md - makes the component visible
 - api/link/ui.form_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
+- api/link/ui.form_unbind.md - breaks "bind" link
 - api/link/ui.form_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.form_validate.md - checks data in the component during adding new item or editing existing ones
 }}
@@ -115,7 +119,6 @@ Properties
 - api/link/ui.form_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.form_minheight_config.md - sets the minimal height for the view
 - api/link/ui.form_minwidth_config.md - sets the minimal width for the view
-- api/link/ui.form_name_config.md - name of the control
 - api/link/ui.form_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.form_padding_config.md - defines the space between the element borders and content (applies the specified value to all sides).
 - api/link/ui.form_paddingx_config.md - sets the right and left padding (applies the specified value to both sides)

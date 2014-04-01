@@ -20,7 +20,7 @@ The component serves as the base class that defines properties, methods, and eve
 ~~~
 
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
+<a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
 Methods
 -------
@@ -28,25 +28,34 @@ Methods
 {{links
 - api/ui.baselayout_addview.md - add new view to layout or multiview
 - api/link/ui.baselayout_adjust.md - adjusts the component to the size of the parent HTML container
+- api/link/ui.baselayout_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.baselayout_bind.md - binds components
+- api/link/ui.baselayout_blockevent.md - temporarily blocks triggering of ALL events of the calling object
+- api/link/ui.baselayout_callevent.md - calls an inner event
 - api/link/ui.baselayout_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.baselayout_destructor.md - destructs the calling object
+- api/link/ui.baselayout_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.baselayout_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.baselayout_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.baselayout_getchildviews.md - returns child views of the calling component
+- api/link/ui.baselayout_getformview.md - returns master form for the input
 - api/link/ui.baselayout_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.baselayout_getparentview.md - returns the parent view of the component
 - api/link/ui.baselayout_gettopparentview.md - returns top parent view
+- api/link/ui.baselayout_hasevent.md - checks whether the component has the specified event
 - api/link/ui.baselayout_hide.md - hides the view
 - api/ui.baselayout_index.md - returns the cell index in the layout collection
 - api/link/ui.baselayout_isenabled.md - checks whether the view is enabled
 - api/link/ui.baselayout_isvisible.md - checks whether the view is visible
+- api/link/ui.baselayout_mapevent.md - routes events from one object to another
 - api/ui.baselayout_reconstruct.md - rebuilds the layout
 - api/ui.baselayout_removeview.md - removes view from multiview or layout
 - api/link/ui.baselayout_resize.md - adjusts the view to a new size
 - api/ui.baselayout_resizechildren.md - resizes all children of the calling component
 - api/link/ui.baselayout_show.md - makes the component visible
 - api/ui.baselayout_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
+- api/link/ui.baselayout_unbind.md - breaks "bind" link
+- api/link/ui.baselayout_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}
 
 
@@ -77,6 +86,7 @@ Properties
 - api/link/ui.baselayout_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.baselayout_minheight_config.md - sets the minimal height for the view
 - api/link/ui.baselayout_minwidth_config.md - sets the minimal width for the view
+- api/link/ui.baselayout_on_config.md - allows attaching custom handlers to inner events of the component
 - api/ui.baselayout_rows_config.md - array of views objects arranged vertically
 - api/ui.baselayout_visiblebatch_config.md - sets the batch that will be shown initially
 - api/link/ui.baselayout_width_config.md - sets the width of the component

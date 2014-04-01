@@ -16,6 +16,7 @@ Methods
 - api/link/ui.accordionitem_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/ui.accordionitem_expand.md - expands the specified accordion item
 - api/link/ui.accordionitem_getchildviews.md - returns child views of the calling component
+- api/link/ui.accordionitem_getformview.md - returns master form for the input
 - api/link/ui.accordionitem_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.accordionitem_getparentview.md - returns the parent view of the component
 - api/link/ui.accordionitem_gettopparentview.md - returns top parent view
@@ -27,6 +28,7 @@ Methods
 - api/ui.accordionitem_refresh.md - refreshes the header label
 - api/link/ui.accordionitem_resize.md - adjusts the view to a new size
 - api/link/ui.accordionitem_show.md - makes the component visible
+- api/link/ui.accordionitem_unbind.md - breaks "bind" link
 - api/link/ui.accordionitem_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}
 
@@ -44,6 +46,7 @@ Methods
 - api/link/ui.accordionitem_enable.md
 - api/ui.accordionitem_expand.md
 - api/link/ui.accordionitem_getchildviews.md
+- api/link/ui.accordionitem_getformview.md
 - api/link/ui.accordionitem_getnode.md
 - api/link/ui.accordionitem_getparentview.md
 - api/link/ui.accordionitem_gettopparentview.md
@@ -55,6 +58,7 @@ Methods
 - api/ui.accordionitem_refresh.md
 - api/link/ui.accordionitem_resize.md
 - api/link/ui.accordionitem_show.md
+- api/link/ui.accordionitem_unbind.md
 - api/link/ui.accordionitem_unblockevent.md
 
 

@@ -84,4 +84,6 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
 - desktop/scheduler.md
 - desktop/chart_integration.md
 - desktop/maps.md
+- desktop/datasuggest.md
+- desktop/gridsuggest.md
 

@@ -18,6 +18,9 @@ Methods
 - api/link/ui.toolbar_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.toolbar_focus.md - sets focus into the necessary component
 - api/link/ui.toolbar_getchildviews.md - returns child views of the calling component
+- api/link/ui.toolbar_getcleanvalues.md - returns hash of original form values
+- api/link/ui.toolbar_getdirtyvalues.md - returns hash of changed values
+- api/link/ui.toolbar_getformview.md - returns master form for the input
 - api/link/ui.toolbar_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.toolbar_getparentview.md - returns the parent view of the component
 - api/link/ui.toolbar_getscrollstate.md - returns the scroll position
@@ -43,6 +46,7 @@ Methods
 - api/link/ui.toolbar_setvalues.md - sets values into all the form inputs
 - api/link/ui.toolbar_show.md - makes the component visible
 - api/link/ui.toolbar_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
+- api/link/ui.toolbar_unbind.md - breaks "bind" link
 - api/link/ui.toolbar_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.toolbar_validate.md - checks data in the component during adding new item or editing existing ones
 }}
@@ -63,6 +67,9 @@ Methods
 - api/link/ui.toolbar_enable.md
 - api/link/ui.toolbar_focus.md
 - api/link/ui.toolbar_getchildviews.md
+- api/link/ui.toolbar_getcleanvalues.md
+- api/link/ui.toolbar_getdirtyvalues.md
+- api/link/ui.toolbar_getformview.md
 - api/link/ui.toolbar_getnode.md
 - api/link/ui.toolbar_getparentview.md
 - api/link/ui.toolbar_getscrollstate.md
@@ -88,6 +95,7 @@ Methods
 - api/link/ui.toolbar_setvalues.md
 - api/link/ui.toolbar_show.md
 - api/link/ui.toolbar_showbatch.md
+- api/link/ui.toolbar_unbind.md
 - api/link/ui.toolbar_unblockevent.md
 - api/link/ui.toolbar_validate.md
 

@@ -1,0 +1,1 @@
+@link: api/ui.datatable_oncolumnresize_event.md

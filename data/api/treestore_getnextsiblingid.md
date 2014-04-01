@@ -24,7 +24,7 @@ tree = new webix.ui({
 $$('tree1').getNextSiblingId("part1"); // returns 'part2'
 @template:	api_method
 @relatedapi:
-	api/link/treedataloader_getprevsiblingid.md
+	api/treestore_getprevsiblingid.md
 @related:
 	datatree/getting_value.md
 @descr:

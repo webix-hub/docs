@@ -14,6 +14,7 @@ Methods
 - api/link/ui.iframe_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.iframe_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.iframe_getchildviews.md - returns child views of the calling component
+- api/link/ui.iframe_getformview.md - returns master form for the input
 - api/ui.iframe_getiframe.md - returns html element of inner iframe
 - api/link/ui.iframe_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.iframe_getparentview.md - returns the parent view of the component
@@ -27,6 +28,7 @@ Methods
 - api/link/ui.iframe_mapevent.md - routes events from one object to another
 - api/link/ui.iframe_resize.md - adjusts the view to a new size
 - api/link/ui.iframe_show.md - makes the component visible
+- api/link/ui.iframe_unbind.md - breaks "bind" link
 - api/link/ui.iframe_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}
 
@@ -42,6 +44,7 @@ Methods
 - api/link/ui.iframe_disable.md
 - api/link/ui.iframe_enable.md
 - api/link/ui.iframe_getchildviews.md
+- api/link/ui.iframe_getformview.md
 - api/ui.iframe_getiframe.md
 - api/link/ui.iframe_getnode.md
 - api/link/ui.iframe_getparentview.md
@@ -55,6 +58,7 @@ Methods
 - api/link/ui.iframe_mapevent.md
 - api/link/ui.iframe_resize.md
 - api/link/ui.iframe_show.md
+- api/link/ui.iframe_unbind.md
 - api/link/ui.iframe_unblockevent.md
 
 

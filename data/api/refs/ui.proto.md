@@ -49,6 +49,7 @@ Methods
 - api/link/ui.proto_filter.md - filters the component
 - api/link/ui.proto_getchildviews.md - returns child views of the calling component
 - api/link/ui.proto_getfirstid.md - returns the ID of the first item
+- api/link/ui.proto_getformview.md - returns master form for the input
 - api/link/ui.proto_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.proto_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.proto_getitem.md - gets the object of the data item with the specified id
@@ -83,6 +84,7 @@ of the component
 - api/link/ui.proto_showitem.md - scrolls the component to make the specified item visible
 - api/link/ui.proto_sort.md - sorts datastore
 - api/link/ui.proto_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.proto_unbind.md - breaks "bind" link
 - api/link/ui.proto_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.proto_updateitem.md - sets properties of the data item
 - api/link/ui.proto_validate.md - validates one record or all dataset against validation rules

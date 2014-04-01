@@ -23,6 +23,7 @@ Methods
 - api/link/ui.property_geteditstate.md - returns info about active editor object
 - api/link/ui.property_geteditor.md - returns editor object
 - api/link/ui.property_geteditorvalue.md - returns the value of the active (currently open) editor
+- api/link/ui.property_getformview.md - returns master form for the input
 - api/ui.property_getitem.md - gets the data object for related property
 - api/ui.property_getitemnode.md - returns html element of item by item id
 - api/link/ui.property_getnode.md - returns the main HTML container for the calling object
@@ -47,6 +48,7 @@ Methods
 - api/link/ui.property_show.md - makes the component visible
 - api/ui.property_showitem.md - 'scrolls' the table to make the specified row visible
 - api/link/ui.property_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.property_unbind.md - breaks "bind" link
 - api/link/ui.property_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/ui.property_updateitem.md - alias for refresh, repaints property view
 - api/link/ui.property_validateeditor.md - validates data in currently active editor
@@ -73,6 +75,7 @@ Methods
 - api/link/ui.property_geteditstate.md
 - api/link/ui.property_geteditor.md
 - api/link/ui.property_geteditorvalue.md
+- api/link/ui.property_getformview.md
 - api/ui.property_getitem.md
 - api/ui.property_getitemnode.md
 - api/link/ui.property_getnode.md
@@ -97,6 +100,7 @@ Methods
 - api/link/ui.property_show.md
 - api/ui.property_showitem.md
 - api/link/ui.property_sync.md
+- api/link/ui.property_unbind.md
 - api/link/ui.property_unblockevent.md
 - api/ui.property_updateitem.md
 - api/link/ui.property_validateeditor.md

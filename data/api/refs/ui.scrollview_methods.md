@@ -10,6 +10,7 @@ Methods
 - api/link/ui.scrollview_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.scrollview_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.scrollview_getchildviews.md - returns child views of the calling component
+- api/link/ui.scrollview_getformview.md - returns master form for the input
 - api/link/ui.scrollview_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.scrollview_getparentview.md - returns the parent view of the component
 - api/link/ui.scrollview_getscrollstate.md - returns the scroll position
@@ -22,6 +23,7 @@ Methods
 - api/link/ui.scrollview_scrollto.md - scrolls the data container to a certain position
 - api/link/ui.scrollview_show.md - makes the component visible
 - api/ui.scrollview_showview.md - places focus on the necessary scrollview item
+- api/link/ui.scrollview_unbind.md - breaks "bind" link
 }}
 
 @index:
@@ -32,6 +34,7 @@ Methods
 - api/link/ui.scrollview_disable.md
 - api/link/ui.scrollview_enable.md
 - api/link/ui.scrollview_getchildviews.md
+- api/link/ui.scrollview_getformview.md
 - api/link/ui.scrollview_getnode.md
 - api/link/ui.scrollview_getparentview.md
 - api/link/ui.scrollview_getscrollstate.md
@@ -44,5 +47,6 @@ Methods
 - api/link/ui.scrollview_scrollto.md
 - api/link/ui.scrollview_show.md
 - api/ui.scrollview_showview.md
+- api/link/ui.scrollview_unbind.md
 
 

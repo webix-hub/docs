@@ -16,6 +16,7 @@ Methods
 - api/link/ui.icon_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.icon_focus.md - sets focus to the control
 - api/link/ui.icon_getchildviews.md - returns child views of the calling component
+- api/link/ui.icon_getformview.md - returns master form for the input
 - api/link/ui.icon_getinputnode.md - gets the HTML element related to the component
 - api/link/ui.icon_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.icon_getparentview.md - returns the parent view of the component
@@ -32,6 +33,7 @@ Methods
 - api/link/ui.icon_setvalue.md - sets a new value for the component
 - api/link/ui.icon_show.md - makes the component visible
 - api/link/ui.icon_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.icon_unbind.md - breaks "bind" link
 - api/link/ui.icon_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}
 
@@ -49,6 +51,7 @@ Methods
 - api/link/ui.icon_enable.md
 - api/link/ui.icon_focus.md
 - api/link/ui.icon_getchildviews.md
+- api/link/ui.icon_getformview.md
 - api/link/ui.icon_getinputnode.md
 - api/link/ui.icon_getnode.md
 - api/link/ui.icon_getparentview.md
@@ -65,6 +68,7 @@ Methods
 - api/link/ui.icon_setvalue.md
 - api/link/ui.icon_show.md
 - api/link/ui.icon_sync.md
+- api/link/ui.icon_unbind.md
 - api/link/ui.icon_unblockevent.md
 
 

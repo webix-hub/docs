@@ -41,6 +41,7 @@ Methods
 - api/link/ui.segmented_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.segmented_focus.md - sets focus to the control
 - api/link/ui.segmented_getchildviews.md - returns child views of the calling component
+- api/link/ui.segmented_getformview.md - returns master form for the input
 - api/link/ui.segmented_getinputnode.md - gets the HTML element related to the component
 - api/link/ui.segmented_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.segmented_getparentview.md - returns the parent view of the component
@@ -59,7 +60,9 @@ Methods
 - api/link/ui.segmented_setvalue.md - sets a new value for the component
 - api/link/ui.segmented_show.md - makes the component visible
 - api/link/ui.segmented_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.segmented_unbind.md - breaks "bind" link
 - api/link/ui.segmented_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
+- api/link/ui.segmented_validate.md - validates value of input
 }}
 
 
@@ -104,13 +107,19 @@ Properties
 - api/link/ui.segmented_minheight_config.md - sets the minimal height for the view
 - api/link/ui.segmented_minwidth_config.md - sets the minimal width for the view
 - api/ui.segmented_multiview_config.md - enables switching between multiview cells
+- api/link/ui.segmented_name_config.md - name of the control
 - api/link/ui.segmented_on_config.md - allows attaching custom handlers to inner events of the component
 - api/ui.segmented_options_config.md - defines data items of the drop-down list
 - api/link/ui.segmented_popup_config.md - allows to attach pop-up menu to the button
+- api/link/ui.segmented_relatedaction_config.md - action to call when value of cell changes
+- api/link/ui.segmented_relatedview_config.md - id of view, that will be affected by relatedAction operation
+- api/link/ui.segmented_required_config.md - marks field as required
 - api/link/ui.segmented_suggest_config.md - links suggest list to the input
 - api/link/ui.segmented_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/link/ui.segmented_template_config.md - the component template
 - api/link/ui.segmented_type_config.md - the type of the control
+- api/link/ui.segmented_validate_config.md - adds validation to the field
+- api/link/ui.segmented_validateevent_config.md - on which event validation fires
 - api/link/ui.segmented_value_config.md - sets the initial value for a control
 - api/link/ui.segmented_width_config.md - sets the width of the component
 }}

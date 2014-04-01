@@ -25,6 +25,7 @@ Methods
 - api/link/ui.dataview_filter.md - filters the component
 - api/link/ui.dataview_getchildviews.md - returns child views of the calling component
 - api/link/ui.dataview_getfirstid.md - returns the ID of the first item
+- api/link/ui.dataview_getformview.md - returns master form for the input
 - api/link/ui.dataview_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.dataview_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.dataview_getitem.md - gets the object of the data item with the specified id
@@ -72,6 +73,7 @@ of the component
 - api/link/ui.dataview_showitem.md - scrolls the component to make the specified item visible
 - api/link/ui.dataview_sort.md - sorts datastore
 - api/link/ui.dataview_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.dataview_unbind.md - breaks "bind" link
 - api/link/ui.dataview_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.dataview_unselect.md - removes selection from the specified item
 - api/link/ui.dataview_unselectall.md - removes selection from all items
@@ -102,6 +104,7 @@ of the component
 - api/link/ui.dataview_filter.md
 - api/link/ui.dataview_getchildviews.md
 - api/link/ui.dataview_getfirstid.md
+- api/link/ui.dataview_getformview.md
 - api/link/ui.dataview_getidbyindex.md
 - api/link/ui.dataview_getindexbyid.md
 - api/link/ui.dataview_getitem.md
@@ -148,6 +151,7 @@ of the component
 - api/link/ui.dataview_showitem.md
 - api/link/ui.dataview_sort.md
 - api/link/ui.dataview_sync.md
+- api/link/ui.dataview_unbind.md
 - api/link/ui.dataview_unblockevent.md
 - api/link/ui.dataview_unselect.md
 - api/link/ui.dataview_unselectall.md

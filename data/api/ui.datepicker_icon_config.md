@@ -27,6 +27,6 @@ Icons can be defined as
 - button types;
 - CSS classes. 
 
-Icon types are taken from [Entypo](http://www.entypo.com).
+Icon types are taken from [Font Awesome](http://fortawesome.github.io/Font-Awesome/).
 
 

@@ -19,6 +19,7 @@ Properties
 - api/link/ui.tabview_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.tabview_minheight_config.md - sets the minimal height for the view
 - api/link/ui.tabview_minwidth_config.md - sets the minimal width for the view
+- api/link/ui.tabview_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.tabview_padding_config.md - defines the space between the element borders and content (applies the specified value to all sides).
 - api/link/ui.tabview_paddingx_config.md - sets the right and left padding (applies the specified value to both sides)
 - api/link/ui.tabview_paddingy_config.md - sets the top and bottom padding (applies the specified value to both sides)
@@ -45,6 +46,7 @@ Properties
 - api/link/ui.tabview_maxwidth_config.md
 - api/link/ui.tabview_minheight_config.md
 - api/link/ui.tabview_minwidth_config.md
+- api/link/ui.tabview_on_config.md
 - api/link/ui.tabview_padding_config.md
 - api/link/ui.tabview_paddingx_config.md
 - api/link/ui.tabview_paddingy_config.md

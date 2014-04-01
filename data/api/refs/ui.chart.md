@@ -48,6 +48,7 @@ Methods
 - api/link/ui.chart_filter.md - filters the component
 - api/link/ui.chart_getchildviews.md - returns child views of the calling component
 - api/link/ui.chart_getfirstid.md - returns the ID of the first item
+- api/link/ui.chart_getformview.md - returns master form for the input
 - api/link/ui.chart_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.chart_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.chart_getitem.md - gets the object of the data item with the specified id
@@ -66,6 +67,7 @@ Methods
 - api/link/ui.chart_load.md - loads data from an external data source
 - api/link/ui.chart_loadnext.md - sends a request to load the specified number of records to the end or to the specified position 
 of the component
+- api/ui.chart_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.chart_mapevent.md - routes events from one object to another
 - api/link/ui.chart_parse.md - loads data to the component from an inline data source
 - api/link/ui.chart_refresh.md - repaints the whole view or a certain item
@@ -78,6 +80,7 @@ of the component
 - api/ui.chart_showseries.md - shows the hidden graph in the chart
 - api/link/ui.chart_sort.md - sorts datastore
 - api/link/ui.chart_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.chart_unbind.md - breaks "bind" link
 - api/link/ui.chart_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.chart_ungroup.md - ungroups data
 - api/link/ui.chart_updateitem.md - sets properties of the data item

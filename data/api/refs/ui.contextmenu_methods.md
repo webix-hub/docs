@@ -31,6 +31,7 @@ Methods
 - api/link/ui.contextmenu_getchildviews.md - returns child views of the calling component
 - api/link/ui.contextmenu_getcontext.md - gets the master area for contextmenu
 - api/link/ui.contextmenu_getfirstid.md - returns the ID of the first item
+- api/link/ui.contextmenu_getformview.md - returns master form for the input
 - api/link/ui.contextmenu_gethead.md - gets the ui view of the window header
 - api/link/ui.contextmenu_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.contextmenu_getindexbyid.md - returns the index of the item with the specified id
@@ -86,6 +87,7 @@ of the component
 - api/link/ui.contextmenu_showitem.md - scrolls the component to make the specified item visible
 - api/link/ui.contextmenu_sort.md - sorts datastore
 - api/link/ui.contextmenu_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.contextmenu_unbind.md - breaks "bind" link
 - api/link/ui.contextmenu_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.contextmenu_unselect.md - removes selection from the specified item
 - api/link/ui.contextmenu_unselectall.md - removes selection from all items
@@ -122,6 +124,7 @@ of the component
 - api/link/ui.contextmenu_getchildviews.md
 - api/link/ui.contextmenu_getcontext.md
 - api/link/ui.contextmenu_getfirstid.md
+- api/link/ui.contextmenu_getformview.md
 - api/link/ui.contextmenu_gethead.md
 - api/link/ui.contextmenu_getidbyindex.md
 - api/link/ui.contextmenu_getindexbyid.md
@@ -176,6 +179,7 @@ of the component
 - api/link/ui.contextmenu_showitem.md
 - api/link/ui.contextmenu_sort.md
 - api/link/ui.contextmenu_sync.md
+- api/link/ui.contextmenu_unbind.md
 - api/link/ui.contextmenu_unblockevent.md
 - api/link/ui.contextmenu_unselect.md
 - api/link/ui.contextmenu_unselectall.md

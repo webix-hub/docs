@@ -21,7 +21,7 @@ The component allows you to divide the page content into multiple groups and dis
 ~~~
 
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
+<a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
 Methods
 -------
@@ -41,6 +41,7 @@ Methods
 - api/link/ui.multiview_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/ui.multiview_getactiveid.md - returns the id of the currently visible multiview cell
 - api/link/ui.multiview_getchildviews.md - returns child views of the calling component
+- api/link/ui.multiview_getformview.md - returns master form for the input
 - api/link/ui.multiview_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.multiview_getparentview.md - returns the parent view of the component
 - api/link/ui.multiview_gettopparentview.md - returns top parent view
@@ -58,6 +59,7 @@ Methods
 - api/ui.multiview_setvalue.md - defines which view need to be shown in the multiview
 - api/link/ui.multiview_show.md - makes the component visible
 - api/link/ui.multiview_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
+- api/link/ui.multiview_unbind.md - breaks "bind" link
 - api/link/ui.multiview_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}
 
@@ -84,6 +86,7 @@ Properties
 - api/link/ui.multiview_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.multiview_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.multiview_disabled_config.md - disables item
+- api/ui.multiview_fitbiggest_config.md - sizing mode of multiview
 - api/link/ui.multiview_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.multiview_height_config.md - sets the height of the component
 - api/link/ui.multiview_hidden_config.md - defines whether the view will be hidden initially

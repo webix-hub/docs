@@ -18,6 +18,9 @@ Methods
 - api/link/ui.form_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.form_focus.md - sets focus into the necessary component
 - api/link/ui.form_getchildviews.md - returns child views of the calling component
+- api/link/ui.form_getcleanvalues.md - returns hash of original form values
+- api/link/ui.form_getdirtyvalues.md - returns hash of changed values
+- api/link/ui.form_getformview.md - returns master form for the input
 - api/link/ui.form_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.form_getparentview.md - returns the parent view of the component
 - api/link/ui.form_getscrollstate.md - returns the scroll position
@@ -43,6 +46,7 @@ Methods
 - api/link/ui.form_setvalues.md - sets values into all the form inputs
 - api/link/ui.form_show.md - makes the component visible
 - api/link/ui.form_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
+- api/link/ui.form_unbind.md - breaks "bind" link
 - api/link/ui.form_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.form_validate.md - checks data in the component during adding new item or editing existing ones
 }}
@@ -63,6 +67,9 @@ Methods
 - api/link/ui.form_enable.md
 - api/link/ui.form_focus.md
 - api/link/ui.form_getchildviews.md
+- api/link/ui.form_getcleanvalues.md
+- api/link/ui.form_getdirtyvalues.md
+- api/link/ui.form_getformview.md
 - api/link/ui.form_getnode.md
 - api/link/ui.form_getparentview.md
 - api/link/ui.form_getscrollstate.md
@@ -88,6 +95,7 @@ Methods
 - api/link/ui.form_setvalues.md
 - api/link/ui.form_show.md
 - api/link/ui.form_showbatch.md
+- api/link/ui.form_unbind.md
 - api/link/ui.form_unblockevent.md
 - api/link/ui.form_validate.md
 

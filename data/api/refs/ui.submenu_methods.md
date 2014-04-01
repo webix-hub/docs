@@ -29,6 +29,7 @@ Methods
 - api/link/ui.submenu_getbody.md - gets the ui view of the window body
 - api/link/ui.submenu_getchildviews.md - returns child views of the calling component
 - api/link/ui.submenu_getfirstid.md - returns the ID of the first item
+- api/link/ui.submenu_getformview.md - returns master form for the input
 - api/link/ui.submenu_gethead.md - gets the ui view of the window header
 - api/link/ui.submenu_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.submenu_getindexbyid.md - returns the index of the item with the specified id
@@ -84,6 +85,7 @@ of the component
 - api/link/ui.submenu_showitem.md - scrolls the component to make the specified item visible
 - api/link/ui.submenu_sort.md - sorts datastore
 - api/link/ui.submenu_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.submenu_unbind.md - breaks "bind" link
 - api/link/ui.submenu_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.submenu_unselect.md - removes selection from the specified item
 - api/link/ui.submenu_unselectall.md - removes selection from all items
@@ -118,6 +120,7 @@ of the component
 - api/link/ui.submenu_getbody.md
 - api/link/ui.submenu_getchildviews.md
 - api/link/ui.submenu_getfirstid.md
+- api/link/ui.submenu_getformview.md
 - api/link/ui.submenu_gethead.md
 - api/link/ui.submenu_getidbyindex.md
 - api/link/ui.submenu_getindexbyid.md
@@ -172,6 +175,7 @@ of the component
 - api/link/ui.submenu_showitem.md
 - api/link/ui.submenu_sort.md
 - api/link/ui.submenu_sync.md
+- api/link/ui.submenu_unbind.md
 - api/link/ui.submenu_unblockevent.md
 - api/link/ui.submenu_unselect.md
 - api/link/ui.submenu_unselectall.md

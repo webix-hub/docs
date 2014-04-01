@@ -74,6 +74,7 @@ Methods
 - api/link/ui.datatable_geteditorvalue.md - returns the value of the active (currently open) editor
 - api/ui.datatable_getfilter.md - returns the filter object that the component uses to filter the values of the specified column
 - api/link/ui.datatable_getfirstid.md - returns the ID of the first item
+- api/link/ui.datatable_getformview.md - returns master form for the input
 - api/ui.datatable_getheadercontent.md - returns set of helpers for header content manipulation
 - api/link/ui.datatable_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.datatable_getindexbyid.md - returns the index of the item with the specified id
@@ -143,6 +144,7 @@ of the component
 - api/ui.datatable_showoverlay.md - shows the overlay message over the body of DataTable
 - api/link/ui.datatable_sort.md - sorts datastore
 - api/link/ui.datatable_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.datatable_unbind.md - breaks "bind" link
 - api/link/ui.datatable_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.datatable_ungroup.md - ungroups data
 - api/ui.datatable_unselect.md - cancels selection of the specified element
@@ -189,6 +191,7 @@ Events
 - api/link/ui.datatable_onbeforesort_event.md - fires before sorting dataset
 - api/ui.datatable_onbeforeunselect_event.md - fired before a cell is unselected
 - api/link/ui.datatable_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/ui.datatable_oncolumnresize_event.md - fires when width of column was changed
 - api/link/ui.datatable_ondatarequest_event.md - fires when data from the server side is requested (part of dynamic loading)
 - api/link/ui.datatable_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.datatable_ondestruct_event.md - occurs when component destroyed
@@ -196,11 +199,13 @@ Events
 - api/ui.datatable_onheaderclick_event.md - occurs after clicking on header
 - api/link/ui.datatable_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.datatable_onitemdblclick_event.md - fires when a component item was double-clicked
+- api/link/ui.datatable_onliveedit_event.md - occurs when data was changed in the editor
 - api/link/ui.datatable_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.datatable_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.datatable_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.datatable_onmouseout_event.md - fires when the mouse was moved out from the specified item
 - api/ui.datatable_onresize_event.md - fires when the width or height of DataTable was changed
+- api/ui.datatable_onrowresize_event.md - fires when height of row was changed
 - api/ui.datatable_onscrollx_event.md - fires when the user scrolls the table left or right
 - api/ui.datatable_onscrolly_event.md - fires when the user scrolls the table up or down
 - api/ui.datatable_onselectchange_event.md - fires when selection is changed in DataTable
@@ -216,6 +221,7 @@ Properties
 ----------
 
 {{links
+- api/ui.datatable_adjustheaders_config.md - when enabled column auto-sizing will take header width in account
 - api/link/ui.datatable_animate_config.md - defines or disables view change animation.
 - api/ui.datatable_autoconfig_config.md - datatable adjust configuration to the data
 - api/ui.datatable_autoheight_config.md - adjusts DataTable to the parent container size vertically

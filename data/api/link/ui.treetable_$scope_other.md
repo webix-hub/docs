@@ -1,1 +1,1 @@
-@link: api/ui.datatable_$scope_other.md
+@link: api/ui.view_$scope_other.md

@@ -2,19 +2,18 @@ once
 =============
 
 
-@signature:
-	once()
-
-@short:
+@short: allows to call code only once
 	
 
 @params:
+- code     functor     code to execute
 
-
-@returns:
-	
 
 @example:
+
+some.attachEvent("onItemClick", webix.once(function()({
+    alert("Will be shown only for the first click");
+}))
 
 
 @template:	api_method

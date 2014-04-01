@@ -10,6 +10,7 @@ Methods
 - api/link/ui.resizer_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.resizer_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.resizer_getchildviews.md - returns child views of the calling component
+- api/link/ui.resizer_getformview.md - returns master form for the input
 - api/link/ui.resizer_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.resizer_getparentview.md - returns the parent view of the component
 - api/link/ui.resizer_gettopparentview.md - returns top parent view
@@ -18,6 +19,7 @@ Methods
 - api/link/ui.resizer_isvisible.md - checks whether the view is visible
 - api/link/ui.resizer_resize.md - adjusts the view to a new size
 - api/link/ui.resizer_show.md - makes the component visible
+- api/link/ui.resizer_unbind.md - breaks "bind" link
 }}
 
 @index:
@@ -28,6 +30,7 @@ Methods
 - api/link/ui.resizer_disable.md
 - api/link/ui.resizer_enable.md
 - api/link/ui.resizer_getchildviews.md
+- api/link/ui.resizer_getformview.md
 - api/link/ui.resizer_getnode.md
 - api/link/ui.resizer_getparentview.md
 - api/link/ui.resizer_gettopparentview.md
@@ -36,5 +39,6 @@ Methods
 - api/link/ui.resizer_isvisible.md
 - api/link/ui.resizer_resize.md
 - api/link/ui.resizer_show.md
+- api/link/ui.resizer_unbind.md
 
 

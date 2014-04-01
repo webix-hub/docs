@@ -18,6 +18,7 @@ Methods
 - api/link/dataprocessor_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/dataprocessor_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/dataprocessor_escape.md - escapes data
+- api/dataprocessor_getitemstate.md - return update state for the item in question
 - api/link/dataprocessor_hasevent.md - checks whether the component has the specified event
 - api/dataprocessor_ignore.md - the code that you pass here as the parameter will not react on any data changes (will not be affected by 'onStoreUpdated' event handler)
 - api/link/dataprocessor_mapevent.md - routes events from one object to another
@@ -27,6 +28,7 @@ Methods
 - api/dataprocessor_reset.md - reset updated state for all items
 - api/dataprocessor_save.md - mark data record as changed and initiates data saving
 - api/dataprocessor_send.md - sends a request to server. Allows to save data changes on server.
+- api/dataprocessor_setitemstate.md - set update state for the item
 - api/link/dataprocessor_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/dataprocessor_validate.md - checks data in the component during adding new item or editing existing ones
 }}
@@ -37,13 +39,14 @@ Events
 
 {{links
 - api/dataprocessor_onafter_event.md - fires each time after successfull data saving
+- api/dataprocessor_onaftersaveerror_event.md - fires for data saving errors
 - api/dataprocessor_onaftersync_event.md - called when server side response received and processed
 - api/link/dataprocessor_onaftervalidation_event.md - fires after data has been validated
 - api/dataprocessor_onbefore_event.md - fires each time before data sending of any data item
 - api/dataprocessor_onbeforedatasend_event.md - called before sending data to server side
+- api/dataprocessor_onbeforesaveerror_event.md - fires for data saving errors
 - api/dataprocessor_onbeforesync_event.md - called when server side response received, but not processed yet
 - api/link/dataprocessor_onbeforevalidate_event.md - called before runing validation
-- api/dataprocessor_onerror_event.md - fires for data saving errors which result in error
 - api/dataprocessor_onloaderror_event.md - occurs when server side response is invalid and can't be procesed
 - api/link/dataprocessor_onvalidationerror_event.md - fires when the form fails to pass validation
 - api/link/dataprocessor_onvalidationsuccess_event.md - fires after the form has passes validation successfully
@@ -64,6 +67,7 @@ Properties
 - api/link/dataprocessor_rules_config.md - defines a set of rules for input field(s) of the form(htmlform)
 - api/dataprocessor_store_config.md - allows to define datastore which will be monitored for changes
 - api/dataprocessor_trackmove_config.md - enables data moving tracking
+- api/dataprocessor_updatefromresponse_config.md - server data update mode
 - api/dataprocessor_url_config.md - server side data saving script
 }}
 

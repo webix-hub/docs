@@ -15,6 +15,7 @@ Methods
 - api/link/ui.tooltip_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.tooltip_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.tooltip_getchildviews.md - returns child views of the calling component
+- api/link/ui.tooltip_getformview.md - returns master form for the input
 - api/link/ui.tooltip_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.tooltip_getparentview.md - returns the parent view of the component
 - api/link/ui.tooltip_gettopparentview.md - returns top parent view
@@ -27,6 +28,7 @@ Methods
 - api/link/ui.tooltip_resize.md - adjusts the view to a new size
 - api/link/ui.tooltip_show.md - makes the component visible
 - api/link/ui.tooltip_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.tooltip_unbind.md - breaks "bind" link
 - api/link/ui.tooltip_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}
 
@@ -43,6 +45,7 @@ Methods
 - api/link/ui.tooltip_disable.md
 - api/link/ui.tooltip_enable.md
 - api/link/ui.tooltip_getchildviews.md
+- api/link/ui.tooltip_getformview.md
 - api/link/ui.tooltip_getnode.md
 - api/link/ui.tooltip_getparentview.md
 - api/link/ui.tooltip_gettopparentview.md
@@ -55,6 +58,7 @@ Methods
 - api/link/ui.tooltip_resize.md
 - api/link/ui.tooltip_show.md
 - api/link/ui.tooltip_sync.md
+- api/link/ui.tooltip_unbind.md
 - api/link/ui.tooltip_unblockevent.md
 
 
