@@ -62,7 +62,7 @@ status:function(f){
 **Functionality** for the "cancel" icon.
 
 ~~~js
-on_click:{ "webix_remove_upload":function(ev, id){
+on_click:{ "remove_file":function(ev, id){
 				$$(this.config.uploader).files.remove(id);}
 }
 ~~~
