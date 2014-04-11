@@ -125,11 +125,11 @@ Combo Initialization
 
 ####Advanced Setting of Combo Options
 
-The options to select can be defined outside the control with the help of the **getPopupView** function that returns a list object in a popup window. To this list you can either [load 
+The options to select can be defined outside the control with the help of the **getPopup** function that returns a object in a popup window. To this list you can either [load 
 or parse data](desktop/data_loading.md) as well as sync it with another component or [Datacollection](desktop/nonui_objects.md). 
 
 ~~~js
-$$("my_combo").getPopupView().sync("list1"); //pushes this data into combo popup 
+$$("my_combo").getPopup().getList().sync("list1"); //pushes this data into combo popup 
 ~~~
 
 {{sample 80_docs/getpopup.html }}
@@ -434,11 +434,11 @@ Another possibility to create a component with a similar functionality is [attac
     - **labelWidth** (number) - width of the label container; 
 - **options** (array, object) - sets the options to choose from in a long or short form. 
 
-The options to select can be defined outside the control with the help of the **getPopupView** function that returns **list object** in a popup window. For this list you can either [load 
+The options to select can be defined outside the control with the help of the **getPopup** function that returns a popup window. For this list you can either [load 
 or parse data](desktop/data_loading.md) as well as sync it with another component or [Datacollection](desktop/nonui_objects.md). 
 
 ~~~js
-$$("my_combo").getPopupView().sync("list1"); //pushes this data into combo popup 
+$$("my_combo").getPopup().getList().sync("list1"); //pushes this data into combo popup 
 ~~~
 
 {{sample 80_docs/getpopup.html }}
