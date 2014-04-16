@@ -25,6 +25,7 @@ Properties
 - api/link/ui.datatable_disabled_config.md - disables item
 - api/link/ui.datatable_drag_config.md - enables or disables drag-and-drop
 - api/ui.datatable_dragcolumn_config.md - enables drag-and-drop support for columns
+- api/ui.datatable_editmath_config.md - enables formular editing
 - api/link/ui.datatable_editvalue_config.md - defines which data item is editable (in case of several data item in the cell/line)
 - api/link/ui.datatable_editable_config.md - allows/denies editing in the view
 - api/link/ui.datatable_editaction_config.md - defines the action on which editors will be opened
@@ -104,6 +105,7 @@ Properties
 - api/link/ui.datatable_disabled_config.md
 - api/link/ui.datatable_drag_config.md
 - api/ui.datatable_dragcolumn_config.md
+- api/ui.datatable_editmath_config.md
 - api/link/ui.datatable_editvalue_config.md
 - api/link/ui.datatable_editable_config.md
 - api/link/ui.datatable_editaction_config.md

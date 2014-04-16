@@ -90,6 +90,7 @@ Properties
 - api/link/ui.checkbox_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.checkbox_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.checkbox_css_config.md - the name of a css class that will be applied to the view container
+- api/ui.checkbox_customcheckbox_config.md - 
 - api/link/ui.checkbox_disabled_config.md - disables item
 - api/link/ui.checkbox_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.checkbox_height_config.md - sets the height of the component
