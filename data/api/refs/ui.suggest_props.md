@@ -20,6 +20,7 @@ Properties
 - api/link/ui.suggest_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.suggest_id_config.md - the component ID
 - api/ui.suggest_input_config.md - points to an  HTML input field that houses the suggest list
+- api/ui.suggest_keypresstimeout_config.md - time between key pressing and filtering start
 - api/link/ui.suggest_left_config.md - the left offset of the window
 - api/ui.suggest_master_config.md - reference to the master view
 - api/link/ui.suggest_maxheight_config.md - sets the maximum height for the view
@@ -58,6 +59,7 @@ Properties
 - api/link/ui.suggest_hidden_config.md
 - api/link/ui.suggest_id_config.md
 - api/ui.suggest_input_config.md
+- api/ui.suggest_keypresstimeout_config.md
 - api/link/ui.suggest_left_config.md
 - api/ui.suggest_master_config.md
 - api/link/ui.suggest_maxheight_config.md

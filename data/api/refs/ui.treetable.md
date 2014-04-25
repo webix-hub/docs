@@ -262,6 +262,7 @@ Properties
 - api/link/ui.treetable_disabled_config.md - disables item
 - api/link/ui.treetable_drag_config.md - enables or disables drag-and-drop
 - api/link/ui.treetable_dragcolumn_config.md - enables drag-and-drop support for columns
+- api/link/ui.treetable_editmath_config.md - enables formular editing
 - api/link/ui.treetable_editvalue_config.md - defines which data item is editable (in case of several data item in the cell/line)
 - api/link/ui.treetable_editable_config.md - allows/denies editing in the view
 - api/link/ui.treetable_editaction_config.md - defines the action on which editors will be opened
