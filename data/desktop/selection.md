@@ -23,10 +23,15 @@ The items will be selected on mouse click.
 
 ###Selection of Multiple Items
 
-To enable selection of several items clicked in succession with 'Ctrl' key pressed, you should switch the component to the multiselect mode. 
+- To enable selection of several items clicked in succession with **'Ctrl'** key pressed, you should switch the component to the **multiselect** mode. 
+- To enable multiselection by clicking items (or tapping them on **touch** devices) you should additionally switch to **"touch"** variation of multiselection. 
+
 
 ####Dataview, List and Tree Multiselection
 
+{{snippet
+"Ctrl"+click mutliselection
+}}
 ~~~js
 webix.ui({
 	view:"list",
@@ -35,12 +40,40 @@ webix.ui({
 })
 ~~~
 
+{{snippet
+"Touch" mutliselection
+}}
+~~~js
+webix.ui({
+	view:"list",
+    select:"multiselect",
+    multiselect:"touch"
+    ..// config
+})
+~~~
+
 ####Datatable and Treetable Multiselection
 
+
+{{snippet
+"Ctrl"+click mutliselection
+}}
 ~~~js
 webix.ui({
 	view:"datatable",
-    multiselect:true, //multiple selection of cells
+    multiselect:true,
+    select:'cell', //multiple seelction of cells
+    ...// config
+})
+~~~
+
+{{snippet
+"Touch" mutliselection
+}}
+~~~js
+webix.ui({
+	view:"datatable",
+    multiselect:"touch", 
     select:'cell',
     ...// config
 })
@@ -60,6 +93,7 @@ webix.ui({
 ~~~
 
 {{sample 17_datatree/04_api/04_multi_select.html }}
+
 
 {{note
 Datatable and treetable feature more selection modes that are described in the [datatable documentation](datatable/selection.md). 

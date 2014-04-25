@@ -8,7 +8,17 @@ Suggest list can be used with the following with:
 - Webix JS [text](desktop/controls.md#text) field;
 - standard HTML input;
 - [combo](desktop/controls.md#combo) and [richselect](desktop/controls.md#richselect) (is used instead of their *options* property);
-- **editor object** within an in-component item. 
+- [editor object](desktop/editing.md) within an in-component item. 
+
+Each time you enter a symbol into an input, suggest list is refiltered to match current input value. Default **timeout** between key pressing and filtering equals to 1ms, still it can be modified by the dedicated property. 
+
+~~~js
+{
+	view:"suggest",
+    data:[..] //or url:"some.php",
+    keyPressTimeout:100ms
+}
+~~~
 
 ###Suggest List Peculiarity
 
@@ -34,13 +44,13 @@ Suggest list can be initialized as:
 
 ~~~js
 webix.ui({
-		view: "suggest",
-		input: "country4", // will be linked to 'country4' input
-		data: [
-			{id:1, value: "Albania"},
-			{id:2, value: "Bhutan"},
-		... //list of suggest values can be as long as you wish
-		]
+	view: "suggest",
+	input: "country4", // will be linked to 'country4' input
+	data: [
+		{id:1, value: "Albania"},
+		{id:2, value: "Bhutan"},
+	... //list of suggest values can be as long as you wish
+	]
 });
 
 <input type='text' id='country4' value='Sweden' />"}
@@ -66,10 +76,10 @@ Suggest List with JSON data
 }}
 ~~~js
 var countries = [
-		{id:1, value: "Albania"},
-		{id:2, value: "Bhutan"},
+	{id:1, value: "Albania"},
+	{id:2, value: "Bhutan"},
 		...
-	];
+];
   
 { view:"text", label:"Country", value:"Belarus", suggest:countries}    
 ~~~
@@ -111,7 +121,7 @@ webix.ui({
 	view:"richselect", suggest:{
     	data:[{id:1, value:"One"},
         	  {id:2, value:"Two"}, .. //options list
-                ],
+        ],
         ready: function(){
         	$$("richselect_1").setValue(this.getFirstId()); //defines the initially visible option
         }
@@ -165,10 +175,10 @@ webix.ui({
 
 ~~~js
 grida.attachEvent("onAfterEditStart", function(object) {
-		if (object.column == "year") { //only for editors in this column
-			var editor = this.getEditor(object);
-			year_suggest.linkInput(editor.getInput());
-		}
+	if (object.column == "year") { //only for editors in this column
+		var editor = this.getEditor(object);
+		year_suggest.linkInput(editor.getInput());
+	}
 });
 ~~~
 
