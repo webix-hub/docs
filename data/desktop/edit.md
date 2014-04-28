@@ -109,6 +109,24 @@ In addition, the following methods are applicable:
 
 Check editing methods in the [API reference](api/editability_edit.md).
 
+Editing via a Bind Form
+----------------------------------
+
+Webix components can be bound to another component to ensure **synchronous changing** of their **data**. For instance, a simple function can be used to bind a form to a grid, 
+which allows to edit datatable data:
+
+- clicking the component item will trigger form filling;
+- then you edit data in the form;
+- form saving will send changed data back to the component. 
+
+~~~js
+$$('form1').bind('datatable1');
+~~~
+
+{{sample 15_datatable/04_editing/13_bind_form.html}}
+
+Note that **name** attributes of form fields coincide with **properties (fields)** of the data used for the edited component. 
+
 
 ###Related Articles
 

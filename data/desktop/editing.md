@@ -16,8 +16,8 @@ webix.extend($$("list1"), webix.EditAbility); // list1 is the list ID
 
 ~~~js
 webix.protoUI({
-     name:"editlist" // any name you wish
-        }, webix.EditAbility, //the needed functionality
+    name:"editlist" // any name you wish
+}, webix.EditAbility, //the needed functionality
 webix.ui.list); //the component you'd like to edit
 ~~~
 
@@ -61,8 +61,12 @@ webix.ui({
 		<td style="text-align:center;"><img src="desktop/select_editor.png"/></td>
 	</tr>
     <tr>
-		<td> <code>editor:"combo"</code> </br></td>
+		<td> <code>editor:"combo"</code> </br><a href="desktop/editing.md#combo">Learn more</a></td>
 		<td style="text-align:center;"><img src="desktop/combo_editor.png"/></td>
+	</tr>
+    <tr>
+		<td> <code>editor:"richselect"</code> </br><a href="desktop/editing.md#richselect">Learn more</a></td>
+		<td style="text-align:center;"><img src="desktop/richselect_editor.png"/></td>
 	</tr>
     <tr>
 		<td> <code>editor:"checkbox"</code> </br><a href="desktop/editing.md#checkbox">Learn more</a> </td>
@@ -102,31 +106,42 @@ A base editor for text values of datatable and dataview cells, list rows. By def
 A customizable text editor. Here you should set a template for the editing area, type and dimensions of an input area;
 
 ~~~js
-	{id:"year",	header:"", width:80, template:"<input type='text' value='#value#' style='width:130px;'>", editor:"inline-text"},
+{ id:"year",template:"<input type='text' value='#value#' style='width:130px;'>", editor:"inline-text"}
 ~~~
+
+If you specify the **editor:"inline-text"** attribute the component will provide a special processing treat for the editor while editing: invoking edit-related events(api__refs__editability_events.html).
+
+If you don't specify the **editor** attribute you should provide the processing logic for the editor on your own. 
 
 ###Select {#select}
-A customizable editor that allow for choosing one of the offered values. The values are defined beforehand in the **options** array;
+
+A customizable editor that allow for choosing one of the offered values. It looks like a standard HTML select control.
 
 ~~~js
-var options = {
-	var film_cat = {
-	"1" : "Thriller",
-    "2" : "Crime",
-    "3" : "Western",
-	};
-};
-
-{ id:"type",	header:"Category", 	width:100, editor:"select", options:film_cat},
+{ id:"type", header:"Category",  editor:"select", options:[...]}
 ~~~
 
-Select options can be defined in a variable (as shown above) as well as in the component constructor. 
+The options can be defined by either a simple or an associatibe array as well as by url. [Look here for details](#options).
+
+###Combo {#combo}
+
+Webix [combo](desktop/controls.md#combo) control with the possibility to filter a popup list by entering symbols into the dedicated input;
 
 ~~~js
-{ ...,  editor:"select", options:{"Thriller", "Crime", "Western"}}
+{ id:"title", header:"Film title",  editor:"combo",  options:[...]}
 ~~~
 
-Still, it's better to put options into a variable, especially in case of a long set of options. In this case, the values are stored in a dataset by keys (1, 2, 3) rather than strings.  
+The options can be defined by either a simple or an associatibe array as well as by url. [Look here for details](#options).
+
+###Richselect {#richselect}
+
+Webix [richselect](desktop/controls.md#richselect) controls that is a non-editable variation of a combo editor.
+
+~~~js
+{ id:"title", header:"Film title",  editor:"richselect",  options:[...]}
+~~~
+
+The options can be defined by either a simple or an associatibe array as well as by url. [Look here for details](#options).
 
 ###Checkbox {#checkbox}
 
@@ -134,7 +149,7 @@ A checkbox editor presupposes the choice between two values (true or false). In 
 
 ~~~js
 { id:"ch3",	header:"CheckBox", options:{"true":"On","false":"Off","undefined":"Off"}, 
-template:"{common.checkbox()}", editor:"checkbox", width:40}
+	template:"{common.checkbox()}", editor:"checkbox", width:40}
 ~~~
 ###Inline-checkbox {#inlinecheckbox}
 
@@ -143,12 +158,12 @@ A customizable checkbox. You can do without a checkbox icon and define any templ
 ~~~js
 function custom_checkbox(obj, common, value){
 	if (value)
-				return "<div class='webix_table_checkbox checked'> YES </div>";
-			else
-				return "<div class='webix_table_checkbox notchecked'> NO </div>";
-		}
+		return "<div class='webix_table_checkbox checked'> YES </div>";
+	else
+		return "<div class='webix_table_checkbox notchecked'> NO </div>";
+}
 	...
-	{ id:"ch1", header:"", template:custom_checkbox, width:40, editor:"inline-checkbox"},
+{ id:"ch1", header:"", template:custom_checkbox, width:40, editor:"inline-checkbox"},
 ~~~
 
 ###Color {#color}
@@ -165,7 +180,7 @@ var tpl = "<span style='background-color:#value#; border-radius:4px;'>&nbsp</spa
 In its essence it is a [datepicker](desktop/controls.md#datepicker) that initializes a [calendar](desktop/calendar.md) to pick the necessary date. 
 
 ~~~js
- 	{map:"(date)#enddate#",	editor:"date",	header:"End date", 	width:120},
+{ map:"(date)#enddate#",	editor:"date",	header:"End date", 	width:120},
 ~~~
 
 ###Popup {#popup}
@@ -173,9 +188,11 @@ In its essence it is a [datepicker](desktop/controls.md#datepicker) that initial
 A popup window with body contents depending on data you edit. 
 
 - **textarea** - a multi-row input for editing long texts. The popup features *width: 250* and *height:50* by default. 
+
 ~~~js
-	{ id:"title",	header:"Film title", editor:"popup"}
+{ id:"title",	header:"Film title", editor:"popup"}
 ~~~
+
 - **colorboard** and **caledar** -  come in popup windows by default and are set as **date** and **color** editor types.
 
 ###$Popup 
@@ -184,7 +201,6 @@ configuration for popup editors.
 
 
 ##Popup Configuration
-
 
 You can configure editing controls inside popup windows, e.g. define other dimensions, alter properties of [textarea](desktop/controls.md#textarea), [colorboard](desktop/colorboard.md) and [calendar](desktop/calendar.md)
 (check the corresponding articles.)
@@ -207,6 +223,85 @@ Popup editors can be configured in a scope with the following code:
 		}
 	};
 ~~~
+
+##Defining options for select editors {#options}
+
+Options for select editors (**select**, **combo** and **richselect**) are defined under the common pattern width the help of **'options'** attribute of the dedicated column. There exist several possibilities:
+
+1) Options are set **directly** in the "options" attribute either in an index or associative array:
+
+{{snippet
+Options defined by a simple array in the column config 
+}}
+~~~js
+columns:[
+	{ id:"cat_id", editor:"select", options:["Crime", "Thriller", "Western"]}
+]
+~~~
+{{sample 15_datatable/04_editing/04_select.html }}
+
+{{snippet
+Options defined by an associative array in the column config
+}}
+~~~js
+columns:[
+	{ id:"cat_id", editor:"select", options:[
+    	{id:1, value: "Crime"}, 
+        {id:2, value:"Thriller"}, 
+        {id:3, value:"Western"}
+    ]}
+]
+~~~
+
+<br>
+
+2) Options are defined by a **separate variable** containing option collection. In this case the "options" attribute must be set to the name of this variable.
+
+{{snippet
+Setting select options in a variable
+}}
+~~~js
+var film_options = [
+	{id:1, value: "Thriller"},
+	{id:2, value: "Crime"},
+	{id:3, value: "Western"}
+];
+//or
+var film_options =["Crime", "Thriller", "Western"];
+...
+columns:[
+	{ id:"cat_id", editor:"select",	options:film_options, header:"Category"}
+]
+~~~
+{{sample 15_datatable/04_editing/15_combo.html }}
+
+3) Options are taken from **file** or loaded by **url** defined by "string" value of options attribute. 
+
+{{snippet
+Options loaded from an external file
+}}
+~~~js
+columns:[
+	{ id:"cat_id",  editor:"select",options:"data/options.json"}
+]    
+
+~~~
+
+{{sample 15_datatable/04_editing/20_select_server.html }}
+
+{{note
+"Options" have an alias attribute **"collection"** that features the same functionality.
+}}
+
+{{snippet
+Using "collection" to define options
+}}
+~~~js
+columns:[
+	{ id:"cat_id", editor:"combo",	collection:film_options, header:"Category"}
+]
+~~~
+
 
 ##Edit Actions
 

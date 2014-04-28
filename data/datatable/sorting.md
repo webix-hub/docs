@@ -23,7 +23,7 @@ For this purpose, DataTable provides 4 sorting types to ensure correct sorting o
 3. *string*;
 4. *string_strict* (case-sensitive 'string').
 
-To enable sorting and assign the appropriate sorting type to a column, you should specify attribute **sort** of the [columns](api/ui.datatable_columns_config.md) parameter 
+To enable sorting and assign the appropriate sorting type to a column, you should specify an attribute **sort**  among the [column's parameters](api/ui.datatable_columns_config.md) 
 and set it to some of types.
 
 {{snippet
@@ -41,6 +41,42 @@ grid = new webix.ui({
 ~~~
 
 {{sample 15_datatable/02_sorting/01_builtin.html }}
+
+{{note
+The above mentioned sorting modes work with column values defined by their **ID** attributes and ignore values either defined by column templates or provided by column options.
+}}
+
+In the sample column below column titles are sorted, yet categories are displayed (column template overrides column ID during rendering):
+
+~~~js
+{ id:"title",	template:"#cat_id#", header:"Category ID" }
+~~~
+
+In the sample column  below option IDs are sorted, yet option values are displayed:
+
+~~~js
+{ id:"cat_id",  header:"Category", collection:[
+	{ id:1, value:"Crime"}, { id:2, value:"Thriller" }]  
+}
+~~~
+
+Sorting by visible text
+----------------------------------------------
+
+Sorting by visible text is enabled width the help of **"text"** sorting mode that switches on **string** comparison for the values actually displayed in datatable columns. 
+
+It takes into account column values defined by **templates**  and collection **values** rather than IDs:
+
+~~~js
+columns:[
+	{ id:"title",template:"#cat_id#", header:"Category ID", sort:"text" },
+	{ id:"cat_id",  header:"Category",sort:"text", collection:[
+    	{ id:1, value:"Crime"}, { id:2, value:"Thriller" }]
+    }
+]
+~~~
+
+{{sample 15_datatable/02_sorting/04_by_text.html}}
 
 
 Custom sorting functions

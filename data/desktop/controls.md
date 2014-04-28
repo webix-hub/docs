@@ -117,6 +117,7 @@ Combo Initialization
 - **value** (string, number) 
 	- within **options** array it sets text value for selectable items;
  	- within Combo constructor it defines the initially selected item of the control (**option ID** in case of a full form, **option text** in case of a short form);
+- **placeholder** (string) - defines placeholder for combo input. The control should be inited without an initial value;       
 - **yCount** (number) - the number of lines in a popup;
 - **options** (array, object) - sets the options to choose from;
 - **label** (string) - text label of a control. It can be customized by:
@@ -226,6 +227,8 @@ Datepicker initialization
 - **label** (string) - text label of a control. It can be customized by:
 	- **labelAlign** (string) - label alignment towards its container. Possible values are "left" and "right".  In any way, it's placed left to the control; 
     - **labelWidth** (number) - width of the label container; 
+- **value** (string, obj) - initial value to display in the control input field;   
+- **placeholder** (string) - defines placeholder for datepicker input. The control should be inited without an initial value;   
 - **timepicker** (boolean) - enables a clock for time selection (*false* by default);
 - **date** (function) - new Date() constructor to define the initial date of a calendar. If used without parameters, shows current date;
 - **stringResult** (boolean) - sets the data type of value returned by **getValue()/get Values()** methods. If true, it returns date as string. By default the property is *false* and the method returns date object;
@@ -429,6 +432,7 @@ Another possibility to create a component with a similar functionality is [attac
 - **value** (string, number) 
 	- within **options** array it sets text value for selectable items;
  	- within richselect constructor it defines the initially selected item of the control(**ID** in case of a long form, **text value** in case of a short form of initialization);
+- **placeholder** (string) - defines placeholder for richselect input. The control should be inited without an initial value;       
 - **label** (string) - text label of a control. It can be customized by:
 	- **labelAlign** (string) - label alignment towards its container. Possible values are "left" and "right".  In any way, it's placed left to the control; 
     - **labelWidth** (number) - width of the label container; 

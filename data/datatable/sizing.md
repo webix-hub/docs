@@ -52,7 +52,12 @@ grid = new webix.ui({
 {{sample 15_datatable/11_sizing/04_fixed_size.html }}
 
 ###Column
-To set the fixed width for a column you should use **width** while configuring the column. 
+
+By default, datatable columns feature **fixed size** of **100px**. To change it, you should either:
+
+- use **width** while configuring the column to set width to a column individually, or
+- use **columnWidth** while configuring the datatable to set common width for all the columns. Like default common width, it can be overriden by individual width value.
+
 If you set the width in such a way, it will save its value regardless of any other enabled size parameters 
 (e.g. [autowidth](api/ui.datatable_autowidth_config.md)). BTW, you can set different widths for different rows.
 
@@ -71,7 +76,22 @@ grid = new webix.ui({
 });
 ~~~
 
-Note, if you set widths for columns and their sum is less than the width of the parent container, you can use the **fillspace** attribute to force some of columns to widen for filling the unused space.
+{{snippet
+Altering common width for all columns
+}}
+~~~js
+grid = new webix.ui({
+	view:"datatable",
+	columnWidth:200,
+	columns:[
+		{ id:"title", header:"Film title"},
+		{ id:"title", header:"Release year"}
+	]
+});
+~~~
+{{note
+Note that if you set widths for columns and their sum is less than the width of the parent container, you can use the **fillspace** attribute to force some of columns to widen for filling the unused space.
+}}
 
 <img src='datatable/fillspace_attribute.png'/>
 
