@@ -1,46 +1,12 @@
 Data editors
 =============
 
-##Build-In Text Editors
-
-By default, only [datatable](datatable/index.md) and [treetable](desktop/treetable.md) feature built-in editability. With other library components you should add this functionality by either 
-extending its functionality or creating a new, editable component from it. 
-
-**Extend a component with editing ability**:
-
-~~~js
-webix.extend($$("list1"), webix.EditAbility); // list1 is the list ID 
-~~~
-
-**Creating an Editable component**
-
-~~~js
-webix.protoUI({
-    name:"editlist" // any name you wish
-}, webix.EditAbility, //the needed functionality
-webix.ui.list); //the component you'd like to edit
-~~~
-
-Then, you should enable editability inside the component constructor alongside with an **editor type** and an **editAction**. Note that in case of a custom component you should specify the new component name (e.g. "editlist").
-
-~~~js
-webix.ui({
-	view:"editlist", 
-    ..config..
-    editable:true, 
-})
-~~~
-
-{{sample 05_list/05_editable.html }} 
-
-**Component Properties**:
-
-- **editor** - type of an editor(described below);
-- **editAction** - the event that enables editing. By default editability is triggered by "onItemClick" event (described below).
-- **editValue** - template of the data item that you need to edit. The property is used for components with several dataset items included into the component template.
+In this article build-in component [editors](#editors) and [edit actions](#editaction) for them are discussed. To learn about Webix editing pattern, go to the [main article](desktop/edit.md).
 
 
-##Editor Types
+
+
+##Editor Types {#editors}
 
 <table class="list" cellspacing="0" cellpadding="5" border="0">
 	<caption class="caption">
@@ -228,7 +194,7 @@ Popup editors can be configured in a scope with the following code:
 
 Options for select editors (**select**, **combo** and **richselect**) are defined under the common pattern width the help of **'options'** attribute of the dedicated column. There exist several possibilities:
 
-1) Options are set **directly** in the "options" attribute either in an index or associative array:
+1) Options are set **directly** in the "options" attribute either in an **index** or **associative array** as well as in a **JS object**:
 
 {{snippet
 Options defined by a simple array in the column config 
@@ -252,6 +218,21 @@ columns:[
     ]}
 ]
 ~~~
+
+{{snippet
+Options defined by a JS object
+}}
+~~~js
+columns:[
+	{ id:"cat_id", editor:"select", options:[
+    	"1" : "Thriller",
+    	"2" : "Crime",
+    	"3" : "Western"
+    ]}
+]
+~~~
+
+{{sample 15_datatable/04_editing/06_select_id.html}}
 
 <br>
 
@@ -302,8 +283,23 @@ columns:[
 ]
 ~~~
 
+##Datatable and treetable specificity - live editors
 
-##Edit Actions
+Webix [datatable](datatable/index.md), [treetable](desktop/treetable.md) and [property sheet](desktop/property.md)  can use any of the above mentioned editors in **live** mode and update the same data property is case it's used in another column other than the edited one.
+
+~~~js
+//"rating" is used in both columns while it can be editable ony in the first one
+columns:[
+	{ id:"rating",	header:"Count", editor:"inline-text", liveEdit:true},
+	{ template:"#rating#", width:150 }
+]
+~~~
+
+{{sample 15_datatable/04_editing/19_live_editor.html}}
+
+The moment the second column (the one that is automatically edited) changes its value, api/editability_onliveedit_event.md event takes place. 
+
+##Edit Actions {#editaction}
 
 - **'click'** - opens the editor on a single click (used by default);
 - **'dblclick'** - opens the editor on a double click;
@@ -313,9 +309,9 @@ When setting an editaction to "custom", you need to refer to UIManager and write
 
 ~~~js
 webix.UIManager.addHotKey("enter", function(view){
-		var pos = view.getSelectedId();
-		view.edit(pos);
-	}, gridc);
+	var pos = view.getSelectedId();
+	view.edit(pos);
+}, gridc);
 ~~~
 
 Here editing is enabled on pressing the "Enter" key on the selected item. 

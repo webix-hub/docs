@@ -114,9 +114,9 @@ The swithing controls are placed directly into the array of form **elements**.
 
 ##Retrieving Form Values
 
-Since form elements comprise an array you can refer to each of them by its **number** starting from 0 and get/set the value of any item. 
+####Getting value of a single element
 
-####By its **position** in an array
+Since form elements comprise an array you can refer to each of them by its **number** starting from 0 and get/set the value of any item. 
 
 ~~~js
 var form1 = [
@@ -135,21 +135,25 @@ var login = form1[0].login;// returns current input value;
 var button = form1[2].submit; //returns "Submit";
 ~~~
 
-####With the help of the **getValues()** method
+Or, you can apply **getValue()** method directly to the needed control:
 
-The function returns an array of values of all the controls in this form, whether it is input fields or checkbox or radio. To get to the necessary value, you should specify the **name** of the needed control. 
+~~~js
+$$("log").getValue();
+~~~
+
+##Getting values of all form elements
+
+To get an associative array of all elements (*name:value* pairs) you can use api/link/ui.form_getvalues.md method. To get to the necessary value, you should specify the **name** of the needed control. 
 
 ~~~js
 $$("my_form").getValues().login; //returns current value of the text input field 
 ~~~
 
-####With the help of getValue() method
+Additionally, you can get only **changed** and **unchanged** form values with the following methods respectively:
 
-The method is applied directly to the needed control specified by **ID**:
+- api/link/ui.form_getdirtyvalues.md - returns a hash of changed values;
+- api/link/ui.form_getcleanvalues.md - return hash of unchanged values.
 
-~~~js
-$$("log").getValue();
-~~~
 
 ##Disabling Form Elements
 
@@ -185,6 +189,16 @@ $$("form1").elements["login"].attachEvent("onChange", function(newv, oldv){
 ~~~
 
 {{sample 13_form/02_api/07_onchange_event.html }}
+
+##Getting parent form for the input
+
+The easiest way to get to a parent form from any of its elements is to call the api/link/ui.view_getformview.md:
+
+~~~js
+{view:"text", on:{"onChange":function(){
+	var form = this.getFormView();
+}}}
+~~~
 
 ###API Reference
 

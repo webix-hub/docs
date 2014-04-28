@@ -1,6 +1,62 @@
 Top 10 Helpers You Should Know About
 ====================================
 
+## webix.ui
+
+This method is used mainly to **instantiate Webix component** of any complexity level, either it is a control or the complete application layout. 
+
+It converts a **JSON structure** passed into it as parameter to client-side layout objects - this is what Webix is used for:) 
+
+~~~js
+webix.ui({ view:"", ... });
+~~~
+
+Normally, you need one **webix.ui()** contructor for the whole application while any **window** or **popup** needs an extra one as windows lie above page layout.
+
+~~~js
+webix.ui({ view:"window", ... }).show();
+~~~
+
+In addition, the method can be used to
+
+- **redraw layouts** (layout, multiview, form, accordion) that feature arrays in their structure:
+
+~~~js
+webix.ui({
+	view:"form", id:'myform', elements:[...]
+});
+
+//redraw form with new elements
+webix.ui([..new elements..], $$('myform'));
+~~~
+
+- **replace** any existing object:
+
+~~~js
+webix.ui({
+	id:'mylayout',
+	rows:[
+    	{view:'toolbar', ...}
+    	{view:'datatable', id:'mydatatable' ...},
+    ]
+});
+
+//replace datatable
+webix.ui({..new config..}, $$('mylayout'), $$('mydatatable'));
+~~~
+
+In this case **webix.ui()** takes the following **parameters**:
+
+- component configuration (JSON object);
+- parent component ID;
+- ID or index of the component being replaced.
+
+BTW, if you don't specify the ID for the component, it will be generated automatically. You can always get the component ID  by using:
+
+~~~js
+var id = component.config.id;
+~~~
+
 ## webix.ready
 
 This method is a cross-browser alternative to the **onDocumentReady** event and can be used instead of **onload()** method. 
@@ -11,11 +67,11 @@ It can be used multiple times.
 
 ~~~js
  webix.ready(function(){ 
-         webix.ui({
-                container:"box",
-                view:"window",
+     webix.ui({
+         container:"box",
+         view:"window",
                 ...
-         });
+     });
  })
 ~~~
 [API reference](api/_ready.md)
@@ -27,8 +83,8 @@ An easy way to bind a function to an object (inside bound function, **this** wil
   
 ~~~js
 var t = webix.bind(function(){
-             alert(this);
-        }, "master");
+    alert(this);
+}, "master");
 
 t(); //will alert "master"
 ~~~

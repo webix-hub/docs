@@ -57,6 +57,23 @@ Each object in the array specifies a single column. An object can take the follo
 				</ul>
 			</td>
 		</tr>
+        <tr>
+        	<td class="webixdoc_links0" style="vertical-align: top;"> <b>editAction</b></td>
+            <td style="vertical-align: top;">
+            	(<i>string</i>) the type of an action that would open datatable cell for editing.<br> The predefined values are:
+				<ul>
+					<li><b>click</b> - (default)  a single mouse click</li>
+					<li><b>dblclick</b> - a double mouse click </li>
+                    <li><b>custom</b> - allows adding any custom action to open the cell (descibed separately) </li>
+				</ul>
+			</td>
+		</tr>
+        <tr>
+        	<td class="webixdoc_links0" style="vertical-align: top;"> <b>liveEdit</b></td>
+            <td style="vertical-align: top;">
+            	(<i>bool</i>) sets on-the-go updating for the same data property used in different columns and edited in one of them
+			</td>
+		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>fillspace</b> </td>
 			<td>(<i>bool</i>) forces the column to widen for filling the unused table space</td>

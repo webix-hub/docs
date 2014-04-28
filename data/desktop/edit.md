@@ -109,7 +109,7 @@ In addition, the following methods are applicable:
 
 Check editing methods in the [API reference](api/editability_edit.md).
 
-Editing via a Bind Form
+Editing via a Bound Form
 ----------------------------------
 
 Webix components can be bound to another component to ensure **synchronous changing** of their **data**. For instance, a simple function can be used to bind a form to a grid, 

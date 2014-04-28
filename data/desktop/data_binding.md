@@ -88,29 +88,41 @@ For instance, if an item is selected in one of components, the same item should 
 Take for instance we have a [dataview](desktop/dataview.md) and [datatable](datatable/index.md), both synched with the same dataCollection. 
 
 ~~~js
-	var data = new webix.DataCollection({
-    	url:"../my_data.json" //load data from an external file
-        }); 
+var data = new webix.DataCollection({
+    url:"../my_data.json" //load data from an external file
+}); 
 
-	$$("dataview_1").sync(data); 
-	$$("datatable_1").sync(data);
+$$("dataview_1").sync(data); 
+$$("datatable_1").sync(data);
 ~~~
 
 The event system for [selection](desktop/selection.md) offer the **onAfterSelect** event. The function that is fired on this event takes the **ID of selected item** as parameter: 
 
 ~~~js
-	$$("dataview_1").attachEvent("onAfterSelect", function(id){
-		 	$$("datatable_1").select(id); 
-             }); //item ID of dataview coincides with that of datatable  row
+$$("dataview_1").attachEvent("onAfterSelect", function(id){
+	$$("datatable_1").select(id); 
+}); //item ID of dataview coincides with that of datatable  row
         
-	$$("datatable_1").attachEvent("onAfterSelect", function(id){
-		 	$$("dataview_1").select(id.row);
-            }); ////item ID of datatable row coincides with that of dataview item
+$$("datatable_1").attachEvent("onAfterSelect", function(id){
+	$$("dataview_1").select(id.row);
+}); //item ID of datatable row coincides with that of dataview item
 ~~~
 
 {{sample 80_docs/data_binding.html }}
 
 [Data Binding and Syncing with Non-UI objects](desktop/nonui_objects.md)
+
+##One-Time Syncing 
+
+One-time syncing allows for synchronizing the data of two components (one of them can be [DataCollection](desktop/nonui_objects.md)) at a chosen time of the application flow **without tracking data changes afterwards**.
+
+Such syncing presupposes populating one component with the data of another one and is done with api/datastore_importdata.md method:
+
+~~~js
+$$("listB").data.importData($$("listA"));
+~~~
+
+Note that it's a [DataStore](api/refs/datastore.md) method, so it should be called for component **data**.
 
 @index: 
   - desktop/nonui_objects.md

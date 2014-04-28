@@ -115,6 +115,61 @@ The moment Dataprocessor returns data, script execution begins (if other is not 
 - If serverside integration is enabled with a [Server Side Connector](desktop/dataconnector.md), the connector automatically **generates database request** corresponding to action type to treat changed data;
 - For [custom scripts](desktop/custom_serverside.md), you get **webix_operation** and other data via **POST** request and write corresponding queries for each type of operation.  
 
+
+##DataProcessor EventSystem and Error Tracking
+
+DataProcessor events ([listed in API reference](api/refs/dataprocessor.html#events)) can be used for different purposes. For instance, the events can help you:
+
+1) **Modify data** before it's gone to server with the **onBeforeDataSend** event that takes the whole dataobject as parameter:
+
+~~~js
+dp.attachEvent('onBeforeDataSend', function(obj){
+	obj.data.StartDate = webix.i18n.dateFormatStr(obj.data.StartDate);
+});
+~~~
+
+2) **Track successfull** and **unsuccessful serverside responses** separately with the help of **onAfterSync** and **onAfterSaveError** events respectively:
+
+{{snippet
+Successful server response
+}}
+~~~js
+dp.attachEvent('onAfterSync, function(id, text, data){
+	var response = data.xml(),
+    	hash = response.data;
+    //hash {type:'', tid: '', sid:''}      
+});
+~~~
+
+- **type** - type of **action** performed (*insert, update, delete*);
+- **sid** - item ID that was sent to server for update;
+- **tid** - item ID that returned from server after update. 
+
+{{note
+**tid** and **sid** will only be different in case on **insert** operation. In this case, DataProcessor automatically changes client-side ID to the ID that was generated for the item on server. 
+}}
+
+{{snippet
+Unsuccessful server response
+}}
+~~~js
+dp.attachEvent('onAfterSaveError', function(id, status, obj){
+     var operation = this.getItemState(id).operation; //operation that was performed
+});
+~~~
+
+In case of an error during saving, response **status** will always be 'error' while **type** of operation is derived by api/dataprocessor_getitemstate.md method.
+
+**Getting to a master component from DataProcessor**
+
+Inside DataProcessor event handlers you can reach the master component througn DataProcessor configuration objetc:
+
+~~~js
+dp.attachEvent('onSomeEvent', function(id, status, obj){
+   var grid = this.config.master; //this == DataProcessor
+});
+~~~
+
 ##Changing Default Processing Logic
 
 The [event system](api__refs__dataprocessor_events.html) for dataProcessor helps change the default processing logic right on client-side. 
@@ -158,75 +213,24 @@ Learn more about the possibilities of data manipulation on clent side in related
 
 ##Cancelling Dataprocessor for Some Operation
 
-Cancelling default Dataprocessor work can be useful in case of [bound](desktop/data_binding.md) data component and form. 
+Not any client-side update is to be saved to server. To temporarily cancel DataProcessor you can:
 
-**Grid** populates **form** with data each time its row is selected. At the same time, if you change data in form and save it - new data will be pushed to grid and the DataProcessor will trigger save script execution.
-
-To cancel this and save form data separately, apply api/dataprocessor_ignore.md fucntion to the Dataprocessor object. 
+- either apply api/dataprocessor_ignore.md fucntion to the Dataprocessor object. 
 
 ~~~js
-$$("form").bind($$("grid"));
-
 webix.dp("grid").ignore(function(){
-		$$("grid).add(data);	
-	});
-~~~
-
-Form data can be saved via [Webix Ajax Helper](desktop/server_ajaxsave.md).
-
-##Reloading a Single Record from the Database (for Bound Components)
-
-[Data Binding](desktop/data_binding.md) is often used to make one component a datasource for the other one the moment selection in the master one happens. **Binding is performed on client-side** and helps synchronize data
-changes.
-
-Working with server side, you need to update the master component when changes in the slave one occur, which means you need to reload this data from server.   
-
-Take you have two [datatables](datatable/index.md) ("emp_grid" and "wage_grid") that load data from different "employees" and "wages" tables, the latter being a dependent one. 
-
-<img src="desktop/db.png">
-
-~~~js
-webix.ui({
-	view:"datatable", id:"emp_grid", columns: [
-		{id:"name", template:"#first_name# #last_name#"}, //load data from 'employees' table
-        {id:"wage", template:"#wage.value#"} //loads data from 'wages' table 
-	],
-    url:"data/employee.php",
-	save:"connector->data/employee.php"
-})
-
-webix.ui({
-	view:"datatable", id:"wage_grid", columns:[
-    	{id:"date_start", .. }, //column IDs coincide with DB table titles
-        {id:"value", ..}
-    ],
-    url:"data/wages.php",
-	save:"connector->data/wages.php"
-})
-~~~
-
-Emp_grid id bound with wage_grid to be its datasource:
-
-~~~js
-$$('wage_grid').bind($$('emp_grid'), function(wage, cursor){
-	return wage.empl_id == cursor.id;
+	$$("grid).add(data);	
 });
 ~~~
 
-Cursor position is the ID of the item the cursor is set on. Here cursor position is the ID of the employee in the "wages" table, the same ID the employee has in the "employees" table.
-
-When you change wage value in the slave **wage_grid** component the data is saved to wages table, where each wage is connected with the employees by their IDs. 
-
-The event system for dataProcessor includes the **onAfterSync** event that can be used to trigger the **load()** function to update the info within the "emp_grid". 
+- switch Dataprocessor api__dataprocessor_off.html during the update operation:
 
 ~~~js
-webix.dp($$("wage_grid")).attachEvent("onaftersync", fucntion(){
-		var id = $$("emp_grid").getCursor(); //ID of the needed employee
-		$$("emp_grid").load("data/employee.php?action=get&id="+id); 
-});
+dp.on();
+$$("grid).add(data);	
+dp.off();
 ~~~
 
-Here you load only the item with the specified ID with the help of the GET request. 
 
 ##Data Validation with DataProcessor
 
