@@ -11,6 +11,8 @@ $$("table").data.unsync();
 
 
 @template:	api_method
+@relatedapi:
+	api/datastore_sync.md
 @descr:
 
 

@@ -183,7 +183,6 @@ To enable the possibility to resize columns (rows) by mouse you should use one o
 - [resizeColumn](api/ui.datatable_resizecolumn_config.md).
 
 
-
 {{snippet
 Enabling the possibility to resize columns and rows by mouse
 }}  
@@ -196,6 +195,8 @@ grid = new webix.ui({
 });
 ~~~
 {{sample 15_datatable/07_resize/03_all_resize.html }}
+
+For these resizing options there exist relevant events [onRowResize](api/ui.datatable_onrowresize_event.md) and [onColumnResize](api/ui.datatable_oncolumnresize_event.md).
 
 ###Dynamic resizing
 For dynamic resizing DataTable elements, the library offers method [resize()](api/link/ui.datatable_resize.md). 

@@ -50,6 +50,14 @@ this new data.
 
 More info on Component and Form integration via binding is in the [corresponding article](desktop/binding_details.md).
 
+Slave can  as well be **unbound** from the master by the opposite method: 
+
+~~~js
+$$('htmlform1').unbind();
+~~~
+
+From now on, list changes cannot affect form data and vice versa. 
+
 ##Syncing Data of Two Components
 
 Data syncing allows making a full or partial copy of data from one data-presenting component and pass it to the other one. Any change in the master component results in the 
@@ -57,9 +65,13 @@ same change in the slave one.
 
 There can be more than one slave component. In this case, all slaves change simultaneously on master component change. 
 
+{{note
+Note that this functionality works with components datastores, that's why **data** property is used everywhere.
+}}
+
 ####Full Syncing: 
 
-The two components are absolutely identical. 
+The datasets of the two components are absolutely identical. 
 
 ~~~js
 $$('slave_component').data.sync('master_component');
@@ -75,6 +87,14 @@ $$('dview2').data.sync($$('listA'), function(){
 		return data.year > 1994;
 	});
 }); 
+~~~
+
+####Unsyncing 
+
+If the syncing functionality is no longer needed, you can call the [unsync](api/datastore_unsync.md) command for the component that was previously synced with another one: 
+
+~~~js
+$$('dview2').data.unsync();
 ~~~
 
 [Related into on data filtering](desktop/filter_sort.md). 

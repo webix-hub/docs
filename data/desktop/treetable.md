@@ -54,7 +54,11 @@ Common Tasks here include the following and coincide with those of the datatable
 
 - [Item Editing](desktop/edit.md)
 
+{{sample 15_datatable/30_treetable/08_edit.html }}
 
+- [Using Math in treetable](datatable/formulas.md) - built-in logic for storing data as mathematic formulas as well as editing these formulas directly in treetable.
+
+{{sample 15_datatable/08_math/01_basic.html}}
 
 
 

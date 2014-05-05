@@ -18,13 +18,39 @@ Data validation is activated:
 While the first three are features of this library and work in conjunction with [validation rules](#rules), the latter is a built-in HTML5 feature. 
 }}
 
-Within form and htmlform, data validation is bound to a **submit** [button](desktop/controls.md#button) with the help of **click** [event handler](desktop/event_handling.md). 
+##Validation by API
+
+Data validation can be triggered on any event of any form element and validate any number of controls as well as the whole form:
+
+Normally, form and htmlform, data validation is bound to a **submit** [button](desktop/controls.md#button) with the help of **click** [event handler](desktop/event_handling.md):
 
 ~~~js
 { view:"button", value: "Submit", click:function(){
-			form.validate(); }
+	form.validate(); 
+}} 
+~~~
+
+At the same time, you can trigger validation whenever you like, e.g. on **onChange** event of a control: 
+
+~~~js
+{ view:"text", name: "fname", on:{
+	"onChange":function(){
+    	//either validate the whole form
+		this.getParentForm().validate(); 
+        //or validate this element only
+        this.validate();
+    }}
 } 
 ~~~
+
+##Live Validation in Forms
+
+Validation event can not only be attached to the control in a common way (as above) but by specific [validateEvent]() property that allows for automatic attaching of two events: 
+
+- **"blur"** - to start validation on **onBlur** event, when focus is moved from the control;
+- **"key"** - to start validation on **onKeyPress** event when a users enters a character into the field.
+
+Note, that this method allows for defining validation event only for this control. 
 
 In case of data components, validation can be set on data loading to ensure that data came with right values: 
  
@@ -55,7 +81,9 @@ list.validate(); // data of the whole list is validated
 
 ~~~js
 list.validate(2); //data item with id=2 will be validated
+text.validate(); //validate only this text field
 ~~~
+
 
 
 ##Validation Message
@@ -190,9 +218,9 @@ Note that in case you define rules within input constructor, the **isNotEmpty** 
 { view:"text", label:'Not empty', required:true }
 //instead of 
 { view:"text", label:'Not Empty', validate:webix.rules.isNotEmpty }
-
-
 ~~~
+
+{{sample 13_form/01_controls/19_required.html}}
 
 ##Custom Rules
 

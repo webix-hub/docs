@@ -16,6 +16,8 @@ Each next click on the same header will reverse the sorting direction.
 
 Columns can have different type of content (numbers, strings, dates) and each type of content requires its specific way of sorting.
 
+###Sorting Modes for Different Data Types
+
 For this purpose, DataTable provides 4 sorting types to ensure correct sorting of columns:
 
 1. *int*;
@@ -60,8 +62,8 @@ In the sample column  below option IDs are sorted, yet option values are display
 }
 ~~~
 
-Sorting by visible text
-----------------------------------------------
+
+###Sorting by visible text
 
 Sorting by visible text is enabled width the help of **"text"** sorting mode that switches on **string** comparison for the values actually displayed in datatable columns. 
 
@@ -78,6 +80,28 @@ columns:[
 
 {{sample 15_datatable/02_sorting/04_by_text.html}}
 
+###Triggering Server-side Sorting on Client-side
+
+It's possible to issue a request to server to sort data in backend and reload the sorted dataset to the datatable: 
+
+The option is enabled by **server** sorting mode: 
+
+~~~js
+view:"datatable",
+columns:[
+	{ id:"package",	header:"Name", sort:"server"},
+    {..}
+],
+url:"data.php"
+~~~
+
+Now, header clicking will trigger a serverside GET request with the following parameter: *sort[package]=desc* (data.php?sort[package]=desc), which allows sending: 
+
+- **operation name** (sort);
+- **data property** to sort by (here: package);
+- **sorting order** (here: desc).  
+
+The new data will be loaded to the datatable and replace the initial dataset. 
 
 Custom sorting functions
 -------------------------------------------------
