@@ -4,7 +4,7 @@ DataProcessor
 Webix DataProcessor is a functional library that lets you to ‘communicate’ with server-side backend. It
 
 - resides on the **client side** as a mixin of Webix library;
-- listens to **component events** (data adding, updating and removing) and passes **changed data** as well as **operation** performed (insert, update, delete) to the server script in **POST request**. 
+- listens to **component events**  - data adding, updating, moving ([should be enabled separately](#trackmove)) and removing - and passes **changed data** as well as **operation** performed (insert, update, delete) to the server script in **POST request**. 
 - handles **data validation** before passing to server script;
 - can be used for any UI [component](desktop/components.md) and [DataCollection](desktop/nonui_objects.md).
 
@@ -115,6 +115,20 @@ The moment Dataprocessor returns data, script execution begins (if other is not 
 - If serverside integration is enabled with a [Server Side Connector](desktop/dataconnector.md), the connector automatically **generates database request** corresponding to action type to treat changed data;
 - For [custom scripts](desktop/custom_serverside.md), you get **webix_operation** and other data via **POST** request and write corresponding queries for each type of operation.  
 
+##DataProcessor for Drag-n-Drop and Data Moving
+
+[DnD operations](desktop/dnd.md) and [data item moving](desktop/data_object.md#movingitemswithinthedatasets) can be tracked by DataProcessor like any other CRUD operation provided that you switch on 
+DataProcessor [trackMove](api/dataprocessor_trackmove_config.md) functionality. 
+
+~~~js
+new webix.DataProcessor({
+	master: tree,
+	url: "...",
+    trackMove:true
+});
+~~~
+
+{{sample 14_dataprocessor/04_tree.html}}
 
 ##DataProcessor EventSystem and Error Tracking
 

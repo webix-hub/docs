@@ -122,4 +122,33 @@ $$('dataview').select([2,3,4]); the items with IDs equalling to 2, 3 and 4
 - **isSelected(int)** - the function checks whether the item with this ID is selected. Returns *true* or *false*;
 - **getSelectedId()**  - the function doesn't take any parameters. It returns the ID of a selected item or an array of IDs in case of multiselect mode. 
 
+##Keyboard navigation
+
+Keyboard navigation can be used for the component with enabled selection.
+
+~~~js
+webix.ui({
+	view:"list",
+    select:true,
+    navigation:true
+});
+~~~
+
+{{sample 15_datatable/05_selection/09_navigation.html}}
+
+{{note
+Note than not all data components support navigation by default. Then **KeysNavigation** module should be added manually.
+}}
+
+~~~js
+webix.ui({
+	view:'dataview', id:"dataview1", select:true, navigation:true
+});
+
+webix.extend($$('dataview1'), webix.KeysNavigation);
+~~~
+
+The code above adds navigation only to this instance of a Dataview, still it's possible to provide the functionality for all dataviews in the app.  
+For more details, refer to [Component Extending](desktop/desktop/extend.md#extendedfunctionality) article.
+
 @complexity:1
