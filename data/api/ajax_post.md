@@ -20,9 +20,10 @@ webix.ajax().post("data.php", { filter : "123" }, function(text, xml, xhr){
 });
 
 @template:	api_method
+@related:
+	helpers/ajax_operations.md
+    desktop/serverside.md
 @descr:
-
-
 
 The callback function takes 3 parameters:
 

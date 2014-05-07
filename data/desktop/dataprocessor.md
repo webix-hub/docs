@@ -29,11 +29,11 @@ When you define **url** (path to the necessary script) as value of **save** prop
 ~~~js
 webix.ui({
 	view:"datatable",
-    ..config..
+    //..config..
     url: "data.php", //script that links to DataConnector and loads data
     save: "connector -> data.php" //the same script used for data processing
     
-    or
+    //or
     url:"data_load.php", //your custom script for loading
     save:"data_save.php" //you custom script for saving
 });
@@ -68,7 +68,7 @@ Full Form
 dp = new webix.DataProcessor({
 	url: "data.php", 
 	master: $$('mylist'),
-    ..//optional properties
+    //optional properties
 });
 ~~~
 
@@ -170,6 +170,40 @@ dp.attachEvent('onSomeEvent', function(id, status, obj){
 });
 ~~~
 
+##Data Updating from Server Response
+
+As it was stated earlier, the **new ID** from response of **insert** request will automatically replace the temporary client-side ID. This is part of default DataProcessor behavior, and no specific actions are required. 
+
+Additionally, yuo can enable **automatic data update** for all fields taking part in **insert** and **update** operations. It requires the following additions to the code:
+
+- tune serverside response to return the whole data object (not only status or IDs); 
+- enable DataProcessor **autoupdate** functionality:
+
+{{snippet
+Either during explicit DataProcessor definition
+}}
+~~~js
+~~~js   
+new webix.DataProcessor({
+	updateFromResponse:true, 
+	master:"datatable1",
+	url:"..."
+});    
+~~~
+
+{{snippet
+Or when defining DataProcessor implicitely
+}}
+~~~js
+view:"datatable",
+save:{
+	url:"...", 
+    updateFromResponse:true
+}
+~~~
+
+It can be uselful for REST-full applications or when you need to fill in client-side fields which values can be calculated only on server side, etc.
+
 ##Changing Default Processing Logic
 
 The [event system](api__refs__dataprocessor_events.html) for dataProcessor helps change the default processing logic right on client-side. 
@@ -223,7 +257,7 @@ webix.dp("grid").ignore(function(){
 });
 ~~~
 
-- switch Dataprocessor api__dataprocessor_off.html during the update operation:
+- switch Dataprocessor api/dataprocessor_off.md during the update operation:
 
 ~~~js
 dp.on();
@@ -239,13 +273,25 @@ process starts each time you try to save data to the database.
  
 ~~~js   
 dp = new webix.DataProcessor({
-		rules:{
-        	$all:webix.rules.isNotEmpty 
-        },
-		url: "save.php", 
-		master: $$('mylist')
+	rules:{
+        $all:webix.rules.isNotEmpty 
+   	},
+	url: "save.php", 
+	master: $$('mylist')
+});
+~~~
+
+##Sending Headers with DataProcessor-based Requests
+
+There exists no possibility to send headers with DataProcessor requests as they are executed in background. However, you can catch Webix [onBeforeAjax](api/onbeforeajax.md) event to modify ANY Ajax request on the page (so be attentive): 
+
+~~~js
+webix.callEvent("onBeforeAjax", function(mode, url, data, request){
+ 	request.setRequestHeader("Content-type","application/json");
 })
 ~~~
+
+Note that Webix [Ajax module](helpers/ajax_operations.md) features a **built-in functionality** for sending **headers** with serverside requests. The above solution is only for DataProcessor Ajax requests. 
 
 ###Related Article
 

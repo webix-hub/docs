@@ -40,8 +40,12 @@ By creating a Backbone view that houses this component
 }}
 ~~~js
 MyView = WebixView.extend({
-	config:{ view:"list", id:"mylist", width:200,
-			template:"#title#", select:true 
+	config:{ 
+    	view:"list", //Webix list config
+        id:"mylist", 
+        width:200,
+		template:"#title#", 
+        select:true 
     },
     afterRender:function(){
 		this.getChild("mylist").sync(this.options.collection); // syncing after rendering

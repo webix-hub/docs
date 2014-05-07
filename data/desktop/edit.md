@@ -84,7 +84,7 @@ Note that editing allows for on-page changes only and doesn't presuppose automat
 
 There's a collection of methods to enable and control editing. 
 
-Generally, you can switch any data item to the editable state with the **edit()** method that requires item ID as parameter
+Generally, you can switch any data item to the editable state with the **edit()** method that requires item ID as parameter:
 
 ~~~js
 editlist.edit(7);
@@ -109,15 +109,17 @@ In addition, the following methods are applicable:
 
 Check editing methods in the [API reference](api/editability_edit.md).
 
-Editing via a Bound Form
+Editing via a Form
 ----------------------------------
 
-Webix components can be bound to another component to ensure **synchronous changing** of their **data**. For instance, a simple function can be used to bind a form to a grid, 
+###Form and Component Binding
+
+Webix components can be bound to each other to ensure select-based **synchronous changing** of their **data**. For instance, a simple function can be used to bind a form to a grid, 
 which allows to edit datatable data:
 
 - clicking the component item will trigger form filling;
 - then you edit data in the form;
-- form saving will send changed data back to the component. 
+- form [saving] will send changed data back to the component. 
 
 ~~~js
 $$('form1').bind('datatable1');
@@ -125,7 +127,41 @@ $$('form1').bind('datatable1');
 
 {{sample 15_datatable/04_editing/13_bind_form.html}}
 
-Note that **name** attributes of form fields coincide with **properties (fields)** of the data used for the edited component. 
+Note that **name** attributes of form fields coincide with **properties (fields)** of the data used for the edited component while the component can be [non-editable](api/editability_editable_config.md) itself. 
+You can [study data binding separately](desktop/data_binding.md).
+
+###Related Form for an Editable Component
+
+Webix editing API allows to attach a form  without data binding as well. Unlike binding, it works only for [editable](api/editability_editable_config.md) components.
+
+First of all, you need to define the related form inside a master component with the help of [form](api/editability_form_config.md) property:
+
+~~~js
+	view:"datatable", 
+	editable:true,
+	form:'myform' //ID or object of related form/popup
+~~~
+
+A form should be defined separately, either in [layout](desktop/layout.md) or in [popup](desktop/popup.md). 
+
+~~~js
+view:"form",
+id:"myform",
+elements:[...]  
+
+//or
+view:"popup", 
+id:"myform",
+body:{
+    view:"form", elements:[...]
+   }
+
+~~~
+
+Note that: 
+
+- ID or object attached to a component by the **form** property should point to either a form, or a popup in which the form lies;
+- In case of a **popup**, it can be initialized hidden so that it will be shown only when editing starts (when you click data item in master component). 
 
 
 ###Related Articles

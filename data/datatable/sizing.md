@@ -56,7 +56,8 @@ grid = new webix.ui({
 By default, datatable columns feature **fixed size** of **100px**. To change it, you should either:
 
 - use **width** while configuring the column to set width to a column individually, or
-- use **columnWidth** while configuring the datatable to set common width for all the columns. Like default common width, it can be overriden by individual width value.
+- use **columnWidth** while configuring the datatable to set common width for all the columns. Like default common width, it can be overriden by individual width value, or
+- use **minWidth** property in the column configuration to define minimal width for it. If there's more space initially or after resizing, column width will br increased, but it can never be less than *minWidth* value.  
 
 If you set the width in such a way, it will save its value regardless of any other enabled size parameters 
 (e.g. [autowidth](api/ui.datatable_autowidth_config.md)). BTW, you can set different widths for different rows.
@@ -71,7 +72,7 @@ grid = new webix.ui({
 	...
 	columns:[
 		{ id:"title", header:"Film title" ,   width:80},
-		{ id:"title", header:"Release year" , width:50}
+		{ id:"title", header:"Release year" , minWidth:50}
 	]
 });
 ~~~
@@ -110,6 +111,8 @@ grid = new webix.ui({
 ~~~
 {{sample 15_datatable/09_columns/02_autosize_column.html }}
 
+There can be more than one **fillspace** in the datatable; in this case width will be calculated on percent basis. 
+
 If you want to adjust the width of a column to fit the related content size, you can use attribute **adjust**.
 
 {{snippet
@@ -126,6 +129,8 @@ grid = new webix.ui({
 })
 ~~~
 {{sample 15_datatable/09_columns/01_size_by_content.html }}
+
+
 
 ###Row
 To set the fixed height for a row you should use **$height** while defining the data you will load into DataTable. If you set the height in such a way, it will save its value regardless of any other enabled size parameters (e.g. - [autoheight](api/ui.datatable_autoheight_config.md)).
@@ -174,6 +179,8 @@ By resizing we mean 2 possible scenarios:
 
 - resizing columns, rows by hovering, dragging mouse over some border;
 - setting other sizes for DataTable elements programmatically. 
+
+{{sample 15_datatable/07_resize/10_row_auto_height.html}}
 
 ###Mouse resizing
 
@@ -288,6 +295,14 @@ webix.event(window, "resize", function(){ grid.adjust(); })
 ~~~
 
 {{sample 15_datatable/11_sizing/03_resize_win.html }}
+
+###Dynamic Adjusting Columns and Rows
+
+To dynamically adjust column width of row height to the size of their content, you can you the corresponding methods: 
+
+- [**adjustColumn(id)**](api/ui.datatable_adjustcolumn.md) - adjusts the with of a chosen column specified by its ID;
+- [**adjustRowHeight(id)**](api/ui.datatable_adjustrowheight.md) = adjusts height of a chosen tow specified by its ID. The method can slow down the application. 
+
 
 Scrolling
 -------------

@@ -3,8 +3,11 @@ Data editors
 
 In this article build-in component [editors](#editors) and [edit actions](#editaction) for them are discussed. To learn about Webix editing pattern, go to the [main article](desktop/edit.md).
 
+##Opening and Closing Editors
 
-
+- an editor for the component is enabed, or opened, by the [**editAction**](#editaction) that is defined for the whole component;
+- an editor is closed by **moving focus outside the editor** (e.g. clicking another component part) or by hotkeys **'Enter'** for saving the new value
+ and **'Esc'** for exiting without saving.
 
 ##Editor Types {#editors}
 
@@ -67,15 +70,20 @@ A base editor for text values of datatable and dataview cells, list rows. By def
 { id:"title", header:"Film title", editor:"text",
 ~~~
 
+{{sample 15_datatable/04_editing/01_basic.html}}
+
 ###Inline-text {#inlinetext}
 
 A customizable text editor. Here you should set a template for the editing area, type and dimensions of an input area;
 
 ~~~js
-{ id:"year",template:"<input type='text' value='#value#' style='width:130px;'>", editor:"inline-text"}
+{ id:"year",template:"<input type='text' value='#value#' style='width:130px;'>", 
+	editor:"inline-text"}
 ~~~
 
-If you specify the **editor:"inline-text"** attribute the component will provide a special processing treat for the editor while editing: invoking edit-related events(api__refs__editability_events.html).
+{{sample 15_datatable/04_editing/09_inline_editors.html}}
+
+If you specify the **editor:"inline-text"** attribute the component will provide a special processing treat for the editor while editing: invoking [edit-related events](api/refs/editability_events.md).
 
 If you don't specify the **editor** attribute you should provide the processing logic for the editor on your own. 
 
@@ -87,6 +95,8 @@ A customizable editor that allow for choosing one of the offered values. It look
 { id:"type", header:"Category",  editor:"select", options:[...]}
 ~~~
 
+{{sample 15_datatable/04_editing/04_select.html}}
+
 The options can be defined by either a simple or an associatibe array as well as by url. [Look here for details](#options).
 
 ###Combo {#combo}
@@ -96,6 +106,8 @@ Webix [combo](desktop/controls.md#combo) control with the possibility to filter 
 ~~~js
 { id:"title", header:"Film title",  editor:"combo",  options:[...]}
 ~~~
+
+{{sample 15_datatable/04_editing/15_combo.html}}
 
 The options can be defined by either a simple or an associatibe array as well as by url. [Look here for details](#options).
 
@@ -107,6 +119,8 @@ Webix [richselect](desktop/controls.md#richselect) controls that is a non-editab
 { id:"title", header:"Film title",  editor:"richselect",  options:[...]}
 ~~~
 
+{{sample /15_datatable/04_editing/18_richselect.html}}
+
 The options can be defined by either a simple or an associatibe array as well as by url. [Look here for details](#options).
 
 ###Checkbox {#checkbox}
@@ -114,9 +128,29 @@ The options can be defined by either a simple or an associatibe array as well as
 A checkbox editor presupposes the choice between two values (true or false). In general, yon can assign any value to "true" and "false" checkbox states. 
 
 ~~~js
-{ id:"ch3",	header:"CheckBox", options:{"true":"On","false":"Off","undefined":"Off"}, 
-	template:"{common.checkbox()}", editor:"checkbox", width:40}
+{ id:"ch3",	header:"CheckBox",template:"{common.checkbox()}", editor:"checkbox"}
 ~~~
+
+The notation above does nothing with checkbox value. If you want to derive its value as data item property, you should either: 
+
+1) Define checkbox options with values for each state: 
+
+~~~js
+{ id:"ch3", template:"{common.checkbox()}", editor:"checkbox", options:{
+	"true":"On","false":"Off","undefined":"Off"}
+~~~
+
+{{sample 15_datatable/04_editing/09_inline_editors.html}}
+
+2) Set **checkValue** and **unCheckValue** pair:
+
+~~~js
+{ id:"ch1", checkValue:'on', uncheckValue:'off', template:"{common.checkbox()}", 
+	editor:"checkbox"}
+~~~
+
+{{sample 15_datatable/04_editing/07_checkbox.html}}
+
 ###Inline-checkbox {#inlinecheckbox}
 
 A customizable checkbox. You can do without a checkbox icon and define any template for boolean values, even a styled text. 
@@ -132,15 +166,21 @@ function custom_checkbox(obj, common, value){
 { id:"ch1", header:"", template:custom_checkbox, width:40, editor:"inline-checkbox"},
 ~~~
 
+{{sample 15_datatable/04_editing/08_custom_checkbox.html}}
+
 ###Color {#color}
 
 It is used for editing color value in the dataset with the help of a [colorboard](desktop/colorboard.md). Colors are stored as hex codes; hence, you should set an appropriate template for a component item to display 
 the chosen result as color, for instance, make a colored background. 
+
 ~~~js
-var tpl = "<span style='background-color:#value#; border-radius:4px;'>&nbsp</span> #value#";
+var tpl="<span style='background:#value#; border-radius:4px;'>&nbsp</span> #value#";
 
 { id:"start", editor:"color", template:tpl, header:"Color A",width:120}
 ~~~
+
+{{sample 15_datatable/04_editing/11_colorpicker.html}} 
+
 ###Date {#date}
 
 In its essence it is a [datepicker](desktop/controls.md#datepicker) that initializes a [calendar](desktop/calendar.md) to pick the necessary date. 
@@ -148,6 +188,8 @@ In its essence it is a [datepicker](desktop/controls.md#datepicker) that initial
 ~~~js
 { map:"(date)#enddate#",	editor:"date",	header:"End date", 	width:120},
 ~~~
+
+{{sample 15_datatable/04_editing/10_dates.html}}
 
 ###Popup {#popup}
 
@@ -158,6 +200,8 @@ A popup window with body contents depending on data you edit.
 ~~~js
 { id:"title",	header:"Film title", editor:"popup"}
 ~~~
+
+{{sample 15_datatable/04_editing/12_text_popup.html}}
 
 - **colorboard** and **caledar** -  come in popup windows by default and are set as **date** and **color** editor types.
 

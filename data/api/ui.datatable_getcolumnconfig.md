@@ -46,3 +46,7 @@ calling <code>getColumnConfig("title")</code> will return the object as in:
     width:200
 }
 ~~~
+
+{{note
+Note that the method works for **hidden** column as well.
+}}

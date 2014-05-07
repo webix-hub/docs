@@ -27,6 +27,23 @@ You can change the request to a synchronous one (sometimes it may be useful).
 }
 ~~~
 
+##Modifying  Background Ajax Requests
+
+There exists no possibility to modify background Ajax requests sent by the above pattern. 
+
+However, you can catch Webix [onBeforeAjax](api/onbeforeajax.md) event to modify ANY Ajax request on the page (so be attentive): 
+
+{{snippet
+Sending Headers
+}}
+~~~js
+webix.callEvent("onBeforeAjax", function(mode, url, data, request){
+ 	request.setRequestHeader("Content-type","application/json");
+})
+~~~
+
+Note that Webix [Ajax module](helpers/ajax_operations.md) (described below) features a **built-in functionality** for sending **headers** with serverside requests. 
+
 ##Loading with Webix Ajax Helper
 
 To load data on demand without breaking application flow, you can resort to [Webix Ajax interface](helpers/ajax_operations.md). 

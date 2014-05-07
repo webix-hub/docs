@@ -7,7 +7,7 @@ Version 1.5
 
 ### Improvments in DataTable
 - adjustRowHeight method added to datatable ( autodetects and applies the correct row height )
-- fillspace can be used for multiple columsn ( pecent based sizing in datatable ) 
+- fillspace can be used for multiple columns ( pecent based sizing in datatable ) 
 - richselect can be used as editor in the datatable
 - checkboxes can have checkValue and uncheckValue options
  

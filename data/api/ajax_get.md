@@ -19,6 +19,10 @@ webix.ajax().get("data.php", { filter : "123" }, function(text, xml, xhr){
 	alert(text);
 });
 
+@related:
+	helpers/ajax_operations.md
+    desktop/serverside.md
+
 @template:	api_method
 @descr:
 

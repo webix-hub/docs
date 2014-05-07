@@ -112,6 +112,21 @@ For more details, read article datatree/selection.md.
 
 Expanding/collapsing branches
 ------------------------------
+
+Tree nodes are collapsed and expanded 
+
+- by clicking on a **"+/-"** icon or a node (default behavior);
+- by clicking on a **node text** provided that **activeTitle** ptoperty is defined for the tree. 
+
+~~~js
+view:"tree", 
+activeTitle:true, //false by default
+data:[...]
+~~~
+
+{{sample 17_datatree/01_loading/01_json_data.html}}
+
+
 Tree provides several methods to manage 'open'/'close' state of a node. They are:
 
 <table class='list'>

@@ -135,6 +135,46 @@ Afterwards the calendar will look like this:
 
 {{sample 09_calendar/07_calendar_localized.html }}
 
+##Disabling Period in Calendar
+
+The whole calendar can be disabled by a common property:
+
+~~~js
+{view:"calendar", disabled:true}
+~~~
+
+<img src="desktop/calendar_disabled_dates.png"/>
+
+To disable a certain period in the calendar, which presupposes specific CSS and blocking of click events, you can go by the two ways: 
+
+**Defining "active" period**
+
+Use the dedicated **minDate** and **maxDate** properties to limit the period that will be available for clicking and, hence, selecting: 
+
+~~~js
+view:"calendar",
+minDate:'2012-04-05',
+maxDate:new Date(2012, 4, 20),
+~~~
+
+The dates can be defined either as **date object** or **date string** formatted under the current [locale](desktop/localization.md). Here the default **en-US** parseFormat is used, "%Y-%m-%d"
+
+**Defining "blockDates" function for custom logic**
+
+The function should return true for the dates that should be disabled in the calendar. Here all date up to 2014 will be disabled:
+
+~~~js
+view:"calendar",
+blockDates:function(date){
+   if(date.getFullYear()<=2013)
+     	return true;
+}
+~~~
+
+{{sample 09_calendar/08_disabled_dates.html}} 
+
+CSS class applied for disabled dates (**webix_cal_day_disabled**) can be redefined. 
+
 ###API Reference
 
 [Methods, properties and events](api__refs__ui.calendar.html)

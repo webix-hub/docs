@@ -13,6 +13,10 @@ getXHR
 var ajax = webix.ajax();
 console.log(ajax.getXHR);
 
+@related:
+	helpers/ajax_operations.md
+    desktop/serverside.md
+
 @template:	api_method
 @descr:
 

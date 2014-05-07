@@ -1,7 +1,7 @@
 DataProcessor 
 =============
 
-{{memo Handles clien-server data saving operations. }}
+{{memo Handles client-server data saving operations. }}
 
 
 

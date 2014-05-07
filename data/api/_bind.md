@@ -12,17 +12,25 @@ bind
 - code		function	the bound function 
 
 @example:
-var t = webix.bind(function(){
-	//this == dtable
-	...
-}, dtable);
-t(); 
 
-
+var grid = webix.ui({
+	view:"datatable", 
+    on:{
+    	"onStoreUpdated":webix.bind(this.render, this)
+    }
+});
+//'this' refers to a datatable object
 
 @template:	api_method
 @descr:
 
-Inside the function the **this** keyword becomes a reference to the object's scope
+Inside the function the **this** keyword becomes a reference to the object's scope.
+
+Function and component binding works as well during attaching the function with an [attachEvent](api/eventsystem_attachevent.md) method:
+
+~~~js
+grid.attachEvent("onStoreUpdated", webix.bind(this.render, this)); 
+//'this' is still a grid object since attachEvent() is called from it
+~~~
 
 

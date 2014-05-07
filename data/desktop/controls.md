@@ -3,27 +3,52 @@ Form Controls
 
 ##Button {#button}
 
+**Standard Buttons**
+
 <img src="desktop/buttons.png"/>
 
-{{snippet
-Button Initialization
-}}
 ~~~js
-{ view:"button", id:"my_button", value:"Button", type:"...", inputWidth:100 }
+{ view:"button", id:"my_button", value:"Button", type:"...", inputWidth:100 } 
+//types are descriped below
 ~~~
 
 {{sample 13_form/01_controls/10_buttons.html }}
 
+**HTML Buttons**
+
+<img src="desktop/html_buttons.png"/>
+
+~~~js
+{ view:"button", id:"my_button", value:"Button", type:"htmlbutton"}
+~~~
+
+{{sample 02_toolbar/12_styled_buttons.html}}
+
+####Main Button Types
+
+Type of a button defines the way is looks like: 
+
+- base (**no type**) - default button;
+- **'form'** - a button for a form (darker than standard);
+- **'danger'** - a red button to attract user attention;
+- **'prev'** - a button with left arrow;
+- **'next'** - a button with right arrow;
+- **'htmlbutton'** - a button than can be defined by HTML markup;
+- ['image'](#imagebutton) and its variations - a button with an image on it;
+- ['icon'](desktop/icon_types.md) and its variations - a button with an icon in it.
+
+
 ####Main properties
 
-- **value** (string) - defines the text displayed on the button;
-- **type** (string)  - defines the type of the button, the way is looks (base (no type), 'form', 'danger', 'prev', 'next' as well as ['image'](#imagebutton) and ['icon'](desktop/icon_types.md) and their variations);
+- **value** (string) - defines the text displayed on standard buttons (basic, *form*, *danger*, *prev*, *next*);
+- **label** (string) - defines the text or/and HTML markup for the button of *imabeButton* and *iconButton* types and their valiarions as well as for *htmlbutton*;
 - **width** (number) - sets the width of the button;
 - **inputWidth** (number) - sets the width of the text on the button and adjusts button's width to it;
 - **image** (string) - sets a path to the button icon;
 - **align** (string)- positions a button with relation to a parent view;
 - **popup** (string)- defines the ID of a popup window that will be shown on button click;
-- **click** (function) - defines a function that will be executed on clicking the button (another possibility is to attach an event to it using the button's ID).
+- **click** (function) - defines a function that will be executed on clicking the button (another possibility is to attach an event to it using the button's ID);
+- **css** (string) - name of CSS class applied to a button.
 
 {{note
 Specific button types as [imagebutton](#imagebutton) and an [icon button](desktop/icon_types.md) feature images / icons in their bodies and are described separately. 
@@ -55,7 +80,9 @@ Checkbox Initialization
     - **labelWidth** - width of the label container;      
 - **labelRight** (string) - set the text of right-hand label. Only checkbox features this functionality;
 - **value** (boolean) - defines whether the checkbox is selected by default or not (0 for false, 1 for true); 
-- **align** (string)- positions button with relation to a parent view.
+- **align** (string)- positions button with relation to a parent view;
+- **checkValue** (string) - value of the checkbox in the checked state (1 by default);
+- **uncheckValue** (string) - value of the checkbox in the unchecked state (0 by default);
 
 [Controls Common Functionality](desktop/controls_guide.md)
 
@@ -324,7 +351,7 @@ Image Button Initialization
 ####Main Properties
 
 - **image** (path) - path to the desired image;
-- **label** (string) - text on button by the image;
+- **label** (string) - text on a button by the image;
 - **type** (string) - defines the type of a button. Numbers indicate image sizes:
 	- *image* - an image with a left-hand label (if any); 
     - *imageTop* - an image with a bottom label;

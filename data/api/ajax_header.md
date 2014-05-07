@@ -17,6 +17,9 @@ webix.ajax().header({
     'Accept-Language': 'en-US'
 })
 
+@related:
+	helpers/ajax_operations.md
+    desktop/serverside.md
 @template:	api_method
 @descr:
 The default header definition  is  <code> { 'Content-type': 'application/x-www-form-urlencoded' }</code>.

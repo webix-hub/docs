@@ -137,6 +137,59 @@ Note that any HTML outside "webix-ui" block is parsed as standard markup while a
 
 Data loading issues are explained [separately](desktop/angular_controllers.md).
 
+###Rendering Arrays 
+
+Webix to Angular integration allows for rendering both arrays of components as well as arrays in component configuration with Angulat **ng-repeat** directive.
+
+**Rendering an array of the same Webix components**
+
+**Webix-ui** directive can be combined with Angular **ng-repeat** to render an arry of views
+
+~~~html
+<div webix-ui>
+    <div ng-repeat="chart in charts" view="chart">
+</div>
+~~~
+
+where *chart* is a scope variable that includes an array of component configurations:
+
+~~~js
+$scope.charts = [
+    { data:chart_data, series:[...] },
+    { data:chart_data, series:[...] }
+  ];
+~~~
+
+**Rendering arrays within component configuration**
+
+Arrays in component config are denoted by **stack** property. Inside array notation you can use **ng-repeat** to iterate through it and specify the information to display:
+
+~~~html
+<config stack='series'>
+    <config ng-repeat="serie in chart.series" value="#{{serie.template}}#"></config>
+</config>
+~~~
+
+where *series* is a property of scope *chart* variable that contains an object with chart series config:
+
+~~~js
+{ 
+	data:chart_data, 
+	series:[ 
+    	{ template:"sales3", color:"#ff8" }, 
+        { template:"sales", color:"#f8f" }
+    ] 
+}
+~~~
+
+{{sample 33_angular/07_ng_repeat.html}}
+
+###Rendering Complex Layouts
+
+Webix-Angular integration allows for complex application design with different inter-related Webix components in it. 
+
+For more details, study the dedicated sample {{sample 33_angular/08_complex.html}}
+
 ###Further Reading
 
 - [Angular Controllers and Data Loading](desktop/angular_controllers.md) **Webix-data** directive;
