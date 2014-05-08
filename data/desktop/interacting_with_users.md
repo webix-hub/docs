@@ -9,5 +9,6 @@ Interacting with Users
 - desktop/controls_guide.md
 - desktop/event_handling.md
 - desktop/uimanager.md
+- desktop/active_content.md
 }}
 

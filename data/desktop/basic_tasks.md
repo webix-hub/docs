@@ -105,6 +105,7 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
                     <li><a href="desktop/uploader_integration.md">Uploading Files with Form Component</a></li>
  					<li>desktop/event_handling.md</li>
                     <li><a href="desktop/uimanager.md">Keyboard Events and App Navigation</a></li>
+                    <li><a href="desktop/active_content.md">Adding Active Elements to Components</a></li>
             </ul>
         </td>
         <td class='topic_description' onclick="displaySubList('interactions')">Describes various ways you can communicate with users: events, message boxes, forms and their controls</td>

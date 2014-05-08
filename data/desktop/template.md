@@ -30,6 +30,8 @@ webix.ui({
 }); 
 ~~~
 
+Dymanic content setting can be implemented with the [setContent](api/ui.template_setcontent.md) method.
+
 {{note
 Template doesn't need to have **view** attribute. The following code goes as well. 
 }}

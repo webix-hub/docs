@@ -59,9 +59,27 @@ webix.UIManager.setFocus("books");
 
 ##Attaching Keyboards Events to the Components. 
 
-Keyboard events are essential in managing the app from keyboard devices.  You can navigave through the app as well as within several components with the help of usual keys like 'up' and 'down', 'delete', 'tab', etc. 
+###Default Keyboard Events
 
-Keyboard can be connected to your application in two ways: 
+1) In-component tab navigation is a default feature for such data components as [datatable](datatable/index.md) and [list](desktop/list.md). It can be enabled by the corresponding [navigation](api/keysnavigation_navigation_config.md) property: 
+
+~~~js
+{
+	view:"datatable", 
+    navigation:true
+}
+~~~
+
+Other data components need to be extended with the [KeysNavigation](api/refs/keysnavigation.md) module. Consult the [dedicated article](desktop/selection.md#navigation) for details.  
+
+2) 'Esc' key closes a non-modal [window](desktop/window.md) when it is focused. 
+
+3) [Editors](desktop/editing.md) of data component items react on the following keys: 
+
+- 'esc' - to close without saving data changes;
+- 'enter' - to close with data changes saved.
+
+For other situations keyboard can be connected to your application in two ways: 
 
 ###Attaching Keyboard events 
 
@@ -76,11 +94,11 @@ In the code below the 'Enter' key opens 'details' accordionitem. Before this, yo
 }}
 ~~~js
 $$("books").attachEvent("onKeyPress", function(code, e) {
-if (code === 13 && !e.ctrlKey && !e.shiftKey && !e.altKey) {
-					$$('details').getParentView().expand('details');
-					return false;
-                    }
-   });
+	if (code === 13 && !e.ctrlKey && !e.shiftKey && !e.altKey) {
+		$$('details').getParentView().expand('details');
+	return false;
+    }
+});
 ~~~
 
 These events require that a developer should know key codes used by UI Manager. Here they are: 
@@ -187,7 +205,7 @@ Saving and getting the state is also available for the treecomponent, where simi
 UIManager helps save and restore only the outer view parameters while inner ones like selection and scrolling direction are saved within the [DataState](api__refs__datastate.html) module. 
 }}
 
-##Tab Navigation 
+##Global Tab Navigation 
 
 ###Tab/focus Order Logic
 
@@ -211,7 +229,7 @@ then move to the other, then will proceed to other components and return to the 
 If you want to exclude a single component from tab navigation order, make use of the **tabFocus** property, which is true by default:
 
 ~~~
-	{view:'text' tabFocus: false, ... }
+{view:'text' tabFocus: false, ... }
 ~~~
 
 {{note
@@ -226,11 +244,12 @@ The 'tab-navigated' components must be children of one and the same layout since
 Tab Navigation between form and toolbar
 }}
 ~~~js
-webix.ui({rows:[
+webix.ui({
+	rows:[
 		{view:"form",..},
-        {view:"toolbar",...}
+    	{view:"toolbar",...}
 	]
-	})
+});
 ~~~
 
 In case of two separate webix.ui constructors you have two separate objects without the possibility to shift focus from one to the other with the help of a 'tab' key. So move a mouse pointer instead.
@@ -242,11 +261,11 @@ Tab navigation won't work!
 ~~~js
 webix.ui({
 	view:"form", ..config..
-		});
+});
         
 webix.ui({
 	view:"toolbar", ..config..
-		});
+});
 ~~~
 
 

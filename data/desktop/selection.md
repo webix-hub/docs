@@ -122,7 +122,7 @@ $$('dataview').select([2,3,4]); the items with IDs equalling to 2, 3 and 4
 - **isSelected(int)** - the function checks whether the item with this ID is selected. Returns *true* or *false*;
 - **getSelectedId()**  - the function doesn't take any parameters. It returns the ID of a selected item or an array of IDs in case of multiselect mode. 
 
-##Keyboard navigation
+##Keyboard navigation {#navigation}
 
 Keyboard navigation can be used for the component with enabled selection.
 
