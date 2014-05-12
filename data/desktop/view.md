@@ -40,7 +40,7 @@ webix.ui({
 
 Working within several views you can refer to the components with respect to their hierarchy or by using the view's unique ID. 
 
-##Enpty View
+##Empty View
 
 Views can as well be **empty**. An empty view is two braces **{}** you put btween meaningful components to leave space between them. 
 
@@ -124,7 +124,7 @@ var bar_id = $$("my_layout").getChildViews()[0].id; //returns toolbar ID
 var but_id = $$("my_toolbar").getChildViews()[1].id //returns the ID of the 2nd button
 ~~~
 
-###4 . getIndex() 
+###4 . index() 
 
 Like the above mentioned one, this method works with views containing other views that are stored in an array ( the property may be called *cols, rows, elements, options* depending on the component).
 

@@ -19,12 +19,34 @@ To add the new view (layout row and column, multiview cell, accordion panel, as 
 Adding a button to the toolbar
 }}
 ~~~js
-var added = [];
 var id = $$("toolbar").addView({
 	view:"button", value:"new button", 
 }, index);
-added.push(id);
 ~~~
+
+**Index** defines position where the new component or control should be inserted among the children of the parent component. It can be 
+
+- first (index 0);
+- last (index -1);
+- any. Index of any view can be derived with the help of [index](api/ui.baselayout_index.md) method that can be called for layout-like Webix components ([layout](desktop/layout.md), [multiview](desktop/multiview.md),
+[accordion](desktop/accordion.md), [carousel](desktop/carousel.md), [form](desktop/form.md)). 
+
+{{snippet
+Adding View
+}}
+~~~js
+webix.ui({
+	id:"layout1",
+	rows:[
+    	{view:"text", id:"text1"},
+    	{view:"button", value:"Add View", click:addView}
+    ]
+});
+
+var pos = $$("layout1").index($$("text1"));
+$$("layout1").addView({view:"text", id:"text2"}, pos);
+~~~
+
 
 The newly added view can be sized during adding according to [common rules](desktop/dimensions.md) as well as later on via [property (re)defining](desktop/redefinition.md).
 
@@ -36,7 +58,5 @@ The newly added view can be sized during adding according to [common rules](desk
 Removing a buttom from the toolbar
 }}
 ~~~js
-var id = added.pop();
-if (id)
-	$$("toolbar").removeView(id);
+$$("toolbar").removeView(id);
 ~~~

@@ -196,7 +196,6 @@ Additionally, yuo can enable **automatic data update** for all fields taking par
 {{snippet
 Either during explicit DataProcessor definition
 }}
-~~~js
 ~~~js   
 new webix.DataProcessor({
 	updateFromResponse:true, 
@@ -259,7 +258,9 @@ Learn more about the possibilities of data manipulation on clent side in related
 - [Data Updating](desktop/update.md)
 - [Data Editing](desktop/edit.md)
 
-##Cancelling Dataprocessor for Some Operation
+##Cancelling and Enabling Dataprocessor for Some Operation
+
+**Cancelling DataProcessor**
 
 Not any client-side update is to be saved to server. To temporarily cancel DataProcessor you can:
 
@@ -279,6 +280,36 @@ $$("grid).add(data);
 dp.off();
 ~~~
 
+- cancel automatic data sending via DataProcessor [autoupdate](api/dataprocessor_autoupdate_config.md) property. 
+
+~~~js
+//initially during dp configuration
+new webix.DataProcessor({
+	updateFromResponse:true, 
+	master:"datatable1",
+	url:"...",
+    autoupdate:false
+});  
+
+//dynamically
+webix.dp($$("datatable1")).define("autoupdate", false);
+~~~
+
+**Enabling Dataprocessor**
+
+The following concerns only disabled DataProcessor or the one with the changed behavior or if you need to emulate DataProcessor logic. In other cases DataProcessor performs the below described actions automatically. 
+
+To enable DataProcessor, and hence, trigger, sending its data to server, [save](api/dataprocessor_save.md) method should be used with **item ID** and **operation name** as parameters:
+
+~~~js
+webix.dp($$("datatable1")).save(1, 'update');
+~~~
+
+To get all changes in the component and send them to server, [send](api/dataprocessor_send.md) method should be used: 
+
+~~~js
+webix.dp($$("datatable1")).send();
+~~~
 
 ##Data Validation with DataProcessor
 

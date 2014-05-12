@@ -4,7 +4,7 @@ Angular JS Integration
 Webix-Angular App Structure
 ---------------------------
 
-To use **Angular JS framework** for Webix component you should:
+To use **Angular JS framework** for <a href="http://webix.com/widgets/" title="javascript widget">Webix component</a> you should:
 
 - include **Angular** and **Webix** scripts into the document. Note that order does matter here - Angular JS script must come first;
 - set **ngApp directive** to the document root to bootstrap an application. For convenience means, it's recommended to use **"webixApp"** as **module name**.  

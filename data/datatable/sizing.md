@@ -53,6 +53,8 @@ grid = new webix.ui({
 
 ###Column
 
+**Fixed column width**
+
 By default, datatable columns feature **fixed size** of **100px**. To change it, you should either:
 
 - use **width** while configuring the column to set width to a column individually, or
@@ -90,9 +92,11 @@ grid = new webix.ui({
 	]
 });
 ~~~
-{{note
-Note that if you set widths for columns and their sum is less than the width of the parent container, you can use the **fillspace** attribute to force some of columns to widen for filling the unused space.
-}}
+
+**Relative Sizing**
+
+If you set widths for columns and their sum is less than the width of the parent container, you can use the **fillspace** attribute to force some of columns to widen for filling the unused space.
+
 
 <img src='datatable/fillspace_attribute.png'/>
 
@@ -107,11 +111,26 @@ grid = new webix.ui({
 		{ id:"title", header:"Film title", fillspace:true},
 		...
 	]
-})
+});
 ~~~
 {{sample 15_datatable/09_columns/02_autosize_column.html }}
 
-There can be more than one **fillspace** in the datatable; in this case width will be calculated on percent basis. 
+There can be more than one **fillspace** in the datatable; in this case width will be calculated on the base of a proportion defined by numeric values: 
+
+~~~js
+grid = new webix.ui({
+	view:"datatable",
+	...
+	columns:[
+		{ id:"id", header:"ID", fillspace:1},
+		{ id:"title", header:"Film title", fillspace:4}
+	]
+});
+~~~
+
+In the code above *title* column is 4 times bigger then *id* column, which is 20 to 80 percent relation. 
+
+**Adjusting column to its content**
 
 If you want to adjust the width of a column to fit the related content size, you can use attribute **adjust**.
 

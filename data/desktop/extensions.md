@@ -1,6 +1,6 @@
 UI Extensions
 ===========================
-Except for a main line of UI components, the library provides a number of helpful extensions to simplify your development. 
+Except for a main line of <a href="http://webix.com/widgets/" title="ui widgets">UI components</a>, the library provides a number of helpful extensions to simplify your development. 
 Most of the extensions are task-oriented and intended to accomplish a certain purpose. They are already quite configurable and need only initializing on the page to start serving.
 
 <br>
