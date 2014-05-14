@@ -101,7 +101,7 @@ Colorpicker Initialization
 
 {{sample 24_colorpicker/04_in_form.html }}
 
-Colorpicker is used with ui-related [colorboard](desktop/colorboard.md) that is initialized on clicking the control. Colorpicker allows selecting a color from the board for its further usage. 
+<a href="http://webix.com/widget/colorpicker/" title="webix colorpicker widget">Colorpicker</a> is used with ui-related [colorboard](desktop/colorboard.md) that is initialized on clicking the control. Colorpicker allows selecting a color from the board for its further usage. 
 
 ####Main Properties
 

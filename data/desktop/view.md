@@ -17,14 +17,16 @@ webix.ui({
 Views themselves can be put other views thus creating a complex app structure with parent and child components. View features **IDs** that differentiate them from other views in the document: 
 {{snippet
 Default ID
+}}
 ~~~js
 webix.ui({
 	rows:[
-		{view:"list", ...}, //gets "list1" ID
-        {view:"list", ...} //gest "list2" ID
+		{view:"list", ...}, //gets "$list1" ID
+        {view:"list", ...} //gets "$list2" ID
     ]
 });
 ~~~
+
 Still, it's much more convenient to define custom 'speaking' IDs to the views. 
 
 {{snippet

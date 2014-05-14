@@ -29,7 +29,7 @@ var id = $$("toolbar").addView({
 - first (index 0);
 - last (index -1);
 - any. Index of any view can be derived with the help of [index](api/ui.baselayout_index.md) method that can be called for layout-like Webix components ([layout](desktop/layout.md), [multiview](desktop/multiview.md),
-[accordion](desktop/accordion.md), [carousel](desktop/carousel.md), [form](desktop/form.md)). 
+[accordion](desktop/accordion.md), [carousel](desktop/carousel.md), [form](desktop/form.md), [toolbar](desktop/toolbar.md)). 
 
 {{snippet
 Adding View
@@ -52,10 +52,10 @@ The newly added view can be sized during adding according to [common rules](desk
 
 ###Removing View
 
-**RemoveView()** method removes only the views added with the **addView()**. The method takes **view object** or its **id** as an argument.
+**removeView()** method removes components from layouts and is called from the parent component to remove any of its children. The method takes a child **view object** or its **id** as an argument. 
 
 {{snippet
-Removing a buttom from the toolbar
+Removing a button from the toolbar
 }}
 ~~~js
 $$("toolbar").removeView(id);

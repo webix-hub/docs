@@ -3,7 +3,7 @@ ContextMenu
 
 ###Overview
 
-Contextmenu is triggered by right mouseclick. Ui-related Contextmenu inherits from both [window](desktop/window.md) and [list](desktop/list.md). It looks like
+Contextmenu is triggered by right mouseclick. Ui-related <a href="http://webix.com/widget/contextmenu/" title="webix contextmenu widget">Contextmenu</a> inherits from both [window](desktop/window.md) and [list](desktop/list.md). It looks like
 ui-related [menu](desktop/menu.md) and shares most of its properties, methods and events. 
 
 <img style="display:block; margin-left:auto;margin-right:auto;"   src="desktop/contextmenu.png" />

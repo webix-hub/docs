@@ -3,7 +3,7 @@ Layout and Resizer
 
 ##Overview 
 
-Layout is a concept element that doesn't contain anything in itself yet determines the way 'meaningful' components are arranged. It divides the page into 
+<a href="http://webix.com/widget/layout-accordion/" title="webix component layout">Layout</a> is a concept element that doesn't contain anything in itself yet determines the way 'meaningful' components are arranged. It divides the page into 
 **rows** and **columns** where all other components are placed. 
 
 <img style="display:block; margin-left:auto;margin-right:auto;"   src="desktop/layout_01.png"/>
