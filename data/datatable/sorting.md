@@ -1,6 +1,6 @@
 DataTable Sorting
 =======
-DataTable allows you to sort data rows on the client side.
+DataTable allows you to <a href="http://webix.com/widget/datatable/" title="sort datatable component">sort data rows</a> on the client side.
 There are 2 ways to invoke sorting in the table:
 
 1. [By a single click on the header of a column with the enabled **sort** attribute](#sortingbyaclickontheheader);

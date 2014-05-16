@@ -1,7 +1,7 @@
 Styling
 =======
 You can use CSS in conjunction with DataTable content to achieve the desired look-and-feel. 
-This article will help you to cover support of cascading style sheets (CSS) in DataTable.
+This article will help you to cover support of <a href="http://webix.com/widget/datatable/" title="css datatable component">cascading style sheets (CSS) in DataTable</a>.
 
 You can fine-tune the style of:
 

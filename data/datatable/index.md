@@ -1,7 +1,7 @@
 DataTable
 ====================
 
-DataTable is a pure JavaScript library that provides professional look-and-feel 
+<a href="http://webix.com/widget/datatable/" title="javascript datatable component">DataTable</a> is a pure JavaScript component that provides professional look-and-feel 
 and convenient programming model for displaying data in a scrollable and sortable table.
 It&#146;s a powerful yet easy-to-use  control <br> that supports different data sources (xml, json, csv, jsarray, html tables) 
 and has various possibilities (filtering, sorting, pagination, resizing, styling, copying etc.) 

@@ -1,6 +1,6 @@
 DataTable Editing
 =========================
-DataTable is an editable component, i.e. users have the possibility to edit it manually.
+DataTable is an <a href="http://webix.com/widget/datatable/" title="edit datatable component">editable component</a>, i.e. users have the possibility to edit it manually.
 
 Generally, to make the table editable you should set parameter api/link/ui.datatable_editable_config.md to true.
 

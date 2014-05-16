@@ -1,6 +1,6 @@
 DataTable Filtering
 ===================
-The library provides ability to filter data on client-side by one or several criteria using for this built-in or customly created filters.
+The library provides ability to <a href="http://webix.com/widget/datatable/" title="filter in datatable widget">filter data</a> on client-side by one or several criteria using for this built-in or customly created filters.
 
 
 Filters in the header

@@ -1,7 +1,7 @@
 Selection with Datatable
 ==========
 
-In DataTable you can specify different types of selection depending on your needs.
+In DataTable you can specify different types of <a href="http://webix.com/widget/datatable/" title="datatable select">selection</a> depending on your needs.
 
 Available modes are:
 
