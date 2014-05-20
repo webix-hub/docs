@@ -39,4 +39,62 @@ tooltip:{
 }
 ~~~
 
+##Datatable Tooltip
+
+Datatable tooltip is defined is quite another way. Several steps are possible: 
+
+- Setting **tooltip:true** for the whole component. It enables tooltip functionality for the grid and shows tooltip for each column showing the row value that stands as ID for this column.
+
+{{snippet
+General datatable tooltip
+}}
+~~~js
+webix.ui({
+	view:"datatable",
+    tooltip:true,
+    columns:[
+    	{id:"name", header:"Name"},
+        {id::"age", header:"Age"}
+    ],
+    data:[
+    	{id:1, name:"Ann", age:25},
+        {id:2, name:"Tom", age:27}
+    ]
+});
+//the tooltip for the first column of the first row is "Ann"
+~~~
+
+- **Customizing** tooltip data for each column. Tooltip should be switch on for the whole grid:
+
+~~~js
+webix.ui({
+	view:"datatable",
+    tooltip:true,
+    columns:[
+    	{id:"name", header:"Name", tooltip:"My name is #name#. I'm #age#."},
+        {id::"age", header:"Age"}
+    ],
+    data:[
+    	{id:1, name:"Ann", age:25},
+        {id:2, name:"Tom", age:27}
+    ]
+});
+//tooltip for the first column of the first row is "My name is Ann. I'm 25."
+~~~
+
+- Setting tooltip for datatable **header**. Tooltip should be switch on for the whole grid:
+
+~~~js
+webix.ui({
+	view:"datatable",
+    tooltip:true,
+    columns:[
+    	{id:"name", header:"<span title='My tooltip text'>Name</span>"},
+        {id::"age", header:"Age"}
+    ]
+});
+//tooltip for the Name column is "My tooltip text"
+~~~
+
+
 @complexity:2

@@ -72,6 +72,13 @@ webix.message({
 
 If you cancel expire period, such message will disappear only on mouse click.
 
+Message boxes can as well be hidden **programmatically**:
+
+~~~js
+var message = webix.message("Hi!");
+webix.message.hide(message);
+~~~
+
 ##Modal Message Boxes
 
 **Message boxes** resemble ui-related modal [Window](desktop/window.md) yet they are initialized in a completely another way. They prevent the workflow on the parent app until 

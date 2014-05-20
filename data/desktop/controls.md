@@ -367,7 +367,7 @@ Image Button Initialization
 
 <img src="desktop/label.png"/>
 
-Ui-related label is a plain text. Like other components, it features specific **label** property that sets text value. 
+Ui-related label is a non-scrollable placeholder for plain text. Like other components, it features specific **label** property that sets text value. 
 
 {{snippet
 Label Initialization
@@ -383,6 +383,13 @@ Label Initialization
 - **label** (string) - defines text of the label control;
 - **inputWidth** (number) - defines the width of the control;
 - **align** (string) - positions the label with relation to the parent view.
+
+Label control can be used to render any user HTML or icons (as well as built-in in Webix FontAwesome icons):
+
+~~~js
+{ view:"label", label:"<span class='myCss'>My Label</span>"},
+{ view:"label", label:"<span class='webix_icon fa-user'></span> My Label" }
+~~~
 
 [Controls Common Functionality](desktop/controls_guide.md)
 

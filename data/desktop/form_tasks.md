@@ -7,23 +7,24 @@ The most commonly used methods here include:
 
 Sets all the form values in one scope. Its argument is an object than contains 'property-value' pairs where new values are assigned to form elements.
 
-Form elements (text fields, radios and checkboxes) are referred by either their **IDs** or **names**. 
+Form elements (text fields, radios and checkboxes) are referred by either their **names**. 
 
 ~~~js
 webix.ui({
-	rows:[{	view:"form", id:"myform", elements:[
-			{ view:"text", id:'field_a', label: 'from', value: "Madrid"},
-			{ view:"text", id:'field_b', label: 'to', value: "Milan"}]
-	},
-	{ view:"button", label: 'Fill form', click:"set_form" }]
+	rows:[
+    	{ view:"form", id:"myform", elements:[
+			{ view:"text", name:'field_a', label: 'from', value: "Madrid"},
+			{ view:"text", name:'field_b', label: 'to', value: "Milan"}
+        ]},
+		{ view:"button", label: 'Fill form', click:"set_form" }]
 });
  
 function set_form(){
 	$$('myform').setValues({
-			field_a: "London",
-			field_b: "New York"
-			});
-	};
+		field_a: "London",
+		field_b: "New York"
+	});
+};
 ~~~
 
 There's a second parameter for the function that is responsible for **further form updates**. 
@@ -45,8 +46,8 @@ Loads values from a data file. Here you should pass the path to a data file as w
 
 ~~~js
 function load_form() {
-				$$('myform').load("./data/book.xml", "xml");
-			}
+	$$('myform').load("./data/book.xml", "xml");
+}
 ~~~
 
 ###**getValues()** 
@@ -55,9 +56,9 @@ Gets all the form values for their further usage. In the snippet below form valu
 
 ~~~js
 function get_form() {
-				var values = $$('myform').getValues();
-				console.log(values);
-			}
+	var values = $$('myform').getValues();
+	console.log(values);
+}
 ~~~
 
 ###**clear()** 
@@ -66,8 +67,8 @@ Clears all the form fields.
 
 ~~~js
 function clear_form() {
-				$$('myform').clear();
-			}
+	$$('myform').clear();
+}
 ~~~
 
 ###**focus()** 
@@ -75,18 +76,16 @@ function clear_form() {
 Sets the focus into the desired field. If used without arguments sets focus into the component it's called from. In case the item's ID is passed into the function, the corresponding item gets focus. 
 
 ~~~js
-
-
-	<input type="button" value="Focus author" onclick="focus_form('author');" /> //htmlform
-	<input type="button" value="Focus genre" onclick="focus_form('genre');" />
+<input type="button" value="Focus author" onclick="focus_form('author');" /> //htmlform
+<input type="button" value="Focus genre" onclick="focus_form('genre');" />
             
-            ...
+...
 function focus_form(item) {
-				if (!item)
-					$$('htmlform1').focus();
-				else
-					$$('htmlform1').focus(item);
-			}
+	if (!item)
+		$$('htmlform1').focus();
+	else
+		$$('htmlform1').focus(item);
+}
 ~~~
 
 {{sample 11_htmlform/01_htmlform_body.html }}
@@ -96,7 +95,7 @@ function focus_form(item) {
 Checks whether changes within form were made. The method is called before validation the form and saving form values and/or sending them to server.
 
 ~~~js
- function save_form(){
+function save_form(){
  	var form = $$('form1');
     if(form.isDirty()){
     	if(!form.validate())
@@ -115,11 +114,11 @@ Binds the form to other component. In the snippet below list becomes a datasourc
 [More info](desktop/data_binding.md) on Data Binding
 
 ~~~js
-	<div>
-		<input type="number" name="rank" />
-		<input type="text" name="title" />
-		<input type="date" name="year" />
-    </div>
+<div>
+	<input type="number" name="rank" />
+	<input type="text" name="title" />
+	<input type="date" name="year" />
+</div>
 <script type="text/javascript">
 webix.ui({
 	view:"list", 
@@ -127,7 +126,6 @@ webix.ui({
 
 $$('htmlform1').bind($$('list1'));
 //on clicking any list item the form is filled with the same values
-
 </script>
 ~~~
 {{sample 11_htmlform/05_htmlform_binding.html }}

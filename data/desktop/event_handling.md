@@ -273,7 +273,7 @@ $$("component_id").blockEvent();
 $$("component_id").unblockEvent();
 ~~~
 
-##Event Handling with HTML nodes
+##Event Handling with HTML nodes. Handling of native DOM events
 
 Alongside with components and their items events can be as well attached to HTML nodes. Here **event();** and **eventRemove()** functions are used: 
 
