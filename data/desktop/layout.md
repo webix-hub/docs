@@ -153,6 +153,10 @@ webix.ui({
 01_layout/01_resizer.html
 }}
 
+{{note
+**Responsive layout behavior** depending on window/screen size in discussed [separately](desktop/responsive_layout.md). 
+}}
+
 ##Headers
 
 Check how to make headers for different components [here](desktop/setting_headers.md). 

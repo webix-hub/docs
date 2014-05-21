@@ -135,7 +135,7 @@ Afterwards the calendar will look like this:
 
 {{sample 09_calendar/07_calendar_localized.html }}
 
-##Disabling Period in Calendar
+##Disabling Period in Calendar {#blockdates}
 
 The whole calendar can be disabled by a common property:
 

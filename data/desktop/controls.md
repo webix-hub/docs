@@ -723,10 +723,10 @@ Tabbar Initialization
 }}
 ~~~js
 {view:"tabbar", id:'tabbar', value: 'listView', multiview:true, options: [
-                                    { value: 'List', id: 'listView'},
-                                    { value: 'Form', id: 'formView'},
-                                    { value: 'Empty', id: 'emptyView'}
-                                ]
+      { value: 'List', id: 'listView'},
+      { value: 'Form', id: 'formView'},
+      { value: 'Empty', id: 'emptyView'}
+   ]
 }
 ~~~
 ####Main properties
@@ -738,7 +738,10 @@ Tabbar Initialization
     - within Tabbar constructor it defines the tab that will be shown initially on page loading.
 - **type** (string) - if set to "bottom", the tabbar gets other styling and is placed below the multiview area;
 
-[Adding and Deleting Tabs (Options) on the Go](desktop/tabs_options.md)
+####Advanced Tabbar Usage
+
+- [Adding and Deleting Tabs (Options) on the Go](desktop/tabs_options.md)
+- [Dynamic Tabbar](desktop/responsive_tabbar.md)
 
 [Controls Common Functionality](desktop/controls_guide.md)
 
@@ -895,4 +898,5 @@ Toggle type is defined by the **type** property. If it isn't defined, a standard
   - desktop/button_groups.md
   - desktop/suggest.md
   - desktop/tabs_options.md
+  - desktop/responsive_tabbar.md
   

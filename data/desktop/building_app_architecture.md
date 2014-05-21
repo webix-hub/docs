@@ -185,13 +185,13 @@ var list2 = $$("mylist");
 
 ###What's Next
 
-To learn how to set various **border types** or create a borderless design, consult the [dedicated article](desktop/borders.md).
-
-To learn how to **set headers** for components in layout rows, cols, multiview cells, etc, study the [corresponding article](desktop/setting_headers.md).
-
-Layouts can be **sized** according to common rules described in the [Sizing Components](desktop/dimensions.md) article. 
+- To learn how to set various **border types** or create a borderless design, consult the [dedicated article](desktop/borders.md).
+- To learn how to **set headers** for components in layout rows, cols, multiview cells, etc, study the [corresponding article](desktop/setting_headers.md).
+- Layouts can be **sized** according to common rules described in the [Sizing Components](desktop/dimensions.md) article. 
+- Layouts can respond to changes of window size. Learn [how to tune responsive behaviour](desktop/responsive_layout.md).
 
 @index:
   - desktop/view.md
+  - desktop/responsive_layout.md
 
 @complexity:1
