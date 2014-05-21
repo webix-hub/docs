@@ -133,7 +133,10 @@ In the code above *title* column is 4 times bigger then *id* column, which is 20
 
 **Adjusting column to its content**
 
-If you want to adjust the width of a column to fit the related content size, you can use attribute **adjust**. It is defined for the needed column individually:
+If you want to adjust the width of a column to the related content size, you can use attribute **adjust**. It is defined for the needed column individually and features two modes:
+
+- **data** - adjusts column width to the content of the widest item in it;
+- **header** - adjusts column width to its header content
 
 {{snippet
 Adjusting the column width to fit the content size
@@ -143,7 +146,8 @@ grid = new webix.ui({
 	view:"datatable",
 	...
 	columns:[
-		{ id:"title", header:"Film title", adjust:true},
+		{ id:"title", header:"Film title", adjust:"data"},
+        { id:"rank", header:"Rank", adjust:"header"}
 		...
 	]
 })
@@ -154,16 +158,6 @@ grid = new webix.ui({
 {{note
 Note that resulting column width after adjusting won't be lesser than **minWidth** for this column provided that the latter is set. 
 }}
-
-If you want that column width should depend on **header size**, use **adjustHeaders** property. It is defined for the whole grid:
-
-~~~js
-grid = webix.ui({
-    view:"datatable",
-    adjustHeaders:true,
-    ...
-});
-~~~
 
 ###Row
 To set the fixed height for a row you should use **$height** while defining the data you will load into DataTable. If you set the height in such a way, it will save its value regardless of any other enabled size parameters (e.g. - [autoheight](api/ui.datatable_autoheight_config.md)).

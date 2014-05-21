@@ -145,6 +145,8 @@ The whole calendar can be disabled by a common property:
 
 <img src="desktop/calendar_disabled_dates.png"/>
 
+{{sample 09_calendar/08_disabled_dates.html}} 
+
 To disable a certain period in the calendar, which presupposes specific CSS and blocking of click events, you can go by the two ways: 
 
 **Defining "active" period**
@@ -170,8 +172,6 @@ blockDates:function(date){
      	return true;
 }
 ~~~
-
-{{sample 09_calendar/08_disabled_dates.html}} 
 
 CSS class applied for disabled dates (**webix_cal_day_disabled**) can be redefined. 
 

@@ -215,6 +215,8 @@ save:{
 }
 ~~~
 
+{{sample 40_serverside/01_php_vanila/10_datatable_update.html}}
+
 It can be uselful for REST-full applications or when you need to fill in client-side fields which values can be calculated only on server side, etc.
 
 ##Changing Default Processing Logic

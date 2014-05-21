@@ -7,7 +7,8 @@ Built-in Proxy Objects
 
 There's a list of ready-to-use Webix proxy objects that can be used by adding prefixes to a loading script.
 
-- **offline** and **cache**  - for application [offline support](desktop/server_offline.md);
+- **offline** and **cache**  - for application [offline support](desktop/server_offline.md) of applications that use serverside data;
+- **local** - for saving component data into browser local storage and working with it. Described as part of [offline support](desktop/server_offline.md) article;
 - **connector**  - for saving data via [Server Side Connector](desktop/dataconnector.md);
 - **rest** - for working with server in [REST mode](desktop/server_rest.md);
 - **post** - for loading data in POST request (GET by default);
@@ -27,7 +28,7 @@ var list = {
 grid.load("rest->load.php")
 ~~~
 
-##Using methods of Biult-in Proxy Objects
+##Using methods of Built-in Proxy Objects
 
 Methods of a proxy object are called from the **url** of the component it's used for: 
 

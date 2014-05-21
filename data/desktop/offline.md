@@ -73,12 +73,19 @@ many times as you wish;
 
 **Cache** mode: 
 
-- The component will work only with cached data without trying to get to server;
+- Once data has been loaded to a component it is put to cache (local storage) and later on the component will work only with cached data without trying to get to server;
 - Data changes you make while either offline or online are pushed to cache and should be sent to server manually.
 
-Working with cached data
+**Local** mode: 
+
+- The component works with in-browser local storage only. Data is loaded from there (is any), and all CRUD operations are saved to local storage;
+- You can access localStorage objects to get data from and put data to. 
 
 Read also main [Offline Support](desktop/server_offline.md) article. 
+
+##Working with cached data
+
+
 
 Although Webix library offers a ready-to-use solution, you can write your own [proxy object](desktop/server_proxy.md) to enable offline support and set it as the component's **url** property:
 
@@ -107,5 +114,7 @@ webix.ui({
 
 - **onAfterEditStop** event is used to catch data changes and put edited data to cache;
 - cached data is inline data, that's why it is **parsed** into a component, not loaded. 
+
+
 
 @complexity:3

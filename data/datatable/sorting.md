@@ -95,6 +95,8 @@ columns:[
 url:"data.php"
 ~~~
 
+{{sample 40_serverside/01_php_vanila/11_datatable_sort_filter.html}}
+
 Now, header clicking will trigger a serverside GET request with the following parameter: *sort[package]=desc* (data.php?sort[package]=desc), which allows sending: 
 
 - **operation name** (sort);
@@ -102,6 +104,10 @@ Now, header clicking will trigger a serverside GET request with the following pa
 - **sorting order** (here: desc).  
 
 The new data will be loaded to the datatable and replace the initial dataset. 
+
+{{note
+If [serverFilter](datatable/filtering.md) is enabled for this column, the data will be both filtered and sorted on serverside before returning to client. 
+}}
 
 Custom sorting functions
 -------------------------------------------------

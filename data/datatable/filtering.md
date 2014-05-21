@@ -7,7 +7,7 @@ Filters in the header
 --------------------------
 You can define built-in filter in the header or footer of a column. The following types of filters are available:
 
-- **textFilter** - text filter. Retrieves values which contain mask defined through text field.
+- **textFilter** - text filter. Retrieves values that contain mask defined through text field.
 - **selectFilter** - select filter. Retrieves values which contain mask defined through dropdown list of possible values.
 - **numberFilter** - text filter used for number columns. Retrieves values which contain mask defined through text field. Allows users to use the following comporison operators in it:
 	- '=' - equal to;
@@ -16,20 +16,28 @@ You can define built-in filter in the header or footer of a column. The followin
 	- '<=' - less or equal;
 	- '>=' - greater or equal.
 
-- **dateFilter** - text filter used for date columns. Retrieves values which contain mask defined through text field.<br> Allows users to use the following comporison operators in it:
+- **dateFilter** - text filter used for date columns. Retrieves values that contain mask defined through text field.<br> Allows users to use the following comporison operators in it:
 	- '>' - greater than;
 	- '<' - less than;
 	- '<=' - less or equal;
 	- '>=' - greater or equal.
-	
+    
 There are 3 ways you can input data to the  **dateFilter**:
 
 1. '*yyyy*' - 4-digits year;
 2. '*mm.yyyy*' - 2-digits month and 4-digits year separated by point;
 3. '*dd.mm.yyyy*' - 2-digits day, 2-digits month and 4-digits year separated by points
+
+- **serverFilter** - text filter used for data column. Retrieves values that contain mask defined through text field and sends a request to server to return filtered dataset. <br> Request parameters include: 
+	- *count* - the number of data records to return. Its value depends on [dynamic loading](desktop/dynamic_loading.md) parameters, if any;
+    - *start* - ID of the data record to start from (0 - beginning). Its value depends on [dynamic loading](desktop/dynamic_loading.md) parameters, if any;
+	- *filter[column_name]* - name of the column (in brackets) for which filtering is performed. Its value is a text value you've entered in the filter input. 
+
+If **serverside sorting** is enabled, data is both filtered and sorted on server. 
+
+###Defining header filters
     
 Built-in filter is set by property **content** of the **header** attribute. Note, to add a filter to the header(footer), the header(footer) must be specified as array.
-
 
 
 <table class="list">

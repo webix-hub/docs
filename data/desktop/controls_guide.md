@@ -45,6 +45,17 @@ Please, don't mix it with a separate view [label](#label).
 
 {{sample 13_form/02_api/03_label_position.html}}
 
+##Defining Special Modes
+
+Any control can be set **disabled** and **readonly** with the help of dedicated properties:
+
+~~~js
+elements:[
+	{view:"text", readonly:true},
+	{view:"datepicker", disabled:true}
+]    
+~~~
+
 ##Control Positioning 
 
 Here we make use of the **align** (string) property that defines horizontal position of the control and its label with respect to the parent container (e.g. [form](desktop/form.md)):
