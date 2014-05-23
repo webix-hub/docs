@@ -69,15 +69,15 @@ Events
 {{links
 - api/link/ui.calendar_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/ui.calendar_onafterdateselect_event.md - fires after a user has selected a date
-- api/ui.calendar_onaftermonthchange_event.md - called after month in selector is changed
-- api/ui.calendar_onafterrender_event.md - called after the rendering of calendar is complete
+- api/ui.calendar_onaftermonthchange_event.md - called after month in selector is changed.
+- api/ui.calendar_onafterrender_event.md - called after the rendering of calendar is complete.
 - api/link/ui.calendar_onbeforecontextmenu_event.md - fires before the context menu is called in the item area
 - api/ui.calendar_onbeforedateselect_event.md - fires when a user clicks on a date but before it is selected in the calendar
 - api/ui.calendar_onbeforemonthchange_event.md - triggered immediately before month in selector is changed.
 - api/ui.calendar_onbeforerender_event.md - triggered immediately before rendering of calendar is started.
 - api/link/ui.calendar_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/ui.calendar_onchange_event.md - fired when a user changes month, year or time in selector.
-- api/ui.calendar_ondateselect_event.md - fired when a user selects a date.
+- api/ui.calendar_ondateselect_event.md - fires when a user selects a date.
 - api/link/ui.calendar_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.calendar_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.calendar_onitemdblclick_event.md - fires when a component item was double-clicked
@@ -93,6 +93,7 @@ Properties
 
 {{links
 - api/link/ui.calendar_animate_config.md - defines or disables view change animation.
+- api/ui.calendar_blockdates_config.md - defines the selectable range
 - api/link/ui.calendar_borderless_config.md - used to hide the component borders
 - api/ui.calendar_calendarheader_config.md - the format for the title with the month name and year
 - api/ui.calendar_calendartime_config.md - defines calendar time format (with timepicker enabled)
@@ -107,8 +108,10 @@ Properties
 - api/link/ui.calendar_height_config.md - sets the height of the component
 - api/link/ui.calendar_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.calendar_id_config.md - the component ID
+- api/ui.calendar_maxdate_config.md - set man limit for selected date
 - api/link/ui.calendar_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.calendar_maxwidth_config.md - sets the maximum width for the view
+- api/ui.calendar_mindate_config.md - set min limit for selected date
 - api/link/ui.calendar_minheight_config.md - sets the minimal height for the view
 - api/link/ui.calendar_minwidth_config.md - sets the minimal width for the view
 - api/ui.calendar_minutestep_config.md - step of time selector

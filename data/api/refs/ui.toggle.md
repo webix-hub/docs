@@ -105,6 +105,7 @@ Properties
 - api/link/ui.toggle_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.toggle_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/link/ui.toggle_template_config.md - the component template
+- api/link/ui.toggle_tooltip_config.md - tooltip for the input
 - api/link/ui.toggle_type_config.md - the type of the control
 - api/link/ui.toggle_value_config.md - sets the initial value for a control
 - api/link/ui.toggle_width_config.md - sets the width of the component

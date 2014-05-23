@@ -28,6 +28,7 @@ Properties
 - api/link/ui.toolbar_padding_config.md - defines the space between the element borders and content (applies the specified value to all sides).
 - api/link/ui.toolbar_paddingx_config.md - sets the right and left padding (applies the specified value to both sides)
 - api/link/ui.toolbar_paddingy_config.md - sets the top and bottom padding (applies the specified value to both sides)
+- api/link/ui.toolbar_responsive_config.md - enables responsive mode for horizontal layout
 - api/link/ui.toolbar_rows_config.md - array of views objects arranged vertically
 - api/link/ui.toolbar_rules_config.md - defines a set of rules for input field(s) of the form(htmlform)
 - api/link/ui.toolbar_scroll_config.md - enables/disables the scroll bar
@@ -64,6 +65,7 @@ Properties
 - api/link/ui.toolbar_padding_config.md
 - api/link/ui.toolbar_paddingx_config.md
 - api/link/ui.toolbar_paddingy_config.md
+- api/link/ui.toolbar_responsive_config.md
 - api/link/ui.toolbar_rows_config.md
 - api/link/ui.toolbar_rules_config.md
 - api/link/ui.toolbar_scroll_config.md

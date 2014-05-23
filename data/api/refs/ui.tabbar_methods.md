@@ -21,6 +21,7 @@ Methods
 - api/link/ui.tabbar_getinputnode.md - gets the HTML element related to the component
 - api/link/ui.tabbar_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.tabbar_getparentview.md - returns the parent view of the component
+- api/ui.tabbar_getpopup.md - return the optional popup with extra tabs
 - api/link/ui.tabbar_gettopparentview.md - returns top parent view
 - api/link/ui.tabbar_getvalue.md - returns the current value of the control
 - api/link/ui.tabbar_hasevent.md - checks whether the component has the specified event
@@ -60,6 +61,7 @@ Methods
 - api/link/ui.tabbar_getinputnode.md
 - api/link/ui.tabbar_getnode.md
 - api/link/ui.tabbar_getparentview.md
+- api/ui.tabbar_getpopup.md
 - api/link/ui.tabbar_gettopparentview.md
 - api/link/ui.tabbar_getvalue.md
 - api/link/ui.tabbar_hasevent.md

@@ -149,6 +149,6 @@ webix.extend($$('dataview1'), webix.KeysNavigation);
 ~~~
 
 The code above adds navigation only to this instance of a Dataview, still it's possible to provide the functionality for all dataviews in the app.  
-For more details, refer to [Component Extending](desktop/desktop/extend.md#extendedfunctionality) article.
+For more details, refer to [Component Extending](desktop/extend.md#extendedfunctionality) article.
 
 @complexity:1

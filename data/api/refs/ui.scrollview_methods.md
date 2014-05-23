@@ -9,6 +9,7 @@ Methods
 - api/link/ui.scrollview_destructor.md - destructs the calling object
 - api/link/ui.scrollview_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.scrollview_enable.md - enables the calling view that was disabled by the 'disable' method
+- api/ui.scrollview_getbody.md - gets the inner view of scrollview
 - api/link/ui.scrollview_getchildviews.md - returns child views of the calling component
 - api/link/ui.scrollview_getformview.md - returns master form for the input
 - api/link/ui.scrollview_getnode.md - returns the main HTML container for the calling object
@@ -33,6 +34,7 @@ Methods
 - api/link/ui.scrollview_destructor.md
 - api/link/ui.scrollview_disable.md
 - api/link/ui.scrollview_enable.md
+- api/ui.scrollview_getbody.md
 - api/link/ui.scrollview_getchildviews.md
 - api/link/ui.scrollview_getformview.md
 - api/link/ui.scrollview_getnode.md
