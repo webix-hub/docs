@@ -41,7 +41,7 @@ Counting data items
 $('#div ID/ .CSS selector').webix_component().count() 
 ~~~
 
-##Advantages of QJuery Integration
+##Advantages of JQuery Integration
 
 1 . An HTML container for any component can be specified by its **ID** or **CSS class** used with it. With the webix library means HTML container can be defined by its ID only:
 

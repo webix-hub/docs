@@ -13,7 +13,7 @@ It is a handy and fully interactive tool to pick the necessary time and date whe
 ~~~js
 webix.ui({
 	view:"calendar",
-    id:"my_calendar"
+    id:"my_calendar",
 	date:new Date(2012,3,16),
 	weekHeader:true,
 	events:webix.Date.isHoliday, 
