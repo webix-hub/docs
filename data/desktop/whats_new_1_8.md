@@ -10,6 +10,10 @@ Version 1.8
 
 Calendar dates can be disabled to prevent their selection. [Check details](desktop/calendar.md#blockdates).
 
+### Breaking changes
+ - webix.proxy.$callback was replaced with webix.ajax.$callback
+ - adjustHeaders deprecated
+
 ###Full list of changes and fixes
 
 **New functionbality**
@@ -23,6 +27,7 @@ Calendar dates can be disabled to prevent their selection. [Check details](deskt
 - getChildViews(), getBody() methods to scrollview
 - "local" proxy for working with localstore
 - hide/show of top level views
+- tooltip option for inputs
 
 **Updated functionality**
 
@@ -32,13 +37,9 @@ Calendar dates can be disabled to prevent their selection. [Check details](deskt
 - min|max date refactoring
 - direction top and bottom for animation in multiview
 - attributes, placeholder and readonly works for all inputs
-- version bumped
-- better support of proxy calls for data saving
 - datastore importData can work with primitive sources
 - data@save = true, works the same as @save = @url
 - cssFormat receives 4th parameter - column id
-- latest compression dictionary
-- doc synced with code
 
 **Fixes**
 
@@ -59,7 +60,6 @@ Calendar dates can be disabled to prevent their selection. [Check details](deskt
 - regression in dataprocessor url handling
 - drag column over split area
 - obj.open can be any positive value to mark branch open
-- typo in suggest handling
 - webix.require doesn't trigger callback for already loaded files
 - regression in suggest for plain text fields
 - collections and options for editors
@@ -77,4 +77,5 @@ Calendar dates can be disabled to prevent their selection. [Check details](deskt
 - empty cell in math formulas
 - column.minWidth has lesser priority than grid.minColumnWidth
 - calendar doesn't reset zoom level on hide
-
+- touch scroll for datatable
+- onChange event for counter view

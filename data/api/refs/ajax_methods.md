@@ -3,7 +3,7 @@ Methods
 =======
 
 {{links
-- api/ajax_bind.md - specifies the <i>this</i> pointer for a function
+- api/ajax_bind.md - 
 - api/ajax_del.md - issues a DELETE Ajax request to the server
 - api/ajax_get.md - issues a GET Ajax request to the server
 - api/ajax_getxhr.md - returns an xmlHttpRequest object

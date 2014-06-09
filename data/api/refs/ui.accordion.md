@@ -96,6 +96,7 @@ Properties
 - api/link/ui.accordion_paddingx_config.md - sets the right and left padding (applies the specified value to both sides)
 - api/link/ui.accordion_paddingy_config.md - sets the top and bottom padding (applies the specified value to both sides)
 - api/ui.accordion_panelclass_config.md - returns the name of a css class applied to the accordion panels
+- api/link/ui.accordion_responsive_config.md - enables responsive mode for horizontal layout
 - api/link/ui.accordion_rows_config.md - array of views objects arranged vertically
 - api/link/ui.accordion_type_config.md - defines the layout borders
 - api/link/ui.accordion_visiblebatch_config.md - sets the batch that will be shown initially

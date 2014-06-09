@@ -109,8 +109,10 @@ Properties
 - api/link/ui.richselect_name_config.md - name of the control
 - api/link/ui.richselect_on_config.md - allows attaching custom handlers to inner events of the component
 - api/ui.richselect_options_config.md - defines data items of the drop-down list
+- api/link/ui.richselect_placeholder_config.md - placeholder text for the input
 - api/link/ui.richselect_popup_config.md - allows to attach pop-up menu to the button
 - api/ui.richselect_popupwidth_config.md - width of the popup window
+- api/link/ui.richselect_readonly_config.md - configures readonly mode for the input
 - api/link/ui.richselect_relatedaction_config.md - action to call when value of cell changes
 - api/link/ui.richselect_relatedview_config.md - id of view, that will be affected by relatedAction operation
 - api/link/ui.richselect_required_config.md - marks field as required
@@ -118,6 +120,7 @@ Properties
 - api/link/ui.richselect_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/link/ui.richselect_template_config.md - the component template
 - api/ui.richselect_text_config.md - visible text in the related input
+- api/link/ui.richselect_tooltip_config.md - tooltip for the input
 - api/link/ui.richselect_type_config.md - the type of the control
 - api/link/ui.richselect_validate_config.md - adds validation to the field
 - api/link/ui.richselect_validateevent_config.md - on which event validation fires

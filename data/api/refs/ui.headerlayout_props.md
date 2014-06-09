@@ -26,6 +26,7 @@ Properties
 - api/link/ui.headerlayout_paddingx_config.md - sets the right and left padding (applies the specified value to both sides)
 - api/link/ui.headerlayout_paddingy_config.md - sets the top and bottom padding (applies the specified value to both sides)
 - api/link/ui.headerlayout_panelclass_config.md - returns the name of a css class applied to the accordion panels
+- api/link/ui.headerlayout_responsive_config.md - enables responsive mode for horizontal layout
 - api/link/ui.headerlayout_rows_config.md - array of views objects arranged vertically
 - api/link/ui.headerlayout_type_config.md - defines the layout borders
 - api/link/ui.headerlayout_visiblebatch_config.md - sets the batch that will be shown initially
@@ -56,6 +57,7 @@ Properties
 - api/link/ui.headerlayout_paddingx_config.md
 - api/link/ui.headerlayout_paddingy_config.md
 - api/link/ui.headerlayout_panelclass_config.md
+- api/link/ui.headerlayout_responsive_config.md
 - api/link/ui.headerlayout_rows_config.md
 - api/link/ui.headerlayout_type_config.md
 - api/link/ui.headerlayout_visiblebatch_config.md

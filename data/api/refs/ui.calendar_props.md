@@ -4,6 +4,7 @@ Properties
 
 {{links
 - api/link/ui.calendar_animate_config.md - defines or disables view change animation.
+- api/ui.calendar_blockdates_config.md - defines the selectable range
 - api/link/ui.calendar_borderless_config.md - used to hide the component borders
 - api/ui.calendar_calendarheader_config.md - the format for the title with the month name and year
 - api/ui.calendar_calendartime_config.md - defines calendar time format (with timepicker enabled)
@@ -18,8 +19,10 @@ Properties
 - api/link/ui.calendar_height_config.md - sets the height of the component
 - api/link/ui.calendar_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.calendar_id_config.md - the component ID
+- api/ui.calendar_maxdate_config.md - set man limit for selected date
 - api/link/ui.calendar_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.calendar_maxwidth_config.md - sets the maximum width for the view
+- api/ui.calendar_mindate_config.md - set min limit for selected date
 - api/link/ui.calendar_minheight_config.md - sets the minimal height for the view
 - api/link/ui.calendar_minwidth_config.md - sets the minimal width for the view
 - api/ui.calendar_minutestep_config.md - step of time selector
@@ -41,6 +44,7 @@ Properties
 
 @index:
 - api/link/ui.calendar_animate_config.md
+- api/ui.calendar_blockdates_config.md
 - api/link/ui.calendar_borderless_config.md
 - api/ui.calendar_calendarheader_config.md
 - api/ui.calendar_calendartime_config.md
@@ -55,8 +59,10 @@ Properties
 - api/link/ui.calendar_height_config.md
 - api/link/ui.calendar_hidden_config.md
 - api/link/ui.calendar_id_config.md
+- api/ui.calendar_maxdate_config.md
 - api/link/ui.calendar_maxheight_config.md
 - api/link/ui.calendar_maxwidth_config.md
+- api/ui.calendar_mindate_config.md
 - api/link/ui.calendar_minheight_config.md
 - api/link/ui.calendar_minwidth_config.md
 - api/ui.calendar_minutestep_config.md

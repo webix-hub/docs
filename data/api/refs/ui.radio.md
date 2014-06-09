@@ -107,13 +107,16 @@ Properties
 - api/link/ui.radio_name_config.md - name of the control
 - api/link/ui.radio_on_config.md - allows attaching custom handlers to inner events of the component
 - api/ui.radio_options_config.md - defines options for a set of radiobuttons
+- api/link/ui.radio_placeholder_config.md - placeholder text for the input
 - api/link/ui.radio_popup_config.md - allows to attach pop-up menu to the button
+- api/link/ui.radio_readonly_config.md - configures readonly mode for the input
 - api/link/ui.radio_relatedaction_config.md - action to call when value of cell changes
 - api/link/ui.radio_relatedview_config.md - id of view, that will be affected by relatedAction operation
 - api/link/ui.radio_required_config.md - marks field as required
 - api/link/ui.radio_suggest_config.md - links suggest list to the input
 - api/link/ui.radio_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/link/ui.radio_template_config.md - the component template
+- api/link/ui.radio_tooltip_config.md - tooltip for the input
 - api/link/ui.radio_type_config.md - the type of the control
 - api/link/ui.radio_validate_config.md - adds validation to the field
 - api/link/ui.radio_validateevent_config.md - on which event validation fires

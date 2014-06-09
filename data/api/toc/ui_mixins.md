@@ -18,7 +18,7 @@ Mixins
 - api/refs/dataloader.md - loads and process data in to component
 - api/refs/datamarks.md - implements extra data storage
 - api/refs/datamove.md - transfer data between different components
-- api/refs/dataprocessor.md - handles client-server data saving operations
+- api/refs/dataprocessor.md - handles clien-server data saving operations
 - api/refs/datarecord.md - data binding for components which store collection of data object
 - api/refs/datastate.md - enables saving application state
 - api/refs/datastore.md - core of all operations for data-collection based components

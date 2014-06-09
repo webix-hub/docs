@@ -3,7 +3,6 @@ Properties
 ==========
 
 {{links
-- api/link/ui.treetable_adjustheaders_config.md - when enabled column auto-sizing will take header width in account
 - api/link/ui.treetable_animate_config.md - defines or disables view change animation.
 - api/link/ui.treetable_autoconfig_config.md - datatable adjust configuration to the data
 - api/link/ui.treetable_autoheight_config.md - adjusts DataTable to the parent container size vertically
@@ -84,7 +83,6 @@ Properties
 }}
 
 @index:
-- api/link/ui.treetable_adjustheaders_config.md
 - api/link/ui.treetable_animate_config.md
 - api/link/ui.treetable_autoconfig_config.md
 - api/link/ui.treetable_autoheight_config.md

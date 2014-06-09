@@ -92,6 +92,7 @@ Properties
 - api/ui.layout_padding_config.md - defines the space between the element borders and content (applies the specified value to all sides).
 - api/ui.layout_paddingx_config.md - sets the right and left padding (applies the specified value to both sides)
 - api/ui.layout_paddingy_config.md - sets the top and bottom padding (applies the specified value to both sides)
+- api/link/ui.layout_responsive_config.md - enables responsive mode for horizontal layout
 - api/link/ui.layout_rows_config.md - array of views objects arranged vertically
 - api/ui.layout_type_config.md - defines the layout borders
 - api/link/ui.layout_visiblebatch_config.md - sets the batch that will be shown initially

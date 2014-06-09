@@ -147,7 +147,7 @@ webix.ui({
 					{ id:4, title:"The Good, the Bad and the Ugly", year:1966},
 					{ id:5, title:"My Fair Lady", year:1964},
 					{ id:6, title:"12 Angry Men", year:1957}
-				];
+				]
 			} 
     	]}
     ]
