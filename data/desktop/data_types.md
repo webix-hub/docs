@@ -13,7 +13,7 @@ components.
 Data Type Samples
 -------------------
 
-Here we'll see how one and the same data set looks in different formats while paying attention to [non-hierarchical](#nonhi) and [hierarchical](#hi) data.
+Here we'll see how one and the same dataset looks in different formats while paying attention to [non-hierarchical](#nonhi) and [hierarchical](#hi) data.
 
 ##Non-hierarchical data {#nonhi}
 
@@ -71,25 +71,24 @@ Here we'll see how one and the same data set looks in different formats while pa
 ###CSV
 
 CSV, or Comma Separated Values, is a sequence of characters with rows and fields being separated by some breaks (comma, tab, new line).
+
 ~~~csv
 Nanny, Alabama, 45
 Derek, New-York, 23
 Samuel, Oregon, 32
 ~~~
 
-By default, line anf field delimiters are "\n"(new line) and ","(comma) respectively. 
+By default line anf field **delimiters** are "\n"(new line) and ","(comma) respectively. 
 
-To change the logic for a separate Webix component, you chould specify these parameters within its **delimiter** property:
+To change the logic of CSV parsing for the application components, you should alter these parameters within Webix **CSV DataDriver**:
 
 ~~~js
+webix.DataDriver.csv.cell = "\t";
+webix.DataDriver.csv.row = "|";
+
 webix.ui({
     view:"datatable",
-    clipboard:true,
-    delimiter: {
-        row: "\n", //new line signifies a new row
-        cell: "\t" // tab signifies a new column
-    },
-    ...
+	...
 });
 ~~~
 
@@ -101,8 +100,7 @@ webix.ui({
 
 ###XML
 
-By default, records of any hierarchy level and their children are introduced with **item** tags:
-
+By default records of any hierarchy level and their children are introduced with **item** tags:
 
 ~~~xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -132,7 +130,7 @@ By default, records of any hierarchy level and their children are introduced wit
 
 ###JSON
 
-By default, child records are stored in the **data** object property of the parent. 
+By default child records are stored in the **data** object property of the parent record. 
 ~~~json
 [{id:"1", title:"Animals", data:[
 	{id:"1.1", title:"Fish", data:[

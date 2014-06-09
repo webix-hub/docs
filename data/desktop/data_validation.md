@@ -222,6 +222,23 @@ Note that in case you define rules within input constructor, the **isNotEmpty** 
 
 {{sample 13_form/01_controls/19_required.html}}
 
+####Conditional usage of built-in rules
+
+Predefined validation rules can be wrapped by another function to apply them selectively:
+
+{{snippet
+Ignoring empty values during validation
+}}
+~~~js
+rules:{
+   city:function(value){
+        return !value || webix.rules.isNumber(value)
+  }
+}
+~~~
+
+Remember that a validation function must return *true* for success and *false* for failure. 
+
 ##Custom Rules
 
 Basically, any custom function can define a rule. Such function takes the validated **value** as parameter. 

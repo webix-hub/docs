@@ -84,6 +84,12 @@ Checkbox Initialization
 - **checkValue** (string) - value of the checkbox in the checked state (1 by default);
 - **uncheckValue** (string) - value of the checkbox in the unchecked state (0 by default);
 
+Webix checkbox control is based on standard HTML checkbox  yet some skins use a FontAwesome icon to render it. To switch to a standard HTML checkbox, use **customCheckbox** property: 
+
+~~~js
+{ view:"checkbox", customeCheckbox:false} 
+~~~
+
 [Controls Common Functionality](desktop/controls_guide.md)
 
 [API Reference](api__refs__ui.checkbox.html)
@@ -427,6 +433,12 @@ Radio Initialization
     - **labelWidth** (number) - width of the label container; 
 - **align** (string)- positions button with relation to a parent view;
 - **vertical** (boolean) - defines vertical arrangement of radiobuttons.
+
+Webix radio control is based on standard HTML radio  yet some skins use a FontAwesome icon to render it. To switch to a standard HTML radio, use **customRadio** property: 
+
+~~~js
+{ view:"radio", customRadio:false } 
+~~~
 
 [Controls Common Functionality](desktop/controls_guide.md)
 

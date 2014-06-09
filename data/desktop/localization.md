@@ -9,8 +9,7 @@ Localization methods belong to the [i18n class](api/refs/i18n.md) and treat data
 By default **Date()** constructor outputs raw data. Unformatted, it looks barely readable. 
 
 ~~~js
-new Date(2012,10,30) -->
-		//Tue Nov 30 2010 00:00:00
+new Date(2012,10,30); //-->Tue Nov 30 2010 00:00:00
 ~~~
 
 Date and time should be formatted either with [Date](desktop/working_with_dates.md) or **i18n** class.
@@ -26,7 +25,7 @@ In case of [datatable](datatable/index.md), format is stated by  the dedicated *
 
 ~~~js
 { header:"Date",  id:"start", format:webix.i18n.dateFormatStr},
-{header:"Price", id:"price", format:webix.i18n.priceFormat}
+{ header:"Price", id:"price", format:webix.i18n.priceFormat}
 ~~~
 
 {{sample 15_datatable/20_templates/08_locales.html}}
@@ -113,7 +112,7 @@ Locales other than **en-US** should be defined beforehand either in the document
 function that takes **locale name** as parameter. Possible variants here are fr-FR, ru-RU, ja-JP (a 'language-country' pair). 
 
 ~~~js
-webix.i18n.setLocale(fr-FR);
+webix.i18n.setLocale("fr-FR");
 ~~~
 
 After this any method applied to the **webix.i18n** object will redraw date, and numbers according to the rules described in locale. 
@@ -128,6 +127,15 @@ format:webix.i18n.dateFormatStr
 
 format:webix.i18n.longDateFormatStr 
 			// --> 30 Novembre 2010
+~~~
+
+##Altering a Locale 
+
+To change one or several parameters for the current locale, you need to redefine them and then apply the same locale so that your changes come into force:
+
+~~~js
+webix.i18n.fullDateFormat = "%Y-%m-%d %H:%i";
+webix.i18n.setLocale(); //locale name is not specified here
 ~~~
 
 @complexity:2
