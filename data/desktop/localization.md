@@ -113,7 +113,7 @@ Locales other than **en-US** should be defined beforehand either in the document
 function that takes **locale name** as parameter. Possible variants here are fr-FR, ru-RU, ja-JP (a 'language-country' pair). 
 
 ~~~js
-webix.i18n.setLocale(fr-FR);
+webix.i18n.setLocale("fr-FR");
 ~~~
 
 After this any method applied to the **webix.i18n** object will redraw date, and numbers according to the rules described in locale. 
