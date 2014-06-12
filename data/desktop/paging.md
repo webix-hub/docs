@@ -59,6 +59,8 @@ In this case when pager is a standalone view api/ui.pager_size_config.md propert
 - api/ui.pager_limit_config.md - the total number of pages in pager. The number of records will be calculated automatically. 
 - api/ui.pager_count_config.md - the total number of records the pager will process. The number of pages will be calculated automatically. 
 
+You can as well use Webix pager as a separate entity without master component and provide fully custom login for it - go to [the end of the article](#standalonepager) for details. 
+
 
 ##Pager as component property
 
@@ -365,5 +367,36 @@ $$("datatable1").setPage(2); // makes the third page visible
 ~~~js
 $$("datatable1").getPager().select(2); // -> selects the third page
 ~~~
+
+##Standalone Pager
+
+Pager can be used without master component for creating custom logic. To render such pager, the following code should be used:
+
+~~~js
+webix_pager = webix.ui({
+  view: 'pager',
+  container: 'pager_container',
+  size: 50,
+  group: 5,
+  count: 1000
+}).refresh();
+~~~
+
+To use the pager, you should first switch off  the link to a master that is a default Webix feature and then provide custom click behavior: 
+
+~~~js
+webix_pager.$master = { refresh:function(){}, select:function(){} };
+
+webix_pager.on_click.webix_pager_item = function(e, id){
+  webix.message(id);
+  this.select(id);
+};
+
+webix_pager.refresh();
+~~~
+
+{{note 
+Starting from Webix 1.9 pager will be reconfugured to simplify the usage of a standalone pager. 
+}}
 
 @complexity:2
