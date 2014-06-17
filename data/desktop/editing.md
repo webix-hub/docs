@@ -307,7 +307,7 @@ Options loaded from an external file
 }}
 ~~~js
 columns:[
-	{ id:"cat_id",  editor:"select",options:"data/options.json"}
+	{ id:"cat_id",  editor:"select", options:"data/options.json"}
 ]    
 
 ~~~
@@ -326,6 +326,40 @@ columns:[
 	{ id:"cat_id", editor:"combo",	collection:film_options, header:"Category"}
 ]
 ~~~
+
+##Advanced configuration of select editors
+
+Webix select controls, combo and richselect, are [highly customizable](desktop/advanced_combo.md), which means that the editors based on them can be customized too. The following things can be changed: 
+
+- template of list items;
+- template of the input field (combo editor only);
+- filtering pattern (combo only);
+- the number of list items in the popup;
+- functions can be attached to a list.
+
+Two column attributes are mandatory  - **options** or **collection** to interprete options into text and **suggest** to define the confuguration of related popup list: 
+
+~~~js
+{ id:"year", editor:"combo", options:years, suggest:{
+     template:'#value#', //template of the input when editor is opened, default
+     filter:function(item,value){ //redefines default webix combo filter
+     	if (item.value.toString().toLowerCase().indexOf(value.toLowerCase())===0) 
+        	return true;
+     	return false;
+     },
+     body:{
+        template:'Year #value#', //template of list items
+        yCount:7, //10 by default
+        on:{
+           'onItemClick':function(id){
+                webix.message(this.getItem(id).value);
+            }
+        }
+     }}
+}
+~~~
+
+{{sample 15_datatable/04_editing/21_advanced_combo.html}}
 
 ##Datatable and treetable specificity - live editors
 

@@ -73,10 +73,53 @@ Item template, predefined item dimensions
 }}
 ~~~
 
+###Using Datasuggest as Editor
+
+Datasuggest can be used as a component editor as part of **combo** or **richselect** editor. 
+
+<img src="desktop/datasuggest_editor.png"/>
+
+For these needs, a popup should be previously initialized, either with default or with customized settings:
+{{snippet
+Default  - that's enough
+}}
+~~~js
+var popup = webix.ui({
+   view:"datasuggest"
+});
+~~~
+
+With the custom configuration all the above-mentioned settings can be used:
+
+{{snippet
+Customized
+}}
+~~~js
+var popup = webix.ui({
+   view:"datasuggest",
+   body:{
+      type:{
+         height:100,
+         width:160
+      },
+   	  template:"<b>#value#</b><br>#year#"
+   }
+});
+~~~
+
+Then, this popup should be attached to the column in question with the help of its **popup** property:
+
+~~~js
+{ id:"title",  editor:"richselect", collection:options, popup:popup }
+~~~
+
+{{sample 32_thirdparty/14_dataselect_editor.html}}
+
 ###Related Articles
 
 - [Webix Data Loading Pattern](desktop/data_loading.md)
 - [Templates for Webix Data Components](desktop/html_templates.md)
+- [Data Editing](desktop/edit.md)
 
 
 

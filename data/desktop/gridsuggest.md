@@ -89,7 +89,49 @@ Preset Columns
 }}
 ~~~
 
+###Using Gridsuggest as Editor
+
+Gridsuggest can be used as a component editor as part of **combo** or **richselect** editor. 
+
+<img src="desktop/gridsuggest_editor.png">
+
+For these needs, a popup should be previously initialized, either with default or with customized settings:
+{{snippet
+Default  - that's enough
+}}
+~~~js
+var popup = webix.ui({
+   view:"gridsuggest"
+});
+~~~
+
+With the custom configuration all the above-mentioned settings can be used:
+
+{{snippet
+Customized
+}}
+~~~js
+var popup = webix.ui({
+  	view:"gridsuggest",
+	body:{
+		columns:[
+			{id:"value", header:"Value", width:250},
+			{id:"year", header:"Year", width:100}
+		]
+	}
+});
+~~~
+
+Then, this popup should be attached to the column in question with the help of its **popup** property:
+
+~~~js
+{ id:"title",  editor:"combo", collection:options, popup:popup }
+~~~
+
+{{sample 32_thirdparty/13_gridselect_editor.html}}
+
 ###Related Articles
 
 - [Webix Data Loading Pattern](desktop/data_loading.md)
 - [Templates for Webix Data Components](desktop/html_templates.md)
+- [Data Editing](desktop/edit.md)
