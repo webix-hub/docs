@@ -7,6 +7,7 @@ eachColumn
 	
 @params:
 - handler	function	the handler function
+- all		boolean 	 if true, hidden columns are included into a loop
 
 
 
@@ -23,8 +24,7 @@ dtable.eachColumn(
 @descr:
 
 - The loop variable **i** is the column id;
-- The order of iteration is the current columns order;
-- If some columns have been hidden by api/ui.datatable_hideColumn.md method, they are not included into a loop.
+- The order of iteration is the current columns order.
 
 
 
