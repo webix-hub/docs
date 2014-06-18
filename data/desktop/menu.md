@@ -20,14 +20,15 @@ webix.ui({
         id:"my_menu",
 		subMenuPos:"right",
         layout:"y",
-		data:[ //JSON data
+		data:[ //menu data
 			{ value:"Translate...", submenu:[ 
 						"English", "Slavic...", "German"]},
             { $template:"Separator" },
 			{ value:"Post...", submenu:[ "Facebook", "Google+", "Twitter" ]}
 		],
-        type:{ //type object contains setting for component items
-              subsign:true
+        type:{
+              subsign:true,
+              height:50
         }           
   });	
 ~~~
@@ -39,58 +40,55 @@ webix.ui({
 - **subMenuPos** (string) - sets position of pulldown submenus that will appear on mouse over;
 - **layout** - sets the arrangement of menu items (**x** for a horizontal menu, **y** for a vertical one)
 - **$template:"Separator"** - flag that indicates a separating line between menu elements. Appears once for eaah flag in the place where it is set;
-- **subsign** (boolean) - sets an arrow for an item containing a submenu;
+- **type** - object that contains setting for menu items;
+	- **subsign** (boolean) - sets an arrow for an item containing a submenu;
 - **openAction** (string) - alters the way of submenu opening - **"click"**. If set, you should first click menu item to enable its opening and hiding on "onMouseOver" and "onMouseOut" events.
 
 {{sample 03_menu/11_menu_open_click.html}}
-
-####Configuring Submenus
-
-Any nested submenu can be configured separately with the help of the parent item **config** attribute: 
-
-~~~js
-view:"menu",
-data:[
-	{ id:"2",value:"Custom...", 
-    	config:{
-			width:500,
-			on: { onItemClick:function(id){
-				webix.message("Submenu click: "+id);
-			}}
-		},
-		submenu:[ "Facebook", "Google+", "Twitter" ]
-     }
-]
-~~~
-
-{{sample 03_menu/12_submenu_config.html}}
 
 ##Working with Menu Items
 
 ###Setting Menu Items
 
-Menu items are stored in the **data** array, each item being an object. Submenu items are stored in the **submenu** array. 
+A menu/submenu item can be a **text item** including the one that starts its own **submenu** and any **Webix component** specified by ID. 
 
-A menu/submenu item can be: 
+Menu items are stored in the **data** array, each item being an object. Submenu items are stored in the **submenu** array. Each menu item may have the following attributes: 
 
-- a **text item**;
-- a **text item** that starts its own **submenu**;
-- a **Webix component** specified by ID. 
+- **id** - item id.If omitted, it's given an auto-generated one;
+- **value** - defines text value for an item;
+- **href** - defines a link for an item;
+- **config** - defines configuration of a child submenu popup (if any).
 
-####Text Item
-
-Each menu item has **ID** (though, ID can be omitted) and **value** that defines text of an item. 
+The easiest way to define menu items is to pass them as a simple array:
 
 ~~~js
+{ view:"menu", data:["Google", "Facebook", "Twitter"] }
+~~~
+
+Or an associative one:
+
+~~~js
+{ view:"menu", data:[
+	{ id:1, value:"Google"}, 
+    { id:2, value:"Facebook", id:3, value:"Twitter"
+]}
+~~~
+
+**Links in Menu Items**
+
+Each menu and submenu item can be supplied with a **link** specified in the data object by a **href** attribute:
+
+~~~js
+view:"menu",
 data:[
-	{ id:"1",value:"Post..."},
-	{ value:"Info" }
+	{ id:"1", value:"Imitation of Spenser", href: "#verse1"},
+	{ id:"2", value:"The Human Seasons", href: "#verse2"}
 ]
 ~~~
 
-####Text Item with Own Submenu
+{{sample 03_menu/13_hrefs.html}}
 
-If a menu items starts a submenu, it's placed is the **submenu** array.
+**Configuring Submenus**
 
 Submenu items can be set as an **array of values**:
 
@@ -108,20 +106,32 @@ Or, as an **array of menu objects**:
 ]}
 ~~~
 
-Regardless of the initialization pattern, each submenu iten can start its own submenu:
+Any nested submenu (a popup) can be configured separately with the help of a **config** attribute of its parent: 
 
 ~~~js
-{ id:"1",value:"Translate...", submenu:[
-	"English", 
-	{ value:"Slavic...", submenu:[
-		"Belarus", "Russian", "Ukranian"]},
-	"German"
-]}
+view:"menu",
+data:[
+	{ id:"2",value:"Custom...", 
+    	config:{
+			width:500,
+			on:{ 
+            	onItemClick:function(id){
+					webix.message("Submenu click: "+id);
+				}
+            }
+		},
+		submenu:[ "Facebook", "Google+", "Twitter" ]
+     }
+]
 ~~~
 
-####Webix Component
+{{sample 03_menu/12_submenu_config.html}}
+
+**Webix Component as Menu Item**
 
 <img src="desktop/menu_component.png"/>
+
+**Submenu** parameter may point as well to any Webix component that has been initialized previously:
 
 ~~~js
 webix.ui({

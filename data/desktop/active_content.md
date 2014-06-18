@@ -104,4 +104,8 @@ view:"button", click:function(){...}
 button.attachEvent("onItemClick", function(){...});
 ~~~
 
+##Related articles
+
+- [Adding a custom element to the datatable header](datatable/filtering.md#customheadercontent)
+
 @complexity: 2

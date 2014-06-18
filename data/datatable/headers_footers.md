@@ -132,6 +132,7 @@ columns:[
 
 {{sample 15_datatable/12_header_footer/05_filters.html }}
 
+More information about built-in and custom filters is in the [separate article](datatable/filtering.md).
 
 Footers
 -------------

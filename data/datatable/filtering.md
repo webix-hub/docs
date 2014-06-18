@@ -35,6 +35,16 @@ There are 3 ways you can input data to the  **dateFilter**:
 
 If **serverside sorting** is enabled, data is both filtered and sorted on server. 
 
+All of these filters are applied in the same way, through header **content** property:
+
+~~~js
+{ id:"title", header:[{content:"textFilter"}, "Title"] }
+~~~
+
+{{note
+Filter collection can be extended with custom elements. If you need your own filter (or smth) for header content, go [here](#customheadercontent) for the instructions. 
+}}
+
 ###Defining header filters
     
 Built-in filter is set by property **content** of the **header** attribute. Note, to add a filter to the header(footer), the header(footer) must be specified as array.
@@ -65,7 +75,8 @@ columns:[
      "Film title",{content:"textFilter"}]
     },
 	{id:"year",header:"Released"},
-	{id:"votes",header:"Votes"}]
+	{id:"votes",header:"Votes"}
+]
 ~~~
     </td>
 	</tr>
@@ -280,7 +291,7 @@ grid = new webix.ui({  //component
     ]
 });
 
-grid.setFilter(document.getElementById("myfilter"), 
+grid.registerFilter(document.getElementById("myfilter"), 
 	{ columnId:"title" }, //column to filter
 	{
 		getValue:function(node){
@@ -297,7 +308,6 @@ grid.setFilter(document.getElementById("myfilter"),
 ###Custom Filtering with filter() method
 
 In addition, the library gives you method [filter()](api/link/ui.datatable_filter.md) to provide fully custom filtering. 
-
 
 For example, if you add an input and button to the page and want to filter DataTable by clicking on it, you code may look like this:
 
@@ -320,6 +330,31 @@ Implementing a custom filter
 ~~~
 
 Note, in the DataTable constructor you need to specify no parameters.
+
+##Custom Header Content
+
+All datatable filters that can be integrated to the header content are stored in a **webix.ui.datafilter** object and feature the same configuration pattern. 
+
+There're two mandatory methods **refresh()** that provides interaction logic and **render()** that draws an element. Their parameters include: 
+
+- **master** - component object (here: datatable);
+- **column** - related column object;
+- **node** - HTML element (here: header td).
+
+~~~js
+webix.ui.datafilter.customFilterName = {
+    refresh: function(master, node, column){
+        //event handlers
+        node.onchange = function(){...};
+        node.onclick = function(){...}
+    },
+    render:function(master, column){
+            var id = b.columnId;
+			var html = "";
+            return html;
+        }
+    };
+~~~
 
 {{sample 15_datatable/03_filtering/05_custom.html }}
 
