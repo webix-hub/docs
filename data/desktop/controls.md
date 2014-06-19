@@ -157,33 +157,16 @@ Combo Initialization
 	- **labelAlign** (string) - label alignment towards its container. Possible values are "left" and "right".  In any way, it's placed left to the control; 
     - **labelWidth** (number) - width of the label container.
 
-####Advanced Setting of Combo Options
+####Advanced Combo Configuration 
 
-The options to select can be defined outside the control with the help of the **getPopup** function that returns a object in a popup window. To this list you can either [load 
-or parse data](desktop/data_loading.md) as well as sync it with another component or [Datacollection](desktop/nonui_objects.md). 
+Combo box control can be customized in a number of ways, e.g.: 
 
-~~~js
-$$("my_combo").getPopup().getList().sync("list1"); //pushes this data into combo popup 
-~~~
+- options can be defined dynamically;
+- options can be loaded from serverside;
+- template can be changed;
+- filtering rule can be changed..
 
-{{sample 80_docs/getpopup.html }}
-
-**Combo option**, a list record, may contain:
-
-- a short string, like "Apple";
-- **multi-line text** with html tags. In this case, parent (e.g. toolbar) height should be increased. 
-
-~~~js
-"toolbar", height:100,
-..... 
-
-options:[
-	{ id:1, value:"Here can be some long multi line content <ul><li>item1 <li> item 2</ul>" }, 
-	{ id:2, value:"Papai"  }
-]
-~~~
-
-{{sample 02_toolbar/20_richselect.html}} 
+To learn more, go to [Advanced Combo and Richselect Settings](desktop/advanced_combo.md) article. 
 
 ####Getting Current Value
 
@@ -473,7 +456,7 @@ Visually, the **richselect** control consists of a [text input](#text) and [popu
 
 Another possibility to create a component with a similar functionality is [attaching a suggest list to a text field](desktop/suggest.md), but in this case, text field will be editable.
 
-####Main properties
+####Main Properties
 
 - **value** (string, number) 
 	- within **options** array it sets text value for selectable items;
@@ -484,31 +467,15 @@ Another possibility to create a component with a similar functionality is [attac
     - **labelWidth** (number) - width of the label container; 
 - **options** (array, object) - sets the options to choose from in a long or short form. 
 
-The options to select can be defined outside the control with the help of the **getPopup** function that returns a popup window. For this list you can either [load 
-or parse data](desktop/data_loading.md) as well as sync it with another component or [Datacollection](desktop/nonui_objects.md). 
+####Advanced Richselect configuration 
 
-~~~js
-$$("my_combo").getPopup().getList().sync("list1"); //pushes this data into combo popup 
-~~~
+Richselect control can be customized in a number of ways, e.g.: 
 
-{{sample 80_docs/getpopup.html }}
+- options can be defined dynamically;
+- options can be loaded from serverside;
+- template can be changed..
 
-**Richselect option**, a list record, may contain:
-
-- a short string, like "Apple";
-- **multi-line text** with html tags. In this case, parent (e.g. toolbar) height should be increased. 
-
-~~~js
-"toolbar", height:100,
-..... 
-
-options:[
-	{ id:1, value:"Here can be some long multi line content <ul><li>item1 <li> item 2</ul>" }, 
-	{ id:2, value:"Papai"  }
-]
-~~~
-
-{{sample 02_toolbar/20_richselect.html}} 
+To learn more, go to [Advanced Combo and Richselect Settings](desktop/advanced_combo.md) article. 
 
 ####Getting Current Value
 
@@ -911,4 +878,4 @@ Toggle type is defined by the **type** property. If it isn't defined, a standard
   - desktop/suggest.md
   - desktop/tabs_options.md
   - desktop/responsive_tabbar.md
-  
+  - desktop/advanced_combo.md

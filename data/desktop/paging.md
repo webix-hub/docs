@@ -373,30 +373,28 @@ $$("datatable1").getPager().select(2); // -> selects the third page
 Pager can be used without master component for creating custom logic. To render such pager, the following code should be used:
 
 ~~~js
-webix_pager = webix.ui({
+webix.ui({
   view: 'pager',
-  container: 'pager_container',
+  template: '{common.prev()} {common.pages()} {common.next()}',
+  master:false,
   size: 50,
   group: 5,
-  count: 1000
-}).refresh();
+  count: 1000,
+  on: {
+      onItemClick: function(id, e, node) {
+          //..some custom logic..
+      }
+  }
+});
 ~~~
 
-To use the pager, you should first switch off  the link to a master that is a default Webix feature and then provide custom click behavior: 
+Template parameter can be omitted in favour of default template. 
 
-~~~js
-webix_pager.$master = { refresh:function(){}, select:function(){} };
+{{sample 25_pager/12_standalone_pager.html }}
 
-webix_pager.on_click.webix_pager_item = function(e, id){
-  webix.message(id);
-  this.select(id);
-};
-
-webix_pager.refresh();
-~~~
 
 {{note 
-Starting from Webix 1.9 pager will be reconfugured to simplify the usage of a standalone pager. 
+Note that count and size parameters should be used anyway, **count** divided by **size** equals to the **total number** of pages. 
 }}
 
 @complexity:2

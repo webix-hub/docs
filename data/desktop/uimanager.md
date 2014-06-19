@@ -57,29 +57,84 @@ webix.ui({
 webix.UIManager.setFocus("books");
 ~~~
 
-##Attaching Keyboards Events to the Components. 
+##Keyboards Events and Hotkeys
 
-###Default Keyboard Events
+###Built-in Keyboard Events 
 
-1) In-component tab navigation is a default feature for such data components as [datatable](datatable/index.md) and [list](desktop/list.md). It can be enabled by the corresponding [navigation](api/keysnavigation_navigation_config.md) property: 
+1) 'Esc' key closes a non-modal [window](desktop/window.md) when it is focused. 
 
-~~~js
-{
-	view:"datatable", 
-    navigation:true
-}
-~~~
-
-Other data components need to be extended with the [KeysNavigation](api/refs/keysnavigation.md) module. Consult the [dedicated article](desktop/selection.md#navigation) for details.  
-
-2) 'Esc' key closes a non-modal [window](desktop/window.md) when it is focused. 
+2) 'Esc', 'space' and 'enter' keys are enabled by default for [modal message boxes](desktop/message_boxes.html#modalwindowsandkeyboardinteraction).
 
 3) [Editors](desktop/editing.md) of data component items react on the following keys: 
 
 - 'esc' - to close without saving data changes;
 - 'enter' - to close with data changes saved.
 
-For other situations keyboard can be connected to your application in two ways: 
+For other situations keyboard can be connected to your application in several ways: 
+
+###Attaching Hot keys
+
+####Component Navigation Keys
+
+Hotkeys for navigation (arrow keys, Home, End, Page Up, Page Down) in data components like [datatable](datatable/index.md) and [list](desktop/list.md) can be enabled by [navigation](api/keysnavigation_navigation_config.md) property: 
+
+~~~js
+{ view:"datatable",  navigation:true }
+~~~
+
+{{sample 15_datatable/05_selection/09_navigation.html}}
+
+Other data components need to be extended with the [KeysNavigation](api/refs/keysnavigation.md) module. Consult the [dedicated article](desktop/selection.md#navigation) for details. 
+
+####Hotkeys for Controls
+
+For controls there exists a possibility to define a hotkey that will trigger it onClick event. The key name (e.g. 'enter' or 'space') is specified by **hotkey** property: 
+
+~~~js
+{ view:"button", click: doOnClick, hotKey: "enter" }
+~~~
+
+{{sample 13_form/02_api/12_hotkey.html}}
+
+The *doOnClick* function will fire now either or pressing 'enter' or on clicking. 
+
+Key combinations joined by **+** or **-** sign are as well possible: 
+
+~~~js
+{ view:"button", click: doOnClick, hotKey: "enter-shift" }
+~~~
+
+Note that such functionality will work with simple controls like buttons and inputs, not with multiple-choice one. 
+
+####Defining Custom Hotkeys
+
+The **addHotKey** function is called from the UIManager object and has two mandatory parameters - key name and event handler. Key combinations joined by **+** or **-** sign are as well possible. 
+
+You can make hot keys **global**, which means that they will trigger the function regardless of the component. The one in focus will be subject to hot key actions. 
+
+~~~js
+webix.UIManager.addHotKey("Ctrl+V", function() { webix.console.log("Ctrl+V for any");});
+~~~
+
+At the same time, you can specify any instance of a **Webix component** that should react on this or that hot key by passing the its into the function as a third parameter. 
+
+In case you want all the view instances react on the specified hot key, state the view name instead of ID: 
+
+~~~js
+//hot keys for the component with 'details' ID
+webix.UIManager.addHotKey("Ctrl+Enter", function() { 
+	webix.console.log("Ctrl+Enter for details"); 
+    return false; 
+}, $$('details')); // for "details" list only
+
+
+//hot keys for all list instances on the page.
+webix.UIManager.addHotKey("Ctrl+Space", function() { 
+	webix.console.log("Ctrl+Space is detected for list"); 
+}, 'list'); // for all lists on the page
+~~~
+
+{{sample 15_datatable/04_editing/01_basic.html }}
 
 ###Attaching Keyboard events 
 
@@ -125,34 +180,6 @@ These events require that a developer should know key codes used by UI Manager. 
 - 'meta': 91,
 - 'win': 91,
 - 'mac': 91
-
-###Attaching Hot keys
-
-When defining a hot key for your application, you should specify its name and a function triggered on its pressing. Key combinations are as well possible. 
-
-The function is called from the UIManager object. Its 'must-have' arguments are key names and the event handler. In this case, hot keys become global, which means that they will fire the function regardless of the component. 
-The one in focus will be subject to hot key actions. 
-
-~~~js
-webix.UIManager.addHotKey("Ctrl+V", function() { webix.console.log("Ctrl+V for any"); });
-~~~
-
-At the same time, you can define which object should react on this or that hot key by passing the component ID into the **addHotKey()** function as a third parameter. 
-
-In case you want all the view instances react on the specified hot key, state the view name instead of ID: 
-
-~~~js
-//hot keys for the component with 'details' ID
-webix.UIManager.addHotKey("Ctrl+Enter", function() { 
-		webix.console.log("Ctrl+Enter for details"); return false; }, $$('details')); // for "details" list only
-
-
-//hot keys for all list instances on the page.
-webix.UIManager.addHotKey("Ctrl+Space", function() { 
-		webix.console.log("Ctrl+Space is detected for list"); }, 'list'); // for all lists on the page
-~~~
-
-{{sample 15_datatable/04_editing/01_basic.html }}
 
 ##Saving and Restoring Application State
 
