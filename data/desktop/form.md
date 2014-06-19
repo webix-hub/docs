@@ -141,7 +141,7 @@ Or, you can apply **getValue()** method directly to the needed control:
 $$("log").getValue();
 ~~~
 
-##Getting values of all form elements
+**Getting values of all form elements**
 
 To get an associative array of all elements (*name:value* pairs) you can use api/link/ui.form_getvalues.md method. To get to the necessary value, you should specify the **name** of the needed control. 
 
@@ -190,7 +190,7 @@ $$("form1").elements["login"].attachEvent("onChange", function(newv, oldv){
 
 {{sample 13_form/02_api/07_onchange_event.html }}
 
-##Getting parent form for the input
+##Getting Parent Form for the Input
 
 The easiest way to get to a parent form from any of its elements is to call the api/link/ui.view_getformview.md:
 
@@ -198,6 +198,36 @@ The easiest way to get to a parent form from any of its elements is to call the 
 {view:"text", on:{"onChange":function(){
 	var form = this.getFormView();
 }}}
+~~~
+
+##Loading and Parsing Initial Data
+
+Webix form can load or parse data like any data management component. All the [data loading rules](desktop/data_loading.md) are true for it. 
+
+Data **attributes** should coincide with **names** of form fields: 
+
+{{snippet
+Parsing
+}}
+~~~js
+var data = {id:1, fname:"Ann", lname:"Brown"};
+
+webix.ui({
+	view:"form", id:"myform", elements:[
+		{view:"text", name:"fname"},
+    	{view:"text", name:"lname"}
+	],
+    data:data
+});    
+//or
+$$("myform").parse(data);
+~~~
+
+{{snippet
+Loading
+}}
+~~~js
+$$("myform").load("data.php");
 ~~~
 
 ###API Reference

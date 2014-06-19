@@ -329,33 +329,6 @@ Implementing a custom filter
 </script>
 ~~~
 
-Note, in the DataTable constructor you need to specify no parameters.
-
-##Custom Header Content
-
-All datatable filters that can be integrated to the header content are stored in a **webix.ui.datafilter** object and feature the same configuration pattern. 
-
-There're two mandatory methods **refresh()** that provides interaction logic and **render()** that draws an element. Their parameters include: 
-
-- **master** - component object (here: datatable);
-- **column** - related column object;
-- **node** - HTML element (here: header td).
-
-~~~js
-webix.ui.datafilter.customFilterName = {
-    refresh: function(master, node, column){
-        //event handlers
-        node.onchange = function(){...};
-        node.onclick = function(){...}
-    },
-    render:function(master, column){
-            var id = b.columnId;
-			var html = "";
-            return html;
-        }
-    };
-~~~
-
 {{sample 15_datatable/03_filtering/05_custom.html }}
 
-
+Note, in the DataTable constructor you need to specify no parameters.

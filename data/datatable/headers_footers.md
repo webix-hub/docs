@@ -182,6 +182,58 @@ columns:[
 
 {{sample 15_datatable/12_header_footer/06_counter.html }}
 
+##Custom Header and Footer Content
+
+All content elements that can be integrated to the datatable header or footer are stored in a **webix.ui.datafilter** object and feature the same configuration pattern. 
+
+There're two mandatory methods **refresh()** that provides logic and **render()** that draws an element. Their parameters include: 
+
+- **master** - component object (here: datatable);
+- **column** - related column object;
+- **node** - HTML element (here: header td).
+
+You can either extend or redefine the functionality of any existing content element, or create a totally custom element
+
+###Extending Existing Content Element
+
+For datatable footer there exists a pre-built **summColumn** element that counts the sum from all rows of the column and displays them under the grid main part.
+
+If you, for instance, want the element to display an average value instead of the sum, redefine its **refresh()** method
+
+~~~js
+webix.ui.datafilter.avgColumn = webix.extend({
+  		refresh:function(master, node, value){ 
+			var result = 0;
+			master.mapCells(null, value.columnId, null, 1, function(value){
+				value = value*1;
+				if (!isNaN(value))
+					result+=value;
+				return value;
+			});
+
+			node.firstChild.innerHTML = Math.round(result/master.count());
+		}
+}, webix.ui.datafilter.summColumn);
+~~~
+
+At the same time the new content element can be created from scratch. Remember that **render()** and **refresh()** and mandatory methods:
+
+~~~js
+webix.ui.datafilter.customFilterName = {
+    refresh: function(master, node, column){
+        //event handlers
+        node.onchange = function(){...};
+        node.onclick = function(){...}
+    },
+    render:function(master, column){
+		var html = "";
+        return html;
+    }
+};
+~~~
+
+{{sample 15_datatable/12_header_footer/11_custom_content.html }}
+
 @test: test
 @keyword:
 	header, footer,colspan,rowspan,filter,subheader,multiline, counter
