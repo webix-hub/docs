@@ -168,6 +168,12 @@ Here **.bt1** and  **bt2** are class names for two different buttons while **inp
 
 {{sample 02_toolbar/12_styled_buttons.html }}
 
+##Changing Default Icons
+
+Default [FontAwesome icons](http://fortawesome.github.io/Font-Awesome/icons/) that are used for various controls can be changed to custom ones, which is described in detail in 
+a [separate documentation article](desktop/icon_types.md).
+
+
 @index: 
   - desktop/css_image_maps.md
   

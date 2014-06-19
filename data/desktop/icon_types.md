@@ -118,35 +118,52 @@ var data=[
     {id:2, name:"item2", icon:"users"}]
 ~~~
 
-##Setting Icons via user-defined CSS Class
+##Changing Default Icons
 
-You can include any icon you wish into Webix [components](desktop/components.md) and [controls](desktop/controls.md) by assigning the following properties to their objects:
+Default [FontAwesome icons](http://fortawesome.github.io/Font-Awesome/icons/) that are used for various controls can be changed to custom ones in several ways.
 
-- **iconCSS** - the CSS class that holds the desires icon as a background image;
-- **iconWidth** - dimensions of the styled area,
+###Setting Other FontAwesome Icon
 
-Icons are defined for each page with the help of interal styling: 
-
-~~~html
-<style>
-.combo_icon{
-    background-image: url("icon_edit.png");
-    height: 20px;
-    float: right;
-}
-</style>
-~~~
-
-Then this class is set as value of **iconCSS** property:
+If you'd like to use another icon from FontAwesome collection instead of the default one, specify its name as value of **icon** property:
 
 ~~~js
-webix.ui({
-    view:"combo",
-    label: 'Fruit',
-    ...
-    iconCss:"combo_icon", 
-    iconWidth:20
-});
+{view:"richselect", label: 'Other FontAwesome Icon', value:1, options:options, icon:"caret-down"}
+~~~
+
+As a result, the default [richselect]((desktop/controls.md#richselect)) icon, "fa-angle-down", is replaced with the one you've set. 
+
+###Setting a Custom Icon
+
+To set a custom icon that you can provide as a background-image, write the new CSS rule that redefines the default one. Nothing is changed in the control configuration: 
+
+~~~js
+{view:"combo", label: 'Fruit', options:[...] } 
+~~~
+
+As with richselect, [combo](desktop/controls.md#combo) control uses "fa-angle-down" icon which CSS should be modified:
+
+~~~js
+.webix_input_icon.fa-angle-down:before{
+    content:""; /*removes FontAwesome icon */
+    background-image: url("search.png");
+    width:20px;
+    height:20px;
+    display:block;
+}
+~~~
+
+{{sample 13_form/01_controls/16_combo_css.html}}
+
+If you want to style one combo on the page while leaving another one unchanged, define a separate **css** class for the one in question: 
+
+~~~js
+{view:"combo", label: 'Fruit', options:[...], css:"custom" } 
+~~~
+
+Then the necessary CSS will look like this:
+
+~~~css
+.custom .webix_input_icon.fa-angle-down:before{...}
 ~~~
 
 **Component styling** is described in detail in the [corresponding article](desktop/styling.md) of the documentation.

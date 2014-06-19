@@ -31,7 +31,15 @@ Here is a calendar with basic parameters.
 
 - **weekHeader** (boolean) - if *true* shows weekday above;
 - **events** (CSS class or specific cases) - e.g. **webix.Date.isHoliday** highlights dayoffs;
-- **date** - specifies the start date in the "year, month, day" format with months starting from 0. In case of an empty new Date(); you'll be shown current date. 
+- **date** - specifies the start date in the "year, month, day" format with months starting from 0. In case of an empty new Date(); you'll be shown current date;
+- **dayTemplate** - specifies a function that sets a template for each day cell. By default the date is displayed and dayTemplate looks like this: 
+
+~~~js
+view:"calendar",
+dayTemplate:function(d){
+    return d.getMonth();
+}
+~~~
 
 To see the full list of Calendar properties please refer to the [corresponding chapter of the documentation](api/refs/ui.calendar_props.md).
 
