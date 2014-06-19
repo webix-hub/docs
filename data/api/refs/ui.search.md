@@ -92,6 +92,7 @@ Properties
 - api/link/ui.search_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.search_height_config.md - sets the height of the component
 - api/link/ui.search_hidden_config.md - defines whether the view will be hidden initially
+- api/link/ui.search_hotkey_config.md - 
 - api/ui.search_icon_config.md - icon which will be shown next to the input
 - api/link/ui.search_id_config.md - the component ID
 - api/link/ui.search_inputheight_config.md - the height of the input area, or a button's text value area.

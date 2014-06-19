@@ -7,7 +7,7 @@ eachColumn
 	
 @params:
 - handler	function	the handler function
-- all		boolean 	 if true, hidden columns are included into a loop
+* all		boolean 	 if true, hidden columns are included into a loop
 
 
 

@@ -15,6 +15,7 @@ Properties
 - api/link/ui.text_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.text_height_config.md - sets the height of the component
 - api/link/ui.text_hidden_config.md - defines whether the view will be hidden initially
+- api/link/ui.text_hotkey_config.md - 
 - api/link/ui.text_id_config.md - the component ID
 - api/link/ui.text_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/ui.text_inputpadding_config.md - padding of text in the input
@@ -58,6 +59,7 @@ Properties
 - api/link/ui.text_gravity_config.md
 - api/link/ui.text_height_config.md
 - api/link/ui.text_hidden_config.md
+- api/link/ui.text_hotkey_config.md
 - api/link/ui.text_id_config.md
 - api/link/ui.text_inputheight_config.md
 - api/ui.text_inputpadding_config.md

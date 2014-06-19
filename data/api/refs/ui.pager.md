@@ -20,18 +20,22 @@ The component has a little sense on its own, but can be used with other data-bas
 ~~~
 
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/singlerender.md">SingleRender</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
+<a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/singlerender.md">SingleRender</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
 Methods
 -------
 
 {{links
 - api/link/ui.pager_adjust.md - adjusts the component to the size of the parent HTML container
+- api/link/ui.pager_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.pager_bind.md - binds components
+- api/link/ui.pager_blockevent.md - temporarily blocks triggering of ALL events of the calling object
+- api/link/ui.pager_callevent.md - calls an inner event
 - api/ui.pager_clone.md - creates a copy of the pager
 - api/link/ui.pager_customize.md - redefines the 'type' property
 - api/link/ui.pager_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.pager_destructor.md - destructs the calling object
+- api/link/ui.pager_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.pager_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.pager_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.pager_getchildviews.md - returns child views of the calling component
@@ -39,9 +43,11 @@ Methods
 - api/link/ui.pager_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.pager_getparentview.md - returns the parent view of the component
 - api/link/ui.pager_gettopparentview.md - returns top parent view
+- api/link/ui.pager_hasevent.md - checks whether the component has the specified event
 - api/link/ui.pager_hide.md - hides the view
 - api/link/ui.pager_isenabled.md - checks whether the view is enabled
 - api/link/ui.pager_isvisible.md - checks whether the view is visible
+- api/link/ui.pager_mapevent.md - routes events from one object to another
 - api/ui.pager_refresh.md - repaints the whole view or a certain item
 - api/link/ui.pager_render.md - renders the specified item or the whole component
 - api/link/ui.pager_resize.md - adjusts the view to a new size
@@ -49,6 +55,7 @@ Methods
 - api/link/ui.pager_show.md - makes the component visible
 - api/link/ui.pager_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.pager_unbind.md - breaks "bind" link
+- api/link/ui.pager_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}
 
 
@@ -94,6 +101,7 @@ Properties
 - api/link/ui.pager_minheight_config.md - sets the minimal height for the view
 - api/link/ui.pager_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.pager_mouseeventdelay_config.md - the delay between a real mouse action and invoking the related events
+- api/link/ui.pager_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.pager_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
 - api/link/ui.pager_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.pager_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.

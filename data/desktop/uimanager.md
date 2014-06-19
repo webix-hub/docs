@@ -91,7 +91,7 @@ Other data components need to be extended with the [KeysNavigation](api/refs/key
 For controls there exists a possibility to define a hotkey that will trigger it onClick event. The key name (e.g. 'enter' or 'space') is specified by **hotkey** property: 
 
 ~~~js
-{ view:"button", click: doOnClick, hotKey: "enter" }
+{ view:"button", click: doOnClick, hotkey: "enter" }
 ~~~
 
 {{sample 13_form/02_api/12_hotkey.html}}
@@ -101,7 +101,7 @@ The *doOnClick* function will fire now either or pressing 'enter' or on clicking
 Key combinations joined by **+** or **-** sign are as well possible: 
 
 ~~~js
-{ view:"button", click: doOnClick, hotKey: "enter-shift" }
+{ view:"button", click: doOnClick, hotkey: "enter-shift" }
 ~~~
 
 Note that such functionality will work with simple controls like buttons and inputs, not with multiple-choice one. 
