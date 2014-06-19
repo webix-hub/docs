@@ -2,7 +2,7 @@ Version 1.5
 ==============
 
 ### Improved support for mobile devices
-- new skin for mobile UI ([demo](http://webix.com/demos.touch.html))
+- new skin for mobile UI ([demo](http://webix.com/demos/touch.html))
 - functionality of desktop UI adapted to touch events and gestures
 
 ### Improvments in DataTable
