@@ -14,7 +14,7 @@ Properties
 - api/link/ui.button_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.button_height_config.md - sets the height of the component
 - api/link/ui.button_hidden_config.md - defines whether the view will be hidden initially
-- api/ui.button_hotkey_config.md - 
+- api/ui.button_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/link/ui.button_id_config.md - the component ID
 - api/ui.button_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/ui.button_inputwidth_config.md - the width of the input area, or a button's text value area.

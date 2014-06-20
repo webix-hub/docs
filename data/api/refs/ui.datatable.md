@@ -76,7 +76,7 @@ Methods
 - api/link/ui.datatable_getfirstid.md - returns the ID of the first item
 - api/link/ui.datatable_getformview.md - returns master form for the input
 - api/ui.datatable_getheadercontent.md - returns set of helpers for header content manipulation
-- api/ui.datatable_getheadernode.md - 
+- api/ui.datatable_getheadernode.md - returns HTML element of the column's header
 - api/link/ui.datatable_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.datatable_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.datatable_getitem.md - gets the object of the data item with the specified id
