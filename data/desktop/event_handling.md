@@ -292,22 +292,22 @@ More information about key codes and hot keys is to be found in the [UI Manager]
 
 ##Global Webix Events
 
-Global Webix events are not connected with any specific component and can be used to control general application issues (clicks, touch movements, serverside requests, etc). 
+Webix global events are not connected with any specific component and can be used to control general application issues (clicks, touch movements, serverside requests, etc). 
 Some of them repeat native DOM events.
 
 ###Events connected with Webix components functionality
 
-- **onDataTable(config, obj) - fires the moment before a Webix [datatable](datatable/index.md) is renreded on the page;
+- **onDataTable**(config, obj) - fires the moment before a Webix [datatable](datatable/index.md) is renreded on the page;
 - **onEditEnd** - fires when a **popup data editor** (date, color, richselect) is closed in any of the components on the page. See desktop/editing.md article for details;
-- **onLiveValidation**(editor, result, obj, value) - fires the moment editing starts in the component with [live validation](api/ui.datatable_livevalidation_config.md) enabled;
-- **onSyncUnknown**(obj, source, filter) - fires the moment a component tries to [sync](desktop/nonui_objects.md) its data with a non-Webix collection;
+- **onLiveValidation**(editor, result, obj, value) - fires when editing starts in the component with [live validation](api/ui.datatable_livevalidation_config.md) enabled;
+- **onSyncUnknown**(obj, source, filter) - fires when a component tries to [sync](desktop/nonui_objects.md) its data with a non-Webix collection;
 - **onReconstruct**(obj) - fires when application layout is reconstructed (view is removed, added, replaced). See desktop/dynamic_layout.md article for details;
 - **onLayoutResize**(cells) - fires when application layout is [resized](desktop/resizing.md) (not window). 
 
 ###General page events
 
 - **onClick**(e) - fires when a click/double click happens in any application part; 
-- **onFocus**Change(newf, oldf) -fires when focus is changed in the application. Its parameters are Webix objects, the one in focus and the one previously focused, or null if non-Webix object is focused; 
+- **onFocusChange**(newf, oldf) -fires when focus is changed in the application. Its parameters are Webix objects, the one in focus and the one previously focused, or null if non-Webix object is focused; 
 - **onReady** - fires at the same time with window onload event;
 - **unload** - fires at the same time with window onunload event. 
 
@@ -315,12 +315,12 @@ Some of them repeat native DOM events.
 
 - **onRotate**(orientation) - fires when screen is rotated;
 - **onAfterScroll**(pos) - fires after page has been scrolled; 
-- **onTouchStart**(pos) - fires the moment touch starts;
-- **onLongTouch**(pos) - fires  on long touch;
-- **onTouchEnd**(pos) - fires the moment touch ends;
-- **onToucMove**(pos) - fires on touch move;
-- **onSwipeX**(pos) - fires the moment horizontal swipe is detected;
-- **onSwipeY**(pos) -fires the moment vertical swipe is detected;
+- **onTouchStart**(pos) - fires when touch starts;
+- **onLongTouch**(pos) - fires on long touch;
+- **onTouchEnd**(pos) - fires when touch ends;
+- **onTouchMove**(pos) - fires on touch move;
+- **onSwipeX**(pos) - fires when horizontal swipe is detected;
+- **onSwipeY**(pos) -fires when vertical swipe is detected.
 
 ###Events connected with serverside requests from the page
 
@@ -328,6 +328,13 @@ Some of them repeat native DOM events.
 - **onAjaxError**(request_obj) - fires when any Ajax request results in an error;
 - **onLoadError**(text, xml, xhttp, obj) - fires when an error has happened during [loading the data](desktop/data_loadinng.md) into a component. See desktop/loadingerror.md article for details.
 
+All such events are attached to **webix** object:
+
+~~~js
+webix.attachEvent("onRotate", function(mode){
+	..// logic
+});
+~~~
 
 ##Handling of Native DOM Events
 

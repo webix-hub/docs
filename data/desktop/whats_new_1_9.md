@@ -1,4 +1,4 @@
-Version 1.8
+Version 1.9
 ================
 
 ### Major new features
@@ -24,7 +24,7 @@ Version 1.8
 **Updated functionality**
 
 - calendar sizes in touch skin
-- eachColumn for visible and all columns , docs
+- eachColumn for visible and all columns 
 - eachRow and data each can loop through hidden elements
 - form.focus() will focus first focusable item in the form
 - strToDate will not break when incoming parameter is already a Date

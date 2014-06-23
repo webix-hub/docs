@@ -58,6 +58,18 @@ $$('htmlform1').unbind();
 
 From now on, list changes cannot affect form data and vice versa. 
 
+**Addind data to master collection**
+
+When no item is selected in a master component (*here:list*), data in the slave one can still be pushed to it. The new item will be added to a master collection.
+
+The only thing you should do is to remove selection in the master:
+
+~~~js
+$$("list1").unselectAll();
+~~~
+
+{{sample 13_form/02_api/10_binding.html}}
+
 ##Syncing Data of Two Components
 
 Data syncing allows making a full or partial copy of data from one data-presenting component and pass it to the other one. Any change in the master component results in the 

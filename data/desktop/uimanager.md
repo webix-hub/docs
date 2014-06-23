@@ -1,14 +1,16 @@
 UI Manager
 =============
 
-Each time you create a component on the page, even a single one, **UIManager** module is initialized (though indirectly). Its main tasks are to 
+Each time you create a component on the page, even a single one, **UIManager** module is initialized (though indirectly). Its main tasks are:
 
-- control which component (and component item) is focused at the moment;
-- set and remove focusing;
-- assign keyboard events to the component in focus;
-- memorize the component's outer scheme. 
+- watching which component (and component item) is focused at the moment;
+- setting and removing focusing;
+- assigning keyboard events to the component in focus;
+- memorizing the component's outer scheme. 
 
-At the same time, you can set and remove focus programmatically with the help of two opposite methods - **focus()** and **blur()** that are called from the component object. It can be
+###Focusing Methods
+
+You can set and remove focus programmatically with the help of two opposite methods - **focus()** and **blur()** that are called from the component object. It can be
 specified in the component's **ready** property to set/remove focusing on page loading. 
 
 The **focus()** method is either used without parameters or takes an **ID** or **name** of an item as an argument. In the latter case, focus is set to this item rather to the whole component. 
@@ -19,30 +21,16 @@ $$('my_toolbar').blur(); //the toolbar is no longer in focus
 
 $$('my_toolbar').focus('my_text'); 
 // a text input with ID/name = "mytext" on this toolbar is focused
+
+$$("form").focus(); //the first focusable element in the form is focused
 ~~~
 
-UIManager makes 'focus events' possible (onFocus, onFocusChange). For instance, **onFocusChange** event is triggered each time focus is shifted from one component to another. 
+Through UI Manager you can control focus with the following methods that are called from UIManager with the ID of the needed view as an argument: 
 
-The following code retrieves the ID of the view that is in focus now and puts in into the console log. There isn't great practical use from it, yet it shows how UI Manager works. 
-
-
-{{snippet
-Watching focus changes
-}}
-~~~js
-webix.attachEvent("onFocusChange", function(view, prev_view) {
-		webix.console.log("focused: " + (!view ? 'null' : view.config.id));
-		});
-~~~
-
-{{sample 15_datatable/04_editing/01_basic.html }}
- 
-Through UI Manager you can manage focus in the app with the help of the following methods (all of them are called from UIManager with the ID of the needed view as an argument): 
-
-- **getFocus** - returns the view object that is currently focused; 
-- **setFocus** - sets focus into the specified location;
-- **hasFocus** - checks whether the component is in focus and returns *true* or *false* respectively
-- **canFocus** - checks whether the component can take focus. Invisible (hidden) views and their items as well as disabled views cannot be focused. 
+- **getFocus**() - returns the view object that is currently focused; 
+- **setFocus**(id) - sets focus into the specified location;
+- **hasFocus**(id) - checks whether the component is in focus and returns *true* or *false* respectively
+- **canFocus**(id) - checks whether the component can take focus. Invisible (hidden) views and their items as well as disabled views cannot be focused. 
 
 {{snippet
 Focusing an item with ID 'books'
@@ -52,10 +40,39 @@ webix.ui({
 	id:"books",
 	view:"list"
     ...
-   })
+});
 
 webix.UIManager.setFocus("books");
 ~~~
+
+###Focusing Events
+
+Every Webix component features a pair of focusing events **onFocus** and **onBlur**: 
+
+~~~js
+$$("datatable1").attachEvent("onFocus", function(current_view, prev_view){
+	//current_view if the datatable in question
+});
+
+$$("datatable1").attachEvent("onBlur", function(prev_view){
+	//prev_view if the datatable in question
+});
+~~~
+
+In addition, Webix **onFocusChange** [global event]((desktop/event_handling.md#globalwebixevents)) is triggered each time focus is shifted from one component to another. The following code retrieves the ID of the view that is 
+in focus now and puts in into the console log. 
+
+
+{{snippet
+Watching focus changes
+}}
+~~~js
+webix.attachEvent("onFocusChange", function(current_view, prev_view) {
+	webix.console.log("focused: " + (!view ? 'null' : view.config.id));
+});
+~~~
+ 
+
 
 ##Keyboards Events and Hotkeys
 
