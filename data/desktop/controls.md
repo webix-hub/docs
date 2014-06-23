@@ -836,12 +836,13 @@ Toggle type is defined by the **type** property. If it isn't defined, a standard
 - **image** for an image with a left-hand label (if any);
 - **imageButton** for a standard button with an image and a left-hand label;
 - **imageTop** for a picture and a label below it;
-- **imageButtonTop** for a standard button with a picture and a label under the picture.
+- **imageButtonTop** for a standard button with a picture and a label under the picture;
+- **next** for a  button with a right-hand arrow;
+- **prev**for a button with a left-handed arrow.
 
 <table class="list" cellspacing="0" cellpadding="5" border="0">
 	<caption class="caption">
-		<strong>Table 1 </strong>
-		Toggle types
+		Image Toggle types
 	</caption>
 	<tbody>
 	<tr>

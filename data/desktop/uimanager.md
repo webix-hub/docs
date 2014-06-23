@@ -130,7 +130,9 @@ The [addHotKey](api/uimanager_addhotkey.md) function is called from the UIManage
 You can make hot keys **global**, which means that they will trigger the function regardless of the component. The one in focus will be subject to hot key actions. 
 
 ~~~js
-webix.UIManager.addHotKey("Ctrl+V", function() { webix.console.log("Ctrl+V for any");});
+webix.UIManager.addHotKey("Ctrl+V", function() { 
+	webix.console.log("Ctrl+V for any");
+});
 ~~~
 
 At the same time, you can specify any instance of a **Webix component** that should react on this or that hot key by passing the its into the function as a third parameter. 
