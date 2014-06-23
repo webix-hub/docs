@@ -3,8 +3,8 @@ Version 1.9
 
 ### Major new features
 
-- Hotkey for inputs
-- HTML links in menu
+- Hotkey for inputs [Check details](desktop/uimanager.md#keyboardseventsandhotkeys).
+- HTML links in menu [Check details](desktop/menu.md#workingwithmenuitems)
 
 ###Full list of changes and fixes
 
