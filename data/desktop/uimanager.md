@@ -125,7 +125,7 @@ Note that such functionality will work with simple controls like buttons and inp
 
 ####Defining Custom Hotkeys
 
-The **addHotKey** function is called from the UIManager object and has two mandatory parameters - key name and event handler. Key combinations joined by **+** or **-** sign are as well possible. 
+The [addHotKey](api/uimanager_addhotkey.md) function is called from the UIManager object and has two mandatory parameters - key name and event handler. Key combinations joined by **+** or **-** sign are as well possible. 
 
 You can make hot keys **global**, which means that they will trigger the function regardless of the component. The one in focus will be subject to hot key actions. 
 
@@ -152,6 +152,17 @@ webix.UIManager.addHotKey("Ctrl+Space", function() {
 ~~~
 
 {{sample 15_datatable/04_editing/01_basic.html }}
+
+**Removing Hotkeys**
+
+The [addHotKey](api/uimanager_addhotkey.md) function returns a hotkey object that can be used to remove this hotkey: 
+
+~~~js
+var list_key = webix.UIManager.addHotKey("Ctrl+Space", function() { ... }, 'list');
+
+webix.UIManager.removeHotKey(list_key);
+~~~
+
 
 ###Attaching Keyboard events 
 
