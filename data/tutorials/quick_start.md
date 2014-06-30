@@ -120,7 +120,7 @@ webix.ui({
 - One of the key properties of the any component and any item is its **ID**, the unique string or number that helps us refer to the object. **ID** 
 should be specified if you are going to work with this component/item later as all fucntions  and events are attached to the component through its ID; 
 - **template** property defines the way of data presentation within the component item;
-- **type** constructor allows manipulaties the properties of each item rather than the component as a whole; 
+- **type** constructor allows manipulating the properties of each item rather than the component as a whole; 
 - **data** - defines the datasource for the component;
 - **datatype**  - defines [format](desktop/data_types.md) of the incoming data. In case of JSON, datatype specifying is optional. 
 
