@@ -1,7 +1,7 @@
 Webix Proxy Objects
 =======================
 
-Either the compoent's api/link/dataloader_url_config.md property or its api/link/dataloader_load.md function can be used not only for passing loading script, but can include additional loading logic in **proxy objects**. 
+Either the component's api/link/dataloader_url_config.md property or its api/link/dataloader_load.md function can be used not only for passing loading script, but can include additional loading logic in **proxy objects**. 
 
 Built-in Proxy Objects
 
