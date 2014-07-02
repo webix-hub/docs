@@ -1,2 +1,73 @@
 Date Formatting
 =================
+
+
+In the scheduler you are allowed to configure formats (using in dates) and sizes of the elements.
+
+To set the desired option, just write it as it's stated in this documentation. 
+Beware, configuration options should go before the code line with scheduler initialization.
+
+~~~js
+scheduler.config.init_date = new Date(2011,5,1);
+//configuration options should go before the constructor
+dhx.ui({
+	view: "scheduler",
+	id: "scheduler"
+});
+$$("scheduler").load("../scheduler/mobile.xml","scheduler");
+~~~
+
+**Related sample**: samples/01_basic/02_date_format.html
+
+
+Configuration options
+-------------------------
+
+- **scheduler.config.calendar_date** - (string) the date format for the header in the 'month' view (by default, ”%F %Y”)
+- **scheduler.config.calendar_hour** - (string) the format for hours in the 'start(end) date edit form' (by default, ”%h:%i”)
+- **scheduler.config.init_date** - (date object) the initial date of the scheduler (by default, the current date)
+- **scheduler.config.item_date** - (string) the format for the date in the 'list' view (by default, ”%d.%m.%Y”)
+- **scheduler.config.form_all_day** - (string) the format for dates of the 'start', 'end' fields in the 'Details form' in case the **All day** option is set (by default, ”%d-%m-%Y” )
+- **scheduler.config.form_date** - (string) the format for dates of the 'start', 'end' fields in the 'Details form' in case the **Time option** is set (by default, ”%d-%m-%Y %H:%i”)
+- **scheduler.config.header_date** - (string) the format for the date in the 'day' view (by default, ”%d.%m.%Y”)
+- **scheduler.config.hour_date** - (string) the format for the time in the 'list' view (by default, ”%h:%i”)
+- **scheduler.config.multi_day** - (string) the format of presenting multi-day events in the 'Details form' (by default, ”%l, %d %F %Y”)
+- **scheduler.config.scale_hour** - (”%H” or ”%h”) the format for the hours in the 'day' view (by default, ”%H”)
+- **scheduler.config.server_utc** - (boolean) the 'true' value says the scheduler to convert server-side dates from utc to local timezone and backward while sending data to server;
+- **scheduler.config.xml_date** - (string) the date format in data files. Used by the parser to recognize dates (by default, ”%Y-%m-%d %H:%i”)
+
+(7 images)
+
+Date format
+---------------
+
+Format string can contain any separator character and any element from the following list:
+
+- %y - the year as a two-digit number ( 00 to 99 );
+- %Y - the year as a four-digit number ( 1900–9999 );
+
+- %m - the month as a number without a leading zero ( 1 to 12 );
+- %n - the month as a number with a leading zero ( 01 to 12);
+- %M - the month as an abbreviation ( Jan to Dec );
+- %F - the month as a full name ( January to December );
+
+- %W - the ISO-8601 week number of the year. Weeks start on Monday; 
+
+- %d - the day as a number with a leading zero ( 01 to 31 );
+- %j - the day as a number without a leading zero ( 1 to 31 );
+- %D - the day as an abbreviation ( Sun to Sat );
+- %l - the day as a full name ( Sunday to Saturday );
+
+- %h - the hour based on the 12-hour clock with a leading zero ( 01 to 12 );
+- %H - the hour based on the 24-hour clock with a leading zero ( 00 to 23 );
+- %g - the hour based on the 12-hour clock without a leading zero ( 1 to 12 );
+- %G - the hour based on the 24-hour clock without a leading zero ( 0 to 23 );
+
+- %i - the minute as a number with a leading zero ( 00 to 59 );
+- %s - the second as a number without a leading zero ( 00 to 59 ); 
+
+- %a - displays am (for times from midnight until noon) and pm (for times from noon until midnight);
+- %A - displays AM (for times from midnight until noon) and PM (for times from noon until midnight).
+
+For example, if you want to present 1st June 2011 as 01/06/2011, you should specify ”%d/%m/%Y”.
+
