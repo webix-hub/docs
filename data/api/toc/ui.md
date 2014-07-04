@@ -1,10 +1,9 @@
 API Reference
 =============
 
-Layouts
---------------------------
+<div class='h2'>Layouts</div>
 
-<table  style="border-top:1px solid #dfdfdf;" class="webixdoc_links" cellspacing="0" cellpadding="5" border="0">
+<table class="webixdoc_links" cellspacing="0" cellpadding="5" border="0">
 	<tbody>
     <tr>
     	<td style="width:25px;">  <img src="api/toc/accordion.png"/> </td>
@@ -56,9 +55,9 @@ Layouts
 
 
 
-Data Components
----------------------------
-<table  style="border-top:1px solid #dfdfdf;" class="webixdoc_links" cellspacing="0" cellpadding="5" border="0">
+<div class='h2'>Data Components</div>
+
+<table class="webixdoc_links" cellspacing="0" cellpadding="5" border="0">
 	<tbody>
     <tr>
     	<td style="width:25px;">  <img src="api/toc/chart.png"/> </td>
@@ -108,9 +107,9 @@ Data Components
     </tbody>
 </table>
 
-Context Components
---------------------------
-<table  style="border-top:1px solid #dfdfdf;" class="webixdoc_links" cellspacing="0" cellpadding="5" border="0">
+
+<div class='h2'>Context Components</div>
+<table class="webixdoc_links" cellspacing="0" cellpadding="5" border="0">
 	<tbody>
     <tr>
     	<td style="width:25px;">  <img src="api/toc/context.png"/> </td>
@@ -151,9 +150,9 @@ Context Components
 </table>
 
 
-HTML-oriented Components
-----------------------------------
-<table  style="border-top:1px solid #dfdfdf;" class="webixdoc_links" cellspacing="0" cellpadding="5" border="0">
+
+<div class='h2'>HTML-oriented Components</div>
+<table class="webixdoc_links" cellspacing="0" cellpadding="5" border="0">
 	<tbody>
     <tr>
     	<td style="width:25px;">  <img src="api/toc/iframe.png"/> </td>
@@ -179,9 +178,9 @@ HTML-oriented Components
 </table>
 
 
-Form Controls
--------------------------------
-<table  style="border-top:1px solid #dfdfdf;" class="webixdoc_links" cellspacing="0" cellpadding="5" border="0">
+
+<div class='h2'>Form Controls</div>
+<table class="webixdoc_links" cellspacing="0" cellpadding="5" border="0">
 	<tbody>
     <tr>
     	<td style="width:25px;">  <img src="api/toc/button.png"/> </td>
@@ -281,9 +280,9 @@ Form Controls
     </tbody>
 </table>
 
-Auxiliary Components
-----------------------------------------
-<table  style="border-top:1px solid #dfdfdf;" class="webixdoc_links" cellspacing="0" cellpadding="5" border="0">
+
+<div class='h2'>Auxiliary Components</div>
+<table class="webixdoc_links" cellspacing="0" cellpadding="5" border="0">
 	<tbody>
     <tr>
     	<td style="width:25px;">  <img src="api/toc/calendar.png"/> </td>
@@ -324,8 +323,8 @@ Auxiliary Components
 </table>
 
 
-Helpers
--------
+
+<div class='h2'>Helpers</div>
 
 {{links
 - api/refs/common_helpers.md - helpers implemented in webix. and webix.ui
@@ -346,8 +345,8 @@ Helpers
 - api/refs/storage.session.md - interface for storing data in session storage
 }}
 
-Other
------
+
+<div class='h2'>Other</div>
 
 {{links
 - api/toc/ui_mixins.md - building blocks for existing and new components

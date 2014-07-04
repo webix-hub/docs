@@ -1,0 +1,215 @@
+body{
+	overflow:scroll !important;
+	font-family:Consolas, Tahoma;
+}
+
+h2{
+	font-size:20px;
+	margin-left:20px;
+	margin-right:80px;
+	width:250px;
+	cursor:pointer;
+	float:left;
+}
+div.area{
+	clear:both;
+	min-width: 190px;
+}
+
+h3{
+	font-size:16px;
+	margin-left:10px;
+}
+
+#details {
+	clear:both;
+}
+
+#details .marker{
+	width:25px;
+	float:left;
+}
+#details .marker{
+	width:7px;
+	height:7px;
+	margin-right:5px;
+	margin-top:4px;
+	float:left;
+	border-radius:0px;
+	clear:left;
+	background-color: #57ac65;
+}
+#details .status{
+	width:8px;
+	height:8px;
+	float:left;
+	background-color:silver;
+	border-radius:2px;	
+	margin-right:5px;
+	margin-top:4px;
+}
+
+#details .status.des.sam{
+	background-color:white;
+
+	width:8px;
+	height:8px;
+	margin-right:5px;
+	margin-top:4px;
+	margin-left:0px;
+}
+#details .status.des{
+	width:3px;
+	height:10px;
+	margin-right:8px;
+	margin-left:3px;
+	margin-top:3px;
+}
+#details .status.sam{
+	width:8px;
+	height:3px;
+	margin-right:5px;
+	margin-top:7px;
+}
+
+#details .marker.missed{
+	background-color:red;
+}
+#details .name.deprecated{
+	/*text-decoration: line-through;*/
+	color: #5a3030;
+}
+#details .marker.invalid{
+	background-color:orange;
+}
+#details .marker.invalid{
+	border-radius:0;
+}
+
+
+#details small{
+	margin-top:-10px;
+	margin-left:40px;
+	color:silver; 
+	display:block;
+}
+
+#details .sectionend{
+	clear:both;
+}
+
+#details .method{
+	margin-left:20px;
+	font-size:12px;
+	/*float:left;*/
+}
+#details .name.own{
+	background-color:#efe;
+}
+#details .name.new{
+	background-color:#229;
+	color:white;
+}
+#details .name.missed{
+	background-color:#FFDDDD;
+}
+#details .name{
+	float:left;
+	/*width:120px;*/
+	color:black;
+	cursor:pointer;
+}
+#details .defined{
+	float:right;
+	/*width:220px;*/
+	color:#999;
+}
+
+#details small strong{
+	color:#777;
+}
+
+h5{
+	font-size:14px;
+	margin-left:40px;
+	color: #07404e;
+}
+
+div.endline{
+	clear:both;
+	padding-bottom:30px;
+}
+div.word{
+	float:left;
+	padding: 3px 10px;
+	overflow:hidden;
+	color: #231e31;
+	cursor:pointer;
+}
+div.hidden{
+	color:#AAA;
+}
+div.activeword{
+	float:left;
+	padding: 3px 10px;
+	overflow:hidden;
+	background-color:#c1e856;
+	cursor:pointer;
+}
+div.inname{
+	background-color:#DDD;
+}
+
+div#details{
+	border-top:1px dashed silver;
+	width:100%;
+	min-width: 850px;
+}
+
+#details h3 {
+	cursor: pointer;
+}
+
+.bigproblem{
+	color:red;
+}
+.smallproblem{
+	color:orange;
+}
+.minorproblem{
+	color:green;
+}
+/* columns */
+div.sectioncol {
+	float: left;
+	margin: 0px 20px;
+	min-width: 200px;
+}
+div.sectionlabel {
+	clear: both;
+	padding: 8px 0 8px 52px;
+	font-size: 0.8em;
+	font-weight: bold;
+	color: #909090;
+}
+div.sectionlabel div.text_method_type_name {
+	font-weight: normal;
+	border-bottom: 1px dotted #909090;
+	margin-right: 20px;
+}
+div.section {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+div#details h5 {
+	background-color: #f5cdfb;
+	padding: 2px 10px;
+	margin: 10px 0px 10px 20px;
+}
+span.logoinfo {
+	float: right;
+	font-size: 0.8em;
+	padding-top: 5px;
+	color: #43689a;
+	cursor: auto;
+}
