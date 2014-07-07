@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/ui.uploader_addfile.md - adds files to the uploader using browser fileApi
 - api/link/ui.uploader_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.uploader_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)

@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/ui.baseview_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.baseview_bind.md - binds components
 - api/link/ui.baseview_define.md - redefines a single configuration property (or a hash of properties)

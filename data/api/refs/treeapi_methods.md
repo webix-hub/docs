@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/treeapi_close.md - closes the branch with the specified id
 - api/treeapi_closeall.md - closes all branches in the tree
 - api/treeapi_getopenitems.md - returns ids of the opened branches

@@ -6,10 +6,10 @@ TreeAPI
 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/treeapi_close.md - closes the branch with the specified id
 - api/treeapi_closeall.md - closes all branches in the tree
 - api/treeapi_getopenitems.md - returns ids of the opened branches
@@ -21,10 +21,10 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/treeapi_onafterclose_event.md - fires after the branch has been closed
 - api/treeapi_onafteropen_event.md - fires after the branch has been opened
 - api/treeapi_onbeforeclose_event.md - fires the moment you attempt to close the tree branch
@@ -33,12 +33,12 @@ Events
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/treeapi_threestate_config.md - enabled three-state checkboxes
 }}
+
 
 
 

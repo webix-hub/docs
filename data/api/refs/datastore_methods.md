@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/datastore_add.md - adds an item to the store
 - api/datastore_addmark.md - allows setting custom flag for a data item.
 - api/link/datastore_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)

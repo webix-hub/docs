@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/link/ui.proto_animate_config.md - defines or disables view change animation.
 - api/link/ui.proto_borderless_config.md - used to hide the component borders
 - api/link/ui.proto_click_config.md - sets an action happening on a button click

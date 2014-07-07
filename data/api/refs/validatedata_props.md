@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/validatedata_rules_config.md - defines a set of rules for input field(s) of the form(htmlform)
 }}
 

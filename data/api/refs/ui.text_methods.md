@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/link/ui.text_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.text_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.text_bind.md - binds components

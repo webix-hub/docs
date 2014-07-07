@@ -1,7 +1,7 @@
 
 {{memo a container control that presents multiple horizontal or vertical panes}}
 
-A collection of panes that make up the component allows you to organize the content in a space-saving way. <br> The main difference from a standard layout is that accordion can be collapsed/expanded by clicking on the header of a pane. Check [accordion](desktop__accordion.md) documentation for more detailed description.
+A collection of panes that make up the component allows you to organize the content in a space-saving way. <br> The main difference from a standard layout is that accordion can be collapsed/expanded by clicking on the header of a pane. Check [accordion](desktop/accordion.md) documentation for more detailed description.
 
 ### Constructor
 

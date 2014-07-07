@@ -2,7 +2,7 @@
 Events
 =======
 
-{{links
+{{api
 - api/datastore_onafteradd_event.md - fires after adding item to datastore
 - api/datastore_onafterdelete_event.md - fires after item deleting
 - api/datastore_onafterfilter_event.md - fires after DataStore was filtered

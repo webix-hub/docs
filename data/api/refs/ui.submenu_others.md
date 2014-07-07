@@ -2,7 +2,7 @@
 Others
 =======
 
-{{links
+{{api
 - api/link/ui.submenu_$drag_other.md - method called when drag operation initiated
 - api/link/ui.submenu_$draghtml_other.md - defines how dragged item will look
 - api/link/ui.submenu_$dragin_other.md - method called when item moved on possible drop landing during dnd

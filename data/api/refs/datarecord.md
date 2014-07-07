@@ -6,10 +6,10 @@ DataRecord
 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/datarecord_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/datarecord_bind.md - binds components
 - api/link/datarecord_blockevent.md - temporarily blocks triggering of ALL events of the calling object
@@ -29,10 +29,10 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/link/datarecord_onafterload_event.md - fires after xml loading is complete
 - api/link/datarecord_onbeforeload_event.md - occurs immediately before loading XML data has been started
 - api/link/datarecord_onbindrequest_event.md - fires when the component is ready to receive data from the master component
@@ -41,10 +41,9 @@ Events
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/datarecord_data_config.md - an inline dataset that data to the component will be load from.
 - api/link/datarecord_datafeed_config.md - the url to the data source that the component will use to reload data from
 - api/link/datarecord_datatype_config.md - the type of loaded data
@@ -56,10 +55,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/datarecord_config_other.md - all options from initial component configuration
 - api/link/datarecord_name_other.md - indicates the name of the component (a read-only property)
 }}

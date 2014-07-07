@@ -19,6 +19,7 @@
 	"search_results"	: 10,
 	"api_results"		: 3,
 	"api_usedby"		: true,
+	"freid_prefix"		: "webix.",
 	"sample_results"	: 3,
 
 	"export_config" :{

@@ -22,10 +22,10 @@ Mixin was used in top-layout of scheduler-touch, as result it possible to add cu
 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/idspace_innerid.md - returns the unique inner ID of an item
 - api/idspace_ui.md - allows to create new ui, which isd will be locked in parent id space
 }}
@@ -33,10 +33,11 @@ Methods
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/idspace_$$_other.md - locates sub-item by id
 }}
 

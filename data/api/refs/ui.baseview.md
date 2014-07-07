@@ -22,10 +22,10 @@ The component serves as the base class that defines properties, methods, and eve
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/ui.baseview_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.baseview_bind.md - binds components
 - api/link/ui.baseview_define.md - redefines a single configuration property (or a hash of properties)
@@ -46,19 +46,18 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/link/ui.baseview_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.baseview_ondestruct_event.md - occurs when component destroyed
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/ui.baseview_animate_config.md - defines or disables view change animation.
 - api/ui.baseview_borderless_config.md - used to hide the component borders
 - api/ui.baseview_container_config.md - an html container (or its id) where the component needs initializing
@@ -78,10 +77,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/ui.baseview_$getsize_other.md - returns the current size of the component
 - api/ui.baseview_$height_other.md - current height of the view
 - api/ui.baseview_$setsize_other.md - sets the component size

@@ -2,8 +2,8 @@
 Events
 =======
 
-{{links
-- api/link/ui.tabbar_onafterrender_event.md - occurs immediately after the component has been rendered
+{{api
+- api/link/ui.tabbar_onafterrender_event.md - occurs immediately after the component has been rendered.
 - api/ui.tabbar_onaftertabclick_event.md - fired after a user clicks a tab
 - api/link/ui.tabbar_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/ui.tabbar_onbeforetabclick_event.md - fired before a user clicks a tab

@@ -2,7 +2,7 @@
 Events
 =======
 
-{{links
+{{api
 - api/ui.iframe_onafterload_event.md - fires after HTML page was loaded to the component
 - api/ui.iframe_onbeforeload_event.md - fires before HTML page starts to be loaded
 - api/link/ui.iframe_onbindrequest_event.md - fires when the component is ready to receive data from the master component

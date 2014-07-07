@@ -1,7 +1,7 @@
 
 {{memo a control for uploading multiple files}}
 
-The component allows tracking the whole progress of individual file upload. Fully customazable. Check [uploader](desktop__file_upload.md) documentation for more detailed description.
+The component allows tracking the whole progress of individual file upload. Fully customazable. Check [uploader](/) documentation for more detailed description.
 
 ### Constructor
 

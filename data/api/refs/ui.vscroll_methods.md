@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/ui.vscroll_activearea.md - assigns active mouse wheel zone
 - api/link/ui.vscroll_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.vscroll_blockevent.md - temporarily blocks triggering of ALL events of the calling object

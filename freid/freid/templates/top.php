@@ -9,7 +9,7 @@ $helpers = json_decode($_POST['helpers'], true);
 $name = $_POST['name'];
 if ($name == "ui"){
 	@ob_end_clean();
-	require("desktop_top.php");
+	//require("desktop_top.php");
 	die();
 }
 

@@ -2,7 +2,7 @@
 Others
 =======
 
-{{links
+{{api
 - api/link/ui.resizer_$getsize_other.md - returns the current size of the component
 - api/link/ui.resizer_$height_other.md - current height of the view
 - api/link/ui.resizer_$scope_other.md - scope for resolving event and method names

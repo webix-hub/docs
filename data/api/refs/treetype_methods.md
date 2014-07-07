@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/treetype_checkbox.md - draws a check box
 - api/treetype_folder.md - draws an icon of the folder
 - api/treetype_icon.md - draws the '+'/'-' (state) icons for collapsed/expanded states of nodes

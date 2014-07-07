@@ -2,7 +2,7 @@
 Events
 =======
 
-{{links
+{{api
 - api/copypaste_onpaste_event.md - fires when the user presses CTRL+V keys combination
 }}
 

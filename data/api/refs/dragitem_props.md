@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/dragitem_drag_config.md - enables or disables drag-and-drop
 }}
 

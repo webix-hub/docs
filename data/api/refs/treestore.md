@@ -11,10 +11,10 @@ var store = new webix.DataStore();
 webix.extend(store, webix.TreeStore, true);
 ~~~
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/treestore_add.md - adds a new item to the tree
 - api/treestore_changeid.md - changes the id of a data item
 - api/treestore_clearall.md - removes all items from the component
@@ -36,30 +36,30 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/treestore_onafterdelete_event.md - fires after item deleting
 - api/treestore_onbeforedelete_event.md - fires before item deleting
 - api/treestore_onstoreupdated_event.md - fires after data is changed in datastore
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/treestore_filtermode_config.md - defines the pattern for tree item filtering
 }}
 
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/treestore_name_other.md - indicates the name of the component (a read-only property)
 }}
 

@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/keysnavigation_navigation_config.md - activates the selection keyboard navigation
 }}
 

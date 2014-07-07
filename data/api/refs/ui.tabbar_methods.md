@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/link/ui.tabbar_addoption.md - add a new option (segment) to the button
 - api/link/ui.tabbar_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.tabbar_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)

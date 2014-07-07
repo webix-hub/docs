@@ -2,7 +2,7 @@
 Events
 =======
 
-{{links
+{{api
 - api/link/ui.grouplist_onafteradd_event.md - fires after adding item to datastore
 - api/link/ui.grouplist_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.grouplist_onafterdelete_event.md - fires after item deleting

@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/link/dataloader_add.md - adds an item to the store
 - api/link/dataloader_clearall.md - removes all items from the component
 - api/link/dataloader_count.md - returns the count of items in the table

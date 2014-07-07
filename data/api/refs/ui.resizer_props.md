@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/link/ui.resizer_animate_config.md - defines or disables view change animation.
 - api/link/ui.resizer_borderless_config.md - used to hide the component borders
 - api/link/ui.resizer_container_config.md - an html container (or its id) where the component needs initializing

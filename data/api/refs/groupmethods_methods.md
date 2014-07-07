@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/groupmethods_any.md - gets a random property value from a group
 - api/groupmethods_count.md - gets the number of items in a group
 - api/groupmethods_max.md - gets the maximum value of a property

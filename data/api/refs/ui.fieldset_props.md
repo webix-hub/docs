@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/link/ui.fieldset_animate_config.md - defines or disables view change animation.
 - api/ui.fieldset_body_config.md - config for sub-view of fieldset
 - api/link/ui.fieldset_borderless_config.md - used to hide the component borders

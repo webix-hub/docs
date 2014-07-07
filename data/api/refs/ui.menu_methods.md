@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/link/ui.menu_add.md - adds an item to the store
 - api/link/ui.menu_addcss.md - applied CSS class to a component item
 - api/link/ui.menu_adjust.md - adjusts the component to the size of the parent HTML container

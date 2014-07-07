@@ -2,7 +2,7 @@
 Events
 =======
 
-{{links
+{{api
 - api/link/ui.suggest_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.suggest_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.suggest_onhide_event.md - fires when window is hidden

@@ -24,10 +24,10 @@ The class defines properties, methods, and events related to loading and renderi
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.proto_add.md - adds an item to the store
 - api/link/ui.proto_addcss.md - applied CSS class to a component item
 - api/link/ui.proto_adjust.md - adjusts the component to the size of the parent HTML container
@@ -91,10 +91,10 @@ of the component
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/link/ui.proto_onafteradd_event.md - fires after adding item to datastore
 - api/link/ui.proto_onafterdelete_event.md - fires after item deleting
 - api/link/ui.proto_onafterload_event.md - fires after xml loading is complete
@@ -117,10 +117,9 @@ Events
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.proto_animate_config.md - defines or disables view change animation.
 - api/link/ui.proto_borderless_config.md - used to hide the component borders
 - api/link/ui.proto_click_config.md - sets an action happening on a button click
@@ -156,10 +155,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.proto_$getsize_other.md - returns the current size of the component
 - api/link/ui.proto_$height_other.md - current height of the view
 - api/link/ui.proto_$scope_other.md - scope for resolving event and method names

@@ -2,7 +2,7 @@
 Others
 =======
 
-{{links
+{{api
 - api/settings_config_other.md - all options from initial component configuration
 - api/settings_name_other.md - indicates the name of the component (a read-only property)
 }}

@@ -6,10 +6,10 @@ EditAbility
 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/editability_edit.md - enables the edit mode for the specified item
 - api/editability_editcancel.md - cancels the edit mode and closes all opened editors. The component is still editable
 - api/editability_editnext.md - closes the current editor and opens one in the next cell of the row
@@ -22,10 +22,10 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/editability_onaftereditstart_event.md - fires after edit operation was initiated, editor opened and ready for input
 - api/editability_onaftereditstop_event.md - fires after edit operation finished
 - api/editability_onbeforeeditstart_event.md - fires before edit operation is initiated
@@ -34,16 +34,16 @@ Events
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/editability_editvalue_config.md - defines which data item is editable (in case of several data item in the cell/line)
 - api/editability_editable_config.md - allows/denies editing in the view
 - api/editability_editaction_config.md - defines the action on which editors will be opened
 - api/editability_editor_config.md - sets editor types for component items
 - api/editability_form_config.md - linked form
 }}
+
 
 
 

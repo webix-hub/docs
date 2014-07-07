@@ -53,6 +53,8 @@ Berne = {
 				if (!data.assert.short)
 					this._big_problem(url, "short text missed");
 				else {
+					if (data.fossil)
+						this._big_problem(url, "need to be removed");
 					if (!data.assert.example)
 						this._small_problem(url, "example missed");
 					if (!data.assert.descr)

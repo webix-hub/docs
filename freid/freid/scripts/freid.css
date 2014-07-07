@@ -13,7 +13,6 @@ h2{
 }
 div.area{
 	clear:both;
-	min-width: 190px;
 }
 
 h3{
@@ -35,9 +34,7 @@ h3{
 	margin-right:5px;
 	margin-top:4px;
 	float:left;
-	border-radius:0px;
-	clear:left;
-	background-color: #57ac65;
+	border-radius:4px;	
 }
 #details .status{
 	width:8px;
@@ -75,10 +72,6 @@ h3{
 #details .marker.missed{
 	background-color:red;
 }
-#details .name.deprecated{
-	/*text-decoration: line-through;*/
-	color: #5a3030;
-}
 #details .marker.invalid{
 	background-color:orange;
 }
@@ -101,28 +94,24 @@ h3{
 #details .method{
 	margin-left:20px;
 	font-size:12px;
-	/*float:left;*/
+	float:left;
 }
 #details .name.own{
-	background-color:#efe;
-}
-#details .name.new{
-	background-color:#229;
-	color:white;
+	background-color:#DDFFDD;
 }
 #details .name.missed{
 	background-color:#FFDDDD;
 }
 #details .name{
 	float:left;
-	/*width:120px;*/
+	width:120px;
 	color:black;
 	cursor:pointer;
 }
 #details .defined{
-	float:right;
-	/*width:220px;*/
-	color:#999;
+	float:left;
+	width:220px;
+	color:#777;
 }
 
 #details small strong{
@@ -132,7 +121,6 @@ h3{
 h5{
 	font-size:14px;
 	margin-left:40px;
-	color: #07404e;
 }
 
 div.endline{
@@ -141,9 +129,10 @@ div.endline{
 }
 div.word{
 	float:left;
-	padding: 3px 10px;
+	width:150px;
 	overflow:hidden;
-	color: #231e31;
+	padding-left:5px;
+	color:navy;
 	cursor:pointer;
 }
 div.hidden{
@@ -151,9 +140,11 @@ div.hidden{
 }
 div.activeword{
 	float:left;
-	padding: 3px 10px;
+	width:150px;
 	overflow:hidden;
-	background-color:#c1e856;
+	padding-left:5px;
+	color:navy;
+	background-color:orange;
 	cursor:pointer;
 }
 div.inname{
@@ -163,7 +154,6 @@ div.inname{
 div#details{
 	border-top:1px dashed silver;
 	width:100%;
-	min-width: 850px;
 }
 
 #details h3 {
@@ -178,38 +168,4 @@ div#details{
 }
 .minorproblem{
 	color:green;
-}
-/* columns */
-div.sectioncol {
-	float: left;
-	margin: 0px 20px;
-	min-width: 200px;
-}
-div.sectionlabel {
-	clear: both;
-	padding: 8px 0 8px 52px;
-	font-size: 0.8em;
-	font-weight: bold;
-	color: #909090;
-}
-div.sectionlabel div.text_method_type_name {
-	font-weight: normal;
-	border-bottom: 1px dotted #909090;
-	margin-right: 20px;
-}
-div.section {
-	margin-left: 20px;
-	margin-right: 20px;
-}
-div#details h5 {
-	background-color: #f5cdfb;
-	padding: 2px 10px;
-	margin: 10px 0px 10px 20px;
-}
-span.logoinfo {
-	float: right;
-	font-size: 0.8em;
-	padding-top: 5px;
-	color: #43689a;
-	cursor: auto;
 }

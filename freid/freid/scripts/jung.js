@@ -8,7 +8,29 @@ var Jung = {
 		this._generateTop(component);
 	},
 	_generateTop:function(component){
+		
 		var views = JSON.stringify(this._get_views_list());
+		var helpers = JSON.stringify(this._get_helpers_list());
+		
+		this._get_helper_methods_list();
+
+		this._save_page("top.php", {
+			file:"toc/"+Freid.root+".md",
+			name:Freid.root,
+			helpers:helpers,
+			short:doc["webix."+Freid.root].short,
+			objs:views
+		});
+
+		var hidden = this._get_views_list(true);
+		var mixins = this._get_mixins_list();
+		mixins = JSON.stringify(mixins.concat(hidden));
+
+		this._save_page("top_mixins.php", {
+			file:"toc/"+Freid.root+"_mixins.md",
+			name:component,
+			objs:mixins
+		});
 	},
 	_save_page:function(file, data){
 		this._save_list.push({file:file, data:data});
@@ -31,7 +53,79 @@ var Jung = {
 		Jung._try_to_save();
 		document.getElementById("stat").innerHTML=Jung._save_index+" from "+Jung._save_list.length;
 	},
+	_get_helpers_list:function(){
+		var res = [];
+		for (var i=0; i<Freid.oOrder.length; i++){
+			var key = Freid.oOrder[i];
+			if (Freid.contObj[key])
+				continue;
+
+			var name = key.replace("webix.","");
+			var lname = name.toLowerCase();
+			var moto = (doc["webix."+lname]||{}).short;
+
+			var master = Freid.oPull[key];
+			var data = Freid.touch(key, master);
+
+			res.push({ name:name, short:moto });
+
+			var methods = JSON.stringify(this._get_methods_list(data, name));
+			var configs = JSON.stringify(this._get_configs_list(data, name));
+			var events = JSON.stringify(this._get_events_list(data, name));
+			var others = JSON.stringify(this._get_others_list(data, name));
+
+			var parents = JSON.stringify([]);
+
+			this._save_page("api.php", {
+				file:lname,
+				name:name,
+				based:parents,
+				methods:methods,
+				events:events,
+				configs:configs,
+				others:others
+			});
+		}
+
+		return res;
+	},
+	_get_helper_methods_list:function(){
+		var data = []; var names = ["", "ui"];
+		data[0] = ["webix.", Freid.touch("webix",{obj:webix})];
+		data[1] = ["webix.ui.", Freid.touch("webix.ui", {obj:webix.ui})];
+
+		var methods = [];
+		var others = [];
+		var events =  [];
+
+		//event system helpers
+		var evs = ["hasEvent", "mapEvent", "attachEvent", "detachEvent", "blockEvent", "unblockEvent", "callEvent"];
+		for (var i = evs.length - 1; i >= 0; i--)
+			data[0][1].mPull[evs[i]].defined = ["webix.EventSystem"];
 	
+		for (var i=0; i<data.length; i++){
+			var mCheck = {};
+			for (var key in Freid.hPull)
+				mCheck[key.replace(data[i][0],"")] = true;
+			var cCheck = {};
+			for (var key in Freid.cPull)
+				cCheck[key.replace(data[i][0],"")] = true;
+
+			methods = methods.concat(this._get_methods_list(data[i][1], names[i], mCheck));
+			events = events.concat(this._get_events_list(data[i][1], names[i]));
+			others = others.concat(this._get_others_list(data[i][1], names[i], cCheck));
+		}
+
+		this._save_page("api.php", {
+			file:"common_helpers",
+			name:"common helpers",
+			based:JSON.stringify([]),
+			methods:JSON.stringify(methods),
+			events:JSON.stringify(events),
+			configs:JSON.stringify([]),
+			others:JSON.stringify(others)
+		});
+	},
 	_get_views_list:function(mode){
 		var res = [];
 		for (var i=0; i<Freid.vOrder.length; i++){
@@ -51,18 +145,19 @@ var Jung = {
 			var methods = JSON.stringify(this._get_methods_list(data, name));
 			var configs = JSON.stringify(this._get_configs_list(data, name));
 			var events = JSON.stringify(this._get_events_list(data, name));
-			var templates = JSON.stringify(this._get_templates_list(data, name));
 			var others = JSON.stringify(this._get_others_list(data, name));
 
+			var parents = [];
+			for (var j=0; j<data.ancestors.length; j++)
+				parents[j] = value = data.ancestors[j][0];
 			
 			var lname = name.toLowerCase();
 			this._save_page("api.php", {
 				file:lname,
 				name:name,
-				based:"",
+				based:JSON.stringify(parents),
 				methods:methods,
 				events:events,
-				templates:templates,
 				configs:configs,
 				others:others
 			});
@@ -213,29 +308,33 @@ var Jung = {
 		}
 		return ret;
 	},
-	_get_templates_list:function(data, name, check){
-		var ret = [];
-		var pname = name.toLowerCase();
-		for (var i=0; i<data.tOrder.length; i++){
-			var key = data.tOrder[i];
-			if (check && !check[key]) continue;
-			var mname = key.toLowerCase();
-			var info = data.tPull[key];
-			var assert = info.assert || { descr:""};
+	_get_mixins_list:function(data, name){
+		var res = [];
+		for (var i=0; i<Freid.mOrder.length; i++){
+			var key = Freid.mOrder[i];
+			var name = key.replace("webix.","");
+			var lname = name.toLowerCase();
+			var moto = (doc["webix."+lname]||{}).short;
 
+			res.push({ name:name.toLowerCase(),  short:moto });
 			
-			var defined = ((info.defined&&info.defined[0])?info.defined[0].replace("webix.",""):name);
-			var mdefined = defined.toLowerCase();
+			var data = Freid.touch(key, Freid.mPull[key]);
+			var methods = JSON.stringify(this._get_methods_list(data, name));
+			var configs = JSON.stringify(this._get_configs_list(data, name));
+			var events = JSON.stringify(this._get_events_list(data, name));
+			var others = JSON.stringify(this._get_others_list(data, name));
 			
-			this._save_page("template.php", {
-				file:mdefined+"_"+mname+"_template.md",
-				name:key,
-				defined:defined,
-				params:JSON.stringify(assert.assert),
-				descr:assert.short
+
+			this._save_page("api.php", {
+				file:lname,
+				name:name,
+				methods:methods,
+				events:events,
+				configs:configs,
+				others:others
 			});
-			ret.push({name:key, descr:assert.short, owner:mdefined});
 		}
-		return ret;
+
+		return res;
 	}
 };

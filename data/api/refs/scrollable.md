@@ -6,22 +6,22 @@ Scrollable
 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/scrollable_getscrollstate.md - returns the scroll position
 - api/scrollable_scrollto.md - scrolls the data container to a certain position
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/scrollable_scroll_config.md - enables/disables the scroll bar
 - api/scrollable_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 }}
+
 
 
 

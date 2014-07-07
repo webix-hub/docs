@@ -2,7 +2,7 @@
 Events
 =======
 
-{{links
+{{api
 - api/link/ui.tree_onafteradd_event.md - fires after adding item to datastore
 - api/link/ui.tree_onafterclose_event.md - fires after the branch has been closed
 - api/link/ui.tree_onaftercontextmenu_event.md - fires after the context menu was called in the item area

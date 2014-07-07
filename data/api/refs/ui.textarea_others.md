@@ -2,7 +2,7 @@
 Others
 =======
 
-{{links
+{{api
 - api/link/ui.textarea_$getsize_other.md - returns the current size of the component
 - api/link/ui.textarea_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.textarea_$height_other.md - current height of the view

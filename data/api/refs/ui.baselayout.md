@@ -22,10 +22,10 @@ The component serves as the base class that defines properties, methods, and eve
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/ui.baselayout_addview.md - add new view to layout or multiview
 - api/link/ui.baselayout_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.baselayout_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
@@ -59,19 +59,18 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/link/ui.baselayout_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.baselayout_ondestruct_event.md - occurs when component destroyed
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.baselayout_animate_config.md - defines or disables view change animation.
 - api/link/ui.baselayout_borderless_config.md - used to hide the component borders
 - api/ui.baselayout_cols_config.md - array of views objects arranged horizontally
@@ -96,10 +95,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.baselayout_$getsize_other.md - returns the current size of the component
 - api/link/ui.baselayout_$height_other.md - current height of the view
 - api/link/ui.baselayout_$setsize_other.md - sets the component size

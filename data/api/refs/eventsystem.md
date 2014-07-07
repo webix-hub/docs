@@ -6,10 +6,10 @@ EventSystem
 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/eventsystem_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/eventsystem_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/eventsystem_callevent.md - calls an inner event
@@ -20,12 +20,12 @@ Methods
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/eventsystem_on_config.md - allows attaching custom handlers to inner events of the component
 }}
+
 
 
 

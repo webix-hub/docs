@@ -4,7 +4,7 @@ ui.headerlayout
 
 {{memo A horizontal or vertical layout with the header(s). }}
 
-The component consists of cells arranged vertically or horizontally. The header is an optional part of the cell, i.e. in one and the same layout some cells can be with headers, some cells - without. By clicking on the header the user can collapse/expand the related cell. Check [layout](desktop__layout.md) documentation for more detailed description.
+The component consists of cells arranged vertically or horizontally. The header is an optional part of the cell, i.e. in one and the same layout some cells can be with headers, some cells - without. By clicking on the header the user can collapse/expand the related cell. Check [layout](desktop/layout.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -23,10 +23,10 @@ The component consists of cells arranged vertically or horizontally. The header 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.accordion.md">ui.accordion</a>, <a href="api/refs/ui.layout.md">ui.layout</a>, <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.headerlayout_addview.md - add new view to layout or multiview
 - api/link/ui.headerlayout_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.headerlayout_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
@@ -60,19 +60,18 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/link/ui.headerlayout_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.headerlayout_ondestruct_event.md - occurs when component destroyed
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.headerlayout_animate_config.md - defines or disables view change animation.
 - api/link/ui.headerlayout_borderless_config.md - used to hide the component borders
 - api/link/ui.headerlayout_collapsed_config.md - 'says' to display initially all accordion cells collapsed
@@ -106,10 +105,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.headerlayout_$getsize_other.md - returns the current size of the component
 - api/link/ui.headerlayout_$height_other.md - current height of the view
 - api/link/ui.headerlayout_$setsize_other.md - sets the component size

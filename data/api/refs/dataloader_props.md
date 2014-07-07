@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/link/dataloader_data_config.md - an inline dataset that data to the component will be load from.
 - api/link/dataloader_datafeed_config.md - the url to the data source that the component will use to reload data from
 - api/dataloader_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)

@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/link/ui.datatable_add.md - adds an item to the store
 - api/ui.datatable_addcellcss.md - adds a css class to the cell
 - api/link/ui.datatable_addcss.md - applied CSS class to a component item
@@ -97,7 +97,7 @@ of the component
 - api/link/ui.datatable_parse.md - loads data to the component from an inline data source
 - api/link/ui.datatable_refresh.md - repaints the whole view or a certain item
 - api/ui.datatable_refreshcolumns.md - refreshes the structure of DataTable
-- api/ui.datatable_refreshfilter.md - 
+- api/ui.datatable_refreshfilter.md - rebuilds list of options in select filter
 - api/ui.datatable_refreshheadercontent.md - refreshes the header row of DataTable
 - api/ui.datatable_registerfilter.md - registers a filter element
 - api/link/ui.datatable_remove.md - removes the specified item from datastore

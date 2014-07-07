@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/datamarks_addcss.md - applied CSS class to a component item
 - api/datamarks_clearcss.md - removes css class from all items
 - api/datamarks_hascss.md - checks if item has specific css class

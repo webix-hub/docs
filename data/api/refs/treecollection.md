@@ -9,10 +9,10 @@ var store = new webix.TreeCollection({ url:"tree.php" });
 ~~~
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/treecollection_add.md - adds an item to the store
 - api/link/treecollection_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/treecollection_bind.md - binds components
@@ -59,10 +59,10 @@ of the component
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/link/treecollection_onafteradd_event.md - fires after adding item to datastore
 - api/link/treecollection_onafterdelete_event.md - fires after item deleting
 - api/link/treecollection_onafterload_event.md - fires after xml loading is complete
@@ -81,10 +81,9 @@ Events
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/treecollection_data_config.md - an inline dataset that data to the component will be load from.
 - api/link/treecollection_datafeed_config.md - the url to the data source that the component will use to reload data from
 - api/link/treecollection_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
@@ -103,10 +102,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/treecollection_config_other.md - all options from initial component configuration
 - api/link/treecollection_name_other.md - indicates the name of the component (a read-only property)
 }}

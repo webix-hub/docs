@@ -6,10 +6,10 @@ DataLoader
 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/dataloader_add.md - adds an item to the store
 - api/link/dataloader_clearall.md - removes all items from the component
 - api/link/dataloader_count.md - returns the count of items in the table
@@ -35,10 +35,10 @@ of the component
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/link/dataloader_onafteradd_event.md - fires after adding item to datastore
 - api/link/dataloader_onafterdelete_event.md - fires after item deleting
 - api/link/dataloader_onafterload_event.md - fires after xml loading is complete
@@ -53,10 +53,9 @@ Events
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/dataloader_data_config.md - an inline dataset that data to the component will be load from.
 - api/link/dataloader_datafeed_config.md - the url to the data source that the component will use to reload data from
 - api/dataloader_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
@@ -67,6 +66,7 @@ Properties
 - api/dataloader_scheme_config.md - defines schemes for data processing
 - api/link/dataloader_url_config.md - the url of a data feed which will be loaded after component initialization
 }}
+
 
 
 

@@ -3,10 +3,15 @@ API Reference
 
 <div class='h2'>Layouts</div>
 
-<table class="webixdoc_links" cellspacing="0" cellpadding="5" border="0">
+<style type="text/css">
+table.webixtoc td{
+    min-width: 0px;
+}
+</style>
+<table class='webixtoc'>
 	<tbody>
     <tr>
-    	<td style="width:25px;">  <img src="api/toc/accordion.png"/> </td>
+    	<td style="width:25px;min-width:">  <img src="api/toc/accordion.png"/> </td>
         <td style="width:110px !important;">api/refs/ui.accordion.md </td>
         <td> a container control that presents multiple horizontal or vertical panes </td>
     </tr>
@@ -57,7 +62,7 @@ API Reference
 
 <div class='h2'>Data Components</div>
 
-<table class="webixdoc_links" cellspacing="0" cellpadding="5" border="0">
+<table class='webixtoc'>
 	<tbody>
     <tr>
     	<td style="width:25px;">  <img src="api/toc/chart.png"/> </td>
@@ -109,7 +114,7 @@ API Reference
 
 
 <div class='h2'>Context Components</div>
-<table class="webixdoc_links" cellspacing="0" cellpadding="5" border="0">
+<table class='webixtoc'>
 	<tbody>
     <tr>
     	<td style="width:25px;">  <img src="api/toc/context.png"/> </td>
@@ -152,7 +157,7 @@ API Reference
 
 
 <div class='h2'>HTML-oriented Components</div>
-<table class="webixdoc_links" cellspacing="0" cellpadding="5" border="0">
+<table class='webixtoc'>
 	<tbody>
     <tr>
     	<td style="width:25px;">  <img src="api/toc/iframe.png"/> </td>
@@ -180,7 +185,7 @@ API Reference
 
 
 <div class='h2'>Form Controls</div>
-<table class="webixdoc_links" cellspacing="0" cellpadding="5" border="0">
+<table class='webixtoc'>
 	<tbody>
     <tr>
     	<td style="width:25px;">  <img src="api/toc/button.png"/> </td>
@@ -282,7 +287,7 @@ API Reference
 
 
 <div class='h2'>Auxiliary Components</div>
-<table class="webixdoc_links" cellspacing="0" cellpadding="5" border="0">
+<table class='webixtoc'>
 	<tbody>
     <tr>
     	<td style="width:25px;">  <img src="api/toc/calendar.png"/> </td>
@@ -326,7 +331,7 @@ API Reference
 
 <div class='h2'>Helpers</div>
 
-{{links
+{{api
 - api/refs/common_helpers.md - helpers implemented in webix. and webix.ui
 - api/refs/ajax.md - ajax operations (data loading, server side events)
 - api/refs/clipbuffer.md - interface for clipboard
@@ -348,7 +353,7 @@ API Reference
 
 <div class='h2'>Other</div>
 
-{{links
+{{api
 - api/toc/ui_mixins.md - building blocks for existing and new components
 }}
 
@@ -375,9 +380,9 @@ API Reference
 - api/refs/ui.accordionitem.md
 - api/refs/ui.button.md
 - api/refs/ui.calendar.md
-- api/refs/ui.carousel.md
 - api/refs/ui.chart.md
 - api/refs/ui.checkbox.md
+- api/refs/ui.carousel.md
 - api/refs/ui.colorboard.md
 - api/refs/ui.colorpicker.md
 - api/refs/ui.combo.md

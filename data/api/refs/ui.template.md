@@ -3,7 +3,7 @@ ui.template
 
 {{memo A view with some HTML content inside. }}
 
-The component is a simple container (but with rich API support) where you can put any HTML content. Check [template](desktop__template.md) documentation for more detailed description.
+The component is a simple container (but with rich API support) where you can put any HTML content. Check [template](desktop/template.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -22,10 +22,10 @@ The component is a simple container (but with rich API support) where you can pu
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.template_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.template_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.template_bind.md - binds components
@@ -63,12 +63,12 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/link/ui.template_onafterload_event.md - fires after xml loading is complete
-- api/link/ui.template_onafterrender_event.md - occurs immediately after the component has been rendered
+- api/link/ui.template_onafterrender_event.md - occurs immediately after the component has been rendered.
 - api/link/ui.template_onbeforeload_event.md - occurs immediately before loading XML data has been started
 - api/link/ui.template_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.template_onbindrequest_event.md - fires when the component is ready to receive data from the master component
@@ -78,10 +78,9 @@ Events
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.template_animate_config.md - defines or disables view change animation.
 - api/ui.template_autoheight_config.md - lets the component autosize to its contents
 - api/link/ui.template_borderless_config.md - used to hide the component borders
@@ -115,10 +114,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.template_$getsize_other.md - returns the current size of the component
 - api/link/ui.template_$height_other.md - current height of the view
 - api/link/ui.template_$scope_other.md - scope for resolving event and method names

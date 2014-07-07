@@ -2,7 +2,7 @@
 Others
 =======
 
-{{links
+{{api
 - api/ajax_master_other.md - 
 }}
 

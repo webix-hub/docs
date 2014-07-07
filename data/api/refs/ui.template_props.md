@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/link/ui.template_animate_config.md - defines or disables view change animation.
 - api/ui.template_autoheight_config.md - lets the component autosize to its contents
 - api/link/ui.template_borderless_config.md - used to hide the component borders

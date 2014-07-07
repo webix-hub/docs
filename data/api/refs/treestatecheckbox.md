@@ -6,10 +6,10 @@ TreeStateCheckbox
 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/treestatecheckbox_checkall.md - check all items in tree
 - api/treestatecheckbox_checkitem.md - checks the checkbox	related to the specified item
 - api/treestatecheckbox_getchecked.md - returns ids of the checked items
@@ -19,20 +19,20 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/treestatecheckbox_onitemcheck_event.md - fires when you check an item in tree and treetable
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/treestatecheckbox_threestate_config.md - defines three-state checkboxes for the tree. Flase by default.
 }}
+
 
 
 

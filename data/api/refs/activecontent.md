@@ -7,12 +7,12 @@ ActiveContent
 
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/activecontent_activecontent_config.md - sets controls that will be use in view template
 }}
+
 
 
 

@@ -6,10 +6,10 @@ html
 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/html_addcss.md - adds a CSS class to a DOM node
 - api/html_addmeta.md - adds metadata to the page
 - api/html_addstyle.md - adds a CSS rule to the page
@@ -30,6 +30,7 @@ The third parameter is optional and used just to avoid errors in case the specif
 - api/html_removecss.md - removes a CSS class from a DOM node
 - api/html_stopevent.md - stops processing of an event beyond the current target (called in some event handler)
 }}
+
 
 
 

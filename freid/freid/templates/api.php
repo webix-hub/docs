@@ -29,7 +29,7 @@ $start = preg_replace("|[ ]*\\}\\}|",". }}", $start);
 ob_start();
 
 ?>
-<?php echo strtoupper(substr($name,0,1)).substr($name,1)." API"; ?> 
+<?php echo $name; ?> 
 =============
 
 <?php echo $start; ?>

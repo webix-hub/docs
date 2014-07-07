@@ -2,7 +2,7 @@
 Events
 =======
 
-{{links
+{{api
 - api/link/ui.form_onafterload_event.md - fires after xml loading is complete
 - api/link/ui.form_onaftervalidation_event.md - fires after data has been validated
 - api/link/ui.form_onbeforeload_event.md - occurs immediately before loading XML data has been started

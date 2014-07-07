@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/settings_id_config.md - the component ID
 }}
 
