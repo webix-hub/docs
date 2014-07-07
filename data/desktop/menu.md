@@ -151,6 +151,27 @@ webix.ui({
 
 {{sample 03_menu/02_menubar_template.html}}
 
+The same way you can initialize  Webix **submenu** component separately and then point to it within *submenu* property:
+
+~~~js
+webix.ui({
+	view:"submenu", id:"test", data:[
+		{ id:"1.1", value:"English"},
+		{ id:"1.3", value:"German"}
+	]
+});
+
+webix.ui({
+	view:"menu",
+	data:[
+		{ id:"1", value:"Translate...", submenu:"test"},
+		{ id:"2", value:"Post..."
+	]
+});	
+~~~
+
+Each submenu item can take its own submenu component. 
+
 ###MenuBar
 
 Menu takes after a toolbar in appearance, but you can't embed other controls on a menu toolbar. To do this, init menu and toolbar as neighbouring cols so that they form an integral entity. 

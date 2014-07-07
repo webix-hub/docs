@@ -14,25 +14,36 @@ List items are groupped by title
 }}
 ~~~js
 webix.ui({
-		view:"unitlist", 
-        sort:{
-           by:"#title#",
-           dir: 'asc'
-         },
-        uniteBy:function(obj){
-            return obj.title.substr(0,1); 
-         },
-        template:"#title#</br>#year#<br/>#votes#",
-        data: set
-})
+	view:"unitlist", 
+    sort:{
+        by:"#title#",
+        dir: 'asc'
+    },
+    uniteBy:function(obj){
+        return obj.title.substr(0,1); 
+    },
+    template:"#title#</br>#year#<br/>#votes#",
+    data: set
+});
 ~~~
 
 
 {{sample 05_list/11_unitlist.html }}
 
 - The **uniteBy** property groups data according to the specified criterion, the unit value (here it's the first letter to the data item title);
-- In addition it sets **unit headers**  - the unit values. 
+- In addition it sets **unit headers** (unit values) and, additionally, sets [template](desktop/making_templates.md) for them;
 - **Sorting** is applied to unit headers as well as to data items within the units. 
+
+{{snippet
+Unit header template
+}}
+~~~js
+view:"unitlist",
+uniteBy:function(obj){
+    return "<span style='background-color:"+obj.color+";'>"+
+    		obj.title.substr(0,1)+"</span>"; 
+}
+~~~
 
 ###Working with Unitlist
 
