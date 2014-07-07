@@ -14,14 +14,43 @@ By default, **'scheduler.config.form'** looks like:
 
 ~~~js
 scheduler.config.form = [
-	{view:"text",     id:'text',       label:scheduler.locale.labels.label_event, name:'text'},
-    {view:"datetext", id:'start_date', label:scheduler.locale.labels.label_start, name:'start_date', dateFormat:scheduler.config.form_date},
-    {view:"datetext", id:'end_date',   label:scheduler.locale.labels.label_end,   name:'end_date',   dateFormat:scheduler.config.form_date},
-    {view:"toggle",   id:'allDay',     label:"", align: "right", value:"0", options: [
-		{value:"0",label:scheduler.locale.labels.label_time},               
-        {value:"1",label:scheduler.locale.labels.label_allday}
-    ]},
-    {view:"textarea", id:'details',    label:labels.label_details,                name:'details',	 height:150}
+	{	
+    	view:"text",     
+    	id:'text',       
+    	label:scheduler.locale.labels.label_event, 
+    	name:'text'
+    },
+    {
+    	view:"datetext", 
+        id:'start_date', 
+        label:scheduler.locale.labels.label_start, 
+        name:'start_date', 
+        dateFormat:scheduler.config.form_date
+    },
+    {
+    	view:"datetext", 
+        id:'end_date',   
+        label:scheduler.locale.labels.label_end,   
+        name:'end_date',   
+        dateFormat:scheduler.config.form_date
+    },
+    {
+    	view:"toggle",   
+        id:'allDay',     
+        label:"", 
+        align: "right",
+        value:"0", options: [
+			{value:"0",label:scheduler.locale.labels.label_time},               
+        	{value:"1",label:scheduler.locale.labels.label_allday}
+    	]
+    },
+    {
+    	view:"textarea", 
+        id:'details',    
+        label:labels.label_details,                
+        name:'details',	 
+        height:150
+    }
 ];
 
 ~~~

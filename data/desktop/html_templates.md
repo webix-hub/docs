@@ -200,14 +200,20 @@ JSON data in the dataview
 
 ~~~js
 
-	var big_film_set = [{"id":1,
-    					"title":"The Shawshank Redemption",
-                        "year":"1994","votes":"678,79",
-                        "rating":"9,2","rank":"1"}];
+var big_film_set = [
+	{
+    	"id":1,
+    	"title":"The Shawshank Redemption",
+    	"year":"1994",
+        "votes":"678,79",
+        "rating":"9,2","rank":"1"
+    }
+];
+
 webix.ui({       
- view: "dataview",
- template: "<div class='rank'>#rank#.</div><div class='title'>#title#</div>"
-  })
+	view: "dataview",
+ 	template: "<div class='rank'>#rank#.</div><div class='title'>#title#</div>"
+})
 ~~~
 
 {{sample 06_dataview/02_templates/01_jshtml.html}}
@@ -220,19 +226,19 @@ Template may be included inside the **type** parameter. Type applies to each ite
 
 ~~~js
 webix.type(webix.ui.dataview,{
-            name:"typeA",
-            template: "<div class=''>#rank#.</div>
-                        <div class='title'>#title#</div>
-                        <div class='year'>#year# year</div>",
-        });
+	name:"typeA",
+    template: "<div class=''>#rank#.</div>
+               <div class='title'>#title#</div>
+               <div class='year'>#year# year</div>",
+});
 ~~~ 
 2 . Then you define the type **name** as value of template property for this component:
 ~~~js
 webix.ui({       
- view: "dataview",
- type: "typeA", //name of the new object created in the first step
+ 	view: "dataview",
+ 	type: "typeA", //name of the new object created in the first step
  ...
-  })
+})
 ~~~
 
 {{sample 06_dataview/02_templates/05_named.html }}
@@ -244,13 +250,13 @@ See the corresponding article to learn more about [type implementation](desktop/
 The template may be defined inside an **html-container** and referred to as a value of a template parameter: 
 
 ~~~html
- <textarea id="template_container" rows="5" cols="60" style="margin-left:20px">
-        <div class='overall'>
-            <div class='rank'>#rank#.</div>
-            <div class='title'>#title#</div>
-            <div class='year'>#year#</div>
-        </div>
-    </textarea>
+<textarea id="template_container" rows="5" cols="60" style="margin-left:20px">
+	<div class='overall'>
+    	<div class='rank'>#rank#.</div>
+        <div class='title'>#title#</div>
+        <div class='year'>#year#</div>
+    </div>
+</textarea>
     
 <script>
 webix.ui({       
@@ -267,11 +273,11 @@ webix.ui({
 Template can be defined in some external file. In this case, **template** parameter will get a link to this file.
 
 ~~~js
-     webix.ui({
-		view:"dataview",
-		template:"http->template.html",
-        data:big_film_set
-		});
+webix.ui({
+	view:"dataview",
+	template:"http->template.html",
+    data:big_film_set
+});
 ~~~
 
 The file contents (an HTML template from the example above):
@@ -293,10 +299,10 @@ Template may as well contain a **function** that specifies the info to show:
 ~~~js
 ...
 template:function(obj){
-			return "<div class='overall'><div class='rank'>"+obj.rank+".</div>
-            	<div class='title'>"+obj.title+"</div>
-            	<div class='year'>"+obj.year+" year</div> </div>"
-				}
+	return "<div class='overall'><div class='rank'>"+obj.rank+".</div>
+            <div class='title'>"+obj.title+"</div>
+            <div class='year'>"+obj.year+" year</div> </div>"
+}
 ~~~
 
 {{sample 06_dataview/02_templates/02_js.html}}

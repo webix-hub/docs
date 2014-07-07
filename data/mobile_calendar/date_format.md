@@ -2,15 +2,15 @@ Date Formatting
 =================
 
 
-In the scheduler you are allowed to configure formats (using in dates) and sizes of the elements.
+In the scheduler you are allowed to configure formats (used in dates) and sizes of the elements.
 
 To set the desired option, just write it as it's stated in this documentation. 
-Beware, configuration options should go before the code line with scheduler initialization.
+Beware! Configuration options should go before the code line with scheduler initialization.
 
 ~~~js
 scheduler.config.init_date = new Date(2011,5,1);
 //configuration options should go before the constructor
-dhx.ui({
+webix.ui({
 	view: "scheduler",
 	id: "scheduler"
 });
@@ -23,16 +23,16 @@ $$("scheduler").load("../scheduler/mobile.xml","scheduler");
 Configuration options
 -------------------------
 
-- **scheduler.config.calendar_date** - (string) the date format for the header in the 'month' view (by default, ”%F %Y”)
-- **scheduler.config.calendar_hour** - (string) the format for hours in the 'start(end) date edit form' (by default, ”%h:%i”)
+- **scheduler.config.calendar_date** - (string) the date format of the header in the 'month' view (by default, ”%F %Y”)
+- **scheduler.config.calendar_hour** - (string) the format of  hours in the 'start(end) date edit form' (by default, ”%h:%i”)
 - **scheduler.config.init_date** - (date object) the initial date of the scheduler (by default, the current date)
-- **scheduler.config.item_date** - (string) the format for the date in the 'list' view (by default, ”%d.%m.%Y”)
-- **scheduler.config.form_all_day** - (string) the format for dates of the 'start', 'end' fields in the 'Details form' in case the **All day** option is set (by default, ”%d-%m-%Y” )
-- **scheduler.config.form_date** - (string) the format for dates of the 'start', 'end' fields in the 'Details form' in case the **Time option** is set (by default, ”%d-%m-%Y %H:%i”)
-- **scheduler.config.header_date** - (string) the format for the date in the 'day' view (by default, ”%d.%m.%Y”)
-- **scheduler.config.hour_date** - (string) the format for the time in the 'list' view (by default, ”%h:%i”)
+- **scheduler.config.item_date** - (string) the format of the date in the 'list' view (by default, ”%d.%m.%Y”)
+- **scheduler.config.form_all_day** - (string) the format of  dates of the 'start', 'end' fields in the 'Details form' in case the **All day** option is set (by default, ”%d-%m-%Y” )
+- **scheduler.config.form_date** - (string) the format of dates of the 'start', 'end' fields in the 'Details form' in case the **Time option** is set (by default, ”%d-%m-%Y %H:%i”)
+- **scheduler.config.header_date** - (string) the format of the date in the 'day' view (by default, ”%d.%m.%Y”)
+- **scheduler.config.hour_date** - (string) the format of the time in the 'list' view (by default, ”%h:%i”)
 - **scheduler.config.multi_day** - (string) the format of presenting multi-day events in the 'Details form' (by default, ”%l, %d %F %Y”)
-- **scheduler.config.scale_hour** - (”%H” or ”%h”) the format for the hours in the 'day' view (by default, ”%H”)
+- **scheduler.config.scale_hour** - (”%H” or ”%h”) the format of the hours in the 'day' view (by default, ”%H”)
 - **scheduler.config.server_utc** - (boolean) the 'true' value says the scheduler to convert server-side dates from utc to local timezone and backward while sending data to server;
 - **scheduler.config.xml_date** - (string) the date format in data files. Used by the parser to recognize dates (by default, ”%Y-%m-%d %H:%i”)
 

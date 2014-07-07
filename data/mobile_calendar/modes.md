@@ -7,7 +7,7 @@ The mobile scheduler can be used in 2 modes:
 - **Read-only**
 
 To activate the **read-only** mode you should set the **scheduler.config.readonly** option to true. 
-Beware, the option should go before the code line with scheduler initialization.
+Beware! The option should go before the code line with scheduler initialization.
 
 From now on, users can't modify events. The 'Add', 'Edit', 'Delete event' buttons, allowing to do it, will be hidden.
 

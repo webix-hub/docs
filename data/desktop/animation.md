@@ -9,7 +9,7 @@ There exist two animation types with their own subtypes. Or, instead, you can ch
 - **flip** - horizontal, vertical;
 - **direction** - left, right, top, bottom.
 
-By default, multiview uses **slide:"together"** animation type. 
+Multiview uses **slide:"together"** animation type by default. 
 
 Animation can be **switched off**:
 

@@ -33,7 +33,7 @@ A handler can be attached to a components in different ways:
 
 Now let's study each possibility in detail. 
 
-###Using an attachEvent() method
+###Using the attachEvent() method
 
 An **attachEvent()** method takes the name of the component's **inner event** and the function it fires (**handler**) as parameters. The syntax is: 
 

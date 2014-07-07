@@ -12,7 +12,7 @@ instead of regular dhtmlxscheduler_mobile.js, dhtmlxscheduler_mobile.css:
 
 The files support all the existing functionality of the standard scheduler + recurring events.
 
-Once the recurring events are enabled, the details form starts look like shown below:
+Once the recurring events are enabled, the details form starts looking like shown below:
 
 (image)
 
@@ -105,15 +105,52 @@ Just the **'scheduler.config.form'** template for recurring events will look lik
 
 ~~~js
 scheduler.config.form = [
-	{view:"text",     id:'text',          label:scheduler.locale.labels.label_event, name:'text'},
-    {view:"datetext", id:'start_date',    label:scheduler.locale.labels.label_start, name:'start_date', dateFormat:scheduler.config.form_date},
-    {view:"datetext", id:'end_date',      label:scheduler.locale.labels.label_end,   name:'end_date', dateFormat:scheduler.config.form_date},
-    {view:"toggle",   id:'allDay',        label:"", align: "right",value:"0", options:[ 
-		{value:"0",label:scheduler.locale.labels.label_time},
-        {value:"1",label:scheduler.locale.labels.label_allday}
-    ]},
-    {view:"rectext",   id:'rec_type',     label:scheduler.locale.labels.recurring.repeat, readonly:true},
-    {view:"textarea",  id:'details',      label:scheduler.locale.labels.label_details,    height:110},
-    {view:"input",     id:'event_length', type:"hidden",}
+	{
+    	view:"text",     
+        id:'text',          
+        label:scheduler.locale.labels.label_event, 
+        name:'text'
+    },
+    {
+    	view:"datetext", 
+        id:'start_date',    
+        label:scheduler.locale.labels.label_start, 
+        name:'start_date', 
+        dateFormat:scheduler.config.form_date
+    },
+    {
+    	view:"datetext", 
+        id:'end_date',      
+        label:scheduler.locale.labels.label_end,   
+        name:'end_date', 
+        dateFormat:scheduler.config.form_date
+    },
+    {
+    	view:"toggle",   
+        id:'allDay',        
+        label:"", 
+        align: "right",
+        value:"0", options:[ 
+			{value:"0",label:scheduler.locale.labels.label_time},
+        	{value:"1",label:scheduler.locale.labels.label_allday}
+    	]
+    },
+    {
+    	view:"rectext",   
+        id:'rec_type',     
+        label:scheduler.locale.labels.recurring.repeat, 
+        readonly:true
+    },
+    {
+    	view:"textarea",  
+        id:'details',      
+        label:scheduler.locale.labels.label_details,    
+        height:110
+    },
+    {
+    	view:"input",     
+        id:'event_length', 
+        type:"hidden",
+    }
 ];
 ~~~
