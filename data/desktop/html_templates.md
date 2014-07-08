@@ -313,8 +313,9 @@ template:function(obj){
 
 ## XSS Safe templates
 
-By default, templates markers will be replaced with a value of data without any processing. If you have an HTML data in the data object, it will placed in the template.
-In most cases this is an advantage, but sometimes it may be necessary to output such data as text, not a html 
+By default, templates markers will be replaced with a value of data without any processing. 
+If you have HTML data in the data object, it will be placed in the template.
+In most cases this is an advantage, but sometimes it may be necessary to output such data as text, not an html 
 
 - when you have text data with html special chars ( < > & characters ) 
 - when you are not sure is data safe or not ( was entered by the user ) 
