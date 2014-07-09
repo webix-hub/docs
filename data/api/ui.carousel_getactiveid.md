@@ -25,7 +25,7 @@ $$('carousel1').getActiveId(); // -> 'cell2'
 
 @template:	api_method
 @relatedapi:
-	api/ui.carousel_getactiveidIndex.md
+	api/ui.carousel_getactiveindex.md
     api/ui.carousel_setactive.md
     api/ui.carousel_setactiveIndex.md
 @related:

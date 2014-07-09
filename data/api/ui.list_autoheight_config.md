@@ -13,10 +13,6 @@ webix.ui({
     autoheight:true
 });
 
-@related:
-	desktop/dimensions.md
-
-
 @template:	api_config
 
 @related:

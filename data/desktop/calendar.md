@@ -32,7 +32,7 @@ Here is a calendar with basic parameters.
 - **weekHeader** (boolean) - if *true* shows weekday above;
 - **events** (CSS class or specific cases) - e.g. **webix.Date.isHoliday** highlights dayoffs;
 - **date** - specifies the start date in the "year, month, day" format with months starting from 0. In case of an empty new Date(); you'll be shown current date;
-- **dayTemplate** - specifies a function that [sets a template](api/ui.calendar_dayTemplate_config.md) for each day cell. By default the date is displayed without any styling. 
+- **dayTemplate** - specifies a function that [sets a template](api/ui.calendar_daytemplate_config.md) for each day cell. By default the date is displayed without any styling. 
 
 To see the full list of Calendar properties please refer to the [corresponding chapter of the documentation](api/refs/ui.calendar_props.md).
 
@@ -65,7 +65,7 @@ webix.ui({
 
 - **getValue()**; - common method for getting the control's value.
 - **getSelectedDate()**; - calendar speciic method. 
-- **getVisibleDate()**; - gets the date even with no selection applied. Date is gotten according to the [specified rules](api/ui.calendar_getvisibleDate.md). 
+- **getVisibleDate()**; - gets the date even with no selection applied. Date is defined according to the [specified rules](api/ui.calendar_getvisibledate.md). 
 
 ~~~js
 $$('calendar1').selectDate(new Date(2012,3,30));

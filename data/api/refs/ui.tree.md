@@ -36,7 +36,7 @@ The component supports in-line node editing, advanced drag-and-drop, three-state
 - api/link/ui.tree_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.tree_callevent.md - calls an inner event
 - api/link/ui.tree_checkall.md - check all items in tree
-- api/link/ui.tree_checkitem.md - checks the checkbox	related to the specified item
+- api/link/ui.tree_checkitem.md - checks the checkbox related to the specified item
 - api/link/ui.tree_clearall.md - removes all items from the component
 - api/link/ui.tree_clearcss.md - removes css class from all items
 - api/link/ui.tree_clearvalidation.md - removes all validation marks from the component
@@ -90,8 +90,7 @@ The component supports in-line node editing, advanced drag-and-drop, three-state
 - api/link/ui.tree_isvisible.md - checks whether the view is visible
 - api/link/ui.tree_load.md - loads data from an external data source
 - api/link/ui.tree_loadbranch.md - loads data to the specified branch
-- api/link/ui.tree_loadnext.md - sends a request to load the specified number of records to the end or to the specified position 
-of the component
+- api/link/ui.tree_loadnext.md - sends a request to load the specified number of records to the end or to the specified position of the component
 - api/link/ui.tree_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.tree_mapevent.md - routes events from one object to another
 - api/link/ui.tree_move.md - moves the specified item to the new position
@@ -117,7 +116,7 @@ of the component
 - api/link/ui.tree_unbind.md - breaks "bind" link
 - api/link/ui.tree_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.tree_uncheckall.md - uncheck all items in the tree
-- api/link/ui.tree_uncheckitem.md - unchecks the checkbox	related to the specified item
+- api/link/ui.tree_uncheckitem.md - unchecks the checkbox related to the specified item
 - api/link/ui.tree_ungroup.md - ungroups data
 - api/link/ui.tree_unselect.md - removes selection from the specified item
 - api/link/ui.tree_unselectall.md - removes selection from all items

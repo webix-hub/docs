@@ -94,7 +94,7 @@ The first combination is set by default. Other available ones can be achieved wi
 	<tbody>
 	<tr>
 		<td>Numeric</td>
-		<td><a href="datatable/somesample.md"><img src="datatable/default_mode.png"/> </a></td>
+		<td><img src="datatable/default_mode.png"/> </a></td>
 		<td>default mode, doesn't require specifying a separate template</td>
 	</tr>
 	<tr>

@@ -1,7 +1,5 @@
-DataMarks 
-=============
-
-{{memo Implements extra data storage. }}
+DataMarks
+================================
 
 
 <div class='h2'>Methods</div>
@@ -12,11 +10,3 @@ DataMarks
 - api/datamarks_hascss.md - checks if item has specific css class
 - api/datamarks_removecss.md - removes CSS class from a component item
 }}
-
-
-
-
-
-@index:
-- api/refs/datamarks_methods.md
-

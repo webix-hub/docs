@@ -1,1 +1,1 @@
-@link: api/ui.template_onclick_config.md
+@link: api/mouseevents_onclick_config.md

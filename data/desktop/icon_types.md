@@ -136,7 +136,7 @@ If you'd like to use another icon from FontAwesome collection instead of the def
 {view:"richselect", label: 'Other', options:options, icon:"caret-down"}
 ~~~
 
-As a result, the default [richselect]((desktop/controls.md#richselect)) icon, "fa-angle-down", is replaced with the one you've set. 
+As a result, the default [richselect](desktop/controls.md#richselect)) icon, "fa-angle-down", is replaced with the one you've set. 
 
 ###Setting a Custom Icon
 
@@ -169,7 +169,9 @@ If you want to style one combo on the page while leaving another one unchanged, 
 Then the necessary CSS will look like this:
 
 ~~~css
-.custom .webix_input_icon.fa-angle-down:before{...}
+.custom .webix_input_icon.fa-angle-down:before{
+...
+}
 ~~~
 
 **Component styling** is described in detail in the [corresponding article](desktop/styling.md) of the documentation.

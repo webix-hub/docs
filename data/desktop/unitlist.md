@@ -31,7 +31,7 @@ webix.ui({
 {{sample 05_list/11_unitlist.html }}
 
 - The **uniteBy** property groups data according to the specified criterion, the unit value (here it's the first letter to the data item title);
-- In addition it sets **unit headers** (unit values) and, additionally, sets [template](desktop/making_templates.md) for them;
+- In addition it sets **unit headers** (unit values) and, additionally, sets [template](desktop/html_templates.md) for them;
 - **Sorting** is applied to unit headers as well as to data items within the units. 
 
 {{snippet

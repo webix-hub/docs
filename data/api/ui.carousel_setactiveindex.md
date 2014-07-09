@@ -23,7 +23,7 @@ $$('carousel1').setActiveIndex(0);
 
 @template:	api_method
 @relatedapi:
-    api/ui.carousel_getactiveidindex.md
+    api/ui.carousel_getactiveindex.md
 	api/ui.carousel_getactiveid.md
     api/ui.carousel_setactive.md
 @related:

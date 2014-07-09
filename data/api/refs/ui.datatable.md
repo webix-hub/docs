@@ -104,8 +104,7 @@ The component is full of various possibilities: filtering, sorting, pagination, 
 - api/link/ui.datatable_isenabled.md - checks whether the view is enabled
 - api/link/ui.datatable_isvisible.md - checks whether the view is visible
 - api/link/ui.datatable_load.md - loads data from an external data source
-- api/link/ui.datatable_loadnext.md - sends a request to load the specified number of records to the end or to the specified position 
-of the component
+- api/link/ui.datatable_loadnext.md - sends a request to load the specified number of records to the end or to the specified position of the component
 - api/ui.datatable_locate.md - converts an HTML node or event object to in-table position
 - api/ui.datatable_mapcells.md - applies the callback to a range of cells
 - api/link/ui.datatable_mapevent.md - routes events from one object to another

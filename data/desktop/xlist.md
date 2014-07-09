@@ -19,7 +19,7 @@ webix.ui({
 	layout:"x", // responsible for horizontal arrangement
 	select:true,
 	data: ...
-      })  
+});
 ~~~
 
 ###Working with X-list
@@ -33,14 +33,12 @@ webix.ui({
 - [Paging](desktop/paging.md)
 
 {{note
-Note that there's so built-in possibility to edit data with dataview. You should create a prototype editlist object beforehand.
+Note that there's no built-in possibility to edit data with list. You should create a [prototype editlist object](desktop/edit.md) beforehand.
 }}
 
 ###API Reference
 
 [Methods, properties and events](api/refs/ui.list.md)
-
-
 
 ###Related Articles
 

@@ -326,7 +326,7 @@ Some of them repeat native DOM events.
 
 - **onBeforeAjax**(mode, url, data, request) - fires  when any Ajax request is issued. It can be developer request or automatic (when using [Data Connectors](desktop/dataconnector.md));
 - **onAjaxError**(request_obj) - fires when any Ajax request results in an error;
-- **onLoadError**(text, xml, xhttp, obj) - fires when an error has happened during [loading the data](desktop/data_loadinng.md) into a component. See desktop/loadingerror.md article for details.
+- **onLoadError**(text, xml, xhttp, obj) - fires when an error has happened during [loading the data](desktop/data_loading.md) into a component. See desktop/loadingerror.md article for details.
 
 All such events are attached to **webix** object:
 

@@ -22,5 +22,9 @@ combo
     15_datatable/04_editing/15_combo.html
 @related:
 	desktop/editing.md
+@relatedapi:
+	api/editors_richselect_other.md
+    
+    
 
 
