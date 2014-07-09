@@ -7,13 +7,13 @@ TablePaste
 
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/tablepaste_clipboard_config.md - enables/disables clipboard support
 - api/tablepaste_delimiter_config.md - sets CSV delimiters
 }}
+
 
 
 

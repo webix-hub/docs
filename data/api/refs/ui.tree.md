@@ -5,7 +5,7 @@ ui.tree
 {{memo A hierarchical structure of nodes. }}
 
 Each node in the tree might contain any number of other nodes, called as child. Nodes that contain child nodes can be expanded or collapsed. <br>
-The component supports in-line node editing, advanced drag-and-drop, three-state checkboxes etc. Check [tree](datatree__index.md) documentation for more detailed description.
+The component supports in-line node editing, advanced drag-and-drop, three-state checkboxes etc. Check [tree](/) documentation for more detailed description.
 
 ### Constructor
 
@@ -24,10 +24,10 @@ The component supports in-line node editing, advanced drag-and-drop, three-state
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/group.md">Group</a>, <a href="api/refs/treeapi.md">TreeAPI</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/treedatamove.md">TreeDataMove</a>, <a href="api/refs/selectionmodel.md">SelectionModel</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/treedataloader.md">TreeDataLoader</a>, <a href="api/refs/treestore.md">TreeStore</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/ui.proto.md">ui.proto</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/treerenderstack.md">TreeRenderStack</a>, <a href="api/refs/copypaste.md">CopyPaste</a>, <a href="api/refs/treestatecheckbox.md">TreeStateCheckbox</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.tree_add.md - adds an item to the store
 - api/link/ui.tree_addcss.md - applied CSS class to a component item
 - api/link/ui.tree_adjust.md - adjusts the component to the size of the parent HTML container
@@ -126,10 +126,10 @@ of the component
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/link/ui.tree_onafteradd_event.md - fires after adding item to datastore
 - api/link/ui.tree_onafterclose_event.md - fires after the branch has been closed
 - api/link/ui.tree_onaftercontextmenu_event.md - fires after the context menu was called in the item area
@@ -175,10 +175,9 @@ Events
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.tree_animate_config.md - defines or disables view change animation.
 - api/link/ui.tree_borderless_config.md - used to hide the component borders
 - api/link/ui.tree_click_config.md - sets an action happening on a button click
@@ -228,10 +227,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.tree_$drag_other.md - method called when drag operation initiated
 - api/link/ui.tree_$draghtml_other.md - defines how dragged item will look
 - api/link/ui.tree_$dragin_other.md - method called when item moved on possible drop landing during dnd

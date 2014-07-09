@@ -2,9 +2,9 @@
 Events
 =======
 
-{{links
+{{api
 - api/link/ui.htmlform_onafterload_event.md - fires after xml loading is complete
-- api/link/ui.htmlform_onafterrender_event.md - occurs immediately after the component has been rendered
+- api/link/ui.htmlform_onafterrender_event.md - occurs immediately after the component has been rendered.
 - api/link/ui.htmlform_onaftervalidation_event.md - fires after data has been validated
 - api/link/ui.htmlform_onbeforeload_event.md - occurs immediately before loading XML data has been started
 - api/link/ui.htmlform_onbeforerender_event.md - occurs immediately before the component has been rendered

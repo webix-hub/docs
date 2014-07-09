@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/link/ui.calendar_animate_config.md - defines or disables view change animation.
 - api/ui.calendar_blockdates_config.md - defines the selectable range
 - api/link/ui.calendar_borderless_config.md - used to hide the component borders

@@ -2,7 +2,7 @@
 Others
 =======
 
-{{links
+{{api
 - api/editors_$popup_other.md - set of configuration options for popup editors
 - api/editors_checkbox_other.md - a checkbox editor for a two-value choice
 - api/editors_color_other.md - a popup editor for hex code values. Allows for picking a color from the colorboard.

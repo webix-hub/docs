@@ -8,12 +8,12 @@ Modality
 
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/modality_zindex_config.md - stack order of the component
 }}
+
 
 
 

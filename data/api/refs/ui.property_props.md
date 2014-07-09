@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/link/ui.property_animate_config.md - defines or disables view change animation.
 - api/ui.property_autoheight_config.md - auto height mode for property view
 - api/link/ui.property_borderless_config.md - used to hide the component borders

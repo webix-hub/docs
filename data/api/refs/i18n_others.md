@@ -2,7 +2,7 @@
 Others
 =======
 
-{{links
+{{api
 - api/i18n_calendar_other.md - the default locale months and days names
 - api/i18n_dateformat_other.md - sets the default locale date format
 - api/i18n_decimaldelimeter_other.md - a char which separates the decimal part in the float number. The default value  is &#148;.&#148;

@@ -6,10 +6,10 @@ Date
 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/date_add.md - adds the number of date units to date
 - api/date_copy.md - creates date copy
 - api/date_datepart.md - gets the date part of date object
@@ -30,10 +30,11 @@ Methods
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/date_startonmonday_other.md - defines whether weeks start on Monday.
 }}
 

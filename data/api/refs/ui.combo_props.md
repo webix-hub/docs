@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/link/ui.combo_align_config.md - the alignment of the control within the parent container
 - api/link/ui.combo_animate_config.md - defines or disables view change animation.
 - api/link/ui.combo_attributes_config.md - sets an hash of HTML input attributes that will be parsed for the Webix input control
@@ -15,7 +15,7 @@ Properties
 - api/link/ui.combo_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.combo_height_config.md - sets the height of the component
 - api/link/ui.combo_hidden_config.md - defines whether the view will be hidden initially
-- api/link/ui.combo_hotkey_config.md - 
+- api/link/ui.combo_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/link/ui.combo_icon_config.md - sets an icon type
 - api/link/ui.combo_id_config.md - the component ID
 - api/link/ui.combo_inputheight_config.md - the height of the input area, or a button's text value area.

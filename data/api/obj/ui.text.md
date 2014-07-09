@@ -1,7 +1,7 @@
 
 {{memo an one-line, editable text field with the label inside it}}
 
-A label inside the control differs it from the input component. Check [text](desktop__controls.md#text) documentation for more detailed description.
+A label inside the control differs it from the input component. Check [text](desktop/controls.md#text) documentation for more detailed description.
 
 ### Constructor
 

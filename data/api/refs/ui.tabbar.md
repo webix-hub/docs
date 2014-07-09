@@ -4,7 +4,7 @@ ui.tabbar
 
 {{memo A panel that contains multiple clickable items. }}
 
-Items of the component combines an icon with the text label. The component can be used to build a multi-item menu for navigating between views. Check [tabbar](desktop__controls.md#tabbar) documentation for more detailed description.
+Items of the component combines an icon with the text label. The component can be used to build a multi-item menu for navigating between views. Check [tabbar](desktop/controls.md#tabbar) documentation for more detailed description.
 
 ### Constructor
 
@@ -23,10 +23,10 @@ Items of the component combines an icon with the text label. The component can b
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.segmented.md">ui.segmented</a>, <a href="api/refs/ui.text.md">ui.text</a>, <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.tabbar_addoption.md - add a new option (segment) to the button
 - api/link/ui.tabbar_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.tabbar_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
@@ -67,11 +67,11 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
-- api/link/ui.tabbar_onafterrender_event.md - occurs immediately after the component has been rendered
+
+{{api
+- api/link/ui.tabbar_onafterrender_event.md - occurs immediately after the component has been rendered.
 - api/ui.tabbar_onaftertabclick_event.md - fired after a user clicks a tab
 - api/link/ui.tabbar_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/ui.tabbar_onbeforetabclick_event.md - fired before a user clicks a tab
@@ -82,10 +82,9 @@ Events
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.tabbar_align_config.md - the alignment of the control within the parent container
 - api/link/ui.tabbar_animate_config.md - defines or disables view change animation.
 - api/link/ui.tabbar_attributes_config.md - sets an hash of HTML input attributes that will be parsed for the Webix input control
@@ -99,7 +98,7 @@ Properties
 - api/link/ui.tabbar_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.tabbar_height_config.md - sets the height of the component
 - api/link/ui.tabbar_hidden_config.md - defines whether the view will be hidden initially
-- api/link/ui.tabbar_hotkey_config.md - 
+- api/link/ui.tabbar_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/link/ui.tabbar_id_config.md - the component ID
 - api/link/ui.tabbar_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.tabbar_inputpadding_config.md - padding of text in the input
@@ -145,10 +144,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.tabbar_$getsize_other.md - returns the current size of the component
 - api/link/ui.tabbar_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.tabbar_$height_other.md - current height of the view

@@ -2,7 +2,7 @@
 Events
 =======
 
-{{links
+{{api
 - api/ui.multiview_onbeforeback_event.md - fires the moment back() fucntion is triggered
 - api/link/ui.multiview_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.multiview_ondestruct_event.md - occurs when component destroyed

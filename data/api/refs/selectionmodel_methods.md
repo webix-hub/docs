@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/selectionmodel_getselectedid.md - returns the id(s) of the selected item(s)
 - api/selectionmodel_getselecteditem.md - returns selected object
 - api/selectionmodel_isselected.md - checks whether the specified item is selected or not

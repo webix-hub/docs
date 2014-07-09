@@ -1,6 +1,6 @@
 {{memo a view with some HTML content inside}}
 
-The component is a simple container (but with rich API support) where you can put any HTML content. Check [template](desktop__template.md) documentation for more detailed description.
+The component is a simple container (but with rich API support) where you can put any HTML content. Check [template](desktop/template.md) documentation for more detailed description.
 
 ### Constructor
 

@@ -2,7 +2,7 @@
 Events
 =======
 
-{{links
+{{api
 - api/contexthelper_onbeforeshow_event.md - fires the moment context menu is called
 }}
 

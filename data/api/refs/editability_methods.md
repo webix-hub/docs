@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/editability_edit.md - enables the edit mode for the specified item
 - api/editability_editcancel.md - cancels the edit mode and closes all opened editors. The component is still editable
 - api/editability_editnext.md - closes the current editor and opens one in the next cell of the row

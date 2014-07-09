@@ -6,10 +6,10 @@ BindSource
 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/bindsource_addbind.md - adds one more bound target
 - api/bindsource_getbinddata.md - fills the target object with data
 - api/bindsource_removebind.md - disables data binding
@@ -18,12 +18,13 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/bindsource_onbindupdate_event.md - fires when data is changed in the child and 'save()' is called to update the master.
 }}
+
 
 
 

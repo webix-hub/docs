@@ -18,10 +18,10 @@ The lib can execute **get** and **post** requests in sync and async mode. For mo
 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/ajax_bind.md - binds callback function to object
 - api/ajax_del.md - issues a DELETE Ajax request to the server
 - api/ajax_get.md - issues a GET Ajax request to the server
@@ -35,10 +35,11 @@ Methods
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/ajax_master_other.md - 
 }}
 

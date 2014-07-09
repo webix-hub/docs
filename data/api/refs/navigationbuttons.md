@@ -6,12 +6,12 @@ NavigationButtons
 
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/navigationbuttons_navigation_config.md - defines navigation parameters
 }}
+
 
 
 

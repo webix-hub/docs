@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/i18n_dateformatdate.md - converts a string in the default date format to a Date object
 - api/i18n_dateformatstr.md - converts a Date object to a string in the default date format
 - api/i18n_fulldateformatdate.md - converts a string in the default date-time format to a Date object

@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/link/datarecord_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/datarecord_bind.md - binds components
 - api/link/datarecord_blockevent.md - temporarily blocks triggering of ALL events of the calling object

@@ -4,7 +4,7 @@ ui.context
 
 {{memo A pop-up window displayed on firing the 'contextMenu' event (mouse right-clicks). }}
 
-The component presents a plain window that can contain any content. Check [context](desktop__context.md) documentation for more detailed description.
+The component presents a plain window that can contain any content. Check [context](desktop/context.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -23,10 +23,10 @@ The component presents a plain window that can contain any content. Check [conte
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/contexthelper.md">ContextHelper</a>, <a href="api/refs/ui.popup.md">ui.popup</a>, <a href="api/refs/ui.window.md">ui.window</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/movable.md">Movable</a>, <a href="api/refs/modality.md">Modality</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.context_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.context_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.context_attachto.md - attaches a context menu to webix component
@@ -61,10 +61,10 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/link/ui.context_onbeforeshow_event.md - fires the moment context menu is called
 - api/link/ui.context_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.context_ondestruct_event.md - occurs when component destroyed
@@ -74,10 +74,9 @@ Events
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.context_animate_config.md - defines or disables view change animation.
 - api/link/ui.context_autofit_config.md - adjusts window size to the size of an HTML node	it is initiated in
 - api/link/ui.context_autofocus_config.md - sets focus on the window the moment it appears on the page
@@ -112,10 +111,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.context_$getsize_other.md - returns the current size of the component
 - api/link/ui.context_$height_other.md - current height of the view
 - api/link/ui.context_$scope_other.md - scope for resolving event and method names

@@ -2,7 +2,7 @@
 Events
 =======
 
-{{links
+{{api
 - api/mouseevents_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/mouseevents_onbeforecontextmenu_event.md - fires before the context menu is called in the item area
 - api/mouseevents_onitemclick_event.md - fires when a component item was clicked

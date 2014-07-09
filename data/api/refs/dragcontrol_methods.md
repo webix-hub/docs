@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/dragcontrol_adddrag.md - registers drag area
 - api/dragcontrol_adddrop.md - registers drop area
 - api/dragcontrol_createdrag.md - called when drag-n-drop is initiated, creates drag representation

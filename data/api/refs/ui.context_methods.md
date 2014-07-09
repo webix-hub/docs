@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/link/ui.context_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.context_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.context_attachto.md - attaches a context menu to webix component

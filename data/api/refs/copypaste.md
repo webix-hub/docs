@@ -8,21 +8,21 @@ CopyPaste
 
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/copypaste_onpaste_event.md - fires when the user presses CTRL+V keys combination
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/copypaste_clipboard_config.md - enables/disables clipboard support
 - api/copypaste_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
 }}
+
 
 
 

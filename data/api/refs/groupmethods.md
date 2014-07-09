@@ -6,10 +6,10 @@ GroupMethods
 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/groupmethods_any.md - gets a random property value from a group
 - api/groupmethods_count.md - gets the number of items in a group
 - api/groupmethods_max.md - gets the maximum value of a property
@@ -17,6 +17,7 @@ Methods
 - api/groupmethods_string.md - adds a custom property to data items
 - api/groupmethods_sum.md - gets the sum of property values
 }}
+
 
 
 

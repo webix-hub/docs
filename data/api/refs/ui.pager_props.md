@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/link/ui.pager_animate_config.md - defines or disables view change animation.
 - api/ui.pager_apionly_config.md - makes the pager invisible to enable paging with custom buttons
 - api/link/ui.pager_borderless_config.md - used to hide the component borders

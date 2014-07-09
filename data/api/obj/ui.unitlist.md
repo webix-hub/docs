@@ -1,7 +1,7 @@
 
 {{memo a vertical list of items united into groups according a template}}
 
-Support for various data template formats, sorting and filtering features. Check [unitlist](desktop__unitlist.md) documentation for more detailed description.
+Support for various data template formats, sorting and filtering features. Check [unitlist](desktop/unitlist.md) documentation for more detailed description.
 
 ### Constructor
 

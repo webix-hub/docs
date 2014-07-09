@@ -2,7 +2,7 @@
 Events
 =======
 
-{{links
+{{api
 - api/link/ui.chart_onafteradd_event.md - fires after adding item to datastore
 - api/link/ui.chart_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.chart_onafterdelete_event.md - fires after item deleting

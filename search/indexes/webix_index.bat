@@ -1,1 +1,0 @@
-bin\indexer.exe --all  --config webix.conf 

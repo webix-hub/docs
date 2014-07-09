@@ -1,7 +1,7 @@
 
 {{memo a borderless empty view}}
 
-The component has a pure API and only used to fill a layout cell if it's supposed to be empty. Can be initialized by simple [] construction. Check [view](desktop__view.md) documentation for more detailed description.
+The component has a pure API and only used to fill a layout cell if it's supposed to be empty. Can be initialized by simple [] construction. Check [view](desktop/view.md) documentation for more detailed description.
 
 ### Constructor
 

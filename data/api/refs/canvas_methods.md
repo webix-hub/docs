@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/canvas_clearcanvas.md - clears the component canvas
 - api/canvas_getcanvas.md - gets the canvas context
 - api/canvas_hidecanvas.md - hides canvas object

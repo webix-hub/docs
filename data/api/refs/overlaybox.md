@@ -6,13 +6,14 @@ OverlayBox
 By default will react on onBeforeLoad and onAfterLoad events. 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/overlaybox_hideoverlay.md - hides the overlay box
 - api/overlaybox_showoverlay.md - shows overlay box over the component
 }}
+
 
 
 

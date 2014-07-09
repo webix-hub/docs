@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/link/ui.label_align_config.md - the alignment of the control within the parent container
 - api/link/ui.label_animate_config.md - defines or disables view change animation.
 - api/link/ui.label_borderless_config.md - used to hide the component borders
@@ -14,7 +14,7 @@ Properties
 - api/link/ui.label_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.label_height_config.md - sets the height of the component
 - api/link/ui.label_hidden_config.md - defines whether the view will be hidden initially
-- api/link/ui.label_hotkey_config.md - 
+- api/link/ui.label_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/link/ui.label_id_config.md - the component ID
 - api/link/ui.label_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.label_inputwidth_config.md - the width of the input area, or a button's text value area.

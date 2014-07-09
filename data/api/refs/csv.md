@@ -8,10 +8,10 @@ Can convert data to the csv string or split csv string in data array (undestand 
 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/csv_parse.md - converts a CSV string in a Javascript data array
 - api/csv_stringify.md - converts a Javascript data array in a CSV string
 }}
@@ -19,10 +19,11 @@ Methods
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/csv_delimeter_other.md - sets the default CSV delimiter
 - api/csv_escape_other.md - enables/activates the escape mode (activated by default)
 }}

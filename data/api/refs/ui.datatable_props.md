@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/link/ui.datatable_animate_config.md - defines or disables view change animation.
 - api/ui.datatable_autoconfig_config.md - datatable adjust configuration to the data
 - api/ui.datatable_autoheight_config.md - adjusts DataTable to the parent container size vertically

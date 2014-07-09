@@ -1,6 +1,6 @@
 {{memo a control for displaying data in a tabular format}}
 
-The component presents a collection of objects according to a user-defined template. Support for various template forms and the possibility to sort, filter data.  Check [dataview](desktop__dataview.md) documentation for more detailed description.
+The component presents a collection of objects according to a user-defined template. Support for various template forms and the possibility to sort, filter data.  Check [dataview](desktop/dataview.md) documentation for more detailed description.
 
 ### Constructor
 

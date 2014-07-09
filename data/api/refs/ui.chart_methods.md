@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/link/ui.chart_add.md - adds an item to the store
 - api/ui.chart_addseries.md - adds an additional graph to the chart
 - api/link/ui.chart_adjust.md - adjusts the component to the size of the parent HTML container

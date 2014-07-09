@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/link/datarecord_data_config.md - an inline dataset that data to the component will be load from.
 - api/link/datarecord_datafeed_config.md - the url to the data source that the component will use to reload data from
 - api/link/datarecord_datatype_config.md - the type of loaded data

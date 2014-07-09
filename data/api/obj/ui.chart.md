@@ -3,7 +3,7 @@
 
 The library supports the most common chart types:line, spline, area, bar, pie, donut, scatter, radar.
 You can customize appearance of a chart through colors, tooltips, templates, scales, labels.
-It's possible to present multiple data sets on the same chart.  Check [chart](desktop__chart.md) documentation for more detailed description.
+It's possible to present multiple data sets on the same chart.  Check [chart](desktop/chart.md) documentation for more detailed description.
 
 ### Constructor
 

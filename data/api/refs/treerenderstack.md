@@ -6,24 +6,25 @@ TreeRenderStack
 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/treerenderstack_getitemnode.md - returns html element of item by item id
 - api/treerenderstack_render.md - renders the specified item or the whole component
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/treerenderstack_onafterrender_event.md - occurs immediately after the component has been rendered
 - api/treerenderstack_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/treerenderstack_onitemrender_event.md - for each item rendering, occurs only for items with custom templates
 - api/treerenderstack_onpartialrender_event.md - called when part of tree is repainted
 }}
+
 
 
 

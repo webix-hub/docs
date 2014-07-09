@@ -1,0 +1,171 @@
+body{
+	overflow:scroll !important;
+	font-family:Consolas, Tahoma;
+}
+
+h2{
+	font-size:20px;
+	margin-left:20px;
+	margin-right:80px;
+	width:250px;
+	cursor:pointer;
+	float:left;
+}
+div.area{
+	clear:both;
+}
+
+h3{
+	font-size:16px;
+	margin-left:10px;
+}
+
+#details {
+	clear:both;
+}
+
+#details .marker{
+	width:25px;
+	float:left;
+}
+#details .marker{
+	width:7px;
+	height:7px;
+	margin-right:5px;
+	margin-top:4px;
+	float:left;
+	border-radius:4px;	
+}
+#details .status{
+	width:8px;
+	height:8px;
+	float:left;
+	background-color:silver;
+	border-radius:2px;	
+	margin-right:5px;
+	margin-top:4px;
+}
+
+#details .status.des.sam{
+	background-color:white;
+
+	width:8px;
+	height:8px;
+	margin-right:5px;
+	margin-top:4px;
+	margin-left:0px;
+}
+#details .status.des{
+	width:3px;
+	height:10px;
+	margin-right:8px;
+	margin-left:3px;
+	margin-top:3px;
+}
+#details .status.sam{
+	width:8px;
+	height:3px;
+	margin-right:5px;
+	margin-top:7px;
+}
+
+#details .marker.missed{
+	background-color:red;
+}
+#details .marker.invalid{
+	background-color:orange;
+}
+#details .marker.invalid{
+	border-radius:0;
+}
+
+
+#details small{
+	margin-top:-10px;
+	margin-left:40px;
+	color:silver; 
+	display:block;
+}
+
+#details .sectionend{
+	clear:both;
+}
+
+#details .method{
+	margin-left:20px;
+	font-size:12px;
+	float:left;
+}
+#details .name.own{
+	background-color:#DDFFDD;
+}
+#details .name.missed{
+	background-color:#FFDDDD;
+}
+#details .name{
+	float:left;
+	width:120px;
+	color:black;
+	cursor:pointer;
+}
+#details .defined{
+	float:left;
+	width:220px;
+	color:#777;
+}
+
+#details small strong{
+	color:#777;
+}
+
+h5{
+	font-size:14px;
+	margin-left:40px;
+}
+
+div.endline{
+	clear:both;
+	padding-bottom:30px;
+}
+div.word{
+	float:left;
+	width:150px;
+	overflow:hidden;
+	padding-left:5px;
+	color:navy;
+	cursor:pointer;
+}
+div.hidden{
+	color:#AAA;
+}
+div.activeword{
+	float:left;
+	width:150px;
+	overflow:hidden;
+	padding-left:5px;
+	color:navy;
+	background-color:orange;
+	cursor:pointer;
+}
+div.inname{
+	background-color:#DDD;
+}
+
+div#details{
+	border-top:1px dashed silver;
+	width:100%;
+}
+
+#details h3 {
+	cursor: pointer;
+}
+
+.bigproblem{
+	color:red;
+}
+.smallproblem{
+	color:orange;
+}
+.minorproblem{
+	color:green;
+}

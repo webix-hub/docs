@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/link/ui.dataview_animate_config.md - defines or disables view change animation.
 - api/ui.dataview_autoheight_config.md - enables autosizing to content
 - api/link/ui.dataview_borderless_config.md - used to hide the component borders

@@ -2,9 +2,9 @@
 Events
 =======
 
-{{links
+{{api
 - api/link/ui.template_onafterload_event.md - fires after xml loading is complete
-- api/link/ui.template_onafterrender_event.md - occurs immediately after the component has been rendered
+- api/link/ui.template_onafterrender_event.md - occurs immediately after the component has been rendered.
 - api/link/ui.template_onbeforeload_event.md - occurs immediately before loading XML data has been started
 - api/link/ui.template_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.template_onbindrequest_event.md - fires when the component is ready to receive data from the master component

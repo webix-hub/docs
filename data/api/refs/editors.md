@@ -21,10 +21,11 @@ For more details check [Data Editors](desktop/editing.md)
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/editors_$popup_other.md - set of configuration options for popup editors
 - api/editors_checkbox_other.md - a checkbox editor for a two-value choice
 - api/editors_color_other.md - a popup editor for hex code values. Allows for picking a color from the colorboard.

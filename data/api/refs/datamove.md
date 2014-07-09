@@ -10,10 +10,10 @@ Required for dnd between components.
 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/datamove_copy.md - copies an item to the same or another object
 - api/datamove_move.md - moves the specified item to a new position
 - api/datamove_movebottom.md - moves the specified item to the last position
@@ -23,12 +23,12 @@ Methods
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/datamove_externaldata_config.md - allows defining custom 'move' logic for the component.
 }}
+
 
 
 

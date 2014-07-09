@@ -6,10 +6,10 @@ SelectionModel
 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/selectionmodel_getselectedid.md - returns the id(s) of the selected item(s)
 - api/selectionmodel_getselecteditem.md - returns selected object
 - api/selectionmodel_isselected.md - checks whether the specified item is selected or not
@@ -20,22 +20,22 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/selectionmodel_onafterselect_event.md - fires after item was selected
 - api/selectionmodel_onbeforeselect_event.md - fires before item selection is started
 - api/selectionmodel_onselectchange_event.md - fires after selection state was changed
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/selectionmodel_select_config.md - enables/disables item selection or multiselection in grouplist
 }}
+
 
 
 

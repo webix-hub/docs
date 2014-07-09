@@ -1,7 +1,7 @@
 
 {{memo a movable popup window}}
 
-The window consists of the header and body, can be modal or modaless. The window body can contain any content. The header is set by a template.  Check [window](desktop__window.md) documentation for more detailed description.
+The window consists of the header and body, can be modal or modaless. The window body can contain any content. The header is set by a template.  Check [window](desktop/window.md) documentation for more detailed description.
 
 ### Constructor
 

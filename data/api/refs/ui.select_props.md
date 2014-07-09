@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/link/ui.select_align_config.md - the alignment of the control within the parent container
 - api/link/ui.select_animate_config.md - defines or disables view change animation.
 - api/link/ui.select_attributes_config.md - sets an hash of HTML input attributes that will be parsed for the Webix input control
@@ -15,7 +15,7 @@ Properties
 - api/link/ui.select_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.select_height_config.md - sets the height of the component
 - api/link/ui.select_hidden_config.md - defines whether the view will be hidden initially
-- api/link/ui.select_hotkey_config.md - 
+- api/link/ui.select_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/link/ui.select_id_config.md - the component ID
 - api/link/ui.select_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.select_inputpadding_config.md - padding of text in the input

@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/treetablepaste_insert.md - inserts new data in treetable
 }}
 

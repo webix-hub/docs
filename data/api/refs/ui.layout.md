@@ -3,7 +3,7 @@ ui.layout
 
 {{memo A vertical or horizontal layout without the headers. }}
 
-The component allows you to programmatically define interface structure by organizing views in a vertical or horizontal layout. By including layouts one by one, it's possible to create the final screen of any complexity. Check [layout](desktop__layout.md) documentation for more detailed description.
+The component allows you to programmatically define interface structure by organizing views in a vertical or horizontal layout. By including layouts one by one, it's possible to create the final screen of any complexity. Check [layout](desktop/layout.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -22,10 +22,10 @@ The component allows you to programmatically define interface structure by organ
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.layout_addview.md - add new view to layout or multiview
 - api/link/ui.layout_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.layout_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
@@ -59,19 +59,18 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/link/ui.layout_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.layout_ondestruct_event.md - occurs when component destroyed
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.layout_animate_config.md - defines or disables view change animation.
 - api/link/ui.layout_borderless_config.md - used to hide the component borders
 - api/link/ui.layout_cols_config.md - array of views objects arranged horizontally
@@ -102,10 +101,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.layout_$getsize_other.md - returns the current size of the component
 - api/link/ui.layout_$height_other.md - current height of the view
 - api/link/ui.layout_$setsize_other.md - sets the component size

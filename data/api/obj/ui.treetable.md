@@ -1,7 +1,7 @@
 
 {{memo a control for presenting tree in a grid cell }}
 
-The component is used to integrate a tree into an editable grid. There is a support for  in-line node editing, drag-and-drop, filtering, checkboxes etc. Check [treetable](desktop__treetable.md) documentation for more detailed description.
+The component is used to integrate a tree into an editable grid. There is a support for  in-line node editing, drag-and-drop, filtering, checkboxes etc. Check [treetable](desktop/treetable.md) documentation for more detailed description.
 
 ### Constructor
 

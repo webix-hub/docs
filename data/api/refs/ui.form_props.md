@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/link/ui.form_animate_config.md - defines or disables view change animation.
 - api/ui.form_autoheight_config.md - sets component height according to its contents
 - api/link/ui.form_borderless_config.md - used to hide the component borders

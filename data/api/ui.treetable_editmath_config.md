@@ -1,1 +1,0 @@
-@link: api/ui.datatable_editmath_config.md

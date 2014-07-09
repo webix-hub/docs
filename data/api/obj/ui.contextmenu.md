@@ -1,7 +1,7 @@
 
 {{memo a context menu}}
 
-The component presents a pop-up menu that is displayed when the user clicks the right mouse button in the client area. You can configure any nesting level complexity. Check [contextmenu](desktop__contextmenu.md) documentation for more detailed description.
+The component presents a pop-up menu that is displayed when the user clicks the right mouse button in the client area. You can configure any nesting level complexity. Check [contextmenu](desktop/contextmenu.md) documentation for more detailed description.
 
 ### Constructor
 

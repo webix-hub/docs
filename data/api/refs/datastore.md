@@ -5,10 +5,10 @@ DataStore
 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/datastore_add.md - adds an item to the store
 - api/datastore_addmark.md - allows setting custom flag for a data item.
 - api/link/datastore_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
@@ -54,10 +54,10 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/datastore_onafteradd_event.md - fires after adding item to datastore
 - api/datastore_onafterdelete_event.md - fires after item deleting
 - api/datastore_onafterfilter_event.md - fires after DataStore was filtered
@@ -78,20 +78,20 @@ Events
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/datastore_on_config.md - allows attaching custom handlers to inner events of the component
 }}
 
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/datastore_driver_other.md - defines data driver - methods and properties for data parsing
 - api/datastore_name_other.md - indicates the name of the component (a read-only property)
 - api/datastore_order_other.md - returns an array of IDs of the displayable items

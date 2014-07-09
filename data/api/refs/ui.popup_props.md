@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/link/ui.popup_animate_config.md - defines or disables view change animation.
 - api/link/ui.popup_autofit_config.md - adjusts window size to the size of an HTML node	it is initiated in
 - api/link/ui.popup_autofocus_config.md - sets focus on the window the moment it appears on the page

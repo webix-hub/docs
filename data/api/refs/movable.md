@@ -7,12 +7,12 @@ Movable
 
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/movable_move_config.md - makes view movable
 }}
+
 
 
 

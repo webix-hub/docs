@@ -2,7 +2,7 @@
 Others
 =======
 
-{{links
+{{api
 - api/link/ui.tabview_$getsize_other.md - returns the current size of the component
 - api/link/ui.tabview_$height_other.md - current height of the view
 - api/link/ui.tabview_$setsize_other.md - sets the component size

@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/movable_move_config.md - makes view movable
 }}
 
