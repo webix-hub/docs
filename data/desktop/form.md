@@ -11,10 +11,9 @@ radiobuttons alongside with submit/cancel buttons depending on the situation. Fi
 ###Initialization
 Ui-related form inherits from [view](desktop/view.md). It resembles [layout](desktop/layout.md) very much as it is divided into columns and rows where controls are put. 
 
-- **columns** - an array of horizontally arranged controls and control groups;
-- **rows** -  an array of vertically arranged controls and control groups;
 - **elements** - the form's specific property, an array of vertically arranged controls and control groups;
-
+- **columns** - an array of horizontally arranged controls and control groups;
+- **rows** -  an array of vertically arranged controls and control groups.
 
 {{snippet
 Login form
@@ -28,9 +27,9 @@ webix.ui({
 		{ view:"text", label:"Email"},
 		{ view:"text", label:"Password"},
 		{ margin:5, cols:[
-					{ view:"button", value:"Login" , type:"form" },
-					{ view:"button", value:"Cancel" }
-					]}
+			{ view:"button", value:"Login" , type:"form" },
+			{ view:"button", value:"Cancel" }
+		]}
 		]
 	});
 ~~~
@@ -44,9 +43,25 @@ There exists a possibility to specify [common configuration](desktop/common_conf
 
 ###Dividing form into sections
 
-Sections within a form are set in the following ways:
+Form **elements** can be divided into columns and rows with any level of complexity.
 
-- Adding **headers** with **section** type before control arrays;
+~~~js
+{ view:"form", elements:[
+	{cols:[
+    	{ rows:[
+        	{view:"text"},
+            {view:"datepicker"}
+        ]},
+        {view:"checkbox"},
+        {view:"button"}
+    ]},
+    
+]}
+~~~
+
+To add user-friendliness to form interface, separated blockes can be set within it by:
+
+- Adding **headers** with **section** type before control blocks;
 - Dividing a form into **fieldsets**.
 
 **Sections**
