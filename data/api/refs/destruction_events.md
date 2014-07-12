@@ -2,7 +2,7 @@
 Events
 =======
 
-{{links
+{{api
 - api/destruction_ondestruct_event.md - occurs when component destroyed
 }}
 

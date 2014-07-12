@@ -2,7 +2,7 @@
 Events
 =======
 
-{{links
+{{api
 - api/ui.iframe_onafterload_event.md - fires after HTML page was loaded to the component
 - api/link/ui.iframe_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/ui.iframe_onbeforeload_event.md - fires before HTML page starts to be loaded

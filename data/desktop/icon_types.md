@@ -76,7 +76,12 @@ In this case, icon are not buttons and perform a decorative function.
 
 <img src="desktop/icon_css_pane.png">
 
-CSS class is called 'webix-icon icon-**mail**' with the icon name being part of it. 
+Possible CSS classesare as follows:
+
+- 'webix_icon **fa-envelope**' - a standard icon (white or black depending on current skin); 
+- 'webix_input_icon **fa-envelope**' - a light grey icon adjusted for use in input fields. 
+
+Both of them include an icon name that can be checked on [Font Awesome](http://fortawesome.github.io/Font-Awesome/) site. 
 
 ###Throught css property: 
 
@@ -85,37 +90,38 @@ Multiview tabs
 }}
 ~~~js
 { view:"tabbar", options:[
-			{ value:"mail",  label:"Mail", css:"webix_icon icon-mail"},
-			{ value:"users", label:"Users", css:"webix_icon icon-users"},
-			{ value:"cog", 	 label:"cog" , css:"webix_icon icon-cog"}
-           ]
+	{ value:"mail",  label:"Mail", css:"webix_icon fa-envelope"},
+	{ value:"users", label:"Users", css:"webix_icon fa-users"},
+	{ value:"cog", 	 label:"cog" , css:"webix_icon fa-cog"}
+]}
 ~~~
 
 
-###With the help of inline styling:
+###By adding extra HTML:
 
-Inline styling is enables with the help of a **span** tag. 
+An additional HTML element with an 'icon' class can be added to the text value of any component item: 
 
 {{snippet
 AccordionItem pane with an icon
 }}
 ~~~js
-{ header:"<span class='webix_icon icon-mail'></span>Mail"
+{ header:"<span class='webix_icon fa-envelope'></span>Mail"}
 ~~~
 
 {{snippet
 List item with an icon
 }}
 ~~~js
-template:"<span class='webix_icon icon-#icon#'></span> #name# "
+{ template:"<span class='webix_icon fa-#icon#'></span> #name#"}
 ~~~
 
 Here the icon's name is in hash signs since it comes from the dataset, e.g. in JSON it looks like 
 
 ~~~js
 var data=[
-	{id:1, name:"item1", icon:"mail"},
-    {id:2, name:"item2", icon:"users"}]
+	{id:1, name:"item1", icon:"envelope"},
+    {id:2, name:"item2", icon:"users"}
+]
 ~~~
 
 ##Changing Default Icons
@@ -127,10 +133,10 @@ Default [FontAwesome icons](http://fortawesome.github.io/Font-Awesome/icons/) th
 If you'd like to use another icon from FontAwesome collection instead of the default one, specify its name as value of **icon** property:
 
 ~~~js
-{view:"richselect", label: 'Other FontAwesome Icon', value:1, options:options, icon:"caret-down"}
+{view:"richselect", label: 'Other', options:options, icon:"caret-down"}
 ~~~
 
-As a result, the default [richselect]((desktop/controls.md#richselect)) icon, "fa-angle-down", is replaced with the one you've set. 
+As a result, the default [richselect](desktop/controls.md#richselect)) icon, "fa-angle-down", is replaced with the one you've set. 
 
 ###Setting a Custom Icon
 
@@ -163,7 +169,9 @@ If you want to style one combo on the page while leaving another one unchanged, 
 Then the necessary CSS will look like this:
 
 ~~~css
-.custom .webix_input_icon.fa-angle-down:before{...}
+.custom .webix_input_icon.fa-angle-down:before{
+...
+}
 ~~~
 
 **Component styling** is described in detail in the [corresponding article](desktop/styling.md) of the documentation.

@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/link/ui.headerlayout_animate_config.md - defines or disables view change animation.
 - api/link/ui.headerlayout_borderless_config.md - used to hide the component borders
 - api/link/ui.headerlayout_collapsed_config.md - 'says' to display initially all accordion cells collapsed

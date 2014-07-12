@@ -6,20 +6,21 @@ Destruction
 Works automatically
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/destruction_destructor.md - destructs the calling object
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/destruction_ondestruct_event.md - occurs when component destroyed
 }}
+
 
 
 

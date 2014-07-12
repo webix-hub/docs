@@ -1,8 +1,7 @@
 insertBefore
 =============
 
-@short: inserts a new node before the specified sibling (the **before** parameter) or as the last child of the specified parent (the **rescue** parameter) if the sibling doesn't exist. <br>
-The third parameter is optional and used just to avoid errors in case the specified subling doesn't exist.
+@short: inserts a new node into the specified position
 
 
 @params:
@@ -13,6 +12,9 @@ The third parameter is optional and used just to avoid errors in case the specif
 
 @template:	api_method
 @descr:
+
+The method inserts a new node before the specified sibling (the **before** parameter) or as the last child of the specified parent (the **rescue** parameter) if the sibling doesn't exist. <br>
+The third parameter is optional and used just to avoid errors in case the specified subling doesn't exist.
 
 
 @example:

@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/uimanager_addhotkey.md - adds the hot key handler
 - api/uimanager_canfocus.md - checks whether the view can be focused
 - api/uimanager_destructor.md - Destructor. Destroys the UIManager instance

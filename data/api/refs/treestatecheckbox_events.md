@@ -2,7 +2,7 @@
 Events
 =======
 
-{{links
+{{api
 - api/treestatecheckbox_onitemcheck_event.md - fires when you check an item in tree and treetable
 }}
 

@@ -5,13 +5,14 @@ Number
 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/number_format.md - returns the formatted number as a string
 - api/number_numtostr.md - returns formatting function
 }}
+
 
 
 

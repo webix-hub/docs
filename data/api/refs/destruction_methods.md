@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/destruction_destructor.md - destructs the calling object
 }}
 

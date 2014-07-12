@@ -4,7 +4,7 @@ ui.combo
 
 {{memo An editable combo box. }}
 
-The control combines an editable text field with a drop-down list of predefined values. Provides autocomplete feature that suggests possible matches while a user types in the text field. Check [combo](desktop__controls.md#combo) documentation for more detailed description.
+The control combines an editable text field with a drop-down list of predefined values. Provides autocomplete feature that suggests possible matches while a user types in the text field. Check [combo](desktop/controls.md#combo) documentation for more detailed description.
 
 ### Constructor
 
@@ -23,10 +23,10 @@ The control combines an editable text field with a drop-down list of predefined 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.richselect.md">ui.richselect</a>, <a href="api/refs/ui.text.md">ui.text</a>, <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.combo_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.combo_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.combo_bind.md - binds components
@@ -65,31 +65,22 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/link/ui.combo_onafterrender_event.md - occurs immediately after the component has been rendered.
-- api/link/ui.combo_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.combo_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.combo_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.combo_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.combo_ondestruct_event.md - occurs when component destroyed
-- api/link/ui.combo_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
-- api/link/ui.combo_onrotate_event.md - occurs on screen rotating
-- api/link/ui.combo_onswipex_event.md - 
-- api/link/ui.combo_onswipey_event.md - 
-- api/link/ui.combo_ontouchend_event.md - 
-- api/link/ui.combo_ontouchmove_event.md - 
-- api/link/ui.combo_ontouchstart_event.md - 
 - api/link/ui.combo_onviewresize_event.md - view size was changed by resizer
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.combo_align_config.md - the alignment of the control within the parent container
 - api/link/ui.combo_animate_config.md - defines or disables view change animation.
 - api/link/ui.combo_attributes_config.md - sets an hash of HTML input attributes that will be parsed for the Webix input control
@@ -140,10 +131,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.combo_$getsize_other.md - returns the current size of the component
 - api/link/ui.combo_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.combo_$height_other.md - current height of the view

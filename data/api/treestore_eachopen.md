@@ -19,22 +19,18 @@ eachOpen
 
 @example:
 //iterates through all items of the tree
-tree.data.eachOpen(
-	function(obj){
-    	console.log(obj.value)
-    }
-);
+tree.data.eachOpen(function(obj){
+   console.log(obj.value)
+});
 
 //iterates through items with $parent="2"
-tree.data.eachOpen(
-	function(obj){
-    	console.log(obj.value)
-    }, this, "2");
+tree.data.eachOpen(function(obj){
+   console.log(obj.value)
+}, this, "2");
 
-@template:	api_method
 @descr:
 
-Note, 
+Be aware of the following issues: 
 
 - api/treestore_eachopen.md iterates through both parent and child nodes.
 - The api/treestore_eachopen.md's function takes the **data item object** as a parameter.

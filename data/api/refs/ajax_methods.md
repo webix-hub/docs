@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/ajax_bind.md - binds callback function to object
 - api/ajax_del.md - issues a DELETE Ajax request to the server
 - api/ajax_get.md - issues a GET Ajax request to the server

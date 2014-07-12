@@ -2,7 +2,7 @@
 Others
 =======
 
-{{links
+{{api
 - api/link/ui.multiview_$getsize_other.md - returns the current size of the component
 - api/link/ui.multiview_$height_other.md - current height of the view
 - api/link/ui.multiview_$setsize_other.md - sets the component size

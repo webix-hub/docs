@@ -2,7 +2,7 @@
 Events
 =======
 
-{{links
+{{api
 - api/ui.colorboard_onafterrender_event.md - occurs immediately after the component has been rendered
 - api/link/ui.colorboard_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/ui.colorboard_onbeforerender_event.md - occurs immediately before the component has been rendered

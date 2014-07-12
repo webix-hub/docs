@@ -5,30 +5,30 @@ CollectionBind
 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/collectionbind_getcursor.md - returns the current cursor position.
 - api/collectionbind_setcursor.md - sets the position of the cursor
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/collectionbind_onaftercursorchange_event.md - fires after the cursor changes its position.
 - api/collectionbind_onbeforecursorchange_event.md - fires before the cursor changes its position.
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/collectionbind_defaultdata_config.md - the property stores data which is displayed in the child when no records are selected in the  master.
 }}
+
 
 
 

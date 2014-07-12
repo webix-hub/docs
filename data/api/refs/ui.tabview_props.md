@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/link/ui.tabview_animate_config.md - defines or disables view change animation.
 - api/link/ui.tabview_borderless_config.md - used to hide the component borders
 - api/link/ui.tabview_cols_config.md - array of views objects arranged horizontally

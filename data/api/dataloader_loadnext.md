@@ -3,8 +3,7 @@ loadNext
 
 
 
-@short:	sends a request to load the specified number of records to the end or to the specified position 
-of the component
+@short:	sends a request to load the specified number of records to the end or to the specified position
 
 @params:
 - count		number		the count of records

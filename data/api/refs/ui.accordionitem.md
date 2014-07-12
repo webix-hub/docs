@@ -4,7 +4,7 @@ ui.accordionitem
 
 {{memo A singular pane of the accordion component. }}
 
-Each accordion pane consists of the header and body. The body of a pane can be collapsed/expanded by clicking on the appropriate header. Check [accordionitem](desktop__accordionitem.md) documentation for more detailed description.
+Each accordion pane consists of the header and body. The body of a pane can be collapsed/expanded by clicking on the appropriate header. Check [accordionitem](desktop/accordionitem.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -23,10 +23,10 @@ Each accordion pane consists of the header and body. The body of a pane can be c
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.accordionitem_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.accordionitem_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.accordionitem_bind.md - binds components
@@ -57,10 +57,10 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/link/ui.accordionitem_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.accordionitem_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.accordionitem_onbeforecontextmenu_event.md - fires before the context menu is called in the item area
@@ -82,10 +82,9 @@ Events
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.accordionitem_animate_config.md - defines or disables view change animation.
 - api/ui.accordionitem_body_config.md - defines the cell content (a view or some HTML)
 - api/link/ui.accordionitem_borderless_config.md - used to hide the component borders
@@ -117,10 +116,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.accordionitem_$getsize_other.md - returns the current size of the component
 - api/link/ui.accordionitem_$height_other.md - current height of the view
 - api/link/ui.accordionitem_$scope_other.md - scope for resolving event and method names

@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/link/ui.list_animate_config.md - defines or disables view change animation.
 - api/ui.list_autoheight_config.md - height of view will be adjusted to show all items
 - api/ui.list_autowidth_config.md - width of view will be adjusted to show all items

@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/link/ui.view_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.view_bind.md - binds components
 - api/link/ui.view_define.md - redefines a single configuration property (or a hash of properties)

@@ -4,7 +4,7 @@ ui.accordion
 
 {{memo A container control that presents multiple horizontal or vertical panes. }}
 
-A collection of panes that make up the component allows you to organize the content in a space-saving way. <br> The main difference from a standard layout is that accordion can be collapsed/expanded by clicking on the header of a pane. Check [accordion](desktop__accordion.md) documentation for more detailed description.
+A collection of panes that make up the component allows you to organize the content in a space-saving way. <br> The main difference from a standard layout is that accordion can be collapsed/expanded by clicking on the header of a pane. Check [accordion](desktop/accordion.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -23,10 +23,10 @@ A collection of panes that make up the component allows you to organize the cont
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.layout.md">ui.layout</a>, <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.accordion_addview.md - add new view to layout or multiview
 - api/link/ui.accordion_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.accordion_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
@@ -60,19 +60,18 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/link/ui.accordion_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.accordion_ondestruct_event.md - occurs when component destroyed
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.accordion_animate_config.md - defines or disables view change animation.
 - api/link/ui.accordion_borderless_config.md - used to hide the component borders
 - api/ui.accordion_collapsed_config.md - 'says' to display initially all accordion cells collapsed
@@ -106,10 +105,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.accordion_$getsize_other.md - returns the current size of the component
 - api/link/ui.accordion_$height_other.md - current height of the view
 - api/link/ui.accordion_$setsize_other.md - sets the component size

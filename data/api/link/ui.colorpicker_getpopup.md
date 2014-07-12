@@ -1,1 +1,1 @@
-@link: api/ui.datepicker_getpopup.md
+@link: api/ui.richselect_getpopup.md

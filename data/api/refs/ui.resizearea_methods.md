@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/link/ui.resizearea_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.resizearea_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.resizearea_callevent.md - calls an inner event

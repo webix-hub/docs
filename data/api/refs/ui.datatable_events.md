@@ -2,7 +2,7 @@
 Events
 =======
 
-{{links
+{{api
 - api/link/ui.datatable_onafteradd_event.md - fires after adding item to datastore
 - api/ui.datatable_onaftercolumndrop_event.md - fires after the column has been dragged and dropped to the target position
 - api/ui.datatable_onaftercolumndroporder_event.md - fires after the column order was changed with the help of drag-and-drop

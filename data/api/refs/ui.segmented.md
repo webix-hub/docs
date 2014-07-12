@@ -4,7 +4,7 @@ ui.segmented
 
 {{memo A holistic panel that contains multiple buttons (two or more). }}
 
-The component can be used to build a multi-item menu for navigating between views. Check [segmented](desktop__controls.md#segmented) documentation for more detailed description.
+The component can be used to build a multi-item menu for navigating between views. Check [segmented](desktop/controls.md#segmented) documentation for more detailed description.
 
 ### Constructor
 
@@ -23,10 +23,10 @@ The component can be used to build a multi-item menu for navigating between view
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.text.md">ui.text</a>, <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/ui.segmented_addoption.md - add a new option (segment) to the button
 - api/link/ui.segmented_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.segmented_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
@@ -66,31 +66,22 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/link/ui.segmented_onafterrender_event.md - occurs immediately after the component has been rendered.
-- api/link/ui.segmented_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.segmented_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.segmented_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.segmented_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.segmented_ondestruct_event.md - occurs when component destroyed
-- api/link/ui.segmented_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
-- api/link/ui.segmented_onrotate_event.md - occurs on screen rotating
-- api/link/ui.segmented_onswipex_event.md - 
-- api/link/ui.segmented_onswipey_event.md - 
-- api/link/ui.segmented_ontouchend_event.md - 
-- api/link/ui.segmented_ontouchmove_event.md - 
-- api/link/ui.segmented_ontouchstart_event.md - 
 - api/link/ui.segmented_onviewresize_event.md - view size was changed by resizer
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.segmented_align_config.md - the alignment of the control within the parent container
 - api/link/ui.segmented_animate_config.md - defines or disables view change animation.
 - api/link/ui.segmented_attributes_config.md - sets an hash of HTML input attributes that will be parsed for the Webix input control
@@ -139,10 +130,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.segmented_$getsize_other.md - returns the current size of the component
 - api/link/ui.segmented_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.segmented_$height_other.md - current height of the view

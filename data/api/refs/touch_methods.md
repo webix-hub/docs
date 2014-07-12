@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/touch_disable.md - disables touch support
 - api/touch_enable.md - enables touch support
 - api/touch_limit.md - switch touch support to limited mode

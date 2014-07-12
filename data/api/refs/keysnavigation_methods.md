@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/keysnavigation_moveselection.md - moves selection in the specified direction
 }}
 

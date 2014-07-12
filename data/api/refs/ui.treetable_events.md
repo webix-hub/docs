@@ -2,7 +2,7 @@
 Events
 =======
 
-{{links
+{{api
 - api/link/ui.treetable_onafteradd_event.md - fires after adding item to datastore
 - api/link/ui.treetable_onafterclose_event.md - fires after the branch has been closed
 - api/link/ui.treetable_onaftercolumndrop_event.md - fires after the column has been dragged and dropped to the target position

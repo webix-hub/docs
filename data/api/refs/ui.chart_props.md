@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/ui.chart_alpha_config.md - defines the opacity of chart items
 - api/link/ui.chart_animate_config.md - defines or disables view change animation.
 - api/ui.chart_barwidth_config.md - the width of bars

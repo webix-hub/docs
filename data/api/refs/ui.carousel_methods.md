@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/link/ui.carousel_adjust.md - adjusts the component to the size of the parent HTML container
 - api/ui.carousel_adjustscroll.md - adjusts scrolling direction to screen mode (vertical or horizontal)
 - api/link/ui.carousel_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
@@ -15,8 +15,7 @@ Methods
 - api/link/ui.carousel_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.carousel_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/ui.carousel_getactiveid.md - gets the id of the current selected item
-- api/ui.carousel_getactiveidindex.md - gets the index of the current active item
-- api/ui.carousel_getactiveindex.md - 
+- api/ui.carousel_getactiveindex.md - gets the index of the current active item
 - api/link/ui.carousel_getchildviews.md - returns child views of the calling component
 - api/link/ui.carousel_getformview.md - returns master form for the input
 - api/ui.carousel_getlayout.md - 
@@ -52,7 +51,6 @@ Methods
 - api/link/ui.carousel_disable.md
 - api/link/ui.carousel_enable.md
 - api/ui.carousel_getactiveid.md
-- api/ui.carousel_getactiveidindex.md
 - api/ui.carousel_getactiveindex.md
 - api/link/ui.carousel_getchildviews.md
 - api/link/ui.carousel_getformview.md

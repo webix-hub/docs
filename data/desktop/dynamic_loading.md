@@ -30,6 +30,8 @@ Server Script "data_dyn.php"-file
 ?>
 ~~~
 
+###Configuring Dynamic Loading Behavior
+
 So specify the above mentioned php-script as value of **url** parameter and (optionally) include the **datafetch** and **datathrottle** properties into the 
 component's constructor (except for the tree).
 
@@ -41,7 +43,7 @@ webix.ui({
     datafetch:50,
     datathrottle: 200,
     loadahead:50
-   })
+});
 ~~~
 
 ####Comments
@@ -54,17 +56,31 @@ overloaded with requests, since they are triggered only once in 200 milliseconds
 - **loadahead** (number) - defines the number of items to be loaded each time as you scroll down or up the view, or switch to the next page;
 {{sample 15_datatable/16_dyn_loading/04_db_dyn_loadahead.html }}
 
-####Methods within Dynamic Loading 
+###Dynamic Loading by Api
 
-**loadNext()** - enables dynamic loading with appending content. 
+The **loadNext(api/link/ui.datatable_loadnext.md)** can be used to send a request to load the specified number of records and show them in the component. 
 
 The arguments are:
 
 - the **number of records** that will be loaded on function execution; 
 - the **start position** to insert;
 - **callback** (*null* if you don't need it);
-- the **loading url** (if it wasn't specified in thecomponent constructor);
+- the **loading url** (if it wasn't specified in the component constructor);
 - boolean **'now' flag** to ignore datathrottle and load files immediately on *loadNext()* executiion. 
+
+~~~js
+grida.loadNext(10,0,null,"data/data.php"); //uses given url
+
+grida.loadNext(10, 0); //uses url set in the component constructor
+~~~
+Two scenarios are possible: 
+
+- data is loaded and substitutes current component data;
+- data is loaded and appended to the end of current component data.
+
+
+
+
 
 ~~~js
 grida.loadNext(10,0,null,"data/data.php");

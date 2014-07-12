@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/treedataloader_loadbranch.md - loads data to the specified branch
 }}
 

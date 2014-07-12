@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/clipbuffer_destructor.md - destroys the clipbuffer, cleanin dom
 - api/clipbuffer_focus.md - moves focus to the clipboard buffer
 - api/clipbuffer_init.md - inits clipboard buffer

@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/link/ui.icon_align_config.md - the alignment of the control within the parent container
 - api/link/ui.icon_animate_config.md - defines or disables view change animation.
 - api/link/ui.icon_borderless_config.md - used to hide the component borders

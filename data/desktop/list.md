@@ -19,7 +19,7 @@ webix.ui({
 	view:"list",
 	template:"...",
 	data:..//variable || path || dataset
-	});
+});
 ~~~
 
 {{sample 05_list/01_list.html }}
@@ -29,7 +29,7 @@ You can load data in any of the supported [data formats](desktop/data_types.md).
 ###Working with List
 - desktop/data_object.md
 - [Data Loading](desktop/data_loading.md). 
-- [Template Making](desktop/html_templates.md).
+- [Defining Data Template](desktop/html_templates.md).
 - [Adding/Deleting Items](desktop/add_delete.md).
 - [Editing Data](desktop/edit.md).
 - [Data Filtering and Sorting](desktop/filter_sort.md)

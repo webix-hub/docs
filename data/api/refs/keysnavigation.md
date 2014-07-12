@@ -5,20 +5,20 @@ KeysNavigation
 {{memo Implements keyboard navigation. }}
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/keysnavigation_moveselection.md - moves selection in the specified direction
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/keysnavigation_navigation_config.md - activates the selection keyboard navigation
 }}
+
 
 
 

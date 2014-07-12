@@ -2,7 +2,7 @@
 Others
 =======
 
-{{links
+{{api
 - api/link/ui.chart_$getsize_other.md - returns the current size of the component
 - api/link/ui.chart_$height_other.md - current height of the view
 - api/link/ui.chart_$scope_other.md - scope for resolving event and method names

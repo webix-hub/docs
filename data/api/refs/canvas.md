@@ -6,10 +6,10 @@ Canvas
 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/canvas_clearcanvas.md - clears the component canvas
 - api/canvas_getcanvas.md - gets the canvas context
 - api/canvas_hidecanvas.md - hides canvas object
@@ -18,6 +18,7 @@ Methods
 - api/canvas_showcanvas.md - shows canvas object
 - api/canvas_togglecanvas.md - toggle visibility of canvas
 }}
+
 
 
 

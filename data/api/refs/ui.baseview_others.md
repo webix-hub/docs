@@ -2,7 +2,7 @@
 Others
 =======
 
-{{links
+{{api
 - api/ui.baseview_$getsize_other.md - returns the current size of the component
 - api/ui.baseview_$height_other.md - current height of the view
 - api/ui.baseview_$setsize_other.md - sets the component size

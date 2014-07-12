@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/link/ui.tree_add.md - adds an item to the store
 - api/link/ui.tree_addcss.md - applied CSS class to a component item
 - api/link/ui.tree_adjust.md - adjusts the component to the size of the parent HTML container

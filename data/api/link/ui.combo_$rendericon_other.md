@@ -1,1 +1,1 @@
-@link: api/ui.richselect_$rendericon_other.md
+@link: api/ui.search_$renderIcon_other.md

@@ -2,7 +2,7 @@
 Events
 =======
 
-{{links
+{{api
 - api/treeapi_onafterclose_event.md - fires after the branch has been closed
 - api/treeapi_onafteropen_event.md - fires after the branch has been opened
 - api/treeapi_onbeforeclose_event.md - fires the moment you attempt to close the tree branch

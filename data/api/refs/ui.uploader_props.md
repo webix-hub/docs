@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/link/ui.uploader_align_config.md - the alignment of the control within the parent container
 - api/link/ui.uploader_animate_config.md - defines or disables view change animation.
 - api/ui.uploader_apionly_config.md - sets the uploader to "invisible" mode. *False* by default.

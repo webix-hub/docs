@@ -4,7 +4,7 @@ ui.datatable
 {{memo An editable table  that can easily display huge data sets. }}
 
 The component is full of various possibilities: filtering, sorting, pagination, editing, nadigation, drag-and-drop, internatialization, export to PDF, Excel etc. It also provides the dynamic mode for fast handling thousands of records.
-  Check [datatable](datatable__index.md) documentation for more detailed description.
+  Check [datatable](/) documentation for more detailed description.
 
 ### Constructor
 
@@ -23,10 +23,10 @@ The component is full of various possibilities: filtering, sorting, pagination, 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/group.md">Group</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/mapcollection.md">MapCollection</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/tablepaste.md">TablePaste</a>, <a href="api/refs/datastate.md">DataState</a>, <a href="api/refs/editability.md">EditAbility</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.datatable_add.md - adds an item to the store
 - api/ui.datatable_addcellcss.md - adds a css class to the cell
 - api/link/ui.datatable_addcss.md - applied CSS class to a component item
@@ -104,8 +104,7 @@ Methods
 - api/link/ui.datatable_isenabled.md - checks whether the view is enabled
 - api/link/ui.datatable_isvisible.md - checks whether the view is visible
 - api/link/ui.datatable_load.md - loads data from an external data source
-- api/link/ui.datatable_loadnext.md - sends a request to load the specified number of records to the end or to the specified position 
-of the component
+- api/link/ui.datatable_loadnext.md - sends a request to load the specified number of records to the end or to the specified position of the component
 - api/ui.datatable_locate.md - converts an HTML node or event object to in-table position
 - api/ui.datatable_mapcells.md - applies the callback to a range of cells
 - api/link/ui.datatable_mapevent.md - routes events from one object to another
@@ -156,10 +155,10 @@ of the component
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/link/ui.datatable_onafteradd_event.md - fires after adding item to datastore
 - api/ui.datatable_onaftercolumndrop_event.md - fires after the column has been dragged and dropped to the target position
 - api/ui.datatable_onaftercolumndroporder_event.md - fires after the column order was changed with the help of drag-and-drop
@@ -227,10 +226,9 @@ Events
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.datatable_animate_config.md - defines or disables view change animation.
 - api/ui.datatable_autoconfig_config.md - datatable adjust configuration to the data
 - api/ui.datatable_autoheight_config.md - adjusts DataTable to the parent container size vertically
@@ -312,10 +310,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.datatable_$drag_other.md - method called when drag operation initiated
 - api/link/ui.datatable_$draghtml_other.md - defines how dragged item will look
 - api/link/ui.datatable_$dragin_other.md - method called when item moved on possible drop landing during dnd

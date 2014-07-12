@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/link/ui.datatable_add.md - adds an item to the store
 - api/ui.datatable_addcellcss.md - adds a css class to the cell
 - api/link/ui.datatable_addcss.md - applied CSS class to a component item

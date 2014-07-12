@@ -8,10 +8,10 @@ DragItem
 
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/dragitem_onafterdrop_event.md - fires after drag-n-drop was finished
 - api/dragitem_onbeforedrag_event.md - fires before the mouse button is pressed and the cursor is moved over a draggable item
 - api/dragitem_onbeforedragin_event.md - fires before a dragged element is moved over the droppable area
@@ -21,20 +21,20 @@ Events
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/dragitem_drag_config.md - enables or disables drag-and-drop
 }}
 
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/dragitem_$drag_other.md - method called when drag operation initiated
 - api/dragitem_$draghtml_other.md - defines how dragged item will look
 - api/dragitem_$dragin_other.md - method called when item moved on possible drop landing during dnd

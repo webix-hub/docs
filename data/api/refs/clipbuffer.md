@@ -7,15 +7,16 @@ Because browsers doesn't allow direct comunication with clipboard, lib creates h
 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/clipbuffer_destructor.md - destroys the clipbuffer, cleanin dom
 - api/clipbuffer_focus.md - moves focus to the clipboard buffer
 - api/clipbuffer_init.md - inits clipboard buffer
 - api/clipbuffer_set.md - sets new value for clipboard buffer
 }}
+
 
 
 

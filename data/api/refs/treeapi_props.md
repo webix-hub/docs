@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/treeapi_threestate_config.md - enabled three-state checkboxes
 }}
 

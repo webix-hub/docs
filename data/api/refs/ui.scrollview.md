@@ -3,7 +3,7 @@ ui.scrollview
 
 {{memo A container with scrolls. }}
 
-Place it in the layout if you want to have a scroll around few other views (not necessary if you need a scroll in one single view). Check [scrollview](desktop__scrollview.md) documentation for more detailed description.
+Place it in the layout if you want to have a scroll around few other views (not necessary if you need a scroll in one single view). Check [scrollview](desktop/scrollview.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -22,10 +22,10 @@ Place it in the layout if you want to have a scroll around few other views (not 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.scrollview_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.scrollview_bind.md - binds components
 - api/link/ui.scrollview_define.md - redefines a single configuration property (or a hash of properties)
@@ -51,28 +51,19 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
-- api/link/ui.scrollview_onafterscroll_event.md - occurs when some webix view has been scrolled
+
+{{api
 - api/link/ui.scrollview_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.scrollview_ondestruct_event.md - occurs when component destroyed
-- api/link/ui.scrollview_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
-- api/link/ui.scrollview_onrotate_event.md - occurs on screen rotating
-- api/link/ui.scrollview_onswipex_event.md - 
-- api/link/ui.scrollview_onswipey_event.md - 
-- api/link/ui.scrollview_ontouchend_event.md - 
-- api/link/ui.scrollview_ontouchmove_event.md - 
-- api/link/ui.scrollview_ontouchstart_event.md - 
 - api/link/ui.scrollview_onviewresize_event.md - view size was changed by resizer
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.scrollview_animate_config.md - defines or disables view change animation.
 - api/ui.scrollview_body_config.md - the view object that needs scrolling
 - api/link/ui.scrollview_borderless_config.md - used to hide the component borders
@@ -95,10 +86,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.scrollview_$getsize_other.md - returns the current size of the component
 - api/link/ui.scrollview_$height_other.md - current height of the view
 - api/link/ui.scrollview_$scope_other.md - scope for resolving event and method names

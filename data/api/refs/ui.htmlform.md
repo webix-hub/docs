@@ -4,7 +4,7 @@ ui.htmlform
 
 {{memo A control for integration with an HTML form. }}
 
-The component allows you to get an HTML Form as a lib-based view, so that to use it together with the other lib components (common API, techniques, architecture etc.). Check [htmlform](desktop__htmlform.md) documentation for more detailed description.
+The component allows you to get an HTML Form as a lib-based view, so that to use it together with the other lib components (common API, techniques, architecture etc.). Check [htmlform](desktop/htmlform.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -23,10 +23,10 @@ The component allows you to get an HTML Form as a lib-based view, so that to use
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.template.md">ui.template</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/values.md">Values</a>, <a href="api/refs/validatedata.md">ValidateData</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.htmlform_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.htmlform_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.htmlform_bind.md - binds components
@@ -73,13 +73,12 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/link/ui.htmlform_onafterload_event.md - fires after xml loading is complete
 - api/link/ui.htmlform_onafterrender_event.md - occurs immediately after the component has been rendered.
-- api/link/ui.htmlform_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.htmlform_onaftervalidation_event.md - fires after data has been validated
 - api/link/ui.htmlform_onbeforeload_event.md - occurs immediately before loading XML data has been started
 - api/link/ui.htmlform_onbeforerender_event.md - occurs immediately before the component has been rendered
@@ -88,23 +87,15 @@ Events
 - api/link/ui.htmlform_onchange_event.md - fires when data in the input is changed
 - api/link/ui.htmlform_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.htmlform_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
-- api/link/ui.htmlform_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
-- api/link/ui.htmlform_onrotate_event.md - occurs on screen rotating
-- api/link/ui.htmlform_onswipex_event.md - 
-- api/link/ui.htmlform_onswipey_event.md - 
-- api/link/ui.htmlform_ontouchend_event.md - 
-- api/link/ui.htmlform_ontouchmove_event.md - 
-- api/link/ui.htmlform_ontouchstart_event.md - 
 - api/link/ui.htmlform_onvalidationerror_event.md - fires when the form fails to pass validation
 - api/link/ui.htmlform_onvalidationsuccess_event.md - fires after the form has passes validation successfully
 - api/link/ui.htmlform_onviewresize_event.md - view size was changed by resizer
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.htmlform_animate_config.md - defines or disables view change animation.
 - api/link/ui.htmlform_autoheight_config.md - lets the component autosize to its contents
 - api/link/ui.htmlform_borderless_config.md - used to hide the component borders
@@ -139,10 +130,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.htmlform_$getsize_other.md - returns the current size of the component
 - api/link/ui.htmlform_$height_other.md - current height of the view
 - api/link/ui.htmlform_$scope_other.md - scope for resolving event and method names

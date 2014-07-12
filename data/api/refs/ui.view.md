@@ -3,7 +3,7 @@ ui.view
 
 {{memo A pure view with borders but without any content inside it. }}
 
-The component serves as the base class that defines properties, methods, and events common for not layout-based UI components. Can be used as the placeholder in a layout.  Check [view](desktop__view.md) documentation for more detailed description.
+The component serves as the base class that defines properties, methods, and events common for not layout-based UI components. Can be used as the placeholder in a layout.  Check [view](desktop/view.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -22,10 +22,10 @@ The component serves as the base class that defines properties, methods, and eve
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.view_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.view_bind.md - binds components
 - api/link/ui.view_define.md - redefines a single configuration property (or a hash of properties)
@@ -46,28 +46,19 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
-- api/ui.view_onafterscroll_event.md - occurs when some webix view has been scrolled
+
+{{api
 - api/link/ui.view_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.view_ondestruct_event.md - occurs when component destroyed
-- api/ui.view_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
-- api/ui.view_onrotate_event.md - occurs on screen rotating
-- api/ui.view_onswipex_event.md - 
-- api/ui.view_onswipey_event.md - 
-- api/ui.view_ontouchend_event.md - 
-- api/ui.view_ontouchmove_event.md - 
-- api/ui.view_ontouchstart_event.md - 
 - api/ui.view_onviewresize_event.md - view size was changed by resizer
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.view_animate_config.md - defines or disables view change animation.
 - api/link/ui.view_borderless_config.md - used to hide the component borders
 - api/link/ui.view_container_config.md - an html container (or its id) where the component needs initializing
@@ -87,10 +78,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.view_$getsize_other.md - returns the current size of the component
 - api/link/ui.view_$height_other.md - current height of the view
 - api/ui.view_$scope_other.md - scope for resolving event and method names

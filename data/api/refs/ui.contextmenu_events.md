@@ -2,7 +2,7 @@
 Events
 =======
 
-{{links
+{{api
 - api/link/ui.contextmenu_onafteradd_event.md - fires after adding item to datastore
 - api/link/ui.contextmenu_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.contextmenu_onafterdelete_event.md - fires after item deleting

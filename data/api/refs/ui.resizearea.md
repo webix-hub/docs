@@ -23,10 +23,10 @@ Not purposed for direct initialization. Check desktop/resizearea.md article for 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/settings.md">Settings</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.resizearea_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.resizearea_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.resizearea_callevent.md - calls an inner event
@@ -38,19 +38,18 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/ui.resizearea_onresize_event.md - occures when the user moves the 'resize' cursor
 - api/ui.resizearea_onresizeend_event.md - occures when the user ends moving the 'resize' cursor (releases the mouse button)
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/ui.resizearea_border_config.md - enables border around resize area
 - api/ui.resizearea_container_config.md - html element to which area will be attached
 - api/ui.resizearea_cursor_config.md - which cursor to show during resize
@@ -67,10 +66,11 @@ Setting a pure number value doesn't make any sense.
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.resizearea_config_other.md - all options from initial component configuration
 - api/link/ui.resizearea_name_other.md - indicates the name of the component (a read-only property)
 }}

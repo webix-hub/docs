@@ -2,7 +2,7 @@
 Others
 =======
 
-{{links
+{{api
 - api/datavalue_name_other.md - indicates the name of the component (a read-only property)
 }}
 

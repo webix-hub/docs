@@ -2,7 +2,7 @@
 Events
 =======
 
-{{links
+{{api
 - api/link/ui.accordionitem_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.accordionitem_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.accordionitem_onbeforecontextmenu_event.md - fires before the context menu is called in the item area

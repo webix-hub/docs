@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/link/ui.multiview_addview.md - add new view to layout or multiview
 - api/link/ui.multiview_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.multiview_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)

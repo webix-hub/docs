@@ -4,7 +4,7 @@ ui.uploader
 
 {{memo A control for uploading multiple files. }}
 
-The component allows tracking the whole progress of individual file upload. Fully customazable. Check [uploader](desktop__file_upload.md) documentation for more detailed description.
+The component allows tracking the whole progress of individual file upload. Fully customazable. Check [uploader](/) documentation for more detailed description.
 
 ### Constructor
 
@@ -23,10 +23,10 @@ The component allows tracking the whole progress of individual file upload. Full
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/ui.uploader_addfile.md - adds files to the uploader using browser fileApi
 - api/link/ui.uploader_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.uploader_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
@@ -64,35 +64,26 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/ui.uploader_onafterfileadd_event.md - fires after file has been added to the uploader body
 - api/link/ui.uploader_onafterrender_event.md - occurs immediately after the component has been rendered.
-- api/link/ui.uploader_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/ui.uploader_onbeforefileadd_event.md - fires the moment you try to add file to uploader
 - api/link/ui.uploader_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.uploader_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.uploader_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.uploader_ondestruct_event.md - occurs when component destroyed
 - api/ui.uploader_onfileupload_event.md - fires the moment file uploading starts
-- api/link/ui.uploader_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
-- api/link/ui.uploader_onrotate_event.md - occurs on screen rotating
-- api/link/ui.uploader_onswipex_event.md - 
-- api/link/ui.uploader_onswipey_event.md - 
-- api/link/ui.uploader_ontouchend_event.md - 
-- api/link/ui.uploader_ontouchmove_event.md - 
-- api/link/ui.uploader_ontouchstart_event.md - 
 - api/ui.uploader_onuploadcomplete_event.md - fires when all files have been successfully uploaded to server
 - api/link/ui.uploader_onviewresize_event.md - view size was changed by resizer
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.uploader_align_config.md - the alignment of the control within the parent container
 - api/link/ui.uploader_animate_config.md - defines or disables view change animation.
 - api/ui.uploader_apionly_config.md - sets the uploader to "invisible" mode. *False* by default.
@@ -132,10 +123,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/ui.uploader_$cssname_other.md - name which will be used as part of css class
 - api/link/ui.uploader_$getsize_other.md - returns the current size of the component
 - api/link/ui.uploader_$getvalue_other.md - called each time when component need to get value from related html input

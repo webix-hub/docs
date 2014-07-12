@@ -223,7 +223,7 @@ It can be uselful for REST-full applications or when you need to fill in client-
 
 The [event system](api__refs__dataprocessor_events.html) for dataProcessor helps change the default processing logic right on client-side. 
 
-To alter processing, you should manually attach processing function to the necessary DataProcessor event (onBeforeDelete, onBeforeInsert, onBeforeUpdate). For instance, set **update** action type on **onBeforeDelete** thus 
+To alter processing, you should manually attach processing function to the necessary DataProcessor event (*onBeforeDelete, onBeforeInsert, onBeforeUpdate*). For instance, set **update** action type on **onBeforeDelete** thus 
 making connector issue UPDATE request instead of DELETE.
 
 This is how we change deletion from database by updating this record:
@@ -330,12 +330,12 @@ dp = new webix.DataProcessor({
 
 ##Sending Headers with DataProcessor-based Requests
 
-There exists no possibility to send headers with DataProcessor requests as they are executed in background. However, you can catch Webix [onBeforeAjax](api/onbeforeajax.md) event to modify ANY Ajax request on the page (so be attentive): 
+There exists no possibility to send headers with DataProcessor requests as they are executed in background. However, you can catch Webix **onBeforeAjax** request to mpdify ANY Ajax request issued from the page: 
 
 ~~~js
 webix.callEvent("onBeforeAjax", function(mode, url, data, request){
  	request.setRequestHeader("Content-type","application/json");
-})
+});
 ~~~
 
 Note that Webix [Ajax module](helpers/ajax_operations.md) features a **built-in functionality** for sending **headers** with serverside requests. The above solution is only for DataProcessor Ajax requests. 

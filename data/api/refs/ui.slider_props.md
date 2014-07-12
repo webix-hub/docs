@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/link/ui.slider_align_config.md - the alignment of the control within the parent container
 - api/link/ui.slider_animate_config.md - defines or disables view change animation.
 - api/link/ui.slider_attributes_config.md - sets an hash of HTML input attributes that will be parsed for the Webix input control

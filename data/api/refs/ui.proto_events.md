@@ -2,7 +2,7 @@
 Events
 =======
 
-{{links
+{{api
 - api/link/ui.proto_onafteradd_event.md - fires after adding item to datastore
 - api/link/ui.proto_onafterdelete_event.md - fires after item deleting
 - api/link/ui.proto_onafterload_event.md - fires after xml loading is complete

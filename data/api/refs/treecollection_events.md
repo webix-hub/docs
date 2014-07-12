@@ -2,7 +2,7 @@
 Events
 =======
 
-{{links
+{{api
 - api/link/treecollection_onafteradd_event.md - fires after adding item to datastore
 - api/link/treecollection_onafterdelete_event.md - fires after item deleting
 - api/link/treecollection_onafterload_event.md - fires after xml loading is complete

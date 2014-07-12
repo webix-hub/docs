@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/link/treecollection_data_config.md - an inline dataset that data to the component will be load from.
 - api/link/treecollection_datafeed_config.md - the url to the data source that the component will use to reload data from
 - api/link/treecollection_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)

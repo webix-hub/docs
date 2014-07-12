@@ -97,8 +97,7 @@ template:"#data0#.#data1#"
 columns:[
 	{ id:"data0"},
 	{ id:"data1"}
-] 
-;
+] ;
 ~~~
 
 {{sample 15_datatable/01_loading/01_inline_data.html}}
@@ -146,7 +145,7 @@ The whole template comes in quotation marks and includes:
 ###Template Sample
 
 ~~~js
-template: "<span style="classname">#title#</span>. Shot in #year#. Ranked #rank#"
+template: "<span style='classname'>#title#</span>. Shot in #year#. Ranked #rank#"
 ~~~
 
 *Title*, *year* and *rank* signify repeated values from the dataset. All the titles will be styled with the help of *.classname* CSS class. 'Shot in' and 'Ranked' is usual text 
@@ -199,21 +198,18 @@ JSON data in the dataview
 }}
 
 ~~~js
-
 var big_film_set = [
-	{
-    	"id":1,
-    	"title":"The Shawshank Redemption",
-    	"year":"1994",
-        "votes":"678,79",
-        "rating":"9,2","rank":"1"
-    }
+	{"id":1,"title":"The Shawshank Redemption",
+      "year":"1994","votes":"678,79",
+       "rating":"9,2","rank":"1"
+    }, 
+    { ...}
 ];
 
 webix.ui({       
-	view: "dataview",
- 	template: "<div class='rank'>#rank#.</div><div class='title'>#title#</div>"
-})
+  view: "dataview",
+  template: "<div class='rank'>#rank#.</div><div class='title'>#title#</div>"
+});
 ~~~
 
 {{sample 06_dataview/02_templates/01_jshtml.html}}
@@ -226,10 +222,10 @@ Template may be included inside the **type** parameter. Type applies to each ite
 
 ~~~js
 webix.type(webix.ui.dataview,{
-	name:"typeA",
-    template: "<div class=''>#rank#.</div>
-               <div class='title'>#title#</div>
-               <div class='year'>#year# year</div>",
+    name:"typeA",
+    template: "<div class=''>#rank#.</div>"+
+            "<div class='title'>#title#</div>"+
+            "<div class='year'>#year# year</div>"
 });
 ~~~ 
 2 . Then you define the type **name** as value of template property for this component:
@@ -237,8 +233,8 @@ webix.type(webix.ui.dataview,{
 webix.ui({       
  	view: "dataview",
  	type: "typeA", //name of the new object created in the first step
- ...
-})
+ 	...
+});
 ~~~
 
 {{sample 06_dataview/02_templates/05_named.html }}
@@ -251,18 +247,19 @@ The template may be defined inside an **html-container** and referred to as a va
 
 ~~~html
 <textarea id="template_container" rows="5" cols="60" style="margin-left:20px">
-	<div class='overall'>
-    	<div class='rank'>#rank#.</div>
+   <div class='overall'>
+        <div class='rank'>#rank#.</div>
         <div class='title'>#title#</div>
         <div class='year'>#year#</div>
-    </div>
+   </div>
 </textarea>
     
 <script>
 webix.ui({       
  	view: "dataview",
 	template:"html->template_container", //look at the textarea id
-    ...})
+	...
+});
 <script>
 ~~~
 
@@ -299,9 +296,9 @@ Template may as well contain a **function** that specifies the info to show:
 ~~~js
 ...
 template:function(obj){
-	return "<div class='overall'><div class='rank'>"+obj.rank+".</div>
-            <div class='title'>"+obj.title+"</div>
-            <div class='year'>"+obj.year+" year</div> </div>"
+	return "<div class='overall'><div class='rank'>"+obj.rank+".</div>"+
+      "<div class='title'>"+obj.title+"</div>"+
+      "<div class='year'>"+obj.year+" year</div> </div>";
 }
 ~~~
 
@@ -313,9 +310,8 @@ template:function(obj){
 
 ## XSS Safe templates
 
-By default, templates markers will be replaced with a value of data without any processing. 
-If you have HTML data in the data object, it will be placed in the template.
-In most cases this is an advantage, but sometimes it may be necessary to output such data as text, not an html 
+By default, templates markers will be replaced with a value of data without any processing. If you have an HTML data in the data object, it will placed in the template.
+In most cases this is an advantage, but sometimes it may be necessary to output such data as text, not a html 
 
 - when you have text data with html special chars ( < > & characters ) 
 - when you are not sure is data safe or not ( was entered by the user ) 

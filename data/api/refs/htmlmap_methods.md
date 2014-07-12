@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/htmlmap_addpoly.md - renders html map tag
 - api/htmlmap_addrect.md - renders html map tag
 - api/htmlmap_addsector.md - renders html map tag

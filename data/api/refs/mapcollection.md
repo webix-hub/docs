@@ -2,9 +2,10 @@ MapCollection
 =============
 
 
-{{memo Dummy stub. }}
+dummy stub
 
 {{todo replace with real description. }}
+
 
 
 

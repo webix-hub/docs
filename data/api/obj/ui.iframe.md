@@ -2,7 +2,7 @@
 
 If you want to place some IFRAME content, note that the component provides much more flexible way to do this than a usual layout.
 
-Check (templates)[api/refs/ui.template.md] for example. Check [iframe](desktop__iframe.md) documentation for more detailed description.
+Check (templates)[api/refs/ui.template.md] for example. Check [iframe](desktop/iframe.md) documentation for more detailed description.
 
 ### Constructor
 

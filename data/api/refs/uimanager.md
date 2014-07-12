@@ -9,10 +9,10 @@ Object is created automatically, and can be accessed as webix.UIManager
 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/uimanager_addhotkey.md - adds the hot key handler
 - api/uimanager_canfocus.md - checks whether the view can be focused
 - api/uimanager_destructor.md - Destructor. Destroys the UIManager instance
@@ -26,6 +26,7 @@ Methods
 - api/uimanager_setfocus.md - sets focus to the specified view
 - api/uimanager_setstate.md - restores the specified state
 }}
+
 
 
 

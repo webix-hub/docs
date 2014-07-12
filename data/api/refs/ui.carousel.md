@@ -4,7 +4,7 @@ ui.carousel
 
 {{memo A container control that provides continuous, circular navigation through a set of pictorial content blocks. One block is visible at a time. }}
 
-The control supports any content inside of it. The content blocks can be arranged vertically or horizontally, supplemented or not with the navigation control panel. Check [carousel](desktop__carousel.md) documentation for more detailed description.
+The control supports any content inside of it. The content blocks can be arranged vertically or horizontally, supplemented or not with the navigation control panel. Check [carousel](desktop/carousel.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -24,10 +24,10 @@ The control supports any content inside of it. The content blocks can be arrange
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/navigationbuttons.md">NavigationButtons</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.carousel_adjust.md - adjusts the component to the size of the parent HTML container
 - api/ui.carousel_adjustscroll.md - adjusts scrolling direction to screen mode (vertical or horizontal)
 - api/link/ui.carousel_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
@@ -40,8 +40,7 @@ Methods
 - api/link/ui.carousel_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.carousel_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/ui.carousel_getactiveid.md - gets the id of the current selected item
-- api/ui.carousel_getactiveidindex.md - gets the index of the current active item
-- api/ui.carousel_getactiveindex.md - 
+- api/ui.carousel_getactiveindex.md - gets the index of the current active item
 - api/link/ui.carousel_getchildviews.md - returns child views of the calling component
 - api/link/ui.carousel_getformview.md - returns master form for the input
 - api/ui.carousel_getlayout.md - 
@@ -65,29 +64,20 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
-- api/link/ui.carousel_onafterscroll_event.md - occurs when some webix view has been scrolled
+
+{{api
 - api/link/ui.carousel_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.carousel_ondestruct_event.md - occurs when component destroyed
-- api/link/ui.carousel_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
-- api/link/ui.carousel_onrotate_event.md - occurs on screen rotating
 - api/ui.carousel_onshow_event.md - fires when a new view is shown in carousel
-- api/link/ui.carousel_onswipex_event.md - 
-- api/link/ui.carousel_onswipey_event.md - 
-- api/link/ui.carousel_ontouchend_event.md - 
-- api/link/ui.carousel_ontouchmove_event.md - 
-- api/link/ui.carousel_ontouchstart_event.md - 
 - api/link/ui.carousel_onviewresize_event.md - view size was changed by resizer
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.carousel_animate_config.md - defines or disables view change animation.
 - api/link/ui.carousel_borderless_config.md - used to hide the component borders
 - api/ui.carousel_cols_config.md - 
@@ -104,7 +94,6 @@ Properties
 - api/link/ui.carousel_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.carousel_navigation_config.md - defines navigation parameters
 - api/link/ui.carousel_on_config.md - allows attaching custom handlers to inner events of the component
-- api/ui.carousel_responsive_config.md - 
 - api/ui.carousel_rows_config.md - 
 - api/ui.carousel_scrollspeed_config.md - speed of scrolling ('300ms' by default)
 - api/ui.carousel_type_config.md - 
@@ -114,10 +103,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.carousel_$getsize_other.md - returns the current size of the component
 - api/link/ui.carousel_$height_other.md - current height of the view
 - api/link/ui.carousel_$scope_other.md - scope for resolving event and method names

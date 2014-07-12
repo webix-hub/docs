@@ -83,11 +83,11 @@ webix.ui({
             width:120,
             earlyInit:true
         },
-        editButton:{
-        	..//config
+        markCheckbox:{
+        	view:"checkbox", ...
         }
     },
-    template: "#title#<div style='float:right'>{common.deleteButton()}</div>"
+    template: "#title#<div>{common.markCheckbox()}{common.deleteButton()}</div>"
 });
 ~~~
 
@@ -95,15 +95,29 @@ webix.ui({
 	- *key* is a used-defined **name** of an active area (here *deleteButton*, *editButton*);
     - *value* is its **configuration**. 
 - config of the active element is stored in the **common** property of the housing component and can be derived by its *name*;
-- template for each list item includes these configurations as {common.*name*}.     
+- template for each list item includes these configurations as {common.*name*};
 
-Click and other events are attached to the buttons according to Webix [Event handling](desktop/event_handling.md) pattern:
+If an active content element can have a **variable value** (like [text](desktop/controls.md#text) field, or [checkbox](desktop/controls.md#checkbox)) it can be passed to it within data item properties: 
+
+{{snippet
+Value for 'markCheckbox' active element
+}}
+~~~js
+view:"activeList",
+data:[
+	{ id:5, title:"My Fair Lady", year:1964, rank:5, markCheckbox:1}
+]
+~~~
+
+**Click** and other **events** are attached to the buttons according to Webix [Event handling](desktop/event_handling.md) pattern:
 
 ~~~js
 view:"button", click:function(){...}
 //or
 button.attachEvent("onItemClick", function(){...});
 ~~~
+
+
 
 ##Related articles
 

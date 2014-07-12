@@ -1,7 +1,7 @@
 
 {{memo a two-state button}}
 
-The component is fully customizable and can be used both as a stand-alone view and as a part of the form or toolbar.  Check [toggle](desktop__controls.md#toggle) documentation for more detailed description.
+The component is fully customizable and can be used both as a stand-alone view and as a part of the form or toolbar.  Check [toggle](desktop/controls.md#toggle) documentation for more detailed description.
 
 ### Constructor
 

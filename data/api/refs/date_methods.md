@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/date_add.md - adds the number of date units to date
 - api/date_copy.md - creates date copy
 - api/date_datepart.md - gets the date part of date object

@@ -31,7 +31,7 @@ You can change the request to a synchronous one (sometimes it may be useful).
 
 There exists no possibility to modify background Ajax requests sent by the above pattern. 
 
-However, you can catch Webix [onBeforeAjax](api/onbeforeajax.md) event to modify ANY Ajax request on the page (so be attentive): 
+However, you can catch Webix **onBeforeAjax** event to modify ANY Ajax request on the page (so be attentive): 
 
 {{snippet
 Sending Headers

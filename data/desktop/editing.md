@@ -363,7 +363,7 @@ Two column attributes are mandatory  - **options** or **collection** to interpre
 
 ##Datatable and treetable specificity - live editors
 
-Webix [datatable](datatable/index.md), [treetable](desktop/treetable.md) and [property sheet](desktop/property.md)  can use any of the above mentioned editors in **live** mode and update the same data property is case it's used in another column other than the edited one.
+Webix [datatable](datatable/index.md), [treetable](desktop/treetable.md) and [property sheet](desktop/property_sheet.md)  can use any of the above mentioned editors in **live** mode and update the same data property is case it's used in another column other than the edited one.
 
 ~~~js
 //"rating" is used in both columns while it can be editable ony in the first one

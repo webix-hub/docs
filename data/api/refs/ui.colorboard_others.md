@@ -2,7 +2,7 @@
 Others
 =======
 
-{{links
+{{api
 - api/link/ui.colorboard_$getsize_other.md - returns the current size of the component
 - api/link/ui.colorboard_$height_other.md - current height of the view
 - api/link/ui.colorboard_$scope_other.md - scope for resolving event and method names

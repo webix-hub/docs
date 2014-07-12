@@ -4,7 +4,7 @@ ui.unitlist
 
 {{memo A vertical list of items united into groups according a template. }}
 
-Support for various data template formats, sorting and filtering features. Check [unitlist](desktop__unitlist.md) documentation for more detailed description.
+Support for various data template formats, sorting and filtering features. Check [unitlist](desktop/unitlist.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -23,10 +23,10 @@ Support for various data template formats, sorting and filtering features. Check
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.list.md">ui.list</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/selectionmodel.md">SelectionModel</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/ui.proto.md">ui.proto</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/copypaste.md">CopyPaste</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.unitlist_add.md - adds an item to the store
 - api/link/ui.unitlist_addcss.md - applied CSS class to a component item
 - api/link/ui.unitlist_adjust.md - adjusts the component to the size of the parent HTML container
@@ -109,10 +109,10 @@ of the component
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/link/ui.unitlist_onafteradd_event.md - fires after adding item to datastore
 - api/link/ui.unitlist_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.unitlist_onafterdelete_event.md - fires after item deleting
@@ -160,10 +160,9 @@ Events
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.unitlist_animate_config.md - defines or disables view change animation.
 - api/link/ui.unitlist_autoheight_config.md - height of view will be adjusted to show all items
 - api/link/ui.unitlist_autowidth_config.md - width of view will be adjusted to show all items
@@ -219,10 +218,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.unitlist_$drag_other.md - method called when drag operation initiated
 - api/link/ui.unitlist_$draghtml_other.md - defines how dragged item will look
 - api/link/ui.unitlist_$dragin_other.md - method called when item moved on possible drop landing during dnd

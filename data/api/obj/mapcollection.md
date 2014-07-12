@@ -1,4 +1,4 @@
 
-{{memo dummy stub}}
+dummy stub
 
 {{todo replace with real description }}

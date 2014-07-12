@@ -59,7 +59,7 @@ $$("datatable1").attachEvent("onBlur", function(prev_view){
 });
 ~~~
 
-In addition, Webix **onFocusChange** [global event]((desktop/event_handling.md#globalwebixevents)) is triggered each time focus is shifted from one component to another. The following code retrieves the ID of the view that is 
+In addition, Webix **onFocusChange** [global event](desktop/event_handling.md#globalwebixevents)) is triggered each time focus is shifted from one component to another. The following code retrieves the ID of the view that is 
 in focus now and puts in into the console log. 
 
 

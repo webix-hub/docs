@@ -4,7 +4,7 @@ ui.toggle
 
 {{memo A two-state button. }}
 
-The component is fully customizable and can be used both as a stand-alone view and as a part of the form or toolbar.  Check [toggle](desktop__controls.md#toggle) documentation for more detailed description.
+The component is fully customizable and can be used both as a stand-alone view and as a part of the form or toolbar.  Check [toggle](desktop/controls.md#toggle) documentation for more detailed description.
 
 ### Constructor
 
@@ -23,10 +23,10 @@ The component is fully customizable and can be used both as a stand-alone view a
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.toggle_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.toggle_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.toggle_bind.md - binds components
@@ -63,31 +63,22 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/link/ui.toggle_onafterrender_event.md - occurs immediately after the component has been rendered.
-- api/link/ui.toggle_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.toggle_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.toggle_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.toggle_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.toggle_ondestruct_event.md - occurs when component destroyed
-- api/link/ui.toggle_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
-- api/link/ui.toggle_onrotate_event.md - occurs on screen rotating
-- api/link/ui.toggle_onswipex_event.md - 
-- api/link/ui.toggle_onswipey_event.md - 
-- api/link/ui.toggle_ontouchend_event.md - 
-- api/link/ui.toggle_ontouchmove_event.md - 
-- api/link/ui.toggle_ontouchstart_event.md - 
 - api/link/ui.toggle_onviewresize_event.md - view size was changed by resizer
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.toggle_align_config.md - the alignment of the control within the parent container
 - api/link/ui.toggle_animate_config.md - defines or disables view change animation.
 - api/link/ui.toggle_borderless_config.md - used to hide the component borders
@@ -123,10 +114,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.toggle_$getsize_other.md - returns the current size of the component
 - api/link/ui.toggle_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.toggle_$height_other.md - current height of the view

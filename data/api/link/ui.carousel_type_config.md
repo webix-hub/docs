@@ -1,1 +1,0 @@
-@link: api/ui.layout_type_config.md

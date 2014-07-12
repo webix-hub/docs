@@ -2,7 +2,7 @@
 Others
 =======
 
-{{links
+{{api
 - api/date_startonmonday_other.md - defines whether weeks start on Monday.
 }}
 

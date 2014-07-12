@@ -4,14 +4,14 @@ ui.colorboard
 
 {{memo A color palette. }}
 
-The component presents a div that contains a set of color swatches. Used as a part of the api/refs/ui.colorpicker.md component. Check [colorboard](desktop__colorboard.md) documentation for more detailed description.
+The component presents a div that contains a set of color swatches. Used as a part of the api/refs/ui.colorpicker.md component. Check [colorboard](desktop/colorboard.md) documentation for more detailed description.
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.colorboard_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.colorboard_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.colorboard_bind.md - binds components
@@ -43,10 +43,10 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/ui.colorboard_onafterrender_event.md - occurs immediately after the component has been rendered
 - api/link/ui.colorboard_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/ui.colorboard_onbeforerender_event.md - occurs immediately before the component has been rendered
@@ -63,10 +63,9 @@ Events
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.colorboard_animate_config.md - defines or disables view change animation.
 - api/link/ui.colorboard_borderless_config.md - used to hide the component borders
 - api/ui.colorboard_cols_config.md - sets the number of columns in the palette
@@ -94,10 +93,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.colorboard_$getsize_other.md - returns the current size of the component
 - api/link/ui.colorboard_$height_other.md - current height of the view
 - api/link/ui.colorboard_$scope_other.md - scope for resolving event and method names

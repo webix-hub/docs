@@ -4,14 +4,14 @@ ui.suggest
 
 {{memo A suggest control. }}
 
-Can be used standalone or as editor for other components. Check [suggest](desktop__suggest.md) documentation for more detailed description.
+Can be used standalone or as editor for other components. Check [suggest](desktop/suggest.md) documentation for more detailed description.
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.popup.md">ui.popup</a>, <a href="api/refs/ui.window.md">ui.window</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/movable.md">Movable</a>, <a href="api/refs/modality.md">Modality</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.suggest_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.suggest_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.suggest_bind.md - binds components
@@ -50,31 +50,22 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
-- api/link/ui.suggest_onafterscroll_event.md - occurs when some webix view has been scrolled
+
+{{api
 - api/link/ui.suggest_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.suggest_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.suggest_onhide_event.md - fires when window is hidden
-- api/link/ui.suggest_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
-- api/link/ui.suggest_onrotate_event.md - occurs on screen rotating
 - api/link/ui.suggest_onshow_event.md - fires when window is shown
-- api/link/ui.suggest_onswipex_event.md - 
-- api/link/ui.suggest_onswipey_event.md - 
-- api/link/ui.suggest_ontouchend_event.md - 
-- api/link/ui.suggest_ontouchmove_event.md - 
-- api/link/ui.suggest_ontouchstart_event.md - 
 - api/ui.suggest_onvaluesuggest_event.md - some item selected in the suggest control
 - api/link/ui.suggest_onviewresize_event.md - view size was changed by resizer
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.suggest_animate_config.md - defines or disables view change animation.
 - api/link/ui.suggest_autofit_config.md - adjusts window size to the size of an HTML node	it is initiated in
 - api/link/ui.suggest_autofocus_config.md - sets focus on the window the moment it appears on the page
@@ -116,10 +107,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.suggest_$getsize_other.md - returns the current size of the component
 - api/link/ui.suggest_$height_other.md - current height of the view
 - api/link/ui.suggest_$scope_other.md - scope for resolving event and method names

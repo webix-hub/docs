@@ -1,9 +1,17 @@
 Type Implementation
 ==================
 
-Type property allows for treating each of the component's items separately - specify its dimensions, set CSS class and define [data template](desktop/html_templates.md).
+Type property allows treating each of the component's items separately - specify its **dimensions**, set **CSS** class, define [data template](desktop/html_templates.md)
+and include elements that will be **common** for all the items.
 
-Type is an object that is constructed of parameters you'd like to apply to each item of the component. 
+Type is applicable to the following data components: 
+
+- [dataview](desktop/dataview.md);
+- [list](desktop/list.md) and its modifications:
+	- [grouplist](desktop/grouplist.md);
+    - [unitlist](desktop/unitlist.md).
+
+Webxi **item type** is an object that is constructed of parameters you'd like to apply to each item of the component. 
 
 In the sample below it is shown how you size the dataview itself and how the dimensions of dataview cells are sized. 
 
@@ -27,15 +35,13 @@ At the same time you can define the type separately by using **webix.type constr
 ~~~js
 webix.type(webix.ui.dataview,{
 	name:"typeA",
-	template: "<div class=''>#rank#.</div>
-    <div class='title'>#title#</div>
-    <div class='year'>#year# year</div>",
+	template: "<div class=''>#rank#.</div><div class='title'>#title#</div>",
 	width: 261,
 	height: 90,
 	css: "movie"
 });
 
-webix.ui({       
+webix.ui({
 	view: "dataview",
 	type: "typeA", //name of the new object created in the first step
 	...
@@ -43,5 +49,44 @@ webix.ui({
 ~~~
 
 {{sample 06_dataview/02_templates/05_named.html }}
+
+###Defining Common Elements
+
+Common elements can be included in either of the two ways: 
+
+- **{common.property}** - allows including a constant value for all the items into the template:
+
+~~~js
+webix.ui({
+	view:"list",
+	template:"{common.itemIcon} #rank#. #title#",
+	type:{
+   		itemIcon:"<span class='webix-icon fa-film'></span>"
+	} 
+});    
+~~~
+
+- **{common.method()}** - allows including result of a function call into the template:
+
+~~~js
+webix.ui({
+	view:"list",
+	template:"#rank#. #title# {common.itemYear()}",
+	type:{
+		itemYear:function(obj){
+       		if(obj.year>=2000){
+       	   		return "<span class='newtime'>"+obj.year+"</span>";
+       		} else if(obj.year<1970){
+           		return "<span class='oldtime'>"+obj.year+"</span>";
+       		} else
+           		return obj.year;
+    	}
+	}
+});    
+~~~
+
+The **type** function takes item object as parameter, so all its properties are accessible in it. 
+
+{{sample 05_list/17_advanced_template.html}}
 
 @complexity:2

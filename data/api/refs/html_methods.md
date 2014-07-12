@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/html_addcss.md - adds a CSS class to a DOM node
 - api/html_addmeta.md - adds metadata to the page
 - api/html_addstyle.md - adds a CSS rule to the page
