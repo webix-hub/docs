@@ -67,7 +67,13 @@ webix.ui({
 	view:"toolbar", 
     cols:[
 		{...},
-		{view:"button", id:"update", value:"Save", width:100, click:"$$('myform').save()"} 
+		{
+         view:"button", 
+         id:"update", 
+         value:"Save", 
+         width:100, 
+         click:"$$('myform').save()"
+        } 
 	]   //the new function for the button
 });
 

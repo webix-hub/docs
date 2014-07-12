@@ -1,7 +1,7 @@
 Offline Support
 ==============================
 
-Offline support allows for storing serverside data locally in your browser cache which helps you go on working with data components after refresh when connection to server fails. 
+Offline support allows storing serverside data locally in your browser cache which helps you go on working with data components after refresh when connection to server fails. 
 
 ##Saving the whole page via Cache Manifest
 

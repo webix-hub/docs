@@ -15,7 +15,7 @@ For these needs take the following steps during component initialization:
 - define **editor** type. 
 - define **editAction** (single or double mouseclick, or keyboard action).  
 
-With **[datatable](datatable/index.md)** you should inclide the **editor** property into a column object. 
+With **[datatable](datatable/index.md)** you should include the **editor** property into a column object. 
 
 {{note
 Data **editors** and **edit actions** are described [here](desktop/editing.md);

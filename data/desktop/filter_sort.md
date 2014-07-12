@@ -99,7 +99,12 @@ Tree Filtering
 }}
 ~~~js
 //html input field
-<input type='text' placeholder="type filter criteria here" style='width:250px; margin-left:20px' onkeypress="filter_tree()">
+<input 
+	type='text' 
+    placeholder="type filter criteria here" 
+    style='width:250px; margin-left:20px' 
+    onkeypress="filter_tree()"
+>
 		
 //filtering function
 function filter_tree(){
@@ -144,7 +149,6 @@ contain several items, which is reflected in their data template.
 You can filter data in the component referring to either of its template values using one and the same input field.
 
 ~~~js
-
 webix.ui({
 	rows:[
     	{view:"list", id:"dlist", 
@@ -154,7 +158,6 @@ webix.ui({
       	{view:"text", id:"filter-list" //input for filtering
         }
     ]
-
 })
 
 
@@ -174,7 +177,7 @@ $$("filter-list").attachEvent("onTimedKeypress", function(){
 
 ##Sorting 
 
-Sorting is be enabled by **sort()** function that takes data item, sorting direction and sorting mode as parameters:
+Sorting is enabled by **sort()** function that takes data item, sorting direction and sorting mode as parameters:
 
 - Sorting as component property. Data will be during component initialization:
 

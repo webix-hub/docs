@@ -1,0 +1,1 @@
+@link: api/ui.view_onswipex_event.md

@@ -54,6 +54,7 @@ webix.ajax().post("some.php", { action:"info", id:123 });
 
 
 There are two ways that Ajax can access the server:
+
 - synchronous (before continuing, script waits for the server back reply).
 - asynchronous (script continues page processing and handles reply as it comes).
 
@@ -85,7 +86,7 @@ var xhr = webix.ajax().sync().get("some.php");
 var text = xhr.responseText;
 ~~~
 
-It possible to define two callback methods, one for valid server side response and second for the error response
+It's possible to define two callback methods, one for valid server side response and second for the error response
 ~~~js
 webix.ajax("some.php",{
 	error:function(text, xml, XmlHttpRequest){
@@ -112,7 +113,7 @@ function after_call(text){
 };
 webix.ajax.get("some.php", after_call, { data:"my ajax"});
 ~~~
-Basically - parameter after callback will be accssible as "this" in the callback method
+Basically, the parameter after callback will be accessible as "this" in the callback method
 
 ### Extra headers
 
@@ -163,7 +164,7 @@ webix.ajax.get("some.php", function(text,data){
 });
 ~~~
 
-second parameter of respone can provide you ready to use json object 
+the second parameter of response can provide you with a ready-to-use json object 
 
 #### XML response
 

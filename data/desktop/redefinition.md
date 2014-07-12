@@ -3,7 +3,8 @@ Changing Properties of Components
 
 ###Defining New properties
 
-The properties of Webix components can be changed after initialization each time the **define()** method is applied to them. It take the following arguments:
+The properties of Webix components can be changed after initialization each time the **define()** method is applied to them. 
+It takes the following arguments:
 
 - a **component's property** you want to change;
 - the **new value** for this property as arguments. 
