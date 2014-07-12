@@ -16,12 +16,17 @@ To switch off the default error handler, use the following code:
 webix.detachEvent(webix.debug_load_event);
 ~~~
 
-Global Error Handlers
+Global Error Events
 -----------------------------
 
-You can create your own **loading error hander**:
+You can create your own global **loading error hander** that will catch serverside error responces regardless of the component:
 
+**onAjaxError**(request_obj) - fires when any Ajax request results in an error;
+**onLoadError**(text, xml, xhttp, obj) - fires when an error has happened during loading the data into any component on the page.
+
+Global events are attached to Webix object: 
 ~~~js
+
 webix.attachEvent("onLoadError", function(text, xml, ajax, owner){
       //text - response text
       //xml - response xml object
@@ -32,13 +37,16 @@ webix.attachEvent("onLoadError", function(text, xml, ajax, owner){
 });
 ~~~
 
-as well as attach it to any UI component. 
+Component Error Events
+-----------------
+
+At the same time, each data component features its own **onLoadError** event with the same parameters:
 
 ~~~js
 $$('list').attachEvent("onLoadError", function(text, xml, ajax, owner){ .. }
 ~~~
 
-If needed, you can connect a custom error handler with specified data requests. 
+Furthermore, you can connect a custom error handler to a specific data requests. 
 
 ~~~js
 $$('list').load("data.php",{
