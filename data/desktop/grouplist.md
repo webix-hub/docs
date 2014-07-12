@@ -137,7 +137,7 @@ Hierarchical dataset state
 - [Paging](desktop/paging.md)
 
 {{note
-Note that there's no biult-in possibility to edit data with grouplist. You should create a prototype editlist object beforehand.
+Note that there's no built-in possibility to edit data with grouplist. You should create a prototype editlist object beforehand.
 }}
 
 ###API Reference

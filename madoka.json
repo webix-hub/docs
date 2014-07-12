@@ -30,7 +30,7 @@
 	},
 	"chm_config" :{
 		"samples_http": "http://docs.webix.com/samples/",
-		"chmname" : "webix",
+		"chmname" : "Webix Docs",
         "chmstartpage" : "index.html",
         "chmtitle" : "Webix"
 	}
