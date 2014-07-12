@@ -31,7 +31,7 @@ Specify the component's ID if you are going to work with the dataview later. Opt
 ###Working with Dataview
 
 - [Data Loading](desktop/data_loading.md)
-- [Making HTML Templates](desktop/html_templates.md)
+- [Defining Data Templates](desktop/html_templates.md)
 - [Adding/Deleting Items](desktop/add_delete.md)
 - [Editing Data](desktop/edit.md)
 

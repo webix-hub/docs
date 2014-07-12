@@ -25,7 +25,7 @@ webix.ui({
 ###Working with X-list
 
 - [Data Loading](desktop/data_loading.md). 
-- [Template Making](desktop/template.md).
+- [Defining Data Template](desktop/template.md).
 - [Adding/Deleting Items](desktop/add_delete.md).
 - [Editing Data](desktop/edit.md).
 - [Data Filtering and Sorting](desktop/filter_sort.md)

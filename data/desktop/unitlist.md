@@ -74,7 +74,7 @@ If there're several data items that comply to the unit value criterion, they are
 **Common Functionality:**
 
 - [Data Loading](desktop/data_loading.md). 
-- [Template Making](desktop/html_templates.md).
+- [Defining Data Template](desktop/html_templates.md).
 - [Adding/Deleting Items](desktop/add_delete.md).
 - [Editing Data](desktop/edit.md).
 - [Data Filtering and Sorting](desktop/filter_sort.md)
