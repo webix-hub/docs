@@ -107,6 +107,8 @@ webix.ui({
 $$('contextmenu1').attachTo($$('list'));
 ~~~
 
+<br>
+
 <img src="desktop/contextmenu_list.png" />
 
 {{sample 03_menu/06_context_for_list.html}}

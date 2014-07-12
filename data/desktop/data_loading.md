@@ -118,6 +118,19 @@ With data loading you can use overlay boxes:
 - to inform users that data is beling loaded (in case of big datasets);
 - to inform users that there's no data for this component. 
 
+Webix [datatable](datatable/index.md) features [prebuilt overlay support](datatable/loading_data.md#loadingscreen) while other components should be extended with this functionality:
+
+~~~js
+webix.extend($$(list1), webix.OverlayBox); // on "this" pointer if the method is called within the component
+~~~
+
+Common overlay box methods are as follows: 
+
+- **showOverlay**(text);
+- **hideOverlay()**;
+
+<img src="desktop/list_overlay.png"/>
+
 ~~~js
 webix.ui({
 	view:"list", 
@@ -125,13 +138,25 @@ webix.ui({
 	ready:function(){
 		if (!this.count()){ //if no data is available
 			webix.extend(this, webix.OverlayBox);
-			this.showOverlay("<div style='margin:75px; font-size:20px;'>There is no data</div>");
+			this.showOverlay("<div style='...'>There is no data</div>");
 		}
     }
 });
 ~~~
 
 {{sample 05_list/07_empty_list.html}}
+
+Read more about [Component Copying and Extending](desktop/extend.md) in the dedicated article. 
+
+####Mait Message
+
+In addition, Webix [iFrame](desktop/iframe.md), [htmlform](desktop/htmlform.md) and [template](desktop/template.md) features a **waitMessage** property to draw a loading placeholder: 
+
+~~~js
+{ view:"iframe", id:"frame-body", src:"data/pageA.html", waitMessage:"load" }
+~~~
+
+{{sample 80_docs/iframe.html}}
 
 Data Loading Events
 ------------------------
@@ -149,20 +174,6 @@ mygrid.attachEvent("onAfterLoad", function(){
 ~~~
 
 {{sample 15_datatable/01_loading/05_load_message.html}}
-
-
-Note that **datatable** featurs [prebuilt overlay support](datatable/loading_data.md#loadingscreen) while other components should be extended with this functionality:
-
-~~~js
-webix.extend($$(list1), webix.OverlayBox); // on "this" pointer if the method is called within the component
-~~~
-
-Common overlay box methods are as follows: 
-
-- **showOverlay**(text);
-- **hideOverlay()**;
-
-Read more about [Component Copying and Extending](desktop/extend.md) in the dedicated article. 
 
 {{note
 In case something goes wrong with loading (and sometimes it does!) learn how to handle errors on the client side in the 
