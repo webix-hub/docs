@@ -21,7 +21,7 @@ The component is full of various possibilities: filtering, sorting, pagination, 
 ~~~
 
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/group.md">Group</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/tablepaste.md">TablePaste</a>, <a href="api/refs/datastate.md">DataState</a>, <a href="api/refs/editability.md">EditAbility</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a></div>
+<a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/group.md">Group</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/mapcollection.md">MapCollection</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/tablepaste.md">TablePaste</a>, <a href="api/refs/datastate.md">DataState</a>, <a href="api/refs/editability.md">EditAbility</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a></div>
 
 Methods
 -------
@@ -121,7 +121,7 @@ of the component
 - api/link/ui.datatable_parse.md - loads data to the component from an inline data source
 - api/link/ui.datatable_refresh.md - repaints the whole view or a certain item
 - api/ui.datatable_refreshcolumns.md - refreshes the structure of DataTable
-- api/ui.datatable_refreshfilter.md - 
+- api/ui.datatable_refreshfilter.md - rebuilds list of options in select filter
 - api/ui.datatable_refreshheadercontent.md - refreshes the header row of DataTable
 - api/ui.datatable_registerfilter.md - registers a filter element
 - api/link/ui.datatable_remove.md - removes the specified item from datastore
@@ -171,6 +171,7 @@ Events
 - api/ui.datatable_onafterfilter_event.md - occurs after datatable was filtered
 - api/link/ui.datatable_onafterload_event.md - fires after xml loading is complete
 - api/ui.datatable_onafterrender_event.md - occurs each time after the view is rendered
+- api/link/ui.datatable_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/ui.datatable_onafterselect_event.md - fires after a cell is selected
 - api/link/ui.datatable_onaftersort_event.md - fires after sorting dataset
 - api/ui.datatable_onafterunselect_event.md - fires after a cell is unselected
@@ -203,16 +204,23 @@ Events
 - api/link/ui.datatable_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.datatable_onliveedit_event.md - occurs when data was changed in the editor
 - api/link/ui.datatable_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
+- api/link/ui.datatable_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.datatable_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.datatable_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.datatable_onmouseout_event.md - fires when the mouse was moved out from the specified item
 - api/ui.datatable_onresize_event.md - fires when the width or height of DataTable was changed
+- api/link/ui.datatable_onrotate_event.md - occurs on screen rotating
 - api/ui.datatable_onrowresize_event.md - fires when height of row was changed
 - api/ui.datatable_onscrollx_event.md - fires when the user scrolls the table left or right
 - api/ui.datatable_onscrolly_event.md - fires when the user scrolls the table up or down
 - api/ui.datatable_onselectchange_event.md - fires when selection is changed in DataTable
 - api/ui.datatable_onstructureload_event.md - fires when the structure of DataTable (columns configuration) is initialized
 - api/ui.datatable_onstructureupdate_event.md - fires when structure of datatable was changed ( column added, hidden or reconfigured )
+- api/link/ui.datatable_onswipex_event.md - 
+- api/link/ui.datatable_onswipey_event.md - 
+- api/link/ui.datatable_ontouchend_event.md - 
+- api/link/ui.datatable_ontouchmove_event.md - 
+- api/link/ui.datatable_ontouchstart_event.md - 
 - api/link/ui.datatable_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation
 - api/link/ui.datatable_onvalidationsuccess_event.md - fires after the newlyloaded/added/edited data has passes validation successfully
 - api/link/ui.datatable_onviewresize_event.md - view size was changed by resizer

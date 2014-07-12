@@ -65,11 +65,19 @@ Events
 ------
 
 {{links
-- api/link/ui.textarea_onafterrender_event.md - occurs immediately after the component has been rendered
+- api/link/ui.textarea_onafterrender_event.md - occurs immediately after the component has been rendered.
+- api/link/ui.textarea_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.textarea_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.textarea_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.textarea_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.textarea_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.textarea_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
+- api/link/ui.textarea_onrotate_event.md - occurs on screen rotating
+- api/link/ui.textarea_onswipex_event.md - 
+- api/link/ui.textarea_onswipey_event.md - 
+- api/link/ui.textarea_ontouchend_event.md - 
+- api/link/ui.textarea_ontouchmove_event.md - 
+- api/link/ui.textarea_ontouchstart_event.md - 
 - api/link/ui.textarea_onviewresize_event.md - view size was changed by resizer
 }}
 
@@ -90,7 +98,7 @@ Properties
 - api/link/ui.textarea_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.textarea_height_config.md - sets the height of the component
 - api/link/ui.textarea_hidden_config.md - defines whether the view will be hidden initially
-- api/link/ui.textarea_hotkey_config.md - 
+- api/link/ui.textarea_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/link/ui.textarea_id_config.md - the component ID
 - api/link/ui.textarea_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.textarea_inputpadding_config.md - padding of text in the input

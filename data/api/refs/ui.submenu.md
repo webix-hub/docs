@@ -128,6 +128,7 @@ Events
 - api/link/ui.submenu_onafterdrop_event.md - fires after drag-n-drop was finished
 - api/link/ui.submenu_onafterload_event.md - fires after xml loading is complete
 - api/link/ui.submenu_onafterrender_event.md - occurs immediately after the component has been rendered
+- api/link/ui.submenu_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.submenu_onafterselect_event.md - fires after item was selected
 - api/link/ui.submenu_onaftersort_event.md - fires after sorting dataset
 - api/link/ui.submenu_onbeforeadd_event.md - fires before adding item to datastore
@@ -151,12 +152,19 @@ Events
 - api/link/ui.submenu_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.submenu_onitemrender_event.md - for each item rendering, occurs only for items with custom templates
 - api/link/ui.submenu_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
+- api/link/ui.submenu_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.submenu_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.submenu_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.submenu_onmouseout_event.md - fires when the mouse was moved out from the specified item
 - api/link/ui.submenu_onpaste_event.md - fires when the user presses CTRL+V keys combination
+- api/link/ui.submenu_onrotate_event.md - occurs on screen rotating
 - api/link/ui.submenu_onselectchange_event.md - fires after selection state was changed
 - api/link/ui.submenu_onshow_event.md - fires when window is shown
+- api/link/ui.submenu_onswipex_event.md - 
+- api/link/ui.submenu_onswipey_event.md - 
+- api/link/ui.submenu_ontouchend_event.md - 
+- api/link/ui.submenu_ontouchmove_event.md - 
+- api/link/ui.submenu_ontouchstart_event.md - 
 - api/link/ui.submenu_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation
 - api/link/ui.submenu_onvalidationsuccess_event.md - fires after the newlyloaded/added/edited data has passes validation successfully
 - api/link/ui.submenu_onviewresize_event.md - view size was changed by resizer

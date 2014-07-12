@@ -36,6 +36,7 @@ Mixins
 - api/refs/htmlmap.md - wrapper for image maps
 - api/refs/idspace.md - separate layer of ids
 - api/refs/keysnavigation.md - implements keyboard navigation
+- api/refs/mapcollection.md - dummy stub
 - api/refs/modality.md - sets modality to popup views
 - api/refs/mouseevents.md - adds inner events for all mouse actions
 - api/refs/movable.md - adds ability to move data in component or between components
@@ -116,6 +117,7 @@ Mixins
 - api/refs/htmlmap.md
 - api/refs/idspace.md
 - api/refs/keysnavigation.md
+- api/refs/mapcollection.md
 - api/refs/modality.md
 - api/refs/mouseevents.md
 - api/refs/movable.md

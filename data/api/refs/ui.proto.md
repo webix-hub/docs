@@ -99,6 +99,7 @@ Events
 - api/link/ui.proto_onafterdelete_event.md - fires after item deleting
 - api/link/ui.proto_onafterload_event.md - fires after xml loading is complete
 - api/link/ui.proto_onafterrender_event.md - occurs immediately after the component has been rendered
+- api/link/ui.proto_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.proto_onaftersort_event.md - fires after sorting dataset
 - api/link/ui.proto_onbeforeadd_event.md - fires before adding item to datastore
 - api/link/ui.proto_onbeforedelete_event.md - fires before item deleting
@@ -111,6 +112,13 @@ Events
 - api/link/ui.proto_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.proto_onitemrender_event.md - for each item rendering, occurs only for items with custom templates
 - api/link/ui.proto_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
+- api/link/ui.proto_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
+- api/link/ui.proto_onrotate_event.md - occurs on screen rotating
+- api/link/ui.proto_onswipex_event.md - 
+- api/link/ui.proto_onswipey_event.md - 
+- api/link/ui.proto_ontouchend_event.md - 
+- api/link/ui.proto_ontouchmove_event.md - 
+- api/link/ui.proto_ontouchstart_event.md - 
 - api/link/ui.proto_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation
 - api/link/ui.proto_onvalidationsuccess_event.md - fires after the newlyloaded/added/edited data has passes validation successfully
 - api/link/ui.proto_onviewresize_event.md - view size was changed by resizer

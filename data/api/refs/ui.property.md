@@ -21,7 +21,7 @@ The component can be used for creating various on-page editors. The value field 
 ~~~
 
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/editability.md">EditAbility</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/singlerender.md">SingleRender</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
+<a href="api/refs/editability.md">EditAbility</a>, <a href="api/refs/mapcollection.md">MapCollection</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/singlerender.md">SingleRender</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
 Methods
 -------
@@ -87,7 +87,8 @@ Events
 - api/link/ui.property_onaftereditstart_event.md - fires after edit operation was initiated, editor opened and ready for input
 - api/link/ui.property_onaftereditstop_event.md - fires after edit operation finished
 - api/link/ui.property_onafterload_event.md - fires after xml loading is complete
-- api/link/ui.property_onafterrender_event.md - occurs immediately after the component has been rendered
+- api/link/ui.property_onafterrender_event.md - occurs immediately after the component has been rendered.
+- api/link/ui.property_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.property_onbeforecontextmenu_event.md - fires before the context menu is called in the item area
 - api/link/ui.property_onbeforeeditstart_event.md - fires before edit operation is initiated
 - api/link/ui.property_onbeforeeditstop_event.md - fires before stop edit command is received
@@ -99,9 +100,16 @@ Events
 - api/link/ui.property_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.property_onliveedit_event.md - occurs when data was changed in the editor
 - api/link/ui.property_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
+- api/link/ui.property_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.property_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.property_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.property_onmouseout_event.md - fires when the mouse was moved out from the specified item
+- api/link/ui.property_onrotate_event.md - occurs on screen rotating
+- api/link/ui.property_onswipex_event.md - 
+- api/link/ui.property_onswipey_event.md - 
+- api/link/ui.property_ontouchend_event.md - 
+- api/link/ui.property_ontouchmove_event.md - 
+- api/link/ui.property_ontouchstart_event.md - 
 - api/link/ui.property_onviewresize_event.md - view size was changed by resizer
 }}
 

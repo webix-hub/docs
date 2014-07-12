@@ -67,11 +67,19 @@ Events
 ------
 
 {{links
-- api/link/ui.select_onafterrender_event.md - occurs immediately after the component has been rendered
+- api/link/ui.select_onafterrender_event.md - occurs immediately after the component has been rendered.
+- api/link/ui.select_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.select_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.select_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.select_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.select_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.select_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
+- api/link/ui.select_onrotate_event.md - occurs on screen rotating
+- api/link/ui.select_onswipex_event.md - 
+- api/link/ui.select_onswipey_event.md - 
+- api/link/ui.select_ontouchend_event.md - 
+- api/link/ui.select_ontouchmove_event.md - 
+- api/link/ui.select_ontouchstart_event.md - 
 - api/link/ui.select_onviewresize_event.md - view size was changed by resizer
 }}
 
@@ -92,7 +100,7 @@ Properties
 - api/link/ui.select_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.select_height_config.md - sets the height of the component
 - api/link/ui.select_hidden_config.md - defines whether the view will be hidden initially
-- api/link/ui.select_hotkey_config.md - 
+- api/link/ui.select_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/link/ui.select_id_config.md - the component ID
 - api/link/ui.select_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.select_inputpadding_config.md - padding of text in the input

@@ -67,11 +67,19 @@ Events
 ------
 
 {{links
-- api/link/ui.toggle_onafterrender_event.md - occurs immediately after the component has been rendered
+- api/link/ui.toggle_onafterrender_event.md - occurs immediately after the component has been rendered.
+- api/link/ui.toggle_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.toggle_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.toggle_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.toggle_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.toggle_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.toggle_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
+- api/link/ui.toggle_onrotate_event.md - occurs on screen rotating
+- api/link/ui.toggle_onswipex_event.md - 
+- api/link/ui.toggle_onswipey_event.md - 
+- api/link/ui.toggle_ontouchend_event.md - 
+- api/link/ui.toggle_ontouchmove_event.md - 
+- api/link/ui.toggle_ontouchstart_event.md - 
 - api/link/ui.toggle_onviewresize_event.md - view size was changed by resizer
 }}
 
@@ -91,7 +99,7 @@ Properties
 - api/link/ui.toggle_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.toggle_height_config.md - sets the height of the component
 - api/link/ui.toggle_hidden_config.md - defines whether the view will be hidden initially
-- api/link/ui.toggle_hotkey_config.md - 
+- api/link/ui.toggle_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/link/ui.toggle_id_config.md - the component ID
 - api/link/ui.toggle_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.toggle_inputwidth_config.md - the width of the input area, or a button's text value area.

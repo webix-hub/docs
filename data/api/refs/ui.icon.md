@@ -66,11 +66,19 @@ Events
 ------
 
 {{links
-- api/link/ui.icon_onafterrender_event.md - occurs immediately after the component has been rendered
+- api/link/ui.icon_onafterrender_event.md - occurs immediately after the component has been rendered.
+- api/link/ui.icon_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.icon_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.icon_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.icon_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.icon_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.icon_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
+- api/link/ui.icon_onrotate_event.md - occurs on screen rotating
+- api/link/ui.icon_onswipex_event.md - 
+- api/link/ui.icon_onswipey_event.md - 
+- api/link/ui.icon_ontouchend_event.md - 
+- api/link/ui.icon_ontouchmove_event.md - 
+- api/link/ui.icon_ontouchstart_event.md - 
 - api/link/ui.icon_onviewresize_event.md - view size was changed by resizer
 }}
 
@@ -90,7 +98,7 @@ Properties
 - api/link/ui.icon_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.icon_height_config.md - sets the height of the component
 - api/link/ui.icon_hidden_config.md - defines whether the view will be hidden initially
-- api/link/ui.icon_hotkey_config.md - 
+- api/link/ui.icon_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/link/ui.icon_id_config.md - the component ID
 - api/link/ui.icon_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.icon_inputwidth_config.md - the width of the input area, or a button's text value area.
