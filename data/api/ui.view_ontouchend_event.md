@@ -3,12 +3,12 @@ onTouchEnd
 
 
 @short:
-	 occurs when touch movement is ended
+	 occurs when the touch event is ended
 
 @params:
 
-- start_context			object		object with parameteres of touch movement start
-- current_context		object 		object with parameteres of touch movement end
+- start_context			object		object with parameteres of touch event start
+- current_context		object 		object with parameteres of touch event end
 
 @example:
 
@@ -19,7 +19,7 @@ webix.attachEvent("onTouchEnd",function(start_context,current_context){
 @template:	api_event
 @descr:
 
-Parameters of the start_event_context and current_event_context objects are given below:
+Parameters of the **start_context** and **current_context** objects are given below:
 
 - x - {number} horizontal event position
 - y - {number} vertical event position

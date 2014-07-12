@@ -6,7 +6,12 @@ Calendar
 UI-related <a href="http://webix.com/widget/calendar/" title="webix calendar widget">calendar</a> inherits from [view](desktop/view.md) and allows you to include the Date and Time picker calendar into an app.
 It is a handy and fully interactive tool to pick the necessary time and date when filling a form. The dedicated timepicker allows setting the necessary time that will be displayed below the calendar area.
 
+<br>
+
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/calendar.png"/>
+
+<br>
+
 
 ###Initialization
 
@@ -79,7 +84,7 @@ $$("calendar1").getValue(); // returns the non-formatted date object
 Calendar can be displayed on customer request, for instance when a user wants to pick a date and time to fill the form. For these needs a **[datepicker](desktop/controls.md#datepicker)** control
 is used. Note that here you needn't initialize Calendar - it will appear as soon as you click a datepicker icon. In this case the calendar comes with current date displayed. 
 
-<img src="desktop/datepicker.png"/>
+<img src="desktop/date_picker.png"/>
 
 ~~~js
 webix.ui({
@@ -158,7 +163,7 @@ To disable a certain period in the calendar, which presupposes specific CSS and 
 Use the dedicated **minDate** and **maxDate** properties to limit the period that will be available for clicking and, hence, selecting: 
 
 ~~~js
-{ view:"calendar", minDate:'2012-04-05', maxDate:new Date(2012, 4, 20) }
+{ view:"calendar", minDate:'2014-05-07', maxDate:new Date(2014, 4, 13) }
 ~~~
 
 The dates can be defined either as **date object** or **date string** formatted under the current [locale](desktop/localization.md). Here the default **en-US** parseFormat is used, "%Y-%m-%d". 

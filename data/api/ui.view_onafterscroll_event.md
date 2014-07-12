@@ -11,7 +11,7 @@ onAfterScroll
 
 @example:
 
-webix.attachEvent("onAfterScroll", function(e,f){
+webix.attachEvent("onAfterScroll", function(pos){
 	//your code here
 });
 

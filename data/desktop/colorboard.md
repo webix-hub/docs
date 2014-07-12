@@ -6,8 +6,11 @@ Colorboard
 UI-related colorboard is a tool to get the hex code of a color that you are going to use for [styling](desktop/styling.md). 
 By default, colors are presented in a rainbow-like manner. The detalization level you set manually. 
 
+<br>
+
 <img style="display:block; margin-left:auto;margin-right:auto;"  src="desktop/colorboard.png"/>
 
+<br>
 
 ###Initialization
 
