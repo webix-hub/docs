@@ -314,13 +314,15 @@ Some of them repeat native DOM events.
 ###Page events in touch environment
 
 - **onRotate**(orientation) - fires when screen is rotated;
-- **onAfterScroll**(pos) - fires after page has been scrolled; 
-- **onTouchStart**(pos) - fires when touch starts;
-- **onLongTouch**(pos) - fires on long touch;
-- **onTouchEnd**(pos) - fires when touch ends;
-- **onTouchMove**(pos) - fires on touch move;
-- **onSwipeX**(pos) - fires when horizontal swipe is detected;
-- **onSwipeY**(pos) -fires when vertical swipe is detected.
+- **onAfterScroll**(pos) - fires when some webix view has been scrolled; 
+- **onTouchStart**(context) - fires on touch start;
+- **onLongTouch**(context) - fires on long touch;
+- **onTouchEnd**(start_context, current_context) - fires on touch end;
+- **onTouchMove**(start_context, current_context) - fires on touch movement;
+- **onSwipeX**(start_context, current_context) - fires when a horizontal swipe is detected;
+- **onSwipeY**(start_context, current_context) -fires when a vertical swipe is detected.
+
+The details on Touch Events are given in [the related part of API reference](api/refs/ui.view_events.md)
 
 ###Events connected with serverside requests from the page
 
