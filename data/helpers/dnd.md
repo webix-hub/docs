@@ -111,6 +111,34 @@ Where:
 
 If any of onDrag handlers redefined - there won't be the default processing of the action, code expects that your custom handler will do all job. 
 
+###DnD masters
+
+Master is a component object or a hash code of the control methods. 
+It specifies how element will behave itself in the drop target. 
+
+If you specify the master, it will answer for the appropriate dnd behavior. 
+If you don't do it, the standard dnd processing will occur. 
+
+For the methods, where source and target masters are not provided, you can get them by the api/dragcontrol_getmaster.md method:
+
+~~~js
+var source_master = webix.DragControl.getMaster(source);
+var target_master = webix.DragControl.getMaster(target);
+~~~
+
+Interface-based DnD
+--------------------
+
+You can make an element draggable by adding one of the 2 appropriate interfaces:
+
+- [webix.Movable](api/refs/movable.md)
+
+Low level interface. A component which inherits it can be moved by dnd (to learn how to inherit the interface read the desktop/extend.md article).
+
+- [webix.DragItem](api/refs/dragitem.md)
+
+High level interface. Adds dnd ability to component which uses DataStore (to learn how to inherit the interface read the desktop/extend.md article).
+
 Samples of usage
 ----------------
 

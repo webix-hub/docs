@@ -9,6 +9,7 @@ Events
 - api/link/ui.dataview_onafterdrop_event.md - fires after drag-n-drop was finished
 - api/link/ui.dataview_onafterload_event.md - fires after xml loading is complete
 - api/link/ui.dataview_onafterrender_event.md - occurs immediately after the component has been rendered
+- api/link/ui.dataview_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.dataview_onafterselect_event.md - fires after item was selected
 - api/link/ui.dataview_onaftersort_event.md - fires after sorting dataset
 - api/link/ui.dataview_onbeforeadd_event.md - fires before adding item to datastore
@@ -31,10 +32,17 @@ Events
 - api/link/ui.dataview_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.dataview_onitemrender_event.md - for each item rendering, occurs only for items with custom templates
 - api/link/ui.dataview_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
+- api/link/ui.dataview_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.dataview_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.dataview_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.dataview_onmouseout_event.md - fires when the mouse was moved out from the specified item
+- api/link/ui.dataview_onrotate_event.md - occurs on screen rotating
 - api/link/ui.dataview_onselectchange_event.md - fires after selection state was changed
+- api/link/ui.dataview_onswipex_event.md - 
+- api/link/ui.dataview_onswipey_event.md - 
+- api/link/ui.dataview_ontouchend_event.md - 
+- api/link/ui.dataview_ontouchmove_event.md - 
+- api/link/ui.dataview_ontouchstart_event.md - 
 - api/link/ui.dataview_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation
 - api/link/ui.dataview_onvalidationsuccess_event.md - fires after the newlyloaded/added/edited data has passes validation successfully
 - api/link/ui.dataview_onviewresize_event.md - view size was changed by resizer
@@ -47,6 +55,7 @@ Events
 - api/link/ui.dataview_onafterdrop_event.md
 - api/link/ui.dataview_onafterload_event.md
 - api/link/ui.dataview_onafterrender_event.md
+- api/link/ui.dataview_onafterscroll_event.md
 - api/link/ui.dataview_onafterselect_event.md
 - api/link/ui.dataview_onaftersort_event.md
 - api/link/ui.dataview_onbeforeadd_event.md
@@ -69,10 +78,17 @@ Events
 - api/link/ui.dataview_onitemdblclick_event.md
 - api/link/ui.dataview_onitemrender_event.md
 - api/link/ui.dataview_onloaderror_event.md
+- api/link/ui.dataview_onlongtouch_event.md
 - api/link/ui.dataview_onmousemove_event.md
 - api/link/ui.dataview_onmousemoving_event.md
 - api/link/ui.dataview_onmouseout_event.md
+- api/link/ui.dataview_onrotate_event.md
 - api/link/ui.dataview_onselectchange_event.md
+- api/link/ui.dataview_onswipex_event.md
+- api/link/ui.dataview_onswipey_event.md
+- api/link/ui.dataview_ontouchend_event.md
+- api/link/ui.dataview_ontouchmove_event.md
+- api/link/ui.dataview_ontouchstart_event.md
 - api/link/ui.dataview_onvalidationerror_event.md
 - api/link/ui.dataview_onvalidationsuccess_event.md
 - api/link/ui.dataview_onviewresize_event.md

@@ -131,7 +131,7 @@ Confirmation window is inited by the webix.confirm constructor. It inlcudes
 - **callback** - the function that will be called on button click. The **result** parameter is *true* or *false* depending on your choice (yes or no). If 
 result is positive, the **remove();** function is executed. 
 
-Read moew about messabe boxes in the [corresponding chapter](desktop/message_boxes.md).
+Read more about message boxes in the [corresponding chapter](desktop/message_boxes.md).
 
 {{sample
 80_docs/02_basic_app.html

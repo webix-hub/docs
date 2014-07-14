@@ -16,4 +16,4 @@ $$("mygrid").attachEvent("onDestruct", function(){
 @template:	api_event
 @descr:
 
-Can be used to free memory or delete a related objects
+Can be used to free memory or delete the related objects

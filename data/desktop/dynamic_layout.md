@@ -1,5 +1,8 @@
+Dynamic UI Modification
+=========================
+
 Adding/Removing Views Dynamically
-===============
+---------------------------------
 
 You can add and remove components dynamically after you've already inited layout and set some components. It works for:
 
@@ -60,3 +63,61 @@ Removing a button from the toolbar
 ~~~js
 $$("toolbar").removeView(id);
 ~~~
+
+Rebuilding Application Layout
+--------------------------------
+
+Besides its main purpose - instantiation of Webix component, [webix.ui](helpers/top_ten_helpers.md) method can also be used for changing layout. 
+Thus, it can be used to:
+
+- **redraw layouts** (layout, multiview, form, accordion) that feature arrays in their structure:
+
+~~~js
+webix.ui({
+	view:"form", id:'myform', elements:[...]
+});
+
+//redraw form with new elements
+webix.ui([..new elements..], $$('myform'));
+~~~
+
+- **replace** any existing object:
+
+~~~js
+webix.ui({
+	id:'mylayout',
+	rows:[
+    	{view:'toolbar', ...}
+    	{view:'datatable', id:'mydatatable' ...},
+    ]
+});
+
+//replace datatable
+webix.ui({..new config..}, $$('mylayout'), $$('mydatatable'));
+~~~
+
+In this case **webix.ui()** takes the following **parameters**:
+
+- component configuration (JSON object);
+- parent component ID;
+- ID or index of the component being replaced.
+
+BTW, if you don't specify the ID for the component, it will be generated automatically. You can always get the component ID  by using:
+
+~~~js
+var id = component.config.id;
+~~~
+
+
+Reloading layout from the server
+---------------------------------
+
+To load a new configuration from the server - you can use the following technique:
+
+~~~js
+webix.ajax("config.json", function(text){
+    webix.ui(webix.DataDriver.json.toObject(text), $$('layout_id'));
+});
+~~~
+
+where the config.json contains the new configuration.

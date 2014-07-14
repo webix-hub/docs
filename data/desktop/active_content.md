@@ -10,7 +10,8 @@ Clickable (or in some other way 'active') areas inside components are defined th
 
 <img src="desktop/list_item_css.png"/>
 
-{{sample 05_list/15_active_content.html}}
+{{sample 05_list/14_custom_handlers.html}}
+
 
 In the [list](desktop/list.md) above the task is solved in the following way:
 

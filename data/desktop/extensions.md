@@ -61,6 +61,15 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
 		</td>
 		<td class='topic_description' style="text-align: center; padding:20px;"><a href="desktop/text_editors.md"><img src="desktop/editor_extension.png"></a></td>
 	</tr>
+     <tr>
+		<td id="design" class='topics' style="vertical-align:text-top;">
+		    <h4 id='ui' style="margin-bottom:4px;">
+		        <a href="desktop/mobile_scheduler.md">Mobile Scheduler</a>
+		    </h4>
+		    An integration extension that allows you to add the mobile version of the scheduler to the app.
+		</td>
+		<td class='topic_description' style="text-align: center; padding:20px;"><img src="desktop/mob_calendar.png"></td>
+	</tr>
     <tr>
 		<td id="design" class='topics' style="vertical-align:text-top;">
 		    <h4 id='ui' style="margin-bottom:4px;">
@@ -84,6 +93,7 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
 - desktop/scheduler.md
 - desktop/chart_integration.md
 - desktop/maps.md
+- desktop/mobile_scheduler.md
 - desktop/datasuggest.md
 - desktop/gridsuggest.md
 

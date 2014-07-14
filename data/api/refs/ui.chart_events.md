@@ -8,6 +8,7 @@ Events
 - api/link/ui.chart_onafterdelete_event.md - fires after item deleting
 - api/link/ui.chart_onafterload_event.md - fires after xml loading is complete
 - api/ui.chart_onafterrender_event.md - called after the rendering of calendar is complete.
+- api/link/ui.chart_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.chart_onaftersort_event.md - fires after sorting dataset
 - api/link/ui.chart_onbeforeadd_event.md - fires before adding item to datastore
 - api/link/ui.chart_onbeforecontextmenu_event.md - fires before the context menu is called in the item area
@@ -22,9 +23,16 @@ Events
 - api/link/ui.chart_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.chart_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.chart_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
+- api/link/ui.chart_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.chart_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.chart_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.chart_onmouseout_event.md - fires when the mouse was moved out from the specified item
+- api/link/ui.chart_onrotate_event.md - occurs on screen rotating
+- api/link/ui.chart_onswipex_event.md - 
+- api/link/ui.chart_onswipey_event.md - 
+- api/link/ui.chart_ontouchend_event.md - 
+- api/link/ui.chart_ontouchmove_event.md - 
+- api/link/ui.chart_ontouchstart_event.md - 
 - api/link/ui.chart_onviewresize_event.md - view size was changed by resizer
 }}
 
@@ -34,6 +42,7 @@ Events
 - api/link/ui.chart_onafterdelete_event.md
 - api/link/ui.chart_onafterload_event.md
 - api/ui.chart_onafterrender_event.md
+- api/link/ui.chart_onafterscroll_event.md
 - api/link/ui.chart_onaftersort_event.md
 - api/link/ui.chart_onbeforeadd_event.md
 - api/link/ui.chart_onbeforecontextmenu_event.md
@@ -48,9 +57,16 @@ Events
 - api/link/ui.chart_onitemclick_event.md
 - api/link/ui.chart_onitemdblclick_event.md
 - api/link/ui.chart_onloaderror_event.md
+- api/link/ui.chart_onlongtouch_event.md
 - api/link/ui.chart_onmousemove_event.md
 - api/link/ui.chart_onmousemoving_event.md
 - api/link/ui.chart_onmouseout_event.md
+- api/link/ui.chart_onrotate_event.md
+- api/link/ui.chart_onswipex_event.md
+- api/link/ui.chart_onswipey_event.md
+- api/link/ui.chart_ontouchend_event.md
+- api/link/ui.chart_ontouchmove_event.md
+- api/link/ui.chart_ontouchstart_event.md
 - api/link/ui.chart_onviewresize_event.md
 
 
