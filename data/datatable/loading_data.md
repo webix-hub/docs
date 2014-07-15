@@ -144,9 +144,13 @@ Static loading from db. Server-side code
    $data->render_table("packages_plain","id","package, size, architecture, section");
 ?>
 ~~~
+
+<br>
+
 {{snippet
 Static loading from db. Client-side code.
 }}
+
 ~~~js
 grid = new webix.ui({
     ...
@@ -175,6 +179,8 @@ grid = new webix.ui({
 	url:"data/data_dyn.php"
 });    
 ~~~
+
+<br>
 
 {{snippet
 Dynamic loading from db. Server-side code

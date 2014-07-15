@@ -6,9 +6,9 @@ Version 1.9
 - Hotkey for inputs [Check details](desktop/uimanager.md#keyboardseventsandhotkeys).
 - HTML links in menu [Check details](desktop/menu.md#workingwithmenuitems)
 
-###Full list of changes and fixes
+<h3 id="changes">Full list of changes and fixes</h3>
 
-**New functionbality**
+**New functionality**
 
 - webix.onAjaxError event
 - ability to set default calendar sizes in skin

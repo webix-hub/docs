@@ -125,7 +125,7 @@ Using filters in the header
 ~~~js
 columns:[
 	{ id:"title", header:["Film title",{ content:"textFilter"}]},
-	{ id:"year",  header:"Year"},
+	{ id:"year",  header:"Released"},
 	{ id:"votes", header:"Votes"}
 ]
 ~~~

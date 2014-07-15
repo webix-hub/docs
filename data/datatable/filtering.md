@@ -49,26 +49,10 @@ Filter collection can be extended with custom elements. If you need your own fil
     
 Built-in filter is set by property **content** of the **header** attribute. Note, to add a filter to the header(footer), the header(footer) must be specified as array.
 
+**Text filter**
 
-<table class="list">
-	<caption class="caption">
-		<strong>Table 1 </strong>
-		Built-in filters
-	</caption>
-    <thead>
-	<tr>
-		<th align="left">
-			<strong>Filter type</strong>
-		</th>
-		<th align="left">
-			<strong>Code example</strong>
-		</th>
-	</tr>
-	</thead>
-	<tbody>
-	<tr>
-		<td><img src="datatable/text_filter.png" /></td>
-		<td>
+<img src="datatable/text_filter.png"/> 
+		
 ~~~js
 columns:[
 	{id:"title",header:[
@@ -78,11 +62,13 @@ columns:[
 	{id:"votes",header:"Votes"}
 ]
 ~~~
-    </td>
-	</tr>
-	<tr>
-		<td><img src="datatable/select_filter.png" /></td>
-		<td>
+
+<br>
+
+**Select filter**
+
+<img src="datatable/select_filter.png"/>
+		
 ~~~js
 columns:[
 	{id:"title", header:[
@@ -91,35 +77,38 @@ columns:[
 	{id:"year", header:"Released"},
 	{id:"votes", header:"Votes"}]
 ~~~
-        </td>
-	</tr>
-    <tr>
-		<td><img src="datatable/numeric_filter.png" /></td>
-		<td>
+
+<br>
+
+**Numeric filter**
+
+<img src="datatable/numeric_filter.png"/>
+		
 ~~~js
 columns:[
 	{id:"title", header:"Film title"},
 	{id:"year", header:[
      "Released",{content:"numberFilter"}]
     },
-	{id:"votes", header:"Votes"}]
+	{id:"votes", header:"Votes"}
+]
 ~~~
-    	</td>
-	</tr>
-    <tr>
-		<td><img src="datatable/date_filter.png" /></td>
-		<td>
+
+<br>
+
+**Date filter**
+
+<img src="datatable/date_filter.png"/>
+		
 ~~~js
 columns:[
 	{id:"title",header:"Film title"},
 	{id:"year", header:[
       "Released",{ content:"dateFilter"}],
-      format:webix.i18n.dateFormatStr}]
+      format:webix.i18n.dateFormatStr}
+]
 ~~~
-        </td>
-	</tr>
-	</tbody>
-</table>
+
 
 
 

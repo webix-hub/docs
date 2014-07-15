@@ -23,14 +23,19 @@ Styling the whole table
 ~~~html
 <style>
 	.my_style .webix_hcell{
-		background:#444;
+		background:#009966;
 		color:white;
 		font-weight:bold;
+
 	}
 	.my_style .webix_column{
 		font-style:italic;
-		background:orange !important;
+		background:#ddFFdd;
 	}
+    .my_style .webix_column > div{
+        border-color:#ddd;
+    }
+
 </style>
  
 <script>

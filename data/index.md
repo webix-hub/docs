@@ -3,15 +3,17 @@ Start
 
 
 <div id="get_started">
-    <h2>Meet Webix 1.9</h2>
+    <h2>Meet Webix 1.9!</h2>
     <img src="front1.png">
     <p>
-    New version brings you a variety of new features:
+    The new version of the library includes:
     </p>
     <ul>
-      	<li><a href="desktop/basic_tasks.md">Feature 1</a></li>
-        <li><a href="desktop/basic_tasks.md">Feature 2</a></li>
-        <li><a href="desktop/basic_tasks.md">Feature 3</a> </li>
+      	<li><a href="desktop/uimanager.md#keyboardseventsandhotkeys">Hotkeys for controls</a></li>
+        <li><a href="desktop/menu.md#workingwithmenuitems">Extended Menu functionality</a></li>
+        <li>Support for day cells customization in Calendar</li>
+        <li>Focus style for buttons in flat and compact skins</li>
+        <li>New API methods for DataTable component</li>
     </ul>
     <p> and <a href="desktop/whats_new_1_9.md">much more...</a></p>
 </div>
