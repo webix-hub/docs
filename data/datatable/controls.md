@@ -163,7 +163,7 @@ The function will take 3 parameters and be called for each data item:
 - **common** - (*object*) the predefined radio template
 - **value** - (*boolean*) the value of the radio. *true*, if the radio is checked. Otherwise, *false*. Initially, the parameter is *null* and take the boolean value just when you check the radio.
 
-**Please, pay your attention at a very important thing - the 'webix_table_radio' css class**.<br> This very class forces a standard DIV to behave as a radio. Therefore, defining a look of your radio don't forget to 
+**Please, pay your attention to a very important thing - the 'webix_table_radio' css class**.<br> This very class forces a standard DIV to behave as a radio. Therefore, defining a look of your radio don't forget to 
 apply the 'webix_table_radio' css class to it.
 
 

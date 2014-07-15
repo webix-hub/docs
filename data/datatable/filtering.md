@@ -1,4 +1,4 @@
-DataTable Filtering
+ DataTable Filtering
 ===================
 The library provides ability to <a href="http://webix.com/widget/datatable/" title="filter in datatable widget">filter data</a> on client-side by one or several criteria using for this built-in or customly created filters.
 
@@ -63,6 +63,10 @@ columns:[
 ]
 ~~~
 
+{{sample
+15_datatable/03_filtering/01_builtin.html
+}}
+
 <br>
 
 **Select filter**
@@ -77,6 +81,10 @@ columns:[
 	{id:"year", header:"Released"},
 	{id:"votes", header:"Votes"}]
 ~~~
+
+{{sample
+15_datatable/03_filtering/01_builtin.html
+}}
 
 <br>
 
@@ -94,6 +102,10 @@ columns:[
 ]
 ~~~
 
+{{sample
+15_datatable/03_filtering/09_numeric.html
+}}
+
 <br>
 
 **Date filter**
@@ -109,14 +121,21 @@ columns:[
 ]
 ~~~
 
+{{sample
+15_datatable/03_filtering/10_date.html
+}}
 
-
+<br>
 
 Note, each time you start to type text in such a filter, DataTable invokes the [filterByAll()](api/ui.datatable_filterbyall.md) method. Each time the method is called, all data is re-filtered (previous results aren't preserved).
 
 ###AND logic
 By default, when you specify filters in several columns, DataTable applies AND logic to them, i.e. the table will display just records that meet 
 all criteria at once.
+
+{{sample
+15_datatable/03_filtering/02_and.html
+}}
 
 
 ###OR logic

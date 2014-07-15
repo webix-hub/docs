@@ -115,7 +115,6 @@ The part covers the following topics:
 To redefine the text displaying for the dragging item(s), you should use the api/dragitem_onbeforedrag_event.md event.<br> The desired template is set through the **context.html** property. 
 You can use any HTML specifying the value for the property.
 
-<img src="datatable/custom_text_dnd.png"></img>
 
 {{snippet
 Displaying the number of the dragging items
@@ -139,6 +138,9 @@ dtable.attachEvent("onBeforeDrag", function(context, ev){
 ~~~
 
 - The text of the dragged items (in case of multiselect selection):
+
+<img src="datatable/custom_text_dnd.png"></img>
+
 {{snippet
 Displaying the title property of dragged items
 }}
