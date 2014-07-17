@@ -44,7 +44,11 @@ this new data.
 <input type="button" name="submit" value="Submit" onclick='$$("htmlform1").save()'/>
 ~~~
 
+<br>
+
 <img src="desktop/data_binding.png" />
+
+<br>
 
 {{sample 11_htmlform/05_htmlform_binding.html }}
 

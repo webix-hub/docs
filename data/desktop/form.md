@@ -5,8 +5,11 @@ Form
 Any form is a means of getting an information from users. It contains input fields and select components like checkboxes,
 radiobuttons alongside with submit/cancel buttons depending on the situation. Find them all in our [Controls Guide](desktop/controls.md).
 
+<br>
+
 <img  style="display:block; margin-left:auto;margin-right:auto;"   src="desktop/basic_form.png"/>
 
+<br>
 
 ###Initialization
 Ui-related form inherits from [view](desktop/view.md). It resembles [layout](desktop/layout.md) very much as it is divided into columns and rows where controls are put. 
@@ -25,7 +28,7 @@ webix.ui({
   	width:300,
 	elements:[
 		{ view:"text", label:"Email"},
-		{ view:"text", label:"Password"},
+		{ view:"text", type:"password", label:"Password"},
 		{ margin:5, cols:[
 			{ view:"button", value:"Login" , type:"form" },
 			{ view:"button", value:"Cancel" }
@@ -72,7 +75,8 @@ Form elements are placed into different **row arrays** where the first row is a 
 {view:"form", elements: [
 	{ rows:[ 
 		{ template:"Alpha fields", type:"section"},
-		{ view:"text", label:"Alpha 1", value:'' }]
+		{ view:"text", label:"Alpha 1", value:'' },
+        { view:"text", label:"Alpha 2", value:'' }]
     },
 	{ rows:[ 
 		{ template:"Beta fields", type:"section"},
@@ -81,7 +85,11 @@ Form elements are placed into different **row arrays** where the first row is a 
 ]} 
 ~~~
 
+<br>
+
 <img src="desktop/form_sections.png">
+
+<br>
 
 {{sample 13_form/01_controls/18_sections.html}}
 
@@ -100,7 +108,11 @@ Form elements are placed into different **row arrays** where the first row is a 
 ]}
 ~~~
 
+<br>
+
 <img src="desktop/form_fieldset.png">
+
+<br>
 
 {{sample 13_form/05_extras/01_fieldset.html }}
             

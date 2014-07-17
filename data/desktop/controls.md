@@ -226,7 +226,7 @@ Note that if you set **min** and **max** parameters, the initial conreol value s
 
 ##Datepicker {#datepicker}
 
-<img src="desktop/datepicker.png"/>
+<img src="desktop/date_picker.png"/>
 
 {{sample 13_form/01_controls/13_datepicker.html }}
 
@@ -396,10 +396,10 @@ Ui-related radio is a block of severel items with the possibility to check only 
 Radio Initialization
 }}
 ~~~js
-	{ view:"radio", label:"Branch", value:1, options:[
-				{  id:1, value:"Master" }, //the initially selected item
-				{  id:2, value:"Branch" }
-                
+{view:"radio", label:"Branch", value:1, options:[
+	{ id:1, value:"Master" }, //the initially selected item
+	{ id:2, value:"Branch" }
+]}              
 //short form for options array
  {view:"radio", options:["Master", "Branch"]}
 ~~~
@@ -420,7 +420,7 @@ Radio Initialization
 Webix radio control is based on standard HTML radio  yet some skins use a FontAwesome icon to render it. To switch to a standard HTML radio, use **customRadio** property: 
 
 ~~~js
-{ view:"radio", customRadio:false } 
+{view:"radio", customRadio:false} 
 ~~~
 
 [Controls Common Functionality](desktop/controls_guide.md)
@@ -440,12 +440,12 @@ Richselect Initialization
 }}
 //full form
 ~~~js
-{ view:"richselect",
+{view:"richselect",
 	id: "list2", label: 'richselect', 
     value:1, yCount:"3", options:[ 
-			{ id:1, value:"One"   }, // the initially selected item
-			{ id:2, value:"Two"   }, 
-			{ id:3, value:"Three" }]
+		{id:1, value:"One"}, // the initially selected item
+		{id:2, value:"Two"}, 
+		{id:3, value:"Three"}]
 }
 ...   
 //short  form for options array
@@ -527,10 +527,10 @@ Select Initialization
 }}
 ~~~js
 // full form
-{ view:"select", label:"Branch", value:1, options:[
-				{ id:1, value:"Master" }, // the initially selected value
-				{ id:2, value:"Release" }], 
-         labelAlign:'right' 
+{view:"select", label:"Branch", value:1, options:[
+	{id:1, value:"Master" }, // the initially selected value
+	{id:2, value:"Release" }
+  ], labelAlign:'right' 
 }
 
 //short form 
@@ -557,8 +557,8 @@ Select Initialization
 ..... 
 
 options:[
-	{ id:1, value:"Here can be some long multi line content <ul><li>item1 <li> item 2</ul>" }, 
-	{ id:2, value:"Papai"  }
+	{id:1,value:"Some long multi line content here<ul><li>item1</li><li>item 2</li></ul>"}, 
+	{id:2,value:"Papai" }
 ]
 ~~~
 
@@ -581,9 +581,9 @@ Segmented Initialization
 }}
 ~~~js
 {view:"segmented", multiview:true, value:1, options:[
-				 { id:"1", value:"Section A" }, // the initially selected segment
-				 { id:"2", value:"Section B" }, 
-				 { id:"3", value:"Section C" }]
+	{ id:"1", value:"Section A" }, // the initially selected segment
+	{ id:"2", value:"Section B" }, 
+	{ id:"3", value:"Section C" }]
 }
 
 //short form for options array
@@ -702,12 +702,12 @@ Tabbar Initialization
 }}
 ~~~js
 {view:"tabbar", id:'tabbar', value: 'listView', multiview:true, options: [
-      { value: 'List', id: 'listView'},
-      { value: 'Form', id: 'formView'},
-      { value: 'Empty', id: 'emptyView'}
-   ]
+	{ value: 'List', id: 'listView'},
+    { value: 'Form', id: 'formView'},
+    { value: 'Empty', id: 'emptyView'}]
 }
 ~~~
+
 ####Main properties
 
 - **multiview** (boolean)- if *true*, it links tabs to multiview cells; 
@@ -739,8 +739,8 @@ Text Initialization
 }}
 
 ~~~js
-	{ view:"text", value:'dummy@email.com', label:"Email", labelAlign:'right'},
-	{ view:"text", type:'password', value:'123pass', label:"Password", labelAlign:'right'}
+{view:"text", value:'dummy@email.com', label:"Email", labelAlign:'right'},
+{view:"text", type:'password', value:'123pass', label:"Password", labelAlign:'right'}
 ~~~
 
 ####Main properties
@@ -811,9 +811,9 @@ Toggle initialization
 }}
 ~~~js
 { view:"toggle", type:"iconButton", name:"s4", 
-			offIcon:"pause", 
-			onIcon:"play",
-			offLabel:"Disabled", onLabel:"Enabled" },
+	offIcon:"pause", 
+	onIcon:"play",
+	offLabel:"Disabled", onLabel:"Enabled" },
 ~~~
 
 ####Main properties
