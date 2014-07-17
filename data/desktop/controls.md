@@ -96,7 +96,7 @@ Webix checkbox control is based on standard HTML checkbox  yet some skins use a 
 
 ##Colorpicker {#colorpicker}
 
-<img src="desktop/colorpicker.png"/>
+<img src="desktop/colorboard.png"/>
 
 {{snippet
 Colorpicker Initialization
