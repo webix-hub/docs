@@ -557,8 +557,8 @@ Select Initialization
 ..... 
 
 options:[
-	{id:1,value:"Some long multi line content here<ul><li>item1</li><li>item 2</li></ul>"}, 
-	{id:2,value:"Papai" }
+	{id:1,value:"Some long multiline content<ul><li>item1</li><li>item 2</li></ul>"}, 
+	{id:2,value:"Papaya" }
 ]
 ~~~
 
@@ -635,7 +635,9 @@ Slider Initialization
 - **step** (number) - distance to the next selectable value (1 by default);
 - **min** (number) - minimal value of a slider control. 0 by default. 
 - **max** (number) - maximum value of the slider control. 100 by default.
-- **title** (template, function) - text label over the slider marker {{sample 13_form/05_extras/04_slider_step.html}}.
+- **title** (template, function) - text label over the slider marker 
+
+{{sample 13_form/05_extras/04_slider_step.html}}.
 
 {{note
 Note that if you set **min** and **max** parameters, the initial control **value** should be within their range.
@@ -653,7 +655,7 @@ For complex title that **changes its text** depending on the current value, defi
 
 ~~~js
 {view:"slider", title:function(obj){
-	var text = obj.value > 20 ? "Minimum level reached. " : ""; //ttitle for values over 20
+	var text = obj.value > 20 ? "Minimum level reached. " : ""; //title for values over 20
 	return text + "Value: "+ obj.value;} //title for other values
 }
 ~~~
