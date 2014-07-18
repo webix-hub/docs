@@ -1,7 +1,8 @@
 Form Controls
 =============
 
-##Button {#button}
+Button {#button}
+-----------------
 
 **Standard Buttons**
 
@@ -690,7 +691,7 @@ The new title is set with the help of **define()** method while current value of
 
 ##Tabbar {#tabbar}
 
-<img src="desktop/tabbar_types.png" />
+<img src="desktop/tabbar.png" />
 
 {{sample 02_toolbar/02_tabbar.html }} 
 <br>
@@ -842,14 +843,12 @@ Toggle type is defined by the **type** property. If it isn't defined, a standard
 - **next** for a  button with a right-hand arrow;
 - **prev**for a button with a left-handed arrow.
 
+**Image Toggle types**
+
 <table class="list" cellspacing="0" cellpadding="5" border="0">
-	<caption class="caption">
-		Image Toggle types
-	</caption>
-	<tbody>
 	<tr>
 		<td> <code> type:"iconButton" </code> </td>
-		<td style="text-align:center;"><img src="desktop/toggle_iconButton.png"/></td>
+		<td style="text-align:center;"><img src="desktop/toggle_iconbutton.png"/></td>
 	</tr>
 	<tr>
 		<td> <code> type:"image" </code> </td>
@@ -867,7 +866,6 @@ Toggle type is defined by the **type** property. If it isn't defined, a standard
 		<td> <code> type:"imageButtonTop" </code> </td>
 		<td style="text-align:center;"><img src="desktop/toggle_imageButtonTop.png"/></td>
 	</tr>
-	</tbody>
 </table>
 
 {{sample 13_form/01_controls/14_toggle_images.html}}
