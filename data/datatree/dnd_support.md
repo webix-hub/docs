@@ -84,7 +84,6 @@ Information stated in the [Common part](#common) is enough in most cases. The cu
 
 The part will describe the next things:
 
-- Drag marker
 - [Custom text of the dragging items](#custom_text);
 - [Denying dragging specific items](#denying_dragging);
 - [Custom dropping behaviour](#custom_dropping);
@@ -111,7 +110,7 @@ tree.attachEvent("onBeforeDrag", function(context, ev){
 }}
 
 ###Denying dragging specific items {#denying_dragging}
-To deny dragging specific items you can use the api/link/ui.tree_onbeforedrag_event.md event and return *false* each time you want to block the operation..
+To deny dragging specific items you can use the api/link/ui.tree_onbeforedrag_event.md event and return *false* each time you want to block the operation.
 
 {{snippet
 Denying dragging even items
