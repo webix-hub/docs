@@ -7,8 +7,11 @@ Multiview  helps you rationally use space on the page by placing different views
 
 Multiview inherits from [layout](desktop/layout.md).
 
+<br>
+
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/multiview.png"/>
 
+<br>
 
 ###Initialization
 {{snippet

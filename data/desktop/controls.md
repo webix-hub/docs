@@ -856,15 +856,15 @@ Toggle type is defined by the **type** property. If it isn't defined, a standard
 	</tr>
 	<tr>
 		<td> <code> type:"imageButton" </code> </td>
-		<td style="text-align:center;"><img src="desktop/toggle_imageButton.png"/></td>
+		<td style="text-align:center;"><img src="desktop/toggle_imagebutton.png"/></td>
 	</tr>
 	<tr>
 		<td> <code> type:"imageTop" </code> </td>
-		<td style="text-align:center;"><img src="desktop/toggle_imageTop.png"/></td>
+		<td style="text-align:center;"><img src="desktop/toggle_imagetop.png"/></td>
 	</tr>
 	<tr>
 		<td> <code> type:"imageButtonTop" </code> </td>
-		<td style="text-align:center;"><img src="desktop/toggle_imageButtonTop.png"/></td>
+		<td style="text-align:center;"><img src="desktop/toggle_imagebuttontop.png"/></td>
 	</tr>
 </table>
 

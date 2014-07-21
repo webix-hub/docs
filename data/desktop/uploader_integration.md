@@ -4,7 +4,11 @@ Uploader and Form Integration
 The purpose of any form is to collect data from users. This library provides UI [Form](desktop/form.md) and [Htmlform](desktop/htmlform.md) components with lots of 
 [controls](desktop/controls.md) while the [uploader](desktop/file_upload.md) component helps get user files (text documents, pictures, etc.)
 
+<br>
+
 <img src="desktop/form_uploader.png">
+
+<br>
 
 {{sample 21_upload/07_form.html}}
 
