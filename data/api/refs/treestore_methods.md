@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/treestore_add.md - adds a new item to the tree
 - api/treestore_changeid.md - changes the id of a data item
 - api/treestore_clearall.md - removes all items from the component

@@ -1,13 +1,13 @@
-DataTable Filtering
+ DataTable Filtering
 ===================
-The library provides ability to filter data on client-side by one or several criteria using for this built-in or customly created filters.
+The library provides ability to <a href="http://webix.com/widget/datatable/" title="filter in datatable widget">filter data</a> on client-side by one or several criteria using for this built-in or customly created filters.
 
 
 Filters in the header
 --------------------------
 You can define built-in filter in the header or footer of a column. The following types of filters are available:
 
-- **textFilter** - text filter. Retrieves values which contain mask defined through text field.
+- **textFilter** - text filter. Retrieves values that contain mask defined through text field.
 - **selectFilter** - select filter. Retrieves values which contain mask defined through dropdown list of possible values.
 - **numberFilter** - text filter used for number columns. Retrieves values which contain mask defined through text field. Allows users to use the following comporison operators in it:
 	- '=' - equal to;
@@ -16,54 +16,63 @@ You can define built-in filter in the header or footer of a column. The followin
 	- '<=' - less or equal;
 	- '>=' - greater or equal.
 
-- **dateFilter** - text filter used for date columns. Retrieves values which contain mask defined through text field.<br> Allows users to use the following comporison operators in it:
+- **dateFilter** - text filter used for date columns. Retrieves values that contain mask defined through text field.<br> Allows users to use the following comporison operators in it:
 	- '>' - greater than;
 	- '<' - less than;
 	- '<=' - less or equal;
 	- '>=' - greater or equal.
-	
+    
 There are 3 ways you can input data to the  **dateFilter**:
 
 1. '*yyyy*' - 4-digits year;
 2. '*mm.yyyy*' - 2-digits month and 4-digits year separated by point;
 3. '*dd.mm.yyyy*' - 2-digits day, 2-digits month and 4-digits year separated by points
+
+- **serverFilter** - text filter used for data column. Retrieves values that contain mask defined through text field and sends a request to server to return filtered dataset. <br> Request parameters include: 
+	- *count* - the number of data records to return. Its value depends on [dynamic loading](desktop/dynamic_loading.md) parameters, if any;
+    - *start* - ID of the data record to start from (0 - beginning). Its value depends on [dynamic loading](desktop/dynamic_loading.md) parameters, if any;
+	- *filter[column_name]* - name of the column (in brackets) for which filtering is performed. Its value is a text value you've entered in the filter input. 
+
+If **serverside sorting** is enabled, data is both filtered and sorted on server. 
+
+All of these filters are applied in the same way, through header **content** property:
+
+~~~js
+{ id:"title", header:[{content:"textFilter"}, "Title"] }
+~~~
+
+{{note
+Filter collection can be extended with custom elements. If you need your own filter (or smth) for header content, go [here](#customheadercontent) for the instructions. 
+}}
+
+###Defining header filters
     
 Built-in filter is set by property **content** of the **header** attribute. Note, to add a filter to the header(footer), the header(footer) must be specified as array.
 
+**Text filter**
 
-
-<table class="list">
-	<caption class="caption">
-		<strong>Table 1 </strong>
-		Built-in filters
-	</caption>
-    <thead>
-	<tr>
-		<th align="left">
-			<strong>Filter type</strong>
-		</th>
-		<th align="left">
-			<strong>Code example</strong>
-		</th>
-	</tr>
-	</thead>
-	<tbody>
-	<tr>
-		<td><img src="datatable/text_filter.png" /></td>
-		<td>
+<img src="datatable/text_filter.png"/> 
+		
 ~~~js
 columns:[
 	{id:"title",header:[
      "Film title",{content:"textFilter"}]
     },
 	{id:"year",header:"Released"},
-	{id:"votes",header:"Votes"}]
+	{id:"votes",header:"Votes"}
+]
 ~~~
-    </td>
-	</tr>
-	<tr>
-		<td><img src="datatable/select_filter.png" /></td>
-		<td>
+
+{{sample
+15_datatable/03_filtering/01_builtin.html
+}}
+
+<br>
+
+**Select filter**
+
+<img src="datatable/select_filter.png"/>
+		
 ~~~js
 columns:[
 	{id:"title", header:[
@@ -72,43 +81,61 @@ columns:[
 	{id:"year", header:"Released"},
 	{id:"votes", header:"Votes"}]
 ~~~
-        </td>
-	</tr>
-    <tr>
-		<td><img src="datatable/numeric_filter.png" /></td>
-		<td>
+
+{{sample
+15_datatable/03_filtering/01_builtin.html
+}}
+
+<br>
+
+**Numeric filter**
+
+<img src="datatable/numeric_filter.png"/>
+		
 ~~~js
 columns:[
 	{id:"title", header:"Film title"},
 	{id:"year", header:[
      "Released",{content:"numberFilter"}]
     },
-	{id:"votes", header:"Votes"}]
+	{id:"votes", header:"Votes"}
+]
 ~~~
-    	</td>
-	</tr>
-    <tr>
-		<td><img src="datatable/date_filter.png" /></td>
-		<td>
+
+{{sample
+15_datatable/03_filtering/09_numeric.html
+}}
+
+<br>
+
+**Date filter**
+
+<img src="datatable/date_filter.png"/>
+		
 ~~~js
 columns:[
 	{id:"title",header:"Film title"},
 	{id:"year", header:[
       "Released",{ content:"dateFilter"}],
-      format:webix.i18n.dateFormatStr}]
+      format:webix.i18n.dateFormatStr}
+]
 ~~~
-        </td>
-	</tr>
-	</tbody>
-</table>
 
+{{sample
+15_datatable/03_filtering/10_date.html
+}}
 
+<br>
 
 Note, each time you start to type text in such a filter, DataTable invokes the [filterByAll()](api/ui.datatable_filterbyall.md) method. Each time the method is called, all data is re-filtered (previous results aren't preserved).
 
 ###AND logic
 By default, when you specify filters in several columns, DataTable applies AND logic to them, i.e. the table will display just records that meet 
 all criteria at once.
+
+{{sample
+15_datatable/03_filtering/02_and.html
+}}
 
 
 ###OR logic
@@ -272,7 +299,7 @@ grid = new webix.ui({  //component
     ]
 });
 
-grid.setFilter(document.getElementById("myfilter"), 
+grid.registerFilter(document.getElementById("myfilter"), 
 	{ columnId:"title" }, //column to filter
 	{
 		getValue:function(node){
@@ -289,7 +316,6 @@ grid.setFilter(document.getElementById("myfilter"),
 ###Custom Filtering with filter() method
 
 In addition, the library gives you method [filter()](api/link/ui.datatable_filter.md) to provide fully custom filtering. 
-
 
 For example, if you add an input and button to the page and want to filter DataTable by clicking on it, you code may look like this:
 
@@ -311,8 +337,6 @@ Implementing a custom filter
 </script>
 ~~~
 
-Note, in the DataTable constructor you need to specify no parameters.
-
 {{sample 15_datatable/03_filtering/05_custom.html }}
 
-
+Note, in the DataTable constructor you need to specify no parameters.

@@ -4,7 +4,7 @@ ui.checkbox
 
 {{memo A two-state check box. }}
 
-The control allows users to make multiple choices from a number of options. Fully customizable and can be used both as a stand-alone view and as a part of a form.  Check [checkbox](desktop__controls.md#checkbox) documentation for more detailed description.
+The control allows users to make multiple choices from a number of options. Fully customizable and can be used both as a stand-alone view and as a part of a form.  Check [checkbox](desktop/controls.md#checkbox) documentation for more detailed description.
 
 ### Constructor
 
@@ -23,10 +23,10 @@ The control allows users to make multiple choices from a number of options. Full
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.text.md">ui.text</a>, <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.checkbox_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.checkbox_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.checkbox_bind.md - binds components
@@ -64,11 +64,11 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
-- api/link/ui.checkbox_onafterrender_event.md - occurs immediately after the component has been rendered
+
+{{api
+- api/link/ui.checkbox_onafterrender_event.md - occurs immediately after the component has been rendered.
 - api/link/ui.checkbox_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.checkbox_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.checkbox_onchange_event.md - fires when the value of the control is changed
@@ -77,10 +77,9 @@ Events
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.checkbox_align_config.md - the alignment of the control within the parent container
 - api/link/ui.checkbox_animate_config.md - defines or disables view change animation.
 - api/link/ui.checkbox_attributes_config.md - sets an hash of HTML input attributes that will be parsed for the Webix input control
@@ -90,10 +89,12 @@ Properties
 - api/link/ui.checkbox_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.checkbox_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.checkbox_css_config.md - the name of a css class that will be applied to the view container
+- api/ui.checkbox_customcheckbox_config.md - enables/disables custom checkbox in some skins
 - api/link/ui.checkbox_disabled_config.md - disables item
 - api/link/ui.checkbox_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.checkbox_height_config.md - sets the height of the component
 - api/link/ui.checkbox_hidden_config.md - defines whether the view will be hidden initially
+- api/link/ui.checkbox_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/link/ui.checkbox_id_config.md - the component ID
 - api/link/ui.checkbox_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.checkbox_inputpadding_config.md - padding of text in the input
@@ -107,13 +108,16 @@ Properties
 - api/link/ui.checkbox_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.checkbox_name_config.md - name of the control
 - api/link/ui.checkbox_on_config.md - allows attaching custom handlers to inner events of the component
+- api/link/ui.checkbox_placeholder_config.md - placeholder text for the input
 - api/link/ui.checkbox_popup_config.md - allows to attach pop-up menu to the button
+- api/link/ui.checkbox_readonly_config.md - configures readonly mode for the input
 - api/link/ui.checkbox_relatedaction_config.md - action to call when value of cell changes
 - api/link/ui.checkbox_relatedview_config.md - id of view, that will be affected by relatedAction operation
 - api/link/ui.checkbox_required_config.md - marks field as required
 - api/link/ui.checkbox_suggest_config.md - links suggest list to the input
 - api/link/ui.checkbox_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/link/ui.checkbox_template_config.md - the component template
+- api/link/ui.checkbox_tooltip_config.md - tooltip for the input
 - api/link/ui.checkbox_type_config.md - the type of the control
 - api/ui.checkbox_uncheckvalue_config.md - result of getValue for unchecked checkbox
 - api/link/ui.checkbox_validate_config.md - adds validation to the field
@@ -125,10 +129,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.checkbox_$getsize_other.md - returns the current size of the component
 - api/link/ui.checkbox_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.checkbox_$height_other.md - current height of the view

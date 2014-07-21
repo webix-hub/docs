@@ -6,18 +6,18 @@ TreeDataLoader
 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/treedataloader_loadbranch.md - loads data to the specified branch
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/link/treedataloader_onafteradd_event.md - fires after adding item to datastore
 - api/link/treedataloader_onafterdelete_event.md - fires after item deleting
 - api/link/treedataloader_onaftersort_event.md - fires after sorting dataset
@@ -29,12 +29,12 @@ Events
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/treedataloader_filtermode_config.md - defines the pattern for tree item filtering
 }}
+
 
 
 

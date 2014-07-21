@@ -79,6 +79,6 @@ webix.ui({
 
 {{sample 21_upload/06_progress_bar.html}}
 
-More about [type implementation](desktop/type_implementation.md). 
+More about [type implementation](desktop/type.md). 
 
 

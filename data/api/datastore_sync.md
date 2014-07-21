@@ -26,6 +26,7 @@ $$('dview').data.sync(data, function(){
 @relatedapi:
 	api/datastore_filter.md
 	api/datastore_silent.md
+    api/datastore_unsync.md
     
 @related:
 	desktop/data_binding.md

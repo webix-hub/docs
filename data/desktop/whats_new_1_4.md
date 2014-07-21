@@ -9,7 +9,7 @@ Version 1.4
 - loading and saving data through websockets ([details](desktop/server_faye.md))
 - loading and saving data through indexedDB ([details](desktop/server_indexdb.md))
 
-### Improvments in Window Positioning
+### Improvements in Window Positioning
 - window can have complex relation size and position ([details](desktop/window_positioning.md))
 - window can be shown in fullscreen mode
 

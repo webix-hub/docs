@@ -3,7 +3,7 @@ Carousel
 
 ###Overview
 
-Ui-related **carousel** is designed to present Webix components in one view with the ability to switch between them by clicking on the dedicated buttons or sliding (on touch devices).
+Ui-related <a href="http://webix.com/widget/multiview-scrollview-carousel/" title="javascript webix slider">carousel</a> is designed to present Webix components in one view with the ability to switch between them by clicking on the dedicated buttons or sliding (on touch devices).
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/carousel.png"/>
 

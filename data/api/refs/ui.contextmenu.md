@@ -4,7 +4,7 @@ ui.contextmenu
 
 {{memo A context menu. }}
 
-The component presents a pop-up menu that is displayed when the user clicks the right mouse button in the client area. You can configure any nesting level complexity. Check [contextmenu](desktop__contextmenu.md) documentation for more detailed description.
+The component presents a pop-up menu that is displayed when the user clicks the right mouse button in the client area. You can configure any nesting level complexity. Check [contextmenu](desktop/contextmenu.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -23,10 +23,10 @@ The component presents a pop-up menu that is displayed when the user clicks the 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/contexthelper.md">ContextHelper</a>, <a href="api/refs/ui.submenu.md">ui.submenu</a>, <a href="api/refs/ui.menu.md">ui.menu</a>, <a href="api/refs/ui.list.md">ui.list</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/selectionmodel.md">SelectionModel</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/ui.proto.md">ui.proto</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/copypaste.md">CopyPaste</a>, <a href="api/refs/ui.popup.md">ui.popup</a>, <a href="api/refs/ui.window.md">ui.window</a>, <a href="api/refs/movable.md">Movable</a>, <a href="api/refs/modality.md">Modality</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.contextmenu_add.md - adds an item to the store
 - api/link/ui.contextmenu_addcss.md - applied CSS class to a component item
 - api/link/ui.contextmenu_adjust.md - adjusts the component to the size of the parent HTML container
@@ -120,16 +120,17 @@ of the component
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/link/ui.contextmenu_onafteradd_event.md - fires after adding item to datastore
 - api/link/ui.contextmenu_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.contextmenu_onafterdelete_event.md - fires after item deleting
 - api/link/ui.contextmenu_onafterdrop_event.md - fires after drag-n-drop was finished
 - api/link/ui.contextmenu_onafterload_event.md - fires after xml loading is complete
 - api/link/ui.contextmenu_onafterrender_event.md - occurs immediately after the component has been rendered
+- api/link/ui.contextmenu_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.contextmenu_onafterselect_event.md - fires after item was selected
 - api/link/ui.contextmenu_onaftersort_event.md - fires after sorting dataset
 - api/link/ui.contextmenu_onbeforeadd_event.md - fires before adding item to datastore
@@ -154,22 +155,28 @@ Events
 - api/link/ui.contextmenu_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.contextmenu_onitemrender_event.md - for each item rendering, occurs only for items with custom templates
 - api/link/ui.contextmenu_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
+- api/link/ui.contextmenu_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.contextmenu_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.contextmenu_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.contextmenu_onmouseout_event.md - fires when the mouse was moved out from the specified item
 - api/link/ui.contextmenu_onpaste_event.md - fires when the user presses CTRL+V keys combination
+- api/link/ui.contextmenu_onrotate_event.md - occurs on screen rotating
 - api/link/ui.contextmenu_onselectchange_event.md - fires after selection state was changed
 - api/link/ui.contextmenu_onshow_event.md - fires when window is shown
+- api/link/ui.contextmenu_onswipex_event.md - 
+- api/link/ui.contextmenu_onswipey_event.md - 
+- api/link/ui.contextmenu_ontouchend_event.md - 
+- api/link/ui.contextmenu_ontouchmove_event.md - 
+- api/link/ui.contextmenu_ontouchstart_event.md - 
 - api/link/ui.contextmenu_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation
 - api/link/ui.contextmenu_onvalidationsuccess_event.md - fires after the newlyloaded/added/edited data has passes validation successfully
 - api/link/ui.contextmenu_onviewresize_event.md - view size was changed by resizer
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.contextmenu_animate_config.md - defines or disables view change animation.
 - api/link/ui.contextmenu_autofit_config.md - adjusts window size to the size of an HTML node	it is initiated in
 - api/link/ui.contextmenu_autofocus_config.md - sets focus on the window the moment it appears on the page
@@ -239,10 +246,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.contextmenu_$drag_other.md - method called when drag operation initiated
 - api/link/ui.contextmenu_$draghtml_other.md - defines how dragged item will look
 - api/link/ui.contextmenu_$dragin_other.md - method called when item moved on possible drop landing during dnd

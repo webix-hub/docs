@@ -6,10 +6,10 @@ DataProcessor
 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/dataprocessor_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/dataprocessor_attachprogress.md - asssigns handler for data saving actions
 - api/link/dataprocessor_blockevent.md - temporarily blocks triggering of ALL events of the calling object
@@ -34,10 +34,10 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/dataprocessor_onafter_event.md - fires each time after successfull data saving
 - api/dataprocessor_onaftersaveerror_event.md - fires for data saving errors
 - api/dataprocessor_onaftersync_event.md - called when server side response received and processed
@@ -53,10 +53,9 @@ Events
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/dataprocessor_autoupdate_config.md - enables automatic data updating on server while any changes on client-side are done
 - api/dataprocessor_escape_config.md - custom escaping function
 - api/link/dataprocessor_id_config.md - the component ID
@@ -74,10 +73,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/dataprocessor_config_other.md - all options from initial component configuration
 - api/link/dataprocessor_name_other.md - indicates the name of the component (a read-only property)
 }}

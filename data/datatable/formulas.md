@@ -136,6 +136,28 @@ columns:[
 ]
 ~~~
 
+Editing Formulas Directly in Datatable
+--------------------
+
+Math formulas are editable directly in the datatable provided that:
+
+- **editMath** property  is set to **true** value;
+- datatable is **editable** itself;
+- the column where math is used features "text" editor;
+- **editAction** is specified;
+
+~~~js
+view:"datatable",
+columns:[
+	{ id:"diff", header: "Math", math:"[$r,:2] - [$r,exp]", editor:"text"},
+],  
+math: true,
+editable:true,
+editAction:"click",
+editMath:true
+~~~
+
+When this property is omitted, you can still open the editor for the calculated cell value and see the result of the formula in the editor input. However, changes won't be saved, since math features higher priority. 
 
 @keyword:
 	formula, math, calculate, counter

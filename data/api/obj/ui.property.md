@@ -1,7 +1,7 @@
 
 {{memo a structured table of 2 columns that presents 'name:value' pairs for a list of properties}}
 
-The component can be used for creating various on-page editors. The value field can be presented by any control - a text field, a checkbox, a drop-down list box etc. Check [property](desktop__property_sheet.md) documentation for more detailed description.
+The component can be used for creating various on-page editors. The value field can be presented by any control - a text field, a checkbox, a drop-down list box etc. Check [property](/) documentation for more detailed description.
 
 ### Constructor
 

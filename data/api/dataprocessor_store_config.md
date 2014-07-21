@@ -13,6 +13,10 @@ var dp = new webix.DataProcessor({
 });
 
 @template:	api_config
+@relatedapi:
+	api/dataprocessor_master_config.md
 @descr:
 
-You need to define "store" or "master"
+You need to either define "store" or "master".
+
+

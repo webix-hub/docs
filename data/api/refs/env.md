@@ -11,10 +11,11 @@ env
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/env_cssprefix_other.md - 
 - api/env_isff_other.md - a read-only bool indicating whether the current browser is Firefox
 - api/env_isie_other.md - a read-only bool indicating whether the current browser is Internet Explorer

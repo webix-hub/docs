@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/link/ui.template_animate_config.md - defines or disables view change animation.
 - api/ui.template_autoheight_config.md - lets the component autosize to its contents
 - api/link/ui.template_borderless_config.md - used to hide the component borders
@@ -22,6 +22,7 @@ Properties
 - api/link/ui.template_minheight_config.md - sets the minimal height for the view
 - api/link/ui.template_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.template_on_config.md - allows attaching custom handlers to inner events of the component
+- api/ui.template_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
 - api/link/ui.template_scroll_config.md - enables/disables the scroll bar
 - api/link/ui.template_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/ui.template_src_config.md - the path to an external template that is loaded by Ajax
@@ -52,6 +53,7 @@ Properties
 - api/link/ui.template_minheight_config.md
 - api/link/ui.template_minwidth_config.md
 - api/link/ui.template_on_config.md
+- api/ui.template_onclick_config.md
 - api/link/ui.template_scroll_config.md
 - api/link/ui.template_scrollspeed_config.md
 - api/ui.template_src_config.md

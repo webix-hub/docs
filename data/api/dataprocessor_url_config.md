@@ -14,6 +14,8 @@ var dp = new webix.DataProcessor({
 });
 
 @template:	api_config
+@related:
+	desktop/dataprocessor.md
 @descr:
 
 If you are using connector on server side you can switch to related protocol by using

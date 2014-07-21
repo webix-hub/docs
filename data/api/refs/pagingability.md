@@ -6,22 +6,22 @@ PagingAbility
 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/pagingability_getpage.md - returns the currently visible page in case of paged view
 - api/pagingability_getpager.md - returns the pager object associated with the component
 - api/pagingability_setpage.md - makes the specified page visible (assuming that the pager was defined )
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/pagingability_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
 }}
+
 
 
 

@@ -4,7 +4,7 @@ ui.radio
 
 {{memo A radio button. }}
 
-You can group multiple component instances together to provide the desired set of choices. Check [radio](desktop__controls.md#radio) documentation for more detailed description.
+You can group multiple component instances together to provide the desired set of choices. Check [radio](desktop/controls.md#radio) documentation for more detailed description.
 
 ### Constructor
 
@@ -23,10 +23,10 @@ You can group multiple component instances together to provide the desired set o
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.text.md">ui.text</a>, <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.radio_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.radio_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.radio_bind.md - binds components
@@ -63,11 +63,11 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
-- api/link/ui.radio_onafterrender_event.md - occurs immediately after the component has been rendered
+
+{{api
+- api/link/ui.radio_onafterrender_event.md - occurs immediately after the component has been rendered.
 - api/link/ui.radio_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.radio_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.radio_onchange_event.md - fires when the value of the control is changed
@@ -76,10 +76,9 @@ Events
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.radio_align_config.md - the alignment of the control within the parent container
 - api/link/ui.radio_animate_config.md - defines or disables view change animation.
 - api/link/ui.radio_attributes_config.md - sets an hash of HTML input attributes that will be parsed for the Webix input control
@@ -88,10 +87,12 @@ Properties
 - api/link/ui.radio_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.radio_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.radio_css_config.md - the name of a css class that will be applied to the view container
+- api/ui.radio_customradio_config.md - enables/disables custom radio button for some skins
 - api/link/ui.radio_disabled_config.md - disables item
 - api/link/ui.radio_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.radio_height_config.md - sets the height of the component
 - api/link/ui.radio_hidden_config.md - defines whether the view will be hidden initially
+- api/link/ui.radio_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/link/ui.radio_id_config.md - the component ID
 - api/link/ui.radio_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.radio_inputpadding_config.md - padding of text in the input
@@ -106,13 +107,16 @@ Properties
 - api/link/ui.radio_name_config.md - name of the control
 - api/link/ui.radio_on_config.md - allows attaching custom handlers to inner events of the component
 - api/ui.radio_options_config.md - defines options for a set of radiobuttons
+- api/link/ui.radio_placeholder_config.md - placeholder text for the input
 - api/link/ui.radio_popup_config.md - allows to attach pop-up menu to the button
+- api/link/ui.radio_readonly_config.md - configures readonly mode for the input
 - api/link/ui.radio_relatedaction_config.md - action to call when value of cell changes
 - api/link/ui.radio_relatedview_config.md - id of view, that will be affected by relatedAction operation
 - api/link/ui.radio_required_config.md - marks field as required
 - api/link/ui.radio_suggest_config.md - links suggest list to the input
 - api/link/ui.radio_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/link/ui.radio_template_config.md - the component template
+- api/link/ui.radio_tooltip_config.md - tooltip for the input
 - api/link/ui.radio_type_config.md - the type of the control
 - api/link/ui.radio_validate_config.md - adds validation to the field
 - api/link/ui.radio_validateevent_config.md - on which event validation fires
@@ -124,10 +128,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.radio_$getsize_other.md - returns the current size of the component
 - api/link/ui.radio_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.radio_$height_other.md - current height of the view

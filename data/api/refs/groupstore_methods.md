@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/groupstore_group.md - groups data
 - api/groupstore_ungroup.md - ungroups data
 }}

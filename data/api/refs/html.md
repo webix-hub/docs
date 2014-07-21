@@ -6,10 +6,10 @@ html
 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/html_addcss.md - adds a CSS class to a DOM node
 - api/html_addmeta.md - adds metadata to the page
 - api/html_addstyle.md - adds a CSS rule to the page
@@ -19,8 +19,7 @@ Methods
 - api/html_denyselect.md - disables selection in the document
 - api/html_getvalue.md - returns the node content
 - api/html_index.md - returns the node index
-- api/html_insertbefore.md - inserts a new node before the specified sibling (the **before** parameter) or as the last child of the specified parent (the **rescue** parameter) if the sibling doesn't exist. <br>
-The third parameter is optional and used just to avoid errors in case the specified subling doesn't exist.
+- api/html_insertbefore.md - inserts a new node into the specified position
 - api/html_locate.md - searches a node with the specified attribute in all parents of the specified node (or from the target of the specified event) inclusively and returns the value of the first occurrence
 - api/html_offset.md - returns the position of an HTML element on the page
 - api/html_pos.md - returns the position of the mouse pointer relative to the upper-left corner of the screen
@@ -30,6 +29,7 @@ The third parameter is optional and used just to avoid errors in case the specif
 - api/html_removecss.md - removes a CSS class from a DOM node
 - api/html_stopevent.md - stops processing of an event beyond the current target (called in some event handler)
 }}
+
 
 
 

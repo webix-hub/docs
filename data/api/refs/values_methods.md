@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/values_clear.md - clears all the field in a specified form
 - api/values_focus.md - sets focus into the necessary component
 - api/values_getcleanvalues.md - returns hash of original form values

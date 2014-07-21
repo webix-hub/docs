@@ -8,9 +8,12 @@ autoupdate
 @type: bool
 @example:
 
-
+@related:
+	desktop/dataprocessor.md
 @template:	api_config
 @defined:	DataProcessor	
-@descr:
+@descr: 
+The default value for autoupdate is *true*. 
+
 
 

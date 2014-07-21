@@ -43,4 +43,9 @@ grid = new webix.ui({
 
 You must have fixedRowHeight set to false, or call of adjustRowHeight will not have a visible result.
 
-{{note This method will slowdown component a lot }}
+{{note This method will slowdown a component a lot. }}
+
+@relatedsample:
+	15_datatable/07_resize/10_row_auto_height.html
+@related:
+	datatable/sizing.md

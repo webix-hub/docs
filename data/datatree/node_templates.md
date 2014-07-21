@@ -83,6 +83,7 @@ The function input parameters are:
   - **<i>icon(obj, common)</i>** - draws the '+'/'-' icons for collapsed/expanded states of nodes
   - **<i>folder(obj, common)</i>** - draws an icon of the folder
   - **<i>checkbox(obj, common)</i>** - draws a check box
+  - **<i>treetable(obj, common)</i>** ([treetable](desktop/treetable.md) only) - combines *common.icon()* and *common.folder()* in one line.
 
 
 
@@ -115,6 +116,7 @@ Tree provides a set of ready-to-use template solutions, which are:
 - **{common.icon()}** -	'+'/'-' icons for collapsed/expanded nodes
 - **{common.folder()}** -   an icon of the folder 
 - **{common.checkbox()}** - a check box
+- **{common.treetable()}** - ([treetable](desktop/treetable.md) only) - a combination of common.icon() and common.folder() in one line
 
 <table class="list">
 	<caption class="caption">
@@ -198,6 +200,17 @@ tree = new webix.ui({
     template:"{common.icon()}
     {common.folder()} #value#"
 })
+
+//or, for treetable it's possible
+treetable = new webix.ui({
+  view:"treetable", 
+  columns:[
+    { id:"value", 
+      template:"{common.treetable()} #value#"
+    }, 
+    {...}
+  ]
+});
 ~~~
 		</td>
         <td><img src='datatree/templates_05.png'/></td>

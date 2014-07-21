@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/basebind_bind.md - binds components
 - api/basebind_unbind.md - breaks "bind" link
 }}

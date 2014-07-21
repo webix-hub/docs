@@ -1,6 +1,24 @@
 Top 10 Helpers You Should Know About
 ====================================
 
+## webix.ui
+
+This method is used mainly to **instantiate Webix component** of any complexity level, either it is a control or the complete application layout. 
+
+It converts a **JSON structure** passed into it as parameter to client-side layout objects - this is what Webix is used for:) 
+
+~~~js
+webix.ui({ view:"", ... });
+~~~
+
+Normally, you need one **webix.ui()** contructor for the whole application while any **window** or **popup** needs an extra one as windows lie above page layout.
+
+~~~js
+webix.ui({ view:"window", ... }).show();
+~~~
+
+More opportunities of using this method are described in the chapter [Rebuilding Application Layout]( desktop/dynamic_layout.md#rebuildingapplicationlayout).
+
 ## webix.ready
 
 This method is a cross-browser alternative to the **onDocumentReady** event and can be used instead of **onload()** method. 
@@ -11,11 +29,11 @@ It can be used multiple times.
 
 ~~~js
  webix.ready(function(){ 
-         webix.ui({
-                container:"box",
-                view:"window",
+     webix.ui({
+         container:"box",
+         view:"window",
                 ...
-         });
+     });
  })
 ~~~
 [API reference](api/_ready.md)
@@ -27,8 +45,8 @@ An easy way to bind a function to an object (inside bound function, **this** wil
   
 ~~~js
 var t = webix.bind(function(){
-             alert(this);
-        }, "master");
+    alert(this);
+}, "master");
 
 t(); //will alert "master"
 ~~~

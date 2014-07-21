@@ -4,7 +4,7 @@ ui.property
 
 {{memo A structured table of 2 columns that presents 'name:value' pairs for a list of properties. }}
 
-The component can be used for creating various on-page editors. The value field can be presented by any control - a text field, a checkbox, a drop-down list box etc. Check [property](desktop__property_sheet.md) documentation for more detailed description.
+The component can be used for creating various on-page editors. The value field can be presented by any control - a text field, a checkbox, a drop-down list box etc. Check [property](/) documentation for more detailed description.
 
 ### Constructor
 
@@ -21,12 +21,12 @@ The component can be used for creating various on-page editors. The value field 
 ~~~
 
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/editability.md">EditAbility</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/singlerender.md">SingleRender</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
+<a href="api/refs/editability.md">EditAbility</a>, <a href="api/refs/mapcollection.md">MapCollection</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/singlerender.md">SingleRender</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.property_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.property_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.property_bind.md - binds components
@@ -79,15 +79,15 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/link/ui.property_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.property_onaftereditstart_event.md - fires after edit operation was initiated, editor opened and ready for input
 - api/link/ui.property_onaftereditstop_event.md - fires after edit operation finished
 - api/link/ui.property_onafterload_event.md - fires after xml loading is complete
-- api/link/ui.property_onafterrender_event.md - occurs immediately after the component has been rendered
+- api/link/ui.property_onafterrender_event.md - occurs immediately after the component has been rendered.
 - api/link/ui.property_onbeforecontextmenu_event.md - fires before the context menu is called in the item area
 - api/link/ui.property_onbeforeeditstart_event.md - fires before edit operation is initiated
 - api/link/ui.property_onbeforeeditstop_event.md - fires before stop edit command is received
@@ -106,11 +106,11 @@ Events
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.property_animate_config.md - defines or disables view change animation.
+- api/ui.property_autoheight_config.md - auto height mode for property view
 - api/link/ui.property_borderless_config.md - used to hide the component borders
 - api/link/ui.property_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.property_content_config.md - the id or node, whose content will be moved to the view
@@ -149,10 +149,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.property_$getsize_other.md - returns the current size of the component
 - api/link/ui.property_$height_other.md - current height of the view
 - api/link/ui.property_$scope_other.md - scope for resolving event and method names

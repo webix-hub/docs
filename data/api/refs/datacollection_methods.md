@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/link/datacollection_add.md - adds an item to the store
 - api/link/datacollection_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/datacollection_bind.md - binds components

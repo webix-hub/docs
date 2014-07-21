@@ -5,16 +5,18 @@ Form
 Any form is a means of getting an information from users. It contains input fields and select components like checkboxes,
 radiobuttons alongside with submit/cancel buttons depending on the situation. Find them all in our [Controls Guide](desktop/controls.md).
 
+<br>
+
 <img  style="display:block; margin-left:auto;margin-right:auto;"   src="desktop/basic_form.png"/>
 
+<br>
 
 ###Initialization
 Ui-related form inherits from [view](desktop/view.md). It resembles [layout](desktop/layout.md) very much as it is divided into columns and rows where controls are put. 
 
-- **columns** - an array of horizontally arranged controls and control groups;
-- **rows** -  an array of vertically arranged controls and control groups;
 - **elements** - the form's specific property, an array of vertically arranged controls and control groups;
-
+- **columns** - an array of horizontally arranged controls and control groups;
+- **rows** -  an array of vertically arranged controls and control groups.
 
 {{snippet
 Login form
@@ -26,11 +28,11 @@ webix.ui({
   	width:300,
 	elements:[
 		{ view:"text", label:"Email"},
-		{ view:"text", label:"Password"},
+		{ view:"text", type:"password", label:"Password"},
 		{ margin:5, cols:[
-					{ view:"button", value:"Login" , type:"form" },
-					{ view:"button", value:"Cancel" }
-					]}
+			{ view:"button", value:"Login" , type:"form" },
+			{ view:"button", value:"Cancel" }
+		]}
 		]
 	});
 ~~~
@@ -44,9 +46,25 @@ There exists a possibility to specify [common configuration](desktop/common_conf
 
 ###Dividing form into sections
 
-Sections within a form are set in the following ways:
+Form **elements** can be divided into columns and rows with any level of complexity.
 
-- Adding **headers** with **section** type before control arrays;
+~~~js
+{ view:"form", elements:[
+	{cols:[
+    	{ rows:[
+        	{view:"text"},
+            {view:"datepicker"}
+        ]},
+        {view:"checkbox"},
+        {view:"button"}
+    ]},
+    
+]}
+~~~
+
+To add user-friendliness to form interface, separated blockes can be set within it by:
+
+- Adding **headers** with **section** type before control blocks;
 - Dividing a form into **fieldsets**.
 
 **Sections**
@@ -57,7 +75,8 @@ Form elements are placed into different **row arrays** where the first row is a 
 {view:"form", elements: [
 	{ rows:[ 
 		{ template:"Alpha fields", type:"section"},
-		{ view:"text", label:"Alpha 1", value:'' }]
+		{ view:"text", label:"Alpha 1", value:'' },
+        { view:"text", label:"Alpha 2", value:'' }]
     },
 	{ rows:[ 
 		{ template:"Beta fields", type:"section"},
@@ -66,7 +85,11 @@ Form elements are placed into different **row arrays** where the first row is a 
 ]} 
 ~~~
 
+<br>
+
 <img src="desktop/form_sections.png">
+
+<br>
 
 {{sample 13_form/01_controls/18_sections.html}}
 
@@ -85,7 +108,11 @@ Form elements are placed into different **row arrays** where the first row is a 
 ]}
 ~~~
 
+<br>
+
 <img src="desktop/form_fieldset.png">
+
+<br>
 
 {{sample 13_form/05_extras/01_fieldset.html }}
             
@@ -114,9 +141,9 @@ The swithing controls are placed directly into the array of form **elements**.
 
 ##Retrieving Form Values
 
-Since form elements comprise an array you can refer to each of them by its **number** starting from 0 and get/set the value of any item. 
+####Getting value of a single element
 
-####By its **position** in an array
+Since form elements comprise an array you can refer to each of them by its **number** starting from 0 and get/set the value of any item. 
 
 ~~~js
 var form1 = [
@@ -135,21 +162,25 @@ var login = form1[0].login;// returns current input value;
 var button = form1[2].submit; //returns "Submit";
 ~~~
 
-####With the help of the **getValues()** method
+Or, you can apply **getValue()** method directly to the needed control:
 
-The function returns an array of values of all the controls in this form, whether it is input fields or checkbox or radio. To get to the necessary value, you should specify the **name** of the needed control. 
+~~~js
+$$("log").getValue();
+~~~
+
+**Getting values of all form elements**
+
+To get an associative array of all elements (*name:value* pairs) you can use api/link/ui.form_getvalues.md method. To get to the necessary value, you should specify the **name** of the needed control. 
 
 ~~~js
 $$("my_form").getValues().login; //returns current value of the text input field 
 ~~~
 
-####With the help of getValue() method
+Additionally, you can get only **changed** and **unchanged** form values with the following methods respectively:
 
-The method is applied directly to the needed control specified by **ID**:
+- api/link/ui.form_getdirtyvalues.md - returns a hash of changed values;
+- api/link/ui.form_getcleanvalues.md - return hash of unchanged values.
 
-~~~js
-$$("log").getValue();
-~~~
 
 ##Disabling Form Elements
 
@@ -186,6 +217,46 @@ $$("form1").elements["login"].attachEvent("onChange", function(newv, oldv){
 
 {{sample 13_form/02_api/07_onchange_event.html }}
 
+##Getting Parent Form for the Input
+
+The easiest way to get to a parent form from any of its elements is to call the api/link/ui.view_getformview.md:
+
+~~~js
+{view:"text", on:{"onChange":function(){
+	var form = this.getFormView();
+}}}
+~~~
+
+##Loading and Parsing Initial Data
+
+Webix form can load or parse data like any data management component. All the [data loading rules](desktop/data_loading.md) are true for it. 
+
+Data **attributes** should coincide with **names** of form fields: 
+
+{{snippet
+Parsing
+}}
+~~~js
+var data = {id:1, fname:"Ann", lname:"Brown"};
+
+webix.ui({
+	view:"form", id:"myform", elements:[
+		{view:"text", name:"fname"},
+    	{view:"text", name:"lname"}
+	],
+    data:data
+});    
+//or
+$$("myform").parse(data);
+~~~
+
+{{snippet
+Loading
+}}
+~~~js
+$$("myform").load("data.php");
+~~~
+
 ###API Reference
 
 [Methods, properties and events](api__refs__ui.form.html)
@@ -195,7 +266,8 @@ $$("form1").elements["login"].attachEvent("onChange", function(newv, oldv){
 - [Form and HTMLform Treatment](desktop/form_tasks.md)
 - [Uploading Files with Form](desktop/uploader_integration.md)
 - [HTMLform](desktop/htmlform.md)
-- [Control Guide](desktop/controls.md)
+- [Controls List](desktop/controls.md)
+- [Controls Common Functionality Guide](desktop/controls_guide.md)
 - [Data Validation in Forms](desktop/data_validation.md)
 - [Event Handling](desktop/event_handling.md)
 - [Data Binding](desktop/data_binding.md)

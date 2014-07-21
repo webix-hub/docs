@@ -2,7 +2,7 @@
 Events
 =======
 
-{{links
+{{api
 - api/link/treedataloader_onafteradd_event.md - fires after adding item to datastore
 - api/link/treedataloader_onafterdelete_event.md - fires after item deleting
 - api/link/treedataloader_onaftersort_event.md - fires after sorting dataset

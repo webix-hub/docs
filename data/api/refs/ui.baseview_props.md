@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/ui.baseview_animate_config.md - defines or disables view change animation.
 - api/ui.baseview_borderless_config.md - used to hide the component borders
 - api/ui.baseview_container_config.md - an html container (or its id) where the component needs initializing

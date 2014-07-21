@@ -1,7 +1,7 @@
 Start Coding with Webix 
 =========================
 
-Working with the Webix library  you should go though typical development stages that include setting goals and understanding the requirements, 
+Working with the Webix library  you should go through typical development stages that include setting goals and understanding the requirements, 
 choosing components and designing the app to foresee the result and finish it all with the coding itself, which is merely a technical side. 
 
 - [Setting the goal](#setgoal)
@@ -87,7 +87,7 @@ decide how the components would be related to each other. [Building App Architec
 position components and make you acquainted with layout types the library offers. 
 
 Further on, there're a number of data-presenting [components](desktop/components.md) and special features like toolbar, menu and calendar that would
-breathe life into your app and make it dynamically change to implement all the functions you wish from it. 
+breathe life into your app and make it dynamically change to implement all the functions you wish it to perform. 
 
 The library is supplied with a rich set of samples to show you how the components look and perform in reality. So you won't regret having spent some time 
 studying them.

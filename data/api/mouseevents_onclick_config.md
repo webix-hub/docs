@@ -1,5 +1,5 @@
 onClick
-=============
+============================
 
 
 @short: attaches a click behavior for component items with the specified CSS class. 
@@ -7,13 +7,6 @@ onClick
 
 @type: hash
 @example:
-
-
-@template:	api_config
-@descr:
-
-
-
 
 @example:
 webix.ui({

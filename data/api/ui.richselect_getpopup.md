@@ -1,8 +1,8 @@
 getPopup
-=============
+===============================
 
 
-@short: return popup element of the input
+@short: returns popup element of the input
 	
 
 @returns:

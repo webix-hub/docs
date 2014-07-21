@@ -24,9 +24,10 @@ webix.ui({
 
 ####Comments: 
 
-- standard window contains **head** and **body** sections. However, head can be omitted if you don't need it. 
+- Standard window contains **head** and **body** sections. However, head can be omitted if you don't need it;
 - To make window visible, you should apply **show()** method after its initialization;
 - A movable window contains **move:true** property in its constructor;
+- By default windows are **non-modal**. When such window is focused, it can be closed with an 'Esc' hotkey. Modality is described below. 
 
 ####Head
 

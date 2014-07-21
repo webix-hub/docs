@@ -4,7 +4,7 @@ ui.segmented
 
 {{memo A holistic panel that contains multiple buttons (two or more). }}
 
-The component can be used to build a multi-item menu for navigating between views. Check [segmented](desktop__controls.md#segmented) documentation for more detailed description.
+The component can be used to build a multi-item menu for navigating between views. Check [segmented](desktop/controls.md#segmented) documentation for more detailed description.
 
 ### Constructor
 
@@ -23,10 +23,10 @@ The component can be used to build a multi-item menu for navigating between view
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.text.md">ui.text</a>, <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/ui.segmented_addoption.md - add a new option (segment) to the button
 - api/link/ui.segmented_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.segmented_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
@@ -66,11 +66,11 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
-- api/link/ui.segmented_onafterrender_event.md - occurs immediately after the component has been rendered
+
+{{api
+- api/link/ui.segmented_onafterrender_event.md - occurs immediately after the component has been rendered.
 - api/link/ui.segmented_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.segmented_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.segmented_onchange_event.md - fires when the value of the control is changed
@@ -79,10 +79,9 @@ Events
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.segmented_align_config.md - the alignment of the control within the parent container
 - api/link/ui.segmented_animate_config.md - defines or disables view change animation.
 - api/link/ui.segmented_attributes_config.md - sets an hash of HTML input attributes that will be parsed for the Webix input control
@@ -95,6 +94,7 @@ Properties
 - api/link/ui.segmented_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.segmented_height_config.md - sets the height of the component
 - api/link/ui.segmented_hidden_config.md - defines whether the view will be hidden initially
+- api/link/ui.segmented_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/link/ui.segmented_id_config.md - the component ID
 - api/link/ui.segmented_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.segmented_inputpadding_config.md - padding of text in the input
@@ -110,13 +110,16 @@ Properties
 - api/link/ui.segmented_name_config.md - name of the control
 - api/link/ui.segmented_on_config.md - allows attaching custom handlers to inner events of the component
 - api/ui.segmented_options_config.md - defines data items of the drop-down list
+- api/link/ui.segmented_placeholder_config.md - placeholder text for the input
 - api/link/ui.segmented_popup_config.md - allows to attach pop-up menu to the button
+- api/link/ui.segmented_readonly_config.md - configures readonly mode for the input
 - api/link/ui.segmented_relatedaction_config.md - action to call when value of cell changes
 - api/link/ui.segmented_relatedview_config.md - id of view, that will be affected by relatedAction operation
 - api/link/ui.segmented_required_config.md - marks field as required
 - api/link/ui.segmented_suggest_config.md - links suggest list to the input
 - api/link/ui.segmented_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/link/ui.segmented_template_config.md - the component template
+- api/link/ui.segmented_tooltip_config.md - tooltip for the input
 - api/link/ui.segmented_type_config.md - the type of the control
 - api/link/ui.segmented_validate_config.md - adds validation to the field
 - api/link/ui.segmented_validateevent_config.md - on which event validation fires
@@ -127,10 +130,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.segmented_$getsize_other.md - returns the current size of the component
 - api/link/ui.segmented_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.segmented_$height_other.md - current height of the view

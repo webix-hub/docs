@@ -1,7 +1,7 @@
 REST Mode Support
 ==========================
 
-Webix features support for REST load and save protocol. 
+Webix features full support for REST load and save protocol. 
 
 To enter REST mode, use prefix **rest** before load and save scripts. This will enable the necessary [proxy object](desktop/server_proxy.md).
 
@@ -34,6 +34,16 @@ Save script treats adding, editing and deleting operations separately and should
 **Serverside Response**
 
 Serverside response is set like with [any custom script](desktop/custom_serverside.md#response).
+
+Note that [Webix DataProcessor](desktop/dataprocessor.md) can can be tuned to update client-side data from response automatically:
+
+~~~js
+view:"datatable",
+save: {
+	url:"rest->server/datatable_rest.php",
+    autoupdate:true
+}
+~~~
 
 @complexity:2
 

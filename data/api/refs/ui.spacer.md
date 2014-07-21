@@ -4,7 +4,7 @@ ui.spacer
 
 {{memo A borderless empty view. }}
 
-The component has a pure API and only used to fill a layout cell if it's supposed to be empty. Can be initialized by simple [] construction. Check [view](desktop__view.md) documentation for more detailed description.
+The component has a pure API and only used to fill a layout cell if it's supposed to be empty. Can be initialized by simple [] construction. Check [view](desktop/view.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -23,10 +23,10 @@ The component has a pure API and only used to fill a layout cell if it's suppose
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.spacer_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.spacer_bind.md - binds components
 - api/link/ui.spacer_define.md - redefines a single configuration property (or a hash of properties)
@@ -47,20 +47,19 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/link/ui.spacer_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.spacer_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.spacer_onviewresize_event.md - view size was changed by resizer
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.spacer_animate_config.md - defines or disables view change animation.
 - api/link/ui.spacer_borderless_config.md - used to hide the component borders
 - api/link/ui.spacer_container_config.md - an html container (or its id) where the component needs initializing
@@ -80,10 +79,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.spacer_$getsize_other.md - returns the current size of the component
 - api/link/ui.spacer_$height_other.md - current height of the view
 - api/link/ui.spacer_$scope_other.md - scope for resolving event and method names

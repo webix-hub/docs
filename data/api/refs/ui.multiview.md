@@ -4,7 +4,7 @@ ui.multiview
 
 {{memo A container control that keeps a set of views and displays one view at a time. }}
 
-The component allows you to divide the page content into multiple groups and display a specific view based on some criteria. Often used in combination with a clickable control to implement tabbar. Check [multiview](desktop__multiview.md) documentation for more detailed description.
+The component allows you to divide the page content into multiple groups and display a specific view based on some criteria. Often used in combination with a clickable control to implement tabbar. Check [multiview](desktop/multiview.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -23,10 +23,10 @@ The component allows you to divide the page content into multiple groups and dis
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.multiview_addview.md - add new view to layout or multiview
 - api/link/ui.multiview_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.multiview_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
@@ -64,10 +64,10 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/ui.multiview_onbeforeback_event.md - fires the moment back() fucntion is triggered
 - api/link/ui.multiview_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.multiview_ondestruct_event.md - occurs when component destroyed
@@ -75,10 +75,9 @@ Events
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.multiview_animate_config.md - defines or disables view change animation.
 - api/link/ui.multiview_borderless_config.md - used to hide the component borders
 - api/ui.multiview_cells_config.md - the array with views objects
@@ -96,6 +95,7 @@ Properties
 - api/link/ui.multiview_minheight_config.md - sets the minimal height for the view
 - api/link/ui.multiview_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.multiview_on_config.md - allows attaching custom handlers to inner events of the component
+- api/link/ui.multiview_responsive_config.md - enables responsive mode for horizontal layout
 - api/link/ui.multiview_rows_config.md - array of views objects arranged vertically
 - api/link/ui.multiview_visiblebatch_config.md - sets the batch that will be shown initially
 - api/link/ui.multiview_width_config.md - sets the width of the component
@@ -104,10 +104,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.multiview_$getsize_other.md - returns the current size of the component
 - api/link/ui.multiview_$height_other.md - current height of the view
 - api/link/ui.multiview_$setsize_other.md - sets the component size

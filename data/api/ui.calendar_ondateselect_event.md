@@ -3,7 +3,7 @@ onDateSelect
 
 
 @short:
-	fired when a user selects a date. 
+	fires when a user selects a date. 
 
 @params:
 - date		date		the selected date
@@ -19,6 +19,9 @@ $$('calendar1').attachEvent("onDateselect", function(date){
 
 @related: 
 	desktop/calendar.md
+@relatedapi:
+	api/ui.calendar_onbeforedateselect_event.md
+	api/ui.calendar_onafterdateselect_event.md
 	
 @descr:
 

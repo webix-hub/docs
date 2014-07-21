@@ -2,7 +2,7 @@
 Others
 =======
 
-{{links
+{{api
 - api/link/ui.scrollview_$getsize_other.md - returns the current size of the component
 - api/link/ui.scrollview_$height_other.md - current height of the view
 - api/link/ui.scrollview_$scope_other.md - scope for resolving event and method names

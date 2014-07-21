@@ -2,7 +2,7 @@
 Events
 =======
 
-{{links
+{{api
 - api/dataprocessor_onafter_event.md - fires each time after successfull data saving
 - api/dataprocessor_onaftersaveerror_event.md - fires for data saving errors
 - api/dataprocessor_onaftersync_event.md - called when server side response received and processed

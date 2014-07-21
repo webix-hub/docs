@@ -3,10 +3,15 @@ Accordion
 
 ###Overview
 
-Accordion consists of panes arranged into layout rows and cols. Each pane, or **accordion item**, features **body** and **header** and can be fully expanded and collapsed by clicking its header. 
+<a href="http://webix.com/widget/layout-accordion/" title="webix accordion widget">Accordion</a> consists of panes arranged into layout rows and cols. Each pane, or **accordion item**, features **body** and **header** and can be fully expanded and collapsed by clicking its header. 
 You can place text or any component into each pane. The component inherits from [layout](desktop/layout.md). 
 
-<img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/accordion.png"/>
+<br>
+
+<img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/accordion_front.png"/>
+
+<br>
+
 
 ###Initialization
 

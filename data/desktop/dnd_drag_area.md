@@ -1,6 +1,10 @@
 Defining Drag Area
 =============
 
+{{note
+Predefined drag area is usedful when using drag-n-drop on **touch devices** as slide movements over drag area will be interpreted as dragging rather than scrolling.
+}}
+
 <img src="datatable/limiting_draggable_area.png"/>
 
 {{sample 22_dnd/03_drag_handle.html}}
@@ -38,6 +42,31 @@ webix.ui({
 ~~~
 
 **OnBeforeDrag** event triggers a function that sets 'webix_drag_handle' class for both target and source elements.
+
+###Drag Area with Datatable
+
+To define a drag area for [Webix Datatable](datatable/index.md) you should either add template to some column or add a separate column with drag area CSS:
+
+~~~js
+view:"datatable",
+drag:true,
+columns:[
+	{ id:"title",	fillspace:true, header:"Film title" },
+	{ id:"drag", header:"",	template:"<div class='webix_drag_handle'></div>", width:35}
+]
+~~~
+{{sample 15_datatable/22_dnd/05_handle_dnd.html}}
+
+In case of **column drag-n-drop**, drag area can be defined as well:
+
+~~~js
+view:"datatable",
+dragColumn:true,
+columns:[
+	{ id:"votes", header:"<div class='webix_drag_handle'></div>Votes", width:120},
+~~~
+
+{{sample 15_datatable/22_dnd/08_columns_handle.html}}
 
 ###Related Articles
 

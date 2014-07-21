@@ -59,6 +59,8 @@ In this case when pager is a standalone view api/ui.pager_size_config.md propert
 - api/ui.pager_limit_config.md - the total number of pages in pager. The number of records will be calculated automatically. 
 - api/ui.pager_count_config.md - the total number of records the pager will process. The number of pages will be calculated automatically. 
 
+You can as well use Webix pager as a separate entity without master component and provide fully custom login for it - go to [the end of the article](#standalonepager) for details. 
+
 
 ##Pager as component property
 
@@ -365,5 +367,34 @@ $$("datatable1").setPage(2); // makes the third page visible
 ~~~js
 $$("datatable1").getPager().select(2); // -> selects the third page
 ~~~
+
+##Standalone Pager
+
+Pager can be used without master component for creating custom logic. To render such pager, the following code should be used:
+
+~~~js
+webix.ui({
+  view: 'pager',
+  template: '{common.prev()} {common.pages()} {common.next()}',
+  master:false,
+  size: 50,
+  group: 5,
+  count: 1000,
+  on: {
+      onItemClick: function(id, e, node) {
+          //..some custom logic..
+      }
+  }
+});
+~~~
+
+Template parameter can be omitted in favour of default template. 
+
+{{sample 25_pager/12_standalone_pager.html }}
+
+
+{{note 
+Note that count and size parameters should be used anyway, **count** divided by **size** equals to the **total number** of pages. 
+}}
 
 @complexity:2

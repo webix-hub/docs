@@ -3,8 +3,7 @@ removeView
 
 
 @short:
-
-	removes view from multiview or layout
+	removes view from layout-like component
 	
 
 @params:
@@ -14,21 +13,28 @@ removeView
 @example:
 
 webix.ui({
-   cols:[
+	id:"mylayout"
+    cols:[
       { id:"mytemplate1" },
       { id:"mytemplate2" },
       { id:"mytemplate3" }
    ]
 })
 ...
-$$("somelayout").remove("mytemplate2");
+$$("mylayout").removeView("mytemplate2");
 
 @template:	api_method
 @relatedapi:
 	api/ui.baselayout_addview.md
+    api/_ui.md
 @related:
 	desktop/dynamic_layout.md
+@relatedsample: 
+	01_layout/13_reconfiguration.html
 
 @descr:
+
+The method works for layout rows and cols, multiview cells, accordion and carousel panels,  toolbar and form controls.
+
 
 

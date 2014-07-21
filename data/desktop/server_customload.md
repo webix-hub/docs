@@ -1,4 +1,4 @@
-Customozing Loading Pattern. Ajax Loading and Parsing. 
+Customizing Loading Pattern. Ajax Loading and Parsing 
 ================================
 
 By default Webix loads data to its component by an asynchronous Ajax GET request. However, various modifications are possible. 
@@ -26,6 +26,23 @@ You can change the request to a synchronous one (sometimes it may be useful).
     url: "sync->load.php"
 }
 ~~~
+
+##Modifying  Background Ajax Requests
+
+There exists no possibility to modify background Ajax requests sent by the above pattern. 
+
+However, you can catch Webix **onBeforeAjax** event to modify ANY Ajax request on the page (so be attentive): 
+
+{{snippet
+Sending Headers
+}}
+~~~js
+webix.callEvent("onBeforeAjax", function(mode, url, data, request){
+ 	request.setRequestHeader("Content-type","application/json");
+})
+~~~
+
+Note that Webix [Ajax module](helpers/ajax_operations.md) (described below) features a **built-in functionality** for sending **headers** with serverside requests. 
 
 ##Loading with Webix Ajax Helper
 

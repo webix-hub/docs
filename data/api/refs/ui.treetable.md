@@ -4,7 +4,7 @@ ui.treetable
 
 {{memo A control for presenting tree in a grid cell. }}
 
-The component is used to integrate a tree into an editable grid. There is a support for  in-line node editing, drag-and-drop, filtering, checkboxes etc. Check [treetable](desktop__treetable.md) documentation for more detailed description.
+The component is used to integrate a tree into an editable grid. There is a support for  in-line node editing, drag-and-drop, filtering, checkboxes etc. Check [treetable](desktop/treetable.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -21,12 +21,12 @@ The component is used to integrate a tree into an editable grid. There is a supp
 ~~~
 
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/treeapi.md">TreeAPI</a>, <a href="api/refs/treestatecheckbox.md">TreeStateCheckbox</a>, <a href="api/refs/treedataloader.md">TreeDataLoader</a>, <a href="api/refs/treestore.md">TreeStore</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/ui.datatable.md">ui.datatable</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/group.md">Group</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/tablepaste.md">TablePaste</a>, <a href="api/refs/datastate.md">DataState</a>, <a href="api/refs/editability.md">EditAbility</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a></div>
+<a href="api/refs/treeapi.md">TreeAPI</a>, <a href="api/refs/treestatecheckbox.md">TreeStateCheckbox</a>, <a href="api/refs/treedataloader.md">TreeDataLoader</a>, <a href="api/refs/treestore.md">TreeStore</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/ui.datatable.md">ui.datatable</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/group.md">Group</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/mapcollection.md">MapCollection</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/tablepaste.md">TablePaste</a>, <a href="api/refs/datastate.md">DataState</a>, <a href="api/refs/editability.md">EditAbility</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.treetable_add.md - adds an item to the store
 - api/link/ui.treetable_addcellcss.md - adds a css class to the cell
 - api/link/ui.treetable_addcss.md - applied CSS class to a component item
@@ -53,7 +53,7 @@ Methods
 - api/link/ui.treetable_destructor.md - destructs the calling object
 - api/link/ui.treetable_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.treetable_disable.md - disables the calling view (makes it dimmed and unclickable)
-- api/link/ui.treetable_eachcolumn.md - iterates over all columns in the table
+- api/link/ui.treetable_eachcolumn.md - iterates over all visible columns in the table
 - api/link/ui.treetable_eachrow.md - iterates over all rows in the table
 - api/link/ui.treetable_edit.md - enables the edit mode for the specified item
 - api/link/ui.treetable_editcancel.md - cancels the edit mode and closes all opened editors. The component is still editable
@@ -82,6 +82,7 @@ Methods
 - api/link/ui.treetable_getfirstid.md - returns the ID of the first item
 - api/link/ui.treetable_getformview.md - returns master form for the input
 - api/link/ui.treetable_getheadercontent.md - returns set of helpers for header content manipulation
+- api/link/ui.treetable_getheadernode.md - returns HTML element of the column's header
 - api/link/ui.treetable_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.treetable_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.treetable_getitem.md - gets the object of the data item with the specified id
@@ -135,6 +136,7 @@ of the component
 - api/link/ui.treetable_parse.md - loads data to the component from an inline data source
 - api/link/ui.treetable_refresh.md - repaints the whole view or a certain item
 - api/link/ui.treetable_refreshcolumns.md - refreshes the structure of DataTable
+- api/link/ui.treetable_refreshfilter.md - rebuilds list of options in select filter
 - api/link/ui.treetable_refreshheadercontent.md - refreshes the header row of DataTable
 - api/link/ui.treetable_registerfilter.md - registers a filter element
 - api/link/ui.treetable_remove.md - removes the specified item from datastore
@@ -168,10 +170,10 @@ of the component
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/link/ui.treetable_onafteradd_event.md - fires after adding item to datastore
 - api/link/ui.treetable_onafterclose_event.md - fires after the branch has been closed
 - api/link/ui.treetable_onaftercolumndrop_event.md - fires after the column has been dragged and dropped to the target position
@@ -185,6 +187,7 @@ Events
 - api/link/ui.treetable_onafterload_event.md - fires after xml loading is complete
 - api/link/ui.treetable_onafteropen_event.md - fires after the branch has been opened
 - api/link/ui.treetable_onafterrender_event.md - occurs each time after the view is rendered
+- api/link/ui.treetable_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.treetable_onafterselect_event.md - fires after a cell is selected
 - api/link/ui.treetable_onaftersort_event.md - fires after sorting dataset
 - api/link/ui.treetable_onafterunselect_event.md - fires after a cell is unselected
@@ -220,27 +223,32 @@ Events
 - api/link/ui.treetable_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.treetable_onliveedit_event.md - occurs when data was changed in the editor
 - api/link/ui.treetable_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
+- api/link/ui.treetable_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.treetable_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.treetable_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.treetable_onmouseout_event.md - fires when the mouse was moved out from the specified item
 - api/link/ui.treetable_onresize_event.md - fires when the width or height of DataTable was changed
+- api/link/ui.treetable_onrotate_event.md - occurs on screen rotating
 - api/link/ui.treetable_onrowresize_event.md - fires when height of row was changed
 - api/link/ui.treetable_onscrollx_event.md - fires when the user scrolls the table left or right
 - api/link/ui.treetable_onscrolly_event.md - fires when the user scrolls the table up or down
 - api/link/ui.treetable_onselectchange_event.md - fires when selection is changed in DataTable
 - api/link/ui.treetable_onstructureload_event.md - fires when the structure of DataTable (columns configuration) is initialized
 - api/link/ui.treetable_onstructureupdate_event.md - fires when structure of datatable was changed ( column added, hidden or reconfigured )
+- api/link/ui.treetable_onswipex_event.md - 
+- api/link/ui.treetable_onswipey_event.md - 
+- api/link/ui.treetable_ontouchend_event.md - 
+- api/link/ui.treetable_ontouchmove_event.md - 
+- api/link/ui.treetable_ontouchstart_event.md - 
 - api/link/ui.treetable_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation
 - api/link/ui.treetable_onvalidationsuccess_event.md - fires after the newlyloaded/added/edited data has passes validation successfully
 - api/link/ui.treetable_onviewresize_event.md - view size was changed by resizer
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
-- api/link/ui.treetable_adjustheaders_config.md - when enabled column auto-sizing will take header width in account
+{{api
 - api/link/ui.treetable_animate_config.md - defines or disables view change animation.
 - api/link/ui.treetable_autoconfig_config.md - datatable adjust configuration to the data
 - api/link/ui.treetable_autoheight_config.md - adjusts DataTable to the parent container size vertically
@@ -262,6 +270,7 @@ Properties
 - api/link/ui.treetable_disabled_config.md - disables item
 - api/link/ui.treetable_drag_config.md - enables or disables drag-and-drop
 - api/link/ui.treetable_dragcolumn_config.md - enables drag-and-drop support for columns
+- api/link/ui.treetable_editmath_config.md - enables formular editing
 - api/link/ui.treetable_editvalue_config.md - defines which data item is editable (in case of several data item in the cell/line)
 - api/link/ui.treetable_editable_config.md - allows/denies editing in the view
 - api/link/ui.treetable_editaction_config.md - defines the action on which editors will be opened
@@ -322,10 +331,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.treetable_$drag_other.md - method called when drag operation initiated
 - api/link/ui.treetable_$draghtml_other.md - defines how dragged item will look
 - api/link/ui.treetable_$dragin_other.md - method called when item moved on possible drop landing during dnd

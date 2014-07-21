@@ -24,6 +24,8 @@ $$('mylist').bind('form1', function(list_data, form_data){
 @related:
 	desktop/data_binding.md
     desktop/binding_details.md
+@relatedapi:
+	api/basebind_unbind.md
 @relatedsample:
 	13_form/02_api/10_binding.html
 @descr:

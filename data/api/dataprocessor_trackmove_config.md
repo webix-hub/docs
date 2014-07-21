@@ -15,6 +15,8 @@ var dp = new webix.DataProcessor({
 
 
 @template:	api_config
+@related:
+	desktop/dataprocessor.md
 @descr:
 
 

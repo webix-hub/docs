@@ -19,6 +19,9 @@ webix.ajax().del("data.php", { id : "11" }, function(text, xml, xhr){
 	alert(text);
 });
 
+@related:
+	helpers/ajax_operations.md
+    desktop/serverside.md
 @template:	api_method
 @descr:
 

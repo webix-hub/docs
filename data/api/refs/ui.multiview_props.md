@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/link/ui.multiview_animate_config.md - defines or disables view change animation.
 - api/link/ui.multiview_borderless_config.md - used to hide the component borders
 - api/ui.multiview_cells_config.md - the array with views objects
@@ -20,6 +20,7 @@ Properties
 - api/link/ui.multiview_minheight_config.md - sets the minimal height for the view
 - api/link/ui.multiview_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.multiview_on_config.md - allows attaching custom handlers to inner events of the component
+- api/link/ui.multiview_responsive_config.md - enables responsive mode for horizontal layout
 - api/link/ui.multiview_rows_config.md - array of views objects arranged vertically
 - api/link/ui.multiview_visiblebatch_config.md - sets the batch that will be shown initially
 - api/link/ui.multiview_width_config.md - sets the width of the component
@@ -43,6 +44,7 @@ Properties
 - api/link/ui.multiview_minheight_config.md
 - api/link/ui.multiview_minwidth_config.md
 - api/link/ui.multiview_on_config.md
+- api/link/ui.multiview_responsive_config.md
 - api/link/ui.multiview_rows_config.md
 - api/link/ui.multiview_visiblebatch_config.md
 - api/link/ui.multiview_width_config.md

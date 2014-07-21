@@ -5,10 +5,10 @@ DragControl
 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/dragcontrol_adddrag.md - registers drag area
 - api/dragcontrol_adddrop.md - registers drop area
 - api/dragcontrol_createdrag.md - called when drag-n-drop is initiated, creates drag representation
@@ -22,10 +22,11 @@ Methods
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/dragcontrol_$drag_other.md - called when drag-n-drop was started and defines dragging behavior
 - api/dragcontrol_$dragin_other.md - called when mouse was moved in drop area and defines marker behavior within the drop area
 - api/dragcontrol_$dragout_other.md - called when mouse was moved out drop area and defines marker behavior out of the drop area

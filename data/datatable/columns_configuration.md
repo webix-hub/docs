@@ -27,7 +27,27 @@ With the help of the [columns](api/ui.datatable_columns_config.md) parameter you
 - [hide/show a column](#hidingshowingcolumns).
 
 
+Automatic Column Configuration
+-------------------
 
+Normally, you need to specify an array of column configurations for the datatable, which allows for setting various parameters needed by this or that datatable separately:
+
+~~~js
+view:"datatable", 
+columns:[
+	{id:"id", header:"Id", width:50, sort:"int"},
+    {id:"title", header:[ "Film title",{content:"textFilter"}]
+]
+~~~
+
+At the same time, you can switch to **data-based** column configuration provided by **autoconfig** property:
+
+~~~js
+view:"datatable", 
+autoconfig:true
+~~~
+
+In this case *columns* array is no longer needed. Datatable will analyse the dataset passed to it and build columns automatically. The columns will have **default values** (no sorting or filtering, width of 50px, etc.)
 
 Headers/footers
 ------------------
@@ -54,12 +74,10 @@ grid = new webix.ui({
 		view:"datatable",
 		...
 		footer:true,
-		columns:[{
-			id:"col1",
-			header:"Column 1",
-			footer:"Footer 1"
-		},
-		...]
+		columns:[
+        	{ id:"col1", header:"Column 1", footer:"Footer 1"},
+            {...}
+		]
 })
 //object
 grid = new webix.ui({
@@ -88,11 +106,9 @@ To set widths of columns you should use attribute **width**.
 {{snippet Setting the width of a column}}
 
 ~~~js
-columns:[{ 
-	 id:"col1", 
-     width:200 
-     },
-...]
+columns:[
+	{ id:"col1",  width:200 }
+]
 ~~~
 
 {{sample 15_datatable/11_sizing/04_fixed_size.html }}
@@ -115,16 +131,14 @@ Adding filter to the header of a specific column
 }}
 
 ~~~js
-columns:[{
-	id:"col1",
-	header:[{ text:"Column 1", colspan:"2"}, { content:"selectFilter" }]
-	},
-...]
+columns:[
+	{ id:"col1", header:[{ text:"Column 1", colspan:"2"}, { content:"selectFilter" }]},
+    {...}
+]
 ~~~
 {{sample 15_datatable/03_filtering/01_builtin.html }}
 
 For more details, read the [Filtering](datatable/filtering.md) article.
-
 
 
 Built-in sorting
@@ -145,16 +159,14 @@ Activating sorting for a specific column
 }}
 
 ~~~js
-columns:[{
-	id:"col1",
-	sort:"string",
-	},
-...]
+columns:[
+	{ id:"col1", sort:"string" },
+    {...}
+]
 ~~~
 {{sample 15_datatable/02_sorting/01_builtin.html }}
 
 For more details, read the [Sorting](datatable/sorting.md) article.
-
 
 Text alignment
 ------------------------
@@ -173,14 +185,10 @@ To set the text alignment in a column you should use attribute **css**:
 ~~~
 
 ~~~js
-columns:[{
-	id:"col1"
-   	css:"myStyle" //in a separate css class
-},
-{  	id:"col2",
-    css:{'text-align':'right'} //directly in the attribute
-}]
-
+columns:[
+	{ id:"col1" css:"myStyle"},//in a separate css class
+	{ id:"col2", css:{'text-align':'right'} //directly in the attribute
+]
 ~~~
 
 Read more about using the **css** attribute in the [Styling](datatable/styling.md) article.
@@ -194,12 +202,10 @@ Setting the format for a specific column
 }}
 
 ~~~js
-columns:[{
-	id:"col2",
-	format:function(value){ return webix.ui.numberFormat(value)};
-    }
-    //data will be formatted according to the current locale
-...]
+columns:[
+	//data will be formatted according to the current locale
+	{ id:"col2", format:function(value){ return webix.ui.numberFormat(value)};}
+]
 ~~~
 {{sample 15_datatable/20_templates/05_dates.html }}
 
@@ -213,11 +219,9 @@ You can write simple math formulas to specify values in column cells. Formulas c
  Using formulas for setting values in the whole column
 }}
 ~~~js
-columns:[{
-	id:"col1",
-	math:"[row_id,col_name] + [row_id,col_name]"
-	},
-...]
+columns:[
+	{ id:"col1", math:"[row_id,col_name] + [row_id,col_name]"}
+]
 ~~~
 {{sample 15_datatable/08_math/01_basic.html }}
 
@@ -265,11 +269,9 @@ Using templates for configuration data of a column
 }}
 
 ~~~js
-columns:[{
-		id:"col4",
-		template:function(obj){return obj.col1+obj.col2*2+obj.col3*3;}
-		},
-...]
+columns:[
+	{ id:"col4", template:function(obj){return obj.col1+obj.col2*2+obj.col3*3;}}
+]
 ~~~
 {{sample 15_datatable/20_templates/01_string.html }}
 
@@ -285,11 +287,9 @@ Applying a css class to a specific column
 }}
 
 ~~~js
-columns:[{
-		id:"col1",
-		css:"someStyle"
-		}, 
-...]
+columns:[
+	{ id:"col1", css:"someStyle"}
+]
 ~~~
 For more details, read the [Styling](datatable/styling.md) article.
 
@@ -304,12 +304,10 @@ Hiding a column
 }}
 ~~~js
 grid = new webix.ui({
-		view:"datatable",
-		...
-		columns:[{
-			id:"col4",
-			header:"Rating"
-		},...]
+	view:"datatable",
+	columns:[
+        {id:"col4", header:"Rating"}
+   ]
 })
 grid.hideColumn("col4");
 ~~~

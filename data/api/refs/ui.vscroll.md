@@ -22,10 +22,10 @@ The component renders plain scrolls without content.
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/settings.md">Settings</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/ui.vscroll_activearea.md - assigns active mouse wheel zone
 - api/link/ui.vscroll_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.vscroll_blockevent.md - temporarily blocks triggering of ALL events of the calling object
@@ -42,18 +42,17 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/ui.vscroll_onscroll_event.md - fires when the scroll changes its position
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/ui.vscroll_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.vscroll_id_config.md - the component ID
 - api/link/ui.vscroll_on_config.md - allows attaching custom handlers to inner events of the component
@@ -70,10 +69,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.vscroll_config_other.md - all options from initial component configuration
 - api/link/ui.vscroll_name_other.md - indicates the name of the component (a read-only property)
 }}

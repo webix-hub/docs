@@ -5,7 +5,7 @@ ui.grouplist
 {{memo A vertical list of items grouped into sections by some category. }}
 
 The component provides navigation within the list and between the sections. 
-Support for various data template formats, sorting and filtering features. Check [grouplist](desktop__grouplist.md) documentation for more detailed description.
+Support for various data template formats, sorting and filtering features. Check [grouplist](desktop/grouplist.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -24,10 +24,10 @@ Support for various data template formats, sorting and filtering features. Check
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/group.md">Group</a>, <a href="api/refs/ui.list.md">ui.list</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/selectionmodel.md">SelectionModel</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/ui.proto.md">ui.proto</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/copypaste.md">CopyPaste</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.grouplist_add.md - adds an item to the store
 - api/link/ui.grouplist_addcss.md - applied CSS class to a component item
 - api/link/ui.grouplist_adjust.md - adjusts the component to the size of the parent HTML container
@@ -111,16 +111,17 @@ of the component
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/link/ui.grouplist_onafteradd_event.md - fires after adding item to datastore
 - api/link/ui.grouplist_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.grouplist_onafterdelete_event.md - fires after item deleting
 - api/link/ui.grouplist_onafterdrop_event.md - fires after drag-n-drop was finished
 - api/link/ui.grouplist_onafterload_event.md - fires after xml loading is complete
 - api/link/ui.grouplist_onafterrender_event.md - occurs immediately after the component has been rendered
+- api/link/ui.grouplist_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.grouplist_onafterselect_event.md - fires after item was selected
 - api/link/ui.grouplist_onaftersort_event.md - fires after sorting dataset
 - api/link/ui.grouplist_onbeforeadd_event.md - fires before adding item to datastore
@@ -143,21 +144,27 @@ Events
 - api/link/ui.grouplist_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.grouplist_onitemrender_event.md - for each item rendering, occurs only for items with custom templates
 - api/link/ui.grouplist_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
+- api/link/ui.grouplist_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.grouplist_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.grouplist_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.grouplist_onmouseout_event.md - fires when the mouse was moved out from the specified item
 - api/link/ui.grouplist_onpaste_event.md - fires when the user presses CTRL+V keys combination
+- api/link/ui.grouplist_onrotate_event.md - occurs on screen rotating
 - api/link/ui.grouplist_onselectchange_event.md - fires after selection state was changed
+- api/link/ui.grouplist_onswipex_event.md - 
+- api/link/ui.grouplist_onswipey_event.md - 
+- api/link/ui.grouplist_ontouchend_event.md - 
+- api/link/ui.grouplist_ontouchmove_event.md - 
+- api/link/ui.grouplist_ontouchstart_event.md - 
 - api/link/ui.grouplist_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation
 - api/link/ui.grouplist_onvalidationsuccess_event.md - fires after the newlyloaded/added/edited data has passes validation successfully
 - api/link/ui.grouplist_onviewresize_event.md - view size was changed by resizer
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.grouplist_animate_config.md - defines or disables view change animation.
 - api/link/ui.grouplist_autoheight_config.md - height of view will be adjusted to show all items
 - api/link/ui.grouplist_autowidth_config.md - width of view will be adjusted to show all items
@@ -214,10 +221,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.grouplist_$drag_other.md - method called when drag operation initiated
 - api/link/ui.grouplist_$draghtml_other.md - defines how dragged item will look
 - api/link/ui.grouplist_$dragin_other.md - method called when item moved on possible drop landing during dnd

@@ -1,14 +1,16 @@
 UI Manager
 =============
 
-Each time you create a component on the page, even a single one, **UIManager** module is initialized (though indirectly). Its main tasks are to 
+Each time you create a component on the page, even a single one, **UIManager** module is initialized (though indirectly). Its main tasks are:
 
-- control which component (and component item) is focused at the moment;
-- set and remove focusing;
-- assign keyboard events to the component in focus;
-- memorize the component's outer scheme. 
+- watching which component (and component item) is focused at the moment;
+- setting and removing focusing;
+- assigning keyboard events to the component in focus;
+- memorizing the component's outer scheme. 
 
-At the same time, you can set and remove focus programmatically with the help of two opposite methods - **focus()** and **blur()** that are called from the component object. It can be
+###Focusing Methods
+
+You can set and remove focus programmatically with the help of two opposite methods - **focus()** and **blur()** that are called from the component object. It can be
 specified in the component's **ready** property to set/remove focusing on page loading. 
 
 The **focus()** method is either used without parameters or takes an **ID** or **name** of an item as an argument. In the latter case, focus is set to this item rather to the whole component. 
@@ -19,30 +21,16 @@ $$('my_toolbar').blur(); //the toolbar is no longer in focus
 
 $$('my_toolbar').focus('my_text'); 
 // a text input with ID/name = "mytext" on this toolbar is focused
+
+$$("form").focus(); //the first focusable element in the form is focused
 ~~~
 
-UIManager makes 'focus events' possible (onFocus, onFocusChange). For instance, **onFocusChange** event is triggered each time focus is shifted from one component to another. 
+Through UI Manager you can control focus with the following methods that are called from UIManager with the ID of the needed view as an argument: 
 
-The following code retrieves the ID of the view that is in focus now and puts in into the console log. There isn't great practical use from it, yet it shows how UI Manager works. 
-
-
-{{snippet
-Watching focus changes
-}}
-~~~js
-webix.attachEvent("onFocusChange", function(view, prev_view) {
-		webix.console.log("focused: " + (!view ? 'null' : view.config.id));
-		});
-~~~
-
-{{sample 15_datatable/04_editing/01_basic.html }}
- 
-Through UI Manager you can manage focus in the app with the help of the following methods (all of them are called from UIManager with the ID of the needed view as an argument): 
-
-- **getFocus** - returns the view object that is currently focused; 
-- **setFocus** - sets focus into the specified location;
-- **hasFocus** - checks whether the component is in focus and returns *true* or *false* respectively
-- **canFocus** - checks whether the component can take focus. Invisible (hidden) views and their items as well as disabled views cannot be focused. 
+- **getFocus**() - returns the view object that is currently focused; 
+- **setFocus**(id) - sets focus into the specified location;
+- **hasFocus**(id) - checks whether the component is in focus and returns *true* or *false* respectively
+- **canFocus**(id) - checks whether the component can take focus. Invisible (hidden) views and their items as well as disabled views cannot be focused. 
 
 {{snippet
 Focusing an item with ID 'books'
@@ -52,16 +40,131 @@ webix.ui({
 	id:"books",
 	view:"list"
     ...
-   })
+});
 
 webix.UIManager.setFocus("books");
 ~~~
 
-##Attaching Keyboards Events to the Components. 
+###Focusing Events
 
-Keyboard events are essential in managing the app from keyboard devices.  You can navigave through the app as well as within several components with the help of usual keys like 'up' and 'down', 'delete', 'tab', etc. 
+Every Webix component features a pair of focusing events **onFocus** and **onBlur**: 
 
-Keyboard can be connected to your application in two ways: 
+~~~js
+$$("datatable1").attachEvent("onFocus", function(current_view, prev_view){
+	//current_view if the datatable in question
+});
+
+$$("datatable1").attachEvent("onBlur", function(prev_view){
+	//prev_view if the datatable in question
+});
+~~~
+
+In addition, Webix **onFocusChange** [global event](desktop/event_handling.md#globalwebixevents)) is triggered each time focus is shifted from one component to another. The following code retrieves the ID of the view that is 
+in focus now and puts in into the console log. 
+
+
+{{snippet
+Watching focus changes
+}}
+~~~js
+webix.attachEvent("onFocusChange", function(current_view, prev_view) {
+	webix.console.log("focused: " + (!view ? 'null' : view.config.id));
+});
+~~~
+ 
+
+
+##Keyboards Events and Hotkeys
+
+###Built-in Keyboard Events 
+
+1) 'Esc' key closes a non-modal [window](desktop/window.md) when it is focused. 
+
+2) 'Esc', 'space' and 'enter' keys are enabled by default for [modal message boxes](desktop/message_boxes.html#modalwindowsandkeyboardinteraction).
+
+3) [Editors](desktop/editing.md) of data component items react on the following keys: 
+
+- 'esc' - to close without saving data changes;
+- 'enter' - to close with data changes saved.
+
+For other situations keyboard can be connected to your application in several ways: 
+
+###Attaching Hot keys
+
+####Component Navigation Keys
+
+Hotkeys for navigation (arrow keys, Home, End, Page Up, Page Down) in data components like [datatable](datatable/index.md) and [list](desktop/list.md) can be enabled by [navigation](api/keysnavigation_navigation_config.md) property: 
+
+~~~js
+{ view:"datatable",  navigation:true }
+~~~
+
+{{sample 15_datatable/05_selection/09_navigation.html}}
+
+Other data components need to be extended with the [KeysNavigation](api/refs/keysnavigation.md) module. Consult the [dedicated article](desktop/selection.md#navigation) for details. 
+
+####Hotkeys for Controls
+
+For controls there exists a possibility to define a hotkey that will trigger it onClick event. The key name (e.g. 'enter' or 'space') is specified by **hotkey** property: 
+
+~~~js
+{ view:"button", click: doOnClick, hotkey: "enter" }
+~~~
+
+{{sample 13_form/02_api/12_hotkey.html}}
+
+The *doOnClick* function will fire now either or pressing 'enter' or on clicking. 
+
+Key combinations joined by **+** or **-** sign are as well possible: 
+
+~~~js
+{ view:"button", click: doOnClick, hotkey: "enter-shift" }
+~~~
+
+Note that such functionality will work with simple controls like buttons and inputs, not with multiple-choice one. 
+
+####Defining Custom Hotkeys
+
+The [addHotKey](api/uimanager_addhotkey.md) function is called from the UIManager object and has two mandatory parameters - key name and event handler. Key combinations joined by **+** or **-** sign are as well possible. 
+
+You can make hot keys **global**, which means that they will trigger the function regardless of the component. The one in focus will be subject to hot key actions. 
+
+~~~js
+webix.UIManager.addHotKey("Ctrl+V", function() { 
+	webix.console.log("Ctrl+V for any");
+});
+~~~
+
+At the same time, you can specify any instance of a **Webix component** that should react on this or that hot key by passing the its into the function as a third parameter. 
+
+In case you want all the view instances react on the specified hot key, state the view name instead of ID: 
+
+~~~js
+//hot keys for the component with 'details' ID
+webix.UIManager.addHotKey("Ctrl+Enter", function() { 
+	webix.console.log("Ctrl+Enter for details"); 
+    return false; 
+}, $$('details')); // for "details" list only
+
+
+//hot keys for all list instances on the page.
+webix.UIManager.addHotKey("Ctrl+Space", function() { 
+	webix.console.log("Ctrl+Space is detected for list"); 
+}, 'list'); // for all lists on the page
+~~~
+
+{{sample 15_datatable/04_editing/01_basic.html }}
+
+**Removing Hotkeys**
+
+The [addHotKey](api/uimanager_addhotkey.md) function returns a hotkey object that can be used to remove this hotkey: 
+
+~~~js
+var list_key = webix.UIManager.addHotKey("Ctrl+Space", function() { ... }, 'list');
+
+webix.UIManager.removeHotKey(list_key);
+~~~
+
 
 ###Attaching Keyboard events 
 
@@ -76,11 +179,11 @@ In the code below the 'Enter' key opens 'details' accordionitem. Before this, yo
 }}
 ~~~js
 $$("books").attachEvent("onKeyPress", function(code, e) {
-if (code === 13 && !e.ctrlKey && !e.shiftKey && !e.altKey) {
-					$$('details').getParentView().expand('details');
-					return false;
-                    }
-   });
+	if (code === 13 && !e.ctrlKey && !e.shiftKey && !e.altKey) {
+		$$('details').getParentView().expand('details');
+	return false;
+    }
+});
 ~~~
 
 These events require that a developer should know key codes used by UI Manager. Here they are: 
@@ -107,34 +210,6 @@ These events require that a developer should know key codes used by UI Manager. 
 - 'meta': 91,
 - 'win': 91,
 - 'mac': 91
-
-###Attaching Hot keys
-
-When defining a hot key for your application, you should specify its name and a function triggered on its pressing. Key combinations are as well possible. 
-
-The function is called from the UIManager object. Its 'must-have' arguments are key names and the event handler. In this case, hot keys become global, which means that they will fire the function regardless of the component. 
-The one in focus will be subject to hot key actions. 
-
-~~~js
-webix.UIManager.addHotKey("Ctrl+V", function() { webix.console.log("Ctrl+V for any"); });
-~~~
-
-At the same time, you can define which object should react on this or that hot key by passing the component ID into the **addHotKey()** function as a third parameter. 
-
-In case you want all the view instances react on the specified hot key, state the view name instead of ID: 
-
-~~~js
-//hot keys for the component with 'details' ID
-webix.UIManager.addHotKey("Ctrl+Enter", function() { 
-		webix.console.log("Ctrl+Enter for details"); return false; }, $$('details')); // for "details" list only
-
-
-//hot keys for all list instances on the page.
-webix.UIManager.addHotKey("Ctrl+Space", function() { 
-		webix.console.log("Ctrl+Space is detected for list"); }, 'list'); // for all lists on the page
-~~~
-
-{{sample 15_datatable/04_editing/01_basic.html }}
 
 ##Saving and Restoring Application State
 
@@ -187,7 +262,7 @@ Saving and getting the state is also available for the treecomponent, where simi
 UIManager helps save and restore only the outer view parameters while inner ones like selection and scrolling direction are saved within the [DataState](api__refs__datastate.html) module. 
 }}
 
-##Tab Navigation 
+##Global Tab Navigation 
 
 ###Tab/focus Order Logic
 
@@ -211,7 +286,7 @@ then move to the other, then will proceed to other components and return to the 
 If you want to exclude a single component from tab navigation order, make use of the **tabFocus** property, which is true by default:
 
 ~~~
-	{view:'text' tabFocus: false, ... }
+{view:'text' tabFocus: false, ... }
 ~~~
 
 {{note
@@ -226,11 +301,12 @@ The 'tab-navigated' components must be children of one and the same layout since
 Tab Navigation between form and toolbar
 }}
 ~~~js
-webix.ui({rows:[
+webix.ui({
+	rows:[
 		{view:"form",..},
-        {view:"toolbar",...}
+    	{view:"toolbar",...}
 	]
-	})
+});
 ~~~
 
 In case of two separate webix.ui constructors you have two separate objects without the possibility to shift focus from one to the other with the help of a 'tab' key. So move a mouse pointer instead.
@@ -242,11 +318,11 @@ Tab navigation won't work!
 ~~~js
 webix.ui({
 	view:"form", ..config..
-		});
+});
         
 webix.ui({
 	view:"toolbar", ..config..
-		});
+});
 ~~~
 
 

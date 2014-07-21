@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/link/ui.scrollview_animate_config.md - defines or disables view change animation.
 - api/ui.scrollview_body_config.md - the view object that needs scrolling
 - api/link/ui.scrollview_borderless_config.md - used to hide the component borders

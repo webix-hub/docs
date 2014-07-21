@@ -1,7 +1,7 @@
 Offline Support
 ==============================
 
-Offline support allows for storing serverside data locally in your browser cache which helps you go on working with data components after refresh when connection to server fails. 
+Offline support allows storing serverside data locally in your browser cache which helps you go on working with data components after refresh when connection to server fails. 
 
 ##Saving the whole page via Cache Manifest
 
@@ -27,7 +27,10 @@ data/data.json //data-loading file
 
 ##Offline Support for Webix Component Data
 
-Offline support is implemented via two load and save modes - **offline** and **cache**. 
+Offline support is implemented via three load and save modes:
+
+- **offline** and **cache** - both working with serverside data that is additionally stored locally; 
+- **local** - works with local storage data only. 
 
 ###Offline Mode
 
@@ -97,6 +100,25 @@ $$("datatable1").load( webix.proxy("cache", "post->url.php"));
 
 In essense, the prefix signifies integration with a dedicated **proxy object** that contains all the logic of offline storage. [Proxy objects](desktop/server_proxy.md) are described separately.
 
+###Local Mode
+
+When you work in local mode, your component deals with local storage objects only. You can load data from local storage and save it there without any serverside part. 
+
+Webix works with cache through its **webix.storage.local** interface. See the description of [caching logic](desktop/offline.md#app).
+
+In local mode, you should provide names of **localStorage objects** instead of urls:
+
+~~~js
+{
+	view:"datatable",
+    id:"datatable1",
+    ..config..
+	save: "cache->mydata",
+	url: "cache->mydata"
+}
+~~~
+
+Neither offline nor cache modes allow accessing localStorage objects, but local mode makes it possible.
 
 ##Working with Cached Data 
 

@@ -89,7 +89,7 @@ template:function(obj){return (obj%20?"":obj)
 - **origin** (number) - it's the property of the chart constructor, not the xAxis object. However, its value affects the position of x-Axis relative to the Y-axis. Data items with values lower that the stated one,
 are displayed below the line. 
 
-there exist a [possibility to create a fully custom axis](desktop/custom_x_axis.md) for working with dates. 
+There exists a [possibility to create a fully custom axis](desktop/custom_x_axis.md) for working with dates. 
 
 ####Offset 
 For [line](desktop/line_charts.md), [scatter](desktop/scatter_chart.md) and [area](desktop/area_charts.md) charts you can set the api/ui.chart_offset_config.md property which defines whether the first item of the scale 
@@ -98,9 +98,6 @@ will be drawn with the offset equal to the half of the scale's step (relative to
 The default value for [line](desktop/line_charts.md) and [scatter](desktop/scatter_chart.md) charts is *true*. The default value for [area](desktop/area_charts.md) charts is *false*.
 
 <img src="desktop/chart_offset.png">
-
-
-
 
 ~~~js
 webix.ui({
@@ -117,9 +114,24 @@ webix.ui({
 
 {{sample 08_chart/05_line_chart/03_scale.html}}
 
+##Logarithmic Scale
 
+Webix charts are equipped with two types of **scale**:
 
-    
+- **"linear"** - used in all charts by default;
+- **"logarithmic"** - enabled by chart **scale** property:
+
+~~~js
+webix.ui({
+	view:"chart",
+	type:"bar",
+	scale: "logarithmic",
+    ...
+});
+~~~
+
+{{sample 08_chart/11_scale/04_logarithmic_y.html}}
+
 ##Titles for the Axes
 
 <img src="desktop/chart_titles.png" />

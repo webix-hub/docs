@@ -1,6 +1,6 @@
 DataTable Sorting
 =======
-DataTable allows you to sort data rows on the client side.
+DataTable allows you to <a href="http://webix.com/widget/datatable/" title="sort datatable component">sort data rows</a> on the client side.
 There are 2 ways to invoke sorting in the table:
 
 1. [By a single click on the header of a column with the enabled **sort** attribute](#sortingbyaclickontheheader);
@@ -16,6 +16,8 @@ Each next click on the same header will reverse the sorting direction.
 
 Columns can have different type of content (numbers, strings, dates) and each type of content requires its specific way of sorting.
 
+###Sorting Modes for Different Data Types
+
 For this purpose, DataTable provides 4 sorting types to ensure correct sorting of columns:
 
 1. *int*;
@@ -23,7 +25,7 @@ For this purpose, DataTable provides 4 sorting types to ensure correct sorting o
 3. *string*;
 4. *string_strict* (case-sensitive 'string').
 
-To enable sorting and assign the appropriate sorting type to a column, you should specify attribute **sort** of the [columns](api/ui.datatable_columns_config.md) parameter 
+To enable sorting and assign the appropriate sorting type to a column, you should specify an attribute **sort**  among the [column's parameters](api/ui.datatable_columns_config.md) 
 and set it to some of types.
 
 {{snippet
@@ -42,6 +44,70 @@ grid = new webix.ui({
 
 {{sample 15_datatable/02_sorting/01_builtin.html }}
 
+{{note
+The above mentioned sorting modes work with column values defined by their **ID** attributes and ignore values either defined by column templates or provided by column options.
+}}
+
+In the sample column below column titles are sorted, yet categories are displayed (column template overrides column ID during rendering):
+
+~~~js
+{ id:"title",	template:"#cat_id#", header:"Category ID" }
+~~~
+
+In the sample column  below option IDs are sorted, yet option values are displayed:
+
+~~~js
+{ id:"cat_id",  header:"Category", collection:[
+	{ id:1, value:"Crime"}, { id:2, value:"Thriller" }]  
+}
+~~~
+
+
+###Sorting by visible text
+
+Sorting by visible text is enabled width the help of **"text"** sorting mode that switches on **string** comparison for the values actually displayed in datatable columns. 
+
+It takes into account column values defined by **templates**  and collection **values** rather than IDs:
+
+~~~js
+columns:[
+	{ id:"title",template:"#cat_id#", header:"Category ID", sort:"text" },
+	{ id:"cat_id",  header:"Category",sort:"text", collection:[
+    	{ id:1, value:"Crime"}, { id:2, value:"Thriller" }]
+    }
+]
+~~~
+
+{{sample 15_datatable/02_sorting/04_by_text.html}}
+
+###Triggering Server-side Sorting on Client-side
+
+It's possible to issue a request to server to sort data in backend and reload the sorted dataset to the datatable: 
+
+The option is enabled by **server** sorting mode: 
+
+~~~js
+view:"datatable",
+columns:[
+	{ id:"package",	header:"Name", sort:"server"},
+    {..}
+],
+url:"data.php"
+~~~
+
+{{sample 40_serverside/01_php_vanila/11_datatable_sort_filter.html}}
+
+Now, header clicking will trigger a serverside GET request with the following parameter: *sort[package]=desc* (data.php?sort[package]=desc), which allows sending: 
+
+- **operation name** (sort);
+- **data property** to sort by (here: package);
+- **sorting order** (here: desc).  
+
+The new data will be loaded to the datatable and replace the initial dataset. 
+
+{{note
+If [serverFilter](datatable/filtering.md) is enabled for this column, the data will be both filtered and sorted on serverside before returning to client. 
+}}
 
 Custom sorting functions
 -------------------------------------------------

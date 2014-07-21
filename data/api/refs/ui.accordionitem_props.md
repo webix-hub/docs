@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/link/ui.accordionitem_animate_config.md - defines or disables view change animation.
 - api/ui.accordionitem_body_config.md - defines the cell content (a view or some HTML)
 - api/link/ui.accordionitem_borderless_config.md - used to hide the component borders

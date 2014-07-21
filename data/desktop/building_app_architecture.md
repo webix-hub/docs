@@ -86,9 +86,10 @@ webix.ui({
 ##Scrollview, Carousel, Form
 
 All of them are divided into **rows** and **cols** like layout, yet you need to initialize them directly.
-	- **scrollview** is standard layout with a **scrollbar**;
-    - **carousel rows** and **cols** are shown in turn, one by one, on clicking dedicated buttons or swiping (on touch devices);
-    - **form rows** and **cols** create a layout for controls. 
+
+- **scrollview** is standard layout with a **scrollbar**;
+- **carousel rows** and **cols** are shown in turn, one by one, on clicking dedicated buttons or swiping on touch devices;
+- **form rows** and **cols** create a layout for controls. 
 
 {{snippet
 Scrollview
@@ -137,6 +138,7 @@ In this case, a switching button is not needed as tabs perform this function.
 
 ~~~js
 webix.ui({
+	view:"tabview", //optional line
 	tabs:[
     	{id:"1", ...},
         {id:"2", ...}
@@ -150,15 +152,46 @@ webix.ui({
 
 More about [Multiview](desktop/multiview.md) and [Tabview](desktop/tabview.md). 
 
+##Isolating IDs inside Layouts
+
+The features is true to all the layout types described above. It allows for **using the same IDs** for components lying in different layout sections while preserving the ability to **access the needed component** without ambiguity. 
+
+Layout section should be equipped with an [isolate](api/ui.layout_isolate_config.md) property:
+
+~~~js
+webix.ui({
+   cols:[
+     { id:"col1", isolate:true, rows:[ 
+        { view:"list", id:"mylist" },
+     ]},
+     { id:"col2", isolate:true, rows:[
+        {view:"list", id:"mylist" },
+     ]}
+   ]
+});
+~~~
+
+The [list](desktop/list.md) view is used twice in the "app" but in different layout columns with **isolate** functionality switched on. 
+
+To address such lists separately, use yhe ID of its parent layout section:
+
+~~~js
+var list1 = $$("col1").$$("mylist");
+var list2 = $$("col2").$$("mylist");
+
+//Otherwise, you'll get the last view 
+var list2 = $$("mylist");
+~~~
+
 ###What's Next
 
-To learn how to set various **border types** or create a borderless design, consult the [dedicated article](desktop/borders.md).
-
-To learn how to **set headers** for components in layout rows, cols, multiview cells, etc, study the [corresponding article](desktop/setting_headers.md).
-
-Layouts can be **sized** according to common rules described in the [Sizing Components](desktop/dimensions.md) article. 
+- To learn how to set various **border types** or create a borderless design, consult the [dedicated article](desktop/borders.md).
+- To learn how to **set headers** for components in layout rows, cols, multiview cells, etc, study the [corresponding article](desktop/setting_headers.md).
+- Layouts can be **sized** according to common rules described in the [Sizing Components](desktop/dimensions.md) article. 
+- Layouts can respond to changes of window size. Learn [how to tune responsive behaviour](desktop/responsive_layout.md).
 
 @index:
   - desktop/view.md
+  - desktop/responsive_layout.md
 
 @complexity:1

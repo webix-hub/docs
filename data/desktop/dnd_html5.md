@@ -36,7 +36,8 @@ function drag(ev){
 
 When the dragged node is dropped on the target grid item, we **get the data from DataTransfer** and parse it into the item.
 
-HTML5 events are handled with api/_event.md method that takes *node* or its *ID*, *event type*, *event handler* and *"this" object* as parameters. Event names are passed without **on** prexix:
+HTML5 events are handled with api/_event.md method that takes **node** or its **ID**, **event type**, **event handler** and **"this" object** as parameters. 
+Event names are passed without **on** prefix:
 
 ~~~js
 webix.event(mygrid.$view, "drop", function(e){ 

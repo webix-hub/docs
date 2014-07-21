@@ -7,10 +7,19 @@ master
 
 @type: object
 @example:
+var dp = new webix.DataProcessor({
+	master: $$('mydatatree'),
+	url: ""
+});
+
 
 
 @template:	api_config
 @defined:	DataProcessor	
+@related:
+	desktop/dataprocessor.md
+@relatedapi:
+	api/dataprocessor_store_config.md
 @descr:
 
 

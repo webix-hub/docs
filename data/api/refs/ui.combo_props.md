@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/link/ui.combo_align_config.md - the alignment of the control within the parent container
 - api/link/ui.combo_animate_config.md - defines or disables view change animation.
 - api/link/ui.combo_attributes_config.md - sets an hash of HTML input attributes that will be parsed for the Webix input control
@@ -15,6 +15,7 @@ Properties
 - api/link/ui.combo_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.combo_height_config.md - sets the height of the component
 - api/link/ui.combo_hidden_config.md - defines whether the view will be hidden initially
+- api/link/ui.combo_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/link/ui.combo_icon_config.md - sets an icon type
 - api/link/ui.combo_id_config.md - the component ID
 - api/link/ui.combo_inputheight_config.md - the height of the input area, or a button's text value area.
@@ -30,8 +31,10 @@ Properties
 - api/link/ui.combo_name_config.md - name of the control
 - api/link/ui.combo_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.combo_options_config.md - defines data items of the drop-down list
+- api/link/ui.combo_placeholder_config.md - placeholder text for the input
 - api/link/ui.combo_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.combo_popupwidth_config.md - width of the popup window
+- api/link/ui.combo_readonly_config.md - configures readonly mode for the input
 - api/link/ui.combo_relatedaction_config.md - action to call when value of cell changes
 - api/link/ui.combo_relatedview_config.md - id of view, that will be affected by relatedAction operation
 - api/link/ui.combo_required_config.md - marks field as required
@@ -39,6 +42,7 @@ Properties
 - api/link/ui.combo_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/link/ui.combo_template_config.md - the component template
 - api/link/ui.combo_text_config.md - visible text in the related input
+- api/link/ui.combo_tooltip_config.md - tooltip for the input
 - api/link/ui.combo_type_config.md - the type of the control
 - api/link/ui.combo_validate_config.md - adds validation to the field
 - api/link/ui.combo_validateevent_config.md - on which event validation fires
@@ -59,6 +63,7 @@ Properties
 - api/link/ui.combo_gravity_config.md
 - api/link/ui.combo_height_config.md
 - api/link/ui.combo_hidden_config.md
+- api/link/ui.combo_hotkey_config.md
 - api/link/ui.combo_icon_config.md
 - api/link/ui.combo_id_config.md
 - api/link/ui.combo_inputheight_config.md
@@ -74,8 +79,10 @@ Properties
 - api/link/ui.combo_name_config.md
 - api/link/ui.combo_on_config.md
 - api/link/ui.combo_options_config.md
+- api/link/ui.combo_placeholder_config.md
 - api/link/ui.combo_popup_config.md
 - api/link/ui.combo_popupwidth_config.md
+- api/link/ui.combo_readonly_config.md
 - api/link/ui.combo_relatedaction_config.md
 - api/link/ui.combo_relatedview_config.md
 - api/link/ui.combo_required_config.md
@@ -83,6 +90,7 @@ Properties
 - api/link/ui.combo_tabfocus_config.md
 - api/link/ui.combo_template_config.md
 - api/link/ui.combo_text_config.md
+- api/link/ui.combo_tooltip_config.md
 - api/link/ui.combo_type_config.md
 - api/link/ui.combo_validate_config.md
 - api/link/ui.combo_validateevent_config.md

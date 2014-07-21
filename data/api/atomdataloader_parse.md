@@ -14,7 +14,6 @@ parse
 
 	
 @example:
-~~~js
 webix.ui({
 	id:"data",
 	view:"dataview",
@@ -25,8 +24,8 @@ var str = "<data><item id='1'><title>The Lord of the Rings</title><year>2003</ye
 str += "<item id='2'><title>Star Wars: Episode V</title><year>1980</year></item></data>";
 
 $$("data").parse(str,"xml");
-~~~
 
+@descr:
 If you want to parse data in addition to the existing dataset, specify **position** of parsing, 
 namely the **index** from which you insert new data:
 
@@ -37,8 +36,6 @@ $$("datatable").parse({
 });
 ~~~
 
-@related:
-	desktop/data_loading.md
 @relatedapi:
 	api/atomdataloader_load.md
 	api/atomdataloader_data_config.md
@@ -52,6 +49,6 @@ $$("datatable").parse({
 	desktop/data_loading.md
 @template:	api_method
 @defined:	AtomDataLoader	
-@descr:
+
 
 

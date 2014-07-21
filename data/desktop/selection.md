@@ -23,10 +23,15 @@ The items will be selected on mouse click.
 
 ###Selection of Multiple Items
 
-To enable selection of several items clicked in succession with 'Ctrl' key pressed, you should switch the component to the multiselect mode. 
+- To enable selection of several items clicked in succession with **'Ctrl'** key pressed, you should switch the component to the **multiselect** mode. 
+- To enable multiselection by clicking items (or tapping them on **touch** devices) you should additionally switch to **"touch"** variation of multiselection. 
+
 
 ####Dataview, List and Tree Multiselection
 
+{{snippet
+"Ctrl"+click mutliselection
+}}
 ~~~js
 webix.ui({
 	view:"list",
@@ -35,12 +40,40 @@ webix.ui({
 })
 ~~~
 
+{{snippet
+"Touch" mutliselection
+}}
+~~~js
+webix.ui({
+	view:"list",
+    select:"multiselect",
+    multiselect:"touch"
+    ..// config
+})
+~~~
+
 ####Datatable and Treetable Multiselection
 
+
+{{snippet
+"Ctrl"+click mutliselection
+}}
 ~~~js
 webix.ui({
 	view:"datatable",
-    multiselect:true, //multiple selection of cells
+    multiselect:true,
+    select:'cell', //multiple seelction of cells
+    ...// config
+})
+~~~
+
+{{snippet
+"Touch" mutliselection
+}}
+~~~js
+webix.ui({
+	view:"datatable",
+    multiselect:"touch", 
     select:'cell',
     ...// config
 })
@@ -60,6 +93,7 @@ webix.ui({
 ~~~
 
 {{sample 17_datatree/04_api/04_multi_select.html }}
+
 
 {{note
 Datatable and treetable feature more selection modes that are described in the [datatable documentation](datatable/selection.md). 
@@ -87,5 +121,34 @@ $$('dataview').select([2,3,4]); the items with IDs equalling to 2, 3 and 4
 - **unselect()** and **unselectAll()** - the functions work  similar to the above mentioned and deselect items according to the same principles;
 - **isSelected(int)** - the function checks whether the item with this ID is selected. Returns *true* or *false*;
 - **getSelectedId()**  - the function doesn't take any parameters. It returns the ID of a selected item or an array of IDs in case of multiselect mode. 
+
+##Keyboard navigation {#navigation}
+
+Keyboard navigation can be used for the component with enabled selection.
+
+~~~js
+webix.ui({
+	view:"list",
+    select:true,
+    navigation:true
+});
+~~~
+
+{{sample 15_datatable/05_selection/09_navigation.html}}
+
+{{note
+Note than not all data components support navigation by default. Then **KeysNavigation** module should be added manually.
+}}
+
+~~~js
+webix.ui({
+	view:'dataview', id:"dataview1", select:true, navigation:true
+});
+
+webix.extend($$('dataview1'), webix.KeysNavigation);
+~~~
+
+The code above adds navigation only to this instance of a Dataview, still it's possible to provide the functionality for all dataviews in the app.  
+For more details, refer to [Component Extending](desktop/extend.md#extendedfunctionality) article.
 
 @complexity:1

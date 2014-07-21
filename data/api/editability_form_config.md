@@ -17,7 +17,9 @@ webix.ui({
   view:"datatable", editable:true, form:"popupform"
 });
 
-
+@related:
+	desktop/edit.md
+    desktop/editing.md
 
 @template:	api_config
 @descr:

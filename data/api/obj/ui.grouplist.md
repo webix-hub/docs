@@ -2,7 +2,7 @@
 {{memo a vertical list of items grouped into sections by some category}}
 
 The component provides navigation within the list and between the sections. 
-Support for various data template formats, sorting and filtering features. Check [grouplist](desktop__grouplist.md) documentation for more detailed description.
+Support for various data template formats, sorting and filtering features. Check [grouplist](desktop/grouplist.md) documentation for more detailed description.
 
 ### Constructor
 

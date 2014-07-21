@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/treestatecheckbox_checkall.md - check all items in tree
 - api/treestatecheckbox_checkitem.md - checks the checkbox	related to the specified item
 - api/treestatecheckbox_getchecked.md - returns ids of the checked items

@@ -19,8 +19,8 @@ List data is filtered according to the option you choose within a [richselect](d
 
 ~~~js
 $$('list').bind($$('richselect'), function(obj, filter){
-				return obj.category == filter; //reference to list data object
-			});
+	return obj.category == filter; //reference to list data object
+});
 ~~~
 
 The function takes **data object** and **filter** as parameters. If you work with serverside data, specify *table name* instead of the "obj". 
@@ -35,9 +35,10 @@ The function takes **data object** and **filter** as parameters. If you work wit
 
 ~~~js
 $$("files").bind($$("folders"));
-		$$("files").attachEvent("onbindapply", function(){
-			$$("preview").setHTML(" ");
-		}); // makes the preview template empty
+
+$$("files").attachEvent("onbindapply", function(){
+	$$("preview").setHTML(" ");
+}); // makes the preview template empty
 ~~~
 
 ##Default Data to Prevent Undefined Values
@@ -132,8 +133,8 @@ method that makes simultaneous saving of several forms. It is called from the ma
 
 ~~~js
 $$('myStore').saveBatch(function(){
-        $$('myform1').save();
-        $$('myform2').save();
+     $$('myform1').save();
+     $$('myform2').save();
 });
 ~~~
 
@@ -192,12 +193,13 @@ Saving data from the form to the component (and the database table) is a three-s
 
 ~~~js
 save_order:function(){
-		var form = $$("myform1");
-		if (form.isDirty()){ //checking for chages
-			if (!form.validate()) return false; //validation
-			form.save(); //saving to the component
-		}
-		return true;
+	var form = $$("myform1");
+	if (form.isDirty()){ //checking for chages
+		if (!form.validate()) return false; //validation
+		form.save(); //saving to the component
+	}
+	return true;
+}
 ~~~
 
 

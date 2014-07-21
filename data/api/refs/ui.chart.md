@@ -6,7 +6,7 @@ ui.chart
 
 The library supports the most common chart types:line, spline, area, bar, pie, donut, scatter, radar.
 You can customize appearance of a chart through colors, tooltips, templates, scales, labels.
-It's possible to present multiple data sets on the same chart.  Check [chart](desktop__chart.md) documentation for more detailed description.
+It's possible to present multiple data sets on the same chart.  Check [chart](desktop/chart.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -25,10 +25,10 @@ It's possible to present multiple data sets on the same chart.  Check [chart](de
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/group.md">Group</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.chart_add.md - adds an item to the store
 - api/ui.chart_addseries.md - adds an additional graph to the chart
 - api/link/ui.chart_adjust.md - adjusts the component to the size of the parent HTML container
@@ -87,15 +87,16 @@ of the component
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/link/ui.chart_onafteradd_event.md - fires after adding item to datastore
 - api/link/ui.chart_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.chart_onafterdelete_event.md - fires after item deleting
 - api/link/ui.chart_onafterload_event.md - fires after xml loading is complete
 - api/ui.chart_onafterrender_event.md - called after the rendering of calendar is complete.
+- api/link/ui.chart_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.chart_onaftersort_event.md - fires after sorting dataset
 - api/link/ui.chart_onbeforeadd_event.md - fires before adding item to datastore
 - api/link/ui.chart_onbeforecontextmenu_event.md - fires before the context menu is called in the item area
@@ -110,17 +111,23 @@ Events
 - api/link/ui.chart_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.chart_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.chart_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
+- api/link/ui.chart_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.chart_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.chart_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.chart_onmouseout_event.md - fires when the mouse was moved out from the specified item
+- api/link/ui.chart_onrotate_event.md - occurs on screen rotating
+- api/link/ui.chart_onswipex_event.md - 
+- api/link/ui.chart_onswipey_event.md - 
+- api/link/ui.chart_ontouchend_event.md - 
+- api/link/ui.chart_ontouchmove_event.md - 
+- api/link/ui.chart_ontouchstart_event.md - 
 - api/link/ui.chart_onviewresize_event.md - view size was changed by resizer
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/ui.chart_alpha_config.md - defines the opacity of chart items
 - api/link/ui.chart_animate_config.md - defines or disables view change animation.
 - api/ui.chart_barwidth_config.md - the width of bars
@@ -191,10 +198,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.chart_$getsize_other.md - returns the current size of the component
 - api/link/ui.chart_$height_other.md - current height of the view
 - api/link/ui.chart_$scope_other.md - scope for resolving event and method names

@@ -6,10 +6,10 @@ markup
 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/markup_init.md - inits Webix component defined by markup in HTML layout
 - api/markup_parse.md - inits a component defined by markup
 }}
@@ -17,10 +17,11 @@ Methods
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/markup_attribute_other.md - 
 - api/markup_datatag_other.md - 
 - api/markup_namespace_other.md - 

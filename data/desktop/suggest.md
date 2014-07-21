@@ -3,12 +3,22 @@ Suggest List
 
 Suggest is a **list of options** for input controls that aids form filling by suggesting the necessary value on the base of already typed text. 
 
-Suggest list can be used with the following with:
+Suggest list can be used with the following components:
 
 - Webix JS [text](desktop/controls.md#text) field;
 - standard HTML input;
 - [combo](desktop/controls.md#combo) and [richselect](desktop/controls.md#richselect) (is used instead of their *options* property);
-- **editor object** within an in-component item. 
+- [editor object](desktop/editing.md) within an in-component item. 
+
+Each time you enter a symbol into an input, suggest list is refiltered to match current input value. Default **timeout** between key pressing and filtering equals to 1ms, still it can be modified by the dedicated property. 
+
+~~~js
+{
+	view:"suggest",
+    data:[..] //or url:"some.php",
+    keyPressTimeout:100ms
+}
+~~~
 
 ###Suggest List Peculiarity
 
@@ -34,13 +44,13 @@ Suggest list can be initialized as:
 
 ~~~js
 webix.ui({
-		view: "suggest",
-		input: "country4", // will be linked to 'country4' input
-		data: [
-			{id:1, value: "Albania"},
-			{id:2, value: "Bhutan"},
-		... //list of suggest values can be as long as you wish
-		]
+	view: "suggest",
+	input: "country4", // will be linked to 'country4' input
+	data: [
+		{id:1, value: "Albania"},
+		{id:2, value: "Bhutan"},
+	... //list of suggest values can be as long as you wish
+	]
 });
 
 <input type='text' id='country4' value='Sweden' />"}
@@ -66,10 +76,9 @@ Suggest List with JSON data
 }}
 ~~~js
 var countries = [
-		{id:1, value: "Albania"},
-		{id:2, value: "Bhutan"},
-		...
-	];
+	{id:1, value: "Albania"},
+	{id:2, value: "Bhutan"}
+];
   
 { view:"text", label:"Country", value:"Belarus", suggest:countries}    
 ~~~
@@ -109,17 +118,16 @@ Suggest list can substitute **options** property for some controls. In this case
 ~~~js
 webix.ui({
 	view:"richselect", suggest:{
-    	data:[{id:1, value:"One"},
-        	  {id:2, value:"Two"}, .. //options list
-                ],
+    	data:[
+        	{id:1, value:"One"},
+        	{id:2, value:"Two"} //options list
+        ],
         ready: function(){
         	$$("richselect_1").setValue(this.getFirstId()); //defines the initially visible option
         }
     }
 });
 ~~~
-
-
 {{sample 80_docs/suggest_combo.html}}
 
 
@@ -135,58 +143,81 @@ Note that in this case, you must select any value from a suggest list, since it'
 
 Suggest can be inited for **combo** and **text** editors. To do this, make the following steps: 
 
-- create a suggest list as **separate view** and populate it with options;
+- create a suggest list as **separate view** and populate it with options:
 
 ~~~js
 var year_suggest = webix.ui({
-		view: "suggest",
-		data:...
+	view: "suggest",
+	data:[]
 });
 ~~~
 
-- create a component and specify the needed editor type for it: 
+Configuration of a suggest view coincides with that of a standard Webix [list](desktop/list.md).
+
+- create a component and specify **text** [editor type](desktop/editing.md) for it: 
 
 ~~~js
 webix.ui({
 	view:"datatable",
-    columns:
-    	[  //for text
-        	{id:"year", editor:"text"}
-           //for combo	
-            {id:"year", editor:"combo", suggest:year_suggest}
-        ]
-
+    columns:[  
+        {id:"year", editor:"text"},
+    ]
 });
 ~~~
 
 {{sample 15_datatable/04_editing/15_combo.html}}
 
-- (only for **text**) link suggest list to the input field of the editor object with the **linkInput** method:
+- link suggest list to the input field of the editor object with the **linkInput** method:
 
 ~~~js
-grida.attachEvent("onAfterEditStart", function(object) {
-		if (object.column == "year") { //only for editors in this column
-			var editor = this.getEditor(object);
-			year_suggest.linkInput(editor.getInput());
-		}
+grida.attachEvent("onAfterEditStart", function(object){
+	if (object.column == "year") { //only for editors in this column
+		var editor = this.getEditor(object);
+		year_suggest.linkInput(editor.getInput());
+	}
+});
+~~~
+
+- provide logic as well for the end of editing:
+
+~~~js
+grida.attachEvent("onAfterEditStop", function(object){
+	year_suggest.hide();
 });
 ~~~
 
 {{sample 15_datatable/04_editing/14_autosuggest.html}}
 
+{{note
+Suggest list can as well be attached to **combo** and **richselect** editors, yet then it looses its mstatus of 'adviser' and selection from it becomes compulsory.
+}}
+
+~~~js
+webix.ui({
+	view:"datatable",
+    columns:[  
+        {id:"year", editor:"combo", suggest:{
+        	data:[...], //or url:""
+            on:{
+				//events            
+            }
+        }},
+    ]
+});
+~~~
+
 ##Positioning Suggest List
 
-Suggest API offers the following variants of popup window positioning in relation to the text field it's inited for: 
+Suggest API offers the following variants of popup positioning in relation to the text field it's inited for: 
 
-- **"bottom"** (defualt). Doesn't require direct initialization;
-- **"top"**
-- **"left"**
-- **"right"**
+- **"bottom"** (default). Doesn't require direct initialization;
+- **"top"**;
+- **"left"**;
+- **"right"**.
 
 Since we speak here about **relative** position, the property to set it has the same name:
 
 ~~~js
-{ view:"text", suggest:{data:countries} },
 { view:"text", suggest:{ data:countries, relative:"left" }}
 ~~~
 

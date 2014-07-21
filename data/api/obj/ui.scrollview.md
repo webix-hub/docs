@@ -1,6 +1,6 @@
 {{memo a container with scrolls}}
 
-Place it in the layout if you want to have a scroll around few other views (not necessary if you need a scroll in one single view). Check [scrollview](desktop__scrollview.md) documentation for more detailed description.
+Place it in the layout if you want to have a scroll around few other views (not necessary if you need a scroll in one single view). Check [scrollview](desktop/scrollview.md) documentation for more detailed description.
 
 ### Constructor
 

@@ -13,15 +13,15 @@ Dataview displays objects with data according to a predefined template. It inher
 Specify the component's ID if you are going to work with the dataview later. Optionally, you can place dataview into an HTML container.
 
 ~~~js
-	webix.ui({
-			view:"dataview",
-			container:"dataA",
-			template:"<div class='webix_strong'>#title#</div> Year: #year#, rank: #rank#",
-			data:...,
-            datatype:"...",
-            xCount:3, //the number of items in a row
-            yCount:4 //the number of items in a column
-		});
+webix.ui({
+	view:"dataview",
+	container:"dataA",
+	template:"<div class='webix_strong'>#title#</div> Year: #year#, rank: #rank#",
+	data:...,
+	datatype:"...",
+	xCount:3, //the number of items in a row
+	yCount:4 //the number of items in a column
+});
 ~~~
 
 {{sample 06_dataview/01_initialization/01_init.html }}
@@ -31,12 +31,12 @@ Specify the component's ID if you are going to work with the dataview later. Opt
 ###Working with Dataview
 
 - [Data Loading](desktop/data_loading.md)
-- [Making HTML Templates](desktop/html_templates.md)
+- [Defining Data Templates](desktop/html_templates.md)
 - [Adding/Deleting Items](desktop/add_delete.md)
 - [Editing Data](desktop/edit.md)
 
 {{note
-Note that there's a biult-in possibility to edit data with dataview. You should create a **prototype dataview-edit** object beforehand.
+Note that there's a built-in possibility to edit data with dataview. You should create a **prototype dataview-edit** object beforehand.
 }}
 - [Paging](desktop/paging.md) 
 - [Dynamic Loading](desktop/dynamic_loading.md)

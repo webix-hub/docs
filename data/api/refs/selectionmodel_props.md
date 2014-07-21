@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/selectionmodel_select_config.md - enables/disables item selection or multiselection in grouplist
 }}
 

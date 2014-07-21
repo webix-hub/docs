@@ -16,7 +16,8 @@ webix.ui({
    }
 })
 
-
+@related:
+	desktop/dataprocessor.md
 @template:	api_config
 @descr:
 

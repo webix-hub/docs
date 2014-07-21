@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/link/ui.colorboard_animate_config.md - defines or disables view change animation.
 - api/link/ui.colorboard_borderless_config.md - used to hide the component borders
 - api/ui.colorboard_cols_config.md - sets the number of columns in the palette

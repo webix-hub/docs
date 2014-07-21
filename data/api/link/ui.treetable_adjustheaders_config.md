@@ -1,1 +1,0 @@
-@link: api/ui.datatable_adjustheaders_config.md

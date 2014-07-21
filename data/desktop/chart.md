@@ -3,7 +3,7 @@ Chart
 
 ###Overview
 
-Chart is a ui-related component that inherits from view and helps present data in different graphic figures like colored columns, pie pieces or lines. 
+<a href="http://webix.com/widget/charts/" title="webix charts component">Chart</a> is a ui-related component that inherits from view and helps present data in different graphic figures like colored columns, pie pieces or lines. 
 Like all the data-presenting components it takes initial data in [various formats](desktop/data_types.md). 
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/charts.png"/>

@@ -3,17 +3,22 @@ Calendar
 
 ###Overview
 
-UI-related calendar inherits from [view](desktop/view.md) and allows you to include the Date and Time picker calendar into an app.
+UI-related <a href="http://webix.com/widget/calendar/" title="webix calendar widget">calendar</a> inherits from [view](desktop/view.md) and allows you to include the Date and Time picker calendar into an app.
 It is a handy and fully interactive tool to pick the necessary time and date when filling a form. The dedicated timepicker allows setting the necessary time that will be displayed below the calendar area.
 
+<br>
+
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/calendar.png"/>
+
+<br>
+
 
 ###Initialization
 
 ~~~js
 webix.ui({
 	view:"calendar",
-    id:"my_calendar"
+    id:"my_calendar",
 	date:new Date(2012,3,16),
 	weekHeader:true,
 	events:webix.Date.isHoliday, 
@@ -31,7 +36,8 @@ Here is a calendar with basic parameters.
 
 - **weekHeader** (boolean) - if *true* shows weekday above;
 - **events** (CSS class or specific cases) - e.g. **webix.Date.isHoliday** highlights dayoffs;
-- **date** - specifies the start date in the "year, month, day" format with months starting from 0. In case of an empty new Date(); you'll be shown current date. 
+- **date** - specifies the start date in the "year, month, day" format with months starting from 0. In case of an empty new Date(); you'll be shown current date;
+- **dayTemplate** - specifies a function that [sets a template](api/ui.calendar_daytemplate_config.md) for each day cell. By default the date is displayed without any styling. 
 
 To see the full list of Calendar properties please refer to the [corresponding chapter of the documentation](api/refs/ui.calendar_props.md).
 
@@ -43,7 +49,8 @@ By default the calendar starts a week on Sunday. Still, you can set any day as a
 webix.Date.startOnMonday = true;
 
 webix.ui({
-	view:"calendar", ...})
+	view:"calendar", ...
+});
 ~~~
 <img src="desktop/calendar_start_date.png"/>
 
@@ -63,7 +70,7 @@ webix.ui({
 
 - **getValue()**; - common method for getting the control's value.
 - **getSelectedDate()**; - calendar speciic method. 
-- **getVisibleDate()**; - gets the date even with no selection applied. Date is gotten according to the [specified rules](api/ui.calendar_getvisibleDate.md). 
+- **getVisibleDate()**; - gets the date even with no selection applied. Date is defined according to the [specified rules](api/ui.calendar_getvisibledate.md). 
 
 ~~~js
 $$('calendar1').selectDate(new Date(2012,3,30));
@@ -77,7 +84,7 @@ $$("calendar1").getValue(); // returns the non-formatted date object
 Calendar can be displayed on customer request, for instance when a user wants to pick a date and time to fill the form. For these needs a **[datepicker](desktop/controls.md#datepicker)** control
 is used. Note that here you needn't initialize Calendar - it will appear as soon as you click a datepicker icon. In this case the calendar comes with current date displayed. 
 
-<img src="desktop/datepicker.png"/>
+<img src="desktop/date_picker.png"/>
 
 ~~~js
 webix.ui({
@@ -87,7 +94,8 @@ webix.ui({
     	{view:"datepicker", 
         	name: "select_date", 
         	label: 'Select Date'} 
-	]});
+	]
+});
 ~~~
 {{sample 09_calendar/06_datepicker.html }}
 
@@ -101,7 +109,8 @@ Timepicker is a calendar feature that allows picking time. Being one of the comp
 webix.ui({
 	view:"calendar",
     date: new Date(2012, 3, 16, 8, 35),
-    timepicker:true
+    timepicker:true,
+    timepickerHeight:50 //optional, default is 30
 })
 ~~~
 
@@ -114,7 +123,7 @@ With timepicker enabled, time is shown below month view within the calendar body
 {{sample 09_calendar/03_timepicker.html }}
 
 {{note
-Time selector can be hidden and shown back by **timeSelect** property with *true/false* value. 
+Time selector can be hidden and shown back by **timePicker** property with *true/false* value. 
 }}
 
 ##Localization
@@ -134,6 +143,46 @@ Afterwards the calendar will look like this:
 <img src="desktop/calendar_localized.png"/>
 
 {{sample 09_calendar/07_calendar_localized.html }}
+
+##Disabling Period in Calendar {#blockdates}
+
+The whole calendar can be disabled by a common property:
+
+~~~js
+{view:"calendar", disabled:true}
+~~~
+
+<img src="desktop/calendar_disabled_dates.png"/>
+
+{{sample 09_calendar/08_disabled_dates.html}} 
+
+To disable a certain period in the calendar, which presupposes specific CSS and blocking of click events, you can go by the two ways: 
+
+**Defining "active" period**
+
+Use the dedicated **minDate** and **maxDate** properties to limit the period that will be available for clicking and, hence, selecting: 
+
+~~~js
+{ view:"calendar", minDate:'2014-05-07', maxDate:new Date(2014, 4, 13) }
+~~~
+
+The dates can be defined either as **date object** or **date string** formatted under the current [locale](desktop/localization.md). Here the default **en-US** parseFormat is used, "%Y-%m-%d". 
+
+**Defining "blockDates" function for custom logic**
+
+The function should return true for the dates that should be disabled in the calendar. Here all date up to 2014 will be disabled:
+
+~~~js
+webix.ui({
+	view:"calendar",
+	blockDates:function(date){
+   		if(date.getFullYear()<=2013)
+     		return true;
+	}
+});    
+~~~
+
+CSS class applied for disabled dates (**webix_cal_day_disabled**) can be redefined. 
 
 ###API Reference
 

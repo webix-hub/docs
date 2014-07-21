@@ -64,7 +64,7 @@ function save_form(){
 }
 ~~~
 
-To learn more about how to send Ajax requests in Webix, read the [Ajax Operations](helpers__ajax_operations.md) article.
+To learn more about how to send Ajax requests in Webix, read the [Ajax Operations](helpers/ajax_operations.md) article.
 
 
 

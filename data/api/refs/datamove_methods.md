@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/datamove_copy.md - copies an item to the same or another object
 - api/datamove_move.md - moves the specified item to a new position
 - api/datamove_movebottom.md - moves the specified item to the last position

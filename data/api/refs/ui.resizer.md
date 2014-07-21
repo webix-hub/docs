@@ -4,7 +4,7 @@ ui.resizer
 
 {{memo A draggable border in a layout. }}
 
-The component is used to make some view placed into a layout draggable by a specific border. Draggable borders differs visually from the undraggable. Check [layout](desktop__layout.md) documentation for more detailed description.
+The component is used to make some view placed into a layout draggable by a specific border. Draggable borders differs visually from the undraggable. Check [layout](desktop/layout.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -23,10 +23,10 @@ The component is used to make some view placed into a layout draggable by a spec
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.resizer_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.resizer_bind.md - binds components
 - api/link/ui.resizer_define.md - redefines a single configuration property (or a hash of properties)
@@ -47,27 +47,34 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/link/ui.resizer_onaftercontextmenu_event.md - fires after the context menu was called in the item area
+- api/link/ui.resizer_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.resizer_onbeforecontextmenu_event.md - fires before the context menu is called in the item area
 - api/link/ui.resizer_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.resizer_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.resizer_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.resizer_onitemdblclick_event.md - fires when a component item was double-clicked
+- api/link/ui.resizer_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.resizer_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.resizer_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.resizer_onmouseout_event.md - fires when the mouse was moved out from the specified item
+- api/link/ui.resizer_onrotate_event.md - occurs on screen rotating
+- api/link/ui.resizer_onswipex_event.md - 
+- api/link/ui.resizer_onswipey_event.md - 
+- api/link/ui.resizer_ontouchend_event.md - 
+- api/link/ui.resizer_ontouchmove_event.md - 
+- api/link/ui.resizer_ontouchstart_event.md - 
 - api/link/ui.resizer_onviewresize_event.md - view size was changed by resizer
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.resizer_animate_config.md - defines or disables view change animation.
 - api/link/ui.resizer_borderless_config.md - used to hide the component borders
 - api/link/ui.resizer_container_config.md - an html container (or its id) where the component needs initializing
@@ -92,10 +99,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.resizer_$getsize_other.md - returns the current size of the component
 - api/link/ui.resizer_$height_other.md - current height of the view
 - api/link/ui.resizer_$scope_other.md - scope for resolving event and method names

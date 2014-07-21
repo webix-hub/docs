@@ -90,7 +90,11 @@ rows:[
 To switch from listView to any of ChartView cells, you need to call the **show(true);** function:
 
 ~~~html
-<input type='button' onclick='$$("chart1").show(true)' value="show chart1 and parents">
+<input 
+	type='button' 
+    onclick='$$("chart1").show(true)' 
+    value="show chart1 and parents"
+>
 ~~~
                   
 At the same time, if you switch between chart1 and chart2 that lie on the same level, you needn't refer to the parent view and can do with the **show();** function. 

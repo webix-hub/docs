@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/_alert.md - creates an alert box
 - api/_animate.md - animate some hmtl area
 - api/link/_attachevent.md - 
@@ -16,7 +16,7 @@ Methods
 - api/link/_detachevent.md - 
 - api/_dp.md - returns dataprocessor object
 - api/_editstop.md - closes active editor in all webix components
-- api/_event.md - 
+- api/_event.md - attaches an event handler to an HTML element
 - api/_eventremove.md - removes an event handler from an HTML element
 - api/_exec.md - executes a code string at runtime
 - api/_extend.md - merges the contents of 2 objects together into the first object

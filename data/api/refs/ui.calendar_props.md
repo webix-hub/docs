@@ -2,8 +2,9 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/link/ui.calendar_animate_config.md - defines or disables view change animation.
+- api/ui.calendar_blockdates_config.md - defines the selectable range
 - api/link/ui.calendar_borderless_config.md - used to hide the component borders
 - api/ui.calendar_calendarheader_config.md - the format for the title with the month name and year
 - api/ui.calendar_calendartime_config.md - defines calendar time format (with timepicker enabled)
@@ -12,14 +13,18 @@ Properties
 - api/link/ui.calendar_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.calendar_css_config.md - the name of a css class that will be applied to the view container
 - api/ui.calendar_date_config.md - sets the initial date of the calendar (particularly month and year).
+- api/ui.calendar_daytemplate_config.md - defines a template for a calendar day cell
 - api/link/ui.calendar_disabled_config.md - disables item
 - api/ui.calendar_events_config.md - sets an additional css class that will be applied to days
 - api/link/ui.calendar_gravity_config.md - sets the view gravity (1 by default)
+- api/ui.calendar_headerheight_config.md - total height of the area not taken by calendar body
 - api/link/ui.calendar_height_config.md - sets the height of the component
 - api/link/ui.calendar_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.calendar_id_config.md - the component ID
+- api/ui.calendar_maxdate_config.md - set man limit for selected date
 - api/link/ui.calendar_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.calendar_maxwidth_config.md - sets the maximum width for the view
+- api/ui.calendar_mindate_config.md - set min limit for selected date
 - api/link/ui.calendar_minheight_config.md - sets the minimal height for the view
 - api/link/ui.calendar_minwidth_config.md - sets the minimal width for the view
 - api/ui.calendar_minutestep_config.md - step of time selector
@@ -34,6 +39,7 @@ Properties
 - api/ui.calendar_select_config.md - enables date selection within the calendar.
 - api/ui.calendar_skipemptyweeks_config.md - enables/disables displaying empty weeks (true)
 - api/ui.calendar_timepicker_config.md - enables clock for time selection
+- api/ui.calendar_timepickerheight_config.md - sets height of timepicker area
 - api/ui.calendar_weekheader_config.md - enables/disables additional header with week days (false)
 - api/ui.calendar_weeknumber_config.md - enables/disables additional left column with weeks' numbers (false)
 - api/link/ui.calendar_width_config.md - sets the width of the component
@@ -41,6 +47,7 @@ Properties
 
 @index:
 - api/link/ui.calendar_animate_config.md
+- api/ui.calendar_blockdates_config.md
 - api/link/ui.calendar_borderless_config.md
 - api/ui.calendar_calendarheader_config.md
 - api/ui.calendar_calendartime_config.md
@@ -49,14 +56,18 @@ Properties
 - api/link/ui.calendar_container_config.md
 - api/link/ui.calendar_css_config.md
 - api/ui.calendar_date_config.md
+- api/ui.calendar_daytemplate_config.md
 - api/link/ui.calendar_disabled_config.md
 - api/ui.calendar_events_config.md
 - api/link/ui.calendar_gravity_config.md
+- api/ui.calendar_headerheight_config.md
 - api/link/ui.calendar_height_config.md
 - api/link/ui.calendar_hidden_config.md
 - api/link/ui.calendar_id_config.md
+- api/ui.calendar_maxdate_config.md
 - api/link/ui.calendar_maxheight_config.md
 - api/link/ui.calendar_maxwidth_config.md
+- api/ui.calendar_mindate_config.md
 - api/link/ui.calendar_minheight_config.md
 - api/link/ui.calendar_minwidth_config.md
 - api/ui.calendar_minutestep_config.md
@@ -71,6 +82,7 @@ Properties
 - api/ui.calendar_select_config.md
 - api/ui.calendar_skipemptyweeks_config.md
 - api/ui.calendar_timepicker_config.md
+- api/ui.calendar_timepickerheight_config.md
 - api/ui.calendar_weekheader_config.md
 - api/ui.calendar_weeknumber_config.md
 - api/link/ui.calendar_width_config.md

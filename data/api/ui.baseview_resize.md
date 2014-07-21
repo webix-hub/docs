@@ -6,11 +6,6 @@ resize
 @short:
 	adjusts the view to a new size
 
-
-
-@related:
-	datatable/sizing.md#resizing
-
 @example:
 dtable = new webix.ui({
         view:"datatable",
@@ -27,8 +22,8 @@ dtable.resize();
 	api/settings_config_other.md
 	api/settings_define.md
 @related:
-	desktop/resizing.md, 
     desktop/dimensions.md
+    datatable/sizing.md#resizing
 @relatedsample:
 	15_datatable/11_sizing/02_resize_node.html
     

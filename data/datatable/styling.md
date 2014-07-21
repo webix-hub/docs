@@ -1,7 +1,7 @@
 Styling
 =======
 You can use CSS in conjunction with DataTable content to achieve the desired look-and-feel. 
-This article will help you to cover support of cascading style sheets (CSS) in DataTable.
+This article will help you to cover support of <a href="http://webix.com/widget/datatable/" title="css datatable component">cascading style sheets (CSS) in DataTable</a>.
 
 You can fine-tune the style of:
 
@@ -23,14 +23,19 @@ Styling the whole table
 ~~~html
 <style>
 	.my_style .webix_hcell{
-		background:#444;
+		background:#009966;
 		color:white;
 		font-weight:bold;
+
 	}
 	.my_style .webix_column{
 		font-style:italic;
-		background:orange !important;
+		background:#ddFFdd;
 	}
+    .my_style .webix_column > div{
+        border-color:#ddd;
+    }
+
 </style>
  
 <script>
@@ -179,7 +184,7 @@ General styling of cells
 ~~~js
 function mark_votes(value, config){
 	if (value > 400000)
-		return { value:value, css:{	"text-align":"right"}};
+		return { "text-align":"right" };
 	return value;
 }
 

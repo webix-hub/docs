@@ -4,7 +4,7 @@ ui.tabview
 
 {{memo A container control with a navigation tab panel that keeps a set of views and displays one view at a time. }}
 
-The component optimizes the process of creating tabbed structures on the page - elements that present multiple groups of content switched by tabs. Check [tabview](desktop__tabview.md) documentation for more detailed description.
+The component optimizes the process of creating tabbed structures on the page - elements that present multiple groups of content switched by tabs. Check [tabview](desktop/tabview.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -23,10 +23,10 @@ The component optimizes the process of creating tabbed structures on the page - 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.layout.md">ui.layout</a>, <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.tabview_addview.md - add new view to layout or multiview
 - api/link/ui.tabview_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.tabview_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
@@ -64,19 +64,18 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/link/ui.tabview_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.tabview_ondestruct_event.md - occurs when component destroyed
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.tabview_animate_config.md - defines or disables view change animation.
 - api/link/ui.tabview_borderless_config.md - used to hide the component borders
 - api/link/ui.tabview_cols_config.md - array of views objects arranged horizontally
@@ -97,6 +96,7 @@ Properties
 - api/link/ui.tabview_padding_config.md - defines the space between the element borders and content (applies the specified value to all sides).
 - api/link/ui.tabview_paddingx_config.md - sets the right and left padding (applies the specified value to both sides)
 - api/link/ui.tabview_paddingy_config.md - sets the top and bottom padding (applies the specified value to both sides)
+- api/link/ui.tabview_responsive_config.md - enables responsive mode for horizontal layout
 - api/link/ui.tabview_rows_config.md - array of views objects arranged vertically
 - api/link/ui.tabview_type_config.md - defines the layout borders
 - api/link/ui.tabview_visiblebatch_config.md - sets the batch that will be shown initially
@@ -106,10 +106,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.tabview_$getsize_other.md - returns the current size of the component
 - api/link/ui.tabview_$height_other.md - current height of the view
 - api/link/ui.tabview_$setsize_other.md - sets the component size

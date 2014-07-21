@@ -7,12 +7,13 @@ TreeTablePaste
 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/treetablepaste_insert.md - inserts new data in treetable
 }}
+
 
 
 

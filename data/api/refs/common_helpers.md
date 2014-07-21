@@ -6,10 +6,10 @@ common helpers
 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/_alert.md - creates an alert box
 - api/_animate.md - animate some hmtl area
 - api/link/_attachevent.md - 
@@ -23,7 +23,7 @@ Methods
 - api/link/_detachevent.md - 
 - api/_dp.md - returns dataprocessor object
 - api/_editstop.md - closes active editor in all webix components
-- api/_event.md - 
+- api/_event.md - attaches an event handler to an HTML element
 - api/_eventremove.md - removes an event handler from an HTML element
 - api/_exec.md - executes a code string at runtime
 - api/_extend.md - merges the contents of 2 objects together into the first object
@@ -60,10 +60,10 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/_event_event.md - 
 - api/_onclick_event.md - fires when the user clicks on an element
 }}
@@ -71,10 +71,11 @@ Events
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/_codebase_other.md - returns the path to the 'codebase' folder
 - api/_name_other.md - returns the name of the component (by default, 'Core')
 - api/_version_other.md - returns the current version of the library

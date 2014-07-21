@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/renderstack_customize.md - redefines the 'type' property
 - api/renderstack_getitemnode.md - returns html element of item by item id
 - api/renderstack_locate.md - gets the id of an item from the specified HTML event

@@ -2,7 +2,7 @@
 Others
 =======
 
-{{links
+{{api
 - api/link/ui.search_$getsize_other.md - returns the current size of the component
 - api/link/ui.search_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.search_$height_other.md - current height of the view

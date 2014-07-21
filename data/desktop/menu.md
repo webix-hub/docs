@@ -20,14 +20,15 @@ webix.ui({
         id:"my_menu",
 		subMenuPos:"right",
         layout:"y",
-		data:[ //JSON data
+		data:[ //menu data
 			{ value:"Translate...", submenu:[ 
 						"English", "Slavic...", "German"]},
             { $template:"Separator" },
 			{ value:"Post...", submenu:[ "Facebook", "Google+", "Twitter" ]}
 		],
-        type:{ //type object contains setting for component items
-              subsign:true
+        type:{
+              subsign:true,
+              height:50
         }           
   });	
 ~~~
@@ -39,7 +40,8 @@ webix.ui({
 - **subMenuPos** (string) - sets position of pulldown submenus that will appear on mouse over;
 - **layout** - sets the arrangement of menu items (**x** for a horizontal menu, **y** for a vertical one)
 - **$template:"Separator"** - flag that indicates a separating line between menu elements. Appears once for eaah flag in the place where it is set;
-- **subsign** (boolean) - sets an arrow for an item containing a submenu;
+- **type** - object that contains setting for menu items;
+	- **subsign** (boolean) - sets an arrow for an item containing a submenu;
 - **openAction** (string) - alters the way of submenu opening - **"click"**. If set, you should first click menu item to enable its opening and hiding on "onMouseOver" and "onMouseOut" events.
 
 {{sample 03_menu/11_menu_open_click.html}}
@@ -48,28 +50,45 @@ webix.ui({
 
 ###Setting Menu Items
 
-Menu items are stored in the **data** array, each item being an object. Submenu items are stored in the **submenu** array. 
+A menu/submenu item can be a **text item** including the one that starts its own **submenu** and any **Webix component** specified by ID. 
 
-A menu/submenu item can be: 
+Menu items are stored in the **data** array, each item being an object. Submenu items are stored in the **submenu** array. Each menu item may have the following attributes: 
 
-- a **text item**;
-- a **text item** that starts its own **submenu**;
-- a **Webix component** specified by ID. 
+- **id** - item id.If omitted, it's given an auto-generated one;
+- **value** - defines text value for an item;
+- **href** - defines a link for an item;
+- **config** - defines configuration of a child submenu popup (if any).
 
-####Text Item
-
-Each menu item has **ID** (though, ID can be omitted) and **value** that defines text of an item. 
+The easiest way to define menu items is to pass them as a simple array:
 
 ~~~js
+{ view:"menu", data:["Google", "Facebook", "Twitter"] }
+~~~
+
+Or an associative one:
+
+~~~js
+{ view:"menu", data:[
+	{ id:1, value:"Google"}, 
+    { id:2, value:"Facebook", id:3, value:"Twitter"
+]}
+~~~
+
+**Links in Menu Items**
+
+Each menu and submenu item can be supplied with a **link** specified in the data object by a **href** attribute:
+
+~~~js
+view:"menu",
 data:[
-	{ id:"1",value:"Post..."},
-	{ value:"Info" }
+	{ id:"1", value:"Imitation of Spenser", href: "#verse1"},
+	{ id:"2", value:"The Human Seasons", href: "#verse2"}
 ]
 ~~~
 
-####Text Item with Own Submenu
+{{sample 03_menu/13_hrefs.html}}
 
-If a menu items starts a submenu, it's placed is the **submenu** array.
+**Configuring Submenus**
 
 Submenu items can be set as an **array of values**:
 
@@ -81,27 +100,38 @@ Or, as an **array of menu objects**:
 
 ~~~js
 { id: "1.2", value:"Slavic...", submenu:[
-			{id: "1.2.1", value:"Belarus"},
-			{id: "1.2.2", value:"Russian"},
-            {id: "1.2.3", value:"Ukranian"}
-           ]
-}
-~~~
-
-Regardless of the initialization pattern, each submenu iten can start its own submenu:
-
-~~~js
-{ id:"1",value:"Translate...", submenu:[
-			"English", 
-			{ value:"Slavic...", submenu:[
-							"Belarus", "Russian", "Ukranian"]},
-			"German"
+	{id: "1.2.1", value:"Belarus"},
+	{id: "1.2.2", value:"Russian"},
+    {id: "1.2.3", value:"Ukranian"}
 ]}
 ~~~
 
-####Webix Component
+Any nested submenu (a popup) can be configured separately with the help of a **config** attribute of its parent: 
+
+~~~js
+view:"menu",
+data:[
+	{ id:"2",value:"Custom...", 
+    	config:{
+			width:500,
+			on:{ 
+            	onItemClick:function(id){
+					webix.message("Submenu click: "+id);
+				}
+            }
+		},
+		submenu:[ "Facebook", "Google+", "Twitter" ]
+     }
+]
+~~~
+
+{{sample 03_menu/12_submenu_config.html}}
+
+**Webix Component as Menu Item**
 
 <img src="desktop/menu_component.png"/>
+
+**Submenu** parameter may point as well to any Webix component that has been initialized previously:
 
 ~~~js
 webix.ui({
@@ -115,9 +145,32 @@ webix.ui({
 	data:[
 		{ value:"HTML 4", submenu:"details1" },
 		{ value:"HTML 5", submenu:"details2" }
+    ]
+});    
 ~~~
 
 {{sample 03_menu/02_menubar_template.html}}
+
+The same way you can initialize  Webix **submenu** component separately and then point to it within *submenu* property:
+
+~~~js
+webix.ui({
+	view:"submenu", id:"test", data:[
+		{ id:"1.1", value:"English"},
+		{ id:"1.3", value:"German"}
+	]
+});
+
+webix.ui({
+	view:"menu",
+	data:[
+		{ id:"1", value:"Translate...", submenu:"test"},
+		{ id:"2", value:"Post..."
+	]
+});	
+~~~
+
+Each submenu item can take its own submenu component. 
 
 ###MenuBar
 
@@ -175,23 +228,23 @@ view:"menu",
 template:function(obj){
 	if(obj.disabled)
 		return "<span class='disabled'>"+obj.value+"</span>";
-	return obj.value
+	return obj.value;
 }
 ~~~
 
 {{sample 03_menu/09_disable_item.html}}
 
-##Getting to Menu and Submenu Items
+##Eevnt Handling with Menu and Submenu Items
 
-All menu and submenu items can be accessed to work with their values (provided that you know their IDs).
+All menu and submenu items can be accessed by their IDs.
 
 1 . Any item can be accessed directly with **getMenuItem()** method that takes item ID as parameter and returns item object:
 
 ~~~js
 //getting menu item value by its ID
-webix.message("Click: " + $$('menu1').getMenuItem(id).value); 
+$$('menu1').getMenuItem(id).value; 
 ~~~
-
+ 
 {{sample 03_menu/01_menubar.html}}
 
 
@@ -199,28 +252,54 @@ webix.message("Click: " + $$('menu1').getMenuItem(id).value);
 
 ~~~js
 var menu = $$("menu1").getSubMenu(id);
-webix.message("Click: " +menu.getItem(id).value);
+var item = menu.getItem(id).value;
 ~~~
 
 {{sample 03_menu/02_menubar_template.html}}
 
-Both methods can be attached to either of **menu inner events**, for instance, click events:
+Both methods can be used in either of **menu inner events**, for instance, click events:
 
-- **onItemClick** - standard event that fires on clicking any item including submenu items on any nesting level as well as disabled ones;
-- **onMenuItemClick** - fires when clicking only items from **main menu** while ignoring disabled items. 
 
-Both of them take ID of the clicked item as parameter and pass it into the above mentioned functions.
+- **onMenuItemClick** - fires on clicking all menu items regardless of hierarchy level. Ignores disabled items;
+- **onItemClick** - standard event that fires on clicking any item of the same hierarchy level. Fires for disabled item as well. 
 
+{{snippet
+General "onMenuItemClick" handler
+}}
 ~~~
-{
-	view:"menu"
-	on:{
-		onItemClick:function(id){
-			webix.message("Click: "+this.getMenuItem(id).value);
-		}
+view:"menu",
+data:[...],
+on:{
+	onMenuItemClick:function(id){
+		webix.message("Click: "+this.getMenuItem(id).value);
 	}
 }
 ~~~
+
+{{sample 03_menu/01_menubar.html}}
+
+{{snippet
+Submenu specific "onItemClick" handler
+}}
+~~~js
+view:"menu",
+data:[
+	{ id:"1",value:"Custom...",
+		config:{
+			width:250,
+			on: { onItemClick:function(id){
+				webix.message("Submenu click: "+id);
+			}}
+		},
+        submenu:{...}
+    }
+]
+
+~~~
+
+
+{{sample 03_menu/12_submenu_config.html }}
+
 
 ###API Reference
 

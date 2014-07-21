@@ -45,6 +45,17 @@ Please, don't mix it with a separate view [label](#label).
 
 {{sample 13_form/02_api/03_label_position.html}}
 
+##Defining Special Modes
+
+Any control can be set **disabled** and **readonly** with the help of dedicated properties:
+
+~~~js
+elements:[
+	{view:"text", readonly:true},
+	{view:"datepicker", disabled:true}
+]    
+~~~
+
 ##Control Positioning 
 
 Here we make use of the **align** (string) property that defines horizontal position of the control and its label with respect to the parent container (e.g. [form](desktop/form.md)):
@@ -130,6 +141,38 @@ $$("my_text").attachEvent("onChange", function(){.....});
 ~~~
 
 The implementation of an **onChange(**) function is described in the [Form documentation](desktop/form.md).
+
+##Automatic Showing and Enabling of Related Form Fields {#related}
+
+Each form field can have one **related** field defined by its [relatedView](api/ui.text_relatedview_config.md) property. 
+
+This field can react on changes in master field and change it's state: 
+
+- from **hidden** to **visible** and vice versa, 
+- from **disabled** to **enabed** and vice versa. 
+
+This behaviour is also defined by the master field with the [relatedAction](api/ui.text_relatedaction_config.md) property:
+
+{{snippet
+Enabling a form field by changes in another
+}}
+~~~js
+elements:[
+	{view:"text", id:"master", relatedView:"slave", relatedAction:"enable"},
+    {view:"text", id:"slave", disabled:true}
+]
+~~~
+
+The following conditions should be observed:
+
+- the functionality allows for watching various value changes (*empty/not empty*, *selected/not selected*, *checked/unchecked*) for different controls;
+- **relatedView** property takes ID of the needed control as parameter (if you don't define ID manually, it will be created automatically and can be derived as *view.config.id*);
+- **relatedAction** offers two possibilities for now:
+	- "enable";
+    - "show";
+- Slave field may have initial values to match with master relatedAction - *hidden:true* for **"show"** and *disabled:true* for **"enable"**.
+
+{{sample 13_form/02_api/11_dynamic.html}}
 
 ##Defining Initial Values
 

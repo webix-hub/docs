@@ -76,7 +76,12 @@ In this case, icon are not buttons and perform a decorative function.
 
 <img src="desktop/icon_css_pane.png">
 
-CSS class is called 'webix-icon icon-**mail**' with the icon name being part of it. 
+Possible CSS classesare as follows:
+
+- 'webix_icon **fa-envelope**' - a standard icon (white or black depending on current skin); 
+- 'webix_input_icon **fa-envelope**' - a light grey icon adjusted for use in input fields. 
+
+Both of them include an icon name that can be checked on [Font Awesome](http://fortawesome.github.io/Font-Awesome/) site. 
 
 ###Throught css property: 
 
@@ -85,68 +90,88 @@ Multiview tabs
 }}
 ~~~js
 { view:"tabbar", options:[
-			{ value:"mail",  label:"Mail", css:"webix_icon icon-mail"},
-			{ value:"users", label:"Users", css:"webix_icon icon-users"},
-			{ value:"cog", 	 label:"cog" , css:"webix_icon icon-cog"}
-           ]
+	{ value:"mail",  label:"Mail", css:"webix_icon fa-envelope"},
+	{ value:"users", label:"Users", css:"webix_icon fa-users"},
+	{ value:"cog", 	 label:"cog" , css:"webix_icon fa-cog"}
+]}
 ~~~
 
 
-###With the help of inline styling:
+###By adding extra HTML:
 
-Inline styling is enables with the help of a **span** tag. 
+An additional HTML element with an 'icon' class can be added to the text value of any component item: 
 
 {{snippet
 AccordionItem pane with an icon
 }}
 ~~~js
-{ header:"<span class='webix_icon icon-mail'></span>Mail"
+{ header:"<span class='webix_icon fa-envelope'></span>Mail"}
 ~~~
 
 {{snippet
 List item with an icon
 }}
 ~~~js
-template:"<span class='webix_icon icon-#icon#'></span> #name# "
+{ template:"<span class='webix_icon fa-#icon#'></span> #name#"}
 ~~~
 
 Here the icon's name is in hash signs since it comes from the dataset, e.g. in JSON it looks like 
 
 ~~~js
 var data=[
-	{id:1, name:"item1", icon:"mail"},
-    {id:2, name:"item2", icon:"users"}]
+	{id:1, name:"item1", icon:"envelope"},
+    {id:2, name:"item2", icon:"users"}
+]
 ~~~
 
-##Setting Icons via user-defined CSS Class
+##Changing Default Icons
 
-You can include any icon you wish into Webix [components](desktop/components.md) and [controls](desktop/controls.md) by assigning the following properties to their objects:
+Default [FontAwesome icons](http://fortawesome.github.io/Font-Awesome/icons/) that are used for various controls can be changed to custom ones in several ways.
 
-- **iconCSS** - the CSS class that holds the desires icon as a background image;
-- **iconWidth** - dimensions of the styled area,
+###Setting Other FontAwesome Icon
 
-Icons are defined for each page with the help of interal styling: 
-
-~~~html
-<style>
-.combo_icon{
-    background-image: url("icon_edit.png");
-    height: 20px;
-    float: right;
-}
-</style>
-~~~
-
-Then this class is set as value of **iconCSS** property:
+If you'd like to use another icon from FontAwesome collection instead of the default one, specify its name as value of **icon** property:
 
 ~~~js
-webix.ui({
-    view:"combo",
-    label: 'Fruit',
-    ...
-    iconCss:"combo_icon", 
-    iconWidth:20
-});
+{view:"richselect", label: 'Other', options:options, icon:"caret-down"}
+~~~
+
+As a result, the default [richselect](desktop/controls.md#richselect)) icon, "fa-angle-down", is replaced with the one you've set. 
+
+###Setting a Custom Icon
+
+To set a custom icon that you can provide as a background-image, write the new CSS rule that redefines the default one. Nothing is changed in the control configuration: 
+
+~~~js
+{view:"combo", label: 'Fruit', options:[...] } 
+~~~
+
+As with richselect, [combo](desktop/controls.md#combo) control uses "fa-angle-down" icon which CSS should be modified:
+
+~~~js
+.webix_input_icon.fa-angle-down:before{
+    content:""; /*removes FontAwesome icon */
+    background-image: url("search.png");
+    width:20px;
+    height:20px;
+    display:block;
+}
+~~~
+
+{{sample 13_form/01_controls/16_combo_css.html}}
+
+If you want to style one combo on the page while leaving another one unchanged, define a separate **css** class for the one in question: 
+
+~~~js
+{view:"combo", label: 'Fruit', options:[...], css:"custom" } 
+~~~
+
+Then the necessary CSS will look like this:
+
+~~~css
+.custom .webix_input_icon.fa-angle-down:before{
+...
+}
 ~~~
 
 **Component styling** is described in detail in the [corresponding article](desktop/styling.md) of the documentation.

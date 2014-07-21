@@ -4,7 +4,7 @@ ui.menu
 
 {{memo A menu of individually selectable items. }}
 
-The component can be displayed in 2 modes: static (the menu is fully expanded all the time) and dynamic (only the parent item is static, while its childs are displayed only when the user holds the mouse pointer over the parent). You can configure any nesting level complexity. Check [menu](desktop__menu.md) documentation for more detailed description.
+The component can be displayed in 2 modes: static (the menu is fully expanded all the time) and dynamic (only the parent item is static, while its childs are displayed only when the user holds the mouse pointer over the parent). You can configure any nesting level complexity. Check [menu](desktop/menu.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -24,10 +24,10 @@ The component can be displayed in 2 modes: static (the menu is fully expanded al
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.list.md">ui.list</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/selectionmodel.md">SelectionModel</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/ui.proto.md">ui.proto</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/copypaste.md">CopyPaste</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.menu_add.md - adds an item to the store
 - api/link/ui.menu_addcss.md - applied CSS class to a component item
 - api/link/ui.menu_adjust.md - adjusts the component to the size of the parent HTML container
@@ -114,16 +114,17 @@ of the component
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/link/ui.menu_onafteradd_event.md - fires after adding item to datastore
 - api/link/ui.menu_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.menu_onafterdelete_event.md - fires after item deleting
 - api/link/ui.menu_onafterdrop_event.md - fires after drag-n-drop was finished
 - api/link/ui.menu_onafterload_event.md - fires after xml loading is complete
 - api/link/ui.menu_onafterrender_event.md - occurs immediately after the component has been rendered
+- api/link/ui.menu_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.menu_onafterselect_event.md - fires after item was selected
 - api/link/ui.menu_onaftersort_event.md - fires after sorting dataset
 - api/link/ui.menu_onbeforeadd_event.md - fires before adding item to datastore
@@ -146,21 +147,27 @@ Events
 - api/link/ui.menu_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.menu_onitemrender_event.md - for each item rendering, occurs only for items with custom templates
 - api/link/ui.menu_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
+- api/link/ui.menu_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.menu_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.menu_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.menu_onmouseout_event.md - fires when the mouse was moved out from the specified item
 - api/link/ui.menu_onpaste_event.md - fires when the user presses CTRL+V keys combination
+- api/link/ui.menu_onrotate_event.md - occurs on screen rotating
 - api/link/ui.menu_onselectchange_event.md - fires after selection state was changed
+- api/link/ui.menu_onswipex_event.md - 
+- api/link/ui.menu_onswipey_event.md - 
+- api/link/ui.menu_ontouchend_event.md - 
+- api/link/ui.menu_ontouchmove_event.md - 
+- api/link/ui.menu_ontouchstart_event.md - 
 - api/link/ui.menu_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation
 - api/link/ui.menu_onvalidationsuccess_event.md - fires after the newlyloaded/added/edited data has passes validation successfully
 - api/link/ui.menu_onviewresize_event.md - view size was changed by resizer
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.menu_animate_config.md - defines or disables view change animation.
 - api/link/ui.menu_autoheight_config.md - height of view will be adjusted to show all items
 - api/link/ui.menu_autowidth_config.md - width of view will be adjusted to show all items
@@ -216,10 +223,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.menu_$drag_other.md - method called when drag operation initiated
 - api/link/ui.menu_$draghtml_other.md - defines how dragged item will look
 - api/link/ui.menu_$dragin_other.md - method called when item moved on possible drop landing during dnd

@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/ui.resizearea_border_config.md - enables border around resize area
 - api/ui.resizearea_container_config.md - html element to which area will be attached
 - api/ui.resizearea_cursor_config.md - which cursor to show during resize

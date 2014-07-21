@@ -7,7 +7,7 @@ The component can be resized in two ways:
 - Setting new dimensions to the component container and applying **adjust()** to the component. 
 
 {{note
-On-page resizing with [resizer lines](desktop/layout.md#resizer) is discussed separately. 
+On-page resizing with [resizer lines](desktop/layout.md#resizer)  and [responsive behavior on window resizing](desktop/responsive_layout.md) is discussed separately. 
 }}
 
 ##Resizing the Component

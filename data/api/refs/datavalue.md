@@ -6,10 +6,10 @@ DataValue
 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/datavalue_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/datavalue_bind.md - binds components
 - api/link/datavalue_blockevent.md - temporarily blocks triggering of ALL events of the calling object
@@ -26,19 +26,18 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/link/datavalue_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/datavalue_onchange_event.md - fires when the user changes the value of the DataValue object
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/datavalue_id_config.md - the component ID
 - api/link/datavalue_on_config.md - allows attaching custom handlers to inner events of the component
 - api/datavalue_value_config.md - sets the initial value for a control
@@ -47,10 +46,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/datavalue_name_other.md - indicates the name of the component (a read-only property)
 }}
 

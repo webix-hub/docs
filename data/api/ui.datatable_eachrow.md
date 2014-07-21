@@ -6,6 +6,7 @@ eachRow
 
 @params:
 - handler	function	the handler function
+* all	boolean    if true, hidden rows are included into a loop
 
 
 

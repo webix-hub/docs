@@ -44,11 +44,35 @@ this new data.
 <input type="button" name="submit" value="Submit" onclick='$$("htmlform1").save()'/>
 ~~~
 
+<br>
+
 <img src="desktop/data_binding.png" />
+
+<br>
 
 {{sample 11_htmlform/05_htmlform_binding.html }}
 
 More info on Component and Form integration via binding is in the [corresponding article](desktop/binding_details.md).
+
+Slave can  as well be **unbound** from the master by the opposite method: 
+
+~~~js
+$$('htmlform1').unbind();
+~~~
+
+From now on, list changes cannot affect form data and vice versa. 
+
+**Addind data to master collection**
+
+When no item is selected in a master component (*here:list*), data in the slave one can still be pushed to it. The new item will be added to a master collection.
+
+The only thing you should do is to remove selection in the master:
+
+~~~js
+$$("list1").unselectAll();
+~~~
+
+{{sample 13_form/02_api/10_binding.html}}
 
 ##Syncing Data of Two Components
 
@@ -57,9 +81,13 @@ same change in the slave one.
 
 There can be more than one slave component. In this case, all slaves change simultaneously on master component change. 
 
+{{note
+Note that this functionality works with components datastores, that's why **data** property is used everywhere.
+}}
+
 ####Full Syncing: 
 
-The two components are absolutely identical. 
+The datasets of the two components are absolutely identical. 
 
 ~~~js
 $$('slave_component').data.sync('master_component');
@@ -77,6 +105,14 @@ $$('dview2').data.sync($$('listA'), function(){
 }); 
 ~~~
 
+####Unsyncing 
+
+If the syncing functionality is no longer needed, you can call the [unsync](api/datastore_unsync.md) command for the component that was previously synced with another one: 
+
+~~~js
+$$('dview2').data.unsync();
+~~~
+
 [Related into on data filtering](desktop/filter_sort.md). 
 
 ##Simultaneous Operations within Synced Componens
@@ -88,29 +124,41 @@ For instance, if an item is selected in one of components, the same item should 
 Take for instance we have a [dataview](desktop/dataview.md) and [datatable](datatable/index.md), both synched with the same dataCollection. 
 
 ~~~js
-	var data = new webix.DataCollection({
-    	url:"../my_data.json" //load data from an external file
-        }); 
+var data = new webix.DataCollection({
+    url:"../my_data.json" //load data from an external file
+}); 
 
-	$$("dataview_1").sync(data); 
-	$$("datatable_1").sync(data);
+$$("dataview_1").sync(data); 
+$$("datatable_1").sync(data);
 ~~~
 
 The event system for [selection](desktop/selection.md) offer the **onAfterSelect** event. The function that is fired on this event takes the **ID of selected item** as parameter: 
 
 ~~~js
-	$$("dataview_1").attachEvent("onAfterSelect", function(id){
-		 	$$("datatable_1").select(id); 
-             }); //item ID of dataview coincides with that of datatable  row
+$$("dataview_1").attachEvent("onAfterSelect", function(id){
+	$$("datatable_1").select(id); 
+}); //item ID of dataview coincides with that of datatable  row
         
-	$$("datatable_1").attachEvent("onAfterSelect", function(id){
-		 	$$("dataview_1").select(id.row);
-            }); ////item ID of datatable row coincides with that of dataview item
+$$("datatable_1").attachEvent("onAfterSelect", function(id){
+	$$("dataview_1").select(id.row);
+}); //item ID of datatable row coincides with that of dataview item
 ~~~
 
 {{sample 80_docs/data_binding.html }}
 
 [Data Binding and Syncing with Non-UI objects](desktop/nonui_objects.md)
+
+##One-Time Syncing 
+
+One-time syncing allows for synchronizing the data of two components (one of them can be [DataCollection](desktop/nonui_objects.md)) at a chosen time of the application flow **without tracking data changes afterwards**.
+
+Such syncing presupposes populating one component with the data of another one and is done with api/datastore_importdata.md method:
+
+~~~js
+$$("listB").data.importData($$("listA"));
+~~~
+
+Note that it's a [DataStore](api/refs/datastore.md) method, so it should be called for component **data**.
 
 @index: 
   - desktop/nonui_objects.md

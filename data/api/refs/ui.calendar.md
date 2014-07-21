@@ -4,7 +4,7 @@ ui.calendar
 
 {{memo A single-month calendar that allows users to select dates and move to the next/previous month. }}
 
-The control supports all date and time formats. Besides the days of the month, it can display day headings for the week days, the week number, a title with the month name and year, hour and minite selectors. Customizable and mostly used as a flat calendar. Check [calendar](desktop__calendar.md) documentation for more detailed description.
+The control supports all date and time formats. Besides the days of the month, it can display day headings for the week days, the week number, a title with the month name and year, hour and minite selectors. Customizable and mostly used as a flat calendar. Check [calendar](desktop/calendar.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -23,10 +23,10 @@ The control supports all date and time formats. Besides the days of the month, i
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.calendar_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.calendar_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.calendar_bind.md - binds components
@@ -63,19 +63,23 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/link/ui.calendar_onaftercontextmenu_event.md - fires after the context menu was called in the item area
+- api/ui.calendar_onafterdateselect_event.md - fires after a user has selected a date
 - api/ui.calendar_onaftermonthchange_event.md - called after month in selector is changed.
 - api/ui.calendar_onafterrender_event.md - called after the rendering of calendar is complete.
+- api/ui.calendar_onafterzoom_event.md - 
 - api/link/ui.calendar_onbeforecontextmenu_event.md - fires before the context menu is called in the item area
+- api/ui.calendar_onbeforedateselect_event.md - fires when a user clicks on a date but before it is selected in the calendar
 - api/ui.calendar_onbeforemonthchange_event.md - triggered immediately before month in selector is changed.
 - api/ui.calendar_onbeforerender_event.md - triggered immediately before rendering of calendar is started.
+- api/ui.calendar_onbeforezoom_event.md - 
 - api/link/ui.calendar_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/ui.calendar_onchange_event.md - fired when a user changes month, year or time in selector.
-- api/ui.calendar_ondateselect_event.md - fired when a user selects a date.
+- api/ui.calendar_ondateselect_event.md - fires when a user selects a date.
 - api/link/ui.calendar_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.calendar_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.calendar_onitemdblclick_event.md - fires when a component item was double-clicked
@@ -86,11 +90,11 @@ Events
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.calendar_animate_config.md - defines or disables view change animation.
+- api/ui.calendar_blockdates_config.md - defines the selectable range
 - api/link/ui.calendar_borderless_config.md - used to hide the component borders
 - api/ui.calendar_calendarheader_config.md - the format for the title with the month name and year
 - api/ui.calendar_calendartime_config.md - defines calendar time format (with timepicker enabled)
@@ -99,14 +103,18 @@ Properties
 - api/link/ui.calendar_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.calendar_css_config.md - the name of a css class that will be applied to the view container
 - api/ui.calendar_date_config.md - sets the initial date of the calendar (particularly month and year).
+- api/ui.calendar_daytemplate_config.md - defines a template for a calendar day cell
 - api/link/ui.calendar_disabled_config.md - disables item
 - api/ui.calendar_events_config.md - sets an additional css class that will be applied to days
 - api/link/ui.calendar_gravity_config.md - sets the view gravity (1 by default)
+- api/ui.calendar_headerheight_config.md - total height of the area not taken by calendar body
 - api/link/ui.calendar_height_config.md - sets the height of the component
 - api/link/ui.calendar_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.calendar_id_config.md - the component ID
+- api/ui.calendar_maxdate_config.md - set man limit for selected date
 - api/link/ui.calendar_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.calendar_maxwidth_config.md - sets the maximum width for the view
+- api/ui.calendar_mindate_config.md - set min limit for selected date
 - api/link/ui.calendar_minheight_config.md - sets the minimal height for the view
 - api/link/ui.calendar_minwidth_config.md - sets the minimal width for the view
 - api/ui.calendar_minutestep_config.md - step of time selector
@@ -121,6 +129,7 @@ Properties
 - api/ui.calendar_select_config.md - enables date selection within the calendar.
 - api/ui.calendar_skipemptyweeks_config.md - enables/disables displaying empty weeks (true)
 - api/ui.calendar_timepicker_config.md - enables clock for time selection
+- api/ui.calendar_timepickerheight_config.md - sets height of timepicker area
 - api/ui.calendar_weekheader_config.md - enables/disables additional header with week days (false)
 - api/ui.calendar_weeknumber_config.md - enables/disables additional left column with weeks' numbers (false)
 - api/link/ui.calendar_width_config.md - sets the width of the component
@@ -129,10 +138,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.calendar_$getsize_other.md - returns the current size of the component
 - api/link/ui.calendar_$height_other.md - current height of the view
 - api/link/ui.calendar_$scope_other.md - scope for resolving event and method names

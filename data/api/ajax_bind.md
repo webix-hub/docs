@@ -1,18 +1,21 @@
 bind
 =============
 
-@short: specifies the <i>this</i> pointer for a function
+
+@short: binds callback function to object
 	
 
 @params:
-- func 	function  a function for which you want to specify the <i>this</i> pointer
-- thisObject  object  an object that <i>this</i> will point to
+- master     object     desired content of "this" in the callback
+
 
 @returns:
-- func  function  a function you pass as the 1st parameter
+- ajax       object     this instance of ajax object	
 
 @example:
-myStore.attachEvent("onStoreUpdated",webix.bind(this.render,this));
+webix.ajax().bind(myobj).get("some.php", function(){
+    //this == myobj
+});
 
 @template:	api_method
 @descr:

@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/link/ui.datatable_add.md - adds an item to the store
 - api/ui.datatable_addcellcss.md - adds a css class to the cell
 - api/link/ui.datatable_addcss.md - applied CSS class to a component item
@@ -26,7 +26,7 @@ Methods
 - api/link/ui.datatable_destructor.md - destructs the calling object
 - api/link/ui.datatable_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.datatable_disable.md - disables the calling view (makes it dimmed and unclickable)
-- api/ui.datatable_eachcolumn.md - iterates over all columns in the table
+- api/ui.datatable_eachcolumn.md - iterates over all visible columns in the table
 - api/ui.datatable_eachrow.md - iterates over all rows in the table
 - api/link/ui.datatable_edit.md - enables the edit mode for the specified item
 - api/link/ui.datatable_editcancel.md - cancels the edit mode and closes all opened editors. The component is still editable
@@ -52,6 +52,7 @@ Methods
 - api/link/ui.datatable_getfirstid.md - returns the ID of the first item
 - api/link/ui.datatable_getformview.md - returns master form for the input
 - api/ui.datatable_getheadercontent.md - returns set of helpers for header content manipulation
+- api/ui.datatable_getheadernode.md - returns HTML element of the column's header
 - api/link/ui.datatable_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.datatable_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.datatable_getitem.md - gets the object of the data item with the specified id
@@ -96,6 +97,7 @@ of the component
 - api/link/ui.datatable_parse.md - loads data to the component from an inline data source
 - api/link/ui.datatable_refresh.md - repaints the whole view or a certain item
 - api/ui.datatable_refreshcolumns.md - refreshes the structure of DataTable
+- api/ui.datatable_refreshfilter.md - rebuilds list of options in select filter
 - api/ui.datatable_refreshheadercontent.md - refreshes the header row of DataTable
 - api/ui.datatable_registerfilter.md - registers a filter element
 - api/link/ui.datatable_remove.md - removes the specified item from datastore
@@ -179,6 +181,7 @@ of the component
 - api/link/ui.datatable_getfirstid.md
 - api/link/ui.datatable_getformview.md
 - api/ui.datatable_getheadercontent.md
+- api/ui.datatable_getheadernode.md
 - api/link/ui.datatable_getidbyindex.md
 - api/link/ui.datatable_getindexbyid.md
 - api/link/ui.datatable_getitem.md
@@ -222,6 +225,7 @@ of the component
 - api/link/ui.datatable_parse.md
 - api/link/ui.datatable_refresh.md
 - api/ui.datatable_refreshcolumns.md
+- api/ui.datatable_refreshfilter.md
 - api/ui.datatable_refreshheadercontent.md
 - api/ui.datatable_registerfilter.md
 - api/link/ui.datatable_remove.md

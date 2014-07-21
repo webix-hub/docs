@@ -2,8 +2,7 @@
 Properties
 ==========
 
-{{links
-- api/ui.datatable_adjustheaders_config.md - when enabled column auto-sizing will take header width in account
+{{api
 - api/link/ui.datatable_animate_config.md - defines or disables view change animation.
 - api/ui.datatable_autoconfig_config.md - datatable adjust configuration to the data
 - api/ui.datatable_autoheight_config.md - adjusts DataTable to the parent container size vertically
@@ -25,6 +24,7 @@ Properties
 - api/link/ui.datatable_disabled_config.md - disables item
 - api/link/ui.datatable_drag_config.md - enables or disables drag-and-drop
 - api/ui.datatable_dragcolumn_config.md - enables drag-and-drop support for columns
+- api/ui.datatable_editmath_config.md - enables formular editing
 - api/link/ui.datatable_editvalue_config.md - defines which data item is editable (in case of several data item in the cell/line)
 - api/link/ui.datatable_editable_config.md - allows/denies editing in the view
 - api/link/ui.datatable_editaction_config.md - defines the action on which editors will be opened
@@ -82,7 +82,6 @@ Properties
 }}
 
 @index:
-- api/ui.datatable_adjustheaders_config.md
 - api/link/ui.datatable_animate_config.md
 - api/ui.datatable_autoconfig_config.md
 - api/ui.datatable_autoheight_config.md
@@ -104,6 +103,7 @@ Properties
 - api/link/ui.datatable_disabled_config.md
 - api/link/ui.datatable_drag_config.md
 - api/ui.datatable_dragcolumn_config.md
+- api/ui.datatable_editmath_config.md
 - api/link/ui.datatable_editvalue_config.md
 - api/link/ui.datatable_editable_config.md
 - api/link/ui.datatable_editaction_config.md

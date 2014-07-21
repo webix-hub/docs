@@ -1,11 +1,9 @@
-What's new & Roadmap
+What's new
 ====================
 
-
-### What's new
-
-
 {{index
+- desktop/whats_new_1_9.md
+- desktop/whats_new_1_8.md
 - desktop/whats_new_1_7.md
 - desktop/whats_new_1_6.md
 - desktop/whats_new_1_5.md
@@ -18,10 +16,3 @@ What's new & Roadmap
 }}
 
 
-### Roadmap
-
-
-
-#### version 1.6
-
-{{note Will be released on March 2014 }}

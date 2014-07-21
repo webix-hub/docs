@@ -4,7 +4,7 @@ ui.form
 
 {{memo A form that supports an extended set of elements. }}
 
-The component provides validation and the ability to save user input to the backend database. Check [form](desktop__form.md) documentation for more detailed description.
+The component provides validation and the ability to save user input to the backend database. Check [form](desktop/form.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -23,10 +23,10 @@ The component provides validation and the ability to save user input to the back
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.toolbar.md">ui.toolbar</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/values.md">Values</a>, <a href="api/refs/ui.layout.md">ui.layout</a>, <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/validatedata.md">ValidateData</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.form_addview.md - add new view to layout or multiview
 - api/link/ui.form_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.form_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
@@ -76,10 +76,10 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/link/ui.form_onafterload_event.md - fires after xml loading is complete
 - api/link/ui.form_onaftervalidation_event.md - fires after data has been validated
 - api/link/ui.form_onbeforeload_event.md - occurs immediately before loading XML data has been started
@@ -93,10 +93,9 @@ Events
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.form_animate_config.md - defines or disables view change animation.
 - api/ui.form_autoheight_config.md - sets component height according to its contents
 - api/link/ui.form_borderless_config.md - used to hide the component borders
@@ -123,6 +122,7 @@ Properties
 - api/link/ui.form_padding_config.md - defines the space between the element borders and content (applies the specified value to all sides).
 - api/link/ui.form_paddingx_config.md - sets the right and left padding (applies the specified value to both sides)
 - api/link/ui.form_paddingy_config.md - sets the top and bottom padding (applies the specified value to both sides)
+- api/link/ui.form_responsive_config.md - enables responsive mode for horizontal layout
 - api/link/ui.form_rows_config.md - array of views objects arranged vertically
 - api/link/ui.form_rules_config.md - defines a set of rules for input field(s) of the form(htmlform)
 - api/link/ui.form_scroll_config.md - enables/disables the scroll bar
@@ -136,10 +136,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.form_$getsize_other.md - returns the current size of the component
 - api/link/ui.form_$height_other.md - current height of the view
 - api/link/ui.form_$setsize_other.md - sets the component size

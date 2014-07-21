@@ -6,10 +6,10 @@ Values
 
 
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/values_clear.md - clears all the field in a specified form
 - api/values_focus.md - sets focus into the necessary component
 - api/values_getcleanvalues.md - returns hash of original form values
@@ -21,13 +21,14 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/values_onafterload_event.md - fires after xml loading is complete
 - api/values_onchange_event.md - fires when data in the input is changed
 }}
+
 
 
 

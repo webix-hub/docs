@@ -62,9 +62,9 @@ DataProcessor listens to component events, defines editing operation (as **inser
 
 **Defining Operation Type**
 
-By default, operation status comes as **webix_operation** in POST request. Usually, save script single and contains patterns for different operations. 
+By default, operation status comes as **webix_operation** in POST request. Usually, save script is single and contains patterns for different operations. 
 
-At the same time you can define a **specific scripts** for each operation. Dataprocessor will define the type of operation and the necessary script will be executed:
+At the same time you can define a **specific script** for each operation. Dataprocessor will define the type of operation and the necessary script will be executed:
 
 ~~~js
 save:{

@@ -4,7 +4,7 @@ ui.tooltip
 
 {{memo A static text that is rendered in the absolutely positioned container. }}
 
-Generally, the component isn't intended for direct initialization. But if you decide to use it, use mouse events (onMouseOut, onMouseIn, onMouseMove etc.) to show/hide the tooltip box in the specified position. Check [tooltip](desktop__tooltip.md) documentation for more detailed description.
+Generally, the component isn't intended for direct initialization. But if you decide to use it, use mouse events (onMouseOut, onMouseIn, onMouseMove etc.) to show/hide the tooltip box in the specified position. Check [tooltip](desktop/tooltip.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -23,10 +23,10 @@ Generally, the component isn't intended for direct initialization. But if you de
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/singlerender.md">SingleRender</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.tooltip_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.tooltip_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.tooltip_bind.md - binds components
@@ -57,11 +57,11 @@ Methods
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
-- api/link/ui.tooltip_onafterrender_event.md - occurs immediately after the component has been rendered
+
+{{api
+- api/link/ui.tooltip_onafterrender_event.md - occurs immediately after the component has been rendered.
 - api/link/ui.tooltip_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.tooltip_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.tooltip_ondestruct_event.md - occurs when component destroyed
@@ -69,10 +69,9 @@ Events
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.tooltip_animate_config.md - defines or disables view change animation.
 - api/link/ui.tooltip_borderless_config.md - used to hide the component borders
 - api/link/ui.tooltip_container_config.md - an html container (or its id) where the component needs initializing
@@ -97,10 +96,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.tooltip_$getsize_other.md - returns the current size of the component
 - api/link/ui.tooltip_$height_other.md - current height of the view
 - api/link/ui.tooltip_$scope_other.md - scope for resolving event and method names

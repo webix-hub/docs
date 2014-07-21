@@ -30,6 +30,8 @@ webix.ui({
 }); 
 ~~~
 
+Dymanic content setting can be implemented with the [setContent](api/ui.template_setcontent.md) method.
+
 {{note
 Template doesn't need to have **view** attribute. The following code goes as well. 
 }}
@@ -45,15 +47,13 @@ webix.ui({
 ~~~
 
 {{note
-The same-name property of the component, **template**, is also used by Webix data components. It allows setting pattern to display data items from multiple dataset as well as adding styles to components. 
-The [corresponding chapter of the manual](desktop/html_templates.md) will tell you in detail how to define templates. 
+The same-name property of the component, **template**, is also used by Webix data components. It allows setting pattern to display texts and render data items from multiple datasets alongside with adding styling to them. 
+The [Data Templates article](desktop/html_templates.md) covers all the rules of templating.
 }}
-       
-##Template Types
 
-###Default 
+##Template Content
 
-With no type specified, template is a white field with predefined value that can be:
+Template content is set with the **template** property that can be:
 
 - **plain text**:
 
@@ -70,7 +70,8 @@ With no type specified, template is a white field with predefined value that can
 - **single data element** defined as **data**:
 
 ~~~js
-{ template:"#title#", data:{title:"Image One", src:"imgs/image001.jpg"}} //shows "Image One"
+{ template:"#title#", data:{title:"Image One", src:"imgs/image001.jpg"}} 
+//shows "Image One"
 ~~~
 
 Above, template property contains **data key** in **hash** signs to define which data from the data record should be displayed. 
@@ -87,6 +88,26 @@ In some cases, **template** property of template component can be a **function**
 ~~~
 
 {{sample 26_carousel/01_init.html}}
+       
+##Template Types
+
+###Default 
+
+Default template is a white non-editable area with some text or HTML content. It's surrounded by a grey border. 
+
+~~~js
+{ view:"template", template:"Text"}
+~~~
+
+###Clean 
+
+Clean template looks very much like default one, but features no borders. 
+
+~~~js
+{ view:"template", template:"Text", type:"clean"}
+~~~
+
+{{sample 80_docs/header_templates.html}}
 
 ###Header
 
@@ -101,8 +122,13 @@ webix.ui({
         {view:"...", ...} 
 	]
 });
-~~~        
-        
+~~~ 
+
+{{sample 80_docs/header_templates.html}}
+
+{{note
+Note that headers of [accordionitems](desktop/accordionitem.md) are set in a different way. 
+}}    
 
 ###Section
 
@@ -118,8 +144,5 @@ resort to [borderless](desktop/borders.md) layout design.
 
 {{sample 80_docs/header_templates.html}}
 
-{{note
-Note that headers of [accordionitems](desktop/accordionitem.md) are set in a different way. 
-}}
 
 [API Reference](api__refs__ui.template.html)

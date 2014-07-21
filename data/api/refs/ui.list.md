@@ -4,7 +4,7 @@ ui.list
 
 {{memo A regular list of items. }}
 
-The component serves as the base class that defines properties, methods, and events common for all list-type controls. Check [list](desktop__list.md) documentation for more detailed description.
+The component serves as the base class that defines properties, methods, and events common for all list-type controls. Check [list](desktop/list.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -23,10 +23,10 @@ The component serves as the base class that defines properties, methods, and eve
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/selectionmodel.md">SelectionModel</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/ui.proto.md">ui.proto</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/copypaste.md">CopyPaste</a></div>
 
-Methods
--------
 
-{{links
+<div class='h2'>Methods</div>
+
+{{api
 - api/link/ui.list_add.md - adds an item to the store
 - api/link/ui.list_addcss.md - applied CSS class to a component item
 - api/link/ui.list_adjust.md - adjusts the component to the size of the parent HTML container
@@ -107,16 +107,17 @@ of the component
 }}
 
 
-Events
-------
+<div class='h2'>Events</div>
 
-{{links
+
+{{api
 - api/link/ui.list_onafteradd_event.md - fires after adding item to datastore
 - api/link/ui.list_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.list_onafterdelete_event.md - fires after item deleting
 - api/link/ui.list_onafterdrop_event.md - fires after drag-n-drop was finished
 - api/link/ui.list_onafterload_event.md - fires after xml loading is complete
 - api/link/ui.list_onafterrender_event.md - occurs immediately after the component has been rendered
+- api/link/ui.list_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.list_onafterselect_event.md - fires after item was selected
 - api/link/ui.list_onaftersort_event.md - fires after sorting dataset
 - api/link/ui.list_onbeforeadd_event.md - fires before adding item to datastore
@@ -139,21 +140,27 @@ Events
 - api/link/ui.list_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.list_onitemrender_event.md - for each item rendering, occurs only for items with custom templates
 - api/link/ui.list_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
+- api/link/ui.list_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.list_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.list_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.list_onmouseout_event.md - fires when the mouse was moved out from the specified item
 - api/link/ui.list_onpaste_event.md - fires when the user presses CTRL+V keys combination
+- api/link/ui.list_onrotate_event.md - occurs on screen rotating
 - api/link/ui.list_onselectchange_event.md - fires after selection state was changed
+- api/link/ui.list_onswipex_event.md - 
+- api/link/ui.list_onswipey_event.md - 
+- api/link/ui.list_ontouchend_event.md - 
+- api/link/ui.list_ontouchmove_event.md - 
+- api/link/ui.list_ontouchstart_event.md - 
 - api/link/ui.list_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation
 - api/link/ui.list_onvalidationsuccess_event.md - fires after the newlyloaded/added/edited data has passes validation successfully
 - api/link/ui.list_onviewresize_event.md - view size was changed by resizer
 }}
 
 
-Properties
-----------
+<div class='h2'>Properties</div>
 
-{{links
+{{api
 - api/link/ui.list_animate_config.md - defines or disables view change animation.
 - api/ui.list_autoheight_config.md - height of view will be adjusted to show all items
 - api/ui.list_autowidth_config.md - width of view will be adjusted to show all items
@@ -207,10 +214,11 @@ Properties
 
 
 
-Other
------
 
-{{links
+<div class='h2'>Other</div>
+
+
+{{api
 - api/link/ui.list_$drag_other.md - method called when drag operation initiated
 - api/link/ui.list_$draghtml_other.md - defines how dragged item will look
 - api/link/ui.list_$dragin_other.md - method called when item moved on possible drop landing during dnd

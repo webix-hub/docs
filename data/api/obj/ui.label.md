@@ -1,7 +1,7 @@
 
 {{memo a non-editable text control}}
 
-The component is used to display static text on a page. Check [label](desktop__controls.md#label) documentation for more detailed description.
+The component is used to display static text on a page. Check [label](desktop/controls.md#label) documentation for more detailed description.
 
 ### Constructor
 

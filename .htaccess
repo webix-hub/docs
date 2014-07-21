@@ -2,17 +2,18 @@ Options +FollowSymLinks
 Options +Indexes
 RewriteEngine On
 
+RewriteRule ^(.+)\/(.+\.(html)?)$ ./index.php?lang=$1&page=$2 [QSA]
+RewriteRule ^(.+\.(html)?)$ ./index.php?page=$1 [QSA]
+
+RewriteRule ^(.+)\/(.+\.(html)?)\/edit$ ./index.php?lang=$1&edit=$2 [QSA]
+RewriteRule ^(.+\.(html)?)\/edit$ ./index.php?edit=$1 [QSA]
+
+RewriteRule ^(.+\.html\/|)(editor\/.+)$ ../../../madoka/core/$2 [QSA]
+
+RewriteRule ^(search\.(php)?)$ ./index.php?action=search& [QSA]
+RewriteRule ^(suggest\.(php)?)$ ./index.php?action=suggest& [QSA]
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-RewriteRule ^(.+)\/(.+\.(html)?)$ ./view.php?lang=$1&page=$2 [QSA]
-RewriteRule ^(.+\.(html)?)$ ./view.php?page=$1 [QSA]
-
-RewriteRule ^(.+\/)(assets\/.+)$ $2 [QSA]
-RewriteRule ^(.+\/)(media\/.+)$  $2 [QSA]
-RewriteRule ^(.+\/)(editor\/.+)$ $2 [QSA]
-
-RewriteRule ^(.+\/)(view.php)$ $2 [QSA]
-
-RewriteRule ^(search\.(php)?)$ ./search/search.php? [QSA]
-RewriteRule ^(suggest\.(php)?)$ ./search/suggest.php? [QSA]
+RewriteRule ^(.+\/)*assets\/(.+)$ ../../../madoka/core/styles/$2 [QSA]

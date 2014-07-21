@@ -92,7 +92,7 @@ FilmList = Backbone.Collection.extend({
 });
 ~~~
 
-### LOading the Collection into a View
+### Loading the Collection into a View
 
 First, lets create a Webix data component, for instance view [list](desktop/list.md):
 
@@ -117,9 +117,9 @@ films.fetch();
 $$("mylist").sync(films);
 ~~~
 
-{{sample 30_backbone\03_load_collection.html }}
+{{sample 30_backbone/03_load_collection.html }}
 
-The code above renders [list](desktop/list.md) view and fills it with data from Collection of Models.
+The code above renders [list](desktop/list.md) view and fills it with data from FilmList Collection that is comprised of FirmRecord Models.
 
 ###Conclusion
 

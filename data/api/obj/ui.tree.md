@@ -2,7 +2,7 @@
 {{memo a hierarchical structure of nodes}}
 
 Each node in the tree might contain any number of other nodes, called as child. Nodes that contain child nodes can be expanded or collapsed. <br>
-The component supports in-line node editing, advanced drag-and-drop, three-state checkboxes etc. Check [tree](datatree__index.md) documentation for more detailed description.
+The component supports in-line node editing, advanced drag-and-drop, three-state checkboxes etc. Check [tree](/) documentation for more detailed description.
 
 ### Constructor
 

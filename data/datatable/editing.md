@@ -1,6 +1,6 @@
 DataTable Editing
 =========================
-DataTable is an editable component, i.e. users have the possibility to edit it manually.
+DataTable is an <a href="http://webix.com/widget/datatable/" title="edit datatable component">editable component</a>, i.e. users have the possibility to edit it manually.
 
 Generally, to make the table editable you should set parameter api/link/ui.datatable_editable_config.md to true.
 
@@ -23,143 +23,28 @@ dtable = new webix.ui({
 
 Editors
 ------------------------------------
-The library provides 3 predefined editors:
+The library provides 8 predefined editors:
 
-- [text](#text)
-- [select](#select)
-- [inline-text](#inlinetext)
+- **text**, **inline-text**;
+- **checkbox**, **inline-checkbox**;
+- **select**, **combo**, **richselect**;
+- **date**;
+- **color**;
+- **popup**
 
-To assign the appropriate editor type to a column, you should specify attribute **editor** of the api/ui.datatable_columns_config.md parameter and set it to some of types.
+All of them are described in detail in the [corresponding article](desktop/editing.md#editortypes).
 
-{{snippet Specifying the editor for a column
+To assign the needed editor type to a column, you should specify attribute **editor** of the api/ui.datatable_columns_config.md parameter and set it to some of types.
+
+{{snippet 
+Specifying the editor for a column
 }}
 ~~~js
 columns:[
-	{ id:"title", 	header:"Film title",	editor:"text"}
+	{ id:"title", header:"Film title", editor:"text"}
 ]
 ~~~
 {{sample 15_datatable/04_editing/01_basic.html }}
-
-<h3 id="text">text</h3>
-
-A basic text editor.
-
-<img src="datatable/text_editor.png"></img>
-
-{{snippet
-Specifying the 'text' editor for the column
-}}
-
-~~~js
-dtable = new webix.ui({
-	view:"datatable",
-	...
-	editable:true,
-    columns:[
-		{ id:"title", header:"Film title",    editor:"text"},
-		{ id:"year",  header:"Release year",  editor:"text"}
-	]
-});
-~~~
-
-{{sample 15_datatable/04_editing/01_basic.html }}
-
-<h3 id="select">select</h3>
-
-A dropdown list.
-
-<img src="datatable/select_editor.png"></img>
-
-{{snippet
-Specifying the 'select' editor for the column
-}}
-
-~~~js
-dtable = new webix.ui({
-	view:"datatable",
-	...
-	editable:true,
-	columns:[
-		{ id:"title",  editor:"text",	header:"Film title"},
-		{ id:"cat_id", editor:"select", options:["Crime", "Thriller"], 
-        header:"Category"},
-	]
-});
-~~~
-
-####Defining the select options
-The select options for the editor can be set in 2 ways:
-
-<br>
-1) *Directly in the **options** attribute*.
-
-{{snippet
-Setting select options in the constructor
-}}
-~~~js
-columns:[
-	...
-	{ id:"cat_id", editor:"select", options:["Crime", "Thriller", "Western"], 
-    header:"Category"}
-]
-~~~
-{{sample 15_datatable/04_editing/04_select.html }}
-
-<br>
-
-2) *As a separate variable containing key/value pairs. In this case the **options** attribute must be set to the name of this variable*.
-
-{{snippet
-Setting select options in a variable
-}}
-~~~js
-var film_options = {
-	"1" : "Thriller",
-	"2" : "Crime",
-	"3" : "Western"
-}
-...
-
-columns:[
-	...
-	{ id:"cat_id", editor:"select",	options:film_options, header:"Category"}
-]
-~~~
-{{sample 15_datatable/04_editing/06_select_id.html }}
-
-<h3 id="inlinetext">inline-text</h3>
-
-Allows presenting a standard text input in any custom way you wish (apply any style and add any content). In other words, **inline-text** is a customised text editor.
-
-<img src="datatable/inline_text.png"></img>
-
-The desired look-and-feel for the editor is achieved with the help of **template** attribute. The value you define there DataTable will interpret as a text input.
-To get detail information about templates, read article datatable/templates.md. 
-
-
-{{snippet
-Specifying the 'inline-text' editor for the column
-}}
-~~~js
-columns:[
-	...
-    { id:"title", header:"Film title",    editor:"text"},
-    { id:"year",  header:"Release year",  editor:"inline-text", 
-    template:"<input type='text' value='#value#' style='width:70px;'>"}
-]
-~~~
-
-{{sample 15_datatable/04_editing/09_inline_editors.html }}
-
-<br>
-
-You can get the same text input specifying just **template** without using the **editor** attribute. So what is the matter to use the **editor** attribute? 
-
-If you specify the **editor:"inline-text"** attribute DataTable will provide a special processing treat for the editor while editing: invoking edit-related events 
-(api/link/ui.datatable_onbeforeeditstart_event.md, api/link/ui.datatable_onbeforeeditstop_event.md etc.), support for the 'Tab' key navigation and so on.<br>
-If you don't specify the **editor** attribute you should provide the processing logic for the editor on your own. 
-
-
 
 
 Creating a custom editor
@@ -171,8 +56,6 @@ To create a custom editor, you should set the following methods to it:
 - **getValue()** - gets the value of the editor.
 - **setValue()** - sets the value of the editor.
 - **render()** - renders the editor.
-
-
 
 webix.editors = {
     "myeditor":{
@@ -331,6 +214,26 @@ Apart from row and column editing, datatable API offers the possibilities to
 - move focus to the active editor (if any) - **focusEditor()** mehtod;
 - close the editor without saving changes - **editCancel()** method;
 - close the editor while saving changes - **editStop()** method.
+
+Editing via a Bind Form
+----------------------------------
+
+Webix components including datatable can be bound to another component to ensure **synchronous changing** of their **data**. For instance, a simple function can be used to bind a form to a grid, 
+which allows to edit datatable data:
+
+- clicking the datatable row will trigger form filling;
+- then you edit data in the form;
+- form saving will send changed data back to the grid. 
+
+~~~js
+$$('form1').bind('datatable1');
+~~~
+
+{{sample 15_datatable/04_editing/13_bind_form.html}}
+
+Note that **name** attributes of form fields coincide with **ids** of datatable columns. 
+
+[More info about data binding](desktop/data_binding.md). 
 
 The Tab key navigation
 ---------------------------------------------

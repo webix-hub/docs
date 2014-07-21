@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/link/ui.pager_animate_config.md - defines or disables view change animation.
 - api/ui.pager_apionly_config.md - makes the pager invisible to enable paging with custom buttons
 - api/link/ui.pager_borderless_config.md - used to hide the component borders
@@ -22,6 +22,7 @@ Properties
 - api/link/ui.pager_minheight_config.md - sets the minimal height for the view
 - api/link/ui.pager_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.pager_mouseeventdelay_config.md - the delay between a real mouse action and invoking the related events
+- api/link/ui.pager_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.pager_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
 - api/link/ui.pager_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.pager_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
@@ -52,6 +53,7 @@ Properties
 - api/link/ui.pager_minheight_config.md
 - api/link/ui.pager_minwidth_config.md
 - api/link/ui.pager_mouseeventdelay_config.md
+- api/link/ui.pager_on_config.md
 - api/link/ui.pager_onclick_config.md
 - api/link/ui.pager_oncontext_config.md
 - api/link/ui.pager_ondblclick_config.md

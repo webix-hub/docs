@@ -1,29 +1,55 @@
 Form Controls
 =============
 
-##Button {#button}
+Button {#button}
+-----------------
+
+**Standard Buttons**
 
 <img src="desktop/buttons.png"/>
 
-{{snippet
-Button Initialization
-}}
 ~~~js
-{ view:"button", id:"my_button", value:"Button", type:"...", inputWidth:100 }
+{ view:"button", id:"my_button", value:"Button", type:"...", inputWidth:100 } 
+//types are descriped below
 ~~~
 
 {{sample 13_form/01_controls/10_buttons.html }}
 
+**HTML Buttons**
+
+<img src="desktop/html_buttons.png"/>
+
+~~~js
+{ view:"button", id:"my_button", value:"Button", type:"htmlbutton"}
+~~~
+
+{{sample 02_toolbar/12_styled_buttons.html}}
+
+####Main Button Types
+
+Type of a button defines the way is looks like: 
+
+- base (**no type**) - default button;
+- **'form'** - a button for a form (darker than standard);
+- **'danger'** - a red button to attract user attention;
+- **'prev'** - a button with left arrow;
+- **'next'** - a button with right arrow;
+- **'htmlbutton'** - a button than can be defined by HTML markup;
+- ['image'](#imagebutton) and its variations - a button with an image on it;
+- ['icon'](desktop/icon_types.md) and its variations - a button with an icon in it.
+
+
 ####Main properties
 
-- **value** (string) - defines the text displayed on the button;
-- **type** (string)  - defines the type of the button, the way is looks (base (no type), 'form', 'danger', 'prev', 'next' as well as ['image'](#imagebutton) and ['icon'](desktop/icon_types.md) and their variations);
+- **value** (string) - defines the text displayed on standard buttons (basic, *form*, *danger*, *prev*, *next*);
+- **label** (string) - defines the text or/and HTML markup for the button of *imabeButton* and *iconButton* types and their valiarions as well as for *htmlbutton*;
 - **width** (number) - sets the width of the button;
 - **inputWidth** (number) - sets the width of the text on the button and adjusts button's width to it;
 - **image** (string) - sets a path to the button icon;
 - **align** (string)- positions a button with relation to a parent view;
 - **popup** (string)- defines the ID of a popup window that will be shown on button click;
-- **click** (function) - defines a function that will be executed on clicking the button (another possibility is to attach an event to it using the button's ID).
+- **click** (function) - defines a function that will be executed on clicking the button (another possibility is to attach an event to it using the button's ID);
+- **css** (string) - name of CSS class applied to a button.
 
 {{note
 Specific button types as [imagebutton](#imagebutton) and an [icon button](desktop/icon_types.md) feature images / icons in their bodies and are described separately. 
@@ -55,7 +81,15 @@ Checkbox Initialization
     - **labelWidth** - width of the label container;      
 - **labelRight** (string) - set the text of right-hand label. Only checkbox features this functionality;
 - **value** (boolean) - defines whether the checkbox is selected by default or not (0 for false, 1 for true); 
-- **align** (string)- positions button with relation to a parent view.
+- **align** (string)- positions button with relation to a parent view;
+- **checkValue** (string) - value of the checkbox in the checked state (1 by default);
+- **uncheckValue** (string) - value of the checkbox in the unchecked state (0 by default);
+
+Webix checkbox control is based on standard HTML checkbox  yet some skins use a FontAwesome icon to render it. To switch to a standard HTML checkbox, use **customCheckbox** property: 
+
+~~~js
+{ view:"checkbox", customeCheckbox:false} 
+~~~
 
 [Controls Common Functionality](desktop/controls_guide.md)
 
@@ -63,7 +97,7 @@ Checkbox Initialization
 
 ##Colorpicker {#colorpicker}
 
-<img src="desktop/colorpicker.png"/>
+<img src="desktop/colorboard.png"/>
 
 {{snippet
 Colorpicker Initialization
@@ -74,7 +108,7 @@ Colorpicker Initialization
 
 {{sample 24_colorpicker/04_in_form.html }}
 
-Colorpicker is used with ui-related [colorboard](desktop/colorboard.md) that is initialized on clicking the control. Colorpicker allows selecting a color from the board for its further usage. 
+<a href="http://webix.com/widget/colorpicker/" title="webix colorpicker widget">Colorpicker</a> is used with ui-related [colorboard](desktop/colorboard.md) that is initialized on clicking the control. Colorpicker allows selecting a color from the board for its further usage. 
 
 ####Main Properties
 
@@ -117,39 +151,23 @@ Combo Initialization
 - **value** (string, number) 
 	- within **options** array it sets text value for selectable items;
  	- within Combo constructor it defines the initially selected item of the control (**option ID** in case of a full form, **option text** in case of a short form);
+- **placeholder** (string) - defines placeholder for combo input. The control should be inited without an initial value;       
 - **yCount** (number) - the number of lines in a popup;
 - **options** (array, object) - sets the options to choose from;
 - **label** (string) - text label of a control. It can be customized by:
 	- **labelAlign** (string) - label alignment towards its container. Possible values are "left" and "right".  In any way, it's placed left to the control; 
     - **labelWidth** (number) - width of the label container.
 
-####Advanced Setting of Combo Options
+####Advanced Combo Configuration 
 
-The options to select can be defined outside the control with the help of the **getPopupView** function that returns a list object in a popup window. To this list you can either [load 
-or parse data](desktop/data_loading.md) as well as sync it with another component or [Datacollection](desktop/nonui_objects.md). 
+Combo box control can be customized in a number of ways, e.g.: 
 
-~~~js
-$$("my_combo").getPopupView().sync("list1"); //pushes this data into combo popup 
-~~~
+- options can be defined dynamically;
+- options can be loaded from serverside;
+- template can be changed;
+- filtering rule can be changed..
 
-{{sample 80_docs/getpopup.html }}
-
-**Combo option**, a list record, may contain:
-
-- a short string, like "Apple";
-- **multi-line text** with html tags. In this case, parent (e.g. toolbar) height should be increased. 
-
-~~~js
-"toolbar", height:100,
-..... 
-
-options:[
-	{ id:1, value:"Here can be some long multi line content <ul><li>item1 <li> item 2</ul>" }, 
-	{ id:2, value:"Papai"  }
-]
-~~~
-
-{{sample 02_toolbar/20_richselect.html}} 
+To learn more, go to [Advanced Combo and Richselect Settings](desktop/advanced_combo.md) article. 
 
 ####Getting Current Value
 
@@ -209,7 +227,7 @@ Note that if you set **min** and **max** parameters, the initial conreol value s
 
 ##Datepicker {#datepicker}
 
-<img src="desktop/datepicker.png"/>
+<img src="desktop/date_picker.png"/>
 
 {{sample 13_form/01_controls/13_datepicker.html }}
 
@@ -226,6 +244,8 @@ Datepicker initialization
 - **label** (string) - text label of a control. It can be customized by:
 	- **labelAlign** (string) - label alignment towards its container. Possible values are "left" and "right".  In any way, it's placed left to the control; 
     - **labelWidth** (number) - width of the label container; 
+- **value** (string, obj) - initial value to display in the control input field;   
+- **placeholder** (string) - defines placeholder for datepicker input. The control should be inited without an initial value;   
 - **timepicker** (boolean) - enables a clock for time selection (*false* by default);
 - **date** (function) - new Date() constructor to define the initial date of a calendar. If used without parameters, shows current date;
 - **stringResult** (boolean) - sets the data type of value returned by **getValue()/get Values()** methods. If true, it returns date as string. By default the property is *false* and the method returns date object;
@@ -321,7 +341,7 @@ Image Button Initialization
 ####Main Properties
 
 - **image** (path) - path to the desired image;
-- **label** (string) - text on button by the image;
+- **label** (string) - text on a button by the image;
 - **type** (string) - defines the type of a button. Numbers indicate image sizes:
 	- *image* - an image with a left-hand label (if any); 
     - *imageTop* - an image with a bottom label;
@@ -337,7 +357,7 @@ Image Button Initialization
 
 <img src="desktop/label.png"/>
 
-Ui-related label is a plain text. Like other components, it features specific **label** property that sets text value. 
+Ui-related label is a non-scrollable placeholder for plain text. Like other components, it features specific **label** property that sets text value. 
 
 {{snippet
 Label Initialization
@@ -353,6 +373,13 @@ Label Initialization
 - **label** (string) - defines text of the label control;
 - **inputWidth** (number) - defines the width of the control;
 - **align** (string) - positions the label with relation to the parent view.
+
+Label control can be used to render any user HTML or icons (as well as built-in in Webix FontAwesome icons):
+
+~~~js
+{ view:"label", label:"<span class='myCss'>My Label</span>"},
+{ view:"label", label:"<span class='webix_icon fa-user'></span> My Label" }
+~~~
 
 [Controls Common Functionality](desktop/controls_guide.md)
 
@@ -370,10 +397,10 @@ Ui-related radio is a block of severel items with the possibility to check only 
 Radio Initialization
 }}
 ~~~js
-	{ view:"radio", label:"Branch", value:1, options:[
-				{  id:1, value:"Master" }, //the initially selected item
-				{  id:2, value:"Branch" }
-                
+{view:"radio", label:"Branch", value:1, options:[
+	{ id:1, value:"Master" }, //the initially selected item
+	{ id:2, value:"Branch" }
+]}              
 //short form for options array
  {view:"radio", options:["Master", "Branch"]}
 ~~~
@@ -390,6 +417,12 @@ Radio Initialization
     - **labelWidth** (number) - width of the label container; 
 - **align** (string)- positions button with relation to a parent view;
 - **vertical** (boolean) - defines vertical arrangement of radiobuttons.
+
+Webix radio control is based on standard HTML radio  yet some skins use a FontAwesome icon to render it. To switch to a standard HTML radio, use **customRadio** property: 
+
+~~~js
+{view:"radio", customRadio:false} 
+~~~
 
 [Controls Common Functionality](desktop/controls_guide.md)
 
@@ -408,12 +441,12 @@ Richselect Initialization
 }}
 //full form
 ~~~js
-{ view:"richselect",
+{view:"richselect",
 	id: "list2", label: 'richselect', 
     value:1, yCount:"3", options:[ 
-			{ id:1, value:"One"   }, // the initially selected item
-			{ id:2, value:"Two"   }, 
-			{ id:3, value:"Three" }]
+		{id:1, value:"One"}, // the initially selected item
+		{id:2, value:"Two"}, 
+		{id:3, value:"Three"}]
 }
 ...   
 //short  form for options array
@@ -424,41 +457,26 @@ Visually, the **richselect** control consists of a [text input](#text) and [popu
 
 Another possibility to create a component with a similar functionality is [attaching a suggest list to a text field](desktop/suggest.md), but in this case, text field will be editable.
 
-####Main properties
+####Main Properties
 
 - **value** (string, number) 
 	- within **options** array it sets text value for selectable items;
  	- within richselect constructor it defines the initially selected item of the control(**ID** in case of a long form, **text value** in case of a short form of initialization);
+- **placeholder** (string) - defines placeholder for richselect input. The control should be inited without an initial value;       
 - **label** (string) - text label of a control. It can be customized by:
 	- **labelAlign** (string) - label alignment towards its container. Possible values are "left" and "right".  In any way, it's placed left to the control; 
     - **labelWidth** (number) - width of the label container; 
 - **options** (array, object) - sets the options to choose from in a long or short form. 
 
-The options to select can be defined outside the control with the help of the **getPopupView** function that returns **list object** in a popup window. For this list you can either [load 
-or parse data](desktop/data_loading.md) as well as sync it with another component or [Datacollection](desktop/nonui_objects.md). 
+####Advanced Richselect configuration 
 
-~~~js
-$$("my_combo").getPopupView().sync("list1"); //pushes this data into combo popup 
-~~~
+Richselect control can be customized in a number of ways, e.g.: 
 
-{{sample 80_docs/getpopup.html }}
+- options can be defined dynamically;
+- options can be loaded from serverside;
+- template can be changed..
 
-**Richselect option**, a list record, may contain:
-
-- a short string, like "Apple";
-- **multi-line text** with html tags. In this case, parent (e.g. toolbar) height should be increased. 
-
-~~~js
-"toolbar", height:100,
-..... 
-
-options:[
-	{ id:1, value:"Here can be some long multi line content <ul><li>item1 <li> item 2</ul>" }, 
-	{ id:2, value:"Papai"  }
-]
-~~~
-
-{{sample 02_toolbar/20_richselect.html}} 
+To learn more, go to [Advanced Combo and Richselect Settings](desktop/advanced_combo.md) article. 
 
 ####Getting Current Value
 
@@ -510,10 +528,10 @@ Select Initialization
 }}
 ~~~js
 // full form
-{ view:"select", label:"Branch", value:1, options:[
-				{ id:1, value:"Master" }, // the initially selected value
-				{ id:2, value:"Release" }], 
-         labelAlign:'right' 
+{view:"select", label:"Branch", value:1, options:[
+	{id:1, value:"Master" }, // the initially selected value
+	{id:2, value:"Release" }
+  ], labelAlign:'right' 
 }
 
 //short form 
@@ -540,8 +558,8 @@ Select Initialization
 ..... 
 
 options:[
-	{ id:1, value:"Here can be some long multi line content <ul><li>item1 <li> item 2</ul>" }, 
-	{ id:2, value:"Papai"  }
+	{id:1,value:"Some long multiline content<ul><li>item1</li><li>item 2</li></ul>"}, 
+	{id:2,value:"Papaya" }
 ]
 ~~~
 
@@ -564,9 +582,9 @@ Segmented Initialization
 }}
 ~~~js
 {view:"segmented", multiview:true, value:1, options:[
-				 { id:"1", value:"Section A" }, // the initially selected segment
-				 { id:"2", value:"Section B" }, 
-				 { id:"3", value:"Section C" }]
+	{ id:"1", value:"Section A" }, // the initially selected segment
+	{ id:"2", value:"Section B" }, 
+	{ id:"3", value:"Section C" }]
 }
 
 //short form for options array
@@ -618,7 +636,9 @@ Slider Initialization
 - **step** (number) - distance to the next selectable value (1 by default);
 - **min** (number) - minimal value of a slider control. 0 by default. 
 - **max** (number) - maximum value of the slider control. 100 by default.
-- **title** (template, function) - text label over the slider marker {{sample 13_form/05_extras/04_slider_step.html}}.
+- **title** (template, function) - text label over the slider marker 
+
+{{sample 13_form/05_extras/04_slider_step.html}}.
 
 {{note
 Note that if you set **min** and **max** parameters, the initial control **value** should be within their range.
@@ -636,7 +656,7 @@ For complex title that **changes its text** depending on the current value, defi
 
 ~~~js
 {view:"slider", title:function(obj){
-	var text = obj.value > 20 ? "Minimum level reached. " : ""; //ttitle for values over 20
+	var text = obj.value > 20 ? "Minimum level reached. " : ""; //title for values over 20
 	return text + "Value: "+ obj.value;} //title for other values
 }
 ~~~
@@ -671,7 +691,7 @@ The new title is set with the help of **define()** method while current value of
 
 ##Tabbar {#tabbar}
 
-<img src="desktop/tabbar_types.png" />
+<img src="desktop/tabbar.png" />
 
 {{sample 02_toolbar/02_tabbar.html }} 
 <br>
@@ -685,12 +705,12 @@ Tabbar Initialization
 }}
 ~~~js
 {view:"tabbar", id:'tabbar', value: 'listView', multiview:true, options: [
-                                    { value: 'List', id: 'listView'},
-                                    { value: 'Form', id: 'formView'},
-                                    { value: 'Empty', id: 'emptyView'}
-                                ]
+	{ value: 'List', id: 'listView'},
+    { value: 'Form', id: 'formView'},
+    { value: 'Empty', id: 'emptyView'}]
 }
 ~~~
+
 ####Main properties
 
 - **multiview** (boolean)- if *true*, it links tabs to multiview cells; 
@@ -700,7 +720,10 @@ Tabbar Initialization
     - within Tabbar constructor it defines the tab that will be shown initially on page loading.
 - **type** (string) - if set to "bottom", the tabbar gets other styling and is placed below the multiview area;
 
-[Adding and Deleting Tabs (Options) on the Go](desktop/tabs_options.md)
+####Advanced Tabbar Usage
+
+- [Adding and Deleting Tabs (Options) on the Go](desktop/tabs_options.md)
+- [Dynamic Tabbar](desktop/responsive_tabbar.md)
 
 [Controls Common Functionality](desktop/controls_guide.md)
 
@@ -719,8 +742,8 @@ Text Initialization
 }}
 
 ~~~js
-	{ view:"text", value:'dummy@email.com', label:"Email", labelAlign:'right'},
-	{ view:"text", type:'password', value:'123pass', label:"Password", labelAlign:'right'}
+{view:"text", value:'dummy@email.com', label:"Email", labelAlign:'right'},
+{view:"text", type:'password', value:'123pass', label:"Password", labelAlign:'right'}
 ~~~
 
 ####Main properties
@@ -791,9 +814,9 @@ Toggle initialization
 }}
 ~~~js
 { view:"toggle", type:"iconButton", name:"s4", 
-			offIcon:"pause", 
-			onIcon:"play",
-			offLabel:"Disabled", onLabel:"Enabled" },
+	offIcon:"pause", 
+	onIcon:"play",
+	offLabel:"Disabled", onLabel:"Enabled" },
 ~~~
 
 ####Main properties
@@ -816,17 +839,16 @@ Toggle type is defined by the **type** property. If it isn't defined, a standard
 - **image** for an image with a left-hand label (if any);
 - **imageButton** for a standard button with an image and a left-hand label;
 - **imageTop** for a picture and a label below it;
-- **imageButtonTop** for a standard button with a picture and a label under the picture.
+- **imageButtonTop** for a standard button with a picture and a label under the picture;
+- **next** for a  button with a right-hand arrow;
+- **prev**for a button with a left-handed arrow.
+
+**Image Toggle types**
 
 <table class="list" cellspacing="0" cellpadding="5" border="0">
-	<caption class="caption">
-		<strong>Table 1 </strong>
-		Toggle types
-	</caption>
-	<tbody>
 	<tr>
 		<td> <code> type:"iconButton" </code> </td>
-		<td style="text-align:center;"><img src="desktop/toggle_iconButton.png"/></td>
+		<td style="text-align:center;"><img src="desktop/toggle_iconbutton.png"/></td>
 	</tr>
 	<tr>
 		<td> <code> type:"image" </code> </td>
@@ -844,7 +866,6 @@ Toggle type is defined by the **type** property. If it isn't defined, a standard
 		<td> <code> type:"imageButtonTop" </code> </td>
 		<td style="text-align:center;"><img src="desktop/toggle_imageButtonTop.png"/></td>
 	</tr>
-	</tbody>
 </table>
 
 {{sample 13_form/01_controls/14_toggle_images.html}}
@@ -857,4 +878,5 @@ Toggle type is defined by the **type** property. If it isn't defined, a standard
   - desktop/button_groups.md
   - desktop/suggest.md
   - desktop/tabs_options.md
-  
+  - desktop/responsive_tabbar.md
+  - desktop/advanced_combo.md

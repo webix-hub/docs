@@ -94,27 +94,27 @@ The first combination is set by default. Other available ones can be achieved wi
 	<tbody>
 	<tr>
 		<td>Numeric</td>
-		<td><a href="datatable/somesample.md"><img src="datatable/default_mode.png"/> </a></td>
+		<td><img src="datatable/default_mode.png"/></td>
 		<td>default mode, doesn't require specifying a separate template</td>
 	</tr>
 	<tr>
 		<td> Next/Previous</td>
-		<td><img src="datatable/nextPrevious.png"/></td>
+		<td><img src="datatable/next_previous.png"/></td>
 		<td> <code>template:" {common.prev()} {common.next()} " </code> </td>
 	</tr>
 	<tr>
 		<td> First/Previous/Next/Last</td>
-		<td><img src="datatable/firstPrevNextLast.png"/></td>
+		<td><img src="datatable/first_prev_next_last.png"/></td>
 		<td> <code> template:" {common.first()} {common.prev()} {common.next()} {common.last()}" </code> </td>
 	</tr>
 	<tr>
 		<td> Numeric/First/Last</td>
-		<td><img src="datatable/numericFirstLast.png"/></td>
+		<td><img src="datatable/numeric_first_last.png"/></td>
 		<td> <code> template:" {common.prev()} {common.pages()} {common.next()}" </code> </td>
 	</tr>
 	<tr>
 		<td> Numeric/Next/Previous/First/Last	</td>
-		<td><img src="datatable/numericFirstPrevNextLast.png"/></td>
+		<td><img src="datatable/numfirst_prev_next_last.png"/></td>
 		<td> <code> template:" {common.first()} {common.prev()} {common.pages()} {common.next()} {common.last()}" </code> </td>
 	</tr>
 	</tbody>

@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/modality_zindex_config.md - stack order of the component
 }}
 

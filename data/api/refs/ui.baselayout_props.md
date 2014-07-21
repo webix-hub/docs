@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/link/ui.baselayout_animate_config.md - defines or disables view change animation.
 - api/link/ui.baselayout_borderless_config.md - used to hide the component borders
 - api/ui.baselayout_cols_config.md - array of views objects arranged horizontally
@@ -18,6 +18,7 @@ Properties
 - api/link/ui.baselayout_minheight_config.md - sets the minimal height for the view
 - api/link/ui.baselayout_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.baselayout_on_config.md - allows attaching custom handlers to inner events of the component
+- api/ui.baselayout_responsive_config.md - enables responsive mode for horizontal layout
 - api/ui.baselayout_rows_config.md - array of views objects arranged vertically
 - api/ui.baselayout_visiblebatch_config.md - sets the batch that will be shown initially
 - api/link/ui.baselayout_width_config.md - sets the width of the component
@@ -39,6 +40,7 @@ Properties
 - api/link/ui.baselayout_minheight_config.md
 - api/link/ui.baselayout_minwidth_config.md
 - api/link/ui.baselayout_on_config.md
+- api/ui.baselayout_responsive_config.md
 - api/ui.baselayout_rows_config.md
 - api/ui.baselayout_visiblebatch_config.md
 - api/link/ui.baselayout_width_config.md

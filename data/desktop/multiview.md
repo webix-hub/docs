@@ -43,6 +43,16 @@ webix.ui({
 });
 ~~~
 
+The **dimensions** of multiview cells are adjusted to their content. By default, the whole multiview (all the cells) take the size of smallest cell. To adjust it to the biggest cell, use **fitBiggest** property:
+
+~~~js
+webix.ui({
+	view:"multiview", 
+	cells:[],
+    fitBiggest:true
+});
+~~~
+
 ###Switching between Views
 
 1 . **[Tabbar and Segmented Integral Buttons](desktop/tabbar_switching.md).**

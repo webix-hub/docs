@@ -97,7 +97,7 @@ Inline CSS
 		 container: "areaA", //corresponds to the value of <div> id parameter
          view:"list", 
          ... 
-         })
+    });
 </script>
 ~~~
 
@@ -117,10 +117,10 @@ Autoheight for view Template
 }}
 ~~~js
 rows:[
-		{ template:"html->my_box1", autoheight:true},
-		{ template:"Area 1"},
-		{ template:"html->my_box2", autoheight:true}
-      ]  
+	{ template:"html->my_box1", autoheight:true},
+	{ template:"Area 1"},
+	{ template:"html->my_box2", autoheight:true}
+]  
 ~~~
 
 {{sample 04_template/02_autoheight.html}}
@@ -139,22 +139,31 @@ Datatable Column Sizing
 ~~~js
 columns:[
 	{ id:"rank", header:"", css:"rank", adjust:true },
-	...]
+    ...
+]
 ~~~
 
 {{sample 15_datatable/09_columns/01_size_by_content.html }}
 
-**Auto height** is set within component **type** that defines properties of an item (not the whole component):
+**Auto height** is set within component **type** that defines properties of an item (not the whole component). Each item is adjusted to its content, which may result in **variable dimensions** of items:
 
-{{snippet
-List Content 
-}}
 ~~~js
+//list with variable item height
 webix.ui({
 	view:"list",
     width:250,
     type:{
     	height:"auto"
+    }
+});
+
+//dataview with variable item width and height
+webix.ui({
+	view:"dataview",
+    width:250,
+    type:{
+    	height:"auto", 
+        width:"auto"
     }
 });
 ~~~

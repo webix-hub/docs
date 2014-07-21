@@ -1,7 +1,7 @@
 
 {{memo a singular pane of the accordion component}}
 
-Each accordion pane consists of the header and body. The body of a pane can be collapsed/expanded by clicking on the appropriate header. Check [accordionitem](desktop__accordionitem.md) documentation for more detailed description.
+Each accordion pane consists of the header and body. The body of a pane can be collapsed/expanded by clicking on the appropriate header. Check [accordionitem](desktop/accordionitem.md) documentation for more detailed description.
 
 ### Constructor
 

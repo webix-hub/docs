@@ -72,6 +72,13 @@ webix.message({
 
 If you cancel expire period, such message will disappear only on mouse click.
 
+Message boxes can as well be hidden **programmatically**:
+
+~~~js
+var message = webix.message("Hi!");
+webix.message.hide(message);
+~~~
+
 ##Modal Message Boxes
 
 **Message boxes** resemble ui-related modal [Window](desktop/window.md) yet they are initialized in a completely another way. They prevent the workflow on the parent app until 
@@ -192,5 +199,24 @@ webix.modalbox({
 ~~~
 
 {{sample 10_window/10_modal_box.html}}
+
+##Modal Windows and Keyboard Interaction
+
+Keyboard functionality for modax boxes is controlled by **webix.message.keyboard** property that is initially true. 
+
+By default modal boxes block keyboard events of the page. Users can use obly the following keys that set modal box value and close it: 
+
+- **"space"** and **"enter"** for setting **true** value as modal box result;
+- **"escape"** for setting **false** value as modal box result.
+
+To enable keyboard events (and disable above mentioned keys) you should set **keyboard** property to false:
+
+~~~js
+webix.keyboard.message = false; 
+webix.modalbox({...})
+~~~
+
+From now on, user gets a possibility to use full keyboard, for instance, for typing values into inputs inside modal boxes. 
+
 
 @complexity:2

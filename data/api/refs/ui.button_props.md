@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/ui.button_align_config.md - the alignment of the control within the parent container
 - api/link/ui.button_animate_config.md - defines or disables view change animation.
 - api/link/ui.button_borderless_config.md - used to hide the component borders
@@ -14,6 +14,7 @@ Properties
 - api/link/ui.button_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.button_height_config.md - sets the height of the component
 - api/link/ui.button_hidden_config.md - defines whether the view will be hidden initially
+- api/ui.button_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/link/ui.button_id_config.md - the component ID
 - api/ui.button_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/ui.button_inputwidth_config.md - the width of the input area, or a button's text value area.
@@ -28,6 +29,7 @@ Properties
 - api/ui.button_popup_config.md - allows to attach pop-up menu to the button
 - api/ui.button_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/link/ui.button_template_config.md - the component template
+- api/ui.button_tooltip_config.md - tooltip for the input
 - api/ui.button_type_config.md - the type of the control
 - api/ui.button_value_config.md - sets the initial value for a control
 - api/link/ui.button_width_config.md - sets the width of the component
@@ -45,6 +47,7 @@ Properties
 - api/link/ui.button_gravity_config.md
 - api/link/ui.button_height_config.md
 - api/link/ui.button_hidden_config.md
+- api/ui.button_hotkey_config.md
 - api/link/ui.button_id_config.md
 - api/ui.button_inputheight_config.md
 - api/ui.button_inputwidth_config.md
@@ -59,6 +62,7 @@ Properties
 - api/ui.button_popup_config.md
 - api/ui.button_tabfocus_config.md
 - api/link/ui.button_template_config.md
+- api/ui.button_tooltip_config.md
 - api/ui.button_type_config.md
 - api/ui.button_value_config.md
 - api/link/ui.button_width_config.md

@@ -2,9 +2,9 @@
 Events
 =======
 
-{{links
+{{api
 - api/link/ui.pager_onaftercontextmenu_event.md - fires after the context menu was called in the item area
-- api/link/ui.pager_onafterrender_event.md - occurs immediately after the component has been rendered
+- api/link/ui.pager_onafterrender_event.md - occurs immediately after the component has been rendered.
 - api/link/ui.pager_onbeforecontextmenu_event.md - fires before the context menu is called in the item area
 - api/link/ui.pager_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.pager_onbindrequest_event.md - fires when the component is ready to receive data from the master component

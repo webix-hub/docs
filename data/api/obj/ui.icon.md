@@ -1,7 +1,7 @@
 
 {{memo a static picture of an icon}}
 
-The component provides a collection of popular icons and API for their handling. Check [icon](desktop__controls.md#icon) documentation for more detailed description.
+The component provides a collection of popular icons and API for their handling. Check [icon](desktop/controls.md#icon) documentation for more detailed description.
 
 ### Constructor
 

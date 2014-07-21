@@ -17,14 +17,16 @@ webix.ui({
 Views themselves can be put other views thus creating a complex app structure with parent and child components. View features **IDs** that differentiate them from other views in the document: 
 {{snippet
 Default ID
+}}
 ~~~js
 webix.ui({
 	rows:[
-		{view:"list", ...}, //gets "list1" ID
-        {view:"list", ...} //gest "list2" ID
+		{view:"list", ...}, //gets "$list1" ID
+        {view:"list", ...} //gets "$list2" ID
     ]
 });
 ~~~
+
 Still, it's much more convenient to define custom 'speaking' IDs to the views. 
 
 {{snippet
@@ -40,7 +42,7 @@ webix.ui({
 
 Working within several views you can refer to the components with respect to their hierarchy or by using the view's unique ID. 
 
-##Enpty View
+##Empty View
 
 Views can as well be **empty**. An empty view is two braces **{}** you put btween meaningful components to leave space between them. 
 
@@ -76,7 +78,7 @@ webix.ui({
 
 ##Basic View Methods
 
-###1 . getParentView()
+###1 . getParentView() & getTopParentView()
 
 The method is called from any view and is used to get the parent object of this view. 
 
@@ -84,17 +86,35 @@ The method is called from any view and is used to get the parent object of this 
 webix.ui({
 	view:"layout", id:"my_layout", rows:[
 		{view:"toolbar", id:"my_Bar", cols:[
-    		{view:"button, id:"my_button", .."}
-    			]
-        },
+    		{view:"button, id:"my_button", ..}
+    	]},
         {view:"template", ...}
      ]
-})
+});
 
-var t = $$("my_button").getParentView(); //  returns toolbar object to work with
+var t = $$("my_button").getParentView(); //  returns toolbar object 
+var l = $$("my_button").getTopParentView(); //  returns layout object 
 ~~~
 
-###2 . getChildViews();
+###2 . getFormView()
+
+The method returns an object of a **parent form** for the control it is called for. It's especially useful in case of comblex forms:
+
+~~~js
+webix.ui({
+	view:"form", id:"my_form", elements:[
+		{view:"text"},
+        {cols:[
+    		{view:"combo, id:"my_combo", ..}
+    	]},
+        {view:"checkbox", ...}
+     ]
+});
+
+$$("my_combo").getFormView(); //returns 'my_form' object
+~~~
+
+###3 . getChildViews()
 
 This method, on the contrary, returns, an array of all the children of the calling component. Array members are numbered starting from 0. 
 
@@ -106,7 +126,7 @@ var bar_id = $$("my_layout").getChildViews()[0].id; //returns toolbar ID
 var but_id = $$("my_toolbar").getChildViews()[1].id //returns the ID of the 2nd button
 ~~~
 
-###3 . getIndex() 
+###4 . index() 
 
 Like the above mentioned one, this method works with views containing other views that are stored in an array ( the property may be called *cols, rows, elements, options* depending on the component).
 
@@ -124,7 +144,7 @@ webix.ui({
 $$("mylayout").index($$('cell1')); //-> returns 0 for the 1st array element
 ~~~
 
-###4 . getNode();
+###5 . getNode()
 
 The method helps us get an HTML container of the component. 
 
@@ -138,7 +158,7 @@ webix.ui({
 var box = $$("my_bar").getNode; 
 ~~~
 
-###5 . getInputNode()
+###6 . getInputNode()
 
 The method works with form controls  defined by **input** tag in HTML, the simplest being [text](desktop/controls.md#text). It returns DOM element related to the input with all its properties. 
 

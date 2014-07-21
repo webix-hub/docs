@@ -2,7 +2,7 @@
 Properties
 ==========
 
-{{links
+{{api
 - api/navigationbuttons_navigation_config.md - defines navigation parameters
 }}
 

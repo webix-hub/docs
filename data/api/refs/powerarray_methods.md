@@ -2,7 +2,7 @@
 Methods
 =======
 
-{{links
+{{api
 - api/powerarray_each.md - executes a method for each element of an array
 - api/powerarray_filter.md - filters the array
 - api/powerarray_find.md - gets the index of an element in the array
