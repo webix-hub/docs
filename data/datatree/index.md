@@ -8,10 +8,11 @@ filtering, sorting, copying etc.
 
 <i>Confused where to start? Read article 'datatree/quick_start.md' to kick things off.</i>
 
+<br>
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/tree.png"/>
 
-<br>
+
 
 <table  style='border-left:none !important;' cellspacing="0" cellpadding="5" border="0">
 	<tbody>
@@ -28,7 +29,7 @@ filtering, sorting, copying etc.
 				<li>datatree/sorting.md</li>
             </ul>
 		</td>
-		<td class='topic_description' onclick="displaySubList(event,'data')">Learns you how to treat data in the tree to present the desired set of items.</td>
+		<td class='topic_description' onclick="displaySubList(event,'data')">Teaches you how to treat data in the tree to present the desired set of items.</td>
 	</tr>
 	<tr>
 		<td class='topics'>

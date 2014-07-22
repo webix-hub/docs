@@ -6,7 +6,7 @@ in design yet the difference between them hides in the code.
 
 <br>
 
-<img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/multiview.png"/>
+<img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/tabview.png"/>
 
 <br>
 
