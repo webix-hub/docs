@@ -1,13 +1,13 @@
 Uploader
 ==========================================
-###Overview
+##Overview
 Uploader is a component that allows users to  upload files. It allows browsing directories on your machine to choose the necessary file(s) and send them to server.
 
 Uploader can be used **standalone** as well as integrated into **form** or **UI component** (in an "invisible" mode for the latter). 
 
 <img style="display:block; margin-left:auto;margin-right:auto;"   src="desktop/uploader_01.png"/>
 
-###Initialization
+##Initialization
 
 ~~~js
 webix.ui({
@@ -22,7 +22,7 @@ webix.ui({
 {{sample 21_upload/01_init_list.html}}
 
 
-###Working with Uploader
+##Working with Uploader
 - desktop/file_upload.md
 - desktop/configuring_uploader.md
 - desktop/progress_bar.md
@@ -30,7 +30,7 @@ webix.ui({
 - desktop/apionly_uploader.md
 
 
-###API Reference
+##API Reference
 
 [Methods, properties and events](api__refs__ui.uploader.html)
 

@@ -1,7 +1,7 @@
 Menu
 =============
 
-###Overview
+##Overview
 
 UI-related pulldown **Menu** inherits from [list](desktop/list.md) and lets users select the necessary item from the list of grouped items (submenus). Each element of a submenu can start its own submenu. <br>
 A dynamic **Submenu** becomes visible only when you put a mouse pointer over the corresponding item of the main menu (on 'onMouseOver' event) and hides as soon as you remove mouse pointer ("onMouseOut"). 
@@ -10,7 +10,7 @@ A dynamic **Submenu** becomes visible only when you put a mouse pointer over the
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/menu.png" />
 
 
-###Initialization
+##Initialization
 
 Menu object is stored in the **data** property. 
 
@@ -234,7 +234,7 @@ template:function(obj){
 
 {{sample 03_menu/09_disable_item.html}}
 
-##Eevnt Handling with Menu and Submenu Items
+##Event Handling with Menu and Submenu Items
 
 All menu and submenu items can be accessed by their IDs.
 
@@ -301,7 +301,7 @@ data:[
 {{sample 03_menu/12_submenu_config.html }}
 
 
-###API Reference
+##API Reference
 
 [Methods, properties and events](api__refs__ui.menu.html)
 

@@ -1,13 +1,13 @@
 Window
 =================
 
-###Overview
+##Overview
 Window is a ui-related component that looks like a standard on-screen window. It inherits from [view](desktop/view.md) but differs from other components in its character. It 
 lies not within your app's layout but as if above other components. The same is true about [popup](desktop/popup.md). 
 
 <img src="desktop/window.png"/>
 
-###Initialization
+##Initialization
 
 ~~~
 webix.ui({
@@ -28,6 +28,8 @@ webix.ui({
 - To make window visible, you should apply **show()** method after its initialization;
 - A movable window contains **move:true** property in its constructor;
 - By default windows are **non-modal**. When such window is focused, it can be closed with an 'Esc' hotkey. Modality is described below. 
+
+##Working with Window
 
 ####Head
 

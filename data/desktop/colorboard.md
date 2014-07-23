@@ -1,7 +1,7 @@
 Colorboard
 =============
 
-###Overview
+##Overview
 
 UI-related colorboard is a tool to get the hex code of a color that you are going to use for [styling](desktop/styling.md). 
 By default, colors are presented in a rainbow-like manner. The detalization level you set manually. 
@@ -12,7 +12,7 @@ By default, colors are presented in a rainbow-like manner. The detalization leve
 
 <br>
 
-###Initialization
+##Initialization
 
 Colorboard is used in conjunction with a [colorpicker](desktop/controls.md#colorpicker) control. In such a case, you needn't to initialize a colorboard since it will appear as soon as you click a control. 
 
@@ -38,7 +38,7 @@ webix.ui({
 	- **minLightness** (0.15 by default) - start value of lightness (the darkest part);
     - **maxLightness** - (1 by default) - end value of lightness (the lightest part).
 
-###Working with Colorboard
+##Working with Colorboard
 
 You can customize your colorboard by:
 
@@ -98,7 +98,7 @@ function doLog(val, control, ev){
 	}
 ~~~
 
-###API Reference
+##API Reference
 
 [Methods, parameters and events](api__refs__ui.colorboard.html)
 

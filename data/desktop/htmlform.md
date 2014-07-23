@@ -1,14 +1,14 @@
 HTMLform
 ================
 
-###Overview
+##Overview
 
 Though the webix library has its own [form](desktop/form.md) component, there exists a possibility to create a separate form made with the help of
 pure HTML.  This is done within the special **htmlform** component. 
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/htmlform.png"/>
 
-###Initialization
+##Initialization
 
 There're three ways of embedding a form into the component: 
 
@@ -136,14 +136,14 @@ webix.ui({
 });
 ~~~
 
-###Working with HTMLform
+##Working with HTMLform
 
 - [Data Validation](desktop/data_validation.md)
 - [Form and Htmlform Treatment](desktop/form_tasks.md)
 - [File Uploading with Form](desktop/uploader_integration.md)
 - [Data Binding](desktop/data_binding.md)
 
-###API Reference
+##API Reference
 
 [Methods, properties and events](api__refs__ui.htmlform.html)
 

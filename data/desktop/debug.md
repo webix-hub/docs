@@ -22,7 +22,7 @@ etc. instead of some incomprehensible internal errors;
 
 ###Debugging Menu
 
-Debugging menu is activated with a "**Shift + right mouse click**" combination on the needed component and offers a lot of debugging options: 
+Debugging menu is activated with a "**Ctrl + right mouse click**" combination on the needed component and offers a lot of debugging options: 
 
 - look up into the documentation for this component;
 - learn the component's dimensions;

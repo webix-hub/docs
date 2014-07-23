@@ -1,13 +1,15 @@
 Video
 =================
 
+##Overview
+
 Webix **video** is a UI component designed for embedding video files into the application. It is based on **HTML5 video tag** to provide support for most popular video formats: **MP4**, **WebM** and **Ogg**.
 
 <img src="desktop/video.png"/>
 
 {{sample 27_video/01_init.html}}
 
-###Initialization
+##Initialization
 
 The component inherits from Webix [view](desktop/view.md) and is initialized with the help of **webix.ui()** constructor. 
 
@@ -55,7 +57,7 @@ autoplay:true
 
 {{sample 27_video/02_autoplay.html}}
 
-###Working with Video
+##Working with Video
 
 HTML5 video can be controlled programmatically using methods and properties of video DOM element:
 
@@ -112,5 +114,9 @@ function playPause(){
 ~~~
 
 Alongside with playing and pausing the video, we change **button text value** with its api/ui.button_setvalue.md to correspond video state. 
+
+##API Reference
+
+[Methods, properties and events](api__refs__ui.video.html)
 
 

@@ -1,14 +1,14 @@
 Dataview
 =============
 
-###Overview
+##Overview
 
 Dataview displays objects with data according to a predefined template. It inherits from [view](desktop/view.md). 
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/dataview.png"/>
 
 
-###Initialization
+##Initialization
 
 Specify the component's ID if you are going to work with the dataview later. Optionally, you can place dataview into an HTML container.
 
@@ -28,7 +28,7 @@ webix.ui({
 
 **Data** property defines datasource for the view. Data can be loaded in one of [supported data types](desktop/data_types.md). 
 
-###Working with Dataview
+##Working with Dataview
 
 - [Data Loading](desktop/data_loading.md)
 - [Defining Data Templates](desktop/html_templates.md)
@@ -42,7 +42,7 @@ Note that there's a built-in possibility to edit data with dataview. You should 
 - [Dynamic Loading](desktop/dynamic_loading.md)
 - [Selection](desktop/selection.md)
 
-###API Reference
+##API Reference
 
 [Methods, Properties and Events](api__refs__ui.dataview.html)
 

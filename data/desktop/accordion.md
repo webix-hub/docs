@@ -1,7 +1,7 @@
 Accordion
 ===================
 
-###Overview
+##Overview
 
 <a href="http://webix.com/widget/layout-accordion/" title="webix accordion widget">Accordion</a> consists of panes arranged into layout rows and cols. Each pane, or **accordion item**, features **body** and **header** and can be fully expanded and collapsed by clicking its header. 
 You can place text or any component into each pane. The component inherits from [layout](desktop/layout.md). 
@@ -13,7 +13,7 @@ You can place text or any component into each pane. The component inherits from 
 <br>
 
 
-###Initialization
+##Initialization
 
 {{snippet
 Accordion with three panes
@@ -60,7 +60,7 @@ webix.ui({
 
 {{sample 01_layout/07_header_all.html}}
 
-###Working with Accordion
+##Working with Accordion
 
 Accordions differ by their possibility to show and hide panes at the same time. There's a special **multi** parameter 
 to set the necessary mode. 
@@ -69,7 +69,7 @@ to set the necessary mode.
 - **multi:false** - only one panel can be (and must be) visible at a time;
 - **multi:"mixed"** - all panels can be expanded at a time, but you cannot close them all. One panel remains visible. 
 
-###API Reference
+##API Reference
 
 [Methods, parameters and events](api__refs__ui.accordion.html)
 

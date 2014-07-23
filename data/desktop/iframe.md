@@ -1,7 +1,7 @@
 IFrame
 ================
 
-###Overview
+##Overview
 
 Ui-related IFrame is a component that helps include an i-frame, or 'inline frame' into the page. Basically, it's a floating frame on the webpage that contains an external web document. The component, 
 as a rule, is smaller than the page it's added into, so vertical and horizontal scrollbars appear. 
@@ -13,7 +13,7 @@ The component inherits from [view](desktop/view.md).
 <img style="display:block; margin-left:auto;margin-right:auto;"  src="desktop/iframe.png"/>
 
 
-###IFrame Initialization
+##Initialization
 
 ~~~js
 webix.ui({ 
@@ -25,7 +25,7 @@ webix.ui({
 - **src** (path) - defines external site url;
 - **waitMessage** (boolean) - set "Loading.." message to be displayed on page loading. 
 
-###Working with IFrame
+##Working with IFrame
 
 ####Data loading
 
@@ -62,7 +62,7 @@ $$("control").attachEvent("onAfterTabClick",function(sid){
 
 The event fires on clicking any tab, takes its ID (sid) as parameter and sets the source for external webpage equal to this ID. 
 
-###API Reference
+##API Reference
 
 [Methods, properties and events](api/refs/ui.iframe.md)
 

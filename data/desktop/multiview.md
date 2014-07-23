@@ -1,7 +1,7 @@
 Multiview
 ==========================
 
-###Overview
+##Overview
 
 Multiview  helps you rationally use space on the page by placing different views into one and the same area. Only one view is visible at a time the others accessable with the help of dedicated buttons. 
 
@@ -10,7 +10,7 @@ Multiview inherits from [layout](desktop/layout.md).
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/multiview.png"/>
 
 
-###Initialization
+##Initialization
 {{snippet
 Multiview with three views
 }}

@@ -1,7 +1,7 @@
 Calendar
 ================
 
-###Overview
+##Overview
 
 UI-related <a href="http://webix.com/widget/calendar/" title="webix calendar widget">calendar</a> inherits from [view](desktop/view.md) and allows you to include the Date and Time picker calendar into an app.
 It is a handy and fully interactive tool to pick the necessary time and date when filling a form. The dedicated timepicker allows setting the necessary time that will be displayed below the calendar area.
@@ -13,7 +13,7 @@ It is a handy and fully interactive tool to pick the necessary time and date whe
 <br>
 
 
-###Initialization
+##Initialization
 
 ~~~js
 webix.ui({
@@ -56,7 +56,7 @@ webix.ui({
 
 {{sample 09_calendar/02_start_date.html }}
 
-###Working with Calendar
+##Working with Calendar
 
 ####Setting and Getting Dates
 
@@ -184,7 +184,7 @@ webix.ui({
 
 CSS class applied for disabled dates (**webix_cal_day_disabled**) can be redefined. 
 
-###API Reference
+##API Reference
 
 [Methods, properties and events](api__refs__ui.calendar.html)
 

@@ -1,14 +1,14 @@
 Chart
 ==============
 
-###Overview
+##Overview
 
 <a href="http://webix.com/widget/charts/" title="webix charts component">Chart</a> is a ui-related component that inherits from view and helps present data in different graphic figures like colored columns, pie pieces or lines. 
 Like all the data-presenting components it takes initial data in [various formats](desktop/data_types.md). 
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/charts.png"/>
 
-###Initialization
+##Initialization
 
 The most important chart properties include **type**, **template** and **value** for data as well as criteria for data presenting (e.g. **step** of X axis in 
 a bar chart). Specify the chart ID if you are going to work with it later. 
@@ -43,7 +43,7 @@ Initialization of a Bar Chart
 To learn about all the chart properties, please refer to the [corresponding chapter of the manual](api__refs__ui.chart.html). 
 
 
-###Working with Chart
+##Working with Chart
 
 - [Chart Types](desktop/chart_types.md)
 - [Setting Chart Scales](desktop/chart_scales.md)
@@ -55,7 +55,7 @@ To learn about all the chart properties, please refer to the [corresponding chap
 - [Chart Colouring](desktop/chart_coloreffects.md)
 
 
-###API Reference
+##API Reference
 
 [Methods, parameters and events](api__refs__ui.chart.html)
 

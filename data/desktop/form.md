@@ -1,6 +1,6 @@
 Form
 ===============
-###Overview
+##Overview
 
 Any form is a means of getting an information from users. It contains input fields and select components like checkboxes,
 radiobuttons alongside with submit/cancel buttons depending on the situation. Find them all in our [Controls Guide](desktop/controls.md).
@@ -11,7 +11,7 @@ radiobuttons alongside with submit/cancel buttons depending on the situation. Fi
 
 <br>
 
-###Initialization
+##Initialization
 Ui-related form inherits from [view](desktop/view.md). It resembles [layout](desktop/layout.md) very much as it is divided into columns and rows where controls are put. 
 
 - **elements** - the form's specific property, an array of vertically arranged controls and control groups;
@@ -257,7 +257,7 @@ Loading
 $$("myform").load("data.php");
 ~~~
 
-###API Reference
+##API Reference
 
 [Methods, properties and events](api__refs__ui.form.html)
 

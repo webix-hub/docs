@@ -1,11 +1,11 @@
 Context
 ===============
 
-###Overview
+##Overview
 
 Ui-related context points to an element that will be shown on the page on right mouse click. The context look like a [popup window](desktop/popup.md) where you can place any HTML element or UI component. 
 
-###Initialization
+##Initialization
 
 ~~~js
 webix.ui({
@@ -27,7 +27,7 @@ webix.ui({
 
 Context features **hidden** property set to *true* by default. It can be changed during component init, but this won't make much sets since context purpose is to be hidden and appear only on right click. 
 
-###Working with Context
+##Working with Context
 
 What can be a context element? 
 
@@ -73,7 +73,7 @@ Content will get elements that are inside the container.
 
 {{sample 03_menu/05_context_content.html}}
 
-###API Reference
+##API Reference
 
 [Methods, properties and events](api__refs__ui.context.html)
 

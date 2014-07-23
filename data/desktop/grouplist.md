@@ -1,7 +1,7 @@
 Grouplist
 ===============
 
-###Overview
+##Overview
 
 Ui-related grouplist inherits from list and allows presenting data in groups. Data grouping is **hierarchical**, which means that any group item can start its
 own group. Hence, this component supports only XML and JSON [data formats](desktop/data_types.md) since they can arrange data in a hierarchical way. 
@@ -9,7 +9,7 @@ own group. Hence, this component supports only XML and JSON [data formats](deskt
 <img style="display:block; margin-left:auto;margin-right:auto;"  src="desktop/grouplist.png"/>
 
 
-###Initialization
+##Initialization
 
 ~~~js
 webix.ui({
@@ -19,6 +19,8 @@ webix.ui({
 ~~~
 
 {{sample 05_list/03_group_list.html }}
+
+##Working with Grouplist
 
 ####Rendering data in grouplist - template peculiarities. 
 
@@ -140,7 +142,7 @@ Hierarchical dataset state
 Note that there's no built-in possibility to edit data with grouplist. You should create a prototype editlist object beforehand.
 }}
 
-###API Reference
+##API Reference
 
 [Methods, parameters and events](api__refs__ui.grouplist.html)
 

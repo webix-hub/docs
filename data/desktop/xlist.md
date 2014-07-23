@@ -1,7 +1,7 @@
 X-list
 ===============
 
-###Overview
+##Overview
 
 UI-related x-list inherits from [list](desktop/list.md) and differs from it in the way of data presenting: while all lists arrange items vertically, 
 x-list offers the horizontal pattern.
@@ -10,7 +10,7 @@ x-list offers the horizontal pattern.
 
 {{sample 05_list/08_xlist.html }}
 
-###Initialization
+##Initialization
 
 ~~~js
 webix.ui({
@@ -22,7 +22,7 @@ webix.ui({
 });
 ~~~
 
-###Working with X-list
+##Working with X-list
 
 - [Data Loading](desktop/data_loading.md). 
 - [Defining Data Template](desktop/template.md).
@@ -36,7 +36,7 @@ webix.ui({
 Note that there's no built-in possibility to edit data with list. You should create a [prototype editlist object](desktop/edit.md) beforehand.
 }}
 
-###API Reference
+##API Reference
 
 [Methods, properties and events](api/refs/ui.list.md)
 
