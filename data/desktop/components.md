@@ -8,7 +8,7 @@ specific features to make your applications good-looking and user-friendly. All 
 
 <h2>Layouts</h2>
 
-Layouts help to organize your web page, define its overall look-and-feel. You can arrange the content in columns and rows, divide it into groups and control through navigation or animation.
+Layouts help you to organize your web page, define its overall look-and-feel. You can arrange the content in columns and rows, divide it into groups and control through navigation or animation.
  
 <div class="components_group" style="padding-left:60px;">
 	<a href="desktop/accordion.md">

@@ -29,7 +29,7 @@ webix.ui({
 });		
 ~~~
 
-{{sample 02_toolbar/14_toolbar_toggle.html }}
+{{sample 02_toolbar/04_toolbar_align.html}}
 
 
 Specify the ID of a toolbar as well as ID-s of all the necessary controls if you want to work with them later. 

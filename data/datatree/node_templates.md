@@ -90,19 +90,19 @@ The function input parameters are:
 Let's assume, you want to show items that have the nesting level greater than 2 in italic font. In thic case you can specify the data template as in:
 
 {{snippet
-Specifying the **template** parameter as a function
+Specifying the template parameter as a function
 }}
 ~~~js
 tree = new webix.ui({
-    view:"tree",
-    ...
-    template: function(obj, common){
-		if (obj.$level>2) {
-        	return common.icon(obj,common)+common.folder(obj,common)+"<i>"+obj.value+"</i>";
-		} else {
-			return  common.icon(obj,common)+common.folder(obj,common)+obj.value;
-        }
-	}
+  view:"tree",
+  ...
+  template: function(obj, common){
+	if (obj.$level>2) {
+       return common.icon(obj,common)+common.folder(obj,common)+"<i>"+obj.value+"</i>";
+	} else {
+	   return common.icon(obj,common)+common.folder(obj,common)+obj.value;
+    }
+  }
 });
 ~~~
 

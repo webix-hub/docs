@@ -10,8 +10,11 @@ You can insert more than one IFrame into the view provided that you initialize a
 
 The component inherits from [view](desktop/view.md).
 
+<br>
+
 <img style="display:block; margin-left:auto;margin-right:auto;"  src="desktop/iframe.png"/>
 
+<br>
 
 ##Initialization
 

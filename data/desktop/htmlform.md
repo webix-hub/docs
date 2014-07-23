@@ -1,12 +1,16 @@
 HTMLform
 ================
 
+###Overview
 ##Overview
 
 Though the webix library has its own [form](desktop/form.md) component, there exists a possibility to create a separate form made with the help of
 pure HTML.  This is done within the special **htmlform** component. 
 
+<br>
+
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/htmlform.png"/>
+
 
 ##Initialization
 

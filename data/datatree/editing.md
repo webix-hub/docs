@@ -20,7 +20,7 @@ webix.protoUI({
 }, webix.EditAbility, webix.ui.tree);
 
 
-tree = new webix.ui({
+var tree = new webix.ui({
 	view:"edittree",
 	...
 	editable:true,
@@ -36,11 +36,14 @@ tree = new webix.ui({
 
 Types of editors
 --------------------------------
-There are 2 predefined editors for the tree:
+{{note
+There are various types of data editors in the Webix library. You can use any of them in different components. To get more details read the article desktop/editing.md.  
+}}
+
+Below we'll describe 2 most frequently used editors for the tree:
 
 - [text](#text)
 - [select](#select)
-
 
 
 <h3 id="text">text</h3>
@@ -58,8 +61,7 @@ webix.protoUI({
 	name:"edittree"
 }, webix.EditAbility, webix.ui.tree);
 
-
-tree = new webix.ui({
+var tree = new webix.ui({
 	view:"edittree",
 	editable:true,
 	editValue:"value",
@@ -68,7 +70,7 @@ tree = new webix.ui({
 });
 ~~~
 
-{{sample 15_datatable/04_editing/01_basic.html }}
+{{sample 17_datatree/05_edit/01_selection.html }}
 
 <h3 id="select">select</h3>
 
@@ -86,55 +88,16 @@ webix.protoUI({
 }, webix.EditAbility, webix.ui.tree);
 
 
-tree = new webix.ui({
+var tree = new webix.ui({
 	view:"edittree",
 	editable:true,
 	editValue:"value",
     ...
 	editor:"select",
-    options:["Toyota", "Skoda"]
+    options:["The Shawshank Redemption", "The Godfather"]
 });
 ~~~
 
-####Defining the select options
-The select options for the editor can be set in 2 ways:
-
-<br>
-1) *Directly in the **options** property (inherited from api/refs/editability.md class)*.
-
-{{snippet
-Setting select options in the constructor
-}}
-~~~js
-tree = new webix.ui({
-    ...
-	editor:"select",
-    options:["Toyota", "Skoda"]
-});
-~~~
-{{sample 15_datatable/04_editing/04_select.html }}
-
-<br>
-
-2) *As a separate variable containing key/value pairs. In this case the **options** property must be set to the name of this variable*.
-
-{{snippet
-Setting select options in a variable
-}}
-~~~js
-var tree_options = {
-	"1" : "Toyota",
-	"2" : "Skoda",
-}
-...
-
-tree = new webix.ui({
-    ...
-	editor:"select",
-    options:tree_options
-});
-~~~
-{{sample 15_datatable/04_editing/06_select_id.html }}
 
 
 Denying editing specific items
@@ -150,30 +113,27 @@ webix.protoUI({
 	name:"edittree"
 }, webix.EditAbility, webix.ui.tree);
 
-tree = new webix.ui({
+var tree = new webix.ui({
 	view:"edittree",
 	...			
 	editable:true,
 	editor:"select",
 	editValue:"value",
 	data: [
-   		{id:"root", value:"Cars", open:true, data:[
-			{ id:"1", open:true, value:"Toyota", data:[
-				{ id:"1.1", value:"Avalon" },
-				{ id:"1.2", value:"Corolla" },
-				{ id:"1.3", value:"Camry" }
-			]},
-			{ id:"2", value:"Skoda", data:[
-				{ id:"2.1", value:"Octavia" },
-				{ id:"2.2", value:"Superb" }
-			]},
-		]}
-	];
-
+    	{ id:"1", open:true, value:"The Shawshank Redemption", data:[
+    		{ id:"1.1", value:"Part 1" },
+    		{ id:"1.2", value:"Part 2" },
+    		{ id:"1.3", value:"Part 3" }
+    	]},
+    	{ id:"2", value:"The Godfather", data:[
+    		{ id:"2.1", value:"Part 1" },
+    		{ id:"2.2", value:"Part 2" }
+    	]}
+    ]
 });	
-//only car makes (i.e. 'Toyota', 'Skoda') can be edited
+//only film parts (i.e. 'Part1', 'Part2') can be edited
 tree.attachEvent("onBeforeEditStart", function(id){
-	if ( this.getItem(id).$level != 2)
+	if ( this.getItem(id).$level != 1)
 		return false;
 });
 ~~~

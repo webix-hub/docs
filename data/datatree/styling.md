@@ -48,19 +48,20 @@ Generally, to style a specific item you can use the **css** attribute inside the
 <script>
 grid = new webix.ui({
         view:"tree",
-        data:[
-   		 	{id:"root", value:"Cars", open:true, data:[
-				{ id:"1", open:true, value:"Toyota", data:[
-					{ id:"1.1", value:"Avalon", css:"my_style" },
-					{ id:"1.2", value:"Camry"  },
-					{ id:"1.3", value:"Corolla"}
-				]},
-				{ id:"2", value:"Skoda", css:"my_style", data:[
-					{ id:"2.1", value:"Octavia"},
-					{ id:"2.2", value:"Superb" }
-				]},
-			]}
+        data: [
+        	{id:"root", value:"Films data", open:true, data:[
+        		{ id:"1", open:true, value:"The Shawshank Redemption", data:[
+        			{ id:"1.1", value:"Part 1" },
+        			{ id:"1.2", value:"Part 2", $css:"my_style" },
+        			{ id:"1.3", value:"Part 3" }
+        		]},
+        		{ id:"2", value:"The Godfather", open:true, data:[
+        			{ id:"2.1", value:"Part 1" },
+        			{ id:"2.2", value:"Part 2", $css:"my_style" }
+        		]}
+        	]}
         ],
+
 ...
 }); 
 </script>
@@ -104,7 +105,7 @@ One of ways to fine-tune the style of the tree is define some template for it.
 tree = new webix.ui({
 	view:"tree",
     ...
-	template:"{common.icon()}{common.folder()}<div style='color:blue;'>#value#<div>"
+	template:"{common.icon()}{common.folder()}<div style='color:blue;'>#value#</div>"
 });
 ~~~
 
@@ -147,7 +148,7 @@ The simplest way to change folder and file icons for all tree nodes is to **rede
 
 To set icons to **select tree nodes**, you should store their titles in the data source: 
 
-- Stored as **icons** in the dataset, such pictogramms are applied  as CSS class:
+- Stored as **icons** in the dataset, such pictograms are applied  as CSS class:
 
 ~~~js
 var data_with_icon = [
@@ -202,9 +203,10 @@ Image styling defines custom folder position:
 
 ~~~js
 webix.ui({
-	view:"tree",
-	template:function(obj, com){
-			var icon = obj.$count ? com.folder(obj, com) : ("<img src='icons/"+obj.image+".png' style='float:left; margin:3px 4px 0px 1px;'>");
-			return com.icon(obj, com) + icon + obj.value;}
+  view:"tree",
+  template:function(obj, com){
+	var icon = obj.$count ? com.folder(obj, com) : 
+    ("<img src='icons/"+obj.image+".png' style='float:left; margin:3px 4px 0px 1px;'>");
+	return com.icon(obj, com) + icon + obj.value;}
 });
 ~~~
