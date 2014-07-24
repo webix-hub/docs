@@ -1,7 +1,7 @@
 Treetable
 ===============
 
-###Overview
+##Overview
 
 Ui-related treetable inherits from [view](desktop/view.md). Being a hybrid between [DataTable](datatable/index.md) and [tree](datatree/index.md) it 
 shares a number of their properties and methods. 
@@ -10,7 +10,7 @@ shares a number of their properties and methods.
 <img style="display:block; margin-left:auto;margin-right:auto;"  src="desktop/treetable.png"/>
 
 
-###Initialization
+##Initialization
 
 {{note
 Note that you need to set **{common.treetable()}** template for a column that should display the tree. Otherwise, you'll get standard datatable. 
@@ -32,7 +32,7 @@ webix.ui({
 Tree table is populated with hierarchical data coming in <acronym title="Extensible Markup Language">XML</acronym> and <acronym title="JavaScript Object 
 Notation">JSON</acronym> [data formats](desktop/data_types.md). IDs of the coulmns must coincide with data keys from the initial dataset
 
-###Working with Treetable
+##Working with Treetable
 
 Common Tasks here include the following and coincide with those of the datatable. 
 
@@ -61,8 +61,7 @@ Common Tasks here include the following and coincide with those of the datatable
 {{sample 15_datatable/08_math/01_basic.html}}
 
 
-
-###API Reference
+##API Reference
 
 [Methods, properties and events](api__refs__ui.treetable.html)
 

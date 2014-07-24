@@ -1,14 +1,14 @@
 Property Sheet
 ============
 
-###Overview
+##Overview
 
 Property sheet is a list of properties. Ui-related property sheet inherits from [view](desktop/view.md). 
 
  	
 <img style="display:block; margin-left:auto;margin-right:auto;"  src="desktop/property_sheet.png"/>
 
-###Initialization
+##Initialization
 
 ~~~js
 { view:"property",  id:"sets", width:300,
@@ -28,7 +28,7 @@ Property sheet is a list of properties. Ui-related property sheet inherits from 
 The elements with **label** gets header CSS. If there's no type the element is non-styled and non-editable. 
 }}
 
-###Working with Property Sheet
+##Working with Property Sheet
 
 ####Property Sheet Values
 
@@ -173,7 +173,7 @@ prop.registerType("popup-ra",{
 {{sample 07_property/02_custom_checkbox.html}}
 
 
-###API Reference
+##API Reference
 
 [Methods, properties and events](api__refs__ui.property.html)
 

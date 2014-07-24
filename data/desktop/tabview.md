@@ -1,6 +1,8 @@
 Tabview
 ==========================
 
+##Overview
+
 Tabview is a hybrid component that encompasses [multiview](desktop/multiview.md) and [switching buttons](desktop/tabbar_switching.md). Tabview tabs don't differ from [tabbar](desktop/controls.md#tabbar)
 in design yet the difference between them hides in the code. 
 
@@ -10,7 +12,7 @@ in design yet the difference between them hides in the code.
 
 <br>
 
-###Initialization
+##Initialization
 
 There's no need to create either a special switching button, or separate multiview. Everything lies within one and the same view called **"tabview"** that **tabs** and **cells** properties that contains collections of tab
 button and corresponding views.
@@ -44,17 +46,20 @@ webix.ui({
 ~~~
 {{sample 02_toolbar/03_tabview.html }}
 
+
 Each tabview cell features:
 
 - **header** - string with a heading for the cell, displayed as **tab title**;
 - **body** - **component** object that is placed in this cell. 
 
-
-
 {{note
 Note that unlike with [multiview and tabbar](desktop/multiview.md), there's no *multiview* parameter in the tabview constructor. Switching is enabled
 automatically. 
 }}
+
+##API Reference
+
+[Methods, properties and events](api__refs__ui.tabview.html)
 
 ###Related Articles
 

@@ -1,13 +1,13 @@
 Unitlist
 ==============
 
-###Overview
+##Overview
 
 Unitlist presents data in groups derived from initial non-hierarchical dataset. Data items are sorted and then united by common values. 
 
 <img style="display:block; margin-left:auto;margin-right:auto;"   src="desktop/unitlist.png"/>
 
-###Initialization
+##Initialization
 
 {{snippet
 List items are groupped by title
@@ -45,7 +45,7 @@ uniteBy:function(obj){
 }
 ~~~
 
-###Working with Unitlist
+##Working with Unitlist
 
 **Working with Unit Values**
 
@@ -85,7 +85,7 @@ If there're several data items that comply to the unit value criterion, they are
 Note that there's no built-in possibility to edit data with unitlist. You should create a prototype **editlist** object beforehand.
 }}
 
-###API Reference 
+##API Reference 
 
 [Methods, properties and events](api__refs__ui.unitlist.html)
 

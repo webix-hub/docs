@@ -1,7 +1,7 @@
 Carousel
 ==========================
 
-###Overview
+##Overview
 
 Ui-related <a href="http://webix.com/widget/multiview-scrollview-carousel/" title="javascript webix slider">carousel</a> is designed to present Webix components in one view with the ability to switch between them by clicking on the dedicated buttons or sliding (on touch devices).
 
@@ -9,7 +9,7 @@ Ui-related <a href="http://webix.com/widget/multiview-scrollview-carousel/" titl
 
 {{sample 26_carousel/01_init.html}}
 
-###Initialization
+##Initialization
 
 Carousel items are arranged into either **rows** to scroll through them vertically or in **cols** to scroll horizontally. Each row/column includes Webix component, e.g: 
 
@@ -121,7 +121,7 @@ webix.ui({
 
 However, in case of significantly slower scrolling speed smoothness may degrade.
  
-###Working with Carousel
+##Working with Carousel
 
 1 . You can programmatically navigate through the carousel with the help of the following switching functions:
 	 - **showPrev()** - takes to the previous view;
@@ -155,7 +155,7 @@ $$("carousel").adjustScroll();
 $$("carousel").getActiveIndex();
 ~~~
 
-###API Reference
+##API Reference
 
 [Methods, Properties and Events](api/refs/ui.carousel.md)
 

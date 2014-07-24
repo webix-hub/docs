@@ -1,7 +1,7 @@
 Scrollview
 ======================
 
-###Overview
+##Overview
 
 Scrollview inherits from [view](desktop/view.md) and makes any of the nested components scrollable, either in horizontal or in vertical mode. It is handy in case of long 
 homogenious data items, like text templates.
@@ -9,7 +9,7 @@ homogenious data items, like text templates.
 <img style="display:block; margin-left:auto;margin-right:auto;"  src="desktop/scrollview.png"/>
 
 
-###Initialization
+##Initialization
 
 It's reasonable to use the scrollview just as a sccrolling container while text into is stored in HTML.
 
@@ -40,7 +40,7 @@ webix.ui{(
 
 Scrollview features a **body** object property where items (text templates, components) are stored in either **rows** or **cols** array for vertical or horizontal item arrangement respectively. 
 
-###Working with Scrollview
+##Working with Scrollview
 
 Within scrollview as well as within any component with a scrollbar you can: 
 
@@ -50,7 +50,7 @@ Within scrollview as well as within any component with a scrollbar you can:
 
 Read more about **scroll control** in the [corresponding article](desktop/scroll_control.md) of the documentation. 
 
-###API Reference
+##API Reference
 
 [Methods, parameters and events](api__refs__ui.scrollview.html)
 

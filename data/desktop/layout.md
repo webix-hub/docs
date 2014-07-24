@@ -175,7 +175,7 @@ webix.ui({
 })	
 ~~~
 
-###API Reference
+##API Reference
 
 [Methods, parameters and events](api__refs__ui.layout.html)
 

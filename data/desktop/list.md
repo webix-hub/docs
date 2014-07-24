@@ -1,7 +1,7 @@
 List
 ===========
 
-###Overview
+##Overview
 
 List is a ui-related components that inherits from [view](desktop/view.md) and presents listed data items. The webix library offers three
 variations of list apart from the standard one - [grouplist](desktop/grouplist.md), [x-list](desktop/xlist.md) and 
@@ -10,9 +10,7 @@ variations of list apart from the standard one - [grouplist](desktop/grouplist.m
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/list.png"/>
 
-
-
-###Initialization
+##Initialization
 
 ~~~js
 webix.ui({
@@ -26,7 +24,8 @@ webix.ui({
 
 You can load data in any of the supported [data formats](desktop/data_types.md). 
 
-###Working with List
+##Working with List
+
 - desktop/data_object.md
 - [Data Loading](desktop/data_loading.md). 
 - [Defining Data Template](desktop/html_templates.md).
@@ -40,7 +39,7 @@ You can load data in any of the supported [data formats](desktop/data_types.md).
 Note that there's no built-in possibility to edit data with List. You should create a prototype *editlist* object beforehand.
 }}
 
-###API Reference
+##API Reference
 
 [Methods, properties and events](api__refs__ui.list.html)
 

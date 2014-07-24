@@ -1,7 +1,7 @@
 Popup
 ==============
 
-###Overview
+##Overview
 
 Popup is a variant of a ui-related [window](desktop/window.md). Unlike it, the popup disappears as you click 
 somewhere outside it. Popup is be used to alert some info as well can form a popup menu. 
@@ -9,8 +9,7 @@ somewhere outside it. Popup is be used to alert some info as well can form a pop
 <img style="display:block; margin-left:auto;margin-right:auto;"  src="desktop/popup.png"/>
 
 
-
-###Initialization
+##Initialization
 
 Popup consists of **body** (both taking either view or text template) without the **head** section. 
 
@@ -29,7 +28,7 @@ webix.ui({
 
 {{sample 10_window/02_popup.html }}
 
-###Popup Sizing and Positioning
+##Popup Sizing and Positioning
 
 For adequate work, you need to specify the dimensions of your popup as well as its offsets (**top** and **left**). Otherwise, the component occupies the whole screen or sticks to its 
 top left corner respectively. 
@@ -44,7 +43,7 @@ webix.ui({
 
 There exist more **positioning options**. All of them are described in a [separate documentation article](desktop/window_positioning.md).
 
-###Creating a Popup Menu
+##Creating a Popup Menu
 
 <img src="desktop/button_popup.png"/>
 
@@ -79,7 +78,7 @@ webix.ui({
 10_window/05_popup_menu.html
 }}
 
-###API Reference
+##API Reference
 
 [Methods, properties and events](api__refs__ui.popup.html)
 
