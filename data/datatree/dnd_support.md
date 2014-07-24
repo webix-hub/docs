@@ -101,8 +101,8 @@ You can use any HTML while specifying the value for the property.
 Displaying a custom text for dragging items
 }}
 ~~~js
-tree.attachEvent("onBeforeDrag", function(context, ev){
-	context.html = "<b>You are dragging now</b> - "+ treea.getItem(context.source).value;
+treea.attachEvent("onBeforeDrag", function(context, ev){
+	context.html = "&nbsp;&nbsp;"+context.source.length+" item(s)";
 });
 ~~~
 {{sample
