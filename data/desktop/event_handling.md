@@ -256,7 +256,7 @@ $$("component_id").unblockEvent();
 
 ##Delayed Events 
 
-The default value for responce on events is 500ms. With such events as **onMouseMove** and **onMouseOut** you can delay the responce on as such milliseconds as you like: 
+The default value for response to events is 500ms. With such events as **onMouseMove** and **onMouseOut**, you can delay the server response for as much time (in milliseconds) as you need:
 
 ~~~js
 webix.ui({

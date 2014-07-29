@@ -10,7 +10,8 @@ ready
 
 webix.ui({
 	view:"list",
-	ready:function{
+	ready:function()
+    {
 		webix.message("Ready!");
         //or any custom function
 	},

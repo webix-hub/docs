@@ -28,7 +28,7 @@ still being  very fast handling  thousands of records.<a href="datatable/overvie
 				<li><a href="datatable/external_configuration.md">External configuration</a></li>
             </ul>
 		</td>
-		<td class='topic_description' onclick="displaySubList(event,'data')">Learns you how to define the common structure and content of DataTable: columns, headers, dimensions and data inside it.</td>
+		<td class='topic_description' onclick="displaySubList(event,'data')">Teaches you how to define the common structure and content of DataTable: columns, headers, dimensions and data inside it.</td>
 	</tr>
 	<tr>
 		<td class='topics'>

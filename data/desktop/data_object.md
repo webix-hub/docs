@@ -76,11 +76,11 @@ Each data item has its ID defined in the dataset. Knowing item ID you can get to
 	</tr>
     <tr>
 		<td style="text-align:left;"><a href="api/datastore_getnextid.md">getNextId (<i>id</i> )</a></td>
-		<td>gets the ID of the last data item</td>
+		<td>gets the ID of the data item that succeeds the one with the specified ID</td>
 	</tr>
     <tr>
 		<td style="text-align:left;"><a href="api/datastore_getprevid.md">getPrevId (<i>id</i> )</a></td>
-		<td>gets the ID of the data item that succeeds the one with the specified ID</td>
+		<td>gets the ID of the data item that precedes the one with the specified ID</td>
 	</tr>
 	<tr>
 		<td style="text-align:left;"><a href="api/datastore_getidbyindex.md">getIdByIndex (<i>index</i> )</a></td>

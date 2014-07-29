@@ -28,7 +28,7 @@ Support for various data template formats, sorting and filtering features. Check
 
 {{api
 - api/link/ui.unitlist_add.md - adds an item to the store
-- api/link/ui.unitlist_addcss.md - applied CSS class to a component item
+- api/link/ui.unitlist_addcss.md - applies CSS class to a component item
 - api/link/ui.unitlist_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.unitlist_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.unitlist_bind.md - binds components
