@@ -9,13 +9,7 @@ Start
 
 <h2>Meet Webix 1.10!</h2>
 <ul>
-	<li>IE12 compatibility</li>
-   	<li>Column Batches in DataTable</li>
-    	<li>onSubmit event for Form</li>
 </ul>
-
-<p> and <a href="desktop/whats_new_1_10.md">more...</a></p>
-
 </div>
 
 <div class="wrapper-search">
