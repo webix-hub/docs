@@ -1,6 +1,18 @@
 Form Controls
 =============
 
+Webix delivers a variety of controls that can placed on the form. 
+Depending on the functionality they provide, these controls can be used for entering text, 
+selecting an option, date or color, switching between multiview cells, etc.
+
+You can learn more about common controls functionality from the article desktop/controls_guide.md.
+The current article describes each form control in details.
+
+<br>
+
+<img style="display:block; margin-left:auto;margin-right:auto;"  src="desktop/form_controls.png"/>
+
+
 Button {#button}
 -----------------
 
