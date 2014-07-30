@@ -8,8 +8,12 @@ Start
 <div class='index-board'>
 
 <h2>Meet Webix 1.10!</h2>
-<ul>
-</ul>
+	<ul>
+		<li><a href="desktop/property_sheet.md">Restyling for property view</a></li>
+ 		<li>Column Batches in DataTable</li>
+		<li>IE12 compatibility</li>
+	</ul>
+	<p> and <a href="desktop/whats_new_1_10.md">some more...</a></p>
 </div>
 
 <div class="wrapper-search">
