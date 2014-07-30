@@ -1,7 +1,7 @@
 Version 1.10
 ================
 
-<h3 id="changes">Full list of changes and fixes</h3>
+### Full list of changes and fixes
 
 **New functionality**
 
