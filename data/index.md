@@ -9,12 +9,12 @@ Start
 
 <h2>Meet Webix 1.9!</h2>
 <ul>
-	<li><a href="desktop/uimanager.md#keyboardseventsandhotkeys">Hotkeys for controls</a></li>
-    <li><a href="desktop/menu.md#workingwithmenuitems">Extended Menu functionality</a></li>
-    <li>Focus style for buttons in flat and compact skins</li>
+	<li><a href="desktop/property_sheet.md">Restyling for property view</a></li>
+    <li>Column batches for datatable</li>
+    <br>
 </ul>
 
-<p> and <a href="desktop/whats_new_1_9.md">much more...</a></p>
+<p> and <a href="desktop/whats_new_1_10.md">some more...</a></p>
 
 </div>
 
