@@ -1,7 +1,7 @@
 Sizing components
 ==============
 
-You can set dimensions for the components and their items in three ways. 
+You can set dimensions for the components and their items in 5 ways: 
 
 - [Fixed Sizing](#fix)
 - [Auto Sizing](#auto)

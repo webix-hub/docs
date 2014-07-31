@@ -32,7 +32,7 @@ Main features
 <dd>Support for internationalization allows applications be translated and modified into local versions for hundreds of languages.</dd>
 <br>
 <dt><a href="desktop/styling.md">8. Styling with standard css</a></dt>
-<dd>You can use CSS in conjunction with components content to archieve the desired look-and-feel. Css can be applied to the whole layout or to a specific components, items etc.</dd>
+<dd>You can use CSS in conjunction with components content to achieve the desired look-and-feel. Css can be applied to the whole layout or to specific components, items etc.</dd>
 <br>
 <dt><a href="desktop/dimensions.md">9. Flexible layouts</a></dt>
 <dd>Each element in the layout can be configured individually or as a part of layout: width, height, color etc.</dd>

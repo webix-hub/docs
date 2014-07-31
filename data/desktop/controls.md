@@ -1,7 +1,7 @@
 Form Controls
 =============
 
-Webix delivers a variety of controls that can placed on the form. 
+Webix delivers a variety of controls that can be placed on the form. 
 Depending on the functionality they provide, these controls can be used for entering text, 
 selecting an option, date or color, switching between multiview cells, etc.
 
