@@ -94,8 +94,7 @@ Methods
 - api/link/ui.treetable_isvisible.md - checks whether the view is visible
 - api/link/ui.treetable_load.md - loads data from an external data source
 - api/link/ui.treetable_loadbranch.md - loads data to the specified branch
-- api/link/ui.treetable_loadnext.md - sends a request to load the specified number of records to the end or to the specified position 
-of the component
+- api/link/ui.treetable_loadnext.md - sends a request to load the specified number of records to the end or to the specified position
 - api/link/ui.treetable_locate.md - converts an HTML node or event object to in-table position
 - api/link/ui.treetable_mapcells.md - applies the callback to a range of cells
 - api/link/ui.treetable_mapevent.md - routes events from one object to another
@@ -130,6 +129,7 @@ of the component
 - api/link/ui.treetable_show.md - makes the component visible
 - api/link/ui.treetable_showcell.md - scrolls the table (if needed) to make the specified cell visible
 - api/link/ui.treetable_showcolumn.md - shows the column which was previously hidden by method 'hidecolumn'
+- api/link/ui.treetable_showcolumnbatch.md - 
 - api/link/ui.treetable_showitem.md - 'scrolls' the table to make the specified row visible
 - api/link/ui.treetable_showitembyindex.md - 'scrolls' the table to make the specified row visible
 - api/link/ui.treetable_showoverlay.md - shows the overlay message over the body of DataTable
@@ -272,6 +272,7 @@ of the component
 - api/link/ui.treetable_show.md
 - api/link/ui.treetable_showcell.md
 - api/link/ui.treetable_showcolumn.md
+- api/link/ui.treetable_showcolumnbatch.md
 - api/link/ui.treetable_showitem.md
 - api/link/ui.treetable_showitembyindex.md
 - api/link/ui.treetable_showoverlay.md

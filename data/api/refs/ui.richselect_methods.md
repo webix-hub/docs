@@ -20,7 +20,7 @@ Methods
 - api/link/ui.richselect_getinputnode.md - gets the HTML element related to the component
 - api/link/ui.richselect_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.richselect_getparentview.md - returns the parent view of the component
-- api/ui.richselect_getpopup.md - return popup element of the input
+- api/ui.richselect_getpopup.md - returns popup element of the input
 - api/ui.richselect_gettext.md - returns text of currently selected option
 - api/link/ui.richselect_gettopparentview.md - returns top parent view
 - api/link/ui.richselect_getvalue.md - returns the current value of the control

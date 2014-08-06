@@ -118,8 +118,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_isvisible.md - checks whether the view is visible
 - api/link/ui.treetable_load.md - loads data from an external data source
 - api/link/ui.treetable_loadbranch.md - loads data to the specified branch
-- api/link/ui.treetable_loadnext.md - sends a request to load the specified number of records to the end or to the specified position 
-of the component
+- api/link/ui.treetable_loadnext.md - sends a request to load the specified number of records to the end or to the specified position
 - api/link/ui.treetable_locate.md - converts an HTML node or event object to in-table position
 - api/link/ui.treetable_mapcells.md - applies the callback to a range of cells
 - api/link/ui.treetable_mapevent.md - routes events from one object to another
@@ -154,6 +153,7 @@ of the component
 - api/link/ui.treetable_show.md - makes the component visible
 - api/link/ui.treetable_showcell.md - scrolls the table (if needed) to make the specified cell visible
 - api/link/ui.treetable_showcolumn.md - shows the column which was previously hidden by method 'hidecolumn'
+- api/link/ui.treetable_showcolumnbatch.md - 
 - api/link/ui.treetable_showitem.md - 'scrolls' the table to make the specified row visible
 - api/link/ui.treetable_showitembyindex.md - 'scrolls' the table to make the specified row visible
 - api/link/ui.treetable_showoverlay.md - shows the overlay message over the body of DataTable
@@ -235,11 +235,11 @@ of the component
 - api/link/ui.treetable_onselectchange_event.md - fires when selection is changed in DataTable
 - api/link/ui.treetable_onstructureload_event.md - fires when the structure of DataTable (columns configuration) is initialized
 - api/link/ui.treetable_onstructureupdate_event.md - fires when structure of datatable was changed ( column added, hidden or reconfigured )
-- api/link/ui.treetable_onswipex_event.md - 
-- api/link/ui.treetable_onswipey_event.md - 
-- api/link/ui.treetable_ontouchend_event.md - 
-- api/link/ui.treetable_ontouchmove_event.md - 
-- api/link/ui.treetable_ontouchstart_event.md - 
+- api/link/ui.treetable_onswipex_event.md - occurs on a horizontal swipe movement
+- api/link/ui.treetable_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.treetable_ontouchend_event.md - occurs when the touch event is ended
+- api/link/ui.treetable_ontouchmove_event.md - occurs during touch movement
+- api/link/ui.treetable_ontouchstart_event.md - when some webix view has been touched
 - api/link/ui.treetable_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation
 - api/link/ui.treetable_onvalidationsuccess_event.md - fires after the newlyloaded/added/edited data has passes validation successfully
 - api/link/ui.treetable_onviewresize_event.md - view size was changed by resizer

@@ -7,11 +7,11 @@ Start
 <div class='index-pc'></div>
 <div class='index-board'>
 
-<h2>Meet Webix 1.9!</h2>
+<h2>Meet Webix 1.10!</h2>
 <ul>
 	<li><a href="desktop/property_sheet.md">Restyling for property view</a></li>
-    <li>Column batches for datatable</li>
-    <br>
+    <li><a href="api/ui.datatable_showcolumnbatch.md">Column batches for datatable</a></li>
+    <li>Improved documentation</li>
 </ul>
 
 <p> and <a href="desktop/whats_new_1_10.md">some more...</a></p>

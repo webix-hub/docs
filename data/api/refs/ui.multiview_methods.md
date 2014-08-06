@@ -3,7 +3,7 @@ Methods
 =======
 
 {{api
-- api/link/ui.multiview_addview.md - add new view to layout or multiview
+- api/link/ui.multiview_addview.md - add new view to layout-like component
 - api/link/ui.multiview_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.multiview_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/ui.multiview_back.md - switches multiview to previously active view
@@ -29,7 +29,7 @@ Methods
 - api/link/ui.multiview_isvisible.md - checks whether the view is visible
 - api/link/ui.multiview_mapevent.md - routes events from one object to another
 - api/link/ui.multiview_reconstruct.md - rebuilds the layout
-- api/link/ui.multiview_removeview.md - removes view from multiview or layout
+- api/link/ui.multiview_removeview.md - removes view from layout-like component
 - api/link/ui.multiview_resize.md - adjusts the view to a new size
 - api/link/ui.multiview_resizechildren.md - resizes all children of the calling component
 - api/ui.multiview_setvalue.md - defines which view need to be shown in the multiview

@@ -15,11 +15,11 @@ Events
 - api/link/ui.resizer_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.resizer_onmouseout_event.md - fires when the mouse was moved out from the specified item
 - api/link/ui.resizer_onrotate_event.md - occurs on screen rotating
-- api/link/ui.resizer_onswipex_event.md - 
-- api/link/ui.resizer_onswipey_event.md - 
-- api/link/ui.resizer_ontouchend_event.md - 
-- api/link/ui.resizer_ontouchmove_event.md - 
-- api/link/ui.resizer_ontouchstart_event.md - 
+- api/link/ui.resizer_onswipex_event.md - occurs on a horizontal swipe movement
+- api/link/ui.resizer_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.resizer_ontouchend_event.md - occurs when the touch event is ended
+- api/link/ui.resizer_ontouchmove_event.md - occurs during touch movement
+- api/link/ui.resizer_ontouchstart_event.md - when some webix view has been touched
 - api/link/ui.resizer_onviewresize_event.md - view size was changed by resizer
 }}
 

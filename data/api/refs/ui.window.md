@@ -63,10 +63,18 @@ The window consists of the header and body, can be modal or modaless. The window
 
 
 {{api
+- api/link/ui.window_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.window_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.window_ondestruct_event.md - occurs when component destroyed
 - api/ui.window_onhide_event.md - fires when window is hidden
+- api/link/ui.window_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
+- api/link/ui.window_onrotate_event.md - occurs on screen rotating
 - api/ui.window_onshow_event.md - fires when window is shown
+- api/link/ui.window_onswipex_event.md - occurs on a horizontal swipe movement
+- api/link/ui.window_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.window_ontouchend_event.md - occurs when the touch event is ended
+- api/link/ui.window_ontouchmove_event.md - occurs during touch movement
+- api/link/ui.window_ontouchstart_event.md - when some webix view has been touched
 - api/link/ui.window_onviewresize_event.md - view size was changed by resizer
 }}
 
@@ -75,7 +83,7 @@ The window consists of the header and body, can be modal or modaless. The window
 
 {{api
 - api/link/ui.window_animate_config.md - defines or disables view change animation.
-- api/ui.window_autofit_config.md - adjusts window size to the size of an HTML node	it is initiated in
+- api/ui.window_autofit_config.md - adjusts window size to the size of an html node it is initiated in
 - api/ui.window_autofocus_config.md - sets focus on the window the moment it appears on the page
 - api/ui.window_body_config.md - the content of window body: template or view
 - api/link/ui.window_borderless_config.md - used to hide the component borders

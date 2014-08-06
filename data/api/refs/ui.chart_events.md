@@ -28,11 +28,11 @@ Events
 - api/link/ui.chart_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.chart_onmouseout_event.md - fires when the mouse was moved out from the specified item
 - api/link/ui.chart_onrotate_event.md - occurs on screen rotating
-- api/link/ui.chart_onswipex_event.md - 
-- api/link/ui.chart_onswipey_event.md - 
-- api/link/ui.chart_ontouchend_event.md - 
-- api/link/ui.chart_ontouchmove_event.md - 
-- api/link/ui.chart_ontouchstart_event.md - 
+- api/link/ui.chart_onswipex_event.md - occurs on a horizontal swipe movement
+- api/link/ui.chart_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.chart_ontouchend_event.md - occurs when the touch event is ended
+- api/link/ui.chart_ontouchmove_event.md - occurs during touch movement
+- api/link/ui.chart_ontouchstart_event.md - when some webix view has been touched
 - api/link/ui.chart_onviewresize_event.md - view size was changed by resizer
 }}
 

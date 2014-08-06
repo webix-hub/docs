@@ -43,8 +43,7 @@ var store = new webix.TreeCollection({ url:"tree.php" });
 - api/link/treecollection_isvisible.md - returns true if current view is visible
 - api/link/treecollection_load.md - loads data from an external data source
 - api/link/treecollection_loadbranch.md - loads data to the specified branch
-- api/link/treecollection_loadnext.md - sends a request to load the specified number of records to the end or to the specified position 
-of the component
+- api/link/treecollection_loadnext.md - sends a request to load the specified number of records to the end or to the specified position
 - api/link/treecollection_mapevent.md - routes events from one object to another
 - api/link/treecollection_parse.md - loads data to the component from an inline data source
 - api/link/treecollection_refresh.md - repaints the whole view or a certain item

@@ -55,8 +55,7 @@ Methods
 - api/link/ui.menu_isselected.md - checks whether the specified item is selected or not
 - api/link/ui.menu_isvisible.md - checks whether the view is visible
 - api/link/ui.menu_load.md - loads data from an external data source
-- api/link/ui.menu_loadnext.md - sends a request to load the specified number of records to the end or to the specified position 
-of the component
+- api/link/ui.menu_loadnext.md - sends a request to load the specified number of records to the end or to the specified position
 - api/link/ui.menu_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.menu_mapevent.md - routes events from one object to another
 - api/link/ui.menu_move.md - moves the specified item to the new position

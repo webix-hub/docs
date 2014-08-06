@@ -43,8 +43,7 @@ Methods
 - api/link/ui.proto_isenabled.md - checks whether the view is enabled
 - api/link/ui.proto_isvisible.md - checks whether the view is visible
 - api/link/ui.proto_load.md - loads data from an external data source
-- api/link/ui.proto_loadnext.md - sends a request to load the specified number of records to the end or to the specified position 
-of the component
+- api/link/ui.proto_loadnext.md - sends a request to load the specified number of records to the end or to the specified position
 - api/link/ui.proto_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.proto_mapevent.md - routes events from one object to another
 - api/link/ui.proto_parse.md - loads data to the component from an inline data source
