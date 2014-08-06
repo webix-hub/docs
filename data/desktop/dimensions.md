@@ -1,7 +1,7 @@
 Sizing components
 ==============
 
-You can set dimensions for the components and their items in three ways. 
+You can set dimensions for the components and their items in 5 ways: 
 
 - [Fixed Sizing](#fix)
 - [Auto Sizing](#auto)
@@ -221,7 +221,7 @@ webix.ui({
 
 ##Dynamic Sizing {#dyn}
 
-Dynamic sizing ensures adequate visibility of components regardless of screen size and makes them dynamically respond to changing window dimensiions.
+Dynamic sizing ensures adequate visibility of components regardless of screen size and makes them dynamically respond to changing window dimensions.
 
 By default, dynamic sizing is true for components that feature no sizing of its own and are not placed into any sized HTML container. Such components take space of the 
 entire screen and are resized as the browser window resizes. 

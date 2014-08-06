@@ -25,7 +25,7 @@ webix.ui({
 
 ##Line and Spline Charts {#line}
 
-<img src="desktop/line_spline_chart.png"/>
+<img src="desktop/charts_linespline.png"/>
 
 Line chart features a broken line to join the points while a spline chart has a curved one. 
 
@@ -46,7 +46,7 @@ webix.ui({
 
 ##Bar, BarH, StackedBar and StackedBarH Charts {#bar}
 
-<img src="desktop/bar_charts.png"/>
+<img src="desktop/charts_bar.png"/>
 
 {{snippet
 Initialization
@@ -65,7 +65,7 @@ webix.ui({
 
 ##Area and stackedArea Charts {#area}
 
-<img src="desktop/area_chart.png"/>
+<img src="desktop/charts_area.png"/>
 
 {{snippet
 Initialization

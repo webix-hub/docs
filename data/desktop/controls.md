@@ -1,6 +1,18 @@
 Form Controls
 =============
 
+Webix delivers a variety of controls that can be placed on the form. 
+Depending on the functionality they provide, these controls can be used for entering text, 
+selecting an option, date or color, switching between multiview cells, etc.
+
+You can learn more about common controls functionality from the article desktop/controls_guide.md.
+The current article describes each form control in details.
+
+<br>
+
+<img style="display:block; margin-left:auto;margin-right:auto;"  src="desktop/form_controls.png"/>
+
+
 Button {#button}
 -----------------
 
@@ -848,7 +860,7 @@ Toggle type is defined by the **type** property. If it isn't defined, a standard
 <table class="list" cellspacing="0" cellpadding="5" border="0">
 	<tr>
 		<td> <code> type:"iconButton" </code> </td>
-		<td style="text-align:center;"><img src="desktop/toggle_iconbutton.png"/></td>
+		<td style="text-align:center;"><img src="desktop/toggleicon.png"/></td>
 	</tr>
 	<tr>
 		<td> <code> type:"image" </code> </td>
@@ -856,15 +868,15 @@ Toggle type is defined by the **type** property. If it isn't defined, a standard
 	</tr>
 	<tr>
 		<td> <code> type:"imageButton" </code> </td>
-		<td style="text-align:center;"><img src="desktop/toggle_imagebutton.png"/></td>
+		<td style="text-align:center;"><img src="desktop/toggleimagebut.png"/></td>
 	</tr>
 	<tr>
 		<td> <code> type:"imageTop" </code> </td>
-		<td style="text-align:center;"><img src="desktop/toggle_imagetop.png"/></td>
+		<td style="text-align:center;"><img src="desktop/toggletop.png"/></td>
 	</tr>
 	<tr>
 		<td> <code> type:"imageButtonTop" </code> </td>
-		<td style="text-align:center;"><img src="desktop/toggle_imagebuttontop.png"/></td>
+		<td style="text-align:center;"><img src="desktop/togglebuttontop.png"/></td>
 	</tr>
 </table>
 
