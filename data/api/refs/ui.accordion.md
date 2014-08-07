@@ -27,7 +27,7 @@ A collection of panes that make up the component allows you to organize the cont
 <div class='h2'>Methods</div>
 
 {{api
-- api/link/ui.accordion_addview.md - add new view to layout or multiview
+- api/link/ui.accordion_addview.md - add new view to layout-like component
 - api/link/ui.accordion_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.accordion_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.accordion_bind.md - binds components
@@ -50,7 +50,7 @@ A collection of panes that make up the component allows you to organize the cont
 - api/link/ui.accordion_isvisible.md - checks whether the view is visible
 - api/link/ui.accordion_mapevent.md - routes events from one object to another
 - api/link/ui.accordion_reconstruct.md - rebuilds the layout
-- api/link/ui.accordion_removeview.md - removes view from multiview or layout
+- api/link/ui.accordion_removeview.md - removes view from layout-like component
 - api/link/ui.accordion_resize.md - adjusts the view to a new size
 - api/link/ui.accordion_resizechildren.md - resizes all children of the calling component
 - api/link/ui.accordion_show.md - makes the component visible

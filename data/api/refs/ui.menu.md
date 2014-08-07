@@ -80,8 +80,7 @@ The component can be displayed in 2 modes: static (the menu is fully expanded al
 - api/link/ui.menu_isselected.md - checks whether the specified item is selected or not
 - api/link/ui.menu_isvisible.md - checks whether the view is visible
 - api/link/ui.menu_load.md - loads data from an external data source
-- api/link/ui.menu_loadnext.md - sends a request to load the specified number of records to the end or to the specified position 
-of the component
+- api/link/ui.menu_loadnext.md - sends a request to load the specified number of records to the end or to the specified position
 - api/link/ui.menu_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.menu_mapevent.md - routes events from one object to another
 - api/link/ui.menu_move.md - moves the specified item to the new position
@@ -154,11 +153,11 @@ of the component
 - api/link/ui.menu_onpaste_event.md - fires when the user presses CTRL+V keys combination
 - api/link/ui.menu_onrotate_event.md - occurs on screen rotating
 - api/link/ui.menu_onselectchange_event.md - fires after selection state was changed
-- api/link/ui.menu_onswipex_event.md - 
-- api/link/ui.menu_onswipey_event.md - 
-- api/link/ui.menu_ontouchend_event.md - 
-- api/link/ui.menu_ontouchmove_event.md - 
-- api/link/ui.menu_ontouchstart_event.md - 
+- api/link/ui.menu_onswipex_event.md - occurs on a horizontal swipe movement
+- api/link/ui.menu_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.menu_ontouchend_event.md - occurs when the touch event is ended
+- api/link/ui.menu_ontouchmove_event.md - occurs during touch movement
+- api/link/ui.menu_ontouchstart_event.md - when some webix view has been touched
 - api/link/ui.menu_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation
 - api/link/ui.menu_onvalidationsuccess_event.md - fires after the newlyloaded/added/edited data has passes validation successfully
 - api/link/ui.menu_onviewresize_event.md - view size was changed by resizer

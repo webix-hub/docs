@@ -65,8 +65,7 @@ Methods
 - api/link/ui.tree_isvisible.md - checks whether the view is visible
 - api/link/ui.tree_load.md - loads data from an external data source
 - api/link/ui.tree_loadbranch.md - loads data to the specified branch
-- api/link/ui.tree_loadnext.md - sends a request to load the specified number of records to the end or to the specified position 
-of the component
+- api/link/ui.tree_loadnext.md - sends a request to load the specified number of records to the end or to the specified position
 - api/link/ui.tree_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.tree_mapevent.md - routes events from one object to another
 - api/link/ui.tree_move.md - moves the specified item to the new position
@@ -77,7 +76,7 @@ of the component
 - api/link/ui.tree_refresh.md - repaints the whole view or a certain item
 - api/link/ui.tree_remove.md - removes the specified item from datastore
 - api/link/ui.tree_removecss.md - removes CSS class from a component item
-- api/link/ui.tree_render.md - renders the specified item or the whole component
+- api/link/ui.tree_render.md - 
 - api/link/ui.tree_resize.md - adjusts the view to a new size
 - api/link/ui.tree_scrollto.md - scrolls the data container to a certain position
 - api/link/ui.tree_select.md - selects the specified item(s)

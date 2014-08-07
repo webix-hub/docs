@@ -39,11 +39,11 @@ Events
 - api/link/ui.menu_onpaste_event.md - fires when the user presses CTRL+V keys combination
 - api/link/ui.menu_onrotate_event.md - occurs on screen rotating
 - api/link/ui.menu_onselectchange_event.md - fires after selection state was changed
-- api/link/ui.menu_onswipex_event.md - 
-- api/link/ui.menu_onswipey_event.md - 
-- api/link/ui.menu_ontouchend_event.md - 
-- api/link/ui.menu_ontouchmove_event.md - 
-- api/link/ui.menu_ontouchstart_event.md - 
+- api/link/ui.menu_onswipex_event.md - occurs on a horizontal swipe movement
+- api/link/ui.menu_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.menu_ontouchend_event.md - occurs when the touch event is ended
+- api/link/ui.menu_ontouchmove_event.md - occurs during touch movement
+- api/link/ui.menu_ontouchstart_event.md - when some webix view has been touched
 - api/link/ui.menu_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation
 - api/link/ui.menu_onvalidationsuccess_event.md - fires after the newlyloaded/added/edited data has passes validation successfully
 - api/link/ui.menu_onviewresize_event.md - view size was changed by resizer

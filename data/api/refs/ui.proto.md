@@ -68,8 +68,7 @@ The class defines properties, methods, and events related to loading and renderi
 - api/link/ui.proto_isenabled.md - checks whether the view is enabled
 - api/link/ui.proto_isvisible.md - checks whether the view is visible
 - api/link/ui.proto_load.md - loads data from an external data source
-- api/link/ui.proto_loadnext.md - sends a request to load the specified number of records to the end or to the specified position 
-of the component
+- api/link/ui.proto_loadnext.md - sends a request to load the specified number of records to the end or to the specified position
 - api/link/ui.proto_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.proto_mapevent.md - routes events from one object to another
 - api/link/ui.proto_parse.md - loads data to the component from an inline data source
@@ -114,11 +113,11 @@ of the component
 - api/link/ui.proto_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.proto_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.proto_onrotate_event.md - occurs on screen rotating
-- api/link/ui.proto_onswipex_event.md - 
-- api/link/ui.proto_onswipey_event.md - 
-- api/link/ui.proto_ontouchend_event.md - 
-- api/link/ui.proto_ontouchmove_event.md - 
-- api/link/ui.proto_ontouchstart_event.md - 
+- api/link/ui.proto_onswipex_event.md - occurs on a horizontal swipe movement
+- api/link/ui.proto_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.proto_ontouchend_event.md - occurs when the touch event is ended
+- api/link/ui.proto_ontouchmove_event.md - occurs during touch movement
+- api/link/ui.proto_ontouchstart_event.md - when some webix view has been touched
 - api/link/ui.proto_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation
 - api/link/ui.proto_onvalidationsuccess_event.md - fires after the newlyloaded/added/edited data has passes validation successfully
 - api/link/ui.proto_onviewresize_event.md - view size was changed by resizer

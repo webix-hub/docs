@@ -6,7 +6,7 @@ Version 1.9
 - Hotkey for inputs [Check details](desktop/uimanager.md#keyboardseventsandhotkeys).
 - HTML links in menu [Check details](desktop/menu.md#workingwithmenuitems)
 
-<h3 id="changes">Full list of changes and fixes</h3>
+### Full list of changes and fixes
 
 **New functionality**
 

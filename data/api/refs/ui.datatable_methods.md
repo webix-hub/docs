@@ -80,8 +80,7 @@ Methods
 - api/link/ui.datatable_isenabled.md - checks whether the view is enabled
 - api/link/ui.datatable_isvisible.md - checks whether the view is visible
 - api/link/ui.datatable_load.md - loads data from an external data source
-- api/link/ui.datatable_loadnext.md - sends a request to load the specified number of records to the end or to the specified position 
-of the component
+- api/link/ui.datatable_loadnext.md - sends a request to load the specified number of records to the end or to the specified position
 - api/ui.datatable_locate.md - converts an HTML node or event object to in-table position
 - api/ui.datatable_mapcells.md - applies the callback to a range of cells
 - api/link/ui.datatable_mapevent.md - routes events from one object to another
@@ -117,6 +116,7 @@ of the component
 - api/link/ui.datatable_show.md - makes the component visible
 - api/ui.datatable_showcell.md - scrolls the table (if needed) to make the specified cell visible
 - api/ui.datatable_showcolumn.md - shows the column which was previously hidden by method 'hidecolumn'
+- api/ui.datatable_showcolumnbatch.md - 
 - api/ui.datatable_showitem.md - 'scrolls' the table to make the specified row visible
 - api/ui.datatable_showitembyindex.md - 'scrolls' the table to make the specified row visible
 - api/ui.datatable_showoverlay.md - shows the overlay message over the body of DataTable
@@ -245,6 +245,7 @@ of the component
 - api/link/ui.datatable_show.md
 - api/ui.datatable_showcell.md
 - api/ui.datatable_showcolumn.md
+- api/ui.datatable_showcolumnbatch.md
 - api/ui.datatable_showitem.md
 - api/ui.datatable_showitembyindex.md
 - api/ui.datatable_showoverlay.md

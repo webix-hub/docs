@@ -68,10 +68,18 @@ The component can be populated with data from the server side or a file: each it
 
 {{api
 - api/link/ui.select_onafterrender_event.md - occurs immediately after the component has been rendered.
+- api/link/ui.select_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.select_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.select_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.select_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.select_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.select_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
+- api/link/ui.select_onrotate_event.md - occurs on screen rotating
+- api/link/ui.select_onswipex_event.md - occurs on a horizontal swipe movement
+- api/link/ui.select_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.select_ontouchend_event.md - occurs when the touch event is ended
+- api/link/ui.select_ontouchmove_event.md - occurs during touch movement
+- api/link/ui.select_ontouchstart_event.md - when some webix view has been touched
 - api/link/ui.select_onviewresize_event.md - view size was changed by resizer
 }}
 
@@ -105,6 +113,7 @@ The component can be populated with data from the server side or a file: each it
 - api/link/ui.select_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.select_name_config.md - name of the control
 - api/link/ui.select_on_config.md - allows attaching custom handlers to inner events of the component
+- api/ui.select_options_config.md - 
 - api/link/ui.select_placeholder_config.md - placeholder text for the input
 - api/link/ui.select_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.select_readonly_config.md - configures readonly mode for the input
@@ -133,6 +142,8 @@ The component can be populated with data from the server side or a file: each it
 - api/link/ui.select_$getsize_other.md - returns the current size of the component
 - api/link/ui.select_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.select_$height_other.md - current height of the view
+- api/link/ui.select_$render_other.md - code called after rending control
+- api/link/ui.select_$rendericon_other.md - renders icon for the control
 - api/link/ui.select_$renderinput_other.md - renders html for the input
 - api/link/ui.select_$scope_other.md - scope for resolving event and method names
 - api/link/ui.select_$setsize_other.md - sets the component size

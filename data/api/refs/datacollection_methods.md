@@ -26,8 +26,7 @@ Methods
 - api/link/datacollection_hasevent.md - checks whether the component has the specified event
 - api/datacollection_isvisible.md - returns true if current view is visible
 - api/link/datacollection_load.md - loads data from an external data source
-- api/link/datacollection_loadnext.md - sends a request to load the specified number of records to the end or to the specified position 
-of the component
+- api/link/datacollection_loadnext.md - sends a request to load the specified number of records to the end or to the specified position
 - api/link/datacollection_mapevent.md - routes events from one object to another
 - api/link/datacollection_parse.md - loads data to the component from an inline data source
 - api/link/datacollection_refresh.md - repaints the whole view or a certain item

@@ -442,6 +442,9 @@ html, .footer{
         text-align: center;
         padding-right: 0px;
     }   
+    .page_start span{
+         float:none;
+    }
     
     .top_menu a{
         float: none;

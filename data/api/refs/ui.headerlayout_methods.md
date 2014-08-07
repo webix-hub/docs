@@ -3,7 +3,7 @@ Methods
 =======
 
 {{api
-- api/link/ui.headerlayout_addview.md - add new view to layout or multiview
+- api/link/ui.headerlayout_addview.md - add new view to layout-like component
 - api/link/ui.headerlayout_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.headerlayout_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.headerlayout_bind.md - binds components
@@ -26,7 +26,7 @@ Methods
 - api/link/ui.headerlayout_isvisible.md - checks whether the view is visible
 - api/link/ui.headerlayout_mapevent.md - routes events from one object to another
 - api/link/ui.headerlayout_reconstruct.md - rebuilds the layout
-- api/link/ui.headerlayout_removeview.md - removes view from multiview or layout
+- api/link/ui.headerlayout_removeview.md - removes view from layout-like component
 - api/link/ui.headerlayout_resize.md - adjusts the view to a new size
 - api/link/ui.headerlayout_resizechildren.md - resizes all children of the calling component
 - api/link/ui.headerlayout_show.md - makes the component visible
