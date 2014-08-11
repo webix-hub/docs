@@ -18,7 +18,7 @@ Both **Area** and **StackedArea** charts support presenting graphs for several o
 
 Series for chart is an array of objects with settings for each graph. [Details here](desktop/chart_series.md). 
 
-<img src="desktop/area_chart.png" />
+<img src="desktop/area_chart.png"/>
 
 {{sample 08_chart/07_area_chart/03_series.html }}
 
