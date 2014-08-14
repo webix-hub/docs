@@ -17,13 +17,13 @@ Generally, you should just specify parameter [pager](api/link/ui.datatable_pager
 
 ~~~js
 grid = new webix.ui({
-		view:"datatable",
-		...
-		pager:{
-			container:"paging_here",// the container where the pager controls will be placed into
-			size:100,// the number of records per a page
-			group:5// the number of pages in the pager
-		}
+	view:"datatable",
+	...
+	pager:{
+		container:"paging_here",// the container where the pager controls will be placed into
+		size:100, // the number of records per a page
+		group:5   // the number of pages in the pager
+	}
 })
 ~~~
 {{sample 15_datatable/19_paging/01_static.html }}
@@ -50,14 +50,14 @@ Depending on what you want to display on the paging area, add the related items 
 }}
 ~~~js
 grid = new webix.ui({
-		view:"datatable",
-		...
-		pager:{
-			template:"{common.prev()} {common.pages()} {common.next()}",
-			container:"paging_here",
-			size:10,
-			group:5
-		}
+	view:"datatable",
+	...
+	pager:{
+		template:"{common.prev()} {common.pages()} {common.next()}",
+		container:"paging_here",
+		size:10,
+		group:5
+	}
 });
 ~~~
 {{sample 15_datatable/19_paging/05_templates.html }}
@@ -131,22 +131,22 @@ You can set some text instead of arrows for the Next, Previous, First and Last b
 }}
 ~~~js
 webix.locale.pager = {
-       first: "First",// the first button
-       last: "Last",// the last button
-       next: "Next",// the next button
-       prev: "Prev"// the previous button
- };
+	first: "First",// the first button
+    last: "Last",// the last button
+    next: "Next",// the next button
+    prev: "Prev"// the previous button
+};
 
 grid = new webix.ui({
-		view:"datatable",
-		...
-		pager:{
-           template:"{common.first()} {common.prev()} {common.pages()} 
-           			{common.next()} {common.last()}",
-           container:"paging_here",
-           size:10,
-           group:5
-		}
+	view:"datatable",
+	...
+	pager:{
+		template:"{common.first()} {common.prev()} {common.pages()} 
+           		{common.next()} {common.last()}",
+		container:"paging_here",
+        size:10,
+        group:5
+	}
 })
 ~~~
 
@@ -164,8 +164,8 @@ The size of a page is a number of items to display at once on a page. This numbe
 }}
 ~~~js
 pager:{
-		size:100,  // the number of records on a page
-		...
+	size:100,  // the number of records on a page
+	...
 }
 ~~~
 Multiple pagers on a page
@@ -183,15 +183,15 @@ set there configuration of your new pager using the same attributes you use whil
 }}
 ~~~js
 grid = new webix.ui({
-		view:"datatable",
-		...
-		pager:{..}
+	view:"datatable",
+	...
+	pager:{..}
 });
 
 grid.getPager().clone({
-        container:"paging_here",
-        size:10,
-        group:5
+    container:"paging_here",
+    size:10,
+    group:5
 });
 ~~~
 {{sample 15_datatable/19_paging/04_many_pagers.html }}
