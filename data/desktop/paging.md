@@ -280,7 +280,7 @@ Learn more about animation types and subtypes in the [corresponding chapter of t
 
 Here we treat two tasks:
 
-1 . How to ensure that the number of recordds per page equals to the number of records the component can display?
+1 . How to ensure that the number of records per page equals to the number of records the component can display?
 
 The number of records per page is stated by the **size**:(number) parameter of a pager. 
 
