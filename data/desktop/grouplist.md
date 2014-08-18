@@ -137,6 +137,7 @@ Hierarchical dataset state
 - [Data Filtering and Sorting](desktop/filter_sort.md)
 - [Selection](desktop/selection.md)
 - [Paging](desktop/paging.md)
+- [Adding Active Elements to Grouplist Items](desktop/active_content.md)
 
 {{note
 Note that there's no built-in possibility to edit data with grouplist. You should create a prototype editlist object beforehand.

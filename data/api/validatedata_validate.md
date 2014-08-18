@@ -15,7 +15,7 @@ webix.ui({
 	}
 });
 
-
+@returns: result of validation		boolean 	result of validation (success or failure)
 @template:	api_method
 
 @relatedapi: 

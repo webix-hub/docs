@@ -5,9 +5,9 @@ clear
 	
 
 @example:
-	function clear_form() {
-                $$('myform').clear();
-            }
+function clear_form() {
+   $$('myform').clear();
+}
 
 @template:	api_method
 @relatedsample:

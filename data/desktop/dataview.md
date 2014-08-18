@@ -32,15 +32,15 @@ webix.ui({
 
 - [Data Loading](desktop/data_loading.md)
 - [Defining Data Templates](desktop/html_templates.md)
+- [Selection](desktop/selection.md)
 - [Adding/Deleting Items](desktop/add_delete.md)
 - [Editing Data](desktop/edit.md)
+- [Paging](desktop/paging.md) 
+- [Adding Active Elements to Dataview Items](desktop/active_content.md)
 
 {{note
-Note that there's a built-in possibility to edit data with dataview. You should create a **prototype dataview-edit** object beforehand.
+Note that there's a built-in possibility to edit data with dataview. You should create a prototype *dataview-edit* object beforehand.
 }}
-- [Paging](desktop/paging.md) 
-- [Dynamic Loading](desktop/dynamic_loading.md)
-- [Selection](desktop/selection.md)
 
 ##API Reference
 

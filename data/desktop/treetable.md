@@ -67,6 +67,7 @@ Common Tasks here include the following and coincide with those of the datatable
 
 ###Related Articles
 - desktop/data_object.md
+- [Adding Active Elements to Nodes](desktop/active_content.md)
 - [Tree](datatree/index.md)
 - datatree/node_templates.md
 - [Sizing Components](desktop/dimensions.md)

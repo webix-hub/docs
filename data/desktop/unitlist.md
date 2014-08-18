@@ -22,6 +22,10 @@ webix.ui({
     uniteBy:function(obj){
         return obj.title.substr(0,1); 
     },
+    type:{//setting item properties, optional
+    	height:50,
+        headerHeight:30,
+    },
     template:"#title#</br>#year#<br/>#votes#",
     data: set
 });
@@ -75,6 +79,7 @@ If there're several data items that comply to the unit value criterion, they are
 
 - [Data Loading](desktop/data_loading.md). 
 - [Defining Data Template](desktop/html_templates.md).
+- [Adding Active Elements to Unitlist Items](desktop/active_content.md)
 - [Adding/Deleting Items](desktop/add_delete.md).
 - [Editing Data](desktop/edit.md).
 - [Data Filtering and Sorting](desktop/filter_sort.md)
@@ -93,7 +98,7 @@ Note that there's no built-in possibility to edit data with unitlist. You should
 - desktop/data_object.md
 - [Sizing Components](desktop/dimensions.md)
 - [Resizing](desktop/resizing.md)
-- [Redefinition of the Components](desktop/redefinition.md)
+- [Changing Component Properties](desktop/redefinition.md)
 - [List](desktop/list.md)
 - [Grouplist](desktop/grouplist.md)
 - [X-list](desktop/xlist.md)

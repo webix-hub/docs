@@ -69,19 +69,16 @@ webix.protoUI({
 
 Now, you can use it. Note that the **name** of the newly created component is used as **view** property value: 
 
-{{snippet
-
-}}
 ~~~js
 webix.ui({
     view: "activeList",
+    id:"mylist",
     activeContent:{
         deleteButton:{
             id:"deleteButtonId",
             view:"button",
             label:"Delete",
-            width:120,
-            earlyInit:true
+            width:120
         },
         markCheckbox:{
         	view:"checkbox", ...
@@ -89,6 +86,15 @@ webix.ui({
     },
     template: "#title#<div>{common.markCheckbox()}{common.deleteButton()}</div>"
 });
+~~~
+
+"Active" template can be also defined via a function:
+
+~~~js
+view:"activelist",
+template: function (obj, common) {
+   return obj.title+"<div>"+common.deleteButton(obj, common)+"</div>";
+}
 ~~~
 
 - the **activeContent** property contains an array of key-value pairs where: 
@@ -117,10 +123,50 @@ view:"button", click:function(){...}
 button.attachEvent("onItemClick", function(){...});
 ~~~
 
+###Getting master of an active content element
 
+- using [locate](api/link/ui.proto_locate.md) function:
+	- in any mouse event handler  of the active element (e.g. *onItemClick* event, or *click* property).
+
+~~~js
+$$('deleteButtonId').attachEvent("onItemClick", function(id, e){
+	var item_id = $$('mylist').locate(e);
+    //returns id of a list item
+});
+~~~
+
+- through the active element configuration:
+	- if  a handler is attached to non-mouse event (all component-specific Webix events);
+    - if an active element is redrawn on a mouse event (like toggle, checkbox).
+
+
+~~~js
+on:{
+	'onChange':function(newv, oldv){
+		var item_id = this.config.$masterId;
+	}
+}
+~~~
+
+**Datatable and treetable specificity**
+
+With [datatable](datatable/index.md) and [treetable](desktop/treetable.md) you can get a row object by **$master** property that includes: 
+
+- **row** - row id;
+- **rind** - row index;
+- **column** - columns id;
+- **cind** - column index.
+
+~~~js
+on:{
+	'onChange':function(newv, oldv){
+		var item_id = this.config.$masterId.row;
+	}
+}
+~~~
 
 ##Related articles
 
-- [Adding a custom element to the datatable header](datatable/filtering.md#customheadercontent)
+- [Adding a custom element to the datatable header](datatable/headers_footers.md#customheaderandfootercontent)
 
 @complexity: 2
