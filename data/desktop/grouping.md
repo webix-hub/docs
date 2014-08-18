@@ -404,7 +404,6 @@ Grouping Events {#groupingevent}
     - **value** - value of the grouping criterion;
     - **data** - component data object;
 - **onGroupFooter** - fires when grouping is applied to the component and a footer for each group is provided. 
-- 
 
 ~~~js
 webix.ui({

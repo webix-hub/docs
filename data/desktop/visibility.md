@@ -26,7 +26,7 @@ $$("my_window").isVisible();
 
 <img src="desktop/batches.png"/>
 
-At the same time the library allows grouping controls and chanding their visibility in groups. It's useful when you want to define different button sets
+At the same time the library allows grouping controls and changing their visibility in groups. It's useful when you want to define different button sets
 for different states of the application.
 
 

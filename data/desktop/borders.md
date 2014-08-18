@@ -64,6 +64,6 @@ webix.ui({
 
 - padding - offset for all the borders;
 - paddingX - offset for left and right borders;
-- padingY - offset for upper and bottem borders.
+- paddingY - offset for upper and bottom borders.
 
 @complexity:1

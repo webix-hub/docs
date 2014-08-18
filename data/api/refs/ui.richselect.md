@@ -44,7 +44,7 @@ The control combines a non-editable text field with a drop-down list of predefin
 - api/link/ui.richselect_getinputnode.md - gets the HTML element related to the component
 - api/link/ui.richselect_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.richselect_getparentview.md - returns the parent view of the component
-- api/ui.richselect_getpopup.md - return popup element of the input
+- api/ui.richselect_getpopup.md - returns popup element of the input
 - api/ui.richselect_gettext.md - returns text of currently selected option
 - api/link/ui.richselect_gettopparentview.md - returns top parent view
 - api/link/ui.richselect_getvalue.md - returns the current value of the control
@@ -70,10 +70,18 @@ The control combines a non-editable text field with a drop-down list of predefin
 
 {{api
 - api/link/ui.richselect_onafterrender_event.md - occurs immediately after the component has been rendered.
+- api/link/ui.richselect_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.richselect_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.richselect_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.richselect_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.richselect_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.richselect_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
+- api/link/ui.richselect_onrotate_event.md - occurs on screen rotating
+- api/link/ui.richselect_onswipex_event.md - occurs on a horizontal swipe movement
+- api/link/ui.richselect_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.richselect_ontouchend_event.md - occurs when the touch event is ended
+- api/link/ui.richselect_ontouchmove_event.md - occurs during touch movement
+- api/link/ui.richselect_ontouchstart_event.md - when some webix view has been touched
 - api/link/ui.richselect_onviewresize_event.md - view size was changed by resizer
 }}
 
@@ -139,7 +147,8 @@ The control combines a non-editable text field with a drop-down list of predefin
 - api/link/ui.richselect_$getsize_other.md - returns the current size of the component
 - api/link/ui.richselect_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.richselect_$height_other.md - current height of the view
-- api/ui.richselect_$rendericon_other.md - optional render for the icon block
+- api/link/ui.richselect_$render_other.md - code called after rending control
+- api/link/ui.richselect_$rendericon_other.md - renders icon for the control
 - api/link/ui.richselect_$renderinput_other.md - renders html for the input
 - api/link/ui.richselect_$scope_other.md - scope for resolving event and method names
 - api/link/ui.richselect_$setsize_other.md - sets the component size

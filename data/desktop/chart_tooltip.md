@@ -1,6 +1,6 @@
 Chart Tooltip
 =============
-Tooltip is a graphical UI element that becomes visible when a user places a mouse pointer over the predefines area. It's used as an infotip giving additional information of user request. 
+Tooltip is a graphical UI element that becomes visible when a user places a mouse pointer over the predefined area. It's used as an infotip giving additional information on user request. 
 
 <img src="desktop/chart_tooltip.png" />
 
@@ -57,7 +57,7 @@ webix.ui({
 
 Templates may include several properties of one and the same data object. 
 
-If you want to see and year - sales tooltip for the chart above, change the tooltip template and include #year# to it: 
+If you want to see year - sales tooltip for the chart above, change the tooltip template and include #year# to it: 
 
 ~~~js
 tooltip:{
@@ -65,7 +65,7 @@ tooltip:{
          }
 ~~~
 
-Such tooltips are especially convenient for [Scatter](desktop/chart_types.md#scatter) charts where don't aren't connected by lines and it's difficult to read exact value: 
+Such tooltips are especially convenient for [Scatter](desktop/chart_types.md#scatter) charts where points aren't connected by lines and it's difficult to read exact value: 
 
 
 <img src="desktop/scatter_tooltip.png" />

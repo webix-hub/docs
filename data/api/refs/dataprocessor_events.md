@@ -4,6 +4,8 @@ Events
 
 {{api
 - api/dataprocessor_onafter_event.md - fires each time after successfull data saving
+- api/dataprocessor_onafterdatasend_event.md - 
+- api/dataprocessor_onaftersave_event.md - 
 - api/dataprocessor_onaftersaveerror_event.md - fires for data saving errors
 - api/dataprocessor_onaftersync_event.md - called when server side response received and processed
 - api/link/dataprocessor_onaftervalidation_event.md - fires after data has been validated
@@ -19,6 +21,8 @@ Events
 
 @index:
 - api/dataprocessor_onafter_event.md
+- api/dataprocessor_onafterdatasend_event.md
+- api/dataprocessor_onaftersave_event.md
 - api/dataprocessor_onaftersaveerror_event.md
 - api/dataprocessor_onaftersync_event.md
 - api/link/dataprocessor_onaftervalidation_event.md

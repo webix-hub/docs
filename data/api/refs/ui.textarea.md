@@ -66,10 +66,18 @@ ui.textarea
 
 {{api
 - api/link/ui.textarea_onafterrender_event.md - occurs immediately after the component has been rendered.
+- api/link/ui.textarea_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.textarea_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.textarea_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.textarea_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.textarea_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.textarea_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
+- api/link/ui.textarea_onrotate_event.md - occurs on screen rotating
+- api/link/ui.textarea_onswipex_event.md - occurs on a horizontal swipe movement
+- api/link/ui.textarea_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.textarea_ontouchend_event.md - occurs when the touch event is ended
+- api/link/ui.textarea_ontouchmove_event.md - occurs during touch movement
+- api/link/ui.textarea_ontouchstart_event.md - when some webix view has been touched
 - api/link/ui.textarea_onviewresize_event.md - view size was changed by resizer
 }}
 
@@ -131,6 +139,8 @@ ui.textarea
 - api/link/ui.textarea_$getsize_other.md - returns the current size of the component
 - api/link/ui.textarea_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.textarea_$height_other.md - current height of the view
+- api/link/ui.textarea_$render_other.md - code called after rending control
+- api/link/ui.textarea_$rendericon_other.md - renders icon for the control
 - api/link/ui.textarea_$renderinput_other.md - renders html for the input
 - api/link/ui.textarea_$scope_other.md - scope for resolving event and method names
 - api/link/ui.textarea_$setsize_other.md - sets the component size

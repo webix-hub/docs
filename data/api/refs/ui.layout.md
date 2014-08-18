@@ -26,7 +26,7 @@ The component allows you to programmatically define interface structure by organ
 <div class='h2'>Methods</div>
 
 {{api
-- api/link/ui.layout_addview.md - add new view to layout or multiview
+- api/link/ui.layout_addview.md - add new view to layout-like component
 - api/link/ui.layout_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.layout_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.layout_bind.md - binds components
@@ -49,7 +49,7 @@ The component allows you to programmatically define interface structure by organ
 - api/link/ui.layout_isvisible.md - checks whether the view is visible
 - api/link/ui.layout_mapevent.md - routes events from one object to another
 - api/link/ui.layout_reconstruct.md - rebuilds the layout
-- api/link/ui.layout_removeview.md - removes view from multiview or layout
+- api/link/ui.layout_removeview.md - removes view from layout-like component
 - api/link/ui.layout_resize.md - adjusts the view to a new size
 - api/link/ui.layout_resizechildren.md - resizes all children of the calling component
 - api/link/ui.layout_show.md - makes the component visible

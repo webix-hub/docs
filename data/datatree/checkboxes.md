@@ -16,7 +16,7 @@ So, to add checkboxes to tree nodes you should specify the api/link/ui.tree_temp
 ~~~js
 tree = new webix.ui({
 	view:"tree",
-	template:"{common.icon()} {common.folder()} {common.checkbox()} #value#"
+	template:"{common.icon()} {common.checkbox()} {common.folder()} #value#"
     ...
 });
 ~~~

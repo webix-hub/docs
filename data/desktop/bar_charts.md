@@ -56,17 +56,17 @@ Moreover, the legend for them allows hiding and showing the dedicated chart by s
 	</caption>
 	<tbody>
 	<tr>
-		<td style="width:300px;"> 'stackedBar'/'stackedbarH' <br> charts  </td>
+    	<td> Using <a href="desktop/chart_series.md">series</a> </td>
 		<td style="text-align:center;"><img src="desktop/presenting_multiple_properties_series.png"/></td>
 	</tr>
 	<tr>
-		<td> Using <a href="desktop/chart_series.md">series</a> </td>
+		<td style="width:300px;"> 'stackedBar'/'stackedbarH' <br> charts </td>
 		<td style="text-align:center;"><img src="desktop/presenting_multiple_properties_stackedbar.png"/></td>
 	</tr>
 	</tbody>
 </table>
 
-{{sample /08_chart/06_bar_chart/06_series.html }}
+{{sample 08_chart/06_bar_chart/06_series.html }}
 
 The **rules of series definition** are described [here](desktop/chart_series.md). 
 

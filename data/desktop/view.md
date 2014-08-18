@@ -98,7 +98,7 @@ var l = $$("my_button").getTopParentView(); //  returns layout object
 
 ###2 . getFormView()
 
-The method returns an object of a **parent form** for the control it is called for. It's especially useful in case of comblex forms:
+The method returns an object of a **parent form** for the control it is called for. It's especially useful in case of complex forms:
 
 ~~~js
 webix.ui({

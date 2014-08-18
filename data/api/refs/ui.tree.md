@@ -36,7 +36,7 @@ The component supports in-line node editing, advanced drag-and-drop, three-state
 - api/link/ui.tree_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.tree_callevent.md - calls an inner event
 - api/link/ui.tree_checkall.md - check all items in tree
-- api/link/ui.tree_checkitem.md - checks the checkbox related to the specified item
+- api/link/ui.tree_checkitem.md - checks the checkbox	related to the specified item
 - api/link/ui.tree_clearall.md - removes all items from the component
 - api/link/ui.tree_clearcss.md - removes css class from all items
 - api/link/ui.tree_clearvalidation.md - removes all validation marks from the component
@@ -90,7 +90,7 @@ The component supports in-line node editing, advanced drag-and-drop, three-state
 - api/link/ui.tree_isvisible.md - checks whether the view is visible
 - api/link/ui.tree_load.md - loads data from an external data source
 - api/link/ui.tree_loadbranch.md - loads data to the specified branch
-- api/link/ui.tree_loadnext.md - sends a request to load the specified number of records to the end or to the specified position of the component
+- api/link/ui.tree_loadnext.md - sends a request to load the specified number of records to the end or to the specified position
 - api/link/ui.tree_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.tree_mapevent.md - routes events from one object to another
 - api/link/ui.tree_move.md - moves the specified item to the new position
@@ -101,7 +101,7 @@ The component supports in-line node editing, advanced drag-and-drop, three-state
 - api/link/ui.tree_refresh.md - repaints the whole view or a certain item
 - api/link/ui.tree_remove.md - removes the specified item from datastore
 - api/link/ui.tree_removecss.md - removes CSS class from a component item
-- api/link/ui.tree_render.md - renders the specified item or the whole component
+- api/link/ui.tree_render.md - 
 - api/link/ui.tree_resize.md - adjusts the view to a new size
 - api/link/ui.tree_scrollto.md - scrolls the data container to a certain position
 - api/link/ui.tree_select.md - selects the specified item(s)
@@ -116,7 +116,7 @@ The component supports in-line node editing, advanced drag-and-drop, three-state
 - api/link/ui.tree_unbind.md - breaks "bind" link
 - api/link/ui.tree_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.tree_uncheckall.md - uncheck all items in the tree
-- api/link/ui.tree_uncheckitem.md - unchecks the checkbox related to the specified item
+- api/link/ui.tree_uncheckitem.md - unchecks the checkbox	related to the specified item
 - api/link/ui.tree_ungroup.md - ungroups data
 - api/link/ui.tree_unselect.md - removes selection from the specified item
 - api/link/ui.tree_unselectall.md - removes selection from all items
@@ -171,11 +171,11 @@ The component supports in-line node editing, advanced drag-and-drop, three-state
 - api/link/ui.tree_onpaste_event.md - fires when the user presses CTRL+V keys combination
 - api/link/ui.tree_onrotate_event.md - occurs on screen rotating
 - api/link/ui.tree_onselectchange_event.md - fires after selection state was changed
-- api/link/ui.tree_onswipex_event.md - 
-- api/link/ui.tree_onswipey_event.md - 
-- api/link/ui.tree_ontouchend_event.md - 
-- api/link/ui.tree_ontouchmove_event.md - 
-- api/link/ui.tree_ontouchstart_event.md - 
+- api/link/ui.tree_onswipex_event.md - occurs on a horizontal swipe movement
+- api/link/ui.tree_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.tree_ontouchend_event.md - occurs when the touch event is ended
+- api/link/ui.tree_ontouchmove_event.md - occurs during touch movement
+- api/link/ui.tree_ontouchstart_event.md - when some webix view has been touched
 - api/link/ui.tree_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation
 - api/link/ui.tree_onvalidationsuccess_event.md - fires after the newlyloaded/added/edited data has passes validation successfully
 - api/link/ui.tree_onviewresize_event.md - view size was changed by resizer

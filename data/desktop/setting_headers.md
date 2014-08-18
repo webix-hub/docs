@@ -8,7 +8,7 @@ Depending on the context, header is defined in two ways:
 - as template type;
 - as component property. 
 
-<img src="desktop/header_tpl.png"/>
+<img src="desktop/component_inside_window.png"/>
 
 {{sample
 10_window/06_component_inside.html
@@ -33,9 +33,9 @@ webix.ui({
 });
 ~~~
 
-<img src="desktop/template_header.png"/>
+<img src="desktop/header_tpl.png"/>
 
-BTW, another template type, namely **section**, allows for setton a specific header that looks like a thin line that encircles the component and has a heading above. 
+BTW, another template type, namely **section**, allows for setting a specific header that looks like a thin line that encircles the component and has a heading above. 
 
 {{snippet
 Type:"section"
@@ -47,7 +47,7 @@ Type:"section"
 <img src="desktop/template_section.png"/>
 
 {{note
-During header initing **view:template** line is optional. 
+During header initialization the **view:template** line is optional. 
 }}
 
 {{sample 80_docs/header_templates.html }}

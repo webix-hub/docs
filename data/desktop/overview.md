@@ -32,7 +32,7 @@ Main features
 <dd>Support for internationalization allows applications be translated and modified into local versions for hundreds of languages.</dd>
 <br>
 <dt><a href="desktop/styling.md">8. Styling with standard css</a></dt>
-<dd>You can use CSS in conjunction with components content to archieve the desired look-and-feel. Css can be applied to the whole layout or to a specific components, items etc.</dd>
+<dd>You can use CSS in conjunction with components content to achieve the desired look-and-feel. Css can be applied to the whole layout or to specific components, items etc.</dd>
 <br>
 <dt><a href="desktop/dimensions.md">9. Flexible layouts</a></dt>
 <dd>Each element in the layout can be configured individually or as a part of layout: width, height, color etc.</dd>
@@ -47,10 +47,10 @@ Main features
 <dd>Webix is integrated with jQuery that allows you to follow the main mantra of the jQuery library while developing - running with the least amount of configuration.</dd>
 <br>
 <dt><a href="desktop/dynamic_loading.md">13. Dynamically fetching data from the server when the component is scrolled up and down</a></dt>
-<dd>Working with large datasets, developer can load data dynamically to reduce complexity and improve performance. Polling interval and the number of loaded records are controlled.</dd>
+<dd>While working with large datasets, a developer can load data dynamically to reduce complexity and improve performance. Polling interval and the number of loaded records are controlled.</dd>
 <br>
 <dt><a href="desktop/event_handling.md">14. Callbacks for all events: load, sorting, etc. </a></dt>
-<dd>Numerous events lets you handle any action or proceeding that can happen in the app.</dd>
+<dd>Numerous events let you handle any action or proceeding that can happen in the app.</dd>
 <br>
 <dt><a href="desktop/editing.md">15. Inline editing </a></dt>
 <dd>All data containing components can be directly edited on the page, saving users from having to go to a separate page first.</dd>

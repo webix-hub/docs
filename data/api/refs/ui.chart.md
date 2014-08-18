@@ -65,8 +65,7 @@ It's possible to present multiple data sets on the same chart.  Check [chart](de
 - api/link/ui.chart_isenabled.md - checks whether the view is enabled
 - api/link/ui.chart_isvisible.md - checks whether the view is visible
 - api/link/ui.chart_load.md - loads data from an external data source
-- api/link/ui.chart_loadnext.md - sends a request to load the specified number of records to the end or to the specified position 
-of the component
+- api/link/ui.chart_loadnext.md - sends a request to load the specified number of records to the end or to the specified position
 - api/ui.chart_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.chart_mapevent.md - routes events from one object to another
 - api/link/ui.chart_parse.md - loads data to the component from an inline data source
@@ -116,11 +115,11 @@ of the component
 - api/link/ui.chart_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.chart_onmouseout_event.md - fires when the mouse was moved out from the specified item
 - api/link/ui.chart_onrotate_event.md - occurs on screen rotating
-- api/link/ui.chart_onswipex_event.md - 
-- api/link/ui.chart_onswipey_event.md - 
-- api/link/ui.chart_ontouchend_event.md - 
-- api/link/ui.chart_ontouchmove_event.md - 
-- api/link/ui.chart_ontouchstart_event.md - 
+- api/link/ui.chart_onswipex_event.md - occurs on a horizontal swipe movement
+- api/link/ui.chart_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.chart_ontouchend_event.md - occurs when the touch event is ended
+- api/link/ui.chart_ontouchmove_event.md - occurs during touch movement
+- api/link/ui.chart_ontouchstart_event.md - when some webix view has been touched
 - api/link/ui.chart_onviewresize_event.md - view size was changed by resizer
 }}
 

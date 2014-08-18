@@ -118,28 +118,11 @@ Tree provides a set of ready-to-use template solutions, which are:
 - **{common.checkbox()}** - a check box
 - **{common.treetable()}** - ([treetable](desktop/treetable.md) only) - a combination of common.icon() and common.folder() in one line
 
-<table class="list">
-	<caption class="caption">
-		<strong>Table 2 </strong>
-		Using predefined templates
-	</caption>
-	<thead>
-	<tr>
-		<th>
-			Predefined template
-		</th>
-		<th>
-			Usage example
-		</th>
-		<th>
-			Related tree
-		</th>
-	</tr>
-	</thead>
-	<tbody>
-	<tr>
-    	<td><i>{common.icon()}</i></td>
-		<td>
+
+###Using predefined templates
+
+####{common.icon()}<br><br>
+
 ~~~js
 tree = new webix.ui({
     view:"tree",
@@ -147,25 +130,25 @@ tree = new webix.ui({
     template:"{common.icon()} #value#"
 })
 ~~~
-		</td>
-        <td><img src='datatree/templates_01.png'/></td>
-	</tr>
-	<tr>
-    	<td><i>{common.folder()}</i></td>
-		<td> 
+		
+<img src='datatree/templates_01.png'/>
+
+
+####{common.folder()}<br><br>
+		
 ~~~js
 tree = new webix.ui({
-    view:"tree",
+	view:"tree",
     ...
     template:"{common.folder()} #value#"
 })
 ~~~
-		</td>
-        <td><img src='datatree/templates_02.png'/></td>
-	</tr>
-	<tr>
-    	<td><i>{common.checkbox()}</i></td>
-		<td>
+
+<img src='datatree/templates_02.png'/>
+
+
+####{common.checkbox()}<br><br>
+
 ~~~js
 tree = new webix.ui({
     view:"tree",
@@ -173,32 +156,28 @@ tree = new webix.ui({
     template:"{common.checkbox()} #value#"
 })
 ~~~
-		</td>
-        <td><img src='datatree/templates_03.png'/></td>
-	</tr>
-    <tr>
-    	<td><i>{common.icon()}<br>{common.checkbox()}</i></td>
-		<td>
+		
+<img src='datatree/templates_03.png'/>
+
+####{common.icon()}<br>{common.checkbox()}<br><br>
+		
 ~~~js
 tree = new webix.ui({
     view:"tree",
     ...
-    template:"{common.icon()}
-    {common.checkbox()} #value#"
+    template:"{common.icon()}{common.checkbox()} #value#"
 })
 ~~~
-		</td>
-        <td><img src='datatree/templates_04.png'/></td>
-	</tr>
-    <tr>
-    	<td><i>{common.icon()}<br>{common.folder()}</i></td>
-		<td>
+		
+<img src='datatree/templates_04.png'/>
+
+####{common.icon()}<br>{common.folder()}<br><br>
+		
 ~~~js
 tree = new webix.ui({
     view:"tree",
     ...
-    template:"{common.icon()}
-    {common.folder()} #value#"
+    template:"{common.icon()}{common.folder()} #value#"
 })
 
 //or, for treetable it's possible
@@ -212,22 +191,18 @@ treetable = new webix.ui({
   ]
 });
 ~~~
-		</td>
-        <td><img src='datatree/templates_05.png'/></td>
-	</tr>
-    <tr>
-    	<td><i>{common.icon()}<br>{common.folder()}<br>{common.checkbox()}</i></td>
-		<td>
+
+<img src='datatree/templates_05.png'/>
+	
+####{common.icon()}<br>{common.folder()}<br>{common.checkbox()}<br><br>
+		
 ~~~js
 tree = new webix.ui({
     view:"tree",
     ...
-    template:"{common.icon()}{common.folder()}
-    {common.checkbox()} #value#"
+    template:"{common.icon()}{common.folder()}{common.checkbox()} #value#"
 })
 ~~~
-		</td>
-        <td><img src='datatree/templates_06.png'/></td>
-	</tr>
-	</tbody>
-</table>
+
+<img src='datatree/templates_06.png'/>
+	

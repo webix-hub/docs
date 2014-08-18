@@ -2,14 +2,17 @@ Skins
 ===================
 Webix provides 8 skins that you can use to change the overall look of your application:
 
-1. [Air (default)](desktop/skins.md#airdefaultskin)
-2. [Compact](desktop/skins.md#compact)
-3. [Clouds](desktop/skins.md#clouds)
-4. [Glamour](desktop/skins.md#glamour)
-5. [Light](desktop/skins.md#light)
-6. [Metro](desktop/skins.md#metro)
-7. [Terrace](desktop/skins.md#terrace)
-8. [Web](desktop/skins.md#web)
+1. [Flat (default skin)](desktop/skins.md#flat)
+2. [Air](desktop/skins.md#air)
+3. [AirCompact](desktop/skins.md#aircompact)
+4. [Clouds](desktop/skins.md#clouds)
+5. [Compact](desktop/skins.md#compact) 
+6. [Glamour](desktop/skins.md#glamour)
+7. [Light](desktop/skins.md#light)
+8. [Metro](desktop/skins.md#metro)
+9. [Terrace](desktop/skins.md#terrace)
+10. [Touch](desktop/skins#touch)
+11. [Web](desktop/skins.md#web)
 
 Each skin requires including its specific CSS file. 
 
@@ -17,35 +20,49 @@ Each skin requires including its specific CSS file.
 All CSS files for skins reside in the **codebase/skins** folder of the package.
 }}
 
+Flat
+------
+To apply the **Flat** skin, include the default CSS file:
 
-Air (default skin)
+{{snippet
+Applying the 'Flat' skin to the app
+}}
+~~~js
+<script src="../codebase/webix.js"></script>   
+<link href="../codebase/skins/webix.css" rel="stylesheet" type="text/css"> 
+~~~
+
+<img style="margin: 20px auto 20px auto;display: block;box-shadow: #D8D8D8 0px 0px 7px 1px;" src="desktop/skins/flat_skin.png"/>
+
+
+Air 
 ------------------------
-To apply the **Air** skin, include the default CSS file:
+To apply the **Air** skin, include the *air.css* file:
 
 {{snippet
 Applying the 'Air' skin to the app
 }}
 ~~~js
 <script src="../codebase/webix.js"></script>   
-<link href="../codebase/webix.css" rel="stylesheet" type="text/css"> 
+<link href="../codebase/air.css" rel="stylesheet" type="text/css"> 
 ~~~
 
 
 <img style="margin: 20px auto 20px auto;display: block;box-shadow: #D8D8D8 0px 0px 7px 1px;" src="desktop/skins/air_skin.png"/>
 
-Compact
+AirCompact
 ---------------------------
-To apply the **Compact** skin, include the *compact.css* file:
+To apply the **AirCompact** skin, include the *aircompact.css* file:
 
 {{snippet
-Applying the 'Compact' skin to the app
+Applying the 'AirCompact' skin to the app
 }}
 ~~~js
 <script src="../codebase/webix.js"></script>   
-<link href="../codebase/skins/compact.css" rel="stylesheet" type="text/css"> 
+<link href="../codebase/skins/aircompact.css" rel="stylesheet" type="text/css"> 
 ~~~
 
-<img style="margin: 20px auto 20px auto;display: block;box-shadow: #D8D8D8 0px 0px 7px 1px;" src="desktop/skins/compact_skin.png"/>
+<img style="margin: 20px auto 20px auto;display: block;box-shadow: #D8D8D8 0px 0px 7px 1px;" src="desktop/skins/aircompact_skin.png"/>
 
 Clouds
 --------------------------------
@@ -61,6 +78,22 @@ Applying the 'Clouds' skin to the app
 
 <img style="margin: 20px auto 20px auto;display: block;box-shadow: #D8D8D8 0px 0px 7px 1px;" src="desktop/skins/clouds_skin.png"/>
 
+Compact
+--------
+To apply the **Compact** skin, include the *compact.css* file:
+
+{{snippet
+Applying the 'Compact' skin to the app
+}}
+~~~js
+<script src="../codebase/webix.js"></script>   
+<link href="../codebase/skins/compact.css" rel="stylesheet" type="text/css"> 
+~~~
+
+<img style="margin: 20px auto 20px auto;display: block;box-shadow: #D8D8D8 0px 0px 7px 1px;" src="desktop/skins/compact_skin.png"/>
+
+
+
 Glamour
 ---------------------------------
 To apply the **Glamour** skin, include the *glamour.css* file:
@@ -74,6 +107,7 @@ Applying the 'Glamour' skin to the app
 ~~~
 
 <img style="margin: 20px auto 20px auto;display: block;box-shadow: #D8D8D8 0px 0px 7px 1px;" src="desktop/skins/glamour_skin.png"/>
+
 
 Light
 -----------------------------------
@@ -117,6 +151,21 @@ Applying the 'Terrace' skin to the app
 ~~~
 
 <img style="margin: 20px auto 20px auto;display: block;box-shadow: #D8D8D8 0px 0px 7px 1px;" src="desktop/skins/terrace_skin.png"/>
+
+Touch 
+------------------------
+To apply the **Touch** skin, include the *touch.css* file:
+
+{{snippet
+Applying the 'Touch' skin to the app
+}}
+~~~js
+<script src="../codebase/webix.js"></script>   
+<link href="../codebase/touch.css" rel="stylesheet" type="text/css"> 
+~~~
+
+
+<img style="margin: 20px auto 20px auto;display: block;box-shadow: #D8D8D8 0px 0px 7px 1px;" src="desktop/skins/touch_skin.png"/>
 
 Web
 --------------------------------------

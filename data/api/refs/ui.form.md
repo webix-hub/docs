@@ -27,7 +27,7 @@ The component provides validation and the ability to save user input to the back
 <div class='h2'>Methods</div>
 
 {{api
-- api/link/ui.form_addview.md - add new view to layout or multiview
+- api/link/ui.form_addview.md - add new view to layout-like component
 - api/link/ui.form_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.form_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.form_bind.md - binds components
@@ -61,7 +61,7 @@ The component provides validation and the ability to save user input to the back
 - api/link/ui.form_parse.md - loads data to the component from an inline data source
 - api/link/ui.form_reconstruct.md - rebuilds the layout
 - api/link/ui.form_refresh.md - repaints the component
-- api/link/ui.form_removeview.md - removes view from multiview or layout
+- api/link/ui.form_removeview.md - removes view from layout-like component
 - api/link/ui.form_render.md - renders the specified item or the whole component
 - api/link/ui.form_resize.md - adjusts the view to a new size
 - api/link/ui.form_resizechildren.md - resizes all children of the calling component

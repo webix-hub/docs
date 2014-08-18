@@ -194,7 +194,7 @@ rules:{
 
 ##Predefined Rules
 
-There're three of them: 
+There are three of them: 
 
 - **isNotEmpty** - checks whether a value is empty;
 - **isNumber** - checks whether a value is number;

@@ -1,1 +1,1 @@
-@link: api/ui.search_$renderIcon_other.md
+@link: api/ui.text_$renderIcon_other.md

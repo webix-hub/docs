@@ -96,7 +96,7 @@ When a modal window is inited, the app area is greyed out to indicate that it is
 ###Related articles
 
 - [Popup](desktop/popup.md)
-- [Window and Popip Positioning](desktop/window_positioning.md)
+- [Window and Popup Positioning](desktop/window_positioning.md)
 - [Message Boxes](desktop/message_boxes.md)
 - [Changing Visibility of Components](desktop/visibility.md)
 - [Window CSS Image Map](desktop/window_css.md)

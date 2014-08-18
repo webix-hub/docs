@@ -72,12 +72,20 @@ Items of the component combines an icon with the text label. The component can b
 
 {{api
 - api/link/ui.tabbar_onafterrender_event.md - occurs immediately after the component has been rendered.
+- api/link/ui.tabbar_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/ui.tabbar_onaftertabclick_event.md - fired after a user clicks a tab
 - api/link/ui.tabbar_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/ui.tabbar_onbeforetabclick_event.md - fired before a user clicks a tab
 - api/link/ui.tabbar_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.tabbar_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.tabbar_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.tabbar_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
+- api/link/ui.tabbar_onrotate_event.md - occurs on screen rotating
+- api/link/ui.tabbar_onswipex_event.md - occurs on a horizontal swipe movement
+- api/link/ui.tabbar_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.tabbar_ontouchend_event.md - occurs when the touch event is ended
+- api/link/ui.tabbar_ontouchmove_event.md - occurs during touch movement
+- api/link/ui.tabbar_ontouchstart_event.md - when some webix view has been touched
 - api/link/ui.tabbar_onviewresize_event.md - view size was changed by resizer
 }}
 
@@ -152,6 +160,8 @@ Items of the component combines an icon with the text label. The component can b
 - api/link/ui.tabbar_$getsize_other.md - returns the current size of the component
 - api/link/ui.tabbar_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.tabbar_$height_other.md - current height of the view
+- api/link/ui.tabbar_$render_other.md - code called after rending control
+- api/link/ui.tabbar_$rendericon_other.md - renders icon for the control
 - api/link/ui.tabbar_$renderinput_other.md - renders html for the input
 - api/link/ui.tabbar_$scope_other.md - scope for resolving event and method names
 - api/link/ui.tabbar_$setsize_other.md - sets the component size

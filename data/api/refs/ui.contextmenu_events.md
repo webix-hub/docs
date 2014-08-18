@@ -42,11 +42,11 @@ Events
 - api/link/ui.contextmenu_onrotate_event.md - occurs on screen rotating
 - api/link/ui.contextmenu_onselectchange_event.md - fires after selection state was changed
 - api/link/ui.contextmenu_onshow_event.md - fires when window is shown
-- api/link/ui.contextmenu_onswipex_event.md - 
-- api/link/ui.contextmenu_onswipey_event.md - 
-- api/link/ui.contextmenu_ontouchend_event.md - 
-- api/link/ui.contextmenu_ontouchmove_event.md - 
-- api/link/ui.contextmenu_ontouchstart_event.md - 
+- api/link/ui.contextmenu_onswipex_event.md - occurs on a horizontal swipe movement
+- api/link/ui.contextmenu_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.contextmenu_ontouchend_event.md - occurs when the touch event is ended
+- api/link/ui.contextmenu_ontouchmove_event.md - occurs during touch movement
+- api/link/ui.contextmenu_ontouchstart_event.md - when some webix view has been touched
 - api/link/ui.contextmenu_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation
 - api/link/ui.contextmenu_onvalidationsuccess_event.md - fires after the newlyloaded/added/edited data has passes validation successfully
 - api/link/ui.contextmenu_onviewresize_event.md - view size was changed by resizer

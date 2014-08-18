@@ -259,16 +259,16 @@ There are **4 prebuilt operations** over data:
 If needed, you can <span id="operation">add your own operation</span>: 
 
 ~~~js
-$$('pivot').operations.abssum = function(data) {
-    //data - array of values which need to be processed
-    var sum = 0;
-    for (var i = 0; i < data.length; i++) {
-       var num = window.parseFloat(data[i], 10);
-       if (!window.isNaN(num))
-          sum += Math.abs(num);
-       }
-    return sum;
-};
+view:"pivot-chart",
+groupMethods:{
+	abssum: function(template, data){
+		data = data || this;
+		var summ = 0;
+		for (var i = 0; i < data.length; i++)
+			summ+= Math.abs(template(data[i])*1);
+		return summ;
+	}
+},
 ~~~
 
 And use it as: 

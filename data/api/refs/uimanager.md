@@ -22,7 +22,7 @@ Object is created automatically, and can be accessed as webix.UIManager
 - api/uimanager_getstate.md - retrieves the current state of the specified view
 - api/uimanager_gettop.md - returns the top-most parent to the specified view
 - api/uimanager_hasfocus.md - checks whether the specified view has focus
-- api/uimanager_removehotkey.md - 
+- api/uimanager_removehotkey.md - removes the hot key handler
 - api/uimanager_setfocus.md - sets focus to the specified view
 - api/uimanager_setstate.md - restores the specified state
 }}

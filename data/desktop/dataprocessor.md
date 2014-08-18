@@ -132,7 +132,7 @@ new webix.DataProcessor({
 
 ##DataProcessor EventSystem and Error Tracking
 
-DataProcessor events ([listed in API reference](api/refs/dataprocessor.html#events)) can be used for different purposes. For instance, the events can help you:
+DataProcessor events ([listed in API reference](api/refs/dataprocessor.md#events)) can be used for different purposes. For instance, the events can help you:
 
 1) **Modify data** before it's gone to server with the **onBeforeDataSend** event that takes the whole dataobject as parameter:
 

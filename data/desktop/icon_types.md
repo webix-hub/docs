@@ -72,7 +72,7 @@ The value for an **icon** property is the name of the needed icon.
 
 This method of icon initialization fits the components and items that don't normally take buttons - [tabs](desktop/controls.md#tabbar) (they are buttons themselves), [panes](desktop/accordion.md), [list](desktop/list.md) 
 and [dataview](desktop/dataview.md) items, [datatable](datatable/index.md) cells.
-In this case, icon are not buttons and perform a decorative function. 
+In this case, icons are not buttons and perform a decorative function. 
 
 <img src="desktop/icon_css_pane.png">
 

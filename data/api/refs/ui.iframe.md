@@ -69,11 +69,11 @@ Check (templates)[api/refs/ui.template.md] for example. Check [iframe](desktop/i
 - api/link/ui.iframe_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.iframe_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.iframe_onrotate_event.md - occurs on screen rotating
-- api/link/ui.iframe_onswipex_event.md - 
-- api/link/ui.iframe_onswipey_event.md - 
-- api/link/ui.iframe_ontouchend_event.md - 
-- api/link/ui.iframe_ontouchmove_event.md - 
-- api/link/ui.iframe_ontouchstart_event.md - 
+- api/link/ui.iframe_onswipex_event.md - occurs on a horizontal swipe movement
+- api/link/ui.iframe_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.iframe_ontouchend_event.md - occurs when the touch event is ended
+- api/link/ui.iframe_ontouchmove_event.md - occurs during touch movement
+- api/link/ui.iframe_ontouchstart_event.md - when some webix view has been touched
 - api/link/ui.iframe_onviewresize_event.md - view size was changed by resizer
 }}
 

@@ -40,7 +40,7 @@ If a component is placed into some layout - you *need not* to call **resize** fo
 
 ### Performance tip
 
-If you set sizes for multiple components - it has sense to set sizes for all of them at first and only then call **resize()**.
+If you set sizes for multiple components,it makes sense to set sizes for all of them at first and only then call **resize()**.
 
 
 ~~~js

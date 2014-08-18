@@ -30,13 +30,13 @@ The method can be used set the component behavior in case no data is loaded into
 
 ~~~js
 webix.ui({
-	view:"list", 
-	ready:function(){
-			if (!this.count()){ //if thre're no data items
-				webix.extend(this, webix.OverlayBox);
-				this.showOverlay("<div style='margin:75px; font-size:20px;'>There is no data</div>");
-			}
+  view:"list", 
+  ready:function(){
+	if (!this.count()){ //if there are no data items
+	  webix.extend(this, webix.OverlayBox);
+	  this.showOverlay("<div style='margin:75px; font-size:20px;'>There's no data</div>");
 	}
+  }
 });
 ~~~
 

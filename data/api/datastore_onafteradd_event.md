@@ -27,6 +27,6 @@ $$('some').attachEvent("onAfterAdd", function(obj, index){
 	
 @descr:
 
-Event doesn't called for rows which are added during loading(parsing) from external file(object)
+Event doesn't get called for rows which were added during loading(parsing) from external file(object)
 
 To get id of newly added record you can use *obj.id*

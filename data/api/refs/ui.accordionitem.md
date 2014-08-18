@@ -73,11 +73,11 @@ Each accordion pane consists of the header and body. The body of a pane can be c
 - api/link/ui.accordionitem_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.accordionitem_onmouseout_event.md - fires when the mouse was moved out from the specified item
 - api/link/ui.accordionitem_onrotate_event.md - occurs on screen rotating
-- api/link/ui.accordionitem_onswipex_event.md - 
-- api/link/ui.accordionitem_onswipey_event.md - 
-- api/link/ui.accordionitem_ontouchend_event.md - 
-- api/link/ui.accordionitem_ontouchmove_event.md - 
-- api/link/ui.accordionitem_ontouchstart_event.md - 
+- api/link/ui.accordionitem_onswipex_event.md - occurs on a horizontal swipe movement
+- api/link/ui.accordionitem_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.accordionitem_ontouchend_event.md - occurs when the touch event is ended
+- api/link/ui.accordionitem_ontouchmove_event.md - occurs during touch movement
+- api/link/ui.accordionitem_ontouchstart_event.md - when some webix view has been touched
 - api/link/ui.accordionitem_onviewresize_event.md - view size was changed by resizer
 }}
 
