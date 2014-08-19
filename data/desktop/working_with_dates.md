@@ -201,7 +201,7 @@ There exists a special [datepicker](desktop/controls.md#datepicker) control that
 When you click it a popup calendar appears. On selecting the necessary date, click somewhere outside the popup
 and the date will be shown in the text field. By default, date is shown formatted as *"%Y-%m-%d"* and stored as *DateTime* object.
 
-<img src="desktop/datepicker.png">
+<img src="desktop/date_picker.png">
 
 {{sample 09_calendar/06_datepicker.html}} 
 
