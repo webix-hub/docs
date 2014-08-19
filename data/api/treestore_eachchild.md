@@ -8,6 +8,7 @@ eachChild
 - pid			string		the parent (branch) id
 - code		function	a function that needs calling for each data item
 * master		object		an object that the function is applied to (<i>this</i> by default)
+* all		boolean		if true, hidden (as well as hidden by filtering) items are iterated
 
 
 @example:

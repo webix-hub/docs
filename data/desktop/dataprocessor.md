@@ -50,13 +50,6 @@ Short Form (master, url)
 webix.dp("mylist", "some_script.php"); 
 ~~~ 
 
-The **webix.dp()** method is also used for **getting a DataProcessor object** of any component (if DataProcessor is inited for it). The object features a set of [methods and properties](api/refs/dataprocessor.md) 
-that can be used to change default processing pattern: 
-
-~~~js
-var dp = webix.dp("mylist"); //returns dataprocessor object
-~~~
-
 ####Long Form
 
 With a long form you make use of the **new** constructor where you create an object through object literals. 
@@ -73,6 +66,27 @@ dp = new webix.DataProcessor({
 ~~~
 
 {{sample 14_dataprocessor/02_list.html }}
+
+{{note
+A **long initialization form** allows for setting an **ID** for the dataprocessor. Otherwise, it is given an auto-generated one.
+}}
+
+##Getting DataProcessor Object
+
+Dataprocessor features a set of [methods and properties](api/refs/dataprocessor.md) that can be used to change default processing pattern. To make use of them, you need to get to a dataprocessor object,
+which can be achieved with the help of Webix [dp](api/_dp.html) method:
+
+-  getting a dataprocessor initialized for a component with the specified ID:
+
+~~~js
+var dp = webix.dp("mylist"); //returns dataprocessor object for "list" view
+~~~
+
+- getting a dataprocessor with the specified ID
+
+~~~js
+var dp = webix.dp.$$("mydp");
+~~~
 
 ##Data Processing Operations
 

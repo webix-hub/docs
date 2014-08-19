@@ -8,17 +8,20 @@ addCss
 @params:	
 - id	string,number	ID of the neccessary item
 - CSS class		string 		CSS class name
+* silent	boolean		if true the component is not redrawn
 
 @example:
-var menu = $$("menu1").getSubMenu(id);
-menu.addCss(id, "webix_disabled");
+//this points to a component object
+//context.target is a data item id in drag-n-drop context
+this.addCss(context.target, "my_custom_mark");
 
-@relatedsample:
-	03_menu/09_disable_item.html
+
 @relatedapi:
 	api/datamarks_removecss.md
 @related:
-	desktop/menu.md
+	desktop/dnd_drag_marker.md
+@relatedsample:
+	17_datatree/22_dnd/06_custom_marker.html
 @template:	api_method
 @descr:
 

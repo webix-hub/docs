@@ -121,6 +121,12 @@ $$("mylist").sync(films);
 
 The code above renders [list](desktop/list.md) view and fills it with data from FilmList Collection that is comprised of FirmRecord Models.
 
+The sync between data collection and the component can be as well removed by the opposite method: 
+
+~~~js
+$$("mylist").unsync(films);
+~~~
+
 ###Conclusion
 
 It should be said that the above scenario is not the only way to use Webix and Backbone together. Check the below docs for more details. 

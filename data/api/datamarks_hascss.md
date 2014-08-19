@@ -6,7 +6,7 @@ hasCss
 	
 @params:
 - id	id		item's id
-- css	string	name of css class, which need to be checked
+- css	string	name of css class that needs to be checked
 
 @returns:
 css		bool	returns true if such css class was set
