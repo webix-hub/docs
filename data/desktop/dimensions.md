@@ -26,12 +26,11 @@ webix.ui({
 	rows:[
 		{template:"row 1",height:20},
 		{template:"row 2"},
-			{cols:[
-				{id:"a1",
-				template:"column 1",
-				width:150}]
-					}]
-			}).show();
+        {cols:[
+        	{id:"a1", template:"column 1", width:150}
+        ]}
+    ]
+}).show();
 ~~~
 
 {{sample 01_layout/01_resizer.html }}
@@ -190,7 +189,7 @@ At the same time, some of them may be smaller or bigger.
 
 Webix offers “full screen” mode to make the application take all available screen space while at the same time hiding browser’s toolbars. In this mode, the app will take up the entire screen of the mobile device. 
 
-Fullscreen mode is enables with **webix.ui.fullScreen()** command before UI initialization:
+Fullscreen mode is enables with [webix.ui.fullScreen()](api/ui_fullscreen.md) command before UI initialization:
 
 ~~~js
 webix.ui.fullScreen();

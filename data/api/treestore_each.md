@@ -8,6 +8,7 @@ each
 - code		function		a function that needs calling for each data item
 * master		object		an object that the function is applied to (<i>this</i> by default)
 * pid			string		the parent node id. Used to iterate through a specific branch
+* all		boolean		if true, hidden (as well as hidden by filtering) items are iterated
 
 
 @example:

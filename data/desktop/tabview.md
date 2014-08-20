@@ -3,10 +3,7 @@ Tabview
 
 ##Overview
 
-Tabview is a hybrid component that encompasses [multiview](desktop/multiview.md) and [switching buttons](desktop/tabbar_switching.md). Tabview tabs don't differ from [tabbar](desktop/controls.md#tabbar)
-in design yet the difference between them hides in the code. 
-
-<br>
+Tabview is a **hybrid** component that is made of a [multiview](desktop/multiview.md) and [tabbar](desktop/controls.md#tabbar). It allows for quick initialization of a multiview with a built-in ability to [switch between the views](desktop/tabbar_switching.md).
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/tabview.png"/>
 
@@ -14,13 +11,12 @@ in design yet the difference between them hides in the code.
 
 ##Initialization
 
-There's no need to create either a special switching button, or separate multiview. Everything lies within one and the same view called **"tabview"** that **tabs** and **cells** properties that contains collections of tab
-button and corresponding views.
+There's no need to create a multiview and switching buttons for it. Everything lies within one and the same **"tabview"** component with **cells** property that contains 
+collections of views.
 
 {{snippet
 Tabview
 }}
-
 ~~~js
 webix.ui({
 	view:"tabview",
@@ -42,7 +38,6 @@ webix.ui({
 		}
 	]
 });
-
 ~~~
 {{sample 02_toolbar/03_tabview.html }}
 
@@ -53,8 +48,7 @@ Each tabview cell features:
 - **body** - **component** object that is placed in this cell. 
 
 {{note
-Note that unlike with [multiview and tabbar](desktop/multiview.md), there's no *multiview* parameter in the tabview constructor. Switching is enabled
-automatically. 
+Note that switching between views is enabled automatically via a [tabbar](desktop/controls.md#tabbar) control. For more customization, use a [multiview](desktop/multiview.md) component and choose the needed switching method. 
 }}
 
 ##API Reference
@@ -63,6 +57,7 @@ automatically.
 
 ###Related Articles
 
+- desktop/multiview.md
 - desktop/show_switching.md
 - desktop/tabbar_switching.md
 

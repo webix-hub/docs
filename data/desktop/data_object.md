@@ -63,24 +63,24 @@ Each data item has its ID defined in the dataset. Knowing item ID you can get to
 	</thead>
 	<tbody>
 	<tr>
-		<td style="text-align:left;"><a href="api/datastore_id.md">id (<i>object</i> )</a></td>
+		<td style="text-align:left;"><a href="api/datastore_id.md">id (<i>object</i>)</a></td>
 		<td>gets the ID of a data item</td>
 	</tr>
    	<tr>
 		<td style="text-align:left;"><a href="api/datastore_getfirstid.md">getFirstId()</a></td>
-		<td>gets the ID of the first data item (with the "zero" index);</td>
+		<td>gets the ID of the first data item (with the "zero" index)</td>
 	</tr>
     <tr>
-		<td style="text-align:left;"><a href="api/datastore_getlastid.md">getLastId( )</a></td>
+		<td style="text-align:left;"><a href="api/datastore_getlastid.md">getLastId()</a></td>
 		<td>gets the ID of the last data item</td>
 	</tr>
     <tr>
 		<td style="text-align:left;"><a href="api/datastore_getnextid.md">getNextId (<i>id</i> )</a></td>
-		<td>gets the ID of the data item that succeeds the one with the specified ID</td>
+		<td>gets the ID of a data item that succeeds the one with the specified ID</td>
 	</tr>
     <tr>
 		<td style="text-align:left;"><a href="api/datastore_getprevid.md">getPrevId (<i>id</i> )</a></td>
-		<td>gets the ID of the data item that precedes the one with the specified ID</td>
+		<td>gets the ID of a data item that precedes the one with the specified ID</td>
 	</tr>
 	<tr>
 		<td style="text-align:left;"><a href="api/datastore_getidbyindex.md">getIdByIndex (<i>index</i> )</a></td>

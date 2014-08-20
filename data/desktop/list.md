@@ -34,6 +34,7 @@ You can load data in any of the supported [data formats](desktop/data_types.md).
 - [Data Filtering and Sorting](desktop/filter_sort.md)
 - [Selection](desktop/selection.md)
 - [Paging](desktop/paging.md)
+- [Adding Active Elements to List Items](desktop/active_content.md)
 
 {{note
 Note that there's no built-in possibility to edit data with List. You should create a prototype *editlist* object beforehand.

@@ -78,15 +78,17 @@ Or an associative one:
 
 **Links in Menu Items**
 
-Each menu and submenu item can be supplied with a **link** specified in the data object by a **href** attribute:
+Each menu and submenu item can be supplied with a **link** specified in the data object by **href** and **target** (optional) attributes:
 
 ~~~js
 view:"menu",
 data:[
-	{ id:"1", value:"Imitation of Spenser", href: "#verse1"},
+	{ id:"1", value:"Imitation of Spenser", href: "#verse1", target:"_blank"},
 	{ id:"2", value:"The Human Seasons", href: "#verse2"}
 ]
 ~~~
+
+If not specified, target will be set as empty string. 
 
 {{sample 03_menu/13_hrefs.html}}
 

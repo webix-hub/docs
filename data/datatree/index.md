@@ -53,6 +53,7 @@ filtering, sorting, copying etc.
 		    </h4>
 		    <ul id="manipulations_sublist">
 				<li><a href="datatree/node_templates.md">Nodes templates</a></li>
+                <li><a href="desktop/active_content.md">Adding Active Elements to Nodes</a></li>
 				<li><a href="datatree/styling.md">Styling</a></li>
 				<li><a href="datatree/checkboxes.md">Checkboxes in Tree</a></li>
             </ul>

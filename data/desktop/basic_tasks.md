@@ -162,6 +162,7 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
             </h4>
             <ul id="thirdparty_sublist">
                     <li>helpers/top_ten_helpers.md</li>
+                    <li>desktop/webix_touch.md</li>
                     <li>helpers/ajax_operations.md</li>
                     <li>helpers/dnd.md</li>
                     <li>helpers/data_drivers.md</li>
@@ -183,6 +184,7 @@ function displaySubList(currentList){
 
 @index:
 - desktop/designing_user_interface.md
+- desktop/webix_touch.md
 - desktop/loading_and_storing_data.md
 - desktop/manipulations_with_components.md
 - desktop/item_operations.md

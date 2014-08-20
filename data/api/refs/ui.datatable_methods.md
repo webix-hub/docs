@@ -1,4 +1,3 @@
-
 Methods
 =======
 
@@ -116,7 +115,7 @@ Methods
 - api/link/ui.datatable_show.md - makes the component visible
 - api/ui.datatable_showcell.md - scrolls the table (if needed) to make the specified cell visible
 - api/ui.datatable_showcolumn.md - shows the column which was previously hidden by method 'hidecolumn'
-- api/ui.datatable_showcolumnbatch.md - 
+- api/ui.datatable_showcolumnbatch.md - shows or hides a group of columns
 - api/ui.datatable_showitem.md - 'scrolls' the table to make the specified row visible
 - api/ui.datatable_showitembyindex.md - 'scrolls' the table to make the specified row visible
 - api/ui.datatable_showoverlay.md - shows the overlay message over the body of DataTable

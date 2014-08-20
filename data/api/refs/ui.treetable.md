@@ -39,7 +39,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.treetable_callevent.md - calls an inner event
 - api/link/ui.treetable_checkall.md - check all items in tree
-- api/link/ui.treetable_checkitem.md - checks the checkbox	related to the specified item
+- api/link/ui.treetable_checkitem.md - checks the checkbox related to the specified item
 - api/link/ui.treetable_clearall.md - removes all items from the component
 - api/link/ui.treetable_clearcss.md - removes css class from all items
 - api/link/ui.treetable_clearvalidation.md - removes all validation marks from the component

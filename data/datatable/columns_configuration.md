@@ -24,7 +24,8 @@ With the help of the [columns](api/ui.datatable_columns_config.md) parameter you
 - [specify datasource for the column](#datasource);
 - [define templates for data presentation](#templates);
 - [define individual css class for any column](#styling);
-- [hide/show a column](#hidingshowingcolumns).
+- [hide/show a column](#hidingshowingcolumns);
+- [set hidden/visible columns in groups](#settinghiddenvisiblecolumnsingroups).
 
 
 Automatic Column Configuration
@@ -311,3 +312,36 @@ grid = new webix.ui({
 })
 grid.hideColumn("col4");
 ~~~
+
+Setting hidden/visible columns in groups
+---------------
+
+Datatable API allows for setting the initially visible group of columns (**visibleBatch**) as well as show any chosen column group defined by **batch** property: 
+
+~~~js
+grida = new webix.ui({
+  view:"datatable",
+  visibleBatch:1,
+  columns:[
+  	{ id:"id",	header:"#", css:"rank",  batch:2,	width:50},
+  	{ id:"title", header:"Film title", fillspace:true },
+  	{ id:"year",  batch:1,	header:"Released" , width:80},
+  	{ id:"category", header:"Category", batch:1},
+  	{ id:"votes", batch:3, header:"Votes", 	width:100},
+  	{ id:"rating", batch:3, header:"Rating", width:100},
+  	{ id:"rank", header:"Rank", css:"rank",  batch:2,width:50}
+  ]
+});
+~~~
+
+Any column group can be shown with the api/ui.datatable_showcolumnbatch.md property that takes column **batch** value as parameter:
+
+~~~js
+//show show id, rank
+grida.showColumnBatch(2);
+//show votes, rating
+grida.showColumnBatch(3);
+~~~
+
+{{sample 15_datatable/15_api/11_column_batches.html}}
+

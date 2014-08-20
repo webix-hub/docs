@@ -7,11 +7,18 @@ and include elements that will be **common** for all the items.
 Type is applicable to the following data components: 
 
 - [dataview](desktop/dataview.md);
-- [list](desktop/list.md) and its modifications:
-	- [grouplist](desktop/grouplist.md);
-    - [unitlist](desktop/unitlist.md).
+- [list](desktop/list.md);
+- [grouplist](desktop/grouplist.md);
+- [unitlist](desktop/unitlist.md).
 
-Webxi **item type** is an object that is constructed of parameters you'd like to apply to each item of the component. 
+Webix **item type** is an object that is constructed of parameters you'd like to apply to each item of the component. These parameters can be native properties of Webix components or used-defined.
+
+**Native properties** are described in the component API and may differ from component to component. They may include:
+
+- **template** - the [template of data visualization](desktop/html_templates.md) of each item;
+- **width** and **height** - width and height of each data item;
+- **css** - item styling;
+- **headerHeight** ([nitlist](desktop/unitlist.md) specific) - the height of unit headers.
 
 In the sample below it is shown how you size the dataview itself and how the dimensions of dataview cells are sized. 
 
@@ -45,7 +52,7 @@ webix.ui({
 	view: "dataview",
 	type: "typeA", //name of the new object created in the first step
 	...
-})
+});
 ~~~
 
 {{sample 06_dataview/02_templates/05_named.html }}

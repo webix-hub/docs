@@ -7,11 +7,12 @@ clearCss
 
 @params:
 - css	string	name of css class to remove
+* silent 	boolean 	if true the component is not redrawn
 
 
 @example:
 
-list.clearCss(12, "xw_checked");
+list.clearCss("xw_checked");
 
 
 @template:	api_method

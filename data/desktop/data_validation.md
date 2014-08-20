@@ -85,7 +85,6 @@ text.validate(); //validate only this text field
 ~~~
 
 
-
 ##Validation Message
 
 If any record or field fails validation, it is marked with built-in **red highlighting** (true for both in-library and HTML5 validation).
@@ -164,7 +163,15 @@ Or, you can attach a rule right in the **input constructor** as value of its **v
 view:"form", elements:[
 	{ view:"text", label:'Is a Number', validate:webix.rules.isNumber, name:"text2" },
     { view:"text", label:'Is an Email', validate:webix.rules.isEmail, name:"text3" }
-]    
+],
+elementsConfig:{
+	labelAlign:"right",
+	on:{
+		'onChange':function(newv, oldv){
+			this.validate();
+		}
+	}
+}
 ~~~
 
 {{sample 13_form/04_validation/11_per_item_validation.html }}

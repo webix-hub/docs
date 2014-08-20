@@ -8,7 +8,7 @@ each
 @params:
 - method		function		a method that needs calling for each data item
 * master		object		an object that the method is applied to ("this" by default)
-* all	boolean    if true, hidden rows are included into a loop
+* all		boolean		if true, hidden (as well as hidden by filtering) items are iterated
 
 @example:
 template:function(data){
