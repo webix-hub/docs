@@ -8,12 +8,12 @@ Standard loading will fail in this case as all browsers block all cross-domain o
 
 Nevertheless, there're technoques to overcome this problems. With Webix lib, you can use two of them:
 
-- Cross-Origin Resourse Sharing to perform types of requests;
+- Cross-Origin Resource Sharing to perform types of requests;
 - JSONP Loading for GETting data only.
 
 In both cases you cannot load data with api/link/dataloader_load.md method that data components normally use for external data. On the contrary, you issue data requests and api/link/dataloader_parse.md the returned data in callback.
 
-##Cross-Origin Resourse Sharing or CORS
+##Cross-Origin Resource Sharing or CORS
 
 CORS requires additional server configuration, namely you need to configure data server so that it allows any program from the app's domain (and hence, the app itself) to get data from it.
 
@@ -81,11 +81,11 @@ As you can see, the response data is wrapped, encoded as JSON and is sent back c
 
 [Wikipedia article about JSONP](http://en.wikipedia.org/wiki/JSONP).
 
-**Advatnages**:
+**Advantages**:
 
 JSONP works in all browsers and doesn’t require server reconfiguration.
 
-**Drwabacks**:
+**Drawbacks**:
 
 JSONP requires extra coding but is limited to work only with structured data as well as suitable only for GET requests. At the same time, it is prone to XSS attacks. It's recommended to resort to JSONP only if you need to support
 IE8 and IE9 browsers. 
