@@ -49,7 +49,7 @@ webix.ready(function(){
 To enable edit mode with other ui-related components, you should create a **prototype object** on their base and [extend](desktop/extend.md) them with editability. Then they will get the
 above mentioned functionality.
 
-For instance, to edit ui-related [list](desktop/list.md), create an editable protptyoe for it first and give it name to your taste:
+For instance, to edit ui-related [list](desktop/list.md), create an editable prototype for it first and give it name to your taste:
 
 ~~~js
 webix.protoUI({
