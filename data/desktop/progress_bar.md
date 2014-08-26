@@ -3,7 +3,7 @@ Progress Bar for Uploader
 
 Progress bar is set with **CSS means** for each file separately and is displayed in the dedicated component(e.g. [list](desktop/list.md)) set to a custom **type**. 
 
-<img src="desktop/progress_bar.png">
+<img src="desktop/progress_bar_uploader.png">
 
 {{sample 21_upload/06_progress_bar.html}}
 

@@ -99,6 +99,7 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
     	    </h4>
     	    <ul id="interactions_sublist">
                     <li>desktop/message_boxes.md</li>
+                    <li>desktop/progress.md</li>
                     <li>desktop/form_tasks.md</li>
                     <li><a href="desktop/controls_guide.md">Managing Controls in a Form</a></li>
                     <li><a href="desktop/file_upload.md">Uploading Files</a></li>

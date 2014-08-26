@@ -6,7 +6,7 @@ with the help of common methods and properties.
 
 ##Tuning Scrolling
 
-By default, components features vertical scrolling. It can be modified via the dedicated **scroll** property that may take the following values: 
+By default, component features vertical scrolling. It can be modified via the dedicated **scroll** property that may take the following values: 
 
 - "x" - sets a horizontal scrollbar;
 - "y" - sets vertical scrollbar (default);
