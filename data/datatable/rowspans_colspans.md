@@ -3,6 +3,10 @@ Datatable Rowspans and Colspans
 
 Datatable API allows for setting **rowspans** and **colspans** with the help of **span** configuration that is passed together with datatable data.
 
+{{note
+The functionality is available only in the **Webix Pro** version.
+}}
+
 <img src="desktop/rowspan_colspan.png">
 
 The data you want to display in the datatable is passed in the **data** object that contains: 

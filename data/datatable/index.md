@@ -22,6 +22,7 @@ still being  very fast handling  thousands of records.<a href="datatable/overvie
 				<li><a href="datatable/columns_configuration.md">General columns settings</a></li>
                 <li><a href="datatable/index_columns.md">Creating index columns</a></li>
 				<li><a href="datatable/headers_footers.md">Headers and footers</a></li>
+                <li><a href="datatable/rowspans_colspans.md">Colspans and rowspans</a></li>
 				<li><a href="datatable/loading_data.md">Data loading</a></li>
                 <li><a href="datatable/internationalization.md">Internationalization</a></li>
 				<li><a href="datatable/sizing.md">Sizing and resizing</a></li>
