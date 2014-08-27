@@ -214,10 +214,9 @@ The initial value is specified by the **value** property and corresponds to any 
 Collection of objects
 }}
 ~~~js
- { view:"radio", label:"Branch", value:1,
- 		options:[
-         		{ value:"Master",  id:1 }, 
-          		{ value:"Branch",  id:2 }]
+ { view:"radio", label:"Branch", value:1,options:[
+     { value:"Master",  id:1 }, 
+     { value:"Branch",  id:2 }]
 }                
                 
 ~~~
@@ -225,10 +224,9 @@ Collection of objects
 Th initial value can be set  as a **text** value of any option:
 
 ~~~js
- { view:"radio", label:"Branch", text:"Master",
- 		options:[
-         		{ value:"Master",  id:1 }, 
-          		{ value:"Branch",  id:2 }]
+ { view:"radio", label:"Branch", text:"Master",options:[
+     { value:"Master",  id:1 }, 
+     { value:"Branch",  id:2 }]
 }                
                 
 ~~~
@@ -236,6 +234,17 @@ Th initial value can be set  as a **text** value of any option:
 If both **text** and **value** properties are defined, the **text** one will be ignored. 
 
 {{sample 13_form/01_controls/04_radio.html }}
+
+**Serverside options for multiple-value controls**
+
+Such controls as [select](desktop/controls.md#select), [richselect](desktop/controls.md#richselect) and [combo](desktop/controls.md#combo)
+can get values from the serverside. The script that returns the needed data, can be defined directly in the **options** property: 
+
+~~~js
+view:"combo", options:"server/data.json"
+~~~
+
+{{sample /13_form/01_controls/11_combo_advanced.html}}
 
 
 Note that **the getValue()** method will return the **ID** of the currently selected tab/segment/option. 

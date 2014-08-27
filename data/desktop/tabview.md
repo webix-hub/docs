@@ -20,22 +20,19 @@ Tabview
 ~~~js
 webix.ui({
 	view:"tabview",
-    animate:false,
 	cells:[
 		{
 		 header:"List",
 		 body:{
 			id:"listView",
 			view:"list", ...
-			}
-		},
+		}},
         {
 		 header:"Form",
 		 body:{
 			id:"formView",
 			view:"form", ...
-			}
-		}
+		}}
 	]
 });
 ~~~
@@ -50,6 +47,120 @@ Each tabview cell features:
 {{note
 Note that switching between views is enabled automatically via a [tabbar](desktop/controls.md#tabbar) control. For more customization, use a [multiview](desktop/multiview.md) component and choose the needed switching method. 
 }}
+
+##Working with Tabview
+
+Hybrid nature of a tabview allows configuring each of its parts separately though the same-name configuration objects. Each of these objects may contain native properties of
+ [multiview](desktop/multiview.md) and [tabbar](desktop/controls.md#tabbar) that need to be redefined. If the configurations are omitted, default values will be used. 
+
+~~~js
+{ 
+	view:"tabview", 
+  	cells: [], 
+    tabbar:{
+    	...
+    }, 
+    multiview:{
+    	...
+    }
+  
+} 
+~~~
+
+###Enabling animation
+
+By defauls the switching of tabview tabs is not animated. Since animation is a [multiview](desktop/multiview.md) feature, it can be enabled within **multiview** configuration. 
+
+~~~js
+view:"taview",
+cells:[],
+multiview:{
+    animate:true
+}
+~~~
+
+The **animate** property may take an object with [advanced animation settings](desktop/animation.md). 
+
+###Setting icons for tabs
+
+<img src="desktop/tabs_icons.png"/>
+
+Icons for the tabbar tabs are set via additional HTML in the tab **header**:
+
+~~~js
+view:"tabview",
+cells:[
+	{ header:"<span class='webix_icon fa-film'></span>List",
+	  body:{}
+    }
+ ]   
+~~~
+
+{{sample 20_multiview/05_tabbar_with_icons.html}}
+
+More about different types of defining icons in Webix you can learn in the desktop/icon_types.md article.
+
+###Defining tabs that can be closed
+
+Closing functionality is a [tabbar](desktop/controls.md#tabbar) feature. 
+
+<img src="desktop/tabs_closable.png"/>
+
+To make all tabs closable, **close** property should be set to *true* in the **tabbar** configuration: 
+
+~~~js
+view:"tabview",
+tabbar:{
+	close:true
+}
+~~~
+
+To make a separate tab closable, use the **close** proerty in its configuration: 
+
+~~~js
+view:"tabview",
+cells:[
+	{ header:"List",
+      close:true
+	  body:{}
+    }
+ ] 
+~~~
+
+{{sample 20_multiview/11_close_button.html}}
+
+###Responsive tabbar
+
+Tabbar default feature. If the tabs are wider than the available space, some of them are pushed to a popup list and can be reached though the related menu. 
+
+<img src="desktop/responsive_tabbar.png">
+
+Everything is done fully automatically, though customization options for tab and popup width, icons, etc. are available through the **tabbar** configuration: 
+
+~~~js
+view:"tabview",
+tabbar:{
+	popupWidth:300, 
+    tabMinWidth:120
+}
+~~~
+
+Study the topic in detail in the dedicated [documentation article](desktop/responsive_tabbar.md). 
+
+###Adjusting tab dimensions
+
+If tabs are of different width and height, they usually take the size of the smallest tab once the user switches to it. 
+
+To avoid this behavior, you should use the **fitBiggest** property in the **multiview** configuration object: 
+
+~~~js
+view:"tabview", 
+multiview:{ 
+	fitBiggest:true 
+}
+~~~
+
+{{sample 20_multiview/09_fit_biggest.html}}
 
 ##API Reference
 

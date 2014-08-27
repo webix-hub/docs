@@ -14,10 +14,7 @@ Multiview uses **slide:"together"** animation type by default.
 Animation can be **switched off**:
 
 ~~~js
-{view:"multiview",
- animate:false,
- ...
- }
+{view:"multiview", animate:false }
 ~~~
 
 **Enabling Animation**
@@ -27,13 +24,13 @@ Animation can be **switched off**:
 
 ~~~js
 webix.ui({
-        view:"multiview",
-        animate:
-        	{type:"flip", 
-             subtype:"vertical"},
-        cells:[{ ... }]
-        
-})
+   view:"multiview",
+   animate:{
+   	  type:"flip", 
+      subtype:"vertical"
+   },
+   cells:[]   
+});
 ~~~
 
 2 . The values for **animate** property can be assigned directly out of the multiview constructor. If some values have already been defined with the help of 
@@ -50,8 +47,6 @@ $$("multi").config.animate.subtype = "vertical";
 ~~~js
  $$(id).show({type:"flip", subtype:"horizontal"}) 
 ~~~
-
-
 
 {{sample 80_docs/multiview_animation.html }}
 

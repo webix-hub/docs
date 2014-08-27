@@ -16,9 +16,10 @@ Webix **item type** is an object that is constructed of parameters you'd like to
 **Native properties** are described in the component API and may differ from component to component. They may include:
 
 - **template** - the [template of data visualization](desktop/html_templates.md) of each item;
+- **templateStart** and **templateEnd** - wrappers for each data item, are not redefined, as a rule. [More Info](#redefiningdefaulttemplateelements).
 - **width** and **height** - width and height of each data item;
 - **css** - item styling;
-- **headerHeight** ([nitlist](desktop/unitlist.md) specific) - the height of unit headers.
+- **headerHeight** ([unitlist](desktop/unitlist.md) specific) - the height of unit headers.
 
 In the sample below it is shown how you size the dataview itself and how the dimensions of dataview cells are sized. 
 
@@ -92,8 +93,37 @@ webix.ui({
 });    
 ~~~
 
+{{sample 05_list/17_advanced_template.html}}
+
 The **type** function takes item object as parameter, so all its properties are accessible in it. 
 
+##Redefining default template elements
+
+You can completely change the component's look and feel inside the **type** by altering HTML for the items. Type properties subject to altering are as follows: 
+
+- **template** - standard item template, can be used outside the **type** configuration with the same result. Includes data properties in #hash# signs and optionally, HTML content;
+- **templateStart** - container element for data item, wraps the elements defined by **template**. Opening element;
+- **templateEnd** - closing element for **templateStart**.
+
+In other words, each data item HTML content includes *templateStart - template - templateEnd*. TemplateStart and templateEnd are not normally changed, but still the possibility exists. 
+
+This is how standard [list](desktop/list.md) can be redefined: 
+
+<img src="desktop/list_template.png"/>
+
+~~~js
+webix.ui({
+   view:"list",      
+   type:{
+      templateStart:"<div item_id='id' class='custom_item'>",
+      template:"#rank#. #title#<br><div style='text-align:right;'>#year#</div>",
+      templateEnd:"</div>"
+   }
+});
+~~~
+
 {{sample 05_list/17_advanced_template.html}}
+
+
 
 @complexity:2
