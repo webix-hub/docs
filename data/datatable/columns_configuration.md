@@ -25,7 +25,8 @@ With the help of the [columns](api/ui.datatable_columns_config.md) parameter you
 - [define templates for data presentation](#templates);
 - [define individual css class for any column](#styling);
 - [hide/show a column](#hidingshowingcolumns);
-- [set hidden/visible columns in groups](#settinghiddenvisiblecolumnsingroups).
+- [set hidden/visible columns in groups](#settinghiddenvisiblecolumnsingroups);
+- [define colspans and rowspans](#settingcolspansrowspans);
 
 
 Automatic Column Configuration
@@ -344,4 +345,29 @@ grida.showColumnBatch(3);
 ~~~
 
 {{sample 15_datatable/15_api/11_column_batches.html}}
+
+
+Setting Colspans/Rowspans
+------------------------------
+
+Datatable allows for defining colspans and rowspans by **span** configuration provided with the dataset within the **data** property of the grid.
+
+Each rowspan/colspan definition consists of the **row id**, **column id**, **width** and **height** of the span, **value** to display and **css** class to apply:
+
+~~~js
+grida = new webix.ui({
+	view:"datatable",
+    columns:[...],
+    data:{
+    	data:grid_data,
+        spans:[ 
+        	[1, "title", 3]
+        ]
+    }
+});
+~~~
+
+{{sample 60_pro/01_datatable/01_colspans.html}}
+
+To learn more on this topic, please visit the [Datatable Rowspans and Colspans](datatable/rowspans_colspans.md) article.
 

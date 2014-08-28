@@ -46,6 +46,10 @@ webix.ui({
 });
 ~~~
 
+##Working with Multiview
+
+###Adjusting tab dimensions
+
 The **dimensions** of multiview cells are adjusted to their content. By default, the whole multiview (all the cells) take the size of smallest cell. To adjust it to the biggest cell, use **fitBiggest** property:
 
 ~~~js
@@ -56,7 +60,23 @@ webix.ui({
 });
 ~~~
 
-###Switching between Views
+###Managing animation
+
+My default multiview cells are switched with horizontal animation of a "slide" type. To disabled animation, or chnge animation type, configure the **animate** property: 
+
+~~~js
+webix.ui({
+	view:"multiview", 
+	cells:[],
+    animate:false
+});
+~~~
+
+{{sample 20_multiview/07_no_animation.html }}
+
+Learn more about animation types in the desktop/animation.md article.
+
+###Switching between views
 
 1 . **[Tabbar and Segmented Integral Buttons](desktop/tabbar_switching.md).**
 
@@ -74,21 +94,6 @@ Here you use common methods (**show and back**) and create custom buttons each o
 ###History API
 
 Learn how to "memorize" the currenty opened tab in the [related article](desktop/history_track.md). 
-
-###MultiView Events 
-
-- **onViewChange** - fires each time current cell changes for another one, regardless of switching pattern. 
-
-~~~js
-{	
-	view:"multiview",
- 	cells:[...], 
- 	on:{ 
- 		onViewChange :function(prevID,nextID){
-    		...} 
- 	} 
-}
-~~~
 
 ###API Reference 
 

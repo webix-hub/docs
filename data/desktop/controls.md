@@ -152,10 +152,14 @@ Combo Initialization
 
 //full form
 { view:"combo", id:'field_t', label: 'Combo', value:"1", yCount:"3", 
-	options:[	{id:1, value:"One"}, 
-                {id:2, value:"Two"}, 
-                {id:3, value:"Three"}
-             ]}
+	options:[	
+    {id:1, value:"One"}, 
+    {id:2, value:"Two"}, 
+    {id:3, value:"Three"}
+]}
+
+//server options
+{ view:"combo", options:"server/data.json"}
 ~~~
 
 ####Main properties
@@ -165,7 +169,7 @@ Combo Initialization
  	- within Combo constructor it defines the initially selected item of the control (**option ID** in case of a full form, **option text** in case of a short form);
 - **placeholder** (string) - defines placeholder for combo input. The control should be inited without an initial value;       
 - **yCount** (number) - the number of lines in a popup;
-- **options** (array, object) - sets the options to choose from;
+- **options** (array, object, string) - sets the options to choose from;
 - **label** (string) - text label of a control. It can be customized by:
 	- **labelAlign** (string) - label alignment towards its container. Possible values are "left" and "right".  In any way, it's placed left to the control; 
     - **labelWidth** (number) - width of the label container.
@@ -423,7 +427,7 @@ Radio Initialization
 	- within **options** array it sets titles of radiobuttons;
  	- within Radio constructor it defines the initially selected radiobutton;
 - **id** (string, number) - used with the radio block as well as with each of its items;
-- **options** (array, object) - defines the set of items to select from. 
+- **options** (array, object) - defines the set of items to select from. [Details](desktop/controls_guide.md#defininginitialvalues).
 - **label** (string) - text label of a control. It can be customized by:
 	- **labelAlign** (string) - label alignment towards its container. Possible values are "left" and "right".  In any way, it's placed left to the control; 
     - **labelWidth** (number) - width of the label container; 
@@ -458,11 +462,15 @@ Richselect Initialization
     value:1, yCount:"3", options:[ 
 		{id:1, value:"One"}, // the initially selected item
 		{id:2, value:"Two"}, 
-		{id:3, value:"Three"}]
+		{id:3, value:"Three"}
+    ]
 }
 ...   
 //short  form for options array
 {view:"richselect", options:["One", "Two", "Three"]}
+
+//server options
+{ view:"richselect", options:"server/data.json"}
 ~~~
 
 Visually, the **richselect** control consists of a [text input](#text) and [popup window](desktop/popup.md) that contains a standard [list](desktop/list.md) of options in its body. 
@@ -478,7 +486,7 @@ Another possibility to create a component with a similar functionality is [attac
 - **label** (string) - text label of a control. It can be customized by:
 	- **labelAlign** (string) - label alignment towards its container. Possible values are "left" and "right".  In any way, it's placed left to the control; 
     - **labelWidth** (number) - width of the label container; 
-- **options** (array, object) - sets the options to choose from in a long or short form. 
+- **options** (array, object, string) - sets the options to choose from in a long or short form. [Details](desktop/controls_guide.md#defininginitialvalues).
 
 ####Advanced Richselect configuration 
 
@@ -548,6 +556,9 @@ Select Initialization
 
 //short form 
 { view:"select", options:["Master", "Release"]}
+
+//server options
+{ view:"select", options:"server/data.json"}
 ~~~
 
 ####Main properties
@@ -555,7 +566,7 @@ Select Initialization
 - **label** (string) - text label of a control. It can be customized by:
 	- **labelAlign** (string) - label alignment towards its container. Possible values are "left" and "right".  In any way, it's placed left to the control; 
     - **labelWidth** (number) - width of the label container; 
-- **options** (array, object) - defines a set of items to select from;
+- **options** (array, object, string) - defines a set of items to select from;
 - **value** (string, number) 
 	- within **options** array it sets text values for select items;
  	- within Select constructor it defines the initially selected item of the control (**option ID** in case of a full form, **option text** in case of a long form);
@@ -606,7 +617,7 @@ Segmented Initialization
 ####Main properties
 
 - **multiview** (boolean) - connects the control to the multiview cells, enables switching between these cells;
-- **options** (array, object) - defines the buttons (segments) within the control. [Details](desktop/controls_guide.md);
+- **options** (array, object) - defines the buttons (segments) within the control. [Details](desktop/controls_guide.md#defininginitialvalues);
 - **value** (string, number) 
 	- within **options** array it sets titles for button segments;
  	- within Segmented constructor it defines the initially selected item for the control;
@@ -716,21 +727,61 @@ images and icons.
 Tabbar Initialization
 }}
 ~~~js
-{view:"tabbar", id:'tabbar', value: 'listView', multiview:true, options: [
-	{ value: 'List', id: 'listView'},
-    { value: 'Form', id: 'formView'},
-    { value: 'Empty', id: 'emptyView'}]
-}
+rows:[
+	{view:"tabbar", id:'tabbar', value: 'listView', multiview:true, options: [
+		{ value: 'List', id: 'listView'},
+    	{ value: 'Form', id: 'formView'},
+    	{ value: 'Empty', id: 'emptyView'}]
+	},
+	//and then goes multiview
+	{cells:[...]}
+]    
 ~~~
 
 ####Main properties
 
 - **multiview** (boolean)- if *true*, it links tabs to multiview cells; 
-- **options** (array, object) - defines buttons for switching between views. [Details](desktop/controls_guide.md);
+- **options** (array, object) - defines buttons for switching between views. [Details](desktop/controls_guide.md#defininginitialvalues);
 - **value** (string) - 
 	- within **options** array it sets titles for tabs;
     - within Tabbar constructor it defines the tab that will be shown initially on page loading.
-- **type** (string) - if set to "bottom", the tabbar gets other styling and is placed below the multiview area;
+- **type** (string) - if set to "bottom", the tabbar gets other styling, more suitable for tabs placed under the multiview. It can be done by changing the order of layout rows;
+- **close** (boolean) - if *true*, the "close" functionality for each tab is provided. Each tab can be closed by clicking a dedicated icon on it. 
+
+**Defining tabs that can be closed**
+
+<img src="desktop/tabs_closable.png"/>
+
+Tabs featuring a **close** property in tabbar **options** array gain the functionality:
+
+~~~js
+//all tabs can be closed
+{view:"tabbar", close:true, options:[...]}
+
+//only "Tab1" can be closed
+{view:"tabbar", options:[
+	{id:1, value:"Tab1", close:true},
+    {id:1, value:"Tab2"}
+]}
+~~~
+
+{{sample 20_multiview/11_close_button.html}}
+
+**Defining Icons for the tabs**
+
+<img src="desktop/tabs_icons.png"/>
+
+Icons are defined through additional HTML provided within the tab **value**: 
+
+~~~js
+ { view:"tabbar", options: [
+	{ value: "<span class='webix_icon fa-film'></span>List", id: 'listView' }
+ ]}   
+~~~
+
+{{sample 20_multiview/05_tabbar_with_icons.html}}
+
+More about different types of defining icons in Webix you can learn in the desktop/icon_types.md article.
 
 ####Advanced Tabbar Usage
 

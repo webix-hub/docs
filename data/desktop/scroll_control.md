@@ -1,12 +1,19 @@
 Scroll Control
 =============
 
-Although the Webix library features a separate component called [scrollview](desktop/scrollview.md), its data-containing components are supplied with a scrollbar (both vertical and horizontal ones). Scrolling is then controlled 
-with the help of common methods and properties. 
+Webix provides extensive scrolling management tools. 
+
+- Firstly, Webix components are supplied with **vertical** and **horizontal scrollbars** that can be shown and hidden programmatically;
+- Secondly, scrolling in the application can be controlled with the help of **common methods** and **properties**;
+- Thirdly, Webix library features a separate component called **[scrollview](desktop/scrollview.md)**, a container view with scrollbars for placing any content there (plain text, HTML, Webix views);
+
+{{note
+By default, Webix uses **native** browser scrollbars. In **Webix Pro** version custom [Webix-made scrollbars](#webixcustomscroll) are available.
+}}
 
 ##Tuning Scrolling
 
-By default, components features vertical scrolling. It can be modified via the dedicated **scroll** property that may take the following values: 
+By default, component features vertical scrolling. It can be modified via the dedicated **scroll** property that may take the following values: 
 
 - "x" - sets a horizontal scrollbar;
 - "y" - sets vertical scrollbar (default);
@@ -116,6 +123,43 @@ Scroll position can be derived with the **getScrollState()** method to learn the
 var scPos = $$("mylist").getScrollState(); // returns data as ({x:30,y:200})
 var posx = scPos.x; // 30
 var posy = scPos.y; // 200
+~~~
+
+##Webix Custom Scroll
+
+**Webix Pro** version offers custom scrollbars to replace native browser ones. The advantages are as follows: 
+
+- semi-transparent thin grey bars feature neat design;
+- the bars are initially and hidden appear only when scrolling movement is detected on the page (provided scrolling is enabled). 
+
+<img src="desktop/customscroll.png"/>
+
+{{sample 60_pro/03_api/01_customscroll.html}}
+
+The feature is provided in a separate **CustomScroll** module and the file should be included before use: 
+
+{{snippet
+Including CustomScroll in addition to Webix
+}}
+~~~html
+<!--provide relative path as in your machine-->
+<script src="codebase/ui/customscroll.js" type="text/javascript" charset="utf-8">
+</script>
+~~~
+
+In addition, you need to **enable the CustomScroll** for your application. Make sure you wrap everything into a **webix.ready()** function that is executed after page loading:
+
+~~~js
+webix.ready(function(){
+	//enabling CustomScroll
+	if (!webix.env.touch && webix.ui.scrollSize)
+   		webix.CustomScroll.init();
+        
+    //your webix app
+    webix.ui({
+    	...
+    });
+});
 ~~~
 
 @complexity:2
