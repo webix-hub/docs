@@ -22,8 +22,8 @@ At the same time, components can be initialized not only by literal notation, bu
 
 ##Initializing from Markup
 
-XML and HTML markup initialization can totally replace JSON configuration for people more used to working with markup languages. It has simpler syntax so you are less likely to get lost among 
-brakets and commas. Such functionality can be useful when you code the page with the help of server scripts since it's easier to get XML (HTML) data  from them than JSON. 
+XML and HTML markup initialization can totally replace JSON configuration for people who are more used to working with markup languages. It has simpler syntax so you are less likely to get lost among 
+brackets and commas. Such functionality can be useful when you code the page with the help of server scripts since it's easier to get XML (HTML) data  from them than JSON. 
 
 In general, the markup can be taken from:
 
