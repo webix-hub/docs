@@ -194,7 +194,7 @@ Controls are mainly responsible for handling events since they enable user-app i
 
 <div class="controls_group">
 	<ul>
-        <li><a href="desktop/controls.md#imagebutton"><img src="api/toc/slider.png"/> Slider </a></li>
+        <li><a href="desktop/controls.md#slider"><img src="api/toc/slider.png"/> Slider </a></li>
 		<li><a href="desktop/suggest.md"><img src="api/toc/suggest.png"/> Suggest list</a></li>
 		<li><a href="desktop/controls.md#tabbar"><img src="api/toc/tabbar.png"/> Tabbar</a></li>
 		<li><a href="desktop/controls.md#text"><img src="api/toc/text.png"/> Text</a></li>

@@ -141,7 +141,7 @@ $group:"year"
 
 $group: function(obj){ return obj.year;}
 
-$group:{ by:"year }
+$group:{ by:"year" }
 
 $group:{
 	by: function(obj){ return obj.year }

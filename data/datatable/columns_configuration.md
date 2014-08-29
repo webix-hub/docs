@@ -350,7 +350,11 @@ grida.showColumnBatch(3);
 Setting Colspans/Rowspans
 ------------------------------
 
-Datatable allows for defining colspans and rowspans by **span** configuration provided with the dataset within the **data** property of the grid.
+{{note
+The feature is available in **Webix Pro** version only.
+}}
+
+Datatable allows defining colspans and rowspans by **span** configuration provided with the dataset within the **data** property of the grid.
 
 Each rowspan/colspan definition consists of the **row id**, **column id**, **width** and **height** of the span, **value** to display and **css** class to apply:
 

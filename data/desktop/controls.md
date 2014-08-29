@@ -400,7 +400,37 @@ Label control can be used to render any user HTML or icons (as well as built-in 
 [Controls Common Functionality](desktop/controls_guide.md)
 
 [API Reference](api__refs__ui.label.html)
-    
+
+##Multitext 
+
+{{note
+The control is available only in **Webix Pro** version. 
+}}
+
+<img src="desktop/multitext.png"/>
+
+{{sample 60_pro/02_form/01_text.html}}
+
+UI-related multitext is a dynamic control based on standard Webix [text](#text) input. It offers users the possibility to add and delete additional fields on the go. 
+
+{{snippet
+Multitext initialization
+}}
+~~~js
+{ view:"multitext", value:'dummy@email.com, mirror@email.com', label:"Email" }
+~~~
+
+####Main properties
+
+- **value** (string) - the initial value to display in the input field. The string parts separated by a comma (",") will be put to additional input fields);  
+- **label** (string) - text label of a control. It can be customized by:
+	- **labelAlign** (string) - label alignment towards its container. Possible values are "left" and "right".  In any way, it's placed left to the control; 
+    - **labelWidth** (number) - width of the label container; 
+    - **labelPosition** (string) - defines label position related to the input field. The only possible value is "top";
+- **placeholder** (string) - the initial text in the text field, disappears as you start typing in it.
+
+[Controls Common Functionality](desktop/controls_guide.md)
+
 ##Radio {#radio}
 
 <img src="desktop/radio.png"/>
@@ -815,6 +845,7 @@ Text Initialization
 - **label** (string) - text label of a control. It can be customized by:
 	- **labelAlign** (string) - label alignment towards its container. Possible values are "left" and "right".  In any way, it's placed left to the control; 
     - **labelWidth** (number) - width of the label container; 
+    - **labelPosition** (string) - defines label position related to the input field. The only possible value is "top";
 - **type** (string)- type of a text field, can be  either "text" by default, or "password" or "email". Type is vital for [HTML5 input data validation](desktop/data_validation.md#html5).
 - **placeholder** (string) - the initial text in the text field, disappears as you start typing in it;
 - **suggest** (array, string) - collection of suggest values, or the ID of an attached [suggest list](desktop/suggest.md) with these values. 

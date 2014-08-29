@@ -127,7 +127,11 @@ var posy = scPos.y; // 200
 
 ##Webix Custom Scroll
 
-**Webix Pro** version offers custom scrollbars to replace native browser ones. The advantages are as follows: 
+{{note
+The feature is available in **Webix Pro** version only. 
+}}
+
+Webix offers custom scrollbars to replace native browser ones. The advantages are as follows: 
 
 - semi-transparent thin grey bars feature neat design;
 - the bars are initially and hidden appear only when scrolling movement is detected on the page (provided scrolling is enabled). 

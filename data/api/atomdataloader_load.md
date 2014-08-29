@@ -11,7 +11,8 @@ load
 * type		string		the type of data to load: 'json' (default), 'xml', 'jsarray', 'csv'
 * callback		function		the callback function
 
-
+@returns: 
+promise	 object		"promise" object
 @related:
 	desktop/data_loading.md
 @relatedapi:
@@ -71,6 +72,15 @@ The callback function takes 3 parameters:
 1. The text of the response
 2. The xml object of the response - presented only if the response was valid xml
 3. The row http request object
+
+###Return Value
+
+The method returns a [promise](http://promisesaplus.com/) object than contains the eventual result of an Ajax request. 
+
+More information on Webix and Promiz.js usage can be found at: 
+
+- desktop/data_loading.md#promiseapiindataloading
+- helpers/ajax_operations.md#promiseapiforajaxrequests
 
 ###Error handlers
 The callback can be defined as a combination of **error** and **success** functions (if you need you can use just one of these functions).

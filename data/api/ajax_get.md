@@ -10,7 +10,7 @@ get
 
 
 @returns:
-- xhr		object		an xmlHttpRequest object
+- promise		object		data "promise" object
 
 
 @example:
@@ -26,8 +26,19 @@ webix.ajax().get("data.php", { filter : "123" }, function(text, xml, xhr){
 @template:	api_method
 @descr:
 
+###Callback
+
 The callback function takes 3 parameters:
 
 - **text** - the full text of the response
 - **xml** - the response parsed as xml, if applicable
 - **xhr** - an xmlHttpRequest object
+
+###Return value
+
+The method returns a [promise](http://promisesaplus.com/) object than contains the eventual result of an Ajax request. 
+
+More information on Webix and Promiz.js usage can be found at: 
+
+- desktop/data_loading.md#promiseapiindataloading
+- helpers/ajax_operations.md#promiseapiforajaxrequests

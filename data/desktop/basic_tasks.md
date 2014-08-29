@@ -31,6 +31,7 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
                     <li>desktop/serverside.md</li>
                     <li>desktop/data_binding.md</li>
                     <li>desktop/update.md</li>
+                    <li>helpers/ajax_operations.md</li>
             </ul>
         </td>
 		<td class='topic_description' onclick="displaySubList(event,'data')">Learns you how to load data into a component using different data sources, formats and techniques.</td>
@@ -164,7 +165,6 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
             <ul id="thirdparty_sublist">
                     <li>helpers/top_ten_helpers.md</li>
                     <li>desktop/webix_touch.md</li>
-                    <li>helpers/ajax_operations.md</li>
                     <li>helpers/dnd.md</li>
                     <li>helpers/data_drivers.md</li>
                     <li>helpers/number_formatting_methods.md</li>

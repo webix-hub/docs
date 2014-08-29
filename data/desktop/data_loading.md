@@ -8,7 +8,7 @@ There we have two major possibilities that are true for all the data components.
 - [Loading from External Resourse - File or Database](#file)
 - [Parsing from String](#parse)
 
-After data has been pushed to component (loaded or parsed) it should be rendered within the component width the help of [Webix templates](desktop/html_templates.md). 
+After data has been pushed to component (loaded or parsed) it should be rendered within the component with the help of [Webix templates](desktop/html_templates.md). 
 
 ##Loading from External Resourse
 
@@ -238,7 +238,7 @@ Data Parsing from XML string
 webix.ui({
 	view:"dataview",
     id:"dataview",
-    datatype:"xml",
+    datatype:"xml"
 });
         
  //function is executed on pre-defined event, e.g. on button click
@@ -246,7 +246,7 @@ webix.ui({
 function parse(){ 
      var str = "<data>
      		<item id='10'><title>The Lord of the Rings</title> 
-    		<year>2003</year><rank>10</rank></item>";
+    		<year>2003</year><rank>10</rank></item>
 		</data>";
      $$("dataview").clearAll();
      $$("dataview").parse(str,"xml");
@@ -275,6 +275,64 @@ dtable.attachEvent("onParse", function(driver, data){
     webix.message("Count of records "+data.length);
 });
 ~~~
+
+##Promise API in Data Loading
+
+Webix is integrated with [Promiz.js](http://promisesaplus.com/) library to treat the result of asynchronous operations (like data loading) without callbacks. 
+
+It means that any Ajax request returns a **promise** object than can be treated with [Promiz.js API](https://github.com/zolmeister/promiz). 
+
+{{snippet
+"Promise" objects is returned by either of these methods
+}}
+~~~js
+var promise = grid.load("my.php");
+var promise = webix.ajax("my.php");
+var promise = webix.ajax().get("my.php");
+var promise = webix.ajax().post("my.php");
+~~~
+
+####Bonuses
+
+1 .You may forget about callbacks and process the result of a request in [Promiz.js](https://github.com/zolmeister/promiz) way:
+
+~~~js
+promise.then(function(realdata){
+    //success
+}).fail(function(err){
+    //error
+});
+~~~
+
+2 .You can "parse" **promise** objects directly into the component:
+
+~~~js
+list.parse( webix.ajax("my.php"));
+~~~
+
+The data will be parsed the moment it comes from server.
+
+3 . You can make use of **waitData** property each data component is supplied with and apply Promiz.js methods to it: 
+
+~~~js
+//"promise" approach
+grid.waitData.then(function(){
+	//when we have data - do some actions
+});
+~~~
+
+Alternatively,  Webix api/link/dataloader_onafterload_event.md event can be used: 
+
+
+~~~js
+//standard approach
+grid.attachEvent("onAfterLoad", function(){
+	//when we have data - do some actions
+});
+~~~
+
+More about [Webix and Promiz.js integration](helpers/ajax_operations.md#promiseapiforajaxrequests).
+
 
 @index:
   - desktop/data_types.md

@@ -1,7 +1,7 @@
 Ajax operations
 ==================
 
-Sending data
+Sending Data
 ------------ 
 
 Simplest ajax call can be done as
@@ -140,7 +140,7 @@ webix.ajax().header({
 ~~~
 
 
-Incoming data parsing 
+Incoming Data Parsing 
 ---------------------
 
 #### Plain response
@@ -215,6 +215,88 @@ If all above is not enough you can access raw xmlHttpRequest and poll it for add
 ~~~js
 webix.ajax.get("some.php", function(text,xml, ajax){
 	alert(ajax.status);
+});
+~~~
+
+Promise API for Ajax requests
+------------------------
+
+Webix is intergated with the [Promiz.js](http://promisesaplus.com/) library, which allows treating the result of asynchronous operations without callbacks. 
+
+In other words, any Ajax request performed by Webix returns a **promise** object that represents the eventual result of this request and can be treated by **then()** method that is 
+automatically executed when server response arrives.
+
+~~~js
+//"promise" object is returned by either of these methods
+var promise = webix.ajax("some.php");
+var promise = webix.ajax().get("some.php");
+var promise = webix.ajax().post("some.php");
+
+//realdata - data that came from server
+promise.then(function(realdata){
+	...
+});
+~~~
+
+See how it is implemented in [Webix data loading](desktop/data_loading.md#promiseapiindataloading) pattern.
+
+####Forming a chain of requests with Promises
+
+~~~js
+webix.ajax("someA.php").then(function(realdataA){
+	return webix.ajax("someB.php");
+}).then(function(realdataB){
+	return webix.ajax("someC.php")
+}).then(function(realdataC){
+	...
+});
+~~~
+
+####Error handling with Promise objects
+
+**then()** method can be used to treat errors: 
+
+~~~js
+var promise = webix.ajax("some.php")
+promise.then(function success(realdata){}, function error(err){});
+~~~
+
+Additionally,  **fail()** method can be used for error handling: 
+
+~~~js
+var promise = webix.ajax("a.php");
+...
+promise.then(function(realdata){ /*success*/});
+promise.fail(function(err){/*error*/});
+~~~
+
+Or, you can do it in one and the same function: 
+
+~~~js
+promise.then(function(realdata){
+	//success
+}).fail(function(err){
+	//error
+});
+~~~
+
+All the **methods of the promise object** come from the **Promiz.js** lib and can be found [there](https://github.com/zolmeister/promiz). 
+
+####webix.promise interface
+
+Webix offers an interface for working with promise objects - **webix.promise** - featuring a set of methods that duplicate 
+[Promise object methods](https://github.com/zolmeister/promiz).
+
+It can be used, for instance, to treat several Ajax requests and perform action when callbacks have been received from all of them:
+
+~~~js
+a = webix.ajax("someA.php");
+b = webix.ajax("someB.php");
+c = webix.ajax("someC.php");
+
+
+webix.promise.all(a,b,c).then(function(a,b,c){
+	...
 });
 ~~~
 
