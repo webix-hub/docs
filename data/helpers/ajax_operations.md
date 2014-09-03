@@ -25,7 +25,7 @@ webix.ajax("some.php?action=info&id=123");
 or by using separate object 
 
 ~~~js
-webix.ajax("some.php",{ action:"info", id:123 });
+webix.ajax().get("some.php",{ action:"info", id:123 });
 ~~~
 
 in case of object notation, lib will escape values automatically. 
@@ -102,7 +102,7 @@ webix.ajax("some.php",{
 If you need to trigger multiple callbacks after method finishing, you can define an array of callbacks as last parameter
 
 ~~~js
-webix.ajax.get("some.php", [callback1, callback2]);
+webix.ajax().get("some.php", [callback1, callback2]);
 ~~~
 
 
@@ -111,7 +111,7 @@ In some case you may need to provide some extra data for callback, it can be don
 function after_call(text){
 	 alert("Call: "+this.data+", response: "+text);
 };
-webix.ajax.get("some.php", after_call, { data:"my ajax"});
+webix.ajax().get("some.php", after_call, { data:"my ajax"});
 ~~~
 Basically, the parameter after callback will be accessible as "this" in the callback method
 
@@ -158,7 +158,7 @@ webix.ajax("./data.php", function(text){
 While you can use the above code to access raw text response, there is a more neat solution
 
 ~~~js
-webix.ajax.get("some.php", function(text,data){
+webix.ajax("some.php", function(text,data){
 	//text = '{ some :"abc"}'
 	alert(data.json().some); //abc
 });
@@ -171,7 +171,7 @@ the second parameter of response can provide you with a ready-to-use json object
 Same as above, you can use
 
 ~~~js
-webix.ajax.get("some.php", function(text,xml){
+webix.ajax("some.php", function(text,xml){
 	//text = '<data some='abc'></data>'
 	alert(obj.xml().some); //abc
 });
@@ -184,7 +184,7 @@ if necessary you can access raw xml object by using  data.rawxml();
 
 {{snippet CVS }}
 ~~~js
-webix.ajax.get("some.php", function(text,xml){
+webix.ajax("some.php", function(text,xml){
 	var obj = webix.DataDriver.csv.toObject(text,xml);
 	alert(obj[0][0]); //row and column indexes
 });
@@ -192,7 +192,7 @@ webix.ajax.get("some.php", function(text,xml){
 
 {{snippet JSArray }}
 ~~~js
-webix.ajax.get("some.php", function(text,xml){
+webix.ajax("some.php", function(text,xml){
 	var obj = webix.DataDriver.jsarray.toObject(text,xml);
 	alert(obj[0][0]); //row and column indexes
 });
@@ -201,7 +201,7 @@ webix.ajax.get("some.php", function(text,xml){
 
 {{snippet HTML}}
 ~~~js
-webix.ajax.get("some.php", function(text,xml){
+webix.ajax("some.php", function(text,xml){
 	//text = '<ul><li some='abc'></ul>'
 	var obj = webix.DataDriver.html.toObject(text,xml);
 	alert(obj[0].some); //abc
@@ -213,7 +213,7 @@ webix.ajax.get("some.php", function(text,xml){
 If all above is not enough you can access raw xmlHttpRequest and poll it for additional data
 
 ~~~js
-webix.ajax.get("some.php", function(text,xml, ajax){
+webix.ajax("some.php", function(text,xml, ajax){
 	alert(ajax.status);
 });
 ~~~
