@@ -66,6 +66,28 @@ webix.ui({
 }
 ~~~
 
+3 . The **same-name property** of JS [combo](desktop/controls.md#combo) and [richselect](desktop/controls.md#richselect) and take extensive configuration:
+
+~~~js
+webix.ui({
+	view:"richselect", suggest:{
+    	data:[
+        	{id:1, value:"One"},
+        	{id:2, value:"Two"} //options list
+        ],
+        ready: function(){
+        	$$("richselect_1").setValue(this.getFirstId()); //defines the initially visible option
+        }
+    }
+});
+
+~~~
+{{sample 80_docs/suggest_combo.html}}
+
+{{note
+Note that you must select any value from a suggest list, since it's required by combo and richselect nature. 
+}}
+
 
 ##Suggest List with Client-Side Data
 
@@ -90,7 +112,7 @@ var countries = [
 At the same time, data can come from server side. All you need is to specify the script file that will get the data from the database. 
 
 {{snippet
-As value of **dataFeed** property of the Suggest component
+As value of dataFeed property of the Suggest component
 }}
 ~~~js
 webix.ui({
@@ -101,7 +123,7 @@ webix.ui({
 ~~~
 
 {{snippet
-As value of **suggest** property
+As value of suggest property
 }}
 ~~~js
 { view:"text", name:"country", label:"Contry", value:"Albania", suggest:"server/data.php"}
@@ -111,29 +133,6 @@ As value of **suggest** property
 
 Suggest list is connected with an input field by **suggest** property included into the **text** constructor. 
 
-##Suggest List with Richselect and Combo {#combo}
-
-Suggest list can substitute **options** property for some controls. In this case suggest comes as property object and features common properties of a UI component: 
-
-~~~js
-webix.ui({
-	view:"richselect", suggest:{
-    	data:[
-        	{id:1, value:"One"},
-        	{id:2, value:"Two"} //options list
-        ],
-        ready: function(){
-        	$$("richselect_1").setValue(this.getFirstId()); //defines the initially visible option
-        }
-    }
-});
-~~~
-{{sample 80_docs/suggest_combo.html}}
-
-
-{{note
-Note that in this case, you must select any value from a suggest list, since it's required by combo and richselect nature. 
-}}
 
 ##Suggest List for In-Component Editors {#component}
 
@@ -201,12 +200,79 @@ webix.ui({
             on:{
 				//events            
             }
-        }},
+        }}
     ]
 });
 ~~~
 
-##Positioning Suggest List
+##Customizing Suggest List
+
+Suggest list allows defining lots of custom settings in case of a long initialization pattern. 
+
+It works for a suggest defined as a standalone view: 
+
+~~~js
+{view:"suggest",
+	//popup settings
+    ...,
+    body:{
+        //list settings 
+    }
+}}
+~~~
+
+As well as for a suggest defined as a control property: 
+
+~~~js
+{view:"combo", options:{
+	//popup settings
+    ...,
+    body:{
+        //list settings 
+    }
+}}
+~~~
+
+- Popup settings include typical [popup properties](api/refs/ui.popup_props.md) and suggest-specific ones, like [fitMaster](api/ui.suggest_fitmaster_config.md), or **url** and **data**;
+- List settings inlcude typical [list properties](api/refs/ui.list_props.md). 
+
+{{note
+Note that an suggest list configuration can be set via either **suggest** or **options** property for  [richselect](desktop/controls.md#richselect) and [combo](desktop/controls.md#combo) controls. 
+}}
+
+**See also:** desktop/advanced_combo.md
+
+##Sizing and Positioning
+
+###Popup height
+
+Suggest list is tuned to show maximum 10 items at a time. If there are more items, a scrollbar appears. If there are fewer item in the list, its height shrinks. 
+
+The number of items in the suggest list can be controlled by an **yCount** property of **list object**:
+
+~~~js
+{view:"combo", suggest: { 
+    body:{
+        yCount:5,
+        data:[...] 
+    }
+}}
+~~~
+
+###Popup width
+
+By default, a popup is adjusted to the width of a master control. To change it, set [fitMaster](api/ui.suggest_fitmaster_config.md) property to *false* and define any desirable width or use 
+the default 300px:
+
+~~~js
+{view:"combo", suggest: { 
+    fitMaster:false,
+    width:400,
+    data:[...] 
+}}
+~~~
+
+###Popup position
 
 Suggest API offers the following variants of popup positioning in relation to the text field it's inited for: 
 

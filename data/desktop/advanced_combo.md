@@ -177,3 +177,19 @@ view:"combo", value:1, options:{
 ~~~
 
 Still, to catch changes in the combo/richselect, it's better to use the related [onChange](api/link/ui.combo_onchange_event.md) event.
+
+##Sizing/positioning of a popup list
+
+The dimensions of a popup list as well as its position in relation to a master control can be customized via **suggest/options** configuration object. 
+
+~~~js
+view:"combo", options:{
+	fitMaster:false,
+    body:{
+    	yCount:7
+    }
+}
+~~~
+
+Read more about it in the [corresponding documentation article](desktop/suggest.md#sizingandpositioning).
+
