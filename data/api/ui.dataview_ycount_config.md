@@ -18,7 +18,7 @@ webix.ui({
 Possible values for the property are:
 
 - desired **number**;
-- **"auto"** (to calculate the number of item on the base of component size).
+- 0 to disable yCount ( calculate the number of item on the base of component size).
 
 {{sample 10_window/05_popup_menu.html}}
 

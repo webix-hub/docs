@@ -19,7 +19,7 @@ webix.ui({
 Possible values for the property are:
 
 - desired **number**;
-- **"auto"** (to calculate the number of item on the base of component size).
+- 0 to disable xCount ( calculate the number of item on the base of component size).
 
 @related:
 	desktop/dataview.md
