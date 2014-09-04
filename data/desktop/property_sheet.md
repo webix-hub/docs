@@ -57,8 +57,10 @@ Each element features a built-in editor specified by **type** property. Possible
 - **color**  - an editor for colors, [colorboard](api/refs/ui.colorboard.md) appears on editing; 
 	- {{sample 07_property/03_colorpicker.html}}
 - **text** - a standard editor for text values;
+- **password** - a text editor for passwords;
 - **select** - for selection among several text values with the help of an HTML 'select' control;
-- **richselect** - for selection among several values width the help of Webix [richselect](desktop/controls.md#richselect) control;
+- **combo** - for selection among several values with the help of Webix [combo](desktop/controls.md#combo) control. Input is editable;
+- **richselect** - for selection among several values with the help of Webix [richselect](desktop/controls.md#richselect) control. Input is non-editable;
 - **checkbox** - for two-state values. 
 
 Select editors features **options** in their configuration that can be defined in the following ways:

@@ -401,15 +401,67 @@ Label control can be used to render any user HTML or icons (as well as built-in 
 
 [API Reference](api__refs__ui.label.html)
 
+##Multiselect
+
+{{note
+The control is available only in **Webix Pro** edition.
+}}
+
+<img src="desktop/multiselect.png"/>
+
+{{sample 60_pro/02_form/02_multiselect.html}}
+
+UI-related multiselect is a select control baed on Webix [richselect](#richselect) and allows selecting multiple option at a time while displaying them in the dedicated 
+non-editable input field. 
+
+The control's popup is supplied with a "select" button out of box. 
+
+{{snippet
+Multiselect initialization
+}}
+~~~js
+{ view:"multiselect", id:"multi", label:"Participant", options:[
+	{ id:1, value:"Alex Brown" },
+	{ id:2, value:"Dan Simons" },
+	{ ... }				
+], value:"1,3" }
+~~~
+
+####Main properties
+
+- **value** (string) - the initial value to display in the input field, its ID. The string can be separated by a comma (",") to define multiple values;  
+- **label** (string) - text label of a control. It can be customized by:
+	- **labelAlign** (string) - label alignment towards its container. Possible values are "left" and "right".  In any way, it's placed left to the control; 
+    - **labelWidth** (number) - width of the label container; 
+    - **labelPosition** (string) - defines label position related to the input field. The only possible value is "top";
+- **placeholder** (string) - the initial text in the text field, disappears as you start typing in it;
+- **options** (array, object) - defines the set of items to select from. [Details](desktop/controls_guide.md#defininginitialvalues).
+
+####Changing "Select" button text
+
+Multiselect control can be customized via extended configuration of its popup suggest, which is described in the [Advanced Settings of Popup Selectors](desktop/advanced_combo.md) article. 
+
+Multiselect suggest features a **buttonText** property that allows defining any custom text for the button:
+
+~~~js
+{view:"multiselect", label:"Participant",options:{
+     buttonText:"Click options to select/deselect",
+     data:[
+     	{ id:1, value:"Alex Brown" },
+     	{ id:2, value:"Dan Simons" }
+     ]
+}}
+~~~
+
 ##Multitext 
 
 {{note
-The control is available only in **Webix Pro** version. 
+The control is available only in **Webix Pro** edition.
 }}
 
 <img src="desktop/multitext.png"/>
 
-{{sample 60_pro/02_form/01_text.html}}
+{{sample 60_pro/02_form/01_multitext.html}}
 
 UI-related multitext is a dynamic control based on standard Webix [text](#text) input. It offers users the possibility to add and delete additional fields on the go. 
 
@@ -526,7 +578,7 @@ Richselect control can be customized in a number of ways, e.g.:
 - options can be loaded from serverside;
 - template can be changed..
 
-To learn more, go to [Advanced Combo and Richselect Settings](desktop/advanced_combo.md) article. 
+To learn more, go to [Advanced Settings of Popup Selectors](desktop/advanced_combo.md) article. 
 
 ####Getting Current Value
 

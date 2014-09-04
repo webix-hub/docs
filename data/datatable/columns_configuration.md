@@ -351,7 +351,7 @@ Setting Colspans/Rowspans
 ------------------------------
 
 {{note
-The feature is available in **Webix Pro** version only.
+The feature is available in **Webix Pro** edition only.
 }}
 
 Datatable allows defining colspans and rowspans by **span** configuration provided with the dataset within the **data** property of the grid.

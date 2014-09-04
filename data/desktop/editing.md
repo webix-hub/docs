@@ -21,6 +21,10 @@ In this article build-in component [editors](#editors) and [edit actions](#edita
 		<td style="width:300px;"> <code>editor:"text"</code> </br> <a href="desktop/editing.md#text">Learn more</a> </td>
 		<td style="text-align:center;"><img src="desktop/text_editor.png"/></td>
 	</tr>
+    <tr>
+		<td style="width:300px;"> <code>editor:"password"</code> </br> <a href="desktop/editing.md#password">Learn more</a> </td>
+		<td style="text-align:center;"><img src="desktop/password_editor.png"/></td>
+	</tr>
 	<tr>
 		<td> <code>editor:"inline-text"</code> </br> <a href="desktop/editing.md#inlinetext">Learn more</a> </td>
 		<td style="text-align:center;"><img src="desktop/inline_text_editor.png"/></td>
@@ -36,6 +40,10 @@ In this article build-in component [editors](#editors) and [edit actions](#edita
     <tr>
 		<td> <code>editor:"richselect"</code> </br><a href="desktop/editing.md#richselect">Learn more</a></td>
 		<td style="text-align:center;"><img src="desktop/richselect_editor.png"/></td>
+	</tr>
+    <tr>
+		<td> <code>editor:"multiselect"</code></br> Available in <b>Webix Pro</b> edition only</br><a href="desktop/editing.md#multiselect">Learn more</a></td>
+		<td style="text-align:center;"><img src="desktop/multiselect_editor.png"/></td>
 	</tr>
     <tr>
 		<td> <code>editor:"checkbox"</code> </br><a href="desktop/editing.md#checkbox">Learn more</a> </td>
@@ -72,6 +80,17 @@ A base editor for text values of datatable and dataview cells, list rows. By def
 
 {{sample 15_datatable/04_editing/01_basic.html}}
 
+###Password {#password}
+
+A base editor for passwords that masks symbols in the input. 
+
+~~~js
+//in the property sheet editor is defined by "type"
+{ id:"pass", label:"Passoword", type:"password"}
+~~~
+
+{{sample 07_property/01_init.html}}
+
 ###Inline-text {#inlinetext}
 
 A customizable text editor. Here you should set a template for the editing area, type and dimensions of an input area;
@@ -86,6 +105,7 @@ A customizable text editor. Here you should set a template for the editing area,
 If you specify the **editor:"inline-text"** attribute the component will provide a special processing treat for the editor while editing: invoking [edit-related events](api/refs/editability_events.md).
 
 If you don't specify the **editor** attribute you should provide the processing logic for the editor on your own. 
+
 
 ###Select {#select}
 
@@ -113,7 +133,7 @@ The options can be defined by either a simple or an associatibe array as well as
 
 ###Richselect {#richselect}
 
-Webix [richselect](desktop/controls.md#richselect) controls that is a non-editable variation of a combo editor.
+Webix [richselect](desktop/controls.md#richselect) control that is a non-editable variation of a combo editor.
 
 ~~~js
 { id:"title", header:"Film title",  editor:"richselect",  options:[...]}
@@ -121,7 +141,25 @@ Webix [richselect](desktop/controls.md#richselect) controls that is a non-editab
 
 {{sample /15_datatable/04_editing/18_richselect.html}}
 
-The options can be defined by either a simple or an associatibe array as well as by url. [Look here for details](#options).
+The options can be defined by either a simple or an associative array as well as by url. [Look here for details](#options).
+
+###Multiselect {#multiselect}
+
+{{note
+The editor is available is **Webix Pro** edition only
+}}
+
+The editor is based on Webix [multiselect](desktop/controls.md#multiselect) control and allows selecting multiple options at a time.
+
+~~~js
+{ id:"assigned", editor:"multiselect", optionslist:true, options:[...]}
+~~~
+
+The **optionlist** property is defined for the editable element (here:column) so that it can parse multiple values from the editor into a single cell value.
+
+{{sample 60_pro/01_datatable/08_editor_multiselect.html}}
+
+The options can be defined by either a simple or an associative array as well as by url. [Look here for details](#options).
 
 ###Checkbox {#checkbox}
 
@@ -329,7 +367,8 @@ columns:[
 
 ##Advanced configuration of select editors
 
-Webix select controls, combo and richselect, are [highly customizable](desktop/advanced_combo.md), which means that the editors based on them can be customized too. The following things can be changed: 
+Webix select controls, **combo**, **richselect** and **multiselect**, are [highly customizable](desktop/advanced_combo.md), which means that the same-name editors  
+can be customized too. The following things can be changed: 
 
 - template of list items;
 - template of the input field (combo editor only);
@@ -394,9 +433,7 @@ webix.UIManager.addHotKey("enter", function(view){
 
 Here editing is enabled on pressing the "Enter" key on the selected item. 
 
-
 ##Custom Editors
-
 
 The library allows creating fully custom editors.
 

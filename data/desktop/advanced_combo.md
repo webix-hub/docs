@@ -1,15 +1,19 @@
-Advanced Combo and Richselect Configuration
+Advanced Configuration of Popup Selectors
 =========================
 
-[Combo](desktop/controls.md#combo) and [richselect](desktop/controls.md#richselect) popup can be highly customized. The only thing you should remember that it is based on Webix [list](desktop/list.md) and takes 
-the **same configuration** - templating and loading rules, sizes and look-and-feel. 
+[Combo](desktop/controls.md#combo), [richselect](desktop/controls.md#richselect) and [multiselect](desktop/controls.md#multiselect) popup can be highly customized. 
+
+The only thing you should remember that it is comprised of the following components: 
+
+- from Webix [list](desktop/list.md) it takes templating and loading rules, item sizes and look-and-feel. 
+- from Webix [popup](desktop/popup.md) it takes popup size and behaviour. 
+
+The combination is called **suggest list** that is described in detail [separately](desktop/suggest.md).
 
 {{note
 All the functionality described below is shown in this sample:
 }}
 {{sample 13_form/01_controls/11_combo_advanced.html}}
-
-
 
 ##Changing 'options' structure and template
 

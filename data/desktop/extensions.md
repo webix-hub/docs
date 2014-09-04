@@ -25,14 +25,18 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
 		</td>
 		<td class='topic_description' style="text-align: center; padding:20px;"> <a href="desktop/pivotchart.md"><img src="desktop/pivotchart_extension.png"></a></td>
 	</tr>
-     <tr>
+    <tr>
 		<td id="design" class='topics' style="vertical-align:text-top;">
 		    <h4 id='ui' style="margin-bottom:4px;">
-		        <a href="desktop/scheduler.md">Scheduler</a>
+		        Extended Select Controls
 		    </h4>
-		    An integration extension that allows you to add a 3rd-party event calendar to the app: <i>dhtmlxScheduler of the DHTMLX library</i>.
+		    An integration extension that allows you to add extended options for select controls: 
+            <ul>
+            	<li><a href="desktop/datasuggest.md">Dataview Suggest</a></li>
+                <li><a href="desktop/gridsuggest.md">Grid Suggest</a></li>
+            </ul>
 		</td>
-		<td class='topic_description' style="text-align: center; padding:20px;"> <a href="desktop/scheduler.md"><img src="desktop/scheduler_extension.png"></a></td>
+		<td class='topic_description' style="text-align: center; padding:20px;"><img src="desktop/datasuggest_extension.png"></td>
 	</tr>
 	<tr>
 		<td id="design" class='topics' style="vertical-align:text-top;">
@@ -61,6 +65,15 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
 		</td>
 		<td class='topic_description' style="text-align: center; padding:20px;"><a href="desktop/text_editors.md"><img src="desktop/editor_extension.png"></a></td>
 	</tr>
+    <tr>
+		<td id="design" class='topics' style="vertical-align:text-top;">
+		    <h4 id='ui' style="margin-bottom:4px;">
+		        <a href="desktop/scheduler.md">Scheduler</a>
+		    </h4>
+		    An integration extension that allows you to add a 3rd-party event calendar to the app: <i>dhtmlxScheduler of the DHTMLX library</i>.
+		</td>
+		<td class='topic_description' style="text-align: center; padding:20px;"> <a href="desktop/scheduler.md"><img src="desktop/scheduler_extension.png"></a></td>
+	</tr>
      <tr>
 		<td id="design" class='topics' style="vertical-align:text-top;">
 		    <h4 id='ui' style="margin-bottom:4px;">
@@ -70,30 +83,18 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
 		</td>
 		<td class='topic_description' style="text-align: center; padding:20px;"><img src="desktop/mob_calendar.png"></td>
 	</tr>
-    <tr>
-		<td id="design" class='topics' style="vertical-align:text-top;">
-		    <h4 id='ui' style="margin-bottom:4px;">
-		        Extended Select Controls
-		    </h4>
-		    An integration extension that allows you to add extended options for select controls: 
-            <ul>
-            	<li><a href="desktop/datasuggest.md">Dataview Suggest</a></li>
-                <li><a href="desktop/gridsuggest.md">Grid Suggest</a></li>
-            </ul>
-		</td>
-		<td class='topic_description' style="text-align: center; padding:20px;"><img src="desktop/datasuggest_extension.png"></td>
-	</tr>
     </tbody>
 </table>
 
 @index:
 - desktop/pivot.md
 - desktop/pivotchart.md
-- desktop/text_editors.md
-- desktop/scheduler.md
-- desktop/chart_integration.md
-- desktop/maps.md
-- desktop/mobile_scheduler.md
 - desktop/datasuggest.md
 - desktop/gridsuggest.md
+- desktop/text_editors.md
+- desktop/chart_integration.md
+- desktop/maps.md
+- desktop/scheduler.md
+- desktop/mobile_scheduler.md
+
 

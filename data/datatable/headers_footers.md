@@ -245,6 +245,10 @@ columns:[
 Rotated header/footer
 -----------------
 
+{{note
+Note that this feature is available in **Webix Pro** edition only. 
+}}
+
 <img src="desktop/header_rotate.png">
 
 To define rotated state for the header or footer you should specify it as an object (or array of objects in case of multiline header/footer).
@@ -260,7 +264,7 @@ columns:[
 ]    
 ~~~
 
-{{sample 15_datatable/12_header_footer/13_rotate.html}}
+{{sample 60_pro/01_datatable/11_rotate_header.html}}
 
 ##Custom Height for Header and Footer
 

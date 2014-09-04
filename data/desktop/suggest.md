@@ -237,7 +237,8 @@ As well as for a suggest defined as a control property:
 - List settings inlcude typical [list properties](api/refs/ui.list_props.md). 
 
 {{note
-Note that an suggest list configuration can be set via either **suggest** or **options** property for  [richselect](desktop/controls.md#richselect) and [combo](desktop/controls.md#combo) controls. 
+Note that an suggest list configuration can be set via either **suggest** or **options** property for  [richselect](desktop/controls.md#richselect), [combo](desktop/controls.md#combo) 
+and [multiselect](desktop/controls.md#multiselect) controls. 
 }}
 
 **See also:** desktop/advanced_combo.md

@@ -8,7 +8,7 @@ Webix provides extensive scrolling management tools.
 - Thirdly, Webix library features a separate component called **[scrollview](desktop/scrollview.md)**, a container view with scrollbars for placing any content there (plain text, HTML, Webix views);
 
 {{note
-By default, Webix uses **native** browser scrollbars. In **Webix Pro** version custom [Webix-made scrollbars](#webixcustomscroll) are available.
+By default, Webix uses **native** browser scrollbars. In **Webix Pro** edition custom [Webix-made scrollbars](#webixcustomscroll) are available.
 }}
 
 ##Tuning Scrolling
@@ -128,7 +128,7 @@ var posy = scPos.y; // 200
 ##Webix Custom Scroll
 
 {{note
-The feature is available in **Webix Pro** version only. 
+The feature is available in **Webix Pro** edition only.
 }}
 
 Webix offers custom scrollbars to replace native browser ones. The advantages are as follows: 

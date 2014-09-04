@@ -5,127 +5,173 @@ The library provides ability to <a href="http://webix.com/widget/datatable/" tit
 
 Filters in the header
 --------------------------
-You can define built-in filter in the header or footer of a column. The following types of filters are available:
 
-- **textFilter** - text filter. Retrieves values that contain mask defined through text field.
-- **selectFilter** - select filter. Retrieves values which contain mask defined through dropdown list of possible values.
-- **numberFilter** - text filter used for number columns. Retrieves values which contain mask defined through text field. Allows users to use the following comporison operators in it:
-	- '=' - equal to;
-	- '>' - greater than;
-	- '<' - less than;
-	- '<=' - less or equal;
-	- '>=' - greater or equal.
+You can define a built-in filter in the header or footer of a column. Webix offers 8 filter types:
 
-- **dateFilter** - text filter used for date columns. Retrieves values that contain mask defined through text field.<br> Allows users to use the following comporison operators in it:
-	- '>' - greater than;
-	- '<' - less than;
-	- '<=' - less or equal;
-	- '>=' - greater or equal.
+- in a standard free version:
+	- **textFilter**;
+	- **serverFilter**;
+	- **selectFilter**;
+	- **numberfilter**;
+    - **dateFilter**;
+- additionally, in the Webix Pro edition:    
+	- **richSelectFilter**;
+    - **multiSelectFilter**;
+	- **datepickerFilter**.
     
-There are 3 ways you can input data to the  **dateFilter**:
+All of them are described in detail below.     
+
+Built-in filter is set by property **content** of the **header/footer** attribute. Note, to add a filter to the header(footer), the header(footer) must be specified as array.
+
+~~~js
+columns:[
+	{ id:"title", header:[{content:"{filtername}Filter"}, "Title"] }
+]    
+~~~
+
+{{note
+If you need to create a **custom filter** (or smth) for header content, or you need to **redefine** the behaviour of an already existing filter, 
+go [here](datatable/headers_footers.md#customheaderandfootercontent) for the instructions. 
+}}
+
+###Text filter
+
+<img src="datatable/text_filter.png"/> 
+
+Retrieves values that contain mask defined through text field.
+		
+~~~js
+{ id:"title",header:[ "Film title",{content:"textFilter"}] }
+~~~
+
+{{sample
+15_datatable/03_filtering/01_builtin.html
+}}
+
+
+###Server Filter
+
+A text filter that works with backend. Retrieves values that contain mask defined through text field and sends a request to server to return filtered dataset. 
+
+~~~js
+{ id:"title",	header:["Film title", {content:"serverFilter"}] }
+~~~
+
+{{sample 40_serverside/01_php_vanila/11_datatable_sort_filter.html}}
+
+Request parameters include: 
+
+- *count* - the number of data records to return. Its value depends on [dynamic loading](desktop/dynamic_loading.md) parameters, if any;
+- *start* - ID of the data record to start from (0 - beginning). Its value depends on [dynamic loading](desktop/dynamic_loading.md) parameters, if any;
+- *filter[column_name]* - name of the column (in brackets) for which filtering is performed. Its value is a text value you've entered in the filter input. 
+
+If **serverside sorting** is enabled, data is both filtered and sorted on server. 
+
+###Select filter
+
+<img src="datatable/select_filter.png"/>
+
+Retrieves values that contain mask defined through a dropdown list of possible values. Based on a standard HTML select input.
+		
+~~~js
+{ id:"title", header:["Film title",{content:"selectFilter"}] }
+~~~
+
+{{sample 15_datatable/03_filtering/01_builtin.html}}
+
+###Number filter
+
+<img src="datatable/numeric_filter.png"/>
+
+Text filter used for number columns. Retrieves values which contain mask defined through text field. Allows users to use the following comporison operators in it:
+
+- '=' - equal to;
+- '>' - greater than;
+- '<' - less than;
+- '<=' - less or equal;
+- '>=' - greater or equal.
+		
+~~~js
+{ id:"year", header:[ "Released",{content:"numberFilter"}] }
+~~~
+
+{{sample 15_datatable/03_filtering/09_numeric.html}}
+
+###Date filter
+
+<img src="datatable/date_filter.png"/>
+
+A text filter used for date columns. Retrieves values that contain mask defined through text field. Allows users to use the following comporison operators in it:
+
+- '>' - greater than;
+- '<' - less than;
+- '<=' - less or equal;
+- '>=' - greater or equal.
+    
+There are 3 ways you can input data to the  dateFilter:
 
 1. '*yyyy*' - 4-digits year;
 2. '*mm.yyyy*' - 2-digits month and 4-digits year separated by point;
 3. '*dd.mm.yyyy*' - 2-digits day, 2-digits month and 4-digits year separated by points
-
-- **serverFilter** - text filter used for data column. Retrieves values that contain mask defined through text field and sends a request to server to return filtered dataset. <br> Request parameters include: 
-	- *count* - the number of data records to return. Its value depends on [dynamic loading](desktop/dynamic_loading.md) parameters, if any;
-    - *start* - ID of the data record to start from (0 - beginning). Its value depends on [dynamic loading](desktop/dynamic_loading.md) parameters, if any;
-	- *filter[column_name]* - name of the column (in brackets) for which filtering is performed. Its value is a text value you've entered in the filter input. 
-
-If **serverside sorting** is enabled, data is both filtered and sorted on server. 
-
-All of these filters are applied in the same way, through header **content** property:
-
+		
 ~~~js
-{ id:"title", header:[{content:"textFilter"}, "Title"] }
+{ id:"year", header:[ "Released",{ content:"dateFilter"}], 
+	format:webix.i18n.dateFormatStr}
 ~~~
+
+{{sample 15_datatable/03_filtering/10_date.html }}
+
+###Richselect Filter
 
 {{note
-Filter collection can be extended with custom elements. If you need your own filter (or smth) for header content, go [here](#customheadercontent) for the instructions. 
+Available in **Webix Pro** edition only.
 }}
 
-###Defining header filters
-    
-Built-in filter is set by property **content** of the **header** attribute. Note, to add a filter to the header(footer), the header(footer) must be specified as array.
+<img src="desktop/richselect_filter.png"/>
 
-**Text filter**
+Retrieves values that contain mask defined through a popup list of possible values. Based on Webix [richselect](desktop/controls.md#richselect) control.
 
-<img src="datatable/text_filter.png"/> 
-		
 ~~~js
-columns:[
-	{id:"title",header:[
-     "Film title",{content:"textFilter"}]
-    },
-	{id:"year",header:"Released"},
-	{id:"votes",header:"Votes"}
-]
+{ id:"year", header:["Released", { content:"richSelectFilter" }] }
 ~~~
 
-{{sample
-15_datatable/03_filtering/01_builtin.html
+{{sample 60_pro/01_datatable/06_filter_multiselect.html}}
+
+###Multiselect Filter
+
+{{note
+Available in **Webix Pro** edition only.
 }}
 
-<br>
+<img src="desktop/multiselect_filter.png"/>
 
-**Select filter**
+Retrieves values that contain mask defined through a popup list of possible values while **miltiple values** can be selected at once. 
+Based on Webix [multiselect](desktop/controls.md#multiselect) control.
 
-<img src="datatable/select_filter.png"/>
-		
 ~~~js
-columns:[
-	{id:"title", header:[
-     "Film title",{content:"selectFilter"}]
-	},
-	{id:"year", header:"Released"},
-	{id:"votes", header:"Votes"}]
+{ id:"year",header:["Released", { content:"multiSelectFilter" }]
 ~~~
 
-{{sample
-15_datatable/03_filtering/01_builtin.html
+{{sample 60_pro/01_datatable/06_filter_multiselect.html}}
+
+###Datepicker Filter
+
+{{note
+Available in **Webix Pro** edition only.
 }}
 
-<br>
+<img src="desktop/datepicker_filter.png"/>
 
-**Numeric filter**
+Retrieves values that contain mask defined through the popup calendar. Based on Webix [datepicker](desktop/controls.md#datepicker) control. 
 
-<img src="datatable/numeric_filter.png"/>
-		
 ~~~js
-columns:[
-	{id:"title", header:"Film title"},
-	{id:"year", header:[
-     "Released",{content:"numberFilter"}]
-    },
-	{id:"votes", header:"Votes"}
-]
+{ id:"date", header:[ "Released", { content:"datepickerFilter" }],
+		format:webix.i18n.dateFormatStr}
 ~~~
 
-{{sample
-15_datatable/03_filtering/09_numeric.html
-}}
+{{sample 60_pro/01_datatable/07_filter_daterange.html}}
 
-<br>
-
-**Date filter**
-
-<img src="datatable/date_filter.png"/>
-		
-~~~js
-columns:[
-	{id:"title",header:"Film title"},
-	{id:"year", header:[
-      "Released",{ content:"dateFilter"}],
-      format:webix.i18n.dateFormatStr}
-]
-~~~
-
-{{sample
-15_datatable/03_filtering/10_date.html
-}}
-
-<br>
+##Filtering Logic
 
 Note, each time you start to type text in such a filter, DataTable invokes the [filterByAll()](api/ui.datatable_filterbyall.md) method. Each time the method is called, all data is re-filtered (previous results aren't preserved).
 
@@ -176,7 +222,7 @@ grid.filterByAll=function(){
 {{sample 15_datatable/03_filtering/03_or.html }}
 
 
-###Custom filtering rules
+##Custom filtering rules
 
 A filter is a set of filtering rules applied to specific content. When you specify a filter you have the possibility to set additional filtering rules for it. 
 To set additional filtering rule for the filter you must create a custom function implementing those rule and set property **compare** of the **header**(**footer**) attribute to this function.
@@ -195,7 +241,6 @@ Filtering by the start letter of the column values
 function startCompare(value, filter){
 	value = value.toString().toLowerCase();
 	filter = filter.toString().toLowerCase();
-	
 	return value.indexOf(filter) === 0;
 }
 
