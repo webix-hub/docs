@@ -30,7 +30,7 @@ The property make sense only for a horizontal list (the one featuring "x" layout
 Possible values for the property are:
 
 - desired **number**;
-- **"auto"** (to calculate the number of item on the base of component size).
+- 0 to disable xCount ( calculate the number of item on the base of component size).
 
 
 
