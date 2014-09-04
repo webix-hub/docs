@@ -1,14 +1,15 @@
 Advanced Configuration of Popup Selectors
 =========================
 
-[Combo](desktop/controls.md#combo), [richselect](desktop/controls.md#richselect) and [multiselect](desktop/controls.md#multiselect) popup can be highly customized. 
+[Combo](desktop/controls.md#combo), [richselect](desktop/controls.md#richselect) and [multiselect](desktop/controls.md#multiselect) controls can be highly customized
+because they are comprised of the following components: 
 
-The only thing you should remember that it is comprised of the following components: 
+- Webix [list](desktop/list.md) from which templating and loading rules, item sizes and look-and-feel are taken;
+- Webix [popup](desktop/popup.md) from which popup size and behaviour are taken. 
 
-- from Webix [list](desktop/list.md) it takes templating and loading rules, item sizes and look-and-feel. 
-- from Webix [popup](desktop/popup.md) it takes popup size and behaviour. 
+The combination is called **suggest list** that can be accessed from the control configuration, which allows for setting a number of custom options. 
 
-The combination is called **suggest list** that is described in detail [separately](desktop/suggest.md).
+Suggest list is described in detail [separately](desktop/suggest.md). 
 
 {{note
 All the functionality described below is shown in this sample:
@@ -37,9 +38,9 @@ The same can be used for default options, moreover, extra text or HTML can be ad
 view:"combo",  value:2, options:{
     template:"Extra #value#",
     data:[
-       { id:1, value:"Banana"   },
-       { id:2, value:"Papai"   },
-       { id:3, value:"Apple" }
+       { id:1, value:"Banana" },
+       { id:2, value:"Papai" },
+       { id:3, value:"Apple"}
 ]
 ~~~
 

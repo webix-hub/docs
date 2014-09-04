@@ -142,53 +142,67 @@ Suggest list is connected with an input field by **suggest** property included i
 
 Suggest can be inited for **combo** and **text** editors. To do this, make the following steps: 
 
-- create a suggest list as **separate view** and populate it with options:
+- create a suggest list as **separate view** or define its **configuration** in a JSON object and set options for it:
+- create a component, specify **text** [editor type](desktop/editing.md) for it and link to the suggest: 
 
 ~~~js
-var year_suggest = webix.ui({
+var year_suggest_a = webix.ui({
 	view: "suggest",
-	data:[]
+	data:[...]
 });
-~~~
 
-Configuration of a suggest view coincides with that of a standard Webix [list](desktop/list.md).
+//or
+var year_suggest_a = {
+	view: "suggest",
+	data:[...]
+};
 
-- create a component and specify **text** [editor type](desktop/editing.md) for it: 
-
-~~~js
 webix.ui({
 	view:"datatable",
     columns:[  
-        {id:"year", editor:"text"},
+        {id:"year", editor:"text", suggest:year_suggest_a}
     ]
 });
 ~~~
 
-{{sample 15_datatable/04_editing/15_combo.html}}
+{{sample 15_datatable/04_editing/14_autosuggest.html}}
 
+At the same time, you can provide all the logic by API, which allows customizing suggest behaviour: 
+
+- create a suggest list as **separate view** and set options for it:
 - link suggest list to the input field of the editor object with the **linkInput** method:
+- provide handlers for edit events.
 
 ~~~js
-grida.attachEvent("onAfterEditStart", function(object){
+var year_suggest_b = webix.ui({
+	view: "suggest",
+	data:[...]
+});
+
+var gridb = webix.ui({
+	view:"datatable",
+    columns:[  
+        {id:"year", editor:"text"}
+    ]
+});
+
+
+gridb.attachEvent("onAfterEditStart", function(object){
 	if (object.column == "year") { //only for editors in this column
 		var editor = this.getEditor(object);
-		year_suggest.linkInput(editor.getInput());
+		year_suggest_b.linkInput(editor.getInput());
 	}
 });
-~~~
 
-- provide logic as well for the end of editing:
-
-~~~js
-grida.attachEvent("onAfterEditStop", function(object){
-	year_suggest.hide();
+gridb.attachEvent("onAfterEditStop", function(object){
+	year_suggest_b.hide();
 });
 ~~~
 
 {{sample 15_datatable/04_editing/14_autosuggest.html}}
 
 {{note
-Suggest list can as well be attached to **combo** and **richselect** editors, yet then it looses its mstatus of 'adviser' and selection from it becomes compulsory.
+Suggest list can as well be attached to **combo** and **richselect** editors, yet then it looses its status of 'adviser' and selection from it becomes compulsory.
 }}
 
 ~~~js
@@ -204,6 +218,8 @@ webix.ui({
     ]
 });
 ~~~
+
+{{sample 15_datatable/04_editing/21_advanced_combo.html}}
 
 ##Customizing Suggest List
 
@@ -221,7 +237,7 @@ It works for a suggest defined as a standalone view:
 }}
 ~~~
 
-As well as for a suggest defined as a control property: 
+As well as for a suggest defined as a control/editor property: 
 
 ~~~js
 {view:"combo", options:{
@@ -241,7 +257,11 @@ Note that an suggest list configuration can be set via either **suggest** or **o
 and [multiselect](desktop/controls.md#multiselect) controls. 
 }}
 
-**See also:** desktop/advanced_combo.md
+**Where can the customization be useful?**
+
+- desktop/advanced_combo.md
+- [Customizing built-in data editors](desktop/editing.md#advancedconfigurationofselecteditors)
+
 
 ##Sizing and Positioning
 

@@ -1,10 +1,17 @@
 Grid Suggest
 ========================
 
-The extension is based on Webix [suggest list](desktop/suggest.md) that is used a a **default dropdown menu** for 
-such select controls as [combo](desktop/controls.md#combo) and [richselect](desktop/controls.md#richselect).
+{{note
+The functionality is a feature of **Webix Pro** edition.
+}}
 
-Gridsuggest extenstion makes it possible to use Webix [datatable](datatable/index.md) as a dropdown menu for these controls while by default they use Webix [list](desktop/list.md). 
+The extension is based on Webix [suggest list](desktop/suggest.md). It redefines the **default dropdown menu** for [combo](desktop/controls.md#combo) and [richselect](desktop/controls.md#richselect)  controls as well as the same-name [editors](desktop/editing.md#editortypes).
+
+Gridsuggest extenstion makes it possible to use Webix [datatable](datatable/index.md) in a dropdown menu while by default Webix [list](desktop/list.md) is used. 
+
+##Using Gridsuggest for Form Controls
+
+Gridsuggest can be used with [combo](desktop/controls.md#combo) and [richselect](desktop/controls.md#richselect) controls.
 
 <img src="desktop/gridsuggest.png"/>
 
@@ -89,9 +96,9 @@ Preset Columns
 }}
 ~~~
 
-###Using Gridsuggest as Editor
+##Using Gridsuggest as Editor
 
-Gridsuggest can be used as a component editor as part of **combo** or **richselect** editor. 
+Gridsuggest can be used as a component editor as part of **combo** or **richselect** [editor](desktop/editing.md#editortypes). 
 
 <img src="desktop/gridsuggest_editor.png">
 

@@ -1,9 +1,19 @@
 Dataview Suggest
 ========================
 
-Dataview suggest extension is used to add extra functionality to Webix select controls, namely [richselect](desktop/controls.md#richselect) and [combo](desktop/controls.md#combo). It is based on Webix [suggest list](desktop/suggest.md).
+{{note
+The functionality is a feature of **Webix Pro** edition.
+}}
 
-The extension **redefines dropdown menu** of these controls. By default, they feature Webix [list](desktop/list.md) as a dropdown menu while data suggest extension allows for using Webix [dataview](desktop/dataview.md) instead, which is great for inserting pictures. 
+Dataview suggest, or datasuggest, is used to add extra functionality to Webix select controls, namely [richselect](desktop/controls.md#richselect) and [combo](desktop/controls.md#combo) and the 
+same-name [editors](desktop/editing.md#editortypes). It is based on Webix [suggest list](desktop/suggest.md).
+
+Datasuggest extension makes it possible to use Webix [dataview](desktop/dataview.md) in a dropdown menu which is great for inserting pictures
+while by default Webix [list](desktop/list.md) is used. 
+
+##Using Datasuggest for Form Controls
+
+The extension can be used to **redefine dropdown menu** of [richselect](desktop/controls.md#richselect) and [combo](desktop/controls.md#combo) controls.  
 
 <img src="desktop/datasuggest.png"/>
 
@@ -73,9 +83,9 @@ Item template, predefined item dimensions
 }}
 ~~~
 
-###Using Datasuggest as Editor
+##Using Datasuggest as Editor
 
-Datasuggest can be used as a component editor as part of **combo** or **richselect** editor. 
+Datasuggest can be used as a component editor as part of **combo** or **richselect** [editors](desktop/editing.md#editortypes). 
 
 <img src="desktop/datasuggest_editor.png"/>
 

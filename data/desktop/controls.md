@@ -185,6 +185,13 @@ Combo box control can be customized in a number of ways, e.g.:
 
 To learn more, go to [Advanced Combo and Richselect Settings](desktop/advanced_combo.md) article. 
 
+####Pro Extensions for Combo 
+
+In the **Webix Pro** edition the control can be extended to show either a **dataview** or **datatable** in the popup:
+
+- desktop/datasuggest.md#usingdatasuggestforformcontrols
+- desktop/gridsuggest.md#usinggridsuggestforformcontrols
+
 ####Getting Current Value
 
 In case of a full initialization form, the **getValue()** method for combo will return ID of selected option rather than text. Use **getInput()** to get to input object and, hence, the text value.  
@@ -579,6 +586,13 @@ Richselect control can be customized in a number of ways, e.g.:
 - template can be changed..
 
 To learn more, go to [Advanced Settings of Popup Selectors](desktop/advanced_combo.md) article. 
+
+####Pro Extensions for Richselect 
+
+In the **Webix Pro** edition the control can be extended to show either a **dataview** or **datatable** in the popup:
+
+- desktop/datasuggest.md#usingdatasuggestforformcontrols
+- desktop/gridsuggest.md#usinggridsuggestforformcontrols
 
 ####Getting Current Value
 

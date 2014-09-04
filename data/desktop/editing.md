@@ -102,9 +102,8 @@ A customizable text editor. Here you should set a template for the editing area,
 
 {{sample 15_datatable/04_editing/09_inline_editors.html}}
 
-If you specify the **editor:"inline-text"** attribute the component will provide a special processing treat for the editor while editing: invoking [edit-related events](api/refs/editability_events.md).
-
-If you don't specify the **editor** attribute you should provide the processing logic for the editor on your own. 
+- If you specify the **editor:"inline-text"** attribute the component will provide a special processing treat for the editor while editing: invoking [edit-related events](api/refs/editability_events.md).
+- If you don't specify the **editor** attribute you should provide the processing logic for the editor on your own. 
 
 
 ###Select {#select}
@@ -129,7 +128,15 @@ Webix [combo](desktop/controls.md#combo) control with the possibility to filter 
 
 {{sample 15_datatable/04_editing/15_combo.html}}
 
-The options can be defined by either a simple or an associatibe array as well as by url. [Look here for details](#options).
+- The options can be defined by either a simple or an associatibe array as well as by url. [Look here for details](#options);
+- The editor is subject to [extensive customization](#advancedconfigurationofselecteditors). 
+
+####Pro Extensions for Combo Editor
+
+In the **Webix Pro** edition the editor can be extended to show either a **dataview** or **datatable** in the popup:
+
+- desktop/datasuggest.md#usingdatasuggestaseditor
+- desktop/gridsuggest.md#usinggridsuggestaseditor
 
 ###Richselect {#richselect}
 
@@ -141,7 +148,15 @@ Webix [richselect](desktop/controls.md#richselect) control that is a non-editabl
 
 {{sample /15_datatable/04_editing/18_richselect.html}}
 
-The options can be defined by either a simple or an associative array as well as by url. [Look here for details](#options).
+- The options can be defined by either a simple or an associative array as well as by url. [Look here for details](#options);
+- The editor is subject to [extensive customization](#advancedconfigurationofselecteditors). 
+
+####Pro Extensions for Combo Editor
+
+In the **Webix Pro** edition the editor can be extended to show either a **dataview** or **datatable** in the popup:
+
+- desktop/datasuggest.md#usingdatasuggestaseditor
+- desktop/gridsuggest.md#usinggridsuggestaseditor
 
 ###Multiselect {#multiselect}
 
@@ -155,11 +170,11 @@ The editor is based on Webix [multiselect](desktop/controls.md#multiselect) cont
 { id:"assigned", editor:"multiselect", optionslist:true, options:[...]}
 ~~~
 
-The **optionlist** property is defined for the editable element (here:column) so that it can parse multiple values from the editor into a single cell value.
-
 {{sample 60_pro/01_datatable/08_editor_multiselect.html}}
 
-The options can be defined by either a simple or an associative array as well as by url. [Look here for details](#options).
+- The **optionlist** property is defined for the editable element (here:column) so that it can parse multiple values from the editor into a single cell value.
+- The options can be defined by either a simple or an associative array as well as by url. [Look here for details](#options).
+- The editor is subject to [extensive customization](#advancedconfigurationofselecteditors). 
 
 ###Checkbox {#checkbox}
 
@@ -373,6 +388,7 @@ can be customized too. The following things can be changed:
 - template of list items;
 - template of the input field (combo editor only);
 - filtering pattern (combo only);
+- text of "Select" button (multiselect only);
 - the number of list items in the popup;
 - functions can be attached to a list.
 
@@ -399,6 +415,18 @@ Two column attributes are mandatory  - **options** or **collection** to interpre
 ~~~
 
 {{sample 15_datatable/04_editing/21_advanced_combo.html}}
+
+**Multiselect specificity**
+
+To configure a suggest list for a multiselect editor, one should specify its suggest type - **multisuggest**: 
+
+~~~js
+{ id:"year", editor:"multiselect", options:years, optionlist:true, suggest:{
+	view:"multisuggest",
+    buttonText:"Select items"
+}}
+~~~
+
 
 ##Datatable and treetable specificity - live editors
 
@@ -489,7 +517,6 @@ Inner properies
 - **this.popup** - popup ID (is used for editors with popup windows)
     
 ##Extending Functionality of an Editor
-
 
 In addition to creating an editor "from scratch", you can extend any of the existing ones. It becomes helpful when slight changes are needed. 
 
