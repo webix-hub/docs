@@ -7,14 +7,14 @@ Start
 <div class='index-pc'></div>
 <div class='index-board'>
 
-<h2>Meet Webix 1.10!</h2>
+<h2>Meet Webix 2.0!</h2>
 <ul>
-	<li><a href="desktop/property_sheet.md">Restyling for property view</a></li>
-    <li><a href="api/ui.datatable_showcolumnbatch.md">Column batches for datatable</a></li>
-    <li>Improved documentation</li>
+	<li><a href="desktop/property_sheet.md">Progress Bar API</a></li>
+    <li><a href="api/ui.datatable_showcolumnbatch.md">Multitext controls</a></li>
+    <li><a href="desktop/property_sheet.md">Advanced filters and editors in DataTable</a></li>
 </ul>
 
-<p> and <a href="desktop/whats_new_1_10.md">some more...</a></p>
+<p> and <a href="desktop/whats_new_2.md">many more...</a></p>
 
 </div>
 

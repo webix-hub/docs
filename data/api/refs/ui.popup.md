@@ -83,7 +83,7 @@ The window can contain any content, be modal or modeless. The main use case - di
 
 {{api
 - api/link/ui.popup_animate_config.md - defines or disables view change animation.
-- api/link/ui.popup_autofit_config.md - adjusts window size to the size of an HTML node	it is initiated in
+- api/link/ui.popup_autofit_config.md - adjusts window size to the size of an html node it is initiated in
 - api/link/ui.popup_autofocus_config.md - sets focus on the window the moment it appears on the page
 - api/link/ui.popup_body_config.md - the content of window body: template or view
 - api/link/ui.popup_borderless_config.md - used to hide the component borders

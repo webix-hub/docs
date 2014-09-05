@@ -147,6 +147,7 @@ You can group multiple component instances together to provide the desired set o
 - api/link/ui.radio_$render_other.md - code called after rending control
 - api/link/ui.radio_$rendericon_other.md - renders icon for the control
 - api/link/ui.radio_$renderinput_other.md - renders html for the input
+- api/link/ui.radio_$renderlabel_other.md - 
 - api/link/ui.radio_$scope_other.md - scope for resolving event and method names
 - api/link/ui.radio_$setsize_other.md - sets the component size
 - api/link/ui.radio_$setvalue_other.md - called each time when component need to set value in related html input

@@ -1,0 +1,1 @@
+@link: api/ui.suggest_template_config.md

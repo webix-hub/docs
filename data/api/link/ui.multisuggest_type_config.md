@@ -1,0 +1,1 @@
+@link: api/ui.suggest_type_config.md

@@ -42,7 +42,7 @@ Berne = {
 		for (var i = 0; i < order.length; i++) {
 			var key = order[i];
 			var data = pull[key];
-			var url = "../docs/api__"+url_ui+"_"+key+(type?("_"+type):"")+".html";
+			var url = "../api__"+url_ui+"_"+key+(type?("_"+type):"")+".html";
 
 			if (data.defined && data.defined[0] && data.defined[0] != ui)
 				continue;

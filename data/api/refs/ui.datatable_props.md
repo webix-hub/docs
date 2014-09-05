@@ -36,6 +36,7 @@ Properties
 - api/link/ui.datatable_gravity_config.md - sets the view gravity (1 by default)
 - api/ui.datatable_header_config.md - enables/disables the header in DataTable (enabled, by default)
 - api/ui.datatable_headerrowheight_config.md - sets the heigth of the header row
+- api/ui.datatable_headermenu_config.md - 
 - api/link/ui.datatable_height_config.md - sets the height of the component
 - api/link/ui.datatable_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.datatable_id_config.md - the component ID
@@ -74,6 +75,7 @@ Properties
 - api/ui.datatable_scrollx_config.md - enables/disables horizontal scrolling
 - api/ui.datatable_scrolly_config.md - enables/disables vertical scrolling
 - api/ui.datatable_select_config.md - sets the selection mode in DataTable
+- api/ui.datatable_spans_config.md - 
 - api/link/ui.datatable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/ui.datatable_type_config.md - used for configuring presentation of items
 - api/link/ui.datatable_url_config.md - the url of a data feed which will be loaded after component initialization
@@ -115,6 +117,7 @@ Properties
 - api/link/ui.datatable_gravity_config.md
 - api/ui.datatable_header_config.md
 - api/ui.datatable_headerrowheight_config.md
+- api/ui.datatable_headermenu_config.md
 - api/link/ui.datatable_height_config.md
 - api/link/ui.datatable_hidden_config.md
 - api/link/ui.datatable_id_config.md
@@ -153,6 +156,7 @@ Properties
 - api/ui.datatable_scrollx_config.md
 - api/ui.datatable_scrolly_config.md
 - api/ui.datatable_select_config.md
+- api/ui.datatable_spans_config.md
 - api/link/ui.datatable_tooltip_config.md
 - api/ui.datatable_type_config.md
 - api/link/ui.datatable_url_config.md

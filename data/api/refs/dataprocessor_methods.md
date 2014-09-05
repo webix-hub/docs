@@ -12,6 +12,7 @@ Methods
 - api/link/dataprocessor_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/dataprocessor_escape.md - escapes data
 - api/dataprocessor_getitemstate.md - return update state for the item in question
+- api/dataprocessor_getstate.md - 
 - api/link/dataprocessor_hasevent.md - checks whether the component has the specified event
 - api/dataprocessor_ignore.md - the code that you pass here as the parameter will not react on any data changes (will not be affected by 'onStoreUpdated' event handler)
 - api/link/dataprocessor_mapevent.md - routes events from one object to another
@@ -36,6 +37,7 @@ Methods
 - api/link/dataprocessor_detachevent.md
 - api/dataprocessor_escape.md
 - api/dataprocessor_getitemstate.md
+- api/dataprocessor_getstate.md
 - api/link/dataprocessor_hasevent.md
 - api/dataprocessor_ignore.md
 - api/link/dataprocessor_mapevent.md

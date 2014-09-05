@@ -1,3 +1,4 @@
+
 Methods
 =======
 
@@ -7,7 +8,7 @@ Methods
 - api/link/ui.htmlform_bind.md - binds components
 - api/link/ui.htmlform_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.htmlform_callevent.md - calls an inner event
-- api/link/ui.htmlform_clear.md - restores initial form values
+- api/link/ui.htmlform_clear.md - clears all the field in a specified form
 - api/link/ui.htmlform_clearvalidation.md - removes "data incorrect" highlighting from invalid text fields
 - api/link/ui.htmlform_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.htmlform_destructor.md - destructs the calling object
