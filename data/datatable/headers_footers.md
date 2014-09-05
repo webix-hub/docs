@@ -81,9 +81,9 @@ When the header is presented as an object, it has the following properties:
 1. *text* - the text label of a column;
 2. *colspan* - the number of columns a cell should span;
 3. *rowspan* - the number of rows a cell should span;
-4. *content* - the built-in filter of a column (textFilter or selectFilter);
+4. *content* - functional header content, [built-in filters](datatable/filtering.md#filtersintheheader) or [group definition](datatable/columns_configuration.md#groupingcolumns);
 5. *rotate* - if *true*, switches header to rotated state;
-6. *height* - defines height for a header line.
+6. *height* - defines a custom height for a header line.
 
 ###Colspan
 
@@ -144,6 +144,25 @@ columns:[
 {{sample 15_datatable/12_header_footer/05_filters.html }}
 
 More information about built-in and custom filters is in the [separate article](datatable/filtering.md).
+
+Header Menu
+---------------------
+
+{{note
+The functionality is available in **Webix Pro** edition only. 
+}}
+
+<img src="datatable/headermenu.png">
+
+Built-in header menu allows end users to control visibility of the columns by several mouse clicks. The definition is as well simple: 
+
+~~~js
+{ view:"datatable", columns:[...], headermenu:true}
+~~~
+
+{{sample 60_pro/01_datatable/03_header_menu.html}}
+
+Headermenu can be customized. For more details, go to the [Datatable Header Menu](datatable/headermenu.md) article. 
 
 Single line footer
 --------------------
@@ -337,3 +356,5 @@ webix.ui.datafilter.customFilterName = {
 @test: test
 @keyword:
 	header, footer,colspan,rowspan,filter,subheader,multiline, counter
+@index:
+	datatable/headermenu.md

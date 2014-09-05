@@ -25,7 +25,8 @@ With the help of the [columns](api/ui.datatable_columns_config.md) parameter you
 - [define templates for data presentation](#templates);
 - [define individual css class for any column](#styling);
 - [hide/show a column](#hidingshowingcolumns);
-- [set hidden/visible columns in groups](#settinghiddenvisiblecolumnsingroups);
+- [hide/show columns in groups](#settinghiddenvisiblecolumnsingroups);
+- [group columns](#groupingcolumns)
 - [define colspans and rowspans](#settingcolspansrowspans);
 
 
@@ -120,18 +121,17 @@ For more details, read the [Sizing and resizing](datatable/sizing.md) article.
 
 Built-in filters
 ------------------
-The header or footer of a column can contain filter.<br> The following types of filters are available:
+The header or footer of a column can contain filter. The following types of filters are available:
 
 - *textFilter* - text filter. Retrieves values which contain mask defined through text field;
 - *selectFilter* - select filter. Retrieves values which contain mask defined through dropdown list of possible values.
-
+- and 6 more.. 
 
 Filter is set by property **content** of the **header** attribute.
 
 {{snippet
 Adding filter to the header of a specific column
 }}
-
 ~~~js
 columns:[
 	{ id:"col1", header:[{ text:"Column 1", colspan:"2"}, { content:"selectFilter" }]},
@@ -141,7 +141,6 @@ columns:[
 {{sample 15_datatable/03_filtering/01_builtin.html }}
 
 For more details, read the [Filtering](datatable/filtering.md) article.
-
 
 Built-in sorting
 ---------------------------
@@ -317,7 +316,7 @@ grid.hideColumn("col4");
 Setting hidden/visible columns in groups
 ---------------
 
-Datatable API allows for setting the initially visible group of columns (**visibleBatch**) as well as show any chosen column group defined by **batch** property: 
+Datatable API allows for setting the initially visible group of columns (**visibleBatch**) as well as show and hide any chosen column group defined by **batch** property: 
 
 ~~~js
 grida = new webix.ui({
@@ -335,7 +334,7 @@ grida = new webix.ui({
 });
 ~~~
 
-Any column group can be shown with the api/ui.datatable_showcolumnbatch.md property that takes column **batch** value as parameter:
+Any column group can be shown with the api/ui.datatable_showcolumnbatch.md method that takes column **batch** value as parameter:
 
 ~~~js
 //show show id, rank
@@ -346,6 +345,46 @@ grida.showColumnBatch(3);
 
 {{sample 15_datatable/15_api/11_column_batches.html}}
 
+Grouping columns
+-----------------------------
+
+{{note
+The functionality is available in **Webix Pro** edition only. 
+}}
+
+[Column batches](#Settinghiddenvisiblecolumnsingroups) can be used to organize groups of columns that are shown/hidden by clicking on the header of an aggregating column: 
+
+<img src="datatable/column_grouping.png"/>
+
+For these needs a [multiple line header](datatable/headers_footers.md#complexheadercontainingcolspansrowspansbuiltinfilters) is used. 
+The first line of an aggregating column is defined via an object with the following properties: 
+
+- **content** (string) - content-forming property, here: **columnGroup**. The property is also used to define [header filters](#builtinfilters);
+- **batch** (string, number) - ID of the group; 
+- **groupText** (string) - title of the group (it is shown when the group is in a closed state);
+- **closed** (boolean) - the initial state of the group, *false* by default;
+- **colspan** (number) - the number of columns in the group, including the aggregating one. 
+
+Also, each column that belongs to some group, should be given a group ID defined by **batch** property: 
+
+~~~js
+columns:[
+	//aggregating column
+	{ id:"2008_1", header:[ 
+	  { content:"columnGroup", closed:true, batch:"2008", groupText:"2008", colspan:12},
+	  "January"
+	]},
+	//other columns from the group 
+	{ id:"2008_2", 	batch:"2008", header:[null, "February"] },
+	{ id:"2008_3", 	batch:"2008", header:[null, "March"] },
+	{ id:"2008_4", 	batch:"2008", header:[null, "April"] },
+	...
+]    
+~~~
+
+{{sample 60_pro/01_datatable/12_group_columns.html}}
+
+Read more about [colspans and rowspans](datatable/headers_footers.md#complexheadercontainingcolspansrowspansbuiltinfilters) in Webix datatable header. 
 
 Setting Colspans/Rowspans
 ------------------------------
