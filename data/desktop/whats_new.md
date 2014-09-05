@@ -2,6 +2,7 @@ What's new
 ====================
 
 {{index
+- desktop/whats_new_2.md
 - desktop/whats_new_1_10.md
 - desktop/whats_new_1_9.md
 - desktop/whats_new_1_8.md
