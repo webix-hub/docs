@@ -39,7 +39,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.treetable_callevent.md - calls an inner event
 - api/link/ui.treetable_checkall.md - check all items in tree
-- api/link/ui.treetable_checkitem.md - checks the checkbox related to the specified item
+- api/link/ui.treetable_checkitem.md - checks the checkbox	related to the specified item
 - api/link/ui.treetable_clearall.md - removes all items from the component
 - api/link/ui.treetable_clearcss.md - removes css class from all items
 - api/link/ui.treetable_clearvalidation.md - removes all validation marks from the component
@@ -100,6 +100,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_getprevsiblingid.md - returns the id of the previous sibling of the specified node
 - api/link/ui.treetable_getscrollstate.md - returns the current position of scrolls
 - api/link/ui.treetable_getselectedid.md - returns the selected cells
+- api/link/ui.treetable_getselecteditem.md - 
 - api/link/ui.treetable_getstate.md - returns the current state of the view
 - api/link/ui.treetable_gettext.md - returns text value of a cell
 - api/link/ui.treetable_gettopparentview.md - returns top parent view
@@ -153,7 +154,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_show.md - makes the component visible
 - api/link/ui.treetable_showcell.md - scrolls the table (if needed) to make the specified cell visible
 - api/link/ui.treetable_showcolumn.md - shows the column which was previously hidden by method 'hidecolumn'
-- api/link/ui.treetable_showcolumnbatch.md - 
+- api/link/ui.treetable_showcolumnbatch.md - shows or hides a group of columns
 - api/link/ui.treetable_showitem.md - 'scrolls' the table to make the specified row visible
 - api/link/ui.treetable_showitembyindex.md - 'scrolls' the table to make the specified row visible
 - api/link/ui.treetable_showoverlay.md - shows the overlay message over the body of DataTable
@@ -282,6 +283,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.treetable_header_config.md - enables/disables the header in DataTable (enabled, by default)
 - api/link/ui.treetable_headerrowheight_config.md - sets the heigth of the header row
+- api/link/ui.treetable_headermenu_config.md - 
 - api/link/ui.treetable_height_config.md - sets the height of the component
 - api/link/ui.treetable_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.treetable_id_config.md - the component ID
@@ -320,6 +322,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_scrollx_config.md - enables/disables horizontal scrolling
 - api/link/ui.treetable_scrolly_config.md - enables/disables vertical scrolling
 - api/link/ui.treetable_select_config.md - sets the selection mode in DataTable
+- api/link/ui.treetable_spans_config.md - 
 - api/link/ui.treetable_threestate_config.md - defines three-state checkboxes for the tree. Flase by default.
 - api/link/ui.treetable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.treetable_type_config.md - used for configuring presentation of items
@@ -357,6 +360,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_on_context_other.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.treetable_on_dblclick_other.md - attaches a dblclick behavior for component items with the specified CSS class.
 - api/link/ui.treetable_on_mouse_move_other.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.treetable_waitdata_other.md - 
 }}
 
 

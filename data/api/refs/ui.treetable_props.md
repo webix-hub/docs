@@ -36,6 +36,7 @@ Properties
 - api/link/ui.treetable_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.treetable_header_config.md - enables/disables the header in DataTable (enabled, by default)
 - api/link/ui.treetable_headerrowheight_config.md - sets the heigth of the header row
+- api/link/ui.treetable_headermenu_config.md - 
 - api/link/ui.treetable_height_config.md - sets the height of the component
 - api/link/ui.treetable_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.treetable_id_config.md - the component ID
@@ -74,6 +75,7 @@ Properties
 - api/link/ui.treetable_scrollx_config.md - enables/disables horizontal scrolling
 - api/link/ui.treetable_scrolly_config.md - enables/disables vertical scrolling
 - api/link/ui.treetable_select_config.md - sets the selection mode in DataTable
+- api/link/ui.treetable_spans_config.md - 
 - api/link/ui.treetable_threestate_config.md - defines three-state checkboxes for the tree. Flase by default.
 - api/link/ui.treetable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.treetable_type_config.md - used for configuring presentation of items
@@ -116,6 +118,7 @@ Properties
 - api/link/ui.treetable_gravity_config.md
 - api/link/ui.treetable_header_config.md
 - api/link/ui.treetable_headerrowheight_config.md
+- api/link/ui.treetable_headermenu_config.md
 - api/link/ui.treetable_height_config.md
 - api/link/ui.treetable_hidden_config.md
 - api/link/ui.treetable_id_config.md
@@ -154,6 +157,7 @@ Properties
 - api/link/ui.treetable_scrollx_config.md
 - api/link/ui.treetable_scrolly_config.md
 - api/link/ui.treetable_select_config.md
+- api/link/ui.treetable_spans_config.md
 - api/link/ui.treetable_threestate_config.md
 - api/link/ui.treetable_tooltip_config.md
 - api/link/ui.treetable_type_config.md

@@ -163,6 +163,7 @@ Items of the component combines an icon with the text label. The component can b
 - api/link/ui.tabbar_$render_other.md - code called after rending control
 - api/link/ui.tabbar_$rendericon_other.md - renders icon for the control
 - api/link/ui.tabbar_$renderinput_other.md - renders html for the input
+- api/link/ui.tabbar_$renderlabel_other.md - 
 - api/link/ui.tabbar_$scope_other.md - scope for resolving event and method names
 - api/link/ui.tabbar_$setsize_other.md - sets the component size
 - api/link/ui.tabbar_$setvalue_other.md - called each time when component need to set value in related html input

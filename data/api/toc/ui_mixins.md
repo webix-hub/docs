@@ -13,6 +13,7 @@ Mixins
 - api/refs/collectionbind.md -  binding rules for collections of objects
 - api/refs/contexthelper.md -  provides for subviews seen by right mouse click
 - api/refs/copypaste.md -  provides support for copy-paste operations (integration with clipboard) 
+- api/refs/customscroll.md - 
 - api/refs/datacollection.md -  view-less control which stores collections of data objects 
 - api/refs/datadriver.md -  data parsing for different format
 - api/refs/dataloader.md -  loads and process data in to component
@@ -45,6 +46,7 @@ Mixins
 - api/refs/overlaybox.md -  show a temporary layer other view
 - api/refs/pagingability.md -  interface which adds support for pager
 - api/refs/powerarray.md -  extension for arrays
+- api/refs/progressbar.md - 
 - api/refs/recordbind.md -  binding logic for view which have single data object
 - api/refs/renderstack.md -  render strategy for plain datasets
 - api/refs/scrollable.md -  adds scroll for the view
@@ -94,6 +96,7 @@ Mixins
 - api/refs/collectionbind.md
 - api/refs/contexthelper.md
 - api/refs/copypaste.md
+- api/refs/customscroll.md
 - api/refs/datacollection.md
 - api/refs/datadriver.md
 - api/refs/dataloader.md
@@ -126,6 +129,7 @@ Mixins
 - api/refs/overlaybox.md
 - api/refs/pagingability.md
 - api/refs/powerarray.md
+- api/refs/progressbar.md
 - api/refs/recordbind.md
 - api/refs/renderstack.md
 - api/refs/scrollable.md

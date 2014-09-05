@@ -1,3 +1,4 @@
+
 Methods
 =======
 
@@ -6,6 +7,7 @@ Methods
 - api/ui.datatable_addcellcss.md - adds a css class to the cell
 - api/link/ui.datatable_addcss.md - applied CSS class to a component item
 - api/ui.datatable_addrowcss.md - adds a css class to the row
+- api/ui.datatable_addspan.md - 
 - api/link/ui.datatable_adjust.md - adjusts the component to the size of the parent HTML container
 - api/ui.datatable_adjustcolumn.md - adjusts a column to the width of the content
 - api/ui.datatable_adjustrowheight.md - autodetect height of rows in datatable
@@ -65,6 +67,7 @@ Methods
 - api/link/ui.datatable_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
 - api/ui.datatable_getscrollstate.md - returns the current position of scrolls
 - api/ui.datatable_getselectedid.md - returns the selected cells
+- api/ui.datatable_getselecteditem.md - 
 - api/link/ui.datatable_getstate.md - returns the current state of the view
 - api/ui.datatable_gettext.md - returns text value of a cell
 - api/link/ui.datatable_gettopparentview.md - returns top parent view
@@ -102,6 +105,7 @@ Methods
 - api/ui.datatable_removecellcss.md - remove css class from the cell of datatable
 - api/link/ui.datatable_removecss.md - removes CSS class from a component item
 - api/ui.datatable_removerowcss.md - remove css class from the row
+- api/ui.datatable_removespan.md - 
 - api/ui.datatable_render.md - renders the specified item or the whole component
 - api/link/ui.datatable_resize.md - adjusts the view to a new size
 - api/ui.datatable_scrollto.md - scrolls the view to the defined position
@@ -135,6 +139,7 @@ Methods
 - api/ui.datatable_addcellcss.md
 - api/link/ui.datatable_addcss.md
 - api/ui.datatable_addrowcss.md
+- api/ui.datatable_addspan.md
 - api/link/ui.datatable_adjust.md
 - api/ui.datatable_adjustcolumn.md
 - api/ui.datatable_adjustrowheight.md
@@ -194,6 +199,7 @@ Methods
 - api/link/ui.datatable_getprevid.md
 - api/ui.datatable_getscrollstate.md
 - api/ui.datatable_getselectedid.md
+- api/ui.datatable_getselecteditem.md
 - api/link/ui.datatable_getstate.md
 - api/ui.datatable_gettext.md
 - api/link/ui.datatable_gettopparentview.md
@@ -231,6 +237,7 @@ Methods
 - api/ui.datatable_removecellcss.md
 - api/link/ui.datatable_removecss.md
 - api/ui.datatable_removerowcss.md
+- api/ui.datatable_removespan.md
 - api/ui.datatable_render.md
 - api/link/ui.datatable_resize.md
 - api/ui.datatable_scrollto.md

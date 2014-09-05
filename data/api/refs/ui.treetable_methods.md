@@ -76,6 +76,7 @@ Methods
 - api/link/ui.treetable_getprevsiblingid.md - returns the id of the previous sibling of the specified node
 - api/link/ui.treetable_getscrollstate.md - returns the current position of scrolls
 - api/link/ui.treetable_getselectedid.md - returns the selected cells
+- api/link/ui.treetable_getselecteditem.md - 
 - api/link/ui.treetable_getstate.md - returns the current state of the view
 - api/link/ui.treetable_gettext.md - returns text value of a cell
 - api/link/ui.treetable_gettopparentview.md - returns top parent view
@@ -129,7 +130,7 @@ Methods
 - api/link/ui.treetable_show.md - makes the component visible
 - api/link/ui.treetable_showcell.md - scrolls the table (if needed) to make the specified cell visible
 - api/link/ui.treetable_showcolumn.md - shows the column which was previously hidden by method 'hidecolumn'
-- api/link/ui.treetable_showcolumnbatch.md - 
+- api/link/ui.treetable_showcolumnbatch.md - shows or hides a group of columns
 - api/link/ui.treetable_showitem.md - 'scrolls' the table to make the specified row visible
 - api/link/ui.treetable_showitembyindex.md - 'scrolls' the table to make the specified row visible
 - api/link/ui.treetable_showoverlay.md - shows the overlay message over the body of DataTable
@@ -219,6 +220,7 @@ Methods
 - api/link/ui.treetable_getprevsiblingid.md
 - api/link/ui.treetable_getscrollstate.md
 - api/link/ui.treetable_getselectedid.md
+- api/link/ui.treetable_getselecteditem.md
 - api/link/ui.treetable_getstate.md
 - api/link/ui.treetable_gettext.md
 - api/link/ui.treetable_gettopparentview.md

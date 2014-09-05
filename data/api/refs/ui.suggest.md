@@ -34,6 +34,7 @@ Can be used standalone or as editor for other components. Check [suggest](deskto
 - api/link/ui.suggest_getparentview.md - returns the parent view of the component
 - api/ui.suggest_getsuggestion.md - returns id of top suggestion from the suggest list
 - api/link/ui.suggest_gettopparentview.md - returns top parent view
+- api/ui.suggest_getvalue.md - 
 - api/link/ui.suggest_hasevent.md - checks whether the component has the specified event
 - api/link/ui.suggest_hide.md - hides the view
 - api/link/ui.suggest_isenabled.md - checks whether the view is enabled
@@ -44,6 +45,7 @@ Can be used standalone or as editor for other components. Check [suggest](deskto
 - api/link/ui.suggest_resizechildren.md - resizes all children of the calling component
 - api/ui.suggest_setmastervalue.md - set value in master control
 - api/link/ui.suggest_setposition.md - sets window's position
+- api/ui.suggest_setvalue.md - 
 - api/link/ui.suggest_show.md - makes the component visible
 - api/link/ui.suggest_unbind.md - breaks "bind" link
 - api/link/ui.suggest_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
@@ -75,7 +77,7 @@ Can be used standalone or as editor for other components. Check [suggest](deskto
 
 {{api
 - api/link/ui.suggest_animate_config.md - defines or disables view change animation.
-- api/link/ui.suggest_autofit_config.md - adjusts window size to the size of an HTML node	it is initiated in
+- api/link/ui.suggest_autofit_config.md - adjusts window size to the size of an html node it is initiated in
 - api/link/ui.suggest_autofocus_config.md - sets focus on the window the moment it appears on the page
 - api/link/ui.suggest_body_config.md - the content of window body: template or view
 - api/link/ui.suggest_borderless_config.md - used to hide the component borders

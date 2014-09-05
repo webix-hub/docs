@@ -10,6 +10,8 @@ Others
 - api/editors_date_other.md - edits dates with the help of a popup calendar.
 - api/editors_inline-checkbox_other.md - a customizable checkbox editor
 - api/editors_inline-text_other.md - a customizable text editor
+- api/editors_multiselect_other.md - 
+- api/editors_password_other.md - 
 - api/editors_popup_other.md - a popup text editor for long texts
 - api/editors_richselect_other.md - a popup list of predefined select options
 - api/editors_select_other.md - allows for picking up one of the predefined values
@@ -24,6 +26,8 @@ Others
 - api/editors_date_other.md
 - api/editors_inline-checkbox_other.md
 - api/editors_inline-text_other.md
+- api/editors_multiselect_other.md
+- api/editors_password_other.md
 - api/editors_popup_other.md
 - api/editors_richselect_other.md
 - api/editors_select_other.md

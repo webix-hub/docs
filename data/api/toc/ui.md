@@ -142,7 +142,7 @@ table.webixtoc td{
         <td> a sub-menu </td>
     </tr>    
     <tr>
-    	<td> <img src="api/toc/suggest.png"/> </td>
+        <td> <img src="api/toc/suggest.png"/> </td>
         <td> api/refs/ui.suggest.md </td>
         <td>a suggest control</td>
     </tr>
@@ -228,9 +228,19 @@ table.webixtoc td{
         <td>a static picture of an icon </td>
     </tr>
     <tr>
-    	<td> <img src="api/toc/label.png"/> </td>
+        <td> <img src="api/toc/label.png"/> </td>
         <td> api/refs/ui.label.md </td>
         <td>a non-editable text control</td>
+    </tr>
+    <tr>
+        <td> <img src="api/toc/toggle.png"/> </td>
+        <td> api/refs/ui.multitext.md </td>
+        <td>a multi-text control</td>
+    </tr>
+    <tr>
+        <td> <img src="api/toc/richselect.png"/> </td>
+        <td> api/refs/ui.multiselect.md </td>
+        <td>a multi-select control</td>
     </tr>
     <tr>
     	<td> <img src="api/toc/radio.png"/> </td>
@@ -410,6 +420,8 @@ table.webixtoc td{
 - api/refs/ui.radio.md
 - api/refs/ui.resizer.md
 - api/refs/ui.richselect.md
+- api/refs/ui.multitext.md
+- api/refs/ui.multiselect.md
 - api/refs/ui.scrollview.md
 - api/refs/ui.search.md
 - api/refs/ui.segmented.md
@@ -418,6 +430,9 @@ table.webixtoc td{
 - api/refs/ui.spacer.md
 - api/refs/ui.submenu.md
 - api/refs/ui.suggest.md
+- api/refs/ui.multisuggest.md
+- api/refs/ui.datasuggest.md
+- api/refs/ui.gridsuggest.md
 - api/refs/ui.tabbar.md
 - api/refs/ui.tabview.md
 - api/refs/ui.template.md

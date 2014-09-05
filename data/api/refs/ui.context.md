@@ -86,7 +86,7 @@ The component presents a plain window that can contain any content. Check [conte
 
 {{api
 - api/link/ui.context_animate_config.md - defines or disables view change animation.
-- api/link/ui.context_autofit_config.md - adjusts window size to the size of an HTML node	it is initiated in
+- api/link/ui.context_autofit_config.md - adjusts window size to the size of an html node it is initiated in
 - api/link/ui.context_autofocus_config.md - sets focus on the window the moment it appears on the page
 - api/link/ui.context_body_config.md - the content of window body: template or view
 - api/link/ui.context_borderless_config.md - used to hide the component borders
