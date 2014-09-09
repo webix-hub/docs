@@ -42,7 +42,7 @@ webix.ui({
 Each tabview cell features:
 
 - **header** - string with a heading for the cell, displayed as **tab title**;
-- **body** - **component** object that is placed in this cell. 
+- **body** - configuration object for the **component** that is placed in this cell. 
 
 {{note
 Note that switching between views is enabled automatically via a [tabbar](desktop/controls.md#tabbar) control. For more customization, use a [multiview](desktop/multiview.md) component and choose the needed switching method. 
@@ -50,12 +50,17 @@ Note that switching between views is enabled automatically via a [tabbar](deskto
 
 ##Working with Tabview
 
-Hybrid nature of a tabview allows configuring each of its parts separately though the same-name configuration objects. Each of these objects may contain native properties of
- [multiview](desktop/multiview.md) and [tabbar](desktop/controls.md#tabbar) that need to be redefined. If the configurations are omitted, default values will be used. 
+Hybrid nature of a tabview allows configuring each of its parts separately:
+
+- though the same-name object properties in the initial configuration:
+
+These  configuration objects may contain native properties of [multiview](desktop/multiview.md) and [tabbar](desktop/controls.md#tabbar)
+that need to be redefined. If the configurations are omitted, default values will be used. 
 
 ~~~js
-{ 
+webix.ui({ 
 	view:"tabview", 
+    id:"my_tabview",
   	cells: [], 
     tabbar:{
     	...
@@ -63,13 +68,21 @@ Hybrid nature of a tabview allows configuring each of its parts separately thoug
     multiview:{
     	...
     }
-  
-} 
+}); 
 ~~~
+
+- by accessing multiview and tabbar objects to work with them dynamically:
+
+~~~js
+var tabbarObj = $$("my_tabview").getTabbar();
+var multiviewObj = $$("my_tabview").getMultiview();
+~~~
+
+All the API methods, events and properties of a api/refs/ui.tabbar.md and api/refs/ui.multiview.md respectively are applicable to these objects. 
 
 ###Enabling animation
 
-By defauls the switching of tabview tabs is not animated. Since animation is a [multiview](desktop/multiview.md) feature, it can be enabled within **multiview** configuration. 
+By default the switching of tabview tabs is not animated. Since animation is a [multiview](desktop/multiview.md) feature, it can be enabled within **multiview** configuration. 
 
 ~~~js
 view:"taview",

@@ -233,7 +233,7 @@ table.webixtoc td{
         <td>a non-editable text control</td>
     </tr>
     <tr>
-        <td> <img src="api/toc/toggle.png"/> </td>
+        <td> <img src="api/toc/text.png"/> </td>
         <td> api/refs/ui.multitext.md </td>
         <td>a multi-text control</td>
     </tr>

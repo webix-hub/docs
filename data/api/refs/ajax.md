@@ -14,11 +14,6 @@ ajax
 
 The lib can execute **get** and **post** requests in sync and async mode. For more details check [Ajax operations](helpers/ajax_operations.md) article.
 
-
-
-
-
-
 <div class='h2'>Methods</div>
 
 {{api
@@ -32,19 +27,21 @@ The lib can execute **get** and **post** requests in sync and async mode. For mo
 - api/ajax_sync.md - 'says' to send requests synchronously
 }}
 
-
-
-
+<div class='h2'>Events</div>
+{{api
+- api/_onbeforeajax.md - attaches an event handler to any Ajax request
+}}
 
 <div class='h2'>Other</div>
 
 
 {{api
-- api/ajax_master_other.md - 
+- api/ajax_master_other.md - returns a master component for the ajax request
 }}
 
 
 @index:
 - api/refs/ajax_methods.md
+- api/refs/ajax_events.md
 - api/refs/ajax_others.md
 

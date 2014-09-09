@@ -1,4 +1,3 @@
-
 Properties
 ==========
 
@@ -16,8 +15,8 @@ Properties
 - api/link/ui.multitext_height_config.md - sets the height of the component
 - api/link/ui.multitext_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.multitext_hotkey_config.md - sets a hotkey that triggers button clicking
-- api/ui.multitext_icon_config.md - 
-- api/ui.multitext_iconwidth_config.md - 
+- api/ui.multitext_icon_config.md - sets an icon type
+- api/ui.multitext_iconwidth_config.md - sets icon width
 - api/link/ui.multitext_id_config.md - the component ID
 - api/link/ui.multitext_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.multitext_inputpadding_config.md - padding of text in the input
@@ -37,7 +36,7 @@ Properties
 - api/link/ui.multitext_relatedaction_config.md - action to call when value of cell changes
 - api/link/ui.multitext_relatedview_config.md - id of view, that will be affected by relatedAction operation
 - api/link/ui.multitext_required_config.md - marks field as required
-- api/ui.multitext_separator_config.md - 
+- api/ui.multitext_separator_config.md - sets a delimiter for control's values
 - api/link/ui.multitext_suggest_config.md - links suggest list to the input
 - api/link/ui.multitext_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/link/ui.multitext_template_config.md - the component template

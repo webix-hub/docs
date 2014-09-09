@@ -1,6 +1,6 @@
 onSubmit
 ==============================
-@short: fires when enter key is pressed for a control in focus
+@short: fires when enter key is pressed for a focused control in the form
 
 @params: 
 

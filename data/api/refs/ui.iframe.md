@@ -96,7 +96,6 @@ Check (templates)[api/refs/ui.template.md] for example. Check [iframe](desktop/i
 - api/link/ui.iframe_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.iframe_on_config.md - allows attaching custom handlers to inner events of the component
 - api/ui.iframe_src_config.md - the URL of a document you'd like to show in an iframe
-- api/ui.iframe_waitmessage_config.md - defines whether the loading cover should be displayed while loading (actual in case of 'src' parameter)
 - api/link/ui.iframe_width_config.md - sets the width of the component
 }}
 

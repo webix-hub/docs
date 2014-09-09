@@ -16,10 +16,11 @@ webix.ui({
 @template:	api_config
 @descr:
 
-disabled item lost focus and will not react on mouse events
-Same state can be forced through js API
+A disabled item looses  focus and will not react on mouse events. 
+
+Same state can be forced through Webix API:
 
 ~~~js
 $$("button1").disable();
-//$$("button1").enable();
+$$("button1").enable();
 ~~~

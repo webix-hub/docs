@@ -1,10 +1,8 @@
 $renderInput
 =============
 
-
 @short: renders html for the input 
 	
-
 @params:
 - obj       object      input configuration
 - html      string      inner html of the input
@@ -25,5 +23,5 @@ var text = input.$renderInput(input.config, html, id);
 
 {{note Not purposed for direct calls }}
 
-Can be used in custom view, to redefine html content of the input.   
+Can be used in custom view to redefine html content of the input.   
 

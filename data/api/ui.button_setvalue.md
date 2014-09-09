@@ -7,7 +7,7 @@ setValue
 	sets a new value for the component
 
 @params:
-- value		string 	a new value for the button
+- value		string 	a new value for the control
 
 @example:
 webix.ui({

@@ -38,10 +38,11 @@ All controls fall into:
 
 In case of multiple controls **value** property defines the one initially chosen. 
 
-**Value for the control may be:** 
+**Value of the control may be**:
 
-- text string in the [text](desktop/controls.md#text) or [textarea](desktop/controls.md#textarea) control;
-- state of two-state controls ([checkbox](desktop/controls.md#checkbox), [radio](desktop/controls.md#radio) and [toggle](desktop/controls.md#toggle))
-- selected option of integral buttons ([tabbar](desktop/controls.md#tabbar) and [segmented](desktop/controls.md#segmented))
-- text on the [button](desktop/controls.md#button);
-- selected date or color item ([datepicker](desktop/controls.md#datepicker), [colorpicker](desktop/controls.md#colorpicker)).
+- text value in the input [text](desktop/controls.md#text) and [textarea](desktop/controls.md#textarea) field;
+- selected item like date in [calendar](desktop/calendar.md) and color in the [colorboard](desktop/colorboard.md);
+- state of the two-state control ([checkbox](desktop/controls.md#checkbox), [radio](desktop/controls.md#radio), [toggle](desktop/controls.md#toggle));
+- selected option of integral buttons ([tabbar](desktop/controls.md#tabbar), [tabview](desktop/tabview.md), [segmented](desktop/controls.md#segmented);
+- selected option of [select](desktop/controls.md#select), [richselect](desktop/controls.md#richselect) and [combo](desktop/controls.md#combo));
+- string with selected options of a [multiselect](desktop/controls.md#multiselect) control.

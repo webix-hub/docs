@@ -35,10 +35,11 @@ $$('b1').getValue(); //returns "b1"
 Value of the control may be:
 
 - text value in the input [text](desktop/controls.md#text) and [textarea](desktop/controls.md#textarea) field;
+- text value aggregated from all control fields and separated by comma (default) for the 
+[multitext](desktop/controls.md#multitext) control. 
 - selected item like date in [calendar](desktop/calendar.md) and color in the [colorboard](desktop/colorboard.md);
 - state of the two-state control ([checkbox](desktop/controls.md#checkbox), [radio](desktop/controls.md#radio), [toggle](desktop/controls.md#toggle));
-- ID of selected option of integral buttons ([tabbar](desktop/controls.md#tabbar), [tabview](desktop/tabview.md), [segmented](desktop/controls.md#segmented)
-or selected option of [select](desktop/controls.md#select), [richselect](desktop/controls.md#richselect) 
-and [combo](desktop/controls.md#combo)).
-
+- ID of selected option of integral buttons ([tabbar](desktop/controls.md#tabbar), [tabview](desktop/tabview.md), [segmented](desktop/controls.md#segmented);
+- ID of a selected option of [select](desktop/controls.md#select), [richselect](desktop/controls.md#richselect) and [combo](desktop/controls.md#combo));
+- string with IDs of selected options of the [multiselect](desktop/controls.md#multiselect). 
 

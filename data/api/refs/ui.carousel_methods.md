@@ -1,4 +1,3 @@
-
 Methods
 =======
 
@@ -18,7 +17,7 @@ Methods
 - api/ui.carousel_getactiveindex.md - gets the index of the current active item
 - api/link/ui.carousel_getchildviews.md - returns child views of the calling component
 - api/link/ui.carousel_getformview.md - returns master form for the input
-- api/ui.carousel_getlayout.md - 
+- api/ui.carousel_getlayout.md - gets layout object with carousel views
 - api/link/ui.carousel_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.carousel_getparentview.md - returns the parent view of the component
 - api/link/ui.carousel_gettopparentview.md - returns top parent view

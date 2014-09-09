@@ -1,9 +1,8 @@
-
 Methods
 =======
 
 {{api
-- api/ui.multitext_addsection.md - 
+- api/ui.multitext_addsection.md - add new empty field to the collection
 - api/link/ui.multitext_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.multitext_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.multitext_bind.md - binds components
@@ -23,18 +22,18 @@ Methods
 - api/link/ui.multitext_getparentview.md - returns the parent view of the component
 - api/link/ui.multitext_gettopparentview.md - returns top parent view
 - api/link/ui.multitext_getvalue.md - returns the current value of the control
-- api/ui.multitext_getvaluehere.md - 
+- api/ui.multitext_getvaluehere.md - gets value of the basic field
 - api/link/ui.multitext_hasevent.md - checks whether the component has the specified event
 - api/link/ui.multitext_hide.md - hides the view
 - api/link/ui.multitext_isenabled.md - checks whether the view is enabled
 - api/link/ui.multitext_isvisible.md - checks whether the view is visible
 - api/link/ui.multitext_mapevent.md - routes events from one object to another
 - api/link/ui.multitext_refresh.md - repaints the component
-- api/ui.multitext_removesection.md - 
+- api/ui.multitext_removesection.md - removes an additional field from the multitext group
 - api/link/ui.multitext_render.md - renders the specified item or the whole component
 - api/link/ui.multitext_resize.md - adjusts the view to a new size
 - api/link/ui.multitext_setvalue.md - sets a new value for the component
-- api/ui.multitext_setvaluehere.md - 
+- api/ui.multitext_setvaluehere.md - sets value for the basic field of a multitext control
 - api/link/ui.multitext_show.md - makes the component visible
 - api/link/ui.multitext_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.multitext_unbind.md - breaks "bind" link

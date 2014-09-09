@@ -1,4 +1,3 @@
-
 Others
 =======
 
@@ -9,7 +8,7 @@ Others
 - api/link/ui.datepicker_$render_other.md - code called after rending control
 - api/link/ui.datepicker_$rendericon_other.md - renders icon for the control
 - api/link/ui.datepicker_$renderinput_other.md - renders html for the input
-- api/link/ui.datepicker_$renderlabel_other.md - 
+- api/link/ui.datepicker_$renderlabel_other.md - renders html for the label
 - api/link/ui.datepicker_$scope_other.md - scope for resolving event and method names
 - api/link/ui.datepicker_$setsize_other.md - sets the component size
 - api/link/ui.datepicker_$setvalue_other.md - called each time when component need to set value in related html input

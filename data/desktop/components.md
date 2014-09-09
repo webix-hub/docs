@@ -177,13 +177,15 @@ Controls are mainly responsible for handling events since they enable user-app i
 		<li><a href="desktop/controls.md#counter"><img src="api/toc/counter.png"/> Counter</a></li>
 		<li><a href="desktop/controls.md#datepicker"><img src="api/toc/datepicker.png"/> Datepicker</a></li>
 		<li><a href="desktop/controls.md#icon"><img src="api/toc/icon.png"/> Icon</a></li>
+        <li><a href="desktop/controls.md#fieldset"> <img src="api/toc/fieldset.png"/> Fieldset</a></li>
 	</ul>
 </div>
 
 <div class="controls_group">
 	<ul>
-        <li><a href="desktop/controls.md#fieldset"> <img src="api/toc/fieldset.png"/> Fieldset</a></li>
 		<li><a href="desktop/controls.md#label"><img src="api/toc/label.png"/> Label</a></li>
+        <li><a href="desktop/controls.md#multiselect"> <img src="api/toc/richselect.png"/> Multiselect</a></li>
+        <li><a href="desktop/controls.md#multitext"> <img src="api/toc/text.png"/> Multitext</a></li>
 		<li><a href="desktop/controls.md#radio"> <img src="api/toc/radio.png"/> Radio</a></li>
 		<li><a href="desktop/controls.md#richselect"><img src="api/toc/richselect.png"/> Richselect</a></li>
 		<li><a href="desktop/controls.md#search"><img src="api/toc/search.png"/> Search</a></li>
@@ -194,6 +196,7 @@ Controls are mainly responsible for handling events since they enable user-app i
 
 <div class="controls_group">
 	<ul>
+    	
         <li><a href="desktop/controls.md#slider"><img src="api/toc/slider.png"/> Slider </a></li>
 		<li><a href="desktop/suggest.md"><img src="api/toc/suggest.png"/> Suggest list</a></li>
 		<li><a href="desktop/controls.md#tabbar"><img src="api/toc/tabbar.png"/> Tabbar</a></li>

@@ -43,7 +43,7 @@ The control supports any content inside of it. The content blocks can be arrange
 - api/ui.carousel_getactiveindex.md - gets the index of the current active item
 - api/link/ui.carousel_getchildviews.md - returns child views of the calling component
 - api/link/ui.carousel_getformview.md - returns master form for the input
-- api/ui.carousel_getlayout.md - 
+- api/ui.carousel_getlayout.md - gets layout object with carousel views
 - api/link/ui.carousel_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.carousel_getparentview.md - returns the parent view of the component
 - api/link/ui.carousel_gettopparentview.md - returns top parent view
@@ -88,7 +88,7 @@ The control supports any content inside of it. The content blocks can be arrange
 {{api
 - api/link/ui.carousel_animate_config.md - defines or disables view change animation.
 - api/link/ui.carousel_borderless_config.md - used to hide the component borders
-- api/ui.carousel_cols_config.md - 
+- api/ui.carousel_cols_config.md - array of views arranged horizontally
 - api/link/ui.carousel_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.carousel_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.carousel_disabled_config.md - disables item
@@ -102,9 +102,9 @@ The control supports any content inside of it. The content blocks can be arrange
 - api/link/ui.carousel_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.carousel_navigation_config.md - defines navigation parameters
 - api/link/ui.carousel_on_config.md - allows attaching custom handlers to inner events of the component
-- api/ui.carousel_rows_config.md - 
+- api/ui.carousel_rows_config.md - array of views arranged vertically
 - api/ui.carousel_scrollspeed_config.md - speed of scrolling ('300ms' by default)
-- api/ui.carousel_type_config.md - 
+- api/ui.carousel_type_config.md - defines the layout borders
 - api/link/ui.carousel_width_config.md - sets the width of the component
 }}
 

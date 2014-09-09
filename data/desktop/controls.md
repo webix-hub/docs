@@ -442,7 +442,8 @@ Multiselect initialization
     - **labelWidth** (number) - width of the label container; 
     - **labelPosition** (string) - defines label position related to the input field. The only possible value is "top";
 - **placeholder** (string) - the initial text in the text field, disappears as you start typing in it;
-- **options** (array, object) - defines the set of items to select from. [Details](desktop/controls_guide.md#defininginitialvalues).
+- **options** (array, object) - defines the set of items to select from. [Details](desktop/controls_guide.md#defininginitialvalues);
+- **optionWidth** (number) - defines the width of a popup list. By default, it is adjusted to the control width. 	
 
 ####Changing "Select" button text
 
@@ -460,6 +461,22 @@ Multiselect suggest features a **buttonText** property that allows defining any 
 }}
 ~~~
 
+####Accessing popup elements
+
+Multiselect API allows getting to its constituent parts:
+
+~~~js
+//button object
+multiselect.getPopup().getButton();
+
+//list object
+multiselect.getpopup().getList();
+~~~
+
+[Controls Common Functionality](desktop/controls_guide.md)
+
+[API Reference](api__refs__ui.multiselect.html)
+
 ##Multitext 
 
 {{note
@@ -476,7 +493,7 @@ UI-related multitext is a dynamic control based on standard Webix [text](#text) 
 Multitext initialization
 }}
 ~~~js
-{ view:"multitext", value:'dummy@email.com, mirror@email.com', label:"Email" }
+{ view:"multitext", id:"multi", value:'dummy@email.com, mirror@email.com', label:"Email" }
 ~~~
 
 ####Main properties
@@ -486,9 +503,43 @@ Multitext initialization
 	- **labelAlign** (string) - label alignment towards its container. Possible values are "left" and "right".  In any way, it's placed left to the control; 
     - **labelWidth** (number) - width of the label container; 
     - **labelPosition** (string) - defines label position related to the input field. The only possible value is "top";
-- **placeholder** (string) - the initial text in the text field, disappears as you start typing in it.
+- **placeholder** (string) - the initial text in the text field, disappears as you start typing in it;
+- **icon** (string) - the control's icon. 
+
+####Field Collection IDs
+
+Each field of a multitext control features its own ID. It can be either a given (for the basic field) or an auto-generated one. 
+
+All the methods of a multitext object can be applied to any field object - the changes will be reflected for the whole control. 
+
+####Adding and removing fields
+
+Multitext API allows [adding](api/ui.multitext_addsection.md) and [removing](api/ui.multitext_removesection.md) additional fields dynamically: 
+
+~~~js
+var newFieldId = $$("multi").addSection();
+
+//remove specific field
+$$("multi").remove(newFieldId);
+//remove all the additional fields
+$$("multi").remove();
+~~~
+
+Notes:
+
+- Only additional fields can be removed, basic one always remains. 
+- The methods can be called from any multitext object from the group. 
+
+####Setting and getting values
+
+Multitext features an extended API for **setting** and **getting** its **values**. 
+
+- [setValue](api/link/ui.multitext_setvalue.md) and [getValue](api/link/ui.multitext_getvalue.md) methods for working with the value of the whole control;
+- [setValueHere](api/ui.multitext_setvaluehere.md) and [getValueHere](api/ui.multitext_getvaluehere.md) methods for for working with the value of the first (basic) field. 
 
 [Controls Common Functionality](desktop/controls_guide.md)
+
+[API Reference](api__refs__ui.multitext.html)
 
 ##Radio {#radio}
 

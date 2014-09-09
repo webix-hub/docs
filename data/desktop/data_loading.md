@@ -118,9 +118,7 @@ Webix provides info boxes that are laid over the component for a while to displa
 
 <img src="desktop/list_overlay.png"/>
 
-Some Webix components feature info message support out of the box in the form of: 
-
-- **overlay boxes** with any text or html content ([datatable](datatable/index.md)):
+Webix ([datatable](datatable/index.md)) features info message support out of the box in the form of  **overlay boxes** with any text or html content:
 
 ~~~js
 dtable.showOverLay("Loading");
@@ -131,15 +129,7 @@ dtable.hideOverlay();
 
 [More info on datatable loading screen support](datatable/loading_data.md#loadingscreen).
 
-- **waitMessage** with predefined css and used-defined text ([iFrame](desktop/iframe.md), [htmlform](desktop/htmlform.md) and [template](desktop/template.md)):
-
-~~~js
-{ view:"iframe", id:"frame-body", src:"data/pageA.html", waitMessage:"load" }
-~~~
-
-{{sample 80_docs/iframe.html}}
-
-For other componentes there exists a possibility to define **Overlay Boxes** and **Progress Bar** (**Progress Icon**) with the help of the dedicated modules.
+For other components there exists a possibility to define **Overlay Boxes** and **Progress Bar** (**Progress Icon**) with the help of the dedicated modules.
 
 ~~~js
 webix.extend($$("list1"), webix.OverlayBox); // on "this" pointer if the method is called within the component

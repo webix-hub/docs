@@ -27,7 +27,7 @@ if "asString" parameter was set, only row id will be returned
 @related:
 	datatable/selection.md
 @relatedapi:
-    api/ui.datatable_getselectedid.md
+    api/ui.datatable_getselecteditem.md
     api/ui.datatable_mapselection.md
     api/ui.datatable_select.md
     api/ui.datatable_unselect.md

@@ -1,4 +1,3 @@
-
 Methods
 =======
 
@@ -7,7 +6,7 @@ Methods
 - api/ui.datatable_addcellcss.md - adds a css class to the cell
 - api/link/ui.datatable_addcss.md - applied CSS class to a component item
 - api/ui.datatable_addrowcss.md - adds a css class to the row
-- api/ui.datatable_addspan.md - 
+- api/ui.datatable_addspan.md - adds colspan or rowspan to the datatable
 - api/link/ui.datatable_adjust.md - adjusts the component to the size of the parent HTML container
 - api/ui.datatable_adjustcolumn.md - adjusts a column to the width of the content
 - api/ui.datatable_adjustrowheight.md - autodetect height of rows in datatable
@@ -105,7 +104,7 @@ Methods
 - api/ui.datatable_removecellcss.md - remove css class from the cell of datatable
 - api/link/ui.datatable_removecss.md - removes CSS class from a component item
 - api/ui.datatable_removerowcss.md - remove css class from the row
-- api/ui.datatable_removespan.md - 
+- api/ui.datatable_removespan.md - removes a rowspan/colspan from the datatable
 - api/ui.datatable_render.md - renders the specified item or the whole component
 - api/link/ui.datatable_resize.md - adjusts the view to a new size
 - api/ui.datatable_scrollto.md - scrolls the view to the defined position

@@ -16,7 +16,16 @@ webix.ui({
         { value:2, label:"Papai" }, 
         { value:3, label:"Apple" }
     ]
-})
+}); 
+
+webix.ui({
+	view:"richselect",
+    options:["Banana", "Papai", "Apple"]
+});
+
+webix.ui({
+	view:"richselect", options:"server/options.php"
+});
 
 @template:	api_config
 @defined:	ui.richselect	
@@ -24,21 +33,20 @@ webix.ui({
 	desktop/controls_guide.md
 @relatedsample:
 	13_form/01_controls/11_richselect.html
-@relatedapi: 
+@relatedapi:    
 	api/datavalue_getvalue.md
     api/datavalue_setvalue.md
+    api/ui.button_value_config.md
 	
-	
-
 @descr:
-The property is an array of objects, each of which presents a singular select option in the drop-down list.<br>
 
-The objects in the array have **2 attributes**:
+Each option presents a singular select option in the drop-down list. Options can be set as: 
 
-- **id** - (*id*) the item id
-- **value** - (*string*) the item label
+- a simple array;
+- an associative array of objects with **id** and **value** properties;
+- a string with a path to a script that loads options from server. 
 
-Nore that the [getValue()](api/link/ui.richselect_getvalue.md) method returns the **ID** of selected option. 
+The initially selected option is defined by a api/ui.button_value_config.md property. 
 
 
 

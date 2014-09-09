@@ -31,15 +31,12 @@ $$('color').getValue();// -> "#2626FF"
 @defined: dataValue
 @descr:
 
-
-
 Value of the control may be:
-
 
 - text value in the input [text](desktop/controls.md#text) and [textarea](desktop/controls.md#textarea) field;
 - selected item like date in [calendar](desktop/calendar.md) and color in the [colorboard](desktop/colorboard.md);
 - state of the two-state control ([checkbox](desktop/controls.md#checkbox), [radio](desktop/controls.md#radio), [toggle](desktop/controls.md#toggle));
-- selected option of intergal buttons ([tabbar](desktop/controls.md#tabbar), [tabview](desktop/tabview.md), [segmented](desktop/controls.md#segmented)
-or selected option of [select](desktop/controls.md#select), [richselect](desktop/controls.md#richselect) 
-and [combo](desktop/controls.md#combo)).
+- selected option of integral buttons ([tabbar](desktop/controls.md#tabbar), [tabview](desktop/tabview.md), [segmented](desktop/controls.md#segmented);
+- selected option of [select](desktop/controls.md#select), [richselect](desktop/controls.md#richselect) and [combo](desktop/controls.md#combo));
+- string with selected options of a [multiselect](desktop/controls.md#multiselect) control.
 

@@ -1,11 +1,10 @@
-
 Properties
 ==========
 
 {{api
 - api/link/ui.carousel_animate_config.md - defines or disables view change animation.
 - api/link/ui.carousel_borderless_config.md - used to hide the component borders
-- api/ui.carousel_cols_config.md - 
+- api/ui.carousel_cols_config.md - array of views arranged horizontally
 - api/link/ui.carousel_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.carousel_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.carousel_disabled_config.md - disables item
@@ -19,9 +18,9 @@ Properties
 - api/link/ui.carousel_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.carousel_navigation_config.md - defines navigation parameters
 - api/link/ui.carousel_on_config.md - allows attaching custom handlers to inner events of the component
-- api/ui.carousel_rows_config.md - 
+- api/ui.carousel_rows_config.md - array of views arranged vertically
 - api/ui.carousel_scrollspeed_config.md - speed of scrolling ('300ms' by default)
-- api/ui.carousel_type_config.md - 
+- api/ui.carousel_type_config.md - defines the layout borders
 - api/link/ui.carousel_width_config.md - sets the width of the component
 }}
 

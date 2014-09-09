@@ -1,4 +1,4 @@
-Setting Progress Bar and Load Messages
+Setting Progress Bar and Overlay Messages
 =====================
 
 Webix allows visualizing the application workflow by adding the following elements to its components:
@@ -18,8 +18,9 @@ webix.extend($$("view_id"), webix.ProgressBar);
 
 Since now, the component with *"vew_id"* ID features two methods: 
 
-- **showProgress**(progress_config) - shows the progress bar/icon according to the passed configuration;
-- **hideProgress**() - hides progress bar/icon that was shown by the above mentioned method. 
+- [showProgress](api/progressbar_showprogress.md)(config) - shows the progress bar/icon according to the passed configuration, or [default one](api/progressbar_showprogress.md#details) 
+if the configuration is not provided;
+- [hideProgress](api/progressbar_hideprogress.md) - hides progress bar/icon that was shown by the above mentioned method.
 
 **Configuration** (progress_config) for a progress bar/icon includes:
 
@@ -27,6 +28,7 @@ Since now, the component with *"vew_id"* ID features two methods:
 	- "top" - progress bar at the top of the view;
     - "bottom" - progress bar at the bottom of the view;
     - "icon" - progress icon at the center of the view;
+- **icon** (string) - icon name (only if *type:"icon"* is set). Icon names can be checked at [FontAwesome](http://fortawesome.github.io/Font-Awesome/icons/));
 - **delay** (number) - life time in miliseconds of the progress bar, after which it is hidden (if **hide** parameter is enabled);
 - **hide** (boolean) - specifies whether a progress bar/icon shold be hidden after its life time. 
 - **position** (number) - an optional parameter, true only for the progress bar. Specifies the position of a progress mark on a bar. Varies from 0 to 1. 
@@ -131,14 +133,6 @@ webix.ui({
 ###Component-specific support of overlay boxes
 
 Webix [datatable](datatable/index.md) features [prebuilt overlay support](datatable/loading_data.md#loadingscreen).
-
-Webix [iFrame](desktop/iframe.md), [htmlform](desktop/htmlform.md) and [template](desktop/template.md) feature the possibility to define an overlay box with the help of a **waitMessage** property:
-
-~~~js
-{ view:"iframe", id:"frame-body", src:"data/pageA.html", waitMessage:"load" }
-~~~
-
-{{sample 80_docs/iframe.html}}
 
 ##Related Articles
 

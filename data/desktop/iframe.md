@@ -25,8 +25,7 @@ webix.ui({
 ~~~
 {{sample 80_docs/iframe.html}}
 
-- **src** (path) - defines external site url;
-- **waitMessage** (boolean) - set "Loading.." message to be displayed on page loading. 
+- **src** (path) - defines external site url.
 
 ##Working with IFrame
 

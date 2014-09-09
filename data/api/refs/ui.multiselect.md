@@ -1,10 +1,11 @@
 ui.multiselect 
 =============
 
+A non-editable combo box with the possibility to select several item at a time.
 
-dummy stub
+The control combines a non-editable text field with a drop-down list of predefined values. The list is supplied with a customizable 'Select' button to enter selected items to the input. 
 
-{{todo replace with real description. }}
+Check [multiselect](desktop/controls.md#multiselect) documentation for more detailed description.
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.richselect.md">ui.richselect</a>, <a href="api/refs/ui.text.md">ui.text</a>, <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
@@ -102,7 +103,7 @@ dummy stub
 - api/link/ui.multiselect_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.multiselect_name_config.md - name of the control
 - api/link/ui.multiselect_on_config.md - allows attaching custom handlers to inner events of the component
-- api/ui.multiselect_optionwidth_config.md - 
+- api/ui.multiselect_optionwidth_config.md - sets width of a popup list with options
 - api/link/ui.multiselect_options_config.md - defines data items of the drop-down list
 - api/link/ui.multiselect_placeholder_config.md - placeholder text for the input
 - api/link/ui.multiselect_popup_config.md - allows to attach pop-up menu to the button
@@ -139,7 +140,7 @@ dummy stub
 - api/link/ui.multiselect_$render_other.md - code called after rending control
 - api/link/ui.multiselect_$rendericon_other.md - renders icon for the control
 - api/link/ui.multiselect_$renderinput_other.md - renders html for the input
-- api/link/ui.multiselect_$renderlabel_other.md - 
+- api/link/ui.multiselect_$renderlabel_other.md - renders html for the label
 - api/link/ui.multiselect_$scope_other.md - scope for resolving event and method names
 - api/link/ui.multiselect_$setsize_other.md - sets the component size
 - api/link/ui.multiselect_$setvalue_other.md - called each time when component need to set value in related html input
@@ -158,4 +159,6 @@ dummy stub
 - api/refs/ui.multiselect_props.md
 - api/refs/ui.multiselect_events.md
 - api/refs/ui.multiselect_others.md
+
+@edition:pro
 

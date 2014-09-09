@@ -1,10 +1,9 @@
 ui.multitext 
 =============
 
+An editable text control with dynamically added removable fields.
 
-dummy stub
-
-{{todo replace with real description. }}
+Check [multitext](desktop/controls.md#multitext) documentation for more detailed description. 
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.text.md">ui.text</a>, <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
@@ -13,7 +12,7 @@ dummy stub
 <div class='h2'>Methods</div>
 
 {{api
-- api/ui.multitext_addsection.md - 
+- api/ui.multitext_addsection.md - add new empty field to the collection
 - api/link/ui.multitext_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.multitext_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.multitext_bind.md - binds components
@@ -33,18 +32,18 @@ dummy stub
 - api/link/ui.multitext_getparentview.md - returns the parent view of the component
 - api/link/ui.multitext_gettopparentview.md - returns top parent view
 - api/link/ui.multitext_getvalue.md - returns the current value of the control
-- api/ui.multitext_getvaluehere.md - 
+- api/ui.multitext_getvaluehere.md - gets value of the basic field
 - api/link/ui.multitext_hasevent.md - checks whether the component has the specified event
 - api/link/ui.multitext_hide.md - hides the view
 - api/link/ui.multitext_isenabled.md - checks whether the view is enabled
 - api/link/ui.multitext_isvisible.md - checks whether the view is visible
 - api/link/ui.multitext_mapevent.md - routes events from one object to another
 - api/link/ui.multitext_refresh.md - repaints the component
-- api/ui.multitext_removesection.md - 
+- api/ui.multitext_removesection.md - removes an additional field from the multitext group
 - api/link/ui.multitext_render.md - renders the specified item or the whole component
 - api/link/ui.multitext_resize.md - adjusts the view to a new size
 - api/link/ui.multitext_setvalue.md - sets a new value for the component
-- api/ui.multitext_setvaluehere.md - 
+- api/ui.multitext_setvaluehere.md - sets value for the basic field of a multitext control
 - api/link/ui.multitext_show.md - makes the component visible
 - api/link/ui.multitext_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.multitext_unbind.md - breaks "bind" link
@@ -90,8 +89,8 @@ dummy stub
 - api/link/ui.multitext_height_config.md - sets the height of the component
 - api/link/ui.multitext_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.multitext_hotkey_config.md - sets a hotkey that triggers button clicking
-- api/ui.multitext_icon_config.md - 
-- api/ui.multitext_iconwidth_config.md - 
+- api/ui.multitext_icon_config.md - sets an icon type
+- api/ui.multitext_iconwidth_config.md - sets icon width
 - api/link/ui.multitext_id_config.md - the component ID
 - api/link/ui.multitext_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.multitext_inputpadding_config.md - padding of text in the input
@@ -111,7 +110,7 @@ dummy stub
 - api/link/ui.multitext_relatedaction_config.md - action to call when value of cell changes
 - api/link/ui.multitext_relatedview_config.md - id of view, that will be affected by relatedAction operation
 - api/link/ui.multitext_required_config.md - marks field as required
-- api/ui.multitext_separator_config.md - 
+- api/ui.multitext_separator_config.md - sets a delimiter for control's values
 - api/link/ui.multitext_suggest_config.md - links suggest list to the input
 - api/link/ui.multitext_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/link/ui.multitext_template_config.md - the component template
@@ -138,7 +137,7 @@ dummy stub
 - api/link/ui.multitext_$render_other.md - code called after rending control
 - api/link/ui.multitext_$rendericon_other.md - renders icon for the control
 - api/link/ui.multitext_$renderinput_other.md - renders html for the input
-- api/link/ui.multitext_$renderlabel_other.md - 
+- api/link/ui.multitext_$renderlabel_other.md - renders html for the label
 - api/link/ui.multitext_$scope_other.md - scope for resolving event and method names
 - api/link/ui.multitext_$setsize_other.md - sets the component size
 - api/link/ui.multitext_$setvalue_other.md - called each time when component need to set value in related html input
@@ -151,10 +150,11 @@ dummy stub
 - api/link/ui.multitext_touchable_other.md - flag, which force touch reaction on touch screen devices
 }}
 
-
 @index:
 - api/refs/ui.multitext_methods.md
 - api/refs/ui.multitext_props.md
 - api/refs/ui.multitext_events.md
 - api/refs/ui.multitext_others.md
+
+@edition:pro
 

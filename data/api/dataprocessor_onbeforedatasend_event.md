@@ -6,17 +6,21 @@ onBeforeDataSend
 	
 
 @params:
-- package		object		json structure with all data for sending
+- obj		object		data object
+- id		string, number		ID of a data item
+- operation		string, number		operation name ("update, "insert", "delete")
 
 @example: 
 	
-some.attachEvent("onBeforeDataSend", function(package){
+some.attachEvent("onBeforeDataSend", function(obj, id, operation){
     //... some code here ... 
 });
 
 @template:	api_event
 
-
+@relatedapi:
+	api/dataprocessor_onafterdatasend_event.md
+    desktop/dataprocessor.md
 	
 @descr:
 

@@ -31,7 +31,7 @@ The component is full of various possibilities: filtering, sorting, pagination, 
 - api/ui.datatable_addcellcss.md - adds a css class to the cell
 - api/link/ui.datatable_addcss.md - applied CSS class to a component item
 - api/ui.datatable_addrowcss.md - adds a css class to the row
-- api/ui.datatable_addspan.md - 
+- api/ui.datatable_addspan.md - adds colspan or rowspan to the datatable
 - api/link/ui.datatable_adjust.md - adjusts the component to the size of the parent HTML container
 - api/ui.datatable_adjustcolumn.md - adjusts a column to the width of the content
 - api/ui.datatable_adjustrowheight.md - autodetect height of rows in datatable
@@ -129,7 +129,7 @@ The component is full of various possibilities: filtering, sorting, pagination, 
 - api/ui.datatable_removecellcss.md - remove css class from the cell of datatable
 - api/link/ui.datatable_removecss.md - removes CSS class from a component item
 - api/ui.datatable_removerowcss.md - remove css class from the row
-- api/ui.datatable_removespan.md - 
+- api/ui.datatable_removespan.md - removes a rowspan/colspan from the datatable
 - api/ui.datatable_render.md - renders the specified item or the whole component
 - api/link/ui.datatable_resize.md - adjusts the view to a new size
 - api/ui.datatable_scrollto.md - scrolls the view to the defined position
@@ -266,7 +266,7 @@ The component is full of various possibilities: filtering, sorting, pagination, 
 - api/link/ui.datatable_gravity_config.md - sets the view gravity (1 by default)
 - api/ui.datatable_header_config.md - enables/disables the header in DataTable (enabled, by default)
 - api/ui.datatable_headerrowheight_config.md - sets the heigth of the header row
-- api/ui.datatable_headermenu_config.md - 
+- api/ui.datatable_headermenu_config.md - adds a headermenu to control column visibility
 - api/link/ui.datatable_height_config.md - sets the height of the component
 - api/link/ui.datatable_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.datatable_id_config.md - the component ID
@@ -305,7 +305,7 @@ The component is full of various possibilities: filtering, sorting, pagination, 
 - api/ui.datatable_scrollx_config.md - enables/disables horizontal scrolling
 - api/ui.datatable_scrolly_config.md - enables/disables vertical scrolling
 - api/ui.datatable_select_config.md - sets the selection mode in DataTable
-- api/ui.datatable_spans_config.md - 
+- api/ui.datatable_spans_config.md - array of span configurations for the datatable
 - api/link/ui.datatable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/ui.datatable_type_config.md - used for configuring presentation of items
 - api/link/ui.datatable_url_config.md - the url of a data feed which will be loaded after component initialization
@@ -342,7 +342,7 @@ The component is full of various possibilities: filtering, sorting, pagination, 
 - api/link/ui.datatable_on_context_other.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.datatable_on_dblclick_other.md - attaches a dblclick behavior for component items with the specified CSS class.
 - api/link/ui.datatable_on_mouse_move_other.md - attaches a dblclick behavior for component items with the specified CSS class.
-- api/ui.datatable_waitdata_other.md - 
+- api/ui.datatable_waitdata_other.md - eventual result of an asynchronous operation ('promise' object) for the loaded data
 }}
 
 
