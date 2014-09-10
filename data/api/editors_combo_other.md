@@ -8,10 +8,9 @@ combo
 @type: string
 
 @example:
-{view:"datatable", columns:[
-	{id:"name", header:"Name", editor:"combo", options:[...]}
-	]
-}
+//for a datatable column
+{id:"name", header:"Name", editor:"combo", options:[...]}
+
 
 @template:	api_config
 

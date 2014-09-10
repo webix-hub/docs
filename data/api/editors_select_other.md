@@ -2,13 +2,14 @@ select
 =============
 
 
-@short: allows for picking up one of the predefined values
+@short: a drowdown list of predefined values based on HTML select
 	
 
 @type:string
 
 @example:
-{ header:"Category", editor:"select", options:["","Thriller", "Crime"],  width:80},
+//for a datatable column
+{ header:"Category", editor:"select", options:["","Thriller", "Crime"],  width:80}
 
 @template:	api_config
 @descr:
@@ -22,8 +23,7 @@ var sel_options = {
     "3" : "Western"
 };
 
-
-{... editor:"select", options:sel_options}
+{editor:"select", options:sel_options}
 ~~~
 
 However, in this case, the necessary data is stored in a dataset in the form of keys ("1", "2", "3") rather than values "Thriller". 

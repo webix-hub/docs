@@ -8,10 +8,9 @@ richselect
 @type: string
 
 @example:
-view:"datatable",
-columns:[
-	{ id:"year", editor:"richselect", options:years, header:"Released" }
-]    
+//for a datatable column
+{ id:"year", editor:"richselect", options:years, header:"Released" }
+   
 
 @template:	api_config
 
@@ -23,6 +22,7 @@ columns:[
     desktop/edit.md
 @relatedapi:
 	api/editors_combo_other.md
+    api/editors_multiselect_other.md
 
 @descr: It looks very much the same like a [combo editor](api/editors_combo_other.md), but doesn't provide a possibility for option filtering. 
 

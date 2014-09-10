@@ -8,8 +8,8 @@ popup
 @type:string 
 
 @example:
-	//for a datatable column
-	{ id:"title",	header:"Film title", editor:"popup", width:200},
+//for a datatable column
+{ id:"title",	header:"Film title", editor:"popup", width:200}
 
 @template:	api_config
 @descr:

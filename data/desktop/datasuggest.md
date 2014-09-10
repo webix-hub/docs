@@ -1,7 +1,7 @@
 Dataview Suggest
 ========================
 
-{{note
+{{pronote
 The functionality is a feature of **Webix Pro** edition.
 }}
 
@@ -125,11 +125,13 @@ Then, this popup should be attached to the column in question with the help of i
 
 {{sample 32_thirdparty/14_dataselect_editor.html}}
 
-###Related Articles
+##Related Articles
 
 - [Webix Data Loading Pattern](desktop/data_loading.md)
 - [Templates for Webix Data Components](desktop/html_templates.md)
 - [Data Editing](desktop/edit.md)
+
+@edition:pro
 
 
 

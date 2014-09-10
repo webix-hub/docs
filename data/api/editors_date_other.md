@@ -8,6 +8,7 @@ date
 @type:string 
 
 @example:
+//for a datatble column
 {id:"startdate", editor:"date",	header:"Start date", width:120}
 
 @template:	api_config

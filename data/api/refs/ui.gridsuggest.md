@@ -1,10 +1,12 @@
 ui.gridsuggest 
 =============
 
+{{memo A datatable-based suggest control. }}
 
-dummy stub
+Offers select options in the form of Webix [datatable](api/refs/ui.datatable.md) component. 
 
-{{todo replace with real description. }}
+Can be used standalone or as a suggest list for [text](api/refs/ui.text.md), [combo](api/refs/ui.combo.md) and [richselect](api/refs/ui.richselect.md) controls 
+as well as component [editor](api/refs/editors.md).
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.suggest.md">ui.suggest</a>, <a href="api/refs/ui.popup.md">ui.popup</a>, <a href="api/refs/ui.window.md">ui.window</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/movable.md">Movable</a>, <a href="api/refs/modality.md">Modality</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
@@ -35,7 +37,7 @@ dummy stub
 - api/link/ui.gridsuggest_getparentview.md - returns the parent view of the component
 - api/link/ui.gridsuggest_getsuggestion.md - returns id of top suggestion from the suggest list
 - api/link/ui.gridsuggest_gettopparentview.md - returns top parent view
-- api/link/ui.gridsuggest_getvalue.md - 
+- api/link/ui.gridsuggest_getvalue.md - gets the ID of a selected item in the option list
 - api/link/ui.gridsuggest_hasevent.md - checks whether the component has the specified event
 - api/link/ui.gridsuggest_hide.md - hides the view
 - api/link/ui.gridsuggest_isenabled.md - checks whether the view is enabled
@@ -46,7 +48,7 @@ dummy stub
 - api/link/ui.gridsuggest_resizechildren.md - resizes all children of the calling component
 - api/link/ui.gridsuggest_setmastervalue.md - set value in master control
 - api/link/ui.gridsuggest_setposition.md - sets window's position
-- api/link/ui.gridsuggest_setvalue.md - 
+- api/link/ui.gridsuggest_setvalue.md - selects an item in the option list
 - api/link/ui.gridsuggest_show.md - makes the component visible
 - api/link/ui.gridsuggest_unbind.md - breaks "bind" link
 - api/link/ui.gridsuggest_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command

@@ -9,7 +9,7 @@ color
 
 @example:
 //for a datatable column
-{ id:"start", editor:"color", template:tpl, header:"Color A", width:120},
+{ id:"start", editor:"color", template:tpl, header:"Color A", width:120}
 
 @template:	api_config
 
