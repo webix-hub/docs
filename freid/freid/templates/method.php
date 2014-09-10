@@ -17,8 +17,7 @@ $returns = $_POST["returns"];
 $defined = $_POST["defined"];
 $descr = $_POST["descr"];
 
-?>
-<?php echo $name."\n"; ?>=============
+?><?php echo $name."\n"; ?>=============
 
 
 @todo:

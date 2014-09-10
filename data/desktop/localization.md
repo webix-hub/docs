@@ -40,20 +40,20 @@ template:function(obj){
 } 
 ~~~
 
-The format in use is defined by current locale. EN-US (default) locale sets **dateFormatStr** as *"%m/%d/%Y"* while **price** format is set as *"{obj}currency"* where *obj* is price value. 
+The format in use is defined by current locale. en (default) locale sets **dateFormatStr** as *"%m/%d/%Y"* while **price** format is set as *"{obj}currency"* where *obj* is price value. 
 
 {{sample 80_docs/dataview_formatting.html }}
 
 ##Locale Structure
  
 The way formatted date is presented depends on **locale** you use. Locale is a set of rules for dates, numbers and price units for this or that region or country. By 
-default **en-US** locale is used.
+default **en** locale is used.
 
 {{snippet
-en-US Locale
+en Locale
 }}
 ~~~js
-webix.i18n.locales["en-US"]={
+webix.i18n.locales["en"]={
 	groupDelimiter:",",
 	groupSize:3,
 	decimalDelimeter:".",
@@ -96,7 +96,7 @@ webix.i18n.locales["en-US"]={
 When formatted to a short/long date, the date from the first snippet looks like this: 
 
 {{snippet
-Formatted with en-US locale
+Formatted with en locale
 }}
 ~~~js
 format:webix.i18n.dateFormatStr
@@ -108,17 +108,25 @@ format:webix.i18n.longDateFormatSt
 
 ##Applying a Locale
 
-Locales other than **en-US** should be defined beforehand either in the document script section or in a separate JS file (better). Locale is set by the **setLocale()** 
-function that takes **locale name** as parameter. Possible variants here are fr-FR, ru-RU, ja-JP (a 'language-country' pair). 
+Locales other than **en** should be defined beforehand either in the document script section or in a separate JS file (better).
+Locale is set by the **setLocale()** function that takes **locale name** as parameter. 
 
-~~~js
-webix.i18n.setLocale("fr-FR");
+Package includes 9 main locales (in codebase/i18n folder).
+
+{{pronote Pro Edition contains 305 locales ( can be downloaded separately )  }}
+
+
+~~~html
+<script src="codebase/i18n/fr.js"></script>
+<script>
+webix.i18n.setLocale("fr");
+</script>
 ~~~
 
 After this any method applied to the **webix.i18n** object will redraw date, and numbers according to the rules described in locale. 
 
 {{snippet
-Formatted with fr-FR locale
+Formatted with fr locale
 }}
 ~~~js
 

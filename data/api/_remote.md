@@ -3,7 +3,7 @@ remote
 
 
 @todo:
-	Will be added as part of Webix 2.0
+	Will be added as part of Webix 2.1
 
 @short:
 	mapping for server side API
