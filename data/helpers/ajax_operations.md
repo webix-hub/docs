@@ -284,7 +284,7 @@ All the **methods of the promise object** come from the **Promiz.js** lib and ca
 
 ####webix.promise interface
 
-Webix offers an interface for working with promise objects - **webix.promise** - featuring a set of methods that duplicate 
+Webix offers an interface for working with promise objects - **[webix.promise](api/refs/promise.md)** - featuring a set of methods that duplicate 
 [Promise object methods](https://github.com/zolmeister/promiz).
 
 It can be used, for instance, to treat several Ajax requests and perform action when callbacks have been received from all of them:

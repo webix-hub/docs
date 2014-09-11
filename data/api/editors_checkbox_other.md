@@ -10,7 +10,8 @@ checkbox
 @example:
         
  //for a datatable column
-{header:"", options:bool_set, template:"{common.checkbox()}", editor:"checkbox", width:40},
+{header:"", options:bool_set, template:"{common.checkbox()}", 
+		editor:"checkbox", width:40}
 
 @template:	api_config
 @related:

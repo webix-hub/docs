@@ -1,4 +1,3 @@
-
 Methods
 =======
 
@@ -25,7 +24,7 @@ Methods
 - api/link/ui.gridsuggest_getparentview.md - returns the parent view of the component
 - api/link/ui.gridsuggest_getsuggestion.md - returns id of top suggestion from the suggest list
 - api/link/ui.gridsuggest_gettopparentview.md - returns top parent view
-- api/link/ui.gridsuggest_getvalue.md - 
+- api/link/ui.gridsuggest_getvalue.md - gets the ID of a selected item in the option list
 - api/link/ui.gridsuggest_hasevent.md - checks whether the component has the specified event
 - api/link/ui.gridsuggest_hide.md - hides the view
 - api/link/ui.gridsuggest_isenabled.md - checks whether the view is enabled
@@ -36,7 +35,7 @@ Methods
 - api/link/ui.gridsuggest_resizechildren.md - resizes all children of the calling component
 - api/link/ui.gridsuggest_setmastervalue.md - set value in master control
 - api/link/ui.gridsuggest_setposition.md - sets window's position
-- api/link/ui.gridsuggest_setvalue.md - 
+- api/link/ui.gridsuggest_setvalue.md - selects an item in the option list
 - api/link/ui.gridsuggest_show.md - makes the component visible
 - api/link/ui.gridsuggest_unbind.md - breaks "bind" link
 - api/link/ui.gridsuggest_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command

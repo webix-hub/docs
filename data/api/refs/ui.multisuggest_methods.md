@@ -25,7 +25,7 @@ Methods
 - api/link/ui.multisuggest_getparentview.md - returns the parent view of the component
 - api/link/ui.multisuggest_getsuggestion.md - returns id of top suggestion from the suggest list
 - api/link/ui.multisuggest_gettopparentview.md - returns top parent view
-- api/link/ui.multisuggest_getvalue.md - 
+- api/link/ui.multisuggest_getvalue.md - gets the ID of a selected item in the option list
 - api/link/ui.multisuggest_hasevent.md - checks whether the component has the specified event
 - api/link/ui.multisuggest_hide.md - hides the view
 - api/link/ui.multisuggest_isenabled.md - checks whether the view is enabled
@@ -36,7 +36,7 @@ Methods
 - api/link/ui.multisuggest_resizechildren.md - resizes all children of the calling component
 - api/link/ui.multisuggest_setmastervalue.md - set value in master control
 - api/link/ui.multisuggest_setposition.md - sets window's position
-- api/link/ui.multisuggest_setvalue.md - 
+- api/link/ui.multisuggest_setvalue.md - selects an item in the option list
 - api/link/ui.multisuggest_show.md - makes the component visible
 - api/link/ui.multisuggest_unbind.md - breaks "bind" link
 - api/link/ui.multisuggest_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command

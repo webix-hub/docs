@@ -2,15 +2,53 @@ Suggest List
 =============
 
 Suggest is a **list of options** for input controls that aids form filling by suggesting the necessary value on the base of already typed text. 
+It is based on Webix [list](desktop/list.md) component. 
 
-Suggest list can be used with the following components:
+<img src="desktop/suggest.png">
 
-- Webix JS [text](desktop/controls.md#text) field;
+{{sample 13_form/01_controls/15_suggest_server.html }}
+
+Suggest list can be used with the following components (should be configured separately):
+
 - standard HTML input;
-- [combo](desktop/controls.md#combo) and [richselect](desktop/controls.md#richselect) (is used instead of their *options* property);
-- [editor object](desktop/editing.md) within an in-component item. 
+- Webix JS [text](desktop/controls.md#text) field;
+- [text editor](desktop/editing.md#text) within a component item. 
 
-Each time you enter a symbol into an input, suggest list is refiltered to match current input value. Default **timeout** between key pressing and filtering equals to 1ms, still it can be modified by the dedicated property. 
+Suggest list is already implemented in the following Webix components (but can be customized): 
+
+- [combo](desktop/controls.md#combo) and [richselect](desktop/controls.md#richselect) form controls;
+- [combo](desktop/editing.md#combo) and [richselect](desktop/editing.md#richselect) component editors. 
+
+
+**How does it work?**
+
+A [popup window](desktop/popup.md) with a suggest list control appears each time you try to enter a value into the control or editor: 
+
+- when you **type** something into an HTML input or Webix text and combo control. 
+- when you **click** the richselect control;
+
+**Suggest list and Text input**
+ 
+When suggest list is combined with **[text](desktop/controls.md#text)** control (editor) or HTML input 
+its values are automatically filtered according to the letters you have already typed. You can select an item from the list to fill the input 
+or ignore the suggest list and type you own text. 
+
+**Suggest list and Combo**
+
+When suggest list is combined with **[combo](desktop/controls.md#combo)** control (editor) its values are automatically filtered according to the letters 
+you have already typed. You can either select an option fromt he list or type the text to match any of the options. You cannot ignore the suggest list and enter you own text.
+
+**Suggest list and Richselect**
+
+When suggest list is combined with [richselect](desktop/controls.md#richselect) control (editor) a popup appears the moment you click its non-editable input. 
+You must obligatory choose some value from the list. 
+
+**Suggest list values can be stored**
+
+- on client side;
+- on server side.
+
+Default **timeout** between key pressing and filtering equals to 1ms, still it can be modified by the dedicated property. 
 
 ~~~js
 {
@@ -20,23 +58,7 @@ Each time you enter a symbol into an input, suggest list is refiltered to match 
 }
 ~~~
 
-###Suggest List Peculiarity
-
-The combination of **suggest list** and **text** resembles combo and richselect in appearance, but its values are just **hints** and should not be obligatory chosen (like with *richselect* and *combo*). 
-You can use this hint and select it, or ignore and type your own value in *text*.
-
-<img src="desktop/suggest.png">
-
-{{sample 13_form/01_controls/15_suggest_server.html }}
-
-**How does it work?**
-
-When you type something in a text input, there appears a [popup window](desktop/popup.md) with a list containing suggest values for you. They are automatically filtered according to the letters you have already typed.
-
-Suggest values can be stored: 
-
-- on **client side**;
-- on **server side.**
+##Initializing suggest list
 
 Suggest list can be initialized as:
 
@@ -88,8 +110,7 @@ webix.ui({
 Note that you must select any value from a suggest list, since it's required by combo and richselect nature. 
 }}
 
-
-##Suggest List with Client-Side Data
+##Suggest list with client-side data
 
 On the client side the list with suggestions can be stored either of [supported formats](desktop/data_types.md). It may be put directly into **data** property (as shown above) or in a variable declared beforehand. 
 
@@ -107,7 +128,7 @@ var countries = [
 
 {{sample 13_form/01_controls/15_suggest_text.html }}
 
-##Suggest List with Server-Side Data
+##Suggest list with server-side data
 
 At the same time, data can come from server side. All you need is to specify the script file that will get the data from the database. 
 
@@ -134,7 +155,7 @@ As value of suggest property
 Suggest list is connected with an input field by **suggest** property included into the **text** constructor. 
 
 
-##Suggest List for In-Component Editors {#component}
+##Suggest list for component editors {#component}
 
 [Component editors](desktop/editing.md) duplicate editing controls yet they are inited within the component body. 
 
@@ -221,7 +242,7 @@ webix.ui({
 
 {{sample 15_datatable/04_editing/21_advanced_combo.html}}
 
-##Customizing Suggest List
+##Customizing suggest list
 
 Suggest list allows defining lots of custom settings in case of a long initialization pattern. 
 
@@ -263,7 +284,7 @@ and [multiselect](desktop/controls.md#multiselect) controls.
 - [Customizing built-in data editors](desktop/editing.md#advancedconfigurationofselecteditors)
 
 
-##Sizing and Positioning
+##Sizing and positioning
 
 ###Popup height
 
@@ -310,6 +331,47 @@ Since we speak here about **relative** position, the property to set it has the 
 
 {{sample 13_form/01_controls/15_suggest_position.html}}
 
-###API Reference 
+##Advanced suggest lists
 
-[Methods, properties and Events](api/refs/ui.suggest.md)
+{{pronote
+The functionality is available in **Webix Pro** edition only.
+}}
+
+Webix offers advanced suggest controls for width extra functionality and greater visual effect:
+
+- **multisuggest** - a standard suggest control based on Webix [list](desktop/list.md) with the ability to select **mupliple items** at a time. 
+- **gridsuggest** - a suggest control based on Webix [datatable](datatable/index.md);
+- **datasuggest** - a suggest control based on Webix [dataview](desktop/dataview.md).
+
+###Multisuggest
+
+<img src="desktop/multiselect.png">
+
+Multisuggest control is not used standalone, normally. You can find its implementations in the following **Webix Pro** features: 
+
+- [multiselect form control](desktop/controls.md#multiselect);
+- [multiselect datatable filter](datatable/filtering.md#multiselect);
+- [multiselect component editor](desktop/editing.md#multiselect). 
+
+###Gridsuggest 
+
+<img src="desktop/gridsuggest.png"/>
+
+{{sample 32_thirdparty/13_gridselect.html}}
+
+Gridsuggest can be used with form controls as well as with component editors. More about its configuration can be found in the [related article](desktop/gridsuggest.md).  
+
+###Datasuggest 
+
+<img src="desktop/datasuggest.png"/>
+
+{{sample 32_thirdparty/14_dataselect.html}}
+
+Datasuggest can be used with form controls as well as with component editors. More about its configuration can be found in the [related article](desktop/datasuggest.md).  
+
+##API Reference 
+
+- [Suggest List API](api/refs/ui.suggest.md)
+- [Multisuggest List API](api/refs/ui.multisuggest.md)
+- [Gridsuggest API](api/refs/ui.gridsuggest.md)
+- [Datasuggest API](api/refs/ui.datasuggest.md)

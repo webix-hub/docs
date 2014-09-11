@@ -127,6 +127,16 @@ table.webixtoc td{
         <td> a context menu </td>
     </tr>
     <tr>
+    	<td> <img src="api/toc/suggest.png"/> </td>
+        <td> api/refs/ui.datasuggest.md </td>
+        <td> a dataview-based suggest control </td>
+    </tr>
+    <tr>
+    	<td> <img src="api/toc/suggest.png"/> </td>
+        <td> api/refs/ui.gridsuggest.md </td>
+        <td> a datatable-based suggest control </td>
+    </tr>
+    <tr>
     	<td> <img src="api/toc/menu.png"/> </td>
         <td> api/refs/ui.menu.md </td>
         <td> a menu of individually selectable items </td>
@@ -354,6 +364,7 @@ table.webixtoc td{
 - api/refs/i18n.md - internationalization, number and date formatting methods
 - api/refs/locale.md - localization strings
 - api/refs/markup.md - implements loading from html
+- api/refs/promise.md - interface for working with promise objects
 - api/refs/rules.md - validation rules
 - api/refs/storage.cookie.md - iterface for storing data in cookies
 - api/refs/storage.local.md - interface for storing data in local storage
@@ -382,6 +393,7 @@ table.webixtoc td{
 - api/refs/i18n.md
 - api/refs/locale.md
 - api/refs/markup.md
+- api/refs/promise.md
 - api/refs/rules.md
 - api/refs/storage.cookie.md
 - api/refs/storage.local.md

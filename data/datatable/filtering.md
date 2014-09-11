@@ -34,7 +34,7 @@ If you need to create a **custom filter** (or smth) for header content, or you n
 go [here](datatable/headers_footers.md#customheaderandfootercontent) for the instructions. 
 }}
 
-###Text filter
+###Text filter {#text}
 
 <img src="datatable/text_filter.png"/> 
 
@@ -49,7 +49,7 @@ Retrieves values that contain mask defined through text field.
 }}
 
 
-###Server Filter
+###Server Filter {#server}
 
 A text filter that works with backend. Retrieves values that contain mask defined through text field and sends a request to server to return filtered dataset. 
 
@@ -67,7 +67,7 @@ Request parameters include:
 
 If **serverside sorting** is enabled, data is both filtered and sorted on server. 
 
-###Select filter
+###Select filter {#select}
 
 <img src="datatable/select_filter.png"/>
 
@@ -79,7 +79,7 @@ Retrieves values that contain mask defined through a dropdown list of possible v
 
 {{sample 15_datatable/03_filtering/01_builtin.html}}
 
-###Number filter
+###Number filter {#number}
 
 <img src="datatable/numeric_filter.png"/>
 
@@ -97,7 +97,7 @@ Text filter used for number columns. Retrieves values which contain mask defined
 
 {{sample 15_datatable/03_filtering/09_numeric.html}}
 
-###Date filter
+###Date filter {#date}
 
 <img src="datatable/date_filter.png"/>
 
@@ -121,7 +121,7 @@ There are 3 ways you can input data to the  dateFilter:
 
 {{sample 15_datatable/03_filtering/10_date.html }}
 
-###Richselect Filter
+###Richselect Filter {#richselect}
 
 {{note
 Available in **Webix Pro** edition only.
@@ -137,7 +137,7 @@ Retrieves values that contain mask defined through a popup list of possible valu
 
 {{sample 60_pro/01_datatable/06_filter_multiselect.html}}
 
-###Multiselect Filter
+###Multiselect Filter {#multiselect}
 
 {{note
 Available in **Webix Pro** edition only.
@@ -154,7 +154,7 @@ Based on Webix [multiselect](desktop/controls.md#multiselect) control.
 
 {{sample 60_pro/01_datatable/06_filter_multiselect.html}}
 
-###Datepicker Filter
+###Datepicker Filter {#datepicker}
 
 {{note
 Available in **Webix Pro** edition only.
