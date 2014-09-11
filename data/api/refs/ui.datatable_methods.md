@@ -66,7 +66,7 @@ Methods
 - api/link/ui.datatable_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
 - api/ui.datatable_getscrollstate.md - returns the current position of scrolls
 - api/ui.datatable_getselectedid.md - returns the selected cells
-- api/ui.datatable_getselecteditem.md - 
+- api/ui.datatable_getselecteditem.md - gets an object of the selected data item
 - api/link/ui.datatable_getstate.md - returns the current state of the view
 - api/ui.datatable_gettext.md - returns text value of a cell
 - api/link/ui.datatable_gettopparentview.md - returns top parent view

@@ -1,4 +1,4 @@
+{{memo Interface for working with promise objects.}}
 
-dummy stub
+For more details, read the [Ajax operations](helpers/ajax_operations.md#promiseapiforajaxrequests) documentation.
 
-{{todo replace with real description }}

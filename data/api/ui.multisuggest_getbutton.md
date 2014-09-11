@@ -3,15 +3,16 @@ getButton
 
 @short: get button object of a multiselect popup
 	
-@returns: object
+@returns: 
+- obj       view       webiv ui object of button
 
 @example:
 
 multiselect.getPopup().getButton();
 
 @related:
-	desktop/controls.md#multiselect
-    desktop/suggest.md
+	- desktop/controls.md#multiselect
+    - desktop/suggest.md
 @template:	api_method
 @descr:
 

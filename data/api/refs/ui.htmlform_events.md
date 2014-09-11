@@ -15,7 +15,6 @@ Events
 - api/link/ui.htmlform_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.htmlform_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.htmlform_onrotate_event.md - occurs on screen rotating
-- api/link/ui.htmlform_onsubmit_event.md - fires when enter key is pressed for a focused control in the form
 - api/link/ui.htmlform_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.htmlform_onswipey_event.md - occurs on a vertical swipe movement
 - api/link/ui.htmlform_ontouchend_event.md - occurs when the touch event is ended
@@ -40,7 +39,6 @@ Events
 - api/link/ui.htmlform_onloaderror_event.md
 - api/link/ui.htmlform_onlongtouch_event.md
 - api/link/ui.htmlform_onrotate_event.md
-- api/link/ui.htmlform_onsubmit_event.md
 - api/link/ui.htmlform_onswipex_event.md
 - api/link/ui.htmlform_onswipey_event.md
 - api/link/ui.htmlform_ontouchend_event.md

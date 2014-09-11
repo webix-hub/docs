@@ -3,6 +3,7 @@ CustomScroll
 
 Renders custom scrollbars to Webix views 
 
+
 <div class='h2'>Methods</div>
 
 {{api
@@ -25,6 +26,4 @@ Renders custom scrollbars to Webix views
 @index:
 - api/refs/customscroll_methods.md
 - api/refs/customscroll_others.md
-
-@edition:pro
 

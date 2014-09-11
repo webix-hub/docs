@@ -1,4 +1,3 @@
+An editable text control with dynamically added removable fields.
 
-dummy stub
-
-{{todo replace with real description }}
+Check [multitext](desktop/controls.md#multitext) documentation for more detailed description. 

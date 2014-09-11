@@ -1,13 +1,13 @@
 ui.multisuggest 
 =============
 
-
-{{memo A suggest control with a multiple-choice list. }}
+{{memo A suggest control with a multiple-choice list.. }}
 
 Offers select options in the form of Webix [list](api/refs/ui.list.md) component with the ability to select multiple items at a time.
 
 Can be used standalone or as a suggest list for [text](api/refs/ui.text.md), [combo](api/refs/ui.combo.md) and [richselect](api/refs/ui.richselect.md) controls 
 as well as component [editor](api/refs/editors.md).
+
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.suggest.md">ui.suggest</a>, <a href="api/refs/ui.popup.md">ui.popup</a>, <a href="api/refs/ui.window.md">ui.window</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/movable.md">Movable</a>, <a href="api/refs/modality.md">Modality</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
@@ -86,7 +86,7 @@ as well as component [editor](api/refs/editors.md).
 - api/link/ui.multisuggest_autofocus_config.md - sets focus on the window the moment it appears on the page
 - api/link/ui.multisuggest_body_config.md - the content of window body: template or view
 - api/link/ui.multisuggest_borderless_config.md - used to hide the component borders
-- api/ui.multisuggest_buttontext_config.md - 
+- api/ui.multisuggest_buttontext_config.md - defines text for the 'Select' button
 - api/link/ui.multisuggest_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.multisuggest_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.multisuggest_disabled_config.md - disables item

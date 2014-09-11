@@ -100,7 +100,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_getprevsiblingid.md - returns the id of the previous sibling of the specified node
 - api/link/ui.treetable_getscrollstate.md - returns the current position of scrolls
 - api/link/ui.treetable_getselectedid.md - returns the selected cells
-- api/link/ui.treetable_getselecteditem.md - 
+- api/link/ui.treetable_getselecteditem.md - gets an object of the selected data item
 - api/link/ui.treetable_getstate.md - returns the current state of the view
 - api/link/ui.treetable_gettext.md - returns text value of a cell
 - api/link/ui.treetable_gettopparentview.md - returns top parent view
@@ -283,7 +283,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.treetable_header_config.md - enables/disables the header in DataTable (enabled, by default)
 - api/link/ui.treetable_headerrowheight_config.md - sets the heigth of the header row
-- api/link/ui.treetable_headermenu_config.md - 
+- api/link/ui.treetable_headermenu_config.md - adds a headermenu to control column visibility
 - api/link/ui.treetable_height_config.md - sets the height of the component
 - api/link/ui.treetable_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.treetable_id_config.md - the component ID
@@ -322,7 +322,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_scrollx_config.md - enables/disables horizontal scrolling
 - api/link/ui.treetable_scrolly_config.md - enables/disables vertical scrolling
 - api/link/ui.treetable_select_config.md - sets the selection mode in DataTable
-- api/link/ui.treetable_spans_config.md - 
+- api/link/ui.treetable_spans_config.md - array of span configurations for the datatable
 - api/link/ui.treetable_threestate_config.md - defines three-state checkboxes for the tree. Flase by default.
 - api/link/ui.treetable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.treetable_type_config.md - used for configuring presentation of items
@@ -360,7 +360,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_on_context_other.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.treetable_on_dblclick_other.md - attaches a dblclick behavior for component items with the specified CSS class.
 - api/link/ui.treetable_on_mouse_move_other.md - attaches a dblclick behavior for component items with the specified CSS class.
-- api/link/ui.treetable_waitdata_other.md - 
+- api/link/ui.treetable_waitdata_other.md - eventual result of an asynchronous operation ('promise' object) for the loaded data
 }}
 
 
