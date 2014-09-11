@@ -120,7 +120,7 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
             <ul id="internet_sublist">
                     <li>desktop/offline.md</li>
                     <li>desktop/server_offline.md</li>
-                    <li>desktop/history_track.md</li>
+                    <li>desktop/app_state.md</li>
             </ul>
         </td>
         <td class='topic_description' onclick="displaySubList('internet')">Focuses on  how to provide offline support for an app and save its state.</td>
