@@ -1,4 +1,1 @@
-
-dummy stub
-
-{{todo replace with real description }}
+Renders custom scrollbars to Webix views 

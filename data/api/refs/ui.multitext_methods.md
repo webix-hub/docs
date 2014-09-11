@@ -2,7 +2,7 @@ Methods
 =======
 
 {{api
-- api/ui.multitext_addsection.md - add new empty field to the collection
+- api/ui.multitext_addsection.md - add new empty field  to the collection
 - api/link/ui.multitext_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.multitext_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.multitext_bind.md - binds components

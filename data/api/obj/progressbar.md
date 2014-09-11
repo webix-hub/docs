@@ -1,4 +1,1 @@
-
-dummy stub
-
-{{todo replace with real description }}
+Draws a progress bar (icon) for a view or application part.

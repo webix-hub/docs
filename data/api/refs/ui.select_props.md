@@ -28,7 +28,7 @@ Properties
 - api/link/ui.select_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.select_name_config.md - name of the control
 - api/link/ui.select_on_config.md - allows attaching custom handlers to inner events of the component
-- api/ui.select_options_config.md - sets options for a select control
+- api/ui.select_options_config.md - defines options for a select control
 - api/link/ui.select_placeholder_config.md - placeholder text for the input
 - api/link/ui.select_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.select_readonly_config.md - configures readonly mode for the input

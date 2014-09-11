@@ -2,7 +2,7 @@ ui.datasuggest
 =============
 
 
-{{memo A dataview-based suggest control. }}
+{{memo A dataview-based suggest control.. }}
 
 Offers select options in the form of Webix [dataview](api/refs/ui.dataview.md) component.
 

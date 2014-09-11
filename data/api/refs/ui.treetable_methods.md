@@ -1,4 +1,3 @@
-
 Methods
 =======
 
@@ -76,7 +75,7 @@ Methods
 - api/link/ui.treetable_getprevsiblingid.md - returns the id of the previous sibling of the specified node
 - api/link/ui.treetable_getscrollstate.md - returns the current position of scrolls
 - api/link/ui.treetable_getselectedid.md - returns the selected cells
-- api/link/ui.treetable_getselecteditem.md - 
+- api/link/ui.treetable_getselecteditem.md - gets an object of the selected data item
 - api/link/ui.treetable_getstate.md - returns the current state of the view
 - api/link/ui.treetable_gettext.md - returns text value of a cell
 - api/link/ui.treetable_gettopparentview.md - returns top parent view

@@ -4,7 +4,6 @@ ui.multitext
 An editable text control with dynamically added removable fields.
 
 Check [multitext](desktop/controls.md#multitext) documentation for more detailed description. 
-
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.text.md">ui.text</a>, <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
@@ -12,7 +11,7 @@ Check [multitext](desktop/controls.md#multitext) documentation for more detailed
 <div class='h2'>Methods</div>
 
 {{api
-- api/ui.multitext_addsection.md - add new empty field to the collection
+- api/ui.multitext_addsection.md - add new empty field  to the collection
 - api/link/ui.multitext_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.multitext_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.multitext_bind.md - binds components
@@ -130,7 +129,7 @@ Check [multitext](desktop/controls.md#multitext) documentation for more detailed
 
 
 {{api
-- api/ui.multitext_$cssname_other.md - 
+- api/ui.multitext_$cssname_other.md - name which will be used as part of css class
 - api/link/ui.multitext_$getsize_other.md - returns the current size of the component
 - api/link/ui.multitext_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.multitext_$height_other.md - current height of the view
@@ -150,11 +149,10 @@ Check [multitext](desktop/controls.md#multitext) documentation for more detailed
 - api/link/ui.multitext_touchable_other.md - flag, which force touch reaction on touch screen devices
 }}
 
+
 @index:
 - api/refs/ui.multitext_methods.md
 - api/refs/ui.multitext_props.md
 - api/refs/ui.multitext_events.md
 - api/refs/ui.multitext_others.md
-
-@edition:pro
 

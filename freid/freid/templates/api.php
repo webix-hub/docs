@@ -139,7 +139,6 @@ file_put_contents("../../../data/api/refs/".$filename.".md",$code);
 
 
 ?>
-
 Methods
 =======
 
@@ -164,7 +163,6 @@ if (sizeof($methods))
 	file_put_contents("../../../data/api/refs/".$file."_methods.md",$code);
 
 ?>
-
 Events
 =======
 
@@ -189,7 +187,6 @@ if (sizeof($events))
 	file_put_contents("../../../data/api/refs/".$file."_events.md",$code);
 
 ?>
-
 Properties
 ==========
 
@@ -212,7 +209,6 @@ if (sizeof($configs))
 	file_put_contents("../../../data/api/refs/".$filename."_props.md",$code);
 
 ?>
-
 Others
 =======
 
@@ -237,8 +233,6 @@ if (sizeof($others))
 	file_put_contents("../../../data/api/refs/".$filename."_others.md",$code);
 
 ?>
-
-
 Templates
 =======
 

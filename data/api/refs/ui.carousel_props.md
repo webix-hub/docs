@@ -4,7 +4,7 @@ Properties
 {{api
 - api/link/ui.carousel_animate_config.md - defines or disables view change animation.
 - api/link/ui.carousel_borderless_config.md - used to hide the component borders
-- api/ui.carousel_cols_config.md - array of views arranged horizontally
+- api/ui.carousel_cols_config.md - array of views objects arranged horizontally
 - api/link/ui.carousel_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.carousel_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.carousel_disabled_config.md - disables item

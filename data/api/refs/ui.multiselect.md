@@ -7,6 +7,7 @@ The control combines a non-editable text field with a drop-down list of predefin
 
 Check [multiselect](desktop/controls.md#multiselect) documentation for more detailed description.
 
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.richselect.md">ui.richselect</a>, <a href="api/refs/ui.text.md">ui.text</a>, <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
@@ -133,7 +134,7 @@ Check [multiselect](desktop/controls.md#multiselect) documentation for more deta
 
 
 {{api
-- api/ui.multiselect_$cssname_other.md - 
+- api/ui.multiselect_$cssname_other.md - name which will be used as part of css class
 - api/link/ui.multiselect_$getsize_other.md - returns the current size of the component
 - api/link/ui.multiselect_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.multiselect_$height_other.md - current height of the view
@@ -159,6 +160,4 @@ Check [multiselect](desktop/controls.md#multiselect) documentation for more deta
 - api/refs/ui.multiselect_props.md
 - api/refs/ui.multiselect_events.md
 - api/refs/ui.multiselect_others.md
-
-@edition:pro
 
