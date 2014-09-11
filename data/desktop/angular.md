@@ -55,7 +55,7 @@ Two patterns are equal in functionality yet differ in the way this functionality
 
 ##Initing from from HTML markup {#html}
 
-This method resembles Webix [Markup Initialization technique](desktop/html_init.md) but has its own peculiarities:
+This method resembles Webix [HTML Initialization technique](desktop/html_markup_init.md) but has its own peculiarities:
 
 - Webix application lies in a div block with **webix-ui** directive:
 	- **view** attribute of such block specifies Webix [component](desktop/components.md) you want to init;

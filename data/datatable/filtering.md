@@ -123,7 +123,7 @@ There are 3 ways you can input data to the  dateFilter:
 
 ###Richselect Filter {#richselect}
 
-{{note
+{{pronote
 Available in **Webix Pro** edition only.
 }}
 
@@ -135,11 +135,11 @@ Retrieves values that contain mask defined through a popup list of possible valu
 { id:"year", header:["Released", { content:"richSelectFilter" }] }
 ~~~
 
-{{sample 60_pro/01_datatable/06_filter_multiselect.html}}
+{{sample 60_pro/01_datatable/03_filters/06_filter_multiselect.html}}
 
 ###Multiselect Filter {#multiselect}
 
-{{note
+{{pronote
 Available in **Webix Pro** edition only.
 }}
 
@@ -152,11 +152,11 @@ Based on Webix [multiselect](desktop/controls.md#multiselect) control.
 { id:"year",header:["Released", { content:"multiSelectFilter" }]
 ~~~
 
-{{sample 60_pro/01_datatable/06_filter_multiselect.html}}
+{{sample 60_pro/01_datatable/03_filters/06_filter_multiselect.html}}
 
 ###Datepicker Filter {#datepicker}
 
-{{note
+{{pronote
 Available in **Webix Pro** edition only.
 }}
 
@@ -169,7 +169,7 @@ Retrieves values that contain mask defined through the popup calendar. Based on 
 		format:webix.i18n.dateFormatStr}
 ~~~
 
-{{sample 60_pro/01_datatable/07_filter_daterange.html}}
+{{sample 60_pro/01_datatable/03_filters/07_filter_daterange.html}}
 
 ##Filtering Logic
 

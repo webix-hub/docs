@@ -19,7 +19,7 @@ webix.markup.init();
 @relatedapi:
 	api/markup_parse.md
 @related:
-	desktop/html_init.md
+	desktop/markup_init.md
 @descr:
 
 By default, markup is taken from **document.body** node while the target either concides with datasource node or specified manually.

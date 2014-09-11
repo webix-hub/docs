@@ -410,7 +410,7 @@ Label control can be used to render any user HTML or icons (as well as built-in 
 
 ##Multiselect
 
-{{note
+{{pronote
 The control is available only in **Webix Pro** edition.
 }}
 
@@ -479,7 +479,7 @@ multiselect.getpopup().getList();
 
 ##Multitext 
 
-{{note
+{{pronote
 The control is available only in **Webix Pro** edition.
 }}
 

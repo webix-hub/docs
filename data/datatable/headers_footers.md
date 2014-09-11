@@ -148,7 +148,7 @@ More information about built-in and custom filters is in the [separate article](
 Header Menu
 ---------------------
 
-{{note
+{{pronote
 The functionality is available in **Webix Pro** edition only. 
 }}
 
@@ -160,7 +160,7 @@ Built-in header menu allows end users to control visibility of the columns by se
 { view:"datatable", columns:[...], headermenu:true}
 ~~~
 
-{{sample 60_pro/01_datatable/03_header_menu.html}}
+{{sample 60_pro/01_datatable/02_headermenu/03_header_menu.html}}
 
 Headermenu can be customized. For more details, go to the [Datatable Header Menu](datatable/headermenu.md) article. 
 
@@ -264,7 +264,7 @@ columns:[
 Rotated header/footer
 -----------------
 
-{{note
+{{pronote
 Note that this feature is available in **Webix Pro** edition only. 
 }}
 
@@ -283,7 +283,7 @@ columns:[
 ]    
 ~~~
 
-{{sample 60_pro/01_datatable/11_rotate_header.html}}
+{{sample 60_pro/01_datatable/06_api/11_rotate_header.html}}
 
 ##Custom Height for Header and Footer
 

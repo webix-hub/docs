@@ -9,9 +9,9 @@ Start
 
 <h2>Meet Webix 2.0!</h2>
 <ul>
-	<li><a href="desktop/property_sheet.md">Progress Bar API</a></li>
-    <li><a href="api/ui.datatable_showcolumnbatch.md">Multitext controls</a></li>
-    <li><a href="desktop/property_sheet.md">Advanced filters and editors in DataTable</a></li>
+	<li><a href="desktop/progress.md">Progress Bar API</a></li>
+    <li><a href="desktop/controls.md#multitext">Multitext</a> and <a href="desktop/controls.md#multiselect">Multiselect</a> controls</li>
+    <li>Advanced <a href="datatable/filtering.md">filters</a> and <a href="datatable/editing.md">editors</a> in DataTable</a></li>
 </ul>
 
 <p> and <a href="desktop/whats_new_2.md">many more...</a></p>

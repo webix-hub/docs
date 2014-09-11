@@ -15,7 +15,7 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
 		    <ul id="design_sublist">
                 <li>desktop/building_app_architecture.md</li>
                 <li>desktop/big_app_structure.md</li>
-                <li>desktop/html_init.md</li>
+                <li>desktop/markup_init.md</li>
             </ul>
 		</td>
 		<td class='topic_description' onclick="displaySubList('design')">Describes different ways you can follow to design and build the user interface for your application.</td>

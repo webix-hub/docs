@@ -127,7 +127,7 @@ var posy = scPos.y; // 200
 
 ##Webix Custom Scroll
 
-{{note
+{{pronote
 The feature is available in **Webix Pro** edition only.
 }}
 

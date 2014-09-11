@@ -25,7 +25,7 @@ webix.ui({
 @relatedapi:
 	api/ui.datatable_addspan.md
 @relatedsample:
-	60_pro/01_datatable/01_colspans.html
+	60_pro/01_datatable/01_colspans/01_colspans.html
 @template:	api_config
 @descr:
 
@@ -39,5 +39,7 @@ The parameter is used within the component's **data** that is presenTed as an ob
 	- **height** (number) - how many rows should the span include;
 	- **value** (string) - value that the span area should display;
 	- **css** (string) - css class that should be applied to the span area.
+    
+@edition:pro    
 
 

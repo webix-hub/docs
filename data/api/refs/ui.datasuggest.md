@@ -144,3 +144,5 @@ as well as component [editor](api/refs/editors.md).
 - api/refs/ui.datasuggest_events.md
 - api/refs/ui.datasuggest_others.md
 
+@edition:pro
+

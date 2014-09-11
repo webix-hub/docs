@@ -28,7 +28,7 @@ The library provides 10 predefined editors:
 - **text**, **inline-text**, **password**;
 - **checkbox**, **inline-checkbox**;
 - **select**, **combo**, **richselect**;
-- **multiselect** (**Webix Pro** edition only)
+- **multiselect** (**Webix Pro** edition only);
 - **date**;
 - **color**;
 - **popup**

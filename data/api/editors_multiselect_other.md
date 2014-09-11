@@ -12,7 +12,7 @@ multiselect
 
 @template:	api_config
 @relatedsample: 
-	60_pro/01_datatable/08_editor_multiselect.html
+	60_pro/01_datatable/04_editors/08_editor_multiselect.html
 @related:
 	desktop/editing.md
     desktop/edit.md

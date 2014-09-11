@@ -1,9 +1,8 @@
-Saving Current State of the App
-=============
+Tracking the Latest Opened Tab
+===================================
 
 {{note
-Here we discuss the state of an application created with [multiview](desktop/multiview.md) layout. To find the way of saving a component's current state, 
-check the [UI Manager](desktop/uimanager.md#savingandrestoringapplicationstate) functionality.
+Here we discuss the state of an application created with [multiview](desktop/multiview.md) layout. 
 }}
 
 With [multiview](desktop/multiview.md) application design you can create as many cells as you wish and switch between them with the help of dedicated buttons, namely 
@@ -29,8 +28,6 @@ webix.ui({
  	]               
 });
 ~~~
-
-###Tracking the Latest Opened Tab
 
 Nevertheless, the library offers **history API** to store the current application state, or simply put, to memorize the latest opened tab. 
 

@@ -348,7 +348,7 @@ grida.showColumnBatch(3);
 Grouping columns
 -----------------------------
 
-{{note
+{{pronote
 The functionality is available in **Webix Pro** edition only. 
 }}
 
@@ -382,14 +382,14 @@ columns:[
 ]    
 ~~~
 
-{{sample 60_pro/01_datatable/12_group_columns.html}}
+{{sample 60_pro/01_datatable/06_api/12_group_columns.html}}
 
 Read more about [colspans and rowspans](datatable/headers_footers.md#complexheadercontainingcolspansrowspansbuiltinfilters) in Webix datatable header. 
 
 Setting Colspans/Rowspans
 ------------------------------
 
-{{note
+{{pronote
 The feature is available in **Webix Pro** edition only.
 }}
 
@@ -410,7 +410,7 @@ grida = new webix.ui({
 });
 ~~~
 
-{{sample 60_pro/01_datatable/01_colspans.html}}
+{{sample 60_pro/01_datatable/01_colspans/01_colspans.html}}
 
 To learn more on this topic, please visit the [Datatable Rowspans and Colspans](datatable/rowspans_colspans.md) article.
 

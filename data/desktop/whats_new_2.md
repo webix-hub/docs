@@ -2,36 +2,37 @@ Version 2.0
 ==============
 
 ### Major features
-- Promises API for all ajax operations
-- Progress bars and overlays
+- [Promises API for all ajax operations](helpers/ajax_operations.md)
+- [Progress bars and overlays](desktop/progress.md)
 - Improved keyboard navigation
-- Extra locales added
+- [Extra locales](desktop/localization.md#builtinlocales) added
 - Package includes source map files
-- [pro] PRO edition includes Pivot component
-- [pro] Multiselect and multitext inputs
-- [pro] Advanced editors for DataTable and Property views
-- [pro] Colspans and Rowspans in DataTable
-- [pro] Column menu in DataTable
-- [pro] Grouped columns in DataTable
-- [pro] Advanced filters for DataTable
-- [pro] Optional header rotating in DataTable
-- [pro] Optional custom scrollbars
+- [pro] PRO edition includes [Pivot component](desktop/pivot.md)
+- [pro] [Multiselect](desktop/controls.md#multiselect) and [multitext](desktop/controls.md#multitext) inputs
+- [pro] [Advanced editors](desktop/edit.md) for DataTable and Property views 
+- [pro] [Datasuggest](desktop/datasuggest) and [Gridsuggest](desktop/gridsuggest.md) views for form controls and editing;
+- [pro] [Colspans and Rowspans in DataTable](datatable/rowspans_colspans.md)
+- [pro] [Column menu](datatable/headermenu.md) in DataTable
+- [pro] [Grouped columns](datatable/columns_configuration.md#groupingcolumns) in DataTable
+- [pro] [Advanced filters](datatable/filtering.md) for DataTable
+- [pro] Optional [header rotating](datatable/headers_footers.md#rotatedheaderfooter) in DataTable
+- [pro] Optional [custom scrollbars](desktop/scroll_control.md#webixcustomscroll)
 - [pro] Extra 300 locales
 
 ### Minor features
-- custom height for header lines in datatable
+- [custom height for header lines in datatable](datatable/headers_footers.md#customheightforheaderandfooter)
 - dark style for carousel
-- getState api for dataprocessor
+- [getState api](api/dataprocessor_getstate.md) for dataprocessor
 - onViewMove and onViewMoveEnd events to movable
-- optional close button for tabs
-- password editor
-- simple way to add icons to tabs
-- storage.clear for all models
+- [optional close button for tabs](desktop/controls.md#tabbar)
+- [password editor](desktop/edit.md)
+- [simple way to add icons to tabs](desktop/controls.md#tabbar)
+- [storage.clear](api/storage.local_clear.md) for all models
 - if id for data object was not provided, value will be used as id
 - onMenuItemClick can block menu hiding
 - overlay works for all components
 - parse can accept raw ajax response and webix components
-- suggest for text editors
+- [suggest](desktop/suggest.md) for text editors
 
 
 ### Fixes

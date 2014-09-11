@@ -3,7 +3,7 @@ Date and Number Localization
 
 Different countries and regions have their own rules for writing dates, numbers and monetary units. All these issues should be taken in account in case a target group for your app is wider than one country or region. 
 
-Theset of rules for this or that counrty is called **locale** and includes methods for date, time, number and price formatting. 
+The set of rules for this or that country is called **locale** and includes methods for date, time, number and price formatting. 
 Localization methods belong to the [i18n class](api/refs/i18n.md) and treat data according to he set format.
 
 By default **Date()** constructor outputs raw data. Unformatted, it looks barely readable. 
@@ -17,32 +17,22 @@ Date and time should be formatted either with [Date](desktop/working_with_dates.
 **Numbers** differ by delimiter before the fractional part and between thousands while prices should be rendered with an appropriate currency mark. Formatting is done either in the
 [Number](helpers/number_formatting_methods.md) or **i18n** class.
 
-##Setting Localized i18n Format 
 
-Localization is done via the [i18n class](api/refs/i18n.md) and allows setting customized formats gathered under one and the same locale. 
+##Built-in Locales
 
-In case of [datatable](datatable/index.md), format is stated by  the dedicated **format** parameter while data is specified by column ID:
+The **standard package** of the Webix library includes 9 locales, namely: 
 
-~~~js
-{ header:"Date",  id:"start", format:webix.i18n.dateFormatStr},
-{ header:"Price", id:"price", format:webix.i18n.priceFormat}
-~~~
+- **'en-US'** - North American (used by default);
+- **'ru-RU'** - Russian;
+- **'fr-FR'** - French;
+- **'ja-JP'** - Japanise;
+- **'be-BY'** - Belorussian;
+- **'de-DE'** - German;
+- **'es-ES'** - Spanish;
+- **'it-IT'** - Italian;
+- **'zh-CN'** - Chinese.
 
-{{sample 15_datatable/20_templates/08_locales.html}}
-
-Other components like [list](desktop/list.md), [dataview](desktop/dataview.md) and datatree/index.md have quite the other way of data presenting. 
-To ensure proper formatting, you should make use of a **template function:**
-
-~~~js
-template:function(obj){ 
-			return webix.i18n.longDateFormatStr(obj.start)+"<br/>"+
-            	   webix.i18n.priceFormat(obj.price);
-} 
-~~~
-
-The format in use is defined by current locale. EN-US (default) locale sets **dateFormatStr** as *"%m/%d/%Y"* while **price** format is set as *"{obj}currency"* where *obj* is price value. 
-
-{{sample 80_docs/dataview_formatting.html }}
+**Webix Pro** edition includes over **300 locales** to match a great variety of cultures. 
 
 ##Locale Structure
  
@@ -100,16 +90,16 @@ Formatted with en-US locale
 }}
 ~~~js
 format:webix.i18n.dateFormatStr
-				//--> 11/30/2010
+	//--> 11/30/2010
                 
 format:webix.i18n.longDateFormatSt
-				// --> 30 November 2010
+	// --> 30 November 2010
 ~~~
 
 ##Applying a Locale
 
-Locales other than **en-US** should be defined beforehand either in the document script section or in a separate JS file (better). Locale is set by the **setLocale()** 
-function that takes **locale name** as parameter. Possible variants here are fr-FR, ru-RU, ja-JP (a 'language-country' pair). 
+Locales other than **en-US** should be set manually. It can be done with the help of a **setLocale()** 
+function that takes **locale name** as parameter.
 
 ~~~js
 webix.i18n.setLocale("fr-FR");
@@ -121,13 +111,13 @@ After this any method applied to the **webix.i18n** object will redraw date, and
 Formatted with fr-FR locale
 }}
 ~~~js
-
 format:webix.i18n.dateFormatStr 
-			// -->30/11/2010
+	// -->30/11/2010
 
 format:webix.i18n.longDateFormatStr 
-			// --> 30 Novembre 2010
+	// --> 30 Novembre 2010
 ~~~
+
 
 ##Altering a Locale 
 
@@ -137,5 +127,32 @@ To change one or several parameters for the current locale, you need to redefine
 webix.i18n.fullDateFormat = "%Y-%m-%d %H:%i";
 webix.i18n.setLocale(); //locale name is not specified here
 ~~~
+
+##Setting Localized i18n Format 
+
+Localization is done via the [i18n class](api/refs/i18n.md) and allows setting customized formats gathered under one and the same locale. 
+
+In case of [datatable](datatable/index.md), format is stated by  the dedicated **format** parameter while data is specified by column ID:
+
+~~~js
+{ header:"Date",  id:"start", format:webix.i18n.dateFormatStr},
+{ header:"Price", id:"price", format:webix.i18n.priceFormat}
+~~~
+
+{{sample 15_datatable/20_templates/08_locales.html}}
+
+Other components like [list](desktop/list.md), [dataview](desktop/dataview.md) and datatree/index.md have quite the other way of data presenting. 
+To ensure proper formatting, you should make use of a **template function:**
+
+~~~js
+template:function(obj){ 
+	return webix.i18n.longDateFormatStr(obj.start)+"<br/>"+
+       webix.i18n.priceFormat(obj.price);
+} 
+~~~
+
+The format in use is defined by current locale. EN-US (default) locale sets **dateFormatStr** as *"%m/%d/%Y"* while **price** format is set as *"{obj}currency"* where *obj* is price value. 
+
+{{sample 80_docs/dataview_formatting.html }}
 
 @complexity:2

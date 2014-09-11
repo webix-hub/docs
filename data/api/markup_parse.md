@@ -16,7 +16,7 @@ webix.ui(
 @relatedsample:
 	23_markup/02_xhtml/04_by_ajax.html
 @related:
-	desktop/html_init.md
+	desktop/markup_init.md
 @relatedapi:
 	api/markup_init.md
 

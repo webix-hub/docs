@@ -21,12 +21,14 @@ if (state)
 
 @relatedapi:api/datastate_getstate.md
 @relatedsample:
-	17_datatree/18_state/01_basic.html
+	60_pro/06_tree/01_basic.html
 @related:
-	datatree/nodes_manipulations.md#savingthestateofnodes
+	desktop/datastate_state.md
 
 
 @template:	api_method
 @descr:
+
+@edition:pro
 
 

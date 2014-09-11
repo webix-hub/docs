@@ -143,3 +143,5 @@ as well as component [editor](api/refs/editors.md).
 - api/refs/ui.gridsuggest_events.md
 - api/refs/ui.gridsuggest_others.md
 
+@edition:pro
+

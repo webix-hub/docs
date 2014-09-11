@@ -1,10 +1,6 @@
 Datatable Header Menu
 ==========================
 
-{{note
-The functionality is available in **Webix Pro** edition only. 
-}}
-
 <img src="datatable/headermenu.png"/>
 
 Datatable **built-in header menu** is used to control column visibility with the help of a dedicated **popup list** with column names. 
@@ -25,7 +21,7 @@ The simplest header menu is set with the help of a datatable **headermenu** prop
 { view:"datatable", columns:[...], headermenu:true}
 ~~~
 
-{{sample 60_pro/01_datatable/03_header_menu.html}}
+{{sample 60_pro/01_datatable/02_headermenu/03_header_menu.html}}
 
 ##Extended Configuration
 
@@ -53,7 +49,7 @@ headermenu:{
 }
 ~~~
 
-{{sample 60_pro/01_datatable/04_header_menu_extended.html}} 
+{{sample 60_pro/01_datatable/02_headermenu/04_header_menu_extended.html}} 
 
 **Header menu with limited item quantity**
 
@@ -68,7 +64,7 @@ headermenu:{
 }
 ~~~
 
-{{sample 60_pro/01_datatable/04_header_menu_extended.html}} 
+{{sample 60_pro/01_datatable/02_headermenu/04_header_menu_extended.html}} 
 
 **Excluding a column from the menu**
 
@@ -102,7 +98,7 @@ columns:[
 ]
 ~~~
 
-{{sample 60_pro/01_datatable/05_header_menu_icon.html}}
+{{sample 60_pro/01_datatable/02_headermenu/05_header_menu_icon.html}}
 
 If there is such a column in the datatable configuration, the **headermenu** property for it can be omitted. 
 
@@ -126,7 +122,9 @@ function showMenu(node){
 }
 ~~~
 
-{{sample 60_pro/01_datatable/05_header_menu_icon.html}}
+{{sample 60_pro/01_datatable/02_headermenu/05_header_menu_icon.html}}
+
+@edition:pro
 
 
 

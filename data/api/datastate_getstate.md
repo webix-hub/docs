@@ -17,9 +17,9 @@ grid.getState();
 
 @relatedapi:api/datastate_setstate.md
 @related:
-	datatree/nodes_manipulations.md#savingthestateofnodes
+	desktop/datastate_state.md
 @relatedsample:
-	17_datatree/18_state/01_basic.html
+	60_pro/06_tree/01_basic.html
 
 @descr:
 The state object reflects inner UI configuration of the view.
@@ -49,3 +49,5 @@ the state object will look as in:
 	}
 }
 ~~~
+
+@edition:pro

@@ -40,7 +40,7 @@ function restore_state() {
 ~~~
 
 {{sample 
-15_datatable/18_state/01_basic.html
+60_pro/01_datatable/05_state/03_session_state.html
 }}
 
 To save and track state of a multiview-based app, follow [other instructions](desktop/history_track.md). 

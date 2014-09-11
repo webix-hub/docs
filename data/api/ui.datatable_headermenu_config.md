@@ -27,10 +27,12 @@ webix.ui({
 @related:
 	datatable/headermenu.md
 @relatedsample:
-	60_pro/01_datatable/03_header_menu.html
-    60_pro/01_datatable/04_header_menu_extended.html
+	60_pro/01_datatable/02_headermenu/03_header_menu.html
+    60_pro/01_datatable/02_headermenu/04_header_menu_extended.html
 @template:	api_config
 @descr:
 
 The whole list of **parameters** that help configure the header menu can be found in the [related article](datatable/headermenu.html#extendedconfiguration). 
+
+@edition:pro
 

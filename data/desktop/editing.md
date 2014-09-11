@@ -160,7 +160,7 @@ In the **Webix Pro** edition the editor can be extended to show either a **datav
 
 ###Multiselect {#multiselect}
 
-{{note
+{{pronote
 The editor is available is **Webix Pro** edition only
 }}
 
@@ -170,7 +170,7 @@ The editor is based on Webix [multiselect](desktop/controls.md#multiselect) cont
 { id:"assigned", editor:"multiselect", optionslist:true, options:[...]}
 ~~~
 
-{{sample 60_pro/01_datatable/08_editor_multiselect.html}}
+{{sample 60_pro/01_datatable/04_editors/08_editor_multiselect.html}}
 
 - The **optionlist** property is defined for the editable element (here:column) so that it can parse multiple values from the editor into a single cell value.
 - The options can be defined by either a simple or an associative array as well as by url. [Look here for details](#options).

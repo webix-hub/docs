@@ -202,9 +202,6 @@ tree.filter("#value#", "abc");//leaves in the tree just items that contain text 
 
 Read more on the topic in article datatree/filtering.md.
 
-
-
-
 Sorting nodes
 --------------------
 To filter the tree nodes you should call the sort method:
@@ -238,48 +235,3 @@ tree.refresh();
 //or
 tree.updateItem(node_id, nodeObj);
 ~~~
-
-Saving the state of nodes
----------------------------------
-Tree provides a possibility to store/restore the state of the tree to cookie, local or seccion storage.
-
-The tree state object will contain information about opened and selected nodes. <br>
-For example, for such a tree:
-
-the state object will look as in:
-
-~~~js
-{
-	open:['1', '2', 'root'],
-    select: ['1.3']
-}
-~~~
-*where '1', '2', 'root' and '1.3' are the ids of the related nodes.*
-
-- To save the current tree state to the local storage you should call the api/link/ui.tree_getstate.md method as in:
-
-{{snippet
-	Saving the tree state to the local storage
-}}
-~~~js
-tree = webix.ui({ view:'tree', ...});
-
-var treeState = tree.getState();
-webix.storage.local.put("state", treeState);
-~~~
-
-- To restore the saved state you should call the api/link/ui.tree_setstate.md method:
-	
-{{snippet
-	Restoring the tree state from the local storage
-}}
-
-~~~js
-var state = webix.storage.local.get("state");
-if (state)
-    tree.setState(state);
-~~~
-
-{{sample
-	17_datatree/18_state/01_basic.html
-}}

@@ -1,7 +1,6 @@
 HTMLform
 ================
 
-###Overview
 ##Overview
 
 Though the webix library has its own [form](desktop/form.md) component, there exists a possibility to create a separate form made with the help of
@@ -83,6 +82,10 @@ webix.ui({
 
 ####3 . Initialization from HTML or XML markup {#markup}
 
+{{pronote
+The initialization from **XML markup** is available in **Webix Pro** edition only.
+}}
+
 In this case, standard rules of markup initialization are used and the **markup** slightly **alters**: 
 
 - **HTML**: **form** tag receives new attributes;
@@ -154,4 +157,4 @@ webix.ui({
 ###Related Articles
 
 - [UI-related Form](desktop/form.md)
-- [Initializing from HTML and XML](desktop/html_init.md)
+- [Initializing from HTML and XML](desktop/markup_init.md)

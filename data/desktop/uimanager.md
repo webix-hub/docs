@@ -1,4 +1,4 @@
-UI Manager
+Keyboard Events. Focusing. Navigation
 =============
 
 Each time you create a component on the page, even a single one, **UIManager** module is initialized (though indirectly). Its main tasks are:
@@ -72,7 +72,6 @@ webix.attachEvent("onFocusChange", function(current_view, prev_view) {
 });
 ~~~
  
-
 
 ##Keyboards Events and Hotkeys
 
@@ -165,7 +164,6 @@ var list_key = webix.UIManager.addHotKey("Ctrl+Space", function() { ... }, 'list
 webix.UIManager.removeHotKey(list_key);
 ~~~
 
-
 ###Attaching Keyboard events 
 
 - **onKeyPress** *(code, ctrl flag, shift flag, native event)* - takes key codes to perform actions on pressing the specified key/keys. 
@@ -211,56 +209,7 @@ These events require that a developer should know key codes used by UI Manager. 
 - 'win': 91,
 - 'mac': 91
 
-##Saving and Restoring Application State
 
-UIManager allows saving current visual scheme of the component, its 'state' by using **getState()** and **setState()** methods. The former derives necessary data (list of component properties with their current values) 
- while the latter sets these values for the specified properties. 
- 
-The data itself is stored in the **webix.storage.local** object, which is your browser cache. Simply put, data is saved to your local machine. 
-
-###getState();
-
-The **getState** method is called from the UIManager and gets the app's general structure (namely ID, width, height, gravity). It takes two arguments:
-
-- the **ID of the component** which state you'd like to save (as a rule, the ID of the top-most component, layout);
-- boolean **true or false** for component children. If true, state of nested components is saved alongside with layout state. 
-
-{{snippet
-Saving current state of layout and its children
-}}
-~~~js
-var state = webix.UIManager.getState('top_id', true); //ID of the layout is used
-~~~
-
-The function returns data in JSON format, like this: **{gravity:1; height: 300}**.
-
-To save the data and make it usable later on, your should **put** it into the local storage, defining the key for it: 
-
-{{snippet
-Putting current state into the local storage
-}}
-~~~js
-webix.storage.local.put('webix_state', state);
-~~~
-
-###setState();
-
-To use the method, you should firstly **get** the stored data from the local storage (using the key you defined for it at the previous step) and then call **setState** from UIManager
-to restore the state of the view in focus.
-
-~~~js
-var state = webix.storage.local.get('webix_state'); //getting saved values from the local storage
-if (state) 
-	webix.UIManager.setState(state); // applying them to the component
-    
-~~~
-
-Saving and getting the state is also available for the treecomponent, where similar methods help memorize opened/closed tree nodes. Learn more about this features in the corresponding 
-[Tree documentation](datatree/nodes_manipulations.md#savingthestateofnodes).
-
-{{note
-UIManager helps save and restore only the outer view parameters while inner ones like selection and scrolling direction are saved within the [DataState](api__refs__datastate.html) module. 
-}}
 
 ##Global Tab Navigation 
 
