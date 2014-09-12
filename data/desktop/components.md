@@ -184,8 +184,8 @@ Controls are mainly responsible for handling events since they enable user-app i
 <div class="controls_group">
 	<ul>
 		<li><a href="desktop/controls.md#label"><img src="api/toc/label.png"/> Label</a></li>
-        <li><a href="desktop/controls.md#multiselect"> <img src="api/toc/richselect.png"/> Multiselect</a></li>
-        <li><a href="desktop/controls.md#multitext"> <img src="api/toc/text.png"/> Multitext</a></li>
+        <li><a href="desktop/controls.md#multiselect"> <img src="api/toc/multiselect.png"/> Multiselect</a></li>
+        <li><a href="desktop/controls.md#multitext"> <img src="api/toc/multitext.png"/> Multitext</a></li>
 		<li><a href="desktop/controls.md#radio"> <img src="api/toc/radio.png"/> Radio</a></li>
 		<li><a href="desktop/controls.md#richselect"><img src="api/toc/richselect.png"/> Richselect</a></li>
 		<li><a href="desktop/controls.md#search"><img src="api/toc/search.png"/> Search</a></li>

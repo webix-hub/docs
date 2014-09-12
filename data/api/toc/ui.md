@@ -127,12 +127,12 @@ table.webixtoc td{
         <td> a context menu </td>
     </tr>
     <tr>
-    	<td> <img src="api/toc/suggest.png"/> </td>
+    	<td> <img src="api/toc/datasuggest.png"/> </td>
         <td> api/refs/ui.datasuggest.md </td>
         <td> a dataview-based suggest control </td>
     </tr>
     <tr>
-    	<td> <img src="api/toc/suggest.png"/> </td>
+    	<td> <img src="api/toc/gridsuggest.png"/> </td>
         <td> api/refs/ui.gridsuggest.md </td>
         <td> a datatable-based suggest control </td>
     </tr>
@@ -243,12 +243,12 @@ table.webixtoc td{
         <td>a non-editable text control</td>
     </tr>
     <tr>
-        <td> <img src="api/toc/text.png"/> </td>
+        <td> <img src="api/toc/multitext.png"/> </td>
         <td> api/refs/ui.multitext.md </td>
         <td>a multi-text control</td>
     </tr>
     <tr>
-        <td> <img src="api/toc/richselect.png"/> </td>
+        <td> <img src="api/toc/multiselect.png"/> </td>
         <td> api/refs/ui.multiselect.md </td>
         <td>a multi-select control</td>
     </tr>
