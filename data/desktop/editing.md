@@ -268,24 +268,41 @@ configuration for popup editors.
 You can configure editing controls inside popup windows, e.g. define other dimensions, alter properties of [textarea](desktop/controls.md#textarea), [colorboard](desktop/colorboard.md) and [calendar](desktop/calendar.md)
 (check the corresponding articles.)
 
-Popup editors can be configured in a scope with the following code: 
+Popup editors can be configured in a scope with the following code. All the same-name editors in the application will be redefined: 
 	
 ~~~js
-	webix.editors.$popup = {
-		text:{
-			view:"popup", width:250, height:200,
-			body:{view:"textarea"}
-		},
-		color:{
-			view:"popup",
-			body:{ view:"colorboard", width:500, height:500, rows:50, cols:50 }
-		},
-		date:{
-			view:"popup",
-			body:{ view:"calendar", weekNumber:true }
-		}
-	};
+//config may as well include only text, color and date hash
+webix.editors.$popup = {
+	text:{
+		view:"popup", width:250, height:200,
+		body:{view:"textarea"}
+	},
+	color:{
+		view:"popup",
+		body:{ view:"colorboard", width:500, height:500, rows:50, cols:50 }
+	},
+	date:{
+		view:"popup",
+		body:{ view:"calendar", weekNumber:true }
+	}
+};
 ~~~
+
+Any instance of a popup editor can be configured separately, with the help of a **popup** property of an item in question: 
+
+{{snippet
+Adding a weekHeader to the Date editor
+}}
+~~~js
+{ id:"date",editor:"date", popup:{
+	view:"popup",
+  	body:{
+    	view:"calendar", borderless:true, weekNumber:true
+  	} 
+}
+~~~
+
+Note that **select editors** (select, richselect, multiselect, combo) offer a wide range of customization possibilities that are described [later](#advancedconfigurationofselecteditors). 
 
 ##Defining options for select editors {#options}
 

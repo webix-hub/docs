@@ -219,7 +219,7 @@ $$("upl1").attachEvent("onUploadComplete", function(){
 - desktop/uploader_serverside.md
 - [Creating a Progress Bar for Uploaded Files](desktop/progress_bar.md)
 - [Uploader and Form Integration](desktop/uploader_integration.md)
-- [Invisible Uploader for Data Containing Components](desktop/apionly_uploader.md)
+- [Binding Uploader to Any Page Element](desktop/apionly_uploader.md)
 - [Api Reference - Uploader Methods, Properties and Events](api/refs/ui.uploader.md)
 - [Uploader CSS Image Map](desktop/uploader_css.md)
 
