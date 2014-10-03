@@ -197,6 +197,7 @@ The component is full of various possibilities: filtering, sorting, pagination, 
 - api/link/ui.datatable_onbeforesort_event.md - fires before sorting dataset
 - api/ui.datatable_onbeforeunselect_event.md - fired before a cell is unselected
 - api/link/ui.datatable_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/ui.datatable_oncheck_event.md - fires when a checkbox is checked or unchecked in the datatable item
 - api/ui.datatable_oncolumnresize_event.md - fires when width of column was changed
 - api/link/ui.datatable_ondatarequest_event.md - fires when data from the server side is requested (part of dynamic loading)
 - api/link/ui.datatable_ondataupdate_event.md - fires when data item is in update process

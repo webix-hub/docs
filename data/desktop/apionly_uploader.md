@@ -113,9 +113,6 @@ For instance, you have an element with *"uploader_container"* ID and you want to
 
 All the [uploader API](api/refs/ui.uploader.md) can be use to control the uploading: 
 
-{{snippet
-Apionly uploader
-}}
 ~~~js
 webix.ui({
 	id:"uploadAPI",
@@ -130,7 +127,7 @@ webix.ui({
 });
 ~~~
 
-In addition, you should pay attention to native drag events:
+In addition, you should handle native drag events:
 
 ~~~js
 webix.event("uploader_container","dragover", function(e){
@@ -146,3 +143,5 @@ webix.event("uploader_container","drop",function(e){
 ~~~
 
 - The [addFile](api/ui.uploader_addfile.md) method is used to programmatically add file info hash to the uploader datastore. 
+
+{{sample 21_upload/09_integration_to_element.html}}
