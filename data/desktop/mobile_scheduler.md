@@ -29,9 +29,9 @@ The mobile version of an event calendar. It was developed to be used in mobile w
             	
 				<li><a href="mobile_calendar/modes.md">Using Modes</a></li>
 				<li><a href="mobile_calendar/details_form.md">Customizing "Details" Form</a></li>
-                <li><a href="mobile_calendar/recurring_events.md">Setting Recurring Events Functionality</a></li>
-                <li><a href="mobile_calendar/localization.md">Localization</a></li>
-                <li><a href="mobile_calendar/mobile_advanced.md">Changing Structure of Mobile Scheduler</a></li>
+                <li><a href="mobile_calendar/recurring_events.md">Setting Recurring Events</a></li>
+                <li><a href="mobile_calendar/localization.md">Localizing Scheduler</a></li>
+                <li><a href="mobile_calendar/mobile_advanced.md">Changing Structure of Scheduler</a></li>
             </ul>
 		</td>
 		<td class='topic_description' onclick="displaySubList(event,'data')">Teaches you how to define the common structure and content of DataTable: columns, headers, dimensions and data inside it.</td>
@@ -42,8 +42,8 @@ The mobile version of an event calendar. It was developed to be used in mobile w
 		        Look-and-Feel
 		    </h4>
 		    <ul id="manipulations_sublist">
-				<li><a href="mobile_calendar/date_format.md">Date Formatting</a></li>
-                <li><a href="mobile_calendar/calendar_templates.md">Calendar Templates</a></li>
+				<li><a href="mobile_calendar/date_format.md">Configuring Date</a></li>
+                <li><a href="mobile_calendar/calendar_templates.md">Applying Templates</a></li>
 				<li><a href="mobile_calendar/sizing.md">Sizing Elements</a></li>
 				<li><a href="mobile_calendar/styling.md">Styling Mobile Scheduler</a></li>
             </ul>

@@ -1,4 +1,4 @@
-Recurring Events Functionality
+Setting Recurring Events 
 ===============================
 
 Enabling functionality

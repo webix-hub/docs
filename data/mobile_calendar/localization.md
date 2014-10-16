@@ -1,4 +1,4 @@
-Localization
+Localizing Scheduler
 =============
 
 Basic principles

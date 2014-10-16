@@ -1,4 +1,4 @@
-Date Formatting
+Configuring Date
 =================
 
 
@@ -35,6 +35,18 @@ Configuration options
 - **scheduler.config.scale_hour** - (”%H” or ”%h”) the format of the hours in the 'day' view (by default, ”%H”)
 - **scheduler.config.server_utc** - (boolean) the 'true' value says the scheduler to convert server-side dates from utc to local timezone and backward while sending data to server;
 - **scheduler.config.xml_date** - (string) the date format in data files. Used by the parser to recognize dates (by default, ”%Y-%m-%d %H:%i”)
+
+###**"Day"** view
+
+<img src="mobile_scheduler/config_day_date.png"/>
+
+###**"Week"** view
+
+<img src="mobile_scheduler/config_week_date.png"/>
+
+###**"Month"** view
+
+<img src="mobile_scheduler/config_month_date.png"/>
 
 (7 images)
 

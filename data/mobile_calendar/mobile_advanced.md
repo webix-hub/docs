@@ -1,4 +1,4 @@
-Changing Structure of Mobile Scheduler
+Changing Structure of Scheduler
 =========================================
 
 
