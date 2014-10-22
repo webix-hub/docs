@@ -14,11 +14,11 @@ The files support all the existing functionality of the standard scheduler + rec
 
 Once the recurring events are enabled, the details form starts looking like shown below:
 
-(image)
+<img src="mobile_scheduler/recurring_edit_form.png"/>
 
 To set a single event with such a form, the user must choose the option **Never** in the **Repeat field**.
 
-(image)
+<img src="mobile_scheduler/recurring_repetition_type.png"/>
 
 **Related sample**: samples/02_recurring/01_recurring.html
 

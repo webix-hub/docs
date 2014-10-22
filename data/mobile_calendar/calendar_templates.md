@@ -21,6 +21,14 @@ Available templates:
 
 (4 images)
 
+<img src="mobile_scheduler/template_day_view.png"/>
+
+<img src="mobile_scheduler/template_month_view.png"/>
+
+<img src="mobile_scheduler/template_event_preview.png"/>
+
+<img src="mobile_scheduler/template_week_view.png"/>
+
 **Related sample**: samples/01_basic/04_templates.html
 
 <h3 id="calendar_event">scheduler.templates.calendar_event</h3>
