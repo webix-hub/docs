@@ -57,16 +57,12 @@ CSS classes and the related elements
 
 ###'Day' view
 
-- **.webix_dayevents_event_item** - a container with an event
+- **.webix_dayevents_event_item** - the container of an event
 - **.webix_topbar** - the top toolbar
-- **.webix_dayevents_scale_item** - a single row (including hours' and minutes' cells)
-- **.webix_dayevents_scale_top** - the top part of an item of the scale
-- **.webix_dayevents_scale_hour** - the container for hours
-- **.dhx_cal_prev_button div** - the 'previous' icon on the top toolbar
-- **.dhx_cal_next_button div** - the 'next' icon on the top toolbar
-- **.dhx_el_label** - the container with the date on the toolbar
-- **.dhx_dayevents_scale_event** - a single row (without hours and minutes cells)
-- **.multi_day_events** - a container for multi-day events
+- **.webix_dayevents_scale_item** - the container of a single scale item
+- **.webix_dayevents_scale_top** - the half an hour separator
+- **.webix_dayevents_scale_hour** - the container inside of the scale item that divides an hour into halves
+- **.multi_day_events** - the container for multi-day events
 - **.multi_day_events .webix_list_item** - a multi-day event item
 
 <img src="mobile_scheduler/style_day_view.png"/>
@@ -75,11 +71,11 @@ CSS classes and the related elements
 ###'Week view'
 
 - **.webix_topbar** - the top toolbar
-- **.webix_scheduler .events .webix_list_item** - a container for an event's elements
-- **.webix_scheduler .webix_unit_header** - an event's header with the date
-- **.webix_list_item .webix_event_time** - a container with the time of an event
+- **.webix_scheduler .events .webix_list_item** - the container for an event's elements
+- **.webix_scheduler .webix_unit_header** - the event's header with the date
+- **.webix_list_item .webix_event_time** - the container with the time of an event
 - **.webix_list_item .webix_event_marker div** -the round marker of an event
-- **.webix_list_item .webix_event_text** - a container with the text of an event
+- **.webix_list_item .webix_event_text** - the container with the text of an event
 
 <img src="mobile_scheduler/style_week_view.png"/>
 
@@ -90,30 +86,30 @@ CSS classes and the related elements
 - **.webix_cal_prev_button** - the 'previous' icon on the top toolbar
 - **.webix_cal_next_button** - the 'next' icon on the top toolbar
 - **.webix_cal_month_name** - the toolbar title
-- **.webix_cal_header** - the container of week header
-- **.webix_cal_day** - the container of a day
-- **.webix_cal_day.webix_cal_event** - the style of weekend days
-- **.webix_cal_outside** - style for days outside the current month's date range
+- **.webix_cal_header** - the container of the week header
+- **.webix_cal_day** - the container for a day
+- **.webix_cal_day.webix_cal_event** - the style of weekends
+- **.webix_cal_outside** - the style for days outside the current month's date range
 - **.webix_cal_select .webix_cal_day_inner** - the style of the selected day
 - **.webix_cal_event_marker** - an event marker (for days with events)
 
-Styles of event's items (see the image of Week View):
+The styles of an event's items (see the image of Week View):
 
 - **.day_events** - the style of the events' list container
-- **.webix_scheduler .events .webix_list_item** - a container for an event's elements
-- **.webix_list_item .webix_event_time** - a container with the time of an event
+- **.webix_scheduler .events .webix_list_item** - the container for an event's elements
+- **.webix_list_item .webix_event_time** - the container with the time of an event
 - **.webix_list_item .webix_event_marker div** -the round marker of an event
-- **.webix_list_item .webix_event_text** - a container with the text of an event
+- **.webix_list_item .webix_event_text** - the container with the text of an event
 
 
 <img src="mobile_scheduler/style_month_view.png"/>
 
 ###'Selected Event' View
 
-- **.selected_event**	- a container with an event
+- **.selected_event**	- the container with an event
 - **.selected_event .event_title**	- the title of an event
 - **.selected_event .event_text** - the description of an event
-- **.webix_scheduler .webix_subbar**	- the top toolbar?
+- **.webix_scheduler .webix_subbar**	- the toolbar
 - **.webixtype_base**	- the 'Edit' button
 - **.webix_el_label.button**	- the 'Back' button
 - **.webixtype_danger**	- the 'Delete' button
@@ -123,10 +119,9 @@ Styles of event's items (see the image of Week View):
 
 ###Edit form
 
-- **.webix_scheduler .webix_subbar**	- the top toolbar??
+- **.webix_scheduler .webix_subbar** - the toolbar
 - **.webixtype_base**	- the 'Save' button
 - **.webix_el_label.button**	- the 'Cancel' button
-- **.dhx_el_box**	- the style of the element container
 - **.webix_control .webix_inp_label**	- the style of an element's label (ex. “Event”,”Start”,”End”)
 - **.webix_control.webix_el_text**	 - an event's title
 - **.webix_control.webix_el_datetext** - the elements with "Start" and "End" dates

@@ -3,7 +3,7 @@ Customizing "Details" Form
 
 Details form is intended for editing events' details.
 
-(image)
+<img src="mobile_scheduler/edit_form.png"/>
 
 For customizing the 'Details form' you should use the **'scheduler.config.form'** object. 
 In this object you must specify all the controls you want the form to contain inside.

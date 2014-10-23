@@ -48,7 +48,21 @@ Configuration options
 
 <img src="mobile_scheduler/config_month_date.png"/>
 
-(7 images)
+###**Edit form**
+
+<img src="mobile_scheduler/config_edit_allday.png"/>
+ 
+<br> 
+ 
+<img src="mobile_scheduler/config_edit_time.png"/>
+
+###**Selected event** view
+
+<img src="mobile_scheduler/config_selected_event.png"/>
+
+###**Start(end) date edit form**
+
+<img src="mobile_scheduler/config_date_edit_form.png"/>
 
 Date format
 ---------------

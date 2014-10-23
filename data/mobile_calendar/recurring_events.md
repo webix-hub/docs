@@ -12,7 +12,7 @@ instead of regular dhtmlxscheduler_mobile.js, dhtmlxscheduler_mobile.css:
 
 The files support all the existing functionality of the standard scheduler + recurring events.
 
-Once the recurring events are enabled, the details form starts looking like shown below:
+Once the recurring events are enabled, the "Edit form" starts looking like shown below:
 
 <img src="mobile_scheduler/recurring_edit_form.png"/>
 
@@ -89,17 +89,37 @@ webix.ready(function(){
 });
 ~~~
 
-Setting recurring events (repetition variations)
+Repetition variations
 ---------------------------------------------------
 
-As it was mentioned above, the **Repeat field** allows setting 4 different repetition steps: 'day','week','month','year'.
+As it was mentioned above, the **Repeat field** allows setting 4 different repetition steps: 
 
-(5 images)
+- 'day'
 
-Customizing the 'Details' form
+<img src="mobile_scheduler/daily_repetition.png"/>
+
+- 'week'
+
+<img src="mobile_scheduler/weekly_repetition.png"/>
+
+- 'month',
+
+<img src="mobile_scheduler/monthly_repetition.png"/>
+
+- 'year'.
+
+<img src="mobile_scheduler/yearly_repetition.png"/>
+
+You can also set the date of repetition's end:
+
+<img src="mobile_scheduler/ending_repetition.png"/>
+
+
+
+Customizing the 'Edit' form
 ----------------------------------
 
-The recurring 'Details form' uses the same customization technique as the standard form does.
+The recurring 'Edit form' uses the same customization technique as the standard form does.
 
 Just the **'scheduler.config.form'** template for recurring events will look like:
 
