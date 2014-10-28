@@ -33,6 +33,7 @@ Properties
 - api/link/ui.multisuggest_padding_config.md - sets paddings of the chart content
 - api/link/ui.multisuggest_position_config.md - sets position of the window relative to the the screen
 - api/link/ui.multisuggest_relative_config.md - positions a popup window relative to the component it's connected with
+- api/ui.multisuggest_separator_config.md - 
 - api/link/ui.multisuggest_template_config.md - template which will be used to fill parent input from selected record
 - api/link/ui.multisuggest_textvalue_config.md - defines which field from suggest list will be used as text after selecting an option
 - api/link/ui.multisuggest_top_config.md - the top offset of a window
@@ -73,6 +74,7 @@ Properties
 - api/link/ui.multisuggest_padding_config.md
 - api/link/ui.multisuggest_position_config.md
 - api/link/ui.multisuggest_relative_config.md
+- api/ui.multisuggest_separator_config.md
 - api/link/ui.multisuggest_template_config.md
 - api/link/ui.multisuggest_textvalue_config.md
 - api/link/ui.multisuggest_top_config.md

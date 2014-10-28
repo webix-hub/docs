@@ -80,6 +80,7 @@ Items of the component combines an icon with the text label. The component can b
 - api/link/ui.tabbar_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.tabbar_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.tabbar_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
+- api/ui.tabbar_onoptionremove_event.md - 
 - api/link/ui.tabbar_onrotate_event.md - occurs on screen rotating
 - api/link/ui.tabbar_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.tabbar_onswipey_event.md - occurs on a vertical swipe movement
