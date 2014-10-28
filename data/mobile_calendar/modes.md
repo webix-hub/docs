@@ -1,4 +1,4 @@
-Using Modes
+Read-only Mode
 ============
 
 The mobile scheduler can be used in 2 modes:

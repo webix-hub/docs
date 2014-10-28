@@ -76,6 +76,14 @@ webix.i18n.locales["en-US"]={
 - *dateFormat, longDateFormat, fullDateFormat* - define the way day, month and year look in stated modes;
 - *timeFormat* - defines the way hours, minutes and seconds look. 
 
+**Start Date**:
+
+By default, a week in the calendar starts on Sunday. However, you can set any day as a start day using the **webix.Date.startOnMonday** property
+
+~~~js
+webix.Date.startOnMonday = true;
+~~~
+
 **Price** states monetary unit applied to the data from data object (**{obj}**). 
 
 **Calendar:** 

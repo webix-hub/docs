@@ -66,6 +66,7 @@ The component is full of various possibilities: filtering, sorting, pagination, 
 - api/ui.datatable_exporttopdf.md - exports data to a PDF file
 - api/link/ui.datatable_filter.md - filters the component
 - api/ui.datatable_filterbyall.md - refilters DataTable by all specified filters
+- api/ui.datatable_find.md - 
 - api/link/ui.datatable_focuseditor.md - moves focus to the active editor
 - api/link/ui.datatable_getchildviews.md - returns child views of the calling component
 - api/ui.datatable_getcolumnconfig.md - returns the configuration object of the specified column

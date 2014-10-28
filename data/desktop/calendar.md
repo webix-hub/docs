@@ -43,7 +43,7 @@ To see the full list of Calendar properties please refer to the [corresponding c
 
 #### Start Date
 
-By default the calendar starts a week on Sunday. Still, you can set any day as a start day.
+By default the calendar starts a week on Sunday. However, you can also set Monday as a start day.
 
 ~~~js
 webix.Date.startOnMonday = true;

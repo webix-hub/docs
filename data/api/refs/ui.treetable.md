@@ -68,6 +68,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_exporttopdf.md - exports data to a PDF file
 - api/link/ui.treetable_filter.md - filters the component
 - api/link/ui.treetable_filterbyall.md - refilters DataTable by all specified filters
+- api/link/ui.treetable_find.md - 
 - api/link/ui.treetable_focuseditor.md - moves focus to the active editor
 - api/link/ui.treetable_getbranchindex.md - gets index of the node in a specific branch
 - api/link/ui.treetable_getchecked.md - returns ids of the checked items
@@ -213,6 +214,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.treetable_onbeforeunselect_event.md - fired before a cell is unselected
 - api/link/ui.treetable_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.treetable_oncheck_event.md - fires when a checkbox is checked or unchecked in the datatable item
 - api/link/ui.treetable_oncolumnresize_event.md - fires when width of column was changed
 - api/link/ui.treetable_ondatarequest_event.md - fires when data from the server side is requested (part of dynamic loading)
 - api/link/ui.treetable_ondataupdate_event.md - fires when data item is in update process

@@ -1,10 +1,10 @@
-Localization
+Localizing Scheduler
 =============
 
 Basic principles
 --------------------
 
-The mobile version as well as the desktop one allows adapting the scheduler to a particular language and region.
+The mobile version as well as the desktop one allows adapting the scheduler to a particular language and a region.
 
 <u><b>To localize the scheduler to some language you should know the following</b></u>: <br>
 All locale's parameters for the mobile version are contained in the **scheduler.locale.labels** object
@@ -25,9 +25,14 @@ var labels = {
 }
 ~~~
 
+{{note
+In order to localize dates (week days and months) you should follow the instruction given in the article desktop/localization.md.
+}}
+
+
 **Related sample**: samples/07_mobile/07_locale.html
 
-Localization params for mobile scheduler
+Localization params for scheduler
 -------------------------------------------
 
 The table below presents all localization parameters available for the mobile version of the scheduler.
@@ -59,6 +64,8 @@ scheduler.locale.labels = {
 	label_time: "Time"
 };
 ~~~
+
+
 
 **Related sample**: samples/01_basic/07_locale.html
 
