@@ -9,6 +9,7 @@ Events
 - api/link/ui.segmented_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.segmented_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.segmented_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
+- api/ui.segmented_onoption_remove_event.md - fires after the option (tab, segment) has been removed
 - api/link/ui.segmented_onrotate_event.md - occurs on screen rotating
 - api/link/ui.segmented_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.segmented_onswipey_event.md - occurs on a vertical swipe movement
@@ -26,6 +27,7 @@ Events
 - api/link/ui.segmented_onchange_event.md
 - api/link/ui.segmented_ondestruct_event.md
 - api/link/ui.segmented_onlongtouch_event.md
+- api/ui.segmented_onoption_remove_event.md
 - api/link/ui.segmented_onrotate_event.md
 - api/link/ui.segmented_onswipex_event.md
 - api/link/ui.segmented_onswipey_event.md

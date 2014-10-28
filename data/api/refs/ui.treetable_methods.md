@@ -14,7 +14,7 @@ Methods
 - api/link/ui.treetable_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.treetable_callevent.md - calls an inner event
 - api/link/ui.treetable_checkall.md - check all items in tree
-- api/link/ui.treetable_checkitem.md - checks the checkbox	related to the specified item
+- api/link/ui.treetable_checkitem.md - checks the checkbox related to the specified item
 - api/link/ui.treetable_clearall.md - removes all items from the component
 - api/link/ui.treetable_clearcss.md - removes css class from all items
 - api/link/ui.treetable_clearvalidation.md - removes all validation marks from the component
@@ -98,7 +98,7 @@ Methods
 - api/link/ui.treetable_locate.md - converts an HTML node or event object to in-table position
 - api/link/ui.treetable_mapcells.md - applies the callback to a range of cells
 - api/link/ui.treetable_mapevent.md - routes events from one object to another
-- api/link/ui.treetable_marksorting.md - cancels sorting and recovers default data presentation
+- api/link/ui.treetable_marksorting.md - marks the sorted column with a dedicated sign (asc/desc) in the header
 - api/link/ui.treetable_move.md - moves the specified item to a new position
 - api/link/ui.treetable_movebottom.md - moves the specified item to the last position
 - api/link/ui.treetable_movecolumn.md - moves column to different position
@@ -138,7 +138,7 @@ Methods
 - api/link/ui.treetable_unbind.md - breaks "bind" link
 - api/link/ui.treetable_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.treetable_uncheckall.md - uncheck all items in the tree
-- api/link/ui.treetable_uncheckitem.md - unchecks the checkbox	related to the specified item
+- api/link/ui.treetable_uncheckitem.md - unchecks the checkbox related to the specified item
 - api/link/ui.treetable_ungroup.md - ungroups data
 - api/link/ui.treetable_updateitem.md - sets properties of the data item
 - api/link/ui.treetable_validate.md - validates one record or all dataset against validation rules

@@ -159,10 +159,14 @@ Sorting DataTable on the button click
 
 {{sample 15_datatable/02_sorting/03_sort_api.html }}
 
-Cancelling sorting 
------------------------------
-You can cancel sorting and recover default data presentation by calling method [markSorting()](api/ui.datatable_marksorting.md).
+###Controlling header sorting mark
 
+You can show and hide the sorting sign (^/V) by calling the [markSorting()](api/ui.datatable_marksorting.md) method with the following parameters: 
+
+- **column_id** - id of the column you want to draw a sorting sign for;
+- **dir** - sorting direction. 
+
+When used with no arguments, the method removed all the sorting signs from the datatable headers.
 
 {{snippet
 Cancelling sorting
@@ -171,7 +175,7 @@ Cancelling sorting
 ~~~js
 grid = webix.ui({ view:"datatable", ...})
 
-grid.markSorting();
+grid.markSorting("title", "asc");
 ~~~
 {{sample 15_datatable/02_sorting/03_sort_api.html }}
 

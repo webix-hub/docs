@@ -111,7 +111,7 @@ The component is full of various possibilities: filtering, sorting, pagination, 
 - api/ui.datatable_mapcells.md - applies the callback to a range of cells
 - api/link/ui.datatable_mapevent.md - routes events from one object to another
 - api/ui.datatable_mapselection.md - executes some custom method for all cells in the currently selected block
-- api/ui.datatable_marksorting.md - cancels sorting and recovers default data presentation
+- api/ui.datatable_marksorting.md - marks the sorted column with a dedicated sign (asc/desc) in the header
 - api/link/ui.datatable_move.md - moves the specified item to a new position
 - api/link/ui.datatable_movebottom.md - moves the specified item to the last position
 - api/ui.datatable_movecolumn.md - moves column to different position
