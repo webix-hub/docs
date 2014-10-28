@@ -1,4 +1,4 @@
-Styling Mobile Scheduler
+Styling Scheduler
 ======================
 
 To customize some element of the scheduler you should redefine the needed attributes of the related css class in the &#60;style&#62; block of your page.
@@ -11,18 +11,18 @@ The untouched attributes will take default values.
  	<head>
 		<link 
     	 	rel="stylesheet" 
-    	  	href="../../codebase/dhxscheduler_mobile.css" 
+    	  	href="../../codebase/scheduler.css" 
           	type="text/css" 
           	media="screen" 
           	charset="utf-8"
     	>
 		<script 
-        	src="../../codebase/dhxscheduler_mobile.js" 
+        	src="../../codebase/scheduler.js" 
             type="text/javascript" 
             charset="utf-8">
         </script>
         <style>
-          .dhx_schedulerbar{
+          .webix_bottombar{
 	      background:#6699FF !important;
           }
        </style>
@@ -33,7 +33,7 @@ The untouched attributes will take default values.
 </html>
 ~~~
 
-In the above example we redefined only the background color. All the other attributes defined in the **'.dhx_schedulerbar'** class took the default values.
+In the above example we redefined only the background color. All the other attributes defined in the **'.webix_bottombar'** class took the default values.
 
 **Related sample**: samples/01_basic/09_custom_style.html
 

@@ -1,11 +1,12 @@
-Customizing "Details" Form
+Customizing the "Edit" Form
 =============================
 
 Details form is intended for editing events' details.
-
+<br><br>
 <img src="mobile_scheduler/edit_form.png"/>
+<br>
 
-For customizing the 'Details form' you should use the **'scheduler.config.form'** object. 
+For customizing the "Edit" form you should use the **'scheduler.config.form'** object. 
 In this object you must specify all the controls you want the form to contain inside.
 
 Into **'scheduler.config.form'** you can put any Form control (read about the controls in the related article desktop/controls.md).
@@ -18,6 +19,7 @@ scheduler.config.form = [
     	view:"text",     
     	id:'text',       
     	label:scheduler.locale.labels.label_event, 
+        labelWidth: 90,
     	name:'text'
     },
     {
@@ -25,6 +27,7 @@ scheduler.config.form = [
         id:'start_date', 
         label:scheduler.locale.labels.label_start, 
         name:'start_date', 
+        labelWidth: 90,
         dateFormat:scheduler.config.form_date
     },
     {
@@ -35,20 +38,19 @@ scheduler.config.form = [
         dateFormat:scheduler.config.form_date
     },
     {
-    	view:"toggle",   
-        id:'allDay',     
-        label:"", 
-        align: "right",
-        value:"0", options: [
-			{value:"0",label:scheduler.locale.labels.label_time},               
-        	{value:"1",label:scheduler.locale.labels.label_allday}
-    	]
+    	view:"checkbox",	
+        id: "allDay", 
+        name: "allDay", 
+        label: scheduler.locale.labels.label_allday, 
+        labelWidth: 100,  
+        value:0},
     },
     {
     	view:"textarea", 
-        id:'details',    
-        label:labels.label_details,                
-        name:'details',	 
+        id: "details",  
+        name:"details",
+        label: scheduler.locale.labels.label_details,                
+        labelWidth: 90,
         height:150
     }
 ];
