@@ -1,24 +1,25 @@
-Setting Recurring Events 
+Recurring Events 
 ===============================
 
 Enabling functionality
 --------------------
 
-By default, scheduler doesn't support recurring events. To enable such functionality you should include 2 special files
-instead of regular dhtmlxscheduler_mobile.js, dhtmlxscheduler_mobile.css:
+By default, scheduler doesn't support recurring events. To enable such functionality you should use the following configuration property
 
-- **dhxscheduler_mobile_rec.js**
-- **dhxscheduler_mobile_rec.css**
+**scheduler.config.recurring = true;**
+
 
 The files support all the existing functionality of the standard scheduler + recurring events.
 
 Once the recurring events are enabled, the "Edit form" starts looking like shown below:
-
+<br><br>
 <img src="mobile_scheduler/recurring_edit_form.png"/>
+<br><br>
 
 To set a single event with such a form, the user must choose the option **Never** in the **Repeat field**.
-
+<br><br>
 <img src="mobile_scheduler/recurring_repetition_type.png"/>
+<br><br>
 
 **Related sample**: samples/02_recurring/01_recurring.html
 
