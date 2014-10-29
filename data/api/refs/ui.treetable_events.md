@@ -40,6 +40,7 @@ Events
 - api/link/ui.treetable_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.treetable_onbeforeunselect_event.md - fired before a cell is unselected
 - api/link/ui.treetable_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.treetable_oncheck_event.md - fires when a checkbox is checked or unchecked in the datatable item
 - api/link/ui.treetable_oncolumnresize_event.md - fires when width of column was changed
 - api/link/ui.treetable_ondatarequest_event.md - fires when data from the server side is requested (part of dynamic loading)
 - api/link/ui.treetable_ondataupdate_event.md - fires when data item is in update process
@@ -112,6 +113,7 @@ Events
 - api/link/ui.treetable_onbeforesort_event.md
 - api/link/ui.treetable_onbeforeunselect_event.md
 - api/link/ui.treetable_onbindrequest_event.md
+- api/link/ui.treetable_oncheck_event.md
 - api/link/ui.treetable_oncolumnresize_event.md
 - api/link/ui.treetable_ondatarequest_event.md
 - api/link/ui.treetable_ondataupdate_event.md

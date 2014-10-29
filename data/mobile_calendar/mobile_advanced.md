@@ -1,4 +1,4 @@
-Changing Structure of Scheduler
+Changing Scheduler's Structure
 =========================================
 
 
@@ -29,7 +29,7 @@ The main **multiview** of the scheduler contains 3 views:
     
 ###Day view
 
-(image)
+<img src="mobile_scheduler/day_view_toolbar.png"/>
 
 
 In the “Day” view, the toolbar contains navigation buttons and the label displaying the selected date.
@@ -46,14 +46,12 @@ scheduler.config.day_toolbar = [
 
 ###Month view
 
-(image??)
-
 In the “Month” view the toolbar is a part of calendar integrated to the view (not an individual component). 
 So if you want to customize this toolbar, please, refer to the related desktop/calendar.md documentation.
 
 ###Event preview screen
 
-(image)
+<img src="mobile_scheduler/event_preview_toolbar.png"/>
 
 Here, the toolbar contains 2 buttons: “Back” and “Edit” (the buttons are hidden in the [read-only mode](mobile_calendar/modes.md)).
 
@@ -69,6 +67,8 @@ scheduler.config.selected_toolbar = [
 ###Start(end) date edit form
 
 
+<img src="mobile_scheduler/date_editform_toolbar.png"/>
+
 The toolbar contains 2 buttons: “Cancel” and “Done” and the label displaying which date is edited: **start** or **end** 
 (the view is hidden in the [read-only mode](mobile_calendar/modes.md)).
 
@@ -81,11 +81,11 @@ scheduler.config.date_toolbar = [
 ];
 ~~~
 
-###Details form
+###Edit form
 
-(image)
+<img src="mobile_scheduler/edit_form_toolbar.png"/>
 
-The toolbar of the details form has 2 buttons: “Cancel” and “Save”.
+The toolbar of the "Edit" form has 2 buttons: “Cancel” and “Save”.
 
 ~~~js
 scheduler.config.form_toolbar = [
@@ -99,7 +99,7 @@ scheduler.config.form_toolbar = [
 Main bottom toolbar
 ----------------------
 
-(image)
+<img src="mobile_scheduler/main_toolbar.png"/>
 
 The main scheduler toolbar contains 3 controls:
 
@@ -134,7 +134,7 @@ Clicks on the default buttons are handled automatically. But for new buttons you
 
 Let's assume you want to add a new button to **Event Preview screen** - 'Location'.
 
-(image)
+<img src="mobile_scheduler/custom_toolbar.png"/>
 
 The definition of your new toolbar can be the following:
 

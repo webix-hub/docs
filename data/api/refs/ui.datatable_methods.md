@@ -41,6 +41,7 @@ Methods
 - api/ui.datatable_exporttopdf.md - exports data to a PDF file
 - api/link/ui.datatable_filter.md - filters the component
 - api/ui.datatable_filterbyall.md - refilters DataTable by all specified filters
+- api/ui.datatable_find.md - 
 - api/link/ui.datatable_focuseditor.md - moves focus to the active editor
 - api/link/ui.datatable_getchildviews.md - returns child views of the calling component
 - api/ui.datatable_getcolumnconfig.md - returns the configuration object of the specified column
@@ -86,7 +87,7 @@ Methods
 - api/ui.datatable_mapcells.md - applies the callback to a range of cells
 - api/link/ui.datatable_mapevent.md - routes events from one object to another
 - api/ui.datatable_mapselection.md - executes some custom method for all cells in the currently selected block
-- api/ui.datatable_marksorting.md - cancels sorting and recovers default data presentation
+- api/ui.datatable_marksorting.md - marks the sorted column with a dedicated sign (asc/desc) in the header
 - api/link/ui.datatable_move.md - moves the specified item to a new position
 - api/link/ui.datatable_movebottom.md - moves the specified item to the last position
 - api/ui.datatable_movecolumn.md - moves column to different position
@@ -173,6 +174,7 @@ Methods
 - api/ui.datatable_exporttopdf.md
 - api/link/ui.datatable_filter.md
 - api/ui.datatable_filterbyall.md
+- api/ui.datatable_find.md
 - api/link/ui.datatable_focuseditor.md
 - api/link/ui.datatable_getchildviews.md
 - api/ui.datatable_getcolumnconfig.md

@@ -1,10 +1,10 @@
-Configuring Date
+Date Formats
 =================
 
 
-In the scheduler you are allowed to configure formats (used in dates) and sizes of the elements.
+You've got the possiblity to configure date formats of the scheduler easily.
 
-To set the desired option, just write it as it's stated in this documentation. 
+To set the desired option, just write it as it's stated in this documentation.<br> 
 Beware! Configuration options should go before the code line with scheduler initialization.
 
 ~~~js
@@ -23,16 +23,16 @@ $$("scheduler").load("../scheduler/mobile.xml","scheduler");
 Configuration options
 -------------------------
 
-- **scheduler.config.calendar_date** - (string) the date format of the header in the 'month' view (by default, ”%F %Y”)
+- **scheduler.config.calendar_date** - (string) the date format of the header in the 'Month' view (by default, ”%F %Y”)
 - **scheduler.config.calendar_hour** - (string) the format of  hours in the 'start(end) date edit form' (by default, ”%h:%i”)
 - **scheduler.config.init_date** - (date object) the initial date of the scheduler (by default, the current date)
-- **scheduler.config.item_date** - (string) the format of the date in the 'list' view (by default, ”%d.%m.%Y”)
-- **scheduler.config.form_all_day** - (string) the format of  dates of the 'start', 'end' fields in the 'Details form' in case the **All day** option is set (by default, ”%d-%m-%Y” )
-- **scheduler.config.form_date** - (string) the format of dates of the 'start', 'end' fields in the 'Details form' in case the **Time option** is set (by default, ”%d-%m-%Y %H:%i”)
-- **scheduler.config.header_date** - (string) the format of the date in the 'day' view (by default, ”%d.%m.%Y”)
-- **scheduler.config.hour_date** - (string) the format of the time in the 'list' view (by default, ”%h:%i”)
-- **scheduler.config.multi_day** - (string) the format of presenting multi-day events in the 'Details form' (by default, ”%l, %d %F %Y”)
-- **scheduler.config.scale_hour** - (”%H” or ”%h”) the format of the hours in the 'day' view (by default, ”%H”)
+- **scheduler.config.item_date** - (string) the format of the date in the 'Week' view (by default, ”%d.%m.%Y”)
+- **scheduler.config.form_all_day** - (string) the format of  dates of the 'start', 'end' fields in the 'Edit form' in case the **All day** option is checked (by default, ”%d-%m-%Y” )
+- **scheduler.config.form_date** - (string) the format of dates of the 'start', 'end' fields in the 'Edit form' in case the **All day** option isn't checked (by default, ”%d-%m-%Y %H:%i”)
+- **scheduler.config.header_date** - (string) the format of the date in the 'Day' view (by default, ”%d.%m.%Y”)
+- **scheduler.config.hour_date** - (string) the format of the time in the 'Week' view (by default, ”%h:%i”)
+- **scheduler.config.multi_day** - (string) the format of presenting multi-day events in the 'Edit form' (by default, ”%l, %d %F %Y”)
+- **scheduler.config.scale_hour** - (”%H” or ”%h”) the format of the hours in the 'Day' view (by default, ”%H”)
 - **scheduler.config.server_utc** - (boolean) the 'true' value says the scheduler to convert server-side dates from utc to local timezone and backward while sending data to server;
 - **scheduler.config.xml_date** - (string) the date format in data files. Used by the parser to recognize dates (by default, ”%Y-%m-%d %H:%i”)
 
@@ -48,7 +48,21 @@ Configuration options
 
 <img src="mobile_scheduler/config_month_date.png"/>
 
-(7 images)
+###**Edit form**
+
+<img src="mobile_scheduler/config_edit_allday.png"/>
+ 
+<br> 
+ 
+<img src="mobile_scheduler/config_edit_time.png"/>
+
+###**Selected event** view
+
+<img src="mobile_scheduler/config_selected_event.png"/>
+
+###**Start(end) date edit form**
+
+<img src="mobile_scheduler/config_date_edit_form.png"/>
 
 Date format
 ---------------

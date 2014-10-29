@@ -34,7 +34,7 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
                     <li>helpers/ajax_operations.md</li>
             </ul>
         </td>
-		<td class='topic_description' onclick="displaySubList(event,'data')">Learns you how to load data into a component using different data sources, formats and techniques.</td>
+		<td class='topic_description' onclick="displaySubList(event,'data')">Teaches you how to load data into a component using different data sources, formats and techniques.</td>
 	</tr>
 	<tr>
 		<td id="manipulations" class='topics' onclick="displaySubList(event,this.id)">

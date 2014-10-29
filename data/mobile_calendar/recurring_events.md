@@ -1,24 +1,25 @@
-Setting Recurring Events 
+Recurring Events 
 ===============================
 
 Enabling functionality
 --------------------
 
-By default, scheduler doesn't support recurring events. To enable such functionality you should include 2 special files
-instead of regular dhtmlxscheduler_mobile.js, dhtmlxscheduler_mobile.css:
+By default, scheduler doesn't support recurring events. To enable such functionality you should use the following configuration property
 
-- **dhxscheduler_mobile_rec.js**
-- **dhxscheduler_mobile_rec.css**
+**scheduler.config.recurring = true;**
+
 
 The files support all the existing functionality of the standard scheduler + recurring events.
 
-Once the recurring events are enabled, the details form starts looking like shown below:
-
-(image)
+Once the recurring events are enabled, the "Edit form" starts looking like shown below:
+<br><br>
+<img src="mobile_scheduler/recurring_edit_form.png"/>
+<br><br>
 
 To set a single event with such a form, the user must choose the option **Never** in the **Repeat field**.
-
-(image)
+<br><br>
+<img src="mobile_scheduler/recurring_repetition_type.png"/>
+<br><br>
 
 **Related sample**: samples/02_recurring/01_recurring.html
 
@@ -89,17 +90,37 @@ webix.ready(function(){
 });
 ~~~
 
-Setting recurring events (repetition variations)
+Repetition variations
 ---------------------------------------------------
 
-As it was mentioned above, the **Repeat field** allows setting 4 different repetition steps: 'day','week','month','year'.
+As it was mentioned above, the **Repeat field** allows setting 4 different repetition steps: 
 
-(5 images)
+- 'day'
 
-Customizing the 'Details' form
+<img src="mobile_scheduler/daily_repetition.png"/>
+
+- 'week'
+
+<img src="mobile_scheduler/weekly_repetition.png"/>
+
+- 'month',
+
+<img src="mobile_scheduler/monthly_repetition.png"/>
+
+- 'year'.
+
+<img src="mobile_scheduler/yearly_repetition.png"/>
+
+You can also set the date of repetition's end:
+
+<img src="mobile_scheduler/ending_repetition.png"/>
+
+
+
+Customizing the 'Edit' form
 ----------------------------------
 
-The recurring 'Details form' uses the same customization technique as the standard form does.
+The recurring 'Edit form' uses the same customization technique as the standard form does.
 
 Just the **'scheduler.config.form'** template for recurring events will look like:
 

@@ -39,7 +39,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.treetable_callevent.md - calls an inner event
 - api/link/ui.treetable_checkall.md - check all items in tree
-- api/link/ui.treetable_checkitem.md - checks the checkbox	related to the specified item
+- api/link/ui.treetable_checkitem.md - checks the checkbox related to the specified item
 - api/link/ui.treetable_clearall.md - removes all items from the component
 - api/link/ui.treetable_clearcss.md - removes css class from all items
 - api/link/ui.treetable_clearvalidation.md - removes all validation marks from the component
@@ -68,6 +68,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_exporttopdf.md - exports data to a PDF file
 - api/link/ui.treetable_filter.md - filters the component
 - api/link/ui.treetable_filterbyall.md - refilters DataTable by all specified filters
+- api/link/ui.treetable_find.md - 
 - api/link/ui.treetable_focuseditor.md - moves focus to the active editor
 - api/link/ui.treetable_getbranchindex.md - gets index of the node in a specific branch
 - api/link/ui.treetable_getchecked.md - returns ids of the checked items
@@ -123,7 +124,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_locate.md - converts an HTML node or event object to in-table position
 - api/link/ui.treetable_mapcells.md - applies the callback to a range of cells
 - api/link/ui.treetable_mapevent.md - routes events from one object to another
-- api/link/ui.treetable_marksorting.md - cancels sorting and recovers default data presentation
+- api/link/ui.treetable_marksorting.md - marks the sorted column with a dedicated sign (asc/desc) in the header
 - api/link/ui.treetable_move.md - moves the specified item to a new position
 - api/link/ui.treetable_movebottom.md - moves the specified item to the last position
 - api/link/ui.treetable_movecolumn.md - moves column to different position
@@ -163,7 +164,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_unbind.md - breaks "bind" link
 - api/link/ui.treetable_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.treetable_uncheckall.md - uncheck all items in the tree
-- api/link/ui.treetable_uncheckitem.md - unchecks the checkbox	related to the specified item
+- api/link/ui.treetable_uncheckitem.md - unchecks the checkbox related to the specified item
 - api/link/ui.treetable_ungroup.md - ungroups data
 - api/link/ui.treetable_updateitem.md - sets properties of the data item
 - api/link/ui.treetable_validate.md - validates one record or all dataset against validation rules
@@ -213,6 +214,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.treetable_onbeforeunselect_event.md - fired before a cell is unselected
 - api/link/ui.treetable_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.treetable_oncheck_event.md - fires when a checkbox is checked or unchecked in the datatable item
 - api/link/ui.treetable_oncolumnresize_event.md - fires when width of column was changed
 - api/link/ui.treetable_ondatarequest_event.md - fires when data from the server side is requested (part of dynamic loading)
 - api/link/ui.treetable_ondataupdate_event.md - fires when data item is in update process
