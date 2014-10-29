@@ -75,6 +75,7 @@ The component presents a standard text input but with the icon. Supports reqular
 - api/link/ui.search_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.search_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.search_onrotate_event.md - occurs on screen rotating
+- api/ui.search_onsearchiconclick_event.md - fires after the 'search' icon has been clicked in the input
 - api/link/ui.search_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.search_onswipey_event.md - occurs on a vertical swipe movement
 - api/link/ui.search_ontouchend_event.md - occurs when the touch event is ended

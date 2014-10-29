@@ -8,7 +8,7 @@ copy
 - sid		id		id of source item
 - tindex	number		index at which copy will be created
 * tobj		view	target view
-- details	object	extra parameters for moving
+* details	object	extra parameters for moving
 
 @returns:
 
@@ -20,8 +20,7 @@ copy
 @template:	api_method
 @descr:
 
-
-details can contain the next properties
+Details object can contain the next properties:
 
 ~~~js
 details = {};
@@ -29,4 +28,4 @@ details.newId = "123"; //new id for moved item
 details.parent = "a2"; //id of new parent element
 ~~~
 
-If parent is defined - index will be child index inside the target branch
+If parent is defined - *tindex* will be child index inside the target branch.
