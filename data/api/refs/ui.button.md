@@ -72,6 +72,7 @@ The control has a collection of preset looks and can be used both as a stand-alo
 - api/link/ui.button_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/ui.button_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.button_ondestruct_event.md - occurs when component destroyed
+- api/ui.button_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.button_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.button_onrotate_event.md - occurs on screen rotating
 - api/link/ui.button_onswipex_event.md - occurs on a horizontal swipe movement

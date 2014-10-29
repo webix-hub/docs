@@ -13,7 +13,7 @@ Mixins
 - api/refs/collectionbind.md -  binding rules for collections of objects
 - api/refs/contexthelper.md -  provides for subviews seen by right mouse click
 - api/refs/copypaste.md -  provides support for copy-paste operations (integration with clipboard) 
-- api/refs/customscroll.md - 
+- api/refs/customscroll.md - renders custom scrollbars to Webix views
 - api/refs/datacollection.md -  view-less control which stores collections of data objects 
 - api/refs/datadriver.md -  data parsing for different format
 - api/refs/dataloader.md -  loads and process data in to component
@@ -37,7 +37,7 @@ Mixins
 - api/refs/htmlmap.md -  wrapper for image maps
 - api/refs/idspace.md -  separate layer of ids
 - api/refs/keysnavigation.md -  implements keyboard navigation
-- api/refs/mapcollection.md - 
+- api/refs/mapcollection.md - holds logic for collection mapping for property-sheet's and datatable's editors
 - api/refs/modality.md -  sets modality to popup views
 - api/refs/mouseevents.md -  adds inner events for all mouse actions
 - api/refs/movable.md -  adds ability to move data in component or between components
@@ -46,7 +46,7 @@ Mixins
 - api/refs/overlaybox.md -  show a temporary layer other view
 - api/refs/pagingability.md -  interface which adds support for pager
 - api/refs/powerarray.md -  extension for arrays
-- api/refs/progressbar.md - 
+- api/refs/progressbar.md - draws a progress bar (icon) for a view or application part
 - api/refs/recordbind.md -  binding logic for view which have single data object
 - api/refs/renderstack.md -  render strategy for plain datasets
 - api/refs/scrollable.md -  adds scroll for the view
