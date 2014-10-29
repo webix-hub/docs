@@ -8,6 +8,7 @@ Events
 - api/link/ui.search_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.search_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.search_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.search_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.search_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.search_onrotate_event.md - occurs on screen rotating
 - api/ui.search_onsearchiconclick_event.md - fires after the 'search' icon has been clicked in the input
@@ -26,6 +27,7 @@ Events
 - api/link/ui.search_onbindrequest_event.md
 - api/link/ui.search_onchange_event.md
 - api/link/ui.search_ondestruct_event.md
+- api/link/ui.search_onitemclick_event.md
 - api/link/ui.search_onlongtouch_event.md
 - api/link/ui.search_onrotate_event.md
 - api/ui.search_onsearchiconclick_event.md

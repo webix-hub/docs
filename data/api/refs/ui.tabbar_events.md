@@ -11,6 +11,7 @@ Events
 - api/link/ui.tabbar_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.tabbar_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.tabbar_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.tabbar_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.tabbar_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.tabbar_onoptionremove_event.md - fires after the option (tab, segment) has been removed
 - api/link/ui.tabbar_onrotate_event.md - occurs on screen rotating
@@ -32,6 +33,7 @@ Events
 - api/link/ui.tabbar_onbindrequest_event.md
 - api/link/ui.tabbar_onchange_event.md
 - api/link/ui.tabbar_ondestruct_event.md
+- api/link/ui.tabbar_onitemclick_event.md
 - api/link/ui.tabbar_onlongtouch_event.md
 - api/link/ui.tabbar_onoptionremove_event.md
 - api/link/ui.tabbar_onrotate_event.md

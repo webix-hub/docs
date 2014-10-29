@@ -10,9 +10,11 @@ removeOption
 
 @example:
 function del_tab(){
-			var tab_id = $$("tabs").getValue();
-			$$("tabs").removeOption(tab_id);
-            }
+	var tab_id = $$("tabs").getValue();
+	$$("tabs").removeOption(tab_id);
+}
+
+@defined: ui.segmented
 
 @template:	api_method
 

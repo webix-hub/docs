@@ -12,6 +12,8 @@ tabbar.attachEvent("onOptionRemove", function(id, value){
 	//code
 });
 
+@defined: ui.segmented
+
 @related: 
 	desktop/controls.md#segmented
 	desktop/tabs_options.md

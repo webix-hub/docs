@@ -12,43 +12,50 @@ webix.ajax("some.php", function(text){
 });
 ~~~
 
-Above code makes async. get request to the some.php and shows it response through callback function. 
+Above code makes async. GET request to the "some.php" script and shows it response through callback function. 
 
 
 ### Passing parameters
 
-You can pass extra parameters by including them in the request string
+You can pass extra parameters by including them in the request string:
 ~~~js
 webix.ajax("some.php?action=info&id=123");
 ~~~
 
-or by using separate object 
+by a separate string with parameters:
+
+~~~js
+webix.ajax().get("some.php", "action=info&id=123");
+~~~
+
+or by using a separate JSON object:
 
 ~~~js
 webix.ajax().get("some.php",{ action:"info", id:123 });
 ~~~
 
-in case of object notation, lib will escape values automatically. 
+In case of object notation, the lib will escape values automatically. 
 
 
 ### Post mode
 
-Same function can be used to make post requests
+Same function can be used to make post requests:
 
 ~~~js
 webix.ajax().post("some.php");
 ~~~
 
-here you can also use two methods to provide extra params 
-
+Here you can use two methods to provide extra params:
 
 ~~~js
-//GET: some.php; POST: action=info,  id=123
-webix.ajax().post("some.php","action=info&id=123"); //GET: some.php
+//$_POST["action"]="info", $_POST["id"]="123"
+webix.ajax().post("some.php","action=info&id=123");
 webix.ajax().post("some.php", { action:"info", id:123 }); 
 ~~~
 
-
+{{note
+Note that when passing extra parameters into the server script by a separate string/object, you should specify the type of a request (GET or POST).
+}}
 
 ### Sync mode 
 

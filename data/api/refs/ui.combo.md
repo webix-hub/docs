@@ -75,6 +75,7 @@ The control combines an editable text field with a drop-down list of predefined 
 - api/link/ui.combo_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.combo_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.combo_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.combo_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.combo_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.combo_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.combo_onrotate_event.md - occurs on screen rotating

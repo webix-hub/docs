@@ -13,6 +13,8 @@ tabbar.attachEvent("onBeforeTabClose", function(id, e){
 	//code
 });
 
+@defined: ui.tabbar
+
 @template:api_event
 @related:
 	desktop/controls.md#tabbar
