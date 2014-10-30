@@ -9,13 +9,13 @@ copy
 - sid		id		the id of the copied object
 - tindex	number		the index of the copy
 - tobj		object		the object that an item is copied to
-- tid		id		the id of the copy-item
+- details		object		extra parameters for copying
 
 
 @example:
 gridb.attachEvent("onBeforeDrop", function(context, ev){
    	for (var i=0; i< context.source.length; i++){
-		context.from.copy(context.source[i],context.start,this,webix.uid());
+		context.from.copy(context.source[i],context.start,this,{newId:webix.uid()});
 	}
 	return false;
 });
@@ -30,11 +30,20 @@ gridb.attachEvent("onBeforeDrop", function(context, ev){
 @defined:	DataMove	
 @descr:
 
+Details object can contain the next properties:
+
+~~~js
+details = {};
+details.newId = "123"; //new id for moved item
+~~~
+
 In the sample above:
 
 - **sid** is the ID of each dragged item;
 - **tindex** is the ID from which DnD was started;
 - **tobj** is a datatable object where the items are dropped to;
-- **tid** is generated automatically with *webix.uid()* method. 
+- **newId** is generated automatically with *webix.uid()* method. 
+
+
 
 

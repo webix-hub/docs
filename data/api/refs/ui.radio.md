@@ -73,6 +73,7 @@ You can group multiple component instances together to provide the desired set o
 - api/link/ui.radio_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.radio_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.radio_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.radio_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.radio_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.radio_onrotate_event.md - occurs on screen rotating
 - api/link/ui.radio_onswipex_event.md - occurs on a horizontal swipe movement

@@ -74,6 +74,7 @@ The control allows users to make multiple choices from a number of options. Full
 - api/link/ui.checkbox_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.checkbox_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.checkbox_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.checkbox_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.checkbox_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.checkbox_onrotate_event.md - occurs on screen rotating
 - api/link/ui.checkbox_onswipex_event.md - occurs on a horizontal swipe movement

@@ -74,6 +74,7 @@ The component handles RGB, HSL, and hex formats and allows setting custom colors
 - api/link/ui.colorpicker_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.colorpicker_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.colorpicker_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.colorpicker_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.colorpicker_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.colorpicker_onrotate_event.md - occurs on screen rotating
 - api/link/ui.colorpicker_onswipex_event.md - occurs on a horizontal swipe movement

@@ -40,9 +40,9 @@ Adding
 {view:"tabbar", id:"tabs", options:[],..} //tabbar init with empty "options" array
 
 function open_new_tab(id){
-			var item = $$('list1').getItem(id);
-			$$('tabs').addOption(item.id, item.title, true);
-			};
+	var item = $$('list1').getItem(id);
+	$$('tabs').addOption(item.id, item.title, true);
+};
 ~~~
 
 {{snippet
@@ -50,12 +50,15 @@ Deletion
 }}
 ~~~js
 function del_tab(){
-			var tab_id = $$("tabs").getValue(); //getting the ID of the active tab
-			$$("tabs").removeOption(tab_id);
-            }
-            
+	var tab_id = $$("tabs").getValue(); //getting the ID of the active tab
+	$$("tabs").removeOption(tab_id);
+}       
 ~~~
 
 {{sample 02_toolbar/19_tabs_on_the_go.html}}
 
-Notice that in the attached sample tabbar isn't used for view switching. It just highlights list info in the dedicated template. 
+~~~note
+In the attached sample tabbar is as well used for view switching. 
+The logic of view adding and removal can be studied in detail in the 
+desktop/dynamic_layout.md#addingremovingviewsdynamically.
+~~~

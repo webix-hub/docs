@@ -1,7 +1,8 @@
 ProgressBar 
 =============
 
-Draws a progress bar (icon) for a view or application part.
+Draws a progress bar (icon) for a view or application part. Study in detail in the 
+[corresponding article](desktop/progress.md#settingprogressbaricon) of the main documentation.
 
 
 

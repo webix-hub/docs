@@ -11,7 +11,7 @@ move
 - sid		string	the id of the item to move
 - tindex	number     the new position of the item (new index)
 * tobj	  	object    the object that the item is moved to
-* tid		string	the new item id
+* details		object	extra parameters for moving
 
 
 @returns:
@@ -38,5 +38,16 @@ var id = $$('list').move("a13", 0, $$("list2"));
     api/datamove_movetop.md
 @defined:	DataMove	
 @descr:
+
+@descr:
+
+Details object can contain the following properties
+
+~~~js
+details = {};
+details.newId = "123"; //new id for moved item
+~~~
+
+
 
 

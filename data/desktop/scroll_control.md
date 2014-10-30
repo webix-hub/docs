@@ -140,18 +140,9 @@ Webix offers custom scrollbars to replace native browser ones. The advantages ar
 
 {{sample 60_pro/03_api/01_customscroll.html}}
 
-The feature is provided in a separate **CustomScroll** module and the file should be included before use: 
+The feature is provided by a separate **CustomScroll** module that you need to **enable** before use. 
 
-{{snippet
-Including CustomScroll in addition to Webix
-}}
-~~~html
-<!--provide relative path as in your machine-->
-<script src="codebase/ui/customscroll.js" type="text/javascript" charset="utf-8">
-</script>
-~~~
-
-In addition, you need to **enable the CustomScroll** for your application. Make sure you wrap everything into a **webix.ready()** function that is executed after page loading:
+Make sure you wrap everything into a **webix.ready()** function that is executed after page loading:
 
 ~~~js
 webix.ready(function(){

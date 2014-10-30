@@ -20,8 +20,7 @@ move
 @template:	api_method
 @descr:
 
-
-details can contain the next properties
+Details object can contain the next properties
 
 ~~~js
 details = {};
@@ -30,5 +29,5 @@ details.parent = "a2"; //id of new parent element
 details.copy = false;  //creates new item, instead of moving
 ~~~
 
-If parent is defined - index will be child index inside the target branch
+If parent is defined - *tindex* will be the child index inside the target branch.
 

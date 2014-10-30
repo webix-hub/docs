@@ -8,6 +8,7 @@ Events
 - api/link/ui.counter_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.counter_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.counter_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.counter_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.counter_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.counter_onrotate_event.md - occurs on screen rotating
 - api/link/ui.counter_onswipex_event.md - occurs on a horizontal swipe movement
@@ -25,6 +26,7 @@ Events
 - api/link/ui.counter_onbindrequest_event.md
 - api/link/ui.counter_onchange_event.md
 - api/link/ui.counter_ondestruct_event.md
+- api/link/ui.counter_onitemclick_event.md
 - api/link/ui.counter_onlongtouch_event.md
 - api/link/ui.counter_onrotate_event.md
 - api/link/ui.counter_onswipex_event.md

@@ -63,6 +63,7 @@ Check [multiselect](desktop/controls.md#multiselect) documentation for more deta
 - api/link/ui.multiselect_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.multiselect_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.multiselect_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.multiselect_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.multiselect_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.multiselect_onrotate_event.md - occurs on screen rotating
 - api/link/ui.multiselect_onswipex_event.md - occurs on a horizontal swipe movement
@@ -114,6 +115,7 @@ Check [multiselect](desktop/controls.md#multiselect) documentation for more deta
 - api/link/ui.multiselect_relatedview_config.md - id of view, that will be affected by relatedAction operation
 - api/link/ui.multiselect_required_config.md - marks field as required
 - api/ui.multiselect_selectbuttontext_config.md - 
+- api/ui.multiselect_separator_config.md - 
 - api/link/ui.multiselect_suggest_config.md - links suggest list to the input
 - api/link/ui.multiselect_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/link/ui.multiselect_template_config.md - the component template

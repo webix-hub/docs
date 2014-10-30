@@ -12,6 +12,8 @@ addOption
 
 @returns: 
 - id	string	the option ID
+
+@defined:ui.segmented
 	
 
 @example:

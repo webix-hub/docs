@@ -72,6 +72,7 @@ The control allows changing numeric data by dragging a marker over a line, with 
 - api/link/ui.slider_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.slider_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.slider_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.slider_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.slider_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.slider_onrotate_event.md - occurs on screen rotating
 - api/ui.slider_onsliderdrag_event.md - fires when the handle of slider was dragged ( but not released yet )

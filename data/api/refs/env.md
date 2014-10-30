@@ -23,6 +23,7 @@ env
 - api/env_iswebkit_other.md - a read-only bool indicating whether the current browser is WebKit based (Google Chrome)
 - api/env_jsprefix_other.md - 
 - api/env_mouse_other.md - 
+- api/env_strict_other.md - 
 - api/env_svg_other.md - a read-only bool indicating whether the current browser supports SVG
 - api/env_transform_other.md - a read-only bool indicating whether the current browser supports CSS Transforms
 - api/env_transformcssprefix_other.md - the browser specific prefix for CSS Transforms (in stylesheet)

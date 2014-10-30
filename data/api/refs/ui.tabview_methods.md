@@ -2,7 +2,7 @@ Methods
 =======
 
 {{api
-- api/link/ui.tabview_addview.md - add new view to layout-like component
+- api/ui.tabview_addview.md - adds a new cell to the tabview
 - api/link/ui.tabview_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.tabview_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.tabview_bind.md - binds components
@@ -28,7 +28,7 @@ Methods
 - api/link/ui.tabview_isvisible.md - checks whether the view is visible
 - api/link/ui.tabview_mapevent.md - routes events from one object to another
 - api/link/ui.tabview_reconstruct.md - rebuilds the layout
-- api/link/ui.tabview_removeview.md - removes view from layout-like component
+- api/ui.tabview_removeview.md - removes a cell from the tabview
 - api/link/ui.tabview_resize.md - adjusts the view to a new size
 - api/link/ui.tabview_resizechildren.md - resizes all children of the calling component
 - api/ui.tabview_setvalue.md - sets a new value for the component
@@ -39,7 +39,7 @@ Methods
 }}
 
 @index:
-- api/link/ui.tabview_addview.md
+- api/ui.tabview_addview.md
 - api/link/ui.tabview_adjust.md
 - api/link/ui.tabview_attachevent.md
 - api/link/ui.tabview_bind.md
@@ -65,7 +65,7 @@ Methods
 - api/link/ui.tabview_isvisible.md
 - api/link/ui.tabview_mapevent.md
 - api/link/ui.tabview_reconstruct.md
-- api/link/ui.tabview_removeview.md
+- api/ui.tabview_removeview.md
 - api/link/ui.tabview_resize.md
 - api/link/ui.tabview_resizechildren.md
 - api/ui.tabview_setvalue.md
