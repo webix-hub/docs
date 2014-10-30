@@ -1,7 +1,7 @@
 Customizing the "Edit" Form
 =============================
 
-Details form is intended for editing events' details.
+Whenever you need to edit events' details, make use of the "Edit" form. 
 <br><br>
 <img src="mobile_scheduler/edit_form.png"/>
 <br>
@@ -69,4 +69,4 @@ Two last default controls are optional and you can remove them if needed:
 - **allDay**
 - **details**
 
-**Related sample**: samples/01_basic/06_custom_form.html
+**Related sample**: samples/04_customization/03_custom_form.html

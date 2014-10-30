@@ -4,7 +4,7 @@ Localizing Scheduler
 Basic principles
 --------------------
 
-The mobile version as well as the desktop one allows adapting the scheduler to a particular language and a region.
+The mobile version as well as the desktop one allows you to adapt the scheduler to a particular language and a region.
 
 <u><b>To localize the scheduler to some language you should know the following</b></u>: <br>
 All locale's parameters for the mobile version are contained in the **scheduler.locale.labels** object
@@ -30,7 +30,6 @@ In order to localize dates (week days and months) you should follow the instruct
 }}
 
 
-**Related sample**: samples/07_mobile/07_locale.html
 
 Localization params for scheduler
 -------------------------------------------
@@ -66,18 +65,17 @@ scheduler.locale.labels = {
 ~~~
 
 
-
-**Related sample**: samples/01_basic/07_locale.html
+**Related sample**: samples/04_customization/04_locale.html
 
 Recurring events
 -----------------
 
-Recurring events use the same technique, but take another locale object - **scheduler.labels.recurring**.
+Recurring events use the same technique, but take another locale object - **scheduler.locale.labels.recurring**.
 
 Localization parameters for recurring events:
 
 ~~~js
-scheduler.labels.recurring = {
+scheduler.locale.labels.recurring = {
 	none: "Never",
 	daily: "Daily",
 	day: "day(s)",

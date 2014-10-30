@@ -18,16 +18,16 @@ Multiview
 
 The main **multiview** of the scheduler contains 3 views:
 
-- **Event preview screen**;
-- **Details form**;
+- **Selected event view**;
+- **Edit form**;
 - **Start(end) date edit form**;
 - Sub-multiview (supplemented by the bottom toolbar):
-	- **List** (doesn't contain any toolbars);
 	- **Day**;
+    - **Week**;
 	- **Month**.
     
     
-###Day view
+###'Day' view
 
 <img src="mobile_scheduler/day_view_toolbar.png"/>
 
@@ -37,19 +37,33 @@ In the “Day” view, the toolbar contains navigation buttons and the label dis
 ~~~js
 scheduler.config.day_toolbar = [
 	{view:'label', id:"prev", align:"left",   
-      label:"<div class='dhx_cal_prev_button'><div></div></div>"},
+      label:"<div class='webix_cal_prev_button'><div></div></div>"},
 	{view:'label', id:"date", align:"center", width:200},
 	{view:'label', id:"next", align:"right",  
-      label:"<div class='dhx_cal_next_button'><div></div></div>"}
+      label:"<div class='webix_cal_next_button'><div></div></div>"}
 ];
 ~~~
 
-###Month view
+###'Week' view
+
+<img src="mobile_scheduler/week_view_toolbar.png"/>
+
+~~~js
+scheduler.config.week_toolbar = [
+	{view:'label',name: 'prevWeek', id:"prevWeek", width: 40, align:"left",
+      label:"<div class='webix_cal_prev_button'></div>"},
+	{view:'label',id:"weekTitle",align:"center"},
+	{view:'label',id:"nextWeek", align:"right", 
+      label:"<div class='webix_cal_next_button'></div>",width: 40}
+];
+~~~
+
+###'Month' view
 
 In the “Month” view the toolbar is a part of calendar integrated to the view (not an individual component). 
 So if you want to customize this toolbar, please, refer to the related desktop/calendar.md documentation.
 
-###Event preview screen
+###'Selected Event' view
 
 <img src="mobile_scheduler/event_preview_toolbar.png"/>
 
@@ -57,10 +71,10 @@ Here, the toolbar contains 2 buttons: “Back” and “Edit” (the buttons are
 
 ~~~js
 scheduler.config.selected_toolbar = [
-	{view:'button', inputWidth:scheduler.xy.icon_back, id:"back", align:"left",  
-     label:scheduler.locale.labels.icon_back, css:"cancel"},
-	{view:'button', inputWidth:scheduler.xy.icon_edit, id:"edit", align:"right", 
-     label:scheduler.locale.labels.icon_edit}
+	{view:'label',width:scheduler.xy.icon_back,css:"cancel",name:"back",id:"back",
+      align:"center", label:scheduler.locale.labels.icon_back},
+	{view:'button', inputWidth:scheduler.xy.icon_edit, name:"edit", id:"edit",
+      align:"right", label:scheduler.locale.labels.icon_edit}
 ];
 ~~~
 
@@ -69,15 +83,16 @@ scheduler.config.selected_toolbar = [
 
 <img src="mobile_scheduler/date_editform_toolbar.png"/>
 
-The toolbar contains 2 buttons: “Cancel” and “Done” and the label displaying which date is edited: **start** or **end** 
+The toolbar contains 2 buttons: “Cancel” and “Done” and the label that displays which date is edited: **start** or **end** 
 (the view is hidden in the [read-only mode](mobile_calendar/modes.md)).
 
 ~~~js
 scheduler.config.date_toolbar = [
-	{view:'button', id:"cancel_date", align:"left",  width:90, label:"Cancel", 
-      css:"cancel"},
-    {view:'label',  id:"datetype",    align:"center"},
-    {view:'button', id:"done",        align:"right", width:90, label:"Done"}
+	{view:'label', width:scheduler.xy.icon_cancel, name:"cancel_date",id:"cancel_date",
+      css:"cancel", align:"center",label:scheduler.locale.labels.icon_cancel},
+	{view:'label',id:"datetype",align:"center"},
+	{view:'button', width: scheduler.xy.icon_done, name:"done", id:"done",align:"right",
+	  label:scheduler.locale.labels.icon_done}
 ];
 ~~~
 
@@ -89,10 +104,10 @@ The toolbar of the "Edit" form has 2 buttons: “Cancel” and “Save”.
 
 ~~~js
 scheduler.config.form_toolbar = [
-	{view:'button', inputWidth:scheduler.xy.icon_cancel, id:"cancel", align:"left",  
-      label:scheduler.locale.labels.icon_cancel, css:"cancel"},
-	{view:'button', inputWidth:scheduler.xy.icon_save,   id:"save",   align:"right", 
-      label:scheduler.locale.labels.icon_save}
+	{view:'label', width:scheduler.xy.icon_cancel, name:"cancel",       	  
+      id:"cancel",css:"cancel",align:"center",label:scheduler.locale.labels.icon_cancel},
+	{view:'button', inputWidth:scheduler.xy.icon_save, name:"save", 	  
+      id:"save",align:"right",label:scheduler.locale.labels.icon_save}
 ];
 ~~~
 
@@ -104,25 +119,22 @@ Main bottom toolbar
 The main scheduler toolbar contains 3 controls:
 
 - “Today” button
-- tabbar with the “List”, “Day” and “Month” tabs
+- a tabbar with the “Day”, "Week" and “Month” tabs
 - “Add” button
 
 ~~~js
 scheduler.config.bottom_toolbar = [
-	{view:"button",id:"today",label:scheduler.locale.labels.icon_today,align:"left",
-      inputWidth:scheduler.xy.icon_today, width:scheduler.xy.icon_today+6},
- 	{view:"segmented", id:"buttons", selected:"list", align:"center", 
-      multiview:true, options:[
-		{value:"list",  label:scheduler.locale.labels.list_tab,  
-          width:scheduler.xy.list_tab},
-		{value:"day",   label:scheduler.locale.labels.day_tab,   
-          width:scheduler.xy.day_tab},
-    	{value:"month", label:scheduler.locale.labels.month_tab, 
-          width:scheduler.xy.month_tab}
-     ]},
-	{view:"button",css:"add",id:"add", align:"right",label:"&nbsp;+&nbsp;",width:50,
-       inputWidth:42,},
-	{view:"label", label:"",inputWidth:42,width:50, batch:"readonly"}
+	{view:"label",id:"today", name:"today", label:scheduler.locale.labels.icon_today,
+	  inputWidth:scheduler.xy.icon_today, align:"center",width:scheduler.xy.icon_today+6},
+ 	{view:"segmented", id:"buttons",value:"week",align:"center",
+	  multiview:true, options:[
+	    {id:"day", value:scheduler.locale.labels.day_tab, width:scheduler.xy.day_tab},
+	    {id:"week", value:scheduler.locale.labels.week_tab, width:scheduler.xy.week_tab},
+    	{id:"month", value:scheduler.locale.labels.month_tab, width:scheduler.xy.month_tab}
+	 ]},
+	{view:"label", css:"add",name:"add",id:"add", align:"center",label:"&nbsp;+&nbsp;",
+      width:45},
+	{view:"label", label:"",width:45, batch:"readonly"}
 ];
 ~~~
 
@@ -132,11 +144,11 @@ Adding new elements to the toolbar and event handling
 If you want to add some custom button to one of the mentioned toolbars, you need to redefine the structure of that toolbar. 
 Clicks on the default buttons are handled automatically. But for new buttons you should define the “click” event handlers.
 
-Let's assume you want to add a new button to **Event Preview screen** - 'Location'.
+Let's assume you want to add a new button "Location" to the **Selected Event** view.
 
 <img src="mobile_scheduler/custom_toolbar.png"/>
 
-The definition of your new toolbar can be the following:
+The definition of your new toolbar can be implemented as follows:
 
 ~~~js
 scheduler.config.selected_toolbar = [
@@ -147,7 +159,7 @@ scheduler.config.selected_toolbar = [
 ];
 ~~~
 
-To show the event location on a button click, you need to define some handler function, for example, as follows:
+To show the event location on a button click, you need to define some handler function, for example:
 
 ~~~js
 function showLocation(){
@@ -161,7 +173,7 @@ In the function you could be confused by the method api/collectionbind_getcursor
 This method is a part of 'binding' functionality that's used by the scheduler. 
 You can read about the mentioned functionality in the related Webix documentation - 'Binding'.
 
-**Related sample**: samples/01_basic/06_custom_form.html
+**Related sample**: samples/04_customization/03_custom_form.html
 
 Accessing elements of the scheduler
 ------------------------------------
@@ -170,18 +182,18 @@ The scheduler includes different components: lists, toolbars, a form, etc. To ac
 
 The ids of the toolbars' buttons can be found above, in the toolbars' descriptions. And here are the ids of components from the multiview of the scheduler:
 
-- 'event' - the 'Event preview screen' view
+- 'event' - the 'Selected Event' view
 	- 'eventBar' - the top toolbar
 	- 'eventTemplate' - the template with the data of an event
-- 'form' - the 'Details form' view
+- 'form' - the 'Edit form' view
 	- 'editBar' - the toolbar
 	- 'editForm' - the form with the details of an event
-- 'tabViews' - the sub-multiview containing **List**, **Day** and **Month** views
+- 'tabViews' - the sub-multiview containing **Day**, **Week** and **Month** views
 	- 'bottomBar' - the bottom toolbar
-	- 'list' - the 'List' view
 	- 'day' - the 'Day' view
 		- 'dayBar' - the top toolbar
 		- 'dayList' - the list with events
+    - 'week' - the 'Week' view
 	- 'month' - the 'Month' view
 		- 'calendar' - the calendar
 		- 'calendarDayEvents' - the list with events of the selected day
@@ -197,7 +209,7 @@ $$('scheduler').$$('buttons').setValue('month');
 
 - where 'month' and 'buttons' are the ids of the appropriate components of the scheduler.
 
-For the details on the mentioned components you can read the article desktop/components.md.
+For details on the mentioned components you can read the article desktop/components.md.
 
 A custom view
 -----------------
@@ -214,6 +226,6 @@ scheduler.config.views.push({
 });
 ~~~
 
-Related sample: samples/01_basic/11_custom_view.html
+
 
 @complexity:3

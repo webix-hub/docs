@@ -1,41 +1,22 @@
 Styling Scheduler
 ======================
 
-To customize some element of the scheduler you should redefine the needed attributes of the related css class in the &#60;style&#62; block of your page.
+It's possible to customize any element of Webix Scheduler.<br>
+All you need to do is to redefine the needed attributes of the related css class in the &#60;style&#62; block of your page.
 The untouched attributes will take default values.
 
 
 ~~~html
-<!DOCTYPE HTML>
-<html>
- 	<head>
-		<link 
-    	 	rel="stylesheet" 
-    	  	href="../../codebase/scheduler.css" 
-          	type="text/css" 
-          	media="screen" 
-          	charset="utf-8"
-    	>
-		<script 
-        	src="../../codebase/scheduler.js" 
-            type="text/javascript" 
-            charset="utf-8">
-        </script>
-        <style>
-          .webix_bottombar{
-	      background:#6699FF !important;
-          }
-       </style>
-  	</head>
-  	<body>
- 
-   ....
-</html>
+<style>
+	.webix_bottombar{
+    	background:#6699FF !important;
+     }
+</style>
 ~~~
 
 In the above example we redefined only the background color. All the other attributes defined in the **'.webix_bottombar'** class took the default values.
 
-**Related sample**: samples/01_basic/09_custom_style.html
+
 
 CSS classes and the related elements
 -----------------------------------
@@ -132,8 +113,6 @@ The styles of an event's items (see the image of Week View):
 <img src="mobile_scheduler/style_edit_form.png"/>
 
 
-
-
 ###Confirm window
 - **.webix_modal_box**	- a window container
 - **.webix_popup_title** - the window's title
@@ -141,5 +120,65 @@ The styles of an event's items (see the image of Week View):
 - **.webix_popup_button.confirm div** - the "Yes" button
 - **.webix_popup_button div** - the "No" button
 
-
 <img src="mobile_scheduler/style_confirm_window.png"/>
+
+Event styling
+----------------
+
+It is possible to apply different styling to events in the scheduler. It's implemented with the help of templates. 
+
+The <a href="mobile_calendar/calendar_templates.md#event_class">"event_class"</a> template is applied to events in all 3 views: **Day**, **Week** and **Month**.
+
+For example you can set different styles for event markers, depending on properties in event data: 
+~~~js
+<style>
+.my_calendar .webix_event_marker div{
+	background-color: rgba(102, 204, 255, 0.9);
+	border-color: #66ccff;
+}
+
+.calendar2 .webix_event_marker div{
+	background-color: rgba(0, 204, 204, 0.9);
+	border-color: #00cccc;
+}
+        
+</style>
+<script>
+// template for class name of event container
+	scheduler.templates.event_class =  function(obj, type){
+		return (!obj.group?"my_calendar":"calendar"+obj.group);
+};
+</script>
+~~~
+
+**Related sample**: samples/04_customization/05_event_styling.html<br><br>
+
+There is a possibility to apply different colors to events using the **color** property in the event's data. 
+This property is applied to the event's background in the **Day** view and event markers in the **Week** and **Month** views. 
+However, you can use any other property for styling events. 
+
+~~~js
+$$("scheduler").parse([{id:"1", text:"Event 1", color:"#66ccff",...},...],"json");
+~~~
+
+**Related sample**: samples/04_customization/01_colors.html<br><br>
+
+The default coloring rules can also be changed in the following templates:
+
+- <a href="mobile_calendar/calendar_templates.md#day_event_style">scheduler.templates.day_event_style</a> - returns css text that will be applied to the event container in the 'Day' view
+
+- <a href="mobile_calendar/calendar_templates.md#multiday_event_style">scheduler.templates.multi_day_event_style</a> -   returns css text that will be applied to multi-day event in the 'Day' view
+
+- <a href="mobile_calendar/calendar_templates.md#event_marker">scheduler.templates.event_marker</a> - returns css text that will be applied to markers in the 'Week' and 'Month' views
+
+
+
+
+
+
+
+
+
+
+
+

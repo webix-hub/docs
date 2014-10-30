@@ -32,6 +32,7 @@ The mobile version of the scheduler. It was developed to be used in mobile web a
             	<li><a href="mobile_calendar/localization.md">Localizing Scheduler</a></li>
                 <li><a href="mobile_calendar/modes.md">Read-only Mode</a></li>
                 <li><a href="mobile_calendar/recurring_events.md">Recurring Events</a></li>
+                <li><a href="mobile_calendar/dynamic_loading.md">Dynamic Loading</a></li>
                 <li><a href="mobile_calendar/mobile_advanced.md">Changing Scheduler's Structure</a></li>
             </ul>
         </td>
@@ -59,6 +60,7 @@ The mobile version of the scheduler. It was developed to be used in mobile web a
 - mobile_calendar/localization.md
 - mobile_calendar/modes.md
 - mobile_calendar/recurring_events.md
+- mobile_calendar/dynamic_loading.md
 - mobile_calendar/mobile_advanced.md
 - mobile_calendar/tips_for_users.md
 
