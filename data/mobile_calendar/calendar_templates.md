@@ -49,10 +49,10 @@ Available templates:
 <img src="mobile_scheduler/template_event_preview.png"/>
 
 
-**Related sample**: samples/01_basic/04_templates.html
+**Related sample**: samples/04_customization/02_templates.html
 
 
-<h3 id="day_event">scheduler.templates.day_event</h3>
+<h3 id="day_event"><b>scheduler.templates.day_event</b></h3>
 
 Specifies an event in the 'Day' view.
 
@@ -67,7 +67,7 @@ scheduler.templates.day_event = function(obj,type){
 	return obj.text;
 }
 ~~~
-<h3 id="multiday_event">scheduler.templates.multi_day_event</h3>
+<h3 id="multiday_event"><b>scheduler.templates.multi_day_event</b></h3>
 
 The template for events in the multi-day list of the "Day" view.
 
@@ -83,7 +83,7 @@ scheduler.templates.multi_day_event = function(obj,type){
 }
 ~~~
 
-<h3 id="day_event_style">scheduler.templates.day_event_style</h3>
+<h3 id="day_event_style"><b>scheduler.templates.day_event_style</b></h3>
 
 Specifies a css class for events in the 'Day' view.
 
@@ -111,7 +111,7 @@ scheduler.templates.day_event_style = function(obj){
 
 
 
-<h3 id="multiday_event_style">scheduler.templates.multi_day_event_style</h3>
+<h3 id="multiday_event_style"><b>scheduler.templates.multi_day_event_style</b></h3>
 
 Specifies a css class for multi-day events in the "Day" view
 
@@ -136,7 +136,7 @@ scheduler.templates.multi_day_event_style = function(obj){
 };
 ~~~
 
-<h3 id="week_title">scheduler.templates.week_title</h3>
+<h3 id="week_title"><b>scheduler.templates.week_title</b></h3>
 
 Specifies the title of the "Week" view.
 
@@ -154,7 +154,7 @@ scheduler.templates.week_title = function(date){
 };
 ~~~
 
-<h3 id="event_class">scheduler.templates.event_class</h3>
+<h3 id="event_class"><b>scheduler.templates.event_class</b></h3>
 
 Specifies an additional css class that will be applied to events in the lists of the 'Week' and 'Month' views.
 
@@ -169,7 +169,7 @@ For details on the parameter see the API article "api/_type.md"
 //Below you can find a usage example that illustrates 
 //how to highlight the text of the TODAY's events
 <style>
-.today .dhx_event_text{
+.today .webix_event_text{
       color:red !important;
 }
  
@@ -181,7 +181,7 @@ scheduler.templates.event_class =  function(obj, type){
 }
 ~~~
 
-<h3 id="event_date">scheduler.templates.event_date</h3>
+<h3 id="event_date"><b>scheduler.templates.event_date</b></h3>
 
 Specifies the content of day headers in the "Week" view
 
@@ -200,7 +200,7 @@ scheduler.templates.event_date = function(value){
 ~~~
 
 
-<h3 id="event_marker">scheduler.templates.event_marker</h3>
+<h3 id="event_marker"><b>scheduler.templates.event_marker</b></h3>
 
 Specifies a marker in the 'Week' and 'Month' views.
 
@@ -223,7 +223,7 @@ scheduler.templates.event_marker = function(obj,type){
 };
 ~~~
 
-<h3 id="event_time">scheduler.templates.event_time</h3>
+<h3 id="event_time"><b>scheduler.templates.event_time</b></h3>
 
 The content of the time part of event items in the "Week" and "Month" views.
 
@@ -245,7 +245,7 @@ scheduler.templates.event_time = function(obj){
 };
 ~~~
 
-<h3 id="event_title">scheduler.templates.event_title</h3>
+<h3 id="event_title"><b>scheduler.templates.event_title</b></h3>
 
 Specifies the content of an event item in the 'Week' view.
 
@@ -269,7 +269,7 @@ scheduler.templates.event_title = function(obj,type){
 };
 ~~~
 
-<h3 id="month_event_title">scheduler.templates.month_event_title</h3>
+<h3 id="month_event_title"><b>scheduler.templates.month_event_title</b></h3>
 
 Specifies the content of an event item in the "Month" view
 
@@ -291,7 +291,7 @@ scheduler.templates.month_event_title = function(obj,type){
 	return "<div class='webix_event_overall "+className+"'>"+html+"</div>";
 };
 ~~~
-<h3 id="calendar_event">scheduler.templates.calendar_event</h3>
+<h3 id="calendar_event"><b>scheduler.templates.calendar_event</b></h3>
 
 The template for days with events in the 'Month' view.
 
@@ -307,7 +307,7 @@ scheduler.templates.calendar_event = function(day){
 };
 ~~~
 
-<h3 id="new_event_data">scheduler.templates.new_event_data</h3>
+<h3 id="new_event_data"><b>scheduler.templates.new_event_data</b></h3>
 
 Specifies the default event properties. Used when a user creates new events.
 
@@ -323,7 +323,7 @@ scheduler.templates.new_event_data= function(){
 };
 ~~~
 
-<h3 id="selected_event">scheduler.templates.selected_event</h3>
+<h3 id="selected_event"><b>scheduler.templates.selected_event</b></h3>
 
 The template for an event in the "Selected Event" view.
 

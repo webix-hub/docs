@@ -4,19 +4,17 @@ Recurring Events
 Enabling functionality
 --------------------
 
-By default, scheduler doesn't support recurring events. To enable such functionality you should use the following configuration property
+You can set a repetition period for events in the scheduler. 
+For this purpose, you should enable the recurring events functionality, by means of using the following configuration property:
 
 **scheduler.config.recurring = true;**
-
-
-The files support all the existing functionality of the standard scheduler + recurring events.
 
 Once the recurring events are enabled, the "Edit form" starts looking like shown below:
 <br><br>
 <img src="mobile_scheduler/recurring_edit_form.png"/>
 <br><br>
 
-To set a single event with such a form, the user must choose the option **Never** in the **Repeat field**.
+To set a single event in this form, the user must choose the option **Never** in the **Repeat field**.
 <br><br>
 <img src="mobile_scheduler/recurring_repetition_type.png"/>
 <br><br>
@@ -95,23 +93,23 @@ Repetition variations
 
 As it was mentioned above, the **Repeat field** allows setting 4 different repetition steps: 
 
-- 'day'
+- **'daily'**
 
 <img src="mobile_scheduler/daily_repetition.png"/>
 
-- 'week'
+- **'weekly'**
 
 <img src="mobile_scheduler/weekly_repetition.png"/>
 
-- 'month',
+- **'monthly'**
 
 <img src="mobile_scheduler/monthly_repetition.png"/>
 
-- 'year'.
+- **yearly'**
 
 <img src="mobile_scheduler/yearly_repetition.png"/>
 
-You can also set the date of repetition's end:
+You can also set the date of **repetition's end**:
 
 <img src="mobile_scheduler/ending_repetition.png"/>
 
@@ -120,58 +118,63 @@ You can also set the date of repetition's end:
 Customizing the 'Edit' form
 ----------------------------------
 
-The recurring 'Edit form' uses the same customization technique as the standard form does.
+The recurring 'Edit form' uses the same [customization technique](mobile_calendar/details_form.md) as the standard form does.
 
-Just the **'scheduler.config.form'** template for recurring events will look like:
+There's only a difference in the **'scheduler.config.form'** template. For recurring events it will look like:
 
 ~~~js
 scheduler.config.form = [
+	{	
+    	view: "text",		
+        label: scheduler.locale.labels.label_event,	
+        name: 'text', 
+        labelWidth: 90
+    },
 	{
-    	view:"text",     
-        id:'text',          
-        label:scheduler.locale.labels.label_event, 
-        name:'text'
+    	view: "datetext",	
+        label: scheduler.locale.labels.label_start,	
+        id: 'start_date',	
+        name: 'start_date', 
+        dateFormat: scheduler.config.form_date, 
+        labelWidth: 90
     },
-    {
-    	view:"datetext", 
-        id:'start_date',    
-        label:scheduler.locale.labels.label_start, 
-        name:'start_date', 
-        dateFormat:scheduler.config.form_date
+	{
+    	view: "datetext",	
+        label: labels.label_end,		
+        id: 'end_date',		
+        name: 'end_date', 	  
+        dateFormat: scheduler.config.form_date, 
+        labelWidth: 90
     },
-    {
-    	view:"datetext", 
-        id:'end_date',      
-        label:scheduler.locale.labels.label_end,   
-        name:'end_date', 
-        dateFormat:scheduler.config.form_date
+	{
+    	view: "checkbox",	
+        id: 'allDay',	
+        name: 'allDay', 
+        label: scheduler.locale.labels.label_allday,  
+        value: 0, 
+        labelWidth: 100
     },
-    {
-    	view:"toggle",   
-        id:'allDay',        
-        label:"", 
-        align: "right",
-        value:"0", options:[ 
-			{value:"0",label:scheduler.locale.labels.label_time},
-        	{value:"1",label:scheduler.locale.labels.label_allday}
-    	]
+	{
+    	view: "rectext",	
+        label: scheduler.locale.labels.recurring.repeat,	
+        id: 'rec_type',	
+        name: 'rec_type', 
+        readonly: true, 
+        labelWidth: 90
     },
-    {
-    	view:"rectext",   
-        id:'rec_type',     
-        label:scheduler.locale.labels.recurring.repeat, 
-        readonly:true
+	{
+    	view: "textarea",	
+        label: scheduler.locale.labels.label_details,	
+        id: 'details',	
+        name: 'details',		
+        height: 110, 
+        labelWidth: 90
     },
-    {
-    	view:"textarea",  
-        id:'details',      
-        label:scheduler.locale.labels.label_details,    
-        height:110
-    },
-    {
-    	view:"input",     
-        id:'event_length', 
-        type:"hidden",
+	{
+    	view: "text",	
+        hidden: true, 
+        id: 'event_length', 
+        name: 'event_length'
     }
 ];
 ~~~

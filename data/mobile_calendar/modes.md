@@ -23,4 +23,4 @@ webix.ready(function(){
 });
 ~~~
 
-**Related sample**: samples/01_basic/10_readonly.html
+**Related sample**: samples/01_basic/04_readonly.html
