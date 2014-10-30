@@ -68,7 +68,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_exporttopdf.md - exports data to a PDF file
 - api/link/ui.treetable_filter.md - filters the component
 - api/link/ui.treetable_filterbyall.md - refilters DataTable by all specified filters
-- api/link/ui.treetable_find.md - 
+- api/link/ui.treetable_find.md - returns rows that match the criterion
 - api/link/ui.treetable_focuseditor.md - moves focus to the active editor
 - api/link/ui.treetable_getbranchindex.md - gets index of the node in a specific branch
 - api/link/ui.treetable_getchecked.md - returns ids of the checked items

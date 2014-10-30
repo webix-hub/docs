@@ -12,8 +12,10 @@ be done with the help of four interface-building components, namely:
 - [Scrollview](desktop/scrollview.md)
 - [Carousel](desktop/carousel.md)
 
-All the interface-building components inherit from [view](desktop/view.md), a base class or, simply put, a container where you ought to place the 
+{{note
+All the interface-building components inherit from **[view](desktop/view.md)**, a base class or, simply put, a container where you ought to place the 
 component before working with it.
+}}
 
 [Layout](desktop/layout.md) allows dividing a page into **rows** and **columns** to organize sections to put other components. All of them will be visible within the same page
 at the same time. 
@@ -57,9 +59,29 @@ webix.ui({
 
 [More about Layout](desktop/layout.md).
 
+##Form
+
+Form helps divide the page into **rows** and **cols** to create a layout for controls. Unlike **layout**, this component should be initialized directly, using the view name. 
+
+~~~js
+webix.ui({
+	view:"form",
+	elements:[
+     {...}, //any control
+     {cols:[
+     	{...},
+        {...}
+    ]
+});
+~~~
+
+If form controls are placed into the **elements** array - they will be arranged in **rows**. 
+
+More about [Form](desktop/form.md)
+
 ##Accordion
 
-Accordion consists of items each of which takes a separate row or column and can be collapsed to hide the view it houses in its body. 
+Accordion consists of items each of which takes a separate row or column with a header and can be collapsed and expanded. 
 
 ~~~js
 webix.ui({
@@ -83,13 +105,9 @@ webix.ui({
 
 [More about Accordion](desktop/accordion.md).
 
-##Scrollview, Carousel, Form
+##Scrollview
 
-All of them are divided into **rows** and **cols** like layout, yet you need to initialize them directly.
-
-- **scrollview** is standard layout with a **scrollbar**;
-- **carousel rows** and **cols** are shown in turn, one by one, on clicking dedicated buttons or swiping on touch devices;
-- **form rows** and **cols** create a layout for controls. 
+**Scrollview** is standard layout with a scrollbar. It can house any HTML content, any layout or component in its **body**:
 
 {{snippet
 Scrollview
@@ -104,6 +122,13 @@ webix.ui({
 });
 ~~~
 
+
+More about [Scrollview](desktop/scrollview.md).
+
+##Carousel 
+
+**Carousel rows** and **cols** are shown in turn, one by one, on clicking dedicated buttons or swiping on touch devices:
+
 {{snippet
 Carousel
 }}
@@ -117,9 +142,11 @@ webix.ui({
 });
 ~~~
 
-More about [Scrollview](desktop/scrollview.md), [Carousel](desktop/carousel.md), [Form](desktop/form.md).
+More about [Carousel](desktop/carousel.md)
 
 ##Multiview
+
+Multiview is a layout with multiple hidden views that are shown in turn with one view being always visible. 
 
 ~~~js
 webix.ui({
@@ -131,7 +158,8 @@ webix.ui({
 });
 ~~~
 
-Note that with mutliview you should define a [tabbar](desktop/controls.md#tabbar) or [segmented](desktop/controls.md#segmented) button to switch between cells. 
+Note that for mutliview you should provide the logic for switching between views. It can be a [tabbar](desktop/controls.md#tabbar) 
+or a [segmented](desktop/controls.md#segmented) button. 
 
 If you just define **cells** you'll automatically get **multiview**, if you add **tabs** to **cells** within one and the same constructor - it will turn into **tabview**. 
 In this case, a switching button is not needed as tabs perform this function.
@@ -152,7 +180,12 @@ webix.ui({
 
 More about [Multiview](desktop/multiview.md) and [Tabview](desktop/tabview.md). 
 
+
 ##Isolating IDs inside Layouts
+
+{{note
+Basic  rules of ID assignement can are described [here](desktop/view.md#viewid).
+}}
 
 The features is true to all the layout types described above. It allows for **using the same IDs** for components lying in different layout sections while preserving the ability to **access the needed component** without ambiguity. 
 

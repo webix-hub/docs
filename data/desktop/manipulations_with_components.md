@@ -6,6 +6,7 @@ Configuring Components
 - desktop/disabling.md
 - desktop/setting_headers.md
 - desktop/dynamic_layout.md
+- desktop/tabs_options.md
 - desktop/redefinition.md
 - desktop/dimensions.md
 - desktop/resizing.md

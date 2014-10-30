@@ -453,13 +453,24 @@ Multiselect suggest features a **buttonText** property that allows defining any 
 
 ~~~js
 {view:"multiselect", label:"Participant",options:{
-     buttonText:"Click options to select/deselect",
+     buttonText:"Done",
      data:[
      	{ id:1, value:"Alex Brown" },
      	{ id:2, value:"Dan Simons" }
      ]
 }}
 ~~~
+
+Another way is to **modify the locale**. 
+
+"Select" button text is taken from the current locale (if other is not stated by **buttonText**, as shown above). The locale can be altered:
+
+~~~js
+webix.i18n.controls.select = "Done";
+webix.i18n.setLocale(); //apply the locale
+~~~
+
+Then all the multiselect instances in the app will be supplied with the "Done" word.
 
 ####Accessing popup elements
 
@@ -1088,6 +1099,5 @@ Toggle type is defined by the **type** property. If it isn't defined, a standard
 @index:
   - desktop/button_groups.md
   - desktop/suggest.md
-  - desktop/tabs_options.md
   - desktop/responsive_tabbar.md
   - desktop/advanced_combo.md

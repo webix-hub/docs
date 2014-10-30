@@ -33,7 +33,7 @@ list.filter(function(obj){
     desktop/filter_sort.md
 
 @relatedapi:
-	
+	api/ui.datatable_find.md
 
 @relatedsample:
     08_chart/08_dynamic/04_filtering.html

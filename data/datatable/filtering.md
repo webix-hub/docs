@@ -385,3 +385,25 @@ Implementing a custom filter
 {{sample 15_datatable/03_filtering/05_custom.html }}
 
 Note, in the DataTable constructor you need to specify no parameters.
+
+##Find API
+
+Datatable API allows searching for the needed records easily with the help of its [find](api/ui.datatable_find.md) method. 
+
+Unlike filtering, it preserves the records visible but returns an array of rows that match the given criterion for further usage.
+
+For instance, it allows highlighting the filtered data: 
+
+~~~js
+//res - array of found rows
+var res = table.find(function(obj){
+	return obj.title.toLowerCase().indexOf(value) != -1;
+});
+
+table.clearCss("marker", true)
+for (var i = 0; i < res.length; i++)
+	table.addCss(res[i].id, "marker", true);
+table.refresh();
+~~~
+
+{{sample 15_datatable/03_filtering/11_find_api.html}} 

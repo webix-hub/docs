@@ -43,8 +43,9 @@ grid = new webix.ui({
 1. Formula must start from the '=' sign.
 2. Within formulas can be used:
 
-	- basic mathematical operators, which are: +, -, /, *, (, ).
-	- cell referencies. 
+	- basic mathematical operators, which are: +, -, /, *, (, );
+	- cell referencies;
+    - custom functions.
 
 You can refer to a cell in 2 ways:
 
@@ -74,6 +75,16 @@ var data = [
 	{ id:3, num1:"45300", num2:"10000", difference:"=[:2,num1]-[:2,num2]"}
 ];
 ~~~
+
+You can call any **custom function** within a formula in case provided operations are not enough:
+
+~~~js
+function mysum(a, b){ return a+b };
+...
+{ id:3, difference"=mysum([:0, :1], [:0,:2]) + 1 - [:0, :3]" }
+~~~
+
+
 
 Assigning formulas while columns configuration
 -----------------------------------------------
@@ -114,13 +125,22 @@ grid = new webix.ui({
 4. Within formulas can be used:
 
 	- basic mathematical operators, which are: : +, -, /, *, (, ).
-	- cell referencies. 
+	- cell referencies;
+    - custom functions.
 
 You can refer to a cell in 2 ways:
 
 - **[id, field]** - takes the value from the specified field of an item with the specified id (*see usage examples above*).
 - **[:row_ind, :col_ind]** - the indices of the row and column (zero-based numbering).<br>
 You can also combine 2 variants and use **[id, :col_ind]** or **[:row_ind, field]**.
+
+You can call any **custom function** within a formula in case provided operations are not enough:
+
+~~~js
+function mysum(a, b){ return a+b };
+...
+{ id:"dif", header:"", math:"mysum([$r,:2] - [$r,exp]) + 1 - [$r, :3]" }
+~~~
 	
 
 Sum counter

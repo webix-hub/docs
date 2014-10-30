@@ -21,6 +21,7 @@ function del_tab(){
 
 @relatedapi: 
 	api/ui.segmented_addoption.md
+    api/ui.segmented_onoption_remove_event.md
     
 @related: 
 	desktop/tabs_options.md

@@ -3,4 +3,4 @@
 @short: add a new option (tab) to the tabbar
 
 @relatedapi: 
-	api/link/ui.tabbar_removeoption.md
+	api/link/ui.tabbar_removeoption.md  
