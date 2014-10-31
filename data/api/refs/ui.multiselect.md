@@ -114,8 +114,7 @@ Check [multiselect](desktop/controls.md#multiselect) documentation for more deta
 - api/link/ui.multiselect_relatedaction_config.md - action to call when value of cell changes
 - api/link/ui.multiselect_relatedview_config.md - id of view, that will be affected by relatedAction operation
 - api/link/ui.multiselect_required_config.md - marks field as required
-- api/ui.multiselect_selectbuttontext_config.md - 
-- api/ui.multiselect_separator_config.md - 
+- api/ui.multiselect_separator_config.md - sets a delimiter for control's values
 - api/link/ui.multiselect_suggest_config.md - links suggest list to the input
 - api/link/ui.multiselect_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/link/ui.multiselect_template_config.md - the component template

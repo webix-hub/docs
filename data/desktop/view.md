@@ -15,6 +15,7 @@ webix.ui({
 ##View ID
 
 Views themselves can be put other views thus creating a complex app structure with parent and child components. View features **IDs** that differentiate them from other views in the document: 
+
 {{snippet
 Default ID
 }}
@@ -41,6 +42,11 @@ webix.ui({
 ~~~
 
 Working within several views you can refer to the components with respect to their hierarchy or by using the view's unique ID. 
+
+Note that:	
+
+- The ID of any component can be found in its object as **view.config.id**;
+- View IDs are reflected in HTML as a **view_id** attribute of a topmost div of a component.
 
 ##Empty View
 

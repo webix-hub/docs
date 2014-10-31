@@ -134,8 +134,8 @@ To make a separate tab closable, use the **close** proerty in its configuration:
 view:"tabview",
 cells:[
 	{ header:"List",
-      close:true
-	  body:{}
+      close:true,
+	  body:{...}
     }
  ] 
 ~~~
@@ -162,6 +162,16 @@ Study the topic in detail in the dedicated [documentation article](desktop/respo
 
 ###Adjusting tab dimensions
 
+The width of each tab can be set separately:
+
+~~~js
+view:"tabview",
+cells:[
+	{ header:"List", width:150, body:{...} },
+    { header:"Form", width:250, body:{...} },
+ ] 
+~~~
+
 If tabs are of different width and height, they usually take the size of the smallest tab once the user switches to it. 
 
 To avoid this behavior, you should use the **fitBiggest** property in the **multiview** configuration object: 
@@ -175,6 +185,10 @@ multiview:{
 
 {{sample 20_multiview/09_fit_biggest.html}}
 
+###Adding and removing cells dynamically
+
+The functionality is described in detail in the desktop/tabs_options.md article. 
+
 ##API Reference
 
 [Methods, properties and events](api__refs__ui.tabview.html)
@@ -184,5 +198,6 @@ multiview:{
 - desktop/multiview.md
 - desktop/show_switching.md
 - desktop/tabbar_switching.md
+- desktop/tabs_options.md
 
 

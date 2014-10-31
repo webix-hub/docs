@@ -4,3 +4,4 @@
 
 @relatedapi:
 	api/link/ui.tabbar_addoption.md
+    api/link/ui.tabbar_onoptionremove_event.md

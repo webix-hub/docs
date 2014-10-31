@@ -45,6 +45,7 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
                     <li><a href="desktop/visibility.md"> Changing Visibility</a></li>
                     <li><a href="desktop/disabling.md">Disabling/Enabling</a></li>
                    	<li><a href="desktop/dynamic_layout.md">Adding/Removing Views</a></li>
+                    <li><a href="desktop/tabs_options.md">Adding/Removing Multiview Cells </a></li>
                     <li><a href="desktop/setting_headers.md">Adding Headers</a></li>
                     <li><a href="desktop/redefinition.md">Changing Properties</a></li>
                     <li><a href="desktop/dimensions.md">Initial Sizing</a></li>
