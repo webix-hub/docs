@@ -3,10 +3,9 @@ Others
 
 {{api
 - api/i18n_calendar_other.md - the default locale months and days names
-- api/i18n_controls_other.md - 
+- api/i18n_controls_other.md - sets text labels for some elements of Webix components
 - api/i18n_dateformat_other.md - sets the default locale date format
-- api/i18n_decimaldelimeter_other.md - a char which separates the decimal part in the float number. The default value  is &#148;.&#148;
-- api/i18n_decimaldelimiter_other.md - 
+- api/i18n_decimaldelimiter_other.md - a char which separates the decimal part in the float number. The default value  is &#148;.&#148;
 - api/i18n_decimalsize_other.md - the number of decimal digits in the float number
 - api/i18n_filesize_other.md - 
 - api/i18n_fulldateformat_other.md - sets the default locale date-time format
@@ -24,7 +23,6 @@ Others
 - api/i18n_calendar_other.md
 - api/i18n_controls_other.md
 - api/i18n_dateformat_other.md
-- api/i18n_decimaldelimeter_other.md
 - api/i18n_decimaldelimiter_other.md
 - api/i18n_decimalsize_other.md
 - api/i18n_filesize_other.md

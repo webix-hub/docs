@@ -44,23 +44,44 @@ en-US Locale
 }}
 ~~~js
 webix.i18n.locales["en-US"]={
-	groupDelimiter:",",
-	groupSize:3,
-	decimalDelimeter:".",
-	decimalSize:2,
+  groupDelimiter:",",
+  groupSize:3,
+  decimalDelimiter:".",
+  decimalSize:2,
 
-	dateFormat:"%m/%d/%Y",
-	timeFormat:"%h:%i %A",
-	longDateFormat:"%d %F %Y",
-	fullDateFormat:"%m/%d/%Y %h:%i %A",
+  dateFormat:"%m/%d/%Y",
+  timeFormat:"%h:%i %A",
+  longDateFormat:"%d %F %Y",
+  fullDateFormat:"%m/%d/%Y %h:%i %A",
 
-	price:"${obj}",
-	calendar: {
-		monthFull:["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-		monthShort:["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-		dayFull:["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-    	dayShort:["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
-    },
+  price:"${obj}",
+  priceSettings:{
+     groupDelimiter:",",
+     groupSize:3,
+     decimalDelimiter:".",
+     decimalSize:2
+  },
+  fileSize: ["b","Kb","Mb","Gb","Tb","Pb","Eb"],
+	
+  calendar: {
+    monthFull:["January", "February", "March", "April", "May", "June", 
+    	"July", "August", "September", "October", "November", "December"
+    ],
+	monthShort:["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", 
+    	"Sep", "Oct", "Nov", "Dec"
+    ],
+	dayFull:["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", 
+    	"Friday", "Saturday"
+    ],
+    dayShort:["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+	hours: "Hours",
+	minutes: "Minutes",
+	done:"Done"
+  },
+
+  controls:{
+    select:"Select"
+  }
 };
 ~~~
 
@@ -103,6 +124,15 @@ format:webix.i18n.dateFormatStr
 format:webix.i18n.longDateFormatSt
 	// --> 30 November 2010
 ~~~
+
+- *hours, minutes* - localization options for 'Hours', 'Minutes', 'Done' labels in the calendar.
+
+**Controls**
+
+Text labels for some parts of webix components that are more likely to be changed in a scope: 
+
+- **select** - text label of the 'Select' button of the [multisuggest](api/refs/ui.multisuggest.md) 
+(used in [multiselect](desktop/controls.md#multiselect) input, editor and filter). The default value for North Americal locale is "Select". 
 
 ##Applying a Locale
 

@@ -122,6 +122,8 @@ $$("tabview1").removeView(id);
 
 Webix tabbar can be equipped with a 'Close' button: 
 
+<img src="desktop/tabs_closable.png"/>
+
 ~~~js
 //all tabs
 {view:"tabbar", close:true, options:[]}

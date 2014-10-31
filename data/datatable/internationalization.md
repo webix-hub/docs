@@ -2,13 +2,20 @@ Internationalization
 =========================
 DataTable provides support for numbers, currency and date internationalization. 
 
-5 locales are currently available:
+The **standard package** of the Webix library includes 9 locales, namely: 
 
-- **en-US** - English (United States);
-- **fr-FR** - French (Standard);
-- **ja-JP** - Japanese;
-- **be-BY** - Belarusian;
-- **ru-RU** - Russian.
+- **'en-US'** - North American (used by default);
+- **'ru-RU'** - Russian;
+- **'fr-FR'** - French;
+- **'ja-JP'** - Japanise;
+- **'be-BY'** - Belorussian;
+- **'de-DE'** - German;
+- **'es-ES'** - Spanish;
+- **'it-IT'** - Italian;
+- **'zh-CN'** - Chinese.
+
+**Webix Pro** edition includes over **300 locales** to match a great variety of cultures. 
+
 
 To localize your app into some other language, you should do the following:
 

@@ -20,7 +20,7 @@ webix.i18n.setLocale("en-US");
 
 @relatedapi: api/i18n_price_other.md,api/i18n_setlocale.md
 
-@related:datatable/internationalization.md
+@related:desktop/localization.md
 
 
 @descr:
