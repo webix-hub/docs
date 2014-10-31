@@ -69,4 +69,6 @@ Two last default controls are optional and you can remove them if needed:
 - **allDay**
 - **details**
 
-**Related sample**: samples/04_customization/03_custom_form.html
+{{sample
+04_customization/03_custom_form.html
+}}

@@ -19,7 +19,9 @@ To set a single event in this form, the user must choose the option **Never** in
 <img src="mobile_scheduler/recurring_repetition_type.png"/>
 <br><br>
 
-**Related sample**: samples/02_recurring/01_recurring.html
+{{sample
+02_recurring/01_recurring.html
+}}
 
 Format details
 ------------------

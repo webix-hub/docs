@@ -40,7 +40,9 @@ webix.ready(function(){
 });
 ~~~
 
-**Related sample:** samples/01_basic/01_init.html
+{{sample
+01_basic/01_init.html
+}}
 
 Basic configuration properties
 ----------------------------------
