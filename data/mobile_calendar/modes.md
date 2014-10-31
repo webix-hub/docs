@@ -24,5 +24,5 @@ webix.ready(function(){
 ~~~
 
 {{sample
-01_basic/04_readonly.html
+62_scheduler/01_basic/04_readonly.html
 }}

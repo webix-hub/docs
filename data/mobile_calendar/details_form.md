@@ -70,5 +70,5 @@ Two last default controls are optional and you can remove them if needed:
 - **details**
 
 {{sample
-04_customization/03_custom_form.html
+62_scheduler/04_customization/03_custom_form.html
 }}

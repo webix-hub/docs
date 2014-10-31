@@ -20,7 +20,7 @@ To set a single event in this form, the user must choose the option **Never** in
 <br><br>
 
 {{sample
-02_recurring/01_recurring.html
+62_scheduler/02_recurring/01_recurring.html
 }}
 
 Format details
