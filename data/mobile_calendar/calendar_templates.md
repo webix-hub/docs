@@ -49,7 +49,9 @@ Available templates:
 <img src="mobile_scheduler/template_event_preview.png"/>
 
 
-**Related sample**: samples/04_customization/02_templates.html
+{{sample
+04_customization/02_templates.html
+}}
 
 
 <h3 id="day_event"><b>scheduler.templates.day_event</b></h3>

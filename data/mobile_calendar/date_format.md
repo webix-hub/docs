@@ -20,7 +20,9 @@ webix.ready(function(){
 });
 ~~~
 
-**Related sample**: samples/01_basic/02_date_format.html
+{{sample
+01_basic/02_date_format.html
+}}
 
 
 Configuration options

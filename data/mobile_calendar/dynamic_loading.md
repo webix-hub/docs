@@ -4,9 +4,9 @@ Dynamic Loading
 By default, Scheduler loads all data at once.
 
 It may cause some problems when you are using big event collections.
-In such situations you may use the dynamic loading mode and load data by parts, necessary to fill the current viewable area.
+In such situations you may use the dynamic loading mode and load data by parts. Date range depends on the chosen mode of loading.
 
-To enable the dynamic loading , you need to call the **setLoadMode** method before data loading:
+To enable the dynamic loading, you should call the **setLoadMode** method before data loading:
 
 ~~~js
 scheduler.setLoadMode("month");
@@ -23,7 +23,7 @@ The generated requests look like:
 some.php?from=DATEHERE&to=DATEHERE
 ~~~
 
-- where **DATEHERE** - a valid date value in the format defined by the **load_date** option.
+- where **DATEHERE** - a valid date value in the format defined by the configuration property **scheduler.config.dyn_load_date** ("%Y-%m-%d").
 
 If you are using desktop/dataconnector.md at the server side, you don't need to do any additional server-side operations to parse the data:
 

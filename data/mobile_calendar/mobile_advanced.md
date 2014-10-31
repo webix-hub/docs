@@ -126,11 +126,11 @@ The main scheduler toolbar contains 3 controls:
 scheduler.config.bottom_toolbar = [
 	{view:"label",id:"today", name:"today", label:scheduler.locale.labels.icon_today,
 	  inputWidth:scheduler.xy.icon_today, align:"center",width:scheduler.xy.icon_today+6},
- 	{view:"segmented", id:"buttons",value:"week",align:"center",
+ 	{view:"segmented", id:"buttons", value:"week", align:"center",
 	  multiview:true, options:[
 	    {id:"day", value:scheduler.locale.labels.day_tab, width:scheduler.xy.day_tab},
 	    {id:"week", value:scheduler.locale.labels.week_tab, width:scheduler.xy.week_tab},
-    	{id:"month", value:scheduler.locale.labels.month_tab, width:scheduler.xy.month_tab}
+    	{id:"month",value:scheduler.locale.labels.month_tab, width:scheduler.xy.month_tab}
 	 ]},
 	{view:"label", css:"add",name:"add",id:"add", align:"center",label:"&nbsp;+&nbsp;",
       width:45},
@@ -152,10 +152,10 @@ The definition of your new toolbar can be implemented as follows:
 
 ~~~js
 scheduler.config.selected_toolbar = [
-	{view:'button',inputWidth:90,css:"cancel",id:"back",align:"left",label:"Back"},
-	{view:'button',inputWidth:90,width:100,id:"location",align:"right",
-      label:"Location",click:"showLocation"}, //the new button
-	{view:'button',inputWidth:70,width:70, id:"edit", align:"right", label:"Edit"}
+    {view:'label', width:70, css:"cancel",name:"back",id:"back", label: "Back"},
+    {view:'label', inputWidth:120, css:"cancel", id:"location", align:"right",
+	  label:"<span class='webix_icon fa-map-marker'></span>Location", click:"showLocation"},
+	{view:'button', inputWidth: 70, width:90, name:"edit", id:"edit", label: "Edit"}
 ];
 ~~~
 
@@ -164,16 +164,18 @@ To show the event location on a button click, you need to define some handler fu
 ~~~js
 function showLocation(){
 	var eventId = $$("scheduler").getCursor();
-	var location = $$("scheduler").item(eventId).location;
+	var location = $$("scheduler").getItem(eventId).location;
 	webix.alert(location);
 }
 ~~~
 
 In the function you could be confused by the method api/collectionbind_getcursor.md. 
 This method is a part of 'binding' functionality that's used by the scheduler. 
-You can read about the mentioned functionality in the related Webix documentation - 'Binding'.
+You can read about the mentioned functionality in the related Webix documentation - desktop/data_binding.md.
 
-**Related sample**: samples/04_customization/03_custom_form.html
+{{sample
+04_customization/03_custom_form.html
+}}
 
 Accessing elements of the scheduler
 ------------------------------------
@@ -193,7 +195,9 @@ The ids of the toolbars' buttons can be found above, in the toolbars' descriptio
 	- 'day' - the 'Day' view
 		- 'dayBar' - the top toolbar
 		- 'dayList' - the list with events
-    - 'week' - the 'Week' view
+   	- 'week' - the 'Week' view
+		- 'weekBar' - the top toolbar
+		- 'weekEventsList' - the list with events
 	- 'month' - the 'Month' view
 		- 'calendar' - the calendar
 		- 'calendarDayEvents' - the list with events of the selected day
@@ -217,12 +221,13 @@ A custom view
 It's possible to add a custom view to the main multiview of the scheduler. All you need to do is to add view configuration to the **scheduler.config.views** array. 
 Beware, view configuration should go before the code line with scheduler initialization.
 
-For example, if you'd like to add a view that will contain a google map, it can be done as follows:
+For example, if you'd like to add  'list' view, it can be done as follows:
 
 ~~~js
 scheduler.config.views.push({
-	view:"googlemap",
-	id:"mymap"	
+	view:"list",
+	id:"mylist",
+    ...	
 });
 ~~~
 

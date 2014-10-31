@@ -151,7 +151,10 @@ For example you can set different styles for event markers, depending on propert
 </script>
 ~~~
 
-**Related sample**: samples/04_customization/05_event_styling.html<br><br>
+{{sample
+04_customization/05_event_styling.html
+}}
+<br><br>
 
 There is a possibility to apply different colors to events using the **color** property in the event's data. 
 This property is applied to the event's background in the **Day** view and event markers in the **Week** and **Month** views. 
@@ -161,7 +164,11 @@ However, you can use any other property for styling events.
 $$("scheduler").parse([{id:"1", text:"Event 1", color:"#66ccff",...},...],"json");
 ~~~
 
-**Related sample**: samples/04_customization/01_colors.html<br><br>
+{{sample
+04_customization/01_colors.html
+}}
+
+<br><br>
 
 The default coloring rules can also be changed in the following templates:
 
