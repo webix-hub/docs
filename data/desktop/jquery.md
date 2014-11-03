@@ -21,11 +21,11 @@ Let it  be list:
 ~~~js
 <div id="listA"></div>
   ...
-		$("#listA").webix_list({
-				width:320, height:600,
-				template:"#votes# #rank# #title#",
-				data:big_film_set
-			});
+$("#listA").webix_list({
+	width:320, height:600,
+	template:"#votes# #rank# #title#",
+	data:big_film_set
+});
 ~~~
 
 {{sample 31_jquery/01_list.html }}
@@ -62,7 +62,7 @@ Two calendars will be displayed
 <div class='calendar_here'></div>
 <div class='calendar_here'></div>
 ...
-	$(".calendar_here").webix_calendar();
+$(".calendar_here").webix_calendar();
 ~~~
 
 {{sample 31_jquery/02_calendar.html }}
@@ -89,7 +89,7 @@ List template to grab the data from the table
 {
 	template:"<div class='mark'>#data2# </div> #data0#. #data1#",
 	...
-]
+}
 ~~~
 
 {{sample 31_jquery/03_from_table.html}}

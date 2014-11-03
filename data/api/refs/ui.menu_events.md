@@ -32,6 +32,7 @@ Events
 - api/link/ui.menu_onitemrender_event.md - for each item rendering, occurs only for items with custom templates
 - api/link/ui.menu_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.menu_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
+- api/ui.menu_onmenuitemclick_event.md - fires when menu item has been clicked
 - api/link/ui.menu_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.menu_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.menu_onmouseout_event.md - fires when the mouse was moved out from the specified item
@@ -79,6 +80,7 @@ Events
 - api/link/ui.menu_onitemrender_event.md
 - api/link/ui.menu_onloaderror_event.md
 - api/link/ui.menu_onlongtouch_event.md
+- api/ui.menu_onmenuitemclick_event.md
 - api/link/ui.menu_onmousemove_event.md
 - api/link/ui.menu_onmousemoving_event.md
 - api/link/ui.menu_onmouseout_event.md

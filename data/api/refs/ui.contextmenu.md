@@ -155,6 +155,7 @@ The component presents a pop-up menu that is displayed when the user clicks the 
 - api/link/ui.contextmenu_onitemrender_event.md - for each item rendering, occurs only for items with custom templates
 - api/link/ui.contextmenu_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.contextmenu_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
+- api/link/ui.contextmenu_onmenuitemclick_event.md - fires when menu item has been clicked
 - api/link/ui.contextmenu_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.contextmenu_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.contextmenu_onmouseout_event.md - fires when the mouse was moved out from the specified item

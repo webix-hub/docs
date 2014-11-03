@@ -7,7 +7,7 @@ event
 - node		element		the HTML node or its id
 - event		string		the name of an HTML event (without the 'on' prefix)
 - handler	function	the event handler
-* master	object		an object that the **this** keyword refers to
+* master	object		an object that the <i>this</i> keyword refers to
 
 @returns:
 - id	id		the event handler id (can be used by the **eventRemove()** method) 

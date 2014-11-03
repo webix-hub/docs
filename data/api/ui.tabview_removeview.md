@@ -17,6 +17,7 @@ $$("tabview1").removeView(id);
 	api/ui.tabview_addview.md
 @related:
 	desktop/tabview.md
+    desktop/tabs_options.md#usingtabview
     
 @descr:
 

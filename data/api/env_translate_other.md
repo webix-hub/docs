@@ -13,8 +13,8 @@ alert(webix.env.translate);
 @defined:	env
 @relatedapi:
 - api/env_transitionend_other.md
-- api/env_transformprefix_other.md
-- api/env_transformcssprefix_other.md
+- api/env_jsprefix_other.md
+- api/env_cssprefix_other.md
 - api/env_transform_other.md
 - api/env_transition_other.md
 

@@ -16,8 +16,8 @@ if (webix.env.transition)
 @relatedapi:
 - api/env_translate_other.md
 - api/env_transitionend_other.md
-- api/env_transformprefix_other.md
-- api/env_transformcssprefix_other.md
+- api/env_jsprefix_other.md
+- api/env_cssprefix_other.md
 - api/env_transform_other.md
 @descr:
 

@@ -12,11 +12,12 @@ alert(webix.env.transitionEnd); // in WebKit-based browser returns "webkitTransi
 @template:	api_other
 @defined:	env	
 @relatedapi:
-- api/env_translate_other.md
-- api/env_transformprefix_other.md
-- api/env_transformcssprefix_other.md
+- api/env_jsprefix_other.md
+- api/env_cssprefix_other.md
 - api/env_transform_other.md
 - api/env_transition_other.md
+- api/env_transitionduration_other.md
+- api/env_translate_other.md
 @descr:
 
 

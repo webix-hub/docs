@@ -19,6 +19,7 @@ $$("tabview1").addView({
     api/ui.tabview_removeview.md
 @related:
 	desktop/tabview.md
+    desktop/tabs_options.md#usingtabview
 @relatedsample:
 	20_multiview/13_tabview_dynamic.html
     
