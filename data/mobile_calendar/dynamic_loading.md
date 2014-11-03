@@ -34,4 +34,4 @@ scheduler.setLoadMode("month");
 scheduler.load("some.php","scheduler")
 ~~~
 
-{{sample 03_data/03_dynamic_loading.html}}
+{{sample 62_scheduler/03_data/03_dynamic_loading.html}}

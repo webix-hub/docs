@@ -21,7 +21,7 @@ webix.ready(function(){
 ~~~
 
 {{sample
-01_basic/02_date_format.html
+62_scheduler/01_basic/02_date_format.html
 }}
 
 

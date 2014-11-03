@@ -50,7 +50,7 @@ Available templates:
 
 
 {{sample
-04_customization/02_templates.html
+62_scheduler/04_customization/02_templates.html
 }}
 
 
