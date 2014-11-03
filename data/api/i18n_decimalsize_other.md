@@ -12,7 +12,7 @@ webix.i18n.setLocale("en-US");
 
 @template:	api_config
 @defined:	i18n	
-@related:datatable/internationalization.md
+@related:desktop/localization.md
 
 @relatedapi:api/i18n_setlocale.md
 @relatedsample:

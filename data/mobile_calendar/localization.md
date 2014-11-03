@@ -66,7 +66,7 @@ scheduler.locale.labels = {
 
 
 {{sample
-04_customization/04_locale.html
+62_scheduler/04_customization/04_locale.html
 }}
 
 Recurring events

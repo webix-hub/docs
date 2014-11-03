@@ -174,7 +174,7 @@ This method is a part of 'binding' functionality that's used by the scheduler.
 You can read about the mentioned functionality in the related Webix documentation - desktop/data_binding.md.
 
 {{sample
-04_customization/03_custom_form.html
+62_scheduler/04_customization/03_custom_form.html
 }}
 
 Accessing elements of the scheduler

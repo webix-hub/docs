@@ -3,10 +3,9 @@ remote
 
 
 @todo:
-	Will be added as part of Webix 2.1
+	Will be added as part of Webix 2.2
 
-@short:
-	mapping for server side API
+@short: mapping for server side API
 
 
 @example:

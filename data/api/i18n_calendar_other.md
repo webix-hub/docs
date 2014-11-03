@@ -29,7 +29,7 @@ You need to call <a href="api/i18n_setlocale.md">setLocale</a> to apply the new 
 }}
 
 @related:
-	datatable/internationalization.md
+	desktop/localization.md
 
 @relatedapi:
 	api/i18n_setlocale.md

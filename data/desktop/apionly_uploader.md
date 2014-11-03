@@ -8,6 +8,8 @@ All you need is to follow the following steps:
 - set an uploader invisible, or **apiOnly**;
 - use [uploader API](api/refs/ui.uploader.md) to handle the uploading process. 
 
+Note that you cannot use this functionality in IE8. 
+
 ###Initializing
 
 <img src="desktop/uploader_apionly.png">
@@ -101,47 +103,58 @@ webix.ui({
 
 Look for more item properties in the main [Uploader](desktop/file_upload.md) article.
 
-##Defining a Custom DnD Area
+##Using ApiOly uploader for Drag-n-Drop
 
-If you want to drag-and-drop files with the apiOnly uploader (like you did it with the standard one), you should provide uploading logic for DnD events. 
-
-For instance, you have an element with *"uploader_container"* ID and you want to use it as drop area for uploader. 
-
-~~~html
-<div id="uploader_container"></div>
-~~~
-
-All the [uploader API](api/refs/ui.uploader.md) can be use to control the uploading: 
+Uploader initialization: 
 
 ~~~js
-webix.ui({
-	id:"uploadAPI",
-	view:"uploader",
-	upload:"php/upload.php",
-	on:{
-    	onFileUpload:function(item){
-        	webix.message("Done");
-    	}
-    },
-	apiOnly:true
-});
+webix.ui({ 
+	view:"uploader",  
+    id:"uploadAPI", 
+    apiOnly: true, 
+    upload:"php/photo.php"
+ });
 ~~~
 
-In addition, you should handle native drag events:
+###Defining drop area
+
+If you want to drag-and-drop files with the apiOnly uploader, you should define the desired drop area by the api/ui.uploader_adddropzone.md method, e.g.:
+
+- drop to any HTML element of the page:
 
 ~~~js
-webix.event("uploader_container","dragover", function(e){
-	e.preventDefault();
-});
-
-webix.event("uploader_container","drop",function(e){
-	data=e.dataTransfer;
-    if(data&&data.files.length)
-		$$("uploadAPI").addFile(data.files[0]);
-    return webix.html.preventEvent(e);
-});
+ $$("uploadAPI").addDropZone(document.getElementById("uploader_container"));
 ~~~
 
-- The [addFile](api/ui.uploader_addfile.md) method is used to programmatically add file info hash to the uploader datastore. 
+- drop to HTML element of any Webix Component:
+
+~~~js
+//$view contains the object of the topmost element of the component
+ $$("uploadAPI").addDropZone($$("mylist").$view);
+~~~
+
+Then, all the files dropped to the area will be added to uploader files and, if [autosend](api/ui.uploader_autosend_config.md) is not cancelled, will be sent to the server script.
+
+###Displaying the files
+
+Additionally, you need to take care of how the files should be displayed. For Webix [list](desktop/list.md) there's a ready-made solution: 
+
+<img src="desktop/uploader.png">
+
+First, you define type **uploader** type for the list: 
+
+~~~js
+{ view:"list", id:"mylist", type:"uploader" }
+~~~
+
+Then, **link** to it in the uploader configuration. You should mention **list ID**:
+
+~~~js
+{ view:"uploader", id:"uploadAPI", link:"mylist" }
+~~~
 
 {{sample 21_upload/09_integration_to_element.html}}
+
+Check [uploader display modes](desktop/file_upload.md#uploaderdisplaymodes) for details.
+
+For other Webix components as well as for on-page HTML elements you should provide custom logic. 

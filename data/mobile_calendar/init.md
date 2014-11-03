@@ -41,7 +41,7 @@ webix.ready(function(){
 ~~~
 
 {{sample
-01_basic/01_init.html
+62_scheduler/01_basic/01_init.html
 }}
 
 Basic configuration properties

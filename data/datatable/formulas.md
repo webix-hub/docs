@@ -3,6 +3,10 @@ Math Operations
 DataTable gives you an opportunity to load data stored as mathematical expressions. DataTable parses, evaluates such expressions and 
 presents result in the related cells. 
 
+{{note
+Note that this functionality won't work with the [webix.env.strict](api/env_strict_other.md) enabled. By default, the flag is disabled and math is supported. 
+}}
+
 Common (storing data as formulas)
 --------------------------------
 To start parse data as mathematical expressions  - just set parameter [math](api/ui.datatable_math_config.md) to *true* (by default, it's disabled).<br> Columns are specified as usual.

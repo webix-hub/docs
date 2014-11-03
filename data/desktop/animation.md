@@ -1,6 +1,8 @@
 Animation
 ================
 
+##Animation Config
+
 Animation is implemented within [multiview](desktop/multiview.md) and [pager](desktop/paging.md) components. It sets the way the views will be changed as you switch between views or page through the component.
 
 There exist two animation types with their own subtypes. Or, instead, you can choose on of the four animation **directions**:
@@ -8,6 +10,8 @@ There exist two animation types with their own subtypes. Or, instead, you can ch
 - **slide** - in, out, together;
 - **flip** - horizontal, vertical;
 - **direction** - left, right, top, bottom.
+
+##Animation in Multiview and Pager
 
 Multiview uses **slide:"together"** animation type by default. 
 
@@ -51,5 +55,31 @@ $$("multi").config.animate.subtype = "vertical";
 {{sample 80_docs/multiview_animation.html }}
 
 {{sample 25_pager/08_animate_types.html }}
+
+##Animating View Initialization
+
+The moment of webix View initilization can be animated as well. It works for views created dynamically in the existing Webix layout. 
+
+To instantiate the component with animation, you should call **webix.ui.animate()** method instead of standard **webix.ui()**:
+
+~~~js
+webix.ui.animate(obj, parent, config);
+~~~
+
+where: 
+
+- **obj** (obj) - configuration of the new component;
+- **replace** (string, number) - ID of the component that will be replaced by the one stated in **obj**;
+- **config** (obj, optional) - animation configuration, described above. If not defined the *{ type:"slide", direction:"left" }* animation will be used.
+
+
+~~~js
+ webix.ui.animate({
+    id:"aboutView", template:"About page...",
+}, $$("listView"));
+~~~
+
+{{sample 20_multiview/12_view_recreating.html}}
+
 
 @complexity:2

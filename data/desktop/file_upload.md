@@ -7,6 +7,10 @@ Files are uploaded with the help of dedicated UI component called **uploader.**
 
 {{sample 21_upload/01_init_list.html}}
 
+Webix uploader inherits from [view](desktop/view.md) and looks like a standard Webix [button](desktop/controls.md#button) you need to click to start uploading. 
+
+The button can as well be made [invisible](desktop/apionly_uploader.md) and file uploading dialog can be started on any page event (except for IE8).
+
 ##Uploader Initialization
 
 Uploader is a control that looks like a standard [button](desktop/controls.md#button) yet triggers an upload window on its clicking. 

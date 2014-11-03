@@ -152,7 +152,7 @@ For example you can set different styles for event markers, depending on propert
 ~~~
 
 {{sample
-04_customization/05_event_styling.html
+62_scheduler/04_customization/05_event_styling.html
 }}
 <br><br>
 
@@ -165,7 +165,7 @@ $$("scheduler").parse([{id:"1", text:"Event 1", color:"#66ccff",...},...],"json"
 ~~~
 
 {{sample
-04_customization/01_colors.html
+62_scheduler/04_customization/01_colors.html
 }}
 
 <br><br>

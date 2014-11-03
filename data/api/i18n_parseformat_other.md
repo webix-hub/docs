@@ -17,6 +17,6 @@ webix.i18n.setLocale("en-US");
 You need to call <a href="api/i18n_setlocale.md">setLocale</a> to apply the new format settings
 
 
-@related:datatable/internationalization.md
+@related:desktop/localization.md
 
 @relatedapi:api/i18n_setlocale.md
