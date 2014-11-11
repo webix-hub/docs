@@ -37,7 +37,7 @@ After that, the styling can be customized in two modes:
 ~~~js
 webix.ui({
     view:"dataview",
-    template:""<div class='my_style'>#title#<br/> Year: #year#, rank: #rank#</div>",
+    template:"<div class='my_style'>#title#<br/> Year: #year#, rank: #rank#</div>",
     data:"..."   
 });
 ~~~
@@ -56,6 +56,34 @@ body:{
 <img src="desktop/window_styled.png"/>
 
 {{sample 80_docs/styled_window.html }}
+
+##Dynamic Styles
+
+A CSS class can be added to the component on the go, by either using the standard pattern of [property redefinition](desktop/redefinition.md):
+
+~~~css
+.mycss{
+   color:red;
+}
+~~~
+
+~~~js
+//"datatable" - component ID
+$$("datatable").define("css", "mycss");
+~~~
+
+or by using [webix.html](api/refs/html.md) helper:
+
+~~~js
+//getNode() returns the component's topmost node
+webix.html.addCss( $$("datatable").getNode(), "mycss");
+~~~
+
+The advantage of the api/html_addcss.md method is that it is supplied with the opposite one, the api/html_removecss.md that can be used to undefine the CSS class from the component: 
+
+~~~js
+webix.html.removeCss( $$("datatable").getNode(), "mycss");
+~~~
 
 ##Styling inside Type Parameter
 

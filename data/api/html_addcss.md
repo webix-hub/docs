@@ -8,9 +8,16 @@ addCss
 - name		string		the name of a CSS class to apply
 
 @example:
+//any node
 webix.html.addCss(node,"mycssrule");
+
+//Webix component top node
+webix.html.addCss( $$("dt").getNode(), "mycss");
+
 
 @template:	api_method
 @descr:
 
-@relatedapi:api/html_addstyle.md
+@relatedapi:
+	api/html_addstyle.md
+	api/html_removecss.md

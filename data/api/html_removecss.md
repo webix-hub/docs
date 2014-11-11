@@ -10,9 +10,11 @@ removeCss
 - name		string		the name of a CSS class to remove
 
 @example:
-
+//any node
 webix.html.removeCss(node, "selected");
 
+//webix component top node
+webix.html.removeCss( $$("dt").getNode(), "mycss");
 
 @template:	api_method
 @descr:
