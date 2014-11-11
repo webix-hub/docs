@@ -12,6 +12,7 @@ Version 2.1
 
 ##Minor features
 
+- ability to [send extra data](desktop/configuring_uploader.md#definingadditionaldatatosend) with file upload
 - [addView() and removeView() methods](desktop/tabs_options.md#usingtabview) can be used to add and remove tabs in [tabview](desktop/tabview.md)
 - [find API](api/ui.datatable_find.md) for datatable and treetable
 - [addOption()](api/link/ui.tabbar_addoption.md) method supports option object as argument
@@ -54,4 +55,12 @@ Version 2.1
 - incorrect parsing of width in complex menu while loading config from xml
 - export of data with special characters
 - reloding data in menu with hidden items
+- ungroup API inconsistence
+- IE Mobile and fullScreen (must be disabled)
+- ie mobile animation
+- mouse-wheel other custom scrolls
+- pie chart map clearing
+- invalid this reference in webix.require callback
+- addView can't be used with accordion
+- eachColumn works incorrect after column's reconfiguration
 
