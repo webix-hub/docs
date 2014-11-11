@@ -172,8 +172,17 @@ grid = new webix.ui({
 Cells
 -----------------------------------------
 
-Generally, to apply some style to specific cells in a column, you should use the **cssFormat** attribute inside the [columns](api/ui.datatable_columns_config.md) parameter. The attribute sets a function that will define 
-how cells of the column must be coloured. As a parameter, the function takes the cell value.
+###Applying cssFormat method
+
+Generally, to apply some style to specific cells in a column, you should use the **cssFormat** attribute inside the [columns](api/ui.datatable_columns_config.md) parameter. The attribute sets a function that will define how cells of the column must be coloured. The function takes the following parameters:
+
+- **cell value** (compulsory) - current cell value;
+- **row item object** - all values for the current row;
+- **row id** - ID of the row in question;
+- **column id** - ID of the column in question.
+
+
+(<i>function</i>).
 
 <img src="datatable/styling_a_cell.png"></img>
 
@@ -197,6 +206,9 @@ grid = new webix.ui({
     ...
 })	
 ~~~
+
+###Cell styling within configuration
+
 If you specify data directly inside the DataTable constructor, you have one more way to set the desired style for a cell - property **$cellCss**:
 
 {{note

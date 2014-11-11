@@ -43,8 +43,14 @@ Each object in the array specifies a single column. An object can take the follo
 			<td>(<i>string</i>) the name of a css class that will be applied to the column</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>cssFormat</b></td>
-			<td>(<i>function</i>) sets a function that takes a data property value as a parameter and returns object with css properties ( or the name of a css class) that will be applied to a cell with the related value</td>
+			<td class="webixdoc_links0" style="vertical-align: top;"><b>cssFormat</b></td>
+			<td>(<i>function</i>) sets a function that takes a data property value as a parameter and returns object with css properties ( or the name of a css class) that will be applied to a cell
+            with the related value.<br>The parameters are as follows:	
+    			<li><b>cell value</b></li>
+    			<li><b>row item object</b>( all values for the current row )</li> 
+    			<li><b>row id</b></li>
+    			<li><b>column id</b></li>
+            </td>
 		</tr>
         <tr>
         	<td class="webixdoc_links0" style="vertical-align: top;"> <b>editor</b></td>
@@ -54,6 +60,7 @@ Each object in the array specifies a single column. An object can take the follo
 					<li><b>text</b> -   a single line text editor</li>
 					<li><b>inline-text</b> - a custom text editor </li>
                     <li><b>select</b> - a dropdown list </li>
+                    <li> <a href="desktop/editing.md">and 9 more</a> </li>
 				</ul>
 			</td>
 		</tr>

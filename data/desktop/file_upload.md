@@ -19,18 +19,19 @@ Uploader is normally initialized together with the UI component to display value
 **uploader body** and is inited separately. To link it to the uploader, specify its **ID** as value of uploader **link** property.  
 
 ~~~js
-webix.ui(
-	{view:"form", rows:[
+webix.ui({
+	view:"form", 
+    rows:[
     	{
-		view:"uploader",
-		id: "uploader_1",
-		value:"Upload file",
-    	link:"mylist",
-        upload:"php/upload.php"
+			view:"uploader",
+			id: "uploader_1",
+			value:"Upload file",
+    		link:"mylist",
+        	upload:"php/upload.php"
    		}, 
    		{
-		view:"list",  id:"mylist", type:"uploader",
-		autoheight:true, borderless:true	
+			view:"list",  id:"mylist", type:"uploader",
+			autoheight:true, borderless:true	
 		}
   	]
 });
@@ -43,7 +44,8 @@ webix.ui(
 - **link** (string) - the ID of a component to display values of chosen files;
 - **upload** (path) - path to a script file that will handle uploading;
 - **multiple** (boolean) - *true* by default. Set to *false*, it enables removing the previously added file and replacing it with a new one so that you can upload only one file at a time;
-- **autosend** (boolean) - *true* by default. Set to *false*, it cancels on-the-go file processing. The files are added to the uploader body only. They can be sent to server by calling the **send()** method later on. 
+- **autosend** (boolean) - *true* by default. Set to *false*, it cancels on-the-go file processing. The files are added to the uploader body only. They can be sent to server by calling the 
+[send()](api/ui.uploader_send.md) method later on. 
 
 Read more about **[uploader configuration](desktop/configuring_uploader.md)** and **[server script](desktop/uploader_serverside.md)**. 
 
@@ -89,9 +91,18 @@ Template uploader is really good for attaching files to some message.
 
 ##Manipulations with Files
 
-###Files object
+The properties of the uploaded files are stored in the uploader **files** Data Collection that features an array of file objects.
 
-The properties of the uploaded files are stored in the uploader **files** Data Collection that features an array of **file** objects. Each file object includes:
+To get to all files currently added to the uploader body, apply the following code: 
+
+~~~js
+//"upl1" - uploader ID
+$$("upl1").files.data.pull;
+~~~
+
+The line returns an array of data items (files). Each file item contains information about its size, type, status, etc.
+
+ Each file object includes:
 
 - **id** - file ID generated automatically with the **webix.uid()** method per each uploading session;
 - **name** - file title and extension;
@@ -137,12 +148,11 @@ $$(this.config.uploader).files.remove(id); //remove the specified file
 Note that when you **parse JSON string** to the **files** object, no files are actually added to the uploader!
 
 ~~~js
-$$("uploader_1").files.parse(
-		[	{ name:"cover.jpg", sizetext:"54kb", status:"server" },
-			{ name:"page01.jpg", sizetext:"122kb", status:"server" },
-			{ name:"page02.jpg", sizetext:"142kb", status:"server" }
-		]
-);
+$$("uploader_1").files.parse([	
+	{ name:"cover.jpg", sizetext:"54kb", status:"server" },
+    { name:"page01.jpg", sizetext:"122kb", status:"server" },
+    { name:"page02.jpg", sizetext:"142kb", status:"server" }
+]);
 ~~~
 
 {{sample 21_upload/04_prefill_with_data.html}}
@@ -156,7 +166,7 @@ You can get to file names simpler, with the dedicated **getValues()** method app
 webix.ui({
 	view:"form", rows: [
 		{ view: "uploader", name:"records", ...},
-        {view:"button", click: function() {
+        { view:"button", click: function() {
 			var text = this.getParentView().getValues();
 			text = JSON.stringify(text, "\n");
 			webix.message("<pre>"+text+"</pre>");
@@ -173,11 +183,11 @@ Cancelling uploading of several files at once:
 
 ~~~js
 function cancel(){
-		var id= $$("upl1").files.getFirstId();
-		while(id){
-			$$("upl1").stopUpload(id);
-			id = $$("upl1").files.getNextId(id);
-		}
+	var id= $$("upl1").files.getFirstId();
+	while(id){
+    	$$("upl1").stopUpload(id);
+        id = $$("upl1").files.getNextId(id);
+	}
 ~~~
 
 Defining function to execute on file uploading:
@@ -185,18 +195,18 @@ Defining function to execute on file uploading:
 ~~~js
 $$("uploader").files.data.each(function(obj){
 	if (obj.status == "server")
-		 statement
-		});
+		 //statement
+});
 ~~~
 
 Array of files can be treated by file order as well: 
 
 ~~~js
-	var order = $$("uploader").files.data.order;
-		for (var i=0; i<order.length; i++){
-			if ($$("uploader").files.getItem(order[i]).status = "server")
-				statement
-	}
+var order = $$("uploader").files.data.order;
+for (var i=0; i<order.length; i++){
+	if ($$("uploader").files.getItem(order[i]).status = "server")
+    	//statement
+}
 ~~~
 
 ##Uploader Events
@@ -213,7 +223,7 @@ Confirming Uploading
 }}
 ~~~js
 $$("upl1").attachEvent("onUploadComplete", function(){
-		webix.message("done");
+	webix.message("done");
 });
 ~~~
 

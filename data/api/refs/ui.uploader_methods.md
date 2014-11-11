@@ -2,7 +2,7 @@ Methods
 =======
 
 {{api
-- api/ui.uploader_adddropzone.md - 
+- api/ui.uploader_adddropzone.md - adds uploader drop zone to any HTML element of the page
 - api/ui.uploader_addfile.md - adds files to the uploader using browser fileApi
 - api/link/ui.uploader_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.uploader_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
@@ -32,6 +32,7 @@ Methods
 - api/link/ui.uploader_refresh.md - repaints the component
 - api/link/ui.uploader_render.md - renders the specified item or the whole component
 - api/link/ui.uploader_resize.md - adjusts the view to a new size
+- api/ui.uploader_send.md - sends files from uploader body to server
 - api/link/ui.uploader_setvalue.md - sets a new value for the component
 - api/link/ui.uploader_show.md - makes the component visible
 - api/link/ui.uploader_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
@@ -70,6 +71,7 @@ Methods
 - api/link/ui.uploader_refresh.md
 - api/link/ui.uploader_render.md
 - api/link/ui.uploader_resize.md
+- api/ui.uploader_send.md
 - api/link/ui.uploader_setvalue.md
 - api/link/ui.uploader_show.md
 - api/link/ui.uploader_sync.md

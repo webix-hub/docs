@@ -75,6 +75,8 @@ The window consists of the header and body, can be modal or modaless. The window
 - api/link/ui.window_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.window_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.window_ontouchstart_event.md - when some webix view has been touched
+- api/link/ui.window_onviewmove_event.md - fires while view is moving
+- api/link/ui.window_onviewmoveend_event.md - fires when view has stopped moving
 - api/link/ui.window_onviewresize_event.md - view size was changed by resizer
 }}
 
