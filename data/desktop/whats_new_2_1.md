@@ -3,11 +3,11 @@ Version 2.1
 
 ##Major features
 
+- Better compatibility with Bootstrap and [jQuery](desktop/jquery.md)
+- Icon font contains 479 icons now ( Font Awesome updated to 4.2 )
 - ["strict" mode](api/env_strict_other.md) for Webix
 - [Datatable and treetable math](datatable/formulas.md) can be extended with custom functions
-- compatibility with Bootstrap
 - [Uploader](desktop/uploader.md) can work in Internet Explorer 8-9
-- Custom components can be [initialized via JQuery](desktop/jquery.md)
 
 
 ##Minor features
@@ -16,18 +16,15 @@ Version 2.1
 - [addView() and removeView() methods](desktop/tabs_options.md#usingtabview) can be used to add and remove tabs in [tabview](desktop/tabview.md)
 - [find API](api/ui.datatable_find.md) for datatable and treetable
 - [addOption()](api/link/ui.tabbar_addoption.md) method supports option object as argument
-- [addDropZone()](desktop/apionly_uploader.md#usingapiolyuploaderfordragndrop) method for uploader to allow dnd with apiOnly uploader
-- [webix.ui.$freeze](api/ui_$freeze_other.md)blocks all resizing
-- [ebix.ui.animate to animate view creation](desktop/animation.md#animatingviewinitialization)
-- bold fonts for default theme
+- [addDropZone()](desktop/apionly_uploader.md#usingapiolyuploaderfordragndrop) method for uploader to allow file upload by drag-n-drop on html area
+- [webix.ui.$freeze](api/ui_$freeze_other.md) blocks all resizing
+- [webix.ui.animate to animate view creation](desktop/animation.md#animatingviewinitialization)
 - tabview can have custom width for different cells
 - [tab close](api/ui.tabbar_onbeforetabclose_event.md) and [tab/segment remove](api/ui.segmented_onoption_remove_event.md) events
-- removed "!important" where it is possible and other unnecessary styles
 - [separator for multiselect](api/ui.multiselect_separator_config.md)
 
 ##Fixes
 
-- Font Awesome updated to 4.2
 - dataprocessor do not use scheme serializer before data sending to the server side
 - view.show works correctly for tabview
 - richfilter styling
@@ -56,7 +53,6 @@ Version 2.1
 - export of data with special characters
 - reloding data in menu with hidden items
 - ungroup API inconsistence
-- IE Mobile and fullScreen (must be disabled)
 - ie mobile animation
 - mouse-wheel other custom scrolls
 - pie chart map clearing

@@ -7,14 +7,14 @@ Start
 <div class='index-pc'></div>
 <div class='index-board'>
 
-<h2>Meet Webix 2.0!</h2>
+<h2>Meet Webix 2.1!</h2>
 <ul>
-	<li><a href="desktop/progress.md">Progress Bar API</a></li>
-    <li><a href="desktop/controls.md#multitext">Multitext</a> and <a href="desktop/controls.md#multiselect">Multiselect</a> controls</li>
-    <li>Advanced <a href="datatable/filtering.md">filters</a> and <a href="datatable/editing.md">editors</a> in DataTable</a></li>
+	<li>Better Bootstrap and <a href="desktop/jquery.md">jQuery</a> compatibility</li>
+    <li><a href="api/env_strict_other.md">Strict mode</a> and <a href="desktop/uploader.md">Improved Uploader</a> control</li>
+    <li>Advanced <a href="datatable/formulas.md">Datatable and treetable math</a></li>
 </ul>
 
-<p> and <a href="desktop/whats_new_2.md">many more...</a></p>
+<p> and <a href="desktop/whats_new_2_1.md">many more...</a></p>
 
 </div>
 
