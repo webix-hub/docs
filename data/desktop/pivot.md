@@ -7,8 +7,8 @@ With Pivot you can easily compare, filter and sort data within one table as well
 
 ## External resources
 
-- You can [download extensions](http://pivot.webix.com/webix_pivot.gpl.zip) from [pivot.webix.com](http://pivot.webix.com)
-- There are online samples at [pivot.webix.com/samples/](http://pivot.webix.com/samples/)
+- You can [download Webix Pivot](http://webix.com/pivot/download.html) from [http://webix.com/pivot/](http://webix.com/pivot/)
+- There are online samples at [pivot.webix.com/samples/](http://docs.webix.com/samples/61_pivot/index.html)
 
 
 
