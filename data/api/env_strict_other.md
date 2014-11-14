@@ -15,12 +15,17 @@ webix.env.strict = true;
 
 *False* by  default. 
 
-Should be enabled if **Content Security Policy** is switched on for the application or if the application runs in a **"strict" mode** because 
-Webix runs some of its services before component initialization, which may interfere with CSP and "strict" rules. 
+In Strict mode Webix doesn't use "eval".
 
-The flag affects date parsing rules as well as pattern of data parsing. 
-
+Should be enabled if **Content Security Policy** is switched on for the application or if the application runs in a **"strict" mode** 
 The flag should be enabled **before** Webix files are included into the page. 
+
+~~~html
+<script>
+	webix_strict = true;
+</script>
+<script src="codebase/webix.js"></script>
+~~~
 
 {{note
 Note that [datatable math](datatable/formulas.md) won't work with the **webix.env.strict** enabled.
