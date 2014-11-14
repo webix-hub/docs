@@ -10,7 +10,7 @@ Start
 <h2>Meet Webix 2.1!</h2>
 <ul>
 	<li>Better Bootstrap and <a href="desktop/jquery.md">jQuery</a> compatibility</li>
-    <li><a href="api/env_strict_other.md">Strinct mode</a> and <a href="desktop/uploader.md">Improved Uploader</a> control</li>
+    <li><a href="api/env_strict_other.md">Strict mode</a> and <a href="desktop/uploader.md">Improved Uploader</a> control</li>
     <li>Advanced <a href="datatable/formulas.md">Datatable and treetable math</a></li>
 </ul>
 
