@@ -28,7 +28,7 @@ The config object can contain the following attributes:
 - **decimalSize** - the number of decimal digits in the float number. By default, 2;
 - **groupSize** - the number of digits in a group. By default, 3;
 - **groupDelimiter** - a char which separates groups of digits. By default, '&#148;,'&#148;;
-- **decimalDelimeter** - a char which separates the decimal part in the float number. By default, '&#148;.'&#148;.
+- **decimalDelimiter** - a char which separates the decimal part in the float number. By default, '&#148;.'&#148;.
 
 ~~~js
 var str1 = webix.Number.format( 10008.999, {decimalSize:3, groupDelimiter:" "});
