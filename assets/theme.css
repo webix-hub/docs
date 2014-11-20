@@ -291,7 +291,8 @@ html, .footer{
     bottom:90px;
 }
 
-.page_start .body .content{
+.page_start .body .content, .page_start .doc{
+    display: block;
     padding-bottom:0px;
     height:380px;
 }
