@@ -27,6 +27,7 @@ webix.ui({
 @relatedsample:
 	60_pro/01_datatable/01_colspans/01_colspans.html
 @template:	api_config
+@edition:  pro
 @descr:
 
 The parameter is used within the component's **data** that is presenTed as an object with two properties: 

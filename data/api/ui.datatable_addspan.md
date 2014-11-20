@@ -20,6 +20,7 @@ grid.addSpan(1, "country", 1, 3);
 	api/ui.datatable_spans_config.md
     api/ui.datatable_removespan.md
 @template:	api_method
+@edition:  pro
 @descr:
 
 The method can as well take an array of arrays with the same configuration (*id, column, width, height, value, css*) to define several spans at a time.
