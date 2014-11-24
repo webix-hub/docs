@@ -25,7 +25,7 @@ var rest = webix.proxy("rest", "server/datatable_rest.php");
 **REST Load and Save Pattern**
 
 - On loading GET request is executed and data in any of [supported data formats](desktop/data_types.md) is returned;
-- When [editing](desktop/edit.md) happends or [update()](desktop/update.md) method is called - PUT request is generated, item ID and other params are sent to the script. Item ID is shown in the address line; 
+- When [editing](desktop/edit.md) happens or [update()](desktop/update.md) method is called - PUT request is generated, item ID and other params are sent to the script. Item ID is shown in the address line; 
 - When item is added inside the component - POST request is generated, item ID and other params are sent to the script. Item ID is shown in the address line;
 - When item is removed from th component - DELETE request is generated, item ID is sent to the script. 
 
@@ -35,7 +35,7 @@ Save script treats adding, editing and deleting operations separately and should
 
 Serverside response is set like with [any custom script](desktop/custom_serverside.md#response).
 
-Note that [Webix DataProcessor](desktop/dataprocessor.md) can can be tuned to update client-side data from response automatically:
+Note that [Webix DataProcessor](desktop/dataprocessor.md) can be tuned to update client-side data from response automatically:
 
 ~~~js
 view:"datatable",
