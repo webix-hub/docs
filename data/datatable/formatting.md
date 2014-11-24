@@ -14,7 +14,7 @@ grid = new webix.ui({
 		{ id:"votes", format:webix.Number.numToStr({
 			groupDelimiter:",",
 			groupSize:3,
-			decimalDelimeter:".",
+			decimalDelimiter:".",
 			decimalSize:2})
 		},
 		...

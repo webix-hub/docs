@@ -89,7 +89,7 @@ webix.i18n.locales["en-US"]={
 
 - *groupDelimiter* (string) - a stop mark to divide number groups; 
 - *groupSize* (number) - the number of digits in each group. Typically it's 3 since thousands are the most frequent group;
-- *decimalDelimeter* - a stop mark to divide even number from fractional part;
+- *decimalDelimiter* - a stop mark to divide even number from fractional part;
 - *decimalSize* (number) - the number of digits in the fractional part;
 
 **Date and Time:** 

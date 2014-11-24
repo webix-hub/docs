@@ -19,7 +19,7 @@ columns:[
 	  format:webix.Number.numToStr({
 			groupDelimiter:" ",
     		groupSize:3,
-    		decimalDelimeter:",",
+    		decimalDelimiter:",",
     		decimalSize:2
 	})}
 ]
@@ -37,10 +37,10 @@ The config object can contain the following attributes:
 - **decimalSize** - the number of decimal digits in the float number. By default, 2;
 - **groupSize** - the number of digits in a group. By default, 3;
 - **groupDelimiter** - a char which separates groups of digits. By default, ”,”;
-- **decimalDelimeter** - a char which separates the decimal part in the float number. By default, ”.”.
+- **decimalDelimiter** - a char which separates the decimal part in the float number. By default, ”.”.
 
 ~~~js
-var formatFunc = webix.Number.numToStr({ decimalSize:2, decimalDelimeter:","});
+var formatFunc = webix.Number.numToStr({ decimalSize:2, decimalDelimiter:","});
  
 formatFunc(10000.9990);
 ~~~

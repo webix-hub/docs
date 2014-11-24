@@ -40,4 +40,4 @@ Start
 - desktop/extensions.md
 - desktop/basic_tasks.md
 - api/toc/ui.md
-- migration_from_touch.md
+- migration.md

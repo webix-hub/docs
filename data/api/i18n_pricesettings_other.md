@@ -11,7 +11,7 @@ priceSettings
 webix.i18n.priceSettings:{
 		groupSize:3,        //the number of digits in a group
 		groupDelimiter:" ", //a mark that divides numbers with many digits into groups
-		decimalDelimeter:"",//the decimal delimiter
+		decimalDelimiter:"",//the decimal delimiter
 		decimalSize:0       //the number of digits after the decimal mark
 }
 webix.i18n.setLocale("en-US");

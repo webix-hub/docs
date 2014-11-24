@@ -502,6 +502,7 @@ var next = dhx.Date.add(d,1,"day");
 var next = webix.Date.add(d,1,"day",true);
 ~~~
 
+@linkclass: hidden
 @index:
 - additional_migration_changes.md
 
