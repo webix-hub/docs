@@ -15,7 +15,7 @@ Start
 </ul>
 
 <p> and <a href="desktop/whats_new_2_1.md">many more...</a></p>
-
+<a href='http://webix.com/download/' class='index-download' title='Download Webix'></a>
 </div>
 
 <div class="wrapper-search">

@@ -290,7 +290,17 @@ html, .footer{
     right:30px;
     bottom:90px;
 }
-
+.index-download{
+    background: url(index/download.png);
+    width:126px;
+    height:46px;
+    display: block;
+    position: absolute;
+    top:13px; right:13px;
+}
+.index-download:hover{
+    background-position: 0px 56px;
+}
 .page_start .body .content, .page_start .doc{
     display: block;
     padding-bottom:0px;
