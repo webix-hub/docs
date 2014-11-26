@@ -2,7 +2,7 @@ delimiter
 =============
 
 
-@short: sets CSV delimiters
+@short: sets CSV delimiters for clipboard operations
 	
 
 @type: object
@@ -10,12 +10,15 @@ delimiter
 
 webix.ui({
     view:"datatable",
-    delimiter = {
+    delimiter:{
         rows:"\n", // the rows delimiter
         cols:","   // the columns delimiter
     },
     ...
 });
+
+@related:
+	datatable/copying.md
 
 @template:	api_config
 @descr:

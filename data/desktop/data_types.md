@@ -8,7 +8,7 @@ components.
 
 - **Data sources** and **loading methods** are described in [Data Loading](desktop/data_loading.md) section.
 - **Data Drivers** that with processing lofic for each format are descriped in [Data Drivers](helpers/data_drivers.md);
-- **Customization of Data Types** by changing default Driver behavior - [Custom JSON and XML tags](desktop/custom_data_types.md).  
+- **Customization of Data Types** by changing default Driver behavior - [Customizing Data Types](desktop/custom_data_types.md).  
 
 Data Type Samples
 -------------------
@@ -80,19 +80,7 @@ Samuel, Oregon, 32
 
 By default line anf field **delimiters** are "\n"(new line) and ","(comma) respectively. 
 
-To change the logic of CSV parsing for the application components, you should alter these parameters within Webix **CSV DataDriver**:
-
-~~~js
-webix.DataDriver.csv.cell = "\t";
-webix.DataDriver.csv.row = "|";
-
-webix.ui({
-    view:"datatable",
-	...
-});
-~~~
-
-{{sample 15_datatable/01_loading/01_inline_data.html}}
+To change the logic of CSV parsing for the application components, look up the [related article](desktop/custom_data_types.md#customizingcsvparsinglogic).
 
 ##Hierarchical Data {#hi}
 
