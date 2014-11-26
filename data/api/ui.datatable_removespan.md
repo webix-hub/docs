@@ -20,4 +20,4 @@ grid.refresh();
     api/ui.datatable_spans_config.md
 @template:	api_method
 @descr:
-
+@edition:  pro

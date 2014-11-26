@@ -34,7 +34,7 @@ Here you need to specify rules right in a data component.
 var string1 = webix.Number.format("123.45",{
 	groupDelimiter:",",
 	groupSize:3,
-	decimalDelimeter:".",
+	decimalDelimiter:".",
 	decimalSize:2
 });
 ~~~
@@ -46,7 +46,7 @@ Applying format within a component:
 { header:"LongDate", width:170,  id:"votes", format:webix.Number.numToStr({
 					    groupDelimiter:"",
     					groupSize:0,
-    					decimalDelimeter:",",
+    					decimalDelimiter:",",
     					decimalSize:5}) 
 }
 
@@ -55,7 +55,7 @@ template:function(obj) {
 	return webix.Number.numToStr(obj.votes, {
 		groupDelimiter:"",
     	groupSize:0,
-    	decimalDelimeter:",",
+    	decimalDelimiter:",",
     	decimalSize:5	
 	});
 } 

@@ -290,8 +290,19 @@ html, .footer{
     right:30px;
     bottom:90px;
 }
-
-.page_start .body .content{
+.index-download{
+    background: url(index/download.png);
+    width:126px;
+    height:46px;
+    display: block;
+    position: absolute;
+    top:13px; right:13px;
+}
+.index-download:hover{
+    background-position: 0px 56px;
+}
+.page_start .body .content, .page_start .doc{
+    display: block;
     padding-bottom:0px;
     height:380px;
 }
@@ -520,9 +531,16 @@ html, .footer{
     .index-board{
        background: rgba(255,255,255,0.8);
        position: relative;
+       width:100%; height:auto;
        left:0px; top:-10px;
        display:inline-block;
        z-index:2;
+    }
+    .index-download{
+        top:auto;
+        bottom:5px;
+        right: 5px;
+        
     }
     .page_start .search-form-btn{
         width:100%;

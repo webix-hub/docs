@@ -19,6 +19,8 @@ Version 2.0
 - [pro] Optional [custom scrollbars](desktop/scroll_control.md#webixcustomscroll)
 - [pro] Extra 300 locales
 
+If you are updating from Webix 1.x - please check the migration.md
+
 ### Minor features
 - [custom height for header lines in datatable](datatable/headers_footers.md#customheightforheaderandfooter)
 - dark style for carousel

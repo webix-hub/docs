@@ -9,6 +9,7 @@ Version 2.1
 - [Datatable and treetable math](datatable/formulas.md) can be extended with custom functions
 - [Uploader](desktop/uploader.md) can work in Internet Explorer 8-9
 
+If you are updating from Webix 1.x - please check the migration.md
 
 ##Minor features
 

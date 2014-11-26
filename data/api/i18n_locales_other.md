@@ -11,7 +11,7 @@ locales
 webix.i18n.locales["es-ES"]={   //"es-ES" - the locale name, the same as the file name
   groupDelimiter:" ",       //a mark that divides numbers with many digits into groups
   groupSize:3,              //the number of digits in a group
-  decimalDelimeter:",",     //the decimal delimiter
+  decimalDelimiter:",",     //the decimal delimiter
   decimalSize:2,            //the number of digits after the decimal mark
  
   //applied to columns with 'format:webix.i18n.dateFormatStr'
