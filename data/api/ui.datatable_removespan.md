@@ -3,6 +3,8 @@ removeSpan
 
 @short: removes a rowspan/colspan from the datatable
 
+@edition:pro
+
 @params:
 - id		string, number		row id that starts a colspan/rowspan
 - column	string		column id that starts a colspan/rowspan
