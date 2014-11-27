@@ -32,7 +32,11 @@ or by using a separate JSON object:
 
 ~~~js
 webix.ajax().get("some.php",{ action:"info", id:123 });
+
+//nested JSON object is possible
+webix.ajax().get("some.php",{ action:"info", id:{ row:123, column:"title" }});
 ~~~
+
 
 In case of object notation, the lib will escape values automatically. 
 
@@ -50,7 +54,8 @@ Here you can use two methods to provide extra params:
 ~~~js
 //$_POST["action"]="info", $_POST["id"]="123"
 webix.ajax().post("some.php","action=info&id=123");
-webix.ajax().post("some.php", { action:"info", id:123 }); 
+webix.ajax().post("some.php", { action:"info", id:123}); 
+webix.ajax().post("some.php", { action:"info", id:{ row:123, column:"title" }}); 
 ~~~
 
 {{note
