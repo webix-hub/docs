@@ -10,7 +10,8 @@ You can define a built-in filter in the header or footer of a column. Webix offe
 
 - in a standard free version:
 	- **textFilter**;
-	- **serverFilter**;
+	- **serverFilter** (text-based);
+    - **serverSelectFilter** (select-based);
 	- **selectFilter**;
 	- **numberfilter**;
     - **dateFilter**;

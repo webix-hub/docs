@@ -14,7 +14,7 @@ parse
 
 @example:
 
-var data = webix.csv.parse("a,b\n,c,d"); //[[a,b],[c,d]]
+var data = webix.csv.parse("a,b\n,c,d"); // output[[a,b],[c,d]]
 
 
 @template:	api_method
@@ -24,7 +24,7 @@ var data = webix.csv.parse("a,b\n,c,d"); //[[a,b],[c,d]]
 The delimiter is an object with the following properties:
 
 ~~~js
-var delimeter = {
+var delimiter = {
 	rows: "\n",	// the rows delimiter
 	cols: "\t"  // the columns delimiter
 }
@@ -32,6 +32,13 @@ var delimeter = {
 
 - The default rows delimiter - '\n' (new-line character)
 - The default columns delimiter - '\t' (horizontal tab )
+
+~~~js
+var csv = '1-The Shawshank Redemption|2-The Godfather';
+var delimiter = {rows:"|",  cols:"-" };
+var data  = webix.csv.parse(csv, delimiter);
+//output [["1", "The Shawshank Redemption"], ["2", "The Godfather, "1972"]]
+~~~
 
 <br>
 You can change delimiters globally by setting **webix.csv.delimiter.rows** and **webix.csv.delimiter.cols** properties.

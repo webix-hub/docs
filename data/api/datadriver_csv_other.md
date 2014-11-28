@@ -8,7 +8,7 @@ csv
 @type:object
 
 @example:
-$$('mylist').data.driver = webix.DataDriver.csv;
+$$('mylist').define("datatype", "csv");
 $$('mylist').load("data.csv");
 // it is the same as
 $$('mylist').load("data.csv","csv");
@@ -25,7 +25,35 @@ $$('mylist').load("data.csv","csv");
 	api/link/ui.datatable_delimiter_config.md
 	
 @descr:
-The object contains methods and properties for correct processing CSV data. The default logic can be customized by including **demiliter** into the component constructor.
+The object contains methods and properties for correct processing CSV data. The default logic can be customized **globally**:
+
+~~~js
+webix.DataDriver.csv.cell = "\t";
+webix.DataDriver.csv.row = "|";
+~~~
+
+or, to use the altered delimiters **locally**, whithin one or several components, a custom datatype can be created: 
+
+~~~js
+webix.DataDriver.mycsv = webix.extend({
+	row:"|",	
+	cell:"-"
+}, webix.DataDriver.csv);
+~~~
+
+and used:
+
+~~~js
+var grid = webix.ui({
+	view:"datatype",
+    datatype:"mycsv",
+    data:'1-The Shawshank Redemption|2-The Godfather'
+});
+
+//or for loading data in that format
+$$('mylist').load("data.csv","mycsv");			
+~~~
+
 
 Component data can be loaded during initialization with datasource specified by the **data** property: 
 

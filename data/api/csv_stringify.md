@@ -7,7 +7,7 @@ stringify
 
 @params:
 - data    array     a Javascript array of parsed values
-* delimiter    object    the rows/cells delimeters used for CSV serialization
+* delimiter    object    the rows/cells delimiters used for CSV serialization
 
 @returns:
 - text     string      a CSV string
@@ -24,7 +24,7 @@ var text = webix.csv.stringify([[a,b],[c,d]]); //"a,b\n,c,d"
 The delimiter is an object with the following properties:
 
 ~~~js
-var delimeter = {
+var delimiter = {
 	rows: "\n",	// the rows delimiter
 	cols: "\t"  // the columns delimiter
 }

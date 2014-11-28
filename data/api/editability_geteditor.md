@@ -10,7 +10,7 @@ getEditor
 * id	string		record id	
 
 @returns:
-- editor	object		object with editors state and info
+- editor	object		object with editor state and info
 
 @example:
 

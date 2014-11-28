@@ -30,7 +30,7 @@ webix.ui({
     	  ...
         },
    	    { view:"button", 
-          click: "$$("uploader_1").send();
+          click: "$$('uploader_1').send()";
         }
     ]
 });
@@ -68,10 +68,24 @@ The above metioned code can be used for manual sending as well, but alternatival
 of the [send](api/ui.uploader_send.md) method:
 
 ~~~js
+//either when a single file is sent to server
 $$("uploader").send(id, { param1:"value1", param2:"value2"});
 ~~~
 
 The id parameter is file ID in the [uploader files array](desktop/file_upload.md#manipulationswithfiles).
+
+~~~js
+//or with callback function as first parameter
+$$("uploader").send(function(res){
+        /*callback function*/
+    }, 
+    { param1:"value1", 
+      param2:"value2"
+    }
+);
+~~~
+
+
 
 
 ##Related Articles

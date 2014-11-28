@@ -1,4 +1,4 @@
-Custom tags for hierarchical JSON and XML
+Customizing Data Types
 =============
 
 By default JSON children are stored in the **data** property object while XML records (both parents and children) are introduced by an **item** tag. 
@@ -144,5 +144,42 @@ webix.ui({
 
 {{sample 17_datatree/01_loading/02_xml_data.html}}
 
+##Customizing CSV parsing logic
+
+###Global changes
+
+The default parsing logic of CSV data can be changed **globally**:
+
+~~~js
+webix.DataDriver.csv.cell = "\t";
+webix.DataDriver.csv.row = "|";
+~~~
+
+Now, all the components that use "csv" datatype, will be parsed according to new rules. 
+
+###Creating custom datatype
+
+A custom datatype should be created in case you wish to apply it to one or several components while leaving the global CSV parsing unchanged. 
+
+
+~~~js
+webix.DataDriver.mycsv = webix.extend({
+	row:"|",	
+	cell:"-"
+}, webix.DataDriver.csv);
+~~~
+
+Now, you can use it in component instances: 
+
+~~~js
+var grid = webix.ui({
+	view:"datatype",
+    datatype:"mycsv",
+    data:'1-The Shawshank Redemption|2-The Godfather'
+});
+
+//or for loading data in that format
+$$('mylist').load("data.csv","mycsv");			
+~~~
 
 @complexity:3
