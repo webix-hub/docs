@@ -31,7 +31,7 @@ To add an item which is a string entered by user in a [form](desktop/form.md), y
 component. Again, specify everything by their ID. It's a common rule for all methods and event handlers. 
 
 [Form](desktop/form.md) and [HtmlForm](desktop/htmlform.md) components have different code for input fields - look for the library's [text](desktop/controls.md#text) control and standard html input respectively. 
-It means that different methoods are used to get data from them: 
+It means that different methods are used to get data from them: 
 
 {{snippet
 Adding Data from JS Form

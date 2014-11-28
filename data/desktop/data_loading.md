@@ -5,12 +5,12 @@ After a data component has been inited, you need to populate it with data in any
 
 There we have two major possibilities that are true for all the data components.
 
-- [Loading from External Resourse - File or Database](#file)
+- [Loading from External Resource - File or Database](#file)
 - [Parsing from String](#parse)
 
 After data has been pushed to component (loaded or parsed) it should be rendered within the component with the help of [Webix templates](desktop/html_templates.md). 
 
-##Loading from External Resourse
+##Loading from External Resource
 
 To load data from an external file or database, you should specify the **path** to this file/or serverside script that fetches data: 
 

@@ -1051,7 +1051,7 @@ Toggle initialization
 - **onIcon** (string) - icon for a pressed toggle;
 - **offIcon** (string) - icon for an unpressed toggle.
 
-Icons taken from the the [Font Awesome](http://fortawesome.github.io/Font-Awesome/), so pick the necessary icon name at their site. 
+Icons taken from the [Font Awesome](http://fortawesome.github.io/Font-Awesome/), so pick the necessary icon name at their site. 
 
 **Toggle Types**
 

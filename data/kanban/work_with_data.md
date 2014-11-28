@@ -1,25 +1,26 @@
-Data Object Operations
-=============
+Working with Data
+===================
+
  
-Every UI component features inner storage for [loaded](desktop/data_loading.md) data:
+Kanban board is based on [DataStore](api/refs/datastore.md), non-hierarchical (inline) store. Its data items are grouping by their **status** value to be displayed in correspoing list. 
 
-- [DataStore](api/refs/datastore.md) - non-hierarchical (inline) store  for [list](desktop/list.md), [dataview](desktop/dataview.md), [datatable](datatable/index.md), [chart](desktop/chart.md);
-- [Treestore](api/refs/treestore.md) - hierarchical store for [tree](datatree/index.md), [treetable](desktop/treetable.md) and [grouplist](desktop/grouplist.md) provided that they are loaded with **hierarchical** XML or JSON. 
-
-Both of the stores feature common methods, properties and events to work with data items on client side while TreeStore offers extended API for treating data items observing hierarchy. 
-
-While **manupulating data** items, you can: 
-
-- apply methods directly to the **Data/TreeStore** of the component- *$$("list").data*. Only some functions require this. 
-- apply methods to the component by its **ID** - *$$("list")*, which implies addressing datastore. Most methods have this pattern. 
+Data can be [loaded](datatree/loading_data.md) from different sources. However, Kanban stores data items as json objects:
 
 ~~~js
-$$("list").data.each(){function(obj){.....} }; //iterates through items array
-
-$$("list").count(); //counts items in the list datastore
+{
+    id: 1,
+    status: "new",
+    text: "Kanban board documentation",
+    tags: "kanban,webix",
+    $index: 0,
+    ...
+}
 ~~~
 
-Each **data item object** posesses the unique **ID**, **index** in the data array and set of **properties**. 
+Each data item possesses unique **id** property and set of other properties:
+
+
+
 
 Getting the item object
 -------------------------------
@@ -351,4 +352,6 @@ mylist.move("book1", 1);
 var id = mylist.move("book1", 0, mylist2);
 ~~~
 
-@complexity:1
+
+Filtering 
+-----------

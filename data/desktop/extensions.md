@@ -83,6 +83,15 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
 		</td>
 		<td class='topic_description' style="text-align: center; padding:20px;"><img src="desktop/mob_calendar.png"></td>
 	</tr>
+    <tr>
+		<td id="design" class='topics' style="vertical-align:text-top;">
+		    <h4 id='ui' style="margin-bottom:4px;">
+		        <a href="desktop/kanban_board.md">Kanban Board</a>
+		    </h4>
+		    An integration extension that helps you to visualize and optimize your workflow.
+		</td>
+		<td class='topic_description' style="text-align: center; padding:20px;"><img src="desktop/kanban_board.png"></td>
+	</tr>
     </tbody>
 </table>
 
@@ -96,5 +105,6 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
 - desktop/maps.md
 - desktop/scheduler.md
 - desktop/mobile_scheduler.md
+- desktop/kanban_board.md
 
 
