@@ -1,20 +1,30 @@
-Configuring Kanban
+Customizing Kanban's structure
 ===================
 
-Kanban has a desktop/layout.md structure. It means that it consists of rows and columns that can be combined in different ways.
+Kanban Board has a [layout](desktop/layout.md) structure. It means that it consists of rows and columns that can be combined in different ways.
 
-Thus, in order to specify rows on the board use the property **rows** and to define the columns use the **cols** property.
-The columns have headers with their name and a body, where the name of the view and the status of a column is specified.
+A column has a header with its name and a body which can contain either a KanbanList view or other rows- or cols-layouts (to create a more complex structure).
 
-In this article we'll consider a couple of detailed examples of creating Kanban Board.
+In order to specify rows on the board the property **rows** is used and the **cols** property is used to define columns.
 
-Adding columns and rows into a list
+A simple Kanban Board may look as:
+
+<img src="kanban/kanban_front.png"/>
+
+
+In case your working process consists of many stages, you may need to make a more complex Kanban board to reflect the full flow of work.
+
+
+Splitting columns
 ---------------------------
 
-Let's imagine that you want to make a Kanban Board consisting of:
+Let's imagine that you want to make a Kanban Board consisting of 4 columns, besides:
 
-- 4 columns
-- the 3rd column has two more columns inside, each of them have subheaders
+- the 1st, 2nd and 4th columns contain KanbanLists
+- the 3rd column has a cols-layout inside (2 columns) 
+- each of the columns has 2 rows:
+	- the upper rows contain subheaders
+	- the lower rows have lists inside
 
 The scheme of the board will look as:
 
@@ -29,30 +39,38 @@ webix.ready(function(){
 	webix.ui({
 		view:"kanban", type:"space",
 		cols:[
-			{ header:"Backlog",
-				body:{ view:"kanbanlist", status:"new" }},
-			{ header:"In Progress",
-				body:{ view:"kanbanlist", status:"work" }},
-			{ header:"Testing", gravity: 1.3,
+			{ 
+            	header:"Backlog",
+				body:{ view:"kanbanlist", status:"new" }
+            },
+			{ 
+            	header:"In Progress",
+				body:{ view:"kanbanlist", status:"work" }
+            },
+			{ 
+            	header:"Testing", gravity: 1.3,
 				body:{
 
-					cols:[{
-							rows:[
-								{ template:"Ready to test", height:40, css:"sub_header"},
-								{ view:"kanbanlist", status:"ready"}
-						]},
+					cols:[
+                    		{
+                            	rows:[
+										{ template:"Ready to test", height:40},
+										{ view:"kanbanlist", status:"ready"}
+								]
+                            },
 							{
-							rows:[
-								{ template:"In test", height:40, css:"sub_header"},
-								{ view:"kanbanlist", status:"test"}
-							]
-						}
-					]
-
-					}},
-			{ header:"Done",
-					body:{ view:"kanbanlist", status:"done" }}
-			],
+								rows:[
+										{ template:"In test", height:40},
+										{ view:"kanbanlist", status:"test"}
+								]
+                            }
+                         ]
+                }},
+			{ 
+            	header:"Done",
+				body:{ view:"kanbanlist", status:"done" }
+            }
+		],
 			data:base_task_set
 	});
 });
@@ -66,12 +84,12 @@ The result will be the following:
 Creating a complex structure
 -----------------------------
 
-In case your working process consists of many stages, you may need to make a more complex Kanban board to reflect the full flow of work.
+For example, you need to create a Kanban board's structure consisting of 3 columns, besides:
 
-For example, you need to create the following Kanban board's structure:
-
-- three lists
-- the 2nd list will contain a row in the upper part and 3 columns under the row
+- the 1st and the 3rd columns contain lists
+- the 2nd column has a rows-layout:
+	- the upper row has a list inside
+    - the lower row contains three columns with lists
 
 The picture below illustrates the idea:
 
@@ -87,9 +105,12 @@ webix.ready(function(){
         type:"space",
 
 			cols:[
-				{ header:"Backlog",
-					body:{ view:"kanbanlist", status:"new"}},
-				{ header:"Ready", gravity: 3,
+				{ 
+                	header:"Backlog",
+					body:{ view:"kanbanlist", status:"new"}
+                },
+				{ 
+                	header:"Ready", gravity: 3,
 					body:{
 						type: "wide",
 						rows:[
@@ -102,12 +123,18 @@ webix.ready(function(){
                             },
 							{
 								cols:[
-									{ header:"In Progress",
-										body:{ view:"kanbanlist", status:"work"}},
-									{ header:"Testing",
-										body:{ view:"kanbanlist", status:"test"  }},
-									{ header:"Done",
-										body:{ view:"kanbanlist", status:"done"  }}
+									{ 
+                                    	header:"In Progress",
+										body:{ view:"kanbanlist", status:"work"}
+                                    },
+									{ 
+                                    	header:"Testing",
+										body:{ view:"kanbanlist", status:"test"  }
+                                    },
+									{ 
+                                    	header:"Done",
+										body:{ view:"kanbanlist", status:"done"  }
+                                    }
 								]
 							}
 						]
@@ -124,3 +151,40 @@ webix.ready(function(){
 You can see the result of the code's work in the following picture:
 
 <img src="kanban/kanban_complex_layout.png"/>
+
+As you can see, tasks in the upper row of the 2nd column are placed next to each other. 
+
+The following section of the article gives the details of creating such a configuration.
+
+Changing structure of Kanban lists
+----------------------------------
+
+By default, all kanban lists have items that are aligned one by one in a column. 
+
+However, in some cases we need to show more than one item per row (like in the above example).
+
+Such a configuration can be created by means of setting a fixed width for list items and resetting the **xCount** property (-1 value).
+
+~~~js
+webix.ready(function(){
+	webix.ui({
+		view:"kanban", 
+        type:"space",
+        	{ 
+            	header:"Ready", gravity: 3,
+                body:{
+                	type: "wide",
+        			rows:[
+						{
+                			view:"kanbanlist", 
+                            status:"ready", 
+                            xCount: -1, 				/*!*/
+                            type:{ width: 150 }  		/*!*/
+                		}
+            		]
+                }
+             },
+  			data:task_set
+	});
+});
+~~~

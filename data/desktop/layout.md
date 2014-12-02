@@ -54,7 +54,7 @@ webix.ui({
 simpler. 
 - Layout **ID** should be specified if you are going to work with it later. 
 
-##Layout Types
+##Horizontal and Vertical Layout 
 
 ####Horizontal layout:
 

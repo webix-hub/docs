@@ -33,7 +33,7 @@ $$("mylist").load("data.xml");
 **Load** function has three parameters:
 
 - **path** to the necessary file or script;
-- [datatype](desktop/data_types.md) - in case of JSON data this parame can be omitted;
+- [datatype](desktop/data_types.md) - in case of JSON data this param can be omitted;
 - **callback** function if needed. 
 
 ~~~js

@@ -49,3 +49,7 @@ webix.ready(function(){
 	});
 });
 ~~~
+
+{{sample
+
+}}
