@@ -75,10 +75,12 @@ The component handles RGB, HSL, and hex formats and allows setting custom colors
 - api/link/ui.colorpicker_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.colorpicker_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.colorpicker_onitemclick_event.md - fires after the control has been clicked
+- api/link/ui.colorpicker_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.colorpicker_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.colorpicker_onrotate_event.md - occurs on screen rotating
 - api/link/ui.colorpicker_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.colorpicker_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.colorpicker_ontimedkeypress_event.md - fires after typing has been finished in the field
 - api/link/ui.colorpicker_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.colorpicker_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.colorpicker_ontouchstart_event.md - when some webix view has been touched

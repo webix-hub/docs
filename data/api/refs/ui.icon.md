@@ -73,6 +73,7 @@ The component provides a collection of popular icons and API for their handling.
 - api/link/ui.icon_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.icon_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.icon_onitemclick_event.md - fires after the control has been clicked
+- api/link/ui.icon_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.icon_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.icon_onrotate_event.md - occurs on screen rotating
 - api/link/ui.icon_onswipex_event.md - occurs on a horizontal swipe movement

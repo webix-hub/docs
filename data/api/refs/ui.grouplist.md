@@ -54,7 +54,7 @@ Support for various data template formats, sorting and filtering features. Check
 - api/link/ui.grouplist_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.grouplist_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.grouplist_getitem.md - gets the object of the data item with the specified id
-- api/link/ui.grouplist_getitemnode.md - returns html element of item by item id
+- api/link/ui.grouplist_getitemnode.md - returns html element of the item
 - api/link/ui.grouplist_getlastid.md - returns the id of the last item
 - api/link/ui.grouplist_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.grouplist_getnode.md - returns the main HTML container for the calling object
@@ -178,6 +178,7 @@ Support for various data template formats, sorting and filtering features. Check
 - api/link/ui.grouplist_datatype_config.md - the type of loaded data
 - api/link/ui.grouplist_disabled_config.md - disables item
 - api/link/ui.grouplist_drag_config.md - enables or disables drag-and-drop
+- api/link/ui.grouplist_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.grouplist_externaldata_config.md - allows defining custom 'move' logic for the component.
 - api/link/ui.grouplist_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.grouplist_height_config.md - sets the height of the component

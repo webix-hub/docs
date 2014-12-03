@@ -1,7 +1,19 @@
 Movable 
 =============
 
-{{memo Adds ability to move the component. }}
+{{memo Adds ability to move data in component or between components. }}
+
+
+
+
+
+<div class='h2'>Events</div>
+
+
+{{api
+- api/movable_onviewmove_event.md - fires while view is moving
+- api/movable_onviewmoveend_event.md - fires when view has stopped moving
+}}
 
 
 <div class='h2'>Properties</div>
@@ -10,12 +22,7 @@ Movable
 - api/movable_move_config.md - makes view movable
 }}
 
-<div class='h2'>Events</div>
 
-{{api
-- api/movable_onviewmove_event.md - fires while view is moving
-- api/movable_onviewmoveend_event.md - fires when view has stopped moving
-}}
 
 
 

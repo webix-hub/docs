@@ -36,7 +36,7 @@ The component supports in-line node editing, advanced drag-and-drop, three-state
 - api/link/ui.tree_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.tree_callevent.md - calls an inner event
 - api/link/ui.tree_checkall.md - check all items in tree
-- api/link/ui.tree_checkitem.md - checks the checkbox related to the specified item
+- api/link/ui.tree_checkitem.md - checks the checkbox	related to the specified item
 - api/link/ui.tree_clearall.md - removes all items from the component
 - api/link/ui.tree_clearcss.md - removes css class from all items
 - api/link/ui.tree_clearvalidation.md - removes all validation marks from the component
@@ -101,7 +101,7 @@ The component supports in-line node editing, advanced drag-and-drop, three-state
 - api/link/ui.tree_refresh.md - repaints the whole view or a certain item
 - api/link/ui.tree_remove.md - removes the specified item from datastore
 - api/link/ui.tree_removecss.md - removes CSS class from a component item
-- api/link/ui.tree_render.md - renders the specified item or the whole component
+- api/link/ui.tree_render.md - 
 - api/link/ui.tree_resize.md - adjusts the view to a new size
 - api/link/ui.tree_scrollto.md - scrolls the data container to a certain position
 - api/link/ui.tree_select.md - selects the specified item(s)
@@ -116,7 +116,7 @@ The component supports in-line node editing, advanced drag-and-drop, three-state
 - api/link/ui.tree_unbind.md - breaks "bind" link
 - api/link/ui.tree_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.tree_uncheckall.md - uncheck all items in the tree
-- api/link/ui.tree_uncheckitem.md - unchecks the checkbox related to the specified item
+- api/link/ui.tree_uncheckitem.md - unchecks the checkbox	related to the specified item
 - api/link/ui.tree_ungroup.md - ungroups data
 - api/link/ui.tree_unselect.md - removes selection from the specified item
 - api/link/ui.tree_unselectall.md - removes selection from all items
@@ -197,6 +197,7 @@ The component supports in-line node editing, advanced drag-and-drop, three-state
 - api/link/ui.tree_datatype_config.md - the type of loaded data
 - api/link/ui.tree_disabled_config.md - disables item
 - api/link/ui.tree_drag_config.md - enables or disables drag-and-drop
+- api/link/ui.tree_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.tree_filtermode_config.md - defines the pattern for tree item filtering
 - api/link/ui.tree_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.tree_height_config.md - sets the height of the component

@@ -19,10 +19,11 @@ Properties
 - api/ui.datatable_datafetch_config.md - defines the start position DataTable will load data from
 - api/link/ui.datatable_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.datatable_datatype_config.md - the type of loaded data
-- api/link/ui.datatable_delimiter_config.md - sets CSV delimiters
+- api/link/ui.datatable_delimiter_config.md - sets CSV delimiters for clipboard operations
 - api/link/ui.datatable_disabled_config.md - disables item
 - api/link/ui.datatable_drag_config.md - enables or disables drag-and-drop
 - api/ui.datatable_dragcolumn_config.md - enables drag-and-drop support for columns
+- api/link/ui.datatable_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/ui.datatable_editmath_config.md - enables formular editing
 - api/link/ui.datatable_editvalue_config.md - defines which data item is editable (in case of several data item in the cell/line)
 - api/link/ui.datatable_editable_config.md - allows/denies editing in the view
@@ -104,6 +105,7 @@ Properties
 - api/link/ui.datatable_disabled_config.md
 - api/link/ui.datatable_drag_config.md
 - api/ui.datatable_dragcolumn_config.md
+- api/link/ui.datatable_dragscroll_config.md
 - api/ui.datatable_editmath_config.md
 - api/link/ui.datatable_editvalue_config.md
 - api/link/ui.datatable_editable_config.md

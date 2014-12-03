@@ -66,7 +66,7 @@ The component can contain various elements inside it (actually, the same element
 - api/link/ui.toolbar_resize.md - adjusts the view to a new size
 - api/link/ui.toolbar_resizechildren.md - resizes all children of the calling component
 - api/link/ui.toolbar_scrollto.md - scrolls the data container to a certain position
-- api/link/ui.toolbar_setdirty.md - marks the form  as the one with changed values
+- api/link/ui.toolbar_setdirty.md - marks the form as the one with changed values and vice versa
 - api/link/ui.toolbar_setvalues.md - sets values into all the form inputs
 - api/link/ui.toolbar_show.md - makes the component visible
 - api/link/ui.toolbar_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name

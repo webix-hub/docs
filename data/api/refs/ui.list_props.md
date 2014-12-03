@@ -16,6 +16,7 @@ Properties
 - api/link/ui.list_datatype_config.md - the type of loaded data
 - api/link/ui.list_disabled_config.md - disables item
 - api/link/ui.list_drag_config.md - enables or disables drag-and-drop
+- api/link/ui.list_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.list_externaldata_config.md - allows defining custom 'move' logic for the component.
 - api/link/ui.list_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.list_height_config.md - sets the height of the component
@@ -67,6 +68,7 @@ Properties
 - api/link/ui.list_datatype_config.md
 - api/link/ui.list_disabled_config.md
 - api/link/ui.list_drag_config.md
+- api/link/ui.list_dragscroll_config.md
 - api/link/ui.list_externaldata_config.md
 - api/link/ui.list_gravity_config.md
 - api/link/ui.list_height_config.md

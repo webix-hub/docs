@@ -28,7 +28,7 @@ Methods
 - api/link/ui.grouplist_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.grouplist_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.grouplist_getitem.md - gets the object of the data item with the specified id
-- api/link/ui.grouplist_getitemnode.md - returns html element of item by item id
+- api/link/ui.grouplist_getitemnode.md - returns html element of the item
 - api/link/ui.grouplist_getlastid.md - returns the id of the last item
 - api/link/ui.grouplist_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.grouplist_getnode.md - returns the main HTML container for the calling object

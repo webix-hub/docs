@@ -60,7 +60,7 @@ The component presents a pop-up menu that is displayed when the user clicks the 
 - api/link/ui.contextmenu_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.contextmenu_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.contextmenu_getitem.md - gets the object of the data item with the specified id
-- api/link/ui.contextmenu_getitemnode.md - returns html element of item by item id
+- api/link/ui.contextmenu_getitemnode.md - returns html element of the item
 - api/link/ui.contextmenu_getlastid.md - returns the id of the last item
 - api/link/ui.contextmenu_getmenuitem.md - search for menu item in submenus
 - api/link/ui.contextmenu_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
@@ -170,6 +170,8 @@ The component presents a pop-up menu that is displayed when the user clicks the 
 - api/link/ui.contextmenu_ontouchstart_event.md - when some webix view has been touched
 - api/link/ui.contextmenu_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation
 - api/link/ui.contextmenu_onvalidationsuccess_event.md - fires after the newlyloaded/added/edited data has passes validation successfully
+- api/link/ui.contextmenu_onviewmove_event.md - fires while view is moving
+- api/link/ui.contextmenu_onviewmoveend_event.md - fires when view has stopped moving
 - api/link/ui.contextmenu_onviewresize_event.md - view size was changed by resizer
 }}
 
@@ -194,6 +196,7 @@ The component presents a pop-up menu that is displayed when the user clicks the 
 - api/link/ui.contextmenu_datatype_config.md - the type of loaded data
 - api/link/ui.contextmenu_disabled_config.md - disables item
 - api/link/ui.contextmenu_drag_config.md - enables or disables drag-and-drop
+- api/link/ui.contextmenu_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.contextmenu_externaldata_config.md - allows defining custom 'move' logic for the component.
 - api/link/ui.contextmenu_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.contextmenu_head_config.md - sets the view header

@@ -16,6 +16,7 @@ Properties
 - api/link/ui.grouplist_datatype_config.md - the type of loaded data
 - api/link/ui.grouplist_disabled_config.md - disables item
 - api/link/ui.grouplist_drag_config.md - enables or disables drag-and-drop
+- api/link/ui.grouplist_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.grouplist_externaldata_config.md - allows defining custom 'move' logic for the component.
 - api/link/ui.grouplist_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.grouplist_height_config.md - sets the height of the component
@@ -70,6 +71,7 @@ Properties
 - api/link/ui.grouplist_datatype_config.md
 - api/link/ui.grouplist_disabled_config.md
 - api/link/ui.grouplist_drag_config.md
+- api/link/ui.grouplist_dragscroll_config.md
 - api/link/ui.grouplist_externaldata_config.md
 - api/link/ui.grouplist_gravity_config.md
 - api/link/ui.grouplist_height_config.md

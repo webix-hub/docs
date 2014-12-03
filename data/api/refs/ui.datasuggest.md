@@ -73,6 +73,8 @@ as well as component [editor](api/refs/editors.md).
 - api/link/ui.datasuggest_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.datasuggest_ontouchstart_event.md - when some webix view has been touched
 - api/link/ui.datasuggest_onvaluesuggest_event.md - some item selected in the suggest control
+- api/link/ui.datasuggest_onviewmove_event.md - fires while view is moving
+- api/link/ui.datasuggest_onviewmoveend_event.md - fires when view has stopped moving
 - api/link/ui.datasuggest_onviewresize_event.md - view size was changed by resizer
 }}
 

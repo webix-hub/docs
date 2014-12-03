@@ -73,6 +73,8 @@ as well as component [editor](api/refs/editors.md).
 - api/link/ui.gridsuggest_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.gridsuggest_ontouchstart_event.md - when some webix view has been touched
 - api/link/ui.gridsuggest_onvaluesuggest_event.md - some item selected in the suggest control
+- api/link/ui.gridsuggest_onviewmove_event.md - fires while view is moving
+- api/link/ui.gridsuggest_onviewmoveend_event.md - fires when view has stopped moving
 - api/link/ui.gridsuggest_onviewresize_event.md - view size was changed by resizer
 }}
 

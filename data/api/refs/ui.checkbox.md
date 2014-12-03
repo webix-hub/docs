@@ -75,10 +75,12 @@ The control allows users to make multiple choices from a number of options. Full
 - api/link/ui.checkbox_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.checkbox_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.checkbox_onitemclick_event.md - fires after the control has been clicked
+- api/link/ui.checkbox_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.checkbox_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.checkbox_onrotate_event.md - occurs on screen rotating
 - api/link/ui.checkbox_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.checkbox_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.checkbox_ontimedkeypress_event.md - fires after typing has been finished in the field
 - api/link/ui.checkbox_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.checkbox_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.checkbox_ontouchstart_event.md - when some webix view has been touched

@@ -79,6 +79,8 @@ The component allows tracking the whole progress of individual file upload. Full
 - api/link/ui.uploader_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.uploader_ondestruct_event.md - occurs when component destroyed
 - api/ui.uploader_onfileupload_event.md - fires the moment file uploading starts
+- api/link/ui.uploader_onitemclick_event.md - fires after the control has been clicked
+- api/link/ui.uploader_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.uploader_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.uploader_onrotate_event.md - occurs on screen rotating
 - api/link/ui.uploader_onswipex_event.md - occurs on a horizontal swipe movement
@@ -104,6 +106,7 @@ The component allows tracking the whole progress of individual file upload. Full
 - api/link/ui.uploader_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.uploader_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.uploader_disabled_config.md - disables item
+- api/ui.uploader_formdata_config.md - 
 - api/link/ui.uploader_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.uploader_height_config.md - sets the height of the component
 - api/link/ui.uploader_hidden_config.md - defines whether the view will be hidden initially

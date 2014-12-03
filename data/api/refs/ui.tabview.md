@@ -27,7 +27,7 @@ The component optimizes the process of creating tabbed structures on the page - 
 <div class='h2'>Methods</div>
 
 {{api
-- api/ui.tabview_addview.md - adds a new cell to the tabview
+- api/link/ui.tabview_addview.md - add new view to layout-like component
 - api/link/ui.tabview_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.tabview_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.tabview_bind.md - binds components
@@ -53,7 +53,7 @@ The component optimizes the process of creating tabbed structures on the page - 
 - api/link/ui.tabview_isvisible.md - checks whether the view is visible
 - api/link/ui.tabview_mapevent.md - routes events from one object to another
 - api/link/ui.tabview_reconstruct.md - rebuilds the layout
-- api/ui.tabview_removeview.md - removes a cell from the tabview
+- api/link/ui.tabview_removeview.md - removes view from layout-like component
 - api/link/ui.tabview_resize.md - adjusts the view to a new size
 - api/link/ui.tabview_resizechildren.md - resizes all children of the calling component
 - api/ui.tabview_setvalue.md - sets a new value for the component

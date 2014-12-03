@@ -33,6 +33,7 @@ Events
 - api/link/ui.submenu_onitemrender_event.md - for each item rendering, occurs only for items with custom templates
 - api/link/ui.submenu_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.submenu_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
+- api/link/ui.submenu_onmenuitemclick_event.md - fires when menu item has been clicked
 - api/link/ui.submenu_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.submenu_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.submenu_onmouseout_event.md - fires when the mouse was moved out from the specified item
@@ -47,6 +48,8 @@ Events
 - api/link/ui.submenu_ontouchstart_event.md - when some webix view has been touched
 - api/link/ui.submenu_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation
 - api/link/ui.submenu_onvalidationsuccess_event.md - fires after the newlyloaded/added/edited data has passes validation successfully
+- api/link/ui.submenu_onviewmove_event.md - fires while view is moving
+- api/link/ui.submenu_onviewmoveend_event.md - fires when view has stopped moving
 - api/link/ui.submenu_onviewresize_event.md - view size was changed by resizer
 }}
 
@@ -82,6 +85,7 @@ Events
 - api/link/ui.submenu_onitemrender_event.md
 - api/link/ui.submenu_onloaderror_event.md
 - api/link/ui.submenu_onlongtouch_event.md
+- api/link/ui.submenu_onmenuitemclick_event.md
 - api/link/ui.submenu_onmousemove_event.md
 - api/link/ui.submenu_onmousemoving_event.md
 - api/link/ui.submenu_onmouseout_event.md
@@ -96,6 +100,8 @@ Events
 - api/link/ui.submenu_ontouchstart_event.md
 - api/link/ui.submenu_onvalidationerror_event.md
 - api/link/ui.submenu_onvalidationsuccess_event.md
+- api/link/ui.submenu_onviewmove_event.md
+- api/link/ui.submenu_onviewmoveend_event.md
 - api/link/ui.submenu_onviewresize_event.md
 
 

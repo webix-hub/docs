@@ -28,7 +28,7 @@ Events
 - api/ui.button_onchange_event.md
 - api/link/ui.button_ondestruct_event.md
 - api/ui.button_onitemclick_event.md
-- api/ui.button_onkeypress_event.md 
+- api/ui.button_onkeypress_event.md
 - api/link/ui.button_onlongtouch_event.md
 - api/link/ui.button_onrotate_event.md
 - api/link/ui.button_onswipex_event.md

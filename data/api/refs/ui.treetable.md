@@ -39,7 +39,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.treetable_callevent.md - calls an inner event
 - api/link/ui.treetable_checkall.md - check all items in tree
-- api/link/ui.treetable_checkitem.md - checks the checkbox related to the specified item
+- api/link/ui.treetable_checkitem.md - checks the checkbox	related to the specified item
 - api/link/ui.treetable_clearall.md - removes all items from the component
 - api/link/ui.treetable_clearcss.md - removes css class from all items
 - api/link/ui.treetable_clearvalidation.md - removes all validation marks from the component
@@ -87,7 +87,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.treetable_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.treetable_getitem.md - gets the object of the data item with the specified id
-- api/link/ui.treetable_getitemnode.md - returns html element of item by item id
+- api/link/ui.treetable_getitemnode.md - returns html element of the item
 - api/link/ui.treetable_getlastid.md - returns the id of the last item
 - api/link/ui.treetable_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.treetable_getnextsiblingid.md - returns the id of the next sibling of the specified node
@@ -164,7 +164,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_unbind.md - breaks "bind" link
 - api/link/ui.treetable_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.treetable_uncheckall.md - uncheck all items in the tree
-- api/link/ui.treetable_uncheckitem.md - unchecks the checkbox related to the specified item
+- api/link/ui.treetable_uncheckitem.md - unchecks the checkbox	related to the specified item
 - api/link/ui.treetable_ungroup.md - ungroups data
 - api/link/ui.treetable_updateitem.md - sets properties of the data item
 - api/link/ui.treetable_validate.md - validates one record or all dataset against validation rules
@@ -269,10 +269,11 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_datafetch_config.md - defines the start position DataTable will load data from
 - api/link/ui.treetable_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.treetable_datatype_config.md - the type of loaded data
-- api/link/ui.treetable_delimiter_config.md - sets CSV delimiters
+- api/link/ui.treetable_delimiter_config.md - sets CSV delimiters for clipboard operations
 - api/link/ui.treetable_disabled_config.md - disables item
 - api/link/ui.treetable_drag_config.md - enables or disables drag-and-drop
 - api/link/ui.treetable_dragcolumn_config.md - enables drag-and-drop support for columns
+- api/link/ui.treetable_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.treetable_editmath_config.md - enables formular editing
 - api/link/ui.treetable_editvalue_config.md - defines which data item is editable (in case of several data item in the cell/line)
 - api/link/ui.treetable_editable_config.md - allows/denies editing in the view

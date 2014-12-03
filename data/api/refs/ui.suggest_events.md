@@ -15,6 +15,8 @@ Events
 - api/link/ui.suggest_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.suggest_ontouchstart_event.md - when some webix view has been touched
 - api/ui.suggest_onvaluesuggest_event.md - some item selected in the suggest control
+- api/link/ui.suggest_onviewmove_event.md - fires while view is moving
+- api/link/ui.suggest_onviewmoveend_event.md - fires when view has stopped moving
 - api/link/ui.suggest_onviewresize_event.md - view size was changed by resizer
 }}
 
@@ -32,6 +34,8 @@ Events
 - api/link/ui.suggest_ontouchmove_event.md
 - api/link/ui.suggest_ontouchstart_event.md
 - api/ui.suggest_onvaluesuggest_event.md
+- api/link/ui.suggest_onviewmove_event.md
+- api/link/ui.suggest_onviewmoveend_event.md
 - api/link/ui.suggest_onviewresize_event.md
 
 

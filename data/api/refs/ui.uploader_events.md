@@ -11,6 +11,8 @@ Events
 - api/link/ui.uploader_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.uploader_ondestruct_event.md - occurs when component destroyed
 - api/ui.uploader_onfileupload_event.md - fires the moment file uploading starts
+- api/link/ui.uploader_onitemclick_event.md - fires after the control has been clicked
+- api/link/ui.uploader_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.uploader_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.uploader_onrotate_event.md - occurs on screen rotating
 - api/link/ui.uploader_onswipex_event.md - occurs on a horizontal swipe movement
@@ -32,6 +34,8 @@ Events
 - api/link/ui.uploader_onchange_event.md
 - api/link/ui.uploader_ondestruct_event.md
 - api/ui.uploader_onfileupload_event.md
+- api/link/ui.uploader_onitemclick_event.md
+- api/link/ui.uploader_onkeypress_event.md
 - api/link/ui.uploader_onlongtouch_event.md
 - api/link/ui.uploader_onrotate_event.md
 - api/link/ui.uploader_onswipex_event.md

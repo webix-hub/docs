@@ -73,11 +73,13 @@ The control allows changing numeric data by dragging a marker over a line, with 
 - api/link/ui.slider_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.slider_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.slider_onitemclick_event.md - fires after the control has been clicked
+- api/link/ui.slider_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.slider_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.slider_onrotate_event.md - occurs on screen rotating
 - api/ui.slider_onsliderdrag_event.md - fires when the handle of slider was dragged ( but not released yet )
 - api/link/ui.slider_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.slider_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.slider_ontimedkeypress_event.md - fires after typing has been finished in the field
 - api/link/ui.slider_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.slider_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.slider_ontouchstart_event.md - when some webix view has been touched

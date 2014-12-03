@@ -1,0 +1,1 @@
+@link: api/ui.segmented_onbeforetabclick_event.md

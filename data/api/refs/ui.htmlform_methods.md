@@ -37,7 +37,7 @@ Methods
 - api/link/ui.htmlform_resize.md - adjusts the view to a new size
 - api/link/ui.htmlform_scrollto.md - scrolls the data container to a certain position
 - api/link/ui.htmlform_setcontent.md - attaches html container to the template
-- api/link/ui.htmlform_setdirty.md - marks the form  as the one with changed values
+- api/link/ui.htmlform_setdirty.md - marks the form as the one with changed values and vice versa
 - api/link/ui.htmlform_sethtml.md - set hmlt for template
 - api/link/ui.htmlform_setvalues.md - sets values into all the form inputs
 - api/link/ui.htmlform_show.md - makes the component visible

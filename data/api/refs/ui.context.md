@@ -78,6 +78,8 @@ The component presents a plain window that can contain any content. Check [conte
 - api/link/ui.context_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.context_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.context_ontouchstart_event.md - when some webix view has been touched
+- api/link/ui.context_onviewmove_event.md - fires while view is moving
+- api/link/ui.context_onviewmoveend_event.md - fires when view has stopped moving
 - api/link/ui.context_onviewresize_event.md - view size was changed by resizer
 }}
 

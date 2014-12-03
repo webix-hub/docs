@@ -53,7 +53,7 @@ Support for various data template formats, sorting and filtering features. Check
 - api/link/ui.unitlist_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.unitlist_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.unitlist_getitem.md - gets the object of the data item with the specified id
-- api/link/ui.unitlist_getitemnode.md - returns html element of item by item id
+- api/link/ui.unitlist_getitemnode.md - returns html element of the item
 - api/link/ui.unitlist_getlastid.md - returns the id of the last item
 - api/link/ui.unitlist_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.unitlist_getnode.md - returns the main HTML container for the calling object
@@ -176,6 +176,7 @@ Support for various data template formats, sorting and filtering features. Check
 - api/link/ui.unitlist_datatype_config.md - the type of loaded data
 - api/link/ui.unitlist_disabled_config.md - disables item
 - api/link/ui.unitlist_drag_config.md - enables or disables drag-and-drop
+- api/link/ui.unitlist_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.unitlist_externaldata_config.md - allows defining custom 'move' logic for the component.
 - api/link/ui.unitlist_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.unitlist_height_config.md - sets the height of the component

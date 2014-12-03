@@ -19,10 +19,11 @@ Properties
 - api/link/ui.treetable_datafetch_config.md - defines the start position DataTable will load data from
 - api/link/ui.treetable_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.treetable_datatype_config.md - the type of loaded data
-- api/link/ui.treetable_delimiter_config.md - sets CSV delimiters
+- api/link/ui.treetable_delimiter_config.md - sets CSV delimiters for clipboard operations
 - api/link/ui.treetable_disabled_config.md - disables item
 - api/link/ui.treetable_drag_config.md - enables or disables drag-and-drop
 - api/link/ui.treetable_dragcolumn_config.md - enables drag-and-drop support for columns
+- api/link/ui.treetable_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.treetable_editmath_config.md - enables formular editing
 - api/link/ui.treetable_editvalue_config.md - defines which data item is editable (in case of several data item in the cell/line)
 - api/link/ui.treetable_editable_config.md - allows/denies editing in the view
@@ -105,6 +106,7 @@ Properties
 - api/link/ui.treetable_disabled_config.md
 - api/link/ui.treetable_drag_config.md
 - api/link/ui.treetable_dragcolumn_config.md
+- api/link/ui.treetable_dragscroll_config.md
 - api/link/ui.treetable_editmath_config.md
 - api/link/ui.treetable_editvalue_config.md
 - api/link/ui.treetable_editable_config.md

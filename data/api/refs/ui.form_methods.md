@@ -41,7 +41,7 @@ Methods
 - api/link/ui.form_resize.md - adjusts the view to a new size
 - api/link/ui.form_resizechildren.md - resizes all children of the calling component
 - api/link/ui.form_scrollto.md - scrolls the data container to a certain position
-- api/link/ui.form_setdirty.md - marks the form  as the one with changed values
+- api/link/ui.form_setdirty.md - marks the form as the one with changed values and vice versa
 - api/link/ui.form_setvalues.md - sets values into all the form inputs
 - api/link/ui.form_show.md - makes the component visible
 - api/link/ui.form_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name

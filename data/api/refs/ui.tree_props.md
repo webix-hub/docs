@@ -14,6 +14,7 @@ Properties
 - api/link/ui.tree_datatype_config.md - the type of loaded data
 - api/link/ui.tree_disabled_config.md - disables item
 - api/link/ui.tree_drag_config.md - enables or disables drag-and-drop
+- api/link/ui.tree_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.tree_filtermode_config.md - defines the pattern for tree item filtering
 - api/link/ui.tree_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.tree_height_config.md - sets the height of the component
@@ -61,6 +62,7 @@ Properties
 - api/link/ui.tree_datatype_config.md
 - api/link/ui.tree_disabled_config.md
 - api/link/ui.tree_drag_config.md
+- api/link/ui.tree_dragscroll_config.md
 - api/link/ui.tree_filtermode_config.md
 - api/link/ui.tree_gravity_config.md
 - api/link/ui.tree_height_config.md

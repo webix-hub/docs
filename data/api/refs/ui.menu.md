@@ -56,7 +56,7 @@ The component can be displayed in 2 modes: static (the menu is fully expanded al
 - api/link/ui.menu_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.menu_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.menu_getitem.md - gets the object of the data item with the specified id
-- api/link/ui.menu_getitemnode.md - returns html element of item by item id
+- api/link/ui.menu_getitemnode.md - returns html element of the item
 - api/link/ui.menu_getlastid.md - returns the id of the last item
 - api/ui.menu_getmenuitem.md - search for menu item in submenus
 - api/link/ui.menu_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
@@ -182,6 +182,7 @@ The component can be displayed in 2 modes: static (the menu is fully expanded al
 - api/link/ui.menu_datatype_config.md - the type of loaded data
 - api/link/ui.menu_disabled_config.md - disables item
 - api/link/ui.menu_drag_config.md - enables or disables drag-and-drop
+- api/link/ui.menu_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.menu_externaldata_config.md - allows defining custom 'move' logic for the component.
 - api/link/ui.menu_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.menu_height_config.md - sets the height of the component

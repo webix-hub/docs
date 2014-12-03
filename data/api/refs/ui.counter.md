@@ -77,10 +77,12 @@ The control allows users to precisely change numeric data. It provides up/down b
 - api/link/ui.counter_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.counter_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.counter_onitemclick_event.md - fires after the control has been clicked
+- api/link/ui.counter_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.counter_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.counter_onrotate_event.md - occurs on screen rotating
 - api/link/ui.counter_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.counter_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.counter_ontimedkeypress_event.md - fires after typing has been finished in the field
 - api/link/ui.counter_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.counter_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.counter_ontouchstart_event.md - when some webix view has been touched

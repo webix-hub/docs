@@ -6,11 +6,17 @@ env
 {{note Changing flags manually may have an unpredictable result.. }}
 
 
+
+
+
+
+
+
 <div class='h2'>Other</div>
 
 
 {{api
-- api/env_cssprefix_other.md - browser-specific prefix for CSS transforms and transitions (in stylesheet)
+- api/env_cssprefix_other.md - browser-specific prefix for CSS transforms and transitions
 - api/env_isff_other.md - a read-only bool indicating whether the current browser is Firefox
 - api/env_isie_other.md - a read-only bool indicating whether the current browser is Internet Explorer
 - api/env_issafari_other.md - a read-only bool indicating whether the current browser is Safari

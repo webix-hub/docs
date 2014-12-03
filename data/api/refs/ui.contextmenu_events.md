@@ -49,6 +49,8 @@ Events
 - api/link/ui.contextmenu_ontouchstart_event.md - when some webix view has been touched
 - api/link/ui.contextmenu_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation
 - api/link/ui.contextmenu_onvalidationsuccess_event.md - fires after the newlyloaded/added/edited data has passes validation successfully
+- api/link/ui.contextmenu_onviewmove_event.md - fires while view is moving
+- api/link/ui.contextmenu_onviewmoveend_event.md - fires when view has stopped moving
 - api/link/ui.contextmenu_onviewresize_event.md - view size was changed by resizer
 }}
 
@@ -100,6 +102,8 @@ Events
 - api/link/ui.contextmenu_ontouchstart_event.md
 - api/link/ui.contextmenu_onvalidationerror_event.md
 - api/link/ui.contextmenu_onvalidationsuccess_event.md
+- api/link/ui.contextmenu_onviewmove_event.md
+- api/link/ui.contextmenu_onviewmoveend_event.md
 - api/link/ui.contextmenu_onviewresize_event.md
 
 

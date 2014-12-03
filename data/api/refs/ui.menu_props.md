@@ -16,6 +16,7 @@ Properties
 - api/link/ui.menu_datatype_config.md - the type of loaded data
 - api/link/ui.menu_disabled_config.md - disables item
 - api/link/ui.menu_drag_config.md - enables or disables drag-and-drop
+- api/link/ui.menu_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.menu_externaldata_config.md - allows defining custom 'move' logic for the component.
 - api/link/ui.menu_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.menu_height_config.md - sets the height of the component
@@ -69,6 +70,7 @@ Properties
 - api/link/ui.menu_datatype_config.md
 - api/link/ui.menu_disabled_config.md
 - api/link/ui.menu_drag_config.md
+- api/link/ui.menu_dragscroll_config.md
 - api/link/ui.menu_externaldata_config.md
 - api/link/ui.menu_gravity_config.md
 - api/link/ui.menu_height_config.md
