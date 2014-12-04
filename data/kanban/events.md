@@ -29,22 +29,22 @@ List of supported events
 
 Below you can find the full list of events available for Kanban API:
 
-- <a href="#onListItemClick">onListItemClick</a> - fires on an item click
-- <a href="#onListItemDblClick">onListItemDblClick</a> - occurs on an item double-click
-- <a href="#onListIconClick">onListIconClick</a> - fires on clicking icon button in the item footer
-- <a href="#onAvatarClick">onAvatarClick</a> - occurs on an avatar click
-- <a href="#onListBeforeSelect">onListBeforeSelect</a> - fires before item selection started
-- <a href="#onListAfterSelect">onListAfterSelect</a> - occurs after an item is selected
-- <a href="#onListBeforeContextMenu">onListBeforeContextMenu</a> - fires on item right click before native context menu displayed
-- <a href="#onListAfterContextMenu">onListAfterContextMenu</a> - fires after the context menu was called in the item area
-- <a href="#onListBeforeDrag">onListBeforeDrag</a> - fires before the mouse button is pressed and the cursor is moved over a draggable item
-- <a href="#onListBeforeDragIn">onListBeforeDragIn</a> -  fires before a dragged item is moved over the droppable list
-- <a href="#onListBeforeDrop">onListBeforeDrop</a> -  fires before a dragged element is released over the droppable list
-- <a href="#onListAfterDrop">onListAfterDrop</a> - fires after drag-n-drop has been finished
-- <a href="#onBeforeStatusChange">onBeforeStatusChange</a> - occurs before an item is dropped to a list with different status
-- <a href="#onAfterStatusChange">onAfterStatusChange</a> - fires after an item is dropped to a list with different status
+- <a href="#onlistitemclick">onListItemClick</a> - fires on an item click
+- <a href="#onlistitemdblclick">onListItemDblClick</a> - occurs on an item double-click
+- <a href="#onlisticonclick">onListIconClick</a> - fires on clicking icon button in the item footer
+- <a href="#onavatarclick">onAvatarClick</a> - occurs on an avatar click
+- <a href="#onlistbeforeselect">onListBeforeSelect</a> - fires before item selection started
+- <a href="#onlistafterselect">onListAfterSelect</a> - occurs after an item is selected
+- <a href="#onlistbeforecontextmenu">onListBeforeContextMenu</a> - fires on item right click before native context menu displayed
+- <a href="#onlistaftercontextmenu">onListAfterContextMenu</a> - fires after the context menu was called in the item area
+- <a href="#onlistbeforedrag">onListBeforeDrag</a> - fires before the mouse button is pressed and the cursor is moved over a draggable item
+- <a href="#onlistbeforedragin">onListBeforeDragIn</a> -  fires before a dragged item is moved over the droppable list
+- <a href="#onlistbeforedrop">onListBeforeDrop</a> -  fires before a dragged element is released over the droppable list
+- <a href="#onlistafterdrop">onListAfterDrop</a> - fires after drag-n-drop has been finished
+- <a href="#onbeforestatuschange">onBeforeStatusChange</a> - occurs before an item is dropped to a list with different status
+- <a href="#onafterstatuschange">onAfterStatusChange</a> - fires after an item is dropped to a list with different status
 
-###<span id='onListItemClick'>onListItemClick</span>
+###<span id='onlistitemclick'>onListItemClick</span>
 
 fires on an item click
 
@@ -61,7 +61,11 @@ params:
 - node - {element} the target HTML element
 - list - {object} the list object where click has happened
 
-###<span id='onListItemDblClick'>onListItemDblClick</span>
+{{sample
+63_kanban/02_events/04_item_click.html
+}}
+
+###<span id='onlistitemdblclick'>onListItemDblClick</span>
 
 fires when an item has been double-clicked
 
@@ -78,7 +82,12 @@ params:
 - node - {element} the target HTML element
 - list - {object} the list object where doulble-click has happened
 
-###<span id='onListIconClick'>onListIconClick</span>
+{{sample
+63_kanban/02_events/05_dbl_click.html
+}}
+
+
+###<span id='onlisticonclick'>onListIconClick</span>
 
 fires on clicking any icon in the list item
 
@@ -101,7 +110,12 @@ returns:
 
 {bool} if an event handler returns false, onListItemClick handler will not be called.
 
-###<span id='onAvatarClick'>onAvatarClick</span>
+
+{{sample
+63_kanban/02_events/01_icon_onclick.html
+}}
+
+###<span id='onavatarclick'>onAvatarClick</span>
 
 fires on clicking an avatar in the item
 
@@ -123,9 +137,14 @@ returns:
 {bool} if an event handler returns false, onListItemClick handler will not be called
 
 
-###<span id='onListBeforeSelect'>onListBeforeSelect</span>
+{{sample
+63_kanban/02_events/02_avatar_onclick.html
+}}
 
-fires before item selection started
+
+###<span id='onlistbeforeselect'>onListBeforeSelect</span>
+
+fires before an item selection started
 
 ~~~js
 $$("myBoard").attachEvent("onListBeforeSelect", function(itemId,selection,list)){
@@ -143,7 +162,12 @@ returns:
 
 {bool} if an event handler returns false, the item will not be selected
 
-###<span id='onListAfterSelect'>onListAfterSelect</span>
+
+{{sample
+63_kanban/02_events/04_item_click.html
+}}
+
+###<span id='onlistafterselect'>onListAfterSelect</span>
 
 fires after an item has been selected
 
@@ -158,9 +182,14 @@ params:
 - itemId - {string} the item id
 - list - {object} the list that contains the item 
 
-###<span id='onListBeforeContextMenu'>onListBeforeContextMenu</span>
 
-fires on item right click, before native context menu displayed
+{{sample
+63_kanban/02_events/04_item_click.html
+}}
+
+###<span id='onlistbeforecontextmenu'>onListBeforeContextMenu</span>
+
+fires on an item right click, before native context menu displayed
 
 ~~~js
 $$("myBoard").attachEvent("onListBeforeContextMenu", function(itemId,ev,node,list)){
@@ -178,7 +207,12 @@ params:
 - node - {element} the target HTML element
 - list - {object} the list object where click has happened
 
-###<span id='onListAfterContextMenu'>onListAfterContextMenu</span>
+
+{{sample
+63_kanban/02_events/06_context.html
+}}
+
+###<span id='onlistaftercontextmenu'>onListAfterContextMenu</span>
 
 fires after the context menu was called in the item area
 
@@ -196,7 +230,8 @@ params:
 - node - {element} the target HTML element
 - list - {object} the list object where click was happened
 
-###<span id='onListBeforeDrag'>onListBeforeDrag</span>
+
+###<span id='onlistbeforedrag'>onListBeforeDrag</span>
 
 fires before the mouse button is pressed and the cursor is moved over a draggable item
 
@@ -224,7 +259,12 @@ returns:
 
 {bool} returning false will prevent dragging of the element
 
-###<span id='onListBeforeDragIn'>onListBeforeDragIn</span>
+
+{{sample
+63_kanban/02_events/03_drag_n_drop_events.html
+}}
+
+###<span id='onlistbeforedragin'>onListBeforeDragIn</span>
 
 fires before a dragged element is moved over the droppable list
 
@@ -252,7 +292,13 @@ returns:
 
 {bool} returning false will prevent dropping of the element
 
-###<span id='onListBeforeDrop'>onListBeforeDrop</span>
+
+
+{{sample
+63_kanban/02_events/03_drag_n_drop_events.html
+}}
+
+###<span id='onlistbeforedrop'>onListBeforeDrop</span>
 
 fires before a dragged element is released over the droppable list
 
@@ -280,7 +326,9 @@ returns:
 
 {bool} returning false will prevent further drag-and-drop processing
 
-###<span id='onListAfterDrop'>onListAfterDrop</span>
+
+
+###<span id='onlistafterdrop'>onListAfterDrop</span>
 
 fires after drag-n-drop has finished
 
@@ -301,7 +349,13 @@ params:
 - ev - {event object} a native event object
 - list - {object} the list object where the event has happened
 
-###<span id='onBeforeStatusChange'>onBeforeStatusChange</span>
+
+{{sample
+63_kanban/02_events/03_drag_n_drop_events.html
+}}
+
+
+###<span id='onbeforestatuschange'>onBeforeStatusChange</span>
 
 fires before an item is going to be dropped into the list with different status
 
@@ -317,8 +371,8 @@ $$("myBoard").attachEvent("onBeforeStatusChange", function(itemId,newStatus)){
 
 params:
 
-- itemId - {string} the item id
-- status - {string} new item status
+- itemId - {string} the item's id
+- status - {string} a new item's status
 - list - {object} the list object where the event has happened
 - context - {object} drag-n-drop context object
 - ev - {event object} a native event object
@@ -328,9 +382,10 @@ returns:
 
 {bool} returning false will prevent further drag-and-drop processing
 
-###<span id='onAfterStatusChange'>onAfterStatusChange</span>
 
-fires after an item has been dropped into the list with different status
+###<span id='onafterstatuschange'>onAfterStatusChange</span>
+
+fires after an item has been dropped into the list with a different status
 
 ~~~js
 $$("myBoard").attachEvent("onListAfterDrop", function(itemId,newStatus)){
@@ -341,7 +396,9 @@ $$("myBoard").attachEvent("onListAfterDrop", function(itemId,newStatus)){
 params:
 
 - itemId - {string} the item id
-- status - {string} new item status
+- status - {string} a new item's status
 - list - {object} the list object where the event has happened
 - context - {object} drag-n-drop context object
 - ev - {event object} a native event object
+
+

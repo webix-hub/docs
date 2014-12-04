@@ -51,5 +51,5 @@ webix.ready(function(){
 ~~~
 
 {{sample
-
+63_kanban/01_basic/01_init.html
 }}

@@ -1,13 +1,16 @@
 Data Visualization
 ====================
 
-Data items of Kanban Board are sorted by their status and displayed in the corresponding lists. 
-Any data can be presented in the Kanban Board: various HTML-elements or images. 
+You can represent various HTML-elements in the Kanban Board.  
 
-Each KanbanList allows configuring dimensions and [templates](desktop/html_templates.md) of its items. It can be done in the [type](desktop/type.md) of KanbanList:
+Data items of Kanban Board are sorted by their status and displayed in the corresponding lists. 
+
+Each KanbanList allows configuring dimensions and [templates](desktop/html_templates.md) of its items. It is implemented in the [type](desktop/type.md) of KanbanList:
+
+<br>
 
 ~~~js
-// define a type for KanbanList views with set of templates
+// define a type for KanbanList views with a set of templates
 webix.type(webix.ui.kanbanlist,{
 	name: "cards",   // type name    /*!*/
 	icons:[{id: "edit", icon: "edit"}],
@@ -34,8 +37,13 @@ webix.ui({
 });
 ~~~
 
+<br>
 
-<br><br>
+{{sample
+63_kanban/01_basic/04_templates.html
+}}
+
+<br>
 
 You can set the following properties in the type:
 
@@ -76,7 +84,7 @@ Specifies the width of an item in the list.
 }
 ~~~
 
-"auto" is the default width value. However, you can set fixed value and show more than one item in list rows:
+"auto" is the default width value. However, you can set a fixed value and show more than one item in list rows:
 
 ~~~js
 webix.type(webix.ui.kanbanlist,{
@@ -87,7 +95,7 @@ webix.type(webix.ui.kanbanlist,{
 
 ~~~
 
-You can read more about this [here](kanban/configuration.md#changingstructureofkanbanlists) 
+You can read more [here](kanban/configuration.md#changingstructureofkanbanlists). 
 
 
 <h3 id="height"><b>height</b></h3>
@@ -100,7 +108,7 @@ Specifies the height of an item in the list.
 }
 ~~~
 
-'height' property as well as 'width' can be defined as fixed value.
+the 'height' property as well as 'width' can be defined as a fixed value.
 
 <h3 id="template"><b>template</b></h3>
 
@@ -120,10 +128,8 @@ template: function(obj, t){
 ~~~
 
 
-
-
 {{note
-Pay attention that you shouldn't redefine templates in order not to lose data. Otherwise, you'll have to specify data collection by yourself.
+Pay attention that you shouldn't redefine the main **template** in order not to lose data. Otherwise, you'll have to specify data collection by yourself.
 }}
 
 <h3 id="template_body"><b>templateBody</b></h3>
@@ -161,20 +167,18 @@ Defines the content below the item's body, displays an item's tags and icons
 ~~~
 
 
-
-
 <h3 id="icons"><b>icons</b></h3>
 
 Specifies an array of icons for Kanban Board 
 
-You need to specify icons array in the type for Kanban Lists. In definition of each icon you can set the following properties:
+You need to specify icons array in the type for Kanban Lists. In the definition of each icon you can set the following properties:
 
 - id - icon id,
-- icon - name of font icon for fontawesome collection (link to fontawesome)
-- tooltip - title for icon element,
+- icon - name of a font icon in [Font Awesome](http://fortawesome.github.io/Font-Awesome/) collection, 
+- tooltip - title for an icon element,
 - show - function that takes an item object as a param and returns true/false value -to show/hide an icon for a certain item
 - template - text that will be displayed next to the icon
-- click - onclick event handler for an icon
+- click - onClick event handler for the icon
 
 ~~~js
 webix.type(webix.ui.kanbanlist,{
@@ -295,3 +299,9 @@ Applied if the 'templateAvatar' doesn't set html content for the element that sh
 	templateNoAvatar: "<span class='webix_icon fa-user'></span>"
 }
 ~~~
+
+<br>
+
+{{sample
+63_kanban/01_basic/04_templates.html
+}}

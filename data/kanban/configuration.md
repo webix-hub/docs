@@ -81,6 +81,10 @@ The result will be the following:
 
 <img src="kanban/kanban_layout_columns.png"/>
 
+{{sample
+63_kanban/04_layouts/01_columns.html
+}}
+
 Creating a complex structure
 -----------------------------
 
@@ -154,7 +158,11 @@ You can see the result of the code's work in the following picture:
 
 As you can see, tasks in the upper row of the 2nd column are placed next to each other. 
 
-The following section of the article gives the details of creating such a configuration.
+The following section of the article gives the details on creating such a configuration.
+
+{{sample
+63_kanban/04_layouts/02_complex_layout.html
+}}
 
 Changing structure of Kanban lists
 ----------------------------------

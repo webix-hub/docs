@@ -2,9 +2,11 @@ Working with Data
 ===================
 
  
-Kanban board is based on [DataStore](api/refs/datastore.md), non-hierarchical (inline) store. That's why it supports all the DataStore API, including methods, events and properties.
+Kanban board is based on [DataStore](api/refs/datastore.md), non-hierarchical (inline) store. 
+That's why it supports all the DataStore API, including methods, events and properties.
 
-In this article you'll find the list of main Kanban features inherited from DataStore. The specific Kanban API is described in the articles kanban/api_reference.md and kanban/events.md.
+In this chapter you'll find the description of main Kanban features inherited from DataStore that allow managing data.
+Specific Kanban API is listed in the articles kanban/api_reference.md and kanban/events.md.
 
 
 Getting the item object
@@ -30,6 +32,12 @@ var task = $$("myBoard").getItem("task1");
 var title = task.text;//-> "Drag-n-drop support"
 ~~~
 
+The getItem() method returns the object of the data item that possesses a unique **id**  and a set of other properties:
+
+- status - {string} the item's status, defines the list in which the item will be shown (**obligatory**)
+- text - {string} the item's(task's) title
+- tags - {string} a comma-separated list of tags (optional)
+- $index - {numeric} the task's position in the list that the item relates to (optional)
 
 
 Checking the existence of an item
@@ -54,13 +62,13 @@ myBoard.exists("task2222");// -> false
 
 Changing data properties of an item
 ----------------------------------------
-To change the current value of some item property, you should use the following technique:
+To change the current value of some item's property, you should use the following technique:
 
 ~~~js
 var task = myBoard.getItem("task1");
 task.text = "Ticket 225";
  
-myBoard.refresh();
+myBoard.refresh("task1");
 //or
 myBoard.updateItem("task1", task);
 ~~~
@@ -100,7 +108,7 @@ for(i = 0; i<data.length; i++ ){
 Filtering 
 -----------
 
-If you need to show only a part of loaded data depending on a certain rule, you can apply the [filtering](desktop/filter_sort.md) technique to Kanban board. 
+If you need to show only a part of loaded data, depending on a certain rule, you can apply the [filtering](desktop/filter_sort.md) technique to Kanban board. 
 
 It is possible to filter data by a single property. Let's assume that we need to show only tasks assigned to a certain person:
 
@@ -136,3 +144,7 @@ $$("myBoard").filter(function(task){
     return task.personId == "1" && task.projectId == "22";
 });
 ~~~
+
+{{sample
+63_kanban/03_data_operations/02_filter.html
+}}

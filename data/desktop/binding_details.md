@@ -118,7 +118,7 @@ $$("myform1").bind($$("datatable1"));
 
 The functionality can be used when the form should get the data from the related table rather than from that of the master component. 
 
-###Data Saving 
+<h3 id="data_saving">Data Saving</h3> 
 
 When a form is bound to a component, data from the selected item is transmitted to the form as well as any changes you make within the form are saved automatically to the selected item. 
 

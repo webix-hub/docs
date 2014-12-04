@@ -2,7 +2,7 @@ Kanban Board
 ==============
 
 Webix Kanban board is a tool that is intended for viewing work in progress and controlling the flow of work.  
-With this widget your team will be aware of what each of the members should be working on. 
+With this widget, your team will be aware of what each of the members should be working on. 
 
 Webix Kanban board is rather flexible and can have any number of columns and rows. It's also easily customizable via HTML Templates.
 Fully written in JavaScript and CSS this component can be integrated in any web application or web page.
@@ -25,7 +25,7 @@ Fully written in JavaScript and CSS this component can be integrated in any web 
                 <li>kanban/configuration.md</li>
             </ul>
 		</td>
-		<td class='topic_description' onclick="displaySubList('design')"></td>
+		<td class='topic_description' onclick="displaySubList('design')">Discusses the main points of Kanban Board initialization and customization.</td>
 	</tr>
     <tr>
 		<td id="design" class='topics'>
@@ -35,12 +35,13 @@ Fully written in JavaScript and CSS this component can be integrated in any web 
 		    <ul id="design_sublist">
                 <li>kanban/adding_items.md</li>
                 <li>kanban/work_with_data.md</li>
+                <li>kanban/editing_items.md</li>
                 <li>kanban/events.md</li>
                 <li>kanban/api_reference.md</li>
                 <li>kanban/howto.md</li>
             </ul>
 		</td>
-		<td class='topic_description' onclick="displaySubList('design')"></td>
+		<td class='topic_description' onclick="displaySubList('design')">Describes possible operations with Kanban Board and its elements.</td>
 	</tr>
 	</tbody>
 </table>
@@ -52,6 +53,7 @@ Fully written in JavaScript and CSS this component can be integrated in any web 
 - kanban/configuration.md
 - kanban/adding_items.md
 - kanban/work_with_data.md
+- kanban/editing_items.md
 - kanban/events.md
 - kanban/api_reference.md
 - kanban/howto.md

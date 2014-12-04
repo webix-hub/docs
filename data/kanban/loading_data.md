@@ -1,12 +1,7 @@
 Loading and Saving Data
 ========================
 
-Kanban board is based on [DataStore](api/refs/datastore.md), non-hierarchical (inline) store. Its data items are grouped by their **status** value to be displayed in the corresponding list. 
-
-Loading data into Kanban Board
------------------------------
-
-Data can be [loaded](datatree/loading_data.md) from different sources. However, Kanban stores data items as json objects:
+Data can be [loaded](desktop/data_loading.md) from different sources. However, Kanban stores data items as json objects:
 
 ~~~js
 {
@@ -19,12 +14,12 @@ Data can be [loaded](datatree/loading_data.md) from different sources. However, 
 }
 ~~~
 
-Each data item possesses unique **id** property and set of other properties:
+Each data item possesses a unique **id** property and a set of other properties:
 
-- status - {string} item status, defines the list in which an item will be shown
-- text - {string} item/task title
-- tags - {string} comma separated list of tags
-- $index - {numeric} the task position in the list that the item relates to
+- status - {string} the item's status, defines the list in which an item will be shown (obligatory)
+- text - {string} the item's (task's) title
+- tags - {string} a comma-separated list of tags
+- $index - {numeric} the task's position in the list that the item relates to
 
 Kanban Board supports all [data formats](desktop/data_types.md) of the Webix library.
 
@@ -53,7 +48,10 @@ webix.ready(function(){
 		    ...
 		],
         //data collection									/*!*/
-		data: base_task_set								    /*!*/
+		data: [												/*!*/
+        	{ id:1, text:"Task 1", status: "new"},						/*!*/
+            { id:2, text:"Task 2", status: "new"}   						/*!*/
+        ]								    				/*!*/
 	});
 });
 ~~~
@@ -61,7 +59,7 @@ webix.ready(function(){
 Loading from a data file
 --------------------------
 
-To load data from a file, you can use the api/link/ui.tree_url_config.md property.
+To load data from a file, you can use the api/link/ui.tree_url_config.md property. The url refers to the JSON object that will be loaded into the board after its initialization. 
 
 ~~~js
 webix.ready(function(){
@@ -100,4 +98,8 @@ webix.ready(function(){
 });
 ~~~
 
+{{sample
+63_kanban/03_data_operations/03_server.html
+}}
 
+More information about Kanban data loading you can find in [DataStore](api/refs/datastore.md) docs.
