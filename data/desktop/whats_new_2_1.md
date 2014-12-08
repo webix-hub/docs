@@ -21,7 +21,7 @@ If you are updating from Webix 1.x - please check the migration.md
 - [webix.ui.$freeze](api/ui_$freeze_other.md) blocks all resizing
 - [webix.ui.animate to animate view creation](desktop/animation.md#animatingviewinitialization)
 - tabview can have custom width for different cells
-- [tab close](api/ui.tabbar_onbeforetabclose_event.md) and [tab/segment remove](api/ui.segmented_onoption_remove_event.md) events
+- [tab close](api/ui.tabbar_onbeforetabclose_event.md) and [tab/segment remove](api/ui.segmented_onoptionremove_event.md) events
 - [separator for multiselect](api/ui.multiselect_separator_config.md)
 
 ##Fixes

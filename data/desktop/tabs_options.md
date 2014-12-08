@@ -98,7 +98,7 @@ Each combination of a tab and a cell is configured as:
 { header:"header_title", body:{ ..view config ..}
 ~~~
 
-The same configuration is passed into the [addView()](api/ui.tabview_addview.md) method: 
+The same configuration is passed into the [addView()](api/link/ui.tabview_addview.md) method: 
 
 ~~~js
 $$("tabview1").addView({
@@ -109,7 +109,7 @@ $$("tabview1").addView({
 });
 ~~~
 
-The tabview cell can be removed by [removeView()](api/ui.tabview_addview.md) method that required an ID if this cell: 
+The tabview cell can be removed by [removeView()](api/link/ui.tabview_addview.md) method that required an ID if this cell: 
 
 ~~~js
 var id = $$("tabview1").getValue(); //id of active cell
