@@ -3,6 +3,9 @@ getValues
 
 
 @short: derives input values from the form
+
+@params:
+* details	object, function	additional parameters (described below)
 	
 @returns: 
 values	array	 returns hash of form values: data entered by user or initial data from the value property. 
@@ -10,9 +13,9 @@ values	array	 returns hash of form values: data entered by user or initial data 
 @example:
 
 function get_form() {
-                var values = $$('myform').getValues();
-                console.log(values);
-            }
+	var values = $$('myform').getValues();
+    console.log(values);
+}
 @relatedapi:
 	api/link/ui.form_setvalues.md
 @related: 
@@ -23,7 +26,41 @@ function get_form() {
 @template:	api_method
 @descr:
 
-To get value of some specific element within the form, you should specify its **ID** or **name**.
+###Additonal parameters 
+
+When the method is called without the arguments, all the values 
+of this form are returned including the values of 
+hidden and disabled fields.
+
+Still, you can alter this behaviour: 
+
+~~~js
+//returns values of visible fields only
+$$('myform').getValues({hidden:false});
+
+//returns values of enabled fields only
+$$('myform').getValues({disabled:false});
+
+//excludes both hidden and disabled fields from the result
+$$('myform').getValues({
+	hidden:false, 
+    disabled:false
+});
+~~~
+
+Additionally, you can pass a loop function into the method to
+iterate through the form controls: 
+
+~~~js
+$$('myform').getValues(function(obj){
+	//'obj' points to a control object
+    console.log(obj.getValue());
+});
+~~~
+
+###Getting the value of a specific element
+
+To get value of some specific element within the form, you should specify its **name**.
 
 ~~~js
 webix.ui({
@@ -37,8 +74,7 @@ webix.ui({
 
 
 function get_title() {
-		var title = $$('myform').getValues().title;
-        console.log(title);
-		}
-
+	var title = $$('myform').getValues().title;
+    console.log(title);
+}
 ~~~
