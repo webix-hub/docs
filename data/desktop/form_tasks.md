@@ -39,6 +39,7 @@ $$('my_form').setValues({ field_b:"Paris" }, true);
 // the form is updated with the specified value
 ~~~
 
+Check also the [API reference for this method](api/values_setvalues.md).
 
 ###**load()** 
 
@@ -52,7 +53,7 @@ function load_form() {
 
 ###**getValues()** 
 
-Gets all the form values for their further usage. In the snippet below form values are pasted into the console log. 
+Gets all the form values including those of hidden and disabled fields. In the snippet below form values are pasted into the console log. 
 
 ~~~js
 function get_form() {
@@ -60,6 +61,14 @@ function get_form() {
 	console.log(values);
 }
 ~~~
+
+You can also specify whether to include values of disabled and hidden fields into the result: 
+
+~~~js
+$$('myform').getValues({hidden:false, disabled:false});
+~~~
+
+Check also the [API reference for this method](api/values_getvalues.md).
 
 ###**clear()** 
 
@@ -106,6 +115,18 @@ function save_form(){
 ~~~
 
 {{sample 13_form/02_api/10_binding.html}}
+
+Check the [API reference for this method](api/values_isdirty.md).
+
+###**setDirty()**
+
+Marks the form as 'edited'. 
+
+~~~js
+$$('form1').setDirty();
+~~~
+
+Check the [API reference for this method](api/values_setdirty.md);  
 
 ###**bind()**
 
