@@ -1,8 +1,12 @@
 Migration from DHTMLX Touch
 =========================
 
-If you want to migrate to the Webix library, you should include two additional libraries: **touchui_migration.js** and 
+If you want to migrate to the Webix library, you should include [two additional libraries](http://docs.webix.com/packages/touch_migration.zip): **touchui_migration.js** and 
 **touchui_migration.css**, and also you can  make the changes described in this article if they are needed:
+
+
+You can grab those files by [the next link](http://docs.webix.com/packages/touch_migration.zip)
+
 
 Data Components
 ---------------

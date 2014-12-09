@@ -13,7 +13,7 @@ You can define a built-in filter in the header or footer of a column. Webix offe
 	- **serverFilter** (text-based);
     - **serverSelectFilter** (select-based);
 	- **selectFilter**;
-	- **numberfilter**;
+	- **numberFilter**;
     - **dateFilter**;
 - additionally, in the Webix Pro edition:    
 	- **richSelectFilter**;
