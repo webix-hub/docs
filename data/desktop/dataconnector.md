@@ -137,7 +137,7 @@ $last_value -> configure("wages", "id", "values, start_date");
 $last_value -> limit(0, 1, "date_start", "desc"); 
 ~~~
  
-Here values from the "wages" table are sorted by date while the descending direction means that the highest line will be the latest value. The result of the query will the the fisrt line of the sorted table. 
+Here values from the "wages" table are sorted by date while the descending direction means that the highest line will be the latest value. The result of the query will be the first line of the sorted table. 
  
  - **mix** - defining data for a field/column in the UI component. The data comes from the table different from that you use to render data for this component. 
  
