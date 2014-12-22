@@ -9,6 +9,9 @@ addView
 @example:
 $$("tabview1").addView({
 	header:"New Tab",
+    /*optional
+    close:true, 
+    icon:"users",*/
 	body:{
 		template:"New content "+webix.uid()
 	}
@@ -29,8 +32,12 @@ $$("tabview1").addView({
 
 Configuration object contains setting for the cell header and body: 
 
-- **header** (string) - cell header text;
-- **body** (obj) - configuration of the view inside the cell. 
+- Mandatory parameters: 
+	- **header** (string) - cell header text;
+	- **body** (obj) - configuration of the view inside the cell;
+- Optional parameters:    
+	- **close** (boolean) - if true, add a close icon, thus making a tab closable. False by default;
+    - **icon** (string) - adds a custom icon for tha tab. Icons are taken from [FontAwesome collection](http://fortawesome.github.io/Font-Awesome/icons/). 
 
 ###Additional Info
 
