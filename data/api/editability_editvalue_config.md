@@ -11,7 +11,7 @@ webix.ui({
 	view:"list",
     template:"#id#.#name#",
     editable:true,
-    editvalue:"name",
+    editValue:"name",
     ...
 })
 
