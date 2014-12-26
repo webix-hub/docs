@@ -81,7 +81,7 @@ webix.ui({
 
 You get the URL value through Hipchat client when you share the room access.
 
-Related Sample: <a href="http://localhost/components/hipchat/sample.html">HipChat Integration</a>
+Related Sample: <a href="http://webix-hub.github.io/components/hipchat/sample.html">HipChat Integration</a>
 
 @index:
 
