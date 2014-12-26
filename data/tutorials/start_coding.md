@@ -114,7 +114,7 @@ var table = new webix.ui({ //any var name will do
 });
 ~~~
 
-Why is **ID** so important? Besauce it's the very element you can refer to in order to attach different methods to the object. Or you can call methods 
+Why is **ID** so important? Because it's the very element you can refer to in order to attach different methods to the object. Or you can call methods 
 (which are functions) from the variable that stores the object - like in the second example. 
 
 {{snippet
@@ -174,7 +174,7 @@ ID to **div** elements and set this ID as the value of the component's container
 
 ##Coding Tips
 
-Components are removed from the application by simply wiping the code in the ditor, but they can be as well detructed programmatically with the removal of all HTML elements and event for the component. 
+Components are removed from the application by simply wiping the code in the editor, but they can be as well destructed programmatically with the removal of all HTML elements and event for the component. 
 
 ~~~js
 $$('mydataview1').destructor();
