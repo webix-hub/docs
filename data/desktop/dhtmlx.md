@@ -64,6 +64,6 @@ dhxLayout.cells("c").attachWebix({
 });
 ~~~
 
-Related Sample: [Integration with DHTMLX Layout](http://localhost/components/dhtmlx/sample.html)
+Related Sample: [Integration with DHTMLX Layout](http://webix-hub.github.io/components/dhtmlx/sample.html)
 
 All methods of DHTMLX Layout you can find in [DHTMX documentation](http://docs.dhtmlx.com/doku.php?id=dhtmlxlayout:toc).

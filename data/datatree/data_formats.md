@@ -102,7 +102,7 @@ You can use the simplified form of JSON and specify data as in:
 ~~~
 {{sample 17_datatree/01_loading/01_json_data.html}}
 
-*Compare simplified format with the [standard form](#defaultdataformats).*
+*Compare simplified format with the [standard form](#expecteddataformats).*
 
 
 Custom JSON format
@@ -125,7 +125,7 @@ myjson.child=function(obj){
 
 tree = new webix.ui({ view:"tree", datatype:"myjson", ... });
 ~~~
-*the 'child' function defines which object properies should store sub-items*
+*the 'child' function defines which object properties should store sub-items*
 
 
 As a result, your data will look as in:

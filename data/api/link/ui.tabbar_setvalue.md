@@ -2,14 +2,14 @@
 
 @example:
 
-{ view:"tabbar", type:"bottom",  options:[
+{ view:"tabbar", id:"tabs", type:"bottom",  options:[
 				{ id:"one", value:"One" },
 				{ id:"two", value:"Two"},
 				{ id:"three", value:"Three"}
 			]}
 ...
 
-$$("tabbar1").setValue("two"); 
+$$("tabs").setValue("two"); 
 		//the second option will be selected
         
 @relatedapi:

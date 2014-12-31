@@ -4,16 +4,13 @@ onAfterSave
 @short: fires after serverside responce has been received and processed
 
 @params:
-- id		string			item ID before saving
-- newid		string		item ID after saving	
-- sid		string		item ID before saving
-- status	string		operation name ("insert", "update", "delete")
-- tid		string		item ID after saving
-- type		string		operation name ("insert", "update", "delete")
+- response	object	json object with details of server side response
+- id		id		id of related item
+- update	object	object which holds state of data saving
 	
 
 @example:
-dp.attachEvent("onAfterSave", function(id, newid, sid, status, tid, type){
+dp.attachEvent("onAfterSave", function(obj, id, update){
 	//code
 });
 
@@ -25,5 +22,5 @@ dp.attachEvent("onAfterSave", function(id, newid, sid, status, tid, type){
 @template:	api_event
 
 @descr:
-In case of an error during saving, the api/dataprocessor_onaftersave_event.md fires instead.
+In case of an error during saving, the api/dataprocessor_onaftersaveerror_event.md fires instead.
 

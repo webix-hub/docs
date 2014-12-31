@@ -6,7 +6,7 @@ Webix Pivot Chart is fully client-side Javascript tool for graphical representat
 ## External resources
 
 - You can [download extensions](http://pivot.webix.com/webix_pivot.gpl.zip) from [pivot.webix.com](http://pivot.webix.com)
-- There are online samples at [pivot.webix.com/samples/](http://pivot.webix.com/samples/)
+- There are online samples at [docs.webix.com/samples](http://docs.webix.com/samples/61_pivot/index.html
 
 
 
