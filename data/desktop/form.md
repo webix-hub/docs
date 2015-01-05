@@ -136,7 +136,7 @@ The swithing controls are placed directly into the array of form **elements**.
                
 ~~~
 
-{{sample 90_tests/02_tabs_form.html}}
+{{sample 13_form/02_api/13_tabs_form.html}}
 
 
 ##Retrieving Form Values
