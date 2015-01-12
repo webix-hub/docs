@@ -152,7 +152,7 @@ tree.load("data/tree_data.php");
 **On the server side**
 
 - you can write full server logic by yourself;
-- or use <a href="http://docs.Webix.com/doku.php?id=dhtmlxconnector:toc">dhtmlxConnector</a> ( we reccomend this way as the easiest one).
+- or use <a href="http://docs.dhtmlx.com/connector__php__index.html">dhtmlxConnector</a>
 
 In case of using dhtmlxConnector, the related server-side script will look like this:
 
