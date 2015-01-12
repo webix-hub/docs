@@ -8,7 +8,7 @@ RewriteRule ^(.+\.(html)?)$ ./index.php?page=$1 [QSA]
 RewriteRule ^(.+)\/(.+\.(html)?)\/edit$ ./index.php?lang=$1&edit=$2 [QSA]
 RewriteRule ^(.+\.(html)?)\/edit$ ./index.php?edit=$1 [QSA]
 
-RewriteRule ^(.+\.html\/|)(editor\/.+)$ ../../../madoka/core/$2 [QSA]
+RewriteRule ^(.+\.html\/|)(editor\/.+)$ ../madoka/core/$2 [QSA]
 
 RewriteRule ^(search\.(php)?)$ ./index.php?action=search& [QSA]
 RewriteRule ^(suggest\.(php)?)$ ./index.php?action=suggest& [QSA]
@@ -16,4 +16,4 @@ RewriteRule ^(suggest\.(php)?)$ ./index.php?action=suggest& [QSA]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-RewriteRule ^(.+\/)*assets\/(.+)$ ../../../madoka/core/styles/$2 [QSA]
+RewriteRule ^(.+\/)*assets\/(.+)$ ../madoka/core/styles/$2 [QSA]
