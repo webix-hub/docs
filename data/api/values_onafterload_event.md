@@ -2,7 +2,7 @@ onAfterLoad
 =============
 
 
-@short: fires after xml loading is complete
+@short: fires after server side loading is complete
 	
 @example: 
 	

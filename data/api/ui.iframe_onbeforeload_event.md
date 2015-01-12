@@ -2,7 +2,7 @@ onBeforeLoad
 =============
 
 
-@short:	fires before HTML page starts to be loaded
+@short:	fires before HTML page starts to load
 	
 
 

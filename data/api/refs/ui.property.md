@@ -86,13 +86,13 @@ The component can be used for creating various on-page editors. The value field 
 - api/link/ui.property_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.property_onaftereditstart_event.md - fires after edit operation was initiated, editor opened and ready for input
 - api/link/ui.property_onaftereditstop_event.md - fires after edit operation finished
-- api/link/ui.property_onafterload_event.md - fires after xml loading is complete
+- api/link/ui.property_onafterload_event.md - fires after server side loading is complete
 - api/link/ui.property_onafterrender_event.md - occurs immediately after the component has been rendered.
 - api/link/ui.property_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.property_onbeforecontextmenu_event.md - fires before the context menu is called in the item area
 - api/link/ui.property_onbeforeeditstart_event.md - fires before edit operation is initiated
 - api/link/ui.property_onbeforeeditstop_event.md - fires before stop edit command is received
-- api/link/ui.property_onbeforeload_event.md - occurs immediately before loading XML data has been started
+- api/link/ui.property_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/link/ui.property_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.property_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.property_ondestruct_event.md - occurs when component destroyed

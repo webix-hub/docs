@@ -93,14 +93,14 @@ It's possible to present multiple data sets on the same chart.  Check [chart](de
 - api/link/ui.chart_onafteradd_event.md - fires after adding item to datastore
 - api/link/ui.chart_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.chart_onafterdelete_event.md - fires after item deleting
-- api/link/ui.chart_onafterload_event.md - fires after xml loading is complete
+- api/link/ui.chart_onafterload_event.md - fires after server side loading is complete
 - api/ui.chart_onafterrender_event.md - called after the rendering of calendar is complete.
 - api/link/ui.chart_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.chart_onaftersort_event.md - fires after sorting dataset
 - api/link/ui.chart_onbeforeadd_event.md - fires before adding item to datastore
 - api/link/ui.chart_onbeforecontextmenu_event.md - fires before the context menu is called in the item area
 - api/link/ui.chart_onbeforedelete_event.md - fires before item deleting
-- api/link/ui.chart_onbeforeload_event.md - occurs immediately before loading XML data has been started
+- api/link/ui.chart_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/ui.chart_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.chart_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.chart_onbindrequest_event.md - fires when the component is ready to receive data from the master component

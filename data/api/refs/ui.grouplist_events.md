@@ -6,7 +6,7 @@ Events
 - api/link/ui.grouplist_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.grouplist_onafterdelete_event.md - fires after item deleting
 - api/link/ui.grouplist_onafterdrop_event.md - fires after drag-n-drop was finished
-- api/link/ui.grouplist_onafterload_event.md - fires after xml loading is complete
+- api/link/ui.grouplist_onafterload_event.md - fires after server side loading is complete
 - api/link/ui.grouplist_onafterrender_event.md - occurs immediately after the component has been rendered
 - api/link/ui.grouplist_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.grouplist_onafterselect_event.md - fires after item was selected
@@ -18,7 +18,7 @@ Events
 - api/link/ui.grouplist_onbeforedragin_event.md - fires before a dragged element is moved over the droppable area
 - api/link/ui.grouplist_onbeforedrop_event.md - fires before a dragged element is released over the droppable area
 - api/link/ui.grouplist_onbeforedropout_event.md - fires before a dragged element is released over the droppable area
-- api/link/ui.grouplist_onbeforeload_event.md - occurs immediately before loading XML data has been started
+- api/link/ui.grouplist_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/link/ui.grouplist_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.grouplist_onbeforeselect_event.md - fires before item selection is started
 - api/link/ui.grouplist_onbeforesort_event.md - fires before sorting dataset
