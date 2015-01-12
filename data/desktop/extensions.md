@@ -92,6 +92,15 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
 		</td>
 		<td class='topic_description' style="text-align: center; padding:20px;"><img src="desktop/kanban_board.png"></td>
 	</tr>
+    <tr>
+		<td id="design" class='topics' style="vertical-align:text-top;">
+		    <h4 id='ui' style="margin-bottom:4px;">
+		        <a href="desktop/file_manager.md">File Manager</a>
+		    </h4>
+		    An integration extension that helps you to navigate folders and files in a handy way.
+		</td>
+		<td class='topic_description' style="text-align: center; padding:20px;"><img src="desktop/file_manager.png"></td>
+	</tr>
     </tbody>
 </table>
 
@@ -106,5 +115,5 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
 - desktop/scheduler.md
 - desktop/mobile_scheduler.md
 - desktop/kanban_board.md
-
+- desktop/file_manager.md
 
