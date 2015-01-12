@@ -2,7 +2,7 @@ onAfterLoad
 =============
 
 
-@short:	fires after HTML page was loaded to the component
+@short:	fires after an HTML page was loaded to the component
 	
 
 

@@ -173,7 +173,7 @@ The component is full of various possibilities: filtering, sorting, pagination, 
 - api/link/ui.datatable_onaftereditstart_event.md - fires after edit operation was initiated, editor opened and ready for input
 - api/link/ui.datatable_onaftereditstop_event.md - fires after edit operation finished
 - api/ui.datatable_onafterfilter_event.md - occurs after datatable was filtered
-- api/link/ui.datatable_onafterload_event.md - fires after xml loading is complete
+- api/link/ui.datatable_onafterload_event.md - fires after server side loading is complete
 - api/ui.datatable_onafterrender_event.md - occurs each time after the view is rendered
 - api/link/ui.datatable_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/ui.datatable_onafterselect_event.md - fires after a cell is selected
@@ -192,7 +192,7 @@ The component is full of various possibilities: filtering, sorting, pagination, 
 - api/link/ui.datatable_onbeforeeditstart_event.md - fires before edit operation is initiated
 - api/link/ui.datatable_onbeforeeditstop_event.md - fires before stop edit command is received
 - api/ui.datatable_onbeforefilter_event.md - called when filtering process is started, but data is not filtered yet
-- api/link/ui.datatable_onbeforeload_event.md - occurs immediately before loading XML data has been started
+- api/link/ui.datatable_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/ui.datatable_onbeforerender_event.md - occurs each time before the view is rendered
 - api/ui.datatable_onbeforeselect_event.md - fires before a cell is selected
 - api/link/ui.datatable_onbeforesort_event.md - fires before sorting dataset

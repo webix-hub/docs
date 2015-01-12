@@ -96,13 +96,13 @@ The class defines properties, methods, and events related to loading and renderi
 {{api
 - api/link/ui.proto_onafteradd_event.md - fires after adding item to datastore
 - api/link/ui.proto_onafterdelete_event.md - fires after item deleting
-- api/link/ui.proto_onafterload_event.md - fires after xml loading is complete
+- api/link/ui.proto_onafterload_event.md - fires after server side loading is complete
 - api/link/ui.proto_onafterrender_event.md - occurs immediately after the component has been rendered
 - api/link/ui.proto_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.proto_onaftersort_event.md - fires after sorting dataset
 - api/link/ui.proto_onbeforeadd_event.md - fires before adding item to datastore
 - api/link/ui.proto_onbeforedelete_event.md - fires before item deleting
-- api/link/ui.proto_onbeforeload_event.md - occurs immediately before loading XML data has been started
+- api/link/ui.proto_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/link/ui.proto_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.proto_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.proto_onbindrequest_event.md - fires when the component is ready to receive data from the master component

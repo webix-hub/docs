@@ -3,7 +3,7 @@ onBeforeLoad
 
 
 @short:
-occurs immediately before loading XML data has been started
+occurs immediately before data loading has been started
 
 
 

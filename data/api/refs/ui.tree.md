@@ -134,10 +134,10 @@ The component supports in-line node editing, advanced drag-and-drop, three-state
 - api/link/ui.tree_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.tree_onafterdelete_event.md - fires after item deleting
 - api/link/ui.tree_onafterdrop_event.md - fires after drag-n-drop was finished
-- api/link/ui.tree_onafterload_event.md - fires after xml loading is complete
+- api/link/ui.tree_onafterload_event.md - fires after server side loading is complete
 - api/link/ui.tree_onafteropen_event.md - fires after the branch has been opened
 - api/link/ui.tree_onafterrender_event.md - occurs immediately after the component has been rendered
-- api/link/ui.tree_onafterscroll_event.md - occurs when some webix view has been scrolled
+- api/link/ui.tree_onafterscroll_event.md - occurs when some Webix view has been scrolled
 - api/link/ui.tree_onafterselect_event.md - fires after item was selected
 - api/link/ui.tree_onaftersort_event.md - fires after sorting dataset
 - api/link/ui.tree_onbeforeadd_event.md - fires before adding item to datastore
@@ -148,7 +148,7 @@ The component supports in-line node editing, advanced drag-and-drop, three-state
 - api/link/ui.tree_onbeforedragin_event.md - fires before a dragged element is moved over the droppable area
 - api/link/ui.tree_onbeforedrop_event.md - fires before a dragged element is released over the droppable area
 - api/link/ui.tree_onbeforedropout_event.md - fires before a dragged element is released over the droppable area
-- api/link/ui.tree_onbeforeload_event.md - occurs immediately before loading XML data has been started
+- api/link/ui.tree_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/link/ui.tree_onbeforeopen_event.md - fires the moment you attempt to open the tree branch
 - api/link/ui.tree_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.tree_onbeforeselect_event.md - fires before item selection is started
