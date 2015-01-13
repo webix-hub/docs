@@ -2,12 +2,12 @@ Data Templates
 =================
 Here we speak about the ways of presenting data inside the component after [data loading](desktop/data_loading.md).
 
-When the data is loaded to the component it is stored in the data object and the component searches for the right value to display. So what it the **object value** for each data item?
+After the data is loaded to the component it is stored in the `data` object and the component searches for the right value to display. So what is the **object value** for each data item?
 
 Data Item Value
 -----------------
 
-All supported data types may contain **more than one value per item** e.g. each item of a filmset may contain not only a film's title but also its rank, year of production and number of votes. 
+All supported data types may contain **more than one value per item** e.g. each item of a filmset may contain not only a film's title but also its rank, production year, and number of votes. 
 
 Still, different components have different possibilities and requirements:
 
@@ -30,26 +30,26 @@ Still, different components have different possibilities and requirements:
 
 {{sample 17_datatree/01_loading/01_json_data.html}}
 
-Such definition would suit single-value components. If a data item has other properties, their values won't be shown unless you define template.
+Such definition would suit single-value components. If a data item has other properties, their values won't be shown unless you define a template.
 
 - **data template** that performs two tasks
 	- main - defines which item property (-ies) should be treated as **value** to display;
     - adds formatting to this value.
     
-Template can be defined for any component you wish.  
+Templates can be defined for any component you wish.  
 
-Template can set one or several properties as value to display:
+Templates can set one or several properties as the value to display:
 
 ~~~js
 webix.ui({
-	view:"list",
-    template:"#title#" 
-});//this list will show 'titles'
+    view: "list",
+    template: "#title#"
+}); // this list will show 'titles'
 
 webix.ui({
-	view:"list",
-    template:"#value#.#title#" 
-}); //this list will show 'values' and 'titles' 
+    view: "list",
+    template: "#value#.#title#"
+}); // this list will show 'values' and 'titles' 
 ~~~
 
 {{sample 05_list/01_list.html }}
@@ -57,19 +57,19 @@ webix.ui({
 - [datatable](datatable/index.md) and [treetable](desktop/treetable.md) **column ID** that act as templates for cells.
 
 ~~~js
-view:"datatable",
-columns:[
-	{ id:"id", header:"..", width: 50}, //1st col displays item 'IDs'
-	{ id:"title"}, //2nd col displays item 'titles'
-    { id:"value"} //3rd col displays item 'values'
+view: "datatable",
+columns: [
+    { id: "id", header: "...", width: 50}, // 1st col displays item 'IDs'
+    { id: "title" }, // 2nd col displays item 'titles'
+    { id: "value" }  // 3rd col displays item 'values'
 ]   
 ~~~
 
-Column IDs perform the main template function - they set the value to display. To add extra words or formatting to the displayed values, you can 
-define a template for the column. 
+Column IDs perform the main template function - they set the value to display. To add extra words or formatting to the
+displayed values, you can define a template for the column. 
 
 ~~~js
-{ id:"title", template:"The title is <b>#title#</b>!"}
+{ id: "title", template: "The title is <b>#title#</b>!" }
 ~~~
 
 ###Template for CSV and JSArray
@@ -94,10 +94,10 @@ template:"#data0#.#data1#"
 
 //datatable columns
 
-columns:[
-	{ id:"data0"},
-	{ id:"data1"}
-] ;
+columns: [
+    { id: "data0" },
+    { id: "data1" }
+];
 ~~~
 
 {{sample 15_datatable/01_loading/01_inline_data.html}}
@@ -107,12 +107,12 @@ As far as you've noticed, only **JSON** and **XML** data can be displayed withou
 Moreover, this can be applied only to components with **single-value items**. 
 }}
 
-###Chart Specificity: 
+### Chart exception
 
-[Chart](desktop/chart.md) requires two values per item - one for each axle. 
+[Chart](desktop/chart.md) requires two values per item - one for each axis.
 
-- **Y-axle value** is defined by **value** property tht can be additionally amended within yAxis object property.
-- **X-axis value** is defined by template within xAxis object property.
+- **Y-axle value** is defined by the **value** property that can be additionally amended within the `yAxis` object property.
+- **X-axis value** is defined by the template within the `xAxis` object property.
 
 ~~~js
 webix.ui({
@@ -137,37 +137,35 @@ Template Contents
 
 The whole template comes in quotation marks and includes: 
 
-- **JSON keys / XML tags** from initial dataset (nested into pairs of hash signs) plus HTML tags (required to make data seen); 
-- **plain text**;
-- **HTML tags** and **CSS selectors** (optional, adds styling); 
-- **stops** of various kinds - period, comma, colon, hyphen.. 
+- **JSON keys / XML tags** from the initial dataset, surrounded by hash signs;
+- **HTML tags** and **CSS selectors** (optional, adds styling);
+- **plain text**.
 
 ###Template Sample
 
 ~~~js
-template: "<span style='classname'>#title#</span>. Shot in #year#. Ranked #rank#"
+template: "<span style='classname'>#title#</span>. Shot in #year#. Ranked #rank#."
 ~~~
 
-*Title*, *year* and *rank* signify repeated values from the dataset. All the titles will be styled with the help of *.classname* CSS class. 'Shot in' and 'Ranked' is usual text 
-included for better understanding. The template contains three sentenses divided with periods. 
+*Title*, *year* and *rank* signify repeated values from the dataset. All the titles will be styled with the help of the *.classname* CSS class. 'Shot in' and 'Ranked' are plain text to be shown to the user.
 
-Optionally, you can define the **template for data copied to clipboard**. If not specified, data will be taken accoring to the above-mentioned template.
+Optionally, you can define the **template for data copied to clipboard**. If not specified, data will be taken according to the above-mentioned template.
 
 ~~~js
 templateCopy: "#rank#.#title#"
 ~~~
 
-In this case, only rank and title values are copied. 
+In this case, only the `rank` and `title` values are copied. 
 
 {{note
 **Grouplist** has its own templating pattern. Look into the [related article](desktop/grouplist.md) for details.
 }}
 
-###The item in the intial dataset looks like this: 
+###The item in the intial dataset looks like this:
 
 ~~~js
 //JSON
-{title:"My film", year:1994, rank:7}
+{ title: "My film", year: 1994, rank: 7 }
 
 //XML
 <item>
@@ -179,19 +177,25 @@ In this case, only rank and title values are copied.
 Inside the component it looks like this: **<i>My film.</i> Shot in 1998. Ranked 7.**
 
 {{note
-Don't mix template property with the [template](desktop/template.md) component.
+Don't confuse template property with the [template](desktop/template.md) component.
 }}
 
 ##Template Types
 
-Templates for data exist in the shape of HTML tags within JS objects as well as can form a named template, refer to a HTML container or an external file and even form a function according to which data will be presented.  
+Templates can be defined in five very flexible ways:
 
-Templates are included into webix components as well as into some of their properties that take objects as values. 
+* as HTML strings within JavaScript objects
+* by creating named templates
+* by extracting them from an HTML container
+* by retrieving them from an external file
+* as a function returning a string
+
+Templates are included into Webix components as well as into some of their properties that take objects as values. 
 
 - [Tooltip implementation](desktop/tooltip.md)
 - [Type implementation](desktop/type.md)
 
-###HTML inside Javascript
+###HTML inside JavaScript
 
 {{snippet
 JSON data in the dataview
@@ -199,10 +203,10 @@ JSON data in the dataview
 
 ~~~js
 var big_film_set = [
-	{"id":1,"title":"The Shawshank Redemption",
-      "year":"1994","votes":"678,79",
-       "rating":"9,2","rank":"1"
-    }, 
+    { id: 1, title: "The Shawshank Redemption",
+      year: 1994, votes: "67,879",
+      rating: "9.2", rank: 1
+    },
     { ...}
 ];
 
@@ -216,24 +220,24 @@ webix.ui({
 
 ###Named Template
 
-Template may be included inside the **type** parameter. Type applies to each item rather then the whole component. 
+Templates may be included inside the **type** parameter. Type applies to each item rather then the whole component. 
 
-1 . First you should create type with the webix.type constructor. It is created for the specified UI component: 
+1 . First you should create a type with the `webix.type` constructor. It is created for the specified UI component: 
 
 ~~~js
-webix.type(webix.ui.dataview,{
-    name:"typeA",
+webix.type(webix.ui.dataview, {
+    name: "typeA",
     template: "<div class=''>#rank#.</div>"+
             "<div class='title'>#title#</div>"+
             "<div class='year'>#year# year</div>"
 });
 ~~~ 
-2 . Then you define the type **name** as value of template property for this component:
+2 . Then you define the `type` to be the **name** field of the `type` you've created for this component:
 ~~~js
 webix.ui({       
- 	view: "dataview",
- 	type: "typeA", //name of the new object created in the first step
- 	...
+    view: "dataview",
+    type: "typeA",  // name of the webix.type object created in the first step
+    ...
 });
 ~~~
 
@@ -243,7 +247,7 @@ See the corresponding article to learn more about [type implementation](desktop/
 
 ###HTML Container with Data Template
 
-The template may be defined inside an **html-container** and referred to as a value of a template parameter: 
+The template may be defined inside an **html-container** and referred by its id:
 
 ~~~html
 <textarea id="template_container" rows="5" cols="60" style="margin-left:20px">
@@ -256,9 +260,9 @@ The template may be defined inside an **html-container** and referred to as a va
     
 <script>
 webix.ui({       
- 	view: "dataview",
-	template:"html->template_container", //look at the textarea id
-	...
+    view: "dataview",
+    template: "html->template_container", // lookup the textarea by id and fetch its contents
+    ...
 });
 <script>
 ~~~
@@ -267,7 +271,7 @@ webix.ui({
 
 ###External HTML template
 
-Template can be defined in some external file. In this case, **template** parameter will get a link to this file.
+Templates can be defined in external files. The **template** parameter will be a link to this file, prefixed by `http->`:
 
 ~~~js
 webix.ui({
@@ -287,18 +291,24 @@ The file contents (an HTML template from the example above):
 </div>
 ~~~
 
+Note that these HTTP requestes are not cached. If you use the same template repeatedly, it's better to retrieve it via AJAX and store it in a variable:
+
+~~~js
+var objectDetailTemplate = webix.ajax().sync().get('template.html').responseText;
+~~~
+
 {{sample 06_dataview/02_templates/04_external.html }}
 
 ###Template Function
 
-Template may as well contain a **function** that specifies the info to show: 
+`template` may as well be **function** that returns the string to render. No #-interpolation will take place in this case; you have to interpolate variables on your own.
 
 ~~~js
 ...
-template:function(obj){
-	return "<div class='overall'><div class='rank'>"+obj.rank+".</div>"+
-      "<div class='title'>"+obj.title+"</div>"+
-      "<div class='year'>"+obj.year+" year</div> </div>";
+template: function (obj) {
+    return "<div class='overall'><div class='rank'>" + obj.rank + ".</div>" +
+      "<div class='title'>" + obj.title + "</div>" +
+      "<div class='year'>" + obj.year + " year</div> </div>";
 }
 ~~~
 
@@ -310,20 +320,20 @@ template:function(obj){
 
 ## XSS Safe templates
 
-By default, templates markers will be replaced with a value of data without any processing. If you have an HTML data in the data object, it will placed in the template.
-In most cases this is an advantage, but sometimes it may be necessary to output such data as text, not a html 
+By default, `#...#` templates placeholders will be replaced with the data value without any processing. If you have HTML data in the data object, it will placed in the template.
+In most cases this is an advantage, but sometimes it may be necessary to output such data as text, not a HTML:
 
-- when you have text data with html special chars ( < > & characters ) 
-- when you are not sure is data safe or not ( was entered by the user ) 
+- when you have text data with special HTML characters (`<`, `>`, and `&`)
+- when you are not sure is the data safe or not (e.g. was entered by the user)
 
-In such cases you can use a bit different syntax
+In such cases you can add a `!` after the opening `#`:
 
 ~~~js
 {
-  template:"My #data#" // will output data as HTML content 
+  template: "My #data#" // will output data as HTML content 
 },
 {
-  template:"My #!data#" // will output data as Text content 
+  template: "My #!data#" // will output data as Text content 
 },
 ~~~
 
