@@ -200,7 +200,7 @@ When you click list item styled with **info** CSS class, the item won't be selec
 
 The same pattern is true for other pairs of properties. 
 
-##Rooting Events from One Component to Another
+##Routing Events from One Component to Another
 
 If you have already attached an event to the component and described the function that this event triggers, you can attach this event to another component in your app. 
 
