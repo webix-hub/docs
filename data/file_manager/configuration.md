@@ -132,7 +132,7 @@ menu.clearAll();
 menu.load("data/menu.json");
 ~~~
 
-The add() method (link) allows to add a new action to menu:
+The api/link/ui.proto_add.md method allows adding a new action to menu:
 
 ~~~js
 actions.add({id: "myAction", icon: "file", value: "My Action"});
@@ -147,7 +147,7 @@ actions.attachEvent("onItemClick", function(id){
 });
 ~~~
 
-To remove an existing action you can call remove() method for it:
+To remove an existing action you can call api/link/ui.proto_remove.md method for it:
 
 ~~~js
 menu.remove("upload");
@@ -351,7 +351,7 @@ var fManager = new webix.ui({
 					return "Added";
 				}
 			 };
-             // insert teh column
+             // insert the column
 			 columns.splice(2,0,newColumn);
 		  }
 	   }
@@ -413,7 +413,7 @@ Adding a custom mode
 --------------------
 
 There's a possibility to create a custom mode of displaying files in the Files view. 
-The example below will illustrate the idea of creating a new mode based on List view (link to List docs):
+The example below will illustrate the idea of creating a new mode based on desktop/list.md view:
 
 ~~~js
 webix.ui({

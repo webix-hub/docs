@@ -6,60 +6,59 @@ Methods
 
 ###getUploader
 
-returns the uploader object?
+gets the uploader object
 
 ~~~js
-fmanager.getUploader();
-~~~
-
-    
-###updateStructure
-
-updates the structure of File Manager
-
-~~~js
-fmanager.updateStructure();
-~~~    
+var uploader = fmanager.getUploader();
+~~~   
 
 
 ###getMenu
 
-returns the context menu object
+gets the popup menu object
 
 ~~~js
-fmanager.getMenu();
+var menu = fmanager.getMenu();
 ~~~    
    
    
 ###getPath    
 
-returns an array of folders' ids in a path 
+gets an array of folders' ids in a path 
   
 ~~~js
-fmanager.getPath(id);
+var pathIds = fmanager.getPath();
+
+// or
+
+var pathIds = fmanager.getPath(id);
 ~~~    
    
 params:
 
-- id - {string} the id of the selected folder
+- id - {string} the id of the selected folder (optional)
  
  
 ###getPathNames
 
-returns an array of folders' names in a path
+gets an array of folders' names in a path
 
 ~~~js
-fmanager.getPathNames(id);
+var pathNames = fmanager.getPathNames();
+
+// or 
+
+var pathNames = fmanager.getPathNames(id);
 ~~~		
 
 params:
 
-- id - {string} the id of the selected folder
+- id - {string} the id of the selected folder (optional)
  
  
 ###setPath        
     
-sets the path to the currently selected folder
+selects a certain folder and sets path values for it 
 
 ~~~js
 fmanager.setPath(id);
@@ -67,268 +66,411 @@ fmanager.setPath(id);
 		
 params:
 
-- id - {string} the id of the selected folder
+- id - {string} a folder id
+
 
 
 
 ###getSearchData
 
-returns the results of file's searching
+gets an array of items (files, folders) that contains text in their names
 
 ~~~js
-fmanager.getSearchData(id,value);
+var result = fmanager.getSearchData(id,text);
 ~~~
 
 params:
 
-- id - {string} the id of the found file/folder
-- value - {}
-
-{
-		var found = [];
-		this.data.each(function(obj){
-			var text = this.config.templateName(obj);
-			if(text.toLowerCase().indexOf(value.toLowerCase())>=0){
-				found.push(webix.copy(obj));
-			}
-		},this,true,id);
-		return found;
-	},
-    
-    
-	showSearchResults: function(value){
-		this.callEvent("onShowSearchResults",[]);
-		var data = 	this.getSearchData(this.getCursor(),value);
-		this.$searchResults = true;
-		if(this.$$(this.config.mode).filter){
-			this.$$(this.config.mode).clearAll();
-			this.$$(this.config.mode).parse(data);
-		}
-	},
-    
-    
-	hideSearchResults: function(){
-		this.callEvent("onHideSearchResults",[]);
-		this.$searchResults = false;
-		var id = this.getCursor();
-		this._cursor = null;
-		this.setCursor(id);
-	},
-    
-    
-	goBack: function(step){
-		step = (step?(-1)*Math.abs(step):-1);
-		return this._changeCursor(step);
-	},
-    
-    
-	goForward: function(step){
-		return this._changeCursor(step||1);
-	},
-    
-    
-	levelUp: function(id){
-		id = id||this.getCursor();
-		if(id){
-			id = this.getParentId(id);
-			this.setCursor(id);
-		}
-	},
-    
-    
-	markCopy: function(ids){
-		if(ids){
-			if(!webix.isArray(ids)){
-				ids = [ids];
-			}
-			this._moveData = ids;
-			this._copyFiles = true;
-		}
-	},
-    
-    
-	markCut: function(ids){
-		if(ids){
-			if(!webix.isArray(ids)){
-				ids = [ids];
-			}
-			this._moveData = ids;
-			this._copyFiles = false;
-		}
-	},
-    
-    
-	pasteFile: function(id){
-		if(webix.isArray(id)){
-			id = id[0];
-		}
-		if(id){
-			id = id.toString();
-			if(this.data.branch[id]&&this.getItem(id).type == "folder"){
-				if(this._moveData){
-					if(this._copyFiles){
-						this.copyFile(this._moveData,id);
-					}
-					else
-						this.moveFile(this._moveData,id);
-				}
-			}
-		}
-	},
-    
-    
-	download:function(id){
-		var url = this.config.handlers.download;
-		if (url)
-			webix.send(url, { action:"download", source: id });
-	},
-    
-    
-	copyFile:function(source, target){
-		if(typeof(source) == "string"){
-			source = source.split(",");
-		}
-		if(!webix.isArray(source)){
-			source = [source];
-		}
-		for(var i=0; i<source.length; i++){
-			this.move(source[i].toString(),0,this,{parent:target,copy:true});
-		}
-		this.refreshCursor();
-
-		var url = this.config.handlers["copy"];
-		if (url){
-			this._makeSaveRequest(url,{ action:"copy", source:source.join(","), target: target });
-		}
-
-	},
-    
-    
-	moveFile:function(source, target){
-		if(typeof(source) == "string"){
-			source = source.split(",");
-		}
-		if(!webix.isArray(source)){
-			source = [source];
-		}
-		for(var i=0; i<source.length; i++){
-			this.move(source[i].toString(),0,this,{parent:target,copy:false});
-		}
-		this.refreshCursor();
-		var url = this.config.handlers["move"];
-
-		if (url){
-			this._makeSaveRequest(url,{ action:"move", source:source.join(","), target: target });
-		}
-	},
-    
-    
-	deleteFile:function(ids){
-		if(typeof(ids) == "string"){
-			ids = ids.split(",");
-		}
-		if(!webix.isArray(ids)){
-			ids = [ids];
-		}
-		for(var i=0; i<ids.length; i++){
-			var id = ids[i];
-			if(id == this.getCursor())
-				this.setCursor(this.getFirstId());
-			if(id)
-				this.remove(id);
-		}
-		this.refreshCursor();
-
-		var url = this.config.handlers["delete"];
-		if (url){
-			this._makeSaveRequest(url,{ action:"delete", source:ids.join(",") });
-		}
-	},
-
-	createFolder: function(id){
-		if(typeof(id) == "string"){
-			id = id.split(",");
-		}
-		if(webix.isArray(id)){
-			id = id[0];
-		}
-		if(id){
-			id = ""+id;
-			var item = this.getItem(id);
-			if(!this.data.branch[id] && (item.type != "folder")){
-				id = this.getParentId(id);
-			}
-			var obj = this.config.templateCreate(item);
-			id = ""+id;
-			var sourceId = this.add(obj, 0, id);
-			this.refreshCursor();
+- id - {mixed}  the id of the folder where the text is searched
+- text - {string} searched text 
 
 
-			var url = this.config.handlers["create"];
-			if (url){
-				obj.source = sourceId;
-				obj.action = "create";
-				obj.target = id;
-				this._makeSaveRequest(url,obj,function(requestData,responseData){
-					if(responseData.id){
-						this.data.changeId(requestData.id,responseData.id);
-					}
-				});
-			}
-		}
-	},
     
-    
-	editFile: function(id){
-		if(webix.isArray(id)){
-			id = id[0];
-		}
-		if(this.getActiveView().edit)
-			this.getActiveView().edit(id);
+###showSearchResults
 
-	},
-    
-    
-	renameFile: function(id,name,field){
-		var item = this.getItem(id);
-		field = (field||"value");
-		item[field] = name;
-		this.refreshCursor();
-		this.callEvent("onFolderSelect",[this.getCursor()]);
+searches text and displays results on the screen
 
-		var url = this.config.handlers.rename;
-		if (url){
-			var obj = { source:id, action:"rename", target: name};
-			this._makeSaveRequest(url,obj,function(requestData,responseData){
-				if(responseData.id){
-					this.data.changeId(requestData.id,responseData.id);
-				}
-			});
-		}
-	},
-    
-    
-    getActiveView: function(){
-		return this._activeView;
-	},
-    
-    
-	getActive: function(){
-		var selected = this.$$(this.config.mode).getSelectedId(true);
-		var selectedIds = [];
+~~~js
+fmanager.showSearchResults(text);
+~~~
 
-		if(!webix.isArray(selected))
-			selectedIds = selected.toString();
-		else
-			for(var i=0; i < selected.length; i++){
-				selectedIds.push(selected[i].toString());
-			}
-		return selectedIds.length?selectedIds:this.getCursor();
-	},
+params:
+
+- text - {string} searched text 
+
     
-    uploadFile: function(id){
-		var uploader = this.getUploader();
-		this._uploaderFolder = id;
-		if(uploader)
-			uploader.fileDialog();
-	},
+###hideSearchResults  
+
+hides search results
+
+~~~js
+fmanager.hideSearchResults();
+~~~
+    
+###goBack 
+
+goes back in the navigation history
+
+~~~js
+fmanager.goBack(step);
+~~~
+	
+params:
+
+- step - {number} the number of steps back (1 by default) 
+
+###goForward
+
+goes forward in the navigation history
+
+~~~js
+fmanager.goForward(step);
+~~~
+
+params:
+
+- step - {number} the number of steps forward (1 by default)  
+
+    
+ 
+###levelUp 
+
+selects the parent folder
+
+~~~js
+fmanager.levelUp(id);
+~~~
+
+- id - {string} the id of the selected file/folder
+    
+    
+###markCopy  
+
+
+preselected files/folders for copy operation
+
+~~~js
+fmanager.markCopy(id);
+~~~
+
+- id - {string,array} ids of files for copying
+    
+
+###markCut
+
+preselected files/folders for move operation
+
+~~~js
+fmanager.markCut(id);
+~~~
+
+- id - {string,array} ids of files for moving
+    
+
+###pasteFile
+
+pastes files/folders that were selected for copying or moving
+
+~~~js
+fmanager.pasteFile(id)
+~~~
+	
+params:
+
+- id - {mixed} the id of the folder where copyed or cut files will be pasted
+    
+
+###download
+
+downloads the selected file
+
+~~~js
+fmanager.download(id);
+~~~
+	
+- id - {string} the id of the downloaded file
+
+
+###copyFile
+
+copies a selected file/folder 
+
+~~~js
+fmanager.copyFile(source,target);
+~~~
+
+params:
+
+- source - {string, array} the copied items ids
+- target - {string} the id of the folder where the items are copied to
+    
+###moveFile
+
+moves a selected file/folder
+
+~~~js
+fmanager.moveFile(source,target);
+~~~
+
+params:
+
+- source - {string} the moved file's id (or an array of ids in case of multiple files)
+- target - {string} the id of the folder where the file(s) is moved to
+    
+
+###deleteFile
+
+deletes items by their ids
+
+~~~js
+fmanager.deleteFile(ids);
+~~~
+
+params:
+
+- ids - {string, array} the ids of items that will be deleted    
+
+###createFolder   
+
+creates a new folder
+
+~~~js
+fmanager.createFolder(targetId);
+~~~
+
+params:
+
+- targetId - an id of parent folder where a new folder will be created (templateCreate is applied automatically)
+
+###editFile
+
+opens editor for a certain item in the active view (Tree or Files view)
+
+~~~js
+fmanager.editFile(id);
+~~~
+
+params:
+
+- id - id of the file/folder for editing
+    
+    
+###renameFile
+
+renames a folder/file:
+
+~~~js
+fmanager.renameFile(id,name,property);
+~~~
+
+params:
+
+- id - {string} the id of the folder/file that should be renamed
+- name - {string} a new filename
+- property - {string} "value" by default, the property of a file/folder object that contains filename
+    
+    
+###getActiveView
+
+returns a reffrence to the active view (Tree or Files view)
+
+~~~js
+var view = fmanager.getActiveView();
+~~~
+ 
+###getActive
+
+returns ids of active items 
+
+~~~js
+var ids = fmanager.getActive();
+~~~
+  
+###uploadFile
+
+opens a file upload dialog
+
+~~~js
+fmanager.uploadFile(target);
+~~~
+
+- target - the id of the folder where a file will be uploaded
+
+Properties
+----------------
+
+###handlers
+
+specifies server-side scripts that will be called by request to the server
+
+~~~js
+webix.ui({
+	view:"filemanager",
+    handlers:{
+    	"upload"    : "data/saving.php",
+       	"download"  : "data/saving.php",
+         ...
+    }
+});
+~~~
+
+###icons
+
+defines an array of icons for File Manager
+
+~~~js
+webix.ui({
+	view:"filemanager",
+    id:"files",
+    icons: {
+		folder: "folder",
+		doc: "file-word-o",
+		...
+	}
+});
+~~~
+
+
+###mode
+
+defines the id of the selected view
+
+~~~js
+webix.ui({
+	view:"filemanager",
+    id:"files",
+    mode: "table"
+    ...
+});
+~~~
+
+###modes
+
+specifies the array of modes in the File view
+
+~~~js
+webix.ui({
+	view:"filemanager",
+    id:"files",
+    modes: ["files","table"]
+    ...
+});
+~~~
+
+###readonly
+
+sets readonly mode for File Manager
+
+~~~js
+webix.ready(function(){
+	webix.ui({
+		view:"filemanager",
+        readonly: true,
+        url:"../common/data.php"
+	});
+});
+~~~
+
+###structure
+
+configures the structure of File Manager
+
+~~~js
+webix.ui({
+	view:"filemanager",
+    id:"files",
+    structure:{...} 
+    ...
+});
+~~~
+
+###templateCreate  
+
+defines a template for the newly created folder
+
+~~~js
+templateCreate: function(){
+    return {value: "newFolder", type: "folder", date: new Date()};
+}
+~~~
+
+###templateDate 
+
+defines a template applied for the format of folder/file's date of modification
+
+~~~js
+templateDate: function(obj){
+    var date = obj.date;
+    if(typeof(date) != "object"){
+        date = new Date(parseInt(obj.date,10)*1000);
+    }
+    return webix.i18n.fullDateFormatStr(date);
+}
+~~~
+
+###templateIcon 
+
+defines a template for icons that can be customized (used in "files" and "table" views)
+
+~~~js
+templateIcon: function(obj,common){
+    return "<span class='webix_icon webix_fmanager_icon fa-"
+        +(common.icons[obj.type]||common.icons["default"])+"'></span>";
+},
+~~~
+
+
+###templateName 
+
+defines a template applied for the folder/file's name
+
+~~~js
+templateName: webix.template("#value#"),
+~~~
+
+
+###templateSize
+
+defines a template applied for the file size
+
+~~~js
+templateSize: function(obj){
+    var value = obj.size;
+    var labels = webix.i18n.filemanager.sizeLabels;
+    var pow = 0;
+    while(value/1024 >1){
+        value = value/1024;
+        pow++;
+    }
+    var isInt = (parseInt(value,10) == value);
+ 
+    var format = webix.Number.numToStr({
+        decimalDelimiter:webix.i18n.decimalDelimiter,
+        groupDelimiter:webix.i18n.groupDelimiter,
+        decimalSize : isInt?0:webix.i18n.groupSize
+    });
+ 
+    return format(value)+""+labels[pow];
+}
+~~~
+
+
+###uploadProgress
+
+defines the object with configuration of progress bar that appears during the upload
+
+~~~js
+webix.ui({
+	view:"filemanager",
+    id:"files",
+    uploadProgress: {
+		type:"top",
+        delay:3000,
+        hide:true
+	}
+});
+~~~
+
+
+
+

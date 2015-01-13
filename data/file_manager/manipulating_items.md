@@ -58,55 +58,42 @@ Renaming folders/files
 To move rename a folder/file, use the renameFile() method:
 
 ~~~js
-fmanager.renameFile(id,name,property);
+fmanager.renameFile("file1","newFile.txt");
 ~~~
 
-params:
 
-- id - {string} the id of the folder/file that should be renamed
-- name - {string} a new filename
-- property - {string} "value" by default, the property of a file/folder object that contains filename
 
 
 Creating a new folder
 ---------------
 
-To create a folder, use the createFolder() method:
+To create a folder, use the createFolder() method. You need to pass an id of the folder 
+where you want to create a new folder and templateCreate will apply other properties automatically:
 
 ~~~js
-fmanager.createFolder(target);
+fmanager.createFolder("folder1");
 ~~~
 
-params:
-
-- target - an id of parent folder where a new folder will be created (templateCreate is applied automatically)
 
 
 Downloading files
 ---------------------
 
-To download a file, use the download() method: 
+To download a file, you need to call the download() method and pass the file id to it: 
 
 ~~~js
-fmanager.download(source);
+fmanager.download("myfile");
 ~~~
 
-params:
-
-- source - {string} the downloaded file's id
 
 Uploading files
 ----------------
 
-To call a file upload dialog, use the uploadFile() method:
+To open a file upload dialog, use the uploadFile() method:
 
 ~~~js
-fmanager.uploadFile(target);
+fmanager.uploadFile("myfolder");
 ~~~
-
-- target - the id of the folder where a file will be downloaded
-
-
 
 
 Drag-and-drop
