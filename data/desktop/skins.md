@@ -1,17 +1,18 @@
 Skins
 ===================
-Webix provides 8 skins that you can use to change the overall look of your application:
+Webix provides 11 skins that you can use to change the overall look of your application:
 
 1. [Flat (default skin)](desktop/skins.md#flat)
-2. [Air](desktop/skins.md#air)
-3. [AirCompact](desktop/skins.md#aircompact)
-4. [Clouds](desktop/skins.md#clouds)
-5. [Compact](desktop/skins.md#compact) 
-6. [Glamour](desktop/skins.md#glamour)
-7. [Light](desktop/skins.md#light)
-8. [Metro](desktop/skins.md#metro)
-9. [Terrace](desktop/skins.md#terrace)
-10. [Touch](desktop/skins#touch)
+2. [Compact](desktop/skins.md#compact) 
+3. [Touch](desktop/skins.md#touch)
+
+4. [Air](desktop/skins.md#air)
+5. [Air Compact](desktop/skins.md#aircompact)
+6. [Clouds](desktop/skins.md#clouds)
+7. [Glamour](desktop/skins.md#glamour)
+8. [Light](desktop/skins.md#light)
+9. [Metro](desktop/skins.md#metro)
+10. [Terrace](desktop/skins.md#terrace)
 11. [Web](desktop/skins.md#web)
 
 Each skin requires including its specific CSS file. 
@@ -35,6 +36,38 @@ Applying the 'Flat' skin to the app
 <img style="margin: 20px auto 20px auto;display: block;box-shadow: #D8D8D8 0px 0px 7px 1px;" src="desktop/skins/flat_skin.png"/>
 
 
+
+Compact
+--------
+To apply the **Compact** skin, include the *compact.css* file:
+
+{{snippet
+Applying the 'Compact' skin to the app
+}}
+~~~js
+<script src="../codebase/webix.js"></script>   
+<link href="../codebase/skins/compact.css" rel="stylesheet" type="text/css"> 
+~~~
+
+<img style="margin: 20px auto 20px auto;display: block;box-shadow: #D8D8D8 0px 0px 7px 1px;" src="desktop/skins/compact_skin.png"/>
+
+
+Touch 
+------------------------
+To apply the **Touch** skin, include the *touch.css* file:
+
+{{snippet
+Applying the 'Touch' skin to the app
+}}
+~~~js
+<script src="../codebase/webix.js"></script>   
+<link href="../codebase/touch.css" rel="stylesheet" type="text/css"> 
+~~~
+
+
+<img style="margin: 20px auto 20px auto;display: block;box-shadow: #D8D8D8 0px 0px 7px 1px;" src="desktop/skins/touch_skin.png"/>
+
+
 Air 
 ------------------------
 To apply the **Air** skin, include the *air.css* file:
@@ -50,7 +83,7 @@ Applying the 'Air' skin to the app
 
 <img style="margin: 20px auto 20px auto;display: block;box-shadow: #D8D8D8 0px 0px 7px 1px;" src="desktop/skins/air_skin.png"/>
 
-AirCompact
+Air Compact
 ---------------------------
 To apply the **AirCompact** skin, include the *aircompact.css* file:
 
@@ -78,19 +111,6 @@ Applying the 'Clouds' skin to the app
 
 <img style="margin: 20px auto 20px auto;display: block;box-shadow: #D8D8D8 0px 0px 7px 1px;" src="desktop/skins/clouds_skin.png"/>
 
-Compact
---------
-To apply the **Compact** skin, include the *compact.css* file:
-
-{{snippet
-Applying the 'Compact' skin to the app
-}}
-~~~js
-<script src="../codebase/webix.js"></script>   
-<link href="../codebase/skins/compact.css" rel="stylesheet" type="text/css"> 
-~~~
-
-<img style="margin: 20px auto 20px auto;display: block;box-shadow: #D8D8D8 0px 0px 7px 1px;" src="desktop/skins/compact_skin.png"/>
 
 
 
@@ -152,20 +172,6 @@ Applying the 'Terrace' skin to the app
 
 <img style="margin: 20px auto 20px auto;display: block;box-shadow: #D8D8D8 0px 0px 7px 1px;" src="desktop/skins/terrace_skin.png"/>
 
-Touch 
-------------------------
-To apply the **Touch** skin, include the *touch.css* file:
-
-{{snippet
-Applying the 'Touch' skin to the app
-}}
-~~~js
-<script src="../codebase/webix.js"></script>   
-<link href="../codebase/touch.css" rel="stylesheet" type="text/css"> 
-~~~
-
-
-<img style="margin: 20px auto 20px auto;display: block;box-shadow: #D8D8D8 0px 0px 7px 1px;" src="desktop/skins/touch_skin.png"/>
 
 Web
 --------------------------------------

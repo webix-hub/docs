@@ -75,7 +75,7 @@ templateCreate: function(){
 },
 ~~~
 
-<h3 id="templateicons">templateIcons</h3>
+<h3 id="templateicon">templateIcon</h3>
 
 Customizable template for icons in "files" and "table" views.
 

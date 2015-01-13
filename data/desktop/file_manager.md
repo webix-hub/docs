@@ -21,6 +21,8 @@ Besides, you can upload and download files and search a necessary file among fol
                 <li>file_manager/loading_data.md</li>
                 <li>file_manager/templates.md</li>
                 <li>file_manager/configuration.md</li>
+                <li>file_manager/styling.md</li>
+                <li>file_manager/localization.md</li>
             </ul>
 		</td>
 		<td class='topic_description' onclick="displaySubList('design')">Discusses the main points of File Manager initialization and customization.</td>
@@ -49,6 +51,8 @@ Besides, you can upload and download files and search a necessary file among fol
 - file_manager/loading_data.md
 - file_manager/templates.md
 - file_manager/configuration.md
+- file_manager/styling.md
+- file_manager/localization.md
 - file_manager/manipulating_items.md
 - file_manager/work_with_data.md
 - file_manager/events.md
