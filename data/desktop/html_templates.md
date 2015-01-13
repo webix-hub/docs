@@ -261,7 +261,8 @@ The template may be defined inside an **html-container** and referred by its id:
 <script>
 webix.ui({       
     view: "dataview",
-    template: "html->template_container", // lookup the textarea by id and fetch its contents
+    // lookup the textarea by id and fetch its contents
+    template: "html->template_container", 
     ...
 });
 <script>
@@ -271,7 +272,7 @@ webix.ui({
 
 ###External HTML template
 
-Templates can be defined in external files. The **template** parameter will be a link to this file, prefixed by `http->`:
+Templates can be defined in external files. The **template** parameter will be a link to this file, prefixed by **http->**:
 
 ~~~js
 webix.ui({

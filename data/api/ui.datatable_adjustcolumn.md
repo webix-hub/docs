@@ -7,7 +7,7 @@ adjustColumn
 
 @params:
 - id	string, number		columnID
-* header	string 	adjustment mode ("header", "data");
+* header	string 	adjustment mode ("header", "data", "all");
 	
 
 @example:
@@ -27,7 +27,8 @@ datatable.adjustColumn("title", "header");
 
 Adjustment modes: 
 
-- "header" - adjusts the column to the width of its header;
-- "data" (default)	- adjusts the column to the width of its content
+- **header** - adjusts the column to the width of its header;
+- **data** (default)	- adjusts the column to the width of its content;
+- **all** - combines the above mentioned modes and adjusts the column to the bigger value. 
 
 
