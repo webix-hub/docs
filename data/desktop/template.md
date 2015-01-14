@@ -9,6 +9,10 @@ Ui-related **template** looks like a non-editable area for rendering plain text 
 
 ##Initialization
 
+###Simple template
+
+The **template** property of the component sets its content: 
+
 ~~~js
 webix.ui({
 	view:"template",
@@ -20,17 +24,48 @@ webix.ui({
 80_docs/default_template.html
 }}
 
-Template's content can be as well defined by the **content** property that points to an HTML container by its ID. As a result, contents from HTML is
-placed inside the view: 
+##External Template
+
+Template's content can as well be taken from an HTML node pointed to by:
+
+
+- the **content** property that links to a visible container: 
+
+~~~html
+<div id="myDiv">Default Template with some text inside</div>
+~~~
 
 ~~~js
-<div id="myDiv">Default Template with some text inside</div>
-
 webix.ui({
 	view:"template",
 	content:"myDiv"
 }); 
 ~~~
+
+{{sample 80_docs/default_template.html }}
+
+- the **template** property that points to the container ID prefixed by "html->". The container should be invisible initially:
+
+~~~html
+<div id="my_box1" style='display:none;'> Some text here </div>
+~~~
+
+~~~js
+{ template:"html->my_box1", autoheight:true},
+~~~
+
+{{sample 04_template/02_autoheight.html}} 
+
+
+As a result, contents from HTML is placed inside the view. 
+
+##Loaded Template
+
+~~~js
+{ view:"template", src:"loadtext.php"} 
+~~~
+
+###Setting Content Dynamically
 
 Dymanic content setting can be implemented with the [setContent](api/ui.template_setcontent.md) method.
 
@@ -76,9 +111,10 @@ Template content is set with the **template** property that can be:
 //shows "Image One"
 ~~~
 
-Above, template property contains **data key** in **hash** signs to define which data from the data record should be displayed. 
+If a template is used as a single-data component (as shown above) the data fields should be interpolated in either fo the two ways: 
 
-In some cases, **template** property of template component can be a **function**:
+- using string template containing **data keys** in **hash** signs to define which data from the data record should be displayed;
+- using template **function** that takes data record (obj) as parameter:
 
 ~~~js
 {
@@ -90,6 +126,10 @@ In some cases, **template** property of template component can be a **function**
 ~~~
 
 {{sample 26_carousel/01_init.html}}
+
+{{note
+The rules of data templating can be studied in detail in the [dedicated documentation article](desktop/html_templates.md). 
+}}
        
 ##Template Types
 

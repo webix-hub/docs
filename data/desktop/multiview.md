@@ -5,7 +5,8 @@ Multiview
 
 Multiview  helps you rationally use space on the page by placing different views into one and the same area. Only one view is visible at a time the others accessable with the help of dedicated buttons. 
 
-Multiview inherits from [layout](desktop/layout.md).
+Multiview inherits from [layout](desktop/layout.md) and if combined with a switching control like a [tabbar](desktop/controls.md#tabbar),
+form a [tabview](desktop/tabview.md).
 
 <br>
 

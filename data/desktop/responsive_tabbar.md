@@ -40,8 +40,8 @@ Customized tabbar
     moreTemplate:"Show more", 
     //or moreTemplate:function(){ return "Show more" },
     popupWidth:250,
-    popupTemplate:"#text#"
-    yCount:10
+    popupTemplate:"#text#",
+    yCount:10,
     options:[
     	{id:1, value:"First Tab", text:"Some text for first tab"},
         {id:2, value:"Second Tab", text:"Some text for second tab"}
