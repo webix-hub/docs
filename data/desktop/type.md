@@ -9,7 +9,11 @@ Type is applicable to the following data components:
 - [dataview](desktop/dataview.md);
 - [list](desktop/list.md);
 - [grouplist](desktop/grouplist.md);
-- [unitlist](desktop/unitlist.md).
+- [unitlist](desktop/unitlist.md);
+- [menu](desktop/menu.md);
+- [tree](datatree/index.md);
+- [datatable](datatable/index.md) and [treetable](desktop/treetable.md) to define 
+[common properties](desktop/type.md#definingcommonelements) for cells; 
 
 Webix **item type** is an object that is constructed of parameters you'd like to apply to each item of the component. These parameters can be native properties of Webix components or used-defined.
 
@@ -34,9 +38,25 @@ webix.ui({
 		height: 90,
 		css: "movie"
 	}
-})
+});
 ~~~
 {{sample 06_dataview/02_templates/01_jshtml.html }}
+
+{{note 
+Note that the template set for the whole component will override the template defined within the component **type**.
+}}
+
+~~~js
+// the "#rank#. #value#" template will be used
+webix.ui({
+	view: dataview,
+    template: "#rank#. #value#",
+    data: ... ,
+    type:{ 
+		template: "<div class='rank'>#rank#.</div><div class='title'>#title#</div>",
+	}
+});
+~~~
 
 At the same time you can define the type separately by using **webix.type constructor** and then apply it to the necessary component: 
 
@@ -58,7 +78,7 @@ webix.ui({
 
 {{sample 06_dataview/02_templates/05_named.html }}
 
-###Defining Common Elements
+##Defining Common Elements
 
 Common elements can be included in either of the two ways: 
 
@@ -81,7 +101,7 @@ webix.ui({
 	view:"list",
 	template:"#rank#. #title# {common.itemYear()}",
 	type:{
-		itemYear:function(obj){
+		itemYear:function(obj, common){
        		if(obj.year>=2000){
        	   		return "<span class='newtime'>"+obj.year+"</span>";
        		} else if(obj.year<1970){
@@ -96,6 +116,13 @@ webix.ui({
 {{sample 05_list/17_advanced_template.html}}
 
 The **type** function takes item object as parameter, so all its properties are accessible in it. 
+
+{{note
+[Datatable](datatable/index.md) and [treetable](desktop/treetable.md) already feature some common elements out of the box. 
+}}
+
+- [Datatable built-in type templates](datatable/templates.md#builtintemplates);
+- [Treetable biult-in type templates](datatree/node_templates.md#predefinedtemplates).
 
 ##Redefining default template elements
 

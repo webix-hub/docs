@@ -8,30 +8,7 @@ template
 
 @example:
 
-{view:"template", type:"header", template:"This is a List Header"}
-~~~
-1 . Above is hte common **text template** for [template](desktop/template.md) component:
-
-2 . **Data template** for data-containing components:
-
-~~~js
-{view:"list", 
- data:"data.xml",
- template:"#id#.#title#",
- ..list config
- }
- // the list will show ID and title of each data item from the specified datasource
-~~~
-
-3 . **Function template** (takes data object and function parameter):
-
-~~~js
-template:function(obj){
-            return "<div class='overall'><div class='rank'>"+obj.rank+".</div>
-                <div class='title'>"+obj.title+"</div>
-                </div>"
-                }
-//the list will show rank and title of each item styled with specified CSS
+{view:"list", template:"#id#.#title#"}
  
 @template:	api_config
 
@@ -46,22 +23,41 @@ template:function(obj){
 @defined:	AtomRender	
 @descr:
 
-Sometimes, you can define the look-and-feel of your component/control with the help of a **template** property.
+
+1 . Above is the common **text template** for [template](desktop/template.md) component:
+
+2 . **Data template** for data-containing components:
 
 ~~~js
-//template for the password field
-webix.ui({
-	view:"input", 
-    ...
-    template:function(config){ return (config.label + "&nbsp" || "label") + 
-"<input type='password' maxlength=" + (config.maxLength || 30) + " style='width:" + 
-(config.inputWidth || 100) + "px'>" + (config.value || "") + "</input>" }
+{ view:"list", template:"#id#.#title#" }
+ // the list will show ID and title of each data item from the specified datasource
 ~~~
 
-As a parameter, the function takes the configuration object of the component.
+3 . **Function template** (takes data object and function parameter):
 
-Use the property ONLY if you need to provide some custom behaviour and **be very careful** since once you have
-set the property, the default processing will be cancelled and you will need to provide all
-behaviour and appearance by yourself.
+~~~js
+{ view:"list", template:function(obj){
+    return "<div class='overall'><div class='rank'>"
+    	+obj.rank+"</div>"+
+        "<div class='title'>"+obj.title+"</div></div>"
+}}
+//the list will show rank and title of each item styled with specified CSS
+~~~
 
-The process of creating the custom components is described [here](desktop/custom_component.md). 
+4 . HTML templates defined within an **HTML container**:
+
+~~~js
+{ view: "dataview", template:"html->template_container" }
+~~~
+
+5 . HTML template defined in the **external file**:
+
+~~~js
+{ view:"dataview", template:"http->template.html" }
+~~~
+
+6 . Template component can load the external template by Ajax: 
+
+~~~js
+{ view:"template", src:"loadtext.php" }
+~~~

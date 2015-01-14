@@ -24,7 +24,9 @@ tree.attachEvent("onDataRequest", function (id, callback, url) {
 
 @descr:
 
-Note that dynamic loading for tree-like structures is triggered for nodes featuring **webix_kids** flag. If so, the api/link/ui.treetable_loadbranch.md function is automatically called. 
+Note that dynamic loading for tree-like structures is triggered for nodes featuring **webix_kids** flag. If so, the api/link/ui.treetable_loadbranch.md function is automatically called. The  component will use the datasource 
+specified either by its api/link/ui.tree_url_config.md property or in
+the api/link/ui.tree_load.md method with extra parameters. 
 
 When studying the related samples, pay attention that during initial loading data is returned 
 with the **webix_kids** property:

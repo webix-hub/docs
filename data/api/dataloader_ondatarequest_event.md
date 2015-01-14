@@ -23,3 +23,9 @@ dtable.attachEvent("onDataRequest", function(start, count){
 @template:	api_event
 @descr:
 
+Dynamic loading for plain structure is triggered during scrolling and paging. 
+
+The component will use the datasource specified by its 
+api/atomdataloader_url_config.md property or in the 
+api/atomdataloader_load.md method with extra parameters. 
+

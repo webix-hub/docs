@@ -83,7 +83,8 @@ Each object in the array specifies a single column. An object can take the follo
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>fillspace</b> </td>
-			<td>(<i>bool</i>) forces the column to widen for filling the unused table space</td>
+			<td>(<i>boolean, number</i>) forces the column to widen for filling the unused table space.<br><br>            	In case of numeric values other than 1 the columns will distribute the available space proportionally according to the numbers.  
+            </td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>format</b></td>

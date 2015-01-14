@@ -232,7 +232,7 @@ webix.type(webix.ui.dataview, {
             "<div class='year'>#year# year</div>"
 });
 ~~~ 
-2 . Then you define the `type` to be the **name** field of the `type` you've created for this component:
+2 . Then you specify the name of that type as value of `type` property for this component::
 ~~~js
 webix.ui({       
     view: "dataview",
