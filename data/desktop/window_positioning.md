@@ -44,7 +44,7 @@ Relative positioning is achived with the help of **position** property. It takes
 
 - **center** - to place window or popup at the center of the screen;
 - **top** - to place window or popup at the top of the screen with center horizontal alignment. 
-Also, "top" positioning adds **animation**: the window will slide from the top of the screen when shown and slide back when closed.
+Also, "top" positioning adds slide **animation**: the window will slide from the top of the screen when shown and slide back when closed.
 
 ~~~js
 webix.ui({
@@ -99,4 +99,5 @@ webix.ui({
 		state.width -=60; //relative values
 		state.height +=60;
 	}
+});
 ~~~
