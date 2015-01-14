@@ -1,4 +1,3 @@
-
 Cells Templates
 ===========================================
 
@@ -137,8 +136,18 @@ grid = new webix.ui({
 ~~~
 {{sample 15_datatable/14_events/02_click_css.html }}
 
-### Checkbox and radio columns
-Through the template you can set a column of checkboxes or radio buttons.
+## Built-in templates
+
+Through the template you can common elements for the cells belonging to one and the same column, namely:
+
+- checkboxes;
+- radio buttons;
+- editIcons;
+- trash icons.
+
+{{note
+You can define additional common elements within the [component type](desktop/type.md#definingcommonelements). 
+}}
 
 ~~~js
 webix.ui({
@@ -154,7 +163,19 @@ webix.ui({
 15_datatable/04_editing/07_checkbox.html
 }}
 
-Know more on the topic in a separate article - datatable/controls.md 
+Learn more about checkboxes and radios in a separate article - datatable/controls.md 
+
+~~~js
+webix.ui({
+    view:"datatable",
+    ...
+    columns:[
+        { id:"edit", header:"", template:"{common.editIcon()}"},
+        { id:"trash", header:"", template:"{common.trashIcon()}"}
+    ]
+});
+~~~
+
 
 @keyword:
 	format, template, button

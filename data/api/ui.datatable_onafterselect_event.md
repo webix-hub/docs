@@ -7,11 +7,11 @@ onAfterSelect
 
 @params:
 - data		object		the selected object
-- prevent    bool    indicates whether the previous selection was saved
+- preserve    bool    indicates whether the previous selection state should be saved
 
 @example: 
 	
-some.attachEvent("onAfterSelect", function(data, prevent){
+some.attachEvent("onAfterSelect", function(data, preserve){
     //... some code here ... 
 });
 

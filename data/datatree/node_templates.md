@@ -116,8 +116,11 @@ Tree provides a set of ready-to-use template solutions, which are:
 - **{common.icon()}** -	'+'/'-' icons for collapsed/expanded nodes
 - **{common.folder()}** -   an icon of the folder 
 - **{common.checkbox()}** - a check box
-- **{common.treetable()}** - ([treetable](desktop/treetable.md) only) - a combination of common.icon() and common.folder() in one line
+- **{common.treetable()}** - ([treetable](desktop/treetable.md) only) - a combination of common.icon() and common.folder() in one line.
 
+{{note
+You can also define additional common elements within the [component type](desktop/type.md#definingcommonelements). 
+}}
 
 ###Using predefined templates
 

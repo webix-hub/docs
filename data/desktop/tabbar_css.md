@@ -1,4 +1,4 @@
-moTabbar
+Tabbar
 ===========
 
 ###CSS Image Map
@@ -10,7 +10,9 @@ moTabbar
 		<th class="col0 centeralign">  css class  </th><th class="col1 centeralign">  Element  </th>
 	</tr>
 	<tr class="row1">
-		<td class="col0 leftalign"><strong>.webix_el_tabbar</strong>  </td><td class="col1">The whole tabbar. Since most of the time a number of ".webix_item_tabs" will be rendered on top of it, what's most often visible of ".webix_el_tabbar" is the ".webix_tab_more_icon" at the end of the tab strip when there are more tabs to display than fit horizontally.</td>
+		<td class="col0 leftalign"><strong>.webix_el_tabbar</strong>  </td><td class="col1">The whole tabbar. 
+        Since most of the time a number of ".webix_item_tabs" will be rendered on top of it, 
+ the most often visible part of ".webix_el_tabbar" is the ".webix_tab_more_icon" at the end of the tab strip.</td>
 	</tr>
 	<tr class="row3">
 		<td class="col0 leftalign"><strong>.webix_tab_more_icon</strong>  </td><td class="col1">Icon at the end of the tab strip when there are more tabs to display than fit horizontally.</td>
