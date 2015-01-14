@@ -52,8 +52,6 @@ this new data.
 
 {{sample 11_htmlform/05_htmlform_binding.html }}
 
-More info on Component and Form integration via binding is in the [corresponding article](desktop/binding_details.md).
-
 Slave can  as well be **unbound** from the master by the opposite method: 
 
 ~~~js
@@ -73,6 +71,19 @@ $$("list1").unselectAll();
 ~~~
 
 {{sample 13_form/02_api/10_binding.html}}
+
+##Advanced Binding 
+
+Data binding features alot more options to explore: 
+
+- it is subject to **customization** with the help of additional parameters;
+- it features **event system**;
+- it has navite API to set **default data** for cases when no record is selected in a master control;
+- it utilizes **cursor concept** to bind to an invisible DataCollection;
+- a lot more..
+
+Study the [corresponding article](desktop/binding_details.md) for details.
+
 
 ##Syncing Data of Two Components
 

@@ -13,19 +13,45 @@ Here different aspects of bata binding are examined.
 
 ##Binding Rules
 
-The **bind()** method allows customization during binding by providing a **rule** and, optionally, **data format**. Any custom fucntion may become the binding rule. 
+The **bind()** method can take two optional parameters to customize the binding pattern - **rule** **format**. The customization is only possible in case
+slave component is based on [DataStore](api/refs/datastore.md) (all data management components except for tree-like) or
+[TreeStore](api/refs/treestore.md) (tree and treetable).
+
+**Binding rule**
+
+Binding rule defines a scheme according to which records in the slave component are filtered. It can be string or function. 
+
+As function, binding rule takes 2 parameters: 
+
+- **slave**  - slave data object;
+- **master** - master data object.
 
 List data is filtered according to the option you choose within a [richselect](desktop/controls.md#richselect) control. 
 
+{{snippet
+Slave list displayed record with category equal to master value
+}}
 ~~~js
-$$('list').bind($$('richselect'), function(obj, filter){
-	return obj.category == filter; //reference to list data object
+$$('list').bind($$('richselect'), function(slave, master){
+	return slave.category == master; 
 });
 ~~~
 
-The function takes **data object** and **filter** as parameters. If you work with serverside data, specify *table name* instead of the "obj". 
-
 {{sample 80_docs/binding_rule.html}}
+
+Additionally, binding rule can cancel bind application in runtime if no data is sent from master (i.e. no record is selected in master). 
+
+{{snippet 
+Slave datatable displays only records with movie property equal to master record ID
+}}
+~~~js
+gridb.bind(grida, function(slave, master){
+		if (!master) return false; //cancelling applying
+	return master.id == slave.movie;
+});
+~~~
+
+{{sample 15_datatable/15_api/02_link_grid.html}} 
 
 ##Binding Events 
 
@@ -78,22 +104,26 @@ Look to [CollectionBind API](api/collectionbind_defaultdata_config.md) for more 
 
 ##Cursor Concept for Bound DataCollections
 
-Cursor concept is used to control focus within the application  with bound as well as sycned data-management components. Its position is the **ID of the active data item.**
+Cursor concept is used to control focus within the application with bound and synced data-management components. Its position is the **ID of the active data item.**
 
-You can get as well as set cursor position with the help of the following methods: 
+Simply put, cursor stores the ID of a data item from the master control for which binding is performed at the moment.
+
+You can get and set cursor position with the help of the following methods: 
 
 - **setCursor(cursor);** - string, number -  sets the position of the cursor, the ID of the necessary data item.
 - **getCursor();** - gets the current cursor position. 
 
-If needed, cursor concept can be included into a binding rule. 
-
 ~~~js
-$$("datatable2").bind($$("datatable1"), function(obj, cursor){
-			return obj.empl_id == cursor.id;
-		}); //"obj" is a data object of a master "datatable1". 
+var cursor = master.getCursor();
 ~~~
 
-The rule sets display mode for the slave datatable ("datatable2"). For successul bind 'empl_id' of the slave datatable must coincide with the ID of selected item in the master datatable. 
+Cursor can be deleted to remove the current bind link: 
+
+~~~js
+master.setCursor(null);
+~~~
+
+If a **form** (slave) is bound to a **list** (master) and cursor is removed from the list  - form will be emptied. 
 
 {{note
 Cursor is as well useful when working with non-visible [DataCollections](desktop/nonui_objects.md). 
