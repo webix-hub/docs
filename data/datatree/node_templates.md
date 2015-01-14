@@ -73,17 +73,16 @@ The function accepts 2 parameters and should return the result string.<br>
 The function input parameters are:
 
 - **item object** with the following properties:
-  - **<i>id</i>** - (*string*) the item id
-  - **<i>value</i>** - (*string*) the item value
-  - **<i>$level</i>** - (*number*) the level of nesting (one-based numbering)
-  - **<i>parent</i>** - (*string*) the id of thr item's parent
-  - **<i>$count</i>** - (*number*) the number of childs
-  - **<i>open</i>** - (*boolean*) defines whether the node is collapsed or expanded (just for parent nodes)
-- **common** object that provides 3 functions:
-  - **<i>icon(obj, common)</i>** - draws the '+'/'-' icons for collapsed/expanded states of nodes
-  - **<i>folder(obj, common)</i>** - draws an icon of the folder
-  - **<i>checkbox(obj, common)</i>** - draws a check box
-  - **<i>treetable(obj, common)</i>** ([treetable](desktop/treetable.md) only) - combines *common.icon()* and *common.folder()* in one line.
+  - **item properties** from the dataset;
+  - **$level** - (*number*) the level of nesting (one-based numbering)
+  - **parent** - (*string*) the id of thr item's parent
+  - **$count** - (*number*) the number of childs
+  - **open** - (*boolean*) defines whether the node is collapsed or expanded (just for parent nodes)
+- **common** object that provides 4 functions:
+  - **icon(obj, common)** - draws the '+'/'-' icons for collapsed/expanded states of nodes
+  - **older(obj, common)** - draws an icon of the folder
+  - **checkbox(obj, common)** - draws a check box
+  - **treetable(obj, common)** ([treetable](desktop/treetable.md) only) - combines *common.icon()* and *common.folder()* in one line.
 
 
 

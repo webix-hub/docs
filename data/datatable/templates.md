@@ -138,12 +138,12 @@ grid = new webix.ui({
 
 ## Built-in templates
 
-Through the template you can common elements for the cells belonging to one and the same column, namely:
+Through the template you can define common elements for the cells belonging to one and the same column, namely:
 
 - checkboxes;
 - radio buttons;
-- editIcons;
-- trash icons.
+- "edit" cons;
+- "trash" icons.
 
 {{note
 You can define additional common elements within the [component type](desktop/type.md#definingcommonelements). 
@@ -176,6 +176,33 @@ webix.ui({
 });
 ~~~
 
+You can set built-in template via a function: 
+
+~~~js
+webix.ui({
+    view:"datatable",
+    ...
+    columns:[
+        { id:"ra1", template:function(obj, common, value, config){
+             return common.radio(obj, common, value, config);
+		}}, 
+        { id:"trash", header:"", template:function(){
+        	return common,editIcon();
+        }}
+    ]
+});
+~~~
+
+As you can see, **common.checkbox()** and **common.radio()** functions take four parameters: 
+
+- **item object** with its properties from the dataset;
+- **common** object with four methods: 
+	- common.checkbox(*obj, common, value, config*);
+    - common.radio(*obj, common, value, config*);
+    - common.editIcon();
+    - common.trashIcon();
+- **value** - current checkbox/radio state;
+- **config** - column configuration object. 
 
 @keyword:
 	format, template, button
