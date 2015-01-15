@@ -32,17 +32,16 @@ You can find the list of available events below:
 
 
 - <a href="#onbeforerun">onBeforeRun</a> - fires on file double-click or on enter click
+- <a href="#onfolderselect">onFolderSelect</a> - fires on selecting a folder in the Tree view
 - <a href="#onbeforedrag">onBeforeDrag</a> - fires before drag-n-drop has started
 - <a href="#onbeforedragin">onBeforeDragIn</a> - fires before a dragged item is moved over the droppable area
 - <a href="#onbeforedrop">onBeforeDrop</a> - fires before a dragged item is released over the droppable area
 - <a href="#onafterdrop">onAfterDrop</a> - fires after drag-n-drop has been finished
-
 - <a href="#onbeforedelete">onBeforeDeleteFile</a> - fires before an item is deleted
 - <a href="#onafterdelete">onAfterDeleteFile</a> - fires after a file has been deleted
 - <a href="#onbeforecreate">onBeforeCreate</a> - fires before a new folder has been created
 - <a href="#onaftercreate">onAfterCreate</a> - fires after a new folder has been created
 - <a href="#onbeforeupload">onBeforeUpload</a> - fires before a file upload dialog opens 
-
 - <a href="#onbeforeedit">onBeforeEdit</a> - fires when the Rename action is chosen in the popup menu
 - <a href="#onbeforeeditstop">onBeforeEditStop</a> - fires before editing is finished 
 - <a href="#onaftereditstop">onAfterEditStop</a> - fires after the editor is closed
@@ -81,6 +80,28 @@ returns:
 
 {bool} if an event handler returns false, onBeforeRun handler will not be called.
 
+{{sample
+64_file_manager/02_events/02_download.html
+}}
+
+###<span id='onfolderselect'>onFolderSelect</span> 
+
+fires on selecting a folder in the Tree view
+
+~~~js
+$$("fmanager").attachEvent("onFolderSelect",function(id){
+	// your code
+});
+~~~
+
+params:
+
+- id - {string} the id of the selected folder 
+
+{{sample
+64_file_manager/02_events/01_selection.html
+}}
+
 ###<span id='onbeforedrag'>onBeforeDrag</span> 
 
 fires before drag-n-drop has started
@@ -106,6 +127,9 @@ returns:
 
 {bool} returning false will prevent dragging of the element
 
+{{sample
+64_file_manager/02_events/03_drag.html
+}}
 
 ###<span id='onbeforedragin'>onBeforeDragIn</span>
 
@@ -132,6 +156,10 @@ returns:
 
 {bool} returning false will prevent dropping of the element
 
+{{sample
+64_file_manager/02_events/03_drag.html
+}}
+
 ###<span id='onbeforedrop'>onBeforeDrop</span> 
 
 fires before a dragged item is released over the droppable area
@@ -157,6 +185,9 @@ returns:
 
 {bool} returning false will prevent further drag-and-drop processing
 
+{{sample
+64_file_manager/02_events/03_drag.html
+}}
 
 ###<span id='onafterdrop'>onAfterDrop</span> 
 
@@ -179,6 +210,9 @@ params:
  - start - the ID from which DnD started
 - ev - {event object} a native event object
 
+{{sample
+64_file_manager/02_events/03_drag.html
+}}
 
 ###<span id='onbeforedelete'>onBeforeDeleteFile</span> 
 
@@ -283,6 +317,10 @@ returns:
 
 - {bool} if an event handler returns false, onBeforeEdit handler will not be called.
 
+{{sample
+64_file_manager/02_events/04_rename.html
+}}
+
 
 ###<span id='onbeforeeditstop'>onBeforeEditStop</span> 
 
@@ -311,6 +349,10 @@ returns:
 
 - {bool} returning false will prevent editing
 
+{{sample
+64_file_manager/02_events/04_rename.html
+}}
+
 
 ###<span id='onaftereditstop'>onAfterEditStop</span> 
 
@@ -333,6 +375,10 @@ params:
 - editor - {object} editor object
 - view - {string} the view where editing occurs
 
+{{sample
+64_file_manager/02_events/04_rename.html
+}}
+
 
 ###<span id='onbeforecopy'>onBeforeCopy</span> 
 
@@ -352,6 +398,10 @@ params:
 returns:
 
 - {bool} returning false will prevent copying
+
+{{sample
+64_file_manager/02_events/05_copy.html
+}}
 
 
 ###<span id='onbeforecut'>onBeforeCut</span> 
@@ -373,6 +423,9 @@ returns:
 
 - {bool} returning false will prevent cutting operation
 
+{{sample
+64_file_manager/02_events/05_copy.html
+}}
 
 
 ###<span id='onbeforepaste'>onBeforePaste</span> 
@@ -394,6 +447,9 @@ returns:
 
 - {bool} returning false will prevent pasting
 
+{{sample
+64_file_manager/02_events/05_copy.html
+}}
 
 
 ###<span id='onerrorresponse'>onErrorResponse</span> 
@@ -413,6 +469,10 @@ params:
 - requestData - {object} the data sent with the request
 - response - {string} the server response
 
+{{sample
+64_file_manager/02_events/06_error.html
+}}
+
 
 ###<span id='onviewinit'>onViewInit</span> 
 
@@ -431,3 +491,7 @@ params:
 
 - id - {string} the view id
 - config - {object} the object with view configuration
+
+{{sample
+64_file_manager/03_customization/01_views_configuration.html
+}}

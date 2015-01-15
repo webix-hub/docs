@@ -37,3 +37,7 @@ webix.ready(function(){
     $$("files").load("data/files.php");
 });
 ~~~
+
+{{sample
+64_file_manager/01_basic/01_init.html
+}}

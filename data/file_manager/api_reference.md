@@ -71,7 +71,7 @@ params:
 
 
 
-###getSearchData
+<h3 id="getsearchdata">getSearchData</h3>
 
 gets an array of items (files, folders) that contains text in their names
 
@@ -86,7 +86,7 @@ params:
 
 
     
-###showSearchResults
+<h3 id="showresults">showSearchResults</h3>
 
 searches text and displays results on the screen
 
@@ -99,7 +99,7 @@ params:
 - text - {string} searched text 
 
     
-###hideSearchResults  
+<h3 id="hideresults">hideSearchResults</h3>
 
 hides search results
 
@@ -167,7 +167,7 @@ fmanager.markCut(id);
 - id - {string,array} ids of files for moving
     
 
-###pasteFile
+<h3 id="paste">pasteFile</h3>
 
 pastes files/folders that were selected for copying or moving
 
@@ -180,7 +180,7 @@ params:
 - id - {mixed} the id of the folder where copyed or cut files will be pasted
     
 
-###download
+<h3 id="download">download</h3>
 
 downloads the selected file
 
@@ -191,7 +191,7 @@ fmanager.download(id);
 - id - {string} the id of the downloaded file
 
 
-###copyFile
+<h3 id="copy">copyFile</h3>
 
 copies a selected file/folder 
 
@@ -204,7 +204,7 @@ params:
 - source - {string, array} the copied items ids
 - target - {string} the id of the folder where the items are copied to
     
-###moveFile
+<h3 id="move">moveFile</h3>
 
 moves a selected file/folder
 
@@ -218,7 +218,7 @@ params:
 - target - {string} the id of the folder where the file(s) is moved to
     
 
-###deleteFile
+<h3 id="delete">deleteFile</h3>
 
 deletes items by their ids
 
@@ -230,7 +230,7 @@ params:
 
 - ids - {string, array} the ids of items that will be deleted    
 
-###createFolder   
+<h3 id="create">createFolder</h3> 
 
 creates a new folder
 
@@ -255,7 +255,7 @@ params:
 - id - id of the file/folder for editing
     
     
-###renameFile
+<h3 id="rename">renameFile</h3>
 
 renames a folder/file:
 
@@ -286,7 +286,7 @@ returns ids of active items
 var ids = fmanager.getActive();
 ~~~
   
-###uploadFile
+<h3 id="upload">upload</h3>
 
 opens a file upload dialog
 

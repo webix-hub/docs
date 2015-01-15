@@ -7,11 +7,12 @@ Folders are located in the Tree view, while their content is displayed in the Fi
 
 There are default templates that define the appearance of File Manager elements:
 
-- <a href="#name">templateName</a> - template applied for the folder/file's name
-- <a href="#size">templateSize</a> - template applied for the file size
-- <a href="#date">templateDate</a> - template applied for the format of folder/file's date of modification
-- <a href="#create">templateCreate</a> - template for the newly created folder
-- <a href="#templateicons">templateIcons</a> - template for icons that can be customized (used in "files" and "table" views)
+- <a href="#name">templateName</a> - the template applied for the folder/file's name
+- <a href="#size">templateSize</a> - the template applied for the file size
+- <a href="#date">templateDate</a> - the template applied for the format of folder/file's date of modification
+- <a href="#create">templateCreate</a> - the template for a newly created folder
+- <a href="#templateicons">templateIcons</a> - the template for icons used in "files" and "table" views. The icons are customizable
+- <a href="#templatetype">templateType</a> - the template for the type of a file
 - <a href="#icons">icons</a> - an array of icons. The icons are taken from the [Font Awesome](http://fortawesome.github.io/Font-Awesome/) collection 
 
 <img src="file_manager/templates.png"/>
@@ -67,13 +68,26 @@ templateDate: function(obj){
 
 <h3 id="create">templateCreate</h3>
 
-Template applied to the newly created folder.
+The template is applied to a newly created folder.
 
 ~~~js
 templateCreate: function(){
 	return {value: "newFolder", type: "folder", date: new Date()};
 },
 ~~~
+
+
+<h3 id="templatetype">templateType</h3> 
+
+Specifies the type of a file.
+
+~~~js
+templateType: function(obj){
+   var types = webix.i18n.filemanager.types;
+   return types&&types[obj.type]?types[obj.type]:obj.type;
+}
+~~~
+
 
 <h3 id="templateicon">templateIcon</h3>
 
@@ -89,14 +103,11 @@ templateIcon: function(obj,common){
 
 <h3 id="icons">Icons</h3>
 
-Specifies an array of icons for File Manager.
+The "icons" collection allows specifying [FontAwesome](http://fortawesome.github.io/Font-Awesome/) icons for the **templateIcon**.
+You can specify icons that correspond to the loaded file types. 
+If the collection does not contain an icon for the loaded type, FileManager will set the "default" icon type. 
 
-You can set icons for the following File Manager elements:
-folders, files in Word, Excel, PDF, PowerPoint, text format, as well as for video, audio, image, code files and archives.
-
-There's also a default icon which is set for the files without defined types or in case of specifying the type of icon that isn't included into Font Awesome collection.
-
-The example of specifying icons is given below:
+By default, the following icons are set:
 
 ~~~js
 icons: {
@@ -114,3 +125,7 @@ icons: {
 			default: "file-o"
 		}
 ~~~
+
+{{sample
+64_file_manager/03_customization/06_icons_template.html
+}}
