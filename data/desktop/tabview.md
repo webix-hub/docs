@@ -3,7 +3,11 @@ Tabview
 
 ##Overview
 
-Tabview is a **hybrid** component that is made of a [multiview](desktop/multiview.md) and [tabbar](desktop/controls.md#tabbar). It allows for quick initialization of a multiview with a built-in ability to [switch between the views](desktop/tabbar_switching.md).
+Tabview is a **hybrid** component that is made of a [multiview](desktop/multiview.md) and [tabbar](desktop/controls.md#tabbar). 
+
+Tabview allows for quick initialization of a multiview with a built-in ability to [switch between the views](desktop/tabbar_switching.md).
+
+It also features dedicated methods to add and remove views together with the corresponding tabs.
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/tabview.png"/>
 

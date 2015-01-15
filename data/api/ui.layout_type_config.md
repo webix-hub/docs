@@ -16,10 +16,10 @@ type
 @example:
 
 webix.ui({
-    type: 'space',
+    type: "space",
     rows: [
-        ...
-        ]
+    ...
+    ]
 });
 
 @template:	api_config

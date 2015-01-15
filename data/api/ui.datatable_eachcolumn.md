@@ -13,8 +13,8 @@ eachColumn
 
 @example:
 dtable.eachColumn( 
-	function (col){ 
-       	console.log( dtable.getColumnIndex(col) )
+	function (columnId){ 
+       	console.log( dtable.getColumnIndex(columnId) )
 	}
 )
 
@@ -23,7 +23,7 @@ dtable.eachColumn(
 @template:	api_method
 @descr:
 
-- The loop variable **i** is the column id;
+- The handler function takes column ID as parameter;
 - The order of iteration is the current columns order.
 
 

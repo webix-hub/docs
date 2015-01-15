@@ -1,17 +1,20 @@
 position
 =============
 
-
 @short: sets position of the window relative to the the screen
 	
+@values:
+- center	places the window in the center of the viewport
+- top	forces the window to appear from the top of the page with slide animation and horizontal centering
 
-@type: string
+@type: string, function
+
 @example:
 
 webix.ui({
 	view:"window",
     position:"center",
-    ..window config
+    //..window config
 }).show();
 
 @template:	api_config
@@ -20,7 +23,26 @@ webix.ui({
 @relatedapi:
 	api/ui.window_top_config.md
     api/ui.window_left_config.md
+@related:
+	desktop/window_positioning.md
+@descr:
 
-@descr: The property is used to centering the window. Unlike absolute window positioning, where you manually set its top and left offset, it ensures that the component will always take the adequate position on the screen. 
+The positioning function takes default window position as parameter and allow to modify its aspects.
+
+~~~js
+webix.ui({
+    view:"window",
+    head:"",
+    body:{...},
+    position:function(state){ 
+        state.left = 20; //fixed values
+        state.top = 20;
+        state.width -=60; //relative values
+        state.height +=60;
+    }
+});    
+~~~
+
+Default window position is a top left corner of the viewport. 
 
 

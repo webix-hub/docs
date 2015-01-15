@@ -1,4 +1,3 @@
-
 Cells Templates
 ===========================================
 
@@ -137,8 +136,18 @@ grid = new webix.ui({
 ~~~
 {{sample 15_datatable/14_events/02_click_css.html }}
 
-### Checkbox and radio columns
-Through the template you can set a column of checkboxes or radio buttons.
+## Built-in templates
+
+Through the template you can define common elements for the cells belonging to one and the same column, namely:
+
+- checkboxes;
+- radio buttons;
+- "edit" cons;
+- "trash" icons.
+
+{{note
+You can define additional common elements within the [component type](desktop/type.md#definingcommonelements). 
+}}
 
 ~~~js
 webix.ui({
@@ -154,7 +163,46 @@ webix.ui({
 15_datatable/04_editing/07_checkbox.html
 }}
 
-Know more on the topic in a separate article - datatable/controls.md 
+Learn more about checkboxes and radios in a separate article - datatable/controls.md 
+
+~~~js
+webix.ui({
+    view:"datatable",
+    ...
+    columns:[
+        { id:"edit", header:"", template:"{common.editIcon()}"},
+        { id:"trash", header:"", template:"{common.trashIcon()}"}
+    ]
+});
+~~~
+
+You can set built-in template via a function: 
+
+~~~js
+webix.ui({
+    view:"datatable",
+    ...
+    columns:[
+        { id:"ra1", template:function(obj, common, value, config){
+             return common.radio(obj, common, value, config);
+		}}, 
+        { id:"trash", header:"", template:function(){
+        	return common,editIcon();
+        }}
+    ]
+});
+~~~
+
+As you can see, **common.checkbox()** and **common.radio()** functions take four parameters: 
+
+- **item object** with its properties from the dataset;
+- **common** object with four methods: 
+	- common.checkbox(*obj, common, value, config*);
+    - common.radio(*obj, common, value, config*);
+    - common.editIcon();
+    - common.trashIcon();
+- **value** - current checkbox/radio state;
+- **config** - column configuration object. 
 
 @keyword:
 	format, template, button
