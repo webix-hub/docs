@@ -13,11 +13,15 @@ Here different aspects of bata binding are examined.
 
 ##Binding Rules
 
-The **bind()** method can take two optional parameters to customize the binding pattern - **rule** **format**. The customization is only possible in case
+The **bind()** method can take two optional parameters to customize the binding pattern - **rule** **format**. 
+
+{{note
+The customization is only possible in case
 slave component is based on [DataStore](api/refs/datastore.md) (all data management components except for tree-like) or
 [TreeStore](api/refs/treestore.md) (tree and treetable).
+}}
 
-**Binding rule**
+###Binding Rules for Inline Collections
 
 Binding rule defines a scheme according to which records in the slave component are filtered. It can be string or function. 
 
@@ -46,12 +50,75 @@ Slave datatable displays only records with movie property equal to master record
 }}
 ~~~js
 gridb.bind(grida, function(slave, master){
-		if (!master) return false; //cancelling applying
+		if (!master) return false; //cancelling bind applying
 	return master.id == slave.movie;
 });
 ~~~
 
 {{sample 15_datatable/15_api/02_link_grid.html}} 
+
+###Binding Rules for Hierarchical Collection as Master
+
+In case master component is based on a [TreeStore](api/refs/treestore.ms) ([tree](datatree/index.md) and [treetable](desktop/treetable.md))
+rules can be defined with the help of the following flags: 
+
+- **$level** - only immediate children of a selected item are pushed to slave component. By default children are defined by **data**
+key in any of the supported [data formats](desktop/data_types.md): 
+
+{{snippet
+Grid will show only children of a selected tree node
+}}
+~~~js
+$$("grid").bind( $$("tree"), "$level");
+~~~
+
+JSON of a tree item of such kind is as follows: 
+
+~~~js
+{ id:"..", value:"..", data:[
+	//will be shown in slave component
+	{ id:"..", value:".." },
+	{ id:"..", value:".." }
+]}
+~~~
+
+{{sample 17_datatree/04_api/08_bind.html}}
+
+- **$data** - the object of a selected item (without children) is pushed to slave component. Here you should pass the **format** of subdata presentation: 
+
+Format can be a string that defines the **key** by which desired data is set in the item. This is not the key by which children are set
+in the [data format](desktop/data_types.md) (by default it is "data"): 
+
+~~~js
+$$("grid1").bind( $$("tree"), "$data", "records");
+~~~
+
+JSON of a tree item of such kind is as follows:
+
+~~~js
+{ id:"..", value:"..", records:[
+	//will be shown in slave component
+	{ id:"..", value:".." },
+	{ id:"..", value:".." }
+]}
+~~~
+
+{{sample 17_datatree/04_api./09_subdata.html }}
+
+Format can be set via a function where you describe binding behavior manually: 
+
+~~~js
+$$("grid2").bind( $$("tree"), "$data", function(obj, source){
+	if (!obj) return this.clearAll();
+	var fulldata = [].concat(source.data.getBranch(obj.id)).concat(obj.records);
+	this.data.importData(fulldata, true);
+});
+~~~
+
+Here we get item chilren with the help of a **getBranch()** method, combine them with data set by **records** key and
+[import](api/datastore_importdata.md) the resulting array into slave datatable. 
+
+{{sample 17_datatree/04_api./09_subdata.html}}
 
 ##Binding Events 
 
@@ -102,7 +169,7 @@ Now, when no item is selected in the list, template will show default values (as
 
 Look to [CollectionBind API](api/collectionbind_defaultdata_config.md) for more details. 
 
-##Cursor Concept for Bound DataCollections
+##Cursor Concept for Bound Collections
 
 Cursor concept is used to control focus within the application with bound and synced data-management components. Its position is the **ID of the active data item.**
 
