@@ -3,7 +3,7 @@ url
 
 
 @short:
-	the url of a data feed which will be loaded after component initialization
+	the url the component will use to load data after its initialization
 
 @type: string
 @example:

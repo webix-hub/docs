@@ -34,6 +34,7 @@ $$('text2').refresh();
 @relatedapi: 
 	api/settings_config_other.md
     api/ui.button_refresh.md
+    api/renderstack_customize.md
 @related: 
 	desktop/resizing.md
 @relatedsample:

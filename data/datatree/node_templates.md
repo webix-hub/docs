@@ -1,75 +1,39 @@
 Nodes templates
 ============================
-To customize data presented in the nodes' titles you can use templates. Data template for the tree is set by property api/link/ui.tree_template_config.md .
+To customize data presented in the nodes' titles you can use templates. Data template for the tree is set by property api/link/ui.tree_template_config.md.
 
-String templates
+String Templates
 ----------------------
-
 With templates you can present almost any content in the tree: images, links, numbers, strings, dates etc.
 
-{{snippet
-Setting template for tree items
-}}
+By default, tree uses the following templates for its items: 
+
 ~~~js
 tree = new webix.ui({
     view:"tree",
     ...
-    template:"<strong>#value#</strong>"
+    template:"{common.icon()} {common.folder()}<span>#value#<span>"
 });
 ~~~
 
-<table class="list">
-	<caption class="caption">
-		<strong>Table 1 </strong>
-		Templates for different types of content
-	</caption>
-	<thead>
-	<tr>
-		<th>
-			Content
-		</th>
-		<th>
-			Example of template
-		</th>
-	</tr>
-	</thead>
-	<tbody>
-	<tr>
-		<td>strings</td>
-		<td>
-~~~html
-template:"<strong>#value#</strong>"
-~~~
-		</td>
-	</tr>
-	<tr>
-		<td>images</td>
-		<td> 
-~~~html
-template:"<img src='.imgs/#value#.jpg'/>"
-~~~
-		</td>
-	</tr>
-	<tr>
-		<td>links</td>
-		<td>
-~~~html
-template:"<a href='http://google.com?q=#value#'>#value#</a>"
-~~~
-		</td>
-	</tr>
-	</tbody>
-</table>
+It means that each item features: 
+
+- an **expand/collapse node** icon;
+- a **folder/file** icon that will automatically change depending on whether a node has children or not;
+- data **value** from the datasource. 
+
+More about Webix pattern of data interpolation you can find in the [Data templates](desktop/html_templates.md) article.
 
 Complex templates
 ------------------------------------
 
+Webix tree offers a set of predefined helpers that aid in item rendering and contain tree-specific elements like 
+item icons, expand/collapse icons and checkboxes. 
+
 ###Function definition
 
+You can set the the built-in templates with the help a fucntion that accepts 2 parameters and returns the result string.
 
-You can set the template as a function.
-
-The function accepts 2 parameters and should return the result string.<br>
 The function input parameters are:
 
 - **item object** with the following properties:
@@ -83,8 +47,6 @@ The function input parameters are:
   - **older(obj, common)** - draws an icon of the folder
   - **checkbox(obj, common)** - draws a check box
   - **treetable(obj, common)** ([treetable](desktop/treetable.md) only) - combines *common.icon()* and *common.folder()* in one line.
-
-
 
 Let's assume, you want to show items that have the nesting level greater than 2 in italic font. In thic case you can specify the data template as in:
 
@@ -107,10 +69,9 @@ tree = new webix.ui({
 
 <img src="datatree/template_function_definition.png"/>
 
+###String definition 
 
-Predefined templates
-------------------------------------
-Tree provides a set of ready-to-use template solutions, which are:
+The same helpers can be set via a string in the component template: 
 
 - **{common.icon()}** -	'+'/'-' icons for collapsed/expanded nodes
 - **{common.folder()}** -   an icon of the folder 
@@ -207,4 +168,56 @@ tree = new webix.ui({
 ~~~
 
 <img src='datatree/templates_06.png'/>
+
+##Changing Predefined Templates
+
+The above mentioned template methods are parts of the tree type, a set of methods used for rendering tree items. 
+
+Tree type can be extended or altered:  
+
+~~~js
+var tree1 = webix.ui({
+	view:"tree",
+	type:{
+		folder:function(obj){
+			if(obj.$level == 1)
+				return "<span class='webix_icon fa-folder-open'></span>";
+			if (obj.$level == 2)
+				return "<span class='webix_icon fa-video-camera'></span>";
+		}
+	}
+});
+
+var tree3 = webix.ui({
+	view:"tree",
+	type:{
+		my_folder:function(obj){
+			//code
+		}
+	}
+});
+~~~
+
+{{sample 17_datatree/03_styles/09_custom_type.html}}
+
+If you need to apply this type to several trees, you can define the type object separately and then refer to it by its **name**: 
+
+~~~js
+webix.type(webix.ui.tree, {
+   name:"awesome",
+   folder:function(obj){
+       //code
+    }
+});
+
+var tree2 = webix.ui({
+   view:"tree",
+   type:"awesome",       
+});
+~~~
+
+{{sample 17_datatree/03_styles/09_custom_type.html}}
+
+More about type implementation for data components can be found in the [Type implementation](desktop/type.md) article. 
+
 	
