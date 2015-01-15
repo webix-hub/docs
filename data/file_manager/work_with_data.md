@@ -9,30 +9,21 @@ It's possible to search necessary files and folders in File Manager. You can sea
 The following methods are used to organize search of files/folders:
 
 
-The **getSearchData()** method gets an array of file ids that contain the searching text
+The <a href="file_manager/api_reference.md#getsearchdata">getSearchData()</a> method gets an array of items (files, folders) that contains text in their names
 
 ~~~js
 var searchResults = fmanager.getSearchData(id,text);
 ~~~
 
-params:
- 
-- id - {string} the ids of folders where the searched text was found 
-- value - {array} an array of found files' ids
- 
 
-The **showSearchResults()** method searches text in the active folder and displays the results on the screen.
+The <a href="file_manager/api_reference.md#showresults">showSearchResults()</a> method searches text in the active folder and displays the results on the screen.
 
 ~~~js
 fmanager.showSearchResults(text);
 ~~~
 
-params:
 
-- text - the searched text 
-
-
-The **hideSearchResults()** method hides search results
+The <a href="file_manager/api_reference.md#hideresults">hideSearchResults()</a> method hides search results
 
 ~~~js
 fmanager.showSearchResults();

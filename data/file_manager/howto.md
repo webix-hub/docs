@@ -16,7 +16,7 @@ webix.ready(function(){
 });
 ~~~
 
-From now on, users won't ba able to manipulate items. The Menu button will be hidden.
+From now on, users won't be able to manipulate items. The Menu button will be hidden.
 
 How to hide a view?
 -----------------
@@ -29,12 +29,13 @@ webix.ready(function(){
     webix.ui({
         view:"filemanager",
         id:"files",
-        // hide 'menu' button
-        $$("files").$$("menu").hide();
-        // hide a spacer between 'menu' and 'back' buttons
-        $$("files").$$("menuSpacer").hide();
     });
     $$("files").load("../common/data.php");
+    
+     // hide 'menu' button
+     $$("files").$$("menu").hide();
+     // hide a spacer between 'menu' and 'back' buttons
+     $$("files").$$("menuSpacer").hide();
 });
 ~~~
 

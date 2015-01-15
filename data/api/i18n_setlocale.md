@@ -23,8 +23,8 @@ The method can take only one of a predefined set of values (locale names):
 - **'en-US'** - North American (used by default);
 - **'ru-RU'** - Russian;
 - **'fr-FR'** - French;
-- **'ja-JP'** - Japanise;
-- **'be-BY'** - Belorussian;
+- **'ja-JP'** - Japanese;
+- **'be-BY'** - Belarusian;
 - **'de-DE'** - German;
 - **'es-ES'** - Spanish;
 - **'it-IT'** - Italian;

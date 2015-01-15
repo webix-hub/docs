@@ -1,44 +1,60 @@
 Fine-tuning File Manager Structure
 ==========================
 
+Structure of elements
+---------------------
+
 File Manager consists of several Webix views. 
-The main layout includes two rows: a row with a toolbar and the second row with a sublayout that has Tree and mode views. 
-So, the structure is:
+
+The main layout includes two rows: a row with a toolbar and the second row with a sublayout that contains Tree and mode views. 
+Thus, the structure of File Manager is:
 
 - toolbar:
-	- <a href="#menubutton">'menu' button</a> 
-	- <a href="#spacer">spacer</a> 
-	- group of two buttons: <a href="#backforward">'back' and 'forward'</a> 
-	- <a href="#levelup">'levelUp' button</a> 
-	- <a href="#path">'path' view</a> 
-	- <a href="#search">search control</a> 
-	- <a href="#modes">'modes' button</a> 
+	- <a href="#menubutton">Menu button</a> 
+	- <a href="#spacer">Spacer</a> 
+	- <a href="#backforward">Back and Forward</a> group of buttons
+	- <a href="#levelup">LevelUp button</a> 
+	- <a href="#path">Path view</a> 
+	- <a href="#search">Search control</a> 
+	- <a href="#modes">Modes button</a> 
 - layout with 3 columns:
-	- <a href="#tree">tree</a> 
-	- <a href="#resizer">resizer view</a> 
-	- mode views: <a href="#filesandtable">'files' and 'table'</a> 
+	- <a href="#tree">Tree</a> 
+	- <a href="#resizer">Resizer view</a> 
+	- <a href="#filesandtable">'Files' and 'Table'</a> mode views
+
+The layout of File Manager is rather flexible. It means that you can customize it according to your preferences.
+
+For example, if you want to swap one toolbar element with another one or even to remove it, the functionality of File Manager will remain untouched.
 
 
-File Manager consists of several views, the main of them are: toolbar, tree and layout.
+###Toolbar
 
-It also possesses a flexible layout that you can customize according to your preferences.
-
-It means that if you want to swap a toolbar element with another one or even to remove it, the functionality of File Manager will remain untouched.
-
-Toolbar
----------------
 
 <img src="file_manager/toolbar.png"/>
 
-Toolbar is based on Webix Toolbar view and you can use $$("toolbar") method to refer its object:
+Toolbar is based on Webix desktop/toolbar.md view and you can use the **$$("toolbar")** method to refer to its object:
 
 ~~~js
 var toolbar = $$("fmanager").$$("toolbar");
 ~~~
 
-<h3 id="menubutton">Menu button</h3>
+Its configuration looks as follows:
 
-Menu button is based on Webix button. And here is how you can get the reference to its object:
+~~~js
+{
+    id: "toolbar",
+	css: "webix_fmanager_toolbar",
+    paddingX: 10,
+	paddingY:5,
+	margin: 7,
+	cols:[
+       // buttons 
+    ]
+}
+
+<h4 id="menubutton">Menu button</h4>
+
+Menu button is based on Webix [Button](desktop/controls.md#button) control. You can get the reference to its object in the following way:
 
 ~~~js
 var menu = $$("fmanager").$$("menu");
@@ -47,11 +63,11 @@ var menu = $$("fmanager").$$("menu");
 Init
 
 ~~~js
-{ view: "button", type: "iconButton", css: "webix_fmanager_back", icon: "bars", width: 37 }
+{ id: "menu", view: "button", type: "iconButton", css: "webix_fmanager_back", icon: "bars", width: 37 }
 ~~~
 
 
-###"Actions" menu
+####Actions menu
 
 
 The Actions menu displays actions that can be applied to selected files or folders. 
@@ -59,15 +75,15 @@ It appears by clicking the "menu" button or by clicking the right mouse button:
 
 <img src="file_manager/toolbar_with_menu.png"/>
 
-The "actions" menu is based on Webix desktop/contextmenu.md and that is why it allows operating its items via api/refs/treestore.md API. 
+The Actions menu is based on Webix desktop/contextmenu.md. That's why you can operate its items via api/refs/treestore.md API. 
 
-To refer the context menu you can apply $$("action") method to File Manager:
+To refer to the context menu, you can apply the **$$("actions") method** to File Manager:
 
 ~~~js
 var actions = $$("fmanager").$$("actions");
 ~~~
 
-The default, Context Menu loads the following data source:
+By default, context menu loads the following data source:
 
 ~~~js
 [
@@ -119,10 +135,10 @@ The default, Context Menu loads the following data source:
 
 The parameters of actions in the function are the following:
 
-- id {string} - the id of an action
-- method {function} - the name of the method that is used to implement the action
-- icon {string} - the icon used for illustrating the action
-- value {function} - the local name for the action???
+- id - {string} the id of an action
+- method - {function} the name of the method that is used to implement the action
+- icon - {string} an icon from the Font Awesome collection used for the action
+- value - {function} the (local) method used to implement the action 
 
 You can reload data using the following approach:
 
@@ -138,7 +154,8 @@ The api/link/ui.proto_add.md method allows adding a new action to menu:
 actions.add({id: "myAction", icon: "file", value: "My Action"});
 ~~~
 
-It is possible to set on click handler for the added action using onItemClick event handler:
+It is possible to set a click handler for the added action using api/mouseevents_onitemclick_event.md event handler:
+
 ~~~js
 actions.attachEvent("onItemClick", function(id){
    if(id == "myAction"){
@@ -147,13 +164,13 @@ actions.attachEvent("onItemClick", function(id){
 });
 ~~~
 
-To remove an existing action you can call api/link/ui.proto_remove.md method for it:
+To remove an existing action, you can call the api/link/ui.proto_remove.md method for it:
 
 ~~~js
 menu.remove("upload");
 ~~~
 
-<h3 id="spacer">Spacer</h3>
+<h4 id="spacer">Spacer</h4>
 
 The spacer is used to separate the "menu" and "back" buttons
 
@@ -162,15 +179,16 @@ The spacer is used to separate the "menu" and "back" buttons
 ~~~
 
 
-<h3 id="backforward">Back and Forward buttons</h3>
+<h4 id="backforward">Back and Forward buttons</h4>
 
 <img src="file_manager/back_forward_buttons.png"/>
 
-The "back" and "forward" buttons let go back to the folder that navigation started from (move back and forward through the navigation history).
+The Back and Forward buttons are based on Webix [Button](desktop/controls.md#button). They let move back and forward through the navigation history.
 
 ~~~js
 //the "back" button
 {	
+    id: "back",
 	view: "button", 
 	type:"iconButton", 
     css: "webix_fmanager_back", 
@@ -179,6 +197,7 @@ The "back" and "forward" buttons let go back to the folder that navigation start
 
 //the "forward" button
 { 
+    id: "forward",
 	view: "button", 
     type:"iconButton", 
     css: "webix_fmanager_forward", 
@@ -187,14 +206,15 @@ The "back" and "forward" buttons let go back to the folder that navigation start
 }
 ~~~
 
-<h3 id="levelup">"Level up" button</h3>
+<h4 id="levelup">LevelUp button</h4>
 
-The "Level up" button selects the parent catalogue of the current tree branch:
+The Level Up button is based on Webix [Button](desktop/controls.md#button). It selects the parent folder of the selected item (file/folder):
 
 <img src="file_manager/levelup_button.png"/>
 
 ~~~js
 {
+    id: "levelUp",
 	view:"button", 
     type:"iconButton", 
     css:"webix_fmanager_up", 
@@ -204,11 +224,11 @@ The "Level up" button selects the parent catalogue of the current tree branch:
 }
 ~~~
 
-<h3 id="path">"Path" view</h3>
+<h4 id="path">Path view</h4>
 
 <img src="file_manager/path_view.png"/>
 
-The path view displays the path to the currently selected folder/file. 
+The Path view displays the path to the currently selected item (file/folder). 
 
 
 ~~~js
@@ -216,30 +236,39 @@ The path view displays the path to the currently selected folder/file.
 ~~~
 
 
-<h3 id="search">"Search" control</h3>
+<h4 id="search">Search control</h4>
 
 <img src="file_manager/search_control.png"/>
 
-The "search" element allows searching for files and folders the names of which contain the entered letter combinations:
+The Search element is based on Webix [Search](desktop/controls.md#search) control and allows searching for files and folders, 
+the names of which contain the entered letter combinations:
 
 ~~~js
-{ view: "search", gravity: 0.3 }
+{ id: "search", view: "search", gravity: 0.3 }
 ~~~
 
-<h3 id="modes">"Modes" button</h3>
+<h4 id="modes">Modes button</h4>
 
 <img src="file_manager/modes_button.png"/>
 
-The "modes button" presents a segmented button that lets switch between two modes of displaying folders and files: "files" and "table". 
+The Modes button presents a segmented button, based on Webix [Segmented Button](desktop/controls.md#segmentedbutton) control. 
+It lets switch between two modes of displaying folders and files: "files" and "table". 
 
 ~~~js
-{ view: "segmented", options: "modeOptions", value: settings.mode }
+{ 
+   id: "modes", 
+   view: "segmented",  
+   value: settings.mode,
+   options: [
+      // options
+   ]
+}
 ~~~
 
 The options are specified as an array:
 
 ~~~js
-"modeOptions":[
+[
 	{
 		id: "files",
         width: 32,
@@ -253,18 +282,41 @@ The options are specified as an array:
 ],
 ~~~
 
-Layout
------------
+###Layout
 
-<h3 id="tree">Tree</h3>
 
-The Tree is based on Webix Tree(link). It displays the hierarchy of folders and allows navigate through them.
+<h4 id="tree">Tree</h4>
+
+The Tree is based on Webix datatree/index.md. It displays the hierarchy of folders and allows navigating through them.
+
+~~~js
+{
+    id: "tree",
+	width: 230,
+	view: "filetree",
+	select: true,
+	filterMode:{
+		showSubItems:false,
+		openParents:false
+	},
+	type: "FileTree",
+	navigation: true,
+	scroll: true,
+	editor:"text",
+	editable: true,
+	editaction: false,
+	drag: true,
+	tabFocus: true,
+	onContext:{}
+}
+~~~
+
+Tree use "FileTree" data type that configures folder icons for nodes:
 
 ~~~js
 webix.type(webix.ui.tree,{
 	name: "FileTree",
-	css: "webix_fmanager_tree",
-	folder:function(obj, common){
+	folder: function(obj, common){
 		if (obj.icon)
 			return "<div class='webix_icon icon fa-folder'></div>";
 		if (obj.$count && obj.open)
@@ -274,7 +326,7 @@ webix.type(webix.ui.tree,{
 });
 ~~~
 
-<h3 id="resizer">"Resizer" view</h3>
+<h4 id="resizer">Resizer view</h4>
 
 Resizer is a draggable border between the Tree and the File views
 
@@ -282,7 +334,7 @@ Resizer is a draggable border between the Tree and the File views
 {view:"resizer", width:2}
 ~~~
 
-<h3 id="filesandtable">'Files' and 'Table' mode views</h3>
+<h4 id="filesandtable">'Files' and 'Table' mode views</h4>
 
 
 These are 2 modes of viewing files of the selected folder. By default, the "table" mode is active.
@@ -290,80 +342,48 @@ These are 2 modes of viewing files of the selected folder. By default, the "tabl
 ~~~js
 //the "files" view
 "files": {
-			config:{
-				view: "fileview",
-				type: "FileView",
-				select: "multiselect",
-				editable:true,
-				editaction: false,
-				editor:"text",
-				editValue:"value",
-				drag: true,
-				navigation: true,
-				tabFocus: true,
-				onContext:{}
-			}
-		}
+	view: "fileview",
+	type: "FileView",
+	select: "multiselect",
+	editable:true,
+	editaction: false,
+	editor:"text",
+	editValue:"value",
+	drag: true,
+	navigation: true,
+	tabFocus: true,
+	onContext:{}
+}
         
 //the "table" view
 "table": {
-			config: {
-				view: "filetable",
-				css: "webix_fmanager_list",
-				columns: "columns",
-				editable: true,
-				editaction: false,
-				select: "multiselect",
-				drag: true,
-				navigation: true,
-				resizeColumn:true,
-				tabFocus: true,
-				onContext:{}
-			}
-     	}
+	view: "filetable",
+	css: "webix_fmanager_list",
+	columns: "columns",
+	editable: true,
+	editaction: false,
+	select: "multiselect",
+	drag: true,
+	navigation: true,
+	resizeColumn:true,
+	tabFocus: true,
+	onContext:{}		
+}
 ~~~
 
-
-Adding a new column
--------------------
-
-You can add a new column into the "table" view. 
-For this purpose you should use onViewInit event (see above) to customize the view 
-and insert [column configuration](http://docs.webix.com/datatable__columns_configuration.html) into "columns" array of the table.
-
-Here is an example of adding the new column into the 3rd position:
-
-~~~js
-var fManager = new webix.ui({
-   view: "filemanager",
-   on:{
-	   "onViewInit": function(name, config){
-           if( name == "table" ){
-              // an array with columns configuration
-			  var columns = config.columns;
-              // the configuration for the new column 
-			  var newColumn = {
-                id: "new",
-				header:"New column",
-				fillspace: 1,
-				css: "my_style",
-				template: function(obj,common){
-					return "Added";
-				}
-			 };
-             // insert the column
-			 columns.splice(2,0,newColumn);
-		  }
-	   }
-	}
-});
-~~~
 
 Structure customization
 -----------------------
 
-In some cases, we can face the necessity to customize existing views of File Manager. 
-For example, let's turn off multi-selection for the 'table' and 'files' views".
+In some cases, we can face the necessity to change the structure of File Manager:
+add a new column or a custom mode, hide views or customize existing views. 
+
+Examples of all these cases are described below.
+
+
+###Customizing existing views
+
+To illustrate this possibility, let's turn off multiple selection for the 'table' and 'files' views".
 
 To implement such configuration, we can use the "onViewInit" event:
 
@@ -386,34 +406,55 @@ webix.ready(function(){
 });
 ~~~
 
+{{sample
+64_file_manager/03_customization/01_views_configuration.html
+}}
 
 
-Hiding views
--------------
+###Adding a new column
 
-It is possible to hide any view of File Manager by calling the "hide()" method.
-For example, imagine that you need to remove the "Menu" button and the Spacer between the Menu and Back buttons:
+
+You can add a new column into the "table" view. 
+For this purpose you should use the onViewInit event (described in the above example) to customize the view 
+and insert [column configuration](http://docs.webix.com/datatable__columns_configuration.html) into the "columns" array of the table.
+
+Here is an example of adding a new column into the 3rd position:
 
 ~~~js
-webix.ready(function(){
-	webix.ui({
-		view:"filemanager",
-		id:"files",
-		// hide 'menu' button
-		$$("files").$$("menu").hide();
-		// hide a spacer between 'menu' and 'back' buttons
-		$$("files").$$("menuSpacer").hide();
-    });
-	$$("files").load("../common/data.php");
+var fManager = new webix.ui({
+   view: "filemanager",
+   on:{
+	   "onViewInit": function(name, config){
+           if( name == "table" ){
+              // an array with columns configuration
+			  var columns = config.columns;
+              // configuration of a new column 
+			  var newColumn = {
+                id: "new",
+				header:"New column",
+				fillspace: 1,
+				css: "my_style",
+				template: function(obj,common){
+					return "Added";
+				}
+			 };
+             // insert a column
+			 columns.splice(2,0,newColumn);
+		  }
+	   }
+	}
 });
 ~~~
 
+{{sample
+64_file_manager/03_customization/02_new_column.html
+}}
 
-Adding a custom mode
---------------------
+###Adding a custom mode
+
 
 There's a possibility to create a custom mode of displaying files in the Files view. 
-The example below will illustrate the idea of creating a new mode based on desktop/list.md view:
+The example below illustrates the idea of creating a new mode based on desktop/list.md view:
 
 ~~~js
 webix.ui({
@@ -459,4 +500,32 @@ webix.ui({
 });
 ~~~
 
+{{sample
+64_file_manager/03_customization/03_adding_mode.html
+}}
 
+###Hiding views
+
+
+It is possible to hide any view of File Manager by calling the "hide()" method.
+
+For example, imagine that you need to remove the Menu button and the spacer between the Menu and Back buttons. 
+To implement this task, use the following technique:
+
+~~~js
+webix.ready(function(){
+	webix.ui({
+		view:"filemanager",
+		id:"files",
+		// hide the 'menu' button
+		$$("files").$$("menu").hide();
+		// hide the spacer between the 'menu' and 'back' buttons
+		$$("files").$$("menuSpacer").hide();
+    });
+	$$("files").load("../common/data.php");
+});
+~~~
+
+{{sample
+64_file_manager/03_customization/04_hiding_buttons.html
+}}
