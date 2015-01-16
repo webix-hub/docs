@@ -373,7 +373,7 @@ By default, the "Table" mode is active.
 ~~~
 
 
-Actions popup
+Actions menu
 ----------------
 
 The Actions menu displays actions that can be applied to selected files or folders. 
