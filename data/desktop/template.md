@@ -24,7 +24,7 @@ webix.ui({
 80_docs/default_template.html
 }}
 
-##External Template
+###External Template
 
 Template's content can as well be taken from an HTML node pointed to by:
 
@@ -59,15 +59,14 @@ webix.ui({
 
 As a result, contents from HTML is placed inside the view. 
 
-##Loaded Template
+###Loaded Template
 
 ~~~js
 { view:"template", src:"loadtext.php"} 
 ~~~
 
-###Setting Content Dynamically
 
-Dymanic content setting can be implemented with the [setContent](api/ui.template_setcontent.md) method.
+###Notes
 
 {{note
 Template doesn't need to have **view** attribute. The following code goes as well. 
@@ -130,6 +129,15 @@ If a template is used as a single-data component (as shown above) the data field
 {{note
 The rules of data templating can be studied in detail in the [dedicated documentation article](desktop/html_templates.md). 
 }}
+
+##Changing Template Text Dynamically
+
+Dymanic content setting can be implemented with the help of:
+
+- a [setHTML](api/ui.template_sethtml.md) method to change text or HTML content of a template;
+- a [define](api/link/ui.template_define.md) method used in lots of the components to [reset property values](desktop/redefinition.md);
+- a [setValues](api/ui.template_setvalues.md) method that allows to define template data;
+- a template-specific [setContent](api/ui.template_setcontent.md) method that can set the contents of an existing HTML node as template value.
        
 ##Template Types
 

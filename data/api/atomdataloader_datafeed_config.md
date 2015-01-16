@@ -3,7 +3,7 @@ dataFeed
 
 
 @short:
-	the url to the data source that the component will use to reload data from
+	the url that the component will use to reload data during binding
 
 @type: string, function
 @example:
@@ -24,20 +24,28 @@ myform.bind(mygrid);
 	desktop/binding_details.md
     desktop/data_loading.md
 @descr:
+
 ###Using during binding 
-In the related sample the property is used in the 'binding' context. Allows you to reload data in the bound component directly from the server, not from
-the master component as expected.
 
-<br>
+In the related sample the property is used in the 'binding' context. Allows you to reload data in the bound component directly from the server, not from the master component as expected.
 
-For example, you have a form bound to a grid. The form displayes details of the record selected 
-in the grid.<br>
-Let's assume, you select a record: 
+For example, you have a form bound to a grid. The form displays details of the record selected in the grid.
+Let's assume, you select a record. What happends with the slave component? 
 
-- **<i>Default behaviour:</i>**<br>
-the form takes record details from the grid (takes data on the client)
-- **<i>Using 'dataFeed':</i>**<br>
-the form loads record details directly from the server (takes data on the server) 
+- **Default behaviour:**the form takes record details from the grid (takes data on the client);
+- **Using "dataFeed":** the form loads record details directly from the server (takes data on the server). 
+
+###Using dataFeed for Forms and Collections
+
+The logic of "dataFeed" behaviour is the same for forms and collections (i.e. data components), yet the difference lies in the 
+parameters fo the URL that is formed to send request to server: 
+
+Lets assume that dataFeed is "data/form.php":
+
+- for **forms** the request URL looks like: "data/form.php?action=get&id="+obj.id
+- for **data** components the request URL is as follows: "data/form.php?filter[id]="+obj.id
+
+where **obj** is selected data item in the master component.
 
 ###Datafeed as function
 

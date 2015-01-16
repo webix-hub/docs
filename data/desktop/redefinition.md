@@ -1,7 +1,7 @@
 Changing Properties of Components
 =================
 
-###Defining New properties
+##Defining New properties
 
 The properties of Webix components can be changed after initialization each time the **define()** method is applied to them. 
 It takes the following arguments:
@@ -32,7 +32,7 @@ $$("mylist").define({
 });
 ~~~
 
-###Applying Property Changes
+##Applying Property Changes
 
 In order that new properties came into force, you should apply either of these methods to the redefined component:
 
@@ -48,7 +48,7 @@ $$("layout").reconstruct();
 
 - **resize()** - adjusts a component to the new size. 
 
-###Changing the Component's Config
+##Changing the Component's Config
 
 The desired configuration parameter can be accessed and changed through the **config** property as well. 
 
@@ -82,7 +82,7 @@ dtable.resize();
 
 ~~~
 
-###Item Properties Redefining
+##Redefining Item Properties
 
 Type with data-containing components denotes the way each data item looks like rather than look-and-feel of the whole component. 
 

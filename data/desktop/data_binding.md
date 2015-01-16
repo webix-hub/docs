@@ -40,8 +40,8 @@ the master component (in case of [datatable](datatable/index.md) look at column 
 Changes in the slave component will affect master one, which means that if you edit the info in the form, then save it (click sumbit button), the list item will have 
 this new data. 
 
-~~~html
-<input type="button" name="submit" value="Submit" onclick='$$("htmlform1").save()'/>
+~~~js
+$$("htmlform1").save();
 ~~~
 
 <br>
@@ -60,23 +60,28 @@ $$('htmlform1').unbind();
 
 From now on, list changes cannot affect form data and vice versa. 
 
-**Addind data to master collection**
+**Adding data to master collection**
+When no item is selected in a master component (*here:list*), data in the slave one can still be pushed to it.
 
-When no item is selected in a master component (*here:list*), data in the slave one can still be pushed to it. The new item will be added to a master collection.
+In other words, if you call `save()` method for the bound form when no item is selected in the master, a new item will be added to 
+master collection. 
 
 The only thing you should do is to remove selection in the master:
 
 ~~~js
 $$("list1").unselectAll();
+//or
+$$("list1").setCursor(null);
 ~~~
 
 {{sample 13_form/02_api/10_binding.html}}
 
 ##Advanced Binding 
 
-Data binding features alot more options to explore: 
+Data binding features a lot more advanced options to explore: 
 
 - it is subject to **customization** with the help of additional parameters;
+- it is suitable for binding hierarchical structures;
 - it features **event system**;
 - it has navite API to set **default data** for cases when no record is selected in a master control;
 - it utilizes **cursor concept** to bind to an invisible DataCollection;

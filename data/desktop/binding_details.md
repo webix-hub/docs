@@ -4,7 +4,7 @@ Working with Bound Components
 Binding makes selected record of one component a datasource for another. The basic binding tie is established between two components using their IDs of variables they are stored in (if any). 
 
 ~~~js
-$$('my_form').bind(list); 
+$$("myform").bind(list); 
 ~~~
 
 It has already been [described](desktop/data_binding.md).
@@ -13,11 +13,15 @@ Here different aspects of bata binding are examined.
 
 ##Binding Rules
 
-The **bind()** method can take two optional parameters to customize the binding pattern - **rule** **format**. The customization is only possible in case
+The **bind()** method can take two optional parameters to customize the binding pattern - **rule** **format**. 
+
+{{note
+The customization is only possible in case
 slave component is based on [DataStore](api/refs/datastore.md) (all data management components except for tree-like) or
 [TreeStore](api/refs/treestore.md) (tree and treetable).
+}}
 
-**Binding rule**
+###Binding Rules for Inline Collections
 
 Binding rule defines a scheme according to which records in the slave component are filtered. It can be string or function. 
 
@@ -32,7 +36,7 @@ List data is filtered according to the option you choose within a [richselect](d
 Slave list displayed record with category equal to master value
 }}
 ~~~js
-$$('list').bind($$('richselect'), function(slave, master){
+$$("list").bind($$("richselect"), function(slave, master){
 	return slave.category == master; 
 });
 ~~~
@@ -46,12 +50,75 @@ Slave datatable displays only records with movie property equal to master record
 }}
 ~~~js
 gridb.bind(grida, function(slave, master){
-		if (!master) return false; //cancelling applying
+		if (!master) return false; //cancelling bind applying
 	return master.id == slave.movie;
 });
 ~~~
 
 {{sample 15_datatable/15_api/02_link_grid.html}} 
+
+###Binding Rules for Hierarchical Collection as Master
+
+In case master component is based on a [TreeStore](api/refs/treestore.ms) ([tree](datatree/index.md) and [treetable](desktop/treetable.md))
+rules can be defined with the help of the following flags: 
+
+- **$level** - only immediate children of a selected item are pushed to slave component. By default children are defined by **data**
+key in any of the supported [data formats](desktop/data_types.md): 
+
+{{snippet
+Grid will show only children of a selected tree node
+}}
+~~~js
+$$("grid").bind( $$("tree"), "$level");
+~~~
+
+JSON of a tree item of such kind is as follows: 
+
+~~~js
+{ id:"..", value:"..", data:[
+	//will be shown in slave component
+	{ id:"..", value:".." },
+	{ id:"..", value:".." }
+]}
+~~~
+
+{{sample 17_datatree/04_api/08_bind.html}}
+
+- **$data** - the object of a selected item (without children) is pushed to slave component. Here you should pass the **format** of subdata presentation: 
+
+Format can be a string that defines the **key** by which desired data is set in the item. This is not the key by which children are set
+in the [data format](desktop/data_types.md) (by default it is "data"): 
+
+~~~js
+$$("grid1").bind( $$("tree"), "$data", "records");
+~~~
+
+JSON of a tree item of such kind is as follows:
+
+~~~js
+{ id:"..", value:"..", records:[
+	//will be shown in slave component
+	{ id:"..", value:".." },
+	{ id:"..", value:".." }
+]}
+~~~
+
+{{sample 17_datatree/04_api./09_subdata.html }}
+
+Format can be set via a function where you describe binding behavior manually: 
+
+~~~js
+$$("grid2").bind( $$("tree"), "$data", function(obj, source){
+	if (!obj) return this.clearAll();
+	var fulldata = [].concat(source.data.getBranch(obj.id)).concat(obj.records);
+	this.data.importData(fulldata, true);
+});
+~~~
+
+Here we get item chilren with the help of a **getBranch()** method, combine them with data set by **records** key and
+[import](api/datastore_importdata.md) the resulting array into slave datatable. 
+
+{{sample 17_datatree/04_api./09_subdata.html}}
 
 ##Binding Events 
 
@@ -63,11 +130,12 @@ gridb.bind(grida, function(slave, master){
 $$("files").bind($$("folders"));
 
 $$("files").attachEvent("onbindapply", function(){
-	$$("preview").setHTML(" ");
-}); // makes the preview template empty
+	// makes the preview template empty
+	$$("preview").setHTML("");
+}); 
 ~~~
 
-##Default Data to Prevent Undefined Values
+##Preventing from Undefined Values
 
 What happens when **no selection** is made in the master component? If no measures are taken, the slave component would show **undefined** values. 
 
@@ -102,7 +170,7 @@ Now, when no item is selected in the list, template will show default values (as
 
 Look to [CollectionBind API](api/collectionbind_defaultdata_config.md) for more details. 
 
-##Cursor Concept for Bound DataCollections
+##Cursor Concept for Bound Collections
 
 Cursor concept is used to control focus within the application with bound and synced data-management components. Its position is the **ID of the active data item.**
 
@@ -129,107 +197,56 @@ If a **form** (slave) is bound to a **list** (master) and cursor is removed from
 Cursor is as well useful when working with non-visible [DataCollections](desktop/nonui_objects.md). 
 }}
 
-##Binding. Form and Component Integration. ServerSide. 
+##Using Binding for Server Side 
 
-As a rule, form doesn't communicate directly from server-side. It receives data from the component it is bound with and the changed data is sent first to the component before being saved to the dastabase. 
+As a rule, slave component doesn't communicate directly from server-side. 
+It receives data from the master view it is bound with and the changed data is sent first to the master 
+that handles communication with the server. 
 
-However, the exist a dataFeed method to allow for reloading data into the bound directly from server, not from the client.
+However, there exists a possibility to get serverside data for the slave based on master selection - 
+[dataFeed functionality](api/atomdataloader_datafeed_config.md). 
 
 ~~~js
-dhx.ui({
+webix.ui({
 	view:"form", 
-    id:"myform1",
+    id:"myform",
     ...//config  
-    dataFeed: "data/form.php"
+    dataFeed: "slave_data.php"
 });
 
-$$("myform1").bind($$("datatable1"));
+$$("myform").bind($$("mydatatable"));
 ~~~
 
-The functionality can be used when the form should get the data from the related table rather than from that of the master component. 
+Datafeed defines URL that will be used by slave control to sent serverside request the moment selection in the master component changes. 
 
-<h3 id="data_saving">Data Saving</h3> 
+The functionality works the same for form and collections (data components) yet the URL parameters differ: 
+
+- for forms the request URL looks like: "slave_data.php?action=get&id="+obj.id
+- for data components the request URL is as follows: "slave_data.php?filter[id]="+obj.id
+
+where **obj** is selected data item in the master component.
+
+##Saving Data of Multiple Bound Forms
 
 When a form is bound to a component, data from the selected item is transmitted to the form as well as any changes you make within the form are saved automatically to the selected item. 
 
 It happens on calling the **save();** method
 
 ~~~js
-$$("myform1").save();
+$$("myform").save();
 ~~~
 
-But if you have **two forms** bound to one and the one component and you save each of the forms separately, the data from the previously saved one is lost. The solution is the **saveBatch()**
-method that makes simultaneous saving of several forms. It is called from the master component rather than from either of the slave forms. 
+But if you have **two forms** bound to one and the one component and you save each of the forms separately, 
+the data from the previously saved one is lost. The solution is the [saveBatch()](api/bindsource_savebatch.md)
+method that makes simultaneous saving of several forms. 
+
+It is called from the master component rather than from either of the slave forms. 
 
 ~~~js
-$$('myStore').saveBatch(function(){
-     $$('myform1').save();
-     $$('myform2').save();
+$$("mydatatable").saveBatch(function(){
+     $$("myform1").save();
+     $$("myform2").save();
 });
-~~~
-
-The full **saving algorithm** is described below. 
-
-###Saving to DB.
-
-If you load data from a database, saving is implemented in the same way. But you must initialize a **[DataProcessor](desktop/dataprocessor.md)** for this component since it handles all the client-to-server operations. 
-
-####Loading Database Data to the DataCollection
-
-First, you init the [dataCollection](desktop/nonui_objects.md) to store serverside data and sync it to the needed UI component. 
-
-~~~js
-var orders = new dhx.DataCollection({
-	url:"data/orders.php", //data loading from DB
-	save:"connector->data/orders.php" //dataProcessor to save data to DB
-});
-
-$$('order-grid').sync(orders);
-~~~
-
-Then, bind form to the dataCollection rather than to the synced component. 
-
-~~~js
-$$("order-form").bind(orders); 
-~~~
-
-Data will be saved to the dataCollection and to the component as well as to the database. 
-
-####Direct Loading from the Database
-
-In this case, you specify **loading url** within the component and initialize **[dataProcessor](desktop/dataprocessor.md)**. 
-
-Then the form is bound to the component and **save()** method for the form will update the component and the database record. 
-
-~~~js
-dhx.ui({
-	view:"datatable",
-    id:"order-grid",
-    ...//config
-	url:"data/orders.php", //data loading
-	save:"connector->data/orders.php"  //dataProcessor init
-});
-
-$$("myform1").bind($$("order-grid"));
-~~~
-
-###Saving Algorithm
-
-Saving data from the form to the component (and the database table) is a three-stage process: 
-
-- checking whether **changes** in the form were made. Find **isDirty** Api [here](desktop/form_tasks.md); 
-- **validating** data on the client-side. Look how to define [Validation Rules](desktop/data_validation.md);
-- **saving** the data if it is valid.
-
-~~~js
-save_order:function(){
-	var form = $$("myform1");
-	if (form.isDirty()){ //checking for chages
-		if (!form.validate()) return false; //validation
-		form.save(); //saving to the component
-	}
-	return true;
-}
 ~~~
 
 
