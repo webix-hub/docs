@@ -6,8 +6,6 @@ on a folder/file in the Tree or Files view or by clicking the Menu button on the
 
 However, you can also customize actions by means of redefining the corresponding methods.
 
-The available actions include: Copy, Cut, Paste, Create Folder, Delete, Rename, Upload and Download.
-
 
 Copying folders/files
 ----------
@@ -16,17 +14,6 @@ To copy a folder/file, use the <a href="file_manager/api_reference.md#copy">copy
 
 ~~~js
 fmanager.copyFile(source,target);
-~~~
-
-
-
-Pasting folders/files
----------------------
-
-To copy a folder/file, use the <a href="file_manager/api_reference.md#paste">pasteFile()</a> method: 
-
-~~~js
-fmanager.pasteFile(id);
 ~~~
 
 
@@ -56,7 +43,7 @@ fmanager.deleteFile(ids);
 Renaming folders/files
 ----------------
 
-To move rename a folder/file, use the <a href="file_manager/api_reference.md#rename">renameFile()</a> method:
+To rename a folder/file, use the <a href="file_manager/api_reference.md#rename">renameFile()</a> method:
 
 ~~~js
 fmanager.renameFile("file1","newFile.txt");
@@ -96,13 +83,3 @@ fmanager.uploadFile("myfolder");
 ~~~
 
 
-Drag-and-drop
----------------
-
-There are two modes of drag-n-drop operation in File Manager:
-
-- dnd inside of the Tree
-- dnd between the Tree and File view
-
-The drag-and-drop functionality is fully based on handling of the appropriate events.
-You can read about them in the article file_manager/events.md#onbeforedrag.

@@ -1,17 +1,17 @@
 Data Visualization
 ==================
 
-File Manager allows representing folders and different files inside it (excel, pdf, powerpoint, text, video, images, code files and archives).
+Data items visualization in File Manager is rather flexible, so you can easily customize it by means of redefining the corresponding templates.
 
-Folders are located in the Tree view, while their content is displayed in the Files view.
+Thus, it's possible to specify the necessary date format, set desired icons or change an item's name presentation.
 
-There are default templates that define the appearance of File Manager elements:
+The following templates are available:
 
 - <a href="#name">templateName</a> - the template applied for the folder/file's name
 - <a href="#size">templateSize</a> - the template applied for the file size
 - <a href="#date">templateDate</a> - the template applied for the format of folder/file's date of modification
 - <a href="#create">templateCreate</a> - the template for a newly created folder
-- <a href="#templateicons">templateIcons</a> - the template for icons used in "files" and "table" views. The icons are customizable
+- <a href="#templateicons">templateIcons</a> - the template for icons used in "Files" and "Table" view modes. The icons are customizable
 - <a href="#templatetype">templateType</a> - the template for the type of a file
 - <a href="#icons">icons</a> - an array of icons. The icons are taken from the [Font Awesome](http://fortawesome.github.io/Font-Awesome/) collection 
 
@@ -19,11 +19,11 @@ There are default templates that define the appearance of File Manager elements:
 
 <h3 id="name">templateName</h3>
 
-Specifies the folder/file's name.
+Specifies how the folder/file's name will be displayed in File Manager.
 
 ~~~js
-{
- 	webix.template("#value#")
+templateName: function(fileObj,common){
+ 	return fileObj.value
 }
 ~~~
 
@@ -32,33 +32,38 @@ Specifies the folder/file's name.
 Specifies the file size.
 
 ~~~js
-templateSize: function(obj){
+templateSize: function(obj,common){
 	var value = obj.size;
-    var labels = webix.i18n.filemanager.sizeLabels;
-    var pow = 0;
-    while(value/1024 >1){
-    	value = value/1024;
-    	pow++;
-    }
     var isInt = (parseInt(value,10) == value);
     
-    var format = webix.Number.numToStr({
+    // apply locale formating
+    var getFormatedValue = webix.Number.numToStr({
     	decimalDelimiter:webix.i18n.decimalDelimiter,
     	groupDelimiter:webix.i18n.groupDelimiter,
     	decimalSize : isInt?0:webix.i18n.groupSize
     });
+    value = getFormatedValue(value); 
     
-    return format(value)+""+labels[pow];
+    // get size label
+    var labels = webix.i18n.filemanager.sizeLabels; // ["B","KB",...]
+    var sizeIndex = 0;
+    while(value/1024 >1){
+    	value = value/1024;
+    	sizeIndex++;
+    }
+    var label = labels[sizeIndex];
+    
+    return value+""+label;
 },
 ~~~
 
 <h3 id="date">templateDate</h3>
 
-Specifies the format of folder/file's date of modification.
+Specifies the format of folder/file's date of modification. 
 
 ~~~js
 templateDate: function(obj){
-	var date = obj.date;
+	var date = obj.date; // 'date' property is Unix time
 	if(typeof(date) != "object"){
 		date = new Date(parseInt(obj.date,10)*1000);
 	}
@@ -68,7 +73,7 @@ templateDate: function(obj){
 
 <h3 id="create">templateCreate</h3>
 
-The template is applied to a newly created folder.
+Specifies properties for a newly created folder.
 
 ~~~js
 templateCreate: function(){
@@ -91,7 +96,7 @@ templateType: function(obj){
 
 <h3 id="templateicon">templateIcon</h3>
 
-Customizable template for icons in "files" and "table" views.
+A customizable template for icons in "Files" and "Table" view modes.
 
 ~~~js
 templateIcon: function(obj,common){
@@ -100,6 +105,11 @@ templateIcon: function(obj,common){
 },
 ~~~
 
+<br>
+
+{{sample
+64_file_manager/03_customization/06_icons_template.html
+}}
 
 <h3 id="icons">Icons</h3>
 
@@ -126,6 +136,3 @@ icons: {
 		}
 ~~~
 
-{{sample
-64_file_manager/03_customization/06_icons_template.html
-}}

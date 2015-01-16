@@ -3,8 +3,8 @@ File Manager
 
 Webix File Manager is intended for viewing folders and files and navigating through them in a handy way.
 
-It allows you to perform all habitual operations, such as copying, deleting, moving and renaming. 
-Besides, you can upload and download files and search a necessary file among folders.<br><br>
+It allows you to perform all habitual operations with files, such as copying/pasting, deleting, moving and renaming. 
+Besides, you can upload and download files, drag and drop files and folders and search a necessary file among folders.<br><br>
 
 <img src="file_manager/front.png"/>
 
@@ -33,7 +33,6 @@ Besides, you can upload and download files and search a necessary file among fol
 		    </h4>
 		    <ul id="design_sublist">
                 <li>file_manager/manipulating_items.md</li>
-                <li>file_manager/work_with_data.md</li>
                 <li>file_manager/events.md</li>
                 <li>file_manager/api_reference.md</li>
                 <li>file_manager/howto.md</li>
@@ -52,7 +51,6 @@ Besides, you can upload and download files and search a necessary file among fol
 - file_manager/configuration.md
 - file_manager/localization.md
 - file_manager/manipulating_items.md
-- file_manager/work_with_data.md
 - file_manager/events.md
 - file_manager/api_reference.md
 - file_manager/howto.md

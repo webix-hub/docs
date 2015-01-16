@@ -15,11 +15,11 @@ An example of json data item is given below:
 
 ~~~js
 {
-	id: "base1", 
-    value: "Product1.jpg", 
-    type:"image",  
-    date: 1420717913, 
-    size: 4500
+	id: 	"base1", 
+    value: 	"Product1.jpg", 
+    type:	"image",  
+    date: 	1420717913, 
+    size: 	4500
 },
 ~~~
 
@@ -60,8 +60,13 @@ The request contains several parameters:
 
 For example, if we copy a file with the id "myfile1" into the folder with the id "folder2", the request contains the following parameters:
 
-**{action: "copy", source: "myfile1", target: "folder2"}**.
-
+~~~js
+{
+	action: "copy", 
+    source: "myfile1", 
+    target: "folder2"
+}
+~~~
 
 File Manager is a purely client-side widget, therefore you can implement any logic at the backend. 
 You can find several demos that implement PHP data in the File Manager package.
@@ -70,7 +75,3 @@ You can find several demos that implement PHP data in the File Manager package.
 64_file_manager/01_basic/04_operations.html
 }}
 
-
-{{sample
-64_file_manager/01_basic/03_uploading.html
-}}
