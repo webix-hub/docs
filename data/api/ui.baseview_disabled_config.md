@@ -2,7 +2,7 @@ disabled
 =============
 
 
-@short: disables item
+@short: indicates whether an item is enabled or not
 	
 
 @type:  bool
@@ -15,6 +15,8 @@ webix.ui({
 
 @template:	api_config
 @descr:
+
+By dafaults all items are enabled, i.e. the value is *false*.
 
 A disabled item looses  focus and will not react on mouse events. 
 

@@ -10,7 +10,7 @@ textValue
 webix.ui({
     view:"select",
     options:{
-       templateValue:"name",
+       textValue:"name",
        data:[
           { name:"Mark", city:"Hrodno" },
           { name:"Anna", city:"Brest" }

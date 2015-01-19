@@ -257,6 +257,39 @@ Loading
 $$("myform").load("data.php");
 ~~~
 
+##Sending Form Data
+
+Form data can be sent to server in either of the following ways: 
+
+1 . Using Webix [Ajax helper](helpers/ajax_operations.md):
+
+~~~js
+webix.ajax().post("some.php", form.getValues()); 
+//with callback
+webix.ajax().post("some.php", form.getValues(), function(text, data, xhr){ });
+~~~
+
+2 . Using [webix.send](api/_send.html) method that emulates HTML form submitting: 
+
+~~~js
+webix.send("come.php", form.getValues());
+~~~
+
+3 . Indirectly, via the **bound master component** or DataCollection: 
+
+The method is good when the form is used for editing the data of the main component (datatable, tree, list, etc.). In this case not the form data matters
+but the data of the main component. Form saves the data to the master component while the master handles the serverside part. 
+
+~~~js
+//data from selected list item is pushed to the form
+form.bind(list);
+
+//pushes the data back to list item
+form.save()
+~~~
+
+Data binding concept is described in a [separate documentation article](desktop/data_binding.md#databinding). 
+
 ##API Reference
 
 [Methods, properties and events](api__refs__ui.form.html)

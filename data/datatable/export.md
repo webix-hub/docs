@@ -1,25 +1,35 @@
 Data export to PDF, Excel
 ==============================
-DataTable data can be exported to the following formats:
+
+[Datatable](datatable/index.md) and [Treetable](desktop/treetable.md) data can be exported to the following formats:
 
 1. [PDF](datatable/export.md#exportexporttopdf);
 2. [Excel](datatable/export.md#exportexporttoexcel).
 
-In both cases **export** should be firstly enabled within the datatable constructor:
+The components don't require any special configurated to be exported. 
+
+For the treetable it is possible to add indentations for tree nodes: 
 
 ~~~js
-webix.ui({
-	view:"datatable",
-	columns:[...],
-	"export":true
-});
+// "value" column will be indented in the exported file
+view:"treetable",
+columns:[
+	{ id:"id"},
+	{ id:"value", exportAsTree:true },
+	{ id:"chapter"}
+]
 ~~~
 
-And, secondly, an appropriate export method should be applied to this datatable. 
+{{sample 15_datatable/30_treetable/12_export.html}}
+
+After that all you need is to apply an appropriate export method to this datatable or treetable. 
 
 Export to PDF
 -------------------
-To export data from DataTable into a PDF document you need to call method api/ui.datatable_exporttopdf.md. For example, if you add a button by clicking on which the grid will start exporting, then its code will look like this: 
+
+To export data from datatable or treetable into a PDF document you need to call method api/ui.datatable_exporttopdf.md. 
+For example, if you add a button by clicking on which the grid will start exporting, then its code will look like this: 
+
 ~~~html
 <input type="button" value="Get as PDF" style='width:400px;margin:25px;' 
 onclick="grid.exportToPDF();">
@@ -38,12 +48,14 @@ The latest packages for installation can be found here:
 The code will look like this:
 
 ~~~js
-grid.exportToPDF("generate.php"); //provide corrent relative path
+grid.exportToPDF("generate.php"); //provide the correct relative path
 ~~~
 
 Export to Excel
 -------------------
-To export data from DataTable into an Excel document you need to call method api/ui.datatable_exporttoexcel.md. For example, if you add a button by clicking on which the grid will start exporting, then its code will look like this: 
+
+To export data from datatable/tretable into an Excel document you need to call method api/ui.datatable_exporttoexcel.md. For example, if you add a button by clicking on which the grid will start exporting, then its code will look like this: 
+
 ~~~html
 <input type="button" value="Get as PDF" style='width:400px;margin:25px;' 
 onclick="grid.exportToExcel();">
@@ -135,10 +147,10 @@ will be the header of the corresponding column in the export table.
 
 Configuration
 -----------------------
-You can define how DataTable will look in PDF or Excel document after it is exported,
-configuring available options in the server side code. For these needs, download local script version. 
+You can define how datatable will look in PDF or Excel document after it is exported,
+configuring available options in the server side code. For these needs, please download the local script version. 
 
-In addition, you gain extra security with local scripts as well as get rid of a text ine that shows download source. 
+In addition, you gain extra security with local scripts as well as get rid of a text that shows download source. 
 
 @keyword:
 	export, pdf, excel

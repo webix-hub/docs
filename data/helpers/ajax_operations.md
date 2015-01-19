@@ -4,7 +4,7 @@ Ajax operations
 Sending Data
 ------------ 
 
-Simplest ajax call can be done as
+Simplest ajax call can be done as:
 
 ~~~js
 webix.ajax("some.php", function(text){
@@ -12,7 +12,7 @@ webix.ajax("some.php", function(text){
 });
 ~~~
 
-Above code makes async. GET request to the "some.php" script and shows it response through callback function. 
+The code above makes an asynchronous GET request to the "some.php" script and shows it response through callback function. 
 
 
 ### Passing parameters
@@ -80,31 +80,49 @@ webix.ajax().sync().post("some.php");
 
 ### Callback
 
-For async ajax calls, last parameter of method is a callback function
+For async ajax calls you can define a callback function in the last parameters of the method. For GET and POST requests the syntax is the same.
+
+The callback function takes the following arguments: 
+
+- **text** - full text of response;
+- **data** - response parsed as JSON or XML, whichever is applicable;
+- **XmlHttpRequest** - loader object;
+
+GET requests: 
 
 ~~~js
-webix.ajax("some.php", function(text, xml, XmlHttpRequest){
-	// text - full text of response 
-	// xml - response parsed as xml , if applicable
-	// XmlHttpRequest - loader object
+webix.ajax("some.php", function(text, data, XmlHttpRequest){
+	//..
+}); 
+
+webix.ajax().get("some.php", function(text, data, XmlHttpRequest){
+	//...
 }); 
 ~~~
 
-For sync requests, there is no callback, because there is no need for waiting
-
+POST request:
 
 ~~~js
-var xhr = webix.ajax().sync().get("some.php");
-var text = xhr.responseText;
+webix.ajax().post("some.php", function(text, data, XmlHttpRequest){
+	//...
+}); 
 ~~~
+
+If you pass parameters to the serverside script, the syntax is as follows: 
+
+~~~js
+webix.ajax().get(url, params, callback);
+webix.ajax().post(url, params, callback);
+~~~
+
 
 It's possible to define two callback methods, one for valid server side response and second for the error response
 ~~~js
 webix.ajax("some.php",{
-	error:function(text, xml, XmlHttpRequest){
+	error:function(text, data, XmlHttpRequest){
 		alert("error");
 	},
-	success:function(text, xml, XmlHttpRequest){
+	success:function(text, data, XmlHttpRequest){
 		alert("success");
 	}
 });
@@ -114,18 +132,33 @@ webix.ajax("some.php",{
 If you need to trigger multiple callbacks after method finishing, you can define an array of callbacks as last parameter
 
 ~~~js
-webix.ajax().get("some.php", [callback1, callback2]);
+//GET requests
+webix.ajax().get(url, [array of callbacks]);
+webix.ajax().get(url, params, [array of callbacks]);
+
+//POST requests
+webix.ajax().post(url, [array of callbacks]);
+webix.ajax().post(url, params, [array of callbacks]);
 ~~~
 
 
-In some case you may need to provide some extra data for callback, it can be done in the next way
+In some case you may need to provide some extra data for callback, it can be done in the next way:
+
 ~~~js
 function after_call(text){
 	 alert("Call: "+this.data+", response: "+text);
 };
 webix.ajax().get("some.php", after_call, { data:"my ajax"});
 ~~~
+
 Basically, the parameter after callback will be accessible as "this" in the callback method
+
+For **sync** requests, there is no callback, because there is no need for waiting
+
+~~~js
+var xhr = webix.ajax().sync().get("some.php");
+var text = xhr.responseText;
+~~~
 
 ### Extra headers
 
@@ -189,7 +222,7 @@ webix.ajax("some.php", function(text,xml){
 });
 ~~~
 
-if necessary you can access raw xml object by using  data.rawxml();
+If necessary you can access raw xml object by using  data.rawxml();
 
 
 #### Other formats

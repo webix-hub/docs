@@ -12,7 +12,6 @@ getValue
 
 @example:
 webix.ui({
-    container:"box",
     view:"form", 
     elements:[
         { view:"button", id:"b1", value:"Edit", type:"form" },
