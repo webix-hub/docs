@@ -32,14 +32,13 @@ The File Manager API includes the following groups of events:
 
 1) Actions handling events
 
-- <a href="#onbeforecopy">onBeforeCopy</a> - fires before an item has been copied
-- <a href="#onbeforecreate">onBeforeCreate</a> - fires before a new folder has been created
-- <a href="#onbeforecut">onBeforeCut</a> - fires before an item has been cut
+- <a href="#onbeforecopy">onBeforeMarkCopy</a> - fires before an item has been copied
+- <a href="#onbeforecreate">onBeforeCreateFolder</a> - fires before a new folder has been created
+- <a href="#onbeforecut">onBeforeMarkCut</a> - fires before an item has been cut
 - <a href="#onbeforedelete">onBeforeDeleteFile</a> - fires before an item is deleted
-- <a href="#onbeforeedit">onBeforeEdit</a> - fires when the Rename action is chosen in the popup menu
-- <a href="#onbeforepaste">onBeforePaste</a> - fires before an item has been pasted
-- <a href="#onbeforerun">onBeforeRun</a> - fires on file double-click or on enter click
-- <a href="#onbeforeupload">onBeforeUpload</a> - fires on the "upload" action click 
+- <a href="#onbeforeedit">onBeforeEditFile</a> - fires when the Rename action is chosen in the popup menu
+- <a href="#onbeforepaste">onBeforePasteFile</a> - fires before an item has been pasted
+- <a href="#onbeforeupload">onBeforeUploadFile</a> - fires on the "upload" action click 
 
 2) Drag-n-drop Events
 
@@ -57,16 +56,17 @@ The File Manager API includes the following groups of events:
 4)  Other
 
 - <a href="#onerrorresponse">onErrorResponse</a> - fires if an error has occured during some operation
+- <a href="#onbeforerun">onBeforeRun</a> - fires on file double-click or on enter click
 - <a href="#onfolderselect">onFolderSelect</a> - fires on selecting a folder in the Tree view
 - <a href="#onviewinit">onViewInit</a> - fires during the initialization of an object with the mode configuration
 
 
-###<span id='onbeforecopy'>onBeforeCopy</span> 
+###<span id='onbeforecopy'>onBeforeMarkCopy</span> 
 
 fires before an item has been marked for copying
 
 ~~~js
-$$("fmanager").attachEvent("onBeforeCopy", function(ids){
+$$("fmanager").attachEvent("onBeforeMarkCopy", function(ids){
 	// your code
 	return true;
 });
@@ -84,12 +84,12 @@ returns:
 64_file_manager/02_events/05_copy.html
 }}
 
-###<span id='onbeforecreate'>onBeforeCreate</span> 
+###<span id='onbeforecreate'>onBeforeCreateFolder</span> 
 
 fires before a new folder has been created
 
 ~~~js       
-$$("fmanager").attachEvent("onBeforeCreate",function(id){
+$$("fmanager").attachEvent("onBeforeCreateFolder",function(id){
 	// your code
 	return true;
 });
@@ -104,12 +104,12 @@ returns:
 - {bool} - returning false will prevent creating
 
 
-###<span id='onbeforecut'>onBeforeCut</span> 
+###<span id='onbeforecut'>onBeforeMarkCut</span> 
 
 fires before an item has been marked for cutting
 
 ~~~js
-$$("files").attachEvent("onBeforeCut", function(ids){
+$$("files").attachEvent("onBeforeMarkCut", function(ids){
 	// your code
 	return true;
 });
@@ -147,12 +147,12 @@ returns:
 - {bool} - returning false will prevent deleting
 
 
-###<span id='onbeforeedit'>onBeforeEdit</span> 
+###<span id='onbeforeedit'>onBeforeEditFile</span> 
 
 fires when the Rename action is chosen in the popup menu
 
 ~~~js
-$$("fmanager").attachEvent("onBeforeEdit",function(id){
+$$("fmanager").attachEvent("onBeforeEditFile",function(id){
     // your code 
 	return true;
 });
@@ -164,7 +164,7 @@ params:
 
 returns:
 
-- {bool} - if an event handler returns false, onBeforeEdit handler will not be called.
+- {bool} - if an event handler returns false, onBeforeEditFile handler will not be called.
 
 {{sample
 64_file_manager/02_events/04_rename.html
@@ -172,12 +172,12 @@ returns:
 
 
 
-###<span id='onbeforepaste'>onBeforePaste</span> 
+###<span id='onbeforepaste'>onBeforePasteFile</span> 
 
 fires before an item has been pasted
 
 ~~~js
-$$("fmanager").attachEvent("onBeforePaste", function(ids){
+$$("fmanager").attachEvent("onBeforePasteFile", function(ids){
 	// your code
 	return true;
 });
@@ -195,44 +195,14 @@ returns:
 64_file_manager/02_events/05_copy.html
 }}
 
-###<span id='onbeforerun'>onBeforeRun</span> 
-
-fires before a selected file is downloaded
-
-~~~js
-$$("fmanager").attachEvent("onBeforeRun",function(id){
-	webix.confirm({
-		text:"Do you want to download this file?",
-		ok:"Yes",
-		cancel:"No",
-		callback:function(result){
-			if(result)
-				$$("files").download(id);
-		}
-	});
-	return false;
-});
-~~~
-
-params:
-
-- id - {string} the id of the downloaded item 
-
-returns:
-
-- {bool} - if an event handler returns false, onBeforeRun handler will not be called.
-
-{{sample
-64_file_manager/02_events/02_download.html
-}}
 
 
-###<span id='onbeforeupload'>onBeforeUpload</span> 
+###<span id='onbeforeupload'>onBeforeUploadFile</span> 
 
 fires on "upload" action click  
 
 ~~~js       
-$$("fmanager").attachEvent("onBeforeUpload",function(targetId){
+$$("fmanager").attachEvent("onBeforeUploadFile",function(targetId){
 	// your code
 	return true;
 });
@@ -435,6 +405,37 @@ params:
 
 {{sample
 64_file_manager/02_events/06_error.html
+}}
+
+###<span id='onbeforerun'>onBeforeRun</span> 
+
+fires before a selected file is downloaded
+
+~~~js
+$$("fmanager").attachEvent("onBeforeRun",function(id){
+	webix.confirm({
+		text:"Do you want to download this file?",
+		ok:"Yes",
+		cancel:"No",
+		callback:function(result){
+			if(result)
+				$$("files").download(id);
+		}
+	});
+	return false;
+});
+~~~
+
+params:
+
+- id - {string} the id of the downloaded item 
+
+returns:
+
+- {bool} - if an event handler returns false, onBeforeRun handler will not be called.
+
+{{sample
+64_file_manager/02_events/02_download.html
 }}
 
 ###<span id='onfolderselect'>onFolderSelect</span> 

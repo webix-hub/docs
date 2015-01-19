@@ -38,7 +38,7 @@ webix.i18n.filemanager = {
 	cut: "Cut",
 	paste: "Paste",
 	upload: "Upload",
-	delete: "Delete",
+	remove: "Delete",
 	create: "Create Folder",
 	rename: "Rename",
 	location: "Location",
@@ -55,7 +55,7 @@ webix.i18n.filemanager = {
 		code: "Code",
 		audio: "Audio",
 		archive: "Archive",
-		default: "File"
+		file: "File"
 	}
 };
 ~~~

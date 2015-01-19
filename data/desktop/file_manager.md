@@ -4,7 +4,7 @@ File Manager
 Webix File Manager is intended for viewing folders and files and navigating through them in a handy way.
 
 This tool lets you perform all habitual operations with files and folders (copy/paste, rename, delete), as well as drag-n-drop them.
-What is more, it's possible to upload and download files and search for necessary files and folders.
+Moreover, it's possible to upload and download files and search for necessary files and folders.
 
 Apart from files, File Manager allows working with any kind of hierarchical data and can be easily integrated into a web app.
 

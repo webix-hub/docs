@@ -11,7 +11,7 @@ The following templates are available:
 - <a href="#size">templateSize</a> - the template applied for the file size
 - <a href="#date">templateDate</a> - the template applied for the format of folder/file's date of modification
 - <a href="#create">templateCreate</a> - the template for a newly created folder
-- <a href="#templateicons">templateIcons</a> - the template for icons used in "Files" and "Table" view modes. The icons are customizable
+- <a href="#templateicon">templateIcon</a> - the template for icons used in "Files" and "Table" view modes. The icons are customizable
 - <a href="#templatetype">templateType</a> - the template for the type of a file
 - <a href="#icons">icons</a> - an array of icons. The icons are taken from the [Font Awesome](http://fortawesome.github.io/Font-Awesome/) collection 
 
@@ -101,7 +101,7 @@ A customizable template for icons in "Files" and "Table" view modes.
 ~~~js
 templateIcon: function(obj,common){
 	return "<span class='webix_icon webix_fmanager_icon fa-"
-    	+(common.icons[obj.type]||common.icons["default"])+"'></span>";
+    	+(common.icons[obj.type]||common.icons["file"])+"'></span>";
 },
 ~~~
 
@@ -132,7 +132,7 @@ icons: {
 			code: "file-code-o",
 			audio: "file-audio-o",
 			archive: "file-archive-o",
-			default: "file-o"
+			file: "file-o"
 		}
 ~~~
 

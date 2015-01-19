@@ -499,7 +499,7 @@ defines a template for icons that can be customized (used in "files" and "table"
 ~~~js
 templateIcon: function(obj,common){
     return "<span class='webix_icon webix_fmanager_icon fa-"
-        +(common.icons[obj.type]||common.icons["default"])+"'></span>";
+        +(common.icons[obj.type]||common.icons["file"])+"'></span>";
 },
 ~~~
 
