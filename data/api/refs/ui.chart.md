@@ -109,14 +109,15 @@ It's possible to present multiple data sets on the same chart.  Check [chart](de
 - api/link/ui.chart_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.chart_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.chart_onitemdblclick_event.md - fires when a component item was double-clicked
+- api/link/ui.chart_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.chart_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.chart_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.chart_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.chart_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.chart_onmouseout_event.md - fires when the mouse was moved out from the specified item
-- api/link/ui.chart_onrotate_event.md - occurs on screen rotating
 - api/link/ui.chart_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.chart_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.chart_ontimedkeypress_event.md - fires after typing has been finished in the field
 - api/link/ui.chart_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.chart_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.chart_ontouchstart_event.md - when some webix view has been touched
@@ -138,11 +139,11 @@ It's possible to present multiple data sets on the same chart.  Check [chart](de
 - api/link/ui.chart_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.chart_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.chart_data_config.md - an inline dataset that data to the component will be load from.
-- api/link/ui.chart_datafeed_config.md - the url to the data source that the component will use to reload data from
+- api/link/ui.chart_datafeed_config.md - the url that the component will use to reload data during binding
 - api/link/ui.chart_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.chart_datatype_config.md - the type of loaded data
 - api/ui.chart_disablelines_config.md - disapbles graph lines with radar chart
-- api/link/ui.chart_disabled_config.md - disables item
+- api/link/ui.chart_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.chart_eventradius_config.md - sets the radius (in pixels) of the virtual circle which events will fire for items within
 - api/ui.chart_fill_config.md - fills the chart area with the specified background color.
 - api/ui.chart_fixoverflow_config.md - chart max limit mode
@@ -183,7 +184,7 @@ It's possible to present multiple data sets on the same chart.  Check [chart](de
 - api/ui.chart_shadow_config.md - enables/disables the pie shadow
 - api/link/ui.chart_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/ui.chart_type_config.md - sets the chart type
-- api/link/ui.chart_url_config.md - the url of a data feed which will be loaded after component initialization
+- api/link/ui.chart_url_config.md - the url the component will use to load data after its initialization
 - api/ui.chart_value_config.md - defines values for the vertical axis
 - api/link/ui.chart_width_config.md - sets the width of the component
 - api/ui.chart_x_config.md - the horizontal position of the pie center

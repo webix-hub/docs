@@ -39,7 +39,7 @@ The component serves as the base class that defines properties, methods, and eve
 - api/link/ui.list_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.list_copy.md - copies an item to the same or another object
 - api/link/ui.list_count.md - returns the count of items in the table
-- api/link/ui.list_customize.md - redefines the 'type' property
+- api/link/ui.list_customize.md - redefines the "type" property
 - api/link/ui.list_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.list_destructor.md - destructs the calling object
 - api/link/ui.list_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
@@ -138,16 +138,17 @@ The component serves as the base class that defines properties, methods, and eve
 - api/link/ui.list_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.list_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.list_onitemrender_event.md - for each item rendering, occurs only for items with custom templates
+- api/link/ui.list_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.list_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.list_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.list_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.list_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.list_onmouseout_event.md - fires when the mouse was moved out from the specified item
 - api/link/ui.list_onpaste_event.md - fires when the user presses CTRL+V keys combination
-- api/link/ui.list_onrotate_event.md - occurs on screen rotating
 - api/link/ui.list_onselectchange_event.md - fires after selection state was changed
 - api/link/ui.list_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.list_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.list_ontimedkeypress_event.md - fires after typing has been finished in the field
 - api/link/ui.list_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.list_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.list_ontouchstart_event.md - when some webix view has been touched
@@ -169,10 +170,10 @@ The component serves as the base class that defines properties, methods, and eve
 - api/link/ui.list_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.list_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.list_data_config.md - an inline dataset that data to the component will be load from.
-- api/link/ui.list_datafeed_config.md - the url to the data source that the component will use to reload data from
+- api/link/ui.list_datafeed_config.md - the url that the component will use to reload data during binding
 - api/link/ui.list_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.list_datatype_config.md - the type of loaded data
-- api/link/ui.list_disabled_config.md - disables item
+- api/link/ui.list_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.list_drag_config.md - enables or disables drag-and-drop
 - api/link/ui.list_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.list_externaldata_config.md - allows defining custom 'move' logic for the component.
@@ -205,7 +206,7 @@ The component serves as the base class that defines properties, methods, and eve
 - api/link/ui.list_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
 - api/link/ui.list_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.list_type_config.md - object that specifies items presentation
-- api/link/ui.list_url_config.md - the url of a data feed which will be loaded after component initialization
+- api/link/ui.list_url_config.md - the url the component will use to load data after its initialization
 - api/link/ui.list_width_config.md - sets the width of the component
 - api/ui.list_xcount_config.md - defines width of view in items
 - api/ui.list_ycount_config.md - defines height of view in items

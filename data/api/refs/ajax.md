@@ -29,6 +29,7 @@ The lib can execute **get** and **post** requests in sync and async mode. For mo
 - api/ajax_header.md - sets the HTTP request header
 - api/ajax_post.md - issues a POST Ajax request to the server
 - api/ajax_put.md - issues a PUT Ajax request to the server
+- api/ajax_response.md - 
 - api/ajax_sync.md - 'says' to send requests synchronously
 }}
 

@@ -68,13 +68,14 @@ Each accordion pane consists of the header and body. The body of a pane can be c
 - api/link/ui.accordionitem_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.accordionitem_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.accordionitem_onitemdblclick_event.md - fires when a component item was double-clicked
+- api/link/ui.accordionitem_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.accordionitem_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.accordionitem_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.accordionitem_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.accordionitem_onmouseout_event.md - fires when the mouse was moved out from the specified item
-- api/link/ui.accordionitem_onrotate_event.md - occurs on screen rotating
 - api/link/ui.accordionitem_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.accordionitem_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.accordionitem_ontimedkeypress_event.md - fires after typing has been finished in the field
 - api/link/ui.accordionitem_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.accordionitem_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.accordionitem_ontouchstart_event.md - when some webix view has been touched
@@ -91,7 +92,7 @@ Each accordion pane consists of the header and body. The body of a pane can be c
 - api/ui.accordionitem_collapsed_config.md - displays the cell collapsed initially
 - api/link/ui.accordionitem_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.accordionitem_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.accordionitem_disabled_config.md - disables item
+- api/link/ui.accordionitem_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.accordionitem_gravity_config.md - sets the view gravity (1 by default)
 - api/ui.accordionitem_header_config.md - sets the label of the header in the expanded state
 - api/ui.accordionitem_headeralt_config.md - sets the label of the header in the collapsed state

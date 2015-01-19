@@ -8,7 +8,7 @@ Properties
 - api/link/ui.multiview_cols_config.md - array of views objects arranged horizontally
 - api/link/ui.multiview_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.multiview_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.multiview_disabled_config.md - disables item
+- api/link/ui.multiview_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.multiview_fitbiggest_config.md - sizing mode of multiview
 - api/link/ui.multiview_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.multiview_height_config.md - sets the height of the component

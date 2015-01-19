@@ -13,7 +13,7 @@ Methods
 - api/link/ui.proto_clearcss.md - removes css class from all items
 - api/link/ui.proto_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.proto_count.md - returns the count of items in the table
-- api/link/ui.proto_customize.md - redefines the 'type' property
+- api/link/ui.proto_customize.md - redefines the "type" property
 - api/link/ui.proto_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.proto_destructor.md - destructs the calling object
 - api/link/ui.proto_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)

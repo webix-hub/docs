@@ -9,11 +9,11 @@ Properties
 - api/link/ui.dataview_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.dataview_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.dataview_data_config.md - an inline dataset that data to the component will be load from.
-- api/link/ui.dataview_datafeed_config.md - the url to the data source that the component will use to reload data from
+- api/link/ui.dataview_datafeed_config.md - the url that the component will use to reload data during binding
 - api/link/ui.dataview_datafetch_config.md - defines the start position DataTable will load data from
 - api/link/ui.dataview_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.dataview_datatype_config.md - the type of loaded data
-- api/link/ui.dataview_disabled_config.md - disables item
+- api/link/ui.dataview_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.dataview_drag_config.md - enables or disables drag-and-drop
 - api/link/ui.dataview_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.dataview_externaldata_config.md - allows defining custom 'move' logic for the component.
@@ -45,7 +45,7 @@ Properties
 - api/link/ui.dataview_template_config.md - the component template
 - api/link/ui.dataview_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.dataview_type_config.md - object that specifies items presentation
-- api/link/ui.dataview_url_config.md - the url of a data feed which will be loaded after component initialization
+- api/link/ui.dataview_url_config.md - the url the component will use to load data after its initialization
 - api/link/ui.dataview_width_config.md - sets the width of the component
 - api/ui.dataview_xcount_config.md - adjusts the view width to display the defined number of items in a row
 - api/ui.dataview_ycount_config.md - adjusts the view height to display the defined number of items in a column

@@ -15,12 +15,12 @@ Properties
 - api/link/ui.treetable_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.treetable_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.treetable_data_config.md - an inline dataset that data to the component will be load from.
-- api/link/ui.treetable_datafeed_config.md - the url to the data source that the component will use to reload data from
+- api/link/ui.treetable_datafeed_config.md - the url that the component will use to reload data during binding
 - api/link/ui.treetable_datafetch_config.md - defines the start position DataTable will load data from
 - api/link/ui.treetable_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.treetable_datatype_config.md - the type of loaded data
 - api/link/ui.treetable_delimiter_config.md - sets CSV delimiters for clipboard operations
-- api/link/ui.treetable_disabled_config.md - disables item
+- api/link/ui.treetable_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.treetable_drag_config.md - enables or disables drag-and-drop
 - api/link/ui.treetable_dragcolumn_config.md - enables drag-and-drop support for columns
 - api/link/ui.treetable_dragscroll_config.md - enables autoscroll of component during drag-n-drop
@@ -39,6 +39,7 @@ Properties
 - api/link/ui.treetable_headermenu_config.md - adds a headermenu to control column visibility
 - api/link/ui.treetable_height_config.md - sets the height of the component
 - api/link/ui.treetable_hidden_config.md - defines whether the view will be hidden initially
+- api/link/ui.treetable_hover_config.md - css class for a row-hover in the datatable
 - api/link/ui.treetable_id_config.md - the component ID
 - api/link/ui.treetable_leftsplit_config.md - the number of the fixed columns from the left side of the table (actual for the <a href="datatable/frozen_columns.md">split mode</a> )
 - api/link/ui.treetable_livevalidation_config.md - validation during cell editing
@@ -79,7 +80,7 @@ Properties
 - api/link/ui.treetable_threestate_config.md - defines three-state checkboxes for the tree. Flase by default.
 - api/link/ui.treetable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.treetable_type_config.md - used for configuring presentation of items
-- api/link/ui.treetable_url_config.md - the url of a data feed which will be loaded after component initialization
+- api/link/ui.treetable_url_config.md - the url the component will use to load data after its initialization
 - api/link/ui.treetable_width_config.md - sets the width of the component
 - api/link/ui.treetable_ycount_config.md - defines height of datatable in rows
 }}
@@ -122,6 +123,7 @@ Properties
 - api/link/ui.treetable_headermenu_config.md
 - api/link/ui.treetable_height_config.md
 - api/link/ui.treetable_hidden_config.md
+- api/link/ui.treetable_hover_config.md
 - api/link/ui.treetable_id_config.md
 - api/link/ui.treetable_leftsplit_config.md
 - api/link/ui.treetable_livevalidation_config.md

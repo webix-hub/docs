@@ -65,11 +65,12 @@ as well as component [editor](api/refs/editors.md).
 - api/link/ui.multisuggest_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.multisuggest_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.multisuggest_onhide_event.md - fires when window is hidden
+- api/link/ui.multisuggest_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.multisuggest_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
-- api/link/ui.multisuggest_onrotate_event.md - occurs on screen rotating
 - api/link/ui.multisuggest_onshow_event.md - fires when window is shown
 - api/link/ui.multisuggest_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.multisuggest_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.multisuggest_ontimedkeypress_event.md - fires after typing has been finished in the field
 - api/link/ui.multisuggest_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.multisuggest_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.multisuggest_ontouchstart_event.md - when some webix view has been touched
@@ -91,7 +92,7 @@ as well as component [editor](api/refs/editors.md).
 - api/ui.multisuggest_buttontext_config.md - defines text for the 'Select' button
 - api/link/ui.multisuggest_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.multisuggest_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.multisuggest_disabled_config.md - disables item
+- api/link/ui.multisuggest_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.multisuggest_filter_config.md - custom filtering function
 - api/link/ui.multisuggest_fitmaster_config.md - size suggest box to the master control
 - api/link/ui.multisuggest_gravity_config.md - sets the view gravity (1 by default)

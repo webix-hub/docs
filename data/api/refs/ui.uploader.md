@@ -40,6 +40,7 @@ The component allows tracking the whole progress of individual file upload. Full
 - api/link/ui.uploader_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.uploader_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.uploader_enable.md - enables the calling view that was disabled by the 'disable' method
+- api/ui.uploader_filedialog.md - 
 - api/link/ui.uploader_focus.md - sets focus to the control
 - api/link/ui.uploader_getchildviews.md - returns child views of the calling component
 - api/link/ui.uploader_getformview.md - returns master form for the input
@@ -60,6 +61,7 @@ The component allows tracking the whole progress of individual file upload. Full
 - api/ui.uploader_send.md - sends files from uploader body to server
 - api/link/ui.uploader_setvalue.md - sets a new value for the component
 - api/link/ui.uploader_show.md - makes the component visible
+- api/ui.uploader_stopupload.md - 
 - api/link/ui.uploader_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.uploader_unbind.md - breaks "bind" link
 - api/link/ui.uploader_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
@@ -82,9 +84,9 @@ The component allows tracking the whole progress of individual file upload. Full
 - api/link/ui.uploader_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.uploader_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.uploader_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
-- api/link/ui.uploader_onrotate_event.md - occurs on screen rotating
 - api/link/ui.uploader_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.uploader_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.uploader_ontimedkeypress_event.md - fires after typing has been finished in the field
 - api/link/ui.uploader_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.uploader_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.uploader_ontouchstart_event.md - when some webix view has been touched
@@ -105,8 +107,9 @@ The component allows tracking the whole progress of individual file upload. Full
 - api/link/ui.uploader_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.uploader_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.uploader_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.uploader_disabled_config.md - disables item
+- api/link/ui.uploader_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.uploader_formdata_config.md - 
+- api/ui.uploader_getvalue_config.md - 
 - api/link/ui.uploader_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.uploader_height_config.md - sets the height of the component
 - api/link/ui.uploader_hidden_config.md - defines whether the view will be hidden initially

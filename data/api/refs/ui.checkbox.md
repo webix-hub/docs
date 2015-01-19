@@ -77,7 +77,6 @@ The control allows users to make multiple choices from a number of options. Full
 - api/link/ui.checkbox_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.checkbox_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.checkbox_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
-- api/link/ui.checkbox_onrotate_event.md - occurs on screen rotating
 - api/link/ui.checkbox_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.checkbox_onswipey_event.md - occurs on a vertical swipe movement
 - api/link/ui.checkbox_ontimedkeypress_event.md - fires after typing has been finished in the field
@@ -101,7 +100,7 @@ The control allows users to make multiple choices from a number of options. Full
 - api/link/ui.checkbox_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.checkbox_css_config.md - the name of a css class that will be applied to the view container
 - api/ui.checkbox_customcheckbox_config.md - enables/disables custom checkbox in some skins
-- api/link/ui.checkbox_disabled_config.md - disables item
+- api/link/ui.checkbox_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.checkbox_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.checkbox_height_config.md - sets the height of the component
 - api/link/ui.checkbox_hidden_config.md - defines whether the view will be hidden initially

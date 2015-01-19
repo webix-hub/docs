@@ -1,1 +1,1 @@
-@link: api/ui.text_ontimedkeypress_event.md
+@link: api/ui.view_ontimedkeypress_event.md

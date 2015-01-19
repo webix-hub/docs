@@ -71,11 +71,12 @@ The control supports any content inside of it. The content blocks can be arrange
 - api/link/ui.carousel_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.carousel_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.carousel_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.carousel_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.carousel_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
-- api/link/ui.carousel_onrotate_event.md - occurs on screen rotating
 - api/ui.carousel_onshow_event.md - fires when a new view is shown in carousel
 - api/link/ui.carousel_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.carousel_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.carousel_ontimedkeypress_event.md - fires after typing has been finished in the field
 - api/link/ui.carousel_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.carousel_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.carousel_ontouchstart_event.md - when some webix view has been touched
@@ -91,7 +92,7 @@ The control supports any content inside of it. The content blocks can be arrange
 - api/ui.carousel_cols_config.md - array of views objects arranged horizontally
 - api/link/ui.carousel_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.carousel_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.carousel_disabled_config.md - disables item
+- api/link/ui.carousel_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.carousel_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.carousel_height_config.md - sets the height of the component
 - api/link/ui.carousel_hidden_config.md - defines whether the view will be hidden initially

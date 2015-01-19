@@ -84,13 +84,14 @@ The control supports all date and time formats. Besides the days of the month, i
 - api/link/ui.calendar_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.calendar_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.calendar_onitemdblclick_event.md - fires when a component item was double-clicked
+- api/link/ui.calendar_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.calendar_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.calendar_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.calendar_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.calendar_onmouseout_event.md - fires when the mouse was moved out from the specified item
-- api/link/ui.calendar_onrotate_event.md - occurs on screen rotating
 - api/link/ui.calendar_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.calendar_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.calendar_ontimedkeypress_event.md - fires after typing has been finished in the field
 - api/link/ui.calendar_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.calendar_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.calendar_ontouchstart_event.md - when some webix view has been touched
@@ -108,16 +109,18 @@ The control supports all date and time formats. Besides the days of the month, i
 - api/ui.calendar_calendartime_config.md - defines calendar time format (with timepicker enabled)
 - api/ui.calendar_calendarweekheader_config.md - specifies the label for the column with weeks numbers
 - api/ui.calendar_cellheight_config.md - the height of the cell with day (36)
+- api/ui.calendar_closebutton_config.md - 
 - api/link/ui.calendar_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.calendar_css_config.md - the name of a css class that will be applied to the view container
 - api/ui.calendar_date_config.md - sets the initial date of the calendar (particularly month and year).
 - api/ui.calendar_daytemplate_config.md - defines a template for a calendar day cell
-- api/link/ui.calendar_disabled_config.md - disables item
+- api/link/ui.calendar_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.calendar_events_config.md - sets an additional css class that will be applied to days
 - api/link/ui.calendar_gravity_config.md - sets the view gravity (1 by default)
 - api/ui.calendar_headerheight_config.md - total height of the area not taken by calendar body
 - api/link/ui.calendar_height_config.md - sets the height of the component
 - api/link/ui.calendar_hidden_config.md - defines whether the view will be hidden initially
+- api/ui.calendar_icons_config.md - 
 - api/link/ui.calendar_id_config.md - the component ID
 - api/ui.calendar_maxdate_config.md - set man limit for selected date
 - api/link/ui.calendar_maxheight_config.md - sets the maximum height for the view
@@ -136,8 +139,10 @@ The control supports all date and time formats. Besides the days of the month, i
 - api/link/ui.calendar_onmousemove_config.md - attaches a dblclick behavior for component items with the specified CSS class.
 - api/ui.calendar_select_config.md - enables date selection within the calendar.
 - api/ui.calendar_skipemptyweeks_config.md - enables/disables displaying empty weeks (true)
+- api/ui.calendar_time_config.md - 
 - api/ui.calendar_timepicker_config.md - enables clock for time selection
 - api/ui.calendar_timepickerheight_config.md - sets height of timepicker area
+- api/ui.calendar_type_config.md - 
 - api/ui.calendar_weekheader_config.md - enables/disables additional header with week days (false)
 - api/ui.calendar_weeknumber_config.md - enables/disables additional left column with weeks' numbers (false)
 - api/link/ui.calendar_width_config.md - sets the width of the component

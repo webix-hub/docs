@@ -76,10 +76,9 @@ A label inside the control differs it from the input component. Check [text](des
 - api/link/ui.text_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.text_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.text_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
-- api/link/ui.text_onrotate_event.md - occurs on screen rotating
 - api/link/ui.text_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.text_onswipey_event.md - occurs on a vertical swipe movement
-- api/ui.text_ontimedkeypress_event.md - fires after typing has been finished in the field
+- api/link/ui.text_ontimedkeypress_event.md - fires after typing has been finished in the field
 - api/link/ui.text_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.text_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.text_ontouchstart_event.md - when some webix view has been touched
@@ -98,7 +97,7 @@ A label inside the control differs it from the input component. Check [text](des
 - api/link/ui.text_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.text_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.text_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.text_disabled_config.md - disables item
+- api/link/ui.text_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.text_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.text_height_config.md - sets the height of the component
 - api/link/ui.text_hidden_config.md - defines whether the view will be hidden initially

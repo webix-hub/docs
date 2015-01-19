@@ -11,8 +11,9 @@ Properties
 - api/link/ui.uploader_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.uploader_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.uploader_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.uploader_disabled_config.md - disables item
+- api/link/ui.uploader_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.uploader_formdata_config.md - 
+- api/ui.uploader_getvalue_config.md - 
 - api/link/ui.uploader_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.uploader_height_config.md - sets the height of the component
 - api/link/ui.uploader_hidden_config.md - defines whether the view will be hidden initially
@@ -51,6 +52,7 @@ Properties
 - api/link/ui.uploader_css_config.md
 - api/link/ui.uploader_disabled_config.md
 - api/ui.uploader_formdata_config.md
+- api/ui.uploader_getvalue_config.md
 - api/link/ui.uploader_gravity_config.md
 - api/link/ui.uploader_height_config.md
 - api/link/ui.uploader_hidden_config.md

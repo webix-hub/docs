@@ -98,15 +98,16 @@ The component can be used for creating various on-page editors. The value field 
 - api/link/ui.property_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.property_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.property_onitemdblclick_event.md - fires when a component item was double-clicked
+- api/link/ui.property_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.property_onliveedit_event.md - occurs when data was changed in the editor
 - api/link/ui.property_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.property_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.property_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.property_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.property_onmouseout_event.md - fires when the mouse was moved out from the specified item
-- api/link/ui.property_onrotate_event.md - occurs on screen rotating
 - api/link/ui.property_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.property_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.property_ontimedkeypress_event.md - fires after typing has been finished in the field
 - api/link/ui.property_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.property_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.property_ontouchstart_event.md - when some webix view has been touched
@@ -124,9 +125,9 @@ The component can be used for creating various on-page editors. The value field 
 - api/link/ui.property_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.property_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.property_data_config.md - an inline dataset that data to the component will be load from.
-- api/link/ui.property_datafeed_config.md - the url to the data source that the component will use to reload data from
+- api/link/ui.property_datafeed_config.md - the url that the component will use to reload data during binding
 - api/link/ui.property_datatype_config.md - the type of loaded data
-- api/link/ui.property_disabled_config.md - disables item
+- api/link/ui.property_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.property_editvalue_config.md - defines which data item is editable (in case of several data item in the cell/line)
 - api/link/ui.property_editable_config.md - allows/denies editing in the view
 - api/link/ui.property_editaction_config.md - defines the action on which editors will be opened
@@ -150,7 +151,7 @@ The component can be used for creating various on-page editors. The value field 
 - api/link/ui.property_scroll_config.md - enables/disables the scroll bar
 - api/link/ui.property_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.property_template_config.md - the component template
-- api/link/ui.property_url_config.md - the url of a data feed which will be loaded after component initialization
+- api/link/ui.property_url_config.md - the url the component will use to load data after its initialization
 - api/link/ui.property_width_config.md - sets the width of the component
 }}
 

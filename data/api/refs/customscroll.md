@@ -1,9 +1,7 @@
 CustomScroll 
 =============
 
-{{memo Renders custom scrollbars to Webix views. }}
-
-Study in detail in the [corresponding article](desktop/scroll_control.md#webixcustomscroll) of the main documentation. 
+Renders custom scrollbars to Webix views 
 
 
 <div class='h2'>Methods</div>
@@ -12,6 +10,10 @@ Study in detail in the [corresponding article](desktop/scroll_control.md#webixcu
 - api/customscroll_enable.md - enables custom scroll
 - api/customscroll_init.md - initialize custom scroll mode
 }}
+
+
+
+
 
 <div class='h2'>Other</div>
 

@@ -30,16 +30,17 @@ Events
 - api/link/ui.grouplist_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.grouplist_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.grouplist_onitemrender_event.md - for each item rendering, occurs only for items with custom templates
+- api/link/ui.grouplist_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.grouplist_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.grouplist_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.grouplist_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.grouplist_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.grouplist_onmouseout_event.md - fires when the mouse was moved out from the specified item
 - api/link/ui.grouplist_onpaste_event.md - fires when the user presses CTRL+V keys combination
-- api/link/ui.grouplist_onrotate_event.md - occurs on screen rotating
 - api/link/ui.grouplist_onselectchange_event.md - fires after selection state was changed
 - api/link/ui.grouplist_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.grouplist_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.grouplist_ontimedkeypress_event.md - fires after typing has been finished in the field
 - api/link/ui.grouplist_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.grouplist_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.grouplist_ontouchstart_event.md - when some webix view has been touched
@@ -77,16 +78,17 @@ Events
 - api/link/ui.grouplist_onitemclick_event.md
 - api/link/ui.grouplist_onitemdblclick_event.md
 - api/link/ui.grouplist_onitemrender_event.md
+- api/link/ui.grouplist_onkeypress_event.md
 - api/link/ui.grouplist_onloaderror_event.md
 - api/link/ui.grouplist_onlongtouch_event.md
 - api/link/ui.grouplist_onmousemove_event.md
 - api/link/ui.grouplist_onmousemoving_event.md
 - api/link/ui.grouplist_onmouseout_event.md
 - api/link/ui.grouplist_onpaste_event.md
-- api/link/ui.grouplist_onrotate_event.md
 - api/link/ui.grouplist_onselectchange_event.md
 - api/link/ui.grouplist_onswipex_event.md
 - api/link/ui.grouplist_onswipey_event.md
+- api/link/ui.grouplist_ontimedkeypress_event.md
 - api/link/ui.grouplist_ontouchend_event.md
 - api/link/ui.grouplist_ontouchmove_event.md
 - api/link/ui.grouplist_ontouchstart_event.md

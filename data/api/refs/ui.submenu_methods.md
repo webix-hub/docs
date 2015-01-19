@@ -15,7 +15,7 @@ Methods
 - api/link/ui.submenu_close.md - removes a window
 - api/link/ui.submenu_copy.md - copies an item to the same or another object
 - api/link/ui.submenu_count.md - returns the count of items in the table
-- api/link/ui.submenu_customize.md - redefines the 'type' property
+- api/link/ui.submenu_customize.md - redefines the "type" property
 - api/link/ui.submenu_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.submenu_destructor.md - destructs the calling object
 - api/link/ui.submenu_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)

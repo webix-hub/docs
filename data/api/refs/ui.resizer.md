@@ -58,13 +58,14 @@ The component is used to make some view placed into a layout draggable by a spec
 - api/link/ui.resizer_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.resizer_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.resizer_onitemdblclick_event.md - fires when a component item was double-clicked
+- api/link/ui.resizer_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.resizer_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.resizer_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.resizer_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.resizer_onmouseout_event.md - fires when the mouse was moved out from the specified item
-- api/link/ui.resizer_onrotate_event.md - occurs on screen rotating
 - api/link/ui.resizer_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.resizer_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.resizer_ontimedkeypress_event.md - fires after typing has been finished in the field
 - api/link/ui.resizer_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.resizer_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.resizer_ontouchstart_event.md - when some webix view has been touched
@@ -79,7 +80,7 @@ The component is used to make some view placed into a layout draggable by a spec
 - api/link/ui.resizer_borderless_config.md - used to hide the component borders
 - api/link/ui.resizer_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.resizer_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.resizer_disabled_config.md - disables item
+- api/link/ui.resizer_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.resizer_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.resizer_height_config.md - sets the height of the component
 - api/link/ui.resizer_hidden_config.md - defines whether the view will be hidden initially

@@ -54,10 +54,11 @@ The component has a pure API and only used to fill a layout cell if it's suppose
 - api/link/ui.spacer_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.spacer_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.spacer_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.spacer_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.spacer_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
-- api/link/ui.spacer_onrotate_event.md - occurs on screen rotating
 - api/link/ui.spacer_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.spacer_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.spacer_ontimedkeypress_event.md - fires after typing has been finished in the field
 - api/link/ui.spacer_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.spacer_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.spacer_ontouchstart_event.md - when some webix view has been touched
@@ -72,7 +73,7 @@ The component has a pure API and only used to fill a layout cell if it's suppose
 - api/link/ui.spacer_borderless_config.md - used to hide the component borders
 - api/link/ui.spacer_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.spacer_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.spacer_disabled_config.md - disables item
+- api/link/ui.spacer_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.spacer_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.spacer_height_config.md - sets the height of the component
 - api/link/ui.spacer_hidden_config.md - defines whether the view will be hidden initially

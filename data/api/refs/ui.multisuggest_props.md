@@ -10,7 +10,7 @@ Properties
 - api/ui.multisuggest_buttontext_config.md - defines text for the 'Select' button
 - api/link/ui.multisuggest_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.multisuggest_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.multisuggest_disabled_config.md - disables item
+- api/link/ui.multisuggest_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.multisuggest_filter_config.md - custom filtering function
 - api/link/ui.multisuggest_fitmaster_config.md - size suggest box to the master control
 - api/link/ui.multisuggest_gravity_config.md - sets the view gravity (1 by default)

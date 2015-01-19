@@ -67,11 +67,12 @@ The window can contain any content, be modal or modeless. The main use case - di
 - api/link/ui.popup_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.popup_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.popup_onhide_event.md - fires when window is hidden
+- api/link/ui.popup_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.popup_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
-- api/link/ui.popup_onrotate_event.md - occurs on screen rotating
 - api/link/ui.popup_onshow_event.md - fires when window is shown
 - api/link/ui.popup_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.popup_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.popup_ontimedkeypress_event.md - fires after typing has been finished in the field
 - api/link/ui.popup_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.popup_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.popup_ontouchstart_event.md - when some webix view has been touched
@@ -91,7 +92,7 @@ The window can contain any content, be modal or modeless. The main use case - di
 - api/link/ui.popup_borderless_config.md - used to hide the component borders
 - api/link/ui.popup_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.popup_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.popup_disabled_config.md - disables item
+- api/link/ui.popup_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.popup_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.popup_head_config.md - sets the view header
 - api/link/ui.popup_headheight_config.md - defines the header height (43 by default)

@@ -10,7 +10,8 @@ Properties
 - api/link/ui.datepicker_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.datepicker_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.datepicker_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.datepicker_disabled_config.md - disables item
+- api/link/ui.datepicker_disabled_config.md - indicates whether an item is enabled or not
+- api/ui.datepicker_editable_config.md - 
 - api/ui.datepicker_format_config.md - sets date format in the control
 - api/link/ui.datepicker_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.datepicker_height_config.md - sets the height of the component
@@ -41,6 +42,7 @@ Properties
 - api/link/ui.datepicker_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/link/ui.datepicker_template_config.md - the component template
 - api/ui.datepicker_text_config.md - visible text in the related input
+- api/ui.datepicker_timeicon_config.md - 
 - api/ui.datepicker_timepicker_config.md - enables optional timepicker in the calendar
 - api/link/ui.datepicker_tooltip_config.md - tooltip for the input
 - api/link/ui.datepicker_type_config.md - the type of the control
@@ -60,6 +62,7 @@ Properties
 - api/link/ui.datepicker_content_config.md
 - api/link/ui.datepicker_css_config.md
 - api/link/ui.datepicker_disabled_config.md
+- api/ui.datepicker_editable_config.md
 - api/ui.datepicker_format_config.md
 - api/link/ui.datepicker_gravity_config.md
 - api/link/ui.datepicker_height_config.md
@@ -90,6 +93,7 @@ Properties
 - api/link/ui.datepicker_tabfocus_config.md
 - api/link/ui.datepicker_template_config.md
 - api/ui.datepicker_text_config.md
+- api/ui.datepicker_timeicon_config.md
 - api/ui.datepicker_timepicker_config.md
 - api/link/ui.datepicker_tooltip_config.md
 - api/link/ui.datepicker_type_config.md

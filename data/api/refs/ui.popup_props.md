@@ -9,7 +9,7 @@ Properties
 - api/link/ui.popup_borderless_config.md - used to hide the component borders
 - api/link/ui.popup_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.popup_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.popup_disabled_config.md - disables item
+- api/link/ui.popup_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.popup_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.popup_head_config.md - sets the view header
 - api/link/ui.popup_headheight_config.md - defines the header height (43 by default)

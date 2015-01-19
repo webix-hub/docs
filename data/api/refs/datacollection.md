@@ -72,7 +72,7 @@ DataCollection
 
 {{api
 - api/link/datacollection_data_config.md - an inline dataset that data to the component will be load from.
-- api/link/datacollection_datafeed_config.md - the url to the data source that the component will use to reload data from
+- api/link/datacollection_datafeed_config.md - the url that the component will use to reload data during binding
 - api/link/datacollection_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/datacollection_datatype_config.md - the type of loaded data
 - api/link/datacollection_id_config.md - the component ID
@@ -82,7 +82,7 @@ DataCollection
 - api/link/datacollection_rules_config.md - set of validation rules for the component
 - api/link/datacollection_save_config.md - defines urls for datasaving
 - api/link/datacollection_scheme_config.md - defines schemes for data processing
-- api/link/datacollection_url_config.md - the url of a data feed which will be loaded after component initialization
+- api/link/datacollection_url_config.md - the url the component will use to load data after its initialization
 }}
 
 

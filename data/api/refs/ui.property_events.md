@@ -17,15 +17,16 @@ Events
 - api/link/ui.property_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.property_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.property_onitemdblclick_event.md - fires when a component item was double-clicked
+- api/link/ui.property_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.property_onliveedit_event.md - occurs when data was changed in the editor
 - api/link/ui.property_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.property_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.property_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.property_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.property_onmouseout_event.md - fires when the mouse was moved out from the specified item
-- api/link/ui.property_onrotate_event.md - occurs on screen rotating
 - api/link/ui.property_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.property_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.property_ontimedkeypress_event.md - fires after typing has been finished in the field
 - api/link/ui.property_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.property_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.property_ontouchstart_event.md - when some webix view has been touched
@@ -48,15 +49,16 @@ Events
 - api/link/ui.property_ondestruct_event.md
 - api/link/ui.property_onitemclick_event.md
 - api/link/ui.property_onitemdblclick_event.md
+- api/link/ui.property_onkeypress_event.md
 - api/link/ui.property_onliveedit_event.md
 - api/link/ui.property_onloaderror_event.md
 - api/link/ui.property_onlongtouch_event.md
 - api/link/ui.property_onmousemove_event.md
 - api/link/ui.property_onmousemoving_event.md
 - api/link/ui.property_onmouseout_event.md
-- api/link/ui.property_onrotate_event.md
 - api/link/ui.property_onswipex_event.md
 - api/link/ui.property_onswipey_event.md
+- api/link/ui.property_ontimedkeypress_event.md
 - api/link/ui.property_ontouchend_event.md
 - api/link/ui.property_ontouchmove_event.md
 - api/link/ui.property_ontouchstart_event.md

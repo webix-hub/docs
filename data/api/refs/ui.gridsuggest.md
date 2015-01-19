@@ -64,11 +64,12 @@ as well as component [editor](api/refs/editors.md).
 - api/link/ui.gridsuggest_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.gridsuggest_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.gridsuggest_onhide_event.md - fires when window is hidden
+- api/link/ui.gridsuggest_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.gridsuggest_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
-- api/link/ui.gridsuggest_onrotate_event.md - occurs on screen rotating
 - api/link/ui.gridsuggest_onshow_event.md - fires when window is shown
 - api/link/ui.gridsuggest_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.gridsuggest_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.gridsuggest_ontimedkeypress_event.md - fires after typing has been finished in the field
 - api/link/ui.gridsuggest_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.gridsuggest_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.gridsuggest_ontouchstart_event.md - when some webix view has been touched
@@ -89,7 +90,7 @@ as well as component [editor](api/refs/editors.md).
 - api/link/ui.gridsuggest_borderless_config.md - used to hide the component borders
 - api/link/ui.gridsuggest_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.gridsuggest_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.gridsuggest_disabled_config.md - disables item
+- api/link/ui.gridsuggest_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.gridsuggest_filter_config.md - custom filtering function
 - api/link/ui.gridsuggest_fitmaster_config.md - size suggest box to the master control
 - api/link/ui.gridsuggest_gravity_config.md - sets the view gravity (1 by default)

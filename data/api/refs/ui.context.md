@@ -70,11 +70,12 @@ The component presents a plain window that can contain any content. Check [conte
 - api/link/ui.context_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.context_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.context_onhide_event.md - fires when window is hidden
+- api/link/ui.context_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.context_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
-- api/link/ui.context_onrotate_event.md - occurs on screen rotating
 - api/link/ui.context_onshow_event.md - fires when window is shown
 - api/link/ui.context_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.context_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.context_ontimedkeypress_event.md - fires after typing has been finished in the field
 - api/link/ui.context_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.context_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.context_ontouchstart_event.md - when some webix view has been touched
@@ -94,7 +95,7 @@ The component presents a plain window that can contain any content. Check [conte
 - api/link/ui.context_borderless_config.md - used to hide the component borders
 - api/link/ui.context_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.context_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.context_disabled_config.md - disables item
+- api/link/ui.context_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.context_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.context_head_config.md - sets the view header
 - api/link/ui.context_headheight_config.md - defines the header height (43 by default)

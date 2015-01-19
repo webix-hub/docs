@@ -44,7 +44,7 @@ The component supports in-line node editing, advanced drag-and-drop, three-state
 - api/link/ui.tree_closeall.md - closes all branches in the tree
 - api/link/ui.tree_copy.md - makes a copy of item
 - api/link/ui.tree_count.md - returns the count of items in the table
-- api/link/ui.tree_customize.md - redefines the 'type' property
+- api/link/ui.tree_customize.md - redefines the "type" property
 - api/link/ui.tree_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.tree_destructor.md - destructs the calling object
 - api/link/ui.tree_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
@@ -137,7 +137,7 @@ The component supports in-line node editing, advanced drag-and-drop, three-state
 - api/link/ui.tree_onafterload_event.md - fires after server side loading is complete
 - api/link/ui.tree_onafteropen_event.md - fires after the branch has been opened
 - api/link/ui.tree_onafterrender_event.md - occurs immediately after the component has been rendered
-- api/link/ui.tree_onafterscroll_event.md - occurs when some Webix view has been scrolled
+- api/link/ui.tree_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.tree_onafterselect_event.md - fires after item was selected
 - api/link/ui.tree_onaftersort_event.md - fires after sorting dataset
 - api/link/ui.tree_onbeforeadd_event.md - fires before adding item to datastore
@@ -162,6 +162,7 @@ The component supports in-line node editing, advanced drag-and-drop, three-state
 - api/link/ui.tree_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.tree_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.tree_onitemrender_event.md - for each item rendering, occurs only for items with custom templates
+- api/link/ui.tree_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.tree_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.tree_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.tree_onmousemove_event.md - fires when the mouse was moved over the specified component
@@ -169,10 +170,10 @@ The component supports in-line node editing, advanced drag-and-drop, three-state
 - api/link/ui.tree_onmouseout_event.md - fires when the mouse was moved out from the specified item
 - api/link/ui.tree_onpartialrender_event.md - called when part of tree is repainted
 - api/link/ui.tree_onpaste_event.md - fires when the user presses CTRL+V keys combination
-- api/link/ui.tree_onrotate_event.md - occurs on screen rotating
 - api/link/ui.tree_onselectchange_event.md - fires after selection state was changed
 - api/link/ui.tree_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.tree_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.tree_ontimedkeypress_event.md - fires after typing has been finished in the field
 - api/link/ui.tree_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.tree_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.tree_ontouchstart_event.md - when some webix view has been touched
@@ -192,10 +193,10 @@ The component supports in-line node editing, advanced drag-and-drop, three-state
 - api/link/ui.tree_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.tree_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.tree_data_config.md - an inline dataset that data to the component will be load from.
-- api/link/ui.tree_datafeed_config.md - the url to the data source that the component will use to reload data from
+- api/link/ui.tree_datafeed_config.md - the url that the component will use to reload data during binding
 - api/link/ui.tree_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.tree_datatype_config.md - the type of loaded data
-- api/link/ui.tree_disabled_config.md - disables item
+- api/link/ui.tree_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.tree_drag_config.md - enables or disables drag-and-drop
 - api/link/ui.tree_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.tree_filtermode_config.md - defines the pattern for tree item filtering
@@ -228,7 +229,7 @@ The component supports in-line node editing, advanced drag-and-drop, three-state
 - api/link/ui.tree_threestate_config.md - defines three-state checkboxes for the tree. Flase by default.
 - api/link/ui.tree_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.tree_type_config.md - object that specifies items presentation
-- api/link/ui.tree_url_config.md - the url of a data feed which will be loaded after component initialization
+- api/link/ui.tree_url_config.md - the url the component will use to load data after its initialization
 - api/link/ui.tree_width_config.md - sets the width of the component
 }}
 

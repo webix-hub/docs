@@ -14,7 +14,7 @@ Methods
 - api/link/ui.list_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.list_copy.md - copies an item to the same or another object
 - api/link/ui.list_count.md - returns the count of items in the table
-- api/link/ui.list_customize.md - redefines the 'type' property
+- api/link/ui.list_customize.md - redefines the "type" property
 - api/link/ui.list_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.list_destructor.md - destructs the calling object
 - api/link/ui.list_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)

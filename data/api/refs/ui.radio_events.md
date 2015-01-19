@@ -11,7 +11,6 @@ Events
 - api/link/ui.radio_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.radio_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.radio_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
-- api/link/ui.radio_onrotate_event.md - occurs on screen rotating
 - api/link/ui.radio_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.radio_onswipey_event.md - occurs on a vertical swipe movement
 - api/link/ui.radio_ontimedkeypress_event.md - fires after typing has been finished in the field
@@ -31,7 +30,6 @@ Events
 - api/link/ui.radio_onitemclick_event.md
 - api/link/ui.radio_onkeypress_event.md
 - api/link/ui.radio_onlongtouch_event.md
-- api/link/ui.radio_onrotate_event.md
 - api/link/ui.radio_onswipex_event.md
 - api/link/ui.radio_onswipey_event.md
 - api/link/ui.radio_ontimedkeypress_event.md

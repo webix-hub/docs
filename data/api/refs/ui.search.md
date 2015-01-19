@@ -76,7 +76,6 @@ The component presents a standard text input but with the icon. Supports reqular
 - api/link/ui.search_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.search_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.search_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
-- api/link/ui.search_onrotate_event.md - occurs on screen rotating
 - api/ui.search_onsearchiconclick_event.md - fires after the 'search' icon has been clicked in the input
 - api/link/ui.search_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.search_onswipey_event.md - occurs on a vertical swipe movement
@@ -99,7 +98,7 @@ The component presents a standard text input but with the icon. Supports reqular
 - api/link/ui.search_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.search_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.search_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.search_disabled_config.md - disables item
+- api/link/ui.search_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.search_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.search_height_config.md - sets the height of the component
 - api/link/ui.search_hidden_config.md - defines whether the view will be hidden initially

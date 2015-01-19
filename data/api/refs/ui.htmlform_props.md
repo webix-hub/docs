@@ -9,9 +9,9 @@ Properties
 - api/link/ui.htmlform_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.htmlform_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.htmlform_data_config.md - an inline dataset that data to the component will be load from.
-- api/link/ui.htmlform_datafeed_config.md - the url to the data source that the component will use to reload data from
+- api/link/ui.htmlform_datafeed_config.md - the url that the component will use to reload data during binding
 - api/link/ui.htmlform_datatype_config.md - the type of loaded data
-- api/link/ui.htmlform_disabled_config.md - disables item
+- api/link/ui.htmlform_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.htmlform_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.htmlform_height_config.md - sets the height of the component
 - api/link/ui.htmlform_hidden_config.md - defines whether the view will be hidden initially
@@ -28,7 +28,7 @@ Properties
 - api/link/ui.htmlform_src_config.md - the path to an external template that is loaded by Ajax
 - api/link/ui.htmlform_template_config.md - the component template
 - api/link/ui.htmlform_type_config.md - name of predefined styling type
-- api/link/ui.htmlform_url_config.md - the url of a data feed which will be loaded after component initialization
+- api/link/ui.htmlform_url_config.md - the url the component will use to load data after its initialization
 - api/link/ui.htmlform_width_config.md - sets the width of the component
 }}
 
