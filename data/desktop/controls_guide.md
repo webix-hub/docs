@@ -244,7 +244,7 @@ can get values from the serverside. The script that returns the needed data, can
 view:"combo", options:"server/data.json"
 ~~~
 
-{{sample /13_form/01_controls/11_combo_advanced.html}}
+{{sample 13_form/01_controls/11_combo_advanced.html}}
 
 
 Note that **the getValue()** method will return the **ID** of the currently selected tab/segment/option. 
