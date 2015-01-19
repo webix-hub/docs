@@ -72,7 +72,7 @@ Grid will show only children of a selected tree node
 $$("grid").bind( $$("tree"), "$level");
 ~~~
 
-JSON of a tree item of such kind is as follows: 
+Input JSON of such a tree is as follows: 
 
 ~~~js
 { id:"..", value:"..", data:[
@@ -93,7 +93,7 @@ in the [data format](desktop/data_types.md) (by default it is "data"):
 $$("grid1").bind( $$("tree"), "$data", "records");
 ~~~
 
-JSON of a tree item of such kind is as follows:
+Input JSON of such a tree is as follows:
 
 ~~~js
 { id:"..", value:"..", records:[

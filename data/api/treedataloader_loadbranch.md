@@ -12,6 +12,9 @@ loadBranch
 
 @example:
 
+@related:
+	datatree/dynamic_loading.md
+
 @template:	api_method
 @descr:
 

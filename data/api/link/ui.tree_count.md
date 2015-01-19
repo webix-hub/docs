@@ -12,9 +12,7 @@ tree = new webix.ui({
 	...
 });
             
-tree.count();//-> 8
+tree.count();
 
 @template:	api_method
 @descr:
-
-<img src="api/treestore_count_method.png"/>

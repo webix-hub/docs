@@ -1,7 +1,7 @@
 onMouseMove
 =============
 
-@short: attaches a dblclick behavior for component items with the specified CSS class. 
+@short: attaches a mousemove behaviour for component items with the specified CSS class. 
 
 @type: function
 
@@ -27,5 +27,5 @@ webix.ui({
 @descr:
 
 - "onMouseMove" behavior is defined for component items rather than for the whole component
-- Use the 'onMouseMove' handler to attach function to item clicking regardless of the CSS class; 
+- Use the "onMouseMove" handler to attach function to item clicking regardless of the CSS class; 
 

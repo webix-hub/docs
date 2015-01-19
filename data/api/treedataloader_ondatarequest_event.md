@@ -18,6 +18,8 @@ some.attachEvent("onDataRequest", function(id, callback, url){
 });
 
 @template:	api_event
+@related:
+	datatree/dynamic_loading.md
 @descr:
 
 

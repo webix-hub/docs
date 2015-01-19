@@ -5,9 +5,9 @@ Columns configuration is specified by parameter [columns](api/ui.datatable_colum
 
 ~~~js
 grid = new webix.ui({
-		view:"datatable",
-		columns:[{...}],
-		...
+	view:"datatable",
+    columns:[{...}, {...}],
+    ...
 }); 
 ~~~
 <br>
@@ -21,12 +21,13 @@ With the help of the [columns](api/ui.datatable_columns_config.md) parameter you
 - [set the text alignment in a column](#textalignment);
 - [set the format of data presentation](#dataformats);
 - [specify data of columns through math formulas](#mathincolumns);
-- [specify datasource for the column](#datasource);
+- [specify datasource for the column](#externaldatasourceforthecolumn);
 - [define templates for data presentation](#templates);
 - [define individual css class for any column](#styling);
 - [hide/show a column](#hidingshowingcolumns);
 - [hide/show columns in groups](#settinghiddenvisiblecolumnsingroups);
-- [group columns](#groupingcolumns)
+- [add/delete coulmns dynamically](#addingdeletingcolumnsdynamically);
+- [group columns](#groupingcolumns);
 - [define colspans and rowspans](#settingcolspansrowspans);
 
 
@@ -298,19 +299,26 @@ For more details, read the [Styling](datatable/styling.md) article.
 
 Hiding/showing columns
 ------------------
-Through the [hideColumn()](api/ui.datatable_hidecolumn.md) and [showColumn()](api/ui.datatable_showcolumn.md) methods you can manipulate visibility of columns.
+
+Initially, all the datatable columns are visible by default unless a specific **hidden** property is used in its configuration: 
+
+~~~js
+var grid = new webix.ui({
+	view:"datatable",
+	columns:[
+    	{ id:"col1", header:"Title", hidden:true}, //this column is hidden initially
+        { id:"col2", header:"Rating"} //this column is visible
+   ]
+})
+~~~
+
+Through the [hideColumn()](api/ui.datatable_hidecolumn.md) and [showColumn()](api/ui.datatable_showcolumn.md) methods you can manipulate visibility of columns dynamically.
 
 {{snippet
 Hiding a column
 }}
 ~~~js
-grid = new webix.ui({
-	view:"datatable",
-	columns:[
-        {id:"col4", header:"Rating"}
-   ]
-})
-grid.hideColumn("col4");
+grid.hideColumn("col2");
 ~~~
 
 Setting hidden/visible columns in groups
@@ -344,6 +352,46 @@ grida.showColumnBatch(3);
 ~~~
 
 {{sample 15_datatable/15_api/11_column_batches.html}}
+
+Adding/deleting columns dynamically
+-----------------------------
+
+Since datatable **columns** is an array of JSON objects, you can treat it like any JavaScript array. At any moment you can add elements (columns) to this array and delete elements from it - and
+then repaint the datatable with the new configuration. 
+
+{{snippet
+Replacing current columns with new ones
+}}
+~~~js
+grid.config.columns = [..new collection of columns..];
+grid.refreshColumns();
+~~~
+
+In addition, Webix offers its own [API for working with arrays](api/refs/powerarray.md): 
+
+- **webix.toArray()** - converts an array to "Webix" array;
+- **array.insertAt()** - inserts an element to array into the specific position;
+- **array.removeAt()** - removes an element from the array at the specific position.
+
+{{snippet
+Adding/Removing Separate Columns
+}}
+~~~js
+var columns = webix.toArray(grid.config.columns);
+//adding
+columns.insertAt({
+	id:"c"+webix.uid(),
+	header:"New column"
+},2);
+
+//deleting
+columns.removeAt(2);
+
+//refreshing
+grid.refreshColumns();
+~~~
+
+{{sample 15_datatable/09_columns/04_add_column.html}}
 
 Grouping columns
 -----------------------------

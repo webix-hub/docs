@@ -13,7 +13,8 @@ tree.attachEvent("onDataRequest", function (id, callback, url) {
 @related:
 	desktop/serverside.md
     desktop/dynamic_loading.md
-	datatree/data_formats.md#availabledatakeysattributes
+	datatree/dynamic_loading.md
+    
 
 @relatedsample:
 	15_datatable/30_treetable/02_dyn_loading.html

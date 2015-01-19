@@ -97,12 +97,10 @@ function update_row() {
     var value1 = $$('myform').getValues().title; 
 	var value2 = $$('myform').getValues().year;
 				
-	for (var i = 0; i < sel.length; i++){
-		var item = $$("mylist").getItem(sel[i]); //for every selected item
-		item.title = value1; //setting values for list item
-		item.year = value2;
-		$$("mylist").updateItem(sel[i], item); //updating
-	}
+	var item = $$("mylist").getItem(sel); //selected item object
+	item.title = value1;
+	item.year = value2;
+	$$("mylist").updateItem(sel, item);
 }
 ~~~
 

@@ -106,4 +106,8 @@ gridb.loadNext(50,900,null,"data/data_dyn.php");
 
 {{sample 15_datatable/16_dyn_loading/02_db_dyn_start.html}}
 
+###Related articles
+
+- [Dynamic Loading for Tree and Treetable](datatree/dynamic_loading.md)
+
 @complexity:2

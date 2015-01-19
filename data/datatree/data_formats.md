@@ -43,10 +43,6 @@ Available data keys/attributes
 You can define the following attributes/keys in the data set:
 
 <table class="list" cellspacing="0" cellpadding="5" border="0">
-	<caption class="caption">
-		<strong>Table 1 </strong>
-		Available data attributes
-	</caption>
 	<thead>
 	<tr>
 		<th>

@@ -12,6 +12,7 @@ onItemClick
 @example: 
 	
 grid.attachEvent("onItemClick", function(id, e, node){
+    var item = this.getItem(id);
     //... some code here ... 
 });
 
@@ -27,3 +28,6 @@ grid.attachEvent("onItemClick", function(id, e, node){
 @descr:
 
 
+The most common use case for such events is getting info about the component item 
+that has just been clicked. It can be done with a common api/datastore_getitem.md method that 
+requires item ID as parameter. 

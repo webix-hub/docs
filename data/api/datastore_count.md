@@ -1,23 +1,18 @@
 count
 =============
 
-
-
-@short:
-	returns the count of items in the table
-
-
+@short: returns the number of currently visible items
 
 @returns:
 - count	number	the count of items 
 
 @example:
-dtable= webix.ui({
-        view:"datatable",
-        ...
-})
+var dtable = webix.ui({
+   view:"datatable",
+   ...
+});
 
-var items=dtable.count(); 
+var items = dtable.count(); 
 @related:
 	desktop/data_object.md
 @relatedsample:

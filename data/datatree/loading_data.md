@@ -1,12 +1,12 @@
 Loading data
 ====================
 
-Tree can get data of 2 formats:
+Webix Tree can get data in the following predefined [data formats](desktop/data_types.md):
 
 1. JSON (default);
 2. XML.
 
-*[Details and  examples of data formats](datatree/data_formats.md)*
+*[Details and  examples of data formats](datatree/data_formats.md) in tree-like structures*
 
 
 There are 2 main ways you can specify data source for Tree:
@@ -131,11 +131,12 @@ tree = new webix.ui({
 Loading from a database
 -------------------------
 
-To load data from database table(s) you should deal with both client- and server-sides. 
+To load data from database table(s) you should deal with both client and server sides. 
 
 **On the client side**
 
-- you must set config property [url](api/link/ui.tree_url_config.md) to (or  call method [load](api/link/ui.tree_load.md) with) a file realizing server-side 'communication'. 
+- you should either define an [url](api/link/ui.tree_url_config.md) property or call the [load](api/link/ui.tree_load.md) method that would 
+point to a file that implements  server-side communication. 
 
 {{snippet
 Static loading from db. Client-side code.
@@ -148,71 +149,30 @@ tree = new webix.ui({
 //or
 tree.load("data/tree_data.php");
 ~~~
-<br>
+
 **On the server side**
 
 - you can write full server logic by yourself;
 - or use <a href="http://docs.dhtmlx.com/connector__php__index.html">dhtmlxConnector</a>
 
-In case of using dhtmlxConnector, the related server-side script will look like this:
+In case of using dhtmlxConnector the related server-side script will look like this:
 
 {{snippet
 Static loading from db. Server-side code
 }}
-
 ~~~php
-<?php
-	require_once("../connector-php/codebase/data_connector.php");//includes the connector file
-	$conn = mysql_connect('localhost', "root","");//creates a connection
-	mysql_select_db("sampleDB");// selects a database
+require_once("../connector-php/codebase/data_connector.php");//includes the connector file
+$conn = mysql_connect('localhost', "root","");//creates a connection
+mysql_select_db("sampleDB");// selects a database
 
-	$data = new TreeDataConnector($conn, "MySQL");//initializes the connector object
-	$data->render_table("packages_tree","id","value, state","","parent_id");
-    //loads data from the specified database table  
-?>
+$data = new TreeDataConnector($conn, "MySQL");//initializes the connector object
+//loads data from the specified database table 
+$data->render_table("packages_tree","id","value, state","","parent_id");
 ~~~
 
 {{sample 17_datatree/16_dyn_loading/01_dyn_loading.html }}
-
-
-Loading big datasets (dynamic)
------------------------------------------
-Generally, the data source in case of dynamic loading is database. 
-
-And to load data from a database into Tree dynamically, you should just call method <b>dynamic_loading()</b> on the server side (in case you use <a href="http://docs.Webix.com/doku.php?id=Webixconnector:toc">WebixConnector</a>). 
-All remaining stuff is the same as in case of [usual loading from a database](datatree/loading_data.md#loadingfromadatabase).
-
-{{snippet
-Dynamic loading from db. Client-side code 
-}}
-~~~js
-tree = new webix.ui({
-    ...
-	url:"data/data_dyn.php"
-});    
-~~~
-
-{{snippet
-Dynamic loading from db. Server-side code
-}}
-
-~~~php
-<?php
-	require_once("../connector-php/codebase/data_connector.php");//includes the connector file
-	$conn = mysql_connect('localhost', "root","");// creates a connection
-	mysql_select_db("sampleDB");// selects a database
-
-	$data = new TreeDataConnector($conn, "MySQL");//initializes the connector object
-    $data->dynamic_loading(30);//enables dynamic loading 
-	$data->render_table("packages_tree","id","value, state","","parent_id");
-    //loads data from the specified database table 
-?>      
-~~~
-{{sample 17_datatree/16_dyn_loading/01_dyn_loading.html }}
-
-*Note, inside **dynamic_loading()** you should specify a number of records that will be loaded at once.*
-
 
 @index:
 
 - datatree/data_formats.md
+- datatree/dynamic_loading.md
