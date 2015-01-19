@@ -7,14 +7,14 @@ Start
 <div class='index-pc'></div>
 <div class='index-board'>
 
-<h2>Meet Webix 2.1!</h2>
+<h2>Meet Webix 2.2!</h2>
 <ul>
-	<li>Better Bootstrap and <a href="desktop/jquery.md">jQuery</a> compatibility</li>
-    <li><a href="api/env_strict_other.md">Strict mode</a> and <a href="desktop/uploader.md">Improved Uploader</a> control</li>
-    <li>Advanced <a href="datatable/formulas.md">Datatable and treetable math</a></li>
+	<li>Updated <a href="desktop/jquery.md">Calendar</a> control</li>
+    <li><a href="api/env_strict_other.md">Better ajax</a> and <a href="desktop/uploader.md">Improved Uploader</a> control</li>
+    <li>Data binding <a href="datatable/formulas.md">for Tree, TreeTable and TreeCollection</a></li>
 </ul>
 
-<p> and <a href="desktop/whats_new_2_1.md">many more...</a></p>
+<p> and <a href="desktop/whats_new_2_2.md">many more...</a></p>
 <a href='http://webix.com/download/' class='index-download' title='Download Webix'></a>
 </div>
 
