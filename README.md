@@ -33,4 +33,4 @@ Differences from MarkDown
     template: "#title#"
   }); // this list will show 'titles'
   ~~~
-```
+  ```
