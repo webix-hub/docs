@@ -142,7 +142,7 @@ webix.ajax().post(url, params, [array of callbacks]);
 ~~~
 
 
-In some case you may need to provide some extra data for callback, it can be done in the next way:
+In some cases you may need to provide some extra data for callback, which can be done in the next way:
 
 ~~~js
 function after_call(text){
@@ -262,6 +262,22 @@ webix.ajax("some.php", function(text,xml, ajax){
 	alert(ajax.status);
 });
 ~~~
+
+Getting Binary Data
+------------------------
+
+Webix Ajax class offers a pattern for retrieving binary data objects from the server. 
+
+It can be done with a dedicated **response()** method that allows to set responseType directly. Now only **"blob"** type is fully supported and 
+**"document"** with some restrictions. 
+
+~~~js
+webix.ajax().response("blob").get("patch.zip", function(text, data){
+  //data - is a data blob
+});
+~~~
+
+Functionality will not work in IE8-IE9 as these browsers cannot work with blob objects at all.
 
 Promise API for Ajax requests
 ------------------------
