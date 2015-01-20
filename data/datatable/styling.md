@@ -99,7 +99,7 @@ in the table. As a parameter, the function takes the data item object.
 
 ~~~js
 <style>
-	.my_style{
+	.highlight{
 		background-color:#FFAAAA;
 	}
 </style>
@@ -144,30 +144,67 @@ Setting rows style directly in the dataset
 
 <script>
 grid = new webix.ui({
-		view:"datatable",
-		rowCss:"#css#",
-		columns:[
-			{ id:"title",	header:"Film title"},
-			{ id:"votes",	header:"Votes"}
-		],
-		data:[
-			{ id:1,
-			  $css:"my_style",
-			  title:"The Shawshank Redemption",
-  		      votes:678790
-            },
-			{ id:2,
-			  $css:{ "text-align":"right" },
-			  title:"The Godfather",
-			  votes:511495,
-			}
-		],
+	view:"datatable",
+	rowCss:"#css#",
+	columns:[
+		{ id:"title",	header:"Film title"},
+		{ id:"votes",	header:"Votes"}
+	],
+	data:[
+		{ id:1,
+        $css:"my_style",
+        title:"The Shawshank Redemption",
+        votes:678790
+        },
+		{ id:2,
+        $css:{ "text-align":"right" },
+        title:"The Godfather",
+        votes:511495,
+		}
+	],
 ...
 });	
 </script>
 ~~~
 
 {{sample 15_datatable/21_styling/04_rows_styling.html }}
+
+<h3 id="hover">Applying hover styles</h3>
+
+You can specify a custom style for selection of a row when the mouse pointer is over it.
+
+<img src="datatable/row_hover.png"/>
+
+For this purpose, you should define your css style in the **hover** property.
+
+~~~js
+<style>
+	.myhover{
+		background: #F0DCB6;
+	}
+</style>
+
+<script>
+grid = webix.ui({
+	view:"datatable",	
+	columns:[
+		{ id:"title",	header:"Film title",	width:200},
+		{ id:"year",	header:"Released", 		width:80},
+		{ id:"votes",	header:"Votes", 		width:100}
+	],
+	hover:"myhover"
+    ...
+});	
+</script>
+~~~
+
+{{sample
+15_datatable/05_selection/12_hover.html
+}}
+
+
+
+
 
 Cells
 -----------------------------------------

@@ -154,14 +154,16 @@ webix.UIManager.addHotKey("Ctrl+Space", function() {
 
 {{sample 15_datatable/04_editing/01_basic.html }}
 
-**Removing Hotkeys**
+<h4 id="remove">Removing Hotkeys</h4>
 
-The [addHotKey](api/uimanager_addhotkey.md) function returns a hotkey object that can be used to remove this hotkey: 
+The [removeHotKey](api/uimanager_removehotkey.md) function is used to remove a hotkey. As a parameter it takes the key name: 
 
 ~~~js
-var list_key = webix.UIManager.addHotKey("Ctrl+Space", function() { ... }, 'list');
+//adding a hotkey
+webix.UIManager.addHotKey("Ctrl+Space", function() { ... }, 'list');
 
-webix.UIManager.removeHotKey(list_key);
+//removing the hotkey
+webix.UIManager.removeHotKey("Ctrl+Space");
 ~~~
 
 ###Attaching Keyboard events 
