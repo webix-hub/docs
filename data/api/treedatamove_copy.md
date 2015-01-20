@@ -28,4 +28,10 @@ details.newId = "123"; //new id for moved item
 details.parent = "a2"; //id of new parent element
 ~~~
 
-If parent is defined - *tindex* will be child index inside the target branch.
+
+If parent is defined - **tindex** will be the child index inside the target branch.
+
+If **parent** is not defined - the value will be set to **0** (will be added to tree root).
+
+In case **newId** is not defined, the new ID will be the same as the ID of the 
+source item (**sid**), which is not desirable during copying within one and the same component.

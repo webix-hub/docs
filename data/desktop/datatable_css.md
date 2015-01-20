@@ -5,28 +5,79 @@ Datatable
 
 <img src="image_maps/datatable_css.png"/>
 
-<table class="inline">
-	<tr class="row0">
-		<th class="col0 centeralign">  css class  </th><th class="col1 centeralign">  Element  </th>
+<table class="list" cellspacing="0" cellpadding="5" border="0">
+	<caption class="caption">
+		<strong>Table 1 </strong>
+		CSS image maps
+	</caption>
+	<thead>
+	<tr>
+		<th align="left">
+			<strong>CSS class</strong>
+		</th>
+		<th align="left">
+			<strong>Description</strong>
+		</th>
 	</tr>
-	<tr class="row1">
-		<td class="col0 leftalign"><strong>.webix_ss_header</strong>   </td><td class="col1 leftalign"> the header of the table  </td>
+	</thead>
+	<tbody>
+	<tr>
+		<td><b>.webix_dtable</b></td>
+		<td>container with DataTable</td>
 	</tr>
-	<tr class="row2">
-		<td class="col0 leftalign"><strong>.webix_dtable</strong>  </td><td class="col1">the datatable </td>
+	<tr>
+		<td><b>.webix_ss_header</b></td>
+		<td>container with the header</td>
 	</tr>
-	<tr class="row3">
-		<td class="col0 leftalign"><strong>.webix_column</strong>  </td><td class="col1 leftalign"> a column of a datatable  </td>
+	<tr>
+		<td><b>.webix_ss_header .webix_hcell</b></td>
+		<td>a cell of the header</td>
 	</tr>
-	<tr class="row4">
-		<td class="col0 leftalign"><strong>.webix_cell</strong>  </td><td class="col1 leftalign">a cell of a datatable  </td>
+    <tr>
+		<td><b>.webix_ss_header .webix_first</b></td>
+		<td>the first cell of the header</td>
 	</tr>
-	<tr class="row5">
-		<td class="col0 leftalign"><strong>.webix_first</strong>  </td><td class="col1 leftalign">the first column of a datatatble  </td>
+    <tr>
+		<td><b>.webix_ss_header .webix_last</b></td>
+		<td>the last cell of the header</td>
 	</tr>
-	<tr class="row6">
-		<td class="col0 leftalign"><strong>.webix_last</strong>  </td><td class="col1 leftalign"> the last column of a datatable </td>
+	<tr>
+		<td><b>.webix_ss_footer<b></td>
+		<td>container with the footer</td>
 	</tr>
+	<tr>
+		<td><b>.webix_ss_footer .webix_hcell<b></td>
+		<td>a cell of the footer</td>
+	</tr>
+    <tr>
+		<td><b>.webix_ss_footer .webix_first<b></td>
+		<td>the first cell of the footer</td>
+	</tr>
+    <tr>
+		<td><b>.webix_ss_footer .webix_last<b></td>
+		<td>the last cell of the footer</td>
+	</tr>
+	<tr>
+		<td><b>.webix_ss_body<b></td>
+		<td>container with the table body</td>
+	</tr>
+	<tr>
+		<td><b>.webix_column<b></td>
+		<td>a column of the table</td>
+	</tr>
+	<tr>
+		<td><b>.webix_column .webix_last<b></td>
+		<td>the last column of the table</td>
+	</tr>
+    <tr>
+		<td><b>.webix_column .webix_first<b></td>
+		<td>the first column of the table</td>
+	</tr>
+	<tr>
+		<td><b>.webix_column .webix_cell<b></td>
+		<td> a cell of the column </td>
+	</tr>
+	</tbody>
 </table>
 
-Read more about [Datatable](datatable/index.md)
+Read more about [Datatable](datatable/index.md) component.

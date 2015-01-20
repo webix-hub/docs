@@ -290,7 +290,7 @@ grid = new webix.ui({
 CSS maps
 -------------------------------------------------------------
 
-<img src="datatable/css_image_map.png"></img>
+<img src="image_maps/datatable_css.png"></img>
 
 
 <table class="list" cellspacing="0" cellpadding="5" border="0">

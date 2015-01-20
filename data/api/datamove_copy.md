@@ -8,8 +8,8 @@ copy
 @params:
 - sid		id		the id of the copied object
 - tindex	number		the index of the copy
-- tobj		object		the object that an item is copied to
-- details		object		extra parameters for copying
+* tobj		object		the object that an item is copied to
+* details		object		extra parameters for copying
 
 
 @example:
@@ -30,6 +30,13 @@ gridb.attachEvent("onBeforeDrop", function(context, ev){
 @defined:	DataMove	
 @descr:
 
+In the sample above:
+
+- **sid** is the ID of each dragged item;
+- **tindex** is the ID from which DnD was started;
+- **tobj** is a datatable object where the items are dropped to;
+- **newId** is generated automatically with *webix.uid()* method. 
+
 Details object can contain the next properties:
 
 ~~~js
@@ -37,12 +44,8 @@ details = {};
 details.newId = "123"; //new id for moved item
 ~~~
 
-In the sample above:
-
-- **sid** is the ID of each dragged item;
-- **tindex** is the ID from which DnD was started;
-- **tobj** is a datatable object where the items are dropped to;
-- **newId** is generated automatically with *webix.uid()* method. 
+Note that in case **newId** is not defined, the new ID will be the same as the ID of the 
+source item (**sid**), which is not desirable during moving within one and the same component.
 
 
 

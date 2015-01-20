@@ -14,6 +14,9 @@ loadBranch
 
 @related:
 	datatree/dynamic_loading.md
+    
+@relatedsample:
+	17_datatree/16_dyn_loading/02_load_branch.html
 
 @template:	api_method
 @descr:

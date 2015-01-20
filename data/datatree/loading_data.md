@@ -175,4 +175,3 @@ $data->render_table("packages_tree","id","value, state","","parent_id");
 @index:
 
 - datatree/data_formats.md
-- datatree/dynamic_loading.md

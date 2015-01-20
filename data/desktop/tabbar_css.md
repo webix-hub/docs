@@ -38,4 +38,9 @@ Tabbar
 		<td class="col0 leftalign"><strong>.webix_after_all_tabs</strong>  </td><td class="col1">A div after ".webix_el_tabbar", separating it from the content below. By default 100% wide and 6px tall.</td>
 </table>
 
-Read more about [Tabbar](desktop/controls.md#tabbar)
+All the classes are applicable for both **top** and **bottom** tabbar except for: 
+
+- *.webix_all_tabs.webixtype_bottom* - class specific to bottom tabbar only;
+- *.webix_tab_filler* - appears in the bottom tabbar only if total width of all tabs is less than available space. 
+
+Read more about [Tabbar](desktop/controls.md#tabbar) control.

@@ -16,16 +16,16 @@ move
 
 @returns:
 
-- newid  string  the item id
+- newid  string  new item id
 
 
 @example:
 
 //moving in the same list
-$$('list').move("a12", 0);
-$$('list').move("a13", -1);
+$$("list").move("a12", 0);
+$$("list").move("a13", -1);
 //moves an item to a different list
-var id = $$('list').move("a13", 0, $$("list2"));
+var id = $$("list").move("a13", 0, $$("list2"), {newId:"b13"});
 
 @template:	api_method
 
@@ -46,3 +46,5 @@ details = {};
 details.newId = "123"; //new id for moved item
 ~~~
 
+Note that in case **newId** is not defined, the new ID will be the same as the ID of the 
+source item (**sid**), which is not desirable during copying within one and the same component. 
