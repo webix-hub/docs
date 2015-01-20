@@ -408,3 +408,33 @@ table.refresh();
 ~~~
 
 {{sample 15_datatable/03_filtering/11_find_api.html}} 
+
+
+## TreeTable specific configuration
+
+In case of TreeTable some extra configurations can be defined to define how filters will be applied
+
+The **filterMode** property is an object that can contain 2 attributes:
+
+- **showSubItems** - (*boolean*) defines whether the tree must display childs of the filtered items (*true*) 
+or the filtered items would be displayed as childs of the root node (*false*). The default value - *true*. 
+- **openParents** - (*boolean*) defines whether the tree will expand branches to show the found items (*true*) or stay as is (*false*). The default value - *true*
+- **level**  - (*number*) sets the nesting level to filter items from (one-based numbering). 
+
+{{snippet
+Using the filterMode parameter
+}}
+
+~~~js
+webix.ui({
+	view:"treetable", 
+    filterMode:{
+		showSubItems:false,
+        level:2
+	}
+});
+~~~
+
+{{sample
+	17_datatree/04_api/03_filter.html
+}}

@@ -129,12 +129,14 @@ At the same time, you can change the filtering pattern with the help of the tree
 	view:"tree",
 	filterMode:{
 		showSubItems:false,
+		openParents:false,
 		level:3},
 	...		
 }
 ~~~
 
 - **showSubItems** (boolean) -  defines whether the component should display children of the filtered items. 
+- **openParents** (boolean) - defines whether the component should expand branches to show the found items.
 - **level** (number) - sets the hierarchy to filter tree nodes (one-based numbering). The '0' value says to filter all nodes. 
 
 {{sample 17_datatree/04_api/03_filter.html }}

@@ -10,7 +10,10 @@ init
 
 @example:
 //data is taken from and placed to document body
-webix.markup.init();
+var ui = webix.markup.init();
+
+@returns:
+- ui     view     newly constructed UI
 
 @template:	api_method
 @relatedsample:

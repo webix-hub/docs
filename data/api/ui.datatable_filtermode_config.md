@@ -22,9 +22,10 @@ $$("grouplist").define("filterMode",{
 Applicable just to <b>Grouplist</b>, <b>TreeTable</b>
 }}
 
-An input object can take 2 attributes:
+An input object can take 3 attributes:
 
 - **level** - (*number*) sets the node to filter (one-based numbering). The '0' value says to filter all nodes
+- **openParents** - (*bool*) defines whether the tree will expand branches to show the found items (*true*) or stay as is (*false*). The default value - *true*
 - **showSubItems** - (*bool*) defines whether the component should display childs of the filtered items
 
 @relatedsample: 

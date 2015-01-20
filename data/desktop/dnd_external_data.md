@@ -1,7 +1,7 @@
 Drag-and-Drop between Different Components 
 =============
 
-###External Data Functionality
+## External Data Functionality
 
 During drad-n-drop operations between different components as well as different instances of a component it's vital to ensure that data items from the source component 
 receive adequate representation in the target one. 
@@ -61,7 +61,7 @@ value from either fo the datatables.
 
 {{sample 22_dnd/01_basic_dnd.html }}
 
-###Related Articles
+## Related Articles
 
 
 - [Defining Drag Area](desktop/dnd_drag_area.md) 
