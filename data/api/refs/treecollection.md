@@ -20,7 +20,7 @@ var store = new webix.TreeCollection({ url:"tree.php" });
 - api/link/treecollection_callevent.md - calls an inner event
 - api/link/treecollection_clearall.md - removes all items from the component
 - api/link/treecollection_clearvalidation.md - removes all validation marks from the component
-- api/link/treecollection_count.md - returns the count of items in the table
+- api/link/treecollection_count.md - returns the number of currently visible items
 - api/link/treecollection_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/treecollection_destructor.md - destructs the calling object
 - api/link/treecollection_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)

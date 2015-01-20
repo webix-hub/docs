@@ -15,6 +15,7 @@ Events
 - api/ui.calendar_onbeforezoom_event.md - fires before zoom level of the calendar is changed
 - api/link/ui.calendar_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/ui.calendar_onchange_event.md - fired when a user changes month, year or time in selector.
+- api/ui.calendar_ondateclear_event.md - fires on clicking the [Clear](desktop/calendar.md#todayandclearbuttons) button
 - api/ui.calendar_ondateselect_event.md - fires when a user selects a date.
 - api/link/ui.calendar_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.calendar_onitemclick_event.md - fires when a component item was clicked
@@ -27,6 +28,7 @@ Events
 - api/link/ui.calendar_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.calendar_onswipey_event.md - occurs on a vertical swipe movement
 - api/link/ui.calendar_ontimedkeypress_event.md - fires after typing has been finished in the field
+- api/ui.calendar_ontodayset_event.md - fires on clicking the [Today](desktop/calendar.md#todayandclearbuttons) button
 - api/link/ui.calendar_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.calendar_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.calendar_ontouchstart_event.md - when some webix view has been touched
@@ -47,6 +49,7 @@ Events
 - api/ui.calendar_onbeforezoom_event.md
 - api/link/ui.calendar_onbindrequest_event.md
 - api/ui.calendar_onchange_event.md
+- api/ui.calendar_ondateclear_event.md
 - api/ui.calendar_ondateselect_event.md
 - api/link/ui.calendar_ondestruct_event.md
 - api/link/ui.calendar_onitemclick_event.md
@@ -59,6 +62,7 @@ Events
 - api/link/ui.calendar_onswipex_event.md
 - api/link/ui.calendar_onswipey_event.md
 - api/link/ui.calendar_ontimedkeypress_event.md
+- api/ui.calendar_ontodayset_event.md
 - api/link/ui.calendar_ontouchend_event.md
 - api/link/ui.calendar_ontouchmove_event.md
 - api/link/ui.calendar_ontouchstart_event.md

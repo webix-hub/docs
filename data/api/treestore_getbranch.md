@@ -1,17 +1,21 @@
 getBranch
 =============
 
-@short:
-	gets an array of children for the node
+
+@short: returns dataset from some branch in the tree-like component
+	
 
 @params:
 
-- id	string, number	ID of the node in question
+- id	string		id of root item
+
+@returns:
+- data		array		array of data objects for the branch in question
 
 
 @example:
 
-tree.data.getBranch(1);
+var data = $$("tree").data.getBranch("1");
 
 @template:	api_method
 @descr:

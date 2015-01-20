@@ -10,7 +10,7 @@ Methods
 - api/datastore_changeid.md - changes the id of a data item
 - api/datastore_clearall.md - removes all items from the component
 - api/datastore_clearmark.md - removes mark from all items in store
-- api/datastore_count.md - returns the count of items in the table
+- api/datastore_count.md - returns the number of currently visible items
 - api/datastore_destructor.md - destroy datastore
 - api/link/datastore_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/datastore_each.md - iterates through the collection of data items

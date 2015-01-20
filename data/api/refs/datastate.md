@@ -15,18 +15,9 @@ DataState
 }}
 
 
-<div class='h2'>Events</div>
-
-
-{{api
-- api/datastate_onstructureupdate_event.md - 
-}}
-
-
 
 
 
 @index:
 - api/refs/datastate_methods.md
-- api/refs/datastate_events.md
 

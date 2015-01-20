@@ -39,7 +39,7 @@ The component is a compliment to the menu component and not intended for direct 
 - api/link/ui.submenu_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.submenu_close.md - removes a window
 - api/link/ui.submenu_copy.md - copies an item to the same or another object
-- api/link/ui.submenu_count.md - returns the count of items in the table
+- api/link/ui.submenu_count.md - returns the number of currently visible items
 - api/link/ui.submenu_customize.md - redefines the "type" property
 - api/link/ui.submenu_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.submenu_destructor.md - destructs the calling object
@@ -216,7 +216,7 @@ The component is a compliment to the menu component and not intended for direct 
 - api/link/ui.submenu_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
 - api/link/ui.submenu_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.submenu_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
-- api/link/ui.submenu_onmousemove_config.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.submenu_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
 - api/link/ui.submenu_padding_config.md - sets paddings of the chart content
 - api/link/ui.submenu_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
 - api/link/ui.submenu_position_config.md - sets position of the window relative to the the screen

@@ -13,7 +13,7 @@ Methods
 - api/link/ui.menu_clearcss.md - removes css class from all items
 - api/link/ui.menu_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.menu_copy.md - copies an item to the same or another object
-- api/link/ui.menu_count.md - returns the count of items in the table
+- api/link/ui.menu_count.md - returns the number of currently visible items
 - api/link/ui.menu_customize.md - redefines the "type" property
 - api/link/ui.menu_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.menu_destructor.md - destructs the calling object

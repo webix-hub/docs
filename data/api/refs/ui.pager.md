@@ -113,7 +113,7 @@ The component has a little sense on its own, but can be used with other data-bas
 - api/link/ui.pager_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
 - api/link/ui.pager_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.pager_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
-- api/link/ui.pager_onmousemove_config.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.pager_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
 - api/ui.pager_page_config.md - sets the currently active page (zero-based numbering)
 - api/ui.pager_size_config.md - sets the number of records per page
 - api/link/ui.pager_template_config.md - the component template

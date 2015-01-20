@@ -11,7 +11,7 @@ Methods
 - api/link/ui.chart_callevent.md - calls an inner event
 - api/link/ui.chart_clearall.md - removes all items from the component
 - api/ui.chart_clearcanvas.md - clears the component canvas
-- api/link/ui.chart_count.md - returns the count of items in the table
+- api/link/ui.chart_count.md - returns the number of currently visible items
 - api/link/ui.chart_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.chart_destructor.md - destructs the calling object
 - api/link/ui.chart_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)

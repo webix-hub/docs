@@ -26,7 +26,7 @@ Properties
 - api/link/ui.accordionitem_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
 - api/link/ui.accordionitem_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.accordionitem_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
-- api/link/ui.accordionitem_onmousemove_config.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.accordionitem_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
 - api/link/ui.accordionitem_width_config.md - sets the width of the component
 }}
 

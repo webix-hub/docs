@@ -14,7 +14,7 @@ Methods
 - api/link/ui.treetable_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.treetable_callevent.md - calls an inner event
 - api/link/ui.treetable_checkall.md - check all items in tree
-- api/link/ui.treetable_checkitem.md - checks the checkbox	related to the specified item
+- api/link/ui.treetable_checkitem.md - checks the checkbox it the tree item
 - api/link/ui.treetable_clearall.md - removes all items from the component
 - api/link/ui.treetable_clearcss.md - removes css class from all items
 - api/link/ui.treetable_clearvalidation.md - removes all validation marks from the component
@@ -23,7 +23,7 @@ Methods
 - api/link/ui.treetable_collectvalues.md - returns an array of unique values of the specified column
 - api/link/ui.treetable_columnid.md - returns the id of the column at the specified index
 - api/link/ui.treetable_copy.md - copies an item to the same or another object
-- api/link/ui.treetable_count.md - returns the count of items in the table
+- api/link/ui.treetable_count.md - returns the number of currently visible items
 - api/link/ui.treetable_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.treetable_destructor.md - destructs the calling object
 - api/link/ui.treetable_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
@@ -139,7 +139,7 @@ Methods
 - api/link/ui.treetable_unbind.md - breaks "bind" link
 - api/link/ui.treetable_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.treetable_uncheckall.md - uncheck all items in the tree
-- api/link/ui.treetable_uncheckitem.md - unchecks the checkbox	related to the specified item
+- api/link/ui.treetable_uncheckitem.md - unchecks the checkbox in the tree item
 - api/link/ui.treetable_ungroup.md - ungroups data
 - api/link/ui.treetable_updateitem.md - sets properties of the data item
 - api/link/ui.treetable_validate.md - validates one record or all dataset against validation rules

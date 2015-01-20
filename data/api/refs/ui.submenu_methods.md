@@ -14,7 +14,7 @@ Methods
 - api/link/ui.submenu_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.submenu_close.md - removes a window
 - api/link/ui.submenu_copy.md - copies an item to the same or another object
-- api/link/ui.submenu_count.md - returns the count of items in the table
+- api/link/ui.submenu_count.md - returns the number of currently visible items
 - api/link/ui.submenu_customize.md - redefines the "type" property
 - api/link/ui.submenu_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.submenu_destructor.md - destructs the calling object

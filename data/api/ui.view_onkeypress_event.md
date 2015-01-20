@@ -13,7 +13,7 @@ text.attachEvent("onKeyPress", function(code, e){
 });
 
 @relatedapi:
-	api/ui.view_ontimedkeypress_event.md
+    api/ui.view_onkeypress_event.md
 @related:
 	desktop/event_handling.md#keyboardevents
     desktop/uimanager.md

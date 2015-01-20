@@ -21,7 +21,7 @@ The component allows you to get an HTML Form as a lib-based view, so that to use
 ~~~
 
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/ui.template.md">ui.template</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/values.md">Values</a>, <a href="api/refs/validatedata.md">ValidateData</a></div>
+<a href="api/refs/ui.template.md">ui.template</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/values.md">Values</a></div>
 
 
 <div class='h2'>Methods</div>
@@ -33,7 +33,6 @@ The component allows you to get an HTML Form as a lib-based view, so that to use
 - api/link/ui.htmlform_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.htmlform_callevent.md - calls an inner event
 - api/link/ui.htmlform_clear.md - clears all the field in a specified form
-- api/link/ui.htmlform_clearvalidation.md - removes "data incorrect" highlighting from invalid text fields
 - api/link/ui.htmlform_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.htmlform_destructor.md - destructs the calling object
 - api/link/ui.htmlform_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
@@ -69,7 +68,6 @@ The component allows you to get an HTML Form as a lib-based view, so that to use
 - api/link/ui.htmlform_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.htmlform_unbind.md - breaks "bind" link
 - api/link/ui.htmlform_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/ui.htmlform_validate.md - checks data in the component during adding new item or editing existing ones
 }}
 
 
@@ -80,10 +78,8 @@ The component allows you to get an HTML Form as a lib-based view, so that to use
 - api/link/ui.htmlform_onafterload_event.md - fires after server side loading is complete
 - api/link/ui.htmlform_onafterrender_event.md - occurs immediately after the component has been rendered.
 - api/link/ui.htmlform_onafterscroll_event.md - occurs when some webix view has been scrolled
-- api/link/ui.htmlform_onaftervalidation_event.md - fires after data has been validated
 - api/link/ui.htmlform_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/link/ui.htmlform_onbeforerender_event.md - occurs immediately before the component has been rendered
-- api/link/ui.htmlform_onbeforevalidate_event.md - called before runing validation
 - api/link/ui.htmlform_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.htmlform_onchange_event.md - fires when data in the input is changed
 - api/link/ui.htmlform_ondestruct_event.md - occurs when component destroyed
@@ -96,8 +92,6 @@ The component allows you to get an HTML Form as a lib-based view, so that to use
 - api/link/ui.htmlform_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.htmlform_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.htmlform_ontouchstart_event.md - when some webix view has been touched
-- api/link/ui.htmlform_onvalidationerror_event.md - fires when the form fails to pass validation
-- api/link/ui.htmlform_onvalidationsuccess_event.md - fires after the form has passes validation successfully
 - api/link/ui.htmlform_onviewresize_event.md - view size was changed by resizer
 }}
 
@@ -125,7 +119,6 @@ The component allows you to get an HTML Form as a lib-based view, so that to use
 - api/link/ui.htmlform_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.htmlform_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.htmlform_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
-- api/link/ui.htmlform_rules_config.md - defines a set of rules for input field(s) of the form(htmlform)
 - api/link/ui.htmlform_scroll_config.md - enables/disables the scroll bar
 - api/link/ui.htmlform_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.htmlform_src_config.md - the path to an external template that is loaded by Ajax

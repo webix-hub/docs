@@ -35,5 +35,5 @@ Remember, the method doesn't cause repainting of the component.
 That's why after calling the **customize()** method 
 you should call method api/datastore_refresh.md or api/renderstack_render.md  to apply the newly-specified value
 
-To change any component property (not the "type") - use api__settings_define.md method. 
+To change any component property (not the "type") - use api/settings_define.md method. 
 

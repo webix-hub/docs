@@ -165,19 +165,19 @@ var text = xhr.responseText;
 If server side code requires some extra headers you can send them as 
 
 ~~~js
-webix.ajax().header({
+webix.ajax().headers({
 	"Sent-by":"My Script" //any custom headers can be define in such way
 }).get("./data.php");
 ~~~
 
-You can use header in combination with async, get and post methods
+You can use headers in combination with async, get and post methods
 
 ### JSON sending
 
 If you are working with websirvice, you may need to send json content to the server side, it can be done as
 
 ~~~js
-webix.ajax().header({
+webix.ajax().headers({
 	"Content-type":"application/json"
 }).post("./data.php", JSON.stringify(payload), function(text){
 	//optional callback here

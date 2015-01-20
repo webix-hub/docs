@@ -22,7 +22,6 @@ Properties
 - api/link/ui.htmlform_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.htmlform_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.htmlform_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
-- api/link/ui.htmlform_rules_config.md - defines a set of rules for input field(s) of the form(htmlform)
 - api/link/ui.htmlform_scroll_config.md - enables/disables the scroll bar
 - api/link/ui.htmlform_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.htmlform_src_config.md - the path to an external template that is loaded by Ajax
@@ -53,7 +52,6 @@ Properties
 - api/link/ui.htmlform_minwidth_config.md
 - api/link/ui.htmlform_on_config.md
 - api/link/ui.htmlform_onclick_config.md
-- api/link/ui.htmlform_rules_config.md
 - api/link/ui.htmlform_scroll_config.md
 - api/link/ui.htmlform_scrollspeed_config.md
 - api/link/ui.htmlform_src_config.md

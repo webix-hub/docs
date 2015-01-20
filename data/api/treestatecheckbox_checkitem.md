@@ -1,7 +1,7 @@
 checkItem
 =============
 @short:
-	checks the checkbox related to the specified item
+	checks the checkbox it the tree item
 
 @params:
 - id	string	the id of an item to check

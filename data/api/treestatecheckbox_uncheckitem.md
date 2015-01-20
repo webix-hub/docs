@@ -1,6 +1,6 @@
 uncheckItem
 =============
-@short:unchecks the checkbox	related to the specified item
+@short:unchecks the checkbox in the tree item
 	
 
 @params:

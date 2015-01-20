@@ -4,7 +4,7 @@ Methods
 {{api
 - api/link/dataloader_add.md - adds an item to the store
 - api/link/dataloader_clearall.md - removes all items from the component
-- api/link/dataloader_count.md - returns the count of items in the table
+- api/link/dataloader_count.md - returns the number of currently visible items
 - api/link/dataloader_exists.md - checks whether an item with the specified id exists
 - api/link/dataloader_filter.md - filters the component
 - api/link/dataloader_getfirstid.md - returns the ID of the first item

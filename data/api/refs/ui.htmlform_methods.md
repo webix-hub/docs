@@ -8,7 +8,6 @@ Methods
 - api/link/ui.htmlform_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.htmlform_callevent.md - calls an inner event
 - api/link/ui.htmlform_clear.md - clears all the field in a specified form
-- api/link/ui.htmlform_clearvalidation.md - removes "data incorrect" highlighting from invalid text fields
 - api/link/ui.htmlform_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.htmlform_destructor.md - destructs the calling object
 - api/link/ui.htmlform_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
@@ -44,7 +43,6 @@ Methods
 - api/link/ui.htmlform_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.htmlform_unbind.md - breaks "bind" link
 - api/link/ui.htmlform_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/ui.htmlform_validate.md - checks data in the component during adding new item or editing existing ones
 }}
 
 @index:
@@ -54,7 +52,6 @@ Methods
 - api/link/ui.htmlform_blockevent.md
 - api/link/ui.htmlform_callevent.md
 - api/link/ui.htmlform_clear.md
-- api/link/ui.htmlform_clearvalidation.md
 - api/link/ui.htmlform_define.md
 - api/link/ui.htmlform_destructor.md
 - api/link/ui.htmlform_detachevent.md
@@ -90,6 +87,5 @@ Methods
 - api/link/ui.htmlform_sync.md
 - api/link/ui.htmlform_unbind.md
 - api/link/ui.htmlform_unblockevent.md
-- api/link/ui.htmlform_validate.md
 
 

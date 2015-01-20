@@ -37,7 +37,7 @@ The component presents a collection of objects according to a user-defined templ
 - api/link/ui.dataview_clearcss.md - removes css class from all items
 - api/link/ui.dataview_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.dataview_copy.md - copies an item to the same or another object
-- api/link/ui.dataview_count.md - returns the count of items in the table
+- api/link/ui.dataview_count.md - returns the number of currently visible items
 - api/link/ui.dataview_customize.md - redefines the "type" property
 - api/link/ui.dataview_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.dataview_destructor.md - destructs the calling object
@@ -188,7 +188,7 @@ The component presents a collection of objects according to a user-defined templ
 - api/link/ui.dataview_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
 - api/link/ui.dataview_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.dataview_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
-- api/link/ui.dataview_onmousemove_config.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.dataview_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
 - api/link/ui.dataview_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
 - api/link/ui.dataview_ready_config.md - a handler that is called just after the page has been completely parsed
 - api/link/ui.dataview_removemissed_config.md - defines how to treat items in case of reloading

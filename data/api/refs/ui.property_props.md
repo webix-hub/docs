@@ -31,7 +31,7 @@ Properties
 - api/link/ui.property_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
 - api/link/ui.property_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.property_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
-- api/link/ui.property_onmousemove_config.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.property_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
 - api/link/ui.property_scroll_config.md - enables/disables the scroll bar
 - api/link/ui.property_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.property_template_config.md - the component template

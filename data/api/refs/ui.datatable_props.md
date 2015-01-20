@@ -58,7 +58,7 @@ Properties
 - api/link/ui.datatable_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
 - api/link/ui.datatable_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.datatable_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
-- api/link/ui.datatable_onmousemove_config.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.datatable_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
 - api/link/ui.datatable_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
 - api/ui.datatable_prerender_config.md - invokes the full rendering of DataTable data
 - api/link/ui.datatable_ready_config.md - a handler that is called just after the page has been completely parsed

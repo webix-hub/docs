@@ -21,3 +21,4 @@ returns the id of the item with the specified index
 @descr:
 
 
+if item with such index doesn't exists method returns undefined value

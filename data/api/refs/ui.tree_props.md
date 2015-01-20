@@ -30,7 +30,7 @@ Properties
 - api/link/ui.tree_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
 - api/link/ui.tree_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.tree_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
-- api/link/ui.tree_onmousemove_config.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.tree_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
 - api/link/ui.tree_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
 - api/link/ui.tree_ready_config.md - a handler that is called just after the page has been completely parsed
 - api/link/ui.tree_removemissed_config.md - defines how to treat items in case of reloading

@@ -4,21 +4,22 @@ ui.tree
 
 {{memo A hierarchical structure of nodes. }}
 
-Each node in the tree might contain any number of other nodes, called as child. Nodes that contain child nodes can be expanded or collapsed. <br>
-The component supports in-line node editing, advanced drag-and-drop, three-state checkboxes etc. Check [tree](/) documentation for more detailed description.
+Each node in the tree might contain any number of nodes. Nodes that contain child nodes can be expanded or collapsed. <br>
+
+The component supports in-line node editing, advanced drag-and-drop, three-state checkboxes etc. Check [tree](datatree/index.md) documentation for more detailed description.
 
 ### Constructor
 
 ~~~js
-	var tree = webix.ui({
-		view:"tree", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_tree({
-		...config options goes here..
-	});
+var tree = webix.ui({
+	view:"tree", 
+	container:"mydiv", 
+	...config options go here..
+})
+//or, in case of jQuery
+$("#mydiv").webix_tree({
+	...config options go here..
+});
 ~~~
 
 <div class='webixdoc_parents'><span>Based on: </span>
@@ -36,14 +37,14 @@ The component supports in-line node editing, advanced drag-and-drop, three-state
 - api/link/ui.tree_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.tree_callevent.md - calls an inner event
 - api/link/ui.tree_checkall.md - check all items in tree
-- api/link/ui.tree_checkitem.md - checks the checkbox related to the specified item
+- api/link/ui.tree_checkitem.md - checks the checkbox it the tree item
 - api/link/ui.tree_clearall.md - removes all items from the component
 - api/link/ui.tree_clearcss.md - removes css class from all items
 - api/link/ui.tree_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.tree_close.md - closes the branch with the specified id
 - api/link/ui.tree_closeall.md - closes all branches in the tree
 - api/link/ui.tree_copy.md - makes a copy of item
-- api/link/ui.tree_count.md - returns the count of items in the table
+- api/link/ui.tree_count.md - returns the number of currently visible items
 - api/link/ui.tree_customize.md - redefines the "type" property
 - api/link/ui.tree_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.tree_destructor.md - destructs the calling object
@@ -61,14 +62,12 @@ The component supports in-line node editing, advanced drag-and-drop, three-state
 - api/link/ui.tree_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.tree_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.tree_getitem.md - gets the object of the data item with the specified id
-- api/link/ui.tree_getitemnode.md - returns html element of item by item id
+- api/link/ui.tree_getitemnode.md - returns html element of item by item's id
 - api/link/ui.tree_getlastid.md - returns the id of the last item
 - api/link/ui.tree_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.tree_getnextsiblingid.md - returns the id of the next sibling of the specified node
 - api/link/ui.tree_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.tree_getopenitems.md - returns ids of the opened branches
-- api/link/ui.tree_getpage.md - returns the currently visible page in case of paged view
-- api/link/ui.tree_getpager.md - returns the pager object associated with the component
 - api/link/ui.tree_getparentid.md - get the ID of the parent node of the specified item
 - api/link/ui.tree_getparentview.md - returns the parent view of the component
 - api/link/ui.tree_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
@@ -107,7 +106,6 @@ The component supports in-line node editing, advanced drag-and-drop, three-state
 - api/link/ui.tree_select.md - selects the specified item(s)
 - api/link/ui.tree_selectall.md - selects all items or the specified range
 - api/link/ui.tree_serialize.md - serializes data to a json object
-- api/link/ui.tree_setpage.md - makes the specified page visible (assuming that the pager was defined )
 - api/link/ui.tree_setstate.md - restores the specified state
 - api/link/ui.tree_show.md - makes the component visible
 - api/link/ui.tree_showitem.md - scrolls the component to make the specified item visible
@@ -116,7 +114,7 @@ The component supports in-line node editing, advanced drag-and-drop, three-state
 - api/link/ui.tree_unbind.md - breaks "bind" link
 - api/link/ui.tree_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.tree_uncheckall.md - uncheck all items in the tree
-- api/link/ui.tree_uncheckitem.md - unchecks the checkbox related to the specified item
+- api/link/ui.tree_uncheckitem.md - unchecks the checkbox in the tree item
 - api/link/ui.tree_ungroup.md - ungroups data
 - api/link/ui.tree_unselect.md - removes selection from the specified item
 - api/link/ui.tree_unselectall.md - removes selection from all items
@@ -214,7 +212,7 @@ The component supports in-line node editing, advanced drag-and-drop, three-state
 - api/link/ui.tree_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
 - api/link/ui.tree_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.tree_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
-- api/link/ui.tree_onmousemove_config.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.tree_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
 - api/link/ui.tree_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
 - api/link/ui.tree_ready_config.md - a handler that is called just after the page has been completely parsed
 - api/link/ui.tree_removemissed_config.md - defines how to treat items in case of reloading

@@ -8,10 +8,14 @@ Webix 2.1 -> 2.2
 ### Templates in datatable
 
 In version 2.1 you could use "#value#" in the column's template to apply the same property that was defined as the column's id.
+
 Version 2.2 will support this feature as well, but you need to use "#$value#" instead of the old syntax. It does affect only the "#value#" keyword, 
 all other templates ("#some#") will work without any changes. 
 
 
+### Ajax
+
+ajax.header method was deprecated in favor of [ajax.headers](api/ajax_headers.md)
 
 ### Sizing
 

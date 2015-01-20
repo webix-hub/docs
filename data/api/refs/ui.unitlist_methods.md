@@ -13,7 +13,7 @@ Methods
 - api/link/ui.unitlist_clearcss.md - removes css class from all items
 - api/link/ui.unitlist_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.unitlist_copy.md - copies an item to the same or another object
-- api/link/ui.unitlist_count.md - returns the count of items in the table
+- api/link/ui.unitlist_count.md - returns the number of currently visible items
 - api/link/ui.unitlist_customize.md - redefines the "type" property
 - api/link/ui.unitlist_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.unitlist_destructor.md - destructs the calling object

@@ -18,7 +18,6 @@ If you are updating from Webix 1.x - please check the migration.md
 - [find API](api/ui.datatable_find.md) for datatable and treetable
 - [addOption()](api/link/ui.tabbar_addoption.md) method supports option object as argument
 - [addDropZone()](desktop/apionly_uploader.md#usingapiolyuploaderfordragndrop) method for uploader to allow file upload by drag-n-drop on html area
-- [webix.ui.$freeze](api/ui_$freeze_other.md) blocks all resizing
 - [webix.ui.animate to animate view creation](desktop/animation.md#animatingviewinitialization)
 - tabview can have custom width for different cells
 - [tab close](api/ui.tabbar_onbeforetabclose_event.md) and [tab/segment remove](api/ui.segmented_onoptionremove_event.md) events

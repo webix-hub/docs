@@ -39,7 +39,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.treetable_callevent.md - calls an inner event
 - api/link/ui.treetable_checkall.md - check all items in tree
-- api/link/ui.treetable_checkitem.md - checks the checkbox	related to the specified item
+- api/link/ui.treetable_checkitem.md - checks the checkbox it the tree item
 - api/link/ui.treetable_clearall.md - removes all items from the component
 - api/link/ui.treetable_clearcss.md - removes css class from all items
 - api/link/ui.treetable_clearvalidation.md - removes all validation marks from the component
@@ -48,7 +48,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_collectvalues.md - returns an array of unique values of the specified column
 - api/link/ui.treetable_columnid.md - returns the id of the column at the specified index
 - api/link/ui.treetable_copy.md - copies an item to the same or another object
-- api/link/ui.treetable_count.md - returns the count of items in the table
+- api/link/ui.treetable_count.md - returns the number of currently visible items
 - api/link/ui.treetable_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.treetable_destructor.md - destructs the calling object
 - api/link/ui.treetable_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
@@ -164,7 +164,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_unbind.md - breaks "bind" link
 - api/link/ui.treetable_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.treetable_uncheckall.md - uncheck all items in the tree
-- api/link/ui.treetable_uncheckitem.md - unchecks the checkbox	related to the specified item
+- api/link/ui.treetable_uncheckitem.md - unchecks the checkbox in the tree item
 - api/link/ui.treetable_ungroup.md - ungroups data
 - api/link/ui.treetable_updateitem.md - sets properties of the data item
 - api/link/ui.treetable_validate.md - validates one record or all dataset against validation rules
@@ -237,7 +237,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_onscrolly_event.md - fires when the user scrolls the table up or down
 - api/link/ui.treetable_onselectchange_event.md - fires when selection is changed in DataTable
 - api/link/ui.treetable_onstructureload_event.md - fires when the structure of DataTable (columns configuration) is initialized
-- api/link/ui.treetable_onstructureupdate_event.md - 
+- api/link/ui.treetable_onstructureupdate_event.md - fires when structure of datatable was changed ( column added, hidden or reconfigured )
 - api/link/ui.treetable_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.treetable_onswipey_event.md - occurs on a vertical swipe movement
 - api/link/ui.treetable_ontimedkeypress_event.md - fires after typing has been finished in the field
@@ -309,7 +309,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
 - api/link/ui.treetable_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.treetable_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
-- api/link/ui.treetable_onmousemove_config.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.treetable_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
 - api/link/ui.treetable_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
 - api/link/ui.treetable_prerender_config.md - invokes the full rendering of DataTable data
 - api/link/ui.treetable_ready_config.md - a handler that is called just after the page has been completely parsed

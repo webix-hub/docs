@@ -14,6 +14,6 @@ webix.message("Some message");
 @template:	api_method
 @descr:
 
-Supports many skins and configurations, check [jsMessage](https://github.com/Webix/message) for more details.
+Supports many skins and configurations, check [jsMessage](https://github.com/dhtmlx/message) for more details.
 
 

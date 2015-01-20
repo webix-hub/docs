@@ -9,7 +9,7 @@ Methods
 - api/link/datacollection_callevent.md - calls an inner event
 - api/link/datacollection_clearall.md - removes all items from the component
 - api/link/datacollection_clearvalidation.md - removes all validation marks from the component
-- api/link/datacollection_count.md - returns the count of items in the table
+- api/link/datacollection_count.md - returns the number of currently visible items
 - api/link/datacollection_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/datacollection_destructor.md - destructs the calling object
 - api/link/datacollection_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)

@@ -93,7 +93,7 @@ The component is used to make some view placed into a layout draggable by a spec
 - api/link/ui.resizer_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
 - api/link/ui.resizer_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.resizer_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
-- api/link/ui.resizer_onmousemove_config.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.resizer_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
 - api/link/ui.resizer_width_config.md - sets the width of the component
 }}
 

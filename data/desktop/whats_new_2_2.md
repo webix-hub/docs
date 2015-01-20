@@ -4,16 +4,17 @@ Version 2.2
 ## Breaking changes
 
  - width and height settings for all data components include size of scrollbar ( so component will always take exactly the same size as was defined by width and height properties )
+ - ajax.header was deprecated in favor of [ajax.headers](api/ajax_headers.md)
 
 If you are updating from Webix 1.x - please check the migration.md
 
 
 ## New features
 
-- data binding for Tree, TreeTable and TreeCollection
+- data binding for Tree, TreeTable and [TreeCollection](desktop/binding_details.md#bindingrules)
 - optional [Today and Clear buttons](desktop/calendar.md#todayandclearbuttons) in the Calendar
 - ability [to define file types](desktop/configuring_uploader.md#uploadingparticularfiletypes) for file uploader
-- webix.ajax api can be used to fetch binary data ( file downloading by ajax )
+- webix.ajax api can be used to [fetch binary data](helpers/ajax_operations.md#gettingbinarydata) ( file downloading by ajax )
 - [optional hover for rows](datatable/styling.md#hover) in datatable
 - horizontal and vertical [auto-scrolls during drag-n-drop](datatable/drag_and_drop.md#autoscroll) for data components
 - extra [options for filtering](datatable/filtering.md#treetablespecificconfiguration) in tree and treetatable 

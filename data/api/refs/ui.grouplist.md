@@ -39,7 +39,7 @@ Support for various data template formats, sorting and filtering features. Check
 - api/link/ui.grouplist_clearcss.md - removes css class from all items
 - api/link/ui.grouplist_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.grouplist_copy.md - copies an item to the same or another object
-- api/link/ui.grouplist_count.md - returns the count of items in the table
+- api/link/ui.grouplist_count.md - returns the number of currently visible items
 - api/link/ui.grouplist_customize.md - redefines the "type" property
 - api/link/ui.grouplist_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.grouplist_destructor.md - destructs the calling object
@@ -196,7 +196,7 @@ Support for various data template formats, sorting and filtering features. Check
 - api/link/ui.grouplist_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
 - api/link/ui.grouplist_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.grouplist_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
-- api/link/ui.grouplist_onmousemove_config.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.grouplist_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
 - api/link/ui.grouplist_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
 - api/link/ui.grouplist_ready_config.md - a handler that is called just after the page has been completely parsed
 - api/link/ui.grouplist_removemissed_config.md - defines how to treat items in case of reloading

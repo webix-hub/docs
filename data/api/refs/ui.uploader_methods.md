@@ -15,7 +15,7 @@ Methods
 - api/link/ui.uploader_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.uploader_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.uploader_enable.md - enables the calling view that was disabled by the 'disable' method
-- api/ui.uploader_filedialog.md - 
+- api/ui.uploader_filedialog.md - opens a file browsing dialog on a client machine
 - api/link/ui.uploader_focus.md - sets focus to the control
 - api/link/ui.uploader_getchildviews.md - returns child views of the calling component
 - api/link/ui.uploader_getformview.md - returns master form for the input
@@ -36,7 +36,7 @@ Methods
 - api/ui.uploader_send.md - sends files from uploader body to server
 - api/link/ui.uploader_setvalue.md - sets a new value for the component
 - api/link/ui.uploader_show.md - makes the component visible
-- api/ui.uploader_stopupload.md - 
+- api/ui.uploader_stopupload.md - cancel current upload
 - api/link/ui.uploader_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.uploader_unbind.md - breaks "bind" link
 - api/link/ui.uploader_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command

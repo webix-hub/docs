@@ -1,21 +1,17 @@
-header
+headers
 =============
 
 @short: 
 	sets the HTTP request header(s)
 	
-
 @params:
-
-- fields	object	 the name-value pairs of header fields
+- values	object	 the name-value pairs of header fields
 
 @returns:
-
-- header		object 		the request object
-	
+- self		object 		the ajax object
 
 @example:
-webix.ajax().header({
+webix.ajax().headers({
    	'Accept-Encoding': 'gzip', 
     'Accept-Language': 'en-US'
 })
@@ -25,6 +21,7 @@ webix.ajax().header({
     desktop/serverside.md
 @template:	api_method
 @descr:
+
 The default header definition  is  <code> { 'Content-type': 'application/x-www-form-urlencoded' }</code>.
 
 

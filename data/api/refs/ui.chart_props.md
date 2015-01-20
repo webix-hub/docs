@@ -42,7 +42,7 @@ Properties
 - api/link/ui.chart_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
 - api/link/ui.chart_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.chart_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
-- api/link/ui.chart_onmousemove_config.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.chart_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
 - api/ui.chart_origin_config.md - sets the scale origin
 - api/ui.chart_padding_config.md - sets paddings of the chart content
 - api/ui.chart_pieheight_config.md - the height of the 3d pie

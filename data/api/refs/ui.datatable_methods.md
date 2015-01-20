@@ -21,7 +21,7 @@ Methods
 - api/ui.datatable_collectvalues.md - returns an array of unique values of the specified column
 - api/ui.datatable_columnid.md - returns the id of the column at the specified index
 - api/link/ui.datatable_copy.md - copies an item to the same or another object
-- api/link/ui.datatable_count.md - returns the count of items in the table
+- api/link/ui.datatable_count.md - returns the number of currently visible items
 - api/link/ui.datatable_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.datatable_destructor.md - destructs the calling object
 - api/link/ui.datatable_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)

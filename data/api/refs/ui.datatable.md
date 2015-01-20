@@ -46,7 +46,7 @@ The component is full of various possibilities: filtering, sorting, pagination, 
 - api/ui.datatable_collectvalues.md - returns an array of unique values of the specified column
 - api/ui.datatable_columnid.md - returns the id of the column at the specified index
 - api/link/ui.datatable_copy.md - copies an item to the same or another object
-- api/link/ui.datatable_count.md - returns the count of items in the table
+- api/link/ui.datatable_count.md - returns the number of currently visible items
 - api/link/ui.datatable_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.datatable_destructor.md - destructs the calling object
 - api/link/ui.datatable_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
@@ -220,7 +220,7 @@ The component is full of various possibilities: filtering, sorting, pagination, 
 - api/ui.datatable_onscrolly_event.md - fires when the user scrolls the table up or down
 - api/ui.datatable_onselectchange_event.md - fires when selection is changed in DataTable
 - api/ui.datatable_onstructureload_event.md - fires when the structure of DataTable (columns configuration) is initialized
-- api/link/ui.datatable_onstructureupdate_event.md - 
+- api/ui.datatable_onstructureupdate_event.md - fires when structure of datatable was changed ( column added, hidden or reconfigured )
 - api/link/ui.datatable_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.datatable_onswipey_event.md - occurs on a vertical swipe movement
 - api/link/ui.datatable_ontimedkeypress_event.md - fires after typing has been finished in the field
@@ -292,7 +292,7 @@ The component is full of various possibilities: filtering, sorting, pagination, 
 - api/link/ui.datatable_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
 - api/link/ui.datatable_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.datatable_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
-- api/link/ui.datatable_onmousemove_config.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.datatable_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
 - api/link/ui.datatable_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
 - api/ui.datatable_prerender_config.md - invokes the full rendering of DataTable data
 - api/link/ui.datatable_ready_config.md - a handler that is called just after the page has been completely parsed

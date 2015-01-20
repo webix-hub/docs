@@ -6,11 +6,14 @@ fileDialog
 	
 
 @params:
-- content	obj	file upload context
+* content	obj	file upload context
 
 
 @example:
+$$("uploadAPI").fileDialog();
+//or
 $$("uploadAPI").fileDialog({ rowid : id.row });
+
 
 @related:
 	desktop/apionly_uploader.md
@@ -20,7 +23,7 @@ $$("uploadAPI").fileDialog({ rowid : id.row });
 @template:	api_method
 @descr:
 
-File upload **context** is an object with any properties that you would like to see within an uploaded item data. 
+File upload **context** is an optional object with any properties that you would like to see within an uploaded item data. 
 
 For instance, context can be used in an api/ui.uploader_onfileupload_event.md event: 
 

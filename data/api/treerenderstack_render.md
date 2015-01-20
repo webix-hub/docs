@@ -2,7 +2,7 @@ getItemNode
 =============
 
 
-@short: returns html element of item by item id
+@short: returns html element of item by item's id
 	
 
 @params: 
