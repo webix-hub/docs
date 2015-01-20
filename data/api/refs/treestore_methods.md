@@ -10,6 +10,7 @@ Methods
 - api/treestore_eachchild.md - iterates through the first-level childs of the specified branch
 - api/treestore_eachopen.md - iterates through opened nodes of the tree (both parent and child)
 - api/treestore_eachsubitem.md - iterates through all childs (of any level) of the specified branch
+- api/treestore_getbranch.md - 
 - api/treestore_getbranchindex.md - gets index of the node in a specific branch
 - api/treestore_getfirstchildid.md - gets the ID of the first child of the specified branch
 - api/treestore_getnextsiblingid.md - returns the id of the next sibling of the specified node
@@ -31,6 +32,7 @@ Methods
 - api/treestore_eachchild.md
 - api/treestore_eachopen.md
 - api/treestore_eachsubitem.md
+- api/treestore_getbranch.md
 - api/treestore_getbranchindex.md
 - api/treestore_getfirstchildid.md
 - api/treestore_getnextsiblingid.md

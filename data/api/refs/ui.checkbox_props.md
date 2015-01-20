@@ -12,7 +12,7 @@ Properties
 - api/link/ui.checkbox_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.checkbox_css_config.md - the name of a css class that will be applied to the view container
 - api/ui.checkbox_customcheckbox_config.md - enables/disables custom checkbox in some skins
-- api/link/ui.checkbox_disabled_config.md - disables item
+- api/link/ui.checkbox_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.checkbox_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.checkbox_height_config.md - sets the height of the component
 - api/link/ui.checkbox_hidden_config.md - defines whether the view will be hidden initially

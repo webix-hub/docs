@@ -78,7 +78,6 @@ The control combines an editable text field with a drop-down list of predefined 
 - api/link/ui.combo_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.combo_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.combo_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
-- api/link/ui.combo_onrotate_event.md - occurs on screen rotating
 - api/link/ui.combo_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.combo_onswipey_event.md - occurs on a vertical swipe movement
 - api/link/ui.combo_ontimedkeypress_event.md - fires after typing has been finished in the field
@@ -100,7 +99,7 @@ The control combines an editable text field with a drop-down list of predefined 
 - api/link/ui.combo_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.combo_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.combo_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.combo_disabled_config.md - disables item
+- api/link/ui.combo_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.combo_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.combo_height_config.md - sets the height of the component
 - api/link/ui.combo_hidden_config.md - defines whether the view will be hidden initially

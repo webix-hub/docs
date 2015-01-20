@@ -15,15 +15,15 @@ If you are updating from Webix 1.x - please check the migration.md
 - ability to define file types for file uploader
 - webix.ajax api can be used to fetch binary data ( file downloading by ajax )
 - optional hover for rows in datatable
-- horizontal and vertical auto-scrolls during drag-n-drop for data components
-- extra options for filtering in tree and treetatable 
+- horizontal and vertical [auto-scrolls during drag-n-drop](datatable/drag_and_drop.md#autoscroll) for data components
+- extra [options for filtering](datatable/filtering.md#treetablespecificconfiguration) in tree and treetatable 
 - improved scrolling on touch devices
-- advanced tooltip options for datatable
-- all data components supports object notatins for $css property
+- advanced [tooltip options for datatable](desktop/tooltip.md#datatabletooltip)
+- all data components supports [object notatins for $css](desktop/styling.md#stylingseparateitemsinthecomponent) property
 - onClick and other mouse handlers can use any css class, not only the first one
-- view.show can be used without animation
-- markup.init must return new ui
-- obj.size and obj.ids can be set independently with setState
+- [view.show](api/ui.baseview_show.md) can be used without animation
+- [markup.init](api/markup_init.md) will return newly constructed ui
+- size of columns and order of columns can be restored through [setState API](api/link/ui.datatable_setstate.md)
 - removeHotKey accepts human readable key names
 
 

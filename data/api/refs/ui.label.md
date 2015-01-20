@@ -76,9 +76,9 @@ The component is used to display static text on a page. Check [label](desktop/co
 - api/link/ui.label_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.label_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.label_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
-- api/link/ui.label_onrotate_event.md - occurs on screen rotating
 - api/link/ui.label_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.label_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.label_ontimedkeypress_event.md - fires after typing has been finished in the field
 - api/link/ui.label_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.label_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.label_ontouchstart_event.md - when some webix view has been touched
@@ -96,7 +96,7 @@ The component is used to display static text on a page. Check [label](desktop/co
 - api/link/ui.label_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.label_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.label_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.label_disabled_config.md - disables item
+- api/link/ui.label_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.label_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.label_height_config.md - sets the height of the component
 - api/link/ui.label_hidden_config.md - defines whether the view will be hidden initially

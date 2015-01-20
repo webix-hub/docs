@@ -18,7 +18,7 @@ Methods
 - api/link/ui.tree_closeall.md - closes all branches in the tree
 - api/link/ui.tree_copy.md - makes a copy of item
 - api/link/ui.tree_count.md - returns the count of items in the table
-- api/link/ui.tree_customize.md - redefines the 'type' property
+- api/link/ui.tree_customize.md - redefines the "type" property
 - api/link/ui.tree_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.tree_destructor.md - destructs the calling object
 - api/link/ui.tree_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)

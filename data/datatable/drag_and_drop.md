@@ -108,6 +108,7 @@ The part covers the following topics:
 - [Denying dropping to specific positions](#denying_dropping);
 - [Switching between 'move' and 'copy' behaviors](#copy_behaviour);
 - [Limiting the draggable area to a certain element](#limiting_draggable_area);
+- [Auto scrolling during drag-n-drop](#autoscroll).
 - [Related events](#events).
 
 <h3 id="custom_text">Custom text of the dragging items</h3>
@@ -270,6 +271,26 @@ var dtable = new webix.ui({
 {{sample
 15_datatable/22_dnd/08_columns_handle.html
 }}
+
+<h3 id="autoscroll">Scrolling during Drag And Drop</h3>
+
+By default datatable will scroll self automatically when drag is near the top or bottom border. This behavior can be disabled by using dragScroll configuration property
+
+~~~
+webix.ui({
+	view:"datatable",
+	dragScroll:false
+});
+~~~
+
+By default drag scroll works only for vertical scroll, you can enable it for both x and y directions by using
+
+~~~
+webix.ui({
+	view:"datatable",
+	dragScroll:"xy"
+});
+~~~
 
 <h3 id="events">Related events</h3>
 

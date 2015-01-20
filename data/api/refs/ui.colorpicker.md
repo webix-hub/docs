@@ -77,7 +77,6 @@ The component handles RGB, HSL, and hex formats and allows setting custom colors
 - api/link/ui.colorpicker_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.colorpicker_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.colorpicker_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
-- api/link/ui.colorpicker_onrotate_event.md - occurs on screen rotating
 - api/link/ui.colorpicker_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.colorpicker_onswipey_event.md - occurs on a vertical swipe movement
 - api/link/ui.colorpicker_ontimedkeypress_event.md - fires after typing has been finished in the field
@@ -99,7 +98,8 @@ The component handles RGB, HSL, and hex formats and allows setting custom colors
 - api/link/ui.colorpicker_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.colorpicker_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.colorpicker_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.colorpicker_disabled_config.md - disables item
+- api/link/ui.colorpicker_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.colorpicker_editable_config.md - 
 - api/link/ui.colorpicker_format_config.md - sets date format in the control
 - api/link/ui.colorpicker_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.colorpicker_height_config.md - sets the height of the component
@@ -129,6 +129,7 @@ The component handles RGB, HSL, and hex formats and allows setting custom colors
 - api/link/ui.colorpicker_suggest_config.md - links suggest list to the input
 - api/link/ui.colorpicker_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/link/ui.colorpicker_template_config.md - the component template
+- api/link/ui.colorpicker_timeicon_config.md - 
 - api/link/ui.colorpicker_timepicker_config.md - enables optional timepicker in the calendar
 - api/link/ui.colorpicker_tooltip_config.md - tooltip for the input
 - api/link/ui.colorpicker_type_config.md - the type of the control

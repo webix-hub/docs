@@ -4,7 +4,7 @@ Events
 {{api
 - api/link/ui.toolbar_onafterload_event.md - fires after server side loading is complete
 - api/link/ui.toolbar_onaftervalidation_event.md - fires after data has been validated
-- api/link/ui.toolbar_onbeforeload_event.md - occurs immediately before loading data has been started
+- api/link/ui.toolbar_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/link/ui.toolbar_onbeforevalidate_event.md - called before runing validation
 - api/link/ui.toolbar_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.toolbar_onchange_event.md - fires when data in the input is changed

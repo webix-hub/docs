@@ -151,6 +151,38 @@ Or **redefine default CSS** for this document:
 
 As far as you've noticed, **Webix default CSS classes** are marked by a **"webix_"** prefix. Moreover, each component part has its peculiar CSS class, you can redefine. Read below to learn more about it.
 
+
+##Styling separate items in the component
+
+Instead of defining css class for the whole component you can define css class for single items. To do so you need to place $css property in the data object. This property can contain a name of css class or a hash of css rules.
+
+{{snippet Setting item's style directly in the dataset}}
+~~~
+<style>
+    .my_style{
+        background-color:#FFAAAA;
+    }
+</style>
+ 
+<script>
+webix.ui({
+    view:"list",
+    data:[
+        { id:1,
+          value:"The Shawshank Redemption",
+          $css:"highlight"
+        },
+        { id:2,
+          value:"The Godfather",
+          $css:{ "text-align":"right" }
+        }
+    ]
+})
+</script>
+~~~
+
+If you want to change styles dynamically, after page loading you can use  the addCss and removeCss api.
+
 ##Styling of a Specific Part of a Component (CSS maps)
 
 CSS maps help stylize a specific part of a component. You should refer to its CSS map, pick the css class to the needed part and define the style in the document head. 

@@ -11,7 +11,6 @@ Events
 - api/link/ui.textarea_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.textarea_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.textarea_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
-- api/link/ui.textarea_onrotate_event.md - occurs on screen rotating
 - api/link/ui.textarea_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.textarea_onswipey_event.md - occurs on a vertical swipe movement
 - api/link/ui.textarea_ontimedkeypress_event.md - fires after typing has been finished in the field
@@ -31,7 +30,6 @@ Events
 - api/link/ui.textarea_onitemclick_event.md
 - api/link/ui.textarea_onkeypress_event.md
 - api/link/ui.textarea_onlongtouch_event.md
-- api/link/ui.textarea_onrotate_event.md
 - api/link/ui.textarea_onswipex_event.md
 - api/link/ui.textarea_onswipey_event.md
 - api/link/ui.textarea_ontimedkeypress_event.md

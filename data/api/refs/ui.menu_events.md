@@ -30,6 +30,7 @@ Events
 - api/link/ui.menu_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.menu_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.menu_onitemrender_event.md - for each item rendering, occurs only for items with custom templates
+- api/link/ui.menu_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.menu_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.menu_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/ui.menu_onmenuitemclick_event.md - fires when menu item has been clicked
@@ -37,10 +38,10 @@ Events
 - api/link/ui.menu_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.menu_onmouseout_event.md - fires when the mouse was moved out from the specified item
 - api/link/ui.menu_onpaste_event.md - fires when the user presses CTRL+V keys combination
-- api/link/ui.menu_onrotate_event.md - occurs on screen rotating
 - api/link/ui.menu_onselectchange_event.md - fires after selection state was changed
 - api/link/ui.menu_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.menu_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.menu_ontimedkeypress_event.md - fires after typing has been finished in the field
 - api/link/ui.menu_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.menu_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.menu_ontouchstart_event.md - when some webix view has been touched
@@ -78,6 +79,7 @@ Events
 - api/link/ui.menu_onitemclick_event.md
 - api/link/ui.menu_onitemdblclick_event.md
 - api/link/ui.menu_onitemrender_event.md
+- api/link/ui.menu_onkeypress_event.md
 - api/link/ui.menu_onloaderror_event.md
 - api/link/ui.menu_onlongtouch_event.md
 - api/ui.menu_onmenuitemclick_event.md
@@ -85,10 +87,10 @@ Events
 - api/link/ui.menu_onmousemoving_event.md
 - api/link/ui.menu_onmouseout_event.md
 - api/link/ui.menu_onpaste_event.md
-- api/link/ui.menu_onrotate_event.md
 - api/link/ui.menu_onselectchange_event.md
 - api/link/ui.menu_onswipex_event.md
 - api/link/ui.menu_onswipey_event.md
+- api/link/ui.menu_ontimedkeypress_event.md
 - api/link/ui.menu_ontouchend_event.md
 - api/link/ui.menu_ontouchmove_event.md
 - api/link/ui.menu_ontouchstart_event.md

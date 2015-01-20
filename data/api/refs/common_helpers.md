@@ -12,27 +12,27 @@ common helpers
 {{api
 - api/_alert.md - creates an alert box
 - api/_animate.md - animate some hmtl area
-- api/link/_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/_attachevent.md - 
 - api/_bind.md - binds a function to an object
-- api/link/_blockevent.md - temporarily blocks triggering of ALL events of the calling object
-- api/link/_callevent.md - calls an inner event
+- api/link/_blockevent.md - 
+- api/link/_callevent.md - 
 - api/_clone.md - makes a shallow copy of an object
 - api/_confirm.md - creates a confirm box
 - api/_copy.md - makes a deep copy of an object
 - api/_delay.md - delays a code from executing at runtime. The method waits for the specified number of milliseconds and then executes the specified code
-- api/link/_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
+- api/link/_detachevent.md - 
 - api/_dp.md - returns dataprocessor object
 - api/_editstop.md - closes active editor in all webix components
 - api/_event.md - attaches an event handler to an HTML element
 - api/_eventremove.md - removes an event handler from an HTML element
 - api/_exec.md - executes a code string at runtime
 - api/_extend.md - merges the contents of 2 objects together into the first object
-- api/link/_hasevent.md - checks whether the component has the specified event
+- api/link/_hasevent.md - 
 - api/_isarray.md - checks whether the passed value is an array
 - api/_isdate.md - checks whether the passed value is a date object
 - api/_isundefined.md - checks whether the passed value is undefined
 - api/_jsonp.md - issues jsonP call
-- api/link/_mapevent.md - routes events from one object to another
+- api/link/_mapevent.md - 
 - api/_message.md - shows a message box
 - api/_modalbox.md - creates a modal box
 - api/_once.md - allows to call code only once
@@ -51,7 +51,7 @@ common helpers
 - api/_type.md - defines new rendering type for the component
 - api/_ui.md - the object constructor. Creates a new instance of the specified view
 - api/_uid.md - returns a unique id
-- api/link/_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
+- api/link/_unblockevent.md - 
 - api/_wrap.md - 'wraps' a function around the original function
 - api/ui_delay.md - delays a view from initializing at runtime
 - api/ui_fullscreen.md - hides Safari address bar on iPhone/iPod
@@ -66,6 +66,7 @@ common helpers
 
 {{api
 - api/_onclick_event.md - fires when the user clicks on an element
+- api/_onrotate_event.md - occurs on screen rotating
 }}
 
 
@@ -76,13 +77,11 @@ common helpers
 
 
 {{api
-
 - api/_codebase_other.md - returns the path to the 'codebase' folder
 - api/_name_other.md - returns the name of the component (by default, 'Core')
 - api/_version_other.md - returns the current version of the library
 - api/ui_scrollsize_other.md - returns the width of the scroll bar
 - api/ui_zindexbase_other.md - maximum used z-index
-- api/ui_$freeze_other.md - blocks all component resizing
 }}
 
 

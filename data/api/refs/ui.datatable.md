@@ -207,6 +207,7 @@ The component is full of various possibilities: filtering, sorting, pagination, 
 - api/ui.datatable_onheaderclick_event.md - occurs after clicking on header
 - api/link/ui.datatable_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.datatable_onitemdblclick_event.md - fires when a component item was double-clicked
+- api/link/ui.datatable_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.datatable_onliveedit_event.md - occurs when data was changed in the editor
 - api/link/ui.datatable_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.datatable_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
@@ -214,15 +215,15 @@ The component is full of various possibilities: filtering, sorting, pagination, 
 - api/link/ui.datatable_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.datatable_onmouseout_event.md - fires when the mouse was moved out from the specified item
 - api/ui.datatable_onresize_event.md - fires when the width or height of DataTable was changed
-- api/link/ui.datatable_onrotate_event.md - occurs on screen rotating
 - api/ui.datatable_onrowresize_event.md - fires when height of row was changed
 - api/ui.datatable_onscrollx_event.md - fires when the user scrolls the table left or right
 - api/ui.datatable_onscrolly_event.md - fires when the user scrolls the table up or down
 - api/ui.datatable_onselectchange_event.md - fires when selection is changed in DataTable
 - api/ui.datatable_onstructureload_event.md - fires when the structure of DataTable (columns configuration) is initialized
-- api/ui.datatable_onstructureupdate_event.md - fires when structure of datatable was changed ( column added, hidden or reconfigured )
+- api/link/ui.datatable_onstructureupdate_event.md - 
 - api/link/ui.datatable_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.datatable_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.datatable_ontimedkeypress_event.md - fires after typing has been finished in the field
 - api/link/ui.datatable_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.datatable_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.datatable_ontouchstart_event.md - when some webix view has been touched
@@ -248,12 +249,12 @@ The component is full of various possibilities: filtering, sorting, pagination, 
 - api/link/ui.datatable_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.datatable_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.datatable_data_config.md - an inline dataset that data to the component will be load from.
-- api/link/ui.datatable_datafeed_config.md - the url to the data source that the component will use to reload data from
+- api/link/ui.datatable_datafeed_config.md - the url that the component will use to reload data during binding
 - api/ui.datatable_datafetch_config.md - defines the start position DataTable will load data from
 - api/link/ui.datatable_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.datatable_datatype_config.md - the type of loaded data
 - api/link/ui.datatable_delimiter_config.md - sets CSV delimiters for clipboard operations
-- api/link/ui.datatable_disabled_config.md - disables item
+- api/link/ui.datatable_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.datatable_drag_config.md - enables or disables drag-and-drop
 - api/ui.datatable_dragcolumn_config.md - enables drag-and-drop support for columns
 - api/link/ui.datatable_dragscroll_config.md - enables autoscroll of component during drag-n-drop
@@ -272,6 +273,7 @@ The component is full of various possibilities: filtering, sorting, pagination, 
 - api/ui.datatable_headermenu_config.md - adds a headermenu to control column visibility
 - api/link/ui.datatable_height_config.md - sets the height of the component
 - api/link/ui.datatable_hidden_config.md - defines whether the view will be hidden initially
+- api/ui.datatable_hover_config.md - css class for a row-hover in the datatable
 - api/link/ui.datatable_id_config.md - the component ID
 - api/ui.datatable_leftsplit_config.md - the number of the fixed columns from the left side of the table (actual for the <a href="datatable/frozen_columns.md">split mode</a> )
 - api/ui.datatable_livevalidation_config.md - validation during cell editing
@@ -311,7 +313,7 @@ The component is full of various possibilities: filtering, sorting, pagination, 
 - api/ui.datatable_spans_config.md - array of span configurations for the datatable
 - api/link/ui.datatable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/ui.datatable_type_config.md - used for configuring presentation of items
-- api/link/ui.datatable_url_config.md - the url of a data feed which will be loaded after component initialization
+- api/link/ui.datatable_url_config.md - the url the component will use to load data after its initialization
 - api/link/ui.datatable_width_config.md - sets the width of the component
 - api/ui.datatable_ycount_config.md - defines height of datatable in rows
 }}

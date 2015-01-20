@@ -9,7 +9,7 @@ Properties
 - api/link/ui.suggest_borderless_config.md - used to hide the component borders
 - api/link/ui.suggest_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.suggest_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.suggest_disabled_config.md - disables item
+- api/link/ui.suggest_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.suggest_filter_config.md - custom filtering function
 - api/ui.suggest_fitmaster_config.md - size suggest box to the master control
 - api/link/ui.suggest_gravity_config.md - sets the view gravity (1 by default)

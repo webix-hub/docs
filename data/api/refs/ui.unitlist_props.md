@@ -11,10 +11,10 @@ Properties
 - api/link/ui.unitlist_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.unitlist_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.unitlist_data_config.md - an inline dataset that data to the component will be load from.
-- api/link/ui.unitlist_datafeed_config.md - the url to the data source that the component will use to reload data from
+- api/link/ui.unitlist_datafeed_config.md - the url that the component will use to reload data during binding
 - api/link/ui.unitlist_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.unitlist_datatype_config.md - the type of loaded data
-- api/link/ui.unitlist_disabled_config.md - disables item
+- api/link/ui.unitlist_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.unitlist_drag_config.md - enables or disables drag-and-drop
 - api/link/ui.unitlist_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.unitlist_externaldata_config.md - allows defining custom 'move' logic for the component.
@@ -49,7 +49,7 @@ Properties
 - api/link/ui.unitlist_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.unitlist_type_config.md - object that specifies items presentation
 - api/ui.unitlist_uniteby_config.md - sets the template according which items will be grouped in units.
-- api/link/ui.unitlist_url_config.md - the url of a data feed which will be loaded after component initialization
+- api/link/ui.unitlist_url_config.md - the url the component will use to load data after its initialization
 - api/link/ui.unitlist_width_config.md - sets the width of the component
 - api/link/ui.unitlist_xcount_config.md - defines width of view in items
 - api/link/ui.unitlist_ycount_config.md - defines height of view in items

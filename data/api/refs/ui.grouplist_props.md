@@ -11,10 +11,10 @@ Properties
 - api/link/ui.grouplist_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.grouplist_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.grouplist_data_config.md - an inline dataset that data to the component will be load from.
-- api/link/ui.grouplist_datafeed_config.md - the url to the data source that the component will use to reload data from
+- api/link/ui.grouplist_datafeed_config.md - the url that the component will use to reload data during binding
 - api/link/ui.grouplist_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.grouplist_datatype_config.md - the type of loaded data
-- api/link/ui.grouplist_disabled_config.md - disables item
+- api/link/ui.grouplist_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.grouplist_drag_config.md - enables or disables drag-and-drop
 - api/link/ui.grouplist_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.grouplist_externaldata_config.md - allows defining custom 'move' logic for the component.
@@ -50,7 +50,7 @@ Properties
 - api/ui.grouplist_templateitem_config.md - an html template that defines data that will be presented in grouplist
 - api/link/ui.grouplist_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.grouplist_type_config.md - object that specifies items presentation
-- api/link/ui.grouplist_url_config.md - the url of a data feed which will be loaded after component initialization
+- api/link/ui.grouplist_url_config.md - the url the component will use to load data after its initialization
 - api/link/ui.grouplist_width_config.md - sets the width of the component
 - api/link/ui.grouplist_xcount_config.md - defines width of view in items
 - api/link/ui.grouplist_ycount_config.md - defines height of view in items

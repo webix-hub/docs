@@ -96,5 +96,26 @@ webix.ui({
 //tooltip for the Name column is "My tooltip text"
 ~~~
 
+### Advanced tooltip configuration
+
+Instead of defining tooltip for each column separately, you can define tooltip once for all columns
+
+
+~~~
+webix.ui({
+    view:"datatable",
+    tooltip:function(obj, common){
+        //obj - row object
+        //common.column - configuraton of related column
+
+        return "<i>"+obj[common.column.id]+"</i>";
+    },
+    columns:[
+        {id:"name", header:"<span title='My tooltip text'>Name</span>"},
+        {id::"age", header:"Age"}
+    ]
+});
+~~~
+
 
 @complexity:2

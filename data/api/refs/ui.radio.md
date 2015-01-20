@@ -76,7 +76,6 @@ You can group multiple component instances together to provide the desired set o
 - api/link/ui.radio_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.radio_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.radio_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
-- api/link/ui.radio_onrotate_event.md - occurs on screen rotating
 - api/link/ui.radio_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.radio_onswipey_event.md - occurs on a vertical swipe movement
 - api/link/ui.radio_ontimedkeypress_event.md - fires after typing has been finished in the field
@@ -99,7 +98,7 @@ You can group multiple component instances together to provide the desired set o
 - api/link/ui.radio_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.radio_css_config.md - the name of a css class that will be applied to the view container
 - api/ui.radio_customradio_config.md - enables/disables custom radio button for some skins
-- api/link/ui.radio_disabled_config.md - disables item
+- api/link/ui.radio_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.radio_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.radio_height_config.md - sets the height of the component
 - api/link/ui.radio_hidden_config.md - defines whether the view will be hidden initially
@@ -117,6 +116,7 @@ You can group multiple component instances together to provide the desired set o
 - api/link/ui.radio_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.radio_name_config.md - name of the control
 - api/link/ui.radio_on_config.md - allows attaching custom handlers to inner events of the component
+- api/ui.radio_optionheight_config.md - 
 - api/ui.radio_options_config.md - defines options for a set of radiobuttons
 - api/link/ui.radio_placeholder_config.md - placeholder text for the input
 - api/link/ui.radio_popup_config.md - allows to attach pop-up menu to the button

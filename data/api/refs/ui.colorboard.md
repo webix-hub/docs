@@ -52,10 +52,11 @@ The component presents a div that contains a set of color swatches. Used as a pa
 - api/ui.colorboard_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.colorboard_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.colorboard_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.colorboard_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.colorboard_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
-- api/link/ui.colorboard_onrotate_event.md - occurs on screen rotating
 - api/link/ui.colorboard_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.colorboard_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.colorboard_ontimedkeypress_event.md - fires after typing has been finished in the field
 - api/link/ui.colorboard_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.colorboard_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.colorboard_ontouchstart_event.md - when some webix view has been touched
@@ -71,7 +72,7 @@ The component presents a div that contains a set of color swatches. Used as a pa
 - api/ui.colorboard_cols_config.md - sets the number of columns in the palette
 - api/link/ui.colorboard_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.colorboard_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.colorboard_disabled_config.md - disables item
+- api/link/ui.colorboard_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.colorboard_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.colorboard_height_config.md - sets the height of the component
 - api/link/ui.colorboard_hidden_config.md - defines whether the view will be hidden initially

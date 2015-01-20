@@ -40,7 +40,7 @@ Support for various data template formats, sorting and filtering features. Check
 - api/link/ui.grouplist_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.grouplist_copy.md - copies an item to the same or another object
 - api/link/ui.grouplist_count.md - returns the count of items in the table
-- api/link/ui.grouplist_customize.md - redefines the 'type' property
+- api/link/ui.grouplist_customize.md - redefines the "type" property
 - api/link/ui.grouplist_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.grouplist_destructor.md - destructs the calling object
 - api/link/ui.grouplist_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
@@ -142,16 +142,17 @@ Support for various data template formats, sorting and filtering features. Check
 - api/link/ui.grouplist_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.grouplist_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.grouplist_onitemrender_event.md - for each item rendering, occurs only for items with custom templates
+- api/link/ui.grouplist_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.grouplist_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.grouplist_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.grouplist_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.grouplist_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.grouplist_onmouseout_event.md - fires when the mouse was moved out from the specified item
 - api/link/ui.grouplist_onpaste_event.md - fires when the user presses CTRL+V keys combination
-- api/link/ui.grouplist_onrotate_event.md - occurs on screen rotating
 - api/link/ui.grouplist_onselectchange_event.md - fires after selection state was changed
 - api/link/ui.grouplist_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.grouplist_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.grouplist_ontimedkeypress_event.md - fires after typing has been finished in the field
 - api/link/ui.grouplist_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.grouplist_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.grouplist_ontouchstart_event.md - when some webix view has been touched
@@ -173,10 +174,10 @@ Support for various data template formats, sorting and filtering features. Check
 - api/link/ui.grouplist_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.grouplist_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.grouplist_data_config.md - an inline dataset that data to the component will be load from.
-- api/link/ui.grouplist_datafeed_config.md - the url to the data source that the component will use to reload data from
+- api/link/ui.grouplist_datafeed_config.md - the url that the component will use to reload data during binding
 - api/link/ui.grouplist_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.grouplist_datatype_config.md - the type of loaded data
-- api/link/ui.grouplist_disabled_config.md - disables item
+- api/link/ui.grouplist_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.grouplist_drag_config.md - enables or disables drag-and-drop
 - api/link/ui.grouplist_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.grouplist_externaldata_config.md - allows defining custom 'move' logic for the component.
@@ -212,7 +213,7 @@ Support for various data template formats, sorting and filtering features. Check
 - api/ui.grouplist_templateitem_config.md - an html template that defines data that will be presented in grouplist
 - api/link/ui.grouplist_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.grouplist_type_config.md - object that specifies items presentation
-- api/link/ui.grouplist_url_config.md - the url of a data feed which will be loaded after component initialization
+- api/link/ui.grouplist_url_config.md - the url the component will use to load data after its initialization
 - api/link/ui.grouplist_width_config.md - sets the width of the component
 - api/link/ui.grouplist_xcount_config.md - defines width of view in items
 - api/link/ui.grouplist_ycount_config.md - defines height of view in items

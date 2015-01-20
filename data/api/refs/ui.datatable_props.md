@@ -15,12 +15,12 @@ Properties
 - api/link/ui.datatable_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.datatable_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.datatable_data_config.md - an inline dataset that data to the component will be load from.
-- api/link/ui.datatable_datafeed_config.md - the url to the data source that the component will use to reload data from
+- api/link/ui.datatable_datafeed_config.md - the url that the component will use to reload data during binding
 - api/ui.datatable_datafetch_config.md - defines the start position DataTable will load data from
 - api/link/ui.datatable_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.datatable_datatype_config.md - the type of loaded data
 - api/link/ui.datatable_delimiter_config.md - sets CSV delimiters for clipboard operations
-- api/link/ui.datatable_disabled_config.md - disables item
+- api/link/ui.datatable_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.datatable_drag_config.md - enables or disables drag-and-drop
 - api/ui.datatable_dragcolumn_config.md - enables drag-and-drop support for columns
 - api/link/ui.datatable_dragscroll_config.md - enables autoscroll of component during drag-n-drop
@@ -39,6 +39,7 @@ Properties
 - api/ui.datatable_headermenu_config.md - adds a headermenu to control column visibility
 - api/link/ui.datatable_height_config.md - sets the height of the component
 - api/link/ui.datatable_hidden_config.md - defines whether the view will be hidden initially
+- api/ui.datatable_hover_config.md - css class for a row-hover in the datatable
 - api/link/ui.datatable_id_config.md - the component ID
 - api/ui.datatable_leftsplit_config.md - the number of the fixed columns from the left side of the table (actual for the <a href="datatable/frozen_columns.md">split mode</a> )
 - api/ui.datatable_livevalidation_config.md - validation during cell editing
@@ -78,7 +79,7 @@ Properties
 - api/ui.datatable_spans_config.md - array of span configurations for the datatable
 - api/link/ui.datatable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/ui.datatable_type_config.md - used for configuring presentation of items
-- api/link/ui.datatable_url_config.md - the url of a data feed which will be loaded after component initialization
+- api/link/ui.datatable_url_config.md - the url the component will use to load data after its initialization
 - api/link/ui.datatable_width_config.md - sets the width of the component
 - api/ui.datatable_ycount_config.md - defines height of datatable in rows
 }}
@@ -121,6 +122,7 @@ Properties
 - api/ui.datatable_headermenu_config.md
 - api/link/ui.datatable_height_config.md
 - api/link/ui.datatable_hidden_config.md
+- api/ui.datatable_hover_config.md
 - api/link/ui.datatable_id_config.md
 - api/ui.datatable_leftsplit_config.md
 - api/ui.datatable_livevalidation_config.md

@@ -55,7 +55,7 @@ ob_start();
 {{api
 <?php
 	for ($i=0; $i<sizeof($methods); $i++)
-		echo "- api/".$methods[$i]["owner"]."_".strtolower($methods[$i]["name"]).".md - ".$methods[$i]["descr"]."\n";
+		echo "- api/".$methods[$i]["owner"]."_".strtolower($methods[$i]["name"]).".md - ".$methods[$i]["descr"]."\r\n";
 ?>
 }}
 
@@ -68,7 +68,7 @@ ob_start();
 {{api
 <?php
 	for ($i=0; $i<sizeof($events); $i++)
-		echo "- api/".$events[$i]["owner"]."_".strtolower($events[$i]["name"])."_event.md - ".$events[$i]["descr"]."\n";
+		echo "- api/".$events[$i]["owner"]."_".strtolower($events[$i]["name"])."_event.md - ".$events[$i]["descr"]."\r\n";
 ?>
 }}
 
@@ -80,7 +80,7 @@ ob_start();
 {{api
 <?php
 	for ($i=0; $i<sizeof($configs); $i++)
-		echo "- api/".$configs[$i]["owner"]."_".strtolower($configs[$i]["name"])."_config.md - ".$configs[$i]["descr"]."\n";
+		echo "- api/".$configs[$i]["owner"]."_".strtolower($configs[$i]["name"])."_config.md - ".$configs[$i]["descr"]."\r\n";
 ?>
 }}
 
@@ -93,7 +93,7 @@ ob_start();
 {{api
 <?php
 	for ($i=0; $i<sizeof($templates); $i++)
-		echo "- api/".$templates[$i]["owner"]."_".strtolower($templates[$i]["name"])."_template.md - ".$templates[$i]["descr"]."\n";
+		echo "- api/".$templates[$i]["owner"]."_".strtolower($templates[$i]["name"])."_template.md - ".$templates[$i]["descr"]."\r\n";
 ?>
 }}
 
@@ -108,7 +108,7 @@ ob_start();
 {{api
 <?php
 	for ($i=0; $i<sizeof($others); $i++)
-		echo "- api/".$others[$i]["owner"]."_".strtolower($others[$i]["name"])."_other.md - ".$others[$i]["descr"]."\n";
+		echo "- api/".$others[$i]["owner"]."_".strtolower($others[$i]["name"])."_other.md - ".$others[$i]["descr"]."\r\n";
 ?>
 }}
 
@@ -145,14 +145,14 @@ Methods
 {{api
 <?php
 	for ($i=0; $i<sizeof($methods); $i++)
-		echo "- api/".$methods[$i]["owner"]."_".strtolower($methods[$i]["name"]).".md - ".$methods[$i]["descr"]."\n";
+		echo "- api/".$methods[$i]["owner"]."_".strtolower($methods[$i]["name"]).".md - ".$methods[$i]["descr"]."\r\n";
 ?>
 }}
 
 @index:
 <?php
 	for ($i=0; $i<sizeof($methods); $i++)
-		echo "- api/".$methods[$i]["owner"]."_".strtolower($methods[$i]["name"]).".md\n";
+		echo "- api/".$methods[$i]["owner"]."_".strtolower($methods[$i]["name"]).".md\r\n";
 ?>
 
 
@@ -169,7 +169,7 @@ Events
 {{api
 <?php
 	for ($i=0; $i<sizeof($events); $i++)
-		echo "- api/".$events[$i]["owner"]."_".strtolower($events[$i]["name"])."_event.md - ".$events[$i]["descr"]."\n";
+		echo "- api/".$events[$i]["owner"]."_".strtolower($events[$i]["name"])."_event.md - ".$events[$i]["descr"]."\r\n";
 ?>
 }}
 
@@ -193,14 +193,14 @@ Properties
 {{api
 <?php
 	for ($i=0; $i<sizeof($configs); $i++)
-		echo "- api/".$configs[$i]["owner"]."_".strtolower($configs[$i]["name"])."_config.md - ".$configs[$i]["descr"]."\n";
+		echo "- api/".$configs[$i]["owner"]."_".strtolower($configs[$i]["name"])."_config.md - ".$configs[$i]["descr"]."\r\n";
 ?>
 }}
 
 @index:
 <?php
 	for ($i=0; $i<sizeof($configs); $i++)
-		echo "- api/".$configs[$i]["owner"]."_".strtolower($configs[$i]["name"])."_config.md\n";
+		echo "- api/".$configs[$i]["owner"]."_".strtolower($configs[$i]["name"])."_config.md\r\n";
 ?>
 
 <?php 
@@ -215,14 +215,14 @@ Others
 {{api
 <?php
 	for ($i=0; $i<sizeof($others); $i++)
-		echo "- api/".$others[$i]["owner"]."_".strtolower($others[$i]["name"])."_other.md - ".$others[$i]["descr"]."\n";
+		echo "- api/".$others[$i]["owner"]."_".strtolower($others[$i]["name"])."_other.md - ".$others[$i]["descr"]."\r\n";
 ?>
 }}
 
 @index:
 <?php
 	for ($i=0; $i<sizeof($others); $i++)
-		echo "- api/".$others[$i]["owner"]."_".strtolower($others[$i]["name"])."_other.md\n";
+		echo "- api/".$others[$i]["owner"]."_".strtolower($others[$i]["name"])."_other.md\r\n";
 ?>
 
 
@@ -239,14 +239,14 @@ Templates
 {{api
 <?php
 	for ($i=0; $i<sizeof($templates); $i++)
-		echo "- api/".$templates[$i]["owner"]."_".strtolower($templates[$i]["name"])."_template.md - ".$templates[$i]["descr"]."\n";
+		echo "- api/".$templates[$i]["owner"]."_".strtolower($templates[$i]["name"])."_template.md - ".$templates[$i]["descr"]."\r\n";
 ?>
 }}
 
 @index:
 <?php
 	for ($i=0; $i<sizeof($templates); $i++)
-		echo "- api/".$templates[$i]["owner"]."_".strtolower($templates[$i]["name"])."_template.md\n";
+		echo "- api/".$templates[$i]["owner"]."_".strtolower($templates[$i]["name"])."_template.md\r\n";
 ?>
 
 

@@ -11,10 +11,10 @@ Properties
 - api/link/ui.list_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.list_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.list_data_config.md - an inline dataset that data to the component will be load from.
-- api/link/ui.list_datafeed_config.md - the url to the data source that the component will use to reload data from
+- api/link/ui.list_datafeed_config.md - the url that the component will use to reload data during binding
 - api/link/ui.list_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.list_datatype_config.md - the type of loaded data
-- api/link/ui.list_disabled_config.md - disables item
+- api/link/ui.list_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.list_drag_config.md - enables or disables drag-and-drop
 - api/link/ui.list_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.list_externaldata_config.md - allows defining custom 'move' logic for the component.
@@ -47,7 +47,7 @@ Properties
 - api/link/ui.list_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
 - api/link/ui.list_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.list_type_config.md - object that specifies items presentation
-- api/link/ui.list_url_config.md - the url of a data feed which will be loaded after component initialization
+- api/link/ui.list_url_config.md - the url the component will use to load data after its initialization
 - api/link/ui.list_width_config.md - sets the width of the component
 - api/ui.list_xcount_config.md - defines width of view in items
 - api/ui.list_ycount_config.md - defines height of view in items

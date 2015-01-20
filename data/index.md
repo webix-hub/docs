@@ -9,9 +9,9 @@ Start
 
 <h2>Meet Webix 2.2!</h2>
 <ul>
-	<li>Updated <a href="desktop/jquery.md">Calendar</a> control</li>
-    <li><a href="api/env_strict_other.md">Better ajax</a> and <a href="desktop/uploader.md">Improved Uploader</a> control</li>
-    <li>Data binding <a href="datatable/formulas.md">for Tree, TreeTable and TreeCollection</a></li>
+	<li>Updated <a href="desktop/calendar.md">Calendar</a> control</li>
+    <li><a href="helpers/ajax_operations.md">Better ajax</a> and <a href="desktop/uploader.md">Improved Uploader</a> control</li>
+    <li>Data binding <a href="desktop/data_binding.md">for Tree, TreeTable and TreeCollection</a></li>
 </ul>
 
 <p> and <a href="desktop/whats_new_2_2.md">many more...</a></p>

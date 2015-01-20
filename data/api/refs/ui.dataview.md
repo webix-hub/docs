@@ -38,7 +38,7 @@ The component presents a collection of objects according to a user-defined templ
 - api/link/ui.dataview_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.dataview_copy.md - copies an item to the same or another object
 - api/link/ui.dataview_count.md - returns the count of items in the table
-- api/link/ui.dataview_customize.md - redefines the 'type' property
+- api/link/ui.dataview_customize.md - redefines the "type" property
 - api/link/ui.dataview_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.dataview_destructor.md - destructs the calling object
 - api/link/ui.dataview_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
@@ -136,15 +136,16 @@ The component presents a collection of objects according to a user-defined templ
 - api/link/ui.dataview_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.dataview_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.dataview_onitemrender_event.md - for each item rendering, occurs only for items with custom templates
+- api/link/ui.dataview_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.dataview_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.dataview_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.dataview_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.dataview_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.dataview_onmouseout_event.md - fires when the mouse was moved out from the specified item
-- api/link/ui.dataview_onrotate_event.md - occurs on screen rotating
 - api/link/ui.dataview_onselectchange_event.md - fires after selection state was changed
 - api/link/ui.dataview_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.dataview_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.dataview_ontimedkeypress_event.md - fires after typing has been finished in the field
 - api/link/ui.dataview_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.dataview_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.dataview_ontouchstart_event.md - when some webix view has been touched
@@ -164,11 +165,11 @@ The component presents a collection of objects according to a user-defined templ
 - api/link/ui.dataview_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.dataview_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.dataview_data_config.md - an inline dataset that data to the component will be load from.
-- api/link/ui.dataview_datafeed_config.md - the url to the data source that the component will use to reload data from
+- api/link/ui.dataview_datafeed_config.md - the url that the component will use to reload data during binding
 - api/link/ui.dataview_datafetch_config.md - defines the start position DataTable will load data from
 - api/link/ui.dataview_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.dataview_datatype_config.md - the type of loaded data
-- api/link/ui.dataview_disabled_config.md - disables item
+- api/link/ui.dataview_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.dataview_drag_config.md - enables or disables drag-and-drop
 - api/link/ui.dataview_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.dataview_externaldata_config.md - allows defining custom 'move' logic for the component.
@@ -200,7 +201,7 @@ The component presents a collection of objects according to a user-defined templ
 - api/link/ui.dataview_template_config.md - the component template
 - api/link/ui.dataview_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.dataview_type_config.md - object that specifies items presentation
-- api/link/ui.dataview_url_config.md - the url of a data feed which will be loaded after component initialization
+- api/link/ui.dataview_url_config.md - the url the component will use to load data after its initialization
 - api/link/ui.dataview_width_config.md - sets the width of the component
 - api/ui.dataview_xcount_config.md - adjusts the view width to display the defined number of items in a row
 - api/ui.dataview_ycount_config.md - adjusts the view height to display the defined number of items in a column

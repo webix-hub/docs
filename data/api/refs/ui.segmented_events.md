@@ -14,7 +14,6 @@ Events
 - api/link/ui.segmented_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.segmented_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/ui.segmented_onoptionremove_event.md - fires after the option (tab, segment) has been removed
-- api/link/ui.segmented_onrotate_event.md - occurs on screen rotating
 - api/link/ui.segmented_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.segmented_onswipey_event.md - occurs on a vertical swipe movement
 - api/link/ui.segmented_ontimedkeypress_event.md - fires after typing has been finished in the field
@@ -37,7 +36,6 @@ Events
 - api/link/ui.segmented_onkeypress_event.md
 - api/link/ui.segmented_onlongtouch_event.md
 - api/ui.segmented_onoptionremove_event.md
-- api/link/ui.segmented_onrotate_event.md
 - api/link/ui.segmented_onswipex_event.md
 - api/link/ui.segmented_onswipey_event.md
 - api/link/ui.segmented_ontimedkeypress_event.md

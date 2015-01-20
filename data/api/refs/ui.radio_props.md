@@ -11,7 +11,7 @@ Properties
 - api/link/ui.radio_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.radio_css_config.md - the name of a css class that will be applied to the view container
 - api/ui.radio_customradio_config.md - enables/disables custom radio button for some skins
-- api/link/ui.radio_disabled_config.md - disables item
+- api/link/ui.radio_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.radio_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.radio_height_config.md - sets the height of the component
 - api/link/ui.radio_hidden_config.md - defines whether the view will be hidden initially
@@ -29,6 +29,7 @@ Properties
 - api/link/ui.radio_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.radio_name_config.md - name of the control
 - api/link/ui.radio_on_config.md - allows attaching custom handlers to inner events of the component
+- api/ui.radio_optionheight_config.md - 
 - api/ui.radio_options_config.md - defines options for a set of radiobuttons
 - api/link/ui.radio_placeholder_config.md - placeholder text for the input
 - api/link/ui.radio_popup_config.md - allows to attach pop-up menu to the button
@@ -76,6 +77,7 @@ Properties
 - api/link/ui.radio_minwidth_config.md
 - api/link/ui.radio_name_config.md
 - api/link/ui.radio_on_config.md
+- api/ui.radio_optionheight_config.md
 - api/ui.radio_options_config.md
 - api/link/ui.radio_placeholder_config.md
 - api/link/ui.radio_popup_config.md

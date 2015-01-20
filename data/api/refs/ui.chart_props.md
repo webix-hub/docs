@@ -13,11 +13,11 @@ Properties
 - api/link/ui.chart_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.chart_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.chart_data_config.md - an inline dataset that data to the component will be load from.
-- api/link/ui.chart_datafeed_config.md - the url to the data source that the component will use to reload data from
+- api/link/ui.chart_datafeed_config.md - the url that the component will use to reload data during binding
 - api/link/ui.chart_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.chart_datatype_config.md - the type of loaded data
 - api/ui.chart_disablelines_config.md - disapbles graph lines with radar chart
-- api/link/ui.chart_disabled_config.md - disables item
+- api/link/ui.chart_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.chart_eventradius_config.md - sets the radius (in pixels) of the virtual circle which events will fire for items within
 - api/ui.chart_fill_config.md - fills the chart area with the specified background color.
 - api/ui.chart_fixoverflow_config.md - chart max limit mode
@@ -58,7 +58,7 @@ Properties
 - api/ui.chart_shadow_config.md - enables/disables the pie shadow
 - api/link/ui.chart_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/ui.chart_type_config.md - sets the chart type
-- api/link/ui.chart_url_config.md - the url of a data feed which will be loaded after component initialization
+- api/link/ui.chart_url_config.md - the url the component will use to load data after its initialization
 - api/ui.chart_value_config.md - defines values for the vertical axis
 - api/link/ui.chart_width_config.md - sets the width of the component
 - api/ui.chart_x_config.md - the horizontal position of the pie center

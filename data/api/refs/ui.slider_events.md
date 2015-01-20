@@ -11,7 +11,6 @@ Events
 - api/link/ui.slider_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.slider_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.slider_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
-- api/link/ui.slider_onrotate_event.md - occurs on screen rotating
 - api/ui.slider_onsliderdrag_event.md - fires when the handle of slider was dragged ( but not released yet )
 - api/link/ui.slider_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.slider_onswipey_event.md - occurs on a vertical swipe movement
@@ -32,7 +31,6 @@ Events
 - api/link/ui.slider_onitemclick_event.md
 - api/link/ui.slider_onkeypress_event.md
 - api/link/ui.slider_onlongtouch_event.md
-- api/link/ui.slider_onrotate_event.md
 - api/ui.slider_onsliderdrag_event.md
 - api/link/ui.slider_onswipex_event.md
 - api/link/ui.slider_onswipey_event.md

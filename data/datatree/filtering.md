@@ -26,16 +26,17 @@ Filtering modes
 ------------------------------------
 The library provides special property **filterMode** to define how the tree items will be filtered. 
 
-The **filterMode** property is an object that can contain 2 attributes:
+The **filterMode** property is an object that can contain 3 attributes:
 
-- **showSubItems** - (*boolean*) defines whether the tree must display childs of the filtered items (*true*) 
-or the filtered items would be displayed as childs of the root node (*false*). The default value - *true*. 
+- **showSubItems** - (*boolean*) defines whether the tree should display children of the filtered items (*true*) 
+(even if they don't match the filtering condition). The default value - *true*. 
+- **openParents** - (*boolean*) - defines whether parents of the filtered items should be expanded (even if they don't match 
+the filtering condition) so that user can effortlessly see the result of filtering. *True* by default. 
 - **level**  - (*number*) sets the nesting level to filter items from (one-based numbering). 
 
 {{snippet
 Using the filterMode parameter
 }}
-
 ~~~js
 webix.ui({
 	view:"tree", 

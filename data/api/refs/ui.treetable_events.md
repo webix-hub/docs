@@ -50,6 +50,7 @@ Events
 - api/link/ui.treetable_onitemcheck_event.md - fires when you check an item in tree and treetable
 - api/link/ui.treetable_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.treetable_onitemdblclick_event.md - fires when a component item was double-clicked
+- api/link/ui.treetable_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.treetable_onliveedit_event.md - occurs when data was changed in the editor
 - api/link/ui.treetable_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.treetable_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
@@ -57,15 +58,15 @@ Events
 - api/link/ui.treetable_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.treetable_onmouseout_event.md - fires when the mouse was moved out from the specified item
 - api/link/ui.treetable_onresize_event.md - fires when the width or height of DataTable was changed
-- api/link/ui.treetable_onrotate_event.md - occurs on screen rotating
 - api/link/ui.treetable_onrowresize_event.md - fires when height of row was changed
 - api/link/ui.treetable_onscrollx_event.md - fires when the user scrolls the table left or right
 - api/link/ui.treetable_onscrolly_event.md - fires when the user scrolls the table up or down
 - api/link/ui.treetable_onselectchange_event.md - fires when selection is changed in DataTable
 - api/link/ui.treetable_onstructureload_event.md - fires when the structure of DataTable (columns configuration) is initialized
-- api/link/ui.treetable_onstructureupdate_event.md - fires when structure of datatable was changed ( column added, hidden or reconfigured )
+- api/link/ui.treetable_onstructureupdate_event.md - 
 - api/link/ui.treetable_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.treetable_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.treetable_ontimedkeypress_event.md - fires after typing has been finished in the field
 - api/link/ui.treetable_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.treetable_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.treetable_ontouchstart_event.md - when some webix view has been touched
@@ -123,6 +124,7 @@ Events
 - api/link/ui.treetable_onitemcheck_event.md
 - api/link/ui.treetable_onitemclick_event.md
 - api/link/ui.treetable_onitemdblclick_event.md
+- api/link/ui.treetable_onkeypress_event.md
 - api/link/ui.treetable_onliveedit_event.md
 - api/link/ui.treetable_onloaderror_event.md
 - api/link/ui.treetable_onlongtouch_event.md
@@ -130,7 +132,6 @@ Events
 - api/link/ui.treetable_onmousemoving_event.md
 - api/link/ui.treetable_onmouseout_event.md
 - api/link/ui.treetable_onresize_event.md
-- api/link/ui.treetable_onrotate_event.md
 - api/link/ui.treetable_onrowresize_event.md
 - api/link/ui.treetable_onscrollx_event.md
 - api/link/ui.treetable_onscrolly_event.md
@@ -139,6 +140,7 @@ Events
 - api/link/ui.treetable_onstructureupdate_event.md
 - api/link/ui.treetable_onswipex_event.md
 - api/link/ui.treetable_onswipey_event.md
+- api/link/ui.treetable_ontimedkeypress_event.md
 - api/link/ui.treetable_ontouchend_event.md
 - api/link/ui.treetable_ontouchmove_event.md
 - api/link/ui.treetable_ontouchstart_event.md

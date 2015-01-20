@@ -9,7 +9,7 @@ Properties
 - api/link/ui.window_borderless_config.md - used to hide the component borders
 - api/link/ui.window_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.window_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.window_disabled_config.md - disables item
+- api/link/ui.window_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.window_fullscreen_config.md - renders window in fullscreen mode
 - api/link/ui.window_gravity_config.md - sets the view gravity (1 by default)
 - api/ui.window_head_config.md - sets the view header

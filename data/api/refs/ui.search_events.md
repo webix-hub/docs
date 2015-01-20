@@ -11,7 +11,6 @@ Events
 - api/link/ui.search_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.search_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.search_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
-- api/link/ui.search_onrotate_event.md - occurs on screen rotating
 - api/ui.search_onsearchiconclick_event.md - fires after the 'search' icon has been clicked in the input
 - api/link/ui.search_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.search_onswipey_event.md - occurs on a vertical swipe movement
@@ -32,7 +31,6 @@ Events
 - api/link/ui.search_onitemclick_event.md
 - api/link/ui.search_onkeypress_event.md
 - api/link/ui.search_onlongtouch_event.md
-- api/link/ui.search_onrotate_event.md
 - api/ui.search_onsearchiconclick_event.md
 - api/link/ui.search_onswipex_event.md
 - api/link/ui.search_onswipey_event.md

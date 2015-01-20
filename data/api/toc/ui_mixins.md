@@ -1,34 +1,6 @@
 Mixins
 ======
 
-{{memo
-
-Here you can explore Webix mixins - blocks of common functionality that are already shared by most of 
-the existing components. 
-
-E.g. [SelectionModel](api/refs/selectionmodel.md) mixin is used for all the data components to make their item selectable. It features selection methods, 
-properties and events that help effectively control selection.
-
-Some mixins are not included into the component. For instance, only [datatable](datatable/index.md) and [treetable](desktop/treetable.md) feature 
-[EditAbility](api/refs/editability.md) mixin out of the box while other components should be extended with this mixin to get the editing API. 
-
-~~~js
-//extending
-webix.protoUI({
-    name:"edittree"
-}, webix.EditAbility, webix.ui.tree);
-~~~
-}}
-
-{{sample 17_datatree/05_edit/01_selection.html}}
-
-Such cases are highlighted in the dedicated chapters of the documentation. 
-
-Mixins can be used while creating the components from scratch as well as while extending the functionality of already existing views. For more
-information study the desktop/extending_components.md documentation.
-
-##Mixins
-
 {{links
 
 - api/refs/activecontent.md -  Allows to place active element in other views

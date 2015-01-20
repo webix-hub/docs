@@ -1,1 +1,0 @@
-@link: api/ui.view_onrotate_event.md
