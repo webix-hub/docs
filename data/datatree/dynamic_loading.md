@@ -9,7 +9,7 @@ Switch to the main [Dynamic Loading](desktop/dynamic_loading.md) article, if nee
 Data can be loaded to hierarchical components in portions: 
 
 - Firstly, top parent nodes are loaded and they are initially collapsed;
-- Then, data is loaded to the nodes at the moment it is expanded. 
+- Then, data is loaded to the node the moment it is expanded. 
 
 ~~~js
 var tree = webix.ui({
@@ -19,11 +19,11 @@ var tree = webix.ui({
 tree.load("data/data_dyn.php");
 ~~~
 
-Then data can be loaded in either of three ways: 
+Dynamic loading can be implemented in different way, each of which is described below: 
 
 ##Using webix_kids flag 
 
-Supply each parent data item with the **webix_kids** flag that indicates that this node can take child data and then see how requests are sent
+You can supply each parent data item with the **webix_kids** flag that indicates that this node can take child data and then watch how requests are sent
 automatically at the moment user expands the node. 
 
 ~~~js
@@ -34,7 +34,7 @@ var tree = webix.ui({
 tree.load("data/data_dyn.php");
 ~~~
 
-Parent data items should look like: 
+Parent data items should look like this: 
 
 ~~~js
 { id:"1", value:"Branch", webix_kids:true}
@@ -42,16 +42,16 @@ Parent data items should look like:
 
 The request URL during dunamic loading will be generated automatically on the base of the URL used by the component initially - **"data/data_json.php?continue=true&parent=1"** where: 
 
-- **parent** - ID of the just opened node;
+- **parent** - ID of the node that has just been opened;
 - **continue** - flag indicating that it is an auto-formed URL.
 
-Make sure that serverside script can handle both situations: initial loading and loading on the  base of a parameter.
+Make sure that serverside script can handle both situations: initial loading and loading on the base of a parameter.
 
-You can check how it works with [ready-made ServerSide connectors](#dynamic_connector) (of course, custom script will work all the same here!).
+You can check how it works with [ready-made ServerSide connectors](#dynamic_connector) (of course, custom scripts will work all the same here).
 
 ##Using loadBranch function
 
-Catch the **node expand event** ([onBeforeOpen](api/treeapi_onbeforeopen_event.md) or [onAfterOpen](api/treeapi_onafteropen_event.md)) 
+You can catch the **node expand event** ([onBeforeOpen](api/treeapi_onbeforeopen_event.md) or [onAfterOpen](api/treeapi_onafteropen_event.md)) 
 to load branch data with the help of a [same-name method](api/treedataloader_loadbranch.md): 
 
 Let's assume that we have initial data loaded in some of the ways:
@@ -77,7 +77,7 @@ webix.ui({
 
 The URL of the new request will be based on the datasource, either provided by the api/treedataloader_loadbranch.md method or the one used intially -  **"data/data__dyn_json.php?continue=true&parent=1"** - where: 
 
-- **parent** - ID of the just opened node;
+- **parent** - ID of the node that has just been opened;
 - **continue** - flag indicating that it is an auto-formed URL.
 
 If you need to use the same datasource, omit the last parameter of the *loadBranch()* method: 
@@ -89,7 +89,7 @@ var tree = webix.ui({
 });
 //or tree.load();
 
-tree.loadBranch(id);
+tree.loadBranch(id); //"data/data_dyn.php" will be used
 ~~~
 
 Be sure the branch data you get is returned with **parent** and **data** properties. For JSON the returned data looks like this:
@@ -130,6 +130,7 @@ webix.ui({
     				return data = data.json();
     			})
     		);
+            //cancelling default behaviour
     		return false;
     	}
     }
@@ -149,21 +150,8 @@ Be sure the branch data you get is returned with **parent** and **data** propert
 
 ##Dynamic Loading with ServerSide Connectors {#dynamic_connector}
 
-To load data from a database into Tree dynamically, you should call method <b>dynamic_loading()</b> on the server side 
-(in case you use [Data Connector](http://docs.dhtmlx.com/connector__index.html).
-
-All remaining stuff is the same as in case of [usual loading from a database](datatree/loading_data.md#loadingfromadatabase).
-
-{{snippet
-Dynamic loading from db. Client-side code 
-}}
-~~~js
-webix.ui({
-	url:"data/data_dyn.php"
-});    
-~~~
-
-Note that each data item is supplied with **webix_kids** flag to ensure dynamic loading.*
+In case you use [Data Connector](http://docs.dhtmlx.com/connector__index.html) to load data from a database into tree or treetable dynamically, 
+you should call **dynamic_loading()** on the server side: 
 
 {{snippet
 Dynamic loading from db. Server-side code
@@ -178,9 +166,24 @@ $data->dynamic_loading(30);//enables dynamic loading
 //loads data from the specified database table 
 $data->render_table("packages_tree","id","value, state","","parent_id");    
 ~~~
-{{sample 17_datatree/16_dyn_loading/01_dyn_loading.html }}
+
 
 Note, inside **dynamic_loading()** you should specify a number of records that will be loaded at once.
+
+All remaining stuff is the same as in case of [usual loading from a database](datatree/loading_data.md#loadingfromadatabase).
+
+{{snippet
+Dynamic loading from db. Client-side code 
+}}
+~~~js
+webix.ui({
+	url:"data/data_dyn.php"
+});    
+~~~
+
+Note that each data item is supplied with **webix_kids** flag to ensure dynamic loading.
+
+{{sample 17_datatree/16_dyn_loading/01_dyn_loading.html }}
 
 ###Related Articles
 

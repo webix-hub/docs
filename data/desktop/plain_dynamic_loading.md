@@ -10,16 +10,18 @@ Data can be loaded to non-hierarchical components in portions:
 
 ##Configuring Dynamic Loading Behavior
 
-So specify the above mentioned php-script as value of **url** parameter and (optionally) include the **datafetch** and **datathrottle** properties into the 
-component's constructor (except for the tree).
+To enable dynamic data loading you need: 
+
+- to set the component datasource that will load initial data. It can be done either with the help of api/atomdataloader_url_config.md or api/atomdataloader_load.md method. 
+- to define varous aspect of dynamic loading such as api/virtualrenderstack_loadahead_config.md, api/virtualrenderstack_datafetch_config.md and api/link/ui.proto_datathrottle_config.md. 
 
 ~~~js
 webix.ui({
 	view:"dataview", // any data-presenting component
     datatype:"..",
-    url:data_dyn.php,
+    url:"data/data_dyn.php",
     datafetch:50,
-    datathrottle: 200,
+    datathrottle: 100,
     loadahead:50
 });
 ~~~
@@ -31,8 +33,17 @@ webix.ui({
 - **datathrottle** (number) - defines the interval in milliseconds between data requests. It means that when you scroll slowly, the server wouldn't be 
 overloaded with requests, since they are triggered only once in 200 milliseconds(as it goes in the code piece above);
 {{sample 06_dataview/16_dyn_loading/04_datathrottle.html }}
-- **loadahead** (number) - defines the number of items to be loaded each time as you scroll down or up the view, or switch to the next page;
-{{sample 15_datatable/16_dyn_loading/04_db_dyn_loadahead.html }}
+- **loadahead** (number) - defines the number of items to be loaded each time as you scroll down or up the view, or switch to the next page; {{sample 15_datatable/16_dyn_loading/04_db_dyn_loadahead.html }}
+
+When scolling or pagination occurs, the component will automatically isuue a request based on the datasourse, e.g. **"data/data_dyn.php?continue=true&count=100&start=130"** where: 
+
+- **continue** - is a flag that indicates that this request was formed automatically;
+- **count** - is a value of datathrottle parameter;
+- **start** - ID of the last data item in the datatable before issuing a request. 
+
+{{note
+Note that your server script should be able to handle these parameters.
+}}
 
 ##Dynamic Loading by Api
 
