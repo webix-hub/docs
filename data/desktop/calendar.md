@@ -69,7 +69,7 @@ webix.ui({
 **Getting dates** can be done with two corresponding methods: 
 
 - **getValue()**; - common method for getting the control's value.
-- **getSelectedDate()**; - calendar speciic method. 
+- **getSelectedDate()**; - calendar specific method. 
 - **getVisibleDate()**; - gets the date even with no selection applied. Date is defined according to the [specified rules](api/ui.calendar_getvisibledate.md). 
 
 ~~~js
@@ -183,6 +183,59 @@ webix.ui({
 ~~~
 
 CSS class applied for disabled dates (**webix_cal_day_disabled**) can be redefined. 
+
+##Today and Clear Buttons
+
+The Today button allows selecting the current date. The Clear button removes date selection.
+
+<img src="desktop/calendar_today_clear.png"/>
+
+These buttons are optional and specified in the **icons** array. The code below creates the buttons' config:
+
+
+~~~js
+icons: [
+   // 'Today' definition 
+   {
+		template: function(){
+    		return "<span class='webix_cal_icon_today webix_cal_icon'>"
+    			+webix.i18n.calendar.today
+            	+"</span>";
+   		},
+		on_click:{
+  			"webix_cal_icon_today": function(){
+     			this.setValue(new Date());
+      			this.callEvent("onTodaySet",[this.getSelectedDate()]);
+    		}
+   	 	}
+	},
+     // 'Clear' definition 
+    {
+		template: function(){
+    		return "<span class='webix_cal_icon_clear webix_cal_icon'>"
+        		+webix.i18n.calendar.clear
+            	+"</span>";
+   		},
+   		on_click:{
+    		"webix_cal_icon_clear": function(){
+     			this.setValue("");
+      			this.callEvent("onDateClear",[this.getSelectedDate()]);
+    		}		
+   		}
+	}
+]
+~~~  
+
+Both buttons have two properties: 
+
+- **template** - the template that defines presentation of an icon
+- **on_click** - specifies the onClick handler that processes clicking an element with certain css
+
+By default, these buttons are visible, but you can hide them by setting the **icons** property to **false**.
+
+{{sample
+09_calendar/01_init.html
+}}
 
 ##API Reference
 

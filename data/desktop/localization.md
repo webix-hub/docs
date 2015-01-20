@@ -76,7 +76,9 @@ webix.i18n.locales["en-US"]={
     dayShort:["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
 	hours: "Hours",
 	minutes: "Minutes",
-	done:"Done"
+	done:"Done",
+    clear: "Clear",
+    today: "Today"
   },
 
   controls:{
@@ -126,6 +128,7 @@ format:webix.i18n.longDateFormatSt
 ~~~
 
 - *hours, minutes* - localization options for 'Hours', 'Minutes', 'Done' labels in the calendar.
+- *today, clear* - configuration for "Today" and "Clear" buttons, used for selection of current date and removing selection
 
 **Controls**
 

@@ -1,14 +1,17 @@
 header
 =============
 
-@short: sets the HTTP request header
+@short: 
+	sets the HTTP request header(s)
 	
 
 @params:
+
 - fields	object	 the name-value pairs of header fields
 
 @returns:
-- header		object 		the header object
+
+- header		object 		the request object
 	
 
 @example:

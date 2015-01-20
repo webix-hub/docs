@@ -85,8 +85,33 @@ $$("uploader").send(function(res){
 );
 ~~~
 
+##Uploading particular file types
 
+Uploader can be customized to accept only particular file types during the uploading.
+Types of files allowed for uploading are specified in the **accept** property:
 
+~~~js
+webix.ui({
+	maxWidth:800,
+	cols:[{
+		view:"form", rows: [
+			{ 
+				view: "uploader", value: 'Upload Images', 
+                name:"files", accept:"image/png, image/gif, image/jpg",
+                link:"mylist",  upload:"php/upload.php" 
+			}
+			...			
+        ]
+	}]
+});
+~~~
+
+In the above example Uploader accepts only files of image type (.png, .gif and .jpg formats).
+The full list of common media types is given [here](http://en.wikipedia.org/wiki/Internet_media_type#List_of_common_media_types).
+
+{{sample
+21_upload/10_accept.html
+}}
 
 ##Related Articles
 

@@ -11,10 +11,10 @@ If you are updating from Webix 1.x - please check the migration.md
 ## New features
 
 - data binding for Tree, TreeTable and TreeCollection
-- optional Today and Clear buttons in the Calendar
-- ability to define file types for file uploader
+- optional [Today and Clear buttons](desktop/calendar.md#todayandclearbuttons) in the Calendar
+- ability [to define file types](desktop/configuring_uploader.md#uploadingparticularfiletypes) for file uploader
 - webix.ajax api can be used to fetch binary data ( file downloading by ajax )
-- optional hover for rows in datatable
+- [optional hover for rows](datatable/styling.md#hover) in datatable
 - horizontal and vertical [auto-scrolls during drag-n-drop](datatable/drag_and_drop.md#autoscroll) for data components
 - extra [options for filtering](datatable/filtering.md#treetablespecificconfiguration) in tree and treetatable 
 - improved scrolling on touch devices
@@ -24,7 +24,7 @@ If you are updating from Webix 1.x - please check the migration.md
 - [view.show](api/ui.baseview_show.md) can be used without animation
 - [markup.init](api/markup_init.md) will return newly constructed ui
 - size of columns and order of columns can be restored through [setState API](api/link/ui.datatable_setstate.md)
-- removeHotKey accepts human readable key names
+- [removeHotKey](desktop/uimanager.md#remove) accepts human readable key names
 
 
 ## Fixes
