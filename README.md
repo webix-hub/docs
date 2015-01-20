@@ -26,11 +26,11 @@ Differences from MarkDown
 
 * triple-tilde, `~~~` is used instead of <code>```</code> for code sections
 
-  ```
-  ~~~js
-  webix.ui({
-    view: "list",
-    template: "#title#"
-  }); // this list will show 'titles'
-  ~~~
-  ```
+<pre>
+    ~~~js
+    webix.ui({
+        view: "list",
+        template: "#title#"
+    }); // this list will show 'titles'
+    ~~~
+</pre>
