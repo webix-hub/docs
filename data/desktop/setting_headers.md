@@ -66,8 +66,6 @@ Still, some components have built-in means of header building.
 { view:"accordionitem", header:"Pane ", body:"text' }
 ~~~
 
-{{sample 90_tests/12_header_all.html }}
-
 Headers of **tabview tabs** are defined as header properties of tabview **cells**:
 
 ~~~js

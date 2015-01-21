@@ -18,8 +18,6 @@ tree.data.getFirstChildId(tree.getSelectedId());
 	datatree/getting_value.md
 @relatedapi:
 	api/link/ui.tree_getparentid.md
-@relatedsample:
-	17_datatree/90_tests/03_checked.html
 @descr:
 
 

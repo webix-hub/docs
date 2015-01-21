@@ -36,7 +36,7 @@ Webix 1.x -> 2.0
 DHTMLX Touch -> Webix 2.0
 --------------------------
 
-Please check [Migraton from DHTMLX Touch](data/migration_from_touch.md).
+Please check [Migraton from DHTMLX Touch](migration_from_touch.md).
 
 @index:
 

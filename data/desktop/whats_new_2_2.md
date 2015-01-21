@@ -6,7 +6,7 @@ Version 2.2
  - width and height settings for all data components include size of scrollbar (so component will always take exactly the same size as was defined by width and height properties)
  - ajax.header was deprecated in favor of [ajax.headers](api/ajax_headers.md)
 
-If you are updating from Webix 1.x - please check the [Migration guide](data/migration.md).
+If you are updating from Webix 1.x - please check the [Migration guide](migration.md).
 
 
 ## New features

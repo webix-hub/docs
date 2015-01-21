@@ -1,1 +1,1 @@
-@link: api/ui.baselayout_resizeChildren.md
+@link: api/ui.baselayout_resizechildren.md

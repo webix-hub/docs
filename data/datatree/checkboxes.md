@@ -102,8 +102,6 @@ tree.checkItem(tree.getSelectedId());
 tree.uncheckItem(tree.getSelectedId());
 ~~~
 
-{{sample 17_datatree/90_tests/03_checked.html}}
-
 Checkboxes can be used for **component refreshing** just from browser. 
 
 Generally, components are refreshed by applying the **refresh()** method to them, yet it can be called each time tree checkbox changes. The  item wth this checkbox will be refreshed:

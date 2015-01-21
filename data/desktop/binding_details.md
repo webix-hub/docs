@@ -103,7 +103,7 @@ Input JSON of such a tree is as follows:
 ]}
 ~~~
 
-{{sample 17_datatree/04_api./09_subdata.html }}
+{{sample 17_datatree/04_api/09_subdata.html }}
 
 Format can be set via a function where you describe binding behavior manually: 
 
@@ -118,7 +118,7 @@ $$("grid2").bind( $$("tree"), "$data", function(obj, source){
 Here we get item chilren with the help of a **getBranch()** method, combine them with data set by **records** key and
 [import](api/datastore_importdata.md) the resulting array into slave datatable. 
 
-{{sample 17_datatree/04_api./09_subdata.html}}
+{{sample 17_datatree/04_api/09_subdata.html}}
 
 ##Binding Events 
 
