@@ -6,6 +6,11 @@ Those are sources of http://docs.webix.com
 - all text pages are in the "data" folder
 - all images are in the "media" folder
 
+Offline version
+---------------
+
+CHM version of documention for Webix 2.2 - http://docs.webix.com/chm/webix_v22.chm
+
 
 Differences from MarkDown
 -------------------------

@@ -31,8 +31,8 @@
 	},
 	"chm_config" :{
 		"samples_http": "http://docs.webix.com/samples/",
-		"chmname" : "Webix Docs",
-        "chmstartpage" : "index.html",
+		"chmname" : "webix_v22",
+        "chmstartpage" : "desktop__components.html",
         "chmtitle" : "Webix"
 	}
 
