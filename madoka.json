@@ -18,6 +18,7 @@
 	"search_root"		: "./export/",
 	"search_host"		: "127.0.0.1",
 	"search_results"	: 10,
+	"search_components" : "ui.accordion,ui.accordionitem,ui.button,ui.calendar,ui.carousel,ui.chart,ui.checkbox,ui.colorboard,ui.colorpicker,ui.combo,ui.context,ui.contextmenu,ui.counter,ui.datasuggest,ui.datatable,ui.dataview,ui.datepicker,ui.fieldset,ui.form,ui.gridsuggest,ui.grouplist,ui.headerlayout,ui.htmlform,ui.icon,ui.iframe,ui.label,ui.layout,ui.list,ui.menu,ui.multitext,ui.multiview,ui.pager,ui.popup,ui.property,ui.radio,ui.resizer,ui.richselect,ui.scrollview,ui.search,ui.segmented,ui.select,ui.slider,ui.spacer,ui.submenu,ui.suggest,ui.tabbar,ui.tabview,ui.template,ui.text,ui.textarea,ui.toggle,ui.toolbar,ui.tooltip,ui.tree,ui.treetable,ui.unitlist,ui.video,ui.window",
 	"api_results"		: 3,
 	"api_usedby"		: true,
 	"freid_prefix"		: "webix.",
