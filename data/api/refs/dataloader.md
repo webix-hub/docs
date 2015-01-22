@@ -1,7 +1,7 @@
 DataLoader 
 =============
 
-{{memo Loads and process data in to component. }}
+{{memo Loads and processed data into a component.}}
 
 
 
@@ -27,9 +27,9 @@ DataLoader
 - api/link/dataloader_parse.md - loads data to the component from an inline data source
 - api/link/dataloader_refresh.md - repaints the whole view or a certain item
 - api/link/dataloader_remove.md - removes the specified item from datastore
-- api/link/dataloader_serialize.md - serializes data to a json object
+- api/link/dataloader_serialize.md - serializes data to a JSON object
 - api/link/dataloader_sort.md - sorts datastore
-- api/link/dataloader_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/dataloader_sync.md - allows you to sync two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/dataloader_updateitem.md - sets properties of the data item
 }}
 
@@ -56,14 +56,14 @@ DataLoader
 
 {{api
 - api/link/dataloader_data_config.md - an inline dataset that data to the component will be load from.
-- api/link/dataloader_datafeed_config.md - the url that the component will use to reload data during binding
+- api/link/dataloader_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/dataloader_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/dataloader_datatype_config.md - the type of loaded data
 - api/dataloader_ready_config.md - a handler that is called just after the page has been completely parsed
 - api/dataloader_removemissed_config.md - defines how to treat items in case of reloading
-- api/dataloader_save_config.md - defines urls for datasaving
+- api/dataloader_save_config.md - defines URLs for data saving
 - api/dataloader_scheme_config.md - defines schemes for data processing
-- api/link/dataloader_url_config.md - the url the component will use to load data after its initialization
+- api/link/dataloader_url_config.md - the URL the component will use to load data after its initialization
 }}
 
 
@@ -74,4 +74,3 @@ DataLoader
 - api/refs/dataloader_methods.md
 - api/refs/dataloader_props.md
 - api/refs/dataloader_events.md
-

@@ -1,17 +1,16 @@
 onDataRequest
-======================
+=============
 
-@short:
-	fires the moment request for auto-loaded data fires (during dynamic loading)
+@short: Fires when dynamically-loaded data is requested.
 
 @params:
-- id	string, number	id of the parent node  the children of which should be loaded
+- id	string/number	id of the parent node whose the children should be loaded
 * callback	function	callback function, if any
-* url	string	component datasource, if any 
+* url	string	server API endpoint, if any
 
 @example:
 tree.attachEvent("onDataRequest", function (id, callback, url) {
-	//code
+	// code
 });
 
 @related:
@@ -20,8 +19,8 @@ tree.attachEvent("onDataRequest", function (id, callback, url) {
     
 
 @relatedsample:
-    17_datatree/16_dyn_loading/01_dyn_loading.html
-    17_datatree/16_dyn_loading/03_on_data_request.html
+	17_datatree/16_dyn_loading/01_dyn_loading.html
+	17_datatree/16_dyn_loading/03_on_data_request.html
     
 @relatedapi: 
 	api/link/ui.treetable_loadbranch.md
@@ -30,27 +29,26 @@ tree.attachEvent("onDataRequest", function (id, callback, url) {
 
 @descr:
 
-Note that dynamic loading for tree-like structures is triggered for nodes featuring **webix_kids** flag. If so, the api/link/ui.treetable_loadbranch.md function is automatically called. The  component will use the datasource 
+Dynamic loading for tree-like structures is triggered for nodes with the **webix_kids** flag set. When those nodes are expanded, the api/treedataloader_loadbranch.md method is automatically called. The component will use the data source
 specified either by its api/link/ui.tree_url_config.md property or in
-the api/link/ui.tree_load.md method with extra parameters. 
+the `url` parameter passed to the api/link/ui.tree_load.md method.
 
-When studying the related samples, pay attention that during initial loading data is returned 
-with the **webix_kids** property:
+When looking at the related samples, note that during the initial loading, data is returned with the **webix_kids** property set:
 
 ~~~js
-{ id:1, value:"Branch 1", webix_kids:true }
+{ id: 1, value: "Branch 1", webix_kids: true }
 ~~~
 
-At the same time, a user can use this event to modify the default processing logic: 
+This event can be used to change the default data loading logic:
 
 ~~~js
 tree.attachEvent("onDataRequest", function (id, callback, url) {
-   	this.parse(
-    	webix.ajax().get("data/data_dyn_json.php?parent="+id).then(function (data) {
-    		return data = data.json();
-    	})
-    );
-    //cancels default behaviour
-    return false;
+  this.parse(
+    webix.ajax().get("data/data_dyn_json.php?parent=" + id).then(function (data) {
+      return data.json();
+    })
+  );
+  // cancels default behaviour
+  return false;
 });
 ~~~
