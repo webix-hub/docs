@@ -32,4 +32,4 @@ webix.ui({
 
 * The `ready` event handled will be called only once. Dynamic data loading won't trigger the handler.
 * This is a good place for post-initialization code.
-* `this.data` above points to a [DataStore](api/refs/datastore.md) object, not to the Tree's inline data property.
+* `this.data` above points to a [TreeStore](api/refs/treestore.md) object, which was parsed from the inline `data` property passed to the Tree constructor.
