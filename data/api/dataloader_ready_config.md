@@ -1,21 +1,24 @@
 ready
-=============
+=====
 
 
-@short: a handler that is called just after the page has been completely parsed
+@short: Event handler called just after the component has been completely initialized.
 	
 
 @type:  function
 @example:
-
 webix.ui({
-	view:"list",
-	ready:function()
-    {
-		webix.message("Ready!");
-        //or any custom function
-	},
-	url:"data.json"
+  view: "tree",
+  data: function () {
+    webix.message("data");  // displayed first
+    return [
+      { id: "1", value: "Branch", webix_kids: true }
+    ]
+  }(),
+  ready: function() {
+    webix.message("ready");  // displayed second
+    this.data.url = "data/data_dyn.php";  // set the DataStore URL without triggering data loading
+  },
 });
 
 @template:	api_config
@@ -27,8 +30,6 @@ webix.ui({
 	
 @descr:
 
-* The parameter is alternative to the **onDocumentReady** event and can be used instead of the **onload()** method.
-* The function, you put inside, will be called only once. Any further data reloading won't trigger the handler. 
-* The property is a good place for post-init instructions. 
-
-
+* The `ready` event handled will be called only once. Dynamic data loading won't trigger the handler.
+* This is a good place for post-initialization code.
+* `this.data` above points to a [DataStore](api/refs/datastore.md) object, not to the Tree's inline data property.
