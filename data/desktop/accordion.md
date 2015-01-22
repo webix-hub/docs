@@ -1,6 +1,13 @@
 Accordion
 ===================
 
+
+##API Reference
+
+- [Methods, parameters and events](api__refs__ui.accordion.html)
+- [Samples](http://docs.webix.com/samples/01_layout/index.html)
+
+
 ##Overview
 
 <a href="http://webix.com/widget/layout-accordion/" title="webix accordion widget">Accordion</a> consists of panes arranged into layout rows and cols. Each pane, or **accordion item**, features **body** and **header** and can be fully expanded and collapsed by clicking its header. 
@@ -69,11 +76,8 @@ to set the necessary mode.
 - **multi:false** - only one panel can be (and must be) visible at a time;
 - **multi:"mixed"** - all panels can be expanded at a time, but you cannot close them all. One panel remains visible. 
 
-##API Reference
 
-[Methods, parameters and events](api__refs__ui.accordion.html)
-
-###Related Articles
+## Related Articles
 
 - [Setting Borders to the Components](desktop/borders.md)
 - [Adding Headers to Components](desktop/setting_headers.md)

@@ -16,3 +16,9 @@ A collection of panes that make up the component allows you to organize the cont
 		...config options goes here..
 	});
 ~~~
+
+
+### Where to start
+
+- [Overview of Accordion Widget](desktop/accordion.md)
+- [Samples](http://docs.webix.com/samples/01_layout/index.html)
