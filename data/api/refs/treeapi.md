@@ -2,7 +2,7 @@ TreeAPI
 =============
 
 
-{{memo Implements common API for tree like components. }}
+{{memo Implements common APIs for tree-like components. }}
 
 
 
@@ -14,7 +14,7 @@ TreeAPI
 - api/treeapi_closeall.md - closes all branches in the tree
 - api/treeapi_getopenitems.md - returns ids of the opened branches
 - api/treeapi_getstate.md - returns the current state of the view
-- api/treeapi_isbranchopen.md - checks whether the specified branch opened or closed
+- api/treeapi_isbranchopen.md - checks whether the specified branch is open or closed
 - api/treeapi_open.md - opens the branch with the specified id
 - api/treeapi_openall.md - opens all branches in the tree
 - api/treeapi_setstate.md - restores the specified state
@@ -29,14 +29,14 @@ TreeAPI
 - api/treeapi_onafteropen_event.md - fires after the branch has been opened
 - api/treeapi_onbeforeclose_event.md - fires the moment you attempt to close the tree branch
 - api/treeapi_onbeforeopen_event.md - fires the moment you attempt to open the tree branch
-- api/treeapi_onitemcheck_event.md - called when checkbox inside the tree item was checked
+- api/treeapi_onitemcheck_event.md - called when the checkbox inside the tree item was checked
 }}
 
 
 <div class='h2'>Properties</div>
 
 {{api
-- api/treeapi_threestate_config.md - enabled three-state checkboxes
+- api/treeapi_threestate_config.md - enable three-state checkboxes
 }}
 
 

@@ -4,7 +4,7 @@ ui.tree
 
 {{memo A hierarchical structure of nodes. }}
 
-Each node in the tree might contain any number of nodes. Nodes that contain child nodes can be expanded or collapsed. <br>
+Each node in the tree might contain any number of nodes. Nodes that contain child nodes can be expanded or collapsed.
 
 The component supports in-line node editing, advanced drag-and-drop, three-state checkboxes etc. Check [tree](datatree/index.md) documentation for more detailed description.
 
