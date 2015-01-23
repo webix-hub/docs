@@ -1,6 +1,12 @@
 Tabview
 ==========================
 
+##API Reference
+
+- [Methods, properties and events](api__refs__ui.tabview.html)
+- [Samples](http://docs.webix.com/samples/02_toolbar/index.html)
+
+
 ##Overview
 
 Tabview is a **hybrid** component that is made of a [multiview](desktop/multiview.md) and [tabbar](desktop/controls.md#tabbar). 
@@ -193,11 +199,8 @@ multiview:{
 
 The functionality is described in detail in the desktop/tabs_options.md article. 
 
-##API Reference
 
-[Methods, properties and events](api__refs__ui.tabview.html)
-
-###Related Articles
+##Related Articles
 
 - desktop/multiview.md
 - desktop/show_switching.md

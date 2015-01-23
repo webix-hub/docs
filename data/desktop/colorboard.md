@@ -1,6 +1,11 @@
 Colorboard
 =============
 
+##API Reference
+
+- [Methods, properties and events](api__refs__ui.colorboard.html)
+- [Samples](http://docs.webix.com/samples/24_colorpicker/index.html)
+
 ##Overview
 
 UI-related colorboard is a tool to get the hex code of a color that you are going to use for [styling](desktop/styling.md). 
@@ -98,11 +103,8 @@ function doLog(val, control, ev){
 	}
 ~~~
 
-##API Reference
 
-[Methods, parameters and events](api__refs__ui.colorboard.html)
-
-###Related Articles
+##Related Articles
 
 - [Making Templates](desktop/html_templates.md)
 - [Component Styling](desktop/styling.md)

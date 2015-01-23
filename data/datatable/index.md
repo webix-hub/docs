@@ -1,6 +1,14 @@
 DataTable
 ====================
 
+
+##API Reference
+
+- [Methods, properties and events](api__refs__ui.datatable.html)
+- [Samples](http://docs.webix.com/samples/15_datatable/index.html)
+
+<div class="h2">Overview</div>
+
 <a href="http://webix.com/widget/datatable/" title="javascript datatable component">DataTable</a> is a pure JavaScript component that provides professional look-and-feel 
 and convenient programming model for displaying data in a scrollable and sortable table.
 It&#146;s a powerful yet easy-to-use  control <br> that supports different data sources (xml, json, csv, jsarray, html tables) 
@@ -10,6 +18,8 @@ still being  very fast handling  thousands of records.<a href="datatable/overvie
 <img style="display:block; margin-left:auto;margin-right:auto;" src="datatable/front_datatable.png"/>
 
 <br>
+
+<div class="h2">Guides</div>
 
 <table  style='border-left:none !important;' cellspacing="0" cellpadding="5" border="0">
 	<tbody>

@@ -1,6 +1,12 @@
 Treetable
 ===============
 
+##API Reference
+
+- [Methods, properties and events](api__refs__ui.treetable.html)
+- [Samples](http://docs.webix.com/samples/15_datatable/index.html)
+
+
 ##Overview
 
 Ui-related treetable inherits from [view](desktop/view.md). Being a hybrid between [DataTable](datatable/index.md) and [tree](datatree/index.md) it 
@@ -61,11 +67,8 @@ Common Tasks here include the following and coincide with those of the datatable
 {{sample 15_datatable/08_math/01_basic.html}}
 
 
-##API Reference
 
-[Methods, properties and events](api__refs__ui.treetable.html)
-
-###Related Articles
+##Related Articles
 - desktop/data_object.md
 - [Adding Active Elements to Nodes](desktop/active_content.md)
 - [Tree](datatree/index.md)

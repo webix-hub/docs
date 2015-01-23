@@ -1,6 +1,11 @@
 Layout and Resizer
 =================
 
+##API Reference
+
+- [Methods, parameters and events](api__refs__ui.layout.html)
+- [Samples](http://docs.webix.com/samples/01_layout/index.html)
+
 ##Overview 
 
 <a href="http://webix.com/widget/layout-accordion/" title="webix component layout">Layout</a> is a concept element that doesn't contain anything in itself yet determines the way 'meaningful' components are arranged. It divides the page into 
@@ -175,11 +180,9 @@ webix.ui({
 })	
 ~~~
 
-##API Reference
 
-[Methods, parameters and events](api__refs__ui.layout.html)
 
-###Related Articles 
+##Related Articles 
 
 - [Sizing Components](desktop/dimensions.md)
 - [Resizing](desktop/resizing.md)

@@ -1,6 +1,12 @@
 Window
 =================
 
+##API Reference
+
+- [Methods, properties and events](api__refs__ui.window.html)
+- [Samples](http://docs.webix.com/samples/10_window/index.html)
+
+
 ##Overview
 Window is a ui-related component that looks like a standard on-screen window. It inherits from [view](desktop/view.md) but differs from other components in its character. It 
 lies not within your app's layout but as if above other components. The same is true about [popup](desktop/popup.md). 
@@ -89,11 +95,8 @@ UI-related Window is non-modal by default. Its modality is set with the help of 
 
 When a modal window is inited, the app area is greyed out to indicate that it is disabled while you "communicate" with the window.
 
-###API Reference
 
-[Methods, properties and events](api__refs__ui.window.html)
-
-###Related articles
+##Related articles
 
 - [Popup](desktop/popup.md)
 - [Window and Popup Positioning](desktop/window_positioning.md)

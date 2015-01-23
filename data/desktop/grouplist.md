@@ -1,6 +1,11 @@
 Grouplist
 ===============
 
+##API Reference
+
+- [Methods, parameters and events](api__refs__ui.grouplist.html)
+- [Samples](http://docs.webix.com/samples/05_list/index.html)
+
 ##Overview
 
 Ui-related grouplist inherits from list and allows presenting data in groups. Data grouping is **hierarchical**, which means that any group item can start its
@@ -143,11 +148,9 @@ Hierarchical dataset state
 Note that there's no built-in possibility to edit data with grouplist. You should create a prototype editlist object beforehand.
 }}
 
-##API Reference
 
-[Methods, parameters and events](api__refs__ui.grouplist.html)
 
-###Related Articles
+##Related Articles
 
 - [Sizing Components](desktop/dimensions.md)
 - [Resizing](desktop/resizing.md)

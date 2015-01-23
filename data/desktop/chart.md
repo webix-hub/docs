@@ -1,6 +1,11 @@
 Chart
 ==============
 
+##API Reference
+
+- [Methods, parameters and events](api__refs__ui.chart.html)
+- [Samples](http://docs.webix.com/samples/08_chart/index.html)
+
 ##Overview
 
 <a href="http://webix.com/widget/charts/" title="webix charts component">Chart</a> is a ui-related component that inherits from view and helps present data in different graphic figures like colored columns, pie pieces or lines. 
@@ -55,11 +60,7 @@ To learn about all the chart properties, please refer to the [corresponding chap
 - [Chart Colouring](desktop/chart_coloreffects.md)
 
 
-##API Reference
-
-[Methods, parameters and events](api__refs__ui.chart.html)
-
-###Related Articles
+##Related Articles
 - desktop/data_object.md
 - [Supported Data Types](desktop/data_types.md)
 - [Redefinition of the Components](desktop/redefinition.md)

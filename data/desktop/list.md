@@ -1,6 +1,11 @@
 List
 ===========
 
+##API Reference
+
+- [Methods, properties and events](api__refs__ui.list.html)
+- [Samples](http://docs.webix.com/samples/05_list/index.html)
+
 ##Overview
 
 List is a ui-related components that inherits from [view](desktop/view.md) and presents listed data items. The webix library offers three
@@ -40,11 +45,8 @@ You can load data in any of the supported [data formats](desktop/data_types.md).
 Note that there's no built-in possibility to edit data with List. You should create a prototype *editlist* object beforehand.
 }}
 
-##API Reference
 
-[Methods, properties and events](api__refs__ui.list.html)
-
-###Related Articles
+##Related Articles
 
 - [Setting Dimensions for the Components](desktop/dimensions.md)
 - [Dynamic Resizing and Adjustment](desktop/resizing.md)

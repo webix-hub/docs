@@ -1,6 +1,11 @@
 Menu
 =============
 
+##API Reference
+
+- [Methods, properties and events](api__refs__ui.menu.html)
+- [Samples](http://docs.webix.com/samples/03_menu/index.html)
+
 ##Overview
 
 UI-related pulldown **Menu** inherits from [list](desktop/list.md) and lets users select the necessary item from the list of grouped items (submenus). Each element of a submenu can start its own submenu. <br>
@@ -306,11 +311,9 @@ data:[
 {{sample 03_menu/12_submenu_config.html }}
 
 
-##API Reference
 
-[Methods, properties and events](api__refs__ui.menu.html)
 
-###Related Articles
+##Related Articles
 
 - [Event Handling](desktop/event_handling.md)
 - [ContextMenu](desktop/contextmenu.md)

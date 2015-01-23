@@ -1,6 +1,13 @@
 Carousel
 ==========================
 
+##API Reference
+
+- [Methods, Properties and Events](api/refs/ui.carousel.md)
+- [Samples](http://docs.webix.com/samples/26_carousel/index.html)
+
+
+
 ##Overview
 
 Ui-related <a href="http://webix.com/widget/multiview-scrollview-carousel/" title="javascript webix slider">carousel</a> is designed to present Webix components in one view with the ability to switch between them by clicking on the dedicated buttons or sliding (on touch devices).
@@ -155,11 +162,8 @@ $$("carousel").adjustScroll();
 $$("carousel").getActiveIndex();
 ~~~
 
-##API Reference
 
-[Methods, Properties and Events](api/refs/ui.carousel.md)
-
-###Related Articles
+##Related Articles
 
 - [Adding Headers to Components](desktop/setting_headers.md)
 - [Event Handling](desktop/event_handling.md)

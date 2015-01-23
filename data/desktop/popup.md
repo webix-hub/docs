@@ -1,6 +1,11 @@
 Popup
 ==============
 
+##API Reference
+
+- [Methods, properties and events](api__refs__ui.popup.html)
+- [Samples](http://docs.webix.com/samples/10_window/index.html)
+
 ##Overview
 
 Popup is a variant of a ui-related [window](desktop/window.md). Unlike it, the popup disappears as you click 
@@ -78,11 +83,8 @@ webix.ui({
 10_window/05_popup_menu.html
 }}
 
-##API Reference
 
-[Methods, properties and events](api__refs__ui.popup.html)
-
-###Related Articles
+##Related Articles
 
 - [Window](desktop/window.md)
 - [Window and Popup Positioning](desktop/window_positioning.md)

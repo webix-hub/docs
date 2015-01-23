@@ -1,6 +1,12 @@
 IFrame
 ================
 
+##API Reference
+
+- [Methods, properties and events](api/refs/ui.iframe.md)
+- [Samples](http://docs.webix.com/samples/80_docs/iframe.html)
+
+
 ##Overview
 
 Ui-related IFrame is a component that helps include an i-frame, or 'inline frame' into the page. Basically, it's a floating frame on the webpage that contains an external web document. The component, 
@@ -64,11 +70,9 @@ $$("control").attachEvent("onAfterTabClick",function(sid){
 
 The event fires on clicking any tab, takes its ID (sid) as parameter and sets the source for external webpage equal to this ID. 
 
-##API Reference
 
-[Methods, properties and events](api/refs/ui.iframe.md)
 
-###Related Articles 
+##Related Articles 
 
 - [Sizing Components](desktop/dimensions.md)
 - [Redefinition of Components](desktop/redefinition.md)

@@ -1,6 +1,11 @@
 Unitlist
 ==============
 
+##API Reference 
+
+- [Methods, properties and events](api__refs__ui.unitlist.html)
+- [Samples](http://docs.webix.com/samples/05_list/index.html)
+
 ##Overview
 
 Unitlist presents data in groups derived from initial non-hierarchical dataset. Data items are sorted and then united by common values. 
@@ -90,11 +95,8 @@ If there're several data items that comply to the unit value criterion, they are
 Note that there's no built-in possibility to edit data with unitlist. You should create a prototype **editlist** object beforehand.
 }}
 
-##API Reference 
 
-[Methods, properties and events](api__refs__ui.unitlist.html)
-
-###Related Articles
+##Related Articles
 - desktop/data_object.md
 - [Sizing Components](desktop/dimensions.md)
 - [Resizing](desktop/resizing.md)

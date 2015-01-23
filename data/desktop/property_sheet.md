@@ -1,6 +1,11 @@
 Property Sheet
 ============
 
+##API Reference
+
+- [Methods, properties and events](api__refs__ui.property.html)
+- [Samples](http://docs.webix.com/samples/07_property/index.html)
+
 ##Overview
 
 Property sheet is a list of properties. Ui-related property sheet inherits from [view](desktop/view.md). 
@@ -22,7 +27,7 @@ Property sheet is a list of properties. Ui-related property sheet inherits from 
     
 ~~~
 
-{{sample 07_property/01_init.html }}
+{{sample 07_property/01_init.html}}
 
 {{note
 The elements with **label** gets header CSS. If there's no type the element is non-styled and non-editable. 
@@ -175,11 +180,7 @@ prop.registerType("popup-ra",{
 {{sample 07_property/02_custom_checkbox.html}}
 
 
-##API Reference
-
-[Methods, properties and events](api__refs__ui.property.html)
-
-###Related Articles
+##Related Articles
 - desktop/data_object.md
 - [Sizing Components](desktop/dimensions.md)
 - [Resizing](desktop/resizing.md)

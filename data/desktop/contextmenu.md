@@ -1,6 +1,12 @@
 ContextMenu
 =================
 
+##API Reference
+
+- [Methods, properties and events](api__refs__ui.contextmenu.html)
+- [Samples](http://docs.webix.com/samples/03_menu/index.html)
+
+
 ##Overview
 
 Contextmenu is triggered by right mouseclick. Ui-related <a href="http://webix.com/widget/contextmenu/" title="webix contextmenu widget">Contextmenu</a> inherits from both [window](desktop/window.md) and [list](desktop/list.md). It looks like
@@ -173,11 +179,8 @@ webix.ui({
 
 {{sample 03_menu/06_context_for_list.html}}
 
-##API Reference
 
-[Methods, properties and events](api__refs__ui.contextmenu.html)
-
-###Related Articles
+##Related Articles
 
 - [List](desktop/list.md)
 - [Menu](desktop/menu.md)

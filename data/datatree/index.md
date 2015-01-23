@@ -1,6 +1,12 @@
 Tree
 ====================
 
+##API Reference
+
+- [Methods, properties and events](api__refs__ui.tree.html)
+- [Samples](http://docs.webix.com/samples/17_datatree/index.html)
+
+<div class="h2">Overview</div>
 
 Tree is a pure JavaScript component for building various tree hierarchies. <br>
 It's a powerful and customizable tool with lots of features: support for XML, JSON data sources, static and dynamic loading, multitree drag-and-drop, inline editing, optional checkboxes, state saving, 
@@ -12,7 +18,7 @@ filtering, sorting, copying etc.
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/tree.png"/>
 
-
+<div class="h2">Guides</div>
 
 <table  style='border-left:none !important;' cellspacing="0" cellpadding="5" border="0">
 	<tbody>

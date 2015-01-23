@@ -1,6 +1,12 @@
 Multiview
 ==========================
 
+##API Reference 
+
+- [Methods, properties and events](api__refs__ui.multiview.html)
+- [Samples](http://docs.webix.com/samples/20_multiview/index.html)
+
+
 ##Overview
 
 Multiview  helps you rationally use space on the page by placing different views into one and the same area. Only one view is visible at a time the others accessable with the help of dedicated buttons. 
@@ -96,11 +102,8 @@ Here you use common methods (**show and back**) and create custom buttons each o
 
 Learn how to "memorize" the currenty opened tab in the [related article](desktop/history_track.md). 
 
-###API Reference 
 
-[Methods, properties and events](api__refs__ui.multiview.html)
-
-###Related Articles
+##Related Articles
 
 - [Sizing Components](desktop/dimensions.md)
 - [Resizing](desktop/resizing.md)

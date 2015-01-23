@@ -1,6 +1,11 @@
 Calendar
 ================
 
+##API Reference
+
+- [Methods, properties and events](api__refs__ui.calendar.html)
+- [Samples](http://docs.webix.com/samples/09_calendar/index.html)
+
 ##Overview
 
 UI-related <a href="http://webix.com/widget/calendar/" title="webix calendar widget">calendar</a> inherits from [view](desktop/view.md) and allows you to include the Date and Time picker calendar into an app.
@@ -237,11 +242,9 @@ By default, these buttons are visible, but you can hide them by setting the **ic
 09_calendar/01_init.html
 }}
 
-##API Reference
 
-[Methods, properties and events](api__refs__ui.calendar.html)
 
-###Related Articles
+##Related Articles
 
 - [Date Formatting Methods](helpers/date_formatting_methods.md)
 - [Number Formatting Methods](helpers/number_formatting_methods.md)

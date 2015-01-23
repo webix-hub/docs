@@ -146,6 +146,6 @@ What can we suggest you to do next?
 - Check the code sample of the mentioned above example (use the link above);
 - Read about [possible data formats](datatable/loading_data.md) and how you can [get data from database](desktop/serverside.md);
 - Find out about [available columns configuration](datatable/columns_configuration.md);
-- Check other [supplied samples]($${sample_http}index.html). 
+- Check other [supplied samples](http://docs.webix.com/samples/15_datatable/index.html). 
 
 

@@ -1,9 +1,15 @@
 Template
 =================
 
+##API Reference
+
+- [Methods, properties and events](api__refs__ui.template.html)
+- [Samples](http://docs.webix.com/samples/04_template/index.html)
+
+
 ##Overview
 
-Ui-related **template** looks like a non-editable area for rendering plain text or a single data record. Its contents is set with the help of the same-name *template* parameter. 
+Ui-related **template** looks like a non-editable area for rendering plain text or a single data record. Its content is set with the help of the same-name *template* parameter. 
 
 <img  style="display:block; margin-left:auto;margin-right:auto;"  src="desktop/template.png"/>
 
@@ -195,6 +201,3 @@ resort to [borderless](desktop/borders.md) layout design.
 {{sample 80_docs/header_templates.html}}
 
 
-##API Reference
-
-[Methods, properties and events](api__refs__ui.template.html)

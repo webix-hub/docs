@@ -1,6 +1,11 @@
 Scrollview
 ======================
 
+##API Reference
+
+- [Methods, parameters and events](api__refs__ui.scrollview.html)
+- [Samples](http://docs.webix.com/samples/04_template/index.html)
+
 ##Overview
 
 Scrollview inherits from [view](desktop/view.md) and makes any of the nested components scrollable, either in horizontal or in vertical mode. It is handy in case of long 
@@ -50,11 +55,9 @@ Within scrollview as well as within any component with a scrollbar you can:
 
 Read more about **scroll control** in the [corresponding article](desktop/scroll_control.md) of the documentation. 
 
-##API Reference
 
-[Methods, parameters and events](api__refs__ui.scrollview.html)
 
-###Related Articles
+##Related Articles
 
 - [Setting Borders to the Components](desktop/borders.md)
 - [Adding Headers to Components](desktop/setting_headers.md)

@@ -1,5 +1,11 @@
 Uploader
 ==========================================
+
+##API Reference
+
+- [Methods, properties and events](api__refs__ui.uploader.html)
+- [Samples](http://docs.webix.com/samples/21_upload/index.html)
+
 ##Overview
 Uploader is a component that allows users to  upload files. It allows browsing directories on your machine to choose the necessary file(s) and send them to server.
 
@@ -30,8 +36,5 @@ webix.ui({
 - desktop/apionly_uploader.md
 
 
-##API Reference
-
-[Methods, properties and events](api__refs__ui.uploader.html)
 
 

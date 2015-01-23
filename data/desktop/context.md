@@ -1,6 +1,13 @@
 Context
 ===============
 
+##API Reference
+
+- [Methods, properties and events](api__refs__ui.context.html)
+- [Samples](http://docs.webix.com/samples/03_menu/index.html)
+
+
+
 ##Overview
 
 Ui-related context points to an element that will be shown on the page on right mouse click. The context look like a [popup window](desktop/popup.md) where you can place any HTML element or UI component. 
@@ -73,11 +80,8 @@ Content will get elements that are inside the container.
 
 {{sample 03_menu/05_context_content.html}}
 
-##API Reference
 
-[Methods, properties and events](api__refs__ui.context.html)
-
-###Related Articles
+##Related Articles
 
 - [Contextmenu](desktop/contextmenu.md)
 - [Popup](desktop/popup.md)

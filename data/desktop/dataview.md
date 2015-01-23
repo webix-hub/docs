@@ -1,6 +1,11 @@
 Dataview
 =============
 
+##API Reference
+
+- [Methods, Properties and Events](api__refs__ui.dataview.html)
+- [Samples](http://docs.webix.com/samples/06_dataview/index.html)
+
 ##Overview
 
 Dataview displays objects with data according to a predefined template. It inherits from [view](desktop/view.md). 
@@ -42,11 +47,10 @@ webix.ui({
 Note that there's a built-in possibility to edit data with dataview. You should create a prototype *dataview-edit* object beforehand.
 }}
 
-##API Reference
 
-[Methods, Properties and Events](api__refs__ui.dataview.html)
 
-###Related Articles
+##Related Articles
+
 - desktop/data_object.md
 - [Setting Dimensions for the Components](desktop/dimensions.md)
 - [Dynamic Resizing and Adjustment](desktop/resizing.md)

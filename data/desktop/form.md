@@ -1,5 +1,11 @@
 Form
 ===============
+
+##API Reference
+
+- [Methods, properties and events](api__refs__ui.form.html)
+- [Samples](http://docs.webix.com/samples/13_form/index.html)
+
 ##Overview
 
 Any form is a means of getting an information from users. It contains input fields and select components like checkboxes,
@@ -290,11 +296,9 @@ form.save()
 
 Data binding concept is described in a [separate documentation article](desktop/data_binding.md#databinding). 
 
-##API Reference
 
-[Methods, properties and events](api__refs__ui.form.html)
 
-###Related Articles
+##Related Articles
 
 - [Form and HTMLform Treatment](desktop/form_tasks.md)
 - [Uploading Files with Form](desktop/uploader_integration.md)

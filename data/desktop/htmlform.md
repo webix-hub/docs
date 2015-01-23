@@ -1,6 +1,11 @@
 HTMLform
 ================
 
+##API Reference
+
+- [Methods, properties and events](api__refs__ui.htmlform.html)
+- [Samples](http://docs.webix.com/samples/11_htmlform/index.html)
+
 ##Overview
 
 Though the webix library has its own [form](desktop/form.md) component, there exists a possibility to create a separate form made with the help of
@@ -183,11 +188,9 @@ form.save()
 
 Data binding concept is described in a [separate documentation article](desktop/data_binding.md#databinding). 
 
-##API Reference
 
-[Methods, properties and events](api__refs__ui.htmlform.html)
 
-###Related Articles
+##Related Articles
 
 - [UI-related Form](desktop/form.md)
 - [Initializing from HTML and XML](desktop/markup_init.md)
