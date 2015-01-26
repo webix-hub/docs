@@ -20,6 +20,11 @@ The control supports any content inside of it. The content blocks can be arrange
 	});
 ~~~
 
+### Where to start
+
+- [Overview of Carousel Widget](desktop/carousel.md)
+- [Samples](http://docs.webix.com/samples/26_carousel/index.html)
+
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/navigationbuttons.md">NavigationButtons</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>

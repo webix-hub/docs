@@ -22,8 +22,8 @@ The control supports all date and time formats. Besides the days of the month, i
 
 ### Where to start
 
-- [Overview of Accordion Widget](desktop/accordion.md)
-- [Samples](http://docs.webix.com/samples/01_layout/index.html)
+- [Overview of Calendar Widget](desktop/calendar.md)
+- [Samples](http://docs.webix.com/samples/09_calendar/index.html)
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
