@@ -16,3 +16,8 @@ The component presents a plain window that can contain any content. Check [conte
 		...config options goes here..
 	});
 ~~~
+
+### Where to start
+
+- [Overview of Context Widget](desktop/context.md)
+- [Samples](http://docs.webix.com/samples/03_menu/index.html)

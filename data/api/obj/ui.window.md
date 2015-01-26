@@ -16,3 +16,8 @@ The window consists of the header and body, can be modal or modaless. The window
 		...config options goes here..
 	});
 ~~~
+
+### Where to start
+
+- [Overview of Window Widget](desktop/window.md)
+- [Samples](http://docs.webix.com/samples/10_window/index.html)

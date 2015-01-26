@@ -20,6 +20,10 @@ The window can contain any content, be modal or modeless. The main use case - di
 	});
 ~~~
 
+### Where to start
+
+- [Overview of Popup Widget](desktop/popup.md)
+- [Samples](http://docs.webix.com/samples/10_window/index.html)
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.window.md">ui.window</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/movable.md">Movable</a>, <a href="api/refs/modality.md">Modality</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 

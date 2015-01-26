@@ -16,3 +16,8 @@ The component can contain various elements inside it (actually, the same element
 		...config options goes here..
 	});
 ~~~
+
+### Where to start
+
+- [Overview of Toolbar Widget](desktop/toolbar.md)
+- [Samples](http://docs.webix.com/samples/02_toolbar/index.html)

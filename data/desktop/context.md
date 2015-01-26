@@ -10,7 +10,7 @@ Context
 
 ##Overview
 
-Ui-related context points to an element that will be shown on the page on right mouse click. The context look like a [popup window](desktop/popup.md) where you can place any HTML element or UI component. 
+Ui-related context points to an element that will be shown on the page on right mouse click. The context looks like a [popup window](desktop/popup.md) where you can place any HTML element or UI component. 
 
 ##Initialization
 

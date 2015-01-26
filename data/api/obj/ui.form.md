@@ -16,3 +16,8 @@ The component provides validation and the ability to save user input to the back
 		...config options goes here..
 	});
 ~~~
+
+### Where to start
+
+- [Overview of Form Widget](desktop/form.md)
+- [Samples](http://docs.webix.com/samples/13_form/index.html)

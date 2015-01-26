@@ -16,3 +16,8 @@ The component is full of various possibilities: filtering, sorting, pagination, 
 		...config options goes here..
 	});
 ~~~
+
+### Where to start
+
+- [Overview of DataTable Widget](datatable/index.md)
+- [Samples](http://docs.webix.com/samples/15_datatable/index.html)

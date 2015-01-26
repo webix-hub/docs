@@ -15,3 +15,8 @@ The component allows you to programmatically define interface structure by organ
 		...config options goes here..
 	});
 ~~~
+
+### Where to start
+
+- [Overview of Layout Widget](desktop/layout.md)
+- [Samples](http://docs.webix.com/samples/01_layout/index.html)

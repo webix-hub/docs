@@ -17,3 +17,7 @@ The component can be displayed in 2 modes: static (the menu is fully expanded al
 	});
 ~~~
 
+### Where to start
+
+- [Overview of Menu Widget](desktop/menu.md)
+- [Samples](http://docs.webix.com/samples/03_menu/index.html)

@@ -16,3 +16,8 @@ The component serves as the base class that defines properties, methods, and eve
 		...config options goes here..
 	});
 ~~~
+
+### Where to start
+
+- [Overview of List Widget](desktop/list.md)
+- [Samples](http://docs.webix.com/samples/05_list/index.html)

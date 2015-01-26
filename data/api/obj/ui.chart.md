@@ -18,3 +18,7 @@ It's possible to present multiple data sets on the same chart.  Check [chart](de
 		...config options goes here..
 	});
 ~~~
+### Where to start
+
+- [Overview of Chart Widget](desktop/chart.md)
+- [Samples](http://docs.webix.com/samples/08_chart/index.html)

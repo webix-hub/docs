@@ -15,3 +15,8 @@ Place it in the layout if you want to have a scroll around few other views (not 
 		...config options goes here..
 	});
 ~~~
+
+### Where to start
+
+- [Overview of Scrollview Widget](desktop/scrollview.md)
+- [Samples](http://docs.webix.com/samples/04_template/index.html)

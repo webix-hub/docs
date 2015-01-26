@@ -16,3 +16,8 @@ The component allows tracking the whole progress of individual file upload. Full
 		...config options goes here..
 	});
 ~~~
+
+### Where to start
+
+- [Overview of Uploader Widget](desktop/uploader.md)
+- [Samples](http://docs.webix.com/samples/21_upload/index.html)

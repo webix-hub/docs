@@ -16,3 +16,8 @@ The component presents a pop-up menu that is displayed when the user clicks the 
 		...config options goes here..
 	});
 ~~~
+
+### Where to start
+
+- [Overview of ContextMenu Widget](desktop/contextmenu.md)
+- [Samples](http://docs.webix.com/samples/03_menu/index.html)

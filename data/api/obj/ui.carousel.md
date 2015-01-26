@@ -16,4 +16,7 @@ The control supports any content inside of it. The content blocks can be arrange
 		...config options goes here..
 	});
 ~~~
+### Where to start
 
+- [Overview of Carousel Widget](desktop/carousel.md)
+- [Samples](http://docs.webix.com/samples/26_carousel/index.html)

@@ -16,3 +16,8 @@ The component can be used for creating various on-page editors. The value field 
 		...config options goes here..
 	});
 ~~~
+
+### Where to start
+
+- [Overview of Property Sheet Widget](desktop/property_sheet.md)
+- [Samples](http://docs.webix.com/samples/07_property/index.html)

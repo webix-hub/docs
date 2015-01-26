@@ -15,3 +15,8 @@ The component is a simple container (but with rich API support) where you can pu
 		...config options goes here..
 	});
 ~~~
+
+### Where to start
+
+- [Overview of Template Widget](desktop/template.md)
+- [Samples](http://docs.webix.com/samples/04_template/index.html)

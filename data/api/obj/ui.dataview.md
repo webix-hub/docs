@@ -15,3 +15,8 @@ The component presents a collection of objects according to a user-defined templ
 		...config options goes here..
 	});
 ~~~
+
+### Where to start
+
+- [Overview of Dataview Widget](desktop/dataview.md)
+- [Samples](http://docs.webix.com/samples/06_dataview/index.html)

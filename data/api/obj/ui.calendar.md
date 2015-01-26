@@ -16,3 +16,8 @@ The control supports all date and time formats. Besides the days of the month, i
 		...config options goes here..
 	});
 ~~~
+
+### Where to start
+
+- [Overview of Calendar Widget](desktop/calendar.md)
+- [Samples](http://docs.webix.com/samples/09_calendar/index.html)

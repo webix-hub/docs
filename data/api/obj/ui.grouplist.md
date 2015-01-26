@@ -17,3 +17,8 @@ Support for various data template formats, sorting and filtering features. Check
 		...config options goes here..
 	});
 ~~~
+
+### Where to start
+
+- [Overview of Grouplist Widget](desktop/grouplist.md)
+- [Samples](http://docs.webix.com/samples/05_list/index.html)

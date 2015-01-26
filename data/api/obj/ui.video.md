@@ -14,3 +14,7 @@
 	});
 ~~~
 
+### Where to start
+
+- [Overview of Video Widget](desktop/video.md)
+- [Samples](http://docs.webix.com/samples/27_video/index.html)

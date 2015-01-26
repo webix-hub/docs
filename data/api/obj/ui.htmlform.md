@@ -16,3 +16,8 @@ The component allows you to get an HTML Form as a lib-based view, so that to use
 		...config options goes here..
 	});
 ~~~
+
+### Where to start
+
+- [Overview of HTMLform Widget](desktop/htmlform.md)
+- [Samples](http://docs.webix.com/samples/11_htmlform/index.html)

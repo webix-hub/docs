@@ -16,3 +16,8 @@ The component allows you to divide the page content into multiple groups and dis
 		...config options goes here..
 	});
 ~~~
+
+### Where to start
+
+- [Overview of Multiview Widget](desktop/multiview.md)
+- [Samples](http://docs.webix.com/samples/20_multiview/index.html)

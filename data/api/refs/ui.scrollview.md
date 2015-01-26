@@ -19,6 +19,10 @@ Place it in the layout if you want to have a scroll around few other views (not 
 	});
 ~~~
 
+### Where to start
+
+- [Overview of Scrollview Widget](desktop/scrollview.md)
+- [Samples](http://docs.webix.com/samples/04_template/index.html)
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 

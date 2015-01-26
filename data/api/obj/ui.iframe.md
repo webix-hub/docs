@@ -17,3 +17,8 @@ Check (templates)[api/refs/ui.template.md] for example. Check [iframe](desktop/i
 		...config options goes here..
 	});
 ~~~
+
+### Where to start
+
+- [Overview of IFrame Widget](desktop/iframe.md)
+- [Samples](http://docs.webix.com/samples/80_docs/iframe.html)

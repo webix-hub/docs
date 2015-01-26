@@ -18,3 +18,8 @@ $("#mydiv").webix_tree({
 	...config options go here..
 });
 ~~~
+
+### Where to start
+
+- [Overview of Tree Widget](datatree/index.md)
+- [Samples](http://docs.webix.com/samples/17_datatree/index.html)

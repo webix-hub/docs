@@ -7,7 +7,7 @@ Toolbar
 - [Samples](http://docs.webix.com/samples/02_toolbar/index.html)
 
 
-###Overview
+##Overview
 
 Ui-related toolbar inherits from [layout](desktop/layout.md). It is the place to nest all the possible controls including, buttons, 
 labels, icons, checkboxes, combos, etc. For the full list of controls please refer to the library's [Controls Guide](desktop/controls.md). 
@@ -15,7 +15,7 @@ labels, icons, checkboxes, combos, etc. For the full list of controls please ref
 <img style="display:block; margin-left:auto;margin-right:auto;"  src="desktop/toolbar.png" />
 
 
-###Initialization
+##Initialization
 
 Toolbar controls are put into the **elements** array and are arranged into a horizontal line. 
 
@@ -45,7 +45,7 @@ There exists a possibility to specify [common configuration](desktop/common_conf
 }}
 
 
-###Working with Toolbar
+##Working with Toolbar
 
 ####Image Buttons
 

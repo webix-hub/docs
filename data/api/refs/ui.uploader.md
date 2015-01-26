@@ -20,6 +20,10 @@ The component allows tracking the whole progress of individual file upload. Full
 	});
 ~~~
 
+### Where to start
+
+- [Overview of Uploader Widget](desktop/uploader.md)
+- [Samples](http://docs.webix.com/samples/21_upload/index.html)
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 

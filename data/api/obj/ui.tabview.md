@@ -16,3 +16,8 @@ The component optimizes the process of creating tabbed structures on the page - 
 		...config options goes here..
 	});
 ~~~
+
+### Where to start
+
+- [Overview of Tabview Widget](desktop/tabview.md)
+- [Samples](http://docs.webix.com/samples/02_toolbar/index.html)

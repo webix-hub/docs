@@ -16,3 +16,8 @@ The window can contain any content, be modal or modeless. The main use case - di
 		...config options goes here..
 	});
 ~~~
+
+### Where to start
+
+- [Overview of Popup Widget](desktop/popup.md)
+- [Samples](http://docs.webix.com/samples/10_window/index.html)

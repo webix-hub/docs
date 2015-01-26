@@ -16,3 +16,8 @@ The component is used to integrate a tree into an editable grid. There is a supp
 		...config options goes here..
 	});
 ~~~
+
+### Where to start
+
+- [Overview of Treetable Widget](desktop/treetable.md)
+- [Samples](http://docs.webix.com/samples/15_datatable/index.html)
