@@ -15,10 +15,10 @@ There are 4 files that you need to include:
 ~~~html
 <!-- js files -->
 <script src="codebase/webix.js" type="text/javascript"></script>
-<script src="codebase/kanban.js" type="text/javascript"></script>
+<script src="codebase/kanban/kanban.js" type="text/javascript"></script>
 <!-- css files -->
 <link rel="stylesheet" href="codebase/webix.css" type="text/css" charset="utf-8">
-<link rel="stylesheet" href="codebase/kanban.css" type="text/css" charset="utf-8">
+<link rel="stylesheet" href="codebase/kanban/kanban.css" type="text/css" charset="utf-8">
 ~~~
 
 Initialization

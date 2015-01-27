@@ -15,7 +15,7 @@ Type is applicable to the following data components:
 - [datatable](datatable/index.md) and [treetable](desktop/treetable.md) to define 
 [common properties](desktop/type.md#definingcommonelements) for cells; 
 
-Webix **item type** is an object that is constructed of parameters you'd like to apply to each item of the component. These parameters can be native properties of Webix components or used-defined.
+Webix **item type** is an object that is constructed of parameters you'd like to apply to each item of the component. These parameters can be native properties of Webix components or user-defined ones.
 
 **Native properties** are described in the component API and may differ from component to component. They may include:
 
