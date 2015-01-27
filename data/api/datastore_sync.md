@@ -4,21 +4,21 @@ sync
 
 
 @short:
-	allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+	allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 
 @params:
 - source		object		the object that the method is assigned to
 - filter		function		the filtering function
-- silent		bool		if you set the parameter to <i>true</i>, the object won't be repainted after synchronization
+- silent		bool		if you set the parameter to `true`, the object won't be repainted after synchronization
 
 @example:
 
-//full copy
-$$('list').data.sync(data);
+// full copy
+$$("list").data.sync(data);
 			
-//partial copy			
-$$('dview').data.sync(data, function(){
-	this.filter(function(data){
+// partial copy
+$$("dview").data.sync(data, function(){
+	this.filter(function (data) {
 	return data.year > 1994;
 	});
 }); 
@@ -39,5 +39,3 @@ $$('dview').data.sync(data, function(){
 @template:	api_method
 @defined:	DataStore	
 @descr:
-
-

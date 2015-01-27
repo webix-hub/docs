@@ -1,3 +1,1 @@
-{{memo loads and process data in to component}}
-
-
+{{memo Loads and processes data into a component.}}

@@ -1,1 +1,1 @@
-Renders custom scrollbars to Webix views 
+{{memo Renders custom scrollbars to Webix views }}

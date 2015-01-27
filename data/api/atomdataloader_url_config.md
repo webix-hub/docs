@@ -3,13 +3,13 @@ url
 
 
 @short:
-	the url the component will use to load data after its initialization
+	the URL the component will use to load data after its initialization
 
 @type: string
 @example:
 webix.ui({
-    datatype:"xml",
-	url:"data.xml"
+  datatype: "xml",
+	url: "data.xml"
 	...
 });
 
@@ -28,5 +28,4 @@ webix.ui({
 @descr:
 
 
- Used in pair with the api/link/ui.datatable_datatype_config.md parameter.  If api/link/ui.datatable_datatype_config.md isn't provided, the component will expect data in JSON format. 
- 
+Used in conjunction with the api/link/ui.datatable_datatype_config.md parameter.  If api/link/ui.datatable_datatype_config.md isn't provided, the component will expect data in JSON format.
