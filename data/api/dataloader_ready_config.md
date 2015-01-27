@@ -25,10 +25,10 @@ webix.ui({
 
 The `ready` event handler will be called only once. Dynamic data loading won't trigger the handler. This is a good place for post-initialization code.
 
-The example below shows the succession of event handler calls (first `data`, then `ready) and demonstrates
+The example below shows the succession of event handler calls (first `data`, then `ready`) and demonstrates
 how to set the URL of a component without triggering data loading.
 
-@example:
+~~~js
 webix.ui({
   view: "tree",
   data: function () {
@@ -38,9 +38,12 @@ webix.ui({
     ]
   }(),
   ready: function() {
-    webix.message("ready");  // displayed second
-    this.data.url = "data/data_dyn.php";  // set the DataStore URL without triggering data loading
+  	// displayed second
+    webix.message("ready");  
+    // set the DataStore URL without triggering data loading
+    this.data.url = "data/data_dyn.php";  
   },
 });
+~~~
 
-@descr: `this.data` above points to a [TreeStore](api/refs/treestore.md) object, which was parsed from the inline `data` property passed to the Tree constructor.
+The line `this.data` points to a [TreeStore](api/refs/treestore.md) object, which was parsed from the inline `data` property passed to the Tree constructor.
