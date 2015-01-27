@@ -1,3 +1,1 @@
-
-{{memo implements common API for tree like components}}
-
+{{memo Implements common APIs for tree-like components.}}

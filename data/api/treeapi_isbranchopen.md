@@ -1,7 +1,7 @@
 isBranchOpen
 =============
 
-@short: checks whether the specified branch opened or closed
+@short: checks whether the specified branch is open or closed
 	
 
 @params:
@@ -12,19 +12,19 @@ isBranchOpen
 
 @example:
 tree = new webix.ui({
-	view:"tree",
+	view: "tree",
 	data: [
-		{ id:"branch1", value:"The Shawshank Redemption", data:[
-			{ id:"1.1", value:"Part 1" },
-			{ id:"1.2", value:"Part 2" }
+		{ id: "branch1", value: "The Shawshank Redemption", data: [
+			{ id: "1.1", value: "Part 1" },
+			{ id: "1.2", value: "Part 2" }
 		]},
-		{ id:"branch2", value:"The Godfather", data:[
-			{ id:"2.1", value:"Part 1" }
+		{ id: "branch2", value: "The Godfather", data: [
+			{ id: "2.1", value: "Part 1" }
 		]}
 	]
 });	
 
-tree.isBranchOpen('branch1');
+tree.isBranchOpen("branch1");
 
 @template:	api_method
 @relatedapi:
@@ -35,4 +35,3 @@ tree.isBranchOpen('branch1');
 @related:
 	datatree/nodes_manipulations.md
 @descr:
-

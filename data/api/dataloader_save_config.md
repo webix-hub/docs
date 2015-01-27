@@ -1,19 +1,19 @@
 save
-=============
+====
 
 
 @short:
-	defines urls for datasaving
+	defines URLs for data saving
 
 @type: string
 @example:
 
 webix.ui({
-  id:"mylist",
-  view:"list", 
-  load:"data.php",
-  save:"save.php"
-})
+  id: "mylist",
+  view: "list",
+  load: "data.php",
+  save: "save.php"
+});
 
 
 @template:	api_config
@@ -23,21 +23,21 @@ webix.ui({
 @descr:
 
 
-If property defines, component will create a DataProcessor instance,
-and init it on defined url.
+If the property is set, the component will create a [DataProcessor](desktop/dataprocessor.md) instance,
+and initialize it with the defined URL.
 
-If you need to get dataprocessor you can use 
+If you need to get the DataProcessor, you can use:
 ~~~
 var view = $$("myview");
-var dp = webix.dp(view); // dataprocessor which was assigned to the view
+var dp = webix.dp(view);  // the dataprocessor that was assigned to the view
 ~~~
 
-If you wish to use it with server side connector, you can use init as 
+To use a server-side connector, you can initialize `save` as follows:
 
 ~~~
 webix.ui({
-  view:"list", 
-  load:"data.php",
-  save:"connector->save.php"
+  view: "list",
+  load: "data.php",
+  save: "connector->save.php"
 })
 ~~~

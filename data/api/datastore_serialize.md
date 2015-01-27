@@ -2,12 +2,11 @@ serialize
 =============
 
 
-@short:
-	serializes data to a json object
+@short: serializes data to a JSON object
 
 
 @returns:
--obj  object	serialized json object
+-obj  object	serialized JSON object
 
 @example:
 
@@ -15,5 +14,3 @@ serialize
 @template:	api_method
 @defined:	DataStore	
 @descr:
-
-

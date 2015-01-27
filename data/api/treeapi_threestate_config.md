@@ -2,18 +2,16 @@ threeState
 =============
 
 
-@short: enabled three-state checkboxes
+@short: enable three-state checkboxes
 	
 
 @type:  bool
 @example:
 
 webix.ui({
-    view:"tree",
-    threeState:true
+    view: "tree",
+    threeState: true
 })
 
 @template:	api_config
 @descr:
-
-
