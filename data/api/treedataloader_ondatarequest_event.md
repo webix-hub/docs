@@ -1,7 +1,7 @@
 onDataRequest
 =============
 
-@short: Fires when dynamically-loaded data is requested.
+@short: fires when dynamically-loaded data is requested
 
 @params:
 - id	string/number	id of the parent node whose the children should be loaded

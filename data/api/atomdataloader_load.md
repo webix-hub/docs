@@ -2,7 +2,7 @@ load
 ====
 
 
-@short: Loads data from an external data source.
+@short: loads data from an external data source.
 
 @params:
 - url		string		the data url

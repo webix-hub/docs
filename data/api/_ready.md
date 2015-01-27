@@ -2,7 +2,7 @@ ready
 =====
 
 
-@short: Event handler called just after the page has been completely parsed.
+@short: event handler called just after the page has been completely parsed.
 	
 
 @params:

@@ -1,7 +1,7 @@
 open
 ====
 
-@short: Opens the branch with the specified id.
+@short: opens the branch with the specified id
 	
 
 @params:

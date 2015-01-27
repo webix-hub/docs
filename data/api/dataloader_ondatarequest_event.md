@@ -2,7 +2,7 @@ onDataRequest
 =============
 
 
-@short: Fires when data from the server side is requested for linear data structures (List, DataTable, DataView etc.). Part of implementing dynamic data loading.
+@short: fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 
 @params:
 - start       number      the position which data starts to be loaded from

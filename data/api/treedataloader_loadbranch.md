@@ -1,7 +1,7 @@
 loadBranch
 ==========
 
-@short: Loads data to the specified branch, as direct children of the node with the id provided.
+@short: loads data to the specified branch, as direct children of the node with the id provided
 	
 
 @params:
