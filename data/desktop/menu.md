@@ -224,7 +224,7 @@ checkbox which ID equals to the ID of the corresponding menu item.
 
 ~~~js
 $$("tree1").attachEvent("onItemCheck",function(id,state){
-	if(state) if checked
+	if(state) //if checked
 		$$("top_menu").disableItem(id);
 	else
 		$$("top_menu").enableItem(id);
