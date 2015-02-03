@@ -13,7 +13,7 @@ tree.getState();
 @relatedapi:api/treeapi_setstate.md
 @related:
 	datatree/nodes_manipulations.md
-
+@edition:pro
 @descr:
 The state object reflects UI configuration of the view.
 
@@ -27,7 +27,7 @@ the state object will look as in:
 
 ~~~js
 {
-    open: ["1,"root"],
+    open: ["1","root"],
 	select:["1.2"],
 }
 ~~~

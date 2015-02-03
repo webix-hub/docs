@@ -1,18 +1,14 @@
 datafetch
 =============
-
-
-@short:	defines the start position DataTable will load data from
+@short:	defines the number of records that will be loaded during each dynamic loading request
 	
-
 @type: number
 @example:
-gridb = new webix.ui({
-		view:"datatable",
-		columns:[],
-		datafetch:50,
-		..		
-})
+webix.ui({
+	view:"dataview",
+	datafetch:200,
+	..		
+});
 
 @template:	api_config
 
@@ -22,8 +18,10 @@ gridb = new webix.ui({
 @relatedapi:
 	api/virtualrenderstack_loadahead_config.md
 @related:
-    desktop/dynamic_loading.md
+    desktop/plain_dynamic_loading.md
 
 @descr:
+
+Default value is **500**.
 
 

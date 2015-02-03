@@ -8,9 +8,8 @@ datathrottle
 @type:  number
 @example:
 grid = new webix.ui({
-	container:"box",
 	view:"datatable",
-	columns:[{...}],
+	columns:[{...}, {...}],
 	datathrottle:500,
 	url:"data/data_dyn.php"
 });
@@ -23,6 +22,5 @@ grid = new webix.ui({
 	15_datatable/16_dyn_loading/03_db_dyn_throttle.html
 @descr:
 
-
-* If a new request for data will be received during the waiting period, the timer will be reset and original loading command will be ignored. 
 * The option is used during dynamical loading and allows you to skip unnecessary data requests during fast scrolling the dataset. 
+* If a new request for data will be received during the waiting period, the timer will be reset and original loading command will be ignored. 

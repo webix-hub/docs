@@ -14,11 +14,13 @@ onDataRequest
 dtable.attachEvent("onDataRequest", function (start, count) {
   var data = custom_load_data(start, count);
   dtable.parse(data, "json");
+  return false; //cancelling default behaviour
 ));
 
 @related:
 	desktop/serverside.md
     desktop/dynamic_loading.md
+    desktop/plain_dynamic_loading.md
 
 @template:	api_event
 @descr:

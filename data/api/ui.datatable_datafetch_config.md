@@ -2,24 +2,24 @@ datafetch
 =============
 
 
-@short:	defines the start position DataTable will load data from
+@short:	defines the number of records that will be loaded into datatable during the next dynamic loading call
 	
 
 @type: number
 @example:
 
-gridb = new webix.ui({
-		view:"datatable",
-		columns:[],
-		datafetch:50,
-		..		
-})
+webix.ui({
+	view:"datatable",
+	columns:[],
+	datafetch:30,
+	..		
+});
 
 @template:	api_config
 
 	
 @relatedsample:
-	15_datatable/16_dyn_loading/02_db_dyn_start.html
+	15_datatable/16_dyn_loading/04_db_dyn_loadahead.html
 
 @relatedapi:
 	api/link/ui.datatable_datathrottle_config.md
@@ -31,4 +31,5 @@ gridb = new webix.ui({
 
 @descr:
 
+The value defaults to **50**. 
 

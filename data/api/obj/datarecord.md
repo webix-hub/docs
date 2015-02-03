@@ -1,3 +1,3 @@
-{{memo data binding for components which store collection of data object}}
+{{memo data View-less component that stores a single data record}}
 
 

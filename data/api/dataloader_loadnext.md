@@ -1,12 +1,10 @@
 loadNext
 =============
 
-
-
-@short:	sends a request to load the specified number of records to the end or to the specified position
+@short:	sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
 
 @params:
-- count		number		the count of records
+- count		number		the number of records fetch 
 - start		number		the start position to load data from
 - callback	function	the callback function
 - url		string		the data url
@@ -21,7 +19,13 @@ loadNext
 @relatedapi:
 	api/dataloader_datathrottle_config.md
 @example:
-mygrid.loadNext(50,900,null,"data/data_dyn.php");
+//without callback
+grida.loadNext(10,0,null,"data/data.php");
+
+//with callback
+gridb.loadNext(50,900,function(){
+	this.showItem(903);
+}, "data/data_dyn.php");
 
 @template:	api_method
 @defined:	DataLoader	

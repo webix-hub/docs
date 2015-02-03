@@ -1,17 +1,19 @@
 Data Binding and Syncing with Non-UI Objects
 ===============
 
-The webix library contains three invisible yet meaningful elements. They have no graphic representation yet can store data in them. 
+The webix library contains **view-less** yet meaningful elements. They have no graphic representation and are used to store data in them. 
 
-- **DataValue** - stores a single value like any input control ([text](desktop/controls.md#text), [button](desktop/controls.md#button), [label](desktop/controls.md#label));
-- **DataRecord** - stores a single record like [form](desktop/form.md) and [htmlform](desktop/htmlform.md);
-- **DataCollection** - stores a collection of records the same way it goes with all the data-presenting components([list](desktop/list.md), [dataview](desktop/dataview.md), [datatable](datatable/index.md)). 
+- [**DataValue**](api/refs/datavalue.md) - stores a single value like any input control ([text](desktop/controls.md#text), [button](desktop/controls.md#button), [label](desktop/controls.md#label), etc.);
+- [**DataRecord**](api/refs/datarecord.md) - stores a single record like [form](desktop/form.md) and [htmlform](desktop/htmlform.md);
+- [**DataCollection**](api/refs/datarecord.md) - stores a non-hierarchical collection of records (like [list](desktop/list.md), [dataview](desktop/dataview.md), 
+[datatable](datatable/index.md), etc.);
+- [**TreeCollection**](api/refs/treecollection.md) - stores a hierarchical collection of records (like [tree](datatree/index.md) and [treetable](desktop/treetable.md)).
 
-Like its "visible" siblings, the components can store data and have the same API. They feature the same properties and take the same methods, including **bind()** and **sync()**. 
+These collections can store data and have the same API as their "visible" siblings. Such methods as **bind()** and **sync()** can be used with them as well. 
 
-When can they be useful?
+How can you benefit from them?
 
-##DataCollection Usage
+##DataCollection and TreeCollection Usage
 
 Non-ui components store some info you'd like to use later in visible components. For instance, in the DataCollection you can specify the needed dataset and later on, sync all the
 data-presenting components with it so that they all are fed with the same data. 

@@ -28,16 +28,24 @@ since all data has already been loaded the moment you inilialize the component.
 Here's a sample how dynamic loading can be enabled using [ServerSide Connectors](desktop/dataconnector.md). 
 
 {{snippet
-Server Script "data_dyn.php"-file
+Using PHP connector
 }}
 ~~~php
 <?php
    require_once("../../common/config.php");
    $data = new JSONDataConnector($conn, $dbtype);
-   $data->dynamic_loading(30); // the number of records loaded initially
+   
+   // setting the number of records loaded initially
+   $data->dynamic_loading(30); 
+   
+   //specifying database table and its fields to get the data from
    $data->render_table("packages_plain","id","package, size, architecture, section");
 ?>
 ~~~
+
+PHP, Java, .Net and ColdFusion versions of the connector are available. 
+
+[More into about DHTMLX PHP Connector](http://docs.dhtmlx.com/connector__php__index.html).
 
 ###Related Articles
 - desktop/plain_dynamic_loading.md
