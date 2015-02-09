@@ -1,41 +1,40 @@
 Dynamic Loading
-=====================
+===============
 
-Dynamic loading is all about loading data from server. It isn't connected with client side since it is enabled on server. Here data is loaded with the 
-help of a **php-script**. 
+Dynamic loading means loading data on request, from the server. For example, a PHP script could supply data dynamically
+to a Webix component.
 
 Dynamic loading is useful for long datasets since data populates the component in smaller portions. Initially data fills the view to some extent and 
-later on it is dynamically loaded each time you scroll up and down the view or switch between [pages](desktop/paging.md). 
+later on it is dynamically loaded each time you scroll up and down the view or switch among [pages](desktop/paging.md).
 
-For **plain structures** used in the majority of webix data components you can control the process by specifying: 
+For **linear structures** (used in the majority of Webix data components) you can control the process by specifying:
 
-- item position to start loading wiht;
-- how many data items should be loaded each time users scroll/page the element. 
+- the item position to start loading with;
+- how many data items should be loaded each time the user scrolls/pages the element.
 
-Continue reading the  desktop/plain_dynamic_loading.md article.
+Read more at desktop/plain_dynamic_loading.md.
 
-For **hierarchical structures** like [tree](datatree/index.md) and [treetable](desktop/treetable.md) you can specify: 
+For **hierarchical structures** like [Tree](datatree/index.md) and [TreeTable](desktop/treetable.md) you can specify:
 
 - the node ID for which you need to load child data.
 
-Continue reading the  datatree/dynamic_loading.md article. 
+Read more at datatree/dynamic_loading.md.
 
 {{note
-Note that dynamic loading works only in case this functionality is **enabled on server**. If not, any communication between client and server is senseless 
-since all data has already been loaded the moment you inilialize the component. 
+Note that dynamic loading works only if the functionality is **supported by the server**.
 }}
 
-Here's a sample how dynamic loading can be enabled using [ServerSide Connectors](desktop/dataconnector.md). 
+Here's an example of dynamic loading using [ServerSide Connectors](desktop/dataconnector.md).
 
 {{snippet
 Server Script "data_dyn.php"-file
 }}
 ~~~php
 <?php
-   require_once("../../common/config.php");
-   $data = new JSONDataConnector($conn, $dbtype);
-   $data->dynamic_loading(30); // the number of records loaded initially
-   $data->render_table("packages_plain","id","package, size, architecture, section");
+  require_once("../../common/config.php");
+  $data = new JSONDataConnector($conn, $dbtype);
+  $data->dynamic_loading(30);  // the number of records loaded initially
+  $data->render_table("packages_plain", "id", "package, size, architecture, section");
 ?>
 ~~~
 
@@ -45,6 +44,6 @@ Server Script "data_dyn.php"-file
 
 @index: 
 	desktop/plain_dynamic_loading.md
-    datatree/dynamic_loading.md
+	datatree/dynamic_loading.md
 
 @complexity:2
