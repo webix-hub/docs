@@ -31,32 +31,43 @@ All the coding can be done in any text editor that is capable of syntax highligh
 (js, html, php, xml etc.). 
 
 At the initial stage, you need to include Webix library files into your document. It's recommended to use HTML5 doctype.  
+There are 3 possible ways: 
 
-###Including Webix Files from Downloaded Package
+**1) Include Webix files from Webix CDN**
 
-Compulsory Webix files from the downloaded package are **webix.js** and **webix.css**. They are included via standard script and link attributes. Be attentive to specify the right relative path to the files. 
-
-This method allows choosing between [debug](desktop/debug.md) and production version. 
+Yoiu can directly set links to **webix.js** and **webix.css** files located in Webix CDN:
 
 ~~~html
 <!DOCTYPE HTML>// specifies document type
 <html>
     <head>
-    	<!-- Webix CSS file-->	
-		<link rel="stylesheet" href="../../codebase/webix.css" type="text/css">
-        <!-- Webix JS file-->	 
-		<script src="../../codebase/webix.js" type="text/javascript"></script>  
+    <link rel="stylesheet" href="http://cdn.webix.com/edge/webix.css" type="text/css"> 
+    <script src="http://cdn.webix.com/edge/webix.js" type="text/javascript"></script>  
     </head>
     <body>
-    	<script>... // here your app will "take shelter"
+        <script type="text/javascript" charset="utf-8">
+ 
+... // here your app will "take shelter"
         </script>
     </body>
 </html>
 ~~~
 
-###Including Webix files via Package Managers
+By the way, if you need to get one of the older Webix versions, 
+you can include the necessary number of version into the links to the code files:
 
-As an **alternative** to downloading, Webix lib can be installed via special dependency management tools. For now, Webix library is integrated with: 
+~~~html
+<link rel="stylesheet" href="http://cdn.webix.com/2.2/webix.css" type="text/css"> 
+<script src="http://cdn.webix.com/2.2/webix.js" type="text/javascript"></script>
+~~~
+
+This variant is suitable only to the Webix version distributed under GPLv3.
+
+
+**2) Including Webix files via Package Managers**
+
+Webix lib can be installed via special dependency management tools. 
+For now, Webix library is integrated with: 
 
 - **NuGet** package manager for the Microsoft development platform; 
 - **Bower** package manager for the web.
@@ -78,6 +89,32 @@ Bower
 }}
 ~~~js
 bower install webix
+~~~
+
+This variant is also suitable only to the Webix version distributed under GPLv3.
+
+
+**3) Including Webix Files from Downloaded Package**
+
+Compulsory Webix files from the downloaded package are **webix.js** and **webix.css**. 
+They are included via standard script and link attributes. Be attentive to specify the right relative path to the files. 
+
+This method allows choosing between [debug](desktop/debug.md) and production version. 
+
+~~~html
+<!DOCTYPE HTML>// specifies document type
+<html>
+    <head>
+    	<!-- Webix CSS file-->	
+		<link rel="stylesheet" href="../../codebase/webix.css" type="text/css">
+        <!-- Webix JS file-->	 
+		<script src="../../codebase/webix.js" type="text/javascript"></script>  
+    </head>
+    <body>
+    	<script>... // here your app will "take shelter"
+        </script>
+    </body>
+</html>
 ~~~
 
 ##Designing {#design}

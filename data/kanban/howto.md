@@ -1,7 +1,7 @@
 General How-Tos
 ===================
 
-This article is dedidated to the most obvious questions that may arise during the creation of Kanban Board.
+This article is dedicated to the most obvious questions that may arise during the creation of Kanban Board.
 
 How to add icons to Kanban Board?
 -----------------------------
