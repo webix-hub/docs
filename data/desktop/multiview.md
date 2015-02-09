@@ -9,10 +9,10 @@ Multiview
 
 ##Overview
 
-Multiview  helps you rationally use space on the page by placing different views into one and the same area. Only one view is visible at a time the others accessable with the help of dedicated buttons. 
+Multiview helps you efficiently use space on the page by placing different views into one and the same area. Only one view is visible at a time. The others are accessible with the help of dedicated buttons.
 
 Multiview inherits from [layout](desktop/layout.md) and if combined with a switching control like a [tabbar](desktop/controls.md#tabbar),
-form a [tabview](desktop/tabview.md).
+forms a [tabview](desktop/tabview.md).
 
 <br>
 
@@ -26,12 +26,12 @@ Multiview with three views
 }}
 ~~~js
 webix.ui({
-	view:"multiview", 
-	cells:[
-         {id:"listView", view:"list", .... },
-         {id:"formView", view:"htmlform", .... },
-         {id:"emptyView"}
-    ]
+  view: "multiview",
+  cells: [
+    {id: "listView", view: "list", .... },
+    {id: "formView", view: "htmlform", .... },
+    {id: "emptyView" }
+  ]
 });
 ~~~
 
@@ -45,11 +45,11 @@ The direct initialization of the component (**view:"multiview"**) is optional an
 
 ~~~js
 webix.ui({
-	cells:[
-         {id:"listView", view:"list", .... },
-         {id:"formView", view:"htmlform", .... },
-         {id:"emptyView"}
-    ]
+  cells:[
+    {id: "listView", view: "list", .... },
+    {id: "formView", view: "htmlform", .... },
+    {id: "emptyView"}
+  ]
 });
 ~~~
 
@@ -61,9 +61,9 @@ The **dimensions** of multiview cells are adjusted to their content. By default,
 
 ~~~js
 webix.ui({
-	view:"multiview", 
-	cells:[],
-    fitBiggest:true
+  view: "multiview",
+  cells: [],
+  fitBiggest:true
 });
 ~~~
 
@@ -73,9 +73,9 @@ My default multiview cells are switched with horizontal animation of a "slide" t
 
 ~~~js
 webix.ui({
-	view:"multiview", 
-	cells:[],
-    animate:false
+  view: "multiview",
+  cells: [],
+  animate:false
 });
 ~~~
 
@@ -118,3 +118,4 @@ Learn how to "memorize" the currenty opened tab in the [related article](desktop
 @index:
   - desktop/tabbar_switching.md
   - desktop/show_switching.md
+  

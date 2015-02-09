@@ -25,11 +25,11 @@ The connector should be set as data **url** for a component.
 
 ~~~js
 {
- 	view:"list", id:"mylist",
-    template:"#title# - #year#",
-    select:true, 
-    url:"../common/connector.php",
-	datatype:"xml"
+  view: "list", id: "mylist",
+  template: "#title# - #year#",
+  select: true,
+  url: "../common/connector.php",
+  datatype: "xml"
 }
 ~~~
 
@@ -39,12 +39,12 @@ DataConnector enables only **server->client interaction**, it's the component's 
 
 **Webix.DataProcessor** is responsible for [server-side integration](desktop/serverside.md) and handles all the CRUD operations.
 
-It should be inited for the component you'd like to perform server work with: 
+It should be initialized for the component you'd like to perform server work with:
 
 ~~~js
 var dp = new webix.DataProcessor({
-	master:$$('mylist'),//specifies the desired component 
-	url:"../common/connector.php"// 
+  master: $$('mylist'),  // specifies the desired component
+  url: "../common/connector.php"  // specifies the server API endpoint
 });
 ~~~
 
@@ -64,17 +64,17 @@ The **update();** function is no longer needed as well since from now on we appl
 ~~~js
 
 webix.ui({
-	view:"toolbar", 
-    cols:[
-		{...},
-		{
-         view:"button", 
-         id:"update", 
-         value:"Save", 
-         width:100, 
-         click:"$$('myform').save()"
-        } 
-	]   //the new function for the button
+  view: "toolbar",
+  cols: [
+    {...},
+    {
+      view: "button",
+      id: "update",
+      value: "Save",
+      width: 100,
+      click: "$$('myform').save()"
+    }
+  ]  // the new function for the button
 });
 
 $$("myform").bind($$("mylist")); //component binding
