@@ -7,12 +7,12 @@ onBeforeSelect
 
 @params:
 - id		id		id of item
-- selection	bool		true if we select, false if unselect
+- selection	bool		true if the item was selected, false if it was unselected
 
 @example: 
-	
-some.attachEvent("onBeforeSelect", function(id, selection){
-    //... some code here ... 
+
+some.attachEvent("onBeforeSelect", function (id, selection){
+  // ... some code here ...
 });
 
 @template:	api_event
@@ -21,7 +21,5 @@ some.attachEvent("onBeforeSelect", function(id, selection){
 	api/selectionmodel_onafterselect_event.md
 @related: 
 	desktop/selection.md
-	
+
 @descr:
-
-

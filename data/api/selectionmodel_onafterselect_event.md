@@ -9,9 +9,9 @@ onAfterSelect
 - id		id		the id of an item
 
 @example: 
-	
-some.attachEvent("onAfterSelect", function(id){
-    //... some code here ... 
+
+some.attachEvent("onAfterSelect", function (id) {
+  // ... some code here ...
 });
 
 @template:	api_event
@@ -20,15 +20,11 @@ some.attachEvent("onAfterSelect", function(id){
 	api/selectionmodel_onbeforeselect_event.md
 @related: 
 	desktop/selection.md
-	
+
 @descr:
 
-In case of the multiselect mode enabled, the event will fire: 
+If multiselect mode is enabled, the event will fire only when additional items are selected with Ctrl+click, while passing the ID of a recently selected item.
+The event wil not fire when the selection is extended via Shift+click.
 
-- Ctrl+click: each time an item is selected while passing the ID of a recently selected item;
-- Shift+click: will not fire. 
-
-It is safer to use the api/selectionmodel_onselectchange_event.md event that catches all changes of selection state in the component
+It is safer to use the api/selectionmodel_onselectchange_event.md event, which catches all selection state changes in the component,
 combined with the api/selectionmodel_getselectedid.md method.
-
-
