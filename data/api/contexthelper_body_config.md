@@ -2,23 +2,23 @@ body
 ====
 
 @short: the contents of the context popup window
-	
+
 
 @type: object
 @example:
 
 webix.ui({
-	view: "context",
-	body: {  },
-	...  // context config
+  view: "context",
+  body: {  },
+  ...  // context config
 });
 
 @template:	api_config
-@related:	
+@related:
 	desktop/context.md
 @relatedsample:
 	03_menu/05_context_content.html
-    03_menu/07_context_ui.html
+	03_menu/07_context_ui.html
 @descr:
 
 The `body` property of a context popup menu may contain HTML code as well as Webix components.
@@ -39,12 +39,12 @@ webix.ui({
 
 ~~~js
 webix.ui({
-	view: "context",
-	body: {
-     view: "toolbar", cols: [
-		   { view: "button", value: "Button1", width: 100 },
-		   { view: "button", value: "Button2", width: 100 },
-		 ]
-	}
+  view: "context",
+  body: {
+    view: "toolbar", cols: [
+      { view: "button", value: "Button1", width: 100 },
+      { view: "button", value: "Button2", width: 100 },
+    ]
+  }
 });
 ~~~

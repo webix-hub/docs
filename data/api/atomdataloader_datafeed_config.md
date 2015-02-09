@@ -8,21 +8,21 @@ dataFeed
 @type: string, function
 @example:
 var myform = new webix.ui({
-    container: "box",
-    view: "form",
-    ...  
-    dataFeed: "data/form.php"
+  container: "box",
+  view: "form",
+  ...
+  dataFeed: "data/form.php"
 });
 myform.bind(mygrid);
 
 @template:	api_config
-@defined:	DataLoader	
+@defined:	DataLoader
 @relatedapi:
 	api/basebind_bind.md
-    api/atomrender_sync.md
+	api/atomrender_sync.md
 @related: 
 	desktop/binding_details.md
-    desktop/data_loading.md
+	desktop/data_loading.md
 @descr:
 
 ###Using during binding 
@@ -55,14 +55,14 @@ In the code below, the [suggest](desktop/suggest.md) component linked to an inpu
 
 ~~~js
 webix.ui({
-	view: "suggest",
-	keyPressTimeout: "1000",
-	input: $$("text_search"),
-	body: {
-   		dataFeed: function (text) {
-        	this.clearAll();
-        	this.load("data/search/" + text);
-    	}
-	}
+  view: "suggest",
+  keyPressTimeout: "1000",
+  input: $$("text_search"),
+  body: {
+    dataFeed: function (text) {
+      this.clearAll();
+      this.load("data/search/" + text);
+    }
+  }
 });
 ~~~
