@@ -10,7 +10,7 @@ webix.ui({
   view: "datatable",
   on: {
      onSelectChange: function () {
-       var text = "Selected: " + grid.getSelection(true).join();
+       var text = "Selected: " + grid.getSelectedId(true).join();
        document.getElementById('testB').innerHTML = text;
      }
   }

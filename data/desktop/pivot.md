@@ -101,15 +101,15 @@ The initialization of Pivot doesn't differ from that of other [Webix components]
 
 ~~~js
 webix.ui({
-  view:"pivot",
-    container:"testA", 
-  id:"pivot",
-    max:true,
+  view: "pivot",
+  container: "testA",
+  id: "pivot",
+  max: true,
   structure: { 
     rows: ["form", "name"],
     columns: ["year"],
-    values: [{ name:"gdp", operation:"sum"}, { name:"oil", operation:"sum"}],
-    filters:[]
+    values: [{ name: "gdp", operation: "sum"}, { name: "oil", operation: "sum"}],
+    filters: []
   }
 });
 ~~~
@@ -143,8 +143,8 @@ Inline Data (JSON)
 }}
 ~~~js
 var pivot_dataset = [
- {"name": "China", "year": 2005, "form": "Republic", "gdp": 181.357, "oil": 1.545},
- {"name": "China", "year": 2006, "form": "Republic", "gdp": 212.507, "oil": 1.732},
+  {"name": "China", "year": 2005, "form": "Republic", "gdp": 181.357, "oil": 1.545 },
+  {"name": "China", "year": 2006, "form": "Republic", "gdp": 212.507, "oil": 1.732 },
  ...
 ]
 ~~~
@@ -153,9 +153,9 @@ To load inline data during component init, make use of api/link/dataloader_data_
 
 ~~~js
 webix.ui({
-  view:"pivot",
-    id:"pivot",
-  data:pivot_dataset
+  view: "pivot",
+  id: "pivot",
+  data: pivot_dataset
 });
 ~~~
 
@@ -173,8 +173,8 @@ Either you get data from an external file or by a serverside script, you should 
 If you load the data during component init, specify the path to this file/script as value of api/link/dataloader_url_config.md
 
 ~~~js
-view:"pivot",
-url:"../load.php" // or "../data.json"
+view: "pivot",
+url: "../load.php" // or "../data.json"
 ~~~
 
 
@@ -197,12 +197,12 @@ Configuring Pivot
 Operations are set within [Pivot structure object](#struct) in **values** array. **Name** refers to data item property:
 
 ~~~js
-view:"pivot",
-structure:{
-  values:[
-      { name:"gdp", operation:"sum"}, //gdp values will be summed
-        { name:"oil", operation:"max"} //max oil value will be shown
-    ]
+view: "pivot",
+structure: {
+  values: [
+    { name: "gdp", operation: "sum" }, //gdp values will be summed
+    { name: "oil", operation: "max" } //max oil value will be shown
+  ]
 }
 ~~~
 
@@ -217,14 +217,14 @@ If needed, you can **add your own operation**: {#operation}
 
 ~~~js
 pivot.operations.abssum = function(data) {
-    //data - array of values which need to be processed
-    var sum = 0;
-    for (var i = 0; i < data.length; i++) {
-       var num = window.parseFloat(data[i], 10);
-       if (!window.isNaN(num))
-          sum += Math.abs(num);
-       }
-    return sum;
+  // data - array of values which need to be processed
+  var sum = 0;
+  for (var i = 0; i < data.length; i++) {
+    var num = window.parseFloat(data[i], 10);
+    if (!window.isNaN(num))
+      sum += Math.abs(num);
+  }
+  return sum;
 };
 ~~~
 
@@ -242,11 +242,11 @@ Filters are set within [Pivot structure object](#struct) in **filters** array. *
 
 ~~~js
 view:"pivot",
-structure:{
-  values:[
-    {name:"name",type:"select"},
-        {name:"continent", type:"text"}
-    ]
+structure: {
+  values: [
+    { name: "name", type:"select" },
+    { name: "continent", type: "text" }
+  ]
 }
 ~~~
 
@@ -268,8 +268,8 @@ In this case, you can use **fieldMap** property to set beautiful names for colum
 
 ~~~js
 webix.ui({
-  view:"pivot",
-  fieldMap:{ "a1" : "GDP", "a2" : "Grow ratio" },
+  view: "pivot",
+  fieldMap: { "a1" : "GDP", "a2" : "Grow ratio" },
   ...
 });
 ~~~
@@ -321,10 +321,10 @@ Format of a **config** object is the same as "structure" parameter of the constr
 
 ~~~js
 var config = {
-    rows: ["form", "name"],
-    columns: ["year"],
-    values: [{ name:"gdp", operation:"sum"}, { name:"oil", operation:"sum"}],
-    filters:[]
+  rows: ["form", "name"],
+  columns: ["year"],
+  values: [{ name: "gdp", operation: "sum"}, { name: "oil", operation: "sum"}],
+  filters:[]
 }
 ~~~
 
@@ -351,10 +351,11 @@ This allows you use any of datatable [events](api/refs/ui.datatable_events.md) o
 
 ~~~js
 //attach event to selection
-datatable.attachEvent("onAfterSelect", function(id){ 
-    webix.message("selected row: "+id); 
+datatable.attachEvent("onAfterSelect", function (id) {
+  webix.message("selected row: "+id);
+});  
 });
 
 //or get the ID of the currently selected item.
-var sel = datatable.getSelection();
+var sel = datatable.getSelectedId();
 ~~~
