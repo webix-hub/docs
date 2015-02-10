@@ -40,84 +40,32 @@ tree = new webix.ui({
 	17_datatree/04_api/04_multi_select.html
 }}
 
+
 Related methods
 --------------------
-<table class='list'>
-	<caption class="caption">
-		<strong>Table 1 </strong>
-		Selection methods
-	</caption>
-	<thead>
-	<tr>
-		<th>
-			Method
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	</thead>
-	<tbody>
-    <tr>
-		<td>api/link/ui.tree_getselectedid.md</td>
-		<td>returns the selected cells</td>
-	</tr>
-    <tr>
-    	<td>api/link/ui.tree_moveselection.md</td>
-        <td>moves selection in the specified direction</td>
-    </tr>
-	<tr>
-		<td>api/link/ui.tree_select.md</td>
-		<td>selects the specified item</td>
-	</tr>
-    <tr>
-    	<td>api/link/ui.tree_selectall.md</td>
-        <td>selects all items</td>
-    </tr>
-    <tr>
-		<td>api/link/ui.tree_isselected.md</td>
-		<td>checks whether the specified item is selected or not</td>
-	</tr>
-	<tr>
-		<td>api/link/ui.tree_unselect.md</td>
-		<td>cancels selection of the specified item</td>
-	</tr>
-    <tr>
-    	<td>api/link/ui.tree_unselectall.md</td>
-        <td>removes selection from all items</td>
-    </tr>
-	</tbody>
-</table>
+
+{{apitable
+
+- api/link/ui.tree_getselectedid.md		method		returns the selected cells
+- api/link/ui.tree_getselectedid.md		method		returns the selected cells
+- api/link/ui.tree_moveselection.md		method		moves selection in the specified direction 	
+- api/link/ui.tree_select.md			method		selects the specified item 
+- api/link/ui.tree_selectall.md			method		selects all items 	
+- api/link/ui.tree_isselected.md		method		checks whether the specified item is selected or not 	
+- api/link/ui.tree_unselect.md			method		cancels selection of the specified item 
+- api/link/ui.tree_unselectall.md		method		removes selection from all items
+
+}}
+
 
 Related events
 -------------------
-<table class="list">
-	<caption class="caption">
-		<strong>Table 3</strong>`
-		Selection events
-	</caption>
-	<thead>
-	<tr>
-		<th>
-			Event
-		</th>
-		<th>
-			Description
-		</th>
-	</tr>
-	</thead>
-	<tbody>
-	<tr>
-		<td>api/link/ui.tree_onafterselect_event.md</td>
-		<td>fired after a cell is selected</td>
-	</tr>
-	<tr>
-		<td>api/link/ui.tree_onbeforeselect_event.md</td>
-		<td>fired before a cell is selected</td>
-	</tr>
-	<tr>
-		<td>api/link/ui.tree_onselectchange_event.md</td>
-		<td>fired when selection is changed in DataTable </td>
-	</tr>
-	</tbody>
-</table>
+
+
+{{apitable
+
+- api/link/ui.tree_onafterselect_event.md 		event 		fired after a cell is selected
+- api/link/ui.tree_onbeforeselect_event.md		event		fired before a cell is selected
+- api/link/ui.tree_onselectchange_event.md		event		fired when selection is changed in DataTable 
+
+}}
