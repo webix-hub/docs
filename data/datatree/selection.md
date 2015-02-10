@@ -4,16 +4,16 @@ Tree provides an ability to select leaves and branches within it.
 
 Single-item selection
 ---------------------------
-By default, selection is disabled in Tree. To activate it you should set parameter api/link/ui.treetable_select_config.md to *true*.
+By default, selection is disabled in Tree. To activate it you should set the api/link/ui.treetable_select_config.md parameter to *true*.
 
 {{snippet
 Enabling selection in Tree
 }}
 ~~~js
 tree = new webix.ui({
-	view:"tree",
-    ...
-    select:true
+  view: "tree",
+  ...
+  select: true
 })
 ~~~
 
@@ -30,9 +30,9 @@ Enabling multi-selection in Tree
 }}
 ~~~js
 tree = new webix.ui({
-	view:"tree",
-    ...
-    select:'multiselect'
+  view: "tree",
+  ...
+  select: "multiselect"
 })
 ~~~
 

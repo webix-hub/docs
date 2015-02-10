@@ -19,7 +19,7 @@ Version 1.4
 - keyboard navigation for list component
 - correct sizing of layout with hidden pannels 
 - elementsConfig supported for nested collections
-- getSelection deprecated in favor of getSelectionId
+- getSelection deprecated in favor of getSelectedId
 - better styling for icon buttons
 - webix.onReady event
 - webix.ui.zindexBase property added

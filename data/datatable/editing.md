@@ -9,9 +9,9 @@ Making DataTable editable
 }}
 ~~~js
 dtable = new webix.ui({
-	view:"datatable",
-	...
-	editable:true
+  view: "datatable",
+  ...
+  editable:true
 });
 ~~~
 {{sample 15_datatable/04_editing/01_basic.html }}
@@ -41,8 +41,8 @@ To assign the needed editor type to a column, you should specify attribute **edi
 Specifying the editor for a column
 }}
 ~~~js
-columns:[
-	{ id:"title", header:"Film title", editor:"text"}
+columns: [
+  { id:"title", header:"Film title", editor:"text"}
 ]
 ~~~
 {{sample 15_datatable/04_editing/01_basic.html }}
@@ -59,13 +59,13 @@ To create a custom editor, you should set the following methods to it:
 - **render()** - renders the editor.
 
 webix.editors = {
-    "myeditor":{
-		focus:function(){...}
-        getValue:function(){...},
-        setValue:function(value){...},
-        render:function(){...}
-     }
-  };
+  "myeditor": {
+    focus: function () {...}
+    getValue: function () {...},
+    setValue: function (value) {...},
+    render: function () {...}
+  }
+};
 
 The functions are defines with the help of the following inner properties: 
 
@@ -82,11 +82,11 @@ Adding a new editor and setting it for the column
 }}
 ~~~js
 webix.ui({
-	view:"datatable",
-	columns:[
-	...
-		{ id:"title", header:"Film title", editor:"myeditor"}
-	]
+  view: "datatable",
+  columns: [
+    ...
+    { id: "title", header: "Film title", editor: "myeditor"}
+  ]
 });
 ~~~
 
@@ -104,10 +104,10 @@ Opening editors on a double click
 }}
 ~~~js
 webix.ui({
-    view:"datatable",
-    editable:true,
-    editaction:"dblclick"
-    ...
+  view: "datatable",
+  editable: true,
+  editaction: "dblclick"
+  ...
 });
 ~~~
 
@@ -126,10 +126,10 @@ Opening editors on the Enter key press
 }}
 ~~~js
 var mytable = new webix.ui({
-	view:"datatable",
-	...
-    editable:true,
-    editaction:"custom"
+  view: "datatable",
+  ...
+  editable: true,
+  editaction: "custom"
 });
 
 
@@ -152,16 +152,16 @@ Opening editors on cell selecting
 }}
 ~~~js
 var mytable = new webix.ui({
-	view:"datatable",
-	...
-    editable:true,
-    editaction:"custom",
-    select:"cell",
-	on:{
-		"onAfterSelect":function(data,prevent){
-			this.editCell(data.row, data.column);
-		}
-	}
+  view: "datatable",
+  ...
+  editable:true,
+  editaction: "custom",
+  select: "cell",
+  on:{
+    onAfterSelect: function (data,prevent) {
+      this.editCell(data.row, data.column);
+    }
+  }
 })
 ~~~
 
@@ -182,28 +182,28 @@ Opening editors in all cells of the row, column
 ~~~js
 //editing the entire row
 var table1 = new webix.ui({
-	view:"datatable",
-	...
-    editable:true,
-    editaction:"custom",
-	on:{
-		"onItemClick":function(id){
-			this.editRow(id);
-		}
-	}
+  view: "datatable",
+  ...
+  editable: true,
+  editaction: "custom",
+  on: {
+    onItemClick: function (id) {
+      this.editRow(id);
+    }
+  }
 });
 
 //editing the entire column
 var table2 = new webix.ui({
-	view:"datatable",
-	...
-    editable:true,
-    editaction:"custom",
-	on:{
-		"onItemClick":function(id){
-			this.editColumn(id);
-		}
-	}
+  view:"datatable",
+  ...
+  editable: true,
+  editaction: "custom",
+  on: {
+    onItemClick: function(id){
+      this.editColumn(id);
+    }
+  }
 })
 ~~~
 
@@ -252,4 +252,3 @@ By default, the Tab(Tab+Shift) key(s) allows navigating within editors defined i
 {{sample 15_datatable/04_editing/28_scroll.html }}
 
 {{sample 15_datatable/04_editing/03_multiple_editors.html }}
-

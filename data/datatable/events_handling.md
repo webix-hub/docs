@@ -1,6 +1,6 @@
 
-Events Handling with Datatable
-=============================
+Events Handling with DataTable
+==============================
 
 You can assign a custom behavior to different events of DataTable by using its event handling system.
 
@@ -22,12 +22,13 @@ You can attach several handlers to the same event and detach them using two resp
 A general way to attach/detach the event handler
 }}
 ~~~js
-//to attach event
-		var myEvent = $$("dataTableId").attachEvent("onItemClick", function (){
-			//event handler code
-		})
-//to detach event
-		$$("dataTableId").detachEvent(myEvent);
+// to attach event
+var myEvent = $$("dataTableId").attachEvent("onItemClick", function () {
+  // event handler code
+})
+
+// to detach event
+$$("dataTableId").detachEvent(myEvent);
 ~~~
 
 Parameter 'on'
@@ -39,9 +40,9 @@ Attaching the event handler through parameter 'on'
 }}
 ~~~js
 webix.ui({
-	 view:"dataTable", 
-         ...
-	 on:{"itemClick": function(){alert("item has just been clicked");}}
+  view: "dataTable",
+  ...
+  on: {"itemClick": function () {alert("item has just been clicked");}}
 ); 
 ~~~
 
@@ -55,9 +56,9 @@ To cancel some event you should return **false** within the appropriate event ha
 Cancelling the event handler
 }}
 ~~~js
-var myEvent = $$("dataTableId").attachEvent("onBeforeTabClick", function (){
-    ...// some event handler code
-    return false;
+var myEvent = $$("dataTableId").attachEvent("onBeforeTabClick", function () {
+  ... // some event handler code
+  return false;
 })
 ~~~
 
@@ -73,8 +74,8 @@ Btw, using the **id** of a sub-element you can access a data item associated wit
 Referring within the event handler
 }}
 ~~~js
-$$("myTable").attachEvent("onafterselect",function(id){
-    $$("top_label").setValue(this.getItem(id).name)
+$$("myTable").attachEvent("onafterselect",function (id) {
+  $$("top_label").setValue(this.getItem(id).name)
 })
 ~~~
 

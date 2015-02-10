@@ -7,15 +7,16 @@ setCursor
 
 @params:
 - cursor      id      the cursor position
-	
+
 
 @example:
 var data = new webix.DataCollection({ 
-		..//collection config
-	});
+  ...  // collection config
+});
 
-$$('list').attachEvent("onAfterSelect", function(id){  
-		data.setCursor(id); 
+$$('list').attachEvent("onAfterSelect", function (id) {
+  data.setCursor(id);
+});
 
 @relatedapi:
 	api/CollectionBind_getCursor.md
@@ -24,7 +25,7 @@ $$('list').attachEvent("onAfterSelect", function(id){
 @relatedsample:
 	80_docs/nonui.html
 @template:	api_method
-@defined:	CollectionBind	
+@defined:	CollectionBind
 @descr:
 
 
