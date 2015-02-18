@@ -64,7 +64,8 @@ To load data from a file, you can use the api/link/ui.tree_url_config.md propert
 ~~~js
 webix.ready(function(){
 	webix.ui({
-		view:"kanban", type:"space",
+		view:"kanban", 
+        type:"space",
 		cols:[
 			{ header:"Backlog",
 				body:{ view:"kanbanlist", status:"new" }},

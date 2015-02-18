@@ -3,21 +3,21 @@ ready
 
 
 @short: event handler called just after the page has been completely parsed.
-	
+
 
 @params:
 - code		function		event handler code
 
 
 @example:
-webix.ready(function (){
-	webix.ui({
-		container: "box",
-		view: "window",
-		...
-	});
-	...
-})
+webix.ready(function () {
+  webix.ui({
+    container: "box",
+    view: "window",
+    ...
+  });
+  ...
+});
 
 
 @relatedapi: api/dataloader_ready_config.md

@@ -16,6 +16,55 @@ allow saving text files to html format as well as correctly process script and s
 
 2 . Install Webix for your future app. There can be several ways:
 
+- Include 2 Webix files (**webix.js** and **webix.css**) directly from Webix CDN 
+
+~~~html
+<!DOCTYPE HTML>// specifies document type
+<html>
+    <head>
+    <link rel="stylesheet" href="http://cdn.webix.com/edge/webix.css" type="text/css"> 
+    <script src="http://cdn.webix.com/edge/webix.js" type="text/javascript"></script>  
+    </head>
+    <body>
+        <script type="text/javascript" charset="utf-8">
+ 
+... // here your app will "take shelter"
+        </script>
+    </body>
+</html>
+~~~
+
+If you need to get one of the older Webix versions, you shoud include the necessary number of version
+into the links to the code files:
+
+~~~html
+<link rel="stylesheet" href="http://cdn.webix.com/2.2/webix.css" type="text/css"> 
+<script src="http://cdn.webix.com/2.2/webix.js" type="text/javascript"></script> 
+~~~
+
+This variant is suitable only to the Webix version distributed under GPLv3.
+
+- Include Webix files via **Nuget** or **Bower** package managers by a single command. You don't need to download anything.
+
+{{snippet
+NuGet
+}}
+~~~js
+nuget install Webix
+
+//If you use Microsoft Visual Studio, execute this from Package Manager Console
+install-package Webix
+~~~
+
+{{snippet
+Bower
+}}
+~~~js
+bower install webix
+~~~
+
+This variant is also suitable only to the Webix version distributed under GPLv3.
+
 - Download and unzip the library to the necessary directory. Include **webix.js** and **webix.css** files into the document's head section.
 
 ~~~html
@@ -35,24 +84,7 @@ allow saving text files to html format as well as correctly process script and s
 </html>
 ~~~
 
-- OR, as an alternative to downloading, include Webix files via **Nuget** or **Bower** package managers by a single command. You don't need to download anything.
 
-{{snippet
-NuGet
-}}
-~~~js
-nuget install Webix
-
-//If you use Microsoft Visual Studio, execute this from Package Manager Console
-install-package Webix
-~~~
-
-{{snippet
-Bower
-}}
-~~~js
-bower install webix
-~~~
 
 ##Component Initializing
 

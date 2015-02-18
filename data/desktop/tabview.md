@@ -9,7 +9,7 @@ Tabview
 
 ##Overview
 
-Tabview is a **hybrid** component that is made of a [multiview](desktop/multiview.md) and [tabbar](desktop/controls.md#tabbar). 
+Tabview is a **hybrid** component that is made of a [multiview](desktop/multiview.md) and [tabbar](desktop/controls.md#tabbar).
 
 Tabview allows for quick initialization of a multiview with a built-in ability to [switch between the views](desktop/tabbar_switching.md).
 
@@ -29,21 +29,23 @@ Tabview
 }}
 ~~~js
 webix.ui({
-	view:"tabview",
-	cells:[
-		{
-		 header:"List",
-		 body:{
-			id:"listView",
-			view:"list", ...
-		}},
-        {
-		 header:"Form",
-		 body:{
-			id:"formView",
-			view:"form", ...
-		}}
-	]
+  view: "tabview",
+  cells: [
+    {
+      header: "List",
+      body: {
+        id: "listView",
+        view: "list", ...
+      }
+    },
+    {
+      header: "Form",
+      body: {
+        id: "formView",
+        view: "form", ...
+      }
+    }
+  ]
 });
 ~~~
 {{sample 02_toolbar/03_tabview.html }}
@@ -60,11 +62,11 @@ Note that switching between views is enabled automatically via a [tabbar](deskto
 
 ##Working with Tabview
 
-Hybrid nature of a tabview allows configuring each of its parts separately:
+The hybrid nature of a tabview allows configuring each of its parts separately:
 
-- though the same-name object properties in the initial configuration:
+- through the same-name object properties in the initial configuration:
 
-These  configuration objects may contain native properties of [multiview](desktop/multiview.md) and [tabbar](desktop/controls.md#tabbar)
+These configuration objects may contain native properties of [multiview](desktop/multiview.md) and [tabbar](desktop/controls.md#tabbar)
 that need to be redefined. If the configurations are omitted, default values will be used. 
 
 ~~~js
@@ -111,12 +113,12 @@ The **animate** property may take an object with [advanced animation settings](d
 Icons for the tabbar tabs are set via additional HTML in the tab **header**:
 
 ~~~js
-view:"tabview",
-cells:[
-	{ header:"<span class='webix_icon fa-film'></span>List",
-	  body:{}
-    }
- ]   
+view: "tabview",
+cells: [
+  { header: "<span class='webix_icon fa-film'></span>List",
+    body:{}
+  }
+]
 ~~~
 
 {{sample 20_multiview/05_tabbar_with_icons.html}}
@@ -132,22 +134,22 @@ Closing functionality is a [tabbar](desktop/controls.md#tabbar) feature.
 To make all tabs closable, **close** property should be set to *true* in the **tabbar** configuration: 
 
 ~~~js
-view:"tabview",
-tabbar:{
-	close:true
+view: "tabview",
+tabbar: {
+  close:true
 }
 ~~~
 
 To make a separate tab closable, use the **close** proerty in its configuration: 
 
 ~~~js
-view:"tabview",
-cells:[
-	{ header:"List",
-      close:true,
-	  body:{...}
-    }
- ] 
+view: "tabview",
+cells: [
+  { header:"List",
+    close:true,
+    body:{...}
+  }
+]
 ~~~
 
 {{sample 20_multiview/11_close_button.html}}
@@ -161,25 +163,25 @@ Tabbar default feature. If the tabs are wider than the available space, some of 
 Everything is done fully automatically, though customization options for tab and popup width, icons, etc. are available through the **tabbar** configuration: 
 
 ~~~js
-view:"tabview",
-tabbar:{
-	popupWidth:300, 
-    tabMinWidth:120
+view: "tabview",
+tabbar: {
+  popupWidth: 300,
+  tabMinWidth: 120
 }
 ~~~
 
-Study the topic in detail in the dedicated [documentation article](desktop/responsive_tabbar.md). 
+More in detail in the dedicated [documentation article](desktop/responsive_tabbar.md).
 
 ###Adjusting tab dimensions
 
 The width of each tab can be set separately:
 
 ~~~js
-view:"tabview",
+view: "tabview",
 cells:[
-	{ header:"List", width:150, body:{...} },
-    { header:"Form", width:250, body:{...} },
- ] 
+  { header:"List", width:150, body:{...} },
+  { header:"Form", width:250, body:{...} },
+]
 ~~~
 
 If tabs are of different width and height, they usually take the size of the smallest tab once the user switches to it. 
@@ -187,9 +189,9 @@ If tabs are of different width and height, they usually take the size of the sma
 To avoid this behavior, you should use the **fitBiggest** property in the **multiview** configuration object: 
 
 ~~~js
-view:"tabview", 
-multiview:{ 
-	fitBiggest:true 
+view: "tabview",
+multiview: {
+  fitBiggest:true
 }
 ~~~
 
@@ -206,5 +208,3 @@ The functionality is described in detail in the desktop/tabs_options.md article.
 - desktop/show_switching.md
 - desktop/tabbar_switching.md
 - desktop/tabs_options.md
-
-

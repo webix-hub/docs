@@ -10,13 +10,13 @@ onSelectChange
 
 @example: 
 webix.ui({
-	view:"datatable",
-	on:{
-		onSelectChange:function(){
-			var text = "Selected: "+grid.getSelection(true).join();
-			document.getElementById('testB').innerHTML = text;
-		}
-	}
+  view: "datatable",
+  on: {
+    onSelectChange:function () {
+      var text = "Selected: " + grid.getSelectedId(true).join();
+      document.getElementById('testB').innerHTML = text;
+    }
+  }
 });
 @template:	api_event
 @defined:	SelectionModel
@@ -24,7 +24,5 @@ webix.ui({
 	desktop/selection.md
 @relatedsample:
 	15_datatable/05_selection/08_block_selection.html
-    06_dataview/01_initialization/01_init.html
+	06_dataview/01_initialization/01_init.html
 @descr:
-
-

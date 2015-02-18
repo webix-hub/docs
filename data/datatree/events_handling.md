@@ -1,5 +1,5 @@
-Events handling
-=========================================
+Event handling with Tree
+=========================
 Tree supports various events that can be used to provide a custom behaviour for your tree.
 
 There are 2 ways you can add a handler to the event:
@@ -20,12 +20,13 @@ You can attach several handlers to the same event and detach them using two resp
 A general way to attach/detach the event handler
 }}
 ~~~js
-//to attach event
-	var myEvent = $$("treeId").attachEvent("onItemClick", function (){
-		//event handler code
-	})
+// to attach event
+var myEvent = $$("treeId").attachEvent("onItemClick", function () {
+// event handler code
+})
+
 //to detach event
-	$$("treeId").detachEvent(myEvent);
+$$("treeId").detachEvent(myEvent);
 ~~~
 
 Parameter 'on'
@@ -38,9 +39,9 @@ Attaching the event handler through parameter 'on'
 }}
 ~~~js
 webix.ui({
-	 view:"tree", 
-         ...
-	 on:{"itemClick": function(){alert("item has just been clicked");}}
+  view:"tree",
+  ...
+  on: {"itemClick": function () {alert("item has just been clicked");}}
 ); 
 ~~~
 
@@ -54,9 +55,9 @@ To cancel some event you should return **false** within the appropriate event ha
 Cancelling the event handler
 }}
 ~~~js
-var myEvent = $$("treeId").attachEvent("onBeforeTabClick", function (){
-    ...// some event handler code
-    return false;
+var myEvent = $$("treeId").attachEvent("onBeforeTabClick", function () {
+  ... // some event handler code
+  return false;
 })
 ~~~
 
@@ -73,7 +74,7 @@ Referring within the event handler
 }}
 ~~~js
 $$("treeId").attachEvent("onAfterSelect",function(id){
-    parentId = this.getItem(id).parent;
+  parentId = this.getItem(id).parent;
 })
 ~~~
 
