@@ -151,7 +151,7 @@ grida.loadNext(10, base);
 
 ##Dynamic Loading Events
 
-You can capture the moment just before a dynamic loading request is sent to server with the help of a api/dataloader_ondatarequest_event.md event. 
+You can capture the moment just before a dynamic loading request is sent to server with the help of an api/dataloader_ondatarequest_event.md event. 
 
 It can be used to cancel the default behavior and issue a custom data request: 
 
