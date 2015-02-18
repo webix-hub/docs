@@ -6,16 +6,19 @@ onBeforeSync
 	
 
 @params:
-- id		id			id of saved record
+- obj		object		object with item ID and operation status
 - text		string		full text of server side response
 - data		object		ajax response object
 - loader	object		ajax loader object
 
 @example: 
 	
-some.attachEvent("onBeforeSync", function(id, text, data, loader){
+dp.attachEvent("onBeforeSync", function(id, text, data, loader){
     //... some code here ... 
 });
+
+@relatedapi:
+	api/dataprocessor_onaftersync_event.md
 
 @template:	api_event
 

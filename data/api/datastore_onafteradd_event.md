@@ -5,11 +5,11 @@ onAfterAdd
 	fires after adding item to datastore
 
 @params:
-- obj		object		data for a new item
+- id		number, string		clientside ID of the new data item
 - index		number		index, at which new item was added
 
 @example:
-$$('some').attachEvent("onAfterAdd", function(obj, index){
+$$('some').attachEvent("onAfterAdd", function(id, index){
 	webix.message("New record was added!");
 });
 
@@ -27,6 +27,4 @@ $$('some').attachEvent("onAfterAdd", function(obj, index){
 	
 @descr:
 
-Event doesn't get called for rows which were added during loading(parsing) from external file(object)
-
-To get id of newly added record you can use *obj.id*
+Event doesn't fire for rows which were added during loading(parsing) from external file or object.

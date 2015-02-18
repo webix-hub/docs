@@ -6,13 +6,11 @@ onBeforeDataSend
 	
 
 @params:
-- obj		object		data object
-- id		string, number		ID of a data item
-- operation		string, number		operation name ("update, "insert", "delete")
+- details	object		object with data details (see below)
 
 @example: 
 	
-some.attachEvent("onBeforeDataSend", function(obj, id, operation){
+dp.attachEvent("onBeforeDataSend", function(details){
     //... some code here ... 
 });
 
@@ -23,5 +21,26 @@ some.attachEvent("onBeforeDataSend", function(obj, id, operation){
     desktop/dataprocessor.md
 	
 @descr:
+
+The event parameter, **details**, consists of: 
+
+- **data** (*object*)	- data object;
+- **id** (*string, number*) - ID of a data item on client side;
+- **operation**	(*string*) - operation name ("update, "insert", "delete"););
+
+and looks like: 
+
+~~~js
+{
+	id:5,
+    operation:"update",
+    data:{
+    	id:5, 
+        title:"The Godfather",
+        rating:"9.2"
+    }
+
+}
+~~~
 
 

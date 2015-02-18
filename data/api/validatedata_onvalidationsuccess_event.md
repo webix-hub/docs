@@ -9,7 +9,7 @@ onValidationSuccess
 
 @example: 
 	
-some.attachEvent("onValidationSuccess", function(){
+dp.attachEvent("onValidationSuccess", function(){
     //... some code here ... 
 });
 

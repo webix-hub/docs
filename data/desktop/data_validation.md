@@ -123,7 +123,7 @@ on:{
 webix.ui({
 	view:"form",
 	on:{
-		onValidationError:function(id, value){
+		onValidationError:function(key, obj){
 			text = "Login can't be empty";
 			webix.message({ type:"error", text:text });
 	}
@@ -311,12 +311,13 @@ Passwords must be equal
 }}
 ~~~js
 rules:{
-	$obj:function(data) //data = obj
+	$obj:function(data){ //data = obj
 		if (data.pass1 != data.pass2){
 			webix.message("Passwords are not the same"); 
 			return false;
 		}
 	return true;
+    }
 }
 ~~~
 
@@ -417,10 +418,10 @@ webix.ui({
 			var check = ( editor.type.getValue() != "" );
 			if (!ignore && !check){
 				webix.message(editor.column+" must not be empty");
-			return false;
-				}
+				return false;
 			}
 		}
+	}
 });
 ~~~
 
@@ -459,14 +460,13 @@ Input types conside with a **type** property of the view **text** while other in
         <td class="col1 leftalign"> 
 ~~~js
 { view:"text", type:"text", attributes:{
-			maxlength:25,
-			required:"true",
-			title:"First name is required!"
-	}, value:'', label:"First Name"},
+	maxlength:25,
+	required:"true",
+	title:"First name is required!"
+}, value:'', label:"First Name"}
 ~~~
         </td>
     </tr>
-
 </table>
 
 Here validation is defined by **required** attribute.

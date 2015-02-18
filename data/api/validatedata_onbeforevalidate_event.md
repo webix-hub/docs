@@ -5,7 +5,7 @@ onBeforeValidate
 @short: called before runing validation
 	
 @example:
-$$("myform").attachEvent("onBeforeValidate", function(){...});
+dp.attachEvent("onBeforeValidate", function(){...});
 @template:	api_event
 @relatedapi:
 	api/link/ui.form_onaftervalidation_event.md

@@ -6,21 +6,23 @@ onValidationError
 	
 
 @params:
+- key	string	data key that is being validated
+- obj	object	data object 
 
 @example: 
 	
 view:"form",    
 on:{
-	onValidationError:function(id, value){
-	var text;
+	onValidationError:function(key, obj){
+		var text;
 
-	if (id == "login")
-		text = "Login can't be empty";
-	if (id == "email")
-		text = "Invalid Email";
+		if (key == "login")
+			text = "Login can't be empty";
+		if (key == "email")
+			text = "Invalid Email";
 
-	webix.message({ type:"error", text:text });
-			}
+		webix.message({ type:"error", text:text });
+	}
 }
 
 @template:	api_event

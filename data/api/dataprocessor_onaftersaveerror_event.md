@@ -13,7 +13,7 @@ onAfterSaveError
 
 @example: 
 	
-some.attachEvent("onBeforeSaveError", function(id){
+dp.attachEvent("onBeforeSaveError", function(id){
     //...
 });
 

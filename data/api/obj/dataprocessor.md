@@ -1,3 +1,3 @@
-{{memo handles clien-server data saving operations}}
+{{memo handles client-server data saving operations}}
 
 

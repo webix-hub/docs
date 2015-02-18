@@ -4,22 +4,15 @@ onAfterValidation
 
 @short: fires after data has been validated
 
+@params:
+
+- result	boolean		result of validation (true or false)
+- value		obj		object with data that has been validated
 
 @example:
-on:{
-	onAfterValidation:function(result, value){
-			if (!result){
-				var text = [];
-				for (var key in value){
-					if (key == "login")
-						text.push("Login can't be empty");
-					if (key == "email")
-						text.push("Invalid Email");
-				}
-				webix.message({ type:"error", text:text.join("<br>") });
-			}
-		}
-	}
+dp.attachEvent("onAfterValidation", function(result, value){
+	//code
+});
 
 @template:	api_event
 @relatedsample:

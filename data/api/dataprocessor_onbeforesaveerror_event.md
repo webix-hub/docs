@@ -16,7 +16,7 @@ onBeforeSaveError
 - status    bool    return true to ignore the error and mark item as saved
 @example: 
 	
-some.attachEvent("onBeforeSaveError", function(id){
+dp.attachEvent("onBeforeSaveError", function(id){
     return true;
 });
 
