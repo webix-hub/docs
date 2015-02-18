@@ -26,7 +26,7 @@ By default, Webix expects JSON data. The server can also return XML - see [Loadi
 Dynamic loading can be implemented in three different ways:
 
 - by setting the `webix_kids` property to `true` on nodes that are expected to have children
-- by calling the `[loadBranch()](api/treedataloader_loadbranch.md)` method
+- by calling the [loadBranch()](api/treedataloader_loadbranch.md) method
 - by setting a custom handler for the `onDataRequest` event
 
 ##Using the webix_kids flag

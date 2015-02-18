@@ -163,8 +163,6 @@ Clean template looks very much like default one, but features no borders.
 { view:"template", template:"Text", type:"clean"}
 ~~~
 
-{{sample 80_docs/header_templates.html}}
-
 ###Header
 
 Header template is used to set headers for layout rows/columns. Looks as a blue bar above the main contents. 
@@ -179,8 +177,6 @@ webix.ui({
 	]
 });
 ~~~ 
-
-{{sample 80_docs/header_templates.html}}
 
 {{note
 Note that headers of [accordionitems](desktop/accordionitem.md) are set in a different way. 
@@ -198,6 +194,4 @@ resort to [borderless](desktop/borders.md) layout design.
 {view:"template", template:"Header template", type:"section"}
 ~~~
 
-{{sample 80_docs/header_templates.html}}
-
-
+{{sample 80_docs/template_types.html}}

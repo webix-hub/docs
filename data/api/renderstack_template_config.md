@@ -18,7 +18,7 @@ template
 @relatedsample: 
 	06_dataview/02_templates/01_jshtml.html
     06_dataview/02_templates/02_js.html
-    80_docs/header_templates.html
+    80_docs/template_types.html
 	
 @defined:	AtomRender	
 @descr:
