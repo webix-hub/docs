@@ -12,14 +12,14 @@ Webix library supports integration of popular text editors in the application wi
 - [CKEditor](#ckeditor).
 
 
-To embed any of the editors into your web page, you should link not only to Webix, but also to a **special javascript file** from the [extensions folder]((https://github.com/webix-hub/components)). This file will connect
+To embed any of the editors into your web page, you should link not only to Webix, but also to a **special JavaScript file** from the [components folder](https://github.com/webix-hub/components). This file will connect
 you to the chosen editor as well load extra required files for it. 
 
-Note that in documentation samples files are linked in another way, but in your apps you should follow the patterns described below. 
+Note that in documentation samples files are linked in another way, but in your apps you should follow the patterns described below.
 
 ##Mercury Text Editor {#mercury}
 
-Mercury is a fully featured HTML5 editor with **full HTML, simple, markdown, snippet** and **image** areas to get the utmost from in-browser content editing. 
+Mercury is a fully featured HTML5 editor with **full HTML, simple, markdown, snippet** and **image** areas to get the utmost from in-browser content editing.
 
 <a href="http://jejacks0n.github.com/mercury/">Learn more about Mercury text editor</a>
 
@@ -43,16 +43,15 @@ JS code
 webix.codebase = "./";
 
 webix.ui({
-	id:"editor", 
-    view:"mercury-editor",
-    value:"..." //text and HTML markup
+  id: "editor",
+  view: "mercury-editor",
+  value: "..." //text and HTML markup
 });
 ~~~
 
 ##NicEdit Text Editor {#nicedit}
 
-NicEdit is a simple and fast **WYSIWYG** editor for websites. Being extremely lightweight it makes any element/html container editable or converts standard textareas
-to rich text editing fields.
+NicEdit is a simple and fast **WYSIWYG** editor for websites. Being extremely lightweight it makes any element/HTML container editable or converts standard textareas to rich text editing fields.
 
 <a href="http://nicedit.com/">Learn more about NiceEdit text editor</a>
 
@@ -77,9 +76,9 @@ JS code
 webix.codebase = "./";
 
 webix.ui({
-	id:"editor", 
-    view:"nic-editor",
-    value:"..." //text and HTML markup
+  id: "editor",
+  view: "nic-editor",
+  value: "..." //text and HTML markup
 })
 </script>
 ~~~
@@ -112,9 +111,9 @@ JS code
 webix.codebase = "./";
 
 webix.ui({
-	id:"editor", 
-    view:"tinymce-editor",
-    value:"..." //text and HTML markup
+  id: "editor",
+  view: "tinymce-editor",
+  value: "..." //text and HTML markup
 })
 </script>
 ~~~
@@ -147,10 +146,10 @@ JS code
 webix.codebase = "./";
 
 webix.ui({
-	id:"editor", 
-	view:"codemirror-editor",
-    mode:"javascript",
-    value:"..." //text and HTML markup
+  id: "editor",
+  view: "codemirror-editor",
+  mode: "javascript",
+  value: "..." //text and HTML markup
 });
 ~~~
 
@@ -183,9 +182,9 @@ JS code
 webix.codebase = "./";
 
 webix.ui({
-	id:"editor", 
-	view:"ckeditor",
-    value:"..." //text and HTML markup
+  id: "editor",
+  view: "ckeditor",
+  value: "..." //text and HTML markup
 });
 ~~~
 
@@ -194,7 +193,7 @@ webix.ui({
 - **setValue(**value**);** - sets text for the editor (equal to **value** property, but allows doing it dynamically). The function is called from the component referring to its ID. 
 
 ~~~js
-$$("editor"). setValue("<p>some text or code snippet</p>");
+$$("editor").setValue("<p>some text or code snippet</p>");
 ~~~
 
 - **getValue();** - gets the current editor text with current formatting.  Formatted text pieces are wrapped into corresponding HTML tags;
