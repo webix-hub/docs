@@ -43,9 +43,9 @@ JS code
 webix.codebase = "./";
 
 webix.ui({
-  id: "editor",
-  view: "mercury-editor",
-  value: "..." //text and HTML markup
+	id: "editor",
+ 	view: "mercury-editor",
+	value: "..." //text and HTML markup
 });
 ~~~
 
@@ -76,10 +76,10 @@ JS code
 webix.codebase = "./";
 
 webix.ui({
-  id: "editor",
-  view: "nic-editor",
-  value: "..." //text and HTML markup
-})
+	id: "editor",
+	view: "nic-editor",
+	value: "..." //text and HTML markup
+});
 </script>
 ~~~
 
@@ -111,10 +111,10 @@ JS code
 webix.codebase = "./";
 
 webix.ui({
-  id: "editor",
-  view: "tinymce-editor",
-  value: "..." //text and HTML markup
-})
+	id: "editor",
+	view: "tinymce-editor",
+	value: "..." //text and HTML markup
+});
 </script>
 ~~~
 
@@ -146,10 +146,10 @@ JS code
 webix.codebase = "./";
 
 webix.ui({
-  id: "editor",
-  view: "codemirror-editor",
-  mode: "javascript",
-  value: "..." //text and HTML markup
+	id: "editor",
+	view: "codemirror-editor",
+	mode: "javascript",
+	value: "..." //text and HTML markup
 });
 ~~~
 
@@ -182,9 +182,9 @@ JS code
 webix.codebase = "./";
 
 webix.ui({
-  id: "editor",
-  view: "ckeditor",
-  value: "..." //text and HTML markup
+	id: "editor",
+	view: "ckeditor",
+	value: "..." //text and HTML markup
 });
 ~~~
 

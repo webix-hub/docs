@@ -28,11 +28,11 @@ To initialize the component you should use the following code:
 ~~~js
 //webix.ready() function ensures that the code will be executed when the page is loaded
 webix.ready(function(){
-    //the method allows to adjust a main view to screen size
-    webix.ui.fullScreen();
-    //object constructor
-    webix.ui({
-        view: "scheduler",
+	//the method allows to adjust a main view to screen size
+	webix.ui.fullScreen();
+	//object constructor
+	webix.ui({
+	view: "scheduler",
 		id: "scheduler"
     });
     //the method load() lets you populate the event calendar with data

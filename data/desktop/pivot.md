@@ -101,16 +101,19 @@ The initialization of Pivot doesn't differ from that of other [Webix components]
 
 ~~~js
 webix.ui({
-  view: "pivot",
-  container: "testA",
-  id: "pivot",
-  max: true,
-  structure: { 
-    rows: ["form", "name"],
-    columns: ["year"],
-    values: [{ name: "gdp", operation: "sum"}, { name: "oil", operation: "sum"}],
-    filters: []
-  }
+	view: "pivot",
+	container: "testA",
+	id: "pivot",
+	max: true,
+	structure: { 
+		rows: ["form", "name"],
+		columns: ["year"],
+		values: [
+        	{ name: "gdp", operation: "sum"},
+            { name: "oil", operation: "sum"}
+        ],
+    	filters: []
+  	}
 });
 ~~~
 
@@ -143,9 +146,9 @@ Inline Data (JSON)
 }}
 ~~~js
 var pivot_dataset = [
-  {"name": "China", "year": 2005, "form": "Republic", "gdp": 181.357, "oil": 1.545 },
-  {"name": "China", "year": 2006, "form": "Republic", "gdp": 212.507, "oil": 1.732 },
- ...
+	{"name": "China", "year": 2005, "form": "Republic", "gdp": 181.357, "oil": 1.545 },
+	{"name": "China", "year": 2006, "form": "Republic", "gdp": 212.507, "oil": 1.732 },
+	//...
 ]
 ~~~
 
@@ -153,9 +156,9 @@ To load inline data during component init, make use of api/link/dataloader_data_
 
 ~~~js
 webix.ui({
-  view: "pivot",
-  id: "pivot",
-  data: pivot_dataset
+	view: "pivot",
+	id: "pivot",
+	data: pivot_dataset
 });
 ~~~
 
@@ -173,8 +176,10 @@ Either you get data from an external file or by a serverside script, you should 
 If you load the data during component init, specify the path to this file/script as value of api/link/dataloader_url_config.md
 
 ~~~js
-view: "pivot",
-url: "../load.php" // or "../data.json"
+{
+	view: "pivot",
+	url: "../load.php" // or "../data.json"
+}
 ~~~
 
 
@@ -199,10 +204,10 @@ Operations are set within [Pivot structure object](#struct) in **values** array.
 ~~~js
 view: "pivot",
 structure: {
-  values: [
-    { name: "gdp", operation: "sum" }, //gdp values will be summed
-    { name: "oil", operation: "max" } //max oil value will be shown
-  ]
+	values: [
+		{ name: "gdp", operation: "sum" }, //gdp values will be summed
+		{ name: "oil", operation: "max" } //max oil value will be shown
+	]
 }
 ~~~
 
@@ -217,14 +222,14 @@ If needed, you can **add your own operation**: {#operation}
 
 ~~~js
 pivot.operations.abssum = function(data) {
-  // data - array of values which need to be processed
-  var sum = 0;
-  for (var i = 0; i < data.length; i++) {
-    var num = window.parseFloat(data[i], 10);
-    if (!window.isNaN(num))
-      sum += Math.abs(num);
-  }
-  return sum;
+	// data - array of values which need to be processed
+	var sum = 0;
+	for (var i = 0; i < data.length; i++) {
+		var num = window.parseFloat(data[i], 10);
+		if (!window.isNaN(num))
+		sum += Math.abs(num);
+	}
+	return sum;
 };
 ~~~
 
@@ -243,10 +248,10 @@ Filters are set within [Pivot structure object](#struct) in **filters** array. *
 ~~~js
 view:"pivot",
 structure: {
-  values: [
-    { name: "name", type:"select" },
-    { name: "continent", type: "text" }
-  ]
+	values: [
+		{ name: "name", type:"select" },
+		{ name: "continent", type: "text" }
+	]
 }
 ~~~
 
@@ -268,9 +273,9 @@ In this case, you can use **fieldMap** property to set beautiful names for colum
 
 ~~~js
 webix.ui({
-  view: "pivot",
-  fieldMap: { "a1" : "GDP", "a2" : "Grow ratio" },
-  ...
+	view: "pivot",
+	fieldMap: { "a1" : "GDP", "a2" : "Grow ratio" },
+  	//...
 });
 ~~~
 
@@ -281,26 +286,26 @@ By defaut all names and titles in Pivot have English names, but you can change i
 
 ~~~js
 webix.i18n.pivot = {
-  columns: "Columns",
-  count: "count",
-  fields: "Fields",
-  filters: "Filters",
-  max: "max",
-  min: "min",
-  operationNotDefined: "Operation is not defined",
-  pivotMessage: "[Click to configure]",
-  rows: "Rows",
-  select: "select",
-  sum: "sum",
-  text: "text",
-  values: "Values",
-  windowMessage: "[move fields into required sector]"
+	columns: "Columns",
+	count: "count",
+	fields: "Fields",
+	filters: "Filters",
+	max: "max",
+	min: "min",
+	operationNotDefined: "Operation is not defined",
+	pivotMessage: "[Click to configure]",
+	rows: "Rows",
+	select: "select",
+	sum: "sum",
+	text: "text",
+	values: "Values",
+	windowMessage: "[move fields into required sector]"
 };
 
 //and then init Pivot and see you custom names
 webix.ui({
-  view:"pivot",
-    ...
+	view:"pivot",
+	//...
 });
 ~~~
 
@@ -321,10 +326,13 @@ Format of a **config** object is the same as "structure" parameter of the constr
 
 ~~~js
 var config = {
-  rows: ["form", "name"],
-  columns: ["year"],
-  values: [{ name: "gdp", operation: "sum"}, { name: "oil", operation: "sum"}],
-  filters:[]
+	rows: ["form", "name"],
+	columns: ["year"],
+	values: [
+    	{ name: "gdp", operation: "sum"}, 
+        { name: "oil", operation: "sum"}
+    ],
+	filters:[]
 }
 ~~~
 
@@ -352,9 +360,8 @@ This allows you use any of datatable [events](api/refs/ui.datatable_events.md) o
 ~~~js
 //attach event to selection
 datatable.attachEvent("onAfterSelect", function (id) {
-  webix.message("selected row: "+id);
+	webix.message("selected row: "+id);
 });  
-});
 
 //or get the ID of the currently selected item.
 var sel = datatable.getSelectedId();

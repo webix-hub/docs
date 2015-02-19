@@ -41,11 +41,12 @@ Additionally, you should have a [Nokia Account](https://account.nokia.com) regis
 
 ~~~js
 webix.ready(function(){
-nokia.Settings.set( "appId", "..."); //instead of dots enter your keys!
-nokia.Settings.set( "authenticationToken", "...");
+	nokia.Settings.set( "appId", "..."); //instead of dots enter your keys!
+	nokia.Settings.set( "authenticationToken", "...");
 
-webix.ui({
-	//then init map
+	webix.ui({
+		//then init map
+	});
 });
 ~~~
 
@@ -129,13 +130,13 @@ For instance, to show the necessary map piece on request, you can use the follow
 
 ~~~js
 function show_position(lat, lng, zoom) {
-		var myLatlng = new google.maps.LatLng(lat, lng);
-		$$('map').map.setOptions({
-			zoom: zoom,
-			center: myLatlng,
-			mapTypeId: google.maps.MapTypeId.ROADMAP
-		});
-	}
+	var myLatlng = new google.maps.LatLng(lat, lng);
+	$$('map').map.setOptions({
+		zoom: zoom,
+		center: myLatlng,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	});
+}
 ~~~
 
 - **google.maps.map** class features lots of methods, one of them being **setOptions()** that allows for defining the area on the map;

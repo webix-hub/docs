@@ -35,9 +35,9 @@ Sample data
 }}
 ~~~js
 [
-  {"name": "China", "year": 2005, "continent": "Asia", "form": "Republic", 
-  "gdp": 2256.919, "oil": 59.615, "balance": 134.098},
-  ...
+	{"name": "China", "year": 2005, "continent": "Asia", "form": "Republic", 
+	"gdp": 2256.919, "oil": 59.615, "balance": 134.098},
+	//...
 ]
 ~~~
 
@@ -167,9 +167,9 @@ Inline Data (JSON)
 }}
 ~~~js
 var pivot_dataset = [
- {"name": "China", "year": 2005, "form": "Republic", "gdp": 181.357, "oil": 1.545},
- {"name": "China", "year": 2006, "form": "Republic", "gdp": 212.507, "oil": 1.732},
- ...
+	{"name": "China", "year": 2005, "form": "Republic", "gdp": 181.357, "oil": 1.545},
+	{"name": "China", "year": 2006, "form": "Republic", "gdp": 212.507, "oil": 1.732},
+	//...
 ]
 ~~~
 
@@ -197,8 +197,10 @@ Either you get data from an external file or by a server-side script,use the fol
 - If you load the data during component init, specify the path to this file/script as value of api/link/dataloader_url_config.md:
 
 ~~~js
-view:"pivot-chart",
-url:"../load.php" // or "../data.json"
+{
+	view:"pivot-chart",
+	url:"../load.php" // or "../data.json"
+}
 ~~~
 
 
@@ -311,9 +313,9 @@ In this case, you can use the **fieldMap** property to set beautiful names for c
 
 ~~~js
 webix.ui({
-  view:"pivot",
-  fieldMap:{ "a1" : "GDP", "a2" : "Grow ratio" },
-  ...
+	view:"pivot",
+	fieldMap:{ "a1" : "GDP", "a2" : "Grow ratio" },
+	//...
 });
 ~~~
 
@@ -346,9 +348,9 @@ chartMap: {
 		}
 	},
     "Line": function(color){ //redefines the default 'Line' type
-    		type:"line",
-            offset:false,
-            preset:"plot"
+    	type:"line",
+        offset:false,
+        preset:"plot"
     }
 }
 ~~~
@@ -387,8 +389,8 @@ webix.i18n.pivot = {
 
 //and then init Pivot Chart and see you custom names
 webix.ui({
-  view:"pivot",
-    ...
+	view:"pivot",
+    //...
 });
 ~~~
 

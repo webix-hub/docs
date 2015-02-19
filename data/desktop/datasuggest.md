@@ -91,7 +91,7 @@ Default  - that's enough
 }}
 ~~~js
 var popup = webix.ui({
-   view:"datasuggest"
+	view:"datasuggest"
 });
 ~~~
 
@@ -102,13 +102,13 @@ Customized
 }}
 ~~~js
 var popup = webix.ui({
-   view:"datasuggest",
-   body:{
-      type:{
-         height:100,
-         width:160
-      },
-   	  template:"<b>#value#</b><br>#year#"
+	view:"datasuggest",
+	body:{
+		type:{
+			height:100,
+			width:160
+		},
+		template:"<b>#value#</b><br>#year#"
    }
 });
 ~~~
