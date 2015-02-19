@@ -142,8 +142,10 @@ webix.ui({
 	id:"...",
 	//other parameters
 });
+~~~
+..or 
 
-//or 
+~~~js
 var table = new webix.ui({ //any var name will do
 	view:"...",
 	id:"...",
@@ -151,21 +153,27 @@ var table = new webix.ui({ //any var name will do
 });
 ~~~
 
-Why is **ID** so important? Because it's the very element you can refer to in order to attach different methods to the object. Or you can call methods 
-(which are functions) from the variable that stores the object - like in the second example. 
+**Working with Component ID**
 
-{{snippet
-The syntax here is as follows:
-}}
+Why is **ID** so important? Because it's the element you can refer to in order to call component methods (including the one that attaches a handler to an inner event): 
+
 ~~~js
-$$("component_id").attachEvent("onSomethingHappens", do_something(){...};) 
-
-//or
-table.attachEvent("onSomethingHappens", do_something(){...};) 
-
+//attaches handler to inner event
+$$("component_id").attachEvent("onSomethingHappens", do_something(){...});
+//forces repainting
+$$("component_id").refresh(); 
 ~~~
 
-However, if you don't specify the ID, it will be automatically generated with the **'component_name1'** pattern for each instance of a component. This ID can be later on referred to in functions: 
+Methods can be call directly from the component object: 
+
+~~~js
+var table = new webix.ui({...});
+//or
+table.attachEvent("onSomethingHappens", do_something(){...});
+table.refresh();
+~~~
+
+However, if you don't specify the ID, it will be automatically generated with the **"$component_name1"** pattern for each instance of a component. 
 
 {{snippet
 Auto Generated ID
@@ -173,13 +181,29 @@ Auto Generated ID
 ~~~js
 webix.ui({
 	view:"list",
-    config options.. 
+    //config options
 });
 
-$$('list1').select(5); //list1 is an auto-generated ID
+$$("$list1").select(5); //$list1 is an auto-generated ID
 ~~~
 
 {{sample 80_docs/autoid.html }}
+
+Still, referring to the components by specifying the auto-generated ID is not safe as it may change in case a new instance of one and the same component is added to the application.  
+
+**Geiing Component ID at Runtime**
+
+At any moment you can get the component ID (either custom or auto-generated one) through its configuration: 
+
+~~~js
+var id = table.config.id; 
+~~~
+
+and use it for calling methods: 
+
+~~~js
+$$(id).refresh();
+~~~
 
 ##HTML Containers {#html}
 

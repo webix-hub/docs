@@ -156,8 +156,8 @@ var logic = {
         
         //custom functions
         $$("datatable1").attachEvent("onItemClick", logic.delete_row); 
-     }
-  }
+	}
+}
 ~~~
 
 For custom functions attached either within component/control body or within init block (see above) use the following reference:
@@ -191,8 +191,11 @@ logic.js
 ~~~js
 var logic = {
 	init:function(){
-		webix.ui(ui_scheme);
-        logic.init_filtering(); //some additional logic defined outside the init block (if needed)
+		webix.ui(ui_scheme); 
+        //some additional logic defined outside the init block (if needed)
+        logic.init_filtering();
+    }
+}
 ~~~
 
 It goes without saying that a long list of custom **styles** is taken out into a separate file that is included into an index file with a help of a **link** in its head section (together with library styles). 

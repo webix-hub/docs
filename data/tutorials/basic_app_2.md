@@ -10,14 +10,29 @@ In the previous step we made a [form](desktop/form.md) and a [list](desktop/list
 
 At the same time, here we'll additionally create an **update** [button](desktop/controls.md#button) on toolbar to update existing records in the list and a **clear form** button to delete values from the foorm before inputting new values. 
 
-##Setting IDs, attaching events
+##Setting IDs, attaching event handlers
 
-We need to attach functions to the buttons so that they can implement **adding**, **updating** and **deleting** operations stated by their values. 
+We need to attach functions to the buttons so that they can implement **adding**, **updating** and **deleting** operations stated by their values.
 
-Functions are attached to components and controls either by using their **IDs** or specifying the necessary event within the component / control view. In fact, component **ID** is needed each time you want to 
-perform an operation it. 
+An event handler can be attached to the components in two ways: 
 
-To attach functions to buttons, you need to specify the event that will trigger their execution and names of the fucntions. Here, dedicated functions are called by button **click**. 
+- using native [attachEvent()](api/eventsystem_attachevent.md) method;
+- using components properties such as [click](api/renderstack_click_config.md) and [on](api/eventsystem_on_config.md).
+
+All the native methods (including the one that attaches event handlers) are called from the component object that can be received using the following construct: 
+
+~~~js
+var obj = $$("component_id");
+~~~
+
+And then call any native method, e.g.: 
+
+~~~js
+$$("component_id").attachEvent(...);
+$$("component_id").clear();
+~~~
+
+To attach functions to buttons, you need to specify the event that will trigger their execution anmd the functions (function names). Here, dedicated functions are called by button **click**. 
 
 ~~~js
 { view:"button", value:"Add", width:70, click:"add_row"},

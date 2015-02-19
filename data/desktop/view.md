@@ -9,18 +9,19 @@ View performs a function of a placeholder to the layout components and layout it
 webix.ui({
 	view:"dataview",
     ...
-})
+});
 ~~~
 
 ##View ID
 
-Views themselves can be put other views thus creating a complex app structure with parent and child components. View features **IDs** that differentiate them from other views in the document: 
+Views themselves can be put into other views thus creating a complex app structure with parent and child components. Any view features its unique **ID**
+ that differentiates it from other views in the application: 
 
 {{snippet
 Default ID
 }}
 ~~~js
-webix.ui({
+var layout = webix.ui({
 	rows:[
 		{view:"list", ...}, //gets "$list1" ID
         {view:"list", ...} //gets "$list2" ID
@@ -28,25 +29,56 @@ webix.ui({
 });
 ~~~
 
-Still, it's much more convenient to define custom 'speaking' IDs to the views. 
+Then, you can get the objects of these views as: 
+
+~~~js
+//getting list 1 object
+var list1 = layout.getChildViews()[0]; 
+..or
+var list1 = $$("$list1");
+
+//getting list 2 object
+var list2 = layout.getChildViews()[1]; 
+..or
+var list2 = $$("$list2");
+~~~
+
+Still, it's much more convenient to define custom "speaking" IDs to the views. 
 
 {{snippet
 Custom ID
 }}
 ~~~js
 webix.ui({
-	view:"list", 
-    id:"order-list",
-    ...
+	id:"lists",
+	rows:[
+		{view:"list", id:"order-list"}, 
+        {view:"list", id:"data-list"} 
+    ]
 });
+~~~
+
+Then, you can get the objects of these views as: 
+
+~~~js
+//getting list 1 object
+var list1 = $$("lists").getChildViews()[0]; 
+..or
+var list1 = $$("$order-list");
+
+//getting list 2 object
+var list 2 = $$("lists").getChildViews()[1]; 
+..or
+var list2 = $$("$data-list");
 ~~~
 
 Working within several views you can refer to the components with respect to their hierarchy or by using the view's unique ID. 
 
-Note that:	
+**Note that:**	
 
+- Using auto-generated IDs is unsafe as they may change dynamically;
 - The ID of any component can be found in its object as **view.config.id**;
-- View IDs are reflected in HTML as a **view_id** attribute of a topmost div of a component.
+- View IDs are reflected in HTML as a **view_id** attribute of a topmost div of a component;
 
 ##Empty View
 
@@ -92,7 +124,7 @@ The method is called from any view and is used to get the parent object of this 
 webix.ui({
 	view:"layout", id:"my_layout", rows:[
 		{view:"toolbar", id:"my_Bar", cols:[
-    		{view:"button, id:"my_button", ..}
+    		{view:"button", id:"my_button", ..}
     	]},
         {view:"template", ...}
      ]
@@ -111,13 +143,13 @@ webix.ui({
 	view:"form", id:"my_form", elements:[
 		{view:"text"},
         {cols:[
-    		{view:"combo, id:"my_combo", ..}
+    		{view:"combo", id:"my_combo", ..}
     	]},
         {view:"checkbox", ...}
      ]
 });
 
-$$("my_combo").getFormView(); //returns 'my_form' object
+$$("my_combo").getFormView(); //returns "my_form" object
 ~~~
 
 ###3 . getChildViews()
@@ -127,9 +159,9 @@ This method, on the contrary, returns, an array of all the children of the calli
 For instance, if you have a toolbar within the layout and the toolbar itself comes with three buttons, the function will return the following: 
 
 ~~~js
-var bar_id = $$("my_layout").getChildViews()[0].id; //returns toolbar ID
+var bar_id = $$("my_layout").getChildViews()[0].config.id; //toolbar ID
 
-var but_id = $$("my_toolbar").getChildViews()[1].id //returns the ID of the 2nd button
+var but_id = $$("my_toolbar").getChildViews()[1].config.id //ID of the 2nd button
 ~~~
 
 ###4 . index() 
@@ -144,10 +176,10 @@ webix.ui({
     	{id:"cell1", view:"list", ...},
         {id:"cell2", view:"form", ...},
         {id:"cell3", view:"dataview", ...}
-        ]
+    ]
 });
 
-$$("mylayout").index($$('cell1')); //-> returns 0 for the 1st array element
+$$("mylayout").index($$("cell1")); //-> returns 0 for the 1st array element
 ~~~
 
 ###5 . getNode()
@@ -158,8 +190,8 @@ The method helps us get an HTML container of the component.
 <div id="my_box"></div>
 ...
 webix.ui({
-   view:"toolbar", id:"my_bar", ...
-   })
+	view:"toolbar", id:"my_bar", ...
+});
    
 var box = $$("my_bar").getNode; 
 ~~~
@@ -170,9 +202,9 @@ The method works with form controls  defined by **input** tag in HTML, the simpl
 
 ~~~js
 {view:"form", elements: [
- 	{ view:"button", id:"b1", value:"Login",    type:"form" }
- 	...]
-}
+ 	{ view:"button", id:"b1", value:"Login", type:"form" },
+ 	{...}
+]}
  
 $$("b1").getInputNode();//-> <input type="button" style="height:27px; width:149px" value="Login">
 ~~~
