@@ -47,7 +47,7 @@ And **that is all**. Just open the page in a browser and you have a working mini
 
 ## What's next
 
-  - [read the "not so fast" introduction to the library](tutorials/quick_start_details.md)
+  - [Read a more detailed introduction to the library](tutorials/quick_start_details.md)
 
 or check one of interactive tutorials
 
