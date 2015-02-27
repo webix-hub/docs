@@ -1,103 +1,28 @@
-Getting Started
-===================
+Getting started
+=================
+To make a great app you need to learn different things but if you're new to Webix you might be wondering where to begin. 
 
-### Webix UI
+{{note
+Some platforms (Java, .Net, PHP)  get ready-to-use solutions for data loading, saving, exporting. 
+}}
 
-<div style="position: relative;overflow: hidden; margin-top:20px;">
-	<div style="float: left;height: 155px;padding: 5px 10px 5px 10px;">
-    	<a href="tutorials/quick_start.md" class="img-to-tutorial"><img src="tutorials/small_dataview.png"/></a>
-    </div>
-   	<div class="right-part-tutorial">
-    	<a class="link-to-tutorial" href="tutorials/quick_start.md"><b>Quick Start Guide</b></a>
-        <br><br>
-        <div>
-        This tutorial gives you a detailed instruction how to make your first steps with Webix.
-        </div>
-    </div>
-</div>
+For understanding the basic concepts and getting the desired information in the most convenient way we offer you to follow this road map:
 
-<div style="position: relative;overflow: hidden; margin-top:20px;">
-	<div style="float: left;height: 155px;padding: 5px 10px 5px 10px;">
-    	<a href="tutorials/start_coding.md" class="img-to-tutorial"><img src="tutorials/start_coding.png"/></a>
-    </div>
-   	<div class="right-part-tutorial">
-    	<a class="link-to-tutorial" href="tutorials/start_coding.md"><b>Start Coding with Webix</b></a>
-        <br><br>
-        <div>
-        This tutorial introduces basic principles of using the Webix library for web app development.
-        </div>
-    </div>
-</div>
-
-<div style="position: relative;overflow: hidden; margin-top:20px;">
-	<div style="float: left;height: 155px;padding: 5px 10px 5px 10px;">
-    	<a href="tutorials/basic_app.md" class="img-to-tutorial"><img src="tutorials/basic_app.png"/></a>
-    </div>
-   	<div class="right-part-tutorial">
-    	<a class="link-to-tutorial" href="tutorials/basic_app.md"><b>Creating basic app</b></a>
-        <br><br>
-        <div>
-        This tutorial discusses the main points of creating a simple app with the Webix library:
-        </div><br>
-        <div>
-			<li>tutorials/basic_app_1.md</li>
-			<li>tutorials/basic_app_2.md</li>
-			<li>tutorials/basic_app_3.md</li>
-        </div>
-    </div>
-</div>
-
-<div style="position: relative;overflow: hidden; margin-top:20px;">
-	<div style="float: left;height: 155px;padding: 5px 10px 5px 10px;">
-    	<a href="tutorials/introduction_to_events.md" class="img-to-tutorial"><img src="tutorials/events.png"/></a>
-    </div>
-   	<div class="right-part-tutorial">
-    	<a class="link-to-tutorial" href="tutorials/introduction_to_events.md"><b>Introduction to Events</b></a>
-        <br><br>
-        <div>
-        This tutorial explains the essence of Webix events model and discusses the basics of event processing.
-        </div>
-    </div>
-</div>
-
-
-
-
-### Webix DataTable
-
-<div style="position: relative;overflow: hidden; margin-top:20px;">
-	<div style="float: left;height: 155px;padding: 5px 10px 5px 10px;">
-    	<a href="datatable/quick_start.md" class="img-to-tutorial"><img src="tutorials/datatable.png"/></a>
-    </div>
-   	<div class="right-part-tutorial">
-    	<a class="link-to-tutorial" href="datatable/quick_start.md"><b>Quick Start with Datatable</b></a>
-        <br><br>
-        <div>
-        This tutorial teaches how to create a simple app containing DataTable and populate it with data.
-        </div>
-    </div>
-</div>
-
-
-###Webix Docs Guide
-
-<div style="position: relative;overflow: hidden; margin-top:20px;">
-	<div style="float: left;height: 155px;padding: 5px 10px 5px 10px;">
-    	<a href="tutorials/road_map.md" class="img-to-tutorial"><img src="tutorials/roadmap.png"/></a>
-    </div>
-   	<div class="right-part-tutorial">
-    	<a class="link-to-tutorial" href="tutorials/road_map.md"><b>Webix Docs Roadmap</b></a>
-        <br><br>
-        <div>
-        This chapter guides you through the contents of Webix documentation and gives a short description of each section.
-        </div>
-    </div>
-</div>
+1. desktop/compatibility.md - lets you find out whether your development tools satisfy the library requirements.
+2. tutorials/index.md - gives essential notes that will help you to create your first Webix-based application.
+  - tutorials/start_coding.md - says about  fundamental principles and covers development process from planning to coding.
+  - tutorials/quick_start.md - links to a short article that will teach you how to easily get a simple application up and running.
+  - tutorials/basic_app.md - introduces a detail tutorial that takes a bit more time but cover all nuts-and-bolts of the library 
+3. desktop/components.md - describes available components: short overview, initialization, usage, related guides and API.
+4. desktop/basic_tasks.md - the main chapter of the documentation covering developer-oriented tasks in details.
+  - [App architecture](desktop/designing_user_interface.md) - answers general configuration questions: how to specify and size required component, 
+set headers(footers), manipulate visibility, handle events etc.  
+  - [UI features](desktop/styling_and_animation.md) - tells you how to fine-tune the appearance of your app and data in it with the help of css classes, templates, special helpers and modes.
+  - [Data operations](desktop/item_operations.md) - covers techniques for performing general operations under data, such as sorting, filtering, copy-pasting and selection.
+  - [Third Party Integration](desktop/third_party_integration.md) - says which third-party libraries and how can be integrated with Webix components.
+5. helpers/index.md - covers advanced techniques implemented by means of helper components. Mostly intended for expert developers to customize the existent functionality.
+6. api/toc/ui.md - provides reference information you need for coding: all the available methods, parameters and events of the library. 
 
 
 @index:
-- tutorials/quick_start.md
-- tutorials/start_coding.md
-- tutorials/basic_app.md
-- tutorials/introduction_to_events.md
-- tutorials/road_map.md
+- tutorials/index.md
