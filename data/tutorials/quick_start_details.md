@@ -13,7 +13,7 @@ Including library
 Include 2 Webix files (**webix.js** and **webix.css**) directly from Webix CDN 
 
 ~~~html
-<!DOCTYPE HTML>// specifies document type
+<!DOCTYPE HTML>
 <html>
     <head>
     <link rel="stylesheet" href="http://cdn.webix.com/edge/webix.css" type="text/css"> 
@@ -63,7 +63,7 @@ bower install webix
 Download and unzip the library to the necessary directory. Include **webix.js** and **webix.css** files into the document's head section.
 
 ~~~html
-<!DOCTYPE HTML>// specifies document type
+<!DOCTYPE HTML>
 <html>
     <head>
     <link rel="stylesheet" href="../../codebase/webix.css" type="text/css"> 

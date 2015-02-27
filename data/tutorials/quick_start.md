@@ -10,7 +10,7 @@ The following steps will take you to your own Webix based app.
 - Create a simple html-page. Specify **HTML5** doctype for it.
 
 ~~~html
-<!DOCTYPE HTML>// specifies document type
+<!DOCTYPE HTML>
 <html>
     <head>
     <link rel="stylesheet" href="http://cdn.webix.com/edge/webix.css" type="text/css"> 
