@@ -127,7 +127,7 @@ Form elements are placed into different **row arrays** where the first row is a 
 Form field can be placed into different tabs thus forming a [multiview](desktop/multiview.md) layout. Switching between tabs there is implemented with [tabbar and segmented](desktop/tabbar_switching.md) 
 buttons as well as with the help of the dedicated [tabview](desktop/tabview.md). 
 
-The swithing controls are placed directly into the array of form **elements**.
+The switching controls are placed directly into the array of form **elements**.
 
 ~~~js
 {view:"form", elements:[

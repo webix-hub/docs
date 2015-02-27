@@ -5,10 +5,10 @@ each
 	
 
 @params:
-- code			function	a function that needs calling for each data item
-* master		object		an object that the function is applied to (_this_ by default)
-* all			boolean		if true, hidden (as well as hidden by filtering) items are iterated
-* pid			string		the parent node id. Used to iterate through a specific branch
+- code			function		a function that needs calling for each data item
+- master		object			an object that the function is applied to (<i>this</i> by default)
+- all			boolean			if true, hidden (as well as hidden by filtering) items are iterated
+- pid			string			the parent node id. Used to iterate through a specific branch
 
 
 
@@ -24,7 +24,7 @@ tree.data.each(
 tree.data.each(
 	function(obj){
     	console.log(obj.value)
-    }, this, false, "1.2");
+    }, this, true, "1.2");
 
 @template:	api_method
 @descr:
@@ -33,7 +33,7 @@ Note,
 
 - api/treestore_each.md iterates through both parent and child nodes.
 - The api/treestore_each.md's function takes the **data item object** as a parameter.
-- If you specify the 4th parameter (**pid**), api/treestore_each.md will iterate only through child nodes of the branch (without iterating through the specified parent node).
+- If you specify the 3rd parameter (**pid**), api/treestore_each.md will iterate only through child nodes of the branch (without iterating through the specified parent node).
 
 @related:
 	datatree/getting_value.md

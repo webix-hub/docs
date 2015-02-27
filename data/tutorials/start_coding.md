@@ -22,7 +22,7 @@ of your future app and try to imagine all possible features it may need to meet 
 ##Preparing Workspace {#coding}
 
 At this stage you define all the properties of your app and its components, play with event handlers and apply methods for your app to dance in the
-hands of users. You can check the state of your app in the realtime just as you've put the last braket/brace/colon after the code piece. 
+hands of users. You can check the state of your app in the realtime just as you've put the last bracket/brace/colon after the code piece. 
 
 The lib package you [download](http://webix.com/download-webix-gpl) from the site includes two versions - **debug** and **standard** one. Debug version helps control the app during the development stage while standard script version goes for ready-made products. Both scripts are 
 identical in terms of component building yet **webix_debug.js** version includes a number of handy debugging tools. Read more about the [bonuses of the debug version](desktop/debug.md). 

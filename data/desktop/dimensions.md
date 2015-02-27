@@ -60,17 +60,17 @@ Dataview Component and Items with Fixed Dimensions
 ~~~js
 webix.ui({
     view:"dataview",
-    width: 500, //component's dimensions
-    height: 250,
+    width: 520, 		//	component's dimensions
+    height: 270,
     type:{ 
-    	height: 80,
-        width: 250 //dimensions of each dataview item
+    	height: 90,		//	dimensions of each dataview item
+        width: 250 
     }
     ...
 });
 ~~~
 
-{{sample 80_docs/simple_dataview.html}}
+{{sample 80_docs/dataview_italic.html}}
 
 ###Sizing Limits
 
