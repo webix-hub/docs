@@ -426,6 +426,7 @@ table.webixtoc td{
 - api/refs/ui.list.md
 - api/refs/ui.menu.md
 - api/refs/ui.multiview.md
+- api/refs/ui.organogram.md
 - api/refs/ui.pager.md
 - api/refs/ui.popup.md
 - api/refs/ui.property.md

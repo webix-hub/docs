@@ -71,6 +71,10 @@ Data components are used to present data of a specified type on the page. Such c
     	<img src="desktop/icons/list.png"/>
     	<br>List
     </a>
+    <a href="desktop/organogram.md">
+    	<img src="desktop/icons/organogram.png"/>
+    	<br>Organogram
+    </a>
     <a href="desktop/property_sheet.md" style="clear:left;">
     	<img src="desktop/icons/propertysheet.png"/>
     	<br>PropertySheet
@@ -258,6 +262,7 @@ div.controls_group img {
 - desktop/list.md
 - desktop/menu.md
 - desktop/multiview.md
+- desktop/organogram.md
 - desktop/popup.md
 - desktop/property_sheet.md
 - desktop/scrollview.md

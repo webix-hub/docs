@@ -1,4 +1,4 @@
-Webix Docs Roadmap
+Webix Docs Guide
 ====================
 
 To make a great app you need to learn different things but if you're new to Webix you might be wondering where to begin. 

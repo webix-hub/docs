@@ -5,7 +5,7 @@ Getting Started
 
 <div style="position: relative;overflow: hidden; margin-top:20px;">
 	<div style="float: left;height: 155px;padding: 5px 10px 5px 10px;">
-    	<a href="tutorials/quick_start.md" class="img-to-tutorial"><img src="tutorials/small_dataview.png"/></a>
+    	<a href="tutorials/quick_start.md" class="img-to-tutorial"><img src="tutorials/quick_start_guide.png"/></a>
     </div>
    	<div class="right-part-tutorial">
     	<a class="link-to-tutorial" href="tutorials/quick_start.md"><b>Quick Start Guide</b></a>
@@ -49,7 +49,7 @@ Getting Started
 
 <div style="position: relative;overflow: hidden; margin-top:20px;">
 	<div style="float: left;height: 155px;padding: 5px 10px 5px 10px;">
-    	<a href="tutorials/introduction_to_events.md" class="img-to-tutorial"><img src="tutorials/events.png"/></a>
+    	<a href="tutorials/introduction_to_events.md" class="img-to-tutorial"><img src="tutorials/introduction_to_events.png"/></a>
     </div>
    	<div class="right-part-tutorial">
     	<a class="link-to-tutorial" href="tutorials/introduction_to_events.md"><b>Introduction to Events</b></a>
@@ -67,7 +67,7 @@ Getting Started
 
 <div style="position: relative;overflow: hidden; margin-top:20px;">
 	<div style="float: left;height: 155px;padding: 5px 10px 5px 10px;">
-    	<a href="datatable/quick_start.md" class="img-to-tutorial"><img src="tutorials/datatable.png"/></a>
+    	<a href="datatable/quick_start.md" class="img-to-tutorial"><img src="tutorials/quick_start_datatable.png"/></a>
     </div>
    	<div class="right-part-tutorial">
     	<a class="link-to-tutorial" href="datatable/quick_start.md"><b>Quick Start with Datatable</b></a>
@@ -79,14 +79,14 @@ Getting Started
 </div>
 
 
-###Webix Docs Guide
+###Webix Documentation
 
 <div style="position: relative;overflow: hidden; margin-top:20px;">
 	<div style="float: left;height: 155px;padding: 5px 10px 5px 10px;">
-    	<a href="tutorials/road_map.md" class="img-to-tutorial"><img src="tutorials/roadmap.png"/></a>
+    	<a href="tutorials/road_map.md" class="img-to-tutorial"><img src="tutorials/webix_docs_roadmap.png"/></a>
     </div>
    	<div class="right-part-tutorial">
-    	<a class="link-to-tutorial" href="tutorials/road_map.md"><b>Webix Docs Roadmap</b></a>
+    	<a class="link-to-tutorial" href="tutorials/road_map.md"><b>Webix Docs Guide</b></a>
         <br><br>
         <div>
         This chapter guides you through the contents of Webix documentation and gives a short description of each section.
