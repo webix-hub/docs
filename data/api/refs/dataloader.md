@@ -1,9 +1,7 @@
 DataLoader 
 =============
 
-{{memo Loads and process data in to component. }}
-
-
+{{memo Loads and processes data into a component.. }}
 
 
 
@@ -22,14 +20,14 @@ DataLoader
 - api/link/dataloader_getlastid.md - returns the id of the last item
 - api/link/dataloader_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/dataloader_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
-- api/link/dataloader_load.md - loads data from an external data source
-- api/dataloader_loadnext.md - sends a request to load the specified number of records to the end or to the specified position
+- api/link/dataloader_load.md - loads data from an external data source.
+- api/dataloader_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
 - api/link/dataloader_parse.md - loads data to the component from an inline data source
 - api/link/dataloader_refresh.md - repaints the whole view or a certain item
 - api/link/dataloader_remove.md - removes the specified item from datastore
-- api/link/dataloader_serialize.md - serializes data to a json object
+- api/link/dataloader_serialize.md - serializes data to a JSON object
 - api/link/dataloader_sort.md - sorts datastore
-- api/link/dataloader_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/dataloader_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/dataloader_updateitem.md - sets properties of the data item
 }}
 
@@ -46,7 +44,7 @@ DataLoader
 - api/link/dataloader_onbeforedelete_event.md - fires before item deleting
 - api/link/dataloader_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/link/dataloader_onbeforesort_event.md - fires before sorting dataset
-- api/dataloader_ondatarequest_event.md - fires when data from the server side is requested (part of dynamic loading)
+- api/dataloader_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/dataloader_ondataupdate_event.md - fires when data item is in update process
 - api/link/dataloader_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 }}
@@ -55,15 +53,15 @@ DataLoader
 <div class='h2'>Properties</div>
 
 {{api
-- api/link/dataloader_data_config.md - an inline dataset that data to the component will be load from.
-- api/link/dataloader_datafeed_config.md - the url that the component will use to reload data during binding
+- api/link/dataloader_data_config.md - JavaScript array containing data for the component
+- api/link/dataloader_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/dataloader_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/dataloader_datatype_config.md - the type of loaded data
-- api/dataloader_ready_config.md - a handler that is called just after the page has been completely parsed
+- api/dataloader_ready_config.md - event handler called just after the component has been completely initialized
 - api/dataloader_removemissed_config.md - defines how to treat items in case of reloading
-- api/dataloader_save_config.md - defines urls for datasaving
+- api/dataloader_save_config.md - defines URLs for data saving
 - api/dataloader_scheme_config.md - defines schemes for data processing
-- api/link/dataloader_url_config.md - the url the component will use to load data after its initialization
+- api/link/dataloader_url_config.md - the URL the component will use to load data after its initialization
 }}
 
 

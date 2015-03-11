@@ -1,7 +1,11 @@
 DataCollection 
 =============
 
-{{memo View-less control which stores collections of data objects. }}
+{{memo View-less component that stores a collection of non-hierarchical data. }}
+
+~~~js
+var store = new webix.DataCollection({ url:"data.php" });
+~~~
 
 
 
@@ -30,15 +34,15 @@ DataCollection
 - api/link/datacollection_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
 - api/link/datacollection_hasevent.md - checks whether the component has the specified event
 - api/datacollection_isvisible.md - returns true if current view is visible
-- api/link/datacollection_load.md - loads data from an external data source
-- api/link/datacollection_loadnext.md - sends a request to load the specified number of records to the end or to the specified position
+- api/link/datacollection_load.md - loads data from an external data source.
+- api/link/datacollection_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
 - api/link/datacollection_mapevent.md - routes events from one object to another
 - api/link/datacollection_parse.md - loads data to the component from an inline data source
 - api/link/datacollection_refresh.md - repaints the whole view or a certain item
 - api/link/datacollection_remove.md - removes the specified item from datastore
-- api/link/datacollection_serialize.md - serializes data to a json object
+- api/link/datacollection_serialize.md - serializes data to a JSON object
 - api/link/datacollection_sort.md - sorts datastore
-- api/link/datacollection_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/datacollection_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/datacollection_unbind.md - breaks "bind" link
 - api/link/datacollection_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/datacollection_updateitem.md - sets properties of the data item
@@ -59,7 +63,7 @@ DataCollection
 - api/link/datacollection_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/link/datacollection_onbeforesort_event.md - fires before sorting dataset
 - api/link/datacollection_onbindrequest_event.md - fires when the component is ready to receive data from the master component
-- api/link/datacollection_ondatarequest_event.md - fires when data from the server side is requested (part of dynamic loading)
+- api/link/datacollection_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/datacollection_ondataupdate_event.md - fires when data item is in update process
 - api/link/datacollection_ondestruct_event.md - occurs when component destroyed
 - api/link/datacollection_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
@@ -71,18 +75,18 @@ DataCollection
 <div class='h2'>Properties</div>
 
 {{api
-- api/link/datacollection_data_config.md - an inline dataset that data to the component will be load from.
-- api/link/datacollection_datafeed_config.md - the url that the component will use to reload data during binding
+- api/link/datacollection_data_config.md - JavaScript array containing data for the component
+- api/link/datacollection_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/datacollection_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/datacollection_datatype_config.md - the type of loaded data
 - api/link/datacollection_id_config.md - the component ID
 - api/link/datacollection_on_config.md - allows attaching custom handlers to inner events of the component
-- api/link/datacollection_ready_config.md - a handler that is called just after the page has been completely parsed
+- api/link/datacollection_ready_config.md - event handler called just after the component has been completely initialized
 - api/link/datacollection_removemissed_config.md - defines how to treat items in case of reloading
 - api/link/datacollection_rules_config.md - set of validation rules for the component
-- api/link/datacollection_save_config.md - defines urls for datasaving
+- api/link/datacollection_save_config.md - defines URLs for data saving
 - api/link/datacollection_scheme_config.md - defines schemes for data processing
-- api/link/datacollection_url_config.md - the url the component will use to load data after its initialization
+- api/link/datacollection_url_config.md - the URL the component will use to load data after its initialization
 }}
 
 

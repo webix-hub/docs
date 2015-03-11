@@ -8,8 +8,8 @@ Properties
 - api/link/ui.template_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.template_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.template_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.template_data_config.md - an inline dataset that data to the component will be load from.
-- api/link/ui.template_datafeed_config.md - the url that the component will use to reload data during binding
+- api/link/ui.template_data_config.md - JavaScript array containing data for the component
+- api/link/ui.template_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.template_datatype_config.md - the type of loaded data
 - api/link/ui.template_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.template_gravity_config.md - sets the view gravity (1 by default)
@@ -27,7 +27,7 @@ Properties
 - api/ui.template_src_config.md - the path to an external template that is loaded by Ajax
 - api/link/ui.template_template_config.md - the component template
 - api/ui.template_type_config.md - name of predefined styling type
-- api/link/ui.template_url_config.md - the url the component will use to load data after its initialization
+- api/link/ui.template_url_config.md - the URL the component will use to load data after its initialization
 - api/link/ui.template_width_config.md - sets the width of the component
 }}
 

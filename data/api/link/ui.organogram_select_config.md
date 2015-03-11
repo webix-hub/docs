@@ -1,0 +1,1 @@
+@link: api/selectionmodel_select_config.md

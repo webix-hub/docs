@@ -41,8 +41,8 @@ Methods
 - api/link/ui.proto_hide.md - hides the view
 - api/link/ui.proto_isenabled.md - checks whether the view is enabled
 - api/link/ui.proto_isvisible.md - checks whether the view is visible
-- api/link/ui.proto_load.md - loads data from an external data source
-- api/link/ui.proto_loadnext.md - sends a request to load the specified number of records to the end or to the specified position
+- api/link/ui.proto_load.md - loads data from an external data source.
+- api/link/ui.proto_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
 - api/link/ui.proto_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.proto_mapevent.md - routes events from one object to another
 - api/link/ui.proto_parse.md - loads data to the component from an inline data source
@@ -51,12 +51,12 @@ Methods
 - api/link/ui.proto_removecss.md - removes CSS class from a component item
 - api/link/ui.proto_render.md - renders the specified item or the whole component
 - api/link/ui.proto_resize.md - adjusts the view to a new size
-- api/link/ui.proto_serialize.md - serializes data to a json object
+- api/link/ui.proto_serialize.md - serializes data to a JSON object
 - api/link/ui.proto_setpage.md - makes the specified page visible (assuming that the pager was defined )
 - api/link/ui.proto_show.md - makes the component visible
 - api/link/ui.proto_showitem.md - scrolls the component to make the specified item visible
 - api/link/ui.proto_sort.md - sorts datastore
-- api/link/ui.proto_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.proto_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.proto_unbind.md - breaks "bind" link
 - api/link/ui.proto_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.proto_updateitem.md - sets properties of the data item

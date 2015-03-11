@@ -2,8 +2,8 @@ Properties
 ==========
 
 {{api
-- api/virtualrenderstack_datafetch_config.md - defines the start position DataTable will load data from
-- api/virtualrenderstack_loadahead_config.md - how much records need to be preloaded in additional to mandatory ones
+- api/virtualrenderstack_datafetch_config.md - defines the number of records that will be loaded during each dynamic loading request
+- api/virtualrenderstack_loadahead_config.md - how the number of records that need to be loaded in addition to mandatory ones during each dynamic loading request
 }}
 
 @index:

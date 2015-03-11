@@ -13,17 +13,17 @@ Mixins
 - api/refs/collectionbind.md -  binding rules for collections of objects
 - api/refs/contexthelper.md -  provides for subviews seen by right mouse click
 - api/refs/copypaste.md -  provides support for copy-paste operations (integration with clipboard) 
-- api/refs/customscroll.md - 
-- api/refs/datacollection.md -  view-less control which stores collections of data objects 
+- api/refs/customscroll.md -  Renders custom scrollbars to Webix views 
+- api/refs/datacollection.md -  View-less component that stores a collection of non-hierarchical data 
 - api/refs/datadriver.md -  data parsing for different format
-- api/refs/dataloader.md -  loads and process data in to component
+- api/refs/dataloader.md -  Loads and processes data into a component.
 - api/refs/datamarks.md -  implements extra data storage
 - api/refs/datamove.md -  transfer data between different components
-- api/refs/dataprocessor.md -  handles clien-server data saving operations
-- api/refs/datarecord.md -  data binding for components which store collection of data object
+- api/refs/dataprocessor.md -  handles client-server data saving operations
+- api/refs/datarecord.md -  data View-less component that stores a single data record
 - api/refs/datastate.md -  enables saving application state
 - api/refs/datastore.md -  core of all operations for data-collection based components
-- api/refs/datavalue.md -  view-less object, stores single value
+- api/refs/datavalue.md -  View-less object that stores a single value
 - api/refs/date.md -  date formatting | processing logic
 - api/refs/destruction.md -  clean object references during object destruction
 - api/refs/dragcontrol.md -  handlers drag-n-drop events
@@ -37,7 +37,7 @@ Mixins
 - api/refs/htmlmap.md -  wrapper for image maps
 - api/refs/idspace.md -  separate layer of ids
 - api/refs/keysnavigation.md -  implements keyboard navigation
-- api/refs/mapcollection.md - 
+- api/refs/mapcollection.md -  Holds logic for collection mapping. Used in property-sheet's and datatable's editors 
 - api/refs/modality.md -  sets modality to popup views
 - api/refs/mouseevents.md -  adds inner events for all mouse actions
 - api/refs/movable.md -  adds ability to move data in component or between components
@@ -46,7 +46,7 @@ Mixins
 - api/refs/overlaybox.md -  show a temporary layer other view
 - api/refs/pagingability.md -  interface which adds support for pager
 - api/refs/powerarray.md -  extension for arrays
-- api/refs/progressbar.md - 
+- api/refs/progressbar.md -  Draws a progress bar (icon) for a view or application part 
 - api/refs/recordbind.md -  binding logic for view which have single data object
 - api/refs/renderstack.md -  render strategy for plain datasets
 - api/refs/scrollable.md -  adds scroll for the view
@@ -55,14 +55,14 @@ Mixins
 - api/refs/singlerender.md -  render for single-value views
 - api/refs/tablepaste.md -  implements copy-paste for datatable
 - api/refs/touch.md -  touch events and touch scroll
-- api/refs/treeapi.md -  implements common API for tree like components
+- api/refs/treeapi.md -  Implements common APIs for tree-like components.
 - api/refs/treeclick.md -  implements click handler for tree like components
-- api/refs/treecollection.md -  non-ui component for hierarchical data
+- api/refs/treecollection.md -  View-less component that stores a collection of hierarchical data
 - api/refs/treedataloader.md -  loads hierarchical data
 - api/refs/treedatamove.md -  implement copy and move for tree like components
 - api/refs/treerenderstack.md -  implements rendering strategy for tree like components 
 - api/refs/treestatecheckbox.md -  implements tree-state checkbox functionality
-- api/refs/treestore.md -  hierarchical store
+- api/refs/treestore.md -  Hierarchical store.
 - api/refs/treetableclick.md -  contains tree specific click handlers
 - api/refs/treetablepaste.md -  implements copy-paste for treetable
 - api/refs/treetype.md -  contains elements of tree template

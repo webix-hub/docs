@@ -37,8 +37,8 @@ Methods
 - api/ui.chart_hideseries.md - hides the chosen graph in the chart with several graphs
 - api/link/ui.chart_isenabled.md - checks whether the view is enabled
 - api/link/ui.chart_isvisible.md - checks whether the view is visible
-- api/link/ui.chart_load.md - loads data from an external data source
-- api/link/ui.chart_loadnext.md - sends a request to load the specified number of records to the end or to the specified position
+- api/link/ui.chart_load.md - loads data from an external data source.
+- api/link/ui.chart_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
 - api/ui.chart_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.chart_mapevent.md - routes events from one object to another
 - api/link/ui.chart_parse.md - loads data to the component from an inline data source
@@ -47,11 +47,11 @@ Methods
 - api/ui.chart_removeallseries.md - removes all series from the chart
 - api/ui.chart_render.md - renders the specified item or the whole component
 - api/link/ui.chart_resize.md - adjusts the view to a new size
-- api/link/ui.chart_serialize.md - serializes data to a json object
+- api/link/ui.chart_serialize.md - serializes data to a JSON object
 - api/link/ui.chart_show.md - makes the component visible
 - api/ui.chart_showseries.md - shows the hidden graph in the chart
 - api/link/ui.chart_sort.md - sorts datastore
-- api/link/ui.chart_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.chart_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.chart_unbind.md - breaks "bind" link
 - api/link/ui.chart_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.chart_ungroup.md - ungroups data

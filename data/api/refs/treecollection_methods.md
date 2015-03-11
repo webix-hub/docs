@@ -30,16 +30,16 @@ Methods
 - api/link/treecollection_hasevent.md - checks whether the component has the specified event
 - api/link/treecollection_isbranch.md - checks whether the node has any children
 - api/link/treecollection_isvisible.md - returns true if current view is visible
-- api/link/treecollection_load.md - loads data from an external data source
-- api/link/treecollection_loadbranch.md - loads data to the specified branch
-- api/link/treecollection_loadnext.md - sends a request to load the specified number of records to the end or to the specified position
+- api/link/treecollection_load.md - loads data from an external data source.
+- api/link/treecollection_loadbranch.md - loads data to the specified branch, as direct children of the node with the id provided
+- api/link/treecollection_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
 - api/link/treecollection_mapevent.md - routes events from one object to another
 - api/link/treecollection_parse.md - loads data to the component from an inline data source
 - api/link/treecollection_refresh.md - repaints the whole view or a certain item
 - api/link/treecollection_remove.md - removes the specified item from datastore
-- api/link/treecollection_serialize.md - serializes data to a json object
+- api/link/treecollection_serialize.md - serializes data to a JSON object
 - api/link/treecollection_sort.md - sorts datastore
-- api/link/treecollection_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/treecollection_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/treecollection_unbind.md - breaks "bind" link
 - api/link/treecollection_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/treecollection_updateitem.md - sets properties of the data item

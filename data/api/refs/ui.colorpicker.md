@@ -45,6 +45,7 @@ The component handles RGB, HSL, and hex formats and allows setting custom colors
 - api/link/ui.colorpicker_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.colorpicker_getparentview.md - returns the parent view of the component
 - api/link/ui.colorpicker_getpopup.md - returns popup element of the input
+- api/link/ui.colorpicker_gettext.md - 
 - api/link/ui.colorpicker_gettopparentview.md - returns top parent view
 - api/link/ui.colorpicker_getvalue.md - returns the current value of the control
 - api/link/ui.colorpicker_hasevent.md - checks whether the component has the specified event
@@ -106,6 +107,7 @@ The component handles RGB, HSL, and hex formats and allows setting custom colors
 - api/link/ui.colorpicker_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.colorpicker_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/link/ui.colorpicker_icon_config.md - sets an icon type
+- api/link/ui.colorpicker_icons_config.md - 
 - api/link/ui.colorpicker_id_config.md - the component ID
 - api/link/ui.colorpicker_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.colorpicker_inputpadding_config.md - padding of text in the input

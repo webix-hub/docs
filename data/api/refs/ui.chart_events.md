@@ -16,7 +16,7 @@ Events
 - api/ui.chart_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.chart_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.chart_onbindrequest_event.md - fires when the component is ready to receive data from the master component
-- api/link/ui.chart_ondatarequest_event.md - fires when data from the server side is requested (part of dynamic loading)
+- api/link/ui.chart_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.chart_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.chart_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.chart_onitemclick_event.md - fires when a component item was clicked

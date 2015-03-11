@@ -55,14 +55,14 @@ Methods
 - api/link/ui.tree_hasevent.md - checks whether the component has the specified event
 - api/link/ui.tree_hide.md - hides the view
 - api/link/ui.tree_isbranch.md - checks whether the node has any children
-- api/link/ui.tree_isbranchopen.md - checks whether the specified branch opened or closed
+- api/link/ui.tree_isbranchopen.md - checks whether the specified branch is open or closed
 - api/link/ui.tree_ischecked.md - checks whether the specified node is checked
 - api/link/ui.tree_isenabled.md - checks whether the view is enabled
 - api/link/ui.tree_isselected.md - checks whether the specified item is selected or not
 - api/link/ui.tree_isvisible.md - checks whether the view is visible
-- api/link/ui.tree_load.md - loads data from an external data source
-- api/link/ui.tree_loadbranch.md - loads data to the specified branch
-- api/link/ui.tree_loadnext.md - sends a request to load the specified number of records to the end or to the specified position
+- api/link/ui.tree_load.md - loads data from an external data source.
+- api/link/ui.tree_loadbranch.md - loads data to the specified branch, as direct children of the node with the id provided
+- api/link/ui.tree_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
 - api/link/ui.tree_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.tree_mapevent.md - routes events from one object to another
 - api/link/ui.tree_move.md - moves the specified item to the new position
@@ -78,12 +78,12 @@ Methods
 - api/link/ui.tree_scrollto.md - scrolls the data container to a certain position
 - api/link/ui.tree_select.md - selects the specified item(s)
 - api/link/ui.tree_selectall.md - selects all items or the specified range
-- api/link/ui.tree_serialize.md - serializes data to a json object
+- api/link/ui.tree_serialize.md - serializes data to a JSON object
 - api/link/ui.tree_setstate.md - restores the specified state
 - api/link/ui.tree_show.md - makes the component visible
 - api/link/ui.tree_showitem.md - scrolls the component to make the specified item visible
 - api/link/ui.tree_sort.md - sorts datastore
-- api/link/ui.tree_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.tree_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.tree_unbind.md - breaks "bind" link
 - api/link/ui.tree_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.tree_uncheckall.md - uncheck all items in the tree

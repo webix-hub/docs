@@ -43,11 +43,11 @@ DataStore
 - api/datastore_remove.md - removes the specified item from datastore
 - api/datastore_removemark.md - removes a flag set for the specified item
 - api/datastore_scheme.md - sets hash of default values for properties
-- api/datastore_serialize.md - serializes data to a json object
+- api/datastore_serialize.md - serializes data to a JSON object
 - api/datastore_setdriver.md - defines type of used data driver
 - api/datastore_silent.md - code that you pass here as the parameter will not be affected by 'onStoreUpdated' event handler
 - api/datastore_sort.md - sorts datastore
-- api/datastore_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/datastore_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/datastore_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/datastore_unsync.md - breaks "sync" link
 - api/datastore_updateitem.md - sets properties of the data item

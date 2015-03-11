@@ -11,7 +11,7 @@ Methods
 - api/datarecord_getvalues.md - gets hash of data values
 - api/link/datarecord_hasevent.md - checks whether the component has the specified event
 - api/datarecord_isvisible.md - returns true if current view is visible
-- api/link/datarecord_load.md - loads data from an external data source
+- api/link/datarecord_load.md - loads data from an external data source.
 - api/link/datarecord_mapevent.md - routes events from one object to another
 - api/link/datarecord_parse.md - loads data to the component from an inline data source
 - api/datarecord_refresh.md - repaints the whole view or a certain item

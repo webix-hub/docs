@@ -23,7 +23,7 @@ Events
 - api/link/ui.dataview_onbeforeselect_event.md - fires before item selection is started
 - api/link/ui.dataview_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.dataview_onbindrequest_event.md - fires when the component is ready to receive data from the master component
-- api/link/ui.dataview_ondatarequest_event.md - fires when data from the server side is requested (part of dynamic loading)
+- api/link/ui.dataview_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.dataview_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.dataview_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.dataview_ondragout_event.md - fires when a dragged element is moved outside of the droppable area

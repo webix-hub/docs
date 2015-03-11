@@ -14,6 +14,7 @@ Others
 - api/i18n_locales_other.md - creates a new locale
 - api/i18n_longdateformat_other.md - sets the default locale the long-date format
 - api/i18n_parseformat_other.md - sets the default locale parsing date format. Initially it's "**%Y-%m-%d**" (the default MySQL date format)
+- api/i18n_parsetimeformat_other.md - 
 - api/i18n_price_other.md - sets the default locale price format
 - api/i18n_pricesettings_other.md - sets the format of the price number
 - api/i18n_timeformat_other.md - sets the default locale time format
@@ -32,6 +33,7 @@ Others
 - api/i18n_locales_other.md
 - api/i18n_longdateformat_other.md
 - api/i18n_parseformat_other.md
+- api/i18n_parsetimeformat_other.md
 - api/i18n_price_other.md
 - api/i18n_pricesettings_other.md
 - api/i18n_timeformat_other.md

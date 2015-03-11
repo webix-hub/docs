@@ -13,8 +13,8 @@ Properties
 - api/link/ui.contextmenu_clipboard_config.md - enables/disables clipboard support
 - api/link/ui.contextmenu_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.contextmenu_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.contextmenu_data_config.md - an inline dataset that data to the component will be load from.
-- api/link/ui.contextmenu_datafeed_config.md - the url that the component will use to reload data during binding
+- api/link/ui.contextmenu_data_config.md - JavaScript array containing data for the component
+- api/link/ui.contextmenu_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.contextmenu_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.contextmenu_datatype_config.md - the type of loaded data
 - api/link/ui.contextmenu_disabled_config.md - indicates whether an item is enabled or not
@@ -46,11 +46,11 @@ Properties
 - api/link/ui.contextmenu_padding_config.md - sets paddings of the chart content
 - api/link/ui.contextmenu_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
 - api/link/ui.contextmenu_position_config.md - sets position of the window relative to the the screen
-- api/link/ui.contextmenu_ready_config.md - a handler that is called just after the page has been completely parsed
+- api/link/ui.contextmenu_ready_config.md - event handler called just after the component has been completely initialized
 - api/link/ui.contextmenu_relative_config.md - positions a popup window relative to the component it's connected with
 - api/link/ui.contextmenu_removemissed_config.md - defines how to treat items in case of reloading
 - api/link/ui.contextmenu_rules_config.md - set of validation rules for the component
-- api/link/ui.contextmenu_save_config.md - defines urls for datasaving
+- api/link/ui.contextmenu_save_config.md - defines URLs for data saving
 - api/link/ui.contextmenu_scheme_config.md - defines schemes for data processing
 - api/link/ui.contextmenu_scroll_config.md - enables/disables the scroll bar
 - api/link/ui.contextmenu_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
@@ -62,7 +62,7 @@ Properties
 - api/link/ui.contextmenu_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.contextmenu_top_config.md - the top offset of a window
 - api/link/ui.contextmenu_type_config.md - object that specifies items presentation
-- api/link/ui.contextmenu_url_config.md - the url the component will use to load data after its initialization
+- api/link/ui.contextmenu_url_config.md - the URL the component will use to load data after its initialization
 - api/link/ui.contextmenu_width_config.md - sets the width of the component
 - api/link/ui.contextmenu_xcount_config.md - defines width of view in items
 - api/link/ui.contextmenu_ycount_config.md - defines height of view in items

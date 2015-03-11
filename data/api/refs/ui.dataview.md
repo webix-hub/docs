@@ -74,8 +74,8 @@ The component presents a collection of objects according to a user-defined templ
 - api/link/ui.dataview_isenabled.md - checks whether the view is enabled
 - api/link/ui.dataview_isselected.md - checks whether the specified item is selected or not
 - api/link/ui.dataview_isvisible.md - checks whether the view is visible
-- api/link/ui.dataview_load.md - loads data from an external data source
-- api/link/ui.dataview_loadnext.md - sends a request to load the specified number of records to the end or to the specified position
+- api/link/ui.dataview_load.md - loads data from an external data source.
+- api/link/ui.dataview_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
 - api/link/ui.dataview_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.dataview_mapevent.md - routes events from one object to another
 - api/link/ui.dataview_move.md - moves the specified item to the new position
@@ -93,12 +93,12 @@ The component presents a collection of objects according to a user-defined templ
 - api/link/ui.dataview_scrollto.md - scrolls the data container to a certain position
 - api/link/ui.dataview_select.md - selects the specified item(s)
 - api/link/ui.dataview_selectall.md - selects all items or the specified range
-- api/link/ui.dataview_serialize.md - serializes data to a json object
+- api/link/ui.dataview_serialize.md - serializes data to a JSON object
 - api/link/ui.dataview_setpage.md - makes the specified page visible (assuming that the pager was defined )
 - api/link/ui.dataview_show.md - makes the component visible
 - api/link/ui.dataview_showitem.md - scrolls the component to make the specified item visible
 - api/link/ui.dataview_sort.md - sorts datastore
-- api/link/ui.dataview_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.dataview_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.dataview_unbind.md - breaks "bind" link
 - api/link/ui.dataview_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.dataview_unselect.md - removes selection from the specified item
@@ -133,7 +133,7 @@ The component presents a collection of objects according to a user-defined templ
 - api/link/ui.dataview_onbeforeselect_event.md - fires before item selection is started
 - api/link/ui.dataview_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.dataview_onbindrequest_event.md - fires when the component is ready to receive data from the master component
-- api/link/ui.dataview_ondatarequest_event.md - fires when data from the server side is requested (part of dynamic loading)
+- api/link/ui.dataview_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.dataview_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.dataview_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.dataview_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
@@ -168,9 +168,9 @@ The component presents a collection of objects according to a user-defined templ
 - api/link/ui.dataview_click_config.md - sets an action happening on a button click
 - api/link/ui.dataview_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.dataview_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.dataview_data_config.md - an inline dataset that data to the component will be load from.
-- api/link/ui.dataview_datafeed_config.md - the url that the component will use to reload data during binding
-- api/link/ui.dataview_datafetch_config.md - defines the start position DataTable will load data from
+- api/link/ui.dataview_data_config.md - JavaScript array containing data for the component
+- api/link/ui.dataview_datafeed_config.md - the URL that the component will use to reload data during binding
+- api/link/ui.dataview_datafetch_config.md - defines the number of records that will be loaded during each dynamic loading request
 - api/link/ui.dataview_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.dataview_datatype_config.md - the type of loaded data
 - api/link/ui.dataview_disabled_config.md - indicates whether an item is enabled or not
@@ -181,7 +181,7 @@ The component presents a collection of objects according to a user-defined templ
 - api/link/ui.dataview_height_config.md - sets the height of the component
 - api/link/ui.dataview_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.dataview_id_config.md - the component ID
-- api/link/ui.dataview_loadahead_config.md - how much records need to be preloaded in additional to mandatory ones
+- api/link/ui.dataview_loadahead_config.md - how the number of records that need to be loaded in addition to mandatory ones during each dynamic loading request
 - api/link/ui.dataview_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.dataview_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.dataview_minheight_config.md - sets the minimal height for the view
@@ -194,10 +194,10 @@ The component presents a collection of objects according to a user-defined templ
 - api/link/ui.dataview_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
 - api/link/ui.dataview_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
 - api/link/ui.dataview_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
-- api/link/ui.dataview_ready_config.md - a handler that is called just after the page has been completely parsed
+- api/link/ui.dataview_ready_config.md - event handler called just after the component has been completely initialized
 - api/link/ui.dataview_removemissed_config.md - defines how to treat items in case of reloading
 - api/link/ui.dataview_rules_config.md - set of validation rules for the component
-- api/link/ui.dataview_save_config.md - defines urls for datasaving
+- api/link/ui.dataview_save_config.md - defines URLs for data saving
 - api/link/ui.dataview_scheme_config.md - defines schemes for data processing
 - api/link/ui.dataview_scroll_config.md - enables/disables the scroll bar
 - api/link/ui.dataview_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
@@ -205,7 +205,7 @@ The component presents a collection of objects according to a user-defined templ
 - api/link/ui.dataview_template_config.md - the component template
 - api/link/ui.dataview_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.dataview_type_config.md - object that specifies items presentation
-- api/link/ui.dataview_url_config.md - the url the component will use to load data after its initialization
+- api/link/ui.dataview_url_config.md - the URL the component will use to load data after its initialization
 - api/link/ui.dataview_width_config.md - sets the width of the component
 - api/ui.dataview_xcount_config.md - adjusts the view width to display the defined number of items in a row
 - api/ui.dataview_ycount_config.md - adjusts the view height to display the defined number of items in a column

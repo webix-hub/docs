@@ -35,6 +35,7 @@ Methods
 - api/link/ui.submenu_getitem.md - gets the object of the data item with the specified id
 - api/link/ui.submenu_getitemnode.md - returns html element of the item
 - api/link/ui.submenu_getlastid.md - returns the id of the last item
+- api/link/ui.submenu_getmenu.md - 
 - api/link/ui.submenu_getmenuitem.md - search for menu item in submenus
 - api/link/ui.submenu_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.submenu_getnode.md - returns the main HTML container for the calling object
@@ -56,8 +57,8 @@ Methods
 - api/link/ui.submenu_isenabled.md - checks whether the view is enabled
 - api/link/ui.submenu_isselected.md - checks whether the specified item is selected or not
 - api/link/ui.submenu_isvisible.md - checks whether the view is visible
-- api/link/ui.submenu_load.md - loads data from an external data source
-- api/link/ui.submenu_loadnext.md - sends a request to load the specified number of records to the end or to the specified position
+- api/link/ui.submenu_load.md - loads data from an external data source.
+- api/link/ui.submenu_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
 - api/link/ui.submenu_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.submenu_mapevent.md - routes events from one object to another
 - api/link/ui.submenu_move.md - moves the specified item to the new position
@@ -76,13 +77,13 @@ Methods
 - api/link/ui.submenu_scrollto.md - scrolls the data container to a certain position
 - api/link/ui.submenu_select.md - selects the specified item(s)
 - api/link/ui.submenu_selectall.md - selects all items or the specified range
-- api/link/ui.submenu_serialize.md - serializes data to a json object
+- api/link/ui.submenu_serialize.md - serializes data to a JSON object
 - api/link/ui.submenu_setpage.md - makes the specified page visible (assuming that the pager was defined )
 - api/link/ui.submenu_setposition.md - sets window's position
 - api/link/ui.submenu_show.md - makes the component visible
 - api/link/ui.submenu_showitem.md - scrolls the component to make the specified item visible
 - api/link/ui.submenu_sort.md - sorts datastore
-- api/link/ui.submenu_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.submenu_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.submenu_unbind.md - breaks "bind" link
 - api/link/ui.submenu_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.submenu_unselect.md - removes selection from the specified item
@@ -125,6 +126,7 @@ Methods
 - api/link/ui.submenu_getitem.md
 - api/link/ui.submenu_getitemnode.md
 - api/link/ui.submenu_getlastid.md
+- api/link/ui.submenu_getmenu.md
 - api/link/ui.submenu_getmenuitem.md
 - api/link/ui.submenu_getnextid.md
 - api/link/ui.submenu_getnode.md

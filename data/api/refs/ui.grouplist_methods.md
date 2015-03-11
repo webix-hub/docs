@@ -49,8 +49,8 @@ Methods
 - api/link/ui.grouplist_isenabled.md - checks whether the view is enabled
 - api/link/ui.grouplist_isselected.md - checks whether the specified item is selected or not
 - api/link/ui.grouplist_isvisible.md - checks whether the view is visible
-- api/link/ui.grouplist_load.md - loads data from an external data source
-- api/link/ui.grouplist_loadnext.md - sends a request to load the specified number of records to the end or to the specified position
+- api/link/ui.grouplist_load.md - loads data from an external data source.
+- api/link/ui.grouplist_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
 - api/link/ui.grouplist_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.grouplist_mapevent.md - routes events from one object to another
 - api/link/ui.grouplist_move.md - moves the specified item to the new position
@@ -68,12 +68,12 @@ Methods
 - api/link/ui.grouplist_scrollto.md - scrolls the data container to a certain position
 - api/link/ui.grouplist_select.md - selects the specified item(s)
 - api/link/ui.grouplist_selectall.md - selects all items or the specified range
-- api/link/ui.grouplist_serialize.md - serializes data to a json object
+- api/link/ui.grouplist_serialize.md - serializes data to a JSON object
 - api/link/ui.grouplist_setpage.md - makes the specified page visible (assuming that the pager was defined )
 - api/link/ui.grouplist_show.md - makes the component visible
 - api/link/ui.grouplist_showitem.md - scrolls the component to make the specified item visible
 - api/link/ui.grouplist_sort.md - sorts datastore
-- api/link/ui.grouplist_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.grouplist_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.grouplist_unbind.md - breaks "bind" link
 - api/link/ui.grouplist_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.grouplist_ungroup.md - ungroups data

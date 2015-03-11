@@ -24,15 +24,15 @@ Methods
 - api/link/datacollection_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
 - api/link/datacollection_hasevent.md - checks whether the component has the specified event
 - api/datacollection_isvisible.md - returns true if current view is visible
-- api/link/datacollection_load.md - loads data from an external data source
-- api/link/datacollection_loadnext.md - sends a request to load the specified number of records to the end or to the specified position
+- api/link/datacollection_load.md - loads data from an external data source.
+- api/link/datacollection_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
 - api/link/datacollection_mapevent.md - routes events from one object to another
 - api/link/datacollection_parse.md - loads data to the component from an inline data source
 - api/link/datacollection_refresh.md - repaints the whole view or a certain item
 - api/link/datacollection_remove.md - removes the specified item from datastore
-- api/link/datacollection_serialize.md - serializes data to a json object
+- api/link/datacollection_serialize.md - serializes data to a JSON object
 - api/link/datacollection_sort.md - sorts datastore
-- api/link/datacollection_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/datacollection_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/datacollection_unbind.md - breaks "bind" link
 - api/link/datacollection_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/datacollection_updateitem.md - sets properties of the data item

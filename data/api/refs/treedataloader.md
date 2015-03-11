@@ -10,7 +10,7 @@ TreeDataLoader
 <div class='h2'>Methods</div>
 
 {{api
-- api/treedataloader_loadbranch.md - loads data to the specified branch
+- api/treedataloader_loadbranch.md - loads data to the specified branch, as direct children of the node with the id provided
 }}
 
 
@@ -24,7 +24,7 @@ TreeDataLoader
 - api/link/treedataloader_onbeforeadd_event.md - fires before adding item to datastore
 - api/link/treedataloader_onbeforedelete_event.md - fires before item deleting
 - api/link/treedataloader_onbeforesort_event.md - fires before sorting dataset
-- api/treedataloader_ondatarequest_event.md - fires the moment request for auto-loaded data fires (during dynamic loading)
+- api/treedataloader_ondatarequest_event.md - fires when dynamically-loaded data is requested
 - api/link/treedataloader_ondataupdate_event.md - fires when data item is in update process
 }}
 

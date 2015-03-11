@@ -42,7 +42,7 @@ Events
 - api/link/ui.treetable_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.treetable_oncheck_event.md - fires when a checkbox is checked or unchecked in the datatable item
 - api/link/ui.treetable_oncolumnresize_event.md - fires when width of column was changed
-- api/link/ui.treetable_ondatarequest_event.md - fires when data from the server side is requested (part of dynamic loading)
+- api/link/ui.treetable_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.treetable_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.treetable_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.treetable_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
@@ -61,7 +61,7 @@ Events
 - api/link/ui.treetable_onrowresize_event.md - fires when height of row was changed
 - api/link/ui.treetable_onscrollx_event.md - fires when the user scrolls the table left or right
 - api/link/ui.treetable_onscrolly_event.md - fires when the user scrolls the table up or down
-- api/link/ui.treetable_onselectchange_event.md - fires when selection is changed in DataTable
+- api/link/ui.treetable_onselectchange_event.md - fires when selection is changed in a DataTable
 - api/link/ui.treetable_onstructureload_event.md - fires when the structure of DataTable (columns configuration) is initialized
 - api/link/ui.treetable_onstructureupdate_event.md - fires when structure of datatable was changed ( column added, hidden or reconfigured )
 - api/link/ui.treetable_onswipex_event.md - occurs on a horizontal swipe movement

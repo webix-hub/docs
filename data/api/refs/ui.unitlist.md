@@ -78,8 +78,8 @@ Support for various data template formats, sorting and filtering features. Check
 - api/link/ui.unitlist_isenabled.md - checks whether the view is enabled
 - api/link/ui.unitlist_isselected.md - checks whether the specified item is selected or not
 - api/link/ui.unitlist_isvisible.md - checks whether the view is visible
-- api/link/ui.unitlist_load.md - loads data from an external data source
-- api/link/ui.unitlist_loadnext.md - sends a request to load the specified number of records to the end or to the specified position
+- api/link/ui.unitlist_load.md - loads data from an external data source.
+- api/link/ui.unitlist_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
 - api/link/ui.unitlist_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.unitlist_mapevent.md - routes events from one object to another
 - api/link/ui.unitlist_move.md - moves the specified item to the new position
@@ -97,12 +97,12 @@ Support for various data template formats, sorting and filtering features. Check
 - api/link/ui.unitlist_scrollto.md - scrolls the data container to a certain position
 - api/link/ui.unitlist_select.md - selects the specified item(s)
 - api/link/ui.unitlist_selectall.md - selects all items or the specified range
-- api/link/ui.unitlist_serialize.md - serializes data to a json object
+- api/link/ui.unitlist_serialize.md - serializes data to a JSON object
 - api/link/ui.unitlist_setpage.md - makes the specified page visible (assuming that the pager was defined )
 - api/link/ui.unitlist_show.md - makes the component visible
 - api/link/ui.unitlist_showitem.md - scrolls the component to make the specified item visible
 - api/link/ui.unitlist_sort.md - sorts datastore
-- api/link/ui.unitlist_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.unitlist_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.unitlist_unbind.md - breaks "bind" link
 - api/link/ui.unitlist_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.unitlist_unselect.md - removes selection from the specified item
@@ -137,7 +137,7 @@ Support for various data template formats, sorting and filtering features. Check
 - api/link/ui.unitlist_onbeforeselect_event.md - fires before item selection is started
 - api/link/ui.unitlist_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.unitlist_onbindrequest_event.md - fires when the component is ready to receive data from the master component
-- api/link/ui.unitlist_ondatarequest_event.md - fires when data from the server side is requested (part of dynamic loading)
+- api/link/ui.unitlist_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.unitlist_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.unitlist_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.unitlist_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
@@ -175,8 +175,8 @@ Support for various data template formats, sorting and filtering features. Check
 - api/link/ui.unitlist_clipboard_config.md - enables/disables clipboard support
 - api/link/ui.unitlist_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.unitlist_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.unitlist_data_config.md - an inline dataset that data to the component will be load from.
-- api/link/ui.unitlist_datafeed_config.md - the url that the component will use to reload data during binding
+- api/link/ui.unitlist_data_config.md - JavaScript array containing data for the component
+- api/link/ui.unitlist_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.unitlist_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.unitlist_datatype_config.md - the type of loaded data
 - api/link/ui.unitlist_disabled_config.md - indicates whether an item is enabled or not
@@ -200,10 +200,10 @@ Support for various data template formats, sorting and filtering features. Check
 - api/link/ui.unitlist_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
 - api/link/ui.unitlist_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
 - api/link/ui.unitlist_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
-- api/link/ui.unitlist_ready_config.md - a handler that is called just after the page has been completely parsed
+- api/link/ui.unitlist_ready_config.md - event handler called just after the component has been completely initialized
 - api/link/ui.unitlist_removemissed_config.md - defines how to treat items in case of reloading
 - api/link/ui.unitlist_rules_config.md - set of validation rules for the component
-- api/link/ui.unitlist_save_config.md - defines urls for datasaving
+- api/link/ui.unitlist_save_config.md - defines URLs for data saving
 - api/link/ui.unitlist_scheme_config.md - defines schemes for data processing
 - api/link/ui.unitlist_scroll_config.md - enables/disables the scroll bar
 - api/link/ui.unitlist_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
@@ -214,7 +214,7 @@ Support for various data template formats, sorting and filtering features. Check
 - api/link/ui.unitlist_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.unitlist_type_config.md - object that specifies items presentation
 - api/ui.unitlist_uniteby_config.md - sets the template according which items will be grouped in units.
-- api/link/ui.unitlist_url_config.md - the url the component will use to load data after its initialization
+- api/link/ui.unitlist_url_config.md - the URL the component will use to load data after its initialization
 - api/link/ui.unitlist_width_config.md - sets the width of the component
 - api/link/ui.unitlist_xcount_config.md - defines width of view in items
 - api/link/ui.unitlist_ycount_config.md - defines height of view in items

@@ -14,9 +14,9 @@ Properties
 - api/link/ui.treetable_columns_config.md - configures columns of the table
 - api/link/ui.treetable_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.treetable_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.treetable_data_config.md - an inline dataset that data to the component will be load from.
-- api/link/ui.treetable_datafeed_config.md - the url that the component will use to reload data during binding
-- api/link/ui.treetable_datafetch_config.md - defines the start position DataTable will load data from
+- api/link/ui.treetable_data_config.md - JavaScript array containing data for the component
+- api/link/ui.treetable_datafeed_config.md - the URL that the component will use to reload data during binding
+- api/link/ui.treetable_datafetch_config.md - defines the number of records that will be loaded into datatable during the next dynamic loading call
 - api/link/ui.treetable_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.treetable_datatype_config.md - the type of loaded data
 - api/link/ui.treetable_delimiter_config.md - sets CSV delimiters for clipboard operations
@@ -61,7 +61,7 @@ Properties
 - api/link/ui.treetable_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
 - api/link/ui.treetable_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
 - api/link/ui.treetable_prerender_config.md - invokes the full rendering of DataTable data
-- api/link/ui.treetable_ready_config.md - a handler that is called just after the page has been completely parsed
+- api/link/ui.treetable_ready_config.md - event handler called just after the component has been completely initialized
 - api/link/ui.treetable_removemissed_config.md - defines how to treat items in case of reloading
 - api/link/ui.treetable_resizecolumn_config.md - enables/disables horizontal resizing of columns
 - api/link/ui.treetable_resizerow_config.md - enables/disables vertical resizing of rows
@@ -69,7 +69,7 @@ Properties
 - api/link/ui.treetable_rowheight_config.md - sets the default height for rows
 - api/link/ui.treetable_rowlineheight_config.md - default line height for grid's row
 - api/link/ui.treetable_rules_config.md - set of validation rules for the component
-- api/link/ui.treetable_save_config.md - defines urls for datasaving
+- api/link/ui.treetable_save_config.md - defines URLs for data saving
 - api/link/ui.treetable_scheme_config.md - defines schemes for data processing
 - api/link/ui.treetable_scroll_config.md - enables or disables scroll for the datatable
 - api/link/ui.treetable_scrollaligny_config.md - enables/disables scrolling the table just by whole rows (i.e. you won't be allowed to scroll along the full length of rows)
@@ -80,7 +80,7 @@ Properties
 - api/link/ui.treetable_threestate_config.md - defines three-state checkboxes for the tree. Flase by default.
 - api/link/ui.treetable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.treetable_type_config.md - used for configuring presentation of items
-- api/link/ui.treetable_url_config.md - the url the component will use to load data after its initialization
+- api/link/ui.treetable_url_config.md - the URL the component will use to load data after its initialization
 - api/link/ui.treetable_width_config.md - sets the width of the component
 - api/link/ui.treetable_ycount_config.md - defines height of datatable in rows
 }}

@@ -1,7 +1,7 @@
 CustomScroll 
 =============
 
-Renders custom scrollbars to Webix views 
+{{memo Renders custom scrollbars to Webix views. }}
 
 
 <div class='h2'>Methods</div>

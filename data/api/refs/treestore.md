@@ -2,9 +2,9 @@ TreeStore
 =============
 
 
-{{memo Hierarchical store. }}
+{{memo Hierarchical store.. }}
 
-Can't be initialized directly, need to be created on base of DataStore
+Can't be initialized directly; must be extended from [DataStore](api/datastore.md).
 
 ~~~js
 var store = new webix.DataStore();
@@ -33,7 +33,7 @@ webix.extend(store, webix.TreeStore, true);
 - api/treestore_isbranch.md - checks whether the node has any children
 - api/treestore_provideapi.md - assigns methods (and events) of DataStore to an object
 - api/treestore_remove.md - removes the specified item from datastore
-- api/treestore_serialize.md - serializes data to a json object
+- api/treestore_serialize.md - serializes data to a JSON object
 }}
 
 
@@ -41,6 +41,7 @@ webix.extend(store, webix.TreeStore, true);
 
 
 {{api
+- api/treestore_page without name api/treestore_onafteradd_event.md_event.md - 
 - api/treestore_onafterdelete_event.md - fires after item deleting
 - api/treestore_onbeforedelete_event.md - fires before item deleting
 - api/treestore_onstoreupdated_event.md - fires after data is changed in datastore

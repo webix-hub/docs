@@ -2,19 +2,19 @@ Properties
 ==========
 
 {{api
-- api/link/treecollection_data_config.md - an inline dataset that data to the component will be load from.
-- api/link/treecollection_datafeed_config.md - the url that the component will use to reload data during binding
+- api/link/treecollection_data_config.md - JavaScript array containing data for the component
+- api/link/treecollection_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/treecollection_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/treecollection_datatype_config.md - the type of loaded data
 - api/link/treecollection_filtermode_config.md - defines the pattern for tree item filtering
 - api/link/treecollection_id_config.md - the component ID
 - api/link/treecollection_on_config.md - allows attaching custom handlers to inner events of the component
-- api/link/treecollection_ready_config.md - a handler that is called just after the page has been completely parsed
+- api/link/treecollection_ready_config.md - event handler called just after the component has been completely initialized
 - api/link/treecollection_removemissed_config.md - defines how to treat items in case of reloading
 - api/link/treecollection_rules_config.md - set of validation rules for the component
-- api/link/treecollection_save_config.md - defines urls for datasaving
+- api/link/treecollection_save_config.md - defines URLs for data saving
 - api/link/treecollection_scheme_config.md - defines schemes for data processing
-- api/link/treecollection_url_config.md - the url the component will use to load data after its initialization
+- api/link/treecollection_url_config.md - the URL the component will use to load data after its initialization
 }}
 
 @index:

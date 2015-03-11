@@ -81,8 +81,8 @@ Methods
 - api/ui.datatable_iscolumnvisible.md - returns true if column is visible
 - api/link/ui.datatable_isenabled.md - checks whether the view is enabled
 - api/link/ui.datatable_isvisible.md - checks whether the view is visible
-- api/link/ui.datatable_load.md - loads data from an external data source
-- api/link/ui.datatable_loadnext.md - sends a request to load the specified number of records to the end or to the specified position
+- api/link/ui.datatable_load.md - loads data from an external data source.
+- api/link/ui.datatable_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
 - api/ui.datatable_locate.md - converts an HTML node or event object to in-table position
 - api/ui.datatable_mapcells.md - applies the callback to a range of cells
 - api/link/ui.datatable_mapevent.md - routes events from one object to another
@@ -111,7 +111,7 @@ Methods
 - api/ui.datatable_scrollto.md - scrolls the view to the defined position
 - api/ui.datatable_select.md - selects the specified element
 - api/ui.datatable_selectrange.md - selects the specified range of elements
-- api/link/ui.datatable_serialize.md - serializes data to a json object
+- api/link/ui.datatable_serialize.md - serializes data to a JSON object
 - api/ui.datatable_setcolumnwidth.md - sets the width of the specified column
 - api/link/ui.datatable_setpage.md - makes the specified page visible (assuming that the pager was defined )
 - api/ui.datatable_setrowheight.md - sets the height of the specified row
@@ -124,7 +124,7 @@ Methods
 - api/ui.datatable_showitembyindex.md - 'scrolls' the table to make the specified row visible
 - api/ui.datatable_showoverlay.md - shows the overlay message over the body of DataTable
 - api/link/ui.datatable_sort.md - sorts datastore
-- api/link/ui.datatable_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.datatable_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.datatable_unbind.md - breaks "bind" link
 - api/link/ui.datatable_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.datatable_ungroup.md - ungroups data

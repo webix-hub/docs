@@ -45,6 +45,7 @@ ui.datepicker
 - api/link/ui.datepicker_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.datepicker_getparentview.md - returns the parent view of the component
 - api/ui.datepicker_getpopup.md - returns popup element of the input
+- api/ui.datepicker_gettext.md - 
 - api/link/ui.datepicker_gettopparentview.md - returns top parent view
 - api/link/ui.datepicker_getvalue.md - returns the current value of the control
 - api/link/ui.datepicker_hasevent.md - checks whether the component has the specified event
@@ -106,6 +107,7 @@ ui.datepicker
 - api/link/ui.datepicker_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.datepicker_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/ui.datepicker_icon_config.md - sets an icon type
+- api/ui.datepicker_icons_config.md - 
 - api/link/ui.datepicker_id_config.md - the component ID
 - api/link/ui.datepicker_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.datepicker_inputpadding_config.md - padding of text in the input

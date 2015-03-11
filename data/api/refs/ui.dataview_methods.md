@@ -46,8 +46,8 @@ Methods
 - api/link/ui.dataview_isenabled.md - checks whether the view is enabled
 - api/link/ui.dataview_isselected.md - checks whether the specified item is selected or not
 - api/link/ui.dataview_isvisible.md - checks whether the view is visible
-- api/link/ui.dataview_load.md - loads data from an external data source
-- api/link/ui.dataview_loadnext.md - sends a request to load the specified number of records to the end or to the specified position
+- api/link/ui.dataview_load.md - loads data from an external data source.
+- api/link/ui.dataview_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
 - api/link/ui.dataview_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.dataview_mapevent.md - routes events from one object to another
 - api/link/ui.dataview_move.md - moves the specified item to the new position
@@ -65,12 +65,12 @@ Methods
 - api/link/ui.dataview_scrollto.md - scrolls the data container to a certain position
 - api/link/ui.dataview_select.md - selects the specified item(s)
 - api/link/ui.dataview_selectall.md - selects all items or the specified range
-- api/link/ui.dataview_serialize.md - serializes data to a json object
+- api/link/ui.dataview_serialize.md - serializes data to a JSON object
 - api/link/ui.dataview_setpage.md - makes the specified page visible (assuming that the pager was defined )
 - api/link/ui.dataview_show.md - makes the component visible
 - api/link/ui.dataview_showitem.md - scrolls the component to make the specified item visible
 - api/link/ui.dataview_sort.md - sorts datastore
-- api/link/ui.dataview_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.dataview_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.dataview_unbind.md - breaks "bind" link
 - api/link/ui.dataview_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.dataview_unselect.md - removes selection from the specified item

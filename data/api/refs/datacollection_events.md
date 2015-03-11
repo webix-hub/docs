@@ -11,7 +11,7 @@ Events
 - api/link/datacollection_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/link/datacollection_onbeforesort_event.md - fires before sorting dataset
 - api/link/datacollection_onbindrequest_event.md - fires when the component is ready to receive data from the master component
-- api/link/datacollection_ondatarequest_event.md - fires when data from the server side is requested (part of dynamic loading)
+- api/link/datacollection_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/datacollection_ondataupdate_event.md - fires when data item is in update process
 - api/link/datacollection_ondestruct_event.md - occurs when component destroyed
 - api/link/datacollection_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )

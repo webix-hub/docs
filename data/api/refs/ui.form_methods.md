@@ -31,7 +31,7 @@ Methods
 - api/link/ui.form_isdirty.md - checks whether changes within form were made
 - api/link/ui.form_isenabled.md - checks whether the view is enabled
 - api/link/ui.form_isvisible.md - checks whether the view is visible
-- api/link/ui.form_load.md - loads data from an external data source
+- api/link/ui.form_load.md - loads data from an external data source.
 - api/link/ui.form_mapevent.md - routes events from one object to another
 - api/link/ui.form_parse.md - loads data to the component from an inline data source
 - api/link/ui.form_reconstruct.md - rebuilds the layout

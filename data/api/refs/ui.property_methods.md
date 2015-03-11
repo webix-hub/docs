@@ -34,7 +34,7 @@ Methods
 - api/link/ui.property_hide.md - hides the view
 - api/link/ui.property_isenabled.md - checks whether the view is enabled
 - api/link/ui.property_isvisible.md - checks whether the view is visible
-- api/link/ui.property_load.md - loads data from an external data source
+- api/link/ui.property_load.md - loads data from an external data source.
 - api/ui.property_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.property_mapevent.md - routes events from one object to another
 - api/link/ui.property_parse.md - loads data to the component from an inline data source

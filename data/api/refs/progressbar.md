@@ -1,7 +1,7 @@
 ProgressBar 
 =============
 
-Draws a progress bar (icon) for a view or application part.
+{{memo Draws a progress bar (icon) for a view or application part. }}
 
 
 

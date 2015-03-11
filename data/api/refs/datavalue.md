@@ -1,7 +1,7 @@
 DataValue 
 =============
 
-{{memo View-less object, stores single value. }}
+{{memo View-less object that stores a single value. }}
 
 
 

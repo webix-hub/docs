@@ -22,7 +22,7 @@ Methods
 - api/link/ui.template_hide.md - hides the view
 - api/link/ui.template_isenabled.md - checks whether the view is enabled
 - api/link/ui.template_isvisible.md - checks whether the view is visible
-- api/link/ui.template_load.md - loads data from an external data source
+- api/link/ui.template_load.md - loads data from an external data source.
 - api/link/ui.template_mapevent.md - routes events from one object to another
 - api/link/ui.template_parse.md - loads data to the component from an inline data source
 - api/ui.template_refresh.md - repaints the component

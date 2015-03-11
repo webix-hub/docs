@@ -6,7 +6,7 @@ Methods
 - api/link/ui.contextmenu_addcss.md - applied CSS class to a component item
 - api/link/ui.contextmenu_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.contextmenu_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
-- api/link/ui.contextmenu_attachto.md - attaches a context menu to webix component
+- api/link/ui.contextmenu_attachto.md - attaches a context menu to a Webix component
 - api/link/ui.contextmenu_bind.md - binds components
 - api/link/ui.contextmenu_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.contextmenu_callevent.md - calls an inner event
@@ -37,6 +37,7 @@ Methods
 - api/link/ui.contextmenu_getitem.md - gets the object of the data item with the specified id
 - api/link/ui.contextmenu_getitemnode.md - returns html element of the item
 - api/link/ui.contextmenu_getlastid.md - returns the id of the last item
+- api/link/ui.contextmenu_getmenu.md - 
 - api/link/ui.contextmenu_getmenuitem.md - search for menu item in submenus
 - api/link/ui.contextmenu_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.contextmenu_getnode.md - returns the main HTML container for the calling object
@@ -58,8 +59,8 @@ Methods
 - api/link/ui.contextmenu_isenabled.md - checks whether the view is enabled
 - api/link/ui.contextmenu_isselected.md - checks whether the specified item is selected or not
 - api/link/ui.contextmenu_isvisible.md - checks whether the view is visible
-- api/link/ui.contextmenu_load.md - loads data from an external data source
-- api/link/ui.contextmenu_loadnext.md - sends a request to load the specified number of records to the end or to the specified position
+- api/link/ui.contextmenu_load.md - loads data from an external data source.
+- api/link/ui.contextmenu_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
 - api/link/ui.contextmenu_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.contextmenu_mapevent.md - routes events from one object to another
 - api/link/ui.contextmenu_move.md - moves the specified item to the new position
@@ -78,13 +79,13 @@ Methods
 - api/link/ui.contextmenu_scrollto.md - scrolls the data container to a certain position
 - api/link/ui.contextmenu_select.md - selects the specified item(s)
 - api/link/ui.contextmenu_selectall.md - selects all items or the specified range
-- api/link/ui.contextmenu_serialize.md - serializes data to a json object
+- api/link/ui.contextmenu_serialize.md - serializes data to a JSON object
 - api/link/ui.contextmenu_setpage.md - makes the specified page visible (assuming that the pager was defined )
 - api/link/ui.contextmenu_setposition.md - sets window's position
 - api/link/ui.contextmenu_show.md - makes the component visible
 - api/link/ui.contextmenu_showitem.md - scrolls the component to make the specified item visible
 - api/link/ui.contextmenu_sort.md - sorts datastore
-- api/link/ui.contextmenu_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.contextmenu_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.contextmenu_unbind.md - breaks "bind" link
 - api/link/ui.contextmenu_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.contextmenu_unselect.md - removes selection from the specified item
@@ -129,6 +130,7 @@ Methods
 - api/link/ui.contextmenu_getitem.md
 - api/link/ui.contextmenu_getitemnode.md
 - api/link/ui.contextmenu_getlastid.md
+- api/link/ui.contextmenu_getmenu.md
 - api/link/ui.contextmenu_getmenuitem.md
 - api/link/ui.contextmenu_getnextid.md
 - api/link/ui.contextmenu_getnode.md

@@ -1,7 +1,7 @@
 DataRecord 
 =============
 
-{{memo Data binding for components which store collection of data object. }}
+{{memo Data View-less component that stores a single data record. }}
 
 
 
@@ -19,7 +19,7 @@ DataRecord
 - api/datarecord_getvalues.md - gets hash of data values
 - api/link/datarecord_hasevent.md - checks whether the component has the specified event
 - api/datarecord_isvisible.md - returns true if current view is visible
-- api/link/datarecord_load.md - loads data from an external data source
+- api/link/datarecord_load.md - loads data from an external data source.
 - api/link/datarecord_mapevent.md - routes events from one object to another
 - api/link/datarecord_parse.md - loads data to the component from an inline data source
 - api/datarecord_refresh.md - repaints the whole view or a certain item
@@ -44,12 +44,12 @@ DataRecord
 <div class='h2'>Properties</div>
 
 {{api
-- api/link/datarecord_data_config.md - an inline dataset that data to the component will be load from.
-- api/link/datarecord_datafeed_config.md - the url that the component will use to reload data during binding
+- api/link/datarecord_data_config.md - JavaScript array containing data for the component
+- api/link/datarecord_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/datarecord_datatype_config.md - the type of loaded data
 - api/link/datarecord_id_config.md - the component ID
 - api/link/datarecord_on_config.md - allows attaching custom handlers to inner events of the component
-- api/link/datarecord_url_config.md - the url the component will use to load data after its initialization
+- api/link/datarecord_url_config.md - the URL the component will use to load data after its initialization
 }}
 
 

@@ -28,7 +28,7 @@ Methods
 - api/link/ui.htmlform_isdirty.md - checks whether changes within form were made
 - api/link/ui.htmlform_isenabled.md - checks whether the view is enabled
 - api/link/ui.htmlform_isvisible.md - checks whether the view is visible
-- api/link/ui.htmlform_load.md - loads data from an external data source
+- api/link/ui.htmlform_load.md - loads data from an external data source.
 - api/link/ui.htmlform_mapevent.md - routes events from one object to another
 - api/link/ui.htmlform_parse.md - loads data to the component from an inline data source
 - api/link/ui.htmlform_refresh.md - repaints the component

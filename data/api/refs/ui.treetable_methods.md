@@ -88,14 +88,14 @@ Methods
 - api/link/ui.treetable_hidecolumn.md - hides the specified column
 - api/link/ui.treetable_hideoverlay.md - hides previously defined overlay
 - api/link/ui.treetable_isbranch.md - checks whether the node has any children
-- api/link/ui.treetable_isbranchopen.md - checks whether the specified branch opened or closed
+- api/link/ui.treetable_isbranchopen.md - checks whether the specified branch is open or closed
 - api/link/ui.treetable_ischecked.md - checks whether the specified node is checked
 - api/link/ui.treetable_iscolumnvisible.md - returns true if column is visible
 - api/link/ui.treetable_isenabled.md - checks whether the view is enabled
 - api/link/ui.treetable_isvisible.md - checks whether the view is visible
-- api/link/ui.treetable_load.md - loads data from an external data source
-- api/link/ui.treetable_loadbranch.md - loads data to the specified branch
-- api/link/ui.treetable_loadnext.md - sends a request to load the specified number of records to the end or to the specified position
+- api/link/ui.treetable_load.md - loads data from an external data source.
+- api/link/ui.treetable_loadbranch.md - loads data to the specified branch, as direct children of the node with the id provided
+- api/link/ui.treetable_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
 - api/link/ui.treetable_locate.md - converts an HTML node or event object to in-table position
 - api/link/ui.treetable_mapcells.md - applies the callback to a range of cells
 - api/link/ui.treetable_mapevent.md - routes events from one object to another
@@ -122,7 +122,7 @@ Methods
 - api/link/ui.treetable_render.md - renders the specified item or the whole component
 - api/link/ui.treetable_resize.md - adjusts the view to a new size
 - api/link/ui.treetable_scrollto.md - scrolls the view to the defined position
-- api/link/ui.treetable_serialize.md - serializes data to a json object
+- api/link/ui.treetable_serialize.md - serializes data to a JSON object
 - api/link/ui.treetable_setcolumnwidth.md - sets the width of the specified column
 - api/link/ui.treetable_setpage.md - makes the specified page visible (assuming that the pager was defined )
 - api/link/ui.treetable_setrowheight.md - sets the height of the specified row
@@ -135,7 +135,7 @@ Methods
 - api/link/ui.treetable_showitembyindex.md - 'scrolls' the table to make the specified row visible
 - api/link/ui.treetable_showoverlay.md - shows the overlay message over the body of DataTable
 - api/link/ui.treetable_sort.md - sorts datastore
-- api/link/ui.treetable_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.treetable_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.treetable_unbind.md - breaks "bind" link
 - api/link/ui.treetable_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.treetable_uncheckall.md - uncheck all items in the tree

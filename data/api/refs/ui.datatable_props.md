@@ -14,9 +14,9 @@ Properties
 - api/ui.datatable_columns_config.md - configures columns of the table
 - api/link/ui.datatable_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.datatable_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.datatable_data_config.md - an inline dataset that data to the component will be load from.
-- api/link/ui.datatable_datafeed_config.md - the url that the component will use to reload data during binding
-- api/ui.datatable_datafetch_config.md - defines the start position DataTable will load data from
+- api/link/ui.datatable_data_config.md - JavaScript array containing data for the component
+- api/link/ui.datatable_datafeed_config.md - the URL that the component will use to reload data during binding
+- api/ui.datatable_datafetch_config.md - defines the number of records that will be loaded into datatable during the next dynamic loading call
 - api/link/ui.datatable_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.datatable_datatype_config.md - the type of loaded data
 - api/link/ui.datatable_delimiter_config.md - sets CSV delimiters for clipboard operations
@@ -61,7 +61,7 @@ Properties
 - api/link/ui.datatable_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
 - api/link/ui.datatable_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
 - api/ui.datatable_prerender_config.md - invokes the full rendering of DataTable data
-- api/link/ui.datatable_ready_config.md - a handler that is called just after the page has been completely parsed
+- api/link/ui.datatable_ready_config.md - event handler called just after the component has been completely initialized
 - api/link/ui.datatable_removemissed_config.md - defines how to treat items in case of reloading
 - api/ui.datatable_resizecolumn_config.md - enables/disables horizontal resizing of columns
 - api/ui.datatable_resizerow_config.md - enables/disables vertical resizing of rows
@@ -69,7 +69,7 @@ Properties
 - api/ui.datatable_rowheight_config.md - sets the default height for rows
 - api/ui.datatable_rowlineheight_config.md - default line height for grid's row
 - api/link/ui.datatable_rules_config.md - set of validation rules for the component
-- api/link/ui.datatable_save_config.md - defines urls for datasaving
+- api/link/ui.datatable_save_config.md - defines URLs for data saving
 - api/link/ui.datatable_scheme_config.md - defines schemes for data processing
 - api/ui.datatable_scroll_config.md - enables or disables scroll for the datatable
 - api/ui.datatable_scrollaligny_config.md - enables/disables scrolling the table just by whole rows (i.e. you won't be allowed to scroll along the full length of rows)
@@ -79,7 +79,7 @@ Properties
 - api/ui.datatable_spans_config.md - array of span configurations for the datatable
 - api/link/ui.datatable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/ui.datatable_type_config.md - used for configuring presentation of items
-- api/link/ui.datatable_url_config.md - the url the component will use to load data after its initialization
+- api/link/ui.datatable_url_config.md - the URL the component will use to load data after its initialization
 - api/link/ui.datatable_width_config.md - sets the width of the component
 - api/ui.datatable_ycount_config.md - defines height of datatable in rows
 }}
