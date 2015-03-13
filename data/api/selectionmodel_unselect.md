@@ -24,7 +24,7 @@ $$('data').unselect($$('data').getFirstId()); //removes selection from the first
 @related:
 	desktop/selection.md
 @relatedapi:
-	api/selectionmodel_unselectAll.md
+	api/selectionmodel_unselectall.md
     api/selectionmodel_isselected.md
     api/selectionmodel_getselectedid.md
     api/selectionmodel_select.md

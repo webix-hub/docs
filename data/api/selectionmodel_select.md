@@ -25,7 +25,7 @@ $$('data').select([2,3,5]);         //selects a group of items with ids: 2,3,5
 @related:
 	desktop/selection.md
 @relatedapi:
-    api/selectionmodel_selectAll.md
+    api/selectionmodel_selectall.md
     api/selectionmodel_isselected.md
     api/selectionmodel_getselectedid.md
     api/selectionmodel_unselect.md

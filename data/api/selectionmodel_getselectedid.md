@@ -28,7 +28,7 @@ var id = list.getSelectedId(); // id = [someid1, someid2, someid3]
 @relatedapi:
     api/selectionmodel_isselected.md
     api/selectionmodel_select.md
-    api/selectionmodel_selectAll.md
+    api/selectionmodel_selectall.md
     api/selectionmodel_unselect.md
     api/selectionmodel_unselectall.md
 @relatedsample:

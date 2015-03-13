@@ -47,7 +47,6 @@ Related methods
 {{apitable
 
 - api/link/ui.tree_getselectedid.md		method		returns the selected cells
-- api/link/ui.tree_getselectedid.md		method		returns the selected cells
 - api/link/ui.tree_moveselection.md		method		moves selection in the specified direction 	
 - api/link/ui.tree_select.md			method		selects the specified item 
 - api/link/ui.tree_selectall.md			method		selects all items 	
@@ -64,8 +63,8 @@ Related events
 
 {{apitable
 
-- api/link/ui.tree_onafterselect_event.md 		event 		fired after a cell is selected
-- api/link/ui.tree_onbeforeselect_event.md		event		fired before a cell is selected
-- api/link/ui.tree_onselectchange_event.md		event		fired when selection is changed in DataTable 
+- api/link/ui.tree_onafterselect_event.md 		event 		fires after a cell is selected
+- api/link/ui.tree_onbeforeselect_event.md		event		fires before a cell is selected
+- api/link/ui.tree_onselectchange_event.md		event		fires when selection is changed in DataTable 
 
 }}
