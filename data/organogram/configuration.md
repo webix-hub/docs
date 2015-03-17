@@ -1,15 +1,12 @@
 Configuring Organogram
 =====================
 
-Specifying appearance
---------------------
-
 The dimensions of items in Organogram, their arrangement and content, 
 as well as the position of the component in relation to the container can be customized with the help of the **item type**.
 
-The following properties can be set in the **type**:
+The following properties can be set in the [type](desktop/type.md):
 
-- **width** - the width of an item in pixels, must be fixed
+- **width** - the width of an item in pixels, must be a fixed number
 
 ~~~js
 {
@@ -33,11 +30,18 @@ The following properties can be set in the **type**:
 }
 ~~~
 
-- **marginX, marginY** - horizontal and vertical spaces between two items, respectively 
+- **marginX** - horizontal space between two items
 
 ~~~js
 {
-	marginX: 20,
+	marginX: 20
+}
+~~~
+
+- **marginY** - vertical space between two items
+
+~~~js
+{
     marginY: 20
 }
 ~~~
@@ -85,30 +89,24 @@ listClassName: function(obj){
 }
 ~~~
 
-- **scroll** - boolean, a scroll if the size of container is less than the diagram itself will appear
+
+- **autowidth** - boolean, adjusts the container to fit the component's width
 
 ~~~js
 {
-	scroll: true
+	autowidth: true
 }
 ~~~
 
-- **autowidth**,**autoheight** - boolean, enlarge the size of container to adjust it to parent view size by width or by height, correspondingly
+
+- **autoheight** - boolean, adjusts the container to fit the component's height
 
 ~~~js
 {
-	autowidth: true,
     autoheight: true
 }
 ~~~
 
-{{sample
-34_organogram/03_autoheight.html
-}}
-
-{{sample
-34_organogram/04_autowidth.html
-}}
 
 - **template** - defines inner html for each item, "#value#" by default
 
@@ -136,18 +134,32 @@ var orgChart = new webix.ui({
 });
 ~~~
 
+You can also specify elements of the list by the mark ">". To parse this sign correctly,
+we will set it as a "&gt;" html character code.
+
+~~~js
+var orgChart = new webix.ui({
+	container:"testA",
+    view:"organogram",
+    template: function(marks){
+    	var html = "";
+		if(marks && marks.list_item){
+			html = " &gt; ";
+		}
+			return html;
+	}
+});
+~~~
+
 
 Creating list blocks
 --------------------
 
 There's a possibility to make a list block inside of an item. 
 
-**[change the image]**
-
 <img src="desktop/organogram_list_blocks.png">
 
-Elements of a list can be specified by the mark ">". To parse this sign correctly,
-we will set it as a "&gt;" html character code.
+
 In the parent of the items that we want to turn into a list, we will specify the **type** property with the value "list".
 
 So the data template will be defined as follows:
@@ -156,92 +168,30 @@ So the data template will be defined as follows:
 var orgChart = new webix.ui({
 	container:"testA",
     view:"organogram",
-    template: function(obj, type, marks){
-		var parentId = this.getParentId(obj.id);
-		var html = "";
-		// if director
-		if(!parentId){
-				html = "<img src='common/photo.png' class='photo' >";
-		}
-		// if list item
-		else if(marks && marks.list_item){
-			html = " &gt; ";
-		}
-			return html+obj.value;
-		},
-		data: [
-			{id:"1", value:"Center Director", data:[
-				{ id:"1.1", value:"Research &amp; Development", data:[
-					{ id:"1.1.1", value:"Research", $type: "list", data:[
-						{ id:"1.1.1.1", value:"Base research" },
-						{ id:"1.1.1.2", value:"Collaborative research with industries" }
-					]},
-					{ id:"1.1.2", value:"Development", $type: "list", data:[
-						{ id:"1.1.2.1", value:"Faculty development workshops" },
-						{ id:"1.1.2.2", value:"Student development" }
-					]}
-				]},
-                   ...
-			]}
-		]
+    data: [
+    	{id:"1", value:"Center Director", data:[
+    		{ id:"1.1", value:"Research &amp; Development", data:[
+    			{ id:"1.1.1", value:"Research", $type: "list", data:[
+    				{ id:"1.1.1.1", value:"Base research" },
+    				{ id:"1.1.1.2", value:"Collaborative research with industries" }
+    			]},
+    			{ id:"1.1.2", value:"Development", $type: "list", data:[
+    				{ id:"1.1.2.1", value:"Faculty development workshops" },
+    				{ id:"1.1.2.2", value:"Student development" }
+    			]}
+    		]},
+    		...
+    	]}
+    ]
 });
 ~~~
+
+Thus, in the above code snippet we can see that the children of the "Research" and "Development" items were transformed into lists. 
+
 
 {{sample
 34_organogram/02_list.html
 }}
 
-Styling separate items
-----------
 
-You can set a specific style for a particular item by using the **css** attribute inside the data source.
-
-<img src="desktop/organogram_style.png">
-
-To set the selection shown in the above picture you need to specify separate css rules for the top item and a child one: 
-
-~~~js
-<style>
-	.webix_organogram_item.top{
-    	background-color: #ffe0b2;
-		border-color: #ffcc80;
-	}
-    
-	.webix_organogram_item.webix_selected{
-		background-color: #2196f3;
-		border-color: #2196f3;
-	}
-</style>
-
-<script>
-orgChart = new webix.ui({
-    container:"box",
-    view:"organogram",
-    data:[
-    	{id:"root", value:"Board of Directors", $css: "top",  data:[
-			{ id:"1", value:"Managing Director", 
-              $css:{background:"#ffe0b2", "border-color":"#ffcc80"}, data:[
-				{id:"1.1", value:"Base Manager", data:[
-					{ id:"1.1.1", value:"Store Manager" },
-					{ id:"1.1.2", value:"Office Assistant", data:[
-							{ id:"1.1.2.1", value:"Dispatcher", data:[
-								{ id:"1.1.2.1.1", value:"Drivers" }
-						]}
-					]},
-					{ id:"1.1.3", value:"Security" }
-				]},
-			
-			]}
-		]}
-	]
-});
-</script>
-~~~
-
-- **.webix_organogram_item** - css class for an item
-- **.webix_organogram_item.top** - css class for the top item
-- **.webix_organogram_item.webix_selected** - css class for the selected item
-
-Thus, we've applied the css rule "top" to the top item and set the same css to the item with the id:"1" directly in the data set.
-The rule "webix_selected" changed the default colors of items selection.
 

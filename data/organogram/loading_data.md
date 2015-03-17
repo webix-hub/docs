@@ -8,6 +8,36 @@ Webix Organogram can get data in the following predefined [data formats](desktop
 
 *[Details and  examples of data formats](datatree/data_formats.md) in tree-like structures*
 
+###JSON
+
+~~~js
+[
+	{ id:"1", value:"Manager", data:[
+		{ id:"1.1", value:"Store Manager" },
+		{ id:"1.2", value:"Office Assistant" , data:[
+			{ id:"1.2.1", value:"Dispatcher", data:[
+				{ id:"1.2.1.1", value:"Drivers" }
+			] }
+		] }
+     ]}
+]
+~~~
+
+###XML
+
+~~~xml
+<data>
+	<item id="1" value='Manager'>
+		<item id="1.1" value='Store Manager'></item>
+		<item id="1.2" value='Office Assistant'>
+        	<item id="1.2.1" value='Dispatcher'>
+            	<item id="1.2.1.1" value='Drivers'></item>
+            </item>
+        </item>
+	</item>
+</data>
+~~~
+
 There are two main ways you can specify the data source for Organogram:
 
 1. Define the data set in the object initialization;
@@ -48,16 +78,8 @@ chart_data = [
 			{ id:"1.2", value:"Business Development Manager", data:[
 				{ id:"1.2.1", value:"Marketing Executive" }
 			]},
-			{ id:"1.3", value:"Finance Manager", data:[
-				{ id:"1.3.1", value:"Accountant", data:[
-					{ id:"1.3.1.1", value:"Accounts Officer" }
-				] }
-			] },
-			{ id:"1.4", value:"Project Manager", data:[
-				{ id:"1.4.1", value:"Supervisors",data:[
-					{ id:"1.4.1.1", value:"Foremen"}
-				]}
-			] }
+            
+            ...
 		]}
 	]}
 ];
@@ -98,41 +120,5 @@ orgChart.load('data/data.xml', 'xml');
 Loading from a database
 -----------------------
 
-To load data from a database on the server you should deal with both client and server sides.
-
-**On the client side**
-
-You should either define a [url](api/link/ui.organogram_url_config.md) property or call the [load](api/link/ui.organogram_load.md) method that would
-point to a server REST API endpoint.
-
-{{snippet
-Static loading from a server database. Client-side code.
-}}
-~~~js
-orgChart = new webix.ui({
-  ...
-  url: "data/chart_data.php"
-}); 
-//or
-orgChart.load("data/chart_data.php");
-~~~
-
-**On the server side**
-
-- you can write the server logic by yourself;
-- or you can use <a href="http://docs.dhtmlx.com/connector__php__index.html">dhtmlxConnector</a>
-
-If dhtmlxConnector is used, the related server-side script will look like this:
-
-{{snippet
-Static loading from a MySQL database on the server. Server-side code.
-}}
-~~~php
-require_once("../connector-php/codebase/data_connector.php");  // includes the connector file
-$conn = mysql_connect('localhost', "root","");  // creates a connection
-mysql_select_db("sampleDB");  // selects a database
-
-$data = new TreeDataConnector($conn, "MySQL");  //initializes the connector object
-// loads data from the specified database table
-$data->render_table("packages_tree","id","value, state","","parent_id");
-~~~
+As the Organogram component is based on the TreeStore, you can also load data from a database on the server.
+For the details, read the article datatree/loading_data.md#loadingfromadatabase.

@@ -122,7 +122,7 @@ The look-and-feel of tree icons is set via **CSS classes** applied to **definite
 
 ###Redefining existing Webix CSS classes
 
-Study [Tree CSS image map](desktop/datatree_css.md) to learn how classes are distributed. There you'll find that folder and file feature the followinf CSS: 
+Study [Tree CSS image map](desktop/datatree_css.md) to learn how classes are distributed. There you'll find that folder and file feature the following CSS: 
 
 - **webix_tree_folder** - applied to folders in a close state;
 - **webix_tree_folder_open** - applied to folders in the open state;

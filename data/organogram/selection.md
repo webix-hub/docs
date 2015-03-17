@@ -1,7 +1,7 @@
 Selecting Items
 ===============
 
-Organogram provides an ability to select items within it.
+You can select items within the Organogram component.
 
 <img src="desktop/organogram_selection.png">
 

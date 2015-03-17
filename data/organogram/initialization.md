@@ -20,7 +20,7 @@ A basic html page with the included code files
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Quick start with Tree</title>
+    <title>Organogram</title>
     <script src="../codebase/webix.js" type="text/javascript" charset="utf-8"></script>
     <link rel="stylesheet" href="../codebase/webix.css" type="text/css" charset="utf-8">
 </head>
@@ -54,9 +54,8 @@ Organogram constructor
 orgChart = new webix.ui({view:"organogram"});
 ~~~
 
-The only mandatory parameter you should specify inside the constructor is:
+If you want to place the component into the container, you should specify the container property inside of the view constructor:
 
-- container - the HTML container for Organogram that we'created at the previous step.
 
 {{snippet
 Basic Organogram configuration

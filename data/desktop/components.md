@@ -155,7 +155,11 @@ Html-oriented components supply handy means for using habitual HTML elements in 
 Auxiliary components help you to complete the picture of your application, to add special features that can't be achieved with the standard set of components presented above. 
 
 <div class="components_group" style="padding-left:60px;">
-	<a href="desktop/calendar.md">
+	<a href="desktop/barcode.md">
+    	<img src="desktop/icons/barcode.png"/>
+    	<br>Barcode
+    </a>
+    <a href="desktop/calendar.md">
     	<img src="desktop/icons/calendar.png"/>
     	<br>Calendar
     </a>
@@ -245,6 +249,7 @@ div.controls_group img {
 
 @index:
 - desktop/accordion.md
+- desktop/barcode.md
 - desktop/calendar.md
 - desktop/carousel.md
 - desktop/chart.md
