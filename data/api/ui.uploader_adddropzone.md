@@ -4,7 +4,7 @@ addDropZone
 @short: adds uploader drop zone to any HTML element of the page	
 
 @params:
-- element	HTML element	HTML element
+- element	HTMLElement	HTML element
 
 
 @example:

@@ -4,7 +4,7 @@ isUploaded
 @short: checks whether all sent files have been uploaded to server
 
 @returns:
-state	 bool 	*true* if all files are uploaded
+state	 boolean 	*true* if all files are uploaded
 	
 @example:
 $$("uploader_1").isUploaded();

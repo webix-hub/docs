@@ -8,7 +8,7 @@ getBindData
 
 @params:
 - key       id       the id of master record
-- update	bool     forces the target to refresh after data update			
+- update	boolean     forces the target to refresh after data update			
 
 
 @example:

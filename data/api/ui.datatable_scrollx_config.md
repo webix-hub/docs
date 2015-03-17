@@ -3,7 +3,7 @@ scrollX
 
 
 @short:  enables/disables horizontal scrolling
-@type:	bool
+@type:	boolean
 
 @example:
 

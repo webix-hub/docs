@@ -7,7 +7,7 @@ onAfterDrop
 
 @params:
 - context		object		the drag-n-drop context
-- e		event		a native event object
+- e		Event		a native event object
 @example: 
 gridb.attachEvent("onBeforeDrop", function(context, ev){
    	for (var i=0; i< context.source.length; i++){

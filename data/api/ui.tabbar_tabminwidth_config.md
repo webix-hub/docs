@@ -5,7 +5,7 @@ tabMinWidth
 @short: minimum width for responsive tabs
 	
 
-@type: int
+@type: number
 @example:
 
 

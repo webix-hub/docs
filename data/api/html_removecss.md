@@ -6,7 +6,7 @@ removeCss
 	
 
 @params:
-- node		element		a DOM node
+- node		HTMLElement		a DOM node
 - name		string		the name of a CSS class to remove
 
 @example:

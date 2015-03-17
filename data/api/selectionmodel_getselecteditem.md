@@ -6,7 +6,7 @@ getSelectedItem
 	
 
 @params:
-* as_array	bool	if set, always return an arrya of objects
+* as_array	boolean	if set, always return an arrya of objects
 
 @returns:
 - item		object		curently selected item

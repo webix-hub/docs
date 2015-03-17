@@ -8,7 +8,7 @@ onBeforeRender
 - data      array      the set of data which will be rendered
 
 @returns:
-- result  bool  returning <i>false</i> will prevent view rendering
+- result  boolean  returning <i>false</i> will prevent view rendering
 
 @example:
 

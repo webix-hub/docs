@@ -11,7 +11,7 @@ validateEditor
 
 
 @returns:
-- result		bool		true if text in editor confirms to validation rules
+- result		boolean		true if text in editor confirms to validation rules
 	
 
 @example:

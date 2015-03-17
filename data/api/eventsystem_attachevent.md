@@ -13,7 +13,7 @@ attachEvent
 - ...mixed...		function	the callback receives different set of parameters for different events. Check the documentation of the related events.
 
 @callbackreturns:
-- result	bool		returning <i>false</i> will block the default behaviour (works not for all events, check the details below).
+- result	boolean		returning <i>false</i> will block the default behaviour (works not for all events, check the details below).
 
 @returns:
 	event id		id	the id of the attached event handler

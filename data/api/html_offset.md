@@ -6,7 +6,7 @@ offset
 	
 
 @params:
-- node		element		an HTML element
+- node		HTMLElement		an HTML element
 
 @returns:
 - position	object	the position object

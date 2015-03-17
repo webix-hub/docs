@@ -3,7 +3,7 @@ moreTemplate
 
 
 @short: template for "more" button for responsive tabbar
-@type: functor
+@type: function
 
 @example:
 

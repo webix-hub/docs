@@ -11,7 +11,7 @@ addView
 * index		number			index, at which new view will be added
 
 @returns:
-- view		view		new view object
+- view		WebixView		new view object
 
 @example:
 webix.ui({

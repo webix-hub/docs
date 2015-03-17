@@ -7,7 +7,7 @@ locate
 	
 
 @params:
-- ev	event,element		a DOM node or a native HTML event
+- ev	Event,HTMLElement		a DOM node or a native HTML event
 - name	string		the name of an attribute
 
 @returns:

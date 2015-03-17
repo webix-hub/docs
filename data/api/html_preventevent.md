@@ -5,10 +5,10 @@ preventEvent
 @short: stops the event processing and cancels its default action (called in some event handler)
 	
 @params:
-- ev	event	a native HTML event
+- ev	Event	a native HTML event
 
 @returns:
-- false		bool		false
+- false		boolean		false
 
 @example:
 <a id="mylink" href='http://google.com'>Google</a>

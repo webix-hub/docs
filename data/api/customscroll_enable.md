@@ -5,7 +5,7 @@ enable
 @short: enables custom scroll
 
 @params:
-- html_node		element,object		html element or view for which custom scroll need to be enabled
+- html_node		HTMLElement,WebixView		html element or view for which custom scroll need to be enabled
 	
 @example:
 

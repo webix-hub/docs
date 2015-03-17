@@ -8,7 +8,7 @@ group
 
 @params:
 - config	object		an object with grouping parameters 
-- mode		bool		defines whether the component should be re-rendered after grouping ( by default, <i>true</i>)
+- mode		boolean		defines whether the component should be re-rendered after grouping ( by default, <i>true</i>)
 
 
 @example:

@@ -5,7 +5,7 @@ multi
 @short:
 	enables/disables mode when several panels can be visible at once
 
-@type: bool,string
+@type: boolean,string
 @example:
 webix.ui({
 	cols:[{ view:"accordion",

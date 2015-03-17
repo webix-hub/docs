@@ -7,7 +7,7 @@ getSelectedId
 	returns the id(s) of the selected item(s)
 
 @params:
-- as_array		bool		specifies whether the result should be always returned as an array.<br> The default value is <i>false</i>
+- as_array		boolean		specifies whether the result should be always returned as an array.<br> The default value is <i>false</i>
 
 
 @returns:

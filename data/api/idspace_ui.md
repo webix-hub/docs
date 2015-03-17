@@ -12,7 +12,7 @@ allows to create new ui, which isd will be locked in parent id space
 
 
 @returns:
-- view		view		newly created view
+- view		WebixView		newly created view
 
 @example:
 

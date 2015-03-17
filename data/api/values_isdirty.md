@@ -6,7 +6,7 @@ isDirty
 	
 
 @returns:
-id_dirty		bool		returns **true** if the data was changed
+id_dirty		boolean		returns **true** if the data was changed
 
 @example:
     if(form.isDirty()){

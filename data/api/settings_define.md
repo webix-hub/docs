@@ -6,7 +6,7 @@ define
 	redefines a single configuration property (or a hash of properties)
 
 @params:
-- property		string,hash		the property name or a hash of properties that need redefining
+- property		string		the property name or a hash of properties that need redefining
 - value		any		the new property value
 
 

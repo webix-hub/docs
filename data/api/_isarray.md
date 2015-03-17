@@ -8,7 +8,7 @@ isArray
 - check		any	the value to check
 
 @returns:
-- result	bool	<i>true</i>, if the passed value is an array
+- result	boolean	<i>true</i>, if the passed value is an array
 
 @example:
 if (webix.isArray(value)){

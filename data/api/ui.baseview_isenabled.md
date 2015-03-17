@@ -5,7 +5,7 @@ isEnabled
 	
 
 @returns:
-- value           bool        <i>true</i> if the view is enabled, otherwise - <i>false</i>
+- value           boolean        <i>true</i> if the view is enabled, otherwise - <i>false</i>
 
 
 @example:

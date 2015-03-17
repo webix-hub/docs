@@ -8,7 +8,7 @@ select
 
 @params:
 - id		string, array		the id of a single item or an array of items ids
-- continue		bool		if it's set to <i>true</i>, the method won't affect the existing selection (will select new items but preserve selection of old items). The default value - <i>false</i>
+- preserve		boolean		if it's set to <i>true</i>, the method won't affect the existing selection (will select new items but preserve selection of old items). The default value - <i>false</i>
 
 @example:
 webix.ui({

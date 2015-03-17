@@ -4,7 +4,7 @@
 
 
 @returns:
--	count	number	the number of visible (opened) items 
+- count		number		the number of visible (opened) items 
 
 @example:
 tree = new webix.ui({

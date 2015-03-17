@@ -4,7 +4,7 @@ getButton
 @short: get button object of a multiselect popup
 	
 @returns: 
-- obj       view       webiv ui object of button
+- obj       WebixView       webiv ui object of button
 
 @example:
 

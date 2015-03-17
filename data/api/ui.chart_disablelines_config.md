@@ -5,7 +5,7 @@ disableLines
 @short: disapbles graph lines with radar chart
 	
 
-@type: bool 
+@type: boolean 
 @example:
 
 @relatedsample:

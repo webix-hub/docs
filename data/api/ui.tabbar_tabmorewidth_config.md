@@ -5,7 +5,7 @@ tabMoreWidth
 @short: width of "more" button in tabbar
 	
 
-@type: int
+@type: number
 @example:
 
 

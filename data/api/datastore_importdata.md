@@ -7,7 +7,7 @@ importData
 	
 
 @params:
-- source      view      view from which data need to be taken
+- source      WebixView      view from which data need to be taken
 
 @example:
 

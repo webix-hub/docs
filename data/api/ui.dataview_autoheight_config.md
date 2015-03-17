@@ -5,7 +5,7 @@ autoheight
 @short:
 	enables autosizing to content
 
-@type: bool
+@type: boolean
 @example:
 webix.ui({
     view:"dataview",

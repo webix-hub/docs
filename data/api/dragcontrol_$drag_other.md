@@ -7,11 +7,11 @@ $drag
 
 @params:
 - s		object		source html object
-- e		event		event object
+- e		Event		event object
 
 
 @returns:
-- node       element    	html node
+- node       HTMLElement    	html node
 
 @example:
 

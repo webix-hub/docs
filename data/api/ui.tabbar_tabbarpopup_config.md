@@ -5,7 +5,7 @@ tabbarPopup
 @short: custom popup for responsive tabbar
 	
 
-@type: view
+@type: WebixView
 @example:
 
 

@@ -6,7 +6,7 @@ removeMark
 @params:
 - id	string	the id of a data item to mark
 - name	string	the flag name 
-- css	bool	defines whether the css style with the name equal to the flag name (if such class was applied) should be removed as well
+- css	boolean	defines whether the css style with the name equal to the flag name (if such class was applied) should be removed as well
 
 
 	

@@ -5,7 +5,7 @@ editable
 @short:allows/denies editing in the view
 	
 
-@type: bool
+@type: boolean
 @example:
 webix.ui({
     view:"datatable",

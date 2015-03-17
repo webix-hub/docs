@@ -10,7 +10,7 @@ getItemNode
 
 
 @returns:
-- node    HTMLElem    html element of related item
+- node    HTMLElement    html element of related item
 	
 
 @example:

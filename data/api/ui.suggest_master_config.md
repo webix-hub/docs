@@ -5,7 +5,7 @@ master
 @short:
 	reference to the master view
 
-@type: view
+@type: WebixView
 @example:
 
 

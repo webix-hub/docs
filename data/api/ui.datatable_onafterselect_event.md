@@ -7,7 +7,7 @@ onAfterSelect
 
 @params:
 - data        object    the selected object
-- preserve    bool      indicates whether the previous selection state should be saved
+- preserve    boolean      indicates whether the previous selection state should be saved
 
 @example: 
 

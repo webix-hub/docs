@@ -4,7 +4,7 @@ scrollAlignY
 
 @short: enables/disables scrolling the table just by whole rows (i.e. you won't be allowed to scroll along the full length of rows)
 
-@type: bool
+@type: boolean
 
 @example:
 webix.ui({

@@ -5,7 +5,7 @@ $render
     code called after rending control
 	
 @type:
-    functor
+    function
 
 @example:
 

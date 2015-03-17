@@ -5,7 +5,7 @@ monthSelect
 @short: enables the ability to select month by clicking the "month" panel 
 	
 
-@type: bool
+@type: boolean
 @example:
 
 

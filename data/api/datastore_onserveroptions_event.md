@@ -6,7 +6,7 @@ onServerOptions
 	
 
 @params:
-- options           mixed        hash of options collections
+- options           hash        hash of options collections
 @example:
 
 mytable.data.attachEvent("onSeverOptions", function(cols){

@@ -5,7 +5,7 @@ threeState
 @short: enable three-state checkboxes
 	
 
-@type:  bool
+@type:  boolean
 @example:
 
 webix.ui({

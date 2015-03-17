@@ -5,7 +5,7 @@ clipboard
 @short:enables/disables clipboard support
 	
 
-@type: bool,string
+@type: boolean,string
 @example:
 webix.ui({
 	view:"datatable",

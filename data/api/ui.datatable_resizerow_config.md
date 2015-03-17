@@ -3,7 +3,7 @@ resizeRow
 
 
 @short: enables/disables vertical resizing of rows
-@type: bool
+@type: boolean
 
 @example:
 webix.ui({

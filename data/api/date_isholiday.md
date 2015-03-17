@@ -9,7 +9,7 @@ isHoliday
 - date      object       date object
 
 @returns:
-- holiday     bool    true if date is a holiday	
+- holiday     boolean    true if date is a holiday	
 
 @example:
 webix.ui({

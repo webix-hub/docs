@@ -6,7 +6,7 @@ fullDateFormatStr
 	
 
 @params:
-- date    object     a Date object
+- date    Date     a Date object
 
 @returns:
 - time    string    a time as a string in the full-date format

@@ -5,7 +5,7 @@ collapsed
 @short:
 	displays the cell collapsed initially
 
-@type: bool
+@type: boolean
 @example:
 webix.ui({ 
 	view:"accordion",

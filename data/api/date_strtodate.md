@@ -6,7 +6,7 @@ strToDate
 
 @params:
 - format		string		date format
-- utc		bool		convert string in UTC time to date in local time
+- utc		boolean		convert string in UTC time to date in local time
 
 
 @returns:

@@ -5,7 +5,7 @@ gradient
 @short:
 	specifies the chart gradient 
 
-@type: bool,string,function
+@type: boolean,string,function
 @example:
 webix.ui({
 	view:"chart",

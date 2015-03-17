@@ -10,7 +10,7 @@ canFocus
 
 
 @returns:
-	result		bool    <i>true</i> if the specified view can take focus. Otherwise, <i>false</i>
+	result		boolean    <i>true</i> if the specified view can take focus. Otherwise, <i>false</i>
 	
 
 @example: webix.UIManager.canFocus($$('books'));

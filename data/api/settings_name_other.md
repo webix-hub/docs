@@ -13,7 +13,7 @@ var data = new webix.DataCollection({
 
 var name = data.name; //returns 'DataCollection'
 
-@template:	api_other
+@template:	api_config
 @defined:	ui.baseview	
 @descr:
 

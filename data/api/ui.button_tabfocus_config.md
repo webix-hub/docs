@@ -5,7 +5,7 @@ tabFocus
 @short:defines whether the control will be included in the tab navigation order
 	
 
-@type: bool
+@type: boolean
 @example:
 webix.ui({
     view:"combo",

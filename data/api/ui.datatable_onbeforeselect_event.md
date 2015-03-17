@@ -6,10 +6,10 @@ onBeforeSelect
 
 @params:
 - data        object    the selected object
-- preserve    bool      indicates whether the previous selection will be saved
+- preserve    boolean      indicates whether the previous selection will be saved
 
 @returns:
-- result  bool  returning `false` will prevent item selection
+- result  boolean  returning `false` will prevent item selection
 
 @example: 
 	

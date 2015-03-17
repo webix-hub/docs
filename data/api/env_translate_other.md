@@ -9,7 +9,7 @@ translate
 @example:
 alert(webix.env.translate);
 
-@template:	api_other
+@template:	api_config
 @defined:	env
 @relatedapi:
 - api/env_transitionend_other.md

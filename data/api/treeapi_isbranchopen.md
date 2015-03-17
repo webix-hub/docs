@@ -8,7 +8,7 @@ isBranchOpen
 -id		id	the node id
 
 @returns:
-- state	bool	<i>true</i>, if the branch is opened, otherwise - <i>false</i>
+- state	boolean	<i>true</i>, if the branch is opened, otherwise - <i>false</i>
 
 @example:
 tree = new webix.ui({

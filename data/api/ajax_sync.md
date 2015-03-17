@@ -6,7 +6,7 @@ sync
 	
 
 @returns:
-- ajax	object	a <b>webix.ajax</b> object
+- ajax       ajax     this instance of ajax object	
 
 @example:
 webix.ajax().sync().get("data.php");

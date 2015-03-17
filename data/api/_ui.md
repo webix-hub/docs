@@ -17,7 +17,7 @@ var id = component.config.id;
 ~~~
 
 @returns:
-- view		object		a view object
+- view		WebixView		a view object
 
 @example:
 var dtable = webix.ui({ view:"datatable", ... });

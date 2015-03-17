@@ -6,7 +6,7 @@ onMouseOut
 	fires when the mouse was moved out from the specified item
 
 @params:
-- e		event		a native event object
+- e		Event		a native event object
 
 @example: 
 	

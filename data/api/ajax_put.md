@@ -5,12 +5,12 @@ put
 	
 @params:
 - url	string	the url to load
-- params	object	the hash of parameters that need sending to the server
-- callback	function	the callback function
+* params	object	the hash of parameters that need sending to the server
+* callback	function	the callback function
 
 
 @returns:
-- xhr		object		an xmlHttpRequest object
+- promise		promise		data "promise" object
 
 
 @example:

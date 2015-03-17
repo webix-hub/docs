@@ -5,7 +5,7 @@ body
 @short:
 	the content of window body: template or view
 
-@type: string,view
+@type: string,WebixView
 @example:
 webix.ui({
 	view:"window",

@@ -4,8 +4,8 @@ onSubmit
 
 @params: 
 
-- view		object	an object of a control for which "enter" was stroked
-- ev	object		keydown event object
+- view		WebixView	an object of a control for which "enter" was stroked
+- ev		Event		keydown event object
 
 form.attachEvent("onSubmit", function(view, ev){
     webix.message("Enter for a control with "+view.config.id+" ID");

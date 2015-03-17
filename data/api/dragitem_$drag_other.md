@@ -5,8 +5,8 @@ $drag
 @short: method called when drag operation initiated
 	
 @params:
-- source     element     DOM element on which dnd action started
-- ev      event      native html event
+- source     HTMLElement     DOM element on which dnd action started
+- ev      Event      native html event
 
 @returns:
 - htmltext     string     text which will be used in dnd placeholder, returning false or empty string will block dnd

@@ -6,7 +6,7 @@ locate
 	
 
 @params:
-- node    element,event    an HTML node or event object
+- node    HTMLElement,Event    an HTML node or event object
 
 
 @returns:

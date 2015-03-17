@@ -5,7 +5,7 @@ timepicker
 @short: enables clock for time selection
 	
 
-@type: bool
+@type: boolean
 @example:
 
 

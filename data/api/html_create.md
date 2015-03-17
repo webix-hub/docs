@@ -12,7 +12,7 @@ create
 
 
 @returns:
-- element	element 	a newly-created HTML element
+- element	HTMLElement 	a newly-created HTML element
 
 @example:
 webix.html.create("div", { name:"myname" }, "Some content");

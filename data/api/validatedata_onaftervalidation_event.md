@@ -7,7 +7,7 @@ onAfterValidation
 @params:
 
 - result	boolean		result of validation (true or false)
-- value		obj		object with data that has been validated
+- value		object		object with data that has been validated
 
 @example:
 dp.attachEvent("onAfterValidation", function(result, value){

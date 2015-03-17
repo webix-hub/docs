@@ -12,7 +12,7 @@ onBeforeFilter
 
 @returns:
 
-- result  bool  returning false will prevent filtering 
+- result  boolean  returning false will prevent filtering 
 
 @example:
 dtable.attachEvent("onBeforeFilter", function(column, value){

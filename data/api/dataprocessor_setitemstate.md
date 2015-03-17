@@ -8,7 +8,7 @@ setItemState
 @params:
 
 - itemId       id      id of the item
-- state        bool    update state 
+- state        boolean    update state 
 
 
 @example:

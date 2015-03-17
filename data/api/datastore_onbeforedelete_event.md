@@ -9,7 +9,7 @@ onBeforeDelete
 - id		id		id of item in question
 
 @returns:
-- result  bool  returning false will prevent item deleting
+- result  boolean  returning false will prevent item deleting
 
 @example: 
 	

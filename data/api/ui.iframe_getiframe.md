@@ -6,7 +6,7 @@ getIframe
 	
 
 @returns:
-- iframe		element		html element of inner iframe
+- iframe		HTMLElement		html element of inner iframe
 	
 
 @example:

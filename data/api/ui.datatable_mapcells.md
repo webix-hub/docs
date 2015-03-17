@@ -30,6 +30,6 @@ grid.mapCells(1, "title", 3, 2, function(value, row_id, column_id, row_ind, col_
 -value    string|int    the cell value
 -row_id    string|int    the row id
 -column_id    string|int    the column id
--row_ind    int    the row index of a cell within the specified range
--col_ind    int    the column index of a cell within the specified range
+-row_ind    number    the row index of a cell within the specified range
+-col_ind    number    the column index of a cell within the specified range
 

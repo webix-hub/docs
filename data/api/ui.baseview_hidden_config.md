@@ -5,7 +5,7 @@ hidden
 @short:
 	defines whether the view will be hidden initially
 
-@type: bool
+@type: boolean
 @example:
 webix.ui ({ 
 	view:"window",

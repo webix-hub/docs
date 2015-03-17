@@ -5,7 +5,7 @@ navigation
 @short:
 	enables/disables month navigation in header - the possibility to change months (true)
 
-@type: bool
+@type: boolean
 @example:
 
 

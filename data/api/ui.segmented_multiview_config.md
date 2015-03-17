@@ -5,7 +5,7 @@ multiview
 @short: enables switching between multiview cells
 	
 
-@type: bool
+@type: boolean
 @example:
 rows:[
 	{view:"tabbar", id:'tabbar', multiview:true, options: [

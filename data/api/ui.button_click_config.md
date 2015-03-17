@@ -5,7 +5,7 @@ click
 @short:
 	click action handler
 
-@type: functor
+@type: function
 @example:
 
 webix.ui({

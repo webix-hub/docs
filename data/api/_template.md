@@ -7,7 +7,7 @@ template
 - template      string     template string
 
 @returns:
-- code	functor		templating function
+- code	function		templating function
 
 @example:
 var line = webix.template("Some #name# code");

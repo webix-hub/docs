@@ -5,7 +5,7 @@ $renderIcon
 	renders icon for the control	
 
 @type:
-	functor
+	function
     
 @example:
 

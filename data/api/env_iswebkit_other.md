@@ -2,10 +2,10 @@ isWebKit
 =============
 
 
-@short: a read-only bool indicating whether the current browser is WebKit based (Google Chrome)
+@short: a read-only boolean indicating whether the current browser is WebKit based (Google Chrome)
 	
 
-@type: bool
+@type: boolean
 
 @example:
 
@@ -13,7 +13,7 @@ if (webix.env.isWebKit)
 	do_something();
 
 
-@template:	api_other
+@template:	api_config
 @defined:	env	
 @relatedapi:
 - api/env_isie_other.md

@@ -8,7 +8,7 @@ headers
 - values	object	 the name-value pairs of header fields
 
 @returns:
-- self		object 		the ajax object
+- self		ajax 		the ajax object
 
 @example:
 webix.ajax().headers({

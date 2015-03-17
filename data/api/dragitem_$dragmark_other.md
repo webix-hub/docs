@@ -6,10 +6,10 @@ $dragMark
 	
 @params:
 - context     object     dnd context
-- ev      event      native html event
+- ev      Event      native html event
 
 @returns:
-- dndflag     bool     returning false will prevent drag operation
+- dndflag     boolean     returning false will prevent drag operation
 
 @example:
 

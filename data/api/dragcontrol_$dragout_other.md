@@ -8,7 +8,7 @@ $dragOut
 - s		object		source html object
 - t		object		target html object
 - n		object		dragged object
-- e		event		event object
+- e		Event		event object
 
 
 

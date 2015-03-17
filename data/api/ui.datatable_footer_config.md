@@ -3,7 +3,7 @@ footer
 
 
 @short: enables/disables the footer in DataTable (disabled, by default)
-@type: bool
+@type: boolean
 
 @example:
 webix.ui({

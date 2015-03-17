@@ -3,7 +3,7 @@ math
 
 
 @short: enables math formulas in DataTable
-@type: bool
+@type: boolean
 
 @example:
 webix.ui({

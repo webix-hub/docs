@@ -5,7 +5,7 @@ border
 @short: enables border around resize area
 	
 
-@type:  bool
+@type:  boolean
 @example:
 
 webix.ui({

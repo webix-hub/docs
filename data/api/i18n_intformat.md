@@ -5,10 +5,10 @@ intFormat
 	
 
 @params:
--	value	number	the number to format
+- num		number	the number to format
 
 @returns:
--	number	string	the formatted number as a string
+- number	string	the formatted number as a string
 	
 
 @example:

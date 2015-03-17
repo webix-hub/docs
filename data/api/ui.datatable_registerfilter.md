@@ -6,7 +6,7 @@ registerFilter
 	
 
 @params:
-- node		element		the html node of the filter
+- node		HTMLElement		the html node of the filter
 - config	object		the hash of settings
 - obj		object		the controller object
 

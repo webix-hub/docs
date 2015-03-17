@@ -5,7 +5,7 @@ yCount
 @short:
 	defines height of datatable in rows
 
-@type: int
+@type: number
 @example:
 
 //grid will height enough to show 20 rows of data

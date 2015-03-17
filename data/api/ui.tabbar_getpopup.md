@@ -7,7 +7,7 @@ return the optional popup with extra tabs
 	
 
 @returns:
-- popup     view     popup with extra tabs
+- popup     WebixView     popup with extra tabs
 	
 
 @example:

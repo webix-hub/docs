@@ -5,7 +5,7 @@ rowLineHeight
 @short:
 	default line height for grid's row
 
-@type: int
+@type: number
 @example:
 
 webix.ui({

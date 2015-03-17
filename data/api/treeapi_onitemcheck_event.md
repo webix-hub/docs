@@ -6,7 +6,7 @@ onItemCheck
 	
 @params:
 - id		id		id of related item
-- state		bool	state of checkbox
+- state		boolean	state of checkbox
 
 @example:
 

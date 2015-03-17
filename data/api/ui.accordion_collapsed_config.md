@@ -5,7 +5,7 @@ collapsed
 @short:
 'says' to display initially all accordion cells collapsed
 
-@type: bool
+@type: boolean
 @relatedsample:
 	01_layout/03_header.html
 @relatedapi:

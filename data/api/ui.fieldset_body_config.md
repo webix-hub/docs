@@ -5,7 +5,7 @@ body
 @short: config for sub-view of fieldset
 	
 
-@type: view
+@type: WebixView
 @example:
 
 webix.ui({

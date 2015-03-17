@@ -5,7 +5,7 @@ setValues
 	
 @params: 
 - values		object		hash of property - value pairs
-* update		bool		if true adds updates the form with new values while exisitng values remain. False by default.	
+* update		boolean		if true adds updates the form with new values while exisitng values remain. False by default.	
 
 @example:
 $$("sets").setValues({

@@ -11,7 +11,7 @@ validates one record or all dataset against validation rules
 * id	string		id of record to validate
 
 @returns:
-- is_valid	bool	true if record is valid
+- is_valid	boolean	true if record is valid
 
 @example:
 

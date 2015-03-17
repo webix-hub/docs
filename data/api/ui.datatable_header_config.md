@@ -3,7 +3,7 @@ header
 
 
 @short: enables/disables the header in DataTable (enabled, by default)
-@type: bool
+@type: boolean
 
 @example:
 webix.ui({
