@@ -10,9 +10,9 @@ API Reference
 Overview
 ----------
 
-Organogram is an organizational chart component that can be used for creating hierarchical diagrams that represent the structure of organizations.
-It inherits API and structure from TreeStore. Its dimensions can be easily customized. 
-The component items can include images and lists and can be styled according to the user's needs.
+Organogram is an organizational chart component that can be used for creating hierarchical diagrams representing the structure of organizations.
+It inherits API and structure from TreeStore. The component's appearance can be easily customized. 
+The component items can include various HTML-elements, e.g. photos, and can be styled according to the user's needs.
 
 <br>
 
@@ -39,7 +39,8 @@ The component items can include images and lists and can be styled according to 
 		        Look-and-feel
 		    </h4>
 		    <ul id="manipulations_sublist">
-				<li><a href="organogram/configuration.md">Configuring Organogram</a></li>
+				<li>organogram/configuration.md</li>
+                <li>organogram/styling.md</li>
             </ul>
         </td>
 		<td class='topic_description' onclick="displaySubList(event,'manipulations')">Covers techniques for fine-tuning the Organogram appearance:</td>
@@ -50,7 +51,8 @@ The component items can include images and lists and can be styled according to 
     	        Others
     	    </h4>
     	    <ul id="operations_sublist">
-				<li><a href="organogram/event_handling.md">Event handling</a></li>
+				<li>organogram/event_handling.md</li>
+                <li>organogram/howtos.md</li>
             </ul>
         </td>
     </tr>
@@ -63,4 +65,6 @@ The component items can include images and lists and can be styled according to 
 - organogram/loading_data.md
 - organogram/selection.md
 - organogram/configuration.md
+- organogram/styling.md
 - organogram/event_handling.md
+- organogram/howtos.md
