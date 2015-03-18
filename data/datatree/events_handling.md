@@ -55,7 +55,7 @@ To cancel some event you should return **false** within the appropriate event ha
 Cancelling the event handler
 }}
 ~~~js
-var myEvent = $$("treeId").attachEvent("onBeforeTabClick", function () {
+var myEvent = $$("treeId").attachEvent("onBeforeSelect", function () {
   ... // some event handler code
   return false;
 })

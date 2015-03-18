@@ -23,7 +23,7 @@ The component items can include various HTML-elements, e.g. photos, and can be s
 	<tr>
 		<td  class='topics'>
 		    <h4 id='ui'>
-		        Managing data
+		        Creating Organogram
 		    </h4>
 		    <ul id="design_sublist">
             	<li>organogram/initialization.md</li>
@@ -31,7 +31,7 @@ The component items can include various HTML-elements, e.g. photos, and can be s
 				<li>organogram/selection.md</li>
             </ul>
 		</td>
-		<td class='topic_description' onclick="displaySubList(event,'data')">Teaches you how to treat data in the Organogram to present the desired set of items.</td>
+		<td class='topic_description' onclick="displaySubList(event,'data')">Teaches you how to create Organogram on the page, adjust it and load with data.</td>
 	</tr>
 	<tr>
 		<td class='topics' onclick="displaySubList(event,this.id)">
@@ -43,7 +43,7 @@ The component items can include various HTML-elements, e.g. photos, and can be s
                 <li>organogram/styling.md</li>
             </ul>
         </td>
-		<td class='topic_description' onclick="displaySubList(event,'manipulations')">Covers techniques for fine-tuning the Organogram appearance:</td>
+		<td class='topic_description' onclick="displaySubList(event,'manipulations')">Covers techniques for fine-tuning the Organogram appearance:applying templates, customizing chart items, styling the component.</td>
 	</tr>
 	<tr>
     	<td id="operations" class='topics' onclick="displaySubList( this.id)">
@@ -55,6 +55,7 @@ The component items can include various HTML-elements, e.g. photos, and can be s
                 <li>organogram/howtos.md</li>
             </ul>
         </td>
+        <td class='topic_description' onclick="displaySubList(event,'data')">Discusses event handling with Organogram and the most obvious points of the component's customization.</td>
     </tr>
 	</tbody>
 </table>

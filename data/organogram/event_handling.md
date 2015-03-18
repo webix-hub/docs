@@ -40,9 +40,13 @@ Attaching the event handler through parameter 'on'
 }}
 ~~~js
 webix.ui({
-  view:"organogram",
-  ...
-  on: {"itemClick": function () {alert("item has just been clicked");}}
+	view:"organogram",
+	...
+    on: {
+        onitemClick: function (id) {
+            alert("item has just been clicked");
+       }
+	}
 ); 
 ~~~
 
@@ -56,9 +60,9 @@ To cancel some event you should return **false** within the appropriate event ha
 Cancelling the event handler
 }}
 ~~~js
-var myEvent = $$("orgChartId").attachEvent("onBeforeTabClick", function () {
-  ... // some event handler code
-  return false;
+var myEvent = $$("orgChartId").attachEvent("onBeforeSelect", function (id) {
+ 	... // some event handler code
+	return false;
 })
 ~~~
 
@@ -75,6 +79,10 @@ Referring within the event handler
 }}
 ~~~js
 $$("orgChartId").attachEvent("onAfterSelect",function(id){
-  parentId = this.getItem(id).parent;
+  var level = this.getItem(id).$level;
 })
 ~~~
+
+{{sample
+34_organogram/06_events.html
+}}

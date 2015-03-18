@@ -5,8 +5,8 @@ The Barcode widget represents text value in a machine-readable format by varying
 The widget uses Canvas for lines rendering.
 
 
-Initialization
---------------
+Basic Initialization
+--------------------
 
 To begin with, create a new HTML file and include the related Webix code files in it.
 
@@ -67,11 +67,12 @@ barcode = new webix.ui({
 });
 ~~~
 
-Configuration
--------------
+Configuration settings
+-----------------------
 
-**type** sets barcode type. There are 3 built-in types: "ean8", "ean13" and "upcA" ("ean13" is default)
+You can set the following properties to configure Barcode:
 
+- **type** - sets the barcode type. There are 3 built-in types: "ean8", "ean13" and "upcA" ("ean13" is the default one):
 
 
 ~~~js
@@ -88,23 +89,130 @@ barcode.define("type", "upcA");
 
 ~~~
 
-Built-in Types
---------------
+- **value** - sets barcode value (text):
+
+
+~~~js
+webix.ui({
+    view:"barcode",
+    value: "123456789012"
+});
+
+~~~
+
+- **width** - defines the view width
+
+
+~~~js
+webix.ui({
+    view:"barcode",
+    width: 250
+});
+
+~~~
+
+If you want to set flexible width, you need to set the **-1** value for this property:
+~~~js
+webix.ui({
+    view:"barcode",
+    width: -1
+});
+
+~~~
+
+- **height** -  defines the view height
+
+
+~~~js
+webix.ui({
+    view:"barcode",
+    height: 180
+});
+
+~~~
+
+If you want to set flexible height, you need to set the **-1** value for this property:
+
+~~~js
+webix.ui({
+    view:"barcode",
+    height: -1
+});
+
+~~~
+
+- **paddingX** - sets the left and right paddings (space between widget border and bars) 
+
+~~~js
+webix.ui({
+    view:"barcode",
+    paddingX: 20
+});
+~~~
+
+- **paddingY** - sets the top and bottom paddings
+
+~~~js
+webix.ui({
+    view:"barcode",
+    paddingY: 10
+});
+
+~~~
+
+- **textHeight** - sets the height of the text block
+
+
+~~~js
+webix.ui({
+    view:"barcode",
+    textHeight: 20
+});
+
+~~~
+
+- **color** - sets the bar color
+
+
+~~~js
+webix.ui({
+    view:"barcode",
+    color: "#000"
+});
+~~~
+
+Setting Value
+-------------
+
+You can set the value in two ways:
+
+1. via the **value** property in Barcode configuration
+2. using the **setValue** method
+
+~~~js
+var barcode = new webix.ui({
+   view:"barcode",
+   value: "123456789012"
+});
+// set the new value
+barcode.setValue("453456789015");
+~~~
+
 
 Type Definition
 ---------------
 
 There are 3 built-in types of Barcode: 
 
- - ean8", 
- - ean13
- - upcA
+- ean8 
+- ean13
+- upcA
  
 "ean13" is the default type. 
 
 /*Images with available barcodes here*/
 
-Use "type" property to set Barcode type:
+Use the **type** property to set the Barcode type:
 
 ~~~js
 barcode = webix.ui({
@@ -113,8 +221,8 @@ barcode = webix.ui({
 });
 ~~~
 
-The type of Barcode can be changed dynamically via *define* method.
-Then you need to call *render* method to redraw Barcode with with type:
+The type of Barcode can be changed dynamically via the **define** method.
+After the changes are applied, you need to call the **render** method to redraw Barcode with the new type:
 
 ~~~js
 barcode.define("type","ean8");
@@ -126,15 +234,17 @@ Custom Types
 ---------------
 
 Webix Barcode includes 3 most popular types of barcodes: EAN8, EAN13 and UPC-A.  
-If you need a different barcode, you can add the type you need to existing to Barcode view. 
-Each barcode type should contain a function that returns sequence of “0” and “1” chars based on incoming text value. 
-This 0-and-1 character combination will be used for bar rendering. 
-Library will render black bars for “1” chars and leave gaps for “0”.
+If you need a different barcode, you can add the necessary type to the existing Barcode view. 
 
-To add a new type you need use *webix.type* method that takes two parameters: 
+Each barcode type should contain a function that returns a sequence of “0” and “1” chars based on the incoming text value. 
+This 0-and-1 character combination will be used for bar rendering. 
+
+The Library will render black bars for “1” chars and leave gaps for the “0” ones.
+
+To add a new type you need to use the **webix.type** method that takes two parameters: 
  
- - ui object that the type will be created for ( webix.ui.barcode for Barcode)
- - object with type configuration
+- ui object that the type will be created for ( webix.ui.barcode for Barcode)
+- object with type configuration
 
 ~~~js
 webix.type( webix.ui.barcode, {
@@ -168,9 +278,11 @@ encodings:[
 
 3) set *template* function that will convert incoming text to uppercase and add “*”  as start and stop characters:
 
+~~~js
  template: function(value){
       return ("*" + value + "*").toUpperCase();
  }
+~~~
 
 4) define *encode* method that will apply 0-1 sequences from *encodings* array to incoming text value
 ~~~js

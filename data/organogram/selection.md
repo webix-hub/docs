@@ -18,6 +18,9 @@ orgChart = new webix.ui({
 })
 ~~~
 
+{{sample
+34_organogram/01_basic.html
+}}
 
 Related methods
 --------------------

@@ -1,110 +1,108 @@
-Configuring Organogram
+Customizing Organogram
 =====================
+
 
 The dimensions of items in Organogram, their arrangement and content, 
 as well as the position of the component in relation to the container can be customized with the help of the **item type**.
 
-The following properties can be set in the [type](desktop/type.md):
+Common configuration
+---------------------
 
-- **width** - the width of an item in pixels, must be a fixed number
+The following properties can be set in the [type](desktop/type.md) to customize the whole component:
+
+
+- **autowidth** - boolean, adjusts the container to fit the chart width
 
 ~~~js
-{
-	width: 120 
-}
+webix.ui({
+	view: "organogram",
+    autowidth: true,
+    ...
+});	
 ~~~
 
-- **height** - the height of an item, auto by default, fits to the content's height
+- **autoheight** - boolean, adjusts the container to fit the chart height
 
 ~~~js
-{
-	height: "auto"
-}
-~~~
-
-- **padding** - the space between the organogram and the container borders
-
-~~~js
-{
-  	padding: 20
-}
-~~~
-
-- **marginX** - horizontal space between two items
-
-~~~js
-{
-	marginX: 20
-}
-~~~
-
-- **marginY** - vertical space between two items
-
-~~~js
-{
-    marginY: 20
-}
+webix.ui({
+	view: "organogram",
+    autoheight: true,
+    ...
+});	
 ~~~
 
 - **lineColor** - color of the line that connects items in organogram
 
 ~~~js
-{
- 	lineColor: "#90caf9"
-}
+webix.ui({
+	view: "organogram",
+    lineColor: "#90caf9",
+    ...
+});	
 ~~~
+Items configuration
+----------------------
 
+The appearance of Organogram items can also be changed by setting the following properties in the **type** parameter: 
 
-- **classname** - specifies a css rule for an item 
+- **width** - the width of an item in pixels, must be a fixed number
 
 ~~~js
-classname:function(obj, common, marks){
-	var css = "webix_organogram_item ";
-	if (obj.$css){
-		if (typeof obj.$css == "object")
-			obj.$css = webix.html.createCss(obj.$css);
-		css += " "+obj.$css;
-	}
-
-	if(marks && marks.list_item)
-		css += " webix_organogram_list_item ";
-	if(marks && marks.$css)
-		css += marks.$css;
-	css += " webix_organogram_level_"+obj.$level;
-	return css;
-}
+webix.ui({
+	view: "organogram",
+    type:{
+	     width: 120 
+    },
+    ...
+});
 ~~~
 
-- **listClassName** - defines a css rule for a container with list elements
+- **height** - the height of an item, "auto" by default, fits to the content's height
 
 ~~~js
-listClassName: function(obj){
-	var css =  "webix_organogram_list webix_organogram_list_"+obj.$level;
-	if (obj.$listCss){
-		if (typeof obj.$listCss == "object")
-			obj.$listCss = webix.html.createCss(obj.$listCss);
-		css += " "+obj.$listCss;
-	}
-	return css;
-}
+webix.ui({
+	view: "organogram",
+    type:{
+	   height: 100
+    },
+    ...
+});
 ~~~
 
-
-- **autowidth** - boolean, adjusts the container to fit the component's width
+- **padding** - the space between the organogram and the container borders
 
 ~~~js
-{
-	autowidth: true
-}
+webix.ui({
+	view: "organogram",
+    type:{
+        padding: 20
+    },
+    ...
+});
 ~~~
 
-
-- **autoheight** - boolean, adjusts the container to fit the component's height
+- **marginX** - horizontal space between two items
 
 ~~~js
-{
-    autoheight: true
-}
+webix.ui({
+	view: "organogram",
+    type:{
+        marginX: 20
+    },
+    ...
+});
+~~~
+
+- **marginY** - vertical space between two items
+
+~~~js
+webix.ui({
+	view: "organogram",
+    type:{
+        marginY: 20
+    },
+    ...
+});
 ~~~
 
 
@@ -116,26 +114,26 @@ listClassName: function(obj){
 }
 ~~~
 
-For example, if you want to set an image for the parent item, you can do the following:
+If you want to set any other html content for some item you should redefine the **template** property.
+For example, let's set images for chart items:
 
 ~~~js
 var orgChart = new webix.ui({
 	container:"testA",
     view:"organogram",
     template: function(obj){
-    	var parentId = this.getParentId(obj.id);
-    	var html = "";
-		// if director
-		if(!parentId){
-			html = "<img src='common/photo.png' class='photo'>";
+    	var image = obj.img;
+		
+		if(image){
+			html = "<img src='"+image+"' class='photo'>";
 		}
-		return html+obj.value;
+		return (image||"")+obj.value;
 	}
 });
 ~~~
 
-You can also specify elements of the list by the mark ">". To parse this sign correctly,
-we will set it as a "&gt;" html character code.
+You can also apply a custom template to specify elements of the list. Let's mark the list items by the mark ">". 
+To parse this sign correctly, we will set it as a **"&amp;gt;"** html character code.
 
 ~~~js
 var orgChart = new webix.ui({
@@ -151,6 +149,10 @@ var orgChart = new webix.ui({
 });
 ~~~
 
+{{sample
+34_organogram/07_templates.html
+}}
+
 
 Creating list blocks
 --------------------
@@ -160,9 +162,16 @@ There's a possibility to make a list block inside of an item.
 <img src="desktop/organogram_list_blocks.png">
 
 
-In the parent of the items that we want to turn into a list, we will specify the **type** property with the value "list".
+To create a list block, you need to specify the **$type** property with the value "list" in the parent of the items that you want to turn into a list.
 
-So the data template will be defined as follows:
+Let's have a look at the organogram in the above picture. The items of the 4th level are united into lists.
+
+For example, to unite the child items of the "Research" item ("Base research" and "Collaborative research with industries"), 
+we should set the **$type** property with the value "list" in its definition.
+
+The same actions should be performed with the "Development", "Teaching" and "Traning" items and their child items.
+
+The code will look like this:
 
 ~~~js
 var orgChart = new webix.ui({
@@ -185,8 +194,7 @@ var orgChart = new webix.ui({
     ]
 });
 ~~~
-
-Thus, in the above code snippet we can see that the children of the "Research" and "Development" items were transformed into lists. 
+ 
 
 
 {{sample
