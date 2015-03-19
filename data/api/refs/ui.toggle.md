@@ -112,6 +112,7 @@ The component is fully customizable and can be used both as a stand-alone view a
 - api/link/ui.toggle_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.toggle_name_config.md - name of the control
 - api/link/ui.toggle_on_config.md - allows attaching custom handlers to inner events of the component
+- api/ui.toggle_placeholder_config.md - 
 - api/link/ui.toggle_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.toggle_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/link/ui.toggle_template_config.md - the component template

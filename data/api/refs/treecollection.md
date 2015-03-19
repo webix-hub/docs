@@ -13,6 +13,7 @@ var store = new webix.TreeCollection({ url:"tree.php" });
 
 {{api
 - api/link/treecollection_add.md - adds an item to the store
+- api/link/treecollection_addbind.md - adds one more bound target
 - api/link/treecollection_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/treecollection_bind.md - binds components
 - api/link/treecollection_blockevent.md - temporarily blocks triggering of ALL events of the calling object
@@ -25,7 +26,9 @@ var store = new webix.TreeCollection({ url:"tree.php" });
 - api/link/treecollection_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/treecollection_exists.md - checks whether an item with the specified id exists
 - api/link/treecollection_filter.md - filters the component
+- api/link/treecollection_getbinddata.md - fills the target object with data
 - api/link/treecollection_getbranchindex.md - gets index of the node in a specific branch
+- api/link/treecollection_getcursor.md - returns the current cursor position.
 - api/link/treecollection_getfirstchildid.md - gets the ID of the first child of the specified branch
 - api/link/treecollection_getfirstid.md - returns the ID of the first item
 - api/link/treecollection_getidbyindex.md - returns the id of the item with the specified index
@@ -46,8 +49,13 @@ var store = new webix.TreeCollection({ url:"tree.php" });
 - api/link/treecollection_mapevent.md - routes events from one object to another
 - api/link/treecollection_parse.md - loads data to the component from an inline data source
 - api/link/treecollection_refresh.md - repaints the whole view or a certain item
+- api/link/treecollection_refreshcursor.md - force repainting of all bound components with current cursor value
 - api/link/treecollection_remove.md - removes the specified item from datastore
+- api/link/treecollection_removebind.md - disables data binding
+- api/link/treecollection_savebatch.md - makes simultaneous saving several components
 - api/link/treecollection_serialize.md - serializes data to a JSON object
+- api/link/treecollection_setbinddata.md - moves data from master to child
+- api/link/treecollection_setcursor.md - sets the position of the cursor
 - api/link/treecollection_sort.md - sorts datastore
 - api/link/treecollection_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/treecollection_unbind.md - breaks "bind" link
@@ -62,14 +70,17 @@ var store = new webix.TreeCollection({ url:"tree.php" });
 
 {{api
 - api/link/treecollection_onafteradd_event.md - fires after adding item to datastore
+- api/link/treecollection_onaftercursorchange_event.md - fires after the cursor changes its position.
 - api/link/treecollection_onafterdelete_event.md - fires after item deleting
 - api/link/treecollection_onafterload_event.md - fires after server side loading is complete
 - api/link/treecollection_onaftersort_event.md - fires after sorting dataset
 - api/link/treecollection_onbeforeadd_event.md - fires before adding item to datastore
+- api/link/treecollection_onbeforecursorchange_event.md - fires before the cursor changes its position.
 - api/link/treecollection_onbeforedelete_event.md - fires before item deleting
 - api/link/treecollection_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/link/treecollection_onbeforesort_event.md - fires before sorting dataset
 - api/link/treecollection_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/treecollection_onbindupdate_event.md - fires when data is changed in the child and 'save()' is called to update the master.
 - api/link/treecollection_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/treecollection_ondataupdate_event.md - fires when data item is in update process
 - api/link/treecollection_ondestruct_event.md - occurs when component destroyed
@@ -86,6 +97,7 @@ var store = new webix.TreeCollection({ url:"tree.php" });
 - api/link/treecollection_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/treecollection_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/treecollection_datatype_config.md - the type of loaded data
+- api/link/treecollection_defaultdata_config.md - the property stores data which is displayed in the child when no records are selected in the  master.
 - api/link/treecollection_filtermode_config.md - defines the pattern for tree item filtering
 - api/link/treecollection_id_config.md - the component ID
 - api/link/treecollection_on_config.md - allows attaching custom handlers to inner events of the component

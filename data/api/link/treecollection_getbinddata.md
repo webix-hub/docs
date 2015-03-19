@@ -1,0 +1,1 @@
+@link: api/bindsource_getbinddata.md

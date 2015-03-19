@@ -3,6 +3,7 @@ Methods
 
 {{api
 - api/link/treecollection_add.md - adds an item to the store
+- api/link/treecollection_addbind.md - adds one more bound target
 - api/link/treecollection_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/treecollection_bind.md - binds components
 - api/link/treecollection_blockevent.md - temporarily blocks triggering of ALL events of the calling object
@@ -15,7 +16,9 @@ Methods
 - api/link/treecollection_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/treecollection_exists.md - checks whether an item with the specified id exists
 - api/link/treecollection_filter.md - filters the component
+- api/link/treecollection_getbinddata.md - fills the target object with data
 - api/link/treecollection_getbranchindex.md - gets index of the node in a specific branch
+- api/link/treecollection_getcursor.md - returns the current cursor position.
 - api/link/treecollection_getfirstchildid.md - gets the ID of the first child of the specified branch
 - api/link/treecollection_getfirstid.md - returns the ID of the first item
 - api/link/treecollection_getidbyindex.md - returns the id of the item with the specified index
@@ -36,8 +39,13 @@ Methods
 - api/link/treecollection_mapevent.md - routes events from one object to another
 - api/link/treecollection_parse.md - loads data to the component from an inline data source
 - api/link/treecollection_refresh.md - repaints the whole view or a certain item
+- api/link/treecollection_refreshcursor.md - force repainting of all bound components with current cursor value
 - api/link/treecollection_remove.md - removes the specified item from datastore
+- api/link/treecollection_removebind.md - disables data binding
+- api/link/treecollection_savebatch.md - makes simultaneous saving several components
 - api/link/treecollection_serialize.md - serializes data to a JSON object
+- api/link/treecollection_setbinddata.md - moves data from master to child
+- api/link/treecollection_setcursor.md - sets the position of the cursor
 - api/link/treecollection_sort.md - sorts datastore
 - api/link/treecollection_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/treecollection_unbind.md - breaks "bind" link
@@ -48,6 +56,7 @@ Methods
 
 @index:
 - api/link/treecollection_add.md
+- api/link/treecollection_addbind.md
 - api/link/treecollection_attachevent.md
 - api/link/treecollection_bind.md
 - api/link/treecollection_blockevent.md
@@ -60,7 +69,9 @@ Methods
 - api/link/treecollection_detachevent.md
 - api/link/treecollection_exists.md
 - api/link/treecollection_filter.md
+- api/link/treecollection_getbinddata.md
 - api/link/treecollection_getbranchindex.md
+- api/link/treecollection_getcursor.md
 - api/link/treecollection_getfirstchildid.md
 - api/link/treecollection_getfirstid.md
 - api/link/treecollection_getidbyindex.md
@@ -81,8 +92,13 @@ Methods
 - api/link/treecollection_mapevent.md
 - api/link/treecollection_parse.md
 - api/link/treecollection_refresh.md
+- api/link/treecollection_refreshcursor.md
 - api/link/treecollection_remove.md
+- api/link/treecollection_removebind.md
+- api/link/treecollection_savebatch.md
 - api/link/treecollection_serialize.md
+- api/link/treecollection_setbinddata.md
+- api/link/treecollection_setcursor.md
 - api/link/treecollection_sort.md
 - api/link/treecollection_sync.md
 - api/link/treecollection_unbind.md

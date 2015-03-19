@@ -13,6 +13,7 @@ Events
 - api/ui.form_onsubmit_event.md - fires when enter key is pressed for a focused control in the form
 - api/link/ui.form_onvalidationerror_event.md - fires when the form fails to pass validation
 - api/link/ui.form_onvalidationsuccess_event.md - fires after the form has passes validation successfully
+- api/ui.form_onvalues_event.md - 
 }}
 
 @index:
@@ -27,5 +28,6 @@ Events
 - api/ui.form_onsubmit_event.md
 - api/link/ui.form_onvalidationerror_event.md
 - api/link/ui.form_onvalidationsuccess_event.md
+- api/ui.form_onvalues_event.md
 
 

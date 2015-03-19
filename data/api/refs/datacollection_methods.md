@@ -3,6 +3,7 @@ Methods
 
 {{api
 - api/link/datacollection_add.md - adds an item to the store
+- api/link/datacollection_addbind.md - adds one more bound target
 - api/link/datacollection_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/datacollection_bind.md - binds components
 - api/link/datacollection_blockevent.md - temporarily blocks triggering of ALL events of the calling object
@@ -15,6 +16,8 @@ Methods
 - api/link/datacollection_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/datacollection_exists.md - checks whether an item with the specified id exists
 - api/link/datacollection_filter.md - filters the component
+- api/link/datacollection_getbinddata.md - fills the target object with data
+- api/link/datacollection_getcursor.md - returns the current cursor position.
 - api/link/datacollection_getfirstid.md - returns the ID of the first item
 - api/link/datacollection_getidbyindex.md - returns the id of the item with the specified index
 - api/link/datacollection_getindexbyid.md - returns the index of the item with the specified id
@@ -29,8 +32,13 @@ Methods
 - api/link/datacollection_mapevent.md - routes events from one object to another
 - api/link/datacollection_parse.md - loads data to the component from an inline data source
 - api/link/datacollection_refresh.md - repaints the whole view or a certain item
+- api/link/datacollection_refreshcursor.md - force repainting of all bound components with current cursor value
 - api/link/datacollection_remove.md - removes the specified item from datastore
+- api/link/datacollection_removebind.md - disables data binding
+- api/link/datacollection_savebatch.md - makes simultaneous saving several components
 - api/link/datacollection_serialize.md - serializes data to a JSON object
+- api/link/datacollection_setbinddata.md - moves data from master to child
+- api/link/datacollection_setcursor.md - sets the position of the cursor
 - api/link/datacollection_sort.md - sorts datastore
 - api/link/datacollection_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/datacollection_unbind.md - breaks "bind" link
@@ -41,6 +49,7 @@ Methods
 
 @index:
 - api/link/datacollection_add.md
+- api/link/datacollection_addbind.md
 - api/link/datacollection_attachevent.md
 - api/link/datacollection_bind.md
 - api/link/datacollection_blockevent.md
@@ -53,6 +62,8 @@ Methods
 - api/link/datacollection_detachevent.md
 - api/link/datacollection_exists.md
 - api/link/datacollection_filter.md
+- api/link/datacollection_getbinddata.md
+- api/link/datacollection_getcursor.md
 - api/link/datacollection_getfirstid.md
 - api/link/datacollection_getidbyindex.md
 - api/link/datacollection_getindexbyid.md
@@ -67,8 +78,13 @@ Methods
 - api/link/datacollection_mapevent.md
 - api/link/datacollection_parse.md
 - api/link/datacollection_refresh.md
+- api/link/datacollection_refreshcursor.md
 - api/link/datacollection_remove.md
+- api/link/datacollection_removebind.md
+- api/link/datacollection_savebatch.md
 - api/link/datacollection_serialize.md
+- api/link/datacollection_setbinddata.md
+- api/link/datacollection_setcursor.md
 - api/link/datacollection_sort.md
 - api/link/datacollection_sync.md
 - api/link/datacollection_unbind.md

@@ -6,6 +6,7 @@ Properties
 - api/link/treecollection_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/treecollection_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/treecollection_datatype_config.md - the type of loaded data
+- api/link/treecollection_defaultdata_config.md - the property stores data which is displayed in the child when no records are selected in the  master.
 - api/link/treecollection_filtermode_config.md - defines the pattern for tree item filtering
 - api/link/treecollection_id_config.md - the component ID
 - api/link/treecollection_on_config.md - allows attaching custom handlers to inner events of the component
@@ -22,6 +23,7 @@ Properties
 - api/link/treecollection_datafeed_config.md
 - api/link/treecollection_datathrottle_config.md
 - api/link/treecollection_datatype_config.md
+- api/link/treecollection_defaultdata_config.md
 - api/link/treecollection_filtermode_config.md
 - api/link/treecollection_id_config.md
 - api/link/treecollection_on_config.md

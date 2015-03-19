@@ -1,0 +1,1 @@
+@link: api/collectionbind_defaultdata_config.md

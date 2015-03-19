@@ -111,6 +111,7 @@ The control has a collection of preset looks and can be used both as a stand-alo
 - api/link/ui.button_minwidth_config.md - sets the minimal width for the view
 - api/ui.button_name_config.md - name of the control
 - api/link/ui.button_on_config.md - allows attaching custom handlers to inner events of the component
+- api/ui.button_placeholder_config.md - 
 - api/ui.button_popup_config.md - allows to attach pop-up menu to the button
 - api/ui.button_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/link/ui.button_template_config.md - the component template

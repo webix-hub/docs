@@ -1,0 +1,1 @@
+@link: api/collectionbind_onbeforecursorchange_event.md

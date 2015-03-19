@@ -1,0 +1,1 @@
+@link: api/collectionbind_refreshcursor.md

@@ -31,6 +31,7 @@ Properties
 - api/ui.uploader_multiple_config.md - enables uploading of several files at a time. *True* by default.
 - api/link/ui.uploader_name_config.md - name of the control
 - api/link/ui.uploader_on_config.md - allows attaching custom handlers to inner events of the component
+- api/ui.uploader_placeholder_config.md - 
 - api/link/ui.uploader_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.uploader_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/link/ui.uploader_template_config.md - the component template
@@ -70,6 +71,7 @@ Properties
 - api/ui.uploader_multiple_config.md
 - api/link/ui.uploader_name_config.md
 - api/link/ui.uploader_on_config.md
+- api/ui.uploader_placeholder_config.md
 - api/link/ui.uploader_popup_config.md
 - api/link/ui.uploader_tabfocus_config.md
 - api/link/ui.uploader_template_config.md

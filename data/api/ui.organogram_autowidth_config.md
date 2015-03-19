@@ -17,7 +17,7 @@ webix.ui({
 @defined: ui.organogram
 
 @relatedsample:
-	34_organogram/04_autowidth.html
+	60_pro/07_organogram/04_autowidth.html
 @relatedapi:
 	api/ui.datatable_autoheight_config.md
 
