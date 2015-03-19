@@ -7,14 +7,14 @@ Start
 <div class='index-pc'></div>
 <div class='index-board'>
 
-<h2>Meet Webix 2.2!</h2>
+<h2>Meet Webix 2.3!</h2>
 <ul>
 	<li>Updated <a href="desktop/calendar.md">Calendar</a> control</li>
     <li><a href="helpers/ajax_operations.md">Better ajax</a> and <a href="desktop/uploader.md">Improved Uploader</a> control</li>
     <li>Data binding <a href="desktop/binding_details.md#bindingrules">for Tree, TreeTable and TreeCollection</a></li>
 </ul>
 
-<p> and <a href="desktop/whats_new_2_2.md">many more...</a></p>
+<p> and <a href="desktop/whats_new_2_3.md">many more...</a></p>
 <a href='http://webix.com/download/' class='index-download' title='Download Webix'></a>
 </div>
 
