@@ -19,7 +19,7 @@ var layout = $$('myview').getParentView();
 
 
 @relatedapi:
-	api/link/ui.datatable_getChildViews.md
+	api/link/ui.datatable_getchildviews.md
 @related:
 	desktop/view.md
 @relatedsample:

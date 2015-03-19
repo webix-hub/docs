@@ -19,7 +19,7 @@ webix.ui({
 @relatedsample:
 	60_pro/07_organogram/03_autoheight.html
 @relatedapi:
-	api/ui.organogram_autowidth_config.md
+	api/ui.organogram_autoheight_config.md
 
 @descr:
 

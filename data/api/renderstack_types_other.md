@@ -13,5 +13,5 @@ types
 @descr:
 
 
-Each types is a set of rendering helpers and templates  
-Component can have multiple types, but only one may be active per component instance
+Each type is a set of rendering helpers and templates  
+Component can have multiple types, but only one can be active per component instance

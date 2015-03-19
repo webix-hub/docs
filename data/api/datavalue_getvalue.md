@@ -17,7 +17,7 @@ webix.ui({
     width   :400,
     height  :400
 });
-$$('color3').setValue("#2626FF")
+$$('color').setValue("#2626FF")
 
 $$('color').getValue();// -> "#2626FF"
 

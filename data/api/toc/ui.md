@@ -90,6 +90,11 @@ table.webixtoc td{
         <td> a regular list of items</td>
     </tr>
     <tr>
+    	<td> <img src="api/toc/organogram.png"/> </td>
+        <td> api/refs/ui.organogram.md </td>
+        <td> an organizational chart</td>
+    </tr>
+    <tr>
     	<td> <img src="api/toc/propertysheet.png"/> </td>
         <td> api/refs/ui.property.md </td>
         <td>a structured table of 2 columns that presents 'name:value' pairs for a list of properties</td>
@@ -310,6 +315,11 @@ table.webixtoc td{
 <table class='webixtoc'>
 	<tbody>
     <tr>
+    	<td style="width:25px;">  <img src="api/toc/barcode.png"/> </td>
+        <td style="width:110px !important;">api/refs/ui.barcode.md</td>
+        <td> a machine-readable representation of data values</td>
+    </tr>
+    <tr>
     	<td style="width:25px;">  <img src="api/toc/calendar.png"/> </td>
         <td style="width:110px !important;">api/refs/ui.calendar.md</td>
         <td> a single-month calendar that allows users to select dates and move to the next/previous month </td>
@@ -400,6 +410,7 @@ table.webixtoc td{
 - api/refs/storage.session.md
 - api/refs/ui.accordion.md
 - api/refs/ui.accordionitem.md
+- api/refs/ui.barcode.md
 - api/refs/ui.button.md
 - api/refs/ui.calendar.md
 - api/refs/ui.chart.md
