@@ -4,7 +4,7 @@ Barcode
 ##API Reference
 
 - [Methods, properties and events](api__refs__ui.barcode.html)
-- [Samples](http://docs.webix.com/samples/35_barcode/index.html)
+- [Samples](http://docs.webix.com/samples/60_pro/08_barcode/index.html)
 
 ##Overview
 
@@ -77,7 +77,7 @@ barcode = new webix.ui({
 ~~~
 
 {{sample
-35_barcode/01_basic.html
+60_pro/08_barcode/01_basic.html
 }}
 
 Configuration settings
@@ -243,7 +243,7 @@ barcode.render();
 ~~~
 
 {{sample
-35_barcode/02_types.html
+60_pro/08_barcode/02_types.html
 }}
 
 
@@ -383,5 +383,5 @@ The result of applying the "code39" type is given in the picture below:
 <img src="desktop/barcode_custom_type.png">
 
 {{sample
-35_barcode/03_custom_type.html
+60_pro/08_barcode/03_custom_type.html
 }}
