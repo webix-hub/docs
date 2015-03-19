@@ -3,6 +3,8 @@ Barcode
 
 The Barcode widget represents text value in a machine-readable format by varying the widths and spacings of parallel lines. 
 The widget uses Canvas for lines rendering.
+<br><br>
+<img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/barcode_front.png">
 
 
 Basic Initialization
@@ -66,6 +68,10 @@ barcode = new webix.ui({
     view:"barcode"
 });
 ~~~
+
+{{sample
+35_barcode/01_basic.html
+}}
 
 Configuration settings
 -----------------------
@@ -202,7 +208,7 @@ barcode.setValue("453456789015");
 Type Definition
 ---------------
 
-There are 3 built-in types of Barcode: 
+Webix Barcode includes 3 definitions for most popular barcodes (EAN8, EAN13 and UPC-A):  
 
 - ean8 
 - ean13
@@ -210,7 +216,7 @@ There are 3 built-in types of Barcode:
  
 "ean13" is the default type. 
 
-/*Images with available barcodes here*/
+<img src="desktop/barcode_types.png">
 
 Use the **type** property to set the Barcode type:
 
@@ -229,12 +235,15 @@ barcode.define("type","ean8");
 barcode.render();
 ~~~
 
+{{sample
+35_barcode/02_types.html
+}}
+
 
 Custom Types 
 ---------------
 
-Webix Barcode includes 3 most popular types of barcodes: EAN8, EAN13 and UPC-A.  
-If you need a different barcode, you can add the necessary type to the existing Barcode view. 
+If you need create a custom barcode, you can add the necessary type to the existing Barcode view. 
 
 Each barcode type should contain a function that returns a sequence of “0” and “1” chars based on the incoming text value. 
 This 0-and-1 character combination will be used for bar rendering. 
@@ -258,9 +267,9 @@ Type configuration of Barcode must contain 3 properties:
  - encode - {function} the function that returns sequence of “1”and “0” chars for black-and-white bar rendering
  - template - {function} the function that returns text for barcode
 
-Lets consider example of code39 barcode configuration:
+Let's consider an example of the "code39" barcode configuration:
 
-1) define type name in type configuration:
+1) define type name in the type configuration:
 
 ~~~js
  name:"code39",
@@ -268,6 +277,7 @@ Lets consider example of code39 barcode configuration:
 
 2) set an array with encodings for 43 characters, consisting of uppercase letters (A through Z),
 numeric digits (0 through 9) and a number of special characters (-,., $, /, +, %, and space):
+
 ~~~js
 encodings:[
 	"110101001011", 
@@ -276,7 +286,7 @@ encodings:[
 ]
 ~~~
 
-3) set *template* function that will convert incoming text to uppercase and add “*”  as start and stop characters:
+3) set the **template** function that will convert the incoming text to uppercase and add “*”  as start and stop characters:
 
 ~~~js
  template: function(value){
@@ -284,7 +294,7 @@ encodings:[
  }
 ~~~
 
-4) define *encode* method that will apply 0-1 sequences from *encodings* array to incoming text value
+4) define the **encode** method that will apply 0-1 sequences from *encodings* array to incoming text value
 ~~~js
 encode: function(value){
 	var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-. $/+%*";
@@ -350,3 +360,21 @@ webix.type(webix.ui.barcode, {
  });
  
 ~~~
+
+Here is an example of the "code39" usage:
+
+~~~js
+barcode = webix.ui({
+   view: "barcode",
+   type: "code39",
+   value: "CODE 39"
+});
+~~~
+
+The result of applying the "code39" type is given in the picture below:
+
+<img src="desktop/barcode_custom_type.png">
+
+{{sample
+35_barcode/03_custom_type.html
+}}
