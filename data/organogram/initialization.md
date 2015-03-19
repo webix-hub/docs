@@ -68,5 +68,5 @@ orgChart = new webix.ui({
 ~~~
 
 {{sample
-34_organogram/01_basic.html
+60_pro/07_organogram/01_basic.html
 }}

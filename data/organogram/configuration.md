@@ -150,7 +150,7 @@ var orgChart = new webix.ui({
 ~~~
 
 {{sample
-34_organogram/07_templates.html
+60_pro/07_organogram/07_templates.html
 }}
 
 
@@ -198,7 +198,7 @@ var orgChart = new webix.ui({
 
 
 {{sample
-34_organogram/02_list.html
+60_pro/07_organogram/02_list.html
 }}
 
 

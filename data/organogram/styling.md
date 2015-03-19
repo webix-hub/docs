@@ -85,6 +85,6 @@ You can see the result in the picture below:
 <img src="desktop/organogram_custom_style.png">
 
 {{sample
-34_organogram/05_style.html
+60_pro/07_organogram/05_style.html
 }}
 

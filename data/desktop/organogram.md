@@ -5,7 +5,7 @@ API Reference
 ---------------
 
 - [Methods, properties and events](api/refs/ui.organogram.md)
-- [Samples](http://docs.webix.com/samples/34_organogram/index.html)
+- [Samples](http://docs.webix.com/samples/60_pro/07_organogram/index.html)
 
 Overview
 ----------

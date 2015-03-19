@@ -84,5 +84,5 @@ $$("orgChartId").attachEvent("onAfterSelect",function(id){
 ~~~
 
 {{sample
-34_organogram/06_events.html
+60_pro/07_organogram/06_events.html
 }}
