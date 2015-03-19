@@ -41,21 +41,21 @@ Webix Organogram can get data in the following predefined [data formats](desktop
 There are two main ways you can specify the data source for Organogram:
 
 1. Define the data set in the object initialization;
-2. Use api/link/ui.organogram_parse.md or api/link/ui.organogram_load.md methods.
+2. Use api/link/ui.tree_parse.md or api/link/ui.tree_load.md methods.
 
 Both methods lead to the same result.
 
 {{note
-If you load XML data you need to set the api/link/ui.organogram_datatype_config.md property in the constructor config or the second parameter of the
-api/link/ui.organogram_parse.md / api/link/ui.organogram_load.md method to the name of the expected data type, i.e. 'xml'.
+If you load XML data you need to set the api/link/ui.tree_datatype_config.md property in the constructor config or the second parameter of the
+api/link/ui.tree_parse.md / api/link/ui.tree_load.md method to the name of the expected data type, i.e. 'xml'.
 }}
 
 Loading from inline dataset
 -----------------------------------------
 If you want to specify the data set directly on the page, you can use:
 
-1. property api/link/ui.organogram_data_config.md 
-2. method api/link/ui.organogram_parse.md
+1. property api/link/ui.tree_data_config.md 
+2. method api/link/ui.tree_parse.md
 
 
 {{snippet
@@ -100,8 +100,8 @@ Loading from a data file
 ------------------------
 To load data from a file on the server, you can use:
 
-1. property api/link/ui.organogram_url_config.md
-2. method api/link/ui.organogram_load.md
+1. property api/link/ui.tree_url_config.md
+2. method api/link/ui.tree_load.md
 
 Remember, in case of XML data you should specify the data type explicitly as 'xml':
 

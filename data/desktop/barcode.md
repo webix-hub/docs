@@ -1,6 +1,13 @@
 Barcode
 ============
 
+##API Reference
+
+- [Methods, properties and events](api__refs__ui.barcode.html)
+- [Samples](http://docs.webix.com/samples/35_barcode/index.html)
+
+##Overview
+
 The Barcode widget represents text value in a machine-readable format by varying the widths and spacings of parallel lines. 
 The widget uses Canvas for lines rendering.
 <br><br>
