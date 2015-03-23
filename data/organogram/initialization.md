@@ -70,3 +70,5 @@ orgChart = new webix.ui({
 {{sample
 60_pro/07_organogram/01_basic.html
 }}
+
+@edition:pro

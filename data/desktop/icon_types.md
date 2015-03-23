@@ -66,7 +66,9 @@ The value for an **icon** property is the name of the needed icon.
     - **iconButtonTop** - a big icon button with a label below the icon;
 - **icon** - name of an icon (looks for it on Entypo);
 - **label** - text label for an icon button;
-- **width** - width of a button with label and icon. 
+- **width** - width of a button with label and icon;
+- **badge** - an orange circle that notifies about new messages.
+
 
 ##'webix-icon' CSS Class
 

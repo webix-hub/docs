@@ -385,3 +385,6 @@ The result of applying the "code39" type is given in the picture below:
 {{sample
 60_pro/08_barcode/03_custom_type.html
 }}
+
+
+@edition:pro

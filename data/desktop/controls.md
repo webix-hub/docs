@@ -61,7 +61,23 @@ Type of a button defines the way is looks like:
 - **align** (string)- positions a button with relation to a parent view;
 - **popup** (string)- defines the ID of a popup window that will be shown on button click;
 - **click** (function) - defines a function that will be executed on clicking the button (another possibility is to attach an event to it using the button's ID);
-- **css** (string) - name of CSS class applied to a button.
+- **css** (string) - name of CSS class applied to a button;
+- **badge** (number/string) - adds an orange circle that notifies about the number of new message for an icon button.
+
+
+###Adding badges
+
+To set a badge for a button, use the **badge** property as in:
+
+~~~js
+{view:"button", width:80, badge:1, type:"iconTop", icon:"envelope", label:"Mail"}
+~~~
+
+<img src="desktop/button_badge.png">
+
+{{sample
+02_toolbar/21_toolbar_badges.html
+}}
 
 {{note
 Specific button types as [imagebutton](#imagebutton) and an [icon button](desktop/icon_types.md) feature images / icons in their bodies and are described separately. 

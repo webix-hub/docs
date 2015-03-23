@@ -23,21 +23,20 @@ Menu object is stored in the **data** property.
 
 ~~~js
 webix.ui({
-		view:"menu",
-        id:"my_menu",
-		subMenuPos:"right",
-        layout:"y",
-		data:[ //menu data
-			{ value:"Translate...", submenu:[ 
-						"English", "Slavic...", "German"]},
-            { $template:"Separator" },
-			{ value:"Post...", submenu:[ "Facebook", "Google+", "Twitter" ]}
-		],
-        type:{
-              subsign:true,
-              height:50
-        }           
-  });	
+	view:"menu",
+    id:"my_menu",
+	subMenuPos:"right",
+    layout:"y",
+	data:[ //menu data
+		{ value:"Translate...", submenu:["English", "Slavic...", "German"]},
+        { $template:"Separator" },
+		{ value:"Post...", submenu:[ "Facebook", "Google+", "Twitter" ]}
+	],
+    type:{
+			subsign:true,
+            height:50
+    }           
+});	
 ~~~
 
 {{sample 03_menu/01_menubar.html }}
@@ -46,7 +45,7 @@ webix.ui({
 
 - **subMenuPos** (string) - sets position of pulldown submenus that will appear on mouse over;
 - **layout** - sets the arrangement of menu items (**x** for a horizontal menu, **y** for a vertical one)
-- **$template:"Separator"** - flag that indicates a separating line between menu elements. Appears once for eaah flag in the place where it is set;
+- **$template:"Separator"** - flag that indicates a separating line between menu elements. Appears once for each flag in the place where it is set;
 - **type** - object that contains setting for menu items;
 	- **subsign** (boolean) - sets an arrow for an item containing a submenu;
 - **openAction** (string) - alters the way of submenu opening - **"click"**. If set, you should first click menu item to enable its opening and hiding on "onMouseOver" and "onMouseOut" events.
@@ -64,7 +63,8 @@ Menu items are stored in the **data** array, each item being an object. Submenu 
 - **id** - item id.If omitted, it's given an auto-generated one;
 - **value** - defines text value for an item;
 - **href** - defines a link for an item;
-- **config** - defines configuration of a child submenu popup (if any).
+- **config** - defines configuration of a child submenu popup (if any);
+- **badge** - sets an orange circle that notifies about the number of new messages next to menu item.
 
 The easiest way to define menu items is to pass them as a simple array:
 
@@ -77,7 +77,8 @@ Or an associative one:
 ~~~js
 { view:"menu", data:[
 	{ id:1, value:"Google"}, 
-    { id:2, value:"Facebook", id:3, value:"Twitter"
+    { id:2, value:"Facebook"}, 
+    { id:3, value:"Twitter"}
 ]}
 ~~~
 
@@ -96,6 +97,7 @@ data:[
 If not specified, target will be set as empty string. 
 
 {{sample 03_menu/13_hrefs.html}}
+
 
 **Configuring Submenus**
 
@@ -181,6 +183,50 @@ webix.ui({
 ~~~
 
 Each submenu item can take its own submenu component. 
+
+**Badges in Menu Items**
+
+<img src="desktop/menu_badges.png">
+
+You can provide each menu item with a badge by applying the property **badge** in an item's definition:
+
+~~~js
+view:"menu",
+data:[
+	{ id:"1",value:"Posts", badge:12, submenu:[ 
+		{ value:"Facebook", badge:7 },
+		{ value:"Google+", badge:2 },
+		{ value:"Twitter", badge:3 },
+    ...        
+]		
+~~~
+
+{{sample
+03_menu/16_badges.html
+}}
+
+**Spacer in vertical menu**
+
+<img src="desktop/menu_spacer.png">
+
+To separate one group of items from another one in vertical menu, use the property **$template** with the value **"Spacer"**.
+This flag adds horizontal space between menu items.
+
+~~~js
+view:"menu",
+layout:"y",
+data:[
+	{ id:"1", value:"Translations", icon:"qrcode", badge:20 },
+    { id:"2", value:"Posts", icon:"file-word-o", badge:3 },
+    { $template:"Spacer" },
+    { id:"3", value:"Help", icon:"support"},
+	...
+]
+~~~
+
+{{sample
+03_menu/15_menu_spacer.html
+}}
 
 ###MenuBar
 
