@@ -70,7 +70,7 @@ Menu items are stored in the **data** array, each item being an object. Submenu 
 - **value** - defines text value for an item;
 - **href** - defines a link for an item;
 - **config** - defines configuration of a child submenu popup (if any). The configuration overrides the one defined via **submenuConfig**;
- - **badge** - sets an orange circle that notifies about the number of new messages next to menu item.
+- **badge** - sets an orange information circle that notifies about the number of new activities for this menu item (e.g. messages).
 
 The easiest way to define menu items is to pass them as a simple array:
 
@@ -104,8 +104,23 @@ If not specified, target will be set as empty string.
 
 {{sample 03_menu/13_hrefs.html}}
 
+###Badges in Menu Items
 
-**Configuring Submenus**
+Badges add info circles to menu items with the number of entities you'd like to assosiate with this or that item (e.g. messages): 
+
+{{todo add screenshot }}
+~~~js
+view:"menu", 
+data:[
+	{ id:"1",value:"Translations", badge:"1"},
+	{ id:"2",value:"Posts", badge:"12" },
+	{ id:"3",value:"Info", badge:"24" }
+]
+~~~
+
+{{sample 03_menu/16_badges.html }}
+
+###Configuring Submenus
 
 Submenu items can be set as an **array of values**:
 
