@@ -15,7 +15,7 @@ parseFormatDate
 
 @example:
 
-var date = webix.i18n.parseFormatDate("16.02.2004");
+var date = webix.i18n.parseFormatDate("2001-02-16");
 
 @template:	api_method
 @defined:	i18n	

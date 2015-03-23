@@ -3,32 +3,30 @@ Version 2.3
 
 ## Breaking changes
 
+- form and toolbar provides consolidated [onChange](api/values_onchange_event.md) event 
+while after setValues call [onValues](api/values_onchange_event.md) event will fire instead;
+- [getSubMenu()](api/ui.menu_getsubmenu.md) method is renamed to [getMenu()](api/ui.menu_getmenu.md) with the following differencies:
+	- **getMenu()** returns object of menu or submenu where an item is located; 
+	- **getSubMenu()** method returns submenu object by the ID of its parent item;
+- Default parse format is changed for datepicker and calendar controls from **"%Y-%m-%d",** to **"%Y-%m-%d %H:%i",**  parseTimeFormat is added as **"%H:%i"** by default.
+Both of them can be altered within current locale. 
 
 ## New features
 
+- [pro] [barcode](desktop/barcode.md) widget
+- [pro] [organogram (organization chart)](desktop/organogram.md) widget
+- [pro] multiselect and datepicker filters to pivots
+- [pro] header sorting and value formatting in Pivot 
+- [pro] processing of equal file names in File Manager
+- badges and icons for list and menus (and views based on them)
 - placeholder for richselect
-- onValues event to replace old onChange event
-- form and toolbar provides consolidated onChange event
-- badges and icons in list and menu based views
 - spacer element in menu view
 - ability to subclass menu and submenu ( configuration from config and submenuConfig overrides default one )
-- barcode
-- badges
-- organogram into webix library
 - ability to trigger onReady in sync. way
-- organization chart
-- header sorting and value formatting
-- getSubMenu renamed to getMenu; added getSubMenu that returns submenu item by its parent id
-- multiselect and datepicker filters to pivots
-- today and clear buttons are added to the default date editor
 - today and clear buttons are added to the default date editor
 - editor can receive full data item
 - touch skin
-- editor can receive full data item
 - upload for IE9
-- uploader for old IE
-- equal names processing
-- parseTimeFormat
 
 Check [migration guide](migration.md) for more details
 
@@ -37,7 +35,7 @@ Check [migration guide](migration.md) for more details
 
 - DataCollection has getCursor and setCursor methods by default
 - second click on a button with popup property will close the popup
-- autoConfig can be reused for datatable, http://forum.webix.com/discussion/4077/datatable-data-parsing#latest
+- autoConfig can be reused for datatable, e.g. after clearAll() call
 - $touchCapture flag for touch.limited mode
 - before sending to server side all dates are serialized 
 - error handlers of webix.remove calls will receive the text of response

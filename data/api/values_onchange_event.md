@@ -2,7 +2,7 @@ onChange
 =============
 
 
-@short: fires when data in the input is changed
+@short: fires when data in the input or related form/toolbar is changed
 	
 
 @params:
@@ -10,12 +10,18 @@ onChange
 - oldv	string		the initial value in the field
 
 @example: 
-	
 $$("form1").elements["login"].attachEvent("onChange", function(newv, oldv){
-			webix.message("Value changed from: "+oldv+" to: "+newv);
-	//"login" here is the name of the needed text field
+	//"login" is name of related form field
+	webix.message("Value changed from: "+oldv+" to: "+newv);
+});    
+//or
+$$("form1").attachEvent("onChange", function(newv, oldv){
+	webix.message("Value changed from: "+oldv+" to: "+newv);
+});  
+
 @relatedapi:
 	api/link/ui.form_validate.md
+    api/values_onvalues_event.md
 @relatedsample: 
 	13_form/02_api/07_onchange_event.html
 @related:
@@ -23,5 +29,8 @@ $$("form1").elements["login"].attachEvent("onChange", function(newv, oldv){
 
 @template:	api_event
 @descr:
+
+The event fires only in case some value is changed by user in browser. If values are set programmatically (with api/values_setvalues.md method)
+the api/values_onvalues_event.md will fire instead.
 
 
