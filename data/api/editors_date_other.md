@@ -18,11 +18,17 @@ The calendar is shown automatically as soon as you trigger item editing. This is
 
 ~~~js
 webix.editors.$popup = {
-        date:{
-            view:"popup",
-            body:{ view:"calendar", timepicker:true, weekNumber:true, width: 220, height:200}
-        }
-    };
+  date:{
+     view:"popup",
+     body:{ 
+     	view:"calendar", 
+        timepicker:true, 
+        weekNumber:true, 
+        width: 220, 
+        height:200
+     }
+  }
+};
 ~~~
 
 **Timepicker** allows selecting time in addition to dates.

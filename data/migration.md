@@ -4,6 +4,18 @@ Migration to latest Webix version
 Webix 2.1 -> 2.3
 -----------------
 
+###Parse format 
+
+In version 2.2 the default [parseFormat](api/i18n_parseformat_other.md) was **"%Y-%m-%d"** while from version 2.3 it becomes **"%Y-%m-%d %H:%i"**. 
+
+It can be altered [within current locale](desktop/localization.md) as: 
+
+~~~js
+webix.i18n.parseFormat = "%Y-%m-%d";
+webix.i18n.setLocate();
+~~~
+
+
 Webix 2.1 -> 2.2
 -----------------
 

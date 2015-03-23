@@ -23,39 +23,46 @@ Menu object is stored in the **data** property.
 
 ~~~js
 webix.ui({
-		view:"menu",
-        id:"my_menu",
-		subMenuPos:"right",
-        layout:"y",
-		data:[ //menu data
-			{ value:"Translate...", submenu:[ 
-						"English", "Slavic...", "German"]},
-            { $template:"Separator" },
-			{ value:"Post...", submenu:[ "Facebook", "Google+", "Twitter" ]}
-		],
-        type:{
-              subsign:true,
-              height:50
-        }           
+	view:"menu",
+    id:"my_menu",
+	subMenuPos:"right",
+    layout:"y",
+	data:[ //menu data
+		{ value:"Translate...", submenu:[ 
+			"English", "Slavic...", "German"]
+        },
+        { $template:"Separator" },
+		{ value:"Post...", submenu:[ "Facebook", "Google+", "Twitter" ]}
+	],
+    type:{
+       subsign:true,
+       height:50
+    }           
   });	
 ~~~
 
 {{sample 03_menu/01_menubar.html }}
 
-####Comments: 
+####Submenu configuration may include: 
 
 - **subMenuPos** (string) - sets position of pulldown submenus that will appear on mouse over;
-- **layout** - sets the arrangement of menu items (**x** for a horizontal menu, **y** for a vertical one)
-- **$template:"Separator"** - flag that indicates a separating line between menu elements. Appears once for eaah flag in the place where it is set;
-- **type** - object that contains setting for menu items;
+- **submenuConfig** (object) - sets common configuration for all the submenus in this menu regardless of their nesting level;
+- **layout** (string) - sets the arrangement of menu items: **x** (default) for a horizontal menu, **y** for a vertical one;
+- **$template** (string) - flag that indicates a separator between groups of menu items. Possible types are as follows: 
+	- **"Separator"** - a grey separating line; 
+    - **"Spacer"**	- an empty item with white background that doesn't change on mouse over. 
+- **type** - object that contains setting for menu items, namely:
 	- **subsign** (boolean) - sets an arrow for an item containing a submenu;
-- **openAction** (string) - alters the way of submenu opening - **"click"**. If set, you should first click menu item to enable its opening and hiding on "onMouseOver" and "onMouseOut" events.
+    - **height** and **width** (number) of each item;
+- **openAction** (string) - alters the way of submenu opening - **"click"**. If set, you should first click menu item to enable its opening and hiding on "onMouseOver" and "onMouseOut" events;
+- **template** - (string, function) - rules of data presentation. See [Data templates](desktop/html_templates.md) article for details.
+- **data** (object) - inline data desires format. See [Loading data](desktop/data_loading.md) article for details.
 
 {{sample 03_menu/11_menu_open_click.html}}
 
 ##Working with Menu Items
 
-###Setting Menu Items
+###Configuring Menu Items
 
 A menu/submenu item can be a **text item** including the one that starts its own **submenu** and any **Webix component** specified by ID. 
 
@@ -64,7 +71,7 @@ Menu items are stored in the **data** array, each item being an object. Submenu 
 - **id** - item id.If omitted, it's given an auto-generated one;
 - **value** - defines text value for an item;
 - **href** - defines a link for an item;
-- **config** - defines configuration of a child submenu popup (if any).
+- **config** - defines configuration of a child submenu popup (if any). The configuration overrides the one defined via **submenuConfig**. 
 
 The easiest way to define menu items is to pass them as a simple array:
 
@@ -81,7 +88,7 @@ Or an associative one:
 ]}
 ~~~
 
-**Links in Menu Items**
+###Links in Menu Items
 
 Each menu and submenu item can be supplied with a **link** specified in the data object by **href** and **target** (optional) attributes:
 
@@ -97,7 +104,7 @@ If not specified, target will be set as empty string.
 
 {{sample 03_menu/13_hrefs.html}}
 
-**Configuring Submenus**
+###Configuring Submenus
 
 Submenu items can be set as an **array of values**:
 
@@ -119,6 +126,9 @@ Any nested submenu (a popup) can be configured separately with the help of a **c
 
 ~~~js
 view:"menu",
+submenuConfig:{
+	width:400
+},
 data:[
 	{ id:"2",value:"Custom...", 
     	config:{
@@ -134,10 +144,11 @@ data:[
 ]
 ~~~
 
+This configuration overrides common configuration for submenus defined by **submenuConfig**. 
+
 {{sample 03_menu/12_submenu_config.html}}
 
-**Webix Component as Menu Item**
-
+###Webix Component as Menu Item
 
 <img src="desktop/menu_component.png"/>
 
@@ -184,7 +195,7 @@ Each submenu item can take its own submenu component.
 
 ###MenuBar
 
-Menu takes after a toolbar in appearance, but you can't embed other controls on a menu toolbar. To do this, init menu and toolbar as neighbouring cols so that they form an integral entity. 
+Menu takes after a toolbar in appearance, so the best way to create a menubar is to initialize menu and toolbar in neighbouring columns: 
 
 <img src="desktop/menubar.png" />
 

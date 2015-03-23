@@ -41,8 +41,9 @@ Here is a calendar with basic parameters.
 
 - **weekHeader** (boolean) - if *true* shows weekday above;
 - **events** (CSS class or specific cases) - e.g. **webix.Date.isHoliday** highlights dayoffs;
-- **date** - specifies the start date in the "year, month, day" format with months starting from 0. In case of an empty new Date(); you'll be shown current date;
-- **dayTemplate** - specifies a function that [sets a template](api/ui.calendar_daytemplate_config.md) for each day cell. By default the date is displayed without any styling. 
+- **date** (string, object) - specifies the start date in the "year, month, day" format with months starting from 0. In case of an empty new Date(); you'll be shown current date;
+- **dayTemplate** (function) - specifies a function that [sets a template](api/ui.calendar_daytemplate_config.md) for each day cell. By default the date is displayed without any styling;
+- **icons** (boolean) - specifies whether to show ["Today" and "Clear"](api/ui.datepicker_icons_config.md) icons.
 
 To see the full list of Calendar properties please refer to the [corresponding chapter of the documentation](api/refs/ui.calendar_props.md).
 
@@ -96,15 +97,13 @@ webix.ui({
 	view:"toolbar", 
 	type:"MainBar", 
 	elements:[
-    	{view:"datepicker", 
-        	name: "select_date", 
-        	label: 'Select Date'} 
+    	{view:"datepicker",  name: "select_date",  label: 'Select Date' } 
 	]
 });
 ~~~
 {{sample 09_calendar/06_datepicker.html }}
 
-##Timepicker 
+##Timepicker in Calendar
 
 Timepicker is a calendar feature that allows picking time. Being one of the component's properties, it is *false* by default: 
 
@@ -148,6 +147,17 @@ Afterwards the calendar will look like this:
 <img src="desktop/calendar_localized.png"/>
 
 {{sample 09_calendar/07_calendar_localized.html }}
+
+You can as well alter current working locale, e.g. change text of "Today" and "Clear" icons:
+
+~~~js
+webix.i18n.calendar.clear: "Clear New";
+webix.i18n.calendar.today: "Today New";
+webix.i18n.setLocale();
+~~~
+
+You need to call the api/i18n_setlocale.md method to make changes come into force. 
+
 
 ##Disabling Period in Calendar {#blockdates}
 

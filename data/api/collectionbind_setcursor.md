@@ -19,7 +19,7 @@ $$('list').attachEvent("onAfterSelect", function (id) {
 });
 
 @relatedapi:
-	api/CollectionBind_getCursor.md
+	api/collectionbind_getcursor.md
 @related:
 	desktop/nonui_objects.md
 @relatedsample:
