@@ -5,7 +5,7 @@ select
 @short: enables date selection within the calendar.
 	
 
-@type: bool
+@type: boolean
 @example:
 
 @related: 

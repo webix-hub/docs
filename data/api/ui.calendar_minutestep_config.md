@@ -5,7 +5,7 @@ minuteStep
 @short:
 	step of time selector
 
-@type:  int
+@type:  number
 @example:
 
 weibix.ui({view:"calendar", minutestep:10 })

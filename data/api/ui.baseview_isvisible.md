@@ -8,7 +8,7 @@ isVisible
 
 
 @returns:
-is_visible    bool  <i>true</i>, if the calling object is visible
+is_visible    boolean  <i>true</i>, if the calling object is visible
 
 @example:
 $$('my_list').isVisible();

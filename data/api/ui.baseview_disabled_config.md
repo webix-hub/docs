@@ -5,7 +5,7 @@ disabled
 @short: indicates whether an item is enabled or not
 	
 
-@type:  bool
+@type:  boolean
 @example:
 
 webix.ui({

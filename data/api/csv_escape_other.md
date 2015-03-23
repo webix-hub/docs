@@ -5,7 +5,7 @@ escape
 @short: enables/activates the escape mode (activated by default)
 	
 
-@type: bool
+@type: boolean
 
 @example:
 

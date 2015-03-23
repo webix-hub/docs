@@ -6,7 +6,7 @@ once
 	
 
 @params:
-- code     functor     code to execute
+- code     function     code to execute
 
 
 @example:

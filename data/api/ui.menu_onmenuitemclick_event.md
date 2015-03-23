@@ -4,9 +4,9 @@ onMenuItemClick
 @short: fires when menu item has been clicked
 
 @params:
-- id	string, number		item ID
-- e		event		mouse event object
-- node	HTML element	target HTML element
+- id	id		item ID
+- e		Event		mouse event object
+- node	HTMLElement	target HTML element
 
 @example:
 

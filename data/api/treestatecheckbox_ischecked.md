@@ -8,7 +8,7 @@ isChecked
 - id 	id 		ID of the node in question
 
 @returns:
-- true 	bool 	*true* if the node is checked; *false* if not	
+- true 	boolean 	*true* if the node is checked; *false* if not	
 
 @example:
 tree.isChecked('part1');

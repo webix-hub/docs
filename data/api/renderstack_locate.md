@@ -8,7 +8,7 @@ locate
     
 
 @params:
-- e		event		a native event
+- e		Event		a native event
 
 
 @returns:

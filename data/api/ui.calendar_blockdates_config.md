@@ -5,7 +5,7 @@ blockDates
 @short: defines the selectable range
 	
 
-@type: functor
+@type: function
 @example:
 
 { view:"calendar", blockDates:function(date){

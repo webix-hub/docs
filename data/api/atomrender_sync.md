@@ -9,7 +9,7 @@ sync
 @params:
 - source		object		the object that the method is assigned to
 - filter		function		the filtering function
-- silent		bool		if you set the parameter to <i>true</i>, the object won't be repainted after synchronization
+- silent		boolean		if you set the parameter to <i>true</i>, the object won't be repainted after synchronization
 
 @example:
 

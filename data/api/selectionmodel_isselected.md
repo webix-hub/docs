@@ -11,7 +11,7 @@ isSelected
 
 
 @returns:
--value	bool	<i>true</i> if the specified item is selected, otherwise - <i>false</i>
+-value	boolean	<i>true</i> if the specified item is selected, otherwise - <i>false</i>
 
 @example:
 webix.ui({

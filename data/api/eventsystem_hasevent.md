@@ -10,7 +10,7 @@ hasEvent
 
 
 @returns:
-result		bool		<i>true</i>, if at least one handler was attached to the specified event. Otherwise, <i>false</i>
+result		boolean		<i>true</i>, if at least one handler was attached to the specified event. Otherwise, <i>false</i>
 @example:
 
 var is_exit = mydata.hasEvent('onBeforeSelect');

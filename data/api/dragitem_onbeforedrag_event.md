@@ -7,10 +7,10 @@ onBeforeDrag
 
 @params:
 - context		object		the drag-n-drop context
-- native_event		event		an HTML event object
+- native_event		Event		an HTML event object
 
 @returns:
-- result  bool  returning <i>false</i> will prevent dragging of the element
+- result  boolean  returning <i>false</i> will prevent dragging of the element
 
 @example: 
 	

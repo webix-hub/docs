@@ -8,7 +8,7 @@ getWindow
 
 
 @returns:
-- window      element     the dom element of the window	
+- window      HTMLElement     the dom element of the window	
 
 @example:
 

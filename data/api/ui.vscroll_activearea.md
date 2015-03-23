@@ -6,7 +6,7 @@ activeArea
 	
 
 @params:
-- node       element      DOM element mouse actions over which will be counted as scrolling
+- node       HTMLElement      DOM element mouse actions over which will be counted as scrolling
 
 @example:
 

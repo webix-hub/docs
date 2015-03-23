@@ -5,7 +5,7 @@ required
 @short: marks field as required
 	
 
-@type: bool
+@type: boolean
 @example:
 
 webix.ui({ view:"text", required:true });

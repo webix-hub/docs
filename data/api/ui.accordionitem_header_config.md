@@ -5,7 +5,7 @@ header
 @short:
 	sets the label of the header in the expanded state
 
-@type: bool,string,function
+@type: boolean,string,function
 @example:
 webix.ui({ 
     view:"accordion",

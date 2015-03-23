@@ -5,7 +5,7 @@ priceSettings
 @short: sets the format of the price number
 	
 
-@type: object/string
+@type: object
 
 @example:
 webix.i18n.priceSettings:{

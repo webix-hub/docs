@@ -11,7 +11,7 @@ onBeforeFilter
 - config      object            the filter configuration
 
 @returns:
-- result  bool  returning <i>false</i> will prevent data filtering
+- result  boolean  returning <i>false</i> will prevent data filtering
 
 @example:
 

@@ -5,7 +5,7 @@ content
 @short:
 	the id or node, whose content will be moved to the view
 
-@type: id,element
+@type: id,HTMLElement
 @example:
 <div id="details">...</div>
 

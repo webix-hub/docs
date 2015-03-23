@@ -5,7 +5,7 @@ validate
 @short: adds validation to the field
 	
 
-@type: bool
+@type: boolean
 @example:
 
 webix.ui({ view:"text", validate:"isNumber" });

@@ -8,7 +8,7 @@ loadNext
 - start		number		the start position to load data from
 - callback	function	the callback function
 - url		string		the data url
-- now		bool		specifies whether the incoming data request should be satisfied immediately. If it's set to <i>true</i> the <b>datathrottle</b> property will be ignored.
+- now		boolean		specifies whether the incoming data request should be satisfied immediately. If it's set to <i>true</i> the <b>datathrottle</b> property will be ignored.
 
 
 @related:

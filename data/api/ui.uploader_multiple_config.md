@@ -4,7 +4,7 @@ multiple
 
 @short: enables uploading of several files at a time. *True* by default. 
 	
-@type: bool
+@type: boolean
 @example:
 
 webix.ui({

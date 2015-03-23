@@ -10,7 +10,7 @@ bind
 
 
 @returns:
-- ajax       object     this instance of ajax object	
+- ajax       ajax     this instance of ajax object	
 
 @example:
 webix.ajax().bind(myobj).get("some.php", function(){

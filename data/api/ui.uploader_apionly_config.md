@@ -5,7 +5,7 @@ apiOnly
 @short: sets the uploader to "invisible" mode. *False* by default.
 	
 
-@type: bool
+@type: boolean
 @example:
 
 webix.ui({

@@ -4,7 +4,7 @@ move
 
 @short: makes view movable
 
-@type: bool
+@type: boolean
 @example:
 webix.ui({
 	view:"window",

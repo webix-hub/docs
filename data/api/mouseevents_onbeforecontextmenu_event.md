@@ -7,12 +7,12 @@ onBeforeContextMenu
 
 @params:
 - id	   string		the id of the clicked item
-- e		event		a native event object
-- node		element		the target HTML element
+- e		Event		a native event object
+- node		HTMLElement		the target HTML element
 
 @returns:
 
-- result   bool    returning <i>false</i> will block the event
+- result   boolean    returning <i>false</i> will block the event
 
 
 @example:

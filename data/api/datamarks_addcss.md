@@ -7,7 +7,7 @@ addCss
 
 @params:	
 - id	string,number	ID of the neccessary item
-- CSS class		string 		CSS class name
+- css		string 		CSS class name
 * silent	boolean		if true the component is not redrawn
 
 @example:

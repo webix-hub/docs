@@ -5,7 +5,7 @@ liveValidation
 @short: validation during cell editing
 	
 
-@type: bool
+@type: boolean
 @example:
 
 webix.ui({

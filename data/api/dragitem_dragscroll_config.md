@@ -4,7 +4,7 @@ dragscroll
 @short:
 	enables autoscroll of component during drag-n-drop
 
-@type: bool,string
+@type: boolean,string
 @example:
 webix.ui({
         view:"datatable",

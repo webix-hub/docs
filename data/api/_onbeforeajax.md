@@ -6,7 +6,7 @@ onBeforeAjax
 @params:
 - mode		string		type of request (GET, POST, ..)
 - url		string		url in the request
-- data	    obj 	    data object passed with the request
+- data	    object 	    data object passed with the request
 - request	object		XHRHTTP request object
 
 

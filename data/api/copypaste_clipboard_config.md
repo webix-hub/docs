@@ -5,7 +5,7 @@ clipboard
 @short:enables/disables clipboard support
 	
 
-@type: bool,string
+@type: boolean,string
 @values:
 - 'modify' ( or true, the default value)
 - 'insert'

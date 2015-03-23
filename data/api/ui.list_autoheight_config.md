@@ -5,7 +5,7 @@ autoheight
 @short:
 	height of view will be adjusted to show all items	
 
-@type: bool
+@type: boolean
 @example:
 
 webix.ui({

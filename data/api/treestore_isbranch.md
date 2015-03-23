@@ -8,7 +8,7 @@ isBranch
 - id 		id 	ID of the branch in question
 
 @returns:
-- true 		bool     **true,** if the branch has at least one child. **false,** if there-re no childern
+- true 		boolean     **true,** if the branch has at least one child. **false,** if there-re no childern
 
 @example:
 tree.isBranch('branch1');

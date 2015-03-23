@@ -3,7 +3,7 @@
 @short:enables selection in the tree
 	
 
-@type: bool
+@type: boolean
 @example:
 tree = new webix.ui({
 	view:"tree",

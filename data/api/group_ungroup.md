@@ -7,7 +7,7 @@ ungroup
 	ungroups data
 
 @params:
-- mode		bool		defines whether the component should be re-rendered after ungrouping ( by default, <i>true</i>)
+- mode		boolean		defines whether the component should be re-rendered after ungrouping ( by default, <i>true</i>)
 
 
 

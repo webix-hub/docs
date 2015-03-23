@@ -6,7 +6,7 @@ multiselect
 	enables the multi selection mode
 
 @type: 
-    bool
+    boolean
 @example:
 webix.ui({
     view:"datatable",

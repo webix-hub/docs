@@ -6,7 +6,7 @@ getTopParentView
 	
 
 @returns:
-view	view	top parent view	
+view	WebixView	top parent view	
 
 @example:
 

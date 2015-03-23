@@ -5,7 +5,7 @@ border
 @short:
 	enables/disables the bar borders
 
-@type: bool
+@type: boolean
 @example:
 webix.ui({
     view:"chart",

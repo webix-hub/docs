@@ -5,7 +5,7 @@ xCount
 @short:
 	defines width of view in items
 
-@type:  int
+@type:  number
 @example:
 
 //width of view will be enough to show 2 items

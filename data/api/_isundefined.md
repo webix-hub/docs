@@ -8,7 +8,7 @@ isUndefined
 - check		any	the value to check
 
 @returns:
-- result	bool	<i>true</i>, if the passed value is undefined
+- result	boolean	<i>true</i>, if the passed value is undefined
 
 @example:
 if (webix.isUndefined(obj)){

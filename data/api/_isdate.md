@@ -8,7 +8,7 @@ isDate
 - check		any	the value to check
 
 @returns:
-- result	bool	<i>true</i>, if the passed value is a date object
+- result	boolean	<i>true</i>, if the passed value is a date object
 
 @example:
 

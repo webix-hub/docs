@@ -5,7 +5,7 @@ navigation
 @short: activates the selection keyboard navigation
 	
 
-@type: bool
+@type: boolean
 @example:
 webix.ui({
     view:"datatable",

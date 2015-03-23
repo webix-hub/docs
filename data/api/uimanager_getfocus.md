@@ -6,7 +6,7 @@ getFocus
 
 
 @returns:
--	view		object	the view object
+- view		WebixView		the view object
 
 @example: 
 var obj = webix.UIManager.getFocus();

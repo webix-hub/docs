@@ -5,7 +5,7 @@ maxDate
 @short: set man limit for selected date
 	
 
-@type: mixed
+@type: Date,string
 @example:
 { view:"calendar", maxDate:"2012-04-05" }
 

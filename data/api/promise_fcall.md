@@ -7,7 +7,7 @@ fcall
 @params:
 
 @returns:
-promise		object 	'promise' object
+promise		promise 	'promise' object
 
 
 

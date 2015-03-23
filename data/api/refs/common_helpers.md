@@ -53,11 +53,6 @@ common helpers
 - api/_uid.md - returns a unique id
 - api/link/_unblockevent.md - 
 - api/_wrap.md - 'wraps' a function around the original function
-- api/ui_delay.md - delays a view from initializing at runtime
-- api/ui_fullscreen.md - hides Safari address bar on iPhone/iPod
-- api/ui_hasmethod.md - check does view in question supports the method
-- api/ui_resize.md - resizes all the top-level UI elements
-- api/ui_zindex.md - returns the maximum used z-index
 }}
 
 
@@ -80,8 +75,6 @@ common helpers
 - api/_codebase_other.md - returns the path to the 'codebase' folder
 - api/_name_other.md - returns the name of the component (by default, 'Core')
 - api/_version_other.md - returns the current version of the library
-- api/ui_scrollsize_other.md - returns the width of the scroll bar
-- api/ui_zindexbase_other.md - maximum used z-index
 }}
 
 

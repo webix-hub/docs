@@ -7,7 +7,7 @@ onDragOut
 
 @params:
 - context		object		the drag-n-drop context
-- native_event		event		an HTML event object
+- native_event		Event		an HTML event object
 
 @example: 
 	

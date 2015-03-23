@@ -8,7 +8,7 @@ provideApi
 
 @params:
 - target		object		the object that methods are assigned to
-- eventable		bool		defines if DataStore events needs being assigned
+- eventable		boolean		defines if DataStore events needs being assigned
 
 @example:
 

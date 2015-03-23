@@ -3,7 +3,7 @@ autofit
 
 @short: adjusts window size to the size of an html node it is initiated in
 
-@type: bool
+@type: boolean
 @example:
 
 

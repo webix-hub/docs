@@ -5,7 +5,7 @@ hidden
 @short: sets the initial visibility of the context object. *True* by default.
 	
 
-@type: bool
+@type: boolean
 @example:
 
 

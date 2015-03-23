@@ -5,7 +5,7 @@ weekNumber
 @short:
 	enables/disables additional left column with weeks' numbers (false)
 
-@type: bool
+@type: boolean
 @example:
 
 @related: 

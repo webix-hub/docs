@@ -9,7 +9,7 @@ $setSize
 
 @returns:
 
-- changed    bool     returns true if new size differs from the previous one
+- changed    boolean     returns true if new size differs from the previous one
 
 @example:
 @relatedapi:api/ui.baseview_$getsize_other.md, api/ui.baseview_resize.md

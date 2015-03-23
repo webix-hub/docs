@@ -7,7 +7,7 @@ loadBranch
 @params:
 - id 	id 		branch ID
 - callback 	   function  	callback function
-- url    path   data URL
+- url    string   data URL
 
 
 @example:

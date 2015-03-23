@@ -6,7 +6,7 @@ linkInput
 	
 
 @params:
-- input		obj		input object 
+- input		HTMLElement		input object 
 
 
 

@@ -7,7 +7,7 @@ isVisible
 
 @returns:
 
-- visible      bool    true, when current view is visible
+- visible      boolean    true, when current view is visible
 	
 
 @example:

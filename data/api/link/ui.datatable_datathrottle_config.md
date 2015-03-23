@@ -5,7 +5,7 @@
 @short:sets the polling interval (the time period between the completion of a network request and the next request for data)
 	
 
-@type: int
+@type: number
 @example:
 new webix.ui({
 	view:"datatable",

@@ -22,8 +22,8 @@ dtable.mapSelection(function(value){
 -value    string|int    the cell value
 -row_id    string|int    the row id
 -column_id    string|int    the column id
--row_ind    int    the row index of a cell within the selected block
--col_ind    int    the column index of a cell within the selected block
+-row_ind    number    the row index of a cell within the selected block
+-col_ind    number    the column index of a cell within the selected block
 
 @related:
 	datatable/get_set_data.md#gettingvaluesofcellsrange

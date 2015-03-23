@@ -8,7 +8,7 @@ toNode
 - id	string	the id of the element you want to access
 
 @returns:
-- node	element	an HTML node
+- node	HTMLElement	an HTML node
 
 @example:
 var node = webix.toNode("someId");

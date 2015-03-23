@@ -2,10 +2,10 @@ isIE
 =============
 
 
-@short: a read-only bool indicating whether the current browser is Internet Explorer
+@short: a read-only boolean indicating whether the current browser is Internet Explorer
 	
 
-@type: bool
+@type: boolean
 
 @example:
 
@@ -13,7 +13,7 @@ if (webix.env.isIE)
 	do_something();
 
 
-@template:	api_other
+@template:	api_config
 @defined:	env	
 @relatedapi:
 - api/env_issafari_other.md

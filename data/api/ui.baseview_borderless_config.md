@@ -5,7 +5,7 @@ borderless
 @short:used to hide the component borders
 	
 
-@type: bool
+@type: boolean
 @example:
 webix.ui({
 		view:"viewName",

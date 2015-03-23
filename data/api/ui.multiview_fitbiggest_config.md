@@ -5,7 +5,7 @@ fitBiggest
 @short: sizing mode of multiview
 	
 
-@type: bool
+@type: boolean
 @example:
 
 

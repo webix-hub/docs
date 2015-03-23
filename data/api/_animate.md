@@ -7,7 +7,7 @@ animate
 
 @params:
 
-- html_element    element    html object ( or html id ) which will be animated
+- html_element    HTMLElement    html object ( or html id ) which will be animated
 - animation    object    configuration of animation
 
 

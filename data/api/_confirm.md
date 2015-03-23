@@ -9,7 +9,7 @@ confirm
 - callback	function 	the callback function
 
 @returns:
-- box    element  the confirm box  
+- box    HTMLElement  the confirm box  
 
 @example:
 webix.confirm("Test confirm", function(result){

@@ -5,7 +5,7 @@ container
 @short: html element to which area will be attached
 	
 
-@type:  string,element
+@type:  string,HTMLElement
 @example:
 
 webix.ui({

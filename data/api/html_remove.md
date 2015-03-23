@@ -4,7 +4,7 @@ remove
 @short: removes an HTML element from DOM
 	
 @params:
-- node		element/array		an HTML element (or an array of elements)
+- node		HTMLElement,HTMLElement[]		an HTML element (or an array of elements)
 
 @example:
 <a id="l1" href='http://google.com'>Google</a>

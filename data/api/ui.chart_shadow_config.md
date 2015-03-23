@@ -5,7 +5,7 @@ shadow
 @short:
 	enables/disables the pie shadow
 
-@type: bool
+@type: boolean
 @example:
 webix.ui({
 	view: "chart",

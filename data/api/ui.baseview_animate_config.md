@@ -5,7 +5,7 @@ animate
 @short:
 	defines or disables view change animation.  
 
-@type: bool,object
+@type: boolean,object
 @example:
 webix.ui({
         view:"multiview",

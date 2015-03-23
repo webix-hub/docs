@@ -5,7 +5,7 @@ posRelative
 	returns the pointer's position relative to the object firing the event
 
 @params:
-- ev    event     a native HTML event
+- ev    Event     a native HTML event
 
 @returns:
 - position    object      the position object

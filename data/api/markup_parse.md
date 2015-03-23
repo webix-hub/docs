@@ -5,7 +5,7 @@ parse
 @short: inits a component defined by markup
 
 @params:
-- data	mixed	data for parsing (html or xml)
+- data			any			data for parsing (html or xml)
 - datatype		string		data type - "html" or "xml"
 
 @example:
