@@ -3,7 +3,7 @@
 @descr:
 
 
-@type: bool
+@type: boolean
 
 @example:
 tree = new webix.ui({

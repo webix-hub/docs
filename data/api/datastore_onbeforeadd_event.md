@@ -6,12 +6,12 @@ onBeforeAdd
 	fires before adding item to datastore
 
 @params:
-- id 		string, number		id of the newly added data item
+- id 		string,number		id of the newly added data item
 - obj		object		data for new item
 - index		number		index, at which new item will be added
 
 @returns:
-- data		bool	false if operation need to be blocked
+- data		boolean	false if operation need to be blocked
 
 @example:
 

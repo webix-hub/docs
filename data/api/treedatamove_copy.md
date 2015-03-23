@@ -7,7 +7,7 @@ copy
 @params:
 - sid		id		id of source item
 - tindex	number		index at which copy will be created
-* tobj		view	target view
+* tobj		WebixView	target view
 * details	object	extra parameters for moving
 
 @returns:

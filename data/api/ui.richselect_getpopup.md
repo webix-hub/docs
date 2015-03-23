@@ -6,7 +6,7 @@ getPopup
 	
 
 @returns:
-- view		object		popup element ( webix view ) 
+- view		WebixView		popup element ( webix view ) 
 	
 
 @example:

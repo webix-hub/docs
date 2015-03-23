@@ -7,7 +7,7 @@ getInputNode
 	gets the HTML element related to the component
 
 @returns:
-- node	element	the component HTML element
+- node		HTMLElement		the component HTML element
 	
 
 @example:

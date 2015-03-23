@@ -11,7 +11,7 @@ onBeforeSort
 - as		string,function		type of sorting
 
 @returns:
-- result  bool  returning false will prevent sorting
+- result  boolean  returning false will prevent sorting
 
 @example: 
 	

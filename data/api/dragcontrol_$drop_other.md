@@ -8,7 +8,7 @@ $drop
 - s		object		source html object
 - t		object		target html object
 - d		object		dropped html object
-- e		event		event object
+- e		Event		event object
 
 
 

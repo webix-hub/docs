@@ -6,7 +6,7 @@ render
 	
 
 @params:
-- html		element		html element in which map need to be rendered
+- html		HTMLElement		html element in which map need to be rendered
 
 @example:
 

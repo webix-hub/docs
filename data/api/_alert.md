@@ -9,7 +9,7 @@ alert
 - callback	function 	the callback function
 
 @returns:
-- box    element  the alert box  
+- box    HTMLElement  the alert box  
 
 @example:
 webix.alert("Test alert", function(result){

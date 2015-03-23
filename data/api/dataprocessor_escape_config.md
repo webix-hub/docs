@@ -5,7 +5,7 @@ escape
 @short: custom escaping function
 	
 
-@type: bool
+@type: boolean
 @example:
 
 var dp = new webix.DataProcessor({

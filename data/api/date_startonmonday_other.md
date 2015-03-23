@@ -5,7 +5,7 @@ startOnMonday
 @short: defines whether weeks start on Monday.
 	
 
-@type:bool
+@type:boolean
 
 @example:
 var isMonday = webix.Date.startOnMonday;

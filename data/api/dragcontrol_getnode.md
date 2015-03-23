@@ -5,7 +5,7 @@ getNode
 	gets HTML node of drag marker
 
 @returns:
-- node     element     html object
+- node     HTMLElement     html object
 
 @example:
 

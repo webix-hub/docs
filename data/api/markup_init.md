@@ -13,7 +13,7 @@ init
 var ui = webix.markup.init();
 
 @returns:
-- ui     view     newly constructed UI
+- ui     WebixView     newly constructed UI
 
 @template:	api_method
 @relatedsample:

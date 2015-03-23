@@ -9,7 +9,7 @@ hasCss
 - css	string	name of css class that needs to be checked
 
 @returns:
-css		bool	returns true if such css class was set
+css		boolean	returns true if such css class was set
 	
 
 @example:

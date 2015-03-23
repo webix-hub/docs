@@ -5,7 +5,7 @@ pos
 @short: returns the position of the mouse pointer relative to the upper-left corner of the screen
 
 @params:
-- ev	event		a native HTML event
+- ev	Event		a native HTML event
 
 @returns:
 - position	object		the position object

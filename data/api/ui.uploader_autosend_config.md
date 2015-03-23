@@ -5,7 +5,7 @@ autosend
 @short: enable seding files to server immediately after they have been added to uploader. *True* by default. 
 
 
-@type: bool
+@type: boolean
 @example:
 
 webix.ui({

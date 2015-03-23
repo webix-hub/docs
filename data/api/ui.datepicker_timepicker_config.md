@@ -5,7 +5,7 @@ timepicker
 @short: enables optional timepicker in the calendar
 	
 
-@type:  bool
+@type:  boolean
 @example:
 
 

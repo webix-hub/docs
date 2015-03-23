@@ -2,16 +2,16 @@ svg
 =============
 
 
-@short: a read-only bool indicating whether the current browser supports SVG
+@short: a read-only boolean indicating whether the current browser supports SVG
 	
-@type: bool
+@type: boolean
 
 @example:
 
 if (webix.env.svg)
 	do_something();
 
-@template:	api_other
+@template:	api_config
 @defined:	env	
 @descr:
 

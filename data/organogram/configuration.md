@@ -201,5 +201,5 @@ var orgChart = new webix.ui({
 60_pro/07_organogram/02_list.html
 }}
 
-
+@edition:pro
 

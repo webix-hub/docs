@@ -11,10 +11,10 @@ exists
 
 
 @returns:
-- result     bool         returns <i>true</i> if the item exists. Otherwise, <i>false</i>
+- result     boolean         returns <i>true</i> if the item exists. Otherwise, <i>false</i>
 
 @example:
-if(!$$("my_dataview").exists())// -> returns bool value
+if(!$$("my_dataview").exists())// -> returns boolean value
     var dataview = new webix.UI({
         view:"dataview",
         id:"my_dataview",

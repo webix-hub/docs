@@ -3,7 +3,7 @@ popupWidth
 
 
 @short: width of popup for extra tabs
-@type: int
+@type: number
 @example:
 
 

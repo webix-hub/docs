@@ -9,7 +9,7 @@ modalbox
 - callback	function 	the callback function
 
 @returns:
-- box    element  the modal box  
+- box    HTMLElement  the modal box  
 
 @example:
 	webix.modalbox({

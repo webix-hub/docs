@@ -3,7 +3,7 @@ waitData
 
 @short:  eventual result of an asynchronous operation ('promise' object) for the loaded data	
 
-@type: object
+@type: promise
 
 @example:
 

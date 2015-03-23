@@ -5,7 +5,7 @@ fixedRowHeight
 @short: 
 	defines whether the height should be fixed for all rows or can vary
 
-@type: bool
+@type: boolean
 @example:
 
 webix.ui({

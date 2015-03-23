@@ -2,16 +2,16 @@ transition
 =============
 
 
-@short: a read-only bool indicating whether the current browser supports CSS Transitions
+@short: a read-only boolean indicating whether the current browser supports CSS Transitions
 	
-@type: bool
+@type: boolean
 
 @example:
 
 if (webix.env.transition)
 	do_something();
 
-@template:	api_other
+@template:	api_config
 @defined:	env	
 @relatedapi:
 - api/env_translate_other.md

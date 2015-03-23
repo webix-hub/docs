@@ -5,7 +5,7 @@ checkboxRefresh
 @short:
 	controls behavior of checkbox editors in grid
 
-@type: bool
+@type: boolean
 @example:
 
 webix.ui({

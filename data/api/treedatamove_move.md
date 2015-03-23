@@ -7,8 +7,8 @@ move
 @params:
 - sid		id		id of source item
 - tindex	number		new item index
-* tobj		view	target view
-- details	object	extra parameters for moving
+* tobj		WebixView	target view
+* details	object	extra parameters for moving
 
 @returns:
 

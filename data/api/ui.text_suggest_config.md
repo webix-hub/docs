@@ -5,7 +5,7 @@ suggest
 @short:
 	links suggest list to the input
 
-@type: string,view
+@type: string,WebixView
 @example:
 
 webix.ui({

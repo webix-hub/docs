@@ -47,7 +47,7 @@ There exists a possibility to specify [common configuration](desktop/common_conf
 
 ##Working with Toolbar
 
-####Image Buttons
+###Image Buttons
 
 <img src="desktop/image_buttons.png"/>
 
@@ -75,7 +75,7 @@ Differently-sized buttons can be included into the toolbar with the help of a cu
 
 More info about how to [manipulate button groups](desktop/button_groups.md).
 
-####Icon Buttons
+###Icon Buttons
 
 Icons can be nested into all the library conponents. Within toolbar, icon buttons look definitely stylish.
 
@@ -85,6 +85,29 @@ Icons can be nested into all the library conponents. Within toolbar, icon button
 
 Learn more about icon types in the [dedicated chapter of the manual](desktop/icon_types.md). 
 
+
+###Icon Buttons with Badges
+
+It is possible to set badges for icon buttons. A badge is an orange circle used to notify about the number of new messages:
+
+<img src="desktop/toolbar_badges.png"/>
+
+To specify a badge for a toolbar icon, use the **badge** property with a numeric or string value.
+
+~~~js
+webix.ui({
+	container:"areaA",
+	view:"toolbar",
+	cols:[
+		{ view:"button", badge:1, type:"icon", icon:"envelope", label:"Mail" },
+		...
+	]
+});
+~~~
+
+{{sample
+02_toolbar/21_toolbar_badges.html
+}}
 
 
 ##Related Articles

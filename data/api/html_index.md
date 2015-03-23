@@ -5,7 +5,7 @@ index
 	
 
 @params:
-- node		element		a DOM element
+- node		HTMLElement		a DOM element
 
 
 @returns:

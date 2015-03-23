@@ -5,8 +5,8 @@ getSelectedId
 	returns the selected cells
 
 @params:
-*asArray    bool    specifies whether the returning result can be only array or both array and object
-*asString   bool    the id will be a string ( row id )
+*asArray    boolean    specifies whether the returning result can be only array or both array and object
+*asString   boolean    the id will be a string ( row id )
 
 @returns:
 -selected cells    object,array    the currently selected cells

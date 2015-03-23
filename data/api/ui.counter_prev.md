@@ -7,7 +7,7 @@ prev
 	
 
 @params:
-* step      integer     decrease step , 1 by default
+* step      number     decrease step , 1 by default
 
 @example:
 

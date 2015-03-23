@@ -5,7 +5,7 @@ offset
 @short:
 	defines whether the first item of the scale will be drawn with the offset equal to the half of the scale's step (relative to the origin of the chart) or not.
 
-@type: bool
+@type: boolean
 @example:
 webix.ui({
 	view:"chart",

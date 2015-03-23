@@ -3,7 +3,7 @@ prerender
 
 
 @short: invokes the full rendering of DataTable data 
-@type: bool
+@type: boolean
 
 @example:
 webix.ui({

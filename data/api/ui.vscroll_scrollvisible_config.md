@@ -5,7 +5,7 @@ scrollVisible
 @short: defines visibility of scroll
 	
 
-@type:  bool
+@type:  boolean
 @example:
 
 

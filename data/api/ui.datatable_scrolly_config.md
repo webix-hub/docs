@@ -3,7 +3,7 @@ scrollY
 
 
 @short:  enables/disables vertical scrolling
-@type:  bool
+@type:  boolean
 
 @example:
 

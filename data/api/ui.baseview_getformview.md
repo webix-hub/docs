@@ -6,7 +6,7 @@ getFormView
 	
 
 @returns:
-- form		view		view object of master form
+- form		WebixView		view object of master form
 	
 
 @example:

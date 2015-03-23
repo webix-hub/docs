@@ -6,8 +6,8 @@ editCell
 @params:
 - row	string	the row id
 - col   string   the column id
-* preserve	bool	the <i>true</i> value 'says' to keep the previous editor opened
-* show	bool	the <i>true</i> value 'says' to scroll DataTable if the specified cell is out of the viewport
+* preserve	boolean	the <i>true</i> value 'says' to keep the previous editor opened
+* show	boolean	the <i>true</i> value 'says' to scroll DataTable if the specified cell is out of the viewport
 
 
 @example:

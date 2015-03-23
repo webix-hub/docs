@@ -7,7 +7,7 @@ dateToStr
 
 @params:
 - format		string		date format
-- utc		bool		convert local time to UTC during conversion
+- utc		boolean		convert local time to UTC during conversion
 
 
 @returns:

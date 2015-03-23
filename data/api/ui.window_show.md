@@ -7,7 +7,7 @@ show
     
 @params:
 
-* node      obj       HTML node near which the window will be shown, or configuration object with exact position
+* node      HTMLElement,object       HTML node near which the window will be shown, or configuration object with exact position
 
 @example:
 

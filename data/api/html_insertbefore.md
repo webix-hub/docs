@@ -5,9 +5,9 @@ insertBefore
 
 
 @params:
-- node		element		a new DOM node
-- before	element		the sibling node that the new node will be inserted before
-* rescue	element		the parent node used if the subling doesn't exist
+- node		HTMLElement		a new DOM node
+- before	HTMLElement		the sibling node that the new node will be inserted before
+* rescue	HTMLElement		the parent node used if the subling doesn't exist
 
 
 @template:	api_method

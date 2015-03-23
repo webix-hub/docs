@@ -3,8 +3,8 @@ getState
 @short:retrieves the current state of the specified view
 	
 @params:
-- id	string	the view id	
-- 	childs		bool		defines whether the state object besides configuration of the specified view should contain configuration of its childs. By default - <i>false</i>
+- id			string		the view id	
+- childs		boolean		defines whether the state object besides configuration of the specified view should contain configuration of its childs. By default - <i>false</i>
 @returns:
 - state	object	the state object
 

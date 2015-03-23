@@ -6,7 +6,7 @@ getBranchIndex
 
 @params:
 - id     id		tree node ID;
-* parent ID		id    ID of the parent node.
+* parent		id    ID of the parent node.
 @returns:
 - index   number	 	index of related tree node	
 

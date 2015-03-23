@@ -4,7 +4,7 @@ select
 
 @short: sets the selection mode in DataTable
 	
-@type: bool,string
+@type: boolean,string
 
 @values:
 

@@ -6,8 +6,8 @@ onItemClick
 	fires when a component item was clicked
 @params:
 - id		string		the id of the clicked item
-* e		event		a native event object
-* node		element		the target HTML element
+* e		Event		a native event object
+* node		HTMLElement		the target HTML element
 
 @example: 
 	

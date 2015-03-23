@@ -9,7 +9,7 @@ transitionEnd
 @example:
 alert(webix.env.transitionEnd); // in WebKit-based browser returns "webkitTransitionEnd"
 
-@template:	api_other
+@template:	api_config
 @defined:	env	
 @relatedapi:
 - api/env_jsprefix_other.md

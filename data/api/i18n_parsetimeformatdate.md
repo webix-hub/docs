@@ -4,7 +4,7 @@ parseTimeFormatDate
 @short: converts a date object to a string in the parsing format with respect to time
 	
 @params:
-- date string	string	string in the needed format with time value
+- date	string	string in the needed format with time value
 
 @returns:
 - date	object	date object with the needed time	

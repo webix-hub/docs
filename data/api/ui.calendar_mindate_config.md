@@ -5,7 +5,7 @@ minDate
 @short: set min limit for selected date
 	
 
-@type: mixed
+@type: Date,string
 @example:
 { view:"calendar", minDate:"2012-04-05" }
 

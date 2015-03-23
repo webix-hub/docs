@@ -5,7 +5,7 @@ skipEmptyWeeks
 @short:
 	enables/disables displaying empty weeks (true)
 
-@type: bool
+@type: boolean
 @example:
 
 

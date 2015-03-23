@@ -7,8 +7,8 @@ onMouseMove
 
 @params:
 - id		string		the component id
-- e		event		a native event object
-- node		element		the target HTML element
+- e		Event		a native event object
+- node		HTMLElement		the target HTML element
 
 @example: 
 	

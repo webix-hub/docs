@@ -5,12 +5,12 @@ $dragIn
 @short: method called when item moved on possible drop landing during dnd
 	
 @params:
-- source     element     DOM element on which dnd action started
-- target     element     DOM element of possible drop landing
-- ev      event      native html event
+- source     HTMLElement     DOM element on which dnd action started
+- target     HTMLElement     DOM element of possible drop landing
+- ev      Event      native html event
 
 @returns:
-- target     element     DOM element which will be saved as drop target ( to ignore drop landing - return null value ) 
+- target     HTMLElement     DOM element which will be saved as drop target ( to ignore drop landing - return null value ) 
 
 @example:
 

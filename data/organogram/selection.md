@@ -48,3 +48,5 @@ Related events
 - api/link/ui.organogram_onselectchange_event.md		event		fires when selection is changed in DataTable 
 
 }}
+
+@edition:pro

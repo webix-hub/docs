@@ -5,7 +5,7 @@ $view
 @short: reference to top html element of the view
 	
 
-@type: element
+@type: HTMLElement
 
 @example:
 

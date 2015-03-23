@@ -9,7 +9,7 @@ isColumnVisible
 - id        id        column id
 
 @returns:
-- result     bool    true if column visible
+- result     boolean    true if column visible
 	
 
 @example:

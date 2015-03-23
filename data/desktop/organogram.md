@@ -69,3 +69,5 @@ The component items can include various HTML-elements, e.g. photos, and can be s
 - organogram/styling.md
 - organogram/event_handling.md
 - organogram/howtos.md
+
+@edition:pro

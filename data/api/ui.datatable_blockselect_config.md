@@ -3,7 +3,7 @@ blockselect
 
 
 @short: enables/disables block selection
-@type: bool
+@type: boolean
 
 @example:
 webix.ui({

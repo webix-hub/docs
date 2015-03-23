@@ -5,7 +5,7 @@ scroll
 @short:
 	enables/disables the scroll bar
 
-@type: bool,string
+@type: boolean,string
 
 @descr:
 Possible values are as follows: 

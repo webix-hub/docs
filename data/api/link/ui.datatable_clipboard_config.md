@@ -1,7 +1,7 @@
 @link: api/tablepaste_clipboard_config.md
 
 @short: enables/disables clipboard support
-@type: bool,string
+@type: boolean,string
 
 @values:
 - block 

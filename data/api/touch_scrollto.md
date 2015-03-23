@@ -6,7 +6,7 @@ scrollTo
 	scrolls content of html node to the specific position	
 
 @params:
-- node		node		html node
+- node		HTMLElement		html node
 - x			number			scroll x position
 - y			number			scroll y position
 - speed		string		time for scroling

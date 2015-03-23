@@ -6,7 +6,7 @@ onMouseMoving
 	fires when the mouse was moved over the component
 
 @params:
-- ev		event		a native event object
+- ev		Event		a native event object
 
 @example: 
 	

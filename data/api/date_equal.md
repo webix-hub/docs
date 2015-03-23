@@ -9,7 +9,7 @@ equal
 - dateb     object     second date to compare
 
 @returns:
-- result     bool     true if both dates point to the same value
+- result     boolean     true if both dates point to the same value
 	
 
 @example:

@@ -5,7 +5,7 @@ select
 @short:
 	enables/disables item selection or multiselection in grouplist
 
-@type: bool,string 
+@type: boolean,string 
 @values:
 
 - true				allows single selection

@@ -5,7 +5,7 @@ dragColumn
 @short: enables drag-and-drop support for columns
 	
 
-@type: bool,string
+@type: boolean,string
 @example:
 webix.ui({
 	view:"datatable",

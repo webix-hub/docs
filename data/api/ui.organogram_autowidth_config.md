@@ -4,7 +4,7 @@ autowidth
 @short: adjusts Organogram to the parent container size horizontally
 	
 
-@type: bool
+@type: boolean
 @example:
 webix.ui({
 	view:"organogram",

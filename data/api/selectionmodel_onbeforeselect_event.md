@@ -7,7 +7,7 @@ onBeforeSelect
 
 @params:
 - id		id		id of item
-- selection	bool		true if the item was selected, false if it was unselected
+- selection	boolean		true if the item was selected, false if it was unselected
 
 @example: 
 

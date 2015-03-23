@@ -216,3 +216,4 @@ ui.organogram
 - api/refs/ui.organogram_events.md
 - api/refs/ui.organogram_others.md
 
+@edition:pro

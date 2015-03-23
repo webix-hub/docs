@@ -4,8 +4,8 @@ all
 @short: resolves all promises in the result array
 	
 @params:
-- promise		object		'promise' object
-* promise 		object		'promise' object(s)
+- promise		promise		'promise' object
+* morepromises	promise		'promise' object(s)
 
 @example:
 

@@ -8,7 +8,7 @@ editNext
 
 
 @returns:
-- false	bool	false
+- false	boolean	false
 
 @example:
 $$('mylist').editNext();

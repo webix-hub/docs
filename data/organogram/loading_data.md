@@ -122,3 +122,5 @@ Loading from a database
 
 As the Organogram component is based on the TreeStore, you can also load data from a database on the server.
 For the details, read the article datatree/loading_data.md#loadingfromadatabase.
+
+@edition:pro

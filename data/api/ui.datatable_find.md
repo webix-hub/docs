@@ -9,7 +9,7 @@ find
 * first		boolean		if true, only the first found result is returned. False by default.
 
 @returns:
-rows	array, obj	array of found rows or a row object in case of "first".
+rows	array,object		array of found rows or a row object in case of "first".
 
 
 

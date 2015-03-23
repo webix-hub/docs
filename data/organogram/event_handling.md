@@ -86,3 +86,5 @@ $$("orgChartId").attachEvent("onAfterSelect",function(id){
 {{sample
 60_pro/07_organogram/06_events.html
 }}
+
+@edition:pro

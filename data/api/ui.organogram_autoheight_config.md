@@ -5,7 +5,7 @@ autoheight
 @short:adjusts Organogram to the parent container size vertically
 	
 
-@type: bool
+@type: boolean
 @example:
 webix.ui({
 	view:"organogram",

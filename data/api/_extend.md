@@ -8,7 +8,7 @@ extend
 @params:
 - target		object		the object to extend. It receives the new properties
 - source		object		an object that contains properties to merge in
-- overwrite		bool		if the value is <i>true</i>, the same properties will be overwritten by the values of the source object
+- overwrite		boolean		if the value is <i>true</i>, the same properties will be overwritten by the values of the source object
 
 @returns:
 - target	object		the target object with the new properties

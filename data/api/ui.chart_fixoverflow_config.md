@@ -5,7 +5,7 @@ fixOverflow
 @short: chart max limit mode
 	
 
-@type: bool
+@type: boolean
 @example:
 
 $$("chart1").define("fixOverflow", true);

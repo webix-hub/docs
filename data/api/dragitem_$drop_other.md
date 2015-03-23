@@ -5,9 +5,9 @@ $drop
 @short: method called when item dragged and dropped on valid target
 	
 @params:
-- source     element     DOM element on which dnd action started
-- target     element     DOM element of possible drop landing
-- ev      event      native html event
+- source    HTMLElement     DOM element on which dnd action started
+- target	HTMLElement     DOM element of possible drop landing
+- ev      	Event      native html event
 
 @example:
 webix.DragControl.addDrop("myDrop",{

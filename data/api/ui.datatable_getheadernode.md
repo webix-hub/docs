@@ -10,7 +10,7 @@ getHeaderNode
 
 
 @returns: 
-- node	element	the component HTML element
+- node	HTMLElement		the component HTML element
 	
 
 @example:

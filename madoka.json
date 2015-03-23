@@ -24,6 +24,8 @@
 	"freid_prefix"		: "webix.",
 	"sample_results"	: 3,
 
+	"typescript"		: "webix",
+
 	"export_config" :{
 		"search_root" : "./",
 		"samples_http": "./samples/",

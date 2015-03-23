@@ -5,7 +5,7 @@ validate
 @short: validates value of input
 	
 @returns:
-- result		bool		result of validation
+- result		boolean		result of validation
 
 @example:
 if ($$("mytext").validate())

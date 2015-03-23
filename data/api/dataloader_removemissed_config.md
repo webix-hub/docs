@@ -5,7 +5,7 @@ removeMissed
 @short: defines how to treat items in case of reloading
 	
 
-@type:  bool
+@type:  boolean
 @example:
 
 dtable.config.removeMissed = true;

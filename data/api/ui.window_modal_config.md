@@ -3,7 +3,7 @@ modal
 
 @short: switches window modality
 
-@type: bool 
+@type: boolean 
 @example:
 
 webix.ui({

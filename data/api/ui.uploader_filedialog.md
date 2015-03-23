@@ -6,7 +6,7 @@ fileDialog
 	
 
 @params:
-* content	obj	file upload context
+* content	object		file upload context
 
 
 @example:

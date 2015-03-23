@@ -7,7 +7,7 @@ shift
 	
 
 @params:
-* value      integer     value which will be added to the current one
+* value      number     value which will be added to the current one
 
 @example:
 

@@ -10,7 +10,7 @@ callEvent
 
 
 @returns:
-  - result	bool     <i>false</i>, if some of the event handlers returns <i>false</i>. Otherwise, <i>true</i>
+  - result	boolean     <i>false</i>, if some of the event handlers returns <i>false</i>. Otherwise, <i>true</i>
 
 @example:
 //invokes triggering handlers of the 'onResize' event

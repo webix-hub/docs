@@ -6,7 +6,7 @@ createDrag
 	called when drag-n-drop is initiated, creates drag representation
 
 @params:
-- event		event		event object
+- event		Event		event object
 
 	
 

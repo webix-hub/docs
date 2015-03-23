@@ -8,7 +8,7 @@ limit
 	
 
 @params:
-- mode      bool       limit functionality or not
+- mode      boolean       limit functionality or not
 
 
 @example:

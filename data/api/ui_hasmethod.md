@@ -10,7 +10,7 @@ name	string		name of view
 method_name		string		name of method
 
 @returns:
-result		bool		is method supported or not
+result		boolean		is method supported or not
 
 @example:
 

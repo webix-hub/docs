@@ -5,7 +5,7 @@ autoheight
 @short: sets component height according to its contents
 	
 
-@type: bool
+@type: boolean
 @example: 
 { template:"html->my_box2", autoheight:true},
 

@@ -10,7 +10,7 @@ load
 * callback		function		(optional) the callback function
 
 @returns: 
-promise	 object		"promise" object
+- promise	    promise   	"promise" object
 
 @related:
 	desktop/data_loading.md

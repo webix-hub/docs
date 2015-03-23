@@ -7,7 +7,7 @@ next
 	
 
 @params:
-* step      integer     increase step , 1 by default
+* step      number     increase step , 1 by default
 
 @example:
 

@@ -5,7 +5,7 @@ weekHeader
 @short:
 	enables/disables additional header with week days (false)
 
-@type: bool
+@type: boolean
 @example:
 
 @related: 

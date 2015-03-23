@@ -5,7 +5,7 @@ drag
 @short:
 	enables or disables drag-and-drop
 
-@type: bool,string
+@type: boolean,string
 @example:
 webix.ui({
         view:"datatable",

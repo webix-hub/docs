@@ -5,7 +5,7 @@ vertical
 @short: arranges radiobutton vertically (false by default)
 	
 
-@type: bool
+@type: boolean
 @example:
 { view:"radio", 
   options:[

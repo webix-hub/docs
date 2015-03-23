@@ -5,7 +5,7 @@ defer
 	
     
 @returns:
-promise		object 	'promise' object	
+promise		promise	 	'promise' object	
 
 @params:
 

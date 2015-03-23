@@ -5,7 +5,7 @@ autowidth
 @short: adjusts DataTable to the parent container size horizontally
 	
 
-@type: bool
+@type: boolean
 @example:
 webix.ui({
 	view:"datatable",
