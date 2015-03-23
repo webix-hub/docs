@@ -382,6 +382,7 @@ table.webixtoc td{
 @index:
 
 - api/refs/common_helpers.md
+- api/refs/ui_helpers.md
 - api/refs/ajax.md
 - api/refs/clipbuffer.md
 - api/refs/color.md

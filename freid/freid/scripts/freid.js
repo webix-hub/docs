@@ -347,7 +347,7 @@ var Freid = {
 		this.hOrder = [];
 		this.hPull = {};
 		this._get_by_type(webix, this.hPull, this.hOrder, "webix.", this._is_helper);
-		this._get_by_type(webix.ui, this.hPull, this.hOrder, "webix.ui.", this._is_view_helper);
+		//this._get_by_type(webix.ui, this.hPull, this.hOrder, "webix.ui.", this._is_view_helper);
 		//this._get_by_type(webix.global, this.hPull, this.hOrder, "", this._is_global_helper);
 	},
 
