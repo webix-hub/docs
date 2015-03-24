@@ -22,7 +22,7 @@ Check [migration guide](migration.md) for more details.
 - [getMenu](api/ui.menu_getmenu.md) method for menu to get current menu/submenu object
 - [parseTimeFormat](api/i18n_parsetimeformat_other.md) is added as **"%H:%i"** by default to parse "time" strings
 - badges and icons for list and menus (and views based on them)
-- barges for buttons
+- badges for buttons
 - placeholder for richselect
 - [spacer element](desktop/menu.md#initialization) in menu view
 - ability to provide [submenu configuration](desktop/menu.md#workingwithmenuitems) in submenuConfig property of the topmost menu
