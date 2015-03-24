@@ -10,8 +10,10 @@ API Reference
 Overview
 ----------
 
-Organogram is an organizational chart component that can be used for creating hierarchical diagrams representing the structure of organizations.
-It inherits API and structure from TreeStore. The component's appearance can be easily customized. 
+Organogram is an organizational chart component that can be used for creating hierarchical diagrams representing relations between people in an organization or
+showing different elements of some complex structure.
+
+It inherits API from TreeStore and DataStore. The component's appearance can be easily customized. 
 The component items can include various HTML-elements, e.g. photos, and can be styled according to the user's needs.
 
 <br>
@@ -43,7 +45,7 @@ The component items can include various HTML-elements, e.g. photos, and can be s
                 <li>organogram/styling.md</li>
             </ul>
         </td>
-		<td class='topic_description' onclick="displaySubList(event,'manipulations')">Covers techniques for fine-tuning the Organogram appearance:applying templates, customizing chart items, styling the component.</td>
+		<td class='topic_description' onclick="displaySubList(event,'manipulations')">Covers techniques for fine-tuning the Organogram appearance: applying templates, customizing chart items, styling the component.</td>
 	</tr>
 	<tr>
     	<td id="operations" class='topics' onclick="displaySubList( this.id)">
