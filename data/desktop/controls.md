@@ -27,15 +27,49 @@ Button {#button}
 
 {{sample 13_form/01_controls/10_buttons.html }}
 
+**Icon Buttons**
+
+<img src="desktop/toolbar_icons.png"/>
+
+~~~js
+{ view:"button", type:"icon", icon:"mail", label:"Mail", width:80 }
+~~~
+{{sample
+16_skins/03_icons.html
+}}
+
+**Image Buttons**
+
+<img src="desktop/image_buttons.png"/>
+
+
+~~~js
+{ view:"button", type: "image", image:".../img.gif", label: "Image Button" }
+~~~
+
+{{sample 02_toolbar/07_toolbar_image_button.html }}
+
 **HTML Buttons**
 
 <img src="desktop/html_buttons.png"/>
 
 ~~~js
-{ view:"button", id:"my_button", value:"Button", type:"htmlbutton"}
+{ view:"button", id:"my_button", value:"Button", type:"htmlbutton" }
 ~~~
 
 {{sample 02_toolbar/12_styled_buttons.html}}
+
+**Buttons with Badges**
+
+<img src="desktop/buttons_badges.png"/>
+
+~~~js
+{ view:"button", width:40, badge:1, type:"icon", icon:"envelope" }
+~~~
+
+{{sample
+02_toolbar/21_toolbar_badges.html
+}}
 
 ####Main Button Types
 
@@ -64,20 +98,6 @@ Type of a button defines the way is looks like:
 - **css** (string) - name of CSS class applied to a button;
 - **badge** (number/string) - adds an orange circle that notifies about the number of new message for an icon button.
 
-
-###Adding badges
-
-To set a badge for a button, use the **badge** property as in:
-
-~~~js
-{view:"button", width:80, badge:1, type:"iconTop", icon:"envelope", label:"Mail"}
-~~~
-
-<img src="desktop/button_badge.png">
-
-{{sample
-02_toolbar/21_toolbar_badges.html
-}}
 
 {{note
 Specific button types as [imagebutton](#imagebutton) and an [icon button](desktop/icon_types.md) feature images / icons in their bodies and are described separately. 
