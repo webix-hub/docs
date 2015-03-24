@@ -13,7 +13,7 @@ Others
 - api/link/ui.slider_$setsize_other.md - sets the component size
 - api/link/ui.slider_$setvalue_other.md - called each time when component need to set value in related html input
 - api/link/ui.slider_$skin_other.md - method, which will be called when skin defined
-- api/ui.slider_$touchcapture_other.md - 
+- api/ui.slider_$touchcapture_other.md - allows capturing touch gestures in touch limited mode.
 - api/link/ui.slider_$view_other.md - reference to top html element of the view
 - api/link/ui.slider_$width_other.md - current width of the view
 - api/link/ui.slider_config_other.md - all options from initial component configuration

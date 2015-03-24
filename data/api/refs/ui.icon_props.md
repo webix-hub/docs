@@ -25,7 +25,7 @@ Properties
 - api/link/ui.icon_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.icon_name_config.md - name of the control
 - api/link/ui.icon_on_config.md - allows attaching custom handlers to inner events of the component
-- api/ui.icon_placeholder_config.md - 
+- api/link/ui.icon_placeholder_config.md - placeholder text for the input area
 - api/link/ui.icon_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.icon_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/link/ui.icon_template_config.md - the component template
@@ -59,7 +59,7 @@ Properties
 - api/link/ui.icon_minwidth_config.md
 - api/link/ui.icon_name_config.md
 - api/link/ui.icon_on_config.md
-- api/ui.icon_placeholder_config.md
+- api/link/ui.icon_placeholder_config.md
 - api/link/ui.icon_popup_config.md
 - api/link/ui.icon_tabfocus_config.md
 - api/link/ui.icon_template_config.md

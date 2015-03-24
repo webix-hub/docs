@@ -61,7 +61,7 @@ The component can be displayed in 2 modes: static (the menu is fully expanded al
 - api/link/ui.menu_getitem.md - gets the object of the data item with the specified id
 - api/link/ui.menu_getitemnode.md - returns html element of the item
 - api/link/ui.menu_getlastid.md - returns the id of the last item
-- api/ui.menu_getmenu.md - 
+- api/ui.menu_getmenu.md - gets object of a menu/submenu where an item is located
 - api/ui.menu_getmenuitem.md - search for menu item in submenus
 - api/link/ui.menu_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.menu_getnode.md - returns the main HTML container for the calling object
@@ -72,7 +72,7 @@ The component can be displayed in 2 modes: static (the menu is fully expanded al
 - api/link/ui.menu_getscrollstate.md - returns the scroll position
 - api/link/ui.menu_getselectedid.md - returns the id(s) of the selected item(s)
 - api/link/ui.menu_getselecteditem.md - returns selected object
-- api/ui.menu_getsubmenu.md - gets the submenu object within menu component
+- api/ui.menu_getsubmenu.md - gets the submenu object of a menu item (if any)
 - api/ui.menu_gettopmenu.md - returns top menu object
 - api/link/ui.menu_gettopparentview.md - returns top parent view
 - api/link/ui.menu_getvisiblecount.md - returns the number of items that can be seen with the current view height

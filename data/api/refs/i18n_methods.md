@@ -12,8 +12,8 @@ Methods
 - api/i18n_numberformat.md - formats a number according to the locale defaults
 - api/i18n_parseformatdate.md - converts a string in the parsing date format to a Date object
 - api/i18n_parseformatstr.md - converts a Date object to a string in the parsing format
-- api/i18n_parsetimeformatdate.md - 
-- api/i18n_parsetimeformatstr.md - 
+- api/i18n_parsetimeformatdate.md - converts a date object to a string in the parsing format with respect to time
+- api/i18n_parsetimeformatstr.md - converts a Date object to a string in the parsing format with respect to time value
 - api/i18n_priceformat.md - formats a number as a price string
 - api/i18n_setlocale.md - sets the locale in use
 - api/i18n_timeformatdate.md - converts a string in the time format to a Date object

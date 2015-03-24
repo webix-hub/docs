@@ -8,7 +8,7 @@ Events
 - api/link/ui.htmlform_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/link/ui.htmlform_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.htmlform_onbindrequest_event.md - fires when the component is ready to receive data from the master component
-- api/link/ui.htmlform_onchange_event.md - fires when data in the input is changed
+- api/link/ui.htmlform_onchange_event.md - fires when data in the input or related form/toolbar is changed
 - api/link/ui.htmlform_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.htmlform_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.htmlform_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
@@ -19,6 +19,7 @@ Events
 - api/link/ui.htmlform_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.htmlform_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.htmlform_ontouchstart_event.md - when some webix view has been touched
+- api/link/ui.htmlform_onvalues_event.md - fires after values have been set within toolbar or form
 - api/link/ui.htmlform_onviewresize_event.md - view size was changed by resizer
 }}
 
@@ -40,6 +41,7 @@ Events
 - api/link/ui.htmlform_ontouchend_event.md
 - api/link/ui.htmlform_ontouchmove_event.md
 - api/link/ui.htmlform_ontouchstart_event.md
+- api/link/ui.htmlform_onvalues_event.md
 - api/link/ui.htmlform_onviewresize_event.md
 
 

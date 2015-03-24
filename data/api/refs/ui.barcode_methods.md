@@ -13,13 +13,13 @@ Methods
 - api/link/ui.barcode_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.barcode_getparentview.md - returns the parent view of the component
 - api/link/ui.barcode_gettopparentview.md - returns top parent view
-- api/ui.barcode_getvalue.md - 
+- api/ui.barcode_getvalue.md - returns the current value of the Barcode
 - api/link/ui.barcode_hide.md - hides the view
 - api/link/ui.barcode_isenabled.md - checks whether the view is enabled
 - api/link/ui.barcode_isvisible.md - checks whether the view is visible
-- api/ui.barcode_render.md - 
+- api/ui.barcode_render.md - renders barcode on a page
 - api/link/ui.barcode_resize.md - adjusts the view to a new size
-- api/ui.barcode_setvalue.md - 
+- api/ui.barcode_setvalue.md - sets a value for Barcode
 - api/link/ui.barcode_show.md - makes the component visible
 - api/link/ui.barcode_unbind.md - breaks "bind" link
 }}

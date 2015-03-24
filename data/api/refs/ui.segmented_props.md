@@ -30,7 +30,7 @@ Properties
 - api/link/ui.segmented_name_config.md - name of the control
 - api/link/ui.segmented_on_config.md - allows attaching custom handlers to inner events of the component
 - api/ui.segmented_options_config.md - defines data items of the drop-down list
-- api/link/ui.segmented_placeholder_config.md - placeholder text for the input
+- api/link/ui.segmented_placeholder_config.md - placeholder text for the input area
 - api/link/ui.segmented_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.segmented_readonly_config.md - configures readonly mode for the input
 - api/link/ui.segmented_relatedaction_config.md - action to call when value of cell changes

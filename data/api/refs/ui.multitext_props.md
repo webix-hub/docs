@@ -30,7 +30,7 @@ Properties
 - api/link/ui.multitext_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.multitext_name_config.md - name of the control
 - api/link/ui.multitext_on_config.md - allows attaching custom handlers to inner events of the component
-- api/link/ui.multitext_placeholder_config.md - placeholder text for the input
+- api/link/ui.multitext_placeholder_config.md - placeholder text for the input area
 - api/link/ui.multitext_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.multitext_readonly_config.md - configures readonly mode for the input
 - api/link/ui.multitext_relatedaction_config.md - action to call when value of cell changes

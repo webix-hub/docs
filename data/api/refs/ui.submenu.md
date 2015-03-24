@@ -60,7 +60,7 @@ The component is a compliment to the menu component and not intended for direct 
 - api/link/ui.submenu_getitem.md - gets the object of the data item with the specified id
 - api/link/ui.submenu_getitemnode.md - returns html element of the item
 - api/link/ui.submenu_getlastid.md - returns the id of the last item
-- api/link/ui.submenu_getmenu.md - 
+- api/link/ui.submenu_getmenu.md - gets object of a menu/submenu where an item is located
 - api/link/ui.submenu_getmenuitem.md - search for menu item in submenus
 - api/link/ui.submenu_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.submenu_getnode.md - returns the main HTML container for the calling object
@@ -71,7 +71,7 @@ The component is a compliment to the menu component and not intended for direct 
 - api/link/ui.submenu_getscrollstate.md - returns the scroll position
 - api/link/ui.submenu_getselectedid.md - returns the id(s) of the selected item(s)
 - api/link/ui.submenu_getselecteditem.md - returns selected object
-- api/link/ui.submenu_getsubmenu.md - gets the submenu object within menu component
+- api/link/ui.submenu_getsubmenu.md - gets the submenu object of a menu item (if any)
 - api/link/ui.submenu_gettopmenu.md - returns top menu object
 - api/link/ui.submenu_gettopparentview.md - returns top parent view
 - api/link/ui.submenu_getvisiblecount.md - returns the number of items that can be seen with the current view height

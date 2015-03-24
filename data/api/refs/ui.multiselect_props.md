@@ -31,7 +31,7 @@ Properties
 - api/link/ui.multiselect_on_config.md - allows attaching custom handlers to inner events of the component
 - api/ui.multiselect_optionwidth_config.md - sets width of a popup list with options
 - api/link/ui.multiselect_options_config.md - defines data items of the drop-down list
-- api/link/ui.multiselect_placeholder_config.md - placeholder text for the input
+- api/link/ui.multiselect_placeholder_config.md - placeholder text for the input area
 - api/link/ui.multiselect_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.multiselect_popupwidth_config.md - width of the popup window
 - api/link/ui.multiselect_readonly_config.md - configures readonly mode for the input

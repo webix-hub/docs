@@ -117,7 +117,7 @@ The component presents a standard text input but with the icon. Supports reqular
 - api/link/ui.search_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.search_name_config.md - name of the control
 - api/link/ui.search_on_config.md - allows attaching custom handlers to inner events of the component
-- api/link/ui.search_placeholder_config.md - placeholder text for the input
+- api/link/ui.search_placeholder_config.md - placeholder text for the input area
 - api/link/ui.search_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.search_readonly_config.md - configures readonly mode for the input
 - api/link/ui.search_relatedaction_config.md - action to call when value of cell changes

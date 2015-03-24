@@ -30,7 +30,7 @@ Properties
 - api/link/ui.richselect_name_config.md - name of the control
 - api/link/ui.richselect_on_config.md - allows attaching custom handlers to inner events of the component
 - api/ui.richselect_options_config.md - defines data items of the drop-down list
-- api/link/ui.richselect_placeholder_config.md - placeholder text for the input
+- api/link/ui.richselect_placeholder_config.md - placeholder text for the input area
 - api/link/ui.richselect_popup_config.md - allows to attach pop-up menu to the button
 - api/ui.richselect_popupwidth_config.md - width of the popup window
 - api/link/ui.richselect_readonly_config.md - configures readonly mode for the input

@@ -18,7 +18,7 @@ Properties
 - api/link/ui.datepicker_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.datepicker_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/ui.datepicker_icon_config.md - sets an icon type
-- api/ui.datepicker_icons_config.md - 
+- api/ui.datepicker_icons_config.md - shows "Today" and "Clear" icons for calendar and datepicker popup
 - api/link/ui.datepicker_id_config.md - the component ID
 - api/link/ui.datepicker_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.datepicker_inputpadding_config.md - padding of text in the input
@@ -32,7 +32,7 @@ Properties
 - api/link/ui.datepicker_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.datepicker_name_config.md - name of the control
 - api/link/ui.datepicker_on_config.md - allows attaching custom handlers to inner events of the component
-- api/link/ui.datepicker_placeholder_config.md - placeholder text for the input
+- api/link/ui.datepicker_placeholder_config.md - placeholder text for the input area
 - api/link/ui.datepicker_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.datepicker_readonly_config.md - configures readonly mode for the input
 - api/link/ui.datepicker_relatedaction_config.md - action to call when value of cell changes

@@ -117,7 +117,7 @@ The control allows changing numeric data by dragging a marker over a line, with 
 - api/link/ui.slider_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.slider_name_config.md - name of the control
 - api/link/ui.slider_on_config.md - allows attaching custom handlers to inner events of the component
-- api/link/ui.slider_placeholder_config.md - placeholder text for the input
+- api/link/ui.slider_placeholder_config.md - placeholder text for the input area
 - api/link/ui.slider_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.slider_readonly_config.md - configures readonly mode for the input
 - api/link/ui.slider_relatedaction_config.md - action to call when value of cell changes
@@ -155,7 +155,7 @@ The control allows changing numeric data by dragging a marker over a line, with 
 - api/link/ui.slider_$setsize_other.md - sets the component size
 - api/link/ui.slider_$setvalue_other.md - called each time when component need to set value in related html input
 - api/link/ui.slider_$skin_other.md - method, which will be called when skin defined
-- api/ui.slider_$touchcapture_other.md - 
+- api/ui.slider_$touchcapture_other.md - allows capturing touch gestures in touch limited mode.
 - api/link/ui.slider_$view_other.md - reference to top html element of the view
 - api/link/ui.slider_$width_other.md - current width of the view
 - api/link/ui.slider_config_other.md - all options from initial component configuration
