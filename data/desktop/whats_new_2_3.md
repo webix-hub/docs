@@ -137,7 +137,3 @@ Check [migration guide](migration.md) for more details.
 - select filter in FF
 - regression in click handling inside of multi-level popup
 - incorrect filter processing during setState call
-
-{{todo
-type time for datepicker, readonly doe color and date pickers, placeholder for everything, webix remote?
-}}

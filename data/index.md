@@ -9,9 +9,8 @@ Start
 
 <h2>Meet Webix 2.3!</h2>
 <ul>
-	<li>Updated <a href="desktop/calendar.md">Calendar</a> control</li>
-    <li><a href="helpers/ajax_operations.md">Better ajax</a> and <a href="desktop/uploader.md">Improved Uploader</a> control</li>
-    <li>Data binding <a href="desktop/binding_details.md#bindingrules">for Tree, TreeTable and TreeCollection</a></li>
+	<li>New <a href="desktop/barcode.md">Barcode</a> and <a href="desktop/organogram.md">Organogram</a> widgets</li>
+    <li>Badges for <a href="desktop/controls.md#button">buttons</a> and <a href="desktop/menu.md">menu items</a></li>
 </ul>
 
 <p> and <a href="desktop/whats_new_2_3.md">many more...</a></p>

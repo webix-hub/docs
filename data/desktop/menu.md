@@ -108,7 +108,7 @@ If not specified, target will be set as empty string.
 
 Badges add info circles to menu items with the number of entities you'd like to assosiate with this or that item (e.g. messages): 
 
-{{todo add screenshot }}
+<img src="desktop/menu_badges.png">
 ~~~js
 view:"menu", 
 data:[
@@ -120,7 +120,51 @@ data:[
 
 {{sample 03_menu/16_badges.html }}
 
-###Configuring Submenus
+
+###Separators in Menu
+
+To separate one group of items from another one in vertical menu, use the property **$template** with one the possible values: 
+
+- **"Spacer"** - adds horizontal space between menu items;
+- **"Separator"** - add a horizontal grey line between menu items.
+
+<img src="desktop/menu_spacer.png">
+
+{{snippet
+Spacer in vertical menu
+}}
+~~~js
+view:"menu",
+layout:"y",
+data:[
+	{ id:"1", value:"Translations", icon:"qrcode", badge:20 },
+    { id:"2", value:"Posts", icon:"file-word-o", badge:3 },
+    { $template:"Spacer" },
+    { id:"3", value:"Help", icon:"support"},
+]
+~~~
+
+{{sample
+03_menu/15_menu_spacer.html
+}}
+
+{{snippet
+Separator in vertical menu
+}}
+~~~js
+view:"menu",
+layout:"y",
+data:[
+	{ value:"Translate..." },
+    { value:"Post...", submenu:[ "Facebook", "Google+", "Twitter" ]},
+    { $template:"Separator" },
+    { value:"Info" }
+]    
+~~~
+
+{{sample 03_menu/01_menubar.html}}
+
+###Customizing Submenus
 
 Submenu items can be set as an **array of values**:
 
@@ -209,49 +253,6 @@ webix.ui({
 
 Each submenu item can take its own submenu component. 
 
-**Badges in Menu Items**
-
-<img src="desktop/menu_badges.png">
-
-You can provide each menu item with a badge by applying the property **badge** in an item's definition:
-
-~~~js
-view:"menu",
-data:[
-	{ id:"1",value:"Posts", badge:12, submenu:[ 
-		{ value:"Facebook", badge:7 },
-		{ value:"Google+", badge:2 },
-		{ value:"Twitter", badge:3 },
-    ...        
-]		
-~~~
-
-{{sample
-03_menu/16_badges.html
-}}
-
-**Spacer in vertical menu**
-
-<img src="desktop/menu_spacer.png">
-
-To separate one group of items from another one in vertical menu, use the property **$template** with the value **"Spacer"**.
-This flag adds horizontal space between menu items.
-
-~~~js
-view:"menu",
-layout:"y",
-data:[
-	{ id:"1", value:"Translations", icon:"qrcode", badge:20 },
-    { id:"2", value:"Posts", icon:"file-word-o", badge:3 },
-    { $template:"Spacer" },
-    { id:"3", value:"Help", icon:"support"},
-	...
-]
-~~~
-
-{{sample
-03_menu/15_menu_spacer.html
-}}
 
 ###MenuBar
 

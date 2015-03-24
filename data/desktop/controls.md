@@ -278,6 +278,7 @@ Datepicker initialization
 ~~~js
 {view:"datepicker", date: new Date(2012, 6, 8), label: 'Select Date', timepicker:true} 
 ~~~
+
 ####Main properties
 
 - **label** (string) - text label of a control. It can be customized by:
@@ -289,7 +290,17 @@ Datepicker initialization
 - **date** (function) - new Date() constructor to define the initial date of a calendar. If used without parameters, shows current date;
 - **stringResult** (boolean) - sets the data type of value returned by **getValue()/get Values()** methods. If true, it returns date as string. By default the property is *false* and the method returns date object;
 - **format** (string) - sets a date format to display in the datepicker field. By default it is "%Y-%m-%d". 
-- **type** (string) - (optional) sets the datepicker type; only one alternative type is implemented: "time" - configures datepicker for time selection only (uses webix.i18n.timeFormat as formatting pattern)
+- **type** (string) - (optional) sets the datepicker type: 
+	- "time" - configures datepicker for time selection only (uses [webix.i18n.timeFormat](api/i18n_timeformat_other.md) as formatting pattern)
+
+**Datepickier type "time"**
+
+<img src="desktop/date_picker_time.png"/>
+
+~~~js
+{ view:"datepicker", type:"time", stringResult:true}
+~~~
+
 
 {{note
 Dates are formatted according to the helpers/date_formatting_methods.md.
