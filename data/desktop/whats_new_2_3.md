@@ -3,8 +3,9 @@ Version 2.3
 
 ## Breaking changes
 
-Default [parse format](api/i18n_parseformat_other.md) is changed for datepicker and calendar controls from **"%Y-%m-%d"** to **"%Y-%m-%d %H:%i"**.
-Both of them can be altered within current locale. 
+- Default [parse format](api/i18n_parseformat_other.md) is changed for datepicker and calendar controls from *"%Y-%m-%d"* to *"%Y-%m-%d %H:%i"*. Both of them can be altered within current locale. 
+
+- Sizing of layouts changed. In Webix 2.2 and earlier height and width on layout were not including padding and margins. Starting from Webix 2.3 height and width of layout is a full size of layout, including all margings and paddings.
 
 Check [migration guide](migration.md) for more details.
 
