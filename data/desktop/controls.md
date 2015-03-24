@@ -64,7 +64,7 @@ Button {#button}
 <img src="desktop/buttons_badges.png"/>
 
 ~~~js
-{ view:"button", width:40, badge:1, type:"icon", icon:"envelope" }
+{ view:"button", width:40, badge:12, type:"icon", icon:"envelope" }
 ~~~
 
 {{sample

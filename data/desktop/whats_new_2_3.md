@@ -10,6 +10,7 @@ Check [migration guide](migration.md) for more details.
 
 ## New features
 
+- new [material skin](https://github.com/webix-hub/material-design-skin)
 - [pro] [barcode](desktop/barcode.md) widget
 - [pro] [organogram (organization chart)](desktop/organogram.md) widget
 - [pro] multiselect and datepicker filters to Pivot
@@ -28,7 +29,6 @@ Check [migration guide](migration.md) for more details.
 - ability to trigger [onReady](desktop/event_handling.md#globalwebixevents) in a synchronous way
 - "Today" and "Clear" buttons are added to the [date editor](api/editors_date_other.md). They are hidden by default.
 - [editor object](desktop/editing.md) can receive full data item
-- touch skin
 
 ##Updates
 
