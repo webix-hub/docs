@@ -4,16 +4,16 @@ Webix provides 11 skins that you can use to change the overall look of your appl
 
 1. [Flat (default skin)](desktop/skins.md#flat)
 2. [Compact](desktop/skins.md#compact) 
-3. [Touch](desktop/skins.md#touch)
-
-4. [Air](desktop/skins.md#air)
-5. [Air Compact](desktop/skins.md#aircompact)
-6. [Clouds](desktop/skins.md#clouds)
-7. [Glamour](desktop/skins.md#glamour)
-8. [Light](desktop/skins.md#light)
-9. [Metro](desktop/skins.md#metro)
-10. [Terrace](desktop/skins.md#terrace)
-11. [Web](desktop/skins.md#web)
+3. [Material Design](desktop/skins.md#materialdesign)
+4. [Touch](desktop/skins.md#touch)<br><br>
+5. [Air](desktop/skins.md#air)
+6. [Air Compact](desktop/skins.md#aircompact)
+7. [Clouds](desktop/skins.md#clouds)
+8. [Glamour](desktop/skins.md#glamour)
+9. [Light](desktop/skins.md#light)
+10. [Metro](desktop/skins.md#metro)
+11. [Terrace](desktop/skins.md#terrace)
+12. [Web](desktop/skins.md#web)
 
 Each skin requires including its specific CSS file. 
 
@@ -51,6 +51,26 @@ Applying the 'Compact' skin to the app
 
 <img style="margin: 20px auto 20px auto;display: block;box-shadow: #D8D8D8 0px 0px 7px 1px;" src="desktop/skins/compact_skin.png"/>
 
+
+Material Design
+-----------------
+To apply the **Material Design** skin:
+
+- download it from a separate repository at [github.com](https://github.com/webix-hub/material-design-skin)  
+- copy files into *codebase* folder of Webix UI package
+- include the *material.css* file:
+
+{{snippet
+Applying the 'Material Design' skin to the app
+}}
+~~~js
+<script src="../codebase/webix.js"></script>   
+<link href=".../codebase/skins/material.css" rel="stylesheet" type="text/css">
+~~~
+
+<img src="desktop/skins/material_skin.png"/>
+
+You can read a more [detailed article](desktop/material_design.md) about the usage of Material Design skin.
 
 Touch 
 ------------------------
@@ -186,3 +206,6 @@ Applying the 'Web' skin to the app
 ~~~
 
 <img style="margin: 20px auto 20px auto;display: block;box-shadow: #D8D8D8 0px 0px 7px 1px;" src="desktop/skins/web_skin.png"/>
+
+@index:
+- desktop/material_design.md
