@@ -38,7 +38,7 @@ There are 3 possible ways:
 Yoiu can directly set links to **webix.js** and **webix.css** files located in Webix CDN:
 
 ~~~html
-<!DOCTYPE HTML>// specifies document type
+<!DOCTYPE HTML>
 <html>
     <head>
     <link rel="stylesheet" href="http://cdn.webix.com/edge/webix.css" type="text/css"> 
@@ -102,7 +102,7 @@ They are included via standard script and link attributes. Be attentive to speci
 This method allows choosing between [debug](desktop/debug.md) and production version. 
 
 ~~~html
-<!DOCTYPE HTML>// specifies document type
+<!DOCTYPE HTML>
 <html>
     <head>
     	<!-- Webix CSS file-->	
