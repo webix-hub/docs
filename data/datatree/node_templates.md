@@ -82,7 +82,7 @@ The input parameters of the helpers function are:
   		- **open** - (*boolean*) defines whether the node is collapsed or expanded (only for parent nodes).
 - **common** object that provides 4 functions:
   - **icon(obj, common)** - draws the '+'/'-' icons for collapsed/expanded states of nodes
-  - **older(obj, common)** - draws an icon of the folder
+  - **folder(obj, common)** - draws an icon of the folder
   - **checkbox(obj, common)** - draws a check box
   - **treetable(obj, common)** ([treetable](desktop/treetable.md) only) - combines *common.icon()* and *common.folder()* in one line.
 

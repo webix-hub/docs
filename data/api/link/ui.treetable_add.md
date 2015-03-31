@@ -1,1 +1,1 @@
-@link: api/datastore_add.md
+@link: api/treestore_add.md

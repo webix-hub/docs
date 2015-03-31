@@ -17,7 +17,7 @@ css class for a row-hover in the datatable
         
 webix.ui({
 	view:"datatable",
-    hover:"mycss"
+    hover:"myhover"
 });
 
 

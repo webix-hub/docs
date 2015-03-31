@@ -11,7 +11,7 @@ Start
 <ul>
 	<li>New <a href="desktop/barcode.md">Barcode</a> and <a href="desktop/organogram.md">Organogram</a> widgets</li>
     <li>Badges for <a href="desktop/controls.md#button">buttons</a> and <a href="desktop/menu.md">menu items</a></li>
-    <li>New <a href="https://github.com/webix-hub/material-design-skin">material skin</a> inspired by Material design</li>
+    <li>New <a href="desktop/material_design.md">material skin</a> inspired by Material design</li>
 </ul>
 
 <p> and <a href="desktop/whats_new_2_3.md">many more...</a></p>
