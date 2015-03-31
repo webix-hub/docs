@@ -11,8 +11,10 @@ toFunctor
 - function	function	a function object
 
 @example:
-var a = "alert(1)";
-webix.toFunctor(a);
+function check(){
+	alert("I'm alive!");
+}
+webix.toFunctor("check")();
 
 @template:	api_method
 @descr:
