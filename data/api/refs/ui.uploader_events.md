@@ -10,8 +10,8 @@ Events
 - api/link/ui.uploader_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.uploader_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.uploader_ondestruct_event.md - occurs when component destroyed
-- api/ui.uploader_onfileupload_event.md - fires the moment file uploading starts
-- api/ui.uploader_onfireuploaderror_event.md - fires in case of serverside error during uploading
+- api/ui.uploader_onfileupload_event.md - fires the moment file uploading ends
+- api/ui.uploader_onfileuploaderror_event.md - fires in case of serverside error during uploading
 - api/link/ui.uploader_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.uploader_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.uploader_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
@@ -35,7 +35,7 @@ Events
 - api/link/ui.uploader_onchange_event.md
 - api/link/ui.uploader_ondestruct_event.md
 - api/ui.uploader_onfileupload_event.md
-- api/ui.uploader_onfireuploaderror_event.md
+- api/ui.uploader_onfileuploaderror_event.md
 - api/link/ui.uploader_onitemclick_event.md
 - api/link/ui.uploader_onkeypress_event.md
 - api/link/ui.uploader_onlongtouch_event.md

@@ -64,7 +64,7 @@ The component presents a pop-up menu that is displayed when the user clicks the 
 - api/link/ui.contextmenu_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.contextmenu_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.contextmenu_getitem.md - gets the object of the data item with the specified id
-- api/link/ui.contextmenu_getitemnode.md - returns html element of the item
+- api/link/ui.contextmenu_getitemnode.md - returns HTML element of the item
 - api/link/ui.contextmenu_getlastid.md - returns the id of the last item
 - api/link/ui.contextmenu_getmenu.md - gets object of a menu/submenu where an item is located
 - api/link/ui.contextmenu_getmenuitem.md - search for menu item in submenus

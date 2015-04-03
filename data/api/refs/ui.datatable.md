@@ -86,7 +86,7 @@ The component is full of various possibilities: filtering, sorting, pagination, 
 - api/link/ui.datatable_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.datatable_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.datatable_getitem.md - gets the object of the data item with the specified id
-- api/ui.datatable_getitemnode.md - returns html element of the item
+- api/ui.datatable_getitemnode.md - returns HTML element of the item
 - api/link/ui.datatable_getlastid.md - returns the id of the last item
 - api/link/ui.datatable_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.datatable_getnode.md - returns the main HTML container for the calling object
