@@ -31,4 +31,3 @@ The events fires only when serverside response contains **error** status, like:
 ~~~php
 echo "{ status:'error' }";
 ~~~
-

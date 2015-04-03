@@ -2,31 +2,9 @@ ui.organogram
 =============
 
 
+dummy stub
 
-{{memo An organizational chart widget for creating hierarchical diagrams to display the relations between parts of some complex structure. }}
-
-The component supports data loading from different sources. You can customize the look and feel of Organogram items by using templates, 
-uniting child elements of items into list blocks and redefining the applied css styles.
-It's also possible to create your own css style for Organogram. Check desktop/organogram.md documentation for more detailed description.
-
-### Constructor
-
-~~~js
-var chart = webix.ui({
-	view:"organogram", 
-    container:"mydiv", 
-    ...config options goes here..
-})
-//or, in case of jQuery
-$("#mydiv").webix_organogram({
-	...config options goes here..
-});
-~~~
-
-### Where to start
-
-- [Overview of Organogram Widget](desktop/organogram.md)
-- [Samples](http://docs.webix.com/samples/60_pro/07_organogram/index.html)
+{{todo replace with real description. }}
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/group.md">Group</a>, <a href="api/refs/treeapi.md">TreeAPI</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/selectionmodel.md">SelectionModel</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/treedataloader.md">TreeDataLoader</a>, <a href="api/refs/treestore.md">TreeStore</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
