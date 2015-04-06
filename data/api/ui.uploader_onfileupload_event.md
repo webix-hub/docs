@@ -17,7 +17,7 @@ $$("uploader1").attachEvent("onFileUpload", function(item, response){
 
 @relatedapi:
 	api/ui.uploader_onuploadcomplete_event.md
-    api/ui.uploader_onfireuploaderror_event.md
+    api/ui.uploader_onfileuploaderror_event.md
 @related:
 	desktop/file_upload.md
 	desktop/apionly_uploader.md
