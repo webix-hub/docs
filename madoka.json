@@ -9,6 +9,7 @@
 	"forum_http"		: "http://forum.webix.com",
 	"support_http"		: "http://webix.com/support/",
 	"logo_http"			: "http://webix.com",
+	"docs_http"			: "http://docs.webix.com",
 
 	"minMadokaVersion"	: 1.1,
 	"singleItemToc"		: false,
