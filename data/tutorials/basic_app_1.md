@@ -7,10 +7,10 @@ Here you will need:
 
 - a list with film data;
 - a form to add new items to the set;
-- a toolbar with 'add' and 'delete' to control the app. 
+- a toolbar with 'add' and 'delete' buttons to control the app. 
 
 {{note
-First of all, you should create the app layout and then, place ui components and controls there. 
+First of all, you should create the app layout and then place ui components and controls there. 
 }}
 
 Follow the guide step by step: 
@@ -28,13 +28,14 @@ webix.ui({
 Step 2. Rows
 ----------------------------------------
 
-Divide the page into <b>two rows</b> with the upper one being for <a href="desktop/toolbar.md">toolbar</a>. Set the width to the app - 500px.
+Divide the page into <b>two rows</b> with the upper one being used
+for <a href="desktop/toolbar.md">toolbar</a>. Set the width to the app - 500px.
 ~~~js
 webix.ui({
 	width:500,
 	rows: [
-   		{ template:"Row 1" }, //1st row
-    	{ template:"Row 2" }  //2nd row
+   		{ template:"Row 1" }, // 1st row
+    	{ template:"Row 2" }  // 2nd row
     ]
 });
 ~~~
@@ -56,8 +57,8 @@ webix.ui({
     rows: [
     	{ template:"Row 1" },
     	{ cols:[
-    		{ template:"Column 1" },//1st column
-        	{ template:"Column 2" } //2nd column
+    		{ template:"Column 1" }, // 1st column
+        	{ template:"Column 2" }  // 2nd column
     	]}
     ]
 });
@@ -82,8 +83,8 @@ webix.ui({
 			{ view:"button", value:"Delete", width:100 }
         ]},
     	{ cols:[
-    		{ template:"Column 1" },//1st column
-        	{ template:"Column 2" } //2nd column
+    		{ template:"Column 1" }, // 1st column
+        	{ template:"Column 2" }  // 2nd column
     	]}
     ]
 });
@@ -108,7 +109,7 @@ webix.ui({
 				{ view:"text", placeholder:"Title"},  
 				{ view:"text", placeholder:"Year"}     
 			]},
-        	{ template:"Column 2" } //2nd column
+        	{ template:"Column 2" } // 2nd column
     	]}
     ]
 });
@@ -138,7 +139,7 @@ webix.ui({
         	{
 				view:"list", 
      			template:"#title# - #year#", // which data to show
-				select:true, //enables selection 
+				select:true, // enables selection 
         		height:400,
 				data: [
 					{ id:1, title:"The Shawshank Redemption", year:1994},
