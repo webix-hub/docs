@@ -17,7 +17,7 @@ Apart from files, File Manager allows working with any kind of hierarchical data
 	<tbody>
 	<tr>
 		<td id="design" class='topics'>
-		    <h4 id='ui' onclick="displaySubList('design')">
+		    <h4 id='ui'>
 		        Configuring File Manager
 		    </h4>
 		    <ul id="design_sublist">
@@ -28,11 +28,11 @@ Apart from files, File Manager allows working with any kind of hierarchical data
                 <li>file_manager/localization.md</li>
             </ul>
 		</td>
-		<td class='topic_description' onclick="displaySubList('design')">Discusses the main points of File Manager initialization and customization.</td>
+		<td class='topic_description'>Discusses the main points of File Manager initialization and customization.</td>
 	</tr>
     <tr>
 		<td id="design" class='topics'>
-		    <h4 id='ui' onclick="displaySubList('design')">
+		    <h4 id='ui'>
 		        Working with File Manager
 		    </h4>
 		    <ul id="design_sublist">
@@ -42,7 +42,7 @@ Apart from files, File Manager allows working with any kind of hierarchical data
                 <li>file_manager/howto.md</li>
             </ul>
 		</td>
-		<td class='topic_description' onclick="displaySubList('design')">Describes possible operations with File Manager and its elements.</td>
+		<td class='topic_description'>Describes possible operations with File Manager and its elements.</td>
 	</tr>
 	</tbody>
 </table>

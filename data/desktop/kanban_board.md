@@ -15,7 +15,7 @@ Fully written in JavaScript and CSS this component can be integrated in any web 
 	<tbody>
 	<tr>
 		<td id="design" class='topics'>
-		    <h4 id='ui' onclick="displaySubList('design')">
+		    <h4 id='ui'>
 		        Configuring Kanban
 		    </h4>
 		    <ul id="design_sublist">
@@ -25,11 +25,11 @@ Fully written in JavaScript and CSS this component can be integrated in any web 
                 <li>kanban/configuration.md</li>
             </ul>
 		</td>
-		<td class='topic_description' onclick="displaySubList('design')">Discusses the main points of Kanban Board initialization and customization.</td>
+		<td class='topic_description'>Discusses the main points of Kanban Board initialization and customization.</td>
 	</tr>
     <tr>
 		<td id="design" class='topics'>
-		    <h4 id='ui' onclick="displaySubList('design')">
+		    <h4 id='ui'>
 		        Working with Kanban
 		    </h4>
 		    <ul id="design_sublist">
@@ -41,7 +41,7 @@ Fully written in JavaScript and CSS this component can be integrated in any web 
                 <li>kanban/howto.md</li>
             </ul>
 		</td>
-		<td class='topic_description' onclick="displaySubList('design')">Describes possible operations with Kanban Board and its elements.</td>
+		<td class='topic_description'>Describes possible operations with Kanban Board and its elements.</td>
 	</tr>
 	</tbody>
 </table>

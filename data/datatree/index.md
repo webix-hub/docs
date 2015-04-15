@@ -35,7 +35,7 @@ filtering, sorting, copying etc.
 				<li>datatree/sorting.md</li>
             </ul>
 		</td>
-		<td class='topic_description' onclick="displaySubList(event,'data')">Teaches you how to treat data in the tree to present the desired set of items.</td>
+		<td class='topic_description'>Teaches you how to treat data in the tree to present the desired set of items.</td>
 	</tr>
 	<tr>
 		<td class='topics'>
@@ -50,10 +50,10 @@ filtering, sorting, copying etc.
 				<li><a href="datatree/nodes_manipulations.md#savingthestateofnodes">Saving the tree state</a></li>
             </ul>
         </td>
-		<td class='topic_description' onclick="displaySubList(event,'data')">Says about means you've got to manipulate with the tree branches and leaves: CRUD operations, tree state storage, etc.</td>
+		<td class='topic_description'>Says about means you've got to manipulate with the tree branches and leaves: CRUD operations, tree state storage, etc.</td>
 	</tr>
 	<tr>
-		<td class='topics' onclick="displaySubList(event,this.id)">
+		<td class='topics'>
 		    <h4>
 		        Look-and-feel
 		    </h4>
@@ -64,10 +64,10 @@ filtering, sorting, copying etc.
 				<li><a href="datatree/checkboxes.md">Checkboxes in Tree</a></li>
             </ul>
         </td>
-		<td class='topic_description' onclick="displaySubList(event,'manipulations')">Covers techniques for fine-tuning the tree appearance: use of data templates, adding checkboxes, icons, lines to items, redefining the default CSS classes, etc.</td>
+		<td class='topic_description'>Covers techniques for fine-tuning the tree appearance: use of data templates, adding checkboxes, icons, lines to items, redefining the default CSS classes, etc.</td>
 	</tr>
 	<tr>
-    	<td id="operations" class='topics' onclick="displaySubList( this.id)">
+    	<td id="operations" class='topics'>
     	    <h4>
     	        Others
     	    </h4>
@@ -77,7 +77,7 @@ filtering, sorting, copying etc.
 				<li><a href="datatree/events_handling.md">Events handling</a></li>
             </ul>
         </td>
-        <td class='topic_description' onclick="displaySubList('operations')">Describes the remaining procedures related to the tree but not mentioned in the chapters above: work with the clipboard, support for internal/external dnd and handling events.</td>
+        <td class='topic_description'>Describes the remaining procedures related to the tree but not mentioned in the chapters above: work with the clipboard, support for internal/external dnd and handling events.</td>
     </tr>
 	</tbody>
 </table>
