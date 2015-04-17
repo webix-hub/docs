@@ -14,6 +14,7 @@ You can download Webix Scheduler by this [link](http://webix.com/scheduler/downl
 		    </h4>
 		    <ul>
                 <li><a href="mobile_calendar/init.md">Creating Scheduler on a Page</a></li>
+                <li><a href="mobile_calendar/data_loading.md">Loading and Saving Data</a></li>
                 <li><a href="mobile_calendar/details_form.md">Customizing "Edit" Form</a></li>
 			    <li><a href="mobile_calendar/calendar_templates.md">Specifying Templates</a></li>
                 <li><a href="mobile_calendar/sizing.md">Sizing Elements</a></li>
@@ -29,11 +30,13 @@ You can download Webix Scheduler by this [link](http://webix.com/scheduler/downl
                 <li><a href="mobile_calendar/recurring_events.md">Recurring Events</a></li>
                 <li><a href="mobile_calendar/dynamic_loading.md">Dynamic Loading</a></li>
                 <li><a href="mobile_calendar/mobile_advanced.md">Changing Scheduler's Structure</a></li>
+                <li><a href="mobile_calendar/handling_events.md">Handling Events</a></li>
             </ul>
         	 <h4>
 		       Other
 		    </h4>
             <ul>
+            	<li><a href="mobile_calendar/general_howtos.md">General How-Tos</a></li>
 		    	<li><a href="mobile_calendar/tips_for_users.md">Tips for dhtmlxScheduler's users</a></li>
        		</ul>
             </td>
@@ -44,6 +47,7 @@ You can download Webix Scheduler by this [link](http://webix.com/scheduler/downl
 
 @index:
 - mobile_calendar/init.md
+- mobile_calendar/data_loading.md
 - mobile_calendar/details_form.md
 - mobile_calendar/calendar_templates.md
 - mobile_calendar/sizing.md
@@ -54,7 +58,10 @@ You can download Webix Scheduler by this [link](http://webix.com/scheduler/downl
 - mobile_calendar/recurring_events.md
 - mobile_calendar/dynamic_loading.md
 - mobile_calendar/mobile_advanced.md
+- mobile_calendar/handling_events.md
+- mobile_calendar/general_howtos.md
 - mobile_calendar/tips_for_users.md
+
 
 
 

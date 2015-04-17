@@ -82,7 +82,7 @@ Saving data
 
 There are a lot of ways to save data in Webix. You can find the detailed description in the [Data Saving](desktop/serverside.md#datasaving) article.
 
-For example, in the case of using DataProcessor you can set the api/link/ui.proto_save_config.md property: 
+For example, in the case of using DataProcessor you can set the  property: 
 
 ~~~js
 webix.ready(function(){
