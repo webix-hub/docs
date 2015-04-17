@@ -21,7 +21,7 @@ $$("scheduler").add(
 How to remove an event?
 ------------------------
 
-Use the remove() method to remove an event by its id:
+Use the api/link/ui.proto_remove.md method to remove an event by its id:
 
 ~~~js
 $$("scheduler").remove(eventid); 
@@ -45,7 +45,7 @@ $$("scheduler").refresh(eventId);
 How to hide a button?
 -----------------------
 
-You can use the hide() method to hide a certain view in Scheduler. [Here](mobile_calendar/mobile_advanced.md#accessingelementsofthescheduler) you may find details about Scheduler structure.
+You can use the api/link/ui.proto_hide.md method to hide a certain view in Scheduler. [Here](mobile_calendar/mobile_advanced.md#accessingelementsofthescheduler) you may find details about Scheduler structure.
 
 For example, if you want to hide the "add" button, you can do the following:
 
