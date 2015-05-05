@@ -22,7 +22,7 @@ tree = new webix.ui({
     ]
 });
  
-var child = tree.getParendId('part1'); // -> 'branch1'
+var child = tree.getParentId('part1'); // -> 'branch1'
 
 @template:	api_method
 @related:
