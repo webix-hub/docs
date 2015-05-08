@@ -7,7 +7,7 @@ The functionality is a feature of **Webix Pro** edition.
 
 The extension is based on Webix [suggest list](desktop/suggest.md). It redefines the **default dropdown menu** for [combo](desktop/controls.md#combo) and [richselect](desktop/controls.md#richselect)  controls as well as the same-name [editors](desktop/editing.md#editortypes).
 
-Gridsuggest extenstion makes it possible to use Webix [datatable](datatable/index.md) in a dropdown menu while by default Webix [list](desktop/list.md) is used. 
+Gridsuggest extension makes it possible to use Webix [datatable](datatable/index.md) in a dropdown menu while by default Webix [list](desktop/list.md) is used. 
 
 ##Using Gridsuggest for Form Controls
 
@@ -27,7 +27,7 @@ By default combo and richselect are inited with the following constructor:
 }
 ~~~
 
-With gridsuggest extenstion you get the possibility to define view used for a dropdown menu as well as set its configuration, both for combo and richselect.
+With gridsuggest extension you get the possibility to define view used for a dropdown menu as well as set its configuration, both for combo and richselect.
 
 ~~~js
 { view:"richselect", value:1, options:{
@@ -40,7 +40,7 @@ Possible properties here are as follows:
 
 - **view** (string) - name of the view acting as a dropdown menu (here - gridsuggest);
 - **data** (array) - data for the options to choose from;
-- **textValue** (string) - data value shown in the input (acts as a string template) and, in case of combo, data value used for filtering. By default, the first data value after the ID filed is taken;
+- **textValue** (string) - data value shown in the input (acts as a string template) and, in case of combo, data value used for filtering. By default, the first data value after the ID field is taken;
 - **template** (function) - allows for setting a complex template for the input field;
 - **width** (number) - width of a dropdown popup;
 - **body** (object) - set of configuration options for a suggest datatable. 
@@ -61,9 +61,9 @@ Such code will show a datatable with borders while the columns will be generated
 Datatable can be further configured inside **body** object property and can take the following parameters: 
 
 - **autoConfig** (boolean) - if *true*, enables default configuration for datatable (described above);
-- **columns** (array) - used instead of autoConfig. allows for setting an array of columns for the datatable.
+- **columns** (array) - used instead of autoConfig, allows for setting an array of columns for the datatable.
 - **header** (boolean) - if *false*, hides datatable header. *True* by default;
-- **borderless** (booelan) - if *true*, removes borders around the datatable. *False* by default;
+- **borderless** (boolean) - if *true*, removes borders around the datatable. *False* by default;
 - **data** (array) - data for the options to choose from. If you use **body** property for gridsuggest configuration, data should be defined inside it. 
 
 {{snippet
@@ -136,6 +136,31 @@ Then, this popup should be attached to the column in question with the help of i
 ~~~
 
 {{sample 32_thirdparty/13_gridselect_editor.html}}
+
+##Enabling scrolling
+
+In order to enable scrolling functionality in a gridsuggest extension, you should make 2 steps:
+
+1. Set the scroll property to true
+2. Disable the autoheight parameter
+
+~~~js
+var form = { view:"form", elements: [
+	{ view:"combo", name:"names", label:"Code", options:{
+    	view:"gridsuggest",
+        data: ["A", "B", "C", "D", "E", "F", "G", "H", "J"],
+       	body: {
+        	scroll:true,
+       		autoheight:false,
+        	autofocus:true,
+        	yCount:5
+        }
+    }}
+  ]
+};
+
+webix.ui(form);
+~~~
 
 ##Related Articles
 
