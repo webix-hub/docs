@@ -26,8 +26,8 @@ Method is not purposed for direct calls. It is called by multiview or some other
 - subtype: {string }out, in (for slide), horizontal, vertical (for flip)
 - x: {int} slide value for X
 - y: {int} slide value for Y
-- duration: {int} animation duration in ms
+- duration: {int} transition duration in ms
 - delay: {int} delay before animation in ms
-- timing: {int} animation timing in ms
+- timing: {string} transition timing function
 - callback: {code} code to call after animation end
 - master: {obj} object, which will be accessible by "this" in the callback method
