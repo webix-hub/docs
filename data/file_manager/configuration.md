@@ -383,10 +383,10 @@ It appears by clicking the Menu button or by clicking the right mouse button:
 
 The Actions menu is based on Webix desktop/contextmenu.md. That's why you can operate its items via api/refs/treestore.md API. 
 
-To refer to the Actions menu, you can apply the **$$("actions")** method to File Manager:
+To refer to the Actions menu, you can apply the **getMenu()** method to File Manager:
 
 ~~~js
-var actions = $$("fmanager").$$("actions");
+var actions = $$("fmanager").getMenu();
 ~~~
 
 By default, actions menu contains the following data array:
@@ -449,7 +449,7 @@ The properties of actions are the following:
 You can reload data using the following approach:
 
 ~~~js
-var actions = $$("fmanager").$$("actions");
+var actions = $$("fmanager").getMenu();
 actions.clearAll();
 var newData = [{id: "copy", ...},...];
 actions.parse(newData); 

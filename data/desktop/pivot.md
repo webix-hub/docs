@@ -279,6 +279,21 @@ webix.ui({
 });
 ~~~
 
+###Setting readonly mode
+
+In order to disable changing of the pivot configuration settings, you can specify the *readonly* config property with the "true" value:
+
+~~~js
+webix.ui({
+	view: "pivot",
+    readonly:true,
+	//...
+});
+~~~
+
+{{sample 61_pivot/01_init/10_readonly.html}}
+
+
 Localization
 --------------------
 

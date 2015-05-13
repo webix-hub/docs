@@ -248,6 +248,39 @@ $$('field_t').getInput().value // -> returns "One"
 [Controls Common Functionality](desktop/controls_guide.md)
 
 [API Reference](api__refs__ui.combo.html)
+
+
+###MultiSelect combobox
+
+{{pronote
+The control is available only in **Webix Pro** edition.
+}}
+
+MultiSelect combo allows choosing several options from a suggest list. 
+
+<img src="desktop/multicombo_message.png">
+
+{{sample 60_pro/02_form/06_multicombo.html}}
+
+{{Multicombo Initialization}}
+~~~js
+{ view:"multicombo", label:"To", value:"2,3,4,13", suggest: "data/names.js"}
+~~~
+
+When a multicombo element in the form gets the focus, a suggest list opens. 
+Each option has a checkbox next to it. To select an option, click on the corresponding row.<br>
+
+To delete an option from multicombo, you can either click the "cross" sign or use the Backspace key. 
+
+**Main properties**
+
+- **label** (string) - specifies the text label of the control
+- **labelPosition** (string) - the position of the label in relation to the control container
+- **value** (number/string) - defines the initially selected items of the control
+- **separator** (string) - a delimiter for separating options in a multicombo, comma by default
+- **button** (boolean) - sets a button at the bottom of suggest list
+- **suggest** (function/string) - specifies the data source of multicombo options
+
     
 ##Counter {#counter}
 
@@ -276,7 +309,7 @@ Counter Initialization
 - **max** (number) - maximum value for a control.
 
 {{note
-Note that if you set **min** and **max** parameters, the initial conreol value should be within the range. 
+Note that if you set **min** and **max** parameters, the initial control value should be within the range. 
 }}
 
 [Controls Common Functionality](desktop/controls_guide.md)
@@ -852,7 +885,7 @@ Negative values are possible.
 Slider Initialization
 }}
 ~~~js
-{ view:"slider", label:"Level", value:"20", min:10, max: 120; name:"s1"},
+{ view:"slider", label:"Level", value:"20", min:10, max: 120; name:"s1"}
 ~~~
 
 ####Main Properties
@@ -917,6 +950,40 @@ The new title is set with the help of **define()** method while current value of
 [Controls Common Functionality](desktop/controls_guide.md)
 
 [API Reference](api__refs__ui.slider.html)
+
+###Range Slider
+
+{{pronote
+The control is available only in **Webix Pro** edition.
+}}
+
+<br>
+<img src="desktop/range_slider.png">
+<br><br>
+
+{{sample 13_form/05_extras/07_rangeslider.html}}
+
+Range Slider is an advanced slider control that allows selecting a specific range of values with two markers. The colored space between the markers defines the values included into the range.
+
+{{snippet
+Range Slider Initialization
+}}
+~~~js
+{ view:"rangeslider", label:"Level B", value:[0,50], name:"s2", title:function(obj){
+	var v = obj.value;
+	return (v[0]==v[1]?v[0]: v[0]+" - "+v[1]);
+}}
+~~~
+
+####Main Properties
+
+- **value** (string/array) - the starting and the ending values of the range;
+- **label** (string) - text label of the control. It can be customized by:
+	- **labelAlign** (string) - label alignment towards its container. Possible values are "left" and "right".  In any way, it's placed left to the control; 
+    - **labelWidth** (number) - width of the label container; 
+- **name** (string) - name of the control used to get its value in the form;
+- **title** (template, function) - text label over the slider marker 
+
 
 ##Tabbar {#tabbar}
 

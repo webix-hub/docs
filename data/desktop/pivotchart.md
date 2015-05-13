@@ -356,6 +356,20 @@ chartMap: {
 ~~~
 The chart's type is identified by its name ("Area Radar" and "Line" in the code above). The names of the default types you can check in the 'Chart type' control of the <a href="#config_window">Configuration window</a>. 
 
+###Setting readonly mode
+
+In order to disable changing of the Pivot Chart configuration settings, you can specify the *readonly* config property with the "true" value:
+
+~~~js
+webix.ui({
+	view: "pivot-chart",
+    readonly:true,
+	//...
+});
+~~~
+
+{{sample  61_pivot/02_chart/07_readonly.html}}
+
 Localization
 --------------------
 

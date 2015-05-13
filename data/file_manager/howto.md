@@ -56,7 +56,7 @@ How to add a custom action?
 The api/link/ui.proto_add.md method allows adding a new action to menu:
 
 ~~~js
-var actions = $$("fmanager").$$("actions");
+var actions = $$("fmanager").getMenu();
 actions.add({id: "myAction", icon: "file", value: "My Action"});
 ~~~
 

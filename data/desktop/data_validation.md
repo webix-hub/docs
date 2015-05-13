@@ -84,12 +84,64 @@ list.validate(2); //data item with id=2 will be validated
 text.validate(); //validate only this text field
 ~~~
 
-
 ##Validation Message
 
 If any record or field fails validation, it is marked with built-in **red highlighting** (true for both in-library and HTML5 validation).
 
-Additionally, a **custom message** can be set. It's done in two ways: 
+It is also very easy to apply built-in validation messages for form fields.  
+
+<img src="desktop/form_validation_message.png">
+
+All you need to do is to specify the **invalidMessage** property and set the necessary text of the message:
+
+~~~js
+{ view:"text", label:'Username', name:"login", invalidMessage: "Login can not be empty" },
+~~~
+
+Validation messages require some space under form fields. You can specify the bottomPadding property 
+and set the appropriate value:
+
+~~~js
+var form = [
+	{ view:"text", label:'Username', name:"login", 
+    	invalidMessage: "Login can not be empty" }
+];
+
+webix.ui({
+	view:"form",
+	elementsConfig:{
+    	labelPosition: "top",
+    	labelWidth: 140,
+    	bottomPadding: 18
+	}
+});
+~~~
+
+{{sample 13_form/04_validation/12_validation_message.html}}
+
+{{note
+If the value of bottomPadding isn't set, the height of paddings for validation messages will be automatically specified as 18px.
+}}
+
+
+###Adding input description
+
+There's also a possibility to put some hints on correct filling of form fields for users.
+
+<img src="desktop/form_filling_hints.png">
+
+The bottomLabel property will be helpful for this purpose:
+
+~~~js
+{ view:"text", type:"password", label:"Password", bottomPadding: 35, 
+	bottomLabel: "* The password must have at least 6 characters"},
+~~~
+
+{{sample 13_form/01_controls/22_description.html}}
+
+##Validation Handling
+
+Additionally, a **custom message** can be set to handle validation process. It's done in two ways: 
 
 **1** . Webix message can be used together with the **validate()** method within the **sumbit_form** custom function;
 
@@ -194,22 +246,26 @@ rules:{
 
 ##Predefined Rules
 
-There are three of them: 
+There are four of them: 
 
 - **isNotEmpty** - checks whether a value is empty;
 - **isNumber** - checks whether a value is number;
-- **isEmail** - checks whether a value is e-mail (looks for an @-sign, fullstop, text after it).
+- **isEmail** - checks whether a value is e-mail (looks for an @-sign, fullstop, text after it);
+- **isChecked** - checks whether a checkbox is checked.
 
 ~~~js
 webix.ui({
 	view:"form1",
 	elements:[
 		{ view:"text", label:'Login', name:"login"},
+        {...},
+        {view:"checkbox", label:'Driving license', name:"license"},
 		....],
 	rules:{
 		login: webix.rules.isNotEmpty,
 		email: webix.rules.isNumber,
-		phone: webix.rules.isEmail
+		phone: webix.rules.isEmail,
+        driving_license: webix.rules.isChecked
 	}
 });
 ~~~

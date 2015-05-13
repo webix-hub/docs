@@ -27,6 +27,10 @@ Layouts help you to organize your web page, define its overall look-and-feel. Yo
 		<img src="desktop/icons/layout.png"/> 
     	<br>Layout
     </a>
+	<a href="desktop/portlet.md">
+		<img src="desktop/icons/portlet.png"/> 
+    	<br>Portlet
+    </a>
 	<a href="desktop/multiview.md">
     	<img src="desktop/icons/multiview.png"/> 
     	<br>Multiview
@@ -269,6 +273,7 @@ div.controls_group img {
 - desktop/multiview.md
 - desktop/organogram.md
 - desktop/popup.md
+- desktop/portlet.md
 - desktop/property_sheet.md
 - desktop/scrollview.md
 - desktop/tabview.md

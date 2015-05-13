@@ -11,10 +11,12 @@ Methods
 - <a href="#edit">editFile</a> - opens editor for a certain item in the active view (Tree or Files view)
 - <a href="#getactive">getActive</a> - gets ids of active items 
 - <a href="#getactiveview">getActiveView</a> - gets the reference to the active view (Tree or Files view)
+- <a href="#getcurrentfolder">getCurrentFolder</a> - gets the name of the folder selected in Tree
 - <a href="#getmenu">getMenu</a> - gets the popup menu object
 - <a href="#getpath">getPath</a> - gets an array of folders' ids in a path
 - <a href="#getpathnames">getPathNames</a> - gets an array of folders' names in a path
 - <a href="#getsearchdata">getSearchData</a> - gets an array of items (files, folders) that contains text in their names
+- <a href="#getselectedfile">getSelectedFile</a> - gets a string or an array with selected file(nested folder) name(s)
 - <a href="#getuploader">getUploader</a> - gets the uploader object
 - <a href="#goback">goBack</a> - goes back in the navigation history
 - <a href="#goforward">goForward</a> - goes forward in the navigation history
@@ -119,6 +121,18 @@ returns:
 
 - {object} - the object of the active view
 
+###<span id='getcurrentfolder'>getCurrentFolder</span>
+
+gets the name of the folder selected in Tree
+
+~~~js
+var folder = fmanager.getCurrentFolder();
+~~~   
+
+returns:
+
+- {string} - the name of the selected folder
+
 
 ###<span id='getmenu'>getMenu</span> 
 
@@ -193,6 +207,19 @@ returns:
 
 - {array} - an array of items
  
+
+<h3 id="getselectedfile">getSelectedFile</h3> 
+
+gets a string or an array with selected file(nested folder) name(s)
+
+~~~js
+var selected = fmanager.getSelectedFile(id,text);
+~~~
+ 
+returns:
+
+- {string/array} - selected file(nested folder) name(s)
+
  
 ###<span id='getuploader'>getUploader</span> 
 

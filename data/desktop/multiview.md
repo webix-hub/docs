@@ -98,6 +98,20 @@ Multiview built-in means of changing the view cells. Look very much like the tab
 Here you use common methods (**show and back**) and create custom buttons each of which can take you to the necessary view. **Show()** method in conjunction with its counterpart **hide()** are as well used for 
 [changing visibility](desktop/visibility.md) of UI components. 
 
+###Saving inactive views
+
+When dealing with iframe content, e.g. WYSIWYG editors (CKEditor), Multiview removes inactive views when they become hidden.
+
+To solve this problem, set the *keepViews* config property to true.
+
+~~~js
+webix.ui({
+  view: "multiview",
+  cells: [],
+  keepViews:true
+});
+~~~
+
 ###History API
 
 Learn how to "memorize" the currenty opened tab in the [related article](desktop/history_track.md). 
