@@ -344,10 +344,10 @@ dp = new webix.DataProcessor({
 
 ##Sending Headers with DataProcessor-based Requests
 
-There exists no possibility to send headers with DataProcessor requests as they are executed in background. However, you can catch Webix **onBeforeAjax** request to mpdify ANY Ajax request issued from the page: 
+There exists no possibility to send headers with DataProcessor requests as they are executed in background. However, you can catch Webix **onBeforeAjax** request to modify ANY Ajax request issued from the page: 
 
 ~~~js
-webix.callEvent("onBeforeAjax", function(mode, url, data, request){
+webix.callEvent("onBeforeAjax", function(mode, url, data, request, headers){
  	request.setRequestHeader("Content-type","application/json");
 });
 ~~~

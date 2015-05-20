@@ -7,9 +7,11 @@ Properties
 - api/link/ui.multisuggest_autofocus_config.md - sets focus on the window the moment it appears on the page
 - api/link/ui.multisuggest_body_config.md - the content of window body: template or view
 - api/link/ui.multisuggest_borderless_config.md - used to hide the component borders
+- api/ui.multisuggest_button_config.md - sets a button at the bottom of the suggest
 - api/ui.multisuggest_buttontext_config.md - defines text for the 'Select' button
 - api/link/ui.multisuggest_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.multisuggest_css_config.md - the name of a css class that will be applied to the view container
+- api/link/ui.multisuggest_datafeed_config.md - 
 - api/link/ui.multisuggest_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.multisuggest_filter_config.md - custom filtering function
 - api/link/ui.multisuggest_fitmaster_config.md - size suggest box to the master control
@@ -48,9 +50,11 @@ Properties
 - api/link/ui.multisuggest_autofocus_config.md
 - api/link/ui.multisuggest_body_config.md
 - api/link/ui.multisuggest_borderless_config.md
+- api/ui.multisuggest_button_config.md
 - api/ui.multisuggest_buttontext_config.md
 - api/link/ui.multisuggest_container_config.md
 - api/link/ui.multisuggest_css_config.md
+- api/link/ui.multisuggest_datafeed_config.md
 - api/link/ui.multisuggest_disabled_config.md
 - api/link/ui.multisuggest_filter_config.md
 - api/link/ui.multisuggest_fitmaster_config.md

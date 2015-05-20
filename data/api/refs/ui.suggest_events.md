@@ -3,6 +3,7 @@ Events
 
 {{api
 - api/link/ui.suggest_onafterscroll_event.md - occurs when some webix view has been scrolled
+- api/link/ui.suggest_onbeforeshow_event.md - fires right after show() method is called for the window (popup) and before the window is shown
 - api/link/ui.suggest_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.suggest_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.suggest_onhide_event.md - fires when window is hidden
@@ -23,6 +24,7 @@ Events
 
 @index:
 - api/link/ui.suggest_onafterscroll_event.md
+- api/link/ui.suggest_onbeforeshow_event.md
 - api/link/ui.suggest_onbindrequest_event.md
 - api/link/ui.suggest_ondestruct_event.md
 - api/link/ui.suggest_onhide_event.md

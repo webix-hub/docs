@@ -1,6 +1,32 @@
 ui.organogram 
 =============
 
+{{memo An organizational chart widget for creating hierarchical diagrams. }}
+
+The component supports data loading from different sources. You can customize the look and feel of Organogram items by using templates, 
+uniting child elements of items into list blocks and redefining the applied css styles.
+It's also possible to create your own css style for Organogram. Check desktop/organogram.md documentation for more detailed description.
+
+### Constructor
+
+~~~js
+var chart = webix.ui({
+	view:"organogram", 
+    container:"mydiv", 
+    ...config options goes here..
+})
+//or, in case of jQuery
+$("#mydiv").webix_organogram({
+	...config options goes here..
+});
+~~~
+
+### Where to start
+
+- [Overview of Organogram Widget](desktop/organogram.md)
+- [Samples](http://docs.webix.com/samples/60_pro/07_organogram/index.html)
+
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/group.md">Group</a>, <a href="api/refs/treeapi.md">TreeAPI</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/selectionmodel.md">SelectionModel</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/treedataloader.md">TreeDataLoader</a>, <a href="api/refs/treestore.md">TreeStore</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
@@ -150,7 +176,7 @@ ui.organogram
 - api/link/ui.organogram_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.organogram_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.organogram_data_config.md - JavaScript array containing data for the component
-- api/link/ui.organogram_datafeed_config.md - the URL that the component will use to reload data during binding
+- api/link/ui.organogram_datafeed_config.md - 
 - api/link/ui.organogram_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.organogram_datatype_config.md - the type of loaded data
 - api/link/ui.organogram_disabled_config.md - indicates whether an item is enabled or not
@@ -180,7 +206,7 @@ ui.organogram
 - api/link/ui.organogram_threestate_config.md - enable three-state checkboxes
 - api/link/ui.organogram_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.organogram_type_config.md - object that specifies items presentation
-- api/link/ui.organogram_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.organogram_url_config.md - 
 - api/link/ui.organogram_width_config.md - sets the width of the component
 }}
 
@@ -216,4 +242,3 @@ ui.organogram
 - api/refs/ui.organogram_events.md
 - api/refs/ui.organogram_others.md
 
-@edition:pro

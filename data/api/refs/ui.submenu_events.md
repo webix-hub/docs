@@ -21,6 +21,7 @@ Events
 - api/link/ui.submenu_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/link/ui.submenu_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.submenu_onbeforeselect_event.md - fires before item selection is started
+- api/link/ui.submenu_onbeforeshow_event.md - fires right after show() method is called for the window (popup) and before the window is shown
 - api/link/ui.submenu_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.submenu_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.submenu_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
@@ -74,6 +75,7 @@ Events
 - api/link/ui.submenu_onbeforeload_event.md
 - api/link/ui.submenu_onbeforerender_event.md
 - api/link/ui.submenu_onbeforeselect_event.md
+- api/link/ui.submenu_onbeforeshow_event.md
 - api/link/ui.submenu_onbeforesort_event.md
 - api/link/ui.submenu_onbindrequest_event.md
 - api/link/ui.submenu_ondatarequest_event.md

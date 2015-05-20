@@ -8,12 +8,14 @@ Portlet
 
 ##Overview
 
-Portlet is a layout component that allows placing other widgets inside of it. You can easily drag this or that cells around the page.
-Thus, it's possible to change the app's structure in a simple way, without writing additional code for it.<br><br>
+Portlet is a layout component that allows placing other widgets inside of it. You can easily drag this or that portlet anywhere you want on the page.
+Thus, it's possible to change the app's structure in a simple way, without writing any extra code.<br><br>
 <img style="display:block; margin-left:auto;margin-right:auto;"  src="desktop/portlet.png"/>
 
 Initialization
 ---------------
+Portlet consists of a body (taking either a view or a text template) without the head section. 
+A header can also be added. You'll find the details below.
 
 ~~~js
 webix.ui({
@@ -30,11 +32,11 @@ webix.ui({
 }}
 
 
-Moving cells
+Moving portlets
 --------------
 
-You can move portlet cells by the handler. While dragging a cell, possible positions for dropping will be indicated by blur.
-A cell can be placed as a column or as a row.
+You can move portlets by the handler. While dragging a portlet, possible positions for dropping will be defined by blur.
+A portlet can be placed as a column or as a row.
 
 <img src="desktop/portlet_moving.png">
 
@@ -44,7 +46,8 @@ A cell can be placed as a column or as a row.
 Dragging by the header
 ------------------------
 
-In order to drag a cell you can use not only the handler, but also the cell header. Just set some string value for the *header* property in the porlet definition:
+In order to drag a portlet you can use not only the handler, but also the portlet header. 
+Just set some string value for the *header* property in the porlet definition:
 
 ~~~js
 webix.ui({
@@ -61,12 +64,12 @@ webix.ui({
 {{sample 60_pro/09_portlet/03_portlet_drag_header.html}}
 
 
-Setting modes of moving
+Modes of moving portlets
 ----------------------
 
-###Replacing cells
+###Replacing portlets
 
-Instead of simply moving a cell to a new position it's also possible to replace the target cell and the moved one.
+Instead of simply moving a portlet to a new position, it's also possible to replace the target portlet with the moved one.
 This mode is enabled by specifying the *mode* property with the value "replace":
 
 ~~~js
@@ -86,8 +89,8 @@ webix.ui({
 
 ###One direction moving
 
-There are two modes that let make cells moving eiter horizontal or vertical. They are called "cols" and "rows", respectively.
-In the "cols" mode cells are moved only along the x-axis. In the "rows" mode cells can only be placed along the y-axis.
+There are two modes that allow portlets move either only in the horizontal direction or in the vertical one. They are called "cols" and "rows", respectively.
+In the "cols" mode portlets are moved only along the x-axis. In the "rows" mode portlets can only be placed along the y-axis.
 
 ~~~js
 webix.ui({

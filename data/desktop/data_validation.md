@@ -86,25 +86,26 @@ text.validate(); //validate only this text field
 
 ##Validation Message
 
-If any record or field fails validation, it is marked with built-in **red highlighting** (true for both in-library and HTML5 validation).
+If any record or field fails validation, it is marked with embedded **red highlighting** (true for both in-library and HTML5 validation).
 
 It is also very easy to apply built-in validation messages for form fields.  
 
 <img src="desktop/form_validation_message.png">
 
-All you need to do is to specify the **invalidMessage** property and set the necessary text of the message:
+All you need to do is to specify the *invalidMessage* property and set the necessary text of the message:
 
 ~~~js
 { view:"text", label:'Username', name:"login", invalidMessage: "Login can not be empty" },
 ~~~
 
-Validation messages require some space under form fields. You can specify the bottomPadding property 
-and set the appropriate value:
+Validation messages require some space under form fields. You should specify the *bottomPadding* property 
+and set the appropriate value to define the bottom offset of the input:
 
 ~~~js
-var form = [
+var formElements = [
 	{ view:"text", label:'Username', name:"login", 
-    	invalidMessage: "Login can not be empty" }
+    	invalidMessage: "Login can not be empty" },
+    ...
 ];
 
 webix.ui({
@@ -113,24 +114,25 @@ webix.ui({
     	labelPosition: "top",
     	labelWidth: 140,
     	bottomPadding: 18
-	}
+	},
+    elements: formElements
 });
 ~~~
 
 {{sample 13_form/04_validation/12_validation_message.html}}
 
 {{note
-If the value of bottomPadding isn't set, the height of paddings for validation messages will be automatically specified as 18px.
+The property is 18 px by default. If the value isn't set, space for validation messages will be automatically specified as 18px.
 }}
 
 
-###Adding input description
+<h3 id="bottomlabel">Adding input description</h3>
 
 There's also a possibility to put some hints on correct filling of form fields for users.
 
 <img src="desktop/form_filling_hints.png">
 
-The bottomLabel property will be helpful for this purpose:
+The *bottomLabel* property will be helpful for this purpose. Don't forget to set the bottomPadding property to specify the size of labels.
 
 ~~~js
 { view:"text", type:"password", label:"Password", bottomPadding: 35, 
@@ -188,7 +190,8 @@ Message boxes of all types are described [here](desktop/message_boxes.md).
 
 ##Validation Rules {#rules}
 
-The **validate()** function checks if data complies to certain rules defined in the **rules** object that contains a collection of **property-rule** pairs. Predefined rules are accessed through **webix.rules** class. 
+The **validate()** function checks if data complies to certain rules defined in the **rules** object that contains a collection of **property-rule** pairs. 
+Predefined rules are accessed through **webix.rules** class. 
 
 **Form validation**
 
@@ -257,15 +260,17 @@ There are four of them:
 webix.ui({
 	view:"form1",
 	elements:[
-		{ view:"text", label:'Login', name:"login"},
-        {...},
-        {view:"checkbox", label:'Driving license', name:"license"},
-		....],
+		{ view:"text", label:'Username', name:"login" },
+		{ view:"text", label:'E-mail address', name:"email"},
+		{ view:"text", label:'Password', name:"password"},
+		{ view:"checkbox", labelRight:'I accept terms of use', name:"accept"}
+
+	],
 	rules:{
 		login: webix.rules.isNotEmpty,
 		email: webix.rules.isNumber,
 		phone: webix.rules.isEmail,
-        driving_license: webix.rules.isChecked
+        accept: webix.rules.isChecked
 	}
 });
 ~~~

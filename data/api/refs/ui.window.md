@@ -68,6 +68,7 @@ The window consists of the header and body, can be modal or modaless. The window
 
 {{api
 - api/link/ui.window_onafterscroll_event.md - occurs when some webix view has been scrolled
+- api/ui.window_onbeforeshow_event.md - fires right after show() method is called for the window (popup) and before the window is shown
 - api/link/ui.window_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.window_ondestruct_event.md - occurs when component destroyed
 - api/ui.window_onhide_event.md - fires when window is hidden
@@ -96,6 +97,7 @@ The window consists of the header and body, can be modal or modaless. The window
 - api/link/ui.window_borderless_config.md - used to hide the component borders
 - api/link/ui.window_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.window_css_config.md - the name of a css class that will be applied to the view container
+- api/link/ui.window_datafeed_config.md - 
 - api/link/ui.window_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.window_fullscreen_config.md - renders window in fullscreen mode
 - api/link/ui.window_gravity_config.md - sets the view gravity (1 by default)

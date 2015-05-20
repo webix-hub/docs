@@ -45,6 +45,11 @@ table.webixtoc td{
         <td> api/refs/ui.multiview.md </td>
         <td> a container control that keeps a set of views and displays one view at a time</td>
     </tr>
+    <tr>
+    	<td> <img src="api/toc/portlet.png"/> </td>
+        <td> api/refs/ui.portlet.md </td>
+        <td> a vertical or horizontal layout component that can contain other components </td>
+    </tr>
 	<tr>
     	<td> <img src="api/toc/tabview.png"/> </td>
         <td> api/refs/ui.tabview.md </td>
@@ -248,9 +253,9 @@ table.webixtoc td{
         <td>a non-editable text control</td>
     </tr>
     <tr>
-        <td> <img src="api/toc/multitext.png"/> </td>
-        <td> api/refs/ui.multitext.md </td>
-        <td>a multi-text control</td>
+        <td> <img src="api/toc/multicombo.png"/> </td>
+        <td> api/refs/ui.multicombo.md </td>
+        <td>a multi-combo control</td>
     </tr>
     <tr>
         <td> <img src="api/toc/multiselect.png"/> </td>
@@ -258,9 +263,19 @@ table.webixtoc td{
         <td>a multi-select control</td>
     </tr>
     <tr>
+        <td> <img src="api/toc/multitext.png"/> </td>
+        <td> api/refs/ui.multitext.md </td>
+        <td>a multi-text control</td>
+    </tr>
+    <tr>
     	<td> <img src="api/toc/radio.png"/> </td>
         <td> api/refs/ui.radio.md </td>
         <td> a radio button </td>
+    </tr>
+    <tr>
+    	<td> <img src="api/toc/rangeslider.png"/> </td>
+        <td> api/refs/ui.rangeslider.md </td>
+        <td>a slider for selecting a range of numeric values </td>
     </tr>
     <tr>
     	<td> <img src="api/toc/richselect.png"/> </td>
@@ -441,12 +456,15 @@ table.webixtoc td{
 - api/refs/ui.organogram.md
 - api/refs/ui.pager.md
 - api/refs/ui.popup.md
+- api/refs/ui.portlet.md
 - api/refs/ui.property.md
 - api/refs/ui.radio.md
+- api/refs/ui.rangeslider.md
 - api/refs/ui.resizer.md
 - api/refs/ui.richselect.md
-- api/refs/ui.multitext.md
+- api/refs/ui.multicombo.md
 - api/refs/ui.multiselect.md
+- api/refs/ui.multitext.md
 - api/refs/ui.scrollview.md
 - api/refs/ui.search.md
 - api/refs/ui.segmented.md

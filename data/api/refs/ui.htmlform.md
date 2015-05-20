@@ -85,7 +85,7 @@ The component allows you to get an HTML Form as a lib-based view, so that to use
 - api/link/ui.htmlform_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/link/ui.htmlform_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.htmlform_onbindrequest_event.md - fires when the component is ready to receive data from the master component
-- api/link/ui.htmlform_onchange_event.md - fires when data in the input is changed
+- api/link/ui.htmlform_onchange_event.md - fires when data in the input or related form/toolbar is changed
 - api/link/ui.htmlform_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.htmlform_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.htmlform_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
@@ -96,6 +96,7 @@ The component allows you to get an HTML Form as a lib-based view, so that to use
 - api/link/ui.htmlform_ontouchend_event.md - occurs when the touch event is ended
 - api/link/ui.htmlform_ontouchmove_event.md - occurs during touch movement
 - api/link/ui.htmlform_ontouchstart_event.md - when some webix view has been touched
+- api/link/ui.htmlform_onvalues_event.md - fires after values have been set within toolbar or form
 - api/link/ui.htmlform_onviewresize_event.md - view size was changed by resizer
 }}
 
@@ -110,7 +111,7 @@ The component allows you to get an HTML Form as a lib-based view, so that to use
 - api/link/ui.htmlform_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.htmlform_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.htmlform_data_config.md - JavaScript array containing data for the component
-- api/link/ui.htmlform_datafeed_config.md - the URL that the component will use to reload data during binding
+- api/link/ui.htmlform_datafeed_config.md - 
 - api/link/ui.htmlform_datatype_config.md - the type of loaded data
 - api/link/ui.htmlform_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.htmlform_gravity_config.md - sets the view gravity (1 by default)
@@ -128,7 +129,7 @@ The component allows you to get an HTML Form as a lib-based view, so that to use
 - api/link/ui.htmlform_src_config.md - the path to an external template that is loaded by Ajax
 - api/link/ui.htmlform_template_config.md - the component template
 - api/link/ui.htmlform_type_config.md - name of predefined styling type
-- api/link/ui.htmlform_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.htmlform_url_config.md - 
 - api/link/ui.htmlform_width_config.md - sets the width of the component
 }}
 

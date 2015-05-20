@@ -60,7 +60,7 @@ The component is a compliment to the menu component and not intended for direct 
 - api/link/ui.submenu_getitem.md - gets the object of the data item with the specified id
 - api/link/ui.submenu_getitemnode.md - returns html element of the item
 - api/link/ui.submenu_getlastid.md - returns the id of the last item
-- api/link/ui.submenu_getmenu.md - 
+- api/link/ui.submenu_getmenu.md - gets object of a menu/submenu where an item is located
 - api/link/ui.submenu_getmenuitem.md - search for menu item in submenus
 - api/link/ui.submenu_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.submenu_getnode.md - returns the main HTML container for the calling object
@@ -71,7 +71,7 @@ The component is a compliment to the menu component and not intended for direct 
 - api/link/ui.submenu_getscrollstate.md - returns the scroll position
 - api/link/ui.submenu_getselectedid.md - returns the id(s) of the selected item(s)
 - api/link/ui.submenu_getselecteditem.md - returns selected object
-- api/link/ui.submenu_getsubmenu.md - gets the submenu object within menu component
+- api/link/ui.submenu_getsubmenu.md - gets the submenu object of a menu item (if any)
 - api/link/ui.submenu_gettopmenu.md - returns top menu object
 - api/link/ui.submenu_gettopparentview.md - returns top parent view
 - api/link/ui.submenu_getvisiblecount.md - returns the number of items that can be seen with the current view height
@@ -141,6 +141,7 @@ The component is a compliment to the menu component and not intended for direct 
 - api/link/ui.submenu_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/link/ui.submenu_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.submenu_onbeforeselect_event.md - fires before item selection is started
+- api/link/ui.submenu_onbeforeshow_event.md - fires right after show() method is called for the window (popup) and before the window is shown
 - api/link/ui.submenu_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.submenu_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.submenu_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
@@ -190,7 +191,7 @@ The component is a compliment to the menu component and not intended for direct 
 - api/link/ui.submenu_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.submenu_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.submenu_data_config.md - JavaScript array containing data for the component
-- api/link/ui.submenu_datafeed_config.md - the URL that the component will use to reload data during binding
+- api/link/ui.submenu_datafeed_config.md - 
 - api/link/ui.submenu_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.submenu_datatype_config.md - the type of loaded data
 - api/link/ui.submenu_disabled_config.md - indicates whether an item is enabled or not
@@ -237,7 +238,7 @@ The component is a compliment to the menu component and not intended for direct 
 - api/link/ui.submenu_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.submenu_top_config.md - the top offset of a window
 - api/link/ui.submenu_type_config.md - object that specifies items presentation
-- api/link/ui.submenu_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.submenu_url_config.md - 
 - api/link/ui.submenu_width_config.md - sets the width of the component
 - api/link/ui.submenu_xcount_config.md - defines width of view in items
 - api/link/ui.submenu_ycount_config.md - defines height of view in items

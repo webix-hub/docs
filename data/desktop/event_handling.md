@@ -326,7 +326,7 @@ The details on Touch Events are given in [the related part of API reference](api
 
 ###Events connected with serverside requests from the page
 
-- **onBeforeAjax**(mode, url, data, request) - fires  when any Ajax request is issued. It can be developer request or automatic (when using [Data Connectors](desktop/dataconnector.md));
+- **onBeforeAjax**(mode, url, data, request, headers) - fires  when any Ajax request is issued. It can be developer request or automatic (when using [Data Connectors](desktop/dataconnector.md));
 - **onAjaxError**(request_obj) - fires when any Ajax request results in an error;
 - **onLoadError**(text, xml, xhttp, obj) - fires when an error has happened during [loading the data](desktop/data_loading.md) into a component. See desktop/loadingerror.md article for details.
 

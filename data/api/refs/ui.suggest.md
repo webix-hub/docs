@@ -57,6 +57,7 @@ Can be used standalone or as editor for other components. Check [suggest](deskto
 
 {{api
 - api/link/ui.suggest_onafterscroll_event.md - occurs when some webix view has been scrolled
+- api/link/ui.suggest_onbeforeshow_event.md - fires right after show() method is called for the window (popup) and before the window is shown
 - api/link/ui.suggest_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.suggest_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.suggest_onhide_event.md - fires when window is hidden
@@ -86,6 +87,7 @@ Can be used standalone or as editor for other components. Check [suggest](deskto
 - api/link/ui.suggest_borderless_config.md - used to hide the component borders
 - api/link/ui.suggest_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.suggest_css_config.md - the name of a css class that will be applied to the view container
+- api/link/ui.suggest_datafeed_config.md - 
 - api/link/ui.suggest_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.suggest_filter_config.md - custom filtering function
 - api/ui.suggest_fitmaster_config.md - size suggest box to the master control

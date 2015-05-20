@@ -62,7 +62,9 @@ The **dimensions** of multiview cells are adjusted to their content. By default,
 ~~~js
 webix.ui({
   view: "multiview",
-  cells: [],
+  cells: [
+  	...
+  ],
   fitBiggest:true
 });
 ~~~
@@ -74,7 +76,9 @@ My default multiview cells are switched with horizontal animation of a "slide" t
 ~~~js
 webix.ui({
   view: "multiview",
-  cells: [],
+  cells: [
+  	...
+  ],
   animate:false
 });
 ~~~
@@ -98,7 +102,7 @@ Multiview built-in means of changing the view cells. Look very much like the tab
 Here you use common methods (**show and back**) and create custom buttons each of which can take you to the necessary view. **Show()** method in conjunction with its counterpart **hide()** are as well used for 
 [changing visibility](desktop/visibility.md) of UI components. 
 
-###Saving inactive views
+<h3 id="keepviews">Saving inactive views</h3>
 
 When dealing with iframe content, e.g. WYSIWYG editors (CKEditor), Multiview removes inactive views when they become hidden.
 
@@ -107,7 +111,9 @@ To solve this problem, set the *keepViews* config property to true.
 ~~~js
 webix.ui({
   view: "multiview",
-  cells: [],
+  cells: [
+  	...
+  ],
   keepViews:true
 });
 ~~~

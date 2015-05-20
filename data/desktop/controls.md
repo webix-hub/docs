@@ -250,37 +250,6 @@ $$('field_t').getInput().value // -> returns "One"
 [API Reference](api__refs__ui.combo.html)
 
 
-###MultiSelect combobox
-
-{{pronote
-The control is available only in **Webix Pro** edition.
-}}
-
-MultiSelect combo allows choosing several options from a suggest list. 
-
-<img src="desktop/multicombo_message.png">
-
-{{sample 60_pro/02_form/06_multicombo.html}}
-
-{{Multicombo Initialization}}
-~~~js
-{ view:"multicombo", label:"To", value:"2,3,4,13", suggest: "data/names.js"}
-~~~
-
-When a multicombo element in the form gets the focus, a suggest list opens. 
-Each option has a checkbox next to it. To select an option, click on the corresponding row.<br>
-
-To delete an option from multicombo, you can either click the "cross" sign or use the Backspace key. 
-
-**Main properties**
-
-- **label** (string) - specifies the text label of the control
-- **labelPosition** (string) - the position of the label in relation to the control container
-- **value** (number/string) - defines the initially selected items of the control
-- **separator** (string) - a delimiter for separating options in a multicombo, comma by default
-- **button** (boolean) - sets a button at the bottom of suggest list
-- **suggest** (function/string) - specifies the data source of multicombo options
-
     
 ##Counter {#counter}
 
@@ -489,6 +458,44 @@ Label control can be used to render any user HTML or icons (as well as built-in 
 
 [API Reference](api__refs__ui.label.html)
 
+##Multicombo
+
+{{pronote
+The control is available only in **Webix Pro** edition.
+}}
+
+Multicombo allows choosing several options from a suggest list. 
+
+<img src="desktop/multicombo_message.png">
+
+{{sample 60_pro/02_form/06_multicombo.html}}
+
+
+When a multicombo element in the form gets the focus, a suggest list opens. 
+Each option has a checkbox next to it. To select an option, click on the corresponding row.
+Selected options will be added into one row.<br>
+
+To delete an option from multicombo, you can either click the "cross" sign or use the Backspace key. 
+
+
+{{snippet Multicombo Initialization}}
+~~~js
+{ view:"multicombo", label:"To", value:"2,3,4,13", suggest: "data/names.js"}
+~~~
+
+**Main properties**
+
+- **label** (string) - specifies the text label of the control
+- **labelPosition** (string) - the position of the label in relation to the control container
+- **value** (array/string) - defines the initially selected items of the control
+- **separator** (string) - a delimiter for separating options in a multicombo, comma by default
+- **button** (boolean) - sets a button at the bottom of suggest list
+- **suggest** (function/string) - specifies the data source of multicombo options
+
+[Controls Common Functionality](desktop/controls_guide.md)
+
+[API Reference](api__refs__ui.multicombo.html)
+
 ##Multiselect
 
 {{pronote
@@ -499,7 +506,7 @@ The control is available only in **Webix Pro** edition.
 
 {{sample 60_pro/02_form/02_multiselect.html}}
 
-UI-related multiselect is a select control baed on Webix [richselect](#richselect) and allows selecting multiple option at a time while displaying them in the dedicated 
+UI-related multiselect is a select control based on Webix [richselect](#richselect) and allows selecting multiple option at a time while displaying them in the dedicated 
 non-editable input field. 
 
 The control's popup is supplied with a "select" button out of box. 
@@ -951,7 +958,7 @@ The new title is set with the help of **define()** method while current value of
 
 [API Reference](api__refs__ui.slider.html)
 
-###Range Slider
+<h3 id="range">Range Slider</h3>
 
 {{pronote
 The control is available only in **Webix Pro** edition.
@@ -969,11 +976,9 @@ Range Slider is an advanced slider control that allows selecting a specific rang
 Range Slider Initialization
 }}
 ~~~js
-{ view:"rangeslider", label:"Level B", value:[0,50], name:"s2", title:function(obj){
-	var v = obj.value;
-	return (v[0]==v[1]?v[0]: v[0]+" - "+v[1]);
-}}
+{ view:"rangeslider", label:"Level B", value:[0,50], name:"s2"}
 ~~~
+
 
 ####Main Properties
 
@@ -983,6 +988,10 @@ Range Slider Initialization
     - **labelWidth** (number) - width of the label container; 
 - **name** (string) - name of the control used to get its value in the form;
 - **title** (template, function) - text label over the slider marker 
+
+[Controls Common Functionality](desktop/controls_guide.md)
+
+[API Reference](api__refs__ui.rangeslider.html)
 
 
 ##Tabbar {#tabbar}
@@ -1097,7 +1106,7 @@ At the same time, "text" properties can be set via an **attributes** object cont
 
 - **attributes** (object)
 	- **maxlength** (number)  - the maximum quantity of symbols that can be typed into the text field; 
-    - **required** (boolean) - indicats whether this field must be filled before the form can be submitted. False by default;
+    - **required** (boolean) - indicates whether this field must be filled before the form can be submitted. False by default;
     - **title** (string) -  a prompt message that appears on pointing cursor over the field. 
     
 The same is true for textarea.    

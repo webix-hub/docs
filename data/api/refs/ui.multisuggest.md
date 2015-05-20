@@ -62,6 +62,7 @@ as well as component [editor](api/refs/editors.md).
 
 {{api
 - api/link/ui.multisuggest_onafterscroll_event.md - occurs when some webix view has been scrolled
+- api/link/ui.multisuggest_onbeforeshow_event.md - fires right after show() method is called for the window (popup) and before the window is shown
 - api/link/ui.multisuggest_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.multisuggest_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.multisuggest_onhide_event.md - fires when window is hidden
@@ -89,9 +90,11 @@ as well as component [editor](api/refs/editors.md).
 - api/link/ui.multisuggest_autofocus_config.md - sets focus on the window the moment it appears on the page
 - api/link/ui.multisuggest_body_config.md - the content of window body: template or view
 - api/link/ui.multisuggest_borderless_config.md - used to hide the component borders
+- api/ui.multisuggest_button_config.md - sets a button at the bottom of the suggest
 - api/ui.multisuggest_buttontext_config.md - defines text for the 'Select' button
 - api/link/ui.multisuggest_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.multisuggest_css_config.md - the name of a css class that will be applied to the view container
+- api/link/ui.multisuggest_datafeed_config.md - 
 - api/link/ui.multisuggest_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.multisuggest_filter_config.md - custom filtering function
 - api/link/ui.multisuggest_fitmaster_config.md - size suggest box to the master control

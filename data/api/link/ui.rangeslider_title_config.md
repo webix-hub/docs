@@ -1,0 +1,1 @@
+@link: api/ui.slider_title_config.md

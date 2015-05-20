@@ -16,7 +16,7 @@ Methods
 - <a href="#getpath">getPath</a> - gets an array of folders' ids in a path
 - <a href="#getpathnames">getPathNames</a> - gets an array of folders' names in a path
 - <a href="#getsearchdata">getSearchData</a> - gets an array of items (files, folders) that contains text in their names
-- <a href="#getselectedfile">getSelectedFile</a> - gets a string or an array with selected file(nested folder) name(s)
+- <a href="#getselectedfile">getSelectedFile</a> - gets a string or an array with file (folder) name(s) selected in the "table" view
 - <a href="#getuploader">getUploader</a> - gets the uploader object
 - <a href="#goback">goBack</a> - goes back in the navigation history
 - <a href="#goforward">goForward</a> - goes forward in the navigation history
@@ -210,7 +210,7 @@ returns:
 
 <h3 id="getselectedfile">getSelectedFile</h3> 
 
-gets a string or an array with selected file(nested folder) name(s)
+gets a string or an array with file (folder) name(s) selected in the "table" view
 
 ~~~js
 var selected = fmanager.getSelectedFile(id,text);

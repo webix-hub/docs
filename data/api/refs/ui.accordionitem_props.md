@@ -8,6 +8,7 @@ Properties
 - api/ui.accordionitem_collapsed_config.md - displays the cell collapsed initially
 - api/link/ui.accordionitem_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.accordionitem_css_config.md - the name of a css class that will be applied to the view container
+- api/link/ui.accordionitem_datafeed_config.md - 
 - api/link/ui.accordionitem_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.accordionitem_gravity_config.md - sets the view gravity (1 by default)
 - api/ui.accordionitem_header_config.md - sets the label of the header in the expanded state
@@ -27,6 +28,7 @@ Properties
 - api/link/ui.accordionitem_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.accordionitem_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
 - api/link/ui.accordionitem_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
+- api/link/ui.accordionitem_url_config.md - 
 - api/link/ui.accordionitem_width_config.md - sets the width of the component
 }}
 
@@ -37,6 +39,7 @@ Properties
 - api/ui.accordionitem_collapsed_config.md
 - api/link/ui.accordionitem_container_config.md
 - api/link/ui.accordionitem_css_config.md
+- api/link/ui.accordionitem_datafeed_config.md
 - api/link/ui.accordionitem_disabled_config.md
 - api/link/ui.accordionitem_gravity_config.md
 - api/ui.accordionitem_header_config.md
@@ -56,5 +59,6 @@ Properties
 - api/link/ui.accordionitem_oncontext_config.md
 - api/link/ui.accordionitem_ondblclick_config.md
 - api/link/ui.accordionitem_onmousemove_config.md
+- api/link/ui.accordionitem_url_config.md
 - api/link/ui.accordionitem_width_config.md
 

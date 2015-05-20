@@ -45,7 +45,7 @@ ui.datepicker
 - api/link/ui.datepicker_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.datepicker_getparentview.md - returns the parent view of the component
 - api/ui.datepicker_getpopup.md - returns popup element of the input
-- api/ui.datepicker_gettext.md - 
+- api/ui.datepicker_gettext.md - gets actual text value from the control's input
 - api/link/ui.datepicker_gettopparentview.md - returns top parent view
 - api/link/ui.datepicker_getvalue.md - returns the current value of the control
 - api/link/ui.datepicker_hasevent.md - checks whether the component has the specified event
@@ -95,10 +95,13 @@ ui.datepicker
 - api/link/ui.datepicker_animate_config.md - defines or disables view change animation.
 - api/link/ui.datepicker_attributes_config.md - sets an hash of HTML input attributes that will be parsed for the Webix input control
 - api/link/ui.datepicker_borderless_config.md - used to hide the component borders
+- api/link/ui.datepicker_bottomlabel_config.md - sets a label under a control
+- api/link/ui.datepicker_bottompadding_config.md - sets the bottom offset of the control input
 - api/link/ui.datepicker_click_config.md - click action handler
 - api/link/ui.datepicker_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.datepicker_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.datepicker_css_config.md - the name of a css class that will be applied to the view container
+- api/link/ui.datepicker_datafeed_config.md - 
 - api/link/ui.datepicker_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.datepicker_editable_config.md - allows making datepicker editable, false by default
 - api/ui.datepicker_format_config.md - sets date format in the control
@@ -107,11 +110,12 @@ ui.datepicker
 - api/link/ui.datepicker_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.datepicker_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/ui.datepicker_icon_config.md - sets an icon type
-- api/ui.datepicker_icons_config.md - 
+- api/ui.datepicker_icons_config.md - shows "Today" and "Clear" icons for calendar and datepicker popup
 - api/link/ui.datepicker_id_config.md - the component ID
 - api/link/ui.datepicker_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.datepicker_inputpadding_config.md - padding of text in the input
 - api/link/ui.datepicker_inputwidth_config.md - the width of the input area, or a button's text value area.
+- api/link/ui.datepicker_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.datepicker_label_config.md - the text label of the control
 - api/link/ui.datepicker_labelposition_config.md - positions label above the control
 - api/link/ui.datepicker_labelwidth_config.md - the width of the label
@@ -121,7 +125,7 @@ ui.datepicker
 - api/link/ui.datepicker_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.datepicker_name_config.md - name of the control
 - api/link/ui.datepicker_on_config.md - allows attaching custom handlers to inner events of the component
-- api/link/ui.datepicker_placeholder_config.md - placeholder text for the input
+- api/link/ui.datepicker_placeholder_config.md - placeholder text for the input area
 - api/link/ui.datepicker_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.datepicker_readonly_config.md - configures readonly mode for the input
 - api/link/ui.datepicker_relatedaction_config.md - action to call when value of cell changes
@@ -136,6 +140,7 @@ ui.datepicker
 - api/ui.datepicker_timepicker_config.md - enables optional timepicker in the calendar
 - api/link/ui.datepicker_tooltip_config.md - tooltip for the input
 - api/link/ui.datepicker_type_config.md - the type of the control
+- api/link/ui.datepicker_url_config.md - 
 - api/link/ui.datepicker_validate_config.md - adds validation to the field
 - api/link/ui.datepicker_validateevent_config.md - on which event validation fires
 - api/link/ui.datepicker_value_config.md - sets the initial value for a control

@@ -1,7 +1,7 @@
 ui.multiselect 
 =============
 
-A non-editable combo box with the possibility to select several item at a time.
+A non-editable combo box with the possibility to select several items at a time.
 
 The control combines a non-editable text field with a drop-down list of predefined values. The list is supplied with a customizable 'Select' button to enter selected items to the input. 
 
@@ -83,10 +83,13 @@ Check [multiselect](desktop/controls.md#multiselect) documentation for more deta
 - api/link/ui.multiselect_animate_config.md - defines or disables view change animation.
 - api/link/ui.multiselect_attributes_config.md - sets an hash of HTML input attributes that will be parsed for the Webix input control
 - api/link/ui.multiselect_borderless_config.md - used to hide the component borders
+- api/link/ui.multiselect_bottomlabel_config.md - sets a label under a control
+- api/link/ui.multiselect_bottompadding_config.md - sets the bottom offset of the control input
 - api/link/ui.multiselect_click_config.md - click action handler
 - api/link/ui.multiselect_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.multiselect_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.multiselect_css_config.md - the name of a css class that will be applied to the view container
+- api/link/ui.multiselect_datafeed_config.md - 
 - api/link/ui.multiselect_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.multiselect_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.multiselect_height_config.md - sets the height of the component
@@ -97,9 +100,11 @@ Check [multiselect](desktop/controls.md#multiselect) documentation for more deta
 - api/link/ui.multiselect_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.multiselect_inputpadding_config.md - padding of text in the input
 - api/link/ui.multiselect_inputwidth_config.md - the width of the input area, or a button's text value area.
+- api/link/ui.multiselect_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.multiselect_label_config.md - the text label of the control
 - api/link/ui.multiselect_labelposition_config.md - positions label above the control
 - api/link/ui.multiselect_labelwidth_config.md - the width of the label
+- api/ui.multiselect_master_config.md - 
 - api/link/ui.multiselect_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.multiselect_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.multiselect_minheight_config.md - sets the minimal height for the view
@@ -108,7 +113,7 @@ Check [multiselect](desktop/controls.md#multiselect) documentation for more deta
 - api/link/ui.multiselect_on_config.md - allows attaching custom handlers to inner events of the component
 - api/ui.multiselect_optionwidth_config.md - sets width of a popup list with options
 - api/link/ui.multiselect_options_config.md - defines data items of the drop-down list
-- api/link/ui.multiselect_placeholder_config.md - placeholder text for the input
+- api/link/ui.multiselect_placeholder_config.md - placeholder text for the input area
 - api/link/ui.multiselect_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.multiselect_popupwidth_config.md - width of the popup window
 - api/link/ui.multiselect_readonly_config.md - configures readonly mode for the input
@@ -122,6 +127,7 @@ Check [multiselect](desktop/controls.md#multiselect) documentation for more deta
 - api/link/ui.multiselect_text_config.md - visible text in the related input
 - api/link/ui.multiselect_tooltip_config.md - tooltip for the input
 - api/link/ui.multiselect_type_config.md - the type of the control
+- api/link/ui.multiselect_url_config.md - 
 - api/link/ui.multiselect_validate_config.md - adds validation to the field
 - api/link/ui.multiselect_validateevent_config.md - on which event validation fires
 - api/link/ui.multiselect_value_config.md - sets the initial value for a control

@@ -118,6 +118,7 @@ The control supports all date and time formats. Besides the days of the month, i
 - api/ui.calendar_cellheight_config.md - the height of the cell with day (36)
 - api/link/ui.calendar_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.calendar_css_config.md - the name of a css class that will be applied to the view container
+- api/link/ui.calendar_datafeed_config.md - 
 - api/ui.calendar_date_config.md - sets the initial date of the calendar (particularly month and year).
 - api/ui.calendar_daytemplate_config.md - defines a template for a calendar day cell
 - api/link/ui.calendar_disabled_config.md - indicates whether an item is enabled or not
@@ -148,6 +149,7 @@ The control supports all date and time formats. Besides the days of the month, i
 - api/ui.calendar_timepicker_config.md - enables clock for time selection
 - api/ui.calendar_timepickerheight_config.md - sets height of timepicker area
 - api/ui.calendar_type_config.md - type of calendar view
+- api/link/ui.calendar_url_config.md - 
 - api/ui.calendar_weekheader_config.md - enables/disables additional header with week days (false)
 - api/ui.calendar_weeknumber_config.md - enables/disables additional left column with weeks' numbers (false)
 - api/link/ui.calendar_width_config.md - sets the width of the component

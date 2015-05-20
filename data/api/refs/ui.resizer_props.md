@@ -6,6 +6,7 @@ Properties
 - api/link/ui.resizer_borderless_config.md - used to hide the component borders
 - api/link/ui.resizer_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.resizer_css_config.md - the name of a css class that will be applied to the view container
+- api/link/ui.resizer_datafeed_config.md - 
 - api/link/ui.resizer_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.resizer_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.resizer_height_config.md - sets the height of the component
@@ -20,6 +21,7 @@ Properties
 - api/link/ui.resizer_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.resizer_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
 - api/link/ui.resizer_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
+- api/link/ui.resizer_url_config.md - 
 - api/link/ui.resizer_width_config.md - sets the width of the component
 }}
 
@@ -28,6 +30,7 @@ Properties
 - api/link/ui.resizer_borderless_config.md
 - api/link/ui.resizer_container_config.md
 - api/link/ui.resizer_css_config.md
+- api/link/ui.resizer_datafeed_config.md
 - api/link/ui.resizer_disabled_config.md
 - api/link/ui.resizer_gravity_config.md
 - api/link/ui.resizer_height_config.md
@@ -42,5 +45,6 @@ Properties
 - api/link/ui.resizer_oncontext_config.md
 - api/link/ui.resizer_ondblclick_config.md
 - api/link/ui.resizer_onmousemove_config.md
+- api/link/ui.resizer_url_config.md
 - api/link/ui.resizer_width_config.md
 

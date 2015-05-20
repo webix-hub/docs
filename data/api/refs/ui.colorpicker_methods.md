@@ -20,7 +20,7 @@ Methods
 - api/link/ui.colorpicker_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.colorpicker_getparentview.md - returns the parent view of the component
 - api/link/ui.colorpicker_getpopup.md - returns popup element of the input
-- api/link/ui.colorpicker_gettext.md - 
+- api/link/ui.colorpicker_gettext.md - gets actual text value from the control's input
 - api/link/ui.colorpicker_gettopparentview.md - returns top parent view
 - api/link/ui.colorpicker_getvalue.md - returns the current value of the control
 - api/link/ui.colorpicker_hasevent.md - checks whether the component has the specified event

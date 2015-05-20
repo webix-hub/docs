@@ -6,12 +6,15 @@ Properties
 - api/link/ui.checkbox_animate_config.md - defines or disables view change animation.
 - api/link/ui.checkbox_attributes_config.md - sets an hash of HTML input attributes that will be parsed for the Webix input control
 - api/link/ui.checkbox_borderless_config.md - used to hide the component borders
+- api/link/ui.checkbox_bottomlabel_config.md - sets a label under a control
+- api/link/ui.checkbox_bottompadding_config.md - sets the bottom offset of the control input
 - api/ui.checkbox_checkvalue_config.md - result of getValue for checked checkbox
 - api/link/ui.checkbox_click_config.md - click action handler
 - api/link/ui.checkbox_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.checkbox_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.checkbox_css_config.md - the name of a css class that will be applied to the view container
 - api/ui.checkbox_customcheckbox_config.md - enables/disables custom checkbox in some skins
+- api/link/ui.checkbox_datafeed_config.md - 
 - api/link/ui.checkbox_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.checkbox_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.checkbox_height_config.md - sets the height of the component
@@ -21,6 +24,7 @@ Properties
 - api/link/ui.checkbox_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.checkbox_inputpadding_config.md - padding of text in the input
 - api/link/ui.checkbox_inputwidth_config.md - the width of the input area, or a button's text value area.
+- api/link/ui.checkbox_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.checkbox_label_config.md - the text label of the control
 - api/link/ui.checkbox_labelposition_config.md - positions label above the control
 - api/link/ui.checkbox_labelwidth_config.md - the width of the label
@@ -30,7 +34,7 @@ Properties
 - api/link/ui.checkbox_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.checkbox_name_config.md - name of the control
 - api/link/ui.checkbox_on_config.md - allows attaching custom handlers to inner events of the component
-- api/link/ui.checkbox_placeholder_config.md - placeholder text for the input
+- api/link/ui.checkbox_placeholder_config.md - placeholder text for the input area
 - api/link/ui.checkbox_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.checkbox_readonly_config.md - configures readonly mode for the input
 - api/link/ui.checkbox_relatedaction_config.md - action to call when value of cell changes
@@ -42,6 +46,7 @@ Properties
 - api/link/ui.checkbox_tooltip_config.md - tooltip for the input
 - api/link/ui.checkbox_type_config.md - the type of the control
 - api/ui.checkbox_uncheckvalue_config.md - result of getValue for unchecked checkbox
+- api/link/ui.checkbox_url_config.md - 
 - api/link/ui.checkbox_validate_config.md - adds validation to the field
 - api/link/ui.checkbox_validateevent_config.md - on which event validation fires
 - api/link/ui.checkbox_value_config.md - sets the initial value for a control
@@ -53,12 +58,15 @@ Properties
 - api/link/ui.checkbox_animate_config.md
 - api/link/ui.checkbox_attributes_config.md
 - api/link/ui.checkbox_borderless_config.md
+- api/link/ui.checkbox_bottomlabel_config.md
+- api/link/ui.checkbox_bottompadding_config.md
 - api/ui.checkbox_checkvalue_config.md
 - api/link/ui.checkbox_click_config.md
 - api/link/ui.checkbox_container_config.md
 - api/link/ui.checkbox_content_config.md
 - api/link/ui.checkbox_css_config.md
 - api/ui.checkbox_customcheckbox_config.md
+- api/link/ui.checkbox_datafeed_config.md
 - api/link/ui.checkbox_disabled_config.md
 - api/link/ui.checkbox_gravity_config.md
 - api/link/ui.checkbox_height_config.md
@@ -68,6 +76,7 @@ Properties
 - api/link/ui.checkbox_inputheight_config.md
 - api/link/ui.checkbox_inputpadding_config.md
 - api/link/ui.checkbox_inputwidth_config.md
+- api/link/ui.checkbox_invalidmessage_config.md
 - api/link/ui.checkbox_label_config.md
 - api/link/ui.checkbox_labelposition_config.md
 - api/link/ui.checkbox_labelwidth_config.md
@@ -89,6 +98,7 @@ Properties
 - api/link/ui.checkbox_tooltip_config.md
 - api/link/ui.checkbox_type_config.md
 - api/ui.checkbox_uncheckvalue_config.md
+- api/link/ui.checkbox_url_config.md
 - api/link/ui.checkbox_validate_config.md
 - api/link/ui.checkbox_validateevent_config.md
 - api/link/ui.checkbox_value_config.md

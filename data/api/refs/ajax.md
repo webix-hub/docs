@@ -30,7 +30,7 @@ The lib can execute **get** and **post** requests in sync and async mode. For mo
 - api/ajax_post.md - issues a POST Ajax request to the server
 - api/ajax_put.md - issues a PUT Ajax request to the server
 - api/ajax_response.md - sets response type of the request
-- api/ajax_stringify.md - 
+- api/ajax_stringify.md - converts data object into a string before sending it to server
 - api/ajax_sync.md - 'says' to send requests synchronously
 }}
 

@@ -37,8 +37,8 @@ However, you can catch Webix **onBeforeAjax** event to modify ANY Ajax request o
 Sending Headers
 }}
 ~~~js
-webix.callEvent("onBeforeAjax", function(mode, url, data, request){
- 	request.setRequestHeader("Content-type","application/json");
+webix.attachEvent("onBeforeAjax", function(mode, url, data, request, headers){
+  headers["Content-type"]= "application/json";
 })
 ~~~
 
@@ -68,7 +68,8 @@ webix.ajax("data/load.php",function (text,data){
 });
 ~~~
 
-For setting the necessary **serverside response** manually, [see the dedicated article](desktop/custom_serverside.md#response). As to [Server Side Connector](desktop/dataconnector.md), they return data in JSON or XML format depending 
+For setting the necessary **serverside response** manually, [see the dedicated article](desktop/custom_serverside.md#response).
+As to [Server Side Connector](desktop/dataconnector.md), they return data in JSON or XML format depending 
 on connector type. 
 
 Ajax loading allows **passing params to serverside script** as GET request:

@@ -7,6 +7,7 @@ Properties
 - api/ui.colorboard_cols_config.md - sets the number of columns in the palette
 - api/link/ui.colorboard_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.colorboard_css_config.md - the name of a css class that will be applied to the view container
+- api/link/ui.colorboard_datafeed_config.md - 
 - api/link/ui.colorboard_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.colorboard_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.colorboard_height_config.md - sets the height of the component
@@ -22,6 +23,7 @@ Properties
 - api/ui.colorboard_palette_config.md - sets palette colors
 - api/ui.colorboard_rows_config.md - sets the number of rows in the palette
 - api/ui.colorboard_template_config.md - defines a custom template that will be applied to the component
+- api/link/ui.colorboard_url_config.md - 
 - api/ui.colorboard_value_config.md - currently selected color
 - api/link/ui.colorboard_width_config.md - sets the width of the component
 }}
@@ -32,6 +34,7 @@ Properties
 - api/ui.colorboard_cols_config.md
 - api/link/ui.colorboard_container_config.md
 - api/link/ui.colorboard_css_config.md
+- api/link/ui.colorboard_datafeed_config.md
 - api/link/ui.colorboard_disabled_config.md
 - api/link/ui.colorboard_gravity_config.md
 - api/link/ui.colorboard_height_config.md
@@ -47,6 +50,7 @@ Properties
 - api/ui.colorboard_palette_config.md
 - api/ui.colorboard_rows_config.md
 - api/ui.colorboard_template_config.md
+- api/link/ui.colorboard_url_config.md
 - api/ui.colorboard_value_config.md
 - api/link/ui.colorboard_width_config.md
 

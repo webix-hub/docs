@@ -7,6 +7,7 @@ Properties
 - api/link/ui.tooltip_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.tooltip_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.tooltip_css_config.md - the name of a css class that will be applied to the view container
+- api/link/ui.tooltip_datafeed_config.md - 
 - api/link/ui.tooltip_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.tooltip_dx_config.md - the left offset of the tooltip from the mouse pointer
 - api/ui.tooltip_dy_config.md - the top offset of the tooltip from the mouse pointer
@@ -20,6 +21,7 @@ Properties
 - api/link/ui.tooltip_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.tooltip_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.tooltip_template_config.md - the component template
+- api/link/ui.tooltip_url_config.md - 
 - api/link/ui.tooltip_width_config.md - sets the width of the component
 }}
 
@@ -29,6 +31,7 @@ Properties
 - api/link/ui.tooltip_container_config.md
 - api/link/ui.tooltip_content_config.md
 - api/link/ui.tooltip_css_config.md
+- api/link/ui.tooltip_datafeed_config.md
 - api/link/ui.tooltip_disabled_config.md
 - api/ui.tooltip_dx_config.md
 - api/ui.tooltip_dy_config.md
@@ -42,5 +45,6 @@ Properties
 - api/link/ui.tooltip_minwidth_config.md
 - api/link/ui.tooltip_on_config.md
 - api/link/ui.tooltip_template_config.md
+- api/link/ui.tooltip_url_config.md
 - api/link/ui.tooltip_width_config.md
 

@@ -11,7 +11,7 @@ Others
 - api/link/ui.barcode_$width_other.md - current width of the view
 - api/link/ui.barcode_config_other.md - all options from initial component configuration
 - api/link/ui.barcode_name_other.md - indicates the name of the component (a read-only property)
-- api/ui.barcode_types_other.md - 
+- api/ui.barcode_types_other.md - the collection of barcode types
 }}
 
 @index:

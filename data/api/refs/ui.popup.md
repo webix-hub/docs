@@ -68,6 +68,7 @@ The window can contain any content, be modal or modeless. The main use case - di
 
 {{api
 - api/link/ui.popup_onafterscroll_event.md - occurs when some webix view has been scrolled
+- api/link/ui.popup_onbeforeshow_event.md - fires right after show() method is called for the window (popup) and before the window is shown
 - api/link/ui.popup_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.popup_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.popup_onhide_event.md - fires when window is hidden
@@ -96,6 +97,7 @@ The window can contain any content, be modal or modeless. The main use case - di
 - api/link/ui.popup_borderless_config.md - used to hide the component borders
 - api/link/ui.popup_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.popup_css_config.md - the name of a css class that will be applied to the view container
+- api/link/ui.popup_datafeed_config.md - 
 - api/link/ui.popup_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.popup_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.popup_head_config.md - sets the view header
