@@ -41,4 +41,3 @@ Start
 - desktop/basic_tasks.md
 - api/toc/ui.md
 - migration.md
-- dot_net/index.md

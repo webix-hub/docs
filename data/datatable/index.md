@@ -13,7 +13,7 @@ DataTable
 and convenient programming model for displaying data in a scrollable and sortable table.
 It&#146;s a powerful yet easy-to-use  control <br> that supports different data sources (xml, json, csv, jsarray, html tables) 
 and has various possibilities (filtering, sorting, pagination, resizing, styling, copying etc.) 
-still being  very fast handling thousands of records. <a href="datatable/overview.md"/> Read more...</a>
+still being  very fast handling  thousands of records.<a href="datatable/overview.md"> Read more...</a>
         
 <img style="display:block; margin-left:auto;margin-right:auto;" src="datatable/front_datatable.png"/>
 

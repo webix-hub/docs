@@ -1,2 +1,0 @@
-Webix Proxy Objects
-====================
