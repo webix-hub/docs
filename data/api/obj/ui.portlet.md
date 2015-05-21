@@ -1,7 +1,7 @@
 
 {{memo a movable layout component that can contain other components inside}}
 
-Portlet can contain any content and be dragged to any position. It allows placing several components on the page at once. 
+Portlet can include any content and be dragged to any position. It allows placing several components on the page at once. 
 Check [portlet](desktop/portlet.md) documentation for more detailed description.
 
 ### Constructor

@@ -191,6 +191,7 @@ The component serves as the base class that defines properties, methods, and eve
 - api/link/ui.list_minheight_config.md - sets the minimal height for the view
 - api/link/ui.list_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.list_mouseeventdelay_config.md - the delay between a real mouse action and invoking the related events
+- api/link/ui.list_multiselect_config.md - 
 - api/link/ui.list_navigation_config.md - activates the selection keyboard navigation
 - api/link/ui.list_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.list_onclick_config.md - attaches a click behavior for component items with the specified CSS class.

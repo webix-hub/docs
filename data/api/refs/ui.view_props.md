@@ -16,7 +16,7 @@ Properties
 - api/link/ui.view_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.view_minheight_config.md - sets the minimal height for the view
 - api/link/ui.view_minwidth_config.md - sets the minimal width for the view
-- api/ui.view_url_config.md - 
+- api/link/ui.view_url_config.md - 
 - api/link/ui.view_width_config.md - sets the width of the component
 }}
 
@@ -35,6 +35,6 @@ Properties
 - api/link/ui.view_maxwidth_config.md
 - api/link/ui.view_minheight_config.md
 - api/link/ui.view_minwidth_config.md
-- api/ui.view_url_config.md
+- api/link/ui.view_url_config.md
 - api/link/ui.view_width_config.md
 

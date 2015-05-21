@@ -190,6 +190,7 @@ $("#mydiv").webix_organogram({
 - api/link/ui.organogram_minheight_config.md - sets the minimal height for the view
 - api/link/ui.organogram_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.organogram_mouseeventdelay_config.md - the delay between a real mouse action and invoking the related events
+- api/link/ui.organogram_multiselect_config.md - 
 - api/link/ui.organogram_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.organogram_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
 - api/link/ui.organogram_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>

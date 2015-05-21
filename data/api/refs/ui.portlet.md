@@ -2,8 +2,29 @@ ui.portlet
 =============
 
 
+{{memo A movable layout component that can contain other components inside. }}
 
+Portlet can include any content and be dragged to any position. It allows placing several components on the page at once. 
+Check [portlet](desktop/portlet.md) documentation for more detailed description.
 
+### Constructor
+
+~~~js
+	var portlet = webix.ui({
+		view:"portlet", 
+		container:"mydiv", 
+		...config options goes here..
+	})
+	//or, in case of jQuery
+	$("#mydiv").webix_portlet({
+		...config options goes here..
+	});
+~~~
+
+### Where to start
+
+- [Overview of Portlet Widget](desktop/portlet.md)
+- [Samples](http://docs.webix.com/samples/60_pro/09_portlet/index.html)
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.layout.md">ui.layout</a>, <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
@@ -33,8 +54,8 @@ ui.portlet
 - api/link/ui.portlet_isenabled.md - checks whether the view is enabled
 - api/link/ui.portlet_isvisible.md - checks whether the view is visible
 - api/link/ui.portlet_mapevent.md - routes events from one object to another
-- api/ui.portlet_markdroparea.md - 
-- api/ui.portlet_moveportlet.md - 
+- api/ui.portlet_markdroparea.md - renders marker on the area where a portlet can be dropped during drag-n-drop
+- api/ui.portlet_moveportlet.md - moves portlet to the marked area
 - api/link/ui.portlet_reconstruct.md - rebuilds the layout
 - api/link/ui.portlet_removeview.md - removes view from layout-like component
 - api/link/ui.portlet_resize.md - adjusts the view to a new size
@@ -59,18 +80,19 @@ ui.portlet
 
 {{api
 - api/link/ui.portlet_animate_config.md - defines or disables view change animation.
-- api/ui.portlet_body_config.md - 
+- api/ui.portlet_body_config.md - defines the portlet content (a view or some HTML)
 - api/link/ui.portlet_borderless_config.md - used to hide the component borders
 - api/link/ui.portlet_cols_config.md - array of views objects arranged horizontally
 - api/link/ui.portlet_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.portlet_css_config.md - the name of a css class that will be applied to the view container
+- api/link/ui.portlet_datafeed_config.md - 
 - api/link/ui.portlet_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.portlet_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.portlet_height_config.md - sets the height of the component
 - api/link/ui.portlet_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.portlet_id_config.md - the component ID
 - api/link/ui.portlet_isolate_config.md - masks IDs of all inner element
-- api/ui.portlet_layouttype_config.md - 
+- api/ui.portlet_layouttype_config.md - defines the borders of layout that will be created after drag-n-drop operation is finished
 - api/link/ui.portlet_margin_config.md - defines the space around elements (applies the specified value to all elements)
 - api/link/ui.portlet_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.portlet_maxwidth_config.md - sets the maximum width for the view
@@ -96,7 +118,7 @@ ui.portlet
 
 
 {{api
-- api/ui.portlet_$drag_other.md - 
+- api/ui.portlet_$drag_other.md - method called when drag operation initiated
 - api/ui.portlet_$dragdestroy_other.md - 
 - api/ui.portlet_$dragpos_other.md - 
 - api/link/ui.portlet_$getsize_other.md - returns the current size of the component

@@ -24,8 +24,8 @@ Methods
 - api/link/ui.portlet_isenabled.md - checks whether the view is enabled
 - api/link/ui.portlet_isvisible.md - checks whether the view is visible
 - api/link/ui.portlet_mapevent.md - routes events from one object to another
-- api/ui.portlet_markdroparea.md - 
-- api/ui.portlet_moveportlet.md - 
+- api/ui.portlet_markdroparea.md - renders marker on the area where a portlet can be dropped during drag-n-drop
+- api/ui.portlet_moveportlet.md - moves portlet to the marked area
 - api/link/ui.portlet_reconstruct.md - rebuilds the layout
 - api/link/ui.portlet_removeview.md - removes view from layout-like component
 - api/link/ui.portlet_resize.md - adjusts the view to a new size

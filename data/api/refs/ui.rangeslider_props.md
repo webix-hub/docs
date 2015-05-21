@@ -42,7 +42,7 @@ Properties
 - api/link/ui.rangeslider_required_config.md - marks field as required
 - api/ui.rangeslider_separator_config.md - a delimiter for separating values in a range, comma by default
 - api/link/ui.rangeslider_step_config.md - step of slider
-- api/ui.rangeslider_stringresult_config.md - 
+- api/ui.rangeslider_stringresult_config.md - if the parameter is set to true, the method getValue returns data as string (otherwise, as object)
 - api/link/ui.rangeslider_suggest_config.md - links suggest list to the input
 - api/link/ui.rangeslider_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/link/ui.rangeslider_template_config.md - the component template
