@@ -1,7 +1,7 @@
-onFileUpload
+onFileUploadError
 =============
 
-@short: fires the moment file uploading ends
+@short: fires in case of serverside error during uploading
 
 @params:
 
@@ -17,7 +17,7 @@ $$("uploader1").attachEvent("onFileUpload", function(item, response){
 
 @relatedapi:
 	api/ui.uploader_onuploadcomplete_event.md
-    api/ui.uploader_onfileuploaderror_event.md
+    api/ui.uploader_onfileupload_event.md
 @related:
 	desktop/file_upload.md
 	desktop/apionly_uploader.md
@@ -26,4 +26,8 @@ $$("uploader1").attachEvent("onFileUpload", function(item, response){
 @template:	api_event
 @descr:
 
+The events fires only when serverside response contains **error** status, like:
 
+~~~php
+echo "{ status:'error' }";
+~~~

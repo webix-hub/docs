@@ -1,12 +1,12 @@
 Migration to latest Webix version
 =================================
 
-Webix 2.1 -> 2.3
+Webix 2.2 -> 2.3
 -----------------
 
 ###Parse format 
 
-In version 2.2 the default [parseFormat](api/i18n_parseformat_other.md) was **"%Y-%m-%d"** while from version 2.3 it becomes **"%Y-%m-%d %H:%i"**. 
+In version 2.2 the default [parseFormat](api/i18n_parseformat_other.md) was *"%Y-%m-%d"* while from version 2.3 it becomes *"%Y-%m-%d %H:%i"*. 
 
 It can be altered [within current locale](desktop/localization.md) as: 
 
@@ -14,6 +14,27 @@ It can be altered [within current locale](desktop/localization.md) as:
 webix.i18n.parseFormat = "%Y-%m-%d";
 webix.i18n.setLocate();
 ~~~
+
+### Sizing in layout
+
+In Webix 2.2 layout height and width were including padding and margin
+~~~
+//in Webix 2.2 will result in 140px height ( 20 + 100 + 20)
+//in Webix 2.3 will result in 100px height
+webix.ui({
+	view:"layout", padding:20, height:100, rows:[{}]
+})
+~~~
+
+In webix 2.3 size of layout is a full size, that already includes padding and margin. The same code as above one will result in layout with 100px height. If you preffer the old behavior, you can move height settings in the inner view
+
+~~~
+//in both Webix 2.2 and Webix 2.3 will result in 140px height 
+webix.ui({
+	view:"layout", padding:20, rows:[{ height:100 }]
+})
+~~~
+
 
 
 Webix 2.1 -> 2.2

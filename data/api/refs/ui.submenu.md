@@ -58,7 +58,7 @@ The component is a compliment to the menu component and not intended for direct 
 - api/link/ui.submenu_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.submenu_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.submenu_getitem.md - gets the object of the data item with the specified id
-- api/link/ui.submenu_getitemnode.md - returns html element of the item
+- api/link/ui.submenu_getitemnode.md - returns HTML element of the item
 - api/link/ui.submenu_getlastid.md - returns the id of the last item
 - api/link/ui.submenu_getmenu.md - gets object of a menu/submenu where an item is located
 - api/link/ui.submenu_getmenuitem.md - search for menu item in submenus

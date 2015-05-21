@@ -8,7 +8,7 @@ onChange
 @example: 
 $$("my_input").attachEvent("onChange", function(newv, oldv){
     webix.message("Value changed from: "+oldv+" to: "+newv);
-}
+});
 	
 @relatedsample:
 	13_form/02_api/07_onchange_event.html

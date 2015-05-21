@@ -112,7 +112,7 @@ It looks like this:
 
 ~~~js
 id	7
-title	The Shaushenk Redemption
+title	The Shawshank Redemption
 webix_operation	delete
 ~~~
 

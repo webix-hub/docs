@@ -9,7 +9,7 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
 	<tbody>
 	<tr>
 		<td id="design" class='topics'>
-		    <h4 id='ui' onclick="displaySubList('design')">
+		    <h4 id='ui'>
 		        Designing User Interface
 		    </h4>
 		    <ul id="design_sublist">
@@ -18,10 +18,10 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
                 <li>desktop/markup_init.md</li>
             </ul>
 		</td>
-		<td class='topic_description' onclick="displaySubList('design')">Describes different ways you can follow to design and build the user interface for your application.</td>
+		<td class='topic_description'>Describes different ways you can follow to design and build the user interface for your application.</td>
 	</tr>
 	<tr>
-		<td id="data" class='topics' onclick="displaySubList(event, this.id)">
+		<td id="data" class='topics'>
 		    <h4>
 		        Loading and Storing Data
 		    </h4>
@@ -34,10 +34,10 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
                     <li>helpers/ajax_operations.md</li>
             </ul>
         </td>
-		<td class='topic_description' onclick="displaySubList(event,'data')">Teaches you how to load data into a component using different data sources, formats and techniques.</td>
+		<td class='topic_description'>Teaches you how to load data into a component using different data sources, formats and techniques.</td>
 	</tr>
 	<tr>
-		<td id="manipulations" class='topics' onclick="displaySubList(event,this.id)">
+		<td id="manipulations" class='topics'>
 		    <h4>
 		        Configuring Components
 		    </h4>
@@ -54,10 +54,10 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
                     <li><a href="desktop/localization.md">Localization</a></li>
             </ul>
         </td>
-		<td class='topic_description' onclick="displaySubList(event,'manipulations')">Says about various means you've got to configure a component initially and to dynamically  change this configuration later: sizing/ resizing techniques, localization, changing configuration properties etc.</td>
+		<td class='topic_description'>Says about various means you've got to configure a component initially and to dynamically  change this configuration later: sizing/ resizing techniques, localization, changing configuration properties etc.</td>
 	</tr>
 	<tr>
-    	<td id="operations" class='topics' onclick="displaySubList( this.id)">
+    	<td id="operations" class='topics'>
     	    <h4>
     	        Managing Data in a Component
     	    </h4>
@@ -77,10 +77,10 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
                     <li>desktop/clipboard.md</li>
             </ul>
         </td>
-        <td class='topic_description' onclick="displaySubList('operations')">Covers techniques for performing general and advanced operations under data, such as adding, deleting, sorting, filtering etc.</td>
+        <td class='topic_description'>Covers techniques for performing general and advanced operations under data, such as adding, deleting, sorting, filtering etc.</td>
     </tr>
 	<tr>
-		<td id="styling" class='topics' onclick="displaySubList(event,this.id)">
+		<td id="styling" class='topics'>
 		    <h4>
 		        Styling and Animation
 		    </h4>
@@ -92,10 +92,10 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
                    <li>desktop/borders.md</li>
             </ul>
         </td>
-		<td class='topic_description' onclick="displaySubList(event,'styling')">Says how to style Webix application: styling techniques, css classes used in components, animation and visual effects. </td>
+		<td class='topic_description'>Says how to style Webix application: styling techniques, css classes used in components, animation and visual effects. </td>
 	</tr>
 	<tr>
-    	<td id="interactions" class='topics' onclick="displaySubList(event,this.id)">
+    	<td id="interactions" class='topics'>
     	    <h4>
     	        Interacting with Users
     	    </h4>
@@ -111,10 +111,10 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
                     <li><a href="desktop/active_content.md">Adding Active Elements to Components</a></li>
             </ul>
         </td>
-        <td class='topic_description' onclick="displaySubList('interactions')">Describes various ways you can communicate with users: events, message boxes, forms and their controls</td>
+        <td class='topic_description'>Describes various ways you can communicate with users: events, message boxes, forms and their controls</td>
     </tr>
     <tr>
-        <td id="internet" class='topics' onclick="displaySubList(this.id)">
+        <td id="internet" class='topics'>
             <h4>
                 Web and Internet
             </h4>
@@ -124,10 +124,10 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
                     <li>desktop/app_state.md</li>
             </ul>
         </td>
-        <td class='topic_description' onclick="displaySubList('internet')">Focuses on  how to provide offline support for an app and save its state.</td>
+        <td class='topic_description'>Focuses on  how to provide offline support for an app and save its state.</td>
     </tr>
     <tr>
-        <td id="extending" class='topics' onclick="displaySubList(this.id)">
+        <td id="extending" class='topics'>
             <h4>
                 Extending components
             </h4>
@@ -136,10 +136,10 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
                     <li>desktop/custom_component.md</li>
             </ul>
         </td>
-        <td class='topic_description' onclick="displaySubList('extending')">If the wealth of provided functionality is not enough for you, the library provides flexible means for extending existing components.</td>
+        <td class='topic_description'>If the wealth of provided functionality is not enough for you, the library provides flexible means for extending existing components.</td>
     </tr>
     <tr>
-        <td id="thirdparty" class='topics' onclick="displaySubList(this.id)">
+        <td id="thirdparty" class='topics'>
             <h4>
                 Third Party Integration
             </h4>
@@ -155,11 +155,11 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
                     <li><a href="desktop/custom_integration.md">How Integrate any Thirdparty Tool Using a Custom Component</a></li>
             </ul>
         </td>
-        <td class='topic_description' onclick="displaySubList('thirdparty')">Says which third-party libraries and how can be integrated with Webix components</td>
+        <td class='topic_description'>Says which third-party libraries and how can be integrated with Webix components</td>
     </tr>
 
     <tr>
-        <td id="thirdparty" class='topics' onclick="displaySubList(this.id)">
+        <td id="thirdparty" class='topics'>
             <h4>
                 Auxiliary Resources
             </h4>
@@ -172,17 +172,10 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
                     <li>helpers/date_formatting_methods.md</li>
             </ul>
         </td>
-        <td class='topic_description' onclick="displaySubList('thirdparty')">Extra goodies in the Webix library</td>
+        <td class='topic_description'>Extra goodies in the Webix library</td>
     </tr>
 	</tbody>
 </table>
-
-<script type="text/javascript">
-function displaySubList(currentList){
-    var list = document.getElementById(currentList);
-    list.className = list.className.replace(/active/,"").replace(/[ ]{2,}/," ")+" active";
-};
-</script>
 
 @index:
 - desktop/designing_user_interface.md

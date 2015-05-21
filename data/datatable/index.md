@@ -40,7 +40,7 @@ still being  very fast handling  thousands of records.<a href="datatable/overvie
                 <li><a href="desktop/active_content.md">Adding Active Elements to Datatable Cells</a></li>
             </ul>
 		</td>
-		<td class='topic_description' onclick="displaySubList(event,'data')">Teaches you how to define the common structure and content of DataTable: columns, headers, dimensions and data inside it.</td>
+		<td class='topic_description'>Teaches you how to define the common structure and content of DataTable: columns, headers, dimensions and data inside it.</td>
 	</tr>
 	<tr>
 		<td class='topics'>
@@ -57,7 +57,7 @@ still being  very fast handling  thousands of records.<a href="datatable/overvie
 				<li><a href="datatable/sorting.md">Sorting</a></li>
             </ul>
         </td>
-		<td class='topic_description' onclick="displaySubList(event,'data')">Discusses operations you can perform on the data in DataTable: filtering and sorting techniques, inline editing, work with the clipboard, etc.</td>
+		<td class='topic_description'>Discusses operations you can perform on the data in DataTable: filtering and sorting techniques, inline editing, work with the clipboard, etc.</td>
 	</tr>
 	<tr>
 		<td class='topics'>
@@ -71,7 +71,7 @@ still being  very fast handling  thousands of records.<a href="datatable/overvie
 				<li><a href="datatable/frozen_columns.md">Split mode or 'frozen columns'</a></li>
             </ul>
         </td>
-		<td class='topic_description' onclick="displaySubList(event,'manipulations')">Focuses on how to fine-tune the DataTable appearance: applying templates to the data, 'freezing' columns, redefining the default component CSS classes, etc.</td>
+		<td class='topic_description'>Focuses on how to fine-tune the DataTable appearance: applying templates to the data, 'freezing' columns, redefining the default component CSS classes, etc.</td>
 	</tr>
 	<tr>
     	<td class='topics'>
@@ -84,7 +84,7 @@ still being  very fast handling  thousands of records.<a href="datatable/overvie
 				<li><a href="desktop/serverside.md">Server-side solutions</a></li>
             </ul>
         </td>
-        <td class='topic_description' onclick="displaySubList('operations')">Says about libraries and platforms you can integrate DataTable with.</td>
+        <td class='topic_description'>Says about libraries and platforms you can integrate DataTable with.</td>
     </tr>
 	<tr>
 		<td class='topics'>
@@ -96,7 +96,7 @@ still being  very fast handling  thousands of records.<a href="datatable/overvie
 				<li><a href="datatable/export.md">PDF</a></li>
             </ul>
         </td>
-		<td class='topic_description' onclick="displaySubList(event,'styling')">Describes the formats and procedures you've got to import/export the DataTable's data. </td>
+		<td class='topic_description'>Describes the formats and procedures you've got to import/export the DataTable's data. </td>
 	</tr>
 	</tbody>
 </table>

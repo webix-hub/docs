@@ -254,7 +254,13 @@ html, .footer{
     background: url("common/gray_logo.png") 0 0 no-repeat;
 }
 
-
+.toc-pro a:before {
+  margin-top: 2px;
+  margin-right:12px;
+  line-height: 12px;
+  background: #E74C3C;
+  padding: 0px 3px 0px 3px;
+}
 
 /*index page*/
 .index-lamp, .index-lamp-on, .index-pc, .index-board{

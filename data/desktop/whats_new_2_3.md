@@ -3,8 +3,9 @@ Version 2.3
 
 ## Breaking changes
 
-Default [parse format](api/i18n_parseformat_other.md) is changed for datepicker and calendar controls from **"%Y-%m-%d"** to **"%Y-%m-%d %H:%i"**.
-Both of them can be altered within current locale. 
+- Default [parse format](api/i18n_parseformat_other.md) is changed for datepicker and calendar controls from *"%Y-%m-%d"* to *"%Y-%m-%d %H:%i"*. Both of them can be altered within current locale. 
+
+- Sizing of layouts changed. In Webix 2.2 and earlier height and width on layout were not including padding and margins. Starting from Webix 2.3 height and width of layout is a full size of layout, including all margings and paddings.
 
 Check [migration guide](migration.md) for more details.
 
@@ -22,7 +23,7 @@ Check [migration guide](migration.md) for more details.
 - [getMenu](api/ui.menu_getmenu.md) method for menu to get current menu/submenu object
 - [parseTimeFormat](api/i18n_parsetimeformat_other.md) is added as **"%H:%i"** by default to parse "time" strings
 - badges and icons for list and menus (and views based on them)
-- barges for buttons
+- badges for buttons
 - placeholder for richselect
 - [spacer element](desktop/menu.md#initialization) in menu view
 - ability to provide [submenu configuration](desktop/menu.md#workingwithmenuitems) in submenuConfig property of the topmost menu

@@ -30,7 +30,7 @@ Methods
 - api/link/ui.organogram_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.organogram_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.organogram_getitem.md - gets the object of the data item with the specified id
-- api/link/ui.organogram_getitemnode.md - returns html element of the item
+- api/link/ui.organogram_getitemnode.md - returns HTML element of the item
 - api/link/ui.organogram_getlastid.md - returns the id of the last item
 - api/link/ui.organogram_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.organogram_getnextsiblingid.md - returns the id of the next sibling of the specified node

@@ -17,7 +17,7 @@ As in Angular, controller directives are included into the app as an attribute o
 
 ##Loading data via Controller
 
-Scope valiables are accessed by standard pattern exept for data loading. To populate the datatable with data from controller **$scope**, use **webix-data** directive. 
+Scope variables are accessed by standard pattern except for data loading. To populate the datatable with data from controller **$scope**, use **webix-data** directive. 
 It is used in a div that initiates this datatable. 
 
 The code below gets *$scope.records* and parses them into the datatable:

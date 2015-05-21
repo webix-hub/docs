@@ -30,7 +30,7 @@ Methods
 - api/link/ui.menu_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.menu_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.menu_getitem.md - gets the object of the data item with the specified id
-- api/link/ui.menu_getitemnode.md - returns html element of the item
+- api/link/ui.menu_getitemnode.md - returns HTML element of the item
 - api/link/ui.menu_getlastid.md - returns the id of the last item
 - api/ui.menu_getmenu.md - gets object of a menu/submenu where an item is located
 - api/ui.menu_getmenuitem.md - search for menu item in submenus

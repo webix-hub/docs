@@ -1,7 +1,10 @@
 Material Design Skin
 ======================
 
-You can see live demo by [this link](http://webix.com/demos/material/admin-app/index.html#!/app/forms). Skin will work with Webix 2.3+.
+Skin works with Webix 2.3+. It is not inluded in the package and should be
+[downloaded from GitHub](https://github.com/webix-hub/material-design-skin).
+
+You can see live demo by [this link](http://webix.com/demos/material/admin-app/index.html#!/app/forms). 
 
 How to use
 ------------

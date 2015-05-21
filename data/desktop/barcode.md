@@ -8,7 +8,7 @@ Barcode
 
 ##Overview
 
-The Barcode widget represents text value in a machine-readable format by varying the widths and spacings of parallel lines. 
+The Barcode widget represents text values in a machine-readable format by varying the widths and spacing of parallel lines. 
 The widget uses Canvas for lines rendering.
 <br><br>
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/barcode_front.png">

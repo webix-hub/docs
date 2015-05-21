@@ -2,10 +2,10 @@ getItemNode
 =============
 
 @short:
-	returns html element of the item
+	returns HTML element of the item
 
 @params:
-- id		id		id of the item
+- id		id		data item ID
 
 @example:
 var node = mylist.getItemNode(123);

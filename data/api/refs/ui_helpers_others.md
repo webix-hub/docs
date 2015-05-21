@@ -6,8 +6,5 @@ Others
 - api/ui_zindexbase_other.md - maximum used z-index
 }}
 
-@index:
-- api/ui_scrollsize_other.md
-- api/ui_zindexbase_other.md
 
 

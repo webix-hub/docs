@@ -10,7 +10,7 @@ Version 2.0
 - [pro] PRO edition includes [Pivot component](desktop/pivot.md)
 - [pro] [Multiselect](desktop/controls.md#multiselect) and [multitext](desktop/controls.md#multitext) inputs
 - [pro] [Advanced editors](desktop/edit.md) for DataTable and Property views 
-- [pro] [Datasuggest](desktop/datasuggest) and [Gridsuggest](desktop/gridsuggest.md) views for form controls and editing;
+- [pro] [Datasuggest](desktop/datasuggest.md) and [Gridsuggest](desktop/gridsuggest.md) views for form controls and editing;
 - [pro] [Colspans and Rowspans in DataTable](datatable/rowspans_colspans.md)
 - [pro] [Column menu](datatable/headermenu.md) in DataTable
 - [pro] [Grouped columns](datatable/columns_configuration.md#groupingcolumns) in DataTable

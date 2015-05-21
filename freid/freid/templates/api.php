@@ -108,7 +108,7 @@ ob_start();
 {{api
 <?php
 	for ($i=0; $i<sizeof($others); $i++)
-		echo "- api/".$others[$i]["owner"]."_".strtolower($others[$i]["name"])."_other.md - ".$others[$i]["descr"]."\r\n";
+		echo "- api/".$others[$i]["owner"]."_".str_replace("-", "_", strtolower($others[$i]["name"]))."_other.md - ".$others[$i]["descr"]."\r\n";
 ?>
 }}
 
@@ -215,14 +215,14 @@ Others
 {{api
 <?php
 	for ($i=0; $i<sizeof($others); $i++)
-		echo "- api/".$others[$i]["owner"]."_".strtolower($others[$i]["name"])."_other.md - ".$others[$i]["descr"]."\r\n";
+		echo "- api/".$others[$i]["owner"]."_".str_replace("-", "_", strtolower($others[$i]["name"]))."_other.md - ".$others[$i]["descr"]."\r\n";
 ?>
 }}
 
 @index:
 <?php
 	for ($i=0; $i<sizeof($others); $i++)
-		echo "- api/".$others[$i]["owner"]."_".strtolower($others[$i]["name"])."_other.md\r\n";
+		echo "- api/".$others[$i]["owner"]."_".str_replace("-", "_", strtolower($others[$i]["name"]))."_other.md\r\n";
 ?>
 
 
