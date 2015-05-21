@@ -2,7 +2,7 @@ Others
 =======
 
 {{api
-- api/ui.portlet_$drag_other.md - 
+- api/ui.portlet_$drag_other.md - method called when drag operation initiated
 - api/ui.portlet_$dragdestroy_other.md - 
 - api/ui.portlet_$dragpos_other.md - 
 - api/link/ui.portlet_$getsize_other.md - returns the current size of the component

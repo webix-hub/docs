@@ -27,6 +27,7 @@ Properties
 - api/link/ui.dataview_minheight_config.md - sets the minimal height for the view
 - api/link/ui.dataview_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.dataview_mouseeventdelay_config.md - the delay between a real mouse action and invoking the related events
+- api/link/ui.dataview_multiselect_config.md - 
 - api/link/ui.dataview_navigation_config.md - activates the selection keyboard navigation
 - api/link/ui.dataview_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.dataview_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
@@ -77,6 +78,7 @@ Properties
 - api/link/ui.dataview_minheight_config.md
 - api/link/ui.dataview_minwidth_config.md
 - api/link/ui.dataview_mouseeventdelay_config.md
+- api/link/ui.dataview_multiselect_config.md
 - api/link/ui.dataview_navigation_config.md
 - api/link/ui.dataview_on_config.md
 - api/link/ui.dataview_onclick_config.md

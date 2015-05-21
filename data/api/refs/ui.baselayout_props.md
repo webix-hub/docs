@@ -20,7 +20,7 @@ Properties
 - api/link/ui.baselayout_on_config.md - allows attaching custom handlers to inner events of the component
 - api/ui.baselayout_responsive_config.md - enables responsive mode for horizontal layout
 - api/ui.baselayout_rows_config.md - array of views objects arranged vertically
-- api/ui.baselayout_url_config.md - 
+- api/link/ui.baselayout_url_config.md - 
 - api/ui.baselayout_visiblebatch_config.md - sets the batch that will be shown initially
 - api/link/ui.baselayout_width_config.md - sets the width of the component
 }}
@@ -44,7 +44,7 @@ Properties
 - api/link/ui.baselayout_on_config.md
 - api/ui.baselayout_responsive_config.md
 - api/ui.baselayout_rows_config.md
-- api/ui.baselayout_url_config.md
+- api/link/ui.baselayout_url_config.md
 - api/ui.baselayout_visiblebatch_config.md
 - api/link/ui.baselayout_width_config.md
 

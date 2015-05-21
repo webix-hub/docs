@@ -35,7 +35,7 @@ webix.ui({
 Moving portlets
 --------------
 
-You can move portlets by the handler. While dragging a portlet, possible positions for dropping will be defined by blur.
+You can move portlets by the handler. While dragging a portlet, possible positions for dropping are defined by highlighting.
 A portlet can be placed as a column or as a row.
 
 <img src="desktop/portlet_moving.png">
@@ -106,5 +106,34 @@ webix.ui({
 
 {{sample 60_pro/09_portlet/05_one_direction.html}}
 
+##Adding other components
+
+It's very easy to add other component into a portlet. All you need to do is to specify the view name, data source and any other necessary properties in the portlet's body:
+
+~~~js
+webix.ui({
+	container:"divA",
+	type:"space",
+	rows:[
+		{ template:"Only X-snap here", type:"header"},
+		{ type:"wide", cols:[
+			{ view:"portlet", mode:"cols", body:{
+				view:"tree", data:smalltreedata
+			}},
+			{ view:"portlet", mode:"cols", body:{
+				view:"list", data:small_film_values_set, select:true, autoheight:true
+			}},
+			{ view:"portlet", mode:"cols", body:{
+				view:"datatable", data:small_film_set, autoConfig:true, autoheight:true
+			}},
+		]
+		}
+	]
+});
+~~~
+
+<img src="desktop/portlet_adding_components.png">
+
+{{sample 60_pro/09_portlet/04_drag_component.html}}
 
 @edition:pro

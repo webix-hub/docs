@@ -36,6 +36,7 @@ Properties
 - api/link/ui.submenu_modal_config.md - switches window modality
 - api/link/ui.submenu_mouseeventdelay_config.md - the delay between a real mouse action and invoking the related events
 - api/link/ui.submenu_move_config.md - makes view movable
+- api/link/ui.submenu_multiselect_config.md - 
 - api/link/ui.submenu_navigation_config.md - activates the selection keyboard navigation
 - api/link/ui.submenu_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.submenu_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
@@ -103,6 +104,7 @@ Properties
 - api/link/ui.submenu_modal_config.md
 - api/link/ui.submenu_mouseeventdelay_config.md
 - api/link/ui.submenu_move_config.md
+- api/link/ui.submenu_multiselect_config.md
 - api/link/ui.submenu_navigation_config.md
 - api/link/ui.submenu_on_config.md
 - api/link/ui.submenu_onclick_config.md
