@@ -1,1 +1,0 @@
-@link: api/ui.baseview_datafeed_config.md
