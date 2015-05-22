@@ -460,10 +460,6 @@ Label control can be used to render any user HTML or icons (as well as built-in 
 
 ##Multicombo
 
-{{pronote
-The control is available only in **Webix Pro** edition.
-}}
-
 Multicombo allows choosing several options from a suggest list. 
 
 <img src="desktop/multicombo_message.png">
@@ -498,9 +494,6 @@ To delete an option from multicombo, you can either click the "cross" sign or us
 
 ##Multiselect
 
-{{pronote
-The control is available only in **Webix Pro** edition.
-}}
 
 <img src="desktop/multiselect.png"/>
 
