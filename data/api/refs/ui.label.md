@@ -96,7 +96,6 @@ The component is used to display static text on a page. Check [label](desktop/co
 - api/link/ui.label_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.label_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.label_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.label_datafeed_config.md - 
 - api/link/ui.label_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.label_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.label_height_config.md - sets the height of the component
@@ -119,7 +118,6 @@ The component is used to display static text on a page. Check [label](desktop/co
 - api/link/ui.label_template_config.md - the component template
 - api/link/ui.label_tooltip_config.md - tooltip for the input
 - api/link/ui.label_type_config.md - the type of the control
-- api/link/ui.label_url_config.md - 
 - api/link/ui.label_value_config.md - sets the initial value for a control
 - api/link/ui.label_width_config.md - sets the width of the component
 }}

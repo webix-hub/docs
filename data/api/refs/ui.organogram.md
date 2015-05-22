@@ -62,7 +62,7 @@ $("#mydiv").webix_organogram({
 - api/link/ui.organogram_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.organogram_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.organogram_getitem.md - gets the object of the data item with the specified id
-- api/link/ui.organogram_getitemnode.md - returns html element of the item
+- api/link/ui.organogram_getitemnode.md - returns HTML element of the item
 - api/link/ui.organogram_getlastid.md - returns the id of the last item
 - api/link/ui.organogram_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.organogram_getnextsiblingid.md - returns the id of the next sibling of the specified node
@@ -176,7 +176,7 @@ $("#mydiv").webix_organogram({
 - api/link/ui.organogram_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.organogram_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.organogram_data_config.md - JavaScript array containing data for the component
-- api/link/ui.organogram_datafeed_config.md - 
+- api/link/ui.organogram_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.organogram_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.organogram_datatype_config.md - the type of loaded data
 - api/link/ui.organogram_disabled_config.md - indicates whether an item is enabled or not
@@ -207,7 +207,7 @@ $("#mydiv").webix_organogram({
 - api/link/ui.organogram_threestate_config.md - enable three-state checkboxes
 - api/link/ui.organogram_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.organogram_type_config.md - object that specifies items presentation
-- api/link/ui.organogram_url_config.md - 
+- api/link/ui.organogram_url_config.md - the URL the component will use to load data after its initialization
 - api/link/ui.organogram_width_config.md - sets the width of the component
 }}
 

@@ -9,7 +9,6 @@ Properties
 - api/link/ui.icon_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.icon_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.icon_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.icon_datafeed_config.md - 
 - api/link/ui.icon_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.icon_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.icon_height_config.md - sets the height of the component
@@ -32,7 +31,6 @@ Properties
 - api/link/ui.icon_template_config.md - the component template
 - api/link/ui.icon_tooltip_config.md - tooltip for the input
 - api/link/ui.icon_type_config.md - the type of the control
-- api/link/ui.icon_url_config.md - 
 - api/link/ui.icon_value_config.md - sets the initial value for a control
 - api/link/ui.icon_width_config.md - sets the width of the component
 }}
@@ -45,7 +43,6 @@ Properties
 - api/link/ui.icon_container_config.md
 - api/link/ui.icon_content_config.md
 - api/link/ui.icon_css_config.md
-- api/link/ui.icon_datafeed_config.md
 - api/link/ui.icon_disabled_config.md
 - api/link/ui.icon_gravity_config.md
 - api/link/ui.icon_height_config.md
@@ -68,7 +65,6 @@ Properties
 - api/link/ui.icon_template_config.md
 - api/link/ui.icon_tooltip_config.md
 - api/link/ui.icon_type_config.md
-- api/link/ui.icon_url_config.md
 - api/link/ui.icon_value_config.md
 - api/link/ui.icon_width_config.md
 

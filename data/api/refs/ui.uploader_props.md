@@ -11,7 +11,6 @@ Properties
 - api/link/ui.uploader_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.uploader_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.uploader_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.uploader_datafeed_config.md - 
 - api/link/ui.uploader_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.uploader_formdata_config.md - extra data that will be sent to server side along with the file uploading
 - api/ui.uploader_getvalue_config.md - returns the current value of the control
@@ -38,7 +37,6 @@ Properties
 - api/link/ui.uploader_template_config.md - the component template
 - api/link/ui.uploader_tooltip_config.md - tooltip for the input
 - api/link/ui.uploader_type_config.md - the type of the control
-- api/link/ui.uploader_url_config.md - 
 - api/link/ui.uploader_value_config.md - sets the initial value for a control
 - api/link/ui.uploader_width_config.md - sets the width of the component
 }}
@@ -53,7 +51,6 @@ Properties
 - api/link/ui.uploader_container_config.md
 - api/link/ui.uploader_content_config.md
 - api/link/ui.uploader_css_config.md
-- api/link/ui.uploader_datafeed_config.md
 - api/link/ui.uploader_disabled_config.md
 - api/ui.uploader_formdata_config.md
 - api/ui.uploader_getvalue_config.md
@@ -80,7 +77,6 @@ Properties
 - api/link/ui.uploader_template_config.md
 - api/link/ui.uploader_tooltip_config.md
 - api/link/ui.uploader_type_config.md
-- api/link/ui.uploader_url_config.md
 - api/link/ui.uploader_value_config.md
 - api/link/ui.uploader_width_config.md
 

@@ -9,7 +9,6 @@ Properties
 - api/link/ui.context_borderless_config.md - used to hide the component borders
 - api/link/ui.context_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.context_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.context_datafeed_config.md - 
 - api/link/ui.context_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.context_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.context_head_config.md - sets the view header
@@ -42,7 +41,6 @@ Properties
 - api/link/ui.context_borderless_config.md
 - api/link/ui.context_container_config.md
 - api/link/ui.context_css_config.md
-- api/link/ui.context_datafeed_config.md
 - api/link/ui.context_disabled_config.md
 - api/link/ui.context_gravity_config.md
 - api/link/ui.context_head_config.md

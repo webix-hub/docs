@@ -102,7 +102,6 @@ The control allows users to make multiple choices from a number of options. Full
 - api/link/ui.checkbox_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.checkbox_css_config.md - the name of a css class that will be applied to the view container
 - api/ui.checkbox_customcheckbox_config.md - enables/disables custom checkbox in some skins
-- api/link/ui.checkbox_datafeed_config.md - 
 - api/link/ui.checkbox_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.checkbox_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.checkbox_height_config.md - sets the height of the component
@@ -134,7 +133,6 @@ The control allows users to make multiple choices from a number of options. Full
 - api/link/ui.checkbox_tooltip_config.md - tooltip for the input
 - api/link/ui.checkbox_type_config.md - the type of the control
 - api/ui.checkbox_uncheckvalue_config.md - result of getValue for unchecked checkbox
-- api/link/ui.checkbox_url_config.md - 
 - api/link/ui.checkbox_validate_config.md - adds validation to the field
 - api/link/ui.checkbox_validateevent_config.md - on which event validation fires
 - api/link/ui.checkbox_value_config.md - sets the initial value for a control

@@ -134,7 +134,7 @@ The class defines properties, methods, and events related to loading and renderi
 - api/link/ui.proto_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.proto_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.proto_data_config.md - JavaScript array containing data for the component
-- api/link/ui.proto_datafeed_config.md - 
+- api/link/ui.proto_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.proto_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.proto_datatype_config.md - the type of loaded data
 - api/link/ui.proto_disabled_config.md - indicates whether an item is enabled or not
@@ -156,7 +156,7 @@ The class defines properties, methods, and events related to loading and renderi
 - api/link/ui.proto_template_config.md - the component template
 - api/link/ui.proto_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.proto_type_config.md - object that specifies items presentation
-- api/link/ui.proto_url_config.md - 
+- api/link/ui.proto_url_config.md - the URL the component will use to load data after its initialization
 - api/link/ui.proto_width_config.md - sets the width of the component
 }}
 

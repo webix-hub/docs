@@ -91,7 +91,6 @@ as well as component [editor](api/refs/editors.md).
 - api/link/ui.gridsuggest_borderless_config.md - used to hide the component borders
 - api/link/ui.gridsuggest_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.gridsuggest_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.gridsuggest_datafeed_config.md - 
 - api/link/ui.gridsuggest_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.gridsuggest_filter_config.md - custom filtering function
 - api/link/ui.gridsuggest_fitmaster_config.md - size suggest box to the master control

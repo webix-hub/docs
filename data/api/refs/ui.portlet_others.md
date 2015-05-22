@@ -3,8 +3,6 @@ Others
 
 {{api
 - api/ui.portlet_$drag_other.md - method called when drag operation initiated
-- api/ui.portlet_$dragdestroy_other.md - 
-- api/ui.portlet_$dragpos_other.md - 
 - api/link/ui.portlet_$getsize_other.md - returns the current size of the component
 - api/link/ui.portlet_$height_other.md - current height of the view
 - api/link/ui.portlet_$setsize_other.md - sets the component size
@@ -17,8 +15,6 @@ Others
 
 @index:
 - api/ui.portlet_$drag_other.md
-- api/ui.portlet_$dragdestroy_other.md
-- api/ui.portlet_$dragpos_other.md
 - api/link/ui.portlet_$getsize_other.md
 - api/link/ui.portlet_$height_other.md
 - api/link/ui.portlet_$setsize_other.md

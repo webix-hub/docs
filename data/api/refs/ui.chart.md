@@ -142,7 +142,7 @@ It's possible to present multiple data sets on the same chart.  Check [chart](de
 - api/link/ui.chart_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.chart_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.chart_data_config.md - JavaScript array containing data for the component
-- api/link/ui.chart_datafeed_config.md - 
+- api/link/ui.chart_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.chart_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.chart_datatype_config.md - the type of loaded data
 - api/ui.chart_disablelines_config.md - disapbles graph lines with radar chart
@@ -187,7 +187,7 @@ It's possible to present multiple data sets on the same chart.  Check [chart](de
 - api/ui.chart_shadow_config.md - enables/disables the pie shadow
 - api/link/ui.chart_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/ui.chart_type_config.md - sets the chart type
-- api/link/ui.chart_url_config.md - 
+- api/link/ui.chart_url_config.md - the URL the component will use to load data after its initialization
 - api/ui.chart_value_config.md - defines values for the vertical axis
 - api/link/ui.chart_width_config.md - sets the width of the component
 - api/ui.chart_x_config.md - the horizontal position of the pie center

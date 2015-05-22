@@ -91,7 +91,6 @@ dummy stub
 - api/link/ui.checksuggest_buttontext_config.md - defines text for the 'Select' button
 - api/link/ui.checksuggest_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.checksuggest_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.checksuggest_datafeed_config.md - 
 - api/link/ui.checksuggest_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.checksuggest_filter_config.md - custom filtering function
 - api/link/ui.checksuggest_fitmaster_config.md - size suggest box to the master control

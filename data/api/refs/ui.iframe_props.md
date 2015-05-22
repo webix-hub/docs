@@ -6,7 +6,6 @@ Properties
 - api/link/ui.iframe_borderless_config.md - used to hide the component borders
 - api/link/ui.iframe_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.iframe_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.iframe_datafeed_config.md - 
 - api/link/ui.iframe_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.iframe_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.iframe_height_config.md - sets the height of the component
@@ -18,7 +17,6 @@ Properties
 - api/link/ui.iframe_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.iframe_on_config.md - allows attaching custom handlers to inner events of the component
 - api/ui.iframe_src_config.md - the URL of a document you'd like to show in an iframe
-- api/link/ui.iframe_url_config.md - 
 - api/link/ui.iframe_width_config.md - sets the width of the component
 }}
 
@@ -27,7 +25,6 @@ Properties
 - api/link/ui.iframe_borderless_config.md
 - api/link/ui.iframe_container_config.md
 - api/link/ui.iframe_css_config.md
-- api/link/ui.iframe_datafeed_config.md
 - api/link/ui.iframe_disabled_config.md
 - api/link/ui.iframe_gravity_config.md
 - api/link/ui.iframe_height_config.md
@@ -39,6 +36,5 @@ Properties
 - api/link/ui.iframe_minwidth_config.md
 - api/link/ui.iframe_on_config.md
 - api/ui.iframe_src_config.md
-- api/link/ui.iframe_url_config.md
 - api/link/ui.iframe_width_config.md
 

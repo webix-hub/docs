@@ -7,7 +7,6 @@ Properties
 - api/link/ui.fieldset_borderless_config.md - used to hide the component borders
 - api/link/ui.fieldset_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.fieldset_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.fieldset_datafeed_config.md - 
 - api/link/ui.fieldset_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.fieldset_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.fieldset_height_config.md - sets the height of the component
@@ -18,7 +17,6 @@ Properties
 - api/link/ui.fieldset_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.fieldset_minheight_config.md - sets the minimal height for the view
 - api/link/ui.fieldset_minwidth_config.md - sets the minimal width for the view
-- api/link/ui.fieldset_url_config.md - 
 - api/link/ui.fieldset_width_config.md - sets the width of the component
 }}
 
@@ -28,7 +26,6 @@ Properties
 - api/link/ui.fieldset_borderless_config.md
 - api/link/ui.fieldset_container_config.md
 - api/link/ui.fieldset_css_config.md
-- api/link/ui.fieldset_datafeed_config.md
 - api/link/ui.fieldset_disabled_config.md
 - api/link/ui.fieldset_gravity_config.md
 - api/link/ui.fieldset_height_config.md
@@ -39,6 +36,5 @@ Properties
 - api/link/ui.fieldset_maxwidth_config.md
 - api/link/ui.fieldset_minheight_config.md
 - api/link/ui.fieldset_minwidth_config.md
-- api/link/ui.fieldset_url_config.md
 - api/link/ui.fieldset_width_config.md
 

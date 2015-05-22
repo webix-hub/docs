@@ -85,7 +85,6 @@ Check [portlet](desktop/portlet.md) documentation for more detailed description.
 - api/link/ui.portlet_cols_config.md - array of views objects arranged horizontally
 - api/link/ui.portlet_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.portlet_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.portlet_datafeed_config.md - 
 - api/link/ui.portlet_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.portlet_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.portlet_height_config.md - sets the height of the component
@@ -105,7 +104,6 @@ Check [portlet](desktop/portlet.md) documentation for more detailed description.
 - api/link/ui.portlet_responsive_config.md - enables responsive mode for horizontal layout
 - api/link/ui.portlet_rows_config.md - array of views objects arranged vertically
 - api/link/ui.portlet_type_config.md - defines the layout borders
-- api/link/ui.portlet_url_config.md - 
 - api/link/ui.portlet_visiblebatch_config.md - sets the batch that will be shown initially
 - api/link/ui.portlet_width_config.md - sets the width of the component
 }}
@@ -119,8 +117,6 @@ Check [portlet](desktop/portlet.md) documentation for more detailed description.
 
 {{api
 - api/ui.portlet_$drag_other.md - method called when drag operation initiated
-- api/ui.portlet_$dragdestroy_other.md - 
-- api/ui.portlet_$dragpos_other.md - 
 - api/link/ui.portlet_$getsize_other.md - returns the current size of the component
 - api/link/ui.portlet_$height_other.md - current height of the view
 - api/link/ui.portlet_$setsize_other.md - sets the component size

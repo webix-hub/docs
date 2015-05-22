@@ -7,7 +7,6 @@ Properties
 - api/ui.barcode_color_config.md - sets the bar color
 - api/link/ui.barcode_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.barcode_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.barcode_datafeed_config.md - 
 - api/link/ui.barcode_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.barcode_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.barcode_height_config.md - sets the height of the component
@@ -21,7 +20,6 @@ Properties
 - api/ui.barcode_paddingy_config.md - sets the top and bottom paddings
 - api/ui.barcode_textheight_config.md - sets the height of the text block
 - api/ui.barcode_type_config.md - sets the barcode type
-- api/link/ui.barcode_url_config.md - 
 - api/ui.barcode_value_config.md - sets barcode value (text)
 - api/link/ui.barcode_width_config.md - sets the width of the component
 }}
@@ -32,7 +30,6 @@ Properties
 - api/ui.barcode_color_config.md
 - api/link/ui.barcode_container_config.md
 - api/link/ui.barcode_css_config.md
-- api/link/ui.barcode_datafeed_config.md
 - api/link/ui.barcode_disabled_config.md
 - api/link/ui.barcode_gravity_config.md
 - api/link/ui.barcode_height_config.md
@@ -46,7 +43,6 @@ Properties
 - api/ui.barcode_paddingy_config.md
 - api/ui.barcode_textheight_config.md
 - api/ui.barcode_type_config.md
-- api/link/ui.barcode_url_config.md
 - api/ui.barcode_value_config.md
 - api/link/ui.barcode_width_config.md
 

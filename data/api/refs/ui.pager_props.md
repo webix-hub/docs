@@ -9,7 +9,6 @@ Properties
 - api/link/ui.pager_content_config.md - the id or node, whose content will be moved to the view
 - api/ui.pager_count_config.md - the total number of records that the pager will process
 - api/link/ui.pager_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.pager_datafeed_config.md - 
 - api/link/ui.pager_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.pager_gravity_config.md - sets the view gravity (1 by default)
 - api/ui.pager_group_config.md - the number of visible pages in the pager
@@ -30,7 +29,6 @@ Properties
 - api/ui.pager_page_config.md - sets the currently active page (zero-based numbering)
 - api/ui.pager_size_config.md - sets the number of records per page
 - api/link/ui.pager_template_config.md - the component template
-- api/link/ui.pager_url_config.md - 
 - api/link/ui.pager_width_config.md - sets the width of the component
 }}
 
@@ -42,7 +40,6 @@ Properties
 - api/link/ui.pager_content_config.md
 - api/ui.pager_count_config.md
 - api/link/ui.pager_css_config.md
-- api/link/ui.pager_datafeed_config.md
 - api/link/ui.pager_disabled_config.md
 - api/link/ui.pager_gravity_config.md
 - api/ui.pager_group_config.md
@@ -63,6 +60,5 @@ Properties
 - api/ui.pager_page_config.md
 - api/ui.pager_size_config.md
 - api/link/ui.pager_template_config.md
-- api/link/ui.pager_url_config.md
 - api/link/ui.pager_width_config.md
 

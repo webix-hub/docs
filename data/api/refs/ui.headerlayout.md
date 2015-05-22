@@ -80,7 +80,6 @@ The component consists of cells arranged vertically or horizontally. The header 
 - api/link/ui.headerlayout_cols_config.md - array of views objects arranged horizontally
 - api/link/ui.headerlayout_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.headerlayout_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.headerlayout_datafeed_config.md - 
 - api/link/ui.headerlayout_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.headerlayout_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.headerlayout_height_config.md - sets the height of the component
@@ -101,7 +100,6 @@ The component consists of cells arranged vertically or horizontally. The header 
 - api/link/ui.headerlayout_responsive_config.md - enables responsive mode for horizontal layout
 - api/link/ui.headerlayout_rows_config.md - array of views objects arranged vertically
 - api/link/ui.headerlayout_type_config.md - defines the layout borders
-- api/link/ui.headerlayout_url_config.md - 
 - api/link/ui.headerlayout_visiblebatch_config.md - sets the batch that will be shown initially
 - api/link/ui.headerlayout_width_config.md - sets the width of the component
 }}

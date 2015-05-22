@@ -87,7 +87,6 @@ Check [rangeslider](desktop/controls.md#range) documentation for more detailed d
 - api/link/ui.rangeslider_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.rangeslider_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.rangeslider_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.rangeslider_datafeed_config.md - 
 - api/link/ui.rangeslider_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.rangeslider_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.rangeslider_height_config.md - sets the height of the component
@@ -124,7 +123,6 @@ Check [rangeslider](desktop/controls.md#range) documentation for more detailed d
 - api/link/ui.rangeslider_title_config.md - text over slider bar
 - api/link/ui.rangeslider_tooltip_config.md - tooltip for the input
 - api/link/ui.rangeslider_type_config.md - the type of the control
-- api/link/ui.rangeslider_url_config.md - 
 - api/link/ui.rangeslider_validate_config.md - adds validation to the field
 - api/link/ui.rangeslider_validateevent_config.md - on which event validation fires
 - api/link/ui.rangeslider_value_config.md - sets the initial value for a control

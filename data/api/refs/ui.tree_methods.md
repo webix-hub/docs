@@ -35,7 +35,7 @@ Methods
 - api/link/ui.tree_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.tree_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.tree_getitem.md - gets the object of the data item with the specified id
-- api/link/ui.tree_getitemnode.md - returns html element of item by item's id
+- api/link/ui.tree_getitemnode.md - returns HTML element of the item
 - api/link/ui.tree_getlastid.md - returns the id of the last item
 - api/link/ui.tree_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.tree_getnextsiblingid.md - returns the id of the next sibling of the specified node

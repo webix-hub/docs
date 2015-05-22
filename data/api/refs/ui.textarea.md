@@ -97,7 +97,6 @@ ui.textarea
 - api/link/ui.textarea_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.textarea_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.textarea_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.textarea_datafeed_config.md - 
 - api/link/ui.textarea_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.textarea_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.textarea_height_config.md - sets the height of the component
@@ -128,7 +127,6 @@ ui.textarea
 - api/link/ui.textarea_template_config.md - the component template
 - api/link/ui.textarea_tooltip_config.md - tooltip for the input
 - api/link/ui.textarea_type_config.md - the type of the control
-- api/link/ui.textarea_url_config.md - 
 - api/link/ui.textarea_validate_config.md - adds validation to the field
 - api/link/ui.textarea_validateevent_config.md - on which event validation fires
 - api/link/ui.textarea_value_config.md - sets the initial value for a control

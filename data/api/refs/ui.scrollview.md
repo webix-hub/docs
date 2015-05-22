@@ -82,7 +82,6 @@ Place it in the layout if you want to have a scroll around few other views (not 
 - api/link/ui.scrollview_borderless_config.md - used to hide the component borders
 - api/link/ui.scrollview_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.scrollview_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.scrollview_datafeed_config.md - 
 - api/link/ui.scrollview_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.scrollview_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.scrollview_height_config.md - sets the height of the component
@@ -94,7 +93,6 @@ Place it in the layout if you want to have a scroll around few other views (not 
 - api/link/ui.scrollview_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.scrollview_scroll_config.md - enables/disables the scroll bar
 - api/link/ui.scrollview_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
-- api/link/ui.scrollview_url_config.md - 
 - api/link/ui.scrollview_width_config.md - sets the width of the component
 }}
 

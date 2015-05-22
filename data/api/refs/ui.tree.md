@@ -66,7 +66,7 @@ $("#mydiv").webix_tree({
 - api/link/ui.tree_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.tree_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.tree_getitem.md - gets the object of the data item with the specified id
-- api/link/ui.tree_getitemnode.md - returns html element of item by item's id
+- api/link/ui.tree_getitemnode.md - returns HTML element of the item
 - api/link/ui.tree_getlastid.md - returns the id of the last item
 - api/link/ui.tree_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.tree_getnextsiblingid.md - returns the id of the next sibling of the specified node
@@ -195,7 +195,7 @@ $("#mydiv").webix_tree({
 - api/link/ui.tree_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.tree_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.tree_data_config.md - JavaScript array containing data for the component
-- api/link/ui.tree_datafeed_config.md - 
+- api/link/ui.tree_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.tree_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.tree_datatype_config.md - the type of loaded data
 - api/link/ui.tree_disabled_config.md - indicates whether an item is enabled or not
@@ -232,7 +232,7 @@ $("#mydiv").webix_tree({
 - api/link/ui.tree_threestate_config.md - defines three-state checkboxes for the tree. Flase by default.
 - api/link/ui.tree_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.tree_type_config.md - object that specifies items presentation
-- api/link/ui.tree_url_config.md - 
+- api/link/ui.tree_url_config.md - the URL the component will use to load data after its initialization
 - api/link/ui.tree_width_config.md - sets the width of the component
 }}
 

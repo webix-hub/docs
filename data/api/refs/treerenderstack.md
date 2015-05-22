@@ -10,7 +10,7 @@ TreeRenderStack
 <div class='h2'>Methods</div>
 
 {{api
-- api/treerenderstack_getitemnode.md - returns html element of item by item's id
+- api/treerenderstack_getitemnode.md - returns HTML element of the item
 - api/treerenderstack_render.md - 
 }}
 

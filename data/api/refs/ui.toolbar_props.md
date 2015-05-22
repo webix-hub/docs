@@ -8,7 +8,7 @@ Properties
 - api/link/ui.toolbar_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.toolbar_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.toolbar_data_config.md - JavaScript array containing data for the component
-- api/link/ui.toolbar_datafeed_config.md - 
+- api/link/ui.toolbar_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.toolbar_datatype_config.md - the type of loaded data
 - api/link/ui.toolbar_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.toolbar_elements_config.md - collection of subviews
@@ -33,7 +33,7 @@ Properties
 - api/link/ui.toolbar_scroll_config.md - enables/disables the scroll bar
 - api/link/ui.toolbar_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.toolbar_type_config.md - defines the layout borders
-- api/link/ui.toolbar_url_config.md - 
+- api/link/ui.toolbar_url_config.md - the URL the component will use to load data after its initialization
 - api/link/ui.toolbar_visiblebatch_config.md - sets the batch that will be shown initially
 - api/link/ui.toolbar_width_config.md - sets the width of the component
 }}

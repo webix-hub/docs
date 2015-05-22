@@ -182,7 +182,7 @@ The component can be displayed in 2 modes: static (the menu is fully expanded al
 - api/link/ui.menu_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.menu_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.menu_data_config.md - JavaScript array containing data for the component
-- api/link/ui.menu_datafeed_config.md - 
+- api/link/ui.menu_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.menu_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.menu_datatype_config.md - the type of loaded data
 - api/link/ui.menu_disabled_config.md - indicates whether an item is enabled or not
@@ -221,7 +221,7 @@ The component can be displayed in 2 modes: static (the menu is fully expanded al
 - api/link/ui.menu_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
 - api/link/ui.menu_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.menu_type_config.md - object that specifies items presentation
-- api/link/ui.menu_url_config.md - 
+- api/link/ui.menu_url_config.md - the URL the component will use to load data after its initialization
 - api/link/ui.menu_width_config.md - sets the width of the component
 - api/link/ui.menu_xcount_config.md - defines width of view in items
 - api/link/ui.menu_ycount_config.md - defines height of view in items

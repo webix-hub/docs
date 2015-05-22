@@ -9,7 +9,7 @@ Properties
 - api/link/ui.property_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.property_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.property_data_config.md - JavaScript array containing data for the component
-- api/link/ui.property_datafeed_config.md - 
+- api/link/ui.property_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.property_datatype_config.md - the type of loaded data
 - api/link/ui.property_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.property_editvalue_config.md - defines which data item is editable (in case of several data item in the cell/line)
@@ -35,7 +35,7 @@ Properties
 - api/link/ui.property_scroll_config.md - enables/disables the scroll bar
 - api/link/ui.property_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.property_template_config.md - the component template
-- api/link/ui.property_url_config.md - 
+- api/link/ui.property_url_config.md - the URL the component will use to load data after its initialization
 - api/link/ui.property_width_config.md - sets the width of the component
 }}
 

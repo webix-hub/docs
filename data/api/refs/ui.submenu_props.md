@@ -14,7 +14,7 @@ Properties
 - api/link/ui.submenu_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.submenu_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.submenu_data_config.md - JavaScript array containing data for the component
-- api/link/ui.submenu_datafeed_config.md - 
+- api/link/ui.submenu_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.submenu_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.submenu_datatype_config.md - the type of loaded data
 - api/link/ui.submenu_disabled_config.md - indicates whether an item is enabled or not
@@ -62,7 +62,7 @@ Properties
 - api/link/ui.submenu_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.submenu_top_config.md - the top offset of a window
 - api/link/ui.submenu_type_config.md - object that specifies items presentation
-- api/link/ui.submenu_url_config.md - 
+- api/link/ui.submenu_url_config.md - the URL the component will use to load data after its initialization
 - api/link/ui.submenu_width_config.md - sets the width of the component
 - api/link/ui.submenu_xcount_config.md - defines width of view in items
 - api/link/ui.submenu_ycount_config.md - defines height of view in items

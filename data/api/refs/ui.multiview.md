@@ -88,7 +88,6 @@ The component allows you to divide the page content into multiple groups and dis
 - api/link/ui.multiview_cols_config.md - array of views objects arranged horizontally
 - api/link/ui.multiview_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.multiview_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.multiview_datafeed_config.md - 
 - api/link/ui.multiview_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.multiview_fitbiggest_config.md - sizing mode of multiview
 - api/link/ui.multiview_gravity_config.md - sets the view gravity (1 by default)
@@ -103,7 +102,6 @@ The component allows you to divide the page content into multiple groups and dis
 - api/link/ui.multiview_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.multiview_responsive_config.md - enables responsive mode for horizontal layout
 - api/link/ui.multiview_rows_config.md - array of views objects arranged vertically
-- api/link/ui.multiview_url_config.md - 
 - api/link/ui.multiview_visiblebatch_config.md - sets the batch that will be shown initially
 - api/link/ui.multiview_width_config.md - sets the width of the component
 }}

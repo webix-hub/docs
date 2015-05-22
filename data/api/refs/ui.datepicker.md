@@ -101,7 +101,6 @@ ui.datepicker
 - api/link/ui.datepicker_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.datepicker_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.datepicker_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.datepicker_datafeed_config.md - 
 - api/link/ui.datepicker_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.datepicker_editable_config.md - allows making datepicker editable, false by default
 - api/ui.datepicker_format_config.md - sets date format in the control
@@ -140,7 +139,6 @@ ui.datepicker
 - api/ui.datepicker_timepicker_config.md - enables optional timepicker in the calendar
 - api/link/ui.datepicker_tooltip_config.md - tooltip for the input
 - api/link/ui.datepicker_type_config.md - the type of the control
-- api/link/ui.datepicker_url_config.md - 
 - api/link/ui.datepicker_validate_config.md - adds validation to the field
 - api/link/ui.datepicker_validateevent_config.md - on which event validation fires
 - api/link/ui.datepicker_value_config.md - sets the initial value for a control
