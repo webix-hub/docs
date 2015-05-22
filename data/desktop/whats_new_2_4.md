@@ -34,7 +34,7 @@ Version 2.4
 ## Fixes
 
 - ActiveContent doesn't survive component repainting in IE
-- adding new items in filtererd branches of treetable
+- adding new items in filtered branches of treetable
 - buttons inside html form
 - clipbuffer styling in IE8
 - close all sub-windows on master popup closing
@@ -54,7 +54,7 @@ Version 2.4
 - hidden:false and modal:true in window config
 - hot keys and numpad
 - IE GET requests
-- IE9 doesn't allow to set custom properties on AJAX object
+- IE9 doesn't allow setting custom properties on AJAX object
 - incorrect rendering of first row in case of paging
 - invalid math in newly added rows
 - material skin detection
