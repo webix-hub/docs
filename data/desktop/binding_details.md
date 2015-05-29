@@ -21,19 +21,18 @@ slave component is based on [DataStore](api/refs/datastore.md) (all data managem
 [TreeStore](api/refs/treestore.md) (tree and treetable).
 }}
 
-###Binding Rules for Inline Collections
 
-Binding rule defines a scheme according to which records in the slave component are filtered. It can be string or function. 
+Binding rule defines a scheme according to which records in the slave component are filtered. It can be either a string or a function. 
+
+###Binding rule as a function
 
 As function, binding rule takes 2 parameters: 
 
 - **slave**  - slave data object;
 - **master** - master data object.
 
-List data is filtered according to the option you choose within a [richselect](desktop/controls.md#richselect) control. 
-
 {{snippet
-Slave list displayed record with category equal to master value
+Slave list displays records with category equal to master value
 }}
 ~~~js
 $$("list").bind($$("richselect"), function(slave, master){
@@ -41,9 +40,11 @@ $$("list").bind($$("richselect"), function(slave, master){
 });
 ~~~
 
+Here list data is filtered according to the option you choose within a [richselect](desktop/controls.md#richselect) control. 
+
 {{sample 80_docs/binding_rule.html}}
 
-Additionally, binding rule can cancel bind application in runtime if no data is sent from master (i.e. no record is selected in master). 
+Additionally, binding rule can cancel bind applying in runtime.
 
 {{snippet 
 Slave datatable displays only records with movie property equal to master record ID
@@ -55,15 +56,16 @@ gridb.bind(grida, function(slave, master){
 });
 ~~~
 
+Here binding is cancelled in case no data is sent from master (i.e. no record is selected in master). 
+
 {{sample 15_datatable/15_api/02_link_grid.html}} 
 
-###Binding Rules for Hierarchical Collection as Master
+###Binding rule as a string
 
-In case master component is based on a [TreeStore](api/refs/treestore.ms) ([tree](datatree/index.md) and [treetable](desktop/treetable.md))
-rules can be defined with the help of the following flags: 
+If master component is loaded with hierarchical data you can define a binding rule with the help of the following flags: 
 
-- **$level** - only immediate children of a selected item are pushed to slave component. By default children are defined by **data**
-key in any of the supported [data formats](desktop/data_types.md): 
+- **$level** - only immediate children of a selected item are pushed to slave component. By default children are introduced by **data**
+key in all the supported [data formats](desktop/data_types.md): 
 
 {{snippet
 Grid will show only children of a selected tree node
@@ -84,16 +86,18 @@ Input JSON of such a tree is as follows:
 
 {{sample 17_datatree/04_api/08_bind.html}}
 
-- **$data** - the object of a selected item (without children) is pushed to slave component. Here you should pass the **format** of subdata presentation: 
+- **$data** - the object of a selected item (without children) is pushed to a slave component. Here you should pass the **format** of subdata presentation to specify data items necessary for the slave. 
 
-Format can be a string that defines the **key** by which desired data is set in the item. This is not the key by which children are set
-in the [data format](desktop/data_types.md) (by default it is "data"): 
+###Format of bound data presentation
+
+Format can be a string that defines the **key** by which desired data is set in the item object. As a rule, it differs from the key by which children are set
+ (if they are set via "data" (default), it's more reasonable to use **$level** rule): 
 
 ~~~js
 $$("grid1").bind( $$("tree"), "$data", "records");
 ~~~
 
-Input JSON of such a tree is as follows:
+Input JSON data of such a tree is as follows:
 
 ~~~js
 { id:"..", value:"..", records:[

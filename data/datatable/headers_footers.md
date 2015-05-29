@@ -315,37 +315,54 @@ You can either extend or redefine the functionality of any existing content elem
 
 ###Extending Existing Content Element
 
-For datatable footer there exists a pre-built **summColumn** element that counts the sum from all rows of the column and displays them under the grid main part.
+For datatable footer there exists a pre-built **summColumn** element that counts the sum from column rows and displays them under the main part or the datatable.
 
-If you, for instance, want the element to display an average value instead of the sum, redefine its **refresh()** method
+If you need to show an average value instead of a sum inherit from the *summFilter* and redefine its **refresh()**: 
 
 ~~~js
 webix.ui.datafilter.avgColumn = webix.extend({
-  		refresh:function(master, node, value){ 
-			var result = 0;
-			master.mapCells(null, value.columnId, null, 1, function(value){
-				value = value*1;
-				if (!isNaN(value))
-					result+=value;
-				return value;
-			});
+  	refresh:function(master, node, value){ 
+		var result = 0;
+		master.mapCells(null, value.columnId, null, 1, function(value){
+			value = value*1;
+			if (!isNaN(value))
+				result+=value;
+			return value;
+		});
 
-			node.firstChild.innerHTML = Math.round(result/master.count());
-		}
+		node.firstChild.innerHTML = Math.round(result/master.count());
+	}
 }, webix.ui.datafilter.summColumn);
 ~~~
 
-At the same time the new content element can be created from scratch. Remember that **render()** and **refresh()** and mandatory methods:
+###Creating Custom Content Element
+
+A custom content element can be created totally from the scratch.
+ 
+It must possess the following mandatory **methods** (declare them even if you don't need any specific performance from them): 
+
+- **getValue** - gets the current value of an element;
+- **setValue()** - sets the value to an element;
+- **render()** - paints an element;
+- **refresh()** - defines dynamic performance of an element. 
+
+And you may define as many methods as you need.
+
+A content element can feature the following **properties**: 
+
+- **trackCells** (boolean) -  indicates whether an element should be refreshed each time component data changes ( if *true*, *refresh()* method of a content element will be called automatically). 
 
 ~~~js
 webix.ui.datafilter.customFilterName = {
+	getValue:function(){}, //not used methods
+	setValue: function(){},
     refresh: function(master, node, column){
         //event handlers
         node.onchange = function(){...};
         node.onclick = function(){...}
     },
     render:function(master, column){
-		var html = "";
+		var html = "...";
         return html;
     }
 };
