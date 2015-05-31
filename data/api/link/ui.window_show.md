@@ -12,21 +12,19 @@ show
 
 
 @example:
-
-// setting the window's position dynamically
-webix.ui({
-    view:"window",
-    ...
-}). show({
-    x:300, //left offset from the right side
-    y:50 //top offset
-});
-
 //specifying an HTML node near which a window will be shown
 $$("window").show(node); 
 
 // placing the window above the node
 $$("window").show(node, {pos:"top"});
+
+// setting the window's position
+$$("window"). show({
+    x:300, //left offset from the right side
+    y:50 //top offset
+});
+
+
 @template:	api_method
 @defined:	ui.baseview	
 
@@ -39,11 +37,18 @@ $$("window").show(node, {pos:"top"});
 	desktop/visibility.md
     
 @descr:
+
+####Position
+
 The properties of the position object are:
 
-- pos - {string} optional, "top", "left", "right", "bottom"
-- x - {number} horizontal offset 
-- y - {number} vertical offset 
+- pos - {string} optional, "top", "left", "right", "bottom";
+- x - {number} horizontal offset;
+- y - {number} vertical offset.
+
+Position object may be passed as the first argument instead of *node*. 
+
+####Method usage
 
 This method helps showing the **views that were hidden before**:
 
