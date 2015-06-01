@@ -106,7 +106,7 @@ If not specified, target will be set as empty string.
 
 ###Badges in Menu Items
 
-Badges add info circles to menu items with the number of entities you'd like to assosiate with this or that item (e.g. messages): 
+Badges add info circles to menu items with the number of entities you'd like to associate with this or that item (e.g. messages): 
 
 <img src="desktop/menu_badges.png">
 ~~~js
