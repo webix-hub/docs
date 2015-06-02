@@ -419,7 +419,7 @@ API
 var config = $$("pivot").getStructure();
 
 //set configuration
-$$("pivot").setConfiguration(config);
+$$("pivot").setStructure(config);
 ~~~
 
 Format of a **config** object is the same as "structure" parameter of the constructor:
