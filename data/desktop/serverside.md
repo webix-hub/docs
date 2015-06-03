@@ -132,5 +132,7 @@ Form data is either
   - desktop/dataprocessor.md
   - desktop/dataconnector.md
   - desktop/crossdomain_loading.md
+  - nodejs/index.md
+  - dot_net/index.md
 
 @complexity:2

@@ -1,2 +1,2 @@
-Quick Start Guide
+REST Mode Support
 ==================

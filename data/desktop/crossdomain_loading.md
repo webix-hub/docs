@@ -6,7 +6,7 @@ and the [data-loading](desktop/data_loading.md) script is called *"data.php"*.
 
 Standard loading will fail in this case as all browsers block all cross-domain operations for the sake of safety even if you try using a different port. 
 
-Nevertheless, there're technoques to overcome this problems. With Webix lib, you can use two of them:
+Nevertheless, there are techniques to overcome these problems. With Webix lib, you can use two of them:
 
 - Cross-Origin Resource Sharing to perform types of requests;
 - JSONP Loading for GETting data only.

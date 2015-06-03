@@ -187,9 +187,10 @@ At the same time, some of them may be smaller or bigger.
 
 ##Adjusting Mobile Apps to Screen Size {#mobile}
 
-Webix offers “full screen” mode to make the application take all available screen space while at the same time hiding browser’s toolbars. In this mode, the app will take up the entire screen of the mobile device. 
+Webix offers “full screen” mode to make the application take all available browser screen space.
 
-Fullscreen mode is enables with [webix.ui.fullScreen()](api/ui_fullscreen.md) command before UI initialization:
+Fullscreen mode is enabled with [webix.ui.fullScreen()](api/ui_fullscreen.md) command before UI initialization.
+The method adds necessary meta tags for your full-screen app and handles viewport sizing.
 
 ~~~js
 webix.ui.fullScreen();

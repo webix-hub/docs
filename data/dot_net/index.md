@@ -1,5 +1,5 @@
-Documentation for .Net integration
-========================================
+.Net integration
+================
 
 Check the following articles to find the necessary information on integration with .Net:
 
@@ -10,32 +10,26 @@ Check the following articles to find the necessary information on integration wi
 
 ###Server-side integration with .Net
 
-- dot_net/dataloading.md
 - dot_net/custom_serverside.md 
 - dot_net/server_rest.md
 - dot_net/server_ajaxsave.md
 - dot_net/server_customload.md
-- dot_net/server_offline.md
-- dot_net/server_proxy.md
-- dot_net/server_indexdb.md
-- dot_net/server_faye.md
 - dot_net/dataprocessor.md
 - dot_net/dataconnector.md
+- dot_net/databases.md
 - dot_net/crossdomain_loading.md
 
 
 @index:
 - dot_net/getting_started.md
-- dot_net/dataloading.md
 - dot_net/custom_serverside.md
 - dot_net/server_rest.md
 - dot_net/server_ajaxsave.md
 - dot_net/server_customload.md
-- dot_net/server_offline.md
-- dot_net/server_proxy.md
-- dot_net/server_indexdb.md
-- dot_net/server_faye.md
 - dot_net/dataprocessor.md
 - dot_net/dataconnector.md
+- dot_net/databases.md
 - dot_net/crossdomain_loading.md
 
+
+@linkclass:hidden

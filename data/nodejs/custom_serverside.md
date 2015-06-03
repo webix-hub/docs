@@ -1,7 +1,6 @@
 Custom Server Scripts
-=====================
+======================
 
-<p align="right"><font color="purple">Read this article for <a href="nodejs/custom_serverside.md">Node.js</a>/<a href="dot_net/custom_serverside.md">.Net</a> integration</font></p>
 
 In case of custom server scripts you write all the logic of database connection, execute queries that get data from the necessary tables as well as queries for data inserting, updating and deleting. 
 
@@ -17,7 +16,7 @@ webix.ui({
 
 **Url** loads data returned by dedicated script while **save** points to script that saves data to database each time you make changes on client side.
 
-The following basic instructions will help you tune your scripts to return data and provide responses for editing operations. Here we work on PHP with SQLite3 database.
+The following basic instructions will help you tune your scripts to return data and provide responses for editing operations. <p style="color:purple;">Here we work on PHP with SQLite3 database.</p>
 
 - [Data Loading](#load)
 - [Data Saving](#save)
@@ -27,9 +26,9 @@ If you are unsure what to do in case you need to get data from a **different dom
 
 ##Data Loading {#load}
 
-Webix components support incoming data in JSON, JSArray, XML, HTMLtable and CSV [formats](desktop/data_types.md), so ensure that your script returns data properly formatted. 
+<p style="color:purple;"> Webix components support incoming data in JSON, JSArray, XML, HTMLtable and CSV [formats](desktop/data_types.md), so ensure that your script returns data properly formatted. 
 
-For JSON, encode the resulting data array with the dedicated function(**json_encode()** in PHP)
+For JSON, encode the resulting data array with the dedicated function(**json_encode()** in PHP)</p>
 
 ~~~php
 //connect to database
@@ -162,7 +161,7 @@ You decide what should be done:
 
 - **UPDATE** data on server side for a record that was previously loaded to this form;
 - **INSERT** data into necessary database table (i.e. create a new record);
-- **update data on client-side** - in this case form should be [bound](desktop/data_binding.md) with a component or [Data Collection](desktop/nonui_objects.md) so that form gets data from them and
+- **update data on client-side** - in this case form should be [bound](desktop/data_binding.md) with a component or [Data Collection](desktop/nonui_objects.md) so that form gets data from them and 
 sends changes to them while their **save** scripts handle these changes.
 
 Typical Ajax request to save form data to server looks like this:
@@ -175,9 +174,9 @@ webix.ajax().post("server/form_save.php", $$(""myform).getValues(), function(res
 
 Form [getValues()](api/link/ui.form_getvalues.md) returns data from all fields as JSON object - just what is required for params sent via Ajax.
 
-For tuning responses scroll down a little bit. For learning Webix API for Ajax operations - go [there](helpers/ajax_operations.md).
+For tuning responses scroll down a little bit. For learning Webix  API for Ajax operations - go [there](helpers/ajax_operations.md).
 
-##Tuning ServerSide Response {#response}
+##Customizing Server-Side Response {#response}
 
 For each query you should tune response, which can be either **plain text** or **JSON object** with necesary params:
 
@@ -217,7 +216,6 @@ webix.ajax().post("server/save.php", {}, function(response) {
 More about [Ajax operations in Webix](helpers/ajax_operations.md).
 
 @complexity:3
-
 
 
 
