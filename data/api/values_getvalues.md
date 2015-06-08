@@ -8,7 +8,7 @@ getValues
 * details	object, function	additional parameters (described below)
 	
 @returns: 
-values	array	 returns hash of form values: data entered by user or initial data from the value property. 
+values	hash  returns hash of form values: data entered by user or initial data from the value property. 
 	
 @example:
 

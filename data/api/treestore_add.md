@@ -6,8 +6,8 @@ add
 
 @params:
 - obj		object	the item object
-- index		number	the position that the item will be added to (zero-based numbering)
-- parentId		string	the parent id
+* index		number	the position that the item will be added to (zero-based numbering)
+* parentId		string	the parent id
 
 @returns:
 -itemId		string	ID of the newly added item

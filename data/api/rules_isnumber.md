@@ -2,7 +2,10 @@ isNumber
 =============
 
 @short: checks whether the value in the text field numeric or not
-	
+
+@returns:
+- valid    boolean     true if value is a number
+
 @example:
 
 rules:{ //component's name is used to apply the rule to it

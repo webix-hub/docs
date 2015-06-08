@@ -4,6 +4,9 @@ isChecked
 @short:
 	checks whether a checkbox is checked
 
+@returns:
+- valid    boolean   true if value is positive
+
 @example:
 
 rules:{ // component's name is used to apply the rule to it

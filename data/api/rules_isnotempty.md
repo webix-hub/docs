@@ -5,6 +5,9 @@ isNotEmpty
 
 @short: checks whether the text field is empty or not
 
+@returns:
+- valid    boolean     true if value is not empty
+
 @example:
 
 rules:{ // component's name is used to apply the rule to it

@@ -5,6 +5,9 @@ isEmail
 
 @short: checks whether the typed data complies with the rules of email address writing
 
+@returns:
+- valid    boolean     true if value is email
+
 @example:
 
 rules:{ // component's name is used to apply the rule to it
