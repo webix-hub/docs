@@ -56,7 +56,7 @@ on:{
 }
 ~~~
 
-{{sample /15_datatable/31_treedrag/05_drop_next.html }}
+{{sample 15_datatable/31_treedrag/05_drop_next.html }}
 
 ###Related Articles
 
