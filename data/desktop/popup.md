@@ -25,9 +25,9 @@ webix.ui({
 	view:"popup",
     id:"my_popup",
 	head:"My Window",
-	body:
+	body:{
 		template:"Some text" 
-		}
+	}
 }).show();
 ~~~
 
