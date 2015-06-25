@@ -21,9 +21,27 @@ A header can also be added. You'll find the details below.
 webix.ui({
 	container:"divA",
 	type:"space",
-	view:"portlet", body:{
-		template:"Drag and drop portlets"
-	}}
+	rows:[
+		{ template:"Reordering",  type:"header" },
+		{ view:"portlet", body:{
+			template:"Drag and drop portlets"
+		}},
+		{ view:"portlet", body:{
+			template:"row 2"
+		}},
+		{ type:"wide", cols:[
+			{ view:"portlet", body:{
+				template:"col 1"
+			}},
+			{ view:"portlet", body:{
+				template:"col 2",
+			}},
+			{ view:"portlet", body:{
+				template:"col 3"
+			}},
+		]
+		}
+	]
 });
 ~~~
 
@@ -51,11 +69,11 @@ Just set some string value for the *header* property in the porlet definition:
 
 ~~~js
 webix.ui({
-	container:"divA",
-	type:"space",
-	view:"portlet", header:"Drag me", body:{
-		template:"Drag and drop portlets"
-	}}
+    container:"divA",
+    type:"space",
+    view:"portlet", header:"Drag me", body:{
+        template:"Drag and drop portlets"
+    }}
 });
 ~~~
 
@@ -96,10 +114,23 @@ In the "cols" mode portlets are moved only along the x-axis. In the "rows" mode 
 webix.ui({
 	container:"divA",
 	type:"space",
-	view:"portlet", mode:"cols", body:{
-		template:"Drag and drop portlets"
-	}}
+	rows:[
+		{ template:"Only X-snap here", type:"header"},
+		{ type:"wide", cols:[
+			{ view:"portlet", mode:"cols", body:{
+				template:"A col 1"
+			}},
+			{ view:"portlet", mode:"cols", body:{
+				template:"B col 2",
+			}},
+			{ view:"portlet", mode:"cols", body:{
+				template:"C col 3"
+			}},
+		]
+		}
+	]
 });
+
 ~~~
 
 <img src="desktop/portlet_one_direction.png">

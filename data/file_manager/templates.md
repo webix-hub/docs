@@ -36,14 +36,6 @@ templateSize: function(obj,common){
 	var value = obj.size;
     var isInt = (parseInt(value,10) == value);
     
-    // apply locale formating
-    var getFormatedValue = webix.Number.numToStr({
-    	decimalDelimiter:webix.i18n.decimalDelimiter,
-    	groupDelimiter:webix.i18n.groupDelimiter,
-    	decimalSize : isInt?0:webix.i18n.groupSize
-    });
-    value = getFormatedValue(value); 
-    
     // get size label
     var labels = webix.i18n.filemanager.sizeLabels; // ["B","KB",...]
     var sizeIndex = 0;
@@ -53,7 +45,14 @@ templateSize: function(obj,common){
     }
     var label = labels[sizeIndex];
     
-    return value+""+label;
+     // locale format
+    var getFormatedValue = webix.Number.numToStr({
+    	decimalDelimiter:webix.i18n.decimalDelimiter,
+    	groupDelimiter:webix.i18n.groupDelimiter,
+    	decimalSize : isInt?0:webix.i18n.groupSize
+    });
+    
+    return getFormatedValue(value)+""+label;
 },
 ~~~
 
