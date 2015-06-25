@@ -14,6 +14,17 @@ Thus, it's possible to change the app's structure in a simple way, without writi
 
 Initialization
 ---------------
+
+As any other component, Portlet can be initialized in a container or as a full-screen view.
+
+To initialize a portlet in a div container, you should create a container first:
+
+~~~html
+<div id="divA" style="width:600px;height:400px;"></div>
+~~~
+
+Then, in order to place the component into the container, specify the container property inside of the view constructor, as it's shown in the example below.
+
 Portlet consists of a body (taking either a view or a text template) without the head section. 
 A header can also be added. You'll find the details below.
 
@@ -21,27 +32,9 @@ A header can also be added. You'll find the details below.
 webix.ui({
 	container:"divA",
 	type:"space",
-	rows:[
-		{ template:"Reordering",  type:"header" },
-		{ view:"portlet", body:{
-			template:"Drag and drop portlets"
-		}},
-		{ view:"portlet", body:{
-			template:"row 2"
-		}},
-		{ type:"wide", cols:[
-			{ view:"portlet", body:{
-				template:"col 1"
-			}},
-			{ view:"portlet", body:{
-				template:"col 2",
-			}},
-			{ view:"portlet", body:{
-				template:"col 3"
-			}},
-		]
-		}
-	]
+	view:"portlet", body:{
+		template:"Drag and drop portlets"
+	}
 });
 ~~~
 
@@ -69,7 +62,6 @@ Just set some string value for the *header* property in the porlet definition:
 
 ~~~js
 webix.ui({
-    container:"divA",
     type:"space",
     view:"portlet", header:"Drag me", body:{
         template:"Drag and drop portlets"
@@ -92,7 +84,6 @@ This mode is enabled by specifying the *mode* property with the value "replace":
 
 ~~~js
 webix.ui({
-	container:"divA",
 	type:"space",
 	view:"portlet", mode:"replace", body:{
 		template:"Drag and drop portlets"
@@ -112,7 +103,6 @@ In the "cols" mode portlets are moved only along the x-axis. In the "rows" mode 
 
 ~~~js
 webix.ui({
-	container:"divA",
 	type:"space",
 	rows:[
 		{ template:"Only X-snap here", type:"header"},
@@ -143,7 +133,6 @@ It's very easy to add other component into a portlet. All you need to do is to s
 
 ~~~js
 webix.ui({
-	container:"divA",
 	type:"space",
 	rows:[
 		{ template:"Only X-snap here", type:"header"},
