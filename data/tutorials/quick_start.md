@@ -14,7 +14,7 @@ The following steps will take you to your own Webix based app.
 <html>
     <head>
     <link rel="stylesheet" href="http://cdn.webix.com/edge/webix.css" type="text/css"> 
-    <script src="http://cdn.webix.com/edge/webix..js" type="text/javascript"></script>  
+    <script src="http://cdn.webix.com/edge/webix.js" type="text/javascript"></script>  
     </head>
     <body>
         <script type="text/javascript" charset="utf-8">
