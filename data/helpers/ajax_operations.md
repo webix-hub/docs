@@ -282,7 +282,7 @@ Functionality will not work in IE8-IE9 as these browsers cannot work with blob o
 Promise API for Ajax requests
 ------------------------
 
-Webix is intergated with the [Promiz.js](http://promisesaplus.com/) library, which allows treating the result of asynchronous operations without callbacks. 
+Webix is integrated with the [Promiz.js](http://promisesaplus.com/) library, which allows treating the result of asynchronous operations without callbacks. 
 
 In other words, any Ajax request performed by Webix returns a **promise** object that represents the eventual result of this request and can be treated by **then()** method that is 
 automatically executed when server response arrives.
