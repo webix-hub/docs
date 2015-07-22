@@ -195,7 +195,7 @@ Support for various data template formats, sorting and filtering features. Check
 - api/link/ui.grouplist_minheight_config.md - sets the minimal height for the view
 - api/link/ui.grouplist_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.grouplist_mouseeventdelay_config.md - the delay between a real mouse action and invoking the related events
-- api/link/ui.grouplist_multiselect_config.md - 
+- api/link/ui.grouplist_multiselect_config.md - enables multiselect mode
 - api/link/ui.grouplist_navigation_config.md - activates the selection keyboard navigation
 - api/link/ui.grouplist_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.grouplist_onclick_config.md - attaches a click behavior for component items with the specified CSS class.

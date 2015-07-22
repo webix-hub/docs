@@ -42,6 +42,7 @@ The control combines a non-editable text field with a drop-down list of predefin
 - api/link/ui.richselect_getchildviews.md - returns child views of the calling component
 - api/link/ui.richselect_getformview.md - returns master form for the input
 - api/link/ui.richselect_getinputnode.md - gets the HTML element related to the component
+- api/ui.richselect_getlist.md - returns list view of the control
 - api/link/ui.richselect_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.richselect_getparentview.md - returns the parent view of the component
 - api/ui.richselect_getpopup.md - returns popup element of the input

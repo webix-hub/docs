@@ -1,0 +1,1 @@
+@link: api/mapcollection_columns_config.md

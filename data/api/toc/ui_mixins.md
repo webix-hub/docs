@@ -10,6 +10,7 @@ Mixins
 - api/refs/basebind.md -  core of all bind operations
 - api/refs/bindsource.md -  logic for source of data in bind operations
 - api/refs/canvas.md -  wrapper for HTML Canvas tag
+- api/refs/codeparser.md - 
 - api/refs/collectionbind.md -  binding rules for collections of objects
 - api/refs/contexthelper.md -  provides for subviews seen by right mouse click
 - api/refs/copypaste.md -  provides support for copy-paste operations (integration with clipboard) 
@@ -76,6 +77,7 @@ Mixins
 - api/refs/virtualrenderstack.md -  allows on-demand rendering for plain datasets
 - api/refs/ui.baselayout.md -  a base class for layout-based UI components
 - api/refs/ui.baseview.md -  the very base object for all components
+- api/refs/ui.checksuggest.md - 
 - api/refs/ui.proto.md -  the very base class for UI components
 - api/refs/ui.resizearea.md -  visualization and handling resize movements
 - api/refs/ui.view.md -  a pure view with borders but without any content inside it
@@ -93,6 +95,7 @@ Mixins
 - api/refs/basebind.md
 - api/refs/bindsource.md
 - api/refs/canvas.md
+- api/refs/codeparser.md
 - api/refs/collectionbind.md
 - api/refs/contexthelper.md
 - api/refs/copypaste.md
@@ -159,6 +162,7 @@ Mixins
 - api/refs/virtualrenderstack.md
 - api/refs/ui.baselayout.md
 - api/refs/ui.baseview.md
+- api/refs/ui.checksuggest.md
 - api/refs/ui.proto.md
 - api/refs/ui.resizearea.md
 - api/refs/ui.view.md

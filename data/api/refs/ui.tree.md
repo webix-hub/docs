@@ -66,7 +66,7 @@ $("#mydiv").webix_tree({
 - api/link/ui.tree_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.tree_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.tree_getitem.md - gets the object of the data item with the specified id
-- api/link/ui.tree_getitemnode.md - returns HTML element of the item
+- api/link/ui.tree_getitemnode.md - returns html element of item by item's id
 - api/link/ui.tree_getlastid.md - returns the id of the last item
 - api/link/ui.tree_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.tree_getnextsiblingid.md - returns the id of the next sibling of the specified node
@@ -211,7 +211,7 @@ $("#mydiv").webix_tree({
 - api/link/ui.tree_minheight_config.md - sets the minimal height for the view
 - api/link/ui.tree_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.tree_mouseeventdelay_config.md - the delay between a real mouse action and invoking the related events
-- api/link/ui.tree_multiselect_config.md - 
+- api/link/ui.tree_multiselect_config.md - enables multiselect mode
 - api/link/ui.tree_navigation_config.md - activates the selection keyboard navigation
 - api/link/ui.tree_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.tree_onclick_config.md - attaches a click behavior for component items with the specified CSS class.

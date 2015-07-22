@@ -109,6 +109,7 @@ The component is full of various possibilities: filtering, sorting, pagination, 
 - api/ui.datatable_hideoverlay.md - hides previously defined overlay
 - api/ui.datatable_iscolumnvisible.md - returns true if column is visible
 - api/link/ui.datatable_isenabled.md - checks whether the view is enabled
+- api/ui.datatable_isselected.md - returns true if related record is selected
 - api/link/ui.datatable_isvisible.md - checks whether the view is visible
 - api/link/ui.datatable_load.md - loads data from an external data source.
 - api/link/ui.datatable_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
@@ -169,6 +170,7 @@ The component is full of various possibilities: filtering, sorting, pagination, 
 
 {{api
 - api/link/ui.datatable_onafteradd_event.md - fires after adding item to datastore
+- api/ui.datatable_onafterblockselect_event.md - event occurs after block selection
 - api/ui.datatable_onaftercolumndrop_event.md - fires after the column has been dragged and dropped to the target position
 - api/ui.datatable_onaftercolumndroporder_event.md - fires after the column order was changed with the help of drag-and-drop
 - api/link/ui.datatable_onaftercontextmenu_event.md - fires after the context menu was called in the item area
@@ -184,6 +186,7 @@ The component is full of various possibilities: filtering, sorting, pagination, 
 - api/link/ui.datatable_onaftersort_event.md - fires after sorting dataset
 - api/ui.datatable_onafterunselect_event.md - fires after a cell is unselected
 - api/link/ui.datatable_onbeforeadd_event.md - fires before adding item to datastore
+- api/ui.datatable_onbeforeblockselect_event.md - event occurs before block selection
 - api/ui.datatable_onbeforecolumndrag_event.md - fires the monent you start dragging the column from its source potition
 - api/ui.datatable_onbeforecolumndrop_event.md - fires the moment you drop the column to its target position
 - api/ui.datatable_onbeforecolumndroporder_event.md - fires the moment you drop the column over the target area
@@ -282,6 +285,7 @@ The component is full of various possibilities: filtering, sorting, pagination, 
 - api/ui.datatable_leftsplit_config.md - the number of the fixed columns from the left side of the table (actual for the <a href="datatable/frozen_columns.md">split mode</a> )
 - api/ui.datatable_livevalidation_config.md - validation during cell editing
 - api/ui.datatable_loadahead_config.md - sets the number of items that will be loaded on each scroll movement relative to the last item in the scrolling direction
+- api/link/ui.datatable_map_config.md - defines data mapping
 - api/ui.datatable_math_config.md - enables math formulas in DataTable
 - api/link/ui.datatable_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.datatable_maxwidth_config.md - sets the maximum width for the view

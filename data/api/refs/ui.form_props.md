@@ -6,6 +6,7 @@ Properties
 - api/ui.form_autoheight_config.md - sets component height according to its contents
 - api/link/ui.form_borderless_config.md - used to hide the component borders
 - api/link/ui.form_cols_config.md - array of views objects arranged horizontally
+- api/link/ui.form_complexdata_config.md - enables complex data parsing mode
 - api/link/ui.form_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.form_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.form_data_config.md - JavaScript array containing data for the component
@@ -44,6 +45,7 @@ Properties
 - api/ui.form_autoheight_config.md
 - api/link/ui.form_borderless_config.md
 - api/link/ui.form_cols_config.md
+- api/link/ui.form_complexdata_config.md
 - api/link/ui.form_container_config.md
 - api/link/ui.form_css_config.md
 - api/link/ui.form_data_config.md

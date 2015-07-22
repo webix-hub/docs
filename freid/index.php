@@ -18,10 +18,12 @@
 			Freid.hideView = {
 				"webix.ui.baselayout" : true,
 				"webix.ui.baseview"	: true,
+				"webix.ui.baseview"	: true,
 				"webix.ui.proto"		: true,
 				"webix.ui.vscroll"	: true,
 				"webix.ui.view"		: true,
-				"webix.ui.resizearea" : true
+				"webix.ui.resizearea" : true,
+				"webix.ui.checksuggest" : true
 			};
 			Freid.analize();
 		});

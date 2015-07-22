@@ -12,6 +12,7 @@ Methods
 - api/ajax_response.md - sets response type of the request
 - api/ajax_stringify.md - converts data object into a string before sending it to server
 - api/ajax_sync.md - 'says' to send requests synchronously
+- api/ajax_timeout.md - max time for ajax request in milliseconds
 }}
 
 @index:
@@ -25,5 +26,6 @@ Methods
 - api/ajax_response.md
 - api/ajax_stringify.md
 - api/ajax_sync.md
+- api/ajax_timeout.md
 
 

@@ -5,6 +5,7 @@ Properties
 - api/link/ui.toolbar_animate_config.md - defines or disables view change animation.
 - api/link/ui.toolbar_borderless_config.md - used to hide the component borders
 - api/link/ui.toolbar_cols_config.md - array of views objects arranged horizontally
+- api/link/ui.toolbar_complexdata_config.md - enables complex data parsing mode
 - api/link/ui.toolbar_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.toolbar_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.toolbar_data_config.md - JavaScript array containing data for the component
@@ -42,6 +43,7 @@ Properties
 - api/link/ui.toolbar_animate_config.md
 - api/link/ui.toolbar_borderless_config.md
 - api/link/ui.toolbar_cols_config.md
+- api/link/ui.toolbar_complexdata_config.md
 - api/link/ui.toolbar_container_config.md
 - api/link/ui.toolbar_css_config.md
 - api/link/ui.toolbar_data_config.md

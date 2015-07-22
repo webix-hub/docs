@@ -80,6 +80,7 @@ Methods
 - api/ui.datatable_hideoverlay.md - hides previously defined overlay
 - api/ui.datatable_iscolumnvisible.md - returns true if column is visible
 - api/link/ui.datatable_isenabled.md - checks whether the view is enabled
+- api/ui.datatable_isselected.md - returns true if related record is selected
 - api/link/ui.datatable_isvisible.md - checks whether the view is visible
 - api/link/ui.datatable_load.md - loads data from an external data source.
 - api/link/ui.datatable_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
@@ -213,6 +214,7 @@ Methods
 - api/ui.datatable_hideoverlay.md
 - api/ui.datatable_iscolumnvisible.md
 - api/link/ui.datatable_isenabled.md
+- api/ui.datatable_isselected.md
 - api/link/ui.datatable_isvisible.md
 - api/link/ui.datatable_load.md
 - api/link/ui.datatable_loadnext.md

@@ -10,6 +10,7 @@ Others
 - api/link/ui.uploader_$setsize_other.md - sets the component size
 - api/link/ui.uploader_$setvalue_other.md - called each time when component need to set value in related html input
 - api/link/ui.uploader_$skin_other.md - method, which will be called when skin defined
+- api/ui.uploader_$updateprogress_other.md - method for updating progress state
 - api/link/ui.uploader_$view_other.md - reference to top html element of the view
 - api/link/ui.uploader_$width_other.md - current width of the view
 - api/link/ui.uploader_config_other.md - all options from initial component configuration
@@ -27,6 +28,7 @@ Others
 - api/link/ui.uploader_$setsize_other.md
 - api/link/ui.uploader_$setvalue_other.md
 - api/link/ui.uploader_$skin_other.md
+- api/ui.uploader_$updateprogress_other.md
 - api/link/ui.uploader_$view_other.md
 - api/link/ui.uploader_$width_other.md
 - api/link/ui.uploader_config_other.md

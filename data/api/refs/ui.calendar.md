@@ -130,9 +130,11 @@ The control supports all date and time formats. Besides the days of the month, i
 - api/link/ui.calendar_id_config.md - the component ID
 - api/ui.calendar_maxdate_config.md - set man limit for selected date
 - api/link/ui.calendar_maxheight_config.md - sets the maximum height for the view
+- api/ui.calendar_maxtime_config.md - 
 - api/link/ui.calendar_maxwidth_config.md - sets the maximum width for the view
 - api/ui.calendar_mindate_config.md - set min limit for selected date
 - api/link/ui.calendar_minheight_config.md - sets the minimal height for the view
+- api/ui.calendar_mintime_config.md - minimal allowed time
 - api/link/ui.calendar_minwidth_config.md - sets the minimal width for the view
 - api/ui.calendar_minutestep_config.md - step of time selector
 - api/ui.calendar_monthselect_config.md - enables the ability to select month by clicking the "month" panel

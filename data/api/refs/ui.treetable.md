@@ -181,6 +181,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 
 {{api
 - api/link/ui.treetable_onafteradd_event.md - fires after adding item to datastore
+- api/link/ui.treetable_onafterblockselect_event.md - event occurs after block selection
 - api/link/ui.treetable_onafterclose_event.md - fires after the branch has been closed
 - api/link/ui.treetable_onaftercolumndrop_event.md - fires after the column has been dragged and dropped to the target position
 - api/link/ui.treetable_onaftercolumndroporder_event.md - fires after the column order was changed with the help of drag-and-drop
@@ -198,6 +199,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_onaftersort_event.md - fires after sorting dataset
 - api/link/ui.treetable_onafterunselect_event.md - fires after a cell is unselected
 - api/link/ui.treetable_onbeforeadd_event.md - fires before adding item to datastore
+- api/link/ui.treetable_onbeforeblockselect_event.md - event occurs before block selection
 - api/link/ui.treetable_onbeforeclose_event.md - fires the moment you attempt to close the tree branch
 - api/link/ui.treetable_onbeforecolumndrag_event.md - fires the monent you start dragging the column from its source potition
 - api/link/ui.treetable_onbeforecolumndrop_event.md - fires the moment you drop the column to its target position
@@ -299,6 +301,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_leftsplit_config.md - the number of the fixed columns from the left side of the table (actual for the <a href="datatable/frozen_columns.md">split mode</a> )
 - api/link/ui.treetable_livevalidation_config.md - validation during cell editing
 - api/link/ui.treetable_loadahead_config.md - sets the number of items that will be loaded on each scroll movement relative to the last item in the scrolling direction
+- api/link/ui.treetable_map_config.md - defines data mapping
 - api/link/ui.treetable_math_config.md - enables math formulas in DataTable
 - api/link/ui.treetable_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.treetable_maxwidth_config.md - sets the maximum width for the view

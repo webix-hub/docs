@@ -30,6 +30,7 @@ Check [multicombo](desktop/controls.md#multicombo) documentation for more detail
 - api/link/ui.multicombo_getchildviews.md - returns child views of the calling component
 - api/link/ui.multicombo_getformview.md - returns master form for the input
 - api/link/ui.multicombo_getinputnode.md - gets the HTML element related to the component
+- api/link/ui.multicombo_getlist.md - returns list view of the control
 - api/link/ui.multicombo_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.multicombo_getparentview.md - returns the parent view of the component
 - api/link/ui.multicombo_getpopup.md - returns popup element of the input
@@ -95,7 +96,7 @@ Check [multicombo](desktop/controls.md#multicombo) documentation for more detail
 - api/link/ui.multicombo_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.multicombo_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/link/ui.multicombo_icon_config.md - sets an icon type
-- api/ui.multicombo_iconwidth_config.md - 
+- api/ui.multicombo_iconwidth_config.md - sets icon width
 - api/link/ui.multicombo_id_config.md - the component ID
 - api/link/ui.multicombo_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.multicombo_inputpadding_config.md - padding of text in the input

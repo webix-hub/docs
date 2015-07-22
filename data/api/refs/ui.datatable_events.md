@@ -3,6 +3,7 @@ Events
 
 {{api
 - api/link/ui.datatable_onafteradd_event.md - fires after adding item to datastore
+- api/ui.datatable_onafterblockselect_event.md - event occurs after block selection
 - api/ui.datatable_onaftercolumndrop_event.md - fires after the column has been dragged and dropped to the target position
 - api/ui.datatable_onaftercolumndroporder_event.md - fires after the column order was changed with the help of drag-and-drop
 - api/link/ui.datatable_onaftercontextmenu_event.md - fires after the context menu was called in the item area
@@ -18,6 +19,7 @@ Events
 - api/link/ui.datatable_onaftersort_event.md - fires after sorting dataset
 - api/ui.datatable_onafterunselect_event.md - fires after a cell is unselected
 - api/link/ui.datatable_onbeforeadd_event.md - fires before adding item to datastore
+- api/ui.datatable_onbeforeblockselect_event.md - event occurs before block selection
 - api/ui.datatable_onbeforecolumndrag_event.md - fires the monent you start dragging the column from its source potition
 - api/ui.datatable_onbeforecolumndrop_event.md - fires the moment you drop the column to its target position
 - api/ui.datatable_onbeforecolumndroporder_event.md - fires the moment you drop the column over the target area
@@ -72,6 +74,7 @@ Events
 
 @index:
 - api/link/ui.datatable_onafteradd_event.md
+- api/ui.datatable_onafterblockselect_event.md
 - api/ui.datatable_onaftercolumndrop_event.md
 - api/ui.datatable_onaftercolumndroporder_event.md
 - api/link/ui.datatable_onaftercontextmenu_event.md
@@ -87,6 +90,7 @@ Events
 - api/link/ui.datatable_onaftersort_event.md
 - api/ui.datatable_onafterunselect_event.md
 - api/link/ui.datatable_onbeforeadd_event.md
+- api/ui.datatable_onbeforeblockselect_event.md
 - api/ui.datatable_onbeforecolumndrag_event.md
 - api/ui.datatable_onbeforecolumndrop_event.md
 - api/ui.datatable_onbeforecolumndroporder_event.md

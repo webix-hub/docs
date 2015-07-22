@@ -44,6 +44,7 @@ Properties
 - api/link/ui.treetable_leftsplit_config.md - the number of the fixed columns from the left side of the table (actual for the <a href="datatable/frozen_columns.md">split mode</a> )
 - api/link/ui.treetable_livevalidation_config.md - validation during cell editing
 - api/link/ui.treetable_loadahead_config.md - sets the number of items that will be loaded on each scroll movement relative to the last item in the scrolling direction
+- api/link/ui.treetable_map_config.md - defines data mapping
 - api/link/ui.treetable_math_config.md - enables math formulas in DataTable
 - api/link/ui.treetable_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.treetable_maxwidth_config.md - sets the maximum width for the view
@@ -128,6 +129,7 @@ Properties
 - api/link/ui.treetable_leftsplit_config.md
 - api/link/ui.treetable_livevalidation_config.md
 - api/link/ui.treetable_loadahead_config.md
+- api/link/ui.treetable_map_config.md
 - api/link/ui.treetable_math_config.md
 - api/link/ui.treetable_maxheight_config.md
 - api/link/ui.treetable_maxwidth_config.md

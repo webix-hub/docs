@@ -32,6 +32,7 @@ The lib can execute **get** and **post** requests in sync and async mode. For mo
 - api/ajax_response.md - sets response type of the request
 - api/ajax_stringify.md - converts data object into a string before sending it to server
 - api/ajax_sync.md - 'says' to send requests synchronously
+- api/ajax_timeout.md - max time for ajax request in milliseconds
 }}
 
 

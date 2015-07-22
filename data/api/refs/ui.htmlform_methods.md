@@ -30,6 +30,7 @@ Methods
 - api/link/ui.htmlform_isvisible.md - checks whether the view is visible
 - api/link/ui.htmlform_load.md - loads data from an external data source.
 - api/link/ui.htmlform_mapevent.md - routes events from one object to another
+- api/link/ui.htmlform_markinvalid.md - 
 - api/link/ui.htmlform_parse.md - loads data to the component from an inline data source
 - api/link/ui.htmlform_refresh.md - repaints the component
 - api/link/ui.htmlform_render.md - renders the specified item or the whole component
@@ -74,6 +75,7 @@ Methods
 - api/link/ui.htmlform_isvisible.md
 - api/link/ui.htmlform_load.md
 - api/link/ui.htmlform_mapevent.md
+- api/link/ui.htmlform_markinvalid.md
 - api/link/ui.htmlform_parse.md
 - api/link/ui.htmlform_refresh.md
 - api/link/ui.htmlform_render.md

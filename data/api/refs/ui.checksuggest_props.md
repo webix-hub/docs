@@ -39,6 +39,7 @@ Properties
 - api/link/ui.checksuggest_textvalue_config.md - defines which field from suggest list will be used as text after selecting an option
 - api/link/ui.checksuggest_top_config.md - the top offset of a window
 - api/link/ui.checksuggest_type_config.md - defines type of suggest control
+- api/link/ui.checksuggest_value_config.md - 
 - api/link/ui.checksuggest_width_config.md - sets the width of the component
 - api/link/ui.checksuggest_zindex_config.md - stack order of the component
 }}
@@ -81,6 +82,7 @@ Properties
 - api/link/ui.checksuggest_textvalue_config.md
 - api/link/ui.checksuggest_top_config.md
 - api/link/ui.checksuggest_type_config.md
+- api/link/ui.checksuggest_value_config.md
 - api/link/ui.checksuggest_width_config.md
 - api/link/ui.checksuggest_zindex_config.md
 

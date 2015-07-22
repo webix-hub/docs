@@ -17,6 +17,7 @@ Methods
 - api/link/ui.multiselect_getchildviews.md - returns child views of the calling component
 - api/link/ui.multiselect_getformview.md - returns master form for the input
 - api/link/ui.multiselect_getinputnode.md - gets the HTML element related to the component
+- api/link/ui.multiselect_getlist.md - returns list view of the control
 - api/link/ui.multiselect_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.multiselect_getparentview.md - returns the parent view of the component
 - api/link/ui.multiselect_getpopup.md - returns popup element of the input
@@ -55,6 +56,7 @@ Methods
 - api/link/ui.multiselect_getchildviews.md
 - api/link/ui.multiselect_getformview.md
 - api/link/ui.multiselect_getinputnode.md
+- api/link/ui.multiselect_getlist.md
 - api/link/ui.multiselect_getnode.md
 - api/link/ui.multiselect_getparentview.md
 - api/link/ui.multiselect_getpopup.md

@@ -14,6 +14,7 @@ Object is created automatically, and can be accessed as webix.UIManager
 
 {{api
 - api/uimanager_addhotkey.md - adds the hot key handler
+- api/uimanager_applychanges.md - triggers onChange handlers for active component
 - api/uimanager_canfocus.md - checks whether the view can be focused
 - api/uimanager_destructor.md - Destructor. Destroys the UIManager instance
 - api/uimanager_getfocus.md - retrieves the  view which has focus

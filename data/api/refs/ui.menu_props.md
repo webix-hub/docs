@@ -28,7 +28,7 @@ Properties
 - api/link/ui.menu_minheight_config.md - sets the minimal height for the view
 - api/link/ui.menu_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.menu_mouseeventdelay_config.md - the delay between a real mouse action and invoking the related events
-- api/link/ui.menu_multiselect_config.md - 
+- api/link/ui.menu_multiselect_config.md - enables multiselect mode
 - api/link/ui.menu_navigation_config.md - activates the selection keyboard navigation
 - api/link/ui.menu_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.menu_onclick_config.md - attaches a click behavior for component items with the specified CSS class.

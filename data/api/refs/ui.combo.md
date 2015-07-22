@@ -42,6 +42,7 @@ The control combines an editable text field with a drop-down list of predefined 
 - api/link/ui.combo_getchildviews.md - returns child views of the calling component
 - api/link/ui.combo_getformview.md - returns master form for the input
 - api/link/ui.combo_getinputnode.md - gets the HTML element related to the component
+- api/link/ui.combo_getlist.md - returns list view of the control
 - api/link/ui.combo_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.combo_getparentview.md - returns the parent view of the component
 - api/link/ui.combo_getpopup.md - returns popup element of the input

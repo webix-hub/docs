@@ -17,6 +17,7 @@ Methods
 - api/link/ui.multicombo_getchildviews.md - returns child views of the calling component
 - api/link/ui.multicombo_getformview.md - returns master form for the input
 - api/link/ui.multicombo_getinputnode.md - gets the HTML element related to the component
+- api/link/ui.multicombo_getlist.md - returns list view of the control
 - api/link/ui.multicombo_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.multicombo_getparentview.md - returns the parent view of the component
 - api/link/ui.multicombo_getpopup.md - returns popup element of the input
@@ -55,6 +56,7 @@ Methods
 - api/link/ui.multicombo_getchildviews.md
 - api/link/ui.multicombo_getformview.md
 - api/link/ui.multicombo_getinputnode.md
+- api/link/ui.multicombo_getlist.md
 - api/link/ui.multicombo_getnode.md
 - api/link/ui.multicombo_getparentview.md
 - api/link/ui.multicombo_getpopup.md

@@ -62,6 +62,7 @@ The component provides validation and the ability to save user input to the back
 - api/link/ui.form_isvisible.md - checks whether the view is visible
 - api/link/ui.form_load.md - loads data from an external data source.
 - api/link/ui.form_mapevent.md - routes events from one object to another
+- api/link/ui.form_markinvalid.md - 
 - api/link/ui.form_parse.md - loads data to the component from an inline data source
 - api/link/ui.form_reconstruct.md - rebuilds the layout
 - api/link/ui.form_refresh.md - repaints the component
@@ -106,6 +107,7 @@ The component provides validation and the ability to save user input to the back
 - api/ui.form_autoheight_config.md - sets component height according to its contents
 - api/link/ui.form_borderless_config.md - used to hide the component borders
 - api/link/ui.form_cols_config.md - array of views objects arranged horizontally
+- api/link/ui.form_complexdata_config.md - enables complex data parsing mode
 - api/link/ui.form_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.form_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.form_data_config.md - JavaScript array containing data for the component

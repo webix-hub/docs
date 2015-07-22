@@ -2,6 +2,7 @@ Properties
 ==========
 
 {{api
+- api/link/treecollection_columns_config.md - 
 - api/link/treecollection_data_config.md - JavaScript array containing data for the component
 - api/link/treecollection_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/treecollection_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
@@ -9,6 +10,7 @@ Properties
 - api/link/treecollection_defaultdata_config.md - the property stores data which is displayed in the child when no records are selected in the  master.
 - api/link/treecollection_filtermode_config.md - defines the pattern for tree item filtering
 - api/link/treecollection_id_config.md - the component ID
+- api/link/treecollection_map_config.md - defines data mapping
 - api/link/treecollection_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/treecollection_ready_config.md - event handler called just after the component has been completely initialized
 - api/link/treecollection_removemissed_config.md - defines how to treat items in case of reloading
@@ -19,6 +21,7 @@ Properties
 }}
 
 @index:
+- api/link/treecollection_columns_config.md
 - api/link/treecollection_data_config.md
 - api/link/treecollection_datafeed_config.md
 - api/link/treecollection_datathrottle_config.md
@@ -26,6 +29,7 @@ Properties
 - api/link/treecollection_defaultdata_config.md
 - api/link/treecollection_filtermode_config.md
 - api/link/treecollection_id_config.md
+- api/link/treecollection_map_config.md
 - api/link/treecollection_on_config.md
 - api/link/treecollection_ready_config.md
 - api/link/treecollection_removemissed_config.md
