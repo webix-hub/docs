@@ -7,14 +7,14 @@ Start
 <div class='index-pc'></div>
 <div class='index-board'>
 
-<h2>Meet Webix 2.4!</h2>
+<h2>Meet Webix 2.5!</h2>
 <ul>
-	<li>New <a href="desktop/portlet.md">Portlet</a> widget</li>
-    <li><a href="desktop/controls.md#multicombo">Multicombo</a> and <a href="desktop/controls.md#slider">Range Slider</a> form controls</li>
-    <li>Built-in <a href="desktop/data_validation.md#validationmessage">validation messages</a> for form fields</li>
+	<li>Support of upcoming Microsoft Edge</li>
+    <li><a href="kanban/configuration.md#creatingswimlanes">Swimlanes in Kanban widget</a></li>
+    <li>Ability to <a href="desktop/calendar.md#disablingdatesandtimeslotsincalendar">disable time periods</a> for Calendar widget</li>
 </ul>
 
-<p> and <a href="desktop/whats_new_2_4.md">many more...</a></p>
+<p> and <a href="desktop/whats_new_2_5.md">many more...</a></p>
 <a href='http://webix.com/download/' class='index-download' title='Download Webix'></a>
 </div>
 

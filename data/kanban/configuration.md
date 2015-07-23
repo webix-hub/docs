@@ -240,7 +240,7 @@ webix.ui({
 Each loaded data item (task) will be placed into a list the "status" values of which correspond to "status" and "team" properties of the task.
 
 {{sample 
-63_kanban/04_layouts/03_swim_lanes.html
+63_kanban/04_layouts/03_swimlanes.html
 }}
 
 You can use any names of data properties within the complex **status** of a Kanban list and these names will be used to filter data items. 

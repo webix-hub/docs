@@ -11,7 +11,7 @@ Properties
 - api/link/ui.treetable_checkboxrefresh_config.md - controls behavior of checkbox editors in grid
 - api/link/ui.treetable_clipboard_config.md - enables/disables clipboard support
 - api/link/ui.treetable_columnwidth_config.md - defines the default width for columns (in pixels)
-- api/link/ui.treetable_columns_config.md - configures columns of the table
+- api/link/ui.treetable_columns_config.md - 
 - api/link/ui.treetable_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.treetable_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.treetable_data_config.md - JavaScript array containing data for the component
@@ -33,7 +33,7 @@ Properties
 - api/link/ui.treetable_fixedrowheight_config.md - defines whether the height should be fixed for all rows or can vary
 - api/link/ui.treetable_footer_config.md - enables/disables the footer in DataTable (disabled, by default)
 - api/link/ui.treetable_form_config.md - linked form
-- api/ui.treetable_format_config.md - 
+- api/link/ui.treetable_format_config.md - 
 - api/link/ui.treetable_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.treetable_header_config.md - enables/disables the header in DataTable (enabled, by default)
 - api/link/ui.treetable_headerrowheight_config.md - sets the heigth of the header row
@@ -119,7 +119,7 @@ Properties
 - api/link/ui.treetable_fixedrowheight_config.md
 - api/link/ui.treetable_footer_config.md
 - api/link/ui.treetable_form_config.md
-- api/ui.treetable_format_config.md
+- api/link/ui.treetable_format_config.md
 - api/link/ui.treetable_gravity_config.md
 - api/link/ui.treetable_header_config.md
 - api/link/ui.treetable_headerrowheight_config.md

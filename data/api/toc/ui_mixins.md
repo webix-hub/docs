@@ -10,7 +10,7 @@ Mixins
 - api/refs/basebind.md -  core of all bind operations
 - api/refs/bindsource.md -  logic for source of data in bind operations
 - api/refs/canvas.md -  wrapper for HTML Canvas tag
-- api/refs/codeparser.md - 
+- api/refs/codeparser.md -   parsing rules for complex values 
 - api/refs/collectionbind.md -  binding rules for collections of objects
 - api/refs/contexthelper.md -  provides for subviews seen by right mouse click
 - api/refs/copypaste.md -  provides support for copy-paste operations (integration with clipboard) 

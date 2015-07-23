@@ -2,10 +2,10 @@ CodeParser
 =============
 
 
-dummy stub
+{{memo Parsing rules for complex values. }}}
 
-{{todo replace with real description. }}
-
+Is used by [toolbar](api/refs/ui.toolbar.md), [form](api/refs/ui.form.md) and [property sheet](api/refs/ui.property.md) 
+components in a [complexData](api/link/ui.form_complexdata_config.md) mode.
 
 
 <div class='h2'>Methods</div>
