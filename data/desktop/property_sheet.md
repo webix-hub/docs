@@ -55,6 +55,33 @@ $$("sets").setValues({
 var values = $$("sets").getValues();
 ~~~
 
+**Complex Values**
+
+Property sheet can take complex values in the **complexData** mode: 
+
+~~~js
+webix.ui({
+	view:"property",  
+	id:"sets", 
+	complexData:true,
+	elements:[
+		{ label:"Width", type:"text", id:"layout.width" },
+		{ label:"Height", type:"text", id:"layout.height"}
+	]
+});
+
+$$("sets").setValues({
+	layout:{
+		width:250,
+		height:480
+	}
+});
+~~~
+
+{{sample 07_property/04_complex_values.html}}
+
+The **names** of property elements should be concatenated from the data names within the values.
+
 ####Editing Data in Property Sheet Elements
 
 Each element features a built-in editor specified by **type** property. Possible values coincide with [editor types](desktop/editing.md) and include: 

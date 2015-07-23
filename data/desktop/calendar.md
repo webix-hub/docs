@@ -85,7 +85,7 @@ $$("calendar1").getValue(); // returns the non-formatted date object
                             // -> Mon Apr 30 2012 00:00:00 GMT+0300 (EEST)
 ~~~
 
-## Datepicker 
+##Datepicker 
 
 Calendar can be displayed on customer request, for instance when a user wants to pick a date and time to fill the form. For these needs a **[datepicker](desktop/controls.md#datepicker)** control
 is used. Note that here you needn't initialize Calendar - it will appear as soon as you click a datepicker icon. In this case the calendar comes with current date displayed. 
@@ -103,9 +103,19 @@ webix.ui({
 ~~~
 {{sample 09_calendar/06_datepicker.html }}
 
-##Timepicker in Calendar
+##Time Selector in Calendar
 
-Timepicker is a calendar feature that allows picking time. Being one of the component's properties, it is *false* by default: 
+Webix calendar offers two ways of time selection: 
+
+- built-in timepicker;
+- separate time view.
+
+Time slots in selector are multiple of 5.
+
+**Timepicker inside Calendar**
+
+The [timepicker](api/ui.datepicker_timepicker_config.md) is hidden by default. To enable it you should set the property to *true*.
+Then a timepicker is accessed by clicking a "clock" icon below the calendar grid. 
 
 <img src="desktop/timepicker.png">
 
@@ -126,9 +136,22 @@ With timepicker enabled, time is shown below month view within the calendar body
 
 {{sample 09_calendar/03_timepicker.html }}
 
-{{note
-Time selector can be hidden and shown back by **timePicker** property with *true/false* value. 
-}}
+**Time view**
+
+<img src="desktop/timeview.png">
+
+Time view of the calendar is detached from date selector and is shown separately. To initialize such a control you should set calendar to **time** mode.
+
+~~~js
+webix.ui({
+	view:"calendar",
+	type:"time"
+});
+~~~
+
+{{sample /09_calendar/03_timepicker.html}}
+
+Like standard calendar, time view accepts values as string or date object.
 
 ##Localization
 
@@ -159,7 +182,7 @@ webix.i18n.setLocale();
 You need to call the api/i18n_setlocale.md method to make changes come into force. 
 
 
-##Disabling Period in Calendar {#blockdates}
+##Disabling Dates and Time Slots in Calendar {#blockdates}
 
 The whole calendar can be disabled by a common property:
 
@@ -171,11 +194,14 @@ The whole calendar can be disabled by a common property:
 
 {{sample 09_calendar/08_disabled_dates.html}} 
 
+###Disabling dates
+
 To disable a certain period in the calendar, which presupposes specific CSS and blocking of click events, you can go by the two ways: 
 
 **Defining "active" period**
 
-Use the dedicated **minDate** and **maxDate** properties to limit the period that will be available for clicking and, hence, selecting: 
+Use the dedicated [minDate](api/ui.calendar_mindate_config.md) and [maxDate](api/ui.calendar_maxdate_config.md) properties 
+to limit the period that will be available for clicking and, hence, selecting: 
 
 ~~~js
 { view:"calendar", minDate:'2014-05-07', maxDate:new Date(2014, 4, 13) }
@@ -183,9 +209,9 @@ Use the dedicated **minDate** and **maxDate** properties to limit the period tha
 
 The dates can be defined either as **date object** or **date string** formatted under the current [locale](desktop/localization.md). Here the default **en-US** parseFormat is used, "%Y-%m-%d". 
 
-**Defining "blockDates" function for custom logic**
+**Defining blockDates() function for custom logic**
 
-The function should return true for the dates that should be disabled in the calendar. Here all date up to 2014 will be disabled:
+The [function](api/ui.calendar_blockdates_config.md) should return *true* for the dates that should be disabled in the calendar. Here all date up to 2014 will be disabled:
 
 ~~~js
 webix.ui({
@@ -197,7 +223,55 @@ webix.ui({
 });    
 ~~~
 
-CSS class applied for disabled dates (**webix_cal_day_disabled**) can be redefined. 
+CSS class applied to disabled dates (**.webix_cal_day_disabled**) can be redefined. 
+
+###Disabling time slots
+
+Calendar features a [time selector](desktop/calendar.md#timeselectorincalendar) where you can disable time slots. 
+Disabled time slots feature specific CSS and don't respond to click events. They should be **multiple of 5**. 
+
+**Defining blocked time periods**
+
+Use the dedicated [minTime](api/ui.calendar_mintime_config.md) and [maxTime](api/ui.calendar_maxtime_config.md)
+properties to set the time period that will be available for selecting: 
+
+~~~js
+webix.ui({
+	view:"calendar",
+	timepicker:true,
+	minTime:"8:00",
+	maxTime:"18:30"
+});
+~~~
+
+{{sample 09_calendar/11_disabled_time.html}} 
+
+**Defining blockTime() function for custom logic**
+
+The function takes a **date object** as parameter and should return *true* for disabled time slots.
+
+~~~js
+var disabledTime = [
+	new Date(2015,6,1,8,40), 
+    new Date(2015,6,1,9,10),
+    new Date(2015,6,1,10,30)
+];
+
+webix.ui({
+	view:"calendar",
+    blockTime:function(date){
+		for(var i =0; i< disabledTime.length; i++){
+			if(disabledTime[i].valueOf() == date.valueOf())
+				return true
+		}
+		return false;
+	}
+});
+~~~
+
+{{sample 09_calendar/11_disabled_time.html}} 
+
+CSS class applied to disabled time slots (**.webix_minutes .webix_cal_day_disabled**) can be redefined.
 
 ##Today and Clear Buttons
 

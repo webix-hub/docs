@@ -18,6 +18,7 @@ function get_form() {
 }
 @relatedapi:
 	api/link/ui.form_setvalues.md
+    api/values_complexdata_config.md
 @related: 
 	desktop/form_tasks.md
 @relatedsample:

@@ -23,8 +23,15 @@ form.setValues({
 
 
 @template:	api_config
+
+@relatedapi:
+	api/values_setvalues.md
+    api/values_getvalues.md
+@relatedsample:
+	07_property/04_complex_values.html
+    13_form/02_api/14_complex_values.html
 @descr:
 
-In this mode it is possible to use complex data object for getValues and setValues operations
+In this mode it is possible to use complex data object for getValues and setValues operations.
 
 

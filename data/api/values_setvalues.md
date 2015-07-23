@@ -26,6 +26,7 @@ function set_form(){
     
 @relatedapi:
 	api/link/ui.form_getvalues.md
+    api/values_complexdata_config.md
 @related: 
 	desktop/form_tasks.md
 @relatedsample:
@@ -38,13 +39,15 @@ function set_form(){
 The methods allows for setting several values at time. Pass the 
 **names** of the necessary elements and their values into the function. 
 
-Data object with values can feature sub items of any level of complexity. In this case
-elements names are concatenated from all the data names in the chain: 
+##Complex Data
 
+In the **complex data** mode the object with values can feature sub items of any complexity level. 
+In this case elements names are concatenated from all the data names in the chain: 
 ~~~
 webix.ui({
 	view:"form",
     id:"sets",
+    complexData:true,
     elements:[
     	{ view:"text", name:"layout.width" },
     	{ view:"text", name:"layout.height" }
@@ -58,6 +61,9 @@ $$("sets").setValues({
     }
 });
 ~~~
+
+
+Complex data mode is enabled with the help of a [same-name parameter](api/values_complexdata_config.md) in the form/toolbar/property sheet configuration.
 
 ##Updating values
 
@@ -76,6 +82,7 @@ To avoid this, set the **update** parameter to *true*. The form will be updated 
 ~~~js
 $$("my_form").setValues({ field_b:"Paris" }, true); 
 ~~~
+
 
 
 

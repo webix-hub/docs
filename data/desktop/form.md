@@ -82,14 +82,28 @@ Data names of these values must coincide with values of [name](api/link/ui.text_
 
 ~~~js
 elements:[
-	{ view:"text", name:"value1", label:"value1" },
-    { view:"text", name:"value2", label:"value1" }
+	{ view:"text", name:"value1"},
+    { view:"text", name:"value2" }
 ]
 ~~~
 
-Form values can be of any complexity level, which means that sub items are as well acceptable:
+**Complex Data**
+
+Form values can be of any complexity level, which means that sub items are acceptable. For these needs the form should have the following configuration: 
+
+- **complexData** property should be set to true;
+- element **names** should be concatenated from all the data names in the chain. 
 
 ~~~js
+webix.ui({
+	view:"form",
+	complexData:true,
+	elements:[
+		{ label:"Width", view:"text", name:"layout.width" },
+		{ label:"Height", view:"text", name:"layout.height"}
+	]
+});
+
 $$("sets").setValues({
 	layout:{
 		width:250,
@@ -98,18 +112,7 @@ $$("sets").setValues({
 });
 ~~~
 
-For nested values element **names** should be concatenated from all the data names in the chain: 
-
-~~~js
-elements:[
-	{ label:"Width", view:"text", name:"layout.width", value: 250},
-	{ label:"Height", view:"text", name:"layout.height"}
-]
-~~~
-
-{{sample 
-13_form/02_api/14_complex_values.html
-}}
+{{sample  13_form/02_api/14_complex_values.html }}
 
 **Loading/parsing values**
 

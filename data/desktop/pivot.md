@@ -239,7 +239,27 @@ And use it as:
 values:[ name:"oil", operation:"abssum"]
 ~~~
 
+###Sum counters for columns and rows
 
+To calculate the total sum for each row, **total column** can be set: 
+
+~~~js
+view:"pivot"
+totalColumn: "sumOnly",
+...
+~~~
+
+To calculate the total sum per column, **footer** can be defined: 
+
+~~~js
+view:"pivot"
+footer: "sumOnly",
+...
+~~~
+
+{{sample 61_pivot/03_table_api/02_total_column.html}}
+
+The "sumOnly" value of both properties forces the summing function to process only rows/columns that contain sums already. 
 
 ###Filters
 
