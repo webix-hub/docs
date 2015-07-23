@@ -56,21 +56,21 @@ There exists a possibility to specify [common configuration](desktop/common_conf
 Differently-sized buttons can be included into the toolbar with the help of a custom function:
 
 ~~~js
-	webix.ui({
-		container:"areaD",
-		view:"toolbar",
-		cols: buttons(48) /*here you specify the parameter you want to 
-        					pass to the function defined later*/
-	});	
+webix.ui({
+	container:"areaD",
+	view:"toolbar",
+	cols: buttons(48) /*here you specify the parameter you want to 
+        				pass to the function defined later*/
+});	
     
-   function buttons(size){
-				return  [
-					{ view:"button", type:"image"+size,
-						image:"../common/imgs/"+size+"/save.gif", width:size+7},
-					{ view:"button", type:"image"+size,
-						image:"../common/imgs/"+size+"/copy.gif", width:size+7}
-				];
-               }
+function buttons(size){
+	return  [
+	{ view:"button", type:"image"+size,
+		image:"../common/imgs/"+size+"/save.gif", width:size+7},
+	{ view:"button", type:"image"+size,
+		image:"../common/imgs/"+size+"/copy.gif", width:size+7}
+	];
+}
 ~~~
 
 More info about how to [manipulate button groups](desktop/button_groups.md).
@@ -84,7 +84,6 @@ Icons can be nested into all the library conponents. Within toolbar, icon button
 {{sample 02_toolbar/11_toolbar_icons.html }}
 
 Learn more about icon types in the [dedicated chapter of the manual](desktop/icon_types.md). 
-
 
 
 ##Related Articles

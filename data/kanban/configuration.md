@@ -196,3 +196,54 @@ webix.ready(function(){
 	});
 });
 ~~~
+
+Creating swimlanes
+-------------------
+
+It is possible to assign a complex value to a **status** property of a Kanban list. That will allow to implement swimlanes in your Kanban board.
+
+For example, lets take a Kanban board with *To Do*, *In Progress* and *Done* columns containing lists with *new*, *work* and *done* statuses.
+The *In Progress* column should contain tasks for *development* and *design* teams. So, instead of one list we may set two lists with 
+**complex statuses** that consist of two properties: **status** and **team**.
+
+~~~js
+webix.ui({
+    view:"kanban",
+    cols:[
+   	 {
+   		 header:"To Do",
+   		 body:{ view:"kanbanlist", status:"new"}
+   	 },
+   	 {
+   		 header:"In progress",
+   		 body:{
+   			 rows:[
+   				 { template: "Development", height: 27},
+   				 { view: "kanbanlist", status: { status: "work", team: 1 }},
+   				 { template: "Design", height: 27},
+   				 { view: "kanbanlist", status: { status: "work", team: 2 }}
+   			 ]
+   		 }
+   	 },
+   	 {
+   		 header:"Done",
+   		 body:{ view:"kanbanlist", status:"done" }
+   	 }
+    ],
+    data:[
+   	 	{ id:1, status:"work", team: 1, text:"SpreadSheet NodeJS" },
+    	{ id:1, status:"work", team: 2, text:"New skin" }
+    ]
+});
+~~~
+
+Each loaded data item (task) will be placed into a list the "status" values of which correspond to "status" and "team" properties of the task.
+
+{{sample 
+63_kanban/04_layouts/03_swim_lanes.html
+}}
+
+You can use any names of data properties within the complex **status** of a Kanban list and these names will be used to filter data items. 
+
+But it is advised to have a *status* name among them and use a *status* property in item data. It ensures correct work of a Kanban board when moving the task into another Kanban list with a simple status.
+

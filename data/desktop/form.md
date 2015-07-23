@@ -48,6 +48,99 @@ webix.ui({
 There exists a possibility to specify [common configuration](desktop/common_config.md) for all controls included in this or that form.
 }}
 
+##Settings Initial Values
+
+Initial form values can be set in different ways: 
+
+**Setting value of each element separately**
+
+Every form control features [value](api/link/ui.text_value_config.md) property: 
+
+~~~js
+{ view:"text", id:"fname", value:"Adam Smith"}
+~~~
+
+Or, you can call the [setValue()](api/link/ui.text_setvalue.md) method for it:
+
+~~~js
+$$("fname").setValue("Adam Smith");
+~~~
+
+However, this way is not effective while working with the whole form.
+
+**Using setValues API**
+
+ To set form values in a scope, you can use its [setValues()](api/link/ui.form_setvalues.md) method. It takes an object with values as first (and mandatory) parameter: 
+
+~~~js
+$$("$form1").setValues({
+	value1:"111", value2:"222"
+});
+~~~
+
+Data names of these values must coincide with values of [name](api/link/ui.text_name_config.md) parameters of the corresponding form elements: 
+
+~~~js
+elements:[
+	{ view:"text", name:"value1", label:"value1" },
+    { view:"text", name:"value2", label:"value1" }
+]
+~~~
+
+Form values can be of any complexity level, which means that sub items are as well acceptable:
+
+~~~js
+$$("sets").setValues({
+	layout:{
+		width:250,
+		height:480
+	}
+});
+~~~
+
+For nested values element **names** should be concatenated from all the data names in the chain: 
+
+~~~js
+elements:[
+	{ label:"Width", view:"text", name:"layout.width", value: 250},
+	{ label:"Height", view:"text", name:"layout.height"}
+]
+~~~
+
+{{sample 
+13_form/02_api/14_complex_values.html
+}}
+
+**Loading/parsing values**
+
+Webix form can load or parse data like any data management component. All the [data loading rules](desktop/data_loading.md) are true for it. 
+
+Again, data **attributes** should coincide with **names** of form fields: 
+
+{{snippet
+Parsing
+}}
+~~~js
+var data = {id:1, fname:"Ann", lname:"Brown"};
+
+webix.ui({
+	view:"form", id:"myform", elements:[
+		{view:"text", name:"fname"},
+    	{view:"text", name:"lname"}
+	],
+    data:data
+});    
+//or
+$$("myform").parse(data);
+~~~
+
+{{snippet
+Loading
+}}
+~~~js
+$$("myform").load("data.php");
+~~~
+
 ##Grouping Controls in Form
 
 ###Dividing form into sections
@@ -231,36 +324,6 @@ The easiest way to get to a parent form from any of its elements is to call the 
 {view:"text", on:{"onChange":function(){
 	var form = this.getFormView();
 }}}
-~~~
-
-##Loading and Parsing Initial Data
-
-Webix form can load or parse data like any data management component. All the [data loading rules](desktop/data_loading.md) are true for it. 
-
-Data **attributes** should coincide with **names** of form fields: 
-
-{{snippet
-Parsing
-}}
-~~~js
-var data = {id:1, fname:"Ann", lname:"Brown"};
-
-webix.ui({
-	view:"form", id:"myform", elements:[
-		{view:"text", name:"fname"},
-    	{view:"text", name:"lname"}
-	],
-    data:data
-});    
-//or
-$$("myform").parse(data);
-~~~
-
-{{snippet
-Loading
-}}
-~~~js
-$$("myform").load("data.php");
 ~~~
 
 ##Sending Form Data
