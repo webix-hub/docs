@@ -62,7 +62,7 @@ The component can contain various elements inside it (actually, the same element
 - api/link/ui.toolbar_isvisible.md - checks whether the view is visible
 - api/link/ui.toolbar_load.md - loads data from an external data source.
 - api/link/ui.toolbar_mapevent.md - routes events from one object to another
-- api/link/ui.toolbar_markinvalid.md - 
+- api/link/ui.toolbar_markinvalid.md - marks a form control invalid
 - api/link/ui.toolbar_parse.md - loads data to the component from an inline data source
 - api/link/ui.toolbar_reconstruct.md - rebuilds the layout
 - api/ui.toolbar_refresh.md - repaints the component
@@ -72,7 +72,7 @@ The component can contain various elements inside it (actually, the same element
 - api/link/ui.toolbar_resizechildren.md - resizes all children of the calling component
 - api/link/ui.toolbar_scrollto.md - scrolls the data container to a certain position
 - api/link/ui.toolbar_setdirty.md - marks the form as the one with changed values and vice versa
-- api/link/ui.toolbar_setvalues.md - sets values into all the form inputs
+- api/link/ui.toolbar_setvalues.md - sets values into the inputs of a form/toolbar/property sheet control
 - api/link/ui.toolbar_show.md - makes the component visible
 - api/link/ui.toolbar_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
 - api/link/ui.toolbar_unbind.md - breaks "bind" link

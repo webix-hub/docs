@@ -6,6 +6,7 @@ refreshColumns
       
 @params: 
 * config	array	array with new configurations for the columns
+* reset		boolean		if true, shows columns hidden by user before (false by default)
 
 @example:
 dtable.refreshColumns();

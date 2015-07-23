@@ -2,9 +2,13 @@ ui.checksuggest
 =============
 
 
-dummy stub
+{{memo A suggest control with a multiple-choice list. }} 
 
-{{todo replace with real description. }}
+Offers select options in the form of Webix [list](api/refs/ui.list.md) component equipped with checkboxes. 
+Features the ability to select multiple items at a time.
+
+Can be used standalone or as a suggest list for [text](api/refs/ui.text.md), [combo](api/refs/ui.combo.md) and [richselect](api/refs/ui.richselect.md)  controls as well as component [editors](api/refs/editors.md). 
+Is used by a [multiselect](api/refs/ui.multiselect.md) control already. 
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.multisuggest.md">ui.multisuggest</a>, <a href="api/refs/ui.suggest.md">ui.suggest</a>, <a href="api/refs/ui.popup.md">ui.popup</a>, <a href="api/refs/ui.window.md">ui.window</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/movable.md">Movable</a>, <a href="api/refs/modality.md">Modality</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>

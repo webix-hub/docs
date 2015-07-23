@@ -33,6 +33,7 @@ Properties
 - api/link/ui.treetable_fixedrowheight_config.md - defines whether the height should be fixed for all rows or can vary
 - api/link/ui.treetable_footer_config.md - enables/disables the footer in DataTable (disabled, by default)
 - api/link/ui.treetable_form_config.md - linked form
+- api/ui.treetable_format_config.md - 
 - api/link/ui.treetable_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.treetable_header_config.md - enables/disables the header in DataTable (enabled, by default)
 - api/link/ui.treetable_headerrowheight_config.md - sets the heigth of the header row
@@ -118,6 +119,7 @@ Properties
 - api/link/ui.treetable_fixedrowheight_config.md
 - api/link/ui.treetable_footer_config.md
 - api/link/ui.treetable_form_config.md
+- api/ui.treetable_format_config.md
 - api/link/ui.treetable_gravity_config.md
 - api/link/ui.treetable_header_config.md
 - api/link/ui.treetable_headerrowheight_config.md

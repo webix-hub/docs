@@ -72,7 +72,7 @@ The component can be used for creating various on-page editors. The value field 
 - api/link/ui.property_render.md - renders the specified item or the whole component
 - api/link/ui.property_resize.md - adjusts the view to a new size
 - api/link/ui.property_scrollto.md - scrolls the data container to a certain position
-- api/ui.property_setvalues.md - sets values into all the form inputs
+- api/ui.property_setvalues.md - sets values into the inputs of a form/toolbar/property sheet control
 - api/link/ui.property_show.md - makes the component visible
 - api/ui.property_showitem.md - 'scrolls' the table to make the specified row visible
 - api/link/ui.property_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
@@ -139,6 +139,7 @@ The component can be used for creating various on-page editors. The value field 
 - api/link/ui.property_editaction_config.md - defines the action on which editors will be opened
 - api/ui.property_elements_config.md - an array of property items
 - api/link/ui.property_form_config.md - linked form
+- api/ui.property_format_config.md - 
 - api/link/ui.property_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.property_height_config.md - sets the height of the component
 - api/link/ui.property_hidden_config.md - defines whether the view will be hidden initially

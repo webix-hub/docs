@@ -16,9 +16,9 @@ Values
 - api/values_getdirtyvalues.md - returns hash of changed values
 - api/values_getvalues.md - derives input values from the form
 - api/values_isdirty.md - checks whether changes within form were made
-- api/values_markinvalid.md - 
+- api/values_markinvalid.md - marks a form control invalid
 - api/values_setdirty.md - marks the form as the one with changed values and vice versa
-- api/values_setvalues.md - sets values into all the form inputs
+- api/values_setvalues.md - sets values into the inputs of a form/toolbar/property sheet control
 }}
 
 

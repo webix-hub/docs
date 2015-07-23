@@ -7,6 +7,7 @@ showColumnBatch
 
 @params:
 - batch      string, number      batch name
+- preserve 	boolean		hides batch; controls behaviour of other batches
 
 @example:
 
@@ -36,5 +37,12 @@ grid.showColumnBatch(3;
 	datatable/columns_configuration.md
 
 @template:	api_method
-@descr:
+@descr: 
+
+Preserve mode offers three possibilities: 
+
+- not defined - the desired group is shown, other groups are hidden. Only one group is visible at a time;
+- true - the desired group is shown, other groups preserve their state (hidden or visible); 
+- false - the desired group is hidden, other groups preserve their state (hidden or visible).
+
 

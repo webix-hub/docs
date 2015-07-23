@@ -59,7 +59,7 @@ The component allows you to get an HTML Form as a lib-based view, so that to use
 - api/link/ui.htmlform_isvisible.md - checks whether the view is visible
 - api/link/ui.htmlform_load.md - loads data from an external data source.
 - api/link/ui.htmlform_mapevent.md - routes events from one object to another
-- api/link/ui.htmlform_markinvalid.md - 
+- api/link/ui.htmlform_markinvalid.md - marks a form control invalid
 - api/link/ui.htmlform_parse.md - loads data to the component from an inline data source
 - api/link/ui.htmlform_refresh.md - repaints the component
 - api/link/ui.htmlform_render.md - renders the specified item or the whole component
@@ -68,7 +68,7 @@ The component allows you to get an HTML Form as a lib-based view, so that to use
 - api/link/ui.htmlform_setcontent.md - attaches html container to the template
 - api/link/ui.htmlform_setdirty.md - marks the form as the one with changed values and vice versa
 - api/link/ui.htmlform_sethtml.md - set hmlt for template
-- api/link/ui.htmlform_setvalues.md - sets values into all the form inputs
+- api/link/ui.htmlform_setvalues.md - sets values into the inputs of a form/toolbar/property sheet control
 - api/link/ui.htmlform_show.md - makes the component visible
 - api/link/ui.htmlform_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.htmlform_unbind.md - breaks "bind" link

@@ -3,12 +3,12 @@ blockselect
 
 
 @short: enables/disables block selection
-@type: boolean
+@type: boolean, string
 
 @example:
 webix.ui({
 	view:"datatable",
-	blockselect:true,
+	blockselect:"box",
 	...
 });
 
@@ -27,5 +27,12 @@ webix.ui({
 	15_datatable/05_selection/08_block_selection.html
 
 @descr:
+
+Possible values are: 
+
+- true (default) - overlay box is placed over the grid while dragging to mark potentially selected area
+- "box" - overlay box is placed over the potentially selected items while dragging
+- "select" - native datatable selection with select-related events firing on each cell selection
+
 
 

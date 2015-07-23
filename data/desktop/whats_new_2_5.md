@@ -13,23 +13,22 @@ Version 2.5
 
 ##Updates
 
-- resize() method for CustomScroll
-- second parameter for Datatable refreshColumns() method
-- preserve mode for Datatable selectRange() method
-- "box" and "select" modes for Datatable blockSelect property
-- Datatable showColumnBatch() method extended
-- format and map config options for Datatable and Datacollection
-- timeout to ajax API
-- markInvalid() method for Form
-- applyChanges() method for UIManager
-- tab/enter processing and values order for Multiselect
-- Pivot configuration window: fields are copied into "Filters" sector (not moved)
-- Pivot Table and Chart: "id" has been excluded from "fields" list
-- updated design and layout of Pivot configuration window 
-- style improvement, and  first letter capitalizing for Pivot Chart
-- using webix.ui for view moving, top and nested
-- auto closing on click ofr Tooltip
-- updated design of disabled dates background in Calendar
+- [resize()](api/customscroll_resize.md) method for CustomScroll
+- second parameter for Datatable [refreshColumns()](api/ui.datatable_refreshcolumns.md) method
+- preserve mode for Datatable [selectRange()](api/ui.datatable_selectrange.md) method
+- "box" and "select" modes for Datatable [blockSelect](api/ui.datatable_blockselect_config.md) property
+- Datatable [showColumnBatch()](api/ui.datatable_showcolumnbatch.md) method extended
+- [map](api/mapcollection_map_config.md) configuration options for Datatable and Datacollection
+- [timeout()](api/ajax_timeout.md) method for Ajax API
+- [markInvalid()](api/link/ui.form_markinvalid.md) method for Form
+- [applyChanges()](api/uimanager_applychanges.md) method for UIManager
+- tab/enter processing and values order for [Multiselect](desktop/controls.md#multiselect)
+- [Pivot configuration window](desktop/pivot.md#designandusage): fields are copied into "Filters" sector (not moved)
+- [Pivot Table](desktop/pivot.md#designandusage) and [Pivot Chart](desktop/pivotchart.md): "id" has been excluded from "fields" list
+- updated design and layout of [Pivot configuration window](desktop/pivot.md#designandusage)
+- style improvement, and  first letter capitalizing for [Pivot Chart](desktop/pivotchart.md)
+- using [webix.ui](api/_ui.md) for view moving, top and nested
+- auto closing on click for tooltips
 
 ##Fixes
 

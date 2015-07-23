@@ -9,6 +9,8 @@ MapCollection
 <div class='h2'>Properties</div>
 
 {{api
+- api/mapcollection_columns_config.md - 
+- api/mapcollection_format_config.md - 
 - api/mapcollection_map_config.md - defines data mapping
 }}
 

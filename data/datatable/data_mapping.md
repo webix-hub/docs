@@ -94,7 +94,7 @@ webix.ui({
 
 
 
-Event more complex data mapping 
+Scheme data mapping 
 -------------------------------
 
 If all above doesn't work you can use scheme property to define custom data mapping function
@@ -116,5 +116,31 @@ webix.ui({
         { id:"total" }
     ],
     ...
+~~~
+
+[Data scheme](desktop/data_scheme.md) if described in detail separately.
+
+
+Common mapping for all data items
+-----------------------
+
+Data can be mapped initially to created aggregated properties that can be later used as column IDs:
+
+~~~js
+webix.ui({
+	view:"datatable",
+	map:{
+		name:"#firstname# #lastname#",
+		birth:"(date)#birthdate#"
+	},
+	columns:[
+    	{ id:"name", header:"User name" },
+        { id:"birth", header:"Date of birth"}
+    ],
+    data:[
+    	{ id:1, firstname:"Adam", lastname:"Smith", birthdate:new Date(1985, 1, 1) },
+        { id:2, firstname:"Tom", lastname:"Brown", birthdate:new Date(1986, 2, 2) },
+    ]
+});
 ~~~
 
