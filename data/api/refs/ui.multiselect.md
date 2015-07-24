@@ -104,7 +104,6 @@ Check [multiselect](desktop/controls.md#multiselect) documentation for more deta
 - api/link/ui.multiselect_label_config.md - the text label of the control
 - api/link/ui.multiselect_labelposition_config.md - positions label above the control
 - api/link/ui.multiselect_labelwidth_config.md - the width of the label
-- api/ui.multiselect_master_config.md - 
 - api/link/ui.multiselect_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.multiselect_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.multiselect_minheight_config.md - sets the minimal height for the view

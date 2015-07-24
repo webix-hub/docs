@@ -11,7 +11,7 @@ Properties
 - api/ui.datatable_checkboxrefresh_config.md - controls behavior of checkbox editors in grid
 - api/link/ui.datatable_clipboard_config.md - enables/disables clipboard support
 - api/ui.datatable_columnwidth_config.md - defines the default width for columns (in pixels)
-- api/link/ui.datatable_columns_config.md - 
+- api/ui.datatable_columns_config.md - configures columns of the table
 - api/link/ui.datatable_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.datatable_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.datatable_data_config.md - JavaScript array containing data for the component
@@ -33,7 +33,6 @@ Properties
 - api/ui.datatable_fixedrowheight_config.md - defines whether the height should be fixed for all rows or can vary
 - api/ui.datatable_footer_config.md - enables/disables the footer in DataTable (disabled, by default)
 - api/link/ui.datatable_form_config.md - linked form
-- api/link/ui.datatable_format_config.md - 
 - api/link/ui.datatable_gravity_config.md - sets the view gravity (1 by default)
 - api/ui.datatable_header_config.md - enables/disables the header in DataTable (enabled, by default)
 - api/ui.datatable_headerrowheight_config.md - sets the heigth of the header row
@@ -96,7 +95,7 @@ Properties
 - api/ui.datatable_checkboxrefresh_config.md
 - api/link/ui.datatable_clipboard_config.md
 - api/ui.datatable_columnwidth_config.md
-- api/link/ui.datatable_columns_config.md
+- api/ui.datatable_columns_config.md
 - api/link/ui.datatable_container_config.md
 - api/link/ui.datatable_css_config.md
 - api/link/ui.datatable_data_config.md
@@ -118,7 +117,6 @@ Properties
 - api/ui.datatable_fixedrowheight_config.md
 - api/ui.datatable_footer_config.md
 - api/link/ui.datatable_form_config.md
-- api/link/ui.datatable_format_config.md
 - api/link/ui.datatable_gravity_config.md
 - api/ui.datatable_header_config.md
 - api/ui.datatable_headerrowheight_config.md

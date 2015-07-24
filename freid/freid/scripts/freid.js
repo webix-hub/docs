@@ -183,7 +183,10 @@ var Freid = {
 			this._get_by_type(ass[name], pull, order, "", check, true);
 	},
 	_get_by_type:function(col, pull, order, name, check, fossil, key){
-		var ignore = key?(webix.debug_freid_ignore[key]||webix.debug_freid_ignore["*"]):null;
+		var ignore = key?(webix.debug_freid_ignore[key]||{}):null;
+		if (key)
+			webix.extend(ignore, webix.debug_freid_ignore["*"]);
+
 		for (var key in col){
 			if (ignore && ignore[key])
 				continue;
@@ -241,7 +244,7 @@ var Freid = {
 		}
 	},
 	_is_code_event:function(code, pull, order, objname, obj, method_name, ignore){
-		var re = /this.callEvent\(([a-zA-Z'"]+)/g;
+		var re = /this.callEvent\(['"]([a-zA-Z'"]+)/g;
 		var match;
 
 		var match = code.match(re);

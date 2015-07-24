@@ -5,7 +5,6 @@ Properties
 - api/link/ui.property_animate_config.md - defines or disables view change animation.
 - api/ui.property_autoheight_config.md - auto height mode for property view
 - api/link/ui.property_borderless_config.md - used to hide the component borders
-- api/link/ui.property_columns_config.md - 
 - api/ui.property_complexdata_config.md - enables complex data parsing mode
 - api/link/ui.property_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.property_content_config.md - the id or node, whose content will be moved to the view
@@ -19,7 +18,6 @@ Properties
 - api/link/ui.property_editaction_config.md - defines the action on which editors will be opened
 - api/ui.property_elements_config.md - an array of property items
 - api/link/ui.property_form_config.md - linked form
-- api/link/ui.property_format_config.md - 
 - api/link/ui.property_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.property_height_config.md - sets the height of the component
 - api/link/ui.property_hidden_config.md - defines whether the view will be hidden initially
@@ -47,7 +45,6 @@ Properties
 - api/link/ui.property_animate_config.md
 - api/ui.property_autoheight_config.md
 - api/link/ui.property_borderless_config.md
-- api/link/ui.property_columns_config.md
 - api/ui.property_complexdata_config.md
 - api/link/ui.property_container_config.md
 - api/link/ui.property_content_config.md
@@ -61,7 +58,6 @@ Properties
 - api/link/ui.property_editaction_config.md
 - api/ui.property_elements_config.md
 - api/link/ui.property_form_config.md
-- api/link/ui.property_format_config.md
 - api/link/ui.property_gravity_config.md
 - api/link/ui.property_height_config.md
 - api/link/ui.property_hidden_config.md

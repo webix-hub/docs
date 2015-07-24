@@ -105,7 +105,6 @@ Check [multicombo](desktop/controls.md#multicombo) documentation for more detail
 - api/link/ui.multicombo_label_config.md - the text label of the control
 - api/link/ui.multicombo_labelposition_config.md - positions label above the control
 - api/link/ui.multicombo_labelwidth_config.md - the width of the label
-- api/ui.multicombo_master_config.md - 
 - api/link/ui.multicombo_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.multicombo_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.multicombo_minheight_config.md - sets the minimal height for the view
