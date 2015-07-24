@@ -1,7 +1,9 @@
 Version 2.0
 ==============
 
-### Major features
+<span class="release_date">released on September 12, 2014</span>
+
+## Major features
 - [Promises API for all ajax operations](helpers/ajax_operations.md)
 - [Progress bars and overlays](desktop/progress.md)
 - Improved keyboard navigation
@@ -21,7 +23,7 @@ Version 2.0
 
 If you are updating from Webix 1.x - please check the migration.md
 
-### Minor features
+## Minor features
 - [custom height for header lines in datatable](datatable/headers_footers.md#customheightforheaderandfooter)
 - dark style for carousel
 - [getState api](api/dataprocessor_getstate.md) for dataprocessor
@@ -37,7 +39,7 @@ If you are updating from Webix 1.x - please check the migration.md
 - [suggest](desktop/suggest.md) for text editors
 
 
-### Fixes
+## Fixes
 
 - ability to define popup as raw json config
 - active style for danger button

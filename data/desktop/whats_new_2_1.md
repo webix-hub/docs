@@ -1,6 +1,8 @@
 Version 2.1
 =================================
 
+<span class="release_date">released on November 26, 2014</span>
+
 ##Major features
 
 - Better compatibility with Bootstrap and [jQuery](desktop/jquery.md)

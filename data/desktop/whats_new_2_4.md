@@ -1,6 +1,8 @@
 Version 2.4
 ============
 
+<span class="release_date">released on May 22, 2015</span>
+
 ## New features
 
 - [Portlet](desktop/portlet.md) widget

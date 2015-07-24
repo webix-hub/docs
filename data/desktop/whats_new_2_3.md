@@ -1,6 +1,8 @@
 Version 2.3
 ============
 
+<span class="release_date"> released on March 24, 2015</span>
+
 ## Breaking changes
 
 - Default [parse format](api/i18n_parseformat_other.md) is changed for datepicker and calendar controls from *"%Y-%m-%d"* to *"%Y-%m-%d %H:%i"*. Both of them can be altered within current locale. 

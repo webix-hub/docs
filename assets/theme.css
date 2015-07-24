@@ -576,3 +576,8 @@ html, .footer{
         padding-bottom: 8px;
     }
 }
+
+.release_date{
+    color: #a0a0a0;
+    margin-left:20px;
+}

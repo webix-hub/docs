@@ -1,8 +1,9 @@
 Version 2.5
 =====================
 
+<span class="release_date">released on July 24, 2015</span>
 
-##New Features
+##New features
 
 - Support of Microsoft Edge, default browser of the upcoming Windows 10
 - Ability to [disable time periods](desktop/calendar.md#disablingdatesandtimeslotsincalendar) for Calendar widget

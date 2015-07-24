@@ -1,6 +1,8 @@
 Version 2.2
 =================================
 
+<span class="release_date">released on January 23, 2015</span>
+
 ## Breaking changes
 
  - width and height settings for all data components include size of scrollbar (so component will always take exactly the same size as was defined by width and height properties)
