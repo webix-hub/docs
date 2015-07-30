@@ -104,26 +104,52 @@ Proxy objects
 webix.proxy.myCustomName = {
 	$proxy:true
 	load:function(view, callback){
-		//you loading pattern	
+		//your loading pattern
+        ...
 		webix.ajax(this.source, callback, view);
 	},
 	save:function(view, update, dp, callback){
-    	//your saving pattern
+    	//your saving pattern for single records
+        ...
 		webix.ajax().post(url, data, callback);
     },
     saveAll:function(view, update, dp, callback){
-    	//your saving pattern applicable to the whole data object
+    	//your saving pattern 
+        ...
+        for (var i = 0; i < updates.length; i++) { ... }
     },
     result:function(state, view, dp, text, data, loader){
     	//your logic of serverside response processing
+        ...
+        dp.processResult(state, data, details);
     },
-    //and custom properties and methods
+    //other custom properties and methods
     prop1:value1,
-    method1:function(){ ...}
+    method1:function(){ ... }
 };
 ~~~
 
-And then use it as prefix to load and save scripts: 
+Predefined methods that can be customized include: 
+
+- **load**(view, callback) - is used for data loading and takes two parameters: 
+	- view - *object* - the component you work with;
+    - callback - *function, object* - loading callback;
+- **save**(view, update, dp, callback) - is used for saving of single records and triggers when changes occur on client side. Takes four parameters: 
+	- view - *object* - the component you work with;
+    - update - *array* - array of changed records, each of which contains data object, record id and operation name;
+    - dp - *object* - DataProcessor object;
+    - callback - *function, object* - saving callback;
+- **saveAll**(view, update, dp, callback) - is called after saving of a single record is complete to catch up for other changes occured in the component. Takes the same parameters as save();
+- **result**(state, view, dp, text, data, loader) - is called after data is saved and serverside response is received. Takes five parameters: 
+	- state - *object* - operation state;
+    - view - *object* - the component you work with;
+    - dp - *object* - DataProcessor object;
+    - text - *string* - serverside response text;
+    - data - *object* - raw data of serverside response; 
+    - loader - *object* - XHR loader object.
+	
+
+To use a custom proxy, append its name as prefix to a loading or saving script (or both, is needed): 
 
 ~~~js
 {
