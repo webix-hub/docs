@@ -103,8 +103,6 @@ Proxy objects
 ~~~js
 webix.proxy.myCustomName = {
 	$proxy:true
-	prop1:value1,
-    ...
 	load:function(view, callback){
 		//you loading pattern	
 		webix.ajax(this.source, callback, view);
@@ -112,7 +110,16 @@ webix.proxy.myCustomName = {
 	save:function(view, update, dp, callback){
     	//your saving pattern
 		webix.ajax().post(url, data, callback);
-    }
+    },
+    saveAll:function(view, update, dp, callback){
+    	//your saving pattern applicable to the whole data object
+    },
+    result:function(state, view, dp, text, data, loader){
+    	//your logic of serverside response processing
+    },
+    //and custom properties and methods
+    prop1:value1,
+    method1:function(){ ...}
 };
 ~~~
 
