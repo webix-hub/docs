@@ -5,8 +5,8 @@ Webix Pivot Chart is fully client-side Javascript tool for graphical representat
 
 ## External resources
 
-- You can [download extensions](http://pivot.webix.com/webix_pivot.gpl.zip) from [pivot.webix.com](http://pivot.webix.com)
-- There are online samples at [docs.webix.com/samples](http://docs.webix.com/samples/61_pivot/index.html
+- You can [download Webix Pivot Chart](http://webix.com/pivot/download.html) from [http://webix.com/pivot/chart.html](http://webix.com/pivot/chart.html)
+- There are online samples at [docs.webix.com/samples](http://docs.webix.com/samples/61_pivot/index.html)
 
 
 
@@ -19,7 +19,7 @@ Webix Pivot Chart consists of two functional parts:
 
 	<img src="pivot/pivot_chart_01.png"/>
 </li>
-<li><a href="#config_window">Configuration window</a> (appeared when the user clicks the 'Settings' button):<br><br>
+<li><a href="#config_window">Configuration window</a> (appeares when the user clicks the 'Settings' icon):<br><br>
 
 	<img src="pivot/pivot_chart_settings.png"/>
     </li>
@@ -44,14 +44,13 @@ Sample data
 - **'Fields'** block presents all data properties of the dataset (such as name, year etc.) EXCEPT for those that are selected in the **Filters** and  **Group By** blocks.
 - Fields dragged or initially set in the **Values** block define which data will be loaded to the chart. Each data property in the **Values** block presents an individual graph (<a href="#data_operations">see details</a>).
 - A field dragged or initially set in the **Group By** block defines a data property that **Values**'s properties will be grouped by. For example, if the user sets the "balance"  property as **Values**'s value (the 'sum' operation)  and the "year" property as **Group by**'s
-value then the chart will display the total balance of all contries for each year. Note, only one data property can be specified in the **Group By** block. 
-- Fields dragged or initially set in the **Filters** block define data properties that will be used as filters for the chart. For each data property in the **Filters** block, Pivot Chart creates an individual input in the header of the 
-chart (nearby the 'Settings' button) (<a href="#filtering_options">see details</a>).
+value then the chart will display the total balance of all countries for each year. Note, only one data property can be specified in the **Group By** block. 
+- Fields dragged or initially set in the **Filters** block define data properties that will be used as filters for the chart. For each data property in the **Filters** block, Pivot Chart creates an individual input in the header of the chart (nearby the 'Settings' button) (<a href="#filtering_options">see details</a>).
 
-**Balance amoung Sections**
+**Balance among Sections**
 {{note
 You cannot drag one and the same element to different sections; instead, use each element either for **grouping** or for **filtering** or don't use it at all (it remains in **Fields**). 
-However, **Values** section is more indendent since elements dragged to it are still available in other sections except **Filters**.
+However, **Values** section is more independent since elements dragged to it are still available in other sections except **Filters**.
  
 }}
 
@@ -60,7 +59,7 @@ However, **Values** section is more indendent since elements dragged to it are s
 
 Current data operations come together with values they are assigned to in the **Values** section. Right there they can be changed with a couple of clicks.
 
-<img src="pivot/pivot_data_operations.png">
+<img src="pivot/pivot_chart_values.png">
 
 - **Sum** - sums all values of this property and shows the sum;
 - **Max** - picks and shows the max value of this property;
@@ -72,7 +71,7 @@ In addition to the above-mentioned prebuilt operation types, you can as well <a 
 
 <h3 id="filtering_options">Filtering Options</h3>
 
-<img src="pivot/pivot_chart_filtering.png">
+<img src="pivot/pivot_chart_filter.png">
 
 Webix Pivot Chart uses two filters:
 
@@ -82,11 +81,12 @@ If there is no operator, a filter will use text match for filtering;
 become options.
 
 ###Logarithmic scale
-When difference between compared values is significant, smaller values can be hardly recognizable on the chart. To prevent it and make all values available for analysis, you can use logarithmic scale instead of default linear one. 
+When difference between compared values is significant, smaller values can be hardly recognizable on the chart. 
+To prevent it and make all values available for analysis, you can use the logarithmic scale instead of the default linear one.
 <br>To enable the logarithmic scale, check the "Logarithmic scale" checkbox in the configuration window.
 
 
-<img src="pivot/pivot_chart_logarithmicScale.png">
+<img src="pivot/pivot_chart_logarithmic.png">
 
 
 Initialization

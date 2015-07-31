@@ -174,7 +174,7 @@ You can use headers in combination with async, get and post methods
 
 ### JSON sending
 
-If you are working with websirvice, you may need to send json content to the server side, it can be done as
+If you are working with web service, you may need to send json content to the server side, it can be done as
 
 ~~~js
 webix.ajax().headers({

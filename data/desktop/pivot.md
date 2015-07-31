@@ -43,10 +43,10 @@ Sample data
 - Fields dragged or initially set to **Values** define which data will be loaded as well as set the lowest row of datatable headers;
 - Fields dragged or initially set to **Filters** define data properties that will be used as filters for the datatable.
 
-**Balance amoung Sections**
+**Balance among Sections**
 {{note
 You cannot drag one and the same element to different sections; instead, use each element either for setting a **row**, or a **column** or for **filtering** or don't use it at all (it remains in **Fields**). 
-However, **Values** section is more indendent since elements dragged to it are still available in other sections except **Filters**.
+However, **Values** section is more independent since elements dragged to it are still available in other sections except **Filters**.
  
 }}
 
@@ -71,9 +71,8 @@ Webix Pivot uses two filters:
 
 - **text** - filtering is performed by symbols you type in the text field. It supports base **math comparison operators**, so you can type something like "**<** 100", "**>** 2.5" or "**=** 12".  
 If there is no operator, a filter will use text match for filtering;
-- **select** - filtering is performed by options that are automatically gathered from the dataset (all unique values of this property). For instance, if you choose *Continents*, then all unique continent names from the dataset 
-become options.
-
+- **select** - filtering is performed by options that are automatically gathered from the dataset (all unique values of this property). 
+For instance, if you choose *Continents*, all unique continent names from the dataset become options.
 
 Initialization
 -----------------
@@ -171,7 +170,7 @@ $$("pivot").parse(pivot_dataset);
 
 ###External Data
 
-Either you get data from an external file or by a serverside script, you should use the following pattern
+Either you get data from an external file or by a serverside script, you should use the following pattern.
 
 If you load the data during component init, specify the path to this file/script as value of api/link/dataloader_url_config.md
 
@@ -283,7 +282,7 @@ If there is no operator, filter will use text match for filtering.
 
 ###Renaming fields {#fieldmaps}
 
-By default Pivot uses data item properties for column names. But if you have dataset structured like below, the default pattern becomes unsuitable:
+By default, Pivot uses data item properties for column names. But if you have dataset structured like below, the default pattern becomes unsuitable:
 
 ~~~js
 [{ a1:100, a2:1.34 }, ...]
@@ -317,7 +316,7 @@ webix.ui({
 Localization
 --------------------
 
-By defaut all names and titles in Pivot are defined in English, but you can set any other language by specifying a custom locale for the page. 
+By defaut, all names and titles in Pivot are defined in English, but you can set any other language by specifying a custom locale for the page. 
 
 ~~~js
 webix.i18n.pivot = {
