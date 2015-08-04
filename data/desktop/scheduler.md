@@ -38,8 +38,7 @@ webix.ui({
 });
 ~~~
 
-Related sample: <a href="http://webix-hub.github.io/components/gantt/sample.html">DHTMLX Gantt Chart in Webix Web Apps</a>
-
+{{sample 32_thirdparty/04_scheduler.html}}
 
 ###Scheduler properties
 
@@ -83,7 +82,7 @@ To include Scheduler into your app, you need to add a link to a dedicated librar
 });
 ~~~
 
-Related Sample: <a href="http://cdns.webix.io/components/gantt/sample.html">DHTMLX Gantt</a>
+Related sample: <a href="http://webix-hub.github.io/components/gantt/sample.html">DHTMLX Gantt Chart in Webix Web Apps</a>
 
 ###Gantt Properties
 
