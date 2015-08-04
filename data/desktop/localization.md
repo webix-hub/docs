@@ -135,7 +135,7 @@ format:webix.i18n.longDateFormatSt
 Text labels for some parts of webix components that are more likely to be changed in a scope: 
 
 - **select** - text label of the 'Select' button of the [multisuggest](api/refs/ui.multisuggest.md) 
-(used in [multiselect](desktop/controls.md#multiselect) input, editor and filter). The default value for North Americal locale is "Select". 
+(used in [multiselect](desktop/multiselect.md) input, editor and filter). The default value for North Americal locale is "Select". 
 
 ##Applying a Locale
 

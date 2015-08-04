@@ -10,7 +10,7 @@ Version 2.0
 - [Extra locales](desktop/localization.md#builtinlocales) added
 - Package includes source map files
 - [pro] PRO edition includes [Pivot component](desktop/pivot.md)
-- [pro] [Multiselect](desktop/controls.md#multiselect) and [multitext](desktop/controls.md#multitext) inputs
+- [pro] [Multiselect](desktop/multiselect.md) and [multitext](desktop/multitext.md) inputs
 - [pro] [Advanced editors](desktop/edit.md) for DataTable and Property views 
 - [pro] [Datasuggest](desktop/datasuggest.md) and [Gridsuggest](desktop/gridsuggest.md) views for form controls and editing;
 - [pro] [Colspans and Rowspans in DataTable](datatable/rowspans_colspans.md)
@@ -28,9 +28,9 @@ If you are updating from Webix 1.x - please check the migration.md
 - dark style for carousel
 - [getState api](api/dataprocessor_getstate.md) for dataprocessor
 - onViewMove and onViewMoveEnd events to movable
-- [optional close button for tabs](desktop/controls.md#tabbar)
+- [optional close button for tabs](desktop/tabbar.md)
 - [password editor](desktop/edit.md)
-- [simple way to add icons to tabs](desktop/controls.md#tabbar)
+- [simple way to add icons to tabs](desktop/tabbar.md)
 - [storage.clear](api/storage.local_clear.md) for all models
 - if id for data object was not provided, value will be used as id
 - onMenuItemClick can block menu hiding

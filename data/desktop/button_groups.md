@@ -20,18 +20,17 @@ function buttons(size){
 	{ view:"button", type:"image"+size, label:"Save", 
 		image:"../common/imgs/"+size+"/save.gif", width:size+60} 
         //for image button with a text label - it should be wider
-			];
-		}
+	];
+}
 ~~~	
 
 Then, when defining properties of a toolbar constructor, include the function into its **cols** property and pass the necessary parameter into it.  
 
 ~~~js
-   webix.ui({
-		container:"areaA",
-		view:"toolbar", paddingY:2, height:28,
-		cols: buttons(18)
-	});
+webix.ui({
+	view:"toolbar", paddingY:2, height:28,
+	cols: buttons(18)
+});
 ~~~
 
 The toolbar above will initially work with icons measuring 18 pixels in width while the width of the button itself is calculated withtin the function. 

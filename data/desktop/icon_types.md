@@ -1,7 +1,7 @@
 Icons with UI Components
 =================
 
-Icons can be nested into all components and their items. You can put icon on the [toolbar](desktop/toolbar.md) in form of [buttons](desktop/controls.md#button), decorate [tabbar tabs](desktop/controls.md#tabbar), 
+Icons can be nested into all components and their items. You can put icon on the [toolbar](desktop/toolbar.md) in form of [buttons](desktop/button.md), decorate [tabbar tabs](desktop/tabbar.md), 
 [accordion](desktop/accordion.md) panes as well as [list](desktop/list.md) and [dataview](desktop/dataview.md) items with them, etc. 
 
 Icons can be initialized in three ways: 
@@ -64,7 +64,7 @@ The value for an **icon** property is the name of the needed icon.
     - **iconTop** - an big borderless icon button with a text label below an icon;
     - **iconButton** - a small icon button with a label right of the icon;
     - **iconButtonTop** - a big icon button with a label below the icon;
-- **icon** - name of an icon (looks for it on Entypo);
+- **icon** - name of an icon (looks for it on Font Awesome);
 - **label** - text label for an icon button;
 - **width** - width of a button with label and icon;
 - **badge** - an orange circle that notifies about new messages.
@@ -72,8 +72,7 @@ The value for an **icon** property is the name of the needed icon.
 
 ##'webix-icon' CSS Class
 
-This method of icon initialization fits the components and items that don't normally take buttons - [tabs](desktop/controls.md#tabbar) (they are buttons themselves), [panes](desktop/accordion.md), [list](desktop/list.md) 
-and [dataview](desktop/dataview.md) items, [datatable](datatable/index.md) cells.
+This method of icon initialization fits the components and items that don't normally take buttons - [tabs](desktop/tabbar.md) (they are buttons themselves), [panes](desktop/accordion.md), [list](desktop/list.md) and [dataview](desktop/dataview.md) items, [datatable](datatable/index.md) cells.
 In this case, icons are not buttons and perform a decorative function. 
 
 <img src="desktop/icon_css_pane.png">
@@ -138,7 +137,7 @@ If you'd like to use another icon from FontAwesome collection instead of the def
 {view:"richselect", label: 'Other', options:options, icon:"caret-down"}
 ~~~
 
-As a result, the default [richselect](desktop/controls.md#richselect)) icon, "fa-angle-down", is replaced with the one you've set. 
+As a result, the default [richselect](desktop/richselect.md)) icon, "fa-angle-down", is replaced with the one you've set. 
 
 ###Setting a Custom Icon
 
@@ -148,7 +147,7 @@ To set a custom icon that you can provide as a background-image, write the new C
 {view:"combo", label: 'Fruit', options:[...] } 
 ~~~
 
-As with richselect, [combo](desktop/controls.md#combo) control uses "fa-angle-down" icon which CSS should be modified:
+As with richselect, [combo](desktop/combo.md) control uses "fa-angle-down" icon which CSS should be modified:
 
 ~~~js
 .webix_input_icon.fa-angle-down:before{

@@ -68,7 +68,7 @@ webix.ui({
 Step 4. Toolbar
 ------------------------------------------
 
-- Place a toolbar with two [buttons](desktop/controls.md#button) into the first row;
+- Place a toolbar with two [buttons](desktop/button.md) into the first row;
 - Define text for the buttons with the help of their api/ui.button_value_config.md property;
 - Set the width of the buttons to 100 pixels (with the api/link/ui.button_width_config.md property).
 
@@ -93,7 +93,7 @@ webix.ui({
 
 Step 5. Form
 ------------------------------------------------
-Place a form into the first column. The form will contain two [text](desktop/controls.md#text) inputs stored in the api/link/ui.form_elements_config.md array.
+Place a form into the first column. The form will contain two [text](desktop/text.md) inputs stored in the api/link/ui.form_elements_config.md array.
 
 ~~~js
 webix.ui({

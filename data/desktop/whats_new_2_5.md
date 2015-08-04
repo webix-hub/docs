@@ -23,7 +23,7 @@ Version 2.5
 - [timeout()](api/ajax_timeout.md) method for Ajax API
 - [markInvalid()](api/link/ui.form_markinvalid.md) method for Form
 - [applyChanges()](api/uimanager_applychanges.md) method for UIManager
-- tab/enter processing and values order for [Multiselect](desktop/controls.md#multiselect)
+- tab/enter processing and values order for [Multiselect](desktop/multiselect.md)
 - [Pivot configuration window](desktop/pivot.md#designandusage): fields are copied into "Filters" sector (not moved)
 - [Pivot Table](desktop/pivot.md#designandusage) and [Pivot Chart](desktop/pivotchart.md): "id" has been excluded from "fields" list
 - updated design and layout of [Pivot configuration window](desktop/pivot.md#designandusage)

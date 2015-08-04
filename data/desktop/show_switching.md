@@ -29,7 +29,7 @@ These functions are used to show the specified view:
 
 To enable switching between views you can:
 
-- make use of a JS [button](desktop/controls.md#button) from this lib or a standard HTML button and attach the function to it;
+- make use of a JS [button](desktop/button.md) from this lib or a standard HTML button and attach the function to it;
 - trigger the switching function on any event in the app. For instance, "onItemClick" event allows clicking any component (not necessarily a button) and make the specified view visible. 
 
 {{snippet

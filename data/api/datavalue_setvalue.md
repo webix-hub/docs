@@ -24,7 +24,7 @@ $$('b2').setValue("Cancel");
 
 @template:	api_method
 @relatedapi:
-	api/ui.button_getvalue.md
+	api/datavalue_getvalue.md
 @related:
 	desktop/controls_guide.md
 @defined:	DataValue
@@ -32,11 +32,11 @@ $$('b2').setValue("Cancel");
 
 Value of the control may be:
 
-- text value in the input [text](desktop/controls.md#text) and [textarea](desktop/controls.md#textarea) field;
+- text value in the input [text](desktop/text.md) and [textarea](desktop/textarea.md) field;
 - selected item like date in [calendar](desktop/calendar.md) and color in the [colorboard](desktop/colorboard.md);
-- state of the two-state control ([checkbox](desktop/controls.md#checkbox), [radio](desktop/controls.md#radio), [toggle](desktop/controls.md#toggle));
-- selected option of integral buttons ([tabbar](desktop/controls.md#tabbar), [tabview](desktop/tabview.md), [segmented](desktop/controls.md#segmented);
-- selected option of [select](desktop/controls.md#select), [richselect](desktop/controls.md#richselect) and [combo](desktop/controls.md#combo));
-- string with selected options of a [multiselect](desktop/controls.md#multiselect) control.
+- state of the two-state control ([checkbox](desktop/checkbox.md), [radio](desktop/radio.md), [toggle](desktop/toggle.md));
+- selected option of integral buttons ([tabbar](desktop/tabbar.md), [tabview](desktop/tabview.md), [segmented](desktop/segmented.md);
+- selected option of [select](desktop/select.md), [richselect](desktop/richselectmd), and [combo](desktop/combo.md);
+- string with selected options of a [multiselect](desktop/multiselect.md) and [multicombo](desktop/multicombo.md) control.
 
 

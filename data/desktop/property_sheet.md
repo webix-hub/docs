@@ -91,8 +91,8 @@ Each element features a built-in editor specified by **type** property. Possible
 - **text** - a standard editor for text values;
 - **password** - a text editor for passwords;
 - **select** - for selection among several text values with the help of an HTML 'select' control;
-- **combo** - for selection among several values with the help of Webix [combo](desktop/controls.md#combo) control. Input is editable;
-- **richselect** - for selection among several values with the help of Webix [richselect](desktop/controls.md#richselect) control. Input is non-editable;
+- **combo** - for selection among several values with the help of Webix [combo](desktop/combo.md) control. Input is editable;
+- **richselect** - for selection among several values with the help of Webix [richselect](desktop/richselect.md) control. Input is non-editable;
 - **checkbox** - for two-state values. 
 
 Select editors features **options** in their configuration that can be defined in the following ways:

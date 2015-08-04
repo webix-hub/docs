@@ -40,7 +40,7 @@ $$("list").bind($$("richselect"), function(slave, master){
 });
 ~~~
 
-Here list data is filtered according to the option you choose within a [richselect](desktop/controls.md#richselect) control. 
+Here list data is filtered according to the option you choose within a [richselect](desktop/richselect.md) control. 
 
 {{sample 80_docs/binding_rule.html}}
 

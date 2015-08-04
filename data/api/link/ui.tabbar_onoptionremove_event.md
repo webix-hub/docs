@@ -5,5 +5,5 @@
     api/link/ui.tabbar_removeoption.md
     
 @related: 
-	desktop/controls.md#tabbar
+	desktop/tabbar.md
     

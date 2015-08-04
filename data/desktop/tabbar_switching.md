@@ -1,7 +1,7 @@
 Controls to Switch Between View Cells 
 =============================================
 
-There are two buttons to switch between [multiview](desktop/multiview.md) cells at your disposal - [tabbar](desktop/controls.md#tabbar) and [segmented](desktop/controls.md#segmented). 
+There are two buttons to switch between [multiview](desktop/multiview.md) cells at your disposal - [tabbar](desktop/tabbar.md) and [segmented](desktop/segmented.md). 
 
 <table class="list" cellspacing="0" cellpadding="5" border="0">
 	<caption class="caption">
@@ -27,7 +27,7 @@ There are two buttons to switch between [multiview](desktop/multiview.md) cells 
 
 Both of them are integral buttons that can contain as many options as you need. It is the option values that are connected to the IDs of multiview cells, which enables switching. 
 
-The difference between the buttons lies in their design. See [Controls Guide](desktop/controls.md#segmented) to learn more about them. 
+The difference between the buttons lies in their design. See [Controls Guide](desktop/segmented.md) to learn more about them. 
 
 In case of three views you should make three switching possibilities, i.e put three elements into the **options** array of either of the stated controls. Make sure that option 
 IDs correspond to the **IDs** of the view cells. It ensures that every time you click on the necessary tab/button segment, the view changes to the 

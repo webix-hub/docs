@@ -87,7 +87,7 @@ $$("calendar1").getValue(); // returns the non-formatted date object
 
 ##Datepicker 
 
-Calendar can be displayed on customer request, for instance when a user wants to pick a date and time to fill the form. For these needs a **[datepicker](desktop/controls.md#datepicker)** control
+Calendar can be displayed on customer request, for instance when a user wants to pick a date and time to fill the form. For these needs a **[datepicker](desktop/datepicker.md)** control
 is used. Note that here you needn't initialize Calendar - it will appear as soon as you click a datepicker icon. In this case the calendar comes with current date displayed. 
 
 <img src="desktop/date_picker.png"/>

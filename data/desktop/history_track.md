@@ -33,7 +33,7 @@ Nevertheless, the library offers **history API** to store the current applicatio
 
 History api/history_track.md method allows remembering the currently opened tab and showing it after page loading. It takes two parameters: 
 
-- **id** - the **ID** of the  [segmented](desktop/controls.md#segmented), [tabbar](desktop/controls.md#tabbar) and [tabview](desktop/tabview.md) that is used for switching between miltiview views. 
+- **id** - the **ID** of the  [segmented](desktop/segmented.md), [tabbar](desktop/tabbar.md) and [tabview](desktop/tabview.md) that is used for switching between miltiview views. 
 - **url** - **ID** of a multiview **cell** that forms the hashbang url that is loaded after page refresh. By default it's the ID of the currently opened cell. 
 
 ~~~js

@@ -42,7 +42,7 @@ webix.ui({
 Head differs from window body in style and may contain:
 	
 - a text header that is set as string value of head property;
-- a toolbar with controls. The most common are text **[label](desktop/controls.md#label)** and **"Close" [button](desktop/controls.md#button)**. 
+- a toolbar with controls. The most common are text **[label](desktop/label.md)** and **"Close" [button](desktop/button.md)**. 
 
 ~~~js
 {view:"button", label:"Close", width:70, click:("$$('my_win').close();")} 

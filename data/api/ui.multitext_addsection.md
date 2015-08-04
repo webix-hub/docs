@@ -14,7 +14,7 @@ addSection
 multitext.addSection();
 
 @related:
-	desktop/controls.md#multitext
+	desktop/multitext.md
 @relatedapi:
 	api/ui.multitext_removeSection.md
 @template:	api_method

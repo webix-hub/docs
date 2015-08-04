@@ -1,7 +1,7 @@
 
 {{memo a wrapper which renders an HTML fieldset}}
 
-The control presents a standard fieldset that combines several sense-connected UI elements inside itself. Check [fieldset](desktop/controls.md#fieldset) documentation for more detailed description.
+The control presents a standard fieldset that combines several sense-connected UI elements inside itself. Check [fieldset](desktop/fieldset.md) documentation for more detailed description.
 
 ### Constructor
 

@@ -30,7 +30,7 @@ $$("myview").remove(["idA","idB","idC","idD"]); //to delete multiple items
 To add an item which is a string entered by user in a [form](desktop/form.md), you need to derive this string from the input area and then add data to the desired 
 component. Again, specify everything by their ID. It's a common rule for all methods and event handlers. 
 
-[Form](desktop/form.md) and [HtmlForm](desktop/htmlform.md) components have different code for input fields - look for the library's [text](desktop/controls.md#text) control and standard html input respectively. 
+[Form](desktop/form.md) and [HtmlForm](desktop/htmlform.md) components have different code for input fields - look for the library's [text](desktop/text.md) control and standard html input respectively. 
 It means that different methods are used to get data from them: 
 
 {{snippet

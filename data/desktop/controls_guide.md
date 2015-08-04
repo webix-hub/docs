@@ -6,17 +6,13 @@ Controls are the most important components for [event handling](desktop/event_ha
 
 ##List of Available Controls
 
-[Button](desktop/controls.md#button), [Checkbox](desktop/controls.md#checkbox), [Colorpicker](desktop/controls.md#colorpicker), 
-[Combo](desktop/controls.md#combo), [Counter](desktop/controls.md#counter),  [Datepicker](desktop/controls.md#datepicker), [Icon](desktop/controls.md#icon), 
-[Imagebutton](desktop/controls.md#imagebutton), [Label](desktop/controls.md#label), [Radio](desktop/controls.md#radio), [Richselect](desktop/controls.md#richselect), 
-[Search](desktop/controls.md#search), [Select](desktop/controls.md#select), [Segmented](desktop/controls.md#segmented), [Suggest List](desktop/suggest.md), [Tabbar](desktop/controls.md#tabbar), 
-[Text](desktop/controls.md#text), [Textarea](desktop/controls.md#textarea), [Toggle](desktop/controls.md#toggle)
+[Button](desktop/button.md), [Checkbox](desktop/checkbox.md), [Colorpicker](desktop/colorpicker.md), [Combo](desktop/combo.md), [Counter](desktop/counter.md),
+[Datepicker](desktop/datepicker.md), [Icon](desktop/icon.md), [Label](desktop/label.md), [Multicombo](desktop/multicombo.md), [Multiselect](desktop/multiselect.md), 
+[Multitext](desktop/multitext.md), [Radio](desktop/radio.md), [Richselect](desktop/richselect.md), [Range slider](desktop/rangeslider.md),
+[Search](desktop/search.md), [Select](desktop/select.md), [Segmented](desktop/segmented.md), [Suggest List](desktop/suggest.md), [Tabbar](desktop/tabbar.md), 
+[Text](desktop/text.md), [Textarea](desktop/textarea.md), [Toggle](desktop/toggle.md)
 
-{{note
-When working with controls, specify their IDs if you want to refer to them later and attach events to them. 
-}}
-
-[Controls](desktop/controls.md) share a lot of features that work the same way with most of them or with very little difference. 
+Form controls share a lot of features that work the same way with most of them or with very little difference. 
 
 ##Control Initialization
 
@@ -41,7 +37,7 @@ The **label** (string) property sets a text label for a control, a string placed
 - width of the label is defined by the **labelWidth** property;
 - text of the button is set by **value** property instead of label. 
 
-Please, don't mix it with a separate view [label](#label).
+Please, don't mix it with a separate view [label](desktop/label.md).
 
 {{sample 13_form/02_api/03_label_position.html}}
 
@@ -178,7 +174,7 @@ The following conditions should be observed:
 
 **Single-value controls**
 
-For such controls as [text](desktop/controls.md#text) and [textarea](desktop/controls.md#textarea) **value** property isn't normally set beforehand, as they are intended for user filling. 
+For such controls as [text](desktop/text.md) and [textarea](desktop/textarea.md) **value** property isn't normally set beforehand, as they are intended for user filling. 
 
 So these exist different variants of value treating:
 
@@ -186,17 +182,19 @@ So these exist different variants of value treating:
 - make the property **empty** ( *{view:"text", value:""}* );
 - set **default value** that can be deleted or changed by users( *{view:"text", value:"My text"}* );
 - still it's better to use **placeholder** (the default value for the input, a hint for user. Disappears as you start typing.);
-- for two-state controls like [checkbox](desktop/controls.md#checkbox), [radio](desktop/controls.md#radio) and [toggle](desktop/controls.md#toggle) possible values are:
+- for two-state controls like [checkbox](desktop/checkbox.md), [radio](desktop/radio.md) and [toggle](desktop/toggle.md) possible values are:
 	- *true* or 1 - for a 'checked' state;
 	- *false* or 0 - for 'unchecked' state. 
-- for [counter](desktop/controls.md#counter) and [slider](desktop/controls.md#slider) initial value is normally set as a **possible number** or the one in the middle of the predefined range.
+- for [counter](desktop/counter.md), [slider](desktop/slider.md) and [range slider](desktop/rangeslider.md) initial value is normally set as a **possible number**
+or the one in the middle of the predefined range.
     
 **Multiple-value controls**
 
 Such controls fall into two groups: 
 
-- those presupposing the choice from a pull-down or popup list of **predefined values**  ([select](desktop/controls.md#select), [combo](desktop/controls.md#combo), [richselect](desktop/controls.md#richselect));
-- those offering the choice between tabs (segments) of integral buttons, namely [tabbar](desktop/controls.md#tabbar) and [segmented](desktop/controls.md#segmented). 
+- those presupposing the choice from a pull-down or popup list of **predefined values**  ([select](desktop/select.md), [combo](desktop/combo.md), [multicombo](desktop/multicombo.md),
+[richselect](desktop/richselect.md) and [multiselect](desktop/multiselect));
+- those offering the choice between tabs (segments) of integral buttons, namely [tabbar](desktop/tabbar.md) and [segmented](desktop/segmented.md). 
 
 These values are set within **options** property either as an array or as a collections of objects.
 
@@ -237,7 +235,7 @@ If both **text** and **value** properties are defined, the **text** one will be 
 
 **Serverside options for multiple-value controls**
 
-Such controls as [select](desktop/controls.md#select), [richselect](desktop/controls.md#richselect) and [combo](desktop/controls.md#combo)
+Such controls as [select](desktop/select.md), [combo](desktop/combo.md), [multicombo](desktop/multicombo.md), [richselect](desktop/richselect.md) and [multiselect](desktop/multiselect)
 can get values from the serverside. The script that returns the needed data, can be defined directly in the **options** property: 
 
 ~~~js
@@ -260,16 +258,16 @@ Both methods take the needed value (or object with 'ID-value' pair(s)) as parame
 ~~~js
 $$('text1').setValue('Anna'); //for a single text field with "text1" ID
 
-$$('form1').setValues( //value for 2 text field in the form
-	{ text1:"Anna",  
-      text2:"Brown"}
-  )
+$$('form1').setValues({ //value for 2 text field in the form
+	text1:"Anna",  
+    text2:"Brown"
+});
 ~~~
 
-Values of two-state controls([checkbox](desktop/controls.md#checkbox) and [radio](desktop/controls.md#radio)) can be changed programmatically in different ways:
+Values of two-state controls([checkbox](desktop/checkbox.md) and [radio](desktop/radio.md)) can be changed programmatically in different ways:
 
 - **setValue()** - with either *0 (false)* to uncheck or *1 (true)* to check;
-- **toggle()** - to change the initial value (the [toggle](desktop/controls.md#toggle) button as well takes this method);
+- **toggle()** - to change the initial value (the [toggle](desktop/toggle.md) button as well takes this method);
 
 ~~~js
 $$("mycheckbox").toggle(); //-> if checked - becomes unchecked and vice versa
@@ -285,10 +283,10 @@ Within the library we have two methods for getting values:
 In case you want to get the value of a separate control, call the **getValue** method from it:
 
 ~~~js
- {view:"select", id:"my_sel", value:1, options:[
-                { id:1, value:"Master" },
-                { id:2, value:"Release" } ]
- }
+{view:"select", id:"my_sel", value:1, options:[
+	{ id:1, value:"Master" },
+	{ id:2, value:"Release" } 
+]}
  
 var value = $$("my_sel").getValue(); //- > returns 1
 ~~~
@@ -306,14 +304,15 @@ webix.ui({
 var title = $$("myform").getValues().title, //-> retuns value of text input
 ~~~
 
-**Conrol Value** can be different: 
+**Control Value** can be different: 
 
-- **text string** in the [text](desktop/controls.md#text) or [textarea](desktop/controls.md#textarea) control;
-- **state** (boolean) of two-state controls ([checkbox](desktop/controls.md#checkbox), [radio](desktop/controls.md#radio) and [toggle](desktop/controls.md#toggle));
-- **ID of selected tab** of integral buttons ([tabbar](desktop/controls.md#tabbar) and [segmented](desktop/controls.md#segmented));
-- **ID of selected option** of selection controls ([select](desktop/controls.md#select), [richselect](desktop/controls.md#richselect), [combo](desktop/controls.md#combo));
-- **text** on the [button](desktop/controls.md#button);
-- **selected date** or **color item** ([datepicker](desktop/controls.md#datepicker), [colorpicker](desktop/controls.md#colorpicker)).
+- **text string** in the [text](desktop/text.md) or [textarea](desktop/textarea.md) control;
+- **state** (boolean) of two-state controls ([checkbox](desktop/checkbox.md), [radio](desktop/radio.md) and [toggle](desktop/toggle.md));
+- **ID of selected tab** of integral buttons ([tabbar](desktop/tabbar.md) and [segmented](desktop/segmented.md));
+- **ID of selected option** of selection controls ([select](desktop/select.md), [combo](desktop/combo.md) and [richselect](desktop/richselect.md));
+- **string** with **selected option IDs** of a [multiselect](desktop/multiselect.md) and [multicombo](desktop/multicombo.md) control.
+- **text** on the [button](desktop/button.md);
+- **selected date** or **color item** ([datepicker](desktop/datepicker.md), [colorpicker](desktop/colorpicker.md)).
 
 In case the **getValue()** method returns object (e.g. date object) and you'd like to see the string result at once, you can include the **stringResult** property into the control constructor:
 
@@ -348,5 +347,6 @@ Find more info in the [corresponding article](desktop/common_config.md) of our d
 @index:
 - desktop/hidden_inputs.md
 - desktop/common_config.md
+- desktop/advanced_combo.md
 
 @complexity:2

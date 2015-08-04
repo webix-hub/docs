@@ -19,7 +19,7 @@ By default, colors are presented in a rainbow-like manner. The detalization leve
 
 ##Initialization
 
-Colorboard is used in conjunction with a [colorpicker](desktop/controls.md#colorpicker) control. In such a case, you needn't to initialize a colorboard since it will appear as soon as you click a control. 
+Colorboard is used in conjunction with a [colorpicker](desktop/colorpicker.md) control. In such a case, you needn't to initialize a colorboard since it will appear as soon as you click a control. 
 
 When used separately, colorboard is inited in the following way:
 

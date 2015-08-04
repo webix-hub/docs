@@ -6,7 +6,7 @@ ui.rangeslider
 
 Unlike a standard slider, this control allows choosing a particular range of values due to its two handlers. The part of the value line which corresponds to the selected set of values is highlighted in blue color.
 
-Check [rangeslider](desktop/controls.md#range) documentation for more detailed description.
+Check [rangeslider](desktop/rangeslider.md) documentation for more detailed description.
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.slider.md">ui.slider</a>, <a href="api/refs/ui.text.md">ui.text</a>, <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 

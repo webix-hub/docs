@@ -6,8 +6,8 @@ Version 2.4
 ## New features
 
 - [Portlet](desktop/portlet.md) widget
-- [MultiCombo](desktop/controls.md#multicombo) widget
-- [Range Slider](desktop/controls.md#slider) widget
+- [MultiCombo](desktop/multicombo.md) widget
+- [Range Slider](desktop/rangeslider.md) widget
 - [Advanced validation](desktop/data_validation.md#validationmessage) messages for forms
 
 ##Updates

@@ -196,7 +196,7 @@ HTML Button Triggers Sorting
 
 Form fields that require date inputting from users should be supplied with a [calendar](desktop/calendar.md) for user convenience. 
 
-There exists a special [datepicker](desktop/controls.md#datepicker) control that looks like a normal text field with a calendar icon.
+There exists a special [datepicker](desktop/datepicker.md) control that looks like a normal text field with a calendar icon.
 
 When you click it a popup calendar appears. On selecting the necessary date, click somewhere outside the popup
 and the date will be shown in the text field. By default, date is shown formatted as *"%Y-%m-%d"* and stored as *DateTime* object.

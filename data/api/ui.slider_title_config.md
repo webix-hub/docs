@@ -32,6 +32,6 @@ webix.ui({
 ~~~
 
 @related:
-	desktop/controls.md#slider
+	desktop/slider.md
 @relatedsample: 
 	13_form/05_extras/05_slider_title.html

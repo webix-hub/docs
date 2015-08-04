@@ -20,4 +20,4 @@ Select
 	</tr>
 </table>
 
-Read more about [Select](desktop/controls.md#select)
+Read more about [Select](desktop/select.md)

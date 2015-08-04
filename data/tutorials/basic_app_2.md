@@ -8,7 +8,7 @@ In the previous step we made a [form](desktop/form.md) and a [list](desktop/list
 
 <img src="tutorials/list_selected.png"/>
 
-At the same time, here we'll additionally create an **update** [button](desktop/controls.md#button) on toolbar to update existing records in the list and a **clear form** button to delete values from the foorm before inputting new values. 
+At the same time, here we'll additionally create an **update** [button](desktop/button.md) on toolbar to update existing records in the list and a **clear form** button to delete values from the foorm before inputting new values. 
 
 ##Setting IDs, attaching event handlers
 

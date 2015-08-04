@@ -1,7 +1,7 @@
 
 {{memo a two-state check box}}
 
-The control allows users to make multiple choices from a number of options. Fully customizable and can be used both as a stand-alone view and as a part of a form.  Check [checkbox](desktop/controls.md#checkbox) documentation for more detailed description.
+The control allows users to make multiple choices from a number of options. Fully customizable and can be used both as a stand-alone view and as a part of a form.  Check [checkbox](desktop/checkbox.md) documentation for more detailed description.
 
 ### Constructor
 

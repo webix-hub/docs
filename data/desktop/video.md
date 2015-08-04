@@ -71,7 +71,7 @@ HTML5 video can be controlled programmatically using methods and properties of v
 
 To get the object of video DOM element, use the **getVideo()** method of Webix video component.
 
-Let's get rid of prebuilt controls and assign **play-and-pause** function to a Webix [button](desktop/controls.md#button):
+Let's get rid of prebuilt controls and assign **play-and-pause** function to a Webix [button](desktop/button.md):
 
 <img src="desktop/video_api.png"/>
 

@@ -14,7 +14,7 @@ $$("my_slider").attachEvent("onSliderDrag", function(){
 	13_form/05_extras/05_slider_title.html
 @related: 
 	desktop/form.md
-    desktop/controls.md#slider
+    desktop/slider.md
 
 @template:	api_event
 @descr:

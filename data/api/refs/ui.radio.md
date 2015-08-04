@@ -4,7 +4,7 @@ ui.radio
 
 {{memo A radio button. }}
 
-You can group multiple component instances together to provide the desired set of choices. Check [radio](desktop/controls.md#radio) documentation for more detailed description.
+You can group multiple component instances together to provide the desired set of choices. Check [radio](desktop/radio.md) documentation for more detailed description.
 
 ### Constructor
 

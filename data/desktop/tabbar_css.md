@@ -43,4 +43,4 @@ All the classes are applicable for both **top** and **bottom** tabbar except for
 - *.webix_all_tabs.webixtype_bottom* - class specific to bottom tabbar only;
 - *.webix_tab_filler* - appears in the bottom tabbar only if total width of all tabs is less than available space. 
 
-Read more about [Tabbar](desktop/controls.md#tabbar) control.
+Read more about [Tabbar](desktop/tabbar.md) control.

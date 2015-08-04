@@ -12,7 +12,7 @@ hotkey
 @relatedsample:
 -13_form/02_api/12_hotkey.html
 @related:
-- desktop/controls.md#button
+- desktop/button.md
 - desktop/uimanager.md
 @relatedapi:
 -api/refs/ui.button.md

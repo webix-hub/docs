@@ -130,7 +130,7 @@ Available in **Webix Pro** edition only.
 
 <img src="desktop/richselect_filter.png"/>
 
-Retrieves values that contain mask defined through a popup list of possible values. Based on Webix [richselect](desktop/controls.md#richselect) control.
+Retrieves values that contain mask defined through a popup list of possible values. Based on Webix [richselect](desktop/richselect.md) control.
 
 ~~~js
 { id:"year", header:["Released", { content:"richSelectFilter" }] }
@@ -147,7 +147,7 @@ Available in **Webix Pro** edition only.
 <img src="desktop/multiselect_filter.png"/>
 
 Retrieves values that contain mask defined through a popup list of possible values while **miltiple values** can be selected at once. 
-Based on Webix [multiselect](desktop/controls.md#multiselect) control.
+Based on Webix [multiselect](desktop/multiselect.md) control.
 
 ~~~js
 { id:"year",header:["Released", { content:"multiSelectFilter" }]
@@ -163,7 +163,7 @@ Available in **Webix Pro** edition only.
 
 <img src="desktop/datepicker_filter.png"/>
 
-Retrieves values that contain mask defined through the popup calendar. Based on Webix [datepicker](desktop/controls.md#datepicker) control. 
+Retrieves values that contain mask defined through the popup calendar. Based on Webix [datepicker](desktop/datepicker.md) control. 
 
 ~~~js
 { id:"date", header:[ "Released", { content:"datepickerFilter" }],

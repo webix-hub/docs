@@ -23,4 +23,4 @@ Text
 
 </table>
 
-Read more about [Text](desktop/controls.md#text)
+Read more about [Text](desktop/text.md)

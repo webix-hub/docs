@@ -120,7 +120,7 @@ The options can be defined by either a simple or an associatibe array as well as
 
 ###Combo {#combo}
 
-Webix [combo](desktop/controls.md#combo) control with the possibility to filter a popup list by entering symbols into the dedicated input;
+Webix [combo](desktop/combo.md) control with the possibility to filter a popup list by entering symbols into the dedicated input;
 
 ~~~js
 { id:"title", header:"Film title",  editor:"combo",  options:[...]}
@@ -140,7 +140,7 @@ In the **Webix Pro** edition the editor can be extended to show either a **datav
 
 ###Richselect {#richselect}
 
-Webix [richselect](desktop/controls.md#richselect) control that is a non-editable variation of a combo editor.
+Webix [richselect](desktop/richselect.md) control that is a non-editable variation of a combo editor.
 
 ~~~js
 { id:"title", header:"Film title",  editor:"richselect",  options:[...]}
@@ -164,7 +164,7 @@ In the **Webix Pro** edition the editor can be extended to show either a **datav
 The editor is available is **Webix Pro** edition only
 }}
 
-The editor is based on Webix [multiselect](desktop/controls.md#multiselect) control and allows selecting multiple options at a time.
+The editor is based on Webix [multiselect](desktop/multiselect.md) control and allows selecting multiple options at a time.
 
 ~~~js
 { id:"assigned", editor:"multiselect", optionslist:true, options:[...]}
@@ -236,7 +236,7 @@ var tpl="<span style='background:#value#; border-radius:4px;'>&nbsp</span> #valu
 
 ###Date {#date}
 
-In its essence it is a [datepicker](desktop/controls.md#datepicker) that initializes a [calendar](desktop/calendar.md) to pick the necessary date. 
+In its essence it is a [datepicker](desktop/datepicker.md) that initializes a [calendar](desktop/calendar.md) to pick the necessary date. 
 
 ~~~js
 { map:"(date)#enddate#",	editor:"date",	header:"End date", 	width:120},
@@ -265,8 +265,7 @@ configuration for popup editors.
 
 ##Popup Configuration
 
-You can configure editing controls inside popup windows, e.g. define other dimensions, alter properties of [textarea](desktop/controls.md#textarea), [colorboard](desktop/colorboard.md) and [calendar](desktop/calendar.md)
-(check the corresponding articles.)
+You can configure editing controls inside popup windows, e.g. define other dimensions, alter properties of [textarea](desktop/textarea.md), [colorboard](desktop/colorboard.md) and [calendar](desktop/calendar.md) (check the corresponding articles.)
 
 Popup editors can be configured in a scope with the following code. All the same-name editors in the application will be redefined: 
 	
@@ -435,7 +434,7 @@ Two column attributes are mandatory  - **options** or **collection** to interpre
 
 **Multiselect specificity**
 
-To configure a suggest list for a multiselect editor, one should specify its suggest type - **multisuggest**: 
+To configure a suggest list for a multiselect editor, one should specify its suggest type - [multisuggest](api/refs/ui.multisuggest.md): 
 
 ~~~js
 { id:"year", editor:"multiselect", options:years, optionlist:true, suggest:{
@@ -553,6 +552,5 @@ In this case you extend the existing **text editor** and change render pattern i
 ~~~
 
 {{sample 80_docs/custom_ed.html}}
-
 
 @complexity:2

@@ -4,7 +4,7 @@ ui.icon
 
 {{memo A static picture of an icon. }}
 
-The component provides a collection of popular icons and API for their handling. Check [icon](desktop/controls.md#icon) documentation for more detailed description.
+The component provides a collection of popular icons and API for their handling. Check [icon](desktop/icon.md) documentation for more detailed description.
 
 ### Constructor
 

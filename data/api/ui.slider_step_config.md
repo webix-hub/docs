@@ -20,6 +20,6 @@ webix.ui({
 @descr: 1 by default
 
 @related:
-	desktop/controls.md#slider
+	desktop/slider.md
 
 

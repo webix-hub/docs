@@ -15,7 +15,7 @@ var value = multitext.getValueHere();
 	api/link/ui.multitext_getvalue.md
     api/ui.multitext_setvaluehere.md
 @related:
-	desktop/controls.md#multitext
+	desktop/multitext.md
 @template:	api_method
 @descr:
 

@@ -59,7 +59,7 @@ var toolbar = $$("fmanager").$$("toolbar");
 
 <img src="file_manager/menu_button.png"/>
 
-Menu button is based on Webix [Button](desktop/controls.md#button) control. 
+Menu button is based on Webix [Button](desktop/button.md) control. 
 It is used to activate the <a href="#actionsmenu">Actions menu</a>.
 
 ~~~js
@@ -102,7 +102,7 @@ var spacer = $$("fmanager").$$("menuSpacer");
 
 <img src="file_manager/back_forward_buttons.png"/>
 
-The Back and Forward buttons are based on Webix [Button](desktop/controls.md#button). They let move back and forward through the navigation history.
+The Back and Forward buttons are based on Webix [Button](desktop/button.md). They let move back and forward through the navigation history.
 
 ~~~js
 //the Back button
@@ -140,7 +140,7 @@ var bforward = $$("fmanager").$$("forward");
 
 <img src="file_manager/levelup_button.png"/>
 
-The Level Up button is based on Webix [Button](desktop/controls.md#button). 
+The Level Up button is based on Webix [Button](desktop/button.md). 
 It selects the parent folder of the selected item (file/folder):
 
 ~~~js
@@ -188,7 +188,7 @@ var path = $$("fmanager").$$("path");
 
 <img src="file_manager/search_control.png"/>
 
-The Search element is based on Webix [Search](desktop/controls.md#search) control and allows searching for files and folders, 
+The Search element is based on Webix [Search](desktop/search.md) control and allows searching for files and folders, 
 the names of which contain the entered letter combinations:
 
 ~~~js
@@ -209,7 +209,7 @@ var search = $$("fmanager").$$("search");
 
 <img src="file_manager/modes_button.png"/>
 
-The Modes button presents a segmented button, based on Webix [Segmented Button](desktop/controls.md#segmentedbutton) control. 
+The Modes button presents a segmented button, based on Webix [Segmented Button](desktop/segmented.md) control. 
 It lets switch between two modes of displaying folders and files: <a href="#filesandtable">"Files" and "Table"</a>. 
 
 ~~~js
@@ -476,10 +476,4 @@ To remove an existing action, you can call the api/link/ui.proto_remove.md metho
 ~~~js
 actions.remove("upload");
 ~~~
-
-
-
-
-
-
 

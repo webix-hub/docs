@@ -4,7 +4,7 @@ ui.segmented
 
 {{memo A holistic panel that contains multiple buttons (two or more). }}
 
-The component can be used to build a multi-item menu for navigating between views. Check [segmented](desktop/controls.md#segmented) documentation for more detailed description.
+The component can be used to build a multi-item menu for navigating between views. Check [segmented](desktop/segmented.md) documentation for more detailed description.
 
 ### Constructor
 

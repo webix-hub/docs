@@ -5,7 +5,7 @@ Toggle
 
 <img src="image_maps/toggle_css.png">
 
-Toggle is a two-state button, that's why it shares its types and CSS classes with the [button](desktop/controls.md#button) control. Refer to its [Image Map](desktop/buttons_css.md) to find details while here toggle's 
+Toggle is a two-state button, that's why it shares its types and CSS classes with the [button](desktop/button.md) control. Refer to its [Image Map](desktop/buttons_css.md) to find details while here toggle's 
 specific classes are listed: 
 
 <table class="inline">
@@ -20,5 +20,5 @@ specific classes are listed:
 	</tr>
 </table>
 
-Read more about [Toggle](desktop/controls.md#toggle)
+Read more about [Toggle](desktop/toggle.md)
 

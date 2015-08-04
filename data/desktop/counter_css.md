@@ -26,5 +26,5 @@ Counter
 	</tr>
 </table>
 
-Read more about [Counter](desktop/controls.md#counter)
+Read more about [Counter](desktop/counter.md)
 

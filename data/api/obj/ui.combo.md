@@ -1,7 +1,7 @@
 
 {{memo an editable combo box}}
 
-The control combines an editable text field with a drop-down list of predefined values. Provides autocomplete feature that suggests possible matches while a user types in the text field. Check [combo](desktop/controls.md#combo) documentation for more detailed description.
+The control combines an editable text field with a drop-down list of predefined values. Provides autocomplete feature that suggests possible matches while a user types in the text field. Check [combo](desktop/combo.md) documentation for more detailed description.
 
 ### Constructor
 

@@ -1,7 +1,7 @@
 
 {{memo a clickable button}}
 
-The control has a collection of preset looks and can be used both as a stand-alone view and as a part of a form or toolbar. Fully customizable. Check [button](desktop/controls.md#button) documentation for more detailed description.
+The control has a collection of preset looks and can be used both as a stand-alone view and as a part of a form or toolbar. Fully customizable. Check [button](desktop/button.md) documentation for more detailed description.
 
 ### Constructor
 

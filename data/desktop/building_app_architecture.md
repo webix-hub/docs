@@ -158,8 +158,8 @@ webix.ui({
 });
 ~~~
 
-Note that for mutliview you should provide the logic for switching between views. It can be a [tabbar](desktop/controls.md#tabbar) 
-or a [segmented](desktop/controls.md#segmented) button. 
+Note that for mutliview you should provide the logic for switching between views. It can be a [tabbar](desktop/tabbar.md) 
+or a [segmented](desktop/segmented.md) button. 
 
 If you just define **cells** you'll automatically get **multiview**, if you add **tabs** to **cells** within one and the same constructor - it will turn into **tabview**. 
 In this case, a switching button is not needed as tabs perform this function.

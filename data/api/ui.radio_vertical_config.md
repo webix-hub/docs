@@ -19,7 +19,7 @@ vertical
 @relatedsample:
 	13_form/01_controls/04_radio.html
 @related:
-	desktop/controls.md#radio
+	desktop/radio.md
 @descr:
 
 

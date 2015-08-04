@@ -1,6 +1,16 @@
 Suggest List
 =============
 
+##API Reference 
+
+- [Suggest List API](api/refs/ui.suggest.md)
+- [Multisuggest API](api/refs/ui.multisuggest.md)
+- [Checksuggest API](api/refs/ui.checksuggest.md)
+- [Gridsuggest API](api/refs/ui.gridsuggest.md)
+- [Datasuggest API](api/refs/ui.datasuggest.md)
+
+##Overview
+
 Suggest is a **list of options** for input controls that aids form filling by suggesting the necessary value on the base of already typed text. 
 It is based on Webix [list](desktop/list.md) component. 
 
@@ -11,12 +21,12 @@ It is based on Webix [list](desktop/list.md) component.
 Suggest list can be used with the following components (should be configured separately):
 
 - standard HTML input;
-- Webix JS [text](desktop/controls.md#text) field;
+- Webix JS [text](desktop/text.md) field;
 - [text editor](desktop/editing.md#text) within a component item. 
 
 Suggest list is already implemented in the following Webix components (but can be customized): 
 
-- [combo](desktop/controls.md#combo) and [richselect](desktop/controls.md#richselect) form controls;
+- [combo](desktop/combo.md) and [richselect](desktop/richselect.md) form controls;
 - [combo](desktop/editing.md#combo) and [richselect](desktop/editing.md#richselect) component editors. 
 
 
@@ -29,18 +39,18 @@ A [popup window](desktop/popup.md) with a suggest list control appears each time
 
 **Suggest list and Text input**
  
-When suggest list is combined with **[text](desktop/controls.md#text)** control (editor) or HTML input 
+When suggest list is combined with **[text](desktop/text.md)** control (editor) or HTML input 
 its values are automatically filtered according to the letters you have already typed. You can select an item from the list to fill the input 
 or ignore the suggest list and type you own text. 
 
 **Suggest list and Combo**
 
-When suggest list is combined with **[combo](desktop/controls.md#combo)** control (editor) its values are automatically filtered according to the letters 
+When suggest list is combined with **[combo](desktop/combo.md)** control (editor) its values are automatically filtered according to the letters 
 you have already typed. You can either select an option fromt he list or type the text to match any of the options. You cannot ignore the suggest list and enter you own text.
 
 **Suggest list and Richselect**
 
-When suggest list is combined with [richselect](desktop/controls.md#richselect) control (editor) a popup appears the moment you click its non-editable input. 
+When suggest list is combined with [richselect](desktop/richselect.md) control (editor) a popup appears the moment you click its non-editable input. 
 You must obligatory choose some value from the list. 
 
 **Suggest list values can be stored**
@@ -58,7 +68,7 @@ Default **timeout** between key pressing and filtering equals to 1ms, still it c
 }
 ~~~
 
-##Initializing suggest list
+##Initialization
 
 Suggest list can be initialized as:
 
@@ -78,7 +88,7 @@ webix.ui({
 <input type='text' id='country4' value='Sweden' />"}
 ~~~
 
-2 . The **same-name property** of JS [text](desktop/controls.md#text) input, [combo](desktop/controls.md#combo) and [richselect](desktop/controls.md#richselect):
+2 . The **same-name property** of JS [text](desktop/text.md) input, [combo](desktop/combo.md) and [richselect](desktop/richselect.md):
 
 ~~~js
 {view:"text", name:"country", label:"Country", value:"Belarus", suggest:[
@@ -88,7 +98,7 @@ webix.ui({
 }
 ~~~
 
-3 . The **same-name property** of JS [combo](desktop/controls.md#combo) and [richselect](desktop/controls.md#richselect) and take extensive configuration:
+3 . The **same-name property** of JS [combo](desktop/combo.md) and [richselect](desktop/richselect.md) and take the extensive configuration:
 
 ~~~js
 webix.ui({
@@ -274,8 +284,8 @@ As well as for a suggest defined as a control/editor property:
 - List settings inlcude typical [list properties](api/refs/ui.list_props.md). 
 
 {{note
-Note that an suggest list configuration can be set via either **suggest** or **options** property for  [richselect](desktop/controls.md#richselect), [combo](desktop/controls.md#combo) 
-and [multiselect](desktop/controls.md#multiselect) controls. 
+Note that an suggest list configuration can be set via either **suggest** or **options** property for  [richselect](desktop/richselect.md), [combo](desktop/combo.md),
+[multiselect](desktop/multiselect.md) and [multicombo](desktop/multicombo.md) controls. 
 }}
 
 **Where can the customization be useful?**
@@ -339,19 +349,29 @@ The functionality is available in **Webix Pro** edition only.
 
 Webix offers advanced suggest controls for width extra functionality and greater visual effect:
 
-- **multisuggest** - a standard suggest control based on Webix [list](desktop/list.md) with the ability to select **mupliple items** at a time. 
+- **checksuggest** - a suggest control based on Webix [list](desktop/list.md). Features checkboxes that enable multiple choice;
+- **multisuggest** - a suggest control based on Webix [list](desktop/list.md) with the ability to select **mupliple items** at a time;
 - **gridsuggest** - a suggest control based on Webix [datatable](datatable/index.md);
 - **datasuggest** - a suggest control based on Webix [dataview](desktop/dataview.md).
 
-###Multisuggest
+###Checksuggest
 
 <img src="desktop/multiselect.png">
 
-Multisuggest control is not used standalone, normally. You can find its implementations in the following **Webix Pro** features: 
+Checksuggest control is used in a number of **PRO** controls. You can find its implementations in: 
 
-- [multiselect form control](desktop/controls.md#multiselect);
+- [multiselect form control](desktop/multiselect.md);
+- [multicombo form control](desktop/multicombo.md);
 - [multiselect datatable filter](datatable/filtering.md#multiselect);
-- [multiselect component editor](desktop/editing.md#multiselect). 
+- [multicombo datatable filter](datatable/filtering.md#multiselect);
+ 
+###Multisuggest
+
+<img src="desktop/multiselect_multisuggest.png">
+
+Multisuggest control is used in a [multiselect component editor](desktop/editing.md#multiselect). 
+
+If needed, it can substitute checksuggest for the above-mentioned used cases. See desktop/advanced_combo.md for details.
 
 ###Gridsuggest 
 
@@ -368,10 +388,3 @@ Gridsuggest can be used with form controls as well as with component editors. Mo
 {{sample 32_thirdparty/14_dataselect.html}}
 
 Datasuggest can be used with form controls as well as with component editors. More about its configuration can be found in the [related article](desktop/datasuggest.md).  
-
-##API Reference 
-
-- [Suggest List API](api/refs/ui.suggest.md)
-- [Multisuggest List API](api/refs/ui.multisuggest.md)
-- [Gridsuggest API](api/refs/ui.gridsuggest.md)
-- [Datasuggest API](api/refs/ui.datasuggest.md)

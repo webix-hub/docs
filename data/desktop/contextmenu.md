@@ -150,7 +150,7 @@ $$('contextmenu1').attachTo($$('list1'));
 $$('contextmenu1').attachTo($$('list1').$view);
 ~~~
 
-It is the nice option to attach contentmenu to Webix controls, e.g. [button](desktop/controls.md#button) or any HTML elements on the page:
+It is the nice option to attach contentmenu to Webix controls, e.g. [button](desktop/button.md) or any HTML elements on the page:
 
 ~~~js
 $$('contextmenu1').attachTo($$('button1').$view);

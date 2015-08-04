@@ -18,7 +18,7 @@ webix.ui({
 @template:	api_config
 @related:
 	desktop/controls_guide.md
-    desktop/controls.md#radio
+    desktop/radio.md
 @relatedsample:
 	13_form/01_controls/04_radio.html
 @relatedapi:

@@ -9,7 +9,7 @@ Tabview
 
 ##Overview
 
-Tabview is a **hybrid** component that is made of a [multiview](desktop/multiview.md) and [tabbar](desktop/controls.md#tabbar).
+Tabview is a **hybrid** component that is made of a [multiview](desktop/multiview.md) and [tabbar](desktop/tabbar.md).
 
 Tabview allows for quick initialization of a multiview with a built-in ability to [switch between the views](desktop/tabbar_switching.md).
 
@@ -57,7 +57,7 @@ Each tabview cell features:
 - **body** - configuration object for the **component** that is placed in this cell. 
 
 {{note
-Note that switching between views is enabled automatically via a [tabbar](desktop/controls.md#tabbar) control. For more customization, use a [multiview](desktop/multiview.md) component and choose the needed switching method. 
+Note that switching between views is enabled automatically via a [tabbar](desktop/tabbar.md) control. For more customization, use a [multiview](desktop/multiview.md) component and choose the needed switching method. 
 }}
 
 ##Working with Tabview
@@ -66,7 +66,7 @@ The hybrid nature of a tabview allows configuring each of its parts separately:
 
 - through the same-name object properties in the initial configuration:
 
-These configuration objects may contain native properties of [multiview](desktop/multiview.md) and [tabbar](desktop/controls.md#tabbar)
+These configuration objects may contain native properties of [multiview](desktop/multiview.md) and [tabbar](desktop/tabbar.md)
 that need to be redefined. If the configurations are omitted, default values will be used. 
 
 ~~~js
@@ -127,7 +127,7 @@ More about different types of defining icons in Webix you can learn in the deskt
 
 ###Defining tabs that can be closed
 
-Closing functionality is a [tabbar](desktop/controls.md#tabbar) feature. 
+Closing functionality is a [tabbar](desktop/tabbar.md) feature. 
 
 <img src="desktop/tabs_closable.png"/>
 

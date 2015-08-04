@@ -99,7 +99,7 @@ webix.ready(function(){
 ~~~  
  
 - If there any **dates** in your app - define common formatting methods for them right now. 
-- If you have components that are **beyound the application layout** (e.g. a popup [window](desktop/window.md) called on a [button](desktop/controls.md#button) clicking) - put it into another *webix.ui* constructor right now. 
+- If you have components that are **beyound the application layout** (e.g. a popup [window](desktop/window.md) called on a [button](desktop/button.md) clicking) - put it into another *webix.ui* constructor right now. 
 
 ~~~js
 webix.ready(function(){
@@ -126,7 +126,7 @@ var ui_scheme = {
 
 *Grid* and *footer* and variables declared separately and placed into the two-row [layout](desktop/layout.md). This is rather a simple application. 
 
-It's recommended that components with options ([tabbar](desktop/controls.md#tabbar), [toolbar](desktop/toolbar.md)), [forms](desktop/form.md), non-visible [dataCollections](desktop/nonui_objects) 
+It's recommended that components with options ([tabbar](desktop/tabbar.md), [toolbar](desktop/toolbar.md)), [forms](desktop/form.md), non-visible [dataCollections](desktop/nonui_objects) 
 should be included into the main app in the form of variables declared beforehand. 
 
 Any component or several connected components can be stored in the variable that is later on included into the main layout variable(here:*ui_scheme*) that is placed into the webix.ui constructor. 

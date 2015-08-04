@@ -18,8 +18,8 @@ master.setValue(2);
 @template:	api_method
 @descr:
 
-The method doesn't set value for the **master control** ([text](desktop/controls.md#text), [combo](desktop/controls.md#combo), 
-[richselect](desktop/controls.md#richselect), [multiselect](desktop/controls.md#multiselect)), it selects an option in the suggest list only. 
+The method doesn't set value for the **master control** ([text](desktop/text.md), [combo](desktop/combo.md), [multicombo](desktop/multicombo.md),
+[richselect](desktop/richselect.md), [multiselect](desktop/multiselect.md)), it selects an option in the suggest list only. 
 
 To set the value of the master control, apply the the api/datavalue_setvalue.md method to it. 
 

@@ -1,15 +1,15 @@
 Dataview Suggest
 ========================
 
-Dataview suggest, or datasuggest, is used to add extra functionality to Webix select controls, namely [richselect](desktop/controls.md#richselect) and [combo](desktop/controls.md#combo) and the 
-same-name [editors](desktop/editing.md#editortypes). It is based on Webix [suggest list](desktop/suggest.md).
+Dataview suggest, or datasuggest, is used to add extra functionality to Webix select controls, namely [richselect](desktop/richselect.md), [multiselect](desktop/multiselect.md), 
+[combo](desktop/combo.md), [multicombo](desktop/multicombo.md) and similar [editors](desktop/editing.md#editortypes). It is based on Webix [suggest list](desktop/suggest.md).
 
 Datasuggest extension makes it possible to use Webix [dataview](desktop/dataview.md) in a dropdown menu which is great for inserting pictures
 while by default Webix [list](desktop/list.md) is used. 
 
 ##Using Datasuggest for Form Controls
 
-The extension can be used to **redefine dropdown menu** of [richselect](desktop/controls.md#richselect) and [combo](desktop/controls.md#combo) controls.  
+The extension can be used to **redefine dropdown menu** of select controls.  
 
 <img src="desktop/datasuggest.png"/>
 
@@ -128,8 +128,3 @@ Then, this popup should be attached to the column in question with the help of i
 - [Data Editing](desktop/edit.md)
 
 @edition:pro
-
-
-
-
-

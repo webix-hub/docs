@@ -11,7 +11,7 @@ iconWidth
 @relatedapi:
 	api/ui.multitext_icon_config.md
 @related:
-	desktop/controls.md#multitext
+	desktop/multitext.md
     desktop/icon_types.md
 @template:	api_config
 @descr:

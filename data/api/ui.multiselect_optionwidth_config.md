@@ -10,7 +10,7 @@ optionWidth
 {view:"multiselect", options:[], optionWidth:200}
 
 @related:
-	desktop/controls.md#multiselect
+	desktop/multiselect.md
 @relatedapi:
 	api/link/ui.multiselect_options_config.md
 @template:	api_config

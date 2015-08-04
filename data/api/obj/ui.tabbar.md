@@ -1,7 +1,7 @@
 
 {{memo a panel that contains multiple clickable items}}
 
-Items of the component combines an icon with the text label. The component can be used to build a multi-item menu for navigating between views. Check [tabbar](desktop/controls.md#tabbar) documentation for more detailed description.
+Items of the component combines an icon with the text label. The component can be used to build a multi-item menu for navigating between views. Check [tabbar](desktop/tabbar.md) documentation for more detailed description.
 
 ### Constructor
 

@@ -25,4 +25,4 @@ Datepicker
 
 To study the CSS map of the popup [calendar](desktop/calendar.md), please, refer to its [CSS Map](desktop/calendar_css.md). 
 
-Read more about [Datepicker](desktop/controls.md#datepicker)
+Read more about [Datepicker](desktop/datepicker.md)

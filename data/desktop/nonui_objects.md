@@ -3,7 +3,7 @@ Data Binding and Syncing with Non-UI Objects
 
 The webix library contains **view-less** yet meaningful elements. They have no graphic representation and are used to store data in them. 
 
-- [**DataValue**](api/refs/datavalue.md) - stores a single value like any input control ([text](desktop/controls.md#text), [button](desktop/controls.md#button), [label](desktop/controls.md#label), etc.);
+- [**DataValue**](api/refs/datavalue.md) - stores a single value like any input control ([text](desktop/text.md), [button](desktop/button.md), [label](desktop/label.md), etc.);
 - [**DataRecord**](api/refs/datarecord.md) - stores a single record like [form](desktop/form.md) and [htmlform](desktop/htmlform.md);
 - [**DataCollection**](api/refs/datarecord.md) - stores a non-hierarchical collection of records (like [list](desktop/list.md), [dataview](desktop/dataview.md), 
 [datatable](datatable/index.md), etc.);

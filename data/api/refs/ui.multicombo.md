@@ -7,7 +7,7 @@ ui.multicombo
 The control combines an editable text field with a suggest list that contains predefined options. Each option has a checkbox which is checked if the option is selected.
 The list can be supplied with a customizable 'Select' button to enter selected items to the input. 
 
-Check [multicombo](desktop/controls.md#multicombo) documentation for more detailed description.
+Check [multicombo](desktop/multicombo.md) documentation for more detailed description.
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.richselect.md">ui.richselect</a>, <a href="api/refs/ui.text.md">ui.text</a>, <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 

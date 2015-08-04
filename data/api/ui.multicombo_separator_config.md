@@ -17,7 +17,7 @@ separator
 }
 
 @related:
-desktop/controls.md#multicombo
+desktop/multicombo.md
 
 @template:	api_config
 @descr:

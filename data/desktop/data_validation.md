@@ -22,7 +22,7 @@ While the first three are features of this library and work in conjunction with 
 
 Data validation can be triggered on any event of any form element and validate any number of controls as well as the whole form:
 
-Normally, form and htmlform, data validation is bound to a **submit** [button](desktop/controls.md#button) with the help of **click** [event handler](desktop/event_handling.md):
+Normally, form and htmlform, data validation is bound to a **submit** [button](desktop/button.md) with the help of **click** [event handler](desktop/event_handling.md):
 
 ~~~js
 { view:"button", value: "Submit", click:function(){

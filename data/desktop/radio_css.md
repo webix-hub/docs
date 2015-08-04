@@ -31,4 +31,4 @@ Radio
 
 </table>
 
-Read more about [Radio](desktop/controls.md#radio)
+Read more about [Radio](desktop/radio.md)

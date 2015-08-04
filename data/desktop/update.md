@@ -3,7 +3,7 @@ Data Updating
 
 Component items can be [edited](desktop/edit.md) within the component itself, within its rows and cells, provided that the component is switched to **editable** mode. 
 
-Data updating allows for editing info in dedicated **input fields** like [UI text](desktop/controls.md#text). It works regardless of the component's editability state. 
+Data updating allows for editing info in dedicated **input fields** like [UI text](desktop/text.md). It works regardless of the component's editability state. 
 
 ###Updating data for selected items can be implemented in two ways:
 

@@ -3,8 +3,8 @@ Adding and Deleting Multiview Cells Dynamically
 
 Here two approaches are possible:
 
-1 . If you are using **[multiview](desktop/multiview.md)** with a switching control (**[tabbar](desktop/controls.md#tabbar)** or 
-**[segmented](desktop/controls.md#segmented)**) - you should treat multiview and a switching control separately. 
+1 . If you are using **[multiview](desktop/multiview.md)** with a switching control (**[tabbar](desktop/tabbar.md)** or 
+**[segmented](desktop/segmented.md)**) - you should treat multiview and a switching control separately. 
 In other words you should **add** and **remove options** for tabbar (segmented button) and at the same time **add** and **remove views** for the multiview. 
 
 2 . If you are using **[tabview](desktop/tabview.md)** (integral component that consists of a built-in multiview and tabbar) - note that it features dedicated methods 
@@ -12,7 +12,7 @@ to **add** and **remove views** together with the corresponding **tabs**.
 
 ##Using Tabbar and Multiview
 
-Both [Tabbar](desktop/controls.md#tabbar) and [Segmented Button](desktop/controls.md#segmented) feature separate parts - tabs or segments - that are defined by **options** property.  
+Both [Tabbar](desktop/tabbar.md) and [Segmented Button](desktop/segmented.md) feature separate parts - tabs or segments - that are defined by **options** property.  
 Each of its options can be connected with a separate view or a separate click handler. 
 
 <table class="list" cellspacing="0" cellpadding="5" border="0">
@@ -89,7 +89,7 @@ desktop/dynamic_layout.md#addingremovingviewsdynamically.
 
 ##Using Tabview
 
-[Tabview](desktop/tabview.md) is a hybrid of a [multiview](desktop/multiview.md) and [tabbar](desktop/controls.md#tabbar).  
+[Tabview](desktop/tabview.md) is a hybrid of a [multiview](desktop/multiview.md) and [tabbar](desktop/tabbar.md).  
 It features two methods that allow adding and removing cells together with corresponding tabs. 
 
 Each combination of a tab and a cell is configured as: 

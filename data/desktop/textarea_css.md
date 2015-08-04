@@ -20,4 +20,4 @@ Textarea
 	</tr>
 </table>
 
-Read more about [Textarea](desktop/controls.md#textarea)
+Read more about [Textarea](desktop/textarea.md)

@@ -50,11 +50,11 @@ $$("frame-body").load("http://google.com")
 
 Simply put, this is the basics of [multiview](desktop/multiview.md) functionality. 
 
-Make use of any of the **integral buttons** ([segmented](desktop/controls.md#segmented), [tabs](desktop/controls.md#tabs) or [tabbar](desktop/controls.md#tabbar)) to enable switching. The values for button options will be necessary 
+Make use of any of the **integral buttons** ([segmented](desktop/segmented.md) or [tabbar](desktop/tabbar.md)) to enable switching. The values for button options will be necessary 
 URL-s. 
 
 ~~~js
-{ view:"segmented", id:"control", options:[
+{ view:"segmented", id:"control", options:[ 
 	{ id:"data/pageA.html", value:"pageA"},
 	{ id:"data/pageB.html", value:"pageB"}
 ]}
@@ -69,8 +69,6 @@ $$("control").attachEvent("onAfterTabClick",function(sid){
 ~~~
 
 The event fires on clicking any tab, takes its ID (sid) as parameter and sets the source for external webpage equal to this ID. 
-
-
 
 ##Related Articles 
 

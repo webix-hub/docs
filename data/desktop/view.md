@@ -198,7 +198,7 @@ var box = $$("my_bar").getNode;
 
 ###6 . getInputNode()
 
-The method works with form controls  defined by **input** tag in HTML, the simplest being [text](desktop/controls.md#text). It returns DOM element related to the input with all its properties. 
+The method works with form controls  defined by **input** tag in HTML, the simplest being [text](desktop/text.md). It returns DOM element related to the input with all its properties. 
 
 ~~~js
 {view:"form", elements: [

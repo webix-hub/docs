@@ -17,7 +17,9 @@ webix.ui({
 
 @template:	api_config
 @related:
-	desktop/controls.md#counter
+	desktop/counter.md
+@relatedapi:
+	api/ui.counter_max_config.md
 @defined:	ui.counter	
 @descr:
 

@@ -9,7 +9,7 @@ separator
 {view:"multitext", separator:"-"}
 
 @related:
-	desktop/controls.md#multitext
+	desktop/multitext.md
 @relatedapi:
 	api/link/ui.multitext_setvalue.md
     api/link/ui.multitext_getvalue.md

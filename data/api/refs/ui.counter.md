@@ -4,7 +4,7 @@ ui.counter
 
 {{memo A spin box, aka an up-down control. }}
 
-The control allows users to precisely change numeric data. It provides up/down buttons that increment or decrement the value with a predefined step. Check [counter](desktop/controls.md#counter) documentation for more detailed description.
+The control allows users to precisely change numeric data. It provides up/down buttons that increment or decrement the value with a predefined step. Check [counter](desktop/counter.md) documentation for more detailed description.
 
 ### Constructor
 

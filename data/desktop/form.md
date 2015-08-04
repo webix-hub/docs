@@ -197,7 +197,7 @@ Form elements are placed into different **row arrays** where the first row is a 
 
 **Fieldsets**
 
-[Fieldset](desktop/controls.md#fieldset) is a collection of controls surrounded by a border from all the sides. Webix fieldset features text **label** and **body** where **rows** or **cols** array of controls are stored:
+[Fieldset](desktop/fieldset.md) is a collection of controls surrounded by a border from all the sides. Webix fieldset features text **label** and **body** where **rows** or **cols** array of controls are stored:
 
 ~~~js
 {view:"form", elements:[

@@ -16,7 +16,7 @@ buttonText
 }}
 
 @related:
-	desktop/controls.md#multiselect
+	desktop/multiselect.md
 @template:	api_config
 @descr:
 

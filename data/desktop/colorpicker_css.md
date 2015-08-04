@@ -25,5 +25,5 @@ Colorpicker
 
 To study the CSS map of the popup [colorboard](desktop/colorboard.md), please, refer to its [CSS Map](desktop/colorboard_css.md). 
 
-Read more about [Colorpicker](desktop/controls.md#colorpicker)
+Read more about [Colorpicker](desktop/colorpicker.md)
 

@@ -14,4 +14,4 @@ Label
 	</tr>
 </table>
 
-Read more about [Label](desktop/controls.md#label)
+Read more about [Label](desktop/label.md)

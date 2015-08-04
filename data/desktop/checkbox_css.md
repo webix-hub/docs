@@ -20,4 +20,4 @@ Checkbox
 	</tr>
 </table>
 
-Read more about [Checkbox](desktop/controls.md#checkbox)
+Read more about [Checkbox](desktop/checkbox.md)

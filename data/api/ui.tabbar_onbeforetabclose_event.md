@@ -17,7 +17,7 @@ tabbar.attachEvent("onBeforeTabClose", function(id, e){
 
 @template:api_event
 @related:
-	desktop/controls.md#tabbar
+	desktop/tabbar.md
 @relatedsample:
 	20_multiview/11_close_button.html
 @relatedapi:

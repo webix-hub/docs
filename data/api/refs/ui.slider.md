@@ -4,7 +4,7 @@ ui.slider
 
 {{memo Horizontal slider for choosing numeric values from a range of predefined ones. }}
 
-The control allows changing numeric data by dragging a marker over a line, with a defined step (optionally). Check [slider](desktop/controls.md#slider) documentation for more detailed description.
+The control allows changing numeric data by dragging a marker over a line, with a defined step (optionally). Check [slider](desktop/slider.md) documentation for more detailed description.
 
 ### Constructor
 

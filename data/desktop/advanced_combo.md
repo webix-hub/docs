@@ -1,66 +1,93 @@
 Advanced Configuration of Popup Selectors
 =========================
 
-[Combo](desktop/controls.md#combo), [richselect](desktop/controls.md#richselect) and [multiselect](desktop/controls.md#multiselect) controls can be highly customized
+[Combo](desktop/combo.md), [richselect](desktop/richselect.md), [multiselect](desktop/multiselect.md) amd [multicombo](desktop/multicombo.md) controls can be highly customized
 because they are comprised of the following components: 
 
+- Webix [text](desktop/text.md)  input that can be either editable (for combos) or non-editable (for selects);
 - Webix [list](desktop/list.md) from which templating and loading rules, item sizes and look-and-feel are taken;
 - Webix [popup](desktop/popup.md) from which popup size and behaviour are taken. 
 
-The combination is called **suggest list** that can be accessed from the control configuration, which allows for setting a number of custom options. 
+The combination of list and popup is called **suggest list** (described in detail [separately](desktop/suggest.md)). Here we will have a look at extra configuration possibilities 
+of suggest-based controls.
 
-Suggest list is described in detail [separately](desktop/suggest.md). 
+##Advanced Configuration
 
-{{note
-All the functionality described below is shown in this sample:
+Normally, we define select options as array or datasource: 
+
+{{snippet
+Short notation
 }}
-{{sample 13_form/01_controls/11_combo_advanced.html}}
-
-##Changing 'options' structure and template
-
-Option data may contain any properies instead of/in addition to default *id-value* pairs (still, **id** attribute is mandatory). 
-
-**Options** attribute is used in another way - it houses list configuration, dataset and template to render this dataset properly:
-
 ~~~js
-view:"combo",  value:2, options:{
-    template:"#name#",
-    data:[
-       { id:1, name:"Banana"   },
-       { id:2, name:"Papai"   },
-       { id:3, name:"Apple" }
-]
+{ view:"combo", options:[..data..] }
+//or
+{ view:"combo", options:"mydata.php"}
 ~~~
 
-The same can be used for default options, moreover, extra text or HTML can be added: 
+A suggest list of a default type will be attached. It will feature default **template**, **size** and **filtering**(for editable inputs). 
+If you need to customize these things, you should use the extended configuration. 
+
+{{snippet
+Extended notation
+}}
+~~~js
+{ view:"combo", options:{
+	view:"suggest", //optional
+    filter:function(item, value){ ...},
+    body:{ //list configuration
+    	view:"list", //optional
+    	data:[..data..],
+        template:"#value#",
+        yCount:7
+    }
+}}
+~~~
+
+{{sample 13_form/01_controls/11_combo_advanced.html}}
+
+As you can see, **options** attribute can be used as object that houses [suggest](desktop/suggest.md) configuration and [list](desktop/list.md) settings in its *body*.
+
+##Changing Option Template
+
+Option data may contain any properies instead of (in addition to) default *id-value* pairs (still, **id** attribute is mandatory). 
 
 ~~~js
-view:"combo",  value:2, options:{
+{ view:"combo",  value:2, options:{
+    template:"#name#",
+    data:[
+       { id:1, name:"Banana" },
+       { id:2, name:"Papai" }
+]}
+~~~
+
+Extra text or HTML can be added: 
+
+~~~js
+{ view:"combo",  value:2, options:{
     template:"Extra #value#",
     data:[
        { id:1, value:"Banana" },
-       { id:2, value:"Papai" },
-       { id:3, value:"Apple"}
-]
+       { id:2, value:"Papai" }
+]}
 ~~~
 
 Options data may as well contain **multi-line text** with html tags. In this case, the height of a parent component (here:toolbar) should be increased:
 
 ~~~js
-view:"richselect",
-options:[
+{ view:"richselect",
+  options:[
 	{ id:1, value:"Here can be some long multi line content <ul><li>item1 <li> item 2</ul>"}, 
 	{ id:2, value:"Papai"  }
-]
+]}
 ~~~
 
 {{sample 02_toolbar/20_richselect.html}} 
 
-##Changing Filtering Pattern (combo only)
+##Changing Filtering Pattern
 
-When a custom template is used for a combo box, filtering should be redefined as well, since by default combo popup is filtered by **value** property. 
+When a custom template is used for a combo box filtering should be redefined as well, since by default combo popup is filtered by **value** property. 
 
-**Options** attribute houses configuration of a [suggest list](desktop/suggest.md) in use while its **body** attribute houses a popup list: 
+**Options** attribute houses configuration of a [suggest list](desktop/suggest.md) in use while its **body** attribute houses a popup list:
 
 ~~~js
 view:"combo", value:1, options:{
@@ -78,6 +105,8 @@ view:"combo", value:1, options:{
     }
 }
 ~~~
+
+Filtering is applied only in case the suggest list is combined with editable inputs - [combo](desktop/combo.md) and [multicombo](desktop/multicombo.md).
 
 ##Serverside Options
 
@@ -97,10 +126,6 @@ The controls feature special Api to work with their parts:
 var popup = richselect.getPopup(); //popup object
 var list = richselect.getPopup().getList(); // list object
 ~~~
-
-[Combo box Api reference](api/refs/ui.combo.md)
-
-[Richselect Api reference](api/refs/ui.richselect.md)
 
 ##Defining Options Dynamically
 
@@ -149,7 +174,7 @@ list.clearAll();
 list.load("server/data.json");
 ~~~
 
-##Syncing options with a DataCollection
+##Syncing Options with a DataCollection
 
 Options list can be synchronized with either other component data or [Datacollection](desktop/nonui_objects.md) data: 
 
@@ -161,7 +186,7 @@ $$("my_combo").getPopup().getList().sync($$("list1")); //pushes this data into c
 
 Data syncing is described in the [related article](desktop/data_binding.md#syncingdataoftwocomponents).
 
-##Attaching events to a popup list 
+##Attaching Events within a Suggest List
 
 You can attach functions to list under the common [Events Handling](desktop/event_handling) pattern:
 
@@ -183,7 +208,7 @@ view:"combo", value:1, options:{
 
 Still, to catch changes in the combo/richselect, it's better to use the related [onChange](api/link/ui.combo_onchange_event.md) event.
 
-##Sizing/positioning of a popup list
+##Sizing and Positioning
 
 The dimensions of a popup list as well as its position in relation to a master control can be customized via **suggest/options** configuration object. 
 
@@ -197,4 +222,45 @@ view:"combo", options:{
 ~~~
 
 Read more about it in the [corresponding documentation article](desktop/suggest.md#sizingandpositioning).
+
+##Changing Suggest Type
+
+{{note
+Be careful while experimenting with this feature - suggest lists differ in functionality. 
+}}
+
+By default, multiple-choice controls, e.g. [multiselect](desktop/multiselect.md) use a [checksuggest](api/refs/ui.checksuggest.md) for storing options: 
+
+<img src="desktop/multiselect.png"/>
+
+~~~js
+{ view:"multiselect", options:[
+	{ id:1, value:"Alex Brown" },
+	{ id:2, value:"Dan Simons" }
+]}    
+~~~
+
+If you want to use a [multisuggest](api/refs/ui.multisuggest.md) for these needs, use extended configuration and specify **view name**:
+
+<img src="desktop/multiselect_multisuggest.png">
+
+~~~js
+{ view:"multiselect",  options:{
+    button:"Approve", //"Select" by default
+	view:"multisuggest",
+	data:[
+		{ id:1, value:"Alex Brown" },
+		{ id:2, value:"Dan Simons" }
+						
+	]
+}}    
+~~~
+
+{{sample 60_pro/02_form/02_multiselect.html}}
+
+Read more about [advanced suggest lists](desktop/suggest.md#advancedsuggestlists).
+
+
+
+
 

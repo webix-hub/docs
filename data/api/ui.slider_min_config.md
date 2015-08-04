@@ -22,7 +22,7 @@ webix.ui({
 @relatedapi:
 	api/ui.slider_max_config.md
 @related:
-	desktop/controls.md#slider
+	desktop/slider.md
 @relatedsample:
 	13_form/05_extras/06_slider_negative.html
 

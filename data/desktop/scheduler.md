@@ -38,7 +38,8 @@ webix.ui({
 });
 ~~~
 
-{{sample 32_thirdparty/04_scheduler.html }}
+Related sample: <a href="http://webix-hub.github.io/components/gantt/sample.html">DHTMLX Gantt Chart in Webix Web Apps</a>
+
 
 ###Scheduler properties
 

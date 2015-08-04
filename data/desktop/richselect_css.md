@@ -30,5 +30,5 @@ Richselect
 	</tr>
 </table>
 
-Read more about [Richselect](desktop/controls.md#richselect)
+Read more about [Richselect](desktop/richselect.md)
 

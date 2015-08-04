@@ -29,6 +29,6 @@ webix.ui({
 - Multiview cells may contain any ui [components](desktop/components.md) and [layout](desktop/layout.md) elements you like. 
 - Each cell features the unique ID to apply methods like show() and back() to it. 
 - If you layout features **cells** property object, it automatically becomes the multiview, so you needs specify view name. 
-- switching between cell is implemeted with integral buttons([tabbar](desktop/controls.md#tabbar) and [segmented](desktop/controls.md#segmented)), [tabview](desktop/tabview.md) or 
+- switching between cell is implemeted with integral buttons([tabbar](desktop/tabbar.md) and [segmented](desktop/segmented.md)), [tabview](desktop/tabview.md) or 
 dedicated functions. 
 

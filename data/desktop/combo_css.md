@@ -29,4 +29,4 @@ Combo
 	</tr>
 </table>
 
-Read more about [Combo](desktop/controls.md#combo)
+Read more about [Combo](desktop/combo.md)

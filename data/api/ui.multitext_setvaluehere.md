@@ -15,7 +15,7 @@ multiselect.setValue("New value");
     api/link/ui.multitext_setvalue.md
 	api/link/ui.multitext_getvalue.md
 @related:
-	desktop/controls.md#multitext
+	desktop/multitext.md
 @template:	api_method
 @descr:
 

@@ -103,7 +103,7 @@ template: function (obj, common) {
 - config of the active element is stored in the **common** property of the housing component and can be derived by its *name*;
 - template for each list item includes these configurations as {common.*name*};
 
-If an active content element can have a **variable value** (like [text](desktop/controls.md#text) field, or [checkbox](desktop/controls.md#checkbox)) it can be passed to it within data item properties: 
+If an active content element can have a **variable value** (like [text](desktop/text.md) field, or [checkbox](desktop/checkbox.md)) it can be passed to it within data item properties: 
 
 {{snippet
 Value for 'markCheckbox' active element

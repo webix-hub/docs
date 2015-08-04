@@ -11,7 +11,7 @@ getButton
 multiselect.getPopup().getButton();
 
 @related:
-	- desktop/controls.md#multiselect
+	- desktop/multiselect.md
     - desktop/suggest.md
 @template:	api_method
 @descr:

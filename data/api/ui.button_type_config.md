@@ -7,6 +7,7 @@ type
 
 @type: string
 @values:
+
 - base (default)
 - danger
 - form
@@ -23,10 +24,10 @@ type
 @example:
 { view:"button", id:"button1", type:"form", label: "Button"}
 //
-{view:"text",label:"text", type:"password", align:"left"}
+{view:"text", label:"text", type:"password", align:"left"}
 
 @template:	api_config
 @related: 
-	desktop/controls.md#button
+	desktop/button.md
 @defined:	ui.button	
 @descr:

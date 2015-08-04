@@ -1,5 +1,5 @@
 
-{{memo a multiline, editable text field}} Check [textarea](desktop/controls.md#textarea) documentation for more detailed description.
+{{memo a multiline, editable text field}} Check [textarea](desktop/textarea.md) documentation for more detailed description.
 
 ### Constructor
 

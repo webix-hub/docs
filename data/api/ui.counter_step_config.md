@@ -11,7 +11,7 @@ step
 
 @template:	api_config
 @related:
-	desktop/controls.md#counter
+	desktop/counter.md
 @defined:	ui.counter	
 @descr:
 

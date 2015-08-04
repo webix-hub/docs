@@ -30,4 +30,4 @@ Segmented
 	</tr>
 </table>
 
-Read more about [Segmented](desktop/controls.md#segmented)
+Read more about [Segmented](desktop/segmented.md)

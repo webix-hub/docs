@@ -21,7 +21,7 @@ var sel = master.setValue();
 @template:	api_method
 @descr:
 
-The method doesn't get value of the **master control** ([text](desktop/controls.md#text), [combo](desktop/controls.md#combo), 
-[richselect](desktop/controls.md#richselect), [multiselect](desktop/controls.md#multiselect), it gets the ID of a highlighted (selected) option in the suggest list only. 
+The method doesn't get value of the **master control** ([text](desktop/text.md), [combo](desktop/combo.md), [multicombo](desktop/multicombo.md),
+[richselect](desktop/richselect.md), [multiselect](desktop/multiselect.md)), it gets the ID of a highlighted (selected) option in the suggest list only. 
 
 To get the value of the master control, apply the the api/datavalue_getvalue.md method to it. 

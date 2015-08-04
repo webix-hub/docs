@@ -1,7 +1,7 @@
 
 {{memo a control for selecting a color from a swatch palette}}
 
-The component handles RGB, HSL, and hex formats and allows setting custom colors blocks. Check [colorpicker](desktop/controls.md#colorpicker) documentation for more detailed description.
+The component handles RGB, HSL, and hex formats and allows setting custom colors blocks. Check [colorpicker](desktop/colorpicker.md) documentation for more detailed description.
 
 ### Constructor
 

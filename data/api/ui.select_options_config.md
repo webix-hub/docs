@@ -24,7 +24,7 @@ options
 	api/ui.button_value_config.md
 @related:
 	desktop/controls_guide.md
-    desktop/controls.md#select
+    desktop/select.md
 @relatedsample:
 	13_form/01_controls/02_select.html
 @descr:
