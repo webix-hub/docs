@@ -100,3 +100,5 @@ multiselect.getPopup().getButton();
 //list object
 multiselect.getPopup().getList();
 ~~~
+
+@edition:pro

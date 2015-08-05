@@ -63,3 +63,5 @@ Multitext features an extended API for **setting** and **getting** its **values*
 
 - [setValue](api/link/ui.multitext_setvalue.md) and [getValue](api/link/ui.multitext_getvalue.md) methods for working with the value of the whole control;
 - [setValueHere](api/ui.multitext_setvaluehere.md) and [getValueHere](api/ui.multitext_getvaluehere.md) methods for for working with the value of the first (basic) field. 
+
+@edition:pro
