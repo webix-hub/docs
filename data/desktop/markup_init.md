@@ -40,7 +40,7 @@ In general, the markup can be taken from:
 - response of **server script**;
 
 {{note
-HTML and XML markup get **peculiar tags** to serve the needs of Webix object initing (described later). 
+HTML and XML markup get **peculiar tags** to serve the needs of Webix object initializing (described later). 
 }}
 
 Webix [HTMLform](desktop/htmlform.md) component is more likely to [initialized from HTML and XML](desktop/htmlform.md#markup), yet any component is subject to this technique. 
@@ -54,7 +54,7 @@ The main methods here are **init**(node, target) and **parse**(node) where argum
 - **node** - which data to use for initialization. By default data is taken from **document.body**.
 - **target** - where should the newly created component be placed. By default it's placed into the HTML node defines by **node** (document.body, if it's not defined as well).
 
-Initing and parsing serve different purposes: 
+Initializing and parsing serve different purposes: 
 
 - The **init()** method inits Webix object in HTML layout.
 - The **parse()** method inits the component in Webix layout. 

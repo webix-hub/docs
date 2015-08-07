@@ -126,7 +126,7 @@ HTMLform, XML markup
 </html>
 ~~~
 
-Script part of the document includes the initing code:
+Script part of the document includes the initializing code:
 
 ~~~js
 webix.ready(function(){

@@ -138,7 +138,7 @@ If placed in layout rows or cols, form can be inited with standard HTML tags. **
 
 {{sample 23_markup/02_xhtml/07_fieldset.html}}
 
-HTMLform has its own [initing patterns](desktop/htmlform.md) including via webix markup class.
+HTMLform has its own [initializing patterns](desktop/htmlform.md) including via webix markup class.
 
 ##Tabview
 

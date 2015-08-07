@@ -154,7 +154,7 @@ $parent = $_POST["parent"];
 
 ###Form Saving 
 
-Form is typically saved on some page event (e.g. button clicking) so there's no need in initing DataProcessor for it. As a result, POST request will contain only form data and **no webix_operation** type.  
+Form is typically saved on some page event (e.g. button clicking) so there's no need in initializing DataProcessor for it. As a result, POST request will contain only form data and **no webix_operation** type.  
 
 You decide what should be done:
 

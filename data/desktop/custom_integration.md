@@ -71,7 +71,7 @@ webix.protoUI({
 }, webix.ui.view);
 ~~~
 
-Initing HipChat on page:
+Initializing HipChat on a page:
 
 ~~~js
 webix.ui({

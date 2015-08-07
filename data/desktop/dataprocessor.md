@@ -100,7 +100,7 @@ The default processing looks as follows:
 
 This **data action** together with **data** of edited/added/deleted record is sent to server script the moment any editing operation is performed. Data action is passed as:
 
-- **!nativeeditor_status** parameter in case of implicit DataProcessor initing (with **save** property) and simultaneous usage of connector;
+- **!nativeeditor_status** parameter in case of implicit DataProcessor initializing (with **save** property) and simultaneous usage of connector;
 
 ~~~js
 view:"list",
@@ -116,7 +116,7 @@ title	The Shawshank Redemption
 webix_operation	delete
 ~~~
 
-And other protocol with implicit Dataprocessor initing for connector-based scripts:
+And other protocol with implicit Dataprocessor initializing for connector-based scripts:
 
 ~~~js
 1_!nativeeditor_status	update

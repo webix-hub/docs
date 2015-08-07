@@ -57,7 +57,7 @@ If you want to change the window's visibility rather than remove it, use **hide(
 
 This section may contain any view to match your needs. 
 
-Text template is set by initing **[template](desktop/template.md)** component. It can be defined without direct initialization: {template:"some text"}.
+Text template is set by initializing **[template](desktop/template.md)** component. It can be defined without direct initialization: {template:"some text"}.
 
 {{snippet
 Window with Datatable

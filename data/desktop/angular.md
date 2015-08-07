@@ -37,23 +37,23 @@ However, since app logic is typically complex, it's a good practice to store con
 <script type="text/javascript" src="controllers.js">
 ~~~
 
-##Initing Webix Components
+##Initializing Webix Components
 
 Bound to Angular JS, Webix offers a special **webix-ui** directive that bootstraps an application. Here two methods are possible:
 
-- [Initing from HTML markup](#html) - the directive is used without an argument, the application is inited via HTML:
+- [initializing from HTML markup](#html) - the directive is used without an argument, the application is inited via HTML:
 ~~~html
 <div webix-ui type="space"> <!-- app html --> </div>
 ~~~
 
-- [Initing from a JS configuration object](#config) - the directive is used with the app's config object as an argument, no additional markup is used. Config object is stored in the app's controller:
+- [initializing from a JS configuration object](#config) - the directive is used with the app's config object as an argument, no additional markup is used. Config object is stored in the app's controller:
 ~~~html
 <div webix-ui="config" webix-ready="doSome(root)" style="width:450px; height:300px;">
 ~~~
 
 Two patterns are equal in functionality yet differ in the way this functionality is implemented. 
 
-##Initing from from HTML markup {#html}
+##Initializing from from HTML markup {#html}
 
 This method resembles Webix [HTML Initialization technique](desktop/html_markup_init.md) but has its own peculiarities:
 
@@ -196,7 +196,7 @@ For more details, study the dedicated sample {{sample 33_angular/08_complex.html
 - [Event Handling during Webix-Angular Integration](desktop/angular_events.md) **Webix-event** directive; 
 - [Changing Visibility of Components in the App](desktop/angular_visibility.md) **Webix-show** directive;
 
-##Initing from Config Object {#config}
+##Initializing from Config Object {#config}
 
 Initialization via config object helps **get rid of markup** and hence, markup-specific directives, and move the entire application code to **Angular controller**.
 

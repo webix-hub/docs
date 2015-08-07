@@ -16,7 +16,7 @@ Settings for Scatter Chart
 
 ##Style Presets
 
-Presets simplify chart initing and contain item setting. They are defined by the **preset** property and can be of the following types: 
+Presets simplify chart initializing and contain item setting. They are defined by the **preset** property and can be of the following types: 
 
 <img src="desktop/chart_scatter_round.png">
 
