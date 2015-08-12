@@ -5,11 +5,11 @@ mapCells
 	applies the callback to a range of cells
 
 @params:
--startrow    number    the start row index
--startcol    string    the start column index
--numrows    number    the amount of rows
--numcols    number    the amount of columns
--callback    function    the function calling for each cell in the specified range
+- startrow    number    		the start row id
+- startcol    string    		the start column id
+- numrows    number    		the amount of rows
+- numcols    number    		the amount of columns
+- callback   function    	the function calling for each cell in the specified range
 
 @related:
 	datatable/get_set_data.md#gettingvaluesofcellsrange
@@ -25,11 +25,4 @@ grid.mapCells(1, "title", 3, 2, function(value, row_id, column_id, row_ind, col_
 
 @template:	api_method
 @descr: 
-
-@callback:
--value    string|int    the cell value
--row_id    string|int    the row id
--column_id    string|int    the column id
--row_ind    number    the row index of a cell within the specified range
--col_ind    number    the column index of a cell within the specified range
 
