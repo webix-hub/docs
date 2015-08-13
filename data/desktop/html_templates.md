@@ -14,7 +14,7 @@ Still, different components have different possibilities and requirements:
 - Components with **single-value items**: [list](desktop/list.md) and its variants ([grouplist](desktop/grouplist.md), [unitlist](desktop/unitlist.md) and [x-list](desktop/xlist.md)), 
 [dataview](desktop/dataview.md) and [tree](datatree/index.md). Each of their items takes one value by default. 
 - Components with **multiple-value items**: [datatable](datatable/index.md) and [treetable](desktop/treetable.md). They take as many items as many columns are defined. 
-- [Chart](desktop/chart.md) requires a **pair of values**  - one for each exle.
+- [Chart](desktop/chart.md) requires a **pair of values**  - one for each axis.
 
 ####Item Value can be defined by: 
 
