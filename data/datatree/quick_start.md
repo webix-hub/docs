@@ -130,4 +130,4 @@ What can we suggest you to do next?
 - Check the code sample of the mentioned above example (use the link above);
 - Read about [possible data formats](datatree/data_formats.md) and how you can [get data from database](datatree/loading_data.md#loadingfromadatabase);
 - Find out about [nodes manipulations](datatree/nodes_manipulations.md) (adding, deleting nodes etc.);
-- Check other [supplied samples]($${sample_http}17_datatree/). 
+- Check other [supplied samples](http://docs.webix.com/samples/17_datatree/index.html). 

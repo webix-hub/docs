@@ -76,8 +76,8 @@ barcode = new webix.ui({
 });
 ~~~
 
-{{sample
-60_pro/08_barcode/01_basic.html
+{{editor
+http://webix.com/snippet/bd3c5001	Initialization
 }}
 
 Configuration settings
@@ -242,10 +242,9 @@ barcode.define("type","ean8");
 barcode.render();
 ~~~
 
-{{sample
-60_pro/08_barcode/02_types.html
+{{editor
+http://webix.com/snippet/71e81444	Built-in Types
 }}
-
 
 Custom Types 
 ---------------
@@ -382,9 +381,8 @@ The result of applying the "code39" type is given in the picture below:
 
 <img src="desktop/barcode_custom_type.png">
 
-{{sample
-60_pro/08_barcode/03_custom_type.html
+{{editor
+http://webix.com/snippet/6f650d9d	Custom Types
 }}
-
 
 @edition:pro

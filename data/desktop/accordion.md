@@ -37,10 +37,9 @@ webix.ui({
 	]
 });
 ~~~
-{{sample
-01_layout/05_header_complex.html
+{{editor
+http://webix.com/snippet/bf60ef2d	Complex Accordion
 }}
-
 
 ####Comments: 
 
@@ -50,7 +49,9 @@ webix.ui({
 
 <img src="desktop/headers.png"/>
 
-{{sample 01_layout/03_header.html }}
+{{editor
+http://webix.com/snippet/6b5249ee	Horizontal Accordion
+}}
 
 {{note
 Note that **view name can be omitted** (view:"accordion"). If you place an array of objects with **body** and **header** into row or column  - the view will be automatically recognized as accordion. 
@@ -65,7 +66,9 @@ webix.ui({
 });
 ~~~
 
-{{sample 01_layout/07_header_all.html}}
+{{editor
+http://webix.com/snippet/dacd1550	Layout with Headers
+}}
 
 ##Working with Accordion
 

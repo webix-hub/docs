@@ -10,7 +10,8 @@ events
 webix.ui({
 	container:"listA",
 	view:"calendar",
-	events:webix.Date.isHoliday // the webix.Date.isHoliday function marks weekend days in red
+    // the webix.Date.isHoliday function marks weekend days with color
+	events:webix.Date.isHoliday
 });
             
 
