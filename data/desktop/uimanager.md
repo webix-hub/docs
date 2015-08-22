@@ -79,7 +79,7 @@ webix.attachEvent("onFocusChange", function(current_view, prev_view) {
 
 1) 'Esc' key closes a non-modal [window](desktop/window.md) when it is focused. 
 
-2) 'Esc', 'space' and 'enter' keys are enabled by default for [modal message boxes](desktop/message_boxes.html#modalwindowsandkeyboardinteraction).
+2) 'Esc', 'space' and 'enter' keys are enabled by default for [modal message boxes](desktop/message_boxes.md#modalwindowsandkeyboardinteraction).
 
 3) [Editors](desktop/editing.md) of data component items react on the following keys: 
 

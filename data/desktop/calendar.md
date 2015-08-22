@@ -149,7 +149,7 @@ webix.ui({
 });
 ~~~
 
-{{sample /09_calendar/03_timepicker.html}}
+{{sample 09_calendar/03_timepicker.html}}
 
 Like standard calendar, time view accepts values as string or date object.
 

@@ -188,7 +188,7 @@ Data syncing is described in the [related article](desktop/data_binding.md#synci
 
 ##Attaching Events within a Suggest List
 
-You can attach functions to list under the common [Events Handling](desktop/event_handling) pattern:
+You can attach functions to list under the common [Events Handling](desktop/event_handling.md) pattern:
 
 ~~~js
 view:"combo", value:1, options:{

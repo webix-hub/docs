@@ -32,7 +32,7 @@ webix.ui({
 @template:	api_config
 @descr:
 
-The whole list of **parameters** that help configure the header menu can be found in the [related article](datatable/headermenu.html#extendedconfiguration). 
+The whole list of **parameters** that help configure the header menu can be found in the [related article](datatable/headermenu.md#extendedconfiguration). 
 
 @edition:pro
 

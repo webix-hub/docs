@@ -341,7 +341,7 @@ webix.ajax().post("some.php", form.getValues());
 webix.ajax().post("some.php", form.getValues(), function(text, data, xhr){ });
 ~~~
 
-2 . Using [webix.send](api/_send.html) method that emulates HTML form submitting: 
+2 . Using [webix.send](api/_send.md) method that emulates HTML form submitting: 
 
 ~~~js
 webix.send("come.php", form.getValues());

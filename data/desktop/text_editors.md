@@ -159,7 +159,7 @@ Note that here an extra property appears - **mode** that denotes a language you 
 
 CKEditor is a ready-for-use WYSIWYG editor that brings word processor features directly to your web pages. It is suitable for editing plain texts as well as HTML markup. 
 
-<a href="http://ckeditor.com/">Learn more about TinyMCE text editor</a>
+<a href="http://ckeditor.com/">Learn more about CKEditor text editor</a>
 
 <img src="desktop/ckeditor.png"/>
 

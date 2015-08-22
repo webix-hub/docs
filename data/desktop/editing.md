@@ -146,7 +146,7 @@ Webix [richselect](desktop/richselect.md) control that is a non-editable variati
 { id:"title", header:"Film title",  editor:"richselect",  options:[...]}
 ~~~
 
-{{sample /15_datatable/04_editing/18_richselect.html}}
+{{sample 15_datatable/04_editing/18_richselect.html}}
 
 - The options can be defined by either a simple or an associative array as well as by url. [Look here for details](#options);
 - The editor is subject to [extensive customization](#advancedconfigurationofselecteditors). 

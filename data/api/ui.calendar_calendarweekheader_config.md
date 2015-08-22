@@ -22,10 +22,10 @@ webix.ui({
 @defined:	ui.calendar	
 @descr:
 {{note
-The parameter has sense only when the api/ui.calendar_weeknumber_config.md parameter is set to *true*.
+The parameter makes sense only when the api/ui.calendar_weeknumber_config.md parameter is set to *true*.
 }}
 
 The default value is 'W#'.
 
-<img src='api/calendarweekheader_property.png'></img>
+<img src='api/calendar_week_header_property.png'></img>
 

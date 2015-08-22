@@ -57,7 +57,7 @@ For further details check the desktop/controls_guide.md article.
 
 ##Samples 
 
-- [Form Controls](13_form/index.html)
+- [Form Controls](http://docs.webix.com/samples/13_form/01_controls/index.html)
 
 @index:
   - desktop/button.md

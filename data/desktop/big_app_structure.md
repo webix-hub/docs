@@ -126,7 +126,7 @@ var ui_scheme = {
 
 *Grid* and *footer* and variables declared separately and placed into the two-row [layout](desktop/layout.md). This is rather a simple application. 
 
-It's recommended that components with options ([tabbar](desktop/tabbar.md), [toolbar](desktop/toolbar.md)), [forms](desktop/form.md), non-visible [dataCollections](desktop/nonui_objects) 
+It's recommended that components with options ([tabbar](desktop/tabbar.md), [toolbar](desktop/toolbar.md)), [forms](desktop/form.md), non-visible [dataCollections](desktop/nonui_objects.md) 
 should be included into the main app in the form of variables declared beforehand. 
 
 Any component or several connected components can be stored in the variable that is later on included into the main layout variable(here:*ui_scheme*) that is placed into the webix.ui constructor. 
@@ -200,6 +200,6 @@ var logic = {
 
 It goes without saying that a long list of custom **styles** is taken out into a separate file that is included into an index file with a help of a **link** in its head section (together with library styles). 
 
-Images for the application as well as custom icons (exept for [built-in ones](desktop/icon_types.md)) are stored in a separate folder, as a rule, in the same directory as the index file or somewhere nearby. 
+Images for the application as well as custom icons (except for [built-in ones](desktop/icon_types.md)) are stored in a separate folder, as a rule, in the same directory as the index file or somewhere nearby. 
 
 @complexity:2

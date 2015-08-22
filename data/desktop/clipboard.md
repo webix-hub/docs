@@ -135,6 +135,6 @@ tree.attachEvent("onPaste", function(text) {
 });
 ~~~
 
-{{sample /17_datatree/19_copypaste/04_paste_custom.html }}
+{{sample 17_datatree/19_copypaste/04_paste_custom.html }}
 
 @complexity:2

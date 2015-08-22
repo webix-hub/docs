@@ -23,5 +23,5 @@ webix.ui({
 @descr:
 The default value of the parameter is "%F %Y".
 
-<img src='api/calendarHeader_property.png'>
+<img src='api/calendar_header_property.png'>
 

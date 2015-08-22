@@ -229,6 +229,6 @@ Default formatting can be changed as well. Formatting rules are described above 
 
 {{sample 09_calendar/06_datepicker.html }}
 
-If a form is [bound](desktop/data_binding) to the component, it will load dates in the format specified by the component formatting pattern, or, if custom format is defined for datepicker, it will get the one from the latter. 
+If a form is [bound](desktop/data_binding.md) to the component, it will load dates in the format specified by the component formatting pattern, or, if custom format is defined for datepicker, it will get the one from the latter. 
 
 @complexity:2

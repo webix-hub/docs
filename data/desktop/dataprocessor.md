@@ -74,7 +74,7 @@ A **long initialization form** allows for setting an **ID** for the dataprocesso
 ##Getting DataProcessor Object
 
 Dataprocessor features a set of [methods and properties](api/refs/dataprocessor.md) that can be used to change default processing pattern. To make use of them, you need to get to a dataprocessor object,
-which can be achieved with the help of Webix [dp](api/_dp.html) method:
+which can be achieved with the help of Webix [dp](api/_dp.md) method:
 
 -  getting a dataprocessor initialized for a component with the specified ID:
 

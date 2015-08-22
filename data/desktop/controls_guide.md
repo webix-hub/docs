@@ -193,7 +193,7 @@ or the one in the middle of the predefined range.
 Such controls fall into two groups: 
 
 - those presupposing the choice from a pull-down or popup list of **predefined values**  ([select](desktop/select.md), [combo](desktop/combo.md), [multicombo](desktop/multicombo.md),
-[richselect](desktop/richselect.md) and [multiselect](desktop/multiselect));
+[richselect](desktop/richselect.md) and [multiselect](desktop/multiselect.md));
 - those offering the choice between tabs (segments) of integral buttons, namely [tabbar](desktop/tabbar.md) and [segmented](desktop/segmented.md). 
 
 These values are set within **options** property either as an array or as a collections of objects.
@@ -235,7 +235,7 @@ If both **text** and **value** properties are defined, the **text** one will be 
 
 **Serverside options for multiple-value controls**
 
-Such controls as [select](desktop/select.md), [combo](desktop/combo.md), [multicombo](desktop/multicombo.md), [richselect](desktop/richselect.md) and [multiselect](desktop/multiselect)
+Such controls as [select](desktop/select.md), [combo](desktop/combo.md), [multicombo](desktop/multicombo.md), [richselect](desktop/richselect.md) and [multiselect](desktop/multiselect.md)
 can get values from the serverside. The script that returns the needed data, can be defined directly in the **options** property: 
 
 ~~~js

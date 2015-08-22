@@ -103,7 +103,7 @@ columns:[
 If there is such a column in the datatable configuration, the **headermenu** property for it can be omitted. 
 
 **Content** property of a header line is also used to set [built-in filters](datatable/filtering.md#filtertypes) and 
-[define column groups](datatable/columns_configuration.html#groupingcolumns). 
+[define column groups](datatable/columns_configuration.md#groupingcolumns). 
 
 ###Showing header menu on demand 
 

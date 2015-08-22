@@ -22,4 +22,4 @@ var dp3 = webix.dp({
 @template:	api_method
 @descr:
 
-If there was not dataprocessor for the component - new one will be created. 
+If there wasn't a dataprocessor for the component - a new one will be created. 

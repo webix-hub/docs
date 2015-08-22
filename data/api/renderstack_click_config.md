@@ -16,7 +16,7 @@ click
 	api/mouseevents_onitemclick_event.md
 @descr:
 
-The **click** property may have the function as value as well as the name of this fucntion. 
+The **click** property may have the function as value as well as the name of this function. 
 
 ~~~js
 { view:"button", value: "Submit", click:filter_tree}
@@ -26,5 +26,5 @@ function filter_tree(){
 });
 ~~~
 
-The property is used with a JS [button](desktop/) only, while other components have **"onItemClick"** inner event to respond to this mouse action. 
+The property is used with a JS [button](desktop/button.md) only, while other components have **"onItemClick"** inner event to respond to this mouse action. 
 
