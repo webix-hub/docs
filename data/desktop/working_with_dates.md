@@ -84,7 +84,7 @@ By default, if you format dates with the **i18n** object, all the dates and numb
 
 ####**webix.Date**
 
-The Date object allows for formatting dates regardless of locales with the help of the **dateToSrt()** method. It requires format specification in its argument. 
+The Date object allows for formatting dates regardless of locales with the help of the **dateToStr()** method. It requires format specification in its argument. 
 
 ~~~js
 { header:"m/d/Y", sort:"date", id:"start", format:webix.Date.dateToStr("%m/%d/%y")}
