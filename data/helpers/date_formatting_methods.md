@@ -50,8 +50,8 @@ Supported format options
 - %j - the day as a number without a leading zero ( 1 to 31 );
 - %D - the day as an abbreviation ( Sun to Sat );
 - %l - the day as a full name ( Sunday to Saturday );
-- %m - the month as a number without a leading zero ( 1 to 12 );
-- %n - the month as a number with a leading zero ( 01 to 12);
+- %m - the month as a number with a leading zero ( 01 to 12 );
+- %n - the month as a number without a leading zero ( 1 to 12);
 - %M - the month as an abbreviation ( Jan to Dec );
 - %F - the month as a full name ( January to December );
 - %y - the year as a two-digit number ( 00 to 99 );
