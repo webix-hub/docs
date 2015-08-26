@@ -78,8 +78,8 @@ Format string can contain any separator character and any element from the follo
 
 - **%y** - the year as a two-digit number ( 00 to 99 );
 - **%Y** - the year as a four-digit number ( 1900–9999 );
-- **%m** - the month as a number without a leading zero ( 1 to 12 );
-- **%n** - the month as a number with a leading zero ( 01 to 12);
+- **%m** - the month as a number with a leading zero ( 01 to 12 );
+- **%n** - the month as a number without a leading zero ( 1 to 12);
 - **%M** - the month as an abbreviation ( Jan to Dec );
 - **%F** - the month as a full name ( January to December );
 - **%W** - the ISO-8601 week number of the year. Weeks start on Monday; 
