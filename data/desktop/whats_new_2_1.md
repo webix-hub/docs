@@ -17,7 +17,7 @@ If you are updating from Webix 1.x - please check the migration.md
 
 - ability to [send extra data](desktop/configuring_uploader.md#definingadditionaldatatosend) with file upload
 - [addView() and removeView() methods](desktop/tabs_options.md#usingtabview) can be used to add and remove tabs in [tabview](desktop/tabview.md)
-- [find API](api/ui.datatable_find.md) for datatable and treetable
+- [find API](api/link/ui.datatable_find.md) for all data components
 - [addOption()](api/link/ui.tabbar_addoption.md) method supports option object as argument
 - [addDropZone()](desktop/apionly_uploader.md#usingapiolyuploaderfordragndrop) method for uploader to allow file upload by drag-n-drop on html area
 - [webix.ui.animate to animate view creation](desktop/animation.md#animatingviewinitialization)

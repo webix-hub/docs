@@ -389,7 +389,7 @@ Note, in the DataTable constructor you need to specify no parameters.
 
 ##Find API
 
-Datatable API allows searching for the needed records easily with the help of its [find](api/ui.datatable_find.md) method. 
+Datatable API allows searching for the needed records easily with the help of its [find](api/link/ui.datatable_find.md) method. 
 
 Unlike filtering, it preserves the records visible but returns an array of rows that match the given criterion for further usage.
 
