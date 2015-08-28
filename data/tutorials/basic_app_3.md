@@ -12,7 +12,7 @@ but also change data in the database.
 The **tasks for serverside** are as follows: 
 
 - To populate our list with data from the database;
-- To ensure that all the changes you make on the client side (within the component) should be reflacted in the database (items should be added, deleted and updated in the DB)
+- To ensure that all the changes you make on the client side (within the component) should be reflected in the database (items should be added, deleted and updated in the DB)
 
 Serverside Integration is described in detail in the [related article of documentation](desktop/serverside.md) while here let's make the following steps: 
 

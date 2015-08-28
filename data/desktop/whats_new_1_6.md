@@ -15,7 +15,7 @@ onError event replaced with two new events - onBeforeSaveError and onAfterSaveEr
 - drag-n-drop on touch devices
 
 
-### Improvments in Server side integrations
+### Improvements in Server side integrations
 - full support of REST API
 - data in components can be updated from server side
 - client side code can't be broken by server side errors anymore
@@ -36,7 +36,7 @@ onError event replaced with two new events - onBeforeSaveError and onAfterSaveEr
 
 ##### 1.5.1
 
-- columns.optins accepts url of data feed
+- columns.options accepts url of data feed
 - combo and richselect: setting value on list load
 - datastore importData
 - getDirtyValues and getCleanValues methods
@@ -63,7 +63,7 @@ onError event replaced with two new events - onBeforeSaveError and onAfterSaveEr
 - "move" command attempts to make changes directly in DOM without full repainting
 - special handling for dnd in case of mobile webkit
 - updating data in the client side component after saving
-- webix.env.mouse contain names of pointer events for current devicePM
+- webix.env.mouse contains names of pointer events for current devicePM
 - xml data feeds for suggests
 
 ##### 1.5.1
@@ -85,11 +85,11 @@ onError event replaced with two new events - onBeforeSaveError and onAfterSaveEr
 - destructing suggest if a master control of this suggest is destructed
 - detection of Win Phones
 - disabled styling in case of labelPosition="top"
-- focus in inline editor after component repaint
+- focus in inline editor after component repainting
 - inline editors and correct edit state in datatable
 - layout resizing on touch devices
 - min value for slider
-- scrollview not adjust self after inner content change in case of touch
+- scrollview doesn't adjust itself after inner content change in case of touch
 - styling of list during drag-n-drop
 - styling of row during drag-n-drop
 - tree editor position self incorrectly
@@ -101,9 +101,9 @@ onError event replaced with two new events - onBeforeSaveError and onAfterSaveEr
 - $scope not defined inside of window
 - adding borderless element to layout through addView results in the incorrect sizing
 - addView and removeView do not updated elements collection for rich formsPM
-- after deleting view from the form its value still accessible throug getValues
-- camelCase parameters while init from HTML
-- checkbox react on empty space clicks, #75
+- after deleting view from the form its value still accessible through getValues
+- camelCase parameters during initialization from HTML
+- checkbox reacts on empty space clicks, #75
 - clock icon
 - custom scroll and disabled areas
 - custom scroll doesn't react on addview command

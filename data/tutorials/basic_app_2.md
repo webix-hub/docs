@@ -8,7 +8,7 @@ In the previous step we made a [form](desktop/form.md) and a [list](desktop/list
 
 <img src="tutorials/list_selected.png"/>
 
-At the same time, here we'll additionally create an **update** [button](desktop/button.md) on toolbar to update existing records in the list and a **clear form** button to delete values from the foorm before inputting new values. 
+At the same time, here we'll additionally create an **update** [button](desktop/button.md) on toolbar to update existing records in the list and a **clear form** button to delete values from the form before inputting new values. 
 
 ##Setting IDs, attaching event handlers
 
@@ -32,7 +32,7 @@ $$("component_id").attachEvent(...);
 $$("component_id").clear();
 ~~~
 
-To attach functions to buttons, you need to specify the event that will trigger their execution anmd the functions (function names). Here, dedicated functions are called by button **click**. 
+To attach functions to buttons, you need to specify the event that will trigger their execution and the functions (function names). Here, dedicated functions are called by button **click**. 
 
 ~~~js
 { view:"button", value:"Add", width:70, click:"add_row"},
@@ -137,7 +137,7 @@ function delete_row() {
 	});
 }
 ~~~
-Confirmation window is inited by the webix.confirm constructor. It inlcudes 
+Confirmation window is initialized by the webix.confirm constructor. It includes 
 
 - **title** (string) - text header of the window;
 - **text** (string) - text message to the user;

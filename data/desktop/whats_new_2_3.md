@@ -7,7 +7,7 @@ Version 2.3
 
 - Default [parse format](api/i18n_parseformat_other.md) is changed for datepicker and calendar controls from *"%Y-%m-%d"* to *"%Y-%m-%d %H:%i"*. Both of them can be altered within current locale. 
 
-- Sizing of layouts changed. In Webix 2.2 and earlier height and width on layout were not including padding and margins. Starting from Webix 2.3 height and width of layout is a full size of layout, including all margings and paddings.
+- Sizing of layouts changed. In Webix 2.2 and earlier height and width on layout were not including padding and margins. Starting from Webix 2.3 height and width of layout is a full size of layout, including all margins and paddings.
 
 Check [migration guide](migration.md) for more details.
 
@@ -47,7 +47,7 @@ Check [migration guide](migration.md) for more details.
 
 ## Fixes
 
-- fix regression in data loader init
+- fix regression in data loader initialization
 - correct values for onChange event in slider
 - using TreeDataLoader instead of DataLoader
 - unfiltering to affect not filtered view
@@ -75,7 +75,7 @@ Check [migration guide](migration.md) for more details.
 - tree horizontal scroll
 - slider fix for Touch in limited mode
 - webix.ajax(url) call returns promise
-- promiz will not occur if error was catched
+- promiz will not occur if error was caught
 - promiz throws an error only in debug version
 - fonts for compact skin
 - hiding columns with colspan
@@ -106,7 +106,7 @@ Check [migration guide](migration.md) for more details.
 - fixed datathrottle usage
 - Date serialization during ajax operations
 - resetting uploader after file choosing
-- focusing checkbox editor in Crhome
+- focusing checkbox editor in Chrome
 - disabled counter in IE10
 - options with quote in multi-select
 - regression in getValue of colorpicker

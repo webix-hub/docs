@@ -5,17 +5,17 @@ Version 1.5
 - new skin for mobile UI ([demo](http://webix.com/demos/touch.html))
 - functionality of desktop UI adapted to touch events and gestures
 
-### Improvments in DataTable
+### Improvements in DataTable
 - adjustRowHeight method added to datatable ( autodetects and applies the correct row height )
-- fillspace can be used for multiple columns ( pecent based sizing in datatable ) 
+- fillspace can be used for multiple columns ( percent based sizing in datatable ) 
 - richselect can be used as editor in the datatable
 - checkboxes can have checkValue and uncheckValue options
  
-### Improvments in Angular and Backbone 
+### Improvements in Angular and Backbone 
 
 - [angular] webix-ui is compatible with ng-repeat
 - [angular] webix-data works for options in combo and select
-- [angular] init through angular directive links event handlers to the current scope
+- [angular] initialization through angular directive links event handlers to the current scope
 
 - [backbone] handling of reset event
 - [backbone] handling of models with getters
@@ -54,14 +54,14 @@ Version 1.5
 - function names can be resolved in custom scope
 - getSelection -> getSelectedId
 - idColumn to csv abd jsarray data drivers
-- init through angular directive links method to the current scope
+- initialization through angular directive links method to the current scope
 - look of tabbar in clouds skin
 - selectFilter in datatable sorts options by default
 - suggest can use complex popups
 - support for multiline rows in datatable
 - tab navigation works for grid without active editor
 - webix-data can be used to define the select options
-- webixEvent and webixData works for object init (angular)
+- webixEvent and webixData works for object initialization (angular)
 - window closing and modality
 
 #### Fixes
@@ -72,7 +72,7 @@ Version 1.5
 - calling ungroup on clearAll
 - carousel resize after changing structure
 - combo editor do not work with config.options
-- datatable selection (multiselect was always applyed)
+- datatable selection (multiselect was always applied)
 - dblclick doesn't work in cell selection mode
 - debug file throws an error while generation error message for empty data set
 - deleting selected row in treetable may cause auto-loading attempt
@@ -98,7 +98,7 @@ Version 1.5
 - options collections and backbone 1.1
 - overflow for label
 - parsing long text content from xml in FF
-- regression in angular init
+- regression in angular initialization
 - regression in getSelectedId
 - regression in webixElements (angular)
 - regression in window position
@@ -109,9 +109,9 @@ Version 1.5
 - styling of disabled elements in IE
 - sync ignores configuration parameter
 - sync with backbone ignores already loaded data
-- tabbar do not self adjust after active tab change
-- text-based validation rules not recognized
+- tabbar doesn't adjust itself after active tab change
+- text-based validation rules aren't recognized
 - using calendar suggest for text inputs
 - using js code literals in xml config
 - view throws an error if angular provides non collection as a data
-- webix_security flag not set correctly for the connector calls
+- webix_security flag isn't set correctly for the connector calls

@@ -66,7 +66,7 @@ If you are updating from Webix 1.x - please check the migration.md
 - serializing state of hidden filters in datatable
 - series in case of custom x-axis
 - series in chart with custom scale
-- sizing of carosel after adding|deleting extra views
+- sizing of carousel after adding/deleting extra views
 - slashes in templates
 - space mode ignores borderless setting of layout
 - text wrapping in the rich select control

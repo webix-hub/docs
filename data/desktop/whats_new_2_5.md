@@ -8,7 +8,7 @@ Version 2.5
 - Support of Microsoft Edge, default browser of the upcoming Windows 10
 - Ability to [disable time periods](desktop/calendar.md#disablingdatesandtimeslotsincalendar) for Calendar widget
 - Ability to populate Form, Toolbar and Property sheet with [complex data](api/values_setvalues.md#complexdata)
-- [Swimlanes in Kanban widget](kanban__configuration.html#creatingswimlanes) to vizualize separate work flows
+- [Swimlanes in Kanban widget](kanban__configuration.html#creatingswimlanes) to visualize separate work flows
 - [Total column and footer](desktop/pivot.md#configuringpivot) (both with sum counters) for Pivot widget
 
 
@@ -40,7 +40,7 @@ Version 2.5
 - customScroll repainting in tree and treetable
 - repainting dataview after changing xCount or yCount values
 - accordion with hidden panels
-- customscroll not adjust self after resize
+- customscroll doesn't adjust itself after resizing
 - layout reconstruct() method doesn't work in case of hidden cells
 - incorrect data binding in case of long page loading time for Angular
 - workaround for Chrome updates: sizing of scrollable area
@@ -79,7 +79,7 @@ Version 2.5
 - input width and label position top
 - input rendering in form controls
 - checkbox double
-- aminations in datatable
+- animations in datatable
 - chrome: frozen columns and column resize
 - checkbox double
 - text selection while using a custom scrolls

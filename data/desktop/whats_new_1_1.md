@@ -6,7 +6,7 @@ Version 1.1
 - [offline and caching](desktop/server_offline.md) loading strategies
 - [custom data saving](desktop/server_proxy.md) and data loading transports
 
-### UI improvments
+### UI improvements
 
 - "disabled" configuration options for all views ( including all form controls )
 - webix.history can be used with multiview control

@@ -15,14 +15,14 @@ choosing components and designing the app to foresee the result and finish it al
 ##Setting the goal {#setgoal}
 
 
-At this stage your should determine the app's functionlity and evaluate the means of achieving this goal. You should clearly see the purpose 
+At this stage your should determine the app's functionality and evaluate the means of achieving this goal. You should clearly see the purpose 
 of your future app and try to imagine all possible features it may need to meet the requirements. 
 
 
 ##Preparing Workspace {#coding}
 
 At this stage you define all the properties of your app and its components, play with event handlers and apply methods for your app to dance in the
-hands of users. You can check the state of your app in the realtime just as you've put the last bracket/brace/colon after the code piece. 
+hands of users. You can check the state of your app in the real time just as you've put the last bracket/brace/colon after the code piece. 
 
 The lib package you [download](http://webix.com/download-webix-gpl) from the site includes two versions - **debug** and **standard** one. Debug version helps control the app during the development stage while standard script version goes for ready-made products. Both scripts are 
 identical in terms of component building yet **webix_debug.js** version includes a number of handy debugging tools. Read more about the [bonuses of the debug version](desktop/debug.md). 
@@ -35,7 +35,7 @@ There are 3 possible ways:
 
 **1) Include Webix files from Webix CDN**
 
-Yoiu can directly set links to **webix.js** and **webix.css** files located in Webix CDN:
+You can directly set links to **webix.js** and **webix.css** files located in Webix CDN:
 
 ~~~html
 <!DOCTYPE HTML>
@@ -123,7 +123,7 @@ Here you think about the app's layout, its look-and-feel, build color scheme and
 decide how the components would be related to each other. [Building App Architecture](desktop/building_app_architecture.md) article will help you
 position components and make you acquainted with layout types the library offers. 
 
-Further on, there're a number of data-presenting [components](desktop/components.md) and special features like toolbar, menu and calendar that would
+Further on, there are a number of data-presenting [components](desktop/components.md) and special features like toolbar, menu and calendar that would
 breathe life into your app and make it dynamically change to implement all the functions you wish it to perform. 
 
 The library is supplied with a rich set of samples to show you how the components look and perform in reality. So you won't regret having spent some time 
@@ -184,7 +184,7 @@ webix.ui({
     //config options
 });
 
-$$("$list1").select(5); //$list1 is an auto-generated ID
+$$("$list1").select(5); // $list1 is an auto-generated ID
 ~~~
 
 {{sample 80_docs/autoid.html }}

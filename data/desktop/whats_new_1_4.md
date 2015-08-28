@@ -17,7 +17,7 @@ Version 1.4
 - autoConfig option for the datatable
 - dataprocessor tracks data moving events
 - keyboard navigation for list component
-- correct sizing of layout with hidden pannels 
+- correct sizing of layout with hidden panels 
 - elementsConfig supported for nested collections
 - getSelection deprecated in favor of getSelectedId
 - better styling for icon buttons

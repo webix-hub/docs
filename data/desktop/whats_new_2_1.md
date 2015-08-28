@@ -27,7 +27,7 @@ If you are updating from Webix 1.x - please check the migration.md
 
 ##Fixes
 
-- dataprocessor do not use scheme serializer before data sending to the server side
+- dataprocessor doesn't use scheme serializer before data sending to the server side
 - view.show works correctly for tabview
 - richfilter styling
 - styling for invalid radio button
@@ -53,7 +53,7 @@ If you are updating from Webix 1.x - please check the migration.md
 - column d-n-d and rotated headers
 - incorrect parsing of width in complex menu while loading config from xml
 - export of data with special characters
-- reloding data in menu with hidden items
+- reloading data in menu with hidden items
 - ungroup API inconsistence
 - ie mobile animation
 - mouse-wheel other custom scrolls

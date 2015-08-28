@@ -61,7 +61,7 @@ Version 2.4
 - invalid math in newly added rows
 - material skin detection
 - message width and height
-- missed onAfterFilter event for server side filtering - server side filtering with activ...:40 PM
+- missed onAfterFilter event for server side filtering 
 - multitext with suggest
 - onBeforeFileAdd in IE9
 - onChange event in combo
@@ -76,6 +76,7 @@ Version 2.4
 - scroll position on last row in paging mode
 - serialization of data by webix.ajax
 - serialization of Date object
+- server side filtering with active editors
 - tabFocus doesn't work for icon view
 - text positioning in datatable
 - unnecessary scroll blocking by datatable
