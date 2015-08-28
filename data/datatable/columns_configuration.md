@@ -26,7 +26,7 @@ With the help of the [columns](api/ui.datatable_columns_config.md) parameter you
 - [define individual css class for any column](#styling);
 - [hide/show a column](#hidingshowingcolumns);
 - [hide/show columns in groups](#settinghiddenvisiblecolumnsingroups);
-- [add/delete coulmns dynamically](#addingdeletingcolumnsdynamically);
+- [add/delete columns dynamically](#addingdeletingcolumnsdynamically);
 - [group columns](#groupingcolumns);
 - [define colspans and rowspans](#settingcolspansrowspans);
 
@@ -51,7 +51,7 @@ view:"datatable",
 autoconfig:true
 ~~~
 
-In this case *columns* array is no longer needed. Datatable will analyse the dataset passed to it and build columns automatically. The columns will have **default values** (no sorting or filtering, width of 50px, etc.)
+In this case *columns* array is no longer needed. Datatable will analyze the dataset passed to it and build columns automatically. The columns will have **default values** (no sorting or filtering, width of 50px, etc.)
 
 Headers/footers
 ------------------

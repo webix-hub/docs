@@ -6,7 +6,7 @@ Data export to PDF, Excel
 1. [PDF](datatable/export.md#exportexporttopdf);
 2. [Excel](datatable/export.md#exportexporttoexcel).
 
-The components don't require any special configurated to be exported. 
+The components don't require any special configuration to be exported. 
 
 For the treetable it is possible to add indentations for tree nodes: 
 
@@ -54,7 +54,7 @@ grid.exportToPDF("generate.php"); //provide the correct relative path
 Export to Excel
 -------------------
 
-To export data from datatable/tretable into an Excel document you need to call method api/ui.datatable_exporttoexcel.md. For example, if you add a button by clicking on which the grid will start exporting, then its code will look like this: 
+To export data from datatable/treetable into an Excel document you need to call method api/ui.datatable_exporttoexcel.md. For example, if you add a button by clicking on which the grid will start exporting, then its code will look like this: 
 
 ~~~html
 <input type="button" value="Get as PDF" style='width:400px;margin:25px;' 
@@ -72,7 +72,7 @@ Above solution uses online data export service, but you can configure a local co
 The code will look like this:
 
 ~~~js
-grid.exportToExcel("generate.php"); //provide corrent relative path
+grid.exportToExcel("generate.php"); //provide correct relative path
 ~~~
 
 Customizing Export

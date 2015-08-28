@@ -34,7 +34,7 @@ If you want chart elements being colored according to a specific criterion, you 
 <img src="desktop/colors_by_function.png"/>
 
 {{snippet
-Here sales bars are distinquished by sales amount. 
+Here sales bars are distinguished by sales amount. 
 }}
 ~~~js
 webix.ui({

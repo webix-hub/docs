@@ -97,7 +97,7 @@ Setting the action to open editors on
 Generally, to set the action on which editors will be opened you should use the api/link/ui.datatable_editaction_config.md property. 
 
 ###Default actions
-By default, editors are opened on a single click.  To make opening editors occured on a double click, you should set api/link/ui.datatable_editaction_config.md to *dblclick* as in:
+By default, editors are opened on a single click.  To make opening editors occurred on a double click, you should set api/link/ui.datatable_editaction_config.md to *dblclick* as in:
 
 {{snippet
 Opening editors on a double click
@@ -212,7 +212,7 @@ var table2 = new webix.ui({
 Apart from row and column editing, datatable API offers the possibilities to 
 
 - programmatically open editor in the next cell of the row (provided that it is editable) - **editNext()** method;
-- move focus to the active editor (if any) - **focusEditor()** mehtod;
+- move focus to the active editor (if any) - **focusEditor()** method;
 - close the editor without saving changes - **editCancel()** method;
 - close the editor while saving changes - **editStop()** method.
 

@@ -31,7 +31,7 @@ While adding an item, make use of the **add()** method and state new data as an 
         }
 ~~~
 
-Additionally, you can sefine a **counter** that sets the starting position of the new items to observe dataset integrity. 
+Additionally, you can define a **counter** that sets the starting position of the new items to observe dataset integrity. 
 
 ##Item Deletion
 
@@ -70,10 +70,10 @@ Make the chart show you only sales exceeding 50.
 }}
 ~~~js
 function filter1(){
-		    $$('chart').filter(function(obj){
-                return obj.sales >50;
-            });
-            }
+    $$('chart').filter(function(obj){
+        return obj.sales >50;
+    });
+}
 ~~~
 
 {{sample 08_chart/08_dynamic/04_filtering.html }}

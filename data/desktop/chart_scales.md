@@ -29,7 +29,7 @@ webix.ui({
 - A vertical, **[yAxis](api/ui.chart_yaxis_config.md)** of a chart is formed according to the values of data, which progress you want to show graphically. Naturally, the values are numeric. This data is specified by chart's **value** property. 
 - A horizontal, **[xAxis](api/ui.chart_xaxis_config.md)** displays progress of the data according to the specified criterion. 
 
-If needed, any axle can be omitted. 
+If needed, any axis can be omitted. 
 
 Take the dataset looks as follows and we want to present sales progress during several years. Each data item contains sales amount and the year. 
 
@@ -51,10 +51,10 @@ JSON data}}
 
 ###Y-axis Formation
 
-If you set an empty yAxis property object **(yAxis:{})**, the dataset will be anylized and the scale will be formed automatically. Here:
+If you set an empty yAxis property object **(yAxis:{})**, the dataset will be analyzed and the scale will be formed automatically. Here:
 
 - the optimal step for units will be 10 as all the values are lower than a hundred;
-- the lowest unit value for the scale will be 20 as the lowest value in the dataset is 20 and the programm takes the closest ten's place.
+- the lowest unit value for the scale will be 20 as the lowest value in the dataset is 20 and the program takes the closest ten's place.
 - the highest unit value for the scale will be 80 since it's the highest data value. 
 
 ###X-Axis Formation

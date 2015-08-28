@@ -176,9 +176,9 @@ Or, as an **array of menu objects**:
 
 ~~~js
 { id: "1.2", value:"Slavic...", submenu:[
-	{id: "1.2.1", value:"Belarus"},
+	{id: "1.2.1", value:"Belarusian"},
 	{id: "1.2.2", value:"Russian"},
-    {id: "1.2.3", value:"Ukranian"}
+    {id: "1.2.3", value:"Ukrainian"}
 ]}
 ~~~
 

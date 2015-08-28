@@ -40,7 +40,7 @@ webix.ui({
 Here is a calendar with basic parameters. 
 
 - **weekHeader** (boolean) - if *true* shows weekday above;
-- **events** (CSS class or specific cases) - e.g. **webix.Date.isHoliday** highlights dayoffs;
+- **events** (CSS class or specific cases) - e.g. **webix.Date.isHoliday** highlights days off;
 - **date** (string, object) - specifies the start date in the "year, month, day" format with months starting from 0. In case of an empty new Date(); you'll be shown current date;
 - **dayTemplate** (function) - specifies a function that [sets a template](api/ui.calendar_daytemplate_config.md) for each day cell. By default the date is displayed without any styling;
 - **icons** (boolean) - specifies whether to show ["Today" and "Clear"](api/ui.datepicker_icons_config.md) icons.
@@ -128,7 +128,7 @@ webix.ui({
 })
 ~~~
 
-With timepicker enabled, time is shown below month view within the calendar body. There're three options for the clock: 
+With timepicker enabled, time is shown below month view within the calendar body. There are three options for the clock: 
 
 - If the time is defined in the *new Date(YYYY, MM, DD, HH, mm)* constructor, it's shown according to the specified values; 
 - If date is set with no time specified (new Date(2012, 3, 16)) - the clock shows midnight;

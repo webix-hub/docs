@@ -3,11 +3,11 @@ Data mapping
 
 It's possible to define mapping between loaded data and columns of datatable. 
 
-By default, DataTable will assume that incoming json|xml has attribute with the same name as columns id. 
-So for well formed xml|json you need to define only column id. 
+By default, DataTable will assume that incoming json/xml has attribute with the same name as columns id. 
+So for well formed xml/json you need to define only column id. 
 
-In case of xml|json in custom format, you can use "map" attribute of column,
-it defines which property of loaded data object need to be used foir that column in grid
+In case of xml/json in custom format, you can use "map" attribute of column,
+it defines which property of loaded data object need to be used for that column in grid
 
 {{snippet Loading from XML }}
 ~~~js
@@ -51,7 +51,7 @@ grid = new webix.ui({
 {{sample 15_datatable/01_loading/01_inline_data.html }}
 
 
-or you can use mapping, to define more meaningfull names for columns
+or you can use mapping, to define more meaningful names for columns
 
 ~~~js
 grid = new webix.ui({

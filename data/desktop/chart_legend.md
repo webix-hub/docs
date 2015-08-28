@@ -1,7 +1,7 @@
 Setting Legend for a Chart
 ===============
 
-Chart legend explains data and color correspondance. Generally, to specify the chart legend you should use the api/ui.chart_legend_config.md property:
+Chart legend explains data and color correspondence. Generally, to specify the chart legend you should use the api/ui.chart_legend_config.md property:
 
 
 <img src="desktop/chart_legend.png"/>
@@ -69,10 +69,11 @@ See the full list of **legend parameters** in [API Reference](api/ui.chart_legen
 
 - Legend customization includes marker dimensions and arrangement, their alignment towards the chart, colors and border as well as custom text for the markers. 
 - Custom legends are vital with [chart series](desktop/chart_series.md) for different graphs need to be explained for users could read the charts. 
-- Legend markers defined for chart series are used to **show** and **hide dedicated graphs** (lines, areas, bars..) by clicking on their signs. Invisible charts can be shown back by clicking thr greay 'inactive' marker sign. 
+- Legend markers defined for chart series are used to **show** and **hide dedicated graphs** (lines, areas, bars..) by clicking on their signs. Invisible charts can be shown back by clicking the grey 'inactive' marker sign. 
 
 {{note
-Legend markers become "show-and-hide" buttons for all charts with series **except for stacked charts** (stackedArea, stackedBar, stackedBarH) for such charts presuppose series usage and don't inply visual comparison. 
+Legend markers become "show-and-hide" buttons for all charts with series **except for stacked charts** (stackedArea, stackedBar, stackedBarH), 
+because such charts presuppose series usage and don't imply visual comparison. 
 }}
 
 
