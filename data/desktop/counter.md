@@ -8,14 +8,14 @@ Counter
 
 ##Overview
 
-Counter is a spin-box thas helps select a number by either entering the value in the input field or 
+Counter is a spin-box that helps select a number by either entering the value in the input field or 
 clicking "+" and "-" buttons to reach the necessary value. 
 
 Negative values are possible.
 
 <img src="desktop/counter.png"/>
 
-{{sample 13_form/01_controls/05_counter.html }}
+{{editor http://webix.com/snippet/e35f3376	Spin Box ('counter')}}
 
 ##Initialization 
 

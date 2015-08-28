@@ -23,7 +23,8 @@ The colored space between the markers defines the values included into the range
 { view:"rangeslider", label:"Level B", value:[0,50], name:"s2"}
 ~~~
 
-{{sample 13_form/05_extras/07_rangeslider.html}}
+
+{{editor http://webix.com/snippet/211f7085	Range Slider}}
 
 ####Main Properties
 

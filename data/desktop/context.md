@@ -23,7 +23,7 @@ webix.ui({
 		master:"areaA"
 			});
 ~~~
-{{sample 03_menu/07_context_ui.html }}
+{{editor http://webix.com/snippet/406a47a3	Context Menu: UI Components Inside }}
 
 ####Comments:
 
@@ -53,7 +53,7 @@ webix.ui({
 	master:"context_area"
 });
 ~~~
-{{sample 03_menu/07_context_ui.html }}
+{{editor http://webix.com/snippet/406a47a3	Context Menu: UI Components Inside }}
 
 - **Any HTML element** referred to by the ID of the div containter it is placed in. 
 

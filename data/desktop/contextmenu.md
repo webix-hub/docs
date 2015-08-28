@@ -34,7 +34,7 @@ webix.ui({
 	master:"areaA" //  ID of a DIV container
 });
 ~~~
-{{sample 03_menu/04_context.html }}
+{{editor http://webix.com/snippet/a534ba11	Context Menu }}
 
 **Data** property includes list items in the window, **separator** stands for a line to divide window areas while **master** property defines the area where 
 the component is initialized. 
@@ -58,7 +58,7 @@ webix.ui({
 
 Here **data** includes menu constructor with some items having submenus. 
 
-{{sample 03_menu/04_context.html }}
+{{editor http://webix.com/snippet/a534ba11	Context Menu }}
 
 ##Working with ContextMenu
 

@@ -19,8 +19,7 @@ Colorpicker
 { view:"colorpicker", label:"Front color", name:"color", value:"#ffaadd" }
 ~~~
 
-{{sample 24_colorpicker/04_in_form.html }}
-
+{{editor http://webix.com/snippet/9ed4eab3	Colorpicker in Form}}
 
 ####Main Properties
 

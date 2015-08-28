@@ -46,7 +46,7 @@ rows:[
 
 Compare top and bottom tabbars in a sample: 
 
-{{sample 13_form/01_controls/08_tabbar.html }}
+{{editor	http://webix.com/snippet/9a2e4dcc	Panel with Clickable Items ('tabbar')}}
 
 ##'Close' Button for Tabs
 

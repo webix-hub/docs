@@ -13,7 +13,7 @@ time, you can edit the text field and the items will be filtered according to th
 
 <img src="desktop/combo.png"/>
 
-{{sample 13_form/01_controls/09_combo.html }}
+{{editor http://webix.com/snippet/a361dd55	Editable Combo Box ('combo')}}
 
 ##Initialization
 
@@ -64,7 +64,7 @@ Combo box control can be customized in a number of ways, e.g.:
 - options can be defined dynamically;
 - options can be loaded from serverside;
 - template can be changed;
-- filtering rule can be changed..
+- filtering rule can be changed.
 
 To learn more, go to [Advanced Combo and Richselect Settings](desktop/advanced_combo.md) article. 
 
@@ -84,7 +84,7 @@ $$('field_t').getValue(); // ->returns 1
 $$('field_t').getInput().value // -> returns "One"
 ~~~
 
-{{sample 80_docs/unit_items.html}}
+{{editor http://webix.com/snippet/353dcc45	Working with UnitList items}}
 
 ##Alternatives to Combo Box
 

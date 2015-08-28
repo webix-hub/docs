@@ -29,7 +29,7 @@ Select is a control that allows selection from several items. It is based on HTM
 { view:"select", options:"server/data.json"}
 ~~~
 
-{{sample 13_form/01_controls/02_select.html }}
+{{editor http://webix.com/snippet/05772d7a	Select Box ('select')}}
 
 ####Main properties
 
@@ -55,5 +55,5 @@ Select is a control that allows selection from several items. It is based on HTM
 ]}
 ~~~
 
-{{sample 02_toolbar/20_richselect.html}} 
+{{editor http://webix.com/snippet/b111036d	Select Boxes}}
 

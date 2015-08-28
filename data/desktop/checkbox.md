@@ -15,6 +15,8 @@ Checkbox allows for a choice between two possible variants.
 
 {{sample 13_form/01_controls/06_checkbox.html }}
 
+{{editor http://webix.com/snippet/a3b187c0	Check Box ('checkbox')}}
+
 
 ##Initialization
 
@@ -39,6 +41,6 @@ Checkbox Initialization
 Webix checkbox control is based on standard HTML checkbox  yet some skins use a FontAwesome icon to render it. To switch to a standard HTML checkbox, use **customCheckbox** property: 
 
 ~~~js
-{ view:"checkbox", customeCheckbox:false} 
+{ view:"checkbox", customCheckbox:false} 
 ~~~
 

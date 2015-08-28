@@ -16,7 +16,7 @@ Button
 { view:"button", id:"my_button", value:"Button", type:"...", inputWidth:100 } 
 ~~~
 
-{{sample 13_form/01_controls/10_buttons.html }}
+{{editor http://webix.com/snippet/918706da	Button ('button')}}
 
 *Type* property of a button defines the way is looks like: 
 
@@ -35,6 +35,8 @@ Button
 ~~~
 
 {{sample 16_skins/03_icons.html }}
+
+{{editor	http://webix.com/snippet/03ed38c8	Icons}}
 
 Icon button features some specific configuration options:
 
@@ -56,7 +58,7 @@ For further information about icons in Webix components read the desktop/icon_ty
 { view:"button", type: "image", image:".../img.gif", label: "Image Button" }
 ~~~
 
-{{sample 02_toolbar/07_toolbar_image_button.html }}
+{{editor http://webix.com/snippet/decd1b75	Buttons: Type 'image'}}
 
 Image button features some specific configuration options: 
 
@@ -79,7 +81,7 @@ Image button features some specific configuration options:
 }
 ~~~
 
-{{sample 02_toolbar/12_styled_buttons.html}}
+{{editor http://webix.com/snippet/24755634	Buttons: Styling}}
 
 A button with an 'htmlbutton' type can be defined by HTML markup and CSS styling. Setting the *css* property you indicate the CSS class 
 through which you can style the button itself, its text, icon or image: 
@@ -100,9 +102,7 @@ through which you can style the button itself, its text, icon or image:
 
 Any button regardless of its *type* can be equipped with a badge with the help of a same-name property.
 
-{{sample
-02_toolbar/21_toolbar_badges.html
-}}
+{{editor http://webix.com/snippet/f52c9f81	Buttons: Type 'icon' with Badges}}
 
 ##Button Configuration
 

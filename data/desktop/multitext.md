@@ -22,7 +22,7 @@ UI-related multitext is a dynamic control based on standard Webix [text](desktop
 { view:"multitext", id:"multi", value:'dummy@email.com, mirror@email.com', label:"Email" }
 ~~~
 
-{{sample 60_pro/02_form/01_multitext.html}}
+{{editor http://webix.com/snippet/d4f9fd6a	Multi-Text input}}
 
 ####Main properties
 

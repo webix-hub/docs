@@ -30,7 +30,7 @@ Multiselect inherits from a standard [richselect](desktop/richselect.md) and has
 ], value:"1,3" }
 ~~~
 
-{{sample 60_pro/02_form/02_multiselect.html}}
+{{editor http://webix.com/snippet/7802cbfb	Multi-select input}}
 
 ####Main properties
 

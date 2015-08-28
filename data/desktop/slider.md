@@ -20,7 +20,7 @@ Negative values are possible.
 { view:"slider", label:"Level", value:"20", min:10, max: 120; name:"s1"}
 ~~~
 
-{{sample 13_form/05_extras/03_slider.html}}
+{{editor http://webix.com/snippet/7051e0cd	Slider}}
 
 ####Main Properties
 
@@ -34,7 +34,8 @@ Negative values are possible.
 - **max** (number) - maximum value of the slider control. 100 by default.
 - **title** (template, function) - text label over the slider marker 
 
-{{sample 13_form/05_extras/04_slider_step.html}}.
+
+{{editor http://webix.com/snippet/18c6b45c	Slider:Custom Step}}
 
 {{note
 Note that if you set **min** and **max** parameters, the initial control **value** should be within their range.
@@ -44,7 +45,7 @@ Note that if you set **min** and **max** parameters, the initial control **value
 
 Slider Title is based on the current value of the control.
 
-For simple title that displayes current value and **static text**, set a template via **webix.template** class:
+For a simple title that displays the current value and **static text**, set a template via **webix.template** class:
 
 ~~~js
 {view:"slider", title:webix.template("Selected: #value#")}
@@ -79,7 +80,8 @@ Make use of slider events to set changing title for a drag marker:
 }}
 ~~~
 
-{{sample 13_form/05_extras/05_slider_title.html}}
+
+{{editor http://webix.com/snippet/12f5548d	Slider:Labels}}
 
 The new title is set with the help of **define()** method while current value of derived with **getValue()**.  Read more about [Changing Component properies](desktop/redefinition.md). 
 

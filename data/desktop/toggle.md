@@ -25,7 +25,7 @@ Toggle values can be defined separately for each state.
 }
 ~~~
 
-{{sample 13_form/01_controls/14_toggle.html }}
+{{editor http://webix.com/snippet/e1ac2010	Toggle Button ('toggle')}}
 
 ####Main properties
  
@@ -78,3 +78,4 @@ Types coincide with those of a standard [button](desktop/button.md). Check their
 
 {{sample 13_form/01_controls/14_toggle_images.html}}
 
+{{editor http://webix.com/snippet/a0d4c5e3	Toggle Image Button ('toggle')}}

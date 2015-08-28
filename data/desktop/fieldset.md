@@ -40,7 +40,7 @@ Or, to create a control group within a **form**:
 ]} 
 ~~~
 
-{{sample 13_form/05_extras/01_fieldset.html }}
+{{editor http://webix.com/snippet/c08bce86	Fieldset}}
 
 ####Main Properties
 

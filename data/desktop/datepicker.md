@@ -12,7 +12,7 @@ Datepicker is used in a combination with ui-related [calendar](desktop/calendar.
 
 <img src="desktop/date_picker.png"/>
 
-{{sample 13_form/01_controls/13_datepicker.html }}
+{{editor http://webix.com/snippet/d1334f89	Date Picker ('datepicker')}}
 
 ##Initialization
 ~~~js

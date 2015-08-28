@@ -42,7 +42,7 @@ webix.ui({
 		]
 	});
 ~~~
-{{sample 13_form/02_api/01_basic.html }}
+{{editor http://webix.com/snippet/63c02180	Basic Initialization }}
 
 {{note
 There exists a possibility to specify [common configuration](desktop/common_config.md) for all controls included in this or that form.
@@ -112,7 +112,7 @@ $$("sets").setValues({
 });
 ~~~
 
-{{sample  13_form/02_api/14_complex_values.html }}
+{{editor http://webix.com/snippet/f3c4bebe	Form: Data with complex properties }}
 
 **Loading/parsing values**
 
@@ -193,7 +193,7 @@ Form elements are placed into different **row arrays** where the first row is a 
 
 <br>
 
-{{sample 13_form/01_controls/18_sections.html}}
+{{editor http://webix.com/snippet/ff2517a3	Splitting Form into Sections}}
 
 **Fieldsets**
 
@@ -216,7 +216,7 @@ Form elements are placed into different **row arrays** where the first row is a 
 
 <br>
 
-{{sample 13_form/05_extras/01_fieldset.html }}
+{{editor http://webix.com/snippet/22f3796f 	Filedset}}
             
 ###Multiview Form
 
@@ -238,7 +238,7 @@ The switching controls are placed directly into the array of form **elements**.
                
 ~~~
 
-{{sample 13_form/02_api/13_tabs_form.html}}
+{{editor http://webix.com/snippet/897bc9d4	Form with Tabs}}
 
 
 ##Retrieving Form Values
@@ -300,7 +300,7 @@ form2[i].readonly = true; //where "i" takes the number value of the element star
 form2[i].disabled = true; 
 ~~~
 
-{{sample 13_form/02_api/02_attributes.html }}
+{{editor http://webix.com/snippet/4cf99378	Attributes}}
 
 See also [Form and HTMLform Treatment](desktop/form_tasks.md) article to learn more about the most important form methods. 
 
@@ -317,7 +317,7 @@ $$("form1").elements["login"].attachEvent("onChange", function(newv, oldv){
 			webix.message("Value changed from: "+oldv+" to: "+newv);
 ~~~
 
-{{sample 13_form/02_api/07_onchange_event.html }}
+{{editor http://webix.com/snippet/9a324ef6	'onChange' event}}
 
 ##Getting Parent Form for the Input
 

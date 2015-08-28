@@ -35,7 +35,7 @@ webix.ui({
 
 
 {{editor 
-http://webix.com/snippet/217455a4	Calendar
+http://webix.com/snippet/3d3403bf	Calendar
 }}
 
 ####Comments: 
@@ -108,7 +108,7 @@ webix.ui({
 });
 ~~~
 
-{{editor http://webix.com/snippet/bc812c2f	Date Picker in Calendar}}
+{{editor http://webix.com/snippet/62b0fb48	Date Picker in Calendar}}
 
 ##Time Selector in Calendar
 
@@ -131,7 +131,7 @@ webix.ui({
 	view:"calendar",
     date: new Date(2012, 3, 16, 8, 35),
     timepicker:true,
-    timepickerHeight:50 //optional, default is 30
+    timepickerHeight:50 // optional, default is 30
 })
 ~~~
 
@@ -142,7 +142,7 @@ With timepicker enabled, time is shown below month view within the calendar body
 - If the *new Date* function comes with no parameters, current date and time is shown. 
 
 
-{{editor http://webix.com/snippet/cd389349	Timepicker in Calendar}}
+{{editor http://webix.com/snippet/7025116c	Timepicker in Calendar}}
 
 **Time view**
 
@@ -157,7 +157,7 @@ webix.ui({
 });
 ~~~
 
-{{editor http://webix.com/snippet/cd389349	Timepicker in Calendar}}
+{{editor http://webix.com/snippet/7025116c	Timepicker in Calendar}}
 
 Like standard calendar, time view accepts values as string or date object.
 
@@ -202,7 +202,7 @@ The whole calendar can be disabled by a common property:
 
 
 {{editor
-http://webix.com/snippet/7011cacb	Disabled Dates
+http://webix.com/snippet/d69194d9	Disabled Dates
 }}
 
 ###Disabling dates
@@ -256,7 +256,7 @@ webix.ui({
 ~~~
 
 
-{{editor http://webix.com/snippet/23c92eb9	Disabled Time}}
+{{editor http://webix.com/snippet/dbc8a69c	Disabled Time}}
 
 **Defining blockTime() function for custom logic**
 
@@ -281,7 +281,7 @@ webix.ui({
 });
 ~~~
 
-{{editor http://webix.com/snippet/23c92eb9	Disabled Time}}
+{{editor http://webix.com/snippet/dbc8a69c	Disabled Time}}
 
 CSS class applied to disabled time slots (**.webix_minutes .webix_cal_day_disabled**) can be redefined.
 
@@ -335,7 +335,7 @@ Both buttons have two properties:
 By default, these buttons are visible, but you can hide them by setting the **icons** property to **false**.
 
 
-{{editor http://webix.com/snippet/8cc4b713	'Today' and 'Clear' buttons}}
+{{editor http://webix.com/snippet/3d894d72	'Today' and 'Clear' buttons}}
 
 
 ##Related Articles

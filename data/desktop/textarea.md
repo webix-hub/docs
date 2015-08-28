@@ -20,6 +20,8 @@ Ui-related textarea control is a multi-line input field with a label.
 
 {{sample 13_form/01_controls/03_textarea.html }}
 
+{{editor http://webix.com/snippet/fa71607b	Multiline Text Input('textarea')}}
+
 ####Main properties
 
 - **label** (string) - text label of a control. It can be customized by:

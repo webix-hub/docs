@@ -14,7 +14,7 @@ Ui-related <a href="http://webix.com/widget/multiview-scrollview-carousel/" titl
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/carousel.png"/>
 
-{{sample 26_carousel/01_init.html}}
+{{editor http://webix.com/snippet/a2103d8b	Carousel}}
 
 ##Initialization
 
@@ -37,7 +37,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 26_carousel/01_init.html}}
+{{editor http://webix.com/snippet/a2103d8b	Carousel}}
 
 Normally, component configuration is stored separately while **cols/rows** contain an array of corresponding variables. It makes code clear and easy to read. 
 

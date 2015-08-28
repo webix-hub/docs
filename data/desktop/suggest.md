@@ -18,6 +18,8 @@ It is based on Webix [list](desktop/list.md) component.
 
 {{sample 13_form/01_controls/15_suggest_server.html }}
 
+{{editor http://webix.com/snippet/3fd083a4	Suggest List for Input: Populating with Server-side Data)
+	
 Suggest list can be used with the following components (should be configured separately):
 
 - standard HTML input;
@@ -114,7 +116,8 @@ webix.ui({
 });
 
 ~~~
-{{sample 80_docs/suggest_combo.html}}
+
+{{editor http://webix.com/snippet/b18025aa	Suggest for richselect and combo}}
 
 {{note
 Note that you must select any value from a suggest list, since it's required by combo and richselect nature. 
@@ -136,7 +139,8 @@ var countries = [
 { view:"text", label:"Country", value:"Belarus", suggest:countries}    
 ~~~
 
-{{sample 13_form/01_controls/15_suggest_text.html }}
+
+{{editor http://webix.com/snippet/91229f7a	Suggest List for Input: Populating with Client-side Data}}
 
 ##Suggest list with server-side data
 
@@ -161,6 +165,8 @@ As value of suggest property
 ~~~
 
 {{sample 13_form/01_controls/15_suggest_server.html }}
+
+{{editor http://webix.com/snippet/149f9f71	Suggest List for Input: Populating with Server-side Data}}
 
 Suggest list is connected with an input field by **suggest** property included into the **text** constructor. 
 
@@ -197,6 +203,8 @@ webix.ui({
 ~~~
 
 {{sample 15_datatable/04_editing/14_autosuggest.html}}
+
+{{editor http://webix.com/snippet/f074424d	Datatable: Autosuggest}}
 
 At the same time, you can provide all the logic by API, which allows customizing suggest behaviour: 
 
@@ -251,6 +259,8 @@ webix.ui({
 ~~~
 
 {{sample 15_datatable/04_editing/21_advanced_combo.html}}
+
+{{editor http://webix.com/snippet/608953ba	Advanced Combo Editor}}
 
 ##Customizing suggest list
 
@@ -341,6 +351,8 @@ Since we speak here about **relative** position, the property to set it has the 
 
 {{sample 13_form/01_controls/15_suggest_position.html}}
 
+{{editor	http://webix.com/snippet/182cba69	Attaching Suggest List to Input}}
+
 ##Advanced suggest lists
 
 {{pronote
@@ -377,7 +389,7 @@ If needed, it can substitute checksuggest for the above-mentioned used cases. Se
 
 <img src="desktop/gridsuggest.png"/>
 
-{{sample 32_thirdparty/13_gridselect.html}}
+{{editor http://webix.com/snippet/4d4f3801	Grid Suggest}}
 
 Gridsuggest can be used with form controls as well as with component editors. More about its configuration can be found in the [related article](desktop/gridsuggest.md).  
 

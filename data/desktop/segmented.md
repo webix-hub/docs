@@ -25,7 +25,7 @@ Segmented is an integral button with as many segments as you like. Can be used f
 { view:"segmented", options:["Section A", "Section B", "Section C"]}
 ~~~
 
-{{sample 13_form/01_controls/07_segmented.html }}
+{{editor http://webix.com/snippet/53f80412	Holistic Panel with Multiple Buttons ('segmented')}}
 
 ####Main properties
 

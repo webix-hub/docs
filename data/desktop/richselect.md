@@ -19,8 +19,8 @@ Another possibility to create a component with a similar functionality is [attac
 
 ##Initialization
 
-//full form
 ~~~js
+//full form
 {view:"richselect",
 	id: "list2", label: 'richselect', 
     value:1, yCount:"3", options:[ 
@@ -57,7 +57,7 @@ Richselect control can be customized in a number of ways, e.g.:
 
 - options can be defined dynamically;
 - options can be loaded from serverside;
-- template can be changed..
+- template can be changed.
 
 To learn more, go to [Advanced Settings of Popup Selectors](desktop/advanced_combo.md) article. 
 
@@ -89,4 +89,4 @@ $$('field_t').getValue(); // ->returns 1
 $$('field_t').getInput().value // -> returns "One"
 ~~~
 
-{{sample 80_docs/unit_items.html}}
+{{editor http://webix.com/snippet/8738b955	Working with UnitList Items}}

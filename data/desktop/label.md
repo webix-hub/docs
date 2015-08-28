@@ -18,7 +18,7 @@ Ui-related label is a non-scrollable placeholder for plain text. Like other comp
 { view:"label", label: "Label", inputWidth:100, align:"center"}
 ~~~
 
-{{sample 13_form/02_api/02_attributes.html}}
+{{editor http://webix.com/snippet/4cf99378	Attributes}}
 
 ####Main properties
 

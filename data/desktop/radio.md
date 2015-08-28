@@ -23,7 +23,7 @@ Ui-related radio is a block of several items with the possibility to check only 
  {view:"radio", options:["Master", "Branch"]}
 ~~~
 
-{{sample 13_form/01_controls/04_radio.html }}
+{{editor http://webix.com/snippet/2726b967	Radio Button ('radio')}}
 
 ####Main properties
 

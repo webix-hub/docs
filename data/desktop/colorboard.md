@@ -32,7 +32,7 @@ webix.ui({
 		height	:400
 });
 ~~~
-{{sample 24_colorpicker/01_initialization.html }}
+{{editor http://webix.com/snippet/4bc36ae6	Colorboard }}
 
 
 ####Comments:
@@ -65,7 +65,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 24_colorpicker/02_custom_template.html }}
+{{editor http://webix.com/snippet/dcf70217	Palette-Templates }}
 
 - **defining your own color set**
 
@@ -85,7 +85,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 24_colorpicker/03_custom_colors.html }}
+{{editor http://webix.com/snippet/5261e4b3	Colorboard-Colors }}
 
 ####Deriving Selected Color Value from the colorboard: 
 

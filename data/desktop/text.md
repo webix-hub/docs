@@ -1,7 +1,7 @@
 Text
 =======================
 
-#API Reference
+##API Reference
 
 - [Methods, properties and events](api/refs/ui.text.md) 
 - [Shared functionality](desktop/controls_guide.md)
@@ -19,7 +19,7 @@ Ui-related text control is a one-line input field with a label.
 {view:"text", type:'password', value:'123pass', label:"Password", labelAlign:'right'}
 ~~~
 
-{{sample 13_form/01_controls/01_text.html }}
+{{editor http://webix.com/snippet/bade77cb	Text Input ('text')}}
 
 ####Main properties
 
