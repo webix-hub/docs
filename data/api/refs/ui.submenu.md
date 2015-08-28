@@ -50,6 +50,7 @@ The component is a compliment to the menu component and not intended for direct 
 - api/link/ui.submenu_enableitem.md - enables menu item
 - api/link/ui.submenu_exists.md - checks whether an item with the specified id exists
 - api/link/ui.submenu_filter.md - filters the component
+- api/link/ui.submenu_find.md - returns rows that match the criterion
 - api/link/ui.submenu_getbody.md - gets the ui view of the window body
 - api/link/ui.submenu_getchildviews.md - returns child views of the calling component
 - api/link/ui.submenu_getfirstid.md - returns the ID of the first item
@@ -233,7 +234,7 @@ The component is a compliment to the menu component and not intended for direct 
 - api/link/ui.submenu_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.submenu_select_config.md - enables/disables item selection or multiselection in grouplist
 - api/link/ui.submenu_submenupos_config.md - aligns submenu towards main menu
-- api/link/ui.submenu_submenu_config.md - defines submenu configuration
+- api/link/ui.submenu_submenuconfig_config.md - defines submenu configuration
 - api/link/ui.submenu_template_config.md - the component template
 - api/link/ui.submenu_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
 - api/link/ui.submenu_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.

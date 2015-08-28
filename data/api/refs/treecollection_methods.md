@@ -10,12 +10,14 @@ Methods
 - api/link/treecollection_callevent.md - calls an inner event
 - api/link/treecollection_clearall.md - removes all items from the component
 - api/link/treecollection_clearvalidation.md - removes all validation marks from the component
+- api/link/treecollection_copy.md - copies an item to the same or another object
 - api/link/treecollection_count.md - returns the number of currently visible items
 - api/link/treecollection_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/treecollection_destructor.md - destructs the calling object
 - api/link/treecollection_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/treecollection_exists.md - checks whether an item with the specified id exists
 - api/link/treecollection_filter.md - filters the component
+- api/link/treecollection_find.md - returns rows that match the criterion
 - api/link/treecollection_getbinddata.md - fills the target object with data
 - api/link/treecollection_getbranchindex.md - gets index of the node in a specific branch
 - api/link/treecollection_getcursor.md - returns the current cursor position.
@@ -37,6 +39,11 @@ Methods
 - api/link/treecollection_loadbranch.md - loads data to the specified branch, as direct children of the node with the id provided
 - api/link/treecollection_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
 - api/link/treecollection_mapevent.md - routes events from one object to another
+- api/link/treecollection_move.md - moves the specified item to the new position
+- api/link/treecollection_movebottom.md - moves the specified item to the last position
+- api/link/treecollection_movedown.md - increases the item index and moves the item to the new position
+- api/link/treecollection_movetop.md - moves the specified item to the first position
+- api/link/treecollection_moveup.md - decreases the item index and moves the item to the new position
 - api/link/treecollection_parse.md - loads data to the component from an inline data source
 - api/link/treecollection_refresh.md - repaints the whole view or a certain item
 - api/link/treecollection_refreshcursor.md - force repainting of all bound components with current cursor value
@@ -63,12 +70,14 @@ Methods
 - api/link/treecollection_callevent.md
 - api/link/treecollection_clearall.md
 - api/link/treecollection_clearvalidation.md
+- api/link/treecollection_copy.md
 - api/link/treecollection_count.md
 - api/link/treecollection_define.md
 - api/link/treecollection_destructor.md
 - api/link/treecollection_detachevent.md
 - api/link/treecollection_exists.md
 - api/link/treecollection_filter.md
+- api/link/treecollection_find.md
 - api/link/treecollection_getbinddata.md
 - api/link/treecollection_getbranchindex.md
 - api/link/treecollection_getcursor.md
@@ -90,6 +99,11 @@ Methods
 - api/link/treecollection_loadbranch.md
 - api/link/treecollection_loadnext.md
 - api/link/treecollection_mapevent.md
+- api/link/treecollection_move.md
+- api/link/treecollection_movebottom.md
+- api/link/treecollection_movedown.md
+- api/link/treecollection_movetop.md
+- api/link/treecollection_moveup.md
 - api/link/treecollection_parse.md
 - api/link/treecollection_refresh.md
 - api/link/treecollection_refreshcursor.md

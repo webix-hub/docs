@@ -35,6 +35,7 @@ The component allows you to get an HTML Form as a lib-based view, so that to use
 - api/link/ui.htmlform_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.htmlform_bind.md - binds components
 - api/link/ui.htmlform_blockevent.md - temporarily blocks triggering of ALL events of the calling object
+- api/ui.htmlform_blur.md - 
 - api/link/ui.htmlform_callevent.md - calls an inner event
 - api/link/ui.htmlform_clear.md - clears all the field in a specified form
 - api/link/ui.htmlform_define.md - redefines a single configuration property (or a hash of properties)

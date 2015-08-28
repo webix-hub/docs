@@ -1,4 +1,4 @@
-submenu
+submenuConfig
 =============
 
 
@@ -9,7 +9,7 @@ submenu
 webix.ui({
 	view:"menu",
 	width:150,
-	submenu:{
+	submenuConfig:{
 		width:250,
 		template:"SUB #value#"
 	}

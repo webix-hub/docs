@@ -57,6 +57,7 @@ $("#mydiv").webix_tree({
 - api/link/ui.tree_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.tree_exists.md - checks whether an item with the specified id exists
 - api/link/ui.tree_filter.md - filters the component
+- api/link/ui.tree_find.md - returns rows that match the criterion
 - api/link/ui.tree_getbranchindex.md - gets index of the node in a specific branch
 - api/link/ui.tree_getchecked.md - returns ids of the checked items
 - api/link/ui.tree_getchildviews.md - returns child views of the calling component

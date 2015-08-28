@@ -24,6 +24,7 @@ Methods
 - api/ui.menu_enableitem.md - enables menu item
 - api/link/ui.menu_exists.md - checks whether an item with the specified id exists
 - api/link/ui.menu_filter.md - filters the component
+- api/link/ui.menu_find.md - returns rows that match the criterion
 - api/link/ui.menu_getchildviews.md - returns child views of the calling component
 - api/link/ui.menu_getfirstid.md - returns the ID of the first item
 - api/link/ui.menu_getformview.md - returns master form for the input
@@ -110,6 +111,7 @@ Methods
 - api/ui.menu_enableitem.md
 - api/link/ui.menu_exists.md
 - api/link/ui.menu_filter.md
+- api/link/ui.menu_find.md
 - api/link/ui.menu_getchildviews.md
 - api/link/ui.menu_getfirstid.md
 - api/link/ui.menu_getformview.md

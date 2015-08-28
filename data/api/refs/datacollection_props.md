@@ -7,6 +7,7 @@ Properties
 - api/link/datacollection_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/datacollection_datatype_config.md - the type of loaded data
 - api/link/datacollection_defaultdata_config.md - the property stores data which is displayed in the child when no records are selected in the  master.
+- api/link/datacollection_externaldata_config.md - allows defining custom 'move' logic for the component.
 - api/link/datacollection_id_config.md - the component ID
 - api/link/datacollection_map_config.md - defines data mapping
 - api/link/datacollection_on_config.md - allows attaching custom handlers to inner events of the component
@@ -24,6 +25,7 @@ Properties
 - api/link/datacollection_datathrottle_config.md
 - api/link/datacollection_datatype_config.md
 - api/link/datacollection_defaultdata_config.md
+- api/link/datacollection_externaldata_config.md
 - api/link/datacollection_id_config.md
 - api/link/datacollection_map_config.md
 - api/link/datacollection_on_config.md

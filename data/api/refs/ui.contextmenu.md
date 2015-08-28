@@ -55,6 +55,7 @@ The component presents a pop-up menu that is displayed when the user clicks the 
 - api/link/ui.contextmenu_enableitem.md - enables menu item
 - api/link/ui.contextmenu_exists.md - checks whether an item with the specified id exists
 - api/link/ui.contextmenu_filter.md - filters the component
+- api/link/ui.contextmenu_find.md - returns rows that match the criterion
 - api/link/ui.contextmenu_getbody.md - gets the ui view of the window body
 - api/link/ui.contextmenu_getchildviews.md - returns child views of the calling component
 - api/link/ui.contextmenu_getcontext.md - gets the master area for contextmenu
@@ -240,7 +241,7 @@ The component presents a pop-up menu that is displayed when the user clicks the 
 - api/link/ui.contextmenu_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.contextmenu_select_config.md - enables/disables item selection or multiselection in grouplist
 - api/link/ui.contextmenu_submenupos_config.md - aligns submenu towards main menu
-- api/link/ui.contextmenu_submenu_config.md - defines submenu configuration
+- api/link/ui.contextmenu_submenuconfig_config.md - defines submenu configuration
 - api/link/ui.contextmenu_template_config.md - the component template
 - api/link/ui.contextmenu_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
 - api/link/ui.contextmenu_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.

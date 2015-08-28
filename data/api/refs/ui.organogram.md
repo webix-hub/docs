@@ -54,6 +54,7 @@ $("#mydiv").webix_organogram({
 - api/link/ui.organogram_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.organogram_exists.md - checks whether an item with the specified id exists
 - api/link/ui.organogram_filter.md - filters the component
+- api/link/ui.organogram_find.md - returns rows that match the criterion
 - api/link/ui.organogram_getbranchindex.md - gets index of the node in a specific branch
 - api/link/ui.organogram_getchildviews.md - returns child views of the calling component
 - api/link/ui.organogram_getfirstchildid.md - gets the ID of the first child of the specified branch

@@ -53,6 +53,7 @@ The component can be displayed in 2 modes: static (the menu is fully expanded al
 - api/ui.menu_enableitem.md - enables menu item
 - api/link/ui.menu_exists.md - checks whether an item with the specified id exists
 - api/link/ui.menu_filter.md - filters the component
+- api/link/ui.menu_find.md - returns rows that match the criterion
 - api/link/ui.menu_getchildviews.md - returns child views of the calling component
 - api/link/ui.menu_getfirstid.md - returns the ID of the first item
 - api/link/ui.menu_getformview.md - returns master form for the input
@@ -216,7 +217,7 @@ The component can be displayed in 2 modes: static (the menu is fully expanded al
 - api/link/ui.menu_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.menu_select_config.md - enables/disables item selection or multiselection in grouplist
 - api/ui.menu_submenupos_config.md - aligns submenu towards main menu
-- api/ui.menu_submenu_config.md - defines submenu configuration
+- api/ui.menu_submenuconfig_config.md - defines submenu configuration
 - api/link/ui.menu_template_config.md - the component template
 - api/link/ui.menu_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
 - api/link/ui.menu_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.

@@ -1,0 +1,1 @@
+@link: api/ui.menu_submenuconfig_config.md

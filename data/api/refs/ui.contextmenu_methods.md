@@ -26,6 +26,7 @@ Methods
 - api/link/ui.contextmenu_enableitem.md - enables menu item
 - api/link/ui.contextmenu_exists.md - checks whether an item with the specified id exists
 - api/link/ui.contextmenu_filter.md - filters the component
+- api/link/ui.contextmenu_find.md - returns rows that match the criterion
 - api/link/ui.contextmenu_getbody.md - gets the ui view of the window body
 - api/link/ui.contextmenu_getchildviews.md - returns child views of the calling component
 - api/link/ui.contextmenu_getcontext.md - gets the master area for contextmenu
@@ -119,6 +120,7 @@ Methods
 - api/link/ui.contextmenu_enableitem.md
 - api/link/ui.contextmenu_exists.md
 - api/link/ui.contextmenu_filter.md
+- api/link/ui.contextmenu_find.md
 - api/link/ui.contextmenu_getbody.md
 - api/link/ui.contextmenu_getchildviews.md
 - api/link/ui.contextmenu_getcontext.md

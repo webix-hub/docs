@@ -56,7 +56,7 @@ Properties
 - api/link/ui.submenu_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.submenu_select_config.md - enables/disables item selection or multiselection in grouplist
 - api/link/ui.submenu_submenupos_config.md - aligns submenu towards main menu
-- api/link/ui.submenu_submenu_config.md - defines submenu configuration
+- api/link/ui.submenu_submenuconfig_config.md - defines submenu configuration
 - api/link/ui.submenu_template_config.md - the component template
 - api/link/ui.submenu_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
 - api/link/ui.submenu_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
@@ -124,7 +124,7 @@ Properties
 - api/link/ui.submenu_scrollspeed_config.md
 - api/link/ui.submenu_select_config.md
 - api/link/ui.submenu_submenupos_config.md
-- api/link/ui.submenu_submenu_config.md
+- api/link/ui.submenu_submenuconfig_config.md
 - api/link/ui.submenu_template_config.md
 - api/link/ui.submenu_templatecopy_config.md
 - api/link/ui.submenu_tooltip_config.md

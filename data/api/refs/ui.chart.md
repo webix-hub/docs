@@ -49,6 +49,7 @@ It's possible to present multiple data sets on the same chart.  Check [chart](de
 - api/link/ui.chart_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.chart_exists.md - checks whether an item with the specified id exists
 - api/link/ui.chart_filter.md - filters the component
+- api/link/ui.chart_find.md - returns rows that match the criterion
 - api/link/ui.chart_getchildviews.md - returns child views of the calling component
 - api/link/ui.chart_getfirstid.md - returns the ID of the first item
 - api/link/ui.chart_getformview.md - returns master form for the input

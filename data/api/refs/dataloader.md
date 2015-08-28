@@ -13,6 +13,7 @@ DataLoader
 - api/link/dataloader_count.md - returns the number of currently visible items
 - api/link/dataloader_exists.md - checks whether an item with the specified id exists
 - api/link/dataloader_filter.md - filters the component
+- api/link/dataloader_find.md - returns rows that match the criterion
 - api/link/dataloader_getfirstid.md - returns the ID of the first item
 - api/link/dataloader_getidbyindex.md - returns the id of the item with the specified index
 - api/link/dataloader_getindexbyid.md - returns the index of the item with the specified id

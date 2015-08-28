@@ -22,6 +22,7 @@ Methods
 - api/link/ui.dataview_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.dataview_exists.md - checks whether an item with the specified id exists
 - api/link/ui.dataview_filter.md - filters the component
+- api/link/ui.dataview_find.md - returns rows that match the criterion
 - api/link/ui.dataview_getchildviews.md - returns child views of the calling component
 - api/link/ui.dataview_getfirstid.md - returns the ID of the first item
 - api/link/ui.dataview_getformview.md - returns master form for the input
@@ -100,6 +101,7 @@ Methods
 - api/link/ui.dataview_enable.md
 - api/link/ui.dataview_exists.md
 - api/link/ui.dataview_filter.md
+- api/link/ui.dataview_find.md
 - api/link/ui.dataview_getchildviews.md
 - api/link/ui.dataview_getfirstid.md
 - api/link/ui.dataview_getformview.md
