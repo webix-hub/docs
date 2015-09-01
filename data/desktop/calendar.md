@@ -47,9 +47,9 @@ Here is a calendar with basic parameters.
 
 To see the full list of Calendar properties please refer to the [corresponding chapter of the documentation](api/refs/ui.calendar_props.md).
 
-#### Start Date
+##Setting Start Day of the Week
 
-By default the calendar starts a week on Sunday. However, you can also set Monday as a start day.
+By default the calendar starts a week on Sunday. However, you can also set Monday as a start day. For this purpose, use the api/date_startonmonday_other.md property with the value *true*:
 
 ~~~js
 webix.Date.startOnMonday = true;
