@@ -60,7 +60,7 @@ webix.ui({
 ~~~
 <img src="desktop/calendar_start_date.png"/>
 
-{{sample 09_calendar/02_start_date.html }}
+{{sample 09_calendar/02_start_on_monday.html }}
 
 ##Working with Calendar
 
