@@ -88,7 +88,7 @@ Each object in the array specifies a single column. An object can take the follo
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>format</b></td>
-			<td>(<i>function</i>) the data format</td>
+			<td>(<i>function</i>) the <a href="datatable/columns_configuration.md#dataformats">format</a> of data presentation</td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0" style="vertical-align: top;"> <b>footer</b></td>

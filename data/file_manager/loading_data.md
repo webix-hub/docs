@@ -42,7 +42,7 @@ webix.ready(function(){
 			"download"	: "data/saving.php",
 			"copy"		: "data/saving.php",
 			"move"		: "data/saving.php",
-			"delete"	: "data/saving.php",
+			"remove"	: "data/saving.php",
 			"rename"	: "data/saving.php",
 			"create"	: "data/saving.php"
 		}
