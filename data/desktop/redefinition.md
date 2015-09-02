@@ -32,6 +32,10 @@ $$("mylist").define({
 });
 ~~~
 
+{{note
+Webix has rich API that allows performing various operations and can be used instead of the define() method. So we advise you to look up a suitable method in the API reference before use the define() method.
+}}
+
 ##Applying Property Changes
 
 In order that new properties came into force, you should apply either of these methods to the redefined component:
@@ -45,6 +49,11 @@ and all [controls](desktop/controls.md)).
 $$("layout").define("rows", [ {view:"button", ...}, {view:"label", ...} ]);
 $$("layout").reconstruct();
 ~~~
+
+{{note
+The reconstruct() method is out-of-date. We recommend you to use more modern techniques of rebuilding components that are described in the section 
+[Rebuilding Application Layout](desktop/dynamic_layout.md#rebuildingapplicationlayout).
+}}
 
 - **resize()** - adjusts a component to the new size. 
 
