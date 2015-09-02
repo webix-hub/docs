@@ -102,7 +102,7 @@ Text filter used for number columns. Retrieves values which contain mask defined
 
 <img src="datatable/date_filter.png"/>
 
-A text filter used for date columns. Retrieves values that contain mask defined through text field. Allows users to use the following comporison operators in it:
+A text filter used for date columns. Retrieves values that contain mask defined through text field. Allows users to use the following comparison operators in it:
 
 - '>' - greater than;
 - '<' - less than;
