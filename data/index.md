@@ -9,7 +9,7 @@ Start
 
 <h2>Meet Webix 2.5!</h2>
 <ul>
-	<li>Support of upcoming Microsoft Edge</li>
+	<li>Support of Microsoft Edge</li>
     <li><a href="kanban/configuration.md#creatingswimlanes">Swimlanes in Kanban widget</a></li>
     <li>Ability to <a href="desktop/calendar.md#disablingdatesandtimeslotsincalendar">disable time periods</a> for Calendar widget</li>
 </ul>
