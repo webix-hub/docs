@@ -7,9 +7,11 @@ clipboard
 
 @type: boolean,string
 @values:
-- 'modify' ( or true, the default value)
-- 'insert'
-- 'custom'
+- modify (true)
+- insert
+- custom
+- false
+
 @example:
 tree = new webix.ui({
     view:"tree",

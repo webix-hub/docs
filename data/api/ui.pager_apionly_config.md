@@ -5,15 +5,10 @@ apiOnly
 @short: makes the pager invisible to enable paging with custom buttons
 	
 
-@type: 
+@type: boolean
 @example:
 
-	{view:pager
-	id:"pagerA",
-	apiOnly:true,
-	size:50,
-	group:5
-		}
+{ view:pager, id:"pagerA", apiOnly:true, size:50, group:5 }
 
 @related: 
 	desktop/paging.md
@@ -30,7 +25,8 @@ In addition, here you should create JS or HTML button and attach 'paging' functi
 
 ~~~js
 function next_page(){
-            $$("pagerA").select("next");
+  $$("pagerA").select("next");
+} 
 ~~~
 
 

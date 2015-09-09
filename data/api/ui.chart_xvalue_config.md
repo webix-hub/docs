@@ -8,12 +8,11 @@ xValue
 @type: string
 @example:
 webix.ui({
-	container:"chartDiv",
 	view:"chart",
 	type:"scatter",
 	xValue: "#a#",
     ...
-)}
+});
 
 @template:	api_config
 @relatedsample:

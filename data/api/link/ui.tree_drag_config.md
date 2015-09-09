@@ -10,7 +10,7 @@ tree = new webix.ui({
 		view:"tree",
         ...
 		drag:true
-})
+});
 
 @related:
 	datatree/dnd_support.md

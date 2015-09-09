@@ -4,7 +4,7 @@ type
 @short:
 	sets the barcode type
 
-@type: 
+@type: string 
 @example:
 webix.ui({
     view:"barcode",

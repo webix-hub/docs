@@ -14,7 +14,7 @@ webix.ui({
 	xValue: "#a#",
     yValue: "#b#"
     ...
-)}
+});
 
 @template:	api_config
 @relatedsample:
@@ -29,6 +29,3 @@ The method is analog to the api/ui.chart_value_config.md property.
 {{note
 The property is applicable only to **scatter** charts
 }}
-
-
-@

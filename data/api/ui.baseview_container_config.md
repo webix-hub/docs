@@ -14,7 +14,7 @@ webix.ui ({
 	container:"box",
 	view:"list", 
 	...	 
-})
+});
 
 @template:	api_config
 @defined:	ui.baseview	

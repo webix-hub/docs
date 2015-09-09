@@ -5,10 +5,9 @@ date
 @short:
 	sets the initial date of the calendar (particularly month and year).
 
-@type: object
+@type: Date,string
 @example:
 webix.ui({
-	container:"box",
 	weekHeader:true,
 	date:new Date(2012,3,16),
 	view:"calendar"
@@ -24,4 +23,5 @@ webix.ui({
 @defined:	ui.calendar	
 @descr:
 
+Value can be either a **string** formatted with the current [parseFormat](api/i18n_parseformat_other.md) or **Date** object.
 

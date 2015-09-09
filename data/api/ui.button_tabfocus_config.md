@@ -12,7 +12,7 @@ webix.ui({
     label: 'Fruit',
     tabFocus:false,
     ...
-})
+});
 
 @template:	api_config
 @relatedsample:

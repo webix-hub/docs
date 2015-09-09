@@ -5,7 +5,7 @@ src
 @short: path to video
 	
 
-@type: any
+@type: string
 @example:
 
 webix.ui({

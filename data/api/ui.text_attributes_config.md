@@ -5,7 +5,7 @@ attributes
 @short:
 	sets an hash of HTML input attributes that will be parsed for the Webix input control 
 
-@type: hash
+@type: object
 @example:
 
 

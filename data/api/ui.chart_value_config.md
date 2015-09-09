@@ -13,7 +13,7 @@ webix.ui({
 	value:"#sales#",
 	label:"#year#",
 	...
-})
+});
 
 @relatedsample:
 	08_chart/01_initialization/01_load_xml.html

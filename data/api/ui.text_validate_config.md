@@ -5,10 +5,10 @@ validate
 @short: adds validation to the field
 	
 
-@type: boolean
+@type: function
 @example:
 
-webix.ui({ view:"text", validate:"isNumber" });
+webix.ui({ view:"text", validate:webix.rules.isNumber });
 
 
 @template:	api_config

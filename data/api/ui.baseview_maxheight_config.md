@@ -10,7 +10,7 @@ webix.ui({
 	view:"some",
 	maxHeight:1000,
 	...
-})
+});
 
 
 @template:	api_config

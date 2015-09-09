@@ -9,7 +9,7 @@ webix.ui({
 	view:"some",
 	minWidth:100,
 	...
-})
+});
 
 
 @template:	api_config

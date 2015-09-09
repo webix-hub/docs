@@ -5,7 +5,7 @@ invalidMessage
 @short:
 	sets the text of a validation message 
 
-@type: 
+@type: string
 @example:
 {view:"text", label:'E-mail address', name:"email", 
 	invalidMessage: "Incorrect e-mail address"}

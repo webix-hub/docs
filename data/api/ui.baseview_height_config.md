@@ -12,7 +12,7 @@ webix.ui ({
 	height:300, 
 	width:300,
 	...	 
-})
+});
 
 @template:	api_config
 @defined:	ui.baseview	

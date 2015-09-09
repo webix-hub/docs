@@ -7,10 +7,9 @@ group
 
 @type:number
 @example:
-var myPager = webix.ui ({
-		view:"pager",
-		container:"paging_here",
-		group:5
+webix.ui ({
+	view:"pager",
+	group:5
 });
 
 @template:	api_config

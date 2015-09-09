@@ -8,11 +8,11 @@ width
 @type: number
 @example:
 webix.ui ({ 
-         view:"window",
-         height:300, 
-         width:300,
-	 ...	 
-})
+   view:"window",
+   height:300, 
+   width:300,
+   ...	 
+});
 
 @template:	api_config
 @defined:	ui.baseview	

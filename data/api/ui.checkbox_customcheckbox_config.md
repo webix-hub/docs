@@ -7,7 +7,7 @@ customCheckbox
 
 @type:  boolean 
 @example:
-{ view:"checkbox", customCheckbox:false}
+{ view:"checkbox", customCheckbox:false }
 
 @template:	api_config
 @descr:

@@ -11,12 +11,14 @@ scale
 webix.ui({
   view:"chart",
   scale:"logarithmic"
-})
+});
 
 
 @template:	api_config
-@descr:
+@values:
 
-Possible values are "logarithmic" and "linear"
+- logarithmic	sets a logarithmic scale
+- linear		sets a linear scale
+- false (default)	no scale			
 
 

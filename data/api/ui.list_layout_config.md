@@ -18,8 +18,8 @@ webix.ui({
 	desktop/xlist.md
 @relatedsample:
 	05_list/08_xlist.html
-@descr:
-
-By default list is y-oriented
+@values:
+- y (default)	vertical orientation
+- x		horizontal orientation 
 
 

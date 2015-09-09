@@ -6,6 +6,11 @@ dragColumn
 	
 
 @type: boolean,string
+@values:
+- true	columns can be dragged
+- false		columns cannot be gragged
+- order		columns can be dragged within one datatable only
+
 @example:
 webix.ui({
 	view:"datatable",

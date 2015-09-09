@@ -13,7 +13,7 @@ webix.ui({
 	x:180,
 	y:120
     ...
-})
+});
 
 @relatedsample:
 	08_chart/04_pie_chart/03_legend.html

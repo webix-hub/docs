@@ -5,7 +5,7 @@ bottomLabel
 @short:
 	sets a label under a control
 
-@type: 
+@type: string
 @example:
 { view:"text", label:"Username", bottomLabel: "* spaces are allowed"},
 

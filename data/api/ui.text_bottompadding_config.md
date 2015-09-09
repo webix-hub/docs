@@ -4,7 +4,7 @@ bottomPadding
 @short:
 	sets the bottom offset of the control input
 
-@type: 
+@type: string
 @example:
 { view:"text", type:"password", label:"Password", bottomPadding: 35, 
 	bottomLabel: "* The password must have at least 6 characters"}

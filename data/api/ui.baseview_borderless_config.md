@@ -8,9 +8,8 @@ borderless
 @type: boolean
 @example:
 webix.ui({
-		view:"viewName",
-		borderless:true// hides the borders of the component
-        ...
+	view:"list",
+	borderless:true
 });
 
 @template:	api_config

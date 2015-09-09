@@ -8,10 +8,9 @@ limit
 @type:number
 
 @example:
-var myPager = webix.ui ({
-		view:"pager",
-		container:"paging_here",
-		limit:30
+webix.ui ({
+	view:"pager",
+	limit:30
 });
 
 @template:	api_config

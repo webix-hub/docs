@@ -11,7 +11,7 @@ checkboxRefresh
 webix.ui({
 	view:"datatable",
     checkboxRefresh:true
-})
+});
 
 @template:	api_config
 @relatedapi:
