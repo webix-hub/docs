@@ -38,6 +38,8 @@ still being  very fast handling  thousands of records.<a href="datatable/overvie
 				<li><a href="datatable/sizing.md">Sizing and resizing</a></li>
 				<li><a href="datatable/external_configuration.md">External configuration</a></li>
                 <li><a href="desktop/active_content.md">Adding Active Elements to Datatable Cells</a></li>
+                <li><a href="datatable/subrows.md">Adding Subrows</a></li>
+                <li><a href="datatable/subviews.md">Adding Subviews</a></li>
             </ul>
 		</td>
 		<td class='topic_description'>Teaches you how to define the common structure and content of DataTable: columns, headers, dimensions and data inside it.</td>

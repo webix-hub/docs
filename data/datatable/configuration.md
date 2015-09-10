@@ -10,4 +10,6 @@ Configuration
 - datatable/sizing.md
 - datatable/internationalization.md
 - datatable/external_configuration.md
+- datatable/subrows.md
+- datatable/subviews.md
 }}
