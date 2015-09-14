@@ -61,6 +61,7 @@ Events
 - api/ui.datatable_onselectchange_event.md - fires when selection is changed in a DataTable
 - api/ui.datatable_onstructureload_event.md - fires when the structure of DataTable (columns configuration) is initialized
 - api/ui.datatable_onstructureupdate_event.md - fires when structure of datatable was changed ( column added, hidden or reconfigured )
+- api/ui.datatable_onsubviewrender_event.md - 
 - api/link/ui.datatable_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.datatable_onswipey_event.md - occurs on a vertical swipe movement
 - api/link/ui.datatable_ontimedkeypress_event.md - fires after typing has been finished in the field
@@ -132,6 +133,7 @@ Events
 - api/ui.datatable_onselectchange_event.md
 - api/ui.datatable_onstructureload_event.md
 - api/ui.datatable_onstructureupdate_event.md
+- api/ui.datatable_onsubviewrender_event.md
 - api/link/ui.datatable_onswipex_event.md
 - api/link/ui.datatable_onswipey_event.md
 - api/link/ui.datatable_ontimedkeypress_event.md

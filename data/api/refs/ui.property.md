@@ -25,7 +25,7 @@ The component can be used for creating various on-page editors. The value field 
 - [Overview of Property Sheet Widget](desktop/property_sheet.md)
 - [Samples](http://docs.webix.com/samples/07_property/index.html)
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/editability.md">EditAbility</a>, <a href="api/refs/mapcollection.md">MapCollection</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/singlerender.md">SingleRender</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
+<a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/editability.md">EditAbility</a>, <a href="api/refs/mapcollection.md">MapCollection</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/singlerender.md">SingleRender</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
 
 <div class='h2'>Methods</div>
@@ -157,6 +157,7 @@ The component can be used for creating various on-page editors. The value field 
 - api/link/ui.property_scroll_config.md - enables/disables the scroll bar
 - api/link/ui.property_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.property_template_config.md - the component template
+- api/link/ui.property_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.property_url_config.md - the URL the component will use to load data after its initialization
 - api/link/ui.property_width_config.md - sets the width of the component
 }}

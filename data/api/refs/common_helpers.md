@@ -46,8 +46,10 @@ common helpers
 - api/_single.md - implements the singleton pattern
 - api/_template.md - converts string to templating function
 - api/_toarray.md - extends the passed array with the methods of the api/refs/powerarray.md library
+- api/_toexcel.md - 
 - api/_tofunctor.md - converts a string to a function
 - api/_tonode.md - returns an HTML node object
+- api/_topng.md - 
 - api/_type.md - defines new rendering type for the component
 - api/_ui.md - the object constructor. Creates a new instance of the specified view
 - api/_uid.md - returns a unique id
