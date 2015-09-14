@@ -62,7 +62,7 @@ Initializing and parsing serve different purposes:
 The simplest initialization script looks as follows: 
 
 ~~~js
-// data is taken from document body and component is inited there
+// data is taken from document body and component is initialized there
 webix.ready(function(){ 
 	webix.markup.init(); 
 });

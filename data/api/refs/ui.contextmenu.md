@@ -151,10 +151,12 @@ The component presents a pop-up menu that is displayed when the user clicks the 
 - api/link/ui.contextmenu_onbeforeshow_event.md - fires right after show() method is called for the window (popup) and before the window is shown
 - api/link/ui.contextmenu_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.contextmenu_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.contextmenu_onblur_event.md - 
 - api/link/ui.contextmenu_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.contextmenu_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.contextmenu_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.contextmenu_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
+- api/link/ui.contextmenu_onfocus_event.md - 
 - api/link/ui.contextmenu_onhide_event.md - fires when window is hidden
 - api/link/ui.contextmenu_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.contextmenu_onitemdblclick_event.md - fires when a component item was double-clicked
@@ -213,7 +215,7 @@ The component presents a pop-up menu that is displayed when the user clicks the 
 - api/link/ui.contextmenu_id_config.md - the component ID
 - api/link/ui.contextmenu_layout_config.md - defines x or y orientation of layout
 - api/link/ui.contextmenu_left_config.md - the left offset of the window
-- api/link/ui.contextmenu_master_config.md - the area for which context object in inited
+- api/link/ui.contextmenu_master_config.md - the area for which context object in initialized
 - api/link/ui.contextmenu_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.contextmenu_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.contextmenu_minheight_config.md - sets the minimal height for the view

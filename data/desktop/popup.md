@@ -56,7 +56,7 @@ There exist more **positioning options**. All of them are described in a [separa
 
 To create a popup menu that will appear on button click, you should create a button with **popup** property that takes popup **ID** as value. 
 
-The popup is hidden initially. Toolbar and popup are inited within different **webix.ui** containers. 
+The popup is hidden initially. Toolbar and popup are initialized within different **webix.ui** containers. 
 
 {{snippet
 Popup Menu

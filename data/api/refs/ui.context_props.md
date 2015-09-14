@@ -17,7 +17,7 @@ Properties
 - api/link/ui.context_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.context_id_config.md - the component ID
 - api/link/ui.context_left_config.md - the left offset of the window
-- api/link/ui.context_master_config.md - the area for which context object in inited
+- api/link/ui.context_master_config.md - the area for which context object in initialized
 - api/link/ui.context_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.context_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.context_minheight_config.md - sets the minimal height for the view

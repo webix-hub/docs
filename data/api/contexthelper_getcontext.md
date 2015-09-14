@@ -8,7 +8,7 @@ view	object	 webix component or HTML object
 
 @example:
 
-$$("contextmenu1").attachTo($$("list1")); //menu is inited for list
+$$("contextmenu1").attachTo($$("list1")); //menu is initialized for list
 
 var context = this.getContext(); //gets master area (where list item is)
 var list = context.obj; //gets list item object

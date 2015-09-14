@@ -40,7 +40,7 @@ For example, if you add a button by clicking on which the grid will start export
 onclick="grid.exportToPDF();">
 ~~~
 
-{{sample 15_datatable/10_export/01_pdf.html }}
+
 
 Above solution uses online data export service, but you can configure a local copy as well - you can download and install the Export package. It must be unpacked inside the root of your web server.
 
@@ -56,6 +56,8 @@ The code will look like this:
 grid.exportToPDF("generate.php"); //provide the correct relative path
 ~~~
 
+{{sample 15_datatable/10_export/04_pdf_server.html}}
+
 Export to Excel
 -------------------
 
@@ -66,7 +68,7 @@ To export data from datatable/treetable into an Excel document you need to call 
 onclick="grid.exportToExcel();">
 ~~~
 
-{{sample 15_datatable/10_export/02_excel.html }}
+
 
 Above solution uses online data export service, but you can configure a local copy as well - you can download and install the Export package. It must be unpacked inside the root of your web server.
 
@@ -79,6 +81,8 @@ The code will look like this:
 ~~~js
 grid.exportToExcel("generate.php"); //provide correct relative path
 ~~~
+
+{{sample 15_datatable/10_export/03_excel_server.html}}
 
 Customizing Export
 ---------------------
@@ -148,7 +152,7 @@ grid.exportToPDF(null, {
 "Custom1" (any name can be used) receives data from **year** field even if it is not seen in this datatable but is presented in its dataset. The field is rendered with **width**, **template** and **header** that 
 will be the header of the corresponding column in the export table. 
 
-{{sample 15_datatable/10_export/03_configuration.html}}
+{{sample 15_datatable/10_export/05_configuration.html}}
 
 Configuration
 -----------------------

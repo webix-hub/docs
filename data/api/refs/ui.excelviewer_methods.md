@@ -1,0 +1,269 @@
+Methods
+=======
+
+{{api
+- api/link/ui.excelviewer_add.md - adds an item to the store
+- api/link/ui.excelviewer_addcellcss.md - adds a css class to the cell
+- api/link/ui.excelviewer_addcss.md - applied CSS class to a component item
+- api/link/ui.excelviewer_addrowcss.md - adds a css class to the row
+- api/link/ui.excelviewer_addspan.md - adds colspan or rowspan to the datatable
+- api/link/ui.excelviewer_adjust.md - adjusts the component to the size of the parent HTML container
+- api/link/ui.excelviewer_adjustcolumn.md - adjusts a column to the width of the content
+- api/link/ui.excelviewer_adjustrowheight.md - autodetect height of rows in datatable
+- api/link/ui.excelviewer_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.excelviewer_bind.md - binds components
+- api/link/ui.excelviewer_blockevent.md - temporarily blocks triggering of ALL events of the calling object
+- api/link/ui.excelviewer_callevent.md - calls an inner event
+- api/link/ui.excelviewer_clearall.md - removes all items from the component
+- api/link/ui.excelviewer_clearcss.md - removes css class from all items
+- api/link/ui.excelviewer_clearvalidation.md - removes all validation marks from the component
+- api/link/ui.excelviewer_closesub.md - closes the subrow or the subview for an item with the given id
+- api/link/ui.excelviewer_collectvalues.md - returns an array of unique values of the specified column
+- api/link/ui.excelviewer_columnid.md - returns the id of the column at the specified index
+- api/link/ui.excelviewer_copy.md - copies an item to the same or another object
+- api/link/ui.excelviewer_count.md - returns the number of currently visible items
+- api/link/ui.excelviewer_define.md - redefines a single configuration property (or a hash of properties)
+- api/link/ui.excelviewer_destructor.md - destructs the calling object
+- api/link/ui.excelviewer_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
+- api/link/ui.excelviewer_disable.md - disables the calling view (makes it dimmed and unclickable)
+- api/link/ui.excelviewer_eachcolumn.md - iterates over all visible columns in the table
+- api/link/ui.excelviewer_eachrow.md - iterates over all rows in the table
+- api/link/ui.excelviewer_edit.md - enables the edit mode for the specified item
+- api/link/ui.excelviewer_editcancel.md - cancels the edit mode and closes all opened editors. The component is still editable
+- api/link/ui.excelviewer_editcell.md - enables the edit mode for the specified cell
+- api/link/ui.excelviewer_editcolumn.md - enables the edit mode for the specified column
+- api/link/ui.excelviewer_editnext.md - closes the current editor and opens one in the next cell of the row
+- api/link/ui.excelviewer_editrow.md - enables the edit mode for the specified row
+- api/link/ui.excelviewer_editstop.md - stops the edit mode and closes all opened editors. The component is still editable
+- api/link/ui.excelviewer_enable.md - enables the calling view that was disabled by the 'disable' method
+- api/link/ui.excelviewer_exists.md - checks whether an item with the specified id exists
+- api/link/ui.excelviewer_exporttoexcel.md - exports data to an Excel file
+- api/link/ui.excelviewer_exporttopdf.md - exports data to a PDF file
+- api/link/ui.excelviewer_filter.md - filters the component
+- api/link/ui.excelviewer_filterbyall.md - refilters DataTable by all specified filters
+- api/link/ui.excelviewer_find.md - returns rows that match the criterion
+- api/link/ui.excelviewer_focuseditor.md - moves focus to the active editor
+- api/link/ui.excelviewer_getchildviews.md - returns child views of the calling component
+- api/link/ui.excelviewer_getcolumnconfig.md - returns the configuration object of the specified column
+- api/link/ui.excelviewer_getcolumnindex.md - returns the index of the column with the specified id
+- api/link/ui.excelviewer_geteditstate.md - returns info about active editor object
+- api/link/ui.excelviewer_geteditor.md - returns editor object
+- api/link/ui.excelviewer_geteditorvalue.md - returns the value of the active (currently open) editor
+- api/link/ui.excelviewer_getfilter.md - returns the filter object that the component uses to filter the values of the specified column
+- api/link/ui.excelviewer_getfirstid.md - returns the ID of the first item
+- api/link/ui.excelviewer_getformview.md - returns master form for the input
+- api/link/ui.excelviewer_getheadercontent.md - returns set of helpers for header content manipulation
+- api/link/ui.excelviewer_getheadernode.md - returns HTML element of the column's header
+- api/link/ui.excelviewer_getidbyindex.md - returns the id of the item with the specified index
+- api/link/ui.excelviewer_getindexbyid.md - returns the index of the item with the specified id
+- api/link/ui.excelviewer_getitem.md - gets the object of the data item with the specified id
+- api/link/ui.excelviewer_getitemnode.md - returns HTML element of the item
+- api/link/ui.excelviewer_getlastid.md - returns the id of the last item
+- api/link/ui.excelviewer_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
+- api/link/ui.excelviewer_getnode.md - returns the main HTML container for the calling object
+- api/link/ui.excelviewer_getpage.md - returns the currently visible page in case of paged view
+- api/link/ui.excelviewer_getpager.md - returns the pager object associated with the component
+- api/link/ui.excelviewer_getparentview.md - returns the parent view of the component
+- api/link/ui.excelviewer_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
+- api/link/ui.excelviewer_getscrollstate.md - returns the current position of scrolls
+- api/link/ui.excelviewer_getselectedid.md - returns the selected cells
+- api/link/ui.excelviewer_getselecteditem.md - gets an object of the selected data item
+- api/link/ui.excelviewer_getstate.md - returns the current state of the view
+- api/link/ui.excelviewer_getsubview.md - returns the subview of the item with the given id
+- api/link/ui.excelviewer_gettext.md - returns text value of a cell
+- api/link/ui.excelviewer_gettopparentview.md - returns top parent view
+- api/link/ui.excelviewer_getvisiblecount.md - returns count of visible rows
+- api/link/ui.excelviewer_group.md - groups data by the specified data property
+- api/link/ui.excelviewer_hascss.md - checks if item has specific css class
+- api/link/ui.excelviewer_hasevent.md - checks whether the component has the specified event
+- api/link/ui.excelviewer_hide.md - hides the view
+- api/link/ui.excelviewer_hidecolumn.md - hides the specified column
+- api/link/ui.excelviewer_hideoverlay.md - hides previously defined overlay
+- api/link/ui.excelviewer_iscolumnvisible.md - returns true if column is visible
+- api/link/ui.excelviewer_isenabled.md - checks whether the view is enabled
+- api/link/ui.excelviewer_isvisible.md - checks whether the view is visible
+- api/link/ui.excelviewer_load.md - loads data from an external data source.
+- api/link/ui.excelviewer_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
+- api/link/ui.excelviewer_locate.md - converts an HTML node or event object to in-table position
+- api/link/ui.excelviewer_mapcells.md - applies the callback to a range of cells
+- api/link/ui.excelviewer_mapevent.md - routes events from one object to another
+- api/link/ui.excelviewer_marksorting.md - marks the sorted column with a dedicated sign (asc/desc) in the header
+- api/link/ui.excelviewer_move.md - moves the specified item to a new position
+- api/link/ui.excelviewer_movebottom.md - moves the specified item to the last position
+- api/link/ui.excelviewer_movecolumn.md - moves column to different position
+- api/link/ui.excelviewer_movedown.md - increases the item index and moves the item to the new position
+- api/link/ui.excelviewer_moveselection.md - moves selection in the specified direction
+- api/link/ui.excelviewer_movetop.md - moves the specified item to the first position
+- api/link/ui.excelviewer_moveup.md - decreases the item index and moves the item to the new position
+- api/link/ui.excelviewer_opensub.md - opens the subrow or the subview for an item with the given id
+- api/link/ui.excelviewer_parse.md - loads data to the component from an inline data source
+- api/link/ui.excelviewer_refresh.md - repaints the whole view or a certain item
+- api/link/ui.excelviewer_refreshcolumns.md - refreshes the structure of DataTable
+- api/link/ui.excelviewer_refreshfilter.md - rebuilds list of options in select filter
+- api/link/ui.excelviewer_refreshheadercontent.md - refreshes the header row of DataTable
+- api/link/ui.excelviewer_registerfilter.md - registers a filter element
+- api/link/ui.excelviewer_remove.md - removes the specified item from datastore
+- api/link/ui.excelviewer_removecellcss.md - remove css class from the cell of datatable
+- api/link/ui.excelviewer_removecss.md - removes CSS class from a component item
+- api/link/ui.excelviewer_removerowcss.md - remove css class from the row
+- api/link/ui.excelviewer_removespan.md - removes a rowspan/colspan from the datatable
+- api/link/ui.excelviewer_render.md - renders the specified item or the whole component
+- api/link/ui.excelviewer_resize.md - adjusts the view to a new size
+- api/link/ui.excelviewer_resizesubview.md - 
+- api/link/ui.excelviewer_scrollto.md - scrolls the view to the defined position
+- api/link/ui.excelviewer_serialize.md - serializes data to a JSON object
+- api/link/ui.excelviewer_setcolumnwidth.md - sets the width of the specified column
+- api/link/ui.excelviewer_setpage.md - makes the specified page visible (assuming that the pager was defined )
+- api/link/ui.excelviewer_setrowheight.md - sets the height of the specified row
+- api/link/ui.excelviewer_setstate.md - restores the specified state
+- api/link/ui.excelviewer_show.md - makes the component visible
+- api/link/ui.excelviewer_showcell.md - scrolls the table (if needed) to make the specified cell visible
+- api/link/ui.excelviewer_showcolumn.md - shows the column which was previously hidden by method 'hidecolumn'
+- api/link/ui.excelviewer_showcolumnbatch.md - shows or hides a group of columns
+- api/link/ui.excelviewer_showitem.md - 'scrolls' the table to make the specified row visible
+- api/link/ui.excelviewer_showitembyindex.md - 'scrolls' the table to make the specified row visible
+- api/link/ui.excelviewer_showoverlay.md - shows the overlay message over the body of DataTable
+- api/ui.excelviewer_showsheet.md - 
+- api/link/ui.excelviewer_sort.md - sorts datastore
+- api/link/ui.excelviewer_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.excelviewer_unbind.md - breaks "bind" link
+- api/link/ui.excelviewer_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
+- api/link/ui.excelviewer_ungroup.md - ungroups data
+- api/link/ui.excelviewer_updateitem.md - sets properties of the data item
+- api/link/ui.excelviewer_validate.md - validates one record or all dataset against validation rules
+- api/link/ui.excelviewer_validateeditor.md - validates data in currently active editor
+}}
+
+@index:
+- api/link/ui.excelviewer_add.md
+- api/link/ui.excelviewer_addcellcss.md
+- api/link/ui.excelviewer_addcss.md
+- api/link/ui.excelviewer_addrowcss.md
+- api/link/ui.excelviewer_addspan.md
+- api/link/ui.excelviewer_adjust.md
+- api/link/ui.excelviewer_adjustcolumn.md
+- api/link/ui.excelviewer_adjustrowheight.md
+- api/link/ui.excelviewer_attachevent.md
+- api/link/ui.excelviewer_bind.md
+- api/link/ui.excelviewer_blockevent.md
+- api/link/ui.excelviewer_callevent.md
+- api/link/ui.excelviewer_clearall.md
+- api/link/ui.excelviewer_clearcss.md
+- api/link/ui.excelviewer_clearvalidation.md
+- api/link/ui.excelviewer_closesub.md
+- api/link/ui.excelviewer_collectvalues.md
+- api/link/ui.excelviewer_columnid.md
+- api/link/ui.excelviewer_copy.md
+- api/link/ui.excelviewer_count.md
+- api/link/ui.excelviewer_define.md
+- api/link/ui.excelviewer_destructor.md
+- api/link/ui.excelviewer_detachevent.md
+- api/link/ui.excelviewer_disable.md
+- api/link/ui.excelviewer_eachcolumn.md
+- api/link/ui.excelviewer_eachrow.md
+- api/link/ui.excelviewer_edit.md
+- api/link/ui.excelviewer_editcancel.md
+- api/link/ui.excelviewer_editcell.md
+- api/link/ui.excelviewer_editcolumn.md
+- api/link/ui.excelviewer_editnext.md
+- api/link/ui.excelviewer_editrow.md
+- api/link/ui.excelviewer_editstop.md
+- api/link/ui.excelviewer_enable.md
+- api/link/ui.excelviewer_exists.md
+- api/link/ui.excelviewer_exporttoexcel.md
+- api/link/ui.excelviewer_exporttopdf.md
+- api/link/ui.excelviewer_filter.md
+- api/link/ui.excelviewer_filterbyall.md
+- api/link/ui.excelviewer_find.md
+- api/link/ui.excelviewer_focuseditor.md
+- api/link/ui.excelviewer_getchildviews.md
+- api/link/ui.excelviewer_getcolumnconfig.md
+- api/link/ui.excelviewer_getcolumnindex.md
+- api/link/ui.excelviewer_geteditstate.md
+- api/link/ui.excelviewer_geteditor.md
+- api/link/ui.excelviewer_geteditorvalue.md
+- api/link/ui.excelviewer_getfilter.md
+- api/link/ui.excelviewer_getfirstid.md
+- api/link/ui.excelviewer_getformview.md
+- api/link/ui.excelviewer_getheadercontent.md
+- api/link/ui.excelviewer_getheadernode.md
+- api/link/ui.excelviewer_getidbyindex.md
+- api/link/ui.excelviewer_getindexbyid.md
+- api/link/ui.excelviewer_getitem.md
+- api/link/ui.excelviewer_getitemnode.md
+- api/link/ui.excelviewer_getlastid.md
+- api/link/ui.excelviewer_getnextid.md
+- api/link/ui.excelviewer_getnode.md
+- api/link/ui.excelviewer_getpage.md
+- api/link/ui.excelviewer_getpager.md
+- api/link/ui.excelviewer_getparentview.md
+- api/link/ui.excelviewer_getprevid.md
+- api/link/ui.excelviewer_getscrollstate.md
+- api/link/ui.excelviewer_getselectedid.md
+- api/link/ui.excelviewer_getselecteditem.md
+- api/link/ui.excelviewer_getstate.md
+- api/link/ui.excelviewer_getsubview.md
+- api/link/ui.excelviewer_gettext.md
+- api/link/ui.excelviewer_gettopparentview.md
+- api/link/ui.excelviewer_getvisiblecount.md
+- api/link/ui.excelviewer_group.md
+- api/link/ui.excelviewer_hascss.md
+- api/link/ui.excelviewer_hasevent.md
+- api/link/ui.excelviewer_hide.md
+- api/link/ui.excelviewer_hidecolumn.md
+- api/link/ui.excelviewer_hideoverlay.md
+- api/link/ui.excelviewer_iscolumnvisible.md
+- api/link/ui.excelviewer_isenabled.md
+- api/link/ui.excelviewer_isvisible.md
+- api/link/ui.excelviewer_load.md
+- api/link/ui.excelviewer_loadnext.md
+- api/link/ui.excelviewer_locate.md
+- api/link/ui.excelviewer_mapcells.md
+- api/link/ui.excelviewer_mapevent.md
+- api/link/ui.excelviewer_marksorting.md
+- api/link/ui.excelviewer_move.md
+- api/link/ui.excelviewer_movebottom.md
+- api/link/ui.excelviewer_movecolumn.md
+- api/link/ui.excelviewer_movedown.md
+- api/link/ui.excelviewer_moveselection.md
+- api/link/ui.excelviewer_movetop.md
+- api/link/ui.excelviewer_moveup.md
+- api/link/ui.excelviewer_opensub.md
+- api/link/ui.excelviewer_parse.md
+- api/link/ui.excelviewer_refresh.md
+- api/link/ui.excelviewer_refreshcolumns.md
+- api/link/ui.excelviewer_refreshfilter.md
+- api/link/ui.excelviewer_refreshheadercontent.md
+- api/link/ui.excelviewer_registerfilter.md
+- api/link/ui.excelviewer_remove.md
+- api/link/ui.excelviewer_removecellcss.md
+- api/link/ui.excelviewer_removecss.md
+- api/link/ui.excelviewer_removerowcss.md
+- api/link/ui.excelviewer_removespan.md
+- api/link/ui.excelviewer_render.md
+- api/link/ui.excelviewer_resize.md
+- api/link/ui.excelviewer_resizesubview.md
+- api/link/ui.excelviewer_scrollto.md
+- api/link/ui.excelviewer_serialize.md
+- api/link/ui.excelviewer_setcolumnwidth.md
+- api/link/ui.excelviewer_setpage.md
+- api/link/ui.excelviewer_setrowheight.md
+- api/link/ui.excelviewer_setstate.md
+- api/link/ui.excelviewer_show.md
+- api/link/ui.excelviewer_showcell.md
+- api/link/ui.excelviewer_showcolumn.md
+- api/link/ui.excelviewer_showcolumnbatch.md
+- api/link/ui.excelviewer_showitem.md
+- api/link/ui.excelviewer_showitembyindex.md
+- api/link/ui.excelviewer_showoverlay.md
+- api/ui.excelviewer_showsheet.md
+- api/link/ui.excelviewer_sort.md
+- api/link/ui.excelviewer_sync.md
+- api/link/ui.excelviewer_unbind.md
+- api/link/ui.excelviewer_unblockevent.md
+- api/link/ui.excelviewer_ungroup.md
+- api/link/ui.excelviewer_updateitem.md
+- api/link/ui.excelviewer_validate.md
+- api/link/ui.excelviewer_validateeditor.md
+
+

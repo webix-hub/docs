@@ -14,7 +14,7 @@ combo
 
 @template:	api_config
 
-@descr: Combo editor is inited each time you click on the dedicated item. Moreover, the item is simultaneously opened in the text editor that acts like a filter input for list options. 
+@descr: Combo editor is initialized each time you click on the dedicated item. Moreover, the item is simultaneously opened in the text editor that acts like a filter input for list options. 
 
 @relatedsample:
 	80_docs/editors.html

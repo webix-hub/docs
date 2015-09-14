@@ -38,7 +38,7 @@ and then call the toPNG() method with the chart id as its parameter:
 webix.toPNG($$("myChart"));	
 ~~~
 
-{{sample 60_pro/03_api/05_export_png.html }}
+{{sample 19_api/07_export_png.html }}
 
 
 Export to Excel
@@ -67,7 +67,7 @@ And then the call of the toExcel() method should follow. The method takes the vi
 webix.toExcel($$("mylist"));
 ~~~
 
-{{sample 60_pro/03_api/06_export_excel.html}}
+{{sample 19_api/06_export_excel.html}}
 
 
 Customizing Export to Excel
@@ -126,4 +126,4 @@ webix.toExcel(list, {
 "Custom1" (any name can be used) receives data from the **year** field even if it is not seen in this component but is presented in its dataset.
 The field is rendered with **width**, **template** and **header** that will be the header of the corresponding column in the export table. 
 
-{{sample 60_pro/03_api/06_export_excel.html}}
+{{sample 19_api/06_export_excel.html}}

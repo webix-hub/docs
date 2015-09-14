@@ -39,7 +39,7 @@ time, you can edit the text field and the items will be filtered according to th
 - **value** (string, number) 
 	- within **options** array it sets text value for selectable items;
  	- within Combo constructor it defines the initially selected item of the control (**option ID** in case of a full form, **option text** in case of a short form);
-- **placeholder** (string) - defines placeholder for combo input. The control should be inited without an initial value;       
+- **placeholder** (string) - defines placeholder for combo input. The control should be initialized without an initial value;       
 - **yCount** (number) - the number of lines in a popup;
 - **options** (array, object, string) - sets the options to choose from;
 - **label** (string) - text label of a control. It can be customized by:

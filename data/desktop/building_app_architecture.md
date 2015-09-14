@@ -31,7 +31,7 @@ when you are short of space. They differ in the ways of switching between these 
 - **scrollview** allows scrolling through the whole content it houses;
 - **carousel panes** change in turn by clicking on them or swiping (on touch devices).
 
-All layout types are inited within the **webix.ui** constructor and can be nested into each other:
+All layout types are initialized within the **webix.ui** constructor and can be nested into each other:
 
 ~~~js
 webix.ui({

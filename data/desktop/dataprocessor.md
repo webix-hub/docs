@@ -14,7 +14,7 @@ Without DataProcessor, you need to attach corresponding functions to component e
 
 ##DataProcessor Initialization
 
-DataProcessor object can be inited in both long and short forms. Compulsory parameters include: 
+DataProcessor object can be initialized in both long and short forms. Compulsory parameters include: 
 
 - **url**, a path to your [own server script](desktop/custom_serverside.md) or connector-based one (described in [Server Side Connector](desktop/dataconnector.md)). In any case, it should be the script that enables data loading from the database 
 into the component;
@@ -24,7 +24,7 @@ Other parameters (**mode**, validation **rules**, **on**, etc.) and optional and
 
 ####Implicit Initialization via Save Property
 
-When you define **url** (path to the necessary script) as value of **save** property for the needed component (**master**) - DataProcessor is automatically inited: 
+When you define **url** (path to the necessary script) as value of **save** property for the needed component (**master**) - DataProcessor is automatically initialized: 
 
 ~~~js
 webix.ui({

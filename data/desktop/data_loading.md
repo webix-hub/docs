@@ -1,7 +1,7 @@
 Data Loading 
 ===================
 
-After a data component has been inited, you need to populate it with data in any of supported [formats](desktop/data_types.md): JSON, XML, CSV, JSArray, HTMLtable.  
+After a data component has been initialized, you need to populate it with data in any of supported [formats](desktop/data_types.md): JSON, XML, CSV, JSArray, HTMLtable.  
 
 There we have two major possibilities that are true for all the data components.
 

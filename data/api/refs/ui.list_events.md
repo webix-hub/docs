@@ -23,10 +23,12 @@ Events
 - api/link/ui.list_onbeforeselect_event.md - fires before item selection is started
 - api/link/ui.list_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.list_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.list_onblur_event.md - 
 - api/link/ui.list_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.list_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.list_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.list_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
+- api/link/ui.list_onfocus_event.md - 
 - api/link/ui.list_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.list_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.list_onitemrender_event.md - for each item rendering, occurs only for items with custom templates
@@ -71,10 +73,12 @@ Events
 - api/link/ui.list_onbeforeselect_event.md
 - api/link/ui.list_onbeforesort_event.md
 - api/link/ui.list_onbindrequest_event.md
+- api/link/ui.list_onblur_event.md
 - api/link/ui.list_ondatarequest_event.md
 - api/link/ui.list_ondataupdate_event.md
 - api/link/ui.list_ondestruct_event.md
 - api/link/ui.list_ondragout_event.md
+- api/link/ui.list_onfocus_event.md
 - api/link/ui.list_onitemclick_event.md
 - api/link/ui.list_onitemdblclick_event.md
 - api/link/ui.list_onitemrender_event.md

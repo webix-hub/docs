@@ -36,7 +36,7 @@ At the same time, you can trigger validation whenever you like, e.g. on **onChan
 { view:"text", name: "fname", on:{
 	"onChange":function(){
     	//either validate the whole form
-		this.getParentForm().validate(); 
+		this.getParentView().validate(); 
         //or validate this element only
         this.validate();
     }}

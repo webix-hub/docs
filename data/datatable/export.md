@@ -1,7 +1,7 @@
 Data Export to PNG and Excel
 ==============================
 
-This article is intended for the new export functionality added in version 3.0. For the details on the previously used functionality, see the article datatable/export_old.md.
+This article is intended for the export functionality added in version 3.0. For the details on the previously used functionality, see the article datatable/export_old.md.
 
 [Datatable](datatable/index.md) and [Treetable](desktop/treetable.md) data can be exported to the following formats:
 
@@ -10,21 +10,6 @@ This article is intended for the new export functionality added in version 3.0. 
 
 The components don't require any special configuration to be exported. 
 
-For the treetable it is possible to add indentations for tree nodes: 
-
-~~~js
-// "value" column will be indented in the exported file
-view:"treetable",
-columns:[
-	{ id:"id"},
-	{ id:"value", exportAsTree:true },
-	{ id:"chapter"}
-]
-~~~
-
-{{sample 15_datatable/30_treetable/12_export.html}}
-
-After that all you need is to apply an appropriate export method to this datatable or treetable. 
 
 Export to PNG
 -------------------
@@ -51,6 +36,8 @@ and then call the toPNG() method with the datatble id as its parameter:
 ~~~js
 webix.toPNG($$("myDataTable"));	
 ~~~
+
+{{sample 15_datatable/10_export/02_png.html}}
 
 Export to Excel
 -------------------
@@ -79,6 +66,7 @@ And then the call of the toExcel() method should follow. The method takes the vi
 webix.toExcel($$("myDataTable"));
 ~~~
 
+{{sample 15_datatable/10_export/01_excel.html}}
 
 Customizing Export
 ---------------------

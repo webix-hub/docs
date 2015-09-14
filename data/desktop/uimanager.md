@@ -51,11 +51,11 @@ Every Webix component features a pair of focusing events **onFocus** and **onBlu
 
 ~~~js
 $$("datatable1").attachEvent("onFocus", function(current_view, prev_view){
-	//current_view if the datatable in question
+	//current_view is the datatable in question
 });
 
 $$("datatable1").attachEvent("onBlur", function(prev_view){
-	//prev_view if the datatable in question
+	//prev_view is the datatable in question
 });
 ~~~
 

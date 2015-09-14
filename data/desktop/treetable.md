@@ -66,9 +66,9 @@ Common tasks here include the following and coincide with those of the [datatabl
 
 {{sample 15_datatable/32_grouping/03_aggregation.html}}
 
-7 . [Data Export to Excel and PDF](datatable/export.md)
+7 . [Data Export to Excel and PNG](datatable/export.md)
 
-{{sample 15_datatable/30_treetable/12_export.html }}
+{{sample 15_datatable/10_export/01_excel.html }}
 
 8 . [Copy-Paste Operations](datatable/copying.md)
 

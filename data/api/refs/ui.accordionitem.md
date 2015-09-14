@@ -65,7 +65,9 @@ Each accordion pane consists of the header and body. The body of a pane can be c
 - api/link/ui.accordionitem_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.accordionitem_onbeforecontextmenu_event.md - fires before the context menu is called in the item area
 - api/link/ui.accordionitem_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.accordionitem_onblur_event.md - 
 - api/link/ui.accordionitem_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.accordionitem_onfocus_event.md - 
 - api/link/ui.accordionitem_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.accordionitem_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.accordionitem_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus

@@ -7,24 +7,56 @@ PDF Viewer is an tool which is used for displaying the content of PDF files on t
 
 {{sample 60_pro/10_viewers/01_pdf.html}}
 
-The default constructor of PDF viewer looks as follows:
+The viewer is used together with the toolbar that contains buttons for switching pages and zooming the picture. The viewer with the toolbar is initialized as two rows: 
+
+- the first one with the toolbar
+- the second one with the viewer itself
+
+Thus, the default constructor of PDF viewer with toolbar looks as follows:
 
 ~~~js
-{ 
-	view:"pdfviewer", 
-    id:"pdf", 
-    toolbar:"toolbar", 
-    url:"files/WebixDocs.pdf"
-}
+webix.ui({
+	type:"space",
+    rows:[
+    	{ view:"pdfbar", id:"toolbar" },
+        { view:"pdfviewer", id:"pdf", toolbar:"toolbar", url:"files/WebixDocs.pdf"}
+   	]
+});
 ~~~
 
 Configuration parameters are:
 
-- **id** (string) - the id of the viewer;
-- **toolbar** (string) - the id of the used pdf toolbar;
-- **url** (string) - the url of the pdf file to browse in the viewer.
+- toolbar
+	 - **id** - (string) the id of the PDF toolbar
+- viewer
+	- **id** (string) - the id of the viewer;
+	- **toolbar** (string) - the id of the used pdf toolbar;
+	- **url** (string) - the url of the pdf file to browse in the viewer.
+    
+If you need, you can use the viewer and the toolbar separately, by using their public API methods.
 
-###PDF viewer API
+
+
+PDF viewer API reference
+---------------------
+
+####nextPage()
+
+renders the page next to the viewed one
+
+~~~js
+$$("pdfviewer").nextPage();
+~~~
+
+
+####prevPage()
+
+renders the page previous to the viewed one
+
+~~~js
+$$("pdfviewer").prevPage();
+~~~
+
 
 ####renderPage()
 
@@ -38,20 +70,35 @@ parameters:
 $$("pdfviewer").renderPage(2);
 ~~~
 
-####prevPage()
+####setScale()
 
-renders the page previous to the viewed one
+sets a new value for scale
+
+parameters:
+
+- scale - (string, number) a new scale value 
+- update - (boolean) true to update the scale, false otherwise
+
+The "scale" parameter can be set as:
+
+1) string value:
+
+- 'page-actual' - the page scale is equal to 100% 
+- 'page-width' - the page size is extended to the width of the view
+- 'page-height' - the page size is extended to the height of the view
+- 'page-fit' - the page's size is fit to the size of the view area
+- 'auto' - the page's size is automatically fit to  the size of the view area
+
+2) number value:
+
+- integer number: 1 is equal to 100%
+- float number: 0.5 is equal to 50%
+
 
 ~~~js
-$$("pdfviewer").prevPage();
-~~~
-
-####nextPage()
-
-renders the page next to the viewed one
-
-~~~js
-$$("pdfviewer").nextPage();
+$$("pdfviewer").setScale(0.4, true);
+// or
+$$("pdfviewer").setScale('page-actual', true);
 ~~~
 
 ####zoomIn()
@@ -71,55 +118,54 @@ $$("pdfviewer").zoomOut();
 ~~~
 
 
-####setScale()
 
-sets a new value for scale
+PDF toolbar API reference
+-------------------
+
+
+####setMasterPage()
+
+sets the previous or next page or a page by the number in the viewer  
+
+- page - (string, number) the value of the page that should be displayed in the viewer
+
+Possible values are "prev", "next" or number.
+
+~~~js
+$$("toolbar").setMasterPage("prev");
+// or
+$$("toolbar").setmasterPage(3);
+~~~
+
+####setMasterScale()
+
+applies a new scale value to the viewer
 
 parameters:
 
-- value - (string, number) a new scale value 
-- update - (boolean) true to update pdf toolbar, false otherwise
+- scale - (string, number) a new scale value
 
-The "value" parameter can be set as:
-
-1) string value:
-
-- 'page-actual' - the page scale is equal to 100% 
-- 'page-width' - the page size is extended to the width of the view
-- 'page-height' - the page size is extended to the height of the view
-- 'page-fit' - the page's size is fit to the size of the view area
-- 'auto' - the page's size is automatically fit to  the size of the view area
-
-2) number value:
-
-- integer numbers: 1 is equal to 100%
-- float numbers: 0.5 is equal to 50%
-
+The possible values of the "scale" parameter coincide with the same parameter of the setScale() method.
 
 ~~~js
-$$("pdfviewer").setScale(0.4, true);
+$$("toolbar").setMasterScale(0.3);
 // or
-$$("pdfviewer").setScale('page-height', true);
+$$("toolbar").setMasterScale('page-actual');
 ~~~
 
+####setPage()
 
-PDF toolbar
---------------
+sets the current page in the toolbar
 
-You can add a toolbar into PDF viewer that will contain buttons for switching pages and zooming the picture.
+parameters:
 
-To use a toolbar, apply the next configuration before the viewer initialization:
+- page - (number) the number of the page that should be displayed
 
 ~~~js
-{ 
-	view:"pdfbar", 
-    id:"toolbar" 
-}
+$$("toolbar").setPage(2);
 ~~~
 
-- **id** - (string) the id of the PDF toolbar.
 
-###PDF bar API
 
 ####setScale()
 
@@ -144,48 +190,10 @@ Possible number values are:
 
 
 ~~~js
-$$("toolbar").setScale(0.5);
+$$("toolbar").setScale(0.4);
 // or
-$$("toolbar").setScale('page-height');
+$$("toolbar").setScale('page-width');
 ~~~
-
-
-####setMasterScale()
-
-applies a new scale value to the viewer
-
-parameters:
-
-- value - () a new scale value
-
-~~~js
-$$("toolbar").setMasterScale(value);
-~~~
-
-####zoom()
-
-zooms the viewer in or out depending on toolbar button click ("+" or "-")
-
-parameters:
-
-- direction - (string) the direction of zooming - "in" or "out"
-
-~~~js
-$$("toolbar").zoom("in");
-~~~
-
-####setPage()
-
-sets the current page in the toolbar
-
-parameters:
-
-- page - (number) the number of the page that should be displayed
-
-~~~js
-$$("toolbar").setPage(2);
-~~~
-
 
 ####setValues()
 
@@ -202,4 +210,15 @@ $$("toolbar").setValues(15,"auto-width");
 $$("toolbar").setValues(10,"page-actual");
 ~~~
 
+####zoom()
+
+zooms the viewer in or out, it is called on a toolbar button click ("+" or "-")
+
+parameters:
+
+- direction - (string) the direction of zooming - "in" or "out"
+
+~~~js
+$$("toolbar").zoom("in");
+~~~
 

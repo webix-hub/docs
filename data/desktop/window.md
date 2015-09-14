@@ -80,12 +80,22 @@ The must-have parameters for the window are **width** and **height**. If you don
 
 Furthermore, Webix window features various methods for setting its **position**. All of them are described in a [separate documentation article](desktop/window_positioning.md).
 
+###Window Resizing
+
+You can change the size of the window by pulling the resizer icon placed in the right bottom corner of the window.
+
+<img src="desktop/resizing_window.png">
+
+To enable this possibility, you need to specify the **resize** property with the *true* value in the window's configuration.
+
+{{sample 10_window/15_resize.html}}
+
 ###Window Modality
 
 Modality is a feature of the ui-component that can affect the work of the application and control user-app interaction. [Alert and Confirm message boxes](desktop/message_boxes.md) are modal windows in their essence, as
 they **prevent the workflow** on the application main window. 
 
-The appearance of such window on the page prevent users to work with the app until they perform action required by this window (enter data, press the button, etc.. ). 
+The appearance of such window on the page prevent users from working with the app until they perform action required by this window (enter data, press the button, etc.. ). 
 
 UI-related Window is non-modal by default. Its modality is set with the help of the same-name property:
 
@@ -93,7 +103,7 @@ UI-related Window is non-modal by default. Its modality is set with the help of 
 {view:"window", modal:true}
 ~~~
 
-When a modal window is inited, the app area is greyed out to indicate that it is disabled while you "communicate" with the window.
+When a modal window is initialized, the app area is greyed out to indicate that it is disabled while you "communicate" with the window.
 
 
 ##Related articles

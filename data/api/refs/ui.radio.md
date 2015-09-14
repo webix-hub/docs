@@ -71,8 +71,10 @@ You can group multiple component instances together to provide the desired set o
 - api/link/ui.radio_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.radio_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.radio_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.radio_onblur_event.md - 
 - api/link/ui.radio_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.radio_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.radio_onfocus_event.md - 
 - api/link/ui.radio_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.radio_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.radio_onlongtouch_event.md - fires on holding finger in some position for a certain period of time

@@ -72,8 +72,10 @@ The control allows users to make multiple choices from a number of options. Full
 - api/link/ui.checkbox_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.checkbox_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.checkbox_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.checkbox_onblur_event.md - 
 - api/link/ui.checkbox_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.checkbox_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.checkbox_onfocus_event.md - 
 - api/link/ui.checkbox_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.checkbox_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.checkbox_onlongtouch_event.md - fires on holding finger in some position for a certain period of time

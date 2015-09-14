@@ -72,7 +72,9 @@ The component presents a plain window that can contain any content. Check [conte
 - api/link/ui.context_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.context_onbeforeshow_event.md - fires right after show() method is called for the window (popup) and before the window is shown
 - api/link/ui.context_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.context_onblur_event.md - 
 - api/link/ui.context_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.context_onfocus_event.md - 
 - api/link/ui.context_onhide_event.md - fires when window is hidden
 - api/link/ui.context_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.context_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
@@ -107,7 +109,7 @@ The component presents a plain window that can contain any content. Check [conte
 - api/link/ui.context_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.context_id_config.md - the component ID
 - api/link/ui.context_left_config.md - the left offset of the window
-- api/link/ui.context_master_config.md - the area for which context object in inited
+- api/link/ui.context_master_config.md - the area for which context object in initialized
 - api/link/ui.context_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.context_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.context_minheight_config.md - sets the minimal height for the view

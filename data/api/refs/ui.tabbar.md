@@ -78,8 +78,10 @@ Items of the component combines an icon with the text label. The component can b
 - api/link/ui.tabbar_onbeforetabclick_event.md - fires before a segment is clicked
 - api/ui.tabbar_onbeforetabclose_event.md - fires before the tab is closed
 - api/link/ui.tabbar_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.tabbar_onblur_event.md - 
 - api/link/ui.tabbar_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.tabbar_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.tabbar_onfocus_event.md - 
 - api/link/ui.tabbar_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.tabbar_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.tabbar_onlongtouch_event.md - fires on holding finger in some position for a certain period of time

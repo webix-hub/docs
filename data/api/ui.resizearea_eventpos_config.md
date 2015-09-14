@@ -2,8 +2,8 @@ eventPos
 =============
 
 
-@short:the top (vertical resizing) or left (horizontal resizing) absolute event position.<br>
-Setting a pure number value doesn't make any sense.
+@short:the top (vertical resizing) or left (horizontal resizing) absolute event position
+
 	
 
 @type: number
@@ -31,5 +31,5 @@ webix.event(parentContainer,"mousedown",function(e){
 
 	
 @descr:
-
+Setting a pure number value doesn't make any sense.
 

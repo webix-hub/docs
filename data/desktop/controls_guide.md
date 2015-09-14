@@ -64,7 +64,7 @@ Here we make use of the **align** (string) property that defines horizontal posi
 
 ##Setting Dimensions 
 
-Each time control is inited, space is reserved for it. It either equals to parent (form, toolbar) dimensions or is set as control **width**. 
+Each time control is initialized, space is reserved for it. It either equals to parent (form, toolbar) dimensions or is set as control **width**. 
 
 <img src="desktop/control_width.png">
 

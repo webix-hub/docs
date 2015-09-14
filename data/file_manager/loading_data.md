@@ -91,7 +91,7 @@ Folders that should be loaded on demand must contain the **webix_branch** attrib
 If such a folder contains at least one child folder, you also need to add **webix_child_branch** attribute for this folder.
 
 To enable dynamic loading, you need to define the "branch" attribute of the "handlers" property 
-in the FileManager configuration and set the url of the server-side script that will load data as its value:
+in the FileManager configuration and set as a value the url of the server-side script that will load data dynamically when branches are expanded:
 
 ~~~js
 webix.ui({
@@ -148,7 +148,7 @@ For example, if we open the folder with the "documents" id to view its content, 
 
 ~~~js
 {
-	action: "branch"
+	action: "branch",
 	source: "documents"
 }
 ~~~
@@ -158,7 +158,7 @@ A JSON response should contain two properties:
 - parent- (string) id of the folder where we load new data
 - data - (array) the loaded data
 
-An example of response for the "documents" folder is:
+An example of response for the "documents" folder from the above request is:
 
 ~~~js
 { parent: "documents", data: [ ...array of child items... ] }
@@ -173,7 +173,7 @@ The whole tree structure (folders) is loaded initially. The files of a particula
 You should add the **webix_files** attribute for the folders that have files which should be loaded on demand.
 
 To enable dynamic loading, you need to define the "files" attribute of the "handlers" property 
-in the FileManager configuration and set the url of the server-side script that will load data as its value:
+in the FileManager configuration and set as a value the url of the server-side script that will load data when folders will be opened for viewing their content(files):
 
 ~~~js
 webix.ui({
@@ -241,7 +241,7 @@ For example, if we open the folder with the "documents" id to view its content, 
 
 ~~~js
 {
-	action: "files"
+	action: "files",
 	source: "documents"
 }
 ~~~
@@ -251,7 +251,7 @@ A JSON response should contain two properties:
 - parent- (string) id of the folder where we load new data
 - data - (array) the loaded data
 
-An example of response for the "documents" folder is:
+An example of response for the "documents" folder from the above request is:
 
 ~~~js
 { parent: "documents", data: [ ...array of child items... ] }
@@ -277,6 +277,8 @@ webix.ui({
     	...
      }
 });
+
+...
 ~~~
 
 The request contains several parameters:
@@ -285,13 +287,22 @@ The request contains several parameters:
 - source - the id of the folder where data has been searched
 - text - the text that the content should include 
 
-For example, if you are searching in the "documents" folder by "image", the parameters will be the following:
+For example, if you are searching files/folders that include "report" in their names, the request parameters will be the following:
 
 ~~~js
 {
-	action: "search"
-	source: "documents"
-	text: 	"image"
+	action: "search",
+	source: "documents",
+	text: 	"report"
 }
 ~~~
 
+An example of response can be as follows:
+
+~~~js
+[
+   { id: "documents/reports", type: "folder",...},
+   { id: "documents/reports/report2015.doc", ...},
+   ...
+]
+~~~

@@ -65,7 +65,9 @@ Is used by a [multiselect](api/refs/ui.multiselect.md) control already.
 - api/link/ui.checksuggest_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.checksuggest_onbeforeshow_event.md - fires right after show() method is called for the window (popup) and before the window is shown
 - api/link/ui.checksuggest_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.checksuggest_onblur_event.md - 
 - api/link/ui.checksuggest_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.checksuggest_onfocus_event.md - 
 - api/link/ui.checksuggest_onhide_event.md - fires when window is hidden
 - api/link/ui.checksuggest_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.checksuggest_onlongtouch_event.md - fires on holding finger in some position for a certain period of time

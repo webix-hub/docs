@@ -42,7 +42,7 @@ webix.ui({
 - [Editing Data](desktop/edit.md)
 - [Paging](desktop/paging.md) 
 - [Adding Active Elements to Dataview Items](desktop/active_content.md)
-- [Export](desktop/export.md)
+- [Data Export](desktop/dataview_export.md)
 
 {{note
 Note that there's a built-in possibility to edit data with dataview. You should create a prototype *dataview-edit* object beforehand.
@@ -57,3 +57,6 @@ Note that there's a built-in possibility to edit data with dataview. You should 
 - [Dynamic Resizing and Adjustment](desktop/resizing.md)
 - [Redefinition of the Components](desktop/redefinition.md)
 - [Dataview CSS Image Map](desktop/dataview_css.md)
+
+@index:
+- desktop/dataview_export.md
