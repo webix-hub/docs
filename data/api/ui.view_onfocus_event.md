@@ -8,7 +8,7 @@ onFocus
 @params:
 
 - current_view			object			the view that is in focus now	
-- prev_view				object			the view that was in focus previously
+- prev_view				object			the view that has previously been in focus 
 
 
 @example:
@@ -19,4 +19,5 @@ $$("datatable1").attachEvent("onFocus", function(current_view, prev_view){
 
 @template:	api_event
 @descr:
-
+@related:
+desktop/uimanager.md

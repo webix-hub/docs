@@ -95,7 +95,7 @@ still being  very fast handling  thousands of records.<a href="datatable/overvie
 		    </h4>
 		    <ul id="styling_sublist">
 				<li><a href="datatable/export.md">Excel</a></li>
-				<li><a href="datatable/export.md">PDF</a></li>
+				<li><a href="datatable/export.md">PNG</a></li>
             </ul>
         </td>
 		<td class='topic_description'>Describes the formats and procedures you've got to import/export the DataTable's data. </td>

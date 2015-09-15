@@ -222,3 +222,4 @@ parameters:
 $$("toolbar").zoom("in");
 ~~~
 
+@edition:pro

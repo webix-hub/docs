@@ -40,6 +40,8 @@ You can load data in any of the supported [data formats](desktop/data_types.md).
 - [Selection](desktop/selection.md)
 - [Paging](desktop/paging.md)
 - [Adding Active Elements to List Items](desktop/active_content.md)
+- desktop/export_png.md
+- desktop/data_components_export.md
 
 {{note
 Note that there's no built-in possibility to edit data with List. You should create a prototype *editlist* object beforehand.
@@ -54,4 +56,4 @@ Note that there's no built-in possibility to edit data with List. You should cre
 - [List CSS Image Map](desktop/list_css.md)
 
 @index:
-  - desktop/xlist.md
+- desktop/xlist.md

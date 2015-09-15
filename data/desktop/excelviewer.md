@@ -178,3 +178,5 @@ The string value of the *url* property *excel->files/data.xlsx@Data[1-10]"* incl
 To get more information about proxy objects read the article desktop/server_proxy.md.
 
 {{sample 60_pro/10_viewers/04_excel_proxy.html}}
+
+@edition: pro

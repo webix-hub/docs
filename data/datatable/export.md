@@ -18,7 +18,7 @@ To export data from datatable or treetable into a PNG file, you need to call the
 The method takes the following parameters:
 
 - **id** - (string) the id of the exported view
-- **name** - (string) optional, the name of an exported png file
+- **name** - (string) optional, the name of the created png file
 
 For example, if you want to export a datatable to a PNG file, you need to initialize a datatable:
 
@@ -31,7 +31,7 @@ For example, if you want to export a datatable to a PNG file, you need to initia
 }
 ~~~
 
-and then call the toPNG() method with the datatble id as its parameter:
+and then call the toPNG() method with the datatable id as its parameter:
 
 ~~~js
 webix.toPNG($$("myDataTable"));	
@@ -72,7 +72,7 @@ Customizing Export
 ---------------------
 
 The toExcel() method returns all data specified in the **columns** parameter of the datatable view. However, you may 
-need to get data from other fields as well as restrict the number of fields in the export file. You can set the necessary
+need to get data from other fields as well as restrict the number of fields in the export file. You can set the necessary fields
 in the **columns** property of the toExcel() method.
 
 All in all, export API allows:

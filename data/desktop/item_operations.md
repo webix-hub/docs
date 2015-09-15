@@ -22,7 +22,6 @@ in functionality. They are as follows:
 - desktop/paging.md
 - desktop/dnd.md
 - desktop/clipboard.md
-- desktop/export_png.md
 - desktop/grouping.md
 }}
 

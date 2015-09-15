@@ -42,7 +42,7 @@ Notation">JSON</acronym> [data formats](desktop/data_types.md). IDs of the coulm
 
 Common tasks here include the following and coincide with those of the [datatable](datatable/index.md) and [tree](datatree/index.md): 
 
-1 . [Data Loading](desktop/data_loading.md) including [Dynamic Loading](datatree/dynamic_loading.md) of large datasets inportions;
+1 . [Data Loading](desktop/data_loading.md) including [Dynamic Loading](datatree/dynamic_loading.md) of large datasets in portions by scrolling and branches opening;
 
 {{sample 15_datatable/30_treetable/02_dyn_loading.html}}
 

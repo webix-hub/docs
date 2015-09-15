@@ -1,4 +1,4 @@
-Data Export to PNG
+Exporting Components to PNG
 ===================
 
 You can export Webix components to the PNG format. The components don't require any special configuration to be exported.
@@ -10,7 +10,7 @@ The described functionality is available both in Standard and Pro versions, but 
 Export to PNG
 -------------------
 
-To export data from a component into a PNG file, you need to call the **toPNG()** method. The method takes the next parameters:
+To export a component into a PNG file, you need to call the **toPNG()** method. The method takes the next parameters:
 
 - **id** - (string) the id of the exported view
 - **name** - (string) optional, the name of an exported png file

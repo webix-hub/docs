@@ -1,10 +1,7 @@
-Data Export to PNG and Excel
+Exporting Data Components to Excel
 ==============================
 
-You can export Webix data components to the following formats:
-
-1. [PNG](desktop/data_components_export.md#exporttopng)
-2. [Excel](desktop/data_components_export.md#exporttoexcel)
+You can export Webix data components to the Excel formats.
 
 The components don't require any special configuration to be exported.
 
@@ -13,36 +10,6 @@ The components don't require any special configuration to be exported.
 The described functionality is available both in Standard and Pro versions, but pay attention that the IE browser is supported starting from version 10.
 }}
 
-Export to PNG
--------------------
-
-To export data from a data component into a PNG file, you need to call the **toPNG()** method. The method takes the next parameters:
-
-- **id** - (string) the id of the exported view
-- **name** - (string) optional, the name of an exported png file
-
-For example, if you want to export a chart to a PNG file, you need to initialize a chart:
-
-~~~js
-{
-	view:"chart",
-	id: "myChart",
-	// chart configuration
-	...
-}
-~~~
-
-and then call the toPNG() method with the chart id as its parameter:
-
-~~~js
-webix.toPNG($$("myChart"));	
-~~~
-
-{{sample 19_api/07_export_png.html }}
-
-
-Export to Excel
--------------------
 
 To export data from a data component into an Excel document you need to call the **toExcel()** method. The method takes 2 parameters:
 

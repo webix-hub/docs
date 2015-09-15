@@ -3,8 +3,11 @@ ui.datatable
 
 {{memo An editable table  that can easily display huge data sets. }}
 
-The component is full of various possibilities: filtering, sorting, pagination, editing, nadigation, drag-and-drop, internatialization, export to PDF, Excel etc. It also provides the dynamic mode for fast handling thousands of records.
-  Check [datatable](datatable/index.md) documentation for more detailed description.
+The component is full of various possibilities: filtering, sorting, pagination, editing, nadigation, drag-and-drop,
+internationalization, export to PDF, Excel etc. It also provides the dynamic mode for fast handling thousands of records.
+
+
+Check [datatable](datatable/index.md) documentation for more detailed description.
 
 ### Constructor
 

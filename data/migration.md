@@ -5,6 +5,21 @@ Webix 2.X -> 3.0
 ----------------
 
 
+###Strict JSON parsing
+
+Starting from the version 3.0 strict JSON parsing rules are applied. It means that Webix won't process invalid JSON script. 
+
+###Serverside response for Uploader
+
+The expected format of JSON string returned by the script of Uploader has changed.
+Now the status of the file object should have the value "error" to indicate that uploading ended with error:
+
+~~~php
+echo "{ status:'error' }";
+~~~
+
+Any other response status, e.g. *"{status:'server'}"* means that uploading ended successfully.
+
 
 Webix 2.2 -> 2.3
 -----------------

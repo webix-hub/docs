@@ -5,8 +5,8 @@ In case you need to give some additional information for the content of a datata
 
 <img src="datatable/subrows.png">
 
-To add a subrow into Datatable, use the *subrow* property. 
-It takes a template with the names of properties that should be set in the subrow with their values:
+To add a subrow into Datatable, use the **subrow** property. 
+As a parameter, it takes a template with the names of properties that should be set in the subrow with their values:
 
 ~~~js
 {
@@ -101,15 +101,16 @@ API reference
 
 There's a couple of functions you can use to manipulate the subrows in a datatable:
 
-- openSub() - opens a subrow by its id:
+- openSub() - opens a subrow by the item id:
 
 ~~~js
-$$("myDatatable").openSub("subrowId");
+$$("myDatatable").openSub(id);
 ~~~
 
-- closeSub() - closes an opened subrow by its id:
+- closeSub() - closes an opened subrow by the item id:
 
 ~~~js
-$$("myDatatable").closeSub("subrowId");
+$$("myDatatable").closeSub(id);
 ~~~
 
+@edition: pro

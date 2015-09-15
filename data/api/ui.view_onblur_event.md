@@ -6,7 +6,7 @@ onBlur
 
 @params:
 
-- prev_view			object			the view that was in focus previously
+- prev_view			object			the view that has previously been in focus
 
 
 @example:
@@ -18,4 +18,5 @@ $$("datatable1").attachEvent("onBlur", function(prev_view){
 
 @template:	api_event
 @descr:
-
+@related:
+desktop/uimanager.md
