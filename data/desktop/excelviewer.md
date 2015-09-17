@@ -20,8 +20,8 @@ The constructor of the viewer is the following:
 
 The configuration properties are:
 
-- **toolbar** - (string) the id of the applied excel toolbar;
-- **excelHeader** - (boolean) true to use the first row of the Excel sheet as a header;
+- **toolbar** - (string) the id of the related excel toolbar, if used;
+- **excelHeader** - (boolean) true to use the first row of the Excel table as a column header;
 - **url** - (string) the url of the excel file that should be displayed.
 
 
@@ -59,8 +59,8 @@ $$("viewer").load("data.xlsx");
 Excel toolbar and its API
 ----------------
 
-It's possible to show a toolbar with tabs which correspond to the Excel sheets.
-In order to apply such a toolbar, the **excelbar** view should be initialized.
+It's possible to show a toolbar with tabs that correspond to the Excel sheets.
+In order to render such a toolbar, the dedicated **excelbar** view should be initialized.
 
 ~~~js
 { 
@@ -88,6 +88,7 @@ returns:
 
 
 ####getValue() 
+
 returns the currently selected tab
 
 ~~~js
@@ -101,7 +102,7 @@ returns:
 
 ####setSheets() 
 
-sets tabs for excel sheets
+sets tabs in the toolbar (should correspond to excel sheets)
 
 parameters:
 
@@ -113,7 +114,7 @@ $$("toolbar").setSheets(["Data", "Files"]);
 
 ####setValue() 
 
-sets the selected tab
+sets the selected tab within a toolbar
 
 parameters:
 
@@ -151,10 +152,10 @@ $$("excel").load(upload.file);
 
 ##Loading via the "excel" proxy object
 
+Excelviewer allows displaying Excel data in a datatable only. At the same time by means of using the "excel" [proxy object](desktop/server_proxy.md), 
+you can load data to any Webix data component ([list](desktop/list.md), [dataview](desktop/dataview.md), [chart](desktop/chart.md), etc). 
 
-By means of using the "excel" [proxy object](desktop/server_proxy.md), you can load data to any data component. 
-
-This variant of loading allows customizing the presentation of the loaded data, such as displaying headers and the number of the loaded rows.
+This variant of loading allows customizing the presentation of the loaded data, such as displaying headers and controlling the number of the loaded rows.
 
 ~~~js
 webix.ui({
@@ -171,11 +172,11 @@ The string value of the *url* property *excel->files/data.xlsx@Data[1-10]"* incl
 
 - **excel** - the name of the proxy object
 - **files/data.xlsx** - link to the excel file
-- **@** - the delimiter that detaches the link from its parameters
-- **Data** - the name of the sheet
-- **[1-10]** - an array of rows that should be rendered in the viewer
+- **@** - the delimiter that detaches the link from its parameters (can be omitted together with parameters)
+- **Data** - the name of the Excel sheet to render
+- **[1-10]** - the rows that should be rendered in the viewer
 
-To get more information about proxy objects read the article desktop/server_proxy.md.
+To get more information about proxy objects read the desktop/server_proxy.md article.
 
 {{sample 60_pro/10_viewers/04_excel_proxy.html}}
 

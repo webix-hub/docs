@@ -6,7 +6,7 @@ In case you need to give some additional information for the content of a datata
 <img src="datatable/subrows.png">
 
 To add a subrow into Datatable, use the **subrow** property. 
-As a parameter, it takes a template with the names of properties that should be set in the subrow with their values:
+As a parameter, it takes a template with the names of data properties that should be shown in the subrow:
 
 ~~~js
 {
@@ -16,13 +16,11 @@ As a parameter, it takes a template with the names of properties that should be 
 }
 ~~~
 
-In the columns configuration you should specify the **template** property with the value 
-*"{common.subrow()} #title#"*,
-
-where:
+In the columns configuration you should specify the **template** property with the value like
+*"{common.subrow()} #title#"*, where:
 
 - {common.subrow()} - renders "+" and "-" icons to open/close subrows
-- #title# - defines the data that should be rendered next to the icon
+- #title# - defines the data that should be rendered in the column next to the icon
 
 ~~~js
 columns:[
@@ -39,7 +37,7 @@ Setting autoheight for subrows
 -------------------------------
 
 If the text in a subrow is too long, you can set the **subRowHeight** property with the *auto* value.
-It will make the subrow to adjust its height to the size of the text:
+It will force the subrow to adjust its height to the size of the text:
 
 <img src="datatable/subrows_autoheight.png">
 
@@ -66,7 +64,9 @@ webix.ui({
 Changing the content of a subrow
 ---------------------------
 
-If you need to change the text in the subrow, you should specify the property with the text as a template in the **subrow** property:
+If you need to alter the text in the subrow dynamically, you should access the related data item and apply changes to it. 
+
+Take that you render *details* data property in a subrow:
 
 ~~~js
 {
@@ -83,7 +83,8 @@ If you need to change the text in the subrow, you should specify the property wi
 }
 ~~~
 
-Then use the api/link/ui.proto_getitem.md method that will return the object of the data item with the specified id and applies a new text to the property with text:
+To change it, you should use the api/link/ui.proto_getitem.md method that will return data item object by the specified id. 
+And then specify the new text for the *details* property of this item:
 
 ~~~js
 {	

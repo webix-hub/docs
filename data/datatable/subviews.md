@@ -1,25 +1,24 @@
 Adding Subviews
 ====================
 
-Besides simple subrows it's also possible to add a whole subview into a datatable. Below you can the details on how to insert a sub-grid or a sub-form into Datatable. 
-However, any other component can be added, if necessary.
+Besides [simple subrows](datatable/subrows.md) it's also possible to render subviews in a datatable. Below you can see the details on how to insert a sub-grid or a sub-form into Datatable. 
+If necessary, any Webix component can be used as a subview.
 
 Sub-Grid in a DataTable
 ---------------------
 
 <img src="datatable/subgrid.png">
 
-To add a subview into Datatable, use the **subview** property. In the case of grid, you should specify a Grid configuration with all the necessary parameters
-and static data inside of this property.
+To add a subview into Datatable, use the **subview** property. In the case of datatable, you should specify a Datatable configuration with all the necessary parameters as value of this property.
 
-In the columns configuration of the Datatable you should specify the **template** property with the value 
-*{common.subrow()} #title#*,
-
-where:
+In the columns configuration of the Datatable you should specify the **template** property with the value like *{common.subrow()} #title#*, where:
 
 - {common.subrow()} - renders "+" and "-" icons to open/close subviews
-- #title# - defines the data that should be rendered next to the icon
+- #title# - defines the data that should be rendered in the columns next to the icon
  
+{{snippet
+Subgrid with static data
+}}
 ~~~js
 webix.ui({
 	view:"datatable",
@@ -56,17 +55,19 @@ webix.ui({
 
 ##Loading data into a subview
 
-To populate a subview with data, you can either specify a dataset in the datatable configuration, 
-or use the api/link/ui.proto_load.md or api/link/ui.proto_parse.md methods.
+To populate a subview with data, you can either 
+
+- specify a static dataset in the datatable configuration (as shown above);
+- use the api/link/ui.proto_load.md or api/link/ui.proto_parse.md methods to populate the subgrid with "item-related" data.
 
 ###Using inline data 
 
-To load inline data into the sub-grid when a subview is created, use the onSubViewCreate() event with two parameters:
+To load inline data into the sub-grid when a subview is created, use the *onSubViewCreate()* event with two parameters:
 
-- view - the created subview
-- item - the item that a subgrid is created for
+- view - the created subview;
+- item - the item for which a subgrid is created.
 
-Inside of this event apply the api/link/ui.proto_parse.md method 
+In the event handler apply the api/link/ui.proto_parse.md method 
 and pass the data item property with sub-grid's data into it: 
 
 ~~~js
@@ -101,11 +102,10 @@ webix.ui({
 
 {{sample 60_pro/01_datatable/07_sub/05_sub_grid_data.html}}
 
-###Loading data from a script
-
+###Loading data from an external source
 
 To load data from an external source, use the api/link/ui.proto_load.md method that 
-takes the path to the necessary file or script and will be called on a subrow's creation as well.
+takes the path to the necessary file or script that will return data for a subgrid.
 
 ~~~js
 {
@@ -140,14 +140,15 @@ Sub-Form in a Datatable
 
 The same as with a Sub-Grid, you can add a Sub-Form into Datatable. 
 
-You need to initialize a form view inside of the **subview** property and define the configuration of form elements.
+You need to initialize a form view inside of the **subview** property and define the configuration of form elements. Note that *name* attributes of the form fields 
+should coincide with data item properties to ensure a simple and clear way of two-way binding.
 
-To add values into the sub-form when a subview is created, use the onSubViewCreate() event with two parameters:
+To add values into the sub-form when a subview is created, use the *onSubViewCreate()* event with two parameters:
 
-- view - the created subview
-- item - the item that a subview is created for
+- view - the created subview;
+- item - the item for which a subview is created.
 
-And inside of this event use the api/link/ui.form_setvalues.md method with the item object as a parameter.
+And in the event handler use the api/link/ui.form_setvalues.md method with the item object as a parameter.
 
 ~~~js
 webix.ui({

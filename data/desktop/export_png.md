@@ -12,23 +12,19 @@ Export to PNG
 
 To export a component into a PNG file, you need to call the **toPNG()** method. The method takes the next parameters:
 
-- **id** - (string) the id of the exported view
-- **name** - (string) optional, the name of an exported png file
+- **id** - (string, object) id or object of the exported view 
+- **name** - (string) optional, name of an exported png file
 
-For example, if you want to export a chart to a PNG file, you need to initialize a chart:
+For example, if you want to export a chart to a PNG file, you need to call the toPNG() method with the chart id as parameter:
 
 ~~~js
-{
+webix.ui({
 	view:"chart",
 	id: "myChart",
 	// chart configuration
 	...
-}
-~~~
+});
 
-and then call the toPNG() method with the chart id as its parameter:
-
-~~~js
 webix.toPNG($$("myChart"));	
 ~~~
 

@@ -13,24 +13,20 @@ The described functionality is available both in Standard and Pro versions, but 
 
 To export data from a data component into an Excel document you need to call the **toExcel()** method. The method takes 2 parameters:
 
-- **id** - (string, object)  the exported view or its id
+- **id** - (string, object)  id or object of the exported view 
 - **options** - (object) optional, a set of configuration options that define what data will be displayed in the Excel file:
 
 
-For example, to export a list to an Excel document, you need to start with the view initialization:
+For example, to export a list to an Excel document, you need to call of the toExcel() method that takes the view object or its id as a parameter:
 
 ~~~js
-{
+webix.ui({
 	view:"list",
 	id: "mylist",
     // list configuration
     ...
-}
-~~~
+});
 
-And then the call of the toExcel() method should follow. The method takes the view object or its id as a parameter:
-
-~~~js
 webix.toExcel($$("mylist"));
 ~~~
 
@@ -91,6 +87,6 @@ webix.toExcel(list, {
 ~~~
 
 "Custom1" (any name can be used) receives data from the **year** field even if it is not seen in this component but is presented in its dataset.
-The field is rendered with **width**, **template** and **header** that will be the header of the corresponding column in the export table. 
+The field is rendered with **width** and **template** as well as **header** that will be the header of the corresponding column in the resulting table. 
 
 {{sample 19_api/06_export_excel.html}}

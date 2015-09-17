@@ -82,11 +82,11 @@ Furthermore, Webix window features various methods for setting its **position**.
 
 ###Window Resizing
 
-You can change the size of the window by pulling the resizer icon placed in the right bottom corner of the window.
+Window can be resized by user in browser with the help of a **resizer icon** in the right bottom corner of the window.
 
 <img src="desktop/resizing_window.png">
 
-To enable this possibility, you need to specify the **resize** property with the *true* value in the window's configuration.
+To enable this possibility, you need to include the **resize** property with the *true* value into the window's configuration.
 
 {{sample 10_window/15_resize.html}}
 
