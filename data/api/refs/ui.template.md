@@ -77,9 +77,9 @@ The component is a simple container (but with rich API support) where you can pu
 - api/link/ui.template_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/link/ui.template_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.template_onbindrequest_event.md - fires when the component is ready to receive data from the master component
-- api/link/ui.template_onblur_event.md - 
+- api/link/ui.template_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.template_ondestruct_event.md - occurs when component destroyed
-- api/link/ui.template_onfocus_event.md - 
+- api/link/ui.template_onfocus_event.md - fires when a view gets focus
 - api/link/ui.template_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.template_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.template_onlongtouch_event.md - fires on holding finger in some position for a certain period of time

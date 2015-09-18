@@ -79,9 +79,9 @@ Properties
 - api/link/ui.excelviewer_scrolly_config.md - enables/disables vertical scrolling
 - api/link/ui.excelviewer_select_config.md - sets the selection mode in DataTable
 - api/link/ui.excelviewer_spans_config.md - array of span configurations for the datatable
-- api/link/ui.excelviewer_subrowheight_config.md - 
-- api/link/ui.excelviewer_subrow_config.md - 
-- api/link/ui.excelviewer_subview_config.md - 
+- api/link/ui.excelviewer_subrowheight_config.md - automatically adjusts the subrow's height to the size of the text
+- api/link/ui.excelviewer_subrow_config.md - sets a subrow template
+- api/link/ui.excelviewer_subview_config.md - adds a subview configuration into datatable
 - api/ui.excelviewer_toolbar_config.md - 
 - api/link/ui.excelviewer_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.excelviewer_type_config.md - used for configuring presentation of items

@@ -17,7 +17,7 @@ Methods
 - api/link/ui.excelviewer_clearall.md - removes all items from the component
 - api/link/ui.excelviewer_clearcss.md - removes css class from all items
 - api/link/ui.excelviewer_clearvalidation.md - removes all validation marks from the component
-- api/link/ui.excelviewer_closesub.md - closes the subrow or the subview for an item with the given id
+- api/link/ui.excelviewer_closesub.md - closes subrow or subview for an item with the given id
 - api/link/ui.excelviewer_collectvalues.md - returns an array of unique values of the specified column
 - api/link/ui.excelviewer_columnid.md - returns the id of the column at the specified index
 - api/link/ui.excelviewer_copy.md - copies an item to the same or another object
@@ -69,7 +69,7 @@ Methods
 - api/link/ui.excelviewer_getselectedid.md - returns the selected cells
 - api/link/ui.excelviewer_getselecteditem.md - gets an object of the selected data item
 - api/link/ui.excelviewer_getstate.md - returns the current state of the view
-- api/link/ui.excelviewer_getsubview.md - returns the subview of the item with the given id
+- api/link/ui.excelviewer_getsubview.md - returns subview of the item with the given id
 - api/link/ui.excelviewer_gettext.md - returns text value of a cell
 - api/link/ui.excelviewer_gettopparentview.md - returns top parent view
 - api/link/ui.excelviewer_getvisiblecount.md - returns count of visible rows
@@ -95,7 +95,7 @@ Methods
 - api/link/ui.excelviewer_moveselection.md - moves selection in the specified direction
 - api/link/ui.excelviewer_movetop.md - moves the specified item to the first position
 - api/link/ui.excelviewer_moveup.md - decreases the item index and moves the item to the new position
-- api/link/ui.excelviewer_opensub.md - opens the subrow or the subview for an item with the given id
+- api/link/ui.excelviewer_opensub.md - opens subrow or subview for an item with the given id
 - api/link/ui.excelviewer_parse.md - loads data to the component from an inline data source
 - api/link/ui.excelviewer_refresh.md - repaints the whole view or a certain item
 - api/link/ui.excelviewer_refreshcolumns.md - refreshes the structure of DataTable
@@ -109,7 +109,7 @@ Methods
 - api/link/ui.excelviewer_removespan.md - removes a rowspan/colspan from the datatable
 - api/link/ui.excelviewer_render.md - renders the specified item or the whole component
 - api/link/ui.excelviewer_resize.md - adjusts the view to a new size
-- api/link/ui.excelviewer_resizesubview.md - 
+- api/link/ui.excelviewer_resizesubview.md - adjusts the row's size to the size of a subview
 - api/link/ui.excelviewer_scrollto.md - scrolls the view to the defined position
 - api/link/ui.excelviewer_serialize.md - serializes data to a JSON object
 - api/link/ui.excelviewer_setcolumnwidth.md - sets the width of the specified column

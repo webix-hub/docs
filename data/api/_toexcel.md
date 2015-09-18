@@ -16,4 +16,8 @@ webix.toExcel($$("mylist"));
 @template:	api_method
 @descr:
 @related:
-desktop/data_components_export.md
+	desktop/data_components_export.md
+@relatedsample:
+	19_api/06_export_excel.html
+@relatedapi:
+	api/_topng.md

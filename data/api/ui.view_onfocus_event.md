@@ -20,4 +20,6 @@ $$("datatable1").attachEvent("onFocus", function(current_view, prev_view){
 @template:	api_event
 @descr:
 @related:
-desktop/uimanager.md
+	desktop/uimanager.md
+@relatedapi:
+	api/ui.view_onblur_event.md

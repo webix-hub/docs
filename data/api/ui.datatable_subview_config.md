@@ -20,4 +20,9 @@ webix.ui({
 @template:	api_config
 @descr:
 @related:
-datatable/subviews.md
+	datatable/subviews.md
+@relatedsample:
+	60_pro/01_datatable/07_sub/04_sub_grid.html
+    60_pro/01_datatable/07_sub/07_sub_form.html
+@relatedapi:
+	api/ui.datatable_subrow_config.md

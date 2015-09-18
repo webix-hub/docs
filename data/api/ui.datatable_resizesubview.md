@@ -3,7 +3,7 @@ resizeSubView
 
 
 @short:
-	adjusts the row's size to the size of the subview
+	adjusts the row's size to the size of a subview
 
 @params:
 

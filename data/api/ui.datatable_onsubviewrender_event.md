@@ -3,7 +3,7 @@ onSubViewRender
 
 
 @short:
-	fires when a subview was rendered
+	fires each time subview is rendered
 
 @params:
 - view			object			the rendered subview

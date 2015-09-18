@@ -19,4 +19,6 @@ $$("datatable1").attachEvent("onBlur", function(prev_view){
 @template:	api_event
 @descr:
 @related:
-desktop/uimanager.md
+	desktop/uimanager.md
+@relatedapi:
+	api/ui.view_onfocus_event.md

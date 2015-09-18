@@ -32,10 +32,10 @@ Version 3.0
 
 ##Updates
 
-- [update] any positive json response fires "onAfterUpload" event. To indicate an error, return {"status":"error"}
-- [update] webix.require returns promise
-- [update] ignore refreshFilter for not existing filters
-- [update] BackBone integration - remove dependance on underscrore
+- [update] [any serverside response](desktop/uploader_serverside.md) except of {"status":"error"} fires onFileUpload event
+- [update] [webix.require()](api/_require.md) returns promise
+- [update] ignore [refreshFilter()](api/ui.datatable_refreshfilter.md) for not existing filters
+- [update] dependence on Underscore is removed from [BackBone integration](desktop/backbone.md) 
 - [update] data binding for tree-like components
 - [update] ability to use data updates in TreeStore
 - [update] block selection for path elements in File Manager

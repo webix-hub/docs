@@ -3,11 +3,8 @@ ui.datatable
 
 {{memo An editable table  that can easily display huge data sets. }}
 
-The component is full of various possibilities: filtering, sorting, pagination, editing, nadigation, drag-and-drop,
-internationalization, export to PDF, Excel etc. It also provides the dynamic mode for fast handling thousands of records.
-
-
-Check [datatable](datatable/index.md) documentation for more detailed description.
+The component is full of various possibilities: filtering, sorting, pagination, editing, nadigation, drag-and-drop, internatialization, export to PDF, Excel etc. It also provides the dynamic mode for fast handling thousands of records.
+  Check [datatable](datatable/index.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -50,7 +47,7 @@ Check [datatable](datatable/index.md) documentation for more detailed descriptio
 - api/link/ui.datatable_clearcss.md - removes css class from all items
 - api/ui.datatable_clearselection.md - clears selection
 - api/link/ui.datatable_clearvalidation.md - removes all validation marks from the component
-- api/ui.datatable_closesub.md - closes the subrow or the subview for an item with the given id
+- api/ui.datatable_closesub.md - closes subrow or subview for an item with the given id
 - api/ui.datatable_collectvalues.md - returns an array of unique values of the specified column
 - api/ui.datatable_columnid.md - returns the id of the column at the specified index
 - api/link/ui.datatable_copy.md - copies an item to the same or another object
@@ -102,7 +99,7 @@ Check [datatable](datatable/index.md) documentation for more detailed descriptio
 - api/ui.datatable_getselectedid.md - returns the selected cells
 - api/ui.datatable_getselecteditem.md - gets an object of the selected data item
 - api/link/ui.datatable_getstate.md - returns the current state of the view
-- api/ui.datatable_getsubview.md - returns the subview of the item with the given id
+- api/ui.datatable_getsubview.md - returns subview of the item with the given id
 - api/ui.datatable_gettext.md - returns text value of a cell
 - api/link/ui.datatable_gettopparentview.md - returns top parent view
 - api/ui.datatable_getvisiblecount.md - returns count of visible rows
@@ -130,7 +127,7 @@ Check [datatable](datatable/index.md) documentation for more detailed descriptio
 - api/link/ui.datatable_moveselection.md - moves selection in the specified direction
 - api/link/ui.datatable_movetop.md - moves the specified item to the first position
 - api/link/ui.datatable_moveup.md - decreases the item index and moves the item to the new position
-- api/ui.datatable_opensub.md - opens the subrow or the subview for an item with the given id
+- api/ui.datatable_opensub.md - opens subrow or subview for an item with the given id
 - api/link/ui.datatable_parse.md - loads data to the component from an inline data source
 - api/link/ui.datatable_refresh.md - repaints the whole view or a certain item
 - api/ui.datatable_refreshcolumns.md - refreshes the structure of DataTable
@@ -144,7 +141,7 @@ Check [datatable](datatable/index.md) documentation for more detailed descriptio
 - api/ui.datatable_removespan.md - removes a rowspan/colspan from the datatable
 - api/ui.datatable_render.md - renders the specified item or the whole component
 - api/link/ui.datatable_resize.md - adjusts the view to a new size
-- api/ui.datatable_resizesubview.md - 
+- api/ui.datatable_resizesubview.md - adjusts the row's size to the size of a subview
 - api/ui.datatable_scrollto.md - scrolls the view to the defined position
 - api/ui.datatable_select.md - selects the specified element
 - api/ui.datatable_selectrange.md - selects the specified range of elements
@@ -212,14 +209,14 @@ Check [datatable](datatable/index.md) documentation for more detailed descriptio
 - api/link/ui.datatable_onbeforesort_event.md - fires before sorting dataset
 - api/ui.datatable_onbeforeunselect_event.md - fired before a cell is unselected
 - api/link/ui.datatable_onbindrequest_event.md - fires when the component is ready to receive data from the master component
-- api/link/ui.datatable_onblur_event.md - 
+- api/link/ui.datatable_onblur_event.md - fires when focus is moved out of the view
 - api/ui.datatable_oncheck_event.md - fires when a checkbox is checked or unchecked in the datatable item
 - api/ui.datatable_oncolumnresize_event.md - fires when width of column was changed
 - api/link/ui.datatable_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.datatable_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.datatable_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.datatable_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
-- api/link/ui.datatable_onfocus_event.md - 
+- api/link/ui.datatable_onfocus_event.md - fires when a view gets focus
 - api/ui.datatable_onheaderclick_event.md - occurs after clicking on header
 - api/link/ui.datatable_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.datatable_onitemdblclick_event.md - fires when a component item was double-clicked
@@ -237,8 +234,8 @@ Check [datatable](datatable/index.md) documentation for more detailed descriptio
 - api/ui.datatable_onselectchange_event.md - fires when selection is changed in a DataTable
 - api/ui.datatable_onstructureload_event.md - fires when the structure of DataTable (columns configuration) is initialized
 - api/ui.datatable_onstructureupdate_event.md - fires when structure of datatable was changed ( column added, hidden or reconfigured )
-- api/ui.datatable_onsubviewcreate_event.md - 
-- api/ui.datatable_onsubviewrender_event.md - 
+- api/ui.datatable_onsubviewcreate_event.md - fires after a subview was created
+- api/ui.datatable_onsubviewrender_event.md - fires each time subview is rendered
 - api/link/ui.datatable_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.datatable_onswipey_event.md - occurs on a vertical swipe movement
 - api/link/ui.datatable_ontimedkeypress_event.md - fires after typing has been finished in the field
@@ -330,9 +327,9 @@ Check [datatable](datatable/index.md) documentation for more detailed descriptio
 - api/ui.datatable_scrolly_config.md - enables/disables vertical scrolling
 - api/ui.datatable_select_config.md - sets the selection mode in DataTable
 - api/ui.datatable_spans_config.md - array of span configurations for the datatable
-- api/ui.datatable_subrowheight_config.md - 
-- api/ui.datatable_subrow_config.md - 
-- api/ui.datatable_subview_config.md - 
+- api/ui.datatable_subrowheight_config.md - automatically adjusts the subrow's height to the size of the text
+- api/ui.datatable_subrow_config.md - sets a subrow template
+- api/ui.datatable_subview_config.md - adds a subview configuration into datatable
 - api/link/ui.datatable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/ui.datatable_type_config.md - used for configuring presentation of items
 - api/link/ui.datatable_url_config.md - the URL the component will use to load data after its initialization

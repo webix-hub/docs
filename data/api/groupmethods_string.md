@@ -58,4 +58,4 @@ new_data= [
 	desktop/grouping.md
     desktop/custom_functor.md
 @relatedsample:
-	08_chart/03_group/01_group.html
+	08_chart/03_api/01_group.html

@@ -2,7 +2,7 @@ getSubView
 =============
 
 @short:
-	returns the subview of the item with the given id
+	returns subview of the item with the given id
 
 @params:
 

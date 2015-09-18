@@ -38,14 +38,14 @@ Events
 - api/link/ui.excelviewer_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.excelviewer_onbeforeunselect_event.md - fired before a cell is unselected
 - api/link/ui.excelviewer_onbindrequest_event.md - fires when the component is ready to receive data from the master component
-- api/link/ui.excelviewer_onblur_event.md - 
+- api/link/ui.excelviewer_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.excelviewer_oncheck_event.md - fires when a checkbox is checked or unchecked in the datatable item
 - api/link/ui.excelviewer_oncolumnresize_event.md - fires when width of column was changed
 - api/link/ui.excelviewer_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.excelviewer_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.excelviewer_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.excelviewer_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
-- api/link/ui.excelviewer_onfocus_event.md - 
+- api/link/ui.excelviewer_onfocus_event.md - fires when a view gets focus
 - api/link/ui.excelviewer_onheaderclick_event.md - occurs after clicking on header
 - api/link/ui.excelviewer_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.excelviewer_onitemdblclick_event.md - fires when a component item was double-clicked
@@ -63,8 +63,8 @@ Events
 - api/link/ui.excelviewer_onselectchange_event.md - fires when selection is changed in a DataTable
 - api/link/ui.excelviewer_onstructureload_event.md - fires when the structure of DataTable (columns configuration) is initialized
 - api/link/ui.excelviewer_onstructureupdate_event.md - fires when structure of datatable was changed ( column added, hidden or reconfigured )
-- api/link/ui.excelviewer_onsubviewcreate_event.md - 
-- api/link/ui.excelviewer_onsubviewrender_event.md - 
+- api/link/ui.excelviewer_onsubviewcreate_event.md - fires after a subview was created
+- api/link/ui.excelviewer_onsubviewrender_event.md - fires each time subview is rendered
 - api/link/ui.excelviewer_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.excelviewer_onswipey_event.md - occurs on a vertical swipe movement
 - api/link/ui.excelviewer_ontimedkeypress_event.md - fires after typing has been finished in the field

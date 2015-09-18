@@ -49,6 +49,7 @@ Properties
 - api/link/ui.submenu_ready_config.md - event handler called just after the component has been completely initialized
 - api/link/ui.submenu_relative_config.md - positions a popup window relative to the component it's connected with
 - api/link/ui.submenu_removemissed_config.md - defines how to treat items in case of reloading
+- api/link/ui.submenu_resize_config.md - enables/disables window resizing
 - api/link/ui.submenu_rules_config.md - set of validation rules for the component
 - api/link/ui.submenu_save_config.md - defines URLs for data saving
 - api/link/ui.submenu_scheme_config.md - defines schemes for data processing
@@ -117,6 +118,7 @@ Properties
 - api/link/ui.submenu_ready_config.md
 - api/link/ui.submenu_relative_config.md
 - api/link/ui.submenu_removemissed_config.md
+- api/link/ui.submenu_resize_config.md
 - api/link/ui.submenu_rules_config.md
 - api/link/ui.submenu_save_config.md
 - api/link/ui.submenu_scheme_config.md

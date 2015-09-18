@@ -32,6 +32,7 @@ Properties
 - api/link/ui.datasuggest_padding_config.md - sets paddings of the chart content
 - api/link/ui.datasuggest_position_config.md - sets position of the window relative to the the screen
 - api/link/ui.datasuggest_relative_config.md - positions a popup window relative to the component it's connected with
+- api/link/ui.datasuggest_resize_config.md - enables/disables window resizing
 - api/link/ui.datasuggest_template_config.md - template which will be used to fill parent input from selected record
 - api/link/ui.datasuggest_textvalue_config.md - defines which field from suggest list will be used as text after selecting an option
 - api/link/ui.datasuggest_top_config.md - the top offset of a window
@@ -71,6 +72,7 @@ Properties
 - api/link/ui.datasuggest_padding_config.md
 - api/link/ui.datasuggest_position_config.md
 - api/link/ui.datasuggest_relative_config.md
+- api/link/ui.datasuggest_resize_config.md
 - api/link/ui.datasuggest_template_config.md
 - api/link/ui.datasuggest_textvalue_config.md
 - api/link/ui.datasuggest_top_config.md

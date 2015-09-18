@@ -14,11 +14,11 @@ Events
 - api/link/ui.proto_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.proto_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.proto_onbindrequest_event.md - fires when the component is ready to receive data from the master component
-- api/link/ui.proto_onblur_event.md - 
+- api/link/ui.proto_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.proto_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.proto_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.proto_ondestruct_event.md - occurs when component destroyed
-- api/link/ui.proto_onfocus_event.md - 
+- api/link/ui.proto_onfocus_event.md - fires when a view gets focus
 - api/link/ui.proto_onitemrender_event.md - for each item rendering, occurs only for items with custom templates
 - api/link/ui.proto_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.proto_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )

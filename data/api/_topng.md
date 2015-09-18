@@ -18,3 +18,10 @@ webix.toPNG($$("myChart"));
 @template:	api_method
 @descr:
 
+@related:
+	desktop/export_png.md
+@relatedsample:
+	19_api/07_export_png.html
+@relatedapi:
+	api/_toexcel.md
+

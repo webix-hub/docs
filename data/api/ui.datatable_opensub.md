@@ -2,7 +2,7 @@ openSub
 =============
 
 @short:
-	opens the subrow or the subview for an item with the given id
+	opens subrow or subview for an item with the given id
 
 @params:
 
@@ -12,7 +12,12 @@ openSub
 @example:
 
 $$("mydatatable").openSub(id);
-@example:
+
+
+@relatedapi:
+	api/ui.datatable_closesub.md
+@relatedsample:
+    60_pro/01_datatable/07_sub/03_sub_api.html
 
 @template:	api_method
 @descr:

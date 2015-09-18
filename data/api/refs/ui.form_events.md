@@ -3,6 +3,7 @@ Events
 
 {{api
 - api/link/ui.form_onafterload_event.md - fires after server side loading is complete
+- api/link/ui.form_onafterscroll_event.md - fires when to component is scrolled in any direction
 - api/link/ui.form_onaftervalidation_event.md - fires after data has been validated
 - api/link/ui.form_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/link/ui.form_onbeforevalidate_event.md - called before runing validation
@@ -18,6 +19,7 @@ Events
 
 @index:
 - api/link/ui.form_onafterload_event.md
+- api/link/ui.form_onafterscroll_event.md
 - api/link/ui.form_onaftervalidation_event.md
 - api/link/ui.form_onbeforeload_event.md
 - api/link/ui.form_onbeforevalidate_event.md

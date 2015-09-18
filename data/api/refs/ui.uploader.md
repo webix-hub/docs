@@ -4,7 +4,7 @@ ui.uploader
 
 {{memo A control for uploading multiple files. }}
 
-The component allows tracking the whole progress of individual file upload. Fully customazable. Check [uploader](/) documentation for more detailed description.
+The component allows tracking the whole progress of individual file upload. Fully customazable. Check [uploader](desktop/file_upload.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -82,12 +82,12 @@ The component allows tracking the whole progress of individual file upload. Full
 - api/ui.uploader_onbeforefileadd_event.md - fires the moment you try to add file to uploader
 - api/link/ui.uploader_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.uploader_onbindrequest_event.md - fires when the component is ready to receive data from the master component
-- api/link/ui.uploader_onblur_event.md - 
+- api/link/ui.uploader_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.uploader_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.uploader_ondestruct_event.md - occurs when component destroyed
 - api/ui.uploader_onfileupload_event.md - fires the moment file uploading ends
 - api/ui.uploader_onfileuploaderror_event.md - fires in case of serverside error during uploading
-- api/link/ui.uploader_onfocus_event.md - 
+- api/link/ui.uploader_onfocus_event.md - fires when a view gets focus
 - api/link/ui.uploader_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.uploader_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.uploader_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
@@ -156,6 +156,7 @@ The component allows tracking the whole progress of individual file upload. Full
 - api/link/ui.uploader_$getsize_other.md - returns the current size of the component
 - api/link/ui.uploader_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.uploader_$height_other.md - current height of the view
+- api/ui.uploader_$onuploadcomplete_other.md - completes uploading for flash uploader
 - api/link/ui.uploader_$scope_other.md - scope for resolving event and method names
 - api/link/ui.uploader_$setsize_other.md - sets the component size
 - api/link/ui.uploader_$setvalue_other.md - called each time when component need to set value in related html input

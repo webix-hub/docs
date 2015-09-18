@@ -151,12 +151,12 @@ The component presents a pop-up menu that is displayed when the user clicks the 
 - api/link/ui.contextmenu_onbeforeshow_event.md - fires right after show() method is called for the window (popup) and before the window is shown
 - api/link/ui.contextmenu_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.contextmenu_onbindrequest_event.md - fires when the component is ready to receive data from the master component
-- api/link/ui.contextmenu_onblur_event.md - 
+- api/link/ui.contextmenu_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.contextmenu_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.contextmenu_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.contextmenu_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.contextmenu_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
-- api/link/ui.contextmenu_onfocus_event.md - 
+- api/link/ui.contextmenu_onfocus_event.md - fires when a view gets focus
 - api/link/ui.contextmenu_onhide_event.md - fires when window is hidden
 - api/link/ui.contextmenu_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.contextmenu_onitemdblclick_event.md - fires when a component item was double-clicked
@@ -236,6 +236,7 @@ The component presents a pop-up menu that is displayed when the user clicks the 
 - api/link/ui.contextmenu_ready_config.md - event handler called just after the component has been completely initialized
 - api/link/ui.contextmenu_relative_config.md - positions a popup window relative to the component it's connected with
 - api/link/ui.contextmenu_removemissed_config.md - defines how to treat items in case of reloading
+- api/link/ui.contextmenu_resize_config.md - enables/disables window resizing
 - api/link/ui.contextmenu_rules_config.md - set of validation rules for the component
 - api/link/ui.contextmenu_save_config.md - defines URLs for data saving
 - api/link/ui.contextmenu_scheme_config.md - defines schemes for data processing

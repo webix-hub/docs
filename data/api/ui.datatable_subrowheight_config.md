@@ -18,5 +18,7 @@ webix.ui({
 @template:	api_config
 @descr:
 @related:
-datatable/subrows.md#settingautoheightforsubrows
+	datatable/subrows.md#settingautoheightforsubrows
+@relatedsample:
+	60_pro/01_datatable/07_sub/02_sub_autoheight.html
 

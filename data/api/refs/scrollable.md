@@ -15,6 +15,14 @@ Scrollable
 }}
 
 
+<div class='h2'>Events</div>
+
+
+{{api
+- api/scrollable_onafterscroll_event.md - fires when to component is scrolled in any direction
+}}
+
+
 <div class='h2'>Properties</div>
 
 {{api
@@ -29,4 +37,5 @@ Scrollable
 @index:
 - api/refs/scrollable_methods.md
 - api/refs/scrollable_props.md
+- api/refs/scrollable_events.md
 

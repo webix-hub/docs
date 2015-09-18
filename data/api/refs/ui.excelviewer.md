@@ -28,7 +28,7 @@ dummy stub
 - api/link/ui.excelviewer_clearall.md - removes all items from the component
 - api/link/ui.excelviewer_clearcss.md - removes css class from all items
 - api/link/ui.excelviewer_clearvalidation.md - removes all validation marks from the component
-- api/link/ui.excelviewer_closesub.md - closes the subrow or the subview for an item with the given id
+- api/link/ui.excelviewer_closesub.md - closes subrow or subview for an item with the given id
 - api/link/ui.excelviewer_collectvalues.md - returns an array of unique values of the specified column
 - api/link/ui.excelviewer_columnid.md - returns the id of the column at the specified index
 - api/link/ui.excelviewer_copy.md - copies an item to the same or another object
@@ -80,7 +80,7 @@ dummy stub
 - api/link/ui.excelviewer_getselectedid.md - returns the selected cells
 - api/link/ui.excelviewer_getselecteditem.md - gets an object of the selected data item
 - api/link/ui.excelviewer_getstate.md - returns the current state of the view
-- api/link/ui.excelviewer_getsubview.md - returns the subview of the item with the given id
+- api/link/ui.excelviewer_getsubview.md - returns subview of the item with the given id
 - api/link/ui.excelviewer_gettext.md - returns text value of a cell
 - api/link/ui.excelviewer_gettopparentview.md - returns top parent view
 - api/link/ui.excelviewer_getvisiblecount.md - returns count of visible rows
@@ -106,7 +106,7 @@ dummy stub
 - api/link/ui.excelviewer_moveselection.md - moves selection in the specified direction
 - api/link/ui.excelviewer_movetop.md - moves the specified item to the first position
 - api/link/ui.excelviewer_moveup.md - decreases the item index and moves the item to the new position
-- api/link/ui.excelviewer_opensub.md - opens the subrow or the subview for an item with the given id
+- api/link/ui.excelviewer_opensub.md - opens subrow or subview for an item with the given id
 - api/link/ui.excelviewer_parse.md - loads data to the component from an inline data source
 - api/link/ui.excelviewer_refresh.md - repaints the whole view or a certain item
 - api/link/ui.excelviewer_refreshcolumns.md - refreshes the structure of DataTable
@@ -120,7 +120,7 @@ dummy stub
 - api/link/ui.excelviewer_removespan.md - removes a rowspan/colspan from the datatable
 - api/link/ui.excelviewer_render.md - renders the specified item or the whole component
 - api/link/ui.excelviewer_resize.md - adjusts the view to a new size
-- api/link/ui.excelviewer_resizesubview.md - 
+- api/link/ui.excelviewer_resizesubview.md - adjusts the row's size to the size of a subview
 - api/link/ui.excelviewer_scrollto.md - scrolls the view to the defined position
 - api/link/ui.excelviewer_serialize.md - serializes data to a JSON object
 - api/link/ui.excelviewer_setcolumnwidth.md - sets the width of the specified column
@@ -186,14 +186,14 @@ dummy stub
 - api/link/ui.excelviewer_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.excelviewer_onbeforeunselect_event.md - fired before a cell is unselected
 - api/link/ui.excelviewer_onbindrequest_event.md - fires when the component is ready to receive data from the master component
-- api/link/ui.excelviewer_onblur_event.md - 
+- api/link/ui.excelviewer_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.excelviewer_oncheck_event.md - fires when a checkbox is checked or unchecked in the datatable item
 - api/link/ui.excelviewer_oncolumnresize_event.md - fires when width of column was changed
 - api/link/ui.excelviewer_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.excelviewer_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.excelviewer_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.excelviewer_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
-- api/link/ui.excelviewer_onfocus_event.md - 
+- api/link/ui.excelviewer_onfocus_event.md - fires when a view gets focus
 - api/link/ui.excelviewer_onheaderclick_event.md - occurs after clicking on header
 - api/link/ui.excelviewer_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.excelviewer_onitemdblclick_event.md - fires when a component item was double-clicked
@@ -211,8 +211,8 @@ dummy stub
 - api/link/ui.excelviewer_onselectchange_event.md - fires when selection is changed in a DataTable
 - api/link/ui.excelviewer_onstructureload_event.md - fires when the structure of DataTable (columns configuration) is initialized
 - api/link/ui.excelviewer_onstructureupdate_event.md - fires when structure of datatable was changed ( column added, hidden or reconfigured )
-- api/link/ui.excelviewer_onsubviewcreate_event.md - 
-- api/link/ui.excelviewer_onsubviewrender_event.md - 
+- api/link/ui.excelviewer_onsubviewcreate_event.md - fires after a subview was created
+- api/link/ui.excelviewer_onsubviewrender_event.md - fires each time subview is rendered
 - api/link/ui.excelviewer_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.excelviewer_onswipey_event.md - occurs on a vertical swipe movement
 - api/link/ui.excelviewer_ontimedkeypress_event.md - fires after typing has been finished in the field
@@ -305,9 +305,9 @@ dummy stub
 - api/link/ui.excelviewer_scrolly_config.md - enables/disables vertical scrolling
 - api/link/ui.excelviewer_select_config.md - sets the selection mode in DataTable
 - api/link/ui.excelviewer_spans_config.md - array of span configurations for the datatable
-- api/link/ui.excelviewer_subrowheight_config.md - 
-- api/link/ui.excelviewer_subrow_config.md - 
-- api/link/ui.excelviewer_subview_config.md - 
+- api/link/ui.excelviewer_subrowheight_config.md - automatically adjusts the subrow's height to the size of the text
+- api/link/ui.excelviewer_subrow_config.md - sets a subrow template
+- api/link/ui.excelviewer_subview_config.md - adds a subview configuration into datatable
 - api/ui.excelviewer_toolbar_config.md - 
 - api/link/ui.excelviewer_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.excelviewer_type_config.md - used for configuring presentation of items

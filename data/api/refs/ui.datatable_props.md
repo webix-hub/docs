@@ -78,9 +78,9 @@ Properties
 - api/ui.datatable_scrolly_config.md - enables/disables vertical scrolling
 - api/ui.datatable_select_config.md - sets the selection mode in DataTable
 - api/ui.datatable_spans_config.md - array of span configurations for the datatable
-- api/ui.datatable_subrowheight_config.md - 
-- api/ui.datatable_subrow_config.md - 
-- api/ui.datatable_subview_config.md - 
+- api/ui.datatable_subrowheight_config.md - automatically adjusts the subrow's height to the size of the text
+- api/ui.datatable_subrow_config.md - sets a subrow template
+- api/ui.datatable_subview_config.md - adds a subview configuration into datatable
 - api/link/ui.datatable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/ui.datatable_type_config.md - used for configuring presentation of items
 - api/link/ui.datatable_url_config.md - the URL the component will use to load data after its initialization
