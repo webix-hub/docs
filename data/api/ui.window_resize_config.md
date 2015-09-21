@@ -9,7 +9,7 @@ webix.ui({ view:"window", resize:true });
 
 @template:	api_config
 @relatedsample:
-	samples/10_window/15_resize.html
+	10_window/15_resize.html
 @descr:
 
 Resize mode provides users with a possibility to resize the window in browser.
