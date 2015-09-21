@@ -3,43 +3,43 @@ Version 3.0
 
 <span class="release_date">released on July 22, 2015</span>
 
-## New features
+##New features
 
-- [add] placeholder for multiselect
-- [add] "suggest" property support for suggest-based filters (richSelectFilter, multiSelectFilter, multiComboFilter, datepickerFilter) in datatable, which allows for filter customization
-- [add] serverMultiSelectFilter
-- [add] "onHeaderInit" event for PivotTable
-- [add] menuFilter and batch="item" for menu items in File Manager
-- [add] excelview and excel proxy
-- [add] export to Excell for all data views
-- [add] export to png for all views
-- [add] PDF viewer
-- [add] "tooltip" for Property view
-- [add] subviews and subrows in Datatable
-- [add] "editable" property of ColorPicker
-- [add] .move api to DataCollection and TreeCollection
-- [add] "resize" property for window; bringing a window to the front on click
-- [add] search results clearing on opening folder in File Manager
-- [add] .open support second parameter, open all parents in Tree
-- [add] noselect styling for certain views / view elements
-- [add] datatype for uploader view ( ability to use a custom response format )
-- [add] .find API for all data components
-- [add] dynamic loading for file manager
-- [add] scopes for backbone integration
-- [add] %c as ISO 8601 date format within Date helper
-- [add] onafterscroll event for scrollable views
-- [add] "branch" loading mode for file manager
+- [Excel viewer](desktop/excelviewer.md)
+- [PDF viewer](desktop/pdfviewer.md)
+- [export to Excel](desktop/data_components_export.md) for all data views
+- [export to PNG](desktop/export_png.md) for all views
+- [subviews](datatable/subviews.md) and [subrows](datatable/subrows.md) for Datatable
+- [serverMultiSelectFilter](datatable/filtering.md) for Datatable
+- ability to [resize](api/ui.window_resize_config.md) windows;
+- [any serverside response](desktop/uploader_serverside.md) except for {"status":"error"} defines successful uploading for Uploader
+- [dynamic loading](file_manager/loading_data.md#dynamicloading) in two modes for File Manager
+- [onAfterScroll](api/scrollable_onafterscroll_event.md) event for all scrollable components
 
 ##Updates
 
-- [update] [any serverside response](desktop/uploader_serverside.md) except of {"status":"error"} fires onFileUpload event
-- [update] [webix.require()](api/_require.md) returns promise
-- [update] ignore [refreshFilter()](api/ui.datatable_refreshfilter.md) for not existing filters
-- [update] dependence on Underscore is removed from [BackBone integration](desktop/backbone.md) 
-- [update] data binding for tree-like components
-- [update] ability to use data updates in TreeStore
-- [update] block selection for path elements in File Manager
-- [update] remove layoutConfig from carousel
+- ability to set [datatype](desktop/data_types.md) of serverside response for [Uploader](desktop/file_upload.md)
+- [move API](api/refs/datamove.md) for DataCollection and TreeCollection
+- [placeholder](api/link/ui.multiselect_placeholder_config.md) for Multiselect
+- suggest property for [richSelectFilter, multiSelectFilter, multiComboFilter, datepickerFilter](datatable/filtering.md) filters in datatable, which makes them configurable
+- [tooltip](api/link/ui.property_tooltip_config.md) for Property view
+- [editable](api/link/ui.colorpicker_editable_config.md) property for ColorPicker
+- [find()](api/datastore_find.md) method for all data components
+- [open()](api/link/ui.tree_open.md) method for Tree supports second parameter to allow opening all parent of the item
+- %c as ISO 8601 date format within [Date](api/refs/date.md) module
+- [webix.require()](api/_require.md) returns promise
+- ignore [refreshFilter()](api/ui.datatable_refreshfilter.md) for not existing filters
+- scopes for [Backbone integration](desktop/backbone.md) 
+- dependence on Underscore is removed from [BackBone integration](desktop/backbone.md) 
+- [data binding](desktop/data_binding.md) for tree-like components
+- ability to use data updates in [TreeStore](api/refs/treestore.md)
+- remove layoutConfig from [carousel](desktop/carousel.md)
+- promise as parameter of [onBeforeAjax](desktop/dataprocessor.md#sendingheaderswithdataprocessorbasedrequests) event
+- noselect styling for certain views / view elements
+- onHeaderInit event for [Pivot Table](desktop/pivot.md)
+- [menuFilter and separate menus](file_manager/configuration.md#actionsmenu) for items and clear space in [File Manager](desktop/file_manager.md)
+- search results clearing on opening folder in [File Manager](desktop/file_manager.md)
+- block selection for path elements in File [File Manager](desktop/file_manager.md)
 
 
 ##Fixes
