@@ -37,7 +37,7 @@ move_uploaded_file($file["tmp_name"], $filename); //move files
 
 You must also tune the **script response** to notify you about the result of file uploading, otherwise you won't be able to get notification about upload success or failure.
 
-Thescript ought to **return JSON string** that is later processed by Uploader to change the properties of the corresponding **file object**. 
+The script ought to **return JSON string** that is later processed by Uploader to change the properties of the corresponding **file object**. 
 
 ~~~php
 if(..some condition..)
@@ -49,11 +49,11 @@ else
 Why it's done so? Each file object features **status** that changes during uploading: 
 
 - **client** - when the file was just added to uploader and uploading hasn't started yet. Or when uploading was aborted by user;
-- **transfer** - during uploading until scriot response;
-- **server** - uploading finished, set when script responce is "{status:'server'}";
-- **error** - an error has occurred during uploading, set when script responce is {status:'error'}. 
+- **transfer** - during uploading until script response;
+- **server** - uploading finished, set when script response is "{status:'server'}";
+- **error** - an error has occurred during uploading, set when script response is {status:'error'}. 
 
-The responce is available directly in the **send()** callback that takes it as parameter: 
+The response is available directly in the **send()** callback that takes it as parameter: 
 
 ~~~js
 $$("upl1").send(function(response){
@@ -86,7 +86,7 @@ $$("upl1").send(function(){
 
 ####Multiple Files
 
-In case of **multiple files** uploaded at a time, direct responce won't suit as it contains info about one file.
+In case of **multiple files** uploaded at a time, direct response won't suit as it contains info about one file.
 
 Instead, start a cycle that will get to each file's value: 
 

@@ -84,10 +84,12 @@ The control supports all date and time formats. Besides the days of the month, i
 - api/ui.calendar_onbeforerender_event.md - triggered immediately before rendering of calendar is started.
 - api/ui.calendar_onbeforezoom_event.md - fires before zoom level of the calendar is changed
 - api/link/ui.calendar_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.calendar_onblur_event.md - fires when focus is moved out of the view
 - api/ui.calendar_onchange_event.md - fired when a user changes month, year or time in selector.
 - api/ui.calendar_ondateclear_event.md - fires on clicking the [Clear](desktop/calendar.md#todayandclearbuttons) button
 - api/ui.calendar_ondateselect_event.md - fires when a user selects a date.
 - api/link/ui.calendar_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.calendar_onfocus_event.md - fires when a view gets focus
 - api/link/ui.calendar_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.calendar_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.calendar_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus

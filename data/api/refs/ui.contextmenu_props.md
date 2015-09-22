@@ -29,7 +29,7 @@ Properties
 - api/link/ui.contextmenu_id_config.md - the component ID
 - api/link/ui.contextmenu_layout_config.md - defines x or y orientation of layout
 - api/link/ui.contextmenu_left_config.md - the left offset of the window
-- api/link/ui.contextmenu_master_config.md - the area for which context object in inited
+- api/link/ui.contextmenu_master_config.md - the area for which context object in initialized
 - api/link/ui.contextmenu_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.contextmenu_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.contextmenu_minheight_config.md - sets the minimal height for the view
@@ -50,6 +50,7 @@ Properties
 - api/link/ui.contextmenu_ready_config.md - event handler called just after the component has been completely initialized
 - api/link/ui.contextmenu_relative_config.md - positions a popup window relative to the component it's connected with
 - api/link/ui.contextmenu_removemissed_config.md - defines how to treat items in case of reloading
+- api/link/ui.contextmenu_resize_config.md - enables/disables window resizing
 - api/link/ui.contextmenu_rules_config.md - set of validation rules for the component
 - api/link/ui.contextmenu_save_config.md - defines URLs for data saving
 - api/link/ui.contextmenu_scheme_config.md - defines schemes for data processing
@@ -119,6 +120,7 @@ Properties
 - api/link/ui.contextmenu_ready_config.md
 - api/link/ui.contextmenu_relative_config.md
 - api/link/ui.contextmenu_removemissed_config.md
+- api/link/ui.contextmenu_resize_config.md
 - api/link/ui.contextmenu_rules_config.md
 - api/link/ui.contextmenu_save_config.md
 - api/link/ui.contextmenu_scheme_config.md

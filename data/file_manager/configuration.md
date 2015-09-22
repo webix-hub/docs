@@ -397,12 +397,14 @@ By default, actions menu contains the following data array:
 		id: "copy", 
         method: "markCopy",  
         icon: "copy", 
+        batch:"item",
         value: webix.i18n.filemanager.copy // "Copy"
 	},
 	{
 		id: "cut", 
         method: "markCut", 
         icon: "cut", 
+        batch:"item",
         value: webix.i18n.filemanager.cut // "Cut"
 	},
 	{
@@ -419,15 +421,17 @@ By default, actions menu contains the following data array:
         value: webix.i18n.filemanager.create // "Create Folder"
 	},
 	{
-		id: "deleteFile", 
+		id: "remove", 
         method: "deleteFile", 
         icon: "times", 
+        batch:"item",
         value: webix.i18n.filemanager.delete // "Delete"
 	},
 	{
 		id: "edit", 
         method: "editFile",  
         icon: "edit", 
+        batch:"item",
         value: webix.i18n.filemanager.rename // "Rename"
 	},
 	{
@@ -444,6 +448,7 @@ The properties of actions are the following:
 - id - {string} the id of an action
 - method - {string} the name of the method that is used to implement the action
 - icon - {string} an icon from the Font Awesome collection used for the action
+- batch - {string} group that menu item belongs to. If *"item"*, the item will be seen only for data items not empty space;
 - value - {string} the action title 
 
 You can reload data using the following approach:
@@ -476,4 +481,23 @@ To remove an existing action, you can call the api/link/ui.proto_remove.md metho
 ~~~js
 actions.remove("upload");
 ~~~
+
+It is possible to customize actions menu with the help of **menuFilter** function that can filter menu items before showing the menu on page.
+
+~~~js
+view:"filemanager",
+menuFilter:function(obj){
+	//obj - menu item obj
+    
+    //dataId - id of clicked data item
+    var context = this.getContext();
+    var dataId = context.id;
+    
+    if(..some condition ..)
+    	return false;
+    return true;    
+}
+~~~
+
+The function should return *true* to show the item, *false* to hide it.
 

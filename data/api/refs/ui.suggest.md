@@ -59,7 +59,9 @@ Can be used standalone or as editor for other components. Check [suggest](deskto
 - api/link/ui.suggest_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.suggest_onbeforeshow_event.md - fires right after show() method is called for the window (popup) and before the window is shown
 - api/link/ui.suggest_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.suggest_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.suggest_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.suggest_onfocus_event.md - fires when a view gets focus
 - api/link/ui.suggest_onhide_event.md - fires when window is hidden
 - api/link/ui.suggest_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.suggest_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
@@ -110,6 +112,7 @@ Can be used standalone or as editor for other components. Check [suggest](deskto
 - api/link/ui.suggest_padding_config.md - sets paddings of the chart content
 - api/link/ui.suggest_position_config.md - sets position of the window relative to the the screen
 - api/link/ui.suggest_relative_config.md - positions a popup window relative to the component it's connected with
+- api/link/ui.suggest_resize_config.md - enables/disables window resizing
 - api/ui.suggest_template_config.md - template which will be used to fill parent input from selected record
 - api/ui.suggest_textvalue_config.md - defines which field from suggest list will be used as text after selecting an option
 - api/link/ui.suggest_top_config.md - the top offset of a window

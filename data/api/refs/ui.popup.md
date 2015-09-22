@@ -70,7 +70,9 @@ The window can contain any content, be modal or modeless. The main use case - di
 - api/link/ui.popup_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.popup_onbeforeshow_event.md - fires right after show() method is called for the window (popup) and before the window is shown
 - api/link/ui.popup_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.popup_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.popup_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.popup_onfocus_event.md - fires when a view gets focus
 - api/link/ui.popup_onhide_event.md - fires when window is hidden
 - api/link/ui.popup_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.popup_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
@@ -115,6 +117,7 @@ The window can contain any content, be modal or modeless. The main use case - di
 - api/link/ui.popup_padding_config.md - sets paddings of the chart content
 - api/link/ui.popup_position_config.md - sets position of the window relative to the the screen
 - api/link/ui.popup_relative_config.md - positions a popup window relative to the component it's connected with
+- api/link/ui.popup_resize_config.md - enables/disables window resizing
 - api/link/ui.popup_top_config.md - the top offset of a window
 - api/link/ui.popup_width_config.md - sets the width of the component
 - api/link/ui.popup_zindex_config.md - stack order of the component

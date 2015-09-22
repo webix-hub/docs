@@ -9,7 +9,7 @@ Data can be loaded to non-hierarchical components in portions:
     - user switches to the new **page** within the component (in case [pager](desktop/paging.md) is defined);
     - api/dataloader_loadnext.md method is applied;
     
-Currently dynamic loading for linear data is implemented for the following components: [datatable](datatable/index.md) and [dataview](desktop/dataview.md).
+Currently dynamic loading for linear data is implemented for the following components: datatable/index.md, desktop/treetable.md and desktop/dataview.md.
 
 ##Configuring Dynamic Loading Behavior
 

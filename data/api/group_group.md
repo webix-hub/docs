@@ -29,7 +29,7 @@ myview.group({
 	api/group_ungroup.md
 	api/dataloader_scheme_config.md
 @relatedsample:
-	08_chart/03_group/01_group.html
+	08_chart/03_api/01_group.html
 @descr:
 {{note
 The method is called for each data item.

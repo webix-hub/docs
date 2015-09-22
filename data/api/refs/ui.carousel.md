@@ -73,7 +73,9 @@ The control supports any content inside of it. The content blocks can be arrange
 {{api
 - api/link/ui.carousel_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.carousel_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.carousel_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.carousel_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.carousel_onfocus_event.md - fires when a view gets focus
 - api/link/ui.carousel_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.carousel_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/ui.carousel_onshow_event.md - fires when a new view is shown in carousel

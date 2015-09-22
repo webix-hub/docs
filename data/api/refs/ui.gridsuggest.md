@@ -63,7 +63,9 @@ as well as component [editor](api/refs/editors.md).
 - api/link/ui.gridsuggest_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.gridsuggest_onbeforeshow_event.md - fires right after show() method is called for the window (popup) and before the window is shown
 - api/link/ui.gridsuggest_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.gridsuggest_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.gridsuggest_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.gridsuggest_onfocus_event.md - fires when a view gets focus
 - api/link/ui.gridsuggest_onhide_event.md - fires when window is hidden
 - api/link/ui.gridsuggest_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.gridsuggest_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
@@ -114,6 +116,7 @@ as well as component [editor](api/refs/editors.md).
 - api/link/ui.gridsuggest_padding_config.md - sets paddings of the chart content
 - api/link/ui.gridsuggest_position_config.md - sets position of the window relative to the the screen
 - api/link/ui.gridsuggest_relative_config.md - positions a popup window relative to the component it's connected with
+- api/link/ui.gridsuggest_resize_config.md - enables/disables window resizing
 - api/link/ui.gridsuggest_template_config.md - template which will be used to fill parent input from selected record
 - api/link/ui.gridsuggest_textvalue_config.md - defines which field from suggest list will be used as text after selecting an option
 - api/link/ui.gridsuggest_top_config.md - the top offset of a window

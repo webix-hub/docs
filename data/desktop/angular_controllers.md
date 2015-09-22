@@ -6,7 +6,7 @@ Since Angular controllers are heart of any Angular-based application, Webix-Angu
 As in Angular, controller directives are included into the app as an attribute of any tag. 
 
 ~~~html
-<html ng-app="webixApp"> <!--Angular App inited-->
+<html ng-app="webixApp"> <!--Angular App initialized-->
  <body ng-controller="webixTestController"> <!--Angular controller-->
   <div webix-ui view="datatable" webix-data="records" select="row"> <!--Webix App-->
   	...<!--datatable config-->

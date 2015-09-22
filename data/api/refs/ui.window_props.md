@@ -28,6 +28,7 @@ Properties
 - api/ui.window_padding_config.md - sets paddings of the chart content
 - api/ui.window_position_config.md - sets position of the window relative to the the screen
 - api/ui.window_relative_config.md - positions a popup window relative to the component it's connected with
+- api/ui.window_resize_config.md - enables/disables window resizing
 - api/ui.window_top_config.md - the top offset of a window
 - api/link/ui.window_width_config.md - sets the width of the component
 - api/link/ui.window_zindex_config.md - stack order of the component
@@ -60,6 +61,7 @@ Properties
 - api/ui.window_padding_config.md
 - api/ui.window_position_config.md
 - api/ui.window_relative_config.md
+- api/ui.window_resize_config.md
 - api/ui.window_top_config.md
 - api/link/ui.window_width_config.md
 - api/link/ui.window_zindex_config.md

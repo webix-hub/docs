@@ -18,7 +18,7 @@ Methods
 - api/link/ui.datatable_clearcss.md - removes css class from all items
 - api/ui.datatable_clearselection.md - clears selection
 - api/link/ui.datatable_clearvalidation.md - removes all validation marks from the component
-- api/ui.datatable_closesub.md - 
+- api/ui.datatable_closesub.md - closes subrow or subview for an item with the given id
 - api/ui.datatable_collectvalues.md - returns an array of unique values of the specified column
 - api/ui.datatable_columnid.md - returns the id of the column at the specified index
 - api/link/ui.datatable_copy.md - copies an item to the same or another object
@@ -70,6 +70,7 @@ Methods
 - api/ui.datatable_getselectedid.md - returns the selected cells
 - api/ui.datatable_getselecteditem.md - gets an object of the selected data item
 - api/link/ui.datatable_getstate.md - returns the current state of the view
+- api/ui.datatable_getsubview.md - returns subview of the item with the given id
 - api/ui.datatable_gettext.md - returns text value of a cell
 - api/link/ui.datatable_gettopparentview.md - returns top parent view
 - api/ui.datatable_getvisiblecount.md - returns count of visible rows
@@ -97,7 +98,7 @@ Methods
 - api/link/ui.datatable_moveselection.md - moves selection in the specified direction
 - api/link/ui.datatable_movetop.md - moves the specified item to the first position
 - api/link/ui.datatable_moveup.md - decreases the item index and moves the item to the new position
-- api/ui.datatable_opensub.md - 
+- api/ui.datatable_opensub.md - opens subrow or subview for an item with the given id
 - api/link/ui.datatable_parse.md - loads data to the component from an inline data source
 - api/link/ui.datatable_refresh.md - repaints the whole view or a certain item
 - api/ui.datatable_refreshcolumns.md - refreshes the structure of DataTable
@@ -111,6 +112,7 @@ Methods
 - api/ui.datatable_removespan.md - removes a rowspan/colspan from the datatable
 - api/ui.datatable_render.md - renders the specified item or the whole component
 - api/link/ui.datatable_resize.md - adjusts the view to a new size
+- api/ui.datatable_resizesubview.md - adjusts the row's size to the size of a subview
 - api/ui.datatable_scrollto.md - scrolls the view to the defined position
 - api/ui.datatable_select.md - selects the specified element
 - api/ui.datatable_selectrange.md - selects the specified range of elements
@@ -206,6 +208,7 @@ Methods
 - api/ui.datatable_getselectedid.md
 - api/ui.datatable_getselecteditem.md
 - api/link/ui.datatable_getstate.md
+- api/ui.datatable_getsubview.md
 - api/ui.datatable_gettext.md
 - api/link/ui.datatable_gettopparentview.md
 - api/ui.datatable_getvisiblecount.md
@@ -247,6 +250,7 @@ Methods
 - api/ui.datatable_removespan.md
 - api/ui.datatable_render.md
 - api/link/ui.datatable_resize.md
+- api/ui.datatable_resizesubview.md
 - api/ui.datatable_scrollto.md
 - api/ui.datatable_select.md
 - api/ui.datatable_selectrange.md

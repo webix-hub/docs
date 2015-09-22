@@ -5,7 +5,7 @@ Version 2.5
 
 ##New features
 
-- Support of Microsoft Edge, default browser of the upcoming Windows 10
+- Support of Microsoft Edge, default browser of Windows 10
 - Ability to [disable time periods](desktop/calendar.md#disablingdatesandtimeslotsincalendar) for Calendar widget
 - Ability to populate Form, Toolbar and Property sheet with [complex data](api/values_setvalues.md#complexdata)
 - [Swimlanes in Kanban widget](kanban__configuration.html#creatingswimlanes) to visualize separate work flows

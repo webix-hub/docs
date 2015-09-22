@@ -8,10 +8,9 @@ tooltip
 @type: object
 @example:
 webix.ui({
-  view:"dataview",
-  tooltip:{
-  	template:"Rating: #rating#<br/>Votes: #votes#"
-  }
+     view:"dataview",
+     tooltip:"Rating: #rating#<br/> Votes: #votes#",
+     ...
 });
 
 @template:	api_config

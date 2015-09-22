@@ -74,7 +74,7 @@ webix.ui({
 
 ###Sizing Limits
 
-During dynamic [resizing](desktop/resizing.md) or when the component is inited in [layout](desktop/layout.md) with at least one [resizer line](desktop/layout.md#resizer), minimum and maximum dimensions are very helpful. They are set with the help of the following properties:
+During dynamic [resizing](desktop/resizing.md) or when the component is initialized in [layout](desktop/layout.md) with at least one [resizer line](desktop/layout.md#resizer), minimum and maximum dimensions are very helpful. They are set with the help of the following properties:
 
 - **minWidth** and **minHeight** (number) - on resizing the component cannot takes less space than specified. If more space is available, the component will take it. 
 

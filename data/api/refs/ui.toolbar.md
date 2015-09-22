@@ -86,6 +86,7 @@ The component can contain various elements inside it (actually, the same element
 
 {{api
 - api/link/ui.toolbar_onafterload_event.md - fires after server side loading is complete
+- api/link/ui.toolbar_onafterscroll_event.md - fires when to component is scrolled in any direction
 - api/link/ui.toolbar_onaftervalidation_event.md - fires after data has been validated
 - api/link/ui.toolbar_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/link/ui.toolbar_onbeforevalidate_event.md - called before runing validation

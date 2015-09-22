@@ -16,7 +16,7 @@ The button can as well be made [invisible](desktop/apionly_uploader.md) and file
 Uploader is a control that looks like a standard [button](desktop/button.md) yet triggers an upload window on its clicking. 
 
 Uploader is normally initialized together with the UI component to display values of pre-uploaded and uploaded files. Such component (it may be [list](desktop/list.md) or [template](desktop/template.md), etc.) is called 
-**uploader body** and is inited separately. To link it to the uploader, specify its **ID** as value of uploader **link** property.  
+**uploader body** and is initialized separately. To link it to the uploader, specify its **ID** as value of uploader **link** property.  
 
 ~~~js
 webix.ui({
@@ -27,7 +27,8 @@ webix.ui({
 			id: "uploader_1",
 			value:"Upload file",
     		link:"mylist",
-        	upload:"php/upload.php"
+        	upload:"php/upload.php",
+            datatype:"json"
    		}, 
    		{
 			view:"list",  id:"mylist", type:"uploader",
@@ -45,7 +46,8 @@ webix.ui({
 - **upload** (path) - path to a script file that will handle uploading;
 - **multiple** (boolean) - *true* by default. Set to *false*, it enables removing the previously added file and replacing it with a new one so that you can upload only one file at a time;
 - **autosend** (boolean) - *true* by default. Set to *false*, it cancels on-the-go file processing. The files are added to the uploader body only. They can be sent to server by calling the 
-[send()](api/ui.uploader_send.md) method later on. 
+[send()](api/ui.uploader_send.md) method later on;
+- **datatype** (string) - [type](desktop/data_types.md) of serverside response. Optional, *json* by default.
 
 Read more about **[uploader configuration](desktop/configuring_uploader.md)** and **[server script](desktop/uploader_serverside.md)**. 
 

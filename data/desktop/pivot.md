@@ -183,7 +183,7 @@ If you load the data during component init, specify the path to this file/script
 
 
 
-If you load data after the component has been inited (e.g. on some event), use the api/link/dataloader_load.md function:
+If you load data after the component has been initialized (e.g. on some event), use the api/link/dataloader_load.md function:
 
 ~~~js
 $$("pivot").load("../load.php");

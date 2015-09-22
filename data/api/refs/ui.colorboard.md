@@ -57,7 +57,9 @@ The component presents a div that contains a set of color swatches. Used as a pa
 - api/link/ui.colorboard_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/ui.colorboard_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.colorboard_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.colorboard_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.colorboard_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.colorboard_onfocus_event.md - fires when a view gets focus
 - api/link/ui.colorboard_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.colorboard_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.colorboard_onswipex_event.md - occurs on a horizontal swipe movement

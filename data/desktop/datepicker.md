@@ -26,7 +26,7 @@ Datepicker is used in a combination with ui-related [calendar](desktop/calendar.
 	- **labelAlign** (string) - label alignment towards its container. Possible values are "left" and "right".  In any way, it's placed left to the control; 
     - **labelWidth** (number) - width of the label container; 
 - **value** (string, obj) - initial value to display in the control input field;   
-- **placeholder** (string) - defines placeholder for datepicker input. The control should be inited without an initial value;   
+- **placeholder** (string) - defines placeholder for datepicker input. The control should be initialized without an initial value;   
 - **timepicker** (boolean) - enables a clock for time selection (*false* by default);
 - **date** (function) - new Date() constructor to define the initial date of a calendar. If used without parameters, shows current date;
 - **stringResult** (boolean) - sets the data type of value returned by **getValue()/get Values()** methods. If true, it returns date as string. By default the property is *false* and the method returns date object;

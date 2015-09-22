@@ -248,7 +248,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 08_chart/03_group/01_group.html}}
+{{sample 08_chart/03_api/01_group.html}}
 
 ##$sort key
 

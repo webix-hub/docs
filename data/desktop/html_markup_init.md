@@ -285,7 +285,7 @@ $$("win1").show();
 
 ####Menu and submenu peculiarities
 
-If [menu](desktop/menu.md) is initialized from markup it's vital to remember that its submenus should be as well inited the same way as windows: 
+If [menu](desktop/menu.md) is initialized from markup it's vital to remember that its submenus should be as well initialized the same way as windows: 
 
 ~~~html
 <div data-view="submenu" data-id="submenu1">

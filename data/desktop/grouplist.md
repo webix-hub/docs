@@ -143,6 +143,8 @@ Hierarchical dataset state
 - [Selection](desktop/selection.md)
 - [Paging](desktop/paging.md)
 - [Adding Active Elements to Grouplist Items](desktop/active_content.md)
+- desktop/export_png.md
+- desktop/data_components_export.md
 
 {{note
 Note that there's no built-in possibility to edit data with grouplist. You should create a prototype editlist object beforehand.
@@ -159,3 +161,4 @@ Note that there's no built-in possibility to edit data with grouplist. You shoul
 - [Unitlist](desktop/unitlist.md)
 - [X-list](desktop/xlist.md)
 - [Grouplist CSS Image Map](desktop/grouplist_css.md)
+

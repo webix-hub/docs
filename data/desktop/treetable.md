@@ -42,7 +42,7 @@ Notation">JSON</acronym> [data formats](desktop/data_types.md). IDs of the coulm
 
 Common tasks here include the following and coincide with those of the [datatable](datatable/index.md) and [tree](datatree/index.md): 
 
-1 . [Data Loading](desktop/data_loading.md) including [Dynamic Loading](datatree/dynamic_loading.md) of large datasets inportions;
+1 . [Data Loading](desktop/data_loading.md) including [Dynamic Loading](datatree/dynamic_loading.md) of large datasets in portions by scrolling and branches opening;
 
 {{sample 15_datatable/30_treetable/02_dyn_loading.html}}
 
@@ -66,9 +66,9 @@ Common tasks here include the following and coincide with those of the [datatabl
 
 {{sample 15_datatable/32_grouping/03_aggregation.html}}
 
-7 . [Data Export to Excel and PDF](datatable/export.md)
+7 . [Data Export to Excel and PNG](datatable/export.md)
 
-{{sample 15_datatable/30_treetable/12_export.html }}
+{{sample 15_datatable/10_export/01_excel.html }}
 
 8 . [Copy-Paste Operations](datatable/copying.md)
 

@@ -45,7 +45,7 @@ Another possibility to create a component with a similar functionality is [attac
 - **value** (string, number) 
 	- within **options** array it sets text value for selectable items;
  	- within richselect constructor it defines the initially selected item of the control(**ID** in case of a long form, **text value** in case of a short form of initialization);
-- **placeholder** (string) - defines placeholder for richselect input. The control should be inited without an initial value;       
+- **placeholder** (string) - defines placeholder for richselect input. The control should be initialized without an initial value;       
 - **label** (string) - text label of a control. It can be customized by:
 	- **labelAlign** (string) - label alignment towards its container. Possible values are "left" and "right".  In any way, it's placed left to the control; 
     - **labelWidth** (number) - width of the label container; 

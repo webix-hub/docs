@@ -70,7 +70,9 @@ The window consists of the header and body, can be modal or modaless. The window
 - api/link/ui.window_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/ui.window_onbeforeshow_event.md - fires right after show() method is called for the window (popup) and before the window is shown
 - api/link/ui.window_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.window_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.window_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.window_onfocus_event.md - fires when a view gets focus
 - api/ui.window_onhide_event.md - fires when window is hidden
 - api/link/ui.window_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.window_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
@@ -116,6 +118,7 @@ The window consists of the header and body, can be modal or modaless. The window
 - api/ui.window_padding_config.md - sets paddings of the chart content
 - api/ui.window_position_config.md - sets position of the window relative to the the screen
 - api/ui.window_relative_config.md - positions a popup window relative to the component it's connected with
+- api/ui.window_resize_config.md - enables/disables window resizing
 - api/ui.window_top_config.md - the top offset of a window
 - api/link/ui.window_width_config.md - sets the width of the component
 - api/link/ui.window_zindex_config.md - stack order of the component

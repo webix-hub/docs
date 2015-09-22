@@ -85,7 +85,7 @@ $$("mychart").group({
 });
 ~~~
 
-{{sample 08_chart/03_group/01_group.html}}
+{{sample 08_chart/03_api/01_group.html}}
 
 By the way, you can omit the functor yet set the way grouping criterion will be presented: 
 

@@ -220,12 +220,14 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.treetable_onbeforeunselect_event.md - fired before a cell is unselected
 - api/link/ui.treetable_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.treetable_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.treetable_oncheck_event.md - fires when a checkbox is checked or unchecked in the datatable item
 - api/link/ui.treetable_oncolumnresize_event.md - fires when width of column was changed
 - api/link/ui.treetable_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.treetable_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.treetable_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.treetable_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
+- api/link/ui.treetable_onfocus_event.md - fires when a view gets focus
 - api/link/ui.treetable_onheaderclick_event.md - occurs after clicking on header
 - api/link/ui.treetable_onitemcheck_event.md - fires when you check an item in tree and treetable
 - api/link/ui.treetable_onitemclick_event.md - fires when a component item was clicked
@@ -244,7 +246,8 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_onselectchange_event.md - fires when selection is changed in a DataTable
 - api/link/ui.treetable_onstructureload_event.md - fires when the structure of DataTable (columns configuration) is initialized
 - api/link/ui.treetable_onstructureupdate_event.md - fires when structure of datatable was changed ( column added, hidden or reconfigured )
-- api/ui.treetable_onsubviewrender_event.md - 
+- api/link/ui.treetable_onsubviewcreate_event.md - fires after a subview was created
+- api/link/ui.treetable_onsubviewrender_event.md - fires each time subview is rendered
 - api/link/ui.treetable_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.treetable_onswipey_event.md - occurs on a vertical swipe movement
 - api/link/ui.treetable_ontimedkeypress_event.md - fires after typing has been finished in the field
@@ -336,9 +339,9 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_scrolly_config.md - enables/disables vertical scrolling
 - api/link/ui.treetable_select_config.md - sets the selection mode in DataTable
 - api/link/ui.treetable_spans_config.md - array of span configurations for the datatable
-- api/link/ui.treetable_subrowheight_config.md - 
-- api/link/ui.treetable_subrow_config.md - 
-- api/link/ui.treetable_subview_config.md - 
+- api/link/ui.treetable_subrowheight_config.md - automatically adjusts the subrow's height to the size of the text
+- api/link/ui.treetable_subrow_config.md - sets a subrow template
+- api/link/ui.treetable_subview_config.md - adds a subview configuration into datatable
 - api/link/ui.treetable_threestate_config.md - defines three-state checkboxes for the tree. Flase by default.
 - api/link/ui.treetable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.treetable_type_config.md - used for configuring presentation of items

@@ -16,6 +16,7 @@ Properties
 - api/link/ui.scrollview_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.scrollview_minheight_config.md - sets the minimal height for the view
 - api/link/ui.scrollview_minwidth_config.md - sets the minimal width for the view
+- api/link/ui.scrollview_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.scrollview_scroll_config.md - enables/disables the scroll bar
 - api/link/ui.scrollview_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.scrollview_width_config.md - sets the width of the component
@@ -36,6 +37,7 @@ Properties
 - api/link/ui.scrollview_maxwidth_config.md
 - api/link/ui.scrollview_minheight_config.md
 - api/link/ui.scrollview_minwidth_config.md
+- api/link/ui.scrollview_on_config.md
 - api/link/ui.scrollview_scroll_config.md
 - api/link/ui.scrollview_scrollspeed_config.md
 - api/link/ui.scrollview_width_config.md
