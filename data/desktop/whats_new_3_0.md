@@ -1,7 +1,7 @@
 Version 3.0
 =====================
 
-<span class="release_date">released on July 22, 2015</span>
+<span class="release_date">released on September 22, 2015</span>
 
 ##New features
 

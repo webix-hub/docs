@@ -1,13 +1,16 @@
 Migration to latest Webix version
 =================================
 
-Webix 2.X -> 3.0
+Webix 2.x -> 3.0
 ----------------
 
 
 ###Strict JSON parsing
 
-Starting from the version 3.0 strict JSON parsing rules are applied. It means that Webix won't process invalid JSON data. 
+Starting from the version 3.0 strict JSON parsing rules are applied. It means that Webix won't process invalid JSON data.
+
+###Export API
+Version 3.0 includes new export API. Old export functionality of datatable is deprecated and will be fully removed in version 3.2
 
 ###Serverside response for Uploader
 
