@@ -2,6 +2,9 @@ type
 =============
 
 @short: type of calendar view
+
+@values:
+	- time	switches calendar to time view	
 	
 
 @type: string
@@ -14,6 +17,3 @@ webix.ui({
 
 @template:	api_config
 @descr:
-
-
-Currently support only one value "time", which converts calendar to the time picker

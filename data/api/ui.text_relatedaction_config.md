@@ -8,7 +8,6 @@ relatedAction
 
 - show		if true, shows related view
 - enable	if true, enabled related view
-- false		cancels actions with related view
 	
 
 @type: string
