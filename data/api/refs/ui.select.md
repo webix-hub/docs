@@ -112,7 +112,7 @@ The component can be populated with data from the server side or a file: each it
 - api/link/ui.select_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.select_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.select_label_config.md - the text label of the control
-- api/link/ui.select_labelposition_config.md - positions label above the control
+- api/link/ui.select_labelposition_config.md - positions label in relation the control
 - api/link/ui.select_labelwidth_config.md - the width of the label
 - api/link/ui.select_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.select_maxwidth_config.md - sets the maximum width for the view

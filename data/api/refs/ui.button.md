@@ -106,7 +106,7 @@ The control has a collection of preset looks and can be used both as a stand-alo
 - api/ui.button_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/ui.button_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/ui.button_label_config.md - the text label of the control
-- api/ui.button_labelposition_config.md - positions label above the control
+- api/ui.button_labelposition_config.md - positions label in relation the control
 - api/link/ui.button_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.button_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.button_minheight_config.md - sets the minimal height for the view

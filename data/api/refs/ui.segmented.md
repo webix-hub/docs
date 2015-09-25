@@ -118,7 +118,7 @@ The component can be used to build a multi-item menu for navigating between view
 - api/link/ui.segmented_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.segmented_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.segmented_label_config.md - the text label of the control
-- api/link/ui.segmented_labelposition_config.md - positions label above the control
+- api/link/ui.segmented_labelposition_config.md - positions label in relation the control
 - api/link/ui.segmented_labelwidth_config.md - the width of the label
 - api/link/ui.segmented_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.segmented_maxwidth_config.md - sets the maximum width for the view

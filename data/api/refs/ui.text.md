@@ -112,7 +112,7 @@ A label inside the control differs it from the input component. Check [text](des
 - api/link/ui.text_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/ui.text_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.text_label_config.md - the text label of the control
-- api/link/ui.text_labelposition_config.md - positions label above the control
+- api/link/ui.text_labelposition_config.md - positions label in relation the control
 - api/ui.text_labelwidth_config.md - the width of the label
 - api/link/ui.text_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.text_maxwidth_config.md - sets the maximum width for the view

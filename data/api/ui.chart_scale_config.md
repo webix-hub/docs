@@ -18,7 +18,6 @@ webix.ui({
 @values:
 
 - logarithmic	sets a logarithmic scale
-- linear		sets a linear scale
-- false (default)	no scale			
+- linear		sets a linear scale		
 
 

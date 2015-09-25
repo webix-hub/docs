@@ -22,7 +22,7 @@ Properties
 - api/link/ui.uploader_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.uploader_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.uploader_label_config.md - the text label of the control
-- api/link/ui.uploader_labelposition_config.md - positions label above the control
+- api/link/ui.uploader_labelposition_config.md - positions label in relation the control
 - api/ui.uploader_link_config.md - sets the component to display values of the files chosen for upload;
 - api/link/ui.uploader_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.uploader_maxwidth_config.md - sets the maximum width for the view

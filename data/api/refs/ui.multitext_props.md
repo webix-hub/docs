@@ -25,7 +25,7 @@ Properties
 - api/link/ui.multitext_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.multitext_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.multitext_label_config.md - the text label of the control
-- api/link/ui.multitext_labelposition_config.md - positions label above the control
+- api/link/ui.multitext_labelposition_config.md - positions label in relation the control
 - api/link/ui.multitext_labelwidth_config.md - the width of the label
 - api/link/ui.multitext_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.multitext_maxwidth_config.md - sets the maximum width for the view

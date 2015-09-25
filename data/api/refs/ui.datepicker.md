@@ -104,7 +104,7 @@ ui.datepicker
 - api/link/ui.datepicker_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.datepicker_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.datepicker_disabled_config.md - indicates whether an item is enabled or not
-- api/ui.datepicker_editable_config.md - allows making datepicker editable, false by default
+- api/ui.datepicker_editable_config.md - allows entering characters in datepicker input, false by default
 - api/ui.datepicker_format_config.md - sets date format in the control
 - api/link/ui.datepicker_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.datepicker_height_config.md - sets the height of the component
@@ -118,7 +118,7 @@ ui.datepicker
 - api/link/ui.datepicker_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.datepicker_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.datepicker_label_config.md - the text label of the control
-- api/link/ui.datepicker_labelposition_config.md - positions label above the control
+- api/link/ui.datepicker_labelposition_config.md - positions label in relation the control
 - api/link/ui.datepicker_labelwidth_config.md - the width of the label
 - api/link/ui.datepicker_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.datepicker_maxwidth_config.md - sets the maximum width for the view
