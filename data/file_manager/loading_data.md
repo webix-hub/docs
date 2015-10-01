@@ -172,7 +172,7 @@ The whole tree structure (folders) is loaded initially. The files of a particula
 You should add the **webix_files** attribute for the folders that have files which should be loaded on demand.
 
 To enable dynamic loading, you need to define the "files" attribute of the "handlers" property 
-in the FileManager configuration and providea the url of a server-side script that will load data when some folder will be opened:
+in the FileManager configuration and provide the url of a server-side script that will load data when some folder will be opened:
 
 ~~~js
 webix.ui({
@@ -234,7 +234,7 @@ When files should be dynamically loaded, FileManager sends a request to the scri
 The request contains several parameters:
 
 - action - the name of the dynamic loading mode
-- source - the id of the folder thatr requests for the data
+- source - the id of the folder that requests for the data
 
 For example, if we open the folder with the "documents" id to view its content, the request contains the parameters below:
 

@@ -50,7 +50,7 @@ $$("pdfviewer").nextPage();
 
 ####prevPage()
 
-renders the page that preceeds the viewed one
+renders the page that precedes the viewed one
 
 ~~~js
 $$("pdfviewer").prevPage();
