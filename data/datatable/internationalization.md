@@ -7,7 +7,7 @@ The **standard package** of the Webix library includes 9 locales, namely:
 - **'en-US'** - North American (used by default);
 - **'ru-RU'** - Russian;
 - **'fr-FR'** - French;
-- **'ja-JP'** - Japanise;
+- **'ja-JP'** - Japanese;
 - **'be-BY'** - Belorussian;
 - **'de-DE'** - German;
 - **'es-ES'** - Spanish;

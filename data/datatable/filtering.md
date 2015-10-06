@@ -1,6 +1,6 @@
  DataTable Filtering
 ===================
-The library provides ability to <a href="http://webix.com/widget/datatable/" title="filter in datatable widget">filter data</a> on client-side by one or several criteria using for this built-in or customly created filters.
+The library provides ability to <a href="http://webix.com/widget/datatable/" title="filter in datatable widget">filter data</a> on client-side by one or several criteria using for this built-in or custom-created filters.
 
 
 Filters in the header
@@ -147,7 +147,7 @@ Available in **Webix Pro** edition only.
 
 <img src="desktop/multiselect_filter.png"/>
 
-Retrieves values that contain mask defined through a popup list of possible values while **miltiple values** can be selected at once. 
+Retrieves values that contain mask defined through a popup list of possible values while **multiple values** can be selected at once. 
 Based on Webix [multiselect](desktop/multiselect.md) control.
 
 ~~~js

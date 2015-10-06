@@ -114,7 +114,7 @@ For more available configuration, read other articles in this documentation, suc
 
 Loading data
 ------------
-There are various ways to load data into DataTable (read about them in chapter [Data loading](datatable/loading_data.md)).<br> We will use the easiest of the ways and specify data directly in the constuctor with the help of the
+There are various ways to load data into DataTable (read about them in chapter [Data loading](datatable/loading_data.md)).<br> We will use the easiest of the ways and specify data directly in the constructor with the help of the
 [data](api/link/ui.datatable_data_config.md) parameter:
 
 ~~~js

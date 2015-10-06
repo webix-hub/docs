@@ -58,9 +58,9 @@ grid = new webix.ui({
 By default, datatable columns feature **fixed size** of **100px**. To change it, you should either:
 
 - use **width** while configuring the column to set width to a column individually, or
-- use **columnWidth** while configuring the datatable to set common width for all the columns. Like default common width, it can be overriden by individual *width* value, or
-- use **minWidth** property in the column configuration to define minimal width for it. If there's more space initially or after resizing, column width will br increased, but it can never be less than *minWidth* value, or
-- use **minColumnWidth** property in datatable configuration to set common minimal width for all columns. It can be overriden by inidividual *minWidth* value.
+- use **columnWidth** while configuring the datatable to set common width for all the columns. Like default common width, it can be overridden by individual *width* value, or
+- use **minWidth** property in the column configuration to define minimal width for it. If there's more space initially or after resizing, column width will be increased, but it can never be less than *minWidth* value, or
+- use **minColumnWidth** property in datatable configuration to set common minimal width for all columns. It can be overridden by individual *minWidth* value.
 
 If you set the width in such a way, it will save its value regardless of any other enabled size parameters 
 (e.g. [autowidth](api/ui.datatable_autowidth_config.md)). BTW, you can set different widths for different rows.
@@ -355,7 +355,7 @@ Managing the size of the scroll bars
 }}
 
 ~~~js
-grid=webix.ui({
+grid = webix.ui({
 	view:"datatable",
 	...
 	scrollSize:20

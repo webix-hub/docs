@@ -211,7 +211,7 @@ Cells
 
 ###Applying cssFormat method
 
-Generally, to apply some style to specific cells in a column, you should use the **cssFormat** attribute inside the [columns](api/ui.datatable_columns_config.md) parameter. The attribute sets a function that will define how cells of the column must be coloured. The function takes the following parameters:
+Generally, to apply some style to specific cells in a column, you should use the **cssFormat** attribute inside the [columns](api/ui.datatable_columns_config.md) parameter. The attribute sets a function that will define how cells of the column must be colored. The function takes the following parameters:
 
 - **cell value** (compulsory) - current cell value;
 - **row item object** - all values for the current row;

@@ -39,10 +39,10 @@ Main features
 <dd>You can set 7 different modes specifying how data will be selected by:  cell, row, column, multi cell, multi row, multi column, block.</dd>
 <br>
 <dt><a href="datatable/styling.md">10. Styling with standard css</a></dt>
-<dd>You can use CSS in conjunction with DataTable content to archieve the desired look-and-feel. Css can be applied to the whole table or to a specific column, row, cell.</dd>
+<dd>You can use CSS in conjunction with DataTable content to achieve the desired look-and-feel. Css can be applied to the whole table or to a specific column, row, cell.</dd>
 <br>
 <dt><a href="datatable/sizing.md#resizing">11. Resizable columns and rows </a></dt>
-<dd>Columns width or rows height can be changed by draging the related border.</dd>
+<dd>Columns width or rows height can be changed by dragging the related border.</dd>
 <br>
 <dt><a href="datatable/copying.md">12. Copying to/from clipboard</a></dt>
 <dd>By common CTRL+C/CTRL+V keyboard shortcuts data can be copied to some other application for further processing or moved within one or several DataTables.</dd>
@@ -63,7 +63,7 @@ Main features
 <dd>Any column in the table can be hidden (showed) programmatically.</dd>
 <br>
 <dt><a href="datatable/formulas.md">18. Math formulas for cells</a></dt>
-<dd>Developers have an opportunity to load data that are stored as mathematical expressions. DataTable parses, evalutes such expressions and presents result in the related cells. </dd>
+<dd>Developers have an opportunity to load data that are stored as mathematical expressions. DataTable parses, evaluates such expressions and presents result in the related cells. </dd>
 <br>
 <dt><a href="datatable/sizing.md#scrolling">19. Scrolling options for table viewport</a></dt>
 <dd>When your viewport is less than a page you can enable vertical(horizontal) scrolling to be able to see the hidden info. You also have the possibility to enable scrolling by whole rows.</dd>

@@ -110,11 +110,11 @@ dtable = new webix.ui({
 	<tbody>
 	<tr>
 		<td>Tab</td>
-		<td>closes the current editor and openes the next one</td>
+		<td>closes the current editor and opens the next one</td>
 	</tr>
 	<tr>
 		<td>Tab + Shift</td>
-		<td>closes the current editor and openes the previous one</td>
+		<td>closes the current editor and opens the previous one</td>
 	</tr>
 	</tbody>
 </table>
