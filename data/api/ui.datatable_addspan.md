@@ -16,6 +16,8 @@ addSpan
 @example:
 
 grid.addSpan(1, "country", 1, 3);
+grid.refresh();
+
 @related:
 	datatable/rowspans_colspans.md
 @relatedapi:
@@ -24,6 +26,17 @@ grid.addSpan(1, "country", 1, 3);
 @template:	api_method
 @edition:  pro
 @descr:
+To enable the rowspans and colspans functionality, you should set the **spans** parameter with the *true* value in the datatable configuration:
+
+~~~js
+webix.ui({
+    view:"datatable",
+    columns:[...],
+    spans:true
+    ...
+});
+~~~
+
 
 The method can as well take an array of arrays with the same configuration (*id, column, width, height, value, css*) to define several spans at a time.
 

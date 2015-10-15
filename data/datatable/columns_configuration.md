@@ -443,12 +443,15 @@ The feature is available in **Webix Pro** edition only.
 
 Datatable allows defining colspans and rowspans by **span** configuration provided with the dataset within the **data** property of the grid.
 
+To enable the rowspans and colspans functionality, you should set the **spans** parameter with the *true* value in the datatable configuration.
+
 Each rowspan/colspan definition consists of the **row id**, **column id**, **width** and **height** of the span, **value** to display and **css** class to apply:
 
 ~~~js
 grida = new webix.ui({
 	view:"datatable",
     columns:[...],
+    spans:true,
     data:{
     	data:grid_data,
         spans:[ 
