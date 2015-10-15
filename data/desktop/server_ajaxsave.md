@@ -1,10 +1,11 @@
 Saving Data with Webix Ajax Helper
 ====================
 
-Webix ajax helpers helps save component data on demand as well as form and input data. 
+Webix ajax helpers help save component data on demand as well as form and input data. 
 
 {{note
-Note that [DataProcessor](desktop/dataprocessor.md) isn't inited this time and you need to catch the necessary events (add, edit, delete) yourself. For forms saving request is usually send on button click.
+Note that [DataProcessor](desktop/dataprocessor.md) isn't initialized this time and you need to catch the necessary events (add, edit, delete) yourself. 
+For forms saving request is usually send on button click.
 }}
 
 Data is sent to server script in the body of Ajax POST request:

@@ -24,5 +24,5 @@ webix.ui({
 @template:	api_config
 @descr:
 
-ApiOnly "invisible" uploader is inited for situations when you need to integrate the uploader with a UI component to upload files (picture, first and furemost) and display them in the component. 
+ApiOnly "invisible" uploader is initialized for situations when you need to integrate the uploader with a UI component to upload files (picture, first and furemost) and display them in the component. 
 

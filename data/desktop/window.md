@@ -93,7 +93,7 @@ UI-related Window is non-modal by default. Its modality is set with the help of 
 {view:"window", modal:true}
 ~~~
 
-When a modal window is inited, the app area is greyed out to indicate that it is disabled while you "communicate" with the window.
+When a modal window is initialized, the app area is greyed out to indicate that it is disabled while you "communicate" with the window.
 
 
 ##Related articles

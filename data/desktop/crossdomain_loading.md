@@ -1,7 +1,7 @@
 Cross-Domain Data Loading
 ==============================
 
-It's quite uncommun that your app may require data from domain different to the one it's hosted on. Take for instance that you app is hosted at *http://app.mydomain.com*, data is located at *http://data.mydomain.com* 
+It's quite uncommon that your app may require data from domain different to the one it's hosted on. Take for instance that you app is hosted at *http://app.mydomain.com*, data is located at *http://data.mydomain.com* 
 and the [data-loading](desktop/data_loading.md) script is called *"data.php"*.
 
 Standard loading will fail in this case as all browsers block all cross-domain operations for the sake of safety even if you try using a different port. 
@@ -64,7 +64,7 @@ webix.jsonp("http://data.mydomain.com/data.php", {}, function(data){
 });
 ~~~
 
-Note that in comparison to **Ajax**, **JSONP** always provides **structured data**, not a raw response text.Thta's why the server script must return encoded data:
+Note that in comparison to **Ajax**, **JSONP** always provides **structured data**, not a raw response text.That's why the server script must return encoded data:
 
 ~~~js
 //server-side pattern
@@ -83,7 +83,7 @@ As you can see, the response data is wrapped, encoded as JSON and is sent back c
 
 **Advantages**:
 
-JSONP works in all browsers and doesn’t require server reconfiguration.
+JSONP works in all browsers and doesn't require server reconfiguration.
 
 **Drawbacks**:
 

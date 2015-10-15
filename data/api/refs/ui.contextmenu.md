@@ -212,7 +212,7 @@ The component presents a pop-up menu that is displayed when the user clicks the 
 - api/link/ui.contextmenu_id_config.md - the component ID
 - api/link/ui.contextmenu_layout_config.md - defines x or y orientation of layout
 - api/link/ui.contextmenu_left_config.md - the left offset of the window
-- api/link/ui.contextmenu_master_config.md - the area for which context object in inited
+- api/link/ui.contextmenu_master_config.md - the area for which context object in initialized
 - api/link/ui.contextmenu_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.contextmenu_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.contextmenu_minheight_config.md - sets the minimal height for the view

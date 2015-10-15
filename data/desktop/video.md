@@ -32,7 +32,7 @@ webix.ui({
 Video source defined by **src** property can be either a single video file or an array of several ones. In case of **multiple src** browsers will use the first supported format, which ensures that your video will be recognized 
 regardless of the client side browser.
 
-Video component can be inited inside an HTML container (as above) as well as inside Webix [window](desktop/window.md):
+Video component can be initialized inside an HTML container (as above) as well as inside Webix [window](desktop/window.md):
 
 ~~~js
 webix.ui({

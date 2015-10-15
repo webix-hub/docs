@@ -72,7 +72,7 @@ webix.ready(function(){
 
 {{sample 32_thirdparty/11_yandex_map.html}}
 
-2 . Secondly, choose where on page the map will be inited. You can render it into any **HTML element** defined as the map's **container**:
+2 . Secondly, choose where on page the map will be initialized. You can render it into any **HTML element** defined as the map's **container**:
 
 ~~~js
 // <div id="mydiv"></div>

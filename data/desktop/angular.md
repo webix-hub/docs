@@ -41,7 +41,7 @@ However, since app logic is typically complex, it's a good practice to store con
 
 Bound to Angular JS, Webix offers a special **webix-ui** directive that bootstraps an application. Here two methods are possible:
 
-- [Initing from HTML markup](#html) - the directive is used without an argument, the application is inited via HTML:
+- [Initing from HTML markup](#html) - the directive is used without an argument, the application is initialized via HTML:
 ~~~html
 <div webix-ui type="space"> <!-- app html --> </div>
 ~~~
@@ -73,8 +73,8 @@ This method resembles Webix [HTML Initialization technique](desktop/html_markup_
 ~~~html
 <body>
   <div webix-ui type="space"> <!--layout rows with type "space" are created-->
-	<div height="35">Header { {app} }</div> <!--Webix template is inited -->
-	<div view="cols" type="wide" margin="10"> <!--Webix layout cols are inited-->
+	<div height="35">Header { {app} }</div> <!--Webix template is initialized -->
+	<div view="cols" type="wide" margin="10"> <!--Webix layout cols are initialized-->
 		<div width="200"> 
 			<input type="text" placeholder="Type here" ng-model="app">
 		</div>
@@ -97,7 +97,7 @@ This method resembles Webix [HTML Initialization technique](desktop/html_markup_
 
 The input and header template are bound together by **ng-model** directive. 
 
-You can check how these views are inited in Webix: [layout](desktop/layout.md), [resizer](desktop/layout.md#resizer), [tabview](desktop/tabview.md), [template](desktop/template.md).
+You can check how these views are initialized in Webix: [layout](desktop/layout.md), [resizer](desktop/layout.md#resizer), [tabview](desktop/tabview.md), [template](desktop/template.md).
 
 ###Datatable Component
 

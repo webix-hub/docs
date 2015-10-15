@@ -72,7 +72,7 @@ For setting the necessary **serverside response** manually, [see the dedicated a
 As to [Server Side Connector](desktop/dataconnector.md), they return data in JSON or XML format depending 
 on connector type. 
 
-Ajax loading allows **passing params to serverside script** as GET request:
+Ajax loading allows **passing parameters to serverside script** as GET request:
 
 ~~~js
 webix.ajax("server/load.php?id="+id, function(text, data){
@@ -88,7 +88,7 @@ Here you should consult:
 
 - Ready-to use proxy objects for [offline support](desktop/server_offline.md);
 - Proxy object for working in [REST mode](desktop/server_rest.md);
-- Guidlines about [proxy objects](desktop/server_proxy.md) and custom proxy objects in particular.
+- Guidelines about [proxy objects](desktop/server_proxy.md) and custom proxy objects in particular.
 
 @complexity:2
 

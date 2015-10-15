@@ -14,34 +14,34 @@ Without DataProcessor, you need to attach corresponding functions to component e
 
 ##DataProcessor Initialization
 
-DataProcessor object can be inited in both long and short forms. Compulsory parameters include: 
+DataProcessor object can be initialized in both long and short forms. Compulsory parameters include: 
 
 - **url**, a path to your [own server script](desktop/custom_serverside.md) or connector-based one (described in [Server Side Connector](desktop/dataconnector.md)). In any case, it should be the script that enables data loading from the database 
 into the component;
 - **master**, a component or DataCollection you will use the dataProcessor with. 
 
-Other parameters (**mode**, validation **rules**, **on**, etc.) and optional and [can be found here](api/refs/dataprocessor.md#properties).
+Other parameters (**mode**, validation **rules**, **on**, etc.) are optional and [can be found here](api/refs/dataprocessor.md#properties).
 
 ####Implicit Initialization via Save Property
 
-When you define **url** (path to the necessary script) as value of **save** property for the needed component (**master**) - DataProcessor is automatically inited: 
+When you define **url** (path to the necessary script) as value of **save** property for the needed component (**master**) - DataProcessor is automatically initialized: 
 
 ~~~js
 webix.ui({
 	view:"datatable",
     //..config..
-    url: "data.php", //script that links to DataConnector and loads data
-    save: "connector -> data.php" //the same script used for data processing
+    url: "data.php", // script that links to DataConnector and loads data
+    save: "connector -> data.php" // the same script used for data processing
     
     //or
-    url:"data_load.php", //your custom script for loading
-    save:"data_save.php" //you custom script for saving
+    url:"data_load.php", // your custom script for loading
+    save:"data_save.php" // your custom script for saving
 });
 ~~~
 
 ####Short Form
 
-A short form connects the previously created dataProcessor to the component, but if there isn't any, it creates the new dataProcessor. 
+A short form connects the previously created dataProcessor to the component, but if there isn't any, it creates a new dataProcessor. 
 
 {{snippet
 Short Form (master, url)
@@ -90,7 +90,7 @@ var dp = webix.dp.$$("mydp");
 
 ##Data Processing Operations
 
-DataProcessor interpretes client-side operations performed on each data item and defines the type of data action for it: 
+DataProcessor interprets client-side operations performed on each data item and defines the type of data action for it: 
 
 The default processing looks as follows: 
 
@@ -100,11 +100,11 @@ The default processing looks as follows:
 
 This **data action** together with **data** of edited/added/deleted record is sent to server script the moment any editing operation is performed. Data action is passed as:
 
-- **!nativeeditor_status** parameter in case of implicit DataProcessor initing (with **save** property) and simultaneous usage of connector;
+- **!nativeeditor_status** parameter in case of implicit DataProcessor initialization (with **save** property) and simultaneous usage of connector;
 
 ~~~js
 view:"list",
-save:"connector->myscript.php" //link to Server Side Connector
+save:"connector->myscript.php" // link to Server Side Connector
 ~~~
 - **webix_operation** parameter in all other cases.
 
@@ -112,11 +112,11 @@ It looks like this:
 
 ~~~js
 id	7
-title	The Shaushenk Redemption
+title	The Shawshank Redemption
 webix_operation	delete
 ~~~
 
-And other protocol with implicit Dataprocessor initing for connector-based scripts:
+And other protocol with implicit Dataprocessor initialization for connector-based scripts:
 
 ~~~js
 1_!nativeeditor_status	update
@@ -124,7 +124,7 @@ And other protocol with implicit Dataprocessor initing for connector-based scrip
 1_id	1
 ~~~
 
-The moment Dataprocessor returns data, script execution begins (if other is not stated):
+The moment Dataprocessor returns data, script execution begins (unless otherwise stated):
 
 - If serverside integration is enabled with a [Server Side Connector](desktop/dataconnector.md), the connector automatically **generates database request** corresponding to action type to treat changed data;
 - For [custom scripts](desktop/custom_serverside.md), you get **webix_operation** and other data via **POST** request and write corresponding queries for each type of operation.  
@@ -156,7 +156,7 @@ dp.attachEvent('onBeforeDataSend', function(obj){
 });
 ~~~
 
-2) **Track successfull** and **unsuccessful serverside responses** separately with the help of **onAfterSync** and **onAfterSaveError** events respectively:
+2) **Track successful** and **unsuccessful serverside responses** separately with the help of **onAfterSync** and **onAfterSaveError** events respectively:
 
 {{snippet
 Successful server response
@@ -190,7 +190,7 @@ In case of an error during saving, response **status** will always be 'error' wh
 
 **Getting to a master component from DataProcessor**
 
-Inside DataProcessor event handlers you can reach the master component througn DataProcessor configuration objetc:
+Inside DataProcessor event handlers you can reach the master component through DataProcessor configuration object:
 
 ~~~js
 dp.attachEvent('onSomeEvent', function(id, status, obj){
@@ -219,7 +219,7 @@ new webix.DataProcessor({
 ~~~
 
 {{snippet
-Or when defining DataProcessor implicitely
+Or when defining DataProcessor implicitly
 }}
 ~~~js
 view:"datatable",
@@ -231,7 +231,7 @@ save:{
 
 {{sample 40_serverside/01_php_vanila/10_datatable_update.html}}
 
-It can be uselful for REST-full applications or when you need to fill in client-side fields which values can be calculated only on server side, etc.
+It can be useful for REST-full applications or when you need to fill in client-side fields which values can be calculated only on server side, etc.
 
 ##Changing Default Processing Logic
 
@@ -268,7 +268,7 @@ webix.dp($$("grid")).attachEvent("onbeforedelete", function(id, action){
 
 Now, when a record is removed from the component, a field **deleted** of this record is updated in the database table. The current date is set into it to track the moment when the record was removed on the client side. 
 
-Learn more about the possibilities of data manipulation on clent side in related articles:
+Learn more about the possibilities of data manipulation on client side in related articles:
 
 - [Data Adding and Deletion](desktop/add_delete.md);
 - [Data Updating](desktop/update.md)
@@ -280,7 +280,7 @@ Learn more about the possibilities of data manipulation on clent side in related
 
 Not any client-side update is to be saved to server. To temporarily cancel DataProcessor you can:
 
-- either apply api/dataprocessor_ignore.md fucntion to the Dataprocessor object. 
+- either apply api/dataprocessor_ignore.md function to the Dataprocessor object. 
 
 ~~~js
 webix.dp("grid").ignore(function(){

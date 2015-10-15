@@ -130,7 +130,7 @@ Cloned pagers will change their values sumultaneously!
 Paging can be implemented through an invisible pager, which gives you an ability to control the process by custom functions and create your own 
 "Next/Previous Page", "Jump to Start/End" buttons, etc. instead of a standard pager. 
 
-For these needs you should include **apiOnly** parameter with *true* value into the pager constructor, whether it is inited as a separate view or as a component's property. 
+For these needs you should include **apiOnly** parameter with *true* value into the pager constructor, whether it is initialized as a separate view or as a component's property. 
 
 {{snippet
 Datatable with Invisible Pager

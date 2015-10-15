@@ -17,7 +17,7 @@ Gridsuggest can be used with [combo](desktop/controls.md#combo) and [richselect]
 
 {{sample 32_thirdparty/13_gridselect.html}}
 
-By default combo and richselect are inited with the following constructor:
+By default combo and richselect are initialized with the following constructor:
 
 ~~~js
 {

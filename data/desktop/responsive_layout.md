@@ -5,7 +5,7 @@ Webix [layout](desktop/layout.md) and [accordion](desktop/accordion.md) structur
 
 It occurs when: 
 
-- Layout or accordion are inited without an HTML container, and hence, feature no fixed sizing; 
+- Layout or accordion are initialized without an HTML container, and hence, feature no fixed sizing; 
 - The size of any component in such layout/accordion is bigger than the space available for its rendering. Fixed sizing is the right way to achieve it. Read more on initial [component sizing](desktop/dimensions.md).
 
 Responsive behavior features 2 modes: 

@@ -55,7 +55,7 @@ For hierarchical data you need to have:
 - **relation_id** field in database table that for each record will store the ID of a record that will be **parent** for this one. For **root** record this parameter will be **0**;
 - (optionally) - **open** field for each record indicating whether this record will be initially opened (1) or not (0)  - if it has children, of course.
 
-Dataset is compiled with a function that contains SQL query with WHERE clause, which gets data from root record (parent = 0) down to all its children. JSON data for datatree should store chilren for an item in its **data** property:
+Dataset is compiled with a function that contains SQL query with WHERE clause, which gets data from root record (parent = 0) down to all its children. JSON data for datatree should store children for an item in its **data** property:
 
 ~~~php
 function get($id = 0) {
@@ -81,7 +81,7 @@ echo json_encode(get());
 
 ###Form Loading
 
-On client side, **load()** method is applied to an already inited form. The method contains loading script that sometimes requires record ID as part of GET request.
+On client side, **load()** method is applied to an already initialized form. The method contains loading script that sometimes requires record ID as part of GET request.
 
 ~~~js
 $$("form1").load("server/form.php?id=3");
@@ -97,7 +97,7 @@ $res = $db->query("SELECT * FROM films WHERE id={$id}");
 
 ##Data Saving {#save}
 
-In essence defining **save** initializes DataProcessor that gets data ready for sending to server and triggers script executing each time changes are made. Defaut DataProcessor logic can be [customized](desktop/dataprocessor.md).
+In essence defining **save** initializes DataProcessor that gets data ready for sending to server and triggers script executing each time changes are made. Default DataProcessor logic can be [customized](desktop/dataprocessor.md).
 
 Script gets changed data in body of POST request. For each inserted, updated and deleted record, all properties of its object are sent together with **webix_operation**
 
@@ -111,7 +111,7 @@ webix_operation	delete
 year	2012
 ~~~
 
-Additional item properies can be set as well by updating this item on client side:
+Additional item properties can be set as well by updating this item on client side:
 
 ~~~js
 var item = this.getItem(id);
@@ -123,7 +123,7 @@ The new property *old_rank* will be passed in POST like native item properties.
 
 {{sample 40_serverside/01_php_vanila/03_datatable_reordering.html}}
 
-You can easily get to these parameters to use them for making corresponding database quieries. 
+You can easily get to these parameters to use them for making corresponding database queries. 
 
 ~~~php
 $operation = $POST['webix_operation'];
@@ -156,7 +156,7 @@ $parent = $_POST["parent"];
 
 ###Form Saving 
 
-Form is typically saved on some page event (e.g. button clicking) so there's no need in initing DataProcessor for it. As a result, POST request will contain only form data and **no webix_operation** type.  
+Form is typically saved on some page event (e.g. button clicking) so there's no need in initializing DataProcessor for it. As a result, POST request will contain only form data and **no webix_operation** type.  
 
 You decide what should be done:
 
@@ -179,7 +179,7 @@ For tuning responses scroll down a little bit. For learning Webix API for Ajax o
 
 ##Tuning ServerSide Response {#response}
 
-For each query you should tune response, which can be either **plain text** or **JSON object** with necesary params:
+For each query you should tune response, which can be either **plain text** or **JSON object** with necessary parameters:
 
 ~~~php
 //plain text on failure

@@ -157,7 +157,7 @@ Here the data is filtered by a "field_name" field and shows all records where it
   
 
 {{note
-Connectos have big possibilities of customization, so consult their [documentation](#docu).
+Connectors have big possibilities of customization, so consult their [documentation](#docu).
 }}
 
 ##Saving Data with Connectors {#saving}
@@ -177,10 +177,10 @@ webix.ui({
 **Note that**
 
 - The must-have detail here is a **connector** prefix before the path. 
-- As soon as you define you connector-based script as **save** script, DataProcessor is inited to send changed data to this script. 
+- As soon as you define you connector-based script as **save** script, DataProcessor is initialized to send changed data to this script. 
 
 [DataProcessor](desktop/dataprocessor.md) passes changed data from the component alongside with the operation (*update, insert, delete*) performed on it. 
-This operation corresponds to query type the connector will execute over the database table. If you neeed to customize this behavior  - go to [DataProcessor docs](desktop/dataprocessor.md).
+This operation corresponds to query type the connector will execute over the database table. If you need to customize this behavior  - go to [DataProcessor docs](desktop/dataprocessor.md).
 
 There are two protocols for data transfer with Server Side Connectors
 

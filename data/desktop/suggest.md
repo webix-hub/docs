@@ -157,11 +157,11 @@ Suggest list is connected with an input field by **suggest** property included i
 
 ##Suggest list for component editors {#component}
 
-[Component editors](desktop/editing.md) duplicate editing controls yet they are inited within the component body. 
+[Component editors](desktop/editing.md) duplicate editing controls yet they are initialized within the component body. 
 
 <img src="desktop/autosuggest.png">
 
-Suggest can be inited for **combo** and **text** editors. To do this, make the following steps: 
+Suggest can be initialized for **combo** and **text** editors. To do this, make the following steps: 
 
 - create a suggest list as **separate view** or define its **configuration** in a JSON object and set options for it:
 - create a component, specify **text** [editor type](desktop/editing.md) for it and link to the suggest: 
@@ -316,7 +316,7 @@ the default 300px:
 
 ###Popup position
 
-Suggest API offers the following variants of popup positioning in relation to the text field it's inited for: 
+Suggest API offers the following variants of popup positioning in relation to the text field it's initialized for: 
 
 - **"bottom"** (default). Doesn't require direct initialization;
 - **"top"**;

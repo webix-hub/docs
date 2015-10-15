@@ -127,7 +127,7 @@ Datatable features an array of columns each of which has a set of congiguration 
 
 ##Form {#XMLform}
 
-If placed in layout rows or cols, form can be inited with standard HTML tags. **Standalone form** not placed in layout requires tags with **x:** prefix.
+If placed in layout rows or cols, form can be initialized with standard HTML tags. **Standalone form** not placed in layout requires tags with **x:** prefix.
 
 ~~~xml
 <x:form id="log_form" width="300">

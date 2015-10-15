@@ -6,12 +6,12 @@ addSpan
 @edition:pro
 
 @params:
-- id 	number, string, object 		id of the row that starts colspan/rowspan;
-- column 	string		id of the column that starts colspan/rowspan;
-- width 	number		how many columns should the span include; 
-- height 	number		how many rows should the span include;
-* value 	string 	 	value that the span area should display;
-* css 		string 	 	css class that should be applied to the span area.
+- id			number, string, object			id of the row that starts colspan/rowspan;
+- column		string				id of the column that starts colspan/rowspan;
+- width			number				how many columns should the span include; 
+- height		number				how many rows should the span include;
+* value			string				value that the span area should display;
+* css			string				css class that should be applied to the span area.
 
 @example:
 

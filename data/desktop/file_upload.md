@@ -16,7 +16,7 @@ The button can as well be made [invisible](desktop/apionly_uploader.md) and file
 Uploader is a control that looks like a standard [button](desktop/controls.md#button) yet triggers an upload window on its clicking. 
 
 Uploader is normally initialized together with the UI component to display values of pre-uploaded and uploaded files. Such component (it may be [list](desktop/list.md) or [template](desktop/template.md), etc.) is called 
-**uploader body** and is inited separately. To link it to the uploader, specify its **ID** as value of uploader **link** property.  
+**uploader body** and is initialized separately. To link it to the uploader, specify its **ID** as value of uploader **link** property.  
 
 ~~~js
 webix.ui({

@@ -53,7 +53,7 @@ HTML Toolbar, List and Form
 
 ##Windows and Menu
 
-If [window](desktop/window.md) are inited from the markup, it should be set on the same level as other layout components. 
+If [window](desktop/window.md) are initialized from the markup, it should be set on the same level as other layout components. 
 
 ~~~html
 <div data-view="rows">
@@ -76,7 +76,7 @@ $$("win1").show({ x:100, y:100});
 
 {{sample 23_markup/01_html/09_window.html}}
 
-If [menu](desktop/menu.md) is initialized from markup it's vital to remember that its submenus are [popups](desktop/popup.md) in essence. So they should be as well inited like windows: 
+If [menu](desktop/menu.md) is initialized from markup it's vital to remember that its submenus are [popups](desktop/popup.md) in essence. So they should be as well initialized like windows: 
 
 ~~~html
 <div data-view="submenu" data-id="submenu1">
