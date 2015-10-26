@@ -67,7 +67,7 @@ To get value of some specific element within the form, you should specify its **
 webix.ui({
 	view:"form",
     elements: [
-    	{view:"text", id:"title", placeholder:"Enter film title"},
+    	{view:"text", name:"title", placeholder:"Enter film title"},
         {...},
         {view:"button", click:"get_title"}
     ]
