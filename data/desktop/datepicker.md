@@ -16,7 +16,6 @@ Datepicker is used in a combination with ui-related [calendar](desktop/calendar.
 
 ##Initialization
 ~~~js
-
 {view:"datepicker", date: new Date(2012, 6, 8), label: 'Select Date', timepicker:true} 
 ~~~
 
@@ -48,3 +47,19 @@ If you need to select time (hours and minutes) only, use the datepicker with *ty
 Dates are formatted according to the helpers/date_formatting_methods.md.
 }}
 
+##Disabling date and time slots
+
+To limit user ability to pick date and time periods, you should access calendar object that lies in the datepicker popup and apply the needed configuration to it: 
+
+~~~js
+{view:"datepicker", suggest:{
+	type:"calendar", body:{
+    	minDate:new Date(),
+        maxDate:"2016-05-07"
+    }
+}} 
+~~~
+
+More about [Disabling Dates in Calendar](desktop/calendar.md#disablingdatesandtimeslotsincalendar)
+
+More about [Advanced Popup Configuration in Popup Selectors](desktop/advanced_combo.md)
