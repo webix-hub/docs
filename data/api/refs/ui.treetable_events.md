@@ -69,6 +69,7 @@ Events
 - api/link/ui.treetable_onstructureload_event.md - fires when the structure of DataTable (columns configuration) is initialized
 - api/link/ui.treetable_onstructureupdate_event.md - fires when structure of datatable was changed ( column added, hidden or reconfigured )
 - api/link/ui.treetable_onsubviewcreate_event.md - fires after a subview was created
+- api/link/ui.treetable_onsubviewopen_event.md - fires after a subview or subrow is opened
 - api/link/ui.treetable_onsubviewrender_event.md - fires each time subview is rendered
 - api/link/ui.treetable_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.treetable_onswipey_event.md - occurs on a vertical swipe movement
@@ -149,6 +150,7 @@ Events
 - api/link/ui.treetable_onstructureload_event.md
 - api/link/ui.treetable_onstructureupdate_event.md
 - api/link/ui.treetable_onsubviewcreate_event.md
+- api/link/ui.treetable_onsubviewopen_event.md
 - api/link/ui.treetable_onsubviewrender_event.md
 - api/link/ui.treetable_onswipex_event.md
 - api/link/ui.treetable_onswipey_event.md

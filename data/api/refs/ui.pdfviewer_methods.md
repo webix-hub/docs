@@ -21,6 +21,7 @@ Methods
 - api/link/ui.pdfviewer_hide.md - hides the view
 - api/link/ui.pdfviewer_isenabled.md - checks whether the view is enabled
 - api/link/ui.pdfviewer_isvisible.md - checks whether the view is visible
+- api/ui.pdfviewer_load.md - 
 - api/link/ui.pdfviewer_mapevent.md - routes events from one object to another
 - api/ui.pdfviewer_nextpage.md - 
 - api/ui.pdfviewer_prevpage.md - 
@@ -54,6 +55,7 @@ Methods
 - api/link/ui.pdfviewer_hide.md
 - api/link/ui.pdfviewer_isenabled.md
 - api/link/ui.pdfviewer_isvisible.md
+- api/ui.pdfviewer_load.md
 - api/link/ui.pdfviewer_mapevent.md
 - api/ui.pdfviewer_nextpage.md
 - api/ui.pdfviewer_prevpage.md
