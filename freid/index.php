@@ -5,9 +5,9 @@
 	<script src="./freid/scripts/berne.js" type="text/javascript" charset="utf-8"></script>
 	<link rel="stylesheet" href="./freid/scripts/freid.css" type="text/css" media="screen" title="no title" charset="utf-8">
 
-	<script src="../../../webix/core/codebase/webix.js" type="text/javascript" charset="utf-8"></script>
-	<script src="../../../webix/core/codebase/core/docs_add.js" type="text/javascript" charset="utf-8"></script>
-	<script src="../../../webix/core/codebase/core/docs_remove.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../webix/codebase/webix.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../webix/codebase/core/docs_add.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../webix/codebase/core/docs_remove.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../index.php?action=freid" type="text/javascript" charset="utf-8"></script>
 
 	<script type="text/javascript">
