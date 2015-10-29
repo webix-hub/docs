@@ -2,7 +2,9 @@ Events
 =======
 
 {{api
+- api/ui.pdfviewer_onafterload_event.md - 
 - api/link/ui.pdfviewer_onafterscroll_event.md - occurs when some webix view has been scrolled
+- api/ui.pdfviewer_onbeforeload_event.md - 
 - api/link/ui.pdfviewer_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.pdfviewer_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.pdfviewer_ondestruct_event.md - occurs when component destroyed
@@ -21,7 +23,9 @@ Events
 }}
 
 @index:
+- api/ui.pdfviewer_onafterload_event.md
 - api/link/ui.pdfviewer_onafterscroll_event.md
+- api/ui.pdfviewer_onbeforeload_event.md
 - api/link/ui.pdfviewer_onbindrequest_event.md
 - api/link/ui.pdfviewer_onblur_event.md
 - api/link/ui.pdfviewer_ondestruct_event.md

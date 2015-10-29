@@ -32,6 +32,7 @@ dummy stub
 - api/link/ui.pdfviewer_hide.md - hides the view
 - api/link/ui.pdfviewer_isenabled.md - checks whether the view is enabled
 - api/link/ui.pdfviewer_isvisible.md - checks whether the view is visible
+- api/ui.pdfviewer_load.md - 
 - api/link/ui.pdfviewer_mapevent.md - routes events from one object to another
 - api/ui.pdfviewer_nextpage.md - 
 - api/ui.pdfviewer_prevpage.md - 
@@ -50,7 +51,9 @@ dummy stub
 
 
 {{api
+- api/ui.pdfviewer_onafterload_event.md - 
 - api/link/ui.pdfviewer_onafterscroll_event.md - occurs when some webix view has been scrolled
+- api/ui.pdfviewer_onbeforeload_event.md - 
 - api/link/ui.pdfviewer_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.pdfviewer_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.pdfviewer_ondestruct_event.md - occurs when component destroyed
@@ -87,6 +90,7 @@ dummy stub
 - api/link/ui.pdfviewer_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.pdfviewer_on_config.md - allows attaching custom handlers to inner events of the component
 - api/ui.pdfviewer_toolbar_config.md - 
+- api/ui.pdfviewer_url_config.md - 
 - api/link/ui.pdfviewer_width_config.md - sets the width of the component
 }}
 

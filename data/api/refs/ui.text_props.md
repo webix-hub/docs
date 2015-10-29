@@ -10,13 +10,13 @@ Properties
 - api/ui.text_bottompadding_config.md - sets the bottom offset of the control input
 - api/link/ui.text_click_config.md - click action handler
 - api/link/ui.text_container_config.md - an html container (or its id) where the component needs initializing
-- api/link/ui.text_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.text_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.text_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.text_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.text_height_config.md - sets the height of the component
 - api/link/ui.text_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.text_hotkey_config.md - sets a hotkey that triggers button clicking
+- api/ui.text_icon_config.md - 
 - api/link/ui.text_id_config.md - the component ID
 - api/link/ui.text_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/ui.text_inputpadding_config.md - padding of text in the input
@@ -39,9 +39,7 @@ Properties
 - api/ui.text_required_config.md - marks field as required
 - api/ui.text_suggest_config.md - links suggest list to the input
 - api/link/ui.text_tabfocus_config.md - defines whether the control will be included in the tab navigation order
-- api/link/ui.text_template_config.md - the component template
 - api/link/ui.text_tooltip_config.md - tooltip for the input
-- api/link/ui.text_type_config.md - the type of the control
 - api/ui.text_validate_config.md - adds validation to the field
 - api/ui.text_validateevent_config.md - on which event validation fires
 - api/link/ui.text_value_config.md - sets the initial value for a control
@@ -57,13 +55,13 @@ Properties
 - api/ui.text_bottompadding_config.md
 - api/link/ui.text_click_config.md
 - api/link/ui.text_container_config.md
-- api/link/ui.text_content_config.md
 - api/link/ui.text_css_config.md
 - api/link/ui.text_disabled_config.md
 - api/link/ui.text_gravity_config.md
 - api/link/ui.text_height_config.md
 - api/link/ui.text_hidden_config.md
 - api/link/ui.text_hotkey_config.md
+- api/ui.text_icon_config.md
 - api/link/ui.text_id_config.md
 - api/link/ui.text_inputheight_config.md
 - api/ui.text_inputpadding_config.md
@@ -86,9 +84,7 @@ Properties
 - api/ui.text_required_config.md
 - api/ui.text_suggest_config.md
 - api/link/ui.text_tabfocus_config.md
-- api/link/ui.text_template_config.md
 - api/link/ui.text_tooltip_config.md
-- api/link/ui.text_type_config.md
 - api/ui.text_validate_config.md
 - api/ui.text_validateevent_config.md
 - api/link/ui.text_value_config.md

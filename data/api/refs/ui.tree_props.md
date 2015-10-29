@@ -9,7 +9,6 @@ Properties
 - api/link/ui.tree_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.tree_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.tree_data_config.md - JavaScript array containing data for the component
-- api/link/ui.tree_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.tree_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.tree_datatype_config.md - the type of loaded data
 - api/link/ui.tree_disabled_config.md - indicates whether an item is enabled or not
@@ -32,7 +31,6 @@ Properties
 - api/link/ui.tree_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.tree_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
 - api/link/ui.tree_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
-- api/link/ui.tree_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
 - api/link/ui.tree_ready_config.md - event handler called just after the component has been completely initialized
 - api/link/ui.tree_removemissed_config.md - defines how to treat items in case of reloading
 - api/link/ui.tree_rules_config.md - set of validation rules for the component
@@ -58,7 +56,6 @@ Properties
 - api/link/ui.tree_container_config.md
 - api/link/ui.tree_css_config.md
 - api/link/ui.tree_data_config.md
-- api/link/ui.tree_datafeed_config.md
 - api/link/ui.tree_datathrottle_config.md
 - api/link/ui.tree_datatype_config.md
 - api/link/ui.tree_disabled_config.md
@@ -81,7 +78,6 @@ Properties
 - api/link/ui.tree_oncontext_config.md
 - api/link/ui.tree_ondblclick_config.md
 - api/link/ui.tree_onmousemove_config.md
-- api/link/ui.tree_pager_config.md
 - api/link/ui.tree_ready_config.md
 - api/link/ui.tree_removemissed_config.md
 - api/link/ui.tree_rules_config.md

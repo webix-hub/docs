@@ -145,7 +145,6 @@ It's possible to present multiple data sets on the same chart.  Check [chart](de
 - api/link/ui.chart_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.chart_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.chart_data_config.md - JavaScript array containing data for the component
-- api/link/ui.chart_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.chart_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.chart_datatype_config.md - the type of loaded data
 - api/ui.chart_disablelines_config.md - disapbles graph lines with radar chart

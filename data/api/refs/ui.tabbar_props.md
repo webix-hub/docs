@@ -11,13 +11,13 @@ Properties
 - api/link/ui.tabbar_bottompadding_config.md - sets the bottom offset of the control input
 - api/link/ui.tabbar_click_config.md - click action handler
 - api/link/ui.tabbar_container_config.md - an html container (or its id) where the component needs initializing
-- api/link/ui.tabbar_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.tabbar_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.tabbar_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.tabbar_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.tabbar_height_config.md - sets the height of the component
 - api/link/ui.tabbar_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.tabbar_hotkey_config.md - sets a hotkey that triggers button clicking
+- api/link/ui.tabbar_icon_config.md - 
 - api/link/ui.tabbar_id_config.md - the component ID
 - api/link/ui.tabbar_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.tabbar_inputpadding_config.md - padding of text in the input
@@ -34,6 +34,7 @@ Properties
 - api/link/ui.tabbar_multiview_config.md - enables switching between multiview cells
 - api/link/ui.tabbar_name_config.md - name of the control
 - api/link/ui.tabbar_on_config.md - allows attaching custom handlers to inner events of the component
+- api/ui.tabbar_optionwidth_config.md - 
 - api/link/ui.tabbar_options_config.md - defines data items of the drop-down list
 - api/link/ui.tabbar_placeholder_config.md - placeholder text for the input area
 - api/link/ui.tabbar_popup_config.md - allows to attach pop-up menu to the button
@@ -50,7 +51,6 @@ Properties
 - api/ui.tabbar_tabmorewidth_config.md - width of "more" button in tabbar
 - api/ui.tabbar_taboffset_config.md - left padding of first tab
 - api/ui.tabbar_tabbarpopup_config.md - custom popup for responsive tabbar
-- api/link/ui.tabbar_template_config.md - the component template
 - api/link/ui.tabbar_tooltip_config.md - tooltip for the input
 - api/ui.tabbar_topoffset_config.md - top offset of tabbar
 - api/link/ui.tabbar_type_config.md - the type of the control
@@ -71,13 +71,13 @@ Properties
 - api/link/ui.tabbar_bottompadding_config.md
 - api/link/ui.tabbar_click_config.md
 - api/link/ui.tabbar_container_config.md
-- api/link/ui.tabbar_content_config.md
 - api/link/ui.tabbar_css_config.md
 - api/link/ui.tabbar_disabled_config.md
 - api/link/ui.tabbar_gravity_config.md
 - api/link/ui.tabbar_height_config.md
 - api/link/ui.tabbar_hidden_config.md
 - api/link/ui.tabbar_hotkey_config.md
+- api/link/ui.tabbar_icon_config.md
 - api/link/ui.tabbar_id_config.md
 - api/link/ui.tabbar_inputheight_config.md
 - api/link/ui.tabbar_inputpadding_config.md
@@ -94,6 +94,7 @@ Properties
 - api/link/ui.tabbar_multiview_config.md
 - api/link/ui.tabbar_name_config.md
 - api/link/ui.tabbar_on_config.md
+- api/ui.tabbar_optionwidth_config.md
 - api/link/ui.tabbar_options_config.md
 - api/link/ui.tabbar_placeholder_config.md
 - api/link/ui.tabbar_popup_config.md
@@ -110,7 +111,6 @@ Properties
 - api/ui.tabbar_tabmorewidth_config.md
 - api/ui.tabbar_taboffset_config.md
 - api/ui.tabbar_tabbarpopup_config.md
-- api/link/ui.tabbar_template_config.md
 - api/link/ui.tabbar_tooltip_config.md
 - api/ui.tabbar_topoffset_config.md
 - api/link/ui.tabbar_type_config.md
