@@ -18,7 +18,7 @@ Ui-related context points to an element that will be shown on the page on right 
 webix.ui({
 	view:"context",
 	width: 300,
-	body:{ ....},
+	body:{ ... },
 	padding:20,
 	master:"areaA"
 });
@@ -46,8 +46,8 @@ What can be a context element?
 webix.ui({
 	view:"context",
 	body:{view: "toolbar", cols:[
-			{view:"button", value:"Button1", width: 100},
-			{view:"button", value:"Button2", width: 100}]
+		{view:"button", value:"Button1", width: 100},
+		{view:"button", value:"Button2", width: 100}]
 	}, 
 	width: 300, 
 	master:"context_area"
@@ -55,12 +55,12 @@ webix.ui({
 ~~~
 {{sample 03_menu/07_context_ui.html }}
 
-- **Any HTML element** referred to by the ID of the div container it is placed in. 
+- **Any HTML element** referred to by its ID:
 
 <img src="desktop/context_div.png"/>
 
 
-The container is specified in the body constructor as value of **content** property. 
+The ID is specified in the body constructor as value of **content** property. 
 
 ~~~js
 body:{ 
