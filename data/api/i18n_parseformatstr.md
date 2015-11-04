@@ -22,4 +22,4 @@ var text = webix.i18n.parseFormatStr(new Date());
 @descr:
 
 
-The default format is defined by the locale in use and initially it's "**%Y-%m-%d**" ( the default MySQL date format ).
+The default format is defined by the locale in use and initially it's "**%Y-%m-%d "%H:%i**" ( the default MySQL date format ).
