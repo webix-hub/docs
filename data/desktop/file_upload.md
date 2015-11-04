@@ -129,9 +129,9 @@ File object can be retrieved by the **getItem** method with an ID of the necessa
 ~~~js
 var file_id = $$("upl1").files.getFirstId(); //getting the ID
 var fileobj = $$("upl1").files.getItem(file_id).file; //getting file object
-file_name = $$("upl1").files.getItem(file_id).name; //getting properties
+filename = $$("upl1").files.getItem(file_id).name; //getting properties
 //or
-filename - fileobj.name;
+filename = fileobj.name;
 ~~~
 
 Webix offers rich API to manipulate with **files collection** and each **file object**. For instane, you can:

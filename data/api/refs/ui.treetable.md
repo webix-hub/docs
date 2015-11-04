@@ -104,7 +104,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
 - api/link/ui.treetable_getprevsiblingid.md - returns the id of the previous sibling of the specified node
 - api/link/ui.treetable_getscrollstate.md - returns the current position of scrolls
-- api/link/ui.treetable_getselectedid.md - returns the selected cells
+- api/link/ui.treetable_getselectedid.md - returns the selected cells' ids as objects or strings
 - api/link/ui.treetable_getselecteditem.md - gets an object of the selected data item
 - api/link/ui.treetable_getstate.md - returns the current state of the view
 - api/link/ui.treetable_gettext.md - returns text value of a cell
@@ -191,7 +191,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_onaftereditstart_event.md - fires after edit operation was initiated, editor opened and ready for input
 - api/link/ui.treetable_onaftereditstop_event.md - fires after edit operation finished
 - api/link/ui.treetable_onafterfilter_event.md - occurs after datatable was filtered
-- api/link/ui.treetable_onafterload_event.md - fires after server side loading is complete
+- api/link/ui.treetable_onafterload_event.md - fires after data loading is complete
 - api/link/ui.treetable_onafteropen_event.md - fires after the branch has been opened
 - api/link/ui.treetable_onafterrender_event.md - occurs each time after the view is rendered
 - api/link/ui.treetable_onafterscroll_event.md - occurs when some webix view has been scrolled
@@ -345,7 +345,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_threestate_config.md - defines three-state checkboxes for the tree. Flase by default.
 - api/link/ui.treetable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.treetable_type_config.md - used for configuring presentation of items
-- api/link/ui.treetable_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.treetable_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.treetable_width_config.md - sets the width of the component
 - api/link/ui.treetable_ycount_config.md - defines height of datatable in rows
 }}

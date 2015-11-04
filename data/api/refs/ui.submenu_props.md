@@ -43,6 +43,7 @@ Properties
 - api/link/ui.submenu_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.submenu_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
 - api/link/ui.submenu_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
+- api/link/ui.submenu_openaction_config.md - 
 - api/link/ui.submenu_padding_config.md - sets paddings of the chart content
 - api/link/ui.submenu_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
 - api/link/ui.submenu_position_config.md - sets position of the window relative to the the screen
@@ -63,7 +64,7 @@ Properties
 - api/link/ui.submenu_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.submenu_top_config.md - the top offset of a window
 - api/link/ui.submenu_type_config.md - object that specifies items presentation
-- api/link/ui.submenu_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.submenu_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.submenu_width_config.md - sets the width of the component
 - api/link/ui.submenu_xcount_config.md - defines width of view in items
 - api/link/ui.submenu_ycount_config.md - defines height of view in items
@@ -112,6 +113,7 @@ Properties
 - api/link/ui.submenu_oncontext_config.md
 - api/link/ui.submenu_ondblclick_config.md
 - api/link/ui.submenu_onmousemove_config.md
+- api/link/ui.submenu_openaction_config.md
 - api/link/ui.submenu_padding_config.md
 - api/link/ui.submenu_pager_config.md
 - api/link/ui.submenu_position_config.md

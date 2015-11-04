@@ -27,7 +27,7 @@ Properties
 - api/link/ui.htmlform_src_config.md - the path to an external template that is loaded by Ajax
 - api/link/ui.htmlform_template_config.md - the component template
 - api/link/ui.htmlform_type_config.md - name of predefined styling type
-- api/link/ui.htmlform_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.htmlform_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.htmlform_width_config.md - sets the width of the component
 }}
 

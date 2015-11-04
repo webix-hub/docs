@@ -35,6 +35,7 @@ Properties
 - api/link/ui.menu_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.menu_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
 - api/link/ui.menu_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
+- api/ui.menu_openaction_config.md - 
 - api/link/ui.menu_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
 - api/link/ui.menu_ready_config.md - event handler called just after the component has been completely initialized
 - api/link/ui.menu_removemissed_config.md - defines how to treat items in case of reloading
@@ -50,7 +51,7 @@ Properties
 - api/link/ui.menu_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
 - api/link/ui.menu_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.menu_type_config.md - object that specifies items presentation
-- api/link/ui.menu_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.menu_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.menu_width_config.md - sets the width of the component
 - api/link/ui.menu_xcount_config.md - defines width of view in items
 - api/link/ui.menu_ycount_config.md - defines height of view in items
@@ -90,6 +91,7 @@ Properties
 - api/link/ui.menu_oncontext_config.md
 - api/link/ui.menu_ondblclick_config.md
 - api/link/ui.menu_onmousemove_config.md
+- api/ui.menu_openaction_config.md
 - api/link/ui.menu_pager_config.md
 - api/link/ui.menu_ready_config.md
 - api/link/ui.menu_removemissed_config.md

@@ -6,7 +6,7 @@ Events
 - api/link/ui.organogram_onafterclose_event.md - fires after the branch has been closed
 - api/link/ui.organogram_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.organogram_onafterdelete_event.md - fires after item deleting
-- api/link/ui.organogram_onafterload_event.md - fires after server side loading is complete
+- api/link/ui.organogram_onafterload_event.md - fires after data loading is complete
 - api/link/ui.organogram_onafteropen_event.md - fires after the branch has been opened
 - api/link/ui.organogram_onafterrender_event.md - occurs immediately after the component has been rendered
 - api/link/ui.organogram_onafterscroll_event.md - occurs when some webix view has been scrolled

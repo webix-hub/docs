@@ -1,6 +1,6 @@
 UI Components
 ==================
-The <a title="ui library" href="http://webix.com">Webix UI library</a> supplies over 40 fully customizable components to help you build interfaces of different kinds, nicely present data and work with it. There are also multiple controls and
+The <a title="ui library" href="http://webix.com">Webix UI library</a> supplies over 70 fully customizable components to help you build interfaces of different kinds, nicely present data and work with it. There are also multiple controls and
 specific features to make your applications good-looking and user-friendly. All the components are objects made with the webix.ui() constructor where the type of the component is set by the 'view' property (the declarative syntax is available as well).
 
 <br>

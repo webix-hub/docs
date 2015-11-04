@@ -27,7 +27,7 @@ Properties
 - api/ui.template_src_config.md - the path to an external template that is loaded by Ajax
 - api/link/ui.template_template_config.md - the component template
 - api/ui.template_type_config.md - name of predefined styling type
-- api/link/ui.template_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.template_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.template_width_config.md - sets the width of the component
 }}
 

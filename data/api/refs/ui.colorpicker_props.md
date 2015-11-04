@@ -45,7 +45,6 @@ Properties
 - api/link/ui.colorpicker_suggest_config.md - links suggest list to the input
 - api/link/ui.colorpicker_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/link/ui.colorpicker_template_config.md - the component template
-- api/link/ui.colorpicker_text_config.md - visible text in the related input
 - api/link/ui.colorpicker_timeicon_config.md - sets an icon for time in the datepicker
 - api/link/ui.colorpicker_timepicker_config.md - enables optional timepicker in the calendar
 - api/link/ui.colorpicker_tooltip_config.md - tooltip for the input
@@ -100,7 +99,6 @@ Properties
 - api/link/ui.colorpicker_suggest_config.md
 - api/link/ui.colorpicker_tabfocus_config.md
 - api/link/ui.colorpicker_template_config.md
-- api/link/ui.colorpicker_text_config.md
 - api/link/ui.colorpicker_timeicon_config.md
 - api/link/ui.colorpicker_timepicker_config.md
 - api/link/ui.colorpicker_tooltip_config.md

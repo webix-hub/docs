@@ -38,7 +38,7 @@ Properties
 - api/link/ui.property_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.property_template_config.md - the component template
 - api/link/ui.property_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
-- api/link/ui.property_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.property_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.property_width_config.md - sets the width of the component
 }}
 
