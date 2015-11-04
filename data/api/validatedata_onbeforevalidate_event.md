@@ -2,7 +2,7 @@ onBeforeValidate
 =============
 
 
-@short: called before runing validation
+@short: called before running validation
 	
 @example:
 dp.attachEvent("onBeforeValidate", function(){...});

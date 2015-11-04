@@ -72,7 +72,7 @@ var store = new webix.DataCollection({ url:"data.php" });
 - api/link/datacollection_onafteradd_event.md - fires after adding item to datastore
 - api/link/datacollection_onaftercursorchange_event.md - fires after the cursor changes its position.
 - api/link/datacollection_onafterdelete_event.md - fires after item deleting
-- api/link/datacollection_onafterload_event.md - fires after server side loading is complete
+- api/link/datacollection_onafterload_event.md - fires after data loading is complete
 - api/link/datacollection_onaftersort_event.md - fires after sorting dataset
 - api/link/datacollection_onbeforeadd_event.md - fires before adding item to datastore
 - api/link/datacollection_onbeforecursorchange_event.md - fires before the cursor changes its position.
@@ -107,7 +107,7 @@ var store = new webix.DataCollection({ url:"data.php" });
 - api/link/datacollection_rules_config.md - set of validation rules for the component
 - api/link/datacollection_save_config.md - defines URLs for data saving
 - api/link/datacollection_scheme_config.md - defines schemes for data processing
-- api/link/datacollection_url_config.md - the URL the component will use to load data after its initialization
+- api/link/datacollection_url_config.md - the URL which the component will use to load data after its initialization
 }}
 
 

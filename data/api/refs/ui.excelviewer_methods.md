@@ -66,7 +66,7 @@ Methods
 - api/link/ui.excelviewer_getparentview.md - returns the parent view of the component
 - api/link/ui.excelviewer_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
 - api/link/ui.excelviewer_getscrollstate.md - returns the current position of scrolls
-- api/link/ui.excelviewer_getselectedid.md - returns the selected cells
+- api/link/ui.excelviewer_getselectedid.md - returns the selected cells' ids as objects or strings
 - api/link/ui.excelviewer_getselecteditem.md - gets an object of the selected data item
 - api/link/ui.excelviewer_getstate.md - returns the current state of the view
 - api/link/ui.excelviewer_getsubview.md - returns subview of the item with the given id

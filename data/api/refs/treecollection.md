@@ -79,7 +79,7 @@ var store = new webix.TreeCollection({ url:"tree.php" });
 - api/link/treecollection_onafteradd_event.md - fires after adding item to datastore
 - api/link/treecollection_onaftercursorchange_event.md - fires after the cursor changes its position.
 - api/link/treecollection_onafterdelete_event.md - fires after item deleting
-- api/link/treecollection_onafterload_event.md - fires after server side loading is complete
+- api/link/treecollection_onafterload_event.md - fires after data loading is complete
 - api/link/treecollection_onaftersort_event.md - fires after sorting dataset
 - api/link/treecollection_onbeforeadd_event.md - fires before adding item to datastore
 - api/link/treecollection_onbeforecursorchange_event.md - fires before the cursor changes its position.
@@ -115,7 +115,7 @@ var store = new webix.TreeCollection({ url:"tree.php" });
 - api/link/treecollection_rules_config.md - set of validation rules for the component
 - api/link/treecollection_save_config.md - defines URLs for data saving
 - api/link/treecollection_scheme_config.md - defines schemes for data processing
-- api/link/treecollection_url_config.md - the URL the component will use to load data after its initialization
+- api/link/treecollection_url_config.md - the URL which the component will use to load data after its initialization
 }}
 
 

@@ -79,13 +79,13 @@ dummy stub
 - api/link/ui.pdfbar_onafterscroll_event.md - fires when to component is scrolled in any direction
 - api/link/ui.pdfbar_onaftervalidation_event.md - fires after data has been validated
 - api/link/ui.pdfbar_onbeforeload_event.md - occurs immediately before data loading has been started
-- api/link/ui.pdfbar_onbeforevalidate_event.md - called before runing validation
+- api/link/ui.pdfbar_onbeforevalidate_event.md - called before running validation
 - api/link/ui.pdfbar_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.pdfbar_onchange_event.md - fires when data in the input or related form/toolbar is changed
 - api/link/ui.pdfbar_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.pdfbar_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.pdfbar_onvalidationerror_event.md - fires when the form fails to pass validation
-- api/link/ui.pdfbar_onvalidationsuccess_event.md - fires after the form has passes validation successfully
+- api/link/ui.pdfbar_onvalidationsuccess_event.md - fires after the form has passed validation successfully
 - api/link/ui.pdfbar_onvalues_event.md - fires after values have been set within toolbar or form
 }}
 
@@ -125,7 +125,7 @@ dummy stub
 - api/link/ui.pdfbar_scroll_config.md - enables/disables the scroll bar
 - api/link/ui.pdfbar_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.pdfbar_type_config.md - defines the layout borders
-- api/link/ui.pdfbar_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.pdfbar_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.pdfbar_visiblebatch_config.md - sets the batch that will be shown initially
 - api/link/ui.pdfbar_width_config.md - sets the width of the component
 }}

@@ -1,7 +1,7 @@
 onAfterSave
 =============
 
-@short: fires after serverside responce has been received and processed
+@short: fires after serverside response has been received and processed
 
 @params:
 - response	object	json object with details of server side response
