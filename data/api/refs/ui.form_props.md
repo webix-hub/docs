@@ -35,7 +35,7 @@ Properties
 - api/link/ui.form_scroll_config.md - enables/disables the scroll bar
 - api/link/ui.form_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.form_type_config.md - defines the layout borders
-- api/link/ui.form_url_config.md - the URL which the component will use to load data after its initialization
+- api/link/ui.form_url_config.md - the URL the component will use to load data after its initialization
 - api/link/ui.form_visiblebatch_config.md - sets the batch that will be shown initially
 - api/link/ui.form_width_config.md - sets the width of the component
 }}

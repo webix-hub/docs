@@ -30,7 +30,7 @@ Properties
 - api/link/ui.proto_template_config.md - the component template
 - api/link/ui.proto_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.proto_type_config.md - object that specifies items presentation
-- api/link/ui.proto_url_config.md - the URL which the component will use to load data after its initialization
+- api/link/ui.proto_url_config.md - the URL the component will use to load data after its initialization
 - api/link/ui.proto_width_config.md - sets the width of the component
 }}
 

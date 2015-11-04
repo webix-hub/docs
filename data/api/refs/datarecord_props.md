@@ -7,7 +7,7 @@ Properties
 - api/link/datarecord_datatype_config.md - the type of loaded data
 - api/link/datarecord_id_config.md - the component ID
 - api/link/datarecord_on_config.md - allows attaching custom handlers to inner events of the component
-- api/link/datarecord_url_config.md - the URL which the component will use to load data after its initialization
+- api/link/datarecord_url_config.md - the URL the component will use to load data after its initialization
 }}
 
 @index:

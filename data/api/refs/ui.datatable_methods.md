@@ -67,7 +67,7 @@ Methods
 - api/link/ui.datatable_getparentview.md - returns the parent view of the component
 - api/link/ui.datatable_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
 - api/ui.datatable_getscrollstate.md - returns the current position of scrolls
-- api/ui.datatable_getselectedid.md - returns the selected cells' ids as objects or strings
+- api/ui.datatable_getselectedid.md - returns the selected cells
 - api/ui.datatable_getselecteditem.md - gets an object of the selected data item
 - api/link/ui.datatable_getstate.md - returns the current state of the view
 - api/ui.datatable_getsubview.md - returns subview of the item with the given id

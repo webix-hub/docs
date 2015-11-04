@@ -52,8 +52,7 @@ webix.ui({
 - **type** - object that contains setting for menu items, namely:
 	- **subsign** (boolean) - sets an arrow for an item containing a submenu;
     - **height** and **width** (number) of each item;
-- **openAction** (string) - alters the way of submenu opening - **"click"**. If set, you should first click a menu item to enable submenu opening and hiding on "onMouseOver" and "onMouseOut" events.
-To hide submenus, you need to click somewhere outside the menu;
+- **openAction** (string) - alters the way of submenu opening - **"click"**. If set, you should first click menu item to enable its opening and hiding on "onMouseOver" and "onMouseOut" events;
 - **template** - (string, function) - rules of data presentation. See [Data templates](desktop/html_templates.md) article for details.
 - **data** (object) - inline data desires format. See [Loading data](desktop/data_loading.md) article for details.
 

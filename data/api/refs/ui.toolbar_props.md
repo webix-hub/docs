@@ -34,7 +34,7 @@ Properties
 - api/link/ui.toolbar_scroll_config.md - enables/disables the scroll bar
 - api/link/ui.toolbar_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.toolbar_type_config.md - defines the layout borders
-- api/link/ui.toolbar_url_config.md - the URL which the component will use to load data after its initialization
+- api/link/ui.toolbar_url_config.md - the URL the component will use to load data after its initialization
 - api/link/ui.toolbar_visiblebatch_config.md - sets the batch that will be shown initially
 - api/link/ui.toolbar_width_config.md - sets the width of the component
 }}

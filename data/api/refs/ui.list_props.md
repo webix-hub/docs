@@ -48,7 +48,7 @@ Properties
 - api/link/ui.list_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
 - api/link/ui.list_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.list_type_config.md - object that specifies items presentation
-- api/link/ui.list_url_config.md - the URL which the component will use to load data after its initialization
+- api/link/ui.list_url_config.md - the URL the component will use to load data after its initialization
 - api/link/ui.list_width_config.md - sets the width of the component
 - api/ui.list_xcount_config.md - defines width of view in items
 - api/ui.list_ycount_config.md - defines height of view in items

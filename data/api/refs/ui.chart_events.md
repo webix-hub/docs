@@ -5,7 +5,7 @@ Events
 - api/link/ui.chart_onafteradd_event.md - fires after adding item to datastore
 - api/link/ui.chart_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.chart_onafterdelete_event.md - fires after item deleting
-- api/link/ui.chart_onafterload_event.md - fires after data loading is complete
+- api/link/ui.chart_onafterload_event.md - fires after server side loading is complete
 - api/ui.chart_onafterrender_event.md - called after the rendering of calendar is complete.
 - api/link/ui.chart_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.chart_onaftersort_event.md - fires after sorting dataset

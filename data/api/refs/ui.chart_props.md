@@ -58,7 +58,7 @@ Properties
 - api/ui.chart_shadow_config.md - enables/disables the pie shadow
 - api/link/ui.chart_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/ui.chart_type_config.md - sets the chart type
-- api/link/ui.chart_url_config.md - the URL which the component will use to load data after its initialization
+- api/link/ui.chart_url_config.md - the URL the component will use to load data after its initialization
 - api/ui.chart_value_config.md - defines values for the vertical axis
 - api/link/ui.chart_width_config.md - sets the width of the component
 - api/ui.chart_x_config.md - the horizontal position of the pie center

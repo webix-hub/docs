@@ -2,7 +2,7 @@ onAfterInsert
 =============
 
 
-@short: fires after successful data insertion
+@short: fires after successfull data insertion
 	
 
 @params:

@@ -5,7 +5,7 @@ The webix library contains **view-less** yet meaningful elements. They have no g
 
 - [**DataValue**](api/refs/datavalue.md) - stores a single value like any input control ([text](desktop/text.md), [button](desktop/button.md), [label](desktop/label.md), etc.);
 - [**DataRecord**](api/refs/datarecord.md) - stores a single record like [form](desktop/form.md) and [htmlform](desktop/htmlform.md);
-- [**DataCollection**](api/refs/datacollection.md) - stores a non-hierarchical collection of records (like [list](desktop/list.md), [dataview](desktop/dataview.md), 
+- [**DataCollection**](api/refs/datarecord.md) - stores a non-hierarchical collection of records (like [list](desktop/list.md), [dataview](desktop/dataview.md), 
 [datatable](datatable/index.md), etc.);
 - [**TreeCollection**](api/refs/treecollection.md) - stores a hierarchical collection of records (like [tree](datatree/index.md) and [treetable](desktop/treetable.md)).
 

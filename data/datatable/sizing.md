@@ -96,8 +96,6 @@ grid = new webix.ui({
 
 **Relative Sizing**
 
-- adjusting the width of datatable to the parent container 
-
 If you set widths for columns and their sum is less than the width of the parent container, you can use the **fillspace** attribute to force some of columns to widen for filling the unused space.
 
 
@@ -118,8 +116,6 @@ grid = new webix.ui({
 ~~~
 {{sample 15_datatable/09_columns/02_autosize_column.html }}
 
-- adjusting the width of a column to other datatable columns
-
 There can be more than one **fillspace** in the datatable; in this case width will be calculated on the base of a proportion defined by numeric values: 
 
 ~~~js
@@ -133,7 +129,7 @@ grid = new webix.ui({
 });
 ~~~
 
-In the above code the *title* column is 4 times bigger than the *id* column, which is 20 to 80 percent relation. 
+In the code above *title* column is 4 times bigger then *id* column, which is 20 to 80 percent relation. 
 
 **Adjusting column to its content**
 

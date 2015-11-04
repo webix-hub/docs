@@ -119,7 +119,7 @@ The component serves as the base class that defines properties, methods, and eve
 - api/link/ui.list_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.list_onafterdelete_event.md - fires after item deleting
 - api/link/ui.list_onafterdrop_event.md - fires after drag-n-drop was finished
-- api/link/ui.list_onafterload_event.md - fires after data loading is complete
+- api/link/ui.list_onafterload_event.md - fires after server side loading is complete
 - api/link/ui.list_onafterrender_event.md - occurs immediately after the component has been rendered
 - api/link/ui.list_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.list_onafterselect_event.md - fires after item was selected
@@ -214,7 +214,7 @@ The component serves as the base class that defines properties, methods, and eve
 - api/link/ui.list_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
 - api/link/ui.list_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.list_type_config.md - object that specifies items presentation
-- api/link/ui.list_url_config.md - the URL which the component will use to load data after its initialization
+- api/link/ui.list_url_config.md - the URL the component will use to load data after its initialization
 - api/link/ui.list_width_config.md - sets the width of the component
 - api/ui.list_xcount_config.md - defines width of view in items
 - api/ui.list_ycount_config.md - defines height of view in items

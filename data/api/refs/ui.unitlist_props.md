@@ -50,7 +50,7 @@ Properties
 - api/link/ui.unitlist_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.unitlist_type_config.md - object that specifies items presentation
 - api/ui.unitlist_uniteby_config.md - sets the template according which items will be grouped in units.
-- api/link/ui.unitlist_url_config.md - the URL which the component will use to load data after its initialization
+- api/link/ui.unitlist_url_config.md - the URL the component will use to load data after its initialization
 - api/link/ui.unitlist_width_config.md - sets the width of the component
 - api/link/ui.unitlist_xcount_config.md - defines width of view in items
 - api/link/ui.unitlist_ycount_config.md - defines height of view in items

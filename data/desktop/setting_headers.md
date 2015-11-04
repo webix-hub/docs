@@ -94,23 +94,4 @@ Headers of **tabview tabs** are defined as header properties of tabview **cells*
 
 UI-related **[window](desktop/window.md)** features header defined by its **head** property. 
 
-##Adding buttons into the header 
-
-Since a header is a template, only HTML-buttons can be added into it.
-If you want to add some buttons into the header of a component, the best solution is to use the desktop/toolbar.md component:
-
-~~~js
-webix.ui({
-  view:"toolbar", 
-  cols:[
-    { view:"label", label:"Projects", width:400,},
-    { view:"button", value:"Load" },
-    { view:"button", value:"Save" },
-    { view:"button", value:"Info" }
-  ]
-});
-~~~
-
-{{editor http://webix.com/snippet/1f562d52	Toolbar with Buttons in the Header}}
-
 @complexity:2

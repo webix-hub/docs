@@ -3,7 +3,7 @@ attachProgress
 
 
 @short:
-	assigns handler for data saving actions
+	asssigns handler for data saving actions
 
 @params:
 - start		function	handler will be called for data saving start

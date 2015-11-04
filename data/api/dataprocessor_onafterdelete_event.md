@@ -2,7 +2,7 @@ onAfterDelete
 =============
 
 
-@short: fires after successful data deletion
+@short: fires after successfull data deletion
 	
 
 @params:

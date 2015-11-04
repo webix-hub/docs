@@ -1,1 +1,0 @@
-@link: api/ui.menu_openaction_config.md

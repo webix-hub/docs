@@ -2,46 +2,27 @@ getSelectedId
 =============
 
 @short:
-	returns the selected elements' ids
+	returns the selected cells
 
 @params:
-- asArray		boolean		optional, specifies whether the returning result should be array
-- asString		boolean		optional, specifies whether the returning result should be string
+*asArray    boolean    specifies whether the returning result can be only array or both array and object
+*asString   boolean    the id will be a string ( row id )
 
 @returns:
-- ids			object/array/string			cell/row/column id or array of them
+-selected cells    object,array    the currently selected cells
 
 @example:
-
-//return ids as an array of objects
-grid.getSelectedId(true);
-
-//return ids as an array of strings
-grid.getSelectedId(true, true);
 
 
 @template:	api_method
 @descr:
-
-If no parameters were passed to the method, it returns the id as an object (for one selected element) or as an array of objects (for several elements).
-
-The format of the selection result if the second parameter (asString) is false:
-
-~~~js
-{ column:"votes", row:4, id:4 } // "row" selection
-~~~
-
-where:
+The format of the selection object:
 
 - <i>column</i> - the column id
 - <i>row</i> - the row id
-- <i>id</i> - string value of the ID (the same as if you pass asString)
+- <i>id</i> - the cell id ({row}_{column})
 
-If the "asString" parameter was set, the result value depends on the selection mode: 
-
-- "row" or true - 4 (as in dataset)
-- "column" - "votes"
-- "cell" -  "4_votes"
+if "asString" parameter was set, only row id will be returned
 
 @related:
 	datatable/selection.md

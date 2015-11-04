@@ -121,7 +121,7 @@ Support for various data template formats, sorting and filtering features. Check
 - api/link/ui.unitlist_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.unitlist_onafterdelete_event.md - fires after item deleting
 - api/link/ui.unitlist_onafterdrop_event.md - fires after drag-n-drop was finished
-- api/link/ui.unitlist_onafterload_event.md - fires after data loading is complete
+- api/link/ui.unitlist_onafterload_event.md - fires after server side loading is complete
 - api/link/ui.unitlist_onafterrender_event.md - occurs immediately after the component has been rendered
 - api/link/ui.unitlist_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.unitlist_onafterselect_event.md - fires after item was selected
@@ -218,7 +218,7 @@ Support for various data template formats, sorting and filtering features. Check
 - api/link/ui.unitlist_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.unitlist_type_config.md - object that specifies items presentation
 - api/ui.unitlist_uniteby_config.md - sets the template according which items will be grouped in units.
-- api/link/ui.unitlist_url_config.md - the URL which the component will use to load data after its initialization
+- api/link/ui.unitlist_url_config.md - the URL the component will use to load data after its initialization
 - api/link/ui.unitlist_width_config.md - sets the width of the component
 - api/link/ui.unitlist_xcount_config.md - defines width of view in items
 - api/link/ui.unitlist_ycount_config.md - defines height of view in items
