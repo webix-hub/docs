@@ -64,7 +64,7 @@ Properties
 - api/link/ui.submenu_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.submenu_top_config.md - the top offset of a window
 - api/link/ui.submenu_type_config.md - object that specifies items presentation
-- api/link/ui.submenu_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.submenu_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.submenu_width_config.md - sets the width of the component
 - api/link/ui.submenu_xcount_config.md - defines width of view in items
 - api/link/ui.submenu_ycount_config.md - defines height of view in items

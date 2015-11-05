@@ -44,7 +44,7 @@ Properties
 - api/link/ui.tree_threestate_config.md - defines three-state checkboxes for the tree. Flase by default.
 - api/link/ui.tree_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.tree_type_config.md - object that specifies items presentation
-- api/link/ui.tree_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.tree_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.tree_width_config.md - sets the width of the component
 }}
 

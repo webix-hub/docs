@@ -13,7 +13,7 @@ Events
 - api/link/ui.treetable_onaftereditstart_event.md - fires after edit operation was initiated, editor opened and ready for input
 - api/link/ui.treetable_onaftereditstop_event.md - fires after edit operation finished
 - api/link/ui.treetable_onafterfilter_event.md - occurs after datatable was filtered
-- api/link/ui.treetable_onafterload_event.md - fires after server side loading is complete
+- api/link/ui.treetable_onafterload_event.md - fires after data loading is complete
 - api/link/ui.treetable_onafteropen_event.md - fires after the branch has been opened
 - api/link/ui.treetable_onafterrender_event.md - occurs each time after the view is rendered
 - api/link/ui.treetable_onafterscroll_event.md - occurs when some webix view has been scrolled

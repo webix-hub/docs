@@ -97,7 +97,7 @@ The class defines properties, methods, and events related to loading and renderi
 {{api
 - api/link/ui.proto_onafteradd_event.md - fires after adding item to datastore
 - api/link/ui.proto_onafterdelete_event.md - fires after item deleting
-- api/link/ui.proto_onafterload_event.md - fires after server side loading is complete
+- api/link/ui.proto_onafterload_event.md - fires after data loading is complete
 - api/link/ui.proto_onafterrender_event.md - occurs immediately after the component has been rendered
 - api/link/ui.proto_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.proto_onaftersort_event.md - fires after sorting dataset
@@ -158,7 +158,7 @@ The class defines properties, methods, and events related to loading and renderi
 - api/link/ui.proto_template_config.md - the component template
 - api/link/ui.proto_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.proto_type_config.md - object that specifies items presentation
-- api/link/ui.proto_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.proto_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.proto_width_config.md - sets the width of the component
 }}
 

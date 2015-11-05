@@ -12,7 +12,7 @@ Events
 - api/link/ui.excelviewer_onaftereditstart_event.md - fires after edit operation was initiated, editor opened and ready for input
 - api/link/ui.excelviewer_onaftereditstop_event.md - fires after edit operation finished
 - api/link/ui.excelviewer_onafterfilter_event.md - occurs after datatable was filtered
-- api/link/ui.excelviewer_onafterload_event.md - fires after server side loading is complete
+- api/link/ui.excelviewer_onafterload_event.md - fires after data loading is complete
 - api/link/ui.excelviewer_onafterrender_event.md - occurs each time after the view is rendered
 - api/link/ui.excelviewer_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.excelviewer_onafterselect_event.md - fires after a cell is selected

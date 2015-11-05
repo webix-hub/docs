@@ -2,7 +2,7 @@ onValidationSuccess
 =============
 
 
-@short: fires after the form has passes validation successfully
+@short: fires after the form has passed validation successfully
 	
 
 @params:
