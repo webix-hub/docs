@@ -167,6 +167,12 @@ Context components let displaying spatial and temporal information on some user'
 		</a>
     </div>
     <div>
+		<a href="desktop/sidemenu.md">
+			<img src="desktop/icons/sidemenu.png"/>
+			<br>Sidemenu
+		</a>
+    </div>
+    <div>
 		<a href="desktop/window.md">
 			<img src="desktop/icons/window.png"/>
 			<br>Window
@@ -340,6 +346,7 @@ div.controls_group img {
 - desktop/portlet.md
 - desktop/property_sheet.md
 - desktop/scrollview.md
+- desktop/sidemenu.md
 - desktop/tabview.md
 - desktop/template.md
 - desktop/toolbar.md
