@@ -1,0 +1,1 @@
+@link: api/basebind_onbindrequest_event.md

@@ -1,0 +1,114 @@
+Properties
+==========
+
+{{api
+- api/ui.treemap_activeitem_config.md - 
+- api/link/ui.treemap_animate_config.md - defines or disables view change animation.
+- api/link/ui.treemap_borderless_config.md - used to hide the component borders
+- api/ui.treemap_branch_config.md - 
+- api/link/ui.treemap_click_config.md - sets an action happening on a button click
+- api/link/ui.treemap_clipboard_config.md - enables/disables clipboard support
+- api/link/ui.treemap_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.treemap_css_config.md - the name of a css class that will be applied to the view container
+- api/link/ui.treemap_data_config.md - JavaScript array containing data for the component
+- api/link/ui.treemap_datafeed_config.md - the URL that the component will use to reload data during binding
+- api/link/ui.treemap_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
+- api/link/ui.treemap_datatype_config.md - the type of loaded data
+- api/link/ui.treemap_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.treemap_drag_config.md - enables or disables drag-and-drop
+- api/link/ui.treemap_dragscroll_config.md - enables autoscroll of component during drag-n-drop
+- api/link/ui.treemap_filtermode_config.md - defines the pattern for tree item filtering
+- api/link/ui.treemap_gravity_config.md - sets the view gravity (1 by default)
+- api/ui.treemap_header_config.md - 
+- api/ui.treemap_headerheight_config.md - 
+- api/ui.treemap_headertemplate_config.md - 
+- api/link/ui.treemap_height_config.md - sets the height of the component
+- api/link/ui.treemap_hidden_config.md - defines whether the view will be hidden initially
+- api/link/ui.treemap_id_config.md - the component ID
+- api/link/ui.treemap_maxheight_config.md - sets the maximum height for the view
+- api/link/ui.treemap_maxwidth_config.md - sets the maximum width for the view
+- api/link/ui.treemap_minheight_config.md - sets the minimal height for the view
+- api/link/ui.treemap_minwidth_config.md - sets the minimal width for the view
+- api/link/ui.treemap_mouseeventdelay_config.md - the delay between a real mouse action and invoking the related events
+- api/link/ui.treemap_multiselect_config.md - enables multiselect mode
+- api/link/ui.treemap_navigation_config.md - activates the selection keyboard navigation
+- api/link/ui.treemap_on_config.md - allows attaching custom handlers to inner events of the component
+- api/link/ui.treemap_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
+- api/link/ui.treemap_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
+- api/link/ui.treemap_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.treemap_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
+- api/link/ui.treemap_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
+- api/link/ui.treemap_ready_config.md - event handler called just after the component has been completely initialized
+- api/link/ui.treemap_removemissed_config.md - defines how to treat items in case of reloading
+- api/link/ui.treemap_rules_config.md - set of validation rules for the component
+- api/link/ui.treemap_save_config.md - defines URLs for data saving
+- api/link/ui.treemap_scheme_config.md - defines schemes for data processing
+- api/link/ui.treemap_scroll_config.md - enables/disables the scroll bar
+- api/link/ui.treemap_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
+- api/link/ui.treemap_select_config.md - enables/disables item selection or multiselection in grouplist
+- api/ui.treemap_subrender_config.md - 
+- api/link/ui.treemap_template_config.md - the component template
+- api/link/ui.treemap_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
+- api/link/ui.treemap_threestate_config.md - enable three-state checkboxes
+- api/link/ui.treemap_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.treemap_type_config.md - object that specifies items presentation
+- api/link/ui.treemap_url_config.md - the URL which the component will use to load data after its initialization
+- api/ui.treemap_value_config.md - 
+- api/link/ui.treemap_width_config.md - sets the width of the component
+}}
+
+@index:
+- api/ui.treemap_activeitem_config.md
+- api/link/ui.treemap_animate_config.md
+- api/link/ui.treemap_borderless_config.md
+- api/ui.treemap_branch_config.md
+- api/link/ui.treemap_click_config.md
+- api/link/ui.treemap_clipboard_config.md
+- api/link/ui.treemap_container_config.md
+- api/link/ui.treemap_css_config.md
+- api/link/ui.treemap_data_config.md
+- api/link/ui.treemap_datafeed_config.md
+- api/link/ui.treemap_datathrottle_config.md
+- api/link/ui.treemap_datatype_config.md
+- api/link/ui.treemap_disabled_config.md
+- api/link/ui.treemap_drag_config.md
+- api/link/ui.treemap_dragscroll_config.md
+- api/link/ui.treemap_filtermode_config.md
+- api/link/ui.treemap_gravity_config.md
+- api/ui.treemap_header_config.md
+- api/ui.treemap_headerheight_config.md
+- api/ui.treemap_headertemplate_config.md
+- api/link/ui.treemap_height_config.md
+- api/link/ui.treemap_hidden_config.md
+- api/link/ui.treemap_id_config.md
+- api/link/ui.treemap_maxheight_config.md
+- api/link/ui.treemap_maxwidth_config.md
+- api/link/ui.treemap_minheight_config.md
+- api/link/ui.treemap_minwidth_config.md
+- api/link/ui.treemap_mouseeventdelay_config.md
+- api/link/ui.treemap_multiselect_config.md
+- api/link/ui.treemap_navigation_config.md
+- api/link/ui.treemap_on_config.md
+- api/link/ui.treemap_onclick_config.md
+- api/link/ui.treemap_oncontext_config.md
+- api/link/ui.treemap_ondblclick_config.md
+- api/link/ui.treemap_onmousemove_config.md
+- api/link/ui.treemap_pager_config.md
+- api/link/ui.treemap_ready_config.md
+- api/link/ui.treemap_removemissed_config.md
+- api/link/ui.treemap_rules_config.md
+- api/link/ui.treemap_save_config.md
+- api/link/ui.treemap_scheme_config.md
+- api/link/ui.treemap_scroll_config.md
+- api/link/ui.treemap_scrollspeed_config.md
+- api/link/ui.treemap_select_config.md
+- api/ui.treemap_subrender_config.md
+- api/link/ui.treemap_template_config.md
+- api/link/ui.treemap_templatecopy_config.md
+- api/link/ui.treemap_threestate_config.md
+- api/link/ui.treemap_tooltip_config.md
+- api/link/ui.treemap_type_config.md
+- api/link/ui.treemap_url_config.md
+- api/ui.treemap_value_config.md
+- api/link/ui.treemap_width_config.md
+

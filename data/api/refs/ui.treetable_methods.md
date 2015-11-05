@@ -75,7 +75,7 @@ Methods
 - api/link/ui.treetable_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
 - api/link/ui.treetable_getprevsiblingid.md - returns the id of the previous sibling of the specified node
 - api/link/ui.treetable_getscrollstate.md - returns the current position of scrolls
-- api/link/ui.treetable_getselectedid.md - returns the selected cells' ids as objects or strings
+- api/link/ui.treetable_getselectedid.md - returns the selected elements' ids
 - api/link/ui.treetable_getselecteditem.md - gets an object of the selected data item
 - api/link/ui.treetable_getstate.md - returns the current state of the view
 - api/link/ui.treetable_gettext.md - returns text value of a cell

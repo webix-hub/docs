@@ -224,7 +224,7 @@ The component is a compliment to the menu component and not intended for direct 
 - api/link/ui.submenu_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.submenu_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
 - api/link/ui.submenu_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
-- api/link/ui.submenu_openaction_config.md - 
+- api/link/ui.submenu_openaction_config.md - alters the way of submenu opening to "click"
 - api/link/ui.submenu_padding_config.md - sets paddings of the chart content
 - api/link/ui.submenu_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
 - api/link/ui.submenu_position_config.md - sets position of the window relative to the the screen

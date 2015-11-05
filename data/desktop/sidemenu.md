@@ -6,7 +6,6 @@ Sidemenu
 - [Methods, properties and events](api__refs__ui.sidemenu.html)
 - [Samples](http://docs.webix.com/samples/28_sidemenu/index.html)
 
-- api/refs/ui.sidemenu.md
 
 ##Overview
 

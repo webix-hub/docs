@@ -210,7 +210,7 @@ The component can be displayed in 2 modes: static (the menu is fully expanded al
 - api/link/ui.menu_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.menu_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
 - api/link/ui.menu_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
-- api/ui.menu_openaction_config.md - 
+- api/ui.menu_openaction_config.md - alters the way of submenu opening to "click"
 - api/link/ui.menu_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
 - api/link/ui.menu_ready_config.md - event handler called just after the component has been completely initialized
 - api/link/ui.menu_removemissed_config.md - defines how to treat items in case of reloading

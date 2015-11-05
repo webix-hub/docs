@@ -96,7 +96,7 @@ The component is full of various possibilities: filtering, sorting, pagination, 
 - api/link/ui.datatable_getparentview.md - returns the parent view of the component
 - api/link/ui.datatable_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
 - api/ui.datatable_getscrollstate.md - returns the current position of scrolls
-- api/ui.datatable_getselectedid.md - returns the selected cells
+- api/ui.datatable_getselectedid.md - returns the selected elements' ids
 - api/ui.datatable_getselecteditem.md - gets an object of the selected data item
 - api/link/ui.datatable_getstate.md - returns the current state of the view
 - api/ui.datatable_getsubview.md - returns subview of the item with the given id
@@ -183,7 +183,7 @@ The component is full of various possibilities: filtering, sorting, pagination, 
 - api/link/ui.datatable_onaftereditstart_event.md - fires after edit operation was initiated, editor opened and ready for input
 - api/link/ui.datatable_onaftereditstop_event.md - fires after edit operation finished
 - api/ui.datatable_onafterfilter_event.md - occurs after datatable was filtered
-- api/link/ui.datatable_onafterload_event.md - fires after server side loading is complete
+- api/link/ui.datatable_onafterload_event.md - fires after data loading is complete
 - api/ui.datatable_onafterrender_event.md - occurs each time after the view is rendered
 - api/link/ui.datatable_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/ui.datatable_onafterselect_event.md - fires after a cell is selected
@@ -334,7 +334,7 @@ The component is full of various possibilities: filtering, sorting, pagination, 
 - api/ui.datatable_subview_config.md - adds a subview configuration into datatable
 - api/link/ui.datatable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/ui.datatable_type_config.md - used for configuring presentation of items
-- api/link/ui.datatable_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.datatable_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.datatable_width_config.md - sets the width of the component
 - api/ui.datatable_ycount_config.md - defines height of datatable in rows
 }}

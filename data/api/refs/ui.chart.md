@@ -97,7 +97,7 @@ It's possible to present multiple data sets on the same chart.  Check [chart](de
 - api/link/ui.chart_onafteradd_event.md - fires after adding item to datastore
 - api/link/ui.chart_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.chart_onafterdelete_event.md - fires after item deleting
-- api/link/ui.chart_onafterload_event.md - fires after server side loading is complete
+- api/link/ui.chart_onafterload_event.md - fires after data loading is complete
 - api/ui.chart_onafterrender_event.md - called after the rendering of calendar is complete.
 - api/link/ui.chart_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.chart_onaftersort_event.md - fires after sorting dataset
@@ -189,7 +189,7 @@ It's possible to present multiple data sets on the same chart.  Check [chart](de
 - api/ui.chart_shadow_config.md - enables/disables the pie shadow
 - api/link/ui.chart_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/ui.chart_type_config.md - sets the chart type
-- api/link/ui.chart_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.chart_url_config.md - the URL which the component will use to load data after its initialization
 - api/ui.chart_value_config.md - defines values for the vertical axis
 - api/link/ui.chart_width_config.md - sets the width of the component
 - api/ui.chart_x_config.md - the horizontal position of the pie center

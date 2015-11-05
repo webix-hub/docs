@@ -21,6 +21,7 @@ webix.extend(store, webix.TreeStore, true);
 - api/treestore_count.md - returns the number of currently visible items (counts both parent and child nodes)
 - api/treestore_each.md - iterates through the collection of tree data items
 - api/treestore_eachchild.md - iterates through the first-level childs of the specified branch
+- api/treestore_eachleaf.md - 
 - api/treestore_eachopen.md - iterates through opened nodes of the tree (both parent and child)
 - api/treestore_eachsubitem.md - iterates through all childs (of any level) of the specified branch
 - api/treestore_getbranch.md - returns dataset from some branch in the tree-like component

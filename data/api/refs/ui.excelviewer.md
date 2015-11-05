@@ -77,7 +77,7 @@ dummy stub
 - api/link/ui.excelviewer_getparentview.md - returns the parent view of the component
 - api/link/ui.excelviewer_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
 - api/link/ui.excelviewer_getscrollstate.md - returns the current position of scrolls
-- api/link/ui.excelviewer_getselectedid.md - returns the selected cells
+- api/link/ui.excelviewer_getselectedid.md - returns the selected elements' ids
 - api/link/ui.excelviewer_getselecteditem.md - gets an object of the selected data item
 - api/link/ui.excelviewer_getstate.md - returns the current state of the view
 - api/link/ui.excelviewer_getsubview.md - returns subview of the item with the given id
@@ -160,7 +160,7 @@ dummy stub
 - api/link/ui.excelviewer_onaftereditstart_event.md - fires after edit operation was initiated, editor opened and ready for input
 - api/link/ui.excelviewer_onaftereditstop_event.md - fires after edit operation finished
 - api/link/ui.excelviewer_onafterfilter_event.md - occurs after datatable was filtered
-- api/link/ui.excelviewer_onafterload_event.md - fires after server side loading is complete
+- api/link/ui.excelviewer_onafterload_event.md - fires after data loading is complete
 - api/link/ui.excelviewer_onafterrender_event.md - occurs each time after the view is rendered
 - api/link/ui.excelviewer_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.excelviewer_onafterselect_event.md - fires after a cell is selected
@@ -313,7 +313,7 @@ dummy stub
 - api/ui.excelviewer_toolbar_config.md - 
 - api/link/ui.excelviewer_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.excelviewer_type_config.md - used for configuring presentation of items
-- api/link/ui.excelviewer_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.excelviewer_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.excelviewer_width_config.md - sets the width of the component
 - api/link/ui.excelviewer_ycount_config.md - defines height of datatable in rows
 }}

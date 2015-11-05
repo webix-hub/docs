@@ -121,6 +121,12 @@ Data components are used to present data of a specified type on the page. Such c
 			<br>Tree
 		</a>
     </div>
+     <div>
+		<a href="desktop/treemap.md">
+			<img src="desktop/icons/treemap.png"/>
+			<br>TreeMap
+		</a>
+    </div>
     <div>
 		<a href="desktop/treetable.md">
 			<img src="desktop/icons/treegrid.png"/>
@@ -350,6 +356,7 @@ div.controls_group img {
 - desktop/tabview.md
 - desktop/template.md
 - desktop/toolbar.md
+- desktop/treemap.md
 - datatree/index.md
 - desktop/treetable.md
 - desktop/unitlist.md
