@@ -114,6 +114,7 @@ The component presents a pop-up menu that is displayed when the user clicks the 
 - api/link/ui.contextmenu_setposition.md - sets window's position
 - api/link/ui.contextmenu_show.md - makes the component visible
 - api/link/ui.contextmenu_showitem.md - scrolls the component to make the specified item visible
+- api/link/ui.contextmenu_sizetocontent.md - 
 - api/link/ui.contextmenu_sort.md - sorts datastore
 - api/link/ui.contextmenu_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.contextmenu_unbind.md - breaks "bind" link
@@ -230,6 +231,7 @@ The component presents a pop-up menu that is displayed when the user clicks the 
 - api/link/ui.contextmenu_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.contextmenu_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
 - api/link/ui.contextmenu_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
+- api/link/ui.contextmenu_openaction_config.md - 
 - api/link/ui.contextmenu_padding_config.md - sets paddings of the chart content
 - api/link/ui.contextmenu_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
 - api/link/ui.contextmenu_position_config.md - sets position of the window relative to the the screen

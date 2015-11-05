@@ -108,6 +108,7 @@ The component is a compliment to the menu component and not intended for direct 
 - api/link/ui.submenu_setposition.md - sets window's position
 - api/link/ui.submenu_show.md - makes the component visible
 - api/link/ui.submenu_showitem.md - scrolls the component to make the specified item visible
+- api/link/ui.submenu_sizetocontent.md - 
 - api/link/ui.submenu_sort.md - sorts datastore
 - api/link/ui.submenu_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.submenu_unbind.md - breaks "bind" link
@@ -223,6 +224,7 @@ The component is a compliment to the menu component and not intended for direct 
 - api/link/ui.submenu_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.submenu_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
 - api/link/ui.submenu_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
+- api/link/ui.submenu_openaction_config.md - 
 - api/link/ui.submenu_padding_config.md - sets paddings of the chart content
 - api/link/ui.submenu_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
 - api/link/ui.submenu_position_config.md - sets position of the window relative to the the screen

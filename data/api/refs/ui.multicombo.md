@@ -106,6 +106,7 @@ Check [multicombo](desktop/multicombo.md) documentation for more detailed descri
 - api/link/ui.multicombo_label_config.md - the text label of the control
 - api/link/ui.multicombo_labelposition_config.md - positions label in relation the control
 - api/link/ui.multicombo_labelwidth_config.md - the width of the label
+- api/ui.multicombo_master_config.md - 
 - api/link/ui.multicombo_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.multicombo_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.multicombo_minheight_config.md - sets the minimal height for the view
@@ -124,8 +125,8 @@ Check [multicombo](desktop/multicombo.md) documentation for more detailed descri
 - api/ui.multicombo_separator_config.md - a delimiter for separating options in a multicombo, comma by default
 - api/link/ui.multicombo_suggest_config.md - links suggest list to the input
 - api/link/ui.multicombo_tabfocus_config.md - defines whether the control will be included in the tab navigation order
-- api/ui.multicombo_tagmode_config.md - 
-- api/ui.multicombo_tagtemplate_config.md - 
+- api/ui.multicombo_tagmode_config.md - defines presentation mode of input values
+- api/ui.multicombo_tagtemplate_config.md - defines template of input values
 - api/link/ui.multicombo_text_config.md - visible text in the related input
 - api/link/ui.multicombo_tooltip_config.md - tooltip for the input
 - api/link/ui.multicombo_validate_config.md - adds validation to the field

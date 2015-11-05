@@ -65,7 +65,7 @@ Events
 - api/ui.datatable_onstructureupdate_event.md - fires when structure of datatable was changed ( column added, hidden or reconfigured )
 - api/ui.datatable_onsubviewclose_event.md - 
 - api/ui.datatable_onsubviewcreate_event.md - fires after a subview was created
-- api/ui.datatable_onsubviewopen_event.md - 
+- api/ui.datatable_onsubviewopen_event.md - fires after a subview or subrow is opened
 - api/ui.datatable_onsubviewrender_event.md - fires each time subview is rendered
 - api/link/ui.datatable_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.datatable_onswipey_event.md - occurs on a vertical swipe movement
