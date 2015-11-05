@@ -101,7 +101,6 @@ ui.datepicker
 - api/link/ui.datepicker_bottompadding_config.md - sets the bottom offset of the control input
 - api/link/ui.datepicker_click_config.md - click action handler
 - api/link/ui.datepicker_container_config.md - an html container (or its id) where the component needs initializing
-- api/link/ui.datepicker_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.datepicker_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.datepicker_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.datepicker_editable_config.md - allows entering characters in datepicker input, false by default
@@ -110,7 +109,7 @@ ui.datepicker
 - api/link/ui.datepicker_height_config.md - sets the height of the component
 - api/link/ui.datepicker_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.datepicker_hotkey_config.md - sets a hotkey that triggers button clicking
-- api/ui.datepicker_icon_config.md - sets an icon type
+- api/link/ui.datepicker_icon_config.md - 
 - api/ui.datepicker_icons_config.md - shows "Today" and "Clear" icons for calendar and datepicker popup
 - api/link/ui.datepicker_id_config.md - the component ID
 - api/link/ui.datepicker_inputheight_config.md - the height of the input area, or a button's text value area.
@@ -135,7 +134,6 @@ ui.datepicker
 - api/ui.datepicker_stringresult_config.md - if the parameter is set to true, the method getValue returns data as string (otherwise, as object)
 - api/link/ui.datepicker_suggest_config.md - links suggest list to the input
 - api/link/ui.datepicker_tabfocus_config.md - defines whether the control will be included in the tab navigation order
-- api/link/ui.datepicker_template_config.md - the component template
 - api/ui.datepicker_text_config.md - visible text in the related input
 - api/ui.datepicker_timeicon_config.md - sets an icon for time in the datepicker
 - api/ui.datepicker_timepicker_config.md - enables optional timepicker in the calendar

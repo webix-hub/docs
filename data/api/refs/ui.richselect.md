@@ -102,14 +102,13 @@ The control combines a non-editable text field with a drop-down list of predefin
 - api/link/ui.richselect_bottompadding_config.md - sets the bottom offset of the control input
 - api/link/ui.richselect_click_config.md - click action handler
 - api/link/ui.richselect_container_config.md - an html container (or its id) where the component needs initializing
-- api/link/ui.richselect_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.richselect_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.richselect_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.richselect_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.richselect_height_config.md - sets the height of the component
 - api/link/ui.richselect_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.richselect_hotkey_config.md - sets a hotkey that triggers button clicking
-- api/ui.richselect_icon_config.md - sets an icon type
+- api/link/ui.richselect_icon_config.md - 
 - api/link/ui.richselect_id_config.md - the component ID
 - api/link/ui.richselect_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.richselect_inputpadding_config.md - padding of text in the input
@@ -134,10 +133,8 @@ The control combines a non-editable text field with a drop-down list of predefin
 - api/link/ui.richselect_required_config.md - marks field as required
 - api/link/ui.richselect_suggest_config.md - links suggest list to the input
 - api/link/ui.richselect_tabfocus_config.md - defines whether the control will be included in the tab navigation order
-- api/link/ui.richselect_template_config.md - the component template
 - api/ui.richselect_text_config.md - visible text in the related input
 - api/link/ui.richselect_tooltip_config.md - tooltip for the input
-- api/link/ui.richselect_type_config.md - the type of the control
 - api/link/ui.richselect_validate_config.md - adds validation to the field
 - api/link/ui.richselect_validateevent_config.md - on which event validation fires
 - api/link/ui.richselect_value_config.md - sets the initial value for a control

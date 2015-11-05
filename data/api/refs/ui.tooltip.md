@@ -86,7 +86,6 @@ Generally, the component isn't intended for direct initialization. But if you de
 - api/link/ui.tooltip_animate_config.md - defines or disables view change animation.
 - api/link/ui.tooltip_borderless_config.md - used to hide the component borders
 - api/link/ui.tooltip_container_config.md - an html container (or its id) where the component needs initializing
-- api/link/ui.tooltip_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.tooltip_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.tooltip_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.tooltip_dx_config.md - the left offset of the tooltip from the mouse pointer

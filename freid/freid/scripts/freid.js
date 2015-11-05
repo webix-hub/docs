@@ -19,7 +19,7 @@ webix_on_core_ready = function(){
 		if (typeof target == "function"){
 			delete source.$init;
 			var result = old_extend(target.prototype, source, force);
-			if (typeof source == "function")
+			if (typeof source == "function") 
 				target.prototype._proto_chain.push(source.prototype);
 			else
 				target.prototype._proto_chain.push(source);
@@ -190,8 +190,9 @@ var Freid = {
 		for (var key in col){
 			if (ignore && ignore[key])
 				continue;
+
 			var obj = check(key, col[key]);
-			if (obj){
+			if (obj && (!ignore || !ignore[obj.key])){
 				var exists = !!pull[name+obj.key];
 				if (!exists){
 					if (fossil){
@@ -590,15 +591,26 @@ var Freid = {
 		for (var x = 0; x<data[order].length; x++){
 			var method = data[order][x];
 			var record = data[pull][method];
+			var found = false;
 			for (var i=data.ancestors.length-1; i>=0; i--){
-				if (data.ancestors[i][2][pull][method] && !data.ancestors[i][2][pull][method].unsure){
+				if (!found && data.ancestors[i][2][pull][method] && !data.ancestors[i][2][pull][method].unsure){
 					record.defined = data.ancestors[i];
+					found = true;
+				}
+
+				var ignore = webix.debug_freid_ignore[data.ancestors[i][2].fullname];
+				if (ignore && ignore[method] === "all"){
+					delete data[pull][method];
+					data[order].splice(x,1);
+					x--;
 					break;
 				}
 			}
 		}
 	},
-	_get_events_from_ancestors:function(data, pull, order) {
+	_get_events_from_ancestors:function(data, pull, order, key) {
+		var ignore = key?webix.debug_freid_ignore[key]:null;
+
 		for (var i=data.ancestors.length-1; i>=0; i--){
 			//datastor or similar
 			var filter = data.ancestors[i][3];
@@ -606,11 +618,10 @@ var Freid = {
 			var anc = data.ancestors[i][2];
 			for (var x = 0; x<anc[order].length; x++){
 				var method = anc[order][x];
-				
 				if (!filter || filter[method]){
 					var record = anc[pull][method];
 					if (filter) record.unsure = false;
-					if (!data[pull][method] && !record.unsure && !record.bycode) {
+					if (!data[pull][method] && !record.unsure && !record.bycode && (!ignore || !ignore[method])){
 						data[order].push(method);
 						data[pull][method]=record;
 						record.defined = data.ancestors[i];
@@ -770,9 +781,9 @@ var Freid = {
 		this._get_by_code(data.instance, data.ePull, data.eOrder, "", this._is_code_event, key);
 		this._force_from_docs(data);
 
-		this._get_events_from_ancestors(data, "ePull", "eOrder");
-		this._get_events_from_ancestors(data, "aPull", "aOrder");
-		this._get_events_from_ancestors(data, "pPull", "pOrder");
+		this._get_events_from_ancestors(data, "ePull", "eOrder", key);
+		this._get_events_from_ancestors(data, "aPull", "aOrder", key);
+		this._get_events_from_ancestors(data, "pPull", "pOrder", key);
 
 		this._entity_by_ancestor(data, "mPull", "mOrder");
 		this._entity_by_ancestor(data, "pPull", "pOrder");
