@@ -31,19 +31,23 @@ webix.ui({
 });	
 ~~~
 
-- **lineColor** - color of the line that connects items in organogram
-
-~~~js
-webix.ui({
-	view: "organogram",
-    lineColor: "#90caf9",
-    ...
-});	
-~~~
 Items configuration
 ----------------------
 
 The appearance of Organogram items can also be changed by setting the following properties in the **type** parameter: 
+
+
+- **lineColor** - color of the line that connects items in organogram
+
+~~~js
+webix.ui({
+    view: "organogram",
+    type: {
+        lineColor: "#90caf9"
+    },
+    ...
+});
+~~~
 
 - **width** - the width of an item in pixels, must be a fixed number
 

@@ -1,7 +1,5 @@
-Accordion 
-=============
-
-###CSS Image Map
+Accordion CSS Image Map
+========================
 
 <img src="image_maps/accordion_css.png">
 
