@@ -81,12 +81,10 @@ In the **Webix Pro** edition the control can be extended to show either a **data
 
 ##Getting Current Value
 
-In case of a full initialization form, the **getValue()** method for richselect will return ID of selected option rather than text. Use **getText()** to get text value.  
+In case of a full initialization form, the **getValue()** method for richselect will return ID of selected option rather than text. Use **getText()** method to get text value.  
 
 ~~~js
 $$('field_t').getValue(); // ->returns 1
 
 $$('field_t').getText() // -> returns "One"
 ~~~
-
-{{sample 80_docs/unit_items.html}}
