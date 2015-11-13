@@ -12,12 +12,12 @@ Simply put, the technique uses the **protoUI();** command to construct the new c
 webix.protoUI({
    name:"newComponent", // the name of a new component
    $init:function(config){ 
-  		thid.load(data.xml)
+  		this.load(data.xml)
         //functions executed on component initialization
    },
    defaults: 
    		{width:200}
-   on:{'onItemClick', function(){}}, //attached events
+   on:{'onItemClick' : function(){}}, //attached events
    custom_func:function(){..function description..}, //any custom function
    $getSize: function(){..}, 
    $setSize:function(){..},
