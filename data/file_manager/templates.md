@@ -1,4 +1,4 @@
-Data Visualization
+Data Visualization in File Manager
 ==================
 
 Data items visualization in File Manager is rather flexible, so you can easily customize it by means of redefining the corresponding templates.

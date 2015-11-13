@@ -1,7 +1,6 @@
-Checkbox
+Checkbox CSS Image Map
 =============
 
-###CSS Image Map
 
 <img src="image_maps/checkbox_css.png"/>
 

@@ -1,4 +1,4 @@
-Data mapping
+Data Mapping
 ===============
 
 It's possible to define mapping between loaded data and columns of datatable. 
@@ -14,8 +14,16 @@ it defines which property of loaded data object need to be used for that column 
 grid = new webix.ui({
 	view:"datatable",
 	columns:[
-    	{ id:"size",    map:"#cells[0]#", header:"Will use value from first cell sub-tag" }
-        { id:"url",     map:"#details#", header:"Will use value from details attribute or sub-tag" }
+    	{
+        	id:"size", 
+        	map:"#cells[0]#", 
+        	header:"Will use value from first cell sub-tag" 
+        },
+        { 
+        	id:"url",  
+            map:"#details#", 
+            header:"Will use value from details attribute or sub-tag" 
+        }
     ],
     datatype:"xml"
 	url:"data/data.xml"

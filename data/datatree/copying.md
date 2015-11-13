@@ -1,4 +1,4 @@
-Copy-pasting data
+Copy-Pasting Tree Data
 ==========================
 To enable the possibility to copy/paste Tree data by the CTRL+C/CTRL+V keyboard shortcuts you should use parameter [clipboard](api/link/ui.tree_clipboard_config.md).
 

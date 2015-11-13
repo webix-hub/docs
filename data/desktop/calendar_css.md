@@ -1,7 +1,5 @@
-Calendar
+Calendar CSS Image Map
 =============
-
-###CSS Image Map
 
 ~~~js
 { view:"calendar" }

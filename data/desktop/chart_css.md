@@ -1,7 +1,6 @@
-Chart 
+Chart CSS Image Map
 =============
 
-###CSS Image Map
 
 <img src="image_maps/chart_css.png"/>
 

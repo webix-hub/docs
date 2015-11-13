@@ -1,4 +1,4 @@
-Copy-pasting data
+Copy-Pasting DataTable Data
 ==========================
 To enable the possibility to copy/paste DataTable data by the CTRL+C/CTRL+V keyboard shortcuts you should 
 use parameter api/link/ui.datatable_clipboard_config.md.

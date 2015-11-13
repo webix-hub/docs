@@ -1,4 +1,4 @@
-Data editors
+Data Editors
 =============
 
 In this article build-in component [editors](#editors) and [edit actions](#editaction) for them are discussed. To learn about Webix editing pattern, go to the [main article](desktop/edit.md).

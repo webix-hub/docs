@@ -1,7 +1,6 @@
-Colorboard
+Colorboard CSS Image Map
 =============
 
-###CSS Image Map
 
 <img src="image_maps/colorboard_css.png" />
 
