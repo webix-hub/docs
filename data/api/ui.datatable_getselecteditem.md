@@ -4,7 +4,10 @@ getSelectedItem
 @short: gets an object of the selected data item
 	
 @params:
-* mode 		boolean		if true, returns an object with selected item(s)
+* as_array 		boolean		if true, returns an array with selected item(s)
+
+@returns:
+- item 	object	object of the selected item with all its properties
 
 
 @example:
@@ -17,3 +20,6 @@ var item = grid.getSelectedItem();
 	datatable/selection.md
 @template:	api_method
 @descr:
+
+In case of multiple item selection the method will return array of selected items anyway. 
+If array mode (<i>"as_array"</i>) is switched on, even one item will be put put into an array.
