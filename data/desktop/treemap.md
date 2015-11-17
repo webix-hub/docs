@@ -4,7 +4,7 @@ TreeMap
 ##API Reference
 
 - [Methods, properties and events](api__refs__ui.treemap.html)
-- [Samples](http://docs.webix.com/samples/28_sidemenu/index.html)
+- [Samples](http://docs.webix.com/samples/60_pro/11_treemap/index.html)
 
 
 
@@ -273,32 +273,126 @@ Handling Events
 Since TreeMap component inherits its API from api/refs/treestore.md, it supports the handling of almost the same events. 
 You can check the full list of events in the [API reference](api/refs/ui.treemap_events.md).
 
-Let's consider the api/link/ui.treemap_onitemclick_event.md event as an example.
+TreeMap supports various events that can be used to provide a custom behaviour for treemap.
+
+There are 2 ways you can add a handler to the event:
+
+- through the method [attachEvent()](api/link/ui.treemap_attachevent.md);
+- through the parameter [on](api/link/ui.treemap_on_config.md).
+
+{{note
+Event names are case-insensitive
+}}
+
+
+###Method attachEvent()
+
+You can attach several handlers to the same event and detach them using two respective methods:
+
+{{snippet
+A general way to attach/detach the event handler
+}}
+~~~js
+// to attach event
+var myEvent = $$("treemap").attachEvent("onItemClick", function () {
+// event handler code
+})
+
+//to detach event
+$$("treemap").detachEvent(myEvent);
+~~~
+
+###Parameter 'on'
+
+With the help of parameter [on](api/link/ui.treemap_on_config.md) you can also attach any event(s) to a TreeMap object. But in contrast to 
+using the api/link/ui.treemap_attachevent.md method you can't detach the attached events later.
+
+{{snippet
+Attaching the event handler through parameter 'on'
+}}
+~~~js
+webix.ui({
+	view:"treemap",
+	...
+    on: {
+        onitemClick: function (id) {
+            alert("item has just been clicked");
+       }
+	}
+); 
+~~~
+
+
+###Cancelable Events 
+
+All events with the subword '**onBefore**' can be cancelled.<br>
+To cancel some event you should return **false** within the appropriate event handler.
+
+{{snippet
+Cancelling the event handler
+}}
+~~~js
+var myEvent = $$("treemap").attachEvent("onBeforeSelect", function (id) {
+ 	... // some event handler code
+	return false;
+})
+~~~
+
+###Accessible objects and data 
+
+
+Inside the event handler you can refer to the holder component through the keyword **this**. </br>
+Besides, most event handlers get incoming argument(s), like the **id** of a data item (see [treemap events](api/refs/ui.treemap_events.md) to know exactly what arguments are passed inside event handler). 
+
+Btw, using the **id** of a data item you can access this item itself and all its properties. For example:
+
+{{snippet
+Referring within the event handler
+}}
+~~~js
+$$("treemap").attachEvent("onAfterSelect",function(id){
+  var level = this.getItem(id).$level;
+})
+~~~
+
+{{sample
+60_pro/11_treemap/04_events.html
+}}
+
+Setting header
+----------------
+
+You can specify the displaying of branches' names in the header of the treemap. The header is set using the headerTemplate property of the component configuration.
 
 ~~~js
 webix.ui({
 	view:"treemap",
-	value: "#views#",
-	headerTemplate: "#category#",
-	template: function(item){
-		return item.category || "";
-	},
-	type:{
-		cssClass: getCss
-	},
-	on: {
-		onItemClick: function(id){
-			if(this.isBranch(id)){
-				this.showBranch(id);
-			}
-			else{
-				var item = this.getItem(id);
-				webix.message("Views: "+ item.views+" <br/>Comments: "+ item.comments);
-			}
-		}
-	},
-	url: "data/data.json"
+	headerTemplate: "#category#"
 });
 ~~~
+
+In our example, the item's category is taken as the value of the headerTemplate property. So, a Treemap with an opened first-level branch will look like this:
+
+<img src="desktop/treemap_branch_header.png">
+
+
+
+Let's enable the child branches of the "Healthcare" category to expand on click and display their titles in the header.
+
+~~~js
+webix.ui({
+	view:"treemap",
+	headerTemplate: "#category#",
+    branch:"2.1" 
+});
+~~~
+
+Now if we click on the "Health Economics" sub-branch of the "Healthcare" category, the header will be displayed as the "First-level branch header> Second-level branch header":
+
+<img src="desktop/treemap_child_branch_header.png">
+
+{{sample
+60_pro/11_treemap/05_header.html
+}}
 
 @edition:pro

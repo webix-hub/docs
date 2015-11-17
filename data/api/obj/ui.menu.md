@@ -9,11 +9,11 @@ The component can be displayed in 2 modes: static (the menu is fully expanded al
 	var menu = webix.ui({
 		view:"menu", 
 		container:"mydiv", 
-		...config options goes here..
+		...config options will be here..
 	})
 	//or, in case of jQuery
 	$("#mydiv").webix_menu({
-		...config options goes here..
+		...config options will be here..
 	});
 ~~~
 
