@@ -36,7 +36,14 @@ Each object in the array specifies a single column. An object can take the follo
 	<tbody>
     	<tr>
 			<td class="webixdoc_links0"><b>adjust</b></td>
-			<td>(<i>boolean</i>) adjusts the width of the column to fit the related content size</td>
+			<td>(<i>boolean, string</i>) adjusts the width of the column to fit the related content size.<br>
+            The following values are possible: 
+            <ul>
+            <li><b>"data"</b> - adjusts column width to the content of the widest item in it</li>
+			<li><b>"header"</b> - adjusts column width to its header content</li>
+			<li><b>true</b> - searches for the widest item among data and header(s) and adjusts column width to its content</li>
+            </ul>
+            </td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>css</b></td>
@@ -45,11 +52,13 @@ Each object in the array specifies a single column. An object can take the follo
         <tr>
 			<td class="webixdoc_links0" style="vertical-align: top;"><b>cssFormat</b></td>
 			<td>(<i>function</i>) sets a function that takes a data property value as a parameter and returns object with css properties ( or the name of a css class) that will be applied to a cell
-            with the related value.<br>The parameters are as follows:	
+            with the related value.<br>The parameters are as follows:
+            	<ul>
     			<li><b>cell value</b></li>
     			<li><b>row item object</b>( all values for the current row )</li> 
     			<li><b>row id</b></li>
     			<li><b>column id</b></li>
+                </ul>
             </td>
 		</tr>
         <tr>
@@ -57,9 +66,9 @@ Each object in the array specifies a single column. An object can take the follo
             <td style="vertical-align: top;">
             	(<i>string</i>) the type of the column editors. The attribute can take only one of a predefined set of values.<br> The predefined values are:
 				<ul>
-					<li><b>text</b> -   a single line text editor</li>
-					<li><b>inline-text</b> - a custom text editor </li>
-                    <li><b>select</b> - a dropdown list </li>
+					<li><b>"text"</b> -   a single line text editor</li>
+					<li><b>"inline-text"</b> - a custom text editor </li>
+                    <li><b>"select"</b> - a dropdown list </li>
                     <li> <a href="desktop/editing.md">and 9 more</a> </li>
 				</ul>
 			</td>
@@ -69,9 +78,9 @@ Each object in the array specifies a single column. An object can take the follo
             <td style="vertical-align: top;">
             	(<i>string</i>) the type of an action that would open datatable cell for editing.<br> The predefined values are:
 				<ul>
-					<li><b>click</b> - (default)  a single mouse click</li>
-					<li><b>dblclick</b> - a double mouse click </li>
-                    <li><b>custom</b> - allows adding any custom action to open the cell (descibed separately) </li>
+					<li><b>"click"</b> - (default)  a single mouse click</li>
+					<li><b>"dblclick"</b> - a double mouse click </li>
+                    <li><b>"custom"</b> - allows adding any custom action to open the cell (descibed separately) </li>
 				</ul>
 			</td>
 		</tr>
@@ -131,10 +140,10 @@ Each object in the array specifies a single column. An object can take the follo
 				<br><br>
 				As a string the attribute can take only one of a predefined set of values.<br> The predefined values are:
 				<ul>
-					<li><b>int</b></li>
-					<li><b>date</b></li>
-					<li><b>string</b></li>
-					<li><b>string_strict (case-sensitive 'string')</b></li>
+					<li><b>"int"</b></li>
+					<li><b>"date"</b></li>
+					<li><b>"string"</b></li>
+					<li><b>"string_strict" (case-sensitive 'string')</b></li>
 				</ul>
 			</td>
 		</tr>

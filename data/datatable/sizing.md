@@ -135,8 +135,9 @@ In the code above *title* column is 4 times bigger then *id* column, which is 20
 
 If you want to adjust the width of a column to the related content size, you can use attribute **adjust**. It is defined for the needed column individually and features two modes:
 
-- **data** - adjusts column width to the content of the widest item in it;
-- **header** - adjusts column width to its header content
+- **"data"** - adjusts column width to the content of the widest item in it;
+- **"header"** - adjusts column width to its header content;
+- **true** - searches for the widest item among data and header(s) and adjusts column width to its content.
 
 {{snippet
 Adjusting the column width to fit the content size
@@ -147,7 +148,8 @@ grid = new webix.ui({
 	...
 	columns:[
 		{ id:"title", header:"Film title", adjust:"data"},
-        { id:"rank", header:"Rank", adjust:"header"}
+        { id:"rank", header:"Rank", adjust:"header"},
+        { id:"votes", header:"Votes", adjust:true}
 		...
 	]
 })
