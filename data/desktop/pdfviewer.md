@@ -39,6 +39,8 @@ If you need, you can use the viewer and the toolbar separately, by using their p
 PDF viewer API reference
 ---------------------
 
+###Methods
+
 ####nextPage()
 
 renders the page that follows the viewed one
@@ -115,6 +117,48 @@ zooms the viewed page out
 $$("pdfviewer").zoomOut();
 ~~~
 
+###Events
+
+####onBeforeLoad
+
+fires before loading of the PDF file begins
+
+~~~js
+$$("pdfviewer").attachEvent("onBeforeLoad", function(){ ... });
+~~~
+
+####onAfterLoad
+
+fires after the PDF file is fully loaded
+
+~~~js
+$$("pdfviewer").attachEvent("onAfterLoad", function(){ ... });
+~~~
+
+####onPageRender
+
+fires after a page is rendered in the viewer body
+
+parameters:
+
+- pageNum  - (number) the number of the page
+
+~~~js
+$$("pdfviewer").attachEvent("onPageRender", function(pageNum){ ... });
+~~~
+
+####onScaleChange
+
+fires after the page has been zoomed
+
+parametes: 
+
+- scale - (number) new value of the scale
+- update - (boolean) flag that indicates whether the related PDF toolbar should be updated
+
+~~~js
+$$("pdfviewer").attachEvent("onScaleChange", function(scale, update){ ... });
+~~~
 
 
 PDF toolbar API reference
