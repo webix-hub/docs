@@ -119,7 +119,7 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
 		    <h4 id='ui' style="margin-bottom:4px;">
 		        <a href="desktop/sidebar.md">Sidebar</a>
 		    </h4>
-		    A component that helps you to create a hierarchical collapsible sidemenu with a vertical navigation bar.
+		    A component that helps you to create a hierarchical collapsible menu with a vertical navigation bar.
 		</td>
 		<td class='topic_description' style="text-align: center; padding:20px;"><img src="desktop/sidebar.png"></td>
 	</tr>

@@ -1,2 +1,214 @@
 Sidebar
 ==========
+
+Webix Sidebar is a datatree/index.md-based component which is used for creating menus with hierarchical structure. 
+
+Sidebar menu can be collapsed into a navigation bar with only icons of the menu icons visible. On hovering an icons, a popup with the related item is shown with its subitems.
+
+On clicking a Sidebar menu item, either the related content is shown in the right part of the screen or selectable subitems are displayed.
+
+
+<br>
+
+<img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/sidebarmenu_front.png"/>
+
+Creating a Sidebar Menu
+-------------------------
+
+###Files to include
+
+You need to include the following files on your page:
+
+~~~html
+<!-- js files -->
+<script src="codebase/webix.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="//cdn.webix.com/components/sidebar/sidebar.js"></script>
+
+<!-- css files -->
+<link rel="stylesheet" href="codebase/webix.css" type="text/css" charset="utf-8">
+<link 
+	rel="stylesheet" 
+	type="text/css" 
+	href="//cdn.webix.com/components/sidebar/sidebar.css"
+>
+~~~
+
+###Initialization
+
+To initialize the Sidebar and load it with data, you need to use the code as in:
+
+~~~js
+// webix.ready() function ensures that the code will be executed when the page is loaded
+webix.ready(function(){
+	// object constructor
+	webix.ui({
+		view: "sidebar",
+        // setting the data source
+		data: menu_data
+    });
+});
+~~~
+
+###Data source
+
+
+The data configuration contains the description of menu items, corresponding icons and subitems. It can look like this:
+
+~~~js
+var menu_data = [
+	{id: "dashboard", icon: "dashboard", value: "Dashboards",  data:[
+		{ id: "dashboard1", value: "Dashboard 1"},
+		{ id: "dashboard2", value: "Dashboard 2"}
+	]},
+	{id: "layouts", icon: "columns", value:"Layouts", data:[
+		{ id: "accordions", value: "Accordions"},
+		{ id: "portlets", value: "Portlets"}
+	]},
+	{id: "tables", icon: "table", value:"Data Tables", data:[
+		{ id: "tables1", value: "Datatable"},
+		{ id: "tables2", value: "TreeTable"},
+		{ id: "tables3", value: "Pivot"}
+	]},
+    ...
+];
+~~~
+
+{{sample
+28_sidemenu/01_sidebar.html
+}}
+
+
+How to add the Menu button
+---------------------
+
+Adding the Menu button in the left top corner allows collapsing the menu items into a vertical navigation bar with icons. 
+In this state menu items will be shown by hovering the mouse pointer over the icons.
+
+Let's create a layout with toolbar and two columns. We'll place a button on the toolbar and put a sidebar in the left column, the right column will serve as a template for some content that
+could be shown on an item's click.
+
+
+
+~~~js
+webix.ui({
+	rows: [
+		{ view: "toolbar", elements: [
+			{	view: "button", 
+            	type: "icon", 
+                icon: "bars",
+				width: 37, 
+                align: "left", 
+                css: "app_button", 
+                click: function(){
+					$$("$sidebar1").toggle()
+				}
+			},
+		]},
+		{
+        	cols:[
+				{
+					view: "sidebar",
+					data: menu_data			
+				},
+                {
+					template: ""
+				}
+			]
+		}
+	]
+});
+~~~
+
+The applied button uses the "bars" icon from the Font Awesome collection. You can set its position using the *align* property and specifying a CSS style, like this one:
+
+~~~css
+.app_button button{
+	padding:0;
+	text-align: center;
+}
+~~~
+
+To collapse/expand the menu on the button click, we define the click handler in which we put the *toggle()* function. The details are given in the [API reference](desktop/sidebar.md#toggle).
+
+The image below shows how an expanded Sidebar menu collapses on the Menu button click:
+
+<img src="desktop/sidebar_expanded_collapsed.png">
+
+API Reference
+--------------
+
+
+###getPopup() 
+
+returns the popup's object
+
+~~~js
+sidebar.getPopup();
+~~~
+
+returns:
+
+- {object} the popup's object
+
+###getPopupTitle()
+
+returns an object with the popup's first-level items
+
+~~~js
+sidebar.getPopupTitle();
+~~~
+
+returns:
+
+- {object} the popup's object containing first-level items
+
+###getPopupList() 
+
+returns an object with child items of the popup
+
+~~~js
+sidebar.getPopupList();
+~~~
+
+returns:
+
+- {object} the popup's object containing child items
+
+###position_setter(value)
+
+sets the position of the popup relative to the sidebar
+
+Parameters:
+
+- value		string	 a new popup position ("right" or "left")
+
+~~~js
+sidebar.position_setter("right");
+~~~
+
+###collapse()
+
+collapses the sidebar into a navigation bar
+
+~~~js
+sidebar.collapse();
+~~~
+
+###expand()
+
+expands the sidebar from the collapsed state
+
+~~~js
+sidebar.expand();
+~~~
+
+<h3 id="toggle">toggle()</h3>
+
+collapses an expanded Sidebar and expands a collapsed Sidebar 
+
+~~~js
+sidebar.toggle();
+~~~
+
+###collapsed_setter(value)
+

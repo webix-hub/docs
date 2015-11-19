@@ -9,7 +9,8 @@ Sidemenu
 
 ##Overview
 
-UI-related **Sidemenu** inherits from [list](desktop/list.md) and lets users select the necessary item from the list of grouped items and see its content on the page. 
+UI-related **Sidemenu** inherits from desktop/window.md and desktop/list.md and lets users select the necessary item from the list of grouped items and see some content on the page. 
+Sidemenu can appear from any side of the application and adjust its width and height to the window of the application.
 
 <br>
 
