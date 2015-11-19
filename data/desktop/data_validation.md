@@ -84,6 +84,25 @@ list.validate(2); //data item with id=2 will be validated
 text.validate(); //validate only this text field
 ~~~
 
+
+{{note
+Note that if a separate form field is validated, only its own validation rules will be considered.
+}}
+
+~~~js
+webix.ui({
+	view:"form", elements:[
+    	{ view:"text",  required:true, name:"text1" },
+		{ view:"text",  validate:webix.rules.isNumber, name:"text2" }
+    ]
+});
+
+$$("text1").validate();
+~~~
+
+{{sample 13_form/04_validation/11_per_item_validation.html}}
+
+
 ##Validation Message
 
 If any record or field fails validation, it is marked with embedded **red highlighting** (true for both in-library and HTML5 validation).
