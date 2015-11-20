@@ -275,7 +275,9 @@ $$("log").getValue();
 To get an associative array of all elements (*name:value* pairs) you can use api/link/ui.form_getvalues.md method. To get to the necessary value, you should specify the **name** of the needed control. 
 
 ~~~js
-$$("my_form").getValues().login; //returns current value of the text input field 
+var values = $$("my_form").getValues(); //returns { login:"", email:"", submit:"" }
+
+values.login; //returns current value of the text input field 
 ~~~
 
 Additionally, you can get only **changed** and **unchanged** form values with the following methods respectively:

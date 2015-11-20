@@ -40,6 +40,7 @@ Properties
 - api/ui.text_suggest_config.md - links suggest list to the input
 - api/link/ui.text_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/link/ui.text_tooltip_config.md - tooltip for the input
+- api/link/ui.text_type_config.md - the type of the control
 - api/ui.text_validate_config.md - adds validation to the field
 - api/ui.text_validateevent_config.md - on which event validation fires
 - api/link/ui.text_value_config.md - sets the initial value for a control
@@ -85,6 +86,7 @@ Properties
 - api/ui.text_suggest_config.md
 - api/link/ui.text_tabfocus_config.md
 - api/link/ui.text_tooltip_config.md
+- api/link/ui.text_type_config.md
 - api/ui.text_validate_config.md
 - api/ui.text_validateevent_config.md
 - api/link/ui.text_value_config.md

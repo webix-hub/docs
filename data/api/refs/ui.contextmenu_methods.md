@@ -85,7 +85,6 @@ Methods
 - api/link/ui.contextmenu_setposition.md - sets window's position
 - api/link/ui.contextmenu_show.md - makes the component visible
 - api/link/ui.contextmenu_showitem.md - scrolls the component to make the specified item visible
-- api/link/ui.contextmenu_sizetocontent.md - 
 - api/link/ui.contextmenu_sort.md - sorts datastore
 - api/link/ui.contextmenu_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.contextmenu_unbind.md - breaks "bind" link
@@ -180,7 +179,6 @@ Methods
 - api/link/ui.contextmenu_setposition.md
 - api/link/ui.contextmenu_show.md
 - api/link/ui.contextmenu_showitem.md
-- api/link/ui.contextmenu_sizetocontent.md
 - api/link/ui.contextmenu_sort.md
 - api/link/ui.contextmenu_sync.md
 - api/link/ui.contextmenu_unbind.md

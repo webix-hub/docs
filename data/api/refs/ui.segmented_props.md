@@ -32,6 +32,7 @@ Properties
 - api/ui.segmented_multiview_config.md - enables switching between multiview cells
 - api/link/ui.segmented_name_config.md - name of the control
 - api/link/ui.segmented_on_config.md - allows attaching custom handlers to inner events of the component
+- api/ui.segmented_optionwidth_config.md - 
 - api/ui.segmented_options_config.md - defines data items of the drop-down list
 - api/link/ui.segmented_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.segmented_relatedaction_config.md - action to call when value of cell changes
@@ -77,6 +78,7 @@ Properties
 - api/ui.segmented_multiview_config.md
 - api/link/ui.segmented_name_config.md
 - api/link/ui.segmented_on_config.md
+- api/ui.segmented_optionwidth_config.md
 - api/ui.segmented_options_config.md
 - api/link/ui.segmented_popup_config.md
 - api/link/ui.segmented_relatedaction_config.md

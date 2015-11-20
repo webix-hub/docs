@@ -108,7 +108,6 @@ The component is a compliment to the menu component and not intended for direct 
 - api/link/ui.submenu_setposition.md - sets window's position
 - api/link/ui.submenu_show.md - makes the component visible
 - api/link/ui.submenu_showitem.md - scrolls the component to make the specified item visible
-- api/link/ui.submenu_sizetocontent.md - 
 - api/link/ui.submenu_sort.md - sorts datastore
 - api/link/ui.submenu_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.submenu_unbind.md - breaks "bind" link
