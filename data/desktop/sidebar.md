@@ -137,8 +137,9 @@ The image below shows how an expanded Sidebar menu collapses on the Menu button 
 API Reference
 --------------
 
+###Methods
 
-###getPopup() 
+####getPopup() 
 
 returns the popup's object
 
@@ -150,7 +151,7 @@ returns:
 
 - {object} the popup's object
 
-###getPopupTitle()
+####getPopupTitle()
 
 returns an object with the popup's first-level items
 
@@ -162,7 +163,7 @@ returns:
 
 - {object} the popup's object containing first-level items
 
-###getPopupList() 
+####getPopupList() 
 
 returns an object with child items of the popup
 
@@ -174,7 +175,49 @@ returns:
 
 - {object} the popup's object containing child items
 
-###position_setter(value)
+
+####collapse()
+
+collapses the sidebar into a navigation bar
+
+~~~js
+sidebar.collapse();
+~~~
+
+####expand()
+
+expands the sidebar from the collapsed state
+
+~~~js
+sidebar.expand();
+~~~
+
+<h4 id="toggle">toggle()</h4>
+
+collapses an expanded Sidebar and expands a collapsed Sidebar 
+
+~~~js
+sidebar.toggle();
+~~~
+
+###Properties
+
+
+####collapsed
+
+defines if the Sidebar will be shown in the collapsed state or in the expanded one
+
+- value			boolean			true for collapsed state, false for the expanded one
+
+~~~js
+webix.ui({
+	view: "sidebar",
+    collapsed:true   
+});
+~~~
+
+
+####position
 
 sets the position of the popup relative to the sidebar
 
@@ -183,32 +226,85 @@ Parameters:
 - value		string	 a new popup position ("right" or "left")
 
 ~~~js
-sidebar.position_setter("right");
+webix.ui({
+	view: "sidebar",
+    position:"right"   
+});
 ~~~
 
-###collapse()
 
-collapses the sidebar into a navigation bar
+Type object properties
+---------------
+
+###name
+
+defines the Sidebar name
 
 ~~~js
-sidebar.collapse();
+{
+	name:"sideBar"
+}
 ~~~
 
-###expand()
+###height
 
-expands the sidebar from the collapsed state
+specifies the height of an item in the Sidebar
 
 ~~~js
-sidebar.expand();
+{
+	height: "auto"
+}
 ~~~
 
-<h3 id="toggle">toggle()</h3>
+###css
 
-collapses an expanded Sidebar and expands a collapsed Sidebar 
+specifies the CSS class applied to the Sidebar
 
 ~~~js
-sidebar.toggle();
+{
+	css: "webix_sidebar"
+}
 ~~~
 
-###collapsed_setter(value)
 
+###template
+
+defines the appearance of the Sidebar in the collapsed and expanded states
+
+~~~js
+template: function(obj, common){
+	if(common.collapsed)
+		return common.icon(obj, common);
+	return common.arrow(obj, common)+common.icon(obj, common) +"<span>"+obj.value+"</span>";
+}
+~~~
+
+###arrow
+
+defines the presentation of arrows, depending on the level of the related Sidebar items
+
+~~~js
+arrow: function(obj, common){
+	var html = "";
+	var open = "";
+	for (var i=1; i<=obj.$level; i++){
+		if (i==obj.$level && obj.$count){
+			var className = "webix_sidebar_dir_icon webix_icon fa-angle-"+(obj.open?"down":"left");
+			html+="<span class='"+className+"'></span>";
+		}
+	}
+	return html;
+},
+~~~
+
+###icon
+
+specifies a template for rendering Font Awesome icons next to the items of Sidebar 
+
+~~~js
+icon:function(obj, common){
+	if(obj.icon)
+		return "<span class='webix_icon webix_sidebar_icon fa-"+obj.icon+"'></span>";
+	return "";
+}
+~~~
