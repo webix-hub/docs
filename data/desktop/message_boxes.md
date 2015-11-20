@@ -204,15 +204,15 @@ webix.modalbox({
 
 Keyboard functionality for modax boxes is controlled by **webix.message.keyboard** property that is initially true. 
 
-By default modal boxes block keyboard events of the page. Users can use obly the following keys that set modal box value and close it: 
+By default modal boxes block keyboard events of the page. Users can use only the following keys that set modal box value and close it: 
 
 - **"space"** and **"enter"** for setting **true** value as modal box result;
 - **"escape"** for setting **false** value as modal box result.
 
-To enable keyboard events (and disable above mentioned keys) you should set **keyboard** property to false:
+To disable above mentioned keys and enable standard keyboard events you should set **keyboard** property to false:
 
 ~~~js
-webix.keyboard.message = false; 
+webix.message.keyboard = false; 
 webix.modalbox({...})
 ~~~
 
