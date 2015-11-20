@@ -1,7 +1,6 @@
-Dataview 
+Dataview CSS Image Map
 =============
 
-###CSS Image Map
 
 <img src="image_maps/dataview_css.png"/>
 

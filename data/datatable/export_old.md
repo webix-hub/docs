@@ -1,4 +1,4 @@
-Data export to PDF, Excel
+Data Export to PDF and Excel
 ==============================
 
 {{note

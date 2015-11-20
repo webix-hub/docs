@@ -1,7 +1,5 @@
-Datatable 
-=============
-
-###CSS Image Map
+Datatable CSS Image Map
+=======================
 
 <img src="image_maps/datatable_css.png"/>
 
