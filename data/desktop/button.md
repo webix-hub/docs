@@ -90,6 +90,8 @@ through which you can style the button itself, its text, icon or image:
 .icon_back_btn button{ ... }
 ~~~
 
+##Configuring Buttons
+
 **Buttons with Badges**
 
 <img src="desktop/buttons_badges.png"/>
@@ -104,6 +106,21 @@ Any button regardless of its *type* can be equipped with a badge with the help o
 02_toolbar/21_toolbar_badges.html
 }}
 
+**Autowidth for Buttons**
+
+<img src="desktop/button_autowidth.png">
+
+~~~js
+{ view:"button", label:"Short", autowidth:true }
+~~~
+
+It's possible to adjust the width of a button to the size of its content, using the *autowidth* property set to true.
+
+{{sample
+13_form/01_controls/10_buttons_autowidth.html
+}}
+
+
 ##Button Configuration
 
 - **value** (string) - defines the text displayed on standard buttons (basic, *form*, *danger*, *prev*, *next*);
@@ -115,7 +132,8 @@ Any button regardless of its *type* can be equipped with a badge with the help o
 - **popup** (string)- defines the ID of a popup window that will be shown on button click;
 - **click** (function) - defines a function that will be executed on clicking the button (another possibility is to attach an event to it using the button's ID);
 - **css** (string) - name of CSS class applied to a button;
-- **badge** (number/string) - adds an orange circle that notifies about the number of new message for an icon button.
+- **badge** (number/string) - adds an orange circle that notifies about the number of new message for an icon button;
+- **autowidth** (boolean)  - sets the mode in which the button's width automatically adjusts to the button's content.
 
 
 @index:
