@@ -41,6 +41,19 @@ PDF viewer API reference
 
 ###Methods
 
+####load()
+
+loads a pdf file into the viewer
+
+parameters:
+
+- url - (string) the url of the pdf file to load		
+
+~~~js
+$$("pdfviewer").load(url);
+~~~
+
+
 ####nextPage()
 
 renders the page that follows the viewed one

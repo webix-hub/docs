@@ -9,6 +9,7 @@ Methods
 - api/html_create.md - creates a new HTML element
 - api/html_createcss.md - converts a set of CSS rules to an active CSS class
 - api/html_denyselect.md - disables selection in the document
+- api/html_gettextsize.md - changes the text's size in an HTML node and returns the result
 - api/html_getvalue.md - returns the node content
 - api/html_index.md - returns the node index
 - api/html_insertbefore.md - inserts a new node into the specified position
@@ -30,6 +31,7 @@ Methods
 - api/html_create.md
 - api/html_createcss.md
 - api/html_denyselect.md
+- api/html_gettextsize.md
 - api/html_getvalue.md
 - api/html_index.md
 - api/html_insertbefore.md

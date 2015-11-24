@@ -1,6 +1,20 @@
 Migration to latest Webix version
 =================================
 
+
+Webix 3.0 -> 3.1
+----------------
+
+### Form validation
+
+Starting from version 3.1, form.validate() will not validate disabled fields. If you want to preserve the old behavior, use this command like next
+
+~~~
+form.validate({ disabled:true });
+~~~
+
+
+
 Webix 2.x -> 3.0
 ----------------
 

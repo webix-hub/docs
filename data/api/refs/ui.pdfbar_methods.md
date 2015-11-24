@@ -55,7 +55,7 @@ Methods
 - api/link/ui.pdfbar_unbind.md - breaks "bind" link
 - api/link/ui.pdfbar_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/ui.pdfbar_updatecontrols.md - 
-- api/link/ui.pdfbar_validate.md - checks data in the component during adding new item or editing existing ones
+- api/link/ui.pdfbar_validate.md - checks data in the form
 - api/ui.pdfbar_zoom.md - 
 }}
 

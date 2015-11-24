@@ -1,1 +1,1 @@
-@link: api/atomrender_content_config.md
+@link: api/ui.template_content_config.md

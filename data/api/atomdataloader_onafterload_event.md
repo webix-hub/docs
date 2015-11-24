@@ -3,7 +3,7 @@ onAfterLoad
 
 
 @short:
-	fires after server side loading is complete
+	fires after data loading is complete
 
 
 @example: 

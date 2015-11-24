@@ -3,7 +3,7 @@ url
 
 
 @short:
-	the URL the component will use to load data after its initialization
+	the URL which the component will use to load data after its initialization
 
 @type: string
 @example:

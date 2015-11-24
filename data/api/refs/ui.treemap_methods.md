@@ -1,0 +1,189 @@
+Methods
+=======
+
+{{api
+- api/link/ui.treemap_add.md - adds an item to the store
+- api/link/ui.treemap_addcss.md - applied CSS class to a component item
+- api/link/ui.treemap_adjust.md - adjusts the component to the size of the parent HTML container
+- api/link/ui.treemap_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.treemap_bind.md - binds components
+- api/link/ui.treemap_blockevent.md - temporarily blocks triggering of ALL events of the calling object
+- api/link/ui.treemap_callevent.md - calls an inner event
+- api/link/ui.treemap_clearall.md - removes all items from the component
+- api/link/ui.treemap_clearcss.md - removes css class from all items
+- api/link/ui.treemap_clearvalidation.md - removes all validation marks from the component
+- api/link/ui.treemap_close.md - closes the branch with the specified id
+- api/link/ui.treemap_closeall.md - closes all branches in the tree
+- api/link/ui.treemap_copy.md - makes a copy of item
+- api/link/ui.treemap_count.md - returns the number of currently visible items
+- api/link/ui.treemap_customize.md - redefines the "type" property
+- api/link/ui.treemap_define.md - redefines a single configuration property (or a hash of properties)
+- api/link/ui.treemap_destructor.md - destructs the calling object
+- api/link/ui.treemap_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
+- api/link/ui.treemap_disable.md - disables the calling view (makes it dimmed and unclickable)
+- api/link/ui.treemap_enable.md - enables the calling view that was disabled by the 'disable' method
+- api/link/ui.treemap_exists.md - checks whether an item with the specified id exists
+- api/link/ui.treemap_filter.md - filters the component
+- api/link/ui.treemap_find.md - returns rows that match the criterion
+- api/link/ui.treemap_getbranchindex.md - gets index of the node in a specific branch
+- api/link/ui.treemap_getchildviews.md - returns child views of the calling component
+- api/link/ui.treemap_getfirstchildid.md - gets the ID of the first child of the specified branch
+- api/link/ui.treemap_getfirstid.md - returns the ID of the first item
+- api/link/ui.treemap_getformview.md - returns master form for the input
+- api/link/ui.treemap_getidbyindex.md - returns the id of the item with the specified index
+- api/link/ui.treemap_getindexbyid.md - returns the index of the item with the specified id
+- api/link/ui.treemap_getitem.md - gets the object of the data item with the specified id
+- api/link/ui.treemap_getitemnode.md - returns html element of item by item's id
+- api/link/ui.treemap_getlastid.md - returns the id of the last item
+- api/link/ui.treemap_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
+- api/link/ui.treemap_getnextsiblingid.md - returns the id of the next sibling of the specified node
+- api/link/ui.treemap_getnode.md - returns the main HTML container for the calling object
+- api/link/ui.treemap_getopenitems.md - returns ids of the opened branches
+- api/link/ui.treemap_getpage.md - returns the currently visible page in case of paged view
+- api/link/ui.treemap_getpager.md - returns the pager object associated with the component
+- api/link/ui.treemap_getparentid.md - get the ID of the parent node of the specified item
+- api/link/ui.treemap_getparentview.md - returns the parent view of the component
+- api/link/ui.treemap_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
+- api/link/ui.treemap_getprevsiblingid.md - returns the id of the previous sibling of the specified node
+- api/link/ui.treemap_getscrollstate.md - returns the scroll position
+- api/link/ui.treemap_getselectedid.md - returns the id(s) of the selected item(s)
+- api/link/ui.treemap_getselecteditem.md - returns selected object
+- api/link/ui.treemap_getstate.md - returns the current state of the view
+- api/link/ui.treemap_gettopparentview.md - returns top parent view
+- api/link/ui.treemap_group.md - groups data by the specified data property
+- api/link/ui.treemap_hascss.md - checks if item has specific css class
+- api/link/ui.treemap_hasevent.md - checks whether the component has the specified event
+- api/link/ui.treemap_hide.md - hides the view
+- api/link/ui.treemap_isbranch.md - checks whether the node has any children
+- api/link/ui.treemap_isbranchopen.md - checks whether the specified branch is open or closed
+- api/link/ui.treemap_isenabled.md - checks whether the view is enabled
+- api/link/ui.treemap_isselected.md - checks whether the specified item is selected or not
+- api/link/ui.treemap_isvisible.md - checks whether the view is visible
+- api/link/ui.treemap_load.md - loads data from an external data source.
+- api/link/ui.treemap_loadbranch.md - loads data to the specified branch, as direct children of the node with the id provided
+- api/link/ui.treemap_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
+- api/link/ui.treemap_locate.md - gets the id of an item from the specified HTML event
+- api/link/ui.treemap_mapevent.md - routes events from one object to another
+- api/link/ui.treemap_move.md - moves the specified item to the new position
+- api/link/ui.treemap_moveselection.md - moves selection in the specified direction
+- api/link/ui.treemap_open.md - opens the branch with the specified id
+- api/link/ui.treemap_openall.md - opens all branches in the tree
+- api/link/ui.treemap_parse.md - loads data to the component from an inline data source
+- api/link/ui.treemap_refresh.md - repaints the whole view or a certain item
+- api/link/ui.treemap_remove.md - removes the specified item from datastore
+- api/link/ui.treemap_removecss.md - removes CSS class from a component item
+- api/link/ui.treemap_render.md - 
+- api/link/ui.treemap_resize.md - adjusts the view to a new size
+- api/link/ui.treemap_scrollto.md - scrolls the data container to a certain position
+- api/link/ui.treemap_select.md - selects the specified item(s)
+- api/link/ui.treemap_selectall.md - selects all items or the specified range
+- api/link/ui.treemap_serialize.md - serializes data to a JSON object
+- api/link/ui.treemap_setpage.md - makes the specified page visible (assuming that the pager was defined )
+- api/link/ui.treemap_setstate.md - restores the specified state
+- api/link/ui.treemap_show.md - makes the component visible
+- api/ui.treemap_showbranch.md - shows the leaves of the branch by its id
+- api/link/ui.treemap_showitem.md - scrolls the component to make the specified item visible
+- api/link/ui.treemap_sort.md - sorts datastore
+- api/link/ui.treemap_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.treemap_unbind.md - breaks "bind" link
+- api/link/ui.treemap_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
+- api/link/ui.treemap_ungroup.md - ungroups data
+- api/link/ui.treemap_unselect.md - removes selection from the specified item
+- api/link/ui.treemap_unselectall.md - removes selection from all items
+- api/link/ui.treemap_updateitem.md - sets properties of the data item
+- api/link/ui.treemap_validate.md - validates one record or all dataset against validation rules
+}}
+
+@index:
+- api/link/ui.treemap_add.md
+- api/link/ui.treemap_addcss.md
+- api/link/ui.treemap_adjust.md
+- api/link/ui.treemap_attachevent.md
+- api/link/ui.treemap_bind.md
+- api/link/ui.treemap_blockevent.md
+- api/link/ui.treemap_callevent.md
+- api/link/ui.treemap_clearall.md
+- api/link/ui.treemap_clearcss.md
+- api/link/ui.treemap_clearvalidation.md
+- api/link/ui.treemap_close.md
+- api/link/ui.treemap_closeall.md
+- api/link/ui.treemap_copy.md
+- api/link/ui.treemap_count.md
+- api/link/ui.treemap_customize.md
+- api/link/ui.treemap_define.md
+- api/link/ui.treemap_destructor.md
+- api/link/ui.treemap_detachevent.md
+- api/link/ui.treemap_disable.md
+- api/link/ui.treemap_enable.md
+- api/link/ui.treemap_exists.md
+- api/link/ui.treemap_filter.md
+- api/link/ui.treemap_find.md
+- api/link/ui.treemap_getbranchindex.md
+- api/link/ui.treemap_getchildviews.md
+- api/link/ui.treemap_getfirstchildid.md
+- api/link/ui.treemap_getfirstid.md
+- api/link/ui.treemap_getformview.md
+- api/link/ui.treemap_getidbyindex.md
+- api/link/ui.treemap_getindexbyid.md
+- api/link/ui.treemap_getitem.md
+- api/link/ui.treemap_getitemnode.md
+- api/link/ui.treemap_getlastid.md
+- api/link/ui.treemap_getnextid.md
+- api/link/ui.treemap_getnextsiblingid.md
+- api/link/ui.treemap_getnode.md
+- api/link/ui.treemap_getopenitems.md
+- api/link/ui.treemap_getpage.md
+- api/link/ui.treemap_getpager.md
+- api/link/ui.treemap_getparentid.md
+- api/link/ui.treemap_getparentview.md
+- api/link/ui.treemap_getprevid.md
+- api/link/ui.treemap_getprevsiblingid.md
+- api/link/ui.treemap_getscrollstate.md
+- api/link/ui.treemap_getselectedid.md
+- api/link/ui.treemap_getselecteditem.md
+- api/link/ui.treemap_getstate.md
+- api/link/ui.treemap_gettopparentview.md
+- api/link/ui.treemap_group.md
+- api/link/ui.treemap_hascss.md
+- api/link/ui.treemap_hasevent.md
+- api/link/ui.treemap_hide.md
+- api/link/ui.treemap_isbranch.md
+- api/link/ui.treemap_isbranchopen.md
+- api/link/ui.treemap_isenabled.md
+- api/link/ui.treemap_isselected.md
+- api/link/ui.treemap_isvisible.md
+- api/link/ui.treemap_load.md
+- api/link/ui.treemap_loadbranch.md
+- api/link/ui.treemap_loadnext.md
+- api/link/ui.treemap_locate.md
+- api/link/ui.treemap_mapevent.md
+- api/link/ui.treemap_move.md
+- api/link/ui.treemap_moveselection.md
+- api/link/ui.treemap_open.md
+- api/link/ui.treemap_openall.md
+- api/link/ui.treemap_parse.md
+- api/link/ui.treemap_refresh.md
+- api/link/ui.treemap_remove.md
+- api/link/ui.treemap_removecss.md
+- api/link/ui.treemap_render.md
+- api/link/ui.treemap_resize.md
+- api/link/ui.treemap_scrollto.md
+- api/link/ui.treemap_select.md
+- api/link/ui.treemap_selectall.md
+- api/link/ui.treemap_serialize.md
+- api/link/ui.treemap_setpage.md
+- api/link/ui.treemap_setstate.md
+- api/link/ui.treemap_show.md
+- api/ui.treemap_showbranch.md
+- api/link/ui.treemap_showitem.md
+- api/link/ui.treemap_sort.md
+- api/link/ui.treemap_sync.md
+- api/link/ui.treemap_unbind.md
+- api/link/ui.treemap_unblockevent.md
+- api/link/ui.treemap_ungroup.md
+- api/link/ui.treemap_unselect.md
+- api/link/ui.treemap_unselectall.md
+- api/link/ui.treemap_updateitem.md
+- api/link/ui.treemap_validate.md
+
+

@@ -137,7 +137,7 @@ $("#mydiv").webix_tree({
 - api/link/ui.tree_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.tree_onafterdelete_event.md - fires after item deleting
 - api/link/ui.tree_onafterdrop_event.md - fires after drag-n-drop was finished
-- api/link/ui.tree_onafterload_event.md - fires after server side loading is complete
+- api/link/ui.tree_onafterload_event.md - fires after data loading is complete
 - api/link/ui.tree_onafteropen_event.md - fires after the branch has been opened
 - api/link/ui.tree_onafterrender_event.md - occurs immediately after the component has been rendered
 - api/link/ui.tree_onafterscroll_event.md - occurs when some webix view has been scrolled
@@ -198,7 +198,6 @@ $("#mydiv").webix_tree({
 - api/link/ui.tree_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.tree_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.tree_data_config.md - JavaScript array containing data for the component
-- api/link/ui.tree_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.tree_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.tree_datatype_config.md - the type of loaded data
 - api/link/ui.tree_disabled_config.md - indicates whether an item is enabled or not
@@ -221,7 +220,6 @@ $("#mydiv").webix_tree({
 - api/link/ui.tree_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.tree_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
 - api/link/ui.tree_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
-- api/link/ui.tree_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
 - api/link/ui.tree_ready_config.md - event handler called just after the component has been completely initialized
 - api/link/ui.tree_removemissed_config.md - defines how to treat items in case of reloading
 - api/link/ui.tree_rules_config.md - set of validation rules for the component
@@ -235,7 +233,7 @@ $("#mydiv").webix_tree({
 - api/link/ui.tree_threestate_config.md - defines three-state checkboxes for the tree. Flase by default.
 - api/link/ui.tree_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.tree_type_config.md - object that specifies items presentation
-- api/link/ui.tree_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.tree_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.tree_width_config.md - sets the width of the component
 }}
 

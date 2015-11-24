@@ -102,14 +102,13 @@ The control combines an editable text field with a drop-down list of predefined 
 - api/link/ui.combo_bottompadding_config.md - sets the bottom offset of the control input
 - api/link/ui.combo_click_config.md - click action handler
 - api/link/ui.combo_container_config.md - an html container (or its id) where the component needs initializing
-- api/link/ui.combo_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.combo_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.combo_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.combo_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.combo_height_config.md - sets the height of the component
 - api/link/ui.combo_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.combo_hotkey_config.md - sets a hotkey that triggers button clicking
-- api/link/ui.combo_icon_config.md - sets an icon type
+- api/link/ui.combo_icon_config.md - 
 - api/link/ui.combo_id_config.md - the component ID
 - api/link/ui.combo_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.combo_inputpadding_config.md - padding of text in the input
@@ -134,7 +133,6 @@ The control combines an editable text field with a drop-down list of predefined 
 - api/link/ui.combo_required_config.md - marks field as required
 - api/link/ui.combo_suggest_config.md - links suggest list to the input
 - api/link/ui.combo_tabfocus_config.md - defines whether the control will be included in the tab navigation order
-- api/link/ui.combo_template_config.md - the component template
 - api/link/ui.combo_text_config.md - visible text in the related input
 - api/link/ui.combo_tooltip_config.md - tooltip for the input
 - api/link/ui.combo_type_config.md - the type of the control

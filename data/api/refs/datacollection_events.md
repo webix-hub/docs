@@ -5,7 +5,7 @@ Events
 - api/link/datacollection_onafteradd_event.md - fires after adding item to datastore
 - api/link/datacollection_onaftercursorchange_event.md - fires after the cursor changes its position.
 - api/link/datacollection_onafterdelete_event.md - fires after item deleting
-- api/link/datacollection_onafterload_event.md - fires after server side loading is complete
+- api/link/datacollection_onafterload_event.md - fires after data loading is complete
 - api/link/datacollection_onaftersort_event.md - fires after sorting dataset
 - api/link/datacollection_onbeforeadd_event.md - fires before adding item to datastore
 - api/link/datacollection_onbeforecursorchange_event.md - fires before the cursor changes its position.

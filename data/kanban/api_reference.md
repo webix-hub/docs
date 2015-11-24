@@ -1,4 +1,4 @@
-API Reference
+Kanban Board API Reference
 ================
 
 Kanban board is a view based on Layout and DataStore and it supports their methods, properties and events. However, there are two specific methods in Kanban:

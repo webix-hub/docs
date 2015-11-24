@@ -12,6 +12,8 @@ Webix DataProcessor is a functional library that lets you to ‘communicate’ w
 Without DataProcessor, you need to attach corresponding functions to component events (onAfterInsert/Update/Delete) to get data ready for processing.
 }}
 
+You can find the full list of DataProcessor methods, properties and events in the [API Reference](api/refs/dataprocessor.md). 
+
 ##DataProcessor Initialization
 
 DataProcessor object can be initialized in both long and short forms. Compulsory parameters include: 
@@ -162,9 +164,9 @@ dp.attachEvent('onBeforeDataSend', function(obj){
 Successful server response
 }}
 ~~~js
-dp.attachEvent('onAfterSync, function(id, text, data){
+dp.attachEvent('onAfterSync', function(id, text, data){
 	var response = data.xml(),
-    	hash = response.data;
+    hash = response.data;
     //hash {type:'', tid: '', sid:''}      
 });
 ~~~
@@ -284,7 +286,7 @@ Not any client-side update is to be saved to server. To temporarily cancel DataP
 
 ~~~js
 webix.dp("grid").ignore(function(){
-	$$("grid).add(data);	
+	$$("grid").add(data);	
 });
 ~~~
 
@@ -292,7 +294,7 @@ webix.dp("grid").ignore(function(){
 
 ~~~js
 dp.on();
-$$("grid).add(data);	
+$$("grid").add(data);	
 dp.off();
 ~~~
 

@@ -1,7 +1,7 @@
 Advanced Configuration of Popup Selectors
 =========================
 
-[Combo](desktop/combo.md), [richselect](desktop/richselect.md), [multiselect](desktop/multiselect.md) amd [multicombo](desktop/multicombo.md) controls can be highly customized
+[Combo](desktop/combo.md), [richselect](desktop/richselect.md), [multiselect](desktop/multiselect.md) and [multicombo](desktop/multicombo.md) controls can be highly customized
 because they are comprised of the following components: 
 
 - Webix [text](desktop/text.md)  input that can be either editable (for combos) or non-editable (for selects);

@@ -1,4 +1,4 @@
-Accordionitem
+Accordionitem Configuration
 ===============
 
 Accordionitem  inherits from [view](desktop/view.md) and is an integral part of the ui-related [accordion](desktop/accordion.md) component. You need at least two accordionitems to make a workable

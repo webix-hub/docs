@@ -39,7 +39,7 @@ DataLoader
 {{api
 - api/link/dataloader_onafteradd_event.md - fires after adding item to datastore
 - api/link/dataloader_onafterdelete_event.md - fires after item deleting
-- api/link/dataloader_onafterload_event.md - fires after server side loading is complete
+- api/link/dataloader_onafterload_event.md - fires after data loading is complete
 - api/link/dataloader_onaftersort_event.md - fires after sorting dataset
 - api/link/dataloader_onbeforeadd_event.md - fires before adding item to datastore
 - api/link/dataloader_onbeforedelete_event.md - fires before item deleting
@@ -62,7 +62,7 @@ DataLoader
 - api/dataloader_removemissed_config.md - defines how to treat items in case of reloading
 - api/dataloader_save_config.md - defines URLs for data saving
 - api/dataloader_scheme_config.md - defines schemes for data processing
-- api/link/dataloader_url_config.md - the URL the component will use to load data after its initialization
+- api/link/dataloader_url_config.md - the URL which the component will use to load data after its initialization
 }}
 
 

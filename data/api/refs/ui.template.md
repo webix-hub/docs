@@ -72,7 +72,7 @@ The component is a simple container (but with rich API support) where you can pu
 
 
 {{api
-- api/link/ui.template_onafterload_event.md - fires after server side loading is complete
+- api/link/ui.template_onafterload_event.md - fires after data loading is complete
 - api/link/ui.template_onafterrender_event.md - occurs immediately after the component has been rendered.
 - api/link/ui.template_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.template_onbeforeload_event.md - occurs immediately before data loading has been started
@@ -101,7 +101,7 @@ The component is a simple container (but with rich API support) where you can pu
 - api/ui.template_autoheight_config.md - lets the component autosize to its contents
 - api/link/ui.template_borderless_config.md - used to hide the component borders
 - api/link/ui.template_container_config.md - an html container (or its id) where the component needs initializing
-- api/link/ui.template_content_config.md - the id or node, whose content will be moved to the view
+- api/ui.template_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.template_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.template_data_config.md - JavaScript array containing data for the component
 - api/link/ui.template_datafeed_config.md - the URL that the component will use to reload data during binding
@@ -122,7 +122,7 @@ The component is a simple container (but with rich API support) where you can pu
 - api/ui.template_src_config.md - the path to an external template that is loaded by Ajax
 - api/link/ui.template_template_config.md - the component template
 - api/ui.template_type_config.md - name of predefined styling type
-- api/link/ui.template_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.template_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.template_width_config.md - sets the width of the component
 }}
 

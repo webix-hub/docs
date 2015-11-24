@@ -11,7 +11,7 @@
 	"logo_http"			: "http://webix.com",
 	"docs_http"			: "http://docs.webix.com",
 
-	"minMadokaVersion"	: 1.1,
+	"minMadokaVersion"	: 1.2,
 	"singleItemToc"		: false,
 	"seoTitles"			: true,
 

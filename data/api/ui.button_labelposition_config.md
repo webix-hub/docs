@@ -31,5 +31,4 @@ Top right alignment is achieved by applying both properties:
 {view: "text", label:"Some Text", labelAlign:"right", labelPosition:"Top"}
 ~~~
 
-
-
+@reserved: true

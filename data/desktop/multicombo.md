@@ -56,4 +56,54 @@ var list = popup.getBody();
 var list = popup.getList();
 ~~~
 
+##Manipulating Tags
+
+In some cases, multicombo can not be shown as a multi-line input and information about selected items should be displayed only as a number of these items.
+
+<img src="desktop/multicombo_tags.png">
+
+To disable multiple tags, you need to set the api/ui.multicombo_tagmode_config.md property to *false*:
+
+~~~js
+{   
+    view:"multicombo", 
+    label:"Name", 
+    labelPosition: "top",
+    value:"1,7,9,12",
+    tagMode: false
+    ...
+}
+~~~
+
+To specify a template for the common tag, you need to use the api/ui.multicombo_tagtemplate_config.md property.
+By default the tagTemplate is set like this:
+
+~~~js
+tagTemplate: function(values){
+   return (values.length? values.length+" item(s)":"");
+}
+~~~
+
+- values - an array of the selected items' ids 
+
+You can customize the template the way you like:
+
+~~~js
+{   
+    view:"multicombo", 
+    label:"Name", 
+    labelPosition: "top",
+    value:"1,7,9,12",
+    tagMode: false
+    tagTemplate: function(values){
+        return (values.length? values.length+" item(s) selected":"");
+    },
+}
+~~~
+
+{{sample
+	60_pro/02_form/07_multicombo_tag.html
+}}
+
+
 @edition:pro

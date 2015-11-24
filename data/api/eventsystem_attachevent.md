@@ -5,9 +5,9 @@ attachEvent
 	attaches the handler to an inner event of the component (allows behaviour customizations)
 
 @params:
-- type		string		the event name, case-insensitive
-- functor	function	the function object or name
-* id		id		the event id
+- type		string			the event name, case-insensitive
+- functor	function		the function object or name
+* id		string/number		the event id
 
 @callback:
 - ...mixed...		function	the callback receives different set of parameters for different events. Check the documentation of the related events.

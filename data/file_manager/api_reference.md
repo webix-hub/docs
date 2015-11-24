@@ -1,4 +1,4 @@
-API Reference
+File Manager API Reference
 ===============
 
 Methods
@@ -386,7 +386,7 @@ fmanager.uploadFile(target);
 Properties
 ----------------
 
-
+- <a href="#disabledhistory">disabledHistory</a> - the flag that disables the tracking history 
 - <a href="#handlers">handlers</a> - a collection of server scripts for action handling
 - <a href="#icons">icons</a> - a collection of icons
 - <a href="#mode">mode</a> - the initially selected mode ("table" by default)
@@ -400,6 +400,19 @@ Properties
 - <a href="#templatesize">templateSize</a> -  a template applied for the file size
 - <a href="#uploadprogress">uploadProgress</a> - an object with configuration of progress bar that appears during the upload
 
+
+<h3 id="disabledhistory">disabledHistory</h3>
+
+disables tracking history ("false" by default)
+
+~~~js
+webix.ui({
+	view:"filemanager",
+    id:"files",
+    disabledHistory: true
+    ...
+});
+~~~
 
 <h3 id="handlers">handlers</h3>
 

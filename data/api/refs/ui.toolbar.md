@@ -77,7 +77,7 @@ The component can contain various elements inside it (actually, the same element
 - api/link/ui.toolbar_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
 - api/link/ui.toolbar_unbind.md - breaks "bind" link
 - api/link/ui.toolbar_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/ui.toolbar_validate.md - checks data in the component during adding new item or editing existing ones
+- api/link/ui.toolbar_validate.md - checks data in the form
 }}
 
 
@@ -89,13 +89,13 @@ The component can contain various elements inside it (actually, the same element
 - api/link/ui.toolbar_onafterscroll_event.md - fires when to component is scrolled in any direction
 - api/link/ui.toolbar_onaftervalidation_event.md - fires after data has been validated
 - api/link/ui.toolbar_onbeforeload_event.md - occurs immediately before data loading has been started
-- api/link/ui.toolbar_onbeforevalidate_event.md - called before runing validation
+- api/link/ui.toolbar_onbeforevalidate_event.md - called before running validation
 - api/link/ui.toolbar_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.toolbar_onchange_event.md - fires when data in the input or related form/toolbar is changed
 - api/link/ui.toolbar_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.toolbar_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.toolbar_onvalidationerror_event.md - fires when the form fails to pass validation
-- api/link/ui.toolbar_onvalidationsuccess_event.md - fires after the form has passes validation successfully
+- api/link/ui.toolbar_onvalidationsuccess_event.md - fires after the form has passed validation successfully
 - api/link/ui.toolbar_onvalues_event.md - fires after values have been set within toolbar or form
 }}
 
@@ -135,7 +135,7 @@ The component can contain various elements inside it (actually, the same element
 - api/link/ui.toolbar_scroll_config.md - enables/disables the scroll bar
 - api/link/ui.toolbar_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.toolbar_type_config.md - defines the layout borders
-- api/link/ui.toolbar_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.toolbar_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.toolbar_visiblebatch_config.md - sets the batch that will be shown initially
 - api/link/ui.toolbar_width_config.md - sets the width of the component
 }}

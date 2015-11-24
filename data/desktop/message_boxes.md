@@ -82,32 +82,32 @@ webix.message.hide(message);
 ##Modal Message Boxes
 
 **Message boxes** resemble ui-related modal [Window](desktop/window.md) yet they are initialized in a completely another way. They prevent the workflow on the parent app until 
-you perform actions required by them ( button clicking, as a rule). Message boxes close on a button click and callback function, if any, is executed.
+you perform actions required by them ( button clicking, as a rule). Message boxes close on a button click and callback function, if any is executed.
 
 Message boxes contain some text and an "OK" button. There exist three types of modal message boxes:
 
-- [webix.alert()](#alert) - alert box with a button
-- [webix.confirm()](#confirm) - confirmation box with two button to agree or cancel. 
+- [webix.alert()](#alert) - alert box with a button;
+- [webix.confirm()](#confirm) - confirmation box with two button to agree or cancel; 
 - [webix.modalbox()](#modal) - a modal message box with as many buttons as you like. 
 
 The boxes share some common properties, namely:
 
 - **title** - text of the header;
 - **ok** - text of the "ok" button;
-- **cancel** - text of the "cancel button" (only for a confirmation box);
+- **cancel** - text of the "cancel" button (only for a confirmation box);
 - **text** - text of the window body; 
-- **callback** - function that is executed on button click. Callback function may include another message box which contents depends on your choice in the previous step.
+- **callback** - function that is executed on button click. Callback function may include another message box the contents of which depend on your choice in the previous step;
 - **type** - type of the button (warning or error).
 
 The callback function takes **result** of user communication with a message box as parameter. It can be:
 
-- **boolean true** - each time you press its **"OK"**, *true* is passed to the box callback. It's the only possible value for aler box as it feature an "OK" button only;
-- **boolean false** - each time you press **"Cancel"**, *false* is passed to the callback. Works for confirm box;
-- **Button index** - true for a modal box. Stored the index of a clicked button (zero-based numbering).
+- **boolean true** - each time you press its **"OK"**, *true* is passed to the box callback. It's the only possible value for the alert box as it features the "OK" button only;
+- **boolean false** - each time you press **"Cancel"**, *false* is passed to the callback. Works for the confirm box;
+- **Button index** - true for the modal box. Stores the index of the clicked button (zero-based numbering).
 
-Result is used in callback function that defines further actions according to its value (*true* or *false*). 
+The result is used in the callback function that defines further actions according to its value (*true* or *false*). 
 
-At the same time, callback can be set not depending on the result, as a fucntion to be executed on button click.
+At the same time, callback can be set independent of the result, as a function will be executed on button click.
 
 ##Initialization
 
@@ -174,8 +174,8 @@ webix.confirm({
 Webix modalbox resembles alert and confirm in its modality, yet features several peculiarities: 
 
 - its **text** can include any **HTML** content;
-- it may contain as many button as you wish defined in **buttons** array that contains text values for each one;
-- the **callback** takes the **index** of the chosen button as parameter;
+- it may contain as many buttons as you wish defined in the **buttons** array that contains text values for each one;
+- the **callback** takes the **index** of the chosen button as a parameter;
 - it can be **sized** with width and height parameters.
 
 ~~~js
@@ -202,7 +202,7 @@ webix.modalbox({
 
 ##Modal Windows and Keyboard Interaction
 
-Keyboard functionality for modax boxes is controlled by **webix.message.keyboard** property that is initially true. 
+Keyboard functionality for modal boxes is controlled by **webix.message.keyboard** property that is initially true. 
 
 By default modal boxes block keyboard events of the page. Users can use only the following keys that set modal box value and close it: 
 

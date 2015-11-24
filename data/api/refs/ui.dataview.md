@@ -117,7 +117,7 @@ The component presents a collection of objects according to a user-defined templ
 - api/link/ui.dataview_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.dataview_onafterdelete_event.md - fires after item deleting
 - api/link/ui.dataview_onafterdrop_event.md - fires after drag-n-drop was finished
-- api/link/ui.dataview_onafterload_event.md - fires after server side loading is complete
+- api/link/ui.dataview_onafterload_event.md - fires after data loading is complete
 - api/link/ui.dataview_onafterrender_event.md - occurs immediately after the component has been rendered
 - api/link/ui.dataview_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.dataview_onafterselect_event.md - fires after item was selected
@@ -209,7 +209,7 @@ The component presents a collection of objects according to a user-defined templ
 - api/link/ui.dataview_template_config.md - the component template
 - api/link/ui.dataview_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.dataview_type_config.md - object that specifies items presentation
-- api/link/ui.dataview_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.dataview_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.dataview_width_config.md - sets the width of the component
 - api/ui.dataview_xcount_config.md - adjusts the view width to display the defined number of items in a row
 - api/ui.dataview_ycount_config.md - adjusts the view height to display the defined number of items in a column

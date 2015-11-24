@@ -9,7 +9,6 @@ Properties
 - api/link/ui.htmlform_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.htmlform_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.htmlform_data_config.md - JavaScript array containing data for the component
-- api/link/ui.htmlform_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.htmlform_datatype_config.md - the type of loaded data
 - api/link/ui.htmlform_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.htmlform_gravity_config.md - sets the view gravity (1 by default)
@@ -26,8 +25,7 @@ Properties
 - api/link/ui.htmlform_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.htmlform_src_config.md - the path to an external template that is loaded by Ajax
 - api/link/ui.htmlform_template_config.md - the component template
-- api/link/ui.htmlform_type_config.md - name of predefined styling type
-- api/link/ui.htmlform_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.htmlform_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.htmlform_width_config.md - sets the width of the component
 }}
 
@@ -39,7 +37,6 @@ Properties
 - api/link/ui.htmlform_content_config.md
 - api/link/ui.htmlform_css_config.md
 - api/link/ui.htmlform_data_config.md
-- api/link/ui.htmlform_datafeed_config.md
 - api/link/ui.htmlform_datatype_config.md
 - api/link/ui.htmlform_disabled_config.md
 - api/link/ui.htmlform_gravity_config.md
@@ -56,7 +53,6 @@ Properties
 - api/link/ui.htmlform_scrollspeed_config.md
 - api/link/ui.htmlform_src_config.md
 - api/link/ui.htmlform_template_config.md
-- api/link/ui.htmlform_type_config.md
 - api/link/ui.htmlform_url_config.md
 - api/link/ui.htmlform_width_config.md
 

@@ -448,7 +448,10 @@ The properties of actions are the following:
 - id - {string} the id of an action
 - method - {string} the name of the method that is used to implement the action
 - icon - {string} an icon from the Font Awesome collection used for the action
-- batch - {string} group that menu item belongs to. If *"item"*, the item will be seen only for data items not empty space;
+- batch - {string} group that menu item belongs to. Possible value are:
+	- *"item"* - the item will be seen only for data items not empty space;
+    - *"root"* - the item will be seen for the root item only;
+    - if batch is not set, the item will be shown for empty space and all items other than root
 - value - {string} the action title 
 
 You can reload data using the following approach:

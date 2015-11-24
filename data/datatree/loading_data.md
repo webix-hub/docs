@@ -1,4 +1,4 @@
-Loading data
+Loading Data
 ============
 
 Webix Tree can get data in the following predefined [data formats](desktop/data_types.md):

@@ -115,6 +115,7 @@ Can be used standalone or as editor for other components. Check [suggest](deskto
 - api/link/ui.suggest_resize_config.md - enables/disables window resizing
 - api/ui.suggest_template_config.md - template which will be used to fill parent input from selected record
 - api/ui.suggest_textvalue_config.md - defines which field from suggest list will be used as text after selecting an option
+- api/link/ui.suggest_tofront_config.md - 
 - api/link/ui.suggest_top_config.md - the top offset of a window
 - api/ui.suggest_type_config.md - defines type of suggest control
 - api/link/ui.suggest_width_config.md - sets the width of the component
