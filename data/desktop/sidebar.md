@@ -10,7 +10,9 @@ On clicking a Sidebar menu item, either the related content is shown in the righ
 
 <br>
 
-<img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/sidebarmenu_front.png"/>
+<img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/sidebar_front.png"/>
+
+<br>
 
 Creating a Sidebar Menu
 -------------------------
@@ -51,8 +53,9 @@ webix.ready(function(){
 
 ###Data source
 
+Sidebar can load data from various sources in defferent formats. You can fine more information in the article datatree/loading_data.md.
 
-The data configuration contains the description of menu items, corresponding icons and subitems. It can look like this:
+The Sidebar data configuration contains the description of menu items, corresponding icons and subitems. It can look like this:
 
 ~~~js
 var menu_data = [
@@ -132,10 +135,103 @@ To collapse/expand the menu on the button click, we define the click handler in 
 
 The image below shows how an expanded Sidebar menu collapses on the Menu button click:
 
-<img src="desktop/sidebar_expanded_collapsed.png">
+<img src="desktop/sidebar_collapsed.png">
+
+
+Data Visualization
+---------------
+
+Sidebar allows configuring the templates of its items. The desktop/html_templates.md are described in the desktop/type.md of Sidebar:
+
+~~~js
+webix.type(webix.ui.tree, {
+	name:"sideBar",
+	height: "auto"
+    ...
+});
+~~~
+
+
+###name
+
+defines the Sidebar name
+
+~~~js
+{
+	name:"sideBar"
+}
+~~~
+
+###height
+
+specifies the height of an item in the Sidebar
+
+~~~js
+{
+	height: "auto"
+}
+~~~
+
+###css
+
+specifies the CSS class applied to the Sidebar
+
+~~~js
+{
+	css: "webix_sidebar"
+}
+~~~
+
+
+###template
+
+defines the appearance of the Sidebar in the collapsed and expanded states
+
+~~~js
+template: function(obj, common){
+	if(common.collapsed)
+		return common.icon(obj, common);
+	return common.arrow(obj, common)+common.icon(obj, common) +"<span>"+obj.value+"</span>";
+}
+~~~
+
+###arrow
+
+defines the presentation of arrows, depending on the level of the related Sidebar items
+
+~~~js
+arrow: function(obj, common){
+	var html = "";
+	var open = "";
+	for (var i=1; i<=obj.$level; i++){
+		if (i==obj.$level && obj.$count){
+			var icon = " fa-angle-"+(obj.open?"down":"left");
+			html+="<span class='webix_sidebar_dir_icon webix_icon"+icon+"'></span>";
+		}
+	}
+	return html;
+},
+~~~
+
+###icon
+
+specifies a template for rendering Font Awesome icons next to the items of Sidebar 
+
+~~~js
+icon:function(obj, common){
+	if(obj.icon)
+		return "<span class='webix_icon webix_sidebar_icon fa-"+obj.icon+"'></span>";
+	return "";
+}
+~~~
+
 
 API Reference
 --------------
+
+Sidebar inherits the most part of API from the Tree component. Follow the api/refs/ui.tree.md API page to find the necessary method,event or property.
+
+Besides, Sidebar has its own methods and properties. You can find them in the list below:
 
 ###Methods
 
@@ -153,7 +249,7 @@ returns:
 
 ####getPopupTitle()
 
-returns an object with the popup's first-level items
+returns a Template view with a popup title (a branch's name)
 
 ~~~js
 sidebar.getPopupTitle();
@@ -161,11 +257,11 @@ sidebar.getPopupTitle();
 
 returns:
 
-- {object} the popup's object containing first-level items
+- {object} a Template view containing the popup title
 
 ####getPopupList() 
 
-returns an object with child items of the popup
+returns a List view of SideBar's Popup
 
 ~~~js
 sidebar.getPopupList();
@@ -173,7 +269,7 @@ sidebar.getPopupList();
 
 returns:
 
-- {object} the popup's object containing child items
+- {object} a List view containing child items
 
 
 ####collapse()
@@ -233,78 +329,3 @@ webix.ui({
 ~~~
 
 
-Type object properties
----------------
-
-###name
-
-defines the Sidebar name
-
-~~~js
-{
-	name:"sideBar"
-}
-~~~
-
-###height
-
-specifies the height of an item in the Sidebar
-
-~~~js
-{
-	height: "auto"
-}
-~~~
-
-###css
-
-specifies the CSS class applied to the Sidebar
-
-~~~js
-{
-	css: "webix_sidebar"
-}
-~~~
-
-
-###template
-
-defines the appearance of the Sidebar in the collapsed and expanded states
-
-~~~js
-template: function(obj, common){
-	if(common.collapsed)
-		return common.icon(obj, common);
-	return common.arrow(obj, common)+common.icon(obj, common) +"<span>"+obj.value+"</span>";
-}
-~~~
-
-###arrow
-
-defines the presentation of arrows, depending on the level of the related Sidebar items
-
-~~~js
-arrow: function(obj, common){
-	var html = "";
-	var open = "";
-	for (var i=1; i<=obj.$level; i++){
-		if (i==obj.$level && obj.$count){
-			var className = "webix_sidebar_dir_icon webix_icon fa-angle-"+(obj.open?"down":"left");
-			html+="<span class='"+className+"'></span>";
-		}
-	}
-	return html;
-},
-~~~
-
-###icon
-
-specifies a template for rendering Font Awesome icons next to the items of Sidebar 
-
-~~~js
-icon:function(obj, common){
-	if(obj.icon)
-		return "<span class='webix_icon webix_sidebar_icon fa-"+obj.icon+"'></span>";
-	return "";
-}
-~~~

@@ -54,8 +54,9 @@ webix.ui({
     - **height** and **width** (number) of each item;
 - **openAction** (string) - alters the way of submenu opening - **"click"**. If set, you should first click a menu item to enable submenu opening and hiding on "onMouseOver" and "onMouseOut" events.
 To hide submenus, you need to click somewhere outside the menu;
-- **template** - (string, function) - rules of data presentation. See [Data templates](desktop/html_templates.md) article for details.
-- **data** (object) - inline data desires format. See [Loading data](desktop/data_loading.md) article for details.
+- **template** - (string, function) - rules of data presentation. See [Data templates](desktop/html_templates.md) article for details;
+- **data** (object) - the inline data desired format. See [Loading data](desktop/data_loading.md) article for details
+- **autowidth** - (boolean) adjusts the width of pulldown subitems according to the length of their text, false by default
 
 {{sample 03_menu/11_menu_open_click.html}}
 
@@ -208,6 +209,33 @@ data:[
 This configuration overrides common configuration for submenus defined by **submenuConfig**. 
 
 {{sample 03_menu/12_submenu_config.html}}
+
+
+<h3 id="autowidth">Automatic setting of Submenus' width</h3>
+
+<img src="desktop/menu_autowidth.png">
+
+To change the width of Submenus automatically, according to the length of their labels, use the *autowidth* property with the true value in the menu's configuration:
+
+~~~js
+webix.ui({
+	container:"areaA",
+	view:"menu",
+	autowidth:true,
+	data:[
+		{ id:"1",value:"Short...",
+			submenu:[ "FB", "G+", "TW" ]},
+		{ id:"2",value:"Medium...",
+			submenu:[ "Facebook", "Google+", "Twitter" ]},
+        ...
+	]
+});
+~~~
+
+{{sample
+03_menu/17_submenu_autowidth.html
+}}
+
 
 ###Webix Component as Menu Item
 

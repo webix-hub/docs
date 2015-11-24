@@ -1,7 +1,7 @@
 
 {{ memo A collapsible side menu that allows selecting separate items. }}
 
-It can be shown from any part of the screen by the Menu button click. Check [sidemenu](desktop/sidemenu.md) documentation for more detailed description
+The animated menu component that can be bound to any part of the screen. The size and position of Sidemenu can be customized. It can contain any other views, including complex layouts. Check [sidemenu](desktop/sidemenu.md) documentation for more detailed description.
 
 ### Constructor
 

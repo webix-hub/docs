@@ -1,4 +1,4 @@
-Details and examples of data formats
+Details and Examples of Data Formats
 ====================
 <img src="datatree/data_formats.png"/>
 
@@ -7,7 +7,7 @@ Expected data formats
 
 ###JSON
 
-~~~json
+~~~js
 [
 	{ id:"1", open:true, value:"Toyota", data:[
 		{ id:"1.1", value:"Avalon" },
@@ -86,7 +86,7 @@ JSON data. Using simplified form
 ------------------------------------------------
 You can use the simplified form of JSON and specify data as in:
 
-~~~json
+~~~js
 [
 	{ value:"Toyota", open:true, data:[
 		"Avalon", "Camry", "Corolla" 
@@ -111,7 +111,7 @@ When you specify a custom format, don't remember to set the expected data type t
 
 Here is a simple example:
 
-~~~json
+~~~js
 var myjson = webix.DataDriver.myjson = webix.copy(webix.DataDriver.json);
 
 myjson.child=function(obj){
@@ -165,7 +165,7 @@ When you specify a custom format, don't remember to set the expected data type t
 
 Here is a simple example:
 
-~~~xml
+~~~js
 var myxml = webix.DataDriver.myxml = webix.copy(webix.DataDriver.xml);
 myxml.records = "/cars/car";
 

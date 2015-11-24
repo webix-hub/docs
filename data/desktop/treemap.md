@@ -10,7 +10,8 @@ TreeMap
 
 ##Overview
 
-UI-related **TreeMap** inherits from [view](desktop/view.md) and allows visualizing hierarchical structures is a space-limited way. It takes most part of API from api/refs/treestore.md.
+UI-related **TreeMap** inherits from [view](desktop/view.md) and allows visualizing hierarchical structures in a space-limited way - as a set of nested rectangles. 
+It takes most part of API from api/refs/treestore.md.
 
 <br>
 
@@ -48,13 +49,6 @@ webix.ui({
 });
 ~~~
 
-The parameters are the following:
-
-- select - (boolean) if set to true, allows selecting branches
-- template - (function) defines, what element is chosen, takes an item object as a parameter and returns either the item's label or an empty string (depending on the settings)
-- value - (string) specifies what part the element takes relative to other elements of the same level
-
-
 {{sample
 	60_pro/11_treemap/01_init.html
 }}
@@ -62,19 +56,10 @@ The parameters are the following:
 Configuration settings
 -------------------------------
 
-There are more parameters that you can set to configure the TreeMap in the needed way:
+There are main configuration parameters that you can set to configure the TreeMap in the needed way:
 
 
-- **value** - (string) specifies what part of the TreeMap space an element takes relative to other elements of the same level
-
-~~~js
-webix.ui({
-	view:"treemap",
-	value: "#value#"
-});
-~~~
-
-- **template** - (function) defines, what element is chosen, takes an item object as a parameter and returns either some item's property or an empty string (depending on the settings)
+- **template** - (function) defines html content displayed in rectangles
 
 ~~~js
 webix.ui({
@@ -85,6 +70,14 @@ webix.ui({
 });
 ~~~
 
+- **value** - (string,function) a template that specifies the area of an item rectangle
+
+~~~js
+webix.ui({
+	view:"treemap",
+	value: "#value#"
+});
+~~~
 
 - **type** - (object) defines the peculiarities of the TreeMap rendering
 
@@ -104,15 +97,6 @@ webix.ui({
 });
 ~~~
 
-- **url** - (string) url to the data source
-
-~~~js
-webix.ui({
-	view:"treemap",
-    ...
-	url: "data/data_colors.json"
-});
-~~~
 
 - **activeItem** - (boolean) specifies if childs of the branches will be rendered in the TreeMap, false by default
 
@@ -151,14 +135,15 @@ webix.ui({
 ~~~
 
 
-Customizing TreeMap
+Styling TreeMap
 ----------------
 
-Besides displaying the correlation of elements' values inside of TreeMap, you can also show the relations between items by some other parameter with the help of color.
+Besides the correlation of rectangles' size, you can also define colors for items to show a separate dimension of the data.
 
 <img src="desktop/treemap_colors.png">
 
-For example, you can set color graduation for the TreeMap elements, depending on the number of comments they have. You should define a custom css class that will specify the logic of comments coloring:
+For example, you can set color graduation for the TreeMap elements, depending on the number of comments they have.
+You should define a cssClass method in the TreeMap type to specify rectangles' styles depending on the comments' number:
 
 ~~~js
 webix.ui({
@@ -187,17 +172,19 @@ webix.ui({
 ~~~
 
 
-In the above example the cssClass parameter sets a function that takes an element object as a parameter. We want to color just the branches, so then we check if the element is a branch.
+In the above example the cssClass parameter sets a function that takes an element object as a parameter. We want to color only leaves (items with no sub-items), so we check if the element is not a branch.
 
-If it's true, the corresponding element will be colored according to the next logic: the more comments the items have, the more saturated their color will be.
+Elements are colored according to the next logic: the more comments the items have, the more saturated their color will be.
 
 The colors that correspond to this or that rule are specified in the css style definition:
 
 ~~~css
-.item0{ background: #bbdefb; }
-.item1{ background: #90caf9; }
-.item2{ background: #64b5f6; }
-.item3{ background: #42a5f5; }
+<style>
+	.item0{ background: #bbdefb; }
+	.item1{ background: #90caf9; }
+	.item2{ background: #64b5f6; }
+	.item3{ background: #42a5f5; }
+</style>
 ~~~
 
 {{sample 60_pro/11_treemap/02_colors.html}}
@@ -205,8 +192,9 @@ The colors that correspond to this or that rule are specified in the css style d
 One-Level Rendering
 ---------------------
 
-You can set the mode in which only first-level branches are displayed in the Treemap. 
-For this purpose, we need to count the average number of comments in a branch. Let's specify the getCss function with the appropriate configuration.
+You can set the mode in which only first-level branches are displayed in the Treemap. But if values are set only for leaves items, you need to calculate them for branches in order to define rectangles style.
+
+For this purpose, we need to count the average number of comments in our example. Let's specify the getCss function with the appropriate configuration:
 
 
 
@@ -239,13 +227,11 @@ function getCss(item){
 }
 ~~~
 
-As you can see, inside of the isBranch function we call the eachLeaf one. The method takes the leaf id and a function, where we pass the item object.
-
-To get the sum of elements comments, we take comments of each item and summarize them. We also count the number of all items. And then we divide the sum by the number.
+The isBranch() method checks whether an item is a branch. And the eachLeaf() method allows looping through all leaves to get the sum of elements' comments and getting the average number as a result.
 
 Thus, we get the average number of comments in a branch and can use this number in the template of the value parameter. 
 
-Then we can pass the getCss function into the cssClass parameter of the type object an set the template that will render only the branches of the first level with their category names:
+The defined getCss() method should be set as the cssClass property to apply css styling to rectangles:
 
 
 ~~~js
@@ -264,6 +250,13 @@ webix.ui({
 	url: "data/data.json"
 });
 ~~~
+
+The key parameters here are:
+
+- **activeItem** - (boolean) specifies if childs of the branches will be rendered in the TreeMap, false by default
+
+- **subRender** - (boolean) defines if the sub-elements should be rendered for the first-level branches, true by default
+
 
 {{sample 60_pro/11_treemap/03_one_level.html}}
 
@@ -362,7 +355,7 @@ $$("treemap").attachEvent("onAfterSelect",function(id){
 Setting header
 ----------------
 
-You can specify the displaying of branches' names in the header of the treemap. The header is set using the headerTemplate property of the component configuration.
+You can specify the displaying of branches' titles in the header of the treemap. The titles are set using the api/ui.treemap_headertemplate_config.md property in the component's configuration:
 
 ~~~js
 webix.ui({
@@ -376,18 +369,7 @@ In our example, the item's category is taken as the value of the headerTemplate 
 <img src="desktop/treemap_branch_header.png">
 
 
-
-Let's enable the child branches of the "Healthcare" category to expand on click and display their titles in the header.
-
-~~~js
-webix.ui({
-	view:"treemap",
-	headerTemplate: "#category#",
-    branch:"2.1" 
-});
-~~~
-
-Now if we click on the "Health Economics" sub-branch of the "Healthcare" category, the header will be displayed as the "First-level branch header> Second-level branch header":
+Now if we click on the "Health Economics" sub-branch of the "Healthcare" category, the header will be displayed as the "Main Category> SubCategory":
 
 <img src="desktop/treemap_child_branch_header.png">
 

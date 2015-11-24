@@ -1,8 +1,8 @@
 
 
-{{memo A control that visualized complex hierarchical data in a compact way. }}
+{{memo A control used for visualization of complex hierarchical data in a compact way. }}
 
-The component is used for space-saving presentation of big tree-like data. Relations between tree elements are reflected using color graduation or correlation of proportions. One-level rendering of tree data is also possible with Treemap. Check [treemap](desktop/treemap.md) documentation for more detailed description.
+The component is used for space-saving presentation of big tree-like data. Relations between tree elements are reflected using the correlation of rectangles' sizes or graduation of their colors. One-level rendering of tree data is also possible with Treemap. Check [treemap](desktop/treemap.md) documentation for more detailed description.
 
 ### Constructor
 
