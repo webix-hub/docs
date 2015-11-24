@@ -119,6 +119,7 @@ as well as component [editor](api/refs/editors.md).
 - api/link/ui.gridsuggest_resize_config.md - enables/disables window resizing
 - api/link/ui.gridsuggest_template_config.md - template which will be used to fill parent input from selected record
 - api/link/ui.gridsuggest_textvalue_config.md - defines which field from suggest list will be used as text after selecting an option
+- api/link/ui.gridsuggest_tofront_config.md - 
 - api/link/ui.gridsuggest_top_config.md - the top offset of a window
 - api/link/ui.gridsuggest_type_config.md - defines type of suggest control
 - api/link/ui.gridsuggest_width_config.md - sets the width of the component

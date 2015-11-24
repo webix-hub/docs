@@ -3,7 +3,28 @@ ui.treemap
 
 
 
+{{memo A control used for visualization of complex hierarchical data in a compact way.. }}
 
+The component is used for space-saving presentation of big tree-like data. Relations between tree elements are reflected using the correlation of rectangles' sizes or graduation of their colors. One-level rendering of tree data is also possible with Treemap. Check [treemap](desktop/treemap.md) documentation for more detailed description.
+
+### Constructor
+
+~~~js
+	var treemap = webix.ui({
+		view:"treemap", 
+		container:"mydiv", 
+		...config options will be here..
+	})
+	//or, in case of jQuery
+	$("#mydiv").webix_treemap({
+		...config options will be here..
+	});
+~~~
+
+### Where to start
+
+- [Overview of Sidemenu Widget](desktop/treemap.md)
+- [Samples](http://docs.webix.com/samples/60_pro/11_treemap/index.html)
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/group.md">Group</a>, <a href="api/refs/treeapi.md">TreeAPI</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/treedatamove.md">TreeDataMove</a>, <a href="api/refs/selectionmodel.md">SelectionModel</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/treedataloader.md">TreeDataLoader</a>, <a href="api/refs/treestore.md">TreeStore</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/ui.proto.md">ui.proto</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/treerenderstack.md">TreeRenderStack</a>, <a href="api/refs/copypaste.md">CopyPaste</a></div>
 
@@ -90,7 +111,7 @@ ui.treemap
 - api/link/ui.treemap_setpage.md - makes the specified page visible (assuming that the pager was defined )
 - api/link/ui.treemap_setstate.md - restores the specified state
 - api/link/ui.treemap_show.md - makes the component visible
-- api/ui.treemap_showbranch.md - 
+- api/ui.treemap_showbranch.md - shows the leaves of the branch by its id
 - api/link/ui.treemap_showitem.md - scrolls the component to make the specified item visible
 - api/link/ui.treemap_sort.md - sorts datastore
 - api/link/ui.treemap_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
@@ -167,10 +188,10 @@ ui.treemap
 <div class='h2'>Properties</div>
 
 {{api
-- api/ui.treemap_activeitem_config.md - 
+- api/ui.treemap_activeitem_config.md - specifies if childs of the branches will be rendered in the TreeMap
 - api/link/ui.treemap_animate_config.md - defines or disables view change animation.
 - api/link/ui.treemap_borderless_config.md - used to hide the component borders
-- api/ui.treemap_branch_config.md - 
+- api/ui.treemap_branch_config.md - specifies the Treemap branch that should be displayed
 - api/link/ui.treemap_click_config.md - sets an action happening on a button click
 - api/link/ui.treemap_clipboard_config.md - enables/disables clipboard support
 - api/link/ui.treemap_container_config.md - an html container (or its id) where the component needs initializing
@@ -184,9 +205,9 @@ ui.treemap
 - api/link/ui.treemap_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.treemap_filtermode_config.md - defines the pattern for tree item filtering
 - api/link/ui.treemap_gravity_config.md - sets the view gravity (1 by default)
-- api/ui.treemap_header_config.md - 
-- api/ui.treemap_headerheight_config.md - 
-- api/ui.treemap_headertemplate_config.md - 
+- api/ui.treemap_header_config.md - defines whether the header of Treemap will be shown or hidden
+- api/ui.treemap_headerheight_config.md - sets the height of the Treemap header
+- api/ui.treemap_headertemplate_config.md - sets the template for the header label
 - api/link/ui.treemap_height_config.md - sets the height of the component
 - api/link/ui.treemap_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.treemap_id_config.md - the component ID
@@ -211,14 +232,14 @@ ui.treemap
 - api/link/ui.treemap_scroll_config.md - enables/disables the scroll bar
 - api/link/ui.treemap_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.treemap_select_config.md - enables/disables item selection or multiselection in grouplist
-- api/ui.treemap_subrender_config.md - 
+- api/ui.treemap_subrender_config.md - defines if the sub-elements should be rendered for the first-level branches
 - api/link/ui.treemap_template_config.md - the component template
 - api/link/ui.treemap_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
 - api/link/ui.treemap_threestate_config.md - enable three-state checkboxes
 - api/link/ui.treemap_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.treemap_type_config.md - object that specifies items presentation
 - api/link/ui.treemap_url_config.md - the URL which the component will use to load data after its initialization
-- api/ui.treemap_value_config.md - 
+- api/ui.treemap_value_config.md - a template that specifies the area of an item rectangle
 - api/link/ui.treemap_width_config.md - sets the width of the component
 }}
 

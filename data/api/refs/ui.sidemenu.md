@@ -2,6 +2,28 @@ ui.sidemenu
 =============
 
 
+{{ memo A collapsible side menu that allows selecting separate items.. }}
+
+The animated menu component that can be bound to any part of the screen. The size and position of Sidemenu can be customized. It can contain any other views, including complex layouts. Check [sidemenu](desktop/sidemenu.md) documentation for more detailed description.
+
+### Constructor
+
+~~~js
+	var sidemenu = webix.ui({
+		view:"sidemenu", 
+		container:"mydiv", 
+		...config options will be here..
+	})
+	//or, in case of jQuery
+	$("#mydiv").webix_sidemenu({
+		...config options will be here..
+	});
+~~~
+
+### Where to start
+
+- [Overview of Sidemenu Widget](desktop/sidemenu.md)
+- [Samples](http://docs.webix.com/samples/28_sidemenu/index.html)
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.popup.md">ui.popup</a>, <a href="api/refs/ui.window.md">ui.window</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/movable.md">Movable</a>, <a href="api/refs/modality.md">Modality</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
@@ -96,7 +118,8 @@ ui.sidemenu
 - api/link/ui.sidemenu_position_config.md - sets position of the window relative to the the screen
 - api/link/ui.sidemenu_relative_config.md - positions a popup window relative to the component it's connected with
 - api/link/ui.sidemenu_resize_config.md - enables/disables window resizing
-- api/ui.sidemenu_state_config.md - 
+- api/ui.sidemenu_state_config.md - defines the position and size of Sidemenu
+- api/link/ui.sidemenu_tofront_config.md - 
 - api/link/ui.sidemenu_top_config.md - the top offset of a window
 - api/link/ui.sidemenu_width_config.md - sets the width of the component
 - api/link/ui.sidemenu_zindex_config.md - stack order of the component

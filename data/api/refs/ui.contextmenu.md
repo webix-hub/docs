@@ -114,6 +114,7 @@ The component presents a pop-up menu that is displayed when the user clicks the 
 - api/link/ui.contextmenu_setposition.md - sets window's position
 - api/link/ui.contextmenu_show.md - makes the component visible
 - api/link/ui.contextmenu_showitem.md - scrolls the component to make the specified item visible
+- api/link/ui.contextmenu_sizetocontent.md - adjusts the size of menu and its submenus to their content
 - api/link/ui.contextmenu_sort.md - sorts datastore
 - api/link/ui.contextmenu_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.contextmenu_unbind.md - breaks "bind" link
@@ -248,6 +249,7 @@ The component presents a pop-up menu that is displayed when the user clicks the 
 - api/link/ui.contextmenu_submenuconfig_config.md - defines submenu configuration
 - api/link/ui.contextmenu_template_config.md - the component template
 - api/link/ui.contextmenu_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
+- api/link/ui.contextmenu_tofront_config.md - 
 - api/link/ui.contextmenu_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.contextmenu_top_config.md - the top offset of a window
 - api/link/ui.contextmenu_type_config.md - object that specifies items presentation
