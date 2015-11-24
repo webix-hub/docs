@@ -49,13 +49,6 @@ webix.ui({
 });
 ~~~
 
-The main configuration properties are the following:
-
-- select - (boolean) if set to true, allows selecting branches
-- template - (function) defines, what element is chosen, takes an item object as a parameter and returns either the item's label or an empty string (depending on the settings)
-- value - (string,function) a template that specifies the area of an item rectangle
-
-
 {{sample
 	60_pro/11_treemap/01_init.html
 }}
@@ -63,7 +56,7 @@ The main configuration properties are the following:
 Configuration settings
 -------------------------------
 
-There are more parameters that you can set to configure the TreeMap in the needed way:
+There are main configuration parameters that you can set to configure the TreeMap in the needed way:
 
 
 - **template** - (function) defines html content displayed in rectangles
@@ -77,6 +70,14 @@ webix.ui({
 });
 ~~~
 
+- **value** - (string,function) a template that specifies the area of an item rectangle
+
+~~~js
+webix.ui({
+	view:"treemap",
+	value: "#value#"
+});
+~~~
 
 - **type** - (object) defines the peculiarities of the TreeMap rendering
 
@@ -178,10 +179,12 @@ Elements are colored according to the next logic: the more comments the items ha
 The colors that correspond to this or that rule are specified in the css style definition:
 
 ~~~css
-.item0{ background: #bbdefb; }
-.item1{ background: #90caf9; }
-.item2{ background: #64b5f6; }
-.item3{ background: #42a5f5; }
+<style>
+	.item0{ background: #bbdefb; }
+	.item1{ background: #90caf9; }
+	.item2{ background: #64b5f6; }
+	.item3{ background: #42a5f5; }
+</style>
 ~~~
 
 {{sample 60_pro/11_treemap/02_colors.html}}

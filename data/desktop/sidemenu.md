@@ -79,7 +79,8 @@ webix.ui({
 Customizing size and position
 -----------------------
 
-You can customize Sidemenu's size and position in the necessary way. It's done with the help of the *state* object that contains the position and size values that wiil be set as Sidemenu properties: 
+You can customize Sidemenu's size and position in the necessary way. It's done with the help of the *state* function that takes as a parameter an object
+containing the position and size values that will be set as Sidemenu properties: 
 
 - top ;
 - left;
@@ -115,7 +116,6 @@ Hiding/showing Sidemenu
 -----------------------
 
 You can hide and show Sidemenu by clicking a button. For this purpose, the api/link/ui.sidemenu_hide.md and api/link/ui.sidemenu_show.md methods should be used.
-The api/link/ui.view_hidden_config.md property defines, if Sidemenu should be initially hidden:
 
 
 ~~~js

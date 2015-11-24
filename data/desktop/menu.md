@@ -211,7 +211,7 @@ This configuration overrides common configuration for submenus defined by **subm
 {{sample 03_menu/12_submenu_config.html}}
 
 
-###Automatic setting of Submenus' width
+<h3 id="autowidth">Automatic setting of Submenus' width</h3>
 
 <img src="desktop/menu_autowidth.png">
 

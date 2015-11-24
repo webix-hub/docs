@@ -53,8 +53,9 @@ webix.ready(function(){
 
 ###Data source
 
+Sidebar can load data from various sources in defferent formats. You can fine more information in the article datatree/loading_data.md.
 
-The data configuration contains the description of menu items, corresponding icons and subitems. It can look like this:
+The Sidebar data configuration contains the description of menu items, corresponding icons and subitems. It can look like this:
 
 ~~~js
 var menu_data = [
@@ -228,6 +229,10 @@ icon:function(obj, common){
 API Reference
 --------------
 
+Sidebar inherits the most part of API from the Tree component. Follow the api/refs/ui.tree.md API page to find the necessary method,event or property.
+
+Besides, Sidebar has its own methods and properties. You can find them in the list below:
+
 ###Methods
 
 ####getPopup() 
@@ -252,11 +257,11 @@ sidebar.getPopupTitle();
 
 returns:
 
-- {object} the popup's object containing first-level items
+- {object} a Template view containing the popup title
 
 ####getPopupList() 
 
-returns List view of SideBar Popup
+returns a List view of SideBar's Popup
 
 ~~~js
 sidebar.getPopupList();
@@ -264,7 +269,7 @@ sidebar.getPopupList();
 
 returns:
 
-- {object} the List view containing child items
+- {object} a List view containing child items
 
 
 ####collapse()
