@@ -39,6 +39,19 @@ If you need, you can use the viewer and the toolbar separately, by using their p
 PDF viewer API reference
 ---------------------
 
+####load()
+
+loads a pdf file into the viewer
+
+parameters:
+
+- url - (string) the url of the pdf file to load		
+
+~~~js
+$$("pdfviewer").load(url);
+~~~
+
+
 ####nextPage()
 
 renders the page that follows the viewed one

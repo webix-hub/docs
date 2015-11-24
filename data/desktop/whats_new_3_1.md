@@ -8,30 +8,30 @@ Version 3.1
 - [Sidemenu](desktop/sidemenu.md) widget
 - [TreeMap](desktop/treemap.md) (PRO edition)
 - [Sidebar](desktop/sidebar.md) extension
-- autowidth for menu and buttons
+- autowidth for desktop/menu.md#autowidth and desktop/button.md
 
 ##Updates
 
-- listMarginX and listMarginY settings for organogram
+- [listMarginX and listMarginY](organogram/configuration.md#creatinglistblocks) settings for organogram
 - [open()](api/link/ui.organogram_open.md) and [close()](api/link/ui.organogram_close.md) methods for organogram
 - [newValues](api/ui.multicombo_newvalues_config.md) for multiselect
-- eachLeaf for TreeStore
+- [eachLeaf()](api/treestore_eachleaf.md) for TreeStore
 - support for numPad keys UIManager
-- onSubViewOpen event handler
-- inputName parameter for uploader
+- [onSubViewOpen](api/ui.datatable_onsubviewclose_event.md) event handler for DataTable
+- api/ui.uploader_inputname_config.md parameter for uploader
 - "multiselect" support for KanbanLists
-- setStructure to PivotTable
+- [setStructure()](desktop/pivot.md#api) for PivotTable
 - ["root" batch](file_manager/configuration.md#actionsmenu) for File Manager
 - animateView method and "month" view animation for Scheduler on touch devices
 - error message on init non-GPL views with Webix GPL
-- tagMode for multicombo
-- load() method for pdfviewer
+- api/ui.multicombo_tagmode_config.md property for multicombo
+- [load() method](desktop/pdfviewer.md#pdfviewerapireference) for PdfViewer
 - [toFront](api/ui.window_tofront_config.md) property for windows and popups
-- getTextSize() method for html helper
+- api/html_gettextsize.md() method for html helper
 
 ##Fixes
 
-- mkozhukh/uploader_swf[modified] params were escaped
+
 - nested isolated scopes
 - refreshColumn correctly removes filters
 - clipboard: clicks on selected item/cell
@@ -48,7 +48,7 @@ Version 3.1
 - handling mouseup outside browser window
 - pager update on data count change
 - focus() method for checkbox and radio
-- carousel navigation z-index
+- Carousel navigation z-index
 - regression in windows focus handling
 - regression in form focus handling
 - data corrupting by counter in the footer
@@ -56,24 +56,24 @@ Version 3.1
 - sub-rows and precise scroll
 - double-rendering from onchange handler in Chrome
 - handling mouseup outside browser window
-- dataprocessor in updateFromResponse mode doesn't trigger update events
+- DataProcessor in updateFromResponse mode doesn't trigger update events
 - checkbox doesn't trigger onDataUpdate event
 - JSON date parser doesn't recognize dates without milliseconds
 - IE8 compatibility for uploader
 - size of fillspace columns for very small grids
 - Fieldset vertical padding
-- export to excel and Webix Jet (RequireJS)
+- export to Excel and Webix Jet (RequireJS)
 - progressBar in window
 - disabled Resizer
 - date-time shifting in export to Excel
 - webix.copy correctly process Date objects
 - parsing bolean values from HTML markup
 - blockDates in Calendar
-- totalColumn in pivottable
+- totalColumn in Pivot Table
 - custom columns in Excel export
-- format property in datepicker can accept a function
-- hiding columns in a datatable, those were added dynamically
-- export to excel, dates processing
+- format property in DatePicker can accept a function
+- hiding columns in a DataTable, those were added dynamically
+- export to Excel, dates processing
 - FireFox: customCheckbox and customRadio
-- regression in datatable click processing
+- regression in DataTable click processing
 - regression in form.setValues api
