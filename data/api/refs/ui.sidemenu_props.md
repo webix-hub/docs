@@ -28,7 +28,8 @@ Properties
 - api/link/ui.sidemenu_position_config.md - sets position of the window relative to the the screen
 - api/link/ui.sidemenu_relative_config.md - positions a popup window relative to the component it's connected with
 - api/link/ui.sidemenu_resize_config.md - enables/disables window resizing
-- api/ui.sidemenu_state_config.md - 
+- api/ui.sidemenu_state_config.md - defines the position and size of Sidemenu
+- api/link/ui.sidemenu_tofront_config.md - 
 - api/link/ui.sidemenu_top_config.md - the top offset of a window
 - api/link/ui.sidemenu_width_config.md - sets the width of the component
 - api/link/ui.sidemenu_zindex_config.md - stack order of the component
@@ -62,6 +63,7 @@ Properties
 - api/link/ui.sidemenu_relative_config.md
 - api/link/ui.sidemenu_resize_config.md
 - api/ui.sidemenu_state_config.md
+- api/link/ui.sidemenu_tofront_config.md
 - api/link/ui.sidemenu_top_config.md
 - api/link/ui.sidemenu_width_config.md
 - api/link/ui.sidemenu_zindex_config.md

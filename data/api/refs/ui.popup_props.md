@@ -28,6 +28,7 @@ Properties
 - api/link/ui.popup_position_config.md - sets position of the window relative to the the screen
 - api/link/ui.popup_relative_config.md - positions a popup window relative to the component it's connected with
 - api/link/ui.popup_resize_config.md - enables/disables window resizing
+- api/link/ui.popup_tofront_config.md - 
 - api/link/ui.popup_top_config.md - the top offset of a window
 - api/link/ui.popup_width_config.md - sets the width of the component
 - api/link/ui.popup_zindex_config.md - stack order of the component
@@ -60,6 +61,7 @@ Properties
 - api/link/ui.popup_position_config.md
 - api/link/ui.popup_relative_config.md
 - api/link/ui.popup_resize_config.md
+- api/link/ui.popup_tofront_config.md
 - api/link/ui.popup_top_config.md
 - api/link/ui.popup_width_config.md
 - api/link/ui.popup_zindex_config.md

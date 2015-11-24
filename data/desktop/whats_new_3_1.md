@@ -14,19 +14,19 @@ Version 3.1
 
 - listMarginX and listMarginY settings for organogram
 - [open()](api/link/ui.organogram_open.md) and [close()](api/link/ui.organogram_close.md) methods for organogram
-- newValues for multiselect
+- [newValues](api/ui.multicombo_newvalues_config.md) for multiselect
 - eachLeaf for TreeStore
 - support for numPad keys UIManager
 - onSubViewOpen event handler
 - inputName parameter for uploader
 - "multiselect" support for KanbanLists
 - setStructure to PivotTable
-- "root" batch for File Manager
+- ["root" batch](file_manager/configuration.md#actionsmenu) for File Manager
 - animateView method and "month" view animation for Scheduler on touch devices
 - error message on init non-GPL views with Webix GPL
 - tagMode for multicombo
 - load() method for pdfviewer
-- toFront property for windows and popups
+- [toFront](api/ui.window_tofront_config.md) property for windows and popups
 - getTextSize() method for html helper
 
 ##Fixes

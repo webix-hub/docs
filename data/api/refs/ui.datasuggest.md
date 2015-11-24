@@ -119,6 +119,7 @@ as well as component [editor](api/refs/editors.md).
 - api/link/ui.datasuggest_resize_config.md - enables/disables window resizing
 - api/link/ui.datasuggest_template_config.md - template which will be used to fill parent input from selected record
 - api/link/ui.datasuggest_textvalue_config.md - defines which field from suggest list will be used as text after selecting an option
+- api/link/ui.datasuggest_tofront_config.md - 
 - api/link/ui.datasuggest_top_config.md - the top offset of a window
 - api/link/ui.datasuggest_type_config.md - defines type of suggest control
 - api/link/ui.datasuggest_width_config.md - sets the width of the component

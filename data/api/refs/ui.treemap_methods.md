@@ -81,7 +81,7 @@ Methods
 - api/link/ui.treemap_setpage.md - makes the specified page visible (assuming that the pager was defined )
 - api/link/ui.treemap_setstate.md - restores the specified state
 - api/link/ui.treemap_show.md - makes the component visible
-- api/ui.treemap_showbranch.md - 
+- api/ui.treemap_showbranch.md - shows the leaves of the branch by its id
 - api/link/ui.treemap_showitem.md - scrolls the component to make the specified item visible
 - api/link/ui.treemap_sort.md - sorts datastore
 - api/link/ui.treemap_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another

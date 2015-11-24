@@ -108,6 +108,7 @@ The component is a compliment to the menu component and not intended for direct 
 - api/link/ui.submenu_setposition.md - sets window's position
 - api/link/ui.submenu_show.md - makes the component visible
 - api/link/ui.submenu_showitem.md - scrolls the component to make the specified item visible
+- api/link/ui.submenu_sizetocontent.md - adjusts the size of menu and its submenus to their content
 - api/link/ui.submenu_sort.md - sorts datastore
 - api/link/ui.submenu_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.submenu_unbind.md - breaks "bind" link
@@ -241,6 +242,7 @@ The component is a compliment to the menu component and not intended for direct 
 - api/link/ui.submenu_submenuconfig_config.md - defines submenu configuration
 - api/link/ui.submenu_template_config.md - the component template
 - api/link/ui.submenu_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
+- api/link/ui.submenu_tofront_config.md - 
 - api/link/ui.submenu_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.submenu_top_config.md - the top offset of a window
 - api/link/ui.submenu_type_config.md - object that specifies items presentation

@@ -111,6 +111,7 @@ Check [multicombo](desktop/multicombo.md) documentation for more detailed descri
 - api/link/ui.multicombo_minheight_config.md - sets the minimal height for the view
 - api/link/ui.multicombo_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.multicombo_name_config.md - name of the control
+- api/ui.multicombo_newvalues_config.md - allows to enter new values into a multicombo field
 - api/link/ui.multicombo_on_config.md - allows attaching custom handlers to inner events of the component
 - api/ui.multicombo_optionwidth_config.md - sets the width of the suggest list with options
 - api/link/ui.multicombo_options_config.md - defines data items of the drop-down list
