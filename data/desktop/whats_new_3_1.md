@@ -1,7 +1,7 @@
 Version 3.1
 =====================
 
-<span class="release_date">released on September 22, 2015</span>
+<span class="release_date">released on November 24, 2015</span>
 
 ##New Features
 
