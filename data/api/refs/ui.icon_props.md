@@ -13,7 +13,7 @@ Properties
 - api/link/ui.icon_height_config.md - sets the height of the component
 - api/link/ui.icon_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.icon_hotkey_config.md - sets a hotkey that triggers button clicking
-- api/ui.icon_icon_config.md - 
+- api/ui.icon_icon_config.md - the component's icon
 - api/link/ui.icon_id_config.md - the component ID
 - api/link/ui.icon_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.icon_inputwidth_config.md - the width of the input area, or a button's text value area.

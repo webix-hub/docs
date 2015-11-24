@@ -15,4 +15,6 @@ icon
 @template:	api_config
 @descr:
 
+@reserved:true
+
 

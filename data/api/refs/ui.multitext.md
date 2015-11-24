@@ -93,7 +93,7 @@ Check [multitext](desktop/multitext.md) documentation for more detailed descript
 - api/link/ui.multitext_height_config.md - sets the height of the component
 - api/link/ui.multitext_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.multitext_hotkey_config.md - sets a hotkey that triggers button clicking
-- api/link/ui.multitext_icon_config.md - 
+- api/ui.multitext_icon_config.md - sets an icon type
 - api/ui.multitext_iconwidth_config.md - sets icon width
 - api/link/ui.multitext_id_config.md - the component ID
 - api/link/ui.multitext_inputheight_config.md - the height of the input area, or a button's text value area.

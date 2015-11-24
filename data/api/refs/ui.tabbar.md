@@ -114,7 +114,6 @@ Items of the component combines an icon with the text label. The component can b
 - api/link/ui.tabbar_height_config.md - sets the height of the component
 - api/link/ui.tabbar_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.tabbar_hotkey_config.md - sets a hotkey that triggers button clicking
-- api/link/ui.tabbar_icon_config.md - 
 - api/link/ui.tabbar_id_config.md - the component ID
 - api/link/ui.tabbar_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.tabbar_inputpadding_config.md - padding of text in the input
@@ -131,7 +130,7 @@ Items of the component combines an icon with the text label. The component can b
 - api/link/ui.tabbar_multiview_config.md - enables switching between multiview cells
 - api/link/ui.tabbar_name_config.md - name of the control
 - api/link/ui.tabbar_on_config.md - allows attaching custom handlers to inner events of the component
-- api/link/ui.tabbar_optionwidth_config.md - 
+- api/link/ui.tabbar_optionwidth_config.md - sets the width of each view's option
 - api/link/ui.tabbar_options_config.md - defines data items of the drop-down list
 - api/link/ui.tabbar_placeholder_config.md - placeholder text for the input area
 - api/link/ui.tabbar_popup_config.md - allows to attach pop-up menu to the button

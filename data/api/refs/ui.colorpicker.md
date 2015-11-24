@@ -109,7 +109,6 @@ The component handles RGB, HSL, and hex formats and allows setting custom colors
 - api/link/ui.colorpicker_height_config.md - sets the height of the component
 - api/link/ui.colorpicker_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.colorpicker_hotkey_config.md - sets a hotkey that triggers button clicking
-- api/link/ui.colorpicker_icon_config.md - 
 - api/link/ui.colorpicker_icons_config.md - shows "Today" and "Clear" icons for calendar and datepicker popup
 - api/link/ui.colorpicker_id_config.md - the component ID
 - api/link/ui.colorpicker_inputheight_config.md - the height of the input area, or a button's text value area.

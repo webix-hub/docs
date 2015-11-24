@@ -63,7 +63,7 @@ dummy stub
 - api/link/ui.excelbar_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
 - api/link/ui.excelbar_unbind.md - breaks "bind" link
 - api/link/ui.excelbar_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/ui.excelbar_validate.md - checks data in the component during adding new item or editing existing ones
+- api/link/ui.excelbar_validate.md - checks data in the form
 }}
 
 

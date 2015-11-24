@@ -77,7 +77,7 @@ The component provides validation and the ability to save user input to the back
 - api/link/ui.form_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
 - api/link/ui.form_unbind.md - breaks "bind" link
 - api/link/ui.form_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/ui.form_validate.md - checks data in the component during adding new item or editing existing ones
+- api/link/ui.form_validate.md - checks data in the form
 }}
 
 

@@ -111,7 +111,6 @@ The component can be used to build a multi-item menu for navigating between view
 - api/link/ui.segmented_height_config.md - sets the height of the component
 - api/link/ui.segmented_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.segmented_hotkey_config.md - sets a hotkey that triggers button clicking
-- api/link/ui.segmented_icon_config.md - 
 - api/link/ui.segmented_id_config.md - the component ID
 - api/link/ui.segmented_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.segmented_inputpadding_config.md - padding of text in the input
@@ -127,7 +126,7 @@ The component can be used to build a multi-item menu for navigating between view
 - api/ui.segmented_multiview_config.md - enables switching between multiview cells
 - api/link/ui.segmented_name_config.md - name of the control
 - api/link/ui.segmented_on_config.md - allows attaching custom handlers to inner events of the component
-- api/ui.segmented_optionwidth_config.md - 
+- api/ui.segmented_optionwidth_config.md - sets the width of each view's option
 - api/ui.segmented_options_config.md - defines data items of the drop-down list
 - api/link/ui.segmented_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.segmented_relatedaction_config.md - action to call when value of cell changes

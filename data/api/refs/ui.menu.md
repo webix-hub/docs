@@ -107,7 +107,7 @@ The component can be displayed in 2 modes: static (the menu is fully expanded al
 - api/link/ui.menu_setpage.md - makes the specified page visible (assuming that the pager was defined )
 - api/link/ui.menu_show.md - makes the component visible
 - api/link/ui.menu_showitem.md - scrolls the component to make the specified item visible
-- api/ui.menu_sizetocontent.md - 
+- api/ui.menu_sizetocontent.md - adjusts the size of menu and its submenus to their content
 - api/link/ui.menu_sort.md - sorts datastore
 - api/link/ui.menu_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.menu_unbind.md - breaks "bind" link

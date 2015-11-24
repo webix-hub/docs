@@ -31,7 +31,7 @@ DataProcessor
 - api/dataprocessor_send.md - sends a request to server. Allows to save data changes on server.
 - api/dataprocessor_setitemstate.md - set update state for the item
 - api/link/dataprocessor_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/dataprocessor_validate.md - checks data in the component during adding new item or editing existing ones
+- api/link/dataprocessor_validate.md - checks data in the form
 }}
 
 

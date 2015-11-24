@@ -13,7 +13,7 @@ Properties
 - api/link/ui.toggle_height_config.md - sets the height of the component
 - api/link/ui.toggle_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.toggle_hotkey_config.md - sets a hotkey that triggers button clicking
-- api/ui.toggle_icon_config.md - 
+- api/ui.toggle_icon_config.md - an icon for pressed and unpressed toggle states
 - api/link/ui.toggle_id_config.md - the component ID
 - api/link/ui.toggle_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.toggle_inputwidth_config.md - the width of the input area, or a button's text value area.
@@ -22,11 +22,11 @@ Properties
 - api/link/ui.toggle_minheight_config.md - sets the minimal height for the view
 - api/link/ui.toggle_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.toggle_name_config.md - name of the control
-- api/ui.toggle_officon_config.md - 
-- api/ui.toggle_offlabel_config.md - 
+- api/ui.toggle_officon_config.md - an icon for an unpressed toggle
+- api/ui.toggle_offlabel_config.md - a text label on the button in the unpressed state
 - api/link/ui.toggle_on_config.md - allows attaching custom handlers to inner events of the component
-- api/ui.toggle_onicon_config.md - 
-- api/ui.toggle_onlabel_config.md - 
+- api/ui.toggle_onicon_config.md - an icon for a pressed toggle
+- api/ui.toggle_onlabel_config.md - a text label on the button in the pressed state
 - api/link/ui.toggle_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.toggle_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/link/ui.toggle_tooltip_config.md - tooltip for the input

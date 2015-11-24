@@ -103,7 +103,6 @@ ui.textarea
 - api/link/ui.textarea_height_config.md - sets the height of the component
 - api/link/ui.textarea_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.textarea_hotkey_config.md - sets a hotkey that triggers button clicking
-- api/link/ui.textarea_icon_config.md - 
 - api/link/ui.textarea_id_config.md - the component ID
 - api/link/ui.textarea_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.textarea_inputpadding_config.md - padding of text in the input

@@ -106,7 +106,6 @@ You can group multiple component instances together to provide the desired set o
 - api/link/ui.radio_height_config.md - sets the height of the component
 - api/link/ui.radio_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.radio_hotkey_config.md - sets a hotkey that triggers button clicking
-- api/link/ui.radio_icon_config.md - 
 - api/link/ui.radio_id_config.md - the component ID
 - api/link/ui.radio_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.radio_inputpadding_config.md - padding of text in the input
