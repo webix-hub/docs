@@ -413,6 +413,24 @@ What should be taken into account:
 - In case all rules are observed, the function returns *true* and the form is treated as valid. 
 
 
+##Validation of Hidden and Disabled Fields in Form 
+
+By default hidden and disabled fields are not validated. 
+If you want to include them into a validation process, you need to provide validation mode: 
+
+~~~js
+//hidden fileds will be validated
+$$("$form1").validate({hidden:true});
+
+//both hidden and disabled fields will be validated
+$$("$form1").validate({hidden:true , disabled:true});
+~~~
+
+{{sample 13_form/02_api/13_tabs_form.html}}
+
+Note that if the form is hidden itself, hidden and visible fields are not separated. 
+
+
 ##Data Validation for Components
 
 As with form, rules are set within the component constructor. With validation enabled, you'll be warned about invalid data in your component on client side while avoiding loading wrong data to server. 
