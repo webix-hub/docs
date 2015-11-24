@@ -17,7 +17,6 @@ Events
 - api/link/ui.datatable_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/ui.datatable_onafterselect_event.md - fires after a cell is selected
 - api/link/ui.datatable_onaftersort_event.md - fires after sorting dataset
-- api/ui.datatable_onafterunselect_event.md - 
 - api/ui.datatable_onafterunselect_event.md - fires after a cell is unselected
 - api/link/ui.datatable_onbeforeadd_event.md - fires before adding item to datastore
 - api/ui.datatable_onbeforeblockselect_event.md - event occurs before block selection
@@ -95,7 +94,6 @@ Events
 - api/link/ui.datatable_onafterscroll_event.md
 - api/ui.datatable_onafterselect_event.md
 - api/link/ui.datatable_onaftersort_event.md
-- api/ui.datatable_onafterunselect_event.md
 - api/ui.datatable_onafterunselect_event.md
 - api/link/ui.datatable_onbeforeadd_event.md
 - api/ui.datatable_onbeforeblockselect_event.md

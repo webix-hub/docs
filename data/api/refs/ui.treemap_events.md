@@ -6,7 +6,6 @@ Events
 - api/link/ui.treemap_onafterclose_event.md - fires after the branch has been closed
 - api/link/ui.treemap_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.treemap_onafterdelete_event.md - fires after item deleting
-- api/link/ui.treemap_onafterdrop_event.md - fires after drag-n-drop was finished
 - api/link/ui.treemap_onafterload_event.md - fires after data loading is complete
 - api/link/ui.treemap_onafteropen_event.md - fires after the branch has been opened
 - api/link/ui.treemap_onafterrender_event.md - occurs immediately after the component has been rendered
@@ -17,10 +16,6 @@ Events
 - api/link/ui.treemap_onbeforeclose_event.md - fires the moment you attempt to close the tree branch
 - api/link/ui.treemap_onbeforecontextmenu_event.md - fires before the context menu is called in the item area
 - api/link/ui.treemap_onbeforedelete_event.md - fires before item deleting
-- api/link/ui.treemap_onbeforedrag_event.md - fires before the mouse button is pressed and the cursor is moved over a draggable item
-- api/link/ui.treemap_onbeforedragin_event.md - fires before a dragged element is moved over the droppable area
-- api/link/ui.treemap_onbeforedrop_event.md - fires before a dragged element is released over the droppable area
-- api/link/ui.treemap_onbeforedropout_event.md - fires before a dragged element is released over the droppable area
 - api/link/ui.treemap_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/link/ui.treemap_onbeforeopen_event.md - fires the moment you attempt to open the tree branch
 - api/link/ui.treemap_onbeforerender_event.md - occurs immediately before the component has been rendered
@@ -31,7 +26,6 @@ Events
 - api/link/ui.treemap_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.treemap_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.treemap_ondestruct_event.md - occurs when component destroyed
-- api/link/ui.treemap_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
 - api/link/ui.treemap_onfocus_event.md - fires when a view gets focus
 - api/link/ui.treemap_onitemcheck_event.md - called when the checkbox inside the tree item was checked
 - api/link/ui.treemap_onitemclick_event.md - fires when a component item was clicked
@@ -62,7 +56,6 @@ Events
 - api/link/ui.treemap_onafterclose_event.md
 - api/link/ui.treemap_onaftercontextmenu_event.md
 - api/link/ui.treemap_onafterdelete_event.md
-- api/link/ui.treemap_onafterdrop_event.md
 - api/link/ui.treemap_onafterload_event.md
 - api/link/ui.treemap_onafteropen_event.md
 - api/link/ui.treemap_onafterrender_event.md
@@ -73,10 +66,6 @@ Events
 - api/link/ui.treemap_onbeforeclose_event.md
 - api/link/ui.treemap_onbeforecontextmenu_event.md
 - api/link/ui.treemap_onbeforedelete_event.md
-- api/link/ui.treemap_onbeforedrag_event.md
-- api/link/ui.treemap_onbeforedragin_event.md
-- api/link/ui.treemap_onbeforedrop_event.md
-- api/link/ui.treemap_onbeforedropout_event.md
 - api/link/ui.treemap_onbeforeload_event.md
 - api/link/ui.treemap_onbeforeopen_event.md
 - api/link/ui.treemap_onbeforerender_event.md
@@ -87,7 +76,6 @@ Events
 - api/link/ui.treemap_ondatarequest_event.md
 - api/link/ui.treemap_ondataupdate_event.md
 - api/link/ui.treemap_ondestruct_event.md
-- api/link/ui.treemap_ondragout_event.md
 - api/link/ui.treemap_onfocus_event.md
 - api/link/ui.treemap_onitemcheck_event.md
 - api/link/ui.treemap_onitemclick_event.md

@@ -6,6 +6,7 @@ Properties
 - api/link/ui.uploader_animate_config.md - defines or disables view change animation.
 - api/ui.uploader_apionly_config.md - sets the uploader to "invisible" mode. *False* by default.
 - api/ui.uploader_autosend_config.md - enable seding files to server immediately after they have been added to uploader. *True* by default.
+- api/link/ui.uploader_autowidth_config.md - adjusts button to its text content
 - api/link/ui.uploader_borderless_config.md - used to hide the component borders
 - api/link/ui.uploader_click_config.md - click action handler
 - api/link/ui.uploader_container_config.md - an html container (or its id) where the component needs initializing
@@ -43,6 +44,7 @@ Properties
 - api/link/ui.uploader_animate_config.md
 - api/ui.uploader_apionly_config.md
 - api/ui.uploader_autosend_config.md
+- api/link/ui.uploader_autowidth_config.md
 - api/link/ui.uploader_borderless_config.md
 - api/link/ui.uploader_click_config.md
 - api/link/ui.uploader_container_config.md

@@ -93,6 +93,7 @@ The component is used to display static text on a page. Check [label](desktop/la
 {{api
 - api/link/ui.label_align_config.md - the alignment of the control within the parent container
 - api/link/ui.label_animate_config.md - defines or disables view change animation.
+- api/link/ui.label_autowidth_config.md - adjusts button to its text content
 - api/link/ui.label_borderless_config.md - used to hide the component borders
 - api/link/ui.label_click_config.md - click action handler
 - api/link/ui.label_container_config.md - an html container (or its id) where the component needs initializing

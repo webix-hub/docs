@@ -36,7 +36,7 @@ Methods
 - api/link/ui.tree_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.tree_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.tree_getitem.md - gets the object of the data item with the specified id
-- api/link/ui.tree_getitemnode.md - returns html element of item by item's id
+- api/link/ui.tree_getitemnode.md - returns HTML element of the item
 - api/link/ui.tree_getlastid.md - returns the id of the last item
 - api/link/ui.tree_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.tree_getnextsiblingid.md - returns the id of the next sibling of the specified node
@@ -74,7 +74,7 @@ Methods
 - api/link/ui.tree_refresh.md - repaints the whole view or a certain item
 - api/link/ui.tree_remove.md - removes the specified item from datastore
 - api/link/ui.tree_removecss.md - removes CSS class from a component item
-- api/link/ui.tree_render.md - 
+- api/link/ui.tree_render.md - renders the specified item or the whole component
 - api/link/ui.tree_resize.md - adjusts the view to a new size
 - api/link/ui.tree_scrollto.md - scrolls the data container to a certain position
 - api/link/ui.tree_select.md - selects the specified item(s)

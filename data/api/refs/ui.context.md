@@ -121,7 +121,7 @@ The component presents a plain window that can contain any content. Check [conte
 - api/link/ui.context_position_config.md - sets position of the window relative to the the screen
 - api/link/ui.context_relative_config.md - positions a popup window relative to the component it's connected with
 - api/link/ui.context_resize_config.md - enables/disables window resizing
-- api/link/ui.context_tofront_config.md - 
+- api/link/ui.context_tofront_config.md - places window above other windows on clicking it
 - api/link/ui.context_top_config.md - the top offset of a window
 - api/link/ui.context_width_config.md - sets the width of the component
 - api/link/ui.context_zindex_config.md - stack order of the component

@@ -14,7 +14,6 @@ Methods
 - api/link/ui.treemap_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.treemap_close.md - closes the branch with the specified id
 - api/link/ui.treemap_closeall.md - closes all branches in the tree
-- api/link/ui.treemap_copy.md - makes a copy of item
 - api/link/ui.treemap_count.md - returns the number of currently visible items
 - api/link/ui.treemap_customize.md - redefines the "type" property
 - api/link/ui.treemap_define.md - redefines a single configuration property (or a hash of properties)
@@ -33,7 +32,7 @@ Methods
 - api/link/ui.treemap_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.treemap_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.treemap_getitem.md - gets the object of the data item with the specified id
-- api/link/ui.treemap_getitemnode.md - returns html element of item by item's id
+- api/link/ui.treemap_getitemnode.md - returns HTML element of the item
 - api/link/ui.treemap_getlastid.md - returns the id of the last item
 - api/link/ui.treemap_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.treemap_getnextsiblingid.md - returns the id of the next sibling of the specified node
@@ -64,7 +63,6 @@ Methods
 - api/link/ui.treemap_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
 - api/link/ui.treemap_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.treemap_mapevent.md - routes events from one object to another
-- api/link/ui.treemap_move.md - moves the specified item to the new position
 - api/link/ui.treemap_moveselection.md - moves selection in the specified direction
 - api/link/ui.treemap_open.md - opens the branch with the specified id
 - api/link/ui.treemap_openall.md - opens all branches in the tree
@@ -72,7 +70,7 @@ Methods
 - api/link/ui.treemap_refresh.md - repaints the whole view or a certain item
 - api/link/ui.treemap_remove.md - removes the specified item from datastore
 - api/link/ui.treemap_removecss.md - removes CSS class from a component item
-- api/link/ui.treemap_render.md - 
+- api/link/ui.treemap_render.md - renders the specified item or the whole component
 - api/link/ui.treemap_resize.md - adjusts the view to a new size
 - api/link/ui.treemap_scrollto.md - scrolls the data container to a certain position
 - api/link/ui.treemap_select.md - selects the specified item(s)
@@ -107,7 +105,6 @@ Methods
 - api/link/ui.treemap_clearvalidation.md
 - api/link/ui.treemap_close.md
 - api/link/ui.treemap_closeall.md
-- api/link/ui.treemap_copy.md
 - api/link/ui.treemap_count.md
 - api/link/ui.treemap_customize.md
 - api/link/ui.treemap_define.md
@@ -157,7 +154,6 @@ Methods
 - api/link/ui.treemap_loadnext.md
 - api/link/ui.treemap_locate.md
 - api/link/ui.treemap_mapevent.md
-- api/link/ui.treemap_move.md
 - api/link/ui.treemap_moveselection.md
 - api/link/ui.treemap_open.md
 - api/link/ui.treemap_openall.md

@@ -38,7 +38,7 @@ Properties
 - api/ui.multisuggest_separator_config.md - sets a delimiter for multisuggest values
 - api/link/ui.multisuggest_template_config.md - template which will be used to fill parent input from selected record
 - api/link/ui.multisuggest_textvalue_config.md - defines which field from suggest list will be used as text after selecting an option
-- api/link/ui.multisuggest_tofront_config.md - 
+- api/link/ui.multisuggest_tofront_config.md - places window above other windows on clicking it
 - api/link/ui.multisuggest_top_config.md - the top offset of a window
 - api/link/ui.multisuggest_type_config.md - defines type of suggest control
 - api/ui.multisuggest_value_config.md - sets the initial value for a control

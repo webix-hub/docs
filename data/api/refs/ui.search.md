@@ -106,7 +106,7 @@ The component presents a standard text input but with the icon. Supports reqular
 - api/link/ui.search_height_config.md - sets the height of the component
 - api/link/ui.search_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.search_hotkey_config.md - sets a hotkey that triggers button clicking
-- api/link/ui.search_icon_config.md - 
+- api/link/ui.search_icon_config.md - sets an icon into the control
 - api/link/ui.search_id_config.md - the component ID
 - api/link/ui.search_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.search_inputpadding_config.md - padding of text in the input

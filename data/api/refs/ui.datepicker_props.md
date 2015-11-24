@@ -18,7 +18,7 @@ Properties
 - api/link/ui.datepicker_height_config.md - sets the height of the component
 - api/link/ui.datepicker_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.datepicker_hotkey_config.md - sets a hotkey that triggers button clicking
-- api/link/ui.datepicker_icon_config.md - 
+- api/link/ui.datepicker_icon_config.md - sets an icon into the control
 - api/ui.datepicker_icons_config.md - shows "Today" and "Clear" icons for calendar and datepicker popup
 - api/link/ui.datepicker_id_config.md - the component ID
 - api/link/ui.datepicker_inputheight_config.md - the height of the input area, or a button's text value area.

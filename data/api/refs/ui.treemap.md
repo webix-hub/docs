@@ -26,7 +26,7 @@ The component is used for space-saving presentation of big tree-like data. Relat
 - [Overview of Sidemenu Widget](desktop/treemap.md)
 - [Samples](http://docs.webix.com/samples/60_pro/11_treemap/index.html)
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/group.md">Group</a>, <a href="api/refs/treeapi.md">TreeAPI</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/treedatamove.md">TreeDataMove</a>, <a href="api/refs/selectionmodel.md">SelectionModel</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/treedataloader.md">TreeDataLoader</a>, <a href="api/refs/treestore.md">TreeStore</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/ui.proto.md">ui.proto</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/treerenderstack.md">TreeRenderStack</a>, <a href="api/refs/copypaste.md">CopyPaste</a></div>
+<a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/group.md">Group</a>, <a href="api/refs/treeapi.md">TreeAPI</a>, <a href="api/refs/selectionmodel.md">SelectionModel</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/treedataloader.md">TreeDataLoader</a>, <a href="api/refs/treestore.md">TreeStore</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/ui.proto.md">ui.proto</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/treerenderstack.md">TreeRenderStack</a>, <a href="api/refs/copypaste.md">CopyPaste</a></div>
 
 
 <div class='h2'>Methods</div>
@@ -44,7 +44,6 @@ The component is used for space-saving presentation of big tree-like data. Relat
 - api/link/ui.treemap_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.treemap_close.md - closes the branch with the specified id
 - api/link/ui.treemap_closeall.md - closes all branches in the tree
-- api/link/ui.treemap_copy.md - makes a copy of item
 - api/link/ui.treemap_count.md - returns the number of currently visible items
 - api/link/ui.treemap_customize.md - redefines the "type" property
 - api/link/ui.treemap_define.md - redefines a single configuration property (or a hash of properties)
@@ -63,7 +62,7 @@ The component is used for space-saving presentation of big tree-like data. Relat
 - api/link/ui.treemap_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.treemap_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.treemap_getitem.md - gets the object of the data item with the specified id
-- api/link/ui.treemap_getitemnode.md - returns html element of item by item's id
+- api/link/ui.treemap_getitemnode.md - returns HTML element of the item
 - api/link/ui.treemap_getlastid.md - returns the id of the last item
 - api/link/ui.treemap_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.treemap_getnextsiblingid.md - returns the id of the next sibling of the specified node
@@ -94,7 +93,6 @@ The component is used for space-saving presentation of big tree-like data. Relat
 - api/link/ui.treemap_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
 - api/link/ui.treemap_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.treemap_mapevent.md - routes events from one object to another
-- api/link/ui.treemap_move.md - moves the specified item to the new position
 - api/link/ui.treemap_moveselection.md - moves selection in the specified direction
 - api/link/ui.treemap_open.md - opens the branch with the specified id
 - api/link/ui.treemap_openall.md - opens all branches in the tree
@@ -102,7 +100,7 @@ The component is used for space-saving presentation of big tree-like data. Relat
 - api/link/ui.treemap_refresh.md - repaints the whole view or a certain item
 - api/link/ui.treemap_remove.md - removes the specified item from datastore
 - api/link/ui.treemap_removecss.md - removes CSS class from a component item
-- api/link/ui.treemap_render.md - 
+- api/link/ui.treemap_render.md - renders the specified item or the whole component
 - api/link/ui.treemap_resize.md - adjusts the view to a new size
 - api/link/ui.treemap_scrollto.md - scrolls the data container to a certain position
 - api/link/ui.treemap_select.md - selects the specified item(s)
@@ -133,7 +131,6 @@ The component is used for space-saving presentation of big tree-like data. Relat
 - api/link/ui.treemap_onafterclose_event.md - fires after the branch has been closed
 - api/link/ui.treemap_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.treemap_onafterdelete_event.md - fires after item deleting
-- api/link/ui.treemap_onafterdrop_event.md - fires after drag-n-drop was finished
 - api/link/ui.treemap_onafterload_event.md - fires after data loading is complete
 - api/link/ui.treemap_onafteropen_event.md - fires after the branch has been opened
 - api/link/ui.treemap_onafterrender_event.md - occurs immediately after the component has been rendered
@@ -144,10 +141,6 @@ The component is used for space-saving presentation of big tree-like data. Relat
 - api/link/ui.treemap_onbeforeclose_event.md - fires the moment you attempt to close the tree branch
 - api/link/ui.treemap_onbeforecontextmenu_event.md - fires before the context menu is called in the item area
 - api/link/ui.treemap_onbeforedelete_event.md - fires before item deleting
-- api/link/ui.treemap_onbeforedrag_event.md - fires before the mouse button is pressed and the cursor is moved over a draggable item
-- api/link/ui.treemap_onbeforedragin_event.md - fires before a dragged element is moved over the droppable area
-- api/link/ui.treemap_onbeforedrop_event.md - fires before a dragged element is released over the droppable area
-- api/link/ui.treemap_onbeforedropout_event.md - fires before a dragged element is released over the droppable area
 - api/link/ui.treemap_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/link/ui.treemap_onbeforeopen_event.md - fires the moment you attempt to open the tree branch
 - api/link/ui.treemap_onbeforerender_event.md - occurs immediately before the component has been rendered
@@ -158,7 +151,6 @@ The component is used for space-saving presentation of big tree-like data. Relat
 - api/link/ui.treemap_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.treemap_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.treemap_ondestruct_event.md - occurs when component destroyed
-- api/link/ui.treemap_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
 - api/link/ui.treemap_onfocus_event.md - fires when a view gets focus
 - api/link/ui.treemap_onitemcheck_event.md - called when the checkbox inside the tree item was checked
 - api/link/ui.treemap_onitemclick_event.md - fires when a component item was clicked
@@ -201,8 +193,6 @@ The component is used for space-saving presentation of big tree-like data. Relat
 - api/link/ui.treemap_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.treemap_datatype_config.md - the type of loaded data
 - api/link/ui.treemap_disabled_config.md - indicates whether an item is enabled or not
-- api/link/ui.treemap_drag_config.md - enables or disables drag-and-drop
-- api/link/ui.treemap_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.treemap_filtermode_config.md - defines the pattern for tree item filtering
 - api/link/ui.treemap_gravity_config.md - sets the view gravity (1 by default)
 - api/ui.treemap_header_config.md - defines whether the header of Treemap will be shown or hidden
@@ -251,13 +241,6 @@ The component is used for space-saving presentation of big tree-like data. Relat
 
 
 {{api
-- api/link/ui.treemap_$drag_other.md - method called when drag operation initiated
-- api/link/ui.treemap_$draghtml_other.md - defines how dragged item will look
-- api/link/ui.treemap_$dragin_other.md - method called when item moved on possible drop landing during dnd
-- api/link/ui.treemap_$dragmark_other.md - method called during dnd when some item in the component need to be marked as active drop target
-- api/link/ui.treemap_$dragout_other.md - method called when item moved out of possible drop landing during dnd
-- api/link/ui.treemap_$drop_other.md - method called when item dragged and dropped on valid target
-- api/link/ui.treemap_$dropallow_other.md - can be redefine if you need custom drop rules
 - api/link/ui.treemap_$getsize_other.md - returns the current size of the component
 - api/link/ui.treemap_$height_other.md - current height of the view
 - api/link/ui.treemap_$scope_other.md - scope for resolving event and method names

@@ -108,7 +108,7 @@ The control combines a non-editable text field with a drop-down list of predefin
 - api/link/ui.richselect_height_config.md - sets the height of the component
 - api/link/ui.richselect_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.richselect_hotkey_config.md - sets a hotkey that triggers button clicking
-- api/link/ui.richselect_icon_config.md - 
+- api/link/ui.richselect_icon_config.md - sets an icon into the control
 - api/link/ui.richselect_id_config.md - the component ID
 - api/link/ui.richselect_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.richselect_inputpadding_config.md - padding of text in the input

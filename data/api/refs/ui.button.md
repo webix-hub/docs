@@ -92,6 +92,7 @@ The control has a collection of preset looks and can be used both as a stand-alo
 {{api
 - api/ui.button_align_config.md - the alignment of the control within the parent container
 - api/link/ui.button_animate_config.md - defines or disables view change animation.
+- api/ui.button_autowidth_config.md - adjusts button to its text content
 - api/link/ui.button_borderless_config.md - used to hide the component borders
 - api/ui.button_click_config.md - click action handler
 - api/link/ui.button_container_config.md - an html container (or its id) where the component needs initializing

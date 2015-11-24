@@ -15,8 +15,6 @@ Properties
 - api/link/ui.treemap_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.treemap_datatype_config.md - the type of loaded data
 - api/link/ui.treemap_disabled_config.md - indicates whether an item is enabled or not
-- api/link/ui.treemap_drag_config.md - enables or disables drag-and-drop
-- api/link/ui.treemap_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.treemap_filtermode_config.md - defines the pattern for tree item filtering
 - api/link/ui.treemap_gravity_config.md - sets the view gravity (1 by default)
 - api/ui.treemap_header_config.md - defines whether the header of Treemap will be shown or hidden
@@ -71,8 +69,6 @@ Properties
 - api/link/ui.treemap_datathrottle_config.md
 - api/link/ui.treemap_datatype_config.md
 - api/link/ui.treemap_disabled_config.md
-- api/link/ui.treemap_drag_config.md
-- api/link/ui.treemap_dragscroll_config.md
 - api/link/ui.treemap_filtermode_config.md
 - api/link/ui.treemap_gravity_config.md
 - api/ui.treemap_header_config.md
