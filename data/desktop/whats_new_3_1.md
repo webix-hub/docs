@@ -66,8 +66,8 @@ Version 3.1
 - progressBar in window
 - disabled Resizer
 - date-time shifting in export to Excel
-- webix.copy correctly process Date objects
-- parsing bolean values from HTML markup
+- webix.copy correctly processes Date objects
+- parsing boolean values from HTML markup
 - blockDates in Calendar
 - totalColumn in Pivot Table
 - custom columns in Excel export
