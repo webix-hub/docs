@@ -1,4 +1,4 @@
-General How-Tos
+Kanban Board General How-Tos
 ===================
 
 This article is dedicated to the most obvious questions that may arise during the creation of Kanban Board.

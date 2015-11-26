@@ -1,4 +1,4 @@
-Checkbox CSS Image Map
+Checkbox CSS 
 =============
 
 

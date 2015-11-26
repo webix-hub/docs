@@ -1,7 +1,7 @@
-Uploader
+Uploader CSS 
 =============
 
-###CSS Image Map
+
 
 <img src="image_maps/uploader_css.png"/>
 

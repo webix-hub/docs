@@ -1,4 +1,4 @@
-Colorboard CSS Image Map
+Colorboard CSS 
 =============
 
 

@@ -1,7 +1,5 @@
-Window 
+Window CSS 
 =============
-
-###CSS Image Map
 
 <img src="image_maps/window_css.png"/>
 

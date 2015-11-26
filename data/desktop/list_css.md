@@ -1,7 +1,5 @@
-List 
+List CSS 
 =============
-
-###CSS Image Map
 
 <img src="image_maps/list_css.png">
 

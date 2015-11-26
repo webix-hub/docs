@@ -1,4 +1,4 @@
-Button CSS Image Map
+Button CSS 
 =============
 
 <img src="image_maps/buttons_css.png"/>

@@ -1,4 +1,4 @@
-Colorpicker CSS Image Map
+Colorpicker CSS 
 =============
 
 

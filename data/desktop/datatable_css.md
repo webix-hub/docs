@@ -1,4 +1,4 @@
-Datatable CSS Image Map
+Datatable CSS 
 =======================
 
 <img src="image_maps/datatable_css.png"/>

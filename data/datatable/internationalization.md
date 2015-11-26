@@ -1,4 +1,4 @@
-Internationalization
+Internationalization of DataTable
 =========================
 DataTable provides support for numbers, currency and date internationalization. 
 
@@ -8,7 +8,7 @@ The **standard package** of the Webix library includes 9 locales, namely:
 - **'ru-RU'** - Russian;
 - **'fr-FR'** - French;
 - **'ja-JP'** - Japanese;
-- **'be-BY'** - Belorussian;
+- **'be-BY'** - Belarusian;
 - **'de-DE'** - German;
 - **'es-ES'** - Spanish;
 - **'it-IT'** - Italian;
@@ -47,14 +47,14 @@ webix.i18n.locales["es-ES"]={   //"es-ES" - the locale name, the same as the fil
   longDateFormat:"%d %F %Y",  //applied to columns with 'format:webix.i18n.longDateFormatStr'
   fullDateFormat:"%d.%m.%Y %H:%i",//applied to cols with 'format:webix.i18n.fullDateFormatStr'
 
-  price:"{obj} EUR",//EUR - currency name. Applied to cols with 'format:webix.i18n.priceFormat'
+  price:"{obj} EUR",//EUR-currency name.Applied to cols with 'format:webix.i18n.priceFormat'
   calendar:{
-		monthFull:["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", 
+	 monthFull:["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", 
     			"Septiembre", "Octubre", "Noviembre", "Diciembre"],
-		monthShort:["En", "Feb", "Mar", "Abr", "Mayo", "Jun", "Jul", "Ago", "Sep", "Oct", 
+	 monthShort:["En", "Feb", "Mar", "Abr", "Mayo", "Jun", "Jul", "Ago", "Sep", "Oct", 
     			"Nov", "Dic"],	
-		dayFull:["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"],
-   		dayShort:["Dom", "Lun", "Mar", "Mier", "Jue", "Vier", "Sab"]
+	 dayFull:["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"],
+   	 dayShort:["Dom", "Lun", "Mar", "Mier", "Jue", "Vier", "Sab"]
   }
 };
 ~~~
@@ -80,7 +80,7 @@ To activate locale:
     	view:"datatable",
 		columns:[
 			{ header:"Date",  id:"start", format:webix.i18n.dateFormatStr},
-			{ header:"LongDate", width:170,  id:"start", format:webix.i18n.longDateFormatStr},
+			{ header:"LongDate",width:170, id:"start",format:webix.i18n.longDateFormatStr},
 			{ header:"Price",  id:"number", format:webix.i18n.priceFormat },
 		],
      	...

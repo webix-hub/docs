@@ -1,4 +1,4 @@
-Dataview CSS Image Map
+Dataview CSS 
 =============
 
 

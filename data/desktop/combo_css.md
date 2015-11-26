@@ -1,4 +1,4 @@
-Combo CSS Image Map
+Combo CSS 
 =============
 
 <img src="image_maps/combo_css.png">

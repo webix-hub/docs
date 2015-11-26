@@ -1,4 +1,4 @@
-Chart CSS Image Map
+Chart CSS 
 =============
 
 

@@ -1,7 +1,5 @@
-Popup 
+Popup CSS 
 =============
-
-###CSS Image Map
 
 <img src="image_maps/popup_css.png">
 

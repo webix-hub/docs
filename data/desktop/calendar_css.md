@@ -1,4 +1,4 @@
-Calendar CSS Image Map
+Calendar CSS 
 =============
 
 ~~~js

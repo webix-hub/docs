@@ -1,4 +1,4 @@
-Quick start with DataTable
+Creating a Basic Application
 ==============================
 
 This tutorial walks you through creating a basic application containing DataTable.

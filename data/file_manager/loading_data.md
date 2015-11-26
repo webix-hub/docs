@@ -1,4 +1,4 @@
-Loading and Saving Data
+Loading and Saving Data in File Manager
 =======================
 
 Data can be [loaded](desktop/data_loading.md) in different formats, including json (the default one) and xml. 

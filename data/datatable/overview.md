@@ -1,4 +1,4 @@
-Overview
+DataTable Overview
 ===========
 
 <a href="http://webix.com/widget/datatable/" title="webix datatable widget">DataTable</a> is a pure JavaScript component that provides professional look-and-feel and convenient programming model

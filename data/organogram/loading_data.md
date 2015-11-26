@@ -1,4 +1,4 @@
-Loading Data
+Loading Data into Organogram
 ===============
 
 Webix Organogram can get data in the following predefined [data formats](desktop/data_types.md):

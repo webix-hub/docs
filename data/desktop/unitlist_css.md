@@ -1,7 +1,5 @@
-Unitlist 
+Unitlist CSS
 =============
-
-###CSS Image Map
 
 <img src="image_maps/unitlist_css.png"/>
 

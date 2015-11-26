@@ -1,4 +1,4 @@
-Handling Events
+Handling Events with Mobile Scheduler
 ==============
 
 Attaching Event Handler

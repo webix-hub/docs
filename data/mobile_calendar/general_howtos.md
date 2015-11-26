@@ -1,4 +1,4 @@
-General How-Tos
+Mobile Scheduler General How-Tos
 ==================
 
 How to add an event?

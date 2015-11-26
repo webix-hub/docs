@@ -17,7 +17,7 @@ list.attachEvent("onItemClick", function(id, e, node){
 });
 
 @relatedsample:
-	20_multiview\02_navigation.html
+	20_multiview/02_navigation.html
 @relatedapi:
 	api/mouseevents_onitemdblclick_event.md
 @related:

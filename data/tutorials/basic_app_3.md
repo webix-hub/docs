@@ -1,4 +1,4 @@
-Server-Side Integration 
+Implementing Server-side Integration
 ============
 
 On previous steps we've done good job. 

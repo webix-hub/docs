@@ -1,4 +1,4 @@
-Styling
+Styling Organogram
 ==========
 
 You can customize any element of Webix Organogram.

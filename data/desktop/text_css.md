@@ -1,6 +1,6 @@
-Text
+Text CSS 
 =============
-###CSS Image Map
+
 
 <img src="image_maps/text_css.png"/>
 

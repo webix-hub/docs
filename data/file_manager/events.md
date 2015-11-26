@@ -1,4 +1,4 @@
-Handling Events
+Handling Events with File Manager
 ===============
 
 Attaching Event Handler

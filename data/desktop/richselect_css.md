@@ -1,7 +1,6 @@
-Richselect 
+Richselect CSS 
 =============
 
-###CSS Image Map
 
 <img src="image_maps/richselect_css.png" />
 

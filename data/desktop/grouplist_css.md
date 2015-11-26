@@ -1,4 +1,4 @@
-Grouplist CSS Image Map
+Grouplist CSS 
 =============
 
 <img src="image_maps/grouplist_css.png"/>

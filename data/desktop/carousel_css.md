@@ -1,4 +1,4 @@
-Carousel CSS Image Map
+Carousel CSS 
 =============
 
 

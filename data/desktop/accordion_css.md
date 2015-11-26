@@ -1,4 +1,4 @@
-Accordion CSS Image Map
+Accordion CSS 
 ========================
 
 <img src="image_maps/accordion_css.png">

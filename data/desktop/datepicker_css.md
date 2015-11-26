@@ -1,4 +1,4 @@
-Datepicker CSS Image Map
+Datepicker CSS 
 =============
 
 

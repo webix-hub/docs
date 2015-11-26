@@ -1,4 +1,4 @@
-Counter CSS Image Map
+Counter CSS 
 =============
 
 

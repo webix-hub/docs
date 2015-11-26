@@ -1,7 +1,5 @@
-Toolbar
+Toolbar CSS 
 =============
-
-###CSS Image Map
 
 <img src="image_maps/toolbar_css.png"/>
 
