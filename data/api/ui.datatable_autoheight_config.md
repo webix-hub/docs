@@ -2,7 +2,7 @@ autoheight
 =============
 
 
-@short:adjusts DataTable to the parent container size vertically
+@short:adjusts Datatable size to the its content vertically
 	
 
 @type: boolean
@@ -24,5 +24,7 @@ webix.ui({
 	datatable/sizing.md#autosizing
 
 @descr:
+
+If a Datatable features 10 rows, the resulting height will be <i>datatable.config.rowHeight</i>*10 plus borders.
 
 

@@ -14,6 +14,7 @@ and 3 possible situations (scenarios) for them:
 2. [Autosizing](#autosizing);
 3. [Resizing](#resizing).
 
+
 Setting the fixed size
 -----------------------
 ###DataTable container
@@ -61,9 +62,6 @@ By default, datatable columns feature **fixed size** of **100px**. To change it,
 - use **columnWidth** while configuring the datatable to set common width for all the columns. Like default common width, it can be overridden by individual *width* value, or
 - use **minWidth** property in the column configuration to define minimal width for it. If there's more space initially or after resizing, column width will be increased, but it can never be less than *minWidth* value, or
 - use **minColumnWidth** property in datatable configuration to set common minimal width for all columns. It can be overridden by individual *minWidth* value.
-
-If you set the width in such a way, it will save its value regardless of any other enabled size parameters 
-(e.g. [autowidth](api/ui.datatable_autowidth_config.md)). BTW, you can set different widths for different rows.
 
 {{snippet
 Setting different widths for columns
@@ -186,7 +184,30 @@ grid = new webix.ui({
 
 Autosizing
 -------------
-You can enable width, height (or both of them) autosizing to adjust DataTable to the parent container size horizontally or vertically. Autosizing is enabled by the following parameters:
+
+**Autosizing to parent container**
+
+Datatable automatically adjusts to the size of a parent container provided that no content autosizing is not enabled. 
+
+To make the Datatble fill the entire width, you should define **fillspace** for at least one of its columns:
+
+~~~js
+grid = new webix.ui({
+	view:"datatable",
+	...
+	columns:[
+		{ id:"title", header:"Film title", fillspace:true},
+        { id:"year", header:"Year", width:100}
+	]
+});
+~~~
+
+In this case, *title* column will be calculated as *container width - 100*.
+
+
+**Autosizing to content**
+ 
+You can enable width, height (or both of them) autosizing to adjust DataTable to the size of its content horizontally or vertically. Autosizing is enabled by the following parameters:
 
 - [autowidth](api/ui.datatable_autowidth_config.md);
 - [autoheight](api/ui.datatable_autoheight_config.md).

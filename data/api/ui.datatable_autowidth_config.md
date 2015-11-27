@@ -2,7 +2,7 @@ autowidth
 =============
 
 
-@short: adjusts DataTable to the parent container size horizontally
+@short: adjusts Datatable size to its content horizontally
 	
 
 @type: boolean
@@ -25,5 +25,17 @@ webix.ui({
 	datatable/sizing.md#autosizing
 
 @descr:
+
+If a Datatable features 5 columns with 100px width each, the resulting width will be 500px plus borders. 
+
+To adjust a component to the size of a parent container omit this property.  
+
+To stretch the Datatable columns within the container, you need to set **fillspace** to at least one of its columns.
+
+~~~js
+columns:[
+	{ id:"title", header:"Title", fillspace:true }
+]
+~~~
 
 
