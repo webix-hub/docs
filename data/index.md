@@ -11,7 +11,7 @@ Start
 <ul>
 	<li><a href="desktop/sidemenu.md">Sidemenu</a> widget and <a href="desktop/sidebar.md">Sidebar</a> extension</li>
     <li><a href="desktop/treemap.md">Treemap</a> widget</li>
-    <li>Autowidth for <a href="desktop/menu.html#autowidth">menu items</a> and <a href="desktop/button.html">buttons</a></li>
+    <li>Autowidth for <a href="desktop/menu.md#workingwithmenuitems">menu items</a> and <a href="desktop/button.md">buttons</a></li>
     
 </ul>
 
