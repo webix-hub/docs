@@ -202,19 +202,38 @@ The same pattern is true for other pairs of properties.
 
 ##Routing Events from One Component to Another
 
-If you have already attached an event to the component and described the function that this event triggers, you can attach this event to another component in your app. 
+Event Mapping helps to get rid of repetitions in code when one and the same event should be attached to different components.
+If you have already attached an event to the component and described the function that this event triggers, you can route this event to another component in your app. 
 
 For these needs, use the **mapEvent** method and pass a **map** into it, where the map is an event-object correspondence:  
 
 ~~~js
-button.mapEvent({
-    onItemClick:list // where list - some other component
+webix.ui({
+	rows:[
+		{ view:"list", id:"list1", data:list_data, on:{
+			onItemClick:getItemValue
+		}},
+		{ view:"list", id:"list2", data:list_data}
+	]
 });
+
+$$("list2").mapEvent({onitemclick:$$("list1")});
 ~~~
 
-As a result, when the button is clicked, the function that was initially attached only to it, will be executed for list as well. 
 
-Event Mapping helps to get rid of repetitions in code when one and the same event should be attached to different components.
+As a result, when the second list is clicked, the function that was initially attached only to the first one, will be executed for it as well: 
+
+~~~js
+function getItemValue(id){
+	var obj = this.$eventSource || this;
+    var value = obj.getItem(id).value;
+	webix.message("List: "+obj.config.id+", clicked: "+id);
+			
+}
+~~~
+
+Note that if you need to access the object for which the handler is called at the moment, you can do it via **$eventSource** property while **this** will always point to the object for which the handler
+is attached initially.
 
 ##Event Handling with Component Items
 
