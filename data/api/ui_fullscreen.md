@@ -2,9 +2,7 @@ fullScreen
 =============
 
 @short:
-	hides Safari address bar on iPhone/iPod
-
-
+	for mobile devices; makes the application take all available screen space
 
 @example:
 webix.ui.fullScreen();

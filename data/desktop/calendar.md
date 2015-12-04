@@ -323,7 +323,7 @@ Both buttons have two properties:
 By default, these buttons are visible, but you can hide them by setting the **icons** property to **false**.
 
 {{sample
-09_calendar/01_init.html
+09_calendar/10_icons.html
 }}
 
 

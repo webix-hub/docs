@@ -1,7 +1,7 @@
 onSubViewOpen
 =============
 
-@short: fires after a subview or subrow is closed
+@short: fires after a subview or a subrow is closed
 	
 
 @params: 
@@ -9,8 +9,8 @@ onSubViewOpen
 
 @example:
 
-datatable.attachEvent("obSubViewOpen", function(id){
-	//code
+datatable.attachEvent("onSubViewOpen", function(id){
+	// code 
 });
 
 @related:

@@ -97,7 +97,9 @@ The boxes share some common properties, namely:
 - **cancel** - text of the "cancel" button (only for a confirmation box);
 - **text** - text of the window body; 
 - **callback** - function that is executed on button click. Callback function may include another message box the contents of which depend on your choice in the previous step;
-- **type** - type of the button (warning or error).
+- **type** - type of the message box (warning or error);
+- **width** - the width of the message box;
+- **height** - the height of the message box.
 
 The callback function takes **result** of user communication with a message box as parameter. It can be:
 
@@ -175,15 +177,14 @@ Webix modalbox resembles alert and confirm in its modality, yet features several
 
 - its **text** can include any **HTML** content;
 - it may contain as many buttons as you wish defined in the **buttons** array that contains text values for each one;
-- the **callback** takes the **index** of the chosen button as a parameter;
-- it can be **sized** with width and height parameters.
+- the **callback** takes the **index** of the chosen button as a parameter.
 
 ~~~js
 webix.modalbox({
 	title:"Custom title",
 	buttons:["Yes", "No", "Maybe"],
 	text:"Any html content here",
-    width: "500px",
+    width:500,
     callback: function(result){
     	switch(result){
 		case 0: 

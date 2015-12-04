@@ -187,9 +187,9 @@ At the same time, some of them may be smaller or bigger.
 
 ##Adjusting Mobile Apps to Screen Size {#mobile}
 
-Webix offers “full screen” mode to make the application take all available screen space while at the same time hiding browser’s toolbars. In this mode, the app will take up the entire screen of the mobile device. 
+Webix offers “full screen” mode to make the application take all available screen space. In this mode, the app will take up the entire screen of the mobile device. 
 
-Fullscreen mode is enables with [webix.ui.fullScreen()](api/ui_fullscreen.md) command before UI initialization:
+Fullscreen mode is enabled with [webix.ui.fullScreen()](api/ui_fullscreen.md) command before UI initialization:
 
 ~~~js
 webix.ui.fullScreen();
@@ -208,13 +208,14 @@ One of the 'Save' buttons is twice bigger then the other one.
 
 ~~~js
 webix.ui({
-	view:"toolbar"
-		{ view:"button", value:"Load", width:200 },
-		{  margin:4, borderless:true, rows:[
-						{ view:"button", value:"Save",  gravity:2 },
-						{ view:"button", value:"Save"}
-                        ...
-         })
+	view:"toolbar",
+	{ view:"button", value:"Load", width:200 },
+	{  margin:4, borderless:true, rows:[
+		{ view:"button", value:"Save",  gravity:2 },
+		{ view:"button", value:"Save"}
+         ...
+    ]}
+});
 ~~~
 {{sample 02_toolbar/05_toolbar_lines.html }}
 
@@ -222,7 +223,7 @@ webix.ui({
 
 Dynamic sizing ensures adequate visibility of components regardless of screen size and makes them dynamically respond to changing window dimensions.
 
-By default, dynamic sizing is true for components that feature no sizing of its own and are not placed into any sized HTML container. Such components take space of the 
+By default, dynamic sizing is true for components that feature no sizing of their own and are not placed into any sized HTML container. Such components take space of the 
 entire screen and are resized as the browser window resizes. 
 
 To enable dynamic sizing in other situations, take the following steps:
