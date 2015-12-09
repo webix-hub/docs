@@ -19,7 +19,8 @@ webix.ui({
 })
 ~~~
 
-{{sample 08_chart/04_pie_chart/01_init.html }}
+
+{{editor http://webix.com/snippet/8388561b	Pie Chart: Basic Initialization}}
 
 [Settings for Pie Charts](desktop/pie_charts.md)
 
@@ -40,7 +41,8 @@ webix.ui({
 })
 ~~~
 
-{{sample 08_chart/05_line_chart/01_init.html }}
+{{editor http://webix.com/snippet/8afb9849	Line Chart: Basic Initialization}}
+
 
 [Settings for Line Charts](desktop/line_charts.md)
 
@@ -59,7 +61,8 @@ webix.ui({
 })
 ~~~
 
-{{sample 08_chart/06_bar_chart/01_init.html }}
+{{editor http://webix.com/snippet/d8fcef68	Bar Chart: Basic Initialization}}
+
 
 [Settings for Bar Charts](desktop/bar_charts.md)
 
@@ -78,7 +81,8 @@ webix.ui({
 })
 ~~~
 
-{{sample 08_chart/07_area_chart/01_init.html }}
+{{editor http://webix.com/snippet/3cb9cff3	Area Chart: Basic Initialization}}
+
 
 [Setting for Area Charts](desktop/area_charts.md)
 
@@ -97,7 +101,9 @@ webix.ui({
 })
 ~~~
 
-{{sample 08_chart/09_radar_chart/01_radar_points.html }}
+{{editor http://webix.com/snippet/c5579820	Radar Chart: Points}}
+
+
 
 [Settings for Radar Chart](desktop/radar_chart.md)
 
@@ -116,7 +122,8 @@ webix.ui({
 })
 ~~~
 
-{{sample 08_chart/10_scatter_chart/01_init.html }}
+{{editor http://webix.com/snippet/01baafd4	Scatter Chart: Basic Initialization}}
+
 
 [Settings for Scatter Chart](desktop/scatter_chart.md)
 

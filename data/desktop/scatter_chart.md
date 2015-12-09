@@ -24,15 +24,17 @@ Presets simplify chart initializing and contain item setting. They are defined b
 - **square** - green squares with borders
 - **diamond** - wine red diamond-shaped points
 
-{{sample 08_chart/10_scatter_chart/03_style_presets.html }}
+{{editor http://webix.com/snippet/bf5376dc 	Scatter Chart: Style Presets}}
+
 
 ##Scatter Chart Series
 
-Chart series allow presenting different graphs within on eand the same chart. The graphs differ in color. Settings for the graphs form objects that are placed into the **series** array. 
+Chart series allow presenting different graphs within one and the same chart. The graphs differ in color. Settings for the graphs form objects that are placed into the **series** array. 
 
 <img src="desktop/scatter_series.png"/>
 
-{{sample 08_chart/10_scatter_chart/04_series.html }}
+{{editor http://webix.com/snippet/6dfba141	Scatter Chart: Several Graphs in One Chart}}
+
 
 See the common rules of **series definition** [here](desktop/chart_series.md). 
 

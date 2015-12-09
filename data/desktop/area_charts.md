@@ -18,12 +18,11 @@ Both **Area** and **StackedArea** charts support presenting graphs for several o
 
 Series for chart is an array of objects with settings for each graph. [Details here](desktop/chart_series.md). 
 
-<img src="desktop/area_chart.png"/>
+<img src="desktop/charts_area.png"/>
 
-{{sample 08_chart/07_area_chart/03_series.html }}
+{{editor http://webix.com/snippet/1b38f53a	Area Chart: Several Graphs in One Chart}}
 
-{{sample 08_chart/07_area_chart/04_stacked_area.html }}
-
+{{editor http://webix.com/snippet/0708720c	Stacked Area Chart}}
 
 
 [Back to all chart types](desktop/chart_types.md)

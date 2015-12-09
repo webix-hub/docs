@@ -37,7 +37,7 @@ webix.ui({
 });
 ~~~
 
-{{editor http://webix.com/snippet/a2103d8b	Carousel}}
+{{editor http://webix.com/snippet/a2103d8b	Carousel Initialization}}
 
 Normally, component configuration is stored separately while **cols/rows** contain an array of corresponding variables. It makes code clear and easy to read. 
 
@@ -54,7 +54,9 @@ You can either click buttons or items to get to the needed view. On touch device
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/carousel_side.png"/>
 
-{{sample 26_carousel/02_types.html}}
+
+{{editor http://webix.com/snippet/8d7f59c9	Navigation Types}}
+
 
 Navigation area is controlled via **navigation** object property of the carousel component. From there you can:
 
@@ -79,7 +81,8 @@ For instance, you can use one-row [dataview](desktop/dataview.md) with thumbnail
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/carousel_nav.png"/>
 
-{{sample 26_carousel/03_outer_navigation.html}}
+{{editor http://webix.com/snippet/09700787	List Navigation}}
+
 
 In [layout](desktop/layout.md) carousel and the component used for navigation are stored in different rows or cols:
 

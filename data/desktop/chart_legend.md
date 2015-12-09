@@ -26,7 +26,10 @@ webix.ui({
 })
 
 ~~~
-{{sample 08_chart/06_bar_chart/06_series.html }}
+
+
+{{editor http://webix.com/snippet/f2538a1d	Bar Chart: Several Graphs in One Chart}}
+
 
 See the full list of **legend parameters** in [API Reference](api/ui.chart_legend_config.md).
 
@@ -59,9 +62,7 @@ webix.ui({
 });
 ~~~
 
-{{sample
-	08_chart/04_pie_chart/03_legend.html
-}}
+{{editor http://webix.com/snippet/654a6f7a	Pie Chart: Basic and Custom Legend}}
 
 See the full list of **legend parameters** in [API Reference](api/ui.chart_legend_config.md).
 
@@ -102,7 +103,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 08_chart/09_radar_chart/03_radar_lines.html }}
+{{editor http://webix.com/snippet/58c29ed8	Radar Chart:Lines}}
 
 See the full list of **legend parameters** in [API Reference](api/ui.chart_legend_config.md).
 
@@ -123,7 +124,7 @@ legend:{
 }
 ~~~
 
-{{sample 08_chart/09_radar_chart/02_radar_area.html }}
+{{editor http://webix.com/snippet/e693bd8a	Radar Chart: Areas}}
 
 ### 'item' marker
 Webix charts offer a possibility to set for a marker the same template that uses items of the related graph.
@@ -141,7 +142,7 @@ legend:{
 }
 ~~~ 
 
-{{sample 08_chart/05_line_chart/07_legend.html }}
+{{editor http://webix.com/snippet/50022d23	Line Chart: Legend Markers}}
 
 ###Setting different markers for different graphs
 
@@ -168,4 +169,4 @@ legend:{
 }
 ~~~
 
-{{sample 08_chart/06_bar_chart/12_diff_charts.html }}
+{{editor http://webix.com/snippet/7cb9f866	Bar Chart: Different Types in One Chart}}

@@ -66,7 +66,8 @@ Moreover, the legend for them allows hiding and showing the dedicated chart by s
 	</tbody>
 </table>
 
-{{sample 08_chart/06_bar_chart/06_series.html }}
+{{editor http://webix.com/snippet/f2538a1d	Bar Chart: Several Graphs in One Chart}}
+
 
 The **rules of series definition** are described [here](desktop/chart_series.md). 
 
@@ -83,8 +84,7 @@ webix.ui({
 };
 ~~~
 
-
-{{sample 08_chart/06_bar_chart/10_style_presets.html}} 
+{{editor http://webix.com/snippet/3fbbc261	Bar Chart: Style Presets}}
 
 <br>
 

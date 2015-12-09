@@ -4,31 +4,32 @@ Operations with Chart Data
 ##Getting an Item's Value
 
 {{snippet
-Getting the value of **year** property
+Getting the value of the year property
 }}
 ~~~js
-
-			$$("chart").attachEvent("onItemClick", function(id){
-            id = this.getItem(id).year;
-            alert(id);
-        });
+$$("chart").attachEvent("onItemClick", function(id){
+	id = this.getItem(id).year;
+	alert(id);
+});
 ~~~
 
-{{sample 08_chart/08_dynamic/02_events.html }}
+{{editor http://webix.com/snippet/4630490b	Chart:Events}}
+
+
 ##Adding Items
 
 
 While adding an item, make use of the **add()** method and state new data as an object and position of the new item:
 
 ~~~js
- var counter = 12;
-        function addNew () {
-            $$("barChart").add({
-                year:"'"+counter, 
-                sales:"some_value"
-            });
-            counter++;
-        }
+var counter = 12;
+function addNew () {
+	$$("barChart").add({
+		year:"'"+counter, 
+		sales:"some_value"
+	});
+	counter++;
+}
 ~~~
 
 Additionally, you can sefine a **counter** that sets the starting position of the new items to observe dataset integrity. 
@@ -41,11 +42,11 @@ To delete an item you should pass its ID into the **remove()** function (zero-ba
 $$("barChart").remove(4); // the 5th item will be removed
 
 function deleteFirst(){
-            $$("barChart").remove($$("barChart").getFirstId());
-        }
+	$$("barChart").remove($$("barChart").getFirstId());
+}
 ~~~
 
-{{sample 08_chart/08_dynamic/01_add.html }}
+{{editor http://webix.com/snippet/a0725266	Chart:Adding/Deleting Data Items}}
 
 Study the [corresponding chapter of the manual](desktop/add_delete.md) to learn more about adding and deleting of items. 
 
@@ -57,7 +58,8 @@ Here you use a **sort()** method that takes property from the initial dataset an
 $$('chart').sort('#year#','desc');
 ~~~
 
-{{sample 08_chart/08_dynamic/03_sorting.html }}
+{{editor http://webix.com/snippet/76a91e1c	Chart:Sorting}}
+
 
 [**Sort** method in API Reference](api/datastore_sort.md)
 
@@ -70,12 +72,12 @@ Make the chart show you only sales exceeding 50.
 }}
 ~~~js
 function filter1(){
-		    $$('chart').filter(function(obj){
-                return obj.sales >50;
-            });
-            }
+	$$('chart').filter(function(obj){
+		return obj.sales >50;
+    });
+}
 ~~~
 
-{{sample 08_chart/08_dynamic/04_filtering.html }}
+{{editor http://webix.com/snippet/9a9ef42c	Chart:Filtering}}
 
 [Rules of Data Filtering](desktop/filter_sort.md)

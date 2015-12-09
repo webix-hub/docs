@@ -25,7 +25,8 @@ webix.ui({
    
 ~~~
 
-{{sample 08_chart/02_color/01_custom.html }}
+{{editor http://webix.com/snippet/430e6b06	Basic Coloring}}
+
 
 ###Color Template(Function)
 
@@ -50,7 +51,8 @@ webix.ui({
 })
 ~~~
 
-{{sample 08_chart/02_color/02_function.html }}
+{{editor http://webix.com/snippet/120a5e9b	Specifying Color as a Function}}
+
 
 ###Color Gradient
 
@@ -76,6 +78,6 @@ gradient:function(gradient){
 }
 ~~~
 
-{{sample 08_chart/02_color/03_gradient.html }}
+{{editor http://webix.com/snippet/2aa7c00a	Color Gradient}}
 
 By default gradient is disabled in the pie chart, so you need to enable it by assigning **true**value for the gradient parameter. 

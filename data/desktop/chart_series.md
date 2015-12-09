@@ -58,7 +58,7 @@ webix.ui({
 })
 ~~~
 
-{{sample 08_chart/06_bar_chart/06_series.html }}
+{{editor http://webix.com/snippet/f2538a1d	Bar Chart: Several Graphs in One Chart}}
 
 Chart series require a [legend](desktop/chart_legend.md) to explain different charts within one and the same scales. Legend markers act as well as buttons to show and hide dedicated chart series.
 
@@ -72,7 +72,8 @@ Still, chart series can encompass different chart types.
 
 <img src="desktop/diff_chart_series.png" />
 
-{{sample 08_chart/06_bar_chart/12_diff_charts.html}}
+{{editor http://webix.com/snippet/7cb9f866	Bar Chart: Different Types in One Chart}}
+
 
 This time, the **series** object for a differing chart type should include the whole set of its properties: 
 

@@ -1,4 +1,4 @@
-Setting for Line Charts
+Settings for Line Charts
 =============
 
 Here various properties of line charts are listed. The properties construct the chart object. Some of the properties contain an object as value. Data-presenting properties are compulsory while a number of styling options 
@@ -24,7 +24,8 @@ yAxis:{...
 
 ~~~
 
-{{sample 08_chart/05_line_chart/03_scale.html }}
+{{editor http://webix.com/snippet/44c78de9	Line Chart: Axes}}
+
 
 Learn how to set scales for the chart in the [corresponding chapter of the manual](desktop/chart_scales.md).
 
@@ -32,7 +33,8 @@ Learn how to set scales for the chart in the [corresponding chapter of the manua
 
 <img src="desktop/chart_series_line.png" />
 
-{{sample 08_chart/05_line_chart/05_series.html }}
+{{editor http://webix.com/snippet/e0dd4448	Line Chart: Several Graphs in One Chart}}
+
 
 Read more about [Chart Series](desktop/chart_series.md).
 
@@ -71,9 +73,8 @@ item:{
       }
 ~~~
 
+{{editor http://webix.com/snippet/e8a397f8	Line Chart: Styling}}
 
-
-{{sample 08_chart/05_line_chart/02_style.html }}
 
 ##Style Presets
 
@@ -85,8 +86,7 @@ There're three style presets for the Chart component
 
 All of them are set with the help of **preset** property.
 
-{{sample 08_chart/05_line_chart/06_style_presets.html }}
-
+{{editor http://webix.com/snippet/c51ce03d	Line Chart: Style Presets}}
 
 
 [Back to all chart types](desktop/chart_types.md)

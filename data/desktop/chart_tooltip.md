@@ -53,7 +53,7 @@ webix.ui({
 })
 ~~~
 
-{{sample 08_chart/05_line_chart/02_style.html }}
+{{editor http://webix.com/snippet/e8a397f8	Line Chart: Styling}}
 
 Templates may include several properties of one and the same data object. 
 
@@ -70,4 +70,4 @@ Such tooltips are especially convenient for [Scatter](desktop/chart_types.md#sca
 
 <img src="desktop/scatter_tooltip.png" />
 
-{{sample 08_chart/10_scatter_chart/02_templates.html }}
+{{editor http://webix.com/snippet/b6f18c80	Scatter Chart: Templates}}

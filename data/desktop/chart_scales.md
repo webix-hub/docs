@@ -112,7 +112,8 @@ webix.ui({
 })
 ~~~
 
-{{sample 08_chart/05_line_chart/03_scale.html}}
+{{editor http://webix.com/snippet/37f8a47d	Line Chart: Axes}}
+
 
 ##Logarithmic Scale
 
@@ -130,7 +131,8 @@ webix.ui({
 });
 ~~~
 
-{{sample 08_chart/11_scale/04_logarithmic_y.html}}
+{{editor http://webix.com/snippet/3dac3125	Chart: Logarithmic Scale}}
+
 
 ##Titles for the Axes
 

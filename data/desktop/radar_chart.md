@@ -45,8 +45,8 @@ webix.ui({
 
 <img src="desktop/radar_chart_presets.png" />
 
+{{editor http://webix.com/snippet/88dae119	Radar Chart: Style Presets}}
 
-{{sample 08_chart/09_radar_chart/04_style_presets.html }}
 
 ## Radar Chart Series
 
@@ -56,7 +56,7 @@ In case of chart series, [legend](desktop/chart_legend.md) markers become button
 
 <img src="desktop/chart_series_radar.png" />
 
-{{sample 08_chart/09_radar_chart/03_radar_lines.html}}
+{{editor http://webix.com/snippet/fe681c8b	Radar Chart: Lines}}
 
 Read more about [Chart Series](desktop/chart_series.md). 
 

@@ -76,7 +76,7 @@ webix.ui({
 
 ###Window Sizing and Positioning
 
-The must-have parameters for the window are **width** and **height**. If you don't set tham, the window it will occupy the whole screen.
+The must-have parameters for the window are **width** and **height**. If you don't set them, the window will adjust to the size of its content.
 
 Furthermore, Webix window features various methods for setting its **position**. All of them are described in a [separate documentation article](desktop/window_positioning.md).
 

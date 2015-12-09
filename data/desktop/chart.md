@@ -41,8 +41,8 @@ Initialization of a Bar Chart
             data: dataset
         });
 ~~~ 
-{{sample
-	08_chart/01_initialization/01_load_xml.html
+
+{{editor http://webix.com/snippet/0759b846	Chart: XML Dataset
 }}
 
 To learn about all the chart properties, please refer to the [corresponding chapter of the manual](api__refs__ui.chart.html). 
