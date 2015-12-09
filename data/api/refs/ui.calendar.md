@@ -9,15 +9,12 @@ The control supports all date and time formats. Besides the days of the month, i
 ### Constructor
 
 ~~~js
-	var calendar = webix.ui({
-		view:"calendar", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_calendar({
-		...config options goes here..
-	});
+var calendar = webix.ui({   
+	view:"calendar",
+    date:new Date(2015,3,16),
+    events:webix.Date.isHoliday, 
+    weekHeader:true
+});
 ~~~
 
 ### Where to start

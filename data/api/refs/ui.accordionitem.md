@@ -9,15 +9,23 @@ Each accordion pane consists of the header and body. The body of a pane can be c
 ### Constructor
 
 ~~~js
-	var accordionitem = webix.ui({
-		view:"accordionitem", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_accordionitem({
-		...config options goes here..
-	});
+var accordionitem = webix.ui({
+  	view:"accordion",
+  	height:600,
+  	rows:[
+    {
+      view:"accordionitem",
+      header:"Pane 1",
+      headerHeight:50,
+      body:"Pane body 1",
+    },
+    { 
+      view:"accordionitem",
+      header:"Pane 2",
+      body:"Pane body 2", 
+      collapsed: true
+    }]
+});
 ~~~
 
 <div class='webixdoc_parents'><span>Based on: </span>

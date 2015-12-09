@@ -9,15 +9,13 @@ The control has a collection of preset looks and can be used both as a stand-alo
 ### Constructor
 
 ~~~js
-	var button = webix.ui({
-		view:"button", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_button({
-		...config options goes here..
-	});
+webix.ui({
+	view:"button", 
+  	id:"my_button", 
+  	value:"Button", 
+  	type:"form", 
+  	inputWidth:100 
+});
 ~~~
 
 <div class='webixdoc_parents'><span>Based on: </span>

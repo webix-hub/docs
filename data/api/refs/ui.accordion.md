@@ -9,15 +9,17 @@ A collection of panes that make up the component allows you to organize the cont
 ### Constructor
 
 ~~~js
-	var accordion = webix.ui({
-		view:"accordion", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_accordion({
-		...config options goes here..
-	});
+var accordion = webix.ui({
+	view:"accordion",
+	type:"wide",
+	cols:[
+		{ header:"col 1", body:"content 1", width:150 },
+		{ header:"col 2", body:"content 2", width:150 },
+		{ header:"col 3", body:"content 3", width:150 },
+		{ header:"col 4", body:"content 4", width:150 },
+		{ header:"col 5", body:"content 5", width:150 }
+	]
+});	
 ~~~
 
 
