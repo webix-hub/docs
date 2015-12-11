@@ -8,8 +8,9 @@ To customize data content and specify which data will be presented in DataTable 
 Data templates are set in the related column by attribute **template**.
 
 {{note
-By #value# you can refer to the data property specified for the column. It can be especially useful when you define a common template for several columns.
+By value wrapped in the hash signs (e.g. "#title#") you refer to the definite property of a data item. 
 }}
+
 
 You can read about templates syntax in article [Templates.Syntax](datatable/templates_syntax.md).
 
@@ -100,15 +101,15 @@ For more on styling, read article datatable/styling.md
 
 ### Combining templates and formats
 
-
-You can use both template and format attributes for the same column. In such case column will format data first, and will use it in template after that. 
+If you want to use both *template* and *format* for the same column, you should include the formatting method into a template function: 
 
 ~~~js
 grid = new webix.ui({
     view:"datatable",
     columns:[
-      {id:"votes", header:"Votes",  format:webix.i18n.numberFormat,
-      		template:"no more than #value#"}
+      {id:"votes", header:"Votes", template:function(obj, common){
+           return "no more than "+ webix.i18n.numberFormat(obj.votes);
+      }}
     ],
     ...
 })
@@ -122,7 +123,7 @@ You can insert any custom html to the row elements, which gives an easy way for 
 grid = new webix.ui({
     view:"datatable",
     columns:[
-      {id:"votes", header:"Votes",  template:"#value# 
+      {id:"votes", header:"Votes",  template:"#votes# 
       		<input type='button' value='Show details' class='details_button'>'"}
     ],
     on_click:{
@@ -183,11 +184,13 @@ webix.ui({
     view:"datatable",
     ...
     columns:[
+    	//for radio and checkbox
         { id:"ra1", template:function(obj, common, value, config){
              return common.radio(obj, common, value, config);
 		}}, 
-        { id:"trash", header:"", template:function(){
-        	return common,editIcon();
+        //for editIcon and trashIcon
+        { id:"edit", header:"", template:function(obj, common){
+        	return common.editIcon(obj, common);
         }}
     ]
 });
@@ -199,8 +202,8 @@ As you can see, **common.checkbox()** and **common.radio()** functions take four
 - **common** object with four methods: 
 	- common.checkbox(*obj, common, value, config*);
     - common.radio(*obj, common, value, config*);
-    - common.editIcon();
-    - common.trashIcon();
+    - common.editIcon(*obj, common*);
+    - common.trashIcon(*obj, common*);
 - **value** - current checkbox/radio state;
 - **config** - column configuration object. 
 

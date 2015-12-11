@@ -321,13 +321,13 @@ template: function (obj) {
 
 ## XSS Safe templates
 
-By default, `#...#` templates placeholders will be replaced with the data value without any processing. If you have HTML data in the data object, it will placed in the template.
+By default, *#...#* template placeholders are replaced with the data value without any processing. If you have HTML data in the data object, it is also placed in the template.
 In most cases this is an advantage, but sometimes it may be necessary to output such data as text, not a HTML:
 
-- when you have text data with special HTML characters (`<`, `>`, and `&`)
-- when you are not sure is the data safe or not (e.g. was entered by the user)
+- when you have text data with special HTML characters (<, >, and &);
+- when you are not sure whether the data is safe (e.g. was entered by the user).
 
-In such cases you can add a `!` after the opening `#`:
+In such cases you can add an exclamation mark `!` after the opening `#`:
 
 ~~~js
 {

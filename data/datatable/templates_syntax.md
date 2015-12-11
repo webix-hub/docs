@@ -1,9 +1,9 @@
-Templates.Syntax
+Templates. Syntax
 =================
 There are several ways to define a template:
 
 
-HTML text
+HTML with text
 -------------------------------------
 ~~~js
 grid = new webix.ui({
@@ -37,7 +37,9 @@ grid = new webix.ui({
 	view:"datatable",
 	...
 	columns:[
-		{ id:"col1", template:function(obj){ return obj.Package +"<br/>"+obj.Maintainer; }},
+		{ id:"col1", template:function(obj){ 
+        	return obj.Package +"<br/>"+obj.Maintainer; 
+        }}
 	]
 }); 
 ~~~
