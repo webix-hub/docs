@@ -9,16 +9,19 @@ The component is used to display static text on a page. Check [label](desktop/la
 ### Constructor
 
 ~~~js
-	var label = webix.ui({
-		view:"label", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_label({
-		...config options goes here..
-	});
+var label = webix.ui({ 
+	view:"label", 
+	label: "Label", 
+	inputWidth:100, 
+	align:"left"
+});
 ~~~
+
+### Where to start
+
+- [Overview of the Label Control](desktop/label.md)
+- [Samples](http://docs.webix.com/samples/13_form/02_api/02_attributes.html)
+
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>

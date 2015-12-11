@@ -4,21 +4,32 @@ ui.resizer
 
 {{memo A draggable border in a layout. }}
 
-The component is used to make some view placed into a layout draggable by a specific border. Draggable borders differs visually from the undraggable. Check [layout](desktop/layout.md) documentation for more detailed description.
+The component is used to make some view placed into a layout draggable by a specific border. Draggable borders differ visually from the undraggable ones. Check the [layout](desktop/layout.md) documentation for more detailed description.
 
 ### Constructor
 
 ~~~js
-	var resizer = webix.ui({
-		view:"resizer", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_resizer({
-		...config options goes here..
-	});
+webix.ui({  
+  id:"layout",
+  rows:[
+    { template:"row 1" },
+    { view:"resizer" },
+    { template:"row 2" },
+    { view:"resizer" },
+    { cols:[
+      { template:"column 1" },
+      { view:"resizer"},
+      { template:"column 2" },
+    ]}
+  ]
+});
 ~~~
+
+### Where to start
+
+- [Overview of Resizer](desktop/layout.md#resizerlines)
+- [Samples](http://docs.webix.com/samples/01_layout)
+
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>

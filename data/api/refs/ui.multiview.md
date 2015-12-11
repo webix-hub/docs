@@ -9,20 +9,35 @@ The component allows you to divide the page content into multiple groups and dis
 ### Constructor
 
 ~~~js
-	var multiview = webix.ui({
-		view:"multiview", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_multiview({
-		...config options goes here..
-	});
+webix.ui({  
+  rows:[
+    {
+      view:"segmented", id:'tabbar', value: 'View1', multiview:true, options: [
+        { value: 'List',  id: 'View1'},
+        { value: 'Info',  id: 'View2'}
+      ]
+    },    
+    {   id:"mymultiview",
+     	cells:[
+       		{
+         		id:"View1",
+         		view:"list",
+         		template:"#id#. #title#",
+         		data:[
+           			{ id:1, title:"Item 1"},
+           			{ id:2, title:"Item 2"},
+           			{ id:3, title:"Item 3"},
+         		]},           
+        	{id:"View2", template:"<i>Info about the List</i>"}
+     	]
+     }
+   ]
+});
 ~~~
 
 ### Where to start
 
-- [Overview of Multiview Widget](desktop/multiview.md)
+- [Overview of the Multiview Widget](desktop/multiview.md)
 - [Samples](http://docs.webix.com/samples/20_multiview/index.html)
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>

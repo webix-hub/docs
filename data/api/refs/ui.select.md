@@ -9,16 +9,20 @@ The component can be populated with data from the server side or a file: each it
 ### Constructor
 
 ~~~js
-	var select = webix.ui({
-		view:"select", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_select({
-		...config options goes here..
-	});
+var select = webix.ui({
+	view:"select", 
+  	label:"Branch", 
+  	value:1, options:[
+    	{id:1, value:"Master" },
+    	{id:2, value:"Release" }
+  	]
+});
 ~~~
+
+### Where to start
+
+- [Overview of the Select Control](desktop/select.md)
+- [Samples](http://docs.webix.com/samples/13_form/01_controls/02_select.html)
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.text.md">ui.text</a>, <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>

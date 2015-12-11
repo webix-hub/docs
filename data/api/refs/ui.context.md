@@ -7,22 +7,29 @@ ui.context
 The component presents a plain window that can contain any content. Check [context](desktop/context.md) documentation for more detailed description.
 
 ### Constructor
-
+{{snippet
+HTML
+}}
+~~~html
+<!--Right click the area-->
+<div id="areaA" style=" background-color:#ffffbb; width:500px; height:300px;"></div>
+~~~
+{{snippet
+JS
+}}
 ~~~js
-	var context = webix.ui({
-		view:"context", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_context({
-		...config options goes here..
-	});
+var context = webix.ui({
+    view:"context",
+    body:{  template:"text" }, 
+    width:300, 
+    height:200,
+    master:"areaA"
+});
 ~~~
 
 ### Where to start
 
-- [Overview of Context Widget](desktop/context.md)
+- [Overview of the Context Widget](desktop/context.md)
 - [Samples](http://docs.webix.com/samples/03_menu/index.html)
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/contexthelper.md">ContextHelper</a>, <a href="api/refs/ui.popup.md">ui.popup</a>, <a href="api/refs/ui.window.md">ui.window</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/movable.md">Movable</a>, <a href="api/refs/modality.md">Modality</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>

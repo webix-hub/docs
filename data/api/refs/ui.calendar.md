@@ -19,7 +19,7 @@ var calendar = webix.ui({
 
 ### Where to start
 
-- [Overview of Calendar Widget](desktop/calendar.md)
+- [Overview of the Calendar Widget](desktop/calendar.md)
 - [Samples](http://docs.webix.com/samples/09_calendar/index.html)
 
 <div class='webixdoc_parents'><span>Based on: </span>

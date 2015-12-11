@@ -4,6 +4,27 @@ ui.multitext
 An editable text control with dynamically added removable fields.
 
 Check [multitext](desktop/multitext.md) documentation for more detailed description. 
+
+### Constructor
+
+~~~js
+var multitext = webix.ui({
+  rows:[
+ 	{ 
+		view:"multitext", 
+     	id:"multi", 
+  		value:'dummy@email.com, mirror@email.com', 
+     	label:"Email" 
+    }
+  ]
+});
+~~~
+
+### Where to start
+
+- [Overview of the Multitext Control](desktop/multitext.md)
+- [Samples](http://docs.webix.com/samples/60_pro/02_form/01_multitext.html)
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.text.md">ui.text</a>, <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 

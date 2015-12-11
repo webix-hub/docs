@@ -8,21 +8,24 @@ Place it in the layout if you want to have a scroll around few other views (not 
 ### Constructor
 
 ~~~js
-	var scrollview = webix.ui({
-		view:"scrollview", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_scrollview({
-		...config options goes here..
-	});
+webix.ui({
+  view:"scrollview", id:"scrollview", scroll:"y", height: 160, width: 150,  body:{
+     rows:[
+       {template:"Lorem ipsum", autoheight:true},
+       {template:"Lorem ipsum dolor sit amet", autoheight:true},
+       {template:"Lorem ipsum dolor", autoheight:true},
+       {template:"Lorem ipsum dolor sit amet, mentitum", autoheight:true},
+       {template:"Lorem ipsum dolor sit", autoheight:true},
+     ]
+   }
+});       
 ~~~
 
 ### Where to start
 
-- [Overview of Scrollview Widget](desktop/scrollview.md)
+- [Overview of the Scrollview Widget](desktop/scrollview.md)
 - [Samples](http://docs.webix.com/samples/04_template/index.html)
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 

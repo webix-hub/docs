@@ -9,20 +9,22 @@ The component can be displayed in 2 modes: static (the menu is fully expanded al
 ### Constructor
 
 ~~~js
-	var menu = webix.ui({
-		view:"menu", 
-		container:"mydiv", 
-		...config options will be here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_menu({
-		...config options will be here..
-	});
+var menu = webix.ui({
+	view:"menu", 
+	data:[
+		{id:1, value:"Translate", submenu:["English", "French", "German"]}, 
+		{id:2, value:"Post"}, 
+		{id:3, value:"Info"}
+	],
+	type:{
+		subsign:true,
+	}   
+});
 ~~~
 
 ### Where to start
 
-- [Overview of Menu Widget](desktop/menu.md)
+- [Overview of the Menu Widget](desktop/menu.md)
 - [Samples](http://docs.webix.com/samples/03_menu/index.html)
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.list.md">ui.list</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/selectionmodel.md">SelectionModel</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/ui.proto.md">ui.proto</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/copypaste.md">CopyPaste</a></div>

@@ -8,6 +8,29 @@ The control combines a non-editable text field with a drop-down list of predefin
 Check [multiselect](desktop/multiselect.md) documentation for more detailed description.
 
 
+### Constructor
+
+~~~js
+var multiselect = webix.ui({
+ 	view:"multiselect", 
+  	label:"Participant", 
+  	labelWidth:100, 
+  	options:[
+		{id:1, value:"Alex Brown"},
+		{id:2, value:"Dan Simons"},
+		{id:3, value:"Gron Alanski"},
+		{id:4, value:"Dan Alanski"}
+	],
+  	value:"1,4" 
+});
+~~~
+
+### Where to start
+
+- [Overview of the Multiselect Control](desktop/multiselect.md)
+- [Samples](http://docs.webix.com/samples/60_pro/02_form/)
+
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.richselect.md">ui.richselect</a>, <a href="api/refs/ui.text.md">ui.text</a>, <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 

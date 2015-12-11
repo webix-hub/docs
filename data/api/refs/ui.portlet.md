@@ -10,20 +10,25 @@ Check [portlet](desktop/portlet.md) documentation for more detailed description.
 ### Constructor
 
 ~~~js
-	var portlet = webix.ui({
-		view:"portlet", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_portlet({
-		...config options goes here..
-	});
+var portlet = webix.ui({  
+    type:"space",
+  	rows:[
+    	{ view:"portlet", body:{
+			template:"row 1"
+		}},
+		{ view:"portlet", body:{
+			template:"row 2"
+		}},
+    	{ view:"portlet", body:{
+			template:"row 3"
+		}}
+   	]
+});
 ~~~
 
 ### Where to start
 
-- [Overview of Portlet Widget](desktop/portlet.md)
+- [Overview of the Portlet Widget](desktop/portlet.md)
 - [Samples](http://docs.webix.com/samples/60_pro/09_portlet/index.html)
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.layout.md">ui.layout</a>, <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>

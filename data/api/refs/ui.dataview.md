@@ -8,21 +8,27 @@ The component presents a collection of objects according to a user-defined templ
 ### Constructor
 
 ~~~js
-	var dataview = webix.ui({
-		view:"dataview", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_dataview({
-		...config options goes here..
-	});
+var dataview = webix.ui({
+  view:"dataview", 
+  id:"dataview1",
+  type: {
+    height: 60,
+  },
+  template:"<div class='webix_strong'>#title#</div> Year: #year#, rank: #rank#",
+  data:[
+    { id:1, title:"The Shawshank Redemption", year:1994, rank:1},
+    { id:2, title:"The Godfather", year:1972, rank:2},
+    { id:3, title:"The Godfather: Part II", year:1974, rank:3},
+    { id:4, title:"The Good, the Bad and the Ugly", year:1966, rank:4}
+  ] 
+});
 ~~~
 
 ### Where to start
 
-- [Overview of Dataview Widget](desktop/dataview.md)
+- [Overview of the Dataview Widget](desktop/dataview.md)
 - [Samples](http://docs.webix.com/samples/06_dataview/index.html)
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/selectionmodel.md">SelectionModel</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/ui.proto.md">ui.proto</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/virtualrenderstack.md">VirtualRenderStack</a></div>
 

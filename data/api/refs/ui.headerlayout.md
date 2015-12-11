@@ -9,16 +9,20 @@ The component consists of cells arranged vertically or horizontally. The header 
 ### Constructor
 
 ~~~js
-	var headerlayout = webix.ui({
-		view:"headerlayout", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_headerlayout({
-		...config options goes here..
-	});
+var headerlayout = webix.ui({
+  cols:[
+    { header:"col 1", body:"content 1", width:150},
+    { header:"col 2", body:"content 2", width:150},
+    { header:"col 3", body:"content 3", width:150}
+  ]
+});
 ~~~
+
+
+### Where to start
+
+- [Overview of Headerlayout](desktop/layout.md#headers)
+- [Samples](http://docs.webix.com/samples/01_layout/07_header_all.html)
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.accordion.md">ui.accordion</a>, <a href="api/refs/ui.layout.md">ui.layout</a>, <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>

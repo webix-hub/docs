@@ -11,20 +11,28 @@ It's possible to present multiple data sets on the same chart.  Check [chart](de
 ### Constructor
 
 ~~~js
-	var chart = webix.ui({
-		view:"chart", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_chart({
-		...config options goes here..
-	});
+var chart = webix.ui({
+	view:"chart",
+   	type:"bar",
+   	value:"#sales#",
+   	label:"#sales#",
+   	barWidth:35,
+   	radius:0,
+   	gradient:"falling",
+   	data: [
+		{ id:1, sales:20, year:"02"},
+		{ id:2, sales:55, year:"03"},
+		{ id:3, sales:40, year:"04"},
+		{ id:4, sales:78, year:"05"}
+   	]
+});
 ~~~
+
 ### Where to start
 
-- [Overview of Chart Widget](desktop/chart.md)
+- [Overview of the Chart Widget](desktop/chart.md)
 - [Samples](http://docs.webix.com/samples/08_chart/index.html)
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/group.md">Group</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 

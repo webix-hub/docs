@@ -9,6 +9,30 @@ Offers select options in the form of Webix [dataview](api/refs/ui.dataview.md) c
 Can be used standalone or as a suggest list for [text](api/refs/ui.text.md), [combo](api/refs/ui.combo.md) and [richselect](api/refs/ui.richselect.md) controls 
 as well as component [editor](api/refs/editors.md).
 
+###Constructor
+
+~~~js
+webix.ui({
+  view:"datasuggest", 
+  id:"datasuggest1",
+  data:[
+    {id:1, value:"One", year:1988}, 
+    {id:2, value:"Two", year:1996},
+    {id:3, value:"Three", year:1997}
+  ]
+});
+
+$$("datasuggest1").show({
+	x:150, 
+    y:50 
+});
+~~~
+
+###Where to start
+
+- [Overview of Dataview Suggest](desktop/datasuggest.md)
+- [Samples](http://docs.webix.com/samples/32_thirdparty/14_dataselect.html)
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.suggest.md">ui.suggest</a>, <a href="api/refs/ui.popup.md">ui.popup</a>, <a href="api/refs/ui.window.md">ui.window</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/movable.md">Movable</a>, <a href="api/refs/modality.md">Modality</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 

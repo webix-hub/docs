@@ -19,7 +19,7 @@ webix.ui({
 
 ### Where to start
 
-- [Overview of Barcode Widget](desktop/barcode.md)
+- [Overview of the Barcode Widget](desktop/barcode.md)
 - [Samples](http://docs.webix.com/samples/60_pro/08_barcode/index.html)
 
 <div class='webixdoc_parents'><span>Based on: </span>

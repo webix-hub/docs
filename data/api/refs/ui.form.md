@@ -9,20 +9,22 @@ The component provides validation and the ability to save user input to the back
 ### Constructor
 
 ~~~js
-	var form = webix.ui({
-		view:"form", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_form({
-		...config options goes here..
-	});
+var form = webix.ui({
+    view:"form", 
+    elements:[
+    	{ view:"text", label:"Email" },
+        { view:"text", type:"password", label:"Password" },
+        {cols:[
+            { view:"button", value:"Login", type:"form" },
+            { view:"button", value:"Cancel" }
+       	]}
+    ]
+});
 ~~~
 
 ### Where to start
 
-- [Overview of Form Widget](desktop/form.md)
+- [Overview of the Form Widget](desktop/form.md)
 - [Samples](http://docs.webix.com/samples/13_form/index.html)
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.toolbar.md">ui.toolbar</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/values.md">Values</a>, <a href="api/refs/ui.layout.md">ui.layout</a>, <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/validatedata.md">ValidateData</a></div>

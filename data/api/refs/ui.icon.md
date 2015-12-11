@@ -9,16 +9,18 @@ The component provides a collection of popular icons and API for their handling.
 ### Constructor
 
 ~~~js
-	var icon = webix.ui({
-		view:"icon", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_icon({
-		...config options goes here..
-	});
+var icon = webix.ui({
+   view:"icon",
+   icon: "envelope", 
+   align:"left" 
+});
 ~~~
+
+
+### Where to start
+
+- [Overview of the Icon Control](desktop/icon.md)
+- [Samples](http://docs.webix.com/samples/16_skins/03_icons.html)
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>

@@ -25,7 +25,7 @@ var accordion = webix.ui({
 
 ### Where to start
 
-- [Overview of Accordion Widget](desktop/accordion.md)
+- [Overview of the Accordion Widget](desktop/accordion.md)
 - [Samples](http://docs.webix.com/samples/01_layout/index.html)
 
 <div class='webixdoc_parents'><span>Based on: </span>

@@ -22,8 +22,9 @@ The component allows you to get an HTML Form as a lib-based view, so that to use
 
 ### Where to start
 
-- [Overview of HTMLform Widget](desktop/htmlform.md)
+- [Overview of the HTMLform Widget](desktop/htmlform.md)
 - [Samples](http://docs.webix.com/samples/11_htmlform/index.html)
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.template.md">ui.template</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/values.md">Values</a></div>
 
