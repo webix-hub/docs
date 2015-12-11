@@ -19,8 +19,8 @@ Another possibility to create a component with a similar functionality is [attac
 
 ##Initialization
 
-//full form
 ~~~js
+//full form
 {view:"richselect",
 	id: "list2", label: 'richselect', 
     value:1, yCount:"3", options:[ 

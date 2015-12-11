@@ -24,7 +24,6 @@ The component should be made visible with the **show()** method you call during 
 webix.ui({
 	view:"popup",
     id:"my_popup",
-	head:"My Window",
 	body:{
 		template:"Some text" 
 	}

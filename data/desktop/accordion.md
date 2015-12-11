@@ -72,8 +72,8 @@ webix.ui({
 Accordions differ by their possibility to show and hide panes at the same time. There's a special **multi** parameter 
 to set the necessary mode. 
 
-- **multi:true (default)** - all panels can be expanded as well as collapsed at a time;
-- **multi:false** - only one panel can be (and must be) visible at a time;
+- **multi:true** - all panels can be expanded as well as collapsed at a time;
+- **multi:false (default)** - only one panel can be (and must be) visible at a time;
 - **multi:"mixed"** - all panels can be expanded at a time, but you cannot close them all. One panel remains visible. 
 
 

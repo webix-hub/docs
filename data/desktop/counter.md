@@ -8,7 +8,7 @@ Counter
 
 ##Overview
 
-Counter is a spin-box thas helps select a number by either entering the value in the input field or 
+Counter is a spin-box that helps select a number by either entering the value in the input field or 
 clicking "+" and "-" buttons to reach the necessary value. 
 
 Negative values are possible.
@@ -20,7 +20,7 @@ Negative values are possible.
 ##Initialization 
 
 ~~~js
-{ view:"counter", label:"Age", step: 10, min:21, max:100}
+{ view:"counter", label:"Age", step:10, value:33, min:21, max:100}
 ~~~
 
 ####Main properties

@@ -279,48 +279,18 @@ The Today button allows selecting the current date. The Clear button removes dat
 
 <img src="desktop/calendar_today_clear.png"/>
 
-These buttons are optional and specified in the **icons** array. The code below creates the buttons' config:
+These buttons are optional and specified in the **icons** array. The code below renders a calendar with a timepicker and Today and Clear buttons:
 
 
 ~~~js
-icons: [
-   // 'Today' definition 
-   {
-		template: function(){
-    		return "<span class='webix_cal_icon_today webix_cal_icon'>"
-    			+webix.i18n.calendar.today
-            	+"</span>";
-   		},
-		on_click:{
-  			"webix_cal_icon_today": function(){
-     			this.setValue(new Date());
-      			this.callEvent("onTodaySet",[this.getSelectedDate()]);
-    		}
-   	 	}
-	},
-     // 'Clear' definition 
-    {
-		template: function(){
-    		return "<span class='webix_cal_icon_clear webix_cal_icon'>"
-        		+webix.i18n.calendar.clear
-            	+"</span>";
-   		},
-   		on_click:{
-    		"webix_cal_icon_clear": function(){
-     			this.setValue("");
-      			this.callEvent("onDateClear",[this.getSelectedDate()]);
-    		}		
-   		}
-	}
-]
+webix.ui({
+  rows:[
+    { view:"calendar", timepicker:true, icons:true }
+  ]
+});
 ~~~  
 
-Both buttons have two properties: 
-
-- **template** - the template that defines presentation of an icon
-- **on_click** - specifies the onClick handler that processes clicking an element with certain css
-
-By default, these buttons are visible, but you can hide them by setting the **icons** property to **false**.
+To hide the buttons, you should set the **icons** property to **false**.
 
 {{sample
 09_calendar/10_icons.html

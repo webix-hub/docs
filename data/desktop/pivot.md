@@ -401,3 +401,23 @@ datatable.attachEvent("onAfterSelect", function (id) {
 //or get the ID of the currently selected item.
 var sel = datatable.getSelectedId();
 ~~~
+
+###Changing Configuration of Pivot Table's columns
+
+You can customize the columns of Pivot Table with the help of the *onHeaderInit* event. 
+The event handler takes an array of objects with columns configuration as a parameter. For example, you can set the *format* property:
+
+~~~js
+webix.ui({
+	view: "pivot",
+	on:{
+		onHeaderInit: function(columns){
+			for(var i=0; i< columns.length;i++){
+				columns[i].format = function(value) {
+					return value?value.toFixed(2) : value;
+				}
+			}
+		}
+	}
+});
+~~~
