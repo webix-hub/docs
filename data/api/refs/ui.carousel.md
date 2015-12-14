@@ -9,7 +9,7 @@ The control supports any content inside of it. The content blocks can be arrange
 ### Constructor
 
 ~~~js
-webix.ui({
+var carousel = webix.ui({
     view:"carousel",
     id:"carousel",
     width:464, 

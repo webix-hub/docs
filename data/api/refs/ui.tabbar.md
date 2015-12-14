@@ -9,16 +9,26 @@ Items of the component combines an icon with the text label. The component can b
 ### Constructor
 
 ~~~js
-	var tabbar = webix.ui({
-		view:"tabbar", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_tabbar({
-		...config options goes here..
-	});
+webix.ui({ 
+	rows:[
+    	{view:"tabbar", id:'tabbar', value:'formView', multiview:true, options: [
+      		{ value: 'Form', id: 'formView'},
+      		{ value: 'Empty', id: 'emptyView'}
+    	]},
+    	{
+		  cells:[
+      		 {id:"formView",template:"Form Content"},
+        	 {id:"emptyView", template:"Some content"}
+      	]}
+    ]
+});
 ~~~
+
+### Where to start
+
+- [Overview of the Tabbar Control](desktop/tabbar.md)
+- [Samples](http://docs.webix.com/samples/02_toolbar/02_tabbar.html)
+
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.segmented.md">ui.segmented</a>, <a href="api/refs/ui.text.md">ui.text</a>, <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>

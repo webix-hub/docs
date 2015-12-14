@@ -9,16 +9,22 @@ The control allows changing numeric data by dragging a marker over a line, with 
 ### Constructor
 
 ~~~js
-	var slider = webix.ui({
-		view:"slider", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_slider({
-		...config options goes here..
-	});
+webix.ui({
+	view:"slider", 
+  	label:"Level", 
+  	value:"20", 
+  	min:10, 
+  	max: 120,
+  	name:"s1"
+});
 ~~~
+
+### Where to start
+
+- [Overview of the Slider Control](desktop/slider.md)
+- [Samples](http://docs.webix.com/samples/13_form/05_extras/)
+
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.text.md">ui.text</a>, <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 

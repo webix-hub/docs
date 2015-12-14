@@ -5,6 +5,33 @@ ui.suggest
 {{memo A suggest control. }}
 
 Can be used standalone or as editor for other components. Check [suggest](desktop/suggest.md) documentation for more detailed description.
+
+### Constructor
+
+~~~js
+webix.ui({
+	view:"text", 
+  	width: 300,
+  	name:"country", 
+  	label:"Country", 
+  	value:"Belarus", suggest:[
+  		{id:1, value: "Albania"},
+		{id:2, value: "Bhutan"},
+		{id:3, value: "Colombia"},
+		{id:4, value: "Denmark"},
+		{id:5, value: "Germany"},
+		{id:6, value: "Moldova"}
+    ]         
+});
+~~~
+
+### Where to start
+
+- [Overview of Suggest List](desktop/suggest.md)
+- [Samples](http://docs.webix.com/samples/13_form/01_controls/)
+
+
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.popup.md">ui.popup</a>, <a href="api/refs/ui.window.md">ui.window</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/movable.md">Movable</a>, <a href="api/refs/modality.md">Modality</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 

@@ -12,18 +12,19 @@ as well as component [editor](api/refs/editors.md).
 
 ~~~js
 webix.ui({
-  view:"datasuggest", 
-  id:"datasuggest1",
-  data:[
-    {id:1, value:"One", year:1988}, 
-    {id:2, value:"Two", year:1996},
-    {id:3, value:"Three", year:1997}
-  ]
-});
-
-$$("datasuggest1").show({
-	x:150, 
-    y:50 
+	view:"richselect", 
+  	value:1, 
+  	options:{
+		view:"gridsuggest",
+     	data:[
+        	{id:1, name:"One", year:1988, color:"Red"}, 
+			{id:2, name:"Two", year:1996, color:"Blue"},
+			{id:3, name:"Three", year:1997, color:"Green"}, 
+			{id:4, name:"Four", year:2011, color:"Orange"},
+			{id:5, name:"Five", year:2000, color:"Grey"}, 
+			{id:6, name:"Six", year: 1994, color:"Yellow"}
+        ]
+    }
 });
 ~~~
 

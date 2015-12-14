@@ -8,7 +8,7 @@ The component makes little sense on its own, but can be used with other data-bas
 ### Constructor
 
 ~~~js
-var list = webix.ui({
+webix.ui({
   view:"list",
   template:"#id#. #title#",
   pager:{	

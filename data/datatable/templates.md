@@ -126,7 +126,7 @@ grid = new webix.ui({
       {id:"votes", header:"Votes",  template:"#votes# 
       		<input type='button' value='Show details' class='details_button'>'"}
     ],
-    on_click:{
+    onClick:{
     	details_button:function(id, ev){
             //will be called on button click
         	some_custom_method(id.row, id.column);

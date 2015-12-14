@@ -17,7 +17,7 @@ Negative values are possible.
 ##Initialization
 
 ~~~js
-{ view:"slider", label:"Level", value:"20", min:10, max: 120; name:"s1"}
+{ view:"slider", label:"Level", value:"20", min:10, max: 120, name:"s1"}
 ~~~
 
 {{sample 13_form/05_extras/03_slider.html}}

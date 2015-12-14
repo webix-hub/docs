@@ -13,23 +13,15 @@ webix.ui({
   rows:[
     {
       view:"segmented", id:'tabbar', value: 'View1', multiview:true, options: [
-        { value: 'List',  id: 'View1'},
+        { value: 'Form',  id: 'View1'},
         { value: 'Info',  id: 'View2'}
       ]
     },    
     {   id:"mymultiview",
-     	cells:[
-       		{
-         		id:"View1",
-         		view:"list",
-         		template:"#id#. #title#",
-         		data:[
-           			{ id:1, title:"Item 1"},
-           			{ id:2, title:"Item 2"},
-           			{ id:3, title:"Item 3"},
-         		]},           
-        	{id:"View2", template:"<i>Info about the List</i>"}
-     	]
+        cells:[
+            {id:"View1",template:"Form Content"},                       
+            {id:"View2", template:"<i>Info about the Form</i>"}
+        ]
      }
    ]
 });

@@ -9,7 +9,7 @@ It's also possible to create a custom barcode. Check desktop/barcode.md document
 ### Constructor
 
 ~~~js
-webix.ui({
+var barcode = webix.ui({
 	view: "barcode",
 	id:"barcode",
 	type: "ean13",

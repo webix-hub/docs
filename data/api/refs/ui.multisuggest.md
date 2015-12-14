@@ -10,18 +10,18 @@ Can be used standalone or as a suggest list for [text](api/refs/ui.text.md), [co
 ### Constructor
 
 ~~~js
-var multisuggest = webix.ui({
- 	view:"multisuggest",
-  	id:"multisuggest1",  
-    data:[
-        { id:1, value:"Alex Brown" },
-        { id:2, value:"Dan Simons" }
-    ] 
-});
-
-$$("multisuggest1").show({
-  	x:300,
-  	y:50
+webix.ui({ 
+	view:"richselect", 
+  	label:"Data", 
+  	value:1, options:{
+    	view:"multisuggest",
+		data:[
+      		{ id:1, value:"Alex Brown" },
+      		{ id:2, value:"Dan Simons" },
+      		{ id:3, value:"Gron Alanski" },
+      		{ id:4, value:"Dan Alanski" }
+		]
+	}		
 });
 ~~~
 

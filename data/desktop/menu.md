@@ -33,8 +33,8 @@ webix.ui({
 		{ value:"Post...", submenu:[ "Facebook", "Google+", "Twitter" ]}
 	],
     type:{
-			subsign:true,
-            height:50
+		subsign:true,
+        height:50
     }           
 });	
 ~~~

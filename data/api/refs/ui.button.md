@@ -9,7 +9,7 @@ The control has a collection of preset looks and can be used both as a stand-alo
 ### Constructor
 
 ~~~js
-webix.ui({
+var button = webix.ui({
 	view:"button", 
   	id:"my_button", 
   	value:"Button", 

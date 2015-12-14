@@ -9,20 +9,27 @@ The animated menu component that can be bound to any part of the screen. The siz
 ### Constructor
 
 ~~~js
-	var sidemenu = webix.ui({
-		view:"sidemenu", 
-		container:"mydiv", 
-		...config options will be here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_sidemenu({
-		...config options will be here..
-	});
+webix.ui({
+    view: "sidemenu",
+    width: 200,
+    position: "left",
+    body:{
+        view:"list",
+        borderless:true,
+        scroll: false,
+        template: "<span class='webix_icon fa-#icon#'></span> #value#",
+        data:[
+            {id: 1, value: "Users", icon: "user"},
+            {id: 2, value: "Products", icon: "cube"},
+            {id: 3, value: "Reports", icon: "line-chart"}            
+        ]
+    }
+}).show();
 ~~~
 
 ### Where to start
 
-- [Overview of Sidemenu Widget](desktop/sidemenu.md)
+- [Overview of the Sidemenu Widget](desktop/sidemenu.md)
 - [Samples](http://docs.webix.com/samples/28_sidemenu/index.html)
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.popup.md">ui.popup</a>, <a href="api/refs/ui.window.md">ui.window</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/movable.md">Movable</a>, <a href="api/refs/modality.md">Modality</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>

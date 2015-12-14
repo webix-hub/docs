@@ -20,17 +20,17 @@ HTML
 JS
 }}
 ~~~js
-webix.ui({
-  view:"contextmenu",
-  data:[
-    { value:"Translate...", submenu:[ 
-      "English", 
-      "Slavic",
-      "German"
-    ]},
-    { value:"Info" }
-  ],
-  master:"areaB"
+var contextmenu = webix.ui({
+	view:"contextmenu",
+  	data:[
+    	{ value:"Translate...", submenu:[ 
+      	"English", 
+      	"Slavic",
+      	"German"
+    	]},
+    	{ value:"Info" }
+  	],
+  	master:"areaA"
 });
 
 ~~~
