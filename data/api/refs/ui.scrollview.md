@@ -8,8 +8,12 @@ Place it in the layout if you want to have a scroll around few other views (not 
 ### Constructor
 
 ~~~js
-webix.ui({
-  view:"scrollview", id:"scrollview", scroll:"y", height: 160, width: 150,  body:{
+var scrollview = webix.ui({
+  view:"scrollview", 
+  id:"scrollview", 
+  scroll:"y", 
+  height: 160, 
+  width: 150, body:{
      rows:[
        {template:"Lorem ipsum", autoheight:true},
        {template:"Lorem ipsum dolor sit amet", autoheight:true},

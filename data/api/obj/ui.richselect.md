@@ -6,13 +6,19 @@ The control combines a non-editable text field with a drop-down list of predefin
 ### Constructor
 
 ~~~js
-	var richselect = webix.ui({
-		view:"richselect", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_richselect({
-		...config options goes here..
-	});
+var richselect = webix.ui({
+    view:"richselect",
+   	label:"Choose", 
+    value:1, options:[ 
+        {id:1, value:"One"}, 
+        {id:2, value:"Two"}, 
+        {id:3, value:"Three"}
+    ]
+});
 ~~~
+
+### Where to start
+
+- [Overview of the Richselect Control](desktop/richselect.md)
+- [Samples](http://docs.webix.com/samples/13_form/01_controls)
+

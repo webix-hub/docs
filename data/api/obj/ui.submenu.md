@@ -1,18 +1,22 @@
 
 {{memo a sub-menu}}
 
-The component is a compliment to the menu component and not intended for direct initialization. Check [menu](desktop/menu.md) documentation for more detailed description.
+The component is a compliment to the menu component and isn't intended for direct initialization. Check [menu](desktop/menu.md) documentation for more detailed description.
+
 
 ### Constructor
 
 ~~~js
-	var submenu = webix.ui({
-		view:"submenu", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_submenu({
-		...config options goes here..
-	});
+webix.ui({
+    view:"menu",
+    subMenuPos:"right",
+    data:[ 
+        { value:"Translate...", submenu:["English", "Slavic...", "German"]},
+        { value:"Post...", submenu:[ "Facebook", "Google+", "Twitter" ]}
+    ],
+    type:{
+    	subsign:true,
+        height:50
+    }           
+});
 ~~~

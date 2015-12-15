@@ -9,16 +9,17 @@ A label inside the control differs it from the input component. Check [text](des
 ### Constructor
 
 ~~~js
-	var text = webix.ui({
-		view:"text", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_text({
-		...config options goes here..
-	});
+var text = webix.ui({ 
+   view:"text", 
+   value:'dummy@email.com', 
+   label:"Email"  
+});
 ~~~
+
+### Where to start
+
+- [Overview of the Text Control](desktop/text.md)
+- [Samples](http://docs.webix.com/samples/13_form/01_controls/01_text.html)
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>

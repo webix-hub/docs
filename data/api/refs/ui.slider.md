@@ -9,7 +9,7 @@ The control allows changing numeric data by dragging a marker over a line, with 
 ### Constructor
 
 ~~~js
-webix.ui({
+var slider = webix.ui({
 	view:"slider", 
   	label:"Level", 
   	value:"20", 

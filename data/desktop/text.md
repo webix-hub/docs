@@ -1,7 +1,7 @@
 Text
 =======================
 
-#API Reference
+##API Reference
 
 - [Methods, properties and events](api/refs/ui.text.md) 
 - [Shared functionality](desktop/controls_guide.md)

@@ -9,21 +9,22 @@ The component can contain various elements inside it (actually, the same element
 ### Constructor
 
 ~~~js
-	var toolbar = webix.ui({
-		view:"toolbar", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_toolbar({
-		...config options goes here..
-	});
+var toolbar = webix.ui({
+	view:"toolbar",
+    id:"myToolbar",
+    cols:[
+        { view:"button", id:"LoadBut", value:"Load", width:100, align:"left" },
+        { view:"button", value:"Save", width:100, align:"center" },
+        { view:"button", value:"Info", width:100, align:"right" }
+    ]
+});
 ~~~
 
 ### Where to start
 
-- [Overview of Toolbar Widget](desktop/toolbar.md)
+- [Overview of the Toolbar Widget](desktop/toolbar.md)
 - [Samples](http://docs.webix.com/samples/02_toolbar/index.html)
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/values.md">Values</a>, <a href="api/refs/ui.layout.md">ui.layout</a>, <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/validatedata.md">ValidateData</a></div>
 

@@ -4,26 +4,29 @@ ui.window
 
 {{memo A movable popup window. }}
 
-The window consists of the header and body, can be modal or modaless. The window body can contain any content. The header is set by a template.  Check [window](desktop/window.md) documentation for more detailed description.
+The window consists of the header and the body, can be modal or modaless. The window body can contain any content. The header is set by a template.  Check [window](desktop/window.md) documentation for more detailed description.
 
 ### Constructor
 
 ~~~js
-	var window = webix.ui({
-		view:"window", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_window({
-		...config options goes here..
-	});
+var window = webix.ui({
+    view:"window",
+    id:"my_win",
+    head:"My Window",
+  	width: 200,
+  	height: 200,
+    body:{
+        template:"Some text"
+    }
+}).show();
 ~~~
 
 ### Where to start
 
-- [Overview of Window Widget](desktop/window.md)
+- [Overview of the Window Widget](desktop/window.md)
 - [Samples](http://docs.webix.com/samples/10_window/index.html)
+
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/movable.md">Movable</a>, <a href="api/refs/modality.md">Modality</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 

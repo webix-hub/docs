@@ -10,13 +10,11 @@ The component consists of cells arranged vertically or horizontally. The header 
 
 ~~~js
 var headerlayout = webix.ui({
-	view:"headerlayout", 
-	container:"mydiv", 
-	...config options goes here..
-})
-//or, in case of jQuery
-$("#mydiv").webix_headerlayout({
-	...config options goes here..
+  cols:[
+    { header:"col 1", body:"content 1", width:150},
+    { header:"col 2", body:"content 2", width:150},
+    { header:"col 3", body:"content 3", width:150}
+  ]
 });
 ~~~
 

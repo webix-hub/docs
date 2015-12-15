@@ -1,18 +1,29 @@
 
 {{memo a panel that contains multiple clickable items}}
 
-Items of the component combines an icon with the text label. The component can be used to build a multi-item menu for navigating between views. Check [tabbar](desktop/tabbar.md) documentation for more detailed description.
+Items of the component combine icons with text labels. The component can be used to build a multi-item menu for navigating between views. Check [tabbar](desktop/tabbar.md) documentation for more detailed description.
+
 
 ### Constructor
 
 ~~~js
-	var tabbar = webix.ui({
-		view:"tabbar", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_tabbar({
-		...config options goes here..
-	});
+webix.ui({ 
+	rows:[
+    	{view:"tabbar", id:'tabbar', value:'formView', multiview:true, options: [
+      		{ value: 'Form', id: 'formView'},
+      		{ value: 'Empty', id: 'emptyView'}
+    	]},
+    	{
+		  cells:[
+      		 {id:"formView",template:"Form Content"},
+        	 {id:"emptyView", template:"Some content"}
+      	]}
+    ]
+});
 ~~~
+
+### Where to start
+
+- [Overview of the Tabbar Control](desktop/tabbar.md)
+- [Samples](http://docs.webix.com/samples/02_toolbar/02_tabbar.html)
+

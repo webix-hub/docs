@@ -6,18 +6,15 @@ It's also possible to create a custom barcode. Check desktop/barcode.md document
 ### Constructor
 
 ~~~js
-var chart = webix.ui({
-	view:"barcode", 
-    container:"mydiv", 
-    ...config options goes here..
-})
-//or, in case of jQuery
-$("#mydiv").webix_barcode({
-	...config options goes here..
+var barcode = webix.ui({
+	view: "barcode",
+	id:"barcode",
+	type: "ean13",
+	value: "123456789012"
 });
 ~~~
 
 ### Where to start
 
-- [Overview of Barcode Widget](desktop/barcode.md)
+- [Overview of the Barcode Widget](desktop/barcode.md)
 - [Samples](http://docs.webix.com/samples/60_pro/08_barcode/index.html)

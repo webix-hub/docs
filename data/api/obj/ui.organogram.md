@@ -7,19 +7,25 @@ It's also possible to create your own css style for Organogram. Check desktop/or
 ### Constructor
 
 ~~~js
-var chart = webix.ui({
-	view:"organogram", 
-    container:"mydiv", 
-    ...config options goes here..
-})
-//or, in case of jQuery
-$("#mydiv").webix_organogram({
-	...config options goes here..
+var organogram = new webix.ui({
+  view:"organogram",
+  data: [
+     {id:"1", value:"Item 1", data:[
+		{ id:"1.1", value:"Item 1.1", data:[
+			{id:"1.1.1", value:"Item 1.1.1", data:[]},
+		]},
+		{ id:"1.2", value:"Item 1.2", data:[]},
+		{ id:"1.3", value:"Item 1.3", data:[
+			{ id:"1.3.1", value:"Item 1.3.1", data:[]}
+		]},
+	]}
+  ]
 });
 ~~~
 
 ### Where to start
 
-- [Overview of Organogram Widget](desktop/organogram.md)
+- [Overview of the Organogram Widget](desktop/organogram.md)
 - [Samples](http://docs.webix.com/samples/60_pro/07_organogram/index.html)
+
 

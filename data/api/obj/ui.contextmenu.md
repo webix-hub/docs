@@ -5,19 +5,34 @@ The component presents a pop-up menu that is displayed when the user clicks the 
 
 ### Constructor
 
+{{snippet 
+HTML
+}}
+~~~html
+<!--Right click the area-->
+<div id="areaA" style=" background-color:#ffffbb; width:500px; height:300px;"></div>
+~~~
+
+{{snippet 
+JS
+}}
 ~~~js
-	var contextmenu = webix.ui({
-		view:"contextmenu", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_contextmenu({
-		...config options goes here..
-	});
+var contextmenu = webix.ui({
+	view:"contextmenu",
+  	data:[
+    	{ value:"Translate...", submenu:[ 
+      	"English", 
+      	"Slavic",
+      	"German"
+    	]},
+    	{ value:"Info" }
+  	],
+  	master:"areaA"
+});
+
 ~~~
 
 ### Where to start
 
-- [Overview of ContextMenu Widget](desktop/contextmenu.md)
+- [Overview of the ContextMenu Widget](desktop/contextmenu.md)
 - [Samples](http://docs.webix.com/samples/03_menu/index.html)

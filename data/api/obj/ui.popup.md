@@ -6,18 +6,18 @@ The window can contain any content, be modal or modeless. The main use case - di
 ### Constructor
 
 ~~~js
-	var popup = webix.ui({
-		view:"popup", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_popup({
-		...config options goes here..
-	});
+var popup = webix.ui({
+	view:"popup",
+    id:"my_popup",
+  	height:250,
+  	width:300,
+    body:{
+        template:"Some text" 
+    }
+}).show();
 ~~~
 
 ### Where to start
 
-- [Overview of Popup Widget](desktop/popup.md)
+- [Overview of the Popup Widget](desktop/popup.md)
 - [Samples](http://docs.webix.com/samples/10_window/index.html)

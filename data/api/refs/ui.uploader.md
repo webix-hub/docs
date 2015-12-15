@@ -4,26 +4,26 @@ ui.uploader
 
 {{memo A control for uploading multiple files. }}
 
-The component allows tracking the whole progress of individual file upload. Fully customazable. Check [uploader](/) documentation for more detailed description.
+The component allows tracking the whole progress of individual file upload. Fully customizable. Check the desktop/uploader.md documentation for more detailed description.
 
 ### Constructor
 
 ~~~js
-	var uploader = webix.ui({
-		view:"uploader", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_uploader({
-		...config options goes here..
-	});
+var uploader = webix.ui({
+    view:"uploader",
+    id: "uploader_1",
+  	width:200,
+    value:"Upload file",
+    link:"mylist",
+    upload:"//docs.webix.com/samples/21_upload/php/upload.php"
+});
 ~~~
 
 ### Where to start
 
-- [Overview of Uploader Widget](desktop/uploader.md)
+- [Overview of the Uploader Widget](desktop/uploader.md)
 - [Samples](http://docs.webix.com/samples/21_upload/index.html)
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 

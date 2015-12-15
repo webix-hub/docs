@@ -8,21 +8,17 @@ The component is a simple container (but with rich API support) where you can pu
 ### Constructor
 
 ~~~js
-	var template = webix.ui({
-		view:"template", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_template({
-		...config options goes here..
-	});
+var template = webix.ui({
+  view: "template",
+  template: "Default template with some text inside"
+});
 ~~~
 
 ### Where to start
 
-- [Overview of Template Widget](desktop/template.md)
+- [Overview of the Template Widget](desktop/template.md)
 - [Samples](http://docs.webix.com/samples/04_template/index.html)
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 

@@ -27,7 +27,7 @@ Content property may either point the **ID** of **DIV container** where the form
 {{snippet
 HTMLform, content
 }}
-~~~js
+~~~html
 <div id="areaA">
 		<input type="text" name="title" value="" placeholder="Book title" /><br/>
 		<input type="text" name="author" value="" placeholder="Author" /><br/>

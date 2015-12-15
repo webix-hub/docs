@@ -24,7 +24,7 @@ The component inherits from Webix [view](desktop/view.md) and is initialized wit
 webix.ui({
 	view:"video",
     id:"video1", //used to work with the component later
-    container:"video_div"
+    container:"video_div",
 	src: ["data/movie.ogv","data/movie.mp4"]
 });
 ~~~

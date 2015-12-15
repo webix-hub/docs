@@ -8,16 +8,28 @@ The component allows you to get an HTML Form as a lib-based view, so that to use
 
 ### Constructor
 
+{{snippet HTML}}
+~~~html
+<div class="myform">
+	<div>
+      <label for="title">Book title</label><br/>
+      <input type="text" name="title" placeholder="Title" />
+  </div>
+	<div>
+      <label for="author">Author</label><br/>
+      <input type="text" name="author" placeholder="Author" />
+  </div>
+</div>
+~~~
+
+{{snippet JS}}
 ~~~js
-	var htmlform = webix.ui({
-		view:"htmlform", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_htmlform({
-		...config options goes here..
-	});
+var htmlform = webix.ui({
+	view:"htmlform", 
+    id:"formView",
+    padding:5,
+	content:document.body
+});
 ~~~
 
 ### Where to start

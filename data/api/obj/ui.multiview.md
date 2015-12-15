@@ -6,18 +6,25 @@ The component allows you to divide the page content into multiple groups and dis
 ### Constructor
 
 ~~~js
-	var multiview = webix.ui({
-		view:"multiview", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_multiview({
-		...config options goes here..
-	});
+webix.ui({  
+  rows:[
+    {
+      view:"segmented", id:'tabbar', value: 'View1', multiview:true, options: [
+        { value: 'Form',  id: 'View1'},
+        { value: 'Info',  id: 'View2'}
+      ]
+    },    
+    {   id:"mymultiview",
+        cells:[
+            {id:"View1",template:"Form Content"},                       
+            {id:"View2", template:"<i>Info about the Form</i>"}
+        ]
+     }
+   ]
+});
 ~~~
 
 ### Where to start
 
-- [Overview of Multiview Widget](desktop/multiview.md)
+- [Overview of the Multiview Widget](desktop/multiview.md)
 - [Samples](http://docs.webix.com/samples/20_multiview/index.html)

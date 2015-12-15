@@ -6,18 +6,25 @@ The animated menu component that can be bound to any part of the screen. The siz
 ### Constructor
 
 ~~~js
-	var sidemenu = webix.ui({
-		view:"sidemenu", 
-		container:"mydiv", 
-		...config options will be here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_sidemenu({
-		...config options will be here..
-	});
+var sidemenu = webix.ui({
+    view: "sidemenu",
+    width: 200,
+    position: "left",
+    body:{
+        view:"list",
+        borderless:true,
+        scroll: false,
+        template: "<span class='webix_icon fa-#icon#'></span> #value#",
+        data:[
+            {id: 1, value: "Users", icon: "user"},
+            {id: 2, value: "Products", icon: "cube"},
+            {id: 3, value: "Reports", icon: "line-chart"}            
+        ]
+    }
+}).show();
 ~~~
 
 ### Where to start
 
-- [Overview of Sidemenu Widget](desktop/sidemenu.md)
+- [Overview of the Sidemenu Widget](desktop/sidemenu.md)
 - [Samples](http://docs.webix.com/samples/28_sidemenu/index.html)

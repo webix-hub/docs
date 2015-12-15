@@ -10,7 +10,7 @@ Toggle
 ##Overview
 
 A two-state button that can be not only clicked but pressed. Hence, it has two states - pressed and unpressed (initial), 
-which makes it resemble [checkbox](desktop/checkbox.md) that also has two states (checked and unchecked). 
+which makes it look like [checkbox](desktop/checkbox.md) that also has two states (checked and unchecked). 
 
 <img src="desktop/toggle.png" />
 

@@ -5,11 +5,11 @@ Tooltip stands out of the fixed pattern. It lies above other ui-related componen
 [popup](desktop/popup.md). 
 
 Tooltip is connected with some component or its item and becomes visible when you place a mouse pointer over it and disappears when it leaves the area. Doesn't it 
-resemble onMouseOver/onMouseOut events? Still, event handling is quite the [other story](desktop/event_handling.md). 
+resemble onMouseOver/onMouseOut events? Still, event handling is quite [another story](desktop/event_handling.md). 
 
 <img src="desktop/tooltip.png"/>
 
-Here, you don't need any specific code to make it work. You should just include a tooltip into the necessary component abd specify the info to be shown inside a tooltip area. 
+Here, you don't need any specific code to make it work. You should just include a tooltip into the necessary component and specify the info to be shown inside a tooltip area. 
 
 Tooltip may include text as well as items from the dataset. 
 
@@ -54,7 +54,7 @@ webix.ui({
     tooltip:true,
     columns:[
     	{id:"name", header:"Name"},
-        {id::"age", header:"Age"}
+        {id:"age", header:"Age"}
     ],
     data:[
     	{id:1, name:"Ann", age:25},
@@ -64,7 +64,7 @@ webix.ui({
 //the tooltip for the first column of the first row is "Ann"
 ~~~
 
-- **Customizing** tooltip data for each column. Tooltip should be switch on for the whole grid:
+- **Customizing** tooltip data for each column. Tooltip should be switched on for the whole grid:
 
 ~~~js
 webix.ui({
@@ -72,7 +72,7 @@ webix.ui({
     tooltip:true,
     columns:[
     	{id:"name", header:"Name", tooltip:"My name is #name#. I'm #age#."},
-        {id::"age", header:"Age"}
+        {id:"age", header:"Age"}
     ],
     data:[
     	{id:1, name:"Ann", age:25},
@@ -82,7 +82,7 @@ webix.ui({
 //tooltip for the first column of the first row is "My name is Ann. I'm 25."
 ~~~
 
-- Setting tooltip for datatable **header**. Tooltip should be switch on for the whole grid:
+- Setting tooltip for datatable **header**. Tooltip should be switched on for the whole grid:
 
 ~~~js
 webix.ui({
@@ -90,7 +90,7 @@ webix.ui({
     tooltip:true,
     columns:[
     	{id:"name", header:"<span title='My tooltip text'>Name</span>"},
-        {id::"age", header:"Age"}
+        {id:"age", header:"Age"}
     ]
 });
 //tooltip for the Name column is "My tooltip text"
@@ -112,7 +112,7 @@ webix.ui({
     },
     columns:[
         {id:"name", header:"<span title='My tooltip text'>Name</span>"},
-        {id::"age", header:"Age"}
+        {id:"age", header:"Age"}
     ]
 });
 ~~~
