@@ -18,8 +18,9 @@ webix.ui({
 	desktop/menu.md
 @relatedsample:
 	03_menu/01_menubar.html
-@descr:
-The following values are supported:
+@values:
 
-- **right**;
-- **left**.
+- top
+- bottom (default)
+- right
+- left

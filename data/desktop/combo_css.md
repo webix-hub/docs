@@ -1,7 +1,5 @@
-Combo
+Combo CSS 
 =============
-
-###CSS Image Map
 
 <img src="image_maps/combo_css.png">
 

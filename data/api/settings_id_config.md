@@ -4,7 +4,7 @@ id
 
 @short: the component ID
 
-@type: id
+@type: string,number
 @example:
 webix.ui({
 	view:"window",

@@ -4,9 +4,10 @@
 @type: boolean,string
 
 @values:
-- block 
+- block (true)
 - selection
 - repeat
+- false
 
 @example:
 webix.ui({

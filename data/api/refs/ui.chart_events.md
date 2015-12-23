@@ -5,7 +5,7 @@ Events
 - api/link/ui.chart_onafteradd_event.md - fires after adding item to datastore
 - api/link/ui.chart_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.chart_onafterdelete_event.md - fires after item deleting
-- api/link/ui.chart_onafterload_event.md - fires after server side loading is complete
+- api/link/ui.chart_onafterload_event.md - fires after data loading is complete
 - api/ui.chart_onafterrender_event.md - called after the rendering of calendar is complete.
 - api/link/ui.chart_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.chart_onaftersort_event.md - fires after sorting dataset
@@ -16,9 +16,11 @@ Events
 - api/ui.chart_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.chart_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.chart_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.chart_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.chart_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.chart_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.chart_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.chart_onfocus_event.md - fires when a view gets focus
 - api/link/ui.chart_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.chart_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.chart_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
@@ -51,9 +53,11 @@ Events
 - api/ui.chart_onbeforerender_event.md
 - api/link/ui.chart_onbeforesort_event.md
 - api/link/ui.chart_onbindrequest_event.md
+- api/link/ui.chart_onblur_event.md
 - api/link/ui.chart_ondatarequest_event.md
 - api/link/ui.chart_ondataupdate_event.md
 - api/link/ui.chart_ondestruct_event.md
+- api/link/ui.chart_onfocus_event.md
 - api/link/ui.chart_onitemclick_event.md
 - api/link/ui.chart_onitemdblclick_event.md
 - api/link/ui.chart_onkeypress_event.md

@@ -3,7 +3,7 @@ Methods
 
 {{api
 - api/link/dataprocessor_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
-- api/dataprocessor_attachprogress.md - asssigns handler for data saving actions
+- api/dataprocessor_attachprogress.md - assigns handler for data saving actions
 - api/link/dataprocessor_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/dataprocessor_callevent.md - calls an inner event
 - api/link/dataprocessor_clearvalidation.md - removes "data incorrect" highlighting from invalid text fields
@@ -23,7 +23,7 @@ Methods
 - api/dataprocessor_send.md - sends a request to server. Allows to save data changes on server.
 - api/dataprocessor_setitemstate.md - set update state for the item
 - api/link/dataprocessor_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/dataprocessor_validate.md - checks data in the component during adding new item or editing existing ones
+- api/link/dataprocessor_validate.md - checks data in the form
 }}
 
 @index:

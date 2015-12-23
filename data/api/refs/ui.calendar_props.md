@@ -8,7 +8,7 @@ Properties
 - api/ui.calendar_calendarheader_config.md - the format for the title with the month name and year
 - api/ui.calendar_calendartime_config.md - defines calendar time format (with timepicker enabled)
 - api/ui.calendar_calendarweekheader_config.md - specifies the label for the column with weeks numbers
-- api/ui.calendar_cellheight_config.md - the height of the cell with day (36)
+- api/ui.calendar_cellheight_config.md - the height of the cell with day
 - api/link/ui.calendar_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.calendar_css_config.md - the name of a css class that will be applied to the view container
 - api/ui.calendar_date_config.md - sets the initial date of the calendar (particularly month and year).

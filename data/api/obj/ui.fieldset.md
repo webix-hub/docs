@@ -6,13 +6,20 @@ The control presents a standard fieldset that combines several sense-connected U
 ### Constructor
 
 ~~~js
-	var fieldset = webix.ui({
-		view:"fieldset", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_fieldset({
-		...config options goes here..
-	});
+var fieldset = webix.ui({
+ 	view:"fieldset", 
+  	label:"Field Set 1",
+  	body:{
+		rows:[
+			{ view:"text", label:"Email"},
+			{ view:"text", label:"Password"}
+		]
+ 	}
+});
 ~~~
+
+### Where to start
+
+- [Overview of the Fieldset Control](desktop/fieldset.md)
+- [Samples](http://docs.webix.com/samples/13_form/05_extras/)
+

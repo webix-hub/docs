@@ -9,21 +9,24 @@ The component provides validation and the ability to save user input to the back
 ### Constructor
 
 ~~~js
-	var form = webix.ui({
-		view:"form", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_form({
-		...config options goes here..
-	});
+var form = webix.ui({
+    view:"form", 
+    elements:[
+    	{ view:"text", label:"Email" },
+        { view:"text", type:"password", label:"Password" },
+        {cols:[
+            { view:"button", value:"Login", type:"form" },
+            { view:"button", value:"Cancel" }
+       	]}
+    ]
+});
 ~~~
 
 ### Where to start
 
-- [Overview of Form Widget](desktop/form.md)
+- [Overview of the Form Widget](desktop/form.md)
 - [Samples](http://docs.webix.com/samples/13_form/index.html)
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.toolbar.md">ui.toolbar</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/values.md">Values</a>, <a href="api/refs/ui.layout.md">ui.layout</a>, <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/validatedata.md">ValidateData</a></div>
 
@@ -77,7 +80,7 @@ The component provides validation and the ability to save user input to the back
 - api/link/ui.form_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
 - api/link/ui.form_unbind.md - breaks "bind" link
 - api/link/ui.form_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/ui.form_validate.md - checks data in the component during adding new item or editing existing ones
+- api/link/ui.form_validate.md - checks data in the form
 }}
 
 
@@ -86,16 +89,17 @@ The component provides validation and the ability to save user input to the back
 
 {{api
 - api/link/ui.form_onafterload_event.md - fires after server side loading is complete
+- api/link/ui.form_onafterscroll_event.md - fires when to component is scrolled in any direction
 - api/link/ui.form_onaftervalidation_event.md - fires after data has been validated
 - api/link/ui.form_onbeforeload_event.md - occurs immediately before data loading has been started
-- api/link/ui.form_onbeforevalidate_event.md - called before runing validation
+- api/link/ui.form_onbeforevalidate_event.md - called before running validation
 - api/link/ui.form_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.form_onchange_event.md - fires when data in the input or related form/toolbar is changed
 - api/link/ui.form_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.form_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/ui.form_onsubmit_event.md - fires when enter key is pressed for a focused control in the form
 - api/link/ui.form_onvalidationerror_event.md - fires when the form fails to pass validation
-- api/link/ui.form_onvalidationsuccess_event.md - fires after the form has passes validation successfully
+- api/link/ui.form_onvalidationsuccess_event.md - fires after the form has passed validation successfully
 - api/link/ui.form_onvalues_event.md - fires after values have been set within toolbar or form
 }}
 
@@ -136,7 +140,7 @@ The component provides validation and the ability to save user input to the back
 - api/link/ui.form_scroll_config.md - enables/disables the scroll bar
 - api/link/ui.form_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.form_type_config.md - defines the layout borders
-- api/link/ui.form_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.form_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.form_visiblebatch_config.md - sets the batch that will be shown initially
 - api/link/ui.form_width_config.md - sets the width of the component
 }}

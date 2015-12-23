@@ -20,7 +20,7 @@ Negative values are possible.
 ##Initialization 
 
 ~~~js
-{ view:"counter", label:"Age", step: 10, min:21, max:100}
+{ view:"counter", label:"Age", step:10, value:33, min:21, max:100}
 ~~~
 
 ####Main properties

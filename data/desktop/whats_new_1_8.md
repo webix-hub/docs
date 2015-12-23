@@ -4,7 +4,7 @@ Version 1.8
 ###Responsive Layouts and Tabbar
 
 - Layout view can be hidden or moved if there's not enough space for them on the screen. [Check details](desktop/responsive_layout.md).
-- Tabbar tabs can be moved to a related popup if there're not enoght space for them on the screen. [Check details](desktop/responsive_tabbar.md).
+- Tabbar tabs can be moved to a related popup if there are not enough space for them on the screen. [Check details](desktop/responsive_tabbar.md).
 
 ###Disabling dates in Calendar
 
@@ -16,7 +16,7 @@ Calendar dates can be disabled to prevent their selection. [Check details](deskt
 
 ###Full list of changes and fixes
 
-**New functionbality**
+**New functionality**
 
 - limited width for tabs and popup with additional tabs
 - onClick handler accepts names from $scope

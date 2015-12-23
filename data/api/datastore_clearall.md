@@ -7,7 +7,7 @@ clearAll
 
 
 @example:
-	$$("data").clearAll;
+	$$("data").clearAll();
 //"data" is the ID of the dedicated dataview    
     
 @related: 

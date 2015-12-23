@@ -7,9 +7,10 @@ clipboard
 
 @type: boolean,string
 @values:
-- 'modify' ( or true, the default value)
-- 'insert'
-- 'custom'
+- modify (true)
+- insert
+- custom
+
 @example:
 tree = new webix.ui({
     view:"tree",
@@ -26,6 +27,6 @@ tree = new webix.ui({
 @template:	api_config
 @descr:
 
-If cliboard  is defined as *"custom"*, you need to specify [onPaste](api/copypaste_onpaste_event.md) behavior attached to the same-name event. 
+If cliboard is defined as *"custom"*, you need to specify [onPaste](api/copypaste_onpaste_event.md) behavior attached to the same-name event. 
 
 

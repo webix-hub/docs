@@ -12,8 +12,9 @@ minDate
 @template:	api_config
 @descr:
 
-Date lesser than defined one can't be selected  
-Value can be string or Date object
+Dates less than defined one can't be selected. 
+
+Value can be either a **string** formatted with the current [parseFormat](api/i18n_parseformat_other.md) or **Date** object.
 
 @relatedsample:
 	09_calendar/08_disabled_dates.html

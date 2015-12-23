@@ -52,7 +52,9 @@ The component serves as the base class that defines properties, methods, and eve
 {{api
 - api/ui.view_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.view_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/ui.view_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.view_ondestruct_event.md - occurs when component destroyed
+- api/ui.view_onfocus_event.md - fires when a view gets focus
 - api/ui.view_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/ui.view_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/ui.view_onswipex_event.md - occurs on a horizontal swipe movement

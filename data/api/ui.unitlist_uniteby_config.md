@@ -13,7 +13,7 @@ webix.ui({
       uniteBy:function(obj){
              return obj.name.substr(0,1);
       }
-})
+});
 
 @template:	api_config
 @descr:

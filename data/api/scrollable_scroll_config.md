@@ -4,16 +4,17 @@ scroll
 
 @short:
 	enables/disables the scroll bar
+    
+@values:
+- y (true)	 enables vertical scroll (the default value) 
+- x	enables horizontal scroll
+- xy	enables both scrolls
+- false	 disables both scrolls
 
 @type: boolean,string
 
 @descr:
-Possible values are as follows: 
 
-- 'y' (or true) - enables vertical scroll (the default value) 
-- 'x' - enables horizontal scroll
-- 'xy' - enables both scrolls
-- false - disables both scrolls
 
 @example:
 

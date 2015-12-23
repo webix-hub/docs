@@ -1,0 +1,180 @@
+Properties
+==========
+
+{{api
+- api/link/ui.excelviewer_animate_config.md - defines or disables view change animation.
+- api/link/ui.excelviewer_autoconfig_config.md - datatable adjust configuration to the data
+- api/link/ui.excelviewer_autoheight_config.md - adjusts DataTable to the parent container size vertically
+- api/link/ui.excelviewer_autowidth_config.md - adjusts DataTable to the parent container size horizontally
+- api/link/ui.excelviewer_blockselect_config.md - enables/disables block selection
+- api/link/ui.excelviewer_borderless_config.md - used to hide the component borders
+- api/link/ui.excelviewer_checkboxrefresh_config.md - controls behavior of checkbox editors in grid
+- api/link/ui.excelviewer_clipboard_config.md - enables/disables clipboard support
+- api/link/ui.excelviewer_columnwidth_config.md - defines the default width for columns (in pixels)
+- api/link/ui.excelviewer_columns_config.md - configures columns of the table
+- api/link/ui.excelviewer_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.excelviewer_css_config.md - the name of a css class that will be applied to the view container
+- api/link/ui.excelviewer_data_config.md - JavaScript array containing data for the component
+- api/link/ui.excelviewer_datafeed_config.md - the URL that the component will use to reload data during binding
+- api/link/ui.excelviewer_datafetch_config.md - defines the number of records that will be loaded into datatable during the next dynamic loading call
+- api/link/ui.excelviewer_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
+- api/link/ui.excelviewer_datatype_config.md - the type of loaded data
+- api/link/ui.excelviewer_delimiter_config.md - sets CSV delimiters for clipboard operations
+- api/link/ui.excelviewer_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.excelviewer_drag_config.md - enables or disables drag-and-drop
+- api/link/ui.excelviewer_dragcolumn_config.md - enables drag-and-drop support for columns
+- api/link/ui.excelviewer_dragscroll_config.md - enables autoscroll of component during drag-n-drop
+- api/link/ui.excelviewer_editmath_config.md - enables formular editing
+- api/link/ui.excelviewer_editvalue_config.md - defines which data item is editable (in case of several data item in the cell/line)
+- api/link/ui.excelviewer_editable_config.md - allows/denies editing in the view
+- api/link/ui.excelviewer_editaction_config.md - defines the action on which editors will be opened
+- api/ui.excelviewer_excelheader_config.md - 
+- api/link/ui.excelviewer_externaldata_config.md - allows defining custom 'move' logic for the component.
+- api/link/ui.excelviewer_filtermode_config.md - defines filtering rules in tree-like components
+- api/link/ui.excelviewer_fixedrowheight_config.md - defines whether the height should be fixed for all rows or can vary
+- api/link/ui.excelviewer_footer_config.md - enables/disables the footer in DataTable (disabled, by default)
+- api/link/ui.excelviewer_form_config.md - linked form
+- api/link/ui.excelviewer_gravity_config.md - sets the view gravity (1 by default)
+- api/link/ui.excelviewer_header_config.md - enables/disables the header in DataTable (enabled, by default)
+- api/link/ui.excelviewer_headerrowheight_config.md - sets the heigth of the header row
+- api/link/ui.excelviewer_headermenu_config.md - adds a headermenu to control column visibility
+- api/link/ui.excelviewer_height_config.md - sets the height of the component
+- api/link/ui.excelviewer_hidden_config.md - defines whether the view will be hidden initially
+- api/link/ui.excelviewer_hover_config.md - css class for a row-hover in the datatable
+- api/link/ui.excelviewer_id_config.md - the component ID
+- api/link/ui.excelviewer_leftsplit_config.md - the number of the fixed columns from the left side of the table (actual for the <a href="datatable/frozen_columns.md">split mode</a> )
+- api/link/ui.excelviewer_livevalidation_config.md - validation during cell editing
+- api/link/ui.excelviewer_loadahead_config.md - sets the number of items that will be loaded on each scroll movement relative to the last item in the scrolling direction
+- api/link/ui.excelviewer_map_config.md - defines data mapping
+- api/link/ui.excelviewer_math_config.md - enables math formulas in DataTable
+- api/link/ui.excelviewer_maxheight_config.md - sets the maximum height for the view
+- api/link/ui.excelviewer_maxwidth_config.md - sets the maximum width for the view
+- api/link/ui.excelviewer_mincolumnheight_config.md - sets the minimum height for a row
+- api/link/ui.excelviewer_mincolumnwidth_config.md - sets the minimum width for a column
+- api/link/ui.excelviewer_minheight_config.md - sets the minimal height for the view
+- api/link/ui.excelviewer_minwidth_config.md - sets the minimal width for the view
+- api/link/ui.excelviewer_mouseeventdelay_config.md - the delay between a real mouse action and invoking the related events
+- api/link/ui.excelviewer_multiselect_config.md - enables the multi selection mode
+- api/link/ui.excelviewer_navigation_config.md - activates the selection keyboard navigation
+- api/link/ui.excelviewer_on_config.md - allows attaching custom handlers to inner events of the component
+- api/link/ui.excelviewer_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
+- api/link/ui.excelviewer_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
+- api/link/ui.excelviewer_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.excelviewer_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
+- api/link/ui.excelviewer_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
+- api/link/ui.excelviewer_prerender_config.md - invokes the full rendering of DataTable data
+- api/link/ui.excelviewer_ready_config.md - event handler called just after the component has been completely initialized
+- api/link/ui.excelviewer_removemissed_config.md - defines how to treat items in case of reloading
+- api/link/ui.excelviewer_resizecolumn_config.md - enables/disables horizontal resizing of columns
+- api/link/ui.excelviewer_resizerow_config.md - enables/disables vertical resizing of rows
+- api/link/ui.excelviewer_rightsplit_config.md - sets the number of the fixed columns from the right side of the table (actual for the <a href="datatable/frozen_columns.md">split mode</a> )
+- api/link/ui.excelviewer_rowheight_config.md - sets the default height for rows
+- api/link/ui.excelviewer_rowlineheight_config.md - default line height for grid's row
+- api/link/ui.excelviewer_rules_config.md - set of validation rules for the component
+- api/link/ui.excelviewer_save_config.md - defines URLs for data saving
+- api/link/ui.excelviewer_scheme_config.md - defines schemes for data processing
+- api/link/ui.excelviewer_scroll_config.md - enables or disables scroll for the datatable
+- api/link/ui.excelviewer_scrollaligny_config.md - enables/disables scrolling the table just by whole rows (i.e. you won't be allowed to scroll along the full length of rows)
+- api/link/ui.excelviewer_scrollx_config.md - enables/disables horizontal scrolling
+- api/link/ui.excelviewer_scrolly_config.md - enables/disables vertical scrolling
+- api/link/ui.excelviewer_select_config.md - sets the selection mode in DataTable
+- api/link/ui.excelviewer_spans_config.md - array of span configurations for the datatable
+- api/link/ui.excelviewer_subrowheight_config.md - automatically adjusts the subrow's height to the size of the text
+- api/link/ui.excelviewer_subrow_config.md - sets a subrow template
+- api/link/ui.excelviewer_subview_config.md - adds a subview configuration into datatable
+- api/ui.excelviewer_toolbar_config.md - 
+- api/link/ui.excelviewer_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.excelviewer_type_config.md - used for configuring presentation of items
+- api/link/ui.excelviewer_url_config.md - the URL which the component will use to load data after its initialization
+- api/link/ui.excelviewer_width_config.md - sets the width of the component
+- api/link/ui.excelviewer_ycount_config.md - defines height of datatable in rows
+}}
+
+@index:
+- api/link/ui.excelviewer_animate_config.md
+- api/link/ui.excelviewer_autoconfig_config.md
+- api/link/ui.excelviewer_autoheight_config.md
+- api/link/ui.excelviewer_autowidth_config.md
+- api/link/ui.excelviewer_blockselect_config.md
+- api/link/ui.excelviewer_borderless_config.md
+- api/link/ui.excelviewer_checkboxrefresh_config.md
+- api/link/ui.excelviewer_clipboard_config.md
+- api/link/ui.excelviewer_columnwidth_config.md
+- api/link/ui.excelviewer_columns_config.md
+- api/link/ui.excelviewer_container_config.md
+- api/link/ui.excelviewer_css_config.md
+- api/link/ui.excelviewer_data_config.md
+- api/link/ui.excelviewer_datafeed_config.md
+- api/link/ui.excelviewer_datafetch_config.md
+- api/link/ui.excelviewer_datathrottle_config.md
+- api/link/ui.excelviewer_datatype_config.md
+- api/link/ui.excelviewer_delimiter_config.md
+- api/link/ui.excelviewer_disabled_config.md
+- api/link/ui.excelviewer_drag_config.md
+- api/link/ui.excelviewer_dragcolumn_config.md
+- api/link/ui.excelviewer_dragscroll_config.md
+- api/link/ui.excelviewer_editmath_config.md
+- api/link/ui.excelviewer_editvalue_config.md
+- api/link/ui.excelviewer_editable_config.md
+- api/link/ui.excelviewer_editaction_config.md
+- api/ui.excelviewer_excelheader_config.md
+- api/link/ui.excelviewer_externaldata_config.md
+- api/link/ui.excelviewer_filtermode_config.md
+- api/link/ui.excelviewer_fixedrowheight_config.md
+- api/link/ui.excelviewer_footer_config.md
+- api/link/ui.excelviewer_form_config.md
+- api/link/ui.excelviewer_gravity_config.md
+- api/link/ui.excelviewer_header_config.md
+- api/link/ui.excelviewer_headerrowheight_config.md
+- api/link/ui.excelviewer_headermenu_config.md
+- api/link/ui.excelviewer_height_config.md
+- api/link/ui.excelviewer_hidden_config.md
+- api/link/ui.excelviewer_hover_config.md
+- api/link/ui.excelviewer_id_config.md
+- api/link/ui.excelviewer_leftsplit_config.md
+- api/link/ui.excelviewer_livevalidation_config.md
+- api/link/ui.excelviewer_loadahead_config.md
+- api/link/ui.excelviewer_map_config.md
+- api/link/ui.excelviewer_math_config.md
+- api/link/ui.excelviewer_maxheight_config.md
+- api/link/ui.excelviewer_maxwidth_config.md
+- api/link/ui.excelviewer_mincolumnheight_config.md
+- api/link/ui.excelviewer_mincolumnwidth_config.md
+- api/link/ui.excelviewer_minheight_config.md
+- api/link/ui.excelviewer_minwidth_config.md
+- api/link/ui.excelviewer_mouseeventdelay_config.md
+- api/link/ui.excelviewer_multiselect_config.md
+- api/link/ui.excelviewer_navigation_config.md
+- api/link/ui.excelviewer_on_config.md
+- api/link/ui.excelviewer_onclick_config.md
+- api/link/ui.excelviewer_oncontext_config.md
+- api/link/ui.excelviewer_ondblclick_config.md
+- api/link/ui.excelviewer_onmousemove_config.md
+- api/link/ui.excelviewer_pager_config.md
+- api/link/ui.excelviewer_prerender_config.md
+- api/link/ui.excelviewer_ready_config.md
+- api/link/ui.excelviewer_removemissed_config.md
+- api/link/ui.excelviewer_resizecolumn_config.md
+- api/link/ui.excelviewer_resizerow_config.md
+- api/link/ui.excelviewer_rightsplit_config.md
+- api/link/ui.excelviewer_rowheight_config.md
+- api/link/ui.excelviewer_rowlineheight_config.md
+- api/link/ui.excelviewer_rules_config.md
+- api/link/ui.excelviewer_save_config.md
+- api/link/ui.excelviewer_scheme_config.md
+- api/link/ui.excelviewer_scroll_config.md
+- api/link/ui.excelviewer_scrollaligny_config.md
+- api/link/ui.excelviewer_scrollx_config.md
+- api/link/ui.excelviewer_scrolly_config.md
+- api/link/ui.excelviewer_select_config.md
+- api/link/ui.excelviewer_spans_config.md
+- api/link/ui.excelviewer_subrowheight_config.md
+- api/link/ui.excelviewer_subrow_config.md
+- api/link/ui.excelviewer_subview_config.md
+- api/ui.excelviewer_toolbar_config.md
+- api/link/ui.excelviewer_tooltip_config.md
+- api/link/ui.excelviewer_type_config.md
+- api/link/ui.excelviewer_url_config.md
+- api/link/ui.excelviewer_width_config.md
+- api/link/ui.excelviewer_ycount_config.md
+

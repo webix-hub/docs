@@ -9,21 +9,25 @@ The component serves as the base class that defines properties, methods, and eve
 ### Constructor
 
 ~~~js
-	var list = webix.ui({
-		view:"list", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_list({
-		...config options goes here..
-	});
+var list = webix.ui({
+  view:"list",
+  width:250,
+  height:200,
+  template:"#title#",
+  select:true,
+  data:[
+    { id:1, title:"Item 1"},
+    { id:2, title:"Item 2"},
+    { id:3, title:"Item 3"}
+  ]
+});
 ~~~
 
 ### Where to start
 
-- [Overview of List Widget](desktop/list.md)
+- [Overview of the List Widget](desktop/list.md)
 - [Samples](http://docs.webix.com/samples/05_list/index.html)
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/selectionmodel.md">SelectionModel</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/ui.proto.md">ui.proto</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/copypaste.md">CopyPaste</a></div>
 
@@ -51,6 +55,7 @@ The component serves as the base class that defines properties, methods, and eve
 - api/link/ui.list_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.list_exists.md - checks whether an item with the specified id exists
 - api/link/ui.list_filter.md - filters the component
+- api/link/ui.list_find.md - returns rows that match the criterion
 - api/link/ui.list_getchildviews.md - returns child views of the calling component
 - api/link/ui.list_getfirstid.md - returns the ID of the first item
 - api/link/ui.list_getformview.md - returns master form for the input
@@ -118,7 +123,7 @@ The component serves as the base class that defines properties, methods, and eve
 - api/link/ui.list_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.list_onafterdelete_event.md - fires after item deleting
 - api/link/ui.list_onafterdrop_event.md - fires after drag-n-drop was finished
-- api/link/ui.list_onafterload_event.md - fires after server side loading is complete
+- api/link/ui.list_onafterload_event.md - fires after data loading is complete
 - api/link/ui.list_onafterrender_event.md - occurs immediately after the component has been rendered
 - api/link/ui.list_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.list_onafterselect_event.md - fires after item was selected
@@ -135,10 +140,12 @@ The component serves as the base class that defines properties, methods, and eve
 - api/link/ui.list_onbeforeselect_event.md - fires before item selection is started
 - api/link/ui.list_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.list_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.list_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.list_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.list_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.list_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.list_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
+- api/link/ui.list_onfocus_event.md - fires when a view gets focus
 - api/link/ui.list_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.list_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.list_onitemrender_event.md - for each item rendering, occurs only for items with custom templates
@@ -211,7 +218,7 @@ The component serves as the base class that defines properties, methods, and eve
 - api/link/ui.list_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
 - api/link/ui.list_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.list_type_config.md - object that specifies items presentation
-- api/link/ui.list_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.list_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.list_width_config.md - sets the width of the component
 - api/ui.list_xcount_config.md - defines width of view in items
 - api/ui.list_ycount_config.md - defines height of view in items

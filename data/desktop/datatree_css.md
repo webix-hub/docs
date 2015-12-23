@@ -1,7 +1,5 @@
-Tree
+Tree CSS 
 =============
-
-###CSS Image Map
 
 <img src="image_maps/datatree_css.png"/>
 

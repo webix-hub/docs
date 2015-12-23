@@ -5,7 +5,7 @@ body
 @short:
 	defines the cell content (a view or some HTML)
 
-@type: string,WebixView
+@type: string,object
 @example:
 webix.ui({ 
 	view:"accordion",

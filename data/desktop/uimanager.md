@@ -51,15 +51,15 @@ Every Webix component features a pair of focusing events **onFocus** and **onBlu
 
 ~~~js
 $$("datatable1").attachEvent("onFocus", function(current_view, prev_view){
-	//current_view if the datatable in question
+	//current_view is the datatable in question
 });
 
 $$("datatable1").attachEvent("onBlur", function(prev_view){
-	//prev_view if the datatable in question
+	//prev_view is the datatable in question
 });
 ~~~
 
-In addition, Webix **onFocusChange** [global event](desktop/event_handling.md#globalwebixevents)) is triggered each time focus is shifted from one component to another. The following code retrieves the ID of the view that is 
+In addition, Webix **onFocusChange** ([global event](desktop/event_handling.md#globalwebixevents)) is triggered each time focus is shifted from one component to another. The following code retrieves the ID of the view that is 
 in focus now and puts in into the console log. 
 
 
@@ -79,7 +79,7 @@ webix.attachEvent("onFocusChange", function(current_view, prev_view) {
 
 1) 'Esc' key closes a non-modal [window](desktop/window.md) when it is focused. 
 
-2) 'Esc', 'space' and 'enter' keys are enabled by default for [modal message boxes](desktop/message_boxes.html#modalwindowsandkeyboardinteraction).
+2) 'Esc', 'space' and 'enter' keys are enabled by default for [modal message boxes](desktop/message_boxes.md#modalwindowsandkeyboardinteraction).
 
 3) [Editors](desktop/editing.md) of data component items react on the following keys: 
 

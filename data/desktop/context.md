@@ -16,12 +16,12 @@ Ui-related context points to an element that will be shown on the page on right 
 
 ~~~js
 webix.ui({
-		view:"context",
-        width: 300,
-		body:{ ....},
-        padding:20,
-		master:"areaA"
-			});
+	view:"context",
+	width: 300,
+	body:{ ... },
+	padding:20,
+	master:"areaA"
+});
 ~~~
 {{editor http://webix.com/snippet/406a47a3	Context Menu: UI Components Inside }}
 
@@ -29,10 +29,10 @@ webix.ui({
 
 - **master** - the ID of an HTML container that will be shown on page loading. It is the area where the right mouse click will make context elements visible. This element is included into the *body* property;
 - **body** - an element (ui component) that appears on right mouse click;
-- **width** - width of UI component that apears on right mouse click;
+- **width** - width of UI component that appears on right mouse click;
 - **padding** - offset from context border and its inner contents.
 
-Context features **hidden** property set to *true* by default. It can be changed during component init, but this won't make much sets since context purpose is to be hidden and appear only on right click. 
+Context features **hidden** property set to *true* by default. It can be changed during component initialization, but this won't make much sets since context purpose is to be hidden and appear only on right click. 
 
 ##Working with Context
 
@@ -46,8 +46,8 @@ What can be a context element?
 webix.ui({
 	view:"context",
 	body:{view: "toolbar", cols:[
-			{view:"button", value:"Button1", width: 100},
-			{view:"button", value:"Button2", width: 100}]
+		{view:"button", value:"Button1", width: 100},
+		{view:"button", value:"Button2", width: 100}]
 	}, 
 	width: 300, 
 	master:"context_area"
@@ -55,12 +55,12 @@ webix.ui({
 ~~~
 {{editor http://webix.com/snippet/406a47a3	Context Menu: UI Components Inside }}
 
-- **Any HTML element** referred to by the ID of the div containter it is placed in. 
+- **Any HTML element** referred to by its ID:
 
 <img src="desktop/context_div.png"/>
 
 
-The container is specified in the body constructor as value of **content** property. 
+The ID is specified in the body constructor as value of **content** property. 
 
 ~~~js
 body:{ 

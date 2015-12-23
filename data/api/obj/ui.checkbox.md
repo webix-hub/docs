@@ -6,13 +6,15 @@ The control allows users to make multiple choices from a number of options. Full
 ### Constructor
 
 ~~~js
-	var checkbox = webix.ui({
-		view:"checkbox", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_checkbox({
-		...config options goes here..
-	});
+var checkbox = webix.ui({
+	view:"checkbox", 
+	id:"field_a", 
+	label:"Second age", 
+	value:1
+});
 ~~~
+
+### Where to start
+
+- [Overview of the Checkbox Control](desktop/checkbox.md)
+- [Samples](http://docs.webix.com/samples/13_form/01_controls/06_checkbox.html)

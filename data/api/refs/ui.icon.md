@@ -9,16 +9,18 @@ The component provides a collection of popular icons and API for their handling.
 ### Constructor
 
 ~~~js
-	var icon = webix.ui({
-		view:"icon", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_icon({
-		...config options goes here..
-	});
+var icon = webix.ui({
+   view:"icon",
+   icon: "envelope", 
+   align:"left" 
+});
 ~~~
+
+
+### Where to start
+
+- [Overview of the Icon Control](desktop/icon.md)
+- [Samples](http://docs.webix.com/samples/16_skins/03_icons.html)
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
@@ -70,8 +72,10 @@ The component provides a collection of popular icons and API for their handling.
 - api/link/ui.icon_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.icon_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.icon_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.icon_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.icon_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.icon_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.icon_onfocus_event.md - fires when a view gets focus
 - api/link/ui.icon_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.icon_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.icon_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
@@ -93,30 +97,25 @@ The component provides a collection of popular icons and API for their handling.
 - api/link/ui.icon_borderless_config.md - used to hide the component borders
 - api/link/ui.icon_click_config.md - click action handler
 - api/link/ui.icon_container_config.md - an html container (or its id) where the component needs initializing
-- api/link/ui.icon_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.icon_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.icon_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.icon_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.icon_height_config.md - sets the height of the component
 - api/link/ui.icon_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.icon_hotkey_config.md - sets a hotkey that triggers button clicking
+- api/ui.icon_icon_config.md - the component's icon
 - api/link/ui.icon_id_config.md - the component ID
 - api/link/ui.icon_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.icon_inputwidth_config.md - the width of the input area, or a button's text value area.
-- api/link/ui.icon_label_config.md - the text label of the control
-- api/link/ui.icon_labelposition_config.md - positions label above the control
 - api/link/ui.icon_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.icon_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.icon_minheight_config.md - sets the minimal height for the view
 - api/link/ui.icon_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.icon_name_config.md - name of the control
 - api/link/ui.icon_on_config.md - allows attaching custom handlers to inner events of the component
-- api/link/ui.icon_placeholder_config.md - placeholder text for the input area
 - api/link/ui.icon_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.icon_tabfocus_config.md - defines whether the control will be included in the tab navigation order
-- api/link/ui.icon_template_config.md - the component template
 - api/link/ui.icon_tooltip_config.md - tooltip for the input
-- api/link/ui.icon_type_config.md - the type of the control
 - api/link/ui.icon_value_config.md - sets the initial value for a control
 - api/link/ui.icon_width_config.md - sets the width of the component
 }}

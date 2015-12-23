@@ -9,16 +9,26 @@ Items of the component combines an icon with the text label. The component can b
 ### Constructor
 
 ~~~js
-	var tabbar = webix.ui({
-		view:"tabbar", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_tabbar({
-		...config options goes here..
-	});
+webix.ui({ 
+	rows:[
+    	{view:"tabbar", id:'tabbar', value:'formView', multiview:true, options: [
+      		{ value: 'Form', id: 'formView'},
+      		{ value: 'Empty', id: 'emptyView'}
+    	]},
+    	{
+		  cells:[
+      		 {id:"formView",template:"Form Content"},
+        	 {id:"emptyView", template:"Some content"}
+      	]}
+    ]
+});
 ~~~
+
+### Where to start
+
+- [Overview of the Tabbar Control](desktop/tabbar.md)
+- [Samples](http://docs.webix.com/samples/02_toolbar/02_tabbar.html)
+
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.segmented.md">ui.segmented</a>, <a href="api/refs/ui.text.md">ui.text</a>, <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
@@ -78,8 +88,10 @@ Items of the component combines an icon with the text label. The component can b
 - api/link/ui.tabbar_onbeforetabclick_event.md - fires before a segment is clicked
 - api/ui.tabbar_onbeforetabclose_event.md - fires before the tab is closed
 - api/link/ui.tabbar_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.tabbar_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.tabbar_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.tabbar_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.tabbar_onfocus_event.md - fires when a view gets focus
 - api/link/ui.tabbar_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.tabbar_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.tabbar_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
@@ -106,7 +118,6 @@ Items of the component combines an icon with the text label. The component can b
 - api/link/ui.tabbar_bottompadding_config.md - sets the bottom offset of the control input
 - api/link/ui.tabbar_click_config.md - click action handler
 - api/link/ui.tabbar_container_config.md - an html container (or its id) where the component needs initializing
-- api/link/ui.tabbar_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.tabbar_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.tabbar_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.tabbar_gravity_config.md - sets the view gravity (1 by default)
@@ -119,7 +130,7 @@ Items of the component combines an icon with the text label. The component can b
 - api/link/ui.tabbar_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.tabbar_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.tabbar_label_config.md - the text label of the control
-- api/link/ui.tabbar_labelposition_config.md - positions label above the control
+- api/link/ui.tabbar_labelposition_config.md - positions label in relation the control
 - api/link/ui.tabbar_labelwidth_config.md - the width of the label
 - api/link/ui.tabbar_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.tabbar_maxwidth_config.md - sets the maximum width for the view
@@ -129,6 +140,7 @@ Items of the component combines an icon with the text label. The component can b
 - api/link/ui.tabbar_multiview_config.md - enables switching between multiview cells
 - api/link/ui.tabbar_name_config.md - name of the control
 - api/link/ui.tabbar_on_config.md - allows attaching custom handlers to inner events of the component
+- api/link/ui.tabbar_optionwidth_config.md - sets the width of each view's option
 - api/link/ui.tabbar_options_config.md - defines data items of the drop-down list
 - api/link/ui.tabbar_placeholder_config.md - placeholder text for the input area
 - api/link/ui.tabbar_popup_config.md - allows to attach pop-up menu to the button
@@ -145,7 +157,6 @@ Items of the component combines an icon with the text label. The component can b
 - api/ui.tabbar_tabmorewidth_config.md - width of "more" button in tabbar
 - api/ui.tabbar_taboffset_config.md - left padding of first tab
 - api/ui.tabbar_tabbarpopup_config.md - custom popup for responsive tabbar
-- api/link/ui.tabbar_template_config.md - the component template
 - api/link/ui.tabbar_tooltip_config.md - tooltip for the input
 - api/ui.tabbar_topoffset_config.md - top offset of tabbar
 - api/link/ui.tabbar_type_config.md - the type of the control

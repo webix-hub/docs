@@ -90,6 +90,8 @@ If there're several data items that comply to the unit value criterion, they are
 - [Data Filtering and Sorting](desktop/filter_sort.md)
 - [Selection](desktop/selection.md)
 - [Paging](desktop/paging.md)
+- desktop/export_png.md
+- desktop/data_components_export.md
 
 {{note
 Note that there's no built-in possibility to edit data with unitlist. You should create a prototype **editlist** object beforehand.

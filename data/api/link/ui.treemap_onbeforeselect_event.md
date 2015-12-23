@@ -1,0 +1,1 @@
+@link: api/selectionmodel_onbeforeselect_event.md

@@ -1,0 +1,1 @@
+@link: api/ui.window_head_config.md

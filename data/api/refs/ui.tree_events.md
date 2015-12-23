@@ -7,7 +7,7 @@ Events
 - api/link/ui.tree_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.tree_onafterdelete_event.md - fires after item deleting
 - api/link/ui.tree_onafterdrop_event.md - fires after drag-n-drop was finished
-- api/link/ui.tree_onafterload_event.md - fires after server side loading is complete
+- api/link/ui.tree_onafterload_event.md - fires after data loading is complete
 - api/link/ui.tree_onafteropen_event.md - fires after the branch has been opened
 - api/link/ui.tree_onafterrender_event.md - occurs immediately after the component has been rendered
 - api/link/ui.tree_onafterscroll_event.md - occurs when some webix view has been scrolled
@@ -27,10 +27,12 @@ Events
 - api/link/ui.tree_onbeforeselect_event.md - fires before item selection is started
 - api/link/ui.tree_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.tree_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.tree_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.tree_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.tree_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.tree_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.tree_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
+- api/link/ui.tree_onfocus_event.md - fires when a view gets focus
 - api/link/ui.tree_onitemcheck_event.md - fires when you check an item in tree and treetable
 - api/link/ui.tree_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.tree_onitemdblclick_event.md - fires when a component item was double-clicked
@@ -81,10 +83,12 @@ Events
 - api/link/ui.tree_onbeforeselect_event.md
 - api/link/ui.tree_onbeforesort_event.md
 - api/link/ui.tree_onbindrequest_event.md
+- api/link/ui.tree_onblur_event.md
 - api/link/ui.tree_ondatarequest_event.md
 - api/link/ui.tree_ondataupdate_event.md
 - api/link/ui.tree_ondestruct_event.md
 - api/link/ui.tree_ondragout_event.md
+- api/link/ui.tree_onfocus_event.md
 - api/link/ui.tree_onitemcheck_event.md
 - api/link/ui.tree_onitemclick_event.md
 - api/link/ui.tree_onitemdblclick_event.md

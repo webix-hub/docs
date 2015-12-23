@@ -27,7 +27,7 @@ Content property may either point the **ID** of **DIV container** where the form
 {{snippet
 HTMLform, content
 }}
-~~~js
+~~~html
 <div id="areaA">
 		<input type="text" name="title" value="" placeholder="Book title" /><br/>
 		<input type="text" name="author" value="" placeholder="Author" /><br/>
@@ -167,7 +167,7 @@ webix.ajax().post("some.php", form.getValues());
 webix.ajax().post("some.php", form.getValues(), function(text, data, xhr){ });
 ~~~
 
-2 . Using [webix.send](api/_send.html) method that emulates HTML form submitting: 
+2 . Using [webix.send](api/_send.md) method that emulates HTML form submitting: 
 
 ~~~js
 webix.send("come.php", form.getValues());

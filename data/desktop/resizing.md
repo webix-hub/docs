@@ -1,4 +1,4 @@
-Resizing
+Resizing Components
 ==============
 
 The component can be resized in two ways: 
@@ -95,7 +95,7 @@ grid.adjust();
 
 Component can be as well adjusted to the [dynamically-sized container](desktop/dimensions.md#dyn). 
 
-##Resizing Several Component at a Time
+##Resizing Several Components at a Time
 
 If you need to resize several components lying inside one and the same parent component (like [dataviews](desktop/dataview.md), [lists](desktop/list.md), [datatables](datatable/index.md) inside one and the same 
 [layout](desktop/layout.md) with its own ID, you can redefine their dimensions, call the **resize()** function from the parent and pass the *true* parameter to it. 

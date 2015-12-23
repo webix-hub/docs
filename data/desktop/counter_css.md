@@ -1,7 +1,7 @@
-Counter
+Counter CSS 
 =============
 
-###CSS Image Map
+
 
 <img src="image_maps/counter_css.png">
 

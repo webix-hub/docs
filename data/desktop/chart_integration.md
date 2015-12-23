@@ -16,7 +16,7 @@ Note that third-party scripts are included to documentation samples in another w
 
 D3 charts helps manipulate documents based on data and offers powerful visualization tools and a data-driven approach to DOM manipulation. 
 
-One of its implementations, **Bubble chart**, displays data in the area of circles that pack hundreds of values into a small space. It looks like a bundle of multicolored baloons. 
+One of its implementations, **Bubble chart**, displays data in the area of circles that pack hundreds of values into a small space. It looks like a bundle of multicolored balloons. 
 
 <img src="desktop/bubble_chart.png"/>
 
@@ -63,7 +63,7 @@ Firstly, you should include JustGage JS file from the package into your document
 <!-- Raphael JS will be autoloaded -->
 ~~~
 
-And then init the view:
+And then initialize the view:
 
 ~~~js
 //path from which extra libraries are autoloaded
@@ -83,7 +83,7 @@ webix.ui({
 
 ##Raphael Charts
 
-Raphael JS lib offers a number of viasualization tools that help working with with vector graphics on the web.
+Raphael JS lib offers a number of visualization tools that help working with with vector graphics on the web.
 
 For instance, its dot chart encodes data in the area of circles placed on the coordinate system. 
 
@@ -131,7 +131,7 @@ Firstly, you should include Sigma JS files from the package into your document i
 <script type="text/javascript" src="./sigma.js"></script>
 ~~~
 
-And then init the view:
+And then initialize the view:
 
 ~~~js
 //path from which extra libraries are autoloaded

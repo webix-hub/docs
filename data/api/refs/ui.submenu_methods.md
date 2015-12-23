@@ -25,6 +25,7 @@ Methods
 - api/link/ui.submenu_enableitem.md - enables menu item
 - api/link/ui.submenu_exists.md - checks whether an item with the specified id exists
 - api/link/ui.submenu_filter.md - filters the component
+- api/link/ui.submenu_find.md - returns rows that match the criterion
 - api/link/ui.submenu_getbody.md - gets the ui view of the window body
 - api/link/ui.submenu_getchildviews.md - returns child views of the calling component
 - api/link/ui.submenu_getfirstid.md - returns the ID of the first item
@@ -82,6 +83,7 @@ Methods
 - api/link/ui.submenu_setposition.md - sets window's position
 - api/link/ui.submenu_show.md - makes the component visible
 - api/link/ui.submenu_showitem.md - scrolls the component to make the specified item visible
+- api/link/ui.submenu_sizetocontent.md - adjusts the size of menu and its submenus to their content
 - api/link/ui.submenu_sort.md - sorts datastore
 - api/link/ui.submenu_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.submenu_unbind.md - breaks "bind" link
@@ -116,6 +118,7 @@ Methods
 - api/link/ui.submenu_enableitem.md
 - api/link/ui.submenu_exists.md
 - api/link/ui.submenu_filter.md
+- api/link/ui.submenu_find.md
 - api/link/ui.submenu_getbody.md
 - api/link/ui.submenu_getchildviews.md
 - api/link/ui.submenu_getfirstid.md
@@ -173,6 +176,7 @@ Methods
 - api/link/ui.submenu_setposition.md
 - api/link/ui.submenu_show.md
 - api/link/ui.submenu_showitem.md
+- api/link/ui.submenu_sizetocontent.md
 - api/link/ui.submenu_sort.md
 - api/link/ui.submenu_sync.md
 - api/link/ui.submenu_unbind.md

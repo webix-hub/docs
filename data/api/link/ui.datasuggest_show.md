@@ -1,1 +1,1 @@
-@link: api/ui.baseview_show.md
+@link: api/link/ui.window_show.md

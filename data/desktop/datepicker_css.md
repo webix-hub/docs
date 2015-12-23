@@ -1,7 +1,6 @@
-Datepicker
+Datepicker CSS 
 =============
 
-###CSS Image Map
 
 <img src="image_maps/datepicker_css.png"/>
 

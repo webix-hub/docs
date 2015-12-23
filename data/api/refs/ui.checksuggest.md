@@ -65,7 +65,9 @@ Is used by a [multiselect](api/refs/ui.multiselect.md) control already.
 - api/link/ui.checksuggest_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.checksuggest_onbeforeshow_event.md - fires right after show() method is called for the window (popup) and before the window is shown
 - api/link/ui.checksuggest_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.checksuggest_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.checksuggest_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.checksuggest_onfocus_event.md - fires when a view gets focus
 - api/link/ui.checksuggest_onhide_event.md - fires when window is hidden
 - api/link/ui.checksuggest_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.checksuggest_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
@@ -118,9 +120,11 @@ Is used by a [multiselect](api/refs/ui.multiselect.md) control already.
 - api/link/ui.checksuggest_padding_config.md - sets paddings of the chart content
 - api/link/ui.checksuggest_position_config.md - sets position of the window relative to the the screen
 - api/link/ui.checksuggest_relative_config.md - positions a popup window relative to the component it's connected with
+- api/link/ui.checksuggest_resize_config.md - enables/disables window resizing
 - api/link/ui.checksuggest_separator_config.md - sets a delimiter for multisuggest values
 - api/link/ui.checksuggest_template_config.md - template which will be used to fill parent input from selected record
 - api/link/ui.checksuggest_textvalue_config.md - defines which field from suggest list will be used as text after selecting an option
+- api/link/ui.checksuggest_tofront_config.md - places window above other windows on clicking it
 - api/link/ui.checksuggest_top_config.md - the top offset of a window
 - api/link/ui.checksuggest_type_config.md - defines type of suggest control
 - api/link/ui.checksuggest_value_config.md - sets the initial value for a control

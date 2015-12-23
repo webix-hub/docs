@@ -7,6 +7,23 @@ ui.rangeslider
 Unlike a standard slider, this control allows choosing a particular range of values due to its two handlers. The part of the value line which corresponds to the selected set of values is highlighted in blue color.
 
 Check [rangeslider](desktop/rangeslider.md) documentation for more detailed description.
+
+### Constructor
+
+~~~js
+var rangeslider = webix.ui({
+	view:"rangeslider", 
+  	label:"Level A", 
+  	value:"10,100", 
+  	title: webix.template("#value#")
+});
+~~~
+
+### Where to start
+
+- [Overview of the Range Slider Control](desktop/rangeslider.md)
+- [Samples](http://docs.webix.com/samples/13_form/05_extras/07_rangeslider.html)
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.slider.md">ui.slider</a>, <a href="api/refs/ui.text.md">ui.text</a>, <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
@@ -58,8 +75,10 @@ Check [rangeslider](desktop/rangeslider.md) documentation for more detailed desc
 - api/link/ui.rangeslider_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.rangeslider_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.rangeslider_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.rangeslider_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.rangeslider_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.rangeslider_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.rangeslider_onfocus_event.md - fires when a view gets focus
 - api/link/ui.rangeslider_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.rangeslider_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.rangeslider_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
@@ -85,7 +104,6 @@ Check [rangeslider](desktop/rangeslider.md) documentation for more detailed desc
 - api/link/ui.rangeslider_bottompadding_config.md - sets the bottom offset of the control input
 - api/link/ui.rangeslider_click_config.md - click action handler
 - api/link/ui.rangeslider_container_config.md - an html container (or its id) where the component needs initializing
-- api/link/ui.rangeslider_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.rangeslider_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.rangeslider_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.rangeslider_gravity_config.md - sets the view gravity (1 by default)
@@ -98,7 +116,7 @@ Check [rangeslider](desktop/rangeslider.md) documentation for more detailed desc
 - api/link/ui.rangeslider_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.rangeslider_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.rangeslider_label_config.md - the text label of the control
-- api/link/ui.rangeslider_labelposition_config.md - positions label above the control
+- api/link/ui.rangeslider_labelposition_config.md - positions label in relation the control
 - api/link/ui.rangeslider_labelwidth_config.md - the width of the label
 - api/link/ui.rangeslider_max_config.md - max value of slider
 - api/link/ui.rangeslider_maxheight_config.md - sets the maximum height for the view
@@ -108,9 +126,7 @@ Check [rangeslider](desktop/rangeslider.md) documentation for more detailed desc
 - api/link/ui.rangeslider_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.rangeslider_name_config.md - name of the control
 - api/link/ui.rangeslider_on_config.md - allows attaching custom handlers to inner events of the component
-- api/link/ui.rangeslider_placeholder_config.md - placeholder text for the input area
 - api/link/ui.rangeslider_popup_config.md - allows to attach pop-up menu to the button
-- api/link/ui.rangeslider_readonly_config.md - configures readonly mode for the input
 - api/link/ui.rangeslider_relatedaction_config.md - action to call when value of cell changes
 - api/link/ui.rangeslider_relatedview_config.md - id of view, that will be affected by relatedAction operation
 - api/link/ui.rangeslider_required_config.md - marks field as required
@@ -119,10 +135,8 @@ Check [rangeslider](desktop/rangeslider.md) documentation for more detailed desc
 - api/ui.rangeslider_stringresult_config.md - if the parameter is set to true, the method getValue returns data as string (otherwise, as object)
 - api/link/ui.rangeslider_suggest_config.md - links suggest list to the input
 - api/link/ui.rangeslider_tabfocus_config.md - defines whether the control will be included in the tab navigation order
-- api/link/ui.rangeslider_template_config.md - the component template
 - api/link/ui.rangeslider_title_config.md - text over slider bar
 - api/link/ui.rangeslider_tooltip_config.md - tooltip for the input
-- api/link/ui.rangeslider_type_config.md - the type of the control
 - api/link/ui.rangeslider_validate_config.md - adds validation to the field
 - api/link/ui.rangeslider_validateevent_config.md - on which event validation fires
 - api/link/ui.rangeslider_value_config.md - sets the initial value for a control

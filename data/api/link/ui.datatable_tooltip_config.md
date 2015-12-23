@@ -1,5 +1,5 @@
 @link: api/autotooltip_tooltip_config.md
-
+@type: boolean
 @example:
 
 grid = new webix.ui({

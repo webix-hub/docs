@@ -24,6 +24,7 @@ Methods
 - api/ui.menu_enableitem.md - enables menu item
 - api/link/ui.menu_exists.md - checks whether an item with the specified id exists
 - api/link/ui.menu_filter.md - filters the component
+- api/link/ui.menu_find.md - returns rows that match the criterion
 - api/link/ui.menu_getchildviews.md - returns child views of the calling component
 - api/link/ui.menu_getfirstid.md - returns the ID of the first item
 - api/link/ui.menu_getformview.md - returns master form for the input
@@ -77,6 +78,7 @@ Methods
 - api/link/ui.menu_setpage.md - makes the specified page visible (assuming that the pager was defined )
 - api/link/ui.menu_show.md - makes the component visible
 - api/link/ui.menu_showitem.md - scrolls the component to make the specified item visible
+- api/ui.menu_sizetocontent.md - adjusts the size of menu and its submenus to their content
 - api/link/ui.menu_sort.md - sorts datastore
 - api/link/ui.menu_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.menu_unbind.md - breaks "bind" link
@@ -110,6 +112,7 @@ Methods
 - api/ui.menu_enableitem.md
 - api/link/ui.menu_exists.md
 - api/link/ui.menu_filter.md
+- api/link/ui.menu_find.md
 - api/link/ui.menu_getchildviews.md
 - api/link/ui.menu_getfirstid.md
 - api/link/ui.menu_getformview.md
@@ -163,6 +166,7 @@ Methods
 - api/link/ui.menu_setpage.md
 - api/link/ui.menu_show.md
 - api/link/ui.menu_showitem.md
+- api/ui.menu_sizetocontent.md
 - api/link/ui.menu_sort.md
 - api/link/ui.menu_sync.md
 - api/link/ui.menu_unbind.md

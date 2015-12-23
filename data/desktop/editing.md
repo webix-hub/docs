@@ -1,4 +1,4 @@
-Data editors
+Data Editors
 =============
 
 In this article build-in component [editors](#editors) and [edit actions](#editaction) for them are discussed. To learn about Webix editing pattern, go to the [main article](desktop/edit.md).
@@ -146,7 +146,7 @@ Webix [richselect](desktop/richselect.md) control that is a non-editable variati
 { id:"title", header:"Film title",  editor:"richselect",  options:[...]}
 ~~~
 
-{{sample /15_datatable/04_editing/18_richselect.html}}
+{{sample 15_datatable/04_editing/18_richselect.html}}
 
 - The options can be defined by either a simple or an associative array as well as by url. [Look here for details](#options);
 - The editor is subject to [extensive customization](#advancedconfigurationofselecteditors). 
@@ -265,6 +265,8 @@ configuration for popup editors.
 
 ##Popup Configuration
 
+**Configuring popups in a scope**
+
 You can configure editing controls inside popup windows, e.g. define other dimensions, alter properties of [textarea](desktop/textarea.md), [colorboard](desktop/colorboard.md) and [calendar](desktop/calendar.md) (check the corresponding articles.)
 
 Popup editors can be configured in a scope with the following code. All the same-name editors in the application will be redefined: 
@@ -287,21 +289,29 @@ webix.editors.$popup = {
 };
 ~~~
 
-Any instance of a popup editor can be configured separately, with the help of a **popup** property of an item in question: 
+**Configuring popups separately**
+
+Any instance of a popup editor can be configured separately, with the help of a **suggest** property of an item in question: 
 
 {{snippet
 Adding a weekHeader to the Date editor
 }}
 ~~~js
-{ id:"date",editor:"date", popup:{
-	view:"popup",
-  	body:{
-    	view:"calendar", borderless:true, weekNumber:true
-  	} 
-}
+{ id:"start", editor:"date", suggest:{
+	type:"calendar",
+	body:{
+		weekNumber:true
+	}
+}}
 ~~~
 
-Note that **select editors** (select, richselect, multiselect, combo) offer a wide range of customization possibilities that are described [later](#advancedconfigurationofselecteditors). 
+- **type** (string) - type of a suggest list that defines which **Webix component** will be used in a suggest body. The possible values are: 
+	- *"list"* - default suggest type that is used for select editors (*combo*, *richselect* and *multiselect*), can be omitted;
+    - *"calendar"* - suggest type for *date* editor;
+    - *"colorboard"* - suggest type for *color* editor;
+- **body** (object) -  configuration of a component ([list](desktop/list.md), [calendar](desktop/calendar.md) or [colorboard](desktop/colorboard.md))
+
+**Select editors** offer a wide range of customization possibilities that are described in detail [separately](#advancedconfigurationofselecteditors). 
 
 ##Defining options for select editors {#options}
 

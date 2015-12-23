@@ -56,6 +56,15 @@ function load_form() {
 Gets all the form values including those of hidden and disabled fields. In the snippet below form values are pasted into the console log. 
 
 ~~~js
+webix.ui({
+	view:"form",
+    elements:[
+    	//form fields should have names for getting their values
+    	{view:"text", name:"login"},
+        {view:"text", name:"email"},
+    ]
+})
+
 function get_form() {
 	var values = $$('myform').getValues();
 	console.log(values);

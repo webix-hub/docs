@@ -5,7 +5,7 @@ Version 1.7
 
 ### Breaking changes in API
 
-datatable.locate method returns object with "row" and "column" properties, in previous version result object has "row" and "col" properties respectfully.
+datatable.locate method returns object with "row" and "column" properties, in the previous version result object has "row" and "col" properties respectfully.
 
 }}
 
@@ -15,7 +15,7 @@ Default skin changed to flat ( you still can use the old skin by using skins/air
 Compact skin changed to flat theme as well ( old one renamed to skins/aircompact.css )  
 
 
-### Improvments in API
+### Improvements in API
 - text sorting mode for datatable
 - autoheight property for "property" view
 - ability to edit math formulas in the datatable
@@ -32,7 +32,7 @@ Compact skin changed to flat theme as well ( old one renamed to skins/aircompact
 - keyPressTimeout option for the suggest
 - multiselect="touch" for all data components
 - new compact skin
-- placeholder for richselect and datapicker
+- placeholder for richselect and datepicker
 - touch-multiselect mode
 
 
@@ -41,7 +41,7 @@ Compact skin changed to flat theme as well ( old one renamed to skins/aircompact
 
 - pager styling
 - placeholder for richselect and datepicker
-- folder codebse/imgs to codebase/fonts
+- folder codebase/imgs to codebase/fonts
 - datatable.locate returns different data structure
 - new skin based samples
 - tree and treetable can render hierarchy from db starting from any level
@@ -58,7 +58,7 @@ Compact skin changed to flat theme as well ( old one renamed to skins/aircompact
 - custom checkbox and custom radio clicks in iframes
 - customScroll in datatable and removeView
 - datafeed works only with strings
-- dataprocessor with connector as proxy can send empty request to a server side02:43 PM
+- dataprocessor with connector as proxy can send empty request to a server side
 - drag-n-drop in latest FireFox
 - export of treetable data to pdf and excel
 - filter values lost after column resize

@@ -1,7 +1,5 @@
-Toggle 
+Toggle CSS 
 =============
-
-###CSS Image Map
 
 <img src="image_maps/toggle_css.png">
 

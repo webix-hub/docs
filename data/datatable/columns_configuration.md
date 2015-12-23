@@ -26,7 +26,7 @@ With the help of the [columns](api/ui.datatable_columns_config.md) parameter you
 - [define individual css class for any column](#styling);
 - [hide/show a column](#hidingshowingcolumns);
 - [hide/show columns in groups](#settinghiddenvisiblecolumnsingroups);
-- [add/delete coulmns dynamically](#addingdeletingcolumnsdynamically);
+- [add/delete columns dynamically](#addingdeletingcolumnsdynamically);
 - [group columns](#groupingcolumns);
 - [define colspans and rowspans](#settingcolspansrowspans);
 
@@ -51,7 +51,7 @@ view:"datatable",
 autoconfig:true
 ~~~
 
-In this case *columns* array is no longer needed. Datatable will analyse the dataset passed to it and build columns automatically. The columns will have **default values** (no sorting or filtering, width of 50px, etc.)
+In this case *columns* array is no longer needed. Datatable will analyze the dataset passed to it and build columns automatically. The columns will have **default values** (no sorting or filtering, width of 50px, etc.)
 
 Headers/footers
 ------------------
@@ -105,7 +105,10 @@ For more details, read the [Headers and footers](datatable/headers_footers.md) a
 
 Widths of columns
 ---------------------
-To set widths of columns you should use attribute **width**.
+
+###Setting the width of columns
+
+To set widths of columns you should use the **width** attribute.
 
 {{snippet Setting the width of a column}}
 
@@ -117,6 +120,59 @@ columns:[
 
 {{sample 15_datatable/11_sizing/04_fixed_size.html }}
 
+
+###Adjusting the width of columns to the parent container
+
+To make a column or several columns fill the unused space of the parent container, use the **fillspace** attribute with the *true* value:
+
+~~~js
+columns:[
+   { id:"title", header:"Film title", fillspace:true},
+   ...
+]
+~~~
+
+The column with the "title" value will take all the free space of the container. If there are more than one column with the enabled **fillspace** attribute, 
+they will divide the free space between them.
+
+{{sample 15_datatable/09_columns/02_autosize_column.html}}
+
+###Distributing free space between columns
+
+You can also set the **fillspace** attribute with numeric values for several columns. In this case their width will be calculated as a proportion defined by the values:
+
+~~~js
+columns:[
+	{ id:"id", header:"ID", fillspace:1},
+	{ id:"title", header:"Film title", fillspace:4}
+]
+~~~
+
+In the above code the "title" column is 4 times bigger than the "id" one, which is 20 to 80 percent relation.
+
+{{sample 15_datatable/09_columns/02_autosize_column.html}}
+
+###Adjusting column to its content
+
+To adjust the width of a column to the related content size, you can use the **adjust** attribute. There are two options possible:
+
+- data - adjusts column width to the content of the widest item in it;
+- header - adjusts column width to its header content.
+
+~~~js
+columns:[
+	{ id:"title", header:"Film title", adjust:"data"},
+    { id:"rank", header:"Rank", adjust:"header"}
+        ...
+]
+~~~
+
+{{note
+Pay attention that the resulting column's width won't be less than minWidth, in case this parameter is set for the column.
+}}
+
+
+{{sample 15_datatable/09_columns/01_size_by_content.html }}
 
 For more details, read the [Sizing and resizing](datatable/sizing.md) article.
 
@@ -443,12 +499,15 @@ The feature is available in **Webix Pro** edition only.
 
 Datatable allows defining colspans and rowspans by **span** configuration provided with the dataset within the **data** property of the grid.
 
+To enable the rowspans and colspans functionality, you should set the **spans** parameter with the *true* value in the datatable configuration.
+
 Each rowspan/colspan definition consists of the **row id**, **column id**, **width** and **height** of the span, **value** to display and **css** class to apply:
 
 ~~~js
 grida = new webix.ui({
 	view:"datatable",
     columns:[...],
+    spans:true,
     data:{
     	data:grid_data,
         spans:[ 

@@ -1,4 +1,4 @@
-Event Handling
+Event Handling with Organogram
 ================
 
 Organogram supports various events that can be used to provide a custom behaviour for your organogram.

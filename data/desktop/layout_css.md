@@ -1,7 +1,6 @@
-Layout 
+Layout CSS
 =============
 
-###CSS Image Map
 
 <img src="image_maps/layout_css.png"/>
 

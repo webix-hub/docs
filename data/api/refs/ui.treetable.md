@@ -9,21 +9,31 @@ The component is used to integrate a tree into an editable grid. There is a supp
 ### Constructor
 
 ~~~js
-	var treetable = webix.ui({
-		view:"treetable", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_treetable({
-		...config options goes here..
-	});
+var treetable = webix.ui({
+    view:"treetable",
+    columns:[
+      { id:"id", header:"", width:50},
+      { id:"value",	header:"Film title", width:250,
+       template:"{common.treetable()} #value#" },
+      { id:"chapter", header:"Mode", width:200}
+    ],    
+    data: [
+      { "id":"1", "value":"The Shawshank Redemption", "open":true, "data":[
+        { "id":"1.1", "value":"Part 1", "chapter":"alpha"},
+        { "id":"1.2", "value":"Part 2", "chapter":"beta", "open":true, "data":[
+          { "id":"1.2.1", "value":"Part 1", "chapter":"beta-twin"}
+        ]}
+      ]}
+    ]
+});	
 ~~~
 
 ### Where to start
 
-- [Overview of Treetable Widget](desktop/treetable.md)
-- [Samples](http://docs.webix.com/samples/15_datatable/index.html)
+- [Overview of the Treetable Widget](desktop/treetable.md)
+- [Samples](http://docs.webix.com/samples/15_datatable/30_treetable/index.html)
+
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/treeapi.md">TreeAPI</a>, <a href="api/refs/treestatecheckbox.md">TreeStateCheckbox</a>, <a href="api/refs/treedataloader.md">TreeDataLoader</a>, <a href="api/refs/treestore.md">TreeStore</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/ui.datatable.md">ui.datatable</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/group.md">Group</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/mapcollection.md">MapCollection</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/tablepaste.md">TablePaste</a>, <a href="api/refs/datastate.md">DataState</a>, <a href="api/refs/editability.md">EditAbility</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a></div>
 
@@ -104,7 +114,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
 - api/link/ui.treetable_getprevsiblingid.md - returns the id of the previous sibling of the specified node
 - api/link/ui.treetable_getscrollstate.md - returns the current position of scrolls
-- api/link/ui.treetable_getselectedid.md - returns the selected cells
+- api/link/ui.treetable_getselectedid.md - returns the selected elements' ids
 - api/link/ui.treetable_getselecteditem.md - gets an object of the selected data item
 - api/link/ui.treetable_getstate.md - returns the current state of the view
 - api/link/ui.treetable_gettext.md - returns text value of a cell
@@ -191,7 +201,7 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_onaftereditstart_event.md - fires after edit operation was initiated, editor opened and ready for input
 - api/link/ui.treetable_onaftereditstop_event.md - fires after edit operation finished
 - api/link/ui.treetable_onafterfilter_event.md - occurs after datatable was filtered
-- api/link/ui.treetable_onafterload_event.md - fires after server side loading is complete
+- api/link/ui.treetable_onafterload_event.md - fires after data loading is complete
 - api/link/ui.treetable_onafteropen_event.md - fires after the branch has been opened
 - api/link/ui.treetable_onafterrender_event.md - occurs each time after the view is rendered
 - api/link/ui.treetable_onafterscroll_event.md - occurs when some webix view has been scrolled
@@ -220,12 +230,14 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.treetable_onbeforeunselect_event.md - fired before a cell is unselected
 - api/link/ui.treetable_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.treetable_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.treetable_oncheck_event.md - fires when a checkbox is checked or unchecked in the datatable item
 - api/link/ui.treetable_oncolumnresize_event.md - fires when width of column was changed
 - api/link/ui.treetable_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.treetable_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.treetable_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.treetable_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
+- api/link/ui.treetable_onfocus_event.md - fires when a view gets focus
 - api/link/ui.treetable_onheaderclick_event.md - occurs after clicking on header
 - api/link/ui.treetable_onitemcheck_event.md - fires when you check an item in tree and treetable
 - api/link/ui.treetable_onitemclick_event.md - fires when a component item was clicked
@@ -244,6 +256,9 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_onselectchange_event.md - fires when selection is changed in a DataTable
 - api/link/ui.treetable_onstructureload_event.md - fires when the structure of DataTable (columns configuration) is initialized
 - api/link/ui.treetable_onstructureupdate_event.md - fires when structure of datatable was changed ( column added, hidden or reconfigured )
+- api/link/ui.treetable_onsubviewcreate_event.md - fires after a subview was created
+- api/link/ui.treetable_onsubviewopen_event.md - fires after a subview or subrow is opened
+- api/link/ui.treetable_onsubviewrender_event.md - fires each time subview is rendered
 - api/link/ui.treetable_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.treetable_onswipey_event.md - occurs on a vertical swipe movement
 - api/link/ui.treetable_ontimedkeypress_event.md - fires after typing has been finished in the field
@@ -335,10 +350,13 @@ The component is used to integrate a tree into an editable grid. There is a supp
 - api/link/ui.treetable_scrolly_config.md - enables/disables vertical scrolling
 - api/link/ui.treetable_select_config.md - sets the selection mode in DataTable
 - api/link/ui.treetable_spans_config.md - array of span configurations for the datatable
+- api/link/ui.treetable_subrowheight_config.md - automatically adjusts the subrow's height to the size of the text
+- api/link/ui.treetable_subrow_config.md - sets a subrow template
+- api/link/ui.treetable_subview_config.md - adds a subview configuration into datatable
 - api/link/ui.treetable_threestate_config.md - defines three-state checkboxes for the tree. Flase by default.
 - api/link/ui.treetable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.treetable_type_config.md - used for configuring presentation of items
-- api/link/ui.treetable_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.treetable_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.treetable_width_config.md - sets the width of the component
 - api/link/ui.treetable_ycount_config.md - defines height of datatable in rows
 }}

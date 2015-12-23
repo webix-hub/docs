@@ -6,7 +6,7 @@ Events
 - api/link/ui.organogram_onafterclose_event.md - fires after the branch has been closed
 - api/link/ui.organogram_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.organogram_onafterdelete_event.md - fires after item deleting
-- api/link/ui.organogram_onafterload_event.md - fires after server side loading is complete
+- api/link/ui.organogram_onafterload_event.md - fires after data loading is complete
 - api/link/ui.organogram_onafteropen_event.md - fires after the branch has been opened
 - api/link/ui.organogram_onafterrender_event.md - occurs immediately after the component has been rendered
 - api/link/ui.organogram_onafterscroll_event.md - occurs when some webix view has been scrolled
@@ -22,9 +22,11 @@ Events
 - api/link/ui.organogram_onbeforeselect_event.md - fires before item selection is started
 - api/link/ui.organogram_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.organogram_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.organogram_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.organogram_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.organogram_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.organogram_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.organogram_onfocus_event.md - fires when a view gets focus
 - api/link/ui.organogram_onitemcheck_event.md - called when the checkbox inside the tree item was checked
 - api/link/ui.organogram_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.organogram_onitemdblclick_event.md - fires when a component item was double-clicked
@@ -66,9 +68,11 @@ Events
 - api/link/ui.organogram_onbeforeselect_event.md
 - api/link/ui.organogram_onbeforesort_event.md
 - api/link/ui.organogram_onbindrequest_event.md
+- api/link/ui.organogram_onblur_event.md
 - api/link/ui.organogram_ondatarequest_event.md
 - api/link/ui.organogram_ondataupdate_event.md
 - api/link/ui.organogram_ondestruct_event.md
+- api/link/ui.organogram_onfocus_event.md
 - api/link/ui.organogram_onitemcheck_event.md
 - api/link/ui.organogram_onitemclick_event.md
 - api/link/ui.organogram_onitemdblclick_event.md

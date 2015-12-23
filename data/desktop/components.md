@@ -1,6 +1,6 @@
 UI Components
 ==================
-The <a title="ui library" href="http://webix.com">Webix UI library</a> supplies over 40 fully customizable components to help you build interfaces of different kinds, nicely present data and work with it. There are also multiple controls and
+The <a title="ui library" href="http://webix.com">Webix UI library</a> supplies over 70 fully customizable components to help you build interfaces of different kinds, nicely present data and work with it. There are also multiple controls and
 specific features to make your applications good-looking and user-friendly. All the components are objects made with the webix.ui() constructor where the type of the component is set by the 'view' property (the declarative syntax is available as well).
 
 <br>
@@ -121,6 +121,12 @@ Data components are used to present data of a specified type on the page. Such c
 			<br>Tree
 		</a>
     </div>
+     <div>
+		<a href="desktop/treemap.md">
+			<img src="desktop/icons/treemap.png"/>
+			<br>TreeMap
+		</a>
+    </div>
     <div>
 		<a href="desktop/treetable.md">
 			<img src="desktop/icons/treegrid.png"/>
@@ -164,6 +170,12 @@ Context components let displaying spatial and temporal information on some user'
 		<a href="desktop/popup.md">
 			<img src="desktop/icons/popup.png"/>
 			<br>Popup
+		</a>
+    </div>
+    <div>
+		<a href="desktop/sidemenu.md">
+			<img src="desktop/icons/sidemenu.png"/>
+			<br>Sidemenu
 		</a>
     </div>
     <div>
@@ -246,39 +258,39 @@ Auxiliary components help you to complete the picture of your application, to ad
 Controls are mainly responsible for handling events since they enable user-app interaction by triggering functions attached to them. Note that any event can be attached to any component by referring to its ID.  
 <div class="controls_group" style="padding-left:60px;">
 	<ul>
-		<li><a href="desktop/controls.md#button"><img src="api/toc/button.png"/> Button </a></li>
-		<li><a href="desktop/controls.md#checkbox"><img src="api/toc/checkbox.png"/> Checkbox</a></li>
-		<li><a href="desktop/controls.md#colorpicker"> <img src="api/toc/colorpicker.png"/> ColorPicker</a></li>
-		<li><a href="desktop/controls.md#combo"><img src="api/toc/combo.png"/> Combo</a></li>
-		<li><a href="desktop/controls.md#counter"><img src="api/toc/counter.png"/> Counter</a></li>
-		<li><a href="desktop/controls.md#datepicker"><img src="api/toc/datepicker.png"/> Datepicker</a></li>
-		<li><a href="desktop/controls.md#icon"><img src="api/toc/icon.png"/> Icon</a></li>
-        <li><a href="desktop/controls.md#fieldset"> <img src="api/toc/fieldset.png"/> Fieldset</a></li>
+		<li><a href="desktop/button.md"><img src="api/toc/button.png"/> Button </a></li>
+		<li><a href="desktop/checkbox.md"><img src="api/toc/checkbox.png"/> Checkbox</a></li>
+		<li><a href="desktop/colorpicker.md"> <img src="api/toc/colorpicker.png"/> ColorPicker</a></li>
+		<li><a href="desktop/combo.md"><img src="api/toc/combo.png"/> Combo</a></li>
+		<li><a href="desktop/counter.md"><img src="api/toc/counter.png"/> Counter</a></li>
+		<li><a href="desktop/datepicker.md"><img src="api/toc/datepicker.png"/> Datepicker</a></li>
+		<li><a href="desktop/icon.md"><img src="api/toc/icon.png"/> Icon</a></li>
+        <li><a href="desktop/fieldset.md"> <img src="api/toc/fieldset.png"/> Fieldset</a></li>
 	</ul>
 </div>
 
 <div class="controls_group">
 	<ul>
-		<li><a href="desktop/controls.md#label"><img src="api/toc/label.png"/> Label</a></li>
-        <li><a href="desktop/controls.md#multicombo"><img src="api/toc/multicombo.png"/> Multicombo</a></li>
-        <li><a href="desktop/controls.md#multiselect"> <img src="api/toc/multiselect.png"/> Multiselect</a></li>
-        <li><a href="desktop/controls.md#multitext"> <img src="api/toc/multitext.png"/> Multitext</a></li>
-		<li><a href="desktop/controls.md#radio"> <img src="api/toc/radio.png"/> Radio</a></li>
-		<li><a href="desktop/controls.md#richselect"><img src="api/toc/richselect.png"/> Richselect</a></li>
-		<li><a href="desktop/controls.md#search"><img src="api/toc/search.png"/> Search</a></li>
-		<li><a href="desktop/controls.md#select"><img src="api/toc/select.png"/> Select</a></li>		
+		<li><a href="desktop/label.md"><img src="api/toc/label.png"/> Label</a></li>
+        <li><a href="desktop/multicombo.md"><img src="api/toc/multicombo.png"/> Multicombo</a></li>
+        <li><a href="desktop/multiselect.md"> <img src="api/toc/multiselect.png"/> Multiselect</a></li>
+        <li><a href="desktop/multitext.md"> <img src="api/toc/multitext.png"/> Multitext</a></li>
+		<li><a href="desktop/radio.md"> <img src="api/toc/radio.png"/> Radio</a></li>
+		<li><a href="desktop/richselect.md"><img src="api/toc/richselect.png"/> Richselect</a></li>
+		<li><a href="desktop/search.md"><img src="api/toc/search.png"/> Search</a></li>
+		<li><a href="desktop/select.md"><img src="api/toc/select.png"/> Select</a></li>		
 	</ul>
 </div>
 
 <div class="controls_group">
 	<ul>
-    	<li><a href="desktop/controls.md#segmented"><img src="api/toc/segmented.png"/> Segmented</a></li>
-        <li><a href="desktop/controls.md#slider"><img src="api/toc/slider.png"/> Slider </a></li>
+    	<li><a href="desktop/segmented.md"><img src="api/toc/segmented.png"/> Segmented</a></li>
+        <li><a href="desktop/slider.md"><img src="api/toc/slider.png"/> Slider </a></li>
 		<li><a href="desktop/suggest.md"><img src="api/toc/suggest.png"/> Suggest list</a></li>
-		<li><a href="desktop/controls.md#tabbar"><img src="api/toc/tabbar.png"/> Tabbar</a></li>
-		<li><a href="desktop/controls.md#text"><img src="api/toc/text.png"/> Text</a></li>
-		<li><a href="desktop/controls.md#textarea"><img src="api/toc/textarea.png"/> Textarea</a></li>
-		<li><a href="desktop/controls.md#toggle"><img src="api/toc/toggle.png"/> Toggle</a></li>
+		<li><a href="desktop/tabbar.md"><img src="api/toc/tabbar.png"/> Tabbar</a></li>
+		<li><a href="desktop/text.md"><img src="api/toc/text.png"/> Text</a></li>
+		<li><a href="desktop/textarea.md"><img src="api/toc/textarea.png"/> Textarea</a></li>
+		<li><a href="desktop/toggle.md"><img src="api/toc/toggle.png"/> Toggle</a></li>
 	</ul>
 </div>
 
@@ -340,9 +352,11 @@ div.controls_group img {
 - desktop/portlet.md
 - desktop/property_sheet.md
 - desktop/scrollview.md
+- desktop/sidemenu.md
 - desktop/tabview.md
 - desktop/template.md
 - desktop/toolbar.md
+- desktop/treemap.md
 - datatree/index.md
 - desktop/treetable.md
 - desktop/unitlist.md

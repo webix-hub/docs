@@ -1,9 +1,8 @@
-Property Sheet
+Property Sheet CSS 
 =============
 
 <img src="image_maps/property_css.png">
 
-###CSS Image Map
 
 <table class="inline">
 	<tr class="row0">

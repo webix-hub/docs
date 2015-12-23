@@ -294,7 +294,7 @@ webix.ui({
 
 <h3 id="events">Related events</h3>
 
-The following events are generated while d-n-d process:
+The following events are generated during the d-n-d process:
 
 - api/link/ui.datatable_onbeforedrag_event.md - fires before the mouse button is pressed and moved over a draggable item
 - api/link/ui.datatable_onbeforedragin_event.md - fires before a dragged element is moved over the droppable area

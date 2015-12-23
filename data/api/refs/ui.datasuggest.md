@@ -9,6 +9,29 @@ Offers select options in the form of Webix [dataview](api/refs/ui.dataview.md) c
 Can be used standalone or as a suggest list for [text](api/refs/ui.text.md), [combo](api/refs/ui.combo.md) and [richselect](api/refs/ui.richselect.md) controls 
 as well as component [editor](api/refs/editors.md).
 
+###Constructor
+
+~~~js
+webix.ui({
+  view:"richselect", 
+  label:"Data", 
+  value:1, options:{
+	view:"datasuggest", data:[
+    	{id:1, value:"One", year:1988, color:"Red"}, 
+      	{id:2, value:"Two", year:1996, color:"Blue"},
+      	{id:3, value:"Three", year:1997, color:"Green"}, 
+      	{id:4, value:"Four", year:2011, color:"Orange"},
+      	{id:5, value:"Five", year:2000, color:"Grey"}, 
+      	{id:6, value:"Six", year: 1994, color:"Yellow"}]
+	}
+});
+~~~
+
+###Where to start
+
+- [Overview of Dataview Suggest](desktop/datasuggest.md)
+- [Samples](http://docs.webix.com/samples/32_thirdparty/14_dataselect.html)
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.suggest.md">ui.suggest</a>, <a href="api/refs/ui.popup.md">ui.popup</a>, <a href="api/refs/ui.window.md">ui.window</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/movable.md">Movable</a>, <a href="api/refs/modality.md">Modality</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
@@ -63,7 +86,9 @@ as well as component [editor](api/refs/editors.md).
 - api/link/ui.datasuggest_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.datasuggest_onbeforeshow_event.md - fires right after show() method is called for the window (popup) and before the window is shown
 - api/link/ui.datasuggest_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.datasuggest_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.datasuggest_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.datasuggest_onfocus_event.md - fires when a view gets focus
 - api/link/ui.datasuggest_onhide_event.md - fires when window is hidden
 - api/link/ui.datasuggest_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.datasuggest_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
@@ -114,8 +139,10 @@ as well as component [editor](api/refs/editors.md).
 - api/link/ui.datasuggest_padding_config.md - sets paddings of the chart content
 - api/link/ui.datasuggest_position_config.md - sets position of the window relative to the the screen
 - api/link/ui.datasuggest_relative_config.md - positions a popup window relative to the component it's connected with
+- api/link/ui.datasuggest_resize_config.md - enables/disables window resizing
 - api/link/ui.datasuggest_template_config.md - template which will be used to fill parent input from selected record
 - api/link/ui.datasuggest_textvalue_config.md - defines which field from suggest list will be used as text after selecting an option
+- api/link/ui.datasuggest_tofront_config.md - places window above other windows on clicking it
 - api/link/ui.datasuggest_top_config.md - the top offset of a window
 - api/link/ui.datasuggest_type_config.md - defines type of suggest control
 - api/link/ui.datasuggest_width_config.md - sets the width of the component

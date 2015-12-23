@@ -2,7 +2,10 @@ labelPosition
 =============
 
 
-@short: positions label above the control
+@short: positions label in relation the control
+
+@values:
+- top	places label above the control
 	
 
 @type: string
@@ -14,6 +17,8 @@ labelPosition
 	13_form/02_api/03_label_position.html
 @related: 
 	desktop/controls_guide.md
+@relatedapi:
+	api/ui.text_bottomlabel_config.md
 
 @template:	api_config
 @descr:
@@ -26,5 +31,4 @@ Top right alignment is achieved by applying both properties:
 {view: "text", label:"Some Text", labelAlign:"right", labelPosition:"Top"}
 ~~~
 
-
-
+@reserved: true

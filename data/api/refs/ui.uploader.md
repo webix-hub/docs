@@ -4,26 +4,26 @@ ui.uploader
 
 {{memo A control for uploading multiple files. }}
 
-The component allows tracking the whole progress of individual file upload. Fully customazable. Check [uploader](/) documentation for more detailed description.
+The component allows tracking the whole progress of individual file upload. Fully customizable. Check the desktop/uploader.md documentation for more detailed description.
 
 ### Constructor
 
 ~~~js
-	var uploader = webix.ui({
-		view:"uploader", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_uploader({
-		...config options goes here..
-	});
+var uploader = webix.ui({
+    view:"uploader",
+    id: "uploader_1",
+  	width:200,
+    value:"Upload file",
+    link:"mylist",
+    upload:"//docs.webix.com/samples/21_upload/php/upload.php"
+});
 ~~~
 
 ### Where to start
 
-- [Overview of Uploader Widget](desktop/uploader.md)
+- [Overview of the Uploader Widget](desktop/uploader.md)
 - [Samples](http://docs.webix.com/samples/21_upload/index.html)
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
@@ -82,10 +82,12 @@ The component allows tracking the whole progress of individual file upload. Full
 - api/ui.uploader_onbeforefileadd_event.md - fires the moment you try to add file to uploader
 - api/link/ui.uploader_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.uploader_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.uploader_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.uploader_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.uploader_ondestruct_event.md - occurs when component destroyed
 - api/ui.uploader_onfileupload_event.md - fires the moment file uploading ends
 - api/ui.uploader_onfileuploaderror_event.md - fires in case of serverside error during uploading
+- api/link/ui.uploader_onfocus_event.md - fires when a view gets focus
 - api/link/ui.uploader_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.uploader_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.uploader_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
@@ -107,10 +109,10 @@ The component allows tracking the whole progress of individual file upload. Full
 - api/link/ui.uploader_animate_config.md - defines or disables view change animation.
 - api/ui.uploader_apionly_config.md - sets the uploader to "invisible" mode. *False* by default.
 - api/ui.uploader_autosend_config.md - enable seding files to server immediately after they have been added to uploader. *True* by default.
+- api/link/ui.uploader_autowidth_config.md - adjusts button to its text content
 - api/link/ui.uploader_borderless_config.md - used to hide the component borders
 - api/link/ui.uploader_click_config.md - click action handler
 - api/link/ui.uploader_container_config.md - an html container (or its id) where the component needs initializing
-- api/link/ui.uploader_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.uploader_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.uploader_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.uploader_formdata_config.md - extra data that will be sent to server side along with the file uploading
@@ -121,9 +123,9 @@ The component allows tracking the whole progress of individual file upload. Full
 - api/link/ui.uploader_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/link/ui.uploader_id_config.md - the component ID
 - api/link/ui.uploader_inputheight_config.md - the height of the input area, or a button's text value area.
+- api/ui.uploader_inputname_config.md - name of the uploader input
 - api/link/ui.uploader_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.uploader_label_config.md - the text label of the control
-- api/link/ui.uploader_labelposition_config.md - positions label above the control
 - api/ui.uploader_link_config.md - sets the component to display values of the files chosen for upload;
 - api/link/ui.uploader_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.uploader_maxwidth_config.md - sets the maximum width for the view
@@ -132,10 +134,8 @@ The component allows tracking the whole progress of individual file upload. Full
 - api/ui.uploader_multiple_config.md - enables uploading of several files at a time. *True* by default.
 - api/link/ui.uploader_name_config.md - name of the control
 - api/link/ui.uploader_on_config.md - allows attaching custom handlers to inner events of the component
-- api/link/ui.uploader_placeholder_config.md - placeholder text for the input area
 - api/link/ui.uploader_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.uploader_tabfocus_config.md - defines whether the control will be included in the tab navigation order
-- api/link/ui.uploader_template_config.md - the component template
 - api/link/ui.uploader_tooltip_config.md - tooltip for the input
 - api/link/ui.uploader_type_config.md - the type of the control
 - api/link/ui.uploader_value_config.md - sets the initial value for a control
@@ -154,6 +154,7 @@ The component allows tracking the whole progress of individual file upload. Full
 - api/link/ui.uploader_$getsize_other.md - returns the current size of the component
 - api/link/ui.uploader_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.uploader_$height_other.md - current height of the view
+- api/ui.uploader_$onuploadcomplete_other.md - completes uploading for flash uploader
 - api/link/ui.uploader_$scope_other.md - scope for resolving event and method names
 - api/link/ui.uploader_$setsize_other.md - sets the component size
 - api/link/ui.uploader_$setvalue_other.md - called each time when component need to set value in related html input

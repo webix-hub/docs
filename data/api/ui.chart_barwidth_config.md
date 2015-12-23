@@ -14,7 +14,7 @@ webix.ui({
 	label:"#sales#",
 	barWidth:35,
     data: dataset
-})
+});
 
 @template:	api_config
 @defined:	ui.chart	

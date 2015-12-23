@@ -4,7 +4,7 @@ map
 @short: defines data mapping
 	
 
-@type: hash
+@type: object
 @example:
 
 webix.ui({

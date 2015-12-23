@@ -1,7 +1,5 @@
-Radio 
+Radio CSS 
 =============
-
-###CSS Image Map
 
 <img src="image_maps/radio_css.png" />
 

@@ -15,9 +15,9 @@ webix.ui({
 });
 
 @values:
-- <b>click</b> - (default) opens the editor on a single click
-- <b>dblclick</b> - opens the editor on a double click
-- <b>custom</b> - allows only programmatic editing (denies opening editors for manual editing)
+- click	(default) opens the editor on a single click
+- dblclick	opens the editor on a double click
+- custom	allows only programmatic editing (denies opening editors for manual editing)
 @template:	api_config
 @descr:
 

@@ -305,7 +305,7 @@ Custom Header and Footer Content
 
 All content elements that can be integrated to the datatable header or footer are stored in a **webix.ui.datafilter** object and feature the same configuration pattern. 
 
-There're two mandatory methods **refresh()** that provides logic and **render()** that draws an element. Their parameters include: 
+There are two mandatory methods **refresh()** that provides logic and **render()** that draws an element. Their parameters include: 
 
 - **master** - component object (here: datatable);
 - **column** - related column object;

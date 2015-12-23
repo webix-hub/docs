@@ -5,7 +5,7 @@ series
 @short:
 	defines graphs presented on the chart
 
-@type: array
+@type: object
 @example:
 webix.ui({
 	view:"chart",

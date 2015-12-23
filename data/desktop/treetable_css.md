@@ -1,9 +1,8 @@
-Treetable
+TreeTable CSS 
 =============
 
 Treetable combines features of the [Tree](desktop/datatree_css.md) and [Datatable](desktop/datatable_css.md). Hence, its CSS classes for it are inherited from both of the components. 
 
-###CSS Image Map
 
 <img src="image_maps/treetable_css.png" />
 

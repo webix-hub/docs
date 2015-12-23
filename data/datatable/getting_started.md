@@ -1,4 +1,4 @@
-Getting started
+Getting started with DataTable
 =================
 To make a great app you need to learn different things but if you're new to DataTable you might be wondering where to begin. 
 

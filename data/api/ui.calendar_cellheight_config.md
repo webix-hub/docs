@@ -3,13 +3,11 @@ cellHeight
 
 
 @short:
-	the height of the cell with day (36)
+	the height of the cell with day
 
-@type: number
+@type: number, string
 @example:
-@values:
 
-- auto		automatic height calculation based on calendar size
 
 @template:	api_config
 @related: 
@@ -17,4 +15,6 @@ cellHeight
     
 @defined:	ui.calendar	
 @descr:
+
+Cell height can be calculated automatically from calendar size if the property is set to **auto**. 
 

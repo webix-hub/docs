@@ -1,16 +1,13 @@
 size
 =============
 
-
 @short:sets the number of records per page
-	
 
 @type: number
 @example:
-var myPager = webix.ui ({
-				view:"pager",
-				container:"paging_here",
-				size:100
+webix.ui ({
+	view:"pager",
+	size:100
 });
 
 @template:	api_config

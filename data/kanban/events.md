@@ -1,4 +1,4 @@
-Handling Events
+Handling Events with Kanban Board
 ================
 
 Attaching Event Handler

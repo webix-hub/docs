@@ -1,7 +1,7 @@
 master
 =============
 
-@short: the area for which context object in inited
+@short: the area for which context object in initialized
 	
 
 @type: string

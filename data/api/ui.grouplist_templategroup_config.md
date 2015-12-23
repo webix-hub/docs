@@ -5,16 +5,16 @@ templateGroup
 @short:
 	an html template that defines data that will be presented in group header in the collapsed state
 
-@type: template
+@type: string, function
 @example:
 webix.ui({ 
-        view:"grouplist", 
+    view:"grouplist", 
 	id:"mylist", 
-        url:"data.xml", 
-        datatype:"xml",
+    url:"data.xml", 
+    datatype:"xml",
 	type:{
 		templateItem:"#name# (#author#)",
-	        templateGroup:"#name#",
+	    templateGroup:"#name#",
 		templateBack:"#name#",
 	}
 });

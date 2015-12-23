@@ -110,6 +110,11 @@ table.webixtoc td{
         <td>a hierarchical structure of nodes</td>
     </tr>
     <tr>
+    	<td> <img src="api/toc/treemap.png"/> </td>
+        <td> api/refs/ui.treemap.md </td>
+        <td>a hierarchical structure of nodes</td>
+    </tr>
+    <tr>
     	<td> <img src="api/toc/treetable.png"/> </td>
         <td> api/refs/ui.treetable.md </td>
         <td>a control for presenting tree in a grid cell</td>
@@ -155,6 +160,11 @@ table.webixtoc td{
     	<td> <img src="api/toc/popup.png"/> </td>
         <td> api/refs/ui.popup.md </td>
         <td>  a static popup window</td>
+    </tr>
+    <tr>
+    	<td> <img src="api/toc/sidemenu.png"/> </td>
+        <td> api/refs/ui.sidemenu.md </td>
+        <td>  a side panel menu</td>
     </tr>
     <tr>
     	<td> <img src="api/toc/submenu.png"/> </td>
@@ -472,6 +482,7 @@ table.webixtoc td{
 - api/refs/ui.search.md
 - api/refs/ui.segmented.md
 - api/refs/ui.select.md
+- api/refs/ui.sidemenu.md
 - api/refs/ui.slider.md
 - api/refs/ui.spacer.md
 - api/refs/ui.submenu.md
@@ -485,6 +496,7 @@ table.webixtoc td{
 - api/refs/ui.toolbar.md
 - api/refs/ui.tooltip.md
 - api/refs/ui.tree.md
+- api/refs/ui.treemap.md
 - api/refs/ui.treetable.md
 - api/refs/ui.unitlist.md
 - api/refs/ui.uploader.md

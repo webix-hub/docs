@@ -275,7 +275,9 @@ $$("log").getValue();
 To get an associative array of all elements (*name:value* pairs) you can use api/link/ui.form_getvalues.md method. To get to the necessary value, you should specify the **name** of the needed control. 
 
 ~~~js
-$$("my_form").getValues().login; //returns current value of the text input field 
+var values = $$("my_form").getValues(); //returns { login:"", email:"", submit:"" }
+
+values.login; //returns current value of the text input field 
 ~~~
 
 Additionally, you can get only **changed** and **unchanged** form values with the following methods respectively:
@@ -341,7 +343,7 @@ webix.ajax().post("some.php", form.getValues());
 webix.ajax().post("some.php", form.getValues(), function(text, data, xhr){ });
 ~~~
 
-2 . Using [webix.send](api/_send.html) method that emulates HTML form submitting: 
+2 . Using [webix.send](api/_send.md) method that emulates HTML form submitting: 
 
 ~~~js
 webix.send("come.php", form.getValues());

@@ -12,9 +12,11 @@ Webix DataProcessor is a functional library that lets you to ‘communicate’ w
 Without DataProcessor, you need to attach corresponding functions to component events (onAfterInsert/Update/Delete) to get data ready for processing.
 }}
 
+You can find the full list of DataProcessor methods, properties and events in the [API Reference](api/refs/dataprocessor.md). 
+
 ##DataProcessor Initialization
 
-DataProcessor object can be inited in both long and short forms. Compulsory parameters include: 
+DataProcessor object can be initialized in both long and short forms. Compulsory parameters include: 
 
 - **url**, a path to your [own server script](desktop/custom_serverside.md) or connector-based one (described in [Server Side Connector](desktop/dataconnector.md)). In any case, it should be the script that enables data loading from the database 
 into the component;
@@ -24,7 +26,7 @@ Other parameters (**mode**, validation **rules**, **on**, etc.) and optional and
 
 ####Implicit Initialization via Save Property
 
-When you define **url** (path to the necessary script) as value of **save** property for the needed component (**master**) - DataProcessor is automatically inited: 
+When you define **url** (path to the necessary script) as value of **save** property for the needed component (**master**) - DataProcessor is automatically initialized: 
 
 ~~~js
 webix.ui({
@@ -74,7 +76,7 @@ A **long initialization form** allows for setting an **ID** for the dataprocesso
 ##Getting DataProcessor Object
 
 Dataprocessor features a set of [methods and properties](api/refs/dataprocessor.md) that can be used to change default processing pattern. To make use of them, you need to get to a dataprocessor object,
-which can be achieved with the help of Webix [dp](api/_dp.html) method:
+which can be achieved with the help of Webix [dp](api/_dp.md) method:
 
 -  getting a dataprocessor initialized for a component with the specified ID:
 
@@ -162,9 +164,9 @@ dp.attachEvent('onBeforeDataSend', function(obj){
 Successful server response
 }}
 ~~~js
-dp.attachEvent('onAfterSync, function(id, text, data){
+dp.attachEvent('onAfterSync', function(id, text, data){
 	var response = data.xml(),
-    	hash = response.data;
+    hash = response.data;
     //hash {type:'', tid: '', sid:''}      
 });
 ~~~
@@ -284,7 +286,7 @@ Not any client-side update is to be saved to server. To temporarily cancel DataP
 
 ~~~js
 webix.dp("grid").ignore(function(){
-	$$("grid).add(data);	
+	$$("grid").add(data);	
 });
 ~~~
 
@@ -292,7 +294,7 @@ webix.dp("grid").ignore(function(){
 
 ~~~js
 dp.on();
-$$("grid).add(data);	
+$$("grid").add(data);	
 dp.off();
 ~~~
 

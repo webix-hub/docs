@@ -17,7 +17,7 @@ Negative values are possible.
 ##Initialization
 
 ~~~js
-{ view:"slider", label:"Level", value:"20", min:10, max: 120; name:"s1"}
+{ view:"slider", label:"Level", value:"20", min:10, max: 120, name:"s1"}
 ~~~
 
 {{editor http://webix.com/snippet/7051e0cd	Slider}}

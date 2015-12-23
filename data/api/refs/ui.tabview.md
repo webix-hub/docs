@@ -9,21 +9,29 @@ The component optimizes the process of creating tabbed structures on the page - 
 ### Constructor
 
 ~~~js
-	var tabview = webix.ui({
-		view:"tabview", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_tabview({
-		...config options goes here..
-	});
+var tabview = webix.ui({
+	view:"tabview",
+	cells:[     
+      {
+        header:"Form",
+        body:{
+        	template:"Form Content"     
+      	}      
+      },
+      { header:"Empty", 
+       	body:{
+          template:"Some content"
+        } 
+      }
+    ]
+});
 ~~~
 
 ### Where to start
 
-- [Overview of Tabview Widget](desktop/tabview.md)
-- [Samples](http://docs.webix.com/samples/02_toolbar/index.html)
+- [Overview of the Tabview Widget](desktop/tabview.md)
+- [Samples](http://docs.webix.com/samples/02_toolbar/03_tabview.html)
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.layout.md">ui.layout</a>, <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 

@@ -3,21 +3,34 @@ ui.pager
 
 {{memo Page navigation controls. }}
 
-The component has a little sense on its own, but can be used with other data-based components such as DataTable, DataView, List. Not purposed for direct initialization. Check [pager](desktop/paging.md) documentation for more detailed description.
+The component makes little sense on its own, but can be used with other data-based components such as DataTable, DataView, List. Not purposed for direct initialization. Check [pager](desktop/paging.md) documentation for more detailed description.
 
 ### Constructor
 
 ~~~js
-	var pager = webix.ui({
-		view:"pager", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_pager({
-		...config options goes here..
-	});
+webix.ui({
+  view:"list",
+  template:"#id#. #title#",
+  pager:{	
+    size:1,
+    group:4
+  },
+  data:[
+   	 {"id":1,"title":"Item 1"},
+   	 {"id":2,"title":"Item 2"},
+   	 {"id":3,"title":"Item 3"},
+   	 {"id":4,"title":"Item 4"},
+     {"id":5,"title":"Item 5"},
+     {"id":6,"title":"Item 6"}, 		
+  ]
+});
 ~~~
+
+### Where to start
+
+- [Overview of the Pager Component](desktop/paging.md)
+- [Samples](http://docs.webix.com/samples/25_pager/index.html)
+
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/singlerender.md">SingleRender</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
@@ -69,7 +82,9 @@ The component has a little sense on its own, but can be used with other data-bas
 - api/link/ui.pager_onbeforecontextmenu_event.md - fires before the context menu is called in the item area
 - api/link/ui.pager_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.pager_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.pager_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.pager_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.pager_onfocus_event.md - fires when a view gets focus
 - api/link/ui.pager_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.pager_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.pager_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
@@ -94,7 +109,6 @@ The component has a little sense on its own, but can be used with other data-bas
 - api/ui.pager_apionly_config.md - makes the pager invisible to enable paging with custom buttons
 - api/link/ui.pager_borderless_config.md - used to hide the component borders
 - api/link/ui.pager_container_config.md - an html container (or its id) where the component needs initializing
-- api/link/ui.pager_content_config.md - the id or node, whose content will be moved to the view
 - api/ui.pager_count_config.md - the total number of records that the pager will process
 - api/link/ui.pager_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.pager_disabled_config.md - indicates whether an item is enabled or not

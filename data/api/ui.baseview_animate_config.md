@@ -8,10 +8,10 @@ animate
 @type: boolean,object
 @example:
 webix.ui({
-        view:"multiview",
-        cells:[{ ... }],
-        animate:{type:"flip", subtype:"vertical"}
-})
+   view:"multiview",
+   cells:[{ ... }],
+   animate:{type:"flip", subtype:"vertical"}
+});
 
 @template:	api_config
 @defined:	ui.baseview	
@@ -28,9 +28,8 @@ To totally disable animation, set the parameter to the *false* value:
 ~~~js
 webix.ui({
 	view:"multiview",
-	animate:false,
-    ...
-})
+	animate:false
+});
 ~~~
 
 ### Object properties

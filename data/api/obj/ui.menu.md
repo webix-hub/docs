@@ -6,18 +6,20 @@ The component can be displayed in 2 modes: static (the menu is fully expanded al
 ### Constructor
 
 ~~~js
-	var menu = webix.ui({
-		view:"menu", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_menu({
-		...config options goes here..
-	});
+var menu = webix.ui({
+	view:"menu", 
+	data:[
+		{id:1, value:"Translate", submenu:["English", "French", "German"]}, 
+		{id:2, value:"Post"}, 
+		{id:3, value:"Info"}
+	],
+	type:{
+		subsign:true,
+	}   
+});
 ~~~
 
 ### Where to start
 
-- [Overview of Menu Widget](desktop/menu.md)
+- [Overview of the Menu Widget](desktop/menu.md)
 - [Samples](http://docs.webix.com/samples/03_menu/index.html)

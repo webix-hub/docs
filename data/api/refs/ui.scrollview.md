@@ -8,32 +8,43 @@ Place it in the layout if you want to have a scroll around few other views (not 
 ### Constructor
 
 ~~~js
-	var scrollview = webix.ui({
-		view:"scrollview", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_scrollview({
-		...config options goes here..
-	});
+var scrollview = webix.ui({
+  view:"scrollview", 
+  id:"scrollview", 
+  scroll:"y", 
+  height: 160, 
+  width: 150, body:{
+     rows:[
+       {template:"Lorem ipsum", autoheight:true},
+       {template:"Lorem ipsum dolor sit amet", autoheight:true},
+       {template:"Lorem ipsum dolor", autoheight:true},
+       {template:"Lorem ipsum dolor sit amet, mentitum", autoheight:true},
+       {template:"Lorem ipsum dolor sit", autoheight:true},
+     ]
+   }
+});       
 ~~~
 
 ### Where to start
 
-- [Overview of Scrollview Widget](desktop/scrollview.md)
+- [Overview of the Scrollview Widget](desktop/scrollview.md)
 - [Samples](http://docs.webix.com/samples/04_template/index.html)
+
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
+<a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
 
 <div class='h2'>Methods</div>
 
 {{api
 - api/link/ui.scrollview_adjust.md - adjusts the component to the size of the parent HTML container
+- api/link/ui.scrollview_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.scrollview_bind.md - binds components
+- api/link/ui.scrollview_blockevent.md - temporarily blocks triggering of ALL events of the calling object
+- api/link/ui.scrollview_callevent.md - calls an inner event
 - api/link/ui.scrollview_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.scrollview_destructor.md - destructs the calling object
+- api/link/ui.scrollview_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.scrollview_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.scrollview_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/ui.scrollview_getbody.md - gets the inner view of scrollview
@@ -43,15 +54,18 @@ Place it in the layout if you want to have a scroll around few other views (not 
 - api/link/ui.scrollview_getparentview.md - returns the parent view of the component
 - api/link/ui.scrollview_getscrollstate.md - returns the scroll position
 - api/link/ui.scrollview_gettopparentview.md - returns top parent view
+- api/link/ui.scrollview_hasevent.md - checks whether the component has the specified event
 - api/link/ui.scrollview_hide.md - hides the view
 - api/link/ui.scrollview_isenabled.md - checks whether the view is enabled
 - api/link/ui.scrollview_isvisible.md - checks whether the view is visible
+- api/link/ui.scrollview_mapevent.md - routes events from one object to another
 - api/link/ui.scrollview_resize.md - adjusts the view to a new size
 - api/ui.scrollview_resizechildren.md - resizes all children of the calling component
 - api/link/ui.scrollview_scrollto.md - scrolls the data container to a certain position
 - api/link/ui.scrollview_show.md - makes the component visible
 - api/ui.scrollview_showview.md - places focus on the necessary scrollview item
 - api/link/ui.scrollview_unbind.md - breaks "bind" link
+- api/link/ui.scrollview_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}
 
 
@@ -61,7 +75,9 @@ Place it in the layout if you want to have a scroll around few other views (not 
 {{api
 - api/link/ui.scrollview_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.scrollview_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.scrollview_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.scrollview_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.scrollview_onfocus_event.md - fires when a view gets focus
 - api/link/ui.scrollview_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.scrollview_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.scrollview_onswipex_event.md - occurs on a horizontal swipe movement
@@ -91,6 +107,7 @@ Place it in the layout if you want to have a scroll around few other views (not 
 - api/link/ui.scrollview_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.scrollview_minheight_config.md - sets the minimal height for the view
 - api/link/ui.scrollview_minwidth_config.md - sets the minimal width for the view
+- api/link/ui.scrollview_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.scrollview_scroll_config.md - enables/disables the scroll bar
 - api/link/ui.scrollview_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.scrollview_width_config.md - sets the width of the component

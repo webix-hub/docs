@@ -9,16 +9,21 @@ The component is fully customizable and can be used both as a stand-alone view a
 ### Constructor
 
 ~~~js
-	var toggle = webix.ui({
-		view:"toggle", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_toggle({
-		...config options goes here..
-	});
+var toggle = webix.ui({ 
+	view:"toggle", 
+   	type:"iconButton", 
+   	name:"s4", 
+    offIcon:"pause",  
+  	onIcon:"play",
+    offLabel:"Disabled", 
+  	onLabel:"Enabled" 
+});
 ~~~
+
+### Where to start
+
+- [Overview of the Toggle Control](desktop/toggle.md)
+- [Samples](http://docs.webix.com/samples/13_form/01_controls)
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
@@ -71,8 +76,10 @@ The component is fully customizable and can be used both as a stand-alone view a
 - api/link/ui.toggle_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.toggle_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.toggle_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.toggle_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.toggle_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.toggle_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.toggle_onfocus_event.md - fires when a view gets focus
 - api/link/ui.toggle_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.toggle_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.toggle_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
@@ -91,31 +98,32 @@ The component is fully customizable and can be used both as a stand-alone view a
 {{api
 - api/link/ui.toggle_align_config.md - the alignment of the control within the parent container
 - api/link/ui.toggle_animate_config.md - defines or disables view change animation.
+- api/link/ui.toggle_autowidth_config.md - adjusts button to its text content
 - api/link/ui.toggle_borderless_config.md - used to hide the component borders
 - api/link/ui.toggle_click_config.md - click action handler
 - api/link/ui.toggle_container_config.md - an html container (or its id) where the component needs initializing
-- api/link/ui.toggle_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.toggle_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.toggle_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.toggle_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.toggle_height_config.md - sets the height of the component
 - api/link/ui.toggle_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.toggle_hotkey_config.md - sets a hotkey that triggers button clicking
+- api/ui.toggle_icon_config.md - an icon for pressed and unpressed toggle states
 - api/link/ui.toggle_id_config.md - the component ID
 - api/link/ui.toggle_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.toggle_inputwidth_config.md - the width of the input area, or a button's text value area.
-- api/link/ui.toggle_label_config.md - the text label of the control
-- api/link/ui.toggle_labelposition_config.md - positions label above the control
 - api/link/ui.toggle_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.toggle_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.toggle_minheight_config.md - sets the minimal height for the view
 - api/link/ui.toggle_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.toggle_name_config.md - name of the control
+- api/ui.toggle_officon_config.md - an icon for an unpressed toggle
+- api/ui.toggle_offlabel_config.md - a text label on the button in the unpressed state
 - api/link/ui.toggle_on_config.md - allows attaching custom handlers to inner events of the component
-- api/link/ui.toggle_placeholder_config.md - placeholder text for the input area
+- api/ui.toggle_onicon_config.md - an icon for a pressed toggle
+- api/ui.toggle_onlabel_config.md - a text label on the button in the pressed state
 - api/link/ui.toggle_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.toggle_tabfocus_config.md - defines whether the control will be included in the tab navigation order
-- api/link/ui.toggle_template_config.md - the component template
 - api/link/ui.toggle_tooltip_config.md - tooltip for the input
 - api/link/ui.toggle_type_config.md - the type of the control
 - api/link/ui.toggle_value_config.md - sets the initial value for a control

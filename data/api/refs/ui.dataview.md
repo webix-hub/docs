@@ -8,21 +8,28 @@ The component presents a collection of objects according to a user-defined templ
 ### Constructor
 
 ~~~js
-	var dataview = webix.ui({
-		view:"dataview", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_dataview({
-		...config options goes here..
-	});
+var dataview = webix.ui({
+	view:"dataview", 
+  	id:"dataview1",
+    xCount:3,
+  	type: {
+    	height: 60,
+  	},
+  	template:"<div class='webix_strong'>#title#</div> Year: #year#, rank: #rank#",
+  	data:[
+   		{ id:1, title:"The Shawshank Redemption", year:1994, rank:1},
+    	{ id:2, title:"The Godfather", year:1972, rank:2},
+    	{ id:3, title:"The Godfather: Part II", year:1974, rank:3},
+    	{ id:4, title:"The Good, the Bad and the Ugly", year:1966, rank:4}
+  	] 
+});
 ~~~
 
 ### Where to start
 
-- [Overview of Dataview Widget](desktop/dataview.md)
+- [Overview of the Dataview Widget](desktop/dataview.md)
 - [Samples](http://docs.webix.com/samples/06_dataview/index.html)
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/selectionmodel.md">SelectionModel</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/ui.proto.md">ui.proto</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/virtualrenderstack.md">VirtualRenderStack</a></div>
 
@@ -50,6 +57,7 @@ The component presents a collection of objects according to a user-defined templ
 - api/link/ui.dataview_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.dataview_exists.md - checks whether an item with the specified id exists
 - api/link/ui.dataview_filter.md - filters the component
+- api/link/ui.dataview_find.md - returns rows that match the criterion
 - api/link/ui.dataview_getchildviews.md - returns child views of the calling component
 - api/link/ui.dataview_getfirstid.md - returns the ID of the first item
 - api/link/ui.dataview_getformview.md - returns master form for the input
@@ -116,7 +124,7 @@ The component presents a collection of objects according to a user-defined templ
 - api/link/ui.dataview_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.dataview_onafterdelete_event.md - fires after item deleting
 - api/link/ui.dataview_onafterdrop_event.md - fires after drag-n-drop was finished
-- api/link/ui.dataview_onafterload_event.md - fires after server side loading is complete
+- api/link/ui.dataview_onafterload_event.md - fires after data loading is complete
 - api/link/ui.dataview_onafterrender_event.md - occurs immediately after the component has been rendered
 - api/link/ui.dataview_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.dataview_onafterselect_event.md - fires after item was selected
@@ -133,10 +141,12 @@ The component presents a collection of objects according to a user-defined templ
 - api/link/ui.dataview_onbeforeselect_event.md - fires before item selection is started
 - api/link/ui.dataview_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.dataview_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.dataview_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.dataview_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.dataview_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.dataview_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.dataview_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
+- api/link/ui.dataview_onfocus_event.md - fires when a view gets focus
 - api/link/ui.dataview_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.dataview_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.dataview_onitemrender_event.md - for each item rendering, occurs only for items with custom templates
@@ -206,7 +216,7 @@ The component presents a collection of objects according to a user-defined templ
 - api/link/ui.dataview_template_config.md - the component template
 - api/link/ui.dataview_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.dataview_type_config.md - object that specifies items presentation
-- api/link/ui.dataview_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.dataview_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.dataview_width_config.md - sets the width of the component
 - api/ui.dataview_xcount_config.md - adjusts the view width to display the defined number of items in a row
 - api/ui.dataview_ycount_config.md - adjusts the view height to display the defined number of items in a column

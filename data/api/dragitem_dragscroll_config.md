@@ -19,10 +19,10 @@ webix.ui({
 	desktop/dnd.md
 
 
+@values: 
+- x		only X axis drag scroll
+- y (true)		only Y axis drag scroll
+- xy	drag scroll in both directions
+- false 	disables drag scroll
   
 @descr:
-As a string the parameter can take the following values:
-
-- "x" - only x-axis drag scroll
-- "y" - only y-axis drag scroll
-- "xy" - drag scroll in both directions

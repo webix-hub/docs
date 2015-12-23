@@ -1,6 +1,43 @@
 Migration to latest Webix version
 =================================
 
+
+Webix 3.0 -> 3.1
+----------------
+
+### Form validation
+
+Starting from version 3.1, form.validate() will not validate disabled fields. If you want to preserve the old behavior, use this command like next
+
+~~~
+form.validate({ disabled:true });
+~~~
+
+
+
+Webix 2.x -> 3.0
+----------------
+
+
+###Strict JSON parsing
+
+Starting from the version 3.0 strict JSON parsing rules are applied. It means that Webix won't process invalid JSON data.
+
+###Export API
+Version 3.0 includes new export API. Old export functionality of datatable is deprecated and will be fully removed in version 3.2
+
+###Serverside response for Uploader
+
+The expected format of JSON string returned by the uploading script has changed.
+Now the script should respond with "error" status to indicate that uploading ended with error:
+
+~~~php
+echo "{ status:'error' }";
+~~~
+
+Any other response, e.g. *"{status:'server'}"* means that uploading ended successfully.
+
+
 Webix 2.2 -> 2.3
 -----------------
 

@@ -6,18 +6,18 @@ The component can contain various elements inside it (actually, the same element
 ### Constructor
 
 ~~~js
-	var toolbar = webix.ui({
-		view:"toolbar", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_toolbar({
-		...config options goes here..
-	});
+var toolbar = webix.ui({
+	view:"toolbar",
+    id:"myToolbar",
+    cols:[
+        { view:"button", id:"LoadBut", value:"Load", width:100, align:"left" },
+        { view:"button", value:"Save", width:100, align:"center" },
+        { view:"button", value:"Info", width:100, align:"right" }
+    ]
+});
 ~~~
 
 ### Where to start
 
-- [Overview of Toolbar Widget](desktop/toolbar.md)
+- [Overview of the Toolbar Widget](desktop/toolbar.md)
 - [Samples](http://docs.webix.com/samples/02_toolbar/index.html)

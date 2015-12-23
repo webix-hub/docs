@@ -22,6 +22,9 @@ $$("template1").setValues({src:"imgs/image002.jpg"});
     desktop/html_templates.md
 @relatedsample:
 	26_carousel/01_init.html
+@relatedapi:
+	api/ui.template_getvalues.md
+
 @descr:
 
 ###Working with template data object

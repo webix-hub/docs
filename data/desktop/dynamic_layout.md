@@ -13,7 +13,7 @@ Let's consider these possibilities in detail:
 Adding/Removing Views Dynamically
 ---------------------------------
 
-You can add and remove components dynamically after you've already inited layout and set some components. It works for:
+You can add and remove components dynamically after you've already initialized layout and set some components. It works for:
 
 - [layout](desktop/layout.md) rows and cols;
 - [multiview](desktop/multiview.md) cells;

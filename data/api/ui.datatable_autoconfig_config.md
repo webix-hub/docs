@@ -11,7 +11,7 @@ webix.ui({
   view:"datatable",
   autoConfig:true,
   url:"data.php"
-})
+});
 
 
 @template:	api_config

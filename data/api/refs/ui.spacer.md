@@ -4,20 +4,18 @@ ui.spacer
 
 {{memo A borderless empty view. }}
 
-The component has a pure API and only used to fill a layout cell if it's supposed to be empty. Can be initialized by simple [] construction. Check [view](desktop/view.md) documentation for more detailed description.
+The component has a pure API and only used to fill a layout cell if it's supposed to be empty. Can be initialized by simple {} construction. Check [view](desktop/view.md) documentation for more detailed description.
 
 ### Constructor
 
 ~~~js
-	var spacer = webix.ui({
-		view:"spacer", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_spacer({
-		...config options goes here..
-	});
+webix.ui({
+    view:"toolbar", cols:[
+        {view:"button", value:"but1"},
+        {},
+        {view:"button", value:"but2"}
+    ]
+});
 ~~~
 
 <div class='webixdoc_parents'><span>Based on: </span>
@@ -53,7 +51,9 @@ The component has a pure API and only used to fill a layout cell if it's suppose
 {{api
 - api/link/ui.spacer_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.spacer_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.spacer_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.spacer_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.spacer_onfocus_event.md - fires when a view gets focus
 - api/link/ui.spacer_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.spacer_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.spacer_onswipex_event.md - occurs on a horizontal swipe movement

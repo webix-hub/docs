@@ -21,7 +21,7 @@ list1.add({}); //adds { name:"Unknown", age:16} record
 @defined:	DataLoader	
 @relatedsample:
 	05_list/04_list_grouping.html
-    08_chart/03_group/01_group.html
+    08_chart/03_api/01_group.html
 @related:
 	desktop/data_scheme.md
 @descr:

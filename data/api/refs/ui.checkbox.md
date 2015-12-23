@@ -9,16 +9,19 @@ The control allows users to make multiple choices from a number of options. Full
 ### Constructor
 
 ~~~js
-	var checkbox = webix.ui({
-		view:"checkbox", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_checkbox({
-		...config options goes here..
-	});
+var checkbox = webix.ui({
+	view:"checkbox", 
+	id:"field_a", 
+	label:"Second age", 
+	value:1
+});
 ~~~
+
+### Where to start
+
+- [Overview of the Checkbox Control](desktop/checkbox.md)
+- [Samples](http://docs.webix.com/samples/13_form/01_controls/06_checkbox.html)
+
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.text.md">ui.text</a>, <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
@@ -72,8 +75,10 @@ The control allows users to make multiple choices from a number of options. Full
 - api/link/ui.checkbox_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.checkbox_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.checkbox_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.checkbox_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.checkbox_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.checkbox_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.checkbox_onfocus_event.md - fires when a view gets focus
 - api/link/ui.checkbox_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.checkbox_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.checkbox_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
@@ -99,7 +104,6 @@ The control allows users to make multiple choices from a number of options. Full
 - api/ui.checkbox_checkvalue_config.md - result of getValue for checked checkbox
 - api/link/ui.checkbox_click_config.md - click action handler
 - api/link/ui.checkbox_container_config.md - an html container (or its id) where the component needs initializing
-- api/link/ui.checkbox_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.checkbox_css_config.md - the name of a css class that will be applied to the view container
 - api/ui.checkbox_customcheckbox_config.md - enables/disables custom checkbox in some skins
 - api/link/ui.checkbox_disabled_config.md - indicates whether an item is enabled or not
@@ -113,7 +117,7 @@ The control allows users to make multiple choices from a number of options. Full
 - api/link/ui.checkbox_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.checkbox_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.checkbox_label_config.md - the text label of the control
-- api/link/ui.checkbox_labelposition_config.md - positions label above the control
+- api/link/ui.checkbox_labelposition_config.md - positions label in relation the control
 - api/link/ui.checkbox_labelwidth_config.md - the width of the label
 - api/link/ui.checkbox_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.checkbox_maxwidth_config.md - sets the maximum width for the view
@@ -121,17 +125,13 @@ The control allows users to make multiple choices from a number of options. Full
 - api/link/ui.checkbox_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.checkbox_name_config.md - name of the control
 - api/link/ui.checkbox_on_config.md - allows attaching custom handlers to inner events of the component
-- api/link/ui.checkbox_placeholder_config.md - placeholder text for the input area
 - api/link/ui.checkbox_popup_config.md - allows to attach pop-up menu to the button
-- api/link/ui.checkbox_readonly_config.md - configures readonly mode for the input
 - api/link/ui.checkbox_relatedaction_config.md - action to call when value of cell changes
 - api/link/ui.checkbox_relatedview_config.md - id of view, that will be affected by relatedAction operation
 - api/link/ui.checkbox_required_config.md - marks field as required
 - api/link/ui.checkbox_suggest_config.md - links suggest list to the input
 - api/link/ui.checkbox_tabfocus_config.md - defines whether the control will be included in the tab navigation order
-- api/link/ui.checkbox_template_config.md - the component template
 - api/link/ui.checkbox_tooltip_config.md - tooltip for the input
-- api/link/ui.checkbox_type_config.md - the type of the control
 - api/ui.checkbox_uncheckvalue_config.md - result of getValue for unchecked checkbox
 - api/link/ui.checkbox_validate_config.md - adds validation to the field
 - api/link/ui.checkbox_validateevent_config.md - on which event validation fires

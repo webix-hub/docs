@@ -2,7 +2,7 @@ Overview
 ===========
 
 Webix is a cross-browser, cross-device JavaScript framework for building interactive web applications using JavaScript, CSS, HTML5 techniques.
-The library delivers over 40 fully customizable components, provides JQuery integration and can work with any server-side 
+The library delivers over 70 fully customizable components, provides JQuery integration and can work with any server-side 
 platform: PHP, .NET, Java, etc. Flexible layouts, unlimited extensibility, controllable look-and-feel, and intuitive API 
 allow creating apps of any difficulty that will work equally well on desktop, mobile and tablet devices.
 
@@ -11,7 +11,7 @@ Main features
 
 <dl>
 <dt><a href="desktop/components.md">1. Rich UI </a></dt>
-<dd>The library supplies over 40 fully customizable components such as form, tree, grid, list etc. </dd>
+<dd>The library supplies over 70 fully customizable components such as form, tree, grid, list etc. </dd>
 <br>
 <dt><a href="desktop/data_loading.md">2. Supported data formats: xml, json, jsarray, csv</a></dt>
 <dd>Developers can use their favourite formats to specify data. All popular data formats are supported.</dd>
@@ -32,7 +32,7 @@ Main features
 <dd>Support for internationalization allows applications be translated and modified into local versions for hundreds of languages.</dd>
 <br>
 <dt><a href="desktop/styling.md">8. Styling with standard css</a></dt>
-<dd>You can use CSS in conjunction with components content to achieve the desired look-and-feel. Css can be applied to the whole layout or to specific components, items etc.</dd>
+<dd>You can use CSS in conjunction with components content to achieve the desired look-and-feel. CSS can be applied to the whole layout or to specific components, items etc.</dd>
 <br>
 <dt><a href="desktop/dimensions.md">9. Flexible layouts</a></dt>
 <dd>Each element in the layout can be configured individually or as a part of layout: width, height, color etc.</dd>
@@ -56,7 +56,7 @@ Main features
 <dd>All data containing components can be directly edited on the page, saving users from having to go to a separate page first.</dd>
 <br>
 <dt><a href="desktop/dnd.md">16. Drag-and-drop </a></dt>
-<dd>Users have the possibility to drag-and-drop items of the components. The library supports both external and internal dnd and allows customizing 'drag', 'drop' operations.
+<dd>Users have the possibility to drag-and-drop items of the components. The library supports both external and internal DND and allows customizing 'drag', 'drop' operations.
 </dd>
 <br>
 <dt><a href="desktop/third_party_integration.md">17. Integration with third party libraries </a></dt>

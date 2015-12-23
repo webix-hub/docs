@@ -24,7 +24,7 @@ some.attachEvent("onAfterRender", function(){
 
 The event fires each time the component is redrawn, not only after the component has been created. 
 
-To catch the moment of creation, supply it with [webix.once()](api/_once.html) helper:
+To catch the moment of creation, supply it with [webix.once()](api/_once.md) helper:
 
 ~~~js
 some.attachEvent("onAfterRender", webix.once(function(){ 

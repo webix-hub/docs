@@ -1,7 +1,6 @@
-Colorpicker
+Colorpicker CSS 
 =============
 
-###CSS Image Map
 
 <img src="image_maps/colorpicker_css.png"/>
 

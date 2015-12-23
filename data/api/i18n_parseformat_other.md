@@ -2,7 +2,7 @@ parseFormat
 =============
 
 
-@short:sets the default locale parsing date format. Initially it is "**%Y-%m-%d "%H:%i"**". 
+@short:sets the default locale parsing date format. Initially it is "**%Y-%m-%d "%H:%i**". 
 	
 
 @type:string

@@ -38,6 +38,19 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
 		</td>
 		<td class='topic_description' style="text-align: center; padding:20px;"><img src="desktop/datasuggest_extension.png"></td>
 	</tr>
+    <tr>
+		<td id="design" class='topics' style="vertical-align:text-top;">
+		    <h4 id='ui' style="margin-bottom:4px;">
+		        Viewers
+		    </h4>
+		    An integration extension that allows you to view PDF and Excel files: 
+            <ul>
+            	<li><a href="desktop/pdfviewer.md">PDF Viewer</a></li>
+                <li><a href="desktop/excelviewer.md">Excel Viewer</a></li>
+            </ul>
+		</td>
+		<td class='topic_description' style="text-align: center; padding:20px;"><img src="desktop/excel_viewer.png"></td>
+	</tr>
 	<tr>
 		<td id="design" class='topics' style="vertical-align:text-top;">
 		    <h4 id='ui' style="margin-bottom:4px;">
@@ -101,6 +114,15 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
 		</td>
 		<td class='topic_description' style="text-align: center; padding:20px;"><img src="desktop/file_manager.png"></td>
 	</tr>
+    <tr>
+		<td id="design" class='topics' style="vertical-align:text-top;">
+		    <h4 id='ui' style="margin-bottom:4px;">
+		        <a href="desktop/sidebar.md">Sidebar</a>
+		    </h4>
+		    A component that helps you to create a hierarchical collapsible menu with a vertical navigation bar.
+		</td>
+		<td class='topic_description' style="text-align: center; padding:20px;"><img src="desktop/sidebar.png"></td>
+	</tr>
     </tbody>
 </table>
 
@@ -109,6 +131,8 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
 - desktop/pivotchart.md
 - desktop/datasuggest.md
 - desktop/gridsuggest.md
+- desktop/pdfviewer.md
+- desktop/excelviewer.md
 - desktop/text_editors.md
 - desktop/chart_integration.md
 - desktop/maps.md
@@ -116,4 +140,5 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
 - desktop/mobile_scheduler.md
 - desktop/kanban_board.md
 - desktop/file_manager.md
+- desktop/sidebar.md
 

@@ -11,7 +11,15 @@ scroll
 webix.ui({
     view:"datatable",
     scroll:false
-})
+});
+
+@values:
+- y (true)	 enables vertical scroll (the default value) 
+- x	enables horizontal scroll
+- xy	enables both scrolls
+- false	 disables both scrolls
+
+@type: boolean,string
 
 
 @template:	api_config

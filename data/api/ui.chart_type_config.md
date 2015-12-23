@@ -27,7 +27,7 @@ webix.ui({
 	view:"chart",
 	type:"barH",
 	...
-})		
+});
 
 @relatedsample:
 	08_chart/01_initialization/01_load_xml.html

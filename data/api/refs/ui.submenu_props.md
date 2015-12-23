@@ -43,12 +43,14 @@ Properties
 - api/link/ui.submenu_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.submenu_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
 - api/link/ui.submenu_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
+- api/link/ui.submenu_openaction_config.md - alters the way of submenu opening to "click"
 - api/link/ui.submenu_padding_config.md - sets paddings of the chart content
 - api/link/ui.submenu_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
 - api/link/ui.submenu_position_config.md - sets position of the window relative to the the screen
 - api/link/ui.submenu_ready_config.md - event handler called just after the component has been completely initialized
 - api/link/ui.submenu_relative_config.md - positions a popup window relative to the component it's connected with
 - api/link/ui.submenu_removemissed_config.md - defines how to treat items in case of reloading
+- api/link/ui.submenu_resize_config.md - enables/disables window resizing
 - api/link/ui.submenu_rules_config.md - set of validation rules for the component
 - api/link/ui.submenu_save_config.md - defines URLs for data saving
 - api/link/ui.submenu_scheme_config.md - defines schemes for data processing
@@ -56,13 +58,14 @@ Properties
 - api/link/ui.submenu_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.submenu_select_config.md - enables/disables item selection or multiselection in grouplist
 - api/link/ui.submenu_submenupos_config.md - aligns submenu towards main menu
-- api/link/ui.submenu_submenu_config.md - defines submenu configuration
+- api/link/ui.submenu_submenuconfig_config.md - defines submenu configuration
 - api/link/ui.submenu_template_config.md - the component template
 - api/link/ui.submenu_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
+- api/link/ui.submenu_tofront_config.md - places window above other windows on clicking it
 - api/link/ui.submenu_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.submenu_top_config.md - the top offset of a window
 - api/link/ui.submenu_type_config.md - object that specifies items presentation
-- api/link/ui.submenu_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.submenu_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.submenu_width_config.md - sets the width of the component
 - api/link/ui.submenu_xcount_config.md - defines width of view in items
 - api/link/ui.submenu_ycount_config.md - defines height of view in items
@@ -111,12 +114,14 @@ Properties
 - api/link/ui.submenu_oncontext_config.md
 - api/link/ui.submenu_ondblclick_config.md
 - api/link/ui.submenu_onmousemove_config.md
+- api/link/ui.submenu_openaction_config.md
 - api/link/ui.submenu_padding_config.md
 - api/link/ui.submenu_pager_config.md
 - api/link/ui.submenu_position_config.md
 - api/link/ui.submenu_ready_config.md
 - api/link/ui.submenu_relative_config.md
 - api/link/ui.submenu_removemissed_config.md
+- api/link/ui.submenu_resize_config.md
 - api/link/ui.submenu_rules_config.md
 - api/link/ui.submenu_save_config.md
 - api/link/ui.submenu_scheme_config.md
@@ -124,9 +129,10 @@ Properties
 - api/link/ui.submenu_scrollspeed_config.md
 - api/link/ui.submenu_select_config.md
 - api/link/ui.submenu_submenupos_config.md
-- api/link/ui.submenu_submenu_config.md
+- api/link/ui.submenu_submenuconfig_config.md
 - api/link/ui.submenu_template_config.md
 - api/link/ui.submenu_templatecopy_config.md
+- api/link/ui.submenu_tofront_config.md
 - api/link/ui.submenu_tooltip_config.md
 - api/link/ui.submenu_top_config.md
 - api/link/ui.submenu_type_config.md

@@ -248,7 +248,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 08_chart/03_group/01_group.html}}
+{{sample 08_chart/03_api/01_group.html}}
 
 ##$sort key
 
@@ -256,7 +256,7 @@ webix.ui({
 
 The **$sort** function accepts 1 parameter - so-called sorting object that has 3 properties:
 
-- **by** - a template according which items will be sorted by,
+- **by** - a name of data property according to which items will be sorted by,
 - **dir** - the sorting direction: “asc” or “dsc”,
 - **as** - the sorting method
   - *'int'*
@@ -285,7 +285,7 @@ webix.ui({
     ...
     scheme:{
         $sort:{
-            by:"#time#",
+            by:"time",
             dir:"asc",
             as: sortTime
         }

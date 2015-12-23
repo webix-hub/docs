@@ -26,13 +26,12 @@ webix.ui({
 	15_datatable/05_selection/04_multi_cell_selection.html
 	15_datatable/05_selection/08_block_selection.html
 
-@descr:
+@values: 
 
-Possible values are: 
-
-- true (default) - overlay box is placed over the grid while dragging to mark potentially selected area
-- "box" - overlay box is placed over the potentially selected items while dragging
-- "select" - native datatable selection with select-related events firing on each cell selection
+- true		overlay box is placed over the grid while dragging to mark potentially selected area
+- box	overlay box is placed over the potentially selected items while dragging
+- select	native datatable selection with select related events firing on each cell selection
+- false		disables block selection
 
 
 

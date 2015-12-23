@@ -6,13 +6,17 @@
 ### Constructor
 
 ~~~js
-	var datepicker = webix.ui({
-		view:"datepicker", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_datepicker({
-		...config options goes here..
-	});
+var datepicker = webix.ui({
+ 	view:"datepicker", 
+  	date:new Date(2012, 6, 8), 
+  	label:'Date', 
+  	timepicker:true,
+  	width:300
+});
 ~~~
+
+### Where to start
+
+- [Overview of the Datepicker Control](desktop/datepicker.md)
+- [Samples](http://docs.webix.com/samples/13_form/01_controls/13_datepicker.html)
+

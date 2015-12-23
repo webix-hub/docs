@@ -33,26 +33,23 @@ webix.ui({
 });
 ~~~
 
-
-{{editor 
-http://webix.com/snippet/3d3403bf	Calendar
-}}
+{{sample 09_calendar/01_init.html }}
 
 ####Comments: 
 
 Here is a calendar with basic parameters. 
 
 - **weekHeader** (boolean) - if *true* shows weekday above;
-- **events** (CSS class or specific cases) - e.g. **webix.Date.isHoliday** highlights dayoffs;
+- **events** (CSS class or specific cases) - e.g. **webix.Date.isHoliday** highlights days off;
 - **date** (string, object) - specifies the start date in the "year, month, day" format with months starting from 0. In case of an empty new Date(); you'll be shown current date;
 - **dayTemplate** (function) - specifies a function that [sets a template](api/ui.calendar_daytemplate_config.md) for each day cell. By default the date is displayed without any styling;
 - **icons** (boolean) - specifies whether to show ["Today" and "Clear"](api/ui.datepicker_icons_config.md) icons.
 
 To see the full list of Calendar properties please refer to the [corresponding chapter of the documentation](api/refs/ui.calendar_props.md).
 
-#### Start Date
+##Setting Start Day of the Week
 
-By default the calendar starts a week on Sunday. However, you can also set Monday as a start day.
+By default the calendar starts a week on Sunday. However, you can also set Monday as a start day. For this purpose, use the api/date_startonmonday_other.md property with the value *true*:
 
 ~~~js
 webix.Date.startOnMonday = true;
@@ -63,10 +60,7 @@ webix.ui({
 ~~~
 <img src="desktop/calendar_start_date.png"/>
 
-
-{{editor
-http://webix.com/snippet/93ac69a1	Setting Start Date
-}}
+{{sample 09_calendar/02_start_date.html }}
 
 ##Working with Calendar
 
@@ -107,8 +101,7 @@ webix.ui({
 	]
 });
 ~~~
-
-{{editor http://webix.com/snippet/62b0fb48	Date Picker in Calendar}}
+{{sample 09_calendar/06_datepicker.html }}
 
 ##Time Selector in Calendar
 
@@ -131,18 +124,17 @@ webix.ui({
 	view:"calendar",
     date: new Date(2012, 3, 16, 8, 35),
     timepicker:true,
-    timepickerHeight:50 // optional, default is 30
+    timepickerHeight:50 //optional, default is 30
 })
 ~~~
 
-With timepicker enabled, time is shown below month view within the calendar body. There're three options for the clock: 
+With timepicker enabled, time is shown below month view within the calendar body. There are three options for the clock: 
 
 - If the time is defined in the *new Date(YYYY, MM, DD, HH, mm)* constructor, it's shown according to the specified values; 
 - If date is set with no time specified (new Date(2012, 3, 16)) - the clock shows midnight;
 - If the *new Date* function comes with no parameters, current date and time is shown. 
 
-
-{{editor http://webix.com/snippet/7025116c	Timepicker in Calendar}}
+{{sample 09_calendar/03_timepicker.html }}
 
 **Time view**
 
@@ -157,7 +149,7 @@ webix.ui({
 });
 ~~~
 
-{{editor http://webix.com/snippet/7025116c	Timepicker in Calendar}}
+{{sample 09_calendar/03_timepicker.html}}
 
 Like standard calendar, time view accepts values as string or date object.
 
@@ -177,7 +169,7 @@ Afterwards the calendar will look like this:
 
 <img src="desktop/calendar_localized.png"/>
 
-{{editor http://webix.com/snippet/130a271d	Localized Calendar}}
+{{sample 09_calendar/07_calendar_localized.html }}
 
 You can as well alter current working locale, e.g. change text of "Today" and "Clear" icons:
 
@@ -200,10 +192,7 @@ The whole calendar can be disabled by a common property:
 
 <img src="desktop/calendar_disabled_dates.png"/>
 
-
-{{editor
-http://webix.com/snippet/d69194d9	Disabled Dates
-}}
+{{sample 09_calendar/08_disabled_dates.html}} 
 
 ###Disabling dates
 
@@ -255,8 +244,7 @@ webix.ui({
 });
 ~~~
 
-
-{{editor http://webix.com/snippet/dbc8a69c	Disabled Time}}
+{{sample 09_calendar/11_disabled_time.html}} 
 
 **Defining blockTime() function for custom logic**
 
@@ -281,7 +269,7 @@ webix.ui({
 });
 ~~~
 
-{{editor http://webix.com/snippet/dbc8a69c	Disabled Time}}
+{{sample 09_calendar/11_disabled_time.html}} 
 
 CSS class applied to disabled time slots (**.webix_minutes .webix_cal_day_disabled**) can be redefined.
 
@@ -291,51 +279,23 @@ The Today button allows selecting the current date. The Clear button removes dat
 
 <img src="desktop/calendar_today_clear.png"/>
 
-These buttons are optional and specified in the **icons** array. The code below creates the buttons' config:
+These buttons are optional and specified in the **icons** array. The code below renders a calendar with a timepicker and Today and Clear buttons:
 
 
 ~~~js
-icons: [
-   // 'Today' definition 
-   {
-		template: function(){
-    		return "<span class='webix_cal_icon_today webix_cal_icon'>"
-    			+webix.i18n.calendar.today
-            	+"</span>";
-   		},
-		on_click:{
-  			"webix_cal_icon_today": function(){
-     			this.setValue(new Date());
-      			this.callEvent("onTodaySet",[this.getSelectedDate()]);
-    		}
-   	 	}
-	},
-     // 'Clear' definition 
-    {
-		template: function(){
-    		return "<span class='webix_cal_icon_clear webix_cal_icon'>"
-        		+webix.i18n.calendar.clear
-            	+"</span>";
-   		},
-   		on_click:{
-    		"webix_cal_icon_clear": function(){
-     			this.setValue("");
-      			this.callEvent("onDateClear",[this.getSelectedDate()]);
-    		}		
-   		}
-	}
-]
+webix.ui({
+  rows:[
+    { view:"calendar", timepicker:true, icons:true }
+  ]
+});
 ~~~  
 
-Both buttons have two properties: 
+To hide the buttons, you should set the **icons** property to **false**.
 
-- **template** - the template that defines presentation of an icon
-- **on_click** - specifies the onClick handler that processes clicking an element with certain css
+{{sample
+09_calendar/10_icons.html
+}}
 
-By default, these buttons are visible, but you can hide them by setting the **icons** property to **false**.
-
-
-{{editor http://webix.com/snippet/3d894d72	'Today' and 'Clear' buttons}}
 
 
 ##Related Articles

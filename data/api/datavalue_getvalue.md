@@ -37,5 +37,5 @@ Value of the control may be:
 - selected item like date in [calendar](desktop/calendar.md) and color in the [colorboard](desktop/colorboard.md);
 - state of the two-state control ([checkbox](desktop/checkbox.md), [radio](desktop/radio.md), [toggle](desktop/toggle.md));
 - selected option of integral buttons ([tabbar](desktop/tabbar.md), [tabview](desktop/tabview.md), [segmented](desktop/segmented.md);
-- selected option of [select](desktop/select.md), [richselect](desktop/richselectmd), and [combo](desktop/combo.md);
+- selected option of [select](desktop/select.md), [richselect](desktop/richselect.md), and [combo](desktop/combo.md);
 - string with selected options of a [multiselect](desktop/multiselect.md) and [multicombo](desktop/multicombo.md) control.

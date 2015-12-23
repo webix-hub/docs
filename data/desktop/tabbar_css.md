@@ -1,7 +1,6 @@
-Tabbar
+Tabbar CSS 
 ===========
 
-###CSS Image Map
 
 <img src="image_maps/tabbar_css.png"/>
 

@@ -1,7 +1,5 @@
-Label
+Label CSS 
 ==========
-
-###CSS Image Map
 
 <img src="image_maps/label_css.png"/>
 

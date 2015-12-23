@@ -20,12 +20,14 @@ var store = new webix.DataCollection({ url:"data.php" });
 - api/link/datacollection_callevent.md - calls an inner event
 - api/link/datacollection_clearall.md - removes all items from the component
 - api/link/datacollection_clearvalidation.md - removes all validation marks from the component
+- api/link/datacollection_copy.md - copies an item to the same or another object
 - api/link/datacollection_count.md - returns the number of currently visible items
 - api/link/datacollection_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/datacollection_destructor.md - destructs the calling object
 - api/link/datacollection_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/datacollection_exists.md - checks whether an item with the specified id exists
 - api/link/datacollection_filter.md - filters the component
+- api/link/datacollection_find.md - returns rows that match the criterion
 - api/link/datacollection_getbinddata.md - fills the target object with data
 - api/link/datacollection_getcursor.md - returns the current cursor position.
 - api/link/datacollection_getfirstid.md - returns the ID of the first item
@@ -40,6 +42,11 @@ var store = new webix.DataCollection({ url:"data.php" });
 - api/link/datacollection_load.md - loads data from an external data source.
 - api/link/datacollection_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
 - api/link/datacollection_mapevent.md - routes events from one object to another
+- api/link/datacollection_move.md - moves the specified item to the new position
+- api/link/datacollection_movebottom.md - moves the specified item to the last position
+- api/link/datacollection_movedown.md - increases the item index and moves the item to the new position
+- api/link/datacollection_movetop.md - moves the specified item to the first position
+- api/link/datacollection_moveup.md - decreases the item index and moves the item to the new position
 - api/link/datacollection_parse.md - loads data to the component from an inline data source
 - api/link/datacollection_refresh.md - repaints the whole view or a certain item
 - api/link/datacollection_refreshcursor.md - force repainting of all bound components with current cursor value
@@ -65,7 +72,7 @@ var store = new webix.DataCollection({ url:"data.php" });
 - api/link/datacollection_onafteradd_event.md - fires after adding item to datastore
 - api/link/datacollection_onaftercursorchange_event.md - fires after the cursor changes its position.
 - api/link/datacollection_onafterdelete_event.md - fires after item deleting
-- api/link/datacollection_onafterload_event.md - fires after server side loading is complete
+- api/link/datacollection_onafterload_event.md - fires after data loading is complete
 - api/link/datacollection_onaftersort_event.md - fires after sorting dataset
 - api/link/datacollection_onbeforeadd_event.md - fires before adding item to datastore
 - api/link/datacollection_onbeforecursorchange_event.md - fires before the cursor changes its position.
@@ -91,6 +98,7 @@ var store = new webix.DataCollection({ url:"data.php" });
 - api/link/datacollection_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/datacollection_datatype_config.md - the type of loaded data
 - api/link/datacollection_defaultdata_config.md - the property stores data which is displayed in the child when no records are selected in the  master.
+- api/link/datacollection_externaldata_config.md - allows defining custom 'move' logic for the component.
 - api/link/datacollection_id_config.md - the component ID
 - api/link/datacollection_map_config.md - defines data mapping
 - api/link/datacollection_on_config.md - allows attaching custom handlers to inner events of the component
@@ -99,7 +107,7 @@ var store = new webix.DataCollection({ url:"data.php" });
 - api/link/datacollection_rules_config.md - set of validation rules for the component
 - api/link/datacollection_save_config.md - defines URLs for data saving
 - api/link/datacollection_scheme_config.md - defines schemes for data processing
-- api/link/datacollection_url_config.md - the URL the component will use to load data after its initialization
+- api/link/datacollection_url_config.md - the URL which the component will use to load data after its initialization
 }}
 
 

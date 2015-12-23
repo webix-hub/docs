@@ -23,6 +23,7 @@ DataStore
 - api/datastore_each.md - iterates through the collection of data items
 - api/datastore_exists.md - checks whether an item with the specified id exists
 - api/datastore_filter.md - filters the component
+- api/datastore_find.md - returns rows that match the criterion
 - api/datastore_getfirstid.md - returns the ID of the first item
 - api/datastore_getidbyindex.md - returns the id of the item with the specified index
 - api/datastore_getindexbyid.md - returns the index of the item with the specified id

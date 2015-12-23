@@ -3,7 +3,7 @@ Segmented Button
 
 ##API Reference
 
-- [Methods, properties and events](api/refs/ui.segmented.mdl) 
+- [Methods, properties and events](api/refs/ui.segmented.md) 
 - [Shared functionality](desktop/controls_guide.md)
 
 ##Overview

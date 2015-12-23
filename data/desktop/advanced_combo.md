@@ -1,7 +1,7 @@
 Advanced Configuration of Popup Selectors
 =========================
 
-[Combo](desktop/combo.md), [richselect](desktop/richselect.md), [multiselect](desktop/multiselect.md) amd [multicombo](desktop/multicombo.md) controls can be highly customized
+[Combo](desktop/combo.md), [richselect](desktop/richselect.md), [multiselect](desktop/multiselect.md) and [multicombo](desktop/multicombo.md) controls can be highly customized
 because they are comprised of the following components: 
 
 - Webix [text](desktop/text.md)  input that can be either editable (for combos) or non-editable (for selects);
@@ -188,7 +188,7 @@ Data syncing is described in the [related article](desktop/data_binding.md#synci
 
 ##Attaching Events within a Suggest List
 
-You can attach functions to list under the common [Events Handling](desktop/event_handling) pattern:
+You can attach functions to list under the common [Events Handling](desktop/event_handling.md) pattern:
 
 ~~~js
 view:"combo", value:1, options:{

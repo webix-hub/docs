@@ -1,4 +1,4 @@
-Accordionitem
+Accordionitem Configuration
 ===============
 
 Accordionitem  inherits from [view](desktop/view.md) and is an integral part of the ui-related [accordion](desktop/accordion.md) component. You need at least two accordionitems to make a workable
@@ -33,7 +33,7 @@ webix.ui({
 - **headerHeight / headerAltHeight** - defines the height of a panel in an expanded/collapsed state;
 - **collapsed** (false or true) - defines the panel that will be expanded/collapsed on the app's loading.
 
-If you initialize **accordion** like below, you can omit accordioitem initilization: 
+If you initialize **accordion** like below, you can omit accordionitem initialization: 
 
 ~~~js
 webix.ui({ 
@@ -46,12 +46,12 @@ webix.ui({
 
 {{sample 80_docs/accordionitem.html}}
 
-Accordionitems can be collapsed and expanded prograsmmatically with the help of dedicated methods: 
+Accordionitems can be collapsed and expanded programmatically with the help of dedicated methods: 
 
 ~~~js
 $$('item1').collapse();
 $$('item1').expand();
-//don't forget to specidy IDs to accordionitems!
+//don't forget to specify IDs to accordionitems!
 ~~~
 
 {{note

@@ -22,7 +22,7 @@ $$("mychart").group({
 @related:
 	desktop/grouping.md
 @relatedsample: 
-	08_chart/03_group/01_group.html
+	08_chart/03_api/01_group.html
 @relatedapi:
 	api/groupstore_ungroup.md
 @defined:	GroupStore	

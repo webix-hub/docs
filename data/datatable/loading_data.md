@@ -1,4 +1,4 @@
-Data loading
+Loading Data into DataTable
 ====================
 
 DataTable can load data of various formats, such as:

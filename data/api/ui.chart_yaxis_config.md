@@ -17,7 +17,7 @@ webix.ui({
 		title:"Sales"
 	},
     origin:0
-})
+});
 
 @template:	api_config
 @defined:	ui.chart	

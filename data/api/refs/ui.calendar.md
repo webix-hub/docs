@@ -9,20 +9,17 @@ The control supports all date and time formats. Besides the days of the month, i
 ### Constructor
 
 ~~~js
-	var calendar = webix.ui({
-		view:"calendar", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_calendar({
-		...config options goes here..
-	});
+var calendar = webix.ui({   
+	view:"calendar",
+    date:new Date(2015,3,16),
+    events:webix.Date.isHoliday, 
+    weekHeader:true
+});
 ~~~
 
 ### Where to start
 
-- [Overview of Calendar Widget](desktop/calendar.md)
+- [Overview of the Calendar Widget](desktop/calendar.md)
 - [Samples](http://docs.webix.com/samples/09_calendar/index.html)
 
 <div class='webixdoc_parents'><span>Based on: </span>
@@ -84,10 +81,12 @@ The control supports all date and time formats. Besides the days of the month, i
 - api/ui.calendar_onbeforerender_event.md - triggered immediately before rendering of calendar is started.
 - api/ui.calendar_onbeforezoom_event.md - fires before zoom level of the calendar is changed
 - api/link/ui.calendar_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.calendar_onblur_event.md - fires when focus is moved out of the view
 - api/ui.calendar_onchange_event.md - fired when a user changes month, year or time in selector.
 - api/ui.calendar_ondateclear_event.md - fires on clicking the [Clear](desktop/calendar.md#todayandclearbuttons) button
 - api/ui.calendar_ondateselect_event.md - fires when a user selects a date.
 - api/link/ui.calendar_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.calendar_onfocus_event.md - fires when a view gets focus
 - api/link/ui.calendar_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.calendar_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.calendar_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
@@ -115,7 +114,7 @@ The control supports all date and time formats. Besides the days of the month, i
 - api/ui.calendar_calendarheader_config.md - the format for the title with the month name and year
 - api/ui.calendar_calendartime_config.md - defines calendar time format (with timepicker enabled)
 - api/ui.calendar_calendarweekheader_config.md - specifies the label for the column with weeks numbers
-- api/ui.calendar_cellheight_config.md - the height of the cell with day (36)
+- api/ui.calendar_cellheight_config.md - the height of the cell with day
 - api/link/ui.calendar_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.calendar_css_config.md - the name of a css class that will be applied to the view container
 - api/ui.calendar_date_config.md - sets the initial date of the calendar (particularly month and year).

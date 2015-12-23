@@ -84,7 +84,7 @@ By default, if you format dates with the **i18n** object, all the dates and numb
 
 ####**webix.Date**
 
-The Date object allows for formatting dates regardless of locales with the help of the **dateToSrt()** method. It requires format specification in its argument. 
+The Date object allows for formatting dates regardless of locales with the help of the **dateToStr()** method. It requires format specification in its argument. 
 
 ~~~js
 { header:"m/d/Y", sort:"date", id:"start", format:webix.Date.dateToStr("%m/%d/%y")}
@@ -229,6 +229,6 @@ Default formatting can be changed as well. Formatting rules are described above 
 
 {{sample 09_calendar/06_datepicker.html }}
 
-If a form is [bound](desktop/data_binding) to the component, it will load dates in the format specified by the component formatting pattern, or, if custom format is defined for datepicker, it will get the one from the latter. 
+If a form is [bound](desktop/data_binding.md) to the component, it will load dates in the format specified by the component formatting pattern, or, if custom format is defined for datepicker, it will get the one from the latter. 
 
 @complexity:2

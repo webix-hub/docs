@@ -13,7 +13,7 @@ Events
 - api/link/ui.treetable_onaftereditstart_event.md - fires after edit operation was initiated, editor opened and ready for input
 - api/link/ui.treetable_onaftereditstop_event.md - fires after edit operation finished
 - api/link/ui.treetable_onafterfilter_event.md - occurs after datatable was filtered
-- api/link/ui.treetable_onafterload_event.md - fires after server side loading is complete
+- api/link/ui.treetable_onafterload_event.md - fires after data loading is complete
 - api/link/ui.treetable_onafteropen_event.md - fires after the branch has been opened
 - api/link/ui.treetable_onafterrender_event.md - occurs each time after the view is rendered
 - api/link/ui.treetable_onafterscroll_event.md - occurs when some webix view has been scrolled
@@ -42,12 +42,14 @@ Events
 - api/link/ui.treetable_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.treetable_onbeforeunselect_event.md - fired before a cell is unselected
 - api/link/ui.treetable_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.treetable_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.treetable_oncheck_event.md - fires when a checkbox is checked or unchecked in the datatable item
 - api/link/ui.treetable_oncolumnresize_event.md - fires when width of column was changed
 - api/link/ui.treetable_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.treetable_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.treetable_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.treetable_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
+- api/link/ui.treetable_onfocus_event.md - fires when a view gets focus
 - api/link/ui.treetable_onheaderclick_event.md - occurs after clicking on header
 - api/link/ui.treetable_onitemcheck_event.md - fires when you check an item in tree and treetable
 - api/link/ui.treetable_onitemclick_event.md - fires when a component item was clicked
@@ -66,6 +68,9 @@ Events
 - api/link/ui.treetable_onselectchange_event.md - fires when selection is changed in a DataTable
 - api/link/ui.treetable_onstructureload_event.md - fires when the structure of DataTable (columns configuration) is initialized
 - api/link/ui.treetable_onstructureupdate_event.md - fires when structure of datatable was changed ( column added, hidden or reconfigured )
+- api/link/ui.treetable_onsubviewcreate_event.md - fires after a subview was created
+- api/link/ui.treetable_onsubviewopen_event.md - fires after a subview or subrow is opened
+- api/link/ui.treetable_onsubviewrender_event.md - fires each time subview is rendered
 - api/link/ui.treetable_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.treetable_onswipey_event.md - occurs on a vertical swipe movement
 - api/link/ui.treetable_ontimedkeypress_event.md - fires after typing has been finished in the field
@@ -118,12 +123,14 @@ Events
 - api/link/ui.treetable_onbeforesort_event.md
 - api/link/ui.treetable_onbeforeunselect_event.md
 - api/link/ui.treetable_onbindrequest_event.md
+- api/link/ui.treetable_onblur_event.md
 - api/link/ui.treetable_oncheck_event.md
 - api/link/ui.treetable_oncolumnresize_event.md
 - api/link/ui.treetable_ondatarequest_event.md
 - api/link/ui.treetable_ondataupdate_event.md
 - api/link/ui.treetable_ondestruct_event.md
 - api/link/ui.treetable_ondragout_event.md
+- api/link/ui.treetable_onfocus_event.md
 - api/link/ui.treetable_onheaderclick_event.md
 - api/link/ui.treetable_onitemcheck_event.md
 - api/link/ui.treetable_onitemclick_event.md
@@ -142,6 +149,9 @@ Events
 - api/link/ui.treetable_onselectchange_event.md
 - api/link/ui.treetable_onstructureload_event.md
 - api/link/ui.treetable_onstructureupdate_event.md
+- api/link/ui.treetable_onsubviewcreate_event.md
+- api/link/ui.treetable_onsubviewopen_event.md
+- api/link/ui.treetable_onsubviewrender_event.md
 - api/link/ui.treetable_onswipex_event.md
 - api/link/ui.treetable_onswipey_event.md
 - api/link/ui.treetable_ontimedkeypress_event.md

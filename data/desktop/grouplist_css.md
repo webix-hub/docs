@@ -1,7 +1,5 @@
-Groulist
+Grouplist CSS 
 =============
-
-###CSS Image Map
 
 <img src="image_maps/grouplist_css.png"/>
 

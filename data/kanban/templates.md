@@ -1,4 +1,4 @@
-Data Visualization
+Data Visualization in Kanban Board
 ====================
 
 You can represent various HTML-elements in the Kanban Board.  

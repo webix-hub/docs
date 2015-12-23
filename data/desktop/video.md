@@ -24,7 +24,7 @@ The component inherits from Webix [view](desktop/view.md) and is initialized wit
 webix.ui({
 	view:"video",
     id:"video1", //used to work with the component later
-    container:"video_div"
+    container:"video_div",
 	src: ["data/movie.ogv","data/movie.mp4"]
 });
 ~~~
@@ -32,7 +32,7 @@ webix.ui({
 Video source defined by **src** property can be either a single video file or an array of several ones. In case of **multiple src** browsers will use the first supported format, which ensures that your video will be recognized 
 regardless of the client side browser.
 
-Video component can be inited inside an HTML container (as above) as well as inside Webix [window](desktop/window.md):
+Video component can be initialized inside an HTML container (as above) as well as inside Webix [window](desktop/window.md):
 
 ~~~js
 webix.ui({

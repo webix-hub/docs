@@ -7,23 +7,32 @@ ui.context
 The component presents a plain window that can contain any content. Check [context](desktop/context.md) documentation for more detailed description.
 
 ### Constructor
-
+{{snippet
+HTML
+}}
+~~~html
+<!--Right click the area-->
+<div id="areaA" style=" background-color:#ffffbb; width:500px; height:300px;"></div>
+~~~
+{{snippet
+JS
+}}
 ~~~js
-	var context = webix.ui({
-		view:"context", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_context({
-		...config options goes here..
-	});
+var context = webix.ui({
+    view:"context",
+    body:{  template:"text" }, 
+    width:300, 
+    height:200,
+    master:"areaA"
+});
 ~~~
 
 ### Where to start
 
-- [Overview of Context Widget](desktop/context.md)
+- [Overview of the Context Widget](desktop/context.md)
 - [Samples](http://docs.webix.com/samples/03_menu/index.html)
+
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/contexthelper.md">ContextHelper</a>, <a href="api/refs/ui.popup.md">ui.popup</a>, <a href="api/refs/ui.window.md">ui.window</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/movable.md">Movable</a>, <a href="api/refs/modality.md">Modality</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
@@ -72,7 +81,9 @@ The component presents a plain window that can contain any content. Check [conte
 - api/link/ui.context_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.context_onbeforeshow_event.md - fires right after show() method is called for the window (popup) and before the window is shown
 - api/link/ui.context_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.context_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.context_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.context_onfocus_event.md - fires when a view gets focus
 - api/link/ui.context_onhide_event.md - fires when window is hidden
 - api/link/ui.context_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.context_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
@@ -107,7 +118,7 @@ The component presents a plain window that can contain any content. Check [conte
 - api/link/ui.context_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.context_id_config.md - the component ID
 - api/link/ui.context_left_config.md - the left offset of the window
-- api/link/ui.context_master_config.md - the area for which context object in inited
+- api/link/ui.context_master_config.md - the area for which context object in initialized
 - api/link/ui.context_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.context_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.context_minheight_config.md - sets the minimal height for the view
@@ -118,6 +129,8 @@ The component presents a plain window that can contain any content. Check [conte
 - api/link/ui.context_padding_config.md - sets paddings of the chart content
 - api/link/ui.context_position_config.md - sets position of the window relative to the the screen
 - api/link/ui.context_relative_config.md - positions a popup window relative to the component it's connected with
+- api/link/ui.context_resize_config.md - enables/disables window resizing
+- api/link/ui.context_tofront_config.md - places window above other windows on clicking it
 - api/link/ui.context_top_config.md - the top offset of a window
 - api/link/ui.context_width_config.md - sets the width of the component
 - api/link/ui.context_zindex_config.md - stack order of the component

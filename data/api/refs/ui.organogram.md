@@ -10,20 +10,25 @@ It's also possible to create your own css style for Organogram. Check desktop/or
 ### Constructor
 
 ~~~js
-var chart = webix.ui({
-	view:"organogram", 
-    container:"mydiv", 
-    ...config options goes here..
-})
-//or, in case of jQuery
-$("#mydiv").webix_organogram({
-	...config options goes here..
+var organogram = new webix.ui({
+  view:"organogram",
+  data: [
+     {id:"1", value:"Item 1", data:[
+		{ id:"1.1", value:"Item 1.1", data:[
+			{id:"1.1.1", value:"Item 1.1.1", data:[]},
+		]},
+		{ id:"1.2", value:"Item 1.2", data:[]},
+		{ id:"1.3", value:"Item 1.3", data:[
+			{ id:"1.3.1", value:"Item 1.3.1", data:[]}
+		]},
+	]}
+  ]
 });
 ~~~
 
 ### Where to start
 
-- [Overview of Organogram Widget](desktop/organogram.md)
+- [Overview of the Organogram Widget](desktop/organogram.md)
 - [Samples](http://docs.webix.com/samples/60_pro/07_organogram/index.html)
 
 
@@ -54,6 +59,7 @@ $("#mydiv").webix_organogram({
 - api/link/ui.organogram_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.organogram_exists.md - checks whether an item with the specified id exists
 - api/link/ui.organogram_filter.md - filters the component
+- api/link/ui.organogram_find.md - returns rows that match the criterion
 - api/link/ui.organogram_getbranchindex.md - gets index of the node in a specific branch
 - api/link/ui.organogram_getchildviews.md - returns child views of the calling component
 - api/link/ui.organogram_getfirstchildid.md - gets the ID of the first child of the specified branch
@@ -125,7 +131,7 @@ $("#mydiv").webix_organogram({
 - api/link/ui.organogram_onafterclose_event.md - fires after the branch has been closed
 - api/link/ui.organogram_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.organogram_onafterdelete_event.md - fires after item deleting
-- api/link/ui.organogram_onafterload_event.md - fires after server side loading is complete
+- api/link/ui.organogram_onafterload_event.md - fires after data loading is complete
 - api/link/ui.organogram_onafteropen_event.md - fires after the branch has been opened
 - api/link/ui.organogram_onafterrender_event.md - occurs immediately after the component has been rendered
 - api/link/ui.organogram_onafterscroll_event.md - occurs when some webix view has been scrolled
@@ -141,9 +147,11 @@ $("#mydiv").webix_organogram({
 - api/link/ui.organogram_onbeforeselect_event.md - fires before item selection is started
 - api/link/ui.organogram_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.organogram_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.organogram_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.organogram_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.organogram_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.organogram_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.organogram_onfocus_event.md - fires when a view gets focus
 - api/link/ui.organogram_onitemcheck_event.md - called when the checkbox inside the tree item was checked
 - api/link/ui.organogram_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.organogram_onitemdblclick_event.md - fires when a component item was double-clicked
@@ -207,7 +215,7 @@ $("#mydiv").webix_organogram({
 - api/link/ui.organogram_threestate_config.md - enable three-state checkboxes
 - api/link/ui.organogram_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.organogram_type_config.md - object that specifies items presentation
-- api/link/ui.organogram_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.organogram_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.organogram_width_config.md - sets the width of the component
 }}
 

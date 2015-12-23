@@ -5,22 +5,22 @@ popup
 @short:
 	allows to attach pop-up menu to the button
 
-@type: object
+@type: string
 @example:
 webix.ui({
-       view:"toolbar", 
-       elements:[
-       	{view:"button", label: 'Menu', popup:"my_pop"}, 
-        ...
-        ]
+  view:"toolbar", 
+  elements:[
+    {view:"button", label: 'Menu', popup:"my_pop"}, 
+    ...
+  ]
 });
 
 webix.ui({
-       view:"popup",
-       id:"my_pop",
-       body:{
-       	view:"list", 
-        ...
+  view:"popup",
+  id:"my_pop",
+  body:{
+    view:"list"
+  }
 }).hide();
             
 @relatedsample:

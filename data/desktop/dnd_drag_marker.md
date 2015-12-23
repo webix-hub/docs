@@ -31,7 +31,7 @@ document.body.appendChild(marker);
 The library features a [set of functions for working with HTML](api__refs__html.html). One of them, **create()**, makes an HTML div container with Javascript means, assigns a CSS to it while the content of the new 
 HTML block is empty, which is signified by *&nbsp*. 
 
-After that, you should extend the already inited component with the drag marker functionality. Here the **$dragMark** property comes to your help. Its value is a function that 
+After that, you should extend the already initialized component with the drag marker functionality. Here the **$dragMark** property comes to your help. Its value is a function that 
 makes the marker visible as soon as the dragged element reaches the target area. Marker dimensions depend on the dimensions of an element being dragged:  
 
 ~~~js

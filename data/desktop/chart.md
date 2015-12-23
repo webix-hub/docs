@@ -58,6 +58,9 @@ To learn about all the chart properties, please refer to the [corresponding chap
 - [Data Grouping](desktop/grouping.md)
 - [Operations with Chart Data](desktop/chart_operations.md)
 - [Chart Colouring](desktop/chart_coloreffects.md)
+- desktop/export_png.md
+- desktop/data_components_export.md
+
 
 
 ##Related Articles

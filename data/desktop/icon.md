@@ -15,7 +15,7 @@ UI-related icon is a button-like borderless clickable control with an icon on it
 ##Initialization
 
 ~~~js
-{ view:"icon", icon: 'mail', align:"left"}
+{ view:"icon", icon:"envelope", align:"left"}
 ~~~
 
 ####Main properties

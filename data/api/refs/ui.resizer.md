@@ -4,21 +4,32 @@ ui.resizer
 
 {{memo A draggable border in a layout. }}
 
-The component is used to make some view placed into a layout draggable by a specific border. Draggable borders differs visually from the undraggable. Check [layout](desktop/layout.md) documentation for more detailed description.
+The component is used to make some view placed into a layout draggable by a specific border. Draggable borders differ visually from the undraggable ones. Check the [layout](desktop/layout.md) documentation for more detailed description.
 
 ### Constructor
 
 ~~~js
-	var resizer = webix.ui({
-		view:"resizer", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_resizer({
-		...config options goes here..
-	});
+webix.ui({  
+  id:"layout",
+  rows:[
+    { template:"row 1" },
+    { view:"resizer" },
+    { template:"row 2" },
+    { view:"resizer" },
+    { cols:[
+      { template:"column 1" },
+      { view:"resizer"},
+      { template:"column 2" },
+    ]}
+  ]
+});
 ~~~
+
+### Where to start
+
+- [Overview of Resizer](desktop/layout.md#resizerlines)
+- [Samples](http://docs.webix.com/samples/01_layout)
+
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
@@ -55,7 +66,9 @@ The component is used to make some view placed into a layout draggable by a spec
 - api/link/ui.resizer_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.resizer_onbeforecontextmenu_event.md - fires before the context menu is called in the item area
 - api/link/ui.resizer_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.resizer_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.resizer_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.resizer_onfocus_event.md - fires when a view gets focus
 - api/link/ui.resizer_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.resizer_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.resizer_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus

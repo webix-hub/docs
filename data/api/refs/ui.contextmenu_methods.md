@@ -26,6 +26,7 @@ Methods
 - api/link/ui.contextmenu_enableitem.md - enables menu item
 - api/link/ui.contextmenu_exists.md - checks whether an item with the specified id exists
 - api/link/ui.contextmenu_filter.md - filters the component
+- api/link/ui.contextmenu_find.md - returns rows that match the criterion
 - api/link/ui.contextmenu_getbody.md - gets the ui view of the window body
 - api/link/ui.contextmenu_getchildviews.md - returns child views of the calling component
 - api/link/ui.contextmenu_getcontext.md - gets the master area for contextmenu
@@ -84,6 +85,7 @@ Methods
 - api/link/ui.contextmenu_setposition.md - sets window's position
 - api/link/ui.contextmenu_show.md - makes the component visible
 - api/link/ui.contextmenu_showitem.md - scrolls the component to make the specified item visible
+- api/link/ui.contextmenu_sizetocontent.md - adjusts the size of menu and its submenus to their content
 - api/link/ui.contextmenu_sort.md - sorts datastore
 - api/link/ui.contextmenu_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.contextmenu_unbind.md - breaks "bind" link
@@ -119,6 +121,7 @@ Methods
 - api/link/ui.contextmenu_enableitem.md
 - api/link/ui.contextmenu_exists.md
 - api/link/ui.contextmenu_filter.md
+- api/link/ui.contextmenu_find.md
 - api/link/ui.contextmenu_getbody.md
 - api/link/ui.contextmenu_getchildviews.md
 - api/link/ui.contextmenu_getcontext.md
@@ -177,6 +180,7 @@ Methods
 - api/link/ui.contextmenu_setposition.md
 - api/link/ui.contextmenu_show.md
 - api/link/ui.contextmenu_showitem.md
+- api/link/ui.contextmenu_sizetocontent.md
 - api/link/ui.contextmenu_sort.md
 - api/link/ui.contextmenu_sync.md
 - api/link/ui.contextmenu_unbind.md

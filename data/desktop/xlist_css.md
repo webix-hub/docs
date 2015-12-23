@@ -1,7 +1,6 @@
-XList
+XList CSS
 =============
 
-###CSS Image Map 
 
 <img src="image_maps/xlist_css.png" />
 

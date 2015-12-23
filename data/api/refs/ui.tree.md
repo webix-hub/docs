@@ -12,20 +12,29 @@ The component supports in-line node editing, advanced drag-and-drop, three-state
 
 ~~~js
 var tree = webix.ui({
-	view:"tree", 
-	container:"mydiv", 
-	...config options go here..
-})
-//or, in case of jQuery
-$("#mydiv").webix_tree({
-	...config options go here..
+	view:"tree",
+	select:true,
+	data: [
+   		{id:"root", value:"Cars", open:true, data:[
+			{ id:"1", open:true, value:"Toyota", data:[
+				{ id:"1.1", value:"Avalon" },
+				{ id:"1.2", value:"Corolla" },
+				{ id:"1.3", value:"Camry" }
+			]},
+			{ id:"2", value:"Skoda", open:true, data:[
+				{ id:"2.1", value:"Octavia" },
+				{ id:"2.2", value:"Superb" }
+			]}
+		]}
+	]
 });
 ~~~
 
 ### Where to start
 
-- [Overview of Tree Widget](datatree/index.md)
+- [Overview of the Tree Widget](datatree/index.md)
 - [Samples](http://docs.webix.com/samples/17_datatree/index.html)
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/group.md">Group</a>, <a href="api/refs/treeapi.md">TreeAPI</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/treedatamove.md">TreeDataMove</a>, <a href="api/refs/selectionmodel.md">SelectionModel</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/treedataloader.md">TreeDataLoader</a>, <a href="api/refs/treestore.md">TreeStore</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/ui.proto.md">ui.proto</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/treerenderstack.md">TreeRenderStack</a>, <a href="api/refs/copypaste.md">CopyPaste</a>, <a href="api/refs/treestatecheckbox.md">TreeStateCheckbox</a></div>
 
@@ -57,6 +66,7 @@ $("#mydiv").webix_tree({
 - api/link/ui.tree_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.tree_exists.md - checks whether an item with the specified id exists
 - api/link/ui.tree_filter.md - filters the component
+- api/link/ui.tree_find.md - returns rows that match the criterion
 - api/link/ui.tree_getbranchindex.md - gets index of the node in a specific branch
 - api/link/ui.tree_getchecked.md - returns ids of the checked items
 - api/link/ui.tree_getchildviews.md - returns child views of the calling component
@@ -66,7 +76,7 @@ $("#mydiv").webix_tree({
 - api/link/ui.tree_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.tree_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.tree_getitem.md - gets the object of the data item with the specified id
-- api/link/ui.tree_getitemnode.md - returns html element of item by item's id
+- api/link/ui.tree_getitemnode.md - returns HTML element of the item
 - api/link/ui.tree_getlastid.md - returns the id of the last item
 - api/link/ui.tree_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.tree_getnextsiblingid.md - returns the id of the next sibling of the specified node
@@ -104,7 +114,7 @@ $("#mydiv").webix_tree({
 - api/link/ui.tree_refresh.md - repaints the whole view or a certain item
 - api/link/ui.tree_remove.md - removes the specified item from datastore
 - api/link/ui.tree_removecss.md - removes CSS class from a component item
-- api/link/ui.tree_render.md - 
+- api/link/ui.tree_render.md - renders the specified item or the whole component
 - api/link/ui.tree_resize.md - adjusts the view to a new size
 - api/link/ui.tree_scrollto.md - scrolls the data container to a certain position
 - api/link/ui.tree_select.md - selects the specified item(s)
@@ -136,7 +146,7 @@ $("#mydiv").webix_tree({
 - api/link/ui.tree_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.tree_onafterdelete_event.md - fires after item deleting
 - api/link/ui.tree_onafterdrop_event.md - fires after drag-n-drop was finished
-- api/link/ui.tree_onafterload_event.md - fires after server side loading is complete
+- api/link/ui.tree_onafterload_event.md - fires after data loading is complete
 - api/link/ui.tree_onafteropen_event.md - fires after the branch has been opened
 - api/link/ui.tree_onafterrender_event.md - occurs immediately after the component has been rendered
 - api/link/ui.tree_onafterscroll_event.md - occurs when some webix view has been scrolled
@@ -156,10 +166,12 @@ $("#mydiv").webix_tree({
 - api/link/ui.tree_onbeforeselect_event.md - fires before item selection is started
 - api/link/ui.tree_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.tree_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.tree_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.tree_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.tree_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.tree_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.tree_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
+- api/link/ui.tree_onfocus_event.md - fires when a view gets focus
 - api/link/ui.tree_onitemcheck_event.md - fires when you check an item in tree and treetable
 - api/link/ui.tree_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.tree_onitemdblclick_event.md - fires when a component item was double-clicked
@@ -195,7 +207,6 @@ $("#mydiv").webix_tree({
 - api/link/ui.tree_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.tree_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.tree_data_config.md - JavaScript array containing data for the component
-- api/link/ui.tree_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.tree_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.tree_datatype_config.md - the type of loaded data
 - api/link/ui.tree_disabled_config.md - indicates whether an item is enabled or not
@@ -218,7 +229,6 @@ $("#mydiv").webix_tree({
 - api/link/ui.tree_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.tree_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
 - api/link/ui.tree_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
-- api/link/ui.tree_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
 - api/link/ui.tree_ready_config.md - event handler called just after the component has been completely initialized
 - api/link/ui.tree_removemissed_config.md - defines how to treat items in case of reloading
 - api/link/ui.tree_rules_config.md - set of validation rules for the component
@@ -232,7 +242,7 @@ $("#mydiv").webix_tree({
 - api/link/ui.tree_threestate_config.md - defines three-state checkboxes for the tree. Flase by default.
 - api/link/ui.tree_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.tree_type_config.md - object that specifies items presentation
-- api/link/ui.tree_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.tree_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.tree_width_config.md - sets the width of the component
 }}
 

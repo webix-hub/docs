@@ -5,7 +5,7 @@ uid
 @short: returns a unique id
 
 @returns:
-- id	id	a unique id	
+- id	number		a unique id	
 
 @example:
 var id = webix.uid();

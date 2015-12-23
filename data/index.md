@@ -7,14 +7,15 @@ Start
 <div class='index-pc'></div>
 <div class='index-board'>
 
-<h2>Meet Webix 2.5!</h2>
+<h2>Meet Webix 3.1!</h2>
 <ul>
-	<li>Support of upcoming Microsoft Edge</li>
-    <li><a href="kanban/configuration.md#creatingswimlanes">Swimlanes in Kanban widget</a></li>
-    <li>Ability to <a href="desktop/calendar.md#disablingdatesandtimeslotsincalendar">disable time periods</a> for Calendar widget</li>
+	<li><a href="desktop/sidemenu.md">Sidemenu</a> widget and <a href="desktop/sidebar.md">Sidebar</a> extension</li>
+    <li><a href="desktop/treemap.md">Treemap</a> widget</li>
+    <li>Autowidth for <a href="desktop/menu.md#workingwithmenuitems">menu items</a> and <a href="desktop/button.md">buttons</a></li>
+    
 </ul>
 
-<p> and <a href="desktop/whats_new_2_5.md">many more...</a></p>
+<p> and <a href="desktop/whats_new_3_1.md">many more...</a></p>
 <a href='http://webix.com/download/' class='index-download' title='Download Webix'></a>
 </div>
 

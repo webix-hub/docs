@@ -13,7 +13,7 @@ webix.ui({ view:"checkbox", uncheckValue:"off" })
 @template:	api_config
 @descr:
 
-Default value is 0
+Default value is 0.
 
 @relatedapi:
 	api/ui.checkbox_checkvalue_config.md

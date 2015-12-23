@@ -1,7 +1,5 @@
-Menu
+Menu CSS 
 =============
-
-###Css Image Map
 
 <img src="image_maps/menu_css.png"/>
 

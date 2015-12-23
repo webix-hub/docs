@@ -11,10 +11,20 @@ getValues
 values	hash  returns hash of form values: data entered by user or initial data from the value property. 
 	
 @example:
+webix.ui({
+	view:"form",
+    elements:[
+         //name is necessary for getting the control's value
+    	 { view:"text", label:'Login', name:"login"},
+    	 { view:"text", label:'Email', name:"email" },
+    	 { view:"button", value:"Sumbit"}
+    ]
+});
+
 
 function get_form() {
-	var values = $$('myform').getValues();
-    console.log(values);
+	var values = $$("myform").getValues();
+    //returns { login:"", email:""}
 }
 @relatedapi:
 	api/link/ui.form_setvalues.md
@@ -67,7 +77,7 @@ To get value of some specific element within the form, you should specify its **
 webix.ui({
 	view:"form",
     elements: [
-    	{view:"text", id:"title", placeholder:"Enter film title"},
+    	{view:"text", name:"title", placeholder:"Enter film title"},
         {...},
         {view:"button", click:"get_title"}
     ]

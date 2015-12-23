@@ -9,20 +9,17 @@ It's also possible to create a custom barcode. Check desktop/barcode.md document
 ### Constructor
 
 ~~~js
-var chart = webix.ui({
-	view:"barcode", 
-    container:"mydiv", 
-    ...config options goes here..
-})
-//or, in case of jQuery
-$("#mydiv").webix_barcode({
-	...config options goes here..
+var barcode = webix.ui({
+	view: "barcode",
+	id:"barcode",
+	type: "ean13",
+	value: "123456789012"
 });
 ~~~
 
 ### Where to start
 
-- [Overview of Barcode Widget](desktop/barcode.md)
+- [Overview of the Barcode Widget](desktop/barcode.md)
 - [Samples](http://docs.webix.com/samples/60_pro/08_barcode/index.html)
 
 <div class='webixdoc_parents'><span>Based on: </span>
@@ -61,7 +58,9 @@ $("#mydiv").webix_barcode({
 {{api
 - api/link/ui.barcode_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.barcode_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.barcode_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.barcode_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.barcode_onfocus_event.md - fires when a view gets focus
 - api/link/ui.barcode_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.barcode_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.barcode_onswipex_event.md - occurs on a horizontal swipe movement

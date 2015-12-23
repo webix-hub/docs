@@ -1,0 +1,1 @@
+@link: api/ui.datatable_onselectchange_event.md

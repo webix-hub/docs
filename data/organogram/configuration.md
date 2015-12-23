@@ -31,19 +31,23 @@ webix.ui({
 });	
 ~~~
 
-- **lineColor** - color of the line that connects items in organogram
-
-~~~js
-webix.ui({
-	view: "organogram",
-    lineColor: "#90caf9",
-    ...
-});	
-~~~
 Items configuration
 ----------------------
 
 The appearance of Organogram items can also be changed by setting the following properties in the **type** parameter: 
+
+
+- **lineColor** - color of the line that connects items in organogram
+
+~~~js
+webix.ui({
+    view: "organogram",
+    type: {
+        lineColor: "#90caf9"
+    },
+    ...
+});
+~~~
 
 - **width** - the width of an item in pixels, must be a fixed number
 
@@ -195,11 +199,33 @@ var orgChart = new webix.ui({
 });
 ~~~
  
-
-
 {{sample
 60_pro/07_organogram/02_list.html
 }}
+
+###Customizing List Blocks
+
+By default, list items in the block are placed into a standard HTML list. To separate them visually and show their dependence on one and the same parent, 
+define the following values within the Organogram type: 
+
+- **listMarginX** - space between the vertical line and block items;
+- **listMarginY** - space between two block items in the line.
+
+<img src="desktop/organogram_list_blocks_margin.png"/>
+
+~~~js
+webix.ui({
+	view:"organogram",
+	type:{
+    	listMarginX: 20,
+    	listMarginY: 20
+	}
+});    
+~~~
+
+{{sample 60_pro/07_organogram/08_list_blocks.html}}
+
+
 
 @edition:pro
 

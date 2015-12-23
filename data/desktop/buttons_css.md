@@ -1,7 +1,5 @@
-Button 
+Button CSS 
 =============
-
-###CSS Image Map
 
 <img src="image_maps/buttons_css.png"/>
 

@@ -10,21 +10,25 @@ Support for various data template formats, sorting and filtering features. Check
 ### Constructor
 
 ~~~js
-	var grouplist = webix.ui({
-		view:"grouplist", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_grouplist({
-		...config options goes here..
-	});
+var grouplist = webix.ui({
+  view:"grouplist",
+  scroll:false,
+  data:[
+    {id:"root", value:"Films data", open:true, data:[
+      { id:"1", open:true, value:"The Shawshank Redemption", data:[
+        { id:"1.1", value:"Part 1" },
+        { id:"1.2", value:"Part 2"}
+      ]}
+    ]}
+  ]
+});
 ~~~
 
 ### Where to start
 
-- [Overview of Grouplist Widget](desktop/grouplist.md)
+- [Overview of the Grouplist Widget](desktop/grouplist.md)
 - [Samples](http://docs.webix.com/samples/05_list/index.html)
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/group.md">Group</a>, <a href="api/refs/ui.list.md">ui.list</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/selectionmodel.md">SelectionModel</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/ui.proto.md">ui.proto</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/copypaste.md">CopyPaste</a></div>
 
@@ -52,6 +56,7 @@ Support for various data template formats, sorting and filtering features. Check
 - api/link/ui.grouplist_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.grouplist_exists.md - checks whether an item with the specified id exists
 - api/link/ui.grouplist_filter.md - filters the component
+- api/link/ui.grouplist_find.md - returns rows that match the criterion
 - api/link/ui.grouplist_getchildviews.md - returns child views of the calling component
 - api/link/ui.grouplist_getfirstid.md - returns the ID of the first item
 - api/link/ui.grouplist_getformview.md - returns master form for the input
@@ -122,7 +127,7 @@ Support for various data template formats, sorting and filtering features. Check
 - api/link/ui.grouplist_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.grouplist_onafterdelete_event.md - fires after item deleting
 - api/link/ui.grouplist_onafterdrop_event.md - fires after drag-n-drop was finished
-- api/link/ui.grouplist_onafterload_event.md - fires after server side loading is complete
+- api/link/ui.grouplist_onafterload_event.md - fires after data loading is complete
 - api/link/ui.grouplist_onafterrender_event.md - occurs immediately after the component has been rendered
 - api/link/ui.grouplist_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.grouplist_onafterselect_event.md - fires after item was selected
@@ -139,10 +144,12 @@ Support for various data template formats, sorting and filtering features. Check
 - api/link/ui.grouplist_onbeforeselect_event.md - fires before item selection is started
 - api/link/ui.grouplist_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.grouplist_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.grouplist_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.grouplist_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.grouplist_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.grouplist_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.grouplist_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
+- api/link/ui.grouplist_onfocus_event.md - fires when a view gets focus
 - api/link/ui.grouplist_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.grouplist_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.grouplist_onitemrender_event.md - for each item rendering, occurs only for items with custom templates
@@ -218,7 +225,7 @@ Support for various data template formats, sorting and filtering features. Check
 - api/ui.grouplist_templateitem_config.md - an html template that defines data that will be presented in grouplist
 - api/link/ui.grouplist_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.grouplist_type_config.md - object that specifies items presentation
-- api/link/ui.grouplist_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.grouplist_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.grouplist_width_config.md - sets the width of the component
 - api/link/ui.grouplist_xcount_config.md - defines width of view in items
 - api/link/ui.grouplist_ycount_config.md - defines height of view in items

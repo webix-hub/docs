@@ -9,16 +9,29 @@ Each accordion pane consists of the header and body. The body of a pane can be c
 ### Constructor
 
 ~~~js
-	var accordionitem = webix.ui({
-		view:"accordionitem", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_accordionitem({
-		...config options goes here..
-	});
+var accordionitem = webix.ui({
+  	view:"accordion",
+  	height:600,
+  	rows:[
+    {
+      view:"accordionitem",
+      header:"Pane 1",
+      headerHeight:50,
+      body:"Pane body 1",
+    },
+    { 
+      view:"accordionitem",
+      header:"Pane 2",
+      body:"Pane body 2", 
+      collapsed: true
+    }]
+});
 ~~~
+
+### Where to start
+
+- [Overview of Accordionitem](desktop/accordionitem.md)
+- [Samples](http://docs.webix.com/samples/80_docs/accordionitem.html)
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
@@ -65,7 +78,9 @@ Each accordion pane consists of the header and body. The body of a pane can be c
 - api/link/ui.accordionitem_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.accordionitem_onbeforecontextmenu_event.md - fires before the context menu is called in the item area
 - api/link/ui.accordionitem_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.accordionitem_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.accordionitem_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.accordionitem_onfocus_event.md - fires when a view gets focus
 - api/link/ui.accordionitem_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.accordionitem_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.accordionitem_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus

@@ -1,4 +1,4 @@
-Copy-pasting data
+Copy-Pasting Tree Data
 ==========================
 To enable the possibility to copy/paste Tree data by the CTRL+C/CTRL+V keyboard shortcuts you should use parameter [clipboard](api/link/ui.tree_clipboard_config.md).
 
@@ -42,7 +42,7 @@ Setting the 'modify' behavior of copying
 tree = new webix.ui({
 	view:"tree",
 	...
-	clipboard:"insert"
+	clipboard:true
 });
 ~~~
 
@@ -53,7 +53,7 @@ tree = new webix.ui({
 'Insert' copying
 -------------------
 
-- When you copy the selected node in the tree,  you copy the node title (doen't matter it's a parent or child node);
+- When you copy the selected node in the tree, you copy the node's title (doesn't matter whether it's a parent or a child node);
 - When you paste a text to the tree, it will be added as a child item of the selected node.
 
 {{snippet
@@ -79,7 +79,7 @@ The *'custom'* value allows you to specify a custom logic for the paste operatio
 
 To apply a custom 'paste' behaviour to the tree:
 
-- Set the [clipboard](api/link/ui.tree_clipboard_config.md) parameter to *true*.
+- Set the [clipboard](api/link/ui.tree_clipboard_config.md) parameter to *"custom"*.
 ~~~js
 tree = new webix.ui({
 	view:"tree",

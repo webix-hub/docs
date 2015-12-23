@@ -9,21 +9,24 @@ The component can be displayed in 2 modes: static (the menu is fully expanded al
 ### Constructor
 
 ~~~js
-	var menu = webix.ui({
-		view:"menu", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_menu({
-		...config options goes here..
-	});
+var menu = webix.ui({
+	view:"menu", 
+	data:[
+		{id:1, value:"Translate", submenu:["English", "French", "German"]}, 
+		{id:2, value:"Post"}, 
+		{id:3, value:"Info"}
+	],
+	type:{
+		subsign:true,
+	}   
+});
 ~~~
 
 ### Where to start
 
-- [Overview of Menu Widget](desktop/menu.md)
+- [Overview of the Menu Widget](desktop/menu.md)
 - [Samples](http://docs.webix.com/samples/03_menu/index.html)
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.list.md">ui.list</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/selectionmodel.md">SelectionModel</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/ui.proto.md">ui.proto</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/copypaste.md">CopyPaste</a></div>
 
@@ -53,6 +56,7 @@ The component can be displayed in 2 modes: static (the menu is fully expanded al
 - api/ui.menu_enableitem.md - enables menu item
 - api/link/ui.menu_exists.md - checks whether an item with the specified id exists
 - api/link/ui.menu_filter.md - filters the component
+- api/link/ui.menu_find.md - returns rows that match the criterion
 - api/link/ui.menu_getchildviews.md - returns child views of the calling component
 - api/link/ui.menu_getfirstid.md - returns the ID of the first item
 - api/link/ui.menu_getformview.md - returns master form for the input
@@ -106,6 +110,7 @@ The component can be displayed in 2 modes: static (the menu is fully expanded al
 - api/link/ui.menu_setpage.md - makes the specified page visible (assuming that the pager was defined )
 - api/link/ui.menu_show.md - makes the component visible
 - api/link/ui.menu_showitem.md - scrolls the component to make the specified item visible
+- api/ui.menu_sizetocontent.md - adjusts the size of menu and its submenus to their content
 - api/link/ui.menu_sort.md - sorts datastore
 - api/link/ui.menu_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.menu_unbind.md - breaks "bind" link
@@ -125,7 +130,7 @@ The component can be displayed in 2 modes: static (the menu is fully expanded al
 - api/link/ui.menu_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.menu_onafterdelete_event.md - fires after item deleting
 - api/link/ui.menu_onafterdrop_event.md - fires after drag-n-drop was finished
-- api/link/ui.menu_onafterload_event.md - fires after server side loading is complete
+- api/link/ui.menu_onafterload_event.md - fires after data loading is complete
 - api/link/ui.menu_onafterrender_event.md - occurs immediately after the component has been rendered
 - api/link/ui.menu_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.menu_onafterselect_event.md - fires after item was selected
@@ -142,10 +147,12 @@ The component can be displayed in 2 modes: static (the menu is fully expanded al
 - api/link/ui.menu_onbeforeselect_event.md - fires before item selection is started
 - api/link/ui.menu_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.menu_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.menu_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.menu_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.menu_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.menu_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.menu_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
+- api/link/ui.menu_onfocus_event.md - fires when a view gets focus
 - api/link/ui.menu_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.menu_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.menu_onitemrender_event.md - for each item rendering, occurs only for items with custom templates
@@ -206,6 +213,7 @@ The component can be displayed in 2 modes: static (the menu is fully expanded al
 - api/link/ui.menu_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.menu_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
 - api/link/ui.menu_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
+- api/ui.menu_openaction_config.md - alters the way of submenu opening to "click"
 - api/link/ui.menu_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
 - api/link/ui.menu_ready_config.md - event handler called just after the component has been completely initialized
 - api/link/ui.menu_removemissed_config.md - defines how to treat items in case of reloading
@@ -216,12 +224,12 @@ The component can be displayed in 2 modes: static (the menu is fully expanded al
 - api/link/ui.menu_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.menu_select_config.md - enables/disables item selection or multiselection in grouplist
 - api/ui.menu_submenupos_config.md - aligns submenu towards main menu
-- api/ui.menu_submenu_config.md - defines submenu configuration
+- api/ui.menu_submenuconfig_config.md - defines submenu configuration
 - api/link/ui.menu_template_config.md - the component template
 - api/link/ui.menu_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
 - api/link/ui.menu_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.menu_type_config.md - object that specifies items presentation
-- api/link/ui.menu_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.menu_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.menu_width_config.md - sets the width of the component
 - api/link/ui.menu_xcount_config.md - defines width of view in items
 - api/link/ui.menu_ycount_config.md - defines height of view in items

@@ -1,7 +1,6 @@
-Textarea
+Textarea CSS
 =============
 
-###CSS Image Map
 
 <img src="image_maps/textarea_css.png">
 

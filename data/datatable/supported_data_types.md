@@ -1,4 +1,4 @@
-Examples of data formats
+Examples of Data Formats
 =========================
 
 <table class="list" cellspacing="0" cellpadding="5" border="0">

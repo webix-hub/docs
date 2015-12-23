@@ -5,7 +5,7 @@ rules
 @short:
 	set of validation rules for the component
 
-@type: 
+@type: object
 @example:
 
 webix.ui({

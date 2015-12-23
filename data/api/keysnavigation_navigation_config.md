@@ -11,7 +11,7 @@ webix.ui({
     view:"datatable",
     navigation:true,
     ...
-})
+});
 
 @relatedsample:
 	15_datatable/05_selection/09_navigation.html

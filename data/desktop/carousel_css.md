@@ -1,7 +1,6 @@
-Carousel 
+Carousel CSS 
 =============
 
-###CSS Image Map
 
 <img src="image_maps/carousel_css.png">
 

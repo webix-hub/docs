@@ -3,20 +3,21 @@ link
 
 @short: sets the component to display values of the files chosen for upload;
 	
-@type: id
+@type: string
 @example:
-webix.ui(
-    {view:"form", rows:[
-        {
-        view:"uploader",
-        value:"Upload file",
-        link:"mylist", //ID of the linked list 
-        upload:"php/upload.php"
+webix.ui({
+	view:"form", 
+    rows:[
+        {  
+        	view:"uploader", 
+        	value:"Upload file",
+        	link:"mylist", //ID of the linked list 
+        	upload:"php/upload.php"
         }, 
         {
-        view:"list",  
-        id:"mylist", 
-        type:"uploader" //defines config of each list item
+        	view:"list",  
+        	id:"mylist", 
+        	type:"uploader" //defines config of each list item
         }
     ]
 });
@@ -70,9 +71,9 @@ Don't forget to set your custom type for the linked list.
 }}
 ~~~js
 webix.ui({
-		view:"list",
-		type:"custom type"
-		...
+	view:"list",
+	type:"custom type"
+	...
 });
 ~~~
 

@@ -6,12 +6,11 @@ Components in webix UI library are objects that can be cloned and copied as well
 Let's take for instance the toolbar component and play around with it. It has three properties - width, height and cols object with three buttons. 
 
 ~~~js
-var barA = {view:"toolbar", width:500, paddingY:2,
-			cols:[
-				{ view:"button", value:"Load" },
-				{ view:"button", value:"Save" },
-				{ view:"button", value:"Info" }]
-		};
+var barA = { view:"toolbar", width:500, paddingY:2, cols:[
+	{ view:"button", value:"Load" },
+	{ view:"button", value:"Save" },
+	{ view:"button", value:"Info" }
+]};
 ~~~
 
 ##Copying
@@ -51,12 +50,11 @@ The method is useful when you'd like to create two independant instances of one 
 This is how a new [pager](desktop/paging.md) is created on the base of the *pagerA* one. 
 
 ~~~js
-$$('pagerA').clone({
-		container:"pagingB_here", //own parameters
-		size:50,				
-		group:5
-	});
- });
+$$("pagerA").clone({
+	container:"pagingB_here", //own parameters
+	size:50,				
+	group:5
+});
 ~~~
 
 {{sample 25_pager/05_twoareas.html}}
@@ -88,22 +86,19 @@ barB = {view:"toolbar", width:500, paddingY:2, cols: [{view:"button", value:"Acc
 //width and padding are inherited properties
 ~~~
 
-
-{{snippet
 Full (object-based) copy with the help of extend();
-}}
+
 ~~~js 
 
 webix.extend(barB, barA, true); 
 
 //here we get a copy with all the properties overwritten: 
 
-var barB = {view:"toolbar", width:500, paddingY:2,
-			cols:[
-				{ view:"button", value:"Load" },
-				{ view:"button", value:"Save" },
-				{ view:"button", value:"Info" }]
-		};
+var barB = {view:"toolbar", width:500, paddingY:2, cols:[
+	{ view:"button", value:"Load" },
+	{ view:"button", value:"Save" },
+	{ view:"button", value:"Info" }
+]};
 ~~~
 
 ##Extended Functionality
@@ -117,7 +112,7 @@ It can be enabled with the **extend();** method while the source object here is 
 webix.ui({
 	view:"toolbar",
     ...
-})
+});
 webix.extend($$("my_toolbar"),webix.Movable);
 ~~~
 
@@ -135,8 +130,7 @@ Movable Toolbar
 }}
 ~~~js
 mytoolbar = webix.proto({webix.Movable},webix.ui.toolbar);
-var obj = new mytoolbar({
-				view:"toolbar",... );
+var obj = new mytoolbar({ view:"toolbar",... });
 // outputs a movable toolbar
 ~~~
 
@@ -147,13 +141,14 @@ This is how it looks in case you want to make your list editable.
 Editable List
 }}
 ~~~js
-webix.protoUI({name:"mylist"}, 
-            webix.EditAbility, 
-            webix.ui.list);
+webix.protoUI({
+	name:"mylist"
+}, webix.EditAbility, webix.ui.list);
             
-webix.ui({view:"editlist", 
-		..
-       });         
+webix.ui({
+	view:"editlist", 
+	...
+});         
 ~~~
 
 {{sample 05_list/05_editable.html }}

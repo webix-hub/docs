@@ -8,22 +8,38 @@ The component presents a pop-up menu that is displayed when the user clicks the 
 
 ### Constructor
 
+{{snippet 
+HTML
+}}
+~~~html
+<!--Right click the area-->
+<div id="areaA" style=" background-color:#ffffbb; width:500px; height:300px;"></div>
+~~~
+
+{{snippet 
+JS
+}}
 ~~~js
-	var contextmenu = webix.ui({
-		view:"contextmenu", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_contextmenu({
-		...config options goes here..
-	});
+var contextmenu = webix.ui({
+	view:"contextmenu",
+  	data:[
+    	{ value:"Translate...", submenu:[ 
+      	"English", 
+      	"Slavic",
+      	"German"
+    	]},
+    	{ value:"Info" }
+  	],
+  	master:"areaA"
+});
+
 ~~~
 
 ### Where to start
 
-- [Overview of ContextMenu Widget](desktop/contextmenu.md)
+- [Overview of the ContextMenu Widget](desktop/contextmenu.md)
 - [Samples](http://docs.webix.com/samples/03_menu/index.html)
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/contexthelper.md">ContextHelper</a>, <a href="api/refs/ui.submenu.md">ui.submenu</a>, <a href="api/refs/ui.menu.md">ui.menu</a>, <a href="api/refs/ui.list.md">ui.list</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/selectionmodel.md">SelectionModel</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/ui.proto.md">ui.proto</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/copypaste.md">CopyPaste</a>, <a href="api/refs/ui.popup.md">ui.popup</a>, <a href="api/refs/ui.window.md">ui.window</a>, <a href="api/refs/movable.md">Movable</a>, <a href="api/refs/modality.md">Modality</a></div>
 
@@ -55,6 +71,7 @@ The component presents a pop-up menu that is displayed when the user clicks the 
 - api/link/ui.contextmenu_enableitem.md - enables menu item
 - api/link/ui.contextmenu_exists.md - checks whether an item with the specified id exists
 - api/link/ui.contextmenu_filter.md - filters the component
+- api/link/ui.contextmenu_find.md - returns rows that match the criterion
 - api/link/ui.contextmenu_getbody.md - gets the ui view of the window body
 - api/link/ui.contextmenu_getchildviews.md - returns child views of the calling component
 - api/link/ui.contextmenu_getcontext.md - gets the master area for contextmenu
@@ -113,6 +130,7 @@ The component presents a pop-up menu that is displayed when the user clicks the 
 - api/link/ui.contextmenu_setposition.md - sets window's position
 - api/link/ui.contextmenu_show.md - makes the component visible
 - api/link/ui.contextmenu_showitem.md - scrolls the component to make the specified item visible
+- api/link/ui.contextmenu_sizetocontent.md - adjusts the size of menu and its submenus to their content
 - api/link/ui.contextmenu_sort.md - sorts datastore
 - api/link/ui.contextmenu_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.contextmenu_unbind.md - breaks "bind" link
@@ -132,7 +150,7 @@ The component presents a pop-up menu that is displayed when the user clicks the 
 - api/link/ui.contextmenu_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.contextmenu_onafterdelete_event.md - fires after item deleting
 - api/link/ui.contextmenu_onafterdrop_event.md - fires after drag-n-drop was finished
-- api/link/ui.contextmenu_onafterload_event.md - fires after server side loading is complete
+- api/link/ui.contextmenu_onafterload_event.md - fires after data loading is complete
 - api/link/ui.contextmenu_onafterrender_event.md - occurs immediately after the component has been rendered
 - api/link/ui.contextmenu_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.contextmenu_onafterselect_event.md - fires after item was selected
@@ -150,10 +168,12 @@ The component presents a pop-up menu that is displayed when the user clicks the 
 - api/link/ui.contextmenu_onbeforeshow_event.md - fires right after show() method is called for the window (popup) and before the window is shown
 - api/link/ui.contextmenu_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.contextmenu_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.contextmenu_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.contextmenu_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.contextmenu_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.contextmenu_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.contextmenu_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
+- api/link/ui.contextmenu_onfocus_event.md - fires when a view gets focus
 - api/link/ui.contextmenu_onhide_event.md - fires when window is hidden
 - api/link/ui.contextmenu_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.contextmenu_onitemdblclick_event.md - fires when a component item was double-clicked
@@ -212,7 +232,7 @@ The component presents a pop-up menu that is displayed when the user clicks the 
 - api/link/ui.contextmenu_id_config.md - the component ID
 - api/link/ui.contextmenu_layout_config.md - defines x or y orientation of layout
 - api/link/ui.contextmenu_left_config.md - the left offset of the window
-- api/link/ui.contextmenu_master_config.md - the area for which context object in inited
+- api/link/ui.contextmenu_master_config.md - the area for which context object in initialized
 - api/link/ui.contextmenu_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.contextmenu_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.contextmenu_minheight_config.md - sets the minimal height for the view
@@ -227,12 +247,14 @@ The component presents a pop-up menu that is displayed when the user clicks the 
 - api/link/ui.contextmenu_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.contextmenu_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
 - api/link/ui.contextmenu_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
+- api/link/ui.contextmenu_openaction_config.md - alters the way of submenu opening to "click"
 - api/link/ui.contextmenu_padding_config.md - sets paddings of the chart content
 - api/link/ui.contextmenu_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
 - api/link/ui.contextmenu_position_config.md - sets position of the window relative to the the screen
 - api/link/ui.contextmenu_ready_config.md - event handler called just after the component has been completely initialized
 - api/link/ui.contextmenu_relative_config.md - positions a popup window relative to the component it's connected with
 - api/link/ui.contextmenu_removemissed_config.md - defines how to treat items in case of reloading
+- api/link/ui.contextmenu_resize_config.md - enables/disables window resizing
 - api/link/ui.contextmenu_rules_config.md - set of validation rules for the component
 - api/link/ui.contextmenu_save_config.md - defines URLs for data saving
 - api/link/ui.contextmenu_scheme_config.md - defines schemes for data processing
@@ -240,13 +262,14 @@ The component presents a pop-up menu that is displayed when the user clicks the 
 - api/link/ui.contextmenu_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.contextmenu_select_config.md - enables/disables item selection or multiselection in grouplist
 - api/link/ui.contextmenu_submenupos_config.md - aligns submenu towards main menu
-- api/link/ui.contextmenu_submenu_config.md - defines submenu configuration
+- api/link/ui.contextmenu_submenuconfig_config.md - defines submenu configuration
 - api/link/ui.contextmenu_template_config.md - the component template
 - api/link/ui.contextmenu_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
+- api/link/ui.contextmenu_tofront_config.md - places window above other windows on clicking it
 - api/link/ui.contextmenu_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.contextmenu_top_config.md - the top offset of a window
 - api/link/ui.contextmenu_type_config.md - object that specifies items presentation
-- api/link/ui.contextmenu_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.contextmenu_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.contextmenu_width_config.md - sets the width of the component
 - api/link/ui.contextmenu_xcount_config.md - defines width of view in items
 - api/link/ui.contextmenu_ycount_config.md - defines height of view in items

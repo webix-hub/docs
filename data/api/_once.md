@@ -11,9 +11,9 @@ once
 
 @example:
 
-some.attachEvent("onItemClick", webix.once(function()({
-    alert("Will be shown only for the first click");
-}))
+datatable.attachEvent("onItemClick", webix.once(function(id){
+    webix.message(id); //Will be shown only for the first click;
+});
 
 
 @template:	api_method

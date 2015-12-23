@@ -1,7 +1,7 @@
-Message Box
+Message Box CSS 
 =============
 
-###CSS Image Map
+
 
 <img src="image_maps/message_css.png" />
 

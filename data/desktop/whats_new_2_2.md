@@ -76,7 +76,7 @@ If you are updating from Webix 1.x - please check the [Migration guide](migratio
 - repainting after removing item in the Tree
 - replacing hidden cell in multiview
 - richSelectFilter and getFilter API
-- scroll state in DataTable after hide|show operations
+- scroll state in DataTable after hide/show operations
 - selection in dataview with dynamic loading
 - setState in DataTable will ignore columns with non-unique ids
 - sorting ignores state set by the markSorting API

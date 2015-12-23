@@ -102,6 +102,20 @@ By default, the sub items will be treated as **rows** for layouts and form and *
 
 {{sample 23_markup/01_html/01_init.html}}
 
+- **config** - defines configuration for a complex property that contains several settings in itself: 
+
+~~~html
+<div data-view="list">
+  <config name="type" height="50" width="200"></config>
+	#id#: #value#
+  <ul data-view="data">
+  	<li id="9998">Item 1</li>
+	<li id="9999" class='myitem'>Item 2</li>
+  </ul>
+</div>
+~~~
+
+
 ###5. Standard HTML 
 
 Standard HTML is used for: 
@@ -285,7 +299,7 @@ $$("win1").show();
 
 ####Menu and submenu peculiarities
 
-If [menu](desktop/menu.md) is initialized from markup it's vital to remember that its submenus should be as well inited the same way as windows: 
+If [menu](desktop/menu.md) is initialized from markup it's vital to remember that its submenus should be as well initialized the same way as windows: 
 
 ~~~html
 <div data-view="submenu" data-id="submenu1">

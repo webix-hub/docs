@@ -110,7 +110,7 @@ var routes = new (Backbone.Router.extend({
 
 Instead of switching between views in Webix layout we are rendering different Backbone Views into one and the same element depending on current state. Still, the resulting behavior is the same. 
 
-Yet, the router should be triggered separately at once after the app has been inited:
+Yet, the router should be triggered separately at once after the app has been initialized:
 
 ~~~js
 //init app

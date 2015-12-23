@@ -5,7 +5,7 @@ bottomLabel
 @short:
 	sets a label under a control
 
-@type: 
+@type: string
 @example:
 { view:"text", label:"Username", bottomLabel: "* spaces are allowed"},
 
@@ -16,6 +16,7 @@ bottomLabel
 	desktop/data_validation.md#bottomlabel
 @relatedapi:
 	api/link/ui.multicombo_bottompadding_config.md
+    api/ui.button_labelposition_config.md
 
 @template:	api_config
 @descr:

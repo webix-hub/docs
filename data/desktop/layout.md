@@ -161,7 +161,7 @@ webix.ui({
 }}
 
 {{note
-**Responsive layout behavior** depending on window/screen size in discussed [separately](desktop/responsive_layout.md). 
+**Responsive layout behavior** depending on window/screen size is discussed [separately](desktop/responsive_layout.md). 
 }}
 
 ##Headers

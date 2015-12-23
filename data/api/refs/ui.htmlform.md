@@ -8,22 +8,35 @@ The component allows you to get an HTML Form as a lib-based view, so that to use
 
 ### Constructor
 
+{{snippet HTML}}
+~~~html
+<div class="myform">
+	<div>
+      <label for="title">Book title</label><br/>
+      <input type="text" name="title" placeholder="Title" />
+  </div>
+	<div>
+      <label for="author">Author</label><br/>
+      <input type="text" name="author" placeholder="Author" />
+  </div>
+</div>
+~~~
+
+{{snippet JS}}
 ~~~js
-	var htmlform = webix.ui({
-		view:"htmlform", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_htmlform({
-		...config options goes here..
-	});
+var htmlform = webix.ui({
+	view:"htmlform", 
+    id:"formView",
+    padding:5,
+	content:document.body
+});
 ~~~
 
 ### Where to start
 
-- [Overview of HTMLform Widget](desktop/htmlform.md)
+- [Overview of the HTMLform Widget](desktop/htmlform.md)
 - [Samples](http://docs.webix.com/samples/11_htmlform/index.html)
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.template.md">ui.template</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/values.md">Values</a></div>
 
@@ -35,6 +48,7 @@ The component allows you to get an HTML Form as a lib-based view, so that to use
 - api/link/ui.htmlform_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.htmlform_bind.md - binds components
 - api/link/ui.htmlform_blockevent.md - temporarily blocks triggering of ALL events of the calling object
+- api/ui.htmlform_blur.md - removes focus from the component
 - api/link/ui.htmlform_callevent.md - calls an inner event
 - api/link/ui.htmlform_clear.md - clears all the field in a specified form
 - api/link/ui.htmlform_define.md - redefines a single configuration property (or a hash of properties)
@@ -86,8 +100,10 @@ The component allows you to get an HTML Form as a lib-based view, so that to use
 - api/link/ui.htmlform_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/link/ui.htmlform_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.htmlform_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.htmlform_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.htmlform_onchange_event.md - fires when data in the input or related form/toolbar is changed
 - api/link/ui.htmlform_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.htmlform_onfocus_event.md - fires when a view gets focus
 - api/link/ui.htmlform_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.htmlform_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.htmlform_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
@@ -112,7 +128,6 @@ The component allows you to get an HTML Form as a lib-based view, so that to use
 - api/link/ui.htmlform_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.htmlform_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.htmlform_data_config.md - JavaScript array containing data for the component
-- api/link/ui.htmlform_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.htmlform_datatype_config.md - the type of loaded data
 - api/link/ui.htmlform_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.htmlform_gravity_config.md - sets the view gravity (1 by default)
@@ -129,8 +144,7 @@ The component allows you to get an HTML Form as a lib-based view, so that to use
 - api/link/ui.htmlform_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.htmlform_src_config.md - the path to an external template that is loaded by Ajax
 - api/link/ui.htmlform_template_config.md - the component template
-- api/link/ui.htmlform_type_config.md - name of predefined styling type
-- api/link/ui.htmlform_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.htmlform_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.htmlform_width_config.md - sets the width of the component
 }}
 

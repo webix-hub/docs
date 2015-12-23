@@ -7,10 +7,9 @@ page
 
 @type: number
 @example:
-var myPager = webix.ui ({
-		view:"pager",
-		container:"paging_here",
-		page:3
+webix.ui ({
+	view:"pager",
+	page:3
 });
             
 

@@ -29,7 +29,7 @@ Include 2 Webix files (**webix.js** and **webix.css**) directly from Webix CDN
 </html>
 ~~~
 
-If you need to get one of the older Webix versions, you shoud include the necessary number of version
+If you need to get one of the older Webix versions, you should include the necessary number of the version
 into the links to the code files:
 
 ~~~html

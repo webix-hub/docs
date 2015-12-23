@@ -6,21 +6,30 @@ ui.video
 
 ### Constructor
 
+{{snippet HTML}}
+~~~html
+<div id="video_div" style="width:300px; height:200px;"></div>
+~~~
+
+{{snippet JS}}
 ~~~js
-	var video = webix.ui({
-		view:"video", 
-		src:"film.mp4"
-	});
-	//or, in case of jQuery
-	$("#mydiv").webix_video({
-		...config options goes here..
-	});
+var video = webix.ui({
+	view:"video",
+  	container:"video_div",
+    id:"video1", 
+    src: [
+		"http://cdn.webix.io/demodata/movie.ogv",
+		"http://cdn.webix.io/demodata/movie.mp4"
+	]
+});
 ~~~
 
 ### Where to start
 
-- [Overview of Video Widget](desktop/video.md)
+- [Overview of the Video Widget](desktop/video.md)
 - [Samples](http://docs.webix.com/samples/27_video/index.html)
+
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
@@ -55,7 +64,9 @@ ui.video
 {{api
 - api/link/ui.video_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.video_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.video_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.video_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.video_onfocus_event.md - fires when a view gets focus
 - api/link/ui.video_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.video_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.video_onswipex_event.md - occurs on a horizontal swipe movement

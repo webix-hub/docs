@@ -1,4 +1,4 @@
-Handling Events
+Handling Events with File Manager
 ===============
 
 Attaching Event Handler
@@ -97,7 +97,7 @@ $$("fmanager").attachEvent("onBeforeCreateFolder",function(id){
 
 params:
 
-- id - {string} the id of the created item
+- id - {string} the id of the target folder/file (where a new folder is going to be created)
 
 returns:
 
@@ -185,7 +185,7 @@ $$("fmanager").attachEvent("onBeforePasteFile", function(ids){
 
 params:
 
-- ids - {string} the ids of the pasted items
+- ids - {string} the id of the target folder/file
 
 returns:
 

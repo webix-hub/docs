@@ -102,7 +102,7 @@ Be sure the branch data sent by the server is an object with **parent** and **da
 { parent: 1, data: [ ...array of child items... ] }
 ~~~
 
-##Redefining onDataRequestEvent
+##Redefining onDataRequest Event
 
 Set the **api/treedataloader_ondatarequest_event.md** event handler to redefine the default dynamic loading behaviour and use any desired method to get the data from the server:
 

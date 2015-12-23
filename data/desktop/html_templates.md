@@ -14,7 +14,7 @@ Still, different components have different possibilities and requirements:
 - Components with **single-value items**: [list](desktop/list.md) and its variants ([grouplist](desktop/grouplist.md), [unitlist](desktop/unitlist.md) and [x-list](desktop/xlist.md)), 
 [dataview](desktop/dataview.md) and [tree](datatree/index.md). Each of their items takes one value by default. 
 - Components with **multiple-value items**: [datatable](datatable/index.md) and [treetable](desktop/treetable.md). They take as many items as many columns are defined. 
-- [Chart](desktop/chart.md) requires a **pair of values**  - one for each exle.
+- [Chart](desktop/chart.md) requires a **pair of values**  - one for each axis.
 
 ####Item Value can be defined by: 
 
@@ -321,13 +321,13 @@ template: function (obj) {
 
 ## XSS Safe templates
 
-By default, `#...#` templates placeholders will be replaced with the data value without any processing. If you have HTML data in the data object, it will placed in the template.
+By default, *#...#* template placeholders are replaced with the data value without any processing. If you have HTML data in the data object, it is also placed in the template.
 In most cases this is an advantage, but sometimes it may be necessary to output such data as text, not a HTML:
 
-- when you have text data with special HTML characters (`<`, `>`, and `&`)
-- when you are not sure is the data safe or not (e.g. was entered by the user)
+- when you have text data with special HTML characters (<, >, and &);
+- when you are not sure whether the data is safe (e.g. was entered by the user).
 
-In such cases you can add a `!` after the opening `#`:
+In such cases you can add an exclamation mark `!` after the opening `#`:
 
 ~~~js
 {

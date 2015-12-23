@@ -8,6 +8,30 @@ The control combines an editable text field with a suggest list that contains pr
 The list can be supplied with a customizable 'Select' button to enter selected items to the input. 
 
 Check [multicombo](desktop/multicombo.md) documentation for more detailed description.
+
+### Constructor
+
+~~~js
+var multicombo = webix.ui({
+ 	view:"multicombo", 
+  	label:"To", 
+  	value:"1,3", 
+  	options:[
+ 		{"id":1,"value":"Ray M. Parra"},
+      	{"id":2,"value":"Sabrina N. Hermann"},
+      	{"id":3,"value":"Lane E. Dion"},
+      	{"id":4,"value":"Bradly N. Mauro"}
+  	]
+});
+~~~
+
+### Where to start
+
+- [Overview of the Multicombo Control](desktop/multicombo.md)
+- [Samples](http://docs.webix.com/samples/60_pro/02_form/)
+
+
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.richselect.md">ui.richselect</a>, <a href="api/refs/ui.text.md">ui.text</a>, <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
@@ -62,8 +86,10 @@ Check [multicombo](desktop/multicombo.md) documentation for more detailed descri
 - api/link/ui.multicombo_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.multicombo_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.multicombo_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.multicombo_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.multicombo_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.multicombo_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.multicombo_onfocus_event.md - fires when a view gets focus
 - api/link/ui.multicombo_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.multicombo_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.multicombo_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
@@ -88,14 +114,12 @@ Check [multicombo](desktop/multicombo.md) documentation for more detailed descri
 - api/link/ui.multicombo_bottompadding_config.md - sets the bottom offset of the control input
 - api/link/ui.multicombo_click_config.md - click action handler
 - api/link/ui.multicombo_container_config.md - an html container (or its id) where the component needs initializing
-- api/link/ui.multicombo_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.multicombo_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.multicombo_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.multicombo_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.multicombo_height_config.md - sets the height of the component
 - api/link/ui.multicombo_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.multicombo_hotkey_config.md - sets a hotkey that triggers button clicking
-- api/link/ui.multicombo_icon_config.md - sets an icon type
 - api/ui.multicombo_iconwidth_config.md - sets icon width
 - api/link/ui.multicombo_id_config.md - the component ID
 - api/link/ui.multicombo_inputheight_config.md - the height of the input area, or a button's text value area.
@@ -103,13 +127,15 @@ Check [multicombo](desktop/multicombo.md) documentation for more detailed descri
 - api/link/ui.multicombo_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.multicombo_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.multicombo_label_config.md - the text label of the control
-- api/link/ui.multicombo_labelposition_config.md - positions label above the control
+- api/link/ui.multicombo_labelposition_config.md - positions label in relation the control
 - api/link/ui.multicombo_labelwidth_config.md - the width of the label
+- api/ui.multicombo_master_config.md - 
 - api/link/ui.multicombo_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.multicombo_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.multicombo_minheight_config.md - sets the minimal height for the view
 - api/link/ui.multicombo_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.multicombo_name_config.md - name of the control
+- api/ui.multicombo_newvalues_config.md - allows to enter new values into a multicombo field
 - api/link/ui.multicombo_on_config.md - allows attaching custom handlers to inner events of the component
 - api/ui.multicombo_optionwidth_config.md - sets the width of the suggest list with options
 - api/link/ui.multicombo_options_config.md - defines data items of the drop-down list
@@ -123,10 +149,10 @@ Check [multicombo](desktop/multicombo.md) documentation for more detailed descri
 - api/ui.multicombo_separator_config.md - a delimiter for separating options in a multicombo, comma by default
 - api/link/ui.multicombo_suggest_config.md - links suggest list to the input
 - api/link/ui.multicombo_tabfocus_config.md - defines whether the control will be included in the tab navigation order
-- api/link/ui.multicombo_template_config.md - the component template
+- api/ui.multicombo_tagmode_config.md - defines presentation mode of input values
+- api/ui.multicombo_tagtemplate_config.md - defines template of input values
 - api/link/ui.multicombo_text_config.md - visible text in the related input
 - api/link/ui.multicombo_tooltip_config.md - tooltip for the input
-- api/link/ui.multicombo_type_config.md - the type of the control
 - api/link/ui.multicombo_validate_config.md - adds validation to the field
 - api/link/ui.multicombo_validateevent_config.md - on which event validation fires
 - api/link/ui.multicombo_value_config.md - sets the initial value for a control

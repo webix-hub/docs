@@ -30,4 +30,3 @@ webix.ui({
 The property should not be mixed with the [label](api/refs/ui.label.md) control. 
 
 Morevoer, label control can as well have a label, but there's not much sence in it. 
-

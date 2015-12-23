@@ -9,11 +9,10 @@ sort
 @example:
 webix.ui({
 	  view:"unitlist", 
-      ...
       sort:{
           by:"#name#"
       }
-})
+});
 
 @template:	api_config
 @descr:

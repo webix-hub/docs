@@ -36,7 +36,7 @@ At the same time, you can trigger validation whenever you like, e.g. on **onChan
 { view:"text", name: "fname", on:{
 	"onChange":function(){
     	//either validate the whole form
-		this.getParentForm().validate(); 
+		this.getParentView().validate(); 
         //or validate this element only
         this.validate();
     }}
@@ -83,6 +83,25 @@ list.validate(); // data of the whole list is validated
 list.validate(2); //data item with id=2 will be validated
 text.validate(); //validate only this text field
 ~~~
+
+
+{{note
+Note that if a separate form field is validated, only its own validation rules will be considered.
+}}
+
+~~~js
+webix.ui({
+	view:"form", elements:[
+    	{ view:"text",  required:true, name:"text1" },
+		{ view:"text",  validate:webix.rules.isNumber, name:"text2" }
+    ]
+});
+
+$$("text1").validate();
+~~~
+
+{{sample 13_form/04_validation/11_per_item_validation.html}}
+
 
 ##Validation Message
 
@@ -411,6 +430,24 @@ What should be taken into account:
  
 - If there are fields without **name** property, the function returns *false*;
 - In case all rules are observed, the function returns *true* and the form is treated as valid. 
+
+
+##Validation of Hidden and Disabled Fields in Form 
+
+By default hidden and disabled fields are not validated. 
+If you want to include them into a validation process, you need to provide validation mode: 
+
+~~~js
+//hidden fileds will be validated
+$$("$form1").validate({hidden:true});
+
+//both hidden and disabled fields will be validated
+$$("$form1").validate({hidden:true , disabled:true});
+~~~
+
+{{sample 13_form/02_api/13_tabs_form.html}}
+
+Note that if the form is hidden itself, hidden and visible fields are not separated. 
 
 
 ##Data Validation for Components

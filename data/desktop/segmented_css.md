@@ -1,7 +1,5 @@
-Segmented 
+Segmented CSS 
 =============
-
-###CSS Image Map
 
 <img src="image_maps/segmented_css.png"/>
 

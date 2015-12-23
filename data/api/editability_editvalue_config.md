@@ -13,7 +13,7 @@ webix.ui({
     editable:true,
     editValue:"name",
     ...
-})
+});
 
 
 @template:	api_config

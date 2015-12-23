@@ -11,7 +11,7 @@ calendarTime
 webix.ui({
 	view:"calendar",
     timepicker:true,
-    calendatTime:"%H:%i"
+    calendarTime:"%H:%i"
 });
 
 

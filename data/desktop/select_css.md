@@ -1,7 +1,6 @@
-Select
+Select CSS 
 =============
 
-###CSS Image Map
 
 <img src="image_maps/select_css.png"/>
 

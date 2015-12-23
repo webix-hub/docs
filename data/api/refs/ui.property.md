@@ -9,23 +9,26 @@ The component can be used for creating various on-page editors. The value field 
 ### Constructor
 
 ~~~js
-	var property = webix.ui({
-		view:"property", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_property({
-		...config options goes here..
-	});
+var property = webix.ui({
+	view:"property",  
+  	id:"sets", 
+  	width:300,
+    elements:[
+       { label:"Layout", type:"label"},
+       { label:"Data url", type:"text", id:"url"},
+       { label:"Data type", type:"select", options:["json","xml","csv"], id:"type"},
+       { label:"Use JSONP", type:"checkbox", id:"jsonp"}
+    ]
+});
 ~~~
 
 ### Where to start
 
-- [Overview of Property Sheet Widget](desktop/property_sheet.md)
+- [Overview of the Property Sheet Widget](desktop/property_sheet.md)
 - [Samples](http://docs.webix.com/samples/07_property/index.html)
+
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/editability.md">EditAbility</a>, <a href="api/refs/mapcollection.md">MapCollection</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/singlerender.md">SingleRender</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
+<a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/editability.md">EditAbility</a>, <a href="api/refs/mapcollection.md">MapCollection</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/singlerender.md">SingleRender</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
 
 <div class='h2'>Methods</div>
@@ -90,7 +93,7 @@ The component can be used for creating various on-page editors. The value field 
 - api/link/ui.property_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.property_onaftereditstart_event.md - fires after edit operation was initiated, editor opened and ready for input
 - api/link/ui.property_onaftereditstop_event.md - fires after edit operation finished
-- api/link/ui.property_onafterload_event.md - fires after server side loading is complete
+- api/link/ui.property_onafterload_event.md - fires after data loading is complete
 - api/link/ui.property_onafterrender_event.md - occurs immediately after the component has been rendered.
 - api/link/ui.property_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.property_onbeforecontextmenu_event.md - fires before the context menu is called in the item area
@@ -99,7 +102,9 @@ The component can be used for creating various on-page editors. The value field 
 - api/link/ui.property_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/link/ui.property_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.property_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.property_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.property_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.property_onfocus_event.md - fires when a view gets focus
 - api/link/ui.property_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.property_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.property_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
@@ -127,10 +132,8 @@ The component can be used for creating various on-page editors. The value field 
 - api/link/ui.property_borderless_config.md - used to hide the component borders
 - api/ui.property_complexdata_config.md - enables complex data parsing mode
 - api/link/ui.property_container_config.md - an html container (or its id) where the component needs initializing
-- api/link/ui.property_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.property_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.property_data_config.md - JavaScript array containing data for the component
-- api/link/ui.property_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.property_datatype_config.md - the type of loaded data
 - api/link/ui.property_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.property_editvalue_config.md - defines which data item is editable (in case of several data item in the cell/line)
@@ -157,7 +160,8 @@ The component can be used for creating various on-page editors. The value field 
 - api/link/ui.property_scroll_config.md - enables/disables the scroll bar
 - api/link/ui.property_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.property_template_config.md - the component template
-- api/link/ui.property_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.property_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.property_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.property_width_config.md - sets the width of the component
 }}
 

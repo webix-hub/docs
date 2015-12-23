@@ -48,7 +48,7 @@ grid = new webix.ui({
 2. Within formulas can be used:
 
 	- basic mathematical operators, which are: +, -, /, *, (, );
-	- cell referencies;
+	- cell references;
     - custom functions.
 
 You can refer to a cell in 2 ways:
@@ -129,7 +129,7 @@ grid = new webix.ui({
 4. Within formulas can be used:
 
 	- basic mathematical operators, which are: : +, -, /, *, (, ).
-	- cell referencies;
+	- cell references;
     - custom functions.
 
 You can refer to a cell in 2 ways:

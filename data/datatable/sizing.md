@@ -14,6 +14,7 @@ and 3 possible situations (scenarios) for them:
 2. [Autosizing](#autosizing);
 3. [Resizing](#resizing).
 
+
 Setting the fixed size
 -----------------------
 ###DataTable container
@@ -58,12 +59,9 @@ grid = new webix.ui({
 By default, datatable columns feature **fixed size** of **100px**. To change it, you should either:
 
 - use **width** while configuring the column to set width to a column individually, or
-- use **columnWidth** while configuring the datatable to set common width for all the columns. Like default common width, it can be overriden by individual *width* value, or
-- use **minWidth** property in the column configuration to define minimal width for it. If there's more space initially or after resizing, column width will br increased, but it can never be less than *minWidth* value, or
-- use **minColumnWidth** property in datatable configuration to set common minimal width for all columns. It can be overriden by inidividual *minWidth* value.
-
-If you set the width in such a way, it will save its value regardless of any other enabled size parameters 
-(e.g. [autowidth](api/ui.datatable_autowidth_config.md)). BTW, you can set different widths for different rows.
+- use **columnWidth** while configuring the datatable to set common width for all the columns. Like default common width, it can be overridden by individual *width* value, or
+- use **minWidth** property in the column configuration to define minimal width for it. If there's more space initially or after resizing, column width will be increased, but it can never be less than *minWidth* value, or
+- use **minColumnWidth** property in datatable configuration to set common minimal width for all columns. It can be overridden by individual *minWidth* value.
 
 {{snippet
 Setting different widths for columns
@@ -96,6 +94,8 @@ grid = new webix.ui({
 
 **Relative Sizing**
 
+- adjusting the width of datatable to the parent container 
+
 If you set widths for columns and their sum is less than the width of the parent container, you can use the **fillspace** attribute to force some of columns to widen for filling the unused space.
 
 
@@ -116,6 +116,8 @@ grid = new webix.ui({
 ~~~
 {{sample 15_datatable/09_columns/02_autosize_column.html }}
 
+- adjusting the width of a column to other datatable columns
+
 There can be more than one **fillspace** in the datatable; in this case width will be calculated on the base of a proportion defined by numeric values: 
 
 ~~~js
@@ -129,14 +131,15 @@ grid = new webix.ui({
 });
 ~~~
 
-In the code above *title* column is 4 times bigger then *id* column, which is 20 to 80 percent relation. 
+In the above code the *title* column is 4 times bigger than the *id* column, which is 20 to 80 percent relation. 
 
 **Adjusting column to its content**
 
 If you want to adjust the width of a column to the related content size, you can use attribute **adjust**. It is defined for the needed column individually and features two modes:
 
-- **data** - adjusts column width to the content of the widest item in it;
-- **header** - adjusts column width to its header content
+- **"data"** - adjusts column width to the content of the widest item in it;
+- **"header"** - adjusts column width to its header content;
+- **true** - searches for the widest item among data and header(s) and adjusts column width to its content.
 
 {{snippet
 Adjusting the column width to fit the content size
@@ -147,7 +150,8 @@ grid = new webix.ui({
 	...
 	columns:[
 		{ id:"title", header:"Film title", adjust:"data"},
-        { id:"rank", header:"Rank", adjust:"header"}
+        { id:"rank", header:"Rank", adjust:"header"},
+        { id:"votes", header:"Votes", adjust:true}
 		...
 	]
 })
@@ -180,7 +184,30 @@ grid = new webix.ui({
 
 Autosizing
 -------------
-You can enable width, height (or both of them) autosizing to adjust DataTable to the parent container size horizontally or vertically. Autosizing is enabled by the following parameters:
+
+**Autosizing to parent container**
+
+Datatable automatically adjusts to the size of a parent container provided that no content autosizing is not enabled. 
+
+To make the Datatble fill the entire width, you should define **fillspace** for at least one of its columns:
+
+~~~js
+grid = new webix.ui({
+	view:"datatable",
+	...
+	columns:[
+		{ id:"title", header:"Film title", fillspace:true},
+        { id:"year", header:"Year", width:100}
+	]
+});
+~~~
+
+In this case, *title* column will be calculated as *container width - 100*.
+
+
+**Autosizing to content**
+ 
+You can enable width, height (or both of them) autosizing to adjust DataTable to the size of its content horizontally or vertically. Autosizing is enabled by the following parameters:
 
 - [autowidth](api/ui.datatable_autowidth_config.md);
 - [autoheight](api/ui.datatable_autoheight_config.md).
@@ -355,7 +382,7 @@ Managing the size of the scroll bars
 }}
 
 ~~~js
-grid=webix.ui({
+grid = webix.ui({
 	view:"datatable",
 	...
 	scrollSize:20

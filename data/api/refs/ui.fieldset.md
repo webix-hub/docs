@@ -9,16 +9,22 @@ The control presents a standard fieldset that combines several sense-connected U
 ### Constructor
 
 ~~~js
-	var fieldset = webix.ui({
-		view:"fieldset", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_fieldset({
-		...config options goes here..
-	});
+var fieldset = webix.ui({
+ 	view:"fieldset", 
+  	label:"Field Set 1",
+  	body:{
+		rows:[
+			{ view:"text", label:"Email"},
+			{ view:"text", label:"Password"}
+		]
+ 	}
+});
 ~~~
+
+### Where to start
+
+- [Overview of the Fieldset Control](desktop/fieldset.md)
+- [Samples](http://docs.webix.com/samples/13_form/05_extras/)
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
@@ -54,7 +60,9 @@ The control presents a standard fieldset that combines several sense-connected U
 {{api
 - api/link/ui.fieldset_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.fieldset_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.fieldset_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.fieldset_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.fieldset_onfocus_event.md - fires when a view gets focus
 - api/link/ui.fieldset_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.fieldset_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.fieldset_onswipex_event.md - occurs on a horizontal swipe movement

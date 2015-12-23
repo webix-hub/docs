@@ -1,6 +1,6 @@
  DataTable Filtering
 ===================
-The library provides ability to <a href="http://webix.com/widget/datatable/" title="filter in datatable widget">filter data</a> on client-side by one or several criteria using for this built-in or customly created filters.
+The library provides ability to <a href="http://webix.com/widget/datatable/" title="filter in datatable widget">filter data</a> on client-side by one or several criteria using for this built-in or custom-created filters.
 
 
 Filters in the header
@@ -18,7 +18,8 @@ You can define a built-in filter in the header or footer of a column. Webix offe
 - additionally, in the Webix Pro edition:    
 	- **richSelectFilter**;
     - **multiSelectFilter**;
-	- **datepickerFilter**.
+	- **datepickerFilter**;
+    - **serverMultiSelectFilter**. (multiselect-based)
     
 All of them are described in detail below.     
 
@@ -102,7 +103,7 @@ Text filter used for number columns. Retrieves values which contain mask defined
 
 <img src="datatable/date_filter.png"/>
 
-A text filter used for date columns. Retrieves values that contain mask defined through text field. Allows users to use the following comporison operators in it:
+A text filter used for date columns. Retrieves values that contain mask defined through text field. Allows users to use the following comparison operators in it:
 
 - '>' - greater than;
 - '<' - less than;
@@ -146,7 +147,7 @@ Available in **Webix Pro** edition only.
 
 <img src="desktop/multiselect_filter.png"/>
 
-Retrieves values that contain mask defined through a popup list of possible values while **miltiple values** can be selected at once. 
+Retrieves values that contain mask defined through a popup list of possible values while **multiple values** can be selected at once. 
 Based on Webix [multiselect](desktop/multiselect.md) control.
 
 ~~~js
@@ -389,7 +390,7 @@ Note, in the DataTable constructor you need to specify no parameters.
 
 ##Find API
 
-Datatable API allows searching for the needed records easily with the help of its [find](api/ui.datatable_find.md) method. 
+Datatable API allows searching for the needed records easily with the help of its [find](api/link/ui.datatable_find.md) method. 
 
 Unlike filtering, it preserves the records visible but returns an array of rows that match the given criterion for further usage.
 

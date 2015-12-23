@@ -6,13 +6,16 @@ The control allows users to precisely change numeric data. It provides up/down b
 ### Constructor
 
 ~~~js
-	var counter = webix.ui({
-		view:"counter", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_counter({
-		...config options goes here..
-	});
+var counter = webix.ui({
+	view:"counter", 
+    label:"Age", 
+    step:3, 
+    value:5
+});
 ~~~
+
+### Where to start
+
+- [Overview of the Counter Control](desktop/counter.md)
+- [Samples](http://docs.webix.com/samples/13_form/01_controls/05_counter.html)
+

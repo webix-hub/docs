@@ -9,21 +9,32 @@ Support for various data template formats, sorting and filtering features. Check
 ### Constructor
 
 ~~~js
-	var unitlist = webix.ui({
-		view:"unitlist", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_unitlist({
-		...config options goes here..
-	});
+var unitlist = webix.ui({
+    view:"unitlist", 
+  	height: 200,
+    uniteBy:function(obj){
+        return obj.title.substr(0,1); 
+    },
+    type:{
+        height:40,        
+    },
+    template:"#title#",
+    data: [{ id:1, title:"The Shawshank Redemption", year:1994},
+	{ id:2, title:"The Godfather", year:1972},
+	{ id:3, title:"12 Angry Men", year:1974},
+	{ id:4, title:"The Good, the Bad and the Ugly", year:1966},
+	{ id:5, title:"My Fair Lady", year:1964},
+	{ id:6, title:"Collector", year: 1987}]
+});
+
 ~~~
 
 ### Where to start
 
-- [Overview of Unitlist Widget](desktop/unitlist.md)
+- [Overview of the Unitlist Widget](desktop/unitlist.md)
 - [Samples](http://docs.webix.com/samples/05_list/index.html)
+
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.list.md">ui.list</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/selectionmodel.md">SelectionModel</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/ui.proto.md">ui.proto</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/copypaste.md">CopyPaste</a></div>
 
@@ -51,6 +62,7 @@ Support for various data template formats, sorting and filtering features. Check
 - api/link/ui.unitlist_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.unitlist_exists.md - checks whether an item with the specified id exists
 - api/link/ui.unitlist_filter.md - filters the component
+- api/link/ui.unitlist_find.md - returns rows that match the criterion
 - api/link/ui.unitlist_getchildviews.md - returns child views of the calling component
 - api/link/ui.unitlist_getfirstid.md - returns the ID of the first item
 - api/link/ui.unitlist_getformview.md - returns master form for the input
@@ -120,7 +132,7 @@ Support for various data template formats, sorting and filtering features. Check
 - api/link/ui.unitlist_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.unitlist_onafterdelete_event.md - fires after item deleting
 - api/link/ui.unitlist_onafterdrop_event.md - fires after drag-n-drop was finished
-- api/link/ui.unitlist_onafterload_event.md - fires after server side loading is complete
+- api/link/ui.unitlist_onafterload_event.md - fires after data loading is complete
 - api/link/ui.unitlist_onafterrender_event.md - occurs immediately after the component has been rendered
 - api/link/ui.unitlist_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.unitlist_onafterselect_event.md - fires after item was selected
@@ -137,10 +149,12 @@ Support for various data template formats, sorting and filtering features. Check
 - api/link/ui.unitlist_onbeforeselect_event.md - fires before item selection is started
 - api/link/ui.unitlist_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.unitlist_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.unitlist_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.unitlist_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.unitlist_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.unitlist_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.unitlist_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
+- api/link/ui.unitlist_onfocus_event.md - fires when a view gets focus
 - api/link/ui.unitlist_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.unitlist_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.unitlist_onitemrender_event.md - for each item rendering, occurs only for items with custom templates
@@ -215,7 +229,7 @@ Support for various data template formats, sorting and filtering features. Check
 - api/link/ui.unitlist_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/link/ui.unitlist_type_config.md - object that specifies items presentation
 - api/ui.unitlist_uniteby_config.md - sets the template according which items will be grouped in units.
-- api/link/ui.unitlist_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.unitlist_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.unitlist_width_config.md - sets the width of the component
 - api/link/ui.unitlist_xcount_config.md - defines width of view in items
 - api/link/ui.unitlist_ycount_config.md - defines height of view in items

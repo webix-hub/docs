@@ -50,8 +50,8 @@ Supported format options
 - %j - the day as a number without a leading zero ( 1 to 31 );
 - %D - the day as an abbreviation ( Sun to Sat );
 - %l - the day as a full name ( Sunday to Saturday );
-- %m - the month as a number without a leading zero ( 1 to 12 );
-- %n - the month as a number with a leading zero ( 01 to 12);
+- %m - the month as a number with a leading zero ( 01 to 12 );
+- %n - the month as a number without a leading zero ( 1 to 12);
 - %M - the month as an abbreviation ( Jan to Dec );
 - %F - the month as a full name ( January to December );
 - %y - the year as a two-digit number ( 00 to 99 );
@@ -63,7 +63,8 @@ Supported format options
 - %i - the minute as a number with a leading zero ( 00 to 59 );
 - %s - the second as a number without a leading zero ( 00 to 59 );
 - %a - displays am (for times from midnight until noon) and pm (for times from noon until midnight);
-- %A - displays AM (for times from midnight until noon) and PM (for times from noon until midnight).
+- %A - displays AM (for times from midnight until noon) and PM (for times from noon until midnight);
+- %c - displays date and time in the ISO 8601 date format (e.g. 2015-10-04T05:04:09)
 
 For instance, **"%d-%F-%Y,%D"** will display the date as 11-September-2012, Tue. 
 

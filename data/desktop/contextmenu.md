@@ -9,7 +9,7 @@ ContextMenu
 
 ##Overview
 
-Contextmenu is triggered by right mouseclick. Ui-related <a href="http://webix.com/widget/contextmenu/" title="webix contextmenu widget">Contextmenu</a> inherits from both [window](desktop/window.md) and [list](desktop/list.md). It looks like
+Contextmenu is triggered by right mouse click. Ui-related <a href="http://webix.com/widget/contextmenu/" title="webix contextmenu widget">Contextmenu</a> inherits from both [window](desktop/window.md) and [list](desktop/list.md). It looks like
 ui-related [menu](desktop/menu.md) and shares most of its properties, methods and events. 
 
 <img style="display:block; margin-left:auto;margin-right:auto;"   src="desktop/contextmenu.png" />
@@ -150,7 +150,7 @@ $$('contextmenu1').attachTo($$('list1'));
 $$('contextmenu1').attachTo($$('list1').$view);
 ~~~
 
-It is the nice option to attach contentmenu to Webix controls, e.g. [button](desktop/button.md) or any HTML elements on the page:
+It is the nice option to attach contextmenu to Webix controls, e.g. [button](desktop/button.md) or any HTML elements on the page:
 
 ~~~js
 $$('contextmenu1').attachTo($$('button1').$view);
@@ -170,8 +170,8 @@ webix.ui({
 	on:{
          onItemClick:function(id){
 			var context = this.getContext();
-    		var list = context.obj; //list item objetc
-    		var listId = context.id; //id of teh clicked list item
+    		var list = context.obj; //list item object
+    		var listId = context.id; //id of the clicked list item
                 
     		webix.message("List item: <i>"+list.getItem(listId).title+"</i> <br/> 
     					Context menu item: <i>"+this.getItem(id).value+"</i>");

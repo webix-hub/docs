@@ -79,7 +79,7 @@ echo json_encode(get());
 
 ###Form Loading
 
-On client side, **load()** method is applied to an already inited form. The method contains loading script that sometimes requires record ID as part of GET request.
+On client side, **load()** method is applied to an already initialized form. The method contains loading script that sometimes requires record ID as part of GET request.
 
 ~~~js
 $$("form1").load("server/form.php?id=3");

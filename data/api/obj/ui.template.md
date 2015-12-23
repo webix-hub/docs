@@ -5,18 +5,13 @@ The component is a simple container (but with rich API support) where you can pu
 ### Constructor
 
 ~~~js
-	var template = webix.ui({
-		view:"template", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_template({
-		...config options goes here..
-	});
+var template = webix.ui({
+  view: "template",
+  template: "Default template with some text inside"
+});
 ~~~
 
 ### Where to start
 
-- [Overview of Template Widget](desktop/template.md)
+- [Overview of the Template Widget](desktop/template.md)
 - [Samples](http://docs.webix.com/samples/04_template/index.html)

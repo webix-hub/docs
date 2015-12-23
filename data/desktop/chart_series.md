@@ -1,7 +1,7 @@
 Chart Series
 =============
 
-Chart series help display comparative graphs. In  other words, you have an ability to present data of different objects within one and the same shart to see their dynamics in comparison. The functionality is true for 
+Chart series help display comparative graphs. In  other words, you have an ability to present data of different objects within one and the same chart to see their dynamics in comparison. The functionality is true for 
 [line](desktop/chart_types.md#line), [bar](desktop/chart_types.md#bar), [radar](desktop/chart_types.md#radar) and [area](desktop/chart_types.md#area) charts.
 
 For instance, you want too see the sales progress of three companies during some time period. 

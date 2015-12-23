@@ -1,4 +1,4 @@
-General How-Tos
+File Manager General How-Tos
 ================
 
 How to make File Manager readonly?

@@ -1,0 +1,157 @@
+Events
+=======
+
+{{api
+- api/link/ui.excelviewer_onafteradd_event.md - fires after adding item to datastore
+- api/link/ui.excelviewer_onafterblockselect_event.md - event occurs after block selection
+- api/link/ui.excelviewer_onaftercolumndrop_event.md - fires after the column has been dragged and dropped to the target position
+- api/link/ui.excelviewer_onaftercolumndroporder_event.md - fires after the column order was changed with the help of drag-and-drop
+- api/link/ui.excelviewer_onaftercontextmenu_event.md - fires after the context menu was called in the item area
+- api/link/ui.excelviewer_onafterdelete_event.md - fires after item deleting
+- api/link/ui.excelviewer_onafterdrop_event.md - fires after drag-n-drop was finished
+- api/link/ui.excelviewer_onaftereditstart_event.md - fires after edit operation was initiated, editor opened and ready for input
+- api/link/ui.excelviewer_onaftereditstop_event.md - fires after edit operation finished
+- api/link/ui.excelviewer_onafterfilter_event.md - occurs after datatable was filtered
+- api/link/ui.excelviewer_onafterload_event.md - fires after data loading is complete
+- api/link/ui.excelviewer_onafterrender_event.md - occurs each time after the view is rendered
+- api/link/ui.excelviewer_onafterscroll_event.md - occurs when some webix view has been scrolled
+- api/link/ui.excelviewer_onafterselect_event.md - fires after a cell is selected
+- api/link/ui.excelviewer_onaftersort_event.md - fires after sorting dataset
+- api/link/ui.excelviewer_onafterunselect_event.md - fires after a cell is unselected
+- api/link/ui.excelviewer_onbeforeadd_event.md - fires before adding item to datastore
+- api/link/ui.excelviewer_onbeforeblockselect_event.md - event occurs before block selection
+- api/link/ui.excelviewer_onbeforecolumndrag_event.md - fires the monent you start dragging the column from its source potition
+- api/link/ui.excelviewer_onbeforecolumndrop_event.md - fires the moment you drop the column to its target position
+- api/link/ui.excelviewer_onbeforecolumndroporder_event.md - fires the moment you drop the column over the target area
+- api/link/ui.excelviewer_onbeforecontextmenu_event.md - fires before the context menu is called in the item area
+- api/link/ui.excelviewer_onbeforedelete_event.md - fires before item deleting
+- api/link/ui.excelviewer_onbeforedrag_event.md - fires before the mouse button is pressed and the cursor is moved over a draggable item
+- api/link/ui.excelviewer_onbeforedragin_event.md - fires before a dragged element is moved over the droppable area
+- api/link/ui.excelviewer_onbeforedrop_event.md - fires before a dragged element is released over the droppable area
+- api/link/ui.excelviewer_onbeforedropout_event.md - fires before a dragged element is released over the droppable area
+- api/link/ui.excelviewer_onbeforeeditstart_event.md - fires before edit operation is initiated
+- api/link/ui.excelviewer_onbeforeeditstop_event.md - fires before stop edit command is received
+- api/link/ui.excelviewer_onbeforefilter_event.md - called when filtering process is started, but data is not filtered yet
+- api/link/ui.excelviewer_onbeforeload_event.md - occurs immediately before data loading has been started
+- api/link/ui.excelviewer_onbeforerender_event.md - occurs each time before the view is rendered
+- api/link/ui.excelviewer_onbeforeselect_event.md - fires before a cell is selected
+- api/link/ui.excelviewer_onbeforesort_event.md - fires before sorting dataset
+- api/link/ui.excelviewer_onbeforeunselect_event.md - fired before a cell is unselected
+- api/link/ui.excelviewer_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.excelviewer_onblur_event.md - fires when focus is moved out of the view
+- api/link/ui.excelviewer_oncheck_event.md - fires when a checkbox is checked or unchecked in the datatable item
+- api/link/ui.excelviewer_oncolumnresize_event.md - fires when width of column was changed
+- api/link/ui.excelviewer_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
+- api/link/ui.excelviewer_ondataupdate_event.md - fires when data item is in update process
+- api/link/ui.excelviewer_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.excelviewer_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
+- api/link/ui.excelviewer_onfocus_event.md - fires when a view gets focus
+- api/link/ui.excelviewer_onheaderclick_event.md - occurs after clicking on header
+- api/link/ui.excelviewer_onitemclick_event.md - fires when a component item was clicked
+- api/link/ui.excelviewer_onitemdblclick_event.md - fires when a component item was double-clicked
+- api/link/ui.excelviewer_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
+- api/link/ui.excelviewer_onliveedit_event.md - occurs when data was changed in the editor
+- api/link/ui.excelviewer_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
+- api/link/ui.excelviewer_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
+- api/link/ui.excelviewer_onmousemove_event.md - fires when the mouse was moved over the specified component
+- api/link/ui.excelviewer_onmousemoving_event.md - fires when the mouse was moved over the component
+- api/link/ui.excelviewer_onmouseout_event.md - fires when the mouse was moved out from the specified item
+- api/link/ui.excelviewer_onresize_event.md - fires when the width or height of DataTable was changed
+- api/link/ui.excelviewer_onrowresize_event.md - fires when height of row was changed
+- api/link/ui.excelviewer_onscrollx_event.md - fires when the user scrolls the table left or right
+- api/link/ui.excelviewer_onscrolly_event.md - fires when the user scrolls the table up or down
+- api/link/ui.excelviewer_onselectchange_event.md - fires when selection is changed in a DataTable
+- api/link/ui.excelviewer_onstructureload_event.md - fires when the structure of DataTable (columns configuration) is initialized
+- api/link/ui.excelviewer_onstructureupdate_event.md - fires when structure of datatable was changed ( column added, hidden or reconfigured )
+- api/ui.excelviewer_onsubviewclose_event.md - 
+- api/link/ui.excelviewer_onsubviewcreate_event.md - fires after a subview was created
+- api/link/ui.excelviewer_onsubviewopen_event.md - fires after a subview or subrow is opened
+- api/link/ui.excelviewer_onsubviewrender_event.md - fires each time subview is rendered
+- api/link/ui.excelviewer_onswipex_event.md - occurs on a horizontal swipe movement
+- api/link/ui.excelviewer_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.excelviewer_ontimedkeypress_event.md - fires after typing has been finished in the field
+- api/link/ui.excelviewer_ontouchend_event.md - occurs when the touch event is ended
+- api/link/ui.excelviewer_ontouchmove_event.md - occurs during touch movement
+- api/link/ui.excelviewer_ontouchstart_event.md - when some webix view has been touched
+- api/link/ui.excelviewer_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation
+- api/link/ui.excelviewer_onvalidationsuccess_event.md - fires after the newlyloaded/added/edited data has passes validation successfully
+- api/link/ui.excelviewer_onviewresize_event.md - view size was changed by resizer
+}}
+
+@index:
+- api/link/ui.excelviewer_onafteradd_event.md
+- api/link/ui.excelviewer_onafterblockselect_event.md
+- api/link/ui.excelviewer_onaftercolumndrop_event.md
+- api/link/ui.excelviewer_onaftercolumndroporder_event.md
+- api/link/ui.excelviewer_onaftercontextmenu_event.md
+- api/link/ui.excelviewer_onafterdelete_event.md
+- api/link/ui.excelviewer_onafterdrop_event.md
+- api/link/ui.excelviewer_onaftereditstart_event.md
+- api/link/ui.excelviewer_onaftereditstop_event.md
+- api/link/ui.excelviewer_onafterfilter_event.md
+- api/link/ui.excelviewer_onafterload_event.md
+- api/link/ui.excelviewer_onafterrender_event.md
+- api/link/ui.excelviewer_onafterscroll_event.md
+- api/link/ui.excelviewer_onafterselect_event.md
+- api/link/ui.excelviewer_onaftersort_event.md
+- api/link/ui.excelviewer_onafterunselect_event.md
+- api/link/ui.excelviewer_onbeforeadd_event.md
+- api/link/ui.excelviewer_onbeforeblockselect_event.md
+- api/link/ui.excelviewer_onbeforecolumndrag_event.md
+- api/link/ui.excelviewer_onbeforecolumndrop_event.md
+- api/link/ui.excelviewer_onbeforecolumndroporder_event.md
+- api/link/ui.excelviewer_onbeforecontextmenu_event.md
+- api/link/ui.excelviewer_onbeforedelete_event.md
+- api/link/ui.excelviewer_onbeforedrag_event.md
+- api/link/ui.excelviewer_onbeforedragin_event.md
+- api/link/ui.excelviewer_onbeforedrop_event.md
+- api/link/ui.excelviewer_onbeforedropout_event.md
+- api/link/ui.excelviewer_onbeforeeditstart_event.md
+- api/link/ui.excelviewer_onbeforeeditstop_event.md
+- api/link/ui.excelviewer_onbeforefilter_event.md
+- api/link/ui.excelviewer_onbeforeload_event.md
+- api/link/ui.excelviewer_onbeforerender_event.md
+- api/link/ui.excelviewer_onbeforeselect_event.md
+- api/link/ui.excelviewer_onbeforesort_event.md
+- api/link/ui.excelviewer_onbeforeunselect_event.md
+- api/link/ui.excelviewer_onbindrequest_event.md
+- api/link/ui.excelviewer_onblur_event.md
+- api/link/ui.excelviewer_oncheck_event.md
+- api/link/ui.excelviewer_oncolumnresize_event.md
+- api/link/ui.excelviewer_ondatarequest_event.md
+- api/link/ui.excelviewer_ondataupdate_event.md
+- api/link/ui.excelviewer_ondestruct_event.md
+- api/link/ui.excelviewer_ondragout_event.md
+- api/link/ui.excelviewer_onfocus_event.md
+- api/link/ui.excelviewer_onheaderclick_event.md
+- api/link/ui.excelviewer_onitemclick_event.md
+- api/link/ui.excelviewer_onitemdblclick_event.md
+- api/link/ui.excelviewer_onkeypress_event.md
+- api/link/ui.excelviewer_onliveedit_event.md
+- api/link/ui.excelviewer_onloaderror_event.md
+- api/link/ui.excelviewer_onlongtouch_event.md
+- api/link/ui.excelviewer_onmousemove_event.md
+- api/link/ui.excelviewer_onmousemoving_event.md
+- api/link/ui.excelviewer_onmouseout_event.md
+- api/link/ui.excelviewer_onresize_event.md
+- api/link/ui.excelviewer_onrowresize_event.md
+- api/link/ui.excelviewer_onscrollx_event.md
+- api/link/ui.excelviewer_onscrolly_event.md
+- api/link/ui.excelviewer_onselectchange_event.md
+- api/link/ui.excelviewer_onstructureload_event.md
+- api/link/ui.excelviewer_onstructureupdate_event.md
+- api/ui.excelviewer_onsubviewclose_event.md
+- api/link/ui.excelviewer_onsubviewcreate_event.md
+- api/link/ui.excelviewer_onsubviewopen_event.md
+- api/link/ui.excelviewer_onsubviewrender_event.md
+- api/link/ui.excelviewer_onswipex_event.md
+- api/link/ui.excelviewer_onswipey_event.md
+- api/link/ui.excelviewer_ontimedkeypress_event.md
+- api/link/ui.excelviewer_ontouchend_event.md
+- api/link/ui.excelviewer_ontouchmove_event.md
+- api/link/ui.excelviewer_ontouchstart_event.md
+- api/link/ui.excelviewer_onvalidationerror_event.md
+- api/link/ui.excelviewer_onvalidationsuccess_event.md
+- api/link/ui.excelviewer_onviewresize_event.md
+
+

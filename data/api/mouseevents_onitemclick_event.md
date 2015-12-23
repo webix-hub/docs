@@ -6,18 +6,18 @@ onItemClick
 	fires when a component item was clicked
 @params:
 - id		string		the id of the clicked item
-* e		Event		a native event object
-* node		HTMLElement		the target HTML element
+- e		Event		a native event object
+- node		HTMLElement		the target HTML element
 
 @example: 
 	
-grid.attachEvent("onItemClick", function(id, e, node){
+list.attachEvent("onItemClick", function(id, e, node){
     var item = this.getItem(id);
     //... some code here ... 
 });
 
 @relatedsample:
-	15_datatable/14_events/02_click_css.html
+	20_multiview/02_navigation.html
 @relatedapi:
 	api/mouseevents_onitemdblclick_event.md
 @related:

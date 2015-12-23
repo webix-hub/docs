@@ -11,20 +11,28 @@ It's possible to present multiple data sets on the same chart.  Check [chart](de
 ### Constructor
 
 ~~~js
-	var chart = webix.ui({
-		view:"chart", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_chart({
-		...config options goes here..
-	});
+var chart = webix.ui({
+	view:"chart",
+   	type:"bar",
+   	value:"#sales#",
+   	label:"#sales#",
+   	barWidth:35,
+   	radius:0,
+   	gradient:"falling",
+   	data: [
+		{ id:1, sales:20, year:"02"},
+		{ id:2, sales:55, year:"03"},
+		{ id:3, sales:40, year:"04"},
+		{ id:4, sales:78, year:"05"}
+   	]
+});
 ~~~
+
 ### Where to start
 
-- [Overview of Chart Widget](desktop/chart.md)
+- [Overview of the Chart Widget](desktop/chart.md)
 - [Samples](http://docs.webix.com/samples/08_chart/index.html)
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/group.md">Group</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
@@ -49,6 +57,7 @@ It's possible to present multiple data sets on the same chart.  Check [chart](de
 - api/link/ui.chart_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.chart_exists.md - checks whether an item with the specified id exists
 - api/link/ui.chart_filter.md - filters the component
+- api/link/ui.chart_find.md - returns rows that match the criterion
 - api/link/ui.chart_getchildviews.md - returns child views of the calling component
 - api/link/ui.chart_getfirstid.md - returns the ID of the first item
 - api/link/ui.chart_getformview.md - returns master form for the input
@@ -96,7 +105,7 @@ It's possible to present multiple data sets on the same chart.  Check [chart](de
 - api/link/ui.chart_onafteradd_event.md - fires after adding item to datastore
 - api/link/ui.chart_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.chart_onafterdelete_event.md - fires after item deleting
-- api/link/ui.chart_onafterload_event.md - fires after server side loading is complete
+- api/link/ui.chart_onafterload_event.md - fires after data loading is complete
 - api/ui.chart_onafterrender_event.md - called after the rendering of calendar is complete.
 - api/link/ui.chart_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.chart_onaftersort_event.md - fires after sorting dataset
@@ -107,9 +116,11 @@ It's possible to present multiple data sets on the same chart.  Check [chart](de
 - api/ui.chart_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.chart_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.chart_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.chart_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.chart_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.chart_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.chart_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.chart_onfocus_event.md - fires when a view gets focus
 - api/link/ui.chart_onitemclick_event.md - fires when a component item was clicked
 - api/link/ui.chart_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.chart_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
@@ -142,7 +153,6 @@ It's possible to present multiple data sets on the same chart.  Check [chart](de
 - api/link/ui.chart_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.chart_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.chart_data_config.md - JavaScript array containing data for the component
-- api/link/ui.chart_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.chart_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.chart_datatype_config.md - the type of loaded data
 - api/ui.chart_disablelines_config.md - disapbles graph lines with radar chart
@@ -187,7 +197,7 @@ It's possible to present multiple data sets on the same chart.  Check [chart](de
 - api/ui.chart_shadow_config.md - enables/disables the pie shadow
 - api/link/ui.chart_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
 - api/ui.chart_type_config.md - sets the chart type
-- api/link/ui.chart_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.chart_url_config.md - the URL which the component will use to load data after its initialization
 - api/ui.chart_value_config.md - defines values for the vertical axis
 - api/link/ui.chart_width_config.md - sets the width of the component
 - api/ui.chart_x_config.md - the horizontal position of the pie center

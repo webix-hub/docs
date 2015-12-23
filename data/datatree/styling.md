@@ -1,4 +1,4 @@
-Styling
+Styling DataTree
 =========================
 You can use CSS in conjunction with Tree nodes to archieve the desired look-and-feel.
 

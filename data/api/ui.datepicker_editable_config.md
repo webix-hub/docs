@@ -2,7 +2,7 @@ editable
 =============
 
 @short:
-	allows making datepicker editable, false by default
+	allows entering characters in datepicker input, false by default
 
 @type: boolean
 @example:

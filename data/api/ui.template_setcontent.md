@@ -20,4 +20,4 @@ $$("mytemplate").setContent( "a12");
 @descr:
 
 
-Works similar to the api/link/ui.template_content_config.md property
+Works similar to the api/ui.template_content_config.md property

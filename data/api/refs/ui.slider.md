@@ -9,16 +9,22 @@ The control allows changing numeric data by dragging a marker over a line, with 
 ### Constructor
 
 ~~~js
-	var slider = webix.ui({
-		view:"slider", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_slider({
-		...config options goes here..
-	});
+var slider = webix.ui({
+	view:"slider", 
+  	label:"Level", 
+  	value:"20", 
+  	min:10, 
+  	max: 120,
+  	name:"s1"
+});
 ~~~
+
+### Where to start
+
+- [Overview of the Slider Control](desktop/slider.md)
+- [Samples](http://docs.webix.com/samples/13_form/05_extras/)
+
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.text.md">ui.text</a>, <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
@@ -70,8 +76,10 @@ The control allows changing numeric data by dragging a marker over a line, with 
 - api/link/ui.slider_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.slider_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.slider_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.slider_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.slider_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.slider_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.slider_onfocus_event.md - fires when a view gets focus
 - api/link/ui.slider_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.slider_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.slider_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
@@ -97,7 +105,6 @@ The control allows changing numeric data by dragging a marker over a line, with 
 - api/link/ui.slider_bottompadding_config.md - sets the bottom offset of the control input
 - api/link/ui.slider_click_config.md - click action handler
 - api/link/ui.slider_container_config.md - an html container (or its id) where the component needs initializing
-- api/link/ui.slider_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.slider_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.slider_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.slider_gravity_config.md - sets the view gravity (1 by default)
@@ -110,7 +117,7 @@ The control allows changing numeric data by dragging a marker over a line, with 
 - api/link/ui.slider_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.slider_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.slider_label_config.md - the text label of the control
-- api/link/ui.slider_labelposition_config.md - positions label above the control
+- api/link/ui.slider_labelposition_config.md - positions label in relation the control
 - api/link/ui.slider_labelwidth_config.md - the width of the label
 - api/ui.slider_max_config.md - max value of slider
 - api/link/ui.slider_maxheight_config.md - sets the maximum height for the view
@@ -129,10 +136,8 @@ The control allows changing numeric data by dragging a marker over a line, with 
 - api/ui.slider_step_config.md - step of slider
 - api/link/ui.slider_suggest_config.md - links suggest list to the input
 - api/link/ui.slider_tabfocus_config.md - defines whether the control will be included in the tab navigation order
-- api/link/ui.slider_template_config.md - the component template
 - api/ui.slider_title_config.md - text over slider bar
 - api/link/ui.slider_tooltip_config.md - tooltip for the input
-- api/link/ui.slider_type_config.md - the type of the control
 - api/link/ui.slider_validate_config.md - adds validation to the field
 - api/link/ui.slider_validateevent_config.md - on which event validation fires
 - api/link/ui.slider_value_config.md - sets the initial value for a control

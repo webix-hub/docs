@@ -7,7 +7,7 @@ xAxis
 
 @type: object
 @example:
-var chart =  new webix.ui({
+webix.ui({
 	view:"chart",
 	...
 	xAxis:{
@@ -15,7 +15,7 @@ var chart =  new webix.ui({
 		template: "#year#",
         lines: true
 	}
-})
+});
 
 
 @template:	api_config

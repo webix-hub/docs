@@ -27,23 +27,19 @@ webix.ui({
     desktop/radar_chart.md
     desktop/line_charts.md
 
-@descr:
-Currently, the following presets are available: 
+@values:
 
-- **Bar charts**
-  - *'column'*
-  - *'stick'*
-  - *'alpha'*
-- **Radar charts**
-  - *'area'*
-  - *'line'*
-  - *'point'*
-- **Line, scatter charts**
-  - *'simple'*
-  - *'plot'*
-  - *'round'*
-  - *'square'*
-  - *'diamond'*
+- column	bar charts
+- stick		bar charts
+- alpha		bar charts
+- area		radar charts
+- line		radar charts
+- point		radar charts
+- simple	line, scatter charts
+- plot		line, scatter charts
+- round		line, scatter charts
+- square	line, scatter charts
+- diamond	line, scatter charts
 
  
 

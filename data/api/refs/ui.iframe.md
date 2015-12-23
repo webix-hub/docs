@@ -5,26 +5,23 @@ ui.iframe
 
 If you want to place some IFRAME content, note that the component provides much more flexible way to do this than a usual layout.
 
-Check (templates)[api/refs/ui.template.md] for example. Check [iframe](desktop/iframe.md) documentation for more detailed description.
+Check api/refs/ui.template.md for example. Check [iframe](desktop/iframe.md) documentation for more detailed description.
 
 ### Constructor
 
 ~~~js
-	var iframe = webix.ui({
-		view:"iframe", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_iframe({
-		...config options goes here..
-	});
+var iframe = webix.ui({		
+	view:"iframe", 
+	id:"frame-body", 
+	src:"//docs.webix.com/samples/80_docs/data/pageA.html"
+});
 ~~~
 
 ### Where to start
 
-- [Overview of IFrame Widget](desktop/iframe.md)
+- [Overview of the IFrame Widget](desktop/iframe.md)
 - [Samples](http://docs.webix.com/samples/80_docs/iframe.html)
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
@@ -70,7 +67,9 @@ Check (templates)[api/refs/ui.template.md] for example. Check [iframe](desktop/i
 - api/link/ui.iframe_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/ui.iframe_onbeforeload_event.md - fires before HTML page starts to load
 - api/link/ui.iframe_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.iframe_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.iframe_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.iframe_onfocus_event.md - fires when a view gets focus
 - api/link/ui.iframe_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.iframe_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.iframe_onswipex_event.md - occurs on a horizontal swipe movement

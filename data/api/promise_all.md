@@ -14,8 +14,11 @@ b = webix.ajax("someB.php");
 c = webix.ajax("someC.php");
  
  
-webix.promise.all(a,b,c).then(function(a,b,c){
-    ...
+webix.promise.all([ a,b,c ]).then(function(results){
+    var a_result = results[0];
+    var b_result = results[1];
+    var c_result = results[3];
+    // do something
 });
 
 @template:	api_method

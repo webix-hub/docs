@@ -17,7 +17,7 @@ Properties
 - api/link/ui.context_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.context_id_config.md - the component ID
 - api/link/ui.context_left_config.md - the left offset of the window
-- api/link/ui.context_master_config.md - the area for which context object in inited
+- api/link/ui.context_master_config.md - the area for which context object in initialized
 - api/link/ui.context_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.context_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.context_minheight_config.md - sets the minimal height for the view
@@ -28,6 +28,8 @@ Properties
 - api/link/ui.context_padding_config.md - sets paddings of the chart content
 - api/link/ui.context_position_config.md - sets position of the window relative to the the screen
 - api/link/ui.context_relative_config.md - positions a popup window relative to the component it's connected with
+- api/link/ui.context_resize_config.md - enables/disables window resizing
+- api/link/ui.context_tofront_config.md - places window above other windows on clicking it
 - api/link/ui.context_top_config.md - the top offset of a window
 - api/link/ui.context_width_config.md - sets the width of the component
 - api/link/ui.context_zindex_config.md - stack order of the component
@@ -60,6 +62,8 @@ Properties
 - api/link/ui.context_padding_config.md
 - api/link/ui.context_position_config.md
 - api/link/ui.context_relative_config.md
+- api/link/ui.context_resize_config.md
+- api/link/ui.context_tofront_config.md
 - api/link/ui.context_top_config.md
 - api/link/ui.context_width_config.md
 - api/link/ui.context_zindex_config.md

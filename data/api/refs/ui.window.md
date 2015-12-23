@@ -4,26 +4,29 @@ ui.window
 
 {{memo A movable popup window. }}
 
-The window consists of the header and body, can be modal or modaless. The window body can contain any content. The header is set by a template.  Check [window](desktop/window.md) documentation for more detailed description.
+The window consists of the header and the body, can be modal or modaless. The window body can contain any content. The header is set by a template.  Check [window](desktop/window.md) documentation for more detailed description.
 
 ### Constructor
 
 ~~~js
-	var window = webix.ui({
-		view:"window", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_window({
-		...config options goes here..
-	});
+var window = webix.ui({
+    view:"window",
+    id:"my_win",
+    head:"My Window",
+  	width: 200,
+  	height: 200,
+    body:{
+        template:"Some text"
+    }
+}).show();
 ~~~
 
 ### Where to start
 
-- [Overview of Window Widget](desktop/window.md)
+- [Overview of the Window Widget](desktop/window.md)
 - [Samples](http://docs.webix.com/samples/10_window/index.html)
+
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/movable.md">Movable</a>, <a href="api/refs/modality.md">Modality</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
@@ -70,7 +73,9 @@ The window consists of the header and body, can be modal or modaless. The window
 - api/link/ui.window_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/ui.window_onbeforeshow_event.md - fires right after show() method is called for the window (popup) and before the window is shown
 - api/link/ui.window_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.window_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.window_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.window_onfocus_event.md - fires when a view gets focus
 - api/ui.window_onhide_event.md - fires when window is hidden
 - api/link/ui.window_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.window_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
@@ -116,6 +121,8 @@ The window consists of the header and body, can be modal or modaless. The window
 - api/ui.window_padding_config.md - sets paddings of the chart content
 - api/ui.window_position_config.md - sets position of the window relative to the the screen
 - api/ui.window_relative_config.md - positions a popup window relative to the component it's connected with
+- api/ui.window_resize_config.md - enables/disables window resizing
+- api/ui.window_tofront_config.md - places window above other windows on clicking it
 - api/ui.window_top_config.md - the top offset of a window
 - api/link/ui.window_width_config.md - sets the width of the component
 - api/link/ui.window_zindex_config.md - stack order of the component

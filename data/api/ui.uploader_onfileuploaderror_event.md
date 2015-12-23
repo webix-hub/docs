@@ -11,7 +11,7 @@ onFileUploadError
 
 @example:
 
-$$("uploader1").attachEvent("onFileUpload", function(item, response){
+$$("uploader1").attachEvent("onFileUploadError", function(item, response){
 	//code
 });
 

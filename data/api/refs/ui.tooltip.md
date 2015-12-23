@@ -9,16 +9,25 @@ Generally, the component isn't intended for direct initialization. But if you de
 ### Constructor
 
 ~~~js
-	var tooltip = webix.ui({
-		view:"tooltip", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_tooltip({
-		...config options goes here..
-	});
+webix.ui({
+    view:"datatable",
+    tooltip:true,
+    columns:[
+        {id:"name", header:"Name"},
+        {id:"age", header:"Age"}
+    ],
+    data:[
+        {id:1, name:"Ann", age:25},
+        {id:2, name:"Tom", age:27}
+    ]
+});
 ~~~
+
+### Where to start
+
+- [Overview of Tooltip](desktop/tooltip.md)
+- [Samples](http://docs.webix.com/samples/06_dataview/02_templates/06_tooltip.html)
+
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/singlerender.md">SingleRender</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
@@ -65,7 +74,9 @@ Generally, the component isn't intended for direct initialization. But if you de
 - api/link/ui.tooltip_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.tooltip_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.tooltip_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.tooltip_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.tooltip_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.tooltip_onfocus_event.md - fires when a view gets focus
 - api/link/ui.tooltip_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.tooltip_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/link/ui.tooltip_onswipex_event.md - occurs on a horizontal swipe movement
@@ -84,7 +95,6 @@ Generally, the component isn't intended for direct initialization. But if you de
 - api/link/ui.tooltip_animate_config.md - defines or disables view change animation.
 - api/link/ui.tooltip_borderless_config.md - used to hide the component borders
 - api/link/ui.tooltip_container_config.md - an html container (or its id) where the component needs initializing
-- api/link/ui.tooltip_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.tooltip_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.tooltip_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.tooltip_dx_config.md - the left offset of the tooltip from the mouse pointer

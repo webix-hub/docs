@@ -20,4 +20,4 @@ tree.count();//-> 8
 @descr:
 
 
-<img src="api/treestore_count_method.png"/>
+<img src="api/treestore_datacount_method.png"/>

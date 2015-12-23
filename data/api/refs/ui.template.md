@@ -8,21 +8,17 @@ The component is a simple container (but with rich API support) where you can pu
 ### Constructor
 
 ~~~js
-	var template = webix.ui({
-		view:"template", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_template({
-		...config options goes here..
-	});
+var template = webix.ui({
+  view: "template",
+  template: "Default template with some text inside"
+});
 ~~~
 
 ### Where to start
 
-- [Overview of Template Widget](desktop/template.md)
+- [Overview of the Template Widget](desktop/template.md)
 - [Samples](http://docs.webix.com/samples/04_template/index.html)
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
@@ -46,6 +42,7 @@ The component is a simple container (but with rich API support) where you can pu
 - api/link/ui.template_getparentview.md - returns the parent view of the component
 - api/link/ui.template_getscrollstate.md - returns the scroll position
 - api/link/ui.template_gettopparentview.md - returns top parent view
+- api/ui.template_getvalues.md - gets data hash
 - api/link/ui.template_hasevent.md - checks whether the component has the specified event
 - api/link/ui.template_hide.md - hides the view
 - api/link/ui.template_isenabled.md - checks whether the view is enabled
@@ -71,13 +68,15 @@ The component is a simple container (but with rich API support) where you can pu
 
 
 {{api
-- api/link/ui.template_onafterload_event.md - fires after server side loading is complete
+- api/link/ui.template_onafterload_event.md - fires after data loading is complete
 - api/link/ui.template_onafterrender_event.md - occurs immediately after the component has been rendered.
 - api/link/ui.template_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.template_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/link/ui.template_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/link/ui.template_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.template_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.template_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.template_onfocus_event.md - fires when a view gets focus
 - api/link/ui.template_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.template_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.template_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
@@ -98,7 +97,7 @@ The component is a simple container (but with rich API support) where you can pu
 - api/ui.template_autoheight_config.md - lets the component autosize to its contents
 - api/link/ui.template_borderless_config.md - used to hide the component borders
 - api/link/ui.template_container_config.md - an html container (or its id) where the component needs initializing
-- api/link/ui.template_content_config.md - the id or node, whose content will be moved to the view
+- api/ui.template_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.template_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.template_data_config.md - JavaScript array containing data for the component
 - api/link/ui.template_datafeed_config.md - the URL that the component will use to reload data during binding
@@ -119,7 +118,7 @@ The component is a simple container (but with rich API support) where you can pu
 - api/ui.template_src_config.md - the path to an external template that is loaded by Ajax
 - api/link/ui.template_template_config.md - the component template
 - api/ui.template_type_config.md - name of predefined styling type
-- api/link/ui.template_url_config.md - the URL the component will use to load data after its initialization
+- api/link/ui.template_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.template_width_config.md - sets the width of the component
 }}
 

@@ -9,16 +9,20 @@ The component can be used to build a multi-item menu for navigating between view
 ### Constructor
 
 ~~~js
-	var segmented = webix.ui({
-		view:"segmented", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_segmented({
-		...config options goes here..
-	});
+var segmented = webix.ui({
+	view:"segmented", 
+  	value:1, options:[
+    	{ id:"1", value:"Section A" }, 
+    	{ id:"2", value:"Section B" }, 
+    	{ id:"3", value:"Section C" }
+    ]
+});
 ~~~
+
+### Where to start
+
+- [Overview of the Segmented Control](desktop/segmented.md)
+- [Samples](http://docs.webix.com/samples/13_form/01_controls/07_segmented.html)
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.text.md">ui.text</a>, <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
@@ -76,8 +80,10 @@ The component can be used to build a multi-item menu for navigating between view
 - api/link/ui.segmented_onbeforerender_event.md - occurs immediately before the component has been rendered
 - api/ui.segmented_onbeforetabclick_event.md - fires before a segment is clicked
 - api/link/ui.segmented_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.segmented_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.segmented_onchange_event.md - fires when the value of the control is changed
 - api/link/ui.segmented_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.segmented_onfocus_event.md - fires when a view gets focus
 - api/link/ui.segmented_onitemclick_event.md - fires after the control has been clicked
 - api/link/ui.segmented_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.segmented_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
@@ -103,7 +109,6 @@ The component can be used to build a multi-item menu for navigating between view
 - api/link/ui.segmented_bottompadding_config.md - sets the bottom offset of the control input
 - api/link/ui.segmented_click_config.md - click action handler
 - api/link/ui.segmented_container_config.md - an html container (or its id) where the component needs initializing
-- api/link/ui.segmented_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.segmented_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.segmented_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.segmented_gravity_config.md - sets the view gravity (1 by default)
@@ -116,7 +121,7 @@ The component can be used to build a multi-item menu for navigating between view
 - api/link/ui.segmented_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.segmented_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.segmented_label_config.md - the text label of the control
-- api/link/ui.segmented_labelposition_config.md - positions label above the control
+- api/link/ui.segmented_labelposition_config.md - positions label in relation the control
 - api/link/ui.segmented_labelwidth_config.md - the width of the label
 - api/link/ui.segmented_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.segmented_maxwidth_config.md - sets the maximum width for the view
@@ -125,18 +130,15 @@ The component can be used to build a multi-item menu for navigating between view
 - api/ui.segmented_multiview_config.md - enables switching between multiview cells
 - api/link/ui.segmented_name_config.md - name of the control
 - api/link/ui.segmented_on_config.md - allows attaching custom handlers to inner events of the component
+- api/ui.segmented_optionwidth_config.md - sets the width of each view's option
 - api/ui.segmented_options_config.md - defines data items of the drop-down list
-- api/link/ui.segmented_placeholder_config.md - placeholder text for the input area
 - api/link/ui.segmented_popup_config.md - allows to attach pop-up menu to the button
-- api/link/ui.segmented_readonly_config.md - configures readonly mode for the input
 - api/link/ui.segmented_relatedaction_config.md - action to call when value of cell changes
 - api/link/ui.segmented_relatedview_config.md - id of view, that will be affected by relatedAction operation
 - api/link/ui.segmented_required_config.md - marks field as required
 - api/link/ui.segmented_suggest_config.md - links suggest list to the input
 - api/link/ui.segmented_tabfocus_config.md - defines whether the control will be included in the tab navigation order
-- api/link/ui.segmented_template_config.md - the component template
 - api/link/ui.segmented_tooltip_config.md - tooltip for the input
-- api/link/ui.segmented_type_config.md - the type of the control
 - api/link/ui.segmented_validate_config.md - adds validation to the field
 - api/link/ui.segmented_validateevent_config.md - on which event validation fires
 - api/link/ui.segmented_value_config.md - sets the initial value for a control

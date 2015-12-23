@@ -6,13 +6,18 @@ The component can be used to build a multi-item menu for navigating between view
 ### Constructor
 
 ~~~js
-	var segmented = webix.ui({
-		view:"segmented", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_segmented({
-		...config options goes here..
-	});
+var segmented = webix.ui({
+	view:"segmented", 
+  	value:1, options:[
+    	{ id:"1", value:"Section A" }, 
+    	{ id:"2", value:"Section B" }, 
+    	{ id:"3", value:"Section C" }
+    ]
+});
 ~~~
+
+### Where to start
+
+- [Overview of the Segmented Control](desktop/segmented.md)
+- [Samples](http://docs.webix.com/samples/13_form/01_controls/07_segmented.html)
+

@@ -17,7 +17,8 @@ env
 
 {{api
 - api/env_cssprefix_other.md - browser-specific prefix for CSS transforms and transitions
-- api/env_isedge_other.md - 
+- api/env_https_other.md - returns true if the protocol of the page is https and false, if it's http
+- api/env_isedge_other.md - a read-only boolean indicating whether the current browser is Microsoft Edge
 - api/env_isff_other.md - a read-only boolean indicating whether the current browser is Firefox
 - api/env_isie_other.md - a read-only boolean indicating whether the current browser is Internet Explorer
 - api/env_issafari_other.md - a read-only boolean indicating whether the current browser is Safari
