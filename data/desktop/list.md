@@ -25,7 +25,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 05_list/01_list.html }}
+{{editor http://webix.com/snippet/facd39dd	List}}
 
 You can load data in any of the supported [data formats](desktop/data_types.md). 
 
