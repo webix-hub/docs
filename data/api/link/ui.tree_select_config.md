@@ -16,6 +16,8 @@ tree = new webix.ui({
 	17_datatree/04_api/01_selection.html
 @related:
 	datatree/selection.md
+@relatedapi:
+api/link/ui.tree_multiselect_config.md
 @descr:
 By default, selection in Tree is disabled.
 
