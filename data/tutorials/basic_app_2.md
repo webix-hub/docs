@@ -48,7 +48,7 @@ Then, let's set **IDs** to the needed components. We will work with **form** to 
 {view:"list", id:"mylist", template:"..."}
 ~~~
 
-Apart from ID, components and controls have another identifier, **name.** It's a read-only component property. In case with form, we need element **names** to derive **form values**. 
+Apart from ID, components and controls have another identifier, **name.** It's a read-only component property. In the case of the form component, we need element **names** to derive **form values**. 
 
 ~~~js
 { view:"text", name:"title", placeholder:"Title"},  
@@ -102,7 +102,7 @@ $$("mylist").attachEvent("onAfterSelect", function(id){
 });
 ~~~
 
-2 . The core of a custom **update_row()** function is the **getValues()** method that gets values from form fields. Finally, the list is updated with the function of the same name - **update()**
+2 . The core of a custom **update_row()** function is the **getValues()** method that gets values from form fields. Finally, the list is updated with the **updateItem()** function:
 
 ~~~js
 function update_row() {
@@ -128,7 +128,7 @@ function delete_row() {
 	var id = $$("mylist").getSelectedId();
 	webix.confirm({
 		title: "Delete",
-		text: "Are you sure you want to delete the selected contact?",
+		text: "Are you sure you want to delete the selected item?",
 		callback: function(result) { 
 			if (result) {
 				$$("mylist").remove(id);
