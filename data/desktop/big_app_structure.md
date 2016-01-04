@@ -11,7 +11,7 @@ For better undertanding, please study the following articles:
 - [Quick Start Guide, or How to Initialize a Component](tutorials/quick_start.md)
 - [Building App Architecture - Layout and its Types](desktop/building_app_architecture.md)
 
-Here everything is about logic, structure and optimized coding. The **basic pronciples** are: 
+Here everything is about logic, structure and optimized coding. The **basic principles** are: 
 
 - store big code snippets in variables;
 - put apart application design and inner functionality. 
@@ -114,7 +114,7 @@ Inside the webix.ui constructor layout as well as components are placed. Here, w
     
 ##Design Section - "webix.js" File Contents
 
-The variables from above are declared separately, **outside the webix.ui constructor**, either in the same file within the *webix.ready* fucntion, or (better) in a separate **webix.js** file. 
+The variables from above are declared separately, **outside the webix.ui constructor**, either in the same file within the *webix.ready* function, or (better) in a separate **webix.js** file. 
 
 They should also be as short as possible: 
 ~~~js
@@ -135,7 +135,7 @@ Any component or several connected components can be stored in the variable that
 
 Logic block is stored in a **logic variable** declared either in a separate **logic.js** file (better), or somewhere outside the *webix.ui* constructor but within the *webix.ready* function. 
 
-Logic block is divided into the functions called during component initialization and the definition of all the fucntion used for the application. 
+Logic block is divided into the functions called during component initialization and the definition of all the function used for the application. 
 
 The **init()** function includes:
 
@@ -149,7 +149,7 @@ var logic = {
     	$$("form1").bind($$("datatable1"));
         $$("datatable1").sync($$("list1"));
         
-        //biult-in functions
+        //built-in functions
         $$("list1").attachEvent("onAfterSelect", function(id){
 		 	$$("datatable1").select(id);
 		});
@@ -169,7 +169,7 @@ logic:function_name //since they are placed into the "logic" var
 Outside the init block you should describe all the custom functions attached to application components either in the init block or within their bodies:
 
 ~~~js
-delete_row: fucntion(){
+delete_row: function(){
 	$$("datatable1").remove(id);
 }
 ~~~

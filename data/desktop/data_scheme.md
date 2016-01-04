@@ -211,7 +211,7 @@ Note, the method accepts a DataStore item and generally, changes made through th
 
 The **$group** function accepts 1 parameter - so-called group object that has 2 properties:
 
-- **by** – a data property according which items will be united in groups;
+- **by** – a data property according to which items will be united in groups;
 - **map** – an object that defines properties of the items in the group;
 
 Properties are specified by an array. The first element of this array is a template with a property from original data, the second one – the functor that will be 

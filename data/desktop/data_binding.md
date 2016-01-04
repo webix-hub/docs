@@ -83,7 +83,7 @@ Data binding features a lot more advanced options to explore:
 - it is subject to **customization** with the help of additional parameters;
 - it is suitable for binding hierarchical structures;
 - it features **event system**;
-- it has navite API to set **default data** for cases when no record is selected in a master control;
+- it has a native API to set default data for cases when no record is selected in the master control;
 - it utilizes **cursor concept** to bind to an invisible DataCollection;
 - a lot more..
 
