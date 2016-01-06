@@ -16,6 +16,7 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
                 <li>desktop/building_app_architecture.md</li>
                 <li>desktop/big_app_structure.md</li>
                 <li>desktop/markup_init.md</li>
+                <li>desktop/webix_jet.md</li>
             </ul>
 		</td>
 		<td class='topic_description'>Describes different ways you can follow to design and build the user interface for your application.</td>
