@@ -21,6 +21,6 @@ webix.ui.delay({
 @template:	api_method
 @descr:
 
-The method is similar to api/_ui.md. The difference is that api/_ui.md creates the view immeadiately,
+The method is similar to api/_ui.md. The difference is that api/_ui.md creates the view immediately,
 while **webix.delay** initializes the view just when it will be requested by the **$$('view_id')** or **webix.$$** method. 
 
