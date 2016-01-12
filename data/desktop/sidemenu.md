@@ -46,9 +46,7 @@ webix.ui({
 });
 ~~~
 
-{{sample
-	28_sidemenu/02_left.html
-}}
+{{editor http://webix.com/snippet/07256a20	Sidemenu: Left position}}
 
 
 Sidemenu sizing and positioning
@@ -72,9 +70,7 @@ webix.ui({
 });
 ~~~
 
-{{sample
-28_sidemenu/05_right.html
-}}
+{{editor http://webix.com/snippet/0e1fb741	Sidemenu: Right position}}
 
 Customizing size and position
 -----------------------
@@ -106,9 +102,7 @@ webix.ui({
 });
 ~~~
 
-{{sample
-28_sidemenu/02_left.html
-}}
+{{editor http://webix.com/snippet/07256a20	Sidemenu: Left position}}
 
 
 

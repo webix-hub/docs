@@ -27,7 +27,7 @@ Property sheet is a list of properties. Ui-related property sheet inherits from 
     
 ~~~
 
-{{sample 07_property/01_init.html}}
+{{editor http://webix.com/snippet/decc3b29	Property Sheet: Basic Initialization}}
 
 {{note
 The elements with **label** gets header CSS. If there's no type the element is non-styled and non-editable. 
@@ -78,7 +78,7 @@ $$("sets").setValues({
 });
 ~~~
 
-{{sample 07_property/04_complex_values.html}}
+{{editor http://webix.com/snippet/fae357ac	Property sheet: Data with complex properties}}
 
 The **names** of property elements should be concatenated from the data names within the values.
 
@@ -87,7 +87,7 @@ The **names** of property elements should be concatenated from the data names wi
 Each element features a built-in editor specified by **type** property. Possible values coincide with [editor types](desktop/editing.md) and include: 
 
 - **color**  - an editor for colors, [colorboard](api/refs/ui.colorboard.md) appears on editing; 
-	- {{sample 07_property/03_colorpicker.html}}
+	- {{editor http://webix.com/snippet/5d5d70e3	Property Sheet: Colorpicker}}
 - **text** - a standard editor for text values;
 - **password** - a text editor for passwords;
 - **select** - for selection among several text values with the help of an HTML 'select' control;
@@ -148,7 +148,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 07_property/02_custom_checkbox.html}}
+{{editor http://webix.com/snippet/61b6eed3	Property Sheet: Custom Editors}}
 
 ####Using Custom Popup Editors
 
@@ -204,7 +204,7 @@ prop.registerType("popup-ra",{
 });
 ~~~
 
-{{sample 07_property/02_custom_checkbox.html}}
+{{editor http://webix.com/snippet/61b6eed3	Property Sheet: Custom Editors}}
 
 
 ##Related Articles
