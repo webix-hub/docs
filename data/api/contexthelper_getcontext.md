@@ -12,7 +12,7 @@ $$("contextmenu1").attachTo($$("list1")); //menu is initialized for list
 
 var context = this.getContext(); //gets master area (where list item is)
 var list = context.obj; //gets list item object
-var listId = context.id; //gets the it of the right-clicked list item
+var listId = context.id; //gets the id of the right-clicked list item
 
 @template:	api_method
 @related:

@@ -23,7 +23,7 @@ webix.ui({
 	master:"areaA"
 });
 ~~~
-{{editor http://webix.com/snippet/406a47a3	Context Menu: UI Components Inside }}
+{{editor http://webix.com/snippet/0175fce9	Context Menu: UI Components Inside }}
 
 ####Comments:
 
@@ -53,7 +53,7 @@ webix.ui({
 	master:"context_area"
 });
 ~~~
-{{editor http://webix.com/snippet/406a47a3	Context Menu: UI Components Inside }}
+{{editor http://webix.com/snippet/904d928d	Context Menu: UI Components Inside }}
 
 - **Any HTML element** referred to by its ID:
 
@@ -78,7 +78,7 @@ Content will get elements that are inside the container.
 </div>
 ~~~
 
-{{sample 03_menu/05_context_content.html}}
+{{editor http://webix.com/snippet/32f888ac	Context Menu: HTML Content}}
 
 
 ##Related Articles

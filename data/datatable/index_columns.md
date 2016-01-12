@@ -31,8 +31,8 @@ dtable = new webix.ui({
     ...
 });	
 ~~~
-{{sample
-	15_datatable/09_columns/05_index_column.html
+{{editor
+	http://webix.com/snippet/d7831951	Index Column
 }}
 
 <br>
@@ -73,8 +73,8 @@ dtable = new webix.ui({
     ...
 });	
 ~~~
-{{sample
-	15_datatable/09_columns/05_index_column.html
+{{editor
+	http://webix.com/snippet/d7831951	Index Column
 }}
 
 <br>

@@ -117,7 +117,7 @@ $$('contextmenu1').attachTo($$('list'));
 
 <img src="desktop/contextmenu_list.png" />
 
-{{sample 03_menu/06_context_for_list.html}}
+{{editor http://webix.com/snippet/a5e44811	Context Menu: Attaching to List}}
 
 - or contextmenu **master** property that points to the necessary component object:
 
@@ -160,24 +160,31 @@ $$('contextmenu1').attachTo(document.getElementById("myElement"));
 
 ####Getting Properties of the Master Component
 
-Like with [context](desktop/context.md), the area upon which the context menu is called master area or (if you call it over a component or its item), **master component**. 
+The same as with [context](desktop/context.md), the area upon which the context menu appears is called master area or (if you call it over a component or its item), **master component**. 
 
-Master component object is retrieved with the **getContext()** property. 
+To get the master component object, use the **getContext()** method which returns object with 2 parameters:
+
+- obj - the object of the component's item
+- id - the id of the right-clicked component's item
 
 ~~~js
 webix.ui({
-	view:"contextmenu"
+	view:"contextmenu",
+	id:"cmenu",
+	data:["Add","Rename","Delete",{ $template:"Separator" },"Info"],
 	on:{
-         onItemClick:function(id){
+		onItemClick:function(id){
 			var context = this.getContext();
-    		var list = context.obj; //list item object
-    		var listId = context.id; //id of the clicked list item
-                
-    		webix.message("List item: <i>"+list.getItem(listId).title+"</i> <br/> 
-    					Context menu item: <i>"+this.getItem(id).value+"</i>");
+			var list = context.obj;		//list item object
+			var listId = context.id;	//id of the clicked list item
+			webix.message("List item: <i>"+list.getItem(listId).title+
+            "</i> <br/>Context menu item: <i>"+this.getItem(id).value+"</i>");
+		}
+	}
+});
 ~~~
 
-{{sample 03_menu/06_context_for_list.html}}
+{{editor http://webix.com/snippet/a5e44811	Context Menu: Attaching to List}}
 
 
 ##Related Articles

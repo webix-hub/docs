@@ -33,7 +33,10 @@ webix.ui({
 });
 ~~~
 
-{{sample 09_calendar/01_init.html }}
+{{editor 
+http://webix.com/snippet/1970192b	Calendar
+}}
+
 
 ####Comments: 
 
@@ -60,7 +63,10 @@ webix.ui({
 ~~~
 <img src="desktop/calendar_start_date.png"/>
 
-{{sample 09_calendar/02_start_date.html }}
+{{editor
+http://webix.com/snippet/93ac69a1	Setting Start Date
+}}
+
 
 ##Working with Calendar
 
@@ -101,7 +107,9 @@ webix.ui({
 	]
 });
 ~~~
-{{sample 09_calendar/06_datepicker.html }}
+
+{{editor http://webix.com/snippet/bc812c2f	Date Picker in Calendar}}
+
 
 ##Time Selector in Calendar
 
@@ -134,7 +142,8 @@ With timepicker enabled, time is shown below month view within the calendar body
 - If date is set with no time specified (new Date(2012, 3, 16)) - the clock shows midnight;
 - If the *new Date* function comes with no parameters, current date and time is shown. 
 
-{{sample 09_calendar/03_timepicker.html }}
+{{editor http://webix.com/snippet/cd389349	Timepicker in Calendar}}
+
 
 **Time view**
 
@@ -149,7 +158,8 @@ webix.ui({
 });
 ~~~
 
-{{sample 09_calendar/03_timepicker.html}}
+{{editor http://webix.com/snippet/cd389349	Timepicker in Calendar}}
+
 
 Like standard calendar, time view accepts values as string or date object.
 
@@ -169,7 +179,8 @@ Afterwards the calendar will look like this:
 
 <img src="desktop/calendar_localized.png"/>
 
-{{sample 09_calendar/07_calendar_localized.html }}
+{{editor http://webix.com/snippet/130a271d	Localized Calendar}}
+
 
 You can as well alter current working locale, e.g. change text of "Today" and "Clear" icons:
 
@@ -192,7 +203,10 @@ The whole calendar can be disabled by a common property:
 
 <img src="desktop/calendar_disabled_dates.png"/>
 
-{{sample 09_calendar/08_disabled_dates.html}} 
+{{editor
+http://webix.com/snippet/7011cacb	Disabled Dates
+}}
+
 
 ###Disabling dates
 
@@ -244,7 +258,8 @@ webix.ui({
 });
 ~~~
 
-{{sample 09_calendar/11_disabled_time.html}} 
+{{editor http://webix.com/snippet/23c92eb9	Disabled Time}}
+
 
 **Defining blockTime() function for custom logic**
 
@@ -269,7 +284,8 @@ webix.ui({
 });
 ~~~
 
-{{sample 09_calendar/11_disabled_time.html}} 
+{{editor http://webix.com/snippet/23c92eb9	Disabled Time}}
+
 
 CSS class applied to disabled time slots (**.webix_minutes .webix_cal_day_disabled**) can be redefined.
 
@@ -292,9 +308,7 @@ webix.ui({
 
 To hide the buttons, you should set the **icons** property to **false**.
 
-{{sample
-09_calendar/10_icons.html
-}}
+{{editor http://webix.com/snippet/8cc4b713	'Today' and 'Clear' buttons}}
 
 
 

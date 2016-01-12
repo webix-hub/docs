@@ -47,7 +47,7 @@ columns:[
 ]
 ~~~
 
-{{sample 15_datatable/12_header_footer/04_content.html }}
+{{editor http://webix.com/snippet/3ab570c4	Different Types of Content in the Header}}
 
 Multiline header
 -------------------

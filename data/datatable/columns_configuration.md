@@ -96,7 +96,7 @@ grid = new webix.ui({
 		...]
 })
 ~~~
-{{sample 15_datatable/12_header_footer/01_basic.html }}
+{{editor http://webix.com/snippet/ea9c2b98	Standard Header/Footer Implementation }}
 
 
 
@@ -118,7 +118,7 @@ columns:[
 ]
 ~~~
 
-{{sample 15_datatable/11_sizing/04_fixed_size.html }}
+{{editor http://webix.com/snippet/0a897cea	Sizing Through the Width/Height Parameters}}
 
 
 ###Adjusting the width of columns to the parent container
@@ -135,7 +135,7 @@ columns:[
 The column with the "title" value will take all the free space of the container. If there are more than one column with the enabled **fillspace** attribute, 
 they will divide the free space between them.
 
-{{sample 15_datatable/09_columns/02_autosize_column.html}}
+{{editor http://webix.com/snippet/0e7995d1	Adjusting Columns to the Parent Container}}
 
 ###Distributing free space between columns
 
@@ -150,14 +150,15 @@ columns:[
 
 In the above code the "title" column is 4 times bigger than the "id" one, which is 20 to 80 percent relation.
 
-{{sample 15_datatable/09_columns/02_autosize_column.html}}
+{{editor http://webix.com/snippet/0e7995d1	Adjusting Columns to the Parent Container}}
 
 ###Adjusting column to its content
 
-To adjust the width of a column to the related content size, you can use the **adjust** attribute. There are two options possible:
+To adjust the width of a column to the related content size, you can use the **adjust** attribute. There are three options possible:
 
-- data - adjusts column width to the content of the widest item in it;
-- header - adjusts column width to its header content.
+- "data" - adjusts column width to the content of the widest item in it;
+- "header" - adjusts column width to its header content;
+- true -  searches for the widest item among data and header(s) and adjusts column width to its content.
 
 ~~~js
 columns:[
@@ -172,7 +173,7 @@ Pay attention that the resulting column's width won't be less than minWidth, in 
 }}
 
 
-{{sample 15_datatable/09_columns/01_size_by_content.html }}
+{{editor http://webix.com/snippet/4a7933d0	Adjusting Columns to the Content}}
 
 For more details, read the [Sizing and resizing](datatable/sizing.md) article.
 
@@ -195,7 +196,7 @@ columns:[
     {...}
 ]
 ~~~
-{{sample 15_datatable/03_filtering/01_builtin.html }}
+{{editor http://webix.com/snippet/4b8eb10d	Filtering. Using Built-In Means}}
 
 For more details, read the [Filtering](datatable/filtering.md) article.
 
@@ -222,7 +223,7 @@ columns:[
     {...}
 ]
 ~~~
-{{sample 15_datatable/02_sorting/01_builtin.html }}
+{{editor http://webix.com/snippet/0e6d06fe	Sorting. Using built-in means}}
 
 For more details, read the [Sorting](datatable/sorting.md) article.
 
@@ -265,7 +266,7 @@ columns:[
 	{ id:"col2", format:function(value){ return webix.ui.numberFormat(value)};}
 ]
 ~~~
-{{sample 15_datatable/20_templates/05_dates.html }}
+{{editor http://webix.com/snippet/76364eab	Using Date Templates in DataTable}}
 
 For more details, read the [Number and date formatting](datatable/formatting.md) article.
 
@@ -281,7 +282,7 @@ columns:[
 	{ id:"col1", math:"[row_id,col_name] + [row_id,col_name]"}
 ]
 ~~~
-{{sample 15_datatable/08_math/01_basic.html }}
+{{editor http://webix.com/snippet/595cb342	Using Formulas }}
 
 For more details, read the [Using formulas](datatable/formulas.md) article.
 
@@ -295,7 +296,7 @@ The **collection** property of the column allows syncing column data with that o
 	view:"datatable",
 	columns:[
 		{ id:"product", header:"Product", collection:"dash-pro" },
-		{ id:"quantity", header:"Quatity", 	... },
+		{ id:"quantity", header:"Quantity", 	... },
 		{ id:"price", header:"Unit price",  ... }
 	],
 	dataFeed:"data/orderproducts.php", //main datasource
@@ -331,7 +332,7 @@ columns:[
 	{ id:"col4", template:function(obj){return obj.col1+obj.col2*2+obj.col3*3;}}
 ]
 ~~~
-{{sample 15_datatable/20_templates/01_string.html }}
+{{editor http://webix.com/snippet/fb017270	Using String Templates}}
 
 For more details, read the [Data templates](datatable/templates.md) article.
 
@@ -407,7 +408,7 @@ grida.showColumnBatch(2);
 grida.showColumnBatch(3);
 ~~~
 
-{{sample 15_datatable/15_api/11_column_batches.html}}
+{{editor http://webix.com/snippet/788fe512	Column Batches}}
 
 Adding/deleting columns dynamically
 -----------------------------
@@ -447,7 +448,7 @@ columns.removeAt(2);
 grid.refreshColumns();
 ~~~
 
-{{sample 15_datatable/09_columns/04_add_column.html}}
+{{editor http://webix.com/snippet/f51ecafb	Adding/Removing Columns}}
 
 Grouping columns
 -----------------------------
@@ -486,7 +487,7 @@ columns:[
 ]    
 ~~~
 
-{{sample 60_pro/01_datatable/06_api/12_group_columns.html}}
+{{editor http://webix.com/snippet/c35e912c	Grouped Columns in DataTable}}
 
 Read more about [colspans and rowspans](datatable/headers_footers.md#complexheadercontainingcolspansrowspansbuiltinfilters) in Webix datatable header. 
 
@@ -517,7 +518,7 @@ grida = new webix.ui({
 });
 ~~~
 
-{{sample 60_pro/01_datatable/01_colspans/01_colspans.html}}
+{{editor http://webix.com/snippet/2bb803ef	Colspans in DataTable}}
 
 To learn more on this topic, please visit the [Datatable Rowspans and Colspans](datatable/rowspans_colspans.md) article.
 

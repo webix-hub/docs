@@ -12,9 +12,9 @@ getContext
 
 @example:
 var dnd = webix.DragControl.getContext();
-			if (dnd.from.name){ //ignoring non-ui dnd
-				var value = dnd.from.getItem(dnd.source[0]).title;
-				target.innerHTML=value;
+	if (dnd.from.name){ //ignoring non-ui dnd
+	var value = dnd.from.getItem(dnd.source[0]).title;
+	target.innerHTML=value;
 
 @template:	api_method
 @defined:	DragControl	
