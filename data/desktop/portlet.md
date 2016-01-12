@@ -26,7 +26,7 @@ To initialize a portlet in a div container, you should create a container first:
 Then, in order to place the component into the container, specify the container property inside of the view constructor, as it's shown in the example below.
 
 Portlet consists of a body (taking either a view or a text template) without the head section. 
-A header can also be added. You'll find the details below.
+A header can also be asadded. You'll find the details below.
 
 ~~~js
 webix.ui({
@@ -38,9 +38,7 @@ webix.ui({
 });
 ~~~
 
-{{sample
-60_pro/09_portlet/02_portlet_move.html
-}}
+{{editor http://webix.com/snippet/827bbfa4	Portlet: Move cells}}
 
 
 Moving portlets
@@ -51,7 +49,7 @@ A portlet can be placed as a column or as a row.
 
 <img src="desktop/portlet_moving.png">
 
-{{sample 60_pro/09_portlet/02_portlet_move.html}}
+{{editor http://webix.com/snippet/827bbfa4	Portlet: Move cells}}
 
 
 Dragging by the header
@@ -71,7 +69,7 @@ webix.ui({
 
 <img src="desktop/portlet_header.png">
 
-{{sample 60_pro/09_portlet/03_portlet_drag_header.html}}
+{{editor http://webix.com/snippet/108eaedb	Portlet: Drag Header}}
 
 
 Modes of moving portlets
@@ -93,7 +91,7 @@ webix.ui({
 
 <img src="desktop/portlet_replacing.png">
 
-{{sample 60_pro/09_portlet/01_portlet_replace.html}}
+{{editor http://webix.com/snippet/7ef48379	Portlet: Replace cells}}
 
 
 ###One direction moving
@@ -125,7 +123,7 @@ webix.ui({
 
 <img src="desktop/portlet_one_direction.png">
 
-{{sample 60_pro/09_portlet/05_one_direction.html}}
+{{editor http://webix.com/snippet/a0cf79ee	Portlet: One direction}}
 
 ##Adding other components
 
@@ -154,6 +152,6 @@ webix.ui({
 
 <img src="desktop/portlet_adding_components.png">
 
-{{sample 60_pro/09_portlet/04_drag_component.html}}
+{{editor http://webix.com/snippet/8b3ec318	Portlet: Drag Components}}
 
 @edition:pro

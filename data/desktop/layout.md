@@ -38,7 +38,7 @@ webix.ui({
 	]
 })
 ~~~
-{{sample 80_docs/layout.html }}
+{{editor http://webix.com/snippet/6594c65b	Layout}}
 
 <br>
 
@@ -117,7 +117,6 @@ webix.ui({
 	]
 });
 ~~~
-{{sample 01_layout/02_resize_limit.html }}
 
 
 ##Resizer Lines {#resizer}
@@ -156,9 +155,7 @@ webix.ui({
 })
 ~~~
 
-{{sample
-01_layout/01_resizer.html
-}}
+{{editor http://webix.com/snippet/95acc9bb	Limits on Resizing}}
 
 {{note
 **Responsive layout behavior** depending on window/screen size is discussed [separately](desktop/responsive_layout.md). 

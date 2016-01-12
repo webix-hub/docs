@@ -30,7 +30,7 @@ webix.ui({
 }).show();
 ~~~
 
-{{sample 10_window/02_popup.html }}
+{{editor http://webix.com/snippet/f459e0c2  Popup Window}}
 
 ##Popup Sizing and Positioning
 
@@ -51,7 +51,7 @@ There exist more **positioning options**. All of them are described in a [separa
 
 <img src="desktop/button_popup.png"/>
 
-{{sample 10_window/05_popup_menu.html }}
+{{editor http://webix.com/snippet/503a030b  Popup Menu}}
 
 To create a popup menu that will appear on button click, you should create a button with **popup** property that takes popup **ID** as value. 
 

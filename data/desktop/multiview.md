@@ -35,9 +35,7 @@ webix.ui({
 });
 ~~~
 
-{{sample
-20_multiview/05_tabbar_with_icons.html
-}}
+{{editor http://webix.com/snippet/764b7d65  Multiview Tabbar with Icons}}
 
 {{note
 The direct initialization of the component (**view:"multiview"**) is optional and you can just init **cells** and the view will be automatically recognized.
@@ -83,7 +81,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 20_multiview/07_no_animation.html }}
+{{editor http://webix.com/snippet/cc1ea82f  Disabling Animation}}
 
 Learn more about animation types in the desktop/animation.md article.
 
