@@ -48,9 +48,9 @@ grid = new webix.ui({
 });
 ~~~
 
-{{sample 15_datatable/11_sizing/01_size_to_div.html }}
+{{editor http://webix.com/snippet/5a921be2	Adjusting to the Parent Container }}
 
-{{sample 15_datatable/11_sizing/04_fixed_size.html }}
+{{editor http://webix.com/snippet/97964bf0	Sizing through the Width and Height Parameters }}
 
 ###Column
 
@@ -114,7 +114,8 @@ grid = new webix.ui({
 	]
 });
 ~~~
-{{sample 15_datatable/09_columns/02_autosize_column.html }}
+
+{{editor http://webix.com/snippet/0e7995d1	Adjusting Columns to the Parent Container}}
 
 - adjusting the width of a column to other datatable columns
 
@@ -157,7 +158,7 @@ grid = new webix.ui({
 })
 ~~~
 
-{{sample 15_datatable/09_columns/01_size_by_content.html }}
+{{editor http://webix.com/snippet/9a9cb4ab	Adjusting Columns to the Content}}
 
 {{note
 Note that resulting column width after adjusting won't be lesser than **minWidth** for this column provided that the latter is set. 
@@ -180,7 +181,7 @@ grid = new webix.ui({
     ]
 });
 ~~~
-{{sample 15_datatable/07_resize/07_custom_size.html }}
+{{editor http://webix.com/snippet/0c9dedb3	Setting Custom Size for Rows }}
 
 Autosizing
 -------------
@@ -224,7 +225,7 @@ grid = new webix.ui({
 });            
 ~~~
 
-{{sample 15_datatable/11_sizing/05_auto_size.html }}
+{{editor http://webix.com/snippet/681438ac	Height and Width Autosizing }}
 
 Resizing
 -----------
@@ -234,7 +235,7 @@ By resizing we mean 2 possible scenarios:
 - resizing columns, rows by hovering, dragging mouse over some border;
 - setting other sizes for DataTable elements programmatically. 
 
-{{sample 15_datatable/07_resize/10_row_auto_height.html}}
+{{editor http://webix.com/snippet/1b67772a	Row Auto-Height}}
 
 ###Mouse resizing
 
@@ -255,7 +256,7 @@ grid = new webix.ui({
 	resizeRow:true
 });
 ~~~
-{{sample 15_datatable/07_resize/03_all_resize.html }}
+{{editor http://webix.com/snippet/6d9d6c7f	Column and Row Resizing }}
 
 For these resizing options there exist relevant events [onRowResize](api/ui.datatable_onrowresize_event.md) and [onColumnResize](api/ui.datatable_oncolumnresize_event.md).
 
@@ -275,7 +276,7 @@ grid = new webix.ui({
 grid.define("width", 700);
 grid.resize();
 ~~~
-{{sample 15_datatable/11_sizing/02_resize_node.html }}
+{{editor http://webix.com/snippet/4e25248c	Dynamic Adjusting to the Parent Container }}
 
 In some situations you may need to adjust an element to the size of the outer parent HTML container. 
 In such the situation you may use method [adjust()](api/link/ui.datatable_adjust.md) instead of [resize()](api/link/ui.datatable_resize.md):
@@ -295,49 +296,30 @@ webix.toNode("box").style.width = "700px";
 grid.adjust();
 ~~~
 
-{{sample 15_datatable/11_sizing/02_resize_node.html }}
+{{editor http://webix.com/snippet/4e25248c	Dynamic Adjusting to the Parent Container }}
 
 The [resize()](api/link/ui.datatable_resize.md) and [adjust()](api/link/ui.datatable_adjust.md) methods can lead to one and the same effect.
-For example, you have DataTable placed into a 'div' container, named as 'box'. The initial height of DataTable is 50 px. You want to increase it to 80 px. Possible solutions can look as shown in the table below: 
+For example, you have DataTable placed into a 'div' container, named as 'box'. 
+The initial height of DataTable is 50 px. You want to increase it to 80 px. Possible solutions are given below: 
 
-<table class="list" cellspacing="0" cellpadding="5" border="0">
-	<caption class="caption">
-		<strong>Table 1 </strong>
-		Use of adjust() and resize() methods
-	</caption>
-	<thead>
-	<tr>
-		<th>
-			Image
-		</th>
-		<th>
-			Related code
-		</th>
-	</tr>
-	</thead>
-	<tbody>
-	<tr>
-		<td><img src="datatable/adjust_method_use.png"></img></td>
-		<td>
+- using of the adjust() method:
+	
+<img src="datatable/adjust_method_use.png">
+		
 ~~~js
 document.getElementById('box').style.height="80px";
 grid.adjust();
 ~~~
-		</td>
-	</tr>
-	<tr>
-		<td><img src="datatable/resize_method_use.png"></img></td>
-		<td>
+
+- using the resize() method:
+
+<img src="datatable/resize_method_use.png">
+		
 ~~~js
 grid.define("height", 80);
 grid.resize();
 ~~~
-		</td>
-	</tr>
-	</tbody>
-</table>
-
-
+		
 You can use events to call the mentioned above methods:
 
 {{snippet

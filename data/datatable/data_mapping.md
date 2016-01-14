@@ -56,7 +56,8 @@ grid = new webix.ui({
         { id:"data2"  }
     ],
 ~~~
-{{sample 15_datatable/01_loading/01_inline_data.html }}
+
+{{editor http://webix.com/snippet/04e56172	Loading from an Inline Datasource }}
 
 
 or you can use mapping, to define more meaningful names for columns
@@ -88,7 +89,8 @@ webix.ui({
     	{ id:"start", map:"(date)#start#" }
     ]
 ~~~
-{{sample 15_datatable/20_templates/06_dates_string.html }}
+
+{{editor http://webix.com/snippet/7148848d	Converting Strings to Dates }}
 
 If id of columns and name of mapped field is equal you can shorten it to 
 

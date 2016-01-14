@@ -21,7 +21,7 @@ The simplest header menu is set with the help of a datatable **headermenu** prop
 { view:"datatable", columns:[...], headermenu:true}
 ~~~
 
-{{sample 60_pro/01_datatable/02_headermenu/03_header_menu.html}}
+{{editor http://webix.com/snippet/543d24fc	Header Menu in the DataTable}}
 
 ##Extended Configuration
 
@@ -49,7 +49,7 @@ headermenu:{
 }
 ~~~
 
-{{sample 60_pro/01_datatable/02_headermenu/04_header_menu_extended.html}} 
+{{editor http://webix.com/snippet/3aaed8ec	Extended Header Menu in DataTable}} 
 
 **Header menu with limited item quantity**
 
@@ -64,7 +64,7 @@ headermenu:{
 }
 ~~~
 
-{{sample 60_pro/01_datatable/02_headermenu/04_header_menu_extended.html}} 
+{{editor http://webix.com/snippet/3aaed8ec	Extended Header Menu in DataTable}} 
 
 **Excluding a column from the menu**
 
@@ -98,7 +98,7 @@ columns:[
 ]
 ~~~
 
-{{sample 60_pro/01_datatable/02_headermenu/05_header_menu_icon.html}}
+{{editor http://webix.com/snippet/79570fca	Header Menu Icon in DataTable}}
 
 If there is such a column in the datatable configuration, the **headermenu** property for it can be omitted. 
 
@@ -122,7 +122,7 @@ function showMenu(node){
 }
 ~~~
 
-{{sample 60_pro/01_datatable/02_headermenu/05_header_menu_icon.html}}
+{{editor http://webix.com/snippet/79570fca	Header Menu Icon in DataTable}}
 
 @edition:pro
 

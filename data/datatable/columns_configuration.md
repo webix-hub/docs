@@ -96,7 +96,7 @@ grid = new webix.ui({
 		...]
 })
 ~~~
-{{editor http://webix.com/snippet/ea9c2b98	Standard Header/Footer Implementation }}
+{{editor http://webix.com/snippet/7e1e5742	Standard Header/Footer Implementation }}
 
 
 

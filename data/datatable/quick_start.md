@@ -5,7 +5,7 @@ This tutorial walks you through creating a basic application containing DataTabl
 As you follow the steps, you learn how to initialize DataTable, customize and configure its appearance, load data to it.
 The final code of the tutorial can be used as the start point while creating applications using DataTable.
 
-{{sample 15_datatable/80_docs/11_minimal_init.html }}
+{{editor http://webix.com/snippet/c8f75020	Quick Start with DataTable}}
 
  
 A new HTML file and related code files
@@ -135,7 +135,7 @@ dtable = new webix.ui({
 
 Congratulations! Now you can run your app and it'll produce DataTable shown at the very beginning.
 
-{{sample 15_datatable/80_docs/11_minimal_init.html }}
+{{editor http://webix.com/snippet/c8f75020	Quick Start with DataTable}}
 
 
 What's next

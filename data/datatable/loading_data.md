@@ -30,7 +30,7 @@ grid = new webix.ui({
 	]
 }); 
 ~~~
-{{sample 15_datatable/01_loading/01_inline_data.html }}
+{{editor http://webix.com/snippet/04e56172	Loading from an Inline Datasource }}
 
 
 ### Loading data from a data file
@@ -41,7 +41,7 @@ grid = new webix.ui({
 	url:"data/data.json"
 }); 
 ~~~
-{{sample 15_datatable/01_loading/02_url_data.html }}
+{{editor http://webix.com/snippet/045e83f8	Loading from an External Data File }}
 
 
 
@@ -66,7 +66,8 @@ grid = new webix.ui({
 	url:"data/data.xml"
 }); 
 ~~~
-{{sample 15_datatable/01_loading/02_url_data.html }}
+
+{{editor http://webix.com/snippet/045e83f8	Loading from an External Data File }}
 
 {{note If you use xml format with tag names equal to column ids, you may skip mapping, DataTable will be able to auto-map values }}
 
@@ -83,7 +84,8 @@ grid = new webix.ui({
 	url:"data/data.csv"
 }); 
 ~~~
-{{sample 15_datatable/01_loading/02_url_data.html }}
+
+{{editor http://webix.com/snippet/045e83f8	Loading from an External Data File }}
 
 For more details, check datatable/data_mapping.md
 
@@ -120,7 +122,7 @@ grid.parse("films", "htmltable");
 </script>
 ~~~
 
-{{sample 15_datatable/01_loading/04_html.html }}
+{{editor http://webix.com/snippet/5a3e4f0f	Loading from an HTML Table }}
 
 
 Loading from database
@@ -159,7 +161,7 @@ grid = new webix.ui({
 //or
 grid.load("data/table_data.php");
 ~~~
-{{sample 15_datatable/01_loading/03_db_data.html }}
+{{editor http://webix.com/snippet/e7bbc538	Loading from DB }}
 
 
 Loading big datasets (dynamic) 
@@ -192,7 +194,7 @@ $data = new JSONDataConnector($conn, $dbtype);//initializing the connector objec
 $data->dynamic_loading(30);//enabling dynamic loading 
 $data->render_table("packages_plain","id","package, size, architecture, section");//loading data from the specified database table    
 ~~~
-{{sample 15_datatable/16_dyn_loading/01_db_dyn_data.html }}
+{{editor http://webix.com/snippet/7d02ef1f	Dynamic Loading from DB }}
 
 Note, inside **dynamic_loading()** you should specify a number of records that will be loaded at once.
 
@@ -221,17 +223,18 @@ The library offers you different properties and methods that can help you to set
 	<tr>
 		<td> <b>datafetch</b> </td>
 		<td>Defines the start position DataTable will load data from</td>
-		<td>You want to load records starting from the fiftieth one, then you set <b>datafetch:50</b>. <br> {{sample 15_datatable/16_dyn_loading/02_db_dyn_start.html }} </td>
+		<td>You want to load records starting from the fiftieth one, then you set <b>datafetch:50</b>. <br> {{editor http://webix.com/snippet/fa8e8a40	Setting Loading Position }} </td>
 	</tr>
 	<tr>
 		<td><b>datathrottle</b></td>
 		<td>Sets polling interval that can be used to decrease the number of requests to server</td>
-		<td>As a rule, data are getting loaded when a user starts to scroll DataTable. If he scrolls DataTable slowly, the app pushes a big amount of requests to the server, a major part of which is unnecessary. To exclude unnecessary requests and reduce server overloading, you can set the <b>datathrottle</b> property, for example to 5, and requests start to be sent to server at 5 seconds intervals. <br> {{sample 15_datatable/16_dyn_loading/03_db_dyn_throttle.html }}</td>
+		<td>As a rule, data are getting loaded when a user starts to scroll DataTable. If he scrolls DataTable slowly, the app pushes a big amount of requests to the server, a major part of which is unnecessary. To exclude unnecessary requests and reduce server overloading, you can set the <b>datathrottle</b> property, for example to 5, and requests start to be sent to server at 5 seconds intervals. 
+        <br> {{editor http://webix.com/snippet/e9f0c3b3	 Setting Polling Interval}}</td>
 	</tr>
 	<tr>
 		<td><b>loadahead</b></td>
 		<td>Allows you to avoid DataTable from possible 'blank spots' while scrolling</td>
-		<td>When you start scrolling, DataTable detects where you scroll (up or down) and loads next records in this direction (the number of records is defined by the parameter). If you set <b>loadahead:50</b>, then on each scrolling movement DataTable will load next 50 records. <br> {{sample 15_datatable/16_dyn_loading/04_db_dyn_loadahead.html }}</td>
+		<td>When you start scrolling, DataTable detects where you scroll (up or down) and loads next records in this direction (the number of records is defined by the parameter). If you set <b>loadahead:50</b>, then on each scrolling movement DataTable will load next 50 records. <br> {{editor http://webix.com/snippet/5fc0fc64	Dynamic Loading.Load Ahead }}</td>
 	</tr>
 	</tbody>
 </table>
@@ -264,7 +267,7 @@ grid = new webix.ui({
 	url:"data/table_data.php"
 });   
 ~~~
-{{sample 15_datatable/01_loading/05_load_message.html }}
+{{editor http://webix.com/snippet/8d0e43fd	Loading Screen }}
  
 In case you don't call method [hideOverlay()](api/ui.datatable_hideoverlay.md) , instead of the loading screen you will set the overlay text. It can be useful in some situations. For example, when your DataTable doesn't contain any data, you can display the overlay text to inform users about it.
 
@@ -280,7 +283,7 @@ on:{
 	}
 }
 ~~~
-{{sample 15_datatable/01_loading/06_nodata_message.html }}
+{{editor http://webix.com/snippet/e007ab95	Adding Overlay Text }}
 
 
 Loading configuration 

@@ -70,7 +70,7 @@ columns:[
 
 Note, you can specify different number of subheaders for different columns (number of subheaders is equal to number of values in array).
 
-{{sample 15_datatable/12_header_footer/03_multiline.html }}
+{{editor http://webix.com/snippet/31dd066d	Multiline Header}}
 
 Complex header containing colspans (rowspans), built-in filters
 -------------------------------------------------------------
@@ -103,7 +103,7 @@ columns:[
 ]
 ~~~
 
-{{sample 15_datatable/12_header_footer/09_colspan.html }}
+{{editor http://webix.com/snippet/308f590a	Colspans and Rowspans in the Header}}
 
 ###Rowspan
 
@@ -122,7 +122,7 @@ columns:[
 ]
 ~~~
 
-{{sample 15_datatable/12_header_footer/09_colspan.html }}
+{{editor http://webix.com/snippet/308f590a	Colspans and Rowspans in the Header}}
 
 ###Built-in filters
 
@@ -141,7 +141,7 @@ columns:[
 ]
 ~~~
 
-{{sample 15_datatable/12_header_footer/05_filters.html }}
+{{editor http://webix.com/snippet/68aa4437	Filters in the Header }}
 
 More information about built-in and custom filters is in the [separate article](datatable/filtering.md).
 
@@ -160,7 +160,7 @@ Built-in header menu allows end users to control visibility of the columns by se
 { view:"datatable", columns:[...], headermenu:true}
 ~~~
 
-{{sample 60_pro/01_datatable/02_headermenu/03_header_menu.html}}
+{{editor http://webix.com/snippet/543d24fc	Header Menu in the DataTable}}
 
 Headermenu can be customized. For more details, go to the [Datatable Header Menu](datatable/headermenu.md) article. 
 
@@ -196,7 +196,7 @@ columns:[
 ]
 ~~~
 
-{{sample 15_datatable/12_header_footer/01_basic.html }}
+{{editor http://webix.com/snippet/7e1e5742	Standard Header/Footer Implementation}}
 
 Multiline footer
 -------------------
@@ -259,7 +259,7 @@ columns:[
 ]
 ~~~
 
-{{sample 15_datatable/12_header_footer/06_counter.html }}
+{{editor http://webix.com/snippet/0c39d9ad	Counter in the Footer }}
 
 Rotated header/footer
 -----------------
@@ -267,7 +267,7 @@ Rotated header/footer
 {{pronote
 Note that this feature is available in **Webix Pro** edition only. 
 }}
-
+<br>
 <img src="desktop/header_rotate.png">
 
 To define rotated state for the header or footer you should specify it as an object (or array of objects in case of multiline header/footer).
@@ -283,7 +283,7 @@ columns:[
 ]    
 ~~~
 
-{{sample 60_pro/01_datatable/06_api/11_rotate_header.html}}
+{{editor http://webix.com/snippet/407327a2	Header Rotate}}
 
 ##Custom Height for Header and Footer
 
@@ -298,7 +298,7 @@ columns:[
 ]
 ~~~
 
-{{sample 15_datatable/12_header_footer/12_lineheight.html}}
+{{editor http://webix.com/snippet/67e5b7a8	Custom Height for Header Lines}}
 
 Custom Header and Footer Content
 --------------------------------------------
@@ -368,7 +368,7 @@ webix.ui.datafilter.customFilterName = {
 };
 ~~~
 
-{{sample 15_datatable/12_header_footer/11_custom_content.html }}
+{{editor http://webix.com/snippet/c332ca12	Custom Content for Header and Footer }}
 
 @test: test
 @keyword:

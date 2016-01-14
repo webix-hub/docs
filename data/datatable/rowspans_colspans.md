@@ -38,7 +38,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 60_pro/01_datatable/01_colspans/01_colspans.html }}
+{{editor http://webix.com/snippet/2bb803ef	Colspans in DataTable}}
 
 Each definition of a rowspan or colspan includes: 
 
@@ -132,7 +132,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 60_pro/01_datatable/01_colspans/02_colspans_big.html }}
+{{editor http://webix.com/snippet/1fb8087f	Colspans in a Big DataTable}}
 
 @edition:pro
 
