@@ -39,7 +39,7 @@ webix.ui({
 });	
 ~~~
 
-{{sample 03_menu/01_menubar.html }}
+{{editor http://webix.com/snippet/15b2d496	Basic Menu}}
 
 ####Submenu configuration may include: 
 
@@ -58,7 +58,7 @@ To hide submenus, you need to click somewhere outside the menu;
 - **data** (object) - the inline data desired format. See [Loading data](desktop/data_loading.md) article for details
 - **autowidth** - (boolean) adjusts the width of pulldown subitems according to the length of their text, false by default
 
-{{sample 03_menu/11_menu_open_click.html}}
+{{editor http://webix.com/snippet/0c2baf98	Showing Menu on Mouse Click (dropping down on hover is disabled)}}
 
 ##Working with Menu Items
 
@@ -104,7 +104,7 @@ data:[
 
 If not specified, target will be set as empty string. 
 
-{{sample 03_menu/13_hrefs.html}}
+{{editor http://webix.com/snippet/c8752be0	Menu hrefs}}
 
 ###Badges in Menu Items
 
@@ -120,7 +120,7 @@ data:[
 ]
 ~~~
 
-{{sample 03_menu/16_badges.html }}
+{{editor http://webix.com/snippet/07b7833f	Menu with Badges}}
 
 
 ###Separators in Menu
@@ -146,9 +146,7 @@ data:[
 ]
 ~~~
 
-{{sample
-03_menu/15_menu_spacer.html
-}}
+{{editor http://webix.com/snippet/c054e17f	Vertical Menu}}
 
 {{snippet
 Separator in vertical menu
@@ -164,7 +162,7 @@ data:[
 ]    
 ~~~
 
-{{sample 03_menu/01_menubar.html}}
+{{editor http://webix.com/snippet/15b2d496	Basic Menu}}
 
 ###Customizing Submenus
 
@@ -208,7 +206,7 @@ data:[
 
 This configuration overrides common configuration for submenus defined by **submenuConfig**. 
 
-{{sample 03_menu/12_submenu_config.html}}
+{{editor http://webix.com/snippet/52285b09	Configuring Submenus}}
 
 
 <h3 id="autowidth">Automatic setting of Submenus' width</h3>
@@ -232,9 +230,7 @@ webix.ui({
 });
 ~~~
 
-{{sample
-03_menu/17_submenu_autowidth.html
-}}
+{{editor http://webix.com/snippet/cb2c7e3c	Autowidth for Submenus}}
 
 
 ###Webix Component as Menu Item
@@ -259,7 +255,7 @@ webix.ui({
 });    
 ~~~
 
-{{sample 03_menu/02_menubar_template.html}}
+{{editor http://webix.com/snippet/faa2f7c1	HTML Elements as Menu Items}}
 
 The same way you can initialize  Webix **submenu** component separately and then point to it within *submenu* property:
 
@@ -295,7 +291,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 03_menu/07_menu_toolbar.html}}
+{{editor http://webix.com/snippet/24351947	Menu in Toolbar}}
 
 ##Hiding and Disabling Menu Items
 
@@ -316,7 +312,7 @@ $$("tree1").attachEvent("onItemCheck",function(id,state){
 
 As a result, only "unchecked" menu items are shown.
 
-{{sample 03_menu/10_hide_item.html}}
+{{editor http://webix.com/snippet/116ca2b4	Hiding Menu Items}}
 
 ###Disabling
 
@@ -343,7 +339,7 @@ template:function(obj){
 }
 ~~~
 
-{{sample 03_menu/09_disable_item.html}}
+{{editor http://webix.com/snippet/0ec857bd	Disabling Menu Items}}
 
 ##Event Handling with Menu and Submenu Items
 
@@ -356,7 +352,7 @@ All menu and submenu items can be accessed by their IDs.
 $$('menu1').getMenuItem(id).value; 
 ~~~
  
-{{sample 03_menu/01_menubar.html}}
+{{editor http://webix.com/snippet/15b2d496	Basic Menu}}
 
 
 2 . At the same time, menu items can be derived through submenu object returned by **getSubMenu()** method for an item with the specified ID. If there's no submenu for an item - an object of the calling component will be returned. 
@@ -366,7 +362,7 @@ var menu = $$("menu1").getSubMenu(id);
 var item = menu.getItem(id).value;
 ~~~
 
-{{sample 03_menu/02_menubar_template.html}}
+{{editor http://webix.com/snippet/faa2f7c1	HTML Elements as Menu Items}}
 
 Both methods can be used in either of **menu inner events**, for instance, click events:
 
@@ -387,7 +383,7 @@ on:{
 }
 ~~~
 
-{{sample 03_menu/01_menubar.html}}
+{{editor http://webix.com/snippet/15b2d496	Basic Menu}}
 
 {{snippet
 Submenu specific "onItemClick" handler
@@ -409,7 +405,7 @@ data:[
 ~~~
 
 
-{{sample 03_menu/12_submenu_config.html }}
+{{editor http://webix.com/snippet/52285b09	Configuring Submenus}}
 
 
 
