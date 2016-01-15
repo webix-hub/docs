@@ -31,7 +31,7 @@ Setting the fixed size for DataTable
 //way 1
 <div id="box" style="width:300px;height:400px;"></div> 
 
-grid = new webix.ui({
+webix.ui({
 	container:"box",
 	view:"datatable",
 	...
@@ -39,7 +39,7 @@ grid = new webix.ui({
 //way 2
 <div id="box"/>
 
-grid = new webix.ui({
+webix.ui({
 	container:"box",
 	view:"datatable",
 	height:400,
@@ -68,7 +68,7 @@ Setting different widths for columns
 }} 
 
 ~~~js
-grid = new webix.ui({
+webix.ui({
 	view:"datatable",
 	...
 	columns:[
@@ -82,7 +82,7 @@ grid = new webix.ui({
 Altering common width for all columns
 }}
 ~~~js
-grid = new webix.ui({
+webix.ui({
 	view:"datatable",
 	columnWidth:200,
 	columns:[
@@ -105,7 +105,7 @@ If you set widths for columns and their sum is less than the width of the parent
 Using attribute fillspace
 }} 
 ~~~js
-grid = new webix.ui({
+webix.ui({
 	view:"datatable",
 	...
 	columns:[
@@ -122,7 +122,7 @@ grid = new webix.ui({
 There can be more than one **fillspace** in the datatable; in this case width will be calculated on the base of a proportion defined by numeric values: 
 
 ~~~js
-grid = new webix.ui({
+webix.ui({
 	view:"datatable",
 	...
 	columns:[
@@ -146,7 +146,7 @@ If you want to adjust the width of a column to the related content size, you can
 Adjusting the column width to fit the content size
 }}
 ~~~js
-grid = new webix.ui({
+webix.ui({
 	view:"datatable",
 	...
 	columns:[
@@ -171,7 +171,7 @@ To set the fixed height for a row you should use **$height** while defining the 
 Setting different heights for rows
 }} 
 ~~~js
-grid = new webix.ui({
+webix.ui({
 	view:"datatable",
 	...
 	data:[
@@ -193,7 +193,7 @@ Datatable automatically adjusts to the size of a parent container provided that 
 To make the Datatble fill the entire width, you should define **fillspace** for at least one of its columns:
 
 ~~~js
-grid = new webix.ui({
+webix.ui({
 	view:"datatable",
 	...
 	columns:[
@@ -217,7 +217,7 @@ You can enable width, height (or both of them) autosizing to adjust DataTable to
 DataTable autosizing
 }} 
 ~~~js
-grid = new webix.ui({
+webix.ui({
 	view:"datatable",
 	...
 	autoheight:true,
@@ -249,7 +249,7 @@ To enable the possibility to resize columns (rows) by mouse you should use one o
 Enabling the possibility to resize columns and rows by mouse
 }}  
 ~~~js
-grid = new webix.ui({
+webix.ui({
 	view:"datatable",
 	...
 	resizeColumn:true,
@@ -268,7 +268,7 @@ When you change size of some element and call this method, child(parent) contain
 Adjusting the parent container to the DataTable size
 }}
 ~~~js
-grid = new webix.ui({
+webix.ui({
 	view:"datatable",
 	...
 })
@@ -286,7 +286,7 @@ Adjusting DataTable to the size of the parent container
 }}
 
 ~~~js
-grid = new webix.ui({
+webix.ui({
 	container:"box",
 	view:"datatable",
 	...
@@ -302,7 +302,7 @@ The [resize()](api/link/ui.datatable_resize.md) and [adjust()](api/link/ui.datat
 For example, you have DataTable placed into a 'div' container, named as 'box'. 
 The initial height of DataTable is 50 px. You want to increase it to 80 px. Possible solutions are given below: 
 
-- using of the adjust() method:
+- using the adjust() method:
 	
 <img src="datatable/adjust_method_use.png">
 		
@@ -330,7 +330,7 @@ Adjusting DataTable to the size of a window, it&#146;s placed into
 webix.event(window, "resize", function(){ grid.adjust(); })
 ~~~
 
-{{sample 15_datatable/11_sizing/03_resize_win.html }}
+{{editor http://webix.com/snippet/54a6e1ad	Sizing and Events }}
 
 ###Dynamic Adjusting Columns and Rows
 
@@ -350,7 +350,7 @@ Disabling vertical scrolling
 }}
 
 ~~~js
-grid = new webix.ui({
+webix.ui({
 	view:"datatable",
 	...
 	scrollY:false
@@ -364,23 +364,21 @@ Managing the size of the scroll bars
 }}
 
 ~~~js
-grid = webix.ui({
+webix.ui({
 	view:"datatable",
 	...
 	scrollSize:20
 })
 ~~~
 
-
-
 You can also force DataTable to be scrolled just by whole rows, i.e. you won't be able to scroll along the full length of rows. The related parameter you should enable is [scrollAlignY](api/ui.datatable_scrollaligny_config.md):
 
 {{snippet Scrolling DataTable by whole rows}}
 ~~~js
-grid = new webix.ui({
+webix.ui({
 	...
 	scrollAlignY:true
 });
 ~~~
 
-{{sample 15_datatable/09_columns/03_scrolls.html }}
+{{editor http://webix.com/snippet/3c92ac3d	Different Scrolling Behaviors }}

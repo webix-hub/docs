@@ -51,7 +51,7 @@ webix.ui({
 ~~~
 
 
-{{sample 60_pro/01_datatable/07_sub/04_sub_grid.html}}
+{{editor http://webix.com/snippet/a9064220	Sub-Grid in a DataTable}}
 
 ##Loading data into a subview
 
@@ -100,7 +100,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 60_pro/01_datatable/07_sub/05_sub_grid_data.html}}
+{{editor http://webix.com/snippet/a61a39b4	Sub-Grid in a DataTable - Inline Data}}
 
 ###Loading data from an external source
 
@@ -130,7 +130,7 @@ takes the path to the necessary file or script that will return data for a subgr
 }
 ~~~
 
-{{sample 60_pro/01_datatable/07_sub/06_sub_grid_url.html}}
+{{editor http://webix.com/snippet/52ec4335	Sub-Grid in a DataTable - Loading Data}}
 
 
 Sub-Form in a Datatable
@@ -188,6 +188,6 @@ webix.ui({
 });
 ~~~
 
-{{sample 60_pro/01_datatable/07_sub/07_sub_form.html}}
+{{editor http://webix.com/snippet/98aa0ac0	Sub-Form in a DataTable}}
 
 @edition:pro

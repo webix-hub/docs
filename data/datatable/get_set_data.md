@@ -62,7 +62,7 @@ function(value, row_id, column_id, row_ind, col_ind){
 		return value.toString().split("").reverse().join("");
 });
 ~~~
-{{sample 15_datatable/15_api/01_map_cell.html }}
+{{editor http://webix.com/snippet/b3e46e95	Mapping Cells }}
 
 
 - [mapSelection](api/ui.datatable_mapselection.md) - gets the current values of the selected cells ( called for each selected cell by turn).
@@ -75,6 +75,6 @@ grid.mapSelection(function(value){
 		return value.toString().split("").reverse().join("");
 });
 ~~~
-{{sample 15_datatable/05_selection/07_map_selection.html }}
+{{editor http://webix.com/snippet/ca58196f	Mapping Selection }}
 
 For more on the mentioned and other related methods, see [API Reference](api/refs/ui.datatable.md).

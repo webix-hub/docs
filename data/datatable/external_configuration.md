@@ -25,7 +25,7 @@ The specified **data-config.json** file should have the following structure:
 {{snippet
 'data-config.json' file
 }}
-~~~json
+~~~js
 {
 	"config":{ 
 		columns:[
@@ -107,7 +107,7 @@ The specified **config.json** file should have the following structure:
 {{snippet
 'config.json' file
 }}
-~~~json
+~~~js
 [
 	{ id:"title",	header:"Film title",  width:200},
 	{ id:"year",	header:"Released" ,   width:80},
@@ -137,7 +137,7 @@ The specified **data-config.json** file should have the following structure:
 {{snippet
 'data-config.json' file
 }}
-~~~json
+~~~js
 {
 	"config":[
 		{ id:"title",	header:"Film title", width:200},
@@ -150,4 +150,4 @@ The specified **data-config.json** file should have the following structure:
 	]
 }
 ~~~
-{{sample 15_datatable/01_loading/10_custom_configuration_format.html }}
+{{editor http://webix.com/snippet/79ba0a89	Loading Configuration from Server Side }}

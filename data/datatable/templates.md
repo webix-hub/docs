@@ -29,7 +29,7 @@ grid = new webix.ui({
 });    
 ~~~
 
-{{sample 15_datatable/20_templates/01_string.html }}
+{{editor http://webix.com/snippet/fb017270	Using String Templates}}
 
 Templates can be used for presenting almost any content in DataTable ( anything which can be done through HTML - can be placed in DataTable's cell) such as: images, links, numbers, string, dates.
 
@@ -94,7 +94,7 @@ grid = new webix.ui({
 })
 ~~~
 
-{{sample 15_datatable/20_templates/06_dates_string.html }}
+{{editor http://webix.com/snippet/7148848d	Converting Strings to Dates }}
 
 
 For more on styling, read article datatable/styling.md
@@ -135,7 +135,7 @@ grid = new webix.ui({
     ...
 })
 ~~~
-{{sample 15_datatable/14_events/02_click_css.html }}
+{{editor http://webix.com/snippet/1a2c45cf	DataTable: Custom Handler }}
 
 ## Built-in templates
 

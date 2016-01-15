@@ -31,7 +31,7 @@ columns:[
 ]
 ~~~
 
-{{sample 60_pro/01_datatable/07_sub/01_sub_rows.html}}
+{{editor http://webix.com/snippet/04d21d7d	SubRows in DataTable}}
 
 Setting autoheight for subrows
 -------------------------------
@@ -59,7 +59,7 @@ webix.ui({
 });	
 ~~~
 
-{{sample 60_pro/01_datatable/07_sub/02_sub_autoheight.html}}
+{{editor http://webix.com/snippet/03d19740	SubRows in DataTable - Size to Data}}
 
 Changing the content of a subrow
 ---------------------------
@@ -95,7 +95,7 @@ And then specify the new text for the *details* property of this item:
 }
 ~~~
 
-{{sample 60_pro/01_datatable/07_sub/03_sub_api.html}}
+{{editor http://webix.com/snippet/1a4164e1	SubRows in DataTable - API}}
 
 API reference
 ------

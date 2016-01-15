@@ -22,7 +22,7 @@ grid = new webix.ui({
 });
 ~~~
 
-{{sample 15_datatable/20_templates/04_numbers.html }}
+{{editor http://webix.com/snippet/e49a0ae9	Using Number Templates }}
 
 
 Method **numToStr()** allows you to set the following properties for fractional numbers:
