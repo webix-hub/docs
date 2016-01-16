@@ -11,7 +11,7 @@ save
 webix.ui({
   id: "mylist",
   view: "list",
-  load: "data.php",
+  url: "data.php",
   save: "save.php"
 });
 
@@ -37,7 +37,7 @@ To use a server-side connector, you can initialize `save` as follows:
 ~~~
 webix.ui({
   view: "list",
-  load: "data.php",
+  url: "data.php",
   save: "connector->save.php"
 })
 ~~~
