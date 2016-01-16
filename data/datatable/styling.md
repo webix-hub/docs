@@ -47,7 +47,7 @@ webix.ui({
 </script>
 ~~~
 
-{{sample 15_datatable/21_styling/01_basic.html }}
+{{editor http://webix.com/snippet/77278012	Basic Styling}}
 
 
 Columns
@@ -86,7 +86,7 @@ webix.ui({
 </script>
 ~~~
 
-{{sample 15_datatable/21_styling/02_column_styling.html }}
+{{editor http://webix.com/snippet/8a767d17	Columns Styling}}
 
 Rows
 ---------------------
@@ -167,7 +167,7 @@ grid = new webix.ui({
 </script>
 ~~~
 
-{{sample 15_datatable/21_styling/04_rows_styling.html }}
+{{editor http://webix.com/snippet/876adb69	Rows Styling }}
 
 <h3 id="hover">Applying hover styles</h3>
 
@@ -198,12 +198,9 @@ grid = webix.ui({
 </script>
 ~~~
 
-{{sample
-15_datatable/05_selection/12_hover.html
+{{editor
+http://webix.com/snippet/2b1b5257	Row Hover
 }}
-
-
-
 
 
 Cells
@@ -292,7 +289,7 @@ grid = new webix.ui({
 </script>
 ~~~
 
-{{sample 15_datatable/21_styling/03_cell_styling.html }}
+{{editor http://webix.com/snippet/e85b6909	Cells Styling}}
 
 The header
 ------------------------------------------
@@ -322,7 +319,7 @@ grid = new webix.ui({
 </script>
 ~~~
 
-{{sample 15_datatable/21_styling/05_header_styling.html }}
+{{editor http://webix.com/snippet/24b65451	Header Styling }}
 
 CSS maps
 -------------------------------------------------------------

@@ -143,12 +143,14 @@ Through the template you can define common elements for the cells belonging to o
 
 - checkboxes;
 - radio buttons;
-- "edit" cons;
+- "edit" icons;
 - "trash" icons.
 
 {{note
 You can define additional common elements within the [component type](desktop/type.md#definingcommonelements). 
 }}
+
+###Checkboxes and Radio Buttons
 
 ~~~js
 webix.ui({
@@ -160,11 +162,15 @@ webix.ui({
     ]
 });
 ~~~
-{{sample
-15_datatable/04_editing/07_checkbox.html
+{{editor
+http://webix.com/snippet/b3456826	Checkbox and Radio in a DataTable
 }}
 
 Learn more about checkboxes and radios in a separate article - datatable/controls.md 
+
+###"Edit" and "Trash" icons
+
+<img src="datatable/edit_trash_icons_in_grid.png">
 
 ~~~js
 webix.ui({
@@ -176,6 +182,10 @@ webix.ui({
     ]
 });
 ~~~
+
+{{editor http://webix.com/snippet/eb42427a	"Edit" and "Trash" Icons in a DataTable}}
+
+###Specifying built-in templates in a function
 
 You can set built-in template via a function: 
 

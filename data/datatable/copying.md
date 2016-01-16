@@ -16,13 +16,13 @@ Setting the desired behavior of copying
 }}
 
 ~~~js
-grid = new webix.ui({
-		view:"datatable",
-		...
-		clipboard:"selection",
+webix.ui({
+	view:"datatable",
+	...
+	clipboard:"selection",
 });
 ~~~
-{{sample 15_datatable/06_clipboard/05_two_grids.html }}
+{{editor http://webix.com/snippet/ba30834b	Copying between Grids }}
 
 'Block' copying
 -----------------------

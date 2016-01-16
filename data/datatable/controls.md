@@ -1,7 +1,7 @@
 Checkbox and Radio in DataTable
 ===================================================
 DataTable allows you to add any HTML elements inside of it (using the **template** attribute of the api/ui.datatable_columns_config.md parameter).<br>
-Besides, the library provides ready-to-use solutions for popular checkbox and radio controls to save your time.
+The library provides ready-to-use solutions for popular checkbox and radio controls, as well as for ["edit" and "trash" icons](datatable/templates.md#builtintemplates) to save your time.
 
 The controls are specified through the same **template** attribute of the  api/ui.datatable_columns_config.md parameter.
 
@@ -33,7 +33,9 @@ columns:[
         ...
 ]
 ~~~
-{{sample 15_datatable/04_editing/07_checkbox.html }}
+{{editor
+http://webix.com/snippet/b3456826	Checkbox and Radio in a DataTable
+}}
 
 radio
 -----------------------------------------

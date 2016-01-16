@@ -75,7 +75,7 @@ grid = new webix.ui({
 	]
 });
 ~~~
-{{sample 15_datatable/20_templates/05_dates.html }}
+{{editor http://webix.com/snippet/76364eab	Using Date Templates in DataTable}}
 
 For details on date formatting methods, see article helpers/date_formatting_methods.md.
 
@@ -92,7 +92,8 @@ grid = new webix.ui({
 
 });
 ~~~
-{{sample 15_datatable/20_templates/06_dates_string.html }}
+
+{{editor http://webix.com/snippet/7148848d	Converting Strings to Dates }}
 
 the *(date)* marker at start of map declaration forces data conversion from string to object.
 By default datatable will assume that data will be in "%Y-%m-%d" (mysql date format), but you can change it as
