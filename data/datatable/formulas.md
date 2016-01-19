@@ -40,7 +40,7 @@ grid = new webix.ui({
 })
 ~~~
 
-{{sample 15_datatable/08_math/01_basic.html }}
+{{editor http://webix.com/snippet/595cb342	Using Formulas }}
 
 **Syntax:**
 
@@ -119,7 +119,7 @@ grid = new webix.ui({
 ~~~
 
 
-{{sample 15_datatable/08_math/03_column_math.html }}
+{{editor http://webix.com/snippet/00c1bb5d	Applying Formulas to an Entire Column }}
 
 **Syntax:**
 

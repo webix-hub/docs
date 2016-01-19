@@ -196,7 +196,8 @@ columns:[
     {...}
 ]
 ~~~
-{{editor http://webix.com/snippet/4b8eb10d	Filtering. Using Built-In Means}}
+
+{{editor http://webix.com/snippet/4b8eb10d	Filtering. Built-in Text Filter and Select Filter}}
 
 For more details, read the [Filtering](datatable/filtering.md) article.
 

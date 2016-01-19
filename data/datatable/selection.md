@@ -108,7 +108,7 @@ grid = new webix.ui({
 })
 ~~~
 
-{{sample 15_datatable/05_selection/05_multi_row_selection.html }}
+{{editor http://webix.com/snippet/c54930c4	Multi-Row Selection }}
 
 Related methods
 --------------------

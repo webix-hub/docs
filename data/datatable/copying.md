@@ -33,7 +33,7 @@ It's can be characterized as follows:
 - When the copy area is less than the one selected, copied cells are not repeated and fill only the related selected cells.
 - When the copy area is greater than the one selected, copied cells fill not only the selected area but also the related cells nearby.
 
-{{sample 15_datatable/06_clipboard/06_block_selection.html }}
+{{editor http://webix.com/snippet/079ae54b	"Block" Copying }}
 
 'Selection' copying
 -------------------
@@ -41,7 +41,7 @@ It's can be characterized as follows:
 - When the copy area is less than the one selected, copied cells are not repeated and fill only the related selected cells.
 - When the copy area is greater than the one selected, copied cells fill only the selected area and don't 'touch' the cells nearby.
 
-{{sample 15_datatable/06_clipboard/04_paste_selection.html }}
+{{editor http://webix.com/snippet/5d26bfb9	"Selection" Copying }}
 
 
 'Repeat' copying
@@ -50,7 +50,7 @@ It's can be characterized as follows:
 - When the copy area is less than the one selected, copied cells are repeated a specific number of times to fill the selected cells.
 - When the copy area is greater than the one selected, copied cells fill only the selected area and don't 'touch' the cells nearby.
 
-{{sample 15_datatable/06_clipboard/07_paste_repeat.html }}
+{{editor http://webix.com/snippet/b1da8abd	"Repeat" Copying }}
 
 
 @keyword: 

@@ -46,9 +46,7 @@ Retrieves values that contain mask defined through text field.
 { id:"title",header:[ "Film title",{content:"textFilter"}] }
 ~~~
 
-{{sample
-15_datatable/03_filtering/01_builtin.html
-}}
+{{editor http://webix.com/snippet/4b8eb10d	Filtering. Built-in Text Filter and Select Filter}}
 
 
 ###Server Filter {#server}
@@ -79,7 +77,7 @@ Retrieves values that contain mask defined through a dropdown list of possible v
 { id:"title", header:["Film title",{content:"selectFilter"}] }
 ~~~
 
-{{sample 15_datatable/03_filtering/01_builtin.html}}
+{{editor http://webix.com/snippet/4b8eb10d	Filtering. Built-in Text Filter and Select Filter}}
 
 ###Number filter {#number}
 
@@ -97,7 +95,7 @@ Text filter used for number columns. Retrieves values which contain mask defined
 { id:"year", header:[ "Released",{content:"numberFilter"}] }
 ~~~
 
-{{sample 15_datatable/03_filtering/09_numeric.html}}
+{{editor http://webix.com/snippet/f413d296	Filtering. Built-in Numeric Filter}}
 
 ###Date filter {#date}
 
@@ -121,7 +119,7 @@ There are 3 ways you can input data to the  dateFilter:
 	format:webix.i18n.dateFormatStr}
 ~~~
 
-{{sample 15_datatable/03_filtering/10_date.html }}
+{{editor http://webix.com/snippet/a2f94862	Filtering. Built-in Date Filter }}
 
 ###Richselect Filter {#richselect}
 
@@ -137,7 +135,7 @@ Retrieves values that contain mask defined through a popup list of possible valu
 { id:"year", header:["Released", { content:"richSelectFilter" }] }
 ~~~
 
-{{sample 60_pro/01_datatable/03_filters/06_filter_multiselect.html}}
+{{editor http://webix.com/snippet/2ef298df	Multi-Select Filter in the DataTable}}
 
 ###Multiselect Filter {#multiselect}
 
@@ -154,7 +152,7 @@ Based on Webix [multiselect](desktop/multiselect.md) control.
 { id:"year",header:["Released", { content:"multiSelectFilter" }]
 ~~~
 
-{{sample 60_pro/01_datatable/03_filters/06_filter_multiselect.html}}
+{{editor http://webix.com/snippet/2ef298df	Multi-Select Filter in the DataTable}}
 
 ###Datepicker Filter {#datepicker}
 
@@ -181,8 +179,8 @@ Note, each time you start to type text in such a filter, DataTable invokes the [
 By default, when you specify filters in several columns, DataTable applies AND logic to them, i.e. the table will display just records that meet 
 all criteria at once.
 
-{{sample
-15_datatable/03_filtering/02_and.html
+{{editor
+http://webix.com/snippet/54ea6cd0	Filtering by Several Criteria (AND Logic)
 }}
 
 
@@ -221,7 +219,7 @@ grid.filterByAll=function(){
 };
 ~~~
 
-{{sample 15_datatable/03_filtering/03_or.html }}
+{{editor http://webix.com/snippet/cc1295e8	Filtering by Several Criteria (OR Logic)}}
 
 
 ##Custom filtering rules
@@ -256,7 +254,7 @@ grid = new webix.ui({
 });	
 ~~~
 
-{{sample 15_datatable/03_filtering/07_rules.html }}
+{{editor http://webix.com/snippet/c652ece9	Using Different Filtering Rules }}
 
 
 ###Filtering by multiple criteria entered via one input
@@ -300,7 +298,7 @@ grid.filterByAll=function(){
 };			
 ~~~
 
-{{sample 15_datatable/03_filtering/04_one_for_all.html }}
+{{editor http://webix.com/snippet/30a47721	Filtering by Multiple Criteria Entered via One Input }}
 
 
 {{snippet 
@@ -323,7 +321,7 @@ function oneForAll(value, filter, obj){
 };
 ~~~
 
-{{sample 15_datatable/03_filtering/04_one_for_all_2.html }}
+{{editor http://webix.com/snippet/c16a030f	Custom Filtering by Multiple Criteria Entered via One Input }}
 
 
 HTML inputs as filters for DataTable
@@ -358,7 +356,7 @@ grid.registerFilter(document.getElementById("myfilter"),
 });
 ~~~
 
-{{sample 15_datatable/03_filtering/06_custom_built.html}}
+{{editor http://webix.com/snippet/4ca488c6	Filtering by Multiple Criteria}}
 
 ###Custom Filtering with filter() method
 
@@ -384,7 +382,7 @@ Implementing a custom filter
 </script>
 ~~~
 
-{{sample 15_datatable/03_filtering/05_custom.html }}
+{{editor http://webix.com/snippet/67a3b8fa	Filtering via a Separate Input Element }}
 
 Note, in the DataTable constructor you need to specify no parameters.
 
@@ -408,7 +406,7 @@ for (var i = 0; i < res.length; i++)
 table.refresh();
 ~~~
 
-{{sample 15_datatable/03_filtering/11_find_api.html}} 
+{{editor http://webix.com/snippet/4a553b9b	"Find" API}} 
 
 
 ## TreeTable specific configuration
@@ -436,6 +434,6 @@ webix.ui({
 });
 ~~~
 
-{{sample
-	17_datatree/04_api/03_filter.html
+{{editor
+	http://webix.com/snippet/e5361966	Filtering in DataTree
 }}

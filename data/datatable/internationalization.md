@@ -88,5 +88,5 @@ To activate locale:
 </script>
 ~~~
 
-{{sample 15_datatable/20_templates/08_locales.html }}
+{{editor http://webix.com/snippet/cdec9649	Internationalization }}
 

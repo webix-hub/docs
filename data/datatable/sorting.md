@@ -42,7 +42,7 @@ grid = new webix.ui({
 });
 ~~~
 
-{{sample 15_datatable/02_sorting/01_builtin.html }}
+{{editor http://webix.com/snippet/9aa42851	Sorting. Using Built-in Means }}
 
 {{note
 The above mentioned sorting modes work with column values defined by their **ID** attributes and ignore values either defined by column templates or provided by column options.
@@ -65,7 +65,7 @@ In the sample column  below option IDs are sorted, yet option values are display
 
 ###Sorting by visible text
 
-Sorting by visible text is enabled width the help of **"text"** sorting mode that switches on **string** comparison for the values actually displayed in datatable columns. 
+Sorting by visible text is enabled with the help of the **"text"** sorting mode that switches on **string** comparison for the values actually displayed in datatable columns. 
 
 It takes into account column values defined by **templates**  and collection **values** rather than IDs:
 
@@ -78,7 +78,7 @@ columns:[
 ]
 ~~~
 
-{{sample 15_datatable/02_sorting/04_by_text.html}}
+{{editor http://webix.com/snippet/dfb25934	Sorting by Text}}
 
 ###Triggering Server-side Sorting on Client-side
 
@@ -140,7 +140,7 @@ webix.ui({
 		]
 })
 ~~~
-{{sample 15_datatable/02_sorting/02_custom.html }}
+{{editor http://webix.com/snippet/351a2070	Sorting Datatable. Using Custom Sorting Functions }}
 
 Programmatic sorting 
 -----------------------
@@ -157,7 +157,7 @@ Sorting DataTable on the button click
 </script>
 ~~~
 
-{{sample 15_datatable/02_sorting/03_sort_api.html }}
+{{editor http://webix.com/snippet/2e3e6473	Sorting DataTable. Using Sorting Methods }}
 
 ###Controlling header sorting mark
 
@@ -177,7 +177,8 @@ grid = webix.ui({ view:"datatable", ...})
 
 grid.markSorting("title", "asc");
 ~~~
-{{sample 15_datatable/02_sorting/03_sort_api.html }}
+
+{{editor http://webix.com/snippet/2e3e6473	Sorting DataTable. Using Sorting Methods }}
 
 @keyword:
 	sort

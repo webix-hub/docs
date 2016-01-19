@@ -17,16 +17,16 @@ Generally, you should just specify parameter [pager](api/link/ui.datatable_pager
 
 ~~~js
 grid = new webix.ui({
-	view:"datatable",
-	...
-	pager:{
-		container:"paging_here",// the container where the pager controls will be placed into
-		size:100, // the number of records per a page
-		group:5   // the number of pages in the pager
-	}
+   view:"datatable",
+   ...
+   pager:{
+	 container:"paging_here", // the container where the pager controls will be placed into
+	 size:100, // the number of records per a page
+	 group:5   // the number of pages in the pager
+   }
 })
 ~~~
-{{sample 15_datatable/19_paging/01_static.html }}
+{{editor http://webix.com/snippet/def031c9	Static Paging. Loading from an External Data File }}
 
 Pager controls
 ---------------------
@@ -60,7 +60,7 @@ grid = new webix.ui({
 	}
 });
 ~~~
-{{sample 15_datatable/19_paging/05_templates.html }}
+{{editor http://webix.com/snippet/b92459b0	Using Templates for Pagers}}
 
 
 
@@ -152,7 +152,7 @@ grid = new webix.ui({
 
 It's not obligatory to redefine all the mentioned buttons at once, you can redefine just a part of them. In this case, **webix.locale.pager** will contain just the required buttons.
 
-{{sample 15_datatable/19_paging/07_localization.html }}
+{{editor http://webix.com/snippet/72ec6e19	Pager Localization }}
 
 
 The size of a page
@@ -194,7 +194,7 @@ grid.getPager().clone({
     group:5
 });
 ~~~
-{{sample 15_datatable/19_paging/04_many_pagers.html }}
+{{editor http://webix.com/snippet/0be3cfa7	Defining Several Pagers on a Page }}
 
 @keyword:
 	paging, big dataset
