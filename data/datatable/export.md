@@ -37,7 +37,8 @@ and then call the toPNG() method with the datatable id as its parameter:
 webix.toPNG($$("myDataTable"));	
 ~~~
 
-{{sample 15_datatable/10_export/02_png.html}}
+{{editor http://webix.com/snippet/f9695489	Export to PNG}}
+
 
 Export to Excel
 -------------------
@@ -66,7 +67,8 @@ And then the call of the toExcel() method should follow. The method takes the vi
 webix.toExcel($$("myDataTable"));
 ~~~
 
-{{sample 15_datatable/10_export/01_excel.html}}
+{{editor http://webix.com/snippet/1f9ed76b	Export to Excel}}
+
 
 Customizing Export
 ---------------------

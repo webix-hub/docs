@@ -55,7 +55,7 @@ columns:[
 ]
 ~~~
 
-{{sample 15_datatable/04_editing/09_inline_editors.html }}
+{{editor http://webix.com/snippet/6abb70b3	Using "Inline" Editors }}
 
 Custom checkbox
 --------------------------------
@@ -139,9 +139,7 @@ webix.ui({
 	checkboxRefresh:true
 });
 ~~~
-{{sample 15_datatable/04_editing/08_custom_checkbox.html }}
-
-
+{{editor http://webix.com/snippet/4c564a87	Custom Radio and Checkbox in DataTable}}
 
 
 
@@ -212,7 +210,8 @@ webix.ui({
 });
 ~~~
 
-{{sample 15_datatable/04_editing/08_custom_checkbox.html }}
+{{editor http://webix.com/snippet/4c564a87	Custom Radio and Checkbox in DataTable}}
+
 
 
 

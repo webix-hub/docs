@@ -21,7 +21,7 @@ webix.ui({
 To drag/drop rows between several tables you should enable the api/link/ui.datatable_drag_config.md parameter in each of them. 
 }} 
 
-{{sample 15_datatable/22_dnd/01_basic_dnd.html }}
+{{editor http://webix.com/snippet/65c9f346	Drag-and-Drop between Tables in DataTable}}
 
 
 ###The 'order' mode
@@ -44,9 +44,8 @@ webix.ui({
 });
 ~~~
 
-{{sample
-15_datatable/22_dnd/04_reorder_dnd.html
-}}
+{{editor http://webix.com/snippet/a921b171	The 'Order' Mode for Rows}}
+
 
 Moving columns
 --------------------------------------------
@@ -67,9 +66,8 @@ webix.ui({
 To drag/drop columns between several tables you should enable the api/ui.datatable_dragcolumn_config.md parameter in each of them. 
 }} 
 
-{{sample
-15_datatable/22_dnd/06_columns.html
-}}
+{{editor http://webix.com/snippet/8e73b55b	Drag-and-Drop Support for Columns}}
+
 
 ###The 'order' mode
 There is the 'order' mode for the table columns.
@@ -91,9 +89,8 @@ webix.ui({
 });
 ~~~
 
-{{sample
-15_datatable/22_dnd/07_columns_order.html
-}}
+{{editor http://webix.com/snippet/8c0f77d8	The 'Order' Mode for Columns}}
+
 
 
 Advanced
@@ -154,9 +151,8 @@ dtable.attachEvent("onBeforeDrag", function(context, ev){
 });
 ~~~
 
-{{sample
-15_datatable/22_dnd/03_events.html
-}}
+{{editor http://webix.com/snippet/832cd025	Using Events for Customizing Drag-and-Drop}}
+
 
 
 <h3 id="denying_dragging">Denying dragging of specific items</h3>
@@ -224,9 +220,7 @@ dtable.attachEvent("onBeforeDrop", function(context, ev){
 	return false;
 });
 ~~~
-{{sample
-15_datatable/22_dnd/03_events.html
-}}
+{{editor http://webix.com/snippet/832cd025	Using Events for Customizing Drag-and-Drop}}
 
 <h3 id="limiting_draggable_area">Limiting the draggable area to the specified element</h3>
 You can provide a behaviour when the user could drag items only by the certain specified areas.
@@ -265,12 +259,9 @@ var dtable = new webix.ui({
 });	
 ~~~
 
-{{sample
-15_datatable/22_dnd/05_handle_dnd.html
-}}<br>
-{{sample
-15_datatable/22_dnd/08_columns_handle.html
-}}
+{{editor http://webix.com/snippet/928920fc	Limiting the draggable area for items (dragging rows)}}
+<br>
+{{editor http://webix.com/snippet/58dbdeea	Limiting the draggable area for items (dragging columns)}} 
 
 <h3 id="autoscroll">Scrolling during Drag And Drop</h3>
 

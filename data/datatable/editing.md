@@ -14,7 +14,7 @@ dtable = new webix.ui({
   editable:true
 });
 ~~~
-{{sample 15_datatable/04_editing/01_basic.html }}
+{{editor http://webix.com/snippet/0f86c36b	Basic Use of Editors }}
 
 2 main points related to editing are:
 
@@ -45,7 +45,7 @@ columns: [
   { id:"title", header:"Film title", editor:"text"}
 ]
 ~~~
-{{sample 15_datatable/04_editing/01_basic.html }}
+{{editor http://webix.com/snippet/0f86c36b	Basic Use of Editors }}
 
 
 Creating a custom editor
@@ -139,7 +139,7 @@ webix.UIManager.addHotKey("enter", function(view){
 }, mytable);
 ~~~
 
-{{sample 15_datatable/04_editing/01_basic.html }}
+{{editor http://webix.com/snippet/0f86c36b	Basic Use of Editors }} 
 
 **To open editors on some action** you should do the following:
 
@@ -207,7 +207,7 @@ var table2 = new webix.ui({
 })
 ~~~
 
-{{sample 15_datatable/04_editing/03_multiple_editors.html }}
+{{editor http://webix.com/snippet/bb877d8c	Opening Multiple Editors}}
 
 Apart from row and column editing, datatable API offers the possibilities to 
 
@@ -230,7 +230,7 @@ which allows to edit datatable data:
 $$('form1').bind('datatable1');
 ~~~
 
-{{sample 15_datatable/04_editing/13_bind_form.html}}
+{{editor http://webix.com/snippet/e76708c1	Editors.Bind Form}}
 
 Note that **name** attributes of form fields coincide with **ids** of datatable columns. 
 

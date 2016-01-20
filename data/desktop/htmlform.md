@@ -8,7 +8,7 @@ HTMLform
 
 ##Overview
 
-Though the webix library has its own [form](desktop/form.md) component, there exists a possibility to create a separate form made with the help of
+Though the Webix library has its own [form](desktop/form.md) component, there exists a possibility to create a separate form made with the help of
 pure HTML.  This is done within the special **htmlform** component. 
 
 <br>
@@ -43,7 +43,7 @@ webix.ui({
 </script>
 ~~~
 
-{{sample 11_htmlform/01_htmlform_body.html }}
+{{editor http://webix.com/snippet/6ba364e7	Initialization in Document Body }}
 
 ####2 . With the help of template property:
 
@@ -66,7 +66,7 @@ webix.ui({
 </script>
 ~~~
 
-{{sample 11_htmlform/02_htmlform_layout.html }}
+{{editor http://webix.com/snippet/c2a8e568	Initialization in Layout }}
  
  
 - or it points to **external html-file** with a form:
@@ -83,7 +83,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 11_htmlform/04_htmlform_http.html }}
+{{editor http://webix.com/snippet/026bb5f2	Using HTTP Template }}
 
 ####3 . Initialization from HTML or XML markup {#markup}
 
@@ -96,11 +96,11 @@ In this case, standard rules of markup initialization are used and the **markup*
 - **HTML**: **form** tag receives new attributes;
 	- **data-view** to indicate the component (here it is an *htmlform*);
     - standard htmlform properties with 'data' prefix (*data-id, data-height*, etc.);
-- **XML**: There're special tags with 'x:' prefix: 
+- **XML**: There are special tags with 'x:' prefix: 
 	- **< x:ui >** to indicate a webix UI constructor 
     - **< x:htmlform** > to indicate a component you want to init.
 
-Form elements are created accirding to standard HTML.
+Form elements are created according to standard HTML.
 
 {{snippet
 HTMLform, HTML markup
@@ -136,7 +136,7 @@ webix.ready(function(){
 
 Regardless of the initialization pattern, all the commom HTMLform functions work fine: 
 
-{{sample 23_markup/01_html/02_form.html  }}
+{{editor http://webix.com/snippet/d479bc58	HTML Initialization: HTML Form }}
 
 ####4. Initialization from an external file loaded by [Ajax](helpers/ajax_operations.md). 
 

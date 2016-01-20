@@ -41,7 +41,7 @@ tooltip:{
 
 ##Datatable Tooltip
 
-Datatable tooltip is defined is quite another way. Several steps are possible: 
+Datatable tooltip is defined in quite a different way. Several steps are possible: 
 
 - Setting **tooltip:true** for the whole component. It enables tooltip functionality for the grid and shows tooltip for each column showing the row value that stands as ID for this column.
 

@@ -30,7 +30,7 @@ $(".cont").webix_datatable({
 
 ~~~
 
-{{sample 15_datatable/17_jquery/01_jquery.html }}
+{{editor http://webix.com/snippet/d5247223	Integration with jQuery }}
 
 ###Creating DataTable from an HTML table
 To turn an HTML table into DataTable you should call method **datatable()** for it:
@@ -52,6 +52,6 @@ $("table").webix_datatable();
 </script>
 ~~~
 
-{{sample 15_datatable/17_jquery/03_htmltable.html }}
+{{editor http://webix.com/snippet/47a850d9	Integration with jQuery. Turning HTML Table into DataTable }}
 
 

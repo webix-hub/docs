@@ -23,7 +23,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 05_list/03_group_list.html }}
+{{editor http://webix.com/snippet/f038e36e	Grouplist Component }}
 
 ##Working with Grouplist
 
@@ -100,7 +100,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 05_list/04_list_grouping.html }}
+{{editor http://webix.com/snippet/14de033f	List:Grouping }}
 
 To learn more about [rendering data through templates](desktop/html_templates.md), [data grouping](desktop/grouping.md) and [data sorting](desktop/filter_sort.md), consult related articles.
 
@@ -117,7 +117,7 @@ if(state){
 };
 ~~~
 
-The methods returns IDs of all the opened parents items (according to hierarchy ladder) as well as IDs of items belonging to the curretly opened branch. 
+The methods returns IDs of all the opened parents items (according to hierarchy ladder) as well as IDs of items belonging to the currently opened branch. 
 
 Thus, the return object contains parent ID array and children array:
 
@@ -131,7 +131,7 @@ Hierarchical dataset state
 }
 ~~~
 
-{{sample 80_docs/grouplist_openstate.html}}
+{{editor http://webix.com/snippet/e9bc82e1	Getting Grouplist State}}
 
 ###Working with Grouplist
 - desktop/data_object.md

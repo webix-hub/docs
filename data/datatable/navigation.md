@@ -77,7 +77,8 @@ webix.ui({
 	</tbody>
 </table>
 
-{{sample 15_datatable/05_selection/09_navigation.html }}
+{{editor http://webix.com/snippet/dee22b38	Navigation in DataTable}}
+
 
 Active editor navigation
 --------------------------
@@ -122,4 +123,4 @@ dtable = new webix.ui({
 
 You can read more about editing and active editor navigation in article datatable/editing.md.
 
-{{sample 15_datatable/04_editing/02_tab_support.html }}
+{{editor http://webix.com/snippet/aba6c8fc	The Tab Key Navigation}}

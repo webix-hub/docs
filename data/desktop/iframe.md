@@ -29,7 +29,7 @@ webix.ui({
 	view:"iframe", id:"frame-body", src:"data/pageA.html"
 });
 ~~~
-{{sample 80_docs/iframe.html}}
+{{editor http://webix.com/snippet/49a7e780	IFrame Component}}
 
 - **src** (path) - defines external site url.
 
