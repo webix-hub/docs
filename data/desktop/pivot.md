@@ -11,8 +11,7 @@ With Pivot you can easily compare, filter and sort data within one table as well
 - There are online samples at [docs.webix.com/samples](http://docs.webix.com/samples/61_pivot/index.html)
 
 
-
-##Design and Usage
+##Structure and Usage
 
 Webix Pivot consists of two functional parts:
 
@@ -50,6 +49,7 @@ However, **Values** section is more independent since elements dragged to it are
  
 }}
 
+
 ###Data Operations
 
 Current data operations come together with values they are assigned to in the **Values** section. Right there they can be changed with a couple of clicks.
@@ -73,6 +73,7 @@ Webix Pivot uses two filters:
 If there is no operator, a filter will use text match for filtering;
 - **select** - filtering is performed by options that are automatically gathered from the dataset (all unique values of this property). 
 For instance, if you choose *Continents*, all unique continent names from the dataset become options.
+
 
 Initialization
 -----------------
@@ -344,6 +345,28 @@ webix.ui({
 });
 ~~~
 
+Customizing Pivot
+------------------
+
+You can customize the columns of Pivot Table with the help of the *onHeaderInit* event. 
+The event handler takes an array of objects with columns configuration as a parameter. For example, you can set the *format* property:
+
+~~~js
+webix.ui({
+	view: "pivot",
+	on:{
+		onHeaderInit: function(columns){
+			for(var i=0; i< columns.length;i++){
+				columns[i].format = function(value) {
+					return value?value.toFixed(2) : value;
+				}
+			}
+		}
+	}
+});
+~~~
+
+
 API
 ----------
 
@@ -372,7 +395,6 @@ var config = {
 ~~~
 
 
-
 ### Data export
 
 You can export result to PDF or Excel:
@@ -390,7 +412,8 @@ You can access the DataTable object by using the next code:
 var datatable = $$("pivot").$$("data");
 ~~~
 
-This allows you use any of datatable [events](api/refs/ui.datatable_events.md) or [API methods](api/refs/ui.datatable_methods.md). At the same time, it's not recommended to redefine datatable properties. 
+It allows you to use any of datatable [events](api/refs/ui.datatable_events.md) or [API methods](api/refs/ui.datatable_methods.md). 
+At the same time, it's not recommended to redefine datatable properties. 
 
 ~~~js
 //attach event to selection
@@ -402,22 +425,16 @@ datatable.attachEvent("onAfterSelect", function (id) {
 var sel = datatable.getSelectedId();
 ~~~
 
-###Changing Configuration of Pivot Table's columns
+###Accessing Popup
 
-You can customize the columns of Pivot Table with the help of the *onHeaderInit* event. 
-The event handler takes an array of objects with columns configuration as a parameter. For example, you can set the *format* property:
+The onPopup event fires after a popup for configuring Pivot is created. The handler function takes one parameter:
+
+- popup - (object) the popup object
 
 ~~~js
-webix.ui({
-	view: "pivot",
-	on:{
-		onHeaderInit: function(columns){
-			for(var i=0; i< columns.length;i++){
-				columns[i].format = function(value) {
-					return value?value.toFixed(2) : value;
-				}
-			}
-		}
-	}
+pivot.attachEvent("onPopup", function(popup){
+	// your code
 });
 ~~~
+
+
