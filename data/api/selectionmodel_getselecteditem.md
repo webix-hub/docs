@@ -6,10 +6,10 @@ getSelectedItem
 	
 
 @params:
-* as_array	boolean	if set, always return an arrya of objects
+- as_array		boolean			if set, always returns an array of objects
 
 @returns:
-- item		object		curently selected item
+- item		object		currently selected item
 
 @example:
 
