@@ -3,7 +3,7 @@ Sidebar
 
 Webix Sidebar is a datatree/index.md-based component which is used for creating menus with hierarchical structure. 
 
-Sidebar menu can be collapsed into a navigation bar with only icons of the menu icons visible. On hovering an icons, a popup with the related item is shown with its subitems.
+Sidebar menu can be collapsed into a navigation bar with only icons of the menu items visible. On hovering an icon, a popup with the related item is shown with its subitems.
 
 On clicking a Sidebar menu item, either the related content is shown in the right part of the screen or selectable subitems are displayed.
 
@@ -53,7 +53,7 @@ webix.ready(function(){
 
 ###Data source
 
-Sidebar can load data from various sources in defferent formats. You can fine more information in the article datatree/loading_data.md.
+Sidebar can load data from various sources in different formats. You can find more information in the datatree/loading_data.md article.
 
 The Sidebar data configuration contains the description of menu items, corresponding icons and subitems. It can look like this:
 
@@ -87,7 +87,7 @@ How to add the Menu button
 Adding the Menu button in the left top corner allows collapsing the menu items into a vertical navigation bar with icons. 
 In this state menu items will be shown by hovering the mouse pointer over the icons.
 
-Let's create a layout with toolbar and two columns. We'll place a button on the toolbar and put a sidebar in the left column, the right column will serve as a template for some content that
+Let's create a layout with a toolbar and two columns. We'll place a button on the toolbar and put a sidebar in the left column, the right column will serve as a template for some content that
 could be shown on an item's click.
 
 
