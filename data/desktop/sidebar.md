@@ -303,7 +303,7 @@ sidebar.toggle();
 
 defines if the Sidebar will be shown in the collapsed state or in the expanded one
 
-- value			boolean			true for collapsed state, false for the expanded one
+- value	- {boolean}	true for collapsed state, false for the expanded one
 
 ~~~js
 webix.ui({
@@ -315,11 +315,11 @@ webix.ui({
 
 ####position
 
-sets the position of the popup relative to the sidebar
+sets the sidebar's position
 
 Parameters:
 
-- value		string	 a new popup position ("right" or "left")
+- value - {string} a new sidebar's position ("right" or "left")
 
 ~~~js
 webix.ui({
