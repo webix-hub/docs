@@ -37,7 +37,7 @@ Another possibility to create a component with a similar functionality is [attac
 { view:"richselect", options:"server/data.json"}
 ~~~
 
-{{sample 13_form/01_controls/11_richselect.html }}
+{{editor http://webix.com/snippet/e0a677a4	Non-Editable Combo Box ("richselect") }}
 
 
 ####Main Properties

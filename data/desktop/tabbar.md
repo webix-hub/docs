@@ -31,7 +31,7 @@ rows:[
 ]    
 ~~~
 
-{{sample 02_toolbar/02_tabbar.html }} 
+{{editor http://webix.com/snippet/cfd06e82	Tabbar}}
 
 
 ####Main properties
@@ -65,7 +65,7 @@ Tabs featuring a **close** property in the tab configuration gain the ability to
 ]}
 ~~~
 
-{{sample 20_multiview/11_close_button.html}}
+{{editor http://webix.com/snippet/f6d7fafd	Tabview: Close Tab Button}}
 
 ##Tab Icons
 
@@ -79,7 +79,7 @@ Icons are defined through additional HTML provided within the tab **value**:
  ]}   
 ~~~
 
-{{sample 20_multiview/05_tabbar_with_icons.html}}
+{{editor http://webix.com/snippet/3f36e77d	Multiview Tabbar with Icons}}
 
 More about different types of defining icons in Webix you can learn in the desktop/icon_types.md article.
 

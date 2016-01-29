@@ -16,10 +16,9 @@ It is based on Webix [list](desktop/list.md) component.
 
 <img src="desktop/suggest.png">
 
-{{sample 13_form/01_controls/15_suggest_server.html }}
-
-{{editor http://webix.com/snippet/3fd083a4	Suggest List for Input: Populating with Server-side Data)
+{{editor http://webix.com/snippet/4ef0946f	Suggest List for Input: Populating with Server-side Data}}
 	
+
 Suggest list can be used with the following components (should be configured separately):
 
 - standard HTML input;
@@ -164,9 +163,7 @@ As value of suggest property
 { view:"text", name:"country", label:"Contry", value:"Albania", suggest:"server/data.php"}
 ~~~
 
-{{sample 13_form/01_controls/15_suggest_server.html }}
-
-{{editor http://webix.com/snippet/149f9f71	Suggest List for Input: Populating with Server-side Data}}
+{{editor http://webix.com/snippet/4ef0946f	Suggest List for Input: Populating with Server-side Data}}
 
 Suggest list is connected with an input field by **suggest** property included into the **text** constructor. 
 
@@ -202,9 +199,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 15_datatable/04_editing/14_autosuggest.html}}
-
-{{editor http://webix.com/snippet/f074424d	Datatable: Autosuggest}}
+{{editor http://webix.com/snippet/19e9fdae	Datatable: Autosuggest}}
 
 At the same time, you can provide all the logic by API, which allows customizing suggest behaviour: 
 
@@ -238,7 +233,7 @@ gridb.attachEvent("onAfterEditStop", function(object){
 });
 ~~~
 
-{{sample 15_datatable/04_editing/14_autosuggest.html}}
+{{editor http://webix.com/snippet/19e9fdae	Datatable: Autosuggest}}
 
 {{note
 Suggest list can as well be attached to **combo** and **richselect** editors, yet then it looses its status of 'adviser' and selection from it becomes compulsory.
@@ -258,9 +253,8 @@ webix.ui({
 });
 ~~~
 
-{{sample 15_datatable/04_editing/21_advanced_combo.html}}
 
-{{editor http://webix.com/snippet/608953ba	Advanced Combo Editor}}
+{{editor http://webix.com/snippet/e8947bcd	Advanced Combo Editor}}
 
 ##Customizing suggest list
 
@@ -349,8 +343,6 @@ Since we speak here about **relative** position, the property to set it has the 
 { view:"text", suggest:{ data:countries, relative:"left" }}
 ~~~
 
-{{sample 13_form/01_controls/15_suggest_position.html}}
-
 {{editor	http://webix.com/snippet/182cba69	Attaching Suggest List to Input}}
 
 ##Advanced suggest lists
@@ -389,7 +381,7 @@ If needed, it can substitute checksuggest for the above-mentioned used cases. Se
 
 <img src="desktop/gridsuggest.png"/>
 
-{{editor http://webix.com/snippet/4d4f3801	Grid Suggest}}
+{{editor http://webix.com/snippet/6e41d23b	Grid Suggest}}
 
 Gridsuggest can be used with form controls as well as with component editors. More about its configuration can be found in the [related article](desktop/gridsuggest.md).  
 

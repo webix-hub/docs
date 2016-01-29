@@ -34,9 +34,7 @@ Button
 { view:"button", type:"icon", icon:"mail", label:"Mail", width:80 }
 ~~~
 
-{{sample 16_skins/03_icons.html }}
-
-{{editor	http://webix.com/snippet/03ed38c8	Icons}}
+{{editor	http://webix.com/snippet/3070bdda	Icons}}
 
 Icon button features some specific configuration options:
 
@@ -81,7 +79,7 @@ Image button features some specific configuration options:
 }
 ~~~
 
-{{editor http://webix.com/snippet/24755634	Buttons: Styling}}
+{{editor http://webix.com/snippet/62d39898	Buttons: Styling}}
 
 A button with an 'htmlbutton' type can be defined by HTML markup and CSS styling. Setting the *css* property you indicate the CSS class 
 through which you can style the button itself, its text, icon or image: 
@@ -130,8 +128,8 @@ Any button regardless of its *type* can be equipped with a badge with the help o
 
 It's possible to adjust the width of a button to the size of its content, using the *autowidth* property set to true.
 
-{{sample
-13_form/01_controls/10_buttons_autowidth.html
+{{editor
+http://webix.com/snippet/5546f03f	Buttons - AutoWidth
 }}
 
 @index:

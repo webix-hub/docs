@@ -20,7 +20,7 @@ Filtering function should be written by a developer. See the attached sample for
 { view:"search", placeholder:"Search..", width: 300 }
 ~~~
 
-{{sample 02_toolbar/13_search_field.html }}
+{{editor http://webix.com/snippet/4cd8d8af	Search Field }}
 
 ####Main Properties: 
 

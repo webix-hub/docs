@@ -30,7 +30,7 @@ Multicombo inherits from a standard [combo](desktop/combo.md) control and has th
 { view:"multicombo", label:"To", value:"2,3,4,13", suggest: "data/names.js"}
 ~~~
 
-{{sample 60_pro/02_form/06_multicombo.html}}
+{{editor http://webix.com/snippet/1d0d1878	MultiSelect combobox}}
 
 **Main properties**
 
@@ -101,8 +101,8 @@ You can customize the template the way you like:
 }
 ~~~
 
-{{sample
-	60_pro/02_form/07_multicombo_tag.html
+{{editor
+	http://webix.com/snippet/02885af9	MultiSelect Combobox: Common Tag
 }}
 
 

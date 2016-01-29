@@ -13,9 +13,7 @@ Checkbox allows for a choice between two possible variants.
 
 <img src="desktop/checkbox.png"/>
 
-{{sample 13_form/01_controls/06_checkbox.html }}
-
-{{editor http://webix.com/snippet/a3b187c0	Check Box ('checkbox')}}
+{{editor http://webix.com/snippet/877c8ade	Check Box ('checkbox')}}
 
 
 ##Initialization

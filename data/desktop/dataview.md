@@ -29,7 +29,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 06_dataview/01_initialization/01_init.html }}
+{{editor http://webix.com/snippet/9dbb75a9	DataView Basic Initialization }}
 
 **Data** property defines datasource for the view. Data can be loaded in one of [supported data types](desktop/data_types.md). 
 
