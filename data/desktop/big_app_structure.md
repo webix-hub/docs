@@ -1,29 +1,33 @@
 Structuring a Big Application
 ==================================
 
-{{note
-The article tells about **logic-based app structuring** and shows how to divide the application code into semantic blocks, which enhances its readability and simplifies code amends including the addition of some new functionality. 
-}}
+The article tells about **logic-based app structuring** and shows how to divide the application code into 
+semantic blocks, which enhances its readability and simplifies editing of code, including the addition of some new 
+functionality. 
 
-For better undertanding, please study the following articles: 
+For better understanding, please study the following articles: 
 
 - [Start Coding with the Webix Library](tutorials/start_coding.md)
 - [Quick Start Guide, or How to Initialize a Component](tutorials/quick_start.md)
 - [Building App Architecture - Layout and its Types](desktop/building_app_architecture.md)
 
-Here everything is about logic, structure and optimized coding. The **basic pronciples** are: 
+Here everything is about logic, structure and optimized coding. The **basic principles** are: 
 
 - store big code snippets in variables;
 - put apart application design and inner functionality. 
 
 For samples, please look through the demo applications provided with this library. 
 
+There is a convenient and simple for understanding and developing micro-framework Webix Jet. 
+It allows building very flexible and reliable complex web applications with little effort. To get the details on the use of the micro-framework, 
+read the [full guide on Webix Jet](https://www.gitbook.com/book/webix/webix-jet/details).
+
 ##Constructing Methods
 
 The two main functions to construct the application are as follows: 
 
 - **webix.ui()** - the object constructor that creates a new instance of the specified view. Must be used anyway. 
-- **webix.ready()** - optional - a handler that is called just after the page has been completely parsed. The alternative to the **onload()** method annd **onDocumentReady** event. 
+- **webix.ready()** - optional - a handler that is called just after the page has been completely parsed. The alternative to the **onload()** method and **onDocumentReady** event. 
 
 {{snippet
 In short, it look like this: 
@@ -40,7 +44,7 @@ Inside the **webix.ui** constructor you define the layout of your app, divide it
 
 ##Putting Apart Logic and Design
 
-**Design** here means layout type ([layout](desktop/layout.md), [mutliview](desktop/multiview.md), [accordion](desktop/accordion.md)) as well as the [UI components](desktop/components.md) 
+**Design** here means layout type ([layout](desktop/layout.md), [multiview](desktop/multiview.md), [accordion](desktop/accordion.md)) as well as the [UI components](desktop/components.md) 
 you've chosen for your application and the [controls](desktop/controls.md) you insert into them.
 
 **Logic** here means any functions you attach to the components and controls as well as those establishing links between components. 
@@ -69,23 +73,23 @@ HTML for such file looks like this:
 
 ~~~html
 <!DOCTYPE html>
-	<head>
-    	<!--must-have files-->
-    	<link rel="stylesheet" href="../webix.css" type="text/css" media="screen" charset="utf-8">
-		<script src="../webix.js" type="text/javascript" charset="utf-8"></script>
+  <head>
+    <!--must-have files-->
+    <link rel="stylesheet" href="../webix.css" type="text/css" media="screen" charset="utf-8">
+	<script src="../webix.js" type="text/javascript" charset="utf-8"></script>
         
-        <!--additional files-->
-        <script type="text/javascript" src='./logic.js'></script>
-		<script type="text/javascript" src='./webix.js'></script> 
+    <!--additional files-->
+    <script type="text/javascript" src='./logic.js'></script>
+	<script type="text/javascript" src='./webix.js'></script> 
         
-        <link rel="stylesheet" type="text/css" href="./styles.css">
-    </head>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+  </head>
     
-    <body>
-    	<script>
-        ... place for you app
-        </script>
-    </body>
+  <body>
+    <script>
+     ... place for your app
+    </script>
+  </body>
 </html>
 ~~~
 
@@ -99,7 +103,7 @@ webix.ready(function(){
 ~~~  
  
 - If there any **dates** in your app - define common formatting methods for them right now. 
-- If you have components that are **beyound the application layout** (e.g. a popup [window](desktop/window.md) called on a [button](desktop/button.md) clicking) - put it into another *webix.ui* constructor right now. 
+- If you have components that are **beyond the application layout** (e.g. a popup [window](desktop/window.md) called on a [button](desktop/button.md) clicking) - put it into another *webix.ui* constructor right now. 
 
 ~~~js
 webix.ready(function(){
@@ -114,7 +118,7 @@ Inside the webix.ui constructor layout as well as components are placed. Here, w
     
 ##Design Section - "webix.js" File Contents
 
-The variables from above are declared separately, **outside the webix.ui constructor**, either in the same file within the *webix.ready* fucntion, or (better) in a separate **webix.js** file. 
+The variables from above are declared separately, **outside the webix.ui constructor**, either in the same file within the *webix.ready* function, or (better) in a separate **webix.js** file. 
 
 They should also be as short as possible: 
 ~~~js
@@ -135,7 +139,7 @@ Any component or several connected components can be stored in the variable that
 
 Logic block is stored in a **logic variable** declared either in a separate **logic.js** file (better), or somewhere outside the *webix.ui* constructor but within the *webix.ready* function. 
 
-Logic block is divided into the functions called during component initialization and the definition of all the fucntion used for the application. 
+Logic block is divided into the functions called during component initialization and the definition of all the function used for the application. 
 
 The **init()** function includes:
 
@@ -169,7 +173,7 @@ logic:function_name //since they are placed into the "logic" var
 Outside the init block you should describe all the custom functions attached to application components either in the init block or within their bodies:
 
 ~~~js
-delete_row: fucntion(){
+delete_row: function(){
 	$$("datatable1").remove(id);
 }
 ~~~

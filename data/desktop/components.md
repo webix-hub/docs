@@ -256,7 +256,7 @@ Auxiliary components help you to complete the picture of your application, to ad
 <h2 style="clear:both;">Controls</h2>
 
 Controls are mainly responsible for handling events since they enable user-app interaction by triggering functions attached to them. Note that any event can be attached to any component by referring to its ID.  
-<div class="controls_group" style="padding-left:60px;">
+<div class="controls_group" style="padding-left:20px;">
 	<ul>
 		<li><a href="desktop/button.md"><img src="api/toc/button.png"/> Button </a></li>
 		<li><a href="desktop/checkbox.md"><img src="api/toc/checkbox.png"/> Checkbox</a></li>
@@ -264,33 +264,41 @@ Controls are mainly responsible for handling events since they enable user-app i
 		<li><a href="desktop/combo.md"><img src="api/toc/combo.png"/> Combo</a></li>
 		<li><a href="desktop/counter.md"><img src="api/toc/counter.png"/> Counter</a></li>
 		<li><a href="desktop/datepicker.md"><img src="api/toc/datepicker.png"/> Datepicker</a></li>
-		<li><a href="desktop/icon.md"><img src="api/toc/icon.png"/> Icon</a></li>
-        <li><a href="desktop/fieldset.md"> <img src="api/toc/fieldset.png"/> Fieldset</a></li>
+        <li><a href="desktop/datasuggest.md"><img src="api/toc/suggest.png"/> Datasuggest</a></li>
 	</ul>
 </div>
 
 <div class="controls_group">
 	<ul>
+    	<li><a href="desktop/icon.md"><img src="api/toc/icon.png"/> Icon</a></li>
+    	<li><a href="desktop/fieldset.md"> <img src="api/toc/fieldset.png"/> Fieldset</a></li>
+        <li><a href="desktop/gridsuggest.md"><img src="api/toc/suggest.png"/> Gridsuggest</a></li>
 		<li><a href="desktop/label.md"><img src="api/toc/label.png"/> Label</a></li>
         <li><a href="desktop/multicombo.md"><img src="api/toc/multicombo.png"/> Multicombo</a></li>
         <li><a href="desktop/multiselect.md"> <img src="api/toc/multiselect.png"/> Multiselect</a></li>
         <li><a href="desktop/multitext.md"> <img src="api/toc/multitext.png"/> Multitext</a></li>
-		<li><a href="desktop/radio.md"> <img src="api/toc/radio.png"/> Radio</a></li>
-		<li><a href="desktop/richselect.md"><img src="api/toc/richselect.png"/> Richselect</a></li>
-		<li><a href="desktop/search.md"><img src="api/toc/search.png"/> Search</a></li>
-		<li><a href="desktop/select.md"><img src="api/toc/select.png"/> Select</a></li>		
 	</ul>
 </div>
 
 <div class="controls_group">
 	<ul>
+    	<li><a href="desktop/radio.md"> <img src="api/toc/radio.png"/> Radio</a></li>
+		<li><a href="desktop/richselect.md"><img src="api/toc/richselect.png"/> Richselect</a></li>
+    	<li><a href="desktop/search.md"><img src="api/toc/search.png"/> Search</a></li>
+    	<li><a href="desktop/select.md"><img src="api/toc/select.png"/> Select</a></li>		
     	<li><a href="desktop/segmented.md"><img src="api/toc/segmented.png"/> Segmented</a></li>
         <li><a href="desktop/slider.md"><img src="api/toc/slider.png"/> Slider </a></li>
-		<li><a href="desktop/suggest.md"><img src="api/toc/suggest.png"/> Suggest list</a></li>
-		<li><a href="desktop/tabbar.md"><img src="api/toc/tabbar.png"/> Tabbar</a></li>
-		<li><a href="desktop/text.md"><img src="api/toc/text.png"/> Text</a></li>
-		<li><a href="desktop/textarea.md"><img src="api/toc/textarea.png"/> Textarea</a></li>
-		<li><a href="desktop/toggle.md"><img src="api/toc/toggle.png"/> Toggle</a></li>
+		<li><a href="desktop/suggest.md"><img src="api/toc/suggest.png"/> Suggest</a></li>
+			
+	</ul>
+</div>
+
+<div class="controls_group">
+	<ul>
+    	<li><a href="desktop/tabbar.md"><img src="api/toc/tabbar.png"/> Tabbar</a></li>
+		<li><a href="desktop/text.md"><img src="api/toc/text.png"/> Text</a></li>	
+    	<li><a href="desktop/textarea.md"><img src="api/toc/textarea.png"/> Textarea</a></li>
+		<li><a href="desktop/toggle.md"><img src="api/toc/toggle.png"/> Toggle</a></li>    	
 	</ul>
 </div>
 
@@ -314,7 +322,7 @@ div.controls_group{
     padding-top:25px;
     padding-bottom:25px;
     float:left;
-    width:200px;
+    width:170px;
 }
 div.controls_group ul {
     list-style-type:none;
