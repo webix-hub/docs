@@ -18,9 +18,7 @@ Ui-related textarea control is a multi-line input field with a label.
 { view:"textarea", label:"Note", labelAlign:"right", height:200, value: "type here" }
 ~~~
 
-{{sample 13_form/01_controls/03_textarea.html }}
-
-{{editor http://webix.com/snippet/fa71607b	Multiline Text Input('textarea')}}
+{{editor http://webix.com/snippet/464d0c91	Multiline Text Input('textarea')}}
 
 ####Main properties
 

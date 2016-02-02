@@ -13,7 +13,7 @@ The extension can be used to **redefine dropdown menu** of select controls.
 
 <img src="desktop/datasuggest.png"/>
 
-{{sample 32_thirdparty/14_dataselect.html }}
+{{editor http://webix.com/snippet/778802da	Data Suggest}}
 
 Default combo and richselect constructor looks as follows:
 
@@ -119,7 +119,7 @@ Then, this popup should be attached to the column in question with the help of i
 { id:"title",  editor:"richselect", collection:options, popup:popup }
 ~~~
 
-{{sample 32_thirdparty/14_dataselect_editor.html}}
+{{editor http://webix.com/snippet/2ade4813	Dataselect Editor}}
 
 ##Related Articles
 

@@ -12,7 +12,7 @@ Gridsuggest can be used with select controls.
 
 <img src="desktop/gridsuggest.png"/>
 
-{{sample 32_thirdparty/13_gridselect.html}}
+{{editor http://webix.com/snippet/6e41d23b	Grid Suggest}}
 
 By default combo and richselect are initialized with the following constructor:
 
