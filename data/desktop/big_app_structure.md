@@ -18,6 +18,8 @@ Here everything is about logic, structure and optimized coding. The **basic prin
 
 For samples, please look through the demo applications provided with this library. 
 
+##Easy Apps Building with Webix Jet
+
 There is a convenient and simple for understanding and developing micro-framework Webix Jet. 
 It allows building very flexible and reliable complex web applications with little effort. To get the details on the use of the micro-framework, 
 read the [full guide on Webix Jet](https://www.gitbook.com/book/webix/webix-jet/details).

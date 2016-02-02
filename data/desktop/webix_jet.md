@@ -21,22 +21,6 @@ to make navigation complex;
 - The [Development Notes](link) chapter gives you helpful tips on building an application, 
 discusses how the structure of URL is formed and describes the ways of creating unique IDs for components and elements.
 
-To get the idea of the structure of an appilcation built with Webix Jet, let's consider a sample application. Download the app package from 
-[http://webix.com/packages/webix-app-start.zip](http://webix.com/packages/webix-app-start.zip) and extract its content to the root folder of your webhost.
-After that, run the index.html file and the application will be displayed in the screen.
-
-The structure of an application
------------------------------
-
-The content and structure of an application are placed in the files kept in the "codebase" folder:
-
-- assets - the folder with static files of the app (icons, styles)
-- libs - the folder with all the applied libs, including Webix
-- views - the folder with modules for interface elements
-- models - the folder with modules for data operations
-- app.js - the file with the configuration of an application
-- index.html - the starting page of the application
-
 
 
 
