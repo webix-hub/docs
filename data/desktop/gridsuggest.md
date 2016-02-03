@@ -6,6 +6,30 @@ The extension is based on Webix [suggest list](desktop/suggest.md). It redefines
 
 Gridsuggest extension makes it possible to use Webix [datatable](datatable/index.md) in a dropdown menu while by default Webix [list](desktop/list.md) is used. 
 
+
+For the convenience of users of the Webix PRO version, Grid Suggest is placed in the PRO Edition of the library. 
+However, this component can also be used under the GPL license.
+
+In this case, you need to choose one of the two ways to use Grid Suggest:
+
+- you can either add the direct link to the component from http://cdn.webix.com in the head section of your document after including 
+*webix.js* and *webix.css* files:
+
+~~~html
+<link rel="stylesheet" href="../../codebase/webix.css" type="text/css" >
+<script src="../../codebase/webix.js" type="text/javascript"></script>
+
+<script src="http://cdn.webix.com/components/gridsuggest/gridsuggest.js"></script>
+~~~
+
+- or download the component from [https://github.com/webix-hub/components](https://github.com/webix-hub/components) and include the *gridsuggest.js* file on the page:
+
+~~~html
+<script type="text/javascript" src="./gridsuggest.js"></script>
+~~~
+
+If you use the PRO Edition of Webix, you don't need to include any additional files, as Grid Suggest is included into the PRO version package.
+
 ##Using Gridsuggest for Form Controls
 
 Gridsuggest can be used with select controls.

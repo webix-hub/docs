@@ -7,13 +7,36 @@ Dataview suggest, or datasuggest, is used to add extra functionality to Webix se
 Datasuggest extension makes it possible to use Webix [dataview](desktop/dataview.md) in a dropdown menu which is great for inserting pictures
 while by default Webix [list](desktop/list.md) is used. 
 
+For the convenience of users of the Webix PRO version, Dataview Suggest is placed in the PRO Edition of the library. 
+However, this component can also be used under the GPL license.
+
+In this case, you need to choose one of the two ways to use Dataview Suggest:
+
+- you can either add the direct link to the component from http://cdn.webix.com in the head section of your document after including 
+*webix.js* and *webix.css* files:
+
+~~~html
+<link rel="stylesheet" href="../../codebase/webix.css" type="text/css" >
+<script src="../../codebase/webix.js" type="text/javascript"></script>
+
+<script src="http://cdn.webix.com/components/datasuggest/datasuggest.js"></script>
+~~~
+
+- or download the component from [https://github.com/webix-hub/components](https://github.com/webix-hub/components) and include the *datasuggest.js* file on the page:
+
+~~~html
+<script type="text/javascript" src="./datasuggest.js"></script>
+~~~
+
+If you use the PRO Edition of Webix, you don't need to include any additional files, as Dataview Suggest is included into the PRO version package.
+
 ##Using Datasuggest for Form Controls
 
 The extension can be used to **redefine dropdown menu** of select controls.  
 
 <img src="desktop/datasuggest.png"/>
 
-{{editor http://webix.com/snippet/778802da	Data Suggest}}
+{{editor http://webix.com/snippet/99ffd905	Data Suggest}}
 
 Default combo and richselect constructor looks as follows:
 

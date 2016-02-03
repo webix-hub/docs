@@ -389,6 +389,6 @@ Gridsuggest can be used with form controls as well as with component editors. Mo
 
 <img src="desktop/datasuggest.png"/>
 
-{{editor http://webix.com/snippet/778802da	Data Suggest}}
+{{editor http://webix.com/snippet/99ffd905	Data Suggest}}
 
 Datasuggest can be used with form controls as well as with component editors. More about its configuration can be found in the [related article](desktop/datasuggest.md).  

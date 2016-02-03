@@ -246,6 +246,18 @@ Auxiliary components help you to complete the picture of your application, to ad
 		</a>
     </div>
     <div>
+		<a href="desktop/excelviewer.md">
+			<img src="desktop/icons/excelviewer.png"/>
+			<br>Excel Viewer
+		</a>
+    </div>
+    <div>
+		<a href="desktop/pdfviewer.md">
+			<img src="desktop/icons/pdfviewer.png"/>
+			<br>PDF Viewer
+		</a>
+    </div>
+    <div>
 		<a href="desktop/uploader.md">
 			<img src="desktop/icons/uploader.png"/>
 			<br>Uploader
@@ -346,6 +358,7 @@ div.controls_group img {
 - desktop/contextmenu.md
 - datatable/index.md
 - desktop/dataview.md
+- desktop/excelviewer.md
 - desktop/form.md
 - desktop/controls.md
 - desktop/grouplist.md
@@ -356,6 +369,7 @@ div.controls_group img {
 - desktop/menu.md
 - desktop/multiview.md
 - desktop/organogram.md
+- desktop/pdfviewer.md
 - desktop/popup.md
 - desktop/portlet.md
 - desktop/property_sheet.md
