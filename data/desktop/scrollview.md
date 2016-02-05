@@ -41,7 +41,7 @@ webix.ui{(
             ]}
 	})
 ~~~
-{{sample 04_template/10_scrollview.html }}
+{{editor http://webix.com/snippet/ff4543de  Scrollview}}
 
 Scrollview features a **body** object property where items (text templates, components) are stored in either **rows** or **cols** array for vertical or horizontal item arrangement respectively. 
 
