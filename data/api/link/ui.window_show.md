@@ -6,9 +6,9 @@ show
     
 @params:
 
-- node			DOMElement			optional, html element where the popup  is shown 
-- position 		object				optional, object that may contain pos, x and y properties (see details)
-- point 		string				optional, the popup pointer (arrow) direction  ("top", "left", "right", "bottom")
+* node			DOMElement			optional, html element where the popup  is shown 
+* position 		object				optional, object that may contain pos, x and y properties (see details)
+* point 		string				optional, the popup pointer (arrow) direction  ("top", "left", "right", "bottom")
 
 
 @example:
