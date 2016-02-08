@@ -6,15 +6,16 @@ onBeforeEditStop
 	fires before stop edit command is received
 
 @params:
-- id		id		the item id
+- values		object			an object with two parameters: the new value and the old one
+- editor		object			the editor object	
 
 @example: 
 	
-grid.attachEvent("onBeforeEditStop", function(){ return false; });
+grid.attachEvent("onBeforeEditStop", function(state, editor){ return false; });
 
 grid.attachEvent("onEditorChange", function(id, value){
-			this.getItem(id.row)[id.column] = value;
-			this.refresh(id.row);
+	this.getItem(id.row)[id.column] = value;
+	this.refresh(id.row);
 });;
 
 @template:	api_event
@@ -32,5 +33,7 @@ grid.attachEvent("onEditorChange", function(id, value){
 
 Events starting from **"before"** are **blockable**, which means that if they return *false* the action is blocked. 
 
-In the sample above **editing is not finished** when the edit stop command is received (it happens when you leave the editor body) and
-**editing continues** with setting the new value to the item and resreshing it. It is done to display the new value outside the field where editor opens. 
+In the above sample **editing is not finished** when the edit stop command is received 
+(it happens when you leave the editor body) and **editing continues** with setting 
+the new value to the item and refreshing it. 
+It is done to display the new value outside the field where editor opens. 

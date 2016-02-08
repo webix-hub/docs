@@ -268,7 +268,7 @@ Filters are set within [Pivot structure object](#struct) in **filters** array. *
 ~~~js
 view:"pivot",
 structure: {
-	values: [
+	filters: [
 		{ name: "name", type:"select" },
 		{ name: "continent", type: "text" }
 	]
