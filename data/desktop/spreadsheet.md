@@ -14,6 +14,13 @@ of various languages.
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/spreadsheet_front.png">
 
+API Reference
+---------------
+
+- [Methods, properties and events](api__refs__ui.spreadsheet.html)
+- [Samples](http://docs.webix.com/samples/01_layout/index.html)
+
+
 Creating SpreadSheet on the Page
 ---------------------------------
 
@@ -45,6 +52,19 @@ webix.ready(function(){
 
 Loading and Saving Data
 -------------------------
+
+###Specificity of Data Loading Format 
+
+Data is loaded into SpreadSheet as an object that includes 4 parameters: styles, sizes, data and spans.
+
+The "styles" parameter contains styles descriptions presented as arrays of two elements:
+
+- the style's name
+- a string containing the styles of the CSS rule 
+
+The "sizes" parameter is optional and includes a collection of sizes that are used for restoring sizes of elements.
+
+Each element of the array has horizontal and vertical sizes of a cell.
 
 ~~~js
 var base_data = {
@@ -98,21 +118,7 @@ var base_data = {
     [4,3,"192200","wss18"],
     [4,4,"12000","wss18"],
     [4,5,"=C4+D4","wss19"],
-    [5,1,"Europe","wss24"],
-    [5,2,"Poland","wss24"],
-    [5,3,"68900","wss18"],
-    [5,4,"8000","wss18"],
-    [5,5,"=C5+D5","wss19"],
-    [6,1,"Asia","wss24"],
-    [6,2,"Japan","wss24"],
-    [6,3,"140000","wss18"],
-    [6,4,"14000","wss18"],
-    [6,5,"=C6+D6","wss19"],
-    [7,1,"Asia","wss24"],
-    [7,2,"China","wss24"],
-    [7,3,"50000","wss18"],
-    [7,4,"4800","wss18"],
-    [7,5,"=C7+D7","wss19"]
+   
   ],
   "spans": [
     [1,1,5,1]
