@@ -6,9 +6,9 @@ ui.htmlform
 
 The component allows you to get an HTML Form as a lib-based view, so that to use it together with the other lib components (common API, techniques, architecture etc.). Check [htmlform](desktop/htmlform.md) documentation for more detailed description.
 
-### Constructor
+## Constructor
 
-{{snippet HTML}}
+{{snippet HTML. }}
 ~~~html
 <div class="myform">
 	<div>
@@ -22,13 +22,13 @@ The component allows you to get an HTML Form as a lib-based view, so that to use
 </div>
 ~~~
 
-{{snippet JS}}
+{{snippet JS. }}
 ~~~js
 var htmlform = webix.ui({
-	view:"htmlform", 
-    id:"formView",
-    padding:5,
-	content:document.body
+  view:"htmlform", 
+  id:"formView",
+  padding:5,
+  content:document.body
 });
 ~~~
 

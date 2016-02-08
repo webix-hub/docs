@@ -7,6 +7,7 @@ Methods
 - api/ajax_get.md - issues a GET Ajax request to the server
 - api/ajax_getxhr.md - returns an xmlHttpRequest object
 - api/ajax_headers.md - sets the HTTP request header(s)
+- api/ajax_patch.md - 
 - api/ajax_post.md - issues a POST Ajax request to the server
 - api/ajax_put.md - issues a PUT Ajax request to the server
 - api/ajax_response.md - sets response type of the request
@@ -21,6 +22,7 @@ Methods
 - api/ajax_get.md
 - api/ajax_getxhr.md
 - api/ajax_headers.md
+- api/ajax_patch.md
 - api/ajax_post.md
 - api/ajax_put.md
 - api/ajax_response.md

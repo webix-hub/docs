@@ -4,7 +4,8 @@ ui.tabbar
 
 {{memo A panel that contains multiple clickable items. }}
 
-Items of the component combines an icon with the text label. The component can be used to build a multi-item menu for navigating between views. Check [tabbar](desktop/tabbar.md) documentation for more detailed description.
+Items of the component combine icons with text labels. The component can be used to build a multi-item menu for navigating between views. Check [tabbar](desktop/tabbar.md) documentation for more detailed description.
+
 
 ### Constructor
 
@@ -112,6 +113,7 @@ webix.ui({
 - api/link/ui.tabbar_align_config.md - the alignment of the control within the parent container
 - api/link/ui.tabbar_animate_config.md - defines or disables view change animation.
 - api/link/ui.tabbar_attributes_config.md - sets an hash of HTML input attributes that will be parsed for the Webix input control
+- api/link/ui.tabbar_autowidth_config.md - adjusts button to its text content
 - api/link/ui.tabbar_borderless_config.md - used to hide the component borders
 - api/link/ui.tabbar_bottomlabel_config.md - sets a label under a control
 - api/ui.tabbar_bottomoffset_config.md - bottom offset of tabbar
@@ -180,7 +182,7 @@ webix.ui({
 - api/link/ui.tabbar_$height_other.md - current height of the view
 - api/link/ui.tabbar_$render_other.md - code called after rending control
 - api/link/ui.tabbar_$rendericon_other.md - renders icon for the control
-- api/link/ui.tabbar_$renderinput_other.md - renders html for the input
+- api/link/ui.tabbar_$renderinput_other.md - 
 - api/link/ui.tabbar_$renderlabel_other.md - renders html for the label
 - api/link/ui.tabbar_$scope_other.md - scope for resolving event and method names
 - api/link/ui.tabbar_$setsize_other.md - sets the component size

@@ -4,7 +4,7 @@ ui.treetable
 
 {{memo A control for presenting tree in a grid cell. }}
 
-The component is used to integrate a tree into an editable grid. There is a support for  in-line node editing, drag-and-drop, filtering, checkboxes etc. Check [treetable](desktop/treetable.md) documentation for more detailed description.
+The component is used to integrate a tree into an editable grid. There is a support for in-line node editing, drag-and-drop, filtering, checkboxes etc. Check [treetable](desktop/treetable.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -32,8 +32,6 @@ var treetable = webix.ui({
 
 - [Overview of the Treetable Widget](desktop/treetable.md)
 - [Samples](http://docs.webix.com/samples/15_datatable/30_treetable/index.html)
-
-
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/treeapi.md">TreeAPI</a>, <a href="api/refs/treestatecheckbox.md">TreeStateCheckbox</a>, <a href="api/refs/treedataloader.md">TreeDataLoader</a>, <a href="api/refs/treestore.md">TreeStore</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/ui.datatable.md">ui.datatable</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/group.md">Group</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/mapcollection.md">MapCollection</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/tablepaste.md">TablePaste</a>, <a href="api/refs/datastate.md">DataState</a>, <a href="api/refs/editability.md">EditAbility</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a></div>
 
@@ -257,7 +255,7 @@ var treetable = webix.ui({
 - api/link/ui.treetable_onstructureload_event.md - fires when the structure of DataTable (columns configuration) is initialized
 - api/link/ui.treetable_onstructureupdate_event.md - fires when structure of datatable was changed ( column added, hidden or reconfigured )
 - api/link/ui.treetable_onsubviewcreate_event.md - fires after a subview was created
-- api/link/ui.treetable_onsubviewopen_event.md - fires after a subview or subrow is opened
+- api/link/ui.treetable_onsubviewopen_event.md - fires after a subview or a subrow is opened
 - api/link/ui.treetable_onsubviewrender_event.md - fires each time subview is rendered
 - api/link/ui.treetable_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.treetable_onswipey_event.md - occurs on a vertical swipe movement
@@ -275,9 +273,11 @@ var treetable = webix.ui({
 
 {{api
 - api/link/ui.treetable_animate_config.md - defines or disables view change animation.
+- api/link/ui.treetable_areaborderwidth_config.md - 
+- api/link/ui.treetable_areaselect_config.md - 
 - api/link/ui.treetable_autoconfig_config.md - datatable adjust configuration to the data
-- api/link/ui.treetable_autoheight_config.md - adjusts DataTable to the parent container size vertically
-- api/link/ui.treetable_autowidth_config.md - adjusts DataTable to the parent container size horizontally
+- api/link/ui.treetable_autoheight_config.md - adjusts Datatable size to the its content vertically
+- api/link/ui.treetable_autowidth_config.md - adjusts Datatable size to its content horizontally
 - api/link/ui.treetable_blockselect_config.md - enables/disables block selection
 - api/link/ui.treetable_borderless_config.md - used to hide the component borders
 - api/link/ui.treetable_checkboxrefresh_config.md - controls behavior of checkbox editors in grid

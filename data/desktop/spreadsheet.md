@@ -14,6 +14,13 @@ of various languages.
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/spreadsheet_front.png">
 
+API Reference
+---------------
+
+- [Methods, properties and events](api__refs__ui.spreadsheet.html)
+- [Samples](http://docs.webix.com/samples/01_layout/index.html)
+
+
 Creating SpreadSheet on the Page
 ---------------------------------
 
@@ -46,33 +53,86 @@ webix.ready(function(){
 Loading and Saving Data
 -------------------------
 
+###Specificity of Data Loading Format 
+
+Data is loaded into SpreadSheet as an object that includes 4 parameters: styles, sizes, data and spans.
+
+#### Styles
+
+The "styles" parameter contains styles descriptions presented as arrays of two elements:
+
+- the style's name
+- a string containing the styles of the CSS rule 
+
+~~~js
+"styles": [
+    ["wss1",";;center;;;;;;;;;"],
+    ["wss2",";#6E6EFF;center;;;;;;;;;"],
+    ["wss3","#FFFFFF;#6E6EFF;center;;;;;;;;;"]
+  ],
+~~~
+
+####Sizes
+
+The "sizes" parameter is optional and includes a collection of sizes that are used for restoring sizes of elements.
+
+Each element of the array has horizontal and vertical sizes of a cell.
+
+Horizontal size is specified as [column_number, row_number, column_size], e.g. [0,3,30]. 
+
+Vertical size is set as [row_number, column_number, row_size], e.g. [2,0,70].
+
+~~~js
+"sizes": [
+  [0,1,125],
+  [0,3,158],
+  [0,4,137]
+],
+~~~
+
+####Data
+
+The "data" parameter contains data elements set as arrays of 4 elements:
+
+- the number of the row
+- the number of the column
+- the cell's content
+- the CSS class of the cell
+
+~~~js
+"data": [
+    [1,1,"Report - July 2016","wss5"],
+    [1,2,"","wss5"],
+    [1,3,"","wss5"],
+    [2,1,"Region","wss20"],
+    [2,2,"Country","wss20"],
+    [2,3,"Sales - Group A","wss12"],
+    [2,4,"Sales - Group A","wss12"],
+    [2,5,"Total","wss13"]  
+  ]
+~~~
+
+####Spans
+
+The "spans" parameter defines the values of spans. It's an array of arrays that are specified as [row, column, colsSpanNumber, rowsSpanNumber].
+
+For example:
+
+~~~js
+"spans": [
+	[1,1,5,1]
+]
+~~~
+
+An example of the object for loading is given below:
+
 ~~~js
 var base_data = {
   "styles": [
     ["wss1",";;center;;;;;;;;;"],
     ["wss2",";#6E6EFF;center;;;;;;;;;"],
-    ["wss3","#FFFFFF;#6E6EFF;center;;;;;;;;;"],
-    ["wss4","#FFFFFF;#6E6EFF;center;;;;;bold;;;;"],
-    ["wss5","#FFFFFF;#6E6EFF;center;;;;;normal;;;;"],
-    ["wss6","#000000;;;;;;;;;;;"],
-    ["wss7","#000000;#00004C;;;;;;;;;;"],
-    ["wss8","#000000;#FFFFFF;left;'PT Sans', Tahoma;15px;;;;top;;0-0-0-0,;"],
-    ["wss9",";;right;;;;;;;;;"],
-    ["wss10","#000;#fff;center;'PT Sans', Tahoma;15px;;;bold;top;;0-0-0-0,;"],
-    ["wss11",";;right;;;;;bold;;;;"],
-    ["wss12","#818181;#fff;center;'PT Sans', Tahoma;15px;;;bold;top;;0-0-0-0,;"],
-    ["wss13","#818181;;right;;;;;bold;;;;"],
-    ["wss14","#000000;#FFFFFF;center;'PT Sans', Tahoma;15px;;;;top;;0-0-0-0,;"],
-    ["wss15","#000000;#FFFFFF;right;'PT Sans', Tahoma;15px;;;;top;;0-0-0-0,;"],
-    ["wss16","#000;#fff;right;'PT Sans', Tahoma;15px;;;;top;;0-0-0-0,;"],
-    ["wss17","#000000;#FFFFFF;right;'PT Sans', Tahoma;15px;;;;top;;0-0-0-0,;price"],
-    ["wss18","#000;#fff;right;'PT Sans', Tahoma;15px;;;;top;;0-0-0-0,;price"],
-    ["wss19","#000;#fff;right;'PT Sans', Tahoma;15px;;;;top;;0-0-0-0,;-1"],
-    ["wss20","#818181;#EAEAEA;center;'PT Sans', Tahoma;15px;;;bold;top;;0-0-0-0,;"],
-    ["wss21","#000000;#EAEAEA;left;'PT Sans', Tahoma;15px;;;;top;;0-0-0-0,;"],
-    ["wss22",";#EAEAEA;;;;;;;;;;"],
-    ["wss23","#000000;#EAEAEA;center;'PT Sans', Tahoma;15px;;;;top;;0-0-0-0,;"],
-    ["wss24",";#EAEAEA;center;;;;;;;;;"]
+    ["wss3","#FFFFFF;#6E6EFF;center;;;;;;;;;"]
+    ...
   ],
   "sizes": [
     [0,1,125],
@@ -87,35 +147,37 @@ var base_data = {
     [2,2,"Country","wss20"],
     [2,3,"Sales - Group A","wss12"],
     [2,4,"Sales - Group A","wss12"],
-    [2,5,"Total","wss13"],
-    [3,1,"Europe","wss23"],
-    [3,2,"Germany","wss23"],
-    [3,3,"188400","wss17"],
-    [3,4,"52000","wss18"],
-    [3,5,"=C3+D3","wss19"],
-    [4,1,"Europe","wss24"],
-    [4,2,"France","wss24"],
-    [4,3,"192200","wss18"],
-    [4,4,"12000","wss18"],
-    [4,5,"=C4+D4","wss19"],
-    [5,1,"Europe","wss24"],
-    [5,2,"Poland","wss24"],
-    [5,3,"68900","wss18"],
-    [5,4,"8000","wss18"],
-    [5,5,"=C5+D5","wss19"],
-    [6,1,"Asia","wss24"],
-    [6,2,"Japan","wss24"],
-    [6,3,"140000","wss18"],
-    [6,4,"14000","wss18"],
-    [6,5,"=C6+D6","wss19"],
-    [7,1,"Asia","wss24"],
-    [7,2,"China","wss24"],
-    [7,3,"50000","wss18"],
-    [7,4,"4800","wss18"],
-    [7,5,"=C7+D7","wss19"]
+    [2,5,"Total","wss13"]
+    ...
   ],
   "spans": [
     [1,1,5,1]
   ]
 };
 ~~~
+
+
+###Saving Data
+
+On each change in a cell of SpreadSheet, a request for saving changes is sent to the server. 
+If you change several cells at a time, requests are sent for each of them.
+
+There are handlers for each operation. 
+
+- data - when data is changed
+- sizes - when sizes are changed
+- spans - when cells are merged and divided back
+
+A request for data saving contains:<br>
+  	- row<br>
+    - column <br>
+    - x - the number of merged columns<br>
+    - y - the number of merged rows
+    
+- styles - when an existing style is changed or a new one is created
+
+A request for saving data includes:<br>
+	- row<br>
+    - column<br>
+    - value<br>
+    - style - the name of the style

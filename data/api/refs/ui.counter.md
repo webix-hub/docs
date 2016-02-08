@@ -100,6 +100,7 @@ var counter = webix.ui({
 - api/link/ui.counter_align_config.md - the alignment of the control within the parent container
 - api/link/ui.counter_animate_config.md - defines or disables view change animation.
 - api/link/ui.counter_attributes_config.md - sets an hash of HTML input attributes that will be parsed for the Webix input control
+- api/link/ui.counter_autowidth_config.md - adjusts button to its text content
 - api/link/ui.counter_borderless_config.md - used to hide the component borders
 - api/link/ui.counter_bottomlabel_config.md - sets a label under a control
 - api/link/ui.counter_bottompadding_config.md - sets the bottom offset of the control input
@@ -154,7 +155,7 @@ var counter = webix.ui({
 - api/link/ui.counter_$height_other.md - current height of the view
 - api/link/ui.counter_$render_other.md - code called after rending control
 - api/link/ui.counter_$rendericon_other.md - renders icon for the control
-- api/link/ui.counter_$renderinput_other.md - renders html for the input
+- api/link/ui.counter_$renderinput_other.md - 
 - api/link/ui.counter_$renderlabel_other.md - renders html for the label
 - api/link/ui.counter_$scope_other.md - scope for resolving event and method names
 - api/link/ui.counter_$setsize_other.md - sets the component size

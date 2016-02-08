@@ -4,6 +4,7 @@ Properties
 {{api
 - api/link/ui.icon_align_config.md - the alignment of the control within the parent container
 - api/link/ui.icon_animate_config.md - defines or disables view change animation.
+- api/link/ui.icon_autowidth_config.md - adjusts button to its text content
 - api/link/ui.icon_borderless_config.md - used to hide the component borders
 - api/link/ui.icon_click_config.md - click action handler
 - api/link/ui.icon_container_config.md - an html container (or its id) where the component needs initializing
@@ -33,6 +34,7 @@ Properties
 @index:
 - api/link/ui.icon_align_config.md
 - api/link/ui.icon_animate_config.md
+- api/link/ui.icon_autowidth_config.md
 - api/link/ui.icon_borderless_config.md
 - api/link/ui.icon_click_config.md
 - api/link/ui.icon_container_config.md

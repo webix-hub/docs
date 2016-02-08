@@ -21,7 +21,6 @@ var icon = webix.ui({
 
 - [Overview of the Icon Control](desktop/icon.md)
 - [Samples](http://docs.webix.com/samples/16_skins/03_icons.html)
-
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
@@ -94,6 +93,7 @@ var icon = webix.ui({
 {{api
 - api/link/ui.icon_align_config.md - the alignment of the control within the parent container
 - api/link/ui.icon_animate_config.md - defines or disables view change animation.
+- api/link/ui.icon_autowidth_config.md - adjusts button to its text content
 - api/link/ui.icon_borderless_config.md - used to hide the component borders
 - api/link/ui.icon_click_config.md - click action handler
 - api/link/ui.icon_container_config.md - an html container (or its id) where the component needs initializing
@@ -131,6 +131,7 @@ var icon = webix.ui({
 - api/link/ui.icon_$getsize_other.md - returns the current size of the component
 - api/link/ui.icon_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.icon_$height_other.md - current height of the view
+- api/link/ui.icon_$renderinput_other.md - 
 - api/link/ui.icon_$scope_other.md - scope for resolving event and method names
 - api/link/ui.icon_$setsize_other.md - sets the component size
 - api/link/ui.icon_$setvalue_other.md - called each time when component need to set value in related html input

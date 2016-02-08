@@ -14,6 +14,7 @@ Methods
 - api/link/ui.pdfbar_destructor.md - destructs the calling object
 - api/link/ui.pdfbar_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.pdfbar_disable.md - disables the calling view (makes it dimmed and unclickable)
+- api/ui.pdfbar_download.md - 
 - api/link/ui.pdfbar_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.pdfbar_focus.md - sets focus into the necessary component
 - api/link/ui.pdfbar_getchildviews.md - returns child views of the calling component
@@ -72,6 +73,7 @@ Methods
 - api/link/ui.pdfbar_destructor.md
 - api/link/ui.pdfbar_detachevent.md
 - api/link/ui.pdfbar_disable.md
+- api/ui.pdfbar_download.md
 - api/link/ui.pdfbar_enable.md
 - api/link/ui.pdfbar_focus.md
 - api/link/ui.pdfbar_getchildviews.md

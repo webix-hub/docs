@@ -3,9 +3,11 @@ Properties
 
 {{api
 - api/link/ui.datatable_animate_config.md - defines or disables view change animation.
+- api/ui.datatable_areaborderwidth_config.md - 
+- api/ui.datatable_areaselect_config.md - 
 - api/ui.datatable_autoconfig_config.md - datatable adjust configuration to the data
-- api/ui.datatable_autoheight_config.md - adjusts DataTable to the parent container size vertically
-- api/ui.datatable_autowidth_config.md - adjusts DataTable to the parent container size horizontally
+- api/ui.datatable_autoheight_config.md - adjusts Datatable size to the its content vertically
+- api/ui.datatable_autowidth_config.md - adjusts Datatable size to its content horizontally
 - api/ui.datatable_blockselect_config.md - enables/disables block selection
 - api/link/ui.datatable_borderless_config.md - used to hide the component borders
 - api/ui.datatable_checkboxrefresh_config.md - controls behavior of checkbox editors in grid
@@ -90,6 +92,8 @@ Properties
 
 @index:
 - api/link/ui.datatable_animate_config.md
+- api/ui.datatable_areaborderwidth_config.md
+- api/ui.datatable_areaselect_config.md
 - api/ui.datatable_autoconfig_config.md
 - api/ui.datatable_autoheight_config.md
 - api/ui.datatable_autowidth_config.md

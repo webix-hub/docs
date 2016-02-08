@@ -4,7 +4,7 @@ ui.window
 
 {{memo A movable popup window. }}
 
-The window consists of the header and the body, can be modal or modaless. The window body can contain any content. The header is set by a template.  Check [window](desktop/window.md) documentation for more detailed description.
+The window consists of the header and the body, can be modal or modaless. The window body can contain any content. The header is set by a template. Check [window](desktop/window.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -25,7 +25,6 @@ var window = webix.ui({
 
 - [Overview of the Window Widget](desktop/window.md)
 - [Samples](http://docs.webix.com/samples/10_window/index.html)
-
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/movable.md">Movable</a>, <a href="api/refs/modality.md">Modality</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>

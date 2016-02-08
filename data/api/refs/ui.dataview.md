@@ -5,6 +5,7 @@ ui.dataview
 
 The component presents a collection of objects according to a user-defined template. Support for various template forms and the possibility to sort, filter data.  Check [dataview](desktop/dataview.md) documentation for more detailed description.
 
+
 ### Constructor
 
 ~~~js

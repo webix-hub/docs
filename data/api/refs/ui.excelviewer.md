@@ -79,6 +79,7 @@ dummy stub
 - api/link/ui.excelviewer_getscrollstate.md - returns the current position of scrolls
 - api/link/ui.excelviewer_getselectedid.md - returns the selected elements' ids
 - api/link/ui.excelviewer_getselecteditem.md - gets an object of the selected data item
+- api/link/ui.excelviewer_getspan.md - 
 - api/link/ui.excelviewer_getstate.md - returns the current state of the view
 - api/link/ui.excelviewer_getsubview.md - returns subview of the item with the given id
 - api/link/ui.excelviewer_gettext.md - returns text value of a cell
@@ -213,7 +214,7 @@ dummy stub
 - api/link/ui.excelviewer_onstructureupdate_event.md - fires when structure of datatable was changed ( column added, hidden or reconfigured )
 - api/ui.excelviewer_onsubviewclose_event.md - 
 - api/link/ui.excelviewer_onsubviewcreate_event.md - fires after a subview was created
-- api/link/ui.excelviewer_onsubviewopen_event.md - fires after a subview or subrow is opened
+- api/link/ui.excelviewer_onsubviewopen_event.md - fires after a subview or a subrow is opened
 - api/link/ui.excelviewer_onsubviewrender_event.md - fires each time subview is rendered
 - api/link/ui.excelviewer_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.excelviewer_onswipey_event.md - occurs on a vertical swipe movement
@@ -231,9 +232,11 @@ dummy stub
 
 {{api
 - api/link/ui.excelviewer_animate_config.md - defines or disables view change animation.
+- api/link/ui.excelviewer_areaborderwidth_config.md - 
+- api/link/ui.excelviewer_areaselect_config.md - 
 - api/link/ui.excelviewer_autoconfig_config.md - datatable adjust configuration to the data
-- api/link/ui.excelviewer_autoheight_config.md - adjusts DataTable to the parent container size vertically
-- api/link/ui.excelviewer_autowidth_config.md - adjusts DataTable to the parent container size horizontally
+- api/link/ui.excelviewer_autoheight_config.md - adjusts Datatable size to the its content vertically
+- api/link/ui.excelviewer_autowidth_config.md - adjusts Datatable size to its content horizontally
 - api/link/ui.excelviewer_blockselect_config.md - enables/disables block selection
 - api/link/ui.excelviewer_borderless_config.md - used to hide the component borders
 - api/link/ui.excelviewer_checkboxrefresh_config.md - controls behavior of checkbox editors in grid

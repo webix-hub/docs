@@ -1,0 +1,1 @@
+@link: api/ui.chart_gradient_config.md

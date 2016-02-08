@@ -4,7 +4,8 @@ ui.suggest
 
 {{memo A suggest control. }}
 
-Can be used standalone or as editor for other components. Check [suggest](desktop/suggest.md) documentation for more detailed description.
+Can be used standalone or as an editor for other components. Check [suggest](desktop/suggest.md) documentation for more detailed description.
+
 
 ### Constructor
 
@@ -29,8 +30,6 @@ webix.ui({
 
 - [Overview of Suggest List](desktop/suggest.md)
 - [Samples](http://docs.webix.com/samples/13_form/01_controls/)
-
-
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.popup.md">ui.popup</a>, <a href="api/refs/ui.window.md">ui.window</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/movable.md">Movable</a>, <a href="api/refs/modality.md">Modality</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>

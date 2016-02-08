@@ -7,7 +7,7 @@ Others
 - api/link/ui.combo_$height_other.md - current height of the view
 - api/link/ui.combo_$render_other.md - code called after rending control
 - api/link/ui.combo_$rendericon_other.md - renders icon for the control
-- api/link/ui.combo_$renderinput_other.md - renders html for the input
+- api/link/ui.combo_$renderinput_other.md - 
 - api/link/ui.combo_$renderlabel_other.md - renders html for the label
 - api/link/ui.combo_$scope_other.md - scope for resolving event and method names
 - api/link/ui.combo_$setsize_other.md - sets the component size

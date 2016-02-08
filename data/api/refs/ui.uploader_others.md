@@ -7,6 +7,7 @@ Others
 - api/link/ui.uploader_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.uploader_$height_other.md - current height of the view
 - api/ui.uploader_$onuploadcomplete_other.md - completes uploading for flash uploader
+- api/link/ui.uploader_$renderinput_other.md - 
 - api/link/ui.uploader_$scope_other.md - scope for resolving event and method names
 - api/link/ui.uploader_$setsize_other.md - sets the component size
 - api/link/ui.uploader_$setvalue_other.md - called each time when component need to set value in related html input
@@ -26,6 +27,7 @@ Others
 - api/link/ui.uploader_$getvalue_other.md
 - api/link/ui.uploader_$height_other.md
 - api/ui.uploader_$onuploadcomplete_other.md
+- api/link/ui.uploader_$renderinput_other.md
 - api/link/ui.uploader_$scope_other.md
 - api/link/ui.uploader_$setsize_other.md
 - api/link/ui.uploader_$setvalue_other.md

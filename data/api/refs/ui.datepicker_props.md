@@ -5,6 +5,7 @@ Properties
 - api/link/ui.datepicker_align_config.md - the alignment of the control within the parent container
 - api/link/ui.datepicker_animate_config.md - defines or disables view change animation.
 - api/link/ui.datepicker_attributes_config.md - sets an hash of HTML input attributes that will be parsed for the Webix input control
+- api/link/ui.datepicker_autowidth_config.md - adjusts button to its text content
 - api/link/ui.datepicker_borderless_config.md - used to hide the component borders
 - api/link/ui.datepicker_bottomlabel_config.md - sets a label under a control
 - api/link/ui.datepicker_bottompadding_config.md - sets the bottom offset of the control input
@@ -58,6 +59,7 @@ Properties
 - api/link/ui.datepicker_align_config.md
 - api/link/ui.datepicker_animate_config.md
 - api/link/ui.datepicker_attributes_config.md
+- api/link/ui.datepicker_autowidth_config.md
 - api/link/ui.datepicker_borderless_config.md
 - api/link/ui.datepicker_bottomlabel_config.md
 - api/link/ui.datepicker_bottompadding_config.md

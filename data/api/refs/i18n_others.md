@@ -17,6 +17,7 @@ Others
 - api/i18n_parsetimeformat_other.md - sets the default locale parsing time format. Initially it is **%H:%i**.
 - api/i18n_price_other.md - sets the default locale price format
 - api/i18n_pricesettings_other.md - sets the format of the price number
+- api/i18n_spreadsheet_other.md - 
 - api/i18n_timeformat_other.md - sets the default locale time format
 }}
 
@@ -36,6 +37,7 @@ Others
 - api/i18n_parsetimeformat_other.md
 - api/i18n_price_other.md
 - api/i18n_pricesettings_other.md
+- api/i18n_spreadsheet_other.md
 - api/i18n_timeformat_other.md
 
 

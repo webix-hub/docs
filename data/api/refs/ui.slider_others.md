@@ -7,7 +7,7 @@ Others
 - api/link/ui.slider_$height_other.md - current height of the view
 - api/link/ui.slider_$render_other.md - code called after rending control
 - api/link/ui.slider_$rendericon_other.md - renders icon for the control
-- api/link/ui.slider_$renderinput_other.md - renders html for the input
+- api/link/ui.slider_$renderinput_other.md - 
 - api/link/ui.slider_$renderlabel_other.md - renders html for the label
 - api/link/ui.slider_$scope_other.md - scope for resolving event and method names
 - api/link/ui.slider_$setsize_other.md - sets the component size

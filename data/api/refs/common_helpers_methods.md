@@ -41,6 +41,7 @@ Methods
 - api/_toexcel.md - exports data of a data component to an Excel document
 - api/_tofunctor.md - converts a string to a function
 - api/_tonode.md - returns an HTML node object
+- api/_topdf.md - 
 - api/_topng.md - exports data of a component to a PNG file
 - api/_type.md - defines new rendering type for the component
 - api/_ui.md - the object constructor. Creates a new instance of the specified view
@@ -89,6 +90,7 @@ Methods
 - api/_toexcel.md
 - api/_tofunctor.md
 - api/_tonode.md
+- api/_topdf.md
 - api/_topng.md
 - api/_type.md
 - api/_ui.md

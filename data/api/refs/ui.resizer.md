@@ -4,7 +4,7 @@ ui.resizer
 
 {{memo A draggable border in a layout. }}
 
-The component is used to make some view placed into a layout draggable by a specific border. Draggable borders differ visually from the undraggable ones. Check the [layout](desktop/layout.md) documentation for more detailed description.
+The component is used to make some view placed into a layout draggable by a specific border. Draggable borders differ visually from the undraggable ones. Check [layout](desktop/layout.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -29,6 +29,7 @@ webix.ui({
 
 - [Overview of Resizer](desktop/layout.md#resizerlines)
 - [Samples](http://docs.webix.com/samples/01_layout)
+
 
 
 <div class='webixdoc_parents'><span>Based on: </span>

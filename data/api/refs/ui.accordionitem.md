@@ -4,7 +4,7 @@ ui.accordionitem
 
 {{memo A singular pane of the accordion component. }}
 
-Each accordion pane consists of the header and body. The body of a pane can be collapsed/expanded by clicking on the appropriate header. Check [accordionitem](desktop/accordionitem.md) documentation for more detailed description.
+Each accordion pane consists of a header and a body. The body of a pane can be collapsed/expanded by clicking on the appropriate header. Check [accordionitem](desktop/accordionitem.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -32,6 +32,7 @@ var accordionitem = webix.ui({
 
 - [Overview of Accordionitem](desktop/accordionitem.md)
 - [Samples](http://docs.webix.com/samples/80_docs/accordionitem.html)
+
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>

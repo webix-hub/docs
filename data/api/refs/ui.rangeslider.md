@@ -99,6 +99,7 @@ var rangeslider = webix.ui({
 - api/link/ui.rangeslider_align_config.md - the alignment of the control within the parent container
 - api/link/ui.rangeslider_animate_config.md - defines or disables view change animation.
 - api/link/ui.rangeslider_attributes_config.md - sets an hash of HTML input attributes that will be parsed for the Webix input control
+- api/link/ui.rangeslider_autowidth_config.md - adjusts button to its text content
 - api/link/ui.rangeslider_borderless_config.md - used to hide the component borders
 - api/link/ui.rangeslider_bottomlabel_config.md - sets a label under a control
 - api/link/ui.rangeslider_bottompadding_config.md - sets the bottom offset of the control input
@@ -157,7 +158,7 @@ var rangeslider = webix.ui({
 - api/link/ui.rangeslider_$height_other.md - current height of the view
 - api/link/ui.rangeslider_$render_other.md - code called after rending control
 - api/link/ui.rangeslider_$rendericon_other.md - renders icon for the control
-- api/link/ui.rangeslider_$renderinput_other.md - renders html for the input
+- api/link/ui.rangeslider_$renderinput_other.md - 
 - api/link/ui.rangeslider_$renderlabel_other.md - renders html for the label
 - api/link/ui.rangeslider_$scope_other.md - scope for resolving event and method names
 - api/link/ui.rangeslider_$setsize_other.md - sets the component size
