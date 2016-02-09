@@ -28,7 +28,7 @@ By default label features left alignment, so the top label will be placed to the
 Top right alignment is achieved by applying both properties:
 
 ~~~js
-{view: "text", label:"Some Text", labelAlign:"right", labelPosition:"Top"}
+{view: "text", label:"Some Text", labelAlign:"right", labelPosition:"top"}
 ~~~
 
 @reserved: true
