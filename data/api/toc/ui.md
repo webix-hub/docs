@@ -368,6 +368,11 @@ table.webixtoc td{
     	<td> <img src="api/toc/spacer.png"/> </td>
         <td> api/refs/ui.spacer.md </td>
         <td>a bordeless empty view </td>
+    </tr>
+    <tr>
+    	<td> <img src="api/toc/spreadsheet.png"/> </td>
+        <td> api/refs/ui.spreadsheet.md </td>
+        <td>a component for creating tables with extended functionality</td>
     </tr> 
     <tr>
         <td> <img src="api/toc/tooltip.png"/> </td>
@@ -485,6 +490,7 @@ table.webixtoc td{
 - api/refs/ui.sidemenu.md
 - api/refs/ui.slider.md
 - api/refs/ui.spacer.md
+- api/refs/ui.spreadsheet.md
 - api/refs/ui.submenu.md
 - api/refs/ui.suggest.md
 - api/refs/ui.tabbar.md
