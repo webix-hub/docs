@@ -37,7 +37,7 @@ webix.ui({
 ~~~
 
 
-{{sample 05_list/11_unitlist.html }}
+{{editor http://webix.com/snippet/b513d0da  Unitlist}}
 
 - The **uniteBy** property groups data according to the specified criterion, the unit value (here it's the first letter to the data item title);
 - In addition it sets **unit headers** (unit values) and, additionally, sets [template](desktop/html_templates.md) for them;
@@ -70,7 +70,7 @@ var unit = $$('unit').getInputNode().value; //getting value of the combo box tex
 var id = $$("list").getUnitList(unit); 
 ~~~
 
-{{sample 80_docs/unit_items.html}}
+{{editor http://webix.com/snippet/319d701b  Working with UnitList Items}}
 
 If you know the ID of any data item, you can easily get to all its properties:
 
