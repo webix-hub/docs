@@ -33,7 +33,7 @@ webix.ui({
     data: "..." //dataset, variable or path
 })
 ~~~
-{{sample 15_datatable/30_treetable/01_init.html }}
+{{editor http://webix.com/snippet/64c98c22	Basic initialization}}
 
 Tree table is populated with hierarchical data coming in <acronym title="Extensible Markup Language">XML</acronym> and <acronym title="JavaScript Object 
 Notation">JSON</acronym> [data formats](desktop/data_types.md). IDs of the coulmns must coincide with data keys from the initial dataset
@@ -44,35 +44,35 @@ Common tasks here include the following and coincide with those of the [datatabl
 
 1 . [Data Loading](desktop/data_loading.md) including [Dynamic Loading](datatree/dynamic_loading.md) of large datasets in portions by scrolling and branches opening;
 
-{{sample 15_datatable/30_treetable/02_dyn_loading.html}}
+{{editor http://webix.com/snippet/dd8fdb38	Static and dynamic loading}}
 
 2 . [Filtering](datatable/filtering.md) - built-in and custom filtering in various [filter modes](api/ui.datatable_filtermode_config.md);
 
-{{sample 15_datatable/30_treetable/04_filter.html }}
+{{editor http://webix.com/snippet/f20a7fa1	Filtering in TreeTable}}
 
 3 . [Selection](datatable/selection.md) by cells, row and columns in multiselect and blockselect modes;
 
-{{sample 15_datatable/30_treetable/06_selection.html }}
+{{editor http://webix.com/snippet/325677f0	Selecting items in TreeTable}}
 
 4 . [Item Editing](desktop/edit.md) by click or dblclick or any custom action;
 
-{{sample 15_datatable/30_treetable/08_edit.html }}
+{{editor http://webix.com/snippet/0dea9702	Editing data in TreeTable}}
 
 5 . [Using Math in Treetable](datatable/formulas.md) - built-in logic for storing data as mathematic formulas as well as editing these formulas directly in treetable.
 
-{{sample 15_datatable/08_math/01_basic.html}}
+{{editor http://webix.com/snippet/1e1dcfa0	Using formulas}}
 
 6 . [Data Grouping](desktop/grouping.md) - built-in logic for preseting hierarchical data in a tree-like manner;
 
-{{sample 15_datatable/32_grouping/03_aggregation.html}}
+{{editor http://webix.com/snippet/6905925c	Aggregating data while grouping}}
 
 7 . [Data Export to Excel and PNG](datatable/export.md)
 
-{{sample 15_datatable/10_export/01_excel.html }}
+{{editor http://webix.com/snippet/5553a90c	Export to Excel}}
 
 8 . [Copy-Paste Operations](datatable/copying.md)
 
-{{sample 15_datatable/30_treetable/13_copypaste.html }}
+{{editor http://webix.com/snippet/a389f7e8	Different copy-paste modes}}
 
 
 ##Related Articles
