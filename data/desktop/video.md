@@ -12,7 +12,7 @@ Webix **video** is a UI component designed for embedding video files into the ap
 
 <img src="desktop/video.png"/>
 
-{{sample 27_video/01_init.html}}
+{{editor http://webix.com/snippet/b48b8e4d	Video view init}}
 
 ##Initialization
 
@@ -45,7 +45,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 27_video/01_init.html}}
+{{editor http://webix.com/snippet/b48b8e4d	Video view init}}
 
 ###Customizing Video Player
 
@@ -60,7 +60,7 @@ src:[],
 autoplay:true
 ~~~
 
-{{sample 27_video/02_autoplay.html}}
+{{editor http://webix.com/snippet/91a07089	Autoplay}}
 
 ##Working with Video
 
@@ -75,7 +75,7 @@ Let's get rid of prebuilt controls and assign **play-and-pause** function to a W
 
 <img src="desktop/video_api.png"/>
 
-{{sample 27_video/03_api.html}}
+{{editor http://webix.com/snippet/09d4bb5f	Video API}}
 
 {{snippet
 UI - window with toolbar

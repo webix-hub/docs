@@ -26,7 +26,7 @@ webix.ui({
 })
 ~~~
 
-{{sample 10_window/01_init.html }}
+{{editor http://webix.com/snippet/71c56bea	Windows: Basic Initialization}}
 
 ####Comments: 
 
@@ -72,7 +72,7 @@ webix.ui({
 })
 ~~~
 
-{{sample 10_window/06_component_inside.html }}
+{{editor http://webix.com/snippet/4dec29ab	Window with a Component Inside}}
 
 ###Window Sizing and Positioning
 
@@ -88,7 +88,7 @@ Window can be resized by user in browser with the help of a **resizer icon** in 
 
 To enable this possibility, you need to include the **resize** property with the *true* value into the window's configuration.
 
-{{sample 10_window/15_resize.html}}
+{{editor http://webix.com/snippet/9f874bcf	Windows: Resize}}
 
 ###Window Modality
 

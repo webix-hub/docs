@@ -25,7 +25,7 @@ webix.ui({
 })
 ~~~
 
-{{sample 21_upload/01_init_list.html}}
+{{editor http://webix.com/snippet/468591f6	Basic List Uploader}}
 
 
 ##Working with Uploader
