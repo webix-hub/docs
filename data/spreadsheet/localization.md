@@ -12,12 +12,12 @@ Labels and tooltips of SpreadSheet instruments' are stored in the **webix.i18n.s
 
 ~~~js
 webix.i18n.spreadsheet = {
-	labels: {
+	"labels": {
 		// formats
-		common: "Common",
-		currency: "Currency",
-		number: "Number",
-		percent: "Percent",
+		"common": "Common",
+		"currency": "Currency",
+		"number": "Number",
+		"percent": "Percent",
 		// titles
 		"undo/redo": "Undo/Redo",
 		"font": "Font",
@@ -26,7 +26,7 @@ webix.i18n.spreadsheet = {
 		"align": "Align",
 		"format": "Format"
 	},
-    tooltips: {
+    "tooltips": {
     	"color": "Font color",
     	"background": "Background color",
     	"font-family": "Font family",
@@ -70,9 +70,16 @@ To apply a custom locale, you can follow one of the two ways:
 
 ~~~js
 webix.i18n.locales['ru-RU'].spreadsheet = {
-	common: "Обычный",
-	currency: "Валюта",
-	...
+    "labels":{
+       "common": "Общий",
+	   "currency": "Валюта",
+       ...
+    },
+	"tooltips":{
+       "color": "Цвет текста",
+       ...
+    }
+	
 };
 ~~~
 

@@ -11,7 +11,7 @@ eachSelectedCell
 
 @example:
 
-$$("ss").eachSelectedCell();
+$$("ssheet").eachSelectedCell();
 
 @template:	api_method
 @descr:

@@ -7,14 +7,14 @@ getColumn
 
 @params:
 
-- id		string		the column id
+- col_id		string		the column id
 
 @returns:
 - config		object		the column's configuration object
 
 
 @example:
-$$("ss").getColumn("ID");
+$$("ssheet").getColumn(col_id);
 
 @template:	api_method
 @descr:

@@ -12,7 +12,7 @@ combineCells
 
 
 @example:
-$$("ss").combineCells(range);
+$$("ssheet").combineCells(range);
 
 
 @template:	api_method

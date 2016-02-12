@@ -6,12 +6,13 @@ getCellValue
 
 @params:
 
-- cell		object		the cell's object
+- row			number		the row's number
+- column		number		the column's number
 
 
 @example:
 
-$$("ss").getCellValue(cell);
+$$("ssheet").getCellValue(2, 3);
 
 @returns:
 

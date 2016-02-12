@@ -51,7 +51,8 @@ of various languages.
 		    </h4>
 		    <ul id="design_sublist">
             	<li>spreadsheet/math.md</li>
-                <li>spreadsheet/import_export.md</li>
+                <li>spreadsheet/export.md</li>
+                <li>spreadsheet/import.md</li>
                 <li>spreadsheet/handling_events.md</li>
                 <li>spreadsheet/howto.md</li>
             </ul>
@@ -68,6 +69,7 @@ of various languages.
 - spreadsheet/localization.md
 - spreadsheet/config.md
 - spreadsheet/math.md
-- spreadsheet/import_export.md
+- spreadsheet/export.md
+- spreadsheet/import.md
 - spreadsheet/handling_events.md
 - spreadsheet/howto.md

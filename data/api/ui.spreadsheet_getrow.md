@@ -7,12 +7,16 @@ getRow
 
 @params:
 
-- id		string			the row's id
+- row_id		string			the row's id
+
+@returns:
+
+- config		object		the row's configuration object
 
 
 @example:
 
-$$("ss").getRow(id);
+$$("ssheet").getRow(row_id);
 
 @template:	api_method
 @descr:

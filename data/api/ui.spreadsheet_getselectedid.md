@@ -7,15 +7,16 @@ getSelectedId
 
 @params:
 
-- all
+- all		array		an 
 
 @returns:
 
-- ids	the ids of the selected cells
+- ids		string/array		the single item id or an array of ids
+
 
 @example:
 
-$$("ss").getSelectedId(all);
+$$("ssheet").getSelectedId(all);
 
 
 @template:	api_method
