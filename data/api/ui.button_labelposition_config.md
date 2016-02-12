@@ -11,7 +11,7 @@ labelPosition
 @type: string
 @example:
 
-{view: "text", label:"Some Text", labelPosition:"Top"}
+{view: "text", label:"Some Text", labelPosition:"top"}
 
 @relatedsample:
 	13_form/02_api/03_label_position.html
