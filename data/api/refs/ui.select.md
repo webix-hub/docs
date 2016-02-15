@@ -117,7 +117,7 @@ var select = webix.ui({
 - api/link/ui.select_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.select_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.select_label_config.md - the text label of the control
-- api/link/ui.select_labelposition_config.md - positions label in relation the control
+- api/link/ui.select_labelposition_config.md - positions label in relation to the control
 - api/link/ui.select_labelwidth_config.md - the width of the label
 - api/link/ui.select_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.select_maxwidth_config.md - sets the maximum width for the view
@@ -159,7 +159,7 @@ var select = webix.ui({
 - api/link/ui.select_$scope_other.md - scope for resolving event and method names
 - api/link/ui.select_$setsize_other.md - sets the component size
 - api/link/ui.select_$setvalue_other.md - called each time when component need to set value in related html input
-- api/link/ui.select_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.select_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.select_$view_other.md - reference to top html element of the view
 - api/link/ui.select_$width_other.md - current width of the view
 - api/link/ui.select_config_other.md - all options from initial component configuration

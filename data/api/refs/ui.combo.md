@@ -118,7 +118,7 @@ var combo = webix.ui({
 - api/link/ui.combo_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.combo_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.combo_label_config.md - the text label of the control
-- api/link/ui.combo_labelposition_config.md - positions label in relation the control
+- api/link/ui.combo_labelposition_config.md - positions label in relation to the control
 - api/link/ui.combo_labelwidth_config.md - the width of the label
 - api/link/ui.combo_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.combo_maxwidth_config.md - sets the maximum width for the view
@@ -163,7 +163,7 @@ var combo = webix.ui({
 - api/link/ui.combo_$scope_other.md - scope for resolving event and method names
 - api/link/ui.combo_$setsize_other.md - sets the component size
 - api/link/ui.combo_$setvalue_other.md - called each time when component need to set value in related html input
-- api/link/ui.combo_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.combo_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.combo_$view_other.md - reference to top html element of the view
 - api/link/ui.combo_$width_other.md - current width of the view
 - api/link/ui.combo_config_other.md - all options from initial component configuration

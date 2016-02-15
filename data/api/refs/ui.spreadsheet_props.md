@@ -5,7 +5,7 @@ Properties
 - api/link/ui.spreadsheet_animate_config.md - defines or disables view change animation.
 - api/link/ui.spreadsheet_borderless_config.md - used to hide the component borders
 - api/link/ui.spreadsheet_cols_config.md - array of views objects arranged horizontally
-- api/ui.spreadsheet_columncount_config.md - 
+- api/ui.spreadsheet_columncount_config.md - the number of columns in the SpreadSheet
 - api/link/ui.spreadsheet_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.spreadsheet_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.spreadsheet_disabled_config.md - indicates whether an item is enabled or not
@@ -24,9 +24,9 @@ Properties
 - api/link/ui.spreadsheet_paddingx_config.md - sets the right and left padding (applies the specified value to both sides)
 - api/link/ui.spreadsheet_paddingy_config.md - sets the top and bottom padding (applies the specified value to both sides)
 - api/link/ui.spreadsheet_responsive_config.md - enables responsive mode for horizontal layout
-- api/ui.spreadsheet_rowcount_config.md - 
+- api/ui.spreadsheet_rowcount_config.md - the number of rows in the SpreadSheet
 - api/link/ui.spreadsheet_rows_config.md - array of views objects arranged vertically
-- api/ui.spreadsheet_spans_config.md - 
+- api/ui.spreadsheet_spans_config.md - defines whether spans are allowed in the SpreadSheet
 - api/link/ui.spreadsheet_type_config.md - defines the layout borders
 - api/link/ui.spreadsheet_visiblebatch_config.md - sets the batch that will be shown initially
 - api/link/ui.spreadsheet_width_config.md - sets the width of the component

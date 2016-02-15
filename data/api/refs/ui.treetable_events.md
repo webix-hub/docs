@@ -3,6 +3,7 @@ Events
 
 {{api
 - api/link/ui.treetable_onafteradd_event.md - fires after adding item to datastore
+- api/link/ui.treetable_onafterareaadd_event.md - 
 - api/link/ui.treetable_onafterblockselect_event.md - event occurs after block selection
 - api/link/ui.treetable_onafterclose_event.md - fires after the branch has been closed
 - api/link/ui.treetable_onaftercolumndrop_event.md - fires after the column has been dragged and dropped to the target position
@@ -19,8 +20,9 @@ Events
 - api/link/ui.treetable_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.treetable_onafterselect_event.md - fires after a cell is selected
 - api/link/ui.treetable_onaftersort_event.md - fires after sorting dataset
-- api/link/ui.treetable_onafterunselect_event.md - fires after a cell is unselected
+- api/link/ui.treetable_onareadrag_event.md - 
 - api/link/ui.treetable_onbeforeadd_event.md - fires before adding item to datastore
+- api/link/ui.treetable_onbeforeareaadd_event.md - 
 - api/link/ui.treetable_onbeforeblockselect_event.md - event occurs before block selection
 - api/link/ui.treetable_onbeforeclose_event.md - fires the moment you attempt to close the tree branch
 - api/link/ui.treetable_onbeforecolumndrag_event.md - fires the monent you start dragging the column from its source potition
@@ -84,6 +86,7 @@ Events
 
 @index:
 - api/link/ui.treetable_onafteradd_event.md
+- api/link/ui.treetable_onafterareaadd_event.md
 - api/link/ui.treetable_onafterblockselect_event.md
 - api/link/ui.treetable_onafterclose_event.md
 - api/link/ui.treetable_onaftercolumndrop_event.md
@@ -100,8 +103,9 @@ Events
 - api/link/ui.treetable_onafterscroll_event.md
 - api/link/ui.treetable_onafterselect_event.md
 - api/link/ui.treetable_onaftersort_event.md
-- api/link/ui.treetable_onafterunselect_event.md
+- api/link/ui.treetable_onareadrag_event.md
 - api/link/ui.treetable_onbeforeadd_event.md
+- api/link/ui.treetable_onbeforeareaadd_event.md
 - api/link/ui.treetable_onbeforeblockselect_event.md
 - api/link/ui.treetable_onbeforeclose_event.md
 - api/link/ui.treetable_onbeforecolumndrag_event.md

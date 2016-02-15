@@ -118,7 +118,7 @@ var slider = webix.ui({
 - api/link/ui.slider_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.slider_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.slider_label_config.md - the text label of the control
-- api/link/ui.slider_labelposition_config.md - positions label in relation the control
+- api/link/ui.slider_labelposition_config.md - positions label in relation to the control
 - api/link/ui.slider_labelwidth_config.md - the width of the label
 - api/ui.slider_max_config.md - max value of slider
 - api/link/ui.slider_maxheight_config.md - sets the maximum height for the view
@@ -163,7 +163,7 @@ var slider = webix.ui({
 - api/link/ui.slider_$scope_other.md - scope for resolving event and method names
 - api/link/ui.slider_$setsize_other.md - sets the component size
 - api/link/ui.slider_$setvalue_other.md - called each time when component need to set value in related html input
-- api/link/ui.slider_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.slider_$skin_other.md - the method which will be called when skin is defined
 - api/ui.slider_$touchcapture_other.md - allows capturing touch gestures in touch limited mode.
 - api/link/ui.slider_$view_other.md - reference to top html element of the view
 - api/link/ui.slider_$width_other.md - current width of the view

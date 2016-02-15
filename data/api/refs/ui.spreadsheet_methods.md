@@ -8,22 +8,22 @@ Methods
 - api/link/ui.spreadsheet_bind.md - binds components
 - api/link/ui.spreadsheet_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.spreadsheet_callevent.md - calls an inner event
-- api/ui.spreadsheet_combinecells.md - 
+- api/ui.spreadsheet_combinecells.md - merges several adjacent cells
 - api/link/ui.spreadsheet_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.spreadsheet_destructor.md - destructs the calling object
 - api/link/ui.spreadsheet_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.spreadsheet_disable.md - disables the calling view (makes it dimmed and unclickable)
-- api/ui.spreadsheet_eachselectedcell.md - 
+- api/ui.spreadsheet_eachselectedcell.md - iterates over all selected cells in the table
 - api/link/ui.spreadsheet_enable.md - enables the calling view that was disabled by the 'disable' method
-- api/ui.spreadsheet_getcellvalue.md - 
+- api/ui.spreadsheet_getcellvalue.md - returns the value of the cell
 - api/link/ui.spreadsheet_getchildviews.md - returns child views of the calling component
-- api/ui.spreadsheet_getcolumn.md - 
+- api/ui.spreadsheet_getcolumn.md - returns the configuration object of the specified SpreadSheet column
 - api/link/ui.spreadsheet_getformview.md - returns master form for the input
 - api/link/ui.spreadsheet_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.spreadsheet_getparentview.md - returns the parent view of the component
-- api/ui.spreadsheet_getrow.md - 
-- api/ui.spreadsheet_getselectedid.md - 
-- api/ui.spreadsheet_getstyle.md - 
+- api/ui.spreadsheet_getrow.md - returns the row of the spreadsheet by id
+- api/ui.spreadsheet_getselectedid.md - returns the ids of selected cells
+- api/ui.spreadsheet_getstyle.md - returns the style set for the cell
 - api/link/ui.spreadsheet_gettopparentview.md - returns top parent view
 - api/link/ui.spreadsheet_hasevent.md - checks whether the component has the specified event
 - api/link/ui.spreadsheet_hide.md - hides the view
@@ -31,21 +31,21 @@ Methods
 - api/link/ui.spreadsheet_isenabled.md - checks whether the view is enabled
 - api/link/ui.spreadsheet_isvisible.md - checks whether the view is visible
 - api/link/ui.spreadsheet_mapevent.md - routes events from one object to another
-- api/ui.spreadsheet_redo.md - 
+- api/ui.spreadsheet_redo.md - remakes the action that was reverted by the undo action
 - api/link/ui.spreadsheet_reconstruct.md - rebuilds the layout
-- api/ui.spreadsheet_refresh.md - 
+- api/ui.spreadsheet_refresh.md - repaints either the whole spreadsheet or a certain element in it
 - api/link/ui.spreadsheet_removeview.md - removes view from layout-like component
-- api/ui.spreadsheet_reset.md - 
+- api/ui.spreadsheet_reset.md - resets the size of SpreadSheet to the specified set of columns and rows
 - api/link/ui.spreadsheet_resize.md - adjusts the view to a new size
 - api/link/ui.spreadsheet_resizechildren.md - resizes all children of the calling component
-- api/ui.spreadsheet_savecell.md - 
-- api/ui.spreadsheet_serialize.md - 
-- api/ui.spreadsheet_setcellvalue.md - 
-- api/ui.spreadsheet_setstyle.md - 
+- api/ui.spreadsheet_savecell.md - saves changes made in the cell
+- api/ui.spreadsheet_serialize.md - serializes data to a JSON object
+- api/ui.spreadsheet_setcellvalue.md - sets a value for the cell
+- api/ui.spreadsheet_setstyle.md - sets a style for a cell
 - api/link/ui.spreadsheet_show.md - makes the component visible
 - api/link/ui.spreadsheet_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
-- api/ui.spreadsheet_splitcell.md - 
-- api/ui.spreadsheet_undo.md - 
+- api/ui.spreadsheet_splitcell.md - splits the cell that was made by merging several cells
+- api/ui.spreadsheet_undo.md - reverts the made action
 - api/link/ui.spreadsheet_unbind.md - breaks "bind" link
 - api/link/ui.spreadsheet_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}

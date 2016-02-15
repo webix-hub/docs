@@ -2,9 +2,27 @@ ui.spreadsheet
 =============
 
 
-dummy stub
+{{memo A component for organizing, working with and storing data in tabular form. }}
 
-{{todo replace with real description. }}
+Webix SpreadSheet allows creating tables online, while keeping data locally. It's possible to import a ready table into
+an Excel document or export a table from Excel. The tables' appearance can be easily changed: you can customize the styles of colors, fonts and borders, set the necessary vertical and horizontal aligns, merge cells, rows and columns.
+
+The component provides a built-in functionality for mathematical expressions and supports resizing and localization of tables.
+
+###Constructor 
+
+~~~js
+var spreadsheet = webix.ui({
+	view:"spreadsheet",
+	data: base_data,
+	math:true
+});
+~~~
+
+### Where to start
+
+- [Overview of the SpreadSheet Widget](desktop/spreadsheet.md)
+- [Samples](http://localhost/spreadsheet/samples/)
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.layout.md">ui.layout</a>, <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
@@ -19,22 +37,22 @@ dummy stub
 - api/link/ui.spreadsheet_bind.md - binds components
 - api/link/ui.spreadsheet_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.spreadsheet_callevent.md - calls an inner event
-- api/ui.spreadsheet_combinecells.md - 
+- api/ui.spreadsheet_combinecells.md - merges several adjacent cells
 - api/link/ui.spreadsheet_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.spreadsheet_destructor.md - destructs the calling object
 - api/link/ui.spreadsheet_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.spreadsheet_disable.md - disables the calling view (makes it dimmed and unclickable)
-- api/ui.spreadsheet_eachselectedcell.md - 
+- api/ui.spreadsheet_eachselectedcell.md - iterates over all selected cells in the table
 - api/link/ui.spreadsheet_enable.md - enables the calling view that was disabled by the 'disable' method
-- api/ui.spreadsheet_getcellvalue.md - 
+- api/ui.spreadsheet_getcellvalue.md - returns the value of the cell
 - api/link/ui.spreadsheet_getchildviews.md - returns child views of the calling component
-- api/ui.spreadsheet_getcolumn.md - 
+- api/ui.spreadsheet_getcolumn.md - returns the configuration object of the specified SpreadSheet column
 - api/link/ui.spreadsheet_getformview.md - returns master form for the input
 - api/link/ui.spreadsheet_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.spreadsheet_getparentview.md - returns the parent view of the component
-- api/ui.spreadsheet_getrow.md - 
-- api/ui.spreadsheet_getselectedid.md - 
-- api/ui.spreadsheet_getstyle.md - 
+- api/ui.spreadsheet_getrow.md - returns the row of the spreadsheet by id
+- api/ui.spreadsheet_getselectedid.md - returns the ids of selected cells
+- api/ui.spreadsheet_getstyle.md - returns the style set for the cell
 - api/link/ui.spreadsheet_gettopparentview.md - returns top parent view
 - api/link/ui.spreadsheet_hasevent.md - checks whether the component has the specified event
 - api/link/ui.spreadsheet_hide.md - hides the view
@@ -42,21 +60,21 @@ dummy stub
 - api/link/ui.spreadsheet_isenabled.md - checks whether the view is enabled
 - api/link/ui.spreadsheet_isvisible.md - checks whether the view is visible
 - api/link/ui.spreadsheet_mapevent.md - routes events from one object to another
-- api/ui.spreadsheet_redo.md - 
+- api/ui.spreadsheet_redo.md - remakes the action that was reverted by the undo action
 - api/link/ui.spreadsheet_reconstruct.md - rebuilds the layout
-- api/ui.spreadsheet_refresh.md - 
+- api/ui.spreadsheet_refresh.md - repaints either the whole spreadsheet or a certain element in it
 - api/link/ui.spreadsheet_removeview.md - removes view from layout-like component
-- api/ui.spreadsheet_reset.md - 
+- api/ui.spreadsheet_reset.md - resets the size of SpreadSheet to the specified set of columns and rows
 - api/link/ui.spreadsheet_resize.md - adjusts the view to a new size
 - api/link/ui.spreadsheet_resizechildren.md - resizes all children of the calling component
-- api/ui.spreadsheet_savecell.md - 
-- api/ui.spreadsheet_serialize.md - 
-- api/ui.spreadsheet_setcellvalue.md - 
-- api/ui.spreadsheet_setstyle.md - 
+- api/ui.spreadsheet_savecell.md - saves changes made in the cell
+- api/ui.spreadsheet_serialize.md - serializes data to a JSON object
+- api/ui.spreadsheet_setcellvalue.md - sets a value for the cell
+- api/ui.spreadsheet_setstyle.md - sets a style for a cell
 - api/link/ui.spreadsheet_show.md - makes the component visible
 - api/link/ui.spreadsheet_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
-- api/ui.spreadsheet_splitcell.md - 
-- api/ui.spreadsheet_undo.md - 
+- api/ui.spreadsheet_splitcell.md - splits the cell that was made by merging several cells
+- api/ui.spreadsheet_undo.md - reverts the made action
 - api/link/ui.spreadsheet_unbind.md - breaks "bind" link
 - api/link/ui.spreadsheet_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}
@@ -66,16 +84,16 @@ dummy stub
 
 
 {{api
-- api/ui.spreadsheet_onafterselect_event.md - 
-- api/ui.spreadsheet_onbeforespan_event.md - 
-- api/ui.spreadsheet_onbeforesplit_event.md - 
+- api/ui.spreadsheet_onafterselect_event.md - fires after a cell has been selected
+- api/ui.spreadsheet_onbeforespan_event.md - fires before cells' are merged
+- api/ui.spreadsheet_onbeforesplit_event.md - fires before merged cells are splitted
 - api/link/ui.spreadsheet_onbindrequest_event.md - fires when the component is ready to receive data from the master component
-- api/ui.spreadsheet_oncellchange_event.md - 
-- api/ui.spreadsheet_oncomponentinit_event.md - 
-- api/ui.spreadsheet_ondataparse_event.md - 
-- api/ui.spreadsheet_ondataserialize_event.md - 
+- api/ui.spreadsheet_oncellchange_event.md - fires when a cell is changed
+- api/ui.spreadsheet_oncomponentinit_event.md - fires when the views that compose spreadsheet are initialized
+- api/ui.spreadsheet_ondataparse_event.md - fires when data parsing is started
+- api/ui.spreadsheet_ondataserialize_event.md - fires when serialization of data is stared
 - api/link/ui.spreadsheet_ondestruct_event.md - occurs when component destroyed
-- api/ui.spreadsheet_onreset_event.md - 
+- api/ui.spreadsheet_onreset_event.md - fires when the sizes of the spreadsheet were reset
 }}
 
 
@@ -85,7 +103,7 @@ dummy stub
 - api/link/ui.spreadsheet_animate_config.md - defines or disables view change animation.
 - api/link/ui.spreadsheet_borderless_config.md - used to hide the component borders
 - api/link/ui.spreadsheet_cols_config.md - array of views objects arranged horizontally
-- api/ui.spreadsheet_columncount_config.md - 
+- api/ui.spreadsheet_columncount_config.md - the number of columns in the SpreadSheet
 - api/link/ui.spreadsheet_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.spreadsheet_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.spreadsheet_disabled_config.md - indicates whether an item is enabled or not
@@ -104,9 +122,9 @@ dummy stub
 - api/link/ui.spreadsheet_paddingx_config.md - sets the right and left padding (applies the specified value to both sides)
 - api/link/ui.spreadsheet_paddingy_config.md - sets the top and bottom padding (applies the specified value to both sides)
 - api/link/ui.spreadsheet_responsive_config.md - enables responsive mode for horizontal layout
-- api/ui.spreadsheet_rowcount_config.md - 
+- api/ui.spreadsheet_rowcount_config.md - the number of rows in the SpreadSheet
 - api/link/ui.spreadsheet_rows_config.md - array of views objects arranged vertically
-- api/ui.spreadsheet_spans_config.md - 
+- api/ui.spreadsheet_spans_config.md - defines whether spans are allowed in the SpreadSheet
 - api/link/ui.spreadsheet_type_config.md - defines the layout borders
 - api/link/ui.spreadsheet_visiblebatch_config.md - sets the batch that will be shown initially
 - api/link/ui.spreadsheet_width_config.md - sets the width of the component
@@ -120,17 +138,17 @@ dummy stub
 
 
 {{api
-- api/ui.spreadsheet_$exportview_other.md - 
+- api/ui.spreadsheet_$exportview_other.md - the method that will be called when a view is exported
 - api/link/ui.spreadsheet_$getsize_other.md - returns the current size of the component
 - api/link/ui.spreadsheet_$height_other.md - current height of the view
 - api/ui.spreadsheet_$onload_other.md - 
-- api/ui.spreadsheet_$save_other.md - 
+- api/ui.spreadsheet_$save_other.md - the method that will be called when data is saved
 - api/link/ui.spreadsheet_$setsize_other.md - sets the component size
-- api/link/ui.spreadsheet_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.spreadsheet_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.spreadsheet_$view_other.md - reference to top html element of the view
 - api/link/ui.spreadsheet_$width_other.md - current width of the view
 - api/link/ui.spreadsheet_config_other.md - all options from initial component configuration
-- api/ui.spreadsheet_formathelpers_other.md - 
+- api/ui.spreadsheet_formathelpers_other.md - a collection of possible formats for a cell of SpreadSheet
 - api/link/ui.spreadsheet_name_other.md - indicates the name of the component (a read-only property)
 }}
 

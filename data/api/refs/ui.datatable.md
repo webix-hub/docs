@@ -202,7 +202,6 @@ var datatable = webix.ui({
 - api/ui.datatable_onafterselect_event.md - fires after a cell is selected
 - api/link/ui.datatable_onaftersort_event.md - fires after sorting dataset
 - api/ui.datatable_onafterunselect_event.md - 
-- api/ui.datatable_onafterunselect_event.md - fires after a cell is unselected
 - api/ui.datatable_onareadrag_event.md - 
 - api/link/ui.datatable_onbeforeadd_event.md - fires before adding item to datastore
 - api/ui.datatable_onbeforeareaadd_event.md - 
@@ -376,7 +375,7 @@ var datatable = webix.ui({
 - api/link/ui.datatable_$height_other.md - current height of the view
 - api/link/ui.datatable_$scope_other.md - scope for resolving event and method names
 - api/link/ui.datatable_$setsize_other.md - sets the component size
-- api/link/ui.datatable_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.datatable_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.datatable_$view_other.md - reference to top html element of the view
 - api/link/ui.datatable_$width_other.md - current width of the view
 - api/link/ui.datatable_config_other.md - all options from initial component configuration

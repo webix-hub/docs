@@ -144,7 +144,7 @@ webix.ui({
 - api/link/ui.pager_$height_other.md - current height of the view
 - api/link/ui.pager_$scope_other.md - scope for resolving event and method names
 - api/link/ui.pager_$setsize_other.md - sets the component size
-- api/link/ui.pager_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.pager_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.pager_$view_other.md - reference to top html element of the view
 - api/link/ui.pager_$width_other.md - current width of the view
 - api/link/ui.pager_config_other.md - all options from initial component configuration

@@ -29,4 +29,4 @@ webix.ui({
 @descr:
 The property should not be mixed with the [label](api/refs/ui.label.md) control. 
 
-Morevoer, label control can as well have a label, but there's not much sence in it. 
+Moreover, label control can have a label as well, but there's no sense in it. 

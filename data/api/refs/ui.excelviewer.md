@@ -152,6 +152,7 @@ dummy stub
 
 {{api
 - api/link/ui.excelviewer_onafteradd_event.md - fires after adding item to datastore
+- api/link/ui.excelviewer_onafterareaadd_event.md - 
 - api/link/ui.excelviewer_onafterblockselect_event.md - event occurs after block selection
 - api/link/ui.excelviewer_onaftercolumndrop_event.md - fires after the column has been dragged and dropped to the target position
 - api/link/ui.excelviewer_onaftercolumndroporder_event.md - fires after the column order was changed with the help of drag-and-drop
@@ -166,8 +167,9 @@ dummy stub
 - api/link/ui.excelviewer_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.excelviewer_onafterselect_event.md - fires after a cell is selected
 - api/link/ui.excelviewer_onaftersort_event.md - fires after sorting dataset
-- api/link/ui.excelviewer_onafterunselect_event.md - fires after a cell is unselected
+- api/link/ui.excelviewer_onareadrag_event.md - 
 - api/link/ui.excelviewer_onbeforeadd_event.md - fires before adding item to datastore
+- api/link/ui.excelviewer_onbeforeareaadd_event.md - 
 - api/link/ui.excelviewer_onbeforeblockselect_event.md - event occurs before block selection
 - api/link/ui.excelviewer_onbeforecolumndrag_event.md - fires the monent you start dragging the column from its source potition
 - api/link/ui.excelviewer_onbeforecolumndrop_event.md - fires the moment you drop the column to its target position
@@ -340,7 +342,7 @@ dummy stub
 - api/link/ui.excelviewer_$height_other.md - current height of the view
 - api/link/ui.excelviewer_$scope_other.md - scope for resolving event and method names
 - api/link/ui.excelviewer_$setsize_other.md - sets the component size
-- api/link/ui.excelviewer_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.excelviewer_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.excelviewer_$view_other.md - reference to top html element of the view
 - api/link/ui.excelviewer_$width_other.md - current width of the view
 - api/link/ui.excelviewer_config_other.md - all options from initial component configuration

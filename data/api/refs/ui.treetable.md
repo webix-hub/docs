@@ -189,6 +189,7 @@ var treetable = webix.ui({
 
 {{api
 - api/link/ui.treetable_onafteradd_event.md - fires after adding item to datastore
+- api/link/ui.treetable_onafterareaadd_event.md - 
 - api/link/ui.treetable_onafterblockselect_event.md - event occurs after block selection
 - api/link/ui.treetable_onafterclose_event.md - fires after the branch has been closed
 - api/link/ui.treetable_onaftercolumndrop_event.md - fires after the column has been dragged and dropped to the target position
@@ -205,8 +206,9 @@ var treetable = webix.ui({
 - api/link/ui.treetable_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.treetable_onafterselect_event.md - fires after a cell is selected
 - api/link/ui.treetable_onaftersort_event.md - fires after sorting dataset
-- api/link/ui.treetable_onafterunselect_event.md - fires after a cell is unselected
+- api/link/ui.treetable_onareadrag_event.md - 
 - api/link/ui.treetable_onbeforeadd_event.md - fires before adding item to datastore
+- api/link/ui.treetable_onbeforeareaadd_event.md - 
 - api/link/ui.treetable_onbeforeblockselect_event.md - event occurs before block selection
 - api/link/ui.treetable_onbeforeclose_event.md - fires the moment you attempt to close the tree branch
 - api/link/ui.treetable_onbeforecolumndrag_event.md - fires the monent you start dragging the column from its source potition
@@ -380,7 +382,7 @@ var treetable = webix.ui({
 - api/link/ui.treetable_$height_other.md - current height of the view
 - api/link/ui.treetable_$scope_other.md - scope for resolving event and method names
 - api/link/ui.treetable_$setsize_other.md - sets the component size
-- api/link/ui.treetable_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.treetable_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.treetable_$view_other.md - reference to top html element of the view
 - api/link/ui.treetable_$width_other.md - current width of the view
 - api/link/ui.treetable_config_other.md - all options from initial component configuration

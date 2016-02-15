@@ -12,7 +12,7 @@ Others
 - api/link/ui.combo_$scope_other.md - scope for resolving event and method names
 - api/link/ui.combo_$setsize_other.md - sets the component size
 - api/link/ui.combo_$setvalue_other.md - called each time when component need to set value in related html input
-- api/link/ui.combo_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.combo_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.combo_$view_other.md - reference to top html element of the view
 - api/link/ui.combo_$width_other.md - current width of the view
 - api/link/ui.combo_config_other.md - all options from initial component configuration
