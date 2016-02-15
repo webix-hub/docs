@@ -35,7 +35,7 @@ webix.ui({
 });		
 ~~~
 
-{{sample 02_toolbar/04_toolbar_align.html}}
+{{editor http://webix.com/snippet/33afc563	Buttons: Alignment}}
 
 
 Specify the ID of a toolbar as well as ID-s of all the necessary controls if you want to work with them later. 
@@ -51,7 +51,7 @@ There exists a possibility to specify [common configuration](desktop/common_conf
 
 <img src="desktop/image_buttons.png"/>
 
-{{sample 02_toolbar/07_toolbar_image_button.html }}
+{{editor http://webix.com/snippet/84b5b875	Buttons: Type 'image'}}
 
 Differently-sized buttons can be included into the toolbar with the help of a custom function:
 
@@ -81,7 +81,7 @@ Icons can be nested into all the library conponents. Within toolbar, icon button
 
 <img src="desktop/toolbar_icons.png"/>
 
-{{sample 02_toolbar/11_toolbar_icons.html }}
+{{editor http://webix.com/snippet/e4e8649d	Buttons: Type 'icon'}}
 
 Learn more about icon types in the [dedicated chapter of the manual](desktop/icon_types.md). 
 
