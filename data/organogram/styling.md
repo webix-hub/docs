@@ -87,5 +87,6 @@ You can see the result in the picture below:
 {{sample
 60_pro/07_organogram/05_style.html
 }}
+{{editor http://webix.com/snippet/fbe7ad3f	Styling}}
 
 @edition:pro

@@ -153,9 +153,7 @@ var orgChart = new webix.ui({
 });
 ~~~
 
-{{sample
-60_pro/07_organogram/07_templates.html
-}}
+{{editor http://webix.com/snippet/61a244cd  Templates}}
 
 
 Creating list blocks
@@ -198,10 +196,8 @@ var orgChart = new webix.ui({
     ]
 });
 ~~~
- 
-{{sample
-60_pro/07_organogram/02_list.html
-}}
+
+{{editor http://webix.com/snippet/c29b691f  Lists}}
 
 ###Customizing List Blocks
 
@@ -223,7 +219,7 @@ webix.ui({
 });    
 ~~~
 
-{{sample 60_pro/07_organogram/08_list_blocks.html}}
+{{editor http://webix.com/snippet/99b92ec1  Lists Blocks}}
 
 
 

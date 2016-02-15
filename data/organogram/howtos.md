@@ -35,9 +35,7 @@ var orgChart = new webix.ui({
 });
 ~~~
 
-{{sample
-60_pro/07_organogram/02_list.html
-}}
+{{editor http://webix.com/snippet/c29b691f  Lists}}
 
 
 
@@ -62,9 +60,7 @@ var orgChart = new webix.ui({
 });
 ~~~
 
-{{sample
-60_pro/07_organogram/07_templates.html
-}}
+{{editor http://webix.com/snippet/61a244cd  Templates}}
 
 How to specify a custom style for items?
 ------------------------
@@ -114,8 +110,6 @@ orgChart = new webix.ui({
 </script>
 ~~~
 
-{{sample
-60_pro/07_organogram/05_style.html
-}}
+{{editor http://webix.com/snippet/fbe7ad3f  Styling}}
 
 @edition:pro

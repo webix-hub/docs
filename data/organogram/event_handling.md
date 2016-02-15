@@ -83,8 +83,6 @@ $$("orgChartId").attachEvent("onAfterSelect",function(id){
 })
 ~~~
 
-{{sample
-60_pro/07_organogram/06_events.html
-}}
+{{editor http://webix.com/snippet/f58ed56c  Events}}
 
 @edition:pro

@@ -93,7 +93,7 @@ var orgChart = new webix.ui({
 //or 
 orgChart.parse(chart_data)
 ~~~
-{{sample 60_pro/07_organogram/01_basic.html}}
+{{editor http://webix.com/snippet/d9458920	Organization Chart}}
 
 
 Loading from a data file
