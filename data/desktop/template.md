@@ -26,9 +26,7 @@ webix.ui({
 });
 ~~~
 
-{{sample
-80_docs/default_template.html
-}}
+{{editor http://webix.com/snippet/6ffd26e7  Default & external template}}
 
 ###External Template
 
@@ -48,7 +46,7 @@ webix.ui({
 }); 
 ~~~
 
-{{sample 80_docs/default_template.html }}
+{{editor http://webix.com/snippet/6ffd26e7  Default & external template}}
 
 - the **template** property that points to the container ID prefixed by "html->". The container should be invisible initially:
 
@@ -60,7 +58,7 @@ webix.ui({
 { template: "html->my_box1", autoheight: true },
 ~~~
 
-{{sample 04_template/02_autoheight.html}} 
+{{editor http://webix.com/snippet/12f06c90  Autosizing to Content}}
 
 
 As a result, contents from HTML is placed inside the view. 
@@ -131,7 +129,7 @@ If a template is used as an individual data item (as shown above) the data field
 }
 ~~~
 
-{{sample 26_carousel/01_init.html}}
+{{editor http://webix.com/snippet/b253dc2c  Carousel Initialization}}
 
 {{note
 The rules of data templating can be studied in detail in the [dedicated documentation article](desktop/html_templates.md).
@@ -195,4 +193,4 @@ resort to [borderless](desktop/borders.md) layout design.
 {view: "template", template: "Header template", type: "section" }
 ~~~
 
-{{sample 80_docs/template_types.html}}
+{{editor http://webix.com/snippet/9e1fd061  Template Types}}
