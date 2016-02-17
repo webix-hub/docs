@@ -1,1 +1,1 @@
-@link: api/ui.chart_locate.md
+@link: api/renderstack_locate.md

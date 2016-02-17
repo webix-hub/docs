@@ -3,7 +3,6 @@ Properties
 
 {{api
 - api/link/ui.treetable_animate_config.md - defines or disables view change animation.
-- api/link/ui.treetable_areaborderwidth_config.md - 
 - api/link/ui.treetable_areaselect_config.md - 
 - api/link/ui.treetable_autoconfig_config.md - datatable adjust configuration to the data
 - api/link/ui.treetable_autoheight_config.md - adjusts Datatable size to the its content vertically
@@ -93,7 +92,6 @@ Properties
 
 @index:
 - api/link/ui.treetable_animate_config.md
-- api/link/ui.treetable_areaborderwidth_config.md
 - api/link/ui.treetable_areaselect_config.md
 - api/link/ui.treetable_autoconfig_config.md
 - api/link/ui.treetable_autoheight_config.md

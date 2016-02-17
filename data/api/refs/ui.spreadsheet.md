@@ -74,7 +74,7 @@ var spreadsheet = webix.ui({
 - api/link/ui.spreadsheet_show.md - makes the component visible
 - api/link/ui.spreadsheet_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
 - api/ui.spreadsheet_splitcell.md - splits the cell that was made by merging several cells
-- api/ui.spreadsheet_undo.md - reverts the made action
+- api/ui.spreadsheet_undo.md - reverts the last change made to an item
 - api/link/ui.spreadsheet_unbind.md - breaks "bind" link
 - api/link/ui.spreadsheet_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}

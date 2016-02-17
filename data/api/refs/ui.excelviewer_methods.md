@@ -68,7 +68,7 @@ Methods
 - api/link/ui.excelviewer_getscrollstate.md - returns the current position of scrolls
 - api/link/ui.excelviewer_getselectedid.md - returns the selected elements' ids
 - api/link/ui.excelviewer_getselecteditem.md - gets an object of the selected data item
-- api/link/ui.excelviewer_getspan.md - 
+- api/link/ui.excelviewer_getspan.md - returns the config array for a span or null, if there are no spans
 - api/link/ui.excelviewer_getstate.md - returns the current state of the view
 - api/link/ui.excelviewer_getsubview.md - returns subview of the item with the given id
 - api/link/ui.excelviewer_gettext.md - returns text value of a cell

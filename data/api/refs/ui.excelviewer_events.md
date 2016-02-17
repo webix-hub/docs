@@ -18,6 +18,7 @@ Events
 - api/link/ui.excelviewer_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.excelviewer_onafterselect_event.md - fires after a cell is selected
 - api/link/ui.excelviewer_onaftersort_event.md - fires after sorting dataset
+- api/link/ui.excelviewer_onafterunselect_event.md - fires after a cell is unselected
 - api/link/ui.excelviewer_onareadrag_event.md - 
 - api/link/ui.excelviewer_onbeforeadd_event.md - fires before adding item to datastore
 - api/link/ui.excelviewer_onbeforeareaadd_event.md - 
@@ -97,6 +98,7 @@ Events
 - api/link/ui.excelviewer_onafterscroll_event.md
 - api/link/ui.excelviewer_onafterselect_event.md
 - api/link/ui.excelviewer_onaftersort_event.md
+- api/link/ui.excelviewer_onafterunselect_event.md
 - api/link/ui.excelviewer_onareadrag_event.md
 - api/link/ui.excelviewer_onbeforeadd_event.md
 - api/link/ui.excelviewer_onbeforeareaadd_event.md

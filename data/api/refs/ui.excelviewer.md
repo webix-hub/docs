@@ -79,7 +79,7 @@ dummy stub
 - api/link/ui.excelviewer_getscrollstate.md - returns the current position of scrolls
 - api/link/ui.excelviewer_getselectedid.md - returns the selected elements' ids
 - api/link/ui.excelviewer_getselecteditem.md - gets an object of the selected data item
-- api/link/ui.excelviewer_getspan.md - 
+- api/link/ui.excelviewer_getspan.md - returns the config array for a span or null, if there are no spans
 - api/link/ui.excelviewer_getstate.md - returns the current state of the view
 - api/link/ui.excelviewer_getsubview.md - returns subview of the item with the given id
 - api/link/ui.excelviewer_gettext.md - returns text value of a cell
@@ -167,6 +167,7 @@ dummy stub
 - api/link/ui.excelviewer_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.excelviewer_onafterselect_event.md - fires after a cell is selected
 - api/link/ui.excelviewer_onaftersort_event.md - fires after sorting dataset
+- api/link/ui.excelviewer_onafterunselect_event.md - fires after a cell is unselected
 - api/link/ui.excelviewer_onareadrag_event.md - 
 - api/link/ui.excelviewer_onbeforeadd_event.md - fires before adding item to datastore
 - api/link/ui.excelviewer_onbeforeareaadd_event.md - 
@@ -234,7 +235,6 @@ dummy stub
 
 {{api
 - api/link/ui.excelviewer_animate_config.md - defines or disables view change animation.
-- api/link/ui.excelviewer_areaborderwidth_config.md - 
 - api/link/ui.excelviewer_areaselect_config.md - 
 - api/link/ui.excelviewer_autoconfig_config.md - datatable adjust configuration to the data
 - api/link/ui.excelviewer_autoheight_config.md - adjusts Datatable size to the its content vertically

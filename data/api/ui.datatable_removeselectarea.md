@@ -20,3 +20,7 @@ if the area_name parameter isn't passed, the method removes the last unnamed sel
 @relatedapi:
 - api/ui.datatable_addselectarea.md
 - api/ui.datatable_getselectarea.md
+- api/ui.datatable_getallselectareas.md
+
+@related:
+datatable/area_selection.md

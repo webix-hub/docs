@@ -20,6 +20,7 @@ Events
 - api/link/ui.treetable_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.treetable_onafterselect_event.md - fires after a cell is selected
 - api/link/ui.treetable_onaftersort_event.md - fires after sorting dataset
+- api/link/ui.treetable_onafterunselect_event.md - fires after a cell is unselected
 - api/link/ui.treetable_onareadrag_event.md - 
 - api/link/ui.treetable_onbeforeadd_event.md - fires before adding item to datastore
 - api/link/ui.treetable_onbeforeareaadd_event.md - 
@@ -103,6 +104,7 @@ Events
 - api/link/ui.treetable_onafterscroll_event.md
 - api/link/ui.treetable_onafterselect_event.md
 - api/link/ui.treetable_onaftersort_event.md
+- api/link/ui.treetable_onafterunselect_event.md
 - api/link/ui.treetable_onareadrag_event.md
 - api/link/ui.treetable_onbeforeadd_event.md
 - api/link/ui.treetable_onbeforeareaadd_event.md

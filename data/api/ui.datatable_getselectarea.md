@@ -33,3 +33,7 @@ The returned object of the select area contains the following parameters:
 @relatedapi:
 - api/ui.datatable_addselectarea.md
 - api/ui.datatable_removeselectarea.md
+- api/ui.datatable_getallselectareas.md
+
+@related:
+datatable/area_selection.md

@@ -23,23 +23,22 @@ Initialization of a Bar Chart
 }}
 ~~~js
  webix.ui({
-            view:"chart",
-            type:"bar",
-            value:"#sales#",
-            color:"#f6960a",
-            border:true,
-            xAxis:{
-                template:"'#year#"
-            },
-            yAxis:{
-                start:0,
-                end:100,
-                step:10,
-                ...
-                }
-            },
-            data: dataset
-        });
+ 	view:"chart",
+ 	type:"bar",
+ 	value:"#sales#",
+ 	color:"#f6960a",
+ 	border:true,
+ 	xAxis:{
+ 		template:"'#year#"
+ 	},
+ 	yAxis:{
+ 		start:0,
+ 		end:100,
+ 		step:10,
+ 		...
+ 	},
+ 	data: dataset
+});
 ~~~ 
 {{sample
 	08_chart/01_initialization/01_load_xml.html
@@ -51,6 +50,7 @@ To learn about all the chart properties, please refer to the [corresponding chap
 ##Working with Chart
 
 - [Chart Types](desktop/chart_types.md)
+- [Range Chart](desktop/range_chart.md)
 - [Setting Chart Scales](desktop/chart_scales.md)
 - [Chart Series - Comparison Charts](desktop/chart_series.md)
 - [Setting Legend for a Chart](desktop/chart_legend.md)
@@ -73,6 +73,7 @@ To learn about all the chart properties, please refer to the [corresponding chap
 
 @index:
   - desktop/chart_types.md
+  - desktop/range_chart.md
   - desktop/chart_scales.md
   - desktop/chart_series.md
   - desktop/chart_operations.md

@@ -105,6 +105,11 @@ table.webixtoc td{
         <td>a structured table of 2 columns that presents 'name:value' pairs for a list of properties</td>
     </tr>
     <tr>
+    	<td style="width:25px;">  <img src="api/toc/rangechart.png"/> </td>
+        <td style="width:110px !important;">api/refs/ui.rangechart.md </td>
+        <td>a chart for detailed displaying of data contained a frame</td>
+    </tr>
+    <tr>
     	<td> <img src="api/toc/tree.png"/> </td>
         <td> api/refs/ui.tree.md </td>
         <td>a hierarchical structure of nodes</td>
@@ -480,6 +485,7 @@ table.webixtoc td{
 - api/refs/ui.portlet.md
 - api/refs/ui.property.md
 - api/refs/ui.radio.md
+- api/refs/ui.rangechart.md
 - api/refs/ui.rangeslider.md
 - api/refs/ui.resizer.md
 - api/refs/ui.richselect.md
