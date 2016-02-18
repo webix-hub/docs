@@ -74,7 +74,8 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
                     <li><a href="desktop/editing.md">Controls for Editing</a></li>
                     <li>desktop/paging.md</li>
                     <li>desktop/dnd.md</li>
-                    <li>desktop/clipboard.md</li>                   
+                    <li>desktop/clipboard.md</li>
+                    <li>desktop/undo.md</li>
             </ul>
         </td>
         <td class='topic_description'>Covers techniques for performing general and advanced operations under data, such as adding, deleting, sorting, filtering etc.</td>

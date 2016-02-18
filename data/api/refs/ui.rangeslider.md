@@ -99,6 +99,7 @@ var rangeslider = webix.ui({
 - api/link/ui.rangeslider_align_config.md - the alignment of the control within the parent container
 - api/link/ui.rangeslider_animate_config.md - defines or disables view change animation.
 - api/link/ui.rangeslider_attributes_config.md - sets an hash of HTML input attributes that will be parsed for the Webix input control
+- api/link/ui.rangeslider_autowidth_config.md - adjusts button to its text content
 - api/link/ui.rangeslider_borderless_config.md - used to hide the component borders
 - api/link/ui.rangeslider_bottomlabel_config.md - sets a label under a control
 - api/link/ui.rangeslider_bottompadding_config.md - sets the bottom offset of the control input
@@ -116,7 +117,7 @@ var rangeslider = webix.ui({
 - api/link/ui.rangeslider_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.rangeslider_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.rangeslider_label_config.md - the text label of the control
-- api/link/ui.rangeslider_labelposition_config.md - positions label in relation the control
+- api/link/ui.rangeslider_labelposition_config.md - positions label in relation to the control
 - api/link/ui.rangeslider_labelwidth_config.md - the width of the label
 - api/link/ui.rangeslider_max_config.md - max value of slider
 - api/link/ui.rangeslider_maxheight_config.md - sets the maximum height for the view
@@ -157,12 +158,12 @@ var rangeslider = webix.ui({
 - api/link/ui.rangeslider_$height_other.md - current height of the view
 - api/link/ui.rangeslider_$render_other.md - code called after rending control
 - api/link/ui.rangeslider_$rendericon_other.md - renders icon for the control
-- api/link/ui.rangeslider_$renderinput_other.md - renders html for the input
+- api/link/ui.rangeslider_$renderinput_other.md - 
 - api/link/ui.rangeslider_$renderlabel_other.md - renders html for the label
 - api/link/ui.rangeslider_$scope_other.md - scope for resolving event and method names
 - api/link/ui.rangeslider_$setsize_other.md - sets the component size
 - api/link/ui.rangeslider_$setvalue_other.md - called each time when component need to set value in related html input
-- api/link/ui.rangeslider_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.rangeslider_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.rangeslider_$touchcapture_other.md - allows capturing touch gestures in touch limited mode.
 - api/link/ui.rangeslider_$view_other.md - reference to top html element of the view
 - api/link/ui.rangeslider_$width_other.md - current width of the view

@@ -6,7 +6,7 @@ ui.headerlayout
 
 The component consists of cells arranged vertically or horizontally. The header is an optional part of the cell, i.e. in one and the same layout some cells can be with headers, some cells - without. By clicking on the header the user can collapse/expand the related cell. Check [layout](desktop/layout.md) documentation for more detailed description.
 
-### Constructor
+#### Constructor
 
 ~~~js
 var headerlayout = webix.ui({
@@ -119,7 +119,7 @@ var headerlayout = webix.ui({
 - api/link/ui.headerlayout_$getsize_other.md - returns the current size of the component
 - api/link/ui.headerlayout_$height_other.md - current height of the view
 - api/link/ui.headerlayout_$setsize_other.md - sets the component size
-- api/link/ui.headerlayout_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.headerlayout_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.headerlayout_$view_other.md - reference to top html element of the view
 - api/link/ui.headerlayout_$width_other.md - current width of the view
 - api/link/ui.headerlayout_config_other.md - all options from initial component configuration

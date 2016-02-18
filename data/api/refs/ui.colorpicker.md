@@ -4,7 +4,7 @@ ui.colorpicker
 
 {{memo A control for selecting a color from a swatch palette. }}
 
-The component handles RGB, HSL, and hex formats and allows setting custom colors blocks. Check [colorpicker](desktop/colorpicker.md) documentation for more detailed description.
+The component handles RGB, HSL and hex formats and allows setting custom colors blocks. Check [colorpicker](desktop/colorpicker.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -99,6 +99,7 @@ var colorpicker = webix.ui({
 - api/link/ui.colorpicker_align_config.md - the alignment of the control within the parent container
 - api/link/ui.colorpicker_animate_config.md - defines or disables view change animation.
 - api/link/ui.colorpicker_attributes_config.md - sets an hash of HTML input attributes that will be parsed for the Webix input control
+- api/link/ui.colorpicker_autowidth_config.md - adjusts button to its text content
 - api/link/ui.colorpicker_borderless_config.md - used to hide the component borders
 - api/link/ui.colorpicker_bottomlabel_config.md - sets a label under a control
 - api/link/ui.colorpicker_bottompadding_config.md - sets the bottom offset of the control input
@@ -119,7 +120,7 @@ var colorpicker = webix.ui({
 - api/link/ui.colorpicker_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.colorpicker_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.colorpicker_label_config.md - the text label of the control
-- api/link/ui.colorpicker_labelposition_config.md - positions label in relation the control
+- api/link/ui.colorpicker_labelposition_config.md - positions label in relation to the control
 - api/link/ui.colorpicker_labelwidth_config.md - the width of the label
 - api/link/ui.colorpicker_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.colorpicker_maxwidth_config.md - sets the maximum width for the view
@@ -158,12 +159,12 @@ var colorpicker = webix.ui({
 - api/link/ui.colorpicker_$height_other.md - current height of the view
 - api/link/ui.colorpicker_$render_other.md - code called after rending control
 - api/link/ui.colorpicker_$rendericon_other.md - renders icon for the control
-- api/link/ui.colorpicker_$renderinput_other.md - renders html for the input
+- api/link/ui.colorpicker_$renderinput_other.md - 
 - api/link/ui.colorpicker_$renderlabel_other.md - renders html for the label
 - api/link/ui.colorpicker_$scope_other.md - scope for resolving event and method names
 - api/link/ui.colorpicker_$setsize_other.md - sets the component size
 - api/link/ui.colorpicker_$setvalue_other.md - called each time when component need to set value in related html input
-- api/link/ui.colorpicker_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.colorpicker_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.colorpicker_$view_other.md - reference to top html element of the view
 - api/link/ui.colorpicker_$width_other.md - current width of the view
 - api/link/ui.colorpicker_config_other.md - all options from initial component configuration

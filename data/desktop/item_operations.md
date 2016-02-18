@@ -23,5 +23,6 @@ in functionality. They are as follows:
 - desktop/dnd.md
 - desktop/clipboard.md
 - desktop/grouping.md
+- desktop/undo.md
 }}
 

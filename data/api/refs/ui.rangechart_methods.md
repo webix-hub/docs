@@ -1,0 +1,125 @@
+Methods
+=======
+
+{{api
+- api/link/ui.rangechart_add.md - adds an item to the store
+- api/link/ui.rangechart_addseries.md - adds an additional graph to the chart
+- api/link/ui.rangechart_adjust.md - adjusts the component to the size of the parent HTML container
+- api/link/ui.rangechart_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.rangechart_bind.md - binds components
+- api/link/ui.rangechart_blockevent.md - temporarily blocks triggering of ALL events of the calling object
+- api/link/ui.rangechart_callevent.md - calls an inner event
+- api/link/ui.rangechart_clearall.md - removes all items from the component
+- api/link/ui.rangechart_clearcanvas.md - clears the component canvas
+- api/link/ui.rangechart_count.md - returns the number of currently visible items
+- api/link/ui.rangechart_define.md - redefines a single configuration property (or a hash of properties)
+- api/link/ui.rangechart_destructor.md - destructs the calling object
+- api/link/ui.rangechart_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
+- api/link/ui.rangechart_disable.md - disables the calling view (makes it dimmed and unclickable)
+- api/link/ui.rangechart_enable.md - enables the calling view that was disabled by the 'disable' method
+- api/link/ui.rangechart_exists.md - checks whether an item with the specified id exists
+- api/link/ui.rangechart_filter.md - filters the component
+- api/link/ui.rangechart_find.md - returns rows that match the criterion
+- api/link/ui.rangechart_getchildviews.md - returns child views of the calling component
+- api/link/ui.rangechart_getfirstid.md - returns the ID of the first item
+- api/link/ui.rangechart_getformview.md - returns master form for the input
+- api/ui.rangechart_getframedata.md - 
+- api/ui.rangechart_getframerange.md - 
+- api/link/ui.rangechart_getidbyindex.md - returns the id of the item with the specified index
+- api/link/ui.rangechart_getindexbyid.md - returns the index of the item with the specified id
+- api/link/ui.rangechart_getitem.md - gets the object of the data item with the specified id
+- api/link/ui.rangechart_getlastid.md - returns the id of the last item
+- api/link/ui.rangechart_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
+- api/link/ui.rangechart_getnode.md - returns the main HTML container for the calling object
+- api/link/ui.rangechart_getparentview.md - returns the parent view of the component
+- api/link/ui.rangechart_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
+- api/link/ui.rangechart_gettopparentview.md - returns top parent view
+- api/link/ui.rangechart_group.md - groups data by the specified data property
+- api/link/ui.rangechart_hasevent.md - checks whether the component has the specified event
+- api/link/ui.rangechart_hide.md - hides the view
+- api/link/ui.rangechart_hideseries.md - hides the chosen graph in the chart with several graphs
+- api/link/ui.rangechart_isenabled.md - checks whether the view is enabled
+- api/link/ui.rangechart_isvisible.md - checks whether the view is visible
+- api/link/ui.rangechart_load.md - loads data from an external data source.
+- api/link/ui.rangechart_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
+- api/link/ui.rangechart_locate.md - gets the id of an item from the specified HTML event
+- api/link/ui.rangechart_mapevent.md - routes events from one object to another
+- api/link/ui.rangechart_parse.md - loads data to the component from an inline data source
+- api/link/ui.rangechart_refresh.md - repaints the whole view or a certain item
+- api/link/ui.rangechart_remove.md - removes the specified item from datastore
+- api/link/ui.rangechart_removeallseries.md - removes all series from the chart
+- api/link/ui.rangechart_render.md - renders the specified item or the whole component
+- api/link/ui.rangechart_resize.md - adjusts the view to a new size
+- api/link/ui.rangechart_serialize.md - serializes data to a JSON object
+- api/ui.rangechart_setframerange.md - 
+- api/link/ui.rangechart_show.md - makes the component visible
+- api/link/ui.rangechart_showseries.md - shows the hidden graph in the chart
+- api/link/ui.rangechart_sort.md - sorts datastore
+- api/link/ui.rangechart_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.rangechart_unbind.md - breaks "bind" link
+- api/link/ui.rangechart_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
+- api/link/ui.rangechart_ungroup.md - ungroups data
+- api/link/ui.rangechart_updateitem.md - sets properties of the data item
+}}
+
+@index:
+- api/link/ui.rangechart_add.md
+- api/link/ui.rangechart_addseries.md
+- api/link/ui.rangechart_adjust.md
+- api/link/ui.rangechart_attachevent.md
+- api/link/ui.rangechart_bind.md
+- api/link/ui.rangechart_blockevent.md
+- api/link/ui.rangechart_callevent.md
+- api/link/ui.rangechart_clearall.md
+- api/link/ui.rangechart_clearcanvas.md
+- api/link/ui.rangechart_count.md
+- api/link/ui.rangechart_define.md
+- api/link/ui.rangechart_destructor.md
+- api/link/ui.rangechart_detachevent.md
+- api/link/ui.rangechart_disable.md
+- api/link/ui.rangechart_enable.md
+- api/link/ui.rangechart_exists.md
+- api/link/ui.rangechart_filter.md
+- api/link/ui.rangechart_find.md
+- api/link/ui.rangechart_getchildviews.md
+- api/link/ui.rangechart_getfirstid.md
+- api/link/ui.rangechart_getformview.md
+- api/ui.rangechart_getframedata.md
+- api/ui.rangechart_getframerange.md
+- api/link/ui.rangechart_getidbyindex.md
+- api/link/ui.rangechart_getindexbyid.md
+- api/link/ui.rangechart_getitem.md
+- api/link/ui.rangechart_getlastid.md
+- api/link/ui.rangechart_getnextid.md
+- api/link/ui.rangechart_getnode.md
+- api/link/ui.rangechart_getparentview.md
+- api/link/ui.rangechart_getprevid.md
+- api/link/ui.rangechart_gettopparentview.md
+- api/link/ui.rangechart_group.md
+- api/link/ui.rangechart_hasevent.md
+- api/link/ui.rangechart_hide.md
+- api/link/ui.rangechart_hideseries.md
+- api/link/ui.rangechart_isenabled.md
+- api/link/ui.rangechart_isvisible.md
+- api/link/ui.rangechart_load.md
+- api/link/ui.rangechart_loadnext.md
+- api/link/ui.rangechart_locate.md
+- api/link/ui.rangechart_mapevent.md
+- api/link/ui.rangechart_parse.md
+- api/link/ui.rangechart_refresh.md
+- api/link/ui.rangechart_remove.md
+- api/link/ui.rangechart_removeallseries.md
+- api/link/ui.rangechart_render.md
+- api/link/ui.rangechart_resize.md
+- api/link/ui.rangechart_serialize.md
+- api/ui.rangechart_setframerange.md
+- api/link/ui.rangechart_show.md
+- api/link/ui.rangechart_showseries.md
+- api/link/ui.rangechart_sort.md
+- api/link/ui.rangechart_sync.md
+- api/link/ui.rangechart_unbind.md
+- api/link/ui.rangechart_unblockevent.md
+- api/link/ui.rangechart_ungroup.md
+- api/link/ui.rangechart_updateitem.md
+
+

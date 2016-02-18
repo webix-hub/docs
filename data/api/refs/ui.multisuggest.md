@@ -30,7 +30,6 @@ webix.ui({
 - [Overview of the Multisuggest Control](desktop/suggest.md#advancedsuggestlists)
 - [Samples](http://docs.webix.com/samples/60_pro/02_form/02_multiselect.html)
 
-
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.suggest.md">ui.suggest</a>, <a href="api/refs/ui.popup.md">ui.popup</a>, <a href="api/refs/ui.window.md">ui.window</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/movable.md">Movable</a>, <a href="api/refs/modality.md">Modality</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
@@ -165,7 +164,7 @@ webix.ui({
 - api/link/ui.multisuggest_$height_other.md - current height of the view
 - api/link/ui.multisuggest_$scope_other.md - scope for resolving event and method names
 - api/link/ui.multisuggest_$setsize_other.md - sets the component size
-- api/link/ui.multisuggest_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.multisuggest_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.multisuggest_$view_other.md - reference to top html element of the view
 - api/link/ui.multisuggest_$width_other.md - current width of the view
 - api/link/ui.multisuggest_config_other.md - all options from initial component configuration

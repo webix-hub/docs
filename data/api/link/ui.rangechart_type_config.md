@@ -1,0 +1,1 @@
+@link: api/ui.chart_type_config.md

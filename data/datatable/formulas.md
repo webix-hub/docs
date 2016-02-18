@@ -70,6 +70,10 @@ var data = [
 ];
 ~~~
 
+{{note 
+Note that if you use math operations in TreeTable, you can refer to rows only by their IDs, as row indexes are refreshed after each change.
+}}
+
 You can also combine 2 variants and use **[id, :col_ind]** or **[:row_ind, field]**.
 
 ~~~js
@@ -87,6 +91,7 @@ function mysum(a, b){ return a+b };
 ...
 { id:3, difference"=mysum([:0, :1], [:0,:2]) + 1 - [:0, :3]" }
 ~~~
+
 
 
 

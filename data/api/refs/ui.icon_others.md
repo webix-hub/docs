@@ -5,10 +5,11 @@ Others
 - api/link/ui.icon_$getsize_other.md - returns the current size of the component
 - api/link/ui.icon_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.icon_$height_other.md - current height of the view
+- api/link/ui.icon_$renderinput_other.md - 
 - api/link/ui.icon_$scope_other.md - scope for resolving event and method names
 - api/link/ui.icon_$setsize_other.md - sets the component size
 - api/link/ui.icon_$setvalue_other.md - called each time when component need to set value in related html input
-- api/link/ui.icon_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.icon_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.icon_$view_other.md - reference to top html element of the view
 - api/link/ui.icon_$width_other.md - current width of the view
 - api/link/ui.icon_config_other.md - all options from initial component configuration
@@ -21,6 +22,7 @@ Others
 - api/link/ui.icon_$getsize_other.md
 - api/link/ui.icon_$getvalue_other.md
 - api/link/ui.icon_$height_other.md
+- api/link/ui.icon_$renderinput_other.md
 - api/link/ui.icon_$scope_other.md
 - api/link/ui.icon_$setsize_other.md
 - api/link/ui.icon_$setvalue_other.md

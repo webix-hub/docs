@@ -1,0 +1,1 @@
+@link: api/ui.baselayout_cols_config.md

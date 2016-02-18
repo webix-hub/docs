@@ -7,12 +7,12 @@ Others
 - api/link/ui.tabbar_$height_other.md - current height of the view
 - api/link/ui.tabbar_$render_other.md - code called after rending control
 - api/link/ui.tabbar_$rendericon_other.md - renders icon for the control
-- api/link/ui.tabbar_$renderinput_other.md - renders html for the input
+- api/link/ui.tabbar_$renderinput_other.md - 
 - api/link/ui.tabbar_$renderlabel_other.md - renders html for the label
 - api/link/ui.tabbar_$scope_other.md - scope for resolving event and method names
 - api/link/ui.tabbar_$setsize_other.md - sets the component size
 - api/link/ui.tabbar_$setvalue_other.md - called each time when component need to set value in related html input
-- api/link/ui.tabbar_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.tabbar_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.tabbar_$view_other.md - reference to top html element of the view
 - api/link/ui.tabbar_$width_other.md - current width of the view
 - api/link/ui.tabbar_config_other.md - all options from initial component configuration

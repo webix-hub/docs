@@ -1,4 +1,4 @@
-Creating Kanban Board on a page
+Creating Kanban Board on a Page
 ================================
 
 In order to start using Kanban Board you need to initialize it on the page. 

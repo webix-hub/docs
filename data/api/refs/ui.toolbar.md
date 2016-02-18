@@ -24,7 +24,6 @@ var toolbar = webix.ui({
 
 - [Overview of the Toolbar Widget](desktop/toolbar.md)
 - [Samples](http://docs.webix.com/samples/02_toolbar/index.html)
-
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/values.md">Values</a>, <a href="api/refs/ui.layout.md">ui.layout</a>, <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/validatedata.md">ValidateData</a></div>
 
@@ -152,7 +151,7 @@ var toolbar = webix.ui({
 - api/link/ui.toolbar_$getsize_other.md - returns the current size of the component
 - api/link/ui.toolbar_$height_other.md - current height of the view
 - api/link/ui.toolbar_$setsize_other.md - sets the component size
-- api/link/ui.toolbar_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.toolbar_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.toolbar_$view_other.md - reference to top html element of the view
 - api/link/ui.toolbar_$width_other.md - current width of the view
 - api/link/ui.toolbar_config_other.md - all options from initial component configuration

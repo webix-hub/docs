@@ -2,9 +2,9 @@ ui.text
 =============
 
 
-{{memo An one-line, editable text field with the label inside it. }}
+{{memo  A one-line, editable text field with the label inside it. }}
 
-A label inside the control differs it from the input component. Check [text](desktop/text.md) documentation for more detailed description.
+A label inside the control distinguishes it from the input component. Check [text](desktop/text.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -20,7 +20,6 @@ var text = webix.ui({
 
 - [Overview of the Text Control](desktop/text.md)
 - [Samples](http://docs.webix.com/samples/13_form/01_controls/01_text.html)
-
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
@@ -95,6 +94,7 @@ var text = webix.ui({
 - api/link/ui.text_align_config.md - the alignment of the control within the parent container
 - api/link/ui.text_animate_config.md - defines or disables view change animation.
 - api/ui.text_attributes_config.md - sets an hash of HTML input attributes that will be parsed for the Webix input control
+- api/link/ui.text_autowidth_config.md - adjusts button to its text content
 - api/link/ui.text_borderless_config.md - used to hide the component borders
 - api/ui.text_bottomlabel_config.md - sets a label under a control
 - api/ui.text_bottompadding_config.md - sets the bottom offset of the control input
@@ -113,7 +113,7 @@ var text = webix.ui({
 - api/link/ui.text_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/ui.text_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.text_label_config.md - the text label of the control
-- api/link/ui.text_labelposition_config.md - positions label in relation the control
+- api/link/ui.text_labelposition_config.md - positions label in relation to the control
 - api/ui.text_labelwidth_config.md - the width of the label
 - api/link/ui.text_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.text_maxwidth_config.md - sets the maximum width for the view
@@ -150,12 +150,12 @@ var text = webix.ui({
 - api/link/ui.text_$height_other.md - current height of the view
 - api/ui.text_$render_other.md - code called after rending control
 - api/ui.text_$rendericon_other.md - renders icon for the control
-- api/ui.text_$renderinput_other.md - renders html for the input
+- api/link/ui.text_$renderinput_other.md - 
 - api/ui.text_$renderlabel_other.md - renders html for the label
 - api/link/ui.text_$scope_other.md - scope for resolving event and method names
 - api/link/ui.text_$setsize_other.md - sets the component size
 - api/link/ui.text_$setvalue_other.md - called each time when component need to set value in related html input
-- api/link/ui.text_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.text_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.text_$view_other.md - reference to top html element of the view
 - api/link/ui.text_$width_other.md - current width of the view
 - api/link/ui.text_config_other.md - all options from initial component configuration

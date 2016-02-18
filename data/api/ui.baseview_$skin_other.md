@@ -3,7 +3,7 @@ $skin
 
 
 @short:
-	method, which will be called when skin defined	
+	the method which will be called when skin is defined	
 
 @example:
 

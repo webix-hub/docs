@@ -10,22 +10,22 @@ A collection of panes that make up the component allows you to organize the cont
 
 ~~~js
 var accordion = webix.ui({
-	view:"accordion",
-	type:"wide",
-	cols:[
-		{ header:"col 1", body:"content 1", width:150 },
-		{ header:"col 2", body:"content 2", width:150 },
-		{ header:"col 3", body:"content 3", width:150 },
-		{ header:"col 4", body:"content 4", width:150 },
-		{ header:"col 5", body:"content 5", width:150 }
-	]
-});	
+    view:"accordion",
+    type:"wide",
+    cols:[
+        { header:"col 1", body:"content 1", width:150 },
+        { header:"col 2", body:"content 2", width:150 },
+        { header:"col 3", body:"content 3", width:150 },
+        { header:"col 4", body:"content 4", width:150 },
+        { header:"col 5", body:"content 5", width:150 }
+    ]
+});
 ~~~
 
 
 ### Where to start
 
-- [Overview of the Accordion Widget](desktop/accordion.md)
+- [Overview of Accordion Widget](desktop/accordion.md)
 - [Samples](http://docs.webix.com/samples/01_layout/index.html)
 
 <div class='webixdoc_parents'><span>Based on: </span>
@@ -123,7 +123,7 @@ var accordion = webix.ui({
 - api/link/ui.accordion_$getsize_other.md - returns the current size of the component
 - api/link/ui.accordion_$height_other.md - current height of the view
 - api/link/ui.accordion_$setsize_other.md - sets the component size
-- api/link/ui.accordion_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.accordion_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.accordion_$view_other.md - reference to top html element of the view
 - api/link/ui.accordion_$width_other.md - current width of the view
 - api/link/ui.accordion_config_other.md - all options from initial component configuration

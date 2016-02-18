@@ -5,6 +5,7 @@ Properties
 - api/link/ui.multitext_align_config.md - the alignment of the control within the parent container
 - api/link/ui.multitext_animate_config.md - defines or disables view change animation.
 - api/link/ui.multitext_attributes_config.md - sets an hash of HTML input attributes that will be parsed for the Webix input control
+- api/link/ui.multitext_autowidth_config.md - adjusts button to its text content
 - api/link/ui.multitext_borderless_config.md - used to hide the component borders
 - api/link/ui.multitext_bottomlabel_config.md - sets a label under a control
 - api/link/ui.multitext_bottompadding_config.md - sets the bottom offset of the control input
@@ -24,7 +25,7 @@ Properties
 - api/link/ui.multitext_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.multitext_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.multitext_label_config.md - the text label of the control
-- api/link/ui.multitext_labelposition_config.md - positions label in relation the control
+- api/link/ui.multitext_labelposition_config.md - positions label in relation to the control
 - api/link/ui.multitext_labelwidth_config.md - the width of the label
 - api/link/ui.multitext_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.multitext_maxwidth_config.md - sets the maximum width for the view
@@ -52,6 +53,7 @@ Properties
 - api/link/ui.multitext_align_config.md
 - api/link/ui.multitext_animate_config.md
 - api/link/ui.multitext_attributes_config.md
+- api/link/ui.multitext_autowidth_config.md
 - api/link/ui.multitext_borderless_config.md
 - api/link/ui.multitext_bottomlabel_config.md
 - api/link/ui.multitext_bottompadding_config.md
