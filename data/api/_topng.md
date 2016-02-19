@@ -8,7 +8,7 @@ toPNG
 @params:
 
 - id			string			the id of the exported view
-- name			string			optional, the name of the created png file
+- name			string			optional, the name of the created PNG file
 
 
 @example:

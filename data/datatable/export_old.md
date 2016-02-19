@@ -8,8 +8,8 @@ To get the actual information on Datatable export, read the article datatable/ex
 
 [Datatable](datatable/index.md) and [Treetable](desktop/treetable.md) data can be exported to the following formats:
 
-1. [PDF](datatable/export.md#exporttopdf);
-2. [Excel](datatable/export.md#exporttoexcel).
+1. [PDF](datatable/export_old.md#exporttopdf);
+2. [Excel](datatable/export_old.md#exporttoexcel).
 
 The components don't require any special configuration to be exported. 
 
@@ -94,10 +94,10 @@ All customizing happens within the needed export function:
 
 ~~~js
 //in case you use online service
-grid.exportToExcell(null, {..setting custom values..});
+grid.exportToExcel(null, {..setting custom values..});
 
 //in case you use local version of export script
-grid.exportToExcell("generate.php", {..setting custom values..});
+grid.exportToExcel("generate.php", {..setting custom values..});
 ~~~
 
 **Export API allows** 

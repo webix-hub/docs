@@ -1,7 +1,6 @@
 DataTable
 ====================
 
-
 ##API Reference
 
 - [Methods, properties and events](api__refs__ui.datatable.html)
@@ -94,19 +93,15 @@ still being  very fast handling  thousands of records.<a href="datatable/overvie
 		        Export
 		    </h4>
 		    <ul id="styling_sublist">
-				<li><a href="datatable/export.md">Excel</a></li>
-				<li><a href="datatable/export.md">PNG</a></li>
+                <li><a href="datatable/exporttopng.md">Export to PNG</a></li>
+                <li><a href="datatable/exporttoexcel.md">Export to Excel</a></li>
+                <li><a href="datatable/exporttopdf.md">Export to PDF</a></li>
             </ul>
         </td>
 		<td class='topic_description'>Describes the formats and procedures you've got to import/export the DataTable's data. </td>
 	</tr>
 	</tbody>
 </table>
-
-
-
-
-
 
 
 @index:
