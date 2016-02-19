@@ -61,7 +61,7 @@ Current data operations come together with values they are assigned to in the **
 - **Min** - picks and shows the min value of this property;
 - **Count** - counts the number of occurrencies of this property and shows it. 
 
-In addition to the above-mentioned prebuilt operation types, you can as well [create a custom one](#operation).
+In addition to the above-mentioned prebuilt operation types, you can as well <a href="#operation">create a custom one</a>.
 
 ###Filtering Options
 
@@ -218,7 +218,7 @@ There are **4 prebuilt operations** over data:
 - **min**  - shows the min value of this property found in the dataset;
 - **count** - shows the number of occurencies of this property in the dataset.
 
-If needed, you can **add your own operation**: {#operation}
+If needed, you can **add your own <span id="operation">operation</span>**:
 
 ~~~js
 pivot.operations.abssum = function(data) {

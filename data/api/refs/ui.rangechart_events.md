@@ -6,7 +6,7 @@ Events
 - api/link/ui.rangechart_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.rangechart_onafterdelete_event.md - fires after item deleting
 - api/link/ui.rangechart_onafterload_event.md - fires after data loading is complete
-- api/ui.rangechart_onafterrangechange_event.md - 
+- api/ui.rangechart_onafterrangechange_event.md - fires after the frame range is changed
 - api/link/ui.rangechart_onafterrender_event.md - called after the rendering of calendar is complete.
 - api/link/ui.rangechart_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.rangechart_onaftersort_event.md - fires after sorting dataset

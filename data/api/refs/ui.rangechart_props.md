@@ -21,13 +21,13 @@ Properties
 - api/link/ui.rangechart_eventradius_config.md - sets the radius (in pixels) of the virtual circle which events will fire for items within
 - api/link/ui.rangechart_fill_config.md - fills the chart area with the specified background color.
 - api/link/ui.rangechart_fixoverflow_config.md - chart max limit mode
-- api/ui.rangechart_frameid_config.md - 
+- api/ui.rangechart_frameid_config.md - points to the property in data that will be used for the frame
 - api/link/ui.rangechart_gradient_config.md - specifies the chart gradient
 - api/link/ui.rangechart_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.rangechart_height_config.md - sets the height of the component
 - api/link/ui.rangechart_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.rangechart_id_config.md - the component ID
-- api/link/ui.rangechart_item_config.md - defines markers that present chart's data items.
+- api/link/ui.rangechart_item_config.md - defines markers that present chart's data items
 - api/link/ui.rangechart_label_config.md - sets the template for items' labels
 - api/link/ui.rangechart_labeloffset_config.md - the offset of sector labels from the pie frame
 - api/link/ui.rangechart_legend_config.md - defines the chart legend

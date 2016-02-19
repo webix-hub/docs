@@ -1,95 +1,46 @@
-The Structure of SpreadSheet
-===============================
+Configuring Spreadsheet
+===========================
 
-SpreadSheet consists of two main parts: a toolbar with instruments panel and a stylized datatable.
+The SpreadSheet component can be easily configured according to your needs. 
+You can enable work with math operations, cells resizing, specify the exact number of rows and columns in the spreadsheet.
 
-The full structure of SpreadSheet can be presented:
+Resizing cells
+-------------------
 
-- Toolbar:
- - Undo/Redo buttons
- - Font section: Font family and Font size selectors
- - Text section: Font weight buttons and Font color selector (colorboard)
- - Cell section: Background color selector, Borders selector with colorboard and Merge button
- - Align section: Horizontal and vertical align buttons and Word wrap button
- - Format section with the selector of the cell's content format 
-- DataTable:
- - Columns
- - Rows
- - Cells
-
-Toolbar
----------
-
-The toolbar contains a panel with instruments for editing and formatting of the content of table's cells.
-
-<img src="spreadsheet/instruments_panel.png">
+To enable resizing of cell, you need to set the api/ui.spreadsheet_resizecell_config.md property with the true value in the Spreadsheet configuration:
 
 ~~~js
-var bar = {
-	view: "toolbar",
-	css: "webix_ssheet_toolbar webix_layout_toolbar",
-	id: "bar",
-	elements: [{...}]
-}
+webix.ui({
+	view:"spreadsheet",
+	data: base_data,
+	resizeCell:true
+});
 ~~~
 
-###Undo/Redo Buttons
+Math operations
+----------------
 
-<img src="spreadsheet/undo_redo.png">
-
-The Undo and Redo buttons are based on Webix Button Control. They are used to undo and redo changes in the cells' content.
+Math functionality is also enabled in the configuration of the component. Just set the api/ui.spreadsheet_math_config.md property to true.
 
 ~~~js
-// the Undo button
-{ name: "undo", icon: "undo", tooltip: "Undo" }
-
-// the Redo button
-{ name: "redo", icon: "undo", tooltip: "Redo" }
+webix.ui({
+	view:"spreadsheet",
+	data: base_data,
+	math:true
+});
 ~~~
 
-###Separator
+To get more information about math in SpreadSheet, read the spreadsheet/math.md article.
 
-The separator is used to separate the sections of the instruments' panel:
+Setting the count of rows and columns
+----------------------------------
+
+If you need to specify a certain number of columns or rows in the SpreadSheet, make use of the api/ui.spreadsheet_columncount_config.md and api/ui.spreadsheet_rowcount_config.md properties.
 
 ~~~js
-ui.separator();
+// setting the number of columns
+$$("ss").config.columnCount = 10;
+// setting the number of rows
+$$("ss").config.rowCount = 20;
 ~~~
 
-###Font attributes selectors 
-
-<img src="spreadsheet/font.png">
-
-The selectors of font family and font size are based on the Select Control. They allow choosing the necessary font settings.
-
-~~~js
-// the font-family select
-{name: "font-family", tooltip: "Font family", options: fontFamily, width: 100}
-
-// the font-size select
-{name: "font-size", tooltip: "Font size", options: getFontSize(), width: 62}
-~~~
-
-###Text formatting controls group
-
-<img src="spreadsheet/text.png">
-
-~~~js
-{ name: "font-weight", label: "B", css: "webix_ssheet_bold",
-	tooltip: "Bold", onValue: "bold", offValue: "normal" }
-{ name: "font-style", label: "I", css: "webix_ssheet_italic", 
-	tooltip: "Italic", onValue: "italic", offValue: "normal" }
-{ name: "text-decoration", label: "U", css: "webix_ssheet_underline", 
-	tooltip: "Underline", onValue: "underline", offValue: "normal"}
-~~~
-
-###Cell editing controls group
-
-<img src="spreadsheet/cell.png">
-
-###Text align controls group
-
-<img src="spreadsheet/align.png">
-
-###Format selector
-
-<img src="spreadsheet/format.png">
