@@ -49,9 +49,7 @@ webix.ui({
 });
 ~~~
 
-{{sample
-	60_pro/11_treemap/01_init.html
-}}
+{{editor http://webix.com/snippet/2de536ac	Initialization}}
 
 Configuration settings
 -------------------------------
@@ -187,7 +185,7 @@ The colors that correspond to this or that rule are specified in the css style d
 </style>
 ~~~
 
-{{sample 60_pro/11_treemap/02_colors.html}}
+{{editor http://webix.com/snippet/562f5401	Colors}}
 
 One-Level Rendering
 ---------------------
@@ -258,7 +256,7 @@ The key parameters here are:
 - **subRender** - (boolean) defines if the sub-elements should be rendered for the first-level branches, true by default
 
 
-{{sample 60_pro/11_treemap/03_one_level.html}}
+{{editor http://webix.com/snippet/83ee6081	One-Level Rendering}}
 
 Handling Events
 -----------------
@@ -348,9 +346,7 @@ $$("treemap").attachEvent("onAfterSelect",function(id){
 })
 ~~~
 
-{{sample
-60_pro/11_treemap/04_events.html
-}}
+{{editor http://webix.com/snippet/c8c8b648	Events}}
 
 Setting header
 ----------------
@@ -373,8 +369,6 @@ Now if we click on the "Health Economics" sub-branch of the "Healthcare" categor
 
 <img src="desktop/treemap_child_branch_header.png">
 
-{{sample
-60_pro/11_treemap/05_header.html
-}}
+{{editor http://webix.com/snippet/c4a66122	Header}}
 
 @edition:pro
