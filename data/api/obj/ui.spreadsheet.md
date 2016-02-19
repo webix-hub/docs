@@ -6,17 +6,18 @@ an Excel document or export a table from Excel. The tables' appearance can be ea
 
 The component provides a built-in functionality for mathematical expressions and supports resizing and localization of tables.
 
+Check desktop/spreadsheet.md documentation for more information.
+
 ###Constructor 
 
 ~~~js
 var spreadsheet = webix.ui({
 	view:"spreadsheet",
-	data: base_data,
-	math:true
+	data: base_data
 });
 ~~~
 
 ### Where to start
 
 - [Overview of the SpreadSheet Widget](desktop/spreadsheet.md)
-- [Samples](http://localhost/spreadsheet/samples/)
+- [Samples](http://docs.webix.com/samples/65_spreadsheet/index.html)

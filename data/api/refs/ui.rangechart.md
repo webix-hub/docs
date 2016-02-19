@@ -34,8 +34,8 @@ dummy stub
 - api/link/ui.rangechart_getchildviews.md - returns child views of the calling component
 - api/link/ui.rangechart_getfirstid.md - returns the ID of the first item
 - api/link/ui.rangechart_getformview.md - returns master form for the input
-- api/ui.rangechart_getframedata.md - 
-- api/ui.rangechart_getframerange.md - 
+- api/ui.rangechart_getframedata.md - returns an array of objects that are included into the range
+- api/ui.rangechart_getframerange.md - returns the object of the data range selected in the frame
 - api/link/ui.rangechart_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.rangechart_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.rangechart_getitem.md - gets the object of the data item with the specified id
@@ -62,7 +62,7 @@ dummy stub
 - api/link/ui.rangechart_render.md - renders the specified item or the whole component
 - api/link/ui.rangechart_resize.md - adjusts the view to a new size
 - api/link/ui.rangechart_serialize.md - serializes data to a JSON object
-- api/ui.rangechart_setframerange.md - 
+- api/ui.rangechart_setframerange.md - sets the data range for the frame
 - api/link/ui.rangechart_show.md - makes the component visible
 - api/link/ui.rangechart_showseries.md - shows the hidden graph in the chart
 - api/link/ui.rangechart_sort.md - sorts datastore
@@ -82,7 +82,7 @@ dummy stub
 - api/link/ui.rangechart_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.rangechart_onafterdelete_event.md - fires after item deleting
 - api/link/ui.rangechart_onafterload_event.md - fires after data loading is complete
-- api/ui.rangechart_onafterrangechange_event.md - 
+- api/ui.rangechart_onafterrangechange_event.md - fires after the frame range is changed
 - api/link/ui.rangechart_onafterrender_event.md - called after the rendering of calendar is complete.
 - api/link/ui.rangechart_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/link/ui.rangechart_onaftersort_event.md - fires after sorting dataset
@@ -138,13 +138,13 @@ dummy stub
 - api/link/ui.rangechart_eventradius_config.md - sets the radius (in pixels) of the virtual circle which events will fire for items within
 - api/link/ui.rangechart_fill_config.md - fills the chart area with the specified background color.
 - api/link/ui.rangechart_fixoverflow_config.md - chart max limit mode
-- api/ui.rangechart_frameid_config.md - 
+- api/ui.rangechart_frameid_config.md - points to the property in data that will be used for the frame
 - api/link/ui.rangechart_gradient_config.md - specifies the chart gradient
 - api/link/ui.rangechart_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.rangechart_height_config.md - sets the height of the component
 - api/link/ui.rangechart_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.rangechart_id_config.md - the component ID
-- api/link/ui.rangechart_item_config.md - defines markers that present chart's data items.
+- api/link/ui.rangechart_item_config.md - defines markers that present chart's data items
 - api/link/ui.rangechart_label_config.md - sets the template for items' labels
 - api/link/ui.rangechart_labeloffset_config.md - the offset of sector labels from the pie frame
 - api/link/ui.rangechart_legend_config.md - defines the chart legend

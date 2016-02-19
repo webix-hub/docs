@@ -23,8 +23,8 @@ Methods
 - api/link/ui.rangechart_getchildviews.md - returns child views of the calling component
 - api/link/ui.rangechart_getfirstid.md - returns the ID of the first item
 - api/link/ui.rangechart_getformview.md - returns master form for the input
-- api/ui.rangechart_getframedata.md - 
-- api/ui.rangechart_getframerange.md - 
+- api/ui.rangechart_getframedata.md - returns an array of objects that are included into the range
+- api/ui.rangechart_getframerange.md - returns the object of the data range selected in the frame
 - api/link/ui.rangechart_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.rangechart_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.rangechart_getitem.md - gets the object of the data item with the specified id
@@ -51,7 +51,7 @@ Methods
 - api/link/ui.rangechart_render.md - renders the specified item or the whole component
 - api/link/ui.rangechart_resize.md - adjusts the view to a new size
 - api/link/ui.rangechart_serialize.md - serializes data to a JSON object
-- api/ui.rangechart_setframerange.md - 
+- api/ui.rangechart_setframerange.md - sets the data range for the frame
 - api/link/ui.rangechart_show.md - makes the component visible
 - api/link/ui.rangechart_showseries.md - shows the hidden graph in the chart
 - api/link/ui.rangechart_sort.md - sorts datastore

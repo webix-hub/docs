@@ -36,6 +36,7 @@ of various languages.
 		    </h4>
 		    <ul id="design_sublist">
                 <li>spreadsheet/spreadsheet_init.md</li>
+                <li>spreadsheet/customization.md</li>
                 <li>spreadsheet/loading_data.md</li>
                 <li>spreadsheet/localization.md</li>
                 <li>spreadsheet/config.md</li>
@@ -65,6 +66,7 @@ of various languages.
 
 @index:
 - spreadsheet/spreadsheet_init.md
+- spreadsheet/customization.md
 - spreadsheet/loading_data.md
 - spreadsheet/localization.md
 - spreadsheet/config.md

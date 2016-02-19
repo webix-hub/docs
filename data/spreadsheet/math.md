@@ -1,4 +1,4 @@
-Using Math Operations in SpreadSheet
+Math Operations in SpreadSheet
 ==============================
 
 SpreadSheet allows working with simple mathematical operations as well as with formulas. 

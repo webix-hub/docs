@@ -43,14 +43,90 @@ webix.ui({
 
 The parameters of the configuration object are as follows:
 
-- height - the height of the range chart
+- height - sets the height of the range chart
+- id - the id of the range chart
+- type -  sets the type of the chart
+- value - defines values for the vertical axis
+- frameId - specifies a property in the data, that will be used for the frame
+- item - defines markers that present chart's data items 
+- data - specifies the dataset that will be loaded to the range chart 
+
+Setting Frame Range
+----------------------
+
+The frame isn't set automatically and depends on data. So, it should be specified only after data are loaded to the range chart.
+
+For example, you can set the frame range in the api/link/ui.proto_ready_config.md handler. The frame is specified by the api/ui.rangechart_setframerange.md method.
+
+~~~js
+webix.ui({
+  view: "rangechart",
+  ...
+  ready:function(){
+	this.setFrameRange(30, 40);
+  }
+});
+~~~
+
+As parameters the setFrameRange() method takes the indexes of the starting and the ending data items of the range.
+
+In order to get the set frame range, you should use the api/ui.rangechart_getframerange.md method. it returns the object of the data range selected in the frame.
+
+~~~js
+rangechart.getFrameRange();
+~~~
+
+You can also get the data included into the frame range. For this purpose, make use of the api/ui.rangechart_getframedata.md method.
+
+It returns an array of data objects that are included into the range.
+
+~~~js
+rangechart.getFrameData();
+~~~
 
 
+Binding Range Chart with Chart
+---------------------------
 
+Each time when a range is changed in the range chart, changes are applied to the "main" chart.  It means that settings in the main chart should be reset and new data loaded.
 
+To bind two charts, you need to use the api/link/ui.rangechart_on_config.md property and specify the handler for the api/ui.rangechart_onafterrangechange_event.md event.
 
+Inside of the handler function define the clearAll() method to remove all data items from the chart. 
+Finally, apply the parse() method and call getFrameData() of rangechart to load the chart with new data items.
 
+~~~js
+var chart = {
+	view:"chart", 
+    id:"dchart",
+	type:"line",
+	value:"#sales#",
+	xAxis:{ template:"#time#" },
+	yAxis:{},
+	item:{
+		borderColor: "#1293f8",
+		color: "#ffffff"
+	}
+};
 
-
+var range = {
+	view:"rangechart", 
+    height: 80, 
+    id:"range",
+	type:"line",
+	value:"#sales#", 
+	frameId:"time",
+	data:  data,
+	on: {
+		onAfterRangeChange:function(){
+			$$("dchart").clearAll();
+			$$("dchart").parse(this.getFrameData());
+		}
+	},
+	ready:function(){
+		this.setFrameRange(30, 40);
+	}
+};
+~~~
 
 @edition:pro
