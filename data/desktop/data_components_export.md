@@ -1,7 +1,7 @@
-Exporting Data Components to Excel
+Data Components Export to Excel
 ==============================
 
-You can export Webix data components to the Excel formats.
+You can export Webix data components to the Excel format.
 
 The components don't require any special configuration to be exported.
 
@@ -11,10 +11,10 @@ The described functionality is available both in Standard and Pro versions, but 
 }}
 
 
-To export data from a data component into an Excel document you need to call the **toExcel()** method. The method takes 2 parameters:
+To export data from a data component into an Excel document you need to call the api/_toexcel.md method. The method takes 2 parameters:
 
 - **id** - (string, object)  id or object of the exported view 
-- **options** - (object) optional, a set of configuration options that define what data will be displayed in the Excel file:
+- **options** - (object) optional, a set of configuration options that define what data will be displayed in the Excel file
 
 
 For example, to export a list to an Excel document, you need to call of the toExcel() method that takes the view object or its id as a parameter:
@@ -42,7 +42,7 @@ need to get data from some particular fields.
 
 **Export API allows** 
 
-- setting **columns** you'd like to see in export. 
+- setting **columns** you'd like to see in the export file. 
 
 ~~~js
 webix.toExcel($$("mylist"), {

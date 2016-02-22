@@ -114,7 +114,7 @@ The standard deviation is a measure of how widely values are dispersed from the 
 - **POWER** - returns the result of a number raised to a power;
  - works with real numbers.
 - **QUOTIENT** -returns the integer portion of a division. Use this function when you want to discard the remainder of a division;
- -  - works with real numbers.
+ - works with real numbers.
 - **SQRT** - returns a positive square root.
 - **ABS** - returns the absolute value of a number. The absolute value of a number is the number without its sign.
 - **RAND** - returns an evenly distributed random real number greater than or equal to 0 and less than 1. A new random real number is returned every time the worksheet is calculated.

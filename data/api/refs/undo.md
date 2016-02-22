@@ -1,13 +1,6 @@
 Undo 
 =============
 
-
-dummy stub
-
-{{todo replace with real description. }}
-
-
-
 <div class='h2'>Methods</div>
 
 {{api

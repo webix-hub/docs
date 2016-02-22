@@ -44,3 +44,7 @@ $$("ss").config.columnCount = 10;
 $$("ss").config.rowCount = 20;
 ~~~
 
+Adding subbar
+-----------
+
+To show some additional elements/views into Spreadsheet, you can use the subbar property.

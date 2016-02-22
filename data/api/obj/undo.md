@@ -1,4 +1,2 @@
 
-dummy stub
-
-{{todo replace with real description }}
+{{memo Allows reverting changes in data for datastore-based components }}
