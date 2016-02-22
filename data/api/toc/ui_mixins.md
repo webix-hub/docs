@@ -3,7 +3,7 @@ Mixins
 
 {{links
 
-- api/refs/activecontent.md -  Allows to place active element in other views
+- api/refs/activecontent.md -  Allows placing active element in other views
 - api/refs/atomdataloader.md -  primitive data loader
 - api/refs/atomrender.md -  primitive render for views
 - api/refs/autotooltip.md -  allows for setting a prompting message for data items
@@ -69,7 +69,7 @@ Mixins
 - api/refs/treetype.md -  contains elements of tree template
 - api/refs/uiextension.md -  can be used to extend base views with custom methods
 - api/refs/uimanager.md -  controls focus and hotkeys for webix.ui
-- api/refs/undo.md - 
+- api/refs/undo.md -  Allows reverting changes in data for datastore-based components 
 - api/refs/uploaddriver.md -  implements file uploader driver
 - api/refs/validatecollection.md -  implements validation for data collections
 - api/refs/validatedata.md -  data validation logic

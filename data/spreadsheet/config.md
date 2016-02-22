@@ -44,7 +44,29 @@ $$("ss").config.columnCount = 10;
 $$("ss").config.rowCount = 20;
 ~~~
 
+{{sample
+65_spreadsheet/02_api/01_subbar_and_reset.html
+}}
+
 Adding subbar
 -----------
 
-To show some additional elements/views into Spreadsheet, you can use the subbar property.
+To show some additional elements/views into Spreadsheet, you can use the api/ui.spreadsheet_subbar_config.md property. It allows adding views below the toolbar, but above the datatable.
+
+~~~js
+webix.ui({
+	view:"spreadsheet",
+	data: base_data,		
+	subbar:{
+		view:"toolbar", css:"webix_ssheet_toolbar", 
+		elements:[
+			{ view:'label', template:"Custom cell editor: ", width:190},
+			{ view:'text', id:'text', width:250 },
+			{}
+		]
+	},	
+});
+~~~
+{{sample
+65_spreadsheet/03_customization/02_cell_input.html
+}}

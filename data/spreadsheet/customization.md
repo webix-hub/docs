@@ -60,7 +60,7 @@ The default styles for the toolbar's buttons look as follows:
 ~~~
 
 The settings for toolbar are specified in the *buttons* configuration object. It contains the names of button blocks as parameters.
-The parameters' values are arrays of buttons that are icluded into this or that block.
+The parameters' values are arrays of buttons' names that are icluded into this or that block.
 
 ~~~js
 buttons:{
@@ -103,7 +103,7 @@ Customizing Datatable
 The datatable part of SpreadSheet features the same functionality that the Datatable widget does. 
 So, you can customize the datatable in SpreadSheet in various ways. 
 
-You can refer to the datatble object in the following way:
+You can refer to the datatable object in the following way:
 
 ~~~js
 $$("ss").$$("cells");
@@ -130,4 +130,7 @@ webix.ready(function(){
 });
 ~~~
 
+{{sample
+65_spreadsheet/03_customization/05_context.html
+}}
 

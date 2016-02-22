@@ -1,4 +1,4 @@
-Range Slider
+RangeSlider
 ===================
 
 {{pronote

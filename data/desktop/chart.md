@@ -73,7 +73,6 @@ To learn about all the chart properties, please refer to the [corresponding chap
 
 @index:
   - desktop/chart_types.md
-  - desktop/range_chart.md
   - desktop/chart_scales.md
   - desktop/chart_series.md
   - desktop/chart_operations.md

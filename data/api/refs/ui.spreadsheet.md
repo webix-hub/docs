@@ -9,20 +9,21 @@ an Excel document or export a table from Excel. The tables' appearance can be ea
 
 The component provides a built-in functionality for mathematical expressions and supports resizing and localization of tables.
 
+Check desktop/spreadsheet.md documentation for more information.
+
 ###Constructor 
 
 ~~~js
 var spreadsheet = webix.ui({
 	view:"spreadsheet",
-	data: base_data,
-	math:true
+	data: base_data
 });
 ~~~
 
 ### Where to start
 
 - [Overview of the SpreadSheet Widget](desktop/spreadsheet.md)
-- [Samples](http://localhost/spreadsheet/samples/)
+- [Samples](http://docs.webix.com/samples/65_spreadsheet/index.html)
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.layout.md">ui.layout</a>, <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
@@ -102,6 +103,7 @@ var spreadsheet = webix.ui({
 {{api
 - api/link/ui.spreadsheet_animate_config.md - defines or disables view change animation.
 - api/link/ui.spreadsheet_borderless_config.md - used to hide the component borders
+- api/ui.spreadsheet_buttons_config.md - 
 - api/link/ui.spreadsheet_cols_config.md - array of views objects arranged horizontally
 - api/ui.spreadsheet_columncount_config.md - the number of columns in the SpreadSheet
 - api/link/ui.spreadsheet_container_config.md - an html container (or its id) where the component needs initializing
@@ -113,7 +115,7 @@ var spreadsheet = webix.ui({
 - api/link/ui.spreadsheet_id_config.md - the component ID
 - api/link/ui.spreadsheet_isolate_config.md - masks IDs of all inner element
 - api/link/ui.spreadsheet_margin_config.md - defines the space around elements (applies the specified value to all elements)
-- api/ui.spreadsheet_math_config.md - 
+- api/ui.spreadsheet_math_config.md - enables the math functionality in the spreadsheet
 - api/link/ui.spreadsheet_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.spreadsheet_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.spreadsheet_minheight_config.md - sets the minimal height for the view
@@ -122,10 +124,12 @@ var spreadsheet = webix.ui({
 - api/link/ui.spreadsheet_padding_config.md - defines the space between the element borders and content (applies the specified value to all sides).
 - api/link/ui.spreadsheet_paddingx_config.md - sets the right and left padding (applies the specified value to both sides)
 - api/link/ui.spreadsheet_paddingy_config.md - sets the top and bottom padding (applies the specified value to both sides)
-- api/ui.spreadsheet_resizecell_config.md - 
+- api/ui.spreadsheet_readonly_config.md - 
+- api/ui.spreadsheet_resizecell_config.md - defines whether cells of spreadsheet will be resized
 - api/link/ui.spreadsheet_responsive_config.md - enables responsive mode for horizontal layout
 - api/ui.spreadsheet_rowcount_config.md - the number of rows in the SpreadSheet
 - api/link/ui.spreadsheet_rows_config.md - array of views objects arranged vertically
+- api/ui.spreadsheet_subbar_config.md - 
 - api/link/ui.spreadsheet_type_config.md - defines the layout borders
 - api/link/ui.spreadsheet_visiblebatch_config.md - sets the batch that will be shown initially
 - api/link/ui.spreadsheet_width_config.md - sets the width of the component
@@ -142,7 +146,7 @@ var spreadsheet = webix.ui({
 - api/ui.spreadsheet_$exportview_other.md - the method that will be called when a view is exported
 - api/link/ui.spreadsheet_$getsize_other.md - returns the current size of the component
 - api/link/ui.spreadsheet_$height_other.md - current height of the view
-- api/ui.spreadsheet_$onload_other.md - 
+- api/ui.spreadsheet_$onload_other.md - the handler that is used in SpreadSheet instead of the standard data driver
 - api/ui.spreadsheet_$save_other.md - the method that will be called when data is saved
 - api/link/ui.spreadsheet_$setsize_other.md - sets the component size
 - api/link/ui.spreadsheet_$skin_other.md - the method which will be called when skin is defined

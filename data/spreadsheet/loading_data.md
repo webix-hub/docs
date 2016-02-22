@@ -217,3 +217,5 @@ Parameters of requests differ depending on the operation handler:
 	text:"#000000;#ff0000;left;'PT Sans', Tahoma;15px;;;;top;;no,#434343;;;;;"
 }
 ~~~
+
+SpreadSheet is a purely client-side widget, therefore you can implement any logic at the backend. You can find several demos that implement PHP data in the SpreadSheet package.

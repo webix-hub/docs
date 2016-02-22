@@ -36,6 +36,11 @@ webix.ready(function(){
 });
 ~~~
 
+{{sample
+65_spreadsheet/01_basic/03_math.html
+}}
+
+
 Syntax
 ---------
 The syntax of mathematical expressions is the same as that of Excel. 
@@ -82,7 +87,7 @@ Formulas
 
 SpreadSheet can work with the Excel formulas. Below you'll find the full list of formulas with detailed descriptions.
 
-- **SUM** - adds values;
+- **SUM** - adds values; 
  - empty cells, logical values like TRUE, or text are ignored.
 - **AVERAGE** - returns the average (arithmetic mean) of the arguments;
  - if a range or a cell reference argument contains text, logical values, or empty cells, those values are ignored; 
@@ -126,3 +131,7 @@ The standard deviation is a measure of how widely values are dispersed from the 
 - **TRUNC** - truncates a number to an integer by removing the fractional part of the number.
 - **EVEN** - returns number rounded up to the nearest even integer.
 - **ODD** - returns number rounded up to the nearest odd integer.
+
+{{sample
+65_spreadsheet/01_basic/03_math.html
+}}

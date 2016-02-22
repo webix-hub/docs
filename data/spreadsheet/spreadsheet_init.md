@@ -30,3 +30,7 @@ webix.ready(function(){
 	});
 });
 ~~~
+
+{{sample
+65_spreadsheet/01_basic/01_init.html
+}}
