@@ -16,7 +16,7 @@ del
 @example:
 webix.ajax().del("data.php", { id : "11" }, function(text, xml, xhr){
 	//response
-	alert(text);
+	console.log(text);
 });
 
 @related:

@@ -16,7 +16,7 @@ post
 @example:
 webix.ajax().post("data.php", { filter : "123" }, function(text, xml, xhr){
 	//response
-	alert(text);
+	console.log(text);
 });
 
 @template:	api_method

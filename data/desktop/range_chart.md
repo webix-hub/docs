@@ -1,4 +1,4 @@
-Range Chart
+RangeChart
 ============
 
 API Reference
@@ -11,22 +11,23 @@ API Reference
 Overview
 -----------
 
-Range Chart is a component that allows presenting data in a detailed way. 
-It can be useful, if you work with big amounts of data and need to display some particular data parts.
+RangeChart is a component that allows presenting data in a detailed way. 
+It can be useful if you work with big amounts of data and need to display some particular data parts.
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/range_chart.png">
 
-Range Chart is based on the [line chart](desktop/chart_types.md#lineandsplinecharts) and inherits its API.
-However, you can apply other chart types for a range chart. Range Chart can be used for any charts that possess a horizontal scale.
-The most suitable types are the following: line, spline, area and stackedArea, bar and stackedBar.
+RangeChart is based on [Chart](desktop/chart.md) component and inherits its API. 
+RangeChart can be build upon any Webix chart that possesses a horizontal scale: [line, spline](desktop/chart_types.md#lineandsplinecharts), 
+[area and stackedArea](desktop/chart_types.md#areaandstackedareacharts), [bar and stackedBar](desktop/chart_types.md#barbarhstackedbarandstackedbarhcharts).
+However, it is not obligatory to initialize scales. 
 
-The range limits the amount of data that will be processed. The selected range values are always rounded to the bigger next value. 
-It means that if you set a range handler to some intermediate section between scale marks, it will be moved to that nearest point the value of which is bigger.
+Visually, the related frame limits the amount of data for future processing. Frame values are always rounded to the next bigger value. 
+It means that if you set a frame handler to some intermediate section between scale marks, it will be moved to that nearest point the value of which is bigger.
 
 Initializing Range Chart
 ----------------------
 
-To initialize a range chart, you need to define its configuration, as it given below: 
+To initialize a RangeChart, you need to define its configuration, like the one given below: 
 
 ~~~js
 webix.ui({
@@ -41,20 +42,23 @@ webix.ui({
 });
 ~~~
 
-The parameters of the configuration object are as follows:
+In general, all properties of a standard [chart](desktop/chart.md) can be used to configure RangeChart, e.g:
 
-- height - sets the height of the range chart
-- id - the id of the range chart
-- type -  sets the type of the chart
-- value - defines values for the vertical axis
-- frameId - specifies a property in the data, that will be used for the frame
-- item - defines markers that present chart's data items 
-- data - specifies the dataset that will be loaded to the range chart 
+- **height** - sets the height of the range chart
+- **id** - the id of the range chart
+- **type** -  sets the type of the chart
+- **value** - defines values for the vertical axis
+- **item** - defines markers that present chart's data items 
+- **data** - specifies the dataset that will be loaded to the range chart 
+
+and the only RangeChart-specific property: 
+
+- **frameId** - specifies a property in the data item, that will be used for the frame (id by default).
 
 Setting Frame Range
 ----------------------
 
-The frame isn't set automatically and depends on data. So, it should be specified only after data are loaded to the range chart.
+The frame isn't set automatically and depends on data. So, it should be specified only after data are loaded to the RangeChart.
 
 For example, you can set the frame range in the api/link/ui.proto_ready_config.md handler. The frame is specified by the api/ui.rangechart_setframerange.md method.
 
@@ -85,15 +89,16 @@ rangechart.getFrameData();
 ~~~
 
 
-Binding Range Chart with Chart
+Working with RangeChart
 ---------------------------
 
-Each time when a range is changed in the range chart, changes are applied to the "main" chart.  It means that settings in the main chart should be reset and new data loaded.
+RangeChart can be used to control data display within another data component, e.g. chart. 
+For instance, each time when a range is changed in the RangeChart (master), changes are applied to the slave chart. 
 
-To bind two charts, you need to use the api/link/ui.rangechart_on_config.md property and specify the handler for the api/ui.rangechart_onafterrangechange_event.md event.
+To achieve this, you need to use the api/link/ui.rangechart_on_config.md property and specify the handler for the api/ui.rangechart_onafterrangechange_event.md event.
 
-Inside of the handler function define the clearAll() method to remove all data items from the chart. 
-Finally, apply the parse() method and call getFrameData() of rangechart to load the chart with new data items.
+Inside of the handler function remove all data items from the slave chart using its clearAll() method.
+Finally, call getFrameData() method of RangeChart to get the enclosed data and apply the parse() method to the slave chart to populate it with a new dataset. 
 
 ~~~js
 var chart = {

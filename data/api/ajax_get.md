@@ -16,7 +16,7 @@ get
 @example:
 webix.ajax().get("data.php", { filter : "123" }, function(text, xml, xhr){
 	//response
-	alert(text);
+	console.log(text);
 });
 
 @related:
