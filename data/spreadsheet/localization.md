@@ -94,3 +94,7 @@ webix.i18n.locales['ru-RU'].spreadsheet = {
 ~~~js
 webix.i18n.setLocale('ru-RU');
 ~~~
+
+{{sample
+65_spreadsheet/02_api/03_localization.html
+}}

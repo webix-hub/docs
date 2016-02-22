@@ -390,6 +390,7 @@ div.controls_group img {
 - desktop/popup.md
 - desktop/portlet.md
 - desktop/property_sheet.md
+- desktop/range_chart.md
 - desktop/scrollview.md
 - desktop/sidemenu.md
 - desktop/tabview.md

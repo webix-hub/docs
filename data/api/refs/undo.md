@@ -1,19 +1,24 @@
 Undo 
 =============
 
+
+{{memo Allows reverting changes in data for datastore-based components. }}
+
+
+
 <div class='h2'>Methods</div>
 
 {{api
-- api/undo_ignoreundo.md - 
-- api/undo_removeundo.md - 
-- api/undo_undo.md - 
+- api/undo_ignoreundo.md - ignores the undo history track
+- api/undo_removeundo.md - removes the records about all the operations made to an item
+- api/undo_undo.md - reverts the previously made change in the component
 }}
 
 
 <div class='h2'>Properties</div>
 
 {{api
-- api/undo_undo_config.md - 
+- api/undo_undo_config.md - enables reverting changes in data components
 }}
 
 

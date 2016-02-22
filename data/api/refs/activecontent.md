@@ -2,7 +2,7 @@ ActiveContent
 =============
 
 
-{{memo Allows to place active element in other views. }}
+{{memo Allows placing active element in other views. }}
 
 
 
