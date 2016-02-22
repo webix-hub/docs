@@ -7,7 +7,11 @@ readonly
 
 @type: boolean
 @example:
-
+webix.ui({
+	view:"spreadsheet",
+    data: base_data,
+    readonly:true
+});
 
 
 

@@ -32,3 +32,7 @@ for PNG:
 ~~~js
 webix.toPNG("ss1");
 ~~~
+
+{{sample
+65_spreadsheet/01_basic/06_export.html
+}}

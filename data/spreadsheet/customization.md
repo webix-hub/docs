@@ -12,10 +12,8 @@ The full structure of SpreadSheet can be presented:
  - Cell section: Background color selector, Borders selector with colorboard and Merge button
  - Align section: Horizontal and vertical align buttons and Word wrap button
  - Format section with the selector of the cell's content format 
-- DataTable:
- - Columns
- - Rows
- - Cells
+- DataTable
+
 
 Toolbar
 ---------
@@ -38,29 +36,14 @@ var bar = {
 Then you can address to the toolbar via the corresponding id.
 
 ~~~js
-$$("ss").$$("bar");
+spreadsheet.$$("bar");
 ~~~
 
 Customizing toolbar's buttons
 ---------------------------
 
-The default styles for the toolbar's buttons look as follows:
-
-~~~js
-{
-	"color": "#000",
-	"background": "#fff",
-	"font-family": "'PT Sans', Tahoma",
-	"font-size": "15px",
-    "text-align": "left",
-    "vertical-align": "top",
-    "white-space": "nowrap",
-    "borders": ["no","#444"]
-}
-~~~
-
-The settings for toolbar are specified in the *buttons* configuration object. It contains the names of button blocks as parameters.
-The parameters' values are arrays of buttons' names that are icluded into this or that block.
+The settings for toolbar are specified in the api/ui.spreadsheet_buttons_config.md configuration object. It contains the names of button blocks as parameters.
+The parameters' values are arrays of buttons that are included into this or that block.
 
 ~~~js
 buttons:{
@@ -75,10 +58,17 @@ buttons:{
 
 The button blocks' names correspond to the properties defined in the localization files that specify the language of its lables.
 
-###Adding a custom block
+###Removing a block or a button
 
-If you want to add your own block into the toolbar of spreadsheet, you should specify its name as a property of the buttons object and define the config of any view as its content.
-To show the content of a block without its name, use the name of the block preceeded with the $ sign.
+In case you want to remove some block or button specified in the default configuration, you need just not to define them in the buttons object.
+
+###Adding a custom block or a button
+
+To add your own block of buttons into the toolbar, you should specify its name as a property in the "buttons" configuration. The value of this property is an array of buttons. 
+
+To add a custom button, you should specify its name in the array of buttons of the corresponding block.
+
+If you don't want to show the block's name, add the "$" sign before the block's name.
 
 ~~~js
  buttons: {
@@ -103,10 +93,10 @@ Customizing Datatable
 The datatable part of SpreadSheet features the same functionality that the Datatable widget does. 
 So, you can customize the datatable in SpreadSheet in various ways. 
 
-You can refer to the datatable object in the following way:
+You can refer to the datatable object as follows:
 
 ~~~js
-$$("ss").$$("cells");
+spreadsheet.$$("cells");
 ~~~
 
 For example, you can attach a context menu with some actions for datatable cells and call the handler function on the right click.
@@ -114,7 +104,8 @@ For example, you can attach a context menu with some actions for datatable cells
 ~~~js
 webix.ready(function(){
 	webix.ui({
-		view:"spreadsheet", id:"ss",				
+		view:"spreadsheet", 
+        id:"ss",				
 		math:true,		
 		data:base_data
 	});			
@@ -124,8 +115,7 @@ webix.ready(function(){
 		data:["Cut", "Copy", "Paste", "Delete"],
 		click:function(id, event){
 			var cell = this.getContext().id;
-			webix.message(id+" on row "+cell.row+" of the column "+cell.column);					
-		
+			webix.message(id+" on row "+cell.row+" of the column "+cell.column);							
 	}).attachTo( $$("ss").$$("cells"));			
 });
 ~~~

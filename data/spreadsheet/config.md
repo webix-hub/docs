@@ -53,6 +53,8 @@ Adding subbar
 
 To show some additional elements/views into Spreadsheet, you can use the api/ui.spreadsheet_subbar_config.md property. It allows adding views below the toolbar, but above the datatable.
 
+Inside of the subbar property you can define a view, e.g. toolbar, apply some css to it and specify the elements that will be shown in the view.
+
 ~~~js
 webix.ui({
 	view:"spreadsheet",
@@ -67,6 +69,32 @@ webix.ui({
 	},	
 });
 ~~~
+
 {{sample
 65_spreadsheet/03_customization/02_cell_input.html
 }}
+
+
+Making SpreadSheet readonly
+--------------------
+
+To activate the readonly mode, you need to set the **readonly** property to **true** in the SpreadSheet configuration:
+
+~~~js
+webix.ready(function(){
+	webix.ui({
+		view:"spreadsheet",
+        data: base_data,
+		readonly:true
+	});
+});
+~~~
+
+From now on, users won't be able to manipulate the cells. The Instruments panel and the subbar will be hidden.
+
+{{sample
+65_spreadsheet/01_basic/04_readonly.html
+}}
+
+
+

@@ -23,3 +23,7 @@ webix.ui({
 
 $$("ss1").load("excel->../common/test.xlsx"); 
 ~~~
+
+{{sample
+65_spreadsheet/01_basic/05_excel.html
+}}

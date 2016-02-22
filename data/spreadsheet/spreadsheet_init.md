@@ -24,9 +24,7 @@ webix.ready(function(){
     webix.ui({
 		view:"spreadsheet",
         //loaded data object
-		data: base_data,
-        //enabling math functions
-		math:true
+		data: base_data
 	});
 });
 ~~~

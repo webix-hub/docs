@@ -4,8 +4,8 @@ SpreadSheet
 API Reference
 ---------------
 
-- [Methods, properties and events](api__refs__ui.spreadsheet.html)
-- [Samples](http://localhost/spreadsheet/samples/)
+- [Methods, properties and events](api/refs/ui.spreadsheet.md)
+- [Samples](http://docs.webix.com/samples/65_spreadsheet/index.html)
 
 
 <div class="h2">Overview</div>
