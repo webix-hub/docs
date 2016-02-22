@@ -124,8 +124,7 @@ activeTitle:true, //false by default
 data:[...]
 ~~~
 
-{{sample 17_datatree/01_loading/01_json_data.html}}
-
+{{editor http://webix.com/snippet/8866280c	Tree: JSON Dataset}}
 
 Tree provides several methods to manage 'open'/'close' state of a node. They are:
 
@@ -196,9 +195,7 @@ tree = webix.ui({ view:'tree', ...});
 tree.filter("#value#", "abc");//leaves in the tree just items that contain text 'abc' 
 ~~~
 
-{{sample
-	17_datatree/04_api/03_filter.html
-}}
+{{editor http://webix.com/snippet/bcc6852c	Filtering}}
 
 Read more on the topic in article datatree/filtering.md.
 
@@ -215,9 +212,7 @@ tree = webix.ui({ view:'tree', ...});
 tree.sort("#value#", "asc");//sorts all nodes (parent, child) 
 ~~~
 
-{{sample
-	17_datatree/04_api/02_sort.html
-}}
+{{editor http://webix.com/snippet/009f9215	Sorting}}
 
 Read more on the topic in article datatree/sorting.md.
 

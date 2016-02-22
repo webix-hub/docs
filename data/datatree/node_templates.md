@@ -50,7 +50,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 17_datatree/02_checkbox/01_basic.html}} 
+{{editor http://webix.com/snippet/269bd339  2-state Checkboxes}}
 
 The tree above will render items featuring an expans-collapse icon, checkbox and file/folder icon.
 
@@ -225,7 +225,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 17_datatree/03_styles/09_custom_type.html}}
+{{editor http://webix.com/snippet/630448f9  Custom Type}}
 
 If you need to apply this type to several trees, you can define the type object separately and then refer to it by its **name**: 
 
@@ -243,6 +243,6 @@ var tree2 = webix.ui({
 });
 ~~~
 
-{{sample 17_datatree/03_styles/09_custom_type.html}}
+{{editor http://webix.com/snippet/630448f9  Custom Type}}
 
 More about type implementation for data components can be found in the [Type implementation](desktop/type.md) article. 

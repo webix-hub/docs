@@ -51,7 +51,7 @@ tree = new webix.ui({
 //or 
 tree.parse(treedata)
 ~~~
-{{sample 17_datatree/01_loading/01_json_data.html}}
+{{editor http://webix.com/snippet/8866280c  Tree: JSON Dataset}}
 
 
 Loading from a data file
@@ -73,7 +73,7 @@ tree = new webix.ui({
 //or
 tree.load('data/data.xml', 'xml');
 ~~~
-{{sample 17_datatree/01_loading/01_json_data.html}}
+{{editor http://webix.com/snippet/8866280c  Tree: JSON Dataset}}
 
 Loading linear (list-like) data
 -------------------------------
@@ -95,9 +95,7 @@ tree = new webix.ui({
 });
 ~~~
 
-{{sample
-	17_datatree/01_loading/07_load_group.html
-}}
+{{editor http://webix.com/snippet/cde04dce  Tree: Plain JSON Data with Client-side Grouping}}
 
 Loading from a database
 -----------------------
@@ -141,7 +139,7 @@ $data = new TreeDataConnector($conn, "MySQL");  //initializes the connector obje
 $data->render_table("packages_tree","id","value, state","","parent_id");
 ~~~
 
-{{sample 17_datatree/16_dyn_loading/01_dyn_loading.html }}
+{{editor http://webix.com/snippet/3eab7daf  Dynamic Loading}}
 
 @index:
 

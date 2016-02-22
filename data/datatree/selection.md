@@ -17,9 +17,7 @@ tree = new webix.ui({
 })
 ~~~
 
-{{sample
-	17_datatree/04_api/01_selection.html
-}}
+{{editor http://webix.com/snippet/732ebf7a	Selection}}
 
 Multiple selection 
 -------------------
@@ -36,9 +34,7 @@ tree = new webix.ui({
 })
 ~~~
 
-{{sample
-	17_datatree/04_api/04_multi_select.html
-}}
+{{editor http://webix.com/snippet/4185d3c7	Multiline Selection}}
 
 
 Related methods
