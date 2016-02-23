@@ -6,13 +6,14 @@ onBeforeSplit
 
 @params:
 
-- cell
-- value
+- row			number			the number of the row that the span starts with
+- column		number			the number of the column that the span starts with
+- value			string			the value of the span
 - group
 
 @example:
 
-$$("ss").attachEvent("onBeforeSplit", function(cell, value, group){
+$$("ssheet").attachEvent("onBeforeSplit", function(row, column, value, group){
 	// some code here
     return true;
 });

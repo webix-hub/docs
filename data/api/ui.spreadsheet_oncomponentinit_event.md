@@ -2,16 +2,13 @@ onComponentInit
 =============
 
 @short:
-	fires when the views that compose spreadsheet are initialized
+	fires when spreadsheet is initialized
 
 @params:
 
-@returns: 
-
-- view?
 
 @example:
-$$("ss").attachEvent("onComponentInit", function(){
+$$("ssheet").attachEvent("onComponentInit", function(){
     // some code here
 });
 

@@ -21,3 +21,5 @@ $$("ssheet").getCellValue(2, 3);
 @template:	api_method
 @descr:
 
+@relatedapi:
+api/ui.spreadsheet_setcellvalue.md

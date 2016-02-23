@@ -7,18 +7,21 @@ getStyle
 
 @params:
 
-- cell		object		the cell object
+- row			number			the number of the row
+- column		number			the number of the column
 
 @returns:
 
-- style		the style set for the cell
+- style		string		the style set for the cell
 
 
 
 @example:
 
-$$("ss").getStyle(cell);
+$$("ssheet").getStyle(row, column);
 
 @template:	api_method
 @descr:
 
+@relatedapi:
+api/ui.spreadsheet_setstyle.md

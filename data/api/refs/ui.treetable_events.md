@@ -3,7 +3,7 @@ Events
 
 {{api
 - api/link/ui.treetable_onafteradd_event.md - fires after adding item to datastore
-- api/link/ui.treetable_onafterareaadd_event.md - 
+- api/link/ui.treetable_onafterareaadd_event.md - fires after a select area was added
 - api/link/ui.treetable_onafterblockselect_event.md - event occurs after block selection
 - api/link/ui.treetable_onafterclose_event.md - fires after the branch has been closed
 - api/link/ui.treetable_onaftercolumndrop_event.md - fires after the column has been dragged and dropped to the target position
@@ -47,6 +47,7 @@ Events
 - api/link/ui.treetable_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.treetable_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.treetable_oncheck_event.md - fires when a checkbox is checked or unchecked in the datatable item
+- api/link/ui.treetable_oncollectvalues_event.md - 
 - api/link/ui.treetable_oncolumnresize_event.md - fires when width of column was changed
 - api/link/ui.treetable_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.treetable_ondataupdate_event.md - fires when data item is in update process
@@ -131,6 +132,7 @@ Events
 - api/link/ui.treetable_onbindrequest_event.md
 - api/link/ui.treetable_onblur_event.md
 - api/link/ui.treetable_oncheck_event.md
+- api/link/ui.treetable_oncollectvalues_event.md
 - api/link/ui.treetable_oncolumnresize_event.md
 - api/link/ui.treetable_ondatarequest_event.md
 - api/link/ui.treetable_ondataupdate_event.md

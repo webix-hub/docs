@@ -2,7 +2,7 @@ reset
 =============
 
 @short:
-	resets the size of SpreadSheet to the specified set of columns and rows
+	resets the SpreadSheet settings to the initial state
 
 @params:
 

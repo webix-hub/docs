@@ -11,6 +11,7 @@ Others
 - api/link/ui.excelviewer_$dropallow_other.md - can be redefine if you need custom drop rules
 - api/link/ui.excelviewer_$getsize_other.md - returns the current size of the component
 - api/link/ui.excelviewer_$height_other.md - current height of the view
+- api/ui.excelviewer_$onload_other.md - 
 - api/link/ui.excelviewer_$scope_other.md - scope for resolving event and method names
 - api/link/ui.excelviewer_$setsize_other.md - sets the component size
 - api/link/ui.excelviewer_$skin_other.md - the method which will be called when skin is defined
@@ -36,6 +37,7 @@ Others
 - api/link/ui.excelviewer_$dropallow_other.md
 - api/link/ui.excelviewer_$getsize_other.md
 - api/link/ui.excelviewer_$height_other.md
+- api/ui.excelviewer_$onload_other.md
 - api/link/ui.excelviewer_$scope_other.md
 - api/link/ui.excelviewer_$setsize_other.md
 - api/link/ui.excelviewer_$skin_other.md

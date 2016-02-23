@@ -38,10 +38,14 @@ Setting the count of rows and columns
 If you need to specify a certain number of columns or rows in the SpreadSheet, make use of the api/ui.spreadsheet_columncount_config.md and api/ui.spreadsheet_rowcount_config.md properties.
 
 ~~~js
-// setting the number of columns
-$$("ss").config.columnCount = 10;
-// setting the number of rows
-$$("ss").config.rowCount = 20;
+webix.ui({
+	view:"spreadsheet",
+	data: base_data,
+    // setting the number of columns
+	columnCount:10,
+    // setting the number of rows
+    rowCount:20
+});
 ~~~
 
 {{sample

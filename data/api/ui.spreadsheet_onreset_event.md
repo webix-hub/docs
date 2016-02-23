@@ -2,9 +2,12 @@ onReset
 =============
 
 @short:
-	fires when the sizes of the spreadsheet were reset
+	fires when the settings of SpreadSheet are reset to the initial state
 
 @params:
+
+- columns		number			the number of columns in spreadsheet
+- rows			number			the number of rows in spreadsheet
 
 @example:
 $$("ss").attachEvent("onReset", function(){

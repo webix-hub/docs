@@ -7,12 +7,13 @@ onCellChange
 
 @params:
 
-- row
-- column
-- value
+- row			number			the number of the row 
+- column		number			the number of the column 
+- value			string			the value of the cell
+
 
 @example:
-$$("ss").attachEvent("onCellChange", function(row, column, value){
+$$("ssheet").attachEvent("onCellChange", function(row, column, value){
     // some code here
 });
 

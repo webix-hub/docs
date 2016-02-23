@@ -1,4 +1,4 @@
-unDo
+undo
 =============
 
 
@@ -19,3 +19,8 @@ $$("ss").undo(id);
 @template:	api_method
 @descr:
 
+@relatedapi:
+api/ui.spreadsheet_redo.md
+
+@related:
+desktop/undo.md

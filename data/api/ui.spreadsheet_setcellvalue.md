@@ -6,15 +6,18 @@ setCellValue
 
 @params:
 
-- cell		object			the cell's object
-- value		string			the value that should be set for the cell
-
+- row			number			the row's number
+- column		object			the column's number
+- value			string			the value that should be set for the cell
 
 
 @example:
 
-$$("ss").setCellValue(cell,value);
+$$("ssheet").setCellValue(row, column, value);
 
 @template:	api_method
 @descr:
+
+@relatedapi:
+api/ui.spreadsheet_getcellvalue.md
 

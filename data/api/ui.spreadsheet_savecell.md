@@ -6,13 +6,13 @@ saveCell
 
 @params:
 
-- cell		object		the cell's object
-
+- row			number		the row's number
+- column		number		the column's number
 
 
 @example:
 
-$$("ss").saveCell(cell);
+$$("ssheet").saveCell(row, column);
 
 @template:	api_method
 @descr:
