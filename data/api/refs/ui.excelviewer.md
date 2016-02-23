@@ -152,7 +152,7 @@ dummy stub
 
 {{api
 - api/link/ui.excelviewer_onafteradd_event.md - fires after adding item to datastore
-- api/link/ui.excelviewer_onafterareaadd_event.md - 
+- api/link/ui.excelviewer_onafterareaadd_event.md - fires after a select area was added
 - api/link/ui.excelviewer_onafterblockselect_event.md - event occurs after block selection
 - api/link/ui.excelviewer_onaftercolumndrop_event.md - fires after the column has been dragged and dropped to the target position
 - api/link/ui.excelviewer_onaftercolumndroporder_event.md - fires after the column order was changed with the help of drag-and-drop
@@ -192,6 +192,7 @@ dummy stub
 - api/link/ui.excelviewer_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.excelviewer_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.excelviewer_oncheck_event.md - fires when a checkbox is checked or unchecked in the datatable item
+- api/link/ui.excelviewer_oncollectvalues_event.md - 
 - api/link/ui.excelviewer_oncolumnresize_event.md - fires when width of column was changed
 - api/link/ui.excelviewer_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.excelviewer_ondataupdate_event.md - fires when data item is in update process
@@ -340,6 +341,7 @@ dummy stub
 - api/link/ui.excelviewer_$dropallow_other.md - can be redefine if you need custom drop rules
 - api/link/ui.excelviewer_$getsize_other.md - returns the current size of the component
 - api/link/ui.excelviewer_$height_other.md - current height of the view
+- api/ui.excelviewer_$onload_other.md - 
 - api/link/ui.excelviewer_$scope_other.md - scope for resolving event and method names
 - api/link/ui.excelviewer_$setsize_other.md - sets the component size
 - api/link/ui.excelviewer_$skin_other.md - the method which will be called when skin is defined
