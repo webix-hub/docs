@@ -22,9 +22,7 @@ tree = new webix.ui({
 ~~~
 *{common.icon()} template adds '+'/'-' icons to the nodes, {common.folder()} - adds folder icons.*
 
-{{sample
-	17_datatree/02_checkbox/01_basic.html
-}}
+{{editor http://webix.com/snippet/269bd339	2-state Checkboxes}}
 
 3-state checkboxes
 ---------------------
@@ -83,9 +81,7 @@ tree = new webix.ui({
 });
 ~~~
 
-{{sample
-	17_datatree/02_checkbox/02_three_state.html
-}}
+{{editor http://webix.com/snippet/108197fa	3-state Checkboxes}}
 
 Manipulations with checkboxes
 --------------------------

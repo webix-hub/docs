@@ -29,9 +29,7 @@ var tree = new webix.ui({
 });
 ~~~
 
-{{sample
-	17_datatree/05_edit/01_selection.html
-}}
+{{editor http://webix.com/snippet/69d362d1	Editing in Tree}}
 
 
 Types of editors
@@ -70,7 +68,7 @@ var tree = new webix.ui({
 });
 ~~~
 
-{{sample 17_datatree/05_edit/01_selection.html }}
+{{editor http://webix.com/snippet/69d362d1	Editing in Tree}}
 
 <h3 id="select">select</h3>
 

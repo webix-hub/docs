@@ -20,9 +20,7 @@ Sorting Tree on button click
 </script>
 ~~~
 
-{{sample
-	17_datatree/04_api/02_sort.html
-}}
+{{editor http://webix.com/snippet/009f9215  Sorting}}
 
 
 Custom sorting functions
@@ -66,6 +64,4 @@ function sortMakes(a,b){
 ~~~
 Note, Tree sorts data by levels starting from the lastest nesting level, i.e. at first car models of each make are sorted, then car makes themselves.  
 
-{{sample
-	17_datatree/04_api/05_sort_custom.html
-}}
+{{editor http://webix.com/snippet/350ac66d  Custom Sorting}}

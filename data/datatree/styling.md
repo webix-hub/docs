@@ -84,9 +84,7 @@ tree = new webix.ui({
 });
 ~~~
 
-{{sample
-	17_datatree/03_styles/01_treelines.html
-}}
+{{editor http://webix.com/snippet/e85c92e3  Lines}}
 
 *Note, you still have a possibility to define your custom style for lines and apply it through the api/link/ui.tree_css_config.md parameter (see details in the [first part](#awholetree)).*
 
@@ -144,7 +142,7 @@ The simplest way to change folder and file icons for all tree nodes is to **rede
 
 <img src="desktop/custom_tree_folders.png"/>
 
-{{sample 17_datatree/03_styles/07_custom_folders.html}}
+{{editor http://webix.com/snippet/f65f4b05  Custom Folders}}
 
 ###Using Custom Images as Icons
 
@@ -172,7 +170,7 @@ The root item gets **webix_icon_home** CSS class. All you have to do is to set t
 }
 ~~~
 
-{{sample 17_datatree/03_styles/03_icons.html}}
+{{editor http://webix.com/snippet/048f54a3  Icons}}
 
 If icon titles are stored under an **image** property in the dateset, they are applied within a [node template](datatree/node_templates.md): 
 
@@ -190,6 +188,6 @@ webix.ui({
 });
 ~~~
 
-{{sample 17_datatree/03_styles/05_custom_icons.html}}
+{{editor http://webix.com/snippet/8db752d0  Custom Icons}}
 
 You can study Webix **tree node templates** in detail [separately](datatree/node_templates.md).

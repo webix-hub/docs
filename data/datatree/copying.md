@@ -21,9 +21,7 @@ tree = new webix.ui({
 	clipboard:"insert"
 });
 ~~~
-{{sample 
-	17_datatree/19_copypaste/03_paste_insert.html
-}}
+{{editor http://webix.com/snippet/c1125a1e	Pasting New Items}}
 
 'Modify' copying
 -----------------------
@@ -46,9 +44,7 @@ tree = new webix.ui({
 });
 ~~~
 
-{{sample 
-	17_datatree/19_copypaste/02_paste_modify.html 
-}}
+{{editor http://webix.com/snippet/a0492d1c	Pasting Items' Titles}}
 
 'Insert' copying
 -------------------
@@ -68,9 +64,7 @@ tree = new webix.ui({
 });
 ~~~
 
-{{sample 
-	17_datatree/19_copypaste/03_paste_insert.html
-}}
+{{editor http://webix.com/snippet/c1125a1e	Pasting New Items}}
 
 
 Custom copying
@@ -99,9 +93,7 @@ tree.attachEvent("onPaste", function(text) {
 ~~~
 *Tree invokes the api/link/ui.tree_onpaste_event.md event when the user presses CTRL+V keys combination.*
 
-{{sample 
-	17_datatree/19_copypaste/04_paste_custom.html
-}}
+{{editor http://webix.com/snippet/4c655c8e	Custom Clipboard Operations}}
 
 
 @keyword: 

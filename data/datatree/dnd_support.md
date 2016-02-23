@@ -19,9 +19,7 @@ tree = new webix.ui({
 })
 ~~~
 
-{{sample
-	17_datatree/22_dnd/01_basic_dnd.html
-}}
+{{editor http://webix.com/snippet/e29ffd38	Enabling Drag-and-drop in Tree}}
 	
 The 'order' mode
 -------------------------
@@ -44,9 +42,7 @@ webix.ui({
 });
 ~~~
 
-{{sample
-17_datatree/22_dnd/07_order_mode.html
-}}
+{{editor http://webix.com/snippet/255c760b	The 'order' DnD Mode}}
 
 The 'source-target' mode
 -----------------------------
@@ -74,9 +70,8 @@ treeB = new webix.ui({
 	drag:"target"
 });
 ~~~
-{{sample
-	17_datatree/22_dnd/05_drop_next.html
-}}
+
+{{editor http://webix.com/snippet/f5874db4	Custom Dropping Behaviour}}
 
 Advanced
 --------------------------------------------
@@ -105,9 +100,8 @@ treea.attachEvent("onBeforeDrag", function(context, ev){
 	context.html = "&nbsp;&nbsp;"+context.source.length+" item(s)";
 });
 ~~~
-{{sample
-	17_datatree/22_dnd/03_multidrag.html
-}}
+
+{{editor http://webix.com/snippet/0199387f	Custom Text of the Dragging Items}}
 
 ###Denying dragging specific items {#denying_dragging}
 To deny dragging specific items you can use the api/link/ui.tree_onbeforedrag_event.md event and return *false* each time you want to block the operation.
@@ -150,12 +144,10 @@ tree.attachEvent("onBeforeDrop", function(context, ev){
 	}
 });
 ~~~
-{{sample
-	17_datatree/22_dnd/05_drop_next.html
-}}<br>
-{{sample
-	17_datatree/22_dnd/04_drop_as_child.html
-}}
+
+{{editor http://webix.com/snippet/f5874db4	Custom Dropping Behaviour}}
+<br>
+{{editor http://webix.com/snippet/c5eba8d7	Custom Dropping Behaviour. Denying Dropping}}
 
 ###Related events {#events}
 
