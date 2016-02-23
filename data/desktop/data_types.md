@@ -10,6 +10,25 @@ components.
 - **Data Drivers** that with processing lofic for each format are descriped in [Data Drivers](helpers/data_drivers.md);
 - **Customization of Data Types** by changing default Driver behavior - [Customizing Data Types](desktop/custom_data_types.md).  
 
+All in all, Webix supports the following data types: 
+
+- *json* - default
+- *xml* 
+- *jsarray* - plain JS array
+- *html* - parsing data from HTML markup
+- *csv* - comma separated values
+- *excel* - custom data type for parsing Exccel files
+
+~~~js
+webix.ui({
+	rows:[
+    	{ view:"list", data:json_data },
+    	{ view:"datatable", columns:[...], datatype:"xml", data:xml_data }
+    ]
+});
+
+~~~
+
 Data Type Samples
 -------------------
 
@@ -81,6 +100,26 @@ Samuel, Oregon, 32
 By default line anf field **delimiters** are "\n"(new line) and ","(comma) respectively. 
 
 To change the logic of CSV parsing for the application components, look up the [related article](desktop/custom_data_types.md#customizingcsvparsinglogic).
+
+###Excel
+
+Excel datatype presents a set of parsing rules for Excel files loaded as binary data: 
+
+~~~js
+{ view:"list", url:"binary->files/data.xlsx", datatype:"excel"}
+~~~
+
+Excel data will be parsed into a simple JS array (as with "jsarray" datatype).
+
+~~~js
+[
+	[ "Nanny", "Alabama", "45" ],
+	[ "Derek", "New-York", "23"],
+	[ "Samuel", "Oregon", "32"]
+]
+~~~
+
+Check [Excelviewer](desktop/excelviewer.md) documentation for details.
 
 ##Hierarchical Data {#hi}
 

@@ -1,13 +1,14 @@
 Data Drivers
 ============
 
-There are 5 default data drivers: 
+There are 6 default data drivers: 
 
 - *json*
 - *xml*
 - *html*
 - *csv*
 - *jsarray*
+- *excel*
 
 
 Customizing data driver

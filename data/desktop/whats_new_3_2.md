@@ -27,6 +27,8 @@ Version 3.2
 - support for proxy and editable columns in [File Manager](desktop/file_manager.md)
 - "missed values" support in [Pivot Table](desktop/pivot.md)
 - [drag](api/link/ui.list_drag_config.md) order for [x-lists](desktop/xlist.md)
+- binary [proxy](desktop/server_proxy.md) for reading files as ArrayBuffer
+- excel [data driver](desktop/data_types.md) (and datatype) for parsing the contents of Excel files. Used in [Excelviewer](desktop/excelviewer.md) and [Spreadsheet](desktop/spreadsheet.md)
 
 
 ##Fixes
