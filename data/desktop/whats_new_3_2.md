@@ -3,6 +3,13 @@ Version 3.2
 
 <span class="release_date">released on February 24, 2016</span>
 
+## Breaking Changes
+- Datatable methods exportToPDF() and exportToExcel() as well as Pivot methods toPDF() and toExcel() aren't available anymore. 
+Use [webix.toPDF()](api/_topdf.md) and [webix.toExcel()](api/_toexcel.md) methods instead. 
+
+Check the [Migration Guide](migration.md#webix3132) for more details.
+
+
 ##New Features
 
 - [Spreadsheet](desktop/spreadsheet.md) widget (PRO edition)

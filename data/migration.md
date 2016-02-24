@@ -1,6 +1,22 @@
 Migration to latest Webix version
 =================================
 
+Webix 3.1 -> 3.2
+----------------
+
+###Export API
+
+Old export functionality of Datatable and Pivot is removed in version 3.2.
+
+The methods exportToPDF() and exportToExcel() of Datatable and the methods toPDF() and toExcel() of Pivot are no longer available.
+You should use common methods api/_topdf.md and api/_toexcel.md for these components instead:
+
+~~~js
+webix.toPDF($$("myPivot"));
+
+webix.toExcel($$("myDatatable"));
+~~~
+
 
 Webix 3.0 -> 3.1
 ----------------

@@ -68,7 +68,7 @@ Events
 - api/ui.datatable_onselectchange_event.md - fires when selection is changed in a DataTable
 - api/ui.datatable_onstructureload_event.md - fires when the structure of DataTable (columns configuration) is initialized
 - api/ui.datatable_onstructureupdate_event.md - fires when structure of datatable was changed ( column added, hidden or reconfigured )
-- api/ui.datatable_onsubviewclose_event.md - 
+- api/ui.datatable_onsubviewclose_event.md - fires after a subview or a subrow is closed
 - api/ui.datatable_onsubviewcreate_event.md - fires after a subview was created
 - api/ui.datatable_onsubviewopen_event.md - fires after a subview or a subrow is opened
 - api/ui.datatable_onsubviewrender_event.md - fires each time subview is rendered

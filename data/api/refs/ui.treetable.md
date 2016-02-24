@@ -258,6 +258,7 @@ var treetable = webix.ui({
 - api/link/ui.treetable_onselectchange_event.md - fires when selection is changed in a DataTable
 - api/link/ui.treetable_onstructureload_event.md - fires when the structure of DataTable (columns configuration) is initialized
 - api/link/ui.treetable_onstructureupdate_event.md - fires when structure of datatable was changed ( column added, hidden or reconfigured )
+- api/link/ui.treetable_onsubviewclose_event.md - fires after a subview or a subrow is closed
 - api/link/ui.treetable_onsubviewcreate_event.md - fires after a subview was created
 - api/link/ui.treetable_onsubviewopen_event.md - fires after a subview or a subrow is opened
 - api/link/ui.treetable_onsubviewrender_event.md - fires each time subview is rendered
