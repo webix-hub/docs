@@ -11,10 +11,10 @@ API Reference
 <div class="h2">Overview</div>
 
 
-Webix SpreadSheet is a component intended for creating tables with structures of different complexity.
+Webix SpreadSheet is a component intended for creating tables and performing various operations with their data and appearance.
 
 Webix SpreadSheet represents a web-tool for making tables online and keeping all the data locally. Thus, all the information in your reports and accounts will be kept secure and always at hand.
-The ready document can be exported into an Excel, and you can import an Excel document into SpreadSheet as well.
+The ready-made document can be exported into an Excel file, and you can import an Excel document into SpreadSheet as well.
 
 The component includes all the necessary functionality for handy work with data presented in the tabular form. You can edit and format the content of cells, resize cells,
 apply diverse styles, fonts and borders' types, align text and merge cells in rows and columns. Mathematical functions are also included. The component can be localized according to the rules
@@ -58,7 +58,7 @@ of various languages.
                 <li>spreadsheet/howto.md</li>
             </ul>
 		</td>
-		<td class='topic_description'>Describes possible operations with Kanban Board and its elements.</td>
+		<td class='topic_description'>Describes possible operations with SpreadSheet and its elements.</td>
 	</tr>
 	</tbody>
 </table>
