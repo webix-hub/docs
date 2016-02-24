@@ -38,7 +38,7 @@ $$("mylist").removeUndo(id);
 
 As a parameter the method takes the id of an item.
 
-- api/undo_ignoreundo.md - ignores the undo history track. The method is useful if you want the applied changes not to be reverted by the undo() method in future.
+- api/undo_ignoreundo.md - calls a function that will be ignored in the undo history track. The method is useful if you want the applied changes not to be reverted by the undo() method in future.
 
 ~~~js
 $$("mylist").ignoreUndo(function(){

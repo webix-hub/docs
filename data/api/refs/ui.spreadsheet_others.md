@@ -2,7 +2,8 @@ Others
 =======
 
 {{api
-- api/ui.spreadsheet_$exportview_other.md - the method that will be called when a view is exported
+- api/link/ui.spreadsheet_$$_other.md - locates sub-item by id
+- api/ui.spreadsheet_$exportview_other.md - returns an exported view, allows customizing the options of the exported view
 - api/link/ui.spreadsheet_$getsize_other.md - returns the current size of the component
 - api/link/ui.spreadsheet_$height_other.md - current height of the view
 - api/link/ui.spreadsheet_$setsize_other.md - sets the component size
@@ -14,6 +15,7 @@ Others
 }}
 
 @index:
+- api/link/ui.spreadsheet_$$_other.md
 - api/ui.spreadsheet_$exportview_other.md
 - api/link/ui.spreadsheet_$getsize_other.md
 - api/link/ui.spreadsheet_$height_other.md
