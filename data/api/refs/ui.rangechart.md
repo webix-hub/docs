@@ -1,10 +1,10 @@
 ui.rangechart 
 =============
 
+{{memo RangeChart inherits from desktop/chart.md and gives the possibility to display in detail some data of a data component limited by frame. This component is useful for controlling and visualizing data of another data component.
 
-dummy stub
-
-{{todo replace with real description. }}
+Check desktop/range_chart.md documentation for more details
+. }}
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.chart.md">ui.chart</a>, <a href="api/refs/group.md">Group</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
@@ -130,7 +130,6 @@ dummy stub
 - api/link/ui.rangechart_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.rangechart_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.rangechart_data_config.md - JavaScript array containing data for the component
-- api/link/ui.rangechart_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.rangechart_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.rangechart_datatype_config.md - the type of loaded data
 - api/link/ui.rangechart_disablelines_config.md - disapbles graph lines with radar chart

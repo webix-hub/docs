@@ -6,10 +6,17 @@ rowCount
 
 @type: number
 @example:
-$$("ss").config.rowCount = 20;
-    		
+webix.ui({
+    view:"spreadsheet",
+    data: base_data,
+    rowCount:20
+});
 
 @template:	api_config
 @descr:
 
+@relatedapi:
+api/ui.spreadsheet_columncount_config.md
 
+@related:
+spreadsheet/config.md#settingthecountofrowsandcolumns

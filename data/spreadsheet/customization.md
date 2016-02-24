@@ -6,12 +6,12 @@ SpreadSheet consists of two main parts: a toolbar with instruments panel and a s
 The full structure of SpreadSheet can be presented:
 
 - Toolbar:
- - Undo/Redo buttons
- - Font section: Font family and Font size selectors
- - Text section: Font weight buttons and Font color selector (colorboard)
- - Cell section: Background color selector, Borders selector with colorboard and Merge button
- - Align section: Horizontal and vertical align buttons and Word wrap button
- - Format section with the selector of the cell's content format 
+ - the Undo/Redo buttons
+ - Font section: the Font-family and Font-size selectors
+ - Text section: the Font-weight buttons and the Font color selector (colorboard)
+ - Cell section: the Background color selector, the Borders selector with colorboard and the Merge button
+ - Align section: the Horizontal and Vertical Align buttons and the Word Wrap button
+ - Format section with the Format selector of the cell's content
 - DataTable
 
 
@@ -70,22 +70,25 @@ To add a custom button, you should specify its name in the array of buttons of t
 
 If you don't want to show the block's name, add the "$" sign before the block's name.
 
+<img src="spreadsheet/custom_buttons.png">
+
 ~~~js
  buttons: {
  	"$title": [{
  		view: "label", width: 150, label: "My SpreadSheet"
  	}],
  	"undo": ["undo","redo"],
- 	"font": ["font-family","font-size"],
  	"text": ["font-weight","font-style","text-decoration","color"],
- 	"cell": ["background","borders","span"],
- 	"align": ["text-align","vertical-align","wrap"],
  	"My Block": [{
  		view: "button", name: "my-button", width: 100, label: "My Button",
  		tooltip: "Click this button", click: function(){webix.message("Click")}
  	}]
  }
 ~~~
+
+{{sample  
+65_spreadsheet/03_customization/01_buttons.html
+}}
 
 Customizing Datatable
 -----------------------

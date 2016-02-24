@@ -2,16 +2,16 @@ splitCell
 =============
 
 @short:
-	splits the cell that was made by merging several cells 
+	splits the cells' span that was made by merging several cells 
 
 @params:
 
-- cell		object		the cell's object
-
+- row			number		the number of the row that the span starts with
+- column		number		the number of the column that the span starts with
 
 @example:
 
-$$("ss").splitCell(cell);
+$$("ssheet").splitCell(row, column);
 
 @template:	api_method
 @descr:

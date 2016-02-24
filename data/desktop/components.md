@@ -89,7 +89,7 @@ Data components are used to present data of a specified type on the page. Such c
     <div>
 		<a href="desktop/range_chart.md">
 			<img src="desktop/icons/rangechart.png"/>
-			<br>Range Chart
+			<br>RangeChart
 		</a>
     </div>
     <div>
