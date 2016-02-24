@@ -22,7 +22,7 @@ Methods
 - api/link/ui.spreadsheet_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.spreadsheet_getparentview.md - returns the parent view of the component
 - api/ui.spreadsheet_getrow.md - returns the row of the spreadsheet by id
-- api/ui.spreadsheet_getselectedid.md - returns the ids of selected cells
+- api/ui.spreadsheet_getselectedid.md - returns the ids of all cells in a select area
 - api/ui.spreadsheet_getstyle.md - returns the style set for the cell
 - api/link/ui.spreadsheet_gettopparentview.md - returns top parent view
 - api/link/ui.spreadsheet_hasevent.md - checks whether the component has the specified event
@@ -36,13 +36,13 @@ Methods
 - api/link/ui.spreadsheet_parse.md - loads data to the component from an inline data source
 - api/link/ui.spreadsheet_reconstruct.md - rebuilds the layout
 - api/ui.spreadsheet_redo.md - remakes the action that was reverted by the undo action
-- api/ui.spreadsheet_refresh.md - repaints either the whole spreadsheet or a certain element in it
+- api/ui.spreadsheet_refresh.md - repaints spreadsheet
 - api/link/ui.spreadsheet_removeview.md - removes view from layout-like component
-- api/ui.spreadsheet_reset.md - resets the size of SpreadSheet to the specified set of columns and rows
+- api/ui.spreadsheet_reset.md - resets the SpreadSheet settings to the initial state
 - api/link/ui.spreadsheet_resize.md - adjusts the view to a new size
 - api/link/ui.spreadsheet_resizechildren.md - resizes all children of the calling component
 - api/ui.spreadsheet_savecell.md - saves changes made in the cell
-- api/ui.spreadsheet_serialize.md - serializes data to a JSON object
+- api/ui.spreadsheet_serialize.md - serializes SpreadSheet data to a JSON object
 - api/ui.spreadsheet_setcellvalue.md - sets a value for the cell
 - api/ui.spreadsheet_setstyle.md - sets a style for a cell
 - api/link/ui.spreadsheet_show.md - makes the component visible
