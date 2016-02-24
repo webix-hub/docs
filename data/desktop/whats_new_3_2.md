@@ -33,6 +33,11 @@ Version 3.2
 
 ##Fixes
 
+- header spans during hide and show of datatable columns
+- edit operations in datatable and 0 value
+- columns filtering in datatable
+- incorrect focus for toggle buttons
+- history track in case of dynamic loading
 - dynamic loading for Treetable
 - call scrollTo after Datatable reload
 - get suggested value from Suggest list without selection in it
