@@ -28,12 +28,10 @@ Methods
 - api/link/ui.spreadsheet_hasevent.md - checks whether the component has the specified event
 - api/link/ui.spreadsheet_hide.md - hides the view
 - api/link/ui.spreadsheet_index.md - returns the cell index in the layout collection
-- api/link/ui.spreadsheet_innerid.md - returns the unique inner ID of an item
 - api/link/ui.spreadsheet_isenabled.md - checks whether the view is enabled
 - api/link/ui.spreadsheet_isvisible.md - checks whether the view is visible
-- api/link/ui.spreadsheet_load.md - loads data from an external data source.
 - api/link/ui.spreadsheet_mapevent.md - routes events from one object to another
-- api/link/ui.spreadsheet_parse.md - loads data to the component from an inline data source
+- api/ui.spreadsheet_redo.md - 
 - api/link/ui.spreadsheet_reconstruct.md - rebuilds the layout
 - api/ui.spreadsheet_redo.md - remakes the action that was reverted by the undo action
 - api/ui.spreadsheet_refresh.md - repaints spreadsheet
@@ -47,8 +45,8 @@ Methods
 - api/ui.spreadsheet_setstyle.md - sets a style for a cell
 - api/link/ui.spreadsheet_show.md - makes the component visible
 - api/link/ui.spreadsheet_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
-- api/ui.spreadsheet_splitcell.md - splits the cell that was made by merging several cells
-- api/link/ui.spreadsheet_ui.md - allows to create new ui, which isd will be locked in parent id space
+- api/ui.spreadsheet_splitcell.md - splits the cells' span that was made by merging several cells
+- api/ui.spreadsheet_undo.md - 
 - api/link/ui.spreadsheet_unbind.md - breaks "bind" link
 - api/link/ui.spreadsheet_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/ui.spreadsheet_undo.md - reverts the last change made to an item
@@ -81,12 +79,10 @@ Methods
 - api/link/ui.spreadsheet_hasevent.md
 - api/link/ui.spreadsheet_hide.md
 - api/link/ui.spreadsheet_index.md
-- api/link/ui.spreadsheet_innerid.md
 - api/link/ui.spreadsheet_isenabled.md
 - api/link/ui.spreadsheet_isvisible.md
-- api/link/ui.spreadsheet_load.md
 - api/link/ui.spreadsheet_mapevent.md
-- api/link/ui.spreadsheet_parse.md
+- api/ui.spreadsheet_redo.md
 - api/link/ui.spreadsheet_reconstruct.md
 - api/ui.spreadsheet_redo.md
 - api/ui.spreadsheet_refresh.md
@@ -101,7 +97,7 @@ Methods
 - api/link/ui.spreadsheet_show.md
 - api/link/ui.spreadsheet_showbatch.md
 - api/ui.spreadsheet_splitcell.md
-- api/link/ui.spreadsheet_ui.md
+- api/ui.spreadsheet_undo.md
 - api/link/ui.spreadsheet_unbind.md
 - api/link/ui.spreadsheet_unblockevent.md
 - api/ui.spreadsheet_undo.md

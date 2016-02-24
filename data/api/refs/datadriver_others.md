@@ -3,7 +3,7 @@ Others
 
 {{api
 - api/datadriver_csv_other.md - the parser for data of the CSV format.
-- api/datadriver_excel_other.md - 
+- api/datadriver_excel_other.md - parser for uploaded Excel files or loaded as ArrayBuffer
 - api/datadriver_html_other.md - the parser for data of the HTML format.
 - api/datadriver_htmltable_other.md - the parser for HTML tables.
 - api/datadriver_jsarray_other.md - the parser for data of the JSArray format.

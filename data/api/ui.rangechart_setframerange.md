@@ -25,11 +25,14 @@ The parameters of the range object are the following:
 - end - (number) id of the item that ends the range, or value of the property that is defined in the api/ui.rangechart_frameid_config.md parameter
 - eindex - (number) index of the item that ends the range 
 
-You can also set either only ids or only indexes as parameters:
+It is possible to specify in the data range either ids or indexes of the starting and the ending data items of the range. 
+
+What is more, you can set the id of the starting item and the index of the ending one and vice versa. The important thing is that there are always should be one starting value 
+and one ending value of the range. Thus, you can set the range as:
 
 ~~~js
 rangechart.setFrameRange({
-	sindex:29, 
+	start:30, 
     eindex:39
 });
 ~~~

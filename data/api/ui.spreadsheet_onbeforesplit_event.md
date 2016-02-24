@@ -8,12 +8,12 @@ onBeforeSplit
 
 - row			number			the number of the row that the span starts with
 - column		number			the number of the column that the span starts with
-- value			string			the value of the span
-- group
+- value 		array           the array with values of the deleted span 
+
 
 @example:
 
-$$("ssheet").attachEvent("onBeforeSplit", function(row, column, value, group){
+$$("ssheet").attachEvent("onBeforeSplit", function(row, column, value){
 	// some code here
     return true;
 });

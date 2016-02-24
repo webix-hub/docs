@@ -4,19 +4,6 @@ Others
 {{api
 - api/link/ui.rangechart_$getsize_other.md - returns the current size of the component
 - api/link/ui.rangechart_$height_other.md - current height of the view
-- api/ui.rangechart_$render_area_other.md - 
-- api/ui.rangechart_$render_bar_other.md - 
-- api/ui.rangechart_$render_barh_other.md - 
-- api/ui.rangechart_$render_donut_other.md - 
-- api/ui.rangechart_$render_line_other.md - 
-- api/ui.rangechart_$render_pie_other.md - 
-- api/ui.rangechart_$render_pie3d_other.md - 
-- api/ui.rangechart_$render_radar_other.md - 
-- api/ui.rangechart_$render_scatter_other.md - 
-- api/ui.rangechart_$render_spline_other.md - 
-- api/ui.rangechart_$render_stackedarea_other.md - 
-- api/ui.rangechart_$render_stackedbar_other.md - 
-- api/ui.rangechart_$render_stackedbarh_other.md - 
 - api/link/ui.rangechart_$scope_other.md - scope for resolving event and method names
 - api/link/ui.rangechart_$setsize_other.md - sets the component size
 - api/link/ui.rangechart_$skin_other.md - the method which will be called when skin is defined
@@ -35,19 +22,6 @@ Others
 @index:
 - api/link/ui.rangechart_$getsize_other.md
 - api/link/ui.rangechart_$height_other.md
-- api/ui.rangechart_$render_area_other.md
-- api/ui.rangechart_$render_bar_other.md
-- api/ui.rangechart_$render_barh_other.md
-- api/ui.rangechart_$render_donut_other.md
-- api/ui.rangechart_$render_line_other.md
-- api/ui.rangechart_$render_pie_other.md
-- api/ui.rangechart_$render_pie3d_other.md
-- api/ui.rangechart_$render_radar_other.md
-- api/ui.rangechart_$render_scatter_other.md
-- api/ui.rangechart_$render_spline_other.md
-- api/ui.rangechart_$render_stackedarea_other.md
-- api/ui.rangechart_$render_stackedbar_other.md
-- api/ui.rangechart_$render_stackedbarh_other.md
 - api/link/ui.rangechart_$scope_other.md
 - api/link/ui.rangechart_$setsize_other.md
 - api/link/ui.rangechart_$skin_other.md

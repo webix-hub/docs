@@ -5,7 +5,7 @@ Others
 - api/link/ui.toggle_$getsize_other.md - returns the current size of the component
 - api/link/ui.toggle_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.toggle_$height_other.md - current height of the view
-- api/link/ui.toggle_$renderinput_other.md - 
+- api/link/ui.toggle_$renderinput_other.md - called each time when component need to paint control's input
 - api/link/ui.toggle_$scope_other.md - scope for resolving event and method names
 - api/link/ui.toggle_$setsize_other.md - sets the component size
 - api/link/ui.toggle_$setvalue_other.md - called each time when component need to set value in related html input

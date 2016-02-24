@@ -168,9 +168,9 @@ dummy stub
 - api/link/ui.excelviewer_onafterselect_event.md - fires after a cell is selected
 - api/link/ui.excelviewer_onaftersort_event.md - fires after sorting dataset
 - api/link/ui.excelviewer_onafterunselect_event.md - fires after a cell is unselected
-- api/link/ui.excelviewer_onareadrag_event.md - 
+- api/link/ui.excelviewer_onareadrag_event.md - fires when area selection is started
 - api/link/ui.excelviewer_onbeforeadd_event.md - fires before adding item to datastore
-- api/link/ui.excelviewer_onbeforeareaadd_event.md - 
+- api/link/ui.excelviewer_onbeforeareaadd_event.md - fires before a select area is added
 - api/link/ui.excelviewer_onbeforeblockselect_event.md - event occurs before block selection
 - api/link/ui.excelviewer_onbeforecolumndrag_event.md - fires the monent you start dragging the column from its source potition
 - api/link/ui.excelviewer_onbeforecolumndrop_event.md - fires the moment you drop the column to its target position
@@ -192,7 +192,7 @@ dummy stub
 - api/link/ui.excelviewer_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.excelviewer_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.excelviewer_oncheck_event.md - fires when a checkbox is checked or unchecked in the datatable item
-- api/link/ui.excelviewer_oncollectvalues_event.md - 
+- api/link/ui.excelviewer_oncollectvalues_event.md - fires after datatable has collected options
 - api/link/ui.excelviewer_oncolumnresize_event.md - fires when width of column was changed
 - api/link/ui.excelviewer_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.excelviewer_ondataupdate_event.md - fires when data item is in update process
@@ -236,7 +236,7 @@ dummy stub
 
 {{api
 - api/link/ui.excelviewer_animate_config.md - defines or disables view change animation.
-- api/link/ui.excelviewer_areaselect_config.md - 
+- api/link/ui.excelviewer_areaselect_config.md - enables/disables area selection
 - api/link/ui.excelviewer_autoconfig_config.md - datatable adjust configuration to the data
 - api/link/ui.excelviewer_autoheight_config.md - adjusts Datatable size to the its content vertically
 - api/link/ui.excelviewer_autowidth_config.md - adjusts Datatable size to its content horizontally

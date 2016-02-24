@@ -75,7 +75,7 @@ common helpers
 
 
 {{api
-- api/_cdn_other.md - 
+- api/_cdn_other.md - returns Webix cdn location
 - api/_codebase_other.md - returns the path to the 'codebase' folder
 - api/_name_other.md - returns the name of the component (by default, 'Core')
 - api/_version_other.md - returns the current version of the library

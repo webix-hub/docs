@@ -42,6 +42,7 @@ webix.ui({
  	value:"#sales#", 
  	frameId:"time",
  	item: { radius :0 },
+    range:{ start:30, end:50 },
  	data: data
 });
 ~~~
@@ -55,9 +56,20 @@ In general, all properties of a standard [chart](desktop/chart.md) can be used t
 - **item** - defines markers that present chart's data items 
 - **data** - specifies the dataset that will be loaded to the range chart 
 
-and the only RangeChart-specific property: 
+and two RangeChart-specific properties: 
 
-- **frameId** - specifies a property in the data item, that will be used for the frame (id by default).
+- **api/ui.rangechart_frameid_config.md** - specifies a property in the data item, that will be used for the frame (id by default)
+- **api/ui.rangechart_range_config.md** - sets the data range that should be selected in the frame
+
+In the range object you should specify either ids or indexes of the starting and the ending data items of the range. 
+
+What is more, you can set the id of the starting item and the index of the ending one and vice versa. The important thing is that there are always should be one starting value 
+and one ending value of the range. Thus, you can set the range as:
+
+~~~js
+range:{ sindex:29, end:50 }
+~~~
+
 
 Setting Frame Range
 ----------------------
@@ -73,14 +85,12 @@ webix.ui({
   ready:function(){
 	this.setFrameRange({
     	start:30, 
-        sindex:29, 
-    	end:40,
-        eindex:39
+    	end:40
   	});
 });
 ~~~
 
-As parameters the setFrameRange() method takes ids and indexes of the starting and the ending data items of the range.
+As parameters the setFrameRange() method takes either ids or indexes of the starting and the ending data items of the range. 
 
 Notice that the priority of ids is higher than that of indexes. It means that in case difference between their values is great, the position of data range will be counted using the ids values.
 
@@ -155,7 +165,7 @@ var range = {
 		}
 	},
 	ready:function(){
-		this.setFrameRange(30, 40);
+		this.setFrameRange({start:30, end:40);
 	}
 };
 ~~~

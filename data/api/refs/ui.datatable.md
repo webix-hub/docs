@@ -203,9 +203,9 @@ var datatable = webix.ui({
 - api/link/ui.datatable_onaftersort_event.md - fires after sorting dataset
 - api/ui.datatable_onafterunselect_event.md - 
 - api/ui.datatable_onafterunselect_event.md - fires after a cell is unselected
-- api/ui.datatable_onareadrag_event.md - 
+- api/ui.datatable_onareadrag_event.md - fires when area selection is started
 - api/link/ui.datatable_onbeforeadd_event.md - fires before adding item to datastore
-- api/ui.datatable_onbeforeareaadd_event.md - 
+- api/ui.datatable_onbeforeareaadd_event.md - fires before a select area is added
 - api/ui.datatable_onbeforeblockselect_event.md - event occurs before block selection
 - api/ui.datatable_onbeforecolumndrag_event.md - fires the monent you start dragging the column from its source potition
 - api/ui.datatable_onbeforecolumndrop_event.md - fires the moment you drop the column to its target position
@@ -227,7 +227,7 @@ var datatable = webix.ui({
 - api/link/ui.datatable_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.datatable_onblur_event.md - fires when focus is moved out of the view
 - api/ui.datatable_oncheck_event.md - fires when a checkbox is checked or unchecked in the datatable item
-- api/ui.datatable_oncollectvalues_event.md - 
+- api/ui.datatable_oncollectvalues_event.md - fires after datatable has collected options
 - api/ui.datatable_oncolumnresize_event.md - fires when width of column was changed
 - api/link/ui.datatable_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.datatable_ondataupdate_event.md - fires when data item is in update process
@@ -271,7 +271,7 @@ var datatable = webix.ui({
 
 {{api
 - api/link/ui.datatable_animate_config.md - defines or disables view change animation.
-- api/ui.datatable_areaselect_config.md - 
+- api/ui.datatable_areaselect_config.md - enables/disables area selection
 - api/ui.datatable_autoconfig_config.md - datatable adjust configuration to the data
 - api/ui.datatable_autoheight_config.md - adjusts Datatable size to the its content vertically
 - api/ui.datatable_autowidth_config.md - adjusts Datatable size to its content horizontally

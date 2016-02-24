@@ -8,7 +8,7 @@ Others
 - api/link/ui.multitext_$height_other.md - current height of the view
 - api/link/ui.multitext_$render_other.md - code called after rending control
 - api/link/ui.multitext_$rendericon_other.md - renders icon for the control
-- api/link/ui.multitext_$renderinput_other.md - 
+- api/link/ui.multitext_$renderinput_other.md - called each time when component need to paint control's input
 - api/link/ui.multitext_$renderlabel_other.md - renders html for the label
 - api/link/ui.multitext_$scope_other.md - scope for resolving event and method names
 - api/link/ui.multitext_$setsize_other.md - sets the component size

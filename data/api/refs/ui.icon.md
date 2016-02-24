@@ -131,7 +131,7 @@ var icon = webix.ui({
 - api/link/ui.icon_$getsize_other.md - returns the current size of the component
 - api/link/ui.icon_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.icon_$height_other.md - current height of the view
-- api/link/ui.icon_$renderinput_other.md - 
+- api/link/ui.icon_$renderinput_other.md - called each time when component need to paint control's input
 - api/link/ui.icon_$scope_other.md - scope for resolving event and method names
 - api/link/ui.icon_$setsize_other.md - sets the component size
 - api/link/ui.icon_$setvalue_other.md - called each time when component need to set value in related html input

@@ -3,14 +3,14 @@ $exportView
 
 
 @short:
-	the method that will be called when a view is exported
+	returns an exported view, allows customizing the options of the exported view
 
 @type: function
 
 @example:
 webix.protoUI({
     view:"myview",
-	$exportView: function $exportView(options) {
+	$exportView: function(options) {
 		webix.extend(options, { 
         	header: false, 
             rawValues: true, 

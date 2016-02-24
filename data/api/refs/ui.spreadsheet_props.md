@@ -9,8 +9,6 @@ Properties
 - api/ui.spreadsheet_columncount_config.md - the number of columns in the SpreadSheet
 - api/link/ui.spreadsheet_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.spreadsheet_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.spreadsheet_data_config.md - JavaScript array containing data for the component
-- api/link/ui.spreadsheet_datatype_config.md - the type of loaded data
 - api/link/ui.spreadsheet_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.spreadsheet_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.spreadsheet_height_config.md - sets the height of the component
@@ -34,7 +32,6 @@ Properties
 - api/link/ui.spreadsheet_rows_config.md - array of views objects arranged vertically
 - api/ui.spreadsheet_subbar_config.md - adds a view between the toolbar and the datatable
 - api/link/ui.spreadsheet_type_config.md - defines the layout borders
-- api/link/ui.spreadsheet_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.spreadsheet_visiblebatch_config.md - sets the batch that will be shown initially
 - api/link/ui.spreadsheet_width_config.md - sets the width of the component
 }}
@@ -47,8 +44,6 @@ Properties
 - api/ui.spreadsheet_columncount_config.md
 - api/link/ui.spreadsheet_container_config.md
 - api/link/ui.spreadsheet_css_config.md
-- api/link/ui.spreadsheet_data_config.md
-- api/link/ui.spreadsheet_datatype_config.md
 - api/link/ui.spreadsheet_disabled_config.md
 - api/link/ui.spreadsheet_gravity_config.md
 - api/link/ui.spreadsheet_height_config.md
@@ -72,7 +67,6 @@ Properties
 - api/link/ui.spreadsheet_rows_config.md
 - api/ui.spreadsheet_subbar_config.md
 - api/link/ui.spreadsheet_type_config.md
-- api/link/ui.spreadsheet_url_config.md
 - api/link/ui.spreadsheet_visiblebatch_config.md
 - api/link/ui.spreadsheet_width_config.md
 

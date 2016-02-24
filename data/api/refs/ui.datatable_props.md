@@ -3,7 +3,7 @@ Properties
 
 {{api
 - api/link/ui.datatable_animate_config.md - defines or disables view change animation.
-- api/ui.datatable_areaselect_config.md - 
+- api/ui.datatable_areaselect_config.md - enables/disables area selection
 - api/ui.datatable_autoconfig_config.md - datatable adjust configuration to the data
 - api/ui.datatable_autoheight_config.md - adjusts Datatable size to the its content vertically
 - api/ui.datatable_autowidth_config.md - adjusts Datatable size to its content horizontally
