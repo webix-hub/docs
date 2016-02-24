@@ -26,7 +26,7 @@ var spreadsheet = webix.ui({
 - [Samples](http://docs.webix.com/samples/65_spreadsheet/index.html)
 
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/ui.layout.md">ui.layout</a>, <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
+<a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/idspace.md">IdSpace</a>, <a href="api/refs/ui.layout.md">ui.layout</a>, <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
 
 <div class='h2'>Methods</div>
@@ -58,11 +58,14 @@ var spreadsheet = webix.ui({
 - api/link/ui.spreadsheet_hasevent.md - checks whether the component has the specified event
 - api/link/ui.spreadsheet_hide.md - hides the view
 - api/link/ui.spreadsheet_index.md - returns the cell index in the layout collection
+- api/link/ui.spreadsheet_innerid.md - returns the unique inner ID of an item
 - api/link/ui.spreadsheet_isenabled.md - checks whether the view is enabled
 - api/link/ui.spreadsheet_isvisible.md - checks whether the view is visible
+- api/link/ui.spreadsheet_load.md - loads data from an external data source.
 - api/link/ui.spreadsheet_mapevent.md - routes events from one object to another
-- api/ui.spreadsheet_redo.md - remakes the action that was reverted by the undo action
+- api/link/ui.spreadsheet_parse.md - loads data to the component from an inline data source
 - api/link/ui.spreadsheet_reconstruct.md - rebuilds the layout
+- api/ui.spreadsheet_redo.md - remakes the action that was reverted by the undo action
 - api/ui.spreadsheet_refresh.md - repaints either the whole spreadsheet or a certain element in it
 - api/link/ui.spreadsheet_removeview.md - removes view from layout-like component
 - api/ui.spreadsheet_reset.md - resets the size of SpreadSheet to the specified set of columns and rows
@@ -75,9 +78,10 @@ var spreadsheet = webix.ui({
 - api/link/ui.spreadsheet_show.md - makes the component visible
 - api/link/ui.spreadsheet_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
 - api/ui.spreadsheet_splitcell.md - splits the cell that was made by merging several cells
-- api/ui.spreadsheet_undo.md - reverts the last change made to an item
+- api/link/ui.spreadsheet_ui.md - allows to create new ui, which isd will be locked in parent id space
 - api/link/ui.spreadsheet_unbind.md - breaks "bind" link
 - api/link/ui.spreadsheet_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
+- api/ui.spreadsheet_undo.md - reverts the last change made to an item
 }}
 
 
@@ -85,7 +89,9 @@ var spreadsheet = webix.ui({
 
 
 {{api
+- api/link/ui.spreadsheet_onafterload_event.md - fires after data loading is complete
 - api/ui.spreadsheet_onafterselect_event.md - fires after a cell has been selected
+- api/link/ui.spreadsheet_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/ui.spreadsheet_onbeforespan_event.md - fires before cells' are merged
 - api/ui.spreadsheet_onbeforesplit_event.md - fires before merged cells are splitted
 - api/link/ui.spreadsheet_onbindrequest_event.md - fires when the component is ready to receive data from the master component
@@ -94,6 +100,7 @@ var spreadsheet = webix.ui({
 - api/ui.spreadsheet_ondataparse_event.md - fires when data parsing is started
 - api/ui.spreadsheet_ondataserialize_event.md - fires when serialization of data is stared
 - api/link/ui.spreadsheet_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.spreadsheet_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/ui.spreadsheet_onreset_event.md - fires when the sizes of the spreadsheet were reset
 }}
 
@@ -103,11 +110,13 @@ var spreadsheet = webix.ui({
 {{api
 - api/link/ui.spreadsheet_animate_config.md - defines or disables view change animation.
 - api/link/ui.spreadsheet_borderless_config.md - used to hide the component borders
-- api/ui.spreadsheet_buttons_config.md - 
+- api/ui.spreadsheet_buttons_config.md - contains the names of buttons blocks with arrays of buttons' names
 - api/link/ui.spreadsheet_cols_config.md - array of views objects arranged horizontally
 - api/ui.spreadsheet_columncount_config.md - the number of columns in the SpreadSheet
 - api/link/ui.spreadsheet_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.spreadsheet_css_config.md - the name of a css class that will be applied to the view container
+- api/link/ui.spreadsheet_data_config.md - JavaScript array containing data for the component
+- api/link/ui.spreadsheet_datatype_config.md - the type of loaded data
 - api/link/ui.spreadsheet_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.spreadsheet_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.spreadsheet_height_config.md - sets the height of the component
@@ -124,13 +133,14 @@ var spreadsheet = webix.ui({
 - api/link/ui.spreadsheet_padding_config.md - defines the space between the element borders and content (applies the specified value to all sides).
 - api/link/ui.spreadsheet_paddingx_config.md - sets the right and left padding (applies the specified value to both sides)
 - api/link/ui.spreadsheet_paddingy_config.md - sets the top and bottom padding (applies the specified value to both sides)
-- api/ui.spreadsheet_readonly_config.md - 
+- api/ui.spreadsheet_readonly_config.md - sets readonly mode for SpreadSheet
 - api/ui.spreadsheet_resizecell_config.md - defines whether cells of spreadsheet will be resized
 - api/link/ui.spreadsheet_responsive_config.md - enables responsive mode for horizontal layout
 - api/ui.spreadsheet_rowcount_config.md - the number of rows in the SpreadSheet
 - api/link/ui.spreadsheet_rows_config.md - array of views objects arranged vertically
-- api/ui.spreadsheet_subbar_config.md - 
+- api/ui.spreadsheet_subbar_config.md - adds a view between the toolbar and the datatable
 - api/link/ui.spreadsheet_type_config.md - defines the layout borders
+- api/link/ui.spreadsheet_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.spreadsheet_visiblebatch_config.md - sets the batch that will be shown initially
 - api/link/ui.spreadsheet_width_config.md - sets the width of the component
 }}
@@ -143,11 +153,11 @@ var spreadsheet = webix.ui({
 
 
 {{api
+- api/link/ui.spreadsheet_$$_other.md - locates sub-item by id
 - api/ui.spreadsheet_$exportview_other.md - the method that will be called when a view is exported
 - api/link/ui.spreadsheet_$getsize_other.md - returns the current size of the component
 - api/link/ui.spreadsheet_$height_other.md - current height of the view
 - api/ui.spreadsheet_$onload_other.md - the handler that is used in SpreadSheet instead of the standard data driver
-- api/ui.spreadsheet_$save_other.md - the method that will be called when data is saved
 - api/link/ui.spreadsheet_$setsize_other.md - sets the component size
 - api/link/ui.spreadsheet_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.spreadsheet_$view_other.md - reference to top html element of the view

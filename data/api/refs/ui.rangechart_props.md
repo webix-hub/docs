@@ -50,6 +50,7 @@ Properties
 - api/link/ui.rangechart_pieinnertext_config.md - sets the template for the pie inner labels
 - api/link/ui.rangechart_preset_config.md - applies the predefined chart configuration object with the specified name
 - api/link/ui.rangechart_radius_config.md - the radius of the bar's rounding
+- api/ui.rangechart_range_config.md - 
 - api/link/ui.rangechart_ready_config.md - event handler called just after the component has been completely initialized
 - api/link/ui.rangechart_removemissed_config.md - defines how to treat items in case of reloading
 - api/link/ui.rangechart_save_config.md - defines URLs for data saving
@@ -119,6 +120,7 @@ Properties
 - api/link/ui.rangechart_pieinnertext_config.md
 - api/link/ui.rangechart_preset_config.md
 - api/link/ui.rangechart_radius_config.md
+- api/ui.rangechart_range_config.md
 - api/link/ui.rangechart_ready_config.md
 - api/link/ui.rangechart_removemissed_config.md
 - api/link/ui.rangechart_save_config.md
