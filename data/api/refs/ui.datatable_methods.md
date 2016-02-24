@@ -6,6 +6,7 @@ Methods
 - api/ui.datatable_addcellcss.md - adds a css class to the cell
 - api/link/ui.datatable_addcss.md - applied CSS class to a component item
 - api/ui.datatable_addrowcss.md - adds a css class to the row
+- api/ui.datatable_addselectarea.md - adds a select area
 - api/ui.datatable_addspan.md - adds colspan or rowspan to the datatable
 - api/link/ui.datatable_adjust.md - adjusts the component to the size of the parent HTML container
 - api/ui.datatable_adjustcolumn.md - adjusts a column to the width of the content
@@ -44,6 +45,7 @@ Methods
 - api/ui.datatable_filterbyall.md - refilters DataTable by all specified filters
 - api/link/ui.datatable_find.md - returns rows that match the criterion
 - api/link/ui.datatable_focuseditor.md - moves focus to the active editor
+- api/ui.datatable_getallselectareas.md - returns an object that contains configuration objects of all select areas in the datatable
 - api/link/ui.datatable_getchildviews.md - returns child views of the calling component
 - api/ui.datatable_getcolumnconfig.md - returns the configuration object of the specified column
 - api/ui.datatable_getcolumnindex.md - returns the index of the column with the specified id
@@ -67,8 +69,10 @@ Methods
 - api/link/ui.datatable_getparentview.md - returns the parent view of the component
 - api/link/ui.datatable_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
 - api/ui.datatable_getscrollstate.md - returns the current position of scrolls
+- api/ui.datatable_getselectarea.md - returns the object of the select area
 - api/ui.datatable_getselectedid.md - returns the selected elements' ids
 - api/ui.datatable_getselecteditem.md - gets an object of the selected data item
+- api/ui.datatable_getspan.md - returns the config array for a span or null, if there are no spans
 - api/link/ui.datatable_getstate.md - returns the current state of the view
 - api/ui.datatable_getsubview.md - returns subview of the item with the given id
 - api/ui.datatable_gettext.md - returns text value of a cell
@@ -109,12 +113,14 @@ Methods
 - api/ui.datatable_removecellcss.md - remove css class from the cell of datatable
 - api/link/ui.datatable_removecss.md - removes CSS class from a component item
 - api/ui.datatable_removerowcss.md - remove css class from the row
+- api/ui.datatable_removeselectarea.md - removes a select area
 - api/ui.datatable_removespan.md - removes a rowspan/colspan from the datatable
 - api/ui.datatable_render.md - renders the specified item or the whole component
 - api/link/ui.datatable_resize.md - adjusts the view to a new size
 - api/ui.datatable_resizesubview.md - adjusts the row's size to the size of a subview
 - api/ui.datatable_scrollto.md - scrolls the view to the defined position
 - api/ui.datatable_select.md - selects the specified element
+- api/ui.datatable_selectall.md - selects all cells in the DataTable
 - api/ui.datatable_selectrange.md - selects the specified range of elements
 - api/link/ui.datatable_serialize.md - serializes data to a JSON object
 - api/ui.datatable_setcolumnwidth.md - sets the width of the specified column
@@ -134,6 +140,7 @@ Methods
 - api/link/ui.datatable_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.datatable_ungroup.md - ungroups data
 - api/ui.datatable_unselect.md - cancels selection of the specified element
+- api/ui.datatable_unselectall.md - unselects all selected cells in a datatble
 - api/link/ui.datatable_updateitem.md - sets properties of the data item
 - api/link/ui.datatable_validate.md - validates one record or all dataset against validation rules
 - api/link/ui.datatable_validateeditor.md - validates data in currently active editor
@@ -144,6 +151,7 @@ Methods
 - api/ui.datatable_addcellcss.md
 - api/link/ui.datatable_addcss.md
 - api/ui.datatable_addrowcss.md
+- api/ui.datatable_addselectarea.md
 - api/ui.datatable_addspan.md
 - api/link/ui.datatable_adjust.md
 - api/ui.datatable_adjustcolumn.md
@@ -182,6 +190,7 @@ Methods
 - api/ui.datatable_filterbyall.md
 - api/link/ui.datatable_find.md
 - api/link/ui.datatable_focuseditor.md
+- api/ui.datatable_getallselectareas.md
 - api/link/ui.datatable_getchildviews.md
 - api/ui.datatable_getcolumnconfig.md
 - api/ui.datatable_getcolumnindex.md
@@ -205,8 +214,10 @@ Methods
 - api/link/ui.datatable_getparentview.md
 - api/link/ui.datatable_getprevid.md
 - api/ui.datatable_getscrollstate.md
+- api/ui.datatable_getselectarea.md
 - api/ui.datatable_getselectedid.md
 - api/ui.datatable_getselecteditem.md
+- api/ui.datatable_getspan.md
 - api/link/ui.datatable_getstate.md
 - api/ui.datatable_getsubview.md
 - api/ui.datatable_gettext.md
@@ -247,12 +258,14 @@ Methods
 - api/ui.datatable_removecellcss.md
 - api/link/ui.datatable_removecss.md
 - api/ui.datatable_removerowcss.md
+- api/ui.datatable_removeselectarea.md
 - api/ui.datatable_removespan.md
 - api/ui.datatable_render.md
 - api/link/ui.datatable_resize.md
 - api/ui.datatable_resizesubview.md
 - api/ui.datatable_scrollto.md
 - api/ui.datatable_select.md
+- api/ui.datatable_selectall.md
 - api/ui.datatable_selectrange.md
 - api/link/ui.datatable_serialize.md
 - api/ui.datatable_setcolumnwidth.md
@@ -272,6 +285,7 @@ Methods
 - api/link/ui.datatable_unblockevent.md
 - api/link/ui.datatable_ungroup.md
 - api/ui.datatable_unselect.md
+- api/ui.datatable_unselectall.md
 - api/link/ui.datatable_updateitem.md
 - api/link/ui.datatable_validate.md
 - api/link/ui.datatable_validateeditor.md

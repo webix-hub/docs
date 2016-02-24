@@ -1,0 +1,1 @@
+@link: api/ui.chart_series_config.md

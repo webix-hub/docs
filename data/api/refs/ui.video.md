@@ -6,12 +6,12 @@ ui.video
 
 ### Constructor
 
-{{snippet HTML}}
+{{snippet HTML. }}
 ~~~html
 <div id="video_div" style="width:300px; height:200px;"></div>
 ~~~
 
-{{snippet JS}}
+{{snippet JS. }}
 ~~~js
 var video = webix.ui({
 	view:"video",
@@ -28,8 +28,6 @@ var video = webix.ui({
 
 - [Overview of the Video Widget](desktop/video.md)
 - [Samples](http://docs.webix.com/samples/27_video/index.html)
-
-
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
@@ -112,7 +110,7 @@ var video = webix.ui({
 - api/link/ui.video_$height_other.md - current height of the view
 - api/link/ui.video_$scope_other.md - scope for resolving event and method names
 - api/link/ui.video_$setsize_other.md - sets the component size
-- api/link/ui.video_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.video_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.video_$view_other.md - reference to top html element of the view
 - api/link/ui.video_$width_other.md - current width of the view
 - api/link/ui.video_config_other.md - all options from initial component configuration

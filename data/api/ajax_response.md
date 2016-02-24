@@ -19,6 +19,7 @@ webix.ajax().response("blob").get("patch.zip", function(text, data){
 
 Possible values to pass into this method are: 
 
-- "blob" - binary data object (fully supported)
+- "blob" - binary data object
+- "arraybuffer" - binary data object
 - "document" - web page object 
 

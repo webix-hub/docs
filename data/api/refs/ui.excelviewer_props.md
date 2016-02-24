@@ -3,9 +3,10 @@ Properties
 
 {{api
 - api/link/ui.excelviewer_animate_config.md - defines or disables view change animation.
+- api/link/ui.excelviewer_areaselect_config.md - enables/disables area selection
 - api/link/ui.excelviewer_autoconfig_config.md - datatable adjust configuration to the data
-- api/link/ui.excelviewer_autoheight_config.md - adjusts DataTable to the parent container size vertically
-- api/link/ui.excelviewer_autowidth_config.md - adjusts DataTable to the parent container size horizontally
+- api/link/ui.excelviewer_autoheight_config.md - adjusts Datatable size to the its content vertically
+- api/link/ui.excelviewer_autowidth_config.md - adjusts Datatable size to its content horizontally
 - api/link/ui.excelviewer_blockselect_config.md - enables/disables block selection
 - api/link/ui.excelviewer_borderless_config.md - used to hide the component borders
 - api/link/ui.excelviewer_checkboxrefresh_config.md - controls behavior of checkbox editors in grid
@@ -92,6 +93,7 @@ Properties
 
 @index:
 - api/link/ui.excelviewer_animate_config.md
+- api/link/ui.excelviewer_areaselect_config.md
 - api/link/ui.excelviewer_autoconfig_config.md
 - api/link/ui.excelviewer_autoheight_config.md
 - api/link/ui.excelviewer_autowidth_config.md

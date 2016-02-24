@@ -22,14 +22,13 @@ var scrollview = webix.ui({
        {template:"Lorem ipsum dolor sit", autoheight:true},
      ]
    }
-});       
+});    
 ~~~
 
 ### Where to start
 
 - [Overview of the Scrollview Widget](desktop/scrollview.md)
 - [Samples](http://docs.webix.com/samples/04_template/index.html)
-
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
@@ -125,7 +124,7 @@ var scrollview = webix.ui({
 - api/link/ui.scrollview_$height_other.md - current height of the view
 - api/link/ui.scrollview_$scope_other.md - scope for resolving event and method names
 - api/link/ui.scrollview_$setsize_other.md - sets the component size
-- api/link/ui.scrollview_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.scrollview_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.scrollview_$view_other.md - reference to top html element of the view
 - api/link/ui.scrollview_$width_other.md - current width of the view
 - api/link/ui.scrollview_config_other.md - all options from initial component configuration

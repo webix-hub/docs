@@ -39,6 +39,6 @@ Checkbox Initialization
 Webix checkbox control is based on standard HTML checkbox  yet some skins use a FontAwesome icon to render it. To switch to a standard HTML checkbox, use **customCheckbox** property: 
 
 ~~~js
-{ view:"checkbox", customeCheckbox:false} 
+{ view:"checkbox", customCheckbox:false} 
 ~~~
 

@@ -6,9 +6,9 @@ ui.htmlform
 
 The component allows you to get an HTML Form as a lib-based view, so that to use it together with the other lib components (common API, techniques, architecture etc.). Check [htmlform](desktop/htmlform.md) documentation for more detailed description.
 
-### Constructor
+## Constructor
 
-{{snippet HTML}}
+{{snippet HTML. }}
 ~~~html
 <div class="myform">
 	<div>
@@ -22,13 +22,13 @@ The component allows you to get an HTML Form as a lib-based view, so that to use
 </div>
 ~~~
 
-{{snippet JS}}
+{{snippet JS. }}
 ~~~js
 var htmlform = webix.ui({
-	view:"htmlform", 
-    id:"formView",
-    padding:5,
-	content:document.body
+  view:"htmlform", 
+  id:"formView",
+  padding:5,
+  content:document.body
 });
 ~~~
 
@@ -160,7 +160,7 @@ var htmlform = webix.ui({
 - api/link/ui.htmlform_$height_other.md - current height of the view
 - api/link/ui.htmlform_$scope_other.md - scope for resolving event and method names
 - api/link/ui.htmlform_$setsize_other.md - sets the component size
-- api/link/ui.htmlform_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.htmlform_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.htmlform_$view_other.md - reference to top html element of the view
 - api/link/ui.htmlform_$width_other.md - current width of the view
 - api/link/ui.htmlform_config_other.md - all options from initial component configuration

@@ -3,6 +3,7 @@ Events
 
 {{api
 - api/link/ui.excelviewer_onafteradd_event.md - fires after adding item to datastore
+- api/link/ui.excelviewer_onafterareaadd_event.md - fires after a select area was added
 - api/link/ui.excelviewer_onafterblockselect_event.md - event occurs after block selection
 - api/link/ui.excelviewer_onaftercolumndrop_event.md - fires after the column has been dragged and dropped to the target position
 - api/link/ui.excelviewer_onaftercolumndroporder_event.md - fires after the column order was changed with the help of drag-and-drop
@@ -18,7 +19,9 @@ Events
 - api/link/ui.excelviewer_onafterselect_event.md - fires after a cell is selected
 - api/link/ui.excelviewer_onaftersort_event.md - fires after sorting dataset
 - api/link/ui.excelviewer_onafterunselect_event.md - fires after a cell is unselected
+- api/link/ui.excelviewer_onareadrag_event.md - fires when area selection is started
 - api/link/ui.excelviewer_onbeforeadd_event.md - fires before adding item to datastore
+- api/link/ui.excelviewer_onbeforeareaadd_event.md - fires before a select area is added
 - api/link/ui.excelviewer_onbeforeblockselect_event.md - event occurs before block selection
 - api/link/ui.excelviewer_onbeforecolumndrag_event.md - fires the monent you start dragging the column from its source potition
 - api/link/ui.excelviewer_onbeforecolumndrop_event.md - fires the moment you drop the column to its target position
@@ -40,6 +43,7 @@ Events
 - api/link/ui.excelviewer_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.excelviewer_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.excelviewer_oncheck_event.md - fires when a checkbox is checked or unchecked in the datatable item
+- api/link/ui.excelviewer_oncollectvalues_event.md - fires after datatable has collected options
 - api/link/ui.excelviewer_oncolumnresize_event.md - fires when width of column was changed
 - api/link/ui.excelviewer_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.excelviewer_ondataupdate_event.md - fires when data item is in update process
@@ -65,7 +69,7 @@ Events
 - api/link/ui.excelviewer_onstructureupdate_event.md - fires when structure of datatable was changed ( column added, hidden or reconfigured )
 - api/ui.excelviewer_onsubviewclose_event.md - 
 - api/link/ui.excelviewer_onsubviewcreate_event.md - fires after a subview was created
-- api/link/ui.excelviewer_onsubviewopen_event.md - fires after a subview or subrow is opened
+- api/link/ui.excelviewer_onsubviewopen_event.md - fires after a subview or a subrow is opened
 - api/link/ui.excelviewer_onsubviewrender_event.md - fires each time subview is rendered
 - api/link/ui.excelviewer_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.excelviewer_onswipey_event.md - occurs on a vertical swipe movement
@@ -80,6 +84,7 @@ Events
 
 @index:
 - api/link/ui.excelviewer_onafteradd_event.md
+- api/link/ui.excelviewer_onafterareaadd_event.md
 - api/link/ui.excelviewer_onafterblockselect_event.md
 - api/link/ui.excelviewer_onaftercolumndrop_event.md
 - api/link/ui.excelviewer_onaftercolumndroporder_event.md
@@ -95,7 +100,9 @@ Events
 - api/link/ui.excelviewer_onafterselect_event.md
 - api/link/ui.excelviewer_onaftersort_event.md
 - api/link/ui.excelviewer_onafterunselect_event.md
+- api/link/ui.excelviewer_onareadrag_event.md
 - api/link/ui.excelviewer_onbeforeadd_event.md
+- api/link/ui.excelviewer_onbeforeareaadd_event.md
 - api/link/ui.excelviewer_onbeforeblockselect_event.md
 - api/link/ui.excelviewer_onbeforecolumndrag_event.md
 - api/link/ui.excelviewer_onbeforecolumndrop_event.md
@@ -117,6 +124,7 @@ Events
 - api/link/ui.excelviewer_onbindrequest_event.md
 - api/link/ui.excelviewer_onblur_event.md
 - api/link/ui.excelviewer_oncheck_event.md
+- api/link/ui.excelviewer_oncollectvalues_event.md
 - api/link/ui.excelviewer_oncolumnresize_event.md
 - api/link/ui.excelviewer_ondatarequest_event.md
 - api/link/ui.excelviewer_ondataupdate_event.md

@@ -4,7 +4,7 @@ ui.button
 
 {{memo A clickable button. }}
 
-The control has a collection of preset looks and can be used both as a stand-alone view and as a part of a form or toolbar. Fully customizable. Check [button](desktop/button.md) documentation for more detailed description.
+The control has a collection of preset looks and can be used both as a stand-alone view and as a part of a form or a toolbar. Fully customizable. Check [button](desktop/button.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -110,7 +110,7 @@ var button = webix.ui({
 - api/ui.button_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/ui.button_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/ui.button_label_config.md - the text label of the control
-- api/ui.button_labelposition_config.md - positions label in relation the control
+- api/ui.button_labelposition_config.md - positions label in relation to the control
 - api/link/ui.button_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.button_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.button_minheight_config.md - sets the minimal height for the view
@@ -137,10 +137,11 @@ var button = webix.ui({
 - api/link/ui.button_$getsize_other.md - returns the current size of the component
 - api/ui.button_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.button_$height_other.md - current height of the view
+- api/ui.button_$renderinput_other.md - called each time when component need to paint control's input
 - api/link/ui.button_$scope_other.md - scope for resolving event and method names
 - api/link/ui.button_$setsize_other.md - sets the component size
 - api/ui.button_$setvalue_other.md - called each time when component need to set value in related html input
-- api/link/ui.button_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.button_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.button_$view_other.md - reference to top html element of the view
 - api/link/ui.button_$width_other.md - current width of the view
 - api/link/ui.button_config_other.md - all options from initial component configuration

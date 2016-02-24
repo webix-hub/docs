@@ -7,12 +7,12 @@ Others
 - api/link/ui.text_$height_other.md - current height of the view
 - api/ui.text_$render_other.md - code called after rending control
 - api/ui.text_$rendericon_other.md - renders icon for the control
-- api/ui.text_$renderinput_other.md - renders html for the input
+- api/link/ui.text_$renderinput_other.md - called each time when component need to paint control's input
 - api/ui.text_$renderlabel_other.md - renders html for the label
 - api/link/ui.text_$scope_other.md - scope for resolving event and method names
 - api/link/ui.text_$setsize_other.md - sets the component size
 - api/link/ui.text_$setvalue_other.md - called each time when component need to set value in related html input
-- api/link/ui.text_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.text_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.text_$view_other.md - reference to top html element of the view
 - api/link/ui.text_$width_other.md - current width of the view
 - api/link/ui.text_config_other.md - all options from initial component configuration
@@ -27,7 +27,7 @@ Others
 - api/link/ui.text_$height_other.md
 - api/ui.text_$render_other.md
 - api/ui.text_$rendericon_other.md
-- api/ui.text_$renderinput_other.md
+- api/link/ui.text_$renderinput_other.md
 - api/ui.text_$renderlabel_other.md
 - api/link/ui.text_$scope_other.md
 - api/link/ui.text_$setsize_other.md

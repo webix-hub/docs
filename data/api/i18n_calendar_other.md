@@ -9,10 +9,13 @@ calendar
 
 @example:
 webix.i18n.calendar: {
-		monthFull:["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-		monthShort:["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-		dayFull:["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-    	dayShort:["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+	monthFull:["January", "February", "March", "April", "May", "June", 
+      "July", "August", "September", "October", "November", "December"],
+	monthShort:["Jan", "Feb", "Mar", "Apr", "May", "Jun", 
+       "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+	dayFull:["Sunday", "Monday", "Tuesday", "Wednesday", 
+       "Thursday", "Friday", "Saturday"],
+    dayShort:["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 }
 webix.i18n.setLocale("en-US");    
 

@@ -73,6 +73,7 @@ DataProcessor
 - api/link/dataprocessor_rules_config.md - defines a set of rules for input field(s) of the form(htmlform)
 - api/dataprocessor_store_config.md - allows to define datastore which will be monitored for changes
 - api/dataprocessor_trackmove_config.md - enables data moving tracking
+- api/dataprocessor_undoonerror_config.md - defines whether undo will be made if server returns error response
 - api/dataprocessor_updatefromresponse_config.md - server data update mode
 - api/dataprocessor_url_config.md - server side data saving script
 }}

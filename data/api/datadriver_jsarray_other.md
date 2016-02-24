@@ -11,7 +11,7 @@ jsarray
 $$('mylist').data.driver = webix.DataDriver.jsarray;
 $$('mylist').load("data.js");
 // it is the same as
-$$('mylist').load("data.js","js");
+$$('mylist').load("data.js","jsarray");
 
 @template:	api_config
 @related:
@@ -26,8 +26,8 @@ Component data can be loaded during initialization with datasource specified by 
 
 ~~~js
 var jsarray_data = [
-		[1,"The Shawshank Redemption",1994,678790,9.2,1],
-		[2,"The Godfather",1972,511495,9.2,2]
+	[1,"The Shawshank Redemption",1994,678790,9.2,1],
+	[2,"The Godfather",1972,511495,9.2,2]
 ];
 
 webix.ui({

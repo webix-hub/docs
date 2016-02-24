@@ -22,6 +22,7 @@ dummy stub
 - api/link/ui.pdfviewer_destructor.md - destructs the calling object
 - api/link/ui.pdfviewer_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.pdfviewer_disable.md - disables the calling view (makes it dimmed and unclickable)
+- api/ui.pdfviewer_download.md - 
 - api/link/ui.pdfviewer_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.pdfviewer_getchildviews.md - returns child views of the calling component
 - api/link/ui.pdfviewer_getformview.md - returns master form for the input
@@ -35,6 +36,7 @@ dummy stub
 - api/ui.pdfviewer_load.md - 
 - api/link/ui.pdfviewer_mapevent.md - routes events from one object to another
 - api/ui.pdfviewer_nextpage.md - 
+- api/ui.pdfviewer_parse.md - 
 - api/ui.pdfviewer_prevpage.md - 
 - api/ui.pdfviewer_renderpage.md - 
 - api/link/ui.pdfviewer_resize.md - adjusts the view to a new size
@@ -80,6 +82,7 @@ dummy stub
 - api/link/ui.pdfviewer_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.pdfviewer_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.pdfviewer_disabled_config.md - indicates whether an item is enabled or not
+- api/ui.pdfviewer_downloadname_config.md - 
 - api/link/ui.pdfviewer_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.pdfviewer_height_config.md - sets the height of the component
 - api/link/ui.pdfviewer_hidden_config.md - defines whether the view will be hidden initially
@@ -106,7 +109,7 @@ dummy stub
 - api/link/ui.pdfviewer_$height_other.md - current height of the view
 - api/link/ui.pdfviewer_$scope_other.md - scope for resolving event and method names
 - api/link/ui.pdfviewer_$setsize_other.md - sets the component size
-- api/link/ui.pdfviewer_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.pdfviewer_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.pdfviewer_$view_other.md - reference to top html element of the view
 - api/link/ui.pdfviewer_$width_other.md - current width of the view
 - api/link/ui.pdfviewer_config_other.md - all options from initial component configuration

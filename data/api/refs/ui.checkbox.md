@@ -22,7 +22,6 @@ var checkbox = webix.ui({
 - [Overview of the Checkbox Control](desktop/checkbox.md)
 - [Samples](http://docs.webix.com/samples/13_form/01_controls/06_checkbox.html)
 
-
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.text.md">ui.text</a>, <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
@@ -97,7 +96,8 @@ var checkbox = webix.ui({
 {{api
 - api/link/ui.checkbox_align_config.md - the alignment of the control within the parent container
 - api/link/ui.checkbox_animate_config.md - defines or disables view change animation.
-- api/link/ui.checkbox_attributes_config.md - sets an hash of HTML input attributes that will be parsed for the Webix input control
+- api/link/ui.checkbox_attributes_config.md - sets a hash of HTML input attributes that will be parsed for the Webix input control
+- api/link/ui.checkbox_autowidth_config.md - adjusts button to its text content
 - api/link/ui.checkbox_borderless_config.md - used to hide the component borders
 - api/link/ui.checkbox_bottomlabel_config.md - sets a label under a control
 - api/link/ui.checkbox_bottompadding_config.md - sets the bottom offset of the control input
@@ -117,7 +117,8 @@ var checkbox = webix.ui({
 - api/link/ui.checkbox_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.checkbox_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.checkbox_label_config.md - the text label of the control
-- api/link/ui.checkbox_labelposition_config.md - positions label in relation the control
+- api/link/ui.checkbox_labelposition_config.md - positions label in relation to the control
+- api/ui.checkbox_labelright_config.md - positions label to the right of the checkbox control
 - api/link/ui.checkbox_labelwidth_config.md - the width of the label
 - api/link/ui.checkbox_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.checkbox_maxwidth_config.md - sets the maximum width for the view
@@ -152,12 +153,12 @@ var checkbox = webix.ui({
 - api/link/ui.checkbox_$height_other.md - current height of the view
 - api/link/ui.checkbox_$render_other.md - code called after rending control
 - api/link/ui.checkbox_$rendericon_other.md - renders icon for the control
-- api/link/ui.checkbox_$renderinput_other.md - renders html for the input
+- api/link/ui.checkbox_$renderinput_other.md - called each time when component need to paint control's input
 - api/link/ui.checkbox_$renderlabel_other.md - renders html for the label
 - api/link/ui.checkbox_$scope_other.md - scope for resolving event and method names
 - api/link/ui.checkbox_$setsize_other.md - sets the component size
 - api/link/ui.checkbox_$setvalue_other.md - called each time when component need to set value in related html input
-- api/link/ui.checkbox_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.checkbox_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.checkbox_$view_other.md - reference to top html element of the view
 - api/link/ui.checkbox_$width_other.md - current width of the view
 - api/link/ui.checkbox_config_other.md - all options from initial component configuration

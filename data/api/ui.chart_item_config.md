@@ -3,7 +3,7 @@ item
 
 
 @short:
-	defines markers that present chart's data items.
+	defines markers that present chart's data items
 
 @type: object
 @example:

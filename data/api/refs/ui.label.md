@@ -21,8 +21,6 @@ var label = webix.ui({
 
 - [Overview of the Label Control](desktop/label.md)
 - [Samples](http://docs.webix.com/samples/13_form/02_api/02_attributes.html)
-
-
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
@@ -110,7 +108,7 @@ var label = webix.ui({
 - api/link/ui.label_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.label_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.label_label_config.md - the text label of the control
-- api/link/ui.label_labelposition_config.md - positions label in relation the control
+- api/link/ui.label_labelposition_config.md - positions label in relation to the control
 - api/link/ui.label_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.label_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.label_minheight_config.md - sets the minimal height for the view
@@ -135,10 +133,11 @@ var label = webix.ui({
 - api/link/ui.label_$getsize_other.md - returns the current size of the component
 - api/link/ui.label_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.label_$height_other.md - current height of the view
+- api/link/ui.label_$renderinput_other.md - called each time when component need to paint control's input
 - api/link/ui.label_$scope_other.md - scope for resolving event and method names
 - api/link/ui.label_$setsize_other.md - sets the component size
 - api/link/ui.label_$setvalue_other.md - called each time when component need to set value in related html input
-- api/link/ui.label_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.label_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.label_$view_other.md - reference to top html element of the view
 - api/link/ui.label_$width_other.md - current width of the view
 - api/link/ui.label_config_other.md - all options from initial component configuration

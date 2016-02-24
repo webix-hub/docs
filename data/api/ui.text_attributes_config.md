@@ -3,14 +3,14 @@ attributes
 
 
 @short:
-	sets an hash of HTML input attributes that will be parsed for the Webix input control 
+	sets a hash of HTML input attributes that will be parsed for the Webix input control 
 
 @type: object
 @example:
 
 
 { view:"text", id:'field_a', attributes:{ maxlength:10 }}
-//will result in next html
+//will result in the following html
 //<input type='text' maxlength='10'>
 
 

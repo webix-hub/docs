@@ -7,15 +7,15 @@ Start
 <div class='index-pc'></div>
 <div class='index-board'>
 
-<h2>Meet Webix 3.1!</h2>
+<h2>Meet Webix 3.2!</h2>
 <ul>
-	<li><a href="desktop/sidemenu.md">Sidemenu</a> widget and <a href="desktop/sidebar.md">Sidebar</a> extension</li>
-    <li><a href="desktop/treemap.md">Treemap</a> widget</li>
-    <li>Autowidth for <a href="desktop/menu.md#workingwithmenuitems">menu items</a> and <a href="desktop/button.md">buttons</a></li>
+	<li><a href="desktop/spreadsheet.md">Spreadsheet</a> UI extension and <a href="desktop/range_chart.md">Rangechart</a> widget</li>
+    <li><a href="desktop/undo.md">Undo</a> functionality for all data widgets</li>
+    <li>Export <a href="desktop/export_pdf.md">to PDF</a> for all data widgets</li>
     
 </ul>
 
-<p> and <a href="desktop/whats_new_3_1.md">many more...</a></p>
+<p> and <a href="desktop/whats_new_3_2.md">many more...</a></p>
 <a href='http://webix.com/download/' class='index-download' title='Download Webix'></a>
 </div>
 

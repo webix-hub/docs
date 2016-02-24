@@ -25,6 +25,7 @@ dummy stub
 - api/link/ui.pdfbar_destructor.md - destructs the calling object
 - api/link/ui.pdfbar_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.pdfbar_disable.md - disables the calling view (makes it dimmed and unclickable)
+- api/ui.pdfbar_download.md - 
 - api/link/ui.pdfbar_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.pdfbar_focus.md - sets focus into the necessary component
 - api/link/ui.pdfbar_getchildviews.md - returns child views of the calling component
@@ -141,7 +142,7 @@ dummy stub
 - api/link/ui.pdfbar_$getsize_other.md - returns the current size of the component
 - api/link/ui.pdfbar_$height_other.md - current height of the view
 - api/link/ui.pdfbar_$setsize_other.md - sets the component size
-- api/link/ui.pdfbar_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.pdfbar_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.pdfbar_$view_other.md - reference to top html element of the view
 - api/link/ui.pdfbar_$width_other.md - current width of the view
 - api/link/ui.pdfbar_config_other.md - all options from initial component configuration

@@ -2,7 +2,7 @@ labelPosition
 =============
 
 
-@short: positions label in relation the control
+@short: positions label in relation to the control
 
 @values:
 - top	places label above the control

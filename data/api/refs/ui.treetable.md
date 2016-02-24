@@ -4,7 +4,7 @@ ui.treetable
 
 {{memo A control for presenting tree in a grid cell. }}
 
-The component is used to integrate a tree into an editable grid. There is a support for  in-line node editing, drag-and-drop, filtering, checkboxes etc. Check [treetable](desktop/treetable.md) documentation for more detailed description.
+The component is used to integrate a tree into an editable grid. There is a support for in-line node editing, drag-and-drop, filtering, checkboxes etc. Check [treetable](desktop/treetable.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -32,8 +32,6 @@ var treetable = webix.ui({
 
 - [Overview of the Treetable Widget](desktop/treetable.md)
 - [Samples](http://docs.webix.com/samples/15_datatable/30_treetable/index.html)
-
-
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/treeapi.md">TreeAPI</a>, <a href="api/refs/treestatecheckbox.md">TreeStateCheckbox</a>, <a href="api/refs/treedataloader.md">TreeDataLoader</a>, <a href="api/refs/treestore.md">TreeStore</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/ui.datatable.md">ui.datatable</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/group.md">Group</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/mapcollection.md">MapCollection</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/tablepaste.md">TablePaste</a>, <a href="api/refs/datastate.md">DataState</a>, <a href="api/refs/editability.md">EditAbility</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a></div>
 
@@ -191,6 +189,7 @@ var treetable = webix.ui({
 
 {{api
 - api/link/ui.treetable_onafteradd_event.md - fires after adding item to datastore
+- api/link/ui.treetable_onafterareaadd_event.md - fires after a select area was added
 - api/link/ui.treetable_onafterblockselect_event.md - event occurs after block selection
 - api/link/ui.treetable_onafterclose_event.md - fires after the branch has been closed
 - api/link/ui.treetable_onaftercolumndrop_event.md - fires after the column has been dragged and dropped to the target position
@@ -208,7 +207,9 @@ var treetable = webix.ui({
 - api/link/ui.treetable_onafterselect_event.md - fires after a cell is selected
 - api/link/ui.treetable_onaftersort_event.md - fires after sorting dataset
 - api/link/ui.treetable_onafterunselect_event.md - fires after a cell is unselected
+- api/link/ui.treetable_onareadrag_event.md - fires when area selection is started
 - api/link/ui.treetable_onbeforeadd_event.md - fires before adding item to datastore
+- api/link/ui.treetable_onbeforeareaadd_event.md - fires before a select area is added
 - api/link/ui.treetable_onbeforeblockselect_event.md - event occurs before block selection
 - api/link/ui.treetable_onbeforeclose_event.md - fires the moment you attempt to close the tree branch
 - api/link/ui.treetable_onbeforecolumndrag_event.md - fires the monent you start dragging the column from its source potition
@@ -232,6 +233,7 @@ var treetable = webix.ui({
 - api/link/ui.treetable_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.treetable_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.treetable_oncheck_event.md - fires when a checkbox is checked or unchecked in the datatable item
+- api/link/ui.treetable_oncollectvalues_event.md - fires after datatable has collected options
 - api/link/ui.treetable_oncolumnresize_event.md - fires when width of column was changed
 - api/link/ui.treetable_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.treetable_ondataupdate_event.md - fires when data item is in update process
@@ -257,7 +259,7 @@ var treetable = webix.ui({
 - api/link/ui.treetable_onstructureload_event.md - fires when the structure of DataTable (columns configuration) is initialized
 - api/link/ui.treetable_onstructureupdate_event.md - fires when structure of datatable was changed ( column added, hidden or reconfigured )
 - api/link/ui.treetable_onsubviewcreate_event.md - fires after a subview was created
-- api/link/ui.treetable_onsubviewopen_event.md - fires after a subview or subrow is opened
+- api/link/ui.treetable_onsubviewopen_event.md - fires after a subview or a subrow is opened
 - api/link/ui.treetable_onsubviewrender_event.md - fires each time subview is rendered
 - api/link/ui.treetable_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.treetable_onswipey_event.md - occurs on a vertical swipe movement
@@ -275,9 +277,10 @@ var treetable = webix.ui({
 
 {{api
 - api/link/ui.treetable_animate_config.md - defines or disables view change animation.
+- api/link/ui.treetable_areaselect_config.md - enables/disables area selection
 - api/link/ui.treetable_autoconfig_config.md - datatable adjust configuration to the data
-- api/link/ui.treetable_autoheight_config.md - adjusts DataTable to the parent container size vertically
-- api/link/ui.treetable_autowidth_config.md - adjusts DataTable to the parent container size horizontally
+- api/link/ui.treetable_autoheight_config.md - adjusts Datatable size to the its content vertically
+- api/link/ui.treetable_autowidth_config.md - adjusts Datatable size to its content horizontally
 - api/link/ui.treetable_blockselect_config.md - enables/disables block selection
 - api/link/ui.treetable_borderless_config.md - used to hide the component borders
 - api/link/ui.treetable_checkboxrefresh_config.md - controls behavior of checkbox editors in grid
@@ -380,7 +383,7 @@ var treetable = webix.ui({
 - api/link/ui.treetable_$height_other.md - current height of the view
 - api/link/ui.treetable_$scope_other.md - scope for resolving event and method names
 - api/link/ui.treetable_$setsize_other.md - sets the component size
-- api/link/ui.treetable_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.treetable_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.treetable_$view_other.md - reference to top html element of the view
 - api/link/ui.treetable_$width_other.md - current width of the view
 - api/link/ui.treetable_config_other.md - all options from initial component configuration

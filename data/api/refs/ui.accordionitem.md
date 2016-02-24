@@ -4,7 +4,7 @@ ui.accordionitem
 
 {{memo A singular pane of the accordion component. }}
 
-Each accordion pane consists of the header and body. The body of a pane can be collapsed/expanded by clicking on the appropriate header. Check [accordionitem](desktop/accordionitem.md) documentation for more detailed description.
+Each accordion pane consists of a header and a body. The body of a pane can be collapsed/expanded by clicking on the appropriate header. Check [accordionitem](desktop/accordionitem.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -32,6 +32,7 @@ var accordionitem = webix.ui({
 
 - [Overview of Accordionitem](desktop/accordionitem.md)
 - [Samples](http://docs.webix.com/samples/80_docs/accordionitem.html)
+
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
@@ -141,7 +142,7 @@ var accordionitem = webix.ui({
 - api/link/ui.accordionitem_$height_other.md - current height of the view
 - api/link/ui.accordionitem_$scope_other.md - scope for resolving event and method names
 - api/link/ui.accordionitem_$setsize_other.md - sets the component size
-- api/link/ui.accordionitem_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.accordionitem_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.accordionitem_$view_other.md - reference to top html element of the view
 - api/link/ui.accordionitem_$width_other.md - current width of the view
 - api/link/ui.accordionitem_config_other.md - all options from initial component configuration

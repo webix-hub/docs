@@ -14,7 +14,7 @@ The constructor of the viewer is the following:
 	view:"excelviewer", 
     toolbar:"toolbar", 
     excelHeader:true, 
-    url:"files/data.xlsx"
+    url:"binary->files/data.xlsx"
 }
 ~~~
 
@@ -24,6 +24,9 @@ The configuration properties are:
 - **excelHeader** - (boolean) true to use the first row of the Excel table as a column header;
 - **url** - (string) the url of the excel file that should be displayed.
 
+**Binary** [proxy](desktop/server_proxy.md) is used for loading the file, which allows to get its contents as ArrayBuffer. 
+
+The default [datatype](desktop/data_types.md) for Excel Viewer is **excel**. It is strongly recommended not to change it manually to avoid parsing inconsistency.
 
 Excel viewer API
 -----------------
@@ -36,11 +39,34 @@ loads an excel file to the viewer
 parameters:
 
 - file - (string) the name of the file to load
+- datatype - (string)	data type (should be "excel" here)
 
 ~~~js
-$$("viewer").load("data.xlsx");
+$$("viewer").load("binary->data.xlsx", "excel");
 ~~~
 
+####parse()
+
+parses file data to the viewer
+
+parameters:
+
+- file -	(object) 	uploaded file object
+- datatype -	(string)	data type (should be "excel" here)
+
+~~~js
+ { view:"uploader", value:"Select Excel File", width:200,
+    on:{
+      onBeforeFileAdd:function(upload){
+         $$("excel").clearAll();
+         $$("excel").parse(upload.file, "excel");
+           return false;
+      }
+ 	}
+}
+~~~
+
+{{sample 60_pro/10_viewers/03_excel_upload.html }}
 
 ####showSheet()
 
@@ -51,10 +77,8 @@ parameters:
 - name - (string) the name of the sheet
 
 ~~~js
-$$("viewer").load("data.xlsx");
+$$("viewer").showSheet("Data");
 ~~~
-
-
 
 Excel toolbar and its API
 ----------------
@@ -72,7 +96,6 @@ In order to render such a toolbar, the dedicated **excelbar** view should be ini
 - **id** (string) - the id of the Excel toolbar.
 
 ###Excel toolbar API
-
 
 ####getInput() 
 
@@ -125,35 +148,53 @@ $$("toolbar").setValue(value);
 ~~~
 
 
-
 ##Loading data to Excel Viewer
 
-There are two possible ways of loading data to Excel viewer:
+There are three possible ways of loading data to Excel viewer:
 
-- directly in the viewer constructor by using the **url** parameter:
+- specifying the needed file directly in the viewer constructor by using the **url** parameter:
 
 ~~~js
 {
 	view:"excelviewer", 
-    url:"files/data.xlsx"
+    url:"binary->files/data.xlsx"
 }
 ~~~
 
-- using the **load** method with the viewer's id as a parameter
+- calling the **load** method with the file name as a parameter
 
 ~~~js
 { view:"excelviewer", id:"excel", editable:true, header:false },
 ...
-$$("excel").load(upload.file);
+$$("excel").load("binary->files/data.xlsx", "excel");
 ~~~
 
-{{sample 60_pro/10_viewers/03_excel_upload.html}}
+{{sample 60_pro/10_viewers/02_excel_viewer.html }}
 
+**Binary** [proxy](desktop/server_proxy.md) is used for loading the file, which allows to get its contents as ArrayBuffer.
+The datatype is "excel".
+
+- parsing uploaded file data with the help of **parse** method
+
+~~~js
+ { view:"uploader", value:"Select Excel File", width:200,
+    on:{
+      onBeforeFileAdd:function(upload){
+         $$("excel").clearAll();
+         $$("excel").parse(upload.file, "excel");
+           return false;
+      }
+ 	}
+}
+~~~
+
+{{sample 60_pro/10_viewers/03_excel_upload.html }}
 
 ##Loading via the "excel" proxy object
 
-Excelviewer allows displaying Excel data in a datatable only. At the same time by means of using the "excel" [proxy object](desktop/server_proxy.md), 
-you can load data to any Webix data component ([list](desktop/list.md), [dataview](desktop/dataview.md), [chart](desktop/chart.md), etc). 
+Excelviewer allows displaying Excel data in a datatable only.  
+At the same time, you can load Excel files to any Webix data component ([list](desktop/list.md), [dataview](desktop/dataview.md), [chart](desktop/chart.md), etc)
+by using "binary" [proxy object](desktop/server_proxy.md) and specifying "excel" datatype. 
 
 This variant of loading allows customizing the presentation of the loaded data, such as displaying headers and controlling the number of the loaded rows.
 
@@ -161,20 +202,20 @@ This variant of loading allows customizing the presentation of the loaded data, 
 webix.ui({
   type:"space",
   cols:[
-  	{ view:"list", url:"excel->files/data.xlsx@Data[1-10]", width:320,
-    	template:"#data1#, #data2#", select:true },
-    { view:"datatable", autoConfig:true, url:"excel->files/data.xlsx@Files[1-]" }
+  	{ view:"list", url:"binary->files/data.xlsx@Data[1-10]", datatype:"excel",
+    	template:"#data1#, #data2#" },
+    { view:"datatable", autoConfig:true, url:"binary->files/data.xlsx@Files[1-]", datatype:"excel" }
   ]
 });
 ~~~
 
-The string value of the *url* property *excel->files/data.xlsx@Data[1-10]"* includes the following parts:
+The string value of the *url* property *binary->files/data.xlsx@Data[1-10]"* includes the following parts:
 
-- **excel** - the name of the proxy object
-- **files/data.xlsx** - link to the excel file
-- **@** - the delimiter that detaches the link from its parameters (can be omitted together with parameters)
-- **Data** - the name of the Excel sheet to render
-- **[1-10]** - the rows that should be rendered in the viewer
+- **binary** - the name of the proxy object
+- **files/data.xlsx** - path to the Excel file
+- **@** - optional, the delimiter that detaches the link from its parameters (can be omitted together with parameters)
+- **Data** - optional, the name of the Excel sheet to render
+- **[1-10]** - optional, the rows that should be rendered in the viewer
 
 To get more information about proxy objects read the desktop/server_proxy.md article.
 
