@@ -189,7 +189,6 @@ The datatype is "excel".
 ~~~
 
 {{sample 60_pro/10_viewers/03_excel_upload.html }}
-~~~
 
 ##Loading via the "excel" proxy object
 
