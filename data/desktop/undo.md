@@ -1,4 +1,4 @@
-Reverting Changes in Data 
+Undo for Data Components 
 ========================
 
 While working with Webix data components, you can enable the undo functionality that allows reverting changes in case server returns an error message. 

@@ -6,7 +6,7 @@ undo
 
 @params:
 
-- id		string		optional, the id of an item. All the changes made to the item will be removed
+- id		string		optional, the id of an item. All the changes made to the item will be undone
 
 @example:
 list.undo();

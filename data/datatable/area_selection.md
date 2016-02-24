@@ -81,7 +81,7 @@ The object of a certain select area can be received by passing the name of the a
 Without parameters, the method returns the object of the last select area. 
 
 The returned object will contain the mandatory parameters: start, end and preserve. It can also include the optional parameters: 
-area_name, css and handle. The detals on the parameters are given <a href="#details">here</a>.
+area_name, css and handle. The details on the parameters are given <a href="#details">here</a>.
 
 ###Multiple Area Selection
 

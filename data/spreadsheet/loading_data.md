@@ -125,7 +125,7 @@ For example:
 
 Data is loaded into SpreadSheet the same as into other Webix components. 
 
-To load data from server, you can use either the api/link/ui.proto_load.md method or the api/link/ui.proto_url_config.md parameter.
+To load data from server, you can use either the api/link/ui.spreadsheet_load.md method or the api/link/ui.spreadsheet_url_config.md parameter.
 
 - using the load method:
 
@@ -146,19 +146,17 @@ webix.ui({
 });
 ~~~
 
-To load data from an inline data source, you can use the parse method or the data parameter and specify the dataset directly in the spreadsheet configuration:
-
-- using the parse method:
+To load data from an inline data source, you can use either the api/link/ui.spreadsheet_parse.md method:
 
 ~~~js
 webix.ui({
     id:"ssheet",
 	view:"spreadsheet"
 });
-$$("ssheet").parse("data","json");
+$$("ssheet").parse(data,"json");
 ~~~
 
-- using the data parameter
+or the api/link/ui.spreadsheet_data_config.md parameter and specify the dataset directly in the spreadsheet configuration:
 
 ~~~js
 webix.ui({
@@ -167,24 +165,17 @@ webix.ui({
     	{
   			"styles": [
     			["wss1",";;center;;;;;;;;;"],
-    			["wss2",";#6E6EFF;center;;;;;;;;;"],
-    			["wss3","#FFFFFF;#6E6EFF;center;;;;;;;;;"]
+    			["wss2",";#6E6EFF;center;;;;;;;;;"]
     			...
   			],
   			"sizes": [
     			[0,1,125],
-    			[0,3,158],
-    			[0,4,137]
+    			[0,3,158]
+				...
   			],
   			"data": [
     			[1,1,"Report - July 2016","wss5"],
-    			[1,2,"","wss5"],
-    			[1,3,"","wss5"],
-    			[2,1,"Region","wss20"],
-    			[2,2,"Country","wss20"],
-    			[2,3,"Sales - Group A","wss12"],
-    			[2,4,"Sales - Group A","wss12"],
-    			[2,5,"Total","wss13"]
+    			[1,2,"","wss5"]
     			...
   			],
   			"spans": [
@@ -194,8 +185,6 @@ webix.ui({
     ]
 });
 ~~~
-
-
 
 
 ##Saving Data

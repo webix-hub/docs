@@ -2,18 +2,21 @@ onCollectValues
 =============
 
 @short:
-	fires after datatable has formed an array with options
+	fires after datatable has collected options
 
 @params:
 
+- id		string			the id of the column
+- data		object			the object that contains options
+
 @example:
-datatable.attachEvent("onCollectValues", function(){
-    //your code here
+datatable.attachEvent("onCollectValues", function(id, data){
+	if (data.values[0].value == "")
+	data.values[0].value = "Select something";
 });
 
 @template:	api_event
 @descr:
-The event fires in case options of a select filter are collected on the base of data from a datatable.
 
 
 @relatedsample:

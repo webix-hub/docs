@@ -16,16 +16,6 @@ DragOrder
 }}
 
 
-<div class='h2'>Properties</div>
-
-{{api
-- api/dragorder_layout_config.md - 
-}}
-
-
-
-
-
 <div class='h2'>Other</div>
 
 
@@ -38,7 +28,6 @@ DragOrder
 
 
 @index:
-- api/refs/dragorder_props.md
 - api/refs/dragorder_events.md
 - api/refs/dragorder_others.md
 

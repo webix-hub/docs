@@ -3,9 +3,11 @@ ignoreUndo
 
 
 @short:
-	ignores the undo history track
+	calls a function that will ignore the undo history track
 
 @params:
+
+- function			function		function for which undo history track will be disabled
 
 
 @example:

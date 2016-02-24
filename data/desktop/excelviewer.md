@@ -209,7 +209,7 @@ webix.ui({
 });
 ~~~
 
-The string value of the *url* property *excel->files/data.xlsx@Data[1-10]"* includes the following parts:
+The string value of the *url* property *binary->files/data.xlsx@Data[1-10]"* includes the following parts:
 
 - **binary** - the name of the proxy object
 - **files/data.xlsx** - path to the Excel file

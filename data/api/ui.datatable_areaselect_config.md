@@ -8,18 +8,15 @@ areaselect
 @example:
 webix.ui({
 	view:"datatable",
-    id: "table",
-    columns:[
-        { id:"rank",    header:"", css:"rank",  width:50},
-        { id:"title",   header:"Film title",    width:200},
-        { id:"year",    header:"Released",      width:80},
-        { id:"votes",   header:"Votes",         width:120},
-        { id:"rating",  header:"Rating",        width:80},
-    ],
+    columns:[...],
     areaselect:true
 }}
 
 @template:	api_config
 @descr:
 
+@related:
+datatable/area_selection.md
 
+@relatedsample:
+60_pro/01_datatable/06_api/14_area_selection.html

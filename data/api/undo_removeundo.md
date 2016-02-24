@@ -3,7 +3,7 @@ removeUndo
 
 
 @short:
-	removes the records about all the operations made to an item 
+	removes history about all the operations made to an item 
 
 @params:
 

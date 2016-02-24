@@ -6,10 +6,10 @@ setValue
 	
 
 @params:
--value	string	a color in the <i>hex</i> format	
+-value			string			a color in the <i>hex</i> format	
 
 @returns:
--value	string	a color in the <i>hex</i> format	
+-value			string			a color in the <i>hex</i> format	
 
 @example:
 webix.ui({ 
