@@ -29,6 +29,10 @@ To enable area selection in DataTable, you should specify the **areaselect** pro
 
 {{note Area selection will work only with other selection types disabled. So, the *select* and *selectcell* properties shouldn't be enabled.}}
 
+{{sample
+60_pro/01_datatable/06_api/14_area_selection.html
+}}
+
 Custom Select Area
 -------------------
 
@@ -118,14 +122,8 @@ $$("dtable").getAllSelectAreas();
 The method returns an object that contains configuration objects of all select areas in the datatable.
 The parameters of area objects are described <a href="#details">above</a>.
 
-
-
-
-
-
-
-
-
-
+{{sample
+60_pro/01_datatable/06_api/14_area_selection.html
+}}
 
 @edition:pro

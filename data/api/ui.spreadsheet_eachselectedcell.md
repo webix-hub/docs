@@ -6,12 +6,16 @@ eachSelectedCell
 
 @params:
 
-- cb
+- handler		function			the handler function
 
 
 @example:
 
-$$("ssheet").eachSelectedCell();
+$$("ssheet").eachSelectedCell(
+    function (cellId){ 
+        console.log($$("ssheet").getCellValue(row,column) )
+    }
+);
 
 @template:	api_method
 @descr:

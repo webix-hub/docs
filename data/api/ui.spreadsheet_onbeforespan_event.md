@@ -6,12 +6,13 @@ onBeforeSpan
 
 @params:
 
-- cell
-- value
+- row			number			the number of the row that the span starts with
+- column		number			the number of the column that the span starts with
+- value			string			the value of the span
 
 @example:
 
-$$("ss").attachEvent("onBeforeSpan", function(cell, value){
+$$("ssheet").attachEvent("onBeforeSpan", function(row, column, value){
 	// some code here
     return true;
 });

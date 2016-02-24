@@ -2,16 +2,16 @@ onDataSerialize
 =============
 
 @short:
-	fires when serialization of data is stared
+	fires when serialization of data is started
    
 
 @params:
 
-- data		object?		the data that needs to be serialized
+- data		string/object		the data that should be serialized
 
 
 @example:
-$$("ss").attachEvent("onDataSerialize", function(data){
+$$("ssheet").attachEvent("onDataSerialize", function(data){
     // some code here
 });
 

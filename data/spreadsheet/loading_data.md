@@ -1,7 +1,7 @@
 Loading and Saving Data in SpreadSheet
 ==============================
 
-##Specificity of Data Loading Format 
+##Data Loading Format 
 
 SpreadSheet loads data in JSON format: an object that includes 4 parameters: 
 
@@ -108,8 +108,8 @@ The row's size is set as [row_number, 0, row_height], e.g. [2,0,70].
 
 The "spans" parameter defines the values of spans. It's an array of arrays the elements of which are the following:
 
-- the number of the row
-- the number of the column
+- the number of the row that starts the span
+- the number of the column that starts the span
 - the number of columns in a span
 - the number of rows in a span
 

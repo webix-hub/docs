@@ -3,19 +3,19 @@ serialize
 
 
 @short:
-	serializes data to a JSON object
+	serializes SpreadSheet data to a JSON object
 
 @params:
 
 
 @returns:
 
-- JSON		object		serialized JSON object
+- result		object		serialized JSON object
 
 
 @example:
 
-$$("ss").serialize();
+$$("ssheet").serialize();
 
 @template:	api_method
 @descr:

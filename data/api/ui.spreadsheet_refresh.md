@@ -3,7 +3,7 @@ refresh
 
 
 @short:
-	repaints either the whole spreadsheet or a certain element in it
+	repaints spreadsheet 
 
 @params:
 

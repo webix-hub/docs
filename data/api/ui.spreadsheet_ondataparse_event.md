@@ -6,11 +6,11 @@ onDataParse
 
 @params:
 
-- data		object?		the data that needs to be parsed
+- data		string/object		data that should be parsed
 
 @example:
 
-$$("ss").attachEvent("onDataParse", function(data){
+$$("ssheet").attachEvent("onDataParse", function(data){
     // some code here
 });
 

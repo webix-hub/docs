@@ -10,7 +10,7 @@ onAfterSelect
 - id		string		the cell's id
 
 @example:
-$$("ss").attachEvent("onAfterSelect", function(id){
+$$("ssheet").attachEvent("onAfterSelect", function(id){
 	// some code here
 });
 

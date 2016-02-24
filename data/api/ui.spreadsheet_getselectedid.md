@@ -3,15 +3,15 @@ getSelectedId
 
 
 @short:
-	returns the ids of selected cells
+	returns the ids of all cells in a select area
 
 @params:
 
-- all		array		an 
+- all		
 
 @returns:
 
-- ids		string/array		the single item id or an array of ids
+- ids		array		an array of selected ids
 
 
 @example:

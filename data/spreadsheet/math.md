@@ -4,7 +4,7 @@ Math Operations in SpreadSheet
 SpreadSheet allows working with simple mathematical operations as well as with formulas. 
 The component calculates them and displays the result in the related cells.
 
-To start working with data as mathematical expressions, you should set the **math** parameter to *true*. By default, it's disabled.
+To start working with data as mathematical expressions, you should set the api/ui.spreadsheet_math_config.md parameter to *true*. By default, it's disabled.
 SpreadSheet supports native Excel math.
 
 ~~~js
@@ -18,7 +18,7 @@ var math_data = {
     ...
   ],
   "data": [
-    [ 3, 2, "Just type something like \"=A1+B2\" or \"=SUM(A1:A8)\"", "wss1" ]
+    [ 3, 2, "=SUM(B3:E3)", "wss1" ]
  	...
   ],
   "spans": [

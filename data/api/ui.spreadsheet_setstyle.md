@@ -7,15 +7,18 @@ setStyle
 
 @params:
 
-- cell		object		the cell's object
-- style		string		the style that should be set for the cell
+- row			number		the row's number
+- column		number		the column's number
+- style			string		the style that should be set for the cell
 
 
 
 @example:
 
-$$("ss").setStyle(cell, style);
+$$("ssheet").setStyle(row, column, style);
 
 @template:	api_method
 @descr:
 
+@relatedapi:
+api/ui.spreadsheet_getstyle.md
