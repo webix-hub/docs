@@ -3,8 +3,7 @@ Undo for Data Components
 
 While working with Webix data components, you can enable the undo functionality that allows reverting changes in case server returns an error message. 
 
-The undo operation can be applied to any api/refs/datastore.md-based component. It writes all the changes into the inner collection and monitors for data on the server and on the client to be the same.
-Thus, you won't have to do it yourself.
+The undo operation can be applied to any api/refs/datastore.md-based component. 
 
 To enable undo, you need to set the api/undo_undo_config.md parameter to true in the configuration of the component:
 
@@ -30,7 +29,7 @@ For example, if you add an item into the component, then change it and finally d
 
 If you want to delete all the changes made to an item and set it to the initial state, you should pass the id of this item to the undo() method.  
 
-- api/undo_removeundo.md - removes the records about all the operations made to an item the id of which is passed to the method.
+- api/undo_removeundo.md - removes history about all the operations made to an item.
 
 ~~~js
 $$("mylist").removeUndo(id);
@@ -45,3 +44,6 @@ $$("mylist").ignoreUndo(function(){
 	$$("mylist").addItem({...});
 });
 ~~~
+
+The ignoreUndo() method takes as a parameter the function for which undo history track should be disabled. 
+
