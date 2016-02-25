@@ -17,7 +17,7 @@ All in all, Webix supports the following data types:
 - *jsarray* - plain JS array
 - *html* - parsing data from HTML markup
 - *csv* - comma separated values
-- *excel* - custom data type for parsing Exccel files
+- *excel* - custom data type for parsing Excel files
 
 ~~~js
 webix.ui({

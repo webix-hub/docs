@@ -1,7 +1,7 @@
 Excel File Import
 ==================
 
-Loading data into SpreadSheet
+Loading data from Excel into SpreadSheet
 -------------------------
 
 You can easily import data from an Excel file into SpreadSheet. For this purpose, you can choose one of the ways below:
@@ -15,6 +15,10 @@ webix.ui({
     datatype:"excel"
 });
 ~~~
+
+The notation *"binary->../common/test.xlsx"* allows loading compiled files from the computer and get their content.
+
+The *"excel"* datatype allows parsing the content of a binary file and getting it in the form necessary for SpreadSheet. 
 
 2) calling the api/link/ui.spreadsheet_load.md method:
 
@@ -44,12 +48,10 @@ Parameters of the parse method are the following:
 - file - (object) uploaded file object
 - datatype - (string) data type (should be "excel" here)
 
-Loading via the "excel" proxy object
+Customizing the imported data
 --------------------------------------
 
-It's also possible to load data from and Excel file by using the "binary" proxy object and specifying the "excel" datatype.
-
-This variant of data import allows customizing the presentation of the loaded data, such as setting the name of the sheet and controlling the number of the loaded rows.
+You can customize the presentation of the loaded data: set the name of the sheet and control the number of the loaded rows.
 
 ~~~js
 webix.ui({
@@ -68,8 +70,6 @@ The string value of the *url* property *binary->files/data.xlsx@Data[1-10]"* inc
 - **[1-10]** - optional, the rows that should be rendered in the viewer
 
 To render rows starting from a certain row, you can set the rows array as [8-].
-
-To get more information about proxy objects read the desktop/server_proxy.md article.
 
 
 {{sample

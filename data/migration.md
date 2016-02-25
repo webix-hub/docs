@@ -17,6 +17,20 @@ webix.toPDF($$("myPivot"));
 webix.toExcel($$("myDatatable"));
 ~~~
 
+###Loading data into Excel Viewer
+
+The "excel" proxy was removed. 
+
+Instead, the "binary" [proxy](desktop/server_proxy.md) object is used to load files like Excel into data components and the "excel" [datatype](desktop/data_types.md) 
+is introduced for parsing Excel files. It is the default datatype for Excel Viewer. 
+
+~~~js
+webix.ui({
+    view:"spreadsheet",
+    url: "binary->../common/test.xlsx@Data[0-10]",
+    datatype:"excel"
+});
+~~~
 
 Webix 3.0 -> 3.1
 ----------------

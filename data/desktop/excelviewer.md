@@ -190,23 +190,15 @@ The datatype is "excel".
 
 {{sample 60_pro/10_viewers/03_excel_upload.html }}
 
-##Loading via the "excel" proxy object
+##Customizing the loaded data
 
-Excelviewer allows displaying Excel data in a datatable only.  
-At the same time, you can load Excel files to any Webix data component ([list](desktop/list.md), [dataview](desktop/dataview.md), [chart](desktop/chart.md), etc)
-by using "binary" [proxy object](desktop/server_proxy.md) and specifying "excel" datatype. 
-
-This variant of loading allows customizing the presentation of the loaded data, such as displaying headers and controlling the number of the loaded rows.
+You can customize the presentation of the loaded data, such as displaying headers and controlling the number of the loaded rows.
 
 ~~~js
-webix.ui({
-  type:"space",
-  cols:[
-  	{ view:"list", url:"binary->files/data.xlsx@Data[1-10]", datatype:"excel",
-    	template:"#data1#, #data2#" },
-    { view:"datatable", autoConfig:true, url:"binary->files/data.xlsx@Files[1-]", datatype:"excel" }
-  ]
-});
+{
+	view:"excelviewer", 
+	url:"binary->files/data.xlsx@Data[1-10]"
+}
 ~~~
 
 The string value of the *url* property *binary->files/data.xlsx@Data[1-10]"* includes the following parts:
@@ -217,7 +209,6 @@ The string value of the *url* property *binary->files/data.xlsx@Data[1-10]"* inc
 - **Data** - optional, the name of the Excel sheet to render
 - **[1-10]** - optional, the rows that should be rendered in the viewer
 
-To get more information about proxy objects read the desktop/server_proxy.md article.
 
 {{sample 60_pro/10_viewers/04_excel_proxy.html}}
 
