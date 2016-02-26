@@ -24,7 +24,7 @@ There is a convenient and simple for understanding and developing micro-framewor
 It allows building very flexible and reliable complex web applications with little effort. To get the details on the use of the micro-framework, 
 read the [full guide on Webix Jet](https://www.gitbook.com/book/webix/webix-jet/details).
 
-##Constructing Methods
+##Construction Methods
 
 The two main functions to construct the application are as follows: 
 
@@ -61,7 +61,7 @@ Three-file application includes:
     - **webix.ready** function with **webix.ui** constructor in the script part of the document body;
     - links to **ui** and **logic** javascript files (look below);
     - links to CSS files and those storing inline JSON and XML data;
-- **webix.js** file that contains all the components included into the **ui_scheme** variable(any name can be used); 
+- **app.js** file that contains all the components included into the **ui_scheme** variable(any name can be used); 
 - **logic.js** file with all the functions you need to build a fully interactive app. All of them are stored in the **logic** variable (again, the variable name is to your choice).
 
 {{note
@@ -76,13 +76,13 @@ HTML for such file looks like this:
 ~~~html
 <!DOCTYPE html>
   <head>
-    <!--must-have files-->
+    <!--library files-->
     <link rel="stylesheet" href="../webix.css" type="text/css" media="screen" charset="utf-8">
 	<script src="../webix.js" type="text/javascript" charset="utf-8"></script>
         
-    <!--additional files-->
+    <!--application files-->
     <script type="text/javascript" src='./logic.js'></script>
-	<script type="text/javascript" src='./webix.js'></script> 
+	<script type="text/javascript" src='./app.js'></script> 
         
     <link rel="stylesheet" type="text/css" href="./styles.css">
   </head>
@@ -118,9 +118,9 @@ webix.ready(function(){
 
 Inside the webix.ui constructor layout as well as components are placed. Here, we've put a variable there, to be exact - the ui_scheme and ui_window variables that store these components. 
     
-##Design Section - "webix.js" File Contents
+##Design Section - "app.js" File Contents
 
-The variables from above are declared separately, **outside the webix.ui constructor**, either in the same file within the *webix.ready* function, or (better) in a separate **webix.js** file. 
+The variables from above are declared separately, **outside the webix.ui constructor**, either in the same file within the *webix.ready* function, or (better) in a separate **app.js** file. 
 
 They should also be as short as possible: 
 ~~~js
