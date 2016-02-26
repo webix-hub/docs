@@ -23,7 +23,6 @@ Methods
 - api/link/ui.spreadsheet_getparentview.md - returns the parent view of the component
 - api/ui.spreadsheet_getrow.md - returns the row of the spreadsheet by id
 - api/ui.spreadsheet_getselectedid.md - returns the ids of all cells in a select area
-- api/ui.spreadsheet_getstyle.md - returns the style set for the cell
 - api/link/ui.spreadsheet_gettopparentview.md - returns top parent view
 - api/link/ui.spreadsheet_hasevent.md - checks whether the component has the specified event
 - api/link/ui.spreadsheet_hide.md - hides the view
@@ -44,7 +43,6 @@ Methods
 - api/ui.spreadsheet_savecell.md - saves changes made in the cell
 - api/ui.spreadsheet_serialize.md - serializes SpreadSheet data to a JSON object
 - api/ui.spreadsheet_setcellvalue.md - sets a value for the cell
-- api/ui.spreadsheet_setstyle.md - sets a style for a cell
 - api/link/ui.spreadsheet_show.md - makes the component visible
 - api/link/ui.spreadsheet_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
 - api/ui.spreadsheet_splitcell.md - splits the cells' span that was made by merging several cells
@@ -76,7 +74,6 @@ Methods
 - api/link/ui.spreadsheet_getparentview.md
 - api/ui.spreadsheet_getrow.md
 - api/ui.spreadsheet_getselectedid.md
-- api/ui.spreadsheet_getstyle.md
 - api/link/ui.spreadsheet_gettopparentview.md
 - api/link/ui.spreadsheet_hasevent.md
 - api/link/ui.spreadsheet_hide.md
@@ -97,7 +94,6 @@ Methods
 - api/ui.spreadsheet_savecell.md
 - api/ui.spreadsheet_serialize.md
 - api/ui.spreadsheet_setcellvalue.md
-- api/ui.spreadsheet_setstyle.md
 - api/link/ui.spreadsheet_show.md
 - api/link/ui.spreadsheet_showbatch.md
 - api/ui.spreadsheet_splitcell.md

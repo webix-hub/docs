@@ -8,7 +8,7 @@ redo
 
 
 @example:
-$$("ss").redo();
+$$("ssheet").redo();
 
 @template:	api_method
 @descr:

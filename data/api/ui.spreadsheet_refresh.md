@@ -10,7 +10,7 @@ refresh
 
 @example:
 
-$$("ss").refresh();
+$$("ssheet").refresh();
 
 @template:	api_method
 @descr:

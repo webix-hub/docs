@@ -6,7 +6,7 @@ combineCells
 
 @params:
 
-- range		object			the range of cells that should be merged
+- range		object			optional, the range of cells that should be merged
 
 
 
@@ -16,8 +16,11 @@ $$("ssheet").combineCells(range);
 
 @template:	api_method
 @descr:
-the range object includes three parameters:
+If the range parameter isn't set, spreadsheet combines selected cells.
 
-- cell - (string) the id of the cell that stars the range
+The range object includes three properties:
+
+- cell - (string) the id of the cell that starts the range
 - x - (number) the number of cells that will be merged horizontally
 - y - (number) the number of cells that will be merged vertically
+

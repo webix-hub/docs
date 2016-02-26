@@ -18,7 +18,7 @@ getStyle
 
 @example:
 
-$$("ssheet").getStyle(row, column);
+var style = $$("ssheet").getStyle(row, column);
 
 @template:	api_method
 @descr:

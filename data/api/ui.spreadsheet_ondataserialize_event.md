@@ -7,7 +7,7 @@ onDataSerialize
 
 @params:
 
-- data		string/object		the data that should be serialized
+- data		object		the data that should be serialized
 
 
 @example:

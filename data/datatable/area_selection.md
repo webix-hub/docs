@@ -78,7 +78,7 @@ To get a select area, you should make use of the api/ui.datatable_getselectarea.
 The method returns the object of the select area.
 
 ~~~js
-$$("dtable").getSelectArea();
+var area = $$("dtable").getSelectArea();
 ~~~
 
 The object of a certain select area can be received by passing the name of the area as a parameter. 

@@ -97,7 +97,7 @@ Notice that the priority of ids is higher than that of indexes. It means that in
 In order to get the set frame range, you should use the api/ui.rangechart_getframerange.md method. It returns the object of the data range selected in the frame.
 
 ~~~js
-rangechart.getFrameRange();
+var range = rangechart.getFrameRange();
 ~~~
 
 The configuration of the returned object looks like this:
@@ -116,7 +116,7 @@ You can also get the data included into the frame range. For this purpose, make 
 It returns an array of data objects that are included into the range.
 
 ~~~js
-rangechart.getFrameData();
+var data = rangechart.getFrameData();
 ~~~
 
 {{sample

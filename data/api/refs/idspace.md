@@ -3,7 +3,8 @@ IdSpace
 
 {{memo Separate layer of ids. }}
 
-If component has such mixin, all their child-elements will store id in separate storage ( so there is no need to make them absolutly unique ). Sub-views will not be accessible by global $$ operator, instead of it you will need to use
+If a component has such a mixin, all his child-elements will store their ids in a separate storage (so there is no need to make them absolutely unique).
+Sub-views will not be accessible by the global $$ operator, instead of it you will need to use:
 
 ~~~js
 	//bad, will not work!
@@ -13,11 +14,12 @@ If component has such mixin, all their child-elements will store id in separate 
 	var comp = $$('myview').$$("sub_view")
 ~~~
 
-Since it change behavior or child element, it has sense to use it only with container element
+Since it changes the behavior or the child element, it makes sense to use it only with container elements.
 
 ### Practical example
 
-Mixin was used in top-layout of scheduler-touch, as result it possible to add custom views with any ids, without warryng if they conflict with inner ID's of scheduler or not, and in same time it possible to access all controls in the scheduler with simple ids. 
+The mixin was used in the top-layout of scheduler-touch, as a result it is possible to add custom views with any ids, without worrying whether 
+they conflict with inner ID's of scheduler or not, and at the same time it's possible to access all controls in the scheduler with simple ids. 
 
 
 

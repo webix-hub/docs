@@ -6,7 +6,7 @@ onDataParse
 
 @params:
 
-- data		string/object		data that should be parsed
+- data		object		data that should be parsed
 
 @example:
 

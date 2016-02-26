@@ -12,7 +12,7 @@ getCellValue
 
 @example:
 
-$$("ssheet").getCellValue(2, 3);
+var value = $$("ssheet").getCellValue(2, 3);
 
 @returns:
 

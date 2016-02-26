@@ -6,11 +6,9 @@ onReset
 
 @params:
 
-- columns		number			the number of columns in spreadsheet
-- rows			number			the number of rows in spreadsheet
 
 @example:
-$$("ss").attachEvent("onReset", function(){
+$$("ssheet").attachEvent("onReset", function(){
     // some code here
 });
 

@@ -3,20 +3,17 @@ getSelectedId
 
 
 @short:
-	returns the ids of all cells in a select area
+	returns the ids of all cells in the select area
 
-@params:
-
-- all		
 
 @returns:
 
-- ids		array		an array of selected ids
+- ids		array		an array of selected cells
 
 
 @example:
 
-$$("ssheet").getSelectedId(all);
+var cells = $$("ssheet").getSelectedId();
 
 
 @template:	api_method

@@ -15,7 +15,7 @@ serialize
 
 @example:
 
-$$("ssheet").serialize();
+var data = $$("ssheet").serialize();
 
 @template:	api_method
 @descr:

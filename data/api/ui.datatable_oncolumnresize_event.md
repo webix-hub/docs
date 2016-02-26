@@ -6,11 +6,13 @@ onColumnResize
 	
 
 @params:
-- id	id		id of the column
+- id				string			id of the column
+- newWidth			number			the new width set for the column
+- oldWidth			number			the previous width of the column
 
 @example:
 
-$$("table").attachEvent("onColumnResize", function(id){
+$$("table").attachEvent("onColumnResize", function(id, newWidth, oldWidth){
 	alert("New column width: " + this.getColumnConfig(id).width );
 });
 

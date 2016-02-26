@@ -3,20 +3,20 @@ getRow
 
 
 @short:
-	returns the row of the spreadsheet by id
+	returns the row data by its id
 
 @params:
 
-- row_id		string			the row's id
+- id		string			the row's id
 
 @returns:
 
-- config		object		the row's configuration object
+- data		object		the row's data
 
 
 @example:
 
-$$("ssheet").getRow(row_id);
+var data = $$("ssheet").getRow(id);
 
 @template:	api_method
 @descr:

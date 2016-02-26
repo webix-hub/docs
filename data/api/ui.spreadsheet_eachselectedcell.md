@@ -12,8 +12,8 @@ eachSelectedCell
 @example:
 
 $$("ssheet").eachSelectedCell(
-    function (cellId){ 
-        console.log($$("ssheet").getCellValue(row,column) )
+    function (cell){ 
+        console.log($$("ssheet").getCellValue(cell.row,cell.column) )
     }
 );
 

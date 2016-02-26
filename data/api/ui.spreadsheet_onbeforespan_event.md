@@ -8,11 +8,11 @@ onBeforeSpan
 
 - row			number			the number of the row that the span starts with
 - column		number			the number of the column that the span starts with
-- value			string			the value of the span
+- size			array			the number of cells in col and row spans
 
 @example:
 
-$$("ssheet").attachEvent("onBeforeSpan", function(row, column, value){
+$$("ssheet").attachEvent("onBeforeSpan", function(row, column, size){
 	// some code here
     return true;
 });
