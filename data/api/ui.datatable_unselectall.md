@@ -15,3 +15,5 @@ dtable.unselectAll();
 @template:	api_method
 @descr:
 
+@relatedapi:
+- api/ui.datatable_selectall.md

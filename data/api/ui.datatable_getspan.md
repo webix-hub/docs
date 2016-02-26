@@ -12,7 +12,7 @@ getSpan
 
 
 @example:
-$$("dtable").getSpan();
+var span = $$("dtable").getSpan();
 
 @relatedapi:
 - api/ui.datatable_addspan.md
@@ -23,7 +23,7 @@ datatable/rowspans_colspans.md
 
 @template:	api_method
 @descr:
-the parameters of the returned array are:
+the elements of the returned array are:
 
 - id - (number/string/object) id of the row that starts colspan/rowspan
 - column - (string)	id of the column that starts colspan/rowspan

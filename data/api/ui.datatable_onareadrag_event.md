@@ -6,8 +6,8 @@ onAreaDrag
 
 @params:
 
-- start			object					the id object of the left top cell, contains two parameters: the row id and the column id
-- end			object					the id object of the right cell, contains two parameters: the row id and the column id
+- start			object					the id object of the left top cell, contains two properties: the row id and the column id
+- end			object					the id object of the right cell, contains two properties: the row id and the column id
 - ev			Event object			a native event object
 
 @example:

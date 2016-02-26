@@ -116,7 +116,7 @@ Datatable configuration:
 While having several select areas in the datatable, you can get all of them at once. For this purpose, apply the api/ui.datatable_getallselectareas.md method:
 
 ~~~js
-$$("dtable").getAllSelectAreas();
+var areas = $$("dtable").getAllSelectAreas();
 ~~~
 
 The method returns an object that contains configuration objects of all select areas in the datatable.

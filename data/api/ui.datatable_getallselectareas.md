@@ -14,7 +14,7 @@ getAllSelectAreas
 
 @example:
 
-$$("dtable").getAllSelectAreas();
+var areas = $$("dtable").getAllSelectAreas();
 
 @template:	api_method
 @descr:
