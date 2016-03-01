@@ -77,14 +77,14 @@ In this case, icons are not buttons and perform a decorative function.
 
 <img src="desktop/icon_css_pane.png">
 
-Possible CSS classesare as follows:
+Possible CSS classes are as follows:
 
 - 'webix_icon **fa-envelope**' - a standard icon (white or black depending on current skin); 
 - 'webix_input_icon **fa-envelope**' - a light grey icon adjusted for use in input fields. 
 
 Both of them include an icon name that can be checked on [Font Awesome](http://fortawesome.github.io/Font-Awesome/) site. 
 
-###Throught css property: 
+###Through CSS property: 
 
 {{snippet
 Multiview tabs
