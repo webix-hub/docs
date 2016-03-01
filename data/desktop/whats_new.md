@@ -1,4 +1,4 @@
-What's new
+What's New
 ====================
 
 - desktop/whats_new_3_2.md <span class="release_date"> February 24, 2016</span>

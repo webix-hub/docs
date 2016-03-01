@@ -7,6 +7,9 @@ Version 3.2
 - Datatable methods exportToPDF() and exportToExcel() as well as Pivot methods toPDF() and toExcel() aren't available anymore. 
 Use [webix.toPDF()](api/_topdf.md) and [webix.toExcel()](api/_toexcel.md) methods instead. 
 
+- The mechanism of loading Excel files into data components is modified. The "excel" proxy was removed.
+Use the "binary" [proxy](desktop/server_proxy.md) object to load files like Excel into data components and the "excel" [datatype](desktop/data_types.md) for parsing Excel files.
+
 Check the [Migration Guide](migration.md#webix3132) for more details.
 
 

@@ -17,7 +17,7 @@ webix.toPDF($$("myPivot"));
 webix.toExcel($$("myDatatable"));
 ~~~
 
-###Loading data into Excel Viewer
+###Loading Excel files into data components
 
 The "excel" proxy was removed. 
 
