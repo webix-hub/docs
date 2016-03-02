@@ -85,14 +85,19 @@ For async ajax calls you can define a callback function in the last parameters o
 The callback function takes the following arguments: 
 
 - **text** - full text of response;
-- **data** - response parsed as JSON or XML, whichever is applicable;
-- **XmlHttpRequest** - loader object;
+- **data** - response data that should be parsed as JSON or XML, whichever is applicable. It features the following methods to get the data: 
+	- *json()* - parses data as JSON;
+    - *xml()* - parses data as XML;
+    - *rawxml()* - gets raw XML data;
+    - *text()* - gets response text;
+- **XmlHttpRequest** - loader object.
 
 GET requests: 
 
 ~~~js
 webix.ajax("some.php", function(text, data, XmlHttpRequest){
-	//..
+	data = data.json();
+    //..
 }); 
 
 webix.ajax().get("some.php", function(text, data, XmlHttpRequest){
