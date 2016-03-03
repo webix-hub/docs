@@ -17,7 +17,7 @@ webix.i18n.calendar: {
        "Thursday", "Friday", "Saturday"],
     dayShort:["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 }
-webix.i18n.setLocale("en-US");    
+webix.i18n.setLocale();    
 
 @template:	api_config
 @descr:

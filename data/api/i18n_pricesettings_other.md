@@ -14,7 +14,7 @@ webix.i18n.priceSettings:{
 		decimalDelimiter:"",//the decimal delimiter
 		decimalSize:0       //the number of digits after the decimal mark
 }
-webix.i18n.setLocale("en-US");
+webix.i18n.setLocale();
 
 @template:	api_config
 

@@ -8,7 +8,7 @@ decimalSize
 @example:
 
 webix.i18n.decimalSize = 8;
-webix.i18n.setLocale("en-US");
+webix.i18n.setLocale();
 
 @template:	api_config
 @defined:	i18n	

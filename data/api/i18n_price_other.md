@@ -9,7 +9,7 @@ price
 
 @example:
 webix.i18n.dateFormat = "${obj}";
-webix.i18n.setLocale("en-US");
+webix.i18n.setLocale();
 
 @template:	api_config
 @descr:

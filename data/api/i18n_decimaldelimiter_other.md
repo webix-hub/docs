@@ -8,7 +8,7 @@ decimalDelimiter
 @example:
 
 webix.i18n.decimalDelimiter = "'";
-webix.i18n.setLocale("en-US");
+webix.i18n.setLocale();
 
 @template:	api_config
 @defined:	i18n	

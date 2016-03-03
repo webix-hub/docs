@@ -8,7 +8,7 @@ timeFormat
 @example:
 
 webix.i18n.timeFormat = "%H:%i";
-webix.i18n.setLocale("en-US");
+webix.i18n.setLocale();
 
 @template:	api_config
 @defined:	i18n	
