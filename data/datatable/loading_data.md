@@ -220,8 +220,8 @@ The library offers you different properties and methods that can help you to set
 	<tbody>
 	<tr>
 		<td> <b>datafetch</b> </td>
-		<td>Defines the start position DataTable will load data from</td>
-		<td>You want to load records starting from the fiftieth one, then you set <b>datafetch:50</b>. <br> {{sample 15_datatable/16_dyn_loading/02_db_dyn_start.html }} </td>
+		<td>Defines  the number of records that should be loaded from server side during each dynamic loading request. 50 by default.</td>
+		<td>You want to load the particular number of records (e.g. 80), then you set <b>datafetch:80</b>. <br> {{sample 15_datatable/16_dyn_loading/02_db_dyn_start.html }} </td>
 	</tr>
 	<tr>
 		<td><b>datathrottle</b></td>
