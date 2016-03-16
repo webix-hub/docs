@@ -32,6 +32,18 @@ DIV "data" attributes set other properties of the component:
 
 In other words, you use the same properties as in JSON configuration, but prefix them with "data-".
 
+Pay attention that while parsing from HTML, camelCase attributes must be replaced with dashed ones: "minWidth" => "data-min-width":
+
+~~~html
+<div data-view="list" data-width="320" data-max-width="500" data-min-width="100">
+	#id#: #value#
+	<ul data-view="data">
+		<li id="9998">Item 1</li>
+		<li id="9999" class='myitem'>Item 2</li>
+    </ul>
+</div>
+~~~
+
 ###3. Inner HTML matters
 
 Inner HTML of a DIV block defines visible text: 

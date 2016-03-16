@@ -3,7 +3,7 @@ Advanced Drag-and-Drop
 
 Here we speak about **advanced drag-n-drop options** and find solutions how to make any elements on the page draggable and control each stage of DnD. 
 
-For simple dragging and dropping of items within one and the same component as well as between different views and their instances - study the atricle about [built-in Webix DnD options](desktop/dnd.md).
+For simple dragging and dropping of items within one and the same component as well as between different views and their instances - study the article about [built-in Webix DnD options](desktop/dnd.md).
 
 DnD syntax
 ---------
@@ -75,7 +75,7 @@ state = {
 
 #### Set of the drag control methods 
 
-There are 6 DnD control event: 3 of them are used for dragged element  (addDrag) and 3 - for drop target (addDrop). All these events can be used to define a custom behavior for elements included in current dra-n-drop. 
+There are 6 DnD control event: 3 of them are used for dragged element  (addDrag) and 3 - for drop target (addDrop). All these events can be used to define a custom behavior for elements included in current drag-n-drop. 
 
 **addDrag()** related events:
 
@@ -87,7 +87,7 @@ There are 6 DnD control event: 3 of them are used for dragged element  (addDrag)
 
 - *onDragIn* - fires when a dragged element enters the drop area (If you want to deny drop area, return false).
 - *onDragOut* - fires when a dragged elements leaves the drop area.
-- *onDrop* - fires when you drop the dpagged element.
+- *onDrop* - fires when you drop the dragged element.
 
 
 ~~~js
