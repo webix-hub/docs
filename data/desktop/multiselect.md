@@ -41,7 +41,8 @@ Multiselect inherits from a standard [richselect](desktop/richselect.md) and has
     - **labelPosition** (string) - defines label position related to the input field. The only possible value is "top";
 - **placeholder** (string) - the initial text in the text field, disappears as you start typing in it;
 - **options** or **suggest** (array, object) - defines a set of items to select from, or the datasource, or [advanced popup configuration](desktop/advanced_combo.md);
-- **optionWidth** (number) - defines the width of a popup list. By default, it is adjusted to the control width. 	
+- **optionWidth** (number) - defines the width of a popup list. By default, it is adjusted to the control width;
+- **button** (boolean) - if set to true, defines that multicombo's popup will be closed by click on the Select button. The details on the button's configuration are given [below](#configuringsuggestlist).
 
 ##Configuring Suggest List
 
