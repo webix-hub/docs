@@ -194,10 +194,46 @@ $$("pivot").load("../data.json");
 
 In essence, Pivot complies to standard Webix [Data Loading rules](desktop/data_loading.md).
 
+### Data export
+
+You can export result to PDF or Excel:
+
+~~~js
+$$("pivot").toPDF();
+$$("pivot").toExcel();
+~~~
+
 Configuring Pivot
 ----------------
 
-###Defining Operation on Data
+### Getting and Setting Configuration Object
+
+You can get and set the pivot configuration object as follows:
+
+~~~js
+//get current configuration
+var config = pivot.getStructure();
+
+//set configuration
+pivot.setStructure(config);
+~~~
+
+Format of a **config** object is the same as "structure" parameter of the constructor:
+
+~~~js
+var config = {
+	rows: ["form", "name"],
+	columns: ["year"],
+	values: [
+    	{ name: "gdp", operation: "sum"}, 
+        { name: "oil", operation: "sum"}
+    ],
+	filters:[]
+}
+~~~
+
+
+###Defining Operations on Data
 
 Operations are set within [Pivot structure object](#struct) in **values** array. **Name** refers to data item property:
 
@@ -348,62 +384,6 @@ webix.ui({
 Customizing Pivot
 ------------------
 
-You can customize the columns of Pivot Table with the help of the *onHeaderInit* event. 
-The event handler takes an array of objects with columns configuration as a parameter. For example, you can set the *format* property:
-
-~~~js
-webix.ui({
-	view: "pivot",
-	on:{
-		onHeaderInit: function(columns){
-			for(var i=0; i< columns.length;i++){
-				columns[i].format = function(value) {
-					return value?value.toFixed(2) : value;
-				}
-			}
-		}
-	}
-});
-~~~
-
-
-API
-----------
-
-### Getting and Setting Configuration Object
-
-~~~js
-//get current configuration
-var config = pivot.getStructure();
-
-//set configuration
-pivot.setStructure(config);
-~~~
-
-Format of a **config** object is the same as "structure" parameter of the constructor:
-
-~~~js
-var config = {
-	rows: ["form", "name"],
-	columns: ["year"],
-	values: [
-    	{ name: "gdp", operation: "sum"}, 
-        { name: "oil", operation: "sum"}
-    ],
-	filters:[]
-}
-~~~
-
-
-### Data export
-
-You can export result to PDF or Excel:
-
-~~~js
-$$("pivot").toPDF();
-$$("pivot").toExcel();
-~~~
-
 ###Getting Datatable Object
 
 You can access the DataTable object by using the next code:
@@ -425,7 +405,10 @@ datatable.attachEvent("onAfterSelect", function (id) {
 var sel = datatable.getSelectedId();
 ~~~
 
-###Accessing Popup
+
+###Popup customization
+
+**Accessing Popup**
 
 The onPopup event fires after a popup for configuring Pivot is created. The handler function takes one parameter:
 
@@ -436,5 +419,71 @@ pivot.attachEvent("onPopup", function(popup){
 	// your code
 });
 ~~~
+
+**"Fields" sorting**
+
+The "Fields" list can be sorted by applying ["$sort" scheme](http://docs.webix.com/desktop__data_scheme.html#sortkey). 
+The ascending order is default. So, you can define only "text" as a keyword: 
+
+~~~js
+webix.ui({
+	view: "pivot",
+	on:{
+		onPopup: function(popup){
+			popup.$$("fields").define("scheme",{
+				$sort: {
+					by: "text"
+				}
+			});
+		}
+	}
+});
+~~~
+
+**Adding scrolls to all lists**
+
+By default, only the "Fields" and "Values" lists are scrollable. Here is how you can add scrolls to all lists:
+
+~~~js
+webix.ui({
+	view: "pivot",
+	on:{
+		onPopup: function(popup){
+	    	// scroll for "Filters"
+			popup.$$("filters").define("scroll",true);
+			// scroll for "Columns"
+			popup.$$("columns").define("scroll",true);
+			// scroll for "Rows"
+			popup.$$("rows").define("scroll",true);
+		}
+	}
+});
+~~~
+
+###Columns customization
+
+You can customize the columns of Pivot Table with the help of the *onHeaderInit* event. 
+The event handler takes an array of objects with columns configuration as a parameter. For example, you can set the *format* property:
+
+~~~js
+webix.ui({
+	view: "pivot",
+	on:{
+		onHeaderInit: function(columns){
+			for(var i=0; i< columns.length;i++){
+				columns[i].format = function(value) {
+					return value?value.toFixed(2) : value;
+				}
+			}
+		}
+	}
+});
+~~~
+
+
+
+
+
+
 
 
