@@ -199,8 +199,8 @@ In essence, Pivot complies to standard Webix [Data Loading rules](desktop/data_l
 You can export result to PDF or Excel:
 
 ~~~js
-$$("pivot").toPDF();
-$$("pivot").toExcel();
+webix.toPDF($$("myPivot"));
+webix.toExcel($$("myPivot"));
 ~~~
 
 Configuring Pivot

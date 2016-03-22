@@ -39,8 +39,6 @@ Methods
 - api/link/ui.datatable_editstop.md - stops the edit mode and closes all opened editors. The component is still editable
 - api/link/ui.datatable_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.datatable_exists.md - checks whether an item with the specified id exists
-- api/ui.datatable_exporttoexcel.md - exports data to an Excel file
-- api/ui.datatable_exporttopdf.md - exports data to a PDF file
 - api/link/ui.datatable_filter.md - filters the component
 - api/ui.datatable_filterbyall.md - refilters DataTable by all specified filters
 - api/link/ui.datatable_find.md - returns rows that match the criterion
@@ -184,8 +182,6 @@ Methods
 - api/link/ui.datatable_editstop.md
 - api/link/ui.datatable_enable.md
 - api/link/ui.datatable_exists.md
-- api/ui.datatable_exporttoexcel.md
-- api/ui.datatable_exporttopdf.md
 - api/link/ui.datatable_filter.md
 - api/ui.datatable_filterbyall.md
 - api/link/ui.datatable_find.md

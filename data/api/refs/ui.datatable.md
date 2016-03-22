@@ -73,8 +73,6 @@ var datatable = webix.ui({
 - api/link/ui.datatable_editstop.md - stops the edit mode and closes all opened editors. The component is still editable
 - api/link/ui.datatable_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.datatable_exists.md - checks whether an item with the specified id exists
-- api/ui.datatable_exporttoexcel.md - exports data to an Excel file
-- api/ui.datatable_exporttopdf.md - exports data to a PDF file
 - api/link/ui.datatable_filter.md - filters the component
 - api/ui.datatable_filterbyall.md - refilters DataTable by all specified filters
 - api/link/ui.datatable_find.md - returns rows that match the criterion
@@ -201,7 +199,6 @@ var datatable = webix.ui({
 - api/link/ui.datatable_onafterscroll_event.md - occurs when some webix view has been scrolled
 - api/ui.datatable_onafterselect_event.md - fires after a cell is selected
 - api/link/ui.datatable_onaftersort_event.md - fires after sorting dataset
-- api/ui.datatable_onafterunselect_event.md - 
 - api/ui.datatable_onafterunselect_event.md - fires after a cell is unselected
 - api/ui.datatable_onareadrag_event.md - fires when area selection is started
 - api/link/ui.datatable_onbeforeadd_event.md - fires before adding item to datastore
