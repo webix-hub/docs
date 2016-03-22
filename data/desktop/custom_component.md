@@ -137,7 +137,7 @@ The appropriate logic must be specified in the method **$setSize**.
 
 Fully custom components inherit from view, as a rule, which is an empty container for library components. Basic modules are also included into your component to support app-user interaction. 
 
-Let's see how can we create a multi-colored header for a three-column app. 
+Let's see how we can create a multi-colored header for a three-column app. 
 
 <img src="desktop/custom_component.png"/>
 
@@ -149,7 +149,18 @@ webix.protoUI({
 ~~~
 
 - **webix.MouseEvent** - a module that makes your component support mouse events such as *'onItemClick'*;
-- **webix.EventSystem** - to support event handling functionality, such as *attachEvent()* method.
+- **webix.EventSystem** - to support event handling functionality, such as *attachEvent()* method;
+
+It's also possible to reuse the CSS class of some other view in order to apply it to your custom component. To do this, you need to use the **$cssName** property:
+
+~~~js
+webix.protoUI({
+	// a custom component
+    name:"liveEditor",
+    // inherits CSS class from the text component
+    $cssName:"text",
+}, webix.ui.text);
+~~~
 
 ##Adding Functionality to the Component: 
 
