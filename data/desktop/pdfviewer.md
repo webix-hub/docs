@@ -3,7 +3,7 @@ PDF Viewer
 
 PDF Viewer is a tool for displaying the content of PDF files on the screen.
 
-<img src="desktop/pdfviewer_front.png">
+<img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/pdfviewer_front.png">
 
 {{sample 60_pro/10_viewers/01_pdf.html}}
 

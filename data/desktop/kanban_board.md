@@ -8,7 +8,7 @@ Webix Kanban board is rather flexible and can have any number of columns and row
 Fully written in JavaScript and CSS this component can be integrated in any web application or web page.
 
 <br>
-<img src="kanban/kanban_front.png"/>
+<img style="display:block; margin-left:auto;margin-right:auto;" src="kanban/kanban_front.png"/>
 
 
 <table  style='border-left:none !important;' cellspacing="0" cellpadding="5" border="0">

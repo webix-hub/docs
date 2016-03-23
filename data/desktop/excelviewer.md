@@ -3,7 +3,7 @@ Excel Viewer
 
 Excel Viewer is an extension tool intended for viewing Excel files.
 
-<img src="desktop/excelviewer_front.png">
+<img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/excelviewer_front.png">
 
 {{sample 60_pro/10_viewers/02_excel_viewer.html}}
 
