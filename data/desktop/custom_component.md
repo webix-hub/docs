@@ -15,12 +15,13 @@ webix.protoUI({
   		this.load(data.xml)
         //functions executed on component initialization
    },
-   defaults: 
-   		{width:200}
-   on:{'onItemClick' : function(){}}, //attached events
+   defaults:{
+      width:200,
+      on:{'onItemClick' : function(){}} //attached events
+   },   	   
    custom_func:function(){..function description..}, //any custom function
-   $getSize: function(){..}, 
-   $setSize:function(){..},
+   $getSize: function(x, y){..}, 
+   $setSize:function(x, y){..},
 }, webix.Movable, // extended functionality 
 webix.ui.list); //the name of the base component 
 ~~~
