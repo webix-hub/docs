@@ -39,7 +39,7 @@ UI-related multitext is a dynamic control based on standard Webix [text](desktop
 Each field of a multitext control features its own ID. It can be either a given (for the basic field) or an auto-generated one. 
 All the methods of a multitext object can be applied to any field object. 
 
-##Adding and rRemoving Fields
+##Adding and Removing Fields
 
 Multitext API allows [adding](api/ui.multitext_addsection.md) and [removing](api/ui.multitext_removesection.md) additional fields dynamically: 
 
