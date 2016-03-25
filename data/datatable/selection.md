@@ -11,7 +11,10 @@ Available modes are:
 4. *multi cell*;
 5. *multi row*;
 6. *multi column*;
-7. *block selection*.
+7. *block selection*;
+8. [*area selection*](datatable/area_selection.md).
+
+{{note Area selection is available in PRO version only}}
 
 
 
@@ -199,5 +202,6 @@ Related events
 	</tr>
 	</tbody>
 </table>
+
 @keyword:
 	start

@@ -29,7 +29,7 @@ $$("dtable").load("myscript.php", "xml");
 **Note that**
 
 - Server script you state as **url** parameter or pass into **load()** function executes GET request and returns data from server in either of the [possible data formats](desktop/data_types.md);
-- You should specify **datatype** parameter if incoming data is other than JSON (default);
+- You should specify **datatype** parameter if incoming data is other than JSON (the default datatype);
 - In case of long datasets [dynamic loading](desktop/dynamic_loading.md) functionality will be helpful;
 - Default loading pattern can be [customized](desktop/server_customload.md) - specific loading modes, ajax helper for passing params into load script.
 

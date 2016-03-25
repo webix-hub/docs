@@ -45,7 +45,7 @@ barA.width --> 400
 barB.width --> 500 // initial value from the source object
 ~~~
 
-The method is useful when you'd like to create two independant instances of one anfd the same object on the page.
+The method is useful when you'd like to create two independant instances of one and the same object on the page.
 
 This is how a new [pager](desktop/paging.md) is created on the base of the *pagerA* one. 
 
@@ -118,8 +118,8 @@ webix.extend($$("my_toolbar"),webix.Movable);
 
 Now our toolbar can can be moved across the screen. 
 
-It is a so-called **late binding**. In fact the target object here is supplied with some properties from the source object while preserving its native properties. Moreover, iherited methods won't overwrite
-the existed methods with the same name.
+It is a so-called **late binding**. In fact the target object here is supplied with some properties from the source object while preserving its native properties. Moreover, inherited methods won't overwrite
+existing methods with the same name.
 
 ####Early Binding
 

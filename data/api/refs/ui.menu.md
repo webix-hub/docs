@@ -26,7 +26,6 @@ var menu = webix.ui({
 
 - [Overview of the Menu Widget](desktop/menu.md)
 - [Samples](http://docs.webix.com/samples/03_menu/index.html)
-
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.list.md">ui.list</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/selectionmodel.md">SelectionModel</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/ui.proto.md">ui.proto</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/copypaste.md">CopyPaste</a></div>
 
@@ -254,7 +253,7 @@ var menu = webix.ui({
 - api/link/ui.menu_$height_other.md - current height of the view
 - api/link/ui.menu_$scope_other.md - scope for resolving event and method names
 - api/link/ui.menu_$setsize_other.md - sets the component size
-- api/link/ui.menu_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.menu_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.menu_$view_other.md - reference to top html element of the view
 - api/link/ui.menu_$width_other.md - current width of the view
 - api/link/ui.menu_config_other.md - all options from initial component configuration

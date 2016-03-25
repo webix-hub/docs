@@ -1,20 +1,18 @@
 selectDate
 =============
 
-
-
 @short:
 	selects the specified date
 
 @params:
-- date		string, object		a Date object or a string representing a date
-
+- date		string/object		a Date object or a string representing a date
+- mode		boolean				true - to show the selected date in the calendar, false - not to show the selected date			
 
 
 
 @example:
 webix.ui({
-    container:"box",
+	container:"box",
     view:"calendar",
     id:"calendar1"
 });

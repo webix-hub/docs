@@ -8,9 +8,9 @@ Moreover, it's possible to upload and download files and search for necessary fi
 
 Apart from files, File Manager allows working with any kind of hierarchical data and can be easily integrated into a web app.
 
-<br><br>
+<br>
 
-<img src="file_manager/front.png"/>
+<img style="display:block; margin-left:auto;margin-right:auto;" src="file_manager/front.png"/>
 
 
 <table  style='border-left:none !important;' cellspacing="0" cellpadding="5" border="0">

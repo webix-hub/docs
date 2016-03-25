@@ -49,6 +49,7 @@ common helpers
 - api/_toexcel.md - exports data of a data component to an Excel document
 - api/_tofunctor.md - converts a string to a function
 - api/_tonode.md - returns an HTML node object
+- api/_topdf.md - exports data of a data component to a PDF file
 - api/_topng.md - exports data of a component to a PNG file
 - api/_type.md - defines new rendering type for the component
 - api/_ui.md - the object constructor. Creates a new instance of the specified view
@@ -74,6 +75,7 @@ common helpers
 
 
 {{api
+- api/_cdn_other.md - returns Webix cdn location
 - api/_codebase_other.md - returns the path to the 'codebase' folder
 - api/_name_other.md - returns the name of the component (by default, 'Core')
 - api/_version_other.md - returns the current version of the library

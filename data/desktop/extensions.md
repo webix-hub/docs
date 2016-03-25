@@ -96,8 +96,17 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
 		    A component that helps you to create a hierarchical collapsible menu with a vertical navigation bar.
 		</td>
 		<td class='topic_description' style="text-align: center; padding:20px;"><img src="desktop/sidebar.png"></td>
+	</tr>   
+    <tr>
+		<td id="design" class='topics' style="vertical-align:text-top;">
+		    <h4 id='ui' style="margin-bottom:4px;">
+		        <a href="desktop/spreadsheet.md">SpreadSheet</a>
+		    </h4>
+		    A component that allows creating various customizable tables that keep data locally.
+		</td>
+		<td class='topic_description' style="text-align: center; padding:20px;"><img src="desktop/spreadsheet.png"></td>
 	</tr>
-    </tbody>
+  </tbody>
 </table>
 
 @index:
@@ -111,4 +120,5 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
 - desktop/kanban_board.md
 - desktop/file_manager.md
 - desktop/sidebar.md
+- desktop/spreadsheet.md
 

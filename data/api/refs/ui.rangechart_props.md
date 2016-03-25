@@ -1,0 +1,140 @@
+Properties
+==========
+
+{{api
+- api/link/ui.rangechart_alpha_config.md - defines the opacity of chart items
+- api/link/ui.rangechart_animate_config.md - defines or disables view change animation.
+- api/link/ui.rangechart_barwidth_config.md - the width of bars
+- api/link/ui.rangechart_border_config.md - enables/disables the bar borders
+- api/link/ui.rangechart_bordercolor_config.md - sets the border color of each item in the graph
+- api/link/ui.rangechart_borderless_config.md - used to hide the component borders
+- api/link/ui.rangechart_cant_config.md - defines the slope angle of 3D pie
+- api/link/ui.rangechart_color_config.md - defines items colors
+- api/link/ui.rangechart_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.rangechart_css_config.md - the name of a css class that will be applied to the view container
+- api/link/ui.rangechart_data_config.md - JavaScript array containing data for the component
+- api/link/ui.rangechart_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
+- api/link/ui.rangechart_datatype_config.md - the type of loaded data
+- api/link/ui.rangechart_disablelines_config.md - disapbles graph lines with radar chart
+- api/link/ui.rangechart_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.rangechart_eventradius_config.md - sets the radius (in pixels) of the virtual circle which events will fire for items within
+- api/link/ui.rangechart_fill_config.md - fills the chart area with the specified background color.
+- api/link/ui.rangechart_fixoverflow_config.md - chart max limit mode
+- api/ui.rangechart_frameid_config.md - points to the property in data that will be used for the frame
+- api/link/ui.rangechart_gradient_config.md - specifies the chart gradient
+- api/link/ui.rangechart_gravity_config.md - sets the view gravity (1 by default)
+- api/link/ui.rangechart_height_config.md - sets the height of the component
+- api/link/ui.rangechart_hidden_config.md - defines whether the view will be hidden initially
+- api/link/ui.rangechart_id_config.md - the component ID
+- api/link/ui.rangechart_item_config.md - defines markers that present chart's data items
+- api/link/ui.rangechart_label_config.md - sets the template for items' labels
+- api/link/ui.rangechart_labeloffset_config.md - the offset of sector labels from the pie frame
+- api/link/ui.rangechart_legend_config.md - defines the chart legend
+- api/link/ui.rangechart_line_config.md - defines chart lines
+- api/link/ui.rangechart_linecolor_config.md - sets the color for strips dividing the pie sectors
+- api/link/ui.rangechart_maxheight_config.md - sets the maximum height for the view
+- api/link/ui.rangechart_maxwidth_config.md - sets the maximum width for the view
+- api/link/ui.rangechart_minheight_config.md - sets the minimal height for the view
+- api/link/ui.rangechart_minwidth_config.md - sets the minimal width for the view
+- api/link/ui.rangechart_mouseeventdelay_config.md - the delay between a real mouse action and invoking the related events
+- api/link/ui.rangechart_offset_config.md - defines whether the first item of the scale will be drawn with the offset equal to the half of the scale's step (relative to the origin of the chart) or not.
+- api/link/ui.rangechart_on_config.md - allows attaching custom handlers to inner events of the component
+- api/link/ui.rangechart_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
+- api/link/ui.rangechart_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
+- api/link/ui.rangechart_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.rangechart_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
+- api/link/ui.rangechart_origin_config.md - sets the scale origin
+- api/link/ui.rangechart_padding_config.md - sets paddings of the chart content
+- api/link/ui.rangechart_pieheight_config.md - the height of the 3d pie
+- api/link/ui.rangechart_pieinnertext_config.md - sets the template for the pie inner labels
+- api/link/ui.rangechart_preset_config.md - applies the predefined chart configuration object with the specified name
+- api/link/ui.rangechart_radius_config.md - the radius of the bar's rounding
+- api/ui.rangechart_range_config.md - data range that should be selected in the frame
+- api/link/ui.rangechart_ready_config.md - event handler called just after the component has been completely initialized
+- api/link/ui.rangechart_removemissed_config.md - defines how to treat items in case of reloading
+- api/link/ui.rangechart_save_config.md - defines URLs for data saving
+- api/link/ui.rangechart_scale_config.md - type of chart scale, logarithic or plain
+- api/link/ui.rangechart_scheme_config.md - defines schemes for data processing
+- api/link/ui.rangechart_series_config.md - defines graphs presented on the chart
+- api/link/ui.rangechart_shadow_config.md - enables/disables the pie shadow
+- api/link/ui.rangechart_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.rangechart_type_config.md - sets the chart type
+- api/link/ui.rangechart_url_config.md - the URL which the component will use to load data after its initialization
+- api/link/ui.rangechart_value_config.md - defines values for the vertical axis
+- api/link/ui.rangechart_width_config.md - sets the width of the component
+- api/link/ui.rangechart_x_config.md - the horizontal position of the pie center
+- api/link/ui.rangechart_xaxis_config.md - defines the horizontal axis
+- api/link/ui.rangechart_xvalue_config.md - a property of the dataset that defines values for the horizontal axis
+- api/link/ui.rangechart_y_config.md - the vertical position of the pie center
+- api/link/ui.rangechart_yaxis_config.md - defines the vertical axis
+- api/link/ui.rangechart_yvalue_config.md - a property of the dataset that defines values for the vertical axis.
+}}
+
+@index:
+- api/link/ui.rangechart_alpha_config.md
+- api/link/ui.rangechart_animate_config.md
+- api/link/ui.rangechart_barwidth_config.md
+- api/link/ui.rangechart_border_config.md
+- api/link/ui.rangechart_bordercolor_config.md
+- api/link/ui.rangechart_borderless_config.md
+- api/link/ui.rangechart_cant_config.md
+- api/link/ui.rangechart_color_config.md
+- api/link/ui.rangechart_container_config.md
+- api/link/ui.rangechart_css_config.md
+- api/link/ui.rangechart_data_config.md
+- api/link/ui.rangechart_datathrottle_config.md
+- api/link/ui.rangechart_datatype_config.md
+- api/link/ui.rangechart_disablelines_config.md
+- api/link/ui.rangechart_disabled_config.md
+- api/link/ui.rangechart_eventradius_config.md
+- api/link/ui.rangechart_fill_config.md
+- api/link/ui.rangechart_fixoverflow_config.md
+- api/ui.rangechart_frameid_config.md
+- api/link/ui.rangechart_gradient_config.md
+- api/link/ui.rangechart_gravity_config.md
+- api/link/ui.rangechart_height_config.md
+- api/link/ui.rangechart_hidden_config.md
+- api/link/ui.rangechart_id_config.md
+- api/link/ui.rangechart_item_config.md
+- api/link/ui.rangechart_label_config.md
+- api/link/ui.rangechart_labeloffset_config.md
+- api/link/ui.rangechart_legend_config.md
+- api/link/ui.rangechart_line_config.md
+- api/link/ui.rangechart_linecolor_config.md
+- api/link/ui.rangechart_maxheight_config.md
+- api/link/ui.rangechart_maxwidth_config.md
+- api/link/ui.rangechart_minheight_config.md
+- api/link/ui.rangechart_minwidth_config.md
+- api/link/ui.rangechart_mouseeventdelay_config.md
+- api/link/ui.rangechart_offset_config.md
+- api/link/ui.rangechart_on_config.md
+- api/link/ui.rangechart_onclick_config.md
+- api/link/ui.rangechart_oncontext_config.md
+- api/link/ui.rangechart_ondblclick_config.md
+- api/link/ui.rangechart_onmousemove_config.md
+- api/link/ui.rangechart_origin_config.md
+- api/link/ui.rangechart_padding_config.md
+- api/link/ui.rangechart_pieheight_config.md
+- api/link/ui.rangechart_pieinnertext_config.md
+- api/link/ui.rangechart_preset_config.md
+- api/link/ui.rangechart_radius_config.md
+- api/ui.rangechart_range_config.md
+- api/link/ui.rangechart_ready_config.md
+- api/link/ui.rangechart_removemissed_config.md
+- api/link/ui.rangechart_save_config.md
+- api/link/ui.rangechart_scale_config.md
+- api/link/ui.rangechart_scheme_config.md
+- api/link/ui.rangechart_series_config.md
+- api/link/ui.rangechart_shadow_config.md
+- api/link/ui.rangechart_tooltip_config.md
+- api/link/ui.rangechart_type_config.md
+- api/link/ui.rangechart_url_config.md
+- api/link/ui.rangechart_value_config.md
+- api/link/ui.rangechart_width_config.md
+- api/link/ui.rangechart_x_config.md
+- api/link/ui.rangechart_xaxis_config.md
+- api/link/ui.rangechart_xvalue_config.md
+- api/link/ui.rangechart_y_config.md
+- api/link/ui.rangechart_yaxis_config.md
+- api/link/ui.rangechart_yvalue_config.md
+

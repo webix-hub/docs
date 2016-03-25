@@ -15,7 +15,7 @@ onCheck
 
 datatable.attachEvent("onCheck", function(rwo, column, state){
 	//code
-));
+});
 
 
 @template:	api_event

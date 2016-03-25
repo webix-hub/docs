@@ -32,6 +32,7 @@ var organogram = new webix.ui({
 - [Samples](http://docs.webix.com/samples/60_pro/07_organogram/index.html)
 
 
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/group.md">Group</a>, <a href="api/refs/treeapi.md">TreeAPI</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/selectionmodel.md">SelectionModel</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/treedataloader.md">TreeDataLoader</a>, <a href="api/refs/treestore.md">TreeStore</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
@@ -231,7 +232,7 @@ var organogram = new webix.ui({
 - api/link/ui.organogram_$height_other.md - current height of the view
 - api/link/ui.organogram_$scope_other.md - scope for resolving event and method names
 - api/link/ui.organogram_$setsize_other.md - sets the component size
-- api/link/ui.organogram_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.organogram_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.organogram_$view_other.md - reference to top html element of the view
 - api/link/ui.organogram_$width_other.md - current width of the view
 - api/link/ui.organogram_config_other.md - all options from initial component configuration

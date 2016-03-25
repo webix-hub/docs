@@ -14,7 +14,8 @@ There's a list of ready-to-use Webix proxy objects that can be used by adding pr
 - **post** - for loading data in POST request (GET by default);
 - **sync** - for loading data via a synchronous Ajax request (by default, loading is performed by an asynchronous request);
 - **indexdb** - for working with [indexedDB](desktop/server_indexdb.md) in-browser database storage;
-- **faye** - for enabling live data update on all clients currently using the application. [Look here for details](desktop/server_faye.md).
+- **faye** - for enabling live data update on all clients currently using the application. [Look here for details](desktop/server_faye.md);
+- **binary** - for loading and reading files as arraybuffer.
 
 Prefixes are used before the path to you serverside script:
 

@@ -8,7 +8,7 @@ name
 
 @example:
 var data = new webix.DataCollection({
-        url:"some_data.json" 
+	url:"some_data.json" 
 });
 
 var name = data.name; //returns 'DataCollection'

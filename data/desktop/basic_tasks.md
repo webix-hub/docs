@@ -75,7 +75,8 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
                     <li><a href="desktop/editing.md">Controls for Editing</a></li>
                     <li>desktop/paging.md</li>
                     <li>desktop/dnd.md</li>
-                    <li>desktop/clipboard.md</li>                   
+                    <li>desktop/clipboard.md</li>
+                    <li>desktop/undo.md</li>
             </ul>
         </td>
         <td class='topic_description'>Covers techniques for performing general and advanced operations under data, such as adding, deleting, sorting, filtering etc.</td>
@@ -88,6 +89,7 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
 		    <ul id="styling_sublist">
             	   <li>desktop/export_png.md</li>
                    <li>desktop/data_components_export.md</li>
+                   <li>desktop/export_pdf.md</li>
             </ul>
         </td>
 		<td class='topic_description'>Discusses the possibilities of exporting the content and data of components to PNG and Excel formats. </td>

@@ -1,4 +1,4 @@
-onSubViewOpen
+onSubViewClose
 =============
 
 @short: fires after a subview or a subrow is closed

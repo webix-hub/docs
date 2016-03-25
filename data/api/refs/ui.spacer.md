@@ -4,7 +4,7 @@ ui.spacer
 
 {{memo A borderless empty view. }}
 
-The component has a pure API and only used to fill a layout cell if it's supposed to be empty. Can be initialized by simple {} construction. Check [view](desktop/view.md) documentation for more detailed description.
+The component has a pure API and only used to fill a layout cell if it's supposed to be empty. Can be initialized by the simple {} construction. Check [view](desktop/view.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -97,7 +97,7 @@ webix.ui({
 - api/link/ui.spacer_$height_other.md - current height of the view
 - api/link/ui.spacer_$scope_other.md - scope for resolving event and method names
 - api/link/ui.spacer_$setsize_other.md - sets the component size
-- api/link/ui.spacer_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.spacer_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.spacer_$view_other.md - reference to top html element of the view
 - api/link/ui.spacer_$width_other.md - current width of the view
 - api/link/ui.spacer_config_other.md - all options from initial component configuration

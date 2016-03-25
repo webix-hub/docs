@@ -82,7 +82,7 @@ Working within several views you can refer to the components with respect to the
 
 ##Empty View
 
-Views can as well be **empty**. An empty view is two braces **{}** you put btween meaningful components to leave space between them. 
+Views can as well be **empty**. An empty view is two braces **{}** you put between meaningful components to leave space between them. 
 
 {{snippet
 Spacer between buttons on toolbar

@@ -74,6 +74,12 @@ with the applied changes:
 grid.refresh();
 ~~~
 
+You can also get the span configuration array with the help of the api/ui.datatable_getspan.md method.
+
+~~~js
+var span = grid.getSpan();
+~~~
+
 
 CSS for Rowspan and Colspans
 --------------

@@ -5,8 +5,120 @@ specific features to make your applications good-looking and user-friendly. All 
 
 <br>
 
+<div class="components_group" style="padding-left:60px;">
+	<div>
+		<a href="desktop/pivot.md">
+			<img src="desktop/icons/pivot.png"/>
+			<br>Pivot
+		</a>
+    </div>
+    <div>
+		<a href="desktop/mobile_scheduler.md">
+			<img src="desktop/icons/scheduler.png"/>
+			<br>Mobile Scheduler
+		</a>
+	</div>
+	<div>
+		<a href="desktop/kanban_board.md">
+			<img src="desktop/icons/kanban.png"/>
+			<br>Kanban Board
+		</a>
+    </div>
+    <div>
+		<a href="desktop/file_manager.md">
+			<img src="desktop/icons/filemanager.png"/>
+			<br>File Manager
+		</a>
+    </div>
+    <div>
+		<a href="desktop/spreadsheet.md">
+			<img src="desktop/icons/spreadsheet.png"/>
+			<br>Spreadsheet
+		</a>
+    </div>
+</div>
 
-<h2>Layouts</h2>
+
+<h2 style="clear:both;"/>Data Components</h2>
+
+Data components are used to present data of a specified type on the page. Such components manage the space allocated for their data and provide functionality for its access and configuration.
+ 
+<div class="components_group" style="padding-left:60px;">
+	<div>
+		<a href="desktop/chart.md">
+			<img src="desktop/icons/chart.png"/>
+			<br>Chart
+		</a>
+    </div>
+    <div>
+		<a href="datatable/index.md">
+			<img src="desktop/icons/datatable.png"/>
+			<br>DataTable
+		</a>
+	</div>
+	<div>
+		<a href="desktop/dataview.md">
+			<img src="desktop/icons/dataview.png"/>
+			<br>Dataview
+		</a>
+    </div>
+    <div>
+		<a href="desktop/grouplist.md">
+			<img src="desktop/icons/grouplist.png"/>
+			<br>Grouplist
+		</a>
+    </div>
+    <div>
+		<a href="desktop/list.md">
+			<img src="desktop/icons/list.png"/>
+			<br>List
+		</a>
+    </div>
+    <div>
+		<a href="desktop/organogram.md">
+			<img src="desktop/icons/organogram.png"/>
+			<br>Organogram
+		</a>
+    </div>
+    <div>
+		<a href="desktop/property_sheet.md" style="clear:left;">
+			<img src="desktop/icons/propertysheet.png"/>
+			<br>PropertySheet
+		</a>
+    </div>
+    <div>
+		<a href="desktop/range_chart.md">
+			<img src="desktop/icons/rangechart.png"/>
+			<br>RangeChart
+		</a>
+    </div>
+    <div>
+		<a href="datatree/index.md">
+			<img src="desktop/icons/datatree.png"/>
+			<br>Tree
+		</a>
+    </div>
+     <div>
+		<a href="desktop/treemap.md">
+			<img src="desktop/icons/treemap.png"/>
+			<br>TreeMap
+		</a>
+    </div>
+    <div>
+		<a href="desktop/treetable.md">
+			<img src="desktop/icons/treegrid.png"/>
+			<br>TreeTable
+		</a>
+    </div>
+    <div>
+		<a href="desktop/unitlist.md">
+			<img src="desktop/icons/unitlist.png"/>
+			<br>Unitlist
+		</a>
+    </div>
+</div>
+
+<h2 style="clear:both;"/>Layouts</h2>
 
 Layouts help you to organize your web page, define its overall look-and-feel. You can arrange the content in columns and rows, divide it into groups and control through navigation or animation.
  
@@ -66,81 +178,6 @@ Layouts help you to organize your web page, define its overall look-and-feel. Yo
 		</a>
     </div>
 </div>
-
-
-<h2 style="clear:both;"/>Data Components</h2>
-
-Data components are used to present data of a specified type on the page. Such components manage the space allocated for their data and provide functionality for its access and configuration.
- 
-<div class="components_group" style="padding-left:60px;">
-	<div>
-		<a href="desktop/chart.md">
-			<img src="desktop/icons/chart.png"/>
-			<br>Chart
-		</a>
-    </div>
-    <div>
-		<a href="datatable/index.md">
-			<img src="desktop/icons/datatable.png"/>
-			<br>DataTable
-		</a>
-	</div>
-	<div>
-		<a href="desktop/dataview.md">
-			<img src="desktop/icons/dataview.png"/>
-			<br>Dataview
-		</a>
-    </div>
-    <div>
-		<a href="desktop/grouplist.md">
-			<img src="desktop/icons/grouplist.png"/>
-			<br>Grouplist
-		</a>
-    </div>
-    <div>
-		<a href="desktop/list.md">
-			<img src="desktop/icons/list.png"/>
-			<br>List
-		</a>
-    </div>
-    <div>
-		<a href="desktop/organogram.md">
-			<img src="desktop/icons/organogram.png"/>
-			<br>Organogram
-		</a>
-    </div>
-    <div>
-		<a href="desktop/property_sheet.md" style="clear:left;">
-			<img src="desktop/icons/propertysheet.png"/>
-			<br>PropertySheet
-		</a>
-    </div>
-    <div>
-		<a href="datatree/index.md">
-			<img src="desktop/icons/datatree.png"/>
-			<br>Tree
-		</a>
-    </div>
-     <div>
-		<a href="desktop/treemap.md">
-			<img src="desktop/icons/treemap.png"/>
-			<br>TreeMap
-		</a>
-    </div>
-    <div>
-		<a href="desktop/treetable.md">
-			<img src="desktop/icons/treegrid.png"/>
-			<br>TreeTable
-		</a>
-    </div>
-    <div>
-		<a href="desktop/unitlist.md">
-			<img src="desktop/icons/unitlist.png"/>
-			<br>Unitlist
-		</a>
-    </div>
-</div>
-
 
 
 <h2 style="clear:both;"/>Context Components</h2>
@@ -275,8 +312,8 @@ Controls are mainly responsible for handling events since they enable user-app i
 		<li><a href="desktop/colorpicker.md"> <img src="api/toc/colorpicker.png"/> ColorPicker</a></li>
 		<li><a href="desktop/combo.md"><img src="api/toc/combo.png"/> Combo</a></li>
 		<li><a href="desktop/counter.md"><img src="api/toc/counter.png"/> Counter</a></li>
-		<li><a href="desktop/datepicker.md"><img src="api/toc/datepicker.png"/> Datepicker</a></li>
         <li><a href="desktop/datasuggest.md"><img src="api/toc/suggest.png"/> Datasuggest</a></li>
+        <li><a href="desktop/datepicker.md"><img src="api/toc/datepicker.png"/> Datepicker</a></li>
 	</ul>
 </div>
 
@@ -295,18 +332,18 @@ Controls are mainly responsible for handling events since they enable user-app i
 <div class="controls_group">
 	<ul>
     	<li><a href="desktop/radio.md"> <img src="api/toc/radio.png"/> Radio</a></li>
+        <li><a href="desktop/rangeslider.md"> <img src="api/toc/rangeslider.png"/> RangeSlider</a></li>
 		<li><a href="desktop/richselect.md"><img src="api/toc/richselect.png"/> Richselect</a></li>
     	<li><a href="desktop/search.md"><img src="api/toc/search.png"/> Search</a></li>
     	<li><a href="desktop/select.md"><img src="api/toc/select.png"/> Select</a></li>		
     	<li><a href="desktop/segmented.md"><img src="api/toc/segmented.png"/> Segmented</a></li>
-        <li><a href="desktop/slider.md"><img src="api/toc/slider.png"/> Slider </a></li>
-		<li><a href="desktop/suggest.md"><img src="api/toc/suggest.png"/> Suggest</a></li>
-			
+        <li><a href="desktop/slider.md"><img src="api/toc/slider.png"/> Slider </a></li>			
 	</ul>
 </div>
 
 <div class="controls_group">
 	<ul>
+        <li><a href="desktop/suggest.md"><img src="api/toc/suggest.png"/> Suggest</a></li>
     	<li><a href="desktop/tabbar.md"><img src="api/toc/tabbar.png"/> Tabbar</a></li>
 		<li><a href="desktop/text.md"><img src="api/toc/text.png"/> Text</a></li>	
     	<li><a href="desktop/textarea.md"><img src="api/toc/textarea.png"/> Textarea</a></li>
@@ -373,6 +410,7 @@ div.controls_group img {
 - desktop/popup.md
 - desktop/portlet.md
 - desktop/property_sheet.md
+- desktop/range_chart.md
 - desktop/scrollview.md
 - desktop/sidemenu.md
 - desktop/tabview.md

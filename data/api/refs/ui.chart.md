@@ -165,7 +165,7 @@ var chart = webix.ui({
 - api/link/ui.chart_height_config.md - sets the height of the component
 - api/link/ui.chart_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.chart_id_config.md - the component ID
-- api/ui.chart_item_config.md - defines markers that present chart's data items.
+- api/ui.chart_item_config.md - defines markers that present chart's data items
 - api/ui.chart_label_config.md - sets the template for items' labels
 - api/ui.chart_labeloffset_config.md - the offset of sector labels from the pie frame
 - api/ui.chart_legend_config.md - defines the chart legend
@@ -220,7 +220,7 @@ var chart = webix.ui({
 - api/link/ui.chart_$height_other.md - current height of the view
 - api/link/ui.chart_$scope_other.md - scope for resolving event and method names
 - api/link/ui.chart_$setsize_other.md - sets the component size
-- api/link/ui.chart_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.chart_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.chart_$view_other.md - reference to top html element of the view
 - api/link/ui.chart_$width_other.md - current width of the view
 - api/ui.chart_colormap_other.md - collection of coloring strategies

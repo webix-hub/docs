@@ -4,7 +4,7 @@ ui
 
 @short:
 
-allows to create new ui, which isd will be locked in parent id space
+allows creating new ui, the id of which will be locked in the parent id space
 	
 
 @params:
@@ -30,4 +30,4 @@ var view = some.$$("myid");	//popup
 @descr:
 
 
-Arguments of method are the same as for webix.ui command
+Arguments of the method are the same as for the [webix.ui](api/_ui.md) command

@@ -3,7 +3,7 @@ PDF Viewer
 
 PDF Viewer is a tool for displaying the content of PDF files on the screen.
 
-<img src="desktop/pdfviewer_front.png">
+<img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/pdfviewer_front.png">
 
 {{sample 60_pro/10_viewers/01_pdf.html}}
 
@@ -33,6 +33,17 @@ Configuration parameters are:
 	- **toolbar** (string) - the id of the related pdf toolbar;
 	- **url** (string) - the url of the pdf file to browse in the viewer.
     
+####Pdfbar structure    
+    
+Toolbar is supplied with the following fully functional controls: 
+
+- navigation arrows (previous and next page);
+- current page label;
+- "all pages" label;
+- zoom in and out icons;
+- zoom mode selector;
+- download button.
+    
 If you need, you can use the viewer and the toolbar separately, by using their public API methods.
 
 
@@ -53,6 +64,31 @@ parameters:
 $$("pdfviewer").load(url);
 ~~~
 
+####parse()
+
+parses the contents of uploaded File or base64 string into the viewer:
+
+{{snippet
+Base64 string
+}}
+~~~js
+var base64data = ..decoded base64 data..;
+$$("pdf").parse({data:base64data});
+~~~
+
+{{snippet
+Uploaded file
+}}
+~~~js
+{view:"uploader", width:200, height:45, type:"form", value:"Choose a PDF file to upload", accept:"application/pdf", on:{
+	onBeforeFileAdd:function(upload){
+		$$("pdf").parse(upload.file);
+	return false;
+	}
+}}
+~~~
+
+{{sample 60_pro/10_viewers/05_pdf_upload.html }}
 
 ####nextPage()
 
@@ -61,7 +97,6 @@ renders the page that follows the viewed one
 ~~~js
 $$("pdfviewer").nextPage();
 ~~~
-
 
 ####prevPage()
 
@@ -128,6 +163,14 @@ zooms the viewed page out
 
 ~~~js
 $$("pdfviewer").zoomOut();
+~~~
+
+####download()
+
+downloads viewer contents as PDF file
+
+~~~js
+$$("pdfviewer").download();
 ~~~
 
 ###Events
@@ -220,8 +263,6 @@ parameters:
 $$("toolbar").setPage(2);
 ~~~
 
-
-
 ####setScale()
 
 sets a new value for the toolbar scale
@@ -276,5 +317,14 @@ parameters:
 ~~~js
 $$("toolbar").zoom("in");
 ~~~
+
+####download()
+
+applies downloading to the viewer to get its contents as PDF file
+
+~~~js
+$$("toolbar").download();
+~~~
+
 
 @edition:pro

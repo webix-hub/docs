@@ -9,7 +9,7 @@ See also general rules of markup initialization that are described in a [separat
 
 Initialization from XML is simpler in terms of syntax while at the same time tags feature greater semantic value than HTML, yet XML is not that popular due to its "strict" nature. 
 
-To intergate this functionality with IE8, set the initial page tag as **< html xmlns:x >** instead of < html >.  
+To intergrate this functionality with IE8, set the initial page tag as **< html xmlns:x >** instead of < html >.  
 
 Below the peculiarities of initialization for different Webix components are listed. 
 

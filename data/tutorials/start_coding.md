@@ -129,7 +129,7 @@ breathe life into your app and make it dynamically change to implement all the f
 The library is supplied with a rich set of samples to show you how the components look and perform in reality. So you won't regret having spent some time 
 studying them.
 
-So, there comes time for creativity, so put on your chinking cap and pass to coding. 
+So, there comes time for creativity, so put on your thinking cap and pass to coding. 
 
 ##Main principles of coding with the Webix {#main}
 

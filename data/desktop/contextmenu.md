@@ -129,7 +129,7 @@ webix.ui({
 });
 ~~~
 
-{{Note
+{{note
 You can link either to a **component object** or to its **HTML container** (like any other HTML on page). The difference lies within data components - to attach context menu to their items, you need to link to a component **object**.
 }}
 

@@ -8,7 +8,7 @@ groupDelimiter
 @example:
 
 webix.i18n.groupDelimiter = "'";
-webix.i18n.setLocale("en-US");
+webix.i18n.setLocale();
 
 @template:	api_config
 @defined:	i18n	

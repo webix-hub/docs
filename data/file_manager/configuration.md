@@ -389,7 +389,7 @@ To refer to the Actions menu, you can apply the **getMenu()** method to File Man
 var actions = $$("fmanager").getMenu();
 ~~~
 
-By default, actions menu contains the following data array:
+By default, the Actions menu contains the following data array:
 
 ~~~js
 [
@@ -485,22 +485,24 @@ To remove an existing action, you can call the api/link/ui.proto_remove.md metho
 actions.remove("upload");
 ~~~
 
-It is possible to customize actions menu with the help of **menuFilter** function that can filter menu items before showing the menu on page.
+It is possible to customize the Actions menu with the help of **menuFilter** function that can filter menu items before showing a menu on the page.
 
 ~~~js
 view:"filemanager",
+id: "fmanager",
 menuFilter:function(obj){
 	//obj - menu item obj
     
-    //dataId - id of clicked data item
-    var context = this.getContext();
+    var context = $$("fmanager").getMenu().getContext();
+    //dataId - id of the clicked data item
     var dataId = context.id;
-    
+ 
     if(..some condition ..)
-    	return false;
-    return true;    
+        return false;
+    return true;  
 }
 ~~~
+
 
 The function should return *true* to show the item, *false* to hide it.
 

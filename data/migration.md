@@ -1,6 +1,36 @@
 Migration to latest Webix version
 =================================
 
+Webix 3.1 -> 3.2
+----------------
+
+###Export API
+
+Old export functionality of Datatable and Pivot is removed in version 3.2.
+
+The methods exportToPDF() and exportToExcel() of Datatable and the methods toPDF() and toExcel() of Pivot are no longer available.
+You should use common methods api/_topdf.md and api/_toexcel.md for these components instead:
+
+~~~js
+webix.toPDF($$("myPivot"));
+
+webix.toExcel($$("myDatatable"));
+~~~
+
+###Loading Excel files into data components
+
+The "excel" proxy was removed. 
+
+Instead, the "binary" [proxy](desktop/server_proxy.md) object is used to load files like Excel into data components and the "excel" [datatype](desktop/data_types.md) 
+is introduced for parsing Excel files. It is the default datatype for Excel Viewer. 
+
+~~~js
+webix.ui({
+    view:"spreadsheet",
+    url: "binary->../common/test.xlsx@Data[0-10]",
+    datatype:"excel"
+});
+~~~
 
 Webix 3.0 -> 3.1
 ----------------

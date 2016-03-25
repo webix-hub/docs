@@ -15,13 +15,13 @@ var portlet = webix.ui({
   	rows:[
     	{ view:"portlet", body:{
 			template:"row 1"
-		}},
+		. }},
 		{ view:"portlet", body:{
 			template:"row 2"
-		}},
+		. }},
     	{ view:"portlet", body:{
 			template:"row 3"
-		}}
+		. }}
    	]
 });
 ~~~
@@ -30,7 +30,6 @@ var portlet = webix.ui({
 
 - [Overview of the Portlet Widget](desktop/portlet.md)
 - [Samples](http://docs.webix.com/samples/60_pro/09_portlet/index.html)
-
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.layout.md">ui.layout</a>, <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
@@ -126,7 +125,7 @@ var portlet = webix.ui({
 - api/link/ui.portlet_$getsize_other.md - returns the current size of the component
 - api/link/ui.portlet_$height_other.md - current height of the view
 - api/link/ui.portlet_$setsize_other.md - sets the component size
-- api/link/ui.portlet_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.portlet_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.portlet_$view_other.md - reference to top html element of the view
 - api/link/ui.portlet_$width_other.md - current width of the view
 - api/link/ui.portlet_config_other.md - all options from initial component configuration

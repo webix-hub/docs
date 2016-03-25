@@ -79,6 +79,7 @@ dummy stub
 - api/link/ui.excelviewer_getscrollstate.md - returns the current position of scrolls
 - api/link/ui.excelviewer_getselectedid.md - returns the selected elements' ids
 - api/link/ui.excelviewer_getselecteditem.md - gets an object of the selected data item
+- api/link/ui.excelviewer_getspan.md - returns the config array for a span or null, if there are no spans
 - api/link/ui.excelviewer_getstate.md - returns the current state of the view
 - api/link/ui.excelviewer_getsubview.md - returns subview of the item with the given id
 - api/link/ui.excelviewer_gettext.md - returns text value of a cell
@@ -151,6 +152,7 @@ dummy stub
 
 {{api
 - api/link/ui.excelviewer_onafteradd_event.md - fires after adding item to datastore
+- api/link/ui.excelviewer_onafterareaadd_event.md - fires after a select area was added
 - api/link/ui.excelviewer_onafterblockselect_event.md - event occurs after block selection
 - api/link/ui.excelviewer_onaftercolumndrop_event.md - fires after the column has been dragged and dropped to the target position
 - api/link/ui.excelviewer_onaftercolumndroporder_event.md - fires after the column order was changed with the help of drag-and-drop
@@ -166,7 +168,9 @@ dummy stub
 - api/link/ui.excelviewer_onafterselect_event.md - fires after a cell is selected
 - api/link/ui.excelviewer_onaftersort_event.md - fires after sorting dataset
 - api/link/ui.excelviewer_onafterunselect_event.md - fires after a cell is unselected
+- api/link/ui.excelviewer_onareadrag_event.md - fires when area selection is started
 - api/link/ui.excelviewer_onbeforeadd_event.md - fires before adding item to datastore
+- api/link/ui.excelviewer_onbeforeareaadd_event.md - fires before a select area is added
 - api/link/ui.excelviewer_onbeforeblockselect_event.md - event occurs before block selection
 - api/link/ui.excelviewer_onbeforecolumndrag_event.md - fires the monent you start dragging the column from its source potition
 - api/link/ui.excelviewer_onbeforecolumndrop_event.md - fires the moment you drop the column to its target position
@@ -188,6 +192,7 @@ dummy stub
 - api/link/ui.excelviewer_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.excelviewer_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.excelviewer_oncheck_event.md - fires when a checkbox is checked or unchecked in the datatable item
+- api/link/ui.excelviewer_oncollectvalues_event.md - fires after datatable has collected options
 - api/link/ui.excelviewer_oncolumnresize_event.md - fires when width of column was changed
 - api/link/ui.excelviewer_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.excelviewer_ondataupdate_event.md - fires when data item is in update process
@@ -211,9 +216,9 @@ dummy stub
 - api/link/ui.excelviewer_onselectchange_event.md - fires when selection is changed in a DataTable
 - api/link/ui.excelviewer_onstructureload_event.md - fires when the structure of DataTable (columns configuration) is initialized
 - api/link/ui.excelviewer_onstructureupdate_event.md - fires when structure of datatable was changed ( column added, hidden or reconfigured )
-- api/ui.excelviewer_onsubviewclose_event.md - 
+- api/link/ui.excelviewer_onsubviewclose_event.md - fires after a subview or a subrow is closed
 - api/link/ui.excelviewer_onsubviewcreate_event.md - fires after a subview was created
-- api/link/ui.excelviewer_onsubviewopen_event.md - fires after a subview or subrow is opened
+- api/link/ui.excelviewer_onsubviewopen_event.md - fires after a subview or a subrow is opened
 - api/link/ui.excelviewer_onsubviewrender_event.md - fires each time subview is rendered
 - api/link/ui.excelviewer_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.excelviewer_onswipey_event.md - occurs on a vertical swipe movement
@@ -231,9 +236,10 @@ dummy stub
 
 {{api
 - api/link/ui.excelviewer_animate_config.md - defines or disables view change animation.
+- api/link/ui.excelviewer_areaselect_config.md - enables/disables area selection
 - api/link/ui.excelviewer_autoconfig_config.md - datatable adjust configuration to the data
-- api/link/ui.excelviewer_autoheight_config.md - adjusts DataTable to the parent container size vertically
-- api/link/ui.excelviewer_autowidth_config.md - adjusts DataTable to the parent container size horizontally
+- api/link/ui.excelviewer_autoheight_config.md - adjusts Datatable size to the its content vertically
+- api/link/ui.excelviewer_autowidth_config.md - adjusts Datatable size to its content horizontally
 - api/link/ui.excelviewer_blockselect_config.md - enables/disables block selection
 - api/link/ui.excelviewer_borderless_config.md - used to hide the component borders
 - api/link/ui.excelviewer_checkboxrefresh_config.md - controls behavior of checkbox editors in grid
@@ -335,9 +341,10 @@ dummy stub
 - api/link/ui.excelviewer_$dropallow_other.md - can be redefine if you need custom drop rules
 - api/link/ui.excelviewer_$getsize_other.md - returns the current size of the component
 - api/link/ui.excelviewer_$height_other.md - current height of the view
+- api/ui.excelviewer_$onload_other.md - 
 - api/link/ui.excelviewer_$scope_other.md - scope for resolving event and method names
 - api/link/ui.excelviewer_$setsize_other.md - sets the component size
-- api/link/ui.excelviewer_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.excelviewer_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.excelviewer_$view_other.md - reference to top html element of the view
 - api/link/ui.excelviewer_$width_other.md - current width of the view
 - api/link/ui.excelviewer_config_other.md - all options from initial component configuration

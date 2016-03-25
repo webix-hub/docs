@@ -6,8 +6,8 @@ removeSpan
 @edition:pro
 
 @params:
-- id		string, number		row id that starts a colspan/rowspan
-- column	string		column id that starts a colspan/rowspan
+- id		string/number		row id that starts a colspan/rowspan
+- column	string				column id that starts a colspan/rowspan
 
 @example:
 grid.removeSpan(1, "country");
@@ -18,6 +18,8 @@ grid.refresh();
 @relatedapi:
 	api/ui.datatable_addspan.md
     api/ui.datatable_spans_config.md
+    api/ui.datatable_getspan.md
 @template:	api_method
 @descr:
+
 @edition:  pro

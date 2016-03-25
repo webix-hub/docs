@@ -10,7 +10,7 @@ The component presents a pop-up menu that is displayed when the user clicks the 
 
 {{snippet 
 HTML
-}}
+. }}
 ~~~html
 <!--Right click the area-->
 <div id="areaA" style=" background-color:#ffffbb; width:500px; height:300px;"></div>
@@ -18,7 +18,7 @@ HTML
 
 {{snippet 
 JS
-}}
+. }}
 ~~~js
 var contextmenu = webix.ui({
 	view:"contextmenu",
@@ -39,7 +39,6 @@ var contextmenu = webix.ui({
 
 - [Overview of the ContextMenu Widget](desktop/contextmenu.md)
 - [Samples](http://docs.webix.com/samples/03_menu/index.html)
-
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/contexthelper.md">ContextHelper</a>, <a href="api/refs/ui.submenu.md">ui.submenu</a>, <a href="api/refs/ui.menu.md">ui.menu</a>, <a href="api/refs/ui.list.md">ui.list</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/selectionmodel.md">SelectionModel</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/ui.proto.md">ui.proto</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/copypaste.md">CopyPaste</a>, <a href="api/refs/ui.popup.md">ui.popup</a>, <a href="api/refs/ui.window.md">ui.window</a>, <a href="api/refs/movable.md">Movable</a>, <a href="api/refs/modality.md">Modality</a></div>
 
@@ -295,7 +294,7 @@ var contextmenu = webix.ui({
 - api/link/ui.contextmenu_$height_other.md - current height of the view
 - api/link/ui.contextmenu_$scope_other.md - scope for resolving event and method names
 - api/link/ui.contextmenu_$setsize_other.md - sets the component size
-- api/link/ui.contextmenu_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.contextmenu_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.contextmenu_$view_other.md - reference to top html element of the view
 - api/link/ui.contextmenu_$width_other.md - current width of the view
 - api/link/ui.contextmenu_config_other.md - all options from initial component configuration

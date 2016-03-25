@@ -36,10 +36,11 @@ The method can be used to apply the changes done to the locale in use.
 
 ~~~js
 webix.i18n.parseFormat = "%d-%m-%Y";
-webix.i18n.setLocale("en-US");
+webix.i18n.setLocale();
 ~~~
 
-But the method is not enough for switching locales dynamically. After setting another locale, you need to recreate the view (see the related sample). 
+setLocal must be used before rendering the UI widgets. Calling setLocale after widgets are rendered will not force locale update in the already rendered UI.   
+You will need to recreate views to apply a new locale settings. 
 
 @relatedsample:15_datatable/20_templates/08_locales.html
 @related:desktop/localization.md

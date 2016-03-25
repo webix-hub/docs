@@ -6,9 +6,9 @@ ui
 	
 
 @params:
-- config	object		the view configuration
-* parent 	object, string	 object or id of parent component;
-* replacement 	object, string, number 		object, id or index of the component being replaced
+- config				object							the view configuration
+* parent				object/string	 				object or id of parent component
+* replacement			object/string/number			object, id or index of the component being replaced
 
 BTW, if you don't specify the ID for the component, it will be generated automatically. You can always get the component ID  by using:
 
@@ -34,5 +34,5 @@ var dtable = webix.ui({ view:"datatable", ... });
 
 If you want to init a Webix component, only the first parameter is needed. 
 
-If you want to rebiult the existing layout or replace some component in it, make use of additional parameters. Read more 
-in [Dynamic UI Modifications](desktop/dynamic_layout.md#rebuildingapplicationlayout) article. 
+If you want to rebuild the existing layout or replace some component in it, make use of additional parameters. Read more 
+in the [Dynamic UI Modifications](desktop/dynamic_layout.md#rebuildingapplicationlayout) article. 

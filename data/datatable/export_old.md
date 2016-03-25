@@ -8,8 +8,8 @@ To get the actual information on Datatable export, read the article datatable/ex
 
 [Datatable](datatable/index.md) and [Treetable](desktop/treetable.md) data can be exported to the following formats:
 
-1. [PDF](datatable/export.md#exporttopdf);
-2. [Excel](datatable/export.md#exporttoexcel).
+1. [PDF](datatable/export_old.md#exporttopdf);
+2. [Excel](datatable/export_old.md#exporttoexcel).
 
 The components don't require any special configuration to be exported. 
 
@@ -32,7 +32,7 @@ After that all you need is to apply an appropriate export method to this datatab
 Export to PDF
 -------------------
 
-To export data from datatable or treetable into a PDF document you need to call method api/ui.datatable_exporttopdf.md. 
+To export data from datatable or treetable into a PDF document you need to call exportToPDF(). 
 For example, if you add a button by clicking on which the grid will start exporting, then its code will look like this: 
 
 ~~~html
@@ -61,7 +61,8 @@ grid.exportToPDF("generate.php"); //provide the correct relative path
 Export to Excel
 -------------------
 
-To export data from datatable/treetable into an Excel document you need to call method api/ui.datatable_exporttoexcel.md. For example, if you add a button by clicking on which the grid will start exporting, then its code will look like this: 
+To export data from datatable/treetable into an Excel document you need to call exportToExcel(). 
+For example, if you add a button by clicking on which the grid will start exporting, then its code will look like this: 
 
 ~~~html
 <input type="button" value="Get as PDF" style='width:400px;margin:25px;' 
@@ -87,17 +88,17 @@ grid.exportToExcel("generate.php"); //provide correct relative path
 Customizing Export
 ---------------------
 
-Both api/ui.datatable_exporttopdf.md and api/ui.datatable_exporttoexcel.md return data from **all currently visible columns** of your datatable without any data formatting (as it is in the dataset). However, you may 
-need to get data from other fields as well as restrict the number of fields in the export file, or apply some format to data values. 
+Both exportToPDF and exportToExcel return data from **all currently visible columns** of your datatable without any data formatting (as it is in the dataset).
+However, you may need to get data from other fields as well as restrict the number of fields in the export file, or apply some format to data values. 
 
 All customizing happens within the needed export function:
 
 ~~~js
 //in case you use online service
-grid.exportToExcell(null, {..setting custom values..});
+grid.exportToExcel(null, {..setting custom values..});
 
 //in case you use local version of export script
-grid.exportToExcell("generate.php", {..setting custom values..});
+grid.exportToExcel("generate.php", {..setting custom values..});
 ~~~
 
 **Export API allows** 
@@ -149,8 +150,8 @@ grid.exportToPDF(null, {
 });
 ~~~
 
-"Custom1" (any name can be used) receives data from **year** field even if it is not seen in this datatable but is presented in its dataset. The field is rendered with **width**, **template** and **header** that 
-will be the header of the corresponding column in the export table. 
+"Custom1" (any name can be used) receives data from **year** field even if it is not seen in this datatable but is presented in its dataset. 
+The field is rendered with **width**, **template** and **header** that will be the header of the corresponding column in the export table. 
 
 {{sample 15_datatable/10_export/05_configuration.html}}
 

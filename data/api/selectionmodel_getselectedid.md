@@ -7,11 +7,11 @@ getSelectedId
 	returns the id(s) of the selected item(s)
 
 @params:
-- as_array		boolean		specifies whether the result should be always returned as an array.<br> The default value is <i>false</i>
+- as_array		boolean		specifies whether the result should always be returned as an array.<br> The default value is <i>false</i>
 
 
 @returns:
--id		string,array	the single item id or an array of ids
+- id		string/array	the single item id or an array of ids
 
 @example:
 //single select mode

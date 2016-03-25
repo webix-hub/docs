@@ -1,4 +1,4 @@
-Creating File Manager on a page
+Creating File Manager on a Page
 ================================
 
 There are two simple steps you need to complete to initialize File Manager on a page:

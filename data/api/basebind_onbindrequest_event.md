@@ -19,4 +19,4 @@ some.attachEvent("onBindRequest", function(){
 	api/basebind_bind.md
 	
 @descr:
-The event is a part of bind API. Doesn't have any sense if it's used stand-alone 
+The event is a part of bind API. Doesn't make sense if it's used stand-alone 

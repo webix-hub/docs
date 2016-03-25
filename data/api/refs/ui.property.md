@@ -4,7 +4,7 @@ ui.property
 
 {{memo A structured table of 2 columns that presents 'name:value' pairs for a list of properties. }}
 
-The component can be used for creating various on-page editors. The value field can be presented by any control - a text field, a checkbox, a drop-down list box etc. Check [property](/) documentation for more detailed description.
+The component can be used for creating various on-page editors. The value field can be presented by any control - a text field, a checkbox, a drop-down list box etc. Check [property](desktop/property_sheet.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -26,7 +26,6 @@ var property = webix.ui({
 
 - [Overview of the Property Sheet Widget](desktop/property_sheet.md)
 - [Samples](http://docs.webix.com/samples/07_property/index.html)
-
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/editability.md">EditAbility</a>, <a href="api/refs/mapcollection.md">MapCollection</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/singlerender.md">SingleRender</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
@@ -177,7 +176,7 @@ var property = webix.ui({
 - api/link/ui.property_$height_other.md - current height of the view
 - api/link/ui.property_$scope_other.md - scope for resolving event and method names
 - api/link/ui.property_$setsize_other.md - sets the component size
-- api/link/ui.property_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.property_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.property_$view_other.md - reference to top html element of the view
 - api/link/ui.property_$width_other.md - current width of the view
 - api/link/ui.property_config_other.md - all options from initial component configuration

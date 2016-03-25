@@ -1,7 +1,21 @@
 Structuring a Big Application
 ==================================
 
-The article tells about **logic-based app structuring** and shows how to divide the application code into 
+While building a big app interface, there are two options you can choose from:
+
+- using [Webix Jet](desktop/big_app_structure.md#easyappsbuildingwithwebixjet) 
+- creating custom code by following [basic recommendations](desktop/big_app_structure.md#basicrecommendationsoncustomappconstruction)
+
+
+##Easy Apps Building with Webix Jet
+
+There is a convenient and simple for understanding and developing micro-framework Webix Jet. 
+It allows building very flexible and reliable complex web applications with little effort. To get the details on the use of the micro-framework, 
+read the [full guide on Webix Jet](https://www.gitbook.com/book/webix/webix-jet/details).
+
+##Basic recommendations on custom app construction
+
+The rest of the article tells about **logic-based app structuring** and shows how to divide the application code into 
 semantic blocks, which enhances its readability and simplifies editing of code, including the addition of some new 
 functionality. 
 
@@ -11,18 +25,13 @@ For better understanding, please study the following articles:
 - [Quick Start Guide, or How to Initialize a Component](tutorials/quick_start.md)
 - [Building App Architecture - Layout and its Types](desktop/building_app_architecture.md)
 
+
 Here everything is about logic, structure and optimized coding. The **basic principles** are: 
 
 - store big code snippets in variables;
 - put apart application design and inner functionality. 
 
 For samples, please look through the demo applications provided with this library. 
-
-##Easy Apps Building with Webix Jet
-
-There is a convenient and simple for understanding and developing micro-framework Webix Jet. 
-It allows building very flexible and reliable complex web applications with little effort. To get the details on the use of the micro-framework, 
-read the [full guide on Webix Jet](https://www.gitbook.com/book/webix/webix-jet/details).
 
 ##Construction Methods
 

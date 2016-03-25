@@ -120,18 +120,18 @@ By default, the following icons are set:
 
 ~~~js
 icons: {
-			folder: "folder",
-			doc: "file-word-o",
-			excel: "file-excel-o",
-			pdf: "file-pdf-o",
-			pp: "file-powerpoint-o",
-			text: "file-text-o",
-			video: "file-video-o",
-			image: "file-image-o",
-			code: "file-code-o",
-			audio: "file-audio-o",
-			archive: "file-archive-o",
-			file: "file-o"
-		}
+	folder: "folder",
+	doc: "file-word-o",
+	excel: "file-excel-o",
+	pdf: "file-pdf-o",
+	pp: "file-powerpoint-o",
+	text: "file-text-o",
+	video: "file-video-o",
+	image: "file-image-o",
+	code: "file-code-o",
+	audio: "file-audio-o",
+	archive: "file-archive-o",
+	file: "file-o"
+}
 ~~~
 

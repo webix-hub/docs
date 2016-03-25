@@ -31,7 +31,6 @@ var sidemenu = webix.ui({
 
 - [Overview of the Sidemenu Widget](desktop/sidemenu.md)
 - [Samples](http://docs.webix.com/samples/28_sidemenu/index.html)
-
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.popup.md">ui.popup</a>, <a href="api/refs/ui.window.md">ui.window</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/movable.md">Movable</a>, <a href="api/refs/modality.md">Modality</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
@@ -145,7 +144,7 @@ var sidemenu = webix.ui({
 - api/link/ui.sidemenu_$height_other.md - current height of the view
 - api/link/ui.sidemenu_$scope_other.md - scope for resolving event and method names
 - api/link/ui.sidemenu_$setsize_other.md - sets the component size
-- api/link/ui.sidemenu_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.sidemenu_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.sidemenu_$view_other.md - reference to top html element of the view
 - api/link/ui.sidemenu_$width_other.md - current width of the view
 - api/link/ui.sidemenu_config_other.md - all options from initial component configuration

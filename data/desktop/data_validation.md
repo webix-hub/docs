@@ -296,6 +296,17 @@ webix.ui({
 
 {{sample 13_form/04_validation/06_validation_rules.html}}
 
+In case you are parsing JSON data, you should set the predefined rules as follows:
+
+~~~js
+"rules":{  
+   "login":"isNotEmpty",  
+   ...
+}
+~~~
+
+It is needed for JSON data to be parsed properly.
+
 {{note
 Note that in case you define rules within input constructor, the **isNotEmpty** rule can be substituted by **required** property.
 }}

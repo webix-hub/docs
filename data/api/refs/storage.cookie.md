@@ -1,7 +1,7 @@
 storage.cookie 
 =============
 
-{{memo Iterface for storing data in cookies. }}
+{{memo Interface for storing data in cookies. }}
 
 
 

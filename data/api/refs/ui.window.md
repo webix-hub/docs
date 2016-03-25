@@ -4,7 +4,7 @@ ui.window
 
 {{memo A movable popup window. }}
 
-The window consists of the header and the body, can be modal or modaless. The window body can contain any content. The header is set by a template.  Check [window](desktop/window.md) documentation for more detailed description.
+The window consists of the header and the body, can be modal or modaless. The window body can contain any content. The header is set by a template. Check [window](desktop/window.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -25,7 +25,6 @@ var window = webix.ui({
 
 - [Overview of the Window Widget](desktop/window.md)
 - [Samples](http://docs.webix.com/samples/10_window/index.html)
-
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/movable.md">Movable</a>, <a href="api/refs/modality.md">Modality</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
@@ -140,7 +139,7 @@ var window = webix.ui({
 - api/link/ui.window_$height_other.md - current height of the view
 - api/link/ui.window_$scope_other.md - scope for resolving event and method names
 - api/link/ui.window_$setsize_other.md - sets the component size
-- api/link/ui.window_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.window_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.window_$view_other.md - reference to top html element of the view
 - api/link/ui.window_$width_other.md - current width of the view
 - api/link/ui.window_config_other.md - all options from initial component configuration

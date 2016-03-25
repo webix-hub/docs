@@ -2,7 +2,7 @@ labelPosition
 =============
 
 
-@short: positions label in relation the control
+@short: positions label in relation to the control
 
 @values:
 - top	places label above the control
@@ -11,7 +11,7 @@ labelPosition
 @type: string
 @example:
 
-{view: "text", label:"Some Text", labelPosition:"Top"}
+{view: "text", label:"Some Text", labelPosition:"top"}
 
 @relatedsample:
 	13_form/02_api/03_label_position.html
@@ -28,7 +28,7 @@ By default label features left alignment, so the top label will be placed to the
 Top right alignment is achieved by applying both properties:
 
 ~~~js
-{view: "text", label:"Some Text", labelAlign:"right", labelPosition:"Top"}
+{view: "text", label:"Some Text", labelAlign:"right", labelPosition:"top"}
 ~~~
 
 @reserved: true

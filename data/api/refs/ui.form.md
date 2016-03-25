@@ -26,7 +26,6 @@ var form = webix.ui({
 
 - [Overview of the Form Widget](desktop/form.md)
 - [Samples](http://docs.webix.com/samples/13_form/index.html)
-
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.toolbar.md">ui.toolbar</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/values.md">Values</a>, <a href="api/refs/ui.layout.md">ui.layout</a>, <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/validatedata.md">ValidateData</a></div>
 
@@ -156,7 +155,7 @@ var form = webix.ui({
 - api/link/ui.form_$getsize_other.md - returns the current size of the component
 - api/link/ui.form_$height_other.md - current height of the view
 - api/link/ui.form_$setsize_other.md - sets the component size
-- api/link/ui.form_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.form_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.form_$view_other.md - reference to top html element of the view
 - api/link/ui.form_$width_other.md - current width of the view
 - api/link/ui.form_config_other.md - all options from initial component configuration

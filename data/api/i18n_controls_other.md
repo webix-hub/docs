@@ -8,7 +8,7 @@ controls
 @example:
 
 webix.i18n.control.select = "Done";
-webix.i18n.setLocale("en-US");
+webix.i18n.setLocale();
 
 @template:	api_config
 

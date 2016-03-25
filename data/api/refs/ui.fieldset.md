@@ -26,6 +26,7 @@ var fieldset = webix.ui({
 - [Overview of the Fieldset Control](desktop/fieldset.md)
 - [Samples](http://docs.webix.com/samples/13_form/05_extras/)
 
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
@@ -108,7 +109,7 @@ var fieldset = webix.ui({
 - api/link/ui.fieldset_$height_other.md - current height of the view
 - api/link/ui.fieldset_$scope_other.md - scope for resolving event and method names
 - api/link/ui.fieldset_$setsize_other.md - sets the component size
-- api/link/ui.fieldset_$skin_other.md - method, which will be called when skin defined
+- api/link/ui.fieldset_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.fieldset_$view_other.md - reference to top html element of the view
 - api/link/ui.fieldset_$width_other.md - current width of the view
 - api/link/ui.fieldset_config_other.md - all options from initial component configuration

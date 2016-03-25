@@ -1,6 +1,6 @@
 {{memo an editable table  that can easily display huge data sets }}
 
-The component is full of various possibilities: filtering, sorting, pagination, editing, nadigation, drag-and-drop, internationalization, export to PDF, Excel etc. It also provides the dynamic mode for handling thousands of records in a fast way.
+The component is full of various possibilities: filtering, sorting, pagination, editing, navigation, drag-and-drop, internationalization, export to PDF, Excel etc. It also provides the dynamic mode for handling thousands of records in a fast way.
   Check [datatable](datatable/index.md) documentation for more detailed description.
 
 ### Constructor
