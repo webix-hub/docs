@@ -223,7 +223,7 @@ The library offers you different properties and methods that can help you to set
 	<tr>
 		<td> <b>datafetch</b> </td>
 		<td>Defines the start position DataTable will load data from</td>
-		<td>You want to load records starting from the fiftieth one, then you set <b>datafetch:50</b>. <br> {{editor http://webix.com/snippet/fa8e8a40	Setting Loading Position }} </td>
+		<td>You want to load the particular number of records (e.g. 80), then you set <b>datafetch:80</b>. <br> {{editor http://webix.com/snippet/fa8e8a40	Setting Loading Position }} </td>
 	</tr>
 	<tr>
 		<td><b>datathrottle</b></td>
