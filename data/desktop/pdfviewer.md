@@ -37,7 +37,7 @@ Configuration parameters are:
     
 Toolbar is supplied with the following fully functional controls: 
 
-- navigarion arrows (previous and next page);
+- navigation arrows (previous and next page);
 - current page label;
 - "all pages" label;
 - zoom in and out icons;

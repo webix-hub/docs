@@ -15,8 +15,10 @@ These controls can be used for entering text, selecting an option, date or color
 - [Colorpicker](desktop/colorpicker.md)
 - [Combo](desktop/combo.md)
 - [Counter](desktop/counter.md)
+- [Datasuggest](desktop/datasuggest.md)
 - [Datepicker](desktop/datepicker.md)
 - [Fieldset](desktop/fieldset.md)
+- [Gridsuggest](desktop/gridsuggest.md)
 - [Icon](desktop/icon.md)
 - [Label](desktop/label.md)
 - [Multicombo](desktop/multicombo.md)
@@ -65,8 +67,10 @@ For further details check the desktop/controls_guide.md article.
   - desktop/colorpicker.md
   - desktop/combo.md
   - desktop/counter.md
+  - desktop/datasuggest.md
   - desktop/datepicker.md
   - desktop/fieldset.md
+  - desktop/gridsuggest.md
   - desktop/icon.md
   - desktop/label.md
   - desktop/multicombo.md

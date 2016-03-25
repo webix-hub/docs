@@ -25,32 +25,6 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
 		</td>
 		<td class='topic_description' style="text-align: center; padding:20px;"> <a href="desktop/pivotchart.md"><img src="desktop/pivotchart_extension.png"></a></td>
 	</tr>
-    <tr>
-		<td id="design" class='topics' style="vertical-align:text-top;">
-		    <h4 id='ui' style="margin-bottom:4px;">
-		        Extended Select Controls
-		    </h4>
-		    An integration extension that allows you to add extended options for select controls: 
-            <ul>
-            	<li><a href="desktop/datasuggest.md">Dataview Suggest</a></li>
-                <li><a href="desktop/gridsuggest.md">Grid Suggest</a></li>
-            </ul>
-		</td>
-		<td class='topic_description' style="text-align: center; padding:20px;"><img src="desktop/datasuggest_extension.png"></td>
-	</tr>
-    <tr>
-		<td id="design" class='topics' style="vertical-align:text-top;">
-		    <h4 id='ui' style="margin-bottom:4px;">
-		        Viewers
-		    </h4>
-		    An integration extension that allows you to view PDF and Excel files: 
-            <ul>
-            	<li><a href="desktop/pdfviewer.md">PDF Viewer</a></li>
-                <li><a href="desktop/excelviewer.md">Excel Viewer</a></li>
-            </ul>
-		</td>
-		<td class='topic_description' style="text-align: center; padding:20px;"><img src="desktop/excel_viewer.png"></td>
-	</tr>
 	<tr>
 		<td id="design" class='topics' style="vertical-align:text-top;">
 		    <h4 id='ui' style="margin-bottom:4px;">
@@ -138,10 +112,6 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
 @index:
 - desktop/pivot.md
 - desktop/pivotchart.md
-- desktop/datasuggest.md
-- desktop/gridsuggest.md
-- desktop/pdfviewer.md
-- desktop/excelviewer.md
 - desktop/text_editors.md
 - desktop/chart_integration.md
 - desktop/maps.md
