@@ -14,7 +14,7 @@ While **manupulating data** items, you can:
 - apply methods to the component by its **ID** - *$$("list")*, which implies addressing datastore. Most methods have this pattern. 
 
 ~~~js
-$$("list").data.each(){function(obj){.....} }; //iterates through items array
+$$("list").data.each(function(obj){...}); //iterates through items array
 
 $$("list").count(); //counts items in the list datastore
 ~~~
