@@ -234,13 +234,13 @@ webix.ui({
  //function is executed on pre-defined event, e.g. on button click
  
 function parse(){ 
-     var str = "<data>
-     		<item id='10'><title>The Lord of the Rings</title> 
-    		<year>2003</year><rank>10</rank></item>
-		</data>";
-     $$("dataview").clearAll();
-     $$("dataview").parse(str,"xml");
-   }
+   var str = "<data>
+      <item id='10'><title>The Lord of the Rings</title> 
+      <year>2003</year><rank>10</rank></item>
+	  </data>";
+   $$("dataview").clearAll();
+   $$("dataview").parse(str,"xml");
+}
 
 ~~~
 
@@ -257,14 +257,16 @@ $$("datatable").parse({
 
 ##Data Parsing Events
 
-- **onParse** - fires when the component is ready to receive inline data
+- **onParse** - fires when a component has received inline data and is ready for usage:
 
 ~~~js
-dtable.attachEvent("onParse", function(driver, data){
+dtable.attachEvent("data->onParse", function(driver, data){
     //for json data
     webix.message("Count of records "+data.length);
 });
 ~~~
+
+Since the event is triggered for the component [DataStore](api/refs/datastore.md), the handler should be prefixed by *"data->"*.
 
 ##Promise API in Data Loading
 
