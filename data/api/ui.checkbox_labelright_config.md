@@ -2,12 +2,12 @@ labelRight
 =============
 
 @short:
-	positions label to the right of the checkbox control
+	sets the text of the right-hand label. Only checkbox features this functionality
 
-@type: boolean
+@type: string
 @example:
 
-{view:"checkbox", labelRight:true}	
+{view:"checkbox", labelRight:"New Label"}	
 
 @template:	api_config
 @descr:
