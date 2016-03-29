@@ -23,7 +23,7 @@ And then the call of the toPDF() method should follow.
 webix.toPDF($$("myDataTable"));
 ~~~
 
-{{sample 15_datatable/10_export/06_pdf.html }}
+{{editor http://webix.com/snippet/23cac5c9	DataTable Export to PDF }}
 
 Customizing Export to PDF
 -------------------------
@@ -113,4 +113,4 @@ webix.toPDF($$("myDataTable"), {
 ~~~
 
 
-{{sample 15_datatable/10_export/07_pdf_config.html}}
+{{editor http://webix.com/snippet/b1f79035	DataTable Export to PDF: Custom configuration}}

@@ -25,7 +25,8 @@ And then the call of the toExcel() method should follow.
 webix.toExcel($$("myDataTable"));
 ~~~
 
-{{sample 15_datatable/10_export/01_excel.html}}
+{{editor http://webix.com/snippet/1f9ed76b	Export to Excel}}
+
 
 Customizing Export
 ---------------------

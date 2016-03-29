@@ -46,7 +46,7 @@ XML Toolbar, List and Form
 	</x:ui>
 ~~~
 
-{{sample 23_markup/02_xhtml/01_init.html}}
+{{editor http://webix.com/snippet/7fb2553f 	XML Initialization}} 
 
 ####Comments: 
 
@@ -65,7 +65,14 @@ Accordion features an array of **accordionitems**, each of which has a **header*
 ~~~js
 {
 	view:"accordion", rows:[
-    	{header:"Section A", body:{view:"list", url:"data/data.json", template:"#id#: #Package#"} },
+    	{
+          header:"Section A", 
+          body:{
+             view:"list", 
+             url:"data/data.json", 
+             template:"#id#: #Package#"
+          } 
+        },
         {...}
     ]
     
@@ -94,8 +101,9 @@ Or:
 </x:headerlayout>
 ~~~
 
-{{sample 23_markup/02_xhtml/05_accordion.html}}
-{{sample 23_markup/01_html/05_accordion.html}}
+{{editor http://webix.com/snippet/6124a5d0	XML Initialization: Accordion}} 
+
+{{editor http://webix.com/snippet/1ba8fe15	HTML Initialization: Accordion}} 
 
 ##Datatable
 
@@ -123,7 +131,7 @@ Datatable features an array of columns each of which has a set of congiguration 
 </x:datatable>
 ~~~
 
-{{sample 23_markup/02_xhtml/03_datatable.html}}
+{{editor http://webix.com/snippet/e958c958	XML Initialization: DataTable }}
 
 ##Form {#XMLform}
 
@@ -136,7 +144,7 @@ If placed in layout rows or cols, form can be initialized with standard HTML tag
 </x:form>
 ~~~
 
-{{sample 23_markup/02_xhtml/07_fieldset.html}}
+{{editor http://webix.com/snippet/c3e4c09e	XML Initialization: Fieldset}}
 
 HTMLform has its own [initializing patterns](desktop/htmlform.md) including via webix markup class.
 
@@ -175,7 +183,7 @@ During XML init you needn't define IDs - just place necessary conponents within 
 </x:tabview>
 ~~~
 
-{{sample 23_markup/02_xhtml/06_tabbar.html}}
+{{editor http://webix.com/snippet/fb9fb53f	XML Initialization: Tabbar}} 
 
 ##Altering Namespace
 
@@ -201,7 +209,8 @@ Empty Namespace
 </ui>
 ~~~
 
-{{sample 23_markup/03_xml/02_without_namespace.html}}
+{{editor http://webix.com/snippet/17a71ad1	XML Initialization: Empty Namespace}}
+
 
 {{snippet
 Custom Namespace
@@ -214,6 +223,6 @@ Custom Namespace
 </wx:ui>
 ~~~
 
-{{sample 23_markup/03_xml/01_custom_namespace.html}}
+{{editor http://webix.com/snippet/018c3529	XML Initialization: Custom Namespace}}
 
 @edition:pro

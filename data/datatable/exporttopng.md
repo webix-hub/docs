@@ -24,4 +24,4 @@ and then call the toPNG() method with the datatable id as its parameter:
 webix.toPNG($$("myDataTable"));	
 ~~~
 
-{{sample 15_datatable/10_export/02_png.html}}
+{{editor http://webix.com/snippet/f9695489	Export to PNG}}

@@ -33,7 +33,7 @@ webix.ui({
 });   
 ~~~
 
-{{sample 01_layout/12_responsive_hidden.html}}
+{{editor http://webix.com/snippet/03192068	Responsive Layout - Hidden Cells}}
 
 When space is not enough the last view from the left is hidden first. 
 
@@ -59,7 +59,8 @@ webix.ui({
 
 When space is not enough middle and right views are more likely to be moved. 
 
-{{sample 01_layout/11_responsive.html}}
+{{editor http://webix.com/snippet/e5041a64	Responsive Layout}}
+
 
 **After Window Resizing**
 

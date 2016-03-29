@@ -65,7 +65,7 @@ Inner HTML of a DIV block defines visible text:
 </div>    
 ~~~
 
-{{sample 23_markup/01_html/09_window.html}}
+{{editor http://webix.com/snippet/28e2ec06	HTML Initialization:Window}}
 
 - data template for data management components: 
 
@@ -75,7 +75,7 @@ Inner HTML of a DIV block defines visible text:
 </div>
 ~~~
 
-{{sample 23_markup/01_html/01_init.html}}
+{{editor http://webix.com/snippet/b07b6b6f	HTML Initialization}}
 
 ###4. Specific tags and attributes
 
@@ -88,7 +88,7 @@ Inner HTML of a DIV block defines visible text:
 </div>
 ~~~
 
-{{sample 23_markup/01_html/08_layouts.html }}
+{{editor http://webix.com/snippet/3174a687	HTML Initialization: Nested Layouts}}
 
 ~~~html
 <div data-view="headerlayout" data-stack="cols">
@@ -101,7 +101,7 @@ Inner HTML of a DIV block defines visible text:
 </div>
 ~~~
 
-{{sample 23_markup/01_html/05_accordion.html }}
+{{editor http://webix.com/snippet/1ba8fe15	HTML Initialization: Accordion}} 
 
 By default, the sub items will be treated as **rows** for layouts and form and **cols** for toolbar.
 
@@ -112,7 +112,7 @@ By default, the sub items will be treated as **rows** for layouts and form and *
 </div>
 ~~~
 
-{{sample 23_markup/01_html/01_init.html}}
+{{editor http://webix.com/snippet/b07b6b6f	HTML Initialization}} 
 
 - **config** - defines configuration for a complex property that contains several settings in itself: 
 
@@ -147,7 +147,7 @@ Such code can be easily turned into Webix [Htmlform](desktop/htmlform.md) compon
 <form data-view="htmlform" data-id="formView">..
 ~~~
 
-{{sample 23_markup/01_html/02_form.html}} 
+{{editor http://webix.com/snippet/e3eef3a4	HTML Initialization:HTML Form}} 
 
 - inline data within data presenting components: 
 
@@ -163,7 +163,7 @@ Such code can be easily turned into Webix [Htmlform](desktop/htmlform.md) compon
 
 Note that inline **datasource** is marked by *data-view* attribute with *data* value. 
 
-{{sample 23_markup/01_html/01_init.html}} 
+{{editor http://webix.com/snippet/b07b6b6f	HTML Initialization}} 
 
 ##Datatable
 
@@ -184,7 +184,8 @@ Note that inline **datasource** is marked by *data-view* attribute with *data* v
 - "data" attributes are used to set column properties;
 - inner HTML of column DIVs is turned into their headers. 
 
-{{sample 23_markup/01_html/03_datatable.html}} 
+{{editor http://webix.com/snippet/071bf6a1	HTML Initialization: DataTable}}
+
 
 ##Pager
 
@@ -199,7 +200,8 @@ When initialized from markup Webix [pager](desktop/paging.md) should be placed i
 
 Note that pager properties are not prefixed with "data-".
 
-{{sample 23_markup/01_html/11_pager.html}}
+{{editor http://webix.com/snippet/8d6bee04	HTML Initialization: DataTable with Pager}}
+
 
 ##Tabview and Accordion
 
@@ -223,7 +225,8 @@ In markup you need to place each block into a separate DIV with the attributes:
 </div>    
 ~~~
 
-{{sample 23_markup/01_html/06_tabbar.html}}
+{{editor http://webix.com/snippet/c58e7c41	HTML Initialization: Tabbar}} 
+
 
 ####Accordion
 
@@ -238,7 +241,7 @@ In markup you need to place each block into a separate DIV with the attributes:
 </div>
 ~~~
 
-{{sample 23_markup/01_html/05_accordion.html}}
+{{editor http://webix.com/snippet/1ba8fe15	HTML Initialization: Accordion}} 
 
 ##Chart
 
@@ -276,7 +279,8 @@ If **series** are needed for the chart they are initialized via a separate **con
 
 The attributes of series are not prefixed by "data-" and are the same as in JSON configuration. 
 
-{{sample 23_markup/01_html/10_chart.html}}
+{{editor http://webix.com/snippet/d69e6062	HTML Initialization: Chart}} 
+
 
 ##Windows and Menus
 
@@ -307,7 +311,7 @@ webix.markup.init();
 $$("win1").show();
 ~~~
 
-{{sample 23_markup/01_html/09_window.html}}
+{{editor http://webix.com/snippet/28e2ec06	HTML Initialization:Window}}
 
 ####Menu and submenu peculiarities
 
@@ -340,4 +344,4 @@ And then they should be included into the main menu (or other submenus) with the
 
 Any level of nesting is possible. 
 
-{{sample 23_markup/01_html/12_menu.html}}
+{{editor http://webix.com/snippet/40551837	HTML Initialization: Menu}}

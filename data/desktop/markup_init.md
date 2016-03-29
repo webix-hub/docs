@@ -80,7 +80,8 @@ webix.ajax("data/config.xml?!", function(text, data){
 });
 ~~~
 
-{{sample 23_markup/02_xhtml/04_by_ajax.html }}
+{{editor http://webix.com/snippet/4b5a780a	Load UI by AJAX}} 
+
 
 
 You can use markup initialization by **parsing markup** to the neccessary part of the Webix script thus creating a Webix object.
