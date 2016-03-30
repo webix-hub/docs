@@ -382,7 +382,7 @@ webix.ui({
 
 <img src="desktop/chart_grouping.png"/>
 
-{{sample 08_chart/03_api/01_group.html }}
+{{editor http://webix.com/snippet/0323c09f	Chart Grouping}}
 
 The first element in the map is a data item property while the second one is a **functor** applied to all the values of this property. 
 

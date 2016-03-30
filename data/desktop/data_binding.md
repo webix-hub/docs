@@ -74,7 +74,7 @@ $$("list1").unselectAll();
 $$("list1").setCursor(null);
 ~~~
 
-{{sample 13_form/02_api/10_binding.html}}
+{{editor http://webix.com/snippet/101aa3a2	Binding to List}}
 
 ##Advanced Binding 
 

@@ -68,7 +68,7 @@ webix.ui({
 });			
 ~~~
 
-{{sample 05_list/08_xlist.html}}
+{{editor http://webix.com/snippet/4aeda18b	Horizontal List}}
 
 ##$update key
 
@@ -84,7 +84,8 @@ And called:
 
 ####Usage example
 
-Let's assume, in your database table you have a field with the name *'update_date'* where store the date of the last item update. To have the field values up to date, you can use the $update key and specify it as in:
+Let's assume, in your database table you have a field with the name *'update_date'* where store the date of the last item update. 
+To have the field values up to date, you can use the $update key and specify it as in:
 
 ~~~js
 webix.ui({
@@ -150,7 +151,7 @@ And called:
 ####Usage example
 
 Let's assume, you have a datatable with a list of films and want to color rows with films that less than 1980 year in green.
-Here you can use the **$change** that will run each time data is changed and check whether the changed item(s) should be colored in green.
+Here you can use the **$change** function that will run each time data is changed and check whether the changed item(s) should be colored in green.
 
 ~~~js
 webix.ui({
@@ -165,7 +166,7 @@ webix.ui({
 })	
 ~~~
 
-{{sample 15_datatable/21_styling/04_rows_styling.html}}
+{{editor http://webix.com/snippet/afe32320	Rows Styling}}
 
 ##$serialize key
 
@@ -248,7 +249,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 08_chart/03_api/01_group.html}}
+{{editor http://webix.com/snippet/0323c09f	Chart Grouping}}
 
 ##$sort key
 

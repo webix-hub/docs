@@ -74,7 +74,7 @@ save:{
 }
 ~~~
 
-{{sample 14_dataprocessor/08_custom_urls.html}}
+{{editor http://webix.com/snippet/a723ad9e	Server-side Integration: Custom URL}}
 
 If you need to change the default pattern of data processing - look up [Dataprocessor docs](desktop/dataprocessor.md);
 

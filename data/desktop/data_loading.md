@@ -42,7 +42,7 @@ $$('component_id').load(".../data.xml", "xml", function(){
 });
 ~~~
 
-{{sample 40_serverside/01_php_vanila/06_form_loading.html}}
+{{editor http://webix.com/snippet/42b31a98	Form:Loading}}
 
 It can be called on the necessary page event (button clicking, etc.) as well as on component inner event. 
 
@@ -118,14 +118,14 @@ Webix provides info boxes that are laid over the component for a while to displa
 
 <img src="desktop/list_overlay.png"/>
 
-Webix ([datatable](datatable/index.md)) features info message support out of the box in the form of  **overlay boxes** with any text or html content:
+Webix datatable/index.md features info message support out of the box in the form of  **overlay boxes** with any text or html content:
 
 ~~~js
 dtable.showOverLay("Loading");
 dtable.hideOverlay();
 ~~~
 
-{{sample 15_datatable/01_loading/05_load_message.html}}
+{{editor http://webix.com/snippet/8d0e43fd	Loading Screen}}
 
 [More info on datatable loading screen support](datatable/loading_data.md#loadingscreen).
 
@@ -147,7 +147,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 05_list/07_empty_list.html}}
+{{editor http://webix.com/snippet/e22baeac	Empty List}}
 
 [More info on overlay boxes and progress bar](desktop/progress.md)
 
@@ -166,7 +166,7 @@ mygrid.attachEvent("onAfterLoad", function(){
 })
 ~~~
 
-{{sample 15_datatable/01_loading/05_load_message.html}}
+{{editor http://webix.com/snippet/8d0e43fd	Loading Screen}}
 
 {{note
 In case something goes wrong with loading (and sometimes it does!) learn how to handle errors on the client side in the 
@@ -244,7 +244,7 @@ function parse(){
 
 ~~~
 
-{{sample 06_dataview/03_loading/01_xml.html }}
+{{editor http://webix.com/snippet/f2df9a9c	Dataview:XML Dataset }}
 
 If you want to parse data in addition to the existing dataset, specify **position** of parsing, namely the **index** from which you insert new data:
 

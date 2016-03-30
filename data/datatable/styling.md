@@ -167,7 +167,7 @@ grid = new webix.ui({
 </script>
 ~~~
 
-{{editor http://webix.com/snippet/876adb69	Rows Styling }}
+{{editor http://webix.com/snippet/afe32320	Rows Styling }}
 
 <h3 id="hover">Applying hover styles</h3>
 

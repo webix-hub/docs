@@ -8,7 +8,7 @@ x-list offers the horizontal pattern.
 
 <img src="desktop/xlist.png"/>
 
-{{sample 05_list/08_xlist.html }}
+{{editor http://webix.com/snippet/4aeda18b	Horizontal List}}
 
 ##Initialization
 
