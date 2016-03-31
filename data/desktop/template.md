@@ -26,7 +26,7 @@ webix.ui({
 });
 ~~~
 
-{{editor http://webix.com/snippet/6ffd26e7  Default & external template}}
+{{editor http://webix.com/snippet/6ffd26e7	Default & External Template}}
 
 ###External Template
 
@@ -46,7 +46,7 @@ webix.ui({
 }); 
 ~~~
 
-{{editor http://webix.com/snippet/6ffd26e7  Default & external template}}
+{{editor http://webix.com/snippet/6ffd26e7	Default & External template}}
 
 - the **template** property that points to the container ID prefixed by "html->". The container should be invisible initially:
 
@@ -58,7 +58,7 @@ webix.ui({
 { template: "html->my_box1", autoheight: true },
 ~~~
 
-{{editor http://webix.com/snippet/12f06c90  Autosizing to Content}}
+{{editor http://webix.com/snippet/12f06c90	Autosizing to Content}}
 
 
 As a result, contents from HTML is placed inside the view. 
@@ -87,7 +87,8 @@ webix.ui({
 ~~~
 
 {{note
-The same-name property of the component, **template**, is also used by Webix data components. It allows setting pattern to display texts and render data items from multiple datasets alongside with adding styling to them.
+The same-name property of the component, **template**, is also used by Webix data components. 
+It allows setting pattern to display texts and render data items from multiple datasets alongside with adding styling to them.
 The [Data Templates article](desktop/html_templates.md) covers all the rules of templating.
 }}
 
@@ -129,7 +130,7 @@ If a template is used as an individual data item (as shown above) the data field
 }
 ~~~
 
-{{editor http://webix.com/snippet/b253dc2c  Carousel Initialization}}
+{{editor http://webix.com/snippet/b253dc2c	Carousel Initialization}}
 
 {{note
 The rules of data templating can be studied in detail in the [dedicated documentation article](desktop/html_templates.md).
@@ -193,4 +194,4 @@ resort to [borderless](desktop/borders.md) layout design.
 {view: "template", template: "Header template", type: "section" }
 ~~~
 
-{{editor http://webix.com/snippet/9e1fd061  Template Types}}
+{{editor http://webix.com/snippet/9e1fd061	Template Types}}

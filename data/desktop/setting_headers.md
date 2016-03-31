@@ -10,9 +10,7 @@ Depending on the context, header is defined in two ways:
 
 <img src="desktop/component_inside_window.png"/>
 
-{{sample
-10_window/06_component_inside.html
-}}
+{{editor http://webix.com/snippet/4dec29ab	Window with a Component Inside}}
 
 ##Header as Template Type
 
@@ -44,13 +42,13 @@ Type:"section"
 { view:"template", template:"some text", type:"section" }
 ~~~
 
-<img src="desktop/template_section.png"/>
+<img src="desktop/section_tpl.png"/>
 
 {{note
 During header initialization the **view:template** line is optional. 
 }}
 
-{{sample 80_docs/template_types.html }}
+{{editor http://webix.com/snippet/9e1fd061	Template Types}}
 
 ##Header as Component Property
 
@@ -81,7 +79,7 @@ Headers of **tabview tabs** are defined as header properties of tabview **cells*
 }
 ~~~
 
-{{sample 20_multiview/08_tabview.html}}
+{{editor http://webix.com/snippet/8b8b1802	Tabview: Basic Initialization}}
 
 **Property sheet** looks like a grid with sections separated by blue headers. In essence, any line without data becomes header, the heading text being defined by **label** property. 
 
@@ -90,7 +88,7 @@ Headers of **tabview tabs** are defined as header properties of tabview **cells*
  { label:"Width", type:"text", id:"width"}, //line with data
 ~~~
 
-{{sample 07_property/01_init.html }}
+{{editor http://webix.com/snippet/decc3b29	Property Sheet: Basic Initialization}}
 
 UI-related **[window](desktop/window.md)** features header defined by its **head** property. 
 

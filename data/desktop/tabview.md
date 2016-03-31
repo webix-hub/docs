@@ -48,7 +48,7 @@ webix.ui({
   ]
 });
 ~~~
-{{editor http://webix.com/snippet/7b589ad1  Tabview}}
+{{editor http://webix.com/snippet/7b589ad1	Tabview}}
 
 
 Each tabview cell features:
@@ -121,7 +121,7 @@ cells: [
 ]
 ~~~
 
-{{editor http://webix.com/snippet/be3c6266  Multiview Tabbar with Icons}}
+{{editor http://webix.com/snippet/be3c6266	Multiview Tabbar with Icons}}
 
 More about different types of defining icons in Webix you can learn in the desktop/icon_types.md article.
 
@@ -152,7 +152,7 @@ cells: [
 ]
 ~~~
 
-{{editor http://webix.com/snippet/323e584f  Tabview: Close tab button}}
+{{editor http://webix.com/snippet/323e584f	Tabview: Close tab button}}
 
 ###Responsive tabbar
 
@@ -195,7 +195,7 @@ multiview: {
 }
 ~~~
 
-{{editor http://webix.com/snippet/eabf5dc7  Tabview: Fit Active vs Fit Biggest}}
+{{editor http://webix.com/snippet/eabf5dc7	Tabview: Fit Active vs Fit Biggest}}
 
 ###Adding and removing cells dynamically
 

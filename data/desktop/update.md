@@ -44,7 +44,7 @@ function update_item() {
 }
 ~~~
 
-{{sample 14_dataprocessor/03_dataview.html }}
+{{editor http://webix.com/snippet/be92cf44	Server-side Integration:Dataview }}
 
 ##Form / HTMLform binding 
 

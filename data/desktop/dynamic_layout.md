@@ -4,8 +4,8 @@ Dynamic UI Modifications
 Webix lib offers several ways to alter the already initialized layout: 
 
 - you can **add any view** to the existing layout, including complex views that have a number of child components;
-- you can **remove any view** from existing layout;
-- you can **reconfigurate** layout-like comopnent by passing an array of new children views to it;
+- you can **remove any view** from the existing layout;
+- you can **reconfigure** a layout-like component by passing an array of new children views to it;
 - you can **replace** any view in layout by another view. 
 
 Let's consider these possibilities in detail:
@@ -59,7 +59,7 @@ var pos = $$("layout1").index($$("text1"));
 $$("layout1").addView({view:"text", id:"text2"}, pos);
 ~~~
 
-{{sample 13_form/02_api/05_add_view.html}}
+{{editor http://webix.com/snippet/e544ae3a	Adding Views}}
 
 The newly added view can be sized during adding according to [common rules](desktop/dimensions.md) as well as later on via [property (re)defining](desktop/redefinition.md).
 
@@ -74,7 +74,7 @@ Removing a button from the toolbar
 $$("toolbar").removeView(id);
 ~~~
 
-{{sample 13_form/02_api/05_add_view.html }}
+{{editor http://webix.com/snippet/e544ae3a	Adding Views}}
 
 Rebuilding Application Layout
 --------------------------------
@@ -102,7 +102,7 @@ webix.ui({
 webix.ui([..new elements..], $$('myform'));
 ~~~
 
-{{sample 01_layout/13_reconfiguration.html}}
+{{editor http://webix.com/snippet/787ccb92	Dynamic Layout Rebuilding}}
 
 - **replace** any existing object:
 
@@ -119,7 +119,7 @@ webix.ui({
 webix.ui({..new config..}, $$('mylayout'), $$('mydatatable'));
 ~~~
 
-{{sample 01_layout/13_reconfiguration.html}}
+{{editor http://webix.com/snippet/787ccb92	Dynamic Layout Rebuilding}}
 
 Reloading layout from the server
 ---------------------------------

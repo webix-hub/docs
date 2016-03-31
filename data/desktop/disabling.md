@@ -11,7 +11,7 @@ $$("cell").enable();
 $$("cell").disable();
 ~~~
 
-{{sample 19_api/01_disable.html }}
+{{editor http://webix.com/snippet/0c2f1ccd	Disabling Components}}
 
 When can it be useful?
 
