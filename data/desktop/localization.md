@@ -139,14 +139,23 @@ Text labels for some parts of webix components that are more likely to be change
 
 ##Applying a Locale
 
-Locales other than **en-US** should be set manually. It can be done with the help of a **setLocale()** 
-function that takes **locale name** as parameter.
+Locales other than **en-US** should be set manually.
+
+First, you need to include the corresponding js file of the locale in the head of your page. 
+
+For example, to apply the French locale, include the **fr.js** file like this:
+
+~~~html
+<script src="//cdn.webix.com/site/i18n/fr.js"></script>
+~~~
+
+Then you should apply the chosen locale with the help of the **setLocale()** function that takes **locale name** as a parameter.
 
 ~~~js
 webix.i18n.setLocale("fr-FR");
 ~~~
 
-After this any method applied to the **webix.i18n** object will redraw date, and numbers according to the rules described in locale. 
+After this any method applied to the **webix.i18n** object will redraw date and numbers according to the rules described in the applied locale. 
 
 {{snippet
 Formatted with fr-FR locale
