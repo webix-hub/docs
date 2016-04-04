@@ -2,20 +2,20 @@ remove
 =============
 
 
-
 @short:
-	removes the specified item from datastore
+	removes the specified item/items from datastore
 
 @params:
-- id		id     the item id
+- id		string/number/array     the item id or an array of items' ids
 
 
 
 
 @example:
-$$("my_list").remove(1); //remove the item with ID=1
-$$("my_list").remove($$("data").getSelectedId()); //removes selected item
+$$("my_list").remove(1); //removes the item with ID=1
+$$("my_list").remove($$("data").getSelectedId()); //removes the selected item
 
+$$("my_list").remove([1,3,5]); // removes multiple items
 @related:
 	desktop/add_delete.md
     

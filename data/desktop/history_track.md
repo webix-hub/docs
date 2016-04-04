@@ -8,9 +8,9 @@ Here we discuss the state of an application created with [multiview](desktop/mul
 With [multiview](desktop/multiview.md) application design you can create as many cells as you wish and switch between them with the help of dedicated buttons, namely 
 [tabbar and segmented](desktop/tabbar_switching.md), or resort to [tabview functionality](desktop/tabview.md). 
 
-Tab values concide with IDs of the views you place into multiview cells. 
+Tab values coincide with IDs of the views you place into multiview cells. 
 
-Initilially, either the first tab is visible, or the one you've set to be "selected" during intialization. Normally, when you refresh the page, the application is redrawn according to this initialization pattern.
+Initially, either the first tab is visible, or the one you've set to be "selected" during initialization. Normally, when you refresh the page, the application is redrawn according to this initialization pattern.
 
 ~~~js
 webix.ui({
@@ -33,12 +33,22 @@ Nevertheless, the library offers **history API** to store the current applicatio
 
 History api/history_track.md method allows remembering the currently opened tab and showing it after page loading. It takes two parameters: 
 
-- **id** - the **ID** of the  [segmented](desktop/segmented.md), [tabbar](desktop/tabbar.md) and [tabview](desktop/tabview.md) that is used for switching between miltiview views. 
+- **id** - the **ID** of the  [segmented](desktop/segmented.md), [tabbar](desktop/tabbar.md) and [tabview](desktop/tabview.md) that is used for switching between multiview views. 
 - **url** - **ID** of a multiview **cell** that forms the hashbang url that is loaded after page refresh. By default it's the ID of the currently opened cell. 
 
 ~~~js
 webix.history.track('tabbar');
 ~~~
+
+There's also the **onBeforeHistoryNav** event which allows adding some actions while working with history. The event is called before history is applied.
+
+~~~js
+$$("tabbar").attachEvent("onBeforeHistoryNav", function(){
+    //... some code here ... 
+});
+~~~
+
+The event is cancelable: returning false will cancel changes in the view.
 
 Each time you click the tab to switch for another cell, a **hashbang URL** is generated on the base of **cell ID** (under *http://current_url.html#!/cellID* pattern) and memorized. You'll see it in the url bar of your browser. 
 
@@ -50,11 +60,11 @@ Compare ID-s from the snippet above and hashbang URL-s for each of the tabs on t
 
 {{sample 80_docs/history.html}} 
 
-Now, each time, you refresh the page, the url wil be form according to the info stored in the state object and th altest opened tab wil be shown. 
+Now, each time, you refresh the page, the url will be formed according to the info stored in the state object and the latest opened tab will be shown. 
 
 ###Pushing New State to History
 
-In addition, there exists a possiblity to programmatically add a new state to history with the dedicated **push()** method. Its argumnts are: 
+In addition, there exists a possibility to programmatically add a new state to history with the dedicated **push()** method. Its arguments are: 
 
 - **view** - ID of related switching control;
 - **url** -	ID of the cell that will form in-page url for new state (if you pass *cellID*, the url will be formed as *#!/cellID*);
