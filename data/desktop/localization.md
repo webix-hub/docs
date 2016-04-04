@@ -4,7 +4,7 @@ Date and Number Localization
 Different countries and regions have their own rules for writing dates, numbers and monetary units. All these issues should be taken in account in case a target group for your app is wider than one country or region. 
 
 The set of rules for this or that country is called **locale** and includes methods for date, time, number and price formatting. 
-Localization methods belong to the [i18n class](api/refs/i18n.md) and treat data according to he set format.
+Localization methods belong to the [i18n class](api/refs/i18n.md) and treat data according to the set format.
 
 By default **Date()** constructor outputs raw data. Unformatted, it looks barely readable. 
 
@@ -180,7 +180,7 @@ In case of [datatable](datatable/index.md), format is stated by  the dedicated *
 { header:"Price", id:"price", format:webix.i18n.priceFormat}
 ~~~
 
-{{sample 15_datatable/20_templates/08_locales.html}}
+{{editor http://webix.com/snippet/cdec9649	Internationalization }}
 
 Other components like [list](desktop/list.md), [dataview](desktop/dataview.md) and datatree/index.md have quite the other way of data presenting. 
 To ensure proper formatting, you should make use of a **template function:**
@@ -194,6 +194,6 @@ template:function(obj){
 
 The format in use is defined by current locale. EN-US (default) locale sets **dateFormatStr** as *"%m/%d/%Y"* while **price** format is set as *"{obj}currency"* where *obj* is price value. 
 
-{{sample 80_docs/dataview_formatting.html }}
+{{editor http://webix.com/snippet/81ae88c2	Dataview Formatting}}
 
 @complexity:2

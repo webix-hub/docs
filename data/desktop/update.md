@@ -68,7 +68,7 @@ Having finished editing data in form fields, call the **save** function to push 
 <input type="button" value="Submit" onclick='$$("htmlform1").save()'/>
 ~~~
 
-{{sample 80_docs/data_binding.html }}
+{{editor http://webix.com/snippet/0a85d055	Data Binding}}
 
 The same functionality is used when updating data items loaded from the database. Read about [Server-side Integration](desktop/serverside.md) in the corresponding 
 chapter of the documentation. 

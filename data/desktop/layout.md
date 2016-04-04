@@ -118,6 +118,7 @@ webix.ui({
 });
 ~~~
 
+{{editor http://webix.com/snippet/f06e125c	Layout and Resizer}}
 
 ##Resizer Lines {#resizer}
 

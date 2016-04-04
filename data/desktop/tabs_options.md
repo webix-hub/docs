@@ -23,11 +23,11 @@ Each of its options can be connected with a separate view or a separate click ha
 	<tbody>
 	<tr>
 		<td> <code> view:"segmented" </code> </td>
-		<td style="text-align:center;"><img src="desktop/switch_segmented.png"/></td>
+		<td style="text-align:left;"><img src="desktop/switch_segmented.png"/></td>
 	</tr>
 	<tr>
 		<td> <code> view:"tabbar" </code> </td>
-		<td style="text-align:center;"><img src="desktop/switch_tabbar.png"/></td>
+		<td style="text-align:left;"><img src="desktop/switch_tabbar.png"/></td>
 	</tr>
 	</tbody>
 </table>
@@ -80,7 +80,7 @@ function del_tab(){
 }       
 ~~~
 
-{{sample 02_toolbar/19_tabs_on_the_go.html}}
+{{editor http://webix.com/snippet/8aa738a5	Dynamic Adding/Deleting of Tabs in Tabbar}}
 
 ~~~note
 The logic of view adding and removal can be studied in detail in the 
@@ -116,7 +116,7 @@ var id = $$("tabview1").getValue(); //id of active cell
 $$("tabview1").removeView(id);
 ~~~
 
-{{sample 20_multiview/13_tabview_dynamic.html}}
+{{editor http://webix.com/snippet/6e17b689	Tabview: Adding and Removing Tabs}}
 
 ##Built-in Tab 'Close' Button
 
@@ -143,7 +143,7 @@ tabbar.attachEvent("onOptionRemove", function(id, value){
 });
 ~~~
 
-ID of the tab concides with ID of the view, normally. 
+ID of the tab coincides with ID of the view, normally. 
 
 If a closable tab is used within a **tabview**, the corresponding tab will be removed from the app automatically. 
 

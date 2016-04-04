@@ -50,7 +50,7 @@ $$("htmlform1").save();
 
 <br>
 
-{{sample 11_htmlform/05_htmlform_binding.html }}
+{{editor http://webix.com/snippet/635e2ea8	Binding to a Native HTML Form}}
 
 Slave can  as well be **unbound** from the master by the opposite method: 
 
@@ -160,7 +160,7 @@ $$("datatable_1").attachEvent("onAfterSelect", function(id){
 }); //item ID of datatable row coincides with that of dataview item
 ~~~
 
-{{sample 80_docs/data_binding.html }}
+{{editor http://webix.com/snippet/0a85d055	Data Binding}}
 
 [Data Binding and Syncing with Non-UI objects](desktop/nonui_objects.md)
 

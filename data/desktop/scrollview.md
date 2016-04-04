@@ -9,14 +9,14 @@ Scrollview
 ##Overview
 
 Scrollview inherits from [view](desktop/view.md) and makes any of the nested components scrollable, either in horizontal or in vertical mode. It is handy in case of long 
-homogenious data items, like text templates.
+homogeneous data items, like text templates.
 
 <img style="display:block; margin-left:auto;margin-right:auto;"  src="desktop/scrollview.png"/>
 
 
 ##Initialization
 
-It's reasonable to use the scrollview just as a sccrolling container while text into is stored in HTML.
+It's reasonable to use the scrollview just as a scrolling container while text inside it is stored in HTML.
 
 ~~~html
 <div id="mybox1">Some very long article-1</div>
@@ -30,18 +30,20 @@ HTML content is nested into UI component with the help of a dedicated [data temp
 
 ~~~js
 webix.ui{(
-		view:"scrollview",
-        id:"verses",
-		scroll:"y", //vertical scrolling
-		body:{
-        	rows:[
-        		{id:"verse_1", template:"html->my_box1"}, // corresponds to the dedicated div ID
-                {id:"verse_2", template:"html->my_box2"}
-            	{...}
-            ]}
-	})
+	view:"scrollview",
+	id:"verses",
+	scroll:"y", //vertical scrolling
+	body:{
+		rows:[
+        	// corresponds to the dedicated div ID
+			{id:"verse_1", template:"html->my_box1"}, 
+			{id:"verse_2", template:"html->my_box2"}
+			{...}
+		]
+    }
+})
 ~~~
-{{editor http://webix.com/snippet/ff4543de  Scrollview}}
+{{editor http://webix.com/snippet/ff4543de	Scrollview}}
 
 Scrollview features a **body** object property where items (text templates, components) are stored in either **rows** or **cols** array for vertical or horizontal item arrangement respectively. 
 

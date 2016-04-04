@@ -18,7 +18,7 @@ By default, component features vertical scrolling. It can be modified via the de
 - "x" - sets a horizontal scrollbar;
 - "y" - sets vertical scrollbar (default);
 - "xy" - sets both horizontal and vertical scrollbars;
-- false - defines non-scrollbale component. 
+- false - defines non-scrollable component. 
 
 ~~~js
 webix.ui({
@@ -40,7 +40,7 @@ Read more about [dynamic loading](desktop/dynamic_loading.md).
 
 ##Scrolling to a definite position in the view
 
-If the dataset if too long (e.g. a collection of verses) it seems nice to have an ability to scroll to a definite poem automatically with a
+If the dataset is too long (e.g. a collection of verses) it seems nice to have an ability to scroll to a definite poem automatically with a
 click of a button.
 
 Here you have several possibilities: 
@@ -68,7 +68,7 @@ webix.ui({
 })
 ~~~
 
-2 .Scrolling via **focusing** on the necessary **view** withtin the scrollview.
+2 .Scrolling via **focusing** on the necessary **view** within the scrollview.
 
 Here the button's ID should be connected to the ID of the row in the scrollview:
 
@@ -96,7 +96,7 @@ webix.ui({
         }
 ~~~
 
-{{sample 04_template/10_scrollview.html}}
+{{editor http://webix.com/snippet/ff4543de	Scrollview}}
 
 3 . Make the view **show the definite item** specified by its ID: 
 
@@ -104,7 +104,7 @@ webix.ui({
 $$("mylist").showItem(5); // the list should be scrollable
 ~~~
 
-{{sample 05_list/08_xlist.html}}
+{{editor http://webix.com/snippet/4aeda18b	Horizontal List}}
 
 Within [datatable](datatable/index.md) scrolling via showing includes the following methods:
 
@@ -134,11 +134,11 @@ The feature is available in **Webix Pro** edition only.
 Webix offers custom scrollbars to replace native browser ones. The advantages are as follows: 
 
 - semi-transparent thin grey bars feature neat design;
-- the bars are initially and hidden appear only when scrolling movement is detected on the page (provided scrolling is enabled). 
+- the bars are initially hidden and appear only when scrolling movement is detected on the page (provided scrolling is enabled). 
 
 <img src="desktop/customscroll.png"/>
 
-{{sample 60_pro/03_api/01_customscroll.html}}
+{{editor http://webix.com/snippet/d1bf4c9a	Custom Scroll}}
 
 The feature is provided by a separate **CustomScroll** module that you need to **enable** before use. 
 

@@ -39,7 +39,7 @@ dtable.define({
 dtable.resize();
 ~~~
 
-{{sample 15_datatable/11_sizing/02_resize_node.html}}
+{{editor http://webix.com/snippet/4c2b7c8c	Dynamic adjusting to the parent container}}
 
 - by getting directly to the component **config**:
 
@@ -52,7 +52,7 @@ $$("dview").config.height = 700;
 $$('dview').resize();
 ~~~
 
-{{sample 80_docs/dataview_resizing.html}}
+{{editor http://webix.com/snippet/8b16fa4e	Resizing}}
 
 ##Resizing the Component's Container
 
@@ -82,7 +82,7 @@ document.getElementById('testA').style.height="455px";
 grid.adjust();
 ~~~
 
-{{sample 80_docs/dataview_resizing.html}}
+{{editor http://webix.com/snippet/8b16fa4e	Resizing}}
 
 - using webix **toNode()** method:
 
@@ -91,7 +91,7 @@ webix.toNode("testA").style.width = "700px";
 grid.adjust();
 ~~~
 
-{{sample 15_datatable/11_sizing/02_resize_node.html}}
+{{editor http://webix.com/snippet/4c2b7c8c	Dynamic adjusting to the parent container}}
 
 Component can be as well adjusted to the [dynamically-sized container](desktop/dimensions.md#dyn). 
 

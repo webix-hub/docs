@@ -33,7 +33,7 @@ webix.ui({
 }).show();
 ~~~
 
-{{sample 01_layout/01_resizer.html }}
+{{editor http://webix.com/snippet/f06e125c	Layout and Resizer}}
 
 When giving fixed dimensions to the components in layout, don't forget that layout rows and columns will adjust to the sizes of the nested components automatically. 
 
@@ -70,7 +70,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 80_docs/dataview_italic.html}}
+{{editor http://webix.com/snippet/e49d72d1	Dataview Italic}}
 
 ###Sizing Limits
 
@@ -122,7 +122,7 @@ rows:[
 ]  
 ~~~
 
-{{sample 04_template/02_autoheight.html}}
+{{editor http://webix.com/snippet/69ee23eb	Autosizing to Content}}
 
 Some components also feature the **autowidth** property. 
 
@@ -142,7 +142,7 @@ columns:[
 ]
 ~~~
 
-{{sample 15_datatable/09_columns/01_size_by_content.html }}
+{{editor http://webix.com/snippet/f764a4ee	Adjusting Columns to the Content}}
 
 **Auto height** is set within component **type** that defines properties of an item (not the whole component). Each item is adjusted to its content, which may result in **variable dimensions** of items:
 
@@ -183,7 +183,7 @@ webix.ui({
 Note that even in case these HTML elements are different for different items, the dimensions are measured only once (for the first input, as a rule) and then sizing is performed. 
 At the same time, some of them may be smaller or bigger. 
 
-{{sample 06_dataview/01_initialization/05_type_sizing.html }}
+{{editor http://webix.com/snippet/a622661a	Autosizing Items to Content}}
 
 ##Adjusting Mobile Apps to Screen Size {#mobile}
 
@@ -217,7 +217,7 @@ webix.ui({
     ]}
 });
 ~~~
-{{sample 02_toolbar/05_toolbar_lines.html }}
+{{editor http://webix.com/snippet/e32ad794	Toolbar: Multiple Rows}}
 
 ##Dynamic Sizing {#dyn}
 

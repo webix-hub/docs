@@ -158,7 +158,7 @@ webix.ui({
 })
 ~~~
 
-{{editor http://webix.com/snippet/9a9cb4ab	Adjusting Columns to the Content}}
+{{editor http://webix.com/snippet/f764a4ee	Adjusting Columns to the Content}}
 
 {{note
 Note that resulting column width after adjusting won't be lesser than **minWidth** for this column provided that the latter is set. 
