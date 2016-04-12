@@ -19,11 +19,11 @@ time, you can edit the text field and the items will be filtered according to th
 
 ~~~js
 //short form
-{ view:"combo", id:'field_m', label: 'Combo', value:"One", yCount:"3", 
+{ view:"combo", id:'field_m', label: 'Combo', value:"One", 
 	options:["One", "Two", "Three"]}
 
 //full form
-{ view:"combo", id:'field_t', label: 'Combo', value:"1", yCount:"3", 
+{ view:"combo", id:'field_t', label: 'Combo', value:"1", 
 	options:[	
     {id:1, value:"One"}, 
     {id:2, value:"Two"}, 
@@ -40,7 +40,6 @@ time, you can edit the text field and the items will be filtered according to th
 	- within **options** array it sets text value for selectable items;
  	- within Combo constructor it defines the initially selected item of the control (**option ID** in case of a full form, **option text** in case of a short form);
 - **placeholder** (string) - defines placeholder for combo input. The control should be initialized without an initial value;       
-- **yCount** (number) - the number of lines in a popup;
 - **options** (array, object, string) - sets the options to choose from;
 - **label** (string) - text label of a control. It can be customized by:
 	- **labelAlign** (string) - label alignment towards its container. Possible values are "left" and "right".  In any way, it's placed left to the control; 
