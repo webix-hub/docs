@@ -77,7 +77,7 @@ Take notice of the **editValue** property here. It defines the dataset item from
 has a template with several values from the initial data source. Study the nature of template-making [here](desktop/html_templates.md).
 
 {{note
-Note that editing allows for on-page changes only and doesn't presuppose automatic data saving into the dataset. To actually save data you should init [webix.DataProcessor](desktop/dataprocessor.md) for the edited component.
+Note that editing allows for on-page changes only and doesn't presuppose automatic data saving into the dataset. To actually save data you should initialize [webix.DataProcessor](desktop/dataprocessor.md) for the edited component.
 }}
 
 ##Editing Methods {#api}
@@ -90,7 +90,7 @@ Generally, you can switch any data item to the editable state with the **edit()*
 editlist.edit(7);
 ~~~
 
-To open editor in the datatable cell you need to specify row and column ID-s in casse of However, it's recommended to use *editRow*, *editColumn* and *editCell* functions. 
+To open editor in the datatable cell, you need to specify row and column ID-s. However, it's recommended to use *editRow*, *editColumn* and *editCell* functions. 
 See the [datatable API](api/link/ui.datatable_edit.md) for details. 
 
 ~~~js
