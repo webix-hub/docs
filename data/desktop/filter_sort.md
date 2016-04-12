@@ -30,7 +30,9 @@ webix.ui({
 });	
 ~~~
 
-{{sample 15_datatable/03_filtering/02_and.html }}
+{{editor
+http://webix.com/snippet/54ea6cd0	Filtering by Several Criteria (AND Logic)
+}}
 
 If you want to include an additional criterion to the built-in filter, use the **compare** property to define the additional filtering 
 
@@ -40,7 +42,7 @@ Datatable is a peculiar component and has a number API peculiarities. That's why
 - [Datatable Sorting](datatable/sorting.md)
 
 {{note
-[Treetable](desktop/treetable.md) shares features of both [datatable](datatable/index.md) and datatree/index.md, that's it has similar fimilar sorting and filtering patterns. In addition,
+[Treetable](desktop/treetable.md) shares features of both [datatable](datatable/index.md) and datatree/index.md, that's it has similar familiar sorting and filtering patterns. In addition,
  it borrows **filterMode** property from the tree API (described further). 
 }}
 
@@ -90,7 +92,7 @@ $$("list_input").attachEvent("onTimedKeyPress",function(){
     return obj.title.toLowerCase().indexOf(value)==0; 
 })
 ~~~
-{{sample 05_list/10_filtering.html }}
+{{editor http://webix.com/snippet/40883607	List: Filtering}}
 
 **Peculiarities of Tree Filtering**
 
@@ -139,9 +141,9 @@ At the same time, you can change the filtering pattern with the help of the tree
 - **openParents** (boolean) - defines whether the component should expand branches to show the found items.
 - **level** (number) - sets the hierarchy to filter tree nodes (one-based numbering). The '0' value says to filter all nodes. 
 
-{{sample 17_datatree/04_api/03_filter.html }}
+{{editor http://webix.com/snippet/b58d0fec	Filtering in Tree}}
 
-{{sample 15_datatable/30_treetable/04_filter.html }}
+{{editor http://webix.com/snippet/f20a7fa1	Filtering in TreeTable}}
 
 **Filtering by Multiple Properties**
 
@@ -175,7 +177,7 @@ $$("filter-list").attachEvent("onTimedKeypress", function(){
 });
 ~~~
 
-{{sample 80_docs/multiple_property_filter.html}}
+{{editor http://webix.com/snippet/32aa2460	Multiple Filter}}
 
 ##Sorting 
 

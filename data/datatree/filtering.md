@@ -18,7 +18,7 @@ Sorting Tree on button click
 </script>
 ~~~
 
-{{editor http://webix.com/snippet/bcc6852c  Filtering}}
+{{editor http://webix.com/snippet/b58d0fec	Filtering in Tree}}
 
 Filtering modes
 ------------------------------------
@@ -45,11 +45,11 @@ webix.ui({
 });
 ~~~
 
-{{editor http://webix.com/snippet/bcc6852c  Filtering}}
+{{editor http://webix.com/snippet/b58d0fec	Filtering in Tree}}
 
 <br>
 
-<img src="datatree/filtering_modes(showSubItems).png" />
+<img src="datatree/filtering_modes.png" />
 
 Custom filtering function
 ---------------------------------------

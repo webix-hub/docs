@@ -546,7 +546,7 @@ Inner properies
 
 In addition to creating an editor "from scratch", you can extend any of the existing ones. It becomes helpful when slight changes are needed. 
 
-For instance you have a datatable column with e-mails. Input type **email** from HTML5 package will warn you in case some of e-mail address features is missing. The cell will be highlighted red. 
+For instance you have a datatable column with e-mails. Input type **email** from HTML5 package will warn you in case some of e-mail address features are missing. The cell will be highlighted red. 
 
 <img src="desktop/text_editor_ext.png"/>
 

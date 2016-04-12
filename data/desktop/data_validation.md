@@ -2,7 +2,7 @@ Data Validation
 =============
 
 All the data from input fields must be validated before being sent to server. Data validation is implemented with [dataprocessor](desktop/dataprocessor.md), 
-[htmlform](desktop/htmlform.md) and [form](desktop/form.md) as well as with all the data management componens ([datatable](datatable/index.md), [dataview](desktop/dataview.md), [tree](datatree/index.md), 
+[htmlform](desktop/htmlform.md) and [form](desktop/form.md) as well as with all the data management components ([datatable](datatable/index.md), [dataview](desktop/dataview.md), [tree](datatree/index.md), 
 [treetable](desktop/treetable.md), [list](desktop/list.md)). 
 
 Data validation is activated: 
@@ -64,7 +64,7 @@ In case of data components, validation can be set on data loading to ensure that
 ~~~
  
 
-{{sample 15_datatable/25_validation/01_existing_data.html }}
+{{editor http://webix.com/snippet/4f477d95	Datatable Validation }}
 
 ##Partial Validation
 
@@ -100,7 +100,7 @@ webix.ui({
 $$("text1").validate();
 ~~~
 
-{{sample 13_form/04_validation/11_per_item_validation.html}}
+{{editor http://webix.com/snippet/abb8d98c	Per Item Validation with Predefined Rules}}
 
 
 ##Validation Message
@@ -114,7 +114,7 @@ It is also very easy to apply built-in validation messages for form fields.
 All you need to do is to specify the *invalidMessage* property and set the necessary text of the message:
 
 ~~~js
-{ view:"text", label:'Username', name:"login", invalidMessage: "Login can not be empty" },
+{view:"text", label:'Username', name:"login", invalidMessage:"Login can not be empty"}
 ~~~
 
 Validation messages require some space under form fields. You should specify the *bottomPadding* property 
@@ -138,7 +138,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 13_form/04_validation/12_validation_message.html}}
+{{editor http://webix.com/snippet/99625abb	Validation Message}}
 
 {{note
 The property is 18 px by default. If the value isn't set, space for validation messages will be automatically specified as 18px.
@@ -158,7 +158,7 @@ The *bottomLabel* property will be helpful for this purpose. Don't forget to set
 	bottomLabel: "* The password must have at least 6 characters"},
 ~~~
 
-{{sample 13_form/01_controls/22_description.html}}
+{{editor http://webix.com/snippet/0e266f14	Input Description at the Bottom}}
 
 ##Validation Handling
 
@@ -203,7 +203,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 13_form/04_validation/04_message_complex.html }}
+{{editor http://webix.com/snippet/25718e0c	'onValidationError' Event}}
 
 Message boxes of all types are described [here](desktop/message_boxes.md). 
 
@@ -229,7 +229,7 @@ rules:{
 }
 ~~~
 
-{{sample 13_form/04_validation/01_basic.html}}
+{{editor http://webix.com/snippet/5763548d	Basic  Validation}}
 
 Or, you can attach a rule right in the **input constructor** as value of its **validate** property:
 
@@ -248,7 +248,7 @@ elementsConfig:{
 }
 ~~~
 
-{{sample 13_form/04_validation/11_per_item_validation.html }}
+{{editor http://webix.com/snippet/abb8d98c	Per Item Validation with Predefined Rules}}
 
 **Component Data Validation**
 
@@ -294,7 +294,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 13_form/04_validation/06_validation_rules.html}}
+{{editor http://webix.com/snippet/58337d22	Validation with Predefined Rules}}
 
 In case you are parsing JSON data, you should set the predefined rules as follows:
 
@@ -318,7 +318,7 @@ Note that in case you define rules within input constructor, the **isNotEmpty** 
 { view:"text", label:'Not Empty', validate:webix.rules.isNotEmpty }
 ~~~
 
-{{sample 13_form/01_controls/19_required.html}}
+{{editor http://webix.com/snippet/1170b689	Required Inputs in a Form}}
 
 ####Conditional usage of built-in rules
 
@@ -357,7 +357,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 13_form/04_validation/07_custom_rules.html}}
+{{editor http://webix.com/snippet/0be49ce9	Validation with Custom Rules}}
 
 ##Special Validation Keys
 
@@ -377,7 +377,7 @@ rules:{
 }
 ~~~
 
-{{sample 13_form/04_validation/03_common_rule.html}}
+{{editor http://webix.com/snippet/b994ccba	Validation with a Common Rule for All Fields}}
 
 **$obj** key
 
@@ -393,7 +393,7 @@ rules: {
 } 
 ~~~
 
-{{sample 15_datatable/25_validation/02_complex_rule.html }}
+{{editor http://webix.com/snippet/8e886155	Datatable Validation. Complex Rule}}
 
 It is as well used in defining complex rules, e.g. when password confirmation is required. 
 
@@ -412,9 +412,9 @@ rules:{
 }
 ~~~
 
-{{sample 13_form/04_validation/08_confirmation.html}}
+{{editor http://webix.com/snippet/375f4a7c	Password Confirmation}}
 
-Note, that even if you don't pass data object into the function, you still can work with all its values deried with form **getValues()** method. 
+Note, that even if you don't pass data object into the function, you still can work with all its values derived with form **getValues()** method. 
 
 {{snippet
 Complex Rule
@@ -425,7 +425,7 @@ webix.ui({
 	rules:{
 		$obj:function(){
 			var data = this.getValues(); //!getting data object
-			if (!webix.rules.isEmail( data.email ))  //ckecking email
+			if (!webix.rules.isEmail( data.email ))  //checking email
             	return false;
 		if (data.name == "") //checking name
         	return false;
@@ -435,7 +435,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 13_form/04_validation/02_complex_rule.html }}
+{{editor http://webix.com/snippet/ae8d1448	Form Validation. Complex Rule}}
 
 What should be taken into account:
  
@@ -456,7 +456,7 @@ $$("$form1").validate({hidden:true});
 $$("$form1").validate({hidden:true , disabled:true});
 ~~~
 
-{{sample 13_form/02_api/13_tabs_form.html}}
+{{editor http://webix.com/snippet/1f7271b0	Form with Tabs}}
 
 Note that if the form is hidden itself, hidden and visible fields are not separated. 
 
@@ -483,7 +483,7 @@ webix.ui({
 
 As a result, you cannot add an empty record to list data. 
 
-{{sample 05_list/06_validation.html }}
+{{editor http://webix.com/snippet/9c70df9b	List Validation}}
 
 Read more about [data templates](desktop/html_templates.md) here. 
 
@@ -506,7 +506,7 @@ webix.ui({
 })
 ~~~
 
-{{sample 15_datatable/25_validation/01_existing_data.html}}
+{{editor http://webix.com/snippet/4f477d95	Datatable Validation }}
 
 Invalid data is highlighted within the component and cannot be sent to server (in case you work with [dataprocessor](desktop/dataprocessor.md)).
 
@@ -534,7 +534,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 15_datatable/25_validation/07_edit_validation.html}} 
+{{editor http://webix.com/snippet/abc4d96f	Datatable. Editing Validation}} 
 
 The function takes three arguments here:
 
@@ -546,11 +546,11 @@ More information about text editors you can find in the [dedicated article](desk
 
 ##HTML5 Data Validation {#html5}
 
-Here we speak about clientside, in-browser data validation powered by HTML5 means. 
+Here we speak about client side, in-browser data validation powered by HTML5 means. 
 
 In HTML5 layout input tags come in a plenty of types and feature a number of attributes that define validation pattern. 
 
-Input types conside with a **type** property of the view **text** while other input attributes are listed within the **attributes** object property: 
+Input types coincide with a **type** property of the view **text** while other input attributes are listed within the **attributes** object property: 
 
 <table>
     <tr class="row0">
@@ -593,7 +593,7 @@ HTML5 input types for the library's form component are as follows::
 - **email** - requires **@** symbol for validation;
 - **url** - requires **http://** prefix for validation. 
 
-{{sample 13_form/04_validation/10_html5_validation.html}}
+{{editor http://webix.com/snippet/8ce22a24	HTML5 Data Validation}}
 
 ###Related Articles
 

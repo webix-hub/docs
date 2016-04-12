@@ -8,7 +8,7 @@ Every UI component features inner storage for [loaded](desktop/data_loading.md) 
 
 Both of the stores feature common methods, properties and events to work with data items on client side while TreeStore offers extended API for treating data items observing hierarchy. 
 
-While **manupulating data** items, you can: 
+While **manipulating data** items, you can: 
 
 - apply methods directly to the **Data/TreeStore** of the component- *$$("list").data*. Only some functions require this. 
 - apply methods to the component by its **ID** - *$$("list")*, which implies addressing datastore. Most methods have this pattern. 
@@ -19,7 +19,7 @@ $$("list").data.each(){function(obj){.....} }; //iterates through items array
 $$("list").count(); //counts items in the list datastore
 ~~~
 
-Each **data item object** posesses the unique **ID**, **index** in the data array and set of **properties**. 
+Each **data item object** possesses the unique **ID**, **index** in the data array and set of **properties**. 
 
 Getting the item object
 -------------------------------

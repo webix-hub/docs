@@ -7,7 +7,7 @@ After the data is loaded to the component it is stored in the `data` object and 
 Data Item Value
 -----------------
 
-All supported data types may contain **more than one value per item** e.g. each item of a filmset may contain not only a film's title but also its rank, production year, and number of votes. 
+All supported data types may contain **more than one value per item** e.g. each item of a film set may contain not only a film's title but also its rank, production year, and number of votes. 
 
 Still, different components have different possibilities and requirements:
 
@@ -28,7 +28,8 @@ Still, different components have different possibilities and requirements:
 <data><item value='3' other:""/><item value='2' other:""/></data>
 ~~~
 
-{{sample 17_datatree/01_loading/01_json_data.html}}
+{{editor http://webix.com/snippet/8866280c	Tree: JSON Dataset}}
+
 
 Such definition would suit single-value components. If a data item has other properties, their values won't be shown unless you define a template.
 
@@ -52,7 +53,7 @@ webix.ui({
 }); // this list will show 'values' and 'titles' 
 ~~~
 
-{{sample 05_list/01_list.html }}
+{{editor http://webix.com/snippet/629e53fd	List}}
 
 - [datatable](datatable/index.md) and [treetable](desktop/treetable.md) **column ID** that act as templates for cells.
 
@@ -100,10 +101,10 @@ columns: [
 ];
 ~~~
 
-{{sample 15_datatable/01_loading/01_inline_data.html}}
+{{editor http://webix.com/snippet/04e56172	Loading from an Inline Datasource }}
 
 {{note
-As far as you've noticed, only **JSON** and **XML** data can be displayed without refering to template, since only they can directly set **value.** 
+As far as you've noticed, only **JSON** and **XML** data can be displayed without referring to template, since only they can directly set **value.** 
 Moreover, this can be applied only to components with **single-value items**. 
 }}
 
@@ -130,7 +131,7 @@ webix.ui({
 
 In case of template function (described below) value is referred to as **obj** instead of standard obj.value (obj.title, obj.data0). 
 
-{{sample 08_chart/01_initialization/03_load_csv.html}}
+{{editor http://webix.com/snippet/2116fe0f	Chart: CSV Dataset}}
 
 Template Contents
 -------------------
@@ -161,7 +162,7 @@ In this case, only the `rank` and `title` values are copied.
 **Grouplist** has its own templating pattern. Look into the [related article](desktop/grouplist.md) for details.
 }}
 
-###The item in the intial dataset looks like this:
+###The item in the initial dataset looks like this:
 
 ~~~js
 //JSON
@@ -216,7 +217,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 06_dataview/02_templates/01_jshtml.html}}
+{{editor http://webix.com/snippet/ece5bc26	Template as a String}}
 
 ###Named Template
 
@@ -241,7 +242,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 06_dataview/02_templates/05_named.html }}
+{{editor http://webix.com/snippet/e7081331	Named Templates }}
 
 See the corresponding article to learn more about [type implementation](desktop/type.md).
 
@@ -268,7 +269,7 @@ webix.ui({
 <script>
 ~~~
 
-{{sample 06_dataview/02_templates/03_html.html }}
+{{editor http://webix.com/snippet/8d1554cf	Pure HTML Template}}
 
 ###External HTML template
 
@@ -298,7 +299,7 @@ Note that these HTTP requestes are not cached. If you use the same template repe
 var objectDetailTemplate = webix.ajax().sync().get('template.html').responseText;
 ~~~
 
-{{sample 06_dataview/02_templates/04_external.html }}
+{{editor http://webix.com/snippet/02473e19	Pure HTML Template: Referring to External HTML }}
 
 ###Template Function
 
@@ -313,7 +314,7 @@ template: function (obj) {
 }
 ~~~
 
-{{sample 06_dataview/02_templates/02_js.html}}
+{{editor http://webix.com/snippet/a5864425	Template as a Function}}
 
 - If value is defined by JSON/XML tag **value** - you refer to it as **obj.value.**
 - If value is defined by template - you refer to it as **obj.title**, **obj.rank**, **obj.data0** (CSV, JSArray) etc. 

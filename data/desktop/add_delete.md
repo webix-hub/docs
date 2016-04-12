@@ -16,8 +16,8 @@ Basic syntax here looks as follows:
 
 ~~~js
 $$("myview").add({
-         id:"item_id",  //adding  an item with two properties
-         property:"some_value"
+	id:"item_id",  //adding  an item with two properties
+	property:"some_value"
 })
 $$("myview").remove("item_id"); //to delete a single item
 
@@ -63,7 +63,7 @@ function addData() {
 ##Deletion of Selected Items
 
 Since only [selected](desktop/selection.md) items can be deleted, set the select parameter to true (**select: true**) during the initialization of the component. 
-Before removal let's check whether an item is selected with the help of the simpliest *if-else* statement. 
+Before removal let's check whether an item is selected with the help of the simplest *if-else* statement. 
 
 ###Deletion of one item
 
@@ -76,7 +76,7 @@ function removeData(){
 $$("data").remove($$("data").getSelectedId());
 }}
 ~~~
-{{sample 06_dataview/04_manipulations/01_adding.html }}
+{{editor http://webix.com/snippet/03f59d80	Adding/Removing Items}}
 
 ###Deletion of several items
 

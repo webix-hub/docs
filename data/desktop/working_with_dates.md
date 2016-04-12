@@ -16,7 +16,7 @@ Dates are loaded to components according to common [data loading rules](desktop/
 Either in the database or in data files dates can be stored in two ways: as **DateTime** objects or as **strings**. 
 
 - DateTime objects should be formatted for adequate presentation. Otherwise, the output will be like "*Tue Nov 30 2010 00:00:00 GMT+0200*";
-- Strings can be either shown in the way thay are stored or converted to objects and then formatted.
+- Strings can be either shown in the way they are stored or converted to objects and then formatted.
 
 {{note
 Only DateTime objects defined with the **new Date();** method are subject to formatting since it presupposes "to-string" conversion. Strings should be converted beforehand. 
@@ -46,7 +46,7 @@ webix.ui({
 
 2 . **Custom** (using **webix.Date** object functions). 
 
-Applicable to all data management conponents including datatable. 
+Applicable to all data management components including datatable. 
 
 Here we create the necessary conversion pattern and then define it as [scheme](api/link/ui.list_scheme_config.md) for the loaded data. 
 
@@ -66,18 +66,18 @@ webix.ui({
 })
 ~~~
 
-{{sample 15_datatable/20_templates/06_dates_string.html}} 
+{{editor http://webix.com/snippet/7148848d	Converting Strings to Dates }}
 
 Now we've got DateTime objects ready to formatting. 
 
 ###Defining Formatting Methods
 
-There're two objects in the library that handle dates - **[webix.Date](api/refs/date.md)** and **[webix.i18n](api/refs/i18n.md)**. Both of them contain date 
+There are two objects in the library that handle dates - **[webix.Date](api/refs/date.md)** and **[webix.i18n](api/refs/i18n.md)**. Both of them contain date 
 formatting and processing logic while the later is responsible for date (as well as number and price) localization.
 
 ####**webix.i18n**
 
-Localization means **locales implementation** where locale is a collection of formatting methods and patterns for a certain area. They are defined separately and  later applied to the necessady data. 
+Localization means **locales implementation** where locale is a collection of formatting methods and patterns for a certain area. They are defined separately and  later applied to the necessary data. 
 By default, if you format dates with the **i18n** object, all the dates and numbers will be formatted according to North American region rules. 
  
 **Date** and **Number localization** are described in the [related article](desktop/localization.md). 
@@ -90,7 +90,7 @@ The Date object allows for formatting dates regardless of locales with the help 
 { header:"m/d/Y", sort:"date", id:"start", format:webix.Date.dateToStr("%m/%d/%y")}
 ~~~
 
-The datatable column here shows the stored date in a "month number/day number/two-digit yeat" format. 
+The datatable column here shows the stored date in a "month number/day number/two-digit year" format. 
 
 Possible format specifiers are listed in the [related article](helpers/date_formatting_methods.md). 
 
@@ -159,19 +159,19 @@ webix.ui({
 })
 ~~~
 
-{{sample 80_docs/dataview_formatting.html}}
+{{editor http://webix.com/snippet/81ae88c2	Dataview Formatting}}
 
 When working with **server-side**, initialize a [dataProcessor](desktop/dataprocessor.md) for the component and the changes will be automatically saved back to server. 
 
 ##Sorting {#sort}
 
-Though dates are presented as strings, they are **sorted as date objects**. So before sorting don't forget to convert strings to DateTime objects in case they are stores as strings (see above). 
+Though dates are presented as strings, they are **sorted as date objects**. So before sorting don't forget to convert strings to DateTime objects in case they are stored as strings (see above). 
 
 Sorting can be applied in two directions: **"asc"** (ascending) and **"desc"** (descending). 
 
 1 . **Built-in Sorting. Datatable Only.**
 
-Datatable features dedicated **sort** property for its cloumns. 
+Datatable features dedicated **sort** property for its columns. 
 
 2 . **Custom Sorting.** Applicable to all components. 
 
@@ -188,7 +188,7 @@ HTML Button Triggers Sorting
 <input type='button' value='Sort "Asc"' onclick='grid.sort("#start#", "asc", "date");'>
 ~~~
 
-{{sample 80_docs/dates.html }} 
+{{editor http://webix.com/snippet/a0001cfb	Using Date Templates}} 
 
 [Data Sorting Api](api/link/ui.datatable_sort.md).
 
@@ -203,7 +203,7 @@ and the date will be shown in the text field. By default, date is shown formatte
 
 <img src="desktop/date_picker.png">
 
-{{sample 09_calendar/06_datepicker.html}} 
+{{editor http://webix.com/snippet/bc812c2f	Date Picker in Calendar}}
 
 ###Customization
 
@@ -227,7 +227,7 @@ Default formatting can be changed as well. Formatting rules are described above 
 } 
 ~~~
 
-{{sample 09_calendar/06_datepicker.html }}
+{{editor http://webix.com/snippet/bc812c2f	Date Picker in Calendar}}
 
 If a form is [bound](desktop/data_binding.md) to the component, it will load dates in the format specified by the component formatting pattern, or, if custom format is defined for datepicker, it will get the one from the latter. 
 

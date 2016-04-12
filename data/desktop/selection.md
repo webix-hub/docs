@@ -10,14 +10,14 @@ To enable selection you should include **select** property into the component co
 <img src="tutorials/simple_dataview.png"/>
 
 ~~~js
-     webix.ui({
-			view:"dataview",
-            select:1, //enables select mode
-            ...//config
-		});
+webix.ui({
+	view:"dataview",
+	select:1, //enables select mode
+	...//config
+});
 ~~~
 
-{{sample 06_dataview/04_manipulations/02_selection.html }}
+{{editor http://webix.com/snippet/1d5e1603	Selection in Dataview}}
 
 The items will be selected on mouse click.
 
@@ -41,7 +41,7 @@ webix.ui({
 ~~~
 
 {{snippet
-"Touch" mutliselection
+"Touch" multiselection
 }}
 ~~~js
 webix.ui({
@@ -56,19 +56,19 @@ webix.ui({
 
 
 {{snippet
-"Ctrl"+click mutliselection
+"Ctrl"+click multiselection
 }}
 ~~~js
 webix.ui({
 	view:"datatable",
     multiselect:true,
-    select:'cell', //multiple seelction of cells
+    select:'cell', //multiple selection of cells
     ...// config
 })
 ~~~
 
 {{snippet
-"Touch" mutliselection
+"Touch" multiselection
 }}
 ~~~js
 webix.ui({
@@ -92,7 +92,7 @@ webix.ui({
 })
 ~~~
 
-{{sample 17_datatree/04_api/04_multi_select.html }}
+{{editor http://webix.com/snippet/4185d3c7	Multiline Selection}}
 
 
 {{note
@@ -117,7 +117,7 @@ $$('dataview').select(4); //the cell containing item with ID = 4 will be selecte
 $$('dataview').select([2,3,4]); the items with IDs equalling to 2, 3 and 4
 ~~~
 
-- **selectAll()** function equalls to select(); with no parameters and highlights all the items at once;
+- **selectAll()** function equals to select(); with no parameters and highlights all the items at once;
 - **unselect()** and **unselectAll()** - the functions work  similar to the above mentioned and deselect items according to the same principles;
 - **isSelected(int)** - the function checks whether the item with this ID is selected. Returns *true* or *false*;
 - **getSelectedId()**  - the function doesn't take any parameters. It returns the ID of a selected item or an array of IDs in case of multiselect mode. 
@@ -134,7 +134,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 15_datatable/05_selection/09_navigation.html}}
+{{editor http://webix.com/snippet/dee22b38	Navigation in DataTable}}
 
 {{note
 Note than not all data components support navigation by default. Then **KeysNavigation** module should be added manually.

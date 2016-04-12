@@ -12,8 +12,7 @@ The control combines an editable text field with a drop-down list of predefined 
 var combo = webix.ui({
 	view:"combo", 
 	label: 'Combo',
-	value:"One", 
-	yCount:"3", 
+	value:"One",  
 	options:["One", "Two", "Three"]
 });
 ~~~

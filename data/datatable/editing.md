@@ -249,6 +249,7 @@ By default, the Tab(Tab+Shift) key(s) allows navigating within editors defined i
 - When multiple editors are opened in the table at the same time, Tab/Tab+Shift navigates within the opened editors.  
 
 
-{{sample 15_datatable/04_editing/28_scroll.html }}
+{{editor http://webix.com/snippet/1efd566f	Tab Navigation and Scrolling}}
 
-{{sample 15_datatable/04_editing/03_multiple_editors.html }}
+{{editor http://webix.com/snippet/bb877d8c	Opening Multiple Editors}}
+
