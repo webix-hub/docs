@@ -130,6 +130,4 @@ if (state)
 	60_pro/06_tree/03_session_state.html
 }}
 
-@edition:pro
-
 

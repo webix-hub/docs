@@ -49,5 +49,3 @@ the state object will look as in:
 	}
 }
 ~~~
-
-@edition:pro

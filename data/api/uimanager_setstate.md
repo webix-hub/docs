@@ -33,3 +33,5 @@ The difference lies in the following:
 
 - the api/refs/uimanager.md methods allows you to save and restore outer visual scheme (layout) of the specified view (that allows restoring general view structure);
 - the api/refs/datastate.md methods save and restore the information about inner configuration of the view (selection, sorting direction etc.).
+
+@edition:pro

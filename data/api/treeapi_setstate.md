@@ -21,8 +21,6 @@ if (state)
 	api/treeapi_getstate.md
 @related:
 	datatree/nodes_manipulations.md
-    
-@edition:pro
 
 @template:	api_method
 @descr:

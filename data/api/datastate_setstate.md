@@ -29,6 +29,4 @@ if (state)
 @template:	api_method
 @descr:
 
-@edition:pro
-
 

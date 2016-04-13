@@ -13,7 +13,6 @@ tree.getState();
 @relatedapi:api/treeapi_setstate.md
 @related:
 	datatree/nodes_manipulations.md
-@edition:pro
 @descr:
 The state object reflects UI configuration of the view.
 
