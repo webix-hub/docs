@@ -1,11 +1,11 @@
 Data Editors
 =============
 
-In this article build-in component [editors](#editors) and [edit actions](#editaction) for them are discussed. To learn about Webix editing pattern, go to the [main article](desktop/edit.md).
+In this article built-in component [editors](#editors) and [edit actions](#editaction) for them are discussed. To learn about Webix editing pattern, go to the [main article](desktop/edit.md).
 
 ##Opening and Closing Editors
 
-- an editor for the component is enabed, or opened, by the [**editAction**](#editaction) that is defined for the whole component;
+- an editor for the component is enabled, or opened, by the [**editAction**](#editaction) that is defined for the whole component;
 - an editor is closed by **moving focus outside the editor** (e.g. clicking another component part) or by hotkeys **'Enter'** for saving the new value
  and **'Esc'** for exiting without saving.
 
@@ -68,7 +68,7 @@ In this article build-in component [editors](#editors) and [edit actions](#edita
 	</tbody>
 </table>
 
-{{sample 80_docs/editors.html }}
+{{editor http://webix.com/snippet/5ba4767f	Editor Collection }}
 
 ###Text {#text}
 
@@ -78,7 +78,7 @@ A base editor for text values of datatable and dataview cells, list rows. By def
 { id:"title", header:"Film title", editor:"text",
 ~~~
 
-{{sample 15_datatable/04_editing/01_basic.html}}
+{{editor http://webix.com/snippet/0f86c36b	Basic Use of Editors }}
 
 ###Password {#password}
 
@@ -86,10 +86,10 @@ A base editor for passwords that masks symbols in the input.
 
 ~~~js
 //in the property sheet editor is defined by "type"
-{ id:"pass", label:"Passoword", type:"password"}
+{ id:"pass", label:"Password", type:"password"}
 ~~~
 
-{{sample 07_property/01_init.html}}
+{{editor http://webix.com/snippet/decc3b29	Property Sheet: Basic Initialization}}
 
 ###Inline-text {#inlinetext}
 
@@ -100,7 +100,7 @@ A customizable text editor. Here you should set a template for the editing area,
 	editor:"inline-text"}
 ~~~
 
-{{sample 15_datatable/04_editing/09_inline_editors.html}}
+{{editor http://webix.com/snippet/6a136026	Using 'inline' editors}}
 
 - If you specify the **editor:"inline-text"** attribute the component will provide a special processing treat for the editor while editing: invoking [edit-related events](api/refs/editability_events.md).
 - If you don't specify the **editor** attribute you should provide the processing logic for the editor on your own. 
@@ -114,9 +114,9 @@ A customizable editor that allow for choosing one of the offered values. It look
 { id:"type", header:"Category",  editor:"select", options:[...]}
 ~~~
 
-{{sample 15_datatable/04_editing/04_select.html}}
+{{editor http://webix.com/snippet/4a12724e	Using the 'select' editor}}
 
-The options can be defined by either a simple or an associatibe array as well as by url. [Look here for details](#options).
+The options can be defined by either a simple or an associative array as well as by url. [Look here for details](#options).
 
 ###Combo {#combo}
 
@@ -128,7 +128,7 @@ Webix [combo](desktop/combo.md) control with the possibility to filter a popup l
 
 {{sample 15_datatable/04_editing/15_combo.html}}
 
-- The options can be defined by either a simple or an associatibe array as well as by url. [Look here for details](#options);
+- The options can be defined by either a simple or an associative array as well as by url. [Look here for details](#options);
 - The editor is subject to [extensive customization](#advancedconfigurationofselecteditors). 
 
 ####Pro Extensions for Combo Editor
@@ -418,7 +418,7 @@ can be customized too. The following things can be changed:
 - the number of list items in the popup;
 - functions can be attached to a list.
 
-Two column attributes are mandatory  - **options** or **collection** to interprete options into text and **suggest** to define the confuguration of related popup list: 
+Two column attributes are mandatory  - **options** or **collection** to interpret options into text and **suggest** to define the configuration of related popup list: 
 
 ~~~js
 { id:"year", editor:"combo", options:years, suggest:{
@@ -459,7 +459,7 @@ To configure a suggest list for a multiselect editor, one should specify its sug
 Webix [datatable](datatable/index.md), [treetable](desktop/treetable.md) and [property sheet](desktop/property_sheet.md)  can use any of the above mentioned editors in **live** mode and update the same data property is case it's used in another column other than the edited one.
 
 ~~~js
-//"rating" is used in both columns while it can be editable ony in the first one
+//"rating" is used in both columns while it can be editable only in the first one
 columns:[
 	{ id:"rating",	header:"Count", editor:"inline-text", liveEdit:true},
 	{ template:"#rating#", width:150 }
@@ -510,7 +510,7 @@ To define a new editor, you should specify at least 5 methods for it:
 - **render()** - renders the editor;
 - **getInputNode()** - gets the input area object.
 
-For instance, this is how a biult-in text editor is made:
+For instance, this is how a built-in text editor is made:
 
 ~~~js
 webix.editors.myeditor = {
@@ -535,7 +535,7 @@ webix.editors.myeditor = {
 }
 ~~~
 
-Inner properies
+Inner properties
 
 - **this.node** - HTML tag of the editor. Appears after *render()* execution;
 - **this.value** - the initial value of an input. Appears after *setValue();* execution;
@@ -553,12 +553,12 @@ For instance you have a datatable column with e-mails. Input type **email** from
 In this case you extend the existing **text editor** and change render pattern in it: 
 
 ~~~js
-	webix.editors.myeditor = webix.extend({
-			render:function(){
-			return webix.html.create("div", {
-				"class":"webix_dt_editor"
-			}, "<input type='email'>");
-		}}, webix.editors.text);
+webix.editors.myeditor = webix.extend({
+	render:function(){
+		return webix.html.create("div", {
+		"class":"webix_dt_editor"
+		}, "<input type='email'>");
+}}, webix.editors.text);
 ~~~
 
 {{sample 80_docs/custom_ed.html}}
