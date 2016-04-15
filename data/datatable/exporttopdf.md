@@ -50,10 +50,10 @@ webix.toPDF($$("myDataTable"), {
 
 ~~~js
 webix.toPDF($$("myDataTable"), {
-	columns:{
-		title:{ header: "My title", width: 200, template: webix.template("#id#.#title#")},
-		year:{ header:"Year", width:150}
-	}
+  columns:{
+	title:{ header: "My title", width: 200, template: webix.template("#id#.#title#")},
+	year:{ header:"Year", width:150}
+  }
 });
 ~~~
 

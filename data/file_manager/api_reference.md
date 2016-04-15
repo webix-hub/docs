@@ -21,6 +21,7 @@ Methods
 - <a href="#goback">goBack</a> - goes back in the navigation history
 - <a href="#goforward">goForward</a> - goes forward in the navigation history
 - <a href="#hideresults">hideSearchResults</a> - hides search results
+- <a href="#hidetree">hideTree</a> - hides the Tree panel
 - <a href="#levelup">levelUp</a> - selects the parent folder
 - <a href="#markcopy">markCopy</a> - preselectes files/folders for copy operation
 - <a href="#markcut">markCut</a> - preselectes files/folders for move operation
@@ -29,6 +30,7 @@ Methods
 - <a href="#rename">renameFile</a> - renames a folder/file
 - <a href="#setpath">setPath</a> - selects a certain folder and sets path values for it 
 - <a href="#showresults">showSearchResults</a> - searches text in the active folder and displays results on the screen
+- <a href="#showtree">showTree</a> - shows the Tree panel
 - <a href="#upload">uploadFile</a> - opens a file upload dialog
 
 
@@ -267,7 +269,14 @@ hides search results
 ~~~js
 fmanager.hideSearchResults();
 ~~~
+
+<h3 id="hidetree">hideTree</h3>
     
+hides the Tree panel
+
+~~~js
+fmanager.hideTree();
+~~~
  
 ###<span id='levelup'>levelUp</span> 
 
@@ -370,6 +379,13 @@ params:
 
 - text - {string} searched text 
 
+<h3 id="showtree">showTree</h3>
+    
+shows the Tree panel
+
+~~~js
+fmanager.showTree();
+~~~
   
 <h3 id="upload">uploadFile</h3>
 

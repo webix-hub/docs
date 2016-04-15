@@ -18,9 +18,16 @@ Thus, the structure of File Manager is:
 	- <a href="#search">Search control</a> 
 	- <a href="#modes">Modes button</a> 
 - <a href="#body">bodyLayout</a> with 3 columns:
-	- <a href="#tree">Tree</a> 
+	- <a href="#treelayout">treeLayout</a> consists of 2 parts - treeToolbar and Tree:
+    	- <a href="#treetoolbar">treeToolbar</a> contains 4 elements:
+         - <a href="#hide">hideTree button</a>
+         - <a href="#spacer">Spacer</a>
+         - <a href="#expand">expandAll button</a>
+         - <a href="#collapse">collapseAll button</a>
+        - <a href="#tree">Tree</a>
 	- <a href="#resizer">Resizer view</a> 
 	- <a href="#filesandtable">'Files' and 'Table'</a> view modes
+
 
 The layout of File Manager is rather flexible. It means that you can customize it according to your preferences.
 
@@ -29,7 +36,7 @@ For example, if you want to swap one toolbar element with another one or even to
 You can find more information concerning the possibilities of customizing File Manager views in the article file_manager/howto.md.
 
 
-<h3 id="toolbar">Toolbar</h3>
+<h2 id="toolbar">Toolbar</h2>
 
 <img src="file_manager/toolbar.png"/>
 
@@ -55,21 +62,22 @@ var toolbar = $$("fmanager").$$("toolbar");
 ~~~
 
 
-<h4 id="menubutton">Menu button</h4>
+<h3 id="menubutton">Menu button</h3>
 
 <img src="file_manager/menu_button.png"/>
 
-Menu button is based on Webix [Button](desktop/button.md) control. 
+The Menu button is based on Webix [Button](desktop/button.md) control. 
 It is used to activate the <a href="#actionsmenu">Actions menu</a>.
 
 ~~~js
 { 
-	id: 	"menu", 
-    view: 	"button", 
-    type: 	"iconButton", 
-    css: 	"webix_fmanager_back", 
-    icon: 	"bars", 
-    width: 	37 
+   id:      "menu",
+   view:    "button", 
+   type:    "htmlbutton", 
+   css:     "webix_fmanager_menu", 
+   label:   "<div class='webix_fmanager_bar_icon'></div>",
+   width:   37,
+   tooltip: webix.i18n.filemanager.actions
 }
 ~~~
 
@@ -80,14 +88,14 @@ var menu = $$("fmanager").$$("menu");
 ~~~
 
 
-<h4 id="spacer">Spacer</h4>
+<h3 id="spacer">Spacer</h3>
 
-The spacer is used to separate the Menu and Back buttons.
+The spacer is used to separate buttons.
 
 ~~~js
 {
 	id: 	"menuSpacer", 
-    width: 	65
+    width: 	75
 }
 ~~~
 
@@ -98,7 +106,7 @@ var spacer = $$("fmanager").$$("menuSpacer");
 ~~~
 
 
-<h4 id="backforward">Back and Forward buttons</h4>
+<h3 id="backforward">Back and Forward buttons</h3>
 
 <img src="file_manager/back_forward_buttons.png"/>
 
@@ -107,21 +115,24 @@ The Back and Forward buttons are based on Webix [Button](desktop/button.md). The
 ~~~js
 //the Back button
 {	
-    id: 	"back",
-	view: 	"button", 
-	type:	"iconButton", 
-    css: 	"webix_fmanager_back", 
-    icon: 	"angle-left", width: 37
+    id:      "back",
+    view:    "button", 
+	type:    "htmlbutton", 
+	css:     "webix_fmanager_back",
+    label:   "<div class='webix_fmanager_bar_icon'></div>", 
+	width:   37,
+    tooltip: webix.i18n.filemanager.back
 }
 
 //the Forward button
 { 
-    id: 	"forward",
-	view: 	"button", 
-    type:	"iconButton", 
-    css: 	"webix_fmanager_forward", 
-    icon: 	"angle-right", 
-    width: 	37
+    id:     "forward",
+    view:   "button", 
+	type:   "htmlbutton", 
+	css:    "webix_fmanager_forward",
+    label:  "<div class='webix_fmanager_bar_icon'></div>", 
+	width:  37,
+    tooltip: webix.i18n.filemanager.forward
 }
 ~~~
 
@@ -136,7 +147,7 @@ var bforward = $$("fmanager").$$("forward");
 ~~~
 
 
-<h4 id="levelup">LevelUp button</h4>
+<h3 id="levelup">LevelUp button</h3>
 
 <img src="file_manager/levelup_button.png"/>
 
@@ -145,13 +156,13 @@ It selects the parent folder of the selected item (file/folder):
 
 ~~~js
 {
-    id: 		"up",
-	view:		"button", 
-    type:		"iconButton", 
-    css:		"webix_fmanager_up", 
-    icon:		"level-up", 
-    disable:	true, 
-    width:		37
+    id:      "up",
+	view:    "button", 
+	type:    "htmlbutton", 
+	css:     "webix_fmanager_up",
+    label:   "<div class=\"webix_fmanager_bar_icon \"></div>", 
+	width:   37,
+    tooltip: webix.i18n.filemanager.levelUp
 }
 ~~~
 
@@ -162,7 +173,7 @@ var levelUp = $$("fmanager").$$("up");
 ~~~
 
 
-<h4 id="path">Path view</h4>
+<h3 id="path">Path view</h3>
 
 <img src="file_manager/path_view.png"/>
 
@@ -184,7 +195,7 @@ var path = $$("fmanager").$$("path");
 
 
 
-<h4 id="search">Search control</h4>
+<h3 id="search">Search control</h3>
 
 <img src="file_manager/search_control.png"/>
 
@@ -193,9 +204,12 @@ the names of which contain the entered letter combinations:
 
 ~~~js
 { 
-	id: "search", 
-    view: "search", 
-    gravity: 0.3 
+	id:       "search", 
+	view:     "search", 
+	gravity:  0.3, 
+	minWidth: 80, 
+	css:      "webix_fmanager_search", 
+	icon:     "webix_fmanager_icon" 
 }
 ~~~
 
@@ -205,7 +219,7 @@ You can use the **$$("search")** method to refer to its object:
 var search = $$("fmanager").$$("search");
 ~~~
 
-<h4 id="modes">Modes button</h4>
+<h3 id="modes">Modes button</h3>
 
 <img src="file_manager/modes_button.png"/>
 
@@ -214,12 +228,14 @@ It lets switch between two modes of displaying folders and files: <a href="#file
 
 ~~~js
 { 
-   id: 		"modes", 
-   view: 	"segmented",  
-   value: 	settings.mode,
-   options: [
-      // options
-   ]
+   	id:      "modes", 
+	view:    "segmented",
+	width:   70,
+	value:   settings.mode,
+	css:     "webix_fmanager_modes",
+	options: [
+	  // options
+	]
 }
 ~~~
 
@@ -227,16 +243,16 @@ The options are specified as an array:
 
 ~~~js
 [
-	{
-		id: "files",
-        width: 32,
-        value: "<span class=\"webix_fmanager_mode_option webix_icon fa-th\"></span>"
-	},
-	{
-		id: "table",
-        width: 32,
-        value: "<span class=\"webix_fmanager_mode_option webix_icon fa-list-ul\"></span>"
-	}
+  {
+    id: "files",
+    width: 32,
+    value: "<div class='webix_fmanager_bar_icon webix_fmanager_files_mode' title='"+webix.i18n.filemanager.iconsView+"'></div>"
+  },
+  {
+    id: "table",
+    width: 32,
+    value: "<div class='webix_fmanager_bar_icon webix_fmanager_table_mode' title='"+webix.i18n.filemanager.tableView+"'></div>"
+  }
 ]
 ~~~
 
@@ -246,9 +262,72 @@ To refer to its object use the **$$("modes")** method:
 var modes = $$("fmanager").$$("modes");
 ~~~
 
-<h3 id="body">bodyLayout</h3>
+<h2 id="body">bodyLayout</h2>
 
-bodyLayout includes 3 columns: Tree, Resizer view and a column with "Files" and "Tree" view modes.
+bodyLayout includes 3 columns: a layout with Tree, Resizer view and a column with "Files" and "Tree" view modes.
+
+<h3 id="treelayout">treeLayout</h3> 
+
+treeLayout includes a treeToolbar and Tree.
+
+<h4 id="treetoolbar">treeToolbar</h4>
+
+treeToolbar includes 4 elements: the hideTree button, the [spacer](file_manager/configuration.md#spacer), the expandAll and collapseAll buttons:
+
+<h4 id="hide" style="font-style:italic; font-weight: normal">hideTree button</h4>
+
+<img src="file_manager/hidetree_button.png">
+
+The hideTree button hides/shows the Tree panel.
+
+~~~js
+{ 
+   id: 		"hideTree",
+   view:    "button", 
+   type:    "htmlbutton", 
+   css:     "webix_fmanager_toggle",
+   label:   "<div class="webix_fmanager_bar_icon"></div>", 
+   width:   30,
+   tooltip: webix.i18n.filemanager.hideTree
+}
+~~~
+
+<h4 id="expand" style="font-style:italic; font-weight: normal">expandAll button</h4>
+
+<img src="file_manager/expandall_button.png">
+
+The expandAll button expands the collapsed Tree.
+
+~~~js
+{ 
+	id:      "expandAll",
+	view:    "button", 
+	type:    "htmlbutton", 
+	css:     "webix_fmanager_expand",
+	label:   "<div class='webix_fmanager_bar_icon'></div>", 
+	width:   30,
+	tooltip: webix.i18n.filemanager.expandTree
+}
+~~~
+
+<h4 id="collapse" style="font-style:italic; font-weight: normal">collapseAll button</h4>
+
+<img src="file_manager/expandall_button.png">
+
+The collapseAll button collapses the Tree remaining just the root folder visible.
+
+~~~js
+{ 
+	id:      "collapseAll",
+	view:    "button", 
+	type:    "htmlbutton", 
+	css:     "webix_fmanager_collapse",
+	label:   "<div class='webix_fmanager_bar_icon'></div>", 
+	width:   30,
+	tooltip: webix.i18n.filemanager.collapseTree
+}
+~~~
+
 
 <h4 id="tree">Tree</h4>
 
@@ -303,7 +382,7 @@ You can get the reference to tree object in the following way:
 var tree = $$("fmanager").$$("tree");
 ~~~
 
-<h4 id="resizer">Resizer view</h4>
+<h3 id="resizer">Resizer view</h3>
 
 Resizer is a draggable border between the Tree and the File views. It is based on Webix <a href="desktop/layout.md#resizerlines">Resizer</a>.
 
@@ -314,7 +393,7 @@ Resizer is a draggable border between the Tree and the File views. It is based o
 }
 ~~~
 
-<h4 id="filesandtable">View modes</h4>
+<h3 id="filesandtable">View modes</h3>
 
 
 These are 2 modes of viewing files of the selected folder: "Files" and "Table". 

@@ -54,10 +54,10 @@ webix.toPDF($$("mylist"), {
 
 ~~~js
 webix.toPDF($$("mylist"), {
-	columns:{
-		title:{ header: "My title", width: 200, template: webix.template("#id#.#title#")},
-		year:{ header:"Year", width:150}
-	}
+  columns:{
+	title:{ header: "My title", width: 200, template: webix.template("#id#.#title#")},
+	year:{ header:"Year", width:150}
+  }
 });
 ~~~
 
@@ -102,19 +102,98 @@ webix.toPDF($$("mylist"), {
 });
 ~~~
 
-- specifying the **header** and **headerImage** parameters to display some text or image in the header of the export file
+- specifying the **docHeader** and **docHeaderImage** parameters to display some text or image in the header of the export file
 
 ~~~js
 // setting a custom text in the header of the PDF file
 webix.toPDF($$("mylist"), {
-	header:"This document was made with Webix library. http://webix.com"
+	docHeader:"This document was made with Webix library. http://webix.com"
 });
 
 // setting a custom image in the header of the PDF file
 webix.toPDF($$("mylist"), {
-	headerImage:"../common/logo.jpg",
+	docHeaderImage:"../common/logo.jpg",
 });
 ~~~
 
-
 {{sample 15_datatable/10_export/07_pdf_config.html}}
+
+Styling the exported data
+-----------------------
+
+You can tune the appearance of elements in the exported PDF document.
+
+###Configuring the document's header
+
+
+To configure the header of the exported PDF document, you can set a configuration object as a value of the **docHeader** property.
+Inside this object beside the text string specify all the needed properties.
+
+An example config may look as:
+
+~~~js
+docHeader:{
+	text: "Datatable with custom styling",
+	textAlign:"center",
+	color:0x663399
+}
+~~~
+
+Pay attention that the color should be set in hex format starting from the 0x prefix. 
+
+There are many other possible properties of the config object. You can look all them up in the [corresponding documentation](https://github.com/rkusa/pdfjs/tree/master/docs)
+(follow the document->headeropts section).
+
+###Configuring the header image
+
+The export API allows you not only to set the link to the image, but also to specify an object with the necessary configuration properties:
+
+~~~js
+docHeaderImage:{ 
+	url:"link", 
+    align:"left", // "right"/"center"
+    width:300, 
+    height:20 
+}
+~~~
+
+Thus, you can configure the image's alignment, as well as its width and the height. More options are enumerated in the [specific documentation](https://github.com/rkusa/pdfjs/tree/master/docs) 
+(see the section document -> imageimg-opts).
+
+###Configuring the document's table
+
+It's also quite easy to configure the look of the exported data component. You can manage the following component's elements to get the desired result:
+
+- the table's header, e.g. set text alignment, the font size, the background color and the color of the text:
+
+~~~js
+header:{
+	textAlign:"center",
+	fontSize:13,
+	backgroundColor:0x3498DB,
+	color:0xFFFFFF
+}
+~~~
+
+- the table itself, e.g. align the text in it
+
+~~~js
+table:{
+	textAlign:"center"
+}
+~~~
+
+- the table's footer
+
+~~~js
+footer:{
+	fontSize:9,
+	height:20,
+	textAlign:"right"
+}
+~~~
+
+More at [corresponding documentation](https://github.com/rkusa/pdfjs/tree/master/docs)
+(document->tableopts)
+
+{{sample 15_datatable/10_export/07_pdf_style.html}}
