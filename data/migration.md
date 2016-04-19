@@ -1,6 +1,19 @@
 Migration to latest Webix version
 =================================
 
+Webix 3.2 -> 3.3
+----------------
+
+###Data Export to PDF
+
+To avoid ambiguity, in the version 3.3 the *header* and *headerImage* properties were renamed:
+
+- header is changed for docHeader - this property relates to the header of the document
+There's now the *header* property that is used in relation to the  
+- headerImage is changed for docHeaderImage
+
+
+
 Webix 3.1 -> 3.2
 ----------------
 

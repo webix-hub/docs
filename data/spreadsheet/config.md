@@ -32,6 +32,21 @@ webix.ui({
 
 To get more information about math in SpreadSheet, read the spreadsheet/math.md article.
 
+Enabling formula editor
+------------------------------
+
+You can add an inline editor of formulas in Spreadsheet. It allows creating a new formula and edit the existing one in a cell.
+There's the liveEditor property in the Spreadsheet API that will let you to switch the editor on. You just need to set it to true in the config.
+
+~~~js
+webix.ui({
+	view: "spreadsheet",
+    data: base_data,
+	liveEditor: true
+});
+~~~
+
+
 Setting the count of rows and columns
 ----------------------------------
 

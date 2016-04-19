@@ -22,7 +22,7 @@ Multicombo inherits from a standard [combo](desktop/combo.md) control and has th
 - Each option is equipped with a checkbox;
 - Each time you enter symbols in the input field the list of options is filtered;
 - To select an option, check it or click the corresponding list item. A selected option will be added to the input;
-- To remove an option from selction, click either the "cross" sign or use the "backspace" key in the input filed or uncheck the option in the list. 
+- To remove an option from selection, click either the "cross" sign or use the "backspace" key in the input filed or uncheck the option in the list. 
 
 ##Initialization
 
@@ -39,11 +39,16 @@ Multicombo inherits from a standard [combo](desktop/combo.md) control and has th
 - **value** (array/string) - defines the initially selected items of the control;
 - **separator** (string) - defines a delimiter for separating options in a multicombo, comma by default;
 - **options** or **suggest** (array, object) - defines a set of items to select from, or the datasource, or [advanced popup configuration](desktop/advanced_combo.md);
-- **optionWidth** (number) - defines the width of a popup list. By default, it is adjusted to the control width. 	
+- **optionWidth** (number) - defines the width of a popup list. By default, it is adjusted to the control width;
+- **icon** - 
+- **iconWidth** (number) - sets the icon's width;
+- **button** (boolean) - defines whether the "Select" button will be displayed in the options list;
+- **keepText** (boolean) - defines whether the entered text should be kept in the input after an option is selected.
+
 
 ##Configuring Suggest List
 
-You can read about advanced configuration options for popup selectors in the [corrresponding documentation article](desktop/advanced_combo.md).
+You can read about advanced configuration options for popup selectors in the [corresponding documentation article](desktop/advanced_combo.md).
 
 ##Accessing Suggest List
 

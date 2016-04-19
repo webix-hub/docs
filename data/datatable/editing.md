@@ -23,7 +23,7 @@ dtable = new webix.ui({
 
 Editors
 ------------------------------------
-The library provides 10 predefined editors:
+The library provides 12 predefined editors:
 
 - **text**, **inline-text**, **password**;
 - **checkbox**, **inline-checkbox**;
@@ -31,7 +31,7 @@ The library provides 10 predefined editors:
 - **multiselect** (**Webix Pro** edition only);
 - **date**;
 - **color**;
-- **popup**
+- **popup**.
 
 All of them are described in detail in the [corresponding article](desktop/editing.md#editortypes).
 

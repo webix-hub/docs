@@ -168,13 +168,16 @@ Master component object is retrieved with the **getContext()** property.
 webix.ui({
 	view:"contextmenu"
 	on:{
-         onItemClick:function(id){
+		onItemClick:function(id){
 			var context = this.getContext();
-    		var list = context.obj; //list item object
-    		var listId = context.id; //id of the clicked list item
-                
-    		webix.message("List item: <i>"+list.getItem(listId).title+"</i> <br/> 
-    					Context menu item: <i>"+this.getItem(id).value+"</i>");
+			var list = context.obj; //list item object
+			var listId = context.id; //id of the clicked list item
+
+			webix.message("List item: <i>"+list.getItem(listId).title+"</i> <br/> 
+				Context menu item: <i>"+this.getItem(id).value+"</i>");
+    	}
+    }
+}); 
 ~~~
 
 {{sample 03_menu/06_context_for_list.html}}

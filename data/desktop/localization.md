@@ -25,7 +25,7 @@ The **standard package** of the Webix library includes 9 locales, namely:
 - **'en-US'** - North American (used by default);
 - **'ru-RU'** - Russian;
 - **'fr-FR'** - French;
-- **'ja-JP'** - Japanise;
+- **'ja-JP'** - Japanese;
 - **'be-BY'** - Belarusian;
 - **'de-DE'** - German;
 - **'es-ES'** - Spanish;
@@ -84,6 +84,11 @@ webix.i18n.locales["en-US"]={
   controls:{
     select:"Select"
   }
+  
+  dataExport:{
+	page:"Page",
+	of:"of"
+  }
 };
 ~~~
 
@@ -135,7 +140,14 @@ format:webix.i18n.longDateFormatSt
 Text labels for some parts of webix components that are more likely to be changed in a scope: 
 
 - **select** - text label of the 'Select' button of the [multisuggest](api/refs/ui.multisuggest.md) 
-(used in [multiselect](desktop/multiselect.md) input, editor and filter). The default value for North Americal locale is "Select". 
+(used in [multiselect](desktop/multiselect.md) input, editor and filter). The default value for North American locale is "Select".
+
+**Data Export**
+
+Text labels used in the page numbering line in the footer of an exported PDF document
+
+- **page** - text label of the "Page" part in the page numbering line
+- **of** - text label of the "of" part in the page numbering line
 
 ##Applying a Locale
 

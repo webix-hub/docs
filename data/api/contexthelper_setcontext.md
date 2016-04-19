@@ -3,20 +3,19 @@ setContext
 
 
 @todo:
-	needs to be completed
+	check!
 
 @short:
-sets the master area for contextmenu
+allows customizing target context properties: view object and item id
 
 @params:
-- area		object		webix component or HTML object
+- view		object				the view object
+- id		string/number		the item id
 
 
 
 @example:
-setContext:function(area){
-	this._area = area;
-}
+menu.setContext({obj: $$("list"), id: "itemId"})
 
 @template:	api_method
 @descr:

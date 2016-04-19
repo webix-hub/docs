@@ -99,9 +99,9 @@ A customizable template for icons in "Files" and "Table" view modes.
 
 ~~~js
 templateIcon: function(obj,common){
-	return "<span class='webix_icon webix_fmanager_icon fa-"
+	return "<span class='webix_icon webix_fmanager_icon fm-"
     	+(common.icons[obj.type]||common.icons["file"])+"'></span>";
-},
+}
 ~~~
 
 <br>
