@@ -51,8 +51,9 @@ var spreadsheet = webix.ui({
 - api/link/ui.spreadsheet_getformview.md - returns master form for the input
 - api/link/ui.spreadsheet_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.spreadsheet_getparentview.md - returns the parent view of the component
-- api/ui.spreadsheet_getrow.md - returns the row of the spreadsheet by id
-- api/ui.spreadsheet_getselectedid.md - returns the ids of all cells in a select area
+- api/ui.spreadsheet_getrow.md - returns the row data by its id
+- api/ui.spreadsheet_getselectedid.md - returns the ids of all cells in the select area
+- api/ui.spreadsheet_getstyle.md - returns the style set for the cell
 - api/link/ui.spreadsheet_gettopparentview.md - returns top parent view
 - api/link/ui.spreadsheet_hasevent.md - checks whether the component has the specified event
 - api/link/ui.spreadsheet_hide.md - hides the view
@@ -73,13 +74,14 @@ var spreadsheet = webix.ui({
 - api/ui.spreadsheet_savecell.md - saves changes made in the cell
 - api/ui.spreadsheet_serialize.md - serializes SpreadSheet data to a JSON object
 - api/ui.spreadsheet_setcellvalue.md - sets a value for the cell
+- api/ui.spreadsheet_setstyle.md - sets a style for a cell
 - api/link/ui.spreadsheet_show.md - makes the component visible
 - api/link/ui.spreadsheet_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
 - api/ui.spreadsheet_splitcell.md - splits the cells' span that was made by merging several cells
-- api/link/ui.spreadsheet_ui.md - allows to create new ui, which isd will be locked in parent id space
+- api/link/ui.spreadsheet_ui.md - allows creating new ui, the id of which will be locked in the parent id space
 - api/link/ui.spreadsheet_unbind.md - breaks "bind" link
 - api/link/ui.spreadsheet_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/ui.spreadsheet_undo.md - reverts the last change made to an item
+- api/ui.spreadsheet_undo.md - undo operation in SpreadSheet
 }}
 
 

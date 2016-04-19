@@ -124,6 +124,7 @@ var htmlform = webix.ui({
 - api/link/ui.htmlform_animate_config.md - defines or disables view change animation.
 - api/link/ui.htmlform_autoheight_config.md - lets the component autosize to its contents
 - api/link/ui.htmlform_borderless_config.md - used to hide the component borders
+- api/link/ui.htmlform_complexdata_config.md - enables complex data parsing mode
 - api/link/ui.htmlform_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.htmlform_content_config.md - the id or node, whose content will be moved to the view
 - api/link/ui.htmlform_css_config.md - the name of a css class that will be applied to the view container

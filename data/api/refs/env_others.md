@@ -11,6 +11,7 @@ Others
 - api/env_iswebkit_other.md - a read-only boolean indicating whether the current browser is WebKit based (Google Chrome)
 - api/env_jsprefix_other.md - browser-specific prefix for CSS transforms and transitions (in Javascript code)
 - api/env_mouse_other.md - set of mouse-specific properties
+- api/env_pointerevents_other.md - 
 - api/env_strict_other.md - enables strict mode for webix library.
 - api/env_svg_other.md - a read-only boolean indicating whether the current browser supports SVG
 - api/env_transform_other.md - a read-only boolean indicating whether the current browser supports CSS Transforms
@@ -30,6 +31,7 @@ Others
 - api/env_iswebkit_other.md
 - api/env_jsprefix_other.md
 - api/env_mouse_other.md
+- api/env_pointerevents_other.md
 - api/env_strict_other.md
 - api/env_svg_other.md
 - api/env_transform_other.md

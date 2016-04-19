@@ -20,7 +20,7 @@ Methods
 - api/treestore_gettoprange.md - returns an array of the top tree nodes
 - api/treestore_isbranch.md - checks whether the node has any children
 - api/treestore_provideapi.md - assigns methods (and events) of DataStore to an object
-- api/treestore_remove.md - removes the specified item from datastore
+- api/treestore_remove.md - removes the specified item/items from datastore
 - api/treestore_serialize.md - serializes data to a JSON object
 }}
 

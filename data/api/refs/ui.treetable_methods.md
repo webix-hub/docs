@@ -113,7 +113,7 @@ Methods
 - api/link/ui.treetable_refreshfilter.md - rebuilds list of options in select filter
 - api/link/ui.treetable_refreshheadercontent.md - refreshes the header row of DataTable
 - api/link/ui.treetable_registerfilter.md - registers a filter element
-- api/link/ui.treetable_remove.md - removes the specified item from datastore
+- api/link/ui.treetable_remove.md - removes the specified item/items from datastore
 - api/link/ui.treetable_removecellcss.md - remove css class from the cell of datatable
 - api/link/ui.treetable_removecss.md - removes CSS class from a component item
 - api/link/ui.treetable_removerowcss.md - remove css class from the row

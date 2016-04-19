@@ -102,7 +102,7 @@ var organogram = new webix.ui({
 - api/link/ui.organogram_openall.md - opens all branches in the tree
 - api/link/ui.organogram_parse.md - loads data to the component from an inline data source
 - api/link/ui.organogram_refresh.md - repaints the whole view or a certain item
-- api/link/ui.organogram_remove.md - removes the specified item from datastore
+- api/link/ui.organogram_remove.md - removes the specified item/items from datastore
 - api/link/ui.organogram_removecss.md - removes CSS class from a component item
 - api/link/ui.organogram_render.md - renders the specified item or the whole component
 - api/link/ui.organogram_resize.md - adjusts the view to a new size

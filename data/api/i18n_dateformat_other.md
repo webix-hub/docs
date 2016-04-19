@@ -13,7 +13,7 @@ webix.i18n.setLocale();
 @defined:	i18n	
 @descr:
 
-You need to call <a href="api/i18n_setlocale.md">setLocale</a> to apply the new format settings
+You need to call api/i18n_setlocale.md to apply the new format settings.
 
 @related:desktop/localization.md
 

@@ -57,7 +57,7 @@ var store = new webix.TreeCollection({ url:"tree.php" });
 - api/link/treecollection_parse.md - loads data to the component from an inline data source
 - api/link/treecollection_refresh.md - repaints the whole view or a certain item
 - api/link/treecollection_refreshcursor.md - force repainting of all bound components with current cursor value
-- api/link/treecollection_remove.md - removes the specified item from datastore
+- api/link/treecollection_remove.md - removes the specified item/items from datastore
 - api/link/treecollection_removebind.md - disables data binding
 - api/link/treecollection_savebatch.md - makes simultaneous saving several components
 - api/link/treecollection_serialize.md - serializes data to a JSON object

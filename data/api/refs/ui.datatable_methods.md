@@ -107,7 +107,7 @@ Methods
 - api/ui.datatable_refreshfilter.md - rebuilds list of options in select filter
 - api/ui.datatable_refreshheadercontent.md - refreshes the header row of DataTable
 - api/ui.datatable_registerfilter.md - registers a filter element
-- api/link/ui.datatable_remove.md - removes the specified item from datastore
+- api/link/ui.datatable_remove.md - removes the specified item/items from datastore
 - api/ui.datatable_removecellcss.md - remove css class from the cell of datatable
 - api/link/ui.datatable_removecss.md - removes CSS class from a component item
 - api/ui.datatable_removerowcss.md - remove css class from the row

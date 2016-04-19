@@ -16,7 +16,7 @@ $$('dtable').attachEvent("onBeforeAreaAdd", function(){
 
 @template:	api_event
 @descr:
-The event can be blocked. Return false to block area adding
+The event can be blocked. Return false to block area adding.
 
 The properties of the area object are:
 
@@ -29,3 +29,4 @@ The properties of the area object are:
 
 @relatedapi:
 - api/ui.datatable_onafterareaadd_event.md
+- api/ui.datatable_onbeforearearemove_event.md

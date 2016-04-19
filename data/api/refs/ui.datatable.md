@@ -141,7 +141,7 @@ var datatable = webix.ui({
 - api/ui.datatable_refreshfilter.md - rebuilds list of options in select filter
 - api/ui.datatable_refreshheadercontent.md - refreshes the header row of DataTable
 - api/ui.datatable_registerfilter.md - registers a filter element
-- api/link/ui.datatable_remove.md - removes the specified item from datastore
+- api/link/ui.datatable_remove.md - removes the specified item/items from datastore
 - api/ui.datatable_removecellcss.md - remove css class from the cell of datatable
 - api/link/ui.datatable_removecss.md - removes CSS class from a component item
 - api/ui.datatable_removerowcss.md - remove css class from the row
@@ -185,6 +185,7 @@ var datatable = webix.ui({
 {{api
 - api/link/ui.datatable_onafteradd_event.md - fires after adding item to datastore
 - api/ui.datatable_onafterareaadd_event.md - fires after a select area was added
+- api/ui.datatable_onafterarearemove_event.md - 
 - api/ui.datatable_onafterblockselect_event.md - event occurs after block selection
 - api/ui.datatable_onaftercolumndrop_event.md - fires after the column has been dragged and dropped to the target position
 - api/ui.datatable_onaftercolumndroporder_event.md - fires after the column order was changed with the help of drag-and-drop
@@ -203,6 +204,7 @@ var datatable = webix.ui({
 - api/ui.datatable_onareadrag_event.md - fires when area selection is started
 - api/link/ui.datatable_onbeforeadd_event.md - fires before adding item to datastore
 - api/ui.datatable_onbeforeareaadd_event.md - fires before a select area is added
+- api/ui.datatable_onbeforearearemove_event.md - 
 - api/ui.datatable_onbeforeblockselect_event.md - event occurs before block selection
 - api/ui.datatable_onbeforecolumndrag_event.md - fires the monent you start dragging the column from its source potition
 - api/ui.datatable_onbeforecolumndrop_event.md - fires the moment you drop the column to its target position

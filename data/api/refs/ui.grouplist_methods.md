@@ -62,7 +62,7 @@ Methods
 - api/link/ui.grouplist_moveup.md - decreases the item index and moves the item to the new position
 - api/link/ui.grouplist_parse.md - loads data to the component from an inline data source
 - api/link/ui.grouplist_refresh.md - repaints the whole view or a certain item
-- api/link/ui.grouplist_remove.md - removes the specified item from datastore
+- api/link/ui.grouplist_remove.md - removes the specified item/items from datastore
 - api/link/ui.grouplist_removecss.md - removes CSS class from a component item
 - api/link/ui.grouplist_render.md - renders the specified item or the whole component
 - api/link/ui.grouplist_resize.md - adjusts the view to a new size

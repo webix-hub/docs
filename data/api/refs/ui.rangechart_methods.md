@@ -46,7 +46,7 @@ Methods
 - api/link/ui.rangechart_mapevent.md - routes events from one object to another
 - api/link/ui.rangechart_parse.md - loads data to the component from an inline data source
 - api/link/ui.rangechart_refresh.md - repaints the whole view or a certain item
-- api/link/ui.rangechart_remove.md - removes the specified item from datastore
+- api/link/ui.rangechart_remove.md - removes the specified item/items from datastore
 - api/link/ui.rangechart_removeallseries.md - removes all series from the chart
 - api/link/ui.rangechart_render.md - renders the specified item or the whole component
 - api/link/ui.rangechart_resize.md - adjusts the view to a new size

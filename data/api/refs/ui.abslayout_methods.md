@@ -1,0 +1,69 @@
+Methods
+=======
+
+{{api
+- api/link/ui.abslayout_addview.md - add new view to layout-like component
+- api/link/ui.abslayout_adjust.md - adjusts the component to the size of the parent HTML container
+- api/link/ui.abslayout_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.abslayout_bind.md - binds components
+- api/link/ui.abslayout_blockevent.md - temporarily blocks triggering of ALL events of the calling object
+- api/link/ui.abslayout_callevent.md - calls an inner event
+- api/link/ui.abslayout_define.md - redefines a single configuration property (or a hash of properties)
+- api/link/ui.abslayout_destructor.md - destructs the calling object
+- api/link/ui.abslayout_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
+- api/link/ui.abslayout_disable.md - disables the calling view (makes it dimmed and unclickable)
+- api/link/ui.abslayout_enable.md - enables the calling view that was disabled by the 'disable' method
+- api/link/ui.abslayout_getchildviews.md - returns child views of the calling component
+- api/link/ui.abslayout_getformview.md - returns master form for the input
+- api/link/ui.abslayout_getnode.md - returns the main HTML container for the calling object
+- api/link/ui.abslayout_getparentview.md - returns the parent view of the component
+- api/link/ui.abslayout_gettopparentview.md - returns top parent view
+- api/link/ui.abslayout_hasevent.md - checks whether the component has the specified event
+- api/link/ui.abslayout_hide.md - hides the view
+- api/link/ui.abslayout_index.md - returns the cell index in the layout collection
+- api/link/ui.abslayout_isenabled.md - checks whether the view is enabled
+- api/link/ui.abslayout_isvisible.md - checks whether the view is visible
+- api/link/ui.abslayout_mapevent.md - routes events from one object to another
+- api/link/ui.abslayout_reconstruct.md - rebuilds the layout
+- api/link/ui.abslayout_removeview.md - removes view from layout-like component
+- api/link/ui.abslayout_resize.md - adjusts the view to a new size
+- api/link/ui.abslayout_resizechildren.md - resizes all children of the calling component
+- api/link/ui.abslayout_show.md - makes the component visible
+- api/link/ui.abslayout_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
+- api/link/ui.abslayout_unbind.md - breaks "bind" link
+- api/link/ui.abslayout_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
+}}
+
+@index:
+- api/link/ui.abslayout_addview.md
+- api/link/ui.abslayout_adjust.md
+- api/link/ui.abslayout_attachevent.md
+- api/link/ui.abslayout_bind.md
+- api/link/ui.abslayout_blockevent.md
+- api/link/ui.abslayout_callevent.md
+- api/link/ui.abslayout_define.md
+- api/link/ui.abslayout_destructor.md
+- api/link/ui.abslayout_detachevent.md
+- api/link/ui.abslayout_disable.md
+- api/link/ui.abslayout_enable.md
+- api/link/ui.abslayout_getchildviews.md
+- api/link/ui.abslayout_getformview.md
+- api/link/ui.abslayout_getnode.md
+- api/link/ui.abslayout_getparentview.md
+- api/link/ui.abslayout_gettopparentview.md
+- api/link/ui.abslayout_hasevent.md
+- api/link/ui.abslayout_hide.md
+- api/link/ui.abslayout_index.md
+- api/link/ui.abslayout_isenabled.md
+- api/link/ui.abslayout_isvisible.md
+- api/link/ui.abslayout_mapevent.md
+- api/link/ui.abslayout_reconstruct.md
+- api/link/ui.abslayout_removeview.md
+- api/link/ui.abslayout_resize.md
+- api/link/ui.abslayout_resizechildren.md
+- api/link/ui.abslayout_show.md
+- api/link/ui.abslayout_showbatch.md
+- api/link/ui.abslayout_unbind.md
+- api/link/ui.abslayout_unblockevent.md
+
+

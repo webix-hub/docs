@@ -48,8 +48,6 @@ dummy stub
 - api/link/ui.excelviewer_editstop.md - stops the edit mode and closes all opened editors. The component is still editable
 - api/link/ui.excelviewer_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.excelviewer_exists.md - checks whether an item with the specified id exists
-- api/link/ui.excelviewer_exporttoexcel.md - exports data to an Excel file
-- api/link/ui.excelviewer_exporttopdf.md - exports data to a PDF file
 - api/link/ui.excelviewer_filter.md - filters the component
 - api/link/ui.excelviewer_filterbyall.md - refilters DataTable by all specified filters
 - api/link/ui.excelviewer_find.md - returns rows that match the criterion
@@ -114,7 +112,7 @@ dummy stub
 - api/link/ui.excelviewer_refreshfilter.md - rebuilds list of options in select filter
 - api/link/ui.excelviewer_refreshheadercontent.md - refreshes the header row of DataTable
 - api/link/ui.excelviewer_registerfilter.md - registers a filter element
-- api/link/ui.excelviewer_remove.md - removes the specified item from datastore
+- api/link/ui.excelviewer_remove.md - removes the specified item/items from datastore
 - api/link/ui.excelviewer_removecellcss.md - remove css class from the cell of datatable
 - api/link/ui.excelviewer_removecss.md - removes CSS class from a component item
 - api/link/ui.excelviewer_removerowcss.md - remove css class from the row
@@ -153,6 +151,7 @@ dummy stub
 {{api
 - api/link/ui.excelviewer_onafteradd_event.md - fires after adding item to datastore
 - api/link/ui.excelviewer_onafterareaadd_event.md - fires after a select area was added
+- api/link/ui.excelviewer_onafterarearemove_event.md - 
 - api/link/ui.excelviewer_onafterblockselect_event.md - event occurs after block selection
 - api/link/ui.excelviewer_onaftercolumndrop_event.md - fires after the column has been dragged and dropped to the target position
 - api/link/ui.excelviewer_onaftercolumndroporder_event.md - fires after the column order was changed with the help of drag-and-drop
@@ -171,6 +170,7 @@ dummy stub
 - api/link/ui.excelviewer_onareadrag_event.md - fires when area selection is started
 - api/link/ui.excelviewer_onbeforeadd_event.md - fires before adding item to datastore
 - api/link/ui.excelviewer_onbeforeareaadd_event.md - fires before a select area is added
+- api/link/ui.excelviewer_onbeforearearemove_event.md - 
 - api/link/ui.excelviewer_onbeforeblockselect_event.md - event occurs before block selection
 - api/link/ui.excelviewer_onbeforecolumndrag_event.md - fires the monent you start dragging the column from its source potition
 - api/link/ui.excelviewer_onbeforecolumndrop_event.md - fires the moment you drop the column to its target position

@@ -65,6 +65,7 @@ var context = webix.ui({
 - api/link/ui.context_mapevent.md - routes events from one object to another
 - api/link/ui.context_resize.md - adjusts the view to a new size
 - api/link/ui.context_resizechildren.md - resizes all children of the calling component
+- api/link/ui.context_setcontext.md - sets the master area for contextmenu
 - api/link/ui.context_setposition.md - sets window's position
 - api/link/ui.context_show.md - makes the component visible
 - api/link/ui.context_unbind.md - breaks "bind" link

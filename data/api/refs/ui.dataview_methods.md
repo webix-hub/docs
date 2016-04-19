@@ -59,7 +59,7 @@ Methods
 - api/link/ui.dataview_moveup.md - decreases the item index and moves the item to the new position
 - api/link/ui.dataview_parse.md - loads data to the component from an inline data source
 - api/link/ui.dataview_refresh.md - repaints the whole view or a certain item
-- api/link/ui.dataview_remove.md - removes the specified item from datastore
+- api/link/ui.dataview_remove.md - removes the specified item/items from datastore
 - api/link/ui.dataview_removecss.md - removes CSS class from a component item
 - api/link/ui.dataview_render.md - renders the specified item or the whole component
 - api/link/ui.dataview_resize.md - adjusts the view to a new size

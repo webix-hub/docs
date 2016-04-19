@@ -34,7 +34,7 @@ Methods
 - api/datastore_move.md - moves the specified item to the new position
 - api/datastore_provideapi.md - assigns methods (and events) of DataStore to an object
 - api/datastore_refresh.md - repaints the whole view or a certain item
-- api/datastore_remove.md - removes the specified item from datastore
+- api/datastore_remove.md - removes the specified item/items from datastore
 - api/datastore_removemark.md - removes a flag set for the specified item
 - api/datastore_scheme.md - sets hash of default values for properties
 - api/datastore_serialize.md - serializes data to a JSON object

@@ -25,4 +25,5 @@ The properties of the area object are:
 - handle - (boolean) optional, defines, whether selection will be resized with or without a handle
 
 @relatedapi:
-- api/ui.datatable_onbeforeareaadd_event.md
+api/ui.datatable_onbeforeareaadd_event.md
+api/ui.datatable_onafterarearemove_event.md

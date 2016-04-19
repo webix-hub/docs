@@ -9,6 +9,7 @@ Properties
 - api/link/ui.multicombo_borderless_config.md - used to hide the component borders
 - api/link/ui.multicombo_bottomlabel_config.md - sets a label under a control
 - api/link/ui.multicombo_bottompadding_config.md - sets the bottom offset of the control input
+- api/ui.multicombo_button_config.md - 
 - api/link/ui.multicombo_click_config.md - click action handler
 - api/link/ui.multicombo_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.multicombo_css_config.md - the name of a css class that will be applied to the view container
@@ -23,6 +24,7 @@ Properties
 - api/link/ui.multicombo_inputpadding_config.md - padding of text in the input
 - api/link/ui.multicombo_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.multicombo_invalidmessage_config.md - sets the text of a validation message
+- api/ui.multicombo_keeptext_config.md - 
 - api/link/ui.multicombo_label_config.md - the text label of the control
 - api/link/ui.multicombo_labelposition_config.md - positions label in relation to the control
 - api/link/ui.multicombo_labelwidth_config.md - the width of the label
@@ -64,6 +66,7 @@ Properties
 - api/link/ui.multicombo_borderless_config.md
 - api/link/ui.multicombo_bottomlabel_config.md
 - api/link/ui.multicombo_bottompadding_config.md
+- api/ui.multicombo_button_config.md
 - api/link/ui.multicombo_click_config.md
 - api/link/ui.multicombo_container_config.md
 - api/link/ui.multicombo_css_config.md
@@ -78,6 +81,7 @@ Properties
 - api/link/ui.multicombo_inputpadding_config.md
 - api/link/ui.multicombo_inputwidth_config.md
 - api/link/ui.multicombo_invalidmessage_config.md
+- api/ui.multicombo_keeptext_config.md
 - api/link/ui.multicombo_label_config.md
 - api/link/ui.multicombo_labelposition_config.md
 - api/link/ui.multicombo_labelwidth_config.md

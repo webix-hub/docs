@@ -50,7 +50,7 @@ var store = new webix.DataCollection({ url:"data.php" });
 - api/link/datacollection_parse.md - loads data to the component from an inline data source
 - api/link/datacollection_refresh.md - repaints the whole view or a certain item
 - api/link/datacollection_refreshcursor.md - force repainting of all bound components with current cursor value
-- api/link/datacollection_remove.md - removes the specified item from datastore
+- api/link/datacollection_remove.md - removes the specified item/items from datastore
 - api/link/datacollection_removebind.md - disables data binding
 - api/link/datacollection_savebatch.md - makes simultaneous saving several components
 - api/link/datacollection_serialize.md - serializes data to a JSON object

@@ -13,6 +13,7 @@ var combo = webix.ui({
 	view:"combo", 
 	label: 'Combo',
 	value:"One", 
+	yCount:"3", 
 	options:["One", "Two", "Three"]
 });
 ~~~

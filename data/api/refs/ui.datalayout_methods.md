@@ -1,0 +1,115 @@
+Methods
+=======
+
+{{api
+- api/link/ui.datalayout_add.md - adds an item to the store
+- api/link/ui.datalayout_addview.md - add new view to layout-like component
+- api/link/ui.datalayout_adjust.md - adjusts the component to the size of the parent HTML container
+- api/link/ui.datalayout_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.datalayout_bind.md - binds components
+- api/link/ui.datalayout_blockevent.md - temporarily blocks triggering of ALL events of the calling object
+- api/link/ui.datalayout_callevent.md - calls an inner event
+- api/link/ui.datalayout_clearall.md - removes all items from the component
+- api/link/ui.datalayout_count.md - returns the number of currently visible items
+- api/link/ui.datalayout_define.md - redefines a single configuration property (or a hash of properties)
+- api/link/ui.datalayout_destructor.md - destructs the calling object
+- api/link/ui.datalayout_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
+- api/link/ui.datalayout_disable.md - disables the calling view (makes it dimmed and unclickable)
+- api/link/ui.datalayout_enable.md - enables the calling view that was disabled by the 'disable' method
+- api/link/ui.datalayout_exists.md - checks whether an item with the specified id exists
+- api/link/ui.datalayout_filter.md - filters the component
+- api/link/ui.datalayout_find.md - returns rows that match the criterion
+- api/link/ui.datalayout_getchildviews.md - returns child views of the calling component
+- api/link/ui.datalayout_getfirstid.md - returns the ID of the first item
+- api/link/ui.datalayout_getformview.md - returns master form for the input
+- api/link/ui.datalayout_getidbyindex.md - returns the id of the item with the specified index
+- api/link/ui.datalayout_getindexbyid.md - returns the index of the item with the specified id
+- api/link/ui.datalayout_getitem.md - gets the object of the data item with the specified id
+- api/link/ui.datalayout_getlastid.md - returns the id of the last item
+- api/link/ui.datalayout_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
+- api/link/ui.datalayout_getnode.md - returns the main HTML container for the calling object
+- api/link/ui.datalayout_getparentview.md - returns the parent view of the component
+- api/link/ui.datalayout_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
+- api/link/ui.datalayout_gettopparentview.md - returns top parent view
+- api/link/ui.datalayout_hasevent.md - checks whether the component has the specified event
+- api/link/ui.datalayout_hide.md - hides the view
+- api/link/ui.datalayout_index.md - returns the cell index in the layout collection
+- api/link/ui.datalayout_isenabled.md - checks whether the view is enabled
+- api/link/ui.datalayout_isvisible.md - checks whether the view is visible
+- api/link/ui.datalayout_load.md - loads data from an external data source.
+- api/link/ui.datalayout_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
+- api/link/ui.datalayout_mapevent.md - routes events from one object to another
+- api/link/ui.datalayout_parse.md - loads data to the component from an inline data source
+- api/link/ui.datalayout_reconstruct.md - rebuilds the layout
+- api/link/ui.datalayout_refresh.md - repaints the whole view or a certain item
+- api/link/ui.datalayout_remove.md - removes the specified item/items from datastore
+- api/link/ui.datalayout_removeview.md - removes view from layout-like component
+- api/ui.datalayout_render.md - renders the datalayout content
+- api/link/ui.datalayout_resize.md - adjusts the view to a new size
+- api/link/ui.datalayout_resizechildren.md - resizes all children of the calling component
+- api/link/ui.datalayout_serialize.md - serializes data to a JSON object
+- api/link/ui.datalayout_show.md - makes the component visible
+- api/link/ui.datalayout_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
+- api/link/ui.datalayout_sort.md - sorts datastore
+- api/link/ui.datalayout_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.datalayout_unbind.md - breaks "bind" link
+- api/link/ui.datalayout_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
+- api/link/ui.datalayout_updateitem.md - sets properties of the data item
+}}
+
+@index:
+- api/link/ui.datalayout_add.md
+- api/link/ui.datalayout_addview.md
+- api/link/ui.datalayout_adjust.md
+- api/link/ui.datalayout_attachevent.md
+- api/link/ui.datalayout_bind.md
+- api/link/ui.datalayout_blockevent.md
+- api/link/ui.datalayout_callevent.md
+- api/link/ui.datalayout_clearall.md
+- api/link/ui.datalayout_count.md
+- api/link/ui.datalayout_define.md
+- api/link/ui.datalayout_destructor.md
+- api/link/ui.datalayout_detachevent.md
+- api/link/ui.datalayout_disable.md
+- api/link/ui.datalayout_enable.md
+- api/link/ui.datalayout_exists.md
+- api/link/ui.datalayout_filter.md
+- api/link/ui.datalayout_find.md
+- api/link/ui.datalayout_getchildviews.md
+- api/link/ui.datalayout_getfirstid.md
+- api/link/ui.datalayout_getformview.md
+- api/link/ui.datalayout_getidbyindex.md
+- api/link/ui.datalayout_getindexbyid.md
+- api/link/ui.datalayout_getitem.md
+- api/link/ui.datalayout_getlastid.md
+- api/link/ui.datalayout_getnextid.md
+- api/link/ui.datalayout_getnode.md
+- api/link/ui.datalayout_getparentview.md
+- api/link/ui.datalayout_getprevid.md
+- api/link/ui.datalayout_gettopparentview.md
+- api/link/ui.datalayout_hasevent.md
+- api/link/ui.datalayout_hide.md
+- api/link/ui.datalayout_index.md
+- api/link/ui.datalayout_isenabled.md
+- api/link/ui.datalayout_isvisible.md
+- api/link/ui.datalayout_load.md
+- api/link/ui.datalayout_loadnext.md
+- api/link/ui.datalayout_mapevent.md
+- api/link/ui.datalayout_parse.md
+- api/link/ui.datalayout_reconstruct.md
+- api/link/ui.datalayout_refresh.md
+- api/link/ui.datalayout_remove.md
+- api/link/ui.datalayout_removeview.md
+- api/ui.datalayout_render.md
+- api/link/ui.datalayout_resize.md
+- api/link/ui.datalayout_resizechildren.md
+- api/link/ui.datalayout_serialize.md
+- api/link/ui.datalayout_show.md
+- api/link/ui.datalayout_showbatch.md
+- api/link/ui.datalayout_sort.md
+- api/link/ui.datalayout_sync.md
+- api/link/ui.datalayout_unbind.md
+- api/link/ui.datalayout_unblockevent.md
+- api/link/ui.datalayout_updateitem.md
+
+

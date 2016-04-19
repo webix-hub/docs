@@ -116,7 +116,7 @@ var contextmenu = webix.ui({
 - api/link/ui.contextmenu_moveup.md - decreases the item index and moves the item to the new position
 - api/link/ui.contextmenu_parse.md - loads data to the component from an inline data source
 - api/link/ui.contextmenu_refresh.md - repaints the whole view or a certain item
-- api/link/ui.contextmenu_remove.md - removes the specified item from datastore
+- api/link/ui.contextmenu_remove.md - removes the specified item/items from datastore
 - api/link/ui.contextmenu_removecss.md - removes CSS class from a component item
 - api/link/ui.contextmenu_render.md - renders the specified item or the whole component
 - api/link/ui.contextmenu_resize.md - adjusts the view to a new size
@@ -125,6 +125,7 @@ var contextmenu = webix.ui({
 - api/link/ui.contextmenu_select.md - selects the specified item(s)
 - api/link/ui.contextmenu_selectall.md - selects all items or the specified range
 - api/link/ui.contextmenu_serialize.md - serializes data to a JSON object
+- api/link/ui.contextmenu_setcontext.md - sets the master area for contextmenu
 - api/link/ui.contextmenu_setpage.md - makes the specified page visible (assuming that the pager was defined )
 - api/link/ui.contextmenu_setposition.md - sets window's position
 - api/link/ui.contextmenu_show.md - makes the component visible

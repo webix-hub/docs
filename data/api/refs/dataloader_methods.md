@@ -19,7 +19,7 @@ Methods
 - api/dataloader_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
 - api/link/dataloader_parse.md - loads data to the component from an inline data source
 - api/link/dataloader_refresh.md - repaints the whole view or a certain item
-- api/link/dataloader_remove.md - removes the specified item from datastore
+- api/link/dataloader_remove.md - removes the specified item/items from datastore
 - api/link/dataloader_serialize.md - serializes data to a JSON object
 - api/link/dataloader_sort.md - sorts datastore
 - api/link/dataloader_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another

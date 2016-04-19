@@ -44,7 +44,7 @@ Methods
 - api/link/ui.chart_mapevent.md - routes events from one object to another
 - api/link/ui.chart_parse.md - loads data to the component from an inline data source
 - api/link/ui.chart_refresh.md - repaints the whole view or a certain item
-- api/link/ui.chart_remove.md - removes the specified item from datastore
+- api/link/ui.chart_remove.md - removes the specified item/items from datastore
 - api/ui.chart_removeallseries.md - removes all series from the chart
 - api/ui.chart_render.md - renders the specified item or the whole component
 - api/link/ui.chart_resize.md - adjusts the view to a new size

@@ -37,8 +37,6 @@ Methods
 - api/link/ui.excelviewer_editstop.md - stops the edit mode and closes all opened editors. The component is still editable
 - api/link/ui.excelviewer_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.excelviewer_exists.md - checks whether an item with the specified id exists
-- api/link/ui.excelviewer_exporttoexcel.md - exports data to an Excel file
-- api/link/ui.excelviewer_exporttopdf.md - exports data to a PDF file
 - api/link/ui.excelviewer_filter.md - filters the component
 - api/link/ui.excelviewer_filterbyall.md - refilters DataTable by all specified filters
 - api/link/ui.excelviewer_find.md - returns rows that match the criterion
@@ -103,7 +101,7 @@ Methods
 - api/link/ui.excelviewer_refreshfilter.md - rebuilds list of options in select filter
 - api/link/ui.excelviewer_refreshheadercontent.md - refreshes the header row of DataTable
 - api/link/ui.excelviewer_registerfilter.md - registers a filter element
-- api/link/ui.excelviewer_remove.md - removes the specified item from datastore
+- api/link/ui.excelviewer_remove.md - removes the specified item/items from datastore
 - api/link/ui.excelviewer_removecellcss.md - remove css class from the cell of datatable
 - api/link/ui.excelviewer_removecss.md - removes CSS class from a component item
 - api/link/ui.excelviewer_removerowcss.md - remove css class from the row
@@ -171,8 +169,6 @@ Methods
 - api/link/ui.excelviewer_editstop.md
 - api/link/ui.excelviewer_enable.md
 - api/link/ui.excelviewer_exists.md
-- api/link/ui.excelviewer_exporttoexcel.md
-- api/link/ui.excelviewer_exporttopdf.md
 - api/link/ui.excelviewer_filter.md
 - api/link/ui.excelviewer_filterbyall.md
 - api/link/ui.excelviewer_find.md

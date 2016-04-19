@@ -26,7 +26,7 @@ var rangechart = webix.ui({
 ### Where to start
 
 - [Overview of the RangeChart Widget](desktop/range_chart.md)
-- [Samples](http://docs.webix.com/samples/60_pro/12_rangechart/index.html)
+- [Samples](http://docs.webix.com/60_pro/12_rangechart/index.html)
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.chart.md">ui.chart</a>, <a href="api/refs/group.md">Group</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
@@ -79,7 +79,7 @@ var rangechart = webix.ui({
 - api/link/ui.rangechart_mapevent.md - routes events from one object to another
 - api/link/ui.rangechart_parse.md - loads data to the component from an inline data source
 - api/link/ui.rangechart_refresh.md - repaints the whole view or a certain item
-- api/link/ui.rangechart_remove.md - removes the specified item from datastore
+- api/link/ui.rangechart_remove.md - removes the specified item/items from datastore
 - api/link/ui.rangechart_removeallseries.md - removes all series from the chart
 - api/link/ui.rangechart_render.md - renders the specified item or the whole component
 - api/link/ui.rangechart_resize.md - adjusts the view to a new size

@@ -67,7 +67,7 @@ Methods
 - api/link/ui.menu_moveup.md - decreases the item index and moves the item to the new position
 - api/link/ui.menu_parse.md - loads data to the component from an inline data source
 - api/link/ui.menu_refresh.md - repaints the whole view or a certain item
-- api/link/ui.menu_remove.md - removes the specified item from datastore
+- api/link/ui.menu_remove.md - removes the specified item/items from datastore
 - api/link/ui.menu_removecss.md - removes CSS class from a component item
 - api/link/ui.menu_render.md - renders the specified item or the whole component
 - api/link/ui.menu_resize.md - adjusts the view to a new size

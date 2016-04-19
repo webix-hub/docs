@@ -16,10 +16,10 @@ showBatch
 	api/link/ui.accordion_visiblebatch_config.md
 @example:
 webix.ui({ view:"toolbar", id:"mybar", visibleBatch:"b2", cols:[ 
-			{view:"button",  value:"Save",   batch:"b1"}, 
-			{view:"button",  value:"Cancel", batch:"b1"}, 
-			{view:"button",  value:"Edit",   batch:"b2"},
-            {view:"button",  value:"Back",   batch:"b2"}]
+	{view:"button",  value:"Save",   batch:"b1"}, 
+	{view:"button",  value:"Cancel", batch:"b1"}, 
+	{view:"button",  value:"Edit",   batch:"b2"},
+	{view:"button",  value:"Back",   batch:"b2"}]
 });
 ...
 $$("mybar").showBatch("b1");          
