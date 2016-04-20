@@ -146,7 +146,7 @@ Spreadsheet possesses an advanced formula editor. Its main features are:
 
 <img src="spreadsheet/formula_editor.png">
 
-It's easy to enable the formula editor, just set the liveEditor property to true in the spreadsheet configuration:
+It's easy to enable the formula editor, just set the api/ui.spreadsheet_liveeditor_config.md property to true in the spreadsheet configuration:
 
 ~~~js
 webix.ui({

@@ -9,7 +9,7 @@ onAfterUnSelect
 
 @example: 
 	
-some.attachEvent("onAfterUnselect", function(data){
+some.attachEvent("onAfterUnSelect", function(data){
     //... some code here ... 
 });
 

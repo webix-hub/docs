@@ -16,7 +16,6 @@ Properties
 - api/link/ui.treetable_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.treetable_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.treetable_data_config.md - JavaScript array containing data for the component
-- api/link/ui.treetable_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.treetable_datafetch_config.md - defines the number of records that will be loaded into datatable during the next dynamic loading call
 - api/link/ui.treetable_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.treetable_datatype_config.md - the type of loaded data
@@ -105,7 +104,6 @@ Properties
 - api/link/ui.treetable_container_config.md
 - api/link/ui.treetable_css_config.md
 - api/link/ui.treetable_data_config.md
-- api/link/ui.treetable_datafeed_config.md
 - api/link/ui.treetable_datafetch_config.md
 - api/link/ui.treetable_datathrottle_config.md
 - api/link/ui.treetable_datatype_config.md

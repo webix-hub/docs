@@ -2,13 +2,13 @@ pointerevents
 =============
 
 @todo:
-	add description and type
+	check!
 
 
 @short:
-	indicates whether [pointer-events](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) are supported
+	indicates whether pointer-events are supported
 
-@type:
+@type:boolean
 
 @example:
 
@@ -18,5 +18,5 @@ webix.env.pointerevents = (
 
 @template:	api_config
 @descr:
-
+You can read about pointer-events [here](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) 
 

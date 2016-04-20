@@ -11,8 +11,8 @@ onAfterBlockSelect
 
 @example:
 
-$$("dt").attachEvent("onAfterBlockSelect", function(start, end){
-    
+$$("datatable").attachEvent("onAfterBlockSelect", function(start, end){
+    // some code
 });
 
 @template:	api_event

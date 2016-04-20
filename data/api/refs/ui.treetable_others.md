@@ -34,7 +34,6 @@ Others
 - api/link/ui.treetable_$dragout_other.md
 - api/link/ui.treetable_$drop_other.md
 - api/link/ui.treetable_$dropallow_other.md
-- api/ui.treetable_$exportview_other.md
 - api/link/ui.treetable_$getsize_other.md
 - api/link/ui.treetable_$height_other.md
 - api/link/ui.treetable_$scope_other.md
