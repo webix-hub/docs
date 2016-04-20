@@ -36,7 +36,8 @@ Enabling formula editor
 ------------------------------
 
 You can add an inline editor of formulas in Spreadsheet. It allows creating a new formula and edit the existing one in a cell.
-There's the liveEditor property in the Spreadsheet API that will let you to switch the editor on. You just need to set it to true in the config.
+
+There's the *liveEditor* property in the Spreadsheet API that will let you to switch the editor on. You just need to set it to true in the config.
 
 ~~~js
 webix.ui({
@@ -46,6 +47,7 @@ webix.ui({
 });
 ~~~
 
+You can find a more detailed description of the editor in the [corresponding section](spreadsheet/math.md#formulaeditor).
 
 Setting the count of rows and columns
 ----------------------------------

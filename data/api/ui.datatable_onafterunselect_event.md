@@ -1,9 +1,6 @@
 onAfterUnSelect
 =============
 
-onAfterUnselect
-=============
-
 @short:
 	fires after a cell is unselected
 

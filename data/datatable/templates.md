@@ -145,7 +145,7 @@ Through the template you can define common elements for the cells belonging to o
 - radio buttons;
 - "edit" cons;
 - "trash" icons;
-- [sparklines](datatable/templates.md#usingsparklines).
+- [sparklines](datatable/sparklines.md).
 
 {{note
 You can define additional common elements within the [component type](desktop/type.md#definingcommonelements). 
@@ -208,40 +208,10 @@ As you can see, **common.checkbox()** and **common.radio()** functions take four
 - **value** - current checkbox/radio state;
 - **config** - column configuration object. 
 
-##Using sparklines
-
-~~~js
-webix.ready(function(){
-	grida = webix.ui({
-	container:"testA",
-	view:"datatable",
-	columns:[
-		{ id:"name", header:"Name", width:150},
-		{ id:"income", header:"Income", template:function(obj){
-			var arr = obj.income;
-			var sum = 0;
-			for(var i =0; i< arr.length; i++)
-			sum +=  arr[i];
-			return sum?(sum/arr.length).toFixed(2):0;
-		}, width:120},
-		// sparklines
-		{ id:"income", header:"Income per Period", template:  "{common.sparklines()}", width:160}
-	],
-	autoheight:true,
-	autowidth:true,
-	data: [
-		{id: 1, name: "Austria", income: [150,200,170,210,250,190,225,205,160,220,190,230] },
-		{id: 2, name: "France", income: [230,300,220,270,210,250,230,300,220,270,210,250] },
-		{id: 3, name: "Germany", income: [250,240,300,230,270,280,230,250,220,290,240,270] },
-		{id: 4, name: "UK", income: [280,230,280,290,260,210,230,220,280,210,240,280] }
-	]
-});
-~~~
-
-{{sample 15_datatable/20_templates/09_sparklines.html}}
 
 @keyword:
 	format, template, button
 
 @index:
 - datatable/templates_syntax.md
+- datatable/sparklines.md

@@ -135,3 +135,25 @@ The standard deviation is a measure of how widely values are dispersed from the 
 {{sample
 65_spreadsheet/01_basic/03_math.html
 }}
+
+Formula Editor
+----------------
+
+Spreadsheet possesses an advanced formula editor. Its main features are:
+
+- providing the list of possible formulas on entering the first letter of the formula name in the input 
+- entering the cells references either by selecting a range of cells or by writing them manually
+
+<img src="spreadsheet/formula_editor.png">
+
+It's easy to enable the formula editor, just set the liveEditor property to true in the spreadsheet configuration:
+
+~~~js
+webix.ui({
+    view: "spreadsheet",
+    data: base_data,
+    liveEditor: true
+});
+~~~
+
+{{sample 65_spreadsheet/01_basic/07_formula.html}}

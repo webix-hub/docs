@@ -380,7 +380,6 @@ var treetable = webix.ui({
 - api/link/ui.treetable_$dragout_other.md - method called when item moved out of possible drop landing during dnd
 - api/link/ui.treetable_$drop_other.md - method called when item dragged and dropped on valid target
 - api/link/ui.treetable_$dropallow_other.md - can be redefine if you need custom drop rules
-- api/ui.treetable_$exportview_other.md - 
 - api/link/ui.treetable_$getsize_other.md - returns the current size of the component
 - api/link/ui.treetable_$height_other.md - current height of the view
 - api/link/ui.treetable_$scope_other.md - scope for resolving event and method names
