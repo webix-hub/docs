@@ -18,8 +18,7 @@ You can define a built-in filter in the header or footer of a column. Webix offe
 - additionally, in the Webix Pro edition:    
 	- **richSelectFilter**;
     - **multiSelectFilter**;
-	- **datepickerFilter**;
-    - **serverMultiSelectFilter**. (multiselect-based)
+	- **datepickerFilter**.
     
 All of them are described in detail below.     
 
