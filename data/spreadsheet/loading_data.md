@@ -283,4 +283,5 @@ Parameters of requests differ depending on the operation handler:
 
 SpreadSheet is a purely client-side widget, therefore you can implement any logic at the backend. You can find several demos that implement PHP data in the SpreadSheet package.
 
-There are also packages for implementing PHP, Node.js and .Net data available on github (link).
+There are also packages for implementing [Node.js](https://github.com/webix-hub/spreadsheet-nodejs-demo) 
+and [.Net](https://github.com/webix-hub/spreadsheet-net-demo) data available on github.
