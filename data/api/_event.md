@@ -7,10 +7,10 @@ event
 - node		HTMLElement/string		the HTML node or its id
 - event		string		the name of an HTML event (without the 'on' prefix)
 - handler	function	the event handler
-* master	object		an object that the <i>this</i> keyword refers to
+* context	object		context object with additional setting (described below)
 
 @returns:
-- id	id		the event handler id (can be used by the <i>eventRemove()</i> method) 
+- id	id		event handler ID (can be used by the <>eventRemove()</i> method) 
 
 @example:
 // adds a handler for the 'onclick' event of some HTML element
@@ -23,13 +23,19 @@ webix.event("divId", "click", function(e){
 webix.event($$("list").getNode(), "keyup", function(e){
 	//e - a native event object
 	do_something();
-});
+}, {master:$$("list")});
 
 @relatedapi: api/_eventRemove.md
 @relatedsample: 
 	15_datatable/11_sizing/03_resize_win.html
 @related:
-	desktop/dimensions.md
+	desktop/event_handling.md
 @template:	api_method
 @descr:
+
+The optional **context** paramater may include: 
+
+- **master** - (object) an object that the <i>this</i> keyword refers to;
+- **capture** - (boolean) a flag that indicates on which stage (capture or bubble) event should be captured. *false* by default;
+- **id** - (string) event handler ID (if not set, will be generated automatically).
 

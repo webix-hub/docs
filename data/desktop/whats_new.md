@@ -1,6 +1,7 @@
 What's New
 ====================
 
+- desktop/whats_new_3_3.md <span class="release_date"> April 26, 2016</span>
 - desktop/whats_new_3_2.md <span class="release_date"> February 24, 2016</span>
 - desktop/whats_new_3_1.md <span class="release_date"> November 24, 2015</span>
 - desktop/whats_new_3_0.md <span class="release_date"> September 22, 2015</span>
@@ -25,6 +26,7 @@ What's New
 
 @index:
 
+- desktop/whats_new_3_3.md
 - desktop/whats_new_3_2.md
 - desktop/whats_new_3_1.md
 - desktop/whats_new_3_0.md

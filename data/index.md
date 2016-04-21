@@ -7,15 +7,14 @@ Start
 <div class='index-pc'></div>
 <div class='index-board'>
 
-<h2>Meet Webix 3.2!</h2>
+<h2>Meet Webix 3.3!</h2>
 <ul>
-	<li><a href="desktop/spreadsheet.md">Spreadsheet</a> UI extension and <a href="desktop/range_chart.md">Rangechart</a> widget</li>
-    <li><a href="desktop/undo.md">Undo</a> functionality for all data widgets</li>
-    <li>Export <a href="desktop/export_pdf.md">to PDF</a> for all data widgets</li>
-    
+	<li>New layout widgets: <a href="desktop/absolute_layout.md">AbsLayout</a> and <a href="desktop/data_layout.md">DataLayout</a></li>
+	<li><a href="desktop/spreadsheet.md">Drag-n-drop</a> for component items on touch devices</li>
+    <li><a href="datatable/sparklines.md">Sparklines</a> for DataTable and TreeTable</li>
 </ul>
 
-<p> and <a href="desktop/whats_new_3_2.md">many more...</a></p>
+<p> and <a href="desktop/whats_new_3_3.md">many more...</a></p>
 <a href='http://webix.com/download/' class='index-download' title='Download Webix'></a>
 </div>
 

@@ -359,7 +359,7 @@ webix.attachEvent("onRotate", function(mode){
 
 ##Handling of Native DOM Events
 
-Native DOM events can be handled with the help of Webix **event();** and **eventRemove()** functions that are called from **webix** object:
+Native DOM events can be handled with the help of Webix [event()](api/_event.md) and [eventRemove()](api/_eventremove.md) functions that are called from **webix** object:
 
 ~~~js
 var eventId = webix.event("divId", "click", function(e){
@@ -373,6 +373,10 @@ webix.eventRemove(eventId);
 
 - **divID** - the ID of an HTML node you want to attach event to;
 - **click** - event name (note that they are used here without *on* prefix);
-- **handler** - function to run (its **e** argument points to native event object). 
+- **handler** - function to run (its **e** argument points to native event object);
+- **context** - (optional) additional settings: 
+	- **master** - (object) an object that the <i>this</i> keyword refers to;
+	- **capture** - (boolean) a flag that indicates on which stage (capture or bubble) event should be captured. *false* by default;
+	- **id** - (string) event handler ID (if not set, will be generated automatically).
 
 @complexity:2

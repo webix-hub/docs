@@ -39,7 +39,7 @@ Sending Headers
 ~~~js
 webix.attachEvent("onBeforeAjax", function(mode, url, data, request, headers){
   headers["Content-type"]= "application/json";
-})
+});
 ~~~
 
 Note that Webix [Ajax module](helpers/ajax_operations.md) (described below) features a **built-in functionality** for sending **headers** with serverside requests. 

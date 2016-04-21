@@ -120,7 +120,16 @@ webix.ui({
 Note that you must select any value from a suggest list, since it's required by combo and richselect nature. 
 }}
 
-##Suggest list with client-side data
+##Loading data to Suggest list
+
+Normally, a dataset for suggest items contains an array of objects, each of which may have the following properties: 
+
+- **id** - item ID (if not set, will be generated automatically);
+- **value** - the property to display in suggest items (if another [template](desktop/advanced_combo.md#changingoptiontemplate) is not set);
+- **$empty** - indicates that an item contains not data (blank item);
+- any other properties.
+
+###Suggest list with client-side data
 
 On the client side the list with suggestions can be stored either of [supported formats](desktop/data_types.md). It may be put directly into **data** property (as shown above) or in a variable declared beforehand. 
 
@@ -138,7 +147,7 @@ var countries = [
 
 {{sample 13_form/01_controls/15_suggest_text.html }}
 
-##Suggest list with server-side data
+###Suggest list with server-side data
 
 At the same time, data can come from server side. All you need is to specify the script file that will get the data from the database. 
 

@@ -350,7 +350,7 @@ There exists no possibility to send headers with DataProcessor requests as they 
 
 ~~~js
 webix.callEvent("onBeforeAjax", function(mode, url, data, request, headers){
- 	request.setRequestHeader("Content-type","application/json");
+ 	headers["Content-type"]= "application/json";
 });
 ~~~
 
