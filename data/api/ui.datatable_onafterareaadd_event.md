@@ -9,7 +9,7 @@ onAfterAreaAdd
 - area			object 			the area object
 
 @example:
-$$('dtable').attachEvent("onAfterAreaAdd", function(){
+$$('dtable').attachEvent("onAfterAreaAdd", function(area){
 	// some code here
 });
 

@@ -156,4 +156,4 @@ webix.ui({
 });
 ~~~
 
-{{sample 65_spreadsheet/01_basic/07_formula.html}}
+{{sample spreadsheet/01_basic/07_formula.html}}

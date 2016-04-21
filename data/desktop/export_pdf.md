@@ -121,13 +121,15 @@ webix.toPDF($$("mylist"), {
 Styling the exported data
 -----------------------
 
-You can tune the appearance of elements in the exported PDF document.
+Since data export to PDF is implemented with the help of the [third-party library](https://github.com/rkusa/pdfjs), 
+you can tune the appearance of elements in the exported PDF document using properties described 
+in its [documentation](https://github.com/rkusa/pdfjs/tree/master/docs). 
 
 ###Configuring the document's header
 
 
 To configure the header of the exported PDF document, you can set a configuration object as a value of the **docHeader** property.
-Inside this object beside the text string specify all the needed properties, e.g. define the text alignment and color.
+Inside this object besides the text string specify all the needed properties, e.g. define the text alignment and color.
 
 An example config may look as:
 
@@ -164,9 +166,11 @@ webix.toPDF($$("mylist"), {
 Thus, you can configure the image's alignment, as well as its width and the height. More options are enumerated in the [specific documentation](https://github.com/rkusa/pdfjs/tree/master/docs) 
 (see the "document/imageimg-opts" section).
 
+{{sample 15_datatable/10_export/07_pdf_style.html}}
+
 ###Configuring the document's table
 
-It's also quite easy to configure the look of the resulting table with data. You can manage the appearance of the following component's elements to get the desired result:
+It's also quite easy to configure the look of the resulting table with data. You can manage the table's elements to get the desired result:
 
 - the table's header, e.g. set text alignment, the font size, the background color and the color of the text:
 
@@ -203,7 +207,9 @@ webix.toPDF($$("mylist"), {
 });
 ~~~
 
-More possible configuration properties are described in the [corresponding documentation](https://github.com/rkusa/pdfjs/tree/master/docs)
-(follow the "document/tableopts" section)
-
 {{sample 15_datatable/10_export/07_pdf_style.html}}
+
+More possible configuration properties are described in the [corresponding documentation](https://github.com/rkusa/pdfjs/tree/master/docs)
+(follow the "document/tableopts" section).
+
+

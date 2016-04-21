@@ -12,11 +12,10 @@ radius
 
 @example:
 
-webix.Sparklines = {
-    radius: 2
-}
+webix.Sparklines.radius = 2;
 
 @template:	api_config
 @descr:
 
-
+@related:
+	datatable/sparklines.md

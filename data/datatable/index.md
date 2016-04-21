@@ -67,6 +67,7 @@ still being  very fast handling  thousands of records.<a href="datatable/overvie
 		    </h4>
 		    <ul id="manipulations_sublist">
 				<li><a href="datatable/templates.md">Cell templates</a></li>
+                <li><a href="datatable/sparklines.md">Sparklines</a></li>                
                 <li><a href="datatable/formatting.md">Number and date formatting</a></li>
 				<li><a href="datatable/styling.md">Styling</a></li>
 				<li><a href="datatable/frozen_columns.md">Split mode or 'frozen columns'</a></li>
