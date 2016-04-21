@@ -11,7 +11,7 @@ onAfterAreaRemove
 - area_name		string		the name used to address to an area to change or to delete it
 
 @example:
-$$('dtable').attachEvent("onAfterAreaRemove", function(name){
+$$('dtable').attachEvent("onAfterAreaRemove", function(area_name){
     // some code here
 });
 

@@ -52,14 +52,14 @@ webix.ui({
 
 ##Using ActiveContent Module
 
-[ActiveContent](api/refs/activecontent.md) module lets developers get rid of drawing interactive elements themselves and makes it possible to use existing Webix controls for it. In other words it allows for inserting
-one Webix view into another. (Normally, it goes only for [layouts](desktop/building_app_architecture.md)). 
+[ActiveContent](api/refs/activecontent.md) module lets developers get rid of drawing interactive elements themselves and makes it possible to use existing Webix controls for it. 
+In other words, it allows inserting controls into views. (Normally, it goes only for [layouts](desktop/building_app_architecture.md)). 
 
 <img src="desktop/list_active_content.png"/>
 
 {{sample 05_list/15_active_content.html}}
 
-First of all the **ActiveContent** module should be added to the needed component by extending its default functionality:
+First of all, the **ActiveContent** module should be added to the needed component by extending its default functionality:
 
 ~~~js
 webix.protoUI({

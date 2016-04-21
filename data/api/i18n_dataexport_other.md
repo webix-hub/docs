@@ -1,12 +1,8 @@
 dataExport
 =============
 
-@todo:
-	check 
-
-
 @short:
-	sets text labels for the parts of the page numbering line
+	sets text labels for the parts of the page numbering line in the exported PDF document
 
 @type: object
 
@@ -21,7 +17,10 @@ webix.i18n.setLocale();
 @descr:
 You need to call api/i18n_setlocale.md to apply the new format settings.
 
-@related:desktop/localization.md
+@related:
+desktop/localization.md
+desktop/export_pdf.md
+
 @relatedapi:api/i18n_setlocale.md
 
 

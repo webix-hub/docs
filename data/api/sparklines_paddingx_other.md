@@ -1,22 +1,19 @@
 paddingX
 =============
 
-@todo:
-	check 
-
+@todo: check
 
 @short:
-	sets the X position of the point in the sparkline
+	horizontal padding in pixels
 
 @type:number
 
 @example:
 
-webix.Sparklines = {
-	paddingX: 6,
-}
+webix.Sparklines.paddingX = 6;
 
 @template:	api_config
 @descr:
 
-
+@related:
+	datatable/sparklines.md

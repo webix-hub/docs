@@ -144,7 +144,7 @@ Text labels for some parts of webix components that are more likely to be change
 
 **Data Export**
 
-Text labels used in the page numbering line in the footer of an exported PDF document
+Text labels used in the page numbering line in the footer of the [exported PDF document](desktop/export_pdf.md). 
 
 - **page** - text label of the "Page" part in the page numbering line
 - **of** - text label of the "of" part in the page numbering line
