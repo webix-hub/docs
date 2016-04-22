@@ -1,22 +1,19 @@
 pointerevents
 =============
 
-@todo:
-	check!
-
-
 @short:
-	indicates whether pointer-events are supported
+	indicates whether CSS pointer-events property is supported in the current browser
 
 @type:boolean
 
 @example:
 
-webix.env.pointerevents = (
-  !webix.env.isIE ||(new RegExp("Trident/.*rv:11")).exec(navigator.userAgent) !== null
-);
+if (webix.env.pointerevents)
+	do_something();
+
+@defined:	env	
 
 @template:	api_config
 @descr:
-You can read about pointer-events [here](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) 
+You can read about pointer-events [here](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events). 
 

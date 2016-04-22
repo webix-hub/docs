@@ -1,10 +1,6 @@
 button
 =============
 
-@todo:
-	check!
-
-
 @short:
 	defines whether the "Select" button will be displayed in the options list;
 	

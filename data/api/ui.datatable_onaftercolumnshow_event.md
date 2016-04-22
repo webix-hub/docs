@@ -1,9 +1,6 @@
 onAfterColumnShow
 =============
 
-@todo:
-	check
-
 @short:
 	fires when a column is shown in datatable
 
@@ -12,7 +9,7 @@ onAfterColumnShow
 - id		string/number		the column id
 
 @example:
-$$("datatable1").attachEvent("onAfterColumnHide", function(id){
+$$("datatable1").attachEvent("onAfterColumnShow", function(id){
 	// some code 
 });
 
@@ -22,3 +19,4 @@ $$("datatable1").attachEvent("onAfterColumnHide", function(id){
 @relatedapi:
 
 api/ui.datatable_onbeforecolumnshow_event.md
+api/ui.datatable_showcolumn.md

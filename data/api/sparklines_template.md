@@ -1,8 +1,6 @@
 template
 =============
 
-@todo:check
-
 @short:
 	returns HTML string for sparklines in a cell 
 
@@ -27,3 +25,5 @@ var html = webix.Sparklines.template(item,common,data,column,index);
 
 @related:
 	datatable/sparklines.md
+@relatedsample:
+	15_datatable/20_templates/09_sparklines.html

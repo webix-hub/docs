@@ -21,6 +21,8 @@ While data of the hidden column still can be accessed, api calls against it will
 
 @relatedapi:
 	api/ui.datatable_showcolumn.md
+    api/ui.datatable_onbeforecolumnhide_event.md
+    api/ui.datatable_onaftercolumnhide_event.md
 @related:
 	datatable/columns_configuration.md#hidingshowingcolumns
 

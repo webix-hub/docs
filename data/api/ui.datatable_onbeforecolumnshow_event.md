@@ -1,9 +1,6 @@
 onBeforeColumnShow
 =============
 
-@todo:
-	check
-
 @short:
 	fires before a column is shown in datatable
 
@@ -19,5 +16,8 @@ $$("datatable1").attachEvent("onBeforeColumnShow", function(id){
 @template:	api_event
 @descr:
 
+The event is cancellable. If a handler returns *false*, the column will not be shown. 
+
 @relatedapi:
-api/ui.datatable_onaftercolumnshow_event.md
+- api/ui.datatable_onaftercolumnshow_event.md
+- api/ui.datatable_showcolumn.md

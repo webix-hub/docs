@@ -1,9 +1,6 @@
 onBeforeColumnHide
 =============
 
-@todo:
-	check 
-
 @short:
 	fires before a column is hidden in datatable
 
@@ -18,6 +15,10 @@ $$("datatable1").attachEvent("onBeforeColumnHide", function(id){
 
 @template:	api_event
 @descr:
+
+The event is cancellable. If a handler returns *false*, the column will not be hidden. 
+
 @relatedapi:
 api/ui.datatable_onaftercolumnhide_event.md
+api/ui.datatable_hidecolumn.md
 

@@ -1,24 +1,16 @@
 setContext
 =============
 
-
-@todo:
-	check!
-
 @short:
-allows customizing target context properties: view object and item id
+allows settings master properties: view object and item id
 
 @params:
-- view		object				the view object
-- id		string/number		the item id
-
-
+- context	object		context object 
 
 @example:
 menu.setContext({obj: $$("list"), id: "itemId"})
 
 @template:	api_method
-@descr:
 
 @relatedapi:
 	api/contexthelper_getcontext.md
@@ -26,3 +18,13 @@ menu.setContext({obj: $$("list"), id: "itemId"})
 @related:
 	desktop/context.md
     desktop/contextmenu.md
+    
+@descr:   
+
+Target context object includes:
+
+- obj - (object) master view object for which context or contextmenu is defined
+- id - (string/number) id of an item in the master view
+
+    
+The object can be retrieved by the api/contexthelper_getcontext.md method.

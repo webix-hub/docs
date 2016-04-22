@@ -1,14 +1,11 @@
 onAfterAreaRemove
 =============
 
-@todo:
-	check!
-
 @short:
 	fires after a select area was removed
 
 @params:
-- area_name		string		the name used to address to an area to change or to delete it
+- area_name		string		the name used to address a select area to change or delete it
 
 @example:
 $$('dtable').attachEvent("onAfterAreaRemove", function(area_name){
@@ -19,5 +16,5 @@ $$('dtable').attachEvent("onAfterAreaRemove", function(area_name){
 @descr:
 
 @relatedapi:
-api/ui.datatable_onafterareaadd_event.md
-api/ui.datatable_onbeforearearemove_event.md
+	api/ui.datatable_onbeforearearemove_event.md
+	api/ui.datatable_removeselectarea.md

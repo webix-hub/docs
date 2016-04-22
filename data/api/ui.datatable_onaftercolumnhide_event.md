@@ -1,8 +1,6 @@
 onAfterColumnHide
 =============
 
-@todo: check
-
 @short:
 	fires after a column was hidden in datatable
 
@@ -19,4 +17,5 @@ $$("datatable1").attachEvent("onAfterColumnHide", function(id){
 @descr:
 
 @relatedapi:
+api/ui.datatable_hidecolumn.md
 api/ui.datatable_onbeforecolumnhide_event.md
