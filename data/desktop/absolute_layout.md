@@ -2,19 +2,12 @@ Absolute Layout
 =================
 
 The *abslayout* view presents a layout that allows specifying the exact location of elements inside it, without using usual rows/columns configuration.
-The child elements are placed into layout's cells and their sizes are set by hardcoded values.
+
+The child elements are placed into layout's cells and their sizes are set by hardcoded values. For each child view the exact top and left positions should be specified:
+
 
 <img src="desktop/absolute_layout.png">
-
-So, you need to define the containter first:
-
-~~~html
-<div id='layout_div' style='width:800px; height:600px; margin:20px;'></div>
-~~~
-
-Then create the "abslayout" view inside of the container and set the necessary elements inside of the layout. For each child view specify the 
-exact top and left positions:
-
+ 
 ~~~js
 webix.ui({
 	container:"layout_div",
