@@ -21,7 +21,7 @@ menu.setContext({obj: $$("list"), id: "itemId"})
 @descr:
 
 @relatedapi:
-api/contexthelper_getcontext.md
+	api/contexthelper_getcontext.md
 
 @related:
 	desktop/context.md

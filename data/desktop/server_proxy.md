@@ -15,7 +15,10 @@ There's a list of ready-to-use Webix proxy objects that can be used by adding pr
 - **sync** - for loading data via a synchronous Ajax request (by default, loading is performed by an asynchronous request);
 - **indexdb** - for working with [indexedDB](desktop/server_indexdb.md) in-browser database storage;
 - **faye** - for enabling live data update on all clients currently using the application. [Look here for details](desktop/server_faye.md);
-- **binary** - for loading and reading files as arraybuffer.
+- **binary** - for loading and reading files as arraybuffer;
+- **json** - for sending JSON data to server via RESTful "save" requests with "application/json" content type.
+
+
 
 Prefixes are used before the path to you serverside script:
 
@@ -28,6 +31,10 @@ var list = {
 
 grid.load("rest->load.php")
 ~~~
+
+{{note
+You can browse the samples of Proxy usage by a [link](http://docs.webix.com/samples/40_serverside/03_php_custom/index.html).
+}}
 
 ##Using methods of Built-in Proxy Objects
 
