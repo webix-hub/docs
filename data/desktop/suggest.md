@@ -46,7 +46,7 @@ or ignore the suggest list and type you own text.
 **Suggest list and Combo**
 
 When suggest list is combined with **[combo](desktop/combo.md)** control (editor) its values are automatically filtered according to the letters 
-you have already typed. You can either select an option fromt he list or type the text to match any of the options. You cannot ignore the suggest list and enter you own text.
+you have already typed. You can either select an option from the list or type the text to match any of the options. You cannot ignore the suggest list and enter you own text.
 
 **Suggest list and Richselect**
 
@@ -207,7 +207,7 @@ webix.ui({
 
 {{sample 15_datatable/04_editing/14_autosuggest.html}}
 
-At the same time, you can provide all the logic by API, which allows customizing suggest behaviour: 
+At the same time, you can provide all the logic by API, which allows customizing suggest behavior: 
 
 - create a suggest list as **separate view** and set options for it:
 - link suggest list to the input field of the editor object with the **linkInput** method:
@@ -242,7 +242,7 @@ gridb.attachEvent("onAfterEditStop", function(object){
 {{sample 15_datatable/04_editing/14_autosuggest.html}}
 
 {{note
-Suggest list can as well be attached to **combo** and **richselect** editors, yet then it looses its status of 'adviser' and selection from it becomes compulsory.
+Suggest list can as well be attached to **combo** and **richselect** editors, yet then it loses its status of 'adviser' and selection from it becomes compulsory.
 }}
 
 ~~~js
@@ -290,7 +290,7 @@ As well as for a suggest defined as a control/editor property:
 ~~~
 
 - Popup settings include typical [popup properties](api/refs/ui.popup_props.md) and suggest-specific ones, like [fitMaster](api/ui.suggest_fitmaster_config.md), or **url** and **data**;
-- List settings inlcude typical [list properties](api/refs/ui.list_props.md). 
+- List settings include typical [list properties](api/refs/ui.list_props.md). 
 
 {{note
 Note that an suggest list configuration can be set via either **suggest** or **options** property for  [richselect](desktop/richselect.md), [combo](desktop/combo.md),
@@ -359,7 +359,7 @@ The functionality is available in **Webix Pro** edition only.
 Webix offers advanced suggest controls for width extra functionality and greater visual effect:
 
 - **checksuggest** - a suggest control based on Webix [list](desktop/list.md). Features checkboxes that enable multiple choice;
-- **multisuggest** - a suggest control based on Webix [list](desktop/list.md) with the ability to select **mupliple items** at a time;
+- **multisuggest** - a suggest control based on Webix [list](desktop/list.md) with the ability to select **multiple items** at a time;
 - **gridsuggest** - a suggest control based on Webix [datatable](datatable/index.md);
 - **datasuggest** - a suggest control based on Webix [dataview](desktop/dataview.md).
 
@@ -380,7 +380,7 @@ Checksuggest control is used in a number of **PRO** controls. You can find its i
 
 Multisuggest control is used in a [multiselect component editor](desktop/editing.md#multiselect). 
 
-If needed, it can substitute checksuggest for the above-mentioned used cases. See desktop/advanced_combo.md for details.
+If needed, it can substitute checksuggest for the above-mentioned use cases. See desktop/advanced_combo.md for details.
 
 ###Gridsuggest 
 

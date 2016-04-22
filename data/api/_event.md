@@ -10,7 +10,7 @@ event
 * context	object		context object with additional setting (described below)
 
 @returns:
-- id	id		event handler ID (can be used by the <>eventRemove()</i> method) 
+- id	id		event handler ID (can be used by the <i>eventRemove()</i> method) 
 
 @example:
 // adds a handler for the 'onclick' event of some HTML element
@@ -33,7 +33,7 @@ webix.event($$("list").getNode(), "keyup", function(e){
 @template:	api_method
 @descr:
 
-The optional **context** paramater may include: 
+The optional **context** parameter may include: 
 
 - **master** - (object) an object that the <i>this</i> keyword refers to;
 - **capture** - (boolean) a flag that indicates on which stage (capture or bubble) event should be captured. *false* by default;

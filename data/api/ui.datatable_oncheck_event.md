@@ -1,9 +1,8 @@
 onCheck
 ========================
 
-
-
-@short: fires when a checkbox is checked or unchecked in the datatable item
+@short: 
+  fires when a checkbox is checked or unchecked in the datatable item
 	
 
 @params:
@@ -13,7 +12,7 @@ onCheck
 
 @example:
 
-datatable.attachEvent("onCheck", function(rwo, column, state){
+datatable.attachEvent("onCheck", function(row, column, state){
 	//code
 });
 
@@ -25,7 +24,7 @@ datatable.attachEvent("onCheck", function(rwo, column, state){
 
 @descr:
 
-Checkbox state is **0** or **1** by default, if other is not stated by **checkValue** and **uncheckValue** properies of the column: 
+Checkbox state is **0** or **1** by default, if other is not stated by the **checkValue** and **uncheckValue** properties of the column: 
 
 ~~~js
 {id:"ch", template:"{common.checkbox()}", checkValue:"On", uncheckValue:"Off"}

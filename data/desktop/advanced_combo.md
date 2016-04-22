@@ -56,7 +56,7 @@ Option data may contain any properies instead of (in addition to) default *id-va
     template:"#name#",
     data:[
        { id:1, name:"Banana" },
-       { id:2, name:"Papai" }
+       { id:2, name:"Papaya" }
 ]}
 ~~~
 
@@ -67,7 +67,7 @@ Extra text or HTML can be added:
     template:"Extra #value#",
     data:[
        { id:1, value:"Banana" },
-       { id:2, value:"Papai" }
+       { id:2, value:"Papaya" }
 ]}
 ~~~
 
@@ -77,7 +77,7 @@ Options data may as well contain **multi-line text** with html tags. In this cas
 { view:"richselect",
   options:[
 	{ id:1, value:"Here can be some long multi line content <ul><li>item1 <li> item 2</ul>"}, 
-	{ id:2, value:"Papai"  }
+	{ id:2, value:"Papaya"  }
 ]}
 ~~~
 
@@ -100,7 +100,7 @@ view:"combo", value:1, options:{
         template:"#name#",
 		data:[
            { id:1, name:"Banana"},
-           { id:2, name:"Papai"}
+           { id:2, name:"Papaya"}
         ]
     }
 }
@@ -195,7 +195,7 @@ view:"combo", value:1, options:{
     body:{
         data:[
            { id:1, value:"Banana"},
-           { id:2, value:"Papai"},
+           { id:2, value:"Papaya"},
            { id:3, value:"Apple"}
         ],
         on:{
@@ -242,16 +242,16 @@ By default, multiple-choice controls, e.g. [multiselect](desktop/multiselect.md)
 
 If you want to use a [multisuggest](api/refs/ui.multisuggest.md) for these needs, use extended configuration and specify **view name**:
 
-<img src="desktop/multiselect_multisuggest.png">
+<img src="desktop/multisuggest_in_multiselect.png">
 
 ~~~js
 { view:"multiselect",  options:{
-    button:"Approve", //"Select" by default
+	button:true,
+    buttonText:"Approve", //"Select" by default
 	view:"multisuggest",
 	data:[
 		{ id:1, value:"Alex Brown" },
-		{ id:2, value:"Dan Simons" }
-						
+		{ id:2, value:"Dan Simons" }						
 	]
 }}    
 ~~~

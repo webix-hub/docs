@@ -6,12 +6,19 @@ Webix 3.2 -> 3.3
 
 ###Data Export to PDF
 
-To avoid ambiguity, in the version 3.3 the *header* and *headerImage* properties were renamed:
 
-- header is changed for docHeader - this property relates to the header of the document
-There's now the *header* property that is used in relation to the  
-- headerImage is changed for docHeaderImage
+In version 3.3 the *header* property is introduced in [PDF export](desktop/export_pdf.md#customizingexporttopdf) config. 
+It is used [to configure the look of header](desktop/export_pdf.md#stylingtheexporteddata) of an exported table.
 
+To avoid ambiguity, the *header* and *headerImage* properties related to the document's header were renamed:
+
+- *header* is replaced with *docHeader* 
+- *headerImage* is replaced with *docHeaderImage*
+
+###Changes in the webix.event helper 
+
+The *context* parameter of the [webix.event](api/_event.md) helper was modified.
+Earlier it indicated an object to which *this* keyword refers (master). Now it awaits a context object with *master*, *capture* and *id* properties.
 
 
 Webix 3.1 -> 3.2

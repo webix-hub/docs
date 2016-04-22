@@ -7,8 +7,8 @@ Version 3.3
 
 - *header* and *headerImage* properties were renamed to *docHeader* and *headerImage* in [PDF export](desktop/export_pdf.md#customizingexporttopdf) configuration. 
 Additionaly, the *header* property was introduced to [tune the appearance](desktop/export_pdf.md#stylingtheexporteddata) of an exported table.
-- the last argument of [webix.event](api/_event.md) helper was modified. Now it awaits an object with *master*, *id* and *context* properties while before it indicated an object to which *this*
-keyword returns (master).
+- the last argument of [webix.event](api/_event.md) helper was modified. Now it awaits a context object with *master*, *id* and *capture* properties while before it indicated an object to which *this*
+keyword refers (master).
 
 ##New features
 

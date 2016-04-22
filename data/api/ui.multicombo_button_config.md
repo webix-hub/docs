@@ -1,13 +1,17 @@
 button
 =============
 
+
 @short:
-	defines whether the "Select" button will be displayed in the options list;
+	defines whether the "Select" button will be displayed in the options list
 	
 
 @type: boolean
 @example:
-{ view:"multitext", button:true}
+webix.ui({
+	view:"multicombo", 
+	button:true
+});
 
 
 @template:	api_config

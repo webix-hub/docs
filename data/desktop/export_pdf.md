@@ -166,7 +166,7 @@ webix.toPDF($$("mylist"), {
 Thus, you can configure the image's alignment, as well as its width and the height. More options are enumerated in the [specific documentation](https://github.com/rkusa/pdfjs/tree/master/docs) 
 (see the "document/imageimg-opts" section).
 
-{{sample 15_datatable/10_export/07_pdf_style.html}}
+{{sample 15_datatable/10_export/08_pdf_style.html}}
 
 ###Configuring the document's table
 
@@ -207,7 +207,7 @@ webix.toPDF($$("mylist"), {
 });
 ~~~
 
-{{sample 15_datatable/10_export/07_pdf_style.html}}
+{{sample 15_datatable/10_export/08_pdf_style.html}}
 
 More possible configuration properties are described in the [corresponding documentation](https://github.com/rkusa/pdfjs/tree/master/docs)
 (follow the "document/tableopts" section).
