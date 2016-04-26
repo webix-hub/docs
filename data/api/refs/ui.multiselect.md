@@ -187,3 +187,4 @@ var multiselect = webix.ui({
 - api/refs/ui.multiselect_events.md
 - api/refs/ui.multiselect_others.md
 
+@edition:pro

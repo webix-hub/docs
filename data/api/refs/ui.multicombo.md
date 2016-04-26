@@ -195,3 +195,4 @@ var multicombo = webix.ui({
 - api/refs/ui.multicombo_events.md
 - api/refs/ui.multicombo_others.md
 
+@edition:pro
