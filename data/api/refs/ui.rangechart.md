@@ -241,3 +241,4 @@ var rangechart = webix.ui({
 - api/refs/ui.rangechart_events.md
 - api/refs/ui.rangechart_others.md
 
+@edition:pro

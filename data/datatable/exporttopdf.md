@@ -203,4 +203,4 @@ webix.toPDF($$("myDataTable"), {
 More possible configuration properties are described in the [corresponding documentation](https://github.com/rkusa/pdfjs/tree/master/docs)
 (follow the "document/tableopts" section)
 
-{{sample 15_datatable/10_export/07_pdf_style.html}}
+{{sample 15_datatable/10_export/08_pdf_style.html}}

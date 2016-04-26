@@ -1,7 +1,7 @@
 Using Sparklines in Datatable
 ===================
 
-Sparklines are small graphs embedded into the datatable and used for visual presentation of data values.
+Sparklines are small graphs embedded into the datatable and used for presenting the general variation of certain parameters.
 Each data value is specified as a point in the sparkline. Depending on the value, points are located at a different height relative to each other.
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="datatable/sparklines.png">

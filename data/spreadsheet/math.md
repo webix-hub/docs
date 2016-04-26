@@ -141,8 +141,9 @@ Formula Editor
 
 Spreadsheet possesses an advanced formula editor. Its main features are:
 
-- providing the list of possible formulas on entering the first letter of the formula name in the input 
-- entering the cells references either by selecting a range of cells or by writing them manually
+- providing the list of possible formulas on entering the first letter of the formula name in the input; 
+- entering formula operands either by selecting a range of cells or by clicking the related cells.
+
 
 <img src="spreadsheet/formula_editor.png">
 
