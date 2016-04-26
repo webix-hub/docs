@@ -36,6 +36,6 @@ webix.ready(function(){
 });
 ~~~
 
-{{sample 15_datatable/20_templates/09_sparklines.html}}
+{{sample 60_pro/01_datatable/08_sparklines/01_init.html}}
 
 @edition:pro

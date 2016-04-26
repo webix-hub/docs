@@ -246,12 +246,12 @@ The options are specified as an array:
   {
     id: "files",
     width: 32,
-    value: "<div class='webix_fmanager_bar_icon webix_fmanager_files_mode' title='"+webix.i18n.filemanager.iconsView+"'></div>"
+    value: "<div class='webix_fmanager_bar_icon webix_fmanager_files_mode'></div>"
   },
   {
     id: "table",
     width: 32,
-    value: "<div class='webix_fmanager_bar_icon webix_fmanager_table_mode' title='"+webix.i18n.filemanager.tableView+"'></div>"
+    value: "<div class='webix_fmanager_bar_icon webix_fmanager_table_mode'></div>"
   }
 ]
 ~~~
