@@ -41,9 +41,16 @@ keyword refers (master).
 - [setContext()](api/link/ui.contextmenu_setcontext.md) method for Context and ContextMenu
 - sorting for options in select filters in [Pivot Table](desktop/pivot.md)
 - support for missed values in [Pivot Table](desktop/pivot.md)
+- default color range for Charts changed
+- "drag over" background during item drag-n-drop changed
 
 ##Fixes
 
+- always suggest the first record if no items are selected in select inputs
+- option selection by typing its exact text in select inputs
+- vertical radio size calculation
+- possibility to configure header image of the exported PDF document
+- hiding columns from selected areas in Pivot
 - "light" gradient for bar Chart with small radius
 - changing month on day click in Calendar with disabled navigation
 - fix areaselection with column hide and show
