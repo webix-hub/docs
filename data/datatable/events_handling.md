@@ -42,7 +42,7 @@ Attaching the event handler through parameter 'on'
 webix.ui({
   view: "dataTable",
   ...
-  on: {"itemClick": function () {alert("item has just been clicked");}}
+  on: {"onItemClick": function () {alert("item has just been clicked");}}
 ); 
 ~~~
 

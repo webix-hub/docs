@@ -12,7 +12,7 @@ In eccense file uploading is done via Ajax. Each time **send()** function is exe
 The custom script you write yourself on your favourite language, not just PHP. Regardless of the language, the script must contain:
 
 - the desired **destination** for file uploading; 
-- script **response** in form of a JS string - *{status:"server"}* for success, *{status:"error"}* for failure. 
+- script **response** in form of a JS string - *{"status":"server"}* for success, *{"status":"error"}* for failure. 
 
 Below **PHP solution** is explained: 
 
@@ -40,10 +40,11 @@ You must also tune the **script response** to notify you about the result of fil
 The script ought to **return JSON string** that is later processed by Uploader to change the properties of the corresponding **file object**. 
 
 ~~~php
-if(..some condition..)
-	echo "{ status: 'server'}";
-else 
-	echo "{ status:'error' }";
+if ( /* conditions */ ){	
+	echo '{ "status": "server" }';
+} else {
+	echo '{ "status": "error" }';
+}
 ~~~
 
 Why it's done so? Each file object features **status** that changes during uploading: 
@@ -51,7 +52,7 @@ Why it's done so? Each file object features **status** that changes during uploa
 - **client** - when the file was just added to uploader and uploading hasn't started yet. Or when uploading was aborted by user;
 - **transfer** - during uploading until script response;
 - **server** - uploading finished, set when script response is "{status:'server'}";
-- **error** - an error has occurred during uploading, set when script response is {status:'error'}. 
+- **error** - an error has occurred during uploading, set when script response is {'status':'error'}. 
 
 The response is available directly in the **send()** callback that takes it as parameter: 
 
@@ -66,10 +67,13 @@ $$("upl1").send(function(response){
 In addition, script may return any **additional information**, e.g. file storage name encoded with MD5. 
 
 ~~~php
-$sname = md5($file["name"]);;
-....
-echo "{ status: 'server', sname: '$sname'}";
+$sname = md5($file["name"]);
+if ( /*...*/ ){	
+	echo '{ "status": "server", "sname":"$sname"}';
+}
+...
 ~~~
+{{sample 21_upload/03_manual_send.html}}
 
 This additional info is added to the file object and can be later on derived just like other properties.
 
