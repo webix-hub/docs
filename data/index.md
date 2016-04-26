@@ -10,7 +10,7 @@ Start
 <h2>Meet Webix 3.3!</h2>
 <ul>
 	<li>New layout widgets: <a href="desktop/absolute_layout.md">AbsLayout</a> and <a href="desktop/data_layout.md">DataLayout</a></li>
-	<li><a href="desktop/spreadsheet.md">Drag-n-drop</a> for component items on touch devices</li>
+	<li><a href="desktop/dnd.md">Drag-n-drop</a> for component items on touch devices</li>
     <li><a href="datatable/sparklines.md">Sparklines</a> for DataTable and TreeTable</li>
 </ul>
 
