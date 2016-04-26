@@ -1,10 +1,6 @@
 cells
 =============
 
-@todo:
-	check!
-
-
 @short:
 	defines the content of the abslayout
 

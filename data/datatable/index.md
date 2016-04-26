@@ -3,7 +3,7 @@ DataTable
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.datatable.html)
+- [Methods, properties and events](api/refs/ui.datatable.md)
 - [Samples](http://docs.webix.com/samples/15_datatable/index.html)
 
 <div class="h2">Overview</div>

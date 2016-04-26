@@ -136,7 +136,7 @@ An example config may look as:
 ~~~js
 webix.toPDF($$("mylist"), {
 	docHeader:{
-		text: "Datatable with custom styling",
+		text: "List with custom styling",
 		textAlign:"center",
 		color:0x663399
 	}
