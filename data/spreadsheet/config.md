@@ -92,7 +92,7 @@ webix.ui({
 ~~~
 
 {{sample
-65_spreadsheet/03_customization/02_cell_input.html
+65_spreadsheet/03_customization/02_subbar.html
 }}
 
 
