@@ -32,6 +32,7 @@ Methods
 - api/ui.segmented_removeoption.md - removes the option of a segmented button
 - api/link/ui.segmented_render.md - renders the specified item or the whole component
 - api/link/ui.segmented_resize.md - adjusts the view to a new size
+- api/link/ui.segmented_setbottomtext.md - sets the input label at the bottom of it
 - api/link/ui.segmented_setvalue.md - sets a new value for the component
 - api/link/ui.segmented_show.md - makes the component visible
 - api/link/ui.segmented_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
@@ -71,6 +72,7 @@ Methods
 - api/ui.segmented_removeoption.md
 - api/link/ui.segmented_render.md
 - api/link/ui.segmented_resize.md
+- api/link/ui.segmented_setbottomtext.md
 - api/link/ui.segmented_setvalue.md
 - api/link/ui.segmented_show.md
 - api/link/ui.segmented_sync.md

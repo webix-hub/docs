@@ -29,6 +29,7 @@ Methods
 - api/link/ui.radio_refresh.md - repaints the component
 - api/link/ui.radio_render.md - renders the specified item or the whole component
 - api/link/ui.radio_resize.md - adjusts the view to a new size
+- api/link/ui.radio_setbottomtext.md - sets the input label at the bottom of it
 - api/link/ui.radio_setvalue.md - sets a new value for the component
 - api/link/ui.radio_show.md - makes the component visible
 - api/link/ui.radio_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
@@ -65,6 +66,7 @@ Methods
 - api/link/ui.radio_refresh.md
 - api/link/ui.radio_render.md
 - api/link/ui.radio_resize.md
+- api/link/ui.radio_setbottomtext.md
 - api/link/ui.radio_setvalue.md
 - api/link/ui.radio_show.md
 - api/link/ui.radio_sync.md
