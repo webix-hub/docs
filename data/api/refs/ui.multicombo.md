@@ -67,6 +67,7 @@ var multicombo = webix.ui({
 - api/link/ui.multicombo_refresh.md - repaints the component
 - api/link/ui.multicombo_render.md - renders the specified item or the whole component
 - api/link/ui.multicombo_resize.md - adjusts the view to a new size
+- api/link/ui.multicombo_setbottomtext.md - 
 - api/link/ui.multicombo_setvalue.md - sets a new value for the component
 - api/link/ui.multicombo_show.md - makes the component visible
 - api/link/ui.multicombo_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
@@ -111,7 +112,7 @@ var multicombo = webix.ui({
 - api/link/ui.multicombo_borderless_config.md - used to hide the component borders
 - api/link/ui.multicombo_bottomlabel_config.md - sets a label under a control
 - api/link/ui.multicombo_bottompadding_config.md - sets the bottom offset of the control input
-- api/ui.multicombo_button_config.md - defines whether the "Select" button will be displayed in the options list;
+- api/ui.multicombo_button_config.md - defines whether the "Select" button will be displayed in the options list
 - api/link/ui.multicombo_click_config.md - click action handler
 - api/link/ui.multicombo_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.multicombo_css_config.md - the name of a css class that will be applied to the view container
@@ -195,4 +196,3 @@ var multicombo = webix.ui({
 - api/refs/ui.multicombo_events.md
 - api/refs/ui.multicombo_others.md
 
-@edition:pro

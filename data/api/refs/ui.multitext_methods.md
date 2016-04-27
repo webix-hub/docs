@@ -32,6 +32,7 @@ Methods
 - api/ui.multitext_removesection.md - removes an additional field from the multitext group
 - api/link/ui.multitext_render.md - renders the specified item or the whole component
 - api/link/ui.multitext_resize.md - adjusts the view to a new size
+- api/link/ui.multitext_setbottomtext.md - 
 - api/link/ui.multitext_setvalue.md - sets a new value for the component
 - api/ui.multitext_setvaluehere.md - sets value for the basic field of a multitext control
 - api/link/ui.multitext_show.md - makes the component visible
@@ -72,6 +73,7 @@ Methods
 - api/ui.multitext_removesection.md
 - api/link/ui.multitext_render.md
 - api/link/ui.multitext_resize.md
+- api/link/ui.multitext_setbottomtext.md
 - api/link/ui.multitext_setvalue.md
 - api/ui.multitext_setvaluehere.md
 - api/link/ui.multitext_show.md

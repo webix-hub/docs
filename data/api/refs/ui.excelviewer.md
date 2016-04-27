@@ -155,8 +155,8 @@ dummy stub
 - api/link/ui.excelviewer_onafterblockselect_event.md - event occurs after block selection
 - api/link/ui.excelviewer_onaftercolumndrop_event.md - fires after the column has been dragged and dropped to the target position
 - api/link/ui.excelviewer_onaftercolumndroporder_event.md - fires after the column order was changed with the help of drag-and-drop
-- api/link/ui.excelviewer_onaftercolumnhide_event.md - 
-- api/link/ui.excelviewer_onaftercolumnshow_event.md - 
+- api/link/ui.excelviewer_onaftercolumnhide_event.md - fires after a column was hidden in datatable
+- api/link/ui.excelviewer_onaftercolumnshow_event.md - fires when a column is shown in datatable
 - api/link/ui.excelviewer_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.excelviewer_onafterdelete_event.md - fires after item deleting
 - api/link/ui.excelviewer_onafterdrop_event.md - fires after drag-n-drop was finished
@@ -177,8 +177,8 @@ dummy stub
 - api/link/ui.excelviewer_onbeforecolumndrag_event.md - fires the monent you start dragging the column from its source potition
 - api/link/ui.excelviewer_onbeforecolumndrop_event.md - fires the moment you drop the column to its target position
 - api/link/ui.excelviewer_onbeforecolumndroporder_event.md - fires the moment you drop the column over the target area
-- api/link/ui.excelviewer_onbeforecolumnhide_event.md - 
-- api/link/ui.excelviewer_onbeforecolumnshow_event.md - 
+- api/link/ui.excelviewer_onbeforecolumnhide_event.md - fires before a column is hidden in datatable
+- api/link/ui.excelviewer_onbeforecolumnshow_event.md - fires before a column is shown in datatable
 - api/link/ui.excelviewer_onbeforecontextmenu_event.md - fires before the context menu is called in the item area
 - api/link/ui.excelviewer_onbeforedelete_event.md - fires before item deleting
 - api/link/ui.excelviewer_onbeforedrag_event.md - fires before the mouse button is pressed and the cursor is moved over a draggable item
@@ -198,6 +198,7 @@ dummy stub
 - api/link/ui.excelviewer_oncheck_event.md - fires when a checkbox is checked or unchecked in the datatable item
 - api/link/ui.excelviewer_oncollectvalues_event.md - fires after datatable has collected options
 - api/link/ui.excelviewer_oncolumnresize_event.md - fires when width of column was changed
+- api/ui.excelviewer_oncolumnresizeaction_event.md - 
 - api/link/ui.excelviewer_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.excelviewer_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.excelviewer_ondestruct_event.md - occurs when component destroyed

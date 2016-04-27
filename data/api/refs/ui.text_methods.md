@@ -29,6 +29,7 @@ Methods
 - api/link/ui.text_refresh.md - repaints the component
 - api/link/ui.text_render.md - renders the specified item or the whole component
 - api/link/ui.text_resize.md - adjusts the view to a new size
+- api/ui.text_setbottomtext.md - 
 - api/link/ui.text_setvalue.md - sets a new value for the component
 - api/link/ui.text_show.md - makes the component visible
 - api/link/ui.text_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
@@ -65,6 +66,7 @@ Methods
 - api/link/ui.text_refresh.md
 - api/link/ui.text_render.md
 - api/link/ui.text_resize.md
+- api/ui.text_setbottomtext.md
 - api/link/ui.text_setvalue.md
 - api/link/ui.text_show.md
 - api/link/ui.text_sync.md

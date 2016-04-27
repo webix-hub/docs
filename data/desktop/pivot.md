@@ -11,6 +11,11 @@ With Pivot you can easily compare, filter and sort data within one table as well
 - You can [download Webix Pivot](http://webix.com/pivot/download.html) from [http://webix.com/pivot/](http://webix.com/pivot/)
 - There are online samples at [docs.webix.com/samples](http://docs.webix.com/samples/61_pivot/index.html)
 
+<div class="h2">API Reference</div>
+
+- [Methods, properties and events](api/refs/ui.pivot.md)
+
+
 <br>
 <img style="display:block; margin-left:auto;margin-right:auto;" src="pivot/pivot_front.png">
 
@@ -40,6 +45,7 @@ With Pivot you can easily compare, filter and sort data within one table as well
 </table>
 
 @index:
+- api/refs/ui.pivot.md
 - pivot/structure.md
 - pivot/initialization.md
 - pivot/data_loading.md

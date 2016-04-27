@@ -18,6 +18,7 @@
 	<script src="<?php echo $js_root; ?>webix/codebase/core/docs_add.js" type="text/javascript" charset="utf-8"></script>
 	<script src="<?php echo $js_root; ?>webix/codebase/core/docs_remove.js" type="text/javascript" charset="utf-8"></script>
 	<script src="<?php echo $js_root; ?>spreadsheet/codebase/spreadsheet.js" type="text/javascript" charset="utf-8"></script>
+	<script src="<?php echo $js_root; ?>pivot/codebase/pivot.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../index.php?action=freid" type="text/javascript" charset="utf-8"></script>
 
 	<script type="text/javascript">

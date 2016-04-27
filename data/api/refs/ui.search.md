@@ -55,6 +55,7 @@ var search = webix.ui({
 - api/link/ui.search_refresh.md - repaints the component
 - api/link/ui.search_render.md - renders the specified item or the whole component
 - api/link/ui.search_resize.md - adjusts the view to a new size
+- api/link/ui.search_setbottomtext.md - 
 - api/link/ui.search_setvalue.md - sets a new value for the component
 - api/link/ui.search_show.md - makes the component visible
 - api/link/ui.search_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another

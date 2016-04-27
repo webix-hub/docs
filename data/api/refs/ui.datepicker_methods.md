@@ -31,6 +31,7 @@ Methods
 - api/link/ui.datepicker_refresh.md - repaints the component
 - api/link/ui.datepicker_render.md - renders the specified item or the whole component
 - api/link/ui.datepicker_resize.md - adjusts the view to a new size
+- api/link/ui.datepicker_setbottomtext.md - 
 - api/link/ui.datepicker_setvalue.md - sets a new value for the component
 - api/link/ui.datepicker_show.md - makes the component visible
 - api/link/ui.datepicker_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
@@ -69,6 +70,7 @@ Methods
 - api/link/ui.datepicker_refresh.md
 - api/link/ui.datepicker_render.md
 - api/link/ui.datepicker_resize.md
+- api/link/ui.datepicker_setbottomtext.md
 - api/link/ui.datepicker_setvalue.md
 - api/link/ui.datepicker_show.md
 - api/link/ui.datepicker_sync.md

@@ -125,7 +125,7 @@ var contextmenu = webix.ui({
 - api/link/ui.contextmenu_select.md - selects the specified item(s)
 - api/link/ui.contextmenu_selectall.md - selects all items or the specified range
 - api/link/ui.contextmenu_serialize.md - serializes data to a JSON object
-- api/link/ui.contextmenu_setcontext.md - allows customizing target context properties: view object and item id
+- api/link/ui.contextmenu_setcontext.md - allows settings master properties: view object and item id
 - api/link/ui.contextmenu_setpage.md - makes the specified page visible (assuming that the pager was defined )
 - api/link/ui.contextmenu_setposition.md - sets window's position
 - api/link/ui.contextmenu_show.md - makes the component visible

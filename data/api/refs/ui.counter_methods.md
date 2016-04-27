@@ -31,6 +31,7 @@ Methods
 - api/link/ui.counter_refresh.md - repaints the component
 - api/link/ui.counter_render.md - renders the specified item or the whole component
 - api/link/ui.counter_resize.md - adjusts the view to a new size
+- api/link/ui.counter_setbottomtext.md - 
 - api/link/ui.counter_setvalue.md - sets a new value for the component
 - api/ui.counter_shift.md - adds value to the counter
 - api/link/ui.counter_show.md - makes the component visible
@@ -70,6 +71,7 @@ Methods
 - api/link/ui.counter_refresh.md
 - api/link/ui.counter_render.md
 - api/link/ui.counter_resize.md
+- api/link/ui.counter_setbottomtext.md
 - api/link/ui.counter_setvalue.md
 - api/ui.counter_shift.md
 - api/link/ui.counter_show.md

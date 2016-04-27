@@ -59,6 +59,7 @@ var slider = webix.ui({
 - api/link/ui.slider_refresh.md - repaints the component
 - api/link/ui.slider_render.md - renders the specified item or the whole component
 - api/link/ui.slider_resize.md - adjusts the view to a new size
+- api/link/ui.slider_setbottomtext.md - 
 - api/link/ui.slider_setvalue.md - sets a new value for the component
 - api/link/ui.slider_show.md - makes the component visible
 - api/link/ui.slider_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another

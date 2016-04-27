@@ -2,14 +2,15 @@ Sparklines
 =============
 
 
-{{memo visual representation of data values in datatable}}
+
+{{memo Visual representation of data values in datatable. }}
 
 
 
 <div class='h2'>Methods</div>
 
 {{api
-- api/sparklines_template.md - 
+- api/sparklines_template.md - returns HTML string for sparklines in a cell
 }}
 
 
@@ -20,9 +21,9 @@ Sparklines
 
 
 {{api
-- api/sparklines_paddingx_other.md - 
-- api/sparklines_paddingy_other.md - 
-- api/sparklines_radius_other.md - 
+- api/sparklines_paddingx_other.md - horizontal padding in pixels
+- api/sparklines_paddingy_other.md - vertical padding in pixels
+- api/sparklines_radius_other.md - defines the radius of a point in the sparkline
 }}
 
 

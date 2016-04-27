@@ -193,8 +193,8 @@ var treetable = webix.ui({
 - api/link/ui.treetable_onafterclose_event.md - fires after the branch has been closed
 - api/link/ui.treetable_onaftercolumndrop_event.md - fires after the column has been dragged and dropped to the target position
 - api/link/ui.treetable_onaftercolumndroporder_event.md - fires after the column order was changed with the help of drag-and-drop
-- api/link/ui.treetable_onaftercolumnhide_event.md - 
-- api/link/ui.treetable_onaftercolumnshow_event.md - 
+- api/link/ui.treetable_onaftercolumnhide_event.md - fires after a column was hidden in datatable
+- api/link/ui.treetable_onaftercolumnshow_event.md - fires when a column is shown in datatable
 - api/link/ui.treetable_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.treetable_onafterdelete_event.md - fires after item deleting
 - api/link/ui.treetable_onafterdrop_event.md - fires after drag-n-drop was finished
@@ -217,8 +217,8 @@ var treetable = webix.ui({
 - api/link/ui.treetable_onbeforecolumndrag_event.md - fires the monent you start dragging the column from its source potition
 - api/link/ui.treetable_onbeforecolumndrop_event.md - fires the moment you drop the column to its target position
 - api/link/ui.treetable_onbeforecolumndroporder_event.md - fires the moment you drop the column over the target area
-- api/link/ui.treetable_onbeforecolumnhide_event.md - 
-- api/link/ui.treetable_onbeforecolumnshow_event.md - 
+- api/link/ui.treetable_onbeforecolumnhide_event.md - fires before a column is hidden in datatable
+- api/link/ui.treetable_onbeforecolumnshow_event.md - fires before a column is shown in datatable
 - api/link/ui.treetable_onbeforecontextmenu_event.md - fires before the context menu is called in the item area
 - api/link/ui.treetable_onbeforedelete_event.md - fires before item deleting
 - api/link/ui.treetable_onbeforedrag_event.md - fires before the mouse button is pressed and the cursor is moved over a draggable item
@@ -239,6 +239,7 @@ var treetable = webix.ui({
 - api/link/ui.treetable_oncheck_event.md - fires when a checkbox is checked or unchecked in the datatable item
 - api/link/ui.treetable_oncollectvalues_event.md - fires after datatable has collected options
 - api/link/ui.treetable_oncolumnresize_event.md - fires when width of column was changed
+- api/ui.treetable_oncolumnresizeaction_event.md - 
 - api/link/ui.treetable_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.treetable_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.treetable_ondestruct_event.md - occurs when component destroyed
