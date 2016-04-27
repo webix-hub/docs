@@ -182,3 +182,5 @@ var multitext = webix.ui({
 - api/refs/ui.multitext_events.md
 - api/refs/ui.multitext_others.md
 
+
+@edition:pro
