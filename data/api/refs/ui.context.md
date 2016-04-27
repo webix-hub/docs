@@ -65,7 +65,7 @@ var context = webix.ui({
 - api/link/ui.context_mapevent.md - routes events from one object to another
 - api/link/ui.context_resize.md - adjusts the view to a new size
 - api/link/ui.context_resizechildren.md - resizes all children of the calling component
-- api/link/ui.context_setcontext.md - allows customizing target context properties: view object and item id
+- api/link/ui.context_setcontext.md - allows settings master properties: view object and item id
 - api/link/ui.context_setposition.md - sets window's position
 - api/link/ui.context_show.md - makes the component visible
 - api/link/ui.context_unbind.md - breaks "bind" link
