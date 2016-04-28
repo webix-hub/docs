@@ -20,6 +20,14 @@ To avoid ambiguity, the *header* and *headerImage* properties related to the doc
 The *context* parameter of the [webix.event](api/_event.md) helper was modified.
 Earlier it indicated an object to which *this* keyword refers (master). Now it awaits a context object with *master*, *capture* and *id* properties.
 
+###Changes in the collectValues method
+
+The [collectValues](api/ui.datatable_collectvalues.md) method of the DataTable and TreeTable doesn't return an empty option any more.
+
+The method is used by select filters of the above mentioned components to collect the array of options for them. 
+Prior to 3.3 it returned the unique set of options plus an epmty option to clear the filter's value. 
+
+Now its result doesn't include an empty option while the filters add this option themselves. 
 
 Webix 3.1 -> 3.2
 ----------------
