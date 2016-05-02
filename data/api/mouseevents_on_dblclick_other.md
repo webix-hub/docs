@@ -1,7 +1,7 @@
 on_dblclick
 =============
 
-@short: attaches a dblclick behavior for component items with the specified CSS class. 
+@short: attaches a dblclick behavior for component items with the specified CSS class 
 
 @type: function
 
