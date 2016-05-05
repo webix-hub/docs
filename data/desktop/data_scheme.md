@@ -127,7 +127,7 @@ webix.ui({
 			if(obj.birthday)
 				obj.birthday = webix.i18n.parseFormatDate(obj.birthday);
         },
-        //turing objects back to strings on saving
+        //turning objects back to strings on saving
 		$save:function(obj){
 			if(obj.birthday)
 				obj.birthday = webix.i18n.parseFormatStr(obj.birthday)
@@ -220,7 +220,7 @@ applied to all values of the property (set by the first element) in the group.Gr
 - **max** – gets the maximum value in the group;
 - **min** - gets the minimum value in the group.
 
-It’s possible to define custom functor. Read on the topic in the related article - [Custom Functor for Data Grouping in Charts](desktop/custom_functor.md).
+It's possible to define custom functor. Read on the topic in the related article - [Custom Functor for Data Grouping in Charts](desktop/custom_functor.md).
 
 The **$group** function is called:
 

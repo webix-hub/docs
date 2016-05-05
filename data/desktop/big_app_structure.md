@@ -164,7 +164,7 @@ var logic = {
     	$$("form1").bind($$("datatable1"));
         $$("datatable1").sync($$("list1"));
         
-        //biult-in functions
+        //built-in functions
         $$("list1").attachEvent("onAfterSelect", function(id){
 		 	$$("datatable1").select(id);
 		});
