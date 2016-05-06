@@ -8,7 +8,7 @@ onStoreUpdated
 @params:
 - id		id		the id of updated object
 - obj		object		updated object
-- mode		string		updating mode('inserted','deleted','updated')
+- mode		string		updating mode ('add', 'delete', 'update')
 
 @example: 
 	
