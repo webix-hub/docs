@@ -6,10 +6,13 @@ onHeaderClick
 	
 
 @params:
-- id		id		id of column
-- e			object	native html event
-- trg		element		html element on which click was catched
+- id		id			id of a column
+- e			object		native HTML event
+- trg		element		HTML element on which click was caught
 
+@returns:
+
+- result		boolean			returning false will prevent further actions: headermenu opening, sorting, etc.
 
 @example:
 
