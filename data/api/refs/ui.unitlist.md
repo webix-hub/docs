@@ -260,8 +260,8 @@ var unitlist = webix.ui({
 - api/link/ui.unitlist_name_other.md - indicates the name of the component (a read-only property)
 - api/link/ui.unitlist_on_click_other.md - redefines default click behavior for component items.
 - api/link/ui.unitlist_on_context_other.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
-- api/link/ui.unitlist_on_dblclick_other.md - attaches a dblclick behavior for component items with the specified CSS class.
-- api/link/ui.unitlist_on_mouse_move_other.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.unitlist_on_dblclick_other.md - attaches a dblclick behavior for component items with the specified CSS class
+- api/link/ui.unitlist_on_mouse_move_other.md - attaches a mouse move behavior for component items with the specified CSS class
 - api/link/ui.unitlist_type_other.md - set of properties and helpers for item rendering
 - api/link/ui.unitlist_types_other.md - collection of possible types
 }}

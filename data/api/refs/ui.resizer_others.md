@@ -13,8 +13,8 @@ Others
 - api/link/ui.resizer_name_other.md - indicates the name of the component (a read-only property)
 - api/link/ui.resizer_on_click_other.md - redefines default click behavior for component items.
 - api/link/ui.resizer_on_context_other.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
-- api/link/ui.resizer_on_dblclick_other.md - attaches a dblclick behavior for component items with the specified CSS class.
-- api/link/ui.resizer_on_mouse_move_other.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.resizer_on_dblclick_other.md - attaches a dblclick behavior for component items with the specified CSS class
+- api/link/ui.resizer_on_mouse_move_other.md - attaches a mouse move behavior for component items with the specified CSS class
 }}
 
 @index:

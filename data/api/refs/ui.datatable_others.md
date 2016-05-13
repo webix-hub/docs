@@ -21,8 +21,8 @@ Others
 - api/link/ui.datatable_name_other.md - indicates the name of the component (a read-only property)
 - api/link/ui.datatable_on_click_other.md - redefines default click behavior for component items.
 - api/link/ui.datatable_on_context_other.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
-- api/link/ui.datatable_on_dblclick_other.md - attaches a dblclick behavior for component items with the specified CSS class.
-- api/link/ui.datatable_on_mouse_move_other.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.datatable_on_dblclick_other.md - attaches a dblclick behavior for component items with the specified CSS class
+- api/link/ui.datatable_on_mouse_move_other.md - attaches a mouse move behavior for component items with the specified CSS class
 - api/ui.datatable_waitdata_other.md - eventual result of an asynchronous operation ('promise' object) for the loaded data
 }}
 
