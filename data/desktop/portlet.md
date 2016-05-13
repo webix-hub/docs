@@ -53,6 +53,34 @@ A portlet can be placed as a column or as a row.
 
 {{sample 60_pro/09_portlet/02_portlet_move.html}}
 
+There are also two events that will help you to handle portlets' moving - *onBeforePortletMove* and *onAfterPortletMove*.
+
+They fire before/after a portlet's moving correspondingly and take the following parameters:
+
+- source - (object)	the original parent layout
+- parent - (object) a new parent layout
+- active - (object) also *this*, a portlet to move
+- target - (object)	a target view (highlighted, will be placed beside the *active* one within the *parent* layout)
+- mode - (string) drag direction relative to the *target*
+
+Both these events are attached not to separate portlets, but globally:
+
+~~~js
+webix.attachEvent("onBeforePortletMove", function(source,parent,active,target,mode){ 
+    // some code here
+});
+~~~
+
+{{editor http://webix.com/snippet/ff39c568	onBeforePortletMove event}}
+
+~~~js
+webix.attachEvent("onAfterPortletMove", function(source,parent,active,target,mode){ 
+    // some code here
+});
+~~~
+
+{{editor http://webix.com/snippet/0a06dd39	onAfterPortletMove event}}
+
 
 Dragging by the header
 ------------------------
