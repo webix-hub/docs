@@ -113,11 +113,13 @@ var select = webix.ui({
 - api/link/ui.select_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.select_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/link/ui.select_id_config.md - the component ID
+- api/link/ui.select_inputalign_config.md - 
 - api/link/ui.select_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.select_inputpadding_config.md - padding of text in the input
 - api/link/ui.select_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.select_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.select_label_config.md - the text label of the control
+- api/link/ui.select_labelalign_config.md - 
 - api/link/ui.select_labelposition_config.md - positions label in relation to the control
 - api/link/ui.select_labelwidth_config.md - the width of the label
 - api/link/ui.select_maxheight_config.md - sets the maximum height for the view

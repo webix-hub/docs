@@ -111,11 +111,13 @@ var search = webix.ui({
 - api/link/ui.search_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/link/ui.search_icon_config.md - sets an icon into the control
 - api/link/ui.search_id_config.md - the component ID
+- api/link/ui.search_inputalign_config.md - 
 - api/link/ui.search_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.search_inputpadding_config.md - padding of text in the input
 - api/link/ui.search_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.search_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.search_label_config.md - the text label of the control
+- api/link/ui.search_labelalign_config.md - 
 - api/link/ui.search_labelposition_config.md - positions label in relation to the control
 - api/link/ui.search_labelwidth_config.md - the width of the label
 - api/link/ui.search_maxheight_config.md - sets the maximum height for the view

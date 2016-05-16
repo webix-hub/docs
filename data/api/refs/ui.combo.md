@@ -114,11 +114,13 @@ var combo = webix.ui({
 - api/link/ui.combo_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/link/ui.combo_icon_config.md - sets an icon into the control
 - api/link/ui.combo_id_config.md - the component ID
+- api/link/ui.combo_inputalign_config.md - 
 - api/link/ui.combo_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.combo_inputpadding_config.md - padding of text in the input
 - api/link/ui.combo_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.combo_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.combo_label_config.md - the text label of the control
+- api/link/ui.combo_labelalign_config.md - 
 - api/link/ui.combo_labelposition_config.md - positions label in relation to the control
 - api/link/ui.combo_labelwidth_config.md - the width of the label
 - api/link/ui.combo_maxheight_config.md - sets the maximum height for the view

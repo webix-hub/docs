@@ -81,7 +81,7 @@ var htmlform = webix.ui({
 - api/link/ui.htmlform_scrollto.md - scrolls the data container to a certain position
 - api/link/ui.htmlform_setcontent.md - attaches html container to the template
 - api/link/ui.htmlform_setdirty.md - marks the form as the one with changed values and vice versa
-- api/link/ui.htmlform_sethtml.md - set hmlt for template
+- api/link/ui.htmlform_sethtml.md - sets HTML for template
 - api/link/ui.htmlform_setvalues.md - sets values into the inputs of a form/toolbar/property sheet control
 - api/link/ui.htmlform_show.md - makes the component visible
 - api/link/ui.htmlform_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another

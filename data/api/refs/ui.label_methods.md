@@ -29,7 +29,7 @@ Methods
 - api/link/ui.label_refresh.md - repaints the component
 - api/link/ui.label_render.md - renders the specified item or the whole component
 - api/link/ui.label_resize.md - adjusts the view to a new size
-- api/ui.label_sethtml.md - set hmlt for template
+- api/ui.label_sethtml.md - sets HTML for template
 - api/link/ui.label_setvalue.md - sets a new value for the component
 - api/link/ui.label_show.md - makes the component visible
 - api/link/ui.label_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
