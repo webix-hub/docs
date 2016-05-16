@@ -10,6 +10,8 @@ labelAlign
 
 @template:	api_config
 @descr:
+Possible values are "left" and "right". In any case, the label is placed left to the control.
+
 
 @relatedapi:
 api/link/ui.text_label_config.md

@@ -181,9 +181,9 @@ You can change it by setting the **sortDir** property with the "desc" value in t
 structure:{
 	rows: ["year"],
 	columns: [
-               {id:"form",sort:"string", sortDir:"desc"}, 
-               {id:"continent",sort:"string"}
-             ],
+    	{id:"form",sort:"string", sortDir:"desc"}, 
+        {id:"continent",sort:"string"}
+    ],
 	values: [{name:"balance", operation:"sum"}]
 }
 ~~~
