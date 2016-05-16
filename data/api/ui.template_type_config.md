@@ -2,7 +2,7 @@ type
 =============
 
 
-@short: name of predefined styling type
+@short: name of a predefined styling type
 	
 
 @type: string
@@ -11,13 +11,15 @@ type
 webix.ui({ 
   view:"template",
   type:"header",
-  template:"My header text" });
+  template:"My header text" 
+});
 
 @template:	api_config
 @descr:
 
 
-There are two predefined types:
+There are three predefined types:
 
-- header
-- section
+- "header"
+- "section"
+- "clean"

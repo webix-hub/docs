@@ -103,6 +103,9 @@ Each object in the array specifies a single column. An object can take the follo
 					<li><b>content</b> -  <i>('textFilter', 'selectFilter' or 'summColumn')</i> the built-in filter or counter </li>
 					<li><b>colspan</b> -  <i>(number)</i> the number of rows a cell should span</li>
 					<li><b>rowspan</b> -  <i>(number)</i> the number of columns a cell should span</li>
+                    <li><b>css</b> -  <i>(string)</i> the name of a css class that will be applied to the column footer</li>
+                    <li><b>rotate</b> -  <i>(boolean)</i> if set to true, switches the footer to the rotated state</li>
+                    <li><b>height</b> -  <i>(number)</i> defines a custom height for the footer line</li>
 				</ul>
 			</td>
 		</tr>
@@ -116,6 +119,9 @@ Each object in the array specifies a single column. An object can take the follo
 					<li><b>content</b> -  <i>('textFilter', 'selectFilter' or 'summColumn')</i> the built-in filter or counter </li>
 					<li><b>colspan</b> -  <i>(number)</i> the number of rows a cell should span</li>
 					<li><b>rowspan</b> -  <i>(number)</i> the number of columns a cell should span</li>
+                    <li><b>css</b> -  <i>(string)</i> the name of a css class that will be applied to the column header</li>
+                    <li><b>rotate</b> -  <i>(boolean)</i> if set to true, switches the header to the rotated state</li>
+                    <li><b>height</b> -  <i>(number)</i> defines a custom height for the header line</li>
 				</ul>
 			</td>
 		</tr>
