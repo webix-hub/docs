@@ -45,7 +45,7 @@ barA.width --> 400
 barB.width --> 500 // initial value from the source object
 ~~~
 
-The method is useful when you'd like to create two independant instances of one and the same object on the page.
+The method is useful when you'd like to create two independent instances of one and the same object on the page.
 
 This is how a new [pager](desktop/paging.md) is created on the base of the *pagerA* one. 
 

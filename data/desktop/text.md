@@ -15,21 +15,24 @@ Ui-related text control is a one-line input field with a label.
 ##Initialization
 
 ~~~js
-{view:"text", value:'dummy@email.com', label:"Email", labelAlign:'right'},
-{view:"text", type:'password', value:'123pass', label:"Password", labelAlign:'right'}
+{view:"text", value:'dummy@email.com', label:"Email", inputAlign:"right", 
+	labelAlign:"right"},
+{view:"text", type:'password', value:'123pass', label:"Password", inputAlign:"right", 
+	labelAlign:"right"}
 ~~~
 
 {{sample 13_form/01_controls/01_text.html }}
 
 ####Main properties
 
-- **value** (string, integer) - the initial value for a text field, can be editable or readonly on your choice;
+- **value** (string, integer) - the initial value for a text field, can be editable or readonly on your choice.
 - **label** (string) - text label of a control. It can be customized by:
 	- **labelAlign** (string) - label alignment towards its container. Possible values are "left" and "right".  In any way, it's placed left to the control; 
     - **labelWidth** (number) - width of the label container; 
-    - **labelPosition** (string) - defines label position related to the input field. The only possible value is "top";
+    - **labelPosition** (string) - defines label position related to the input field. The only possible value is "top".
+- **inputAlign** (string) - input alignment towards its container. Possible values are "left" and "right". An input is left-aligned by default.
 - **type** (string)- type of a text field, can be  either "text" by default, or "password" or "email". Type is vital for [HTML5 input data validation](desktop/data_validation.md#html5).
-- **placeholder** (string) - the initial text in the text field, disappears as you start typing in it;
+- **placeholder** (string) - the initial text in the text field, disappears as you start typing in it.
 - **suggest** (array, string) - collection of suggest values, or the ID of an attached [suggest list](desktop/suggest.md) with these values. 
 
 ##Using HTML Attributes

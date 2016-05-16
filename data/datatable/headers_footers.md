@@ -83,7 +83,8 @@ When the header is presented as an object, it has the following properties:
 3. *rowspan* - the number of rows a cell should span;
 4. *content* - functional header content, [built-in filters](datatable/filtering.md#filtersintheheader) or [group definition](datatable/columns_configuration.md#groupingcolumns);
 5. *rotate* - if *true*, switches header to rotated state;
-6. *height* - defines a custom height for a header line.
+6. *height* - defines a custom height for a header line;
+7. *css* - the name of a css class that will be applied to the column header.
 
 ###Colspan
 
@@ -225,8 +226,8 @@ Colspans and rowspans are used under the same logic as with headers. Footer line
 3. *rowspan* - the number of rows a cell should span;
 4. *content* - the built-in functor of a column (summColumn);
 5. *rotate* - if *true*, switches footer to rotated state;
-6. *height* - defines height for a footer line.
-
+6. *height* - defines height for a footer line;
+7. *css* - the name of a css class that will be applied to the column footer.
 
 {{snippet
 Colspans in footer

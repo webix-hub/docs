@@ -58,7 +58,7 @@ var rangeslider = webix.ui({
 - api/link/ui.rangeslider_refresh.md - repaints the component
 - api/link/ui.rangeslider_render.md - renders the specified item or the whole component
 - api/link/ui.rangeslider_resize.md - adjusts the view to a new size
-- api/link/ui.rangeslider_setbottomtext.md - 
+- api/link/ui.rangeslider_setbottomtext.md - sets the input label at the bottom of it
 - api/link/ui.rangeslider_setvalue.md - sets a new value for the component
 - api/link/ui.rangeslider_show.md - makes the component visible
 - api/link/ui.rangeslider_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
