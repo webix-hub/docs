@@ -1,0 +1,103 @@
+Events
+=======
+
+{{api
+- api/link/ui.path_onafteradd_event.md - fires after adding item to datastore
+- api/link/ui.path_onaftercontextmenu_event.md - fires after the context menu was called in the item area
+- api/link/ui.path_onafterdelete_event.md - fires after item deleting
+- api/link/ui.path_onafterdrop_event.md - fires after drag-n-drop was finished
+- api/link/ui.path_onafterload_event.md - fires after data loading is complete
+- api/link/ui.path_onafterrender_event.md - occurs immediately after the component has been rendered
+- api/link/ui.path_onafterscroll_event.md - occurs when some webix view has been scrolled
+- api/link/ui.path_onafterselect_event.md - fires after item was selected
+- api/link/ui.path_onaftersort_event.md - fires after sorting dataset
+- api/link/ui.path_onbeforeadd_event.md - fires before adding item to datastore
+- api/link/ui.path_onbeforecontextmenu_event.md - fires before the context menu is called in the item area
+- api/link/ui.path_onbeforedelete_event.md - fires before item deleting
+- api/link/ui.path_onbeforedrag_event.md - fires before the mouse button is pressed and the cursor is moved over a draggable item
+- api/link/ui.path_onbeforedragin_event.md - fires before a dragged element is moved over the droppable area
+- api/link/ui.path_onbeforedrop_event.md - fires before a dragged element is released over the droppable area
+- api/link/ui.path_onbeforedropout_event.md - fires before a dragged element is released over the droppable area
+- api/link/ui.path_onbeforeload_event.md - occurs immediately before data loading has been started
+- api/link/ui.path_onbeforerender_event.md - occurs immediately before the component has been rendered
+- api/link/ui.path_onbeforeselect_event.md - fires before item selection is started
+- api/link/ui.path_onbeforesort_event.md - fires before sorting dataset
+- api/link/ui.path_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.path_onblur_event.md - fires when focus is moved out of the view
+- api/link/ui.path_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
+- api/link/ui.path_ondataupdate_event.md - fires when data item is in update process
+- api/link/ui.path_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.path_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
+- api/link/ui.path_onfocus_event.md - fires when a view gets focus
+- api/link/ui.path_onitemclick_event.md - fires when a component item was clicked
+- api/link/ui.path_onitemdblclick_event.md - fires when a component item was double-clicked
+- api/link/ui.path_onitemrender_event.md - for each item rendering, occurs only for items with custom templates
+- api/link/ui.path_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
+- api/link/ui.path_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
+- api/link/ui.path_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
+- api/link/ui.path_onmousemove_event.md - fires when the mouse was moved over the specified component
+- api/link/ui.path_onmousemoving_event.md - fires when the mouse was moved over the component
+- api/link/ui.path_onmouseout_event.md - fires when the mouse was moved out from the specified item
+- api/link/ui.path_onpaste_event.md - fires when the user presses CTRL+V keys combination
+- api/link/ui.path_onselectchange_event.md - fires after selection state was changed
+- api/link/ui.path_onswipex_event.md - occurs on a horizontal swipe movement
+- api/link/ui.path_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.path_ontimedkeypress_event.md - fires after typing has been finished in the field
+- api/link/ui.path_ontouchend_event.md - occurs when the touch event is ended
+- api/link/ui.path_ontouchmove_event.md - occurs during touch movement
+- api/link/ui.path_ontouchstart_event.md - when some webix view has been touched
+- api/link/ui.path_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation
+- api/link/ui.path_onvalidationsuccess_event.md - fires after the newlyloaded/added/edited data has passes validation successfully
+- api/link/ui.path_onviewresize_event.md - view size was changed by resizer
+}}
+
+@index:
+- api/link/ui.path_onafteradd_event.md
+- api/link/ui.path_onaftercontextmenu_event.md
+- api/link/ui.path_onafterdelete_event.md
+- api/link/ui.path_onafterdrop_event.md
+- api/link/ui.path_onafterload_event.md
+- api/link/ui.path_onafterrender_event.md
+- api/link/ui.path_onafterscroll_event.md
+- api/link/ui.path_onafterselect_event.md
+- api/link/ui.path_onaftersort_event.md
+- api/link/ui.path_onbeforeadd_event.md
+- api/link/ui.path_onbeforecontextmenu_event.md
+- api/link/ui.path_onbeforedelete_event.md
+- api/link/ui.path_onbeforedrag_event.md
+- api/link/ui.path_onbeforedragin_event.md
+- api/link/ui.path_onbeforedrop_event.md
+- api/link/ui.path_onbeforedropout_event.md
+- api/link/ui.path_onbeforeload_event.md
+- api/link/ui.path_onbeforerender_event.md
+- api/link/ui.path_onbeforeselect_event.md
+- api/link/ui.path_onbeforesort_event.md
+- api/link/ui.path_onbindrequest_event.md
+- api/link/ui.path_onblur_event.md
+- api/link/ui.path_ondatarequest_event.md
+- api/link/ui.path_ondataupdate_event.md
+- api/link/ui.path_ondestruct_event.md
+- api/link/ui.path_ondragout_event.md
+- api/link/ui.path_onfocus_event.md
+- api/link/ui.path_onitemclick_event.md
+- api/link/ui.path_onitemdblclick_event.md
+- api/link/ui.path_onitemrender_event.md
+- api/link/ui.path_onkeypress_event.md
+- api/link/ui.path_onloaderror_event.md
+- api/link/ui.path_onlongtouch_event.md
+- api/link/ui.path_onmousemove_event.md
+- api/link/ui.path_onmousemoving_event.md
+- api/link/ui.path_onmouseout_event.md
+- api/link/ui.path_onpaste_event.md
+- api/link/ui.path_onselectchange_event.md
+- api/link/ui.path_onswipex_event.md
+- api/link/ui.path_onswipey_event.md
+- api/link/ui.path_ontimedkeypress_event.md
+- api/link/ui.path_ontouchend_event.md
+- api/link/ui.path_ontouchmove_event.md
+- api/link/ui.path_ontouchstart_event.md
+- api/link/ui.path_onvalidationerror_event.md
+- api/link/ui.path_onvalidationsuccess_event.md
+- api/link/ui.path_onviewresize_event.md
+
+

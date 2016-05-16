@@ -1,14 +1,24 @@
 Mobile Scheduler
 ===================
 
+API Reference
+---------------
+
+- [Methods, properties and events](api/refs/ui.scheduler.md)
+- [Samples](http://docs.webix.com/samples/62_scheduler/index.html)
+
+<div class="h2">Overview</div>
+
 Webix Scheduler was developed to be used in mobile web apps that run in Webkit-based browsers on mobile devices (iOS, Android, Blackberry).
-You can download Webix Scheduler by this [link](http://webix.com/scheduler/download.html).<br><br>
+You can download Webix Scheduler by this [link](http://webix.com/scheduler/download.html).<br>
+
 
 <table  style='border-left:none !important;' cellspacing="0" cellpadding="5" border="0">
 	<tbody>
     	<tr>
-    		<td><img src="mobile_scheduler/front_scheduler.png"/></td>
-    		<td>
+    		<td >
+            <div class="h2">Guides</div>
+
 		    <h4>
 		      Initializating & Configuring Scheduler 
 		    </h4>
@@ -40,6 +50,7 @@ You can download Webix Scheduler by this [link](http://webix.com/scheduler/downl
 		    	<li><a href="mobile_calendar/tips_for_users.md">Tips for dhtmlxScheduler's users</a></li>
        		</ul>
             </td>
+            <td style="padding-left:50px; vertical-align:bottom;"><img src="mobile_scheduler/front_scheduler.png"/></td>
 		</tr>
 	</tbody>
 </table>

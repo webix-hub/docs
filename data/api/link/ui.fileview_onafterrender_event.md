@@ -1,0 +1,1 @@
+@link: api/virtualrenderstack_onafterrender_event.md

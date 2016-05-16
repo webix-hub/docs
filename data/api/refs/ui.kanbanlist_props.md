@@ -1,0 +1,104 @@
+Properties
+==========
+
+{{api
+- api/link/ui.kanbanlist_animate_config.md - defines or disables view change animation.
+- api/link/ui.kanbanlist_autoheight_config.md - enables autosizing to content
+- api/link/ui.kanbanlist_borderless_config.md - used to hide the component borders
+- api/link/ui.kanbanlist_click_config.md - sets an action happening on a button click
+- api/link/ui.kanbanlist_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.kanbanlist_css_config.md - the name of a css class that will be applied to the view container
+- api/link/ui.kanbanlist_data_config.md - JavaScript array containing data for the component
+- api/link/ui.kanbanlist_datafeed_config.md - the URL that the component will use to reload data during binding
+- api/link/ui.kanbanlist_datafetch_config.md - defines the number of records that will be loaded during each dynamic loading request
+- api/link/ui.kanbanlist_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
+- api/link/ui.kanbanlist_datatype_config.md - the type of loaded data
+- api/link/ui.kanbanlist_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.kanbanlist_drag_config.md - enables or disables drag-and-drop
+- api/link/ui.kanbanlist_dragscroll_config.md - enables autoscroll of component during drag-n-drop
+- api/link/ui.kanbanlist_externaldata_config.md - allows defining custom 'move' logic for the component.
+- api/link/ui.kanbanlist_gravity_config.md - sets the view gravity (1 by default)
+- api/link/ui.kanbanlist_height_config.md - sets the height of the component
+- api/link/ui.kanbanlist_hidden_config.md - defines whether the view will be hidden initially
+- api/link/ui.kanbanlist_id_config.md - the component ID
+- api/link/ui.kanbanlist_maxheight_config.md - sets the maximum height for the view
+- api/link/ui.kanbanlist_maxwidth_config.md - sets the maximum width for the view
+- api/link/ui.kanbanlist_minheight_config.md - sets the minimal height for the view
+- api/link/ui.kanbanlist_minwidth_config.md - sets the minimal width for the view
+- api/link/ui.kanbanlist_mouseeventdelay_config.md - the delay between a real mouse action and invoking the related events
+- api/link/ui.kanbanlist_multiselect_config.md - enables multiselect mode
+- api/link/ui.kanbanlist_navigation_config.md - activates the selection keyboard navigation
+- api/link/ui.kanbanlist_on_config.md - allows attaching custom handlers to inner events of the component
+- api/link/ui.kanbanlist_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
+- api/link/ui.kanbanlist_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
+- api/link/ui.kanbanlist_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.kanbanlist_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
+- api/link/ui.kanbanlist_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
+- api/ui.kanbanlist_prerender_config.md - 
+- api/link/ui.kanbanlist_ready_config.md - event handler called just after the component has been completely initialized
+- api/link/ui.kanbanlist_removemissed_config.md - defines how to treat items in case of reloading
+- api/link/ui.kanbanlist_rules_config.md - set of validation rules for the component
+- api/link/ui.kanbanlist_save_config.md - defines URLs for data saving
+- api/link/ui.kanbanlist_scheme_config.md - defines schemes for data processing
+- api/link/ui.kanbanlist_scroll_config.md - enables/disables the scroll bar
+- api/link/ui.kanbanlist_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
+- api/link/ui.kanbanlist_select_config.md - enables/disables item selection or multiselection in grouplist
+- api/link/ui.kanbanlist_template_config.md - the component template
+- api/link/ui.kanbanlist_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.kanbanlist_type_config.md - object that specifies items presentation
+- api/link/ui.kanbanlist_url_config.md - the URL which the component will use to load data after its initialization
+- api/link/ui.kanbanlist_width_config.md - sets the width of the component
+- api/link/ui.kanbanlist_xcount_config.md - adjusts the view width to display the defined number of items in a row
+- api/link/ui.kanbanlist_ycount_config.md - adjusts the view height to display the defined number of items in a column
+}}
+
+@index:
+- api/link/ui.kanbanlist_animate_config.md
+- api/link/ui.kanbanlist_autoheight_config.md
+- api/link/ui.kanbanlist_borderless_config.md
+- api/link/ui.kanbanlist_click_config.md
+- api/link/ui.kanbanlist_container_config.md
+- api/link/ui.kanbanlist_css_config.md
+- api/link/ui.kanbanlist_data_config.md
+- api/link/ui.kanbanlist_datafeed_config.md
+- api/link/ui.kanbanlist_datafetch_config.md
+- api/link/ui.kanbanlist_datathrottle_config.md
+- api/link/ui.kanbanlist_datatype_config.md
+- api/link/ui.kanbanlist_disabled_config.md
+- api/link/ui.kanbanlist_drag_config.md
+- api/link/ui.kanbanlist_dragscroll_config.md
+- api/link/ui.kanbanlist_externaldata_config.md
+- api/link/ui.kanbanlist_gravity_config.md
+- api/link/ui.kanbanlist_height_config.md
+- api/link/ui.kanbanlist_hidden_config.md
+- api/link/ui.kanbanlist_id_config.md
+- api/link/ui.kanbanlist_maxheight_config.md
+- api/link/ui.kanbanlist_maxwidth_config.md
+- api/link/ui.kanbanlist_minheight_config.md
+- api/link/ui.kanbanlist_minwidth_config.md
+- api/link/ui.kanbanlist_mouseeventdelay_config.md
+- api/link/ui.kanbanlist_multiselect_config.md
+- api/link/ui.kanbanlist_navigation_config.md
+- api/link/ui.kanbanlist_on_config.md
+- api/link/ui.kanbanlist_onclick_config.md
+- api/link/ui.kanbanlist_oncontext_config.md
+- api/link/ui.kanbanlist_ondblclick_config.md
+- api/link/ui.kanbanlist_onmousemove_config.md
+- api/link/ui.kanbanlist_pager_config.md
+- api/ui.kanbanlist_prerender_config.md
+- api/link/ui.kanbanlist_ready_config.md
+- api/link/ui.kanbanlist_removemissed_config.md
+- api/link/ui.kanbanlist_rules_config.md
+- api/link/ui.kanbanlist_save_config.md
+- api/link/ui.kanbanlist_scheme_config.md
+- api/link/ui.kanbanlist_scroll_config.md
+- api/link/ui.kanbanlist_scrollspeed_config.md
+- api/link/ui.kanbanlist_select_config.md
+- api/link/ui.kanbanlist_template_config.md
+- api/link/ui.kanbanlist_tooltip_config.md
+- api/link/ui.kanbanlist_type_config.md
+- api/link/ui.kanbanlist_url_config.md
+- api/link/ui.kanbanlist_width_config.md
+- api/link/ui.kanbanlist_xcount_config.md
+- api/link/ui.kanbanlist_ycount_config.md
+

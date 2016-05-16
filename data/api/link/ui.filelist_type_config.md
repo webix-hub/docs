@@ -1,0 +1,1 @@
+@link: api/renderstack_type_config.md

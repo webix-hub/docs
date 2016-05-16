@@ -1,0 +1,1 @@
+@link: api/ui.accordion_panelclass_config.md

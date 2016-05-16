@@ -1,0 +1,1 @@
+@link: api/editability_geteditor.md

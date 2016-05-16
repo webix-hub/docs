@@ -1,6 +1,16 @@
 File Manager
 ==============
 
+API Reference
+--------------
+
+- [Methods, properties and events](api/refs/ui.filemanager.md)
+- [Samples](http://docs.webix.com/samples/64_file_manager/index.html)
+
+
+<div class="h2">Overview</div>
+
+
 Webix File Manager is intended for viewing folders and files and navigating through them in a handy way.
 
 This tool lets you perform all habitual operations with files and folders (copy/paste, rename, delete), as well as drag-n-drop them.
@@ -12,6 +22,7 @@ Apart from files, File Manager allows working with any kind of hierarchical data
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="file_manager/front.png"/>
 
+<div class="h2">Guides</div>
 
 <table  style='border-left:none !important;' cellspacing="0" cellpadding="5" border="0">
 	<tbody>

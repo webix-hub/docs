@@ -1,0 +1,146 @@
+Properties
+==========
+
+{{api
+- api/link/ui.filemenu_animate_config.md - defines or disables view change animation.
+- api/link/ui.filemenu_autofit_config.md - adjusts window size to the size of an html node it is initiated in
+- api/link/ui.filemenu_autofocus_config.md - sets focus on the window the moment it appears on the page
+- api/link/ui.filemenu_autoheight_config.md - height of view will be adjusted to show all items
+- api/link/ui.filemenu_autowidth_config.md - width of view will be adjusted to show all items
+- api/link/ui.filemenu_body_config.md - the content of window body: template or view
+- api/link/ui.filemenu_borderless_config.md - used to hide the component borders
+- api/link/ui.filemenu_click_config.md - sets an action happening on a button click
+- api/link/ui.filemenu_clipboard_config.md - enables/disables clipboard support
+- api/link/ui.filemenu_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.filemenu_css_config.md - the name of a css class that will be applied to the view container
+- api/link/ui.filemenu_data_config.md - JavaScript array containing data for the component
+- api/link/ui.filemenu_datafeed_config.md - the URL that the component will use to reload data during binding
+- api/link/ui.filemenu_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
+- api/link/ui.filemenu_datatype_config.md - the type of loaded data
+- api/link/ui.filemenu_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.filemenu_drag_config.md - enables or disables drag-and-drop
+- api/link/ui.filemenu_dragscroll_config.md - enables autoscroll of component during drag-n-drop
+- api/link/ui.filemenu_externaldata_config.md - allows defining custom 'move' logic for the component.
+- api/link/ui.filemenu_gravity_config.md - sets the view gravity (1 by default)
+- api/link/ui.filemenu_head_config.md - sets the view header
+- api/link/ui.filemenu_headheight_config.md - defines the header height (43 by default)
+- api/link/ui.filemenu_height_config.md - sets the height of the component
+- api/link/ui.filemenu_hidden_config.md - defines whether the view will be hidden initially
+- api/link/ui.filemenu_id_config.md - the component ID
+- api/link/ui.filemenu_layout_config.md - defines x or y orientation of layout
+- api/link/ui.filemenu_left_config.md - the left offset of the window
+- api/link/ui.filemenu_master_config.md - the area for which context object in initialized
+- api/link/ui.filemenu_maxheight_config.md - sets the maximum height for the view
+- api/link/ui.filemenu_maxwidth_config.md - sets the maximum width for the view
+- api/link/ui.filemenu_minheight_config.md - sets the minimal height for the view
+- api/link/ui.filemenu_minwidth_config.md - sets the minimal width for the view
+- api/link/ui.filemenu_modal_config.md - switches window modality
+- api/link/ui.filemenu_mouseeventdelay_config.md - the delay between a real mouse action and invoking the related events
+- api/link/ui.filemenu_move_config.md - makes view movable
+- api/link/ui.filemenu_multiselect_config.md - enables multiselect mode
+- api/link/ui.filemenu_navigation_config.md - activates the selection keyboard navigation
+- api/link/ui.filemenu_on_config.md - allows attaching custom handlers to inner events of the component
+- api/link/ui.filemenu_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
+- api/link/ui.filemenu_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
+- api/link/ui.filemenu_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.filemenu_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
+- api/link/ui.filemenu_openaction_config.md - alters the way of submenu opening to "click"
+- api/link/ui.filemenu_padding_config.md - sets paddings of the chart content
+- api/link/ui.filemenu_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
+- api/link/ui.filemenu_position_config.md - sets position of the window relative to the the screen
+- api/link/ui.filemenu_ready_config.md - event handler called just after the component has been completely initialized
+- api/link/ui.filemenu_relative_config.md - positions a popup window relative to the component it's connected with
+- api/link/ui.filemenu_removemissed_config.md - defines how to treat items in case of reloading
+- api/link/ui.filemenu_resize_config.md - enables/disables window resizing
+- api/link/ui.filemenu_rules_config.md - set of validation rules for the component
+- api/link/ui.filemenu_save_config.md - defines URLs for data saving
+- api/link/ui.filemenu_scheme_config.md - defines schemes for data processing
+- api/link/ui.filemenu_scroll_config.md - enables/disables the scroll bar
+- api/link/ui.filemenu_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
+- api/link/ui.filemenu_select_config.md - enables/disables item selection or multiselection in grouplist
+- api/link/ui.filemenu_submenupos_config.md - aligns submenu towards main menu
+- api/link/ui.filemenu_submenuconfig_config.md - defines submenu configuration
+- api/link/ui.filemenu_template_config.md - the component template
+- api/link/ui.filemenu_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
+- api/link/ui.filemenu_tofront_config.md - places window above other windows on clicking it
+- api/link/ui.filemenu_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.filemenu_top_config.md - the top offset of a window
+- api/link/ui.filemenu_type_config.md - object that specifies items presentation
+- api/link/ui.filemenu_url_config.md - the URL which the component will use to load data after its initialization
+- api/link/ui.filemenu_width_config.md - sets the width of the component
+- api/link/ui.filemenu_xcount_config.md - defines width of view in items
+- api/link/ui.filemenu_ycount_config.md - defines height of view in items
+- api/link/ui.filemenu_zindex_config.md - stack order of the component
+}}
+
+@index:
+- api/link/ui.filemenu_animate_config.md
+- api/link/ui.filemenu_autofit_config.md
+- api/link/ui.filemenu_autofocus_config.md
+- api/link/ui.filemenu_autoheight_config.md
+- api/link/ui.filemenu_autowidth_config.md
+- api/link/ui.filemenu_body_config.md
+- api/link/ui.filemenu_borderless_config.md
+- api/link/ui.filemenu_click_config.md
+- api/link/ui.filemenu_clipboard_config.md
+- api/link/ui.filemenu_container_config.md
+- api/link/ui.filemenu_css_config.md
+- api/link/ui.filemenu_data_config.md
+- api/link/ui.filemenu_datafeed_config.md
+- api/link/ui.filemenu_datathrottle_config.md
+- api/link/ui.filemenu_datatype_config.md
+- api/link/ui.filemenu_disabled_config.md
+- api/link/ui.filemenu_drag_config.md
+- api/link/ui.filemenu_dragscroll_config.md
+- api/link/ui.filemenu_externaldata_config.md
+- api/link/ui.filemenu_gravity_config.md
+- api/link/ui.filemenu_head_config.md
+- api/link/ui.filemenu_headheight_config.md
+- api/link/ui.filemenu_height_config.md
+- api/link/ui.filemenu_hidden_config.md
+- api/link/ui.filemenu_id_config.md
+- api/link/ui.filemenu_layout_config.md
+- api/link/ui.filemenu_left_config.md
+- api/link/ui.filemenu_master_config.md
+- api/link/ui.filemenu_maxheight_config.md
+- api/link/ui.filemenu_maxwidth_config.md
+- api/link/ui.filemenu_minheight_config.md
+- api/link/ui.filemenu_minwidth_config.md
+- api/link/ui.filemenu_modal_config.md
+- api/link/ui.filemenu_mouseeventdelay_config.md
+- api/link/ui.filemenu_move_config.md
+- api/link/ui.filemenu_multiselect_config.md
+- api/link/ui.filemenu_navigation_config.md
+- api/link/ui.filemenu_on_config.md
+- api/link/ui.filemenu_onclick_config.md
+- api/link/ui.filemenu_oncontext_config.md
+- api/link/ui.filemenu_ondblclick_config.md
+- api/link/ui.filemenu_onmousemove_config.md
+- api/link/ui.filemenu_openaction_config.md
+- api/link/ui.filemenu_padding_config.md
+- api/link/ui.filemenu_pager_config.md
+- api/link/ui.filemenu_position_config.md
+- api/link/ui.filemenu_ready_config.md
+- api/link/ui.filemenu_relative_config.md
+- api/link/ui.filemenu_removemissed_config.md
+- api/link/ui.filemenu_resize_config.md
+- api/link/ui.filemenu_rules_config.md
+- api/link/ui.filemenu_save_config.md
+- api/link/ui.filemenu_scheme_config.md
+- api/link/ui.filemenu_scroll_config.md
+- api/link/ui.filemenu_scrollspeed_config.md
+- api/link/ui.filemenu_select_config.md
+- api/link/ui.filemenu_submenupos_config.md
+- api/link/ui.filemenu_submenuconfig_config.md
+- api/link/ui.filemenu_template_config.md
+- api/link/ui.filemenu_templatecopy_config.md
+- api/link/ui.filemenu_tofront_config.md
+- api/link/ui.filemenu_tooltip_config.md
+- api/link/ui.filemenu_top_config.md
+- api/link/ui.filemenu_type_config.md
+- api/link/ui.filemenu_url_config.md
+- api/link/ui.filemenu_width_config.md
+- api/link/ui.filemenu_xcount_config.md
+- api/link/ui.filemenu_ycount_config.md
+- api/link/ui.filemenu_zindex_config.md
+

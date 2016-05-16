@@ -1,0 +1,179 @@
+Events
+=======
+
+{{api
+- api/link/ui.filetable_onafteradd_event.md - fires after adding item to datastore
+- api/link/ui.filetable_onafterareaadd_event.md - fires after a select area was added
+- api/link/ui.filetable_onafterarearemove_event.md - fires after a select area was removed
+- api/link/ui.filetable_onafterblockselect_event.md - event occurs after block selection
+- api/link/ui.filetable_onaftercolumndrop_event.md - fires after the column has been dragged and dropped to the target position
+- api/link/ui.filetable_onaftercolumndroporder_event.md - fires after the column order was changed with the help of drag-and-drop
+- api/link/ui.filetable_onaftercolumnhide_event.md - fires after a column was hidden in datatable
+- api/link/ui.filetable_onaftercolumnshow_event.md - fires when a column is shown in datatable
+- api/link/ui.filetable_onaftercontextmenu_event.md - fires after the context menu was called in the item area
+- api/link/ui.filetable_onafterdelete_event.md - fires after item deleting
+- api/link/ui.filetable_onafterdrop_event.md - fires after drag-n-drop was finished
+- api/link/ui.filetable_onaftereditstart_event.md - fires after edit operation was initiated, editor opened and ready for input
+- api/link/ui.filetable_onaftereditstop_event.md - fires after edit operation finished
+- api/link/ui.filetable_onafterfilter_event.md - occurs after datatable was filtered
+- api/link/ui.filetable_onafterload_event.md - fires after data loading is complete
+- api/link/ui.filetable_onafterrender_event.md - occurs each time after the view is rendered
+- api/link/ui.filetable_onafterscroll_event.md - occurs when some webix view has been scrolled
+- api/link/ui.filetable_onafterselect_event.md - fires after a cell is selected
+- api/link/ui.filetable_onaftersort_event.md - fires after sorting dataset
+- api/link/ui.filetable_onafterunselect_event.md - fires after a cell is unselected
+- api/link/ui.filetable_onareadrag_event.md - fires when area selection is started
+- api/link/ui.filetable_onbeforeadd_event.md - fires before adding item to datastore
+- api/link/ui.filetable_onbeforeareaadd_event.md - fires before a select area is added
+- api/link/ui.filetable_onbeforearearemove_event.md - fires before a select area is removed
+- api/link/ui.filetable_onbeforeblockselect_event.md - event occurs before block selection
+- api/link/ui.filetable_onbeforecolumndrag_event.md - fires the monent you start dragging the column from its source potition
+- api/link/ui.filetable_onbeforecolumndrop_event.md - fires the moment you drop the column to its target position
+- api/link/ui.filetable_onbeforecolumndroporder_event.md - fires the moment you drop the column over the target area
+- api/link/ui.filetable_onbeforecolumnhide_event.md - fires before a column is hidden in datatable
+- api/link/ui.filetable_onbeforecolumnshow_event.md - fires before a column is shown in datatable
+- api/link/ui.filetable_onbeforecontextmenu_event.md - fires before the context menu is called in the item area
+- api/link/ui.filetable_onbeforedelete_event.md - fires before item deleting
+- api/link/ui.filetable_onbeforedrag_event.md - fires before the mouse button is pressed and the cursor is moved over a draggable item
+- api/link/ui.filetable_onbeforedragin_event.md - fires before a dragged element is moved over the droppable area
+- api/link/ui.filetable_onbeforedrop_event.md - fires before a dragged element is released over the droppable area
+- api/link/ui.filetable_onbeforedropout_event.md - fires before a dragged element is released over the droppable area
+- api/link/ui.filetable_onbeforeeditstart_event.md - fires before edit operation is initiated
+- api/link/ui.filetable_onbeforeeditstop_event.md - fires before stop edit command is received
+- api/link/ui.filetable_onbeforefilter_event.md - called when filtering process is started, but data is not filtered yet
+- api/link/ui.filetable_onbeforeload_event.md - occurs immediately before data loading has been started
+- api/link/ui.filetable_onbeforerender_event.md - occurs each time before the view is rendered
+- api/link/ui.filetable_onbeforeselect_event.md - fires before a cell is selected
+- api/link/ui.filetable_onbeforesort_event.md - fires before sorting dataset
+- api/link/ui.filetable_onbeforeunselect_event.md - fired before a cell is unselected
+- api/link/ui.filetable_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/link/ui.filetable_onblur_event.md - fires when focus is moved out of the view
+- api/link/ui.filetable_oncheck_event.md - fires when a checkbox is checked or unchecked in the datatable item
+- api/link/ui.filetable_oncollectvalues_event.md - fires after datatable has collected options
+- api/link/ui.filetable_oncolumnresize_event.md - fires when width of column was changed
+- api/link/ui.filetable_oncolumnresizeaction_event.md - 
+- api/link/ui.filetable_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
+- api/link/ui.filetable_ondataupdate_event.md - fires when data item is in update process
+- api/link/ui.filetable_ondestruct_event.md - occurs when component destroyed
+- api/link/ui.filetable_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
+- api/link/ui.filetable_onfocus_event.md - fires when a view gets focus
+- api/link/ui.filetable_onheaderclick_event.md - occurs after clicking on header
+- api/link/ui.filetable_onitemclick_event.md - fires when a component item was clicked
+- api/link/ui.filetable_onitemdblclick_event.md - fires when a component item was double-clicked
+- api/link/ui.filetable_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
+- api/link/ui.filetable_onliveedit_event.md - occurs when data was changed in the editor
+- api/link/ui.filetable_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
+- api/link/ui.filetable_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
+- api/link/ui.filetable_onmousemove_event.md - fires when the mouse was moved over the specified component
+- api/link/ui.filetable_onmousemoving_event.md - fires when the mouse was moved over the component
+- api/link/ui.filetable_onmouseout_event.md - fires when the mouse was moved out from the specified item
+- api/link/ui.filetable_onresize_event.md - fires when the width or height of DataTable was changed
+- api/link/ui.filetable_onrowresize_event.md - fires when height of row was changed
+- api/link/ui.filetable_onscrollx_event.md - fires when the user scrolls the table left or right
+- api/link/ui.filetable_onscrolly_event.md - fires when the user scrolls the table up or down
+- api/link/ui.filetable_onselectchange_event.md - fires when selection is changed in a DataTable
+- api/link/ui.filetable_onstructureload_event.md - fires when the structure of DataTable (columns configuration) is initialized
+- api/link/ui.filetable_onstructureupdate_event.md - fires when structure of datatable was changed ( column added, hidden or reconfigured )
+- api/link/ui.filetable_onsubviewclose_event.md - fires after a subview or a subrow is closed
+- api/link/ui.filetable_onsubviewcreate_event.md - fires after a subview was created
+- api/link/ui.filetable_onsubviewopen_event.md - fires after a subview or a subrow is opened
+- api/link/ui.filetable_onsubviewrender_event.md - fires each time subview is rendered
+- api/link/ui.filetable_onswipex_event.md - occurs on a horizontal swipe movement
+- api/link/ui.filetable_onswipey_event.md - occurs on a vertical swipe movement
+- api/link/ui.filetable_ontimedkeypress_event.md - fires after typing has been finished in the field
+- api/link/ui.filetable_ontouchend_event.md - occurs when the touch event is ended
+- api/link/ui.filetable_ontouchmove_event.md - occurs during touch movement
+- api/link/ui.filetable_ontouchstart_event.md - when some webix view has been touched
+- api/link/ui.filetable_onvalidationerror_event.md - fires when newly loaded/added/edited data fails to pass validation
+- api/link/ui.filetable_onvalidationsuccess_event.md - fires after the newlyloaded/added/edited data has passes validation successfully
+- api/link/ui.filetable_onviewresize_event.md - view size was changed by resizer
+}}
+
+@index:
+- api/link/ui.filetable_onafteradd_event.md
+- api/link/ui.filetable_onafterareaadd_event.md
+- api/link/ui.filetable_onafterarearemove_event.md
+- api/link/ui.filetable_onafterblockselect_event.md
+- api/link/ui.filetable_onaftercolumndrop_event.md
+- api/link/ui.filetable_onaftercolumndroporder_event.md
+- api/link/ui.filetable_onaftercolumnhide_event.md
+- api/link/ui.filetable_onaftercolumnshow_event.md
+- api/link/ui.filetable_onaftercontextmenu_event.md
+- api/link/ui.filetable_onafterdelete_event.md
+- api/link/ui.filetable_onafterdrop_event.md
+- api/link/ui.filetable_onaftereditstart_event.md
+- api/link/ui.filetable_onaftereditstop_event.md
+- api/link/ui.filetable_onafterfilter_event.md
+- api/link/ui.filetable_onafterload_event.md
+- api/link/ui.filetable_onafterrender_event.md
+- api/link/ui.filetable_onafterscroll_event.md
+- api/link/ui.filetable_onafterselect_event.md
+- api/link/ui.filetable_onaftersort_event.md
+- api/link/ui.filetable_onafterunselect_event.md
+- api/link/ui.filetable_onareadrag_event.md
+- api/link/ui.filetable_onbeforeadd_event.md
+- api/link/ui.filetable_onbeforeareaadd_event.md
+- api/link/ui.filetable_onbeforearearemove_event.md
+- api/link/ui.filetable_onbeforeblockselect_event.md
+- api/link/ui.filetable_onbeforecolumndrag_event.md
+- api/link/ui.filetable_onbeforecolumndrop_event.md
+- api/link/ui.filetable_onbeforecolumndroporder_event.md
+- api/link/ui.filetable_onbeforecolumnhide_event.md
+- api/link/ui.filetable_onbeforecolumnshow_event.md
+- api/link/ui.filetable_onbeforecontextmenu_event.md
+- api/link/ui.filetable_onbeforedelete_event.md
+- api/link/ui.filetable_onbeforedrag_event.md
+- api/link/ui.filetable_onbeforedragin_event.md
+- api/link/ui.filetable_onbeforedrop_event.md
+- api/link/ui.filetable_onbeforedropout_event.md
+- api/link/ui.filetable_onbeforeeditstart_event.md
+- api/link/ui.filetable_onbeforeeditstop_event.md
+- api/link/ui.filetable_onbeforefilter_event.md
+- api/link/ui.filetable_onbeforeload_event.md
+- api/link/ui.filetable_onbeforerender_event.md
+- api/link/ui.filetable_onbeforeselect_event.md
+- api/link/ui.filetable_onbeforesort_event.md
+- api/link/ui.filetable_onbeforeunselect_event.md
+- api/link/ui.filetable_onbindrequest_event.md
+- api/link/ui.filetable_onblur_event.md
+- api/link/ui.filetable_oncheck_event.md
+- api/link/ui.filetable_oncollectvalues_event.md
+- api/link/ui.filetable_oncolumnresize_event.md
+- api/link/ui.filetable_oncolumnresizeaction_event.md
+- api/link/ui.filetable_ondatarequest_event.md
+- api/link/ui.filetable_ondataupdate_event.md
+- api/link/ui.filetable_ondestruct_event.md
+- api/link/ui.filetable_ondragout_event.md
+- api/link/ui.filetable_onfocus_event.md
+- api/link/ui.filetable_onheaderclick_event.md
+- api/link/ui.filetable_onitemclick_event.md
+- api/link/ui.filetable_onitemdblclick_event.md
+- api/link/ui.filetable_onkeypress_event.md
+- api/link/ui.filetable_onliveedit_event.md
+- api/link/ui.filetable_onloaderror_event.md
+- api/link/ui.filetable_onlongtouch_event.md
+- api/link/ui.filetable_onmousemove_event.md
+- api/link/ui.filetable_onmousemoving_event.md
+- api/link/ui.filetable_onmouseout_event.md
+- api/link/ui.filetable_onresize_event.md
+- api/link/ui.filetable_onrowresize_event.md
+- api/link/ui.filetable_onscrollx_event.md
+- api/link/ui.filetable_onscrolly_event.md
+- api/link/ui.filetable_onselectchange_event.md
+- api/link/ui.filetable_onstructureload_event.md
+- api/link/ui.filetable_onstructureupdate_event.md
+- api/link/ui.filetable_onsubviewclose_event.md
+- api/link/ui.filetable_onsubviewcreate_event.md
+- api/link/ui.filetable_onsubviewopen_event.md
+- api/link/ui.filetable_onsubviewrender_event.md
+- api/link/ui.filetable_onswipex_event.md
+- api/link/ui.filetable_onswipey_event.md
+- api/link/ui.filetable_ontimedkeypress_event.md
+- api/link/ui.filetable_ontouchend_event.md
+- api/link/ui.filetable_ontouchmove_event.md
+- api/link/ui.filetable_ontouchstart_event.md
+- api/link/ui.filetable_onvalidationerror_event.md
+- api/link/ui.filetable_onvalidationsuccess_event.md
+- api/link/ui.filetable_onviewresize_event.md
+
+
