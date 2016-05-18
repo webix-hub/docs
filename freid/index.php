@@ -21,6 +21,7 @@
 	<script src="<?php echo $js_root; ?>pivot/codebase/pivot.js" type="text/javascript" charset="utf-8"></script>
 	<script src="<?php echo $js_root; ?>filemanager/codebase/filemanager.js" type="text/javascript" charset="utf-8"></script>
 	<script src="<?php echo $js_root; ?>kanban/codebase/kanban.js" type="text/javascript" charset="utf-8"></script>
+	<script src="<?php echo $js_root; ?>scheduler/codebase/scheduler.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../index.php?action=freid" type="text/javascript" charset="utf-8"></script>
 
 	<script type="text/javascript">

@@ -142,6 +142,7 @@ webix.ui({
 - **chartType** - *string* - sets the default chart type;
 - **chartMap** - *object* - can be used to redefine default types of a chart ('bar', 'line', 'radar') or add a new one ('stacked bar' or 'area') ([details](#custom_type));
 - **filterWidth** - *number* - sets the width of filters (both input and label) in the header of the chart;
+- **filterMinWidth** - *number* - sets the minimal width of filters (both input and label) in the header of the chart;
 - **filterLabelWidth** - *number* - sets the width of the filters' labels;
 - **filterLabelAlign** - *string* - sets the horizontal alignment of the filters' labels;
 - **editButtonWidth** - *number* - sets the width of the "Settings" button;
@@ -313,7 +314,7 @@ In this case, you can use the **fieldMap** property to set beautiful names for c
 
 ~~~js
 webix.ui({
-	view:"pivot",
+	view:"pivot-chart",
 	fieldMap:{ "a1" : "GDP", "a2" : "Grow ratio" },
 	//...
 });

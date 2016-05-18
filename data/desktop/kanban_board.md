@@ -48,7 +48,6 @@ Fully written in JavaScript and CSS this component can be integrated in any web 
                 <li>kanban/work_with_data.md</li>
                 <li>kanban/editing_items.md</li>
                 <li>kanban/events.md</li>
-                <li>kanban/api_reference.md</li>
                 <li>kanban/howto.md</li>
             </ul>
 		</td>
@@ -67,5 +66,4 @@ Fully written in JavaScript and CSS this component can be integrated in any web 
 - kanban/work_with_data.md
 - kanban/editing_items.md
 - kanban/events.md
-- kanban/api_reference.md
 - kanban/howto.md

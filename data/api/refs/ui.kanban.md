@@ -1,10 +1,37 @@
 ui.kanban 
 =============
 
+{{memo A kanban board for effective organization of team work.}}
 
-dummy stub
+Webix Kanban Board is highly customizable and can be adjusted to your needs with ease. 
+Due to its rich API, the widget allows creating Kanban boards of various structure and complexity, 
+adding, editing, filtering tasks, tuning their appearance, assigning tasks to the team members, etc.
 
-{{todo replace with real description. }}
+Check desktop/kanban_board.md documentation for more information.
+
+###Constructor 
+
+~~~js
+var kanban = webix.ui({
+    view:"kanban", 
+    type:"space",
+    cols:[
+        { header:"Backlog",
+            body:{ view:"kanbanlist", status:"new" }},
+        { header:"In Progress",
+            body:{ view:"kanbanlist", status:"work" }},
+        { header:"Done",
+            body:{ view:"kanbanlist", status:"done" }}
+    ],
+    url: "tasks.php"
+});
+~~~
+
+### Where to start
+
+- [Overview of the Kanban Board Widget](desktop/kanban_board.md)
+- [Samples](http://docs.webix.com/samples/63_kanban/index.html)
+
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.headerlayout.md">ui.headerlayout</a>, <a href="api/refs/ui.accordion.md">ui.accordion</a>, <a href="api/refs/ui.layout.md">ui.layout</a>, <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>

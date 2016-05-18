@@ -2,6 +2,35 @@ ui.pivot
 =============
 
 
+{{memo A datatable with advanced filtering capabilities.}}
+
+Webix Pivot allows quickly processing huge complex datasets and creating clear reports on their basis. 
+You can easily customize this component and proceed with comparing, filtering and sorting data - all within one table.
+
+Check desktop/pivot.md documentation for more information.
+
+###Constructor 
+
+~~~js
+var pivot = webix.ui({
+	view:"pivot",
+	structure: {
+		rows: ["form", "name"],
+        columns: ["year"],
+        values: [
+            { name: "gdp", operation: "sum"},
+            { name: "oil", operation: "sum"}
+        ],
+        filters: []
+	},
+	data: pivot_data
+});
+~~~
+
+### Where to start
+
+- [Overview of the Pivot Widget](desktop/pivot.md)
+- [Samples](http://docs.webix.com/samples/61_pivot/index.html)
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/idspace.md">IdSpace</a>, <a href="api/refs/ui.layout.md">ui.layout</a>, <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a></div>
