@@ -10,7 +10,6 @@ Methods
 - api/link/ui.filemanager_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.filemanager_callevent.md - calls an inner event
 - api/link/ui.filemanager_clearall.md - removes all items from the component
-- api/ui.filemanager_clearbranch.md - 
 - api/link/ui.filemanager_copy.md - makes a copy of item
 - api/ui.filemanager_copyfile.md - 
 - api/link/ui.filemanager_count.md - returns the number of currently visible items
@@ -111,7 +110,6 @@ Methods
 - api/link/ui.filemanager_blockevent.md
 - api/link/ui.filemanager_callevent.md
 - api/link/ui.filemanager_clearall.md
-- api/ui.filemanager_clearbranch.md
 - api/link/ui.filemanager_copy.md
 - api/ui.filemanager_copyfile.md
 - api/link/ui.filemanager_count.md

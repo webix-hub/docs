@@ -2,7 +2,7 @@ $dropAllow
 =============
 
 
-@short: can be redefine if you need custom drop rules
+@short: can be redefined, if you need custom drop rules
 	
 
 @type: function

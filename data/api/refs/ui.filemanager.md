@@ -2,9 +2,26 @@ ui.filemanager
 =============
 
 
-dummy stub
+{{memo A handy widget for navigation and manipulation of files and folders.}}
 
-{{todo replace with real description. }}
+File Manager is a powerful tool for working with different hierarchical data. It allows easily navigating through items, moving them, performing CRUD operations and uploading new elements.
+
+Check desktop/file_manager.md  documentation for more information.
+
+###Constructor 
+
+~~~js
+var filemanager = webix.ui({
+    view:"filemanager",
+    id:"files"
+});
+$$("files").load("files.php");
+~~~
+
+### Where to start
+
+- [Overview of the File Manager Widget](desktop/file_manager.md)
+- [Samples](http://docs.webix.com/samples/64_file_manager/index.html)
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/progressbar.md">ProgressBar</a>, <a href="api/refs/idspace.md">IdSpace</a>, <a href="api/refs/ui.layout.md">ui.layout</a>, <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/treedatamove.md">TreeDataMove</a>, <a href="api/refs/treedataloader.md">TreeDataLoader</a>, <a href="api/refs/treestore.md">TreeStore</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a></div>
@@ -20,8 +37,7 @@ dummy stub
 - api/link/ui.filemanager_bind.md - binds components
 - api/link/ui.filemanager_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.filemanager_callevent.md - calls an inner event
-- api/link/ui.filemanager_clearall.md - removes all items from the component
-- api/ui.filemanager_clearbranch.md - 
+- api/link/ui.filemanager_clearall.md - removes all items from the component 
 - api/link/ui.filemanager_copy.md - makes a copy of item
 - api/ui.filemanager_copyfile.md - 
 - api/link/ui.filemanager_count.md - returns the number of currently visible items
