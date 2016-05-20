@@ -216,7 +216,7 @@ dummy stub
 - api/link/ui.kanbanlist_$dragout_other.md - method called when item moved out of possible drop landing during dnd
 - api/ui.kanbanlist_$dragpos_other.md - 
 - api/link/ui.kanbanlist_$drop_other.md - method called when item dragged and dropped on valid target
-- api/link/ui.kanbanlist_$dropallow_other.md - can be redefine if you need custom drop rules
+- api/link/ui.kanbanlist_$dropallow_other.md - can be redefined, if you need custom drop rules
 - api/link/ui.kanbanlist_$getsize_other.md - returns the current size of the component
 - api/link/ui.kanbanlist_$height_other.md - current height of the view
 - api/ui.kanbanlist_$kanban_other.md - 

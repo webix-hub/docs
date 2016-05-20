@@ -51,11 +51,11 @@ Events
 - api/link/ui.filetable_oncheck_event.md - fires when a checkbox is checked or unchecked in the datatable item
 - api/link/ui.filetable_oncollectvalues_event.md - fires after datatable has collected options
 - api/link/ui.filetable_oncolumnresize_event.md - fires when width of column was changed
-- api/link/ui.filetable_oncolumnresizeaction_event.md - 
 - api/link/ui.filetable_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.filetable_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.filetable_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.filetable_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
+- api/link/ui.filetable_oneditorchange_event.md - 
 - api/link/ui.filetable_onfocus_event.md - fires when a view gets focus
 - api/link/ui.filetable_onheaderclick_event.md - occurs after clicking on header
 - api/link/ui.filetable_onitemclick_event.md - fires when a component item was clicked
@@ -139,11 +139,11 @@ Events
 - api/link/ui.filetable_oncheck_event.md
 - api/link/ui.filetable_oncollectvalues_event.md
 - api/link/ui.filetable_oncolumnresize_event.md
-- api/link/ui.filetable_oncolumnresizeaction_event.md
 - api/link/ui.filetable_ondatarequest_event.md
 - api/link/ui.filetable_ondataupdate_event.md
 - api/link/ui.filetable_ondestruct_event.md
 - api/link/ui.filetable_ondragout_event.md
+- api/link/ui.filetable_oneditorchange_event.md
 - api/link/ui.filetable_onfocus_event.md
 - api/link/ui.filetable_onheaderclick_event.md
 - api/link/ui.filetable_onitemclick_event.md

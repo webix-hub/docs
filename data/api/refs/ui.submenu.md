@@ -271,7 +271,7 @@ webix.ui({
 - api/link/ui.submenu_$dragmark_other.md - method called during dnd when some item in the component need to be marked as active drop target
 - api/link/ui.submenu_$dragout_other.md - method called when item moved out of possible drop landing during dnd
 - api/link/ui.submenu_$drop_other.md - method called when item dragged and dropped on valid target
-- api/link/ui.submenu_$dropallow_other.md - can be redefine if you need custom drop rules
+- api/link/ui.submenu_$dropallow_other.md - can be redefined, if you need custom drop rules
 - api/link/ui.submenu_$getsize_other.md - returns the current size of the component
 - api/link/ui.submenu_$height_other.md - current height of the view
 - api/link/ui.submenu_$scope_other.md - scope for resolving event and method names

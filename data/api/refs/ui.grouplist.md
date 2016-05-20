@@ -244,7 +244,7 @@ var grouplist = webix.ui({
 - api/link/ui.grouplist_$dragmark_other.md - method called during dnd when some item in the component need to be marked as active drop target
 - api/link/ui.grouplist_$dragout_other.md - method called when item moved out of possible drop landing during dnd
 - api/link/ui.grouplist_$drop_other.md - method called when item dragged and dropped on valid target
-- api/link/ui.grouplist_$dropallow_other.md - can be redefine if you need custom drop rules
+- api/link/ui.grouplist_$dropallow_other.md - can be redefined, if you need custom drop rules
 - api/link/ui.grouplist_$getsize_other.md - returns the current size of the component
 - api/link/ui.grouplist_$height_other.md - current height of the view
 - api/link/ui.grouplist_$scope_other.md - scope for resolving event and method names

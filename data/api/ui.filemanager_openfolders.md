@@ -6,12 +6,11 @@ openFolders
 	check 
 
 @short:
-	
+	opens folders in case of dynamic loading
 
 @params:
-- folders
 
-
+- folders		array			an array of folders to open, starting from the upper one
 
 
 @example:

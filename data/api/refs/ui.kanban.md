@@ -1,7 +1,8 @@
 ui.kanban 
 =============
 
-{{memo A kanban board for effective organization of team work.}}
+
+{{memo A kanban board for effective organization of team work.. }}
 
 Webix Kanban Board is highly customizable and can be adjusted to your needs with ease. 
 Due to its rich API, the widget allows creating Kanban boards of various structure and complexity, 
@@ -17,11 +18,11 @@ var kanban = webix.ui({
     type:"space",
     cols:[
         { header:"Backlog",
-            body:{ view:"kanbanlist", status:"new" }},
+            body:{ view:"kanbanlist", status:"new". }},
         { header:"In Progress",
-            body:{ view:"kanbanlist", status:"work" }},
+            body:{ view:"kanbanlist", status:"work". }},
         { header:"Done",
-            body:{ view:"kanbanlist", status:"done" }}
+            body:{ view:"kanbanlist", status:"done". }}
     ],
     url: "tasks.php"
 });
@@ -31,8 +32,6 @@ var kanban = webix.ui({
 
 - [Overview of the Kanban Board Widget](desktop/kanban_board.md)
 - [Samples](http://docs.webix.com/samples/63_kanban/index.html)
-
-
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.headerlayout.md">ui.headerlayout</a>, <a href="api/refs/ui.accordion.md">ui.accordion</a>, <a href="api/refs/ui.layout.md">ui.layout</a>, <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
@@ -53,7 +52,7 @@ var kanban = webix.ui({
 - api/link/ui.kanban_destructor.md - destructs the calling object
 - api/link/ui.kanban_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.kanban_disable.md - disables the calling view (makes it dimmed and unclickable)
-- api/ui.kanban_eachlist.md - 
+- api/ui.kanban_eachlist.md - iterates over all lists in Kanban and calls a function for them
 - api/link/ui.kanban_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.kanban_exists.md - checks whether an item with the specified id exists
 - api/link/ui.kanban_filter.md - filters the component
@@ -67,10 +66,10 @@ var kanban = webix.ui({
 - api/link/ui.kanban_getlastid.md - returns the id of the last item
 - api/link/ui.kanban_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.kanban_getnode.md - returns the main HTML container for the calling object
-- api/ui.kanban_getownerlist.md - 
+- api/ui.kanban_getownerlist.md - returns Kanbanlist view that displays an item
 - api/link/ui.kanban_getparentview.md - returns the parent view of the component
 - api/link/ui.kanban_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
-- api/ui.kanban_getselectedid.md - 
+- api/ui.kanban_getselectedid.md - returns the id of the selected task
 - api/link/ui.kanban_gettopparentview.md - returns top parent view
 - api/link/ui.kanban_hasevent.md - checks whether the component has the specified event
 - api/link/ui.kanban_hide.md - hides the view
@@ -87,7 +86,7 @@ var kanban = webix.ui({
 - api/link/ui.kanban_removeview.md - removes view from layout-like component
 - api/link/ui.kanban_resize.md - adjusts the view to a new size
 - api/link/ui.kanban_resizechildren.md - resizes all children of the calling component
-- api/ui.kanban_select.md - 
+- api/ui.kanban_select.md - selects the specified task
 - api/link/ui.kanban_serialize.md - serializes data to a JSON object
 - api/link/ui.kanban_show.md - makes the component visible
 - api/link/ui.kanban_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
@@ -140,7 +139,7 @@ var kanban = webix.ui({
 - api/link/ui.kanban_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.kanban_id_config.md - the component ID
 - api/link/ui.kanban_isolate_config.md - masks IDs of all inner element
-- api/ui.kanban_listfilter_config.md - 
+- api/ui.kanban_listfilter_config.md - a filter for items: defines which items will be included in a certain list
 - api/link/ui.kanban_margin_config.md - defines the space around elements (applies the specified value to all elements)
 - api/link/ui.kanban_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.kanban_maxwidth_config.md - sets the maximum width for the view

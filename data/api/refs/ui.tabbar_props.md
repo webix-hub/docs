@@ -19,13 +19,13 @@ Properties
 - api/link/ui.tabbar_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.tabbar_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/link/ui.tabbar_id_config.md - the component ID
-- api/link/ui.tabbar_inputalign_config.md - 
+- api/link/ui.tabbar_inputalign_config.md - the alignment of an input towards its container
 - api/link/ui.tabbar_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.tabbar_inputpadding_config.md - padding of text in the input
 - api/link/ui.tabbar_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.tabbar_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.tabbar_label_config.md - the text label of the control
-- api/link/ui.tabbar_labelalign_config.md - 
+- api/link/ui.tabbar_labelalign_config.md - the alignment of a label towards its container
 - api/link/ui.tabbar_labelposition_config.md - positions label in relation to the control
 - api/link/ui.tabbar_labelwidth_config.md - the width of the label
 - api/link/ui.tabbar_maxheight_config.md - sets the maximum height for the view

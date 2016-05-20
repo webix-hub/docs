@@ -61,6 +61,7 @@ webix.ui({
 - api/link/ui.tabbar_getvalue.md - returns the current value of the control
 - api/link/ui.tabbar_hasevent.md - checks whether the component has the specified event
 - api/link/ui.tabbar_hide.md - hides the view
+- api/link/ui.tabbar_hideoption.md - 
 - api/link/ui.tabbar_isenabled.md - checks whether the view is enabled
 - api/link/ui.tabbar_isvisible.md - checks whether the view is visible
 - api/link/ui.tabbar_mapevent.md - routes events from one object to another
@@ -72,6 +73,7 @@ webix.ui({
 - api/link/ui.tabbar_setbottomtext.md - sets the input label at the bottom of it
 - api/link/ui.tabbar_setvalue.md - sets a new value for the component
 - api/link/ui.tabbar_show.md - makes the component visible
+- api/link/ui.tabbar_showoption.md - 
 - api/link/ui.tabbar_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.tabbar_unbind.md - breaks "bind" link
 - api/link/ui.tabbar_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
@@ -128,13 +130,13 @@ webix.ui({
 - api/link/ui.tabbar_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.tabbar_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/link/ui.tabbar_id_config.md - the component ID
-- api/link/ui.tabbar_inputalign_config.md - 
+- api/link/ui.tabbar_inputalign_config.md - the alignment of an input towards its container
 - api/link/ui.tabbar_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.tabbar_inputpadding_config.md - padding of text in the input
 - api/link/ui.tabbar_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.tabbar_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.tabbar_label_config.md - the text label of the control
-- api/link/ui.tabbar_labelalign_config.md - 
+- api/link/ui.tabbar_labelalign_config.md - the alignment of a label towards its container
 - api/link/ui.tabbar_labelposition_config.md - positions label in relation to the control
 - api/link/ui.tabbar_labelwidth_config.md - the width of the label
 - api/link/ui.tabbar_maxheight_config.md - sets the maximum height for the view

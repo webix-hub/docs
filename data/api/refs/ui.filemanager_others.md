@@ -3,7 +3,7 @@ Others
 
 {{api
 - api/link/ui.filemanager_$$_other.md - locates sub-item by id
-- api/link/ui.filemanager_$dropallow_other.md - can be redefine if you need custom drop rules
+- api/link/ui.filemanager_$dropallow_other.md - can be redefined, if you need custom drop rules
 - api/link/ui.filemanager_$getsize_other.md - returns the current size of the component
 - api/link/ui.filemanager_$height_other.md - current height of the view
 - api/link/ui.filemanager_$setsize_other.md - sets the component size

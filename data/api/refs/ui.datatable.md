@@ -232,11 +232,11 @@ var datatable = webix.ui({
 - api/ui.datatable_oncheck_event.md - fires when a checkbox is checked or unchecked in the datatable item
 - api/ui.datatable_oncollectvalues_event.md - fires after datatable has collected options
 - api/ui.datatable_oncolumnresize_event.md - fires when width of column was changed
-- api/ui.datatable_oncolumnresizeaction_event.md - 
 - api/link/ui.datatable_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.datatable_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.datatable_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.datatable_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
+- api/ui.datatable_oneditorchange_event.md - 
 - api/link/ui.datatable_onfocus_event.md - fires when a view gets focus
 - api/ui.datatable_onheaderclick_event.md - occurs after clicking on header
 - api/link/ui.datatable_onitemclick_event.md - fires when a component item was clicked
@@ -374,7 +374,7 @@ var datatable = webix.ui({
 - api/link/ui.datatable_$dragmark_other.md - method called during dnd when some item in the component need to be marked as active drop target
 - api/link/ui.datatable_$dragout_other.md - method called when item moved out of possible drop landing during dnd
 - api/link/ui.datatable_$drop_other.md - method called when item dragged and dropped on valid target
-- api/link/ui.datatable_$dropallow_other.md - can be redefine if you need custom drop rules
+- api/link/ui.datatable_$dropallow_other.md - can be redefined, if you need custom drop rules
 - api/link/ui.datatable_$getsize_other.md - returns the current size of the component
 - api/link/ui.datatable_$height_other.md - current height of the view
 - api/link/ui.datatable_$scope_other.md - scope for resolving event and method names

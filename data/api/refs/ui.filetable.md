@@ -201,11 +201,11 @@ dummy stub
 - api/link/ui.filetable_oncheck_event.md - fires when a checkbox is checked or unchecked in the datatable item
 - api/link/ui.filetable_oncollectvalues_event.md - fires after datatable has collected options
 - api/link/ui.filetable_oncolumnresize_event.md - fires when width of column was changed
-- api/link/ui.filetable_oncolumnresizeaction_event.md - 
 - api/link/ui.filetable_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.filetable_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.filetable_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.filetable_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
+- api/link/ui.filetable_oneditorchange_event.md - 
 - api/link/ui.filetable_onfocus_event.md - fires when a view gets focus
 - api/link/ui.filetable_onheaderclick_event.md - occurs after clicking on header
 - api/link/ui.filetable_onitemclick_event.md - fires when a component item was clicked
@@ -344,7 +344,7 @@ dummy stub
 - api/link/ui.filetable_$dragmark_other.md - method called during dnd when some item in the component need to be marked as active drop target
 - api/link/ui.filetable_$dragout_other.md - method called when item moved out of possible drop landing during dnd
 - api/link/ui.filetable_$drop_other.md - method called when item dragged and dropped on valid target
-- api/link/ui.filetable_$dropallow_other.md - can be redefine if you need custom drop rules
+- api/link/ui.filetable_$dropallow_other.md - can be redefined, if you need custom drop rules
 - api/link/ui.filetable_$getsize_other.md - returns the current size of the component
 - api/link/ui.filetable_$height_other.md - current height of the view
 - api/link/ui.filetable_$scope_other.md - scope for resolving event and method names

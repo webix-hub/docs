@@ -203,6 +203,7 @@ dummy stub
 - api/link/ui.excelviewer_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.excelviewer_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.excelviewer_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
+- api/link/ui.excelviewer_oneditorchange_event.md - 
 - api/link/ui.excelviewer_onfocus_event.md - fires when a view gets focus
 - api/link/ui.excelviewer_onheaderclick_event.md - occurs after clicking on header
 - api/link/ui.excelviewer_onitemclick_event.md - fires when a component item was clicked
@@ -342,7 +343,7 @@ dummy stub
 - api/link/ui.excelviewer_$dragmark_other.md - method called during dnd when some item in the component need to be marked as active drop target
 - api/link/ui.excelviewer_$dragout_other.md - method called when item moved out of possible drop landing during dnd
 - api/link/ui.excelviewer_$drop_other.md - method called when item dragged and dropped on valid target
-- api/link/ui.excelviewer_$dropallow_other.md - can be redefine if you need custom drop rules
+- api/link/ui.excelviewer_$dropallow_other.md - can be redefined, if you need custom drop rules
 - api/link/ui.excelviewer_$getsize_other.md - returns the current size of the component
 - api/link/ui.excelviewer_$height_other.md - current height of the view
 - api/ui.excelviewer_$onload_other.md - 

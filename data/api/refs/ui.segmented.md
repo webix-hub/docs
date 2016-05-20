@@ -54,6 +54,7 @@ var segmented = webix.ui({
 - api/link/ui.segmented_getvalue.md - returns the current value of the control
 - api/link/ui.segmented_hasevent.md - checks whether the component has the specified event
 - api/link/ui.segmented_hide.md - hides the view
+- api/ui.segmented_hideoption.md - 
 - api/link/ui.segmented_isenabled.md - checks whether the view is enabled
 - api/link/ui.segmented_isvisible.md - checks whether the view is visible
 - api/link/ui.segmented_mapevent.md - routes events from one object to another
@@ -65,6 +66,7 @@ var segmented = webix.ui({
 - api/link/ui.segmented_setbottomtext.md - sets the input label at the bottom of it
 - api/link/ui.segmented_setvalue.md - sets a new value for the component
 - api/link/ui.segmented_show.md - makes the component visible
+- api/ui.segmented_showoption.md - 
 - api/link/ui.segmented_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.segmented_unbind.md - breaks "bind" link
 - api/link/ui.segmented_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
@@ -119,13 +121,13 @@ var segmented = webix.ui({
 - api/link/ui.segmented_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.segmented_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/link/ui.segmented_id_config.md - the component ID
-- api/link/ui.segmented_inputalign_config.md - 
+- api/link/ui.segmented_inputalign_config.md - the alignment of an input towards its container
 - api/link/ui.segmented_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.segmented_inputpadding_config.md - padding of text in the input
 - api/link/ui.segmented_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.segmented_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.segmented_label_config.md - the text label of the control
-- api/link/ui.segmented_labelalign_config.md - 
+- api/link/ui.segmented_labelalign_config.md - the alignment of a label towards its container
 - api/link/ui.segmented_labelposition_config.md - positions label in relation to the control
 - api/link/ui.segmented_labelwidth_config.md - the width of the label
 - api/link/ui.segmented_maxheight_config.md - sets the maximum height for the view

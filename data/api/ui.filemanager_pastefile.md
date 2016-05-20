@@ -18,3 +18,5 @@ fmanager.pasteFile(id);
 @template:	api_method
 @descr:
 
+@relatedapi:
+api/ui.filemanager_onbeforepastefile_event.md

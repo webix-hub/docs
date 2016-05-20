@@ -13,7 +13,7 @@ Others
 - api/link/ui.pivot_$width_other.md - current width of the view
 - api/link/ui.pivot_config_other.md - all options from initial component configuration
 - api/link/ui.pivot_name_other.md - indicates the name of the component (a read-only property)
-- api/ui.pivot_operations_other.md - 
+- api/ui.pivot_operations_other.md - gets an object with possible mathematical operations in Pivot
 - api/ui.pivot_version_other.md - 
 }}
 

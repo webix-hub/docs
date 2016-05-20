@@ -17,3 +17,5 @@ fmanager.createFolder(targetId);
 @template:	api_method
 @descr:
 
+@relatedapi:
+api/ui.filemanager_onbeforecreatefolder_event.md

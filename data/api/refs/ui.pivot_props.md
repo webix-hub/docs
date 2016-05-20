@@ -5,7 +5,7 @@ Properties
 - api/link/ui.pivot_animate_config.md - defines or disables view change animation.
 - api/link/ui.pivot_borderless_config.md - used to hide the component borders
 - api/link/ui.pivot_cols_config.md - array of views objects arranged horizontally
-- api/ui.pivot_columnwidth_config.md - 
+- api/ui.pivot_columnwidth_config.md - defines the default width for columns (in pixels)
 - api/link/ui.pivot_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.pivot_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.pivot_data_config.md - JavaScript array containing data for the component
@@ -13,11 +13,11 @@ Properties
 - api/link/ui.pivot_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.pivot_datatype_config.md - the type of loaded data
 - api/link/ui.pivot_disabled_config.md - indicates whether an item is enabled or not
-- api/ui.pivot_fieldmap_config.md - 
-- api/ui.pivot_filterlabelalign_config.md - 
-- api/ui.pivot_filterlabelwidth_config.md - 
-- api/ui.pivot_filterminwidth_config.md - 
-- api/ui.pivot_filterwidth_config.md - 
+- api/ui.pivot_fieldmap_config.md - defines custom labels for fields
+- api/ui.pivot_filterlabelalign_config.md - sets the horizontal alignment of the filters' labels in Pivot Chart
+- api/ui.pivot_filterlabelwidth_config.md - sets the width of the filters' labels
+- api/ui.pivot_filterminwidth_config.md - sets the minimal width of filters (both input and label) in the header of the chart
+- api/ui.pivot_filterwidth_config.md - sets the width of filters (both input and label) in the header of the chart
 - api/link/ui.pivot_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.pivot_height_config.md - sets the height of the component
 - api/link/ui.pivot_hidden_config.md - defines whether the view will be hidden initially
@@ -43,7 +43,7 @@ Properties
 - api/link/ui.pivot_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.pivot_visiblebatch_config.md - sets the batch that will be shown initially
 - api/link/ui.pivot_width_config.md - sets the width of the component
-- api/ui.pivot_yscalewidth_config.md - 
+- api/ui.pivot_yscalewidth_config.md - sets the width of
 }}
 
 @index:

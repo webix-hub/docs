@@ -239,11 +239,11 @@ var treetable = webix.ui({
 - api/link/ui.treetable_oncheck_event.md - fires when a checkbox is checked or unchecked in the datatable item
 - api/link/ui.treetable_oncollectvalues_event.md - fires after datatable has collected options
 - api/link/ui.treetable_oncolumnresize_event.md - fires when width of column was changed
-- api/ui.treetable_oncolumnresizeaction_event.md - 
 - api/link/ui.treetable_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.treetable_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.treetable_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.treetable_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
+- api/link/ui.treetable_oneditorchange_event.md - 
 - api/link/ui.treetable_onfocus_event.md - fires when a view gets focus
 - api/link/ui.treetable_onheaderclick_event.md - occurs after clicking on header
 - api/link/ui.treetable_onitemcheck_event.md - fires when you check an item in tree and treetable
@@ -383,7 +383,7 @@ var treetable = webix.ui({
 - api/link/ui.treetable_$dragmark_other.md - method called during dnd when some item in the component need to be marked as active drop target
 - api/link/ui.treetable_$dragout_other.md - method called when item moved out of possible drop landing during dnd
 - api/link/ui.treetable_$drop_other.md - method called when item dragged and dropped on valid target
-- api/link/ui.treetable_$dropallow_other.md - can be redefine if you need custom drop rules
+- api/link/ui.treetable_$dropallow_other.md - can be redefined, if you need custom drop rules
 - api/link/ui.treetable_$getsize_other.md - returns the current size of the component
 - api/link/ui.treetable_$height_other.md - current height of the view
 - api/link/ui.treetable_$scope_other.md - scope for resolving event and method names

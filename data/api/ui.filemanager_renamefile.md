@@ -19,3 +19,5 @@ fmanager.renameFile(id,name,property);
 @template:	api_method
 @descr:
 
+@relatedapi:
+api/ui.filemanager_onbeforeeditfile_event.md

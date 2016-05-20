@@ -2,7 +2,7 @@ ui.pivot
 =============
 
 
-{{memo A datatable with advanced filtering capabilities.}}
+{{memo A datatable with advanced filtering capabilities.. }}
 
 Webix Pivot allows quickly processing huge complex datasets and creating clear reports on their basis. 
 You can easily customize this component and proceed with comparing, filtering and sorting data - all within one table.
@@ -32,6 +32,7 @@ var pivot = webix.ui({
 - [Overview of the Pivot Widget](desktop/pivot.md)
 - [Samples](http://docs.webix.com/samples/61_pivot/index.html)
 
+
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/idspace.md">IdSpace</a>, <a href="api/refs/ui.layout.md">ui.layout</a>, <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a></div>
 
@@ -47,7 +48,7 @@ var pivot = webix.ui({
 - api/link/ui.pivot_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.pivot_callevent.md - calls an inner event
 - api/link/ui.pivot_clearall.md - removes all items from the component
-- api/ui.pivot_configure.md - 
+- api/ui.pivot_configure.md - calls the pivot configuration window
 - api/link/ui.pivot_count.md - returns the number of currently visible items
 - api/link/ui.pivot_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.pivot_destructor.md - destroy datastore
@@ -58,8 +59,8 @@ var pivot = webix.ui({
 - api/link/ui.pivot_filter.md - filters the component
 - api/link/ui.pivot_find.md - returns rows that match the criterion
 - api/link/ui.pivot_getchildviews.md - returns child views of the calling component
-- api/ui.pivot_getconfigwindow.md - 
-- api/ui.pivot_getfields.md - 
+- api/ui.pivot_getconfigwindow.md - returns the object of the window with pivot configuration
+- api/ui.pivot_getfields.md - returns an object with detailed description of fields in each sector
 - api/link/ui.pivot_getfirstid.md - returns the ID of the first item
 - api/link/ui.pivot_getformview.md - returns master form for the input
 - api/link/ui.pivot_getidbyindex.md - returns the id of the item with the specified index
@@ -70,7 +71,7 @@ var pivot = webix.ui({
 - api/link/ui.pivot_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.pivot_getparentview.md - returns the parent view of the component
 - api/link/ui.pivot_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
-- api/ui.pivot_getstructure.md - 
+- api/ui.pivot_getstructure.md - returns the current pivot configuration
 - api/link/ui.pivot_gettopparentview.md - returns top parent view
 - api/link/ui.pivot_hasevent.md - checks whether the component has the specified event
 - api/link/ui.pivot_hide.md - hides the view
@@ -86,11 +87,11 @@ var pivot = webix.ui({
 - api/link/ui.pivot_refresh.md - repaints the whole view or a certain item
 - api/link/ui.pivot_remove.md - removes the specified item/items from datastore
 - api/link/ui.pivot_removeview.md - removes view from layout-like component
-- api/ui.pivot_render.md - 
+- api/ui.pivot_render.md - renders a pivot on the page
 - api/link/ui.pivot_resize.md - adjusts the view to a new size
 - api/link/ui.pivot_resizechildren.md - resizes all children of the calling component
 - api/link/ui.pivot_serialize.md - serializes data to a JSON object
-- api/ui.pivot_setstructure.md - 
+- api/ui.pivot_setstructure.md - sets the pivot structure
 - api/link/ui.pivot_show.md - makes the component visible
 - api/link/ui.pivot_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
 - api/link/ui.pivot_sort.md - sorts datastore
@@ -113,15 +114,15 @@ var pivot = webix.ui({
 - api/link/ui.pivot_onbeforeadd_event.md - fires before adding item to datastore
 - api/link/ui.pivot_onbeforedelete_event.md - fires before item deleting
 - api/link/ui.pivot_onbeforeload_event.md - occurs immediately before data loading has been started
-- api/ui.pivot_onbeforerender_event.md - 
+- api/ui.pivot_onbeforerender_event.md - fires just before the pivot is rendered
 - api/link/ui.pivot_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.pivot_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.pivot_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.pivot_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.pivot_ondestruct_event.md - occurs when component destroyed
-- api/ui.pivot_onheaderinit_event.md - 
+- api/ui.pivot_onheaderinit_event.md - fires when pivot header is initialized
 - api/link/ui.pivot_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
-- api/ui.pivot_onpopup_event.md - 
+- api/ui.pivot_onpopup_event.md - fires after a popup for configuring Pivot is created
 }}
 
 
@@ -131,7 +132,7 @@ var pivot = webix.ui({
 - api/link/ui.pivot_animate_config.md - defines or disables view change animation.
 - api/link/ui.pivot_borderless_config.md - used to hide the component borders
 - api/link/ui.pivot_cols_config.md - array of views objects arranged horizontally
-- api/ui.pivot_columnwidth_config.md - 
+- api/ui.pivot_columnwidth_config.md - defines the default width for columns (in pixels)
 - api/link/ui.pivot_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.pivot_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.pivot_data_config.md - JavaScript array containing data for the component
@@ -139,11 +140,11 @@ var pivot = webix.ui({
 - api/link/ui.pivot_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.pivot_datatype_config.md - the type of loaded data
 - api/link/ui.pivot_disabled_config.md - indicates whether an item is enabled or not
-- api/ui.pivot_fieldmap_config.md - 
-- api/ui.pivot_filterlabelalign_config.md - 
-- api/ui.pivot_filterlabelwidth_config.md - 
-- api/ui.pivot_filterminwidth_config.md - 
-- api/ui.pivot_filterwidth_config.md - 
+- api/ui.pivot_fieldmap_config.md - defines custom labels for fields
+- api/ui.pivot_filterlabelalign_config.md - sets the horizontal alignment of the filters' labels in Pivot Chart
+- api/ui.pivot_filterlabelwidth_config.md - sets the width of the filters' labels
+- api/ui.pivot_filterminwidth_config.md - sets the minimal width of filters (both input and label) in the header of the chart
+- api/ui.pivot_filterwidth_config.md - sets the width of filters (both input and label) in the header of the chart
 - api/link/ui.pivot_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.pivot_height_config.md - sets the height of the component
 - api/link/ui.pivot_hidden_config.md - defines whether the view will be hidden initially
@@ -169,7 +170,7 @@ var pivot = webix.ui({
 - api/link/ui.pivot_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.pivot_visiblebatch_config.md - sets the batch that will be shown initially
 - api/link/ui.pivot_width_config.md - sets the width of the component
-- api/ui.pivot_yscalewidth_config.md - 
+- api/ui.pivot_yscalewidth_config.md - sets the width of
 }}
 
 
@@ -191,7 +192,7 @@ var pivot = webix.ui({
 - api/link/ui.pivot_$width_other.md - current width of the view
 - api/link/ui.pivot_config_other.md - all options from initial component configuration
 - api/link/ui.pivot_name_other.md - indicates the name of the component (a read-only property)
-- api/ui.pivot_operations_other.md - 
+- api/ui.pivot_operations_other.md - gets an object with possible mathematical operations in Pivot
 - api/ui.pivot_version_other.md - 
 }}
 

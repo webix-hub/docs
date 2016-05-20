@@ -2,7 +2,7 @@ uploadFile
 =============
 
 @short:
-	opens a file upload dialog
+	opens the file upload dialog
 
 @params:
 
@@ -16,3 +16,6 @@ fmanager.uploadFile(target);
 @template:	api_method
 @descr:
 
+@relatedapi:
+
+api/ui.filemanager_onbeforeuploadfile_event.md

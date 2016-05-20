@@ -15,7 +15,7 @@ Methods
 - api/link/ui.kanban_destructor.md - destructs the calling object
 - api/link/ui.kanban_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.kanban_disable.md - disables the calling view (makes it dimmed and unclickable)
-- api/ui.kanban_eachlist.md - 
+- api/ui.kanban_eachlist.md - iterates over all lists in Kanban and calls a function for them
 - api/link/ui.kanban_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.kanban_exists.md - checks whether an item with the specified id exists
 - api/link/ui.kanban_filter.md - filters the component
@@ -29,10 +29,10 @@ Methods
 - api/link/ui.kanban_getlastid.md - returns the id of the last item
 - api/link/ui.kanban_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.kanban_getnode.md - returns the main HTML container for the calling object
-- api/ui.kanban_getownerlist.md - 
+- api/ui.kanban_getownerlist.md - returns Kanbanlist view that displays an item
 - api/link/ui.kanban_getparentview.md - returns the parent view of the component
 - api/link/ui.kanban_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
-- api/ui.kanban_getselectedid.md - 
+- api/ui.kanban_getselectedid.md - returns the id of the selected task
 - api/link/ui.kanban_gettopparentview.md - returns top parent view
 - api/link/ui.kanban_hasevent.md - checks whether the component has the specified event
 - api/link/ui.kanban_hide.md - hides the view
@@ -49,7 +49,7 @@ Methods
 - api/link/ui.kanban_removeview.md - removes view from layout-like component
 - api/link/ui.kanban_resize.md - adjusts the view to a new size
 - api/link/ui.kanban_resizechildren.md - resizes all children of the calling component
-- api/ui.kanban_select.md - 
+- api/ui.kanban_select.md - selects the specified task
 - api/link/ui.kanban_serialize.md - serializes data to a JSON object
 - api/link/ui.kanban_show.md - makes the component visible
 - api/link/ui.kanban_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name

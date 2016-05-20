@@ -22,7 +22,7 @@ TreeDataMove
 
 
 {{api
-- api/treedatamove_$dropallow_other.md - can be redefine if you need custom drop rules
+- api/treedatamove_$dropallow_other.md - can be redefined, if you need custom drop rules
 }}
 
 

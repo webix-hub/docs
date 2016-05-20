@@ -10,7 +10,7 @@ Methods
 - api/link/ui.pivot_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.pivot_callevent.md - calls an inner event
 - api/link/ui.pivot_clearall.md - removes all items from the component
-- api/ui.pivot_configure.md - 
+- api/ui.pivot_configure.md - calls the pivot configuration window
 - api/link/ui.pivot_count.md - returns the number of currently visible items
 - api/link/ui.pivot_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.pivot_destructor.md - destroy datastore
@@ -21,8 +21,8 @@ Methods
 - api/link/ui.pivot_filter.md - filters the component
 - api/link/ui.pivot_find.md - returns rows that match the criterion
 - api/link/ui.pivot_getchildviews.md - returns child views of the calling component
-- api/ui.pivot_getconfigwindow.md - 
-- api/ui.pivot_getfields.md - 
+- api/ui.pivot_getconfigwindow.md - returns the object of the window with pivot configuration
+- api/ui.pivot_getfields.md - returns an object with detailed description of fields in each sector
 - api/link/ui.pivot_getfirstid.md - returns the ID of the first item
 - api/link/ui.pivot_getformview.md - returns master form for the input
 - api/link/ui.pivot_getidbyindex.md - returns the id of the item with the specified index
@@ -33,7 +33,7 @@ Methods
 - api/link/ui.pivot_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.pivot_getparentview.md - returns the parent view of the component
 - api/link/ui.pivot_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
-- api/ui.pivot_getstructure.md - 
+- api/ui.pivot_getstructure.md - returns the current pivot configuration
 - api/link/ui.pivot_gettopparentview.md - returns top parent view
 - api/link/ui.pivot_hasevent.md - checks whether the component has the specified event
 - api/link/ui.pivot_hide.md - hides the view
@@ -49,11 +49,11 @@ Methods
 - api/link/ui.pivot_refresh.md - repaints the whole view or a certain item
 - api/link/ui.pivot_remove.md - removes the specified item/items from datastore
 - api/link/ui.pivot_removeview.md - removes view from layout-like component
-- api/ui.pivot_render.md - 
+- api/ui.pivot_render.md - renders a pivot on the page
 - api/link/ui.pivot_resize.md - adjusts the view to a new size
 - api/link/ui.pivot_resizechildren.md - resizes all children of the calling component
 - api/link/ui.pivot_serialize.md - serializes data to a JSON object
-- api/ui.pivot_setstructure.md - 
+- api/ui.pivot_setstructure.md - sets the pivot structure
 - api/link/ui.pivot_show.md - makes the component visible
 - api/link/ui.pivot_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
 - api/link/ui.pivot_sort.md - sorts datastore

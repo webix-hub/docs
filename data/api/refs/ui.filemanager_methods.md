@@ -11,26 +11,25 @@ Methods
 - api/link/ui.filemanager_callevent.md - calls an inner event
 - api/link/ui.filemanager_clearall.md - removes all items from the component
 - api/link/ui.filemanager_copy.md - makes a copy of item
-- api/ui.filemanager_copyfile.md - 
+- api/ui.filemanager_copyfile.md - copies a selected file/folder
 - api/link/ui.filemanager_count.md - returns the number of currently visible items
-- api/ui.filemanager_createfolder.md - 
+- api/ui.filemanager_createfolder.md - creates a new folder
 - api/link/ui.filemanager_define.md - redefines a single configuration property (or a hash of properties)
-- api/ui.filemanager_deletefile.md - 
+- api/ui.filemanager_deletefile.md - deletes items by their ids
 - api/link/ui.filemanager_destructor.md - destroy datastore
 - api/link/ui.filemanager_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.filemanager_disable.md - disables the calling view (makes it dimmed and unclickable)
-- api/ui.filemanager_download.md - 
-- api/ui.filemanager_editfile.md - 
+- api/ui.filemanager_download.md - downloads a selected file
+- api/ui.filemanager_editfile.md - opens editor for a certain item in the active view (Tree or Files view)
 - api/link/ui.filemanager_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.filemanager_exists.md - checks whether an item with the specified id exists
-- api/ui.filemanager_fileexists.md - 
 - api/link/ui.filemanager_filter.md - filters the component
 - api/link/ui.filemanager_find.md - returns rows that match the criterion
-- api/ui.filemanager_getactive.md - 
-- api/ui.filemanager_getactiveview.md - 
+- api/ui.filemanager_getactive.md - gets ids of active items
+- api/ui.filemanager_getactiveview.md - gets the reference to the active view (Tree or Files view)
 - api/link/ui.filemanager_getbranchindex.md - gets index of the node in a specific branch
 - api/link/ui.filemanager_getchildviews.md - returns child views of the calling component
-- api/ui.filemanager_getcurrentfolder.md - 
+- api/ui.filemanager_getcurrentfolder.md - gets the name of the folder selected in Tree
 - api/link/ui.filemanager_getfirstchildid.md - gets the ID of the first child of the specified branch
 - api/link/ui.filemanager_getfirstid.md - returns the ID of the first item
 - api/link/ui.filemanager_getformview.md - returns master form for the input
@@ -38,67 +37,65 @@ Methods
 - api/link/ui.filemanager_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.filemanager_getitem.md - gets the object of the data item with the specified id
 - api/link/ui.filemanager_getlastid.md - returns the id of the last item
-- api/ui.filemanager_getmenu.md - 
+- api/ui.filemanager_getmenu.md - gets the popup menu object
 - api/link/ui.filemanager_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.filemanager_getnextsiblingid.md - returns the id of the next sibling of the specified node
 - api/link/ui.filemanager_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.filemanager_getparentid.md - get the ID of the parent node of the specified item
 - api/link/ui.filemanager_getparentview.md - returns the parent view of the component
-- api/ui.filemanager_getpath.md - 
-- api/ui.filemanager_getpathnames.md - 
+- api/ui.filemanager_getpath.md - gets an array of folders' ids in a path
+- api/ui.filemanager_getpathnames.md - gets an array of folders' names in a path
 - api/link/ui.filemanager_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
 - api/link/ui.filemanager_getprevsiblingid.md - returns the id of the previous sibling of the specified node
-- api/ui.filemanager_getsearchdata.md - 
-- api/ui.filemanager_getselectedfile.md - 
+- api/ui.filemanager_getsearchdata.md - gets an array of items (files, folders) that contain text in their names
+- api/ui.filemanager_getselectedfile.md - gets a string or an array with file (folder) name(s) selected in the "table" view
 - api/link/ui.filemanager_gettopparentview.md - returns top parent view
-- api/ui.filemanager_getuploader.md - 
-- api/ui.filemanager_goback.md - 
-- api/ui.filemanager_goforward.md - 
+- api/ui.filemanager_getuploader.md - gets the uploader object
+- api/ui.filemanager_goback.md - goes back in the navigation history
+- api/ui.filemanager_goforward.md - goes forward in the navigation history
 - api/link/ui.filemanager_hasevent.md - checks whether the component has the specified event
 - api/link/ui.filemanager_hide.md - hides the view
 - api/link/ui.filemanager_hideprogress.md - hides a progress bar/icon
-- api/ui.filemanager_hidesearchresults.md - 
-- api/ui.filemanager_hidetree.md - 
+- api/ui.filemanager_hidesearchresults.md - hides search results
+- api/ui.filemanager_hidetree.md - hides the Tree panel
 - api/link/ui.filemanager_index.md - returns the cell index in the layout collection
 - api/link/ui.filemanager_innerid.md - returns the unique inner ID of an item
 - api/link/ui.filemanager_isbranch.md - checks whether the node has any children
 - api/link/ui.filemanager_isenabled.md - checks whether the view is enabled
 - api/link/ui.filemanager_isvisible.md - checks whether the view is visible
-- api/ui.filemanager_levelup.md - 
+- api/ui.filemanager_levelup.md - selects the parent folder
 - api/link/ui.filemanager_load.md - loads data from an external data source.
 - api/link/ui.filemanager_loadbranch.md - loads data to the specified branch, as direct children of the node with the id provided
-- api/ui.filemanager_loaddyndata.md - 
 - api/link/ui.filemanager_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
 - api/link/ui.filemanager_mapevent.md - routes events from one object to another
-- api/ui.filemanager_markcopy.md - 
-- api/ui.filemanager_markcut.md - 
+- api/ui.filemanager_markcopy.md - preselectes files/folders for copy operation
+- api/ui.filemanager_markcut.md - preselectes files/folders for move operation
 - api/link/ui.filemanager_move.md - moves the specified item to the new position
-- api/ui.filemanager_movefile.md - 
-- api/ui.filemanager_openfolders.md - 
+- api/ui.filemanager_movefile.md - moves a selected file/folder
+- api/ui.filemanager_openfolders.md - opens folders in case of dynamic loading
 - api/link/ui.filemanager_parse.md - loads data to the component from an inline data source
-- api/ui.filemanager_parsedata.md - 
-- api/ui.filemanager_pastefile.md - 
+- api/ui.filemanager_pastefile.md - pastes files/folders that were selected for copying or moving
 - api/link/ui.filemanager_reconstruct.md - rebuilds the layout
 - api/link/ui.filemanager_refresh.md - repaints the whole view or a certain item
 - api/link/ui.filemanager_remove.md - removes the specified item/items from datastore
 - api/link/ui.filemanager_removeview.md - removes view from layout-like component
-- api/ui.filemanager_renamefile.md - 
+- api/ui.filemanager_renamefile.md - renames a folder/a file
 - api/link/ui.filemanager_resize.md - adjusts the view to a new size
 - api/link/ui.filemanager_resizechildren.md - resizes all children of the calling component
 - api/link/ui.filemanager_serialize.md - serializes data to a JSON object
-- api/ui.filemanager_setpath.md - 
+- api/ui.filemanager_setpath.md - selects a certain folder and sets path values for it
 - api/link/ui.filemanager_show.md - makes the component visible
 - api/link/ui.filemanager_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
 - api/link/ui.filemanager_showprogress.md - displays a progress bar/ progress icon
-- api/ui.filemanager_showsearchresults.md - 
-- api/ui.filemanager_showtree.md - 
+- api/ui.filemanager_showsearchresults.md - searches text and displays results on the screen
+- api/ui.filemanager_showtree.md - shows the Tree panel
 - api/link/ui.filemanager_sort.md - sorts datastore
 - api/link/ui.filemanager_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.filemanager_ui.md - allows creating new ui, the id of which will be locked in the parent id space
 - api/link/ui.filemanager_unbind.md - breaks "bind" link
 - api/link/ui.filemanager_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.filemanager_updateitem.md - sets properties of the data item
-- api/ui.filemanager_uploadfile.md - 
+- api/ui.filemanager_uploadfile.md - opens a file upload dialog
 }}
 
 @index:
@@ -123,7 +120,6 @@ Methods
 - api/ui.filemanager_editfile.md
 - api/link/ui.filemanager_enable.md
 - api/link/ui.filemanager_exists.md
-- api/ui.filemanager_fileexists.md
 - api/link/ui.filemanager_filter.md
 - api/link/ui.filemanager_find.md
 - api/ui.filemanager_getactive.md
@@ -167,7 +163,6 @@ Methods
 - api/ui.filemanager_levelup.md
 - api/link/ui.filemanager_load.md
 - api/link/ui.filemanager_loadbranch.md
-- api/ui.filemanager_loaddyndata.md
 - api/link/ui.filemanager_loadnext.md
 - api/link/ui.filemanager_mapevent.md
 - api/ui.filemanager_markcopy.md
@@ -176,7 +171,6 @@ Methods
 - api/ui.filemanager_movefile.md
 - api/ui.filemanager_openfolders.md
 - api/link/ui.filemanager_parse.md
-- api/ui.filemanager_parsedata.md
 - api/ui.filemanager_pastefile.md
 - api/link/ui.filemanager_reconstruct.md
 - api/link/ui.filemanager_refresh.md
