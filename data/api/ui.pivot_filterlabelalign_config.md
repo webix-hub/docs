@@ -1,8 +1,6 @@
 filterLabelAlign
 =============
 
-@todo:
-	check 
 
 @short:
 	sets the horizontal alignment of the filters' labels in Pivot Chart 

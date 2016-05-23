@@ -1,9 +1,6 @@
 setStructure
 =============
 
-
-@todo:check!
-
 @short:
 	sets the pivot structure
 

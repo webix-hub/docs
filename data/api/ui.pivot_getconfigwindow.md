@@ -1,9 +1,6 @@
 getConfigWindow
 =============
 
-@todo:
-	check 
-
 @short:
 	returns the object of the window with pivot configuration 
 

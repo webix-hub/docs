@@ -1,12 +1,8 @@
 templateDate
 =============
 
-@todo:
-	check 
-
-
 @short:
-	defines a template applied for the format of folder/file's date of modification
+	specifies the format of folder/file's date of modification
 
 @type: function
 @example:

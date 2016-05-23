@@ -1,10 +1,6 @@
 openFolders
 =============
 
-
-@todo:
-	check 
-
 @short:
 	opens folders in case of dynamic loading
 

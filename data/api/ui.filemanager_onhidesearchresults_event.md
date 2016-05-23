@@ -1,9 +1,6 @@
 onHideSearchResults
 =============
 
-@todo:
-	check
-
 @short:
 	fires when search results were hidden
 

@@ -1,10 +1,6 @@
 filterLabelWidth
 =============
 
-@todo:
-	check
-
-
 @short:
 	sets the width of the filters' labels
 

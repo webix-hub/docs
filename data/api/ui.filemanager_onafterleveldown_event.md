@@ -1,15 +1,12 @@
 onAfterLevelDown
 =============
 
-@todo:
-	check!
-
 @short:
-	fires after selection has been moved one level down
+	fires after selection has been moved to the child folder
 
 @params:
 
-- id		string		
+- id		string			the new selected folder id		
 
 @example:
 fmanager.attachEvent("onAfterLevelDown", function(id){

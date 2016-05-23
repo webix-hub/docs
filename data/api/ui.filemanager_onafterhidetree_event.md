@@ -1,9 +1,6 @@
 onAfterHideTree
 =============
 
-@todo:
-	check 
-
 @short:
 	fires after the tree has been hidden 
 

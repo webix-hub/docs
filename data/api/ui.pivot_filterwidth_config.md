@@ -1,12 +1,8 @@
 filterWidth
 =============
 
-@todo:
-	check 
-
-
 @short:
-	sets the width of filters (both input and label) in the header of the chart
+	sets the width of filters (both input and label) in the pivot header
 
 @type: number
 @example:

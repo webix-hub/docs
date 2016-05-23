@@ -1,10 +1,6 @@
 columnWidth
 =============
 
-@todo:
-	check 
-
-
 @short:
 	defines the default width for columns (in pixels)
 

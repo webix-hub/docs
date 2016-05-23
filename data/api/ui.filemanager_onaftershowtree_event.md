@@ -1,9 +1,6 @@
 onAfterShowTree
 =============
 
-@todo:
-	check 
-
 @short:
 	fires after the tree has been shown
 

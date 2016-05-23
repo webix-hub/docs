@@ -1,9 +1,6 @@
 fieldMap
 =============
 
-@todo:
-	check 
-
 @short:
 	defines custom labels for fields
 

@@ -6,7 +6,7 @@ version
 
 
 @short:
-	
+	the library version
 
 @type:
 

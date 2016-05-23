@@ -1,9 +1,6 @@
 onItemRename
 =============
 
-@todo:
-	check 
-
 @short:
 	fires when an item is renamed
 

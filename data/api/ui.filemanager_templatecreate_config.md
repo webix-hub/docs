@@ -1,10 +1,8 @@
 templateCreate
 =============
 
-@todo: check
-
 @short:
-	defines a template for a newly created folder
+	specifies properties for a newly created folder
 
 @type: function
 @example:

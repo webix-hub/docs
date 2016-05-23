@@ -1,8 +1,6 @@
 getStructure
 =============
 
-@todo:
-	check 
 
 @short:
 	returns the current pivot configuration

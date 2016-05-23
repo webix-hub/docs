@@ -1,12 +1,8 @@
 templateType
 =============
 
-@todo:
-	check!
-
-
 @short:
-	defines a template applied for the file type
+	specifies the type of a file
 
 @type: function
 @example:

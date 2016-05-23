@@ -1,9 +1,6 @@
 onHeaderInit
 =============
 
-@todo:
-	check! 
-
 @short:
 	fires when pivot header is initialized
 

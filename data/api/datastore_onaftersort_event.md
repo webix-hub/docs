@@ -6,9 +6,9 @@ onAfterSort
 	fires after sorting dataset
 
 @params:
-- by		string,function		template of sort-by field
-- dir		string		direction of sorting
-- as		string,function  	type of sorting
+- by		string/function			template of sort-by field
+- dir		string					direction of sorting
+- as		string/function  		type of sorting
 
 @example: 
 	

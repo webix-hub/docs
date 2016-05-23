@@ -1,10 +1,6 @@
 render
 =============
 
-
-@todo:
-	check 
-
 @short:
 	renders a pivot on the page
 

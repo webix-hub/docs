@@ -1,15 +1,14 @@
 onAfterRun
 =============
 
-@todo:
-	check
 
 @short:
-	fires after a file has been run
+	fires after a selected file has been downloaded
 
 @params:
 
-- id		string			the file id
+- id		string			the id of the downloaded item
+
 
 @example:
 fmanager.attachEvent("onAfterRun",function(id){

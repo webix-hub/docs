@@ -1,11 +1,9 @@
 templateName
 =============
 
-@todo:
-	check 
 
 @short:
-	defines a template applied for the folder/file's name
+	specifies how the folder/file's name will be displayed in File Manager
 
 @type: function
 @example:

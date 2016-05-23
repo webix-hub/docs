@@ -1,11 +1,9 @@
 configure
 =============
 
-@todo:
-	check 
 
 @short:
-	calls the pivot configuration window 
+	opens the pivot configuration window 
 
 @params:
 

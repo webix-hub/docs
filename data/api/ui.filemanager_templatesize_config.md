@@ -1,12 +1,8 @@
 templateSize
 =============
 
-@todo:
-	check 
-
-
 @short:
-	defines a template applied for the file size
+	specifies the file size
 
 @type: function
 @example:

@@ -1,9 +1,6 @@
 onBeforeShowTree
 =============
 
-@todo:
-	check
-
 @short:
 	fires before the tree is expanded
 

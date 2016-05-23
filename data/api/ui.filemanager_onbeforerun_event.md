@@ -1,25 +1,30 @@
 onBeforeRun
 =============
 
-@todo:
-	check
-
 @short:
-	fires before a file is run
+	fires before a selected file is downloaded
 
 @params:
 
-- id		string			the file id
+- id		string			the id of the downloaded item
 
 @returns:
 
-- result		boolean			returning false will prevent file running
+- result		boolean			if an event handler returns false, the onBeforeRun handler will not be called
 
 
 @example:
-fmanager.attachEvent("onBeforeRun", function(id){
-	// code here
-    return true;
+$$("fmanager").attachEvent("onBeforeRun",function(id){
+    webix.confirm({
+        text:"Do you want to download this file?",
+        ok:"Yes",
+        cancel:"No",
+        callback:function(result){
+            if(result)
+                $$("files").download(id);
+        }
+    });
+    return false;
 });
 
 @template:	api_event

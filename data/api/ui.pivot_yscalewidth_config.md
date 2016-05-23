@@ -1,12 +1,8 @@
 yScaleWidth
 =============
 
-@todo:
-	check 
-
-
 @short:
-	sets the width of
+	sets the width of the first column
 
 @type: number
 @example:

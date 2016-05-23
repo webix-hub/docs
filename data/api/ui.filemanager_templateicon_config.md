@@ -1,12 +1,8 @@
 templateIcon
 =============
 
-@todo:
-	check
-
-
 @short:
-	defines a template for icons that can be customized (used in "files" and "table" views)
+	a customizable template for icons in "Files" and "Table" view modes
 
 @type: function
 @example:

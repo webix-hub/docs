@@ -1,9 +1,6 @@
 onBeforeRender
 =============
 
-@todo:
-	check 
-
 @short:
 	fires just before the pivot is rendered
 

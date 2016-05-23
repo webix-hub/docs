@@ -1,7 +1,6 @@
 onBeforeMarkCopy
 =============
 
-@todo: check the ids type
 
 @short:
 	fires before an item has been marked for copying

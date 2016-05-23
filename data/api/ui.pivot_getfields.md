@@ -1,19 +1,15 @@
 getFields
 =============
 
-
-@todo:
-	check
-
 @short:
-	returns an object with detailed description of fields in each sector
+	returns an object with fields configurations
 
 @params:
 
 
 @returns:
 
-- fields		object			an object with detailed description of fields in each sector
+- fields		object			an object with fields configurations
 
 
 @example:

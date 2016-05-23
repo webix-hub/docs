@@ -1,15 +1,12 @@
 onBeforeLevelDown
 =============
 
-@todo:
-	check 
-
 @short:
-	fires before selection is moved one level down
+	fires before selection is moved to the child folder
 
 @params:
 
-- id		string
+- id		string			the new selected folder id
 
 @returns:
 

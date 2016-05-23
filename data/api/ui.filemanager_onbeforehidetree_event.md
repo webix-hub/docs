@@ -1,9 +1,6 @@
 onBeforeHideTree
 =============
 
-@todo:
-	check
-
 @short:
 	fires before the tree is hidden
 
