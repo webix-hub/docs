@@ -178,7 +178,7 @@ var logic = {
 For custom functions attached either within component/control body or within init block (see above) use the following reference:
 
 ~~~js
-logic:function_name //since they are placed into the "logic" var
+logic.function_name //since they are placed into the "logic" var
 ~~~
 
 Outside the init block you should describe all the custom functions attached to application components either in the init block or within their bodies:
