@@ -55,7 +55,7 @@ The File Manager API includes the following groups of events:
 
 4)  Other
 
-- <a href="#onerrorresponse">onErrorResponse</a> - fires if an error has occured during some operation
+- <a href="#onerrorresponse">onErrorResponse</a> - fires if an error has occurred during some operation
 - <a href="#onbeforerun">onBeforeRun</a> - fires on file double-click or on enter click
 - <a href="#onfolderselect">onFolderSelect</a> - fires on selecting a folder in the Tree view
 - <a href="#onviewinit">onViewInit</a> - fires during the initialization of an object with the mode configuration
@@ -210,7 +210,7 @@ $$("fmanager").attachEvent("onBeforeUploadFile",function(targetId){
 
 params:
 
-- targetId - {string} the id of an folder where an new file will be uploaded
+- targetId - {string} the id of the folder where a new file will be uploaded
 
 returns:
 
@@ -331,7 +331,7 @@ returns:
 
 ###<span id='onaftereditstop'>onAfterEditStop</span> 
 
-fires after the edtor is closed
+fires after the editor is closed
 
 ~~~js
 $$("fmanager").attachEvent("onAfterEditStop",function(id,state,editor,view){
@@ -388,7 +388,7 @@ returns:
 
 ###<span id='onerrorresponse'>onErrorResponse</span> 
 
-fires if an error has occured during some operation
+fires if an error has occurred during some operation
 
 ~~~js
 $$("files").attachEvent("onErrorResponse", function(requestData,response){

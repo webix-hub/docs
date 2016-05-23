@@ -336,7 +336,7 @@ fmanager.pasteFile(id)
 	
 params:
 
-- id - {mixed} the id of the folder where copyed or cut files will be pasted
+- id - {mixed} the id of the folder where copied or cut files will be pasted
     
 
 <h3 id="rename">renameFile</h3> 
