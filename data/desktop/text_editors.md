@@ -163,7 +163,7 @@ CKEditor is a ready-for-use WYSIWYG editor that brings word processor features d
 
 <img src="desktop/ckeditor.png"/>
 
-Related Sample: <a href="http://cdns.webix.io/components/ckeditor/sample.html">Ckeditor Text Editor</a> 
+{{sample 32_thirdparty/15_ckeditor.html}}
 
 ####Component Initialization
 
