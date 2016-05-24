@@ -39,8 +39,9 @@ webix.ui({
 });
 ~~~
 
+{{sample 61_pivot/02_chart/01_inline_data.html}}
 
-###Properties
+##Properties
 
 - **id** - *string, number* - component ID, should be unique within a page. In Webix, any component is referred to by its ID, **$$("id")**, to perform various operations with it;
 - **container** - *string* - ID of an HTML container Pivot Chart will be put to (optional);
@@ -49,7 +50,7 @@ webix.ui({
 - **structure** - *object* - defines initial display and analysis pattern ([details](#struct)); 
 - **chart** - *object* -  defines the chart configuration options that you want to redefine, i.e. object with a set of redefined properties ([details](pivot_chart/configuration.md#definingchartproperties));
 - **chartType** - *string* - sets the default chart type;
-- **chartMap** - *object* - can be used to redefine default types of a chart ('bar', 'line', 'radar') or add a new one ('stacked bar' or 'area') ([details](#custom_type));
+- **chartMap** - *object* - can be used to redefine default types of a chart ('bar', 'line', 'radar') or add a new one ('stacked bar' or 'area') ([details](pivot_chart/configuration.md#addingcharttypes));
 - **filterWidth** - *number* - sets the width of filters (both input and label) in the header of the chart;
 - **filterLabelWidth** - *number* - sets the width of the filters' labels;
 - **filterLabelAlign** - *string* - sets the horizontal alignment of the filters' labels;

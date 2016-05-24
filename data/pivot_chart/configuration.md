@@ -1,6 +1,40 @@
 Configuring Pivot Chart
 =========================
 
+
+##Getting and Setting Configuration Object
+
+~~~js
+//get current configuration
+var config = $$("pivot").getStructure();
+
+//set configuration
+$$("pivot").setStructure(config);
+~~~
+
+Format of a **config** object is the same as "structure" parameter of the constructor:
+
+~~~js
+var config = {
+	groupBy: "year",
+	values: [{name:"balance", operation:"sum", color: "#eed236"}],
+	filters:[{name:"name", type:"select"}]
+}
+~~~
+
+{{sample 61_pivot/02_chart/04_configuring.html}}
+
+##Getting Chart Object
+
+You can access the Chart object by using the next code:
+
+~~~js
+var chart = $$("pivot").$$("chart");
+~~~
+
+This allows you to use any of Chart [events](api/refs/ui.chart_events.md) or [API methods](api/refs/ui.chart_methods.md).
+
+
 Defining chart properties
 ------------------------------------
 
@@ -20,11 +54,14 @@ chart: {
 }
 ~~~
 
+{{sample 61_pivot/04_chart_api/02_chart_settings.html}}
+
 Note, you can use any property available for the Chart component ([a list of properties](api/refs/ui.chart_props.md)).
 
-###Defining Operation on Data
+Defining Operation on Data
+-----------------------------
 
-Operations are set within [Pivot Chart  structure object](#struct) in **values** array. **Name** refers to data item property, **color** - to the color of the related graph:
+Operations are set within [Pivot Chart  structure object](pivot_chart/initialization.md#struct) in **values** array. **Name** refers to data item property, **color** - to the color of the related graph:
 
 ~~~js
 view:"pivot-chart",
@@ -65,11 +102,12 @@ And use it as:
 values:[ name:"oil", operation:"abssum"]
 ~~~
 
+{{sample 61_pivot/04_chart_api/01_group_methods.html}}
 
+Filters
+----------
 
-###Filters
-
-Filters are set within [Pivot Chart structure object](#struct) in **filters** array. **Name** refers to data item property used for filtering:
+Filters are set within [Pivot Chart structure object](pivot_chart/initialization.md#struct) in **filters** array. **Name** refers to data item property used for filtering:
 
 ~~~js
 view:"pivot-chart",
@@ -106,7 +144,11 @@ webix.ui({
 });
 ~~~
 
-###Adding chart types {#custom_type}
+{{sample 61_pivot/02_chart/06_custom_titles.html}}
+
+Adding chart types 
+----------------------------
+
 By default, Pivot Chart gives users a possibility to present data in 3 types of a chart: 'bar', 'line', 'radar'. If you need you can redefine the default types or add a new one. 
 
 {{note
@@ -141,9 +183,11 @@ chartMap: {
     }
 }
 ~~~
-The chart's type is identified by its name ("Area Radar" and "Line" in the code above). The names of the default types you can check in the 'Chart type' control of the <a href="#config_window">Configuration window</a>. 
+The chart's type is identified by its name ("Area Radar" and "Line" in the code above). 
+The names of the default types you can check in the 'Chart type' control of the [Configuration window](pivot_chart/structure.md#configurationwindow). 
 
-###Setting readonly mode
+Setting readonly mode
+-----------------------
 
 In order to disable changing of the Pivot Chart configuration settings, you can specify the *readonly* config property with the "true" value:
 

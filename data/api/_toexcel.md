@@ -21,3 +21,4 @@ webix.toExcel($$("mylist"));
 	19_api/06_export_excel.html
 @relatedapi:
 	api/_topng.md
+    api/_topdf.md

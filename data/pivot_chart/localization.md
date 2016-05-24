@@ -35,3 +35,5 @@ webix.ui({
     //...
 });
 ~~~
+
+{{sample 61_pivot/02_chart/05_locale.html}}

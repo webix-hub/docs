@@ -3,7 +3,7 @@ Loading Data
 
 Pivot Chart supports both inline and external (including server-side) data in any of the [supported data types](desktop/data_types.md):  **XML**, **JSON**, **JSArray** and **CSV**. 
 
-###Inline Data
+##Inline Data
 
 {{snippet
 Inline Data (JSON)
@@ -33,7 +33,9 @@ To load inline data after component init on some event, for instance, use the ap
 $$("pivot").parse(pivot_dataset);
 ~~~
 
-###External Data
+{{sample 61_pivot/02_chart/01_inline_data.html}}
+
+##External Data
 
 Either you get data from an external file or by a server-side script,use the following pattern:
 
@@ -56,3 +58,16 @@ $$("pivot").load("../data.json");
 ~~~
 
 In essence, Pivot Chart complies to standard Webix [Data Loading rules](desktop/data_loading.md).
+
+{{sample 61_pivot/02_chart/02_loading_data.html}}
+
+
+##Data export
+
+You can export the result to PDF, Excel and PNG by using the corresponding methods - api/_toexcel.md, api/_topdf.md and api/_topng.md:
+
+~~~js
+$$("pivot").toPDF();
+$$("pivot").toExcel();
+$$("pivot").toPNG();
+~~~
