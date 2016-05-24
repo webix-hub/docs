@@ -1,10 +1,6 @@
 filemanager
 =============
 
-@todo:
-	check 
-
-
 @short:
 	default File Manager titles
 

@@ -1,10 +1,6 @@
 pivot
 =============
 
-@todo:
-	setLocale?
-
-
 @short:
 	default Pivot titles
 
@@ -32,9 +28,9 @@ webix.i18n.pivot = {
 
 @template:	api_config
 @descr:
-
-@relatedapi:
-	api/i18n_setlocale.md
     
 @relatedsample:
 	61_pivot/01_init/05_locale.html
+    
+@related:
+	desktop/localization.md

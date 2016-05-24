@@ -1,21 +1,18 @@
 onBeforePasteFile
 =============
 
-@todo:
- check the ids type and descr
-
 @short:
 	fires when the Paste action is chosen in the popup menu
 
 @params:
 
-- ids			string			the id of the target folder/file
+- id			string			the id of the target folder
 
 @returns:
 - result		boolean			returning false will prevent pasting
 
 @example:
-$$("fmanager").attachEvent("onBeforePasteFile", function(ids){
+$$("fmanager").attachEvent("onBeforePasteFile", function(id){
     // your code
     return true;
 });

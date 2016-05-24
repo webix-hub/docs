@@ -1,15 +1,12 @@
 onEditorChange
 =============
 
-@todo:
-	check!!
-
 @short:
-	fires when data in the column editor is changed
+	fires when the native onchange event occurs for an HTML input (select, text)
 
 @params:
 
-- id		string/number		the column id
+- id		string/number		the cell id
 - value		string				the new value typed into the editor
 
 @example:

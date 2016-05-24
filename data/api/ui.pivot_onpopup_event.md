@@ -1,11 +1,8 @@
 onPopup
 =============
 
-@todo:
-	check 
-
 @short:
-	fires after a popup for configuring Pivot is created
+	fires after a configuration window for Pivot is created
 
 @params:
 

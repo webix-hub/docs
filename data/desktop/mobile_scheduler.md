@@ -1,12 +1,6 @@
 Mobile Scheduler
 ===================
 
-API Reference
----------------
-
-- [Methods, properties and events](api/refs/ui.scheduler.md)
-- [Samples](http://docs.webix.com/samples/62_scheduler/index.html)
-
 <div class="h2">Overview</div>
 
 Webix Scheduler was developed to be used in mobile web apps that run in Webkit-based browsers on mobile devices (iOS, Android, Blackberry).
