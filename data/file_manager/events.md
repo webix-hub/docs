@@ -177,7 +177,7 @@ returns:
 fires before an item has been pasted
 
 ~~~js
-$$("fmanager").attachEvent("onBeforePasteFile", function(ids){
+$$("fmanager").attachEvent("onBeforePasteFile", function(id){
 	// your code
 	return true;
 });
@@ -185,7 +185,7 @@ $$("fmanager").attachEvent("onBeforePasteFile", function(ids){
 
 params:
 
-- ids - {string} the id of the target folder/file
+- id - {string} the id of the target folder
 
 returns:
 
