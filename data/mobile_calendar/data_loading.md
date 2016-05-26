@@ -1,7 +1,7 @@
 Loading and Saving Data in Mobile Scheduler
 =======================
 
-Mobile Scheduler supports [data loading](desktop/data_loading.md) from JSON and XML data sources. By default, data is loaded into Scheduler in JSON format.
+Mobile Scheduler supports [data loading](desktop/data_loading.md) from JSON and XML data sources. By default, data is loaded into Scheduler in [JSON](desktop/data_types.md#nonhierarchicaldata) format.
 
 ~~~js
 {

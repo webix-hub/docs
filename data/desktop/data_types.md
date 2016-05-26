@@ -70,7 +70,7 @@ Here we'll see how one and the same dataset looks in different formats while pay
 ~~~
 
 ###JSON Object
-~~~json
+~~~js
 [
 	{ "id":"1", "person": "Nanny", "place": "Alabama", "age": "45" },
 	{ "id":"2", "person": "Derek", "place": "New York","age": "23" },
@@ -158,20 +158,20 @@ By default records of any hierarchy level and their children are introduced with
 ###JSON
 
 By default child records are stored in the **data** object property of the parent record. 
-~~~json
-[{"id":"1", "title":"Animals", data:[
-	{"id":"1.1", "title":"Fish", data:[
-    	{"id":"1.1.1", "title":"Fresh Water", "name":"Halibut"},
-        {"id":"1.1.2", "title":"Marine", "name":"Rainbow Trout"}
-    	]
-    },
-    {"id":"1.2", "title":"Mammals", data:[
-    	{"id":"1.2.1", "title":"Domestic", "name":"Cow"},
-        {"id":"1.2.2", "title":"Wild", "name":"Wolf"}
-    	]
-    }
-	]
-}]
+
+~~~js
+[
+	{"id":"1", "title":"Animals", "data":[
+		{"id":"1.1", "title":"Fish", "data":[
+    		{"id":"1.1.1", "title":"Fresh Water", "name":"Halibut"},
+        	{"id":"1.1.2", "title":"Marine", "name":"Rainbow Trout"}
+    	]},
+    	{"id":"1.2", "title":"Mammals", "data":[
+    		{"id":"1.2.1", "title":"Domestic", "name":"Cow"},
+        	{"id":"1.2.2", "title":"Wild", "name":"Wolf"}
+    	]}
+	]}
+]
 ~~~
 
 {{sample 17_datatree/01_loading/01_json_data.html}}

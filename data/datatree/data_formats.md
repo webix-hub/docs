@@ -9,14 +9,14 @@ Expected data formats
 
 ~~~js
 [
-	{ id:"1", open:true, value:"Toyota", data:[
-		{ id:"1.1", value:"Avalon" },
-		{ id:"1.2", value:"Camry" },
-		{ id:"1.3", value:"Corolla" }
+	{ "id":"1", "open":"true", "value":"Toyota", "data":[
+		{ "id":"1.1", "value":"Avalon" },
+		{ "id":"1.2", "value":"Camry" },
+		{ "id":"1.3", "value":"Corolla" }
 	]},
-	{ id:"2", value:"Skoda", data:[
-		{ id:"2.1", value:"Octavia" },
-		{ id:"2.2", value:"Superb" }
+	{ "id":"2", "value":"Skoda", "data":[
+		{ "id":"2.1", "value":"Octavia" },
+		{ "id":"2.2", "value":"Superb" }
 	]}
 ]
 ~~~
@@ -88,10 +88,10 @@ You can use the simplified form of JSON and specify data as in:
 
 ~~~js
 [
-	{ value:"Toyota", open:true, data:[
+	{ "value":"Toyota", "open":"true", "data":[
 		"Avalon", "Camry", "Corolla" 
 	]},
-	{ value:"Skoda", data:[
+	{ "value":"Skoda", "data":[
 		"Octavia", "Superb" 
 	]}
 ]
@@ -129,22 +129,22 @@ As a result, your data will look as in:
 ~~~js
 //full form
 [
-	{ id:"1", open:true, value:"Toyota", cars:[
-		{ id:"1.1", value:"Avalon" },
-		{ id:"1.2", value:"Camry" },
-		{ id:"1.3", value:"Corolla" }
+	{ "id":"1", "open":"true", "value":"Toyota", "cars":[
+		{ "id":"1.1", "value":"Avalon" },
+		{ "id":"1.2", "value":"Camry" },
+		{ "id":"1.3", "value":"Corolla" }
 	]},
-	{ id:"2", value:"Skoda", cars:[
-		{ id:"2.1", value:"Octavia" },
-		{ id:"2.2", value:"Superb" }
+	{ "id":"2", "value":"Skoda", "cars":[
+		{ "id":"2.1", "value":"Octavia" },
+		{ "id":"2.2", "value":"Superb" }
 	]}
 ]
 //simplified form
 [
-	{ value:"Toyota", open:true, cars:[
+	{ "value":"Toyota", "open":"true", "cars":[
 		"Avalon", "Camry", "Corolla" 
 	]},
-	{ value:"Skoda", cars:[
+	{ "value":"Skoda", "cars":[
 		"Octavia", "Superb" 
 	]}
 ]
