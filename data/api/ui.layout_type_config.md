@@ -9,9 +9,9 @@ type
 @values:
 - line	cells with border (default)
 - clean	cells without border
-- wide	cells with border and small space between siblings
-- space	cells with border and wide space between siblings
-- head	similar to "wide", but there is any border between the first and second cells
+- wide	cells with border and wide space between siblings
+- space	cells with border and wide space between siblings plus padding from the parent container
+- head	cells with border and small space between siblings
     
 @example:
 
