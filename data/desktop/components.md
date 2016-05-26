@@ -3,9 +3,13 @@ UI Components
 The <a title="ui library" href="http://webix.com">Webix UI library</a> supplies over 70 fully customizable components to help you build interfaces of different kinds, nicely present data and work with it. There are also multiple controls and
 specific features to make your applications good-looking and user-friendly. All the components are objects made with the webix.ui() constructor where the type of the component is set by the 'view' property (the declarative syntax is available as well).
 
-<br>
 
-<div class="components_group" style="padding-left:60px;">
+<h2 style="clear:both;"/>Widgets</h2>
+
+A set of ready-made JavaScript widgets is provided to solve tasks in different fields. Whether you need to create an interactive data report, optimize a workflow, add and manage events,
+handle hierarchical data or make calculations in a powerful spreadsheet, you will surely find a proper widget for your needs in the Webix library.
+
+<div class="components_main" style="padding-left:35px;">
 	<div>
 		<a href="desktop/pivot.md">
 			<img src="desktop/icons/pivot.png"/>
@@ -184,7 +188,7 @@ Layouts help you to organize your web page, define its overall look-and-feel. Yo
 
 Context components let displaying spatial and temporal information on some user's action, such as click on a button or filling in a field. 
 
-<div class="components_group" style="padding-left:60px;">
+<div class="components_group" style="padding-left:10px;">
 	<div>
 		<a href="desktop/context.md">
 			<img src="desktop/icons/context.png"/>
@@ -207,6 +211,12 @@ Context components let displaying spatial and temporal information on some user'
 		<a href="desktop/popup.md">
 			<img src="desktop/icons/popup.png"/>
 			<br>Popup
+		</a>
+    </div>
+    <div>
+		<a href="desktop/tooltip_component.md">
+			<img src="desktop/icons/tooltip.png"/>
+			<br>Tooltip
 		</a>
     </div>
     <div>
@@ -360,6 +370,13 @@ To see a complete list of extension components and find out details on their use
 
 
 <style>
+div.components_main div{
+	padding-top:25px;
+    padding-bottom:25px;
+    float:left;
+    width:130px;
+    text-align:center;
+}
 div.components_group div{
     padding-top:25px;
     padding-bottom:25px;
@@ -416,6 +433,7 @@ div.controls_group img {
 - desktop/tabview.md
 - desktop/template.md
 - desktop/toolbar.md
+- desktop/tooltip_component.md
 - desktop/treemap.md
 - datatree/index.md
 - desktop/treetable.md
