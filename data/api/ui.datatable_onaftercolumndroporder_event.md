@@ -4,9 +4,14 @@ onAfterColumnDropOrder
 
 @short: fires after the column order was changed with the help of drag-and-drop
 	
+@params:
+
+- from			object				the source object
+- to			object				the target object
+- node			HTML element		the target HTML element
 
 @example:
-$$("datatable1").attachEvent("onAfterColumnDrop", function(context, native_event){...});
+$$("datatable1").attachEvent("onAfterColumnDrop", function(from, to, node){...});
 
 @template:	api_event
 @related: 
@@ -17,13 +22,7 @@ $$("datatable1").attachEvent("onAfterColumnDrop", function(context, native_event
 
 @descr:
 
-The drag-and-drop context can have the next properties:
 
-- **from** - the source object
-- **to** - the target object
-- **source** - the id of the dragged item(s)
-- **target** - the id of the drop target, null for drop on empty space
-- **start** - the id from which DND was started
 
 
 
