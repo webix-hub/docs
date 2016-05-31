@@ -300,7 +300,10 @@ The following events are generated during the d-n-d process:
 - api/link/ui.datatable_onbeforedragin_event.md - fires before a dragged element is moved over the droppable area
 - api/link/ui.datatable_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
 - api/link/ui.datatable_onbeforedrop_event.md - fires before a dragged element is released over the droppable area
+- api/link/ui.datatable_onbeforedropout_event.md - fires before a dragged element is released over the droppable area (in the drag SOURCE component, not in the drag target one)
 - api/link/ui.datatable_onafterdrop_event.md - fires after drag-n-drop was finished
+- api/dragorder_onafterdroporder_event.md - called when dnd reordering is fully finished
+- api/dragorder_onbeforedroporder_event.md - called when dnd reordering has been made, but not applied yet
 
 In the default scenario there is no need to use any of the mentioned events, because DataTable will process all the operations on its own. But sometimes default behavior needs customizing - this is the time when the mentioned events can be used.
 

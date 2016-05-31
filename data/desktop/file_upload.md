@@ -215,10 +215,9 @@ for (var i=0; i<order.length; i++){
 
 Here are main events that allow for customized uploader behavior. Full event system is to be found in the [API reference](api/refs/ui.uploader.md).  
 
-- **onBeforeFileAdd** - triggers on adding a file to uploader menu;
-- **onFileUpload** - trigers when upload process is started;
-- **onUploadComplete** - triggers when file upload is successfully completed;
-- **onFileRemove** - triggers when you try to remove a file from a pre-upload list (there appears a dedicated "remove" button as soon as you add a file to the uploader field);
+- **api/ui.uploader_onbeforefileadd_event.md** - triggers on adding a file to uploader menu;
+- **api/ui.uploader_onfileupload_event.md** - triggers when upload process is started;
+- **api/ui.uploader_onuploadcomplete_event.md** - triggers when file upload is successfully completed.
 
 {{snippet
 Confirming Uploading

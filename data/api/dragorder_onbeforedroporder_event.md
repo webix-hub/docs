@@ -2,12 +2,12 @@ onBeforeDropOrder
 =============
 
 @short: 
-	called when dnd reording has been made, but not applied yet
+	called when dnd reordering has been made, but not applied yet
 
 
 @params:
 
-- itemId				string/number		the item id		
+- itemId				string/number		the dragged item id		
 - targetInd				number				the index of the row, where the item was dropped (if target is the last position, i.e. an empty space, the index will be -1)
 - event					Event object		the native event object
 - details 				object				the object which contains the <b>parent</b> property - id of the branch where dragging is taking place
