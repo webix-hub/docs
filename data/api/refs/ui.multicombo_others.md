@@ -7,7 +7,6 @@ Others
 - api/link/ui.multicombo_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.multicombo_$height_other.md - current height of the view
 - api/link/ui.multicombo_$render_other.md - code called after rending control
-- api/link/ui.multicombo_$rendericon_other.md - renders icon for the control
 - api/link/ui.multicombo_$renderinput_other.md - called each time when component need to paint control's input
 - api/link/ui.multicombo_$renderlabel_other.md - renders html for the label
 - api/link/ui.multicombo_$scope_other.md - scope for resolving event and method names
@@ -28,7 +27,6 @@ Others
 - api/link/ui.multicombo_$getvalue_other.md
 - api/link/ui.multicombo_$height_other.md
 - api/link/ui.multicombo_$render_other.md
-- api/link/ui.multicombo_$rendericon_other.md
 - api/link/ui.multicombo_$renderinput_other.md
 - api/link/ui.multicombo_$renderlabel_other.md
 - api/link/ui.multicombo_$scope_other.md

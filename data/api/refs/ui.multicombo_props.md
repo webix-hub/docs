@@ -18,7 +18,6 @@ Properties
 - api/link/ui.multicombo_height_config.md - sets the height of the component
 - api/link/ui.multicombo_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.multicombo_hotkey_config.md - sets a hotkey that triggers button clicking
-- api/ui.multicombo_iconwidth_config.md - sets icon width
 - api/link/ui.multicombo_id_config.md - the component ID
 - api/link/ui.multicombo_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.multicombo_inputpadding_config.md - padding of text in the input
@@ -28,7 +27,6 @@ Properties
 - api/link/ui.multicombo_label_config.md - the text label of the control
 - api/link/ui.multicombo_labelposition_config.md - positions label in relation to the control
 - api/link/ui.multicombo_labelwidth_config.md - the width of the label
-- api/ui.multicombo_master_config.md - 
 - api/link/ui.multicombo_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.multicombo_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.multicombo_minheight_config.md - sets the minimal height for the view
@@ -75,7 +73,6 @@ Properties
 - api/link/ui.multicombo_height_config.md
 - api/link/ui.multicombo_hidden_config.md
 - api/link/ui.multicombo_hotkey_config.md
-- api/ui.multicombo_iconwidth_config.md
 - api/link/ui.multicombo_id_config.md
 - api/link/ui.multicombo_inputheight_config.md
 - api/link/ui.multicombo_inputpadding_config.md
@@ -85,7 +82,6 @@ Properties
 - api/link/ui.multicombo_label_config.md
 - api/link/ui.multicombo_labelposition_config.md
 - api/link/ui.multicombo_labelwidth_config.md
-- api/ui.multicombo_master_config.md
 - api/link/ui.multicombo_maxheight_config.md
 - api/link/ui.multicombo_maxwidth_config.md
 - api/link/ui.multicombo_minheight_config.md
