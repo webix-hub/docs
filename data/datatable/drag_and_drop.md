@@ -71,6 +71,13 @@ To drag/drop columns between several tables you should enable the api/ui.datatab
 15_datatable/22_dnd/06_columns.html
 }}
 
+There are three events that will be useful during column drag-n-drop process:
+
+- api/ui.datatable_onbeforecolumndrag_event.md - fires the moment you start dragging the column from its source position
+- api/ui.datatable_onbeforecolumndrop_event.md - fires the moment you drop the column to its target position
+- api/ui.datatable_onaftercolumndrop_event.md - fires after the column has been dragged and dropped to the target position
+
+
 ###The 'order' mode
 There is the 'order' mode for the table columns.
 
@@ -95,6 +102,11 @@ webix.ui({
 15_datatable/22_dnd/07_columns_order.html
 }}
 
+While dealing with column drag-n-drop in the "order" mode enabled the api/ui.datatable_onbeforecolumndrop_event.md and api/ui.datatable_onaftercolumndrop_event.md won't work.
+In this case you should make use of the events below:
+
+- api/ui.datatable_onbeforecolumndroporder_event.md - fires the moment you drop the column over the target area
+- api/ui.datatable_onaftercolumndroporder_event.md - fires after the column order was changed with the help of drag-and-drop
 
 Advanced
 --------------------------------------------
@@ -300,8 +312,11 @@ The following events are generated during the d-n-d process:
 - api/link/ui.datatable_onbeforedragin_event.md - fires before a dragged element is moved over the droppable area
 - api/link/ui.datatable_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
 - api/link/ui.datatable_onbeforedrop_event.md - fires before a dragged element is released over the droppable area
-- api/link/ui.datatable_onbeforedropout_event.md - fires before a dragged element is released over the droppable area (in the drag SOURCE component, not in the drag target one)
+- api/link/ui.datatable_onbeforedropout_event.md - fires before a dragged element is released over the droppable area (fires in the drag SOURCE component, not in the drag target one)
 - api/link/ui.datatable_onafterdrop_event.md - fires after drag-n-drop was finished
+
+If the "order" mode is enabled, the api/link/ui.datatable_onbeforedrop_event.md and api/link/ui.datatable_onafterdrop_event.md events won't fire. In this case you need to use the corresponding events:
+
 - api/dragorder_onafterdroporder_event.md - called when dnd reordering is fully finished
 - api/dragorder_onbeforedroporder_event.md - called when dnd reordering has been made, but not applied yet
 
