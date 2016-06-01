@@ -33,6 +33,8 @@ To load inline data after component init on some event, for instance, use the ap
 $$("pivot").parse(pivot_dataset);
 ~~~
 
+{{sample 61_pivot/01_init/01_inline_data.html}}
+
 ##External Data
 
 Either you get data from an external file or by a serverside script, you should use the following pattern.
@@ -58,11 +60,14 @@ $$("pivot").load("../data.json");
 
 In essence, Pivot complies to standard Webix [Data Loading rules](desktop/data_loading.md).
 
+{{sample 61_pivot/01_init/02_loading_data.html}}
+
 ##Data export
 
-You can export result to PDF or Excel:
+You can export result to PDF, Excel and PNG by using the related methods - api/_topng.md, api/_toexcel.md and api/_topdf.md:
 
 ~~~js
 webix.toPDF($$("myPivot"));
 webix.toExcel($$("myPivot"));
+webix.toPNG($$("myPivot"));
 ~~~

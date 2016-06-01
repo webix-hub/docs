@@ -1,3 +1,3 @@
 
 
-{{memo visual representation of data values in datatable}}
+{{memo Small charts used to present general variation of certain parameters in datatable cells}}

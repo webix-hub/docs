@@ -54,7 +54,7 @@ Mixins
 - api/refs/selectionmodel.md -  implements basic selection API
 - api/refs/settings.md -  allows configuration of component
 - api/refs/singlerender.md -  render for single-value views
-- api/refs/sparklines.md - 
+- api/refs/sparklines.md -  Small charts used to present general variation of certain parameters in datatable cells
 - api/refs/tablepaste.md -  implements copy-paste for datatable
 - api/refs/touch.md -  touch events and touch scroll
 - api/refs/treeapi.md -  Implements common APIs for tree-like components.

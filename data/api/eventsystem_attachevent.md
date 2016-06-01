@@ -9,11 +9,6 @@ attachEvent
 - functor	function		the function object or name
 * id		string/number		the event id
 
-@callback:
-- ...mixed...		function	the callback receives different set of parameters for different events. Check the documentation of the related events.
-
-@callbackreturns:
-- result	boolean		returning <i>false</i> will block the default behaviour (works not for all events, check the details below).
 
 @returns:
 	event id		id	the id of the attached event handler
@@ -61,7 +56,7 @@ The only purpose of such id - [detaching the handler from an event](datatable/ev
 (in most cases you don't need to care about the handler's id).
 
 
-### Callback
+### Handler function parameters
 
 Check the related documentation to get the full list of parameters. The amount and meaning will vary for different events.
 
@@ -74,9 +69,4 @@ dtable.attachEvent("onBeforeSelect", function(id){
 });
 ~~~
 
-### Multiple handlers
 
-You can attach multiple handlers to one and the same event and they won't overwrite each other. 
-If some of handlers will return <i>false</i> - the related operation will be blocked. 
-
-Event handlers are processed in the same order as they were attached. 

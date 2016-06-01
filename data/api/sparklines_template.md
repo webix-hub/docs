@@ -26,4 +26,4 @@ var html = webix.Sparklines.template(item,common,data,column,index);
 @related:
 	datatable/sparklines.md
 @relatedsample:
-	15_datatable/20_templates/09_sparklines.html
+	60_pro/01_datatable/08_sparklines/01_init.html

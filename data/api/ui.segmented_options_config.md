@@ -34,6 +34,7 @@ The objects in the array have **2 attributes**:
 
 - **id** - (*id*) the item id
 - **value** - (*string*) the item label
+- **width** - (*number*) the item width
 
 Nore that the [getValue()](api/link/ui.segmented_getvalue.md) method returns the **ID** of selected option. 
 

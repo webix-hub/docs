@@ -1,1 +1,0 @@
-@link: api/ui.multitext_iconwidth_config.md

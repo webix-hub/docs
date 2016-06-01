@@ -37,7 +37,7 @@ the master component (in case of [datatable](datatable/index.md) look at column 
 - datatable column ID =  field **name** in a  form.
 
 
-Changes in the slave component will affect master one, which means that if you edit the info in the form, then save it (click sumbit button), the list item will have 
+Changes in the slave component will affect master one, which means that if you edit the info in the form, then save it (click the Submit button), the list item will have 
 this new data. 
 
 ~~~js
@@ -131,13 +131,13 @@ $$('dview2').data.unsync();
 
 [Related into on data filtering](desktop/filter_sort.md). 
 
-##Simultaneous Operations within Synced Componens
+##Simultaneous Operations within Synced Components
 
 In case of two and more component synced to one datasource (either a visible component or [non-visible dataCollection](desktop/nonui_objects.md)), it seems nice to **synchronize user operations** as well. 
 
 For instance, if an item is selected in one of components, the same item should be selected in the synced one. This is easily done programmatically. 
 
-Take for instance we have a [dataview](desktop/dataview.md) and [datatable](datatable/index.md), both synched with the same dataCollection. 
+Take for instance we have a [dataview](desktop/dataview.md) and [datatable](datatable/index.md), both synced with the same dataCollection. 
 
 ~~~js
 var data = new webix.DataCollection({

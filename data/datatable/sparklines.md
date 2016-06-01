@@ -6,13 +6,13 @@ Each data value is specified as a point in the sparkline. Depending on the value
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="datatable/sparklines.png">
 
+{{note Pay attention that in Internet Explorer Sparklines functionality is available in versions 9+.}}
+
 Sparklines are set in the datatable through the **{common.sparklines()}** template. The column's id coincides with the property in the data set that contains data values. 
 The sparklines chart is built on the basis of these values:
 
 ~~~js
-webix.ready(function(){
-  grida = webix.ui({
-  container:"testA",
+webix.ui({
   view:"datatable",
   columns:[
 	{ id:"name", header:"Name", width:150},

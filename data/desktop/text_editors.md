@@ -19,6 +19,8 @@ Note that in documentation samples files are linked in another way, but in your 
 
 ##Mercury Text Editor {#mercury}
 
+You can download JS file for the Mercury Editor from [github](https://github.com/webix-hub/components).
+
 Mercury is a fully featured HTML5 editor with **full HTML, simple, markdown, snippet** and **image** areas to get the utmost from in-browser content editing.
 
 <a href="http://jejacks0n.github.com/mercury/">Learn more about Mercury text editor</a>
@@ -50,6 +52,8 @@ webix.ui({
 ~~~
 
 ##NicEdit Text Editor {#nicedit}
+
+You can download JS file for the NicEdit Editor from [github](https://github.com/webix-hub/components).
 
 NicEdit is a simple and fast **WYSIWYG** editor for websites. Being extremely lightweight it makes any element/HTML container editable or converts standard textareas to rich text editing fields.
 
@@ -85,6 +89,8 @@ webix.ui({
 
 ##TinyMCE Text Editor {#tinymce}
 
+You can download JS file for the TinyMCE Editor from [github](https://github.com/webix-hub/components).
+
 TinyMCE is a platform independent web based **Javascript HTML WYSIWYG** editor control. It has the ability to convert HTML TEXTAREA fields or other HTML 
 elements to editor instances.
 
@@ -118,7 +124,24 @@ webix.ui({
 </script>
 ~~~
 
+####Configuring the Editor
+
+To set TinyMCE configuration properties, you can use the "config" property:
+
+~~~js
+webix.ui({
+	id: "editor",
+	view: "tinymce-editor",
+    config: { 
+    	theme:"advanced" 
+    }
+});
+~~~
+
+
 ##Codemirror Text Editor {#codemirror}
+
+You can download JS file for the Codemirror Editor from [github](https://github.com/webix-hub/components).
 
 CodeMirror is a JavaScript component that provides a **code editor** in a browser. When a mode is available for the language you are coding in, it will 
 color your code, and optionally help with indentation.
@@ -157,13 +180,15 @@ Note that here an extra property appears - **mode** that denotes a language you 
 
 ##CKEditor Text Editor {#ckeditor}
 
+You can download JS file for the CKEditor from [github](https://github.com/webix-hub/components).
+
 CKEditor is a ready-for-use WYSIWYG editor that brings word processor features directly to your web pages. It is suitable for editing plain texts as well as HTML markup. 
 
 <a href="http://ckeditor.com/">Learn more about CKEditor text editor</a>
 
 <img src="desktop/ckeditor.png"/>
 
-Related Sample: <a href="http://cdns.webix.io/components/ckeditor/sample.html">Ckeditor Text Editor</a> 
+{{sample 32_thirdparty/15_ckeditor.html}}
 
 ####Component Initialization
 

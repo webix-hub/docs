@@ -67,6 +67,7 @@ var multicombo = webix.ui({
 - api/link/ui.multicombo_refresh.md - repaints the component
 - api/link/ui.multicombo_render.md - renders the specified item or the whole component
 - api/link/ui.multicombo_resize.md - adjusts the view to a new size
+- api/link/ui.multicombo_setbottomtext.md - sets the input label at the bottom of it
 - api/link/ui.multicombo_setvalue.md - sets a new value for the component
 - api/link/ui.multicombo_show.md - makes the component visible
 - api/link/ui.multicombo_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
@@ -111,7 +112,7 @@ var multicombo = webix.ui({
 - api/link/ui.multicombo_borderless_config.md - used to hide the component borders
 - api/link/ui.multicombo_bottomlabel_config.md - sets a label under a control
 - api/link/ui.multicombo_bottompadding_config.md - sets the bottom offset of the control input
-- api/ui.multicombo_button_config.md - defines whether the "Select" button will be displayed in the options list;
+- api/ui.multicombo_button_config.md - defines whether the "Select" button will be displayed in the options list
 - api/link/ui.multicombo_click_config.md - click action handler
 - api/link/ui.multicombo_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.multicombo_css_config.md - the name of a css class that will be applied to the view container
@@ -120,7 +121,6 @@ var multicombo = webix.ui({
 - api/link/ui.multicombo_height_config.md - sets the height of the component
 - api/link/ui.multicombo_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.multicombo_hotkey_config.md - sets a hotkey that triggers button clicking
-- api/ui.multicombo_iconwidth_config.md - sets icon width
 - api/link/ui.multicombo_id_config.md - the component ID
 - api/link/ui.multicombo_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.multicombo_inputpadding_config.md - padding of text in the input
@@ -130,7 +130,6 @@ var multicombo = webix.ui({
 - api/link/ui.multicombo_label_config.md - the text label of the control
 - api/link/ui.multicombo_labelposition_config.md - positions label in relation to the control
 - api/link/ui.multicombo_labelwidth_config.md - the width of the label
-- api/ui.multicombo_master_config.md - 
 - api/link/ui.multicombo_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.multicombo_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.multicombo_minheight_config.md - sets the minimal height for the view
@@ -173,7 +172,6 @@ var multicombo = webix.ui({
 - api/link/ui.multicombo_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.multicombo_$height_other.md - current height of the view
 - api/link/ui.multicombo_$render_other.md - code called after rending control
-- api/link/ui.multicombo_$rendericon_other.md - renders icon for the control
 - api/link/ui.multicombo_$renderinput_other.md - called each time when component need to paint control's input
 - api/link/ui.multicombo_$renderlabel_other.md - renders html for the label
 - api/link/ui.multicombo_$scope_other.md - scope for resolving event and method names

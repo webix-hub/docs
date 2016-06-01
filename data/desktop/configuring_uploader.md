@@ -97,7 +97,7 @@ webix.ui({
 		view:"form", rows: [
 			{ 
 				view: "uploader", value: 'Upload Images', 
-                name:"files", accept:"image/png, image/gif, image/jpg",
+                name:"files", accept:"image/png, image/gif, image/jpeg",
                 link:"mylist",  upload:"php/upload.php" 
 			}
 			...			

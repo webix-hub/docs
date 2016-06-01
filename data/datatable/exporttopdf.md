@@ -1,12 +1,12 @@
 Export to PDF
 =================
 
-To export data from datatable/treetable into a PDF file, you need to call the api/_topdf.md method. The method takes the next parameters:
+To export data from a data component into a PDF file, you need to call the api/_topdf.md method. The method takes the next parameters:
 
 - **id** - (string, object) id or object of the exported view 
-- **name** - (string) optional, name of an exported png file
+- **config** - (object) optional, configuration options
 
-For example, if you want to export a list to a PDF file, you need to call the toPDF() method with the list id as a parameter:
+For example, if you want to export a datatable to a PDF file, you need to call the toPDF() method with the datatable id as a parameter:
 
 ~~~js
 {
@@ -27,6 +27,8 @@ webix.toPDF($$("myDataTable"));
 
 Customizing Export to PDF
 -------------------------
+
+###Customizing export data
 
 The toPDF() method returns all data specified in the **columns** parameter of the datatable view. However, you may 
 need to get data from other fields as well as restrict the number of fields in the export file. You can set the necessary fields
@@ -80,6 +82,19 @@ webix.toPDF(datatable, {
 "Custom1" (any name can be used) receives data from the **year** field even if it is not seen in this component but is presented in its dataset.
 The field is rendered with **width** and **template** as well as **header** that will be the header of the corresponding column in the resulting table. 
 
+###Customizing exported document
+
+**Export API allows** 
+
+- setting a custom filename (it's *data* by default)
+
+~~~js
+webix.toPDF($$("myDataTable"), {
+	filename:"datatable"
+});
+~~~
+
+{{sample 15_datatable/10_export/06_pdf.html}} 
 
 - specifying the **autowidth** parameter to define the columns' width automatically. By default, the paper size of a PDF document is A4. 
 If you set the autowidth property to true, columns will be able to have any possible width that will define the width of a PDF page

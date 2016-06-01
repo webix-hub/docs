@@ -9,10 +9,11 @@ onColumnResize
 - id				string			id of the column
 - newWidth			number			the new width set for the column
 - oldWidth			number			the previous width of the column
+- user_action		boolean			true if column was resized by user action
 
 @example:
 
-$$("table").attachEvent("onColumnResize", function(id, newWidth, oldWidth){
+$$("table").attachEvent("onColumnResize", function(id,newWidth,oldWidth,user_action){
 	alert("New column width: " + this.getColumnConfig(id).width );
 });
 

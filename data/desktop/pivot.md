@@ -5,14 +5,13 @@ Pivot Table
 With Pivot you can easily compare, filter and sort data within one table as well as change the analysis pattern on the flow. 
 
 
+<img style="display:block; margin-left:auto;margin-right:auto;" src="pivot/pivot_front.png">
+
 <div class="h2">External resources</div>
 
 
 - You can [download Webix Pivot](http://webix.com/pivot/download.html) from [http://webix.com/pivot/](http://webix.com/pivot/)
 - There are online samples at [docs.webix.com/samples](http://docs.webix.com/samples/61_pivot/index.html)
-
-<br>
-<img style="display:block; margin-left:auto;margin-right:auto;" src="pivot/pivot_front.png">
 
 
 <div class="h2">Guides</div>

@@ -12,7 +12,7 @@ onParse
     
 @example:
 
-dtable.attachEvent("onParse", function(driver, data){
+dtable.data.attachEvent("onParse", function(driver, data){
     //for json data
     webix.message("Count of records "+data.length);
 });
@@ -29,5 +29,14 @@ dtable.attachEvent("onParse", function(driver, data){
 	
 @descr:
 
-event can be used to preprocess data ( but usage of [scheme](api/datastore_scheme.md) is the better way )  
-also, this is good place to read some extra attributes from incoming data
+An alternative way of applying this event is to use the "data->" prefix in the handler.
+
+~~~js
+dtable.attachEvent("data->onParse", function(driver, data){
+    //for json data
+    webix.message("Count of records "+data.length);
+});
+~~~
+
+The event can be used to preprocess data (but a better way is to use the [scheme](api/datastore_scheme.md) method).  
+It is also a good place to read some extra attributes from incoming data.

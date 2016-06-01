@@ -178,3 +178,4 @@ webix.ui({
 - api/refs/ui.gridsuggest_events.md
 - api/refs/ui.gridsuggest_others.md
 
+@edition:pro

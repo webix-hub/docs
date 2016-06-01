@@ -9,7 +9,7 @@ See also general rules of markup initialization that are described in a [separat
 
 Initialization from XML is simpler in terms of syntax while at the same time tags feature greater semantic value than HTML, yet XML is not that popular due to its "strict" nature. 
 
-To intergrate this functionality with IE8, set the initial page tag as **< html xmlns:x >** instead of < html >.  
+To integrate this functionality with IE8, set the initial page tag as **< html xmlns:x >** instead of < html >.  
 
 Below the peculiarities of initialization for different Webix components are listed. 
 
@@ -50,7 +50,7 @@ XML Toolbar, List and Form
 
 ####Comments: 
 
-- semantially rich tags coincide with component names. The pattern such for tags is as follows: **< x:name >**;
+- semantically rich tags coincide with component names. The pattern such for tags is as follows: **< x:name >**;
 - **x:** namespace for tags that form Webix component including Webix **ui** constructor(**< x:ui >**);
 - component properties come as tag attributes;
 - standard HTML tags perform their function in the way they do it in HTML (< li >);
@@ -99,7 +99,7 @@ Or:
 
 ##Datatable
 
-Datatable features an array of columns each of which has a set of congiguration options: 
+Datatable features an array of columns each of which has a set of configuration options: 
 
 **JS Initialization**
 
@@ -162,7 +162,7 @@ Tabs and cells are connected by their **IDs** that must coincide.
 
 **XML Initialization**
 
-During XML init you needn't define IDs - just place necessary conponents within **body tags** that substitute **cells**. At the same time, **header attrbute** of this tag defined **text value** for a **tab**. 
+During XML initialization you needn't define IDs - just place necessary components within **body tags** that substitute **cells**. At the same time, **header attribute** of this tag defined **text value** for a **tab**. 
 
 ~~~xml
 <x:tabview>

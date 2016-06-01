@@ -5,7 +5,7 @@ In this article build-in component [editors](#editors) and [edit actions](#edita
 
 ##Opening and Closing Editors
 
-- an editor for the component is enabed, or opened, by the [**editAction**](#editaction) that is defined for the whole component;
+- an editor for the component is enabled, or opened, by the [**editAction**](#editaction) that is defined for the whole component;
 - an editor is closed by **moving focus outside the editor** (e.g. clicking another component part) or by hotkeys **'Enter'** for saving the new value
  and **'Esc'** for exiting without saving.
 
@@ -86,7 +86,7 @@ A base editor for passwords that masks symbols in the input.
 
 ~~~js
 //in the property sheet editor is defined by "type"
-{ id:"pass", label:"Passoword", type:"password"}
+{ id:"pass", label:"Password", type:"password"}
 ~~~
 
 {{sample 07_property/01_init.html}}
@@ -116,7 +116,7 @@ A customizable editor that allow for choosing one of the offered values. It look
 
 {{sample 15_datatable/04_editing/04_select.html}}
 
-The options can be defined by either a simple or an associatibe array as well as by url. [Look here for details](#options).
+The options can be defined by either a simple or an associative array as well as by url. [Look here for details](#options).
 
 ###Combo {#combo}
 
@@ -128,7 +128,7 @@ Webix [combo](desktop/combo.md) control with the possibility to filter a popup l
 
 {{sample 15_datatable/04_editing/15_combo.html}}
 
-- The options can be defined by either a simple or an associatibe array as well as by url. [Look here for details](#options);
+- The options can be defined by either a simple or an associative array as well as by url. [Look here for details](#options);
 - The editor is subject to [extensive customization](#advancedconfigurationofselecteditors). 
 
 ####Pro Extensions for Combo Editor
@@ -256,7 +256,7 @@ A popup window with body contents depending on data you edit.
 
 {{sample 15_datatable/04_editing/12_text_popup.html}}
 
-- **colorboard** and **caledar** -  come in popup windows by default and are set as **date** and **color** editor types.
+- **colorboard** and **calendar** -  come in popup windows by default and are set as **date** and **color** editor types.
 
 ###$Popup 
 
@@ -418,7 +418,7 @@ can be customized too. The following things can be changed:
 - the number of list items in the popup;
 - functions can be attached to a list.
 
-Two column attributes are mandatory  - **options** or **collection** to interprete options into text and **suggest** to define the confuguration of related popup list: 
+Two column attributes are mandatory  - **options** or **collection** to interpret options into text and **suggest** to define the configuration of related popup list: 
 
 ~~~js
 { id:"year", editor:"combo", options:years, suggest:{
@@ -459,7 +459,7 @@ To configure a suggest list for a multiselect editor, one should specify its sug
 Webix [datatable](datatable/index.md), [treetable](desktop/treetable.md) and [property sheet](desktop/property_sheet.md)  can use any of the above mentioned editors in **live** mode and update the same data property is case it's used in another column other than the edited one.
 
 ~~~js
-//"rating" is used in both columns while it can be editable ony in the first one
+//"rating" is used in both columns while it can be editable only in the first one
 columns:[
 	{ id:"rating",	header:"Count", editor:"inline-text", liveEdit:true},
 	{ template:"#rating#", width:150 }
@@ -510,7 +510,7 @@ To define a new editor, you should specify at least 5 methods for it:
 - **render()** - renders the editor;
 - **getInputNode()** - gets the input area object.
 
-For instance, this is how a biult-in text editor is made:
+For instance, this is how a built-in text editor is made:
 
 ~~~js
 webix.editors.myeditor = {
@@ -535,7 +535,7 @@ webix.editors.myeditor = {
 }
 ~~~
 
-Inner properies
+Inner properties
 
 - **this.node** - HTML tag of the editor. Appears after *render()* execution;
 - **this.value** - the initial value of an input. Appears after *setValue();* execution;

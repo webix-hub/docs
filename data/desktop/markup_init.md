@@ -43,7 +43,7 @@ In general, the markup can be taken from:
 HTML and XML markup get **peculiar tags** to serve the needs of Webix object initializing (described later). 
 }}
 
-Webix [HTMLform](desktop/htmlform.md) component is more likely to [initialized from HTML and XML](desktop/htmlform.md#markup), yet any component is subject to this technique. 
+Webix [HTMLform](desktop/htmlform.md) component is more likely to [be initialized from HTML and XML](desktop/htmlform.md#markup), though any component is subject to this technique. 
 
 ##Working with Webix Markup Class
 
@@ -83,7 +83,7 @@ webix.ajax("data/config.xml?!", function(text, data){
 {{sample 23_markup/02_xhtml/04_by_ajax.html }}
 
 
-You can use markup initialization by **parsing markup** to the neccessary part of the Webix script thus creating a Webix object.
+You can use markup initialization by **parsing markup** to the necessary part of the Webix script thus creating a Webix object.
 
 ~~~js
 webix.ui({

@@ -84,12 +84,6 @@ Each object in the array specifies a single column. An object can take the follo
 				</ul>
 			</td>
 		</tr>
-        <tr>
-        	<td class="webixdoc_links0" style="vertical-align: top;"> <b>liveEdit</b></td>
-            <td style="vertical-align: top;">
-            	(<i>bool</i>) sets on-the-go updating for the same data property used in different columns and edited in one of them
-			</td>
-		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>fillspace</b> </td>
 			<td>(<i>boolean, number</i>) forces the column to widen for filling the unused table space.<br><br>            	In case of numeric values other than 1 the columns will distribute the available space proportionally according to the numbers.  
@@ -109,6 +103,9 @@ Each object in the array specifies a single column. An object can take the follo
 					<li><b>content</b> -  <i>('textFilter', 'selectFilter' or 'summColumn')</i> the built-in filter or counter </li>
 					<li><b>colspan</b> -  <i>(number)</i> the number of rows a cell should span</li>
 					<li><b>rowspan</b> -  <i>(number)</i> the number of columns a cell should span</li>
+                    <li><b>css</b> -  <i>(string)</i> the name of a css class that will be applied to the column footer</li>
+                    <li><b>rotate</b> -  <i>(boolean)</i> if set to true, switches the footer to the rotated state</li>
+                    <li><b>height</b> -  <i>(number)</i> defines a custom height for the footer line</li>
 				</ul>
 			</td>
 		</tr>
@@ -122,12 +119,27 @@ Each object in the array specifies a single column. An object can take the follo
 					<li><b>content</b> -  <i>('textFilter', 'selectFilter' or 'summColumn')</i> the built-in filter or counter </li>
 					<li><b>colspan</b> -  <i>(number)</i> the number of rows a cell should span</li>
 					<li><b>rowspan</b> -  <i>(number)</i> the number of columns a cell should span</li>
+                    <li><b>css</b> -  <i>(string)</i> the name of a css class that will be applied to the column header</li>
+                    <li><b>rotate</b> -  <i>(boolean)</i> if set to true, switches the header to the rotated state</li>
+                    <li><b>height</b> -  <i>(number)</i> defines a custom height for the header line</li>
 				</ul>
+			</td>
+		</tr>
+         <tr>
+        	<td class="webixdoc_links0" style="vertical-align: top;"> <b>hidden</b></td>
+            <td style="vertical-align: top;">
+            	(<i>boolean</i>) hides a column initially
 			</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"> <b>id</b> </td>
 			<td>(<i>string</i>) the id of the column</td>
+		</tr>
+        <tr>
+        	<td class="webixdoc_links0" style="vertical-align: top;"> <b>liveEdit</b></td>
+            <td style="vertical-align: top;">
+            	(<i>bool</i>) sets on-the-go updating for the same data property used in different columns and edited in one of them
+			</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>math</b></td>

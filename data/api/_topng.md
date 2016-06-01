@@ -24,4 +24,5 @@ webix.toPNG($$("myChart"));
 	19_api/07_export_png.html
 @relatedapi:
 	api/_toexcel.md
+    api/_topdf.md
 
