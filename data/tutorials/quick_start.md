@@ -7,7 +7,7 @@ Fast start
 
 The following steps will take you to your own Webix based app. 
 
-- Create a simple html-page. Specify **HTML5** doctype for it.
+- Create a simple HTML page. Specify **HTML5** doctype for it.
 
 ~~~html
 <!DOCTYPE HTML>

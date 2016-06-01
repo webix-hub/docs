@@ -4,7 +4,7 @@ Introduction to Webix
 Including library
 ---
  
-1 . Create a simple html-page. Specify **HTML5** doctype for it.
+1 . Create a simple HTML page. Specify **HTML5** doctype for it.
 
 2 . Install Webix for your future app. There can be several ways:
 
@@ -39,7 +39,7 @@ into the links to the code files:
 
 #### Use Bower/NuGet
 
-Install local Webix files via **Nuget** or **Bower** package managers by a single command. You don't need to download anything.
+Install local Webix files via **NuGet** or **Bower** package managers by a single command. You don't need to download anything.
 
 {{snippet
 NuGet
@@ -107,7 +107,7 @@ webix.ready(function(){
 });
 ~~~
 
-Next we'll declare base elements, create the app layout and finally nest it with ui components.
+Next we'll declare base elements, create the app layout and finally nest it with UI components.
 
 
 4 . At this step we'll specify an HTML container for the app with the following properties: 
@@ -125,7 +125,7 @@ Next we'll declare base elements, create the app layout and finally nest it with
 Then we'll create a layout structure which will be put into the above created container:
 
 - a layout with 2 rows
-- the 2nd row will contain one more layout with 3 columns
+- the second row will contain one more layout with 3 columns
 
 
 ~~~js
@@ -150,7 +150,7 @@ Note that you can easily omit the **view:"layout"** lines and start setting rows
 
 5 . Now we can insert some components into the layout view.
 
-We'll put a template that will serve as the app's header into the 1st row.
+We'll put a template that will serve as the application's header into the first row.
 
 
 ~~~js
@@ -172,7 +172,7 @@ webix.ui({
 
 
 
-6 . It's high time to place components into the 2nd row. The 3 columns of the 2nd row will be occupied by Tree and DataTable components and a resizer line between them:
+6 . It's high time to place components into the second row. The 3 columns of the second row will be occupied by Tree and DataTable components and a resizer line between them:
 
 ~~~js
 webix.ui({
@@ -218,7 +218,7 @@ The grid_data dataset includes data items in the next mode:
 
 
 7 . At the last step we'll illustrate the usage of ids. In order to refer to a component the following structure should be used - **$$("id")**.<br>
-We will use the Tree method api/link/ui.tree_open.md to open the tree branches and the DataTable method api/ui.datatable_select.md to select the 1st item of the datatable.
+We will use the Tree method api/link/ui.tree_open.md to open the tree branches and the DataTable method api/ui.datatable_select.md to select the first item of the datatable.
 
 ~~~js
 webix.ui({
