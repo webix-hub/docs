@@ -8,18 +8,18 @@ Version 2.5
 - Support of Microsoft Edge, default browser of Windows 10
 - Ability to [disable time periods](desktop/calendar.md#disablingdatesandtimeslotsincalendar) for Calendar widget
 - Ability to populate Form, Toolbar and Property sheet with [complex data](api/values_setvalues.md#complexdata)
-- [Swimlanes in Kanban widget](kanban__configuration.html#creatingswimlanes) to visualize separate work flows
+- [Swim lanes in Kanban widget](kanban__configuration.md#creatingswimlanes) to visualize separate work flows
 - [Total column and footer](desktop/pivot.md#configuringpivot) (both with sum counters) for Pivot widget
 
 
 ##Updates
 
-- [resize()](api/customscroll_resize.md) method for CustomScroll
+- [resize()](api/customscroll_resize.md) method for Custom Scroll
 - second parameter for Datatable [refreshColumns()](api/ui.datatable_refreshcolumns.md) method
 - preserve mode for Datatable [selectRange()](api/ui.datatable_selectrange.md) method
 - "box" and "select" modes for Datatable [blockSelect](api/ui.datatable_blockselect_config.md) property
 - Datatable [showColumnBatch()](api/ui.datatable_showcolumnbatch.md) method extended
-- [map](api/mapcollection_map_config.md) configuration options for Datatable and Datacollection
+- [map](api/mapcollection_map_config.md) configuration options for Datatable and DataCollection
 - [timeout()](api/ajax_timeout.md) method for Ajax API
 - [markInvalid()](api/link/ui.form_markinvalid.md) method for Form
 - [applyChanges()](api/uimanager_applychanges.md) method for UIManager
@@ -64,13 +64,13 @@ Version 2.5
 - replacing layout/body structure with the new one that contains the same ids
 - apply input values on resize
 - buttons right-click handling
-- unnecessary scrolling for datatable with huge rowspans
+- unnecessary scrolling for datatable with huge rowspan
 - footer styling and paging sizes for datatable
 - slider step processing
 - content-type for ajax calls
 - tree lines in Flat skin
-- Safari vscroll in dataTable
-- IE checkbox dblclick
+- Safari vscroll in DataTable
+- IE checkbox dbl click
 - list filtering in Combo
 - dateFilter filter and empty records
 - ability to cancel and enable scroll within datatable

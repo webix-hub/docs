@@ -154,7 +154,7 @@ Read more about message boxes in the [corresponding chapter](desktop/message_box
 
 - [Event Handling](desktop/event_handling.md)
 - [Data Update](desktop/update.md)
-- [HTMLform and Form Treatment](desktop/form_tasks.md)
+- [HTML form and Form Treatment](desktop/form_tasks.md)
 
  
 Go to the previous page - [Creating a Basic  App](tutorials/basic_app.md)
