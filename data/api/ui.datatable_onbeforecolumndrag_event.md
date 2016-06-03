@@ -11,7 +11,7 @@ onBeforeColumnDrag
 - event				Event object			the native event object
     
 @example:
-$$("datatable1").attachEvent("onBeforeColumnDrag", function(from, event){
+$$("datatable1").attachEvent("onBeforeColumnDrag", function(sourceId, event){
 	// some code
 	return true;
 });

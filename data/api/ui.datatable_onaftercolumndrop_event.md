@@ -12,7 +12,7 @@ onAfterColumnDrop
 - event			Event object		the native event object
 
 @example:
-$$("datatable1").attachEvent("onAfterColumnDrop", function(from, to, event){...});
+$$("datatable1").attachEvent("onAfterColumnDrop", function(sourceId, targetId, event){...});
 
 @template:	api_event
 @related: 

@@ -11,7 +11,7 @@ onAfterColumnDropOrder
 - node			HTML element		the target HTML element
 
 @example:
-$$("datatable1").attachEvent("onAfterColumnDrop", function(from, to, node){...});
+$$("datatable1").attachEvent("onAfterColumnDrop", function(sourceId, targetId, node){...});
 
 @template:	api_event
 @related: 

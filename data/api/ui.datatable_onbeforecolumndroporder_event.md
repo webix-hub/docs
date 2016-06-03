@@ -11,7 +11,7 @@ onBeforeColumnDropOrder
 - event			Event object		the native event object
 
 @example:
-$$("datatable1").attachEvent("onBeforeColumnDropOrder", function(from, event){
+$$("datatable1").attachEvent("onBeforeColumnDropOrder", function(sourceId, event){
 	// some code
     return true;
 });

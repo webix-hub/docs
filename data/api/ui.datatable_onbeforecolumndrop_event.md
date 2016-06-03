@@ -12,7 +12,7 @@ onBeforeColumnDrop
 
 @example:
 
-$$("datatable1").attachEvent("onBeforeColumnDrop", function(from, to, event){
+$$("datatable1").attachEvent("onBeforeColumnDrop", function(sourceId, targetId, event){
 	// some code
     return true;
 });
