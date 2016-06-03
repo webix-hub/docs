@@ -7,7 +7,7 @@ onBeforeColumnDropOrder
 
 @params:
 
-- from			object				the source object
+- sourceId		string				the source column id
 - event			Event object		the native event object
 
 @example:

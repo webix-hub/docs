@@ -14,7 +14,7 @@ onBeforeDrag
 
 @example: 
 	
-grida.attachEvent("onBeforeDrag", function(context, ev){
+grida.attachEvent("onBeforeDrag", function(context, native_event){
 		context.html = "<div style='padding:8px;'>";
 		for (var i=0; i< context.source.length; i++){
 			context.html += context.from.getItem(context.source[i]).title + "<br>" ;
