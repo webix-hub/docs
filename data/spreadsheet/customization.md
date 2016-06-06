@@ -6,12 +6,21 @@ SpreadSheet consists of two main parts: a toolbar with instruments panel and a s
 The full structure of SpreadSheet can be presented:
 
 - Toolbar:
- - the Undo/Redo buttons
- - Font section: the Font-family and Font-size selectors
- - Text section: the Font-weight buttons and the Font color selector (colorboard)
- - Cell section: the Background color selector, the Borders selector with colorboard and the Merge button
- - Align section: the Horizontal and Vertical Align buttons and the Word Wrap button
- - Format section with the Format selector of the cell's content
+	- Undo/Redo block
+	- Font block: 
+    	- Font-family selector
+        - Font-size selector
+    	- Font-weight buttons
+        - Font color selector (colorboard)
+    	- Background color selector
+        - Borders selector with colorboard         
+	- Align block: 
+    	- Horizontal Align button
+        - Vertical Align button
+        - Text Wrap button
+        - Merge button
+	- Format block:  
+    	- Format selector of the cell's content
 - DataTable
 
 
@@ -39,6 +48,59 @@ Then you can address to the toolbar via the corresponding id.
 spreadsheet.$$("bar");
 ~~~
 
+###Undo/Redo buttons
+
+~~~js
+
+// the Undo button
+"undo": function undo() {
+return ui.iconButton({ name: "undo" });
+},
+
+// the Redo button
+"redo": function redo() {
+return ui.iconButton({ name: "redo" });
+}
+~~~
+
+~~~js
+iconButton: function iconButton(config) {
+  var btn = webix.copy(config);
+  webix.extend(btn, { view: "button", type: "htmlbutton", width: 40, id: config.name,
+  label: 
+  "<span class='webix_ssheet_button_icon webix_ssheet_icon_" + config.name + "'></span>",
+  css: "",
+  tooltip: webix.i18n.spreadsheet.tooltips[config.name] || ""
+  });
+  if (config.onValue) {
+	webix.extend(btn, { view:"ssheet-toggle", 
+    onValue:config.onValue, offValue:config.offValue },true);
+  }
+
+   return btn;
+}
+~~~
+
+###Font-family selector
+
+~~~js
+"font-family": function fontFamily() {
+	return ui.select({ name:"font-family",tooltip:"Font family", options:_fontFamily, width: 100});
+}
+~~~
+
+###Font color, Background color selection buttons
+
+~~~js
+colorButton: function colorButton(config) {
+	return {
+		view: "ssheet-colorpicker", css: config.css, name: config.name, width: config.width || 62,
+		title: "<span class='webix_ssheet_button_icon webix_ssheet_color_button_icon webix_ssheet_icon_" + config.name + "' ></span>",
+		tooltip: webix.i18n.spreadsheet.tooltips[config.name] || ""
+	};
+}
+~~~
+
 Customizing toolbar's buttons
 ---------------------------
 
@@ -46,12 +108,11 @@ The settings for toolbar are specified in the api/ui.spreadsheet_buttons_config.
 The parameters' values are arrays of buttons that are included into this or that block.
 
 ~~~js
-buttons:{
-	"undo": ["undo", "redo"],
-	"font": ["font-family", "font-size"],
-	"text": ["font-weight", "font-style", "text-decoration", "color"],
-	"cell": ["background", "borders", "span"],
-	"align": ["text-align", "vertical-align", "wrap"],
+buttons: {
+	"undo": ["undo","redo"],
+	"font": ["font-family","font-size","font-weight","font-style",
+	"text-decoration","color","background","borders"],
+	"align": ["text-align","vertical-align","wrap","span"],
 	"format": ["format"]
 }
 ~~~
