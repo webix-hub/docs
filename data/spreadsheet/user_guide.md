@@ -424,6 +424,4 @@ The key points of the custom toolbar are the following:
 ]
 ~~~
 
-{{sample
-spreadsheet/samples/03_customization/07_custom_toolbar.html
-}}
+{{sample 65_spreadsheet/samples/03_customization/07_custom_toolbar.html}}

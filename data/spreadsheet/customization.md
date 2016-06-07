@@ -29,7 +29,7 @@ Toolbar
 
 The toolbar contains a panel with instruments for editing and formatting the content of table's cells.
 
-<img src="spreadsheet/instruments_panel.png">
+<img src="spreadsheet/default_toolbar.png">
 
 To refer to the toolbar object, firstly you need to specify the toolbar's id in the toolbar configuration.
 
@@ -55,6 +55,8 @@ In this section we will consider the blocks of buttons and their purpose in deta
 
 <h3 id="undo">Undo/Redo block</h3>
 
+<img src="spreadsheet/undo_redo.png">
+
 It includes two buttons:
 
 - the *Undo* button discards the recent change and reverts Spreadsheet into the previous state
@@ -62,11 +64,13 @@ It includes two buttons:
 
 <h3 id="font">Font block</h3> 
 
+<img src="spreadsheet/font.png">
+
 This block contains a large group of buttons intended for handling font and cell borders' settings:
 
 - the *Font family* select allows choosing the necessary font for the cell's text
 - the *Font size* select sets the font size of the cell's text 
-- the *Font type* group of buttons helps to define the weight, style and decoration of font. The settings are typical:
+- the *Font type* group of buttons helps to define the weight, style and decoration of the font:
 	- Bold
     - Italic
     - Underline
@@ -76,6 +80,8 @@ This block contains a large group of buttons intended for handling font and cell
 
 <h3 id="align">Align block</h3>
 
+<img src="spreadsheet/align.png">
+
 Besides managing Horizontal and Vertical cell alignment, this block also includes means of text wrapping and merging cells' content:
 
 - the *Horizontal align* select allows specifying one of three modes of text alignment in a cell: left, right or center 
@@ -84,6 +90,8 @@ Besides managing Horizontal and Vertical cell alignment, this block also include
 - the *Merge* button allows merging the content of several cells and unmerging it as well
 
 <h3 id="format">Format block</h3> 
+
+<img src="spreadsheet/format.png">
 
 The only button of this block is the *Format* select, which sets the format of cell content. The available formats are:
 
