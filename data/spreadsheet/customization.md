@@ -3,24 +3,24 @@ Customizing SpreadSheet
 
 SpreadSheet consists of two main parts: a toolbar with instruments panel and a stylized datatable.
 
-The full structure of SpreadSheet can be presented:
+The full structure of SpreadSheet can be presented as:
 
 - Toolbar:
-	- Undo/Redo block
-	- Font block: 
-    	- Font-family selector
-        - Font-size selector
-    	- Font-weight buttons
-        - Font color selector (colorboard)
-    	- Background color selector
-        - Borders selector with colorboard         
-	- Align block: 
+	- <a href="spreadsheet/customization.md#undo">Undo/Redo block</a>
+	- <a href="spreadsheet/customization.md#font">Font block</a>: 
+    	- Font family select
+        - Font size select
+    	- Font type buttons
+        - Font color select 
+    	- Background color select
+        - Borders select  
+	- <a href="spreadsheet/customization.md#align">Align block</a>: 
     	- Horizontal Align button
         - Vertical Align button
         - Text Wrap button
         - Merge button
-	- Format block:  
-    	- Format selector of the cell's content
+	- <a href="spreadsheet/customization.md#format">Format block</a>:  
+    	- Format select
 - DataTable
 
 
@@ -48,58 +48,49 @@ Then you can address to the toolbar via the corresponding id.
 spreadsheet.$$("bar");
 ~~~
 
-###Undo/Redo buttons
+Toolbar buttons
+---------------
 
-~~~js
+In this section we will consider the blocks of buttons and their purpose in detail.
 
-// the Undo button
-"undo": function undo() {
-return ui.iconButton({ name: "undo" });
-},
+<h3 id="undo">Undo/Redo block</h3>
 
-// the Redo button
-"redo": function redo() {
-return ui.iconButton({ name: "redo" });
-}
-~~~
+It includes two buttons:
 
-~~~js
-iconButton: function iconButton(config) {
-  var btn = webix.copy(config);
-  webix.extend(btn, { view: "button", type: "htmlbutton", width: 40, id: config.name,
-  label: 
-  "<span class='webix_ssheet_button_icon webix_ssheet_icon_" + config.name + "'></span>",
-  css: "",
-  tooltip: webix.i18n.spreadsheet.tooltips[config.name] || ""
-  });
-  if (config.onValue) {
-	webix.extend(btn, { view:"ssheet-toggle", 
-    onValue:config.onValue, offValue:config.offValue },true);
-  }
+- the *Undo* button discards the recent change and reverts Spreadsheet into the previous state
+- the *Redo* button restores the applied change one more time
 
-   return btn;
-}
-~~~
+<h3 id="font">Font block</h3> 
 
-###Font-family selector
+This block contains a large group of buttons intended for handling font and cell borders' settings:
 
-~~~js
-"font-family": function fontFamily() {
-	return ui.select({ name:"font-family",tooltip:"Font family", options:_fontFamily, width: 100});
-}
-~~~
+- the *Font family* select allows choosing the necessary font for the cell's text
+- the *Font size* select sets the font size of the cell's text 
+- the *Font type* group of buttons helps to define the weight, style and decoration of font. The settings are typical:
+	- Bold
+    - Italic
+    - Underline
+- the *Font color* select sets the font color 
+- the *Background color* select sets the cell color
+- the *Borders* select lets apply a new or different style for cell borders    
 
-###Font color, Background color selection buttons
+<h3 id="align">Align block</h3>
 
-~~~js
-colorButton: function colorButton(config) {
-	return {
-		view: "ssheet-colorpicker", css: config.css, name: config.name, width: config.width || 62,
-		title: "<span class='webix_ssheet_button_icon webix_ssheet_color_button_icon webix_ssheet_icon_" + config.name + "' ></span>",
-		tooltip: webix.i18n.spreadsheet.tooltips[config.name] || ""
-	};
-}
-~~~
+Besides managing Horizontal and Vertical cell alignment, this block also includes means of text wrapping and merging cells' content:
+
+- the *Horizontal align* select allows specifying one of three modes of text alignment in a cell: left, right or center 
+- the *Vertical align* select defines the mode of vertical text alignment in a cell: top, middle or bottom
+- the *Text Wrap* button lets wrap text in a cell
+- the *Merge* button allows merging the content of several cells and unmerging it as well
+
+<h3 id="format">Format block</h3> 
+
+The only button of this block is the *Format* select, which sets the format of cell content. The available formats are:
+
+- Common
+- Currency
+- Number
+- Percent
 
 Customizing toolbar's buttons
 ---------------------------
