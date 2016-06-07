@@ -3,7 +3,7 @@ Others
 
 {{api
 - api/link/ui.pivot_$$_other.md - locates sub-item by id
-- api/ui.pivot_$divider_other.md - 
+- api/ui.pivot_$divider_other.md - a string that is used in Pivot calculations
 - api/link/ui.pivot_$getsize_other.md - returns the current size of the component
 - api/link/ui.pivot_$height_other.md - current height of the view
 - api/link/ui.pivot_$setsize_other.md - sets the component size
@@ -27,6 +27,5 @@ Others
 - api/link/ui.pivot_config_other.md
 - api/link/ui.pivot_name_other.md
 - api/ui.pivot_operations_other.md
-
 
 

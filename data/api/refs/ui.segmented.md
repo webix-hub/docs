@@ -54,7 +54,7 @@ var segmented = webix.ui({
 - api/link/ui.segmented_getvalue.md - returns the current value of the control
 - api/link/ui.segmented_hasevent.md - checks whether the component has the specified event
 - api/link/ui.segmented_hide.md - hides the view
-- api/ui.segmented_hideoption.md - 
+- api/ui.segmented_hideoption.md - hides an option (segment) of the button
 - api/link/ui.segmented_isenabled.md - checks whether the view is enabled
 - api/link/ui.segmented_isvisible.md - checks whether the view is visible
 - api/link/ui.segmented_mapevent.md - routes events from one object to another
@@ -66,7 +66,7 @@ var segmented = webix.ui({
 - api/link/ui.segmented_setbottomtext.md - sets the input label at the bottom of it
 - api/link/ui.segmented_setvalue.md - sets a new value for the component
 - api/link/ui.segmented_show.md - makes the component visible
-- api/ui.segmented_showoption.md - 
+- api/ui.segmented_showoption.md - shows a hidden option (segment) of the button
 - api/link/ui.segmented_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.segmented_unbind.md - breaks "bind" link
 - api/link/ui.segmented_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command

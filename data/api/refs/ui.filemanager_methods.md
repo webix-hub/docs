@@ -10,7 +10,7 @@ Methods
 - api/link/ui.filemanager_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.filemanager_callevent.md - calls an inner event
 - api/link/ui.filemanager_clearall.md - removes all items from the component
-- api/link/ui.filemanager_copy.md - makes a copy of item
+- api/link/ui.filemanager_copy.md - makes a copy of an item
 - api/ui.filemanager_copyfile.md - copies a selected file/folder
 - api/link/ui.filemanager_count.md - returns the number of currently visible items
 - api/ui.filemanager_createfolder.md - creates a new folder
@@ -95,7 +95,7 @@ Methods
 - api/link/ui.filemanager_unbind.md - breaks "bind" link
 - api/link/ui.filemanager_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.filemanager_updateitem.md - sets properties of the data item
-- api/ui.filemanager_uploadfile.md - opens a file upload dialog
+- api/ui.filemanager_uploadfile.md - opens the file upload dialog
 }}
 
 @index:

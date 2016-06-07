@@ -236,7 +236,7 @@ var datatable = webix.ui({
 - api/link/ui.datatable_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.datatable_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.datatable_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
-- api/ui.datatable_oneditorchange_event.md - 
+- api/ui.datatable_oneditorchange_event.md - fires when the native onchange event occurs for an HTML input (select, text)
 - api/link/ui.datatable_onfocus_event.md - fires when a view gets focus
 - api/ui.datatable_onheaderclick_event.md - occurs after clicking on header
 - api/link/ui.datatable_onitemclick_event.md - fires when a component item was clicked

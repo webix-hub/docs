@@ -16,7 +16,7 @@ Methods
 - api/link/ui.filetree_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.filetree_close.md - closes the branch with the specified id
 - api/link/ui.filetree_closeall.md - closes all branches in the tree
-- api/link/ui.filetree_copy.md - makes a copy of item
+- api/link/ui.filetree_copy.md - makes a copy of an item
 - api/link/ui.filetree_count.md - returns the number of currently visible items
 - api/link/ui.filetree_customize.md - redefines the "type" property
 - api/link/ui.filetree_define.md - redefines a single configuration property (or a hash of properties)

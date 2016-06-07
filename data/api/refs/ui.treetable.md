@@ -243,7 +243,7 @@ var treetable = webix.ui({
 - api/link/ui.treetable_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.treetable_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.treetable_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
-- api/link/ui.treetable_oneditorchange_event.md - 
+- api/link/ui.treetable_oneditorchange_event.md - fires when the native onchange event occurs for an HTML input (select, text)
 - api/link/ui.treetable_onfocus_event.md - fires when a view gets focus
 - api/link/ui.treetable_onheaderclick_event.md - occurs after clicking on header
 - api/link/ui.treetable_onitemcheck_event.md - fires when you check an item in tree and treetable

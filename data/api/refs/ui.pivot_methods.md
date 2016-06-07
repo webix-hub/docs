@@ -10,7 +10,7 @@ Methods
 - api/link/ui.pivot_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.pivot_callevent.md - calls an inner event
 - api/link/ui.pivot_clearall.md - removes all items from the component
-- api/ui.pivot_configure.md - calls the pivot configuration window
+- api/ui.pivot_configure.md - opens the pivot configuration window
 - api/link/ui.pivot_count.md - returns the number of currently visible items
 - api/link/ui.pivot_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.pivot_destructor.md - destroy datastore
@@ -22,7 +22,7 @@ Methods
 - api/link/ui.pivot_find.md - returns rows that match the criterion
 - api/link/ui.pivot_getchildviews.md - returns child views of the calling component
 - api/ui.pivot_getconfigwindow.md - returns the object of the window with pivot configuration
-- api/ui.pivot_getfields.md - returns an object with detailed description of fields in each sector
+- api/ui.pivot_getfields.md - returns an object with fields configurations
 - api/link/ui.pivot_getfirstid.md - returns the ID of the first item
 - api/link/ui.pivot_getformview.md - returns master form for the input
 - api/link/ui.pivot_getidbyindex.md - returns the id of the item with the specified index

@@ -10,7 +10,7 @@ TreeDataMove
 <div class='h2'>Methods</div>
 
 {{api
-- api/treedatamove_copy.md - makes a copy of item
+- api/treedatamove_copy.md - makes a copy of an item
 - api/treedatamove_move.md - move item to new position
 }}
 

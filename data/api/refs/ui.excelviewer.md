@@ -203,7 +203,7 @@ dummy stub
 - api/link/ui.excelviewer_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.excelviewer_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.excelviewer_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
-- api/link/ui.excelviewer_oneditorchange_event.md - 
+- api/link/ui.excelviewer_oneditorchange_event.md - fires when the native onchange event occurs for an HTML input (select, text)
 - api/link/ui.excelviewer_onfocus_event.md - fires when a view gets focus
 - api/link/ui.excelviewer_onheaderclick_event.md - occurs after clicking on header
 - api/link/ui.excelviewer_onitemclick_event.md - fires when a component item was clicked

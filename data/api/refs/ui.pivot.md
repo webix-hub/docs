@@ -48,7 +48,7 @@ var pivot = webix.ui({
 - api/link/ui.pivot_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.pivot_callevent.md - calls an inner event
 - api/link/ui.pivot_clearall.md - removes all items from the component
-- api/ui.pivot_configure.md - calls the pivot configuration window
+- api/ui.pivot_configure.md - opens the pivot configuration window
 - api/link/ui.pivot_count.md - returns the number of currently visible items
 - api/link/ui.pivot_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.pivot_destructor.md - destroy datastore
@@ -60,7 +60,7 @@ var pivot = webix.ui({
 - api/link/ui.pivot_find.md - returns rows that match the criterion
 - api/link/ui.pivot_getchildviews.md - returns child views of the calling component
 - api/ui.pivot_getconfigwindow.md - returns the object of the window with pivot configuration
-- api/ui.pivot_getfields.md - returns an object with detailed description of fields in each sector
+- api/ui.pivot_getfields.md - returns an object with fields configurations
 - api/link/ui.pivot_getfirstid.md - returns the ID of the first item
 - api/link/ui.pivot_getformview.md - returns master form for the input
 - api/link/ui.pivot_getidbyindex.md - returns the id of the item with the specified index
@@ -122,7 +122,7 @@ var pivot = webix.ui({
 - api/link/ui.pivot_ondestruct_event.md - occurs when component destroyed
 - api/ui.pivot_onheaderinit_event.md - fires when pivot header is initialized
 - api/link/ui.pivot_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
-- api/ui.pivot_onpopup_event.md - fires after a popup for configuring Pivot is created
+- api/ui.pivot_onpopup_event.md - fires after a configuration window for Pivot is created
 }}
 
 
@@ -136,15 +136,14 @@ var pivot = webix.ui({
 - api/link/ui.pivot_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.pivot_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.pivot_data_config.md - JavaScript array containing data for the component
-- api/link/ui.pivot_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.pivot_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.pivot_datatype_config.md - the type of loaded data
 - api/link/ui.pivot_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.pivot_fieldmap_config.md - defines custom labels for fields
 - api/ui.pivot_filterlabelalign_config.md - sets the horizontal alignment of the filters' labels in Pivot Chart
 - api/ui.pivot_filterlabelwidth_config.md - sets the width of the filters' labels
-- api/ui.pivot_filterminwidth_config.md - sets the minimal width of filters (both input and label) in the header of the chart
-- api/ui.pivot_filterwidth_config.md - sets the width of filters (both input and label) in the header of the chart
+- api/ui.pivot_filterminwidth_config.md - sets the minimal width of filters (both input and label) in the pivot header
+- api/ui.pivot_filterwidth_config.md - sets the width of filters (both input and label) in the pivot header
 - api/link/ui.pivot_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.pivot_height_config.md - sets the height of the component
 - api/link/ui.pivot_hidden_config.md - defines whether the view will be hidden initially
@@ -159,7 +158,7 @@ var pivot = webix.ui({
 - api/link/ui.pivot_padding_config.md - defines the space between the element borders and content (applies the specified value to all sides).
 - api/link/ui.pivot_paddingx_config.md - sets the right and left padding (applies the specified value to both sides)
 - api/link/ui.pivot_paddingy_config.md - sets the top and bottom padding (applies the specified value to both sides)
-- api/ui.pivot_profile_config.md - 
+- api/ui.pivot_profile_config.md - enables profiling (for development stage)
 - api/link/ui.pivot_ready_config.md - event handler called just after the component has been completely initialized
 - api/link/ui.pivot_removemissed_config.md - defines how to treat items in case of reloading
 - api/link/ui.pivot_responsive_config.md - enables responsive mode for horizontal layout
@@ -170,7 +169,7 @@ var pivot = webix.ui({
 - api/link/ui.pivot_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.pivot_visiblebatch_config.md - sets the batch that will be shown initially
 - api/link/ui.pivot_width_config.md - sets the width of the component
-- api/ui.pivot_yscalewidth_config.md - sets the width of
+- api/ui.pivot_yscalewidth_config.md - sets the width of the first column
 }}
 
 
@@ -182,7 +181,7 @@ var pivot = webix.ui({
 
 {{api
 - api/link/ui.pivot_$$_other.md - locates sub-item by id
-- api/ui.pivot_$divider_other.md - 
+- api/ui.pivot_$divider_other.md - a string that is used in Pivot calculations
 - api/link/ui.pivot_$getsize_other.md - returns the current size of the component
 - api/link/ui.pivot_$height_other.md - current height of the view
 - api/link/ui.pivot_$setsize_other.md - sets the component size

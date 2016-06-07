@@ -39,12 +39,12 @@ Properties
 - api/link/ui.filemanager_save_config.md - defines URLs for data saving
 - api/link/ui.filemanager_scheme_config.md - defines schemes for data processing
 - api/ui.filemanager_structure_config.md - sets the configuration of File Manager views
-- api/ui.filemanager_templatecreate_config.md - defines a template for a newly created folder
-- api/ui.filemanager_templatedate_config.md - defines a template applied for the format of folder/file's date of modification
-- api/ui.filemanager_templateicon_config.md - defines a template for icons that can be customized (used in "files" and "table" views)
-- api/ui.filemanager_templatename_config.md - defines a template applied for the folder/file's name
-- api/ui.filemanager_templatesize_config.md - defines a template applied for the file size
-- api/ui.filemanager_templatetype_config.md - defines a template applied for the file type
+- api/ui.filemanager_templatecreate_config.md - specifies properties for a newly created folder
+- api/ui.filemanager_templatedate_config.md - specifies the format of folder/file's date of modification
+- api/ui.filemanager_templateicon_config.md - a customizable template for icons in "Files" and "Table" view modes
+- api/ui.filemanager_templatename_config.md - specifies how the folder/file's name will be displayed in File Manager
+- api/ui.filemanager_templatesize_config.md - specifies the file size
+- api/ui.filemanager_templatetype_config.md - specifies the type of a file
 - api/link/ui.filemanager_type_config.md - defines the layout borders
 - api/ui.filemanager_uploadprogress_config.md - defines an object with configuration of progress bar that appears during the upload
 - api/link/ui.filemanager_url_config.md - the URL which the component will use to load data after its initialization

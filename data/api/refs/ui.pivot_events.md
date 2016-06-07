@@ -17,7 +17,7 @@ Events
 - api/link/ui.pivot_ondestruct_event.md - occurs when component destroyed
 - api/ui.pivot_onheaderinit_event.md - fires when pivot header is initialized
 - api/link/ui.pivot_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
-- api/ui.pivot_onpopup_event.md - fires after a popup for configuring Pivot is created
+- api/ui.pivot_onpopup_event.md - fires after a configuration window for Pivot is created
 }}
 
 @index:
