@@ -15,7 +15,7 @@ Main properties of a pager object:
 
 - api/ui.pager_size_config.md - the number of records per page;
 - api/ui.pager_group_config.md -  the number of pages (numbered squares for paging);
-- api/ui.pager_page_config.md - sets the page that will be shown intially (zero-based numbering). 
+- api/ui.pager_page_config.md - sets the page that will be shown initially (zero-based numbering). 
 
 If a component container is too small to display the number of items specified by api/ui.pager_size_config.md, a scrollbar appears.
 
@@ -27,7 +27,7 @@ If a component container is too small to display the number of items specified b
 
 ##Paging and Dynamic Loading
 
-With dynamic loading, only part of the stored records are loaded into the component during init. 
+With dynamic loading, only part of the stored records are loaded into the component during initialization. 
 Each time you page through the component, a data request is sent to server to load the next portion of data. 
 
 Read more about [dynamic loading](desktop/dynamic_loading.md).
@@ -122,7 +122,7 @@ grida.getPager().clone({
 {{sample 15_datatable/19_paging/04_many_pagers.html}}
 
 {{note
-Cloned pagers will change their values sumultaneously!
+Cloned pagers will change their values simultaneously!
 }}
  
 ##Invisible pager
@@ -224,7 +224,7 @@ pager:{
 
 ##Pager Localization
 
-By default, pager uses recognizable signes to display **order buttons** (first, last, prev, next).  
+By default, pager uses recognizable signs to display **order buttons** (first, last, prev, next).  
 
 {{snippet
 Default Locale
@@ -388,7 +388,7 @@ webix.ui({
 });
 ~~~
 
-Template parameter can be omitted in favour of default template. 
+Template parameter can be omitted in favor of default template. 
 
 {{sample 25_pager/12_standalone_pager.html }}
 
