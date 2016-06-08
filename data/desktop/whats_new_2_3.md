@@ -89,7 +89,7 @@ Check [migration guide](migration.md) for more details.
 - clipboard breaks focus in the editor
 - drag-n-drop for columns in the datatable, header with colspans
 - dynamic loading on touch devices
-- fixing promize functionality which can export self to external structure when global "module" is defined
+- fixing promiz functionality which can export self to external structure when global "module" is defined
 - maximum tab number calculation
 - TreeStore: each method and filtered branches
 - applying new configuration after config reloading in datatable
@@ -98,12 +98,12 @@ Check [migration guide](migration.md) for more details.
 - set optionHeight for skins
 - checkAll() and uncheckAll() methods
 - configuration of richselect with options from HTML
-- inputHeight in case of labelPositon top
+- inputHeight in case of labelPosition top
 - tree ignores open call for already opened items
 - regression in getValue() of colorpicker
 - attribute checking in block-selection for datatable
 - value property in tabview
-- fixed datathrottle usage
+- fixed data throttle usage
 - Date serialization during ajax operations
 - resetting uploader after file choosing
 - focusing checkbox editor in Chrome
@@ -114,15 +114,15 @@ Check [migration guide](migration.md) for more details.
 - filters in treestore
 - autoheight in templates
 - tabbar "more" icon styling
-- blockselection and custom scroll
-- blockselecting and dbl-click events
-- blockselection in scrolled state
-- blockselection in the empty datatable
+- block selection and custom scroll
+- block selecting and dbl-click events
+- block selection in scrolled state
+- block selection in the empty datatable
 - getValue(), "editable" value
 - setLocale() and arrays extend
 - setValue() and getValue() of datepicker
 - setLocale() extend for complex properties
-- remove icons from Scheduler's calendars
+- remove icons from Scheduler calendars
 - timepicker position
 - FileManager locale: confirmation popups; collisions resolving without url handler
 - conflicts between native navigation keys and navigation hotkeys
@@ -132,7 +132,6 @@ Check [migration guide](migration.md) for more details.
 - createFolder for fileManager
 - default hotkeys for windows
 - treestore serialize (filtering)
-- provideAPI
 - moving items in tree and tree table while in the filtered state
 - missed methods in TreeCollection
 - "format" of datepicker and filemanager fixes

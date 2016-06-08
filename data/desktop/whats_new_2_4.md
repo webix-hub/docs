@@ -17,11 +17,11 @@ Version 2.4
 - "static" property for non-animated Multiviews
 - event onBeforeEventShow for Scheduler
 - getPopup method for combo editor
-- ie9 support for progress bar
+- IE9 support for progress bar
 - invalid message and bottom label for form widget
 - metaKey support (mac OS) for multiselection
 - methods getCurrentFolder and getSelectedFile for FileManager
-- noselect style for views in drag and multi-selection processes
+- no select style for views in drag and multiselection processes
 - onPopup event for pivots (fires on popup creation)
 - paging for TreeTable
 - proxy is released after view destruction
@@ -31,7 +31,7 @@ Version 2.4
 - webix ajax object to arguments of onBeforeAjax event
 - addStyle reused previously created style tag
 - headers as 5th argument of onBeforeAjax event
-- updated FontAwesome to 4.3.0 version
+- updated Font Awesome to 4.3.0 version
 
 ## Fixes
 
@@ -44,7 +44,7 @@ Version 2.4
 - colspans and split mode
 - column drag-n-drop on touch devices
 - combo accepts full data object as a value
-- combo behavior in dyn. loading mode
+- combo behavior in dynamic loading mode
 - correct input width for inputs with no label (richselect-based filters of datatable)
 - creating new branches in filtered state
 - CSV parser ignores the trailing new-lines
@@ -80,7 +80,7 @@ Version 2.4
 - tabFocus doesn't work for icon view
 - text positioning in datatable
 - unnecessary scroll blocking by datatable
-- using select api in datatable with complex id
+- using select API in datatable with complex id
 - validation in dataprocessor breaks insert operations
 - validation in hidden form
 - value binding and dataFeed
