@@ -56,7 +56,7 @@ of various languages.
                 <li>spreadsheet/import.md</li>
                 <li>spreadsheet/handling_events.md</li>
                 <li>spreadsheet/howto.md</li>
-                <li>spreadsheet/user_guide.md</li>
+                <li>spreadsheet/ui_guide.md</li>
             </ul>
 		</td>
 		<td class='topic_description'>Describes possible operations with SpreadSheet and its elements.</td>
@@ -76,4 +76,4 @@ of various languages.
 - spreadsheet/import.md
 - spreadsheet/handling_events.md
 - spreadsheet/howto.md
-- spreadsheet/user_guide.md
+- spreadsheet/ui_guide.md

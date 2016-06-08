@@ -1,4 +1,4 @@
-SpreadSheet User Guide
+User Interface Guidelines
 ====================
 
 The SpreadSheet widget has a very rich UI structure. This guide is intended for providing you with useful tips on customizing the default user interface 
@@ -8,11 +8,11 @@ The Toolbar Structure
 ------------------------------------
 
 The SpreadSheet toolbar contains blocks of buttons grouped according to their functionality.
-The arrangement of buttons blocks in the toolbar is specified in the [*"buttons"* collection](spreadsheet/user_guide.md#customizingthebuttonscollection). 
+The arrangement of buttons blocks in the toolbar is specified in the [*"buttons"* collection](spreadsheet/ui_guide.md#customizingthebuttonscollection). 
 
 The Toolbar's specificity is that it can include only one row of buttons. 
 However, there is also a way to customize the Toolbar so that it would have a multi-row structure. 
-In this case the [*"toolbar"* collection](spreadsheet/user_guide.md#customizingthetoolbarcollection) shoud be used.
+In this case the [*"toolbar"* collection](spreadsheet/ui_guide.md#customizingthetoolbarcollection) shoud be used.
 
 Let's consider the structure of both the *buttons* collection and the *toolbar* one in detail.
 
@@ -378,7 +378,7 @@ through the "toolbar" collection and allows specifying the width and height of b
 <img src="spreadsheet/custom_toolbar.png">
 
 Pay attention that buttons in the "toolbar" collection should follow the same rules 
-as in the [*"buttons"* collection](spreadsheet/user_guide.md#customizingthebuttonscollection).
+as in the [*"buttons"* collection](spreadsheet/ui_guide.md#customizingthebuttonscollection).
 
 
 The key points of the custom toolbar are the following:
