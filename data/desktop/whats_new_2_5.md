@@ -8,7 +8,7 @@ Version 2.5
 - Support of Microsoft Edge, default browser of Windows 10
 - Ability to [disable time periods](desktop/calendar.md#disablingdatesandtimeslotsincalendar) for Calendar widget
 - Ability to populate Form, Toolbar and Property sheet with [complex data](api/values_setvalues.md#complexdata)
-- [Swim lanes in Kanban widget](kanban__configuration.md#creatingswimlanes) to visualize separate work flows
+- [Swim lanes in Kanban widget](kanban/configuration.md#creatingswimlanes) to visualize separate work flows
 - [Total column and footer](desktop/pivot.md#configuringpivot) (both with sum counters) for Pivot widget
 
 
