@@ -224,7 +224,7 @@ Any app on the page is put into layout, even if it isn't declared directly, so a
 Tab Navigation
 }}
 ~~~js
-webix.UIMananger.tabControl = true;
+webix.UIManager.tabControl = true;
 ~~~
 
 From now on, you can move through your app with *'tab'* and *'shift+tab'* keys. For instance, if you have two forms in different layout columns, focus will move through all the input fields of the first form,
