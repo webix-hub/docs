@@ -3,7 +3,7 @@ Settings for Radar Chart
 
 
 
-##Custom Initializzation
+##Custom Initialization
 
 ###Data Presentation
 

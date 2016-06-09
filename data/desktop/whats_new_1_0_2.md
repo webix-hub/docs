@@ -10,7 +10,7 @@ Version 1.0.2
 - xml parse can recognize arrays	
 - addView adds to the end of layout if index was not defined	
 - skin updates, important flags removed where possible
-- csrf key now sent through http headers
+- csrf key now sent through HTTP headers
 
 ### Fixes
 
@@ -19,7 +19,7 @@ Version 1.0.2
 - IE8 sets invalid value after changing cell value with select editor
 - minWidth and maxWidth settings from xml
 - loading tree-like data from XML
-- datatable do not allow to define order of columns during export to pdf and excel
+- datatable do not allow to define order of columns during export to PDF and Excel
 - incorrect remove action for local and session storage
 - regression in layout rendering when views are added through addView
 - dataprocessor and id change during binding	

@@ -39,7 +39,7 @@ Built-in means allow defining a default legend. For these needs, you should spec
 Then, the legend takes a color value from the dataset:
 
 {{snippet
-JSON Dtata
+JSON Data
 }}
 ~~~js
 [

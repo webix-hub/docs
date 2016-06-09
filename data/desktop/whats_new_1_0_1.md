@@ -25,7 +25,7 @@ Version 1.0.1
 - regression in datatable markup parsing
 - conflict between data and content properties of template
 - row markers are not removed during clearAll
-- mulitiview with no animation
+- multiview with no animation
 - chart rendering in multiview (no animation case)
 - label position in pie chart
 - validation and htmlform control
