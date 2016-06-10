@@ -31,7 +31,8 @@ grid = new webix.ui({
 
 {{sample 15_datatable/20_templates/01_string.html }}
 
-Templates can be used for presenting almost any content in DataTable ( anything which can be done through HTML - can be placed in DataTable's cell) such as: images, links, numbers, string, dates.
+Templates can be used for presenting almost any content in DataTable (anything that can be done through HTML 
+can be placed in DataTable cell) such as: images, links, numbers, string, dates.
 
 <table class="list">
 	<caption class="caption">
@@ -117,7 +118,7 @@ grid = new webix.ui({
 
 ### Adding buttons in templates
 
-You can insert any custom html to the row elements, which gives an easy way for adding buttons or similar controls to Datatable's rows
+You can insert any custom html to the row elements, which gives an easy way for adding buttons or similar controls to DataTable rows
 
 ~~~js
 grid = new webix.ui({

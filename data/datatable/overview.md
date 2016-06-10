@@ -12,7 +12,7 @@ Main features
 
 <dl>
 <dt><a href="datatable/supported_data_types.md">1. Supported data formats: xml, json, jsarray, csv</a></dt>
-<dd>Developers can use their favourite formats to specify data. All popular data formats are supported.</dd>
+<dd>Developers can use their favorite formats to specify data. All popular data formats are supported.</dd>
 <br>
 <dt><a href="datatable/loading_data.md#static_html_table">2. Initializing from an HTML table</a></dt>
 <dd>Any HTML table can be turned into DataTable by a single command. </dd>

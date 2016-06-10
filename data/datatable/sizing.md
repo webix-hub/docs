@@ -187,9 +187,9 @@ Autosizing
 
 **Autosizing to parent container**
 
-Datatable automatically adjusts to the size of a parent container provided that no content autosizing is not enabled. 
+DataTable automatically adjusts to the size of a parent container provided that no content autosizing is not enabled. 
 
-To make the Datatble fill the entire width, you should define **fillspace** for at least one of its columns:
+To make the DataTable fill the entire width, you should define **fillspace** for at least one of its columns:
 
 ~~~js
 grid = new webix.ui({

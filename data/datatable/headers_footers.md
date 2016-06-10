@@ -316,7 +316,7 @@ You can either extend or redefine the functionality of any existing content elem
 
 ###Extending Existing Content Element
 
-For datatable footer there exists a pre-built **summColumn** element that counts the sum from column rows and displays them under the main part or the datatable.
+For datatable footer there exists a prebuilt **summColumn** element that counts the sum from column rows and displays them under the main part or the datatable.
 
 If you need to show an average value instead of a sum inherit from the *summFilter* and redefine its **refresh()**: 
 

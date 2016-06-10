@@ -99,7 +99,7 @@ still being  very fast handling  thousands of records.<a href="datatable/overvie
                 <li><a href="datatable/exporttopdf.md">Export to PDF</a></li>
             </ul>
         </td>
-		<td class='topic_description'>Describes the formats and procedures you've got to import/export the DataTable's data. </td>
+		<td class='topic_description'>Describes the formats and procedures you've got to import/export the DataTable data. </td>
 	</tr>
 	</tbody>
 </table>
