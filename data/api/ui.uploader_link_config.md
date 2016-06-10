@@ -1,7 +1,7 @@
 link
 =============
 
-@short: sets the component to display values of the files chosen for upload;
+@short: sets the component to display values of the files chosen for upload
 	
 @type: string
 @example:
@@ -49,7 +49,8 @@ You can as well create a **custom type** by extending any component that can dis
 ~~~js
 webix.type(webix.ui.list, {
 	name:"custom_name",
-	template:"#name#  {common.removeIcon()}{common.percent()}<div style='float:right'>#sizetext#</div>",
+	template:"#name#  {common.removeIcon()}{common.percent()}\
+				\<div style='float:right'>#sizetext#</div>",
 	percent:function(obj){...},
 	removeIcon:function(obj){...},
 	on_click:{...}

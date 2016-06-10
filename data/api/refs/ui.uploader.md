@@ -115,7 +115,6 @@ var uploader = webix.ui({
 - api/link/ui.uploader_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.uploader_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.uploader_formdata_config.md - extra data that will be sent to server side along with the file uploading
-- api/ui.uploader_getvalue_config.md - returns the current value of the control
 - api/link/ui.uploader_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.uploader_height_config.md - sets the height of the component
 - api/link/ui.uploader_hidden_config.md - defines whether the view will be hidden initially
