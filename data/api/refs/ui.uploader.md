@@ -113,6 +113,7 @@ var uploader = webix.ui({
 - api/link/ui.uploader_click_config.md - click action handler
 - api/link/ui.uploader_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.uploader_css_config.md - the name of a css class that will be applied to the view container
+- api/ui.uploader_datatype_config.md - 
 - api/link/ui.uploader_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.uploader_formdata_config.md - extra data that will be sent to server side along with the file uploading
 - api/ui.uploader_getvalue_config.md - returns the current value of the control
@@ -137,6 +138,7 @@ var uploader = webix.ui({
 - api/link/ui.uploader_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/link/ui.uploader_tooltip_config.md - tooltip for the input
 - api/link/ui.uploader_type_config.md - the type of the control
+- api/ui.uploader_upload_config.md - 
 - api/link/ui.uploader_value_config.md - sets the initial value for a control
 - api/link/ui.uploader_width_config.md - sets the width of the component
 }}
