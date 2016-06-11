@@ -39,9 +39,11 @@ tooltip:{
 }
 ~~~
 
+There is also the desktop/tooltip_component.md view for which you can specify custom positioning.
+
 ##Datatable Tooltip
 
-Datatable tooltip is defined is quite another way. Several steps are possible: 
+Datatable tooltip is defined in quite another way. Several steps are possible: 
 
 - Setting **tooltip:true** for the whole component. It enables tooltip functionality for the grid and shows tooltip for each column showing the row value that stands as ID for this column.
 
@@ -95,6 +97,7 @@ webix.ui({
 });
 //tooltip for the Name column is "My tooltip text"
 ~~~
+
 
 ### Advanced tooltip configuration
 

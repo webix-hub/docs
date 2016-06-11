@@ -6,23 +6,13 @@
 
 
 @example:
-myView = webix.ui({
-	view:"dataview",
-    ...
-    tooltip:{
-		template:" Rating: #rating# <br> Votes: #votes#"
-	}
-});
-
-myView.config.tooltip.hide();
+$$("tooltip").hide();
 
 @template:	api_method
-@descr:
-
 
 @related:
-	desktop/tooltip.md
+	desktop/tooltip_component.md
 
 @relatedsample:
-@relatedapi:
+@relatedapi:api/link/ui.tooltip_show.md
 @descr:
