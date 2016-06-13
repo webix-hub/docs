@@ -4,7 +4,7 @@ DataTable allows you to <a href="http://webix.com/widget/datatable/" title="sort
 There are 2 ways to invoke sorting in the table:
 
 1. [By a single click on the header of a column with the enabled **sort** attribute](#sortingbyaclickontheheader);
-2. [By api call ( can be called from some event or action, i.e button click or page load ) of the **sort()** method](#programmaticsorting).
+2. [By API call ( can be called from some event or action, i.e button click or page load ) of the **sort()** method](#programmaticsorting).
 
 
 Sorting by a click on the header
@@ -97,21 +97,21 @@ url:"data.php"
 
 {{sample 40_serverside/01_php_vanila/11_datatable_sort_filter.html}}
 
-Now, header clicking will trigger a serverside GET request with the following parameter: *sort[package]=desc* (data.php?sort[package]=desc), which allows sending: 
+Now header clicking will trigger a server-side GET request with the following parameter: *sort[package]=desc* (data.php?sort[package]=desc), which allows sending: 
 
 - **operation name** (sort);
 - **data property** to sort by (here: package);
-- **sorting order** (here: desc).  
+- **sorting order** (here: descending).  
 
 The new data will be loaded to the datatable and replace the initial dataset. 
 
 {{note
-If [serverFilter](datatable/filtering.md) is enabled for this column, the data will be both filtered and sorted on serverside before returning to client. 
+If [serverFilter](datatable/filtering.md) is enabled for this column, the data will be both filtered and sorted on the server side before returning to the client. 
 }}
 
 Custom sorting functions
 -------------------------------------------------
-If you want to apply custom sorting behaviour, you can define the related logic in a function and set this function as the value of attribute **sort**.
+If you want to apply custom sorting behavior, you can define the related logic in a function and set this function as the value of attribute **sort**.
 
 This function will be called for each pair of adjacent values and return 1,-1 or 0:
 
@@ -164,12 +164,12 @@ Sorting DataTable on the button click
 You can show and hide the sorting sign (^/V) by calling the [markSorting()](api/ui.datatable_marksorting.md) method with the following parameters: 
 
 - **column_id** - id of the column you want to draw a sorting sign for;
-- **dir** - sorting direction. 
+- **direction** - sorting direction. 
 
 When used with no arguments, the method removed all the sorting signs from the datatable headers.
 
 {{snippet
-Cancelling sorting
+Canceling sorting
 }}
 
 ~~~js
