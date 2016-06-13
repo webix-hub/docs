@@ -7,8 +7,8 @@ sort
 
 @params:
 - by		string		the name(s) of property(s) by which data will be sorted
-* dir		string		the sorting direction, default is "asc"
-* as		string		the type of data , default is "string"
+* dir		string		the sorting direction, "asc" by default 
+* as		string		the type of data, "string" by default
 
 @example:
 data.sort("price", "asc");
@@ -31,9 +31,9 @@ The method **sort** can be used with different count of parameters.
 The most common use case of the **sort** method is using the first parameter as the name of a property:
 
 ~~~js
-//sorts by name value; ascedent; sorted values as strings
+//sorts by name value; ascendant; sorted values as strings
 data.sort("#name#","asc","string");
-//sorts by price value; descedant; sorted values as numbers
+//sorts by price value; descendant; sorted values as numbers
 data.sort("#price#","desc","int");
 ~~~
 
@@ -67,7 +67,7 @@ function my_sorting(a,b){
     //a, b - data objects
     return a.Version > b.Version ? 1 : -1;
 }
-data.sort(my_sorting, "des"); //3rd parameter will be ignored
+data.sort(my_sorting, "desc"); //3rd parameter will be ignored
 ~~~
 
 ### Alternative syntax
@@ -88,12 +88,12 @@ data.sort({
 Possible values for the second parameter of the **sort** method is string which represents sorting direction:
 
 - "asc"  - for ascending sorting
-- "desc" - for decrescent sorting
+- "desc" - for descending sorting
 
 ### Sorting types
 
 The third parameter of the **sort** method may be string which represents the data type: 
 
-- "int" - sorts as interger values
+- "int" - sorts as integer values
 - "string" - sorts as string
 - "string_strict" - sorts as string, case-sensitive

@@ -93,7 +93,8 @@ webix.ui({
     scheme:{
         $update:function(obj){ 
             var today = new Date();
-            obj.update_date = today.getDate();// 'update_date' is the name of data property
+            // 'update_date' is the name of data property
+            obj.update_date = today.getDate();
         }
     }
 });
@@ -197,8 +198,8 @@ var mylist = webix.ui({
 
  
 var items = mylist.data.serialize(); 
-//serialize() is the method of the DataStore component.
-//That's we use the [data](api/atomdataloader_data_config.md) property to access it.
+// serialize() is the method of the DataStore component
+// that's we use the api/atomdataloader_data_config.md property to access it
 ~~~
 
 {{note
@@ -216,6 +217,7 @@ The **$group** function accepts 1 parameter - so-called group object that has 2 
 
 Properties are specified by an array. The first element of this array is a template with a property from original data, the second one – the functor that will be 
 applied to all values of the property (set by the first element) in the group.Grouping provides the following functors:
+
 - **sum** – gets the sum of the values;
 - **max** – gets the maximum value in the group;
 - **min** - gets the minimum value in the group.
@@ -257,7 +259,7 @@ webix.ui({
 The **$sort** function accepts 1 parameter - so-called sorting object that has 3 properties:
 
 - **by** - a name of data property according to which items will be sorted by,
-- **dir** - the sorting direction: “asc” or “dsc”,
+- **dir** - the sorting direction: “asc” or “desc”,
 - **as** - the sorting method
   - *'int'*
   - *'string'*
@@ -265,6 +267,7 @@ The **$sort** function accepts 1 parameter - so-called sorting object that has 3
   - or custom.
     
 A **custom sorting method** is defined by a function. This function is called for each pair of adjacent values and returns 1,-1 or 0:
+
 - **1** - the object with the first value in pair must go before the second one
 -  **-1** - the second object goes before the first
 - **0** - the objects are equal 

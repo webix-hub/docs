@@ -30,6 +30,8 @@ If a component container is too small to display the number of items specified b
 With dynamic loading, only part of the stored records are loaded into the component during initialization. 
 Each time you page through the component, a data request is sent to server to load the next portion of data. 
 
+{{sample 15_datatable/19_paging/03_db_data_dyn.html}}
+
 Read more about [dynamic loading](desktop/dynamic_loading.md).
 
 ##Pager as separate view

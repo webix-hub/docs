@@ -4,14 +4,13 @@ Operations with Chart Data
 ##Getting an Item's Value
 
 {{snippet
-Getting the value of **year** property
+Getting value of the year property
 }}
 ~~~js
-
-			$$("chart").attachEvent("onItemClick", function(id){
-            id = this.getItem(id).year;
-            alert(id);
-        });
+$$("chart").attachEvent("onItemClick", function(id){
+	id = this.getItem(id).year;
+	alert(id);
+});
 ~~~
 
 {{sample 08_chart/08_dynamic/02_events.html }}
@@ -21,14 +20,14 @@ Getting the value of **year** property
 While adding an item, make use of the **add()** method and state new data as an object and position of the new item:
 
 ~~~js
- var counter = 12;
-        function addNew () {
-            $$("barChart").add({
-                year:"'"+counter, 
-                sales:"some_value"
-            });
-            counter++;
-        }
+var counter = 12;
+	function addNew () {
+		$$("barChart").add({
+			year:"'"+counter, 
+			sales:"some_value"
+		});
+	counter++;
+}
 ~~~
 
 Additionally, you can define a **counter** that sets the starting position of the new items to observe dataset integrity. 
@@ -41,8 +40,8 @@ To delete an item you should pass its ID into the **remove()** function (zero-ba
 $$("barChart").remove(4); // the 5th item will be removed
 
 function deleteFirst(){
-            $$("barChart").remove($$("barChart").getFirstId());
-        }
+	$$("barChart").remove($$("barChart").getFirstId());
+}
 ~~~
 
 {{sample 08_chart/08_dynamic/01_add.html }}
