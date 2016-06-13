@@ -67,7 +67,7 @@ function my_sorting(a,b){
     //a, b - data objects
     return a.Version > b.Version ? 1 : -1;
 }
-data.sort(my_sorting, "des"); //3rd parameter will be ignored
+data.sort(my_sorting, "desc"); //3rd parameter will be ignored
 ~~~
 
 ### Alternative syntax
