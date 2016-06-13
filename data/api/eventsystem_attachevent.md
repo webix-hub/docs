@@ -7,11 +7,11 @@ attachEvent
 @params:
 - type		string			the event name, case-insensitive
 - functor	function		the function object or name
-* id		string/number		the event id
+* id		string		the event id
 
 
 @returns:
-	event id		id	the id of the attached event handler
+	event id		id		the id of the attached event handler
 
 @example:
 dtable.attachEvent("onAfterLoad",function(){

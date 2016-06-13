@@ -25,7 +25,7 @@ datatable/rowspans_colspans.md
 @descr:
 the elements of the returned array are:
 
-- id - (number/string/object) id of the row that starts colspan/rowspan
+- id - (number,string,object) id of the row that starts colspan/rowspan
 - column - (string)	id of the column that starts colspan/rowspan
 - width - (number) how many columns should the span include
 - height - (number)	how many rows should the span include

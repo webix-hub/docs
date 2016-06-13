@@ -5,7 +5,7 @@ showBranch
 	shows the leaves of the branch by its id
 
 @params:
-- branchId			string/number			the id of the branch
+- branchId			id			the id of the branch
 
 
 @example:

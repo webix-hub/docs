@@ -6,7 +6,7 @@ onBeforeColumnHide
 
 @params:
 
-- id		string/number		the column id
+- id		ColumnId		the column id
 
 @example:
 $$("datatable1").attachEvent("onBeforeColumnHide", function(id){

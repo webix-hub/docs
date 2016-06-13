@@ -4,7 +4,7 @@ onDataRequest
 @short: fires when dynamically-loaded data is requested
 
 @params:
-- id	string/number	id of the parent node whose the children should be loaded
+- id	id	id of the parent node whose the children should be loaded
 * callback	function	callback function, if any
 * url	string	server API endpoint, if any
 

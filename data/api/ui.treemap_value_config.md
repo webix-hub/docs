@@ -5,7 +5,7 @@ value
 @short:
 	a template that specifies the area of an item rectangle
 
-@type: string/function
+@type: string,function
 @example:
 webix.ui({
     view:"treemap",
