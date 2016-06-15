@@ -64,7 +64,7 @@ Now, each time, you refresh the page, the url will be formed according to the in
 
 ###Pushing New State to History
 
-In addition, there exists a possibility to programmatically add a new state to history with the dedicated **push()** method. Its arguments are: 
+In addition, there exists a possibility to add a new state to history with the dedicated **push()** method. Its arguments are: 
 
 - **view** - ID of related switching control;
 - **url** -	ID of the cell that will form in-page url for new state (if you pass *cellID*, the url will be formed as *#!/cellID*);
@@ -76,7 +76,7 @@ The method is applied to **history** object:
 webix.history.push("tabbar", "detailView" "details");
 ~~~
 
-..where details are
+..where details are:
 
 ~~~js
 var details = {

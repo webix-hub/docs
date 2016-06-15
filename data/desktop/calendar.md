@@ -66,13 +66,13 @@ webix.ui({
 
 ####Setting and Getting Dates
 
-**Setting dates** means their selection. Dates can be set programmatically after calendar initialization: 
+**Setting dates** means their selection. Dates can be set after calendar initialization with the help of the following methods: 
 
 - **setValue**(new Date(2012,3,30)); - common method for setting values to the controls;
 - **selectDate**(new Date(2012,3,30));  - calendar specific method equal to the above mentioned one;
 - **showCalendar**(new Date(2012,3,30)); - makes the calendar **show** the specified date, but doesn't select it. 
 
-**Getting dates** can be done with two corresponding methods: 
+To **get dates** make use of the methods below: 
 
 - **getValue()**; - common method for getting the control's value.
 - **getSelectedDate()**; - calendar specific method. 

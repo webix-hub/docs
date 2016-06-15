@@ -1,6 +1,8 @@
 Chart Tooltip
 =============
-Tooltip is a graphical UI element that becomes visible when a user places a mouse pointer over the predefined area. It's used as an infotip giving additional information on user request. 
+
+Tooltip is a graphical UI element that becomes visible when a user places a mouse pointer over the predefined area. 
+It presents a popup that gives additional information on a user request. 
 
 <img src="desktop/chart_tooltip.png" />
 

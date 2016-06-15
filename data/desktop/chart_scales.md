@@ -61,7 +61,7 @@ If you set an empty yAxis property object **(yAxis:{})**, the dataset will be an
 
 Minimal compulsory API for the x-Axis includes
 
-- **template** -  data item from the dataset. Here is it **#year#**. Each value turns into a labelled unit on the line. 
+- **template** -  data item from the dataset. Here is it **#year#**. Each value turns into a labeled unit on the line. 
 
 ##Custom Scale
 
@@ -73,7 +73,7 @@ Y-axis object is constructed with the following properties:
 
 - **start** (number) - start position for the axis, the value of the first unit;
 - **end** (number) - max value for the axis, the last unit;
-- **step** (number) - 'distance' to the next unit (not necessarily labelled with text);
+- **step** (number) - 'distance' to the next unit (not necessarily labeled with text);
 - **template**  - template for text label of the axis. Template function can define which numeric values to display. If not specified, text values are displayed depending on the 'step' parameter. 
 
 If you don't want to label each unit, you can set a function template to label only units multiple of the specified number (here it's 20): 

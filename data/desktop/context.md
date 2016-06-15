@@ -3,7 +3,7 @@ Context
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.context.html)
+- [Methods, properties and events](api/refs/ui.context.md)
 - [Samples](http://docs.webix.com/samples/03_menu/index.html)
 
 

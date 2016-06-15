@@ -358,7 +358,7 @@ $$("pagerA").config.page;
 
 **Setting (Opening) Page**
 
-To programmatically switch to the necessary page, specify the page's index within the dedicated method:
+To switch to the necessary page, specify the page's index within the dedicated method:
 
 ~~~js
 $$("datatable1").setPage(2); // makes the third page visible

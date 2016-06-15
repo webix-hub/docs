@@ -64,7 +64,7 @@ autoplay:true
 
 ##Working with Video
 
-HTML5 video can be controlled programmatically using methods and properties of video DOM element:
+HTML5 video can be controlled using methods and properties of the video DOM element:
 
 - **play()** and **pause()** methods to control the video;
 - **paused** - read-only property that stores video state.

@@ -1,7 +1,7 @@
 Common Functions to Switch Between Views
 ===================
 
-When switching views programmatically, you can refer either to the cells and view in them or to the [switching controls](desktop/tabbar_switching.md). 
+When switching views with the help of API, you can refer either to the cells and view in them or to the [switching controls](desktop/tabbar_switching.md). 
 
 ##Setting Value for the Tabbar/Segmented/Tabview
 
@@ -9,7 +9,7 @@ Either of the controls as well as tabview have common initialization pattern whe
 
 ~~~js
 {view:"tabbar", id:"tabbar1", multiview:true, options: 
-		[{id:"1", value:"Tab1"}, {id:"2", value:"Tab2"}]
+	[{id:"1", value:"Tab1"}, {id:"2", value:"Tab2"}]
 }
 ~~~
 
@@ -42,7 +42,7 @@ webix.ui({
     cells:[
 		{ id:"listView", view:"list" },
 		{ id:"formView", view:"form" }
-           ]
+    ]
  })
  
  //html button 
@@ -54,9 +54,9 @@ $$("listView").attachEvent("onItemClick",function(id){
 
 //back navigation - fires alongside with a form-saving function
 function save(){
-        $$("formView").save();
-        $$("views").back();
-       }
+	$$("formView").save();
+	$$("views").back();
+}
 ~~~
 
 {{sample 20_multiview/02_navigation.html }}
@@ -67,34 +67,30 @@ If a cell is a multiview itself, i.e. contains several cells of its own, the swi
 
 ~~~js
 rows:[
-     { cells:[ //1st cell
-              {
-               id:"listView",
-               view:"list"},
-              {
-                id:"chartView", //2nd cell
-                cells:[
-                     {
-                      view:"chart", 1st sub-cell
-                      type:"bar"},
-                      {                              
-						view:"chart", //2nd sub-cell
-                        type:"donut"}
-                      ]
-              }
-           ]
-     }]
-
+	{ cells:[ //1st cell
+		{
+			id:"listView",
+			view:"list"},
+		{
+			id:"chartView", //2nd cell
+			cells:[
+				{
+					view:"chart", 1st sub-cell
+					type:"bar"},
+				{                              
+					view:"chart", //2nd sub-cell
+					type:"donut"}
+			]
+		}
+	]
+}]
 ~~~ 
 
 To switch from listView to any of ChartView cells, you need to call the **show(true);** function:
 
 ~~~html
-<input 
-	type='button' 
-    onclick='$$("chart1").show(true)' 
-    value="show chart1 and parents"
->
+<input type='button' onclick='$$("chart1").show(true)' 
+	value="show chart1 and parents">
 ~~~
                   
 At the same time, if you switch between chart1 and chart2 that lie on the same level, you needn't refer to the parent view and can do with the **show();** function. 

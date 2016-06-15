@@ -3,7 +3,7 @@ DataTable Overview
 
 <a href="http://webix.com/widget/datatable/" title="webix datatable widget">DataTable</a> is a pure JavaScript component that provides professional look-and-feel and convenient programming model
  for displaying data in a scrollable and sortable table. It's a powerful yet easy-to-use  control that 
- supports different data sources (xml, json, csv, jsarray, html tables) and has various possibilities 
+ supports different data sources (XML, JSON, CSV, JsArray, HTML tables) and has various possibilities 
  (filtering, sorting, pagination, resizing, styling, copying etc.) still being  very fast handling 
  thousands of records (dynamic loading).
 
@@ -11,7 +11,7 @@ Main features
 -----------------
 
 <dl>
-<dt><a href="datatable/supported_data_types.md">1. Supported data formats: xml, json, jsarray, csv</a></dt>
+<dt><a href="datatable/supported_data_types.md">1. Supported data formats: XML, JSON, JsArray, CSV</a></dt>
 <dd>Developers can use their favorite formats to specify data. All popular data formats are supported.</dd>
 <br>
 <dt><a href="datatable/loading_data.md#static_html_table">2. Initializing from an HTML table</a></dt>
@@ -39,7 +39,7 @@ Main features
 <dd>You can set 7 different modes specifying how data will be selected by:  cell, row, column, multi cell, multi row, multi column, block.</dd>
 <br>
 <dt><a href="datatable/styling.md">10. Styling with standard css</a></dt>
-<dd>You can use CSS in conjunction with DataTable content to achieve the desired look-and-feel. Css can be applied to the whole table or to a specific column, row, cell.</dd>
+<dd>You can use CSS in conjunction with DataTable content to achieve the desired look-and-feel. CSS can be applied to the whole table or to a specific column, row, cell.</dd>
 <br>
 <dt><a href="datatable/sizing.md#resizing">11. Resizable columns and rows </a></dt>
 <dd>Columns width or rows height can be changed by dragging the related border.</dd>
@@ -53,14 +53,14 @@ Main features
 <dt><a href="datatable/sorting.md">14. Sorting a column by clicking the header with data type detection</a></dt>
 <dd>This feature allows users to sort data (according to one of 4 predefined sorting types: integer, date, string and string_strict) by a single clicking the header. Custom sorting rule can be defined as well.</dd>
 <br>
-<dt><a href="datatable/paging.md">15. Variable length and localizable pagination</a></dt>
+<dt><a href="datatable/paging.md">15. Variable length and localization of paging</a></dt>
 <dd>One or several pagers can be added to the app to display data page by page. Data will not be retrieved from server side until the related page is opened. The number of rows per page, templates for navigation controls are set up. </dd>
 <br>
 <dt><a href="datatable/frozen_columns.md">16. Fixed one or more left (right) columns when table is scrolled horizontally</a></dt>
 <dd>The library provides the 'split' mode that allows you to have the table separated into two parts: 'fixed' and 'scrolled'.</dd>
 <br>
 <dt><a href="datatable/columns_configuration.md#hidingshowingcolumns">17. Possibility to show or hide columns</a></dt>
-<dd>Any column in the table can be hidden (showed) programmatically.</dd>
+<dd>Any column in the table can be hidden (showed) using corresponding methods.</dd>
 <br>
 <dt><a href="datatable/formulas.md">18. Math formulas for cells</a></dt>
 <dd>Developers have an opportunity to load data that are stored as mathematical expressions. DataTable parses, evaluates such expressions and presents result in the related cells. </dd>

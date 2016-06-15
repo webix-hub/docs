@@ -25,7 +25,7 @@ In this case, the look of the x-Axis can be totally customized using the followi
 
 ###Units
 
-The object properties set the first and the last unit for the scale as well as specify a step between neighbouring units. 
+The object properties set the first and the last unit for the scale as well as specify a step between neighboring units. 
 
 ~~~js
 units:{
@@ -65,7 +65,7 @@ lineColor:function(obj){
 }
 ~~~
 
-The function defines the value of each unit. If it is equal to the 1st of February, it returns dark grey (#737373). Otherwise, the color is light grey. 
+The function defines the value of each unit. If it is equal to the 1st of February, it returns dark gray (#737373). Otherwise, the color is light gray. 
 
 ###Value
 

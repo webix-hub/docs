@@ -135,9 +135,9 @@ $$('dview2').data.unsync();
 
 In case of two and more component synced to one datasource (either a visible component or [non-visible dataCollection](desktop/nonui_objects.md)), it seems nice to **synchronize user operations** as well. 
 
-For instance, if an item is selected in one of components, the same item should be selected in the synced one. This is easily done programmatically. 
+For instance, if an item is selected in one of components, the same item should be selected in the synced one. This is easily done using API. 
 
-Take for instance we have a [dataview](desktop/dataview.md) and [datatable](datatable/index.md), both synced with the same dataCollection. 
+Let's assume that we have a [dataview](desktop/dataview.md) and [datatable](datatable/index.md) both synced with the same dataCollection. 
 
 ~~~js
 var data = new webix.DataCollection({

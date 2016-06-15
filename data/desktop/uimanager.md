@@ -10,7 +10,7 @@ Each time you create a component on the page, even a single one, **UIManager** m
 
 ###Focusing Methods
 
-You can set and remove focus programmatically with the help of two opposite methods - **focus()** and **blur()** that are called from the component object. It can be
+You can set and remove focus with the help of two opposite methods - **focus()** and **blur()** that are called from the component object. It can be
 specified in the component's **ready** property to set/remove focusing on page loading. 
 
 The **focus()** method is either used without parameters or takes an **ID** or **name** of an item as an argument. In the latter case, focus is set to this item rather to the whole component. 

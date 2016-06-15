@@ -21,7 +21,8 @@ $$("myform").attachEvent("onValues", function(){
 @template:	api_event
 @descr:
 
-The event fires when form or toolbar values are set programmatically with the help of a [setValues()](api/values_setvalues.md) method. 
+The event fires when form or toolbar values are set with the help of the 
+api/values_setvalues.md method.
 
 When values are changed by user in browser, the [onChange](api/values_onvalues_event.md) event is triggered instead. 
 
