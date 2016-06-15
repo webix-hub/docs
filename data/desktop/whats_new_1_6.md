@@ -61,7 +61,7 @@ onError event replaced with two new events - onBeforeSaveError and onAfterSaveEr
 - addCss and removeCss attempts to set styles directly in DOM without full repainting
 - error handling by dataprocessor, better support of REST mode
 - "move" command attempts to make changes directly in DOM without full repainting
-- special handling for dnd in case of mobile webkit
+- special handling for drag-n-drop in case of mobile webkit
 - updating data in the client side component after saving
 - webix.env.mouse contains names of pointer events for current device
 - xml data feeds for suggests

@@ -15,7 +15,7 @@ Version 1.10
 - each and eachChild iterators accepts "all" flag for TreeStore
 - "property" styles in "flat" and "touch" skins
 - textarea styles
-- unsync api for backbone integration
+- unsync API for backbone integration
 
 
 **Fixes**

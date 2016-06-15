@@ -66,7 +66,7 @@ Version 1.5
 
 #### Fixes
 - slider for touch
-- autoscroll and autoopen during dnd
+- autoscroll and autoopen during drag-n-drop
 - autosizing of templates
 - backbone view must return this
 - calling ungroup on clearAll

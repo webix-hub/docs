@@ -10,7 +10,7 @@ Version 1.0.2
 - xml parse can recognize arrays	
 - addView adds to the end of layout if index was not defined	
 - skin updates, important flags removed where possible
-- csrf key now sent through HTTP headers
+- CSRF key now sent through HTTP headers
 
 ### Fixes
 

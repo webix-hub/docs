@@ -108,7 +108,7 @@ Check [migration guide](migration.md) for more details.
 - resetting uploader after file choosing
 - focusing checkbox editor in Chrome
 - disabled counter in IE10
-- options with quote in multi-select
+- options with quote in Multiselect
 - regression in getValue of colorpicker
 - resetting text filter value after reloading data from the server side
 - filters in treestore
