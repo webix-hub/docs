@@ -14,7 +14,7 @@ downloaded from [DHTMLX site](http://www.dhtmlx.com).
 First of all, we need to include a JS file with the code that integrates Webix and DHTMLX:
 
 ~~~html
-<!-- compulsory: JS file with the code that integrated Webix and DHTMLX -->
+<!-- compulsory: JS file with the code that integrates Webix and DHTMLX -->
 <script type="text/javascript" src="./dhtmlx.js"></script>
 ~~~
 
