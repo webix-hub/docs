@@ -1,13 +1,11 @@
 showCalendar
 =============
 
-
-
 @short:
-	makes the specified date displayed in the calendar
+	shows the calendar according to the year and month set in the specified date 
 
 @params:
-- date		string, object		a Date object or a string representing a date
+- date		string/object		a Date object or a string representing a date
 
 @example:
 webix.ui({
@@ -22,5 +20,5 @@ $$('calendar1').showCalendar(new Date(2011,5,13));
 	desktop/calendar.md
 @defined:	ui.calendar	
 @descr:
-Note, the method doesn't selects the specified date.
+Note, the method doesn't selects the specified date, so specifying the day is optional.
 
