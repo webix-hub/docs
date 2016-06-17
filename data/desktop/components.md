@@ -151,16 +151,16 @@ Layouts help you to organize your web page, define its overall look-and-feel. Yo
 			<br>Layout
 		</a>
     </div>
+     <div>
+		<a href="desktop/multiview.md">
+			<img src="desktop/icons/multiview.png"/>
+			<br>Multiview
+		</a>
+    </div>
     <div>
 		<a href="desktop/portlet.md">
 			<img src="desktop/icons/portlet.png"/>
 			<br>Portlet
-		</a>
-    </div>
-    <div>
-		<a href="desktop/multiview.md">
-			<img src="desktop/icons/multiview.png"/>
-			<br>Multiview
 		</a>
     </div>
     <div>
@@ -214,15 +214,15 @@ Context components let displaying spatial and temporal information on some user'
 		</a>
     </div>
     <div>
-		<a href="desktop/tooltip_component.md">
-			<img src="desktop/icons/tooltip.png"/>
-			<br>Tooltip
-		</a>
-    </div>
-    <div>
 		<a href="desktop/sidemenu.md">
 			<img src="desktop/icons/sidemenu.png"/>
 			<br>Sidemenu
+		</a>
+    </div>
+    <div>
+		<a href="desktop/tooltip_component.md">
+			<img src="desktop/icons/tooltip.png"/>
+			<br>Tooltip
 		</a>
     </div>
     <div>
