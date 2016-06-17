@@ -30,9 +30,9 @@ webix.toExcel($$("myDataTable"));
 Customizing Export
 ---------------------
 
-The toExcel() method returns all data specified in the **columns** parameter of the datatable view. However, you may 
-need to get data from other fields as well as restrict the number of fields in the export file. You can set the necessary fields
-in the **columns** property of the toExcel() method.
+The toExcel() method returns all data specified in the **columns** parameter of the datatable view. The data is exported into an Excel document with "table" name and "Data" sheet name.
+
+However, you may need to get data from other fields as well as restrict the number of fields in the export file, or customize file and sheet names.
 
 All in all, export API allows:
 
