@@ -32,7 +32,6 @@ Methods
 - api/link/ui.select_setbottomtext.md - sets the input label at the bottom of it
 - api/link/ui.select_setvalue.md - sets a new value for the component
 - api/link/ui.select_show.md - makes the component visible
-- api/link/ui.select_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.select_unbind.md - breaks "bind" link
 - api/link/ui.select_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.select_validate.md - validates value of input
@@ -69,7 +68,6 @@ Methods
 - api/link/ui.select_setbottomtext.md
 - api/link/ui.select_setvalue.md
 - api/link/ui.select_show.md
-- api/link/ui.select_sync.md
 - api/link/ui.select_unbind.md
 - api/link/ui.select_unblockevent.md
 - api/link/ui.select_validate.md
