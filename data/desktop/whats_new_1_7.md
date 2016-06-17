@@ -57,10 +57,10 @@ Compact skin changed to flat theme as well ( old one renamed to skins/aircompact
 - cssFormat adds garbage to css string
 - custom checkbox and custom radio clicks in iframes
 - customScroll in datatable and removeView
-- datafeed works only with strings
+- dataFeed works only with strings
 - dataprocessor with connector as proxy can send empty request to a server side
 - drag-n-drop in latest FireFox
-- export of treetable data to pdf and excel
+- export of treetable data to PDF and Excel
 - filter values lost after column resize
 - freezing when focus target can't be found
 - getChildViews in accordion

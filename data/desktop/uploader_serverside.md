@@ -3,13 +3,13 @@ Managing Server Part of Uploading
 
 ##Server Script 
 
-In eccense file uploading is done via Ajax. Each time **send()** function is executed, Ajax POST request is sent behind the scene. Its **url** is a script you specify as value of **upload** property.
+In essence, file uploading is done via Ajax. Each time **send()** function is executed, Ajax POST request is sent behind the scene. Its **url** is a script you specify as value of **upload** property.
 
 ~~~js
 {view:"uploader", name:"uploader", upload:"upload.php", ...}
 ~~~
 
-The custom script you write yourself on your favourite language, not just PHP. Regardless of the language, the script must contain:
+The custom script you write yourself on your favorite language, not just PHP. Regardless of the language, the script must contain:
 
 - the desired **destination** for file uploading; 
 - script **response** in form of a JS string - *{"status":"server"}* for success, *{"status":"error"}* for failure. 
@@ -129,5 +129,14 @@ for(var i in f.data.pull){
 	var text = f.data.pull[i].sname;
 	webix.message("Test sname: "+ text);
 }
+~~~
+
+Setting the Uploading Button Name
+-----------------------
+
+By default, the value of the button to upload files is "upload". If you want to set your own name for this button, you need to make use of the api/ui.uploader_inputname_config.md property.
+
+~~~js
+{ view:"uploader", inputName:"myFile" }
 ~~~
 

@@ -9,7 +9,7 @@ getSelectedId
 - asString		boolean		optional, specifies whether the returning result should be string
 
 @returns:
-- ids			object/array/string			cell/row/column id or array of them
+- ids			object,array,string			cell/row/column id or array of them
 
 @example:
 

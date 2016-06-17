@@ -6,7 +6,7 @@ closeSub
 
 @params:
 
-- id		string/number		the id of the item
+- id		id		the id of the item
 
 
 

@@ -9,17 +9,17 @@ On previous steps we've done good job.
 Now it's time to learn how to work with data stored in the database and how should we treat **CRUD** (create, read, update, delete) operations so that they not only appear on the page, 
 but also change data in the database. 
 
-The **tasks for serverside** are as follows: 
+The **tasks for server-side** are as follows: 
 
 - To populate our list with data from the database;
 - To ensure that all the changes you make on the client side (within the component) should be reflected in the database (items should be added, deleted and updated in the DB)
 
-Serverside Integration is described in detail in the [related article of documentation](desktop/serverside.md) while here let's make the following steps: 
+Server side Integration is described in detail in the [related article of documentation](desktop/serverside.md) while here let's make the following steps: 
 
 ##Loading Data from the Database
 
-Data loading is performed with the help of **ready-made dataConnector**, a script that retrieves data from the necessary database table and renders its data to the component. With 
-library package, you get a wide choice of data connectors to serve the needs of serverside work. There exist .Net, PHP and Java versions. 
+Data loading is performed with the help of **DataConnector**, a script that retrieves data from the necessary database table and renders its data to the component. With 
+library package, you get a wide choice of data connectors to serve the needs of server-side work. There exist .Net, PHP and Java versions. 
 
 The connector should be set as data **url** for a component. 
 
@@ -32,8 +32,7 @@ The connector should be set as data **url** for a component.
   datatype: "xml"
 }
 ~~~
-
-DataConnector enables only **server->client interaction**, it's the component's datasource. Used alone, it doesn't push client-side changes back to the database, which is the responsibility of **DataProcessor**. 
+Data Connector enables only **server->client interaction**, it's the component's datasource. Used alone, it doesn't push client-side changes back to the database, which is the responsibility of **DataProcessor**. 
 
 ##DataProcessor Initialization
 
@@ -48,7 +47,7 @@ var dp = new webix.DataProcessor({
 });
 ~~~
 
-Very often dataProcessor gets the same **url** that is specified as component datasource. At the same time, it can be your own piece of code if you want your own custom logic. 
+Very often DataProcessor gets the same **url** that is specified as component datasource. At the same time, it can be your own piece of code if you want your own custom logic. 
 
 DataProcessor will automatically "translate" all your actions to the server: when you add a record to the list, the new record will appear in the database table, etc. 
 
@@ -87,6 +86,6 @@ Addition and removal of items goes the same way as it was on previous step.
 Related Articles: 
 
 - [Data Binding](desktop/data_binding.md)
-- [Server-Side Integration. Dataprocessor](desktop/serverside.md)
+- [Server-Side Integration. DataProcessor](desktop/serverside.md)
 
 @complexity:2

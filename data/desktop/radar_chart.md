@@ -3,7 +3,7 @@ Settings for Radar Chart
 
 
 
-##Custom Initializzation
+##Custom Initialization
 
 ###Data Presentation
 
@@ -28,7 +28,7 @@ Settings for Radar Chart
     - **lineColor** (hex code) - color of radar lines;
 - **yAxis** - settings for the radar map and inner lines(circles):
 	- **lineShape** (string) - shape of the outer border of the radar area. *'arc'* helps make a circle. 
-    - **bg**(hex code) - background color for the radar area;
+    - **background** (hex code) - background color for the radar area;
     - **lines** (boolean) - if *false*, inner circles of the radar area aren't shown
 
 ##Radar Charts Presets

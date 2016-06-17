@@ -26,7 +26,7 @@ If you are updating from Webix 1.x - please check the migration.md
 ## Minor features
 - [custom height for header lines in datatable](datatable/headers_footers.md#customheightforheaderandfooter)
 - dark style for carousel
-- [getState api](api/dataprocessor_getstate.md) for dataprocessor
+- [getState API](api/dataprocessor_getstate.md) for dataprocessor
 - onViewMove and onViewMoveEnd events to movable
 - [optional close button for tabs](desktop/tabbar.md)
 - [password editor](desktop/edit.md)

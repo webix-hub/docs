@@ -3,7 +3,7 @@ Colorboard
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.colorboard.html)
+- [Methods, properties and events](api/refs/ui.colorboard.md)
 - [Samples](http://docs.webix.com/samples/24_colorpicker/index.html)
 
 ##Overview

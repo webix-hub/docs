@@ -1,7 +1,7 @@
 Setting Components
 ==================
 
-Here we create a **simple filmset** - a list of films, where you can add elements. 
+Here we create a **simple dataset** - a list of films, where you can add elements. 
 
 Here you will need: 
 
@@ -33,8 +33,8 @@ Divide the page into <b>two rows</b> with the upper one being for <a href="deskt
 webix.ui({
 	width:500,
 	rows: [
-   		{ template:"Row 1" }, //1st row
-    	{ template:"Row 2" }  //2nd row
+   		{ template:"Row 1" }, //first row
+    	{ template:"Row 2" }  //second row
     ]
 });
 ~~~
@@ -56,8 +56,8 @@ webix.ui({
     rows: [
     	{ template:"Row 1" },
     	{ cols:[
-    		{ template:"Column 1" },//1st column
-        	{ template:"Column 2" } //2nd column
+    		{ template:"Column 1" },//first column
+        	{ template:"Column 2" } //second column
     	]}
     ]
 });
@@ -82,8 +82,8 @@ webix.ui({
 			{ view:"button", value:"Delete", width:100 }
         ]},
     	{ cols:[
-    		{ template:"Column 1" },//1st column
-        	{ template:"Column 2" } //2nd column
+    		{ template:"Column 1" },//first column
+        	{ template:"Column 2" } //second column
     	]}
     ]
 });
@@ -108,7 +108,7 @@ webix.ui({
 				{ view:"text", placeholder:"Title"},  
 				{ view:"text", placeholder:"Year"}     
 			]},
-        	{ template:"Column 2" } //2nd column
+        	{ template:"Column 2" } //second column
     	]}
     ]
 });
@@ -118,7 +118,7 @@ webix.ui({
 
 Step 6. List
 --------------------------------------------
-- Place a list into the 2nd column;
+- Place a list into the second column;
 - Use the api/link/ui.list_data_config.md property to populate the list with data in JSON format (there can be [other possibilities](desktop/data_loading.md));
 - Notice, how the **title** and **year** properties are reflected in the list template. 
 

@@ -1,7 +1,8 @@
 inputName
 =============
 
-@short: name of the uploader input
+@short: 
+  sets the name of the uploader input (the button to upload files)
 	
 
 @type: string

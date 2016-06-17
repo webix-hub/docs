@@ -5,7 +5,7 @@ DataTable can load data of various formats, such as:
 
 - JSON;
 - XML;
-- JSArray;
+- JsArray;
 - CSV.
 
 [Examples of data formats](datatable/supported_data_types.md)
@@ -46,7 +46,7 @@ grid = new webix.ui({
 
 
 
-Loading from XML, CSV, jsArray 
+Loading from XML, CSV, JsArray 
 -------------------------------
 
 When loading of non-json data, you need to specify the [datatype](api/link/ui.datatable_datatype_config.md) property in config,

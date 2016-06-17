@@ -24,7 +24,7 @@ menu.setContext({obj: $$("list"), id: "itemId"})
 Target context object includes:
 
 - obj - (object) master view object for which context or contextmenu is defined
-- id - (string/number) id of an item in the master view
+- id - (string,number) id of an item in the master view
 
     
 The object can be retrieved by the api/contexthelper_getcontext.md method.

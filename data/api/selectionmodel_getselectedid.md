@@ -11,7 +11,7 @@ getSelectedId
 
 
 @returns:
-- id		string/array	the single item id or an array of ids
+- id		string,array	the single item id or an array of ids
 
 @example:
 //single select mode

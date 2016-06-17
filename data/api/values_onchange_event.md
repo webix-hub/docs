@@ -30,7 +30,7 @@ $$("form1").attachEvent("onChange", function(newv, oldv){
 @template:	api_event
 @descr:
 
-The event fires only in case some value is changed by user in browser. If values are set programmatically (with api/values_setvalues.md method)
+The event fires only in case some value is changed by user in browser. If values are set in code (with api/values_setvalues.md method)
 the api/values_onvalues_event.md will fire instead.
 
 

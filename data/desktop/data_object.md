@@ -8,18 +8,18 @@ Every UI component features inner storage for [loaded](desktop/data_loading.md) 
 
 Both of the stores feature common methods, properties and events to work with data items on client side while TreeStore offers extended API for treating data items observing hierarchy. 
 
-While **manupulating data** items, you can: 
+While **manipulating data** items, you can: 
 
 - apply methods directly to the **Data/TreeStore** of the component- *$$("list").data*. Only some functions require this. 
-- apply methods to the component by its **ID** - *$$("list")*, which implies addressing datastore. Most methods have this pattern. 
+- apply methods to the component by its **ID** - *$$("list")*, which implies addressing data store. Most methods have this pattern. 
 
 ~~~js
 $$("list").data.each(function(obj){...}); //iterates through items array
 
-$$("list").count(); //counts items in the list datastore
+$$("list").count(); //counts items in the list data store
 ~~~
 
-Each **data item object** posesses the unique **ID**, **index** in the data array and set of **properties**. 
+Each **data item object** possesses the unique **ID**, **index** in the data array and set of **properties**. 
 
 Getting the item object
 -------------------------------
@@ -96,19 +96,19 @@ Each data item has its ID defined in the dataset. Knowing item ID you can get to
 	</tr>
     <tr>
 		<td style="text-align:left;"><a href="api/treestore_getfirstchildid.md">getFirstChildId (<i>id</i> )</a></td>
-		<td>gets ID of the first child of the specified item in the hierarchical treestore</td>
+		<td>gets ID of the first child of the specified item in the hierarchical tree store</td>
 	</tr>
     <tr>
 		<td style="text-align:left;"><a href="api/treestore_getparentid.md">getParentId (<i>id</i> )</a></td>
-		<td>gets ID of the parent of the specified item in the hierarchical treestore</td>
+		<td>gets ID of the parent of the specified item in the hierarchical tree store</td>
 	</tr>
     <tr>
 		<td style="text-align:left;"><a href="api/treestore_getnextsiblingid.md">getNextSibling (<i>id</i> )</a></td>
-		<td>gets ID of the next sibling of the specified item in the hierarchical treestore</td>
+		<td>gets ID of the next sibling of the specified item in the hierarchical tree store</td>
 	</tr>
     <tr>
 		<td style="text-align:left;"><a href="api/treestore_getprevsiblingid.md">getPrevSibling (<i>id</i> )</a></td>
-		<td>gets ID of the previous sibling of the specified item in the hierarchical treestore</td>
+		<td>gets ID of the previous sibling of the specified item in the hierarchical tree store</td>
 	</tr>
 	</tbody>
 </table>
@@ -341,10 +341,11 @@ Basically, here we speak about changing item position in the data set. Item posi
 </table>
 
 
-Moreover, the api/datamove_move.md  method makes it possible to programmatically drag an item from one component instance to another (from one list to another list):
+Moreover, the api/datamove_move.md method makes it possible to drag an item from one component instance to another (from one list to another list):
 
 ~~~js
-//moves item with id="book1" to the 2nd pos in the same list (remember about 0-based numbering)
+// moves item with id="book1" to the 2nd pos in the same list 
+// (remember about 0-based numbering)
 mylist.move("book1", 1); 
 
 //moves the item with id="book1" to the first position in the "mylist2" 

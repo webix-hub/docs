@@ -34,7 +34,7 @@ Calendar dates can be disabled to prevent their selection. [Check details](deskt
 - popup in tabbar refactoring
 - adjust property accepts "data" and "header" values, adjustHeaders deprecated
 - show and hide refactoring
-- min|max date refactoring
+- min/max date refactoring
 - direction top and bottom for animation in multiview
 - attributes, placeholder and readonly works for all inputs
 - datastore importData can work with primitive sources
@@ -50,11 +50,11 @@ Calendar dates can be disabled to prevent their selection. [Check details](deskt
 - popupTemplate customization, size calculation
 - scroll for contextmenu or submenu
 - closing of nested popups
-- position of centered window in case of fullpage scroll
+- position of centered window in case of full page scroll
 - sizing of horizontal accordion
-- clipboard operations on macos
-- scrolling in datatable on macos
-- clipboard operations and dyn. grid
+- clipboard operations on Mac OS
+- scrolling in datatable on Mac OS
+- clipboard operations and dynamic grid
 - pager initialized after master component doesn't work correctly
 - datatable blocks global page scrolling
 - regression in dataprocessor url handling
@@ -68,7 +68,7 @@ Calendar dates can be disabled to prevent their selection. [Check details](deskt
 - webix.extend and webix.EditAbility
 - math operations with complex keys
 - webixEvent doesn't allow to block event
-- using Webix with requireJs
+- using Webix with RequireJS
 - initial toggle state must be defined by "value"
 - updateItem overwrite target instead of updating
 - processing proxy callback

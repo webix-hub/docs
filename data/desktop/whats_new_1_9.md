@@ -18,7 +18,7 @@ Version 1.9
 - getHeaderNode method
 - hotkey for controls
 - menu links
-- refreshFilter api
+- refreshFilter API
 
 
 **Updated functionality**
@@ -36,7 +36,7 @@ Version 1.9
 - async data loading in IE
 - better handling of server side sorting and server side filtering
 - data updates for checkbox in grid
-- dnd in treegrid on header
+- drag-n-drop in treegrid on header
 - event for master checkbox
 - hidden column in datatable with colspans
 - incorrect work of date, combo, richselect editors

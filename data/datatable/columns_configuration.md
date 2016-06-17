@@ -44,11 +44,11 @@ columns:[
 ]
 ~~~
 
-At the same time, you can switch to **data-based** column configuration provided by **autoconfig** property:
+At the same time, you can switch to **data-based** column configuration provided by the **autoConfig** property:
 
 ~~~js
 view:"datatable", 
-autoconfig:true
+autoConfig:true
 ~~~
 
 In this case *columns* array is no longer needed. Datatable will analyze the dataset passed to it and build columns automatically. The columns will have **default values** (no sorting or filtering, width of 50px, etc.)

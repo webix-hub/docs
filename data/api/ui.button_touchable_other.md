@@ -5,8 +5,9 @@ touchable
 @short:
 	flag, which force touch reaction on touch screen devices	
 
-@example:
+@type: boolean
 
+@example:
 myview.touchable = true;
 
 @template:	api_config

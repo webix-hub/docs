@@ -19,6 +19,6 @@ webix.ui({
 The parameter is an object that can contain the following attributes:
 
 - **by** - (*template, function, hash of parameters*) the template for sorted value
-- **dir** - (*asc* or *des*) the sorting direction (optional)
-- **as** - (*function* or one of the next values:'string', 'string_strict', 'integer') the type of data sorting (optional)
+- **dir** - (*asc* or *desc*) the sorting direction (optional)
+- **as** - (*function* or one of the next values:*'int'*,*'string'*,*'string_strict'*) the type of data sorting (optional)
 

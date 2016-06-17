@@ -6,7 +6,7 @@ removeSpan
 @edition:pro
 
 @params:
-- id		string/number		row id that starts a colspan/rowspan
+- id		id		row id that starts a colspan/rowspan
 - column	string				column id that starts a colspan/rowspan
 
 @example:

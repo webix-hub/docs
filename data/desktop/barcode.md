@@ -3,7 +3,7 @@ Barcode
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.barcode.html)
+- [Methods, properties and events](api/refs/ui.barcode.md)
 - [Samples](http://docs.webix.com/samples/60_pro/08_barcode/index.html)
 
 ##Overview
@@ -32,10 +32,10 @@ A basic html page with the included code files
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Barcode</title>
-    <script src="../codebase/webix.js" type="text/javascript" charset="utf-8"></script>
-    <link rel="stylesheet" href="../codebase/webix.css" type="text/css" charset="utf-8">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <title>Barcode</title>
+   <script src="../codebase/webix.js" type="text/javascript" charset="utf-8"></script>
+   <link rel="stylesheet" href="../codebase/webix.css" type="text/css" charset="utf-8">
 </head>
 <body>
     <script>

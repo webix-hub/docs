@@ -1,10 +1,10 @@
-Accordionitem Configuration
+Accordion Item Configuration
 ===============
 
-Accordionitem  inherits from [view](desktop/view.md) and is an integral part of the ui-related [accordion](desktop/accordion.md) component. You need at least two accordionitems to make a workable
-accordion. 
+The "accordionitem" view inherits from [view](desktop/view.md) and is an integral part of the ui-related desktop/accordion.md component.
+You need at least two Accordion items to make a workable Accordion. 
 
-Any accordionitem must have two properties: **header** for heading and **body** for main text or some ui component.
+Any Accordion item must have two properties: **header** for heading and **body** for main text or some ui component.
 
 ~~~js
 webix.ui({ 
@@ -33,7 +33,7 @@ webix.ui({
 - **headerHeight / headerAltHeight** - defines the height of a panel in an expanded/collapsed state;
 - **collapsed** (false or true) - defines the panel that will be expanded/collapsed on the app's loading.
 
-If you initialize **accordion** like below, you can omit accordionitem initialization: 
+If you initialize **accordion** like below, you can omit initialization of accordion items: 
 
 ~~~js
 webix.ui({ 
@@ -46,7 +46,7 @@ webix.ui({
 
 {{sample 80_docs/accordionitem.html}}
 
-Accordionitems can be collapsed and expanded programmatically with the help of dedicated methods: 
+Accordion items can be collapsed and expanded with the help of dedicated methods: 
 
 ~~~js
 $$('item1').collapse();

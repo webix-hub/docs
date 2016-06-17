@@ -32,7 +32,7 @@ on the page devoted to this event in the api/toc/ui.md chapter.
 Once you call the method, each time the event fires for the calling component the code specified as the second parameter will be executed.
 
 ## Usage example
-Let's consider a simple example: you have a list that displays your favourite films. When you click on the film you want a message box to be shown with the details of this film: the title, director and running time.
+Let's consider a simple example: you have a list that displays your favorite films. When you click on the film you want a message box to be shown with the details of this film: the title, director and running time.
 
 <img src='tutorials/handling_events.png'/>
 

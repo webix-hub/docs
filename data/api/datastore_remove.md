@@ -6,7 +6,7 @@ remove
 	removes the specified item/items from datastore
 
 @params:
-- id		string/number/array     the item id or an array of items' ids
+- id		id     the item id or an array of items' ids
 
 
 

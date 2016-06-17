@@ -7,8 +7,14 @@ onBeforeColumnDropOrder
 
 @params:
 
+- sourceId		string				the source column id
+- event			Event object		the native event object
+
 @example:
-$$("datatable1").attachEvent("onBeforeColumnDropOrder", function(context, native_event){...});
+$$("datatable1").attachEvent("onBeforeColumnDropOrder", function(sourceId, event){
+	// some code
+    return true;
+});
 
 @template:	api_event
 @relatedapi:
@@ -18,11 +24,5 @@ $$("datatable1").attachEvent("onBeforeColumnDropOrder", function(context, native
     datatable/drag_and_drop.md#movingcolumns
 @descr:
 
-The drag-and-drop context can have the next properties:
-
-- **from** - the source object
-- **to** - the target object
-- **source** - the id of the dragged item(s)
-- **target** - the id of the drop target, null for drop on empty space
-- **start** - the id from which DND was started
+The event is blockable. Returning false will prevent column dropping in case the order mode is enabled.
 

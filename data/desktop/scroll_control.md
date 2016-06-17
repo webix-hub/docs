@@ -3,7 +3,7 @@ Scroll Control
 
 Webix provides extensive scrolling management tools. 
 
-- Firstly, Webix components are supplied with **vertical** and **horizontal scrollbars** that can be shown and hidden programmatically;
+- Firstly, Webix components are supplied with **vertical** and **horizontal scrollbars** that can be shown and hidden with the help of the related API;
 - Secondly, scrolling in the application can be controlled with the help of **common methods** and **properties**;
 - Thirdly, Webix library features a separate component called **[scrollview](desktop/scrollview.md)**, a container view with scrollbars for placing any content there (plain text, HTML, Webix views);
 
@@ -18,7 +18,7 @@ By default, component features vertical scrolling. It can be modified via the de
 - "x" - sets a horizontal scrollbar;
 - "y" - sets vertical scrollbar (default);
 - "xy" - sets both horizontal and vertical scrollbars;
-- false - defines non-scrollbale component. 
+- false - defines non-scrollable component. 
 
 ~~~js
 webix.ui({
@@ -33,7 +33,7 @@ Some components feature such properties as **scrollX** and **scrollY** that take
 
 ##Scrolling and Dynamic Loading
 
-With dynamic loading, only part of the stored records are loaded into the component during init. 
+With dynamic loading, only part of the stored records are loaded into the component during initialization. 
 Each time you scroll down/up the component, a data request is sent to server to load the next portion of data. 
 
 Read more about [dynamic loading](desktop/dynamic_loading.md).
@@ -68,7 +68,7 @@ webix.ui({
 })
 ~~~
 
-2 .Scrolling via **focusing** on the necessary **view** withtin the scrollview.
+2 .Scrolling via **focusing** on the necessary **view** within the scrollview.
 
 Here the button's ID should be connected to the ID of the row in the scrollview:
 
@@ -109,7 +109,7 @@ $$("mylist").showItem(5); // the list should be scrollable
 Within [datatable](datatable/index.md) scrolling via showing includes the following methods:
 
 - **showItem**(*rowId*) - scrolls to a definite row indicated by its ID;
-- **showItemByIndex**(*rowIndex*) - scrolls to a definite row dfined by data item index in the datasource;
+- **showItemByIndex**(*rowIndex*) - scrolls to a definite row defined by data item index in the data source;
 - **showCell**(*rowID, cellID*) - scrolls to a definite cell (both vertical and horizontal scrolling modes work).
 
 ##Defining scroll position

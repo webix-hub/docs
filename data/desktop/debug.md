@@ -28,5 +28,5 @@ Debugging menu is activated with a "**Ctrl + right mouse click**" combination on
 
 - look up into the documentation for this component;
 - learn the component's dimensions;
-- study the component heirarchy on the page;
+- study the component hierarchy on the page;
 - long links to the key features of the component, namely the its JS and HTML object, configuration and data for the component.

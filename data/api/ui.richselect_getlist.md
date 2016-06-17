@@ -7,7 +7,7 @@ getList
 
 @returns:
 
-- list     view     list view
+- list     WebixView     list view
 
 @example:
 

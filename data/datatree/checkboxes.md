@@ -90,7 +90,7 @@ tree = new webix.ui({
 Manipulations with checkboxes
 --------------------------
 
-Checkboxes can be programmatically checked and unchecked as well as it is possible to get checked items and define, whether the item is currently checked or not. 
+Checkboxes can be checked and unchecked with special API methods. It is possible to get checked items and define whether the item is currently checked or not. 
 
 - **checkItem**(id)/ **uncheckItem**(id) - checks/unchecks tree node with the specified ID;
 - **getChecked()** - returns an array of IDs of the checked items;

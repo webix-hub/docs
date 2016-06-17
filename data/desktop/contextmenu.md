@@ -3,7 +3,7 @@ ContextMenu
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.contextmenu.html)
+- [Methods, properties and events](api/refs/ui.contextmenu.md)
 - [Samples](http://docs.webix.com/samples/03_menu/index.html)
 
 

@@ -7,8 +7,8 @@ ui
 
 @params:
 - config				object							the view configuration
-* parent				object/string	 				object or id of parent component
-* replacement			object/string/number			object, id or index of the component being replaced
+* parent				object,string	 				object or id of parent component
+* replacement			object,string,number			object, id or index of the component being replaced
 
 BTW, if you don't specify the ID for the component, it will be generated automatically. You can always get the component ID  by using:
 

@@ -7,7 +7,7 @@ markSorting
 @params:
 
 - column_id		string		column ID
-- dir		string		sorting direction
+- direction		string		sorting direction
 	
 
 

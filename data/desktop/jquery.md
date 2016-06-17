@@ -1,7 +1,7 @@
 JQuery Integration
 ================
 
-webix library works in tandem with JQuery libraries as well, which is an obvious bonus for those who are used to working with JQuery. 
+The Webix library works in tandem with JQuery libraries as well, which is an obvious bonus for those who are used to working with JQuery. 
 
 JQuery is included by a link specified in your document's head section 
 

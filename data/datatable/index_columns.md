@@ -4,8 +4,8 @@ In this chapter you will learn how to create index columns in DataTable.
 
 There are 2 types of index columns:
 
-- [Static](#staticindexcolumns) (rows indices aren't changed whether you move, delete rows etc.)
-- [Dynamic](#dynamicindexcolumns) (rows indices can vary depending on the current position of rows)  
+- [Static](#staticindexcolumns) (rows indexes aren't changed whether you move, delete rows etc.)
+- [Dynamic](#dynamicindexcolumns) (rows indexes can vary depending on the current position of rows)  
 
 
 Static index columns
@@ -42,7 +42,7 @@ Let's consider what we do in the code above:
 1. In the api/ui.datatable_columns_config.md parameter we assign an individual column to serve as the index entry.
 2. Then, we specify the api/link/ui.datatable_scheme_config.md property with the **$init** key inside. 
 The **$init** key runs when data is being loaded to the component initially and when data is being reloaded for new elements. The key is called for each data item, 
-that's why we can use it as an iterator to assign indices to rows.<br> Read more about the key in the related article  - <a href="desktop/data_scheme.md#initkey">'Defining Data Scheme. $init key'</a>.
+that's why we can use it as an iterator to assign indexes to rows.<br> Read more about the key in the related article  - <a href="desktop/data_scheme.md#initkey">'Defining Data Scheme. $init key'</a>.
 
 
 Dynamic index columns

@@ -1,12 +1,12 @@
 Dynamic UI Modifications
 =========================
 
-Webix lib offers several ways to alter the already initialized layout: 
+Webix library offers several ways to alter the already initialized layout: 
 
-- you can **add any view** to the existing layout, including complex views that have a number of child components;
-- you can **remove any view** from existing layout;
-- you can **reconfigurate** layout-like comopnent by passing an array of new children views to it;
-- you can **replace** any view in layout by another view. 
+- you can **[add any view](desktop/dynamic_layout.md#add)** to the existing layout, including complex views that have a number of child components;
+- you can **[remove any view](desktop/dynamic_layout.md#remove)** from existing layout;
+- you can **[reconfigure](desktop/dynamic_layout.md#rebuildingapplicationlayout)** layout-like component by passing an array of new children views to it;
+- you can **[replace](desktop/dynamic_layout.md#rebuildingapplicationlayout)** any view in layout by another view. 
 
 Let's consider these possibilities in detail:
 
@@ -23,7 +23,7 @@ You can add and remove components dynamically after you've already initialized l
 	
 Adding and removing views is implemented with the help of the **addView()** and **removeView()** methods. 
 
-###Adding View
+<h3 id="add">Adding View</h3>
 
 To add the new view (layout row and column, multiview cell, accordion panel, as well as any toolbar or form control) - specify the **view object** and **position** to insert. 
 
@@ -63,7 +63,7 @@ $$("layout1").addView({view:"text", id:"text2"}, pos);
 
 The newly added view can be sized during adding according to [common rules](desktop/dimensions.md) as well as later on via [property (re)defining](desktop/redefinition.md).
 
-###Removing View
+<h3 id="remove">Removing View</h3>
 
 **removeView()** method removes components from layouts and is called from the parent component to remove any of its children. The method takes a child **view object** or its **id** as an argument. 
 
@@ -81,13 +81,13 @@ Rebuilding Application Layout
 
 Here we look at advanced possibilities of [webix.ui()](api/_ui.md) method. 
 
-Besides its main purpose - instantiation of Webix component, it method can also be used for changing layout provided that additional params are passed to it. 
+Besides its main purpose - instantiation of Webix component, it method can also be used for changing layout provided that additional parameters are passed to it. 
 
 All in all, its parameters include:
 
-- **configuration object** - (object, array) - a JSON object with the application config of any level of complexity;
-- **parent element** - (id or object) - Webix component that acts as a parent to an object you are going to init (first param);
-- **replacement object** -(id, index or object)- Webix component in a parent object that will be replaced by an object you are going to init (first param).
+- **configuration object** - (object, array) - a JSON object with the application configuration of any level of complexity;
+- **parent element** - (id or object) - Webix component that acts as a parent to an object you are going to initialize (first parameter);
+- **replacement object** -(id, index or object)- Webix component in a parent object that will be replaced by an object you are going to initialize (first parameter).
 
 Thus *webix.ui()* constructor can be used to:
 
@@ -118,6 +118,12 @@ webix.ui({
 //replace datatable
 webix.ui({..new config..}, $$('mylayout'), $$('mydatatable'));
 ~~~
+
+In the above example we redefine the "mydatatable" view with some new config. The "mylayout" view is the parent of the new configuration.
+When a new view will be rendered, the new config will take the container of the "mydatatable" view.
+
+We can also pass two arguments by omitting the parent container. The result will be the same.
+
 
 {{sample 01_layout/13_reconfiguration.html}}
 

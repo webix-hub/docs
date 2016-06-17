@@ -46,7 +46,7 @@ Read more about [Chart Series](desktop/chart_series.md).
 - **line** - a broken or curved (in case of a spline chart) line.
 	- **color** (hex code) - color for the line;
     - **width** (number) - line width.
-    - **shadow** (boolean) - shadow for nthe line (optional);
+    - **shadow** (boolean) - shadow for the line (optional);
 - **offset** (number) - offset for the first item in a chart, the initial numeric value;
 
 ####Getting rid of points on the line
@@ -77,7 +77,7 @@ item:{
 
 ##Style Presets
 
-There're three style presets for the Chart component
+There are three style presets for the Chart component
 
 - **plot** - a blue line with white points;
 - **diamond** - an orange line with wine red square points;

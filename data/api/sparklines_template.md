@@ -14,7 +14,7 @@ template
 
 @returns:
 
-- sparklines		HTML string			HTML string for sparklines in a cell 
+- sparklines		string			HTML string for sparklines in a cell 
 
 @example:
 var html = webix.Sparklines.template(item,common,data,column,index);

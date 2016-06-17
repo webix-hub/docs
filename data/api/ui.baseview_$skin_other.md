@@ -5,8 +5,9 @@ $skin
 @short:
 	the method which will be called when skin is defined	
 
-@example:
+@type: obj
 
+@example:
 webix.protoUI({
     view:"myview",
     $skin:function(){

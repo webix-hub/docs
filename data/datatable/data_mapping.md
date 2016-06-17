@@ -42,7 +42,7 @@ The code above will correctly show data from XML as in:
 ~~~
 
 
-Specific of CSV and jsArray data types
+Specific of CSV and JsArray data types
 --------------------------------------
 
 During csv(jsarray) parsing, its columns are named as data1 .. dataN

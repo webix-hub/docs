@@ -84,7 +84,7 @@ Retrieves values that contain mask defined through a dropdown list of possible v
 
 <img src="datatable/numeric_filter.png"/>
 
-Text filter used for number columns. Retrieves values which contain mask defined through text field. Allows users to use the following comporison operators in it:
+Text filter used for number columns. Retrieves values which contain mask defined through text field. Allows users to use the following comparison operators in it:
 
 - '=' - equal to;
 - '>' - greater than;
@@ -246,12 +246,12 @@ function startCompare(value, filter){
 }
 
 grid = new webix.ui({
-	view:"datatable",
-	...
-	columns:[
-		{ id:"title", header:["Film title",{content:"textFilter", compare:startCompare}]},
-		...
-	]
+   view:"datatable",
+   ...
+   columns:[
+	 { id:"title", header:["Film title",{content:"textFilter",compare:startCompare}]},
+	 ...
+   ]
 });	
 ~~~
 
@@ -309,9 +309,9 @@ Filtering by multiple criteria (by specifying an additional filtering rule)
 grid = new webix.ui({
 	view:"datatable",
 	columns:[
-		{ id:"rank",	header:["#", {content:"textFilter", compare:oneForAll, colspan:3}]},
-		{ id:"title",	header:["Film title",""] },
-		{ id:"year",	header:["Release year",""]}
+	  { id:"rank",	header:["#",{content:"textFilter",compare:oneForAll,colspan:3}]},
+	  { id:"title",	header:["Film title",""]},
+	  { id:"year",	header:["Release year",""]}
 	],
 });
 
@@ -416,8 +416,8 @@ In case of TreeTable some extra configurations can be defined to define how filt
 
 The **filterMode** property is an object that can contain 2 attributes:
 
-- **showSubItems** - (*boolean*) defines whether the tree must display childs of the filtered items (*true*) 
-or the filtered items would be displayed as childs of the root node (*false*). The default value - *true*. 
+- **showSubItems** - (*boolean*) defines whether the tree must display children of the filtered items (*true*) 
+or the filtered items would be displayed as children of the root node (*false*). The default value - *true*. 
 - **openParents** - (*boolean*) defines whether the tree will expand branches to show the found items (*true*) or stay as is (*false*). The default value - *true*
 - **level**  - (*number*) sets the nesting level to filter items from (one-based numbering). 
 

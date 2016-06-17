@@ -55,7 +55,7 @@ If you are updating from Webix 1.x - please check the migration.md
 - export of data with special characters
 - reloading data in menu with hidden items
 - ungroup API inconsistence
-- ie mobile animation
+- IE mobile animation
 - mouse-wheel other custom scrolls
 - pie chart map clearing
 - invalid this reference in webix.require callback

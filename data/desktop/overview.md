@@ -13,8 +13,8 @@ Main features
 <dt><a href="desktop/components.md">1. Rich UI </a></dt>
 <dd>The library supplies over 70 fully customizable components such as form, tree, grid, list etc. </dd>
 <br>
-<dt><a href="desktop/data_loading.md">2. Supported data formats: xml, json, jsarray, csv</a></dt>
-<dd>Developers can use their favourite formats to specify data. All popular data formats are supported.</dd>
+<dt><a href="desktop/data_loading.md">2. Supported data formats: XML, JSON, JsArray, CSV</a></dt>
+<dd>Developers can use their favorite formats to specify data. All popular data formats are supported.</dd>
 <br>
 <dt><a href="tutorials/start_coding.md">3. Intuitive JS OOP</a></dt>
 <dd>Simple and light weight code provides easy and understandable OOP concepts.</dd>
@@ -31,7 +31,7 @@ Main features
 <dt><a href="desktop/localization.md">7. Support for internationalization and localization</a></dt>
 <dd>Support for internationalization allows applications be translated and modified into local versions for hundreds of languages.</dd>
 <br>
-<dt><a href="desktop/styling.md">8. Styling with standard css</a></dt>
+<dt><a href="desktop/styling.md">8. Styling with standard CSS</a></dt>
 <dd>You can use CSS in conjunction with components content to achieve the desired look-and-feel. CSS can be applied to the whole layout or to specific components, items etc.</dd>
 <br>
 <dt><a href="desktop/dimensions.md">9. Flexible layouts</a></dt>
@@ -41,7 +41,7 @@ Main features
 <dd>The library offers rich means of filtering and sorting, starting from built-in tools and ending with fully custom filtering logic.</dd>
 <br>
 <dt><a href="desktop/visibility.md">11. Possibility to show or hide components </a></dt>
-<dd>Any component in the layout can be hidden (showed) programmatically.</dd>
+<dd>Any component in the layout can be hidden (showed) by API call.</dd>
 <br>
 <dt><a href="desktop/jquery.md">12. Integration with jQuery</a></dt>
 <dd>Webix is integrated with jQuery that allows you to follow the main mantra of the jQuery library while developing - running with the least amount of configuration.</dd>
@@ -56,7 +56,7 @@ Main features
 <dd>All data containing components can be directly edited on the page, saving users from having to go to a separate page first.</dd>
 <br>
 <dt><a href="desktop/dnd.md">16. Drag-and-drop </a></dt>
-<dd>Users have the possibility to drag-and-drop items of the components. The library supports both external and internal DND and allows customizing 'drag', 'drop' operations.
+<dd>Users have the possibility to drag-and-drop items of the components. The library supports both external and internal Drag-and-drop and allows customizing 'drag', 'drop' operations.
 </dd>
 <br>
 <dt><a href="desktop/third_party_integration.md">17. Integration with third party libraries </a></dt>
@@ -74,7 +74,7 @@ Main features
 reflect the change.
 </dd>
 <br>
-<dt><a href="desktop/paging.md">21. Variable length and localizable pagination</a></dt>
+<dt><a href="desktop/paging.md">21. Paging for big datasets</a></dt>
 <dd>One or several pagers can be added to the app to display data page by page. Data will not be retrieved from server side until the related page is opened. The number of rows per page, templates for navigation controls are set up. </dd>
 </dl> 
 

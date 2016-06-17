@@ -1,6 +1,8 @@
-{{memo a vertical or horizontal layout without the headers}}
+{{memo a vertical or horizontal layout without headers}}
 
-The component allows you to programmatically define interface structure by organizing views in a vertical or horizontal layout. By including layouts one by one, it's possible to create the final screen of any complexity. Check [layout](desktop/layout.md) documentation for more detailed description.
+The component allows you to define interface structure by organizing views in a vertical or horizontal layout. 
+By including layouts one by one, it's possible to create an interface of any complexity. 
+Check [Layout](desktop/layout.md) documentation for a more detailed description.
 
 ### Constructor
 

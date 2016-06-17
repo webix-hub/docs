@@ -61,7 +61,7 @@ you can include the necessary number of version into the links to the code files
 <script src="http://cdn.webix.com/2.2/webix.js" type="text/javascript"></script>
 ~~~
 
-This variant is suitable only to the Webix version distributed under GPLv3.
+This variant is suitable only to the Webix version distributed under GPL.
 
 
 **2) Including Webix files via Package Managers**
@@ -91,7 +91,7 @@ Bower
 bower install webix
 ~~~
 
-This variant is also suitable only to the Webix version distributed under GPLv3.
+This variant is also suitable only to the Webix version distributed under GPL.
 
 
 **3) Including Webix Files from Downloaded Package**
@@ -235,13 +235,13 @@ ID to **div** elements and set this ID as the value of the component's container
 
 ##Coding Tips
 
-Components are removed from the application by simply wiping the code in the editor, but they can be as well destructed programmatically with the removal of all HTML elements and event for the component. 
+Components are removed from the application by simply wiping the code in the editor, but they can be as well destructed by API call with the removal of all HTML elements and event for the component. 
 
 ~~~js
 $$('mydataview1').destructor();
 ~~~
 
-In addition, you can programmatically check whether the component with the specified ID was created and exists in the app: 
+In addition, you can check whether the component with the specified ID was created and exists in the app: 
 
 ~~~js
 if(!$$("my_dataview").exists())// -> returns boolean value

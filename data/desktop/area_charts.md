@@ -9,7 +9,7 @@ Settings for Area Charts
 Area chart can be supplied with common functionality that is true for all chart types: 
 
 - **Scales,** horizontal and vertical lines with values. See [Rules of Scale Building](desktop/chart_scales.md) for details. 
-- [Tooltips](desktop/chart_tooltip.md), pop-up infotips that show the exact value of the key points. 
+- [Tooltips](desktop/chart_tooltip.md), popups that show the exact value of the key points. 
 - [Legend](desktop/chart_legend.md), colored markers that explain what each chart within the scales mean. 
 
 ##Chart Series

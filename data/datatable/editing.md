@@ -211,7 +211,7 @@ var table2 = new webix.ui({
 
 Apart from row and column editing, datatable API offers the possibilities to 
 
-- programmatically open editor in the next cell of the row (provided that it is editable) - **editNext()** method;
+- open editor in the next cell of the row (provided that it is editable) - **editNext()** method;
 - move focus to the active editor (if any) - **focusEditor()** method;
 - close the editor without saving changes - **editCancel()** method;
 - close the editor while saving changes - **editStop()** method.

@@ -4,7 +4,7 @@ onLabel
 @short:
 	a text label on the button in the pressed state
 
-@type: 
+@type: string
 @example:
 { view:"toggle", type:"iconButton", name:"s4", onLabel:"Enabled"}
 

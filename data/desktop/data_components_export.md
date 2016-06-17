@@ -36,13 +36,24 @@ webix.toExcel($$("mylist"));
 Customizing Export to Excel
 -------------------------
 
-The toExcel() method returns all data specified in the dataset of a component without any data formatting. However, you may 
-need to get data from some particular fields. 
+The toExcel() method returns all data specified in the dataset of a component without any data formatting. The data is exported into an Excel document with "table" name and "Data" sheet name. 
 
+However, you may need to get data from some particular fields, or customize file and sheet names. 
 
 **Export API allows** 
 
-- setting **columns** you'd like to see in the export file. 
+- providing a custom **filename** and sheet **name**: 
+
+~~~js
+webix.toExcel($$("table"), {
+     filename: "table", // for filename
+     name: "Films" // for sheet name
+});
+~~~
+
+{{sample 15_datatable/10_export/01_excel.html}}
+
+- setting **columns** you'd like to see in the export file:
 
 ~~~js
 webix.toExcel($$("mylist"), {

@@ -6,7 +6,7 @@ Version 1.5
 - functionality of desktop UI adapted to touch events and gestures
 
 ### Improvements in DataTable
-- adjustRowHeight method added to datatable ( autodetects and applies the correct row height )
+- adjustRowHeight method added to datatable ( auto detects and applies the correct row height )
 - fillspace can be used for multiple columns ( percent based sizing in datatable ) 
 - richselect can be used as editor in the datatable
 - checkboxes can have checkValue and uncheckValue options
@@ -53,7 +53,7 @@ Version 1.5
 - fillspace can be used on multiple columns with different weights
 - function names can be resolved in custom scope
 - getSelection -> getSelectedId
-- idColumn to csv abd jsarray data drivers
+- idColumn to csv and jsarray data drivers
 - initialization through angular directive links method to the current scope
 - look of tabbar in clouds skin
 - selectFilter in datatable sorts options by default
@@ -66,7 +66,7 @@ Version 1.5
 
 #### Fixes
 - slider for touch
-- autoscroll and autoopen during dnd
+- autoscroll and autoopen during drag-n-drop
 - autosizing of templates
 - backbone view must return this
 - calling ungroup on clearAll

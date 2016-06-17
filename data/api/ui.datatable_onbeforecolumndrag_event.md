@@ -2,10 +2,20 @@ onBeforeColumnDrag
 =============
 
 
-@short: fires the monent you start dragging the column from its source potition
+@short: 
+	fires the moment you start dragging the column from its source position
 	
+@params:
+
+- sourceId			string					the source column id
+- event				Event object			the native event object
+    
 @example:
-$$("datatable1").attachEvent("onBeforeColumnDrag", function(context, native_event){...});
+$$("datatable1").attachEvent("onBeforeColumnDrag", function(sourceId, event){
+	// some code
+	return true;
+});
+
 
 @template:	api_event
 @related: 
@@ -16,12 +26,9 @@ $$("datatable1").attachEvent("onBeforeColumnDrag", function(context, native_even
     api/ui.datatable_onaftercolumndrop_event.md
 
 @descr:
+The event is blockable. Returning false will prevent column dragging.
 
-The drag-and-drop context can have the next properties:
 
-- **from** - the source object
-- **to** - the target object
-- **source** - the id of the dragged item(s)
-- **target** - the id of the drop target, null for drop on empty space
-- **start** - the id from which DND was started
+
+
 
