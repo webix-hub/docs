@@ -2,7 +2,7 @@ onSuccessResponse
 =============
 
 @short:
-	fires on save response
+	fires on successful save response
 
 @params:
 
