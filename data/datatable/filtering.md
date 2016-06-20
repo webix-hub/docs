@@ -438,3 +438,5 @@ webix.ui({
 {{sample
 	17_datatree/04_api/03_filter.html
 }}
+
+@spellcheck: yyyy
