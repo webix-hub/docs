@@ -1,1 +1,0 @@
-@link: api/ui.baseview_getformview.md

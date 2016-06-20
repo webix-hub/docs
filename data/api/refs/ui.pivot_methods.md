@@ -24,7 +24,6 @@ Methods
 - api/ui.pivot_getconfigwindow.md - returns the object of the window with pivot configuration
 - api/ui.pivot_getfields.md - returns an object with fields configurations
 - api/link/ui.pivot_getfirstid.md - returns the ID of the first item
-- api/link/ui.pivot_getformview.md - returns master form for the input
 - api/link/ui.pivot_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.pivot_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.pivot_getitem.md - gets the object of the data item with the specified id
@@ -42,7 +41,6 @@ Methods
 - api/link/ui.pivot_isenabled.md - checks whether the view is enabled
 - api/link/ui.pivot_isvisible.md - checks whether the view is visible
 - api/link/ui.pivot_load.md - loads data from an external data source.
-- api/link/ui.pivot_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
 - api/link/ui.pivot_mapevent.md - routes events from one object to another
 - api/link/ui.pivot_parse.md - loads data to the component from an inline data source
 - api/link/ui.pivot_reconstruct.md - rebuilds the layout
@@ -87,7 +85,6 @@ Methods
 - api/ui.pivot_getconfigwindow.md
 - api/ui.pivot_getfields.md
 - api/link/ui.pivot_getfirstid.md
-- api/link/ui.pivot_getformview.md
 - api/link/ui.pivot_getidbyindex.md
 - api/link/ui.pivot_getindexbyid.md
 - api/link/ui.pivot_getitem.md
@@ -105,7 +102,6 @@ Methods
 - api/link/ui.pivot_isenabled.md
 - api/link/ui.pivot_isvisible.md
 - api/link/ui.pivot_load.md
-- api/link/ui.pivot_loadnext.md
 - api/link/ui.pivot_mapevent.md
 - api/link/ui.pivot_parse.md
 - api/link/ui.pivot_reconstruct.md

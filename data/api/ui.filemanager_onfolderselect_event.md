@@ -8,9 +8,9 @@ onFolderSelect
 - id		string		the folder id
 
 @example:
-onFolderSelect: function(id){
+$$("files").attachEvent("onFolderSelect",function(id){
 	webix.message("Active folder is '" +this.getItem(id).value+"'");
-}
+});
 
 
 @template:	api_event

@@ -2,7 +2,7 @@ ui.pivot
 =============
 
 
-{{memo A datatable with advanced filtering capabilities.. }}
+{{memo A datatable with advanced filtering capabilities.}}
 
 Webix Pivot allows quickly processing huge complex datasets and creating clear reports on their basis. 
 You can easily customize this component and proceed with comparing, filtering and sorting data - all within one table.
@@ -62,7 +62,6 @@ var pivot = webix.ui({
 - api/ui.pivot_getconfigwindow.md - returns the object of the window with pivot configuration
 - api/ui.pivot_getfields.md - returns an object with fields configurations
 - api/link/ui.pivot_getfirstid.md - returns the ID of the first item
-- api/link/ui.pivot_getformview.md - returns master form for the input
 - api/link/ui.pivot_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.pivot_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.pivot_getitem.md - gets the object of the data item with the specified id
@@ -80,7 +79,6 @@ var pivot = webix.ui({
 - api/link/ui.pivot_isenabled.md - checks whether the view is enabled
 - api/link/ui.pivot_isvisible.md - checks whether the view is visible
 - api/link/ui.pivot_load.md - loads data from an external data source.
-- api/link/ui.pivot_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
 - api/link/ui.pivot_mapevent.md - routes events from one object to another
 - api/link/ui.pivot_parse.md - loads data to the component from an inline data source
 - api/link/ui.pivot_reconstruct.md - rebuilds the layout
@@ -136,7 +134,6 @@ var pivot = webix.ui({
 - api/link/ui.pivot_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.pivot_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.pivot_data_config.md - JavaScript array containing data for the component
-- api/link/ui.pivot_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.pivot_datatype_config.md - the type of loaded data
 - api/link/ui.pivot_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.pivot_fieldmap_config.md - defines custom labels for fields
@@ -148,7 +145,6 @@ var pivot = webix.ui({
 - api/link/ui.pivot_height_config.md - sets the height of the component
 - api/link/ui.pivot_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.pivot_id_config.md - the component ID
-- api/link/ui.pivot_isolate_config.md - masks IDs of all inner element
 - api/link/ui.pivot_margin_config.md - defines the space around elements (applies the specified value to all elements)
 - api/link/ui.pivot_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.pivot_maxwidth_config.md - sets the maximum width for the view
@@ -163,7 +159,6 @@ var pivot = webix.ui({
 - api/link/ui.pivot_removemissed_config.md - defines how to treat items in case of reloading
 - api/link/ui.pivot_responsive_config.md - enables responsive mode for horizontal layout
 - api/link/ui.pivot_rows_config.md - array of views objects arranged vertically
-- api/link/ui.pivot_save_config.md - defines URLs for data saving
 - api/link/ui.pivot_scheme_config.md - defines schemes for data processing
 - api/link/ui.pivot_type_config.md - defines the layout borders
 - api/link/ui.pivot_url_config.md - the URL which the component will use to load data after its initialization
