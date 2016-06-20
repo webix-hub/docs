@@ -65,7 +65,7 @@ defaults:{
 }
 ~~~
 
-Thus, while setting the x coordinate for the tooltip, you need to remember that the default value (dx) will be added to the value you will specify in the x property (dx+x).
+Thus, while setting the **x** coordinate for the tooltip, you need to remember that the default value (dx) will be added to the value you will specify in the x property (dx+x).
 For example, if you set the x parameter to 10, the tooltip will be moved to 30px.
 
-As for the y coordinate, its value is calculated as dy+y, but the resulting y coordinate value will be equal to the y value, since dy value is 0.
+As for the **y** coordinate, its value is calculated as dy+y, but the resulting y coordinate value will be equal to the y value, since dy value is 0.
