@@ -3,6 +3,7 @@ Methods
 
 {{api
 - api/link/ui.pivot_add.md - adds an item to the store
+- api/ui.pivot_addoperation.md - 
 - api/link/ui.pivot_addview.md - add new view to layout-like component
 - api/link/ui.pivot_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.pivot_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
@@ -64,6 +65,7 @@ Methods
 
 @index:
 - api/link/ui.pivot_add.md
+- api/ui.pivot_addoperation.md
 - api/link/ui.pivot_addview.md
 - api/link/ui.pivot_adjust.md
 - api/link/ui.pivot_attachevent.md

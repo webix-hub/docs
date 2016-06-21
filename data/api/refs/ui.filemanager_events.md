@@ -40,7 +40,7 @@ Events
 - api/ui.filemanager_onhidesearchresults_event.md - fires when search results were hidden
 - api/ui.filemanager_onitemrename_event.md - fires when an item is renamed
 - api/link/ui.filemanager_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
-- api/ui.filemanager_onsuccessresponse_event.md - fires on save response
+- api/ui.filemanager_onsuccessresponse_event.md - fires on successful save response
 - api/ui.filemanager_onviewinit_event.md - fires during the initialization of an object with the mode configuration
 }}
 

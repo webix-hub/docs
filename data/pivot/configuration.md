@@ -33,7 +33,7 @@ var config = {
 Defining Operations on Data
 --------------------------
 
-Operations are set within [Pivot structure object](pivot/initialization.md#struct) in **values** array. **Name** refers to data item property:
+Operations are set within [Pivot structure object](pivot/initialization.md#struct) in the **values** array. **Name** refers to data item property:
 
 ~~~js
 view: "pivot",
@@ -52,7 +52,9 @@ There are **4 prebuilt operations** over data:
 - **min**  - shows the min value of this property found in the dataset;
 - **count** - shows the number of occurencies of this property in the dataset.
 
-If needed, you can **add your own <span id="operation">operation</span>**:
+If needed, you can **add your own <span id="operation">operation</span>** in one of the following ways:
+
+1) through the **operations** property
 
 ~~~js
 pivot.operations.abssum = function(data) {
@@ -74,6 +76,31 @@ values:[ name:"oil", operation:"abssum"]
 ~~~
 
 {{sample 61_pivot/01_init/04_define_function.html}}
+
+2) with the help of the api/ui.pivot_addoperation.md method 
+
+Besides adding an operation, it allows specifying the *leavesOnly* property which 
+defines whether values of the child elements should be processed together with their parent rows.
+The method takes three parameters:
+
+- name - (string) the operation's name
+- function - (function)	the function which will be called for each cell in the column with this operation.
+It takes an array with values of child cells
+- options - (object) object with operation options. Currently, there's just one option - leavesOnly. If it's set to *true*, the operation will process rows values with child
+elements
+    
+~~~js
+grida.addOperation("avr", function(data) {
+    var sum = 0;
+    for (var i = 0; i < data.length; i++) {
+        if( data[i] )
+        sum += window.parseFloat(data[i], 10);
+    }
+    return data.length?(sum/data.length):0;
+}, {leavesOnly: true});
+~~~
+
+{{sample 61_pivot/03_table_api/03_adding_operation.html}}
 
 
 Sum counters for columns and rows
