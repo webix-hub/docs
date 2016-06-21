@@ -79,15 +79,15 @@ values:[ name:"oil", operation:"abssum"]
 
 2) with the help of the api/ui.pivot_addoperation.md method 
 
-Besides adding an operation, it allows specifying the *leavesOnly* property which 
-defines whether values of the child elements should be processed together with their parent rows.
+Besides adding an operation, it allows specifying the *leavesOnly* property.
+This property means that the operation function will take only values of leaves child rows (rows that do not have sub-rows).
 The method takes three parameters:
 
 - name - (string) the operation's name
 - function - (function)	the function which will be called for each cell in the column with this operation.
 It takes an array with values of child cells
-- options - (object) object with operation options. Currently, there's just one option - leavesOnly. If it's set to *true*, the operation will process rows values with child
-elements
+- options - (object) object with operation options. Currently, there's just one option - leavesOnly. 
+If it's set to *true*, the operation function will take values of child rows that do not contain sub-rows.
     
 ~~~js
 grida.addOperation("avr", function(data) {

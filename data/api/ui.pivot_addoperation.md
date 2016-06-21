@@ -29,4 +29,4 @@ grida.addOperation("avr", function(data) {
 
 The **function** parameter takes an array with values of child cells. 
 
-The **leavesOnly** option takes a boolean value. If set to true, it will process just the rows' values (without child elements).
+The **leavesOnly** option takes a boolean value. If set to true, the operation function will take only values of leaves child rows (rows that do not have sub-rows).
