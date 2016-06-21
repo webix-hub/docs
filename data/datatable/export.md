@@ -15,7 +15,8 @@ This section is intended for the export functionality added in version 3.0. For 
 
 
 @keyword:
-	export, png, excel
+	export, PNG, excel
     
 @index:
 - datatable/export_old.md
+
