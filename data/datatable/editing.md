@@ -58,6 +58,7 @@ To create a custom editor, you should set the following methods to it:
 - **setValue()** - sets the value of the editor.
 - **render()** - renders the editor.
 
+~~~js
 webix.editors = {
   "myeditor": {
     focus: function () {...}
@@ -66,6 +67,7 @@ webix.editors = {
     render: function () {...}
   }
 };
+~~~
 
 The functions are defines with the help of the following inner properties: 
 
