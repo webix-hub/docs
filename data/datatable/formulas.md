@@ -61,7 +61,7 @@ var data = [
 	{ id:3, num1:"45300", num2:"10000", difference:"=[3,num1]-[3,num2]"}
 ];
 ~~~
-- **[:row_ind, :col_ind]** - the indices of the row and column (zero-based numbering).<br>
+- **[:row_ind, :col_ind]** - the indexes of the row and column (zero-based numbering).<br>
 ~~~js
 var data = [
 	{ id:1, num1:"67000", num2:"15000", difference:"=[:0,:1]-[:0,:2]"},
@@ -140,7 +140,7 @@ grid = new webix.ui({
 You can refer to a cell in 2 ways:
 
 - **[id, field]** - takes the value from the specified field of an item with the specified id (*see usage examples above*).
-- **[:row_ind, :col_ind]** - the indices of the row and column (zero-based numbering).<br>
+- **[:row_ind, :col_ind]** - the indexes of the row and column (zero-based numbering).<br>
 You can also combine 2 variants and use **[id, :col_ind]** or **[:row_ind, field]**.
 
 You can call any **custom function** within a formula in case provided operations are not enough:
