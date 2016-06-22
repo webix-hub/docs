@@ -1,0 +1,1 @@
+@link: api/ui.text_inputalign_config.md

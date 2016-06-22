@@ -275,7 +275,7 @@ Webix is integrated with [Promiz.js](http://promisesaplus.com/) library to treat
 It means that any Ajax request returns a **promise** object than can be treated with [Promiz.js API](https://github.com/zolmeister/promiz). 
 
 {{snippet
-"Promise" objects is returned by either of these methods
+"Promise" object is returned by either of these methods
 }}
 ~~~js
 var promise = grid.load("my.php");

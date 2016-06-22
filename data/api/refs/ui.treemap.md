@@ -276,4 +276,3 @@ var treemap = webix.ui({
 - api/refs/ui.treemap_events.md
 - api/refs/ui.treemap_others.md
 
-@edition:pro

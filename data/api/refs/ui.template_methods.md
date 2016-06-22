@@ -31,10 +31,10 @@ Methods
 - api/link/ui.template_resize.md - adjusts the view to a new size
 - api/link/ui.template_scrollto.md - scrolls the data container to a certain position
 - api/ui.template_setcontent.md - attaches html container to the template
-- api/ui.template_sethtml.md - set hmlt for template
+- api/ui.template_sethtml.md - sets HTML for template
 - api/ui.template_setvalues.md - sets data hash
 - api/link/ui.template_show.md - makes the component visible
-- api/link/ui.template_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.template_sync.md - allows you to sync two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.template_unbind.md - breaks "bind" link
 - api/link/ui.template_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}

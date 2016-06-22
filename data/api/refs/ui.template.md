@@ -54,10 +54,10 @@ var template = webix.ui({
 - api/link/ui.template_resize.md - adjusts the view to a new size
 - api/link/ui.template_scrollto.md - scrolls the data container to a certain position
 - api/ui.template_setcontent.md - attaches html container to the template
-- api/ui.template_sethtml.md - set hmlt for template
+- api/ui.template_sethtml.md - sets HTML for template
 - api/ui.template_setvalues.md - sets data hash
 - api/link/ui.template_show.md - makes the component visible
-- api/link/ui.template_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.template_sync.md - allows you to sync two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.template_unbind.md - breaks "bind" link
 - api/link/ui.template_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}
@@ -116,7 +116,7 @@ var template = webix.ui({
 - api/link/ui.template_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/ui.template_src_config.md - the path to an external template that is loaded by Ajax
 - api/link/ui.template_template_config.md - the component template
-- api/ui.template_type_config.md - name of predefined styling type
+- api/ui.template_type_config.md - name of a predefined styling type
 - api/link/ui.template_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.template_width_config.md - sets the width of the component
 }}

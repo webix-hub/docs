@@ -38,7 +38,6 @@ webix.ui({
 {{api
 - api/link/ui.tooltip_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.tooltip_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
-- api/link/ui.tooltip_bind.md - binds components
 - api/link/ui.tooltip_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.tooltip_callevent.md - calls an inner event
 - api/link/ui.tooltip_customize.md - redefines the 'type' property
@@ -60,8 +59,6 @@ webix.ui({
 - api/link/ui.tooltip_render.md - renders the specified item or the whole component
 - api/link/ui.tooltip_resize.md - adjusts the view to a new size
 - api/link/ui.tooltip_show.md - makes the component visible
-- api/link/ui.tooltip_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
-- api/link/ui.tooltip_unbind.md - breaks "bind" link
 - api/link/ui.tooltip_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}
 

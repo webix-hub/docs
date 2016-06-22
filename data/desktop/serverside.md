@@ -1,12 +1,13 @@
 Server-side Integration
 =================
 
-Serverside integration is possible with Webix [data components](desktop/components.md), client-side datastores (called [Data Collections](desktop/nonui_objects.md)) and [forms](desktop/form.md). It is enabled in several ways:
+Server-side integration is possible with Webix [data components](desktop/components.md), 
+client-side datastores (called [Data Collections](desktop/nonui_objects.md)) and [forms](desktop/form.md). 
+<span id="recommended_ways">It is enabled in several ways</span>:
 
-- you can write your own **[custom scripts](desktop/custom_serverside.md)** in you favourite language to load data and save changes back;
-- you can use server side [rest api](desktop/server_rest.md)
-- you can make use of a **[Server Side Connector](desktop/dataconnector.md)** (ready to use solution for data loading and saving). Connectors are available in PHP, Java, .Net, ColdFusion versions;
-- You can use MVC.Net, Ruby on Rails, PHP Yii **MVC frameworks** coupled with your scripts or connectors.
+- you can write your own **[custom scripts](desktop/custom_serverside.md)** in you favorite language to load data and save changes back;
+- you can use server-side [REST API](desktop/server_rest.md);
+- you can use MVC.Net, Ruby on Rails, PHP Yii **MVC frameworks** coupled with your scripts or connectors.
 
 ##Data Loading
 
@@ -35,7 +36,7 @@ $$("dtable").load("myscript.php", "xml");
 
 More info about custom scripts is in the [dedicated article](desktop/custom_serverside.md).
 
-If you are unsure what to do in case you need to get data from a **different domain** with relations to your app's one, consult the our solution to [cross-domain data loading](desktop/crossdomain_loading.md).
+If you are unsure what to do in case you need to get data from a **different domain** with relations to your app's one, consult our solution to [cross-domain data loading](desktop/crossdomain_loading.md).
 
 
 
@@ -105,14 +106,19 @@ $$("uploader1").send();
 Form data is either 
 
 - pushed to the component it is [bound](desktop/data_binding.md) with;
-- or (more typically) is sent to server by [Webix Ajax request](desktop/server_ajaxsave.md)
+- or (more typically) is sent to server by [Webix Ajax request](desktop/server_ajaxsave.md).
+
+##Using DataConnector 
+
+In case you want to make use of a **Server Side Connector**, you can find the necessary information 
+in the [corresponding article](desktop/dataconnector.md). However, the use of <a href="#recommended_ways">other solutions</a> is more advisable.
+
 
 ###Further Reading
 
 - desktop/server_customload.md
 - desktop/server_ajaxsave.md
 - [Loading and Saving  with Custom Scripts](desktop/custom_serverside.md)
-- [Loading and Saving with Server Side Connectors](desktop/dataconnector.md)
 - [Customizing DataProcessor](desktop/dataprocessor.md)
 - [Offline Support](desktop/server_offline.md)
 - [Working in REST Mode](desktop/server_rest.md)
@@ -130,7 +136,7 @@ Form data is either
   - desktop/server_indexdb.md
   - desktop/server_faye.md
   - desktop/dataprocessor.md
-  - desktop/dataconnector.md
   - desktop/crossdomain_loading.md
+  - desktop/dataconnector.md
 
 @complexity:2
