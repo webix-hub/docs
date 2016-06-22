@@ -1,13 +1,13 @@
-Server-side Integration
+Server-Side Integration
 =================
 
 Server-side integration is possible with Webix [data components](desktop/components.md), 
 client-side datastores (called [Data Collections](desktop/nonui_objects.md)) and [forms](desktop/form.md). 
-<span id="recommended_ways">It is enabled in several ways</span>:
+It is enabled in several ways:
 
-- you can write your own **[custom scripts](desktop/custom_serverside.md)** in you favorite language to load data and save changes back;
-- you can use server-side [REST API](desktop/server_rest.md);
-- you can use MVC.Net, Ruby on Rails, PHP Yii **MVC frameworks** coupled with your scripts or connectors.
+- you can write your own **[custom scripts](desktop/custom_serverside.md)** in your favorite language to load data and save changes back;
+- you can use server-side [REST API](desktop/server_rest.md) (MVC.Net, Ruby on Rails, PHP Yii **MVC frameworks** coupled with your scripts or connectors);
+- you can choose one of [additional ways](desktop/serverside.md#otherwaysofintegratingwithserver).
 
 ##Data Loading
 
@@ -79,7 +79,7 @@ save:{
 
 If you need to change the default pattern of data processing - look up [Dataprocessor docs](desktop/dataprocessor.md);
 
-##Saving Uploaded files
+##Saving Uploaded Files
 
 If you use Webix [Uploader](desktop/file_upload.md), you may wonder about how saving of the files is performed. 
 
@@ -108,10 +108,12 @@ Form data is either
 - pushed to the component it is [bound](desktop/data_binding.md) with;
 - or (more typically) is sent to server by [Webix Ajax request](desktop/server_ajaxsave.md).
 
-##Using DataConnector 
+##Other Ways of Integrating with Server 
 
-In case you want to make use of a **Server Side Connector**, you can find the necessary information 
-in the [corresponding article](desktop/dataconnector.md). However, the use of <a href="#recommended_ways">other solutions</a> is more advisable.
+- you can make use of a **[Server Side Connector](desktop/dataconnector.md)**. The necessary information is
+in the [corresponding article](desktop/dataconnector.md)
+- Webix Remote
+- Websockets Faye..
 
 
 ###Further Reading
@@ -126,17 +128,6 @@ in the [corresponding article](desktop/dataconnector.md). However, the use of <a
 
 
 @index: 
-  
-  - desktop/custom_serverside.md
-  - desktop/server_rest.md
-  - desktop/server_ajaxsave.md
-  - desktop/server_customload.md
-  - desktop/server_offline.md
-  - desktop/server_proxy.md
-  - desktop/server_indexdb.md
-  - desktop/server_faye.md
-  - desktop/dataprocessor.md
-  - desktop/crossdomain_loading.md
-  - desktop/dataconnector.md
+- desktop/dataconnector.md
 
 @complexity:2
