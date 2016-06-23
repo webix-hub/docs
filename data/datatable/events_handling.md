@@ -1,4 +1,3 @@
-
 Events Handling with DataTable
 ==============================
 
@@ -49,11 +48,11 @@ webix.ui({
 
 Cancelable Events 
 -----------------------
-All events with subword '**onbefore**' can be cancelled.<br>
+All events with the '**onBefore**' prefix can be canceled.<br>
 To cancel some event you should return **false** within the appropriate event handler.
 
 {{snippet
-Cancelling the event handler
+Canceling the event handler
 }}
 ~~~js
 var myEvent = $$("dataTableId").attachEvent("onBeforeTabClick", function () {
@@ -66,9 +65,11 @@ Accessible objects and data
 ---------------------------------
 
 Inside the event handler you can refer to the holder component through keyword **this**. </br>
-Besides, most event handlers get incoming argument(s), like the **id** of DataTable's row (see api/refs/ui.datatable.md to know exactly what arguments are passed inside event handler). 
+Besides, most event handlers get incoming argument(s),
+like the **id** of a DataTable row (see api/refs/ui.datatable.md to know exactly what arguments are passed inside event handler). 
 
-Btw, using the **id** of a sub-element you can access a data item associated with it and all its properties, even if they were not used to draw the element. For example:
+By the way, using the **id** of a sub-element you can access a data item associated with it and all its properties, even if they were not used to draw the element. 
+For example:
 
 {{snippet
 Referring within the event handler
