@@ -1,7 +1,7 @@
 Export to Excel
 ===================
 
-To export data from datatable/treetable into an Excel document, you need to call the **toExcel()** method.  
+To export data from datatable/treetable into an Excel document, you need to call the api/_toexcel.md method.  
 The method takes 2 parameters:
 
 - **id** - (string, object)  the exported view or its id
