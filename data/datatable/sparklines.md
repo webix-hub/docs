@@ -38,4 +38,51 @@ webix.ui({
 
 {{sample 60_pro/01_datatable/08_sparklines/01_init.html}}
 
+Sparklines Types
+------------------
+
+There are six types of Sparklines representation available:
+
+- Line - the default one
+- Area
+- Bar
+- Spline
+- SplineArea
+- Pie
+
+###Area Sparklines
+
+<img src="datatable/area_sparklines.png">
+
+###Bar Sparklines
+
+<img src="datatable/bar_sparklines.png">
+
+###Spline Sparklines
+
+<img src="datatable/spline_sparklines.png">
+
+###SplineArea Sparklines
+
+<img src="datatable/spline_area_sparklines.png">
+
+###Pie Sparklines
+
+<img src="datatable/pie_sparklines.png">
+
+Sparklines Tooltips
+--------------------
+
+<img src="datatable/sparklines_tooltips.png">
+
+Setting Sparklines Colors
+-----------------
+
+<img src="datatable/sparklines_colors.png">
+
+Sparklines outside of DataTable
+------------------
+
+
+
 @edition:pro

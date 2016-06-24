@@ -149,5 +149,46 @@ api.setMethod("levelC@add3", (a,b) => a+b ); //blocked
 
 ###Setting custom logic for access levels
 
-You can define your own access level rule by using the *$access* parameter
+You can define your own access level rule by using the *$access* parameter:
 
+~~~js
+api.$access = function(){
+    return { 
+        user : !!req.user,
+        admin: req.user && req.user.id == 1 
+    };
+};
+~~~
+
+##API Reference
+
+rpc.js
+
+API generation
+
+- getParams:function(handler)
+- addRecursive:function(config, name, handler, owner, access)
+- setData:function(name, handler)
+- setMethod:function(name, handler, filter)
+- createFacade:function(handler, filter)
+- generateApi:function(context, csrfkey, obj)
+
+Call Processing
+
+- getMethod:function(name, access)
+- runMethod:function(name, args, access, context)
+
+server.js
+
+- express:function()
+- apiHandler: function(req, res)
+- runMethod:function(name, data, req)
+- setMethod:function(name, functor, filter)
+- setData:function(name, value)
+- checkCSRF:function(req)
+- getCSRFKey:function(req)
+- callHandler:function(req, res)
+- singlecall:function(name, str, req)
+- multicall:function(str, req)
+- returnData:function(res, data)
+- returnError:function(res, error)

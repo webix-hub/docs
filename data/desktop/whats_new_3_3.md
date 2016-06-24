@@ -13,7 +13,7 @@ keyword refers (master).
 
 Check the [Migration Guide](migration.html#webix3233) for more details. 
 
-##New features
+##New Features
 
 - [AbsLayout](desktop/absolute_layout.md) widget
 - [DataLayout](desktop/absolute_layout.md) widget
