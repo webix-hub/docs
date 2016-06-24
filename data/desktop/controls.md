@@ -43,7 +43,7 @@ These controls can be used for entering text, selecting an option, date or color
 	- [colorboard](desktop/colorboard.md) - a color palette for colorpicker;
 	- [calendar](desktop/calendar.md) - date selector for datepicker.
  
-It has some variations - *gridsuggest*, *datasuggest*, *checksuggest*, *multisuggest* - to serve the needs of various controls.  
+It has some variations - *Gridsuggest*, *Datasuggest*, *Checksuggest*, *Multisuggest* - to serve the needs of various controls.  
 
 ##Shared Functionality 
 

@@ -4,10 +4,10 @@ Checkbox
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.checkbox.html)
+- [Methods, properties and events](api/refs/ui.checkbox.md)
 - [Shared functionality](desktop/controls_guide.md)
 
-##Overvier
+##Overview
 
 Checkbox allows for a choice between two possible variants.
 
@@ -36,7 +36,7 @@ Checkbox Initialization
 - **checkValue** (string) - value of the checkbox in the checked state (1 by default);
 - **uncheckValue** (string) - value of the checkbox in the unchecked state (0 by default);
 
-Webix checkbox control is based on standard HTML checkbox  yet some skins use a FontAwesome icon to render it. To switch to a standard HTML checkbox, use **customCheckbox** property: 
+Webix checkbox control is based on standard HTML checkbox  yet some skins use a Font Awesome icon to render it. To switch to a standard HTML checkbox, use **customCheckbox** property: 
 
 ~~~js
 { view:"checkbox", customCheckbox:false} 

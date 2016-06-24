@@ -3,7 +3,7 @@ Fieldset
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.fieldset.html)
+- [Methods, properties and events](api/refs/ui.fieldset.md)
 - [Controls Common Functionality](desktop/controls_guide.md)
 
 ##Overview
