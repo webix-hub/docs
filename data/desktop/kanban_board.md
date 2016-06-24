@@ -5,10 +5,17 @@ API Reference
 ---------------
 
 - [Methods, properties and events](api/refs/ui.kanban.md)
-- [Samples](http://docs.webix.com/samples/63_kanban/index.html)
 
 
-<div class="h2">Overview</div>
+<div class="h2">External resources</div>
+
+
+- You can [download Kanban Board](http://webix.com/kanban/download.html) from [http://webix.com/kanban/](http://webix.com/kanban/)
+- There are online samples at [docs.webix.com/samples](http://docs.webix.com/samples/63_kanban/index.html)
+
+
+Overview
+----------
 
 Webix Kanban board is a tool that is intended for viewing work in progress and controlling the flow of work.  
 With this widget, your team will be aware of what each of the members should be working on. 

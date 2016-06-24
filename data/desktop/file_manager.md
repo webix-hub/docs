@@ -5,11 +5,17 @@ API Reference
 --------------
 
 - [Methods, properties and events](api/refs/ui.filemanager.md)
-- [Samples](http://docs.webix.com/samples/64_file_manager/index.html)
 
 
-<div class="h2">Overview</div>
+<div class="h2">External resources</div>
 
+
+- You can [download File Manager](http://webix.com/filemanager/download.html) from [http://webix.com/filemanager/](http://webix.com/filemanager/)
+- There are online samples at [docs.webix.com/samples](http://docs.webix.com/samples/64_file_manager/index.html)
+
+
+Overview
+-----------
 
 Webix File Manager is intended for viewing folders and files and navigating through them in a handy way.
 

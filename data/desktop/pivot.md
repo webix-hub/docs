@@ -6,17 +6,17 @@ API Reference
 -----------------
 
 - [Methods, properties and events](api/refs/ui.pivot.md)
-- [Samples](http://docs.webix.com/samples/61_pivot/index.html)
 
+<div class="h2">External resources</div>
 
-<div class="h2">Overview</div>
+- You can [download Webix Pivot](http://webix.com/pivot/download.html) from [http://webix.com/pivot/](http://webix.com/pivot/)
+- There are online samples at [docs.webix.com/samples](http://docs.webix.com/samples/61_pivot/index.html)
 
+Overview
+----------
 
 **Webix Pivot** is a fully client-side Javascript datatable with **extended filtering capabilities** to allow for **well-organized visual reports** made over large and complex datasets at a high speed.
 With Pivot you can easily compare, filter and sort data within one table as well as change the analysis pattern on the flow. 
-
-You can [download Webix Pivot](http://webix.com/pivot/download.html) from [http://webix.com/pivot/](http://webix.com/pivot/).
-
 
 <br>
 <img style="display:block; margin-left:auto;margin-right:auto;" src="pivot/pivot_front.png">
