@@ -52,6 +52,9 @@ The result of the operation will be written into the *result* variable.
 var result = webix.remote.save("12");
 ~~~
 
+Webix Remote defines that the client-side will get a promise of data first, while real data will come later. The *result* in our example is a promise.
+It allows avoiding delays in the page rendering.
+
 To process operations on the server, we need to provide the path to the server-side API after the *webix.js* file on the page.
 
 ~~~html
@@ -80,4 +83,71 @@ webix.remote.add(1,2);
 
 ##Setting static data
 
-You can specify some static data on the server which will be available on the client.
+You can specify some static data on the server which will be available on the client. It will be useful during sessions for storing user data 
+and sharing it with the client side. To specify static data, you need to use the setData() method and pass two parameters to it:
+
+- parameter - (string) the parameter that will be set as static
+- function - (function) the function that will take the request object and return the result
+
+For example, on the server side we set the "$user" parameter. The function specified as the second parameter will get a request *$req* and
+return the user id:
+
+~~~js
+api.setData("$user", function($req){
+    return $req.user.id;
+});
+~~~
+
+On the client the received user id will be assigned to the *user* variable.
+
+~~~js
+var user = webix.remote.$user;
+~~~
+
+Pay attention that the data generation method will be called just once - during the API initialization.
+
+##API Access Levels
+
+Webix Remote provides the possibility to limit access to API according to the user's access level. It means that the user will be able to use this or that method
+depending on his/her predefined role.
+
+For this, you need to specify the role that allows using this or that method during the method's creation like this:
+
+~~~js
+api.setMethod("role@method_name", function(){
+   // some code
+});
+~~~
+
+For example, you can limit access to the "add" method by the "admin" role. 
+
+~~~js
+api.setMethod("admin@add", function(a,b){
+    return a+b;
+});
+~~~
+
+The rules of defining access levels are the following:
+
+- all methods for which the access modificator isn't set are allowed by default
+- if *req.session.user* exists, methods for which the "user" modificator is set are allowed
+- if *req.session.user.role* exists, methods for which a certain role modificator is set are allowed
+
+Let's assume that we have the following rule:
+
+~~~js
+req.session = { user: { role:"admin,levelB"}}
+~~~
+
+In this case methods with the user and user.role access modificator will be allowed:
+
+~~~js
+api.setMethod("user@add1", (a,b) => a+b ); //allowed
+api.setMethod("admin@add2", (a,b) => a+b ); //allowed
+api.setMethod("levelC@add3", (a,b) => a+b ); //blocked
+~~~
+
+###Setting custom logic for access levels
+
+You can define your own access level rule by using the *$access* parameter
+

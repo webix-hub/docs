@@ -53,6 +53,7 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
   					<li>desktop/server_faye.md</li>
   					<li>desktop/dataprocessor.md</li>
   					<li>desktop/crossdomain_loading.md</li>
+                    <li>desktop/webix_remote.md</li>
             </ul>
         </td>
 		<td class='topic_description'>Dwells on possible ways of implementing integration with server side and describes various techniques that can be 
