@@ -2,7 +2,7 @@ copy
 =============
 
 @short:
-	makes a copy of item
+	makes a copy of an item
 
 @params:
 - sid		id		id of source item

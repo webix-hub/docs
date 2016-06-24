@@ -27,7 +27,7 @@ Events
 - api/link/ui.excelviewer_onbeforeareaadd_event.md - fires before a select area is added
 - api/link/ui.excelviewer_onbeforearearemove_event.md - fires before a select area is removed
 - api/link/ui.excelviewer_onbeforeblockselect_event.md - event occurs before block selection
-- api/link/ui.excelviewer_onbeforecolumndrag_event.md - fires the moment you start dragging the column from its source position
+- api/link/ui.excelviewer_onbeforecolumndrag_event.md - fires the monent you start dragging the column from its source potition
 - api/link/ui.excelviewer_onbeforecolumndrop_event.md - fires the moment you drop the column to its target position
 - api/link/ui.excelviewer_onbeforecolumndroporder_event.md - fires the moment you drop the column over the target area
 - api/link/ui.excelviewer_onbeforecolumnhide_event.md - fires before a column is hidden in datatable
@@ -51,11 +51,12 @@ Events
 - api/link/ui.excelviewer_oncheck_event.md - fires when a checkbox is checked or unchecked in the datatable item
 - api/link/ui.excelviewer_oncollectvalues_event.md - fires after datatable has collected options
 - api/link/ui.excelviewer_oncolumnresize_event.md - fires when width of column was changed
+- api/ui.excelviewer_oncolumnresizeaction_event.md - 
 - api/link/ui.excelviewer_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.excelviewer_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.excelviewer_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.excelviewer_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
-- api/link/ui.excelviewer_oneditorchange_event.md - 
+- api/link/ui.excelviewer_oneditorchange_event.md - fires when the native onchange event occurs for an HTML input (select, text)
 - api/link/ui.excelviewer_onfocus_event.md - fires when a view gets focus
 - api/link/ui.excelviewer_onheaderclick_event.md - occurs after clicking on header
 - api/link/ui.excelviewer_onitemclick_event.md - fires when a component item was clicked
@@ -139,6 +140,7 @@ Events
 - api/link/ui.excelviewer_oncheck_event.md
 - api/link/ui.excelviewer_oncollectvalues_event.md
 - api/link/ui.excelviewer_oncolumnresize_event.md
+- api/ui.excelviewer_oncolumnresizeaction_event.md
 - api/link/ui.excelviewer_ondatarequest_event.md
 - api/link/ui.excelviewer_ondataupdate_event.md
 - api/link/ui.excelviewer_ondestruct_event.md

@@ -16,7 +16,7 @@ Methods
 - api/link/ui.tree_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.tree_close.md - closes the branch with the specified id
 - api/link/ui.tree_closeall.md - closes all branches in the tree
-- api/link/ui.tree_copy.md - makes a copy of item
+- api/link/ui.tree_copy.md - makes a copy of an item
 - api/link/ui.tree_count.md - returns the number of currently visible items
 - api/link/ui.tree_customize.md - redefines the "type" property
 - api/link/ui.tree_define.md - redefines a single configuration property (or a hash of properties)

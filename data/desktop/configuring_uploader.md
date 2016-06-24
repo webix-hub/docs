@@ -64,7 +64,7 @@ webix.ui({
 
 ###During manual sending
 
-The above metioned code can be used for manual sending as well, but alternativaly you can provide extra as the second parameter 
+The above mentioned code can be used for manual sending as well, but alternativaly you can provide extra as the second parameter 
 of the [send](api/ui.uploader_send.md) method:
 
 ~~~js

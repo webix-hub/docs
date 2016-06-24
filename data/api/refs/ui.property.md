@@ -183,9 +183,9 @@ var property = webix.ui({
 - api/link/ui.property_name_other.md - indicates the name of the component (a read-only property)
 - api/link/ui.property_on_click_other.md - redefines default click behavior for component items.
 - api/link/ui.property_on_context_other.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
-- api/link/ui.property_on_dblclick_other.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.property_on_dblclick_other.md - attaches a dblclick behavior for component items with the specified CSS class
 - api/ui.property_on_edit_other.md - set of flags, defines which types are editable
-- api/link/ui.property_on_mouse_move_other.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.property_on_mouse_move_other.md - attaches a mouse move behavior for component items with the specified CSS class
 - api/ui.property_on_render_other.md - set of functions, for custom property types
 - api/link/ui.property_type_other.md - currently used set of helpers for view rendering
 }}

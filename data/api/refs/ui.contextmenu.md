@@ -290,7 +290,7 @@ var contextmenu = webix.ui({
 - api/link/ui.contextmenu_$dragmark_other.md - method called during dnd when some item in the component need to be marked as active drop target
 - api/link/ui.contextmenu_$dragout_other.md - method called when item moved out of possible drop landing during dnd
 - api/link/ui.contextmenu_$drop_other.md - method called when item dragged and dropped on valid target
-- api/link/ui.contextmenu_$dropallow_other.md - can be redefine if you need custom drop rules
+- api/link/ui.contextmenu_$dropallow_other.md - can be redefined, if you need custom drop rules
 - api/link/ui.contextmenu_$getsize_other.md - returns the current size of the component
 - api/link/ui.contextmenu_$height_other.md - current height of the view
 - api/link/ui.contextmenu_$scope_other.md - scope for resolving event and method names
@@ -302,8 +302,8 @@ var contextmenu = webix.ui({
 - api/link/ui.contextmenu_name_other.md - indicates the name of the component (a read-only property)
 - api/link/ui.contextmenu_on_click_other.md - redefines default click behavior for component items.
 - api/link/ui.contextmenu_on_context_other.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
-- api/link/ui.contextmenu_on_dblclick_other.md - attaches a dblclick behavior for component items with the specified CSS class.
-- api/link/ui.contextmenu_on_mouse_move_other.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.contextmenu_on_dblclick_other.md - attaches a dblclick behavior for component items with the specified CSS class
+- api/link/ui.contextmenu_on_mouse_move_other.md - attaches a mouse move behavior for component items with the specified CSS class
 - api/link/ui.contextmenu_type_other.md - set of properties and helpers for item rendering
 - api/link/ui.contextmenu_types_other.md - collection of possible types
 }}

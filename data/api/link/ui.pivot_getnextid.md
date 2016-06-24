@@ -1,0 +1,1 @@
+@link: api/datastore_getnextid.md

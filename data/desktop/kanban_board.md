@@ -1,6 +1,22 @@
 Kanban Board
 ==============
 
+API Reference
+---------------
+
+- [Methods, properties and events](api/refs/ui.kanban.md)
+
+
+<div class="h2">External resources</div>
+
+
+- You can [download Kanban Board](http://webix.com/kanban/download.html) from [http://webix.com/kanban/](http://webix.com/kanban/)
+- There are online samples at [docs.webix.com/samples](http://docs.webix.com/samples/63_kanban/index.html)
+
+
+Overview
+----------
+
 Webix Kanban board is a tool that is intended for viewing work in progress and controlling the flow of work.  
 With this widget, your team will be aware of what each of the members should be working on. 
 
@@ -10,6 +26,8 @@ Fully written in JavaScript and CSS this component can be integrated in any web 
 <br>
 <img style="display:block; margin-left:auto;margin-right:auto;" src="kanban/kanban_front.png"/>
 
+
+<div class="h2">Guides</div>
 
 <table  style='border-left:none !important;' cellspacing="0" cellpadding="5" border="0">
 	<tbody>
@@ -37,7 +55,6 @@ Fully written in JavaScript and CSS this component can be integrated in any web 
                 <li>kanban/work_with_data.md</li>
                 <li>kanban/editing_items.md</li>
                 <li>kanban/events.md</li>
-                <li>kanban/api_reference.md</li>
                 <li>kanban/howto.md</li>
             </ul>
 		</td>
@@ -47,6 +64,7 @@ Fully written in JavaScript and CSS this component can be integrated in any web 
 </table>
 
 @index:
+
 - kanban/kanban_init.md
 - kanban/loading_data.md
 - kanban/templates.md
@@ -55,5 +73,4 @@ Fully written in JavaScript and CSS this component can be integrated in any web 
 - kanban/work_with_data.md
 - kanban/editing_items.md
 - kanban/events.md
-- kanban/api_reference.md
 - kanban/howto.md

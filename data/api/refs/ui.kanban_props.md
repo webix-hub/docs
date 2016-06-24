@@ -1,0 +1,84 @@
+Properties
+==========
+
+{{api
+- api/link/ui.kanban_animate_config.md - defines or disables view change animation.
+- api/link/ui.kanban_borderless_config.md - used to hide the component borders
+- api/link/ui.kanban_collapsed_config.md - 'says' to display initially all accordion cells collapsed
+- api/link/ui.kanban_cols_config.md - array of views objects arranged horizontally
+- api/link/ui.kanban_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.kanban_css_config.md - the name of a css class that will be applied to the view container
+- api/link/ui.kanban_data_config.md - JavaScript array containing data for the component
+- api/link/ui.kanban_datafeed_config.md - the URL that the component will use to reload data during binding
+- api/link/ui.kanban_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
+- api/link/ui.kanban_datatype_config.md - the type of loaded data
+- api/link/ui.kanban_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.kanban_gravity_config.md - sets the view gravity (1 by default)
+- api/link/ui.kanban_height_config.md - sets the height of the component
+- api/link/ui.kanban_hidden_config.md - defines whether the view will be hidden initially
+- api/link/ui.kanban_id_config.md - the component ID
+- api/link/ui.kanban_isolate_config.md - masks IDs of all inner element
+- api/ui.kanban_listfilter_config.md - a filter for items: defines which items will be included in a certain list
+- api/link/ui.kanban_margin_config.md - defines the space around elements (applies the specified value to all elements)
+- api/link/ui.kanban_maxheight_config.md - sets the maximum height for the view
+- api/link/ui.kanban_maxwidth_config.md - sets the maximum width for the view
+- api/link/ui.kanban_minheight_config.md - sets the minimal height for the view
+- api/link/ui.kanban_minwidth_config.md - sets the minimal width for the view
+- api/link/ui.kanban_multi_config.md - enables/disables mode when several panels can be visible at once
+- api/link/ui.kanban_on_config.md - allows attaching custom handlers to inner events of the component
+- api/link/ui.kanban_padding_config.md - defines the space between the element borders and content (applies the specified value to all sides).
+- api/link/ui.kanban_paddingx_config.md - sets the right and left padding (applies the specified value to both sides)
+- api/link/ui.kanban_paddingy_config.md - sets the top and bottom padding (applies the specified value to both sides)
+- api/link/ui.kanban_panelclass_config.md - returns the name of a css class applied to the accordion panels
+- api/link/ui.kanban_ready_config.md - event handler called just after the component has been completely initialized
+- api/link/ui.kanban_removemissed_config.md - defines how to treat items in case of reloading
+- api/link/ui.kanban_responsive_config.md - enables responsive mode for horizontal layout
+- api/link/ui.kanban_rows_config.md - array of views objects arranged vertically
+- api/link/ui.kanban_save_config.md - defines URLs for data saving
+- api/link/ui.kanban_scheme_config.md - defines schemes for data processing
+- api/link/ui.kanban_type_config.md - defines the layout borders
+- api/link/ui.kanban_url_config.md - the URL which the component will use to load data after its initialization
+- api/link/ui.kanban_visiblebatch_config.md - sets the batch that will be shown initially
+- api/link/ui.kanban_width_config.md - sets the width of the component
+}}
+
+@index:
+- api/link/ui.kanban_animate_config.md
+- api/link/ui.kanban_borderless_config.md
+- api/link/ui.kanban_collapsed_config.md
+- api/link/ui.kanban_cols_config.md
+- api/link/ui.kanban_container_config.md
+- api/link/ui.kanban_css_config.md
+- api/link/ui.kanban_data_config.md
+- api/link/ui.kanban_datafeed_config.md
+- api/link/ui.kanban_datathrottle_config.md
+- api/link/ui.kanban_datatype_config.md
+- api/link/ui.kanban_disabled_config.md
+- api/link/ui.kanban_gravity_config.md
+- api/link/ui.kanban_height_config.md
+- api/link/ui.kanban_hidden_config.md
+- api/link/ui.kanban_id_config.md
+- api/link/ui.kanban_isolate_config.md
+- api/ui.kanban_listfilter_config.md
+- api/link/ui.kanban_margin_config.md
+- api/link/ui.kanban_maxheight_config.md
+- api/link/ui.kanban_maxwidth_config.md
+- api/link/ui.kanban_minheight_config.md
+- api/link/ui.kanban_minwidth_config.md
+- api/link/ui.kanban_multi_config.md
+- api/link/ui.kanban_on_config.md
+- api/link/ui.kanban_padding_config.md
+- api/link/ui.kanban_paddingx_config.md
+- api/link/ui.kanban_paddingy_config.md
+- api/link/ui.kanban_panelclass_config.md
+- api/link/ui.kanban_ready_config.md
+- api/link/ui.kanban_removemissed_config.md
+- api/link/ui.kanban_responsive_config.md
+- api/link/ui.kanban_rows_config.md
+- api/link/ui.kanban_save_config.md
+- api/link/ui.kanban_scheme_config.md
+- api/link/ui.kanban_type_config.md
+- api/link/ui.kanban_url_config.md
+- api/link/ui.kanban_visiblebatch_config.md
+- api/link/ui.kanban_width_config.md
+

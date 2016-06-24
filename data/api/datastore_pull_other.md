@@ -39,8 +39,10 @@ $$("myList").parse(listData,"json");
 ~~~
 
 ~~~js
-$$("myList").data.pull; //-> { {id:"1", name:"Emma", age:62},{id:"2", name:"Emily", age:43} }
+$$("myList").data.pull; 
+//-> { {id:"1", name:"Emma", age:62},{id:"2", name:"Emily", age:43} }
  
 $$("myList").filter(function(obj){ return obj.age > 50;});
-$$("myList").data.pull; //-> { {id:"1", name:"Emma", age:62},{id:"2", name:"Emily", age:43} }
+$$("myList").data.pull; 
+//-> { {id:"1", name:"Emma", age:62},{id:"2", name:"Emily", age:43} }
 ~~~

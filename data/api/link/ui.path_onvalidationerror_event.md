@@ -1,0 +1,1 @@
+@link: api/validatecollection_onvalidationerror_event.md

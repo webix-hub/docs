@@ -1,0 +1,1 @@
+@link: api/renderstack_onbeforerender_event.md

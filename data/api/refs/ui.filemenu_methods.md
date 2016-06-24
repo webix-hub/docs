@@ -1,0 +1,195 @@
+Methods
+=======
+
+{{api
+- api/link/ui.filemenu_add.md - adds an item to the store
+- api/link/ui.filemenu_addcss.md - applied CSS class to a component item
+- api/link/ui.filemenu_adjust.md - adjusts the component to the size of the parent HTML container
+- api/link/ui.filemenu_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.filemenu_attachto.md - attaches a context menu to a Webix component
+- api/link/ui.filemenu_bind.md - binds components
+- api/link/ui.filemenu_blockevent.md - temporarily blocks triggering of ALL events of the calling object
+- api/link/ui.filemenu_callevent.md - calls an inner event
+- api/link/ui.filemenu_clearall.md - removes all items from the component
+- api/link/ui.filemenu_clearcss.md - removes css class from all items
+- api/link/ui.filemenu_clearvalidation.md - removes all validation marks from the component
+- api/link/ui.filemenu_close.md - removes a window
+- api/link/ui.filemenu_copy.md - copies an item to the same or another object
+- api/link/ui.filemenu_count.md - returns the number of currently visible items
+- api/link/ui.filemenu_customize.md - redefines the "type" property
+- api/link/ui.filemenu_define.md - redefines a single configuration property (or a hash of properties)
+- api/link/ui.filemenu_destructor.md - destructs the calling object
+- api/link/ui.filemenu_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
+- api/link/ui.filemenu_disable.md - disables the calling view (makes it dimmed and unclickable)
+- api/link/ui.filemenu_disableitem.md - disables menu item
+- api/link/ui.filemenu_enable.md - enables the calling view that was disabled by the 'disable' method
+- api/link/ui.filemenu_enableitem.md - enables menu item
+- api/link/ui.filemenu_exists.md - checks whether an item with the specified id exists
+- api/link/ui.filemenu_filter.md - filters the component
+- api/link/ui.filemenu_find.md - returns rows that match the criterion
+- api/link/ui.filemenu_getbody.md - gets the ui view of the window body
+- api/link/ui.filemenu_getchildviews.md - returns child views of the calling component
+- api/link/ui.filemenu_getcontext.md - gets the master area for contextmenu
+- api/link/ui.filemenu_getfirstid.md - returns the ID of the first item
+- api/link/ui.filemenu_getformview.md - returns master form for the input
+- api/link/ui.filemenu_gethead.md - gets the ui view of the window header
+- api/link/ui.filemenu_getidbyindex.md - returns the id of the item with the specified index
+- api/link/ui.filemenu_getindexbyid.md - returns the index of the item with the specified id
+- api/link/ui.filemenu_getitem.md - gets the object of the data item with the specified id
+- api/link/ui.filemenu_getitemnode.md - returns HTML element of the item
+- api/link/ui.filemenu_getlastid.md - returns the id of the last item
+- api/link/ui.filemenu_getmenu.md - gets object of a menu/submenu where an item is located
+- api/link/ui.filemenu_getmenuitem.md - search for menu item in submenus
+- api/link/ui.filemenu_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
+- api/link/ui.filemenu_getnode.md - returns the main HTML container for the calling object
+- api/link/ui.filemenu_getpage.md - returns the currently visible page in case of paged view
+- api/link/ui.filemenu_getpager.md - returns the pager object associated with the component
+- api/link/ui.filemenu_getparentview.md - returns the parent view of the component
+- api/link/ui.filemenu_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
+- api/link/ui.filemenu_getscrollstate.md - returns the scroll position
+- api/link/ui.filemenu_getselectedid.md - returns the id(s) of the selected item(s)
+- api/link/ui.filemenu_getselecteditem.md - returns selected object
+- api/link/ui.filemenu_getsubmenu.md - gets the submenu object of a menu item (if any)
+- api/link/ui.filemenu_gettopmenu.md - returns top menu object
+- api/link/ui.filemenu_gettopparentview.md - returns top parent view
+- api/link/ui.filemenu_getvisiblecount.md - returns the number of items that can be seen with the current view height
+- api/link/ui.filemenu_hascss.md - checks if item has specific css class
+- api/link/ui.filemenu_hasevent.md - checks whether the component has the specified event
+- api/link/ui.filemenu_hide.md - hides the view
+- api/link/ui.filemenu_hideitem.md - hides menu item
+- api/link/ui.filemenu_isenabled.md - checks whether the view is enabled
+- api/link/ui.filemenu_isselected.md - checks whether the specified item is selected or not
+- api/link/ui.filemenu_isvisible.md - checks whether the view is visible
+- api/link/ui.filemenu_load.md - loads data from an external data source.
+- api/link/ui.filemenu_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
+- api/link/ui.filemenu_locate.md - gets the id of an item from the specified HTML event
+- api/link/ui.filemenu_mapevent.md - routes events from one object to another
+- api/link/ui.filemenu_move.md - moves the specified item to the new position
+- api/link/ui.filemenu_movebottom.md - moves the specified item to the last position
+- api/link/ui.filemenu_movedown.md - increases the item index and moves the item to the new position
+- api/link/ui.filemenu_moveselection.md - moves selection in the specified direction
+- api/link/ui.filemenu_movetop.md - moves the specified item to the first position
+- api/link/ui.filemenu_moveup.md - decreases the item index and moves the item to the new position
+- api/link/ui.filemenu_parse.md - loads data to the component from an inline data source
+- api/link/ui.filemenu_refresh.md - repaints the whole view or a certain item
+- api/link/ui.filemenu_remove.md - removes the specified item/items from datastore
+- api/link/ui.filemenu_removecss.md - removes CSS class from a component item
+- api/link/ui.filemenu_render.md - renders the specified item or the whole component
+- api/link/ui.filemenu_resize.md - adjusts the view to a new size
+- api/link/ui.filemenu_resizechildren.md - resizes all children of the calling component
+- api/link/ui.filemenu_scrollto.md - scrolls the data container to a certain position
+- api/link/ui.filemenu_select.md - selects the specified item(s)
+- api/link/ui.filemenu_selectall.md - selects all items or the specified range
+- api/link/ui.filemenu_serialize.md - serializes data to a JSON object
+- api/link/ui.filemenu_setcontext.md - allows settings master properties: view object and item id
+- api/link/ui.filemenu_setpage.md - makes the specified page visible (assuming that the pager was defined )
+- api/link/ui.filemenu_setposition.md - sets window's position
+- api/link/ui.filemenu_show.md - makes the component visible
+- api/link/ui.filemenu_showitem.md - scrolls the component to make the specified item visible
+- api/link/ui.filemenu_sizetocontent.md - adjusts the size of menu and its submenus to their content
+- api/link/ui.filemenu_sort.md - sorts datastore
+- api/link/ui.filemenu_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.filemenu_unbind.md - breaks "bind" link
+- api/link/ui.filemenu_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
+- api/link/ui.filemenu_unselect.md - removes selection from the specified item
+- api/link/ui.filemenu_unselectall.md - removes selection from all items
+- api/link/ui.filemenu_updateitem.md - sets properties of the data item
+- api/link/ui.filemenu_validate.md - validates one record or all dataset against validation rules
+}}
+
+@index:
+- api/link/ui.filemenu_add.md
+- api/link/ui.filemenu_addcss.md
+- api/link/ui.filemenu_adjust.md
+- api/link/ui.filemenu_attachevent.md
+- api/link/ui.filemenu_attachto.md
+- api/link/ui.filemenu_bind.md
+- api/link/ui.filemenu_blockevent.md
+- api/link/ui.filemenu_callevent.md
+- api/link/ui.filemenu_clearall.md
+- api/link/ui.filemenu_clearcss.md
+- api/link/ui.filemenu_clearvalidation.md
+- api/link/ui.filemenu_close.md
+- api/link/ui.filemenu_copy.md
+- api/link/ui.filemenu_count.md
+- api/link/ui.filemenu_customize.md
+- api/link/ui.filemenu_define.md
+- api/link/ui.filemenu_destructor.md
+- api/link/ui.filemenu_detachevent.md
+- api/link/ui.filemenu_disable.md
+- api/link/ui.filemenu_disableitem.md
+- api/link/ui.filemenu_enable.md
+- api/link/ui.filemenu_enableitem.md
+- api/link/ui.filemenu_exists.md
+- api/link/ui.filemenu_filter.md
+- api/link/ui.filemenu_find.md
+- api/link/ui.filemenu_getbody.md
+- api/link/ui.filemenu_getchildviews.md
+- api/link/ui.filemenu_getcontext.md
+- api/link/ui.filemenu_getfirstid.md
+- api/link/ui.filemenu_getformview.md
+- api/link/ui.filemenu_gethead.md
+- api/link/ui.filemenu_getidbyindex.md
+- api/link/ui.filemenu_getindexbyid.md
+- api/link/ui.filemenu_getitem.md
+- api/link/ui.filemenu_getitemnode.md
+- api/link/ui.filemenu_getlastid.md
+- api/link/ui.filemenu_getmenu.md
+- api/link/ui.filemenu_getmenuitem.md
+- api/link/ui.filemenu_getnextid.md
+- api/link/ui.filemenu_getnode.md
+- api/link/ui.filemenu_getpage.md
+- api/link/ui.filemenu_getpager.md
+- api/link/ui.filemenu_getparentview.md
+- api/link/ui.filemenu_getprevid.md
+- api/link/ui.filemenu_getscrollstate.md
+- api/link/ui.filemenu_getselectedid.md
+- api/link/ui.filemenu_getselecteditem.md
+- api/link/ui.filemenu_getsubmenu.md
+- api/link/ui.filemenu_gettopmenu.md
+- api/link/ui.filemenu_gettopparentview.md
+- api/link/ui.filemenu_getvisiblecount.md
+- api/link/ui.filemenu_hascss.md
+- api/link/ui.filemenu_hasevent.md
+- api/link/ui.filemenu_hide.md
+- api/link/ui.filemenu_hideitem.md
+- api/link/ui.filemenu_isenabled.md
+- api/link/ui.filemenu_isselected.md
+- api/link/ui.filemenu_isvisible.md
+- api/link/ui.filemenu_load.md
+- api/link/ui.filemenu_loadnext.md
+- api/link/ui.filemenu_locate.md
+- api/link/ui.filemenu_mapevent.md
+- api/link/ui.filemenu_move.md
+- api/link/ui.filemenu_movebottom.md
+- api/link/ui.filemenu_movedown.md
+- api/link/ui.filemenu_moveselection.md
+- api/link/ui.filemenu_movetop.md
+- api/link/ui.filemenu_moveup.md
+- api/link/ui.filemenu_parse.md
+- api/link/ui.filemenu_refresh.md
+- api/link/ui.filemenu_remove.md
+- api/link/ui.filemenu_removecss.md
+- api/link/ui.filemenu_render.md
+- api/link/ui.filemenu_resize.md
+- api/link/ui.filemenu_resizechildren.md
+- api/link/ui.filemenu_scrollto.md
+- api/link/ui.filemenu_select.md
+- api/link/ui.filemenu_selectall.md
+- api/link/ui.filemenu_serialize.md
+- api/link/ui.filemenu_setcontext.md
+- api/link/ui.filemenu_setpage.md
+- api/link/ui.filemenu_setposition.md
+- api/link/ui.filemenu_show.md
+- api/link/ui.filemenu_showitem.md
+- api/link/ui.filemenu_sizetocontent.md
+- api/link/ui.filemenu_sort.md
+- api/link/ui.filemenu_sync.md
+- api/link/ui.filemenu_unbind.md
+- api/link/ui.filemenu_unblockevent.md
+- api/link/ui.filemenu_unselect.md
+- api/link/ui.filemenu_unselectall.md
+- api/link/ui.filemenu_updateitem.md
+- api/link/ui.filemenu_validate.md
+
+

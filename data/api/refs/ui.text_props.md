@@ -19,13 +19,13 @@ Properties
 - api/link/ui.text_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/ui.text_icon_config.md - sets an icon into the control
 - api/link/ui.text_id_config.md - the component ID
-- api/ui.text_inputalign_config.md - 
+- api/ui.text_inputalign_config.md - the alignment of an input towards its container
 - api/link/ui.text_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/ui.text_inputpadding_config.md - padding of text in the input
 - api/link/ui.text_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/ui.text_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.text_label_config.md - the text label of the control
-- api/ui.text_labelalign_config.md - 
+- api/ui.text_labelalign_config.md - the alignment of a label towards its container
 - api/link/ui.text_labelposition_config.md - positions label in relation to the control
 - api/ui.text_labelwidth_config.md - the width of the label
 - api/link/ui.text_maxheight_config.md - sets the maximum height for the view

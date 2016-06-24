@@ -214,7 +214,7 @@ var treetable = webix.ui({
 - api/link/ui.treetable_onbeforearearemove_event.md - fires before a select area is removed
 - api/link/ui.treetable_onbeforeblockselect_event.md - event occurs before block selection
 - api/link/ui.treetable_onbeforeclose_event.md - fires the moment you attempt to close the tree branch
-- api/link/ui.treetable_onbeforecolumndrag_event.md - fires the moment you start dragging the column from its source position
+- api/link/ui.treetable_onbeforecolumndrag_event.md - fires the monent you start dragging the column from its source potition
 - api/link/ui.treetable_onbeforecolumndrop_event.md - fires the moment you drop the column to its target position
 - api/link/ui.treetable_onbeforecolumndroporder_event.md - fires the moment you drop the column over the target area
 - api/link/ui.treetable_onbeforecolumnhide_event.md - fires before a column is hidden in datatable
@@ -243,7 +243,7 @@ var treetable = webix.ui({
 - api/link/ui.treetable_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.treetable_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.treetable_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
-- api/link/ui.treetable_oneditorchange_event.md - 
+- api/link/ui.treetable_oneditorchange_event.md - fires when the native onchange event occurs for an HTML input (select, text)
 - api/link/ui.treetable_onfocus_event.md - fires when a view gets focus
 - api/link/ui.treetable_onheaderclick_event.md - occurs after clicking on header
 - api/link/ui.treetable_onitemcheck_event.md - fires when you check an item in tree and treetable
@@ -383,7 +383,7 @@ var treetable = webix.ui({
 - api/link/ui.treetable_$dragmark_other.md - method called during dnd when some item in the component need to be marked as active drop target
 - api/link/ui.treetable_$dragout_other.md - method called when item moved out of possible drop landing during dnd
 - api/link/ui.treetable_$drop_other.md - method called when item dragged and dropped on valid target
-- api/link/ui.treetable_$dropallow_other.md - can be redefine if you need custom drop rules
+- api/link/ui.treetable_$dropallow_other.md - can be redefined, if you need custom drop rules
 - api/link/ui.treetable_$getsize_other.md - returns the current size of the component
 - api/link/ui.treetable_$height_other.md - current height of the view
 - api/link/ui.treetable_$scope_other.md - scope for resolving event and method names
@@ -396,8 +396,8 @@ var treetable = webix.ui({
 - api/link/ui.treetable_name_other.md - indicates the name of the component (a read-only property)
 - api/link/ui.treetable_on_click_other.md - redefines default click behavior for component items.
 - api/link/ui.treetable_on_context_other.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
-- api/link/ui.treetable_on_dblclick_other.md - attaches a dblclick behavior for component items with the specified CSS class.
-- api/link/ui.treetable_on_mouse_move_other.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.treetable_on_dblclick_other.md - attaches a dblclick behavior for component items with the specified CSS class
+- api/link/ui.treetable_on_mouse_move_other.md - attaches a mouse move behavior for component items with the specified CSS class
 - api/link/ui.treetable_waitdata_other.md - eventual result of an asynchronous operation ('promise' object) for the loaded data
 }}
 

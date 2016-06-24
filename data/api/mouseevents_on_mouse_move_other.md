@@ -2,7 +2,7 @@ on_mouse_move
 =============
 
 
-@short: attaches a dblclick behavior for component items with the specified CSS class. 
+@short: attaches a mouse move behavior for component items with the specified CSS class 
 
 @type: function
 
