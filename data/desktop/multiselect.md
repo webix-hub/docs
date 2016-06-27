@@ -10,7 +10,7 @@ Multiselect
 
 ##Overview
 
-UI-related multiselect is a non-editable select control that allows for selecting multiple options at a time while displaying them in the dedicated input field. 
+UI-related Multiselect is a non-editable select control that allows for selecting multiple options at a time while displaying them in the dedicated input field. 
 
 <img src="desktop/multiselect.png"/>
 
@@ -42,11 +42,12 @@ Multiselect inherits from a standard [richselect](desktop/richselect.md) and has
 - **placeholder** (string) - the initial text in the text field, disappears as you start typing in it;
 - **options** or **suggest** (array, object) - defines a set of items to select from, or the datasource, or [advanced popup configuration](desktop/advanced_combo.md);
 - **optionWidth** (number) - defines the width of a popup list. By default, it is adjusted to the control width;
-- **button** (boolean) - if set to true, defines that multiselect's popup will be closed by click on the Select button. The details on the button's configuration are given [below](#configuringsuggestlist).
+- **button** (boolean) - if set to true, defines that Multiselect popup will be closed by click on the Select button. The details on the button's configuration are given
+[below](#configuringsuggestlist).
 
 ##Configuring Suggest List
 
-Webix API allows for using another suggest list for the multiselect - [multisuggest](api/refs/ui.multisuggest.md): 
+Webix API allows for using another suggest list for the Multiselect - [Multisuggest](api/refs/ui.multisuggest.md): 
 
 <img src="desktop/multiselect_multisuggest.png"/>
 
@@ -63,7 +64,7 @@ webix.ui({
 
 The control's popup is supplied with a "select" button out of box, but it can be changed in two ways:
 
-- changing the [buttonText](api/ui.multisuggest_buttontext_config.md) property for a particular multisuggest list:
+- changing the [buttonText](api/ui.multisuggest_buttontext_config.md) property for a particular Multisuggest list:
 
 ~~~js
 {view:"multiselect", label:"Participant",options:{
@@ -72,14 +73,14 @@ The control's popup is supplied with a "select" button out of box, but it can be
 }}
 ~~~
 
-- modify the **locale** to change button text for all the multisuggests in the application (if other is not stated by **buttonText**, as shown above): 
+- modify the **locale** to change button text for all the Multisuggests in the application (if other is not stated by **buttonText**, as shown above): 
 
 ~~~js
 webix.i18n.controls.select = "Done";
 webix.i18n.setLocale(); //apply the locale
 ~~~
 
-Then all the multiselect instances in the app will be supplied with the "Done" word.
+Then all the Multiselect instances in the app will be supplied with the "Done" word.
 
 You can read more about advanced configuration options for popup selectors in the [corresponding documentation article](desktop/advanced_combo.md).
 
@@ -103,3 +104,5 @@ multiselect.getPopup().getList();
 ~~~
 
 @edition:pro
+
+@spellcheck:multisuggest
