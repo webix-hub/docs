@@ -4,7 +4,7 @@ date
 @short:
 	specifies the year and month that will be shown in the calendar after initialization
 
-@type: Date/string
+@type: Date, string
 @example:
 webix.ui({
 	weekHeader:true,

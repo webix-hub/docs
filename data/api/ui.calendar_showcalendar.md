@@ -5,7 +5,7 @@ showCalendar
 	shows the calendar according to the year and month set in the specified date 
 
 @params:
-- date		string/object		a Date object or a string representing a date
+- date		string, Date		a Date object or a string representing a date
 
 @example:
 webix.ui({

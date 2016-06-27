@@ -5,7 +5,7 @@ on
 @short:
 	allows attaching custom handlers to inner events of the component
 
-@type: object
+@type: EventHash
 @example:
 webix.ui({
 	view:"list", 
