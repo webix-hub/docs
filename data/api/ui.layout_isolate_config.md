@@ -2,7 +2,7 @@ isolate
 =======
 
 
-@short: masks IDs of all inner element
+@short: masks IDs of all inner elements
 	
 
 @type: boolean
@@ -40,7 +40,7 @@ webix.ui({
 ~~~
 
 In above code snippet there are two blocks which are using the same IDs, so there is no way to access the list by its ID directly.
-Because of isolate property - two elements with the same ID can exists , and can be located in the next way
+Because of isolate property - two elements with the same ID can exist and can be located in the next way:
 
 ~~~js
 //will not work

@@ -6,7 +6,7 @@ toExcel
 
 @params:
 
-- id			string,object			the exported view or its id
+- id			string/object			the exported view or its id
 - options		object					optional, a set of configuration options that define what data will be displayed in the Excel file
 
 @example:

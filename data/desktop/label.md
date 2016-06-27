@@ -26,7 +26,7 @@ Ui-related label is a non-scrollable placeholder for plain text. Like other comp
 - **inputWidth** (number) - defines the width of the control;
 - **align** (string) - positions the label with relation to the parent view.
 
-Label control can be used to render any user HTML or icons (as well as built-in in Webix FontAwesome icons):
+Label control can be used to render any user HTML or icons (as well as built-in in Webix Font Awesome icons):
 
 ~~~js
 { view:"label", label:"<span class='myCss'>My Label</span>"},
