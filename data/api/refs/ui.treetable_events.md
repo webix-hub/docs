@@ -30,7 +30,7 @@ Events
 - api/link/ui.treetable_onbeforearearemove_event.md - fires before a select area is removed
 - api/link/ui.treetable_onbeforeblockselect_event.md - event occurs before block selection
 - api/link/ui.treetable_onbeforeclose_event.md - fires the moment you attempt to close the tree branch
-- api/link/ui.treetable_onbeforecolumndrag_event.md - fires the monent you start dragging the column from its source potition
+- api/link/ui.treetable_onbeforecolumndrag_event.md - fires the moment you start dragging the column from its source position
 - api/link/ui.treetable_onbeforecolumndrop_event.md - fires the moment you drop the column to its target position
 - api/link/ui.treetable_onbeforecolumndroporder_event.md - fires the moment you drop the column over the target area
 - api/link/ui.treetable_onbeforecolumnhide_event.md - fires before a column is hidden in datatable

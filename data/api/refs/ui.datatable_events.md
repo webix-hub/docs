@@ -27,7 +27,7 @@ Events
 - api/ui.datatable_onbeforeareaadd_event.md - fires before a select area is added
 - api/ui.datatable_onbeforearearemove_event.md - fires before a select area is removed
 - api/ui.datatable_onbeforeblockselect_event.md - event occurs before block selection
-- api/ui.datatable_onbeforecolumndrag_event.md - fires the monent you start dragging the column from its source potition
+- api/ui.datatable_onbeforecolumndrag_event.md - fires the moment you start dragging the column from its source position
 - api/ui.datatable_onbeforecolumndrop_event.md - fires the moment you drop the column to its target position
 - api/ui.datatable_onbeforecolumndroporder_event.md - fires the moment you drop the column over the target area
 - api/ui.datatable_onbeforecolumnhide_event.md - fires before a column is hidden in datatable

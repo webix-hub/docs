@@ -27,7 +27,7 @@ Events
 - api/link/ui.excelviewer_onbeforeareaadd_event.md - fires before a select area is added
 - api/link/ui.excelviewer_onbeforearearemove_event.md - fires before a select area is removed
 - api/link/ui.excelviewer_onbeforeblockselect_event.md - event occurs before block selection
-- api/link/ui.excelviewer_onbeforecolumndrag_event.md - fires the monent you start dragging the column from its source potition
+- api/link/ui.excelviewer_onbeforecolumndrag_event.md - fires the moment you start dragging the column from its source position
 - api/link/ui.excelviewer_onbeforecolumndrop_event.md - fires the moment you drop the column to its target position
 - api/link/ui.excelviewer_onbeforecolumndroporder_event.md - fires the moment you drop the column over the target area
 - api/link/ui.excelviewer_onbeforecolumnhide_event.md - fires before a column is hidden in datatable

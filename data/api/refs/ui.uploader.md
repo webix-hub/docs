@@ -66,7 +66,7 @@ var uploader = webix.ui({
 - api/link/ui.uploader_setvalue.md - sets a new value for the component
 - api/link/ui.uploader_show.md - makes the component visible
 - api/ui.uploader_stopupload.md - cancel current upload
-- api/link/ui.uploader_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.uploader_sync.md - allows you to sync two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.uploader_unbind.md - breaks "bind" link
 - api/link/ui.uploader_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}
@@ -116,17 +116,16 @@ var uploader = webix.ui({
 - api/ui.uploader_datatype_config.md - the type of serverside response
 - api/link/ui.uploader_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.uploader_formdata_config.md - extra data that will be sent to server side along with the file uploading
-- api/ui.uploader_getvalue_config.md - returns the current value of the control
 - api/link/ui.uploader_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.uploader_height_config.md - sets the height of the component
 - api/link/ui.uploader_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.uploader_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/link/ui.uploader_id_config.md - the component ID
 - api/link/ui.uploader_inputheight_config.md - the height of the input area, or a button's text value area.
-- api/ui.uploader_inputname_config.md - name of the uploader input
+- api/ui.uploader_inputname_config.md - sets the name of the uploader input (the button to upload files)
 - api/link/ui.uploader_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.uploader_label_config.md - the text label of the control
-- api/ui.uploader_link_config.md - sets the component to display values of the files chosen for upload;
+- api/ui.uploader_link_config.md - sets the component to display values of the files chosen for upload
 - api/link/ui.uploader_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.uploader_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.uploader_minheight_config.md - sets the minimal height for the view

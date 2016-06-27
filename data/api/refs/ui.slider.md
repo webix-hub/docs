@@ -62,7 +62,7 @@ var slider = webix.ui({
 - api/link/ui.slider_setbottomtext.md - sets the input label at the bottom of it
 - api/link/ui.slider_setvalue.md - sets a new value for the component
 - api/link/ui.slider_show.md - makes the component visible
-- api/link/ui.slider_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.slider_sync.md - allows you to sync two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.slider_unbind.md - breaks "bind" link
 - api/link/ui.slider_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.slider_validate.md - validates value of input

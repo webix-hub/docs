@@ -2,7 +2,7 @@ ui.pivot
 =============
 
 
-{{memo A datatable with advanced filtering capabilities.. }}
+{{memo A datatable with advanced filtering capabilities. }}
 
 Webix Pivot allows quickly processing huge complex datasets and creating clear reports on their basis. 
 You can easily customize this component and proceed with comparing, filtering and sorting data - all within one table.
@@ -41,7 +41,7 @@ var pivot = webix.ui({
 
 {{api
 - api/link/ui.pivot_add.md - adds an item to the store
-- api/ui.pivot_addoperation.md - 
+- api/ui.pivot_addoperation.md - adds a custom data operation
 - api/link/ui.pivot_addview.md - add new view to layout-like component
 - api/link/ui.pivot_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.pivot_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)

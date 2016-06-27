@@ -74,7 +74,7 @@ webix.ui({
 - api/link/ui.tabbar_setvalue.md - sets a new value for the component
 - api/link/ui.tabbar_show.md - makes the component visible
 - api/link/ui.tabbar_showoption.md - shows a hidden option (segment) of the button
-- api/link/ui.tabbar_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.tabbar_sync.md - allows you to sync two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.tabbar_unbind.md - breaks "bind" link
 - api/link/ui.tabbar_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.tabbar_validate.md - validates value of input

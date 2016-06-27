@@ -13,7 +13,6 @@ var combo = webix.ui({
 	view:"combo", 
 	label: 'Combo',
 	value:"One", 
-	yCount:"3", 
 	options:["One", "Two", "Three"]
 });
 ~~~
@@ -62,7 +61,7 @@ var combo = webix.ui({
 - api/link/ui.combo_setbottomtext.md - sets the input label at the bottom of it
 - api/link/ui.combo_setvalue.md - sets a new value for the component
 - api/link/ui.combo_show.md - makes the component visible
-- api/link/ui.combo_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.combo_sync.md - allows you to sync two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.combo_unbind.md - breaks "bind" link
 - api/link/ui.combo_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.combo_validate.md - validates value of input

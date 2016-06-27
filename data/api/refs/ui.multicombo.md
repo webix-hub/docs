@@ -70,7 +70,7 @@ var multicombo = webix.ui({
 - api/link/ui.multicombo_setbottomtext.md - sets the input label at the bottom of it
 - api/link/ui.multicombo_setvalue.md - sets a new value for the component
 - api/link/ui.multicombo_show.md - makes the component visible
-- api/link/ui.multicombo_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.multicombo_sync.md - allows you to sync two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.multicombo_unbind.md - breaks "bind" link
 - api/link/ui.multicombo_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.multicombo_validate.md - validates value of input
@@ -121,7 +121,6 @@ var multicombo = webix.ui({
 - api/link/ui.multicombo_height_config.md - sets the height of the component
 - api/link/ui.multicombo_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.multicombo_hotkey_config.md - sets a hotkey that triggers button clicking
-- api/ui.multicombo_iconwidth_config.md - sets icon width
 - api/link/ui.multicombo_id_config.md - the component ID
 - api/link/ui.multicombo_inputalign_config.md - the alignment of an input towards its container
 - api/link/ui.multicombo_inputheight_config.md - the height of the input area, or a button's text value area.

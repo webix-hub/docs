@@ -37,7 +37,7 @@ Methods
 - api/link/ui.segmented_setvalue.md - sets a new value for the component
 - api/link/ui.segmented_show.md - makes the component visible
 - api/ui.segmented_showoption.md - shows a hidden option (segment) of the button
-- api/link/ui.segmented_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.segmented_sync.md - allows you to sync two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.segmented_unbind.md - breaks "bind" link
 - api/link/ui.segmented_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.segmented_validate.md - validates value of input

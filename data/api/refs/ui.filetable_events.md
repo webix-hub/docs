@@ -27,7 +27,7 @@ Events
 - api/link/ui.filetable_onbeforeareaadd_event.md - fires before a select area is added
 - api/link/ui.filetable_onbeforearearemove_event.md - fires before a select area is removed
 - api/link/ui.filetable_onbeforeblockselect_event.md - event occurs before block selection
-- api/link/ui.filetable_onbeforecolumndrag_event.md - fires the monent you start dragging the column from its source potition
+- api/link/ui.filetable_onbeforecolumndrag_event.md - fires the moment you start dragging the column from its source position
 - api/link/ui.filetable_onbeforecolumndrop_event.md - fires the moment you drop the column to its target position
 - api/link/ui.filetable_onbeforecolumndroporder_event.md - fires the moment you drop the column over the target area
 - api/link/ui.filetable_onbeforecolumnhide_event.md - fires before a column is hidden in datatable

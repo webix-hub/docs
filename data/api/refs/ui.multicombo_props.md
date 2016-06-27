@@ -18,7 +18,6 @@ Properties
 - api/link/ui.multicombo_height_config.md - sets the height of the component
 - api/link/ui.multicombo_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.multicombo_hotkey_config.md - sets a hotkey that triggers button clicking
-- api/ui.multicombo_iconwidth_config.md - sets icon width
 - api/link/ui.multicombo_id_config.md - the component ID
 - api/link/ui.multicombo_inputalign_config.md - the alignment of an input towards its container
 - api/link/ui.multicombo_inputheight_config.md - the height of the input area, or a button's text value area.
@@ -76,7 +75,6 @@ Properties
 - api/link/ui.multicombo_height_config.md
 - api/link/ui.multicombo_hidden_config.md
 - api/link/ui.multicombo_hotkey_config.md
-- api/ui.multicombo_iconwidth_config.md
 - api/link/ui.multicombo_id_config.md
 - api/link/ui.multicombo_inputalign_config.md
 - api/link/ui.multicombo_inputheight_config.md
