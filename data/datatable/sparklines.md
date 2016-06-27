@@ -44,15 +44,15 @@ Sparklines Types
 There are six types of Sparklines representation available:
 
 - Line - the default one
-- Area
-- Bar
-- Spline
-- SplineArea
-- Pie
+- <a href="#area">Area</a>
+- <a href="#bar">Bar</a>
+- <a href="#spline">Spline</a>
+- <a href="#splinearea">SplineArea</a>
+- <a href="#pie">Pie</a>
 
 To specify the sparklines type different from the default one, use the webix.Sparklines.getTemplate("type_name") method.
 
-###Area Sparklines
+<h3 id="area">Area Sparklines</h3>
 
 <img src="datatable/area_sparklines.png">
 
@@ -67,7 +67,7 @@ To specify the sparklines type different from the default one, use the webix.Spa
 
 {{sample 60_pro/01_datatable/08_sparklines/02_area.html}}
 
-###Bar Sparklines
+<h3 id="bar">Bar Sparklines</h3>
 
 <img src="datatable/bar_sparklines.png">
 
@@ -83,7 +83,7 @@ To specify the sparklines type different from the default one, use the webix.Spa
 
 {{sample 60_pro/01_datatable/08_sparklines/03_bars.html}}
 
-###Spline Sparklines
+<h3 id="spline">Spline Sparklines</h3>
 
 <img src="datatable/spline_sparklines.png">
 
@@ -98,7 +98,7 @@ To specify the sparklines type different from the default one, use the webix.Spa
 
 {{sample 60_pro/01_datatable/08_sparklines/04_spline.html}}
 
-###SplineArea Sparklines
+<h3 id="splinearea">SplineArea Sparklines</h3>
 
 <img src="datatable/spline_area_sparklines.png">
 
@@ -113,7 +113,7 @@ To specify the sparklines type different from the default one, use the webix.Spa
 
 {{sample 60_pro/01_datatable/08_sparklines/05_splinearea.html}}
 
-###Pie Sparklines
+<h3 id="pie">Pie Sparklines</h3>
 
 <img src="datatable/pie_sparklines.png">
 
@@ -131,9 +131,39 @@ To specify the sparklines type different from the default one, use the webix.Spa
 Sparklines Tooltips
 --------------------
 
-You can specify tooltips for datatable values. They will appear when the user will move the mouse pointer over the sparklines points.
+You can specify tooltips for sparklines values in datatable. They will appear when the user will move the mouse pointer over the sparklines items (bars, sectors).
+
+Sparklines tooltip is set via the "tooltip" template. The template function takes a data item of Sparkline as the first parameter.
+
 
 <img src="datatable/sparklines_tooltips.png">
+
+~~~js
+webix.ui({    
+    view:"datatable",
+    columns:[
+   	 {
+   		 id:"values", header:"Values", template: "{common.sparklines()}",
+   		 tooltip: function(obj, common, value, index){
+   			if(!value)
+   			 	return "";
+   			 return obj.name+",<br/>"+value.month+" : <b>"+value.value+"</b>";
+   		 }
+   	 },
+   	 ...
+    ],
+    tooltip: true,
+    ...
+    data: [
+   	 {id: 1, name: "Austria", values: [
+   		 {value: 2000, month: "January"},
+   		 {value: 1000, month: "February"},
+   		 {value: 3000, month: "March"}
+   	 ]},
+   	 ...
+    ]
+});
+~~~
 
 {{sample 60_pro/01_datatable/08_sparklines/07_tooltips.html}}
 
@@ -173,16 +203,33 @@ negativeColor:"#da4400" });
 }
 ~~~
 
+<h3 id="neg_color">Negative color option for Bar sparklines</h3>
+
+You can set a certain color for a negative value while rendering a Bar sparkline.
+It is set by the negativeColor property:
+
+~~~js
+{ 
+	id:"income", 
+    header:"Negative color", 
+    template: webix.Sparklines.getTemplate({type:"bar", color: "#FF0000"}),
+      width:200
+}
+~~~
 
 <img src="datatable/sparklines_colors.png">
 
 {{sample 60_pro/01_datatable/08_sparklines/08_colors.html}}
 
 
-Sparklines outside of DataTable
+Sparklines Outside of DataTable
 ------------------
 
-You can also use sparklines separately, not just in datatable cells. For example, you can place them into the List view with the help of the api/link/ui.list_template_config.md property:
+You can also use sparklines separately, not just in datatable cells. For example, you can place them into the List view: 
+
+<img src="datatable/sparklines_outside_datatable.png">
+
+Use the api/link/ui.list_template_config.md property for this purpose:
 
 ~~~js
 var bar1 = webix.Sparklines.getTemplate({type:"bar", color: "#5868bf"});
@@ -208,7 +255,7 @@ webix.ui({
 })
 ~~~
 
-<img src="datatable/sparklines_outside_datatable.png">
+
 
 {{sample 60_pro/01_datatable/08_sparklines/09_outside.html}}
 

@@ -12,9 +12,16 @@ webix.ui({
 	...
 });
 
+// define the size of area where resizing can start
+webix.ui({
+    view:"datatable",
+    resizeRow:{size:6},
+    ...
+});
+
 @template:	api_config	
 @related:
-    datatable/columns_configuration.md
+    datatable/sizing.md#resizing
 @relatedapi:
 	api/ui.datatable_resizecolumn_config.md
 @descr:

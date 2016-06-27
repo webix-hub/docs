@@ -85,6 +85,30 @@ $$("calendar1").getValue(); // returns the non-formatted date object
                             // -> Mon Apr 30 2012 00:00:00 GMT+0300 (EEST)
 ~~~
 
+##Month and Year Types
+
+You can specify the modes in which only months or only years will be displayed in the Calendar:
+
+<img src="desktop/month_year_calendar.png">
+
+To set one of these modes, use the *type* property:
+
+~~~js
+webix.ui({   
+	date:new Date(2016,1,16),
+	view:"calendar",
+	type: "month"
+});
+
+webix.ui({
+    date:new Date(2016,3,16, 8, 10),
+    view:"calendar",
+    type:"year"
+});
+~~~
+
+{{sample 09_calendar/12_month_year.html}}
+
 ##Datepicker 
 
 Calendar can be displayed on customer request, for instance when a user wants to pick a date and time to fill the form. For these needs a **[datepicker](desktop/datepicker.md)** control
@@ -102,6 +126,34 @@ webix.ui({
 });
 ~~~
 {{sample 09_calendar/06_datepicker.html }}
+
+###Month and Year Types
+
+Datepicker can be shown in the month or year mode as well as calendar:
+
+<img src="desktop/datepicker_month.png"/>
+
+~~~js
+webix.ui({
+	view:"toolbar", 
+	elements:[
+	    {view:"datepicker", align: "right",label: 'Select Date', type:"month"} 
+	]}
+);
+~~~
+
+<img src="desktop/datepicker_year.png"/>
+
+~~~js
+webix.ui({
+	view:"toolbar", 
+	elements:[
+	    {view:"datepicker", align: "right",label: 'Select Date', type:"year"} 
+	]}
+);
+~~~
+
+
 
 ##Time Selector in Calendar
 
@@ -152,6 +204,9 @@ webix.ui({
 {{sample 09_calendar/03_timepicker.html}}
 
 Like standard calendar, time view accepts values as string or date object.
+
+
+
 
 ##Localization
 

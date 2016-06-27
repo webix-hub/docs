@@ -6,27 +6,22 @@ Version 3.4
 
 Breaking Changes
 -----------------
-- the "Done" button is removed for "month" and "year" types (Calendar?)
 - *_sort* (private) renamed into *sorting* (public): *_sort._create* = > *sorting.create*, *_sort._as* = > *sorting.as* 
 
 
 New Features
 -----------
 
-- ability to set a custom size for an area where "resize" is detected 
-- 'month' and 'year' types for Calendar
-- the 'color' property for Sparklines, negativeColor option for Bar-sparkline
-- Area, Spline, Pie and Bar types for sparklines
-- showOption and hideOption for Segmented and Tabbar controls
+- ability to set [a custom size for an area where "resize" is detected](datatable/sizing.md#resizing) 
+- ['month' and 'year' types](desktop/calendar.md#monthandyeartypes) for Calendar
+- the [color](datatable/sparklines.md#settingsparklinescolors) property for Sparklines, [negativeColor](datatable/sparklines.md#neg_color) option for Bar-sparkline
+- [Area](datatable/sparklines.md#area), [Spline](datatable/sparklines.md#spline), [Pie](datatable/sparklines.md#pie) and [Bar](datatable/sparklines.md#bar) types for sparklines
+- showOption and hideOption for [Segmented](desktop/segmented.md#showingandhidingoptions) and [Tabbar](desktop/tabbar.md#showingandhidingoptions) controls
+- input masks for text
 
-<br>
-
-- input masks
-- Webix Remote for Node.js and PHP
 
 Updates
 ---------
-
 - Webix Remote can handle server-side errors
 - split support for AreaSelect
 

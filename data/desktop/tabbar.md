@@ -3,7 +3,7 @@ Tabbar
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.tabbar.html) 
+- [Methods, properties and events](api/refs/ui.tabbar.md) 
 - [Shared functionality](desktop/controls_guide.md)
 
 ##Overview
@@ -12,8 +12,6 @@ UI-related tabbar is an integral button that allows for changing between views i
 images and icons. 
 
 <img src="desktop/tabbar.png" />
-
-
 
 
 ##Initialization
@@ -66,6 +64,36 @@ Tabs featuring a **close** property in the tab configuration gain the ability to
 ~~~
 
 {{sample 20_multiview/11_close_button.html}}
+
+##Showing and Hiding Options
+
+There's a possibility to hide and show tabs using Tabbar API. To apply this feature, make use of the showOption() and hideOption() methods correspondingly.
+Both methods take the view id as a parameter.
+
+For example, you can hide a form view placed into one of the tabs:
+
+~~~js
+webix.ui({
+	rows:[
+		tabbar,
+		data,
+		{view: "form", cols:[
+			{},
+			{ view:"toggle", offLabel:"Hide Form", onLabel:"Show Form", on:{
+				onChange: function(value){
+					if(value)
+						$$("tabbar").hideOption("formView");
+					else
+						$$("tabbar").showOption("formView");
+				}
+			}}
+		]}
+	]
+});
+~~~
+
+
+{{sample 20_multiview/14_hide_options.html}}
 
 ##Tab Icons
 

@@ -3,7 +3,7 @@ resizeColumn
 
 
 @short: enables/disables horizontal resizing of columns
-@type: boolean
+@type: boolean/object
 
 @example:
 webix.ui({
@@ -12,9 +12,17 @@ webix.ui({
 	...
 });
 
+// define the size of area where resizing can start
+webix.ui({
+	view:"datatable",
+	resizeColumn:{size:6},
+	...
+});
+
+
 @template:	api_config	
 @related:
-    datatable/columns_configuration.md
+    datatable/sizing.md#resizing
 @relatedapi:
 	api/ui.datatable_resizerow_config.md
 @descr:
@@ -22,3 +30,4 @@ webix.ui({
 By default, the parameter is disabled. 
 
 When enabled, the method doesn't actually resize the datatable. After page refresh, size returns to the initial one (provided that you haven't saved the table's state).
+
