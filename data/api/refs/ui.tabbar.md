@@ -149,7 +149,6 @@ webix.ui({
 - api/link/ui.tabbar_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.tabbar_optionwidth_config.md - sets the width of each view's option
 - api/link/ui.tabbar_options_config.md - defines data items of the drop-down list
-- api/link/ui.tabbar_pattern_config.md - 
 - api/link/ui.tabbar_placeholder_config.md - placeholder text for the input area
 - api/link/ui.tabbar_popup_config.md - allows to attach pop-up menu to the button
 - api/ui.tabbar_popuptemplate_config.md - template for items in popup for responsive tabbar

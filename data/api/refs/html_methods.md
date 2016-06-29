@@ -10,7 +10,7 @@ Methods
 - api/html_createcss.md - converts a set of CSS rules to an active CSS class
 - api/html_denyselect.md - disables selection in the document
 - api/html_download.md - downloads a file from Blob data
-- api/html_getselectionrange.md - 
+- api/html_getselectionrange.md - returns start and end positions of cursor during selection
 - api/html_gettextsize.md - changes the text's size in an HTML node and returns the result
 - api/html_getvalue.md - returns the node content
 - api/html_index.md - returns the node index
@@ -22,7 +22,7 @@ Methods
 - api/html_preventevent.md - stops the event processing and cancels its default action (called in some event handler)
 - api/html_remove.md - removes an HTML element from DOM
 - api/html_removecss.md - removes a CSS class from a DOM node
-- api/html_setselectionrange.md - 
+- api/html_setselectionrange.md - sets selection for a node
 - api/html_stopevent.md - stops processing of an event beyond the current target (called in some event handler)
 }}
 

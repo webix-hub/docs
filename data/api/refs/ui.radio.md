@@ -129,7 +129,6 @@ var radio = webix.ui({
 - api/link/ui.radio_on_config.md - allows attaching custom handlers to inner events of the component
 - api/ui.radio_optionheight_config.md - height of radio-option item
 - api/ui.radio_options_config.md - defines options for a set of radiobuttons
-- api/link/ui.radio_pattern_config.md - 
 - api/link/ui.radio_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.radio_relatedaction_config.md - action to call when value of cell changes
 - api/link/ui.radio_relatedview_config.md - id of view, that will be affected by relatedAction operation
