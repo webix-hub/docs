@@ -28,6 +28,7 @@ Properties
 - api/link/ui.toggle_on_config.md - allows attaching custom handlers to inner events of the component
 - api/ui.toggle_onicon_config.md - an icon for a pressed toggle
 - api/ui.toggle_onlabel_config.md - a text label on the button in the pressed state
+- api/ui.toggle_pattern_config.md - 
 - api/link/ui.toggle_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.toggle_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/link/ui.toggle_tooltip_config.md - tooltip for the input
@@ -63,6 +64,7 @@ Properties
 - api/link/ui.toggle_on_config.md
 - api/ui.toggle_onicon_config.md
 - api/ui.toggle_onlabel_config.md
+- api/ui.toggle_pattern_config.md
 - api/link/ui.toggle_popup_config.md
 - api/link/ui.toggle_tabfocus_config.md
 - api/link/ui.toggle_tooltip_config.md

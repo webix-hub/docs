@@ -130,6 +130,7 @@ var rangeslider = webix.ui({
 - api/link/ui.rangeslider_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.rangeslider_name_config.md - name of the control
 - api/link/ui.rangeslider_on_config.md - allows attaching custom handlers to inner events of the component
+- api/link/ui.rangeslider_pattern_config.md - 
 - api/link/ui.rangeslider_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.rangeslider_relatedaction_config.md - action to call when value of cell changes
 - api/link/ui.rangeslider_relatedview_config.md - id of view, that will be affected by relatedAction operation

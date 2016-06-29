@@ -36,6 +36,7 @@ Properties
 - api/link/ui.checkbox_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.checkbox_name_config.md - name of the control
 - api/link/ui.checkbox_on_config.md - allows attaching custom handlers to inner events of the component
+- api/link/ui.checkbox_pattern_config.md - 
 - api/link/ui.checkbox_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.checkbox_relatedaction_config.md - action to call when value of cell changes
 - api/link/ui.checkbox_relatedview_config.md - id of view, that will be affected by relatedAction operation
@@ -85,6 +86,7 @@ Properties
 - api/link/ui.checkbox_minwidth_config.md
 - api/link/ui.checkbox_name_config.md
 - api/link/ui.checkbox_on_config.md
+- api/link/ui.checkbox_pattern_config.md
 - api/link/ui.checkbox_popup_config.md
 - api/link/ui.checkbox_relatedaction_config.md
 - api/link/ui.checkbox_relatedview_config.md

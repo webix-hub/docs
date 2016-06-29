@@ -35,6 +35,7 @@ Properties
 - api/link/ui.combo_name_config.md - name of the control
 - api/link/ui.combo_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.combo_options_config.md - defines data items of the drop-down list
+- api/link/ui.combo_pattern_config.md - 
 - api/link/ui.combo_placeholder_config.md - placeholder text for the input area
 - api/link/ui.combo_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.combo_popupwidth_config.md - width of the popup window
@@ -87,6 +88,7 @@ Properties
 - api/link/ui.combo_name_config.md
 - api/link/ui.combo_on_config.md
 - api/link/ui.combo_options_config.md
+- api/link/ui.combo_pattern_config.md
 - api/link/ui.combo_placeholder_config.md
 - api/link/ui.combo_popup_config.md
 - api/link/ui.combo_popupwidth_config.md

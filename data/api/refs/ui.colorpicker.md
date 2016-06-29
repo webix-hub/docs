@@ -131,6 +131,7 @@ var colorpicker = webix.ui({
 - api/link/ui.colorpicker_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.colorpicker_name_config.md - name of the control
 - api/link/ui.colorpicker_on_config.md - allows attaching custom handlers to inner events of the component
+- api/link/ui.colorpicker_pattern_config.md - 
 - api/link/ui.colorpicker_placeholder_config.md - placeholder text for the input area
 - api/link/ui.colorpicker_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.colorpicker_readonly_config.md - configures readonly mode for the input

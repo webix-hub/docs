@@ -141,6 +141,7 @@ var multicombo = webix.ui({
 - api/link/ui.multicombo_on_config.md - allows attaching custom handlers to inner events of the component
 - api/ui.multicombo_optionwidth_config.md - sets the width of the suggest list with options
 - api/link/ui.multicombo_options_config.md - defines data items of the drop-down list
+- api/link/ui.multicombo_pattern_config.md - 
 - api/link/ui.multicombo_placeholder_config.md - placeholder text for the input area
 - api/link/ui.multicombo_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.multicombo_popupwidth_config.md - width of the popup window
