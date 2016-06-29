@@ -12,12 +12,13 @@ Breaking Changes
 New Features
 -----------
 
-- ability to set [a custom size for an area where "resize" is detected](datatable/sizing.md#resizing) 
-- ['month' and 'year' types](desktop/calendar.md#monthandyeartypes) for Calendar
-- the [color](datatable/sparklines.md#settingsparklinescolors) property for Sparklines, [negativeColor](datatable/sparklines.md#neg_color) option for Bar-sparkline
-- [Area](datatable/sparklines.md#area), [Spline](datatable/sparklines.md#spline), [Pie](datatable/sparklines.md#pie) and [Bar](datatable/sparklines.md#bar) types for sparklines
+- ['Month' and 'year' types](desktop/calendar.md#monthandyeartypes) for Calendar
+- [Formatted text inputs](desktop/formatted_text_inputs.md)
+- [Area, Spline, Pie and Bar](datatable/sparklines.md#sparklinestypes) types for DataTable and TreeTable sparklines
+- Ability to set [a custom size for an area where "resize" is detected](datatable/sizing.md#resizing) 
+- The [color](datatable/sparklines.md#settingsparklinescolors) property for Sparklines, [negativeColor](datatable/sparklines.md#neg_color) option for Bar-sparkline
 - showOption and hideOption for [Segmented](desktop/segmented.md#showingandhidingoptions) and [Tabbar](desktop/tabbar.md#showingandhidingoptions) controls
-- input masks for text
+
 
 
 Updates

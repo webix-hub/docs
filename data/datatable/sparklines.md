@@ -50,7 +50,7 @@ There are six types of Sparklines representation available:
 - <a href="#splinearea">SplineArea</a>
 - <a href="#pie">Pie</a>
 
-To specify the sparklines type different from the default one, use the webix.Sparklines.getTemplate("type_name") method.
+To specify the sparklines type different from the default one, use the *webix.Sparklines.getTemplate("type_name")* method.
 
 <h3 id="area">Area Sparklines</h3>
 
@@ -203,6 +203,8 @@ negativeColor:"#da4400" });
 }
 ~~~
 
+{{sample 60_pro/01_datatable/08_sparklines/08_colors.html}}
+
 <h3 id="neg_color">Negative color option for Bar sparklines</h3>
 
 You can set a certain color for a negative value while rendering a Bar sparkline.
@@ -212,7 +214,7 @@ It is set by the negativeColor property:
 { 
 	id:"income", 
     header:"Negative color", 
-    template: webix.Sparklines.getTemplate({type:"bar", color: "#FF0000"}),
+    template: webix.Sparklines.getTemplate({type:"bar", negativeColor: "#d86c79"}),
       width:200
 }
 ~~~
@@ -229,7 +231,12 @@ You can also use sparklines separately, not just in datatable cells. For example
 
 <img src="datatable/sparklines_outside_datatable.png">
 
-Use the api/link/ui.list_template_config.md property for this purpose:
+For this purpose, you need to configure a sparkline by setting its type and color.
+After that you should specify the sparkline as a value of list template:
+
+- either as a data object; 
+- or as a function template that takes a data object and size of the sparkline as parameters.
+
 
 ~~~js
 var bar1 = webix.Sparklines.getTemplate({type:"bar", color: "#5868bf"});

@@ -256,12 +256,14 @@ webix.ui({
 });
 ~~~
 
+For these resizing options there exist relevant events [onRowResize](api/ui.datatable_onrowresize_event.md) and [onColumnResize](api/ui.datatable_oncolumnresize_event.md).
+
 {{sample 15_datatable/07_resize/03_all_resize.html }}
 
-####Setting custom size for area where "resize" is detected
+###Setting custom size for area where "resize" is detected
 
 You can also define the size of the area where resizing can be activated. You can do this by setting the api/ui.datatable_resizerow_config.md or
-api/ui.datatable_resizecolumn_config.md properties and passing an object with the *size* parameter to them:
+api/ui.datatable_resizecolumn_config.md parameters and passing an object with the *size* property to them:
 
 ~~~js
 webix.ui({
@@ -272,7 +274,22 @@ webix.ui({
 });
 ~~~
 
-For these resizing options there exist relevant events [onRowResize](api/ui.datatable_onrowresize_event.md) and [onColumnResize](api/ui.datatable_oncolumnresize_event.md).
+###Resizing only in the header area
+
+One more resizing possibility is to limit the area allowed for resizing to the datatable header. 
+
+It can be achieved by specifying the api/ui.datatable_resizerow_config.md or api/ui.datatable_resizecolumn_config.md 
+parameters and passing an object with the *headerOnly* property set to *true* to them:
+
+~~~js
+webix.ui({
+	view:"datatable",
+	...
+	resizeColumn: {headerOnly:true},
+ 	resizeRow: {headerOnly:true}
+});
+~~~
+
 
 ###Dynamic resizing
 For dynamic resizing DataTable elements, the library offers method [resize()](api/link/ui.datatable_resize.md). 

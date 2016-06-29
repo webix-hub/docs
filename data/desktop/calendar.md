@@ -87,7 +87,7 @@ $$("calendar1").getValue(); // returns the non-formatted date object
 
 ##Month and Year Types
 
-You can specify the modes in which only months or only years will be displayed in the Calendar:
+You can specify the modes in which Calendar will display either only months or only years:
 
 <img src="desktop/month_year_calendar.png">
 
@@ -126,33 +126,6 @@ webix.ui({
 });
 ~~~
 {{sample 09_calendar/06_datepicker.html }}
-
-###Month and Year Types
-
-Datepicker can be shown in the month or year mode as well as calendar:
-
-<img src="desktop/datepicker_month.png"/>
-
-~~~js
-webix.ui({
-	view:"toolbar", 
-	elements:[
-	    {view:"datepicker", align: "right",label: 'Select Date', type:"month"} 
-	]}
-);
-~~~
-
-<img src="desktop/datepicker_year.png"/>
-
-~~~js
-webix.ui({
-	view:"toolbar", 
-	elements:[
-	    {view:"datepicker", align: "right",label: 'Select Date', type:"year"} 
-	]}
-);
-~~~
-
 
 
 ##Time Selector in Calendar
