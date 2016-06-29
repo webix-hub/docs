@@ -19,6 +19,13 @@ webix.ui({
 	...
 });
 
+// allow resizing only in the header
+webix.ui({
+	view:"datatable",
+	resizeColumn:{headerOnly:true},
+	...
+});
+
 
 @template:	api_config	
 @related:
