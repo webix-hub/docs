@@ -3,7 +3,7 @@ Dataview
 
 ##API Reference
 
-- [Methods, Properties and Events](api__refs__ui.dataview.html)
+- [Methods, Properties and Events](api/refs/ui.dataview.md)
 - [Samples](http://docs.webix.com/samples/06_dataview/index.html)
 
 ##Overview

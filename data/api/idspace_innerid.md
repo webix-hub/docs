@@ -3,15 +3,15 @@ innerId
 
 
 @short:
-	returns the unique inner ID of an item
+	returns the inner ID of an item by its public (real) ID
 
 @params:
-- id		id		the ID of item
+- id		number/string		the public ID of an item
 
 
 @returns:
 
-id     id    the inner ID of item
+- innerId     number/string    the inner ID of item
 	
 
 @example:
@@ -20,45 +20,37 @@ id     id    the inner ID of item
 @template:	api_method
 @defined:	IdSpace	
 @descr:
+The method will be to the point when you use the same IDs for several nested components,
+e.g. you place two columns on a page and put a list component inside each of them. 
 
-The method will be to the point when you use the same ID's for several nested components, e.g. you place 2 windows on page and put inside each of them list component. Both lists you are given the same ID: 'mylist'.
+Both lists have the same ID:"mylist".
 
 ~~~js
 webix.ui({
-  view:"window",
-  id:"win1",
-  body:{
-        view:"list", 
-        id:"mylist",
-        ...
-  }
-  ...
+   cols:[
+     { id:"col1", isolate:true, rows:[
+        { view:"list", id:"mylist", data:webix.copy(list_data)  },        
+     ]},
+     { id:"col2", isolate:true, rows:[
+        {view:"list", id:"mylist", data:webix.copy(list_data) },        
+     ]}
+   ]
 });
 
-webix.ui({
-  view:"window",
-  id:"win2",
-  body:{
-        view:"list", 
-        id:"mylist",
-        ...
-  }
-  ...
-});
 ~~~
 
-So, when you need to refer to one of this lists, you should use:
+So, when you need to refer to one of these lists, you should use:
 
 ~~~js
-// for example, to refresh list from the second window
-$$('win2').$$('mylist').refresh();
+// for example, to get the id of the list in the second column
+$$("col2").innerId("$list2");
 ~~~
 
-innerId() allows to shorten this referring:
+Vice versa, to get the real ID of an item, use the code as in:
+
 ~~~js
-realID=$$('win2').innerId('mylist');
-//
-$$('realID').refresh();
+var realId = some.$$(innerId).config.id
 ~~~
 
-
+@relatedapi: 
+api/ui.layout_isolate_config.md

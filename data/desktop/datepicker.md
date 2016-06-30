@@ -3,7 +3,7 @@ Datepicker
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.datepicker.html)
+- [Methods, properties and events](api/refs/ui.datepicker.md)
 - [Shared functionality](desktop/controls_guide.md)
 
 ##Overview

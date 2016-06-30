@@ -1,7 +1,7 @@
 Dataview Suggest
 ========================
 
-Dataview suggest, or datasuggest, is used to add extra functionality to Webix select controls, namely [richselect](desktop/richselect.md), [multiselect](desktop/multiselect.md), 
+Dataview suggest, or Datasuggest, is used to add extra functionality to Webix select controls, namely [richselect](desktop/richselect.md), [multiselect](desktop/multiselect.md), 
 [combo](desktop/combo.md), [multicombo](desktop/multicombo.md) and similar [editors](desktop/editing.md#editortypes). It is based on Webix [suggest list](desktop/suggest.md).
 
 Datasuggest extension makes it possible to use Webix [dataview](desktop/dataview.md) in a dropdown menu which is great for inserting pictures
@@ -25,7 +25,7 @@ Default combo and richselect constructor looks as follows:
 }
 ~~~
 
-When extended with datasuggest, the constructor allows setting Webix [dataview](desktop/dataview.md) for a dropdown menu and defining its **configuration** right among the component's **options**.
+When extended with Datasuggest, the constructor allows setting Webix [Dataview](desktop/dataview.md) for a dropdown menu and defining its **configuration** right among the component's **options**.
 
 ~~~js
 { view:"richselect", value:1, options:{
@@ -56,7 +56,7 @@ Predefined Input Template
 
 - **template** (string, function) - defines template for dataview items. By default, the first data value after the ID field is shown;;
 - **type** (obj) - sets dimensions for dataview cells as an object *{width:150, height:100}*;
-- **data** (array) - data for the options to choose from. If you use **body** property for datasuggest configuration, data should be defined inside it. 
+- **data** (array) - data for the options to choose from. If you use **body** property for Datasuggest configuration, data should be defined inside it. 
 - **xCount** (number) - the number of items on the X scale;
 - **yCount** (number) - the number of items on the Y scale;
 - **autoheight** (boolean) - if *true*, set auto height for the dataview. *False* by default. 

@@ -31,7 +31,7 @@ columns:[
 ~~~
 
 {{note
-If you need to create a **custom filter** (or smth) for header content, or you need to **redefine** the behaviour of an already existing filter, 
+If you need to create a **custom filter** (or something) for header content, or you need to **redefine** the behavior of an already existing filter, 
 go [here](datatable/headers_footers.md#customheaderandfootercontent) for the instructions. 
 }}
 
@@ -66,7 +66,7 @@ Request parameters include:
 - *start* - ID of the data record to start from (0 - beginning). Its value depends on [dynamic loading](desktop/dynamic_loading.md) parameters, if any;
 - *filter[column_name]* - name of the column (in brackets) for which filtering is performed. Its value is a text value you've entered in the filter input. 
 
-If **serverside sorting** is enabled, data is both filtered and sorted on server. 
+If **server-side sorting** is enabled, data is both filtered and sorted on server. 
 
 ###Select filter {#select}
 
@@ -174,7 +174,8 @@ Retrieves values that contain mask defined through the popup calendar. Based on 
 
 ##Filtering Logic
 
-Note, each time you start to type text in such a filter, DataTable invokes the [filterByAll()](api/ui.datatable_filterbyall.md) method. Each time the method is called, all data is re-filtered (previous results aren't preserved).
+Note, each time you start to type text in such a filter, DataTable invokes the
+api/ui.datatable_filterbyall.md method. Each time the method is called, all data is re-filtered (previous results aren't preserved).
 
 ###AND logic
 By default, when you specify filters in several columns, DataTable applies AND logic to them, i.e. the table will display just records that meet 
@@ -438,3 +439,5 @@ webix.ui({
 {{sample
 	17_datatree/04_api/03_filter.html
 }}
+
+@spellcheck: yyyy, builtin, api

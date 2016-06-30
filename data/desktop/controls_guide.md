@@ -109,7 +109,7 @@ Two major possibilities here include:
 With the **click** property. It equals to the "onItemClick" event. 
 
 ~~~js
-{view:"button", click:"$$("my_form").save()" }
+{view:"button", click:"$$('my_form').save()" }
 ~~~
 
 With the **on** property that allows attaching custom handlers to specified inner events of the control:

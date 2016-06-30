@@ -1,7 +1,7 @@
 Export to PNG
 =================
 
-To export data from datatable or treetable into a PNG file, you need to call the **toPNG()** method. 
+To export data from datatable or treetable into a PNG file, you need to call the api/_topng.md method. 
 The method takes the following parameters:
 
 - **id** - (string) the id of the exported view

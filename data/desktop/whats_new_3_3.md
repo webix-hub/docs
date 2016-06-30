@@ -16,7 +16,7 @@ Check the [Migration Guide](migration.html#webix3233) for more details.
 ##New features
 
 - [AbsLayout](desktop/absolute_layout.md) widget
-- [DataLayout](desktop/absolute_layout.md) widget
+- [DataLayout](desktop/data_layout.md) widget
 - [sparklines](datatable/sparklines.md) for DataTable and TreeTable
 - ability to send json in Webix Ajax calls via: 
 	- ["json" proxy](desktop/server_proxy.md) for Ajax calls within data components

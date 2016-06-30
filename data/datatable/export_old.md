@@ -46,9 +46,9 @@ Above solution uses online data export service, but you can configure a local co
 
 The latest packages for installation can be found here:
 
-- <a href="http://docs.webix.com/packages/export/grid-pdf-php.zip">PHP package</a> 
-- <a href="http://docs.webix.com/packages/export/grid-pdf-java.zip">Java package</a> 
-- <a href="http://docs.webix.com/packages/export/grid-pdf-net.zip">ASP .NET package</a> 
+- [PHP package](http://docs.webix.com/packages/export/grid-pdf-php.zip) 
+- [Java package](http://docs.webix.com/packages/export/grid-pdf-java.zip)
+- [ASP .NET package](http://docs.webix.com/packages/export/grid-pdf-net.zip)
 
 The code will look like this:
 
@@ -163,4 +163,4 @@ configuring available options in the server side code. For these needs, please d
 In addition, you gain extra security with local scripts as well as get rid of a text that shows download source. 
 
 @keyword:
-	export, pdf, excel
+	export, PDF, excel

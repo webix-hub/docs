@@ -1,7 +1,7 @@
 Area Selection in DataTable
 =============================
 
-Webix DataTable features Excel-like area selection. You can click on any cell in the DataTable and move the mouse pointer over the grid, a block of cells will be selected and colored in grey.
+Webix DataTable features Excel-like area selection. You can click on any cell in the DataTable and move the mouse pointer over the grid, a block of cells will be selected and colored in gray.
 
 <img src="datatable/block_selection.png">
 
@@ -27,7 +27,7 @@ To enable area selection in DataTable, you should specify the **areaselect** pro
 }
 ~~~
 
-{{note Area selection will work only with other selection types disabled. So, the *select* and *selectcell* properties shouldn't be enabled.}}
+{{note Area selection will work only with other selection types disabled. So, the *select* property shouldn't be set.}}
 
 {{sample
 60_pro/01_datatable/06_api/14_area_selection.html

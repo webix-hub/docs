@@ -3,7 +3,7 @@ Counter
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.counter.html)
+- [Methods, properties and events](api/refs/ui.counter.md)
 - [Shared functionality](desktop/controls_guide.md)
 
 ##Overview
