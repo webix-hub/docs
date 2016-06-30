@@ -182,6 +182,11 @@ table.webixtoc td{
         <td>a suggest control</td>
     </tr>
     <tr>
+        <td> <img src="api/toc/tooltip.png"/> </td>
+        <td> api/refs/ui.tooltip.md </td>
+        <td>a tooltip control</td>
+    </tr>
+    <tr>
     	<td> <img src="api/toc/window.png"/> </td>
         <td> api/refs/ui.window.md </td>
         <td>a movable popup window</td>
