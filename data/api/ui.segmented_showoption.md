@@ -13,9 +13,9 @@ showOption
 @example:
 
 // hide an option
-tabbar.hideOption(id);
+segmented.hideOption(id);
 // show the option again
-tabbar.showOption(id);
+segmented.showOption(id);
 
 @template:	api_method
 @descr:

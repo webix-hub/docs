@@ -67,7 +67,8 @@ Tabs featuring a **close** property in the tab configuration gain the ability to
 
 ##Showing and Hiding Options
 
-There's a possibility to hide and show tabs using Tabbar API. To apply this feature, make use of the showOption() and hideOption() methods correspondingly.
+There's a possibility to hide and show tabs using Tabbar API. To apply this feature, make use of the api/link/ui.tabbar_showoption.md
+and api/link/ui.tabbar_hideoption.md methods correspondingly.
 Both methods take the view id as a parameter.
 
 For example, you can hide a form view placed into one of the tabs:

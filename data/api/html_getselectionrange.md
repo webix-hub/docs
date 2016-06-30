@@ -1,8 +1,6 @@
 getSelectionRange
 =============
 
-@todo:check
-
 @short:
  	returns start and end positions of cursor during selection 
 

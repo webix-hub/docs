@@ -41,7 +41,8 @@ Segmented is an integral button with as many segments as you like. Can be used f
 
 ##Showing and Hiding Options
 
-Segmented Button provides the possibility to hide and show segments with the help of the corresponding methods: *showOption()* and *hideOption()*.
+Segmented Button provides the possibility to hide and show segments with the help of the corresponding methods: api/ui.segmented_showoption.md and 
+api/ui.segmented_hideoption.md.
 
 You need to pass the id of the view that should be hidden as a parameter.
 

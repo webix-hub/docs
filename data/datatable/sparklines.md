@@ -43,14 +43,29 @@ Sparklines Types
 
 There are six types of Sparklines representation available:
 
-- Line - the default one
+- <a href="#line">Line - the default one</a>
 - <a href="#area">Area</a>
 - <a href="#bar">Bar</a>
 - <a href="#spline">Spline</a>
 - <a href="#splinearea">SplineArea</a>
 - <a href="#pie">Pie</a>
 
-To specify the sparklines type different from the default one, use the *webix.Sparklines.getTemplate("type_name")* method.
+To create a template function for a sparkline with the type different from the default one, use the *webix.Sparklines.getTemplate("type_name")* method.
+
+<h3 id="line">Line Sparklines</h3>
+
+<img src="datatable/line_sparklines.png">
+
+~~~js
+{ 
+	id:"income",
+    header:"Income per Month", 
+    template: "{common.sparklines()}", 
+    width:200
+}
+~~~
+
+{{sample 60_pro/01_datatable/08_sparklines/01_init.html}}
 
 <h3 id="area">Area Sparklines</h3>
 
@@ -187,8 +202,7 @@ There are two variants of configuring sparklines colors:
 
 ~~~js
 var bar1 = webix.Sparklines.getTemplate({type:"bar", color: "#5868bf"});
-var bar2 = webix.Sparklines.getTemplate({type:"bar", color: "#3ea4f5", 
-negativeColor:"#da4400" });
+var bar2 = webix.Sparklines.getTemplate({type:"bar", color: "#3ea4f5"});
 
 ...
 
@@ -231,37 +245,49 @@ You can also use sparklines separately, not just in datatable cells. For example
 
 <img src="datatable/sparklines_outside_datatable.png">
 
-For this purpose, you need to configure a sparkline by setting its type and color.
-After that you should specify the sparkline as a value of list template:
+For this purpose, you need to create a template function for a sparkline and use it in a list template. 
+As well as any other template, sparkline template function returns an HTML string. It takes two parameters:
 
-- either as a data object; 
-- or as a function template that takes a data object and size of the sparkline as parameters.
+- data - data collection for rendering
+- type - an object that contains size properties ("width" and "height") 
+
+If each list item contains only a sparkline, you can set a sparkline template as a list template. In this case sparklines will take the sizes of list items:
 
 
 ~~~js
-var bar1 = webix.Sparklines.getTemplate({type:"bar", color: "#5868bf"});
-var bar2 = webix.Sparklines.getTemplate({type:"bar", color: "#3ea4f5"});
-
+var sparkline = webix.Sparklines.getTemplate({type:"bar", color: "#5868bf"});
 
 webix.ui({
-	cols:[
-      {
-      	view:"list",
-      	template:bar1, scroll:false, type:{ height: 50, width:300 },
-      	data: []
-      },
-      {
-        view:"list",
-        scroll:false, type:{ height: 80, width:300 },
-        template:function(obj){
-        	return obj.name + "<div style='height:50px'>" + 
-             bar2(obj.data, { width:300, height: 50 }) + "</div>";
-        },
-        data: []
-     }]
-})
+	view:"list",
+	template: sparkline, 
+	type:{ height: 50, width:300 },
+    data: [
+		{id: 1, data: [710, 780, 390, 660, 600] },
+		{id: 2, data: [810, 500, 780, 800, 940] },
+		...
+	]
+});
 ~~~
 
+Sparkline template can also be used inside of a list template. In this case you need to pass data and object with sizes into the sparkline template:
+
+~~~js
+var sparkline = webix.Sparklines.getTemplate({type:"bar", color: "#5868bf"});
+
+webix.ui({
+	view:"list",
+	type:{ height: 80, width:300 },
+	template:function(obj){
+		return obj.name + "<div style='height:50px'>" + 
+        	sparkline(obj.data, { width:300, height: 50 }) + "</div>";
+	},
+	data: [
+		{id: 1, name: "Austria", data: [710, 780, 390, 660, 600] },
+		{id: 2, name: "France", data: [810, 500, 780, 800, 940] },
+		...
+	]
+});
+~~~
 
 
 {{sample 60_pro/01_datatable/08_sparklines/09_outside.html}}

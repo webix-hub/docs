@@ -1,7 +1,7 @@
 Webix Remote
 ==============
 
-Webix Remote is a special protocol that allows the client component to call procedures on the server directly, without sending any additional settings.
+Webix Remote is a special protocol that allows the client component to call procedures on the server directly.
 
 Thus, Webix Remote provides a quicker and more simple communication with the server in comparison with REST API. 
 
@@ -17,7 +17,7 @@ the stage with URLs formation is dropped and a request goes directly to the serv
 
 General advantages of this protocol are enumerated below:
 
-- All necessary parameters are sent in one request. It considerably enhances the speed of operations
+- Several requests are sent as one. It considerably enhances the speed of executing operations
 - Data is sent asynchronously (leaving the possibility to go the synchronous way, if it's necessary); promises are used instead of real data to speed up data rendering
 - CSRF-security. User's credentials are protected and kept safe
 - Information about user is kept as static data on the server and shared with the client side when it's necessary (when a user session started)
@@ -25,7 +25,7 @@ General advantages of this protocol are enumerated below:
 
 ##Server-side implementations
 
-Webix Remote can be used with the following languages:
+Webix Remote can be used for the following languages:
 
 - Node.js ([read the guide](desktop/webix_remote_nodejs.md))
 - PHP (read the guide)

@@ -9,7 +9,7 @@ hideOption
 
 
 @example:
-tabbar.hideOption(id);
+segmented.hideOption(id);
 
 
 @template:	api_method

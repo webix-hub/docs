@@ -1,9 +1,6 @@
 setSelectionRange
 =============
 
-@todo:
-	check 
-
 @short:
 	sets selection for a node
 

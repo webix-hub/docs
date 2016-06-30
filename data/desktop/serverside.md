@@ -110,10 +110,9 @@ Form data is either
 
 ##Other Ways of Integrating with Server 
 
-- you can make use of a **[Server Side Connector](desktop/dataconnector.md)**. The necessary information is
-in the [corresponding article](desktop/dataconnector.md)
-- Webix Remote
-- Websockets Faye..
+- you can make use of a **[Server Side Connector](desktop/dataconnector.md)**. The necessary information is given in the [corresponding article](desktop/dataconnector.md).
+- you can apply [Webix Remote](desktop/webix_remote.md)
+- you can use [Websockets and Faye proxy object](desktop/server_faye.md)
 
 
 ###Further Reading
