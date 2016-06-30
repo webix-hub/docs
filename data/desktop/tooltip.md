@@ -1,8 +1,8 @@
 Tooltip Implementation
 =================
 
-Tooltip stands out of the fixed pattern. It lies above other ui-related components, which makes it similar to  [window](desktop/window.md) and 
-[popup](desktop/popup.md). 
+[Tooltip](desktop/tooltip_component.md) stands out of the fixed pattern. It lies above other ui-related components, 
+which makes it similar to  [window](desktop/window.md) and [popup](desktop/popup.md). 
 
 Tooltip is connected with some component or its item and becomes visible when you place a mouse pointer over it and disappears when it leaves the area. Doesn't it 
 resemble onMouseOver/onMouseOut events? Still, event handling is quite [another story](desktop/event_handling.md). 
