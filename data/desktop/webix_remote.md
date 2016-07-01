@@ -1,7 +1,7 @@
 Webix Remote
 ==============
 
-Webix Remote is a special protocol that allows the client component to call procedures on the server directly.
+Webix Remote is a special protocol that allows the client component to call functions on the server directly.
 
 Thus, Webix Remote provides a quicker and more simple communication with the server in comparison with REST API. 
 

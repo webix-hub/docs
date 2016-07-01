@@ -4,26 +4,21 @@ Version 3.4
 <span class="release_date">released on July 25, 2016</span>
 
 
-Breaking Changes
------------------
-- *_sort* (private) renamed into *sorting* (public): *_sort._create* = > *sorting.create*, *_sort._as* = > *sorting.as* 
-
-
 New Features
 -----------
 
 - ['Month' and 'year' types](desktop/calendar.md#monthandyeartypes) for Calendar
+- [Webix Remote](desktop/webix_remote.md) is now available as a part of Webix UI 
 - [Formatted text inputs](desktop/formatted_text_inputs.md)
 - [Area, Spline, Pie and Bar](datatable/sparklines.md#sparklinestypes) types for DataTable and TreeTable sparklines
 - Ability to set [a custom size for an area where "resize" is detected](datatable/sizing.md#resizing) 
 - The [color](datatable/sparklines.md#settingsparklinescolors) property for Sparklines, [negativeColor](datatable/sparklines.md#neg_color) option for Bar-sparkline
 - showOption and hideOption for [Segmented](desktop/segmented.md#showingandhidingoptions) and [Tabbar](desktop/tabbar.md#showingandhidingoptions) controls
-
+- Ability for sorting creation
 
 
 Updates
 ---------
-- Webix Remote can handle server-side errors
 - split support for AreaSelect
 
 
