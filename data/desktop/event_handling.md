@@ -110,17 +110,37 @@ function close_tree(){...};
 { view:"button", id:"sample_button", value:"Close", width:100, click:"close_tree"}
 ~~~
 
-###Attaching events for DataStore and TreeStore components
+###Attaching DataStore and TreeStore events
 
 While data components inherit methods from DataStore and TreeStore, events aren't inherited. 
-That's why they are attached  through the *data* object in the following way:
+That's why they should be attached through the *data* object:
 
 ~~~js
-view.data.attachEvent("onParse", function(){});
+view.data.attachEvent("onParse", function(driver, data){
+   // some code
+});
 ~~~
 
-One more variant 
+There are also two alternative ways of attaching such events:
 
+- using the "data->" prefix in the handler:
+
+~~~js
+datatable.attachEvent("data->onParse", function(driver, data){
+    // some code 
+});
+~~~
+
+- using the "data->" prefix within the component's *on* property:
+
+~~~js
+view:"datatable",
+on:{
+   "data->onParse", function(){
+      // some code
+   }
+}
+~~~
 
 
 
