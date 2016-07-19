@@ -1,13 +1,15 @@
 Split Mode or 'Frozen Columns'
 ================================
-Split mode allows to have DataTable separated into two parts: 'frozen' and 'scrolled'. </br>
-The frozen part is fixed. It can contain the last columns on the right(left) side or on the both sides at a time. </br>
-The scrolled part is movable and can be scrolled horizontally.  
+
+Split mode allows you to have DataTable separated into two parts: the 'frozen' one and the 'scrollable' one.<br>
+The frozen part is fixed. It can contain the last columns on the right/left side or on both sides at a time.<br> 
+The scrollable part is movable and can be scrolled horizontally.  
 
 
 <img src='datatable/frozen_columns.png'/>
 
-To 'froze' columns, you should use parameters [leftSplit](api/ui.datatable_leftsplit_config.md) and [rightSplit](api/ui.datatable_rightsplit_config.md).
+To 'froze' columns, you should use the [leftSplit](api/ui.datatable_leftsplit_config.md) and [rightSplit](api/ui.datatable_rightsplit_config.md)
+parameters correspondingly. Set the number of columns you want to froze as their value.
 
 {{snippet
 Enabling the 'split' mode
