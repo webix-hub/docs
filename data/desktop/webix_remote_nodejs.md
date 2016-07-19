@@ -3,78 +3,83 @@ Using Webix Remote with Node.js
 
 This guide will give you the idea of how you can use Webix Remote for integrating the Webix library with Node.js.
 
-##Installation note
+##Installation Note
 
-To install Webix Remote, simply run the command below in the command line:
+To install Webix Remote, simply run the command below:
 
 ~~~js
 npm install webix-remote
 ~~~
 
 
-##Server-side code
+##Server-Side Code
 
-On the server side you need to include the "webix-remote" dependency. 
+On the server side you need to include the "webix-remote" module. 
 
-Then you should make connection to the server to get access to the server-side API.
-Let's put the call of the *server()* function into a variable. We will use it for working with server methods:
+Then you should create a server. For this, you need to call the *server()* method of the *remote* object:
 
 ~~~js
 var remote = require("webix-remote");
 var api = remote.server();
 ~~~
 
-After that you will be able to apply server-side API in your code.
-For example, you can use *setMethod()* API that registers new methods to use them later in the client code. 
+After that you will be able to make use of server-side methods.
 
-The setMethod() method takes two parameters:
+For example, you can apply *setMethod()* to register methods on the server side and then refer to them from the client side. 
 
-- name - the function's name
-- function -  the function's description 
+The method takes two parameters:
+
+- name - (string) the name under which the method/methods will be registered
+- function - (function/object) the method/methods registered under the "name" 
 
 
-Let's apply this method to add the *save* function that will save changes in an element by its id. 
+Let's apply *setMethod* to specify the *add* function that will sum up two numbers. 
 
 ~~~js
-// adding a "save" function
-api.setMethod("save", function(){
-	// saving logic
+// registering the "add" function
+api.setMethod("add", function(a,b){
+   return a,b;
 });
 ~~~
 
-Now you can apply it on the client side.
+Then you can refer to the registered method from the client side.
 
-##Client-side code
+##Client-Side Code
 
 On the client side you need to include the path to the server-side API after the *webix.js* file on the page:
 
 ~~~html
 <script src='webix.js'></script>
 <script src='/api'></script>
-<script>
-   // actions' description
-</script>
 ~~~
 
-After that you can describe operations that should be performed with data and get the result. To address to the server you need to use the **webix.remote** object.
+To call a server-side method you need to use the **webix.remote.methodName** call.
 
-Let's use the *save* function that was added on the server and send a request for saving changes in the element with the id=12. 
+Let's send a request to the server and ask the *add* function to return the sum of some numbers. 
 We will write the result of the operation into the *result* variable:
 
 ~~~js
-var result = webix.remote.save("12");
+var result = webix.remote.add(1,2);
+//or using the then() method
+webix.remote.add(1,2).then(result){
+    alert(result);
+});
 ~~~
 
 Webix Remote loads data asynchronously. The client side will get a promise of data first, while real data will come later. 
-The *result* in our example is a promise.
+The *result* in our example is a promise of data. The use of promises allows avoiding delays in the page rendering.
 
-The use of promises allows avoiding delays in the page rendering.
+You can also load data in the synchronous way. You just need to use the sync() method:
+
+~~~js
+var result = webix.remote.add(1,2).sync();
+~~~
 
 
-##Passing special parameters
+##Passing Special Parameters
 
-You can pass some additional parameters to the functions created on the server. For example, you can use the *$req* parameter 
-that will contain request parameters:
+If you need to pass some additional parameters to the server functions, you can use the *$req* parameter 
+that will contain all the necessary request parameters. For example, the server-side code can be as follows:
 
 ~~~js
 api.setMethod("add", function(a,b,$req){
@@ -91,12 +96,10 @@ webix.remote.add(1,2);
 Besides usual arguments the *add* function on the client will get a request object with parameters about the current user session.
 
 
-##Setting static data
+##Setting Static Data
 
 You can specify some static data on the server which will be available on the client. It can be useful while processing user sessions for storing user data 
 and sharing it with the client side, when needed. 
-
-Pay attention that the data generation method will be called just once - during the API initialization.
 
 To specify static data, you need to use the *setData()* method and pass two arguments to it:
 
@@ -112,11 +115,13 @@ api.setData("$user", function(req){
 });
 ~~~
 
-You can also pass some value instead of the handler as the second parameter :
+You can also pass some value instead of the handler as the second parameter:
 
 ~~~js
 api.setData("$user",1);
 ~~~
+
+In this case the data generation method will be called just once - during the API initialization.
 
 On the client the user data will be available in the following way:
 
@@ -167,7 +172,7 @@ api.setMethod("admin@add2", (a,b) => a+b ); //allowed
 api.setMethod("levelC@add3", (a,b) => a+b ); //blocked
 ~~~
 
-###Setting custom logic for access levels
+###Custom Logic for Access Levels
 
 Instead of setting several user verification rules, you can define one access level rule by using the *$access* parameter. For example:
 
