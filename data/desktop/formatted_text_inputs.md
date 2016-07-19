@@ -132,3 +132,5 @@ This message will be applied for all text inputs with patterns, unless they have
 So, in general, validation of inputs with patterns is carried out in the same way as common desktop/data_validation.md. 
 
 {{sample 60_pro/02_form/10_formatted_inputs_validation.html}}
+
+@edition:pro

@@ -23,22 +23,23 @@ For this purpose, DataTable provides 4 sorting types to ensure correct sorting o
 1. *int*;
 2. *date*;
 3. *string*;
-4. *string_strict* (case-sensitive 'string').
+4. *string_strict* (case-sensitive 'string');
+5. [custom sorting type](datatable/sorting.md#addingcustomsortingtype).
 
-To enable sorting and assign the appropriate sorting type to a column, you should specify an attribute **sort**  among the [column's parameters](api/ui.datatable_columns_config.md) 
-and set it to some of types.
+To enable sorting and assign the appropriate sorting type to a column, you should specify the **sort** attribute among the 
+[column's parameters](api/ui.datatable_columns_config.md) and set it to some of types.
 
 {{snippet
 Sorting configuration
 }}
 ~~~js
 grid = new webix.ui({
-		view:"datatable",
-		...
-		columns:[
-			{ id:"title", header:"Film title",    sort:"string"},
-			{ id:"year",  header:"Release year", sort:"int"}
-		]
+	view:"datatable",
+	...
+	columns:[
+		{ id:"title", header:"Film title",    sort:"string"},
+		{ id:"year",  header:"Release year", sort:"int"}
+	]
 });
 ~~~
 
@@ -65,7 +66,7 @@ In the sample column  below option IDs are sorted, yet option values are display
 
 ###Sorting by visible text
 
-Sorting by visible text is enabled width the help of **"text"** sorting mode that switches on **string** comparison for the values actually displayed in datatable columns. 
+Sorting by visible text is enabled with the help of the **"text"** sorting mode that switches on **string** comparison for the values actually displayed in datatable columns. 
 
 It takes into account column values defined by **templates**  and collection **values** rather than IDs:
 
@@ -80,7 +81,7 @@ columns:[
 
 {{sample 15_datatable/02_sorting/04_by_text.html}}
 
-###Triggering Server-side Sorting on Client-side
+###Triggering Server-side Sorting on the Client Side
 
 It's possible to issue a request to server to sort data in backend and reload the sorted dataset to the datatable: 
 
@@ -111,7 +112,7 @@ If [serverFilter](datatable/filtering.md) is enabled for this column, the data w
 
 Custom sorting functions
 -------------------------------------------------
-If you want to apply custom sorting behavior, you can define the related logic in a function and set this function as the value of attribute **sort**.
+If you want to apply custom sorting behavior, you can define the related logic in a function and set this function as the value of the **sort** attribute.
 
 This function will be called for each pair of adjacent values and return 1,-1 or 0:
 
@@ -125,7 +126,7 @@ The function can be defined in a general way:
 Using custom functions for sorting DataTable
 }}
 ~~~js
-function sortById(a,b){
+function sortByParam(a,b){
 		a = a.rank;
 		b = b.rank;
 		return a>b?1:(a<b?-1:0);
@@ -144,7 +145,8 @@ webix.ui({
 
 Programmatic sorting 
 -----------------------
-You should use method [sort()](api/link/ui.datatable_sort.md) to invoke sorting on some event or action, i.e button click or page load. You can't use this method if you want to sort DataTable by a click on the header.
+You should use the [sort()](api/link/ui.datatable_sort.md) method to invoke sorting on some event or action, i.e button click or page load. 
+You can't use this method if you want to sort DataTable by a click on the header.
 
 {{snippet
 Sorting DataTable on the button click
@@ -161,12 +163,12 @@ Sorting DataTable on the button click
 
 ###Controlling header sorting mark
 
-You can show and hide the sorting sign (^/V) by calling the [markSorting()](api/ui.datatable_marksorting.md) method with the following parameters: 
+You can show and hide the sorting sign (&#708;/&#709;) by calling the [markSorting()](api/ui.datatable_marksorting.md) method with the following parameters: 
 
 - **column_id** - id of the column you want to draw a sorting sign for;
 - **direction** - sorting direction. 
 
-When used with no arguments, the method removed all the sorting signs from the datatable headers.
+When used with no arguments, the method removes all the sorting signs from the datatable headers.
 
 {{snippet
 Canceling sorting
@@ -178,6 +180,41 @@ grid = webix.ui({ view:"datatable", ...})
 grid.markSorting("title", "asc");
 ~~~
 {{sample 15_datatable/02_sorting/03_sort_api.html }}
+
+
+##Adding Custom Sorting Type
+
+You can define your own sorting type by using the **webix.sorting.as** and specifying a function, that will describe the sorting rule:
+
+~~~js
+webix.sorting.as.sort_type = function(a,b){ return a.param > b.param ? 1 : -1 }
+~~~
+
+For example, you can set the "length" type to sort data by the text length:
+
+~~~js
+webix.sorting.as.length = function(a,b){ return a.length > b.length ? 1 : -1 }
+~~~
+
+To apply the custom sorting type, you need to set its name as the value of the "sort" data attribute:
+
+~~~js
+{
+	view:"datatable",
+	columns:[
+		{ id:"product1", sort:"length" },
+		{ id:"product2", sort:"length" },
+		{ id:"product3", sort:"length" }
+	]
+}
+~~~
+
+You can also use the newly created sorting type as a value of the *as* parameter of the "sort()" method for a datatable:
+
+~~~js
+$$("datatable1").sort({ by:"name", as:"length" });
+~~~
+
 
 @keyword:
 	sort

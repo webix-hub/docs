@@ -274,6 +274,8 @@ webix.ui({
 });
 ~~~
 
+{{sample 15_datatable/07_resize/12_resize_area.html}}
+
 ###Resizing only in the header area
 
 One more resizing possibility is to limit the area allowed for resizing to the datatable header. 
@@ -290,6 +292,7 @@ webix.ui({
 });
 ~~~
 
+{{sample 15_datatable/07_resize/11_header_only.html}}
 
 ###Dynamic resizing
 For dynamic resizing DataTable elements, the library offers method [resize()](api/link/ui.datatable_resize.md). 

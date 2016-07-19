@@ -179,9 +179,9 @@ $$("filter-list").attachEvent("onTimedKeypress", function(){
 
 ##Sorting 
 
-Sorting is enabled by **sort()** function that takes data item, sorting direction and sorting mode as parameters:
+Sorting is enabled by the **sort()** function that takes data item, sorting direction and sorting mode as parameters:
 
-- Sorting as component property. Data will be during component initialization:
+- Sorting as component property. Data will be sorted during component initialization:
 
 ~~~js
 webix.ui({
@@ -203,5 +203,6 @@ $$('tree').sort('#value#', 'asc');
 ~~~
 
 Read about more detailed description of the **sort** method in the [dedicated chapter of API Reference](api/datastore_sort.md)
+
 
 @complexity:2
