@@ -3,7 +3,7 @@ Layout and Resizer
 
 ##API Reference
 
-- [Methods, parameters and events](api__refs__ui.layout.html)
+- [Methods, parameters and events](api/refs/ui.layout.md)
 - [Samples](http://docs.webix.com/samples/01_layout/index.html)
 
 ##Overview 

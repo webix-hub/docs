@@ -9,7 +9,7 @@ IFrame
 
 ##Overview
 
-Ui-related IFrame is a component that helps include an i-frame, or 'inline frame' into the page. Basically, it's a floating frame on the webpage that contains an external web document. The component, 
+Ui-related IFrame is a component that helps include an i-frame, or 'inline frame' into the page. Basically, it's a floating frame on the web page that contains an external web document. The component, 
 as a rule, is smaller than the page it's added into, so vertical and horizontal scrollbars appear. 
 
 You can insert more than one IFrame into the view provided that you initialize a switching [control](desktop/controls.md) for them. 
@@ -37,9 +37,9 @@ webix.ui({
 
 ####Data loading
 
-The url to show in the iFrame can be defined 
+The URL to show in the iFrame can be defined 
 
-- as value of the src **property** (shown above);
+- as value of the **src** property (shown above);
 - as parameter of the **load** method.
 
 ~~~js
@@ -63,12 +63,12 @@ URL-s.
 Then, attach a switching function to the button. The event referring to a tab mouse click is called **"onAfterTabClick"**. 
 
 ~~~js
-$$("control").attachEvent("onAfterTabClick",function(sid){
-	$$('frame-body').define("src", sid);
+$$("control").attachEvent("onAfterTabClick",function(id){
+	$$('frame-body').define("src", id);
 });
 ~~~
 
-The event fires on clicking any tab, takes its ID (sid) as parameter and sets the source for external webpage equal to this ID. 
+The event fires on clicking any tab, takes its ID as a parameter and sets the source for external web page equal to this ID. 
 
 ##Related Articles 
 

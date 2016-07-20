@@ -26,7 +26,7 @@ Default tabbar
 	- **tabMoreWidth** sets the width of this area;
     - **moreTemplate** sets other icon/text/HTML of this area. Either function or string can be used;
 - The width of the popup is **200px** by default. It can be changed with the **popupWidth** property;
-- The default number of list items in the popup is **7**. It can be chaged with the **yCount** parameter. If there are more items in the popup, scroll will appear.
+- The default number of list items in the popup is **7**. It can be changed with the **yCount** parameter. If there are more items in the popup, scroll will appear.
 - By default list items feature *#value#* template. Other template can be set by **popupTemplate** property. 
 
 {{snippet
@@ -50,7 +50,7 @@ Customized tabbar
 } 
 ~~~
 
-Note that **options** config for tabbar  must comnpulsory include **value** property, otherwise it will render *id* on tabs and through an error. Still, there can be other properties that can be rendered 
-in popup list with **popupTemplate**. 
+Note that **options** config for tabbar must include the **value** property, otherwise it will render *id* on tabs and throw an error.
+Still, there can be other properties rendered in a popup list with **popupTemplate**. 
 
 More info about Webix data templates can be found in the [dedicated documentation article](desktop/html_templates.md). 

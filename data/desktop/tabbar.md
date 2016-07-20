@@ -3,7 +3,7 @@ Tabbar
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.tabbar.html) 
+- [Methods, properties and events](api/refs/ui.tabbar.md) 
 - [Shared functionality](desktop/controls_guide.md)
 
 ##Overview
@@ -44,7 +44,7 @@ rows:[
 - **type** (string) - if set to "bottom", the tabbar gets other styling, more suitable for tabs placed under the multiview. It can be done by changing the order of layout rows;
 - **close** (boolean) - if *true*, the "close" functionality for each tab is provided. Each tab can be closed by clicking a dedicated icon on it. 
 
-Compare top and bottom tabbars in a sample: 
+Compare top and bottom tabbar in a sample: 
 
 {{sample 13_form/01_controls/08_tabbar.html }}
 
