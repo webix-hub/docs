@@ -3,9 +3,13 @@ onAfterTabClick
 
 @short: fires after a segment has been clicked
 
+@params:
+
+- id		number/string		the id of the segment that was clicked
+
 @example:
 
-segmented.attachEvent("onAfterTabClick", function(id, e){
+segmented.attachEvent("onAfterTabClick", function(id){
 	//code
 });
 
@@ -22,5 +26,5 @@ segmented.attachEvent("onAfterTabClick", function(id, e){
 
 @descr:
 
-Unlike the [onItemClick](api/ui.segmented_onbeforetabclick_event.md) event this one watches clicks over separate tabs and 
-passes the ID of a clicked tab into its handler. 
+Unlike the [onItemClick](api/link/ui.segmented_onitemclick_event.md) event this one watches clicks over separate segments and 
+passes the ID of a clicked segment into its handler. 

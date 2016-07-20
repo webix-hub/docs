@@ -3,9 +3,13 @@ onBeforeTabClick
 
 @short: fires before a segment is clicked
 
+@params:
+
+- id		number/string		the id of the segment
+
 @example:
 
-segmented.attachEvent("onBeforeTabClick", function(id, e){
+segmented.attachEvent("onBeforeTabClick", function(id){
 	//code
 });
 
@@ -22,5 +26,5 @@ segmented.attachEvent("onBeforeTabClick", function(id, e){
 
 @descr:
 
-Unlike the [onItemClick](api/link/ui.segmented_onitemclick_event.md) event this one watches clicks over separate tabs 
-and passes the ID of a clicked tab into its handler. 
+Unlike the [onItemClick](api/link/ui.segmented_onitemclick_event.md) event this one watches clicks over separate segments 
+and passes the ID of a clicked segment into its handler. 
