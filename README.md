@@ -9,7 +9,7 @@ Those are sources of http://docs.webix.com
 Offline version
 ---------------
 
-CHM version of documention for Webix 3.3 - http://docs.webix.com/chm/webix_v33.chm
+CHM version of Webix documention - http://docs.webix.com/chm/webix.zip
 
 
 Differences from MarkDown
