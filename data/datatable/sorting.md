@@ -184,35 +184,42 @@ grid.markSorting("title", "asc");
 
 ##Adding Custom Sorting Type
 
-You can define your own sorting type by using the **webix.sorting.as** and specifying a function, that will describe the sorting rule:
+You can define your own sorting type via the **sorting.as** property of the **webix.DataStore.prototype** object.
+You need to specify a function, that will describe a new type of sorting as follows:
 
 ~~~js
-webix.sorting.as.sort_type = function(a,b){ return a.param > b.param ? 1 : -1 }
+webix.DataStore.prototype.sorting.as.sort_type = 
+function(a,b){ return a.param > b.param ? 1 : -1 }
 ~~~
 
-For example, you can set the "length" type to sort data by the text length:
+For example, let's set a new type "bylength" to sort data by the text length:
 
 ~~~js
-webix.sorting.as.length = function(a,b){ return a.length > b.length ? 1 : -1 }
+webix.DataStore.prototype.sorting.as.bylength = 
+function(a,b){ return a.length > b.length ? 1 : -1 }
 ~~~
 
-To apply the custom sorting type, you need to set its name as the value of the "sort" data attribute:
+To apply a custom sorting type to a column, you need to set its name as the value of the **sort** property for the corresponding column:
 
 ~~~js
 {
 	view:"datatable",
 	columns:[
-		{ id:"product1", sort:"length" },
-		{ id:"product2", sort:"length" },
-		{ id:"product3", sort:"length" }
+		{ id:"product1", sort:"bylength" },
+		{ id:"product2", sort:"bylength" },
+		{ id:"product3", sort:"bylength" }
 	]
 }
 ~~~
 
-You can also use the newly created sorting type as a value of the *as* parameter of the "sort()" method for a datatable:
+You can also set the newly created sorting type as a value of the *as* parameter of the "sort()" method:
 
 ~~~js
-$$("datatable1").sort({ by:"name", as:"length" });
+$$("datatable1").sort({
+   by:"name", 
+   dir:"desc",
+   as:"bylength"
+});
 ~~~
 
 
