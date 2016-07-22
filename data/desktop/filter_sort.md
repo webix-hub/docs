@@ -218,7 +218,7 @@ You need to specify a function, that will describe a new type of sorting as foll
 
 ~~~js
 webix.DataStore.prototype.sorting.as.sort_type = 
-function(a,b){ return a.param > b.param ? 1 : -1 }
+function(a,b){ return a > b ? 1 : -1 }
 ~~~
 
 For example, let's set a new type "bylength" to sort data by the text length:

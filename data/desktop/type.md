@@ -129,7 +129,8 @@ The **type** function takes item object as parameter, so all its properties are 
 You can completely change the component's look and feel inside the **type** by altering HTML for the items. Type properties subject to altering are as follows: 
 
 - **template** - standard item template, can be used outside the **type** configuration with the same result. Includes data properties in #hash# signs and optionally, HTML content;
-- **templateStart** - container element for data item, wraps the elements defined by **template**. Opening element;
+- **templateStart** - container element for data item, wraps the elements defined by **template**. Opening element. It should contain 
+the *webix_l_id* attribute that allows detecting the item by its ID;
 - **templateEnd** - closing element for **templateStart**.
 
 In other words, each data item HTML content includes *templateStart - template - templateEnd*. TemplateStart and templateEnd are not normally changed, but still the possibility exists. 
@@ -142,7 +143,7 @@ This is how standard [list](desktop/list.md) can be redefined:
 webix.ui({
    view:"list",      
    type:{
-      templateStart:"<div item_id='id' class='custom_item'>",
+      templateStart:"<div webix_l_id='#id#' class='custom_item'>",
       template:"#rank#. #title#<br><div style='text-align:right;'>#year#</div>",
       templateEnd:"</div>"
    }
