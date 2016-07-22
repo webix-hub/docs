@@ -22,16 +22,16 @@ webix.ui({
 {{sample 60_pro/01_datatable/09_frozen_rows/01_init.html}}
 
 
-Making a row frozen
+Freezing rows dynamically
 --------------------
 
 Let's suppose that you have a block of frozen rows at the top of a datatable and want to add some other row to this block, like this: 
 
 <img src="datatable/add_frozen_row.png">
 
-In such a case you can make use of the **freezeRow()** method. You need to pass to parameters to it:
+In such a case you can make use of the **freezeRow()** method. You need to pass two parameters to it:
 
-- id - (number,string) - the row id
+- id - (number/string) - the row id
 - state - (boolean) - to allow row moving to the "frozen" block
 
 ~~~js

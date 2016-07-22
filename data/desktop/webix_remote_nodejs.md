@@ -46,7 +46,7 @@ Then you can refer to the registered method from the client side.
 
 ##Client-Side Code
 
-On the client side you need to include the path to the server-side API after the *webix.js* file on the page:
+On the client side you need to include the path to the server-side API after the *webix.js* file:
 
 ~~~html
 <script src='webix.js'></script>
