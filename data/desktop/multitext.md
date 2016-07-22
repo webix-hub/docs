@@ -19,7 +19,12 @@ UI-related multitext is a dynamic control based on standard Webix [text](desktop
 ##Initialization
 
 ~~~js
-{ view:"multitext", id:"multi", value:'dummy@email.com, mirror@email.com', label:"Email" }
+{ 
+	view:"multitext", 
+    id:"multi", 
+    value:'dummy@email.com, mirror@email.com', 
+    label:"Email" 
+}
 ~~~
 
 {{sample 60_pro/02_form/01_multitext.html}}
@@ -39,7 +44,31 @@ UI-related multitext is a dynamic control based on standard Webix [text](desktop
 Each field of a multitext control features its own ID. It can be either a given (for the basic field) or an auto-generated one. 
 All the methods of a multitext object can be applied to any field object. 
 
-##Adding and Removing Fields
+##Order of Adding New Fields
+
+New fields are added at the bottom of Multitext parent layout. However, if you will create some other view after the Multitext one, new rows will be added after this view.
+
+<img src="desktop/multitext_new_field1.png">
+
+In order to add new fields in the correct way, you should place the Multitext view into a separate layout:
+
+~~~js
+webix.ui({
+  view: 'form',
+  elements: [
+    { rows:[
+  		{view:'multitext', name:'multitext1', label: 'Multitext'}
+    ]},
+    {view:'text', name:'newinput', label: 'Text Input', width:270},
+  ]
+});
+~~~
+
+With such a configuration, each new field will appear after the previously added one.
+
+<img src="desktop/multitext_new_field2.png">
+
+##Adding and Removing Fields Dynamically
 
 Multitext API allows [adding](api/ui.multitext_addsection.md) and [removing](api/ui.multitext_removesection.md) additional fields dynamically: 
 
@@ -54,7 +83,7 @@ $$("multi").remove();
 
 Notes:
 
-- Only additional fields can be removed, basic one always remains. 
+- Only additional fields can be removed, the basic one always remains. 
 - The methods can be called from any multitext object from the group. 
 
 ##Setting and Getting Values
