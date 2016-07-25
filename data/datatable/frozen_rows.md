@@ -48,7 +48,7 @@ $$("grid").freezeRow(id, false);
 Sorting and filtering with frozen rows
 -------------------------------------
 
-If there are frozen rows in a datatable, they ignore sorting and filtering applied to it. 
+Frozen rows ignore sorting and filtering applied to the datatable. 
 It means that while you sort or filter data in a datatable, data of these rows won't be taken into account.
 
 <img src="datatable/frozen_sort_filt.png">

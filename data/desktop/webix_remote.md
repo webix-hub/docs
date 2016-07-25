@@ -9,7 +9,7 @@ Below you will find the key distinctions between the two approaches.
 There are the following server-side solutions implemented with Webix Remote:
 
 - for Node.js ([read the guide](desktop/webix_remote_nodejs.md))
-- for PHP (read the guide)
+- for PHP ([read the guide](desktop/webix_remote_php.md))
 
 
 ##REST API Drawbacks
@@ -35,3 +35,4 @@ General advantages of this protocol are enumerated below:
 @index:
 
 - desktop/webix_remote_nodejs.md
+- desktop/webix_remote_php.md

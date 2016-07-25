@@ -36,8 +36,8 @@ Frozen Rows
 The functionality is a feature of **Webix Pro** edition.
 }}
 
-In the split mode with "frozen" rows there are several rows fixed at the top part of datatable. 
-All other rows that follow the fixed ones can be scrolled vertically.
+You can also "freeze" several rows at the top part of datatable. 
+All other rows that follow the fixed ones will be scrolled vertically.
 
 <img src='datatable/frozen_rows1.png'/>
 
