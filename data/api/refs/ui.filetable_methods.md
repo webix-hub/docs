@@ -42,6 +42,7 @@ Methods
 - api/link/ui.filetable_filterbyall.md - refilters DataTable by all specified filters
 - api/link/ui.filetable_find.md - returns rows that match the criterion
 - api/link/ui.filetable_focuseditor.md - moves focus to the active editor
+- api/link/ui.filetable_freezerow.md - 
 - api/link/ui.filetable_getallselectareas.md - returns an object that contains configuration objects of all select areas in the datatable
 - api/link/ui.filetable_getchildviews.md - returns child views of the calling component
 - api/link/ui.filetable_getcolumnconfig.md - returns the configuration object of the specified column
@@ -177,6 +178,7 @@ Methods
 - api/link/ui.filetable_filterbyall.md
 - api/link/ui.filetable_find.md
 - api/link/ui.filetable_focuseditor.md
+- api/link/ui.filetable_freezerow.md
 - api/link/ui.filetable_getallselectareas.md
 - api/link/ui.filetable_getchildviews.md
 - api/link/ui.filetable_getcolumnconfig.md

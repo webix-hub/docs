@@ -2,7 +2,7 @@ ContextHelper
 =============
 
 
-{{memo Provides for subviews seen by right mouse click. }}
+{{memo Allows viewing subviews by right mouse click. }}
 
 
 

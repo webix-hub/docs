@@ -83,6 +83,7 @@ Properties
 - api/link/ui.treetable_subview_config.md - adds a subview configuration into datatable
 - api/link/ui.treetable_threestate_config.md - defines three-state checkboxes for the tree. Flase by default.
 - api/link/ui.treetable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.treetable_topsplit_config.md - 
 - api/link/ui.treetable_type_config.md - used for configuring presentation of items
 - api/link/ui.treetable_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.treetable_width_config.md - sets the width of the component
@@ -171,6 +172,7 @@ Properties
 - api/link/ui.treetable_subview_config.md
 - api/link/ui.treetable_threestate_config.md
 - api/link/ui.treetable_tooltip_config.md
+- api/link/ui.treetable_topsplit_config.md
 - api/link/ui.treetable_type_config.md
 - api/link/ui.treetable_url_config.md
 - api/link/ui.treetable_width_config.md

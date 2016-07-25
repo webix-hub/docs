@@ -2,9 +2,7 @@ AutoScroll
 =============
 
 
-dummy stub
-
-{{todo replace with real description. }}
+{{memo Provides support for automatic scrolling of data components while dragging elements or selected blocks. }}
 
 
 
@@ -12,14 +10,14 @@ dummy stub
 
 
 {{api
-- api/autoscroll_onbeforeautoscroll_event.md - 
+- api/autoscroll_onbeforeautoscroll_event.md - fires before autoscrolling has started
 }}
 
 
 <div class='h2'>Properties</div>
 
 {{api
-- api/autoscroll_dragscroll_config.md - 
+- api/autoscroll_dragscroll_config.md - defines whether autoscroll will be enabled while dragging a data element or selected block
 }}
 
 

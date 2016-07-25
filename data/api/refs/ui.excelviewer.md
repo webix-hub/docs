@@ -52,6 +52,7 @@ dummy stub
 - api/link/ui.excelviewer_filterbyall.md - refilters DataTable by all specified filters
 - api/link/ui.excelviewer_find.md - returns rows that match the criterion
 - api/link/ui.excelviewer_focuseditor.md - moves focus to the active editor
+- api/link/ui.excelviewer_freezerow.md - 
 - api/link/ui.excelviewer_getchildviews.md - returns child views of the calling component
 - api/link/ui.excelviewer_getcolumnconfig.md - returns the configuration object of the specified column
 - api/link/ui.excelviewer_getcolumnindex.md - returns the index of the column with the specified id
@@ -323,6 +324,7 @@ dummy stub
 - api/link/ui.excelviewer_subview_config.md - adds a subview configuration into datatable
 - api/ui.excelviewer_toolbar_config.md - 
 - api/link/ui.excelviewer_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.excelviewer_topsplit_config.md - 
 - api/link/ui.excelviewer_type_config.md - used for configuring presentation of items
 - api/link/ui.excelviewer_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.excelviewer_width_config.md - sets the width of the component
