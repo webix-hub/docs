@@ -71,9 +71,11 @@ still being  very fast handling  thousands of records.<a href="datatable/overvie
                 <li><a href="datatable/formatting.md">Number and date formatting</a></li>
 				<li><a href="datatable/styling.md">Styling</a></li>
 				<li><a href="datatable/frozen_columns.md">Split mode or 'frozen columns'</a></li>
+                <li><a href="datatable/frozen_rows.md">Frozen rows</a></li>
             </ul>
         </td>
-		<td class='topic_description'>Focuses on how to fine-tune the DataTable appearance: applying templates to the data, 'freezing' columns, redefining the default component CSS classes, etc.</td>
+		<td class='topic_description'>Focuses on how to fine-tune the DataTable appearance: applying templates to the data, 'freezing' columns and rows, 
+        redefining the default component CSS classes, etc.</td>
 	</tr>
 	<tr>
     	<td class='topics'>

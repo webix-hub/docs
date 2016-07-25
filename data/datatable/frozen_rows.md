@@ -1,10 +1,8 @@
 Frozen Rows in DataTable
 =================
 
-This type of split mode "freezes" datatable rows. It means that with this mode enabled, a datatable will be splitted into two parts:
-the top fixed part and the bottom scrollable part.
-
-The "frozen" upper part contains several top rows of the datatable. The lower part is movable and can be scrolled vertically. 
+You can "freeze" several rows at the top of datatable, to make them always visible.<br>
+In such a mode, the "frozen" upper part is fixed and the lower part is movable and can be scrolled vertically. 
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="datatable/frozen_rows.png"/>
 
@@ -25,20 +23,20 @@ webix.ui({
 Freezing rows dynamically
 --------------------
 
-Let's suppose that you have a block of frozen rows at the top of a datatable and want to add some other row to this block, like this: 
-
-<img src="datatable/add_frozen_row.png">
-
-In such a case you can make use of the **freezeRow()** method. You need to pass two parameters to it:
+If you want to freeze another row and put it into the top unscrollable block,
+you should make use of the **freezeRow()** method. You need to pass two parameters to it:
 
 - id - (number/string) - the row id
-- state - (boolean) - to allow row moving to the "frozen" block
+- state - (boolean) - true, to allow row moving to the "frozen" block
 
 ~~~js
 $$("grid").freezeRow(id, true);
 ~~~
 
-If you decide to unfreeze some of the rows in the fixed top block, use the same method with **false** as the second parameter:
+<img src="datatable/add_frozen_row.png">
+
+
+If you decide to unfreeze some of the rows, use the same method with **false** as the second parameter:
 
 ~~~js
 $$("grid").freezeRow(id, false);
@@ -51,7 +49,7 @@ Sorting and filtering with frozen rows
 -------------------------------------
 
 If there are frozen rows in a datatable, they ignore sorting and filtering applied to it. 
-It means that while you sort or filter data in a datatable, these rows will be omitted and their values won't be taken into account.
+It means that while you sort or filter data in a datatable, data of these rows won't be taken into account.
 
 <img src="datatable/frozen_sort_filt.png">
 
@@ -75,4 +73,18 @@ In the above example we've redefined the background color of all cells in the fr
 
 <img src="datatable/frozen_styling.png">
 
+You can also change the style of rows selection in the following way:
+
+~~~css
+<style>
+.webix_cell.webix_topcell.webix_row_select{
+    background: #6d89d8;
+}
+</style>
+~~~
+
+<img src="datatable/frozen_custom_selection.png">
+
 {{sample 60_pro/01_datatable/09_frozen_rows/03_api.html}}
+
+@edition:pro
