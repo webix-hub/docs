@@ -1,1 +1,0 @@
-@link: api/ui.button_pattern_config.md

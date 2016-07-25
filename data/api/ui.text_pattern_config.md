@@ -1,9 +1,6 @@
 pattern
 =============
 
-@todo:
-	check 
-
 @short:
 	a formatting pattern applied to a text input
 
@@ -31,4 +28,6 @@ If set as an object, pattern includes two properties:
 If pattern set as a string, the *allow* property will take the default value - /[A-Za-z0-9]/g.
 
 @related:
-desktop/text.md#formattedtextinputs
+desktop/formatted_text_inputs.md
+
+

@@ -6,6 +6,7 @@ Mixins
 - api/refs/activecontent.md -  Allows placing active element in other views
 - api/refs/atomdataloader.md -  primitive data loader
 - api/refs/atomrender.md -  primitive render for views
+- api/refs/autoscroll.md - 
 - api/refs/autotooltip.md -  allows for setting a prompting message for data items
 - api/refs/basebind.md -  core of all bind operations
 - api/refs/bindsource.md -  logic for source of data in bind operations
@@ -93,6 +94,7 @@ Mixins
 - api/refs/activecontent.md
 - api/refs/atomdataloader.md
 - api/refs/atomrender.md
+- api/refs/autoscroll.md
 - api/refs/autotooltip.md
 - api/refs/basebind.md
 - api/refs/bindsource.md
