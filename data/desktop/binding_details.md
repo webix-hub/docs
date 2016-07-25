@@ -21,8 +21,8 @@ slave component is based on [DataStore](api/refs/datastore.md) (all data managem
 [TreeStore](api/refs/treestore.md) (tree and treetable).
 }}
 
-
 Binding rule defines a scheme according to which records in the slave component are filtered. It can be either a string or a function. 
+
 
 ###Binding rule as a function
 
@@ -59,6 +59,10 @@ gridb.bind(grida, function(slave, master){
 Here binding is cancelled in case no data is sent from master (i.e. no record is selected in master). 
 
 {{sample 15_datatable/15_api/02_link_grid.html}} 
+
+{{note
+Pay attention that selected value for a master view should be set after data is loaded.
+}}
 
 ###Binding rule as a string
 

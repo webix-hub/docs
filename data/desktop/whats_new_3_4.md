@@ -15,12 +15,13 @@ New Features
 - showOption and hideOption for [Segmented](desktop/segmented.md#showingandhidingoptions) and [Tabbar](desktop/tabbar.md#showingandhidingoptions) controls
 - Ability to set [a custom size for an area where "resize" is detected](datatable/sizing.md#resizing) 
 - The [color](datatable/sparklines.md#settingsparklinescolors) property for Sparklines, [negativeColor](datatable/sparklines.md#neg_color) option for Bar-sparkline
-- Ability to [create sorting](datatable/sorting.md#addingcustomsortingtype)
+- Ability to [create a custom sorting type](desktop/filter_sort.md#addingcustomsortingtype)
 
 
 Updates
 ---------
 - split support for AreaSelect
+- data filtering in bound components: selected value for a master view should be set after data is loaded
 
 
 Fixes
