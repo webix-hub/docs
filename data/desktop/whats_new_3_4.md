@@ -12,16 +12,16 @@ New Features
 - [Formatted text inputs](desktop/formatted_text_inputs.md) (PRO edition)
 - [Area, Spline, Pie and Bar](datatable/sparklines.md#sparklinestypes) types for DataTable and TreeTable sparklines (PRO edition)
 - ["Frozen" rows](datatable/frozen_rows.md) feature for the DataTable (PRO edition)
-- showOption and hideOption for [Segmented](desktop/segmented.md#showingandhidingoptions) and [Tabbar](desktop/tabbar.md#showingandhidingoptions) controls
-- Ability to set [a custom size for an area where "resize" is detected](datatable/sizing.md#resizing) 
-- The [color](datatable/sparklines.md#settingsparklinescolors) property for Sparklines, [negativeColor](datatable/sparklines.md#neg_color) option for Bar-sparkline
-- Ability to [create a custom sorting type](desktop/filter_sort.md#addingcustomsortingtype)
 
 
 Updates
 ---------
+- showOption and hideOption for [Segmented](desktop/segmented.md#showingandhidingoptions) and [Tabbar](desktop/tabbar.md#showingandhidingoptions) controls
 - split support for AreaSelect
 - data filtering in bound components: selected value for a master view should be set after data is loaded
+- Ability to set [a custom size for an area where "resize" is detected](datatable/sizing.md#resizing) 
+- The [color](datatable/sparklines.md#settingsparklinescolors) property for Sparklines, [negativeColor](datatable/sparklines.md#neg_color) option for Bar-sparkline
+- Ability to [create a custom sorting type](desktop/filter_sort.md#addingcustomsortingtype)
 
 
 Fixes

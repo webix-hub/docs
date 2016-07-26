@@ -9,7 +9,7 @@ Start
 
 <h2>Meet Webix 3.4!</h2>
 <ul>
-	<li><a href="desktop/calendar.md#monthandyeartypes">'Month' and 'Year'</a> types for Calendar</li>
+	<li><a href="datatable/frozen_rows.md">"Frozen" rows</a> for the DataTable</li>
 	<li><a href="datatable/sparklines.md#sparklinestypes">Area, Spline, Pie and Bar</a> types of sparklines</li>
     <li><a href="desktop/formatted_text_inputs.md">Formatted Text Inputs</a></li>
 </ul>
