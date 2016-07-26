@@ -33,4 +33,4 @@ The properties of the context object are:
 - start - (string) the ID from which DnD started
 
 @relatedsample:
-Broken link: 64_file_manager/02_events/03_drag.html
+64_file_manager/02_events/03_drag.html

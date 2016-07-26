@@ -72,5 +72,6 @@ Fully written in JavaScript and CSS this component can be integrated in any web 
 - kanban/adding_items.md
 - kanban/work_with_data.md
 - kanban/editing_items.md
+- kanban/api_reference.md
 - kanban/events.md
 - kanban/howto.md
