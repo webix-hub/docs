@@ -1,10 +1,6 @@
 dragscroll
 =============
 
-@todo:
-	check 
-
-
 @short:
 	defines whether autoscroll will be enabled while dragging a data element or selected block
 

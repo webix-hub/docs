@@ -77,7 +77,7 @@ var datatable = webix.ui({
 - api/ui.datatable_filterbyall.md - refilters DataTable by all specified filters
 - api/link/ui.datatable_find.md - returns rows that match the criterion
 - api/link/ui.datatable_focuseditor.md - moves focus to the active editor
-- api/ui.datatable_freezerow.md - 
+- api/ui.datatable_freezerow.md - fixes a row at the top of the datatable "on the fly"
 - api/ui.datatable_getallselectareas.md - returns an object that contains configuration objects of all select areas in the datatable
 - api/link/ui.datatable_getchildviews.md - returns child views of the calling component
 - api/ui.datatable_getcolumnconfig.md - returns the configuration object of the specified column
@@ -355,7 +355,7 @@ var datatable = webix.ui({
 - api/ui.datatable_subrow_config.md - sets a subrow template
 - api/ui.datatable_subview_config.md - adds a subview configuration into datatable
 - api/link/ui.datatable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
-- api/ui.datatable_topsplit_config.md - 
+- api/ui.datatable_topsplit_config.md - defines the number of rows that will be "frozen" at the top of datatable
 - api/ui.datatable_type_config.md - used for configuring presentation of items
 - api/link/ui.datatable_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.datatable_width_config.md - sets the width of the component

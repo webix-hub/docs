@@ -1,8 +1,6 @@
 onBeforeAutoScroll
 =============
 
-@todo: check
-
 @short:
 	fires before autoscrolling has started
 
@@ -15,7 +13,7 @@ onBeforeAutoScroll
 - mode		boolean		returning <i>false</i> will prevent autoscrolling
 
 @example:
-$("datatable1").attachEvent("onBeforeAutoScroll", function(position){
+$$("datatable1").attachEvent("onBeforeAutoScroll", function(position){
 	// some code 
 });
 

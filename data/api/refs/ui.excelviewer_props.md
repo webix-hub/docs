@@ -84,7 +84,7 @@ Properties
 - api/link/ui.excelviewer_subview_config.md - adds a subview configuration into datatable
 - api/ui.excelviewer_toolbar_config.md - 
 - api/link/ui.excelviewer_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
-- api/link/ui.excelviewer_topsplit_config.md - 
+- api/link/ui.excelviewer_topsplit_config.md - defines the number of rows that will be "frozen" at the top of datatable
 - api/link/ui.excelviewer_type_config.md - used for configuring presentation of items
 - api/link/ui.excelviewer_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.excelviewer_width_config.md - sets the width of the component

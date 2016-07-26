@@ -41,7 +41,7 @@ Methods
 - api/link/ui.excelviewer_filterbyall.md - refilters DataTable by all specified filters
 - api/link/ui.excelviewer_find.md - returns rows that match the criterion
 - api/link/ui.excelviewer_focuseditor.md - moves focus to the active editor
-- api/link/ui.excelviewer_freezerow.md - 
+- api/link/ui.excelviewer_freezerow.md - fixes a row at the top of the datatable "on the fly"
 - api/link/ui.excelviewer_getchildviews.md - returns child views of the calling component
 - api/link/ui.excelviewer_getcolumnconfig.md - returns the configuration object of the specified column
 - api/link/ui.excelviewer_getcolumnindex.md - returns the index of the column with the specified id
