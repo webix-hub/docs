@@ -3,13 +3,13 @@ HTMLform
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.htmlform.html)
+- [Methods, properties and events](api/refs/ui.htmlform.md)
 - [Samples](http://docs.webix.com/samples/11_htmlform/index.html)
 
 ##Overview
 
-Though the webix library has its own [form](desktop/form.md) component, there exists a possibility to create a separate form made with the help of
-pure HTML.  This is done within the special **htmlform** component. 
+Though the Webix library has its own [Form](desktop/form.md) component, there exists a possibility to create a separate form made with the help of
+pure HTML. This is done within the special **HTMLform** component. 
 
 <br>
 
@@ -18,9 +18,9 @@ pure HTML.  This is done within the special **htmlform** component.
 
 ##Initialization
 
-There're three ways of embedding a form into the component: 
+There are three ways of embedding a form into the component: 
 
-####1 . Through content property:
+####1 . Through the "content" property:
 
 Content property may either point the **ID** of **DIV container** where the form lies or to **document.body** if it is included directly into your web page body. 
 
@@ -45,9 +45,9 @@ webix.ui({
 
 {{sample 11_htmlform/01_htmlform_body.html }}
 
-####2 . With the help of template property:
+####2 . With the help of the "template" property:
 
-- Template value may inlude the **ID** of a **DIV container** where form fields lie
+- Template value may include the **ID** of a **DIV container** where form fields lie
 
 {{snippet
 HTMLform, template
@@ -72,7 +72,7 @@ webix.ui({
 - or it points to **external html-file** with a form:
 
 {{snippet
-HTMLform, http
+HTMLform, HTTP
 }}
 ~~~js
 webix.ui({
@@ -96,11 +96,11 @@ In this case, standard rules of markup initialization are used and the **markup*
 - **HTML**: **form** tag receives new attributes;
 	- **data-view** to indicate the component (here it is an *htmlform*);
     - standard htmlform properties with 'data' prefix (*data-id, data-height*, etc.);
-- **XML**: There're special tags with 'x:' prefix: 
+- **XML**: There are special tags with 'x:' prefix: 
 	- **< x:ui >** to indicate a webix UI constructor 
     - **< x:htmlform** > to indicate a component you want to init.
 
-Form elements are created accirding to standard HTML.
+Form elements are created according to standard HTML.
 
 {{snippet
 HTMLform, HTML markup
@@ -134,7 +134,7 @@ webix.ready(function(){
 });
 ~~~
 
-Regardless of the initialization pattern, all the commom HTMLform functions work fine: 
+Regardless of the initialization pattern, all the common HTMLform functions work fine: 
 
 {{sample 23_markup/01_html/02_form.html  }}
 
@@ -176,7 +176,7 @@ webix.send("come.php", form.getValues());
 3 . Indirectly, via the **bound master** component or DataCollection: 
 
 The method is good when the form is used for editing the data of the main component (datatable, tree, list, etc.). In this case not the form data matters
-but the data of the main component. Form saves the data to the master component while the master handles the serverside part. 
+but the data of the main component. Form saves the data to the master component while the master handles the server side part. 
 
 ~~~js
 //data from selected list item is pushed to the form

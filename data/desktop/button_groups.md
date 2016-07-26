@@ -33,4 +33,4 @@ webix.ui({
 });
 ~~~
 
-The toolbar above will initially work with icons measuring 18 pixels in width while the width of the button itself is calculated withtin the function. 
+The toolbar above will initially work with icons measuring 18 pixels in width while the width of the button itself is calculated within the function. 

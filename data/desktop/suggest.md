@@ -358,10 +358,10 @@ The functionality is available in **Webix Pro** edition only.
 
 Webix offers advanced suggest controls for width extra functionality and greater visual effect:
 
-- **checksuggest** - a suggest control based on Webix [list](desktop/list.md). Features checkboxes that enable multiple choice;
-- **multisuggest** - a suggest control based on Webix [list](desktop/list.md) with the ability to select **multiple items** at a time;
-- **gridsuggest** - a suggest control based on Webix [datatable](datatable/index.md);
-- **datasuggest** - a suggest control based on Webix [dataview](desktop/dataview.md).
+- **Checksuggest** - a suggest control based on Webix [list](desktop/list.md). Features checkboxes that enable multiple choice;
+- **Multisuggest** - a suggest control based on Webix [list](desktop/list.md) with the ability to select **multiple items** at a time;
+- **Gridsuggest** - a suggest control based on Webix [datatable](datatable/index.md);
+- **Datasuggest** - a suggest control based on Webix [dataview](desktop/dataview.md).
 
 ###Checksuggest
 
@@ -380,7 +380,7 @@ Checksuggest control is used in a number of **PRO** controls. You can find its i
 
 Multisuggest control is used in a [multiselect component editor](desktop/editing.md#multiselect). 
 
-If needed, it can substitute checksuggest for the above-mentioned use cases. See desktop/advanced_combo.md for details.
+If needed, it can substitute Checksuggest for the above-mentioned use cases. See desktop/advanced_combo.md for details.
 
 ###Gridsuggest 
 

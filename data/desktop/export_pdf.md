@@ -12,7 +12,7 @@ The described functionality is available both in Standard and Pro versions, but 
 To export a component into a PDF file, you need to call the api/_topdf.md method. The method takes the next parameters:
 
 - **id** - (string, object) id or object of the exported view 
-- **name** - (string) optional, name of an exported png file
+- **config** - (object) optional, configuration options
 
 For example, if you want to export a list to a PDF file, you need to call the toPDF() method with the list id as a parameter:
 
@@ -32,11 +32,30 @@ webix.toPDF($$("mylist"));
 Customizing Export to PDF
 -------------------------
 
-The toPDF() method returns all data specified in the dataset of a component without any data formatting. However, you may 
-need to get data from some particular fields. 
+The toPDF() method returns all data specified in component **dataset** or in the **columns** parameter of a datatable view. The data is exported into a PDF document with "data" name.
 
+However, you may need to get some particular data or customize file properties. 
 
 **Export API allows** 
+
+- providing a custom **filename**: 
+
+~~~js
+webix.toPDF($$("table"), {
+     filename: "datatable"
+});
+~~~
+
+{{sample 15_datatable/10_export/06_pdf.html }}
+
+
+- **stripping HTML tags** from the cells:
+
+~~~js
+webix.toExcel($$("table"), {
+     filterHTML:true
+});
+~~~
 
 - setting **columns** you'd like to see in the export file 
 
@@ -66,7 +85,7 @@ The column will be rendered with the stated additional properties, which may dif
 - **including extra fields** into export by forming them right within the export function:
 
 ~~~js
-webix.toPDF(list, { 
+webix.toPDF($$("mylist"), { 
 	columns:{ 
 		Custom1:{
 			template:function(obj){

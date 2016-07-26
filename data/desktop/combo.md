@@ -3,7 +3,7 @@ Combo
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.combo.html)
+- [Methods, properties and events](api/refs/ui.combo.md)
 - [Shared functionality](desktop/controls_guide.md)
 
 ##Overview
@@ -61,7 +61,7 @@ var list = popup.getList();
 Combo box control can be customized in a number of ways, e.g.: 
 
 - options can be defined dynamically;
-- options can be loaded from serverside;
+- options can be loaded from the server side;
 - template can be changed;
 - filtering rule can be changed..
 
@@ -76,7 +76,8 @@ In the **Webix Pro** edition the control can be extended to show either a **data
 
 ##Getting Current Value
 
-In case of a full initialization form, the **getValue()** method for combo will return ID of selected option rather than text. Use **getInputNode()** to get to input object and, hence, the text value.  
+In case of a full initialization form, the **getValue()** method for combo will return ID of selected option rather than text. 
+Use **getInputNode()** to get to input object and, hence, the text value.  
 
 ~~~js
 $$('field_t').getValue(); // ->returns 1
@@ -88,5 +89,6 @@ $$('field_t').getInputNode().value // -> returns "One"
 ##Alternatives to Combo Box
 
 - [richselect](desktop/richselect.md) - identical to combo in look, but text field is non-editable. 
-- [text](desktop/text.md) coupled with [suggest list](desktop/suggest.md). Indentical to combo in look, but while combo requires selection from a popup list, suggest offers values that can be either chosen or ignored. 
+- [text](desktop/text.md) coupled with [suggest list](desktop/suggest.md). Identical to combo in look, but while combo requires selection from a popup list, suggest offers values that can be either chosen or ignored. 
 
+@spellcheck: usingdatasuggestforformcontrols, usinggridsuggestforformcontrols 

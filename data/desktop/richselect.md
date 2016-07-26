@@ -56,7 +56,7 @@ Another possibility to create a component with a similar functionality is [attac
 Richselect control can be customized in a number of ways, e.g.: 
 
 - options can be defined dynamically;
-- options can be loaded from serverside;
+- options can be loaded from server side;
 - template can be changed..
 
 To learn more, go to [Advanced Settings of Popup Selectors](desktop/advanced_combo.md) article. 
@@ -88,3 +88,5 @@ $$('field_t').getValue(); // ->returns 1
 
 $$('field_t').getText() // -> returns "One"
 ~~~
+
+@spellcheck:usingdatasuggestforformcontrols,usinggridsuggestforformcontrols 

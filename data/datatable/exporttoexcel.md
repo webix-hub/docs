@@ -1,7 +1,7 @@
 Export to Excel
 ===================
 
-To export data from datatable/treetable into an Excel document, you need to call the **toExcel()** method.  
+To export data from datatable/treetable into an Excel document, you need to call the api/_toexcel.md method.  
 The method takes 2 parameters:
 
 - **id** - (string, object)  the exported view or its id
@@ -30,11 +30,30 @@ webix.toExcel($$("myDataTable"));
 Customizing Export
 ---------------------
 
-The toExcel() method returns all data specified in the **columns** parameter of the datatable view. The data is exported into an Excel document with "table" name and "Data" sheet name.
+The toExcel() method returns all data specified in the **columns** parameter of a datatable view. The data is exported into an Excel document with "Data" name and "Data" sheet name.
 
-However, you may need to get data from other fields as well as restrict the number of fields in the export file, or customize file and sheet names.
+However, you may need to get some particular data, or customize file and sheet names.
 
-All in all, export API allows:
+**Export API allows**
+
+- providing a custom **filename** and sheet **name**: 
+
+~~~js
+webix.toExcel($$("table"), {
+     filename: "table", // for filename
+     name: "Films" // for sheet name
+});
+~~~
+
+{{sample 15_datatable/10_export/01_excel.html}}
+
+- **stripping HTML tags** from the cells: 
+
+~~~js
+webix.toExcel($$("table"), {
+     filterHTML:true
+});
+~~~
 
 - setting **columns** you'd like to see in the export file. 
 

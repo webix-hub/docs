@@ -7,7 +7,7 @@ The control is available only in **Webix Pro** edition.
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.rangeslider.html)
+- [Methods, properties and events](api/refs/ui.rangeslider.md)
 - [Shared functionality](desktop/controls_guide.md)
 
 ##Overview 

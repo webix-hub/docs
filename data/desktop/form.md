@@ -3,13 +3,13 @@ Form
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.form.html)
+- [Methods, properties and events](api/refs/ui.form.md)
 - [Samples](http://docs.webix.com/samples/13_form/index.html)
 
 ##Overview
 
-Any form is a means of getting an information from users. It contains input fields and select components like checkboxes,
-radiobuttons alongside with submit/cancel buttons depending on the situation. Find them all in our [Controls Guide](desktop/controls.md).
+Any form is a means of getting some information from users. It contains input fields and select components like checkboxes,
+radio buttons alongside with submit/cancel buttons depending on the situation. Find them all in our [Controls Guide](desktop/controls.md).
 
 <br>
 
@@ -164,7 +164,7 @@ Form **elements** can be divided into columns and rows with any level of complex
 ]}
 ~~~
 
-To add user-friendliness to form interface, separated blockes can be set within it by:
+To add user-friendliness to form interface, separated blocks can be set within it by:
 
 - Adding **headers** with **section** type before control blocks;
 - Dividing a form into **fieldsets**.
@@ -195,9 +195,10 @@ Form elements are placed into different **row arrays** where the first row is a 
 
 {{sample 13_form/01_controls/18_sections.html}}
 
-**Fieldsets**
+**Fieldset**
 
-[Fieldset](desktop/fieldset.md) is a collection of controls surrounded by a border from all the sides. Webix fieldset features text **label** and **body** where **rows** or **cols** array of controls are stored:
+[Fieldset](desktop/fieldset.md) is a collection of controls surrounded by a border from all the sides. 
+Webix Fieldset features text **label** and **body** where **rows** or **cols** array of controls are stored:
 
 ~~~js
 {view:"form", elements:[
@@ -220,7 +221,8 @@ Form elements are placed into different **row arrays** where the first row is a 
             
 ###Multiview Form
 
-Form field can be placed into different tabs thus forming a [multiview](desktop/multiview.md) layout. Switching between tabs there is implemented with [tabbar and segmented](desktop/tabbar_switching.md) 
+Form field can be placed into different tabs thus forming a [multiview](desktop/multiview.md) layout. 
+Switching between tabs there is implemented with [tabbar and segmented](desktop/tabbar_switching.md) 
 buttons as well as with the help of the dedicated [tabview](desktop/tabview.md). 
 
 The switching controls are placed directly into the array of form **elements**.
@@ -272,7 +274,8 @@ $$("log").getValue();
 
 **Getting values of all form elements**
 
-To get an associative array of all elements (*name:value* pairs) you can use api/link/ui.form_getvalues.md method. To get to the necessary value, you should specify the **name** of the needed control. 
+To get an associative array of all elements (*name:value* pairs) you can use api/link/ui.form_getvalues.md method.
+To get to the necessary value, you should specify the **name** of the needed control. 
 
 ~~~js
 var values = $$("my_form").getValues(); //returns { login:"", email:"", submit:"" }
@@ -288,17 +291,16 @@ Additionally, you can get only **changed** and **unchanged** form values with th
 
 ##Disabling Form Elements
 
-Any form element can be **disabled** or switched to **readonly** mode. 
+Any form element can be **disabled** or switched to the **readonly** mode. 
 
 ~~~js
-
 var form2 = [
-		{ view:"header" }
-		{ view:"text", value:'..', label:".."},
-		{ view:"text", type:'..', value:'..', label:".."},
+	{ view:"header" }
+	{ view:"text", value:'..', label:".."},
+	{ view:"text", type:'..', value:'..', label:".."},
 ]
 
-form2[i].readonly = true; //where "i" takes the number value of the element staring from 0.
+form2[i].readonly = true; // where "i" takes the number value of the element starting from 0.
 form2[i].disabled = true; 
 ~~~
 
@@ -312,11 +314,13 @@ If you want to track the moment when the value in an input changes from one to a
 
 The event is attached to element object that can be retrieved by its **ID** or **name**.
 
-The attached function can be any you wish. Here is an example of logging the changes. The old value comes as **oldv** parameter while the new one is referred as **newv**
+The attached function can be any you wish. Here is an example of logging the changes. 
+The old value comes as **oldv** parameter while the new one is referred to as **newv**:
 
 ~~~js
 $$("form1").elements["login"].attachEvent("onChange", function(newv, oldv){
-			webix.message("Value changed from: "+oldv+" to: "+newv);
+	webix.message("Value changed from: "+oldv+" to: "+newv);
+}
 ~~~
 
 {{sample 13_form/02_api/07_onchange_event.html }}
@@ -343,7 +347,7 @@ webix.ajax().post("some.php", form.getValues());
 webix.ajax().post("some.php", form.getValues(), function(text, data, xhr){ });
 ~~~
 
-2 . Using [webix.send](api/_send.md) method that emulates HTML form submitting: 
+2 . Using [webix.send](api/_send.md) method that emulates HTMLform submitting: 
 
 ~~~js
 webix.send("come.php", form.getValues());
@@ -352,7 +356,7 @@ webix.send("come.php", form.getValues());
 3 . Indirectly, via the **bound master component** or DataCollection: 
 
 The method is good when the form is used for editing the data of the main component (datatable, tree, list, etc.). In this case not the form data matters
-but the data of the main component. Form saves the data to the master component while the master handles the serverside part. 
+but the data of the main component. Form saves the data to the master component while the master handles the server side part. 
 
 ~~~js
 //data from selected list item is pushed to the form
@@ -378,3 +382,4 @@ Data binding concept is described in a [separate documentation article](desktop/
 - [Data Binding](desktop/data_binding.md)
 - [Creating Message Boxes](desktop/message_boxes.md)
 
+@spellcheck: newv, oldv, api, fieldsets

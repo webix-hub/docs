@@ -13,7 +13,7 @@ The control is available only in **Webix Pro** edition.
 ##Overview
 
 Multicombo is an editable control that allows for choosing several options at a time from a dedicated popup list, 
-the [checksuggest](api/refs/ui.checksuggest.md). 
+[Checksuggest](api/refs/ui.checksuggest.md). 
 
 <img src="desktop/multicombo_message.png">
 

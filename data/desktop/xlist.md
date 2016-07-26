@@ -1,4 +1,4 @@
-X-list
+X-List
 ===============
 
 ##Overview
@@ -22,7 +22,7 @@ webix.ui({
 });
 ~~~
 
-##Working with X-list
+##Working with X-List
 
 - [Data Loading](desktop/data_loading.md). 
 - [Defining Data Template](desktop/template.md).
@@ -49,4 +49,4 @@ Note that there's no built-in possibility to edit data with list. You should cre
 - [List](desktop/list.md)
 - [Unitlist](desktop/unitlist.md)
 - [Grouplist](desktop/grouplist.md)
-- [XList CSS Image Map](desktop/xlist_css.md)
+- [X-List CSS Image Map](desktop/xlist_css.md)
