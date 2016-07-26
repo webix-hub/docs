@@ -1,0 +1,1 @@
+@link: api/destruction_destructor.md

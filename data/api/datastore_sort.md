@@ -6,7 +6,7 @@ sort
 	sorts datastore
 
 @params:
-- by		string		the name(s) of property(s) by which data will be sorted
+- by		string		the name(s) of property(ies) by which data will be sorted
 * dir		string		the sorting direction, "asc" by default 
 * as		string		the type of data, "string" by default
 
@@ -95,5 +95,6 @@ Possible values for the second parameter of the **sort** method is string which 
 The third parameter of the **sort** method may be string which represents the data type: 
 
 - "int" - sorts as integer values
-- "string" - sorts as string
-- "string_strict" - sorts as string, case-sensitive
+- "date" - sorts as dates
+- "string" - sorts as strings
+- "string_strict" - sorts as strings, case-sensitive

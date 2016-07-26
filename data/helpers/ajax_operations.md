@@ -1,4 +1,4 @@
-Ajax operations
+Ajax Operations
 ==================
 
 Sending Data

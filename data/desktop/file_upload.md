@@ -43,7 +43,7 @@ webix.ui({
 - uploader **ID** should be specified in case you are going to work with it later;
 - **value** (string) - text value of the uploader button;
 - **link** (string) - the ID of a component to display values of chosen files;
-- **upload** (path) - path to a script file that will handle uploading;
+- **upload** (string) - path to a script file that will handle uploading;
 - **multiple** (boolean) - *true* by default. Set to *false*, it enables removing the previously added file and replacing it with a new one so that you can upload only one file at a time;
 - **autosend** (boolean) - *true* by default. Set to *false*, it cancels on-the-go file processing. The files are added to the uploader body only. They can be sent to server by calling the 
 [send()](api/ui.uploader_send.md) method later on;

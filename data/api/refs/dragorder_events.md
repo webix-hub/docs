@@ -2,8 +2,8 @@ Events
 =======
 
 {{api
-- api/dragorder_onafterdroporder_event.md - called when dnd reording fully finished
-- api/dragorder_onbeforedroporder_event.md - called when dnd reording was made, but not applied yet
+- api/dragorder_onafterdroporder_event.md - called when dnd reordering is fully finished
+- api/dragorder_onbeforedroporder_event.md - called when dnd reordering has been made, but not applied yet
 }}
 
 @index:

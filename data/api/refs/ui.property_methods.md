@@ -46,7 +46,7 @@ Methods
 - api/ui.property_setvalues.md - sets values into the inputs of a form/toolbar/property sheet control
 - api/link/ui.property_show.md - makes the component visible
 - api/ui.property_showitem.md - 'scrolls' the table to make the specified row visible
-- api/link/ui.property_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.property_sync.md - allows you to sync two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.property_unbind.md - breaks "bind" link
 - api/link/ui.property_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/ui.property_updateitem.md - alias for refresh, repaints property view

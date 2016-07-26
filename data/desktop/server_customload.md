@@ -1,4 +1,4 @@
-Customizing Loading Pattern. Ajax Loading and Parsing 
+Customizing Loading Pattern with Ajax 
 ================================
 
 By default Webix loads data to its component by an asynchronous Ajax GET request. However, various modifications are possible. 

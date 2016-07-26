@@ -1,0 +1,1 @@
+@link: api/renderstack_template_config.md

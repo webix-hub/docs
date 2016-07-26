@@ -468,6 +468,7 @@ table.webixtoc td{
 - api/refs/ui.dataview.md
 - api/refs/ui.datepicker.md
 - api/refs/ui.fieldset.md
+- api/refs/ui.filemanager.md
 - api/refs/ui.form.md
 - api/refs/ui.gridsuggest.md
 - api/refs/ui.grouplist.md
@@ -475,6 +476,7 @@ table.webixtoc td{
 - api/refs/ui.htmlform.md
 - api/refs/ui.icon.md
 - api/refs/ui.iframe.md
+- api/refs/ui.kanban.md
 - api/refs/ui.label.md
 - api/refs/ui.layout.md
 - api/refs/ui.list.md
@@ -486,6 +488,7 @@ table.webixtoc td{
 - api/refs/ui.multiview.md
 - api/refs/ui.organogram.md
 - api/refs/ui.pager.md
+- api/refs/ui.pivot.md
 - api/refs/ui.popup.md
 - api/refs/ui.portlet.md
 - api/refs/ui.property.md

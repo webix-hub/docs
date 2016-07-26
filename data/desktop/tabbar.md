@@ -14,8 +14,6 @@ images and icons.
 <img src="desktop/tabbar.png" />
 
 
-
-
 ##Initialization
 
 
@@ -66,6 +64,37 @@ Tabs featuring a **close** property in the tab configuration gain the ability to
 ~~~
 
 {{sample 20_multiview/11_close_button.html}}
+
+##Showing and Hiding Options
+
+There's a possibility to hide and show tabs using Tabbar API. To apply this feature, make use of the api/link/ui.tabbar_showoption.md
+and api/link/ui.tabbar_hideoption.md methods correspondingly.
+Both methods take the view id as a parameter.
+
+For example, you can hide a form view placed into one of the tabs:
+
+~~~js
+webix.ui({
+	rows:[
+		tabbar,
+		data,
+		{view: "form", cols:[
+			{},
+			{ view:"toggle", offLabel:"Hide Form", onLabel:"Show Form", on:{
+				onChange: function(value){
+					if(value)
+						$$("tabbar").hideOption("formView");
+					else
+						$$("tabbar").showOption("formView");
+				}
+			}}
+		]}
+	]
+});
+~~~
+
+
+{{sample 20_multiview/14_hide_options.html}}
 
 ##Tab Icons
 

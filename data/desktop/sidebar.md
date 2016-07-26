@@ -1,6 +1,15 @@
 Sidebar
 ==========
 
+External resources
+-------------------
+
+- This component isn't included into the library package and should be taken from [https://github.com/webix-hub/components](https://github.com/webix-hub/components)
+- There is an online sample at [docs.webix.com/samples](http://docs.webix.com/samples/28_sidemenu/01_sidebar.html)
+
+Overview
+----------
+
 Webix Sidebar is a datatree/index.md-based component which is used for creating menus with hierarchical structure. 
 
 {{note

@@ -7,14 +7,14 @@ Start
 <div class='index-pc'></div>
 <div class='index-board'>
 
-<h2>Meet Webix 3.3!</h2>
+<h2>Meet Webix 3.4!</h2>
 <ul>
-	<li>New layout widgets: <a href="desktop/absolute_layout.md">AbsLayout</a> and <a href="desktop/data_layout.md">DataLayout</a></li>
-	<li><a href="desktop/dnd.md">Drag-n-drop</a> for component items on touch devices</li>
-    <li><a href="datatable/sparklines.md">Sparklines</a> for DataTable and TreeTable</li>
+	<li><a href="datatable/frozen_rows.md">"Frozen" rows</a> for the DataTable</li>
+	<li><a href="datatable/sparklines.md#sparklinestypes">Area, Spline, Pie and Bar</a> types of sparklines</li>
+    <li><a href="desktop/formatted_text_inputs.md">Formatted Text Inputs</a></li>
 </ul>
 
-<p> and <a href="desktop/whats_new_3_3.md">many more...</a></p>
+<p> and <a href="desktop/whats_new_3_4.md">many more...</a></p>
 <a href='http://webix.com/download/' class='index-download' title='Download Webix'></a>
 </div>
 

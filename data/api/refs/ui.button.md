@@ -60,7 +60,7 @@ var button = webix.ui({
 - api/link/ui.button_resize.md - adjusts the view to a new size
 - api/ui.button_setvalue.md - sets a new value for the component
 - api/link/ui.button_show.md - makes the component visible
-- api/link/ui.button_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.button_sync.md - allows you to sync two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.button_unbind.md - breaks "bind" link
 - api/link/ui.button_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}

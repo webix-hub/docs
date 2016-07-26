@@ -32,7 +32,7 @@ Methods
 - api/ui.calendar_selectdate.md - selects the specified date
 - api/ui.calendar_setvalue.md - sets a new value for the component
 - api/link/ui.calendar_show.md - makes the component visible
-- api/ui.calendar_showcalendar.md - makes the specified date displayed in the calendar
+- api/ui.calendar_showcalendar.md - shows the calendar according to the year and month set in the specified date
 - api/link/ui.calendar_unbind.md - breaks "bind" link
 - api/link/ui.calendar_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}

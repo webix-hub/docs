@@ -10,7 +10,7 @@ DataTable
 
 <a href="http://webix.com/widget/datatable/" title="javascript datatable component">DataTable</a> is a pure JavaScript component that provides professional look-and-feel 
 and convenient programming model for displaying data in a scrollable and sortable table.
-It&#146;s a powerful yet easy-to-use  control <br> that supports different data sources (xml, json, csv, jsarray, html tables) 
+It&#146;s a powerful yet easy-to-use  control <br> that supports different data sources (XML, JSON, CSV, JSArray, HTML tables) 
 and has various possibilities (filtering, sorting, pagination, resizing, styling, copying etc.) 
 still being  very fast handling  thousands of records.<a href="datatable/overview.md"> Read more...</a>
         
@@ -71,9 +71,11 @@ still being  very fast handling  thousands of records.<a href="datatable/overvie
                 <li><a href="datatable/formatting.md">Number and date formatting</a></li>
 				<li><a href="datatable/styling.md">Styling</a></li>
 				<li><a href="datatable/frozen_columns.md">Split mode or 'frozen columns'</a></li>
+                <li><a href="datatable/frozen_rows.md">Frozen rows</a></li>
             </ul>
         </td>
-		<td class='topic_description'>Focuses on how to fine-tune the DataTable appearance: applying templates to the data, 'freezing' columns, redefining the default component CSS classes, etc.</td>
+		<td class='topic_description'>Focuses on how to fine-tune the DataTable appearance: applying templates to the data, 'freezing' columns and rows, 
+        redefining the default component CSS classes, etc.</td>
 	</tr>
 	<tr>
     	<td class='topics'>

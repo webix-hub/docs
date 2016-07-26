@@ -32,7 +32,7 @@ Methods
 - api/link/ui.textarea_setbottomtext.md - sets the input label at the bottom of it
 - api/link/ui.textarea_setvalue.md - sets a new value for the component
 - api/link/ui.textarea_show.md - makes the component visible
-- api/link/ui.textarea_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.textarea_sync.md - allows you to sync two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.textarea_unbind.md - breaks "bind" link
 - api/link/ui.textarea_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.textarea_validate.md - validates value of input

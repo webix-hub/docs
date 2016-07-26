@@ -32,7 +32,7 @@ Methods
 - api/link/ui.checkbox_setbottomtext.md - sets the input label at the bottom of it
 - api/link/ui.checkbox_setvalue.md - sets a new value for the component
 - api/link/ui.checkbox_show.md - makes the component visible
-- api/link/ui.checkbox_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.checkbox_sync.md - allows you to sync two copies of data (all or just a part of it) from one DataCollection to another
 - api/ui.checkbox_toggle.md - swiches between states of the control ('checked' to 'unchecked' and vice-versa)
 - api/link/ui.checkbox_unbind.md - breaks "bind" link
 - api/link/ui.checkbox_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command

@@ -18,11 +18,13 @@ Properties
 - api/link/ui.textarea_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.textarea_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/link/ui.textarea_id_config.md - the component ID
+- api/link/ui.textarea_inputalign_config.md - the alignment of an input towards its container
 - api/link/ui.textarea_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.textarea_inputpadding_config.md - padding of text in the input
 - api/link/ui.textarea_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.textarea_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.textarea_label_config.md - the text label of the control
+- api/link/ui.textarea_labelalign_config.md - the alignment of a label towards its container
 - api/link/ui.textarea_labelposition_config.md - positions label in relation to the control
 - api/link/ui.textarea_labelwidth_config.md - the width of the label
 - api/link/ui.textarea_maxheight_config.md - sets the maximum height for the view
@@ -31,6 +33,7 @@ Properties
 - api/link/ui.textarea_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.textarea_name_config.md - name of the control
 - api/link/ui.textarea_on_config.md - allows attaching custom handlers to inner events of the component
+- api/link/ui.textarea_pattern_config.md - a formatting pattern applied to a text input
 - api/link/ui.textarea_placeholder_config.md - placeholder text for the input area
 - api/link/ui.textarea_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.textarea_readonly_config.md - configures readonly mode for the input
@@ -63,11 +66,13 @@ Properties
 - api/link/ui.textarea_hidden_config.md
 - api/link/ui.textarea_hotkey_config.md
 - api/link/ui.textarea_id_config.md
+- api/link/ui.textarea_inputalign_config.md
 - api/link/ui.textarea_inputheight_config.md
 - api/link/ui.textarea_inputpadding_config.md
 - api/link/ui.textarea_inputwidth_config.md
 - api/link/ui.textarea_invalidmessage_config.md
 - api/link/ui.textarea_label_config.md
+- api/link/ui.textarea_labelalign_config.md
 - api/link/ui.textarea_labelposition_config.md
 - api/link/ui.textarea_labelwidth_config.md
 - api/link/ui.textarea_maxheight_config.md
@@ -76,6 +81,7 @@ Properties
 - api/link/ui.textarea_minwidth_config.md
 - api/link/ui.textarea_name_config.md
 - api/link/ui.textarea_on_config.md
+- api/link/ui.textarea_pattern_config.md
 - api/link/ui.textarea_placeholder_config.md
 - api/link/ui.textarea_popup_config.md
 - api/link/ui.textarea_readonly_config.md

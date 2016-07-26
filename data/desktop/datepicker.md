@@ -32,6 +32,39 @@ Datepicker is used in a combination with ui-related [calendar](desktop/calendar.
 - **format** (string) - sets a date format to display in the datepicker field. By default it is "%Y-%m-%d". 
 - **type** (string) - (optional) sets the datepicker type: 
 	- "time" - configures datepicker for time selection only (uses [webix.i18n.timeFormat](api/i18n_timeformat_other.md) as formatting pattern)
+    - "month" - configures datepicker to display a calendar in the "month" mode
+    - "year" - configures datepicker to display a calendar in the "year" mode
+
+
+##"Month" and "Year" Calendar modes
+
+Datepicker calendar can be shown in the month or year mode. To set one of these modes, use the *type* property with either "month" or "year" value:
+
+###Month mode
+
+<img src="desktop/datepicker_month.png"/>
+
+~~~js
+webix.ui({
+	view:"toolbar", 
+	elements:[
+	    {view:"datepicker", align: "right",label: 'Select Date', type:"month"} 
+	]}
+);
+~~~
+
+###Year mode
+
+<img src="desktop/datepicker_year.png"/>
+
+~~~js
+webix.ui({
+	view:"toolbar", 
+	elements:[
+	    {view:"datepicker", align: "right",label: 'Select Date', type:"year"} 
+	]}
+);
+~~~
 
 ##Time selector 
 
@@ -46,6 +79,7 @@ If you need to select time (hours and minutes) only, use the datepicker with *ty
 {{note
 Dates are formatted according to the helpers/date_formatting_methods.md.
 }}
+
 
 ##Disabling date and time slots
 

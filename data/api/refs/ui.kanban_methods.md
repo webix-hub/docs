@@ -1,0 +1,121 @@
+Methods
+=======
+
+{{api
+- api/link/ui.kanban_add.md - adds an item to the store
+- api/link/ui.kanban_addview.md - add new view to layout-like component
+- api/link/ui.kanban_adjust.md - adjusts the component to the size of the parent HTML container
+- api/link/ui.kanban_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.kanban_bind.md - binds components
+- api/link/ui.kanban_blockevent.md - temporarily blocks triggering of ALL events of the calling object
+- api/link/ui.kanban_callevent.md - calls an inner event
+- api/link/ui.kanban_clearall.md - removes all items from the component
+- api/link/ui.kanban_count.md - returns the number of currently visible items
+- api/link/ui.kanban_define.md - redefines a single configuration property (or a hash of properties)
+- api/link/ui.kanban_destructor.md - destructs the calling object
+- api/link/ui.kanban_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
+- api/link/ui.kanban_disable.md - disables the calling view (makes it dimmed and unclickable)
+- api/ui.kanban_eachlist.md - iterates over all lists in Kanban and calls a function for them
+- api/link/ui.kanban_enable.md - enables the calling view that was disabled by the 'disable' method
+- api/link/ui.kanban_exists.md - checks whether an item with the specified id exists
+- api/link/ui.kanban_filter.md - filters the component
+- api/link/ui.kanban_find.md - returns rows that match the criterion
+- api/link/ui.kanban_getchildviews.md - returns child views of the calling component
+- api/link/ui.kanban_getfirstid.md - returns the ID of the first item
+- api/link/ui.kanban_getformview.md - returns master form for the input
+- api/link/ui.kanban_getidbyindex.md - returns the id of the item with the specified index
+- api/link/ui.kanban_getindexbyid.md - returns the index of the item with the specified id
+- api/link/ui.kanban_getitem.md - gets the object of the data item with the specified id
+- api/link/ui.kanban_getlastid.md - returns the id of the last item
+- api/link/ui.kanban_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
+- api/link/ui.kanban_getnode.md - returns the main HTML container for the calling object
+- api/ui.kanban_getownerlist.md - returns Kanbanlist view that displays an item
+- api/link/ui.kanban_getparentview.md - returns the parent view of the component
+- api/link/ui.kanban_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
+- api/ui.kanban_getselectedid.md - returns the id of the selected task
+- api/link/ui.kanban_gettopparentview.md - returns top parent view
+- api/link/ui.kanban_hasevent.md - checks whether the component has the specified event
+- api/link/ui.kanban_hide.md - hides the view
+- api/link/ui.kanban_index.md - returns the cell index in the layout collection
+- api/link/ui.kanban_isenabled.md - checks whether the view is enabled
+- api/link/ui.kanban_isvisible.md - checks whether the view is visible
+- api/link/ui.kanban_load.md - loads data from an external data source.
+- api/link/ui.kanban_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
+- api/link/ui.kanban_mapevent.md - routes events from one object to another
+- api/link/ui.kanban_parse.md - loads data to the component from an inline data source
+- api/link/ui.kanban_reconstruct.md - rebuilds the layout
+- api/link/ui.kanban_refresh.md - repaints the whole view or a certain item
+- api/link/ui.kanban_remove.md - removes the specified item/items from datastore
+- api/link/ui.kanban_removeview.md - removes view from layout-like component
+- api/link/ui.kanban_resize.md - adjusts the view to a new size
+- api/link/ui.kanban_resizechildren.md - resizes all children of the calling component
+- api/ui.kanban_select.md - selects the specified task
+- api/link/ui.kanban_serialize.md - serializes data to a JSON object
+- api/link/ui.kanban_show.md - makes the component visible
+- api/link/ui.kanban_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
+- api/link/ui.kanban_sort.md - sorts datastore
+- api/link/ui.kanban_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.kanban_unbind.md - breaks "bind" link
+- api/link/ui.kanban_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
+- api/link/ui.kanban_updateitem.md - sets properties of the data item
+}}
+
+@index:
+- api/link/ui.kanban_add.md
+- api/link/ui.kanban_addview.md
+- api/link/ui.kanban_adjust.md
+- api/link/ui.kanban_attachevent.md
+- api/link/ui.kanban_bind.md
+- api/link/ui.kanban_blockevent.md
+- api/link/ui.kanban_callevent.md
+- api/link/ui.kanban_clearall.md
+- api/link/ui.kanban_count.md
+- api/link/ui.kanban_define.md
+- api/link/ui.kanban_destructor.md
+- api/link/ui.kanban_detachevent.md
+- api/link/ui.kanban_disable.md
+- api/ui.kanban_eachlist.md
+- api/link/ui.kanban_enable.md
+- api/link/ui.kanban_exists.md
+- api/link/ui.kanban_filter.md
+- api/link/ui.kanban_find.md
+- api/link/ui.kanban_getchildviews.md
+- api/link/ui.kanban_getfirstid.md
+- api/link/ui.kanban_getformview.md
+- api/link/ui.kanban_getidbyindex.md
+- api/link/ui.kanban_getindexbyid.md
+- api/link/ui.kanban_getitem.md
+- api/link/ui.kanban_getlastid.md
+- api/link/ui.kanban_getnextid.md
+- api/link/ui.kanban_getnode.md
+- api/ui.kanban_getownerlist.md
+- api/link/ui.kanban_getparentview.md
+- api/link/ui.kanban_getprevid.md
+- api/ui.kanban_getselectedid.md
+- api/link/ui.kanban_gettopparentview.md
+- api/link/ui.kanban_hasevent.md
+- api/link/ui.kanban_hide.md
+- api/link/ui.kanban_index.md
+- api/link/ui.kanban_isenabled.md
+- api/link/ui.kanban_isvisible.md
+- api/link/ui.kanban_load.md
+- api/link/ui.kanban_loadnext.md
+- api/link/ui.kanban_mapevent.md
+- api/link/ui.kanban_parse.md
+- api/link/ui.kanban_reconstruct.md
+- api/link/ui.kanban_refresh.md
+- api/link/ui.kanban_remove.md
+- api/link/ui.kanban_removeview.md
+- api/link/ui.kanban_resize.md
+- api/link/ui.kanban_resizechildren.md
+- api/ui.kanban_select.md
+- api/link/ui.kanban_serialize.md
+- api/link/ui.kanban_show.md
+- api/link/ui.kanban_showbatch.md
+- api/link/ui.kanban_sort.md
+- api/link/ui.kanban_sync.md
+- api/link/ui.kanban_unbind.md
+- api/link/ui.kanban_unblockevent.md
+- api/link/ui.kanban_updateitem.md
+
+

@@ -17,9 +17,9 @@ clicked (and right-clicked) and respond to a mouse pointer.
 
 Other inner events depend on the component functionality and are provided in [API reference](api/toc/ui.md) for each component. 
 
-A handler can be attached to a components in different ways:
+A handler can be attached to a component in different ways:
 
-1 . The most common way is to use **any event** of the component (*check its API ref*) within: 
+1 . The most common way is to use **any event** of the component (*check its API reference*) within: 
 
 - **attachEvent()** method, or;
 - the component's **on** property.
@@ -32,6 +32,7 @@ A handler can be attached to a components in different ways:
 - some **specific properties** that point to mouse events (*onClick, onContext, onDblClick, onMouseMove*). 
 
 Now let's study each possibility in detail. 
+
 
 ###Using the attachEvent() method
 
@@ -108,6 +109,40 @@ function close_tree(){...};
 
 { view:"button", id:"sample_button", value:"Close", width:100, click:"close_tree"}
 ~~~
+
+###Attaching DataStore and TreeStore events
+
+While data components inherit methods from DataStore and TreeStore, events aren't inherited. 
+That's why they should be attached through the *data* object:
+
+~~~js
+view.data.attachEvent("onParse", function(driver, data){
+   // some code
+});
+~~~
+
+There are also two alternative ways of attaching such events:
+
+- using the "data->" prefix in the handler:
+
+~~~js
+datatable.attachEvent("data->onParse", function(driver, data){
+    // some code 
+});
+~~~
+
+- using the "data->" prefix within the component's *on* property:
+
+~~~js
+view:"datatable",
+on:{
+   "data->onParse", function(){
+      // some code
+   }
+}
+~~~
+
+
 
 ###Attaching events in the data scheme.
 

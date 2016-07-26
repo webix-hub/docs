@@ -21,4 +21,3 @@ The property is set globally for all sparklines in the application. The default 
 @relatedsample:
 	60_pro/01_datatable/08_sparklines/01_init.html
     
-    

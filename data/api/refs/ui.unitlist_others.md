@@ -8,7 +8,7 @@ Others
 - api/link/ui.unitlist_$dragmark_other.md - method called during dnd when some item in the component need to be marked as active drop target
 - api/link/ui.unitlist_$dragout_other.md - method called when item moved out of possible drop landing during dnd
 - api/link/ui.unitlist_$drop_other.md - method called when item dragged and dropped on valid target
-- api/link/ui.unitlist_$dropallow_other.md - can be redefine if you need custom drop rules
+- api/link/ui.unitlist_$dropallow_other.md - can be redefined, if you need custom drop rules
 - api/link/ui.unitlist_$getsize_other.md - returns the current size of the component
 - api/link/ui.unitlist_$height_other.md - current height of the view
 - api/link/ui.unitlist_$scope_other.md - scope for resolving event and method names
@@ -20,8 +20,8 @@ Others
 - api/link/ui.unitlist_name_other.md - indicates the name of the component (a read-only property)
 - api/link/ui.unitlist_on_click_other.md - redefines default click behavior for component items.
 - api/link/ui.unitlist_on_context_other.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
-- api/link/ui.unitlist_on_dblclick_other.md - attaches a dblclick behavior for component items with the specified CSS class.
-- api/link/ui.unitlist_on_mouse_move_other.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.unitlist_on_dblclick_other.md - attaches a dblclick behavior for component items with the specified CSS class
+- api/link/ui.unitlist_on_mouse_move_other.md - attaches a mouse move behavior for component items with the specified CSS class
 - api/link/ui.unitlist_type_other.md - set of properties and helpers for item rendering
 - api/link/ui.unitlist_types_other.md - collection of possible types
 }}

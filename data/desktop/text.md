@@ -31,9 +31,12 @@ Ui-related text control is a one-line input field with a label.
     - **labelWidth** (number) - width of the label container; 
     - **labelPosition** (string) - defines label position related to the input field. The only possible value is "top".
 - **inputAlign** (string) - input alignment towards its container. Possible values are "left" and "right". An input is left-aligned by default.
-- **type** (string)- type of a text field, can be  either "text" by default, or "password" or "email". Type is vital for [HTML5 input data validation](desktop/data_validation.md#html5).
+- **type** (string)- type of a text field, can be either "text" by default, or "password" or "email". Type is vital for [HTML5 input data validation](desktop/data_validation.md#html5).
 - **placeholder** (string) - the initial text in the text field, disappears as you start typing in it.
-- **suggest** (array, string) - collection of suggest values, or the ID of an attached [suggest list](desktop/suggest.md) with these values. 
+- **suggest** (array, string) - collection of suggest values, or the ID of an attached [suggest list](desktop/suggest.md) with these values.
+- **pattern** - (object, string) - a [formatting pattern](desktop/formatted_text_inputs.md) applied to a text input, if set as object, contains two properties:
+	- mask - a string that includes "#" signs for input characters (can be restricted by the allow parameter) and pattern symbols, such as hyphens, dots, spaces, etc.
+	- allow - a set of characters that are allowed for entering into the field regardless of their position
 
 ##Using HTML Attributes
 
@@ -46,3 +49,11 @@ At the same time, "text" properties can be set via an **attributes** object cont
     
 The same is true for [textarea](desktop/textarea.md).    
 
+Related Articles
+------------------
+- desktop/formatted_text_inputs.md
+
+
+@index:
+
+- desktop/formatted_text_inputs.md

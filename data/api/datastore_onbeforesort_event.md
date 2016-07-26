@@ -6,9 +6,9 @@ onBeforeSort
 	fires before sorting dataset
 
 @params:
-- by		string,function		template of sort-by field
-- dir		string		direction of sorting
-- as		string,function		type of sorting
+- by		string/function		template of sort-by field
+- dir		string				direction of sorting
+- as		string/function		type of sorting
 
 @returns:
 - result  boolean  returning false will prevent sorting

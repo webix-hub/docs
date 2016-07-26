@@ -43,6 +43,7 @@ Methods
 - api/ui.datatable_filterbyall.md - refilters DataTable by all specified filters
 - api/link/ui.datatable_find.md - returns rows that match the criterion
 - api/link/ui.datatable_focuseditor.md - moves focus to the active editor
+- api/ui.datatable_freezerow.md - fixes a row at the top of the datatable "on the fly"
 - api/ui.datatable_getallselectareas.md - returns an object that contains configuration objects of all select areas in the datatable
 - api/link/ui.datatable_getchildviews.md - returns child views of the calling component
 - api/ui.datatable_getcolumnconfig.md - returns the configuration object of the specified column
@@ -186,6 +187,7 @@ Methods
 - api/ui.datatable_filterbyall.md
 - api/link/ui.datatable_find.md
 - api/link/ui.datatable_focuseditor.md
+- api/ui.datatable_freezerow.md
 - api/ui.datatable_getallselectareas.md
 - api/link/ui.datatable_getchildviews.md
 - api/ui.datatable_getcolumnconfig.md

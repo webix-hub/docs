@@ -10,7 +10,7 @@ changes made.
 - enable **server-side sorting** and **filtration**;
 - feature built-in **protection** against **CSRF** and **XSS** attacks.
 
-As a rule, one and the same connector is used for [loading data](#loading) and [saving](#saving).
+As a rule, one and the same connector is used for [loading](#loading) and [saving data](#saving).
 
 ##Connector Documentation {#docu}
 
@@ -226,4 +226,7 @@ webix.ajax().post("myscript.php?action=update",
 ~~~
 
 @complexity:3
+
+@linkclass: hidden
+
 

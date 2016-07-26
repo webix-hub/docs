@@ -8,7 +8,7 @@ Others
 - api/link/ui.excelviewer_$dragmark_other.md - method called during dnd when some item in the component need to be marked as active drop target
 - api/link/ui.excelviewer_$dragout_other.md - method called when item moved out of possible drop landing during dnd
 - api/link/ui.excelviewer_$drop_other.md - method called when item dragged and dropped on valid target
-- api/link/ui.excelviewer_$dropallow_other.md - can be redefine if you need custom drop rules
+- api/link/ui.excelviewer_$dropallow_other.md - can be redefined, if you need custom drop rules
 - api/link/ui.excelviewer_$getsize_other.md - returns the current size of the component
 - api/link/ui.excelviewer_$height_other.md - current height of the view
 - api/ui.excelviewer_$onload_other.md - 
@@ -22,8 +22,8 @@ Others
 - api/link/ui.excelviewer_name_other.md - indicates the name of the component (a read-only property)
 - api/link/ui.excelviewer_on_click_other.md - redefines default click behavior for component items.
 - api/link/ui.excelviewer_on_context_other.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
-- api/link/ui.excelviewer_on_dblclick_other.md - attaches a dblclick behavior for component items with the specified CSS class.
-- api/link/ui.excelviewer_on_mouse_move_other.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.excelviewer_on_dblclick_other.md - attaches a dblclick behavior for component items with the specified CSS class
+- api/link/ui.excelviewer_on_mouse_move_other.md - attaches a mouse move behavior for component items with the specified CSS class
 - api/link/ui.excelviewer_waitdata_other.md - eventual result of an asynchronous operation ('promise' object) for the loaded data
 }}
 

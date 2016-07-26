@@ -36,7 +36,7 @@ Methods
 - api/link/ui.multitext_setvalue.md - sets a new value for the component
 - api/ui.multitext_setvaluehere.md - sets value for the basic field of a multitext control
 - api/link/ui.multitext_show.md - makes the component visible
-- api/link/ui.multitext_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.multitext_sync.md - allows you to sync two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.multitext_unbind.md - breaks "bind" link
 - api/link/ui.multitext_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.multitext_validate.md - validates value of input
