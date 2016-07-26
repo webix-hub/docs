@@ -7,7 +7,7 @@ In such a mode, the "frozen" upper part is fixed and the lower part is movable a
 <img style="display:block; margin-left:auto;margin-right:auto;" src="datatable/frozen_rows.png"/>
 
 
-In order to "freeze" rows, you should apply the **topSplit** parameter and set the number of rows as its value.
+In order to "freeze" rows, you should apply the api/ui.datatable_topsplit_config.md parameter and set the number of rows as its value.
 
 ~~~js
 webix.ui({
@@ -24,7 +24,7 @@ Freezing rows dynamically
 --------------------
 
 If you want to freeze another row and put it into the top unscrollable block,
-you should make use of the **freezeRow()** method. You need to pass two parameters to it:
+you should make use of the api/ui.datatable_freezerow.md method. You need to pass two parameters to it:
 
 - id - (number/string) - the row id
 - state - (boolean) - true, to allow row moving to the "frozen" block

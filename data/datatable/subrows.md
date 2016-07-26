@@ -51,9 +51,9 @@ webix.ui({
 	subRowHeight:"auto",
 	data:[
 		{ id:1, title:"The Shawshank Redemption", year:1994, votes:678790, 
-			details:"Long text Long text Long text Long text Long text Long text Long text 
-            			Long text Long text Long text Long text Long text Long text 
-                        	Long text Long text Long text Long text Long text "},
+			details:"Long text Long text Long text Long text Long text Long text 
+            Long text Long text Long text Long text Long text Long text Long text 
+            Long text Long text Long text Long text Long text "},
 		...
 	]
 });	

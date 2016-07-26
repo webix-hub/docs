@@ -1,9 +1,10 @@
-Date and Number Localization
+Components Localization
 ==============
 
-Different countries and regions have their own rules for writing dates, numbers and monetary units. All these issues should be taken in account in case a target group for your app is wider than one country or region. 
+Different countries and regions have their own rules for writing dates, numbers, monetary units and text labels.
+All these issues should be taken in account in case a target group for your application is wider than one country or region. 
 
-The set of rules for this or that country is called **locale** and includes methods for date, time, number and price formatting. 
+The set of rules for this or that country is called **locale** and includes methods for date, time, number, price and labels formatting. 
 Localization methods belong to the [i18n class](api/refs/i18n.md) and treat data according to he set format.
 
 By default **Date()** constructor outputs raw data. Unformatted, it looks barely readable. 
@@ -14,8 +15,8 @@ new Date(2012,10,30); //-->Tue Nov 30 2010 00:00:00
 
 Date and time should be formatted either with [Date](desktop/working_with_dates.md) or **i18n** class.
 
-**Numbers** differ by delimiter before the fractional part and between thousands while prices should be rendered with an appropriate currency mark. Formatting is done either in the
-[Number](helpers/number_formatting_methods.md) or **i18n** class.
+**Numbers** differ by delimiter before the fractional part and between thousands while prices should be rendered with an appropriate currency mark.
+Formatting is done either in the [Number](helpers/number_formatting_methods.md) or **i18n** class.
 
 
 ##Built-in Locales
@@ -36,7 +37,8 @@ The **standard package** of the Webix library includes 9 locales, namely:
 
 ##Locale Structure
  
-The way formatted date is presented depends on **locale** you use. Locale is a set of rules for dates, numbers and price units for this or that region or country. By 
+The way formatted data is presented depends on **locale** you use. 
+Locale is a set of rules for dates, numbers, price units and labels for this or that region or country. By 
 default **en-US** locale is used.
 
 {{snippet
@@ -53,6 +55,8 @@ webix.i18n.locales["en-US"]={
   timeFormat:"%h:%i %A",
   longDateFormat:"%d %F %Y",
   fullDateFormat:"%m/%d/%Y %h:%i %A",
+  am:["am","AM"],
+  pm:["pm","PM"],
 
   price:"${obj}",
   priceSettings:{
@@ -83,11 +87,20 @@ webix.i18n.locales["en-US"]={
 
   controls:{
     select:"Select"
-  }
+  },
   
   dataExport:{
 	page:"Page",
 	of:"of"
+  },
+  
+  PDFviewer:{
+		of:"of",
+		automaticZoom:"Automatic Zoom",
+		actualSize:"Actual Size",
+		pageFit:"Page Fit",
+		pageWidth:"Page Width",
+		pageHeight:"Page Height"
   }
 };
 ~~~
@@ -102,7 +115,8 @@ webix.i18n.locales["en-US"]={
 **Date and Time:** 
 
 - *dateFormat, longDateFormat, fullDateFormat* - define the way day, month and year look in stated modes;
-- *timeFormat* - defines the way hours, minutes and seconds look. 
+- *timeFormat* - defines the way hours, minutes and seconds look; 
+- *am*,*pm* - define the way time before and after noon is marked. 
 
 **Start Date**:
 
@@ -139,15 +153,26 @@ format:webix.i18n.longDateFormatSt
 
 Text labels for some parts of webix components that are more likely to be changed in a scope: 
 
-- **select** - text label of the 'Select' button of the [multisuggest](api/refs/ui.multisuggest.md) 
+- *select* - text label of the 'Select' button of the [multisuggest](api/refs/ui.multisuggest.md) 
 (used in [multiselect](desktop/multiselect.md) input, editor and filter). The default value for North American locale is "Select".
 
 **Data Export**
 
 Text labels used in the page numbering line in the footer of the [exported PDF document](desktop/export_pdf.md). 
 
-- **page** - text label of the "Page" part in the page numbering line
-- **of** - text label of the "of" part in the page numbering line
+- *page* - text label of the "Page" part in the page numbering line
+- *of* - text label of the "of" part in the page numbering line
+
+**PDF Viewer**
+
+Text labels for page switching and document  options in desktop/pdfviewer.md.
+
+- *of* - text label of the "of" part used in the page selector
+- *automaticZoom* - text label of the zooming option for setting the document size automatically 
+- *actualSize* - text label of the zooming option for setting actual size of the document 
+- *pageFit* - text label of the zooming option for adjusting the document size to the page size
+- *pageWidth* - text label of the zooming option for adjusting the document size to the page width
+- *pageHeight* - text label of the zooming option for adjusting the document size to the page height
 
 ##Applying a Locale
 

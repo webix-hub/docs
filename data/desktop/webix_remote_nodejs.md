@@ -151,11 +151,11 @@ api.setMethod("admin@add", function(a,b){
 });
 ~~~
 
-The access levels are defined by the access modificator specified with the *req.session* object:
+The access levels are defined by the access modifier specified with the *req.session* object:
 
-- all methods for which the access modificator isn't set are allowed by default
-- if *req.session.user* exists, methods for which the "user" modificator is set are allowed
-- if *req.session.user.role* exists, methods for which the modificator of a partucular role is set are allowed
+- all methods for which the access modifier isn't set are allowed by default
+- if *req.session.user* exists, methods for which the "user" modifier is set are allowed
+- if *req.session.user.role* exists, methods for which the modifier of a particular role is set are allowed
 
 Let's assume that we have the following rule:
 
@@ -163,7 +163,7 @@ Let's assume that we have the following rule:
 req.session = { user: { role:"admin,levelB"}}
 ~~~
 
-In this case the *add* function will be allowed for users with the *"user"*, *"user.role=admin"* and *"user.role=levelB"* access modificators. 
+In this case the *add* function will be allowed for users with the *"user"*, *"user.role=admin"* and *"user.role=levelB"* access modifiers. 
 For a user with a different role the method will be unavailable:
 
 ~~~js

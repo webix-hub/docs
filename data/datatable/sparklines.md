@@ -185,7 +185,7 @@ webix.ui({
 Setting Sparklines Colors
 -----------------
 
-There are two variants of configuring sparklines colors:
+There are two variants of configuring sparklines colors using the *color* property:
 
 - to set a custom color for sparklines 
 
@@ -222,7 +222,7 @@ var bar2 = webix.Sparklines.getTemplate({type:"bar", color: "#3ea4f5"});
 <h3 id="neg_color">Negative color option for Bar sparklines</h3>
 
 You can set a certain color for a negative value while rendering a Bar sparkline.
-It is set by the negativeColor property:
+It is set by the *negativeColor* property:
 
 ~~~js
 { 
