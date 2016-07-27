@@ -208,7 +208,7 @@ webix.ajax("./data.php", function(text){
 While you can use the above code to access raw text response, there is a more neat solution
 
 ~~~js
-webix.ajax("some.php", function(text,data){
+webix.ajax("some.php", function(text, data){
 	//text = '{ some :"abc"}'
 	alert(data.json().some); //abc
 });
@@ -221,9 +221,9 @@ the second parameter of response can provide you with a ready-to-use json object
 Same as above, you can use
 
 ~~~js
-webix.ajax("some.php", function(text,xml){
+webix.ajax("some.php", function(text, data){
 	//text = '<data some='abc'></data>'
-	alert(obj.xml().some); //abc
+	alert(data.xml().some); //abc
 });
 ~~~
 
@@ -234,7 +234,7 @@ If necessary you can access raw xml object by using  data.rawxml();
 
 {{snippet CVS }}
 ~~~js
-webix.ajax("some.php", function(text,xml){
+webix.ajax("some.php", function(text, xml){
 	var obj = webix.DataDriver.csv.toObject(text,xml);
 	alert(obj[0][0]); //row and column indexes
 });
@@ -242,7 +242,7 @@ webix.ajax("some.php", function(text,xml){
 
 {{snippet JSArray }}
 ~~~js
-webix.ajax("some.php", function(text,xml){
+webix.ajax("some.php", function(text, xml){
 	var obj = webix.DataDriver.jsarray.toObject(text,xml);
 	alert(obj[0][0]); //row and column indexes
 });
