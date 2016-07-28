@@ -42,14 +42,14 @@ The method returns a [promise](http://promisesaplus.com/) object than contains t
 - **rawxml()** - return the raw XML data
 - **text()** - return the plain text of the result
 
-@example:
+~~~js
 webix.ajax().post('data.php', { filter : '123' }).then(function (result) {
     console.log(result.json());
 }).fail(function (xhr) {
     var response = JSON.parse(xhr.response);
     webix.message({type: 'error', text: response.error.message});
 });
-
+~~~
 
 More information on Webix and Promiz.js usage can be found at: 
 
