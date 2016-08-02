@@ -78,7 +78,7 @@ Use the **$css** property in item data to specify item style in one of the two w
 2. specify css style directly in the item definition 
 
 To illustrate the described techniques, we will define the **.item_top** css rule and apply it to the item of the 1st level.
-For the item of the 2nd level we'll set specific css properties directly in the data set.
+For the item of the second level we'll set specific css properties directly in the data set.
 
 Finally, we'll redefine the **.webix_selected** rule to change background color of selected items.
 
@@ -119,3 +119,5 @@ orgChart = new webix.ui({
 }}
 
 @edition:pro
+
+@spellcheck:Tos

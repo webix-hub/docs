@@ -10,8 +10,8 @@ webix.ui({
     value: 'listView', // the initially selected tab
     multiview:true, 
     options: [
-          { value: 'List', id: 'listView'},
-          { value: 'Form', id: 'formView'},
-          { value: 'Empty', id: 'emptyView'}
-          ]
+    	{ value: 'List', id: 'listView'},
+        { value: 'Form', id: 'formView'},
+        { value: 'Empty', id: 'emptyView'}
+    ]
 });

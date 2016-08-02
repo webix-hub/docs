@@ -173,7 +173,7 @@ Let's have a look at the organogram in the above picture. The items of the 4th l
 For example, to unite the child items of the "Research" item ("Base research" and "Collaborative research with industries"), 
 we should set the **$type** property with the value "list" in its definition.
 
-The same actions should be performed with the "Development", "Teaching" and "Traning" items and their child items.
+The same actions should be performed with the "Development", "Teaching" and "Training" items and their child items.
 
 The code will look like this:
 
@@ -228,4 +228,6 @@ webix.ui({
 
 
 @edition:pro
+
+@spellcheck:marginX, marginY
 

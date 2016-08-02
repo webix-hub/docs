@@ -3,7 +3,7 @@ Menu
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.menu.html)
+- [Methods, properties and events](api/refs/ui.menu.md)
 - [Samples](http://docs.webix.com/samples/03_menu/index.html)
 
 ##Overview
@@ -47,7 +47,7 @@ webix.ui({
 - **submenuConfig** (object) - sets common configuration for all the submenus in this menu regardless of their nesting level;
 - **layout** (string) - sets the arrangement of menu items: **x** (default) for a horizontal menu, **y** for a vertical one;
 - **$template** (string) - flag that indicates a separator between groups of menu items. Possible types are as follows: 
-	- **"Separator"** - a grey separating line; 
+	- **"Separator"** - a gray separating line; 
     - **"Spacer"**	- an empty item with white background that doesn't change on mouse over. 
 - **type** - object that contains setting for menu items, namely:
 	- **subsign** (boolean) - sets an arrow for an item containing a submenu;
@@ -128,7 +128,7 @@ data:[
 To separate one group of items from another one in vertical menu, use the property **$template** with one the possible values: 
 
 - **"Spacer"** - adds horizontal space between menu items;
-- **"Separator"** - add a horizontal grey line between menu items.
+- **"Separator"** - add a horizontal gray line between menu items.
 
 <img src="desktop/menu_spacer.png">
 
@@ -285,7 +285,7 @@ Each submenu item can take its own submenu component.
 
 ###MenuBar
 
-Menu takes after a toolbar in appearance, so the best way to create a menubar is to initialize menu and toolbar in neighbouring columns: 
+Menu takes after a toolbar in appearance, so the best way to create a menubar is to initialize menu and toolbar in neighboring columns: 
 
 <img src="desktop/menubar.png" />
 
@@ -320,8 +320,8 @@ As a result, only "unchecked" menu items are shown.
 
 ###Disabling
 
-To disable menu item, you should apply special **disableItem()** and **enableItem()** functions to menu passing ID of the necessary item into them. The methods can be triggered by changing state of a 
-checkbox which ID equals to the ID of the corresponding menu item. 
+To disable menu item, you should apply special **disableItem()** and **enableItem()** functions to menu passing ID of the necessary item into them. 
+The methods can be triggered by changing state of a checkbox which ID equals to the ID of the corresponding menu item. 
 
 ~~~js
 $$("tree1").attachEvent("onItemCheck",function(id,state){
@@ -349,7 +349,7 @@ template:function(obj){
 
 All menu and submenu items can be accessed by their IDs.
 
-1 . Any item can be accessed directly with **getMenuItem()** method that takes item ID as parameter and returns item object:
+1 . Any item can be accessed directly with the **getMenuItem()** method that takes item ID as parameter and returns item object:
 
 ~~~js
 //getting menu item value by its ID
@@ -359,7 +359,8 @@ $$('menu1').getMenuItem(id).value;
 {{sample 03_menu/01_menubar.html}}
 
 
-2 . At the same time, menu items can be derived through submenu object returned by **getSubMenu()** method for an item with the specified ID. If there's no submenu for an item - an object of the calling component will be returned. 
+2 . At the same time, menu items can be derived through submenu object returned by the **getSubMenu()** method for an item with the specified ID. 
+If there's no submenu for an item - an object of the calling component will be returned. 
 
 ~~~js
 var menu = $$("menu1").getSubMenu(id);
