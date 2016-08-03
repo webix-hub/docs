@@ -457,6 +457,7 @@ table.webixtoc td{
 - api/refs/ui.carousel.md
 - api/refs/ui.chart.md
 - api/refs/ui.checkbox.md
+- api/refs/ui.checksuggest.md
 - api/refs/ui.colorboard.md
 - api/refs/ui.colorpicker.md
 - api/refs/ui.combo.md

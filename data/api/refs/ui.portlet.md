@@ -141,3 +141,4 @@ var portlet = webix.ui({
 - api/refs/ui.portlet_events.md
 - api/refs/ui.portlet_others.md
 
+@edition:pro

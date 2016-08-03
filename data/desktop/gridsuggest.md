@@ -5,8 +5,8 @@ Grid Suggest
 The functionality is a feature of **Webix Pro** edition.
 }}
 
-The extension is based on Webix [suggest list](desktop/suggest.md). It redefines the **default dropdown menu** for richselect](desktop/richselect.md), [multiselect](desktop/multiselect.md),
-[combo](desktop/combo.md), [multicombo](desktop/multicombo.md)  controls as well as similar [editors](desktop/editing.md#editortypes).
+The extension is based on Webix [suggest list](desktop/suggest.md). It redefines the **default dropdown menu** for desktop/richselect.md, desktop/multiselect.md,
+desktop/combo.md, desktop/multicombo.md controls as well as similar [editors](desktop/editing.md#editortypes).
 
 Gridsuggest extension makes it possible to use Webix [datatable](datatable/index.md) in a dropdown menu while by default Webix [list](desktop/list.md) is used. 
 
