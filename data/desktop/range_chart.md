@@ -171,3 +171,5 @@ var range = {
 ~~~
 
 @edition:pro
+
+@spellcheck:rangechart

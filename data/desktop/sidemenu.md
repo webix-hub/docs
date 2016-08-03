@@ -3,7 +3,7 @@ Sidemenu
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.sidemenu.html)
+- [Methods, properties and events](api/refs/ui.sidemenu.md)
 - [Samples](http://docs.webix.com/samples/28_sidemenu/index.html)
 
 
@@ -79,7 +79,7 @@ webix.ui({
 Customizing size and position
 -----------------------
 
-You can customize Sidemenu's size and position in the necessary way. It's done with the help of the *state* function that takes as a parameter an object
+You can customize the size and position of Sidemenu in the necessary way. It's done with the help of the *state* function that takes as a parameter an object
 containing the position and size values that will be set as Sidemenu properties: 
 
 - top ;
@@ -149,3 +149,4 @@ webix.ui({
 In the above code we've defined the icon button that has the "bars" type from the Font Awesome collection. On clicking the icon, we check, whether the menu is hidden. 
 If the menu is initially hidden, it will be shown on the icon's click. If it's shown, it will be hidden.
 
+@spellcheck:sidemenu

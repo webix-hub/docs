@@ -18,3 +18,4 @@ webix.ui({
 @related:
 datatable/frozen_rows.md
 
+@edition: pro

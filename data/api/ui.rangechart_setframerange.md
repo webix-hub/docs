@@ -42,3 +42,5 @@ using the ids values.
 
 @relatedapi:
 api/ui.rangechart_getframerange.md
+
+@edition:pro

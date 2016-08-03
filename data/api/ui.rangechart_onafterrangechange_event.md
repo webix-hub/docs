@@ -15,3 +15,4 @@ rangechart.attachEvent("onAfterRangeChange", function(){
 @template:	api_event
 @descr:
 
+@edition:pro

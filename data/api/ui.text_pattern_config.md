@@ -30,4 +30,4 @@ If pattern set as a string, the *allow* property will take the default value - /
 @related:
 desktop/formatted_text_inputs.md
 
-
+@edition: pro

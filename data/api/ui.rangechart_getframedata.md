@@ -18,3 +18,4 @@ rangechart.getFrameData();
 @template:	api_method
 @descr:
 
+@edition:pro

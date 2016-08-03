@@ -3,13 +3,13 @@ Toolbar
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.toolbar.html)
+- [Methods, properties and events](api/refs/ui.toolbar.md)
 - [Samples](http://docs.webix.com/samples/02_toolbar/index.html)
 
 
 ##Overview
 
-Ui-related toolbar inherits from [layout](desktop/layout.md). It is the place to nest all the possible controls including, buttons, 
+Ui-related toolbar inherits from [layout](desktop/layout.md). It is the place to nest all the possible controls including buttons, 
 labels, icons, checkboxes, combos, etc. For the full list of controls please refer to the library's [Controls Guide](desktop/controls.md). 
 
 <img style="display:block; margin-left:auto;margin-right:auto;"  src="desktop/toolbar.png" />
@@ -77,7 +77,7 @@ More info about how to [manipulate button groups](desktop/button_groups.md).
 
 ###Icon Buttons
 
-Icons can be nested into all the library conponents. Within toolbar, icon buttons look definitely stylish.
+Icons can be nested into all the library components within a toolbar. Icon buttons look definitely stylish.
 
 <img src="desktop/toolbar_icons.png"/>
 

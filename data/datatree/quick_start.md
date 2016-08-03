@@ -89,7 +89,7 @@ For more available settings, read other articles in this documentation, such as:
 
 Loading data
 ------------
-There are different ways to load data into Tree (read about them in chapter datatree/loading_data.md ).<br> We will use the easiest of the ways and specify data directly in the constuctor with the help of the
+There are different ways to load data into Tree (read about them in chapter datatree/loading_data.md ).<br> We will use the easiest of the ways and specify data directly in the constructor with the help of the
 api/link/ui.tree_data_config.md property:
 
 {{snippet

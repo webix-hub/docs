@@ -75,3 +75,5 @@ For example, if you set the *x* parameter to 10, the tooltip will be moved to 30
 
 As for the **y** coordinate, its value is calculated as *dy+y*, but the resulting *y* coordinate value will be equal to the specified *y* value, 
 since the default value of *dy* is 0.
+
+@spellcheck: dx,dy

@@ -3,20 +3,20 @@ Scrollview
 
 ##API Reference
 
-- [Methods, parameters and events](api__refs__ui.scrollview.html)
+- [Methods, parameters and events](api/refs/ui.scrollview.md)
 - [Samples](http://docs.webix.com/samples/04_template/index.html)
 
 ##Overview
 
 Scrollview inherits from [view](desktop/view.md) and makes any of the nested components scrollable, either in horizontal or in vertical mode. It is handy in case of long 
-homogenious data items, like text templates.
+homogenous data items, like text templates.
 
 <img style="display:block; margin-left:auto;margin-right:auto;"  src="desktop/scrollview.png"/>
 
 
 ##Initialization
 
-It's reasonable to use the scrollview just as a sccrolling container while text into is stored in HTML.
+It's reasonable to use the scrollview just as a scrolling container while text into is stored in HTML.
 
 ~~~html
 <div id="mybox1">Some very long article-1</div>

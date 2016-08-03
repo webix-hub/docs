@@ -19,3 +19,5 @@ $$("grid").freezeRow(id, true);
 
 @related:
 datatable/frozen_rows.md
+
+@edition:pro
