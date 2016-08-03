@@ -9,7 +9,8 @@ Sub-Grid in a DataTable
 
 <img src="datatable/subgrid.png">
 
-To add a subview into Datatable, use the **subview** property. In the case of datatable, you should specify a Datatable configuration with all the necessary parameters as value of this property.
+To add a subview into Datatable, use the api/ui.datatable_subview_config.md property. 
+In the case of datatable, you should specify a Datatable configuration with all the necessary parameters as value of this property.
 
 In the columns configuration of the Datatable you should specify the **template** property with the value like *{common.subrow()} #title#*, where:
 
@@ -62,7 +63,7 @@ To populate a subview with data, you can either
 
 ###Using inline data 
 
-To load inline data into the sub-grid when a subview is created, use the *onSubViewCreate()* event with two parameters:
+To load inline data into the sub-grid when a subview is created, use the api/ui.datatable_onsubviewcreate_event.md event with two parameters:
 
 - view - the created subview;
 - item - the item for which a subgrid is created.
@@ -117,9 +118,9 @@ takes the path to the necessary file or script that will return data for a subgr
 		],
 	},
 	on:{
-		onSubViewCreate:function(view, item){
-		  view.load("../../../15_datatable/16_dyn_loading/data/data_dyn.php?for="+item.id);
-		}
+	 onSubViewCreate:function(view, item){
+	  view.load("../../../15_datatable/16_dyn_loading/data/data_dyn.php?for="+item.id);
+	 }
 	},
 	columns:[
     	...			
@@ -143,7 +144,7 @@ The same as with a Sub-Grid, you can add a Sub-Form into Datatable.
 You need to initialize a form view inside of the **subview** property and define the configuration of form elements. Note that *name* attributes of the form fields 
 should coincide with data item properties to ensure a simple and clear way of two-way binding.
 
-To add values into the sub-form when a subview is created, use the *onSubViewCreate()* event with two parameters:
+To add values into the sub-form when a subview is created, use the api/ui.datatable_onsubviewcreate_event.md event with two parameters:
 
 - view - the created subview;
 - item - the item for which a subview is created.

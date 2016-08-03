@@ -9,7 +9,7 @@ When you release the mouse pointer, the selection will remain and marked with bo
 
 <img src="datatable/area_selection.png">
 
-To enable area selection in DataTable, you should specify the **areaselect** property with the *true* value in the datatable configuration.
+To enable area selection in DataTable, you should specify the api/ui.datatable_areaselect_config.md property with the *true* value in the datatable configuration.
 
 ~~~js
 {

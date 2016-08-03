@@ -26,3 +26,5 @@ if the area_name parameter isn't passed, the method removes the last unnamed sel
 
 @related:
 datatable/area_selection.md
+
+@edition:pro

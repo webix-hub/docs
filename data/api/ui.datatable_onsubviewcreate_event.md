@@ -21,3 +21,5 @@ datatable/subviews.md
 @relatedsample:
 	60_pro/01_datatable/07_sub/05_sub_grid_data.html
     60_pro/01_datatable/07_sub/07_sub_form.html
+    
+@edition:pro

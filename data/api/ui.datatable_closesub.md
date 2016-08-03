@@ -22,3 +22,4 @@ $$("mydatatable").closeSub(id);
 @template:	api_method
 @descr:
 
+@edition:pro

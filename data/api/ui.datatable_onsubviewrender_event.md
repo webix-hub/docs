@@ -16,3 +16,5 @@ $$("$datatable1").attachEvent("onSubViewRender",function(view, item){
 
 @template:	api_event
 @descr:
+
+@edition:pro
