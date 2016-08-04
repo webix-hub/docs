@@ -4,6 +4,7 @@ Data Components Export to PDF
 
 You can export Webix data components to the PDF format. The components don't require any special configuration to be exported.
 
+
 {{note
 The described functionality is available both in Standard and Pro versions, but pay attention that the IE browser is supported starting from version 10.
 }}
@@ -28,6 +29,21 @@ webix.toPDF($$("mylist"));
 ~~~
 
 {{sample 15_datatable/10_export/06_pdf.html }}
+
+Exporting Data Offline
+---------------------
+
+The dependencies which are used for providing export possibilities are generally taken from Webix CDN. 
+If you need to implement data export offline, you should complete the following steps:
+
+- download the package with CDN-files from [https://github.com/webix-hub/cdn-extras](https://github.com/webix-hub/cdn-extras)
+- сopy the folder with CDN-files into the directory with your application
+- set the path to the local CDN repository as 
+
+~~~js
+webix.cdn = "/local_folder/cdn-extras";
+~~~
+
 
 Customizing Export to PDF
 -------------------------
