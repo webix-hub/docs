@@ -6,6 +6,7 @@ In such a mode, the "frozen" upper part is fixed and the lower part is movable a
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="datatable/frozen_rows.png"/>
 
+{{sample 60_pro/01_datatable/09_frozen_rows/04_selection.html}}
 
 In order to "freeze" rows, you should apply the api/ui.datatable_topsplit_config.md parameter and set the number of rows as its value.
 
