@@ -1,4 +1,4 @@
-Event handling with Tree
+Event Handling with Tree
 =========================
 Tree supports various events that can be used to provide a custom behaviour for your tree.
 
@@ -48,7 +48,7 @@ webix.ui({
 
 Cancelable Events 
 -----------------------
-All events with subword '**onbefore**' can be cancelled.<br>
+All events with subword '**onBefore**' can be cancelled.<br>
 To cancel some event you should return **false** within the appropriate event handler.
 
 {{snippet
@@ -67,7 +67,7 @@ Accessible objects and data
 Inside the event handler you can refer to the holder component through keyword **this**. </br>
 Besides, most event handlers get incoming argument(s), like the **id** of a data item (see [tree events](api/refs/ui.tree_events.md) to know exactly what arguments are passed inside event handler). 
 
-Btw, using the **id** of a data item you can access this item itself and all its properties. For example:
+By the way, using the **id** of a data item you can access this item itself and all its properties. For example:
 
 {{snippet
 Referring within the event handler

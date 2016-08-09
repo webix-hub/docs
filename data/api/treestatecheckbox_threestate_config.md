@@ -1,10 +1,12 @@
 threeState
 =============
 
-@short: defines three-state checkboxes for the tree. Flase by default. 
+@short: defines three-state checkboxes for the tree 
 	
 
 @type: boolean
+
+@default:false
 @example:
 webix.ui({
 	view:"tree",

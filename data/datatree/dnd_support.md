@@ -1,4 +1,4 @@
-Drag-and-drop support
+Drag-and-Drop Support
 ==========================
 
 Tree has built-in support for internal/external drag-and-drop. 
@@ -30,7 +30,7 @@ There is a special drag-and-drop mode - 'order'.
 In such a mode,  items can't be dragged out of the tree container boundaries.
 Also, while dragging an item the remaining items are automatically rearranged so that when you drop the item to the final destination the remaining items won't need to do any rearrangements.
 
-To enable the d-n-d support and activate the 'order' mode, just set the api/link/ui.tree_drag_config.md parameter to *order*.
+To enable the drag-n-drop support and activate the 'order' mode, just set the api/link/ui.tree_drag_config.md parameter to *order*.
 
 {{snippet
 Activating the 'order' mode for items
@@ -50,11 +50,13 @@ webix.ui({
 
 The 'source-target' mode
 -----------------------------
-When you have several trees on the page, you may want to set specific tree(s) as the source of dnd (to drag items from) 
-and specific tree(s) as the target of dnd (to drag items to).
+When you have several trees on the page, you may want to set specific tree(s) as the source of drag-n-drop (to drag items from) 
+and specific tree(s) as the target of drag-n-drop  (to drag items to).
 
-- To set a tree as the dnd source (the user can drag items from the tree but can't drag to it), you should set the api/link/ui.tree_drag_config.md parameter to *source*.
-- To set a tree as the dnd target (the user can drag items to the tree but can't drag from it), you should set the <br> api/link/ui.tree_drag_config.md parameter to *target*.
+- To set a tree as the drag-n-drop  source (the user can drag items from the tree but can't drag to it), 
+you should set the api/link/ui.tree_drag_config.md parameter to *source*.
+- To set a tree as the drag-n-drop  target (the user can drag items to the tree but can't drag from it), 
+you should set the <br> api/link/ui.tree_drag_config.md parameter to *target*.
 
 {{snippet
 Using the 'source-target' mode
@@ -80,13 +82,14 @@ treeB = new webix.ui({
 
 Advanced
 --------------------------------------------
-Information stated in the [Common part](#common) is enough in most cases. The current part should be used just if you want to customize existing drag-and-drop behaviour.
+Information stated in the [Common part](#common) is enough in most cases. 
+The current part should be used just if you want to customize existing drag-and-drop behavior.
 
 The part will describe the next things:
 
 - [Custom text of the dragging items](#custom_text);
 - [Denying dragging specific items](#denying_dragging);
-- [Custom dropping behaviour](#custom_dropping);
+- [Custom dropping behavior](#custom_dropping);
 - [Related events and the order in which these events are invoked.](#events)
 
 
@@ -119,7 +122,7 @@ Denying dragging even items
 tree.attachEvent("onBeforeDrag", function(context, ev){
 
 	if (tree.getItem(context.source).$level == 2){
-    	return true;     // allows dragging items with the 2nd nesting level
+    	return true;     // allows dragging items with the second nesting level
     }
     return false;        // denies dragging in any other case
 });
@@ -127,16 +130,17 @@ tree.attachEvent("onBeforeDrag", function(context, ev){
             
 From now on, each time d-n-d is started, the item level will be checked, and the item can be dragged only if its level equal to 2.
 
-###Custom dropping behaviour {#custom_dropping}
-To specify custom behaviour for the 'drop' operation you can use the api/link/ui.tree_onbeforedrop_event.md event.
+###Custom dropping behavior {#custom_dropping}
 
-Let's assume you want to specify the following behaviour:
+To specify custom behavior for the 'drop' operation you can use the api/link/ui.tree_onbeforedrop_event.md event.
 
-- When you drag item(s) to the closed folder, the item is inserted as a subling;
+Let's assume you want to specify the following behavior:
+
+- When you drag item(s) to the closed folder, the item is inserted as a sibling;
 - When you drag item(s) to the opened folder, the item is inserted as a child.
 
 {{snippet
-	Custom dropping behaviour
+	Custom dropping behavior
 }}
 ~~~js
 tree.attachEvent("onBeforeDrop", function(context, ev){
@@ -174,17 +178,17 @@ The following events are generated while d-n-d process:
 
 ####Events order
 
-Let's assume you have 2 same trees and drag an item from the 1st tree to the 2nd one.
+Let's assume you have 2 same trees and drag an item from the 1st tree to the second one.
 
 <img src="datatree/events_order.png"/>
 
 So, here is the order in which events are invoked in trees:
 
-1. api/link/ui.tree_onbeforedrag_event.md fires in **tree1**. <br> *Returning 'false' from the event handler will block the current dnd operation.*
+1. api/link/ui.tree_onbeforedrag_event.md fires in **tree1**. <br> *Returning 'false' from the event handler will block the current drag-n-drop operation.*
 2. api/link/ui.tree_onbeforedragin_event.md / api/link/ui.tree_ondragout_event.md fire in **tree1** as you drag the item within the **tree1**'s container. <br> *Returning 'false' from the event handler will deny dropping to the related tree.*
 3. api/link/ui.tree_onbeforedragin_event.md / api/link/ui.tree_ondragout_event.md fire in **tree2** as you drag the item within the **tree2**'s container. <br> *Returning 'false' from the event handler will deny dropping to the related tree.*
-4. api/link/ui.tree_onbeforedrop_event.md fires in **tree2**. <br> *Returning 'false' from the event handler will block the current dnd operation.*
+4. api/link/ui.tree_onbeforedrop_event.md fires in **tree2**. <br> *Returning 'false' from the event handler will block the current drag-n-drop operation.*
 5. api/link/ui.tree_onafterdrop_event.md fires in **tree2**.
 
 
-
+@spellcheck: dnd, multidrag

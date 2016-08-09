@@ -68,3 +68,5 @@ Related events
 - api/link/ui.tree_onselectchange_event.md		event		fires when selection is changed in DataTable 
 
 }}
+
+@spellcheck: api, apitable

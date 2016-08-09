@@ -1,4 +1,4 @@
-Getting/setting the node
+Getting/Setting the Node
 ====================================
 Tree provides a set of methods for manipulating the node value and retrieving the node id.
 

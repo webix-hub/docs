@@ -150,11 +150,11 @@ on:{
 
 **Datatable and treetable specificity**
 
-With [datatable](datatable/index.md) and [treetable](desktop/treetable.md) you can get a row object by **$master** property that includes: 
+With [datatable](datatable/index.md) and [treetable](desktop/treetable.md) you can get a row object by **$masterId** property that includes: 
 
 - **row** - row id;
 - **rind** - row index;
-- **column** - columns id;
+- **column** - column id;
 - **cind** - column index.
 
 ~~~js

@@ -1,4 +1,4 @@
-Quick start with Tree
+Quick Start with Tree
 =========================================
 
 This is a tutorial that will walk you through creating a basic application containing Tree. 
