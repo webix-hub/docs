@@ -1,7 +1,7 @@
 Localization
 ===============
 
-By defaut, all names and titles in Pivot are defined in English, but you can set any other language by specifying a custom locale for the page. 
+By default, all names and titles in Pivot are defined in English, but you can set any other language by specifying a custom locale for the page. 
 
 ~~~js
 webix.i18n.pivot = {

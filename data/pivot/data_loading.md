@@ -1,7 +1,7 @@
 Loading Data 
 =================
 
-Pivot supports both inline and external (including serverside) data in any of the desktop/data_types.md:  **XML**, **JSON**, **JSArray** and **CSV**. 
+Pivot supports both inline and external (including server-side) data in any of the desktop/data_types.md:  **XML**, **JSON**, **JsArray** and **CSV**. 
 
 ##Inline Data
 
@@ -37,7 +37,7 @@ $$("pivot").parse(pivot_dataset);
 
 ##External Data
 
-Either you get data from an external file or by a serverside script, you should use the following pattern.
+Either you get data from an external file or by a server side script, you should use the following pattern.
 
 If you load the data during component init, specify the path to this file/script as value of api/link/dataloader_url_config.md
 

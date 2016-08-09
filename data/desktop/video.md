@@ -3,7 +3,7 @@ Video
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.video.html)
+- [Methods, properties and events](api/refs/ui.video.md)
 - [Samples](http://docs.webix.com/samples/27_video/index.html)
 
 ##Overview
@@ -121,5 +121,5 @@ function playPause(){
 Alongside with playing and pausing the video, we change **button text value** with its api/ui.button_setvalue.md to correspond video state. 
 
 
-
+@spellcheck:WebM, Ogg
 

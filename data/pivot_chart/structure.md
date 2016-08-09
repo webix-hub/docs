@@ -7,7 +7,7 @@ Webix Pivot Chart consists of two functional parts:
 
 <img src="pivot/pivot_chart_01.png"/>
 
-- [Configuration window](pivot_chart/structure.md#configurationwindow) (appeares when the user clicks the 'Settings' icon):<br><br>
+- [Configuration window](pivot_chart/structure.md#configurationwindow) (appears when the user clicks the 'Settings' icon):<br><br>
 
 <img src="pivot/pivot_chart_settings.png"/>
 
@@ -55,7 +55,7 @@ Current data operations come together with values they are assigned to in the **
 - **Sum** - sums all values of this property and shows the sum;
 - **Max** - picks and shows the max value of this property;
 - **Min** - picks and shows the min value of this property;
-- **Count** - counts the number of occurrencies of this property and shows it. 
+- **Count** - counts the number of occurrences of this property and shows it. 
 
 In addition to the above-mentioned prebuilt operation types, you can as well [create a custom one](pivot_chart/configuration.md#operation).
 

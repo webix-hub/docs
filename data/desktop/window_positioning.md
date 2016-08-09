@@ -1,8 +1,10 @@
 Popup and Window Positioning
 ==============================
 
-By default [window](desktop/window.md) and [popup](desktop/popup.md) (provided that they don't occupy the whole screen) will be placed in the upper left corner of the screen sticked to browser borders. 
-To avoid this, position should be set.
+By default [window](desktop/window.md) and [popup](desktop/popup.md) (provided that they don't occupy the whole screen) 
+will be placed in the upper left corner of the screen stuck to browser borders.
+ 
+To avoid this, the position should be set.
 
 ##Absolute Positioning
 
@@ -40,7 +42,7 @@ $$('my_window').setPosition(100, 100); //left and top offset
 
 ##Relative Positioning
 
-Relative positioning is achived with the help of **position** property. It takes the following values:
+Relative positioning is achieved with the help of **position** property. It takes the following values:
 
 - **center** - to place window or popup at the center of the screen;
 - **top** - to place window or popup at the top of the screen with center horizontal alignment. 

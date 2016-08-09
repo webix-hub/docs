@@ -107,7 +107,7 @@ webix.ui({
 
 ##Prerender Customization
 
-Pivot allows changing the configration of filtering views and the datatable with the help of the onBeforeRender Event.
+Pivot allows changing the configuration of filtering views and the datatable with the help of the onBeforeRender Event.
 The event takes an object with 3 properties as a parameter:
 
 - filters - an array with configurations of views in toolbar. For example, if you set up a filter with select type, there will be configuration for the "select" control;

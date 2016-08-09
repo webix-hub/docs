@@ -1,6 +1,6 @@
 Event Handling with Tree
 =========================
-Tree supports various events that can be used to provide a custom behaviour for your tree.
+Tree supports various events that can be used to provide a custom behavior for your tree.
 
 There are 2 ways you can add a handler to the event:
 
@@ -48,11 +48,11 @@ webix.ui({
 
 Cancelable Events 
 -----------------------
-All events with subword '**onBefore**' can be cancelled.<br>
+All events with subword '**onBefore**' can be canceled.<br>
 To cancel some event you should return **false** within the appropriate event handler.
 
 {{snippet
-Cancelling the event handler
+Canceling the event handler
 }}
 ~~~js
 var myEvent = $$("treeId").attachEvent("onBeforeSelect", function () {

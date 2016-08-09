@@ -56,10 +56,12 @@ webix.ui({
 - **filterLabelAlign** - *string* - sets the horizontal alignment of the filters' labels;
 - **editButtonWidth** - *number* - sets the width of the "Settings" button;
 - **singleLegendItem** - *boolean* - specifies whether the legend should be displayed if it contains only 1 item; 
-- **palette** - *array* - specifies the pop-up color pallete of the **Values**' values<br> <code>palette:[ ["#e33fc7","#a244ea",...],["#d3ee36","#eed236",.. ],.. ]</code>  - each inner array specifies a row in the pallete
+- **palette** - *array* - specifies the pop-up color palette of the **Values**' values<br> <code>palette:[ ["#e33fc7","#a244ea",...],["#d3ee36","#eed236",.. ],.. ]</code>  - each inner array specifies a row in the palette
 
 #### Structure Object {#struct}
 
 - **values** - array of fields that will be used as pivot's data (will be displayed in datatable cells);
 - **filters** - array of fields that will be used as filters and will be displayed above the datatable columns;
 - **groupBy** - the name of the field that will be used to group values by.
+
+@spellcheck: ee, fc, eed
