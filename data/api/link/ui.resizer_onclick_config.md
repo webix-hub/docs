@@ -1,1 +1,0 @@
-@link: api/mouseevents_onclick_config.md

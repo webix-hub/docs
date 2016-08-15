@@ -104,10 +104,7 @@ webix.ui({
 - api/link/ui.resizer_minheight_config.md - sets the minimal height for the view
 - api/link/ui.resizer_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.resizer_mouseeventdelay_config.md - the delay between a real mouse action and invoking the related events
-- api/link/ui.resizer_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
 - api/link/ui.resizer_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
-- api/link/ui.resizer_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
-- api/link/ui.resizer_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
 - api/link/ui.resizer_width_config.md - sets the width of the component
 }}
 

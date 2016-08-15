@@ -1,1 +1,0 @@
-@link: api/mouseevents_ondblclick_config.md
