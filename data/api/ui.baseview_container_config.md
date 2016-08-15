@@ -3,7 +3,7 @@ container
 
 
 @short:
-	an html container (or its id) where the component needs initializing
+	an HTML container (or its id) where the component should be initialized
 
 @type: string,HTMLElement
 @example:

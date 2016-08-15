@@ -6,7 +6,7 @@ Chart Integration
 Except for built-in [charts](desktop/chart.md), Webix offers a possibility to integrate with third-party charts of the following libraries:
 
 - <a href="http://d3js.org/">D3 JS Library</a>
-- <a href="http://justgage.com/">JastGage Javascript Plugin</a>
+- <a href="http://justgage.com/">JustGage Javascript Plugin</a>
 - <a href="http://raphaeljs.com/">Raphael JavaScript Library</a>
 - <a href="http://sigmajs.org/">SigmaJS Library</a>
 
@@ -46,9 +46,9 @@ webix.ui({
 - **url** - specifies data source for the chart (data file or script);
 - **ready** - function that is executed when the component is fully loaded. It contains the code of the needed chart (available on their site). 
 
-##Justgage Gauges
+##JustGage Gauges
 
-JustGage JS is a handy JavaScript plugin for generating and animating nice gauges. It is based on Raphaël library for vector drawing. 
+JustGage JS is a handy JavaScript plugin for generating and animating nice gauges. It is based on Rapha&euml;l library for vector drawing. 
 
 <img src="desktop/justgage.png">
 
@@ -79,11 +79,11 @@ webix.ui({
 });
 ~~~
 
-- Full list of a **Justgage gauge object properties** can be found on their site. 
+- Full list of a **JustGage gauge object properties** can be found on their site. 
 
-##Raphael Charts
+##Rapha&euml;l Charts
 
-Raphael JS lib offers a number of visualization tools that help working with with vector graphics on the web.
+Rapha&euml;l JS library offers a number of visualization tools that help working with with vector graphics on the web.
 
 For instance, its dot chart encodes data in the area of circles placed on the coordinate system. 
 
@@ -93,7 +93,7 @@ For instance, its dot chart encodes data in the area of circles placed on the co
 
 ####Component Initialization
 
-Firstly, you should include Raphael JS file from the package into your document in addition to Webix files:
+Firstly, you should include Rapha&euml;l JS file from the package into your document in addition to Webix files:
 
 ~~~html
 <script type="text/javascript" src="./raphael.js"></script>
@@ -113,7 +113,7 @@ webix.ui({
 ~~~
 
 - **url** - specifies data source for the chart (data file or script);
-- **ready** - function that is triggered when the component is fully loaded. It contains the chart's source code available on the Raphael library site. 
+- **ready** - function that is triggered when the component is fully loaded. It contains the chart's source code available on the Rapha&euml;l library site. 
 
 ##Sigma Charts
 
@@ -145,7 +145,7 @@ webix.ui({
 
 - **URL** property specifies a path to a data file or script that will generate data. 
 
-The look-and-feel of a Sigma chart is defined by a currently used **plugin**. By default, Webix-integrated Sigma chart uses Fisheye plugin described in a tutorial on [Sigma JS site](http://sigmajs.org). At the same time, you can 
+The look-and-feel of a Sigma chart is defined by a currently used **plugin**. By default, Webix-integrated Sigma chart uses FishEye plugin described in a tutorial on [Sigma JS site](http://sigmajs.org). At the same time, you can 
 easily change the plugin within the component source code in a private **_after_render()** function:
 
 ~~~js
@@ -164,3 +164,5 @@ and include into the **sigma-chart** Webix component in the way described above.
 In addition, the support for GEXF data is provided by default.
 
 @complexity:2
+
+@spellcheck: GEXF, Rapha, euml

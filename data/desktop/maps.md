@@ -14,7 +14,7 @@ Ui-related maps inherit from [view](desktop/view.md).
 
 ###Initialization {#init}
 
-1 . First of all, you need to **add a special file** to the head section of your document. The script helps connect to thirdparty applications without linking to them directly:
+1 . First of all, you need to **add a special file** to the head section of your document. The script helps connect to third party applications without linking to them directly:
 
 The extensions are taken from [https://github.com/webix-hub/components](https://github.com/webix-hub/components). Note that in documentation samples they are linked in another way, but you should follow the patterns below:
 
@@ -34,10 +34,12 @@ The extensions are taken from [https://github.com/webix-hub/components](https://
 
 ~~~html
 <script type="text/javascript" src="./nokiamap.js"></script>
-<script src="http://js.api.here.com/se/2.5.3/jsl.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://js.api.here.com/se/2.5.3/jsl.js" type="text/javascript" 
+	charset="utf-8"></script>
 ~~~
 
-Additionally, you should have a [Nokia Account](https://account.nokia.com) registered. Once you register, they send you **"appID"** and **"authenticationToken"** keys that you need to specify:
+Additionally, you should have a [Nokia Account](https://account.nokia.com) registered. 
+Once you register, they send you **"appID"** and **"authenticationToken"** keys that you need to specify:
 
 ~~~js
 webix.ready(function(){
@@ -115,7 +117,7 @@ Map's properties define the initial position of the map:
 
 - **id** - *string* - defines the component unique ID;
 - **zoom** - *number* - defines how close you'd like to be to the Earth surface;
-- **center** - *array* - sets the center of the map. It's an array of two elements ( latitude and longtitude ) with comma delimiter.
+- **center** - *array* - sets the center of the map. It's an array of two elements ( latitude and longitude) with comma delimiter.
 
 {{sample 32_thirdparty/09_google_map.html }}
 
@@ -123,8 +125,8 @@ Map's properties define the initial position of the map:
 
 To make online maps interactive you should refer to the API reference each of the services provides. 
 
-For instance, the [GoogleMap API](https://developers.google.com/maps/documentation/javascript/) for javascript-based applications offers a rich colection of map options, 
-controls, overlays, services, layers, etc. that you can use while working with a **google-map** intergrated into our library. 
+For instance, the [GoogleMap API](https://developers.google.com/maps/documentation/javascript/) for javascript-based applications offers a rich collection of map options, 
+controls, overlays, services, layers, etc. that you can use while working with a **google-map** integrated into our library. 
 
 For instance, to show the necessary map piece on request, you can use the following function with the desired **lat**, **lng** and **zoom**:
 
@@ -140,7 +142,7 @@ function show_position(lat, lng, zoom) {
 ~~~
 
 - **google.maps.map** class features lots of methods, one of them being **setOptions()** that allows for defining the area on the map;
-- **google.maps.LatLng** class is a point on the map defined  by latitude and longtitude coordinates;
+- **google.maps.LatLng** class is a point on the map defined  by latitude and longitude coordinates;
 - **mapTypeId** is a property of *google.maps.mapOptions* object, that allows setting a map type (HYBRID, ROADMAP, SATELLITE, TERRAIN).
  
 ###Related Articles
@@ -149,3 +151,5 @@ function show_position(lat, lng, zoom) {
 - [Redefinition of the Components](desktop/redefinition.md)
 
 @complexity:3
+
+@spellcheck: ROADMAP, google, LatLng, lng, appID, nokia

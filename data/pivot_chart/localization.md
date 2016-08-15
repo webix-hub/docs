@@ -1,7 +1,7 @@
 Localization
 ===============
 
-By defaut all names and titles in Pivot Chart have English names, but you can change it by setting a custom locale for the page. 
+By default, all names and titles in Pivot Chart are in English, but you can change it by setting a custom locale for the page. 
 
 ~~~js
 webix.i18n.pivot = {

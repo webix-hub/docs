@@ -1,4 +1,4 @@
-Dynamic Loading in Mobile Scheduler
+Dynamic Loading 
 ===================
 
 By default, Scheduler loads all data at once.

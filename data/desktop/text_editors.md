@@ -12,7 +12,8 @@ Webix library supports integration of popular text editors in the application wi
 - [CKEditor](#ckeditor).
 
 
-To embed any of the editors into your web page, you should link not only to Webix, but also to a **special JavaScript file** from the [components folder](https://github.com/webix-hub/components). This file will connect
+To embed any of the editors into your web page, you should link not only to Webix, but also to a **special JavaScript file** from the 
+[components folder](https://github.com/webix-hub/components). This file will connect
 you to the chosen editor as well load extra required files for it. 
 
 Note that in documentation samples files are linked in another way, but in your apps you should follow the patterns described below.
@@ -55,7 +56,9 @@ webix.ui({
 
 You can download JS file for the NicEdit Editor from [github](https://github.com/webix-hub/components).
 
-NicEdit is a simple and fast **WYSIWYG** editor for websites. Being extremely lightweight it makes any element/HTML container editable or converts standard textareas to rich text editing fields.
+NicEdit is a simple and fast **WYSIWYG** 
+editor for websites. Being extremely lightweight it makes any element/HTML container editable or 
+converts standard text areas to rich text editing fields.
 
 <a href="http://nicedit.com/">Learn more about NiceEdit text editor</a>
 
@@ -139,14 +142,14 @@ webix.ui({
 ~~~
 
 
-##Codemirror Text Editor {#codemirror}
+##CodeMirror Text Editor {#codemirror}
 
-You can download JS file for the Codemirror Editor from [github](https://github.com/webix-hub/components).
+You can download JS file for the CodeMirror Editor from [github](https://github.com/webix-hub/components).
 
 CodeMirror is a JavaScript component that provides a **code editor** in a browser. When a mode is available for the language you are coding in, it will 
 color your code, and optionally help with indentation.
 
-<a href="http://codemirror.net/">Learn more about Codemirror text editor</a>
+<a href="http://codemirror.net/">Learn more about CodeMirror text editor</a>
 
 <img src="desktop/codemirror.png">
 
@@ -227,7 +230,7 @@ $$("editor").setValue("<p>some text or code snippet</p>");
 $$("editor").getValue(); // returns e.g "some<b> text</b> "
 ~~~
 
-- **getEditor();** - gets the editor object so that you can use its specific API (exept for Mercury editor).
+- **getEditor();** - gets the editor object so that you can use its specific API (except for Mercury editor).
 
 ~~~js
 $$("editor").getEditor();

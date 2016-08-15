@@ -1,4 +1,4 @@
-Tips for dhtmlxScheduler's users
+Tips for Users of dhtmlxScheduler 
 ===================================
 
 1) Webix Scheduler as well as dhtmlxScheduler allows defining date formats. The details are given in the article mobile_calendar/date_format.md.
