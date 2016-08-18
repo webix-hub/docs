@@ -9,7 +9,7 @@ $dropAllow
 
 @example:
 
-$$("somelist").$dropallow = function(context, e){
+$$("somelist").$dropAllow = function(context, e){
    //context - drag context
    return true;
 };
