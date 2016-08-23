@@ -44,7 +44,7 @@ Properties
 - api/link/ui.dataview_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.dataview_select_config.md - enables/disables item selection or multiselection in grouplist
 - api/link/ui.dataview_template_config.md - the component template
-- api/link/ui.dataview_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.dataview_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.dataview_type_config.md - object that specifies items presentation
 - api/link/ui.dataview_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.dataview_width_config.md - sets the width of the component

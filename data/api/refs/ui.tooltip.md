@@ -2,10 +2,10 @@ ui.tooltip
 =============
 
 
-{{memo A static text that is rendered in the absolutely positioned container. }}
+{{memo A static text that is rendered in the absolutely positioned container.. }}
 
 Generally, the component isn't intended for direct initialization. But if you decide to use it, use mouse events (onMouseOut, onMouseIn, onMouseMove etc.) to show/hide the tooltip box in the specified position.
-Check [Tooltip](desktop/tooltip_component.md) documentation for more detailed description.
+Check [Tooltip](desktop/tooltip.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -21,6 +21,7 @@ webix.ui({
 
 - [Overview of Tooltip](desktop/tooltip.md)
 - [Samples](http://docs.webix.com/samples/06_dataview/02_templates/06_tooltip.html)
+
 
 
 <div class='webixdoc_parents'><span>Based on: </span>

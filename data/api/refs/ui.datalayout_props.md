@@ -16,7 +16,7 @@ Properties
 - api/link/ui.datalayout_height_config.md - sets the height of the component
 - api/link/ui.datalayout_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.datalayout_id_config.md - the component ID
-- api/link/ui.datalayout_isolate_config.md - masks IDs of all inner element
+- api/link/ui.datalayout_isolate_config.md - masks IDs of all inner elements
 - api/link/ui.datalayout_margin_config.md - defines the space around elements (applies the specified value to all elements)
 - api/link/ui.datalayout_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.datalayout_maxwidth_config.md - sets the maximum width for the view

@@ -87,7 +87,7 @@ $$("files").load("files.php");
 - api/ui.filemanager_hidesearchresults.md - hides search results
 - api/ui.filemanager_hidetree.md - hides the Tree panel
 - api/link/ui.filemanager_index.md - returns the cell index in the layout collection
-- api/link/ui.filemanager_innerid.md - returns the unique inner ID of an item
+- api/link/ui.filemanager_innerid.md - returns the inner ID of an item by its public (real) ID
 - api/link/ui.filemanager_isbranch.md - checks whether the node has any children
 - api/link/ui.filemanager_isenabled.md - checks whether the view is enabled
 - api/link/ui.filemanager_isvisible.md - checks whether the view is visible
@@ -194,7 +194,7 @@ $$("files").load("files.php");
 - api/link/ui.filemanager_hidden_config.md - defines whether the view will be hidden initially
 - api/ui.filemanager_icons_config.md - defines icons for File Manager
 - api/link/ui.filemanager_id_config.md - the component ID
-- api/link/ui.filemanager_isolate_config.md - masks IDs of all inner element
+- api/link/ui.filemanager_isolate_config.md - masks IDs of all inner elements
 - api/link/ui.filemanager_margin_config.md - defines the space around elements (applies the specified value to all elements)
 - api/link/ui.filemanager_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.filemanager_maxwidth_config.md - sets the maximum width for the view

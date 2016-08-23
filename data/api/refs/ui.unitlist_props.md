@@ -47,7 +47,7 @@ Properties
 - api/ui.unitlist_sort_config.md - sets sorting rule(s) according which items will be sorted within units
 - api/link/ui.unitlist_template_config.md - the component template
 - api/link/ui.unitlist_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
-- api/link/ui.unitlist_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.unitlist_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.unitlist_type_config.md - object that specifies items presentation
 - api/ui.unitlist_uniteby_config.md - sets the template according which items will be grouped in units.
 - api/link/ui.unitlist_url_config.md - the URL which the component will use to load data after its initialization

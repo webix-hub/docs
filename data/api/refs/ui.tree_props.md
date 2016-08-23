@@ -41,8 +41,8 @@ Properties
 - api/link/ui.tree_select_config.md - enables/disables item selection or multiselection in grouplist
 - api/link/ui.tree_template_config.md - the component template
 - api/link/ui.tree_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
-- api/link/ui.tree_threestate_config.md - defines three-state checkboxes for the tree. Flase by default.
-- api/link/ui.tree_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.tree_threestate_config.md - defines three-state checkboxes for the tree
+- api/link/ui.tree_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.tree_type_config.md - object that specifies items presentation
 - api/link/ui.tree_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.tree_width_config.md - sets the width of the component

@@ -19,7 +19,7 @@ Properties
 - api/link/ui.filemanager_hidden_config.md - defines whether the view will be hidden initially
 - api/ui.filemanager_icons_config.md - defines icons for File Manager
 - api/link/ui.filemanager_id_config.md - the component ID
-- api/link/ui.filemanager_isolate_config.md - masks IDs of all inner element
+- api/link/ui.filemanager_isolate_config.md - masks IDs of all inner elements
 - api/link/ui.filemanager_margin_config.md - defines the space around elements (applies the specified value to all elements)
 - api/link/ui.filemanager_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.filemanager_maxwidth_config.md - sets the maximum width for the view

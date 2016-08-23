@@ -58,7 +58,7 @@ var spreadsheet = webix.ui({
 - api/link/ui.spreadsheet_hasevent.md - checks whether the component has the specified event
 - api/link/ui.spreadsheet_hide.md - hides the view
 - api/link/ui.spreadsheet_index.md - returns the cell index in the layout collection
-- api/link/ui.spreadsheet_innerid.md - returns the unique inner ID of an item
+- api/link/ui.spreadsheet_innerid.md - returns the inner ID of an item by its public (real) ID
 - api/link/ui.spreadsheet_isenabled.md - checks whether the view is enabled
 - api/link/ui.spreadsheet_isvisible.md - checks whether the view is visible
 - api/link/ui.spreadsheet_load.md - loads data from an external data source.
@@ -122,7 +122,7 @@ var spreadsheet = webix.ui({
 - api/link/ui.spreadsheet_height_config.md - sets the height of the component
 - api/link/ui.spreadsheet_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.spreadsheet_id_config.md - the component ID
-- api/link/ui.spreadsheet_isolate_config.md - masks IDs of all inner element
+- api/link/ui.spreadsheet_isolate_config.md - masks IDs of all inner elements
 - api/ui.spreadsheet_liveeditor_config.md - enables the formula editor in spreadsheet
 - api/link/ui.spreadsheet_margin_config.md - defines the space around elements (applies the specified value to all elements)
 - api/ui.spreadsheet_math_config.md - enables the math functionality in the spreadsheet

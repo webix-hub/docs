@@ -16,7 +16,7 @@ Properties
 - api/link/ui.spreadsheet_height_config.md - sets the height of the component
 - api/link/ui.spreadsheet_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.spreadsheet_id_config.md - the component ID
-- api/link/ui.spreadsheet_isolate_config.md - masks IDs of all inner element
+- api/link/ui.spreadsheet_isolate_config.md - masks IDs of all inner elements
 - api/ui.spreadsheet_liveeditor_config.md - enables the formula editor in spreadsheet
 - api/link/ui.spreadsheet_margin_config.md - defines the space around elements (applies the specified value to all elements)
 - api/ui.spreadsheet_math_config.md - enables the math functionality in the spreadsheet

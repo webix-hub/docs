@@ -362,8 +362,8 @@ var treetable = webix.ui({
 - api/link/ui.treetable_subrowheight_config.md - automatically adjusts the subrow's height to the size of the text
 - api/link/ui.treetable_subrow_config.md - sets a subrow template
 - api/link/ui.treetable_subview_config.md - adds a subview configuration into datatable
-- api/link/ui.treetable_threestate_config.md - defines three-state checkboxes for the tree. Flase by default.
-- api/link/ui.treetable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.treetable_threestate_config.md - defines three-state checkboxes for the tree
+- api/link/ui.treetable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.treetable_topsplit_config.md - defines the number of rows that will be "frozen" at the top of datatable
 - api/link/ui.treetable_type_config.md - used for configuring presentation of items
 - api/link/ui.treetable_url_config.md - the URL which the component will use to load data after its initialization

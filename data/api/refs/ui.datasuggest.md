@@ -175,4 +175,3 @@ webix.ui({
 - api/refs/ui.datasuggest_events.md
 - api/refs/ui.datasuggest_others.md
 
-@edition:pro

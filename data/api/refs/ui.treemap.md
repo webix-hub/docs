@@ -237,7 +237,7 @@ var treemap = webix.ui({
 - api/link/ui.treemap_template_config.md - the component template
 - api/link/ui.treemap_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
 - api/link/ui.treemap_threestate_config.md - enable three-state checkboxes
-- api/link/ui.treemap_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.treemap_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.treemap_type_config.md - object that specifies items presentation
 - api/link/ui.treemap_url_config.md - the URL which the component will use to load data after its initialization
 - api/ui.treemap_value_config.md - a template that specifies the area of an item rectangle
@@ -276,5 +276,3 @@ var treemap = webix.ui({
 - api/refs/ui.treemap_events.md
 - api/refs/ui.treemap_others.md
 
-
-@edition:pro

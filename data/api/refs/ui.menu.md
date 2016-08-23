@@ -226,7 +226,7 @@ var menu = webix.ui({
 - api/ui.menu_submenuconfig_config.md - defines submenu configuration
 - api/link/ui.menu_template_config.md - the component template
 - api/link/ui.menu_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
-- api/link/ui.menu_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.menu_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.menu_type_config.md - object that specifies items presentation
 - api/link/ui.menu_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.menu_width_config.md - sets the width of the component

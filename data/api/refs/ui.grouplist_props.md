@@ -49,7 +49,7 @@ Properties
 - api/link/ui.grouplist_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
 - api/ui.grouplist_templategroup_config.md - an html template that defines data that will be presented in group header in the collapsed state
 - api/ui.grouplist_templateitem_config.md - an html template that defines data that will be presented in grouplist
-- api/link/ui.grouplist_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.grouplist_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.grouplist_type_config.md - object that specifies items presentation
 - api/link/ui.grouplist_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.grouplist_width_config.md - sets the width of the component

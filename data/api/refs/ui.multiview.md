@@ -91,7 +91,7 @@ webix.ui({
 {{api
 - api/link/ui.multiview_animate_config.md - defines or disables view change animation.
 - api/link/ui.multiview_borderless_config.md - used to hide the component borders
-- api/ui.multiview_cells_config.md - the array with views objects
+- api/ui.multiview_cells_config.md - array with view objects
 - api/link/ui.multiview_cols_config.md - array of views objects arranged horizontally
 - api/link/ui.multiview_container_config.md - an html container (or its id) where the component needs initializing
 - api/link/ui.multiview_css_config.md - the name of a css class that will be applied to the view container

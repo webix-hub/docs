@@ -62,7 +62,7 @@ Properties
 - api/link/ui.submenu_template_config.md - the component template
 - api/link/ui.submenu_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
 - api/link/ui.submenu_tofront_config.md - places window above other windows on clicking it
-- api/link/ui.submenu_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.submenu_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.submenu_top_config.md - the top offset of a window
 - api/link/ui.submenu_type_config.md - object that specifies items presentation
 - api/link/ui.submenu_url_config.md - the URL which the component will use to load data after its initialization

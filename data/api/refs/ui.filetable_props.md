@@ -82,7 +82,7 @@ Properties
 - api/link/ui.filetable_subrowheight_config.md - automatically adjusts the subrow's height to the size of the text
 - api/link/ui.filetable_subrow_config.md - sets a subrow template
 - api/link/ui.filetable_subview_config.md - adds a subview configuration into datatable
-- api/link/ui.filetable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.filetable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.filetable_topsplit_config.md - defines the number of rows that will be "frozen" at the top of datatable
 - api/link/ui.filetable_type_config.md - used for configuring presentation of items
 - api/link/ui.filetable_url_config.md - the URL which the component will use to load data after its initialization

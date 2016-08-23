@@ -97,7 +97,7 @@ var portlet = webix.ui({
 - api/link/ui.portlet_height_config.md - sets the height of the component
 - api/link/ui.portlet_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.portlet_id_config.md - the component ID
-- api/link/ui.portlet_isolate_config.md - masks IDs of all inner element
+- api/link/ui.portlet_isolate_config.md - masks IDs of all inner elements
 - api/ui.portlet_layouttype_config.md - defines the borders of layout that will be created after drag-n-drop operation is finished
 - api/link/ui.portlet_margin_config.md - defines the space around elements (applies the specified value to all elements)
 - api/link/ui.portlet_maxheight_config.md - sets the maximum height for the view
@@ -141,4 +141,3 @@ var portlet = webix.ui({
 - api/refs/ui.portlet_events.md
 - api/refs/ui.portlet_others.md
 
-@edition:pro

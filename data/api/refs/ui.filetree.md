@@ -234,8 +234,8 @@ dummy stub
 - api/link/ui.filetree_select_config.md - enables/disables item selection or multiselection in grouplist
 - api/link/ui.filetree_template_config.md - the component template
 - api/link/ui.filetree_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
-- api/link/ui.filetree_threestate_config.md - defines three-state checkboxes for the tree. Flase by default.
-- api/link/ui.filetree_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.filetree_threestate_config.md - defines three-state checkboxes for the tree
+- api/link/ui.filetree_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.filetree_type_config.md - object that specifies items presentation
 - api/link/ui.filetree_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.filetree_width_config.md - sets the width of the component

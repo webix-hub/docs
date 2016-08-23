@@ -28,7 +28,7 @@ Methods
 - api/link/ui.spreadsheet_hasevent.md - checks whether the component has the specified event
 - api/link/ui.spreadsheet_hide.md - hides the view
 - api/link/ui.spreadsheet_index.md - returns the cell index in the layout collection
-- api/link/ui.spreadsheet_innerid.md - returns the unique inner ID of an item
+- api/link/ui.spreadsheet_innerid.md - returns the inner ID of an item by its public (real) ID
 - api/link/ui.spreadsheet_isenabled.md - checks whether the view is enabled
 - api/link/ui.spreadsheet_isvisible.md - checks whether the view is visible
 - api/link/ui.spreadsheet_load.md - loads data from an external data source.

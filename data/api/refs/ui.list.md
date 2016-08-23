@@ -215,7 +215,7 @@ var list = webix.ui({
 - api/link/ui.list_select_config.md - enables/disables item selection or multiselection in grouplist
 - api/link/ui.list_template_config.md - the component template
 - api/link/ui.list_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
-- api/link/ui.list_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.list_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.list_type_config.md - object that specifies items presentation
 - api/link/ui.list_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.list_width_config.md - sets the width of the component

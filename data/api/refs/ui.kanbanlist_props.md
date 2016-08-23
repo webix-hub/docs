@@ -44,7 +44,7 @@ Properties
 - api/link/ui.kanbanlist_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.kanbanlist_select_config.md - enables/disables item selection or multiselection in grouplist
 - api/link/ui.kanbanlist_template_config.md - the component template
-- api/link/ui.kanbanlist_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.kanbanlist_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.kanbanlist_type_config.md - object that specifies items presentation
 - api/link/ui.kanbanlist_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.kanbanlist_width_config.md - sets the width of the component
