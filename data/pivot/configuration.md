@@ -103,28 +103,32 @@ grida.addOperation("avr", function(data) {
 {{sample 61_pivot/03_table_api/03_adding_operation.html}}
 
 
-Sum counters for columns and rows
+Sum Сounters for Сolumns and Rows
 ----------------------------------
 
 To calculate the total sum for each row, **total column** can be set: 
 
 ~~~js
-view:"pivot"
-totalColumn: "sumOnly",
-...
+webix.ui({
+    view:"pivot",
+    totalColumn:"sumOnly",
+    //...
+});
 ~~~
 
 To calculate the total sum per column, **footer** can be defined: 
 
 ~~~js
-view:"pivot"
-footer: "sumOnly",
-...
+webix.ui({
+    view:"pivot",
+    footer: "sumOnly",
+    //...
+});
 ~~~
 
-{{sample 61_pivot/03_table_api/02_total_column.html}}
-
 The "sumOnly" value of both properties forces the summing function to process only rows/columns that contain sums already. 
+
+{{sample 61_pivot/03_table_api/02_total_column.html}}
 
 Filters
 --------
@@ -147,7 +151,7 @@ There are two types of filters:
 - **text** - filters by symbols in the text field. It supports base **math comparison operators**, so you can type something like "< 100", "> 2.5" or "= 12"  
 If there is no operator, filter will use text match for filtering.
 
-Renaming fields 
+Renaming Fields 
 -------------------
 
 By default, Pivot uses data item properties for column names. But if you have dataset structured like below, the default pattern becomes unsuitable:
@@ -168,15 +172,27 @@ webix.ui({
 
 {{sample 61_pivot/01_init/06_custom_titles.html}}
 
-Setting readonly mode
+Setting Readonly Mode
 ----------------------
 
-In order to disable changing of the pivot configuration settings, you can specify the *readonly* config property with the "true" value:
+In order to disable changing of the Pivot configuration settings, you can specify the *readonly* config property with the "true" value:
 
 ~~~js
 webix.ui({
 	view: "pivot",
     readonly:true,
+	//...
+});
+~~~
+
+
+You can also set a readonly title which will be displayed
+instead of the link which opens a popup with Pivot configuration settings. Use the api/ui.pivot_readonlytitle_config.md for this purpose:
+
+~~~js
+webix.ui({
+	view: "pivot",
+    readonlyTitle:"New Title",
 	//...
 });
 ~~~
