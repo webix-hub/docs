@@ -50,3 +50,5 @@ Related events
 }}
 
 @edition:pro
+
+@spellcheck:apitable

@@ -1,4 +1,4 @@
-Sorting in the Tree
+Sorting in Tree
 ====================
 Tree allows you to sort nodes on the client side. Note, along with the parent nodes, child nodes are sorted as well.
 
@@ -6,7 +6,7 @@ Data is sorted as strings and by levels, starting from the latest nesting level.
 
 Common 
 ----------------------------
-Sorting in Tree can be invoked by calling the sort method. The method can be called on some event or action, i.e. button click or page load.
+Sorting in Tree can be invoked by calling the api/link/ui.tree_sort.md method. The method can be called on some event or action, i.e. button click or page load.
 
 
 {{snippet
@@ -27,7 +27,7 @@ Sorting Tree on button click
 
 Custom sorting functions
 -----------------------------
-If you want to apply a custom sorting behaviour, you should define the related logic in a function and  invoke this function in the sort method.
+If you want to apply a custom sorting behavior, you should define the related logic in a function and  invoke this function in the api/link/ui.tree_sort.md method.
 
 This function is called for each pair of adjacent values and return 1,-1 or 0:
 
@@ -41,16 +41,16 @@ Let's assume you have a tree like this:
 <img src="datatree/custom_sorting.png"/>
 
 
-And want to sort only car makes and keep the childs as they are. As the default sorting affects all nodes you need to provide a custom logic. It may look as in:
+And want to sort only car makers and keep the children as they are. As the default sorting affects all nodes you need to provide a custom logic. It may look as in:
 
 {{snippet
 Sorting the tree by one level
 }}
 ~~~html
-<input type='button' value='sort car makes' onclick='tree.sort(sortMakes)'>
+<input type='button' value='sort car makers' onclick='tree.sort(sortMakers)'>
 
 <script>
-function sortMakes(a,b){
+function sortMakers(a,b){
 		if (a.$level == 2)
         {
         	a = a.value;
@@ -64,8 +64,11 @@ function sortMakes(a,b){
 ...
 </script>
 ~~~
-Note, Tree sorts data by levels starting from the lastest nesting level, i.e. at first car models of each make are sorted, then car makes themselves.  
+
+Note, Tree sorts data by levels starting from the latest nesting level, i.e. at first car models of each maker are sorted, then car makers themselves.  
 
 {{sample
 	17_datatree/04_api/05_sort_custom.html
 }}
+
+@spellcheck:api

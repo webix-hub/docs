@@ -1,7 +1,7 @@
 Settings for Scatter Chart
 =============
 
-##Custom Inititalization
+##Custom Initialization
 
 - **value** (template) - item template for Y axis;
 - **xValue** (template) - item template for xAxis;
@@ -10,7 +10,7 @@ Settings for Scatter Chart
     - **radius** (number) - radius on the point in the chart;
   	- **[eventRadius](api/ui.chart_eventradius_config.md)** (number) - radius of the virtual circle which events will fire for items within;
     - **borderColor** (hex code) - the color of the point border;
-    - **borderWidth** (number) - the width fo the border (if set, point take square shape);
+    - **borderWidth** (number) - the width for the border (if set, point take square shape);
     - **color** (hex code) - color of the points
 	- **shadow** (boolean) - if *true* makes point cast shadows. *False* by default. 
 
@@ -28,7 +28,7 @@ Presets simplify chart initializing and contain item setting. They are defined b
 
 ##Scatter Chart Series
 
-Chart series allow presenting different graphs within on eand the same chart. The graphs differ in color. Settings for the graphs form objects that are placed into the **series** array. 
+Chart series allow presenting different graphs within one and the same chart. The graphs differ in color. Settings for the graphs form objects that are placed into the **series** array. 
 
 <img src="desktop/scatter_series.png"/>
 

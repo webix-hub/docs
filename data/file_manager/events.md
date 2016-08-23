@@ -25,18 +25,18 @@ There is a simple way of removing an event-handler:
 webix.detachEvent(id); // unique id of the event handler
 ~~~
 
-List of supported events
+Groups of Supported Events
 ------------------------
 
 The File Manager API includes the following groups of events:
 
-1) Actions handling events
+1) Action Handling Events
 
-- <a href="#onbeforecopy">onBeforeMarkCopy</a> - fires before an item has been copied
 - <a href="#onbeforecreate">onBeforeCreateFolder</a> - fires before a new folder has been created
-- <a href="#onbeforecut">onBeforeMarkCut</a> - fires before an item has been cut
 - <a href="#onbeforedelete">onBeforeDeleteFile</a> - fires before an item is deleted
 - <a href="#onbeforeedit">onBeforeEditFile</a> - fires when the Rename action is chosen in the popup menu
+- <a href="#onbeforecopy">onBeforeMarkCopy</a> - fires before an item has been copied
+- <a href="#onbeforecut">onBeforeMarkCut</a> - fires before an item has been cut
 - <a href="#onbeforepaste">onBeforePasteFile</a> - fires before an item has been pasted
 - <a href="#onbeforeupload">onBeforeUploadFile</a> - fires on the "upload" action click 
 
@@ -47,18 +47,43 @@ The File Manager API includes the following groups of events:
 - <a href="#onbeforedragin">onBeforeDragIn</a> - fires before a dragged item is moved over the droppable area
 - <a href="#onbeforedrop">onBeforeDrop</a> - fires before a dragged item is released over the droppable area
 
-3) Editing events
+3) Editing Events
 
 
 - <a href="#onaftereditstop">onAfterEditStop</a> - fires after the editor is closed
 - <a href="#onbeforeeditstop">onBeforeEditStop</a> - fires before editing is finished 
 
-4)  Other
 
-- <a href="#onerrorresponse">onErrorResponse</a> - fires if an error has occurred during some operation
+4) Tree-related Events
+
+- <a href="#onafterhidetree">onAfterHideTree</a> - fires after the tree has been hidden
+- <a href="#onaftershowtree">onAfterShowTree</a> - fires after the tree has been shown
+- <a href="#onbeforehidetree">onBeforeHideTree</a> - fires before the tree is hidden
+- <a href="#onbeforeshowtree">onBeforeShowTree</a> - fires before the tree is expanded
+
+5) Navigation Events
+
+- <a href="#onafterleveldown">onAfterLevelDown</a> - fires after selection has been moved to the child folder
+- <a href="#onbeforeleveldown">onBeforeLevelDown</a> - fires before selection is moved to the child folder
+
+
+6)  Other Events
+
+- <a href="#onafterrun">onAfterRun</a> - fires after a selected file has been downloaded
 - <a href="#onbeforerun">onBeforeRun</a> - fires on file double-click or on enter click
+- <a href="#onerrorresponse">onErrorResponse</a> - fires if an error has occurred during some operation
 - <a href="#onfolderselect">onFolderSelect</a> - fires on selecting a folder in the Tree view
+- <a href="#onhidesearchresults">onHideSearchResults</a> - fires when search results were hidden
+- <a href="#onitemrename">onItemRename</a> - fires when an item is renamed
+- <a href="#onsuccessresponse">onSuccessResponse</a> - fires on successful save response
 - <a href="#onviewinit">onViewInit</a> - fires during the initialization of an object with the mode configuration
+
+
+
+
+
+Events' Details
+--------------------
 
 
 ###<span id='onbeforecopy'>onBeforeMarkCopy</span> 
@@ -477,3 +502,148 @@ params:
 {{sample
 64_file_manager/03_customization/01_views_configuration.html
 }}
+
+
+###<span id='onafterhidetree'>onAfterHideTree</span> 
+
+fires after the tree has been hidden
+
+~~~js
+fmanager.attachEvent("onAfterHideTree", function(){
+    // some code
+});
+~~~
+
+
+###<span id='onafterleveldown'>onAfterLevelDown</span> 
+
+fires after selection has been moved to the child folder
+
+~~~js
+fmanager.attachEvent("onAfterLevelDown", function(id){
+    // some code
+});
+~~~
+
+params:
+
+- id - {string}	the new selected folder id
+
+
+###<span id='onafterrun'>onAfterRun</span>
+
+fires after a selected file has been downloaded
+
+~~~js
+fmanager.attachEvent("onAfterRun",function(id){
+    // some code
+});
+~~~
+
+params:
+
+- id - {string}	the id of the downloaded item
+
+
+###<span id='onaftershowtree'>onAfterShowTree</span>
+
+fires after the tree has been shown
+
+~~~js
+fmanager.attachEvent("onAfterShowTree", function(){
+    // some code 
+});
+~~~
+
+
+###<span id='onbeforehidetree'>onBeforeHideTree</span>
+
+fires before the tree is hidden
+
+~~~js
+fmanager.attachEvent("onBeforeHideTree", function(){
+    // some code
+    return true;
+});
+~~~
+
+returns:
+
+- {bool} - returning false will prevent tree collapsing
+
+
+###<span id='onbeforeleveldown'>onBeforeLevelDown</span>
+
+fires before selection is moved to the child folder
+
+~~~js
+fmanager.attachEvent("onBeforeLevelDown", function(){
+    // some code
+});
+~~~
+
+params:
+
+- id - {string}	the new selected folder id
+
+returns:
+
+- {bool} - returning false will prevent the operation
+
+
+
+###<span id='onbeforeshowtree'>onBeforeShowTree</span>
+
+fires before the tree is expanded
+
+~~~js
+fmanager.attachEvent("onBeforeShowTree", function(){
+    // some code
+    return true;
+});
+~~~
+
+returns:
+
+- {bool} - returning false will prevent tree expanding
+
+
+
+###<span id='onhidesearchresults'>onHideSearchResults</span>
+
+fires when search results were hidden
+
+~~~js
+fmanager.attachEvent("onHideSearchResults", function(){
+    // some code
+});
+~~~
+
+###<span id='onitemrename'>onItemRename</span>
+
+fires when an item is renamed
+
+~~~js
+fmanager.attachEvent("onItemRename", function (id) {
+    // some code
+});
+~~~
+
+params:
+
+- id - {string}	the item id
+
+###<span id='onsuccessresponse'>onSuccessResponse</span>
+
+fires on successful save response
+
+~~~js
+fmanager.attachEvent("onSuccessResponse", function(request, response){
+    // your code here
+});
+~~~
+
+params:
+
+- request - {object} a JSON object with request parameters
+- response - {object} a JSON object with response

@@ -5,7 +5,7 @@ input
 @short: points to an  HTML input field that houses the suggest list
 	
 
-@type: 
+@type: HTMLElement, string
 @example:
 webix.ui({
 	width: 300,

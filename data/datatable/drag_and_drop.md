@@ -111,14 +111,13 @@ In this case you should make use of the events below:
 Advanced
 --------------------------------------------
 Information stated in the [Common](#Common) part is enough in most cases.
-The current part should be used just if you want to customize existing drag-and-drop behaviour.
-
+The current part should be used just if you want to customize existing drag-and-drop behavior
 The part covers the following topics:
 
 - [Custom text of the dragging items](#custom_text);
 - [Denying dragging of specific items](#denying_dragging);
 - [Denying dropping to specific positions](#denying_dropping);
-- [Switching between 'move' and 'copy' behaviors](#copy_behaviour);
+- [Switching between 'move' and 'copy' behavior](#copy_behavior);
 - [Limiting the draggable area to a certain element](#limiting_draggable_area);
 - [Auto scrolling during drag-n-drop](#autoscroll).
 - [Related events](#events).
@@ -186,7 +185,7 @@ dtable.attachEvent("onBeforeDrag", function(context, ev){
 });
 ~~~
             
-From now on, each time d-n-d is started, the item index will be checked, and the row can be dragged only if its index isn't even.
+From now on, each time drag-n-drop is started, the item index will be checked, and the row can be dragged only if its index isn't even.
 
 {{note
 
@@ -220,13 +219,13 @@ dtable.attachEvent("onBeforeDrop", function(context, ev){
 });
 ~~~
 
-<h3 id="copy_behaviour">Switching between 'move' and 'copy' behaviors</h3>
+<h3 id="copy_behavior">Switching between 'move' and 'copy' behavior</h3>
 By default, rows are moved (not copied) while d-n-d.
 
-To set the 'copy' behaviour, use the api/dragitem_onbeforedrop_event.md event. Specify inside the copy logic and return *false* to prevent drag-and-drop processing:
+To set the 'copy' behavior, use the api/dragitem_onbeforedrop_event.md event. Specify inside the copy logic and return *false* to prevent drag-and-drop processing:
 
 {{snippet 
-Setting the 'copy' behaviour for d-n-d
+Setting the 'copy' behavior for d-n-d
 }}
 ~~~js
 dtable.attachEvent("onBeforeDrop", function(context, ev){
@@ -241,11 +240,11 @@ dtable.attachEvent("onBeforeDrop", function(context, ev){
 }}
 
 <h3 id="limiting_draggable_area">Limiting the draggable area to the specified element</h3>
-You can provide a behaviour when the user could drag items only by the certain specified areas.
+You can provide a behavior when the user could drag items only by the certain specified areas.
 
 <img src="datatable/limiting_draggable_area.png"/>
 
-To achieve such a behaviour, just follow this plan:
+To achieve such a behavior, just follow this plan:
 
 - Specify an element you want an item to be dragged by. 
 - Set this element as the target object for the api/dragitem_onbeforedrop_event.md event (the target object is an object on which the event will occur).
@@ -317,9 +316,9 @@ The following events are generated during the d-n-d process:
 
 If the "order" mode is enabled, the api/link/ui.datatable_onbeforedrop_event.md and api/link/ui.datatable_onafterdrop_event.md events won't fire. In this case you need to use the corresponding events:
 
-- api/dragorder_onafterdroporder_event.md - called when dnd reordering is fully finished
-- api/dragorder_onbeforedroporder_event.md - called when dnd reordering has been made, but not applied yet
+- api/dragorder_onafterdroporder_event.md - called when drag-n-drop reordering is fully finished
+- api/dragorder_onbeforedroporder_event.md - called when drag-n-drop reordering has been made, but not applied yet
 
 In the default scenario there is no need to use any of the mentioned events, because DataTable will process all the operations on its own. But sometimes default behavior needs customizing - this is the time when the mentioned events can be used.
 
-
+@spellcheck:dnd

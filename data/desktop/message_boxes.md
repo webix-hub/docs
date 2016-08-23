@@ -66,13 +66,13 @@ webix.message({
 	type:"error", 
     text:"Form Data is Invalid",
     expire:10000
-    //expire:-1   for cancelling expire period
+    //expire:-1   for canceling expire period
 })
 ~~~
 
 If you cancel expire period, such message will disappear only on mouse click.
 
-Message boxes can as well be hidden **programmatically**:
+Message boxes can as well be hidden **using API**:
 
 ~~~js
 var message = webix.message("Hi!");

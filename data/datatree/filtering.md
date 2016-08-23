@@ -1,4 +1,4 @@
-Filtering in the Tree
+Filtering in Tree
 ====================
 Tree allows you to filter nodes on the client side. 
 
@@ -74,3 +74,5 @@ Custom filtering function
     }
 </script>
 ~~~
+
+@spellcheck:api

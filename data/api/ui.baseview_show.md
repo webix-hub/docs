@@ -7,8 +7,8 @@ show
     
 @params:
 
-* force   boolean  when set to true command will show not only the current view but all parent views as well (can be used for nested tabviews or nested mutliviews )
-* animation  boolean  enables|disables animation during view showing
+* force   boolean  when set to true command will show not only the current view but all parent views as well    (can be used for nested tabviews or nested mutliviews)
+* animation  boolean  enables/disables animation during view showing
 
 @example:
 

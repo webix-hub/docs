@@ -3,13 +3,13 @@ Tree
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.tree.html)
+- [Methods, properties and events](api/refs/ui.tree.md)
 - [Samples](http://docs.webix.com/samples/17_datatree/index.html)
 
 <div class="h2">Overview</div>
 
 Tree is a pure JavaScript component for building various tree hierarchies. <br>
-It's a powerful and customizable tool with lots of features: support for XML, JSON data sources, static and dynamic loading, multitree drag-and-drop, inline editing, optional checkboxes, state saving, 
+It's a powerful and customizable tool with lots of features: support for XML, JSON data sources, static and dynamic loading, multi tree drag-and-drop, inline editing, optional checkboxes, state saving, 
 filtering, sorting, copying etc. 
 
 <i>Confused where to start? Read article 'datatree/quick_start.md' to kick things off.</i>
@@ -77,7 +77,7 @@ filtering, sorting, copying etc.
 				<li><a href="datatree/events_handling.md">Events handling</a></li>
             </ul>
         </td>
-        <td class='topic_description'>Describes the remaining procedures related to the tree but not mentioned in the chapters above: work with the clipboard, support for internal/external dnd and handling events.</td>
+        <td class='topic_description'>Describes the remaining procedures related to the tree but not mentioned in the chapters above: work with the clipboard, support for internal/external drag-n-drop and handling events.</td>
     </tr>
 	</tbody>
 </table>

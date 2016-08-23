@@ -5,7 +5,7 @@ label
 @short: legend of fieldset
 	
 
-@type: 
+@type: string
 @example:
 
 webix.ui({

@@ -33,7 +33,7 @@ Configuration parameters are:
 	- **toolbar** (string) - the id of the related pdf toolbar;
 	- **url** (string) - the url of the pdf file to browse in the viewer.
     
-####Pdfbar structure    
+####PDFbar structure    
     
 Toolbar is supplied with the following fully functional controls: 
 
@@ -207,7 +207,7 @@ $$("pdfviewer").attachEvent("onPageRender", function(pageNum){ ... });
 
 fires after the page has been zoomed
 
-parametes: 
+parameters: 
 
 - scale - (number) new value of the scale
 - update - (boolean) flag that indicates whether the related PDF toolbar should be updated
@@ -328,3 +328,5 @@ $$("toolbar").download();
 
 
 @edition:pro
+
+@spellcheck:pdf, PDFbar

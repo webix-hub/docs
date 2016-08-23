@@ -16,10 +16,10 @@ Check the [Migration Guide](migration.md#webix3132) for more details.
 ##New Features
 
 - [Spreadsheet](desktop/spreadsheet.md) widget (PRO edition)
-- [Rangechart](desktop/range_chart.md) widget (PRO edition)
+- [RangeChart](desktop/range_chart.md) widget (PRO edition)
 - [undo](desktop/undo.md) functionality for all data components
 - [export to PDF](desktop/export_pdf.md) for all data components
-- [area selection](datatable/area_selection.md) for Datatable and Treetable
+- [area selection](datatable/area_selection.md) for Datatable and TreeTable
 
 
 ##Updates
@@ -33,12 +33,12 @@ Check the [Migration Guide](migration.md#webix3132) for more details.
 - support for structure without columns in [Pivot Table](desktop/pivot.md)
 - [selectAll](api/ui.datatable_selectall.md) and [unselectAll](api/ui.datatable_unselectall.md) methods for datatable
 - proxy support for dynamic loading {{sample 15_datatable/16_dyn_loading/07_dyn_proxy.html}}
-- dynamic loading support for [multicombo](desktop/multicombo.md) suggestions
+- dynamic loading support for [MultiCombo](desktop/multicombo.md) suggestions
 - support for proxy and editable columns in [File Manager](desktop/file_manager.md)
 - "missed values" support in [Pivot Table](desktop/pivot.md)
 - [drag](api/link/ui.list_drag_config.md) order for [x-lists](desktop/xlist.md)
 - binary [proxy](desktop/server_proxy.md) for reading files as ArrayBuffer
-- excel [data driver](desktop/data_types.md) (and datatype) for parsing the contents of Excel files. Used in [Excelviewer](desktop/excelviewer.md) and [Spreadsheet](desktop/spreadsheet.md)
+- excel [data driver](desktop/data_types.md) (and datatype) for parsing the contents of Excel files. Used in [Excel viewer](desktop/excelviewer.md) and [Spreadsheet](desktop/spreadsheet.md)
 
 
 ##Fixes
@@ -48,7 +48,7 @@ Check the [Migration Guide](migration.md#webix3132) for more details.
 - columns filtering in datatable
 - incorrect focus for toggle buttons
 - history track in case of dynamic loading
-- dynamic loading for Treetable
+- dynamic loading for TreeTable
 - call scrollTo after Datatable reload
 - get suggested value from Suggest list without selection in it
 - getScrollState for Datatable
@@ -65,17 +65,17 @@ Check the [Migration Guide](migration.md#webix3132) for more details.
 - double watcher logic in Angular integration
 - DP parameters passing to updateItem
 - label/id of input elements
-- multi-day rendering in Mobile Scheduler
+- multiday rendering in Mobile Scheduler
 - pager size
 - filtering by multiple fields in Pivot Table
-- tab-click events in ExcelViewer
-- update visible selection after colorboard suggest is displayed
+- tab-click events in Excel Viewer
+- update visible selection after color board suggest is displayed
 - FileManager selection
 - spans rendering after columns number has changed
 - onAfterScroll event and non-touch handlers
 - onchange event for multitext control
 - url in loadBranch
-- auto-positioning of popups in case of global scroll
+- auto-positioning popup in case of global scroll
 - DP parameters passing to updateItem
 - label/id of input elements
 - proxy.load call

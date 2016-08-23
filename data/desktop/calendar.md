@@ -3,7 +3,7 @@ Calendar
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.calendar.html)
+- [Methods, properties and events](api/refs/ui.calendar.md)
 - [Samples](http://docs.webix.com/samples/09_calendar/index.html)
 
 ##Overview
@@ -66,13 +66,13 @@ webix.ui({
 
 ####Setting and Getting Dates
 
-**Setting dates** means their selection. Dates can be set programmatically after calendar initialization: 
+**Setting dates** means their selection. Dates can be set after calendar initialization with the help of the following methods: 
 
 - **setValue**(new Date(2012,3,30)); - common method for setting values to the controls;
 - **selectDate**(new Date(2012,3,30));  - calendar specific method equal to the above mentioned one;
 - **showCalendar**(new Date(2012,3,30)); - makes the calendar **show** the specified date, but doesn't select it. 
 
-**Getting dates** can be done with two corresponding methods: 
+To **get dates** make use of the methods below: 
 
 - **getValue()**; - common method for getting the control's value.
 - **getSelectedDate()**; - calendar specific method. 
@@ -84,6 +84,30 @@ $$('calendar1').selectDate(new Date(2012,3,30));
 $$("calendar1").getValue(); // returns the non-formatted date object 
                             // -> Mon Apr 30 2012 00:00:00 GMT+0300 (EEST)
 ~~~
+
+##Month and Year Types
+
+You can specify the modes in which Calendar will display either only months or only years:
+
+<img src="desktop/month_year_calendar.png">
+
+To set one of these modes, use the *type* property:
+
+~~~js
+webix.ui({   
+	date:new Date(2016,1,16),
+	view:"calendar",
+	type: "month"
+});
+
+webix.ui({
+    date:new Date(2016,3,16, 8, 10),
+    view:"calendar",
+    type:"year"
+});
+~~~
+
+{{sample 09_calendar/12_month_year.html}}
 
 ##Datepicker 
 
@@ -102,6 +126,7 @@ webix.ui({
 });
 ~~~
 {{sample 09_calendar/06_datepicker.html }}
+
 
 ##Time Selector in Calendar
 
@@ -152,6 +177,9 @@ webix.ui({
 {{sample 09_calendar/03_timepicker.html}}
 
 Like standard calendar, time view accepts values as string or date object.
+
+
+
 
 ##Localization
 

@@ -8,11 +8,13 @@ options
 @type: object
 @example:
 webix.ui({
-	view:"segmented", value:"one", options:[
-			{ id:"one", value:"One" },
-			{ id:"two", value:"Two"},
-			{ id:"three", value:"Three"}
-			]
+	view:"segmented", 
+    value:"one", 
+    options:[
+		{ id:"one", value:"One" },
+		{ id:"two", value:"Two"},
+		{ id:"three", value:"Three"}
+	]
 })
 
 @template:	api_config
@@ -30,7 +32,7 @@ webix.ui({
 @descr:
 The property is an array of objects, each of which presents a singular select option on a toolbar.<br>
 
-The objects in the array have **2 attributes**:
+The objects in the array have **3 attributes**:
 
 - **id** - (*id*) the item id
 - **value** - (*string*) the item label

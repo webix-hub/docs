@@ -9,4 +9,4 @@ Third party integration
 - desktop/custom_integration.md
 }}
                
-Also, be sure to check desktop/extensions.md
+Сheck out desktop/extensions.md as well.

@@ -1,0 +1,1 @@
+@link: api/tablepaste_clipboard_config.md

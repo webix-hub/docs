@@ -65,7 +65,7 @@ var multitext = webix.ui({
 - api/link/ui.multitext_setvalue.md - sets a new value for the component
 - api/ui.multitext_setvaluehere.md - sets value for the basic field of a multitext control
 - api/link/ui.multitext_show.md - makes the component visible
-- api/link/ui.multitext_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.multitext_sync.md - allows you to sync two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.multitext_unbind.md - breaks "bind" link
 - api/link/ui.multitext_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.multitext_validate.md - validates value of input
@@ -118,11 +118,13 @@ var multitext = webix.ui({
 - api/ui.multitext_icon_config.md - sets an icon type
 - api/ui.multitext_iconwidth_config.md - sets icon width
 - api/link/ui.multitext_id_config.md - the component ID
+- api/link/ui.multitext_inputalign_config.md - the alignment of an input towards its container
 - api/link/ui.multitext_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.multitext_inputpadding_config.md - padding of text in the input
 - api/link/ui.multitext_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.multitext_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.multitext_label_config.md - the text label of the control
+- api/link/ui.multitext_labelalign_config.md - the alignment of a label towards its container
 - api/link/ui.multitext_labelposition_config.md - positions label in relation to the control
 - api/link/ui.multitext_labelwidth_config.md - the width of the label
 - api/link/ui.multitext_maxheight_config.md - sets the maximum height for the view
@@ -181,6 +183,5 @@ var multitext = webix.ui({
 - api/refs/ui.multitext_props.md
 - api/refs/ui.multitext_events.md
 - api/refs/ui.multitext_others.md
-
 
 @edition:pro

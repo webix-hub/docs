@@ -99,12 +99,8 @@ Tree Filtering
 }}
 ~~~js
 //html input field
-<input 
-	type='text' 
-    placeholder="type filter criteria here" 
-    style='width:250px; margin-left:20px' 
-    onkeypress="filter_tree()"
->
+<input type='text' placeholder="type filter criteria here" 
+	style='width:250px; margin-left:20px' onkeypress="filter_tree()">
 		
 //filtering function
 function filter_tree(){
@@ -179,9 +175,19 @@ $$("filter-list").attachEvent("onTimedKeypress", function(){
 
 ##Sorting 
 
-Sorting is enabled by **sort()** function that takes data item, sorting direction and sorting mode as parameters:
+Sorting is enabled by the **sort()** function that takes data item, sorting direction and sorting mode as parameters.
 
-- Sorting as component property. Data will be during component initialization:
+There are several types that define the way of sorting depending on the type of data:
+
+- int;
+- date;
+- string;
+- string_strict (case-sensitive 'string');
+- [custom sorting type](desktop/filter_sort.md#addingcustomsortingtype).
+
+Two ways of sorting are available for data components:
+
+- Sorting as component property. Data will be sorted during component initialization:
 
 ~~~js
 webix.ui({
@@ -203,5 +209,46 @@ $$('tree').sort('#value#', 'asc');
 ~~~
 
 Read about more detailed description of the **sort** method in the [dedicated chapter of API Reference](api/datastore_sort.md)
+
+
+##Adding Custom Sorting Type
+
+You can define your own sorting type via the **sorting.as** property of the **webix.DataStore.prototype** object.
+You need to specify a function, that will describe a new type of sorting as follows:
+
+~~~js
+webix.DataStore.prototype.sorting.as.sort_type = 
+function(a,b){ return a > b ? 1 : -1 }
+~~~
+
+For example, let's set a new type "bylength" to sort data by the text length:
+
+~~~js
+webix.DataStore.prototype.sorting.as.bylength = 
+function(a,b){ return a.length > b.length ? 1 : -1 }
+~~~
+
+To apply the newly created sorting type, you just need to set the type name as a value of the **as** parameter:
+
+- while using sorting as component property:
+
+~~~js
+webix.ui({
+	view: "list",
+    template:"#title# - #year#"
+    sort:{
+        by:"#title#",
+        dir:"asc",
+        as:"bylength"
+    }
+});
+~~~
+
+
+- while using the "sort()" method:
+
+~~~js
+$$('chart').sort('#year#','desc',"bylength");
+~~~
 
 @complexity:2

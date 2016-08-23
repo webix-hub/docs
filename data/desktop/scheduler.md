@@ -1,7 +1,7 @@
 Scheduler and Gantt Integration
 =========================
 
-Both Scheduler and Gannt are nice planning tools from <a href="http://dhtmlx.com">DHTMLX JS library</a>. While Scheduler is an event calendar, the Gantt is a chart to display a long-term project schedule.
+Both Scheduler and Gantt are nice planning tools from <a href="http://dhtmlx.com">DHTMLX JS library</a>. While Scheduler is an event calendar, the Gantt is a chart to display a long-term project schedule.
 
 {{note JS files for these components aren't included into Webix lib package and should be taken from [https://github.com/webix-hub/components](https://github.com/webix-hub/components). }}
 

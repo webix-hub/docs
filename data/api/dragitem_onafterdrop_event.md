@@ -6,10 +6,10 @@ onAfterDrop
 	fires after drag-n-drop was finished
 
 @params:
-- context		object		the drag-n-drop context
-- e		Event		a native event object
+- context				object		the drag-n-drop context
+- native_event			Event		the native event object
 @example: 
-gridb.attachEvent("onBeforeDrop", function(context, ev){
+gridb.attachEvent("onBeforeDrop", function(context, native_event){
    	for (var i=0; i< context.source.length; i++){
 		context.from.copy(context.source[i],context.start,this,webix.uid());
 	}

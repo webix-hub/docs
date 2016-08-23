@@ -7,12 +7,12 @@ onAfterColumnDrop
 
 @params:
 
-- from			object				the source object
-- to			object				the target object
+- sourceId		string				the source column id
+- targetId		string    			the target column id
 - event			Event object		the native event object
 
 @example:
-$$("datatable1").attachEvent("onAfterColumnDrop", function(from, to, event){...});
+$$("datatable1").attachEvent("onAfterColumnDrop", function(sourceId, targetId, event){...});
 
 @template:	api_event
 @related: 

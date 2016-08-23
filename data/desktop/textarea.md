@@ -26,7 +26,7 @@ Ui-related textarea control is a multi-line input field with a label.
 	- **labelAlign** (string) - label alignment towards its container. Possible values are "left" and "right".  In any way, it's placed left to the control; 
     - **labelWidth** (number) - width of the label container; 
 - **width, height** (integer) - defines the dimension of the text field;
-- **labelAligh** (string) - sets the position of a text label;
+- **labelAlign** (string) - sets the position of a text label;
 - **value** (string) - sets the initial text in the field (replaced by input text later)
 - **placeholder** (string) - the initial text in the textarea field, disappears as you start typing in it;
 - **attributes** (object) - hash of properties. See [text](desktop/text.md) description for details. 

@@ -1,4 +1,4 @@
-Management of loading errors
+Management of Loading Errors
 ===========================
 
 Since data loading depends on multiple factors, server side frequently returns loading error messages instead of requested data. The webix UI library

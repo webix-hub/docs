@@ -3,7 +3,7 @@ Icon
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.icon.html)
+- [Methods, properties and events](api/refs/ui.icon.md)
 - [Shared functionality](desktop/controls_guide.md)
 
 ##Overview

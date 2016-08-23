@@ -94,7 +94,7 @@ They are available just after initialization is finished completely (i.e. **$ini
 You should use this method to set the size of the component that differs from the size allocated by the parent view. 
 Called when inner code inquires about height or width which should be set for the component.
 
-The method returns the array *&#91;gravW;width;gravH;height&#93;* (width gravity, fixed width, height gravity, fixed height).
+The method returns the current size of the component as an array (min width, max width, min height, max height, gravity).
 
 **The values of the array conform to the following rules:**
 

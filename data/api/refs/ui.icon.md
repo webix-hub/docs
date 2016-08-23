@@ -57,7 +57,7 @@ var icon = webix.ui({
 - api/link/ui.icon_resize.md - adjusts the view to a new size
 - api/link/ui.icon_setvalue.md - sets a new value for the component
 - api/link/ui.icon_show.md - makes the component visible
-- api/link/ui.icon_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.icon_sync.md - allows you to sync two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.icon_unbind.md - breaks "bind" link
 - api/link/ui.icon_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}

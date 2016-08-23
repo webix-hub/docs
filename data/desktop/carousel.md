@@ -130,9 +130,10 @@ However, in case of significantly slower scrolling speed smoothness may degrade.
  
 ##Working with Carousel
 
-1 . You can programmatically navigate through the carousel with the help of the following switching functions:
-	 - **showPrev()** - takes to the previous view;
-     - **showNext()** - takes to the next view.
+1 . You can navigate through the carousel with the help of the following switching functions:
+
+- **showPrev()** - takes to the previous view;
+- **showNext()** - takes to the next view.
      
 These functions can be [attached](desktop/event_handling.md) to custom buttons or any on-page and application events:
 

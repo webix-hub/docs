@@ -22,4 +22,4 @@ webix.ui({
 @relatedsample:
 	60_pro/01_datatable/07_sub/01_sub_rows.html
 	
-
+@edition:pro

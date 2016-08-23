@@ -1,4 +1,4 @@
-Node templates
+Node Templates
 ============================
 To customize data presented in the nodes' titles you can use templates. Data template for the tree is set by property api/link/ui.tree_template_config.md.
 
@@ -34,7 +34,7 @@ item icons, expand/collapse icons and checkboxes.
 - **{common.checkbox()}** - a checkbox; 
 - **{common.treetable()}** - ([treetable](desktop/treetable.md) only) - a combination of common.icon() and common.folder() in one line.
 
-All of them are the methods of a **common** object that is accessable by all of the tree items and defined within tree/treetable [Type](#changingpredefinedtemplates) mixin. 
+All of them are the methods of a **common** object that is accessible by all of the tree items and defined within tree/treetable [Type](#changingpredefinedtemplates) mixin. 
 
 ###String definition
 
@@ -52,11 +52,11 @@ webix.ui({
 
 {{sample 17_datatree/02_checkbox/01_basic.html}} 
 
-The tree above will render items featuring an expans-collapse icon, checkbox and file/folder icon.
+The tree above will render items featuring an expand-collapse icon, checkbox and file/folder icon.
 
 ###Function definition
 
-If you set a template via a function, you can include the tree-specific helpers via functions, and they are functions in essense:
+If you set a template via a function, you can include the tree-specific helpers via functions, and they are functions in essence:
 
 {{snippet
 Specifying the template parameter as a function
@@ -77,8 +77,8 @@ The input parameters of the helpers function are:
   - **item properties** from the dataset;
   - **helper properties** that are added to tree items during data loading and exist only on client-side to maintain tree integrity: 
   		- **$level** - (*number*) the level of nesting (one-based numbering);
-  		- **$parent** - (*string*) the ID of thr item's parent;
-  		- **$count** - (*number*) the number of childs;
+  		- **$parent** - (*string*) the ID of the item's parent;
+  		- **$count** - (*number*) the number of children;
   		- **open** - (*boolean*) defines whether the node is collapsed or expanded (only for parent nodes).
 - **common** object that provides 4 functions:
   - **icon(obj, common)** - draws the '+'/'-' icons for collapsed/expanded states of nodes
@@ -90,7 +90,7 @@ The input parameters of the helpers function are:
 
 Template function add more freedom in item template definition as numerous conditions can be taken into an account. 
 
-Let's assume, you want to show items that have the nesting level greater than 2 in italic font. In thic case you can specify the data template as in:
+Let's assume, you want to show items that have the nesting level greater than 2 in italic font. In this case you can specify the data template as in:
 
 <img src="datatree/template_function_definition.png"/>
 

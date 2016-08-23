@@ -62,7 +62,6 @@ var select = webix.ui({
 - api/link/ui.select_setbottomtext.md - sets the input label at the bottom of it
 - api/link/ui.select_setvalue.md - sets a new value for the component
 - api/link/ui.select_show.md - makes the component visible
-- api/link/ui.select_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.select_unbind.md - breaks "bind" link
 - api/link/ui.select_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.select_validate.md - validates value of input
@@ -113,11 +112,13 @@ var select = webix.ui({
 - api/link/ui.select_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.select_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/link/ui.select_id_config.md - the component ID
+- api/link/ui.select_inputalign_config.md - the alignment of an input towards its container
 - api/link/ui.select_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.select_inputpadding_config.md - padding of text in the input
 - api/link/ui.select_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.select_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.select_label_config.md - the text label of the control
+- api/link/ui.select_labelalign_config.md - the alignment of a label towards its container
 - api/link/ui.select_labelposition_config.md - positions label in relation to the control
 - api/link/ui.select_labelwidth_config.md - the width of the label
 - api/link/ui.select_maxheight_config.md - sets the maximum height for the view

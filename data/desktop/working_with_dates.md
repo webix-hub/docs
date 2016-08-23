@@ -165,7 +165,8 @@ When working with **server-side**, initialize a [dataProcessor](desktop/dataproc
 
 ##Sorting {#sort}
 
-Though dates are presented as strings, they are **sorted as date objects**. So before sorting don't forget to convert strings to DateTime objects in case they are stores as strings (see above). 
+Though dates are presented as strings, they are **sorted as date objects**. 
+So before sorting don't forget to convert strings to DateTime objects in case they are stored as strings (see above). 
 
 Sorting can be applied in two directions: **"asc"** (ascending) and **"desc"** (descending). 
 
@@ -175,7 +176,7 @@ Datatable features dedicated **sort** property for its cloumns.
 
 2 . **Custom Sorting.** Applicable to all components. 
 
-Here we make use of the **sort()** function that needs: 
+Here we make use of the **api/link/ui.datatable_sort.md** function that needs: 
 
 - template of the data item subject to sorting;
 - sorting direction;
@@ -190,7 +191,6 @@ HTML Button Triggers Sorting
 
 {{sample 80_docs/dates.html }} 
 
-[Data Sorting Api](api/link/ui.datatable_sort.md).
 
 ##Dates Inputting in Forms {#form}
 

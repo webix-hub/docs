@@ -4,23 +4,17 @@ ui.tooltip
 
 {{memo A static text that is rendered in the absolutely positioned container. }}
 
-Generally, the component isn't intended for direct initialization. But if you decide to use it, use mouse events (onMouseOut, onMouseIn, onMouseMove etc.) to show/hide the tooltip box in the specified position. Check [tooltip](desktop/tooltip.md) documentation for more detailed description.
+Generally, the component isn't intended for direct initialization. But if you decide to use it, use mouse events (onMouseOut, onMouseIn, onMouseMove etc.) to show/hide the tooltip box in the specified position.
+Check [Tooltip](desktop/tooltip_component.md) documentation for more detailed description.
 
 ### Constructor
 
 ~~~js
 webix.ui({
-    view:"datatable",
-    tooltip:true,
-    columns:[
-        {id:"name", header:"Name"},
-        {id:"age", header:"Age"}
-    ],
-    data:[
-        {id:1, name:"Ann", age:25},
-        {id:2, name:"Tom", age:27}
-    ]
-});
+  view:"tooltip", 
+  template:"My #value#",
+  height:100
+}).show({id:1, value:"template"}, {x:0, y:0});
 ~~~
 
 ### Where to start
@@ -38,7 +32,6 @@ webix.ui({
 {{api
 - api/link/ui.tooltip_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.tooltip_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
-- api/link/ui.tooltip_bind.md - binds components
 - api/link/ui.tooltip_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.tooltip_callevent.md - calls an inner event
 - api/link/ui.tooltip_customize.md - redefines the 'type' property
@@ -60,8 +53,6 @@ webix.ui({
 - api/link/ui.tooltip_render.md - renders the specified item or the whole component
 - api/link/ui.tooltip_resize.md - adjusts the view to a new size
 - api/link/ui.tooltip_show.md - makes the component visible
-- api/link/ui.tooltip_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
-- api/link/ui.tooltip_unbind.md - breaks "bind" link
 - api/link/ui.tooltip_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}
 

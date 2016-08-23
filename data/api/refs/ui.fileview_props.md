@@ -1,0 +1,112 @@
+Properties
+==========
+
+{{api
+- api/link/ui.fileview_animate_config.md - defines or disables view change animation.
+- api/link/ui.fileview_autoheight_config.md - enables autosizing to content
+- api/link/ui.fileview_borderless_config.md - used to hide the component borders
+- api/link/ui.fileview_click_config.md - sets an action happening on a button click
+- api/link/ui.fileview_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.fileview_css_config.md - the name of a css class that will be applied to the view container
+- api/link/ui.fileview_data_config.md - JavaScript array containing data for the component
+- api/link/ui.fileview_datafeed_config.md - the URL that the component will use to reload data during binding
+- api/link/ui.fileview_datafetch_config.md - defines the number of records that will be loaded during each dynamic loading request
+- api/link/ui.fileview_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
+- api/link/ui.fileview_datatype_config.md - the type of loaded data
+- api/link/ui.fileview_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.fileview_drag_config.md - enables or disables drag-and-drop
+- api/link/ui.fileview_dragscroll_config.md - enables autoscroll of component during drag-n-drop
+- api/link/ui.fileview_editvalue_config.md - defines which data item is editable (in case of several data item in the cell/line)
+- api/link/ui.fileview_editable_config.md - allows/denies editing in the view
+- api/link/ui.fileview_editaction_config.md - defines the action on which editors will be opened
+- api/link/ui.fileview_editor_config.md - sets editor types for component items
+- api/link/ui.fileview_externaldata_config.md - allows defining custom 'move' logic for the component.
+- api/link/ui.fileview_form_config.md - linked form
+- api/link/ui.fileview_gravity_config.md - sets the view gravity (1 by default)
+- api/link/ui.fileview_height_config.md - sets the height of the component
+- api/link/ui.fileview_hidden_config.md - defines whether the view will be hidden initially
+- api/link/ui.fileview_id_config.md - the component ID
+- api/link/ui.fileview_maxheight_config.md - sets the maximum height for the view
+- api/link/ui.fileview_maxwidth_config.md - sets the maximum width for the view
+- api/link/ui.fileview_minheight_config.md - sets the minimal height for the view
+- api/link/ui.fileview_minwidth_config.md - sets the minimal width for the view
+- api/link/ui.fileview_mouseeventdelay_config.md - the delay between a real mouse action and invoking the related events
+- api/link/ui.fileview_multiselect_config.md - enables multiselect mode
+- api/link/ui.fileview_navigation_config.md - activates the selection keyboard navigation
+- api/link/ui.fileview_on_config.md - allows attaching custom handlers to inner events of the component
+- api/link/ui.fileview_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
+- api/link/ui.fileview_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
+- api/link/ui.fileview_ondblclick_config.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.fileview_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
+- api/link/ui.fileview_pager_config.md - defines paging configuration ( creates a 'ui.pager' object)
+- api/link/ui.fileview_ready_config.md - event handler called just after the component has been completely initialized
+- api/link/ui.fileview_removemissed_config.md - defines how to treat items in case of reloading
+- api/link/ui.fileview_rules_config.md - set of validation rules for the component
+- api/link/ui.fileview_save_config.md - defines URLs for data saving
+- api/link/ui.fileview_scheme_config.md - defines schemes for data processing
+- api/link/ui.fileview_scroll_config.md - enables/disables the scroll bar
+- api/link/ui.fileview_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
+- api/link/ui.fileview_select_config.md - enables/disables item selection or multiselection in grouplist
+- api/link/ui.fileview_template_config.md - the component template
+- api/link/ui.fileview_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.fileview_type_config.md - object that specifies items presentation
+- api/link/ui.fileview_url_config.md - the URL which the component will use to load data after its initialization
+- api/link/ui.fileview_width_config.md - sets the width of the component
+- api/link/ui.fileview_xcount_config.md - adjusts the view width to display the defined number of items in a row
+- api/link/ui.fileview_ycount_config.md - adjusts the view height to display the defined number of items in a column
+}}
+
+@index:
+- api/link/ui.fileview_animate_config.md
+- api/link/ui.fileview_autoheight_config.md
+- api/link/ui.fileview_borderless_config.md
+- api/link/ui.fileview_click_config.md
+- api/link/ui.fileview_container_config.md
+- api/link/ui.fileview_css_config.md
+- api/link/ui.fileview_data_config.md
+- api/link/ui.fileview_datafeed_config.md
+- api/link/ui.fileview_datafetch_config.md
+- api/link/ui.fileview_datathrottle_config.md
+- api/link/ui.fileview_datatype_config.md
+- api/link/ui.fileview_disabled_config.md
+- api/link/ui.fileview_drag_config.md
+- api/link/ui.fileview_dragscroll_config.md
+- api/link/ui.fileview_editvalue_config.md
+- api/link/ui.fileview_editable_config.md
+- api/link/ui.fileview_editaction_config.md
+- api/link/ui.fileview_editor_config.md
+- api/link/ui.fileview_externaldata_config.md
+- api/link/ui.fileview_form_config.md
+- api/link/ui.fileview_gravity_config.md
+- api/link/ui.fileview_height_config.md
+- api/link/ui.fileview_hidden_config.md
+- api/link/ui.fileview_id_config.md
+- api/link/ui.fileview_maxheight_config.md
+- api/link/ui.fileview_maxwidth_config.md
+- api/link/ui.fileview_minheight_config.md
+- api/link/ui.fileview_minwidth_config.md
+- api/link/ui.fileview_mouseeventdelay_config.md
+- api/link/ui.fileview_multiselect_config.md
+- api/link/ui.fileview_navigation_config.md
+- api/link/ui.fileview_on_config.md
+- api/link/ui.fileview_onclick_config.md
+- api/link/ui.fileview_oncontext_config.md
+- api/link/ui.fileview_ondblclick_config.md
+- api/link/ui.fileview_onmousemove_config.md
+- api/link/ui.fileview_pager_config.md
+- api/link/ui.fileview_ready_config.md
+- api/link/ui.fileview_removemissed_config.md
+- api/link/ui.fileview_rules_config.md
+- api/link/ui.fileview_save_config.md
+- api/link/ui.fileview_scheme_config.md
+- api/link/ui.fileview_scroll_config.md
+- api/link/ui.fileview_scrollspeed_config.md
+- api/link/ui.fileview_select_config.md
+- api/link/ui.fileview_template_config.md
+- api/link/ui.fileview_tooltip_config.md
+- api/link/ui.fileview_type_config.md
+- api/link/ui.fileview_url_config.md
+- api/link/ui.fileview_width_config.md
+- api/link/ui.fileview_xcount_config.md
+- api/link/ui.fileview_ycount_config.md
+

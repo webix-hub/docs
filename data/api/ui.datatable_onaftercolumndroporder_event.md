@@ -6,12 +6,12 @@ onAfterColumnDropOrder
 	
 @params:
 
-- from			object				the source object
-- to			object				the target object
+- sourceId		string				the source column id
+- targetId		string				the target column id
 - node			HTML element		the target HTML element
 
 @example:
-$$("datatable1").attachEvent("onAfterColumnDrop", function(from, to, node){...});
+$$("datatable1").attachEvent("onAfterColumnDrop", function(sourceId, targetId, node){...});
 
 @template:	api_event
 @related: 

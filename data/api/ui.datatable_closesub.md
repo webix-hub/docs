@@ -6,7 +6,7 @@ closeSub
 
 @params:
 
-- id		string/number		the id of the item
+- id		id		the id of the item
 
 
 
@@ -22,3 +22,4 @@ $$("mydatatable").closeSub(id);
 @template:	api_method
 @descr:
 
+@edition:pro

@@ -77,6 +77,7 @@ var datatable = webix.ui({
 - api/ui.datatable_filterbyall.md - refilters DataTable by all specified filters
 - api/link/ui.datatable_find.md - returns rows that match the criterion
 - api/link/ui.datatable_focuseditor.md - moves focus to the active editor
+- api/ui.datatable_freezerow.md - fixes a row at the top of the datatable "on the fly"
 - api/ui.datatable_getallselectareas.md - returns an object that contains configuration objects of all select areas in the datatable
 - api/link/ui.datatable_getchildviews.md - returns child views of the calling component
 - api/ui.datatable_getcolumnconfig.md - returns the configuration object of the specified column
@@ -208,7 +209,7 @@ var datatable = webix.ui({
 - api/ui.datatable_onbeforeareaadd_event.md - fires before a select area is added
 - api/ui.datatable_onbeforearearemove_event.md - fires before a select area is removed
 - api/ui.datatable_onbeforeblockselect_event.md - event occurs before block selection
-- api/ui.datatable_onbeforecolumndrag_event.md - fires the monent you start dragging the column from its source potition
+- api/ui.datatable_onbeforecolumndrag_event.md - fires the moment you start dragging the column from its source position
 - api/ui.datatable_onbeforecolumndrop_event.md - fires the moment you drop the column to its target position
 - api/ui.datatable_onbeforecolumndroporder_event.md - fires the moment you drop the column over the target area
 - api/ui.datatable_onbeforecolumnhide_event.md - fires before a column is hidden in datatable
@@ -236,6 +237,7 @@ var datatable = webix.ui({
 - api/link/ui.datatable_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.datatable_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.datatable_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
+- api/ui.datatable_oneditorchange_event.md - fires when the native onchange event occurs for an HTML input (select, text)
 - api/link/ui.datatable_onfocus_event.md - fires when a view gets focus
 - api/ui.datatable_onheaderclick_event.md - occurs after clicking on header
 - api/link/ui.datatable_onitemclick_event.md - fires when a component item was clicked
@@ -353,6 +355,7 @@ var datatable = webix.ui({
 - api/ui.datatable_subrow_config.md - sets a subrow template
 - api/ui.datatable_subview_config.md - adds a subview configuration into datatable
 - api/link/ui.datatable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/ui.datatable_topsplit_config.md - defines the number of rows that will be "frozen" at the top of datatable
 - api/ui.datatable_type_config.md - used for configuring presentation of items
 - api/link/ui.datatable_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.datatable_width_config.md - sets the width of the component
@@ -373,7 +376,7 @@ var datatable = webix.ui({
 - api/link/ui.datatable_$dragmark_other.md - method called during dnd when some item in the component need to be marked as active drop target
 - api/link/ui.datatable_$dragout_other.md - method called when item moved out of possible drop landing during dnd
 - api/link/ui.datatable_$drop_other.md - method called when item dragged and dropped on valid target
-- api/link/ui.datatable_$dropallow_other.md - can be redefine if you need custom drop rules
+- api/link/ui.datatable_$dropallow_other.md - can be redefined, if you need custom drop rules
 - api/link/ui.datatable_$getsize_other.md - returns the current size of the component
 - api/link/ui.datatable_$height_other.md - current height of the view
 - api/link/ui.datatable_$scope_other.md - scope for resolving event and method names
@@ -386,8 +389,8 @@ var datatable = webix.ui({
 - api/link/ui.datatable_name_other.md - indicates the name of the component (a read-only property)
 - api/link/ui.datatable_on_click_other.md - redefines default click behavior for component items.
 - api/link/ui.datatable_on_context_other.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
-- api/link/ui.datatable_on_dblclick_other.md - attaches a dblclick behavior for component items with the specified CSS class.
-- api/link/ui.datatable_on_mouse_move_other.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.datatable_on_dblclick_other.md - attaches a dblclick behavior for component items with the specified CSS class
+- api/link/ui.datatable_on_mouse_move_other.md - attaches a mouse move behavior for component items with the specified CSS class
 - api/ui.datatable_waitdata_other.md - eventual result of an asynchronous operation ('promise' object) for the loaded data
 }}
 

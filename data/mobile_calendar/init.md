@@ -83,3 +83,5 @@ scheduler.config.separate_short_events = false;
 ~~~js
 scheduler.config.recurring = true;
 ~~~
+
+@spellcheck: utc

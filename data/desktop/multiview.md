@@ -3,7 +3,7 @@ Multiview
 
 ##API Reference 
 
-- [Methods, properties and events](api__refs__ui.multiview.html)
+- [Methods, properties and events](api/refs/ui.multiview.md)
 - [Samples](http://docs.webix.com/samples/20_multiview/index.html)
 
 
@@ -40,7 +40,7 @@ webix.ui({
 }}
 
 {{note
-The direct initialization of the component (**view:"multiview"**) is optional and you can just init **cells** and the view will be automatically recognized.
+The direct initialization of the component (**view:"multiview"**) is optional and you can just initialize **cells** and the view will be automatically recognized.
 }}
 
 ~~~js
@@ -71,7 +71,7 @@ webix.ui({
 
 ###Managing animation
 
-My default multiview cells are switched with horizontal animation of a "slide" type. To disabled animation, or chnge animation type, configure the **animate** property: 
+By default, multiview cells are switched with horizontal animation of a "slide" type. To disable animation, or change the animation type, configure the **animate** property: 
 
 ~~~js
 webix.ui({
@@ -106,7 +106,7 @@ Here you use common methods (**show and back**) and create custom buttons each o
 
 When dealing with iframe content, e.g. WYSIWYG editors (CKEditor), Multiview removes inactive views when they become hidden.
 
-To solve this problem, set the *keepViews* config property to true.
+To solve this problem, set the *keepViews* configuration property to true.
 
 ~~~js
 webix.ui({
@@ -120,7 +120,7 @@ webix.ui({
 
 ###History API
 
-Learn how to "memorize" the currenty opened tab in the [related article](desktop/history_track.md). 
+Learn how to "memorize" the currently opened tab in the [related article](desktop/history_track.md). 
 
 
 ##Related Articles

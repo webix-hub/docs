@@ -1,4 +1,4 @@
-Getting/setting the node
+Getting/Setting the Node
 ====================================
 Tree provides a set of methods for manipulating the node value and retrieving the node id.
 
@@ -36,7 +36,7 @@ var value = node.value; // ->"The Shawshank Redemption"
 - **<i>value</i>** - (*string*) the item value
 - **<i>$level</i>** - (*number*) the level of nesting (one-based numbering)
 - **<i>parent</i>** - (*string*) the id of the item's parent
-- **<i>$count</i>** - (*number*) the number of childs
+- **<i>$count</i>** - (*number*) the number of children
 - **<i>open</i>** - (*boolean*) defines whether the node is collapsed or expanded (just for parent nodes)
 
 For example, variable **node** from the code  snippet above looks as in:

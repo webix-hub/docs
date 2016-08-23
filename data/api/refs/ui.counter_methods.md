@@ -35,7 +35,7 @@ Methods
 - api/link/ui.counter_setvalue.md - sets a new value for the component
 - api/ui.counter_shift.md - adds value to the counter
 - api/link/ui.counter_show.md - makes the component visible
-- api/link/ui.counter_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.counter_sync.md - allows you to sync two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.counter_unbind.md - breaks "bind" link
 - api/link/ui.counter_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.counter_validate.md - validates value of input

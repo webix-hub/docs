@@ -30,9 +30,10 @@ The **label** (string) property sets a text label for a control, a string placed
 
 - underwrites the controls and explains its  purpose;
 - label absence is defined as *label:"null"* or by omitting this property in the control constructor;
-- horizontal position of the label is defined by the **labelAlign** (string) property. Its ossible values are: 
-		- "left"(default);
-        - "right" (except for button and toggle that takes only left alignment);
+- horizontal position of the label is defined by the **labelAlign** (string) property. Its possible values are: 
+	
+    - "left"(default);
+    - "right" (except for button and toggle that takes only left alignment);
 - vertical position of the label is defined by the **labelPosition** (string). The only possible value is "top"; 
 - width of the label is defined by the **labelWidth** property;
 - text of the button is set by **value** property instead of label. 
@@ -108,7 +109,7 @@ Two major possibilities here include:
 With the **click** property. It equals to the "onItemClick" event. 
 
 ~~~js
-{view:"button", click:"$$("my_form").save()" }
+{view:"button", click:"$$('my_form').save()" }
 ~~~
 
 With the **on** property that allows attaching custom handlers to specified inner events of the control:
@@ -145,9 +146,9 @@ Each form field can have one **related** field defined by its [relatedView](api/
 This field can react on changes in master field and change it's state: 
 
 - from **hidden** to **visible** and vice versa, 
-- from **disabled** to **enabed** and vice versa. 
+- from **disabled** to **enabled** and vice versa. 
 
-This behaviour is also defined by the master field with the [relatedAction](api/ui.text_relatedaction_config.md) property:
+This behavior is also defined by the master field with the [relatedAction](api/ui.text_relatedaction_config.md) property:
 
 {{snippet
 Enabling a form field by changes in another
@@ -233,10 +234,10 @@ If both **text** and **value** properties are defined, the **text** one will be 
 
 {{sample 13_form/01_controls/04_radio.html }}
 
-**Serverside options for multiple-value controls**
+**Server-side options for multiple-value controls**
 
 Such controls as [select](desktop/select.md), [combo](desktop/combo.md), [multicombo](desktop/multicombo.md), [richselect](desktop/richselect.md) and [multiselect](desktop/multiselect.md)
-can get values from the serverside. The script that returns the needed data, can be defined directly in the **options** property: 
+can get values from the server side. The script that returns the needed data, can be defined directly in the **options** property: 
 
 ~~~js
 view:"combo", options:"server/data.json"
@@ -264,7 +265,7 @@ $$('form1').setValues({ //value for 2 text field in the form
 });
 ~~~
 
-Values of two-state controls([checkbox](desktop/checkbox.md) and [radio](desktop/radio.md)) can be changed programmatically in different ways:
+Values of two-state controls ([checkbox](desktop/checkbox.md) and [radio](desktop/radio.md)) can be changed in different ways:
 
 - **setValue()** - with either *0 (false)* to uncheck or *1 (true)* to check;
 - **toggle()** - to change the initial value (the [toggle](desktop/toggle.md) button as well takes this method);
@@ -301,7 +302,7 @@ webix.ui({
     ]
 })
 
-var title = $$("myform").getValues().title, //-> retuns value of text input
+var title = $$("myform").getValues().title, //-> returns value of text input
 ~~~
 
 **Control Value** can be different: 

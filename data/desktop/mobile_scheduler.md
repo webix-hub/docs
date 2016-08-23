@@ -1,16 +1,25 @@
 Mobile Scheduler
 ===================
 
+<div class="h2">External resources</div>
+
+- You can [download Mobile Scheduler](http://webix.com/scheduler/download.html) from [http://webix.com/scheduler/](http://webix.com/scheduler/)
+- There are online samples at [docs.webix.com/samples](http://docs.webix.com/samples/62_scheduler/index.html)
+
+Overview
+-----------
+
 Webix Scheduler was developed to be used in mobile web apps that run in Webkit-based browsers on mobile devices (iOS, Android, Blackberry).
-You can download Webix Scheduler by this [link](http://webix.com/scheduler/download.html).<br><br>
+
 
 <table  style='border-left:none !important;' cellspacing="0" cellpadding="5" border="0">
 	<tbody>
     	<tr>
-    		<td><img src="mobile_scheduler/front_scheduler.png"/></td>
-    		<td>
+    		<td style="padding-top:30px;"><img src="mobile_scheduler/front_scheduler.png"/></td>
+    		<td style="padding-left:50px;">
+            <div class="h2">Guides</div>
 		    <h4>
-		      Initializating & Configuring Scheduler 
+		      Initializing & Configuring Scheduler 
 		    </h4>
 		    <ul>
                 <li><a href="mobile_calendar/init.md">Creating Scheduler on a Page</a></li>
@@ -29,7 +38,7 @@ You can download Webix Scheduler by this [link](http://webix.com/scheduler/downl
                 <li><a href="mobile_calendar/modes.md">Read-only Mode</a></li>
                 <li><a href="mobile_calendar/recurring_events.md">Recurring Events</a></li>
                 <li><a href="mobile_calendar/dynamic_loading.md">Dynamic Loading</a></li>
-                <li><a href="mobile_calendar/mobile_advanced.md">Changing Scheduler's Structure</a></li>
+                <li><a href="mobile_calendar/mobile_advanced.md">Changing the Structure of Scheduler</a></li>
                 <li><a href="mobile_calendar/handling_events.md">Handling Events</a></li>
             </ul>
         	 <h4>
@@ -37,7 +46,7 @@ You can download Webix Scheduler by this [link](http://webix.com/scheduler/downl
 		    </h4>
             <ul>
             	<li><a href="mobile_calendar/general_howtos.md">General How-Tos</a></li>
-		    	<li><a href="mobile_calendar/tips_for_users.md">Tips for dhtmlxScheduler's users</a></li>
+		    	<li><a href="mobile_calendar/tips_for_users.md">Tips for users of dhtmlxScheduler</a></li>
        		</ul>
             </td>
 		</tr>
@@ -65,7 +74,7 @@ You can download Webix Scheduler by this [link](http://webix.com/scheduler/downl
 
 
 
-
+@spellcheck: Tos
 
 
 

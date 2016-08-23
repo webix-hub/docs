@@ -19,11 +19,13 @@ Properties
 - api/link/ui.search_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/link/ui.search_icon_config.md - sets an icon into the control
 - api/link/ui.search_id_config.md - the component ID
+- api/link/ui.search_inputalign_config.md - the alignment of an input towards its container
 - api/link/ui.search_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.search_inputpadding_config.md - padding of text in the input
 - api/link/ui.search_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.search_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.search_label_config.md - the text label of the control
+- api/link/ui.search_labelalign_config.md - the alignment of a label towards its container
 - api/link/ui.search_labelposition_config.md - positions label in relation to the control
 - api/link/ui.search_labelwidth_config.md - the width of the label
 - api/link/ui.search_maxheight_config.md - sets the maximum height for the view
@@ -32,6 +34,7 @@ Properties
 - api/link/ui.search_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.search_name_config.md - name of the control
 - api/link/ui.search_on_config.md - allows attaching custom handlers to inner events of the component
+- api/link/ui.search_pattern_config.md - a formatting pattern applied to a text input
 - api/link/ui.search_placeholder_config.md - placeholder text for the input area
 - api/link/ui.search_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.search_readonly_config.md - configures readonly mode for the input
@@ -66,11 +69,13 @@ Properties
 - api/link/ui.search_hotkey_config.md
 - api/link/ui.search_icon_config.md
 - api/link/ui.search_id_config.md
+- api/link/ui.search_inputalign_config.md
 - api/link/ui.search_inputheight_config.md
 - api/link/ui.search_inputpadding_config.md
 - api/link/ui.search_inputwidth_config.md
 - api/link/ui.search_invalidmessage_config.md
 - api/link/ui.search_label_config.md
+- api/link/ui.search_labelalign_config.md
 - api/link/ui.search_labelposition_config.md
 - api/link/ui.search_labelwidth_config.md
 - api/link/ui.search_maxheight_config.md
@@ -79,6 +84,7 @@ Properties
 - api/link/ui.search_minwidth_config.md
 - api/link/ui.search_name_config.md
 - api/link/ui.search_on_config.md
+- api/link/ui.search_pattern_config.md
 - api/link/ui.search_placeholder_config.md
 - api/link/ui.search_popup_config.md
 - api/link/ui.search_readonly_config.md

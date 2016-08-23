@@ -30,5 +30,5 @@ ID of the cell is an object with the following properties:
 - **row** - ID of the related row;
 - **column** - ID of the related column.
 
-
+@edition:pro
 

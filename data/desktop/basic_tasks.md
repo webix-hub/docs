@@ -29,13 +29,35 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
 		    <ul id="data_sublist" >
                     <li>desktop/data_loading.md</li>
                     <li>desktop/data_scheme.md</li>
-                    <li>desktop/serverside.md</li>
                     <li>desktop/data_binding.md</li>
                     <li>desktop/update.md</li>
                     <li>helpers/ajax_operations.md</li>
             </ul>
         </td>
 		<td class='topic_description'>Teaches you how to load data into a component using different data sources, formats and techniques.</td>
+	</tr>
+    <tr>
+		<td id="data" class='topics'>
+		    <h4>
+		        Interacting with the Server Side
+		    </h4>
+		    <ul id="data_sublist" >
+                    <li>desktop/serverside.md</li>
+                    <li>desktop/custom_serverside.md</li>
+   					<li>desktop/server_rest.md</li>
+  					<li>desktop/server_ajaxsave.md</li>
+  					<li>desktop/server_customload.md</li>
+  					<li>desktop/server_offline.md</li>
+  					<li>desktop/server_proxy.md</li>
+  					<li>desktop/server_indexdb.md</li>
+  					<li>desktop/server_faye.md</li>
+  					<li>desktop/dataprocessor.md</li>
+  					<li>desktop/crossdomain_loading.md</li>
+                    <li>desktop/webix_remote.md</li>
+            </ul>
+        </td>
+		<td class='topic_description'>Dwells on possible ways of implementing integration with server side and describes various techniques that can be 
+        involved in this process.</td>
 	</tr>
 	<tr>
 		<td id="manipulations" class='topics'>
@@ -107,7 +129,7 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
                    <li>desktop/borders.md</li>
             </ul>
         </td>
-		<td class='topic_description'>Says how to style Webix application: styling techniques, css classes used in components, animation and visual effects. </td>
+		<td class='topic_description'>Says how to style Webix application: styling techniques, CSS classes used in components, animation and visual effects. </td>
 	</tr>
 	<tr>
     	<td id="interactions" class='topics'>
@@ -126,7 +148,7 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
                     <li><a href="desktop/active_content.md">Adding Active Elements to Components</a></li>
             </ul>
         </td>
-        <td class='topic_description'>Describes various ways you can communicate with users: events, message boxes, forms and their controls</td>
+        <td class='topic_description'>Describes various ways you can communicate with users: events, message boxes, forms and their controls.</td>
     </tr>
     <tr>
         <td id="internet" class='topics'>
@@ -170,7 +192,7 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
                     <li><a href="desktop/custom_integration.md">How Integrate any Thirdparty Tool Using a Custom Component</a></li>
             </ul>
         </td>
-        <td class='topic_description'>Says which third-party libraries and how can be integrated with Webix components</td>
+        <td class='topic_description'>Says which third-party libraries and how can be integrated with Webix components.</td>
     </tr>
 
     <tr>
@@ -187,7 +209,7 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
                     <li>helpers/date_formatting_methods.md</li>
             </ul>
         </td>
-        <td class='topic_description'>Extra goodies in the Webix library</td>
+        <td class='topic_description'>Extra goodies in the Webix library.</td>
     </tr>
 	</tbody>
 </table>
@@ -196,6 +218,7 @@ subject areas, each of which contains a set of task-oriented articles. Articles 
 - desktop/designing_user_interface.md
 - desktop/webix_touch.md
 - desktop/loading_and_storing_data.md
+- desktop/interacting_with_server.md
 - desktop/manipulations_with_components.md
 - desktop/item_operations.md
 - desktop/exporting_components.md

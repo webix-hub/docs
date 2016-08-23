@@ -3,7 +3,7 @@ Treetable
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.treetable.html)
+- [Methods, properties and events](api/refs/ui.treetable.md)
 - [Samples](http://docs.webix.com/samples/15_datatable/index.html)
 
 
@@ -36,7 +36,7 @@ webix.ui({
 {{sample 15_datatable/30_treetable/01_init.html }}
 
 Tree table is populated with hierarchical data coming in <acronym title="Extensible Markup Language">XML</acronym> and <acronym title="JavaScript Object 
-Notation">JSON</acronym> [data formats](desktop/data_types.md). IDs of the coulmns must coincide with data keys from the initial dataset
+Notation">JSON</acronym> [data formats](desktop/data_types.md). IDs of the columns must coincide with data keys from the initial dataset
 
 ##Working with Treetable
 
@@ -58,11 +58,11 @@ Common tasks here include the following and coincide with those of the [datatabl
 
 {{sample 15_datatable/30_treetable/08_edit.html }}
 
-5 . [Using Math in Treetable](datatable/formulas.md) - built-in logic for storing data as mathematic formulas as well as editing these formulas directly in treetable.
+5 . [Using Math in Treetable](datatable/formulas.md) - built-in logic for storing data as mathematical formulas as well as editing these formulas directly in treetable.
 
 {{sample 15_datatable/08_math/01_basic.html}}
 
-6 . [Data Grouping](desktop/grouping.md) - built-in logic for preseting hierarchical data in a tree-like manner;
+6 . [Data Grouping](desktop/grouping.md) - built-in logic for presenting hierarchical data in a tree-like manner;
 
 {{sample 15_datatable/32_grouping/03_aggregation.html}}
 

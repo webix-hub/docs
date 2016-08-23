@@ -4,7 +4,8 @@ sync
 
 
 @short:
-	allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+
+allows you to sync two copies of data (all or just a part of it) from one DataCollection to another
 
 @params:
 - source		object		the object that the method is assigned to

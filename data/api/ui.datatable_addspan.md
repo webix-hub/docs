@@ -3,10 +3,8 @@ addSpan
 
 @short: adds colspan or rowspan to the datatable
 
-@edition:pro
-
 @params:
-- id				number/string/object			id of the row that starts colspan/rowspan
+- id				number,string,object			id of the row that starts colspan/rowspan
 - column			string							id of the column that starts colspan/rowspan
 - width				number							how many columns should the span include
 - height			number							how many rows should the span include
@@ -25,7 +23,7 @@ grid.refresh();
     api/ui.datatable_removespan.md
     api/ui.datatable_getspan.md
 @template:	api_method
-@edition:  pro
+
 @descr:
 To enable the rowspans and colspans functionality, you should set the **spans** parameter with the *true* value in the datatable configuration:
 
@@ -54,3 +52,5 @@ grid.addSpan([
 - default values for span **width** and **height** are 1;
 - span **value** parameter is optional and used if a custom text for the cell is required. If you  need to display the initial value, omit this field or pass an empty value ("", null);
 - span **css** is optional. By default, colspans and rowspans don't feature any special styling. 
+
+@edition:pro

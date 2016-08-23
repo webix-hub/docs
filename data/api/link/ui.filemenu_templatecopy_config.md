@@ -1,0 +1,1 @@
+@link: api/copypaste_templatecopy_config.md

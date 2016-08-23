@@ -7,11 +7,11 @@ onBeforeColumnDropOrder
 
 @params:
 
-- from			object				the source object
+- sourceId		string				the source column id
 - event			Event object		the native event object
 
 @example:
-$$("datatable1").attachEvent("onBeforeColumnDropOrder", function(from, event){
+$$("datatable1").attachEvent("onBeforeColumnDropOrder", function(sourceId, event){
 	// some code
     return true;
 });

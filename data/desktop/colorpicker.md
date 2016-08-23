@@ -3,7 +3,7 @@ Colorpicker
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.colorpicker.html)
+- [Methods, properties and events](api/refs/ui.colorpicker.md)
 - [Shared functionality](desktop/controls_guide.md)
 
 ##Overview

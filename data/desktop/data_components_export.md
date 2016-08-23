@@ -33,16 +33,50 @@ webix.toExcel($$("mylist"));
 {{sample 19_api/06_export_excel.html}}
 
 
+Exporting Data Offline
+---------------------
+
+The dependencies which are used for providing export possibilities are generally taken from Webix CDN. 
+If you need to implement data export offline, you should complete the following steps:
+
+- download the package with CDN-files from [https://github.com/webix-hub/cdn-extras](https://github.com/webix-hub/cdn-extras)
+- сopy the folder with CDN-files into the directory with your application
+- set the path to the local CDN repository as 
+
+~~~js
+webix.cdn = "/local_folder/cdn-extras";
+~~~
+
 Customizing Export to Excel
 -------------------------
 
-The toExcel() method returns all data specified in the dataset of a component without any data formatting. However, you may 
-need to get data from some particular fields. 
+The toExcel() method returns all data specified in the dataset of a component, or in the **columns** parameter of a datatable view. 
+The data is exported into an Excel document with "Data" name and "Data" sheet name. 
 
+However, you may need to get some particular data, or customize file and sheet names. 
 
 **Export API allows** 
 
-- setting **columns** you'd like to see in the export file. 
+- providing a custom **filename** and sheet **name**: 
+
+~~~js
+webix.toExcel($$("table"), {
+     filename: "table", // for filename
+     name: "Films" // for sheet name
+});
+~~~
+
+{{sample 15_datatable/10_export/01_excel.html}}
+
+- **stripping HTML tags** from the cells: 
+
+~~~js
+webix.toExcel($$("table"), {
+     filterHTML:true
+});
+~~~
+
+- setting **columns** you'd like to see in the export file:
 
 ~~~js
 webix.toExcel($$("mylist"), {
@@ -71,7 +105,7 @@ The column will be rendered with the stated additional properties, which may dif
 - **including extra fields** into export by forming them right within the export function:
 
 ~~~
-webix.toExcel(list, { 
+webix.toExcel($$("mylist"), { 
 	columns:{ 
 		Custom1:{
 			template:function(obj){

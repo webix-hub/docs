@@ -10,7 +10,7 @@ pager
 @example:
 
 webix.locale.pager = {
-    firts:"<<",
+    first:"<<",
     prev:"<",
     next:">",
     last:">>"
@@ -20,5 +20,8 @@ webix.locale.pager = {
 @defined:	locale	
 @descr:
 
-@related: datatable/paging.md#customizingpagerlabels
-@relatedsample: 15_datatable/19_paging/07_localization.html
+@related: 
+datatable/paging.md#customizingpagerlabels
+desktop/paging.md#pagerlocalization
+@relatedsample: 
+15_datatable/19_paging/07_localization.html

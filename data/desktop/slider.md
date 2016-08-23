@@ -3,7 +3,7 @@ Slider
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.slider.html)
+- [Methods, properties and events](api/refs/ui.slider.md)
 - [Shared functionality](desktop/controls_guide.md)
 
 ##Overview
@@ -44,7 +44,7 @@ Note that if you set **min** and **max** parameters, the initial control **value
 
 Slider Title is based on the current value of the control.
 
-For simple title that displayes current value and **static text**, set a template via **webix.template** class:
+For simple title that displays current value and **static text**, set a template via **webix.template** class:
 
 ~~~js
 {view:"slider", title:webix.template("Selected: #value#")}
@@ -63,8 +63,8 @@ For complex title that **changes its text** depending on the current value, defi
 
 Make use of slider events to set changing title for a drag marker:
 
-- **onChange** - a common event for all conrtol that fires each time control value changes. For slider it takes place as soon as you **stop dragging** the marker, which sets a new value. 
-- **onSlider Drag** - fires each time you drag the marker over the line while paying attention to the changing value. 
+- **onChange** - a common event for all control that fires each time control value changes. For slider it takes place as soon as you **stop dragging** the marker, which sets a new value. 
+- **onSliderDrag** - fires each time you drag the marker over the line while paying attention to the changing value. 
 
 ~~~js
 {view:"slider", on:{
@@ -81,5 +81,6 @@ Make use of slider events to set changing title for a drag marker:
 
 {{sample 13_form/05_extras/05_slider_title.html}}
 
-The new title is set with the help of **define()** method while current value of derived with **getValue()**.  Read more about [Changing Component properies](desktop/redefinition.md). 
+The new title is set with the help of **define()** method while current value of derived with **getValue()**.  Read more about 
+[Changing Properties of Components](desktop/redefinition.md). 
 

@@ -6,13 +6,14 @@ Mixins
 - api/refs/activecontent.md -  Allows placing active element in other views
 - api/refs/atomdataloader.md -  primitive data loader
 - api/refs/atomrender.md -  primitive render for views
+- api/refs/autoscroll.md -  Provides support for automatic scrolling of data components while dragging elements or selected blocks
 - api/refs/autotooltip.md -  allows for setting a prompting message for data items
 - api/refs/basebind.md -  core of all bind operations
 - api/refs/bindsource.md -  logic for source of data in bind operations
 - api/refs/canvas.md -  wrapper for HTML Canvas tag
 - api/refs/codeparser.md -   parsing rules for complex values 
 - api/refs/collectionbind.md -  binding rules for collections of objects
-- api/refs/contexthelper.md -  provides for subviews seen by right mouse click
+- api/refs/contexthelper.md -  Allows viewing subviews by right mouse click
 - api/refs/copypaste.md -  provides support for copy-paste operations (integration with clipboard) 
 - api/refs/customscroll.md -  Renders custom scrollbars to Webix views 
 - api/refs/datacollection.md -  View-less component that stores a collection of non-hierarchical data 
@@ -93,6 +94,7 @@ Mixins
 - api/refs/activecontent.md
 - api/refs/atomdataloader.md
 - api/refs/atomrender.md
+- api/refs/autoscroll.md
 - api/refs/autotooltip.md
 - api/refs/basebind.md
 - api/refs/bindsource.md
@@ -166,7 +168,6 @@ Mixins
 - api/refs/virtualrenderstack.md
 - api/refs/ui.baselayout.md
 - api/refs/ui.baseview.md
-- api/refs/ui.checksuggest.md
 - api/refs/ui.proto.md
 - api/refs/ui.resizearea.md
 - api/refs/ui.view.md

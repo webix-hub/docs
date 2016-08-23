@@ -31,7 +31,7 @@ Methods
 - api/link/ui.toggle_resize.md - adjusts the view to a new size
 - api/link/ui.toggle_setvalue.md - sets a new value for the component
 - api/link/ui.toggle_show.md - makes the component visible
-- api/link/ui.toggle_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.toggle_sync.md - allows you to sync two copies of data (all or just a part of it) from one DataCollection to another
 - api/ui.toggle_toggle.md - changes the state of the two-state control
 - api/link/ui.toggle_unbind.md - breaks "bind" link
 - api/link/ui.toggle_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command

@@ -3,7 +3,7 @@ List
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.list.html)
+- [Methods, properties and events](api/refs/ui.list.md)
 - [Samples](http://docs.webix.com/samples/05_list/index.html)
 
 ##Overview

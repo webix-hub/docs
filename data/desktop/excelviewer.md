@@ -213,3 +213,5 @@ The string value of the *url* property *binary->files/data.xlsx@Data[1-10]"* inc
 {{sample 60_pro/10_viewers/04_excel_proxy.html}}
 
 @edition: pro
+
+@spellcheck: xlsx

@@ -44,7 +44,7 @@ If you are updating from Webix 1.x - please check the [Migration guide](migratio
 - datePickerFilter can't be combined with other filters
 - double call for dynamic loading in the Tree
 - dynamic loading in filtered state for Tree and TreeTable
-- export to Excell and null values in the DataTable
+- export to Excel and null values in the DataTable
 - header menu and column hiding
 - header sorting for clicks in rich-filters in the header
 - headermenu for grid with auto-config and remote data loading
@@ -57,7 +57,7 @@ If you are updating from Webix 1.x - please check the [Migration guide](migratio
 - incorrect menu sizing
 - incorrect scroll state for the hidden datatable
 - incorrect scroll state processing for grid with non-aligned rows
-- incorrect size setting from dtable.setState
+- incorrect size setting from datatable.setState
 - incorrect state of headermenu after menu reloading
 - invalid handling of 0 as the option value
 - invalid result of hasEvent call after detaching event
@@ -89,5 +89,5 @@ If you are updating from Webix 1.x - please check the [Migration guide](migratio
 - uncheck of initially enabled radio button
 - unnecessary error message in case of AJAX call canceling
 - unwanted onclick reaction on buttons in IE
-- uploader active area for macos
-- x-scroll in autosized lists
+- uploader active area for Mac OS
+- x-scroll in auto-sized lists

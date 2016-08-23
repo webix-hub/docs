@@ -5,7 +5,6 @@ scroll
 @short:
 	enables or disables scroll for the datatable
 
-@type: boolean
 @example:
 
 webix.ui({

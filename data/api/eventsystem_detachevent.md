@@ -8,7 +8,7 @@ detachEvent
 	detaches a handler from an event (which was attached before by the attachEvent method)
 
 @params:
-- id		id		the event id (the result of the attachEvent operation)
+- id		string		the event id (the result of the attachEvent operation)
 
 
 @example:

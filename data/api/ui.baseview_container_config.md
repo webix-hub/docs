@@ -3,9 +3,9 @@ container
 
 
 @short:
-	an html container (or its id) where the component needs initializing
+	an HTML container (or its id) where the component should be initialized
 
-@type: HTMLElement
+@type: string,HTMLElement
 @example:
 <div id="box" style="width:320px; height:600px;"></div>
 ~~~

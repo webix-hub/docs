@@ -3,7 +3,7 @@ Button
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.button.html)
+- [Methods, properties and events](api/refs/ui.button.md)
 - [Shared functionality](desktop/controls_guide.md)
 
 ##Button Types
@@ -109,7 +109,7 @@ Any button regardless of its *type* can be equipped with a badge with the help o
 ##Button Configuration
 
 - **value** (string) - defines the text displayed on standard buttons (basic, *form*, *danger*, *prev*, *next*);
-- **label** (string) - defines the text or/and HTML markup for the button of *imabeButton* and *iconButton* types and their valiarions as well as for *htmlbutton*;
+- **label** (string) - defines the text or/and HTML markup for the button of *imageButton* and *iconButton* types and their variations as well as for *htmlbutton*;
 - **width** (number) - sets the width of the button;
 - **inputWidth** (number) - sets the width of the text on the button and adjusts button's width to it;
 - **image** (string) - sets a path to the button icon;

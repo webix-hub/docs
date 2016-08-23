@@ -37,3 +37,5 @@ The returned object of the select area contains the following parameters:
 
 @related:
 datatable/area_selection.md
+
+@edition:pro

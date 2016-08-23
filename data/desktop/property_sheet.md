@@ -3,7 +3,7 @@ Property Sheet
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.property.html)
+- [Methods, properties and events](api/refs/ui.property.md)
 - [Samples](http://docs.webix.com/samples/07_property/index.html)
 
 ##Overview
@@ -213,3 +213,5 @@ prop.registerType("popup-ra",{
 - [Resizing](desktop/resizing.md)
 - [Redefinition of the Components](desktop/redefinition.md)
 - [Property Sheet CSS Image Map](desktop/property_css.md)
+
+@spellcheck:api

@@ -29,7 +29,7 @@ Methods
 - api/link/ui.pager_resize.md - adjusts the view to a new size
 - api/ui.pager_select.md - switches pager to the necessary page (zero-based numbering)
 - api/link/ui.pager_show.md - makes the component visible
-- api/link/ui.pager_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.pager_sync.md - allows you to sync two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.pager_unbind.md - breaks "bind" link
 - api/link/ui.pager_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}

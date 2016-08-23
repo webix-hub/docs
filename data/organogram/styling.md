@@ -2,7 +2,7 @@ Styling Organogram
 ==========
 
 You can customize any element of Webix Organogram.
-All you need to do is to redefine the needed attributes of the related css class in the &#60;style&#62; block of your page. The untouched attributes will take default values.
+All you need to do is to redefine the needed attributes of the related CSS class in the &#60;style&#62; block of your page. The untouched attributes will take default values.
 
 ~~~css
 <style>
@@ -21,10 +21,10 @@ CSS classes and the related elements
 
 - **.webix_organogram** - css rule for container of the organizational chart
 - **.webix_organogram_item** - css rule for all chart items
-- **.webix_organogram_level_1** - css rule for the items of the 1st level
-- **.webix_organogram_level_2** - css rule of the items of the 2nd level
+- **.webix_organogram_level_1** - css rule for the items of the first level
+- **.webix_organogram_level_2** - css rule of the items of the second level
 -    ...
-- **.webix_organogram_level_[n]** - css rule for the items of the n level
+- **.webix_organogram_level_[n]** - css rule for the items of the N level
 - **.webix_organogram_list** - css rule for list block
 - **.webix_organogram_list_item** - css rule for items inside list block
 - **.webix_selected** - css rule for the items in selected state
@@ -35,7 +35,7 @@ CSS classes and the related elements
 Custom styling
 ------------------
 
-You can also redefine the default styles or apply your own css rules for chart items.
+You can also redefine the default styles or apply your own CSS rules for chart items.
 
 Use the **$css** property in item data to specify item style in one of the two ways:
 
@@ -44,7 +44,7 @@ Use the **$css** property in item data to specify item style in one of the two w
 2. specify css style directly in the item definition 
 
 To illustrate the described techniques, we will define the **.item_top** css rule and apply it to the item of the 1st level.
-For the item of the 2nd level we'll set specific css properties directly in the data set.
+For the item of the second level we'll set specific css properties directly in the data set.
 
 Finally, we'll redefine the **.webix_selected** rule to change background color of selected items.
 

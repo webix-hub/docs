@@ -4,7 +4,7 @@ event
 @short: attaches an event handler to an HTML element
 
 @params:
-- node		HTMLElement/string		the HTML node or its id
+- node		HTMLElement,string		the HTML node or its id
 - event		string		the name of an HTML event (without the 'on' prefix)
 - handler	function	the event handler
 * context	object		context object with additional setting (described below)

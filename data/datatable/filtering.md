@@ -31,7 +31,7 @@ columns:[
 ~~~
 
 {{note
-If you need to create a **custom filter** (or smth) for header content, or you need to **redefine** the behaviour of an already existing filter, 
+If you need to create a **custom filter** (or something) for header content, or you need to **redefine** the behavior of an already existing filter, 
 go [here](datatable/headers_footers.md#customheaderandfootercontent) for the instructions. 
 }}
 
@@ -66,7 +66,7 @@ Request parameters include:
 - *start* - ID of the data record to start from (0 - beginning). Its value depends on [dynamic loading](desktop/dynamic_loading.md) parameters, if any;
 - *filter[column_name]* - name of the column (in brackets) for which filtering is performed. Its value is a text value you've entered in the filter input. 
 
-If **serverside sorting** is enabled, data is both filtered and sorted on server. 
+If **server-side sorting** is enabled, data is both filtered and sorted on server. 
 
 ###Select filter {#select}
 
@@ -84,7 +84,7 @@ Retrieves values that contain mask defined through a dropdown list of possible v
 
 <img src="datatable/numeric_filter.png"/>
 
-Text filter used for number columns. Retrieves values which contain mask defined through text field. Allows users to use the following comporison operators in it:
+Text filter used for number columns. Retrieves values which contain mask defined through text field. Allows users to use the following comparison operators in it:
 
 - '=' - equal to;
 - '>' - greater than;
@@ -174,7 +174,8 @@ Retrieves values that contain mask defined through the popup calendar. Based on 
 
 ##Filtering Logic
 
-Note, each time you start to type text in such a filter, DataTable invokes the [filterByAll()](api/ui.datatable_filterbyall.md) method. Each time the method is called, all data is re-filtered (previous results aren't preserved).
+Note, each time you start to type text in such a filter, DataTable invokes the
+api/ui.datatable_filterbyall.md method. Each time the method is called, all data is re-filtered (previous results aren't preserved).
 
 ###AND logic
 By default, when you specify filters in several columns, DataTable applies AND logic to them, i.e. the table will display just records that meet 
@@ -246,12 +247,12 @@ function startCompare(value, filter){
 }
 
 grid = new webix.ui({
-	view:"datatable",
-	...
-	columns:[
-		{ id:"title", header:["Film title",{content:"textFilter", compare:startCompare}]},
-		...
-	]
+   view:"datatable",
+   ...
+   columns:[
+	 { id:"title", header:["Film title",{content:"textFilter",compare:startCompare}]},
+	 ...
+   ]
 });	
 ~~~
 
@@ -309,9 +310,9 @@ Filtering by multiple criteria (by specifying an additional filtering rule)
 grid = new webix.ui({
 	view:"datatable",
 	columns:[
-		{ id:"rank",	header:["#", {content:"textFilter", compare:oneForAll, colspan:3}]},
-		{ id:"title",	header:["Film title",""] },
-		{ id:"year",	header:["Release year",""]}
+	  { id:"rank",	header:["#",{content:"textFilter",compare:oneForAll,colspan:3}]},
+	  { id:"title",	header:["Film title",""]},
+	  { id:"year",	header:["Release year",""]}
 	],
 });
 
@@ -416,8 +417,8 @@ In case of TreeTable some extra configurations can be defined to define how filt
 
 The **filterMode** property is an object that can contain 2 attributes:
 
-- **showSubItems** - (*boolean*) defines whether the tree must display childs of the filtered items (*true*) 
-or the filtered items would be displayed as childs of the root node (*false*). The default value - *true*. 
+- **showSubItems** - (*boolean*) defines whether the tree must display children of the filtered items (*true*) 
+or the filtered items would be displayed as children of the root node (*false*). The default value - *true*. 
 - **openParents** - (*boolean*) defines whether the tree will expand branches to show the found items (*true*) or stay as is (*false*). The default value - *true*
 - **level**  - (*number*) sets the nesting level to filter items from (one-based numbering). 
 
@@ -438,3 +439,5 @@ webix.ui({
 {{sample
 	17_datatree/04_api/03_filter.html
 }}
+
+@spellcheck: yyyy, builtin, api

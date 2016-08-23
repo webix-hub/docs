@@ -3,7 +3,7 @@ Template
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.template.html)
+- [Methods, properties and events](api/refs/ui.template.md)
 - [Samples](http://docs.webix.com/samples/04_template/index.html)
 
 
@@ -139,7 +139,7 @@ The rules of data templating can be studied in detail in the [dedicated document
 
 ##Changing Template Text Dynamically
 
-Dymanic content setting can be implemented with the help of:
+Dynamic content setting can be implemented with the help of:
 
 - a [setHTML](api/ui.template_sethtml.md) method to change text or HTML content of a template;
 - a [define](api/link/ui.template_define.md) method used in lots of the components to [reset property values](desktop/redefinition.md);
@@ -150,7 +150,7 @@ Dymanic content setting can be implemented with the help of:
 
 ###Default 
 
-The default template is a white non-editable area with some text or HTML content. It's surrounded by a grey border.
+The default template is a white non-editable area with some text or HTML content. It's surrounded by a gray border.
 
 ~~~js
 { view: "template", template: "Text" }
@@ -185,7 +185,7 @@ Note that headers of [accordionitems](desktop/accordionitem.md) are set in a dif
 
 ###Section
 
-Section template places header within the line that encircles a row/column thus making it possible to neatly divide the webpage into blocks. As there's a line in this template type, it would be nice to 
+Section template places header within the line that encircles a row/column thus making it possible to neatly divide the web page into blocks. As there's a line in this template type, it would be nice to 
 resort to [borderless](desktop/borders.md) layout design. 
 
 
@@ -196,3 +196,5 @@ resort to [borderless](desktop/borders.md) layout design.
 ~~~
 
 {{sample 80_docs/template_types.html}}
+
+@spellcheck:accordionitems

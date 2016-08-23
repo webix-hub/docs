@@ -19,11 +19,13 @@ Properties
 - api/link/ui.multiselect_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/link/ui.multiselect_icon_config.md - sets an icon into the control
 - api/link/ui.multiselect_id_config.md - the component ID
+- api/link/ui.multiselect_inputalign_config.md - the alignment of an input towards its container
 - api/link/ui.multiselect_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.multiselect_inputpadding_config.md - padding of text in the input
 - api/link/ui.multiselect_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.multiselect_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.multiselect_label_config.md - the text label of the control
+- api/link/ui.multiselect_labelalign_config.md - the alignment of a label towards its container
 - api/link/ui.multiselect_labelposition_config.md - positions label in relation to the control
 - api/link/ui.multiselect_labelwidth_config.md - the width of the label
 - api/link/ui.multiselect_maxheight_config.md - sets the maximum height for the view
@@ -70,11 +72,13 @@ Properties
 - api/link/ui.multiselect_hotkey_config.md
 - api/link/ui.multiselect_icon_config.md
 - api/link/ui.multiselect_id_config.md
+- api/link/ui.multiselect_inputalign_config.md
 - api/link/ui.multiselect_inputheight_config.md
 - api/link/ui.multiselect_inputpadding_config.md
 - api/link/ui.multiselect_inputwidth_config.md
 - api/link/ui.multiselect_invalidmessage_config.md
 - api/link/ui.multiselect_label_config.md
+- api/link/ui.multiselect_labelalign_config.md
 - api/link/ui.multiselect_labelposition_config.md
 - api/link/ui.multiselect_labelwidth_config.md
 - api/link/ui.multiselect_maxheight_config.md

@@ -38,4 +38,258 @@ webix.ui({
 
 {{sample 60_pro/01_datatable/08_sparklines/01_init.html}}
 
+Sparklines Types
+------------------
+
+There are six types of Sparklines representation available:
+
+- <a href="#line">Line - the default one</a>
+- <a href="#area">Area</a>
+- <a href="#bar">Bar</a>
+- <a href="#spline">Spline</a>
+- <a href="#splinearea">SplineArea</a>
+- <a href="#pie">Pie</a>
+
+To create a template function for a sparkline with the type different from the default one, use the *webix.Sparklines.getTemplate("type_name")* method.
+
+<h3 id="line">Line Sparklines</h3>
+
+<img src="datatable/line_sparklines.png">
+
+~~~js
+{ 
+	id:"income",
+    header:"Income per Month", 
+    template: "{common.sparklines()}", 
+    width:200
+}
+~~~
+
+{{sample 60_pro/01_datatable/08_sparklines/01_init.html}}
+
+<h3 id="area">Area Sparklines</h3>
+
+<img src="datatable/area_sparklines.png">
+
+~~~js
+{
+	id:"income", 
+    header:"Income per Month", 
+    template: webix.Sparklines.getTemplate("area"), 
+    width:200
+}
+~~~
+
+{{sample 60_pro/01_datatable/08_sparklines/02_area.html}}
+
+<h3 id="bar">Bar Sparklines</h3>
+
+<img src="datatable/bar_sparklines.png">
+
+
+~~~js
+{ 
+	id:"balance", 
+    header:"Balance per Month", 
+    template: webix.Sparklines.getTemplate("bar") , 
+    width:200
+}
+~~~
+
+{{sample 60_pro/01_datatable/08_sparklines/03_bars.html}}
+
+<h3 id="spline">Spline Sparklines</h3>
+
+<img src="datatable/spline_sparklines.png">
+
+~~~js
+{ 
+	id:"income", 
+    header:"Income per Month", 
+    template: webix.Sparklines.getTemplate("spline"), 
+    width:200
+}
+~~~
+
+{{sample 60_pro/01_datatable/08_sparklines/04_spline.html}}
+
+<h3 id="splinearea">SplineArea Sparklines</h3>
+
+<img src="datatable/spline_area_sparklines.png">
+
+~~~js
+{ 
+	id:"income", 
+    header:"Income per Month", 
+    template: webix.Sparklines.getTemplate("splineArea"), 
+    width:200
+}
+~~~
+
+{{sample 60_pro/01_datatable/08_sparklines/05_splinearea.html}}
+
+<h3 id="pie">Pie Sparklines</h3>
+
+<img src="datatable/pie_sparklines.png">
+
+~~~js
+{ 
+	id:"income", 
+    header:"Income per Month", 
+    template: webix.Sparklines.getTemplate("pie"), 
+    width:200
+}
+~~~
+
+{{sample 60_pro/01_datatable/08_sparklines/06_pie.html}}
+
+Sparklines Tooltips
+--------------------
+
+You can specify tooltips for sparklines values in datatable. They will appear when the user will move the mouse pointer over the sparklines items (bars, sectors).
+
+Sparklines tooltip is set via the "tooltip" template. The template function takes a data item of Sparkline as the first parameter.
+
+
+<img src="datatable/sparklines_tooltips.png">
+
+~~~js
+webix.ui({    
+    view:"datatable",
+    columns:[
+   	 {
+   		 id:"values", header:"Values", template: "{common.sparklines()}",
+   		 tooltip: function(obj, common, value, index){
+   			if(!value)
+   			 	return "";
+   			 return obj.name+",<br/>"+value.month+" : <b>"+value.value+"</b>";
+   		 }
+   	 },
+   	 ...
+    ],
+    tooltip: true,
+    ...
+    data: [
+   	 {id: 1, name: "Austria", values: [
+   		 {value: 2000, month: "January"},
+   		 {value: 1000, month: "February"},
+   		 {value: 3000, month: "March"}
+   	 ]},
+   	 ...
+    ]
+});
+~~~
+
+{{sample 60_pro/01_datatable/08_sparklines/07_tooltips.html}}
+
+Setting Sparklines Colors
+-----------------
+
+There are two variants of configuring sparklines colors using the *color* property:
+
+- to set a custom color for sparklines 
+
+~~~js
+{ 
+	id:"income", 
+    header:"Custom color", 
+    template: webix.Sparklines.getTemplate({type:"area", color: "#5868bf"}),
+      width:200
+}
+~~~
+
+- to specify different colors of sparklines for datatable rows  
+
+~~~js
+var bar1 = webix.Sparklines.getTemplate({type:"bar", color: "#5868bf"});
+var bar2 = webix.Sparklines.getTemplate({type:"bar", color: "#3ea4f5"});
+
+...
+
+{ 
+	id:"income", 
+    header:"Row color", 
+    template: function(obj,type,data,column,index){
+       var template =(index%2?bar1:bar2);
+           return  template.apply(this,arguments);
+	}, 
+	width:200
+}
+~~~
+
+{{sample 60_pro/01_datatable/08_sparklines/08_colors.html}}
+
+<h3 id="neg_color">Negative color option for Bar sparklines</h3>
+
+You can set a certain color for a negative value while rendering a Bar sparkline.
+It is set by the *negativeColor* property:
+
+~~~js
+{ 
+	id:"income", 
+    header:"Negative color", 
+    template: webix.Sparklines.getTemplate({type:"bar", negativeColor: "#d86c79"}),
+      width:200
+}
+~~~
+
+<img src="datatable/sparklines_colors.png">
+
+{{sample 60_pro/01_datatable/08_sparklines/08_colors.html}}
+
+
+Sparklines Outside of DataTable
+------------------
+
+You can also use sparklines separately, not just in datatable cells. For example, you can place them into the List view: 
+
+<img src="datatable/sparklines_outside_datatable.png">
+
+For this purpose, you need to create a template function for a sparkline and use it in a list template. 
+As well as any other template, sparkline template function returns an HTML string. It takes two parameters:
+
+- data - data collection for rendering
+- type - an object that contains size properties ("width" and "height") 
+
+If each list item contains only a sparkline, you can set a sparkline template as a list template. In this case sparklines will take the sizes of list items:
+
+
+~~~js
+var sparkline = webix.Sparklines.getTemplate({type:"bar", color: "#5868bf"});
+
+webix.ui({
+	view:"list",
+	template: sparkline, 
+	type:{ height: 50, width:300 },
+    data: [
+		{id: 1, data: [710, 780, 390, 660, 600] },
+		{id: 2, data: [810, 500, 780, 800, 940] },
+		...
+	]
+});
+~~~
+
+Sparkline template can also be used inside of a list template. In this case you need to pass data and object with sizes into the sparkline template:
+
+~~~js
+var sparkline = webix.Sparklines.getTemplate({type:"bar", color: "#5868bf"});
+
+webix.ui({
+	view:"list",
+	type:{ height: 80, width:300 },
+	template:function(obj){
+		return obj.name + "<div style='height:50px'>" + 
+        	sparkline(obj.data, { width:300, height: 50 }) + "</div>";
+	},
+	data: [
+		{id: 1, name: "Austria", data: [710, 780, 390, 660, 600] },
+		{id: 2, name: "France", data: [810, 500, 780, 800, 940] },
+		...
+	]
+});
+~~~
+
+
+{{sample 60_pro/01_datatable/08_sparklines/09_outside.html}}
+
 @edition:pro

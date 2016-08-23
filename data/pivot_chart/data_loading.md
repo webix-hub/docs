@@ -1,7 +1,8 @@
 Loading Data 
 =====================
 
-Pivot Chart supports both inline and external (including server-side) data in any of the [supported data types](desktop/data_types.md):  **XML**, **JSON**, **JSArray** and **CSV**. 
+Pivot Chart supports both inline and external (including server-side) data in any of the
+[supported data types](desktop/data_types.md):  **XML**, **JSON**, **JsArray** and **CSV**. 
 
 ##Inline Data
 

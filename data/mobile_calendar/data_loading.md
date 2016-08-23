@@ -1,7 +1,7 @@
-Loading and Saving Data in Mobile Scheduler
+Loading and Saving Data 
 =======================
 
-Mobile Scheduler supports [data loading](desktop/data_loading.md) from JSON and XML data sources. By default, data is loaded into Scheduler in JSON format.
+Mobile Scheduler supports [data loading](desktop/data_loading.md) from JSON and XML data sources. By default, data is loaded into Scheduler in [JSON](desktop/data_types.md#nonhierarchicaldata) format.
 
 ~~~js
 {
@@ -44,7 +44,7 @@ Here is an example of "xml" data source:
 </data>
 ~~~
 
-- "scheduler" - event items are described as &#60;event&#62; tags and properties as subtags
+- "scheduler" - event items are described as &#60;event&#62; tags and properties are used as nested tags inside of them
 
 You can use "scheduler" data type (xml datasource), if you are going to use Connector for data loading and saving.
 

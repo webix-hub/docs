@@ -1,11 +1,10 @@
 date
 =============
 
-
 @short:
-	sets the initial date of the calendar (particularly month and year).
+	specifies the year and month that will be shown in the calendar after initialization
 
-@type: Date,string
+@type: Date, string
 @example:
 webix.ui({
 	weekHeader:true,
@@ -23,5 +22,7 @@ webix.ui({
 @defined:	ui.calendar	
 @descr:
 
-Value can be either a **string** formatted with the current [parseFormat](api/i18n_parseformat_other.md) or **Date** object.
+The specified date won't be selected in the calendar, so specifying the day is optional.
+
+Value can be either a **string** formatted with the current [parseFormat](api/i18n_parseformat_other.md) or a **Date** object.
 

@@ -1,4 +1,4 @@
-Changing Scheduler's Structure
+Changing Structure of Scheduler
 =========================================
 
 

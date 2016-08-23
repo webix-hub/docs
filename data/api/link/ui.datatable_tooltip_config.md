@@ -1,13 +1,12 @@
 @link: api/autotooltip_tooltip_config.md
 @type: boolean
 @example:
-
-grid = new webix.ui({
-	container:"testA",
+webix.ui({
 	view:"datatable",
 	columns:[
 		{ id:"rank",  tooltip:false, width:50, header:"", css:"rank" },
-		{ id:"title", tooltip:"Title: #title#<br>Rating: #rating#", width:200, header:"Film title" },
+		{ id:"title", tooltip:"Title: #title#<br>Rating: #rating#", 
+        	width:200, header:"Film title" },
 		{ id:"year",	header:"Year"},
 		{ id:"votes",	header:"Votes"}
 	],
@@ -19,11 +18,11 @@ grid = new webix.ui({
 });	
 
 @relatedsample:
-- 15_datatable/09_columns/08_tooltips.html 
+15_datatable/09_columns/08_tooltips.html 
 
     
 @descr:
 
-Content of tooltip will be defined by tooltip property from column configuration.
-If column has not tooltip property - content of column will be shown in a tooltip.
+The tooltip's content will be defined by the *tooltip* property from the column configuration.
+If a column doesn't have the tooltip property, the column's content will be shown in the tooltip.
 

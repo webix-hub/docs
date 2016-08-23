@@ -3,13 +3,13 @@ Tabview
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.tabview.html)
+- [Methods, properties and events](api/refs/ui.tabview.md)
 - [Samples](http://docs.webix.com/samples/02_toolbar/index.html)
 
 
 ##Overview
 
-Tabview is a **hybrid** component that is made of a [multiview](desktop/multiview.md) and [tabbar](desktop/tabbar.md).
+Tabview is a **hybrid** component that is made of a [multiview](desktop/multiview.md) and a [tabbar](desktop/tabbar.md).
 
 Tabview allows for quick initialization of a multiview with a built-in ability to [switch between the views](desktop/tabbar_switching.md).
 
@@ -48,7 +48,7 @@ webix.ui({
   ]
 });
 ~~~
-{{sample 02_toolbar/03_tabview.html }}
+{{sample 02_toolbar/03_tabview.html}}
 
 
 Each tabview cell features:
@@ -140,7 +140,7 @@ tabbar: {
 }
 ~~~
 
-To make a separate tab closable, use the **close** proerty in its configuration: 
+To make a separate tab closable, use the **close** property in its configuration: 
 
 ~~~js
 view: "tabview",

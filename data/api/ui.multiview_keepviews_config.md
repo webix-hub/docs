@@ -4,7 +4,7 @@ keepViews
 @short:
 	specifies the mode in which multiview doesn't remove inactive views when the become hidden
 
-@type: 
+@type: boolean
 @example:
 webix.ui({
   view: "multiview",

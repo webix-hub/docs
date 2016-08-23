@@ -1,4 +1,4 @@
-Editing in the Tree
+Editing in Tree
 =======================================
 Initially, Tree is a non-editable component. But you can easily make Tree editable by extending it with a special class - api/refs/editability.md.
 
@@ -106,7 +106,7 @@ To deny editing specific items, branches, levels etc. you can use the api/editab
 before the user opens the editor and gets the id of the edited item as a parameter.<br> To deny editing of a item - return *false* for it within the appropriate event handler.
 
 {{snippet
-Making editable only the 2nd nesting level
+Making editable only the second nesting level
 }}
 ~~~js
 webix.protoUI({

@@ -22,3 +22,4 @@ webix.ui({
 @relatedsample:
 	60_pro/01_datatable/07_sub/02_sub_autoheight.html
 
+@edition:pro

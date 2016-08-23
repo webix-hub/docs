@@ -1,7 +1,7 @@
-Mobile Scheduler in Read-only Mode
+Read-only Mode
 ============
 
-The mobile scheduler can be used in 2 modes:
+Mobile Scheduler can be used in 2 modes:
 
 - **Edit** (by default)
 - **Read-only**

@@ -3,7 +3,7 @@ Unitlist
 
 ##API Reference 
 
-- [Methods, properties and events](api__refs__ui.unitlist.html)
+- [Methods, properties and events](api/refs/ui.unitlist.md)
 - [Samples](http://docs.webix.com/samples/05_list/index.html)
 
 ##Overview
@@ -15,7 +15,7 @@ Unitlist presents data in groups derived from initial non-hierarchical dataset. 
 ##Initialization
 
 {{snippet
-List items are groupped by title
+List items are grouped by title
 }}
 ~~~js
 webix.ui({
@@ -60,7 +60,7 @@ uniteBy:function(obj){
 
 Unitlist API makes it possible to get text values of unit headers (unit values) as well as get data items that comply with this or that unit criterion. 
 
-- **getUnits()** - returns JS array of unit values defined by the **uniteBy** property. The values are arranged in the alpabetical order, numbers first;
+- **getUnits()** - returns JS array of unit values defined by the **uniteBy** property. The values are arranged in the alphabetical order, numbers first;
 - **getUnitList(id)** - returns the ID (or, more often, IDs) of data records united by "unit" criterion. 
 
 ~~~js
@@ -78,7 +78,7 @@ If you know the ID of any data item, you can easily get to all its properties:
 var title = $$("list").getItem(id).title;
 ~~~
 
-If there're several data items that comply to the unit value criterion, they are returned in a **JS array**, and should be treated accordingly. 
+If there are several data items that comply to the unit value criterion, they are returned in a **JS array**, and should be treated accordingly. 
 
 **Common Functionality:**
 

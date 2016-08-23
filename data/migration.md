@@ -1,6 +1,10 @@
 Migration to latest Webix version
 =================================
 
+Webix 3.3 -> 3.4
+-----------------
+Data filtering in bound components: selected value for a master view should be set after data is loaded
+
 Webix 3.2 -> 3.3
 ----------------
 

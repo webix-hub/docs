@@ -1,4 +1,4 @@
-Tree Nodes manipulations
+Tree Nodes Manipulations
 ===========================
 
 Adding nodes
@@ -47,7 +47,7 @@ tree.add({ value:"New item"}, 0);
 		</td>
 	</tr>
 	<tr>
-        <td>Child node (1st child)</td>
+        <td>Child node (first child)</td>
 		<td> 
 ~~~js
 tree=new webix.ui({view:'tree',..});
@@ -60,7 +60,7 @@ tree.add( {value:"New item"}, 0, parentId);
 	</td>
 	</tr>
 	<tr>
-        <td>Child node (2nd child)</td>
+        <td>Child node (second child)</td>
 		<td>
 ~~~js
 tree=new webix.ui({view:'tree',..});
@@ -116,7 +116,7 @@ Expanding/collapsing branches
 Tree nodes are collapsed and expanded 
 
 - by clicking on a **"+/-"** icon or a node (default behavior);
-- by clicking on a **node text** provided that **activeTitle** ptoperty is defined for the tree. 
+- by clicking on a **node text** provided that **activeTitle** property is defined for the tree. 
 
 ~~~js
 view:"tree", 
@@ -235,3 +235,5 @@ tree.refresh();
 //or
 tree.updateItem(node_id, nodeObj);
 ~~~
+
+@spellcheck:api

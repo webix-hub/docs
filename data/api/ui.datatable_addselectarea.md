@@ -27,3 +27,5 @@ $$("dtable").addSelectArea(start,end,preserve);
 
 @related:
 datatable/area_selection.md
+
+@edition:pro

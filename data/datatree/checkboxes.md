@@ -1,6 +1,6 @@
-Checkboxes in the tree
+Checkboxes in Tree
 ==================================
-In this chapter we will talk about checkboxes in tree nodes: how to add, customize them or provide the 3-state behaviour.
+In this chapter we will talk about checkboxes in tree nodes: how to add, customize them or provide the 3-state behavior.
 
 Adding checkboxes to nodes
 -----------------------------
@@ -28,18 +28,18 @@ tree = new webix.ui({
 
 3-state checkboxes
 ---------------------
-In addition to standard 2-state behaviour, Tree supports 3-state checkboxes.
+In addition to standard 2-state behavior supports 3-state checkboxes.
 
 <table class="list">
 	<caption class="caption">
 		<strong>Table 1 </strong>
-		Types of checkbox behaviour
-	</caption>
+		Types of checkbox behavior
+    </caption>
 	<thead>
 	<tr>
 		<th>
-			Behaviour
-		</th>
+			Behavior
+        </th>
 		<th>
 			Description
 		</th>
@@ -69,10 +69,10 @@ In addition to standard 2-state behaviour, Tree supports 3-state checkboxes.
 
 <br>
 
-To provide 3-state behaviour for tree checkboxes you should set the api/treestatecheckbox_threestate_config.md property to *true*:
+To provide 3-state behavior for tree checkboxes you should set the api/treestatecheckbox_threestate_config.md property to *true*:
 
 {{snippet
-	Activating 3-state behaviour for checkboxes
+	Activating 3-state behavior for checkboxes
 }}
 ~~~js
 tree = new webix.ui({
@@ -90,7 +90,7 @@ tree = new webix.ui({
 Manipulations with checkboxes
 --------------------------
 
-Checkboxes can be programmatically checked and unchecked as well as it is possible to get checked items and define, whether the item is currently checked or not. 
+Checkboxes can be checked and unchecked with special API methods. It is possible to get checked items and define whether the item is currently checked or not. 
 
 - **checkItem**(id)/ **uncheckItem**(id) - checks/unchecks tree node with the specified ID;
 - **getChecked()** - returns an array of IDs of the checked items;
@@ -104,7 +104,8 @@ tree.uncheckItem(tree.getSelectedId());
 
 Checkboxes can be used for **component refreshing** just from browser. 
 
-Generally, components are refreshed by applying the **refresh()** method to them, yet it can be called each time tree checkbox changes. The  item wth this checkbox will be refreshed:
+Generally, components are refreshed by applying the **refresh()** method to them, 
+yet it can be called each time tree checkbox changes. The item with this checkbox will be refreshed:
 
 ~~~js
 webix.ui({

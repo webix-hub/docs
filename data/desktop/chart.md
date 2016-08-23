@@ -3,7 +3,7 @@ Chart
 
 ##API Reference
 
-- [Methods, parameters and events](api__refs__ui.chart.html)
+- [Methods, parameters and events](api/refs/ui.chart.md)
 - [Samples](http://docs.webix.com/samples/08_chart/index.html)
 
 ##Overview
@@ -44,7 +44,7 @@ Initialization of a Bar Chart
 	08_chart/01_initialization/01_load_xml.html
 }}
 
-To learn about all the chart properties, please refer to the [corresponding chapter of the manual](api__refs__ui.chart.html). 
+To learn about all the chart properties, please refer to the [corresponding chapter of the manual](api/refs/ui.chart.md). 
 
 
 ##Working with Chart
@@ -57,7 +57,7 @@ To learn about all the chart properties, please refer to the [corresponding chap
 - [Setting Chart Tooltip](desktop/chart_tooltip.md)
 - [Data Grouping](desktop/grouping.md)
 - [Operations with Chart Data](desktop/chart_operations.md)
-- [Chart Colouring](desktop/chart_coloreffects.md)
+- [Chart Coloring](desktop/chart_coloreffects.md)
 - desktop/export_png.md
 - desktop/data_components_export.md
 

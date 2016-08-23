@@ -1,7 +1,7 @@
 Event Handling with Organogram
 ================
 
-Organogram supports various events that can be used to provide a custom behaviour for your organogram.
+Organogram supports various events that can be used to provide a custom behavior for your organogram.
 
 There are 2 ways you can add a handler to the event:
 
@@ -53,11 +53,11 @@ webix.ui({
 
 Cancelable Events 
 -----------------------
-All events with the subword '**onbefore**' can be cancelled.<br>
+All events with the subword '**onBefore**' can be canceled.<br>
 To cancel some event you should return **false** within the appropriate event handler.
 
 {{snippet
-Cancelling the event handler
+Canceling the event handler
 }}
 ~~~js
 var myEvent = $$("orgChartId").attachEvent("onBeforeSelect", function (id) {
@@ -72,7 +72,7 @@ Accessible objects and data
 Inside the event handler you can refer to the holder component through the keyword **this**. </br>
 Besides, most event handlers get incoming argument(s), like the **id** of a data item (see [organogram events](api/refs/ui.organogram_events.md) to know exactly what arguments are passed inside event handler). 
 
-Btw, using the **id** of a data item you can access this item itself and all its properties. For example:
+By the way, using the **id** of a data item you can access this item itself and all its properties. For example:
 
 {{snippet
 Referring within the event handler

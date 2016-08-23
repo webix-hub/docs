@@ -98,7 +98,7 @@ webix.ui({
 ~~~
 
 
-- **activeItem** - (boolean) specifies if childs of the branches will be rendered in the TreeMap, false by default
+- **activeItem** - (boolean) specifies if children of the branches will be rendered in the TreeMap, false by default
 
 ~~~js
 webix.ui({
@@ -192,7 +192,7 @@ The colors that correspond to this or that rule are specified in the css style d
 One-Level Rendering
 ---------------------
 
-You can set the mode in which only first-level branches are displayed in the Treemap. But if values are set only for leaves items, you need to calculate them for branches in order to define rectangles style.
+You can set the mode in which only first-level branches are displayed in the TreeMap. But if values are set only for leaves items, you need to calculate them for branches in order to define rectangles style.
 
 For this purpose, we need to count the average number of comments in our example. Let's specify the getCss function with the appropriate configuration:
 
@@ -253,7 +253,7 @@ webix.ui({
 
 The key parameters here are:
 
-- **activeItem** - (boolean) specifies if childs of the branches will be rendered in the TreeMap, false by default
+- **activeItem** - (boolean) specifies if children of the branches will be rendered in the TreeMap, false by default
 
 - **subRender** - (boolean) defines if the sub-elements should be rendered for the first-level branches, true by default
 
@@ -266,7 +266,7 @@ Handling Events
 Since TreeMap component inherits its API from api/refs/treestore.md, it supports the handling of almost the same events. 
 You can check the full list of events in the [API reference](api/refs/ui.treemap_events.md).
 
-TreeMap supports various events that can be used to provide a custom behaviour for treemap.
+TreeMap supports various events that can be used to provide a custom behavior for treemap.
 
 There are 2 ways you can add a handler to the event:
 
@@ -318,11 +318,11 @@ webix.ui({
 
 ###Cancelable Events 
 
-All events with the subword '**onBefore**' can be cancelled.<br>
+All events with the subword '**onBefore**' can be canceled.<br>
 To cancel some event you should return **false** within the appropriate event handler.
 
 {{snippet
-Cancelling the event handler
+Canceling the event handler
 }}
 ~~~js
 var myEvent = $$("treemap").attachEvent("onBeforeSelect", function (id) {
@@ -337,7 +337,7 @@ var myEvent = $$("treemap").attachEvent("onBeforeSelect", function (id) {
 Inside the event handler you can refer to the holder component through the keyword **this**. </br>
 Besides, most event handlers get incoming argument(s), like the **id** of a data item (see [treemap events](api/refs/ui.treemap_events.md) to know exactly what arguments are passed inside event handler). 
 
-Btw, using the **id** of a data item you can access this item itself and all its properties. For example:
+By the way, using the **id** of a data item you can access this item itself and all its properties. For example:
 
 {{snippet
 Referring within the event handler
@@ -364,12 +364,12 @@ webix.ui({
 });
 ~~~
 
-In our example, the item's category is taken as the value of the headerTemplate property. So, a Treemap with an opened first-level branch will look like this:
+In our example, the item's category is taken as the value of the headerTemplate property. So, a TreeMap with an opened first-level branch will look like this:
 
 <img src="desktop/treemap_branch_header.png">
 
 
-Now if we click on the "Health Economics" sub-branch of the "Healthcare" category, the header will be displayed as the "Main Category> SubCategory":
+Now if we click on the "Health Economics" sub-branch of the "Healthcare" category, the header will be displayed as the "Main Category> Subcategory":
 
 <img src="desktop/treemap_child_branch_header.png">
 
@@ -378,3 +378,5 @@ Now if we click on the "Health Economics" sub-branch of the "Healthcare" categor
 }}
 
 @edition:pro
+
+@spellcheck:api, treemap

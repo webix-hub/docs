@@ -3,7 +3,7 @@ Video
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.video.html)
+- [Methods, properties and events](api/refs/ui.video.md)
 - [Samples](http://docs.webix.com/samples/27_video/index.html)
 
 ##Overview
@@ -64,7 +64,7 @@ autoplay:true
 
 ##Working with Video
 
-HTML5 video can be controlled programmatically using methods and properties of video DOM element:
+HTML5 video can be controlled using methods and properties of the video DOM element:
 
 - **play()** and **pause()** methods to control the video;
 - **paused** - read-only property that stores video state.
@@ -121,5 +121,5 @@ function playPause(){
 Alongside with playing and pausing the video, we change **button text value** with its api/ui.button_setvalue.md to correspond video state. 
 
 
-
+@spellcheck:WebM, Ogg
 

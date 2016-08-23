@@ -58,6 +58,7 @@ To create a custom editor, you should set the following methods to it:
 - **setValue()** - sets the value of the editor.
 - **render()** - renders the editor.
 
+~~~js
 webix.editors = {
   "myeditor": {
     focus: function () {...}
@@ -66,6 +67,7 @@ webix.editors = {
     render: function () {...}
   }
 };
+~~~
 
 The functions are defines with the help of the following inner properties: 
 
@@ -211,7 +213,7 @@ var table2 = new webix.ui({
 
 Apart from row and column editing, datatable API offers the possibilities to 
 
-- programmatically open editor in the next cell of the row (provided that it is editable) - **editNext()** method;
+- open editor in the next cell of the row (provided that it is editable) - **editNext()** method;
 - move focus to the active editor (if any) - **focusEditor()** method;
 - close the editor without saving changes - **editCancel()** method;
 - close the editor while saving changes - **editStop()** method.

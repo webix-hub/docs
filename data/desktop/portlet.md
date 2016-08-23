@@ -3,7 +3,7 @@ Portlet
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.portlet.html)
+- [Methods, properties and events](api/refs/ui.portlet.md)
 - [Samples](http://docs.webix.com/samples/60_pro/09_portlet/index.html)
 
 ##Overview
@@ -86,7 +86,7 @@ Dragging by the header
 ------------------------
 
 In order to drag a portlet you can use not only the handler, but also the portlet header. 
-Just set some string value for the *header* property in the porlet definition:
+Just set some string value for the *header* property in the portlet definition:
 
 ~~~js
 webix.ui({
@@ -185,3 +185,5 @@ webix.ui({
 {{sample 60_pro/09_portlet/04_drag_component.html}}
 
 @edition:pro
+
+@spellcheck: portlet, portlet's, portlets

@@ -5,8 +5,8 @@ Version 3.1
 
 ##New Features
 
-- [Sidemenu](desktop/sidemenu.md) widget
-- [TreeMap](desktop/treemap.md) (PRO edition)
+- [Side Menu](desktop/sidemenu.md) widget
+- [Tree Map](desktop/treemap.md) (PRO edition)
 - [Sidebar](desktop/sidebar.md) extension
 - autowidth for desktop/menu.md#autowidth and desktop/button.md
 
@@ -16,7 +16,7 @@ Version 3.1
 - [open()](api/link/ui.organogram_open.md) and [close()](api/link/ui.organogram_close.md) methods for organogram
 - [newValues](api/ui.multicombo_newvalues_config.md) for multiselect
 - [eachLeaf()](api/treestore_eachleaf.md) for TreeStore
-- support for numPad keys UIManager
+- support for numeric hotkeys in UIManager
 - [onSubViewOpen](api/ui.datatable_onsubviewclose_event.md) event handler for DataTable
 - api/ui.uploader_inputname_config.md parameter for uploader
 - "multiselect" support for KanbanLists
@@ -24,10 +24,10 @@ Version 3.1
 - ["root" batch](file_manager/configuration.md#actionsmenu) for File Manager
 - animateView method and "month" view animation for Scheduler on touch devices
 - error message on init non-GPL views with Webix GPL
-- api/ui.multicombo_tagmode_config.md property for multicombo
-- [load() method](desktop/pdfviewer.md#pdfviewerapireference) for PdfViewer
-- [toFront](api/ui.window_tofront_config.md) property for windows and popups
-- api/html_gettextsize.md() method for html helper
+- api/ui.multicombo_tagmode_config.md property for MultiCombo
+- [load() method](desktop/pdfviewer.md#pdfviewerapireference) for PDF Viewer
+- [toFront](api/ui.window_tofront_config.md) property for windows and popup
+- api/html_gettextsize.md method for html helper
 
 ##Fixes
 
@@ -36,7 +36,7 @@ Version 3.1
 - refreshColumn correctly removes filters
 - clipboard: clicks on selected item/cell
 - subrow opening in TreeTable
-- Multicombo and bottomPadding
+- MultiCombo and bottomPadding
 - numberFilter to accept 0 and fractional numbers
 - remove sub items with parent in tree
 - accordion doesn't resize the header panel
@@ -76,4 +76,4 @@ Version 3.1
 - export to Excel, dates processing
 - FireFox: customCheckbox and customRadio
 - regression in DataTable click processing
-- regression in form.setValues api
+- regression in form.setValues API

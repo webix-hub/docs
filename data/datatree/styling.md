@@ -1,6 +1,7 @@
 Styling DataTree
 =========================
-You can use CSS in conjunction with Tree nodes to archieve the desired look-and-feel.
+
+You can use CSS in conjunction with Tree nodes to achieve the desired look-and-feel.
 
 In this article you will know how: 
 
@@ -118,7 +119,7 @@ The look-and-feel of tree icons is set via **CSS classes** applied to **definite
 - **setting custom images** as icons to **desired tree nodes**. For these needs, icons are stored in the dataset and applied via
 	- custom CSS classes;
     - node templates.
-- [modifying tree type](datatree/node_templates.md#changingpredefinedtemplates) to add extra helpers that will render the needed node elements (including FontAwesome Icons).
+- [modifying tree type](datatree/node_templates.md#changingpredefinedtemplates) to add extra helpers that will render the needed node elements (including Font Awesome Icons).
 
 ###Redefining existing Webix CSS classes
 
@@ -174,7 +175,7 @@ The root item gets **webix_icon_home** CSS class. All you have to do is to set t
 
 {{sample 17_datatree/03_styles/03_icons.html}}
 
-If icon titles are stored under an **image** property in the dateset, they are applied within a [node template](datatree/node_templates.md): 
+If icon titles are stored under an **image** property in the dataset, they are applied within a [node template](datatree/node_templates.md): 
 
 ~~~js
 var data_with_icon = [
@@ -193,3 +194,5 @@ webix.ui({
 {{sample 17_datatree/03_styles/05_custom_icons.html}}
 
 You can study Webix **tree node templates** in detail [separately](datatree/node_templates.md).
+
+@spellcheck:treelines

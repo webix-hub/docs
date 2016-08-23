@@ -4,7 +4,7 @@ Accordion
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.accordion.html)
+- [Methods, properties and events](api/refs/ui.accordion.md)
 - [Samples](http://docs.webix.com/samples/01_layout/index.html)
 
 

@@ -18,11 +18,13 @@ Properties
 - api/link/ui.rangeslider_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.rangeslider_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/link/ui.rangeslider_id_config.md - the component ID
+- api/link/ui.rangeslider_inputalign_config.md - the alignment of an input towards its container
 - api/link/ui.rangeslider_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.rangeslider_inputpadding_config.md - padding of text in the input
 - api/link/ui.rangeslider_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/link/ui.rangeslider_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.rangeslider_label_config.md - the text label of the control
+- api/link/ui.rangeslider_labelalign_config.md - the alignment of a label towards its container
 - api/link/ui.rangeslider_labelposition_config.md - positions label in relation to the control
 - api/link/ui.rangeslider_labelwidth_config.md - the width of the label
 - api/link/ui.rangeslider_max_config.md - max value of slider
@@ -67,11 +69,13 @@ Properties
 - api/link/ui.rangeslider_hidden_config.md
 - api/link/ui.rangeslider_hotkey_config.md
 - api/link/ui.rangeslider_id_config.md
+- api/link/ui.rangeslider_inputalign_config.md
 - api/link/ui.rangeslider_inputheight_config.md
 - api/link/ui.rangeslider_inputpadding_config.md
 - api/link/ui.rangeslider_inputwidth_config.md
 - api/link/ui.rangeslider_invalidmessage_config.md
 - api/link/ui.rangeslider_label_config.md
+- api/link/ui.rangeslider_labelalign_config.md
 - api/link/ui.rangeslider_labelposition_config.md
 - api/link/ui.rangeslider_labelwidth_config.md
 - api/link/ui.rangeslider_max_config.md

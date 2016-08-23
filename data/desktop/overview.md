@@ -13,7 +13,7 @@ Main features
 <dt><a href="desktop/components.md">1. Rich UI </a></dt>
 <dd>The library supplies over 70 fully customizable components such as form, tree, grid, list etc. </dd>
 <br>
-<dt><a href="desktop/data_loading.md">2. Supported data formats: xml, json, jsarray, csv</a></dt>
+<dt><a href="desktop/data_loading.md">2. Supported data formats: XML, JSON, JsArray, CSV</a></dt>
 <dd>Developers can use their favorite formats to specify data. All popular data formats are supported.</dd>
 <br>
 <dt><a href="tutorials/start_coding.md">3. Intuitive JS OOP</a></dt>
@@ -31,7 +31,7 @@ Main features
 <dt><a href="desktop/localization.md">7. Support for internationalization and localization</a></dt>
 <dd>Support for internationalization allows applications be translated and modified into local versions for hundreds of languages.</dd>
 <br>
-<dt><a href="desktop/styling.md">8. Styling with standard css</a></dt>
+<dt><a href="desktop/styling.md">8. Styling with standard CSS</a></dt>
 <dd>You can use CSS in conjunction with components content to achieve the desired look-and-feel. CSS can be applied to the whole layout or to specific components, items etc.</dd>
 <br>
 <dt><a href="desktop/dimensions.md">9. Flexible layouts</a></dt>

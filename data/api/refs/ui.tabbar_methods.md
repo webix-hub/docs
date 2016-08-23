@@ -25,6 +25,7 @@ Methods
 - api/link/ui.tabbar_getvalue.md - returns the current value of the control
 - api/link/ui.tabbar_hasevent.md - checks whether the component has the specified event
 - api/link/ui.tabbar_hide.md - hides the view
+- api/link/ui.tabbar_hideoption.md - hides an option (segment) of the button
 - api/link/ui.tabbar_isenabled.md - checks whether the view is enabled
 - api/link/ui.tabbar_isvisible.md - checks whether the view is visible
 - api/link/ui.tabbar_mapevent.md - routes events from one object to another
@@ -36,7 +37,8 @@ Methods
 - api/link/ui.tabbar_setbottomtext.md - sets the input label at the bottom of it
 - api/link/ui.tabbar_setvalue.md - sets a new value for the component
 - api/link/ui.tabbar_show.md - makes the component visible
-- api/link/ui.tabbar_sync.md - allows you to sync two copy of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.tabbar_showoption.md - shows a hidden option (segment) of the button
+- api/link/ui.tabbar_sync.md - allows you to sync two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.tabbar_unbind.md - breaks "bind" link
 - api/link/ui.tabbar_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.tabbar_validate.md - validates value of input
@@ -66,6 +68,7 @@ Methods
 - api/link/ui.tabbar_getvalue.md
 - api/link/ui.tabbar_hasevent.md
 - api/link/ui.tabbar_hide.md
+- api/link/ui.tabbar_hideoption.md
 - api/link/ui.tabbar_isenabled.md
 - api/link/ui.tabbar_isvisible.md
 - api/link/ui.tabbar_mapevent.md
@@ -77,6 +80,7 @@ Methods
 - api/link/ui.tabbar_setbottomtext.md
 - api/link/ui.tabbar_setvalue.md
 - api/link/ui.tabbar_show.md
+- api/link/ui.tabbar_showoption.md
 - api/link/ui.tabbar_sync.md
 - api/link/ui.tabbar_unbind.md
 - api/link/ui.tabbar_unblockevent.md

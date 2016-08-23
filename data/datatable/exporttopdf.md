@@ -30,11 +30,30 @@ Customizing Export to PDF
 
 ###Customizing export data
 
-The toPDF() method returns all data specified in the **columns** parameter of the datatable view. However, you may 
-need to get data from other fields as well as restrict the number of fields in the export file. You can set the necessary fields
-in the **columns** property of the toPDF() method.
+The toPDF() method returns all data specified in the **columns** parameter of a datatable view. The data is exported into a PDF document with "data" name.
+
+However, you may need to get some particular data or customize file properties. 
 
 **Export API allows** 
+
+- providing a custom **filename**: 
+
+~~~js
+webix.toPDF($$("myDataTable"), {
+     filename: "datatable"
+});
+~~~
+
+{{sample 15_datatable/10_export/06_pdf.html }}
+
+
+- **stripping HTML tags** from the cells:
+
+~~~js
+webix.toExcel($$("myDataTable"), {
+     filterHTML:true
+});
+~~~
 
 - setting **columns** you'd like to see in the export file 
 
@@ -64,7 +83,7 @@ The column will be rendered with the stated additional properties, which may dif
 - **including extra fields** into export by forming them right within the export function:
 
 ~~~js
-webix.toPDF(datatable, { 
+webix.toPDF($$("myDataTable"), { 
 	columns:{ 
 		Custom1:{
 			template:function(obj){
@@ -86,7 +105,7 @@ The field is rendered with **width** and **template** as well as **header** that
 
 **Export API allows** 
 
-- setting a custom filename (it's *data* by default)
+- setting a custom file name (it's *data* by default)
 
 ~~~js
 webix.toPDF($$("myDataTable"), {
@@ -219,3 +238,5 @@ More possible configuration properties are described in the [corresponding docum
 (follow the "document/tableopts" section)
 
 {{sample 15_datatable/10_export/08_pdf_style.html}}
+
+@spellcheck: headeropts,imageimg,rkusa,pdfjs,tableopts

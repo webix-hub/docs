@@ -3,7 +3,7 @@ Popup
 
 ##API Reference
 
-- [Methods, properties and events](api__refs__ui.popup.html)
+- [Methods, properties and events](api/refs/ui.popup.md)
 - [Samples](http://docs.webix.com/samples/10_window/index.html)
 
 ##Overview

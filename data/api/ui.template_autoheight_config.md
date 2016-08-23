@@ -5,7 +5,7 @@ autoheight
 @short: lets the component autosize to its contents
 	
 
-@type: 
+@type: boolean
 @example:
 
 webix.ui({

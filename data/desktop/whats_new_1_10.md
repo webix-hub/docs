@@ -15,7 +15,7 @@ Version 1.10
 - each and eachChild iterators accepts "all" flag for TreeStore
 - "property" styles in "flat" and "touch" skins
 - textarea styles
-- unsync api for backbone integration
+- unsync API for backbone integration
 
 
 **Fixes**
@@ -33,7 +33,7 @@ Version 1.10
 - indeterminate checkbox styling and some other tree styles
 - cancel validation for hidden form fields
 - pager styling
-- pre-selecting combo and richselect options in case of custom template for list
+- preselecting combo and richselect options in case of custom template for list
 - options mapping
 - options mapping
 - carousel sizing (carousel was completely rebuilt: view-based, layout is inside)

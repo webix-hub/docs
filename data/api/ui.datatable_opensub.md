@@ -6,7 +6,7 @@ openSub
 
 @params:
 
-- id		string/number		the id of the item
+- id		id		the id of the item
 
 
 @example:
@@ -22,3 +22,4 @@ $$("mydatatable").openSub(id);
 @template:	api_method
 @descr:
 
+@edition:pro

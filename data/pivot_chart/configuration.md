@@ -79,7 +79,7 @@ There are **4 prebuilt operations** over data:
 - **sum**  -  default, shows the sum of values of this property;
 - **max**  - shows the max value of this property found in the dataset;
 - **min**  - shows the min value of this property found in the dataset;
-- **count** - shows the number of occurencies of this property in the dataset.
+- **count** - shows the number of occurrences of this property in the dataset.
 
 If needed, you can <span id="operation">add your own operation</span>: 
 

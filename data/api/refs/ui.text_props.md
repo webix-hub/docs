@@ -19,11 +19,13 @@ Properties
 - api/link/ui.text_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/ui.text_icon_config.md - sets an icon into the control
 - api/link/ui.text_id_config.md - the component ID
+- api/ui.text_inputalign_config.md - the alignment of an input towards its container
 - api/link/ui.text_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/ui.text_inputpadding_config.md - padding of text in the input
 - api/link/ui.text_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/ui.text_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.text_label_config.md - the text label of the control
+- api/ui.text_labelalign_config.md - the alignment of a label towards its container
 - api/link/ui.text_labelposition_config.md - positions label in relation to the control
 - api/ui.text_labelwidth_config.md - the width of the label
 - api/link/ui.text_maxheight_config.md - sets the maximum height for the view
@@ -32,6 +34,7 @@ Properties
 - api/link/ui.text_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.text_name_config.md - name of the control
 - api/link/ui.text_on_config.md - allows attaching custom handlers to inner events of the component
+- api/ui.text_pattern_config.md - a formatting pattern applied to a text input
 - api/link/ui.text_placeholder_config.md - placeholder text for the input area
 - api/link/ui.text_popup_config.md - allows to attach pop-up menu to the button
 - api/ui.text_readonly_config.md - configures readonly mode for the input
@@ -66,11 +69,13 @@ Properties
 - api/link/ui.text_hotkey_config.md
 - api/ui.text_icon_config.md
 - api/link/ui.text_id_config.md
+- api/ui.text_inputalign_config.md
 - api/link/ui.text_inputheight_config.md
 - api/ui.text_inputpadding_config.md
 - api/link/ui.text_inputwidth_config.md
 - api/ui.text_invalidmessage_config.md
 - api/link/ui.text_label_config.md
+- api/ui.text_labelalign_config.md
 - api/link/ui.text_labelposition_config.md
 - api/ui.text_labelwidth_config.md
 - api/link/ui.text_maxheight_config.md
@@ -79,6 +84,7 @@ Properties
 - api/link/ui.text_minwidth_config.md
 - api/link/ui.text_name_config.md
 - api/link/ui.text_on_config.md
+- api/ui.text_pattern_config.md
 - api/link/ui.text_placeholder_config.md
 - api/link/ui.text_popup_config.md
 - api/ui.text_readonly_config.md

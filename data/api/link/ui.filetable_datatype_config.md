@@ -1,0 +1,1 @@
+@link: api/atomdataloader_datatype_config.md

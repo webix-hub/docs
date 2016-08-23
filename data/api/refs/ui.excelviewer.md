@@ -52,6 +52,7 @@ dummy stub
 - api/link/ui.excelviewer_filterbyall.md - refilters DataTable by all specified filters
 - api/link/ui.excelviewer_find.md - returns rows that match the criterion
 - api/link/ui.excelviewer_focuseditor.md - moves focus to the active editor
+- api/link/ui.excelviewer_freezerow.md - fixes a row at the top of the datatable "on the fly"
 - api/link/ui.excelviewer_getchildviews.md - returns child views of the calling component
 - api/link/ui.excelviewer_getcolumnconfig.md - returns the configuration object of the specified column
 - api/link/ui.excelviewer_getcolumnindex.md - returns the index of the column with the specified id
@@ -174,7 +175,7 @@ dummy stub
 - api/link/ui.excelviewer_onbeforeareaadd_event.md - fires before a select area is added
 - api/link/ui.excelviewer_onbeforearearemove_event.md - fires before a select area is removed
 - api/link/ui.excelviewer_onbeforeblockselect_event.md - event occurs before block selection
-- api/link/ui.excelviewer_onbeforecolumndrag_event.md - fires the monent you start dragging the column from its source potition
+- api/link/ui.excelviewer_onbeforecolumndrag_event.md - fires the moment you start dragging the column from its source position
 - api/link/ui.excelviewer_onbeforecolumndrop_event.md - fires the moment you drop the column to its target position
 - api/link/ui.excelviewer_onbeforecolumndroporder_event.md - fires the moment you drop the column over the target area
 - api/link/ui.excelviewer_onbeforecolumnhide_event.md - fires before a column is hidden in datatable
@@ -198,10 +199,12 @@ dummy stub
 - api/link/ui.excelviewer_oncheck_event.md - fires when a checkbox is checked or unchecked in the datatable item
 - api/link/ui.excelviewer_oncollectvalues_event.md - fires after datatable has collected options
 - api/link/ui.excelviewer_oncolumnresize_event.md - fires when width of column was changed
+- api/ui.excelviewer_oncolumnresizeaction_event.md - 
 - api/link/ui.excelviewer_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.excelviewer_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.excelviewer_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.excelviewer_ondragout_event.md - fires when a dragged element is moved outside of the droppable area
+- api/link/ui.excelviewer_oneditorchange_event.md - fires when the native onchange event occurs for an HTML input (select, text)
 - api/link/ui.excelviewer_onfocus_event.md - fires when a view gets focus
 - api/link/ui.excelviewer_onheaderclick_event.md - occurs after clicking on header
 - api/link/ui.excelviewer_onitemclick_event.md - fires when a component item was clicked
@@ -321,6 +324,7 @@ dummy stub
 - api/link/ui.excelviewer_subview_config.md - adds a subview configuration into datatable
 - api/ui.excelviewer_toolbar_config.md - 
 - api/link/ui.excelviewer_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.excelviewer_topsplit_config.md - defines the number of rows that will be "frozen" at the top of datatable
 - api/link/ui.excelviewer_type_config.md - used for configuring presentation of items
 - api/link/ui.excelviewer_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.excelviewer_width_config.md - sets the width of the component
@@ -341,7 +345,7 @@ dummy stub
 - api/link/ui.excelviewer_$dragmark_other.md - method called during dnd when some item in the component need to be marked as active drop target
 - api/link/ui.excelviewer_$dragout_other.md - method called when item moved out of possible drop landing during dnd
 - api/link/ui.excelviewer_$drop_other.md - method called when item dragged and dropped on valid target
-- api/link/ui.excelviewer_$dropallow_other.md - can be redefine if you need custom drop rules
+- api/link/ui.excelviewer_$dropallow_other.md - can be redefined, if you need custom drop rules
 - api/link/ui.excelviewer_$getsize_other.md - returns the current size of the component
 - api/link/ui.excelviewer_$height_other.md - current height of the view
 - api/ui.excelviewer_$onload_other.md - 
@@ -355,8 +359,8 @@ dummy stub
 - api/link/ui.excelviewer_name_other.md - indicates the name of the component (a read-only property)
 - api/link/ui.excelviewer_on_click_other.md - redefines default click behavior for component items.
 - api/link/ui.excelviewer_on_context_other.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
-- api/link/ui.excelviewer_on_dblclick_other.md - attaches a dblclick behavior for component items with the specified CSS class.
-- api/link/ui.excelviewer_on_mouse_move_other.md - attaches a dblclick behavior for component items with the specified CSS class.
+- api/link/ui.excelviewer_on_dblclick_other.md - attaches a dblclick behavior for component items with the specified CSS class
+- api/link/ui.excelviewer_on_mouse_move_other.md - attaches a mouse move behavior for component items with the specified CSS class
 - api/link/ui.excelviewer_waitdata_other.md - eventual result of an asynchronous operation ('promise' object) for the loaded data
 }}
 

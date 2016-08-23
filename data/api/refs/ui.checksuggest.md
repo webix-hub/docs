@@ -158,3 +158,4 @@ Is used by a [multiselect](api/refs/ui.multiselect.md) control already.
 - api/refs/ui.checksuggest_events.md
 - api/refs/ui.checksuggest_others.md
 
+@edition:pro

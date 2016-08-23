@@ -5,7 +5,7 @@ In case you need to give some additional information for the content of a datata
 
 <img src="datatable/subrows.png">
 
-To add a subrow into Datatable, use the **subrow** property. 
+To add a subrow into Datatable, use the api/ui.datatable_subrow_config.md property. 
 As a parameter, it takes a template with the names of data properties that should be shown in the subrow:
 
 ~~~js
@@ -36,7 +36,7 @@ columns:[
 Setting autoheight for subrows
 -------------------------------
 
-If the text in a subrow is too long, you can set the **subRowHeight** property with the *auto* value.
+If the text in a subrow is too long, you can set the api/ui.datatable_subrowheight_config.md property with the *auto* value.
 It will force the subrow to adjust its height to the size of the text:
 
 <img src="datatable/subrows_autoheight.png">
@@ -51,9 +51,9 @@ webix.ui({
 	subRowHeight:"auto",
 	data:[
 		{ id:1, title:"The Shawshank Redemption", year:1994, votes:678790, 
-			details:"Long text Long text Long text Long text Long text Long text Long text 
-            			Long text Long text Long text Long text Long text Long text 
-                        	Long text Long text Long text Long text Long text "},
+			details:"Long text Long text Long text Long text Long text Long text 
+            Long text Long text Long text Long text Long text Long text Long text 
+            Long text Long text Long text Long text Long text "},
 		...
 	]
 });	
@@ -66,7 +66,7 @@ Changing the content of a subrow
 
 If you need to alter the text in the subrow dynamically, you should access the related data item and apply changes to it. 
 
-Take that you render *details* data property in a subrow:
+For example, you render the *details* data property in a subrow:
 
 ~~~js
 {
@@ -102,13 +102,13 @@ API reference
 
 There's a couple of functions you can use to manipulate the subrows in a datatable:
 
-- openSub() - opens a subrow by the item id:
+- api/ui.datatable_opensub.md - opens a subrow by the item id:
 
 ~~~js
 $$("myDatatable").openSub(id);
 ~~~
 
-- closeSub() - closes an opened subrow by the item id:
+- api/ui.datatable_closesub.md - closes an opened subrow by the item id:
 
 ~~~js
 $$("myDatatable").closeSub(id);

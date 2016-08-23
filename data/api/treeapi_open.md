@@ -5,7 +5,7 @@ open
 	
 
 @params:
-- id	string/number	the node id
+- id	id	the node id
 * show	boolean		if true, opens all parent of the branch
 
 

@@ -3,7 +3,7 @@ Grouplist
 
 ##API Reference
 
-- [Methods, parameters and events](api__refs__ui.grouplist.html)
+- [Methods, parameters and events](api/refs/ui.grouplist.md)
 - [Samples](http://docs.webix.com/samples/05_list/index.html)
 
 ##Overview
@@ -68,7 +68,7 @@ as well as **grouping pattern** yourself.
 {"id":3,"title":"The Godfather: Part II","year":"1974","rank":"3"}
 ~~~
 
-Grouplist templating differs from that of other data-containing components. There're three properties to observe hierarchy: 
+Grouplist templating differs from that of other data-containing components. There are three properties to observe hierarchy: 
 
 - **templateItem** - defined data that will be presented in the normal data record (that is at the end of hierarchical ladder);
 - **templateGroup** - defines data that will be presented in group header in the collapsed state;
@@ -117,7 +117,7 @@ if(state){
 };
 ~~~
 
-The methods returns IDs of all the opened parents items (according to hierarchy ladder) as well as IDs of items belonging to the curretly opened branch. 
+The methods returns IDs of all the opened parents items (according to hierarchy ladder) as well as IDs of items belonging to the currently opened branch. 
 
 Thus, the return object contains parent ID array and children array:
 
@@ -147,7 +147,7 @@ Hierarchical dataset state
 - desktop/data_components_export.md
 
 {{note
-Note that there's no built-in possibility to edit data with grouplist. You should create a prototype editlist object beforehand.
+Note that there's no built-in possibility to edit data with grouplist. You should create a prototype *editlist* object beforehand.
 }}
 
 

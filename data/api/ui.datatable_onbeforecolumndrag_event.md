@@ -7,11 +7,11 @@ onBeforeColumnDrag
 	
 @params:
 
-- from			object					the source object
-- event			Event object			the native event object
+- sourceId			string					the source column id
+- event				Event object			the native event object
     
 @example:
-$$("datatable1").attachEvent("onBeforeColumnDrag", function(from, event){
+$$("datatable1").attachEvent("onBeforeColumnDrag", function(sourceId, event){
 	// some code
 	return true;
 });

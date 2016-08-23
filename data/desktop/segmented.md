@@ -39,6 +39,23 @@ Segmented is an integral button with as many segments as you like. Can be used f
     - **labelWidth** (number) - width of the label container; 
 - **selected** (string) - defines the tab that will be visible initially.
 
+##Showing and Hiding Options
+
+Segmented Button provides the possibility to hide and show segments with the help of the corresponding methods: api/ui.segmented_showoption.md and 
+api/ui.segmented_hideoption.md.
+
+You need to pass the id of the view that should be hidden as a parameter.
+
+~~~js
+// hiding view
+$$("segmented").hideOption("viewId");
+
+// showing view
+$$("segmented").showOption("viewId");
+~~~
+
+
+
 ##Working with Segmented Button
 
 [Adding and Deleting Segments (Options) on the Go](desktop/tabs_options.md)

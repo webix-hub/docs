@@ -36,3 +36,5 @@ the parameters of the returned object are:
 
 @relatedapi:
 api/ui.rangechart_setframerange.md
+
+@edition:pro
