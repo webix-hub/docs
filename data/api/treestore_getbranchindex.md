@@ -36,9 +36,8 @@ For exact node specifying, pass both node ID and parent node ID into the functio
 
 ~~~js
 var sel = tree.getSelectedId(); 
-var parent = tree.getParentView(sel); 
-tree.add({ value:"New item"}, tree.data.getBranchIndex(parent, sel), parent);
-
+var parent = tree.getParentId(sel); 
+tree.add({ value:"New item"}, tree.data.getBranchIndex(sel, parent), parent);
 ~~~
 
 
