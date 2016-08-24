@@ -66,4 +66,4 @@ $$("scheduler").attachEvent("onBeforeEventShow",function(eventId){
 ~~~
 
 
-
+@spellcheck: Tos

@@ -35,3 +35,5 @@ scheduler.load("some.php","scheduler")
 ~~~
 
 {{sample 62_scheduler/03_data/03_dynamic_loading.html}}
+
+@spellcheck: DATEHERE, dyn

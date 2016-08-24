@@ -8,13 +8,13 @@ Kanban board is a view based on Layout and DataStore and it supports their metho
 
 ###<span id='getownerlist'>getOwnerList</span>
 
-Method returns Kanbanlist view that displays an item
+Method returns KanbanList view that displays an item
 
 ~~~js
 var list = $$("myBoard").getOwnerList("task1");
 ~~~
 
-params:
+parameters:
 
 - itemId - {string} the item's id
 
@@ -31,8 +31,8 @@ $$("myBoard").eachList(function(list,status){
 });
 ~~~
 
-params:
+parameters:
 
-- func - a function that will be called for each kanban list, takes two arguments:  
+- function - a function that will be called for each kanban list, takes two arguments:  
  - list - KanbanList object
  - status - the list's status

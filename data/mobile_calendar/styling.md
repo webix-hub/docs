@@ -179,7 +179,7 @@ The default coloring rules can also be changed in the following templates:
 - <a href="mobile_calendar/calendar_templates.md#event_marker">scheduler.templates.event_marker</a> - returns css text that will be applied to markers in the 'Week' and 'Month' views
 
 
-
+@spellcheck:webixtype
 
 
 

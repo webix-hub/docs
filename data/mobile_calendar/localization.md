@@ -31,7 +31,7 @@ In order to localize dates (week days and months) you should follow the instruct
 
 
 
-Localization params for scheduler
+Localization parameters for Scheduler
 -------------------------------------------
 
 The table below presents all localization parameters available for the mobile version of the scheduler.

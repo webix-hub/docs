@@ -206,7 +206,7 @@ How to forbid dragging items from/to a column?
 In case you need to forbid moving tasks from/to particular columns, you should make use of [Kanban Events](kanban/events.md).
 
 For example, you may ban dragging to columns that aren't situated next to the source column.
-Thus, tasks will be dragged only between two neighbouring columns.
+Thus, tasks will be dragged only between two neighboring columns.
 
 To implement this idea, the [onListBeforeDragIn](kanban/events.md#onlistbeforedragin) event can be used. 
 
@@ -217,7 +217,7 @@ The handler function will take 3 parameters:
 	- to - the target object,
 	- source - the ID of the dragged item(s),
 	- target - the ID of the drop target, null for drop on empty space,
-	- start - the ID from which DnD started
+	- start - the ID from which drag-n-drop started
 - e - {event object} a native event object
 - list - {object} the list object where the event has happened
 
@@ -264,7 +264,7 @@ webix.ready(function(){
 How to set the background color to the item?
 ----------------------------
 
-To apply a specific css class for an item you can set the **$css** property for it. This class will be added to className of item element:
+To apply a specific CSS class for an item you can set the **$css** property for it. This class will be added to className of item element:
 
 ~~~js
 webix.ui({
@@ -292,5 +292,5 @@ Here is an example of setting a new background color for an item with the 'criti
 }}
 
 
-
+@spellcheck: Tos
 
