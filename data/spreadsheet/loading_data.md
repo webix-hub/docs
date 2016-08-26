@@ -3,7 +3,7 @@ Loading and Saving Data in SpreadSheet
 
 ##Data Loading Format 
 
-SpreadSheet loads data in JSON format: an object that includes 4 parameters: 
+SpreadSheet expects the loaded data to be an object in JSON format that includes 4 parameters: 
 
 - data
 - sizes 
