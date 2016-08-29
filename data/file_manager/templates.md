@@ -112,7 +112,7 @@ templateIcon: function(obj,common){
 
 <h3 id="icons">Icons</h3>
 
-The "icons" collection allows specifying [FontAwesome](http://fortawesome.github.io/Font-Awesome/) icons for the **templateIcon**.
+The "icons" collection allows specifying [Font Awesome](http://fortawesome.github.io/Font-Awesome/) icons for the **templateIcon**.
 You can specify icons that correspond to the loaded file types. 
 If the collection does not contain an icon for the loaded type, FileManager will set the "default" icon type. 
 
