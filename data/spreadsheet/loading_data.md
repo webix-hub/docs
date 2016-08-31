@@ -285,3 +285,5 @@ SpreadSheet is a purely client-side widget, therefore you can implement any logi
 
 There are also packages for implementing [Node.js](https://github.com/webix-hub/spreadsheet-nodejs-demo) 
 and [.Net](https://github.com/webix-hub/spreadsheet-net-demo) data available on github.
+
+@spellcheck:nodejs

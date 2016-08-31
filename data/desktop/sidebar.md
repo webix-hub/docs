@@ -275,7 +275,7 @@ returns:
 
 ####getPopupList() 
 
-returns a List view of SideBar's Popup
+returns a List view of the Popup of SideBar
 
 ~~~js
 sidebar.getPopupList();
@@ -329,11 +329,11 @@ webix.ui({
 
 ####position
 
-sets the sidebar's position
+sets the position of SideBar
 
 Parameters:
 
-- value - {string} a new sidebar's position ("right" or "left")
+- value - {string} a new position of SideBar ("right" or "left")
 
 ~~~js
 webix.ui({

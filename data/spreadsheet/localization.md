@@ -98,3 +98,5 @@ webix.i18n.setLocale('ru-RU');
 {{sample
 65_spreadsheet/02_api/03_localization.html
 }}
+
+@spellcheck:api

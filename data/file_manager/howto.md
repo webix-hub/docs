@@ -192,3 +192,5 @@ webix.ready(function(){
 {{sample
 64_file_manager/03_customization/01_views_configuration.html
 }}
+
+@spellcheck: Tos

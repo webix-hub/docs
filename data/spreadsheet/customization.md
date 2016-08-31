@@ -22,7 +22,7 @@ The toolbar contains a panel with instruments for editing and formatting the con
 
 <img src="spreadsheet/instruments_panel.png">
 
-To refer to the toolbar object, firstly you need to specify the toolbar's id in the toolbar configuration.
+To refer to the toolbar object, firstly you need to specify the id of toolbar in the its configuration.
 
 ~~~js
 var bar = {
@@ -39,7 +39,7 @@ Then you can address to the toolbar via the corresponding id.
 spreadsheet.$$("bar");
 ~~~
 
-Customizing toolbar's buttons
+Customizing Buttons on Toolbar
 ---------------------------
 
 The settings for toolbar are specified in the api/ui.spreadsheet_buttons_config.md configuration object. It contains the names of button blocks as parameters.
@@ -56,7 +56,7 @@ buttons:{
 }
 ~~~
 
-The button blocks' names correspond to the properties defined in the localization files that specify the language of its lables.
+The button blocks' names correspond to the properties defined in the localization files that specify the language of its labels.
 
 ###Removing a block or a button
 

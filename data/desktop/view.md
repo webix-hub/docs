@@ -212,3 +212,5 @@ $$("b1").getInputNode();//-> <input type="button" style="height:27px; width:149p
 Dimensions here are library defaults for the button. 
 
 See the [corresponding chapter](api__refs__ui.view.html) of API Reference to learn about view's methods, parameters and events. 
+
+@spellcheck:api
