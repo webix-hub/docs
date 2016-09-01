@@ -7,7 +7,7 @@ How to create multiview with SpreadSheets?
 It's possible to create several SpreadSheets on a page with the help of the multiview property of toolbar and switch between them with the help of a segmented button.
 
 To implement such a configuration, you should initialize multiview with several spreadsheets first.
-Then create a toolbar with a segmented button on it and specify the spreadsheets' ids in the options of the segemented button:
+Then create a toolbar with a segmented button on it and specify the spreadsheets' ids in the options of the segmented button:
 
 ~~~js
 webix.ui({
@@ -51,3 +51,5 @@ webix.ui({
 {{sample 
 65_spreadsheet/03_customization/03_multisheet.html
 }}
+
+@spellcheck:Tos

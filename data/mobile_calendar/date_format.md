@@ -2,7 +2,7 @@ Date Formats
 =================
 
 
-You've got the possiblity to configure date formats of the scheduler without effort.
+You've got the possibility to configure date formats of the scheduler without effort.
 
 To set the desired option, just write it as it's stated in this documentation.<br> 
 Beware! Configuration options should go before the code line with scheduler initialization.

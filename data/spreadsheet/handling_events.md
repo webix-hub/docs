@@ -32,3 +32,5 @@ You can find the full list of the supported events in the [API Reference](api/re
 {{sample
 65_spreadsheet/02_api/05_events.html
 }}
+
+@spellcheck:api

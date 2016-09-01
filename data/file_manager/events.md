@@ -260,7 +260,7 @@ params:
  - to - the target object,
  - source - the ID of the dragged item(s),
  - target - the ID of the drop target, null for drop on empty space,
- - start - the ID from which DnD started
+ - start - the ID from which drag-n-drop started
 - ev - {event object} a native event object
 
 {{sample
@@ -285,7 +285,7 @@ params:
  - to - the target object,
  - source - the ID of the dragged item(s),
  - target - the ID of the drop target, null for drop on empty space,
- - start - the ID from which DnD started
+ - start - the ID from which drag-n-drop started
 - ev - {event object} a native event object
 
 returns:
@@ -314,7 +314,7 @@ params:
  - to - the target object,
  - source - the ID of the dragged item(s),
  - target - the ID of the drop target, null for drop on empty space,
- - start - the ID from which DnD started
+ - start - the ID from which drag-n-drop started
 - ev - {event object} a native event object
 
 returns:
@@ -343,7 +343,7 @@ params:
  - to - the target object,
  - source - the ID of the dragged item(s),
  - target - the ID of the drop target, null for drop on empty space,
- - start - the ID from which DnD started
+ - start - the ID from which drag-n-drop started
 - ev - {event object} a native event object
 
 returns:

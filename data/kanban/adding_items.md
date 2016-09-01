@@ -22,7 +22,7 @@ $$("myBoard").add({
 });
 ~~~
 
-An added item should contain the 'status' property in order to be added in one of canban lists. 
+An added item should contain the 'status' property in order to be added in one of kanban lists. 
 
 {{sample
 63_kanban/03_data_operations/01_add.html
@@ -50,7 +50,7 @@ else
    webix.message("No item is selected!");   
 ~~~
 
-All items can be removed from Kanban board via the api/link/ui.proto_clearall.md mehtod:
+All items can be removed from Kanban board via the api/link/ui.proto_clearall.md method:
 
 ~~~js
 $$("mylist").clearAll();

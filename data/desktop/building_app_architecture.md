@@ -23,7 +23,7 @@ at the same time.
 Similar functionality you can find with a [form](desktop/form.md) and [toolbar](desktop/toolbar.md) components that house **controls** (input fields, checkboxes, buttons, etc.)  organized under the same pattern as layout 
 (**rows** and **cols**). See [Controls Guide](desktop/controls.md) to learn the variety of controls offered by this lib.
 
-[Mutliview](desktop/multiview.md), [carousel](desktop/carousel.md), [accordion](desktop/accordion.md) and [scrollview](desktop/scrollview.md) allow presenting different views in one and the same area 
+[Multiview](desktop/multiview.md), [carousel](desktop/carousel.md), [accordion](desktop/accordion.md) and [scrollview](desktop/scrollview.md) allow presenting different views in one and the same area 
 when you are short of space. They differ in the ways of switching between these views:
 
 - for **multiview cells** you need a dedicated button to switch between them;
@@ -158,7 +158,7 @@ webix.ui({
 });
 ~~~
 
-Note that for mutliview you should provide the logic for switching between views. It can be a [tabbar](desktop/tabbar.md) 
+Note that for multiview you should provide the logic for switching between views. It can be a [tabbar](desktop/tabbar.md) 
 or a [segmented](desktop/segmented.md) button. 
 
 If you just define **cells** you'll automatically get **multiview**, if you add **tabs** to **cells** within one and the same constructor - it will turn into **tabview**. 
@@ -184,7 +184,7 @@ More about [Multiview](desktop/multiview.md) and [Tabview](desktop/tabview.md).
 ##Isolating IDs inside Layouts
 
 {{note
-Basic  rules of ID assignement can are described [here](desktop/view.md#viewid).
+Basic  rules of ID assignment can are described [here](desktop/view.md#viewid).
 }}
 
 The features is true to all the layout types described above. It allows for **using the same IDs** for components lying in different layout sections while preserving the ability to **access the needed component** without ambiguity. 
@@ -206,7 +206,7 @@ webix.ui({
 
 The [list](desktop/list.md) view is used twice in the "app" but in different layout columns with **isolate** functionality switched on. 
 
-To address such lists separately, use yhe ID of its parent layout section:
+To address such lists separately, use the ID of its parent layout section:
 
 ~~~js
 var list1 = $$("col1").$$("mylist");
@@ -221,7 +221,7 @@ var list2 = $$("mylist");
 - To learn how to set various **border types** or create a borderless design, consult the [dedicated article](desktop/borders.md).
 - To learn how to **set headers** for components in layout rows, cols, multiview cells, etc, study the [corresponding article](desktop/setting_headers.md).
 - Layouts can be **sized** according to common rules described in the [Sizing Components](desktop/dimensions.md) article. 
-- Layouts can respond to changes of window size. Learn [how to tune responsive behaviour](desktop/responsive_layout.md).
+- Layouts can respond to changes of window size. Learn [how to tune responsive behavior](desktop/responsive_layout.md).
 
 @index:
   - desktop/view.md

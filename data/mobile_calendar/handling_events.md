@@ -27,8 +27,8 @@ webix.detachEvent(id); // unique id of the event handler
 Add, Delete and Update Event Handling
 -------------------------------------
 
-To handle CRUD operations you can set onAfterAdd, onAfterDelete and onStoreUpdated event handlers
-for Scheduler's datastore. You can get datastore by Scheduler's "data" property. 
+To handle CRUD operations you can set the onAfterAdd, onAfterDelete and onStoreUpdated event handlers
+for Scheduler datastore. You can get datastore by the "data" property of Scheduler. 
 
 ###onAfterAdd 
 
@@ -89,3 +89,5 @@ $$("scheduler").attachEvent("onBeforeEventShow",function(eventId){
    return true;
 });
 ~~~
+
+@spellcheck: evName, evHandler, itemId

@@ -80,7 +80,7 @@ params:
 - itemId - {string} the id of the clicked item
 - ev - {event object} a native event object
 - node - {element} the target HTML element
-- list - {object} the list object where doulble-click has happened
+- list - {object} the list object where double-click has happened
 
 {{sample
 63_kanban/02_events/05_dbl_click.html
@@ -251,7 +251,7 @@ params:
  - to - the target object,
  - source - the ID of the dragged item(s),
  - target - the ID of the drop target, null for drop on empty space,
- - start - the ID from which DnD started
+ - start - the ID from which drag-n-drop started
 - ev - {event object} a native event object
 - list - {object} the list object where the event has happened
 
@@ -284,7 +284,7 @@ params:
  - to - the target object,
  - source - the ID of the dragged item(s),
  - target - the ID of the drop target, null for drop on empty space,
- - start - the ID from which DnD started
+ - start - the ID from which drag-n-drop started
 - ev - {event object} a native event object
 - list - {object} the list object where the event has happened
 
@@ -318,7 +318,7 @@ params:
  - to - the target object,
  - source - the ID of the dragged item(s),
  - target - the ID of the drop target, null for drop on empty space,
- - start - the ID from which DnD started
+ - start - the ID from which drag-n-drop started
 - ev - {event object} a native event object
 - list - {object} the list object where the event has happened
 
@@ -345,7 +345,7 @@ params:
  - to - the target object,
  - source - the ID of the dragged item(s),
  - target - the ID of the drop target, null for drop on empty space,
- - start - the ID from which DnD started
+ - start - the ID from which drag-n-drop started
 - ev - {event object} a native event object
 - list - {object} the list object where the event has happened
 

@@ -56,8 +56,10 @@ You can set the following properties in the type:
 - <a href="#template_icons">'templateIcons'</a> - template for icons representation (is applied in the 'templateFooter')
 - <a href="#template_tags">'templateTags'</a> - template for tags representation (is applied in the 'templateFooter')
 - 'tagDelimiter' - string that defines tags delimiter in datasource (',' by default)
-- <a href="#template_avatar">'templateAvatar'</a> - template for an item's avatar (an assignee's photo or other data)
-- <a href="#template_noavatar">'templateNoAvatar'</a> - this template is applied if the 'templateAvatar' doesn't set html content for the element that shows an assignee's information.
+- <a href="#template_avatar">'templateAvatar'</a> - template for an item's avatar ( the photo of an assignee or other data)
+- <a href="#template_noavatar">'templateNoAvatar'</a> - this template is applied if the 'templateAvatar' doesn't set HTML content for 
+the element that shows information about the assignee.
+
 
 A template can be specified either in the format of string or in the format of function. Below you'll find the description of all available templates. 
 
@@ -176,7 +178,7 @@ You need to specify icons array in the type for Kanban Lists. In the definition 
 - id - icon id,
 - icon - name of a font icon in [Font Awesome](http://fortawesome.github.io/Font-Awesome/) collection, 
 - tooltip - title for an icon element,
-- show - function that takes an item object as a param and returns true/false value -to show/hide an icon for a certain item
+- show - function that takes an item object as a parameter and returns true/false value -to show/hide an icon for a certain item
 - template - text that will be displayed next to the icon
 - click - onClick event handler for the icon
 
@@ -292,7 +294,7 @@ webix.type(webix.ui.kanbanlist,{
 
 <h3 id="template_noavatar"><b>templateNoAvatar</b></h3>
 
-Applied if the 'templateAvatar' doesn't set html content for the element that shows an assignee's information
+Applied if the 'templateAvatar' doesn't set html content for the element that shows information of an assignee
 
 ~~~js
 {

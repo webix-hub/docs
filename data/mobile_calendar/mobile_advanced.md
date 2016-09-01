@@ -1,7 +1,6 @@
 Changing Structure of Scheduler
 =========================================
 
-
 The mobile scheduler has a multiview-based architecture. 
 For details see the related article of documentation - desktop/building_app_architecture.md.
 
@@ -231,6 +230,7 @@ scheduler.config.views.push({
 });
 ~~~
 
-
-
 @complexity:3
+
+@spellcheck: calendarDayEvents, weekEventsList, weekBar, dayList, dayBar, bottomBar, tabViews, editForm, editBar, eventTemplate, eventBar, toolbars, componentId,
+schedulerId

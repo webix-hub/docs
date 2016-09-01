@@ -180,3 +180,5 @@ scheduler.config.form = [
     }
 ];
 ~~~
+
+@spellcheck: hh, ss, yyyy

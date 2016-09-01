@@ -111,7 +111,7 @@ Empty cells, logical values, and text in the array or reference are ignored.
 Treats array entries that are not numeric as if they were zeros.
 - **SUMSQ** - returns the sum of the squares of the arguments;
  - empty cells, logical values, text, or error values in the array or reference are ignored.
-- **VARP** - сalculates variance based on the entire population;
+- **VARP** - calculates variance based on the entire population;
  - empty cells, logical values, text, or error values in the array or reference are ignored.
 - **STDEVP** - calculates standard deviation based on the entire population given as arguments. 
 The standard deviation is a measure of how widely values are dispersed from the average value (the mean).
@@ -142,7 +142,7 @@ Formula Editor
 Spreadsheet possesses an advanced formula editor. Its main features are:
 
 - providing the list of possible formulas on entering the first letter of the formula name in the input; 
-- entering formula operands either by selecting a range of cells or by clicking the related cells.
+- entering formula operands either by selecting a range of cells or by typing the cell reference.
 
 
 <img src="spreadsheet/formula_editor.png">
@@ -158,3 +158,5 @@ webix.ui({
 ~~~
 
 {{sample 65_spreadsheet/01_basic/07_formula.html}}
+
+@spellcheck:counts
