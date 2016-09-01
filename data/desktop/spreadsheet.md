@@ -27,13 +27,6 @@ of various languages.
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/spreadsheet_front.png">
 
-<div class="h2">External resources</div>
-
-
-- You can [download Webix SpreadSheet](http://webix.com/spreadsheet/download.html) from [http://webix.com/spreadsheet/](http://webix.com/spreadsheet/)
-- There are online samples at [docs.webix.com/samples](http://docs.webix.com/samples/65_spreadsheet/index.html)
-
-
 <div class="h2">Guides</div>
 
 <table  style='border-left:none !important;' cellspacing="0" cellpadding="5" border="0">
