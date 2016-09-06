@@ -63,7 +63,8 @@ and two RangeChart-specific properties:
 
 In the range object you should specify either ids or indexes of the starting and the ending data items of the range. 
 
-What is more, you can set the id of the starting item and the index of the ending one and vice versa. The important thing is that there are always should be one starting value 
+What is more, you can set the id of the starting item and the index of the ending one and vice versa. 
+The important thing is that there should always be one starting value 
 and one ending value of the range. Thus, you can set the range as:
 
 ~~~js

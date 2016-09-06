@@ -8,12 +8,13 @@ Scales are included into the following chart types:
 - [Line and spline](desktop/chart_types.md#line) charts
 - [Bar](desktop/chart_types.md#bar) charts (optionally)
 - [Area](desktop/chart_types.md#area) charts
-- [Scatter](desktop/chart_types.md#scatter) chart
+- [Scatter](desktop/chart_types.md#scatter) charts
 
 At the same time, [radar](desktop/chart_types.md#radar) chart has a specific chart type. 
 
-Scales consist of **Y** and **X** axes that are chart properties which values are objects containing several properties. Note that scales won't appear during chart initialization by default if you don't include these 
-properties into the chart constructor:
+Scales consist of **Y** and **X** axes that are chart properties the values of which are 
+objects containing several properties. Note that scales won't appear during chart 
+initialization by default, if you don't include these properties into the chart constructor:
 
 ~~~js
 webix.ui({
@@ -26,12 +27,13 @@ webix.ui({
 })
 ~~~
 
-- A vertical, **[yAxis](api/ui.chart_yaxis_config.md)** of a chart is formed according to the values of data, which progress you want to show graphically. Naturally, the values are numeric. This data is specified by chart's **value** property. 
+- A vertical, **[yAxis](api/ui.chart_yaxis_config.md)** of a chart is formed according to the values of data, 
+the progress of which you want to show graphically. Naturally, the values are numeric. This data is specified by the chart's **value** property. 
 - A horizontal, **[xAxis](api/ui.chart_xaxis_config.md)** displays progress of the data according to the specified criterion. 
 
 If needed, any axis can be omitted. 
 
-Take the dataset looks as follows and we want to present sales progress during several years. Each data item contains sales amount and the year. 
+Let's suppose that we have a dataset presented below and we want to present sales progress during several years. Each data item contains sales amount and the year. 
 
 {{snippet
 JSON data}}
@@ -53,15 +55,15 @@ JSON data}}
 
 If you set an empty yAxis property object **(yAxis:{})**, the dataset will be analyzed and the scale will be formed automatically. Here:
 
-- the optimal step for units will be 10 as all the values are lower than a hundred;
-- the lowest unit value for the scale will be 20 as the lowest value in the dataset is 20 and the program takes the closest ten's place.
-- the highest unit value for the scale will be 80 since it's the highest data value. 
+- the optimal step for units will be 10 as all the values are less than a hundred;
+- the least unit value for the scale will be 20 as the least value in the dataset is 20 and the program will take the value nearest to 10;
+- the largest unit value for the scale will be 80 since it's the greatest data value. 
 
 ###X-Axis Formation
 
 Minimal compulsory API for the x-Axis includes
 
-- **template** -  data item from the dataset. Here is it **#year#**. Each value turns into a labeled unit on the line. 
+- **template** -  data item from the dataset. Here it is **#year#**. Each value turns into a labeled unit on the line. 
 
 ##Custom Scale
 
@@ -76,7 +78,7 @@ Y-axis object is constructed with the following properties:
 - **step** (number) - 'distance' to the next unit (not necessarily labeled with text);
 - **template**  - template for text label of the axis. Template function can define which numeric values to display. If not specified, text values are displayed depending on the 'step' parameter. 
 
-If you don't want to label each unit, you can set a function template to label only units multiple of the specified number (here it's 20): 
+If you don't want to label each unit, you can set a function template to label only units multiplied by the specified number (here it's 20): 
 
 ~~~js
 template:function(obj){return (obj%20?"":obj)
@@ -86,12 +88,12 @@ template:function(obj){return (obj%20?"":obj)
 
 - **template**(template) - template for text labels on the X axis;
 - **lines** (boolean) - if *false*, the line for the axis isn't shown. By default this value is *true*. 
-- **origin** (number) - it's the property of the chart constructor, not the xAxis object. However, its value affects the position of x-Axis relative to the Y-axis. Data items with values lower that the stated one,
-are displayed below the line. 
+- **origin** (number) - it's the property of the chart constructor, not the xAxis object. However, its value affects the position of x-Axis relative to the Y-axis. Data items with values lower than the stated one are displayed below the line. 
 
 There exists a [possibility to create a fully custom axis](desktop/custom_x_axis.md) for working with dates. 
 
 ####Offset 
+
 For [line](desktop/line_charts.md), [scatter](desktop/scatter_chart.md) and [area](desktop/area_charts.md) charts you can set the api/ui.chart_offset_config.md property which defines whether the first item of the scale 
 will be drawn with the offset equal to the half of the scale's step (relative to the origin of the chart).
 
@@ -119,7 +121,7 @@ webix.ui({
 Webix charts are equipped with two types of **scale**:
 
 - **"linear"** - used in all charts by default;
-- **"logarithmic"** - enabled by chart **scale** property:
+- **"logarithmic"** - enabled by the chart's **scale** property:
 
 ~~~js
 webix.ui({

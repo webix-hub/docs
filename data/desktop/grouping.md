@@ -25,7 +25,7 @@ Data can be groupped if you need to present data united by some criterion.
 - [chart](desktop/chart.md);
 - [datatable](datatable/index.md). 
 
-With these componnents you can see only the result of grouping. 
+With these components you can see only the result of grouping. 
 
 {{note
 In case of inline dataset:
@@ -193,7 +193,7 @@ By default, component items display object **value** which is:
 - value from the dataset defined by [template](desktop/html_templates.md);
 - value of an array element (if data comes in JSArray);
 
-For items that display a **group headers** (parent branches), value is the one defined by **by** criterion:
+For items that display **group headers** (parent branches), the value is the one defined by the **by** criterion:
 
 <img src="desktop/tree_grouping.png" />
 
@@ -206,7 +206,10 @@ webix.ui({
         }
 	},
     data: [  //default value
-    { id:1, value:"The Shawshank Redemption", year:1994, votes:678790, rating:9.2, rank:1}, {...}]
+    	{ id:1, value:"The Shawshank Redemption", year:1994, 
+        	votes:678790, rating:9.2, rank:1}, 
+    	{...}
+    ]
 });
 ~~~
 
@@ -234,7 +237,7 @@ Initially, template allows showing only titles. Map tells that group **title** i
 {{note
 Each component has its own peculiarities concerning templates in a grouped mode. Study them below. 
 
-In addition, you can chanage data to display by defining a function for the **["onGroupCreated"](#groupingevent)** event.
+In addition, you can change data to display by defining a function for the **["onGroupCreated"](#groupingevent)** event.
 }}
 
 ###Datatable and Treetable Specificity
@@ -349,7 +352,10 @@ grida.group({
     map:{...},
 	footer:{
 		votes:["votes", "sum"],
-		row:function(obj ){ return "<span style='float:right;'>Total: "+webix.i18n.numberFormat(obj.votes)+"</span>"; }
+		row:function(obj){ 
+        	return "<span style='float:right;'>Total: "
+        	+webix.i18n.numberFormat(obj.votes)+"</span>"
+       	}
 	}
 }); 
 ~~~

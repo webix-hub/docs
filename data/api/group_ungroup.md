@@ -7,16 +7,14 @@ ungroup
 	ungroups data
 
 @params:
-- mode		boolean		defines whether the component should be re-rendered after ungrouping ( by default, <i>true</i>)
-
-
+- mode		boolean		defines whether the component should be re-rendered after ungrouping (<i>true</i> by default)
 
 
 @example:
 myview.group({
-    by:"#company#", // 'company' is the name of data property
+    by:"company", // 'company' is the name of data property
     map:{
-        sales:["#sales#","sum"]
+        sales:["sales","sum"]
     }   
 });
 ...
