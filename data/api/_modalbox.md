@@ -12,12 +12,12 @@ modalbox
 - box    HTMLElement  the modal box  
 
 @example:
-	webix.modalbox({
-		title:"Custom title",
-		buttons:["Yes", "No", "Maybe"],
-		width:"500px",
-		text:"Any html content here"
-	});
+webix.modalbox({
+	title:"Custom title",
+	buttons:["Yes", "No", "Maybe"],
+	width:"500px",
+	text:"Any html content here"
+});
 
 
 
@@ -54,16 +54,27 @@ webix.modalbox({
 	title:"Custom title",
 	buttons:["Yes", "No", "Maybe"],
 	callback: function(result){
-        switch(result){
-        case 0: 
-            //statement
-            break;
-        case 1:
-            //statement
-            break;
-        ...
-        }	
+    	switch(result){
+        	case "0": 
+            	//statement
+            	break;
+        	case "1":
+            	//statement
+            	break;
+        	...
+    	}	
+   	}
 });
 ~~~
 
+###Hiding a modal box
+
+Modal box closes when you click any button on it. In case, you have a modalbox without buttons, you can use the direct API call:
+
+~~~js
+// showing a modal box
+var box = webix.modalbox({...});
+// hiding a modal box
+webix.modalbox.hide(box);
+~~~
 

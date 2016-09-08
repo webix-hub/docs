@@ -7,7 +7,7 @@ protoUI
 @params:
 - target		object		the object to extend. It receives the new properties
 - view			object		the view object that a new view is inherited from
-- ...mixins		array		one or many mixin objects
+- mixins		object		one or many mixin objects
 
 @returns:
 - result	object		the new view (target object) with the new properties
