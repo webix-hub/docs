@@ -182,7 +182,7 @@ var organogram = new webix.ui({
 - api/ui.organogram_autowidth_config.md - adjusts Organogram to the parent container size horizontally
 - api/link/ui.organogram_borderless_config.md - used to hide the component borders
 - api/link/ui.organogram_click_config.md - sets an action happening on a button click
-- api/link/ui.organogram_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.organogram_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.organogram_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.organogram_data_config.md - JavaScript array containing data for the component
 - api/link/ui.organogram_datafeed_config.md - the URL that the component will use to reload data during binding
@@ -214,7 +214,7 @@ var organogram = new webix.ui({
 - api/link/ui.organogram_select_config.md - enables/disables item selection or multiselection in grouplist
 - api/link/ui.organogram_template_config.md - the component template
 - api/link/ui.organogram_threestate_config.md - enable three-state checkboxes
-- api/link/ui.organogram_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.organogram_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.organogram_type_config.md - object that specifies items presentation
 - api/link/ui.organogram_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.organogram_width_config.md - sets the width of the component
@@ -252,4 +252,3 @@ var organogram = new webix.ui({
 - api/refs/ui.organogram_events.md
 - api/refs/ui.organogram_others.md
 
-@edition:pro

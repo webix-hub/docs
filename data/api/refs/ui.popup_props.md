@@ -7,7 +7,7 @@ Properties
 - api/link/ui.popup_autofocus_config.md - sets focus on the window the moment it appears on the page
 - api/link/ui.popup_body_config.md - the content of window body: template or view
 - api/link/ui.popup_borderless_config.md - used to hide the component borders
-- api/link/ui.popup_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.popup_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.popup_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.popup_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.popup_gravity_config.md - sets the view gravity (1 by default)

@@ -95,7 +95,7 @@ dummy stub
 - api/link/ui.datalayout_animate_config.md - defines or disables view change animation.
 - api/link/ui.datalayout_borderless_config.md - used to hide the component borders
 - api/link/ui.datalayout_cols_config.md - array of views objects arranged horizontally
-- api/link/ui.datalayout_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.datalayout_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.datalayout_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.datalayout_data_config.md - JavaScript array containing data for the component
 - api/link/ui.datalayout_datafeed_config.md - the URL that the component will use to reload data during binding
@@ -106,7 +106,7 @@ dummy stub
 - api/link/ui.datalayout_height_config.md - sets the height of the component
 - api/link/ui.datalayout_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.datalayout_id_config.md - the component ID
-- api/link/ui.datalayout_isolate_config.md - masks IDs of all inner element
+- api/link/ui.datalayout_isolate_config.md - masks IDs of all inner elements
 - api/link/ui.datalayout_margin_config.md - defines the space around elements (applies the specified value to all elements)
 - api/link/ui.datalayout_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.datalayout_maxwidth_config.md - sets the maximum width for the view

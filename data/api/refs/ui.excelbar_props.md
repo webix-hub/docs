@@ -6,7 +6,7 @@ Properties
 - api/link/ui.excelbar_borderless_config.md - used to hide the component borders
 - api/link/ui.excelbar_cols_config.md - array of views objects arranged horizontally
 - api/link/ui.excelbar_complexdata_config.md - enables complex data parsing mode
-- api/link/ui.excelbar_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.excelbar_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.excelbar_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.excelbar_data_config.md - JavaScript array containing data for the component
 - api/link/ui.excelbar_datafeed_config.md - the URL that the component will use to reload data during binding
@@ -18,7 +18,7 @@ Properties
 - api/link/ui.excelbar_height_config.md - sets the height of the component
 - api/link/ui.excelbar_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.excelbar_id_config.md - the component ID
-- api/link/ui.excelbar_isolate_config.md - masks IDs of all inner element
+- api/link/ui.excelbar_isolate_config.md - masks IDs of all inner elements
 - api/link/ui.excelbar_margin_config.md - defines the space around elements (applies the specified value to all elements)
 - api/link/ui.excelbar_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.excelbar_maxwidth_config.md - sets the maximum width for the view

@@ -74,7 +74,6 @@ webix.ui({
 - api/link/ui.resizer_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.resizer_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.resizer_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
-- api/link/ui.resizer_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.resizer_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.resizer_onmouseout_event.md - fires when the mouse was moved out from the specified item
 - api/link/ui.resizer_onswipex_event.md - occurs on a horizontal swipe movement
@@ -92,7 +91,7 @@ webix.ui({
 {{api
 - api/link/ui.resizer_animate_config.md - defines or disables view change animation.
 - api/link/ui.resizer_borderless_config.md - used to hide the component borders
-- api/link/ui.resizer_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.resizer_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.resizer_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.resizer_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.resizer_gravity_config.md - sets the view gravity (1 by default)

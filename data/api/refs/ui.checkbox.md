@@ -104,7 +104,7 @@ var checkbox = webix.ui({
 - api/link/ui.checkbox_bottompadding_config.md - sets the bottom offset of the control input
 - api/ui.checkbox_checkvalue_config.md - result of getValue for checked checkbox
 - api/link/ui.checkbox_click_config.md - click action handler
-- api/link/ui.checkbox_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.checkbox_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.checkbox_css_config.md - the name of a css class that will be applied to the view container
 - api/ui.checkbox_customcheckbox_config.md - enables/disables custom checkbox in some skins
 - api/link/ui.checkbox_disabled_config.md - indicates whether an item is enabled or not

@@ -150,7 +150,7 @@ var chart = webix.ui({
 - api/link/ui.chart_borderless_config.md - used to hide the component borders
 - api/ui.chart_cant_config.md - defines the slope angle of 3D pie
 - api/ui.chart_color_config.md - defines items colors
-- api/link/ui.chart_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.chart_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.chart_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.chart_data_config.md - JavaScript array containing data for the component
 - api/link/ui.chart_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
@@ -195,7 +195,7 @@ var chart = webix.ui({
 - api/link/ui.chart_scheme_config.md - defines schemes for data processing
 - api/ui.chart_series_config.md - defines graphs presented on the chart
 - api/ui.chart_shadow_config.md - enables/disables the pie shadow
-- api/link/ui.chart_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.chart_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/ui.chart_type_config.md - sets the chart type
 - api/link/ui.chart_url_config.md - the URL which the component will use to load data after its initialization
 - api/ui.chart_value_config.md - defines values for the vertical axis

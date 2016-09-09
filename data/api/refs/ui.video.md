@@ -82,7 +82,7 @@ var video = webix.ui({
 {{api
 - api/link/ui.video_animate_config.md - defines or disables view change animation.
 - api/link/ui.video_borderless_config.md - used to hide the component borders
-- api/link/ui.video_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.video_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/ui.video_controls_config.md - enables video controls
 - api/link/ui.video_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.video_disabled_config.md - indicates whether an item is enabled or not

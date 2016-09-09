@@ -114,7 +114,7 @@ var multicombo = webix.ui({
 - api/link/ui.multicombo_bottompadding_config.md - sets the bottom offset of the control input
 - api/ui.multicombo_button_config.md - defines whether the "Select" button will be displayed in the options list
 - api/link/ui.multicombo_click_config.md - click action handler
-- api/link/ui.multicombo_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.multicombo_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.multicombo_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.multicombo_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.multicombo_gravity_config.md - sets the view gravity (1 by default)
@@ -195,4 +195,3 @@ var multicombo = webix.ui({
 - api/refs/ui.multicombo_events.md
 - api/refs/ui.multicombo_others.md
 
-@edition:pro

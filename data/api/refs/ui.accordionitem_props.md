@@ -6,7 +6,7 @@ Properties
 - api/ui.accordionitem_body_config.md - defines the cell content (a view or some HTML)
 - api/link/ui.accordionitem_borderless_config.md - used to hide the component borders
 - api/ui.accordionitem_collapsed_config.md - displays the cell collapsed initially
-- api/link/ui.accordionitem_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.accordionitem_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.accordionitem_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.accordionitem_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.accordionitem_gravity_config.md - sets the view gravity (1 by default)

@@ -2,10 +2,10 @@ ui.tooltip
 =============
 
 
-{{memo A static text that is rendered in the absolutely positioned container. }}
+{{memo A static text that is rendered in the absolutely positioned container.. }}
 
 Generally, the component isn't intended for direct initialization. But if you decide to use it, use mouse events (onMouseOut, onMouseIn, onMouseMove etc.) to show/hide the tooltip box in the specified position.
-Check [Tooltip](desktop/tooltip_component.md) documentation for more detailed description.
+Check [Tooltip](desktop/tooltip.md) documentation for more detailed description.
 
 ### Constructor
 
@@ -21,6 +21,7 @@ webix.ui({
 
 - [Overview of Tooltip](desktop/tooltip.md)
 - [Samples](http://docs.webix.com/samples/06_dataview/02_templates/06_tooltip.html)
+
 
 
 <div class='webixdoc_parents'><span>Based on: </span>
@@ -85,7 +86,7 @@ webix.ui({
 {{api
 - api/link/ui.tooltip_animate_config.md - defines or disables view change animation.
 - api/link/ui.tooltip_borderless_config.md - used to hide the component borders
-- api/link/ui.tooltip_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.tooltip_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.tooltip_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.tooltip_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.tooltip_dx_config.md - the left offset of the tooltip from the mouse pointer
