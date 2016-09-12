@@ -15,19 +15,19 @@ data=[{sales:"20", month:"Jan", color: "#ee3639"}]
 - **label** ('#month#') - data item used for making text label for 'pie' pieces;
 - **labelOffset** (number) - the offset of sector labels from the pie frame (20px by default);
 - **pieInnerText** ('#sales#') - text (numeric) values displayed on each 'pie' piece;
-- **color** ('#color#') - color for each piece. Can be either in the dataset, or if not mentioned, default colors will be displayed.
-
+- **color** ('#color#') - the color of each piece. Can be set in the dataset. If not mentioned, default colors will be displayed.
 
 ###Styling and Positioning
 
-These settings can be easily omitted yet add style to your chart.
+These settings just add style to your chart and can be easily omitted:
 
-- **radius** (number) - radius of the chart 'pie';
-- **x** (number) - horizontal offset of pie center from left side of the parent container;
-- **y** (number) - vertical offset of pie center from the top border of the parent container
+- **radius** (number) - the radius of the "pie" chart;
+- **innerRadius** - (number) - the radius of the inner circle of the "pie" chart;
+- **x** (number) - horizontal offset of pie center from the left side of the parent container;
+- **y** (number) - vertical offset of pie center from the top border of the parent container;
 - **gradient** (boolean) - gradual color shifting;
 - **shadow** (boolean) - decorative shadow for the component;
-- **cant** (number) - defines the slope angle of 3D pie(from 0 to 1, 0.5 by default);
+- **cant** (number) - defines the slope angle of a 3D pie (from 0 to 1, 0.5 by default).
 
 [Back to all chart types](desktop/chart_types.md)
 
