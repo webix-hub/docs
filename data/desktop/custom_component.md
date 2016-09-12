@@ -22,8 +22,8 @@ webix.protoUI({
    custom_func:function(){..function description..}, //any custom function
    $getSize: function(x, y){..}, 
    $setSize:function(x, y){..},
-}, webix.Movable, // extended functionality 
-webix.ui.list); //the name of the base component 
+}, webix.ui.list, // the name of the base component
+webix.Movable); // extended functionality
 ~~~
 
 As a result, we get a **custom component** that 
@@ -31,7 +31,7 @@ As a result, we get a **custom component** that
 - inherits from [ui.list](desktop/list.md);
 - on its initialization loads data from the 'data.xml' file
 - can be moved over the screen (thanks to the [webix.Movable module](api__refs__movable.html)); 
-- has a default width of 200px;
+- has the default width of 200px;
 - has a *custom_func* function;
 - is sized with the help of $getSize and $setSize methods (will be described later).
 
@@ -45,7 +45,7 @@ webix.ui({
 })
 ~~~
 
-The must-have elements for such constructor are new component's name and the component it inherits from. Additional functionality can be included to your choice. 
+The must-have elements for such a constructor are the new component's name and the component it inherits from. Additional functionality can be included to your choice. 
 
 {{snippet
 Editable List
@@ -53,12 +53,13 @@ Editable List
 ~~~js
 webix.protoUI({
 	name:"editlist", 
-		}, 
-webix.EditAbility, webix.ui.list); 
+}, 
+webix.ui.list,webix.EditAbility); 
 ~~~
 
 
-The **protoUI constructor** eliminates the need of repeated usage of the **extend();** method each time you want to initialize a new instance of your custom component. Read more about
+The **protoUI constructor** eliminates the need of repeated usage of the
+**extend();** method each time you want to initialize a new instance of your custom component. Read more about
 [extended component functionality](desktop/extend.md). 
 
 
