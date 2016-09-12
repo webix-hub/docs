@@ -17,8 +17,7 @@ webix.alert("Test alert", function(result){
 		title:"Custom title",
 		ok:"Custom text",
 		text:"Result: "+result
-   })
-})
+   	})
 });
 
 

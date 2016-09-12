@@ -61,7 +61,7 @@ $$("pagerA").clone({
 
 ##Inheritance
 
-New components can be created on the base of already existing ones. There is an **extend();** function that merges the properties of two objects into a 
+New components can be created based on pre-existing ones. There is an **extend();** function that merges the properties of two objects into a 
 new one. If any of the shared properties gets changed in the target object, it is changed as well in the source one. Native properties of the two 
 objects are independent. 
 
@@ -142,11 +142,11 @@ Editable List
 }}
 ~~~js
 webix.protoUI({
-	name:"mylist"
+	name:"editlist"
 }, webix.ui.list, webix.EditAbility);
             
 webix.ui({
-	view:"mylist", 
+	view:"editlist", 
 	...
 });         
 ~~~

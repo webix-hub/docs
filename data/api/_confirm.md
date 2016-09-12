@@ -54,7 +54,7 @@ In the extended form, the method takes as a parameter an object with box paramet
 
 
 ~~~js
-webix.alert({
+webix.confirm({
 	title: "Close",
 	text: "You can't close this window!",
 	type:"confirm-error"
