@@ -25,9 +25,21 @@ var sel = datatable.getSelectedId();
 
 ##Popup customization
 
+You can set the size of the popup with Pivot configuration with the help of the api/ui.pivot_popup_config.md object:
+
+~~~js
+webix.ui({
+    view:"pivot",
+    popup:{
+        width:800, 
+        height:600
+    }
+});
+~~~
+
 **Accessing Popup**
 
-The onPopup event fires after a popup for configuring Pivot is created. The handler function takes one parameter:
+The *onPopup* event fires after a popup for configuring Pivot is created. The handler function takes one parameter:
 
 - popup - (object) the popup object
 

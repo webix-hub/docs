@@ -47,7 +47,7 @@ webix.ui({
 - **id** - *string, number* - component ID, should be unique within a page. In Webix, any component is referred to by its ID, **$$("id")**, to perform various operations with it;
 - **container** - *string* - ID of an HTML container Pivot will be put to (optional);
 - **fieldMap** - *object* - can be used to define custom labels for fields (optional). The details are described in the [Renaming fields](pivot/configuration.md#renamingfields) section of Pivot configuration; 
-- **max** - *boolean* - enables or disables GREEN highlighting of a cell(s) with the the biggest value in a row (optional);
+- **max** - *boolean* - enables or disables GREEN highlighting of a cell(s) with the biggest value in a row (optional);
 - **min** - *boolean* - enables or disables RED highlighting of a cell(s) with the least value in a row (optional);
 - **data** or **url** - *string* - defines dataset (see the details in the pivot/data_loading.md article);
 - **structure** - *object* - defines initial display and analysis pattern;
