@@ -14,8 +14,12 @@ getButton
 
 daterangepicker.getPopup().getButton();
 
-@related:
-	- desktop/multiselect.md
-    - desktop/suggest.md
+
 @template:	api_method
+
 @descr:
+DateRangeSuggest object can be easily accessed from the control:
+
+~~~js
+daterangepicker.getPopup();
+~~~

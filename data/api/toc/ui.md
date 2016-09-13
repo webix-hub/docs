@@ -260,7 +260,7 @@ table.webixtoc td{
     <tr>
     	<td> <img src="api/toc/daterangesuggest.png"/> </td>
         <td> api/refs/ui.daterangesuggest.md </td>
-        <td>a control that allows the user to select a date</td>
+        <td>a daterange-based suggest control </td>
     </tr>
     <tr>
     	<td> <img src="api/toc/datepicker.png"/> </td>
@@ -356,7 +356,7 @@ table.webixtoc td{
 </table>
 
 
-<div class='h2'>Auxiliary Components</div>
+<div class='h2'>Specific Widgets</div>
 <table class='webixtoc'>
 	<tbody>
     <tr>
@@ -373,6 +373,11 @@ table.webixtoc td{
     	<td> <img src="api/toc/colorboard.png"/> </td>
         <td> api/refs/ui.colorboard.md </td>
         <td>a color palette</td>
+    </tr>
+    <tr>
+    	<td> <img src="api/toc/daterange.png"/> </td>
+        <td> api/refs/ui.daterange.md </td>
+        <td>a widget for selecting a date range</td>
     </tr>
     <tr>
     	<td> <img src="api/toc/pager.png"/> </td>
@@ -477,6 +482,7 @@ table.webixtoc td{
 - api/refs/ui.datasuggest.md
 - api/refs/ui.datatable.md
 - api/refs/ui.dataview.md
+- api/refs/ui.daterange.md
 - api/refs/ui.daterangepicker.md
 - api/refs/ui.daterangesuggest.md
 - api/refs/ui.datepicker.md

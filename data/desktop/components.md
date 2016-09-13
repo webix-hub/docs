@@ -4,7 +4,7 @@ The <a title="ui library" href="http://webix.com">Webix UI library</a> supplies 
 specific features to make your applications good-looking and user-friendly. All the components are objects made with the webix.ui() constructor where the type of the component is set by the 'view' property (the declarative syntax is available as well).
 
 
-<h2 style="clear:both;"/>Widgets</h2>
+<h2 style="clear:both;"/>Complex Widgets</h2>
 
 A set of ready-made JavaScript widgets is provided to solve tasks in different fields. Whether you need to create an interactive data report, optimize a workflow, add and manage events,
 handle hierarchical data or make calculations in a powerful spreadsheet, you will surely find a proper widget for your needs in the Webix library.
@@ -238,7 +238,7 @@ Context components let displaying spatial and temporal information on some user'
 
 <h2 style="clear:both;">HTML-oriented Components</h2>
 
-Html-oriented components supply handy means for using habitual HTML elements in an application. There you can specify HTML templates, inline frames, forms etc.
+HTML-oriented components supply handy means for using habitual HTML elements in an application. There you can specify HTML templates, inline frames, forms etc.
 
 <div class="components_group" style="padding-left:60px;">
 	<div>
@@ -269,11 +269,12 @@ Html-oriented components supply handy means for using habitual HTML elements in 
 
 
 
-<h2 style="clear:both;">Auxiliary components</h2>
+<h2 style="clear:both;">Specific Widgets</h2>
 
-Auxiliary components help you to complete the picture of your application, to add special features that can't be achieved with the standard set of components presented above. 
+The widgets listed in this section will 
+help you to complete the picture of your application, add special features that can't be achieved with the standard set of components presented above. 
 
-<div class="components_group" style="padding-left:60px;">
+<div class="components_group" style="padding-left:10px;">
 	<div>
 		<a href="desktop/barcode.md">
 			<img src="desktop/icons/barcode.png"/>
@@ -290,6 +291,12 @@ Auxiliary components help you to complete the picture of your application, to ad
 	<a href="desktop/colorboard.md">
 			<img src="desktop/icons/colorboard.png"/>
 			<br>Colorboard
+		</a>
+    </div>
+    <div>
+		<a href="desktop/daterange.md">
+			<img src="desktop/icons/daterange.png"/>
+			<br>DateRange
 		</a>
     </div>
     <div>
@@ -414,6 +421,7 @@ div.controls_group img {
 - desktop/contextmenu.md
 - datatable/index.md
 - desktop/dataview.md
+- desktop/daterange.md
 - desktop/excelviewer.md
 - desktop/form.md
 - desktop/controls.md
