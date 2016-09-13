@@ -127,6 +127,7 @@ var calendar = webix.ui({
 - api/link/ui.calendar_hidden_config.md - defines whether the view will be hidden initially
 - api/ui.calendar_icons_config.md - sets an array of icons in the calendar or hides them
 - api/link/ui.calendar_id_config.md - the component ID
+- api/ui.calendar_master_config.md - 
 - api/ui.calendar_maxdate_config.md - set man limit for selected date
 - api/link/ui.calendar_maxheight_config.md - sets the maximum height for the view
 - api/ui.calendar_maxtime_config.md - maximum allowed time

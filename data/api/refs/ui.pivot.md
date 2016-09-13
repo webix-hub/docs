@@ -132,7 +132,7 @@ var pivot = webix.ui({
 - api/link/ui.pivot_borderless_config.md - used to hide the component borders
 - api/link/ui.pivot_cols_config.md - array of views objects arranged horizontally
 - api/ui.pivot_columnwidth_config.md - defines the default width for columns (in pixels)
-- api/link/ui.pivot_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.pivot_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.pivot_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.pivot_data_config.md - JavaScript array containing data for the component
 - api/link/ui.pivot_datatype_config.md - the type of loaded data
@@ -160,7 +160,7 @@ var pivot = webix.ui({
 - api/link/ui.pivot_paddingy_config.md - sets the top and bottom padding (applies the specified value to both sides)
 - api/ui.pivot_popup_config.md - an object with the properties of the configuration popup
 - api/ui.pivot_profile_config.md - enables profiling (for development stage)
-- api/ui.pivot_readonly_config.md - disables changing of the pivot configuration settings
+- api/ui.pivot_readonly_config.md - disables the possibility to change pivot configuration settings
 - api/ui.pivot_readonlytitle_config.md - sets some text in the right top corner instead of the link that opens the popup for configuring pivot
 - api/link/ui.pivot_ready_config.md - event handler called just after the component has been completely initialized
 - api/link/ui.pivot_removemissed_config.md - defines how to treat items in case of reloading

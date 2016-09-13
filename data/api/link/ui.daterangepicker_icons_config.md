@@ -1,0 +1,1 @@
+@link: api/ui.datepicker_icons_config.md

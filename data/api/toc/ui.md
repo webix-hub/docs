@@ -253,6 +253,16 @@ table.webixtoc td{
         <td> a spin box, aka an up-down control </td>
     </tr>
     <tr>
+    	<td> <img src="api/toc/daterangepicker.png"/> </td>
+        <td> api/refs/ui.daterangepicker.md </td>
+        <td>a control that allows the user to select a date range</td>
+    </tr>
+    <tr>
+    	<td> <img src="api/toc/daterangesuggest.png"/> </td>
+        <td> api/refs/ui.daterangesuggest.md </td>
+        <td>a control that allows the user to select a date</td>
+    </tr>
+    <tr>
     	<td> <img src="api/toc/datepicker.png"/> </td>
         <td> api/refs/ui.datepicker.md </td>
         <td>a control that allows the user to select a date</td>
@@ -467,6 +477,8 @@ table.webixtoc td{
 - api/refs/ui.datasuggest.md
 - api/refs/ui.datatable.md
 - api/refs/ui.dataview.md
+- api/refs/ui.daterangepicker.md
+- api/refs/ui.daterangesuggest.md
 - api/refs/ui.datepicker.md
 - api/refs/ui.fieldset.md
 - api/refs/ui.filemanager.md
