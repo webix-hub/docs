@@ -15,17 +15,17 @@ These controls can be used for entering text, selecting an option, date or color
 - [Colorpicker](desktop/colorpicker.md)
 - [Combo](desktop/combo.md)
 - [Counter](desktop/counter.md)
-- [Datasuggest](desktop/datasuggest.md)
 - [Datepicker](desktop/datepicker.md)
+- [Daterangepicker](desktop/daterangepicker.md)
+- [Daterangesuggest](desktop/daterangesuggest.md)
 - [Fieldset](desktop/fieldset.md)
-- [Gridsuggest](desktop/gridsuggest.md)
 - [Icon](desktop/icon.md)
 - [Label](desktop/label.md)
 - [Multicombo](desktop/multicombo.md)
 - [Multiselect](desktop/multiselect.md)
 - [Multitext](desktop/multitext.md)
 - [Radio](desktop/radio.md)
-- [Range slider](desktop/rangeslider.md)
+- [RangeSlider](desktop/rangeslider.md)
 - [Richselect](desktop/richselect.md)
 - [Search](desktop/search.md)
 - [Select](desktop/select.md)
@@ -43,7 +43,12 @@ These controls can be used for entering text, selecting an option, date or color
 	- [colorboard](desktop/colorboard.md) - a color palette for colorpicker;
 	- [calendar](desktop/calendar.md) - date selector for datepicker.
  
-It has some variations - *Gridsuggest*, *Datasuggest*, *Checksuggest*, *Multisuggest* - to serve the needs of various controls.  
+Suggest has several variations to serve the needs of various controls:
+
+- *[Gridsuggest](desktop/gridsuggest.md)*,
+- *[Datasuggest](desktop/datasuggest.md)*,
+- *[Checksuggest](desktop/suggest.md#advancedsuggestlists)*, 
+- *[Multisuggest](desktop/suggest.md#advancedsuggestlists)*.  
 
 ##Shared Functionality 
 
@@ -67,10 +72,10 @@ For further details check the desktop/controls_guide.md article.
   - desktop/colorpicker.md
   - desktop/combo.md
   - desktop/counter.md
-  - desktop/datasuggest.md
   - desktop/datepicker.md
+  - desktop/daterangepicker.md
+  - desktop/daterangesuggest.md
   - desktop/fieldset.md
-  - desktop/gridsuggest.md
   - desktop/icon.md
   - desktop/label.md
   - desktop/multicombo.md

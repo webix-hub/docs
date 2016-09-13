@@ -1,4 +1,4 @@
-Grouplist
+GroupList
 ===============
 
 ##API Reference

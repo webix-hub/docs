@@ -63,13 +63,13 @@ Data components are used to present data of a specified type on the page. Such c
 	<div>
 		<a href="desktop/dataview.md">
 			<img src="desktop/icons/dataview.png"/>
-			<br>Dataview
+			<br>DataView
 		</a>
     </div>
     <div>
 		<a href="desktop/grouplist.md">
 			<img src="desktop/icons/grouplist.png"/>
-			<br>Grouplist
+			<br>GroupList
 		</a>
     </div>
     <div>
@@ -87,7 +87,7 @@ Data components are used to present data of a specified type on the page. Such c
     <div>
 		<a href="desktop/property_sheet.md" style="clear:left;">
 			<img src="desktop/icons/propertysheet.png"/>
-			<br>PropertySheet
+			<br>Property Sheet
 		</a>
     </div>
     <div>
@@ -117,7 +117,7 @@ Data components are used to present data of a specified type on the page. Such c
     <div>
 		<a href="desktop/unitlist.md">
 			<img src="desktop/icons/unitlist.png"/>
-			<br>Unitlist
+			<br>UnitList
 		</a>
     </div>
 </div>
@@ -154,7 +154,7 @@ Layouts help you to organize your web page, define its overall look-and-feel. Yo
      <div>
 		<a href="desktop/multiview.md">
 			<img src="desktop/icons/multiview.png"/>
-			<br>Multiview
+			<br>MultiView
 		</a>
     </div>
     <div>
@@ -166,13 +166,13 @@ Layouts help you to organize your web page, define its overall look-and-feel. Yo
     <div>
 		<a href="desktop/scrollview.md" style="clear:left;">
 			<img src="desktop/icons/scrollview.png"/>
-			<br>Scrollview
+			<br>ScrollView
 		</a>
     </div>
     <div>
 		<a href="desktop/tabview.md">
 			<img src="desktop/icons/tabview.png"/>
-			<br>Tabview
+			<br>TabView
 		</a>
     </div>
     <div>
@@ -321,43 +321,45 @@ Controls are mainly responsible for handling events since they enable user-app i
 		<li><a href="desktop/checkbox.md"><img src="api/toc/checkbox.png"/> Checkbox</a></li>
 		<li><a href="desktop/colorpicker.md"> <img src="api/toc/colorpicker.png"/> ColorPicker</a></li>
 		<li><a href="desktop/combo.md"><img src="api/toc/combo.png"/> Combo</a></li>
-		<li><a href="desktop/counter.md"><img src="api/toc/counter.png"/> Counter</a></li>
-        <li><a href="desktop/datasuggest.md"><img src="api/toc/suggest.png"/> Datasuggest</a></li>
-        <li><a href="desktop/datepicker.md"><img src="api/toc/datepicker.png"/> Datepicker</a></li>
+		<li><a href="desktop/counter.md"><img src="api/toc/counter.png"/> Counter</a></li>             
+        <li><a href="desktop/daterangepicker.md"><img src="api/toc/daterangepicker.png"/> DateRangePicker</a></li>   
+        <li><a href="desktop/daterangesuggest.md"><img src="api/toc/daterangesuggest.png"/>DateRangeSuggest</a></li>
 	</ul>
 </div>
 
 <div class="controls_group">
 	<ul>
+        <li><a href="desktop/datepicker.md"><img src="api/toc/datepicker.png"/> DatePicker</a></li>
+        <li><a href="desktop/datasuggest.md"><img src="api/toc/datasuggest.png"/> DataSuggest</a></li>
     	<li><a href="desktop/icon.md"><img src="api/toc/icon.png"/> Icon</a></li>
     	<li><a href="desktop/fieldset.md"> <img src="api/toc/fieldset.png"/> Fieldset</a></li>
-        <li><a href="desktop/gridsuggest.md"><img src="api/toc/suggest.png"/> Gridsuggest</a></li>
+        <li><a href="desktop/gridsuggest.md"><img src="api/toc/gridsuggest.png"/> GridSuggest</a></li>
 		<li><a href="desktop/label.md"><img src="api/toc/label.png"/> Label</a></li>
-        <li><a href="desktop/multicombo.md"><img src="api/toc/multicombo.png"/> Multicombo</a></li>
-        <li><a href="desktop/multiselect.md"> <img src="api/toc/multiselect.png"/> Multiselect</a></li>
-        <li><a href="desktop/multitext.md"> <img src="api/toc/multitext.png"/> Multitext</a></li>
+        <li><a href="desktop/multicombo.md"><img src="api/toc/multicombo.png"/> Multicombo</a></li>       
 	</ul>
 </div>
 
 <div class="controls_group">
 	<ul>
+    	<li><a href="desktop/multiselect.md"> <img src="api/toc/multiselect.png"/> Multiselect</a></li>
+        <li><a href="desktop/multitext.md"> <img src="api/toc/multitext.png"/> Multitext</a></li>
     	<li><a href="desktop/radio.md"> <img src="api/toc/radio.png"/> Radio</a></li>
         <li><a href="desktop/rangeslider.md"> <img src="api/toc/rangeslider.png"/> RangeSlider</a></li>
 		<li><a href="desktop/richselect.md"><img src="api/toc/richselect.png"/> Richselect</a></li>
     	<li><a href="desktop/search.md"><img src="api/toc/search.png"/> Search</a></li>
-    	<li><a href="desktop/select.md"><img src="api/toc/select.png"/> Select</a></li>		
-    	<li><a href="desktop/segmented.md"><img src="api/toc/segmented.png"/> Segmented</a></li>
-        <li><a href="desktop/slider.md"><img src="api/toc/slider.png"/> Slider </a></li>			
+    	<li><a href="desktop/select.md"><img src="api/toc/select.png"/> Select</a></li>		   			
 	</ul>
 </div>
 
 <div class="controls_group">
 	<ul>
+    	<li><a href="desktop/segmented.md"><img src="api/toc/segmented.png"/>Segmented</a></li>
+        <li><a href="desktop/slider.md"><img src="api/toc/slider.png"/>Slider</a></li>	
         <li><a href="desktop/suggest.md"><img src="api/toc/suggest.png"/> Suggest</a></li>
-    	<li><a href="desktop/tabbar.md"><img src="api/toc/tabbar.png"/> Tabbar</a></li>
-		<li><a href="desktop/text.md"><img src="api/toc/text.png"/> Text</a></li>	
-    	<li><a href="desktop/textarea.md"><img src="api/toc/textarea.png"/> Textarea</a></li>
-		<li><a href="desktop/toggle.md"><img src="api/toc/toggle.png"/> Toggle</a></li>    	
+    	<li><a href="desktop/tabbar.md"><img src="api/toc/tabbar.png"/>Tabbar</a></li>
+		<li><a href="desktop/text.md"><img src="api/toc/text.png"/>Text</a></li>	
+    	<li><a href="desktop/textarea.md"><img src="api/toc/textarea.png"/>Textarea</a></li>
+		<li><a href="desktop/toggle.md"><img src="api/toc/toggle.png"/>Toggle</a></li>    	
 	</ul>
 </div>
 
