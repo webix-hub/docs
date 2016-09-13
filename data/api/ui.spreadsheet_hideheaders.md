@@ -21,3 +21,5 @@ $$("ssheet").hideHeaders(state);
 @template:	api_method
 @descr:
 
+@relatedsample:
+01_basic/08_columns_rows.html

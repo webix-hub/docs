@@ -10,13 +10,13 @@ addFilter
 
 @params:
 
-- x			number			the row id
-- y 		number			the column id
+- rowId			number			the row id
+- columnId		number			the column id
 
 
 
 @example:
-$$("ssheet").addFilter(x,y);
+$$("ssheet").addFilter(rowId,columnId);
 
 @template:	api_method
 @descr:

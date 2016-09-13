@@ -6,15 +6,15 @@ filterSpreadSheet
 	check 
 
 @short:
-	filters the spreadsheet data
+	invokes SpreadSheet filtering by all existing filters
 
 @params:
 
 
 
-
-
 @example:
+$$("ssheet").filterSpreadSheet();
+
 
 @template:	api_method
 @descr:

@@ -1,10 +1,6 @@
 footer
 =============
 
-@todo:
-	check 
-
-
 @short:
 	calculates the total sum per column
 

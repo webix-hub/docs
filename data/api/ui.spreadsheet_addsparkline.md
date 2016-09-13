@@ -29,3 +29,4 @@ the config object includes the following properties:
 - data	-	(object)		an object with data for a sparkline
 - color	-	(string)		the color of a sparkline
 
+@relatedsample: 01_basic/11_sparklines.html

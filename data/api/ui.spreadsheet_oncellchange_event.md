@@ -7,8 +7,8 @@ onCellChange
 
 @params:
 
-- row			number			the number of the row 
-- column		number			the number of the column 
+- row			number			the row id
+- column		number			the column id 
 - value			string			the value of the cell
 
 

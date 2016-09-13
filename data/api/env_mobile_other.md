@@ -1,10 +1,6 @@
 mobile
 =============
 
-@todo:
-	check 
-
-
 @short:
 	a read-only boolean indicating whether a mobile device is used
 

@@ -6,24 +6,26 @@ setCellEditor
 	check 
 
 @short:
-	adds an editor to a cell
+	creates an editor in a cell
 
 @params:
 
-- x				number		the row id
-- y				number		the column id
-- editor		object		an object with editor parameters
+- rowId					number		the row id
+- columnId				number		the column id
+- editorObject			object		an object with editor type and options (in case of richselect type)
 
 
 
 @example:
-$$("ssheet").setCellEditor(x,y,editor);
+$$("ss1").setCellEditor(1,8,{ editor:"richselect", options:["One", "Two", "Three"]});
+// or
+$$("ss1").setCellEditor(2,8,{ editor:"richselect", options:"B3:B7" });
 
 
 @template:	api_method
 @descr:
 
-The editor object has the following properties:
+The editorObject parameter can have the following properties:
 
-- editor - (string) the editor type
-- options - (object) the range with editor options
+- type - (string) the editor type
+- options - (string/array) a range of cell references or an array of editor options

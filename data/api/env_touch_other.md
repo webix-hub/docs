@@ -1,10 +1,6 @@
 touch
 =============
 
-@todo:
-	check 
-
-
 @short:
 	a read-only boolean indicating whether the current browser supports touch-actions
 

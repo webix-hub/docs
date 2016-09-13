@@ -1,9 +1,6 @@
 max
 =============
 
-@todo:
-	check 
-
 
 @short:
 	enables/disables GREEN highlighting of a cell(s) with the biggest value in a row 

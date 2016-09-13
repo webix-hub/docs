@@ -1,10 +1,6 @@
 min
 =============
 
-@todo:
-	check 
-
-
 @short:
 	enables/disables RED highlighting of a cell(s) with the least value in a row 
 

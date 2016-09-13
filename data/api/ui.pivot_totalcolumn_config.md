@@ -1,10 +1,6 @@
 totalColumn
 =============
 
-@todo:
-	check 
-
-
 @short:
 	calculates the total sum for each row
 

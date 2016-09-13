@@ -1,9 +1,6 @@
 popup
 =============
 
-@todo:
-	check 
-
 @short:
 	an object with the properties of the configuration popup
 

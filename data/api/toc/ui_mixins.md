@@ -167,7 +167,6 @@ Mixins
 - api/refs/virtualrenderstack.md
 - api/refs/ui.baselayout.md
 - api/refs/ui.baseview.md
-- api/refs/ui.checksuggest.md
 - api/refs/ui.proto.md
 - api/refs/ui.resizearea.md
 - api/refs/ui.view.md

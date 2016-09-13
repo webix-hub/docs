@@ -23,3 +23,6 @@ var isLocked = $$("ssheet").isCellLocked(rowId, columnId);
 @template:	api_method
 @descr:
 
+@relatedsample:
+02_api/07_lock_cell.html
+

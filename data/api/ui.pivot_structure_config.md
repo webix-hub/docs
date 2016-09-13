@@ -1,9 +1,6 @@
 structure
 =============
 
-@todo:
-	check 
-
 
 @short:
 	defines initial display and analysis pattern

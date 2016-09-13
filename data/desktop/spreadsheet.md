@@ -42,7 +42,7 @@ of various languages.
                 <li>spreadsheet/loading_data.md</li>
                 <li>spreadsheet/localization.md</li>
                 <li>spreadsheet/config.md</li>
-               
+                <li>spreadsheet/look_and_feel.md</li>               
             </ul>
 		</td>
 		<td class='topic_description'>Discusses the main points of SpreadSheet initialization and customization.</td>
@@ -73,6 +73,7 @@ of various languages.
 - spreadsheet/loading_data.md
 - spreadsheet/localization.md
 - spreadsheet/config.md
+- spreadsheet/look_and_feel.md
 - spreadsheet/math.md
 - spreadsheet/export.md
 - spreadsheet/import.md
