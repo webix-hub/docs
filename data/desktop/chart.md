@@ -13,6 +13,8 @@ Like all the data-presenting components it takes initial data in [various format
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/charts.png"/>
 
+{{note In case you have huge volumes of data to work with and need to render a certain chunk of data in detail, the desktop/range_chart.md component will come to the aid.}}
+
 ##Initialization
 
 The most important chart properties include **type**, **template** and **value** for data as well as criteria for data presenting (e.g. **step** of X axis in 

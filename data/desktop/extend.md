@@ -1,9 +1,9 @@
 Component Copying and Extending
 =============
 
-Components in webix UI library are objects that can be cloned and copied as well as inherit properties from each other. 
+Components in Webix UI library are objects that can be cloned and copied. They can also inherit properties from each other. 
 
-Let's take for instance the toolbar component and play around with it. It has three properties - width, height and cols object with three buttons. 
+Let's take for instance the Toolbar component and play around with it. It has three properties - width, height and cols object with three buttons. 
 
 ~~~js
 var barA = { view:"toolbar", width:500, paddingY:2, cols:[
@@ -61,7 +61,7 @@ $$("pagerA").clone({
 
 ##Inheritance
 
-New components can be created on the base of already existing ones. There is an **extend();** function that merges the properties of two objects into a 
+New components can be created based on pre-existing ones. There is an **extend();** function that merges the properties of two objects into a 
 new one. If any of the shared properties gets changed in the target object, it is changed as well in the source one. Native properties of the two 
 objects are independent. 
 
@@ -134,7 +134,7 @@ var obj = new mytoolbar({ view:"toolbar",... });
 // outputs a movable toolbar
 ~~~
 
-To extend component's existing functionality you can as well use **protoUI();** method that creates the new view based on some of the existing ones.
+To extend component's existing functionality you can as well use **api/_protoui.md** method that creates the new view based on some of the existing ones.
 This is how it looks in case you want to make your list editable. 
 
 {{snippet
@@ -142,8 +142,8 @@ Editable List
 }}
 ~~~js
 webix.protoUI({
-	name:"mylist"
-}, webix.EditAbility, webix.ui.list);
+	name:"editlist"
+}, webix.ui.list, webix.EditAbility);
             
 webix.ui({
 	view:"editlist", 

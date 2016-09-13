@@ -16,4 +16,11 @@ webix.message("Some message");
 
 Supports many skins and configurations, check [jsMessage](https://github.com/dhtmlx/message) for more details.
 
+###Hiding a message
 
+Message boxes can hidden using API:
+
+~~~js
+var message = webix.message("Hi!");
+webix.message.hide(message);
+~~~

@@ -1,8 +1,10 @@
 Guides
 ======
 
-You are in the heart of the documentation that covers tricks, tips and techniques for working with the library. The chapter is divided into
-subject areas, each of which contains a set of task-oriented articles. Articles are of various difficulties and both a beginner and a master can find there a helpful information to build a powerful application.
+You are in the core of our documentation site. Here we cover tips, tricks and techniques for working more effectively with our library.
+
+The chapter is divided into subject areas, each of which contains a set of task-oriented articles.
+Articles are of various levels of complexity and both a beginner and a master can find there a helpful information to build a powerful application.
 
 
 <table  style='border-left:none !important;' cellspacing="0" cellpadding="5" border="0">

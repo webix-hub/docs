@@ -6,7 +6,7 @@ Maps Integration
 Webix library allows to embed geographical maps into the app with the help of its own components. Four maps are supported: 
 
 - **Google Map**
-- **Nokia Map**
+- **Here Map**
 - **OpenStreet Map**
 - **Yandex Map**
 
@@ -28,7 +28,7 @@ The extensions are taken from [https://github.com/webix-hub/components](https://
 
 {{sample 32_thirdparty/09_google_map.html}}
 
-- For **Nokia Map**
+- For **Here Map**
 
 <img src="desktop/nokiamap.png"/>
 
@@ -36,20 +36,6 @@ The extensions are taken from [https://github.com/webix-hub/components](https://
 <script type="text/javascript" src="./nokiamap.js"></script>
 <script src="http://js.api.here.com/se/2.5.3/jsl.js" type="text/javascript" 
 	charset="utf-8"></script>
-~~~
-
-Additionally, you should have a [Nokia Account](https://account.nokia.com) registered. 
-Once you register, they send you **"appID"** and **"authenticationToken"** keys that you need to specify:
-
-~~~js
-webix.ready(function(){
-	nokia.Settings.set( "appId", "..."); //instead of dots enter your keys!
-	nokia.Settings.set( "authenticationToken", "...");
-
-	webix.ui({
-		//then init map
-	});
-});
 ~~~
 
 {{sample 32_thirdparty/10_nokia_map.html}}

@@ -187,10 +187,10 @@ webix.modalbox({
     width:500,
     callback: function(result){
     	switch(result){
-		case 0: 
+		case "0": 
         	//statement
             break;
-        case 1:
+        case "1":
         	//statement
             break;
         ...
@@ -200,6 +200,17 @@ webix.modalbox({
 ~~~
 
 {{sample 10_window/10_modal_box.html}}
+
+###Hiding a modal box
+
+Modal box closes when you click any button on it. In case, you have a modalbox without buttons, you can use the direct API call:
+
+~~~js
+// showing a modal box
+var box = webix.modalbox({...});
+// hiding a modal box
+webix.modalbox.hide(box);
+~~~
 
 ##Modal Windows and Keyboard Interaction
 

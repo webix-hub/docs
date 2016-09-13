@@ -8,14 +8,14 @@ group
 
 @params:
 - config	object		an object with grouping parameters 
-- mode		boolean		defines whether the component should be re-rendered after grouping ( by default, <i>true</i>)
+- mode		boolean		defines whether the component should be re-rendered after grouping (<i>true</i> by default)
 
 
 @example:
 myview.group({
-	by:"#company#", // 'company' is the name of data property
+	by:"company", // 'company' is the name of a data property
 	map:{
-		sales:["#sales#","sum"]
+		sales:["sales","sum"]
 	}	
 });
 
@@ -37,9 +37,11 @@ The method is called for each data item.
 
 The **config** object has 2 properties:
 
-- **by** – a data property according which items will be united in groups
+- **by** – a data property according to which items will be united in groups 
+
 - **map** – an object that specifies new data properties that the items in a group will have. Properties are specified
-by an array. The first element of this array is a template with a property from original data, 
+by an array. 
+The first element of this array is the name of a property from original data, 
 the second one – the functor that will be applied to all values of the property (set by the first element) in the group.<br>
 Grouping provides the following functors:
 
@@ -62,9 +64,9 @@ webix.ui({
 	...
 	scheme:{
 		$group:{
-			by:"#company#", // 'company' is the name of data property
+			by:"company", // 'company' is the name of a data property
 			map:{
-				sales:["#sales#","sum"],
+				sales:["sales","sum"],
                 state:["grouped","string"]
 			}	
 		}
