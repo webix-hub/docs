@@ -5,9 +5,9 @@ $drop
 @short: method called when item dragged and dropped on valid target
 	
 @params:
-- source    HTMLElement     DOM element on which dnd action started
+- source    HTMLElement     DOM element from which drag-n-drop action started
 - target	HTMLElement     DOM element of possible drop landing
-- ev      	Event      native html event
+- ev      	Event      		native HTML event
 
 @example:
 webix.DragControl.addDrop("myDrop",{
@@ -23,5 +23,5 @@ webix.DragControl.addDrop("myDrop",{
 
 {{note The method isn't purposed for direct call! It is an extension point. }}
 
-You can override it with your own logic, but be sure to check dnd related events first, as they are provide much more convinient way for dnd handling. 
+You can override it with your own logic, but check drag-n-drop related events first, as they provide much more convenient way for drag-n-drop handling. 
 

@@ -4,23 +4,22 @@ $drop
 @short:
 	called when mouse was released over drop area and defines dropping behavior
 
-@params:
-- s		object		source html object
-- t		object		target html object
-- d		object		dropped html object
-- e		Event		event object
 
+@params:
+- source    HTMLElement     DOM element on which dnd action started
+- target	HTMLElement     DOM element of possible drop landing
+- ev      	Event      		native HTML event
 
 
 @example:
 webix.DragControl.addDrop("myDrop",{
-		$drop:function(source, target){
-			var dnd = webix.DragControl.getContext();
+	$drop:function(source, target){
+		var dnd = webix.DragControl.getContext();
 			if (dnd.from.name){ //ignoring non-ui dnd
 				var value = dnd.from.getItem(dnd.source[0]).title;
 				target.innerHTML=value;
 			}
-		}
+	}
 });
 
 @template:	api_method

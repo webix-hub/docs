@@ -6,9 +6,9 @@ $dragIn
 	called when mouse was moved in drop area and defines marker behavior within the drop area 
 
 @params:
-- s		object		source html object
-- t		object		target html object
-- e		Event		event object
+- source     	HTMLElement     DOM element from which drag-n-drop action started
+- target     	HTMLElement     DOM element of possible drop landing
+- ev      		Event      		native HTML event
 
 
 @example:

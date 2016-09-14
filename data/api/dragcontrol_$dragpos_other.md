@@ -2,7 +2,7 @@ $dragPos
 =============
 
 
-@short: defines position of dragged item
+@short: defines the position of the dragged item
 	
 
 @type: function
@@ -18,10 +18,10 @@ list.$dragPos = function(pos, e, node){
 
 Can be redefined for custom dnd behavior
 
-
 There are 3 parameters: 
+
 - pos object ( has x and y properties )
 - event object
 - html node of drag marker
 
-You can modify pos.x and pos.y - updated values will be applied to drag marker
+You can modify pos.x and pos.y. The updated values will be applied to the drag marker

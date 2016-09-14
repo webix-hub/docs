@@ -13,7 +13,7 @@ If you want to make some element on page draggable you can use
 ~~~js
 webix.DragControl.addDrag(node);
 ~~~
-where *node* - id or html node object ( or object itself )
+where *node* - id or HTML node object ( or object itself )
 
 {{sample 22_dnd/05_html_dnd_in.html}}
 
@@ -21,12 +21,14 @@ If you want to define some area as drop target you can use
 ~~~js
 webix.DragControl.addDrop(node);
 ~~~
-where *node* - id or html node object ( or object itself ).
+where *node* - id or HTML node object ( or object itself ).
 
 ### Controlled DnD 
 
 
-If you want to control different aspects of dnd process, you can use the above methods but with an extra **control parameter** (**$drag** or **$drop**) with a custom function:
+If you want to control different aspects of the drag-n-drop process, you can use the above methods 
+but with an extra **control parameter** (**$drag** or **$drop**) with a custom function:
+
 ~~~js
 //for dragging
 webix.DragControl.addDrag(node, $drag:function(source, target, event){...});
@@ -36,11 +38,11 @@ webix.DragControl.addDrop(node, $drop:function(source, target, event){...});
 
 The control function takes three parameters: 
 
-- **source** - source html object;
-- **target** - target html object;
+- **source** - source HTML object;
+- **target** - target HTML object;
 - **event** - native event. 
 
-This is how you can set value of an input by drag-n-drop
+This is how you can set value of an input by drag-n-drop:
 
 ~~~js
 webix.DragControl.addDrop("mytext", {
@@ -56,12 +58,13 @@ webix.DragControl.addDrop("mytext", {
 DnD context 
 -----------
 
-Context object of dnd can be accessed as:
+Context object of drag-n-drop can be accessed as:
 
 ~~~js
 var state = webix.DragControl.getContext();
 ~~~
-it is also available as parameter in all dnd related events
+
+It is also available as parameter in all drag-n-drop related events:
 
 ~~~js
 state = {
@@ -75,49 +78,51 @@ state = {
 
 #### Set of the drag control methods 
 
-There are 6 DnD control event: 3 of them are used for dragged element  (addDrag) and 3 - for drop target (addDrop). All these events can be used to define a custom behavior for elements included in current drag-n-drop. 
+There are several DnD control methods: some of them are used for dragged element (addDrag) and others - for drop target (addDrop). 
+All these events can be used to define a custom behavior for elements included in the current drag-n-drop: 
 
-**addDrag()** related events:
+**addDrag()**-related events:
 
-- *onDrag* - fires when the elements is dragged;
-- *onDragCreate* - fires the moment drag has been created;
-- *onDragDestroy* - fires when drag has been completed; 
+- *$drag* - is called when an element is dragged;
+- *$dragCreate* - is called at the moment when drag has been created;
+- *$dragDestroy* - is called when drag has been completed. 
 
 **addDrop()** related events:
 
-- *onDragIn* - fires when a dragged element enters the drop area (If you want to deny drop area, return false).
-- *onDragOut* - fires when a dragged elements leaves the drop area.
-- *onDrop* - fires when you drop the dragged element.
+- *$dragIn* - is called when the dragged element enters the drop area; 
+- *$dragOut* - is called when the dragged element leaves the drop area;
+- *$drop* - fires when you drop the dragged element.
 
 
 ~~~js
 {
-  onDragIn:function(source, target, event){ ... },   //drag moves in potential drop area
-  onDragOut:function(source, target, event){ ... },  //drag moves out from the drop area
-  onDrop:function(source, target, event){ ... },     //drag was released
-  onDrag:function(source, target, event){ ... },     //drag is started
-  onDragCreate:function(from, event){ ... }     //dnd is started
-  onDragDestroy:function:(from, text){ ... } //dnd is finished
+  $dragIn:function(source, target, event){ ... },   //drag moves in potential drop area
+  $dragOut:function(source, target, event){ ... },  //drag moves out from the drop area
+  $drop:function(source, target, event){ ... },     //drag was released
+  $drag:function(source, target, event){ ... },     //drag is started
+  $dragCreate:function(from, event){ ... }     //dnd is started
+  $dragDestroy:function:(from, text){ ... } //dnd is finished
 }
-
 ~~~
+
 Where:
 
-- **source** - source html object;
-- **target** - target html object;
+- **source** - source HTML object;
+- **target** - target HTML object;
 - **event** - native event;
 - **from** - control object related to source of dnd;
 - **text** - content of drag marker.
 
-If any of onDrag handlers redefined - there won't be the default processing of the action, code expects that your custom handler will do all job. 
+If any of onDrag handlers are redefined, there won't be the default processing of the action.
+The code expects that your custom handler will do all the job. 
 
 ###DnD masters
 
 Master is a component object or a hash code of the control methods. 
 It specifies how element will behave itself in the drop target. 
 
-If you specify the master, it will answer for the appropriate dnd behavior. 
-If you don't do it, the standard dnd processing will occur. 
+If you specify the master, it will answer for the appropriate drag-n-drop behavior. 
+If you don't do it, the standard drag-n-drop processing will occur. 
 
 For the methods, where source and target masters are not provided, you can get them by the api/dragcontrol_getmaster.md method:
 
@@ -133,11 +138,11 @@ You can make an element draggable by adding one of the 2 appropriate interfaces:
 
 - [webix.Movable](api/refs/movable.md)
 
-Low level interface. A component which inherits it can be moved by dnd (to learn how to inherit the interface read the desktop/extend.md article).
+Low level interface. A component which inherits it can be moved by drag-n-drop (to learn how to inherit the interface, read the desktop/extend.md article).
 
 - [webix.DragItem](api/refs/dragitem.md)
 
-High level interface. Adds dnd ability to component which uses DataStore (to learn how to inherit the interface read the desktop/extend.md article).
+High level interface. Adds drag-n-drop ability to component which uses DataStore (to learn how to inherit the interface, read the desktop/extend.md article).
 
 Samples of usage
 ----------------
@@ -178,7 +183,7 @@ data1.attachEvent("onBeforeDrop",function(context){
 
 ~~~js
 webix.DragControl.addDrop("data_container2",{
-	onDrop:function(source, target, d, e){
+	$drop:function(source, target, e){
 		var context = webix.DragControl.getContext();
 		var item = context.from.getItem(context.source[0]);
 		

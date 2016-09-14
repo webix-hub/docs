@@ -6,12 +6,12 @@ $drag
 	called when drag-n-drop was started and defines dragging behavior
 
 @params:
-- s		object		source html object
-- e		Event		event object
+- source     	HTMLElement     DOM element from which drag-n-drop action started
+- ev      		Event      		native HTML event
 
 
 @returns:
-- node       HTMLElement    	html node
+- node       HTMLElement    	HTML node
 
 @example:
 

@@ -2,11 +2,11 @@ $dragMark
 =============
 
 
-@short: method called during dnd when some item in the component need to be marked as active drop target
+@short: method called during drag-n-drop, when some item in the component should be marked as an active drop target
 	
 @params:
-- context     object     dnd context
-- ev      Event      native html event
+- context     	object     drag-n-drop context
+- ev      		Event      native HTML event
 
 @returns:
 - dndflag     boolean     returning false will prevent drag operation
@@ -18,7 +18,7 @@ $dragMark
 
 {{note The method isn't purposed for direct call! It is an extension point. }}
 
-You can override it with your own logic, but be sure to check dnd related events first, as they are provide much more convinient way for dnd handling. 
+You can override it with your own logic, but check drag-n-drop related events first, as they provide much more convenient way for drag-n-drop handling. 
 
 The drag-and-drop context can have the next properties:
 
