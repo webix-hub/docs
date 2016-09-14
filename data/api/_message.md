@@ -18,7 +18,7 @@ Supports many skins and configurations, check [jsMessage](https://github.com/dht
 
 ###Hiding a message
 
-Message boxes can hidden using API:
+Message boxes can be hidden using API:
 
 ~~~js
 var message = webix.message("Hi!");

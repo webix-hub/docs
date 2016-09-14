@@ -59,3 +59,14 @@ webix.alert({
 	type:"alert-error"
 })
 ~~~
+
+###Hiding an alert box
+
+You can close an alert box using the modalbox API:
+
+~~~js
+// showing an alert box
+var box = webix.alert({...});
+// hiding an alert box
+webix.modalbox.hide(box);
+~~~

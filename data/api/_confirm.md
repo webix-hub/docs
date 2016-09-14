@@ -38,7 +38,7 @@ The method can be used in 2 ways:
 
 Please note, created boxes:
 
-- Not modal (don't prevent the workflow on the application parent window).
+- Don't prevent the workflow on the application parent window.
 - Exist in the only copy (when a new window appears - the previous one disappears).
 
 ###Extended initialization
@@ -61,4 +61,13 @@ webix.confirm({
 })
 ~~~
 
+###Hiding a confirm box
 
+You can close a confirm box using the modalbox API:
+
+~~~js
+// showing a confirm box
+var box = webix.confirm({...});
+// hiding a confirm box
+webix.modalbox.hide(box);
+~~~

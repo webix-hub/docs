@@ -201,9 +201,9 @@ webix.modalbox({
 
 {{sample 10_window/10_modal_box.html}}
 
-###Hiding a modal box
+##Hiding Modal Box, Confirm and Alert
 
-Modal box closes when you click any button on it. In case, you have a modalbox without buttons, you can use the direct API call:
+A modal box closes when you click any button on it. In case, you have a modalbox without buttons, you can use the direct API call:
 
 ~~~js
 // showing a modal box
@@ -211,6 +211,16 @@ var box = webix.modalbox({...});
 // hiding a modal box
 webix.modalbox.hide(box);
 ~~~
+
+The modalbox API works for confirm and alert boxes as well:
+
+~~~js
+// showing a confirm box
+var box = webix.confirm({...});
+// hiding a confirm box
+webix.modalbox.hide(box);
+~~~
+
 
 ##Modal Windows and Keyboard Interaction
 
