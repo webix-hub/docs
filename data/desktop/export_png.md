@@ -27,3 +27,17 @@ webix.toPNG($$("myChart"));
 ~~~
 
 {{sample 19_api/07_export_png.html }}
+
+Exporting Data Offline
+---------------------
+
+The dependencies which are used for providing export possibilities are generally taken from Webix CDN online catalog. 
+If you need to implement data export offline, you should complete the following steps:
+
+- download the package with CDN-files from [https://github.com/webix-hub/cdn-extras](https://github.com/webix-hub/cdn-extras)
+- rename the folder to "extras" and move it the desired directory
+- set the path to the local CDN repository as 
+
+~~~js
+webix.cdn = "/local_folder";
+~~~

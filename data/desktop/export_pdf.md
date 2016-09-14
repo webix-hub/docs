@@ -33,17 +33,16 @@ webix.toPDF($$("mylist"));
 Exporting Data Offline
 ---------------------
 
-The dependencies which are used for providing export possibilities are generally taken from Webix CDN. 
+The dependencies which are used for providing export possibilities are generally taken from Webix CDN online catalog. 
 If you need to implement data export offline, you should complete the following steps:
 
 - download the package with CDN-files from [https://github.com/webix-hub/cdn-extras](https://github.com/webix-hub/cdn-extras)
-- сopy the folder with CDN-files into the directory with your application
+- rename the folder to "extras" and move it to the desired directory
 - set the path to the local CDN repository as 
 
 ~~~js
-webix.cdn = "/local_folder/cdn-extras";
+webix.cdn = "/local_folder";
 ~~~
-
 
 Customizing Export to PDF
 -------------------------
