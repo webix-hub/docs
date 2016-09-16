@@ -19,4 +19,4 @@ $$("ssheet").hideBorders(state);
 @descr:
 
 @relatedsample:
-02_api/04_borders_headers.html
+65_spreadsheet/02_api/04_borders_headers.html

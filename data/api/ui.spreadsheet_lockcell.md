@@ -9,11 +9,11 @@ lockCell
 
 - rowId			number		the row id
 - columnId		number		the column id
-- mode			boolean		true - to lock a cell, false - to unlock it			
+- state			boolean		true - to lock a cell, false - to unlock it			
 
 
 @example:
-$$("ssheet").lockCell(rowId, columnId, mode);
+$$("ssheet").lockCell(rowId, columnId, state);
 
 @template:	api_method
 @descr:

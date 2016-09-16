@@ -15,9 +15,8 @@ adds a sparkline into a cell
 - config		object 			the sparkline configuration
 
 
-
 @example:
-$$("ssheet").addSparkline(rowId, columnId, config);
+$$("my").addSparkline(5,5,{type:"line", range:"B4:E4", color:"#6666FF"});
 
 
 @template:	api_method
@@ -25,8 +24,9 @@ $$("ssheet").addSparkline(rowId, columnId, config);
 
 the config object includes the following properties:
 
-- type	-	(string)		the type of an added sparkline
-- data	-	(object)		an object with data for a sparkline
-- color	-	(string)		the color of a sparkline
+- type	- (string)	the type of an added sparkline
+- range	- (string)	a range of cells the values of which will be used for making a sparkline
+- color	- (string)	the color of a sparkline either in a hex format or as a color name
+- negativeColor - (string) the color of a negative value for a Bar sparkline 
 
 @relatedsample: 01_basic/11_sparklines.html

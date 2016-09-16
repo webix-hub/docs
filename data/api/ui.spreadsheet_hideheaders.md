@@ -22,4 +22,4 @@ $$("ssheet").hideHeaders(state);
 @descr:
 
 @relatedsample:
-01_basic/08_columns_rows.html
+65_spreadsheet/02_api/04_borders_headers.html

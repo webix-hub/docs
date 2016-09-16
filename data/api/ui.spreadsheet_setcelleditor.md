@@ -29,3 +29,6 @@ The editorObject parameter can have the following properties:
 
 - type - (string) the editor type
 - options - (string/array) a range of cell references or an array of editor options
+
+@relatedsample:
+65_spreadsheet/01_basic/14_dropdowns.html

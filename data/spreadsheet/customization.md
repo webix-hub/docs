@@ -1,4 +1,4 @@
-Customizing SpreadSheet
+Default Toolbar and its Customization
 ========================
 
 SpreadSheet consists of two main parts: a toolbar with instruments panel and a stylized datatable.

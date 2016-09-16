@@ -1,4 +1,4 @@
-Configuring Spreadsheet
+General Configuration Settings
 ===========================
 
 The SpreadSheet component can be easily configured according to your needs. 
