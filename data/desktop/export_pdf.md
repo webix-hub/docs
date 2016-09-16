@@ -44,6 +44,16 @@ If you need to implement data export offline, you should complete the following 
 webix.cdn = "/local_folder/cdn-extras";
 ~~~
 
+####Changing Font for Exported File
+
+By default, Webix provides the *pt-sans.regular.ttf* font file for export. If it doesn't suit you, e.g. you need specific characters that are not included in the font, you can add another file to the 
+"extras" folder described above and define the **fontName** option: 
+
+~~~js
+webix.toPDF($$("mylist"), { fontName:"custom"});
+~~~
+
+Note that only **.ttf** font files are supported. 
 
 Customizing Export to PDF
 -------------------------
