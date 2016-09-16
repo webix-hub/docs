@@ -16,7 +16,7 @@ hideColumn
 
 @example:
 
-$$("ssheet").hideColumn(columnId, state);
+$$("ssheet").hideColumn(2, true);
 
 @template:	api_method
 @descr:

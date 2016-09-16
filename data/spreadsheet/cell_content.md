@@ -200,14 +200,14 @@ $$("ssheet").addSparkline(5,5,{type:"line", range:"B4:E4", color:"#6666FF"});
 {{sample 65_spreadsheet/01_basic/11_sparklines.html}}
 
 
-Using Named Ranges in Formulas 
+Adding Named Ranges 
 -----------------------
 
 You can specify a name for a particular range of cells and then use it in formulas for calculations. Thus, the formula will be easier to understand and work with.
 
 You can add a named range and manipulate it through the **ranges** collection:
 
-- to add a new named range, use the *ranges.add* method and pass two parameters to it:
+- to add a new named range, use the *ranges.add()* method and pass two parameters to it:
 
 	- name - (string) the name for a named range
 	- range - (string) the range of cells to include into the range
@@ -215,14 +215,45 @@ You can add a named range and manipulate it through the **ranges** collection:
 $$("ssheet").ranges.add("MYRANGE","B2:C2");
 ~~~
 
-- to delete an existing named range, use the *ranges.delete* method:
+- to get the range of cells included into the named range, use the *ranges.getCode()* notation:
 
 ~~~js
-$$("ssheet").ranges.add("MYRANGE");
+$$("ssheet").ranges.getCode("MYRANGE"); // -> "B2:C2"
 ~~~
 
+- to get values of all cells included into the named range, make use of the *ranges.getData()* method:
 
-ss.ranges.clear()
+~~~js
+$$("ssheet").ranges.getData("MYRANGE"); 
+~~~
+
+The method returns an array with data values of cells. For example:
+
+~~~js
+
+~~~
+
+- to get all the existing named ranges, apply the *ranges.getRanges()* method:
+
+~~~js
+$$("ssheet").ranges.getRanges(); 
+~~~
+
+The method returns an array with objects, each of which presents a named range. For example:
+
+~~~js
+[{name:"K",range:"C3:D3"},{name:"M",range:"C4:E4"}]
+~~~
+
+- to remove an existing named range, use the *ranges.remove()* method:
+
+~~~js
+$$("ssheet").ranges.remove("MYRANGE");
+~~~
+
+###Using Named Ranges in Formulas
+
+
 
 
 
