@@ -30,7 +30,7 @@ webix.ui({
 
 ####Comments: 
 
-- Standard window contains **head** and **body** sections. However, head can be omitted if you don't need it;
+- Standard window contains **head** and **body** sections. However, head can be set to *false* if you don't need it;
 - To make window visible, you should apply **show()** method after its initialization;
 - A movable window contains **move:true** property in its constructor;
 - By default windows are **non-modal**. When such window is focused, it can be closed with an 'Esc' hotkey. Modality is described below. 
@@ -46,7 +46,7 @@ Head differs from window body in style and may contain:
 
 ~~~js
 {view:"button", label:"Close", width:70, click:("$$('my_win').close();")} 
-		// "my_win" is your window's ID   
+//"my_win" is your window's ID   
 ~~~
 
 Please note that there exist two functions to remove a window from the screen - **close()** and **hide().** The first one completely removes the window from the app and there will be no way to show it back. 
@@ -76,7 +76,7 @@ webix.ui({
 
 ###Window Sizing and Positioning
 
-The must-have parameters for the window are **width** and **height**. If you don't set them, the window will occupy the whole screen.
+The must-have parameters for the window are **width** and **height**. If you don't set them, the window will either be minimized or take the dimensions of the inner view (if set).
 
 Furthermore, Webix window features various methods for setting its **position**. All of them are described in a [separate documentation article](desktop/window_positioning.md).
 
