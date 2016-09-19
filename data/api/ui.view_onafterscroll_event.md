@@ -7,14 +7,17 @@ onAfterScroll
 
 @params:
 
-- pos 	 object		 object with two values: e - horizontal scroll offset and f - vertical scroll offset
 
 @example:
 
-view.attachEvent("onAfterScroll", function(pos){
+view.attachEvent("onAfterScroll", function(){
+	var pos = this.getScrollState();
 	//your code here
+    
 });
 
+@relatedapi:
+	api/scrollable_getscrollstate.md
 
 @template:	api_event
 @descr:
