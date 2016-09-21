@@ -7,14 +7,14 @@ Start
 <div class='index-pc'></div>
 <div class='index-board'>
 
-<h2>Meet Webix 3.4!</h2>
+<h2>Meet Webix 4.0!</h2>
 <ul>
-	<li><a href="datatable/frozen_rows.md">"Frozen" rows</a> for the DataTable</li>
-	<li><a href="datatable/sparklines.md#sparklinestypes">Area, Spline, Pie and Bar</a> types of sparklines</li>
-    <li><a href="desktop/formatted_text_inputs.md">Formatted Text Inputs</a></li>
+	<li>Highly improved <a href="desktop/spreadsheet.md">SpreadSheet</a> complex widget</li>
+	<li>Accessibility: styling, navigation, markup</li>
+    <li>DateRangePicker and DateRangeFilter controls</li>
 </ul>
 
-<p> and <a href="desktop/whats_new_3_4.md">many more...</a></p>
+<p> and <a href="desktop/whats_new_4_0.md">many more...</a></p>
 <a href='http://webix.com/download/' class='index-download' title='Download Webix'></a>
 </div>
 

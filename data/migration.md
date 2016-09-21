@@ -22,7 +22,7 @@ To avoid ambiguity, the *header* and *headerImage* properties related to the doc
 ###Changes in the webix.event helper 
 
 The *context* parameter of the [webix.event](api/_event.md) helper was modified.
-Earlier it indicated an object to which *this* keyword refers (master). Now it awaits a context object with *master*, *capture* and *id* properties.
+Earlier it indicated an object to which *this* keyword refers (master). Now it awaits a context object with *bind*, *capture* and *id* properties.
 
 ###Changes in the collectValues method
 

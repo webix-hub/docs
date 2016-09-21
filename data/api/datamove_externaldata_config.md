@@ -24,10 +24,13 @@ var dtable = {
 @relatedsample:
 	22_dnd/01_basic_dnd.html
 @descr:
-The property function takes 2 parameters:
+The property function takes 3 parameters:
 
-- **data** - (*object*)	the data item to move.
-- **id** - (*string*) the item id in the source element.
+- **newdata** - (*object*) the data item to move;
+- **id** - (*string*) the item id in the source element;
+- **data** - (*object*) original data of the moved data item;
 
-When you drag an item to another element, it will be moved to the target element with the same id it has in the source element. If the target element already contains an item with such id, 
-the id for the item will be set randomly. At the same time, the second parameter of **externalData** will store the initial id of the item (the id in the source element).  
+The function is called when a data item is about to be moved to the target component. 
+
+When you drag a data item to another component, it preserves its id unless the target component contains an item with such id. Then the item will receive a random id. 
+The changed item is **newdata**. The second parameter, **id**, stores the initial id of the item and **data** stores the initial data object.  
