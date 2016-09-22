@@ -138,7 +138,7 @@ var uploader = webix.ui({
 - api/link/ui.uploader_tooltip_config.md - tooltip for the input
 - api/link/ui.uploader_type_config.md - the type of the control
 - api/ui.uploader_upload_config.md - path to the script file that will handle uploading
-- api/ui.uploader_urldata_config.md - 
+- api/ui.uploader_urldata_config.md - extra data that will be sent to server side along with the file uploading
 - api/link/ui.uploader_value_config.md - sets the initial value for a control
 - api/link/ui.uploader_width_config.md - sets the width of the component
 }}

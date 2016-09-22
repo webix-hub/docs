@@ -1,6 +1,19 @@
 Migration to latest Webix version
 =================================
 
+Webix 3.4 -> 4.0
+-----------------
+
+The mechanism of loading PDF files into the [PDFViewer](desktop/pdfviewer.md) component is modified. From 4.0 PDF Viewer uses Webix data loader combined with "binary" [proxy](desktop/server_proxy.md), 
+which allows using standard loading events.
+
+~~~js
+webix.ui({
+    view:"pdfviewer",
+    url:"binary->files/WebixDocs.pdf"
+});
+~~~
+
 Webix 3.3 -> 3.4
 -----------------
 Data filtering in bound components: selected value for a master view should be set after data is loaded

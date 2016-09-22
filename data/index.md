@@ -10,8 +10,8 @@ Start
 <h2>Meet Webix 4.0!</h2>
 <ul>
 	<li>Highly improved <a href="desktop/spreadsheet.md">SpreadSheet</a> complex widget</li>
-	<li>Accessibility: styling, navigation, markup</li>
-    <li>DateRangePicker and DateRangeFilter controls</li>
+	<li><a href="desktop/accessibility.md">Accessibility</a>: styling, navigation, markup</li>
+    <li><a href="desktop/daterangepicker.md">DateRangePicker</a> and <a href="datatable/filtering.md#daterange">DateRangeFilter</a> controls</li>
 </ul>
 
 <p> and <a href="desktop/whats_new_4_0.md">many more...</a></p>

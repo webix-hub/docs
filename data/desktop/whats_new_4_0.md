@@ -3,17 +3,24 @@ Version 4.0
 
 <span class="release_date">released on September 27, 2016</span>
 
+Breaking Changes
+-------------------
+
+- The mechanism of loading PDF files into the [PDFViewer](desktop/pdfviewer.md) component is modified. From version 4.0 PDF Viewer uses Webix data loader combined with "binary" [proxy](desktop/server_proxy.md), which allows using standard loading events.
+
+Check the [Migration Guide](migration.md#webix3440) for more details.
 
 New Features
 --------------------
 
-- SpreadSheet complex widget to replace the previous one
-- Accessibility: 
-	- High contrast "contrast" skin
+- [SpreadSheet](desktop/spreadsheet) complex widget to replace the previous one
+- [Accessibility](desktop/accessibility.md): 
+	- High contrast "contrast" skin {{sample 16_skins/15_contrast.html }}
 	- Specific markup for screen reading software
 	- Full keyboard navigation
-- Angular 2 compatibility
-- DateRangePicker and related controls (DateRange, DateRangeSuggest, DateRangeFilter)
+- Angular 2 compatibility as part of [Angular JS integration](desktop/angular.md)
+- [DateRangePicker](desktop/daterangepicker.md) and related controls ([DateRange](desktop/daterange.md), [DateRangeSuggest](desktop/daterangesuggest.md), 
+[DateRangeFilter](datatable/filtering.md#daterange))
 - GoogleMap as data component
 
 Updates
@@ -22,10 +29,11 @@ Updates
 - [PDF Viewer](desktop/pdfviewer.md): 
 	- navigation and zooming on touch devices
     - scale property and ability to dynamically change it
+    - Webix loading pattern introduced via "binary" [proxy](desktop/server_proxy.md)
 - Export to PDF: ability to set a [custom font file](desktop/export_pdf.md#exportingdataoffline)
-- urlData parameter for Uploader
-- MultiText allows customizing sub fields with subConfig property
-- DataDriver: getInfo properties changed to public
+- [urlData](api/ui.uploader_urldata_config.md) parameter for Uploader
+- MultiText allows customizing sub fields with [subConfig](api/ui.multitext_subconfig_config.md) property
+- [DataDrivers](helpers/data_drivers.md#methodsofdatadriver): public access to the properties returned by .getInfo() method
 - Better control over data move (drag-n-drop): [externalData](api/datamove_externaldata_config.md) property function receives the original data as a third parameter
 
 Fixes

@@ -13,7 +13,7 @@ on clicking the control. It allows choosing a date range and, optionally, time i
 
 <img src="desktop/date_range_picker.png"/>
 
-{{sample 60_pro/02_form/09_daterangepicker.html }}
+{{sample 60_pro/02_form/11_daterangepicker.html }}
 
 ##Initialization
 

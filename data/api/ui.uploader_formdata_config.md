@@ -17,6 +17,9 @@ webix.ui({
 
 
 @template:	api_config
+@relatedapi:api/ui.uploader_urldata_config.md
 @descr:
+
+The data will be added to the body of POST request with file data. 
 
 

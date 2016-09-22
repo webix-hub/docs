@@ -140,6 +140,7 @@ var multitext = webix.ui({
 - api/link/ui.multitext_relatedview_config.md - id of view, that will be affected by relatedAction operation
 - api/link/ui.multitext_required_config.md - marks field as required
 - api/ui.multitext_separator_config.md - sets a delimiter for control's values
+- api/ui.multitext_subconfig_config.md - 
 - api/link/ui.multitext_suggest_config.md - links suggest list to the input
 - api/link/ui.multitext_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/link/ui.multitext_tooltip_config.md - tooltip for the input
