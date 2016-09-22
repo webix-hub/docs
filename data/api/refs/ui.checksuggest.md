@@ -28,8 +28,8 @@ Is used by a [multiselect](api/refs/ui.multiselect.md) control already.
 - api/link/ui.checksuggest_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.checksuggest_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.checksuggest_enable.md - enables the calling view that was disabled by the 'disable' method
-- api/link/ui.checksuggest_getbody.md - gets the ui view of the window body
-- api/link/ui.checksuggest_getbutton.md - get button object of a multiselect popup
+- api/link/ui.checksuggest_getbody.md - gets the UI view of the window body
+- api/link/ui.checksuggest_getbutton.md - gets the button object of a multiselect popup
 - api/link/ui.checksuggest_getchildviews.md - returns child views of the calling component
 - api/link/ui.checksuggest_getformview.md - returns master form for the input
 - api/link/ui.checksuggest_gethead.md - gets the ui view of the window header

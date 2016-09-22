@@ -41,7 +41,7 @@ Properties
 - api/link/ui.calendar_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
 - api/ui.calendar_select_config.md - enables date selection within the calendar.
 - api/ui.calendar_skipemptyweeks_config.md - enables/disables displaying empty weeks (true)
-- api/ui.calendar_timepicker_config.md - enables clock for time selection
+- api/ui.calendar_timepicker_config.md - enables clock displaying for time selection
 - api/ui.calendar_timepickerheight_config.md - sets height of timepicker area
 - api/ui.calendar_type_config.md - type of calendar view
 - api/ui.calendar_weekheader_config.md - enables/disables additional header with week days (false)

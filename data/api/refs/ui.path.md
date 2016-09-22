@@ -217,7 +217,7 @@ dummy stub
 - api/link/ui.path_$drag_other.md - method called when drag operation initiated
 - api/link/ui.path_$draghtml_other.md - defines how dragged item will look
 - api/link/ui.path_$dragin_other.md - method called when item moved on possible drop landing during dnd
-- api/link/ui.path_$dragmark_other.md - method called during dnd when some item in the component need to be marked as active drop target
+- api/link/ui.path_$dragmark_other.md - method called during drag-n-drop, when some item in the component should be marked as an active drop target
 - api/link/ui.path_$dragout_other.md - method called when item moved out of possible drop landing during dnd
 - api/link/ui.path_$drop_other.md - method called when item dragged and dropped on valid target
 - api/link/ui.path_$dropallow_other.md - can be redefined, if you need custom drop rules

@@ -55,7 +55,7 @@ webix.ui({
 - api/link/ui.submenu_exists.md - checks whether an item with the specified id exists
 - api/link/ui.submenu_filter.md - filters the component
 - api/link/ui.submenu_find.md - returns rows that match the criterion
-- api/link/ui.submenu_getbody.md - gets the ui view of the window body
+- api/link/ui.submenu_getbody.md - gets the UI view of the window body
 - api/link/ui.submenu_getchildviews.md - returns child views of the calling component
 - api/link/ui.submenu_getfirstid.md - returns the ID of the first item
 - api/link/ui.submenu_getformview.md - returns master form for the input
@@ -268,7 +268,7 @@ webix.ui({
 - api/link/ui.submenu_$drag_other.md - method called when drag operation initiated
 - api/link/ui.submenu_$draghtml_other.md - defines how dragged item will look
 - api/link/ui.submenu_$dragin_other.md - method called when item moved on possible drop landing during dnd
-- api/link/ui.submenu_$dragmark_other.md - method called during dnd when some item in the component need to be marked as active drop target
+- api/link/ui.submenu_$dragmark_other.md - method called during drag-n-drop, when some item in the component should be marked as an active drop target
 - api/link/ui.submenu_$dragout_other.md - method called when item moved out of possible drop landing during dnd
 - api/link/ui.submenu_$drop_other.md - method called when item dragged and dropped on valid target
 - api/link/ui.submenu_$dropallow_other.md - can be redefined, if you need custom drop rules

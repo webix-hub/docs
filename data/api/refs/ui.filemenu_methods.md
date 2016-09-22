@@ -27,7 +27,7 @@ Methods
 - api/link/ui.filemenu_exists.md - checks whether an item with the specified id exists
 - api/link/ui.filemenu_filter.md - filters the component
 - api/link/ui.filemenu_find.md - returns rows that match the criterion
-- api/link/ui.filemenu_getbody.md - gets the ui view of the window body
+- api/link/ui.filemenu_getbody.md - gets the UI view of the window body
 - api/link/ui.filemenu_getchildviews.md - returns child views of the calling component
 - api/link/ui.filemenu_getcontext.md - gets the master area for contextmenu
 - api/link/ui.filemenu_getfirstid.md - returns the ID of the first item

@@ -71,7 +71,7 @@ var contextmenu = webix.ui({
 - api/link/ui.contextmenu_exists.md - checks whether an item with the specified id exists
 - api/link/ui.contextmenu_filter.md - filters the component
 - api/link/ui.contextmenu_find.md - returns rows that match the criterion
-- api/link/ui.contextmenu_getbody.md - gets the ui view of the window body
+- api/link/ui.contextmenu_getbody.md - gets the UI view of the window body
 - api/link/ui.contextmenu_getchildviews.md - returns child views of the calling component
 - api/link/ui.contextmenu_getcontext.md - gets the master area for contextmenu
 - api/link/ui.contextmenu_getfirstid.md - returns the ID of the first item
@@ -287,7 +287,7 @@ var contextmenu = webix.ui({
 - api/link/ui.contextmenu_$drag_other.md - method called when drag operation initiated
 - api/link/ui.contextmenu_$draghtml_other.md - defines how dragged item will look
 - api/link/ui.contextmenu_$dragin_other.md - method called when item moved on possible drop landing during dnd
-- api/link/ui.contextmenu_$dragmark_other.md - method called during dnd when some item in the component need to be marked as active drop target
+- api/link/ui.contextmenu_$dragmark_other.md - method called during drag-n-drop, when some item in the component should be marked as an active drop target
 - api/link/ui.contextmenu_$dragout_other.md - method called when item moved out of possible drop landing during dnd
 - api/link/ui.contextmenu_$drop_other.md - method called when item dragged and dropped on valid target
 - api/link/ui.contextmenu_$dropallow_other.md - can be redefined, if you need custom drop rules

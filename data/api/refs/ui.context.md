@@ -50,7 +50,7 @@ var context = webix.ui({
 - api/link/ui.context_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.context_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.context_enable.md - enables the calling view that was disabled by the 'disable' method
-- api/link/ui.context_getbody.md - gets the ui view of the window body
+- api/link/ui.context_getbody.md - gets the UI view of the window body
 - api/link/ui.context_getchildviews.md - returns child views of the calling component
 - api/link/ui.context_getcontext.md - gets the master area for contextmenu
 - api/link/ui.context_getformview.md - returns master form for the input

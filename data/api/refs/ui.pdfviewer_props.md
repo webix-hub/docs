@@ -17,6 +17,7 @@ Properties
 - api/link/ui.pdfviewer_minheight_config.md - sets the minimal height for the view
 - api/link/ui.pdfviewer_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.pdfviewer_on_config.md - allows attaching custom handlers to inner events of the component
+- api/ui.pdfviewer_scale_config.md - 
 - api/ui.pdfviewer_toolbar_config.md - 
 - api/ui.pdfviewer_url_config.md - 
 - api/link/ui.pdfviewer_width_config.md - sets the width of the component
@@ -38,6 +39,7 @@ Properties
 - api/link/ui.pdfviewer_minheight_config.md
 - api/link/ui.pdfviewer_minwidth_config.md
 - api/link/ui.pdfviewer_on_config.md
+- api/ui.pdfviewer_scale_config.md
 - api/ui.pdfviewer_toolbar_config.md
 - api/ui.pdfviewer_url_config.md
 - api/link/ui.pdfviewer_width_config.md

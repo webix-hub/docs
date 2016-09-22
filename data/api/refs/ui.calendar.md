@@ -82,7 +82,7 @@ var calendar = webix.ui({
 - api/ui.calendar_onbeforezoom_event.md - fires before zoom level of the calendar is changed
 - api/link/ui.calendar_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.calendar_onblur_event.md - fires when focus is moved out of the view
-- api/ui.calendar_onchange_event.md - fired when a user changes month, year or time in selector.
+- api/ui.calendar_onchange_event.md - fires when a user changes month, year or time in selector.
 - api/ui.calendar_ondateclear_event.md - fires on clicking the [Clear](desktop/calendar.md#todayandclearbuttons) button
 - api/ui.calendar_ondateselect_event.md - fires when a user selects a date.
 - api/link/ui.calendar_ondestruct_event.md - occurs when component destroyed
@@ -147,7 +147,7 @@ var calendar = webix.ui({
 - api/link/ui.calendar_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
 - api/ui.calendar_select_config.md - enables date selection within the calendar.
 - api/ui.calendar_skipemptyweeks_config.md - enables/disables displaying empty weeks (true)
-- api/ui.calendar_timepicker_config.md - enables clock for time selection
+- api/ui.calendar_timepicker_config.md - enables clock displaying for time selection
 - api/ui.calendar_timepickerheight_config.md - sets height of timepicker area
 - api/ui.calendar_type_config.md - type of calendar view
 - api/ui.calendar_weekheader_config.md - enables/disables additional header with week days (false)

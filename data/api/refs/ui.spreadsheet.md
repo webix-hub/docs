@@ -34,6 +34,7 @@ var spreadsheet = webix.ui({
 {{api
 - api/ui.spreadsheet_addfilter.md - adds a filter into a cell
 - api/ui.spreadsheet_addimage.md - adds an image into a cell
+- api/ui.spreadsheet_addsheet.md - 
 - api/ui.spreadsheet_addsparkline.md - adds a sparkline into a cell
 - api/link/ui.spreadsheet_addview.md - add new view to layout-like component
 - api/link/ui.spreadsheet_adjust.md - adjusts the component to the size of the parent HTML container
@@ -41,6 +42,7 @@ var spreadsheet = webix.ui({
 - api/link/ui.spreadsheet_bind.md - binds components
 - api/link/ui.spreadsheet_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.spreadsheet_callevent.md - calls an inner event
+- api/ui.spreadsheet_clearsheet.md - 
 - api/ui.spreadsheet_combinecells.md - merges several adjacent cells
 - api/ui.spreadsheet_confirm.md - creates a confirm box
 - api/link/ui.spreadsheet_define.md - redefines a single configuration property (or a hash of properties)
@@ -50,10 +52,12 @@ var spreadsheet = webix.ui({
 - api/link/ui.spreadsheet_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.spreadsheet_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/ui.spreadsheet_eachselectedcell.md - iterates over all selected cells in the table
+- api/ui.spreadsheet_editsheet.md - 
 - api/link/ui.spreadsheet_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/ui.spreadsheet_filterspreadsheet.md - invokes SpreadSheet filtering by all existing filters
 - api/ui.spreadsheet_freezecolumns.md - fixes the specified amount of columns "on the fly", starting from the very left one
 - api/ui.spreadsheet_freezerows.md - fixes the specified amount of rows "on the fly", starting from the very top one
+- api/ui.spreadsheet_getactivesheet.md - 
 - api/ui.spreadsheet_getcellvalue.md - returns the value of the cell
 - api/link/ui.spreadsheet_getchildviews.md - returns child views of the calling component
 - api/ui.spreadsheet_getcolumn.md - returns the configuration object of the specified SpreadSheet column
@@ -67,8 +71,8 @@ var spreadsheet = webix.ui({
 - api/link/ui.spreadsheet_gettopparentview.md - returns top parent view
 - api/link/ui.spreadsheet_hasevent.md - checks whether the component has the specified event
 - api/link/ui.spreadsheet_hide.md - hides the view
-- api/ui.spreadsheet_hideborders.md - hides the grid lines of the sheet
 - api/ui.spreadsheet_hidecolumn.md - hides a specified column in the sheet
+- api/ui.spreadsheet_hidegridlines.md - 
 - api/ui.spreadsheet_hideheaders.md - hides all headers of rows and columns on the sheet
 - api/ui.spreadsheet_hiderow.md - hides a specified row in the sheet
 - api/link/ui.spreadsheet_index.md - returns the cell index in the layout collection
@@ -88,7 +92,9 @@ var spreadsheet = webix.ui({
 - api/ui.spreadsheet_redo.md - remakes the action that was reverted by the undo action
 - api/ui.spreadsheet_refresh.md - repaints spreadsheet
 - api/ui.spreadsheet_removefilter.md - removes filters from the sheet
+- api/ui.spreadsheet_removesheet.md - 
 - api/link/ui.spreadsheet_removeview.md - removes view from layout-like component
+- api/ui.spreadsheet_renamesheet.md - 
 - api/ui.spreadsheet_reset.md - resets the SpreadSheet settings to the initial state
 - api/link/ui.spreadsheet_resize.md - adjusts the view to a new size
 - api/link/ui.spreadsheet_resizechildren.md - resizes all children of the calling component
@@ -141,6 +147,7 @@ var spreadsheet = webix.ui({
 - api/link/ui.spreadsheet_cols_config.md - array of views objects arranged horizontally
 - api/ui.spreadsheet_columncount_config.md - the number of columns in the SpreadSheet
 - api/ui.spreadsheet_columnoperation_config.md - enables context menu on headers
+- api/ui.spreadsheet_conditionstyle_config.md - 
 - api/link/ui.spreadsheet_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.spreadsheet_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.spreadsheet_data_config.md - JavaScript array containing data for the component
@@ -167,6 +174,7 @@ var spreadsheet = webix.ui({
 - api/link/ui.spreadsheet_responsive_config.md - enables responsive mode for horizontal layout
 - api/ui.spreadsheet_rowcount_config.md - the number of rows in the SpreadSheet
 - api/link/ui.spreadsheet_rows_config.md - array of views objects arranged vertically
+- api/ui.spreadsheet_sheettabwidth_config.md - 
 - api/ui.spreadsheet_subbar_config.md - adds a view between the toolbar and the datatable
 - api/link/ui.spreadsheet_type_config.md - defines the layout borders
 - api/link/ui.spreadsheet_url_config.md - the URL which the component will use to load data after its initialization

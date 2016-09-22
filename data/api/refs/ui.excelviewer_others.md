@@ -5,7 +5,7 @@ Others
 - api/link/ui.excelviewer_$drag_other.md - method called when drag operation initiated
 - api/link/ui.excelviewer_$draghtml_other.md - defines how dragged item will look
 - api/link/ui.excelviewer_$dragin_other.md - method called when item moved on possible drop landing during dnd
-- api/link/ui.excelviewer_$dragmark_other.md - method called during dnd when some item in the component need to be marked as active drop target
+- api/link/ui.excelviewer_$dragmark_other.md - method called during drag-n-drop, when some item in the component should be marked as an active drop target
 - api/link/ui.excelviewer_$dragout_other.md - method called when item moved out of possible drop landing during dnd
 - api/link/ui.excelviewer_$drop_other.md - method called when item dragged and dropped on valid target
 - api/link/ui.excelviewer_$dropallow_other.md - can be redefined, if you need custom drop rules

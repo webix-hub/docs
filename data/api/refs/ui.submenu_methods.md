@@ -26,7 +26,7 @@ Methods
 - api/link/ui.submenu_exists.md - checks whether an item with the specified id exists
 - api/link/ui.submenu_filter.md - filters the component
 - api/link/ui.submenu_find.md - returns rows that match the criterion
-- api/link/ui.submenu_getbody.md - gets the ui view of the window body
+- api/link/ui.submenu_getbody.md - gets the UI view of the window body
 - api/link/ui.submenu_getchildviews.md - returns child views of the calling component
 - api/link/ui.submenu_getfirstid.md - returns the ID of the first item
 - api/link/ui.submenu_getformview.md - returns master form for the input

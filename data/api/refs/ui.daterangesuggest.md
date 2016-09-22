@@ -24,8 +24,8 @@ dummy stub
 - api/link/ui.daterangesuggest_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.daterangesuggest_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.daterangesuggest_enable.md - enables the calling view that was disabled by the 'disable' method
-- api/link/ui.daterangesuggest_getbody.md - gets the ui view of the window body
-- api/ui.daterangesuggest_getbutton.md - 
+- api/link/ui.daterangesuggest_getbody.md - gets the UI view of the window body
+- api/ui.daterangesuggest_getbutton.md - gets the button object of a DateRangePicker popup
 - api/link/ui.daterangesuggest_getchildviews.md - returns child views of the calling component
 - api/link/ui.daterangesuggest_getformview.md - returns master form for the input
 - api/link/ui.daterangesuggest_gethead.md - gets the ui view of the window header

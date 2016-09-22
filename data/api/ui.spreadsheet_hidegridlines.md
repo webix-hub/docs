@@ -1,4 +1,4 @@
-hideBorders
+hideGridlines
 =============
 
 
@@ -13,10 +13,11 @@ hideBorders
 
 
 @example:
-$$("ssheet").hideBorders(state);
+$$("ssheet").hideGridlines(state);
 
 @template:	api_method
 @descr:
 
 @relatedsample:
 65_spreadsheet/02_api/04_borders_headers.html
+

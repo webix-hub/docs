@@ -212,7 +212,7 @@ dummy stub
 - api/ui.kanbanlist_$dragdestroy_other.md - 
 - api/link/ui.kanbanlist_$draghtml_other.md - defines how dragged item will look
 - api/link/ui.kanbanlist_$dragin_other.md - method called when item moved on possible drop landing during dnd
-- api/link/ui.kanbanlist_$dragmark_other.md - method called during dnd when some item in the component need to be marked as active drop target
+- api/link/ui.kanbanlist_$dragmark_other.md - method called during drag-n-drop, when some item in the component should be marked as an active drop target
 - api/link/ui.kanbanlist_$dragout_other.md - method called when item moved out of possible drop landing during dnd
 - api/ui.kanbanlist_$dragpos_other.md - 
 - api/link/ui.kanbanlist_$drop_other.md - method called when item dragged and dropped on valid target

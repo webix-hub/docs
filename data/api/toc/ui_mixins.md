@@ -80,6 +80,7 @@ Mixins
 - api/refs/virtualrenderstack.md -  allows on-demand rendering for plain datasets
 - api/refs/ui.baselayout.md -  a base class for layout-based UI components
 - api/refs/ui.baseview.md -  the very base object for all components
+- api/refs/ui.checksuggest.md -  A suggest control with a multiple-choice list 
 - api/refs/ui.proto.md -  the very base class for UI components
 - api/refs/ui.resizearea.md -  visualization and handling resize movements
 - api/refs/ui.view.md -  a pure view with borders but without any content inside it
@@ -167,6 +168,7 @@ Mixins
 - api/refs/virtualrenderstack.md
 - api/refs/ui.baselayout.md
 - api/refs/ui.baseview.md
+- api/refs/ui.checksuggest.md
 - api/refs/ui.proto.md
 - api/refs/ui.resizearea.md
 - api/refs/ui.view.md

@@ -1,0 +1,1 @@
+@link: api/validatecollection_rules_config.md

@@ -4,6 +4,7 @@ Methods
 {{api
 - api/ui.spreadsheet_addfilter.md - adds a filter into a cell
 - api/ui.spreadsheet_addimage.md - adds an image into a cell
+- api/ui.spreadsheet_addsheet.md - 
 - api/ui.spreadsheet_addsparkline.md - adds a sparkline into a cell
 - api/link/ui.spreadsheet_addview.md - add new view to layout-like component
 - api/link/ui.spreadsheet_adjust.md - adjusts the component to the size of the parent HTML container
@@ -11,6 +12,7 @@ Methods
 - api/link/ui.spreadsheet_bind.md - binds components
 - api/link/ui.spreadsheet_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.spreadsheet_callevent.md - calls an inner event
+- api/ui.spreadsheet_clearsheet.md - 
 - api/ui.spreadsheet_combinecells.md - merges several adjacent cells
 - api/ui.spreadsheet_confirm.md - creates a confirm box
 - api/link/ui.spreadsheet_define.md - redefines a single configuration property (or a hash of properties)
@@ -20,10 +22,12 @@ Methods
 - api/link/ui.spreadsheet_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.spreadsheet_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/ui.spreadsheet_eachselectedcell.md - iterates over all selected cells in the table
+- api/ui.spreadsheet_editsheet.md - 
 - api/link/ui.spreadsheet_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/ui.spreadsheet_filterspreadsheet.md - invokes SpreadSheet filtering by all existing filters
 - api/ui.spreadsheet_freezecolumns.md - fixes the specified amount of columns "on the fly", starting from the very left one
 - api/ui.spreadsheet_freezerows.md - fixes the specified amount of rows "on the fly", starting from the very top one
+- api/ui.spreadsheet_getactivesheet.md - 
 - api/ui.spreadsheet_getcellvalue.md - returns the value of the cell
 - api/link/ui.spreadsheet_getchildviews.md - returns child views of the calling component
 - api/ui.spreadsheet_getcolumn.md - returns the configuration object of the specified SpreadSheet column
@@ -39,6 +43,7 @@ Methods
 - api/link/ui.spreadsheet_hide.md - hides the view
 - api/ui.spreadsheet_hideborders.md - hides the grid lines of the sheet
 - api/ui.spreadsheet_hidecolumn.md - hides a specified column in the sheet
+- api/ui.spreadsheet_hidegridlines.md - 
 - api/ui.spreadsheet_hideheaders.md - hides all headers of rows and columns on the sheet
 - api/ui.spreadsheet_hiderow.md - hides a specified row in the sheet
 - api/link/ui.spreadsheet_index.md - returns the cell index in the layout collection
@@ -58,7 +63,9 @@ Methods
 - api/ui.spreadsheet_redo.md - remakes the action that was reverted by the undo action
 - api/ui.spreadsheet_refresh.md - repaints spreadsheet
 - api/ui.spreadsheet_removefilter.md - removes filters from the sheet
+- api/ui.spreadsheet_removesheet.md - 
 - api/link/ui.spreadsheet_removeview.md - removes view from layout-like component
+- api/ui.spreadsheet_renamesheet.md - 
 - api/ui.spreadsheet_reset.md - resets the SpreadSheet settings to the initial state
 - api/link/ui.spreadsheet_resize.md - adjusts the view to a new size
 - api/link/ui.spreadsheet_resizechildren.md - resizes all children of the calling component
@@ -82,6 +89,7 @@ Methods
 @index:
 - api/ui.spreadsheet_addfilter.md
 - api/ui.spreadsheet_addimage.md
+- api/ui.spreadsheet_addsheet.md
 - api/ui.spreadsheet_addsparkline.md
 - api/link/ui.spreadsheet_addview.md
 - api/link/ui.spreadsheet_adjust.md
@@ -89,6 +97,7 @@ Methods
 - api/link/ui.spreadsheet_bind.md
 - api/link/ui.spreadsheet_blockevent.md
 - api/link/ui.spreadsheet_callevent.md
+- api/ui.spreadsheet_clearsheet.md
 - api/ui.spreadsheet_combinecells.md
 - api/ui.spreadsheet_confirm.md
 - api/link/ui.spreadsheet_define.md
@@ -98,10 +107,12 @@ Methods
 - api/link/ui.spreadsheet_detachevent.md
 - api/link/ui.spreadsheet_disable.md
 - api/ui.spreadsheet_eachselectedcell.md
+- api/ui.spreadsheet_editsheet.md
 - api/link/ui.spreadsheet_enable.md
 - api/ui.spreadsheet_filterspreadsheet.md
 - api/ui.spreadsheet_freezecolumns.md
 - api/ui.spreadsheet_freezerows.md
+- api/ui.spreadsheet_getactivesheet.md
 - api/ui.spreadsheet_getcellvalue.md
 - api/link/ui.spreadsheet_getchildviews.md
 - api/ui.spreadsheet_getcolumn.md
@@ -117,6 +128,7 @@ Methods
 - api/link/ui.spreadsheet_hide.md
 - api/ui.spreadsheet_hideborders.md
 - api/ui.spreadsheet_hidecolumn.md
+- api/ui.spreadsheet_hidegridlines.md
 - api/ui.spreadsheet_hideheaders.md
 - api/ui.spreadsheet_hiderow.md
 - api/link/ui.spreadsheet_index.md
@@ -136,7 +148,9 @@ Methods
 - api/ui.spreadsheet_redo.md
 - api/ui.spreadsheet_refresh.md
 - api/ui.spreadsheet_removefilter.md
+- api/ui.spreadsheet_removesheet.md
 - api/link/ui.spreadsheet_removeview.md
+- api/ui.spreadsheet_renamesheet.md
 - api/ui.spreadsheet_reset.md
 - api/link/ui.spreadsheet_resize.md
 - api/link/ui.spreadsheet_resizechildren.md

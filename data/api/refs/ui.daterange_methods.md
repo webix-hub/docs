@@ -18,7 +18,7 @@ Methods
 - api/link/ui.daterange_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.daterange_getparentview.md - returns the parent view of the component
 - api/link/ui.daterange_gettopparentview.md - returns top parent view
-- api/ui.daterange_getvalue.md - 
+- api/ui.daterange_getvalue.md - returns the current value of the DateRange
 - api/link/ui.daterange_hasevent.md - checks whether the component has the specified event
 - api/link/ui.daterange_hide.md - hides the view
 - api/link/ui.daterange_index.md - returns the cell index in the layout collection
@@ -26,11 +26,11 @@ Methods
 - api/link/ui.daterange_isvisible.md - checks whether the view is visible
 - api/link/ui.daterange_mapevent.md - routes events from one object to another
 - api/link/ui.daterange_reconstruct.md - rebuilds the layout
-- api/ui.daterange_refresh.md - 
+- api/ui.daterange_refresh.md - redraws the DateRange
 - api/link/ui.daterange_removeview.md - removes view from layout-like component
 - api/link/ui.daterange_resize.md - adjusts the view to a new size
 - api/link/ui.daterange_resizechildren.md - resizes all children of the calling component
-- api/ui.daterange_setvalue.md - 
+- api/ui.daterange_setvalue.md - sets a new date range
 - api/link/ui.daterange_show.md - makes the component visible
 - api/link/ui.daterange_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
 - api/link/ui.daterange_unbind.md - breaks "bind" link
