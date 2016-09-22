@@ -253,10 +253,23 @@ $$("ssheet").ranges.remove("MYRANGE");
 
 ###Using Named Ranges in Formulas
 
+Adding Image in a Cell
+----------------------
 
+You can add an image into a cell to illustrate data in the spreadsheet.
 
+<img src="spreadsheet/adding_images.png">
 
+To insert an image into a cell, use the api/ui.spreadsheet_addimage.md method.
+You need to pass three parameters to this method:
 
+- rowId	- (number) the row id
+- columnId - (number) the column id
+- url - (string) the URL of an image
+
+~~~js
+$$("ssheet").addImage(2,3, "image.png");
+~~~
 
 
 

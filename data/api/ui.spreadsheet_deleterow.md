@@ -20,4 +20,4 @@ $$("ssheet").deleteRow(rowId);
 If the rowId parameter isn't specified, the method deletes the selected row.
 
 @relatedsample:
-01_basic/08_columns_rows.html
+65_spreadsheet/01_basic/08_columns_rows.html
