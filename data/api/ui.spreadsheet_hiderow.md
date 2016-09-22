@@ -16,10 +16,10 @@ hideRow
 
 @example:
 
-$$("ssheet").hideRow(rowId, state);
+$$("ssheet").hideRow(3, true);
 
 @template:	api_method
 @descr:
 
 @relatedsample:
-01_basic/08_columns_rows.html
+65_spreadsheet/01_basic/08_columns_rows.html

@@ -41,9 +41,8 @@ Methods
 - api/link/ui.spreadsheet_gettopparentview.md - returns top parent view
 - api/link/ui.spreadsheet_hasevent.md - checks whether the component has the specified event
 - api/link/ui.spreadsheet_hide.md - hides the view
-- api/ui.spreadsheet_hideborders.md - hides the grid lines of the sheet
 - api/ui.spreadsheet_hidecolumn.md - hides a specified column in the sheet
-- api/ui.spreadsheet_hidegridlines.md - 
+- api/ui.spreadsheet_hidegridlines.md - hides the grid lines of the sheet
 - api/ui.spreadsheet_hideheaders.md - hides all headers of rows and columns on the sheet
 - api/ui.spreadsheet_hiderow.md - hides a specified row in the sheet
 - api/link/ui.spreadsheet_index.md - returns the cell index in the layout collection
@@ -126,7 +125,6 @@ Methods
 - api/link/ui.spreadsheet_gettopparentview.md
 - api/link/ui.spreadsheet_hasevent.md
 - api/link/ui.spreadsheet_hide.md
-- api/ui.spreadsheet_hideborders.md
 - api/ui.spreadsheet_hidecolumn.md
 - api/ui.spreadsheet_hidegridlines.md
 - api/ui.spreadsheet_hideheaders.md

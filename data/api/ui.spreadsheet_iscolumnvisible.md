@@ -18,8 +18,10 @@ isColumnVisible
 
 @example:
 
-$$("ssheet").isColumnVisible(columnId);
+var isVisible = $$("ssheet").isColumnVisible(2);
 
 @template:	api_method
 @descr:
 
+@relatedsample:
+65_spreadsheet/01_basic/08_columns_rows.html

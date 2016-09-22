@@ -11,7 +11,7 @@ insertRow
 
 @params:
 
-- rowId			number		the row id
+- rowId			number		the id of the row above which a new row will be inserted
 
 
 
@@ -24,4 +24,4 @@ $$("ssheet").insertRow(rowId);
 If the row id isn't specified, a new row will be inserted above the selected one.
 
 @relatedsample:
-01_basic/08_columns_rows.html
+65_spreadsheet/01_basic/08_columns_rows.html

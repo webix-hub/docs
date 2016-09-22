@@ -10,17 +10,17 @@ insertColumn
 
 @params:
 
-- columnId			number		the column id
+- columnId			number		the id of the column before whicn a new column will be inserted
 
 
 
 @example:
 
-$$("ssheet").insertColumn(columnId);
+$$("ssheet").insertColumn(3);
 
 @template:	api_method
 @descr:
 If the column id isn't specified, a new column will be inserted before the selected one.
 
 @relatedsample:
-01_basic/08_columns_rows.html
+65_spreadsheet/01_basic/08_columns_rows.html
