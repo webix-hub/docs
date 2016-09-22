@@ -1,13 +1,18 @@
-UI Components
+UI Widgets
 ==================
-The <a title="ui library" href="http://webix.com">Webix UI library</a> supplies over 70 fully customizable components to help you build interfaces of different kinds, nicely present data and work with it. There are also multiple controls and
-specific features to make your applications good-looking and user-friendly. All the components are objects made with the webix.ui() constructor where the type of the component is set by the 'view' property (the declarative syntax is available as well).
+The <a title="ui library" href="http://webix.com">Webix UI library</a> supplies over 70 fully customizable widgets 
+to help you build interfaces of different kinds, nicely present data and work with it. 
+There are also multiple controls and specific features to make your applications good-looking and user-friendly.
+
+All the widgets are objects made with the webix.ui() constructor where the type of the widget
+is set by the 'view' property (the declarative syntax is available as well).
 
 
 <h2 style="clear:both;"/>Complex Widgets</h2>
-
-A set of ready-made JavaScript widgets is provided to solve tasks in different fields. Whether you need to create an interactive data report, optimize a workflow, add and manage events,
-handle hierarchical data or make calculations in a powerful spreadsheet, you will surely find a proper widget for your needs in the Webix library.
+A set of ready-made JavaScript widgets is provided to solve tasks in different fields. 
+Whether you need to create an interactive data report, optimize a workflow, add and manage events,
+handle hierarchical data or make calculations in a powerful spreadsheet, 
+you will surely find a proper widget for your needs in the Webix library.
 
 <div class="components_main" style="padding-left:35px;">
 	<div>
@@ -37,16 +42,15 @@ handle hierarchical data or make calculations in a powerful spreadsheet, you wil
     <div>
 		<a href="desktop/spreadsheet.md">
 			<img src="desktop/icons/spreadsheet.png"/>
-			<br>Spreadsheet
+			<br>SpreadSheet
 		</a>
     </div>
 </div>
 
 
-<h2 style="clear:both;"/>Data Components</h2>
-
-Data components are used to present data of a specified type on the page. Such components manage the space allocated for their data and provide functionality for its access and configuration.
- 
+<h2 style="clear:both;"/>Data Widgets</h2>
+Data widgets are used to present data of a specified type on the page. 
+Such widgets manage the space allocated for their data and provide functionality for its access and configuration. 
 <div class="components_group" style="padding-left:60px;">
 	<div>
 		<a href="desktop/chart.md">
@@ -184,9 +188,9 @@ Layouts help you to organize your web page, define its overall look-and-feel. Yo
 </div>
 
 
-<h2 style="clear:both;"/>Context Components</h2>
+<h2 style="clear:both;"/>Context Widgets</h2>
 
-Context components let displaying spatial and temporal information on some user's action, such as click on a button or filling in a field. 
+Context widgets let displaying spatial and temporal information on some user's action, such as click on a button or filling in a field. 
 
 <div class="components_group" style="padding-left:10px;">
 	<div>
@@ -236,9 +240,9 @@ Context components let displaying spatial and temporal information on some user'
 
 
 
-<h2 style="clear:both;">HTML-oriented Components</h2>
+<h2 style="clear:both;">HTML-oriented Widgets</h2>
 
-HTML-oriented components supply handy means for using habitual HTML elements in an application. There you can specify HTML templates, inline frames, forms etc.
+HTML-oriented widgets supply handy means for using habitual HTML elements in an application. There you can specify HTML templates, inline frames, forms etc.
 
 <div class="components_group" style="padding-left:60px;">
 	<div>
@@ -271,8 +275,8 @@ HTML-oriented components supply handy means for using habitual HTML elements in 
 
 <h2 style="clear:both;">Specific Widgets</h2>
 
-The widgets listed in this section will 
-help you to complete the picture of your application, add special features that can't be achieved with the standard set of components presented above. 
+The widgets listed in this section will help you to complete the picture of your application,
+add special features that can't be achieved with the standard set of widgets presented above. 
 
 <div class="components_group" style="padding-left:10px;">
 	<div>
@@ -320,8 +324,8 @@ help you to complete the picture of your application, add special features that 
 </div>
 
 <h2 style="clear:both;">Controls</h2>
-
-Controls are mainly responsible for handling events since they enable user-app interaction by triggering functions attached to them. Note that any event can be attached to any component by referring to its ID.  
+Controls are mainly responsible for handling events since they enable user-app interaction by triggering functions attached to them. 
+Note that any event can be attached to any widget by referring to its ID.  
 <div class="controls_group" style="padding-left:20px;">
 	<ul>
 		<li><a href="desktop/button.md"><img src="api/toc/button.png"/> Button </a></li>
@@ -371,10 +375,11 @@ Controls are mainly responsible for handling events since they enable user-app i
 </div>
 
 <h2 style="clear:both;">UI Extensions</h2>
-UI extensions are helpful components that are mostly task-oriented and intended to accomplish a certain purpose. They are already quite configurable and need only initializing on the page to start serving. 
+UI extensions are helpful widgets that are mostly task-oriented and intended to accomplish a certain purpose. 
+They are already quite configurable and need only to be initialized on the page to start serving.
 
 <br>
-To see a complete list of extension components and find out details on their use, please, go to the chapter - desktop/extensions.md.
+To see a complete list of extension widgets and find out details on their use, please, go to the chapter - desktop/extensions.md.
 
 
 
