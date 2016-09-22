@@ -108,7 +108,7 @@ var multitext = webix.ui({
 - api/link/ui.multitext_bottomlabel_config.md - sets a label under a control
 - api/link/ui.multitext_bottompadding_config.md - sets the bottom offset of the control input
 - api/link/ui.multitext_click_config.md - click action handler
-- api/link/ui.multitext_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.multitext_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.multitext_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.multitext_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.multitext_gravity_config.md - sets the view gravity (1 by default)
@@ -184,4 +184,3 @@ var multitext = webix.ui({
 - api/refs/ui.multitext_events.md
 - api/refs/ui.multitext_others.md
 
-@edition:pro

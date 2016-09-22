@@ -106,7 +106,7 @@ webix.ui({
 - api/link/ui.pager_animate_config.md - defines or disables view change animation.
 - api/ui.pager_apionly_config.md - makes the pager invisible to enable paging with custom buttons
 - api/link/ui.pager_borderless_config.md - used to hide the component borders
-- api/link/ui.pager_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.pager_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/ui.pager_count_config.md - the total number of records that the pager will process
 - api/link/ui.pager_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.pager_disabled_config.md - indicates whether an item is enabled or not

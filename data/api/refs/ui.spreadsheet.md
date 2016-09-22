@@ -32,6 +32,9 @@ var spreadsheet = webix.ui({
 <div class='h2'>Methods</div>
 
 {{api
+- api/ui.spreadsheet_addfilter.md - adds a filter into a cell
+- api/ui.spreadsheet_addimage.md - adds an image into a cell
+- api/ui.spreadsheet_addsparkline.md - adds a sparkline into a cell
 - api/link/ui.spreadsheet_addview.md - add new view to layout-like component
 - api/link/ui.spreadsheet_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.spreadsheet_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
@@ -39,12 +42,18 @@ var spreadsheet = webix.ui({
 - api/link/ui.spreadsheet_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.spreadsheet_callevent.md - calls an inner event
 - api/ui.spreadsheet_combinecells.md - merges several adjacent cells
+- api/ui.spreadsheet_confirm.md - creates a confirm box
 - api/link/ui.spreadsheet_define.md - redefines a single configuration property (or a hash of properties)
+- api/ui.spreadsheet_deletecolumn.md - deletes a column by id
+- api/ui.spreadsheet_deleterow.md - deletes a row by id
 - api/link/ui.spreadsheet_destructor.md - destructs the calling object
 - api/link/ui.spreadsheet_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.spreadsheet_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/ui.spreadsheet_eachselectedcell.md - iterates over all selected cells in the table
 - api/link/ui.spreadsheet_enable.md - enables the calling view that was disabled by the 'disable' method
+- api/ui.spreadsheet_filterspreadsheet.md - invokes SpreadSheet filtering by all existing filters
+- api/ui.spreadsheet_freezecolumns.md - fixes the specified amount of columns "on the fly", starting from the very left one
+- api/ui.spreadsheet_freezerows.md - fixes the specified amount of rows "on the fly", starting from the very top one
 - api/ui.spreadsheet_getcellvalue.md - returns the value of the cell
 - api/link/ui.spreadsheet_getchildviews.md - returns child views of the calling component
 - api/ui.spreadsheet_getcolumn.md - returns the configuration object of the specified SpreadSheet column
@@ -53,30 +62,46 @@ var spreadsheet = webix.ui({
 - api/link/ui.spreadsheet_getparentview.md - returns the parent view of the component
 - api/ui.spreadsheet_getrow.md - returns the row data by its id
 - api/ui.spreadsheet_getselectedid.md - returns the ids of all cells in the select area
+- api/ui.spreadsheet_getselectedrange.md - returns the range of selected cells
 - api/ui.spreadsheet_getstyle.md - returns the style set for the cell
 - api/link/ui.spreadsheet_gettopparentview.md - returns top parent view
 - api/link/ui.spreadsheet_hasevent.md - checks whether the component has the specified event
 - api/link/ui.spreadsheet_hide.md - hides the view
+- api/ui.spreadsheet_hideborders.md - hides the grid lines of the sheet
+- api/ui.spreadsheet_hidecolumn.md - hides a specified column in the sheet
+- api/ui.spreadsheet_hideheaders.md - hides all headers of rows and columns on the sheet
+- api/ui.spreadsheet_hiderow.md - hides a specified row in the sheet
 - api/link/ui.spreadsheet_index.md - returns the cell index in the layout collection
-- api/link/ui.spreadsheet_innerid.md - returns the unique inner ID of an item
+- api/link/ui.spreadsheet_innerid.md - returns the inner ID of an item by its public (real) ID
+- api/ui.spreadsheet_insertcolumn.md - inserts an empty column to the left of the specified one
+- api/ui.spreadsheet_insertrow.md - inserts an empty row above the specified one
+- api/ui.spreadsheet_iscelllocked.md - checks whether the cell under question is locked
+- api/ui.spreadsheet_iscolumnvisible.md - checks whether the specified column is visible
 - api/link/ui.spreadsheet_isenabled.md - checks whether the view is enabled
+- api/ui.spreadsheet_isrowvisible.md - checks whether the specified row is visible
 - api/link/ui.spreadsheet_isvisible.md - checks whether the view is visible
 - api/link/ui.spreadsheet_load.md - loads data from an external data source.
+- api/ui.spreadsheet_lockcell.md - forbids editing a cell
 - api/link/ui.spreadsheet_mapevent.md - routes events from one object to another
 - api/link/ui.spreadsheet_parse.md - loads data to the component from an inline data source
 - api/link/ui.spreadsheet_reconstruct.md - rebuilds the layout
 - api/ui.spreadsheet_redo.md - remakes the action that was reverted by the undo action
 - api/ui.spreadsheet_refresh.md - repaints spreadsheet
+- api/ui.spreadsheet_removefilter.md - removes filters from the sheet
 - api/link/ui.spreadsheet_removeview.md - removes view from layout-like component
 - api/ui.spreadsheet_reset.md - resets the SpreadSheet settings to the initial state
 - api/link/ui.spreadsheet_resize.md - adjusts the view to a new size
 - api/link/ui.spreadsheet_resizechildren.md - resizes all children of the calling component
 - api/ui.spreadsheet_savecell.md - saves changes made in the cell
 - api/ui.spreadsheet_serialize.md - serializes SpreadSheet data to a JSON object
+- api/ui.spreadsheet_setcelleditor.md - creates an editor in a cell
+- api/ui.spreadsheet_setcellfilter.md - creates a select filter
 - api/ui.spreadsheet_setcellvalue.md - sets a value for the cell
+- api/ui.spreadsheet_setformat.md - sets a custom format for a cell
 - api/ui.spreadsheet_setstyle.md - sets a style for a cell
 - api/link/ui.spreadsheet_show.md - makes the component visible
 - api/link/ui.spreadsheet_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
+- api/ui.spreadsheet_showsheet.md - shows a sheet by name
 - api/ui.spreadsheet_splitcell.md - splits the cells' span that was made by merging several cells
 - api/link/ui.spreadsheet_ui.md - allows creating new ui, the id of which will be locked in the parent id space
 - api/link/ui.spreadsheet_unbind.md - breaks "bind" link
@@ -94,6 +119,7 @@ var spreadsheet = webix.ui({
 - api/link/ui.spreadsheet_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/ui.spreadsheet_onbeforespan_event.md - fires before cells' are merged
 - api/ui.spreadsheet_onbeforesplit_event.md - fires before merged cells are splitted
+- api/ui.spreadsheet_onbeforevaluechange_event.md - fires before the value of a cell is changed
 - api/link/ui.spreadsheet_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/ui.spreadsheet_oncellchange_event.md - fires when a cell is changed
 - api/ui.spreadsheet_oncomponentinit_event.md - fires when spreadsheet is initialized
@@ -102,6 +128,7 @@ var spreadsheet = webix.ui({
 - api/link/ui.spreadsheet_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.spreadsheet_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/ui.spreadsheet_onreset_event.md - fires when the settings of SpreadSheet are reset to the initial state
+- api/ui.spreadsheet_onstyleset_event.md - fires when a new style is set for a cell
 }}
 
 
@@ -113,7 +140,8 @@ var spreadsheet = webix.ui({
 - api/ui.spreadsheet_buttons_config.md - contains the names of buttons blocks with arrays of buttons' names
 - api/link/ui.spreadsheet_cols_config.md - array of views objects arranged horizontally
 - api/ui.spreadsheet_columncount_config.md - the number of columns in the SpreadSheet
-- api/link/ui.spreadsheet_container_config.md - an html container (or its id) where the component needs initializing
+- api/ui.spreadsheet_columnoperation_config.md - enables context menu on headers
+- api/link/ui.spreadsheet_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.spreadsheet_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.spreadsheet_data_config.md - JavaScript array containing data for the component
 - api/link/ui.spreadsheet_datatype_config.md - the type of loaded data
@@ -122,7 +150,7 @@ var spreadsheet = webix.ui({
 - api/link/ui.spreadsheet_height_config.md - sets the height of the component
 - api/link/ui.spreadsheet_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.spreadsheet_id_config.md - the component ID
-- api/link/ui.spreadsheet_isolate_config.md - masks IDs of all inner element
+- api/link/ui.spreadsheet_isolate_config.md - masks IDs of all inner elements
 - api/ui.spreadsheet_liveeditor_config.md - enables the formula editor in spreadsheet
 - api/link/ui.spreadsheet_margin_config.md - defines the space around elements (applies the specified value to all elements)
 - api/ui.spreadsheet_math_config.md - enables the math functionality in the spreadsheet

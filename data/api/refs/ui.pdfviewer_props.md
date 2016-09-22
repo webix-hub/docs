@@ -4,7 +4,7 @@ Properties
 {{api
 - api/link/ui.pdfviewer_animate_config.md - defines or disables view change animation.
 - api/link/ui.pdfviewer_borderless_config.md - used to hide the component borders
-- api/link/ui.pdfviewer_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.pdfviewer_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.pdfviewer_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.pdfviewer_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.pdfviewer_downloadname_config.md - 

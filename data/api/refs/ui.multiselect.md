@@ -111,7 +111,7 @@ var multiselect = webix.ui({
 - api/link/ui.multiselect_bottomlabel_config.md - sets a label under a control
 - api/link/ui.multiselect_bottompadding_config.md - sets the bottom offset of the control input
 - api/link/ui.multiselect_click_config.md - click action handler
-- api/link/ui.multiselect_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.multiselect_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.multiselect_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.multiselect_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.multiselect_gravity_config.md - sets the view gravity (1 by default)
@@ -190,4 +190,3 @@ var multiselect = webix.ui({
 - api/refs/ui.multiselect_events.md
 - api/refs/ui.multiselect_others.md
 
-@edition:pro

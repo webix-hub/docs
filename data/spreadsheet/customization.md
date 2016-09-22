@@ -1,17 +1,26 @@
-Customizing SpreadSheet
+Default Toolbar and its Customization
 ========================
 
 SpreadSheet consists of two main parts: a toolbar with instruments panel and a stylized datatable.
 
-The full structure of SpreadSheet can be presented:
+The full structure of SpreadSheet can be presented as:
 
 - Toolbar:
- - the Undo/Redo buttons
- - Font section: the Font-family and Font-size selectors
- - Text section: the Font-weight buttons and the Font color selector (colorboard)
- - Cell section: the Background color selector, the Borders selector with colorboard and the Merge button
- - Align section: the Horizontal and Vertical Align buttons and the Word Wrap button
- - Format section with the Format selector of the cell's content
+	- <a href="spreadsheet/customization.md#undo">Undo/Redo block</a>
+	- <a href="spreadsheet/customization.md#font">Font block</a>: 
+    	- Font family select
+        - Font size select
+    	- Font type buttons
+        - Font color select 
+    	- Background color select
+        - Borders select  
+	- <a href="spreadsheet/customization.md#align">Align block</a>: 
+    	- Horizontal Align button
+        - Vertical Align button
+        - Text Wrap button
+        - Merge button
+	- <a href="spreadsheet/customization.md#format">Format block</a>:  
+    	- Format select
 - DataTable
 
 
@@ -20,9 +29,9 @@ Toolbar
 
 The toolbar contains a panel with instruments for editing and formatting the content of table's cells.
 
-<img src="spreadsheet/instruments_panel.png">
+<img src="spreadsheet/default_toolbar.png">
 
-To refer to the toolbar object, firstly you need to specify the id of toolbar in the its configuration.
+To refer to the toolbar object, firstly you need to specify the toolbar's id in the toolbar configuration.
 
 ~~~js
 var bar = {
@@ -39,24 +48,75 @@ Then you can address to the toolbar via the corresponding id.
 spreadsheet.$$("bar");
 ~~~
 
-Customizing Buttons on Toolbar
+Toolbar buttons
+---------------
+
+In this section we will consider the blocks of buttons and their purpose in detail.
+
+<h3 id="undo">Undo/Redo block</h3>
+
+<img src="spreadsheet/undo_redo.png">
+
+It includes two buttons:
+
+- the *Undo* button discards the recent change and reverts Spreadsheet into the previous state
+- the *Redo* button restores the applied change one more time
+
+<h3 id="font">Font block</h3> 
+
+<img src="spreadsheet/font.png">
+
+This block contains a large group of buttons intended for handling font and cell borders' settings:
+
+- the *Font family* select allows choosing the necessary font for the cell's text
+- the *Font size* select sets the font size of the cell's text 
+- the *Font type* group of buttons helps to define the weight, style and decoration of the font:
+	- Bold
+    - Italic
+    - Underline
+- the *Font color* select sets the font color 
+- the *Background color* select sets the cell color
+- the *Borders* select lets apply a new or different style for cell borders    
+
+<h3 id="align">Align block</h3>
+
+<img src="spreadsheet/align.png">
+
+Besides managing Horizontal and Vertical cell alignment, this block also includes means of text wrapping and merging cells' content:
+
+- the *Horizontal align* select allows specifying one of three modes of text alignment in a cell: left, right or center 
+- the *Vertical align* select defines the mode of vertical text alignment in a cell: top, middle or bottom
+- the *Text Wrap* button lets wrap text in a cell
+- the *Merge* button allows merging the content of several cells and unmerging it as well
+
+<h3 id="format">Format block</h3> 
+
+<img src="spreadsheet/format.png">
+
+The only button of this block is the *Format* select, which sets the format of cell content. The available formats are:
+
+- Common
+- Currency
+- Number
+- Percent
+
+Customizing toolbar's buttons
 ---------------------------
 
 The settings for toolbar are specified in the api/ui.spreadsheet_buttons_config.md configuration object. It contains the names of button blocks as parameters.
 The parameters' values are arrays of buttons that are included into this or that block.
 
 ~~~js
-buttons:{
-	"undo": ["undo", "redo"],
-	"font": ["font-family", "font-size"],
-	"text": ["font-weight", "font-style", "text-decoration", "color"],
-	"cell": ["background", "borders", "span"],
-	"align": ["text-align", "vertical-align", "wrap"],
+buttons: {
+	"undo": ["undo","redo"],
+	"font": ["font-family","font-size","font-weight","font-style",
+	"text-decoration","color","background","borders"],
+	"align": ["text-align","vertical-align","wrap","span"],
 	"format": ["format"]
 }
 ~~~
 
-The button blocks' names correspond to the properties defined in the localization files that specify the language of its labels.
+The button blocks' names correspond to the properties defined in the localization files that specify the language of its lables.
 
 ###Removing a block or a button
 

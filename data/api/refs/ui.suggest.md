@@ -113,7 +113,7 @@ webix.ui({
 - api/link/ui.suggest_autofocus_config.md - sets focus on the window the moment it appears on the page
 - api/link/ui.suggest_body_config.md - the content of window body: template or view
 - api/link/ui.suggest_borderless_config.md - used to hide the component borders
-- api/link/ui.suggest_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.suggest_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.suggest_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.suggest_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.suggest_filter_config.md - custom filtering function

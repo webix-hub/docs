@@ -96,7 +96,7 @@ var icon = webix.ui({
 - api/link/ui.icon_autowidth_config.md - adjusts button to its text content
 - api/link/ui.icon_borderless_config.md - used to hide the component borders
 - api/link/ui.icon_click_config.md - click action handler
-- api/link/ui.icon_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.icon_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.icon_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.icon_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.icon_gravity_config.md - sets the view gravity (1 by default)

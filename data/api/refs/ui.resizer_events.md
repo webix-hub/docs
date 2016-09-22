@@ -13,7 +13,6 @@ Events
 - api/link/ui.resizer_onitemdblclick_event.md - fires when a component item was double-clicked
 - api/link/ui.resizer_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.resizer_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
-- api/link/ui.resizer_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.resizer_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.resizer_onmouseout_event.md - fires when the mouse was moved out from the specified item
 - api/link/ui.resizer_onswipex_event.md - occurs on a horizontal swipe movement
@@ -37,7 +36,6 @@ Events
 - api/link/ui.resizer_onitemdblclick_event.md
 - api/link/ui.resizer_onkeypress_event.md
 - api/link/ui.resizer_onlongtouch_event.md
-- api/link/ui.resizer_onmousemove_event.md
 - api/link/ui.resizer_onmousemoving_event.md
 - api/link/ui.resizer_onmouseout_event.md
 - api/link/ui.resizer_onswipex_event.md

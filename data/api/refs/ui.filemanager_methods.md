@@ -59,7 +59,7 @@ Methods
 - api/ui.filemanager_hidesearchresults.md - hides search results
 - api/ui.filemanager_hidetree.md - hides the Tree panel
 - api/link/ui.filemanager_index.md - returns the cell index in the layout collection
-- api/link/ui.filemanager_innerid.md - returns the unique inner ID of an item
+- api/link/ui.filemanager_innerid.md - returns the inner ID of an item by its public (real) ID
 - api/link/ui.filemanager_isbranch.md - checks whether the node has any children
 - api/link/ui.filemanager_isenabled.md - checks whether the view is enabled
 - api/link/ui.filemanager_isvisible.md - checks whether the view is visible

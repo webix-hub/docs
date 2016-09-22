@@ -1,4 +1,4 @@
-Scrollview
+ScrollView
 ======================
 
 ##API Reference

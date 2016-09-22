@@ -152,7 +152,7 @@ Webix [richselect](desktop/richselect.md) control that is a non-editable variati
 - The options can be defined by either a simple or an associative array as well as by url. [Look here for details](#options);
 - The editor is subject to [extensive customization](#advancedconfigurationofselecteditors). 
 
-####Pro Extensions for Combo Editor
+####Pro Extensions for Richselect Editor
 
 In the **Webix Pro** edition the editor can be extended to show either a **dataview** or **datatable** in the popup:
 

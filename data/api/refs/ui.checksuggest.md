@@ -95,7 +95,7 @@ Is used by a [multiselect](api/refs/ui.multiselect.md) control already.
 - api/link/ui.checksuggest_borderless_config.md - used to hide the component borders
 - api/link/ui.checksuggest_button_config.md - sets a button at the bottom of the suggest
 - api/link/ui.checksuggest_buttontext_config.md - defines text for the 'Select' button
-- api/link/ui.checksuggest_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.checksuggest_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.checksuggest_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.checksuggest_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.checksuggest_filter_config.md - custom filtering function
@@ -158,4 +158,3 @@ Is used by a [multiselect](api/refs/ui.multiselect.md) control already.
 - api/refs/ui.checksuggest_events.md
 - api/refs/ui.checksuggest_others.md
 
-@edition:pro

@@ -3,10 +3,10 @@ onChange
 
 
 @short:
-	fired when a user changes month, year or time in selector. 
+	fires when a user changes month, year or time in selector. 
 
 @params:
-- date		date		the selected date.
+- date		date		the selected date
 
 @example: 
 	

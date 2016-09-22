@@ -16,9 +16,12 @@ if (webix.env.isIE)
 @template:	api_config
 @defined:	env	
 @relatedapi:
+- api/env_isedge_other.md
+- api/env_isie8_other.md
+- api/env_isff_other.md
+- api/env_isopera_other.md
 - api/env_issafari_other.md
 - api/env_iswebkit_other.md
-- api/env_isff_other.md
 
 @descr:
 

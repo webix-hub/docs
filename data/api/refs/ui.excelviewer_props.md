@@ -13,7 +13,7 @@ Properties
 - api/link/ui.excelviewer_clipboard_config.md - enables/disables clipboard support
 - api/link/ui.excelviewer_columnwidth_config.md - defines the default width for columns (in pixels)
 - api/link/ui.excelviewer_columns_config.md - configures columns of the table
-- api/link/ui.excelviewer_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.excelviewer_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.excelviewer_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.excelviewer_data_config.md - JavaScript array containing data for the component
 - api/link/ui.excelviewer_datafetch_config.md - defines the number of records that will be loaded into datatable during the next dynamic loading call
@@ -83,7 +83,7 @@ Properties
 - api/link/ui.excelviewer_subrow_config.md - sets a subrow template
 - api/link/ui.excelviewer_subview_config.md - adds a subview configuration into datatable
 - api/ui.excelviewer_toolbar_config.md - 
-- api/link/ui.excelviewer_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.excelviewer_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.excelviewer_topsplit_config.md - defines the number of rows that will be "frozen" at the top of datatable
 - api/link/ui.excelviewer_type_config.md - used for configuring presentation of items
 - api/link/ui.excelviewer_url_config.md - the URL which the component will use to load data after its initialization

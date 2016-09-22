@@ -10,7 +10,7 @@ Properties
 - api/link/ui.textarea_bottomlabel_config.md - sets a label under a control
 - api/link/ui.textarea_bottompadding_config.md - sets the bottom offset of the control input
 - api/link/ui.textarea_click_config.md - click action handler
-- api/link/ui.textarea_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.textarea_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.textarea_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.textarea_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.textarea_gravity_config.md - sets the view gravity (1 by default)

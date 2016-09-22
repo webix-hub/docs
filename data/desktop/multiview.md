@@ -1,4 +1,4 @@
-Multiview
+MultiView
 ==========================
 
 ##API Reference 

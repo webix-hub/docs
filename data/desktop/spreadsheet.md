@@ -37,12 +37,24 @@ of various languages.
 		        Configuring SpreadSheet
 		    </h4>
 		    <ul id="design_sublist">
-                <li>spreadsheet/spreadsheet_init.md</li>
-                <li>spreadsheet/customization.md</li>
+                <li>spreadsheet/spreadsheet_init.md</li>                
                 <li>spreadsheet/loading_data.md</li>
+                <li>spreadsheet/states.md</li>
                 <li>spreadsheet/localization.md</li>
-                <li>spreadsheet/config.md</li>
-               
+                <li>spreadsheet/config.md</li>          
+            </ul>
+		</td>
+		<td class='topic_description'>Discusses the main points of SpreadSheet initialization and customization.</td>
+	</tr>
+    <tr>
+		<td id="design" class='topics'>
+		    <h4 id='ui'>
+		        Look and Feel of SpreadSheet
+		    </h4>
+		    <ul id="design_sublist">
+                <li>spreadsheet/customization.md</li>   
+                <li>spreadsheet/frozen_rows_columns.md</li> 
+                <li>spreadsheet/ui_guide.md</li>
             </ul>
 		</td>
 		<td class='topic_description'>Discusses the main points of SpreadSheet initialization and customization.</td>
@@ -53,11 +65,36 @@ of various languages.
 		        Working with SpreadSheet
 		    </h4>
 		    <ul id="design_sublist">
+            	<li>spreadsheet/cell_content.md</li> 
+            	<li>spreadsheet/conditional_formatting.md</li>
             	<li>spreadsheet/math.md</li>
+                <li>spreadsheet/multiple_sheets.md</li>
+                <li>spreadsheet/rows_columns.md</li>
+                <li>spreadsheet/work_with_data.md</li>
+            </ul>
+		</td>
+		<td class='topic_description'>Describes possible operations with SpreadSheet and its elements.</td>
+	</tr>
+    <tr>
+		<td id="design" class='topics'>
+		    <h4 id='ui'>
+		        Export and Import
+		    </h4>
+		    <ul id="design_sublist">            	
                 <li>spreadsheet/export.md</li>
-                <li>spreadsheet/import.md</li>
+                <li>spreadsheet/import.md</li>                              
+            </ul>
+		</td>
+		<td class='topic_description'>Describes possible operations with SpreadSheet and its elements.</td>
+	</tr>
+    <tr>
+		<td id="design" class='topics'>
+		    <h4 id='ui'>
+		        Supplementary Resources
+		    </h4>
+		    <ul id="design_sublist">            	
                 <li>spreadsheet/handling_events.md</li>
-                <li>spreadsheet/howto.md</li>
+                <li>spreadsheet/howto.md</li> 
             </ul>
 		</td>
 		<td class='topic_description'>Describes possible operations with SpreadSheet and its elements.</td>
@@ -70,10 +107,18 @@ of various languages.
 - spreadsheet/spreadsheet_init.md
 - spreadsheet/customization.md
 - spreadsheet/loading_data.md
+- spreadsheet/states.md
 - spreadsheet/localization.md
 - spreadsheet/config.md
+- spreadsheet/cell_content.md
+- spreadsheet/frozen_rows_columns.md
+- spreadsheet/conditional_formatting.md
 - spreadsheet/math.md
+- spreadsheet/multiple_sheets.md
+- spreadsheet/rows_columns.md
+- spreadsheet/work_with_data.md
 - spreadsheet/export.md
 - spreadsheet/import.md
 - spreadsheet/handling_events.md
 - spreadsheet/howto.md
+- spreadsheet/ui_guide.md

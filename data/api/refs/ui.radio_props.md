@@ -10,7 +10,7 @@ Properties
 - api/link/ui.radio_bottomlabel_config.md - sets a label under a control
 - api/link/ui.radio_bottompadding_config.md - sets the bottom offset of the control input
 - api/link/ui.radio_click_config.md - click action handler
-- api/link/ui.radio_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.radio_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.radio_css_config.md - the name of a css class that will be applied to the view container
 - api/ui.radio_customradio_config.md - enables/disables custom radio button for some skins
 - api/link/ui.radio_disabled_config.md - indicates whether an item is enabled or not

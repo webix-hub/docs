@@ -1,10 +1,10 @@
 getButton
 =============
 
-@short: get button object of a multiselect popup
+@short: gets the button object of a multiselect popup
 	
 @returns: 
-- obj       WebixView       webiv ui object of button
+- obj       WebixView       Webix UI object of a button
 
 @example:
 

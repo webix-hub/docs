@@ -4,7 +4,7 @@ Properties
 {{api
 - api/ui.baseview_animate_config.md - defines or disables view change animation.
 - api/ui.baseview_borderless_config.md - used to hide the component borders
-- api/ui.baseview_container_config.md - an html container (or its id) where the component needs initializing
+- api/ui.baseview_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/ui.baseview_css_config.md - the name of a css class that will be applied to the view container
 - api/ui.baseview_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.baseview_gravity_config.md - sets the view gravity (1 by default)

@@ -6,7 +6,7 @@ Properties
 - api/link/ui.kanban_borderless_config.md - used to hide the component borders
 - api/link/ui.kanban_collapsed_config.md - 'says' to display initially all accordion cells collapsed
 - api/link/ui.kanban_cols_config.md - array of views objects arranged horizontally
-- api/link/ui.kanban_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.kanban_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.kanban_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.kanban_data_config.md - JavaScript array containing data for the component
 - api/link/ui.kanban_datafeed_config.md - the URL that the component will use to reload data during binding
@@ -17,7 +17,7 @@ Properties
 - api/link/ui.kanban_height_config.md - sets the height of the component
 - api/link/ui.kanban_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.kanban_id_config.md - the component ID
-- api/link/ui.kanban_isolate_config.md - masks IDs of all inner element
+- api/link/ui.kanban_isolate_config.md - masks IDs of all inner elements
 - api/ui.kanban_listfilter_config.md - a filter for items: defines which items will be included in a certain list
 - api/link/ui.kanban_margin_config.md - defines the space around elements (applies the specified value to all elements)
 - api/link/ui.kanban_maxheight_config.md - sets the maximum height for the view

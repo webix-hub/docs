@@ -8,7 +8,7 @@ Properties
 - api/ui.treemap_branch_config.md - specifies the Treemap branch that should be displayed
 - api/link/ui.treemap_click_config.md - sets an action happening on a button click
 - api/link/ui.treemap_clipboard_config.md - enables/disables clipboard support
-- api/link/ui.treemap_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.treemap_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.treemap_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.treemap_data_config.md - JavaScript array containing data for the component
 - api/link/ui.treemap_datafeed_config.md - the URL that the component will use to reload data during binding
@@ -48,7 +48,7 @@ Properties
 - api/link/ui.treemap_template_config.md - the component template
 - api/link/ui.treemap_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
 - api/link/ui.treemap_threestate_config.md - enable three-state checkboxes
-- api/link/ui.treemap_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.treemap_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.treemap_type_config.md - object that specifies items presentation
 - api/link/ui.treemap_url_config.md - the URL which the component will use to load data after its initialization
 - api/ui.treemap_value_config.md - a template that specifies the area of an item rectangle

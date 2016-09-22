@@ -10,7 +10,7 @@ onBeforeDateSelect
 
 @example: 
 	
-$$('calendar1').attachEvent("onAfterDateSelect", function(date){
+$$('calendar1').attachEvent("onBeforeDateSelect", function(date){
     //... some code here ... 
 });
 

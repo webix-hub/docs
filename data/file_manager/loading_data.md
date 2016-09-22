@@ -78,7 +78,8 @@ You can find several demos that implement PHP data in the File Manager package.
 Dynamic loading
 -----------------
 
-Dynamic loading presupposes the loading of long serverside datasets in smaller portions. Initially, the data fills the File Manager to some extent and later on it's fetched on demand.
+Dynamic loading presupposes the loading of long server-side datasets in smaller portions.
+Initially, the data fills the File Manager to some extent and later on it's fetched on demand.
 
 There are two methods of loading data into File Manager dynamically:
 
@@ -152,7 +153,7 @@ For example, if we open the folder with the "documents" id to view its content, 
 }
 ~~~
 
-Serverside response should contain two properties:
+A server-side response should contain two properties:
 
 - parent- (string) id of the folder where we load new data
 - data - (array) the loaded data
@@ -305,3 +306,5 @@ An example of response can be as follows:
    ...
 ]
 ~~~
+
+@spellcheck: myfile

@@ -4,7 +4,7 @@ getBody
 
 
 @short:
-	gets the ui view of the window body
+	gets the UI view of the window body
 
 @params:
 
