@@ -1,7 +1,15 @@
 Loading and Saving Data in SpreadSheet
 ==============================
 
-##Data Loading Format 
+In this article you will find all the necessary information on how to load and save data in SpreadSheet.
+It includes the following sections:
+
+- [Data Loading Format](spreadsheet/loading_data.md#dataloadingformat)
+- [Loading Data](spreadsheet/loading_data.md#loadingdata)
+- [Saving Data](spreadsheet/loading_data.md#savingdata)
+- [Saving and Loading States](spreadsheet/loading_data.md#savingandloadingstates)
+
+##Data Loading Format
 
 SpreadSheet expects the loaded data to be an object in JSON format that includes 4 parameters: 
 
@@ -281,9 +289,89 @@ Parameters of requests differ depending on the operation handler:
 }
 ~~~
 
-SpreadSheet is a purely client-side widget, therefore you can implement any logic at the backend. You can find several demos that implement PHP data in the SpreadSheet package.
+SpreadSheet is a purely client-side widget, therefore you can implement any logic at the backend. 
+You can find several demos that implement PHP data in the SpreadSheet package.
 
 There are also packages for implementing [Node.js](https://github.com/webix-hub/spreadsheet-nodejs-demo) 
 and [.Net](https://github.com/webix-hub/spreadsheet-net-demo) data available on github.
+
+
+##Saving and Loading States
+
+You can save the current state of the spreadsheet on the server and restore it later to continue your work.
+
+To save the state, you need to use the *serialize()* method. 
+
+~~~js
+var states = $$("ssheet").serialize();
+~~~
+
+It will return an object with a number of parameters that will keep all changed states.
+
+~~~js
+states = {
+	conditions:[
+    	[3,6,">",100,"custom_bgcolor"],
+        [3,7,"<",1000,"custom_less"]
+    ], 
+    data:[
+    	[1,1,"Report - July 2016","wss5"],
+    	[1,2,"","wss5"]
+    ],
+    editors:[
+    	[1,8,{ editor:"richselect", options:["One", "Two", "Three"]}]
+    ],
+    filters:[
+    	[2,2, "B3:B7"]
+    ],
+    locked:[
+    	[3,2],
+        [3,3]
+    ],
+    sizes: [ 
+    	[1,0,60],
+  		[0,3,158],
+  		[0,4,137]
+    ],
+    styles:[
+   		["wss1",";;center;;;;;;;;;"],
+    	["wss2",";#6E6EFF;center;;;;;;;;;"],
+    	["wss3","#FFFFFF;#6E6EFF;center;;;;;;;;;"] 
+    ], 
+    spans:[
+    	[1,1,5,1]
+    ], 
+    table:{
+        frozenColumns: 0,
+        frozenRows: 0,
+        gridlines: 1,
+        headers: 1
+    }
+}
+~~~
+
+###Serializing multiple sheets
+
+
+It is also possible to serialize all sheets, in case you work with multiple sheets.
+
+For this purpose, you need to pass an object with the **sheets:true** configuration as a parameter to the *serialize()* method:
+
+~~~js
+var states = $$("ssheet").serialize({sheets: true});
+~~~
+
+###Serializing math formulas
+
+Math formulas are serialized together with all other data of a sheet. 
+
+If you want to disable serialization of math formulas, pass an object with the **math:false** config tp the *serialize()* method:
+
+~~~js
+var states = $$("ssheet").serialize({math: false});
+~~~
+
+{{sample 65_spreadsheet/02_api/02_serialization.html}}
+
 
 @spellcheck:nodejs

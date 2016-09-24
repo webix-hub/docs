@@ -1,7 +1,7 @@
 Working with Cell Content
 ==============================
 
-Setting a Custom Cell Format
+Setting a Custom Number Format
 ------------------------------
 
 You can apply a custom format of displaying a numeric value to a cell or a selected range of cells.
@@ -9,6 +9,8 @@ You can apply a custom format of displaying a numeric value to a cell or a selec
 <img src="spreadsheet/custom_format_result.png">
 
 A custom format notation presents a string which consists of several code sections, separated by semicolons. 
+
+<img src="spreadsheet/custom_format_popup.png">
 
 Each code section includes a condition to compare the cell value with, 
 the corresponding format and style that will be applied to it and a text that should be displayed in this cell:
@@ -48,11 +50,7 @@ You can define all the standard font settings there:
 
 ###Applying Custom Format
 
-There are two ways for setting a custom number format for a cell value.
-
-1) using the API call
-
-You can make use of the api/ui.spreadsheet_setformat.md method. It takes three parameters:
+For setting a custom number format for a cell value, use of the api/ui.spreadsheet_setformat.md method. It takes three parameters:
 
 - rowId- (number) the row id
 - columnId - (number) the column id
@@ -62,29 +60,7 @@ You can make use of the api/ui.spreadsheet_setformat.md method. It takes three p
 $$("ss1").setFormat(2,2,"[>1000]> 0.0;[>100]Check 0,000.0#;[=0]Nope");
 ~~~
 
-2) be entering the format conditions in the popup called by the "Custom format" button.
-
-
-<img src="spreadsheet/buttons/custom_format_button.png">
-
-In the appearing popup type the desired format pattern, according to which the cell value should be formatted.
-
-Format pattern is entered as a semi-colon set of rules.
-
-<img src="spreadsheet/custom_format_popup.png">
-
-Each rule of the format pattern can include:
-
-- **[condition]** in square brackets - e.g. [>1000]
-- **[color]** in square brackets - e.g. [blue]
-- **format** as a set of zeros (e.g. 0.0;) which:
-	- are separated by decimal or thousand separators 
-    - have additional **0** after the separator to display insignificant zeros or **#** to ignore them  
-- **text** - e.g. Text
-
-For example: **[>1000][red];[>100][green]0.0;[blue] Small**
-
-{{sample 65_spreadsheet/01_basic/13_format.html}}
+{{sample 65_spreadsheet/02_api/12_format.html}}
 
 Locking/Unlocking Cells
 -----------------------
@@ -121,12 +97,11 @@ var isLocked = $$("ssheet").isCellLocked(rowId, columnId);
 
 The method returns *true*, if the cell is locked and *false* if it's unlocked.
 
-{{sample 65_spreadsheet/02_api/07_lock_cell.html}}
+{{sample 65_spreadsheet/02_api/15_lock_cell.html}}
 
-Adding Editor and Filter into a Cell
---------------------------------------
 
-###Editor in a cell
+Adding a Dropdown into a Cell
+----------------------
 
 It's possible to add an editor into a cell of the sheet. It can include either some custom options or values of a cell range.
 
@@ -149,7 +124,8 @@ $$("ss1").setCellEditor(2,8,{ editor:"richselect", options:"B3:B7" });
 {{sample 65_spreadsheet/01_basic/14_dropdowns.html}}
 
 
-###Filter in a cell
+Filtering Cells Values 
+-----------------
 
 You can also set a filter inside of a cell. The method api/ui.spreadsheet_setcellfilter.md will help your with this task.
 
@@ -168,7 +144,7 @@ $$("ss1").setCellFilter(1,2, ["", "Europe", "Asia", "America"]);
 $$("ss1").setCellFilter(2,2, "B3:B7");
 ~~~
 
-{{sample 65_spreadsheet/01_basic/15_filters.html}}
+{{sample 65_spreadsheet/02_api/09_filters.html}}
 
 Adding Sparklines into a Cell
 ------------------------------
@@ -197,13 +173,19 @@ Let's insert a blue sparkline of the Line type into the cell E5. The passed para
 $$("ssheet").addSparkline(5,5,{type:"line", range:"B4:E4", color:"#6666FF"});
 ~~~
 
-{{sample 65_spreadsheet/01_basic/11_sparklines.html}}
+{{sample 65_spreadsheet/02_api/10_sparklines.html}}
 
 
 Adding Named Ranges 
 -----------------------
 
-You can specify a name for a particular range of cells and then use it in formulas for calculations. Thus, the formula will be easier to understand and work with.
+You can specify a name for a particular range of cells and then use it in formulas for calculations. 
+
+<img src="spreadsheet/adding_named_range.png">
+
+Thus, the formula will be easier to understand and work with.
+
+<img src="spreadsheet/named_range_formula.png">
 
 You can add a named range and manipulate it through the **ranges** collection:
 
@@ -253,6 +235,9 @@ $$("ssheet").ranges.remove("MYRANGE");
 
 ###Using Named Ranges in Formulas
 
+
+{{sample 65_spreadsheet/02_api/13_named_ranges.html}}
+
 Adding Image in a Cell
 ----------------------
 
@@ -268,11 +253,11 @@ You need to pass three parameters to this method:
 - url - (string) the URL of an image
 
 ~~~js
-$$("ssheet").addImage(2,3, "image.png");
+$$("ssheet").addImage(2,3, "http://docs.webix.com/media/desktop/image.png");
 ~~~
 
 
-
+{{sample 65_spreadsheet/02_api/11_images.html}}
 
 
 

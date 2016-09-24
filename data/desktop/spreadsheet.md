@@ -39,7 +39,6 @@ of various languages.
 		    <ul id="design_sublist">
                 <li>spreadsheet/spreadsheet_init.md</li>                
                 <li>spreadsheet/loading_data.md</li>
-                <li>spreadsheet/states.md</li>
                 <li>spreadsheet/localization.md</li>
                 <li>spreadsheet/config.md</li>          
             </ul>
@@ -69,8 +68,7 @@ of various languages.
             	<li>spreadsheet/conditional_formatting.md</li>
             	<li>spreadsheet/math.md</li>
                 <li>spreadsheet/multiple_sheets.md</li>
-                <li>spreadsheet/rows_columns.md</li>
-                <li>spreadsheet/work_with_data.md</li>
+                <li>spreadsheet/rows_columns.md</li>                
             </ul>
 		</td>
 		<td class='topic_description'>Describes possible operations with SpreadSheet and its elements.</td>
@@ -107,7 +105,6 @@ of various languages.
 - spreadsheet/spreadsheet_init.md
 - spreadsheet/customization.md
 - spreadsheet/loading_data.md
-- spreadsheet/states.md
 - spreadsheet/localization.md
 - spreadsheet/config.md
 - spreadsheet/cell_content.md
@@ -116,7 +113,6 @@ of various languages.
 - spreadsheet/math.md
 - spreadsheet/multiple_sheets.md
 - spreadsheet/rows_columns.md
-- spreadsheet/work_with_data.md
 - spreadsheet/export.md
 - spreadsheet/import.md
 - spreadsheet/handling_events.md

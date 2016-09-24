@@ -4,15 +4,17 @@ Methods
 {{api
 - api/ui.spreadsheet_addfilter.md - adds a filter into a cell
 - api/ui.spreadsheet_addimage.md - adds an image into a cell
-- api/ui.spreadsheet_addsheet.md - 
+- api/ui.spreadsheet_addsheet.md - adds a new sheet into a SpreadSheet
 - api/ui.spreadsheet_addsparkline.md - adds a sparkline into a cell
 - api/link/ui.spreadsheet_addview.md - add new view to layout-like component
 - api/link/ui.spreadsheet_adjust.md - adjusts the component to the size of the parent HTML container
+- api/ui.spreadsheet_alert.md - 
 - api/link/ui.spreadsheet_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.spreadsheet_bind.md - binds components
 - api/link/ui.spreadsheet_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.spreadsheet_callevent.md - calls an inner event
-- api/ui.spreadsheet_clearsheet.md - 
+- api/ui.spreadsheet_clearrange.md - 
+- api/ui.spreadsheet_clearsheet.md - clears the content of the currently active sheet
 - api/ui.spreadsheet_combinecells.md - merges several adjacent cells
 - api/ui.spreadsheet_confirm.md - creates a confirm box
 - api/link/ui.spreadsheet_define.md - redefines a single configuration property (or a hash of properties)
@@ -22,12 +24,12 @@ Methods
 - api/link/ui.spreadsheet_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.spreadsheet_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/ui.spreadsheet_eachselectedcell.md - iterates over all selected cells in the table
-- api/ui.spreadsheet_editsheet.md - 
+- api/ui.spreadsheet_editsheet.md - selects the sheet name for editing
 - api/link/ui.spreadsheet_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/ui.spreadsheet_filterspreadsheet.md - invokes SpreadSheet filtering by all existing filters
 - api/ui.spreadsheet_freezecolumns.md - fixes the specified amount of columns "on the fly", starting from the very left one
 - api/ui.spreadsheet_freezerows.md - fixes the specified amount of rows "on the fly", starting from the very top one
-- api/ui.spreadsheet_getactivesheet.md - 
+- api/ui.spreadsheet_getactivesheet.md - returns the name of the currently active sheet
 - api/ui.spreadsheet_getcellvalue.md - returns the value of the cell
 - api/link/ui.spreadsheet_getchildviews.md - returns child views of the calling component
 - api/ui.spreadsheet_getcolumn.md - returns the configuration object of the specified SpreadSheet column
@@ -62,9 +64,9 @@ Methods
 - api/ui.spreadsheet_redo.md - remakes the action that was reverted by the undo action
 - api/ui.spreadsheet_refresh.md - repaints spreadsheet
 - api/ui.spreadsheet_removefilter.md - removes filters from the sheet
-- api/ui.spreadsheet_removesheet.md - 
+- api/ui.spreadsheet_removesheet.md - removes a sheet by name
 - api/link/ui.spreadsheet_removeview.md - removes view from layout-like component
-- api/ui.spreadsheet_renamesheet.md - 
+- api/ui.spreadsheet_renamesheet.md - replaces the sheet name with the a new one
 - api/ui.spreadsheet_reset.md - resets the SpreadSheet settings to the initial state
 - api/link/ui.spreadsheet_resize.md - adjusts the view to a new size
 - api/link/ui.spreadsheet_resizechildren.md - resizes all children of the calling component
@@ -74,6 +76,8 @@ Methods
 - api/ui.spreadsheet_setcellfilter.md - creates a select filter
 - api/ui.spreadsheet_setcellvalue.md - sets a value for the cell
 - api/ui.spreadsheet_setformat.md - sets a custom format for a cell
+- api/ui.spreadsheet_setrangestyle.md - 
+- api/ui.spreadsheet_setrangevalue.md - 
 - api/ui.spreadsheet_setstyle.md - sets a style for a cell
 - api/link/ui.spreadsheet_show.md - makes the component visible
 - api/link/ui.spreadsheet_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
@@ -92,10 +96,12 @@ Methods
 - api/ui.spreadsheet_addsparkline.md
 - api/link/ui.spreadsheet_addview.md
 - api/link/ui.spreadsheet_adjust.md
+- api/ui.spreadsheet_alert.md
 - api/link/ui.spreadsheet_attachevent.md
 - api/link/ui.spreadsheet_bind.md
 - api/link/ui.spreadsheet_blockevent.md
 - api/link/ui.spreadsheet_callevent.md
+- api/ui.spreadsheet_clearrange.md
 - api/ui.spreadsheet_clearsheet.md
 - api/ui.spreadsheet_combinecells.md
 - api/ui.spreadsheet_confirm.md
@@ -158,6 +164,8 @@ Methods
 - api/ui.spreadsheet_setcellfilter.md
 - api/ui.spreadsheet_setcellvalue.md
 - api/ui.spreadsheet_setformat.md
+- api/ui.spreadsheet_setrangestyle.md
+- api/ui.spreadsheet_setrangevalue.md
 - api/ui.spreadsheet_setstyle.md
 - api/link/ui.spreadsheet_show.md
 - api/link/ui.spreadsheet_showbatch.md

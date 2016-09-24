@@ -258,7 +258,7 @@ table.webixtoc td{
         <td>a control that allows the user to select a date range</td>
     </tr>
     <tr>
-    	<td> <img src="api/toc/daterangesuggest.png"/> </td>
+    	<td> <img src="api/toc/daterangepicker.png"/> </td>
         <td> api/refs/ui.daterangesuggest.md </td>
         <td>a daterange-based suggest control </td>
     </tr>
@@ -375,6 +375,11 @@ table.webixtoc td{
         <td>a color palette</td>
     </tr>
     <tr>
+    	<td> <img src="api/toc/googlemap.png"/> </td>
+        <td> api/refs/ui.googlemap.md </td>
+        <td>a google map-based widget</td>
+    </tr>
+    <tr>
     	<td> <img src="api/toc/daterange.png"/> </td>
         <td> api/refs/ui.daterange.md </td>
         <td>a widget for selecting a date range</td>
@@ -489,6 +494,7 @@ table.webixtoc td{
 - api/refs/ui.fieldset.md
 - api/refs/ui.filemanager.md
 - api/refs/ui.form.md
+- api/refs/ui.googlemap.md
 - api/refs/ui.gridsuggest.md
 - api/refs/ui.grouplist.md
 - api/refs/ui.headerlayout.md

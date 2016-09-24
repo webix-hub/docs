@@ -2,6 +2,9 @@ Conditional Cells Formatting
 ==============================
 
 You can specify particular conditions for cell formatting based on comparison of a cell value with entered values.
+
+<img src="spreadsheet/conditional_formatting_popup.png">
+
 Formatting can be applied to a selected range of cells as well.
 
 <img src="spreadsheet/conditional_formatting_result.png">
@@ -20,7 +23,9 @@ For example:
  [3,6,">",100,"custom_bgcolor"],
 ~~~
 
-###How to store CSS styles used in conditions
+{{sample 65_spreadsheet/01_basic/09_conditional.html}}
+
+##How to store CSS styles used in conditions
 
 Firstly, you need to specify all the CSS styles you want to use for conditional formatting in the *style* section of your page:
 
@@ -39,7 +44,13 @@ Firstly, you need to specify all the CSS styles you want to use for conditional 
 </style>
 ~~~
 
-Then, place all the necessary condition styles into the *conditionStyle* object:
+Then, place all the necessary condition styles into the *conditionStyle* config. 
+It is an array that contains a set of styles that will be applied to a cell, if it's value corresponds to a particular condition.
+
+Each element of the array presents an object with two properties:
+
+- name - (string) the name of the condition style
+- css - (string) the name of the corresponding CSS style
 
 ~~~js
 conditionStyle:[
@@ -51,13 +62,12 @@ conditionStyle:[
 ]
 ~~~
 
-###Applying Conditional Formatting
 
-There are two ways of setting conditions for a cell value:
+##Conditional Formatting API
 
-1) directly in a data source
+You can set conditions for a cell value directly in a data source.
 
-For this purpose, use the *conditions* collection of the data object. You can specify a set of conditions in one array:
+For this purpose,use the *conditions* collection of the data object. You can specify a set of conditions in one array:
 
 ~~~js
 data.conditions = [
@@ -68,57 +78,61 @@ data.conditions = [
 
 Use the *conditions* collection to manage cells formatting:
 
-####Add formatting to a cell
+###Add formatting to a cell
 
-- spreadsheet.conditions.add ([number rowId, number columnId, string condition, number value, string style])
+You can add formatting to cell by using the conditions.add() method. The method takes as a prameter an array with five elements:
 
-####Delete formatting from a cell
-
-- spreadsheet.conditions.remove(number rowId, number columnId)
-
-#### Get the formatting of a cell
-
-- spreadsheet.conditions.get(number rowId, number columnId)
-
-####Clear all formatting
-
-- spreadsheet.conditions.clear()
-
-2) by setting conditions in a popup called by the "Conditional Format" button
-
-The button calling a popup for setting conditional styles is called "conditional-format".
-
-<img src="spreadsheet/buttons/conditional_format_button.png">
-
-It is specified in the "Styles" block of the *buttons* configuration object:
+- rowId - (number) the row id
+- columnId - (number) the column id
+- condition - (string) the condition that will be applied to the cell value 
+- value - (number) the value to compare the cell value with
+- style - (string) the style that will be applied to the cell, if its value meets the condition
 
 ~~~js
-buttons:{
-	"undo": ["undo", "redo"],
-	"text": ["font-weight", "font-style", "text-decoration", "color"],
-	"cell": ["background", "borders", "span"],
-	"format": ["format"],
-	"Styles": ["conditional-format"]
-}
+$$("ssheet").conditions.add([3,6,">",100,"custom_bgcolor"]);
 ~~~
 
-In the appearing popup you can specify up to 3 conditions at once. Pay attention that if the cell value meets several conditions,
-the style of the condition that goes last will be applied to this cell. 
+###Delete formatting from a cell
 
-For a condition you need to specify:
+To remove the applied formatting from a particular cell, use the **conditions.remove()** method. You need to pass two parameters to it:
 
-- the operator of comparison
-- the number to compare the cell value with
-- the CSS style that will be applied to the cell
+- rowId - (number) the row id
+- columnId - (number) the column id 
 
-<img src="spreadsheet/conditional_formatting_popup.png">
+~~~js
+$$("ssheet").conditions.remove(rowId,columnId);
+~~~
 
-To remove conditional formatting, the Remove format button should be used.
+###Get the conditions of cell formatting 
 
-<img src="spreadsheet/buttons/conditional_format_remove_button.png">
+It is possible to get the conditions according to which formatting was applied to a cell.
+For this, pass the row id and the column id of a cell into the **conditions.get()** method:
+
+The method will return an array with three elements:
+
+- condition - (string) the applied condition
+- value - (number) the value that the cell value was compared with
+- style - (string) the style applied to the cell
+
+~~~js
+var cellStyle = $$("ssheet").conditions.get(3,6); //->[">",100,"custom_bgcolor"]
+~~~
 
 
-{{sample 65_spreadsheet/01_basic/09_conditional.html}}
+###Clear all formatting
+
+You can clear formatting from all cells in the spreadsheet. Use the **conditions.clear()** method for this purpose:
+
+~~~js
+$$("ssheet").conditions.clear();
+~~~
+
+{{sample 65_spreadsheet/02_api/14_conditional.html}}
+
+
+
+
+
 
 
 

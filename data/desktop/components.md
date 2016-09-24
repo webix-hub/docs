@@ -9,12 +9,13 @@ is set by the 'view' property (the declarative syntax is available as well).
 
 
 <h2 style="clear:both;"/>Complex Widgets</h2>
+
 A set of ready-made JavaScript widgets is provided to solve tasks in different fields. 
 Whether you need to create an interactive data report, optimize a workflow, add and manage events,
 handle hierarchical data or make calculations in a powerful spreadsheet, 
 you will surely find a proper widget for your needs in the Webix library.
 
-<div class="components_main" style="padding-left:35px;">
+<div class="components_main" style="padding-left:50px;">
 	<div>
 		<a href="desktop/pivot.md">
 			<img src="desktop/icons/pivot.png"/>
@@ -49,8 +50,10 @@ you will surely find a proper widget for your needs in the Webix library.
 
 
 <h2 style="clear:both;"/>Data Widgets</h2>
+
 Data widgets are used to present data of a specified type on the page. 
 Such widgets manage the space allocated for their data and provide functionality for its access and configuration. 
+
 <div class="components_group" style="padding-left:60px;">
 	<div>
 		<a href="desktop/chart.md">
@@ -278,7 +281,7 @@ HTML-oriented widgets supply handy means for using habitual HTML elements in an 
 The widgets listed in this section will help you to complete the picture of your application,
 add special features that can't be achieved with the standard set of widgets presented above. 
 
-<div class="components_group" style="padding-left:10px;">
+<div class="components_group" style="padding-left:60px;">
 	<div>
 		<a href="desktop/barcode.md">
 			<img src="desktop/icons/barcode.png"/>
@@ -295,6 +298,12 @@ add special features that can't be achieved with the standard set of widgets pre
 	<a href="desktop/colorboard.md">
 			<img src="desktop/icons/colorboard.png"/>
 			<br>Colorboard
+		</a>
+    </div>
+    <div>
+    <a href="desktop/googlemap.md">
+			<img src="desktop/icons/googlemap.png"/>
+			<br>GoogleMap
 		</a>
     </div>
     <div>
@@ -326,7 +335,7 @@ add special features that can't be achieved with the standard set of widgets pre
 <h2 style="clear:both;">Controls</h2>
 Controls are mainly responsible for handling events since they enable user-app interaction by triggering functions attached to them. 
 Note that any event can be attached to any widget by referring to its ID.  
-<div class="controls_group" style="padding-left:20px;">
+<div class="controls_group" >
 	<ul>
 		<li><a href="desktop/button.md"><img src="api/toc/button.png"/> Button </a></li>
 		<li><a href="desktop/checkbox.md"><img src="api/toc/checkbox.png"/> Checkbox</a></li>
@@ -334,7 +343,7 @@ Note that any event can be attached to any widget by referring to its ID.
 		<li><a href="desktop/combo.md"><img src="api/toc/combo.png"/> Combo</a></li>
 		<li><a href="desktop/counter.md"><img src="api/toc/counter.png"/> Counter</a></li>             
         <li><a href="desktop/daterangepicker.md"><img src="api/toc/daterangepicker.png"/> DateRangePicker</a></li>   
-        <li><a href="desktop/daterangesuggest.md"><img src="api/toc/daterangesuggest.png"/>DateRangeSuggest</a></li>
+        <li><a href="desktop/daterangesuggest.md"><img src="api/toc/daterangepicker.png" style="padding-right:11px;"/>DateRangeSuggest</a></li>
 	</ul>
 </div>
 
@@ -366,7 +375,7 @@ Note that any event can be attached to any widget by referring to its ID.
 	<ul>
     	<li><a href="desktop/segmented.md"><img src="api/toc/segmented.png"/>Segmented</a></li>
         <li><a href="desktop/slider.md"><img src="api/toc/slider.png"/>Slider</a></li>	
-        <li><a href="desktop/suggest.md"><img src="api/toc/suggest.png"/> Suggest</a></li>
+        <li><a href="desktop/suggest.md"><img src="api/toc/suggest.png" style="padding-right:4px;"/> Suggest</a></li>
     	<li><a href="desktop/tabbar.md"><img src="api/toc/tabbar.png"/>Tabbar</a></li>
 		<li><a href="desktop/text.md"><img src="api/toc/text.png"/>Text</a></li>	
     	<li><a href="desktop/textarea.md"><img src="api/toc/textarea.png"/>Textarea</a></li>
@@ -388,7 +397,7 @@ div.components_main div{
 	padding-top:25px;
     padding-bottom:25px;
     float:left;
-    width:130px;
+    width:120px;
     text-align:center;
 }
 div.components_group div{
@@ -402,7 +411,7 @@ div.controls_group{
     padding-top:25px;
     padding-bottom:25px;
     float:left;
-    width:170px;
+   	margin-left:10px;   
 }
 div.controls_group ul {
     list-style-type:none;
@@ -430,6 +439,7 @@ div.controls_group img {
 - desktop/excelviewer.md
 - desktop/form.md
 - desktop/controls.md
+- desktop/googlemap.md
 - desktop/grouplist.md
 - desktop/htmlform.md
 - desktop/iframe.md

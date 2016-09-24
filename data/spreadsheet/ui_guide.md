@@ -303,13 +303,13 @@ The background of this icon is defined by the *“webix_ssheet_hide_icon”* css
 }
 ~~~
 
-The dialog fires the *onHideClick* event on the icon click. If its handler returns *false*, the dialog won’t be hidden:
+The dialog fires the *onHideClick* event on the icon click:
 
 ~~~js
 on:{
    onHideClick: function(){
        // click happened 
-       return false;
+       this.hide();
    }
 }
 ~~~
@@ -327,12 +327,11 @@ buttons: false,
 The buttons' titles are specified in the SpreadSheet locale:
 
 ~~~js
-webix.i18n.spreadsheet.labels.cancel = “Cancel”;
+webix.i18n.spreadsheet.labels.cancel = "Cancel";
 webix.i18n.spreadsheet.labels.save = "Save";
 ~~~
 
-The dialog fires the following events on a button click: *onCancelClick* and *onSaveClick*. 
-On clicking these buttons the dialog closes. If an event handler returns *false*, the dialog won’t be hidden.
+The dialog fires the following events on a button click: *onCancelClick* and *onSaveClick*.
 
 ###DataTable 
 

@@ -1,19 +1,24 @@
 alert
 =============
 
+
+@todo:
+	check 
+
+
 @short:
 	creates an alert box
 
 @params:
-- text	string  the box text 
+- text		string  	the box text 
 - callback	function 	the callback function
 
 @returns:
 - box    HTMLElement  the alert box  
 
 @example:
-webix.alert("Test alert", function(result){
-	webix.alert({
+$$("ssheet").alert("There is no undo, are you sure?", function(result){
+	$$("ssheet").alert({
 		title:"Custom title",
 		ok:"Custom text",
 		text:"Result: "+result
@@ -21,12 +26,7 @@ webix.alert("Test alert", function(result){
 });
 
 
-@related: 
-	desktop/message_boxes.md
-@relatedapi: 
-	api/_confirm.md
-@relatedsample:
-	10_window/03_alert.html
+
 @template:	api_method
 @descr:
 
@@ -48,12 +48,11 @@ In the extended form, the method takes as a parameter an object with box paramet
 - **text** - (*string*) the text of the window body
 - **ok** - (*string*) the text of the 'Ok' button
 - **type** - (*'alert-warning' or 'alert-error'*) the alert type: warning or error
-- **callback** - (function) contains a code that will be called when the user clicks on the button. 
-As a parameter the function takes the *true/false* value - the alert result status
+- **callback** - (function) contains a code that will be called when the user clicks on the button. As a parameter takes the *true/false* value - the alert result status
 
 
 ~~~js
-webix.alert({
+$$("ssheet").alert({
 	title: "Close",
 	text: "You can't close this window!",
 	type:"alert-error"
@@ -66,7 +65,7 @@ You can close an alert box using the modalbox API:
 
 ~~~js
 // showing an alert box
-var box = webix.alert({...});
+var box = $$("ssheet").alert({...});
 // hiding an alert box
-webix.modalbox.hide(box);
+$$("ssheet").modalbox.hide(box);
 ~~~

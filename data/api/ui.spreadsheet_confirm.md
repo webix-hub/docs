@@ -50,7 +50,8 @@ In the extended form, the method takes as a parameter an object with box paramet
 - **ok** - (*string*) the text of the 'Ok' button
 - **cancel** - (*string*) the text of the 'Cancel' button
 - **type** - (*'confirm-warning' or 'confirm-error'*) the confirm type: warning or error
-- **callback** - (function) contains a code that will be called when the user clicks on the button. As a parameter takes the *true/false* value - the alert result status
+- **callback** - (function) contains a code that will be called when the user clicks on the button.
+As a parameter the function takes the *true/false* value - the confirm result status
 
 
 ~~~js
@@ -59,6 +60,17 @@ $$("ssheet").confirm({
 	text: "You can't close this window!",
 	type:"confirm-error"
 })
+~~~
+
+###Hiding a confirm box
+
+You can close a confirm box using the modalbox API:
+
+~~~js
+// showing a confirm box
+var box = $$("ssheet").confirm({...});
+// hiding a confirm box
+$$("ssheet").modalbox.hide(box);
 ~~~
 
 
