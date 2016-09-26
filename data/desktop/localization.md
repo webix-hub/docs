@@ -101,7 +101,32 @@ webix.i18n.locales["en-US"]={
 		pageFit:"Page Fit",
 		pageWidth:"Page Width",
 		pageHeight:"Page Height"
-  }
+  },
+  
+  aria:{
+		increaseValue:"Increase value",
+		decreaseValue:"Decrease value",
+		navMonth:["Previous month", "Next month"],
+		navYear:["Previous year", "Next year"],
+		navDecade:["Previous decade", "Next decade"],
+		removeItem:"Remove item",
+		pages:["First page", "Previous page", "Next page", "Last page"],
+		page:"Page",
+		headermenu:"Header menu",
+		openGroup:"Open column group",
+		closeGroup:"Close column group",
+		closeTab:"Close tab",
+		showTabs:"Show more tabs",
+		resetTreeMap:"Reset tree map",
+		navTreeMap:"Level up",
+		nextTab:"Next tab",
+		prevTab:"Previous tab",
+		multitextSection:"Add section",
+		multitextextraSection:"Remove section",
+		showChart:"Show chart",
+		hideChart:"Hide chart",
+		resizeChart:"Resize chart"
+    }
 };
 ~~~
 
@@ -173,6 +198,34 @@ Text labels for page switching and document  options in desktop/pdfviewer.md.
 - *pageFit* - text label of the zooming option for adjusting the document size to the page size
 - *pageWidth* - text label of the zooming option for adjusting the document size to the page width
 - *pageHeight* - text label of the zooming option for adjusting the document size to the page height
+
+**Aria**
+
+Text labels for widget interactive areas which properties cannot be configured by public API. These labels are set as values of the *aria-label* attribute and
+are used by screen reading software to announce the purpose of the element: 
+
+- *increaseValue* - aria label for "+" counter button
+- *decreaseValue* - aria label for "-" counter button
+- *navMonth* - aria labels for previous and next month buttons
+- *navYear* - aria labels for previous and next year buttons
+- *navDecade* - aria labels for previous and next decade buttons
+- *removeItem* - aria label for multicombo "x" button
+- *pages* - aria labels for pages navigation buttons
+- *page* - aria label for pager numbered buttons
+- *headermenu* - aria label for headermenu icon in the datatable
+- *openGroup* - aria label for "+" (open group) icon in datatable
+- *closeGroup* - aria label for "-" (close group) icon in datatable
+- *closeTab* - aria label for "x" icon on a closable tab in tabbar
+- *showTabs* - aria label for "show more tabs" icon in a responsive tabbar
+- *resetTreeMap* - aria label for "reset tree map" icon in a zoomed-in treemap
+- *navTreeMap* - aria label for "level up" icon in a zoomed-in treemap
+- *nextTab* - aria label for ">" icon in the carousel navigation panel
+- *prevTab* - aria label for "<" icon in the carousel navigation panel
+- *multitextSection* - aria label for "+" multitext icon
+- *multitextextraSection* - aria label for "-" multitext icon
+- *showChart* - aria label for "show chart" button in the chart legend
+- *showChart* - aria label for "hide chart" button in the chart legend
+- *resizeChart* - aria label for rangechart sizing handle
 
 ##Applying a Locale
 
