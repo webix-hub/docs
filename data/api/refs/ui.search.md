@@ -115,6 +115,7 @@ var search = webix.ui({
 - api/link/ui.search_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.search_inputpadding_config.md - padding of text in the input
 - api/link/ui.search_inputwidth_config.md - the width of the input area, or a button's text value area.
+- api/link/ui.search_invalid_config.md - 
 - api/link/ui.search_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.search_label_config.md - the text label of the control
 - api/link/ui.search_labelalign_config.md - the alignment of a label towards its container
@@ -135,6 +136,7 @@ var search = webix.ui({
 - api/link/ui.search_required_config.md - marks field as required
 - api/link/ui.search_suggest_config.md - links suggest list to the input
 - api/link/ui.search_tabfocus_config.md - defines whether the control will be included in the tab navigation order
+- api/link/ui.search_text_config.md - 
 - api/link/ui.search_tooltip_config.md - tooltip for the input
 - api/link/ui.search_type_config.md - the type of the control
 - api/link/ui.search_validate_config.md - adds validation to the field

@@ -32,7 +32,7 @@ webix.ui({
 
 
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/ui.segmented.md">ui.segmented</a>, <a href="api/refs/ui.text.md">ui.text</a>, <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
+<a href="api/refs/ui.segmented.md">ui.segmented</a>, <a href="api/refs/htmloptions.md">HTMLOptions</a>, <a href="api/refs/ui.text.md">ui.text</a>, <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
 
 <div class='h2'>Methods</div>
@@ -134,6 +134,7 @@ webix.ui({
 - api/link/ui.tabbar_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.tabbar_inputpadding_config.md - padding of text in the input
 - api/link/ui.tabbar_inputwidth_config.md - the width of the input area, or a button's text value area.
+- api/link/ui.tabbar_invalid_config.md - 
 - api/link/ui.tabbar_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.tabbar_label_config.md - the text label of the control
 - api/link/ui.tabbar_labelalign_config.md - the alignment of a label towards its container
@@ -164,6 +165,7 @@ webix.ui({
 - api/ui.tabbar_tabmorewidth_config.md - width of "more" button in tabbar
 - api/ui.tabbar_taboffset_config.md - left padding of first tab
 - api/ui.tabbar_tabbarpopup_config.md - custom popup for responsive tabbar
+- api/link/ui.tabbar_text_config.md - 
 - api/link/ui.tabbar_tooltip_config.md - tooltip for the input
 - api/ui.tabbar_topoffset_config.md - top offset of tabbar
 - api/link/ui.tabbar_type_config.md - the type of the control

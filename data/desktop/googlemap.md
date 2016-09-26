@@ -13,7 +13,7 @@ Overview
 GoogleMap allows working with geographical data with the help of Webix and Google Map API. This widget is based on desktop/view.md and 
 inherits API from api/refs/datastore.md.
 
-<img src="desktop/googlemap_view.png">
+<img src="desktop/googlemap_widget.png">
 
 Initialization
 -----------------
@@ -49,7 +49,7 @@ Working with GoogleMap
 
 To make use of all the possibilities of the map, you should look up the [Google API Reference](https://developers.google.com/maps/documentation/javascript/reference).
 
-Webix GoogleMap is a datastore-based widget, so you can work with it as with a data widget.
+Webix GoogleMap is a datastore-based widget, so you can work with it as with any other data widget.
 
 ###Loading data
 
@@ -81,9 +81,8 @@ There are two required properties that should be specified in the point's data o
 - lat - the latitude coordinate
 - lng - the lingitude coordinate
 
-Other properties are optional. You can find all the available properties in the [Google API Reference](https://developers.google.com/maps/documentation/javascript/reference).
 
-###Setting the layer type
+**Setting the layer type**
 
 There are two types of layer you can use for the GoogleMap widget:
 
@@ -111,19 +110,119 @@ webix.ui({
 
 The *marker* type is set by default.
 
-###Marker visibility
 
-You can set the *hidden* property for a marker, to hide and show it, when needed.
+**Controlling marker visibility**
+
+You can set the *hidden* property for a marker (data object), to hide and show it, when needed.
 
 ~~~js
 { id:1, lat:48.782,  lng:9.177,  hidden:true}
+~~~
+
+Other properties are optional. You can find all the available properties in the [Google API Reference](https://developers.google.com/maps/documentation/javascript/reference).
+
+**Specifying heatmap configuration**
+
+You can configure the heatmap displaying with the help of the *heatmapConfig* property.
+It is an object that can contain various Google API properties for heatmap, e.g. opacity 
+
+~~~js
+webix.ui({
+	//provide your own Google API key
+	key:"AIzaSyAi0oVNVO-e603aUY8SILdD4v9bVBkmiTg",
+    	view:"google-map",
+    	id:"map",
+	zoom:13,
+	center:[ 37.774546, -122.433523 ],
+	layerType:"heatmap",
+	heatmapConfig:{			/*!*/
+		opacity:"0.4"		/*!*/
+	},						/*!*/
+	url:"data/heatmap.json"
+});
 ~~~
 
 ###Getting GoogleMap objects
 
 You can get the objects of a map, a marker and of a heatmap to work with them further.
 
-- to get the map object, use the following notation: $$("map").map
-- to get the marker object, use the *getItem()* method: $$("map").getItem.$marker
-- to refer to the heatmap object, use: $$("map").heatmap
+- to get the map object, use the following notation: **$$("map").map**
+- to get the marker object, use the *getItem()* method: **$$("map").getItem(id).$marker**
+- to refer to the heatmap object, use: **$$("map").heatmap**
+
+Webix API for GoogleMap
+----------------------
+
+###Events
+
+- **onItemClick**
+
+fires when a marker is clicked. 
+
+~~~js
+$$("map").attachEvent("onItemClick", function(id, marker){
+	// your code
+});
+~~~
+
+The handler function takes two parameters:
+
+- id - (number) the marker id
+- marker - (object)	- the marker object
+
+There are two DnD-related events. They are available for markers that have enabled *draggable* property in their configuration:
+
+~~~js
+{ id:1, lat:48.782,  lng:9.177,  draggable:true}
+~~~
+
+- **onAfterDrop**
+
+fires after drag-n-drop of a marker is finished. The handler function takes two parameters:
+
+- id - (number) the marker id
+- item - (object) the data object
+
+~~~js
+$$("map").attachEvent("onAfterDrop", function(id, item){
+	// your code
+});
+~~~
+
+
+- **onDrag**
+
+fires when drag-n-drop of a marker has started. 
+
+~~~js
+$$("map").attachEvent("onDrag", function(id, item){
+	// your code
+});
+~~~ 
+
+The handler function takes two parameters:
+
+- id - (number) the marker id
+- item - (object) the data object
+
+###Methods
+
+- **showItem** - shows a marker by id
+
+~~~js
+$$("map").showItem(1).$marker;
+~~~
+
+- **drawData** - draws data after each operation with marker. 
+
+~~~js
+$$("map").drawData(id, item, operation).$marker;
+~~~
+
+It takes three parameters:
+
+- id - (number) marker id
+- item - (object) the data object
+- operation - (string) the name of the operation (“add”, “update”, “delete”)
+
 

@@ -22,7 +22,7 @@ Properties
 - api/link/ui.grouplist_height_config.md - sets the height of the component
 - api/link/ui.grouplist_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.grouplist_id_config.md - the component ID
-- api/link/ui.grouplist_layout_config.md - defines x or y orientation of layout
+- api/link/ui.grouplist_layout_config.md - 
 - api/link/ui.grouplist_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.grouplist_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.grouplist_minheight_config.md - sets the minimal height for the view
@@ -53,7 +53,7 @@ Properties
 - api/link/ui.grouplist_type_config.md - object that specifies items presentation
 - api/link/ui.grouplist_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.grouplist_width_config.md - sets the width of the component
-- api/link/ui.grouplist_xcount_config.md - defines width of view in items
+- api/link/ui.grouplist_xcount_config.md - 
 - api/link/ui.grouplist_ycount_config.md - defines height of view in items
 }}
 

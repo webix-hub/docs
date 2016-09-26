@@ -2,9 +2,36 @@ ui.daterangesuggest
 =============
 
 
-dummy stub
 
-{{todo replace with real description. }}
+{{memo A daterange-based suggest control. }}
+
+It offers select options in the form of the Webix [DateRange](desktop/daterange.md) widget.
+Daterangesuggest can be used standalone or as a suggest list for [text](api/refs/ui.text.md), 
+[combo](api/refs/ui.combo.md) and [richselect](api/refs/ui.richselect.md) controls, as well as component [editors](api/refs/editors.md).
+
+### Constructor
+
+~~~js
+webix.ui({ 	
+	view:"daterangepicker", 
+	name:"custom", 
+	width:500, 
+	label:"Custom",
+	suggest:{
+		view:"daterangesuggest",
+		body:{
+			calendarCount:1,
+			icons:false,
+			timepicker:true
+		}
+	}
+});
+~~~
+
+### Where to start
+
+- [Overview of the DateRangeSuggest Control](desktop/daterangepicker.md)
+- [Samples](http://docs.webix.com/samples/60_pro/02_form/09_daterangepicker.html)
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.suggest.md">ui.suggest</a>, <a href="api/refs/ui.popup.md">ui.popup</a>, <a href="api/refs/ui.window.md">ui.window</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/movable.md">Movable</a>, <a href="api/refs/modality.md">Modality</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>

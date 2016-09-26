@@ -23,6 +23,7 @@ Properties
 - api/link/ui.combo_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.combo_inputpadding_config.md - padding of text in the input
 - api/link/ui.combo_inputwidth_config.md - the width of the input area, or a button's text value area.
+- api/link/ui.combo_invalid_config.md - 
 - api/link/ui.combo_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.combo_label_config.md - the text label of the control
 - api/link/ui.combo_labelalign_config.md - the alignment of a label towards its container
@@ -44,7 +45,7 @@ Properties
 - api/link/ui.combo_required_config.md - marks field as required
 - api/link/ui.combo_suggest_config.md - links suggest list to the input
 - api/link/ui.combo_tabfocus_config.md - defines whether the control will be included in the tab navigation order
-- api/link/ui.combo_text_config.md - visible text in the related input
+- api/link/ui.combo_text_config.md - 
 - api/link/ui.combo_tooltip_config.md - tooltip for the input
 - api/link/ui.combo_type_config.md - the type of the control
 - api/link/ui.combo_validate_config.md - adds validation to the field
@@ -75,6 +76,7 @@ Properties
 - api/link/ui.combo_inputheight_config.md
 - api/link/ui.combo_inputpadding_config.md
 - api/link/ui.combo_inputwidth_config.md
+- api/link/ui.combo_invalid_config.md
 - api/link/ui.combo_invalidmessage_config.md
 - api/link/ui.combo_label_config.md
 - api/link/ui.combo_labelalign_config.md

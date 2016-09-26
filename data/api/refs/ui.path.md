@@ -172,7 +172,7 @@ dummy stub
 - api/link/ui.path_height_config.md - sets the height of the component
 - api/link/ui.path_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.path_id_config.md - the component ID
-- api/link/ui.path_layout_config.md - defines x or y orientation of layout
+- api/link/ui.path_layout_config.md - 
 - api/link/ui.path_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.path_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.path_minheight_config.md - sets the minimal height for the view
@@ -202,7 +202,7 @@ dummy stub
 - api/link/ui.path_url_config.md - the URL which the component will use to load data after its initialization
 - api/ui.path_value_config.md - 
 - api/link/ui.path_width_config.md - sets the width of the component
-- api/link/ui.path_xcount_config.md - defines width of view in items
+- api/link/ui.path_xcount_config.md - 
 - api/link/ui.path_ycount_config.md - defines height of view in items
 }}
 

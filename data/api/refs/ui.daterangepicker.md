@@ -2,9 +2,30 @@ ui.daterangepicker
 =============
 
 
-dummy stub
+{{memo A control that allows the user to select a date range.. }}
 
-{{todo replace with real description. }}
+The control combines an editable text field with a set of drop-down calendars. It supports all date and time formats. 
+Besides the days of the month, it can display hour and minute selectors. 
+Check [DateRangePicker](desktop/daterangepicker.md) documentation for a more detailed description.
+
+### Constructor
+
+~~~js
+var daterangepicker = webix.ui({
+	view:"daterangepicker",
+	name:"default", 
+	width:500, 
+	label:"Default",
+	value:{start: new Date(), end: webix.Date.add(new Date(), 1, "month")}
+});	
+~~~
+
+### Where to start
+
+- [Overview of the DateRange Control](desktop/daterangepicker.md)
+- [Samples](http://docs.webix.com/samples/60_pro/02_form/09_daterangepicker.html)
+
+
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.datepicker.md">ui.datepicker</a>, <a href="api/refs/ui.text.md">ui.text</a>, <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
@@ -104,6 +125,7 @@ dummy stub
 - api/link/ui.daterangepicker_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.daterangepicker_inputpadding_config.md - padding of text in the input
 - api/link/ui.daterangepicker_inputwidth_config.md - the width of the input area, or a button's text value area.
+- api/link/ui.daterangepicker_invalid_config.md - 
 - api/link/ui.daterangepicker_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.daterangepicker_label_config.md - the text label of the control
 - api/link/ui.daterangepicker_labelalign_config.md - the alignment of a label towards its container
@@ -125,7 +147,7 @@ dummy stub
 - api/link/ui.daterangepicker_stringresult_config.md - if the parameter is set to true, the method getValue returns data as string (otherwise, as object)
 - api/link/ui.daterangepicker_suggest_config.md - links suggest list to the input
 - api/link/ui.daterangepicker_tabfocus_config.md - defines whether the control will be included in the tab navigation order
-- api/link/ui.daterangepicker_text_config.md - visible text in the related input
+- api/link/ui.daterangepicker_text_config.md - 
 - api/link/ui.daterangepicker_timeicon_config.md - sets an icon for time in the datepicker
 - api/link/ui.daterangepicker_timepicker_config.md - enables optional timepicker in the calendar
 - api/link/ui.daterangepicker_tooltip_config.md - tooltip for the input

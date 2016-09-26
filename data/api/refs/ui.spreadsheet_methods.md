@@ -6,14 +6,15 @@ Methods
 - api/ui.spreadsheet_addimage.md - adds an image into a cell
 - api/ui.spreadsheet_addsheet.md - adds a new sheet into a SpreadSheet
 - api/ui.spreadsheet_addsparkline.md - adds a sparkline into a cell
+- api/ui.spreadsheet_addstyle.md - 
 - api/link/ui.spreadsheet_addview.md - add new view to layout-like component
 - api/link/ui.spreadsheet_adjust.md - adjusts the component to the size of the parent HTML container
-- api/ui.spreadsheet_alert.md - 
+- api/ui.spreadsheet_alert.md - creates an alert box
 - api/link/ui.spreadsheet_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.spreadsheet_bind.md - binds components
 - api/link/ui.spreadsheet_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.spreadsheet_callevent.md - calls an inner event
-- api/ui.spreadsheet_clearrange.md - 
+- api/ui.spreadsheet_clearrange.md - clears the range
 - api/ui.spreadsheet_clearsheet.md - clears the content of the currently active sheet
 - api/ui.spreadsheet_combinecells.md - merges several adjacent cells
 - api/ui.spreadsheet_confirm.md - creates a confirm box
@@ -76,12 +77,13 @@ Methods
 - api/ui.spreadsheet_setcellfilter.md - creates a select filter
 - api/ui.spreadsheet_setcellvalue.md - sets a value for the cell
 - api/ui.spreadsheet_setformat.md - sets a custom format for a cell
-- api/ui.spreadsheet_setrangestyle.md - 
-- api/ui.spreadsheet_setrangevalue.md - 
+- api/ui.spreadsheet_setrangestyle.md - sets a style for a range of cells
+- api/ui.spreadsheet_setrangevalue.md - sets a value for the range
 - api/ui.spreadsheet_setstyle.md - sets a style for a cell
 - api/link/ui.spreadsheet_show.md - makes the component visible
 - api/link/ui.spreadsheet_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
 - api/ui.spreadsheet_showsheet.md - shows a sheet by name
+- api/ui.spreadsheet_sortrange.md - 
 - api/ui.spreadsheet_splitcell.md - splits the cells' span that was made by merging several cells
 - api/link/ui.spreadsheet_ui.md - allows creating new ui, the id of which will be locked in the parent id space
 - api/link/ui.spreadsheet_unbind.md - breaks "bind" link
@@ -94,6 +96,7 @@ Methods
 - api/ui.spreadsheet_addimage.md
 - api/ui.spreadsheet_addsheet.md
 - api/ui.spreadsheet_addsparkline.md
+- api/ui.spreadsheet_addstyle.md
 - api/link/ui.spreadsheet_addview.md
 - api/link/ui.spreadsheet_adjust.md
 - api/ui.spreadsheet_alert.md
@@ -170,6 +173,7 @@ Methods
 - api/link/ui.spreadsheet_show.md
 - api/link/ui.spreadsheet_showbatch.md
 - api/ui.spreadsheet_showsheet.md
+- api/ui.spreadsheet_sortrange.md
 - api/ui.spreadsheet_splitcell.md
 - api/link/ui.spreadsheet_ui.md
 - api/link/ui.spreadsheet_unbind.md

@@ -22,7 +22,7 @@ Properties
 - api/link/ui.menu_height_config.md - sets the height of the component
 - api/link/ui.menu_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.menu_id_config.md - the component ID
-- api/link/ui.menu_layout_config.md - defines x or y orientation of layout
+- api/link/ui.menu_layout_config.md - 
 - api/link/ui.menu_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.menu_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.menu_minheight_config.md - sets the minimal height for the view
@@ -53,7 +53,7 @@ Properties
 - api/link/ui.menu_type_config.md - object that specifies items presentation
 - api/link/ui.menu_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.menu_width_config.md - sets the width of the component
-- api/link/ui.menu_xcount_config.md - defines width of view in items
+- api/link/ui.menu_xcount_config.md - 
 - api/link/ui.menu_ycount_config.md - defines height of view in items
 }}
 

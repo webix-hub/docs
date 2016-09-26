@@ -21,6 +21,7 @@ Properties
 - api/link/ui.kanbanlist_height_config.md - sets the height of the component
 - api/link/ui.kanbanlist_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.kanbanlist_id_config.md - the component ID
+- api/link/ui.kanbanlist_layout_config.md - 
 - api/link/ui.kanbanlist_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.kanbanlist_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.kanbanlist_minheight_config.md - sets the minimal height for the view
@@ -48,7 +49,7 @@ Properties
 - api/link/ui.kanbanlist_type_config.md - object that specifies items presentation
 - api/link/ui.kanbanlist_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.kanbanlist_width_config.md - sets the width of the component
-- api/link/ui.kanbanlist_xcount_config.md - adjusts the view width to display the defined number of items in a row
+- api/link/ui.kanbanlist_xcount_config.md - 
 - api/link/ui.kanbanlist_ycount_config.md - adjusts the view height to display the defined number of items in a column
 }}
 
@@ -72,6 +73,7 @@ Properties
 - api/link/ui.kanbanlist_height_config.md
 - api/link/ui.kanbanlist_hidden_config.md
 - api/link/ui.kanbanlist_id_config.md
+- api/link/ui.kanbanlist_layout_config.md
 - api/link/ui.kanbanlist_maxheight_config.md
 - api/link/ui.kanbanlist_maxwidth_config.md
 - api/link/ui.kanbanlist_minheight_config.md

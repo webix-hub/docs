@@ -139,6 +139,7 @@ var rangeslider = webix.ui({
 - api/ui.rangeslider_stringresult_config.md - if the parameter is set to true, the method getValue returns data as string (otherwise, as object)
 - api/link/ui.rangeslider_suggest_config.md - links suggest list to the input
 - api/link/ui.rangeslider_tabfocus_config.md - defines whether the control will be included in the tab navigation order
+- api/link/ui.rangeslider_text_config.md - 
 - api/link/ui.rangeslider_title_config.md - text over slider bar
 - api/link/ui.rangeslider_tooltip_config.md - tooltip for the input
 - api/link/ui.rangeslider_validate_config.md - adds validation to the field

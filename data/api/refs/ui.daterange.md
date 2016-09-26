@@ -2,9 +2,30 @@ ui.daterange
 =============
 
 
-dummy stub
+{{memo A set of calendars that lets a user to select a date range and switch between months and years. }}
 
-{{todo replace with real description. }}
+DateRange is highly customizable. It supports all date and time formats and is used for selecting dates and times in several calendars at once. 
+Check  [DateRange](desktop/daterange.md) documentation for a more detailed description.
+
+
+### Constructor
+
+~~~js
+var daterange = webix.ui({
+	view:"daterange",
+	calendarCount:4,
+	timepicker:true,
+	value:{
+		start: new Date(), 
+		end: webix.Date.add(new Date(), 2, "month")
+	}
+});	
+~~~
+
+### Where to start
+
+- [Overview of the DateRange Control](desktop/daterange.md)
+- [Samples](http://docs.webix.com/samples/60_pro/14_daterange/01_daterange.html)
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.layout.md">ui.layout</a>, <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>

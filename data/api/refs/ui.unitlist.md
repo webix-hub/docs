@@ -200,7 +200,7 @@ var unitlist = webix.ui({
 - api/link/ui.unitlist_height_config.md - sets the height of the component
 - api/link/ui.unitlist_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.unitlist_id_config.md - the component ID
-- api/link/ui.unitlist_layout_config.md - defines x or y orientation of layout
+- api/link/ui.unitlist_layout_config.md - 
 - api/link/ui.unitlist_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.unitlist_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.unitlist_minheight_config.md - sets the minimal height for the view
@@ -230,7 +230,7 @@ var unitlist = webix.ui({
 - api/ui.unitlist_uniteby_config.md - sets the template according which items will be grouped in units.
 - api/link/ui.unitlist_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.unitlist_width_config.md - sets the width of the component
-- api/link/ui.unitlist_xcount_config.md - defines width of view in items
+- api/link/ui.unitlist_xcount_config.md - 
 - api/link/ui.unitlist_ycount_config.md - defines height of view in items
 }}
 

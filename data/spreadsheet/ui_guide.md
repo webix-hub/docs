@@ -423,4 +423,11 @@ The key points of the custom toolbar are the following:
 ]
 ~~~
 
-{{sample 65_spreadsheet/samples/03_customization/07_custom_toolbar.html}}
+{{sample 65_spreadsheet/03_customization/07_custom_toolbar.html}}
+
+###Full Code for Toolbar elements
+
+The full code for all toolbar elements is given [in a separate article](all_toolbar_elements.md).
+
+@index: 
+- all_toolbar_elements.md

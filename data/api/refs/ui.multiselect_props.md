@@ -23,6 +23,7 @@ Properties
 - api/link/ui.multiselect_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.multiselect_inputpadding_config.md - padding of text in the input
 - api/link/ui.multiselect_inputwidth_config.md - the width of the input area, or a button's text value area.
+- api/link/ui.multiselect_invalid_config.md - 
 - api/link/ui.multiselect_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.multiselect_label_config.md - the text label of the control
 - api/link/ui.multiselect_labelalign_config.md - the alignment of a label towards its container
@@ -46,7 +47,7 @@ Properties
 - api/ui.multiselect_separator_config.md - sets a delimiter for control's values
 - api/link/ui.multiselect_suggest_config.md - links suggest list to the input
 - api/link/ui.multiselect_tabfocus_config.md - defines whether the control will be included in the tab navigation order
-- api/link/ui.multiselect_text_config.md - visible text in the related input
+- api/link/ui.multiselect_text_config.md - 
 - api/link/ui.multiselect_tooltip_config.md - tooltip for the input
 - api/link/ui.multiselect_validate_config.md - adds validation to the field
 - api/link/ui.multiselect_validateevent_config.md - on which event validation fires
@@ -76,6 +77,7 @@ Properties
 - api/link/ui.multiselect_inputheight_config.md
 - api/link/ui.multiselect_inputpadding_config.md
 - api/link/ui.multiselect_inputwidth_config.md
+- api/link/ui.multiselect_invalid_config.md
 - api/link/ui.multiselect_invalidmessage_config.md
 - api/link/ui.multiselect_label_config.md
 - api/link/ui.multiselect_labelalign_config.md

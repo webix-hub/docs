@@ -212,7 +212,7 @@ webix.ui({
 - api/link/ui.submenu_height_config.md - sets the height of the component
 - api/link/ui.submenu_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.submenu_id_config.md - the component ID
-- api/link/ui.submenu_layout_config.md - defines x or y orientation of layout
+- api/link/ui.submenu_layout_config.md - 
 - api/link/ui.submenu_left_config.md - the left offset of the window
 - api/link/ui.submenu_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.submenu_maxwidth_config.md - sets the maximum width for the view
@@ -252,7 +252,7 @@ webix.ui({
 - api/link/ui.submenu_type_config.md - object that specifies items presentation
 - api/link/ui.submenu_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.submenu_width_config.md - sets the width of the component
-- api/link/ui.submenu_xcount_config.md - defines width of view in items
+- api/link/ui.submenu_xcount_config.md - 
 - api/link/ui.submenu_ycount_config.md - defines height of view in items
 - api/link/ui.submenu_zindex_config.md - stack order of the component
 }}

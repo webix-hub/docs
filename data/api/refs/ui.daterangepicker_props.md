@@ -26,6 +26,7 @@ Properties
 - api/link/ui.daterangepicker_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.daterangepicker_inputpadding_config.md - padding of text in the input
 - api/link/ui.daterangepicker_inputwidth_config.md - the width of the input area, or a button's text value area.
+- api/link/ui.daterangepicker_invalid_config.md - 
 - api/link/ui.daterangepicker_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.daterangepicker_label_config.md - the text label of the control
 - api/link/ui.daterangepicker_labelalign_config.md - the alignment of a label towards its container
@@ -47,7 +48,7 @@ Properties
 - api/link/ui.daterangepicker_stringresult_config.md - if the parameter is set to true, the method getValue returns data as string (otherwise, as object)
 - api/link/ui.daterangepicker_suggest_config.md - links suggest list to the input
 - api/link/ui.daterangepicker_tabfocus_config.md - defines whether the control will be included in the tab navigation order
-- api/link/ui.daterangepicker_text_config.md - visible text in the related input
+- api/link/ui.daterangepicker_text_config.md - 
 - api/link/ui.daterangepicker_timeicon_config.md - sets an icon for time in the datepicker
 - api/link/ui.daterangepicker_timepicker_config.md - enables optional timepicker in the calendar
 - api/link/ui.daterangepicker_tooltip_config.md - tooltip for the input
@@ -83,6 +84,7 @@ Properties
 - api/link/ui.daterangepicker_inputheight_config.md
 - api/link/ui.daterangepicker_inputpadding_config.md
 - api/link/ui.daterangepicker_inputwidth_config.md
+- api/link/ui.daterangepicker_invalid_config.md
 - api/link/ui.daterangepicker_invalidmessage_config.md
 - api/link/ui.daterangepicker_label_config.md
 - api/link/ui.daterangepicker_labelalign_config.md

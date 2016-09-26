@@ -26,6 +26,7 @@ Methods
 - api/link/ui.calendar_isvisible.md - checks whether the view is visible
 - api/ui.calendar_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.calendar_mapevent.md - routes events from one object to another
+- api/ui.calendar_moveselection.md - 
 - api/ui.calendar_refresh.md - repaints the component
 - api/ui.calendar_render.md - renders the specified item or the whole component
 - api/link/ui.calendar_resize.md - adjusts the view to a new size
@@ -62,6 +63,7 @@ Methods
 - api/link/ui.calendar_isvisible.md
 - api/ui.calendar_locate.md
 - api/link/ui.calendar_mapevent.md
+- api/ui.calendar_moveselection.md
 - api/ui.calendar_refresh.md
 - api/ui.calendar_render.md
 - api/link/ui.calendar_resize.md

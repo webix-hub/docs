@@ -26,7 +26,7 @@ var segmented = webix.ui({
 
 
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/ui.text.md">ui.text</a>, <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
+<a href="api/refs/htmloptions.md">HTMLOptions</a>, <a href="api/refs/ui.text.md">ui.text</a>, <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
 
 <div class='h2'>Methods</div>
@@ -145,6 +145,7 @@ var segmented = webix.ui({
 - api/link/ui.segmented_required_config.md - marks field as required
 - api/link/ui.segmented_suggest_config.md - links suggest list to the input
 - api/link/ui.segmented_tabfocus_config.md - defines whether the control will be included in the tab navigation order
+- api/link/ui.segmented_text_config.md - 
 - api/link/ui.segmented_tooltip_config.md - tooltip for the input
 - api/link/ui.segmented_validate_config.md - adds validation to the field
 - api/link/ui.segmented_validateevent_config.md - on which event validation fires

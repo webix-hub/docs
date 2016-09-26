@@ -52,6 +52,7 @@ var colorboard = webix.ui({
 - api/link/ui.colorboard_isenabled.md - checks whether the view is enabled
 - api/link/ui.colorboard_isvisible.md - checks whether the view is visible
 - api/link/ui.colorboard_mapevent.md - routes events from one object to another
+- api/ui.colorboard_moveselection.md - 
 - api/ui.colorboard_refresh.md - repaints the component
 - api/ui.colorboard_render.md - renders the specified item or the whole component
 - api/link/ui.colorboard_resize.md - adjusts the view to a new size
@@ -104,6 +105,7 @@ var colorboard = webix.ui({
 - api/link/ui.colorboard_minheight_config.md - sets the minimal height for the view
 - api/ui.colorboard_minlightness_config.md - sets the start value of lightness for the default color palette
 - api/link/ui.colorboard_minwidth_config.md - sets the minimal width for the view
+- api/ui.colorboard_navigation_config.md - 
 - api/link/ui.colorboard_on_config.md - allows attaching custom handlers to inner events of the component
 - api/ui.colorboard_palette_config.md - sets palette colors
 - api/ui.colorboard_rows_config.md - sets the number of rows in the palette

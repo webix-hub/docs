@@ -4,6 +4,7 @@ Properties
 {{api
 - api/link/ui.rangechart_alpha_config.md - defines the opacity of chart items
 - api/link/ui.rangechart_animate_config.md - defines or disables view change animation.
+- api/link/ui.rangechart_arialabel_config.md - 
 - api/link/ui.rangechart_barwidth_config.md - the width of bars
 - api/link/ui.rangechart_border_config.md - enables/disables the bar borders
 - api/link/ui.rangechart_bordercolor_config.md - sets the border color of each item in the graph
@@ -73,6 +74,7 @@ Properties
 @index:
 - api/link/ui.rangechart_alpha_config.md
 - api/link/ui.rangechart_animate_config.md
+- api/link/ui.rangechart_arialabel_config.md
 - api/link/ui.rangechart_barwidth_config.md
 - api/link/ui.rangechart_border_config.md
 - api/link/ui.rangechart_bordercolor_config.md

@@ -77,6 +77,7 @@ var barcode = webix.ui({
 
 {{api
 - api/link/ui.barcode_animate_config.md - defines or disables view change animation.
+- api/ui.barcode_arialabel_config.md - 
 - api/link/ui.barcode_borderless_config.md - used to hide the component borders
 - api/ui.barcode_color_config.md - sets the bar color
 - api/link/ui.barcode_container_config.md - an HTML container (or its id) where the component should be initialized
