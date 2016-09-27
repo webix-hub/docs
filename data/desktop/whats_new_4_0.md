@@ -17,7 +17,11 @@ New Features
 - [Accessibility](desktop/accessibility.md): 
 	- High contrast "contrast" skin {{sample 16_skins/15_contrast.html }}
 	- Specific markup for screen reading software
-	- Full keyboard navigation
+	- Full [keyboard navigation](desktop/uimanager.md#builtinkeyboardevents)
+- Responsive features: 
+	- Flex layouts
+    - "Responsive" properties and events for all widgets	 
+    - Advanced options for widget alignment
 - Angular 2 compatibility as part of [Angular JS integration](desktop/angular.md)
 - [DateRangePicker](desktop/daterangepicker.md) and related controls ([DateRange](desktop/daterange.md), [DateRangeFilter](datatable/filtering.md#daterange))
 - [GoogleMap](desktop/googlemap.md) as data component
@@ -28,18 +32,23 @@ Updates
 - [PDF Viewer](desktop/pdfviewer.md): 
 	- navigation and zooming on touch devices
     - scale property and ability to dynamically change it
-    - Webix loading pattern introduced via "binary" [proxy](desktop/server_proxy.md)
+    - Webix loading pattern via "binary" [proxy](desktop/server_proxy.md)
 - Export to PDF: ability to set a [custom font file](desktop/export_pdf.md#exportingdataoffline)
 - [urlData](api/ui.uploader_urldata_config.md) parameter for Uploader
 - MultiText allows customizing sub fields with [subConfig](api/ui.multitext_subconfig_config.md) property
 - [DataDrivers](helpers/data_drivers.md#methodsofdatadriver): public access to the properties returned by .getInfo() method
 - Better control over data move (drag-n-drop): [externalData](api/datamove_externaldata_config.md) property function receives the original data as a third parameter
+- moveSelection() method for [Calendar](api/ui.calendar_moveselection.md) and [Colorboard](api/ui.colorboard_moveselection.md)
+- new methods in the webix.html helper module: [removeStyle()](api/html_removestyle.md) and [triggerEvent()](api/html_triggerevent.md).  
 
 Fixes
 ------------------
 
+- hotkey fails for initially hidden elements
 - line-height in Datatable subviews
 - MultiCombo: do not show additional line if tagMode is disabled
+- updateItem (refresh) call on onChange event for ActiveContent elements
+- prevent from button action in readonly Counter
 - rendering value for combo in ActiveContent
 - autosizing for Dataview items
 - Suggest show selection after it is rendered

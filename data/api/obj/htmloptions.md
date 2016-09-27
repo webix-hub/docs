@@ -1,4 +1,3 @@
 
-dummy stub
 
-{{todo replace with real description }}
+{{memo Aria-style handling for options of multiple-value controls }}

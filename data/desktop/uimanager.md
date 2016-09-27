@@ -94,7 +94,7 @@ Data widgets respond to arrow keys in the following way:
 - "home" - the first item is selected;
 - "end" - the last item is selected;
 
-Hierarchical data widgets have specific behaviors for "right" and "left" keys:  
+Hierarchical data widgets - Tree, Treetable, Grouplist - have specific behavior for "right" and "left" keys:  
 
 - "left" - closes the selected branch;
 - "right" - opens the selected branch.
@@ -144,6 +144,8 @@ Carousel buttons are in the tab order. In addition, carousel icons respond to th
 - "home" - the first date in month is selected;
 - "end" - the last date in month is selected;
 - "tab" - moves across clickable elements of the calendar (buttons, icons).
+
+If no date is selected at the moment, the first date of month is selected.
 
 If calendar shows a time selection view, "left" and "right" arrows are used to change hours while "up" and "down" arrows change minutes. 
 
