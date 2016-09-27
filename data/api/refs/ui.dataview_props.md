@@ -21,7 +21,6 @@ Properties
 - api/link/ui.dataview_height_config.md - sets the height of the component
 - api/link/ui.dataview_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.dataview_id_config.md - the component ID
-- api/link/ui.dataview_layout_config.md - 
 - api/link/ui.dataview_loadahead_config.md - how the number of records that need to be loaded in addition to mandatory ones during each dynamic loading request
 - api/link/ui.dataview_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.dataview_maxwidth_config.md - sets the maximum width for the view
@@ -49,7 +48,7 @@ Properties
 - api/link/ui.dataview_type_config.md - object that specifies items presentation
 - api/link/ui.dataview_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.dataview_width_config.md - sets the width of the component
-- api/link/ui.dataview_xcount_config.md - 
+- api/ui.dataview_xcount_config.md - adjusts the view width to display the defined number of items in a row
 - api/ui.dataview_ycount_config.md - adjusts the view height to display the defined number of items in a column
 }}
 
@@ -73,7 +72,6 @@ Properties
 - api/link/ui.dataview_height_config.md
 - api/link/ui.dataview_hidden_config.md
 - api/link/ui.dataview_id_config.md
-- api/link/ui.dataview_layout_config.md
 - api/link/ui.dataview_loadahead_config.md
 - api/link/ui.dataview_maxheight_config.md
 - api/link/ui.dataview_maxwidth_config.md
@@ -101,6 +99,6 @@ Properties
 - api/link/ui.dataview_type_config.md
 - api/link/ui.dataview_url_config.md
 - api/link/ui.dataview_width_config.md
-- api/link/ui.dataview_xcount_config.md
+- api/ui.dataview_xcount_config.md
 - api/ui.dataview_ycount_config.md
 

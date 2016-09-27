@@ -19,22 +19,6 @@ webix.ui({
 
 {{sample 65_spreadsheet/01_basic/08_cell_resize.html}}
 
-Math operations
-----------------
-
-Math functionality is also enabled in the configuration of the component. Just set the api/ui.spreadsheet_math_config.md property to true.
-
-~~~js
-webix.ui({
-	view:"spreadsheet",
-	data: base_data,
-	math:true
-});
-~~~
-
-To get more information about math in SpreadSheet, read the spreadsheet/math.md article.
-
-{{sample 65_spreadsheet/01_basic/03_math.html}}
 
 Enabling formula editor
 ------------------------------

@@ -159,4 +159,65 @@ webix.ui({
 
 {{sample 65_spreadsheet/01_basic/07_formula.html}}
 
+
+Using Named Ranges in Formulas
+-----------------------
+
+You can specify a name for a particular range of cells and then use it in formulas for calculations. 
+
+<img src="spreadsheet/adding_named_range.png">
+
+Thus, the formula will be easier to understand and work with.
+
+<img src="spreadsheet/named_range_formula.png">
+
+You can add a named range and manipulate it through the **ranges** collection:
+
+- to add a new named range, use the *ranges.add()* method and pass two parameters to it:
+
+	- name - (string) the name for a named range
+	- range - (string) the range of cells to include into the range
+~~~js
+$$("ssheet").ranges.add("MYRANGE","B2:C2");
+~~~
+
+- to get the range of cells included into the named range, use the *ranges.getCode()* notation:
+
+~~~js
+$$("ssheet").ranges.getCode("MYRANGE"); // -> "B2:C2"
+~~~
+
+- to get values of all cells included into the named range, make use of the *ranges.getData()* method:
+
+~~~js
+$$("ssheet").ranges.getData("MYRANGE"); 
+~~~
+
+The method returns an array with data values of cells. For example:
+
+~~~js
+
+~~~
+
+- to get all the existing named ranges, apply the *ranges.getRanges()* method:
+
+~~~js
+$$("ssheet").ranges.getRanges(); 
+~~~
+
+The method returns an array with objects, each of which presents a named range. For example:
+
+~~~js
+[{name:"K",range:"C3:D3"},{name:"M",range:"C4:E4"}]
+~~~
+
+- to remove an existing named range, use the *ranges.remove()* method:
+
+~~~js
+$$("ssheet").ranges.remove("MYRANGE");
+~~~
+
+
+{{sample 65_spreadsheet/02_api/13_named_ranges.html}}
+
 @spellcheck:counts
