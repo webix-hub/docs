@@ -206,13 +206,13 @@ are used by screen reading software to announce the purpose of the element:
 
 - *increaseValue* - aria label for "+" counter button
 - *decreaseValue* - aria label for "-" counter button
-- *navMonth* - aria labels for previous and next month buttons
-- *navYear* - aria labels for previous and next year buttons
-- *navDecade* - aria labels for previous and next decade buttons
+- *navMonth* - aria labels for previous and next month buttons in calendar
+- *navYear* - aria labels for previous and next year buttons in calendar
+- *navDecade* - aria labels for previous and next decade buttons in calendar
 - *removeItem* - aria label for multicombo "x" button
-- *pages* - aria labels for pages navigation buttons
+- *pages* - aria labels for pager navigation buttons
 - *page* - aria label for pager numbered buttons
-- *headermenu* - aria label for headermenu icon in the datatable
+- *headermenu* - aria label for headermenu icon in datatable
 - *openGroup* - aria label for "+" (open group) icon in datatable
 - *closeGroup* - aria label for "-" (close group) icon in datatable
 - *closeTab* - aria label for "x" icon on a closable tab in tabbar

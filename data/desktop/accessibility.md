@@ -48,7 +48,7 @@ All Webix widgets are provided with keyboard navigation, which allows using Webi
 - the "tab" key is used to navigate between widgets and clickable areas of the widgets;
 - arrow keys are used to move selection or change active elements within widgets;
 - "esc" key closes windows and editors;
-- "enter" is used to hide windows. 
+- "enter" is used to open and hide drop-down lists of select controls. 
 
 For the full list of built-in hotkeys, consult the [Keyboard Events and Navigation](desktop/uimanager.md#builtinkeyboardevents) article.
 
