@@ -30,8 +30,13 @@ For example:
 
 ###Setting styles for custom formatting
 
-To specify styles for custom cell format, you should define **webix_ssheet_format_[color]** class.
-For example:
+
+To specify styles for custom cell format, you should define **webix_ssheet_format_{color}** class. The last part of the class name {color} is used as a special 
+word. 
+
+You should replace it with the name of the color which you want to use for formatting and apply the same word instead of [color] in the corresponding code section. 
+
+For example, you can set the following CSS class:
 
 ~~~css
 <style>
@@ -42,11 +47,20 @@ For example:
 </style>
 ~~~
 
+And then apply it in the custom format code section as follows:
+
+~~~js
+"[>100][green]0.0"
+~~~
+
+There is a set of colors with predefined css styles: *green*, *red*, *blue*, *orange*, *black*, *violet* and *magenta*
+
+
 ###Applying Custom Format
 
 For setting a custom number format for a cell value, use of the api/ui.spreadsheet_setformat.md method. It takes three parameters:
 
-- rowId- (number) the row id
+- rowId - (number) the row id
 - columnId - (number) the column id
 - format - (string)	conditions for formatting the cell content, separated by semi-colons 
 
@@ -140,6 +154,7 @@ $$("ss1").setCellFilter(2,2, "B3:B7");
 
 {{sample 65_spreadsheet/02_api/09_filters.html}}
 
+
 Adding Sparklines into a Cell
 ------------------------------
 
@@ -170,68 +185,6 @@ $$("ssheet").addSparkline(5,5,{type:"line", range:"B4:E4", color:"#6666FF"});
 {{sample 65_spreadsheet/02_api/10_sparklines.html}}
 
 
-Adding Named Ranges 
------------------------
-
-You can specify a name for a particular range of cells and then use it in formulas for calculations. 
-
-<img src="spreadsheet/adding_named_range.png">
-
-Thus, the formula will be easier to understand and work with.
-
-<img src="spreadsheet/named_range_formula.png">
-
-You can add a named range and manipulate it through the **ranges** collection:
-
-- to add a new named range, use the *ranges.add()* method and pass two parameters to it:
-
-	- name - (string) the name for a named range
-	- range - (string) the range of cells to include into the range
-~~~js
-$$("ssheet").ranges.add("MYRANGE","B2:C2");
-~~~
-
-- to get the range of cells included into the named range, use the *ranges.getCode()* notation:
-
-~~~js
-$$("ssheet").ranges.getCode("MYRANGE"); // -> "B2:C2"
-~~~
-
-- to get values of all cells included into the named range, make use of the *ranges.getData()* method:
-
-~~~js
-$$("ssheet").ranges.getData("MYRANGE"); 
-~~~
-
-The method returns an array with data values of cells. For example:
-
-~~~js
-
-~~~
-
-- to get all the existing named ranges, apply the *ranges.getRanges()* method:
-
-~~~js
-$$("ssheet").ranges.getRanges(); 
-~~~
-
-The method returns an array with objects, each of which presents a named range. For example:
-
-~~~js
-[{name:"K",range:"C3:D3"},{name:"M",range:"C4:E4"}]
-~~~
-
-- to remove an existing named range, use the *ranges.remove()* method:
-
-~~~js
-$$("ssheet").ranges.remove("MYRANGE");
-~~~
-
-###Using Named Ranges in Formulas
-
-
-{{sample 65_spreadsheet/02_api/13_named_ranges.html}}
-
 Adding Image in a Cell
 ----------------------
 
@@ -252,32 +205,6 @@ $$("ssheet").addImage(2,3, "http://docs.webix.com/media/desktop/image.png");
 
 
 {{sample 65_spreadsheet/02_api/11_images.html}}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

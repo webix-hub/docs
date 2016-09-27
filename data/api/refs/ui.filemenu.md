@@ -197,7 +197,7 @@ dummy stub
 - api/link/ui.filemenu_height_config.md - sets the height of the component
 - api/link/ui.filemenu_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.filemenu_id_config.md - the component ID
-- api/link/ui.filemenu_layout_config.md - 
+- api/link/ui.filemenu_layout_config.md - defines x or y orientation of layout
 - api/link/ui.filemenu_left_config.md - the left offset of the window
 - api/link/ui.filemenu_master_config.md - the area for which context object in initialized
 - api/link/ui.filemenu_maxheight_config.md - sets the maximum height for the view
@@ -238,7 +238,7 @@ dummy stub
 - api/link/ui.filemenu_type_config.md - object that specifies items presentation
 - api/link/ui.filemenu_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.filemenu_width_config.md - sets the width of the component
-- api/link/ui.filemenu_xcount_config.md - 
+- api/link/ui.filemenu_xcount_config.md - defines width of view in items
 - api/link/ui.filemenu_ycount_config.md - defines height of view in items
 - api/link/ui.filemenu_zindex_config.md - stack order of the component
 }}

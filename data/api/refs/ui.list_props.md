@@ -22,7 +22,7 @@ Properties
 - api/link/ui.list_height_config.md - sets the height of the component
 - api/link/ui.list_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.list_id_config.md - the component ID
-- api/link/ui.list_layout_config.md - 
+- api/ui.list_layout_config.md - defines x or y orientation of layout
 - api/link/ui.list_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.list_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.list_minheight_config.md - sets the minimal height for the view
@@ -50,7 +50,7 @@ Properties
 - api/link/ui.list_type_config.md - object that specifies items presentation
 - api/link/ui.list_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.list_width_config.md - sets the width of the component
-- api/link/ui.list_xcount_config.md - 
+- api/ui.list_xcount_config.md - defines width of view in items
 - api/ui.list_ycount_config.md - defines height of view in items
 }}
 
@@ -75,7 +75,7 @@ Properties
 - api/link/ui.list_height_config.md
 - api/link/ui.list_hidden_config.md
 - api/link/ui.list_id_config.md
-- api/link/ui.list_layout_config.md
+- api/ui.list_layout_config.md
 - api/link/ui.list_maxheight_config.md
 - api/link/ui.list_maxwidth_config.md
 - api/link/ui.list_minheight_config.md
@@ -103,6 +103,6 @@ Properties
 - api/link/ui.list_type_config.md
 - api/link/ui.list_url_config.md
 - api/link/ui.list_width_config.md
-- api/link/ui.list_xcount_config.md
+- api/ui.list_xcount_config.md
 - api/ui.list_ycount_config.md
 

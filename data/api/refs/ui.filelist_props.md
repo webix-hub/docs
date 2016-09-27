@@ -27,7 +27,7 @@ Properties
 - api/link/ui.filelist_height_config.md - sets the height of the component
 - api/link/ui.filelist_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.filelist_id_config.md - the component ID
-- api/link/ui.filelist_layout_config.md - 
+- api/link/ui.filelist_layout_config.md - defines x or y orientation of layout
 - api/link/ui.filelist_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.filelist_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.filelist_minheight_config.md - sets the minimal height for the view
@@ -55,7 +55,7 @@ Properties
 - api/link/ui.filelist_type_config.md - object that specifies items presentation
 - api/link/ui.filelist_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.filelist_width_config.md - sets the width of the component
-- api/link/ui.filelist_xcount_config.md - 
+- api/link/ui.filelist_xcount_config.md - defines width of view in items
 - api/link/ui.filelist_ycount_config.md - defines height of view in items
 }}
 
