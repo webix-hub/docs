@@ -9,7 +9,7 @@ Formatting can be applied to a selected range of cells as well.
 
 <img src="spreadsheet/conditional_formatting_result.png">
 
-A condition for a cell presents an array which consists of 5 elements:
+To specify a condition for a cell you need to set 5 parameters:
 
 - the row id
 - the column id
@@ -17,11 +17,6 @@ A condition for a cell presents an array which consists of 5 elements:
 - the number to compare the cell value with
 - the CSS style that will be applied to the cell if its value complies with the condition (see the details below)
 
-For example: 
-
-~~~js
- [3,6,">",100,"custom_bgcolor"],
-~~~
 
 {{sample 65_spreadsheet/01_basic/09_conditional.html}}
 
@@ -80,7 +75,7 @@ Use the *conditions* collection to manage cells formatting:
 
 ###Add formatting to a cell
 
-You can add formatting to cell by using the conditions.add() method. The method takes as a prameter an array with five elements:
+You can add formatting to cell by using the conditions.add() method. The method takes five parameters:
 
 - rowId - (number) the row id
 - columnId - (number) the column id
@@ -89,7 +84,7 @@ You can add formatting to cell by using the conditions.add() method. The method 
 - style - (string) the style that will be applied to the cell, if its value meets the condition
 
 ~~~js
-$$("ssheet").conditions.add([3,6,">",100,"custom_bgcolor"]);
+$$("ssheet").conditions.add(3,6,">",100,"custom_bgcolor");
 ~~~
 
 ###Delete formatting from a cell

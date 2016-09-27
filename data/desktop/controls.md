@@ -17,7 +17,6 @@ These controls can be used for entering text, selecting an option, date or color
 - [Counter](desktop/counter.md)
 - [Datepicker](desktop/datepicker.md)
 - [Daterangepicker](desktop/daterangepicker.md)
-- [Daterangesuggest](desktop/daterangesuggest.md)
 - [Fieldset](desktop/fieldset.md)
 - [Icon](desktop/icon.md)
 - [Label](desktop/label.md)
@@ -74,7 +73,6 @@ For further details check the desktop/controls_guide.md article.
   - desktop/counter.md
   - desktop/datepicker.md
   - desktop/daterangepicker.md
-  - desktop/daterangesuggest.md
   - desktop/fieldset.md
   - desktop/icon.md
   - desktop/label.md

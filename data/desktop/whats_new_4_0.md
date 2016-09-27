@@ -19,9 +19,8 @@ New Features
 	- Specific markup for screen reading software
 	- Full keyboard navigation
 - Angular 2 compatibility as part of [Angular JS integration](desktop/angular.md)
-- [DateRangePicker](desktop/daterangepicker.md) and related controls ([DateRange](desktop/daterange.md), [DateRangeSuggest](desktop/daterangesuggest.md), 
-[DateRangeFilter](datatable/filtering.md#daterange))
-- GoogleMap as data component
+- [DateRangePicker](desktop/daterangepicker.md) and related controls ([DateRange](desktop/daterange.md), [DateRangeFilter](datatable/filtering.md#daterange))
+- [GoogleMap](desktop/googlemap.md) as data component
 
 Updates
 -------------------

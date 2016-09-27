@@ -16,6 +16,8 @@ You can also pick the time by using the timepicker at the bottom of the widget.
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/daterange.png">
 
+{{sample 60_pro/14_daterange/01_daterange.html}}
+
 Initialization
 ------------------
 
@@ -41,6 +43,7 @@ webix.ui({
 - timepicker - (boolean) sets a time selector below the calendars grids
 - value - (object) initial range that should be selected in the DateRange
 
+
 Working with DateRange
 ---------------------
 
@@ -65,6 +68,22 @@ $$("daterange1").getValue();
 // end: Wed Nov 02 2016 00:00:00 GMT+0300 (Russia Standard Time)}
 ~~~
 
+Configuring calendars
+-----------------
+
+common for all calendars 
+
+~~~js
+webix.ui({
+	view:"daterange",
+    //calendar properties
+    calendar:{
+    	weekNumber:true
+    }
+});	
+~~~
+
+
 
 ##DateRangePicker 
 
@@ -74,16 +93,17 @@ In this case, you can make use of the desktop/daterangepicker.md control.
 Thus, you won't have to initialize DateRange, as it will appear when you click the daterangepicker icon. 
 The daterangepicker will be shown with the current date selected. 
 
-<img src="desktop/date_picker.png"/>
+<img src="desktop/daterange_picker.png"/>
 
 ~~~js
 webix.ui({
-	view:"toolbar", 
-	type:"MainBar", 
+	view:"form", 
 	elements:[
-    	{view:"daterangepicker",  name: "select_date",  label: 'Select Date' } 
+    	{view:"daterangepicker",  name: "default",  label: 'Default' } 
 	]
 });
 ~~~
+
+{{sample 60_pro/02_form/11_daterangepicker.html}}
 
 @edition:pro
