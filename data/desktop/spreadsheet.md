@@ -43,7 +43,7 @@ of various languages.
                 <li>spreadsheet/config.md</li>          
             </ul>
 		</td>
-		<td class='topic_description'>Discusses the main points of SpreadSheet initialization and customization.</td>
+		<td class='topic_description'>Discusses the main points of SpreadSheet initialization and configuration.</td>
 	</tr>
     <tr>
 		<td id="design" class='topics'>
@@ -56,7 +56,7 @@ of various languages.
                 <li>spreadsheet/ui_guide.md</li>
             </ul>
 		</td>
-		<td class='topic_description'>Discusses the main points of SpreadSheet initialization and customization.</td>
+		<td class='topic_description'>Tells about the possibilities of customizing the SpreadSheet appearance.</td>
 	</tr>
     <tr>
 		<td id="design" class='topics'>
@@ -83,7 +83,7 @@ of various languages.
                 <li>spreadsheet/import.md</li>                              
             </ul>
 		</td>
-		<td class='topic_description'>Describes possible operations with SpreadSheet and its elements.</td>
+		<td class='topic_description'>Dwells on available options you've got for importing and exporting SpreadSheet data.</td>
 	</tr>
     <tr>
 		<td id="design" class='topics'>
@@ -95,7 +95,7 @@ of various languages.
                 <li>spreadsheet/howto.md</li> 
             </ul>
 		</td>
-		<td class='topic_description'>Describes possible operations with SpreadSheet and its elements.</td>
+		<td class='topic_description'>Contains additional information you may need while working with SpreadSheet.</td>
 	</tr>
 	</tbody>
 </table>
@@ -103,12 +103,13 @@ of various languages.
 
 @index:
 - spreadsheet/spreadsheet_init.md
-- spreadsheet/customization.md
 - spreadsheet/loading_data.md
 - spreadsheet/localization.md
 - spreadsheet/config.md
-- spreadsheet/cell_content.md
+- spreadsheet/customization.md
 - spreadsheet/frozen_rows_columns.md
+- spreadsheet/ui_guide.md
+- spreadsheet/cell_content.md
 - spreadsheet/conditional_formatting.md
 - spreadsheet/math.md
 - spreadsheet/multiple_sheets.md
@@ -117,4 +118,4 @@ of various languages.
 - spreadsheet/import.md
 - spreadsheet/handling_events.md
 - spreadsheet/howto.md
-- spreadsheet/ui_guide.md
+

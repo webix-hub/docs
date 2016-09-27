@@ -41,8 +41,9 @@ webix.ui({
 The following properties define the initial position of the map:
 
 - **id** - (string) defines the unique ID of the widget;
-- **zoom** - number - defines the resolution of map objects displaying;
-- **center** - array - sets the center of the map. It's an array of two elements (latitude and longitude) with comma delimiter.
+- **zoom** - (number) defines the resolution of map objects displaying;
+- **center** - (array) sets the center of the map. It's an array of two elements (latitude and longitude) with comma delimiter.
+- **layerType** - (string) the type of map layer
 
 Working with GoogleMap
 ------------------------
@@ -216,13 +217,5 @@ $$("map").showItem(1).$marker;
 - **drawData** - draws data after each operation with marker. 
 
 ~~~js
-$$("map").drawData(id, item, operation).$marker;
+$$("map").drawData();
 ~~~
-
-It takes three parameters:
-
-- id - (number) marker id
-- item - (object) the data object
-- operation - (string) the name of the operation (“add”, “update”, “delete”)
-
-

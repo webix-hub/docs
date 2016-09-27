@@ -98,7 +98,6 @@ In this section we will consider the blocks of buttons, their names that you can
 
 <h3 id="file">File block</h3>
 
-<img src="spreadsheet/file.png">
 
 It includes the "sheet" select that allows working with sheet and contains three options:
 

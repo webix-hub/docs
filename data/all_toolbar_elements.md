@@ -15,7 +15,7 @@ toolbar: [
 					{
 						name: "sheet", 
                         view: "ssheet-button-icon-top", 
-                        text: getText("sheet"), 
+                        text: "Sheets", 
                         arrow: true,
 						options:[
 							{id: "new-sheet"},
@@ -32,11 +32,7 @@ toolbar: [
 				]
 			},
 			{},
-			{
-            	template: getText("file"), 
-                view: "ssheet-bar-title", 
-                height: 24, width: 85
-            }
+			{ template: "file", view: "ssheet-bar-title", height: 24, width: 85 }
 		]
 	},
 	{view: "ssheet-separator"},
@@ -46,16 +42,16 @@ toolbar: [
 			{
             	$button: "undo", 
                 view: "ssheet-button", 
-                label: getText("undo"), 
-                width: sizes["undo"] 
+                label: "Undo", 
+                width: 60 
             },
 			{
             	$button: "redo", 
                 view: "ssheet-button", 
-                label: getText("redo"), 
-                width: sizes["undo"]
+                label: "Redo", 
+                width: 60
             },
-			{template: getText("undo-redo"), view: "ssheet-bar-title", height: 24}
+			{ template: "Undo/redo", view: "ssheet-bar-title", height: 24}
 		]
 	},
 	{view: "ssheet-separator"},
@@ -90,7 +86,7 @@ toolbar: [
 					{$button: "background"}
 				]
 			},
-			{template: getText("font"), view: "ssheet-bar-title", height: 24}
+			{template: "font", view: "ssheet-bar-title", height: 24}
 		]
 	},
 	{view: "ssheet-separator"},
@@ -111,7 +107,7 @@ toolbar: [
 					{$button: "wrap"}
 				]
 			},
-			{template: getText("align"), view: "ssheet-bar-title", height: 24}
+			{template: "Align", view: "ssheet-bar-title", height: 24}
 		]
 	},
 	{view: "ssheet-separator"},
@@ -120,10 +116,10 @@ toolbar: [
 		rows:[
 			{$button: "format"},
 			{$button: "custom-format"},
-			{template: getText("number"), view: "ssheet-bar-title", height: 24}
+			{template: "Number", view: "ssheet-bar-title", height: 24}
 		]
 	},
-	{view: "ssheet-separator"},
+	{ view: "ssheet-separator" },
 	{
 		padding: 3,
 		rows:[
@@ -140,35 +136,31 @@ toolbar: [
 				{ $button: "add-range"},
 				{ $button: "lock-cell"},
 				{ $button: "add-dropdown"},
-				{ $button:"clear-styles"}
+				{ $button: "clear-styles"}
 			]},
-			{template: getText("edit"), view: "ssheet-bar-title", height: 24}
+			{template: "Edit", view: "ssheet-bar-title", height: 24}
 		]
 	},
-	{view: "ssheet-separator"},
+	{ view: "ssheet-separator" },
 	{
 		padding: 3,
 		rows:[
 			{
             	$button: "add-image", 
                 view: "ssheet-button", 
-                label: getText("image"), 
-                width:sizes["insert"]
+                label: "Image", 
+                width: 65
             },
 			{
             	$button: "add-sparkline", 
                 view: "ssheet-button", 
-                label: getText("graph"), 
-                width:sizes["insert"]
+                label: "Graph", 
+                width: 65
             },
-			{
-            	template: getText("insert"), 
-                view: "ssheet-bar-title", 
-                height: 24
-            }
+			{ template: "Insert", view: "ssheet-bar-title", height: 24}
 		]
 	},
-	{view: "ssheet-separator"},
+	{ view: "ssheet-separator" },
 	{
 		padding: 3,
 		rows:[
@@ -192,7 +184,7 @@ toolbar: [
 					}
 				]
 			},
-			{template: getText("view"), view: "ssheet-bar-title", height: 24}
+			{template: "View", view: "ssheet-bar-title", height: 24}
 		]
  	}
 ]
