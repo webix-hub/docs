@@ -11,7 +11,7 @@ Properties
 - api/link/ui.multicombo_bottompadding_config.md - sets the bottom offset of the control input
 - api/ui.multicombo_button_config.md - defines whether the "Select" button will be displayed in the options list
 - api/link/ui.multicombo_click_config.md - click action handler
-- api/link/ui.multicombo_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.multicombo_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.multicombo_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.multicombo_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.multicombo_gravity_config.md - sets the view gravity (1 by default)
@@ -23,6 +23,7 @@ Properties
 - api/link/ui.multicombo_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.multicombo_inputpadding_config.md - padding of text in the input
 - api/link/ui.multicombo_inputwidth_config.md - the width of the input area, or a button's text value area.
+- api/link/ui.multicombo_invalid_config.md - 
 - api/link/ui.multicombo_invalidmessage_config.md - sets the text of a validation message
 - api/ui.multicombo_keeptext_config.md - defines whether the entered text should be kept in the input after an option is selected
 - api/link/ui.multicombo_label_config.md - the text label of the control
@@ -50,7 +51,7 @@ Properties
 - api/link/ui.multicombo_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/ui.multicombo_tagmode_config.md - defines presentation mode of input values
 - api/ui.multicombo_tagtemplate_config.md - defines template of input values
-- api/link/ui.multicombo_text_config.md - visible text in the related input
+- api/link/ui.multicombo_text_config.md - 
 - api/link/ui.multicombo_tooltip_config.md - tooltip for the input
 - api/link/ui.multicombo_validate_config.md - adds validation to the field
 - api/link/ui.multicombo_validateevent_config.md - on which event validation fires
@@ -80,6 +81,7 @@ Properties
 - api/link/ui.multicombo_inputheight_config.md
 - api/link/ui.multicombo_inputpadding_config.md
 - api/link/ui.multicombo_inputwidth_config.md
+- api/link/ui.multicombo_invalid_config.md
 - api/link/ui.multicombo_invalidmessage_config.md
 - api/ui.multicombo_keeptext_config.md
 - api/link/ui.multicombo_label_config.md

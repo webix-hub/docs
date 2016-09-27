@@ -7,7 +7,8 @@ Properties
 - api/ui.spreadsheet_buttons_config.md - contains the names of buttons blocks with arrays of buttons' names
 - api/link/ui.spreadsheet_cols_config.md - array of views objects arranged horizontally
 - api/ui.spreadsheet_columncount_config.md - the number of columns in the SpreadSheet
-- api/link/ui.spreadsheet_container_config.md - an html container (or its id) where the component needs initializing
+- api/ui.spreadsheet_conditionstyle_config.md - specifies a set of styles applied to a cell, if its value corresponds to a condition
+- api/link/ui.spreadsheet_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.spreadsheet_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.spreadsheet_data_config.md - JavaScript array containing data for the component
 - api/link/ui.spreadsheet_datatype_config.md - the type of loaded data
@@ -16,7 +17,7 @@ Properties
 - api/link/ui.spreadsheet_height_config.md - sets the height of the component
 - api/link/ui.spreadsheet_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.spreadsheet_id_config.md - the component ID
-- api/link/ui.spreadsheet_isolate_config.md - masks IDs of all inner element
+- api/link/ui.spreadsheet_isolate_config.md - masks IDs of all inner elements
 - api/ui.spreadsheet_liveeditor_config.md - enables the formula editor in spreadsheet
 - api/link/ui.spreadsheet_margin_config.md - defines the space around elements (applies the specified value to all elements)
 - api/ui.spreadsheet_math_config.md - enables the math functionality in the spreadsheet
@@ -33,6 +34,7 @@ Properties
 - api/link/ui.spreadsheet_responsive_config.md - enables responsive mode for horizontal layout
 - api/ui.spreadsheet_rowcount_config.md - the number of rows in the SpreadSheet
 - api/link/ui.spreadsheet_rows_config.md - array of views objects arranged vertically
+- api/ui.spreadsheet_sheettabwidth_config.md - sets the width of a sheet tab
 - api/ui.spreadsheet_subbar_config.md - adds a view between the toolbar and the datatable
 - api/link/ui.spreadsheet_type_config.md - defines the layout borders
 - api/link/ui.spreadsheet_url_config.md - the URL which the component will use to load data after its initialization
@@ -46,6 +48,7 @@ Properties
 - api/ui.spreadsheet_buttons_config.md
 - api/link/ui.spreadsheet_cols_config.md
 - api/ui.spreadsheet_columncount_config.md
+- api/ui.spreadsheet_conditionstyle_config.md
 - api/link/ui.spreadsheet_container_config.md
 - api/link/ui.spreadsheet_css_config.md
 - api/link/ui.spreadsheet_data_config.md
@@ -72,6 +75,7 @@ Properties
 - api/link/ui.spreadsheet_responsive_config.md
 - api/ui.spreadsheet_rowcount_config.md
 - api/link/ui.spreadsheet_rows_config.md
+- api/ui.spreadsheet_sheettabwidth_config.md
 - api/ui.spreadsheet_subbar_config.md
 - api/link/ui.spreadsheet_type_config.md
 - api/link/ui.spreadsheet_url_config.md

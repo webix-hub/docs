@@ -294,7 +294,7 @@ var Freid = {
 
 	_is_view:function(key, obj){
 		if (typeof obj != "function") return false;
-		if (!Freid._rg_small.test(key)) return false;
+		if (!Freid._rg_small.test(key) && key.indexOf("google-") !== 0) return false;
 		if (key == "get" || key == "delay" || key == "resize") return false;
 
 		return {

@@ -11,7 +11,7 @@ Properties
 - api/ui.tabbar_bottomoffset_config.md - bottom offset of tabbar
 - api/link/ui.tabbar_bottompadding_config.md - sets the bottom offset of the control input
 - api/link/ui.tabbar_click_config.md - click action handler
-- api/link/ui.tabbar_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.tabbar_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.tabbar_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.tabbar_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.tabbar_gravity_config.md - sets the view gravity (1 by default)
@@ -23,6 +23,7 @@ Properties
 - api/link/ui.tabbar_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.tabbar_inputpadding_config.md - padding of text in the input
 - api/link/ui.tabbar_inputwidth_config.md - the width of the input area, or a button's text value area.
+- api/link/ui.tabbar_invalid_config.md - 
 - api/link/ui.tabbar_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.tabbar_label_config.md - the text label of the control
 - api/link/ui.tabbar_labelalign_config.md - the alignment of a label towards its container
@@ -53,6 +54,7 @@ Properties
 - api/ui.tabbar_tabmorewidth_config.md - width of "more" button in tabbar
 - api/ui.tabbar_taboffset_config.md - left padding of first tab
 - api/ui.tabbar_tabbarpopup_config.md - custom popup for responsive tabbar
+- api/link/ui.tabbar_text_config.md - 
 - api/link/ui.tabbar_tooltip_config.md - tooltip for the input
 - api/ui.tabbar_topoffset_config.md - top offset of tabbar
 - api/link/ui.tabbar_type_config.md - the type of the control
@@ -85,6 +87,7 @@ Properties
 - api/link/ui.tabbar_inputheight_config.md
 - api/link/ui.tabbar_inputpadding_config.md
 - api/link/ui.tabbar_inputwidth_config.md
+- api/link/ui.tabbar_invalid_config.md
 - api/link/ui.tabbar_invalidmessage_config.md
 - api/link/ui.tabbar_label_config.md
 - api/link/ui.tabbar_labelalign_config.md
@@ -115,6 +118,7 @@ Properties
 - api/ui.tabbar_tabmorewidth_config.md
 - api/ui.tabbar_taboffset_config.md
 - api/ui.tabbar_tabbarpopup_config.md
+- api/link/ui.tabbar_text_config.md
 - api/link/ui.tabbar_tooltip_config.md
 - api/ui.tabbar_topoffset_config.md
 - api/link/ui.tabbar_type_config.md

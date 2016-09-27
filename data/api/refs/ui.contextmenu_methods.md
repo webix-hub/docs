@@ -27,7 +27,7 @@ Methods
 - api/link/ui.contextmenu_exists.md - checks whether an item with the specified id exists
 - api/link/ui.contextmenu_filter.md - filters the component
 - api/link/ui.contextmenu_find.md - returns rows that match the criterion
-- api/link/ui.contextmenu_getbody.md - gets the ui view of the window body
+- api/link/ui.contextmenu_getbody.md - gets the UI view of the window body
 - api/link/ui.contextmenu_getchildviews.md - returns child views of the calling component
 - api/link/ui.contextmenu_getcontext.md - gets the master area for contextmenu
 - api/link/ui.contextmenu_getfirstid.md - returns the ID of the first item

@@ -44,7 +44,7 @@ var window = webix.ui({
 - api/link/ui.window_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.window_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.window_enable.md - enables the calling view that was disabled by the 'disable' method
-- api/ui.window_getbody.md - gets the ui view of the window body
+- api/ui.window_getbody.md - gets the UI view of the window body
 - api/link/ui.window_getchildviews.md - returns child views of the calling component
 - api/link/ui.window_getformview.md - returns master form for the input
 - api/ui.window_gethead.md - gets the ui view of the window header
@@ -99,7 +99,7 @@ var window = webix.ui({
 - api/ui.window_autofocus_config.md - sets focus on the window the moment it appears on the page
 - api/ui.window_body_config.md - the content of window body: template or view
 - api/link/ui.window_borderless_config.md - used to hide the component borders
-- api/link/ui.window_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.window_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.window_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.window_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.window_fullscreen_config.md - renders window in fullscreen mode

@@ -24,7 +24,7 @@ var radio = webix.ui({
 - [Samples](http://docs.webix.com/samples/13_form/01_controls/04_radio.html)
 
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/ui.text.md">ui.text</a>, <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
+<a href="api/refs/htmloptions.md">HTMLOptions</a>, <a href="api/refs/ui.text.md">ui.text</a>, <a href="api/refs/ui.button.md">ui.button</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/atomrender.md">AtomRender</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
 
 <div class='h2'>Methods</div>
@@ -103,7 +103,7 @@ var radio = webix.ui({
 - api/link/ui.radio_bottomlabel_config.md - sets a label under a control
 - api/link/ui.radio_bottompadding_config.md - sets the bottom offset of the control input
 - api/link/ui.radio_click_config.md - click action handler
-- api/link/ui.radio_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.radio_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.radio_css_config.md - the name of a css class that will be applied to the view container
 - api/ui.radio_customradio_config.md - enables/disables custom radio button for some skins
 - api/link/ui.radio_disabled_config.md - indicates whether an item is enabled or not
@@ -135,6 +135,7 @@ var radio = webix.ui({
 - api/link/ui.radio_required_config.md - marks field as required
 - api/link/ui.radio_suggest_config.md - links suggest list to the input
 - api/link/ui.radio_tabfocus_config.md - defines whether the control will be included in the tab navigation order
+- api/link/ui.radio_text_config.md - 
 - api/link/ui.radio_tooltip_config.md - tooltip for the input
 - api/link/ui.radio_validate_config.md - adds validation to the field
 - api/link/ui.radio_validateevent_config.md - on which event validation fires

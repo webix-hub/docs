@@ -15,7 +15,7 @@ webix.i18n.setLocale();
 
 @template:	api_config
 @descr:
-You need to call api/i18n_setlocale.md to apply the new format settings.
+You need to call api/i18n_setlocale.md to apply the new data export settings.
 
 @related:
 desktop/localization.md

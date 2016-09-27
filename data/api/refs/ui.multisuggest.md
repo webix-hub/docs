@@ -48,8 +48,8 @@ webix.ui({
 - api/link/ui.multisuggest_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.multisuggest_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.multisuggest_enable.md - enables the calling view that was disabled by the 'disable' method
-- api/link/ui.multisuggest_getbody.md - gets the ui view of the window body
-- api/ui.multisuggest_getbutton.md - get button object of a multiselect popup
+- api/link/ui.multisuggest_getbody.md - gets the UI view of the window body
+- api/ui.multisuggest_getbutton.md - gets the button object of a multiselect popup
 - api/link/ui.multisuggest_getchildviews.md - returns child views of the calling component
 - api/link/ui.multisuggest_getformview.md - returns master form for the input
 - api/link/ui.multisuggest_gethead.md - gets the ui view of the window header
@@ -115,7 +115,7 @@ webix.ui({
 - api/link/ui.multisuggest_borderless_config.md - used to hide the component borders
 - api/ui.multisuggest_button_config.md - sets a button at the bottom of the suggest
 - api/ui.multisuggest_buttontext_config.md - defines text for the 'Select' button
-- api/link/ui.multisuggest_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.multisuggest_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.multisuggest_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.multisuggest_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.multisuggest_filter_config.md - custom filtering function
@@ -178,5 +178,3 @@ webix.ui({
 - api/refs/ui.multisuggest_events.md
 - api/refs/ui.multisuggest_others.md
 
-
-@edition:pro

@@ -253,6 +253,16 @@ table.webixtoc td{
         <td> a spin box, aka an up-down control </td>
     </tr>
     <tr>
+    	<td> <img src="api/toc/daterangepicker.png"/> </td>
+        <td> api/refs/ui.daterangepicker.md </td>
+        <td>a control that allows the user to select a date range</td>
+    </tr>
+    <tr>
+    	<td> <img src="api/toc/daterangepicker.png"/> </td>
+        <td> api/refs/ui.daterangesuggest.md </td>
+        <td>a daterange-based suggest control </td>
+    </tr>
+    <tr>
     	<td> <img src="api/toc/datepicker.png"/> </td>
         <td> api/refs/ui.datepicker.md </td>
         <td>a control that allows the user to select a date</td>
@@ -346,7 +356,7 @@ table.webixtoc td{
 </table>
 
 
-<div class='h2'>Auxiliary Components</div>
+<div class='h2'>Specific Widgets</div>
 <table class='webixtoc'>
 	<tbody>
     <tr>
@@ -363,6 +373,16 @@ table.webixtoc td{
     	<td> <img src="api/toc/colorboard.png"/> </td>
         <td> api/refs/ui.colorboard.md </td>
         <td>a color palette</td>
+    </tr>
+    <tr>
+    	<td> <img src="api/toc/googlemap.png"/> </td>
+        <td> api/refs/ui.google-map.md </td>
+        <td>a datastore-based widget for rendering geographical data with Google Maps</td>
+    </tr>
+    <tr>
+    	<td> <img src="api/toc/daterange.png"/> </td>
+        <td> api/refs/ui.daterange.md </td>
+        <td>a widget for selecting a date range</td>
     </tr>
     <tr>
     	<td> <img src="api/toc/pager.png"/> </td>
@@ -467,10 +487,14 @@ table.webixtoc td{
 - api/refs/ui.datasuggest.md
 - api/refs/ui.datatable.md
 - api/refs/ui.dataview.md
+- api/refs/ui.daterange.md
+- api/refs/ui.daterangepicker.md
+- api/refs/ui.daterangesuggest.md
 - api/refs/ui.datepicker.md
 - api/refs/ui.fieldset.md
 - api/refs/ui.filemanager.md
 - api/refs/ui.form.md
+- api/refs/ui.google-map.md
 - api/refs/ui.gridsuggest.md
 - api/refs/ui.grouplist.md
 - api/refs/ui.headerlayout.md

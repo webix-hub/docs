@@ -6,7 +6,7 @@ Properties
 - api/link/ui.tree_borderless_config.md - used to hide the component borders
 - api/link/ui.tree_click_config.md - sets an action happening on a button click
 - api/link/ui.tree_clipboard_config.md - enables/disables clipboard support
-- api/link/ui.tree_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.tree_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.tree_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.tree_data_config.md - JavaScript array containing data for the component
 - api/link/ui.tree_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
@@ -19,6 +19,7 @@ Properties
 - api/link/ui.tree_height_config.md - sets the height of the component
 - api/link/ui.tree_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.tree_id_config.md - the component ID
+- api/ui.tree_layout_config.md - 
 - api/link/ui.tree_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.tree_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.tree_minheight_config.md - sets the minimal height for the view
@@ -41,11 +42,12 @@ Properties
 - api/link/ui.tree_select_config.md - enables/disables item selection or multiselection in grouplist
 - api/link/ui.tree_template_config.md - the component template
 - api/link/ui.tree_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
-- api/link/ui.tree_threestate_config.md - defines three-state checkboxes for the tree. Flase by default.
-- api/link/ui.tree_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.tree_threestate_config.md - defines three-state checkboxes for the tree
+- api/link/ui.tree_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.tree_type_config.md - object that specifies items presentation
 - api/link/ui.tree_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.tree_width_config.md - sets the width of the component
+- api/ui.tree_xcount_config.md - 
 }}
 
 @index:
@@ -66,6 +68,7 @@ Properties
 - api/link/ui.tree_height_config.md
 - api/link/ui.tree_hidden_config.md
 - api/link/ui.tree_id_config.md
+- api/ui.tree_layout_config.md
 - api/link/ui.tree_maxheight_config.md
 - api/link/ui.tree_maxwidth_config.md
 - api/link/ui.tree_minheight_config.md
@@ -93,4 +96,5 @@ Properties
 - api/link/ui.tree_type_config.md
 - api/link/ui.tree_url_config.md
 - api/link/ui.tree_width_config.md
+- api/ui.tree_xcount_config.md
 

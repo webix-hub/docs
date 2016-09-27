@@ -8,39 +8,39 @@ Each time you create a component on the page, even a single one, **UIManager** m
 - assigning keyboard events to the component in focus;
 - memorizing the component's outer scheme. 
 
+##Focus Control
+
 ###Focusing Methods
 
-You can set and remove focus with the help of two opposite methods - **focus()** and **blur()** that are called from the component object. It can be
-specified in the component's **ready** property to set/remove focusing on page loading. 
-
-The **focus()** method is either used without parameters or takes an **ID** or **name** of an item as an argument. In the latter case, focus is set to this item rather to the whole component. 
+Each Webix widget features two opposite methods - **focus()** and **blur()** - that allow settings/removing focus. 
 
 ~~~js
-$$('my_toolbar').focus(); // the toolbar is focused
-$$('my_toolbar').blur(); //the toolbar is no longer in focus
-
-$$('my_toolbar').focus('my_text'); 
-// a text input with ID/name = "mytext" on this toolbar is focused
+$$("toolbar").focus(); // the toolbar is focused
+$$("toolbar").blur(); //the toolbar is no longer in focus
 
 $$("form").focus(); //the first focusable element in the form is focused
 ~~~
 
-Through UI Manager you can control focus with the following methods that are called from UIManager with the ID of the needed view as an argument: 
+When using the **focus()** method with either form of tollbar you can pass the **name** of the needed control. 
+In this case focus will be set to this control rather to the whole form/toolbar: 
+
+~~~js
+$$("form").focus("text1"); 
+// a text input with name "text1" in this form is focused
+~~~
+
+The UI Manager module allows controlling focus with the following methods that take the ID of the needed widget as an argument: 
 
 - **getFocus**() - returns the view object that is currently focused; 
-- **setFocus**(id) - sets focus into the specified location;
-- **hasFocus**(id) - checks whether the component is in focus and returns *true* or *false* respectively
-- **canFocus**(id) - checks whether the component can take focus. Invisible (hidden) views and their items as well as disabled views cannot be focused. 
+- **setFocus**(id) - sets focus on the specified widget;
+- **hasFocus**(id) - checks whether the widget is in focus and returns *true* or *false* respectively;
+- **canFocus**(id) - checks whether the widget can take focus. Invisible (hidden) views and their items as well as disabled views cannot be focused. 
 
 {{snippet
-Focusing an item with ID 'books'
+Focusing widget with "books" ID 
 }}
 ~~~
-webix.ui({
-	id:"books",
-	view:"list"
-    ...
-});
+webix.ui({ id:"books", view:"list" });
 
 webix.UIManager.setFocus("books");
 ~~~
@@ -59,48 +59,110 @@ $$("datatable1").attachEvent("onBlur", function(prev_view){
 });
 ~~~
 
-In addition, Webix **onFocusChange** ([global event](desktop/event_handling.md#globalwebixevents)) is triggered each time focus is shifted from one component to another. The following code retrieves the ID of the view that is 
-in focus now and puts in into the console log. 
+In addition, Webix **onFocusChange** ([global event](desktop/event_handling.md#globalwebixevents)) is triggered each time focus is shifted from one component to another. The following code retrieves the ID of the view that is in focus now and logs it to console:
 
-
-{{snippet
-Watching focus changes
-}}
 ~~~js
 webix.attachEvent("onFocusChange", function(current_view, prev_view) {
-	webix.console.log("focused: " + (!view ? 'null' : view.config.id));
+	console.log("focused: " + (!current_view ? 'null' : current_view.config.id));
 });
 ~~~
  
+##Built-in Keyboard Events 
 
-##Keyboards Events and Hotkeys
+Widgets that are in focus at the moment listen to the following keys:
 
-###Built-in Keyboard Events 
+- "tab", "tab+shift" - moves focus to the next/previous clickable element/input within the widget, or goes to the next/previous widget in the tab order. 
 
-1) 'Esc' key closes a non-modal [window](desktop/window.md) when it is focused. 
+For Global tab navigation see the [related info](desktop/uimanager.md#globaltabnavigation).
 
-2) 'Esc', 'space' and 'enter' keys are enabled by default for [modal message boxes](desktop/message_boxes.md#modalwindowsandkeyboardinteraction).
+####Windows and message boxes
 
-3) [Editors](desktop/editing.md) of data component items react on the following keys: 
+- "esc" key closes a non-modal [window](desktop/window.md). 
+- "esc", "space" and "enter" keys are enabled by default for [modal message boxes](desktop/message_boxes.md#modalwindowsandkeyboardinteraction).
 
-- 'esc' - to close without saving data changes;
-- 'enter' - to close with data changes saved.
+####Data widgets
 
-For other situations keyboard can be connected to your application in several ways: 
+Hotkeys for navigation in data widgets like [datatable](datatable/index.md) and [list](desktop/list.md) are enabled by default via 
+[navigation](api/keysnavigation_navigation_config.md) property set to true: 
 
-###Attaching Hot keys
+Data widgets respond to arrow keys in the following way: 
 
-####Component Navigation Keys
+- "up/left" - the previos item is selected;
+- "right/down" - the next item is selected;
+- "page up" - the item with the index "current index+10" is selected;
+- "page down" - the item with the index "current index-10" is selected;
+- "home" - the first item is selected;
+- "end" - the last item is selected;
 
-Hotkeys for navigation (arrow keys, Home, End, Page Up, Page Down) in data components like [datatable](datatable/index.md) and [list](desktop/list.md) can be enabled by [navigation](api/keysnavigation_navigation_config.md) property: 
+Hierarchical data widgets - Tree, Treetable, Grouplist - have specific behavior for "right" and "left" keys:  
 
-~~~js
-{ view:"datatable",  navigation:true }
-~~~
+- "left" - closes the selected branch;
+- "right" - opens the selected branch.
 
-{{sample 15_datatable/05_selection/09_navigation.html}}
+If no item is selected at the moment, the first visible item gets selection.
 
-Other data components need to be extended with the [KeysNavigation](api/refs/keysnavigation.md) module. Consult the [dedicated article](desktop/selection.md#navigation) for details. 
+[Editors](desktop/editing.md) of data widgets react on the following keys: 
+	- "esc" - to close without saving data changes;
+	- "enter" - to close with data changes saved.
+    
+####Comboboxes 
+
+Comboboxes include combo, richselect, multiselect, multicombo, datepicker, daterangepicker and colorpicker widgets. They listen to the following keys:
+
+- "up/left" -  selects the previous value in the related popup. In case of the "up" key the popup is not shown while the "left" key triggers popup opening; 
+- "right"/"down" - selects the next value while opening the related popup;
+- "enter" -  shows/hides the related suggest list while setting the selected value;
+- "esc" - hides the related suggest list while setting the selected value;
+
+####Tabbar and Radio
+
+Only the first tab/radiobutton is included into the tab order. To navigate within a control the following keys should be used: 
+
+- "up/left" - selects the next tab or radiobutton;
+- "down/right" - selects the previous tab or radiobutton;
+
+####Counter, Slider and RangeSlider
+
+The hotkeys are enabled if the input area or slider handle is in focus:
+
+- "up/right" - increases the control's value by the current step;
+- "down/left" - increases the control's value by the current step;
+
+####Carousel
+
+Carousel buttons are in the tab order. In addition, carousel icons respond to the following keys if focused: 
+
+- "left" - selects the next icon and shows the related view;
+- "right" - selects the previous icon and shows the related view;
+
+####Calendar 
+
+- "up/left" - the previos date is selected;
+- "right/down" - the next date is selected;
+- "page up" - the same date in the previous month is selected;
+- "page down" - the same date in the next month is selected;
+- "home" - the first date in month is selected;
+- "end" - the last date in month is selected;
+- "tab" - moves across clickable elements of the calendar (buttons, icons).
+
+If no date is selected at the moment, the first date of month is selected.
+
+If calendar shows a time selection view, "left" and "right" arrows are used to change hours while "up" and "down" arrows change minutes. 
+
+####Colorboard 
+
+- "up/down"  - selects the above/below cell;
+- "left/right" - selects the cell to the left/right;
+- "home" - selects the first cell;
+- "end" - selects the last cell.
+
+If no cell is selected at the moment, the first visible cell gets selection.
+
+####Toggle and Checkbox
+
+- "enter" key is used to change state of the control.
+
+##Attaching Custom Hotkeys 
 
 ####Hotkeys for Controls
 
@@ -141,15 +203,15 @@ In case you want all the view instances react on the specified hot key, state th
 ~~~js
 //hot keys for the component with 'details' ID
 webix.UIManager.addHotKey("Ctrl+Enter", function() { 
-	webix.console.log("Ctrl+Enter for details"); 
+	console.log("Ctrl+Enter for details"); 
     return false; 
 }, $$('details')); // for "details" list only
 
 
 //hot keys for all list instances on the page.
 webix.UIManager.addHotKey("Ctrl+Space", function() { 
-	webix.console.log("Ctrl+Space is detected for list"); 
-}, 'list'); // for all lists on the page
+	console.log("Ctrl+Space is detected for list"); 
+}, 'list');
 ~~~
 
 {{sample 15_datatable/04_editing/01_basic.html }}
@@ -210,90 +272,44 @@ These events require that a developer should know key codes used by UI Manager. 
 - 'meta': 91,
 - 'win': 91,
 - 'mac': 91
-
+- 'multiply': 106
+- 'add': 107
+- 'subtract': 109
+- 'decimal': 110
+- 'divide': 111
+- 'scrollock':145
+- 'pausebreak':19
+- 'numlock':144
+- 'shift':16
+- 'capslock':20
 
 
 ##Global Tab Navigation 
 
 ###Tab/focus Order Logic
 
-Any app on the page is put into layout, even if it isn't declared directly, so as you open the page the whole layout is focused. All the components are children of this layout. When you put cursor into any component or its item 
-**tab navigation** can be enabled:
+You can move through your app with "tab" and "shift+tab" keys. All widgets and their clickable areas are in the tab order. 
 
-{{snippet
-Tab Navigation
-}}
-~~~js
-webix.UIManager.tabControl = true;
-~~~
+If you tab to a widget, its active area is focused. It can be the selected item, active tab or radiobutton, or the whole widget like text or button. 
+If a data component does not have visible selection, the first visible item is focused. 
 
-From now on, you can move through your app with *'tab'* and *'shift+tab'* keys. For instance, if you have two forms in different layout columns, focus will move through all the input fields of the first form,
-then move to the other, then will proceed to other components and return to the parent (layout). 
+Also, all clickable areas of a component (buttons, icons, text fields) are in the tab order as well. 
 
-<img src="desktop/focus.png" />
+<img src="desktop/focus.png"/>
 
-{{sample 80_docs/tab_navigation.html }}
+The UIManager allows getting the next/previous widget in tab order:
 
-If you want to exclude a single component from tab navigation order, make use of the **tabFocus** property, which is true by default:
+- **getNext(id);** - gets the next view; 
+- **getPrev(id);** - gets the previous view; 
+- **getTop(id);** - gets the parent view to all the components.
 
-~~~
-{view:'text' tabFocus: false, ... }
-~~~
-
-{{note
-Tab navigation within the whole app/page is possible only if all the components are intialized as part of one and the same webix.ui constructor.
-}}
-
-What does it mean? 
-
-The 'tab-navigated' components must be children of one and the same layout since by logic focus moves from parent view to children and vice versa.
-
-{{snippet
-Tab Navigation between form and toolbar
-}}
-~~~js
-webix.ui({
-	rows:[
-		{view:"form",..},
-    	{view:"toolbar",...}
-	]
-});
-~~~
-
-In case of two separate webix.ui constructors you have two separate objects without the possibility to shift focus from one to the other with the help of a 'tab' key. So move a mouse pointer instead.
-
-
-{{snippet
-Tab navigation won't work!
-}}
-~~~js
-webix.ui({
-	view:"form", ..config..
-});
-        
-webix.ui({
-	view:"toolbar", ..config..
-});
-~~~
-
-
-To get the neighbouring views in focus/tab order, you should apply the following methods to the currently focused view. 
-
-###Methods to Shift Focus
-
-- **getNext();** - gets the next view; 
-- **getPrev();** - gets the previous view; 
-- **getTop();** - gets the parent view to all the components.
-
-All these methods are called from UIManager and take the necessary view as an argument. 
+All these methods take the necessary view id as an argument. 
 
 Let's consider the picture above and see how these methods will work for a text input field (its ID is 'year').
 
 ~~~js
 var prev = webix.UIManager.getPrev($$("year")); //returns 'title' input field object
-
 var next = webix.UIManager.getNext($$("year")); //returns 'rank' input field object
-
 var top = webix.UIManager.getTop($$("year")); //returns 'layout' object
 ~~~
 

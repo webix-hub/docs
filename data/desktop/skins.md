@@ -5,15 +5,16 @@ Webix provides 11 skins that you can use to change the overall look of your appl
 1. [Flat (default skin)](desktop/skins.md#flat)
 2. [Compact](desktop/skins.md#compact) 
 3. [Material Design](desktop/skins.md#materialdesign)
-4. [Touch](desktop/skins.md#touch)<br><br>
-5. [Air](desktop/skins.md#air)
-6. [Air Compact](desktop/skins.md#aircompact)
-7. [Clouds](desktop/skins.md#clouds)
-8. [Glamour](desktop/skins.md#glamour)
-9. [Light](desktop/skins.md#light)
-10. [Metro](desktop/skins.md#metro)
-11. [Terrace](desktop/skins.md#terrace)
-12. [Web](desktop/skins.md#web)
+4. [Touch](desktop/skins.md#touch)
+5. [Contrast](desktop/skins.md#contrast)<br><br>
+6. [Air](desktop/skins.md#air)
+7. [Air Compact](desktop/skins.md#aircompact)
+8. [Clouds](desktop/skins.md#clouds)
+9. [Glamour](desktop/skins.md#glamour)
+10. [Light](desktop/skins.md#light)
+11. [Metro](desktop/skins.md#metro)
+12. [Terrace](desktop/skins.md#terrace)
+13. [Web](desktop/skins.md#web)
 
 Each skin requires including its specific CSS file. 
 
@@ -86,6 +87,21 @@ Applying the 'Touch' skin to the app
 
 
 <img style="margin: 20px auto 20px auto;display: block;box-shadow: #D8D8D8 0px 0px 7px 1px;" src="desktop/skins/touch_skin.png"/>
+
+Contrast
+------------------------
+To apply the **Contrast** skin, include the *contrast.css* file:
+
+{{snippet
+Applying the 'Contrast' skin to the app
+}}
+~~~js
+<script src="../codebase/webix.js"></script>   
+<link href="../codebase/contrast.css" rel="stylesheet" type="text/css"> 
+~~~
+
+
+<img style="margin: 20px auto 20px auto;display: block;box-shadow: #D8D8D8 0px 0px 7px 1px;" src="desktop/skins/contrast_skin.png"/>
 
 
 Air 

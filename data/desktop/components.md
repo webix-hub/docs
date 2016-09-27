@@ -1,15 +1,21 @@
-UI Components
+UI Widgets
 ==================
-The <a title="ui library" href="http://webix.com">Webix UI library</a> supplies over 70 fully customizable components to help you build interfaces of different kinds, nicely present data and work with it. There are also multiple controls and
-specific features to make your applications good-looking and user-friendly. All the components are objects made with the webix.ui() constructor where the type of the component is set by the 'view' property (the declarative syntax is available as well).
+The <a title="ui library" href="http://webix.com">Webix UI library</a> supplies over 70 fully customizable widgets 
+to help you build interfaces of different kinds, nicely present data and work with it. 
+There are also multiple controls and specific features to make your applications good-looking and user-friendly.
+
+All the widgets are objects made with the webix.ui() constructor where the type of the widget
+is set by the 'view' property (the declarative syntax is available as well).
 
 
-<h2 style="clear:both;"/>Widgets</h2>
+<h2 style="clear:both;"/>Complex Widgets</h2>
 
-A set of ready-made JavaScript widgets is provided to solve tasks in different fields. Whether you need to create an interactive data report, optimize a workflow, add and manage events,
-handle hierarchical data or make calculations in a powerful spreadsheet, you will surely find a proper widget for your needs in the Webix library.
+A set of ready-made JavaScript widgets is provided to solve tasks in different fields. 
+Whether you need to create an interactive data report, optimize a workflow, add and manage events,
+handle hierarchical data or make calculations in a powerful spreadsheet, 
+you will surely find a proper widget for your needs in the Webix library.
 
-<div class="components_main" style="padding-left:35px;">
+<div class="components_main" style="padding-left:50px;">
 	<div>
 		<a href="desktop/pivot.md">
 			<img src="desktop/icons/pivot.png"/>
@@ -37,16 +43,17 @@ handle hierarchical data or make calculations in a powerful spreadsheet, you wil
     <div>
 		<a href="desktop/spreadsheet.md">
 			<img src="desktop/icons/spreadsheet.png"/>
-			<br>Spreadsheet
+			<br>SpreadSheet
 		</a>
     </div>
 </div>
 
 
-<h2 style="clear:both;"/>Data Components</h2>
+<h2 style="clear:both;"/>Data Widgets</h2>
 
-Data components are used to present data of a specified type on the page. Such components manage the space allocated for their data and provide functionality for its access and configuration.
- 
+Data widgets are used to present data of a specified type on the page. 
+Such widgets manage the space allocated for their data and provide functionality for its access and configuration. 
+
 <div class="components_group" style="padding-left:60px;">
 	<div>
 		<a href="desktop/chart.md">
@@ -63,13 +70,13 @@ Data components are used to present data of a specified type on the page. Such c
 	<div>
 		<a href="desktop/dataview.md">
 			<img src="desktop/icons/dataview.png"/>
-			<br>Dataview
+			<br>DataView
 		</a>
     </div>
     <div>
 		<a href="desktop/grouplist.md">
 			<img src="desktop/icons/grouplist.png"/>
-			<br>Grouplist
+			<br>GroupList
 		</a>
     </div>
     <div>
@@ -87,7 +94,7 @@ Data components are used to present data of a specified type on the page. Such c
     <div>
 		<a href="desktop/property_sheet.md" style="clear:left;">
 			<img src="desktop/icons/propertysheet.png"/>
-			<br>PropertySheet
+			<br>Property Sheet
 		</a>
     </div>
     <div>
@@ -117,7 +124,7 @@ Data components are used to present data of a specified type on the page. Such c
     <div>
 		<a href="desktop/unitlist.md">
 			<img src="desktop/icons/unitlist.png"/>
-			<br>Unitlist
+			<br>UnitList
 		</a>
     </div>
 </div>
@@ -154,7 +161,7 @@ Layouts help you to organize your web page, define its overall look-and-feel. Yo
      <div>
 		<a href="desktop/multiview.md">
 			<img src="desktop/icons/multiview.png"/>
-			<br>Multiview
+			<br>MultiView
 		</a>
     </div>
     <div>
@@ -166,13 +173,13 @@ Layouts help you to organize your web page, define its overall look-and-feel. Yo
     <div>
 		<a href="desktop/scrollview.md" style="clear:left;">
 			<img src="desktop/icons/scrollview.png"/>
-			<br>Scrollview
+			<br>ScrollView
 		</a>
     </div>
     <div>
 		<a href="desktop/tabview.md">
 			<img src="desktop/icons/tabview.png"/>
-			<br>Tabview
+			<br>TabView
 		</a>
     </div>
     <div>
@@ -184,9 +191,9 @@ Layouts help you to organize your web page, define its overall look-and-feel. Yo
 </div>
 
 
-<h2 style="clear:both;"/>Context Components</h2>
+<h2 style="clear:both;"/>Context Widgets</h2>
 
-Context components let displaying spatial and temporal information on some user's action, such as click on a button or filling in a field. 
+Context widgets let displaying spatial and temporal information on some user's action, such as click on a button or filling in a field. 
 
 <div class="components_group" style="padding-left:10px;">
 	<div>
@@ -236,9 +243,9 @@ Context components let displaying spatial and temporal information on some user'
 
 
 
-<h2 style="clear:both;">HTML-oriented Components</h2>
+<h2 style="clear:both;">HTML-oriented Widgets</h2>
 
-Html-oriented components supply handy means for using habitual HTML elements in an application. There you can specify HTML templates, inline frames, forms etc.
+HTML-oriented widgets supply handy means for using habitual HTML elements in an application. There you can specify HTML templates, inline frames, forms etc.
 
 <div class="components_group" style="padding-left:60px;">
 	<div>
@@ -269,9 +276,10 @@ Html-oriented components supply handy means for using habitual HTML elements in 
 
 
 
-<h2 style="clear:both;">Auxiliary components</h2>
+<h2 style="clear:both;">Specific Widgets</h2>
 
-Auxiliary components help you to complete the picture of your application, to add special features that can't be achieved with the standard set of components presented above. 
+The widgets listed in this section will help you to complete the picture of your application,
+add special features that can't be achieved with the standard set of widgets presented above. 
 
 <div class="components_group" style="padding-left:60px;">
 	<div>
@@ -290,6 +298,18 @@ Auxiliary components help you to complete the picture of your application, to ad
 	<a href="desktop/colorboard.md">
 			<img src="desktop/icons/colorboard.png"/>
 			<br>Colorboard
+		</a>
+    </div>
+    <div>
+    <a href="desktop/googlemap.md">
+			<img src="desktop/icons/googlemap.png"/>
+			<br>GoogleMap
+		</a>
+    </div>
+    <div>
+		<a href="desktop/daterange.md">
+			<img src="desktop/icons/daterange.png"/>
+			<br>DateRange
 		</a>
     </div>
     <div>
@@ -313,59 +333,61 @@ Auxiliary components help you to complete the picture of your application, to ad
 </div>
 
 <h2 style="clear:both;">Controls</h2>
-
-Controls are mainly responsible for handling events since they enable user-app interaction by triggering functions attached to them. Note that any event can be attached to any component by referring to its ID.  
-<div class="controls_group" style="padding-left:20px;">
+Controls are mainly responsible for handling events since they enable user-app interaction by triggering functions attached to them. 
+Note that any event can be attached to any widget by referring to its ID.  
+<div class="controls_group" >
 	<ul>
 		<li><a href="desktop/button.md"><img src="api/toc/button.png"/> Button </a></li>
 		<li><a href="desktop/checkbox.md"><img src="api/toc/checkbox.png"/> Checkbox</a></li>
 		<li><a href="desktop/colorpicker.md"> <img src="api/toc/colorpicker.png"/> ColorPicker</a></li>
 		<li><a href="desktop/combo.md"><img src="api/toc/combo.png"/> Combo</a></li>
-		<li><a href="desktop/counter.md"><img src="api/toc/counter.png"/> Counter</a></li>
-        <li><a href="desktop/datasuggest.md"><img src="api/toc/suggest.png"/> Datasuggest</a></li>
-        <li><a href="desktop/datepicker.md"><img src="api/toc/datepicker.png"/> Datepicker</a></li>
+		<li><a href="desktop/counter.md"><img src="api/toc/counter.png"/> Counter</a></li>             
+        <li><a href="desktop/daterangepicker.md"><img src="api/toc/daterangepicker.png"/> DateRangePicker</a></li>   
+         <li><a href="desktop/datepicker.md"><img src="api/toc/datepicker.png"/> DatePicker</a></li>
 	</ul>
 </div>
 
 <div class="controls_group">
-	<ul>
+	<ul>      
+        <li><a href="desktop/datasuggest.md"><img src="api/toc/datasuggest.png"/> DataSuggest</a></li>
     	<li><a href="desktop/icon.md"><img src="api/toc/icon.png"/> Icon</a></li>
     	<li><a href="desktop/fieldset.md"> <img src="api/toc/fieldset.png"/> Fieldset</a></li>
-        <li><a href="desktop/gridsuggest.md"><img src="api/toc/suggest.png"/> Gridsuggest</a></li>
+        <li><a href="desktop/gridsuggest.md"><img src="api/toc/gridsuggest.png"/> GridSuggest</a></li>
 		<li><a href="desktop/label.md"><img src="api/toc/label.png"/> Label</a></li>
         <li><a href="desktop/multicombo.md"><img src="api/toc/multicombo.png"/> Multicombo</a></li>
         <li><a href="desktop/multiselect.md"> <img src="api/toc/multiselect.png"/> Multiselect</a></li>
-        <li><a href="desktop/multitext.md"> <img src="api/toc/multitext.png"/> Multitext</a></li>
 	</ul>
 </div>
 
 <div class="controls_group">
-	<ul>
+	<ul>    	
+        <li><a href="desktop/multitext.md"> <img src="api/toc/multitext.png"/> Multitext</a></li>
     	<li><a href="desktop/radio.md"> <img src="api/toc/radio.png"/> Radio</a></li>
         <li><a href="desktop/rangeslider.md"> <img src="api/toc/rangeslider.png"/> RangeSlider</a></li>
 		<li><a href="desktop/richselect.md"><img src="api/toc/richselect.png"/> Richselect</a></li>
     	<li><a href="desktop/search.md"><img src="api/toc/search.png"/> Search</a></li>
-    	<li><a href="desktop/select.md"><img src="api/toc/select.png"/> Select</a></li>		
-    	<li><a href="desktop/segmented.md"><img src="api/toc/segmented.png"/> Segmented</a></li>
-        <li><a href="desktop/slider.md"><img src="api/toc/slider.png"/> Slider </a></li>			
+    	<li><a href="desktop/select.md"><img src="api/toc/select.png"/> Select</a></li>	
+        <li><a href="desktop/segmented.md"><img src="api/toc/segmented.png"/>Segmented</a></li>
 	</ul>
 </div>
 
 <div class="controls_group">
-	<ul>
-        <li><a href="desktop/suggest.md"><img src="api/toc/suggest.png"/> Suggest</a></li>
-    	<li><a href="desktop/tabbar.md"><img src="api/toc/tabbar.png"/> Tabbar</a></li>
-		<li><a href="desktop/text.md"><img src="api/toc/text.png"/> Text</a></li>	
-    	<li><a href="desktop/textarea.md"><img src="api/toc/textarea.png"/> Textarea</a></li>
-		<li><a href="desktop/toggle.md"><img src="api/toc/toggle.png"/> Toggle</a></li>    	
+	<ul>    	
+        <li><a href="desktop/slider.md"><img src="api/toc/slider.png"/>Slider</a></li>	
+        <li><a href="desktop/suggest.md"><img src="api/toc/suggest.png" style="padding-right:4px;"/> Suggest</a></li>
+    	<li><a href="desktop/tabbar.md"><img src="api/toc/tabbar.png"/>Tabbar</a></li>
+		<li><a href="desktop/text.md"><img src="api/toc/text.png"/>Text</a></li>	
+    	<li><a href="desktop/textarea.md"><img src="api/toc/textarea.png"/>Textarea</a></li>
+		<li><a href="desktop/toggle.md"><img src="api/toc/toggle.png"/>Toggle</a></li>    	
 	</ul>
 </div>
 
 <h2 style="clear:both;">UI Extensions</h2>
-UI extensions are helpful components that are mostly task-oriented and intended to accomplish a certain purpose. They are already quite configurable and need only initializing on the page to start serving. 
+UI extensions are helpful widgets that are mostly task-oriented and intended to accomplish a certain purpose. 
+They are already quite configurable and need only to be initialized on the page to start serving.
 
 <br>
-To see a complete list of extension components and find out details on their use, please, go to the chapter - desktop/extensions.md.
+To see a complete list of extension widgets and find out details on their use, please, go to the chapter - desktop/extensions.md.
 
 
 
@@ -374,7 +396,7 @@ div.components_main div{
 	padding-top:25px;
     padding-bottom:25px;
     float:left;
-    width:130px;
+    width:120px;
     text-align:center;
 }
 div.components_group div{
@@ -388,7 +410,7 @@ div.controls_group{
     padding-top:25px;
     padding-bottom:25px;
     float:left;
-    width:170px;
+   	margin-left:10px;   
 }
 div.controls_group ul {
     list-style-type:none;
@@ -412,9 +434,11 @@ div.controls_group img {
 - desktop/contextmenu.md
 - datatable/index.md
 - desktop/dataview.md
+- desktop/daterange.md
 - desktop/excelviewer.md
 - desktop/form.md
 - desktop/controls.md
+- desktop/googlemap.md
 - desktop/grouplist.md
 - desktop/htmlform.md
 - desktop/iframe.md

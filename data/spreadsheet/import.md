@@ -73,7 +73,7 @@ To render rows starting from a certain row, you can set the rows array as [8-].
 
 
 {{sample
-65_spreadsheet/01_basic/05_excel.html
+65_spreadsheet/02_api/03_excel.html
 }}
 
 @spellcheck:xlsx

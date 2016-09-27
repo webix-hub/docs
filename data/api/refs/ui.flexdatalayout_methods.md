@@ -1,0 +1,115 @@
+Methods
+=======
+
+{{api
+- api/link/ui.flexdatalayout_add.md - adds an item to the store
+- api/link/ui.flexdatalayout_addview.md - add new view to layout-like component
+- api/link/ui.flexdatalayout_adjust.md - adjusts the component to the size of the parent HTML container
+- api/link/ui.flexdatalayout_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.flexdatalayout_bind.md - binds components
+- api/link/ui.flexdatalayout_blockevent.md - temporarily blocks triggering of ALL events of the calling object
+- api/link/ui.flexdatalayout_callevent.md - calls an inner event
+- api/link/ui.flexdatalayout_clearall.md - removes all items from the component
+- api/link/ui.flexdatalayout_count.md - returns the number of currently visible items
+- api/link/ui.flexdatalayout_define.md - redefines a single configuration property (or a hash of properties)
+- api/link/ui.flexdatalayout_destructor.md - destructs the calling object
+- api/link/ui.flexdatalayout_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
+- api/link/ui.flexdatalayout_disable.md - disables the calling view (makes it dimmed and unclickable)
+- api/link/ui.flexdatalayout_enable.md - enables the calling view that was disabled by the 'disable' method
+- api/link/ui.flexdatalayout_exists.md - checks whether an item with the specified id exists
+- api/link/ui.flexdatalayout_filter.md - filters the component
+- api/link/ui.flexdatalayout_find.md - returns rows that match the criterion
+- api/link/ui.flexdatalayout_getchildviews.md - returns child views of the calling component
+- api/link/ui.flexdatalayout_getfirstid.md - returns the ID of the first item
+- api/link/ui.flexdatalayout_getformview.md - returns master form for the input
+- api/link/ui.flexdatalayout_getidbyindex.md - returns the id of the item with the specified index
+- api/link/ui.flexdatalayout_getindexbyid.md - returns the index of the item with the specified id
+- api/link/ui.flexdatalayout_getitem.md - gets the object of the data item with the specified id
+- api/link/ui.flexdatalayout_getlastid.md - returns the id of the last item
+- api/link/ui.flexdatalayout_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
+- api/link/ui.flexdatalayout_getnode.md - returns the main HTML container for the calling object
+- api/link/ui.flexdatalayout_getparentview.md - returns the parent view of the component
+- api/link/ui.flexdatalayout_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
+- api/link/ui.flexdatalayout_gettopparentview.md - returns top parent view
+- api/link/ui.flexdatalayout_hasevent.md - checks whether the component has the specified event
+- api/link/ui.flexdatalayout_hide.md - hides the view
+- api/link/ui.flexdatalayout_index.md - returns the cell index in the layout collection
+- api/link/ui.flexdatalayout_isenabled.md - checks whether the view is enabled
+- api/link/ui.flexdatalayout_isvisible.md - checks whether the view is visible
+- api/link/ui.flexdatalayout_load.md - loads data from an external data source.
+- api/link/ui.flexdatalayout_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
+- api/link/ui.flexdatalayout_mapevent.md - routes events from one object to another
+- api/link/ui.flexdatalayout_parse.md - loads data to the component from an inline data source
+- api/link/ui.flexdatalayout_reconstruct.md - rebuilds the layout
+- api/link/ui.flexdatalayout_refresh.md - repaints the whole view or a certain item
+- api/link/ui.flexdatalayout_remove.md - removes the specified item/items from datastore
+- api/link/ui.flexdatalayout_removeview.md - removes view from layout-like component
+- api/link/ui.flexdatalayout_render.md - renders the datalayout content
+- api/link/ui.flexdatalayout_resize.md - adjusts the view to a new size
+- api/link/ui.flexdatalayout_resizechildren.md - resizes all children of the calling component
+- api/link/ui.flexdatalayout_serialize.md - serializes data to a JSON object
+- api/link/ui.flexdatalayout_show.md - makes the component visible
+- api/link/ui.flexdatalayout_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
+- api/link/ui.flexdatalayout_sort.md - sorts datastore
+- api/link/ui.flexdatalayout_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.flexdatalayout_unbind.md - breaks "bind" link
+- api/link/ui.flexdatalayout_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
+- api/link/ui.flexdatalayout_updateitem.md - sets properties of the data item
+}}
+
+@index:
+- api/link/ui.flexdatalayout_add.md
+- api/link/ui.flexdatalayout_addview.md
+- api/link/ui.flexdatalayout_adjust.md
+- api/link/ui.flexdatalayout_attachevent.md
+- api/link/ui.flexdatalayout_bind.md
+- api/link/ui.flexdatalayout_blockevent.md
+- api/link/ui.flexdatalayout_callevent.md
+- api/link/ui.flexdatalayout_clearall.md
+- api/link/ui.flexdatalayout_count.md
+- api/link/ui.flexdatalayout_define.md
+- api/link/ui.flexdatalayout_destructor.md
+- api/link/ui.flexdatalayout_detachevent.md
+- api/link/ui.flexdatalayout_disable.md
+- api/link/ui.flexdatalayout_enable.md
+- api/link/ui.flexdatalayout_exists.md
+- api/link/ui.flexdatalayout_filter.md
+- api/link/ui.flexdatalayout_find.md
+- api/link/ui.flexdatalayout_getchildviews.md
+- api/link/ui.flexdatalayout_getfirstid.md
+- api/link/ui.flexdatalayout_getformview.md
+- api/link/ui.flexdatalayout_getidbyindex.md
+- api/link/ui.flexdatalayout_getindexbyid.md
+- api/link/ui.flexdatalayout_getitem.md
+- api/link/ui.flexdatalayout_getlastid.md
+- api/link/ui.flexdatalayout_getnextid.md
+- api/link/ui.flexdatalayout_getnode.md
+- api/link/ui.flexdatalayout_getparentview.md
+- api/link/ui.flexdatalayout_getprevid.md
+- api/link/ui.flexdatalayout_gettopparentview.md
+- api/link/ui.flexdatalayout_hasevent.md
+- api/link/ui.flexdatalayout_hide.md
+- api/link/ui.flexdatalayout_index.md
+- api/link/ui.flexdatalayout_isenabled.md
+- api/link/ui.flexdatalayout_isvisible.md
+- api/link/ui.flexdatalayout_load.md
+- api/link/ui.flexdatalayout_loadnext.md
+- api/link/ui.flexdatalayout_mapevent.md
+- api/link/ui.flexdatalayout_parse.md
+- api/link/ui.flexdatalayout_reconstruct.md
+- api/link/ui.flexdatalayout_refresh.md
+- api/link/ui.flexdatalayout_remove.md
+- api/link/ui.flexdatalayout_removeview.md
+- api/link/ui.flexdatalayout_render.md
+- api/link/ui.flexdatalayout_resize.md
+- api/link/ui.flexdatalayout_resizechildren.md
+- api/link/ui.flexdatalayout_serialize.md
+- api/link/ui.flexdatalayout_show.md
+- api/link/ui.flexdatalayout_showbatch.md
+- api/link/ui.flexdatalayout_sort.md
+- api/link/ui.flexdatalayout_sync.md
+- api/link/ui.flexdatalayout_unbind.md
+- api/link/ui.flexdatalayout_unblockevent.md
+- api/link/ui.flexdatalayout_updateitem.md
+
+

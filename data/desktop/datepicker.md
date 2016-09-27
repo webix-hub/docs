@@ -1,4 +1,4 @@
-Datepicker
+DatePicker
 ===============================
 
 ##API Reference
@@ -8,7 +8,8 @@ Datepicker
 
 ##Overview
 
-Datepicker is used in a combination with ui-related [calendar](desktop/calendar.md) that is initialized on clicking the control. It allows choosing a date and, optionally, time in the calendar for their further usage. 
+Datepicker is used in a combination with ui-related [calendar](desktop/calendar.md) that is initialized 
+on clicking the control. It allows choosing a date and, optionally, time in the calendar for their further usage. 
 
 <img src="desktop/date_picker.png"/>
 

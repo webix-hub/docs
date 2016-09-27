@@ -170,7 +170,7 @@ dummy stub
 - api/link/ui.filelist_borderless_config.md - used to hide the component borders
 - api/link/ui.filelist_click_config.md - sets an action happening on a button click
 - api/link/ui.filelist_clipboard_config.md - enables/disables clipboard support
-- api/link/ui.filelist_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.filelist_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.filelist_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.filelist_data_config.md - JavaScript array containing data for the component
 - api/link/ui.filelist_datafeed_config.md - the URL that the component will use to reload data during binding
@@ -213,7 +213,7 @@ dummy stub
 - api/link/ui.filelist_select_config.md - enables/disables item selection or multiselection in grouplist
 - api/link/ui.filelist_template_config.md - the component template
 - api/link/ui.filelist_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
-- api/link/ui.filelist_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.filelist_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.filelist_type_config.md - object that specifies items presentation
 - api/link/ui.filelist_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.filelist_width_config.md - sets the width of the component
@@ -232,7 +232,7 @@ dummy stub
 - api/link/ui.filelist_$drag_other.md - method called when drag operation initiated
 - api/link/ui.filelist_$draghtml_other.md - defines how dragged item will look
 - api/link/ui.filelist_$dragin_other.md - method called when item moved on possible drop landing during dnd
-- api/link/ui.filelist_$dragmark_other.md - method called during dnd when some item in the component need to be marked as active drop target
+- api/link/ui.filelist_$dragmark_other.md - method called during drag-n-drop, when some item in the component should be marked as an active drop target
 - api/link/ui.filelist_$dragout_other.md - method called when item moved out of possible drop landing during dnd
 - api/link/ui.filelist_$drop_other.md - method called when item dragged and dropped on valid target
 - api/link/ui.filelist_$dropallow_other.md - can be redefined, if you need custom drop rules

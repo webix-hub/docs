@@ -6,7 +6,7 @@ Properties
 - api/link/ui.filetree_borderless_config.md - used to hide the component borders
 - api/link/ui.filetree_click_config.md - sets an action happening on a button click
 - api/link/ui.filetree_clipboard_config.md - enables/disables clipboard support
-- api/link/ui.filetree_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.filetree_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.filetree_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.filetree_data_config.md - JavaScript array containing data for the component
 - api/link/ui.filetree_datafeed_config.md - the URL that the component will use to reload data during binding
@@ -25,6 +25,7 @@ Properties
 - api/link/ui.filetree_height_config.md - sets the height of the component
 - api/link/ui.filetree_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.filetree_id_config.md - the component ID
+- api/link/ui.filetree_layout_config.md - 
 - api/link/ui.filetree_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.filetree_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.filetree_minheight_config.md - sets the minimal height for the view
@@ -48,11 +49,12 @@ Properties
 - api/link/ui.filetree_select_config.md - enables/disables item selection or multiselection in grouplist
 - api/link/ui.filetree_template_config.md - the component template
 - api/link/ui.filetree_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
-- api/link/ui.filetree_threestate_config.md - defines three-state checkboxes for the tree. Flase by default.
-- api/link/ui.filetree_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.filetree_threestate_config.md - defines three-state checkboxes for the tree
+- api/link/ui.filetree_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.filetree_type_config.md - object that specifies items presentation
 - api/link/ui.filetree_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.filetree_width_config.md - sets the width of the component
+- api/link/ui.filetree_xcount_config.md - 
 }}
 
 @index:
@@ -79,6 +81,7 @@ Properties
 - api/link/ui.filetree_height_config.md
 - api/link/ui.filetree_hidden_config.md
 - api/link/ui.filetree_id_config.md
+- api/link/ui.filetree_layout_config.md
 - api/link/ui.filetree_maxheight_config.md
 - api/link/ui.filetree_maxwidth_config.md
 - api/link/ui.filetree_minheight_config.md
@@ -107,4 +110,5 @@ Properties
 - api/link/ui.filetree_type_config.md
 - api/link/ui.filetree_url_config.md
 - api/link/ui.filetree_width_config.md
+- api/link/ui.filetree_xcount_config.md
 

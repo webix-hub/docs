@@ -49,7 +49,7 @@ var sidemenu = webix.ui({
 - api/link/ui.sidemenu_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.sidemenu_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.sidemenu_enable.md - enables the calling view that was disabled by the 'disable' method
-- api/link/ui.sidemenu_getbody.md - gets the ui view of the window body
+- api/link/ui.sidemenu_getbody.md - gets the UI view of the window body
 - api/link/ui.sidemenu_getchildviews.md - returns child views of the calling component
 - api/link/ui.sidemenu_getformview.md - returns master form for the input
 - api/link/ui.sidemenu_gethead.md - gets the ui view of the window header
@@ -104,7 +104,7 @@ var sidemenu = webix.ui({
 - api/link/ui.sidemenu_autofocus_config.md - sets focus on the window the moment it appears on the page
 - api/link/ui.sidemenu_body_config.md - the content of window body: template or view
 - api/link/ui.sidemenu_borderless_config.md - used to hide the component borders
-- api/link/ui.sidemenu_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.sidemenu_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.sidemenu_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.sidemenu_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.sidemenu_gravity_config.md - sets the view gravity (1 by default)

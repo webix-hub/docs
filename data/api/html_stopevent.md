@@ -26,6 +26,9 @@ document.getElementById("mylink").onclick = function(e)
 @template:	api_method
 @descr:
 
-@relatedapi:api/html_preventevent.md
+@relatedapi:
+- api/html_preventevent.md
+- api/html_triggerevent.md
+
 
 

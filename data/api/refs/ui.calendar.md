@@ -53,6 +53,7 @@ var calendar = webix.ui({
 - api/link/ui.calendar_isvisible.md - checks whether the view is visible
 - api/ui.calendar_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.calendar_mapevent.md - routes events from one object to another
+- api/ui.calendar_moveselection.md - 
 - api/ui.calendar_refresh.md - repaints the component
 - api/ui.calendar_render.md - renders the specified item or the whole component
 - api/link/ui.calendar_resize.md - adjusts the view to a new size
@@ -82,7 +83,7 @@ var calendar = webix.ui({
 - api/ui.calendar_onbeforezoom_event.md - fires before zoom level of the calendar is changed
 - api/link/ui.calendar_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.calendar_onblur_event.md - fires when focus is moved out of the view
-- api/ui.calendar_onchange_event.md - fired when a user changes month, year or time in selector.
+- api/ui.calendar_onchange_event.md - fires when a user changes month, year or time in selector.
 - api/ui.calendar_ondateclear_event.md - fires on clicking the [Clear](desktop/calendar.md#todayandclearbuttons) button
 - api/ui.calendar_ondateselect_event.md - fires when a user selects a date.
 - api/link/ui.calendar_ondestruct_event.md - occurs when component destroyed
@@ -115,7 +116,7 @@ var calendar = webix.ui({
 - api/ui.calendar_calendartime_config.md - defines calendar time format (with timepicker enabled)
 - api/ui.calendar_calendarweekheader_config.md - specifies the label for the column with weeks numbers
 - api/ui.calendar_cellheight_config.md - the height of the cell with day
-- api/link/ui.calendar_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.calendar_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.calendar_css_config.md - the name of a css class that will be applied to the view container
 - api/ui.calendar_date_config.md - specifies the year and month that will be shown in the calendar after initialization
 - api/ui.calendar_daytemplate_config.md - defines a template for a calendar day cell
@@ -127,6 +128,7 @@ var calendar = webix.ui({
 - api/link/ui.calendar_hidden_config.md - defines whether the view will be hidden initially
 - api/ui.calendar_icons_config.md - sets an array of icons in the calendar or hides them
 - api/link/ui.calendar_id_config.md - the component ID
+- api/ui.calendar_master_config.md - 
 - api/ui.calendar_maxdate_config.md - set man limit for selected date
 - api/link/ui.calendar_maxheight_config.md - sets the maximum height for the view
 - api/ui.calendar_maxtime_config.md - maximum allowed time
@@ -146,7 +148,7 @@ var calendar = webix.ui({
 - api/link/ui.calendar_onmousemove_config.md - attaches a mousemove behaviour for component items with the specified CSS class.
 - api/ui.calendar_select_config.md - enables date selection within the calendar.
 - api/ui.calendar_skipemptyweeks_config.md - enables/disables displaying empty weeks (true)
-- api/ui.calendar_timepicker_config.md - enables clock for time selection
+- api/ui.calendar_timepicker_config.md - enables clock displaying for time selection
 - api/ui.calendar_timepickerheight_config.md - sets height of timepicker area
 - api/ui.calendar_type_config.md - type of calendar view
 - api/ui.calendar_weekheader_config.md - enables/disables additional header with week days (false)

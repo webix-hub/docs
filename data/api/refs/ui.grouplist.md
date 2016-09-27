@@ -181,7 +181,7 @@ var grouplist = webix.ui({
 - api/link/ui.grouplist_borderless_config.md - used to hide the component borders
 - api/link/ui.grouplist_click_config.md - sets an action happening on a button click
 - api/link/ui.grouplist_clipboard_config.md - enables/disables clipboard support
-- api/link/ui.grouplist_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.grouplist_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.grouplist_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.grouplist_data_config.md - JavaScript array containing data for the component
 - api/link/ui.grouplist_datafeed_config.md - the URL that the component will use to reload data during binding
@@ -222,7 +222,7 @@ var grouplist = webix.ui({
 - api/link/ui.grouplist_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
 - api/ui.grouplist_templategroup_config.md - an html template that defines data that will be presented in group header in the collapsed state
 - api/ui.grouplist_templateitem_config.md - an html template that defines data that will be presented in grouplist
-- api/link/ui.grouplist_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.grouplist_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.grouplist_type_config.md - object that specifies items presentation
 - api/link/ui.grouplist_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.grouplist_width_config.md - sets the width of the component
@@ -241,7 +241,7 @@ var grouplist = webix.ui({
 - api/link/ui.grouplist_$drag_other.md - method called when drag operation initiated
 - api/link/ui.grouplist_$draghtml_other.md - defines how dragged item will look
 - api/link/ui.grouplist_$dragin_other.md - method called when item moved on possible drop landing during dnd
-- api/link/ui.grouplist_$dragmark_other.md - method called during dnd when some item in the component need to be marked as active drop target
+- api/link/ui.grouplist_$dragmark_other.md - method called during drag-n-drop, when some item in the component should be marked as an active drop target
 - api/link/ui.grouplist_$dragout_other.md - method called when item moved out of possible drop landing during dnd
 - api/link/ui.grouplist_$drop_other.md - method called when item dragged and dropped on valid target
 - api/link/ui.grouplist_$dropallow_other.md - can be redefined, if you need custom drop rules

@@ -410,7 +410,7 @@ webix.eventRemove(eventId);
 - **click** - event name (note that they are used here without *on* prefix);
 - **handler** - function to run (its **e** argument points to native event object);
 - **context** - (optional) additional settings: 
-	- **master** - (object) an object that the <i>this</i> keyword refers to;
+	- **bind** - (object) an object that the <i>this</i> keyword refers to;
 	- **capture** - (boolean) a flag that indicates on which stage (capture or bubble) event should be captured. *false* by default;
 	- **id** - (string) event handler ID (if not set, will be generated automatically).
 

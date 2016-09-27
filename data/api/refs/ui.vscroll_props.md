@@ -2,7 +2,7 @@ Properties
 ==========
 
 {{api
-- api/ui.vscroll_container_config.md - an html container (or its id) where the component needs initializing
+- api/ui.vscroll_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.vscroll_id_config.md - the component ID
 - api/link/ui.vscroll_on_config.md - allows attaching custom handlers to inner events of the component
 - api/ui.vscroll_scroll_config.md - the direction of scrolling

@@ -105,7 +105,7 @@ var colorpicker = webix.ui({
 - api/link/ui.colorpicker_bottomlabel_config.md - sets a label under a control
 - api/link/ui.colorpicker_bottompadding_config.md - sets the bottom offset of the control input
 - api/link/ui.colorpicker_click_config.md - click action handler
-- api/link/ui.colorpicker_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.colorpicker_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.colorpicker_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.colorpicker_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.colorpicker_editable_config.md - allows entering characters in datepicker input, false by default
@@ -120,6 +120,7 @@ var colorpicker = webix.ui({
 - api/link/ui.colorpicker_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.colorpicker_inputpadding_config.md - padding of text in the input
 - api/link/ui.colorpicker_inputwidth_config.md - the width of the input area, or a button's text value area.
+- api/link/ui.colorpicker_invalid_config.md - 
 - api/link/ui.colorpicker_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.colorpicker_label_config.md - the text label of the control
 - api/link/ui.colorpicker_labelalign_config.md - the alignment of a label towards its container
@@ -140,6 +141,7 @@ var colorpicker = webix.ui({
 - api/link/ui.colorpicker_stringresult_config.md - if the parameter is set to true, the method getValue returns data as string (otherwise, as object)
 - api/link/ui.colorpicker_suggest_config.md - links suggest list to the input
 - api/link/ui.colorpicker_tabfocus_config.md - defines whether the control will be included in the tab navigation order
+- api/link/ui.colorpicker_text_config.md - 
 - api/link/ui.colorpicker_timeicon_config.md - sets an icon for time in the datepicker
 - api/link/ui.colorpicker_timepicker_config.md - enables optional timepicker in the calendar
 - api/link/ui.colorpicker_tooltip_config.md - tooltip for the input

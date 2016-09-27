@@ -177,7 +177,7 @@ var dataview = webix.ui({
 - api/ui.dataview_autoheight_config.md - enables autosizing to content
 - api/link/ui.dataview_borderless_config.md - used to hide the component borders
 - api/link/ui.dataview_click_config.md - sets an action happening on a button click
-- api/link/ui.dataview_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.dataview_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.dataview_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.dataview_data_config.md - JavaScript array containing data for the component
 - api/link/ui.dataview_datafeed_config.md - the URL that the component will use to reload data during binding
@@ -215,7 +215,7 @@ var dataview = webix.ui({
 - api/link/ui.dataview_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.dataview_select_config.md - enables/disables item selection or multiselection in grouplist
 - api/link/ui.dataview_template_config.md - the component template
-- api/link/ui.dataview_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.dataview_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.dataview_type_config.md - object that specifies items presentation
 - api/link/ui.dataview_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.dataview_width_config.md - sets the width of the component
@@ -234,7 +234,7 @@ var dataview = webix.ui({
 - api/link/ui.dataview_$drag_other.md - method called when drag operation initiated
 - api/link/ui.dataview_$draghtml_other.md - defines how dragged item will look
 - api/link/ui.dataview_$dragin_other.md - method called when item moved on possible drop landing during dnd
-- api/link/ui.dataview_$dragmark_other.md - method called during dnd when some item in the component need to be marked as active drop target
+- api/link/ui.dataview_$dragmark_other.md - method called during drag-n-drop, when some item in the component should be marked as an active drop target
 - api/link/ui.dataview_$dragout_other.md - method called when item moved out of possible drop landing during dnd
 - api/link/ui.dataview_$drop_other.md - method called when item dragged and dropped on valid target
 - api/link/ui.dataview_$dropallow_other.md - can be redefined, if you need custom drop rules

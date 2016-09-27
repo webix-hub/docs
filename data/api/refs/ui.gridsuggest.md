@@ -53,7 +53,7 @@ webix.ui({
 - api/link/ui.gridsuggest_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.gridsuggest_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.gridsuggest_enable.md - enables the calling view that was disabled by the 'disable' method
-- api/link/ui.gridsuggest_getbody.md - gets the ui view of the window body
+- api/link/ui.gridsuggest_getbody.md - gets the UI view of the window body
 - api/link/ui.gridsuggest_getchildviews.md - returns child views of the calling component
 - api/link/ui.gridsuggest_getformview.md - returns master form for the input
 - api/link/ui.gridsuggest_gethead.md - gets the ui view of the window header
@@ -117,7 +117,7 @@ webix.ui({
 - api/link/ui.gridsuggest_autofocus_config.md - sets focus on the window the moment it appears on the page
 - api/link/ui.gridsuggest_body_config.md - the content of window body: template or view
 - api/link/ui.gridsuggest_borderless_config.md - used to hide the component borders
-- api/link/ui.gridsuggest_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.gridsuggest_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.gridsuggest_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.gridsuggest_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.gridsuggest_filter_config.md - custom filtering function
@@ -178,4 +178,3 @@ webix.ui({
 - api/refs/ui.gridsuggest_events.md
 - api/refs/ui.gridsuggest_others.md
 
-@edition:pro

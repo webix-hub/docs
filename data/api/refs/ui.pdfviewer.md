@@ -7,7 +7,7 @@ dummy stub
 {{todo replace with real description. }}
 
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
+<a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
 
 <div class='h2'>Methods</div>
@@ -33,10 +33,10 @@ dummy stub
 - api/link/ui.pdfviewer_hide.md - hides the view
 - api/link/ui.pdfviewer_isenabled.md - checks whether the view is enabled
 - api/link/ui.pdfviewer_isvisible.md - checks whether the view is visible
-- api/ui.pdfviewer_load.md - 
+- api/link/ui.pdfviewer_load.md - loads data from an external data source.
 - api/link/ui.pdfviewer_mapevent.md - routes events from one object to another
 - api/ui.pdfviewer_nextpage.md - 
-- api/ui.pdfviewer_parse.md - 
+- api/link/ui.pdfviewer_parse.md - loads data to the component from an inline data source
 - api/ui.pdfviewer_prevpage.md - 
 - api/ui.pdfviewer_renderpage.md - 
 - api/link/ui.pdfviewer_resize.md - adjusts the view to a new size
@@ -53,14 +53,16 @@ dummy stub
 
 
 {{api
-- api/ui.pdfviewer_onafterload_event.md - 
+- api/link/ui.pdfviewer_onafterload_event.md - fires after data loading is complete
 - api/link/ui.pdfviewer_onafterscroll_event.md - occurs when some webix view has been scrolled
-- api/ui.pdfviewer_onbeforeload_event.md - 
+- api/link/ui.pdfviewer_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/link/ui.pdfviewer_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.pdfviewer_onblur_event.md - fires when focus is moved out of the view
 - api/link/ui.pdfviewer_ondestruct_event.md - occurs when component destroyed
+- api/ui.pdfviewer_ondocumentready_event.md - 
 - api/link/ui.pdfviewer_onfocus_event.md - fires when a view gets focus
 - api/link/ui.pdfviewer_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
+- api/link/ui.pdfviewer_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.pdfviewer_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
 - api/ui.pdfviewer_onpagerender_event.md - 
 - api/ui.pdfviewer_onscalechange_event.md - 
@@ -79,8 +81,11 @@ dummy stub
 {{api
 - api/link/ui.pdfviewer_animate_config.md - defines or disables view change animation.
 - api/link/ui.pdfviewer_borderless_config.md - used to hide the component borders
-- api/link/ui.pdfviewer_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.pdfviewer_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.pdfviewer_css_config.md - the name of a css class that will be applied to the view container
+- api/link/ui.pdfviewer_data_config.md - JavaScript array containing data for the component
+- api/link/ui.pdfviewer_datafeed_config.md - the URL that the component will use to reload data during binding
+- api/link/ui.pdfviewer_datatype_config.md - the type of loaded data
 - api/link/ui.pdfviewer_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.pdfviewer_downloadname_config.md - 
 - api/link/ui.pdfviewer_gravity_config.md - sets the view gravity (1 by default)
@@ -92,8 +97,9 @@ dummy stub
 - api/link/ui.pdfviewer_minheight_config.md - sets the minimal height for the view
 - api/link/ui.pdfviewer_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.pdfviewer_on_config.md - allows attaching custom handlers to inner events of the component
+- api/ui.pdfviewer_scale_config.md - 
 - api/ui.pdfviewer_toolbar_config.md - 
-- api/ui.pdfviewer_url_config.md - 
+- api/link/ui.pdfviewer_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.pdfviewer_width_config.md - sets the width of the component
 }}
 
@@ -107,6 +113,7 @@ dummy stub
 {{api
 - api/link/ui.pdfviewer_$getsize_other.md - returns the current size of the component
 - api/link/ui.pdfviewer_$height_other.md - current height of the view
+- api/ui.pdfviewer_$onload_other.md - 
 - api/link/ui.pdfviewer_$scope_other.md - scope for resolving event and method names
 - api/link/ui.pdfviewer_$setsize_other.md - sets the component size
 - api/link/ui.pdfviewer_$skin_other.md - the method which will be called when skin is defined

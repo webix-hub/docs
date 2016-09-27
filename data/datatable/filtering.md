@@ -6,19 +6,20 @@ The library provides ability to <a href="http://webix.com/widget/datatable/" tit
 Filters in the header
 --------------------------
 
-You can define a built-in filter in the header or footer of a column. Webix offers 8 filter types:
+You can define a built-in filter in the header or footer of a column. Webix offers ten filter types:
 
 - in a standard free version:
-	- **textFilter**;
-	- **serverFilter** (text-based);
+	- **[textFilter](#text)**;
+	- **[serverFilter](#server)** (text-based);
     - **serverSelectFilter** (select-based);
-	- **selectFilter**;
-	- **numberFilter**;
-    - **dateFilter**;
+	- **[selectFilter](#select)**;
+	- **[numberFilter](#number)**;
+    - **[dateFilter](#date)**;
 - additionally, in the Webix Pro edition:    
-	- **richSelectFilter**;
-    - **multiSelectFilter**;
-	- **datepickerFilter**.
+	- **[richSelectFilter](#richselect)**;
+    - **[multiSelectFilter](#multiselect)**;
+	- **[datepickerFilter](#datepicker)**;
+    - **[daterangeFilter](#daterange)**.
     
 All of them are described in detail below.     
 
@@ -167,10 +168,27 @@ Retrieves values that contain mask defined through the popup calendar. Based on 
 
 ~~~js
 { id:"date", header:[ "Released", { content:"datepickerFilter" }],
-		format:webix.i18n.dateFormatStr}
+	format:webix.i18n.dateFormatStr}
 ~~~
 
 {{sample 60_pro/01_datatable/03_filters/07_filter_daterange.html}}
+
+###Daterange Filter {#daterange}
+
+{{pronote
+Available in **Webix Pro** edition only.
+}}
+
+<img src="desktop/daterange_filter.png"/>
+
+Retrieves values that contain mask defined through the range defined in the popup calendar. Based on Webix [daterangepicker](desktop/daterangepicker.md) control. 
+
+~~~js
+{ id:"date", header:["Deadline", { content:"dateRangeFilter"}], 
+	format:webix.i18n.dateFormatStr, width:200}
+~~~
+
+{{sample 60_pro/01_datatable/03_filters/04_filter_daterange.html}}
 
 ##Filtering Logic
 

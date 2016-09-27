@@ -52,6 +52,7 @@ var colorboard = webix.ui({
 - api/link/ui.colorboard_isenabled.md - checks whether the view is enabled
 - api/link/ui.colorboard_isvisible.md - checks whether the view is visible
 - api/link/ui.colorboard_mapevent.md - routes events from one object to another
+- api/ui.colorboard_moveselection.md - 
 - api/ui.colorboard_refresh.md - repaints the component
 - api/ui.colorboard_render.md - renders the specified item or the whole component
 - api/link/ui.colorboard_resize.md - adjusts the view to a new size
@@ -91,7 +92,7 @@ var colorboard = webix.ui({
 - api/link/ui.colorboard_animate_config.md - defines or disables view change animation.
 - api/link/ui.colorboard_borderless_config.md - used to hide the component borders
 - api/ui.colorboard_cols_config.md - sets the number of columns in the palette
-- api/link/ui.colorboard_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.colorboard_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.colorboard_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.colorboard_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.colorboard_gravity_config.md - sets the view gravity (1 by default)
@@ -104,6 +105,7 @@ var colorboard = webix.ui({
 - api/link/ui.colorboard_minheight_config.md - sets the minimal height for the view
 - api/ui.colorboard_minlightness_config.md - sets the start value of lightness for the default color palette
 - api/link/ui.colorboard_minwidth_config.md - sets the minimal width for the view
+- api/ui.colorboard_navigation_config.md - 
 - api/link/ui.colorboard_on_config.md - allows attaching custom handlers to inner events of the component
 - api/ui.colorboard_palette_config.md - sets palette colors
 - api/ui.colorboard_rows_config.md - sets the number of rows in the palette

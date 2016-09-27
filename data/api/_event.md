@@ -23,7 +23,7 @@ webix.event("divId", "click", function(e){
 webix.event($$("list").getNode(), "keyup", function(e){
 	//e - a native event object
 	do_something();
-}, {master:$$("list")});
+}, {bind:$$("list")});
 
 @relatedapi: api/_eventRemove.md
 @relatedsample: 
@@ -35,7 +35,7 @@ webix.event($$("list").getNode(), "keyup", function(e){
 
 The optional **context** parameter may include: 
 
-- **master** - (object) an object that the <i>this</i> keyword refers to;
+- **bind** - (object) an object that the <i>this</i> keyword refers to;
 - **capture** - (boolean) a flag that indicates on which stage (capture or bubble) event should be captured. *false* by default;
 - **id** - (string) event handler ID (if not set, will be generated automatically).
 

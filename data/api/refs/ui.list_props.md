@@ -8,7 +8,7 @@ Properties
 - api/link/ui.list_borderless_config.md - used to hide the component borders
 - api/link/ui.list_click_config.md - sets an action happening on a button click
 - api/link/ui.list_clipboard_config.md - enables/disables clipboard support
-- api/link/ui.list_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.list_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.list_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.list_data_config.md - JavaScript array containing data for the component
 - api/link/ui.list_datafeed_config.md - the URL that the component will use to reload data during binding
@@ -46,7 +46,7 @@ Properties
 - api/link/ui.list_select_config.md - enables/disables item selection or multiselection in grouplist
 - api/link/ui.list_template_config.md - the component template
 - api/link/ui.list_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
-- api/link/ui.list_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.list_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.list_type_config.md - object that specifies items presentation
 - api/link/ui.list_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.list_width_config.md - sets the width of the component

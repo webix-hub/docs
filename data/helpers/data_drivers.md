@@ -127,85 +127,98 @@ myjson.child = "data";
 Methods of data driver
 ----------------------
 
+All data drivers share the following methods: 
+
 ~~~js
-//convert string to object
+//converts string to object
 var data = driver.toObject(data);
-//return array of all records in datasource
-var records = driver.getRecords(data)
-//return single data object
+
+//returns array of all records in datasource
+var records = driver.getRecords(data);
+
+//returns single data object
 var data = driver.getDetails(records[0]);
 ~~~
 
 
-###XML
+###XML specific methods
 
 ~~~js
-//run xpath
+//runs xpath
 var elements = driver.xpath("/some/xpath", data);
-//convert xml tag to json object
+
+//converts xml tag to json object
 var obj = driver.tagToObject(elements[0]);
-//convert string to js data-types, numbers and booleans
+
+//converts string to js data-types, numbers and booleans
 obj = driver.assignTypes(obj);
 ~~~
 
 Creating new data driver
 ------------------------
 
-In addition to built in data types, it possible to define custom ones
+In addition to built-in data types, it possible to define custom ones by creating a custom data driver:
 
 The structure of driver is the following:
 
 ~~~js
-Webix.DataDriver.some={ //some - the name of the type
+webix.DataDriver.driverName={ //driverName - the name of the type
 	toObject:function(text,xml){
-                ...
+        ...
 		return text; 
 	},
 	getRecords:function(data){ 
-                var result = [];
-                ...
+        var result = [];
+        ...
 		return result;
 	},
 	getDetails:function(data){
-                var result = {}
-                ... 
+        var result = {}
+        ... 
 		return result;
 	},
 	getInfo:function(data){
 		return { 
-		 _size:some, 
-		 _from:other 
+		   size:0, 
+		   from:0 
 		};
 	}
 };
 
 ~~~
 
-You can check the structure of the data driver in Webix sourse code ([webix_debug.js](desktop/debug.md))
+You can check the structure of existing dara drivers in Webix sourse code ([webix_debug.js](desktop/debug.md))
 
 For a start, we have some data that we want to use as a new data type.
 The first thing we need to make with this data - conversion into an intermediate object (an object that will be used as an input parameter in the other functions). 
   
+1 . So, our first step -  **toObject(text, xml)** function. The function is called after data loading or directly in the **parse** method and returns the intermediate data object:
   
-1 . So, our first step -  **toObject(text, xml)** function. The function is called after data loading or directly in the **parse** method and returns the intermediate data object.
-  
-- _text_ - incoming data.
-- _xml_ - xml object (for xml loading scenario. For other data types can be ignored).
-
+- text - incoming data;
+- xml - xml object (for xml loading scenario. For other data types can be ignored).
 
 2 . Then, we form an array of records using data from our intermediate object -  **getRecords(data)** function.
 
 - data - the intermediate object from the previous step.
 
-Having an array of records we need to specify a set of properties for each single record - the third step - **getDetails(data)**.
+3 . Having an array of records we need to specify a set of properties for each single record - the third step - **getDetails(data)**.
   
 - data - an element of the array from the previous step.
 
-3 . The last action has sense just for dynamic data loading scenarios. It's a function that gets count of data and position at which new data needs to be inserted. 
+4 . The last action has sense just for dynamic data loading scenarios. It's the **getInfo(data)** function that gets total count of the data and position at which new data needs to be inserted. 
 
-4 . The fourth step - **getInfo(data)**. The function returns count of data and the appropriate position mentioned above: '0' if a value is unknown or unnecessary.
+- data - the intermediate object from step 1.
 
-- data - the intermediate object from step 1
+The function returns an object with the following properties: 
+
+- size - total count of the data (*total_count*) or 0 is dynamic loading is not enabled/not possible;
+- from - index f the last data item at the moment  (*pos*) or 0 is dynamic loading is not enabled/not possible.
+
+JSON and XML data drivers add extra properties to these object: 
+
+- parent - index of the root branch (*parent*);
+- config - configuration object loaded together with the data (*config*);
+- key - security key (*webix_security*).
 
 So, making these four or even three steps you can specify any data type and then use it while developing.  
 

@@ -294,7 +294,7 @@ var treetable = webix.ui({
 - api/link/ui.treetable_clipboard_config.md - enables/disables clipboard support
 - api/link/ui.treetable_columnwidth_config.md - defines the default width for columns (in pixels)
 - api/link/ui.treetable_columns_config.md - configures columns of the table
-- api/link/ui.treetable_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.treetable_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.treetable_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.treetable_data_config.md - JavaScript array containing data for the component
 - api/link/ui.treetable_datafetch_config.md - defines the number of records that will be loaded into datatable during the next dynamic loading call
@@ -362,8 +362,8 @@ var treetable = webix.ui({
 - api/link/ui.treetable_subrowheight_config.md - automatically adjusts the subrow's height to the size of the text
 - api/link/ui.treetable_subrow_config.md - sets a subrow template
 - api/link/ui.treetable_subview_config.md - adds a subview configuration into datatable
-- api/link/ui.treetable_threestate_config.md - defines three-state checkboxes for the tree. Flase by default.
-- api/link/ui.treetable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.treetable_threestate_config.md - defines three-state checkboxes for the tree
+- api/link/ui.treetable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.treetable_topsplit_config.md - defines the number of rows that will be "frozen" at the top of datatable
 - api/link/ui.treetable_type_config.md - used for configuring presentation of items
 - api/link/ui.treetable_url_config.md - the URL which the component will use to load data after its initialization
@@ -382,7 +382,7 @@ var treetable = webix.ui({
 - api/link/ui.treetable_$drag_other.md - method called when drag operation initiated
 - api/link/ui.treetable_$draghtml_other.md - defines how dragged item will look
 - api/link/ui.treetable_$dragin_other.md - method called when item moved on possible drop landing during dnd
-- api/link/ui.treetable_$dragmark_other.md - method called during dnd when some item in the component need to be marked as active drop target
+- api/link/ui.treetable_$dragmark_other.md - method called during drag-n-drop, when some item in the component should be marked as an active drop target
 - api/link/ui.treetable_$dragout_other.md - method called when item moved out of possible drop landing during dnd
 - api/link/ui.treetable_$drop_other.md - method called when item dragged and dropped on valid target
 - api/link/ui.treetable_$dropallow_other.md - can be redefined, if you need custom drop rules

@@ -4,6 +4,7 @@ Others
 {{api
 - api/i18n_pdfviewer_other.md - sets text labels for page switching and document zooming options in PDF viewer
 - api/i18n_am_other.md - sets the default label for time before noon
+- api/i18n_aria_other.md - 
 - api/i18n_calendar_other.md - the default locale months and days names
 - api/i18n_controls_other.md - sets text labels for some elements of Webix components
 - api/i18n_dataexport_other.md - sets text labels for the parts of the page numbering line in the exported PDF document
@@ -30,6 +31,7 @@ Others
 @index:
 - api/i18n_pdfviewer_other.md
 - api/i18n_am_other.md
+- api/i18n_aria_other.md
 - api/i18n_calendar_other.md
 - api/i18n_controls_other.md
 - api/i18n_dataexport_other.md

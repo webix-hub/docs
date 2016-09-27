@@ -1,0 +1,181 @@
+Methods
+=======
+
+{{api
+- api/link/ui.sheets_add.md - adds an item to the store
+- api/link/ui.sheets_addcss.md - applied CSS class to a component item
+- api/link/ui.sheets_adjust.md - adjusts the component to the size of the parent HTML container
+- api/link/ui.sheets_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.sheets_bind.md - binds components
+- api/link/ui.sheets_blockevent.md - temporarily blocks triggering of ALL events of the calling object
+- api/link/ui.sheets_callevent.md - calls an inner event
+- api/link/ui.sheets_clearall.md - removes all items from the component
+- api/link/ui.sheets_clearcss.md - removes css class from all items
+- api/link/ui.sheets_clearvalidation.md - removes all validation marks from the component
+- api/link/ui.sheets_copy.md - copies an item to the same or another object
+- api/link/ui.sheets_count.md - returns the number of currently visible items
+- api/link/ui.sheets_customize.md - redefines the "type" property
+- api/link/ui.sheets_define.md - redefines a single configuration property (or a hash of properties)
+- api/link/ui.sheets_destructor.md - destructs the calling object
+- api/link/ui.sheets_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
+- api/link/ui.sheets_disable.md - disables the calling view (makes it dimmed and unclickable)
+- api/link/ui.sheets_edit.md - enables the edit mode for the specified item
+- api/link/ui.sheets_editcancel.md - cancels the edit mode and closes all opened editors. The component is still editable
+- api/link/ui.sheets_editnext.md - closes the current editor and opens one in the next cell of the row
+- api/link/ui.sheets_editstop.md - stops the edit mode and closes all opened editors. The component is still editable
+- api/link/ui.sheets_enable.md - enables the calling view that was disabled by the 'disable' method
+- api/link/ui.sheets_exists.md - checks whether an item with the specified id exists
+- api/link/ui.sheets_filter.md - filters the component
+- api/link/ui.sheets_find.md - returns rows that match the criterion
+- api/link/ui.sheets_focuseditor.md - moves focus to the active editor
+- api/link/ui.sheets_getchildviews.md - returns child views of the calling component
+- api/link/ui.sheets_geteditstate.md - returns info about active editor object
+- api/link/ui.sheets_geteditor.md - returns editor object
+- api/link/ui.sheets_geteditorvalue.md - returns the value of the active (currently open) editor
+- api/link/ui.sheets_getfirstid.md - returns the ID of the first item
+- api/link/ui.sheets_getformview.md - returns master form for the input
+- api/link/ui.sheets_getidbyindex.md - returns the id of the item with the specified index
+- api/link/ui.sheets_getindexbyid.md - returns the index of the item with the specified id
+- api/link/ui.sheets_getitem.md - gets the object of the data item with the specified id
+- api/link/ui.sheets_getitemnode.md - returns HTML element of the item
+- api/link/ui.sheets_getlastid.md - returns the id of the last item
+- api/link/ui.sheets_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
+- api/link/ui.sheets_getnode.md - returns the main HTML container for the calling object
+- api/link/ui.sheets_getpage.md - returns the currently visible page in case of paged view
+- api/link/ui.sheets_getpager.md - returns the pager object associated with the component
+- api/link/ui.sheets_getparentview.md - returns the parent view of the component
+- api/link/ui.sheets_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
+- api/link/ui.sheets_getscrollstate.md - returns the scroll position
+- api/link/ui.sheets_getselectedid.md - returns the id(s) of the selected item(s)
+- api/link/ui.sheets_getselecteditem.md - returns selected object
+- api/link/ui.sheets_gettopparentview.md - returns top parent view
+- api/link/ui.sheets_getvisiblecount.md - returns the number of items that can be seen with the current view height
+- api/link/ui.sheets_hascss.md - checks if item has specific css class
+- api/link/ui.sheets_hasevent.md - checks whether the component has the specified event
+- api/link/ui.sheets_hide.md - hides the view
+- api/link/ui.sheets_isenabled.md - checks whether the view is enabled
+- api/link/ui.sheets_isselected.md - checks whether the specified item is selected or not
+- api/link/ui.sheets_isvisible.md - checks whether the view is visible
+- api/link/ui.sheets_load.md - loads data from an external data source.
+- api/link/ui.sheets_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
+- api/link/ui.sheets_locate.md - gets the id of an item from the specified HTML event
+- api/link/ui.sheets_mapevent.md - routes events from one object to another
+- api/link/ui.sheets_move.md - moves the specified item to the new position
+- api/link/ui.sheets_movebottom.md - moves the specified item to the last position
+- api/link/ui.sheets_movedown.md - increases the item index and moves the item to the new position
+- api/link/ui.sheets_moveselection.md - moves selection in the specified direction
+- api/link/ui.sheets_movetop.md - moves the specified item to the first position
+- api/link/ui.sheets_moveup.md - decreases the item index and moves the item to the new position
+- api/link/ui.sheets_parse.md - loads data to the component from an inline data source
+- api/link/ui.sheets_refresh.md - repaints the whole view or a certain item
+- api/link/ui.sheets_remove.md - removes the specified item/items from datastore
+- api/link/ui.sheets_removecss.md - removes CSS class from a component item
+- api/link/ui.sheets_render.md - renders the specified item or the whole component
+- api/link/ui.sheets_resize.md - adjusts the view to a new size
+- api/link/ui.sheets_scrollto.md - scrolls the data container to a certain position
+- api/link/ui.sheets_select.md - selects the specified item(s)
+- api/link/ui.sheets_selectall.md - selects all items or the specified range
+- api/link/ui.sheets_serialize.md - serializes data to a JSON object
+- api/link/ui.sheets_setpage.md - makes the specified page visible (assuming that the pager was defined )
+- api/link/ui.sheets_show.md - makes the component visible
+- api/link/ui.sheets_showitem.md - scrolls the component to make the specified item visible
+- api/link/ui.sheets_sort.md - sorts datastore
+- api/link/ui.sheets_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
+- api/link/ui.sheets_unbind.md - breaks "bind" link
+- api/link/ui.sheets_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
+- api/link/ui.sheets_unselect.md - removes selection from the specified item
+- api/link/ui.sheets_unselectall.md - removes selection from all items
+- api/link/ui.sheets_updateitem.md - sets properties of the data item
+- api/link/ui.sheets_validate.md - validates one record or all dataset against validation rules
+- api/link/ui.sheets_validateeditor.md - validates data in currently active editor
+}}
+
+@index:
+- api/link/ui.sheets_add.md
+- api/link/ui.sheets_addcss.md
+- api/link/ui.sheets_adjust.md
+- api/link/ui.sheets_attachevent.md
+- api/link/ui.sheets_bind.md
+- api/link/ui.sheets_blockevent.md
+- api/link/ui.sheets_callevent.md
+- api/link/ui.sheets_clearall.md
+- api/link/ui.sheets_clearcss.md
+- api/link/ui.sheets_clearvalidation.md
+- api/link/ui.sheets_copy.md
+- api/link/ui.sheets_count.md
+- api/link/ui.sheets_customize.md
+- api/link/ui.sheets_define.md
+- api/link/ui.sheets_destructor.md
+- api/link/ui.sheets_detachevent.md
+- api/link/ui.sheets_disable.md
+- api/link/ui.sheets_edit.md
+- api/link/ui.sheets_editcancel.md
+- api/link/ui.sheets_editnext.md
+- api/link/ui.sheets_editstop.md
+- api/link/ui.sheets_enable.md
+- api/link/ui.sheets_exists.md
+- api/link/ui.sheets_filter.md
+- api/link/ui.sheets_find.md
+- api/link/ui.sheets_focuseditor.md
+- api/link/ui.sheets_getchildviews.md
+- api/link/ui.sheets_geteditstate.md
+- api/link/ui.sheets_geteditor.md
+- api/link/ui.sheets_geteditorvalue.md
+- api/link/ui.sheets_getfirstid.md
+- api/link/ui.sheets_getformview.md
+- api/link/ui.sheets_getidbyindex.md
+- api/link/ui.sheets_getindexbyid.md
+- api/link/ui.sheets_getitem.md
+- api/link/ui.sheets_getitemnode.md
+- api/link/ui.sheets_getlastid.md
+- api/link/ui.sheets_getnextid.md
+- api/link/ui.sheets_getnode.md
+- api/link/ui.sheets_getpage.md
+- api/link/ui.sheets_getpager.md
+- api/link/ui.sheets_getparentview.md
+- api/link/ui.sheets_getprevid.md
+- api/link/ui.sheets_getscrollstate.md
+- api/link/ui.sheets_getselectedid.md
+- api/link/ui.sheets_getselecteditem.md
+- api/link/ui.sheets_gettopparentview.md
+- api/link/ui.sheets_getvisiblecount.md
+- api/link/ui.sheets_hascss.md
+- api/link/ui.sheets_hasevent.md
+- api/link/ui.sheets_hide.md
+- api/link/ui.sheets_isenabled.md
+- api/link/ui.sheets_isselected.md
+- api/link/ui.sheets_isvisible.md
+- api/link/ui.sheets_load.md
+- api/link/ui.sheets_loadnext.md
+- api/link/ui.sheets_locate.md
+- api/link/ui.sheets_mapevent.md
+- api/link/ui.sheets_move.md
+- api/link/ui.sheets_movebottom.md
+- api/link/ui.sheets_movedown.md
+- api/link/ui.sheets_moveselection.md
+- api/link/ui.sheets_movetop.md
+- api/link/ui.sheets_moveup.md
+- api/link/ui.sheets_parse.md
+- api/link/ui.sheets_refresh.md
+- api/link/ui.sheets_remove.md
+- api/link/ui.sheets_removecss.md
+- api/link/ui.sheets_render.md
+- api/link/ui.sheets_resize.md
+- api/link/ui.sheets_scrollto.md
+- api/link/ui.sheets_select.md
+- api/link/ui.sheets_selectall.md
+- api/link/ui.sheets_serialize.md
+- api/link/ui.sheets_setpage.md
+- api/link/ui.sheets_show.md
+- api/link/ui.sheets_showitem.md
+- api/link/ui.sheets_sort.md
+- api/link/ui.sheets_sync.md
+- api/link/ui.sheets_unbind.md
+- api/link/ui.sheets_unblockevent.md
+- api/link/ui.sheets_unselect.md
+- api/link/ui.sheets_unselectall.md
+- api/link/ui.sheets_updateitem.md
+- api/link/ui.sheets_validate.md
+- api/link/ui.sheets_validateeditor.md
+
+

@@ -4,6 +4,7 @@ Others
 {{api
 - api/link/ui.pdfviewer_$getsize_other.md - returns the current size of the component
 - api/link/ui.pdfviewer_$height_other.md - current height of the view
+- api/ui.pdfviewer_$onload_other.md - 
 - api/link/ui.pdfviewer_$scope_other.md - scope for resolving event and method names
 - api/link/ui.pdfviewer_$setsize_other.md - sets the component size
 - api/link/ui.pdfviewer_$skin_other.md - the method which will be called when skin is defined
@@ -16,6 +17,7 @@ Others
 @index:
 - api/link/ui.pdfviewer_$getsize_other.md
 - api/link/ui.pdfviewer_$height_other.md
+- api/ui.pdfviewer_$onload_other.md
 - api/link/ui.pdfviewer_$scope_other.md
 - api/link/ui.pdfviewer_$setsize_other.md
 - api/link/ui.pdfviewer_$skin_other.md

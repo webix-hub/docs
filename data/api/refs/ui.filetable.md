@@ -255,7 +255,7 @@ dummy stub
 - api/link/ui.filetable_clipboard_config.md - enables/disables clipboard support
 - api/link/ui.filetable_columnwidth_config.md - defines the default width for columns (in pixels)
 - api/link/ui.filetable_columns_config.md - configures columns of the table
-- api/link/ui.filetable_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.filetable_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.filetable_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.filetable_data_config.md - JavaScript array containing data for the component
 - api/link/ui.filetable_datafeed_config.md - the URL that the component will use to reload data during binding
@@ -324,7 +324,7 @@ dummy stub
 - api/link/ui.filetable_subrowheight_config.md - automatically adjusts the subrow's height to the size of the text
 - api/link/ui.filetable_subrow_config.md - sets a subrow template
 - api/link/ui.filetable_subview_config.md - adds a subview configuration into datatable
-- api/link/ui.filetable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.filetable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.filetable_topsplit_config.md - defines the number of rows that will be "frozen" at the top of datatable
 - api/link/ui.filetable_type_config.md - used for configuring presentation of items
 - api/link/ui.filetable_url_config.md - the URL which the component will use to load data after its initialization
@@ -343,7 +343,7 @@ dummy stub
 - api/link/ui.filetable_$drag_other.md - method called when drag operation initiated
 - api/link/ui.filetable_$draghtml_other.md - defines how dragged item will look
 - api/link/ui.filetable_$dragin_other.md - method called when item moved on possible drop landing during dnd
-- api/link/ui.filetable_$dragmark_other.md - method called during dnd when some item in the component need to be marked as active drop target
+- api/link/ui.filetable_$dragmark_other.md - method called during drag-n-drop, when some item in the component should be marked as an active drop target
 - api/link/ui.filetable_$dragout_other.md - method called when item moved out of possible drop landing during dnd
 - api/link/ui.filetable_$drop_other.md - method called when item dragged and dropped on valid target
 - api/link/ui.filetable_$dropallow_other.md - can be redefined, if you need custom drop rules

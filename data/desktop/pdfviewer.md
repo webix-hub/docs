@@ -16,10 +16,14 @@ Thus, the default constructor of PDF viewer with toolbar looks as follows:
 
 ~~~js
 webix.ui({
-	type:"space",
     rows:[
     	{ view:"pdfbar", id:"toolbar" },
-        { view:"pdfviewer", id:"pdf", toolbar:"toolbar", url:"files/WebixDocs.pdf"}
+        { 
+        	view:"pdfviewer", 
+            id:"pdf", 
+            toolbar:"toolbar", 
+            url:"binary->files/WebixDocs.pdf"
+        }
    	]
 });
 ~~~
@@ -31,7 +35,7 @@ Configuration parameters are:
 - viewer:
 	- **id** (string) - the id of the viewer;
 	- **toolbar** (string) - the id of the related pdf toolbar;
-	- **url** (string) - the url of the pdf file to browse in the viewer.
+	- **url** (string) - the url of the pdf file to browse in the viewer prefixed by "binary" keyword that refers to the [loading proxy](desktop/server_proxy.md).
     
 ####PDFbar structure    
     
@@ -58,15 +62,15 @@ loads a pdf file into the viewer
 
 parameters:
 
-- url - (string) the url of the pdf file to load		
+- url - (string) the url of the pdf file to load prefixed by "binary" keyword that refers to the [loading proxy](desktop/server_proxy.md)	
 
 ~~~js
-$$("pdfviewer").load(url);
+$$("pdfviewer").load("binary->url");
 ~~~
 
 ####parse()
 
-parses the contents of uploaded File or base64 string into the viewer:
+parses the contents of uploaded file or base64 string into the viewer:
 
 {{snippet
 Base64 string
@@ -121,27 +125,14 @@ $$("pdfviewer").renderPage(2);
 
 ####setScale()
 
-sets a new value for a zooming scale
+sets a new value for a zooming scale and renders current page with the new scale
 
 parameters:
 
-- scale - (string, number) a new scale value 
+- scale - (string, number) new scale value 
 - update - (boolean) if true, update scale value on the related toolbar
 
-The "scale" parameter can be set as:
-
-1) string value:
-
-- 'page-actual' - the page scale is equal to 100% 
-- 'page-width' - the page size is extended to the width of the view
-- 'page-height' - the page size is extended to the height of the view
-- 'page-fit' - the page's size is adjusted to the size of the view area, width or height
-- 'auto' - the page's size is automatically adjusted to the size of the view area
-
-2) number value:
-
-- integer number: 1 is equal to 100%
-- float number: 0.5 is equal to 50%
+For legal values check **scale** property below.
 
 ~~~js
 $$("pdfviewer").setScale(0.4, true);
@@ -173,6 +164,7 @@ downloads viewer contents as PDF file
 $$("pdfviewer").download();
 ~~~
 
+
 ###Events
 
 ####onBeforeLoad
@@ -189,6 +181,14 @@ fires after the PDF file is fully loaded
 
 ~~~js
 $$("pdfviewer").attachEvent("onAfterLoad", function(){ ... });
+~~~
+
+####onDocumentReady
+
+fires after the PDF file is fully loaded and the initial page is rendered
+
+~~~js
+$$("pdfviewer").attachEvent("onDocumentReady", function(){ ... });
 ~~~
 
 ####onPageRender
@@ -214,6 +214,54 @@ parameters:
 
 ~~~js
 $$("pdfviewer").attachEvent("onScaleChange", function(scale, update){ ... });
+~~~
+
+###Properties
+
+####scale
+
+current scale value. It can be set as:
+
+1) string value:
+
+- 'page-actual' - the page scale is equal to 100% 
+- 'page-width' - the page size is extended to the width of the view
+- 'page-height' - the page size is extended to the height of the view
+- 'page-fit' - the page's size is adjusted to the size of the view area, width or height
+- 'auto' - the page's size is automatically adjusted to the size of the view area
+
+String values will be automatically calculated into numeric values. 
+
+2) number value:
+
+- integer number: 1 is equal to 100%
+- float number: 0.5 is equal to 50%
+
+~~~js
+//set scale
+$$("pdfviewer").define("scale", "page-width");
+//re-render viewer
+$$("pdfviewer").renderPage($$("pdfviewer").$pageNum);
+~~~
+
+####Other
+
+It is not recommended to change these properties.
+
+####$pageNum
+
+the number of a currently visible page:
+
+~~~js
+$$("pdfviewer").$pageNum;
+~~~
+
+####$numPages
+
+total number of pages in the document:
+
+~~~js
+$$("pdfviewer").$numPages;
 ~~~
 
 
@@ -269,21 +317,7 @@ sets a new value for the toolbar scale
 
 parameters:
 
-- scale - (string, number) a new scale value
-
-Possible string values are:
-
-- 'page-actual' - the page scale is equal to 100% 
-- 'page-width' - the page size is extended to the width of the view
-- 'page-height' - the page size is extended to the height of the view
-- 'page-fit' - the page's size is fit to the size of the view area
-- 'auto' - the page's size is automatically fit to  the size of the view area
-
-Possible number values are:
-
-- integer numbers: 1 is equal to 100%
-- float numbers: 0.5 is equal to 50%
-
+- scale - (string, number) a new scale value. For legal values check **scale** property above.
 
 ~~~js
 $$("toolbar").setScale(0.4);

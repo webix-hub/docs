@@ -7,12 +7,11 @@ buttons
 @type: object
 @example:
 
-buttons:{
-    "undo": ["undo", "redo"],
-    "font": ["font-family", "font-size"],
-    "text": ["font-weight", "font-style", "text-decoration", "color"],
-    "cell": ["background", "borders", "span"],
-    "align": ["text-align", "vertical-align", "wrap"],
+buttons: {
+    "undo": ["undo","redo"],
+    "font": ["font-family","font-size","font-weight","font-style",
+    "text-decoration","color","background","borders"],
+    "align": ["text-align","vertical-align","wrap","span"],
     "format": ["format"]
 }
 

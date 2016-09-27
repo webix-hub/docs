@@ -71,7 +71,7 @@ var contextmenu = webix.ui({
 - api/link/ui.contextmenu_exists.md - checks whether an item with the specified id exists
 - api/link/ui.contextmenu_filter.md - filters the component
 - api/link/ui.contextmenu_find.md - returns rows that match the criterion
-- api/link/ui.contextmenu_getbody.md - gets the ui view of the window body
+- api/link/ui.contextmenu_getbody.md - gets the UI view of the window body
 - api/link/ui.contextmenu_getchildviews.md - returns child views of the calling component
 - api/link/ui.contextmenu_getcontext.md - gets the master area for contextmenu
 - api/link/ui.contextmenu_getfirstid.md - returns the ID of the first item
@@ -214,7 +214,7 @@ var contextmenu = webix.ui({
 - api/link/ui.contextmenu_borderless_config.md - used to hide the component borders
 - api/link/ui.contextmenu_click_config.md - sets an action happening on a button click
 - api/link/ui.contextmenu_clipboard_config.md - enables/disables clipboard support
-- api/link/ui.contextmenu_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.contextmenu_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.contextmenu_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.contextmenu_data_config.md - JavaScript array containing data for the component
 - api/link/ui.contextmenu_datafeed_config.md - the URL that the component will use to reload data during binding
@@ -266,7 +266,7 @@ var contextmenu = webix.ui({
 - api/link/ui.contextmenu_template_config.md - the component template
 - api/link/ui.contextmenu_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
 - api/link/ui.contextmenu_tofront_config.md - places window above other windows on clicking it
-- api/link/ui.contextmenu_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.contextmenu_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.contextmenu_top_config.md - the top offset of a window
 - api/link/ui.contextmenu_type_config.md - object that specifies items presentation
 - api/link/ui.contextmenu_url_config.md - the URL which the component will use to load data after its initialization
@@ -287,7 +287,7 @@ var contextmenu = webix.ui({
 - api/link/ui.contextmenu_$drag_other.md - method called when drag operation initiated
 - api/link/ui.contextmenu_$draghtml_other.md - defines how dragged item will look
 - api/link/ui.contextmenu_$dragin_other.md - method called when item moved on possible drop landing during dnd
-- api/link/ui.contextmenu_$dragmark_other.md - method called during dnd when some item in the component need to be marked as active drop target
+- api/link/ui.contextmenu_$dragmark_other.md - method called during drag-n-drop, when some item in the component should be marked as an active drop target
 - api/link/ui.contextmenu_$dragout_other.md - method called when item moved out of possible drop landing during dnd
 - api/link/ui.contextmenu_$drop_other.md - method called when item dragged and dropped on valid target
 - api/link/ui.contextmenu_$dropallow_other.md - can be redefined, if you need custom drop rules

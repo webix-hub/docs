@@ -111,7 +111,7 @@ var uploader = webix.ui({
 - api/link/ui.uploader_autowidth_config.md - adjusts button to its text content
 - api/link/ui.uploader_borderless_config.md - used to hide the component borders
 - api/link/ui.uploader_click_config.md - click action handler
-- api/link/ui.uploader_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.uploader_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.uploader_css_config.md - the name of a css class that will be applied to the view container
 - api/ui.uploader_datatype_config.md - the type of serverside response
 - api/link/ui.uploader_disabled_config.md - indicates whether an item is enabled or not
@@ -138,6 +138,7 @@ var uploader = webix.ui({
 - api/link/ui.uploader_tooltip_config.md - tooltip for the input
 - api/link/ui.uploader_type_config.md - the type of the control
 - api/ui.uploader_upload_config.md - path to the script file that will handle uploading
+- api/ui.uploader_urldata_config.md - extra data that will be sent to server side along with the file uploading
 - api/link/ui.uploader_value_config.md - sets the initial value for a control
 - api/link/ui.uploader_width_config.md - sets the width of the component
 }}

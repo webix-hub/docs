@@ -13,7 +13,7 @@ Methods
 - api/link/ui.gridsuggest_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.gridsuggest_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.gridsuggest_enable.md - enables the calling view that was disabled by the 'disable' method
-- api/link/ui.gridsuggest_getbody.md - gets the ui view of the window body
+- api/link/ui.gridsuggest_getbody.md - gets the UI view of the window body
 - api/link/ui.gridsuggest_getchildviews.md - returns child views of the calling component
 - api/link/ui.gridsuggest_getformview.md - returns master form for the input
 - api/link/ui.gridsuggest_gethead.md - gets the ui view of the window header

@@ -280,6 +280,11 @@ app.controller("webixTestController", function($scope){
 
 Inside the fucntion invoked by **webix-ready** directive, Webix-Angular integrated app complies to standard Webix [event handling pattern](desktop/event_handling.md).
 
+Angular 2 Compatibility
+-----------------------
+
+You can use Webix together with Angular 2. You will find a demo and a related tutorial [on GitHub](https://github.com/webix-hub/angular2-demo).
+
 @index:
 	- desktop/angular_controllers.md
     - desktop/angular_events.md

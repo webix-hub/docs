@@ -33,9 +33,11 @@ Mixins
 - api/refs/dragorder.md -  implements DND for data collections
 - api/refs/editability.md -  implement common edit interactions
 - api/refs/eventsystem.md -  inner event system
+- api/refs/flexlayout.md - 
 - api/refs/group.md -  data grouping and sorting logic
 - api/refs/groupmethods.md -  a collection of functors for grouping
 - api/refs/groupstore.md -  implements grouping of data
+- api/refs/htmloptions.md - 
 - api/refs/htmlmap.md -  wrapper for image maps
 - api/refs/idspace.md -  separate layer of ids
 - api/refs/keysnavigation.md -  implements keyboard navigation
@@ -121,9 +123,11 @@ Mixins
 - api/refs/dragorder.md
 - api/refs/editability.md
 - api/refs/eventsystem.md
+- api/refs/flexlayout.md
 - api/refs/group.md
 - api/refs/groupmethods.md
 - api/refs/groupstore.md
+- api/refs/htmloptions.md
 - api/refs/htmlmap.md
 - api/refs/idspace.md
 - api/refs/keysnavigation.md
@@ -168,6 +172,7 @@ Mixins
 - api/refs/virtualrenderstack.md
 - api/refs/ui.baselayout.md
 - api/refs/ui.baseview.md
+- api/refs/ui.checksuggest.md
 - api/refs/ui.proto.md
 - api/refs/ui.resizearea.md
 - api/refs/ui.view.md

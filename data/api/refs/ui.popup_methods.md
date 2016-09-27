@@ -13,7 +13,7 @@ Methods
 - api/link/ui.popup_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.popup_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.popup_enable.md - enables the calling view that was disabled by the 'disable' method
-- api/link/ui.popup_getbody.md - gets the ui view of the window body
+- api/link/ui.popup_getbody.md - gets the UI view of the window body
 - api/link/ui.popup_getchildviews.md - returns child views of the calling component
 - api/link/ui.popup_getformview.md - returns master form for the input
 - api/link/ui.popup_gethead.md - gets the ui view of the window header

@@ -6,5 +6,6 @@ Designing User Interface
 - desktop/big_app_structure.md
 - desktop/markup_init.md
 - desktop/webix_jet.md
+- desktop/accessibility.md
 }}
 

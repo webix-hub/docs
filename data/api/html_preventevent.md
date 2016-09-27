@@ -28,4 +28,6 @@ document.getElementById("mylink").onclick = function(e)
 If the specified event is cancelable, the method signifies that it should be cancelled. If the event can't be cancelled the method has no effect.
 
 
-@relatedapi:api/html_stopevent.md
+@relatedapi:
+- api/html_stopevent.md
+- api/html_triggerevent.md

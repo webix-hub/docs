@@ -1,4 +1,4 @@
-Configuring Spreadsheet
+General Configuration Settings
 ===========================
 
 The SpreadSheet component can be easily configured according to your needs. 
@@ -17,20 +17,8 @@ webix.ui({
 });
 ~~~
 
-Math operations
-----------------
+{{sample 65_spreadsheet/01_basic/08_cell_resize.html}}
 
-Math functionality is also enabled in the configuration of the component. Just set the api/ui.spreadsheet_math_config.md property to true.
-
-~~~js
-webix.ui({
-	view:"spreadsheet",
-	data: base_data,
-	math:true
-});
-~~~
-
-To get more information about math in SpreadSheet, read the spreadsheet/math.md article.
 
 Enabling formula editor
 ------------------------------
@@ -102,12 +90,10 @@ Making SpreadSheet readonly
 To activate the readonly mode, you need to set the **readonly** property to **true** in the SpreadSheet configuration:
 
 ~~~js
-webix.ready(function(){
-	webix.ui({
-		view:"spreadsheet",
-        data: base_data,
-		readonly:true
-	});
+webix.ui({
+	view:"spreadsheet",
+    data: base_data,
+	readonly:true
 });
 ~~~
 
@@ -116,6 +102,25 @@ From now on, users won't be able to manipulate the cells. The Instruments panel 
 {{sample
 65_spreadsheet/01_basic/04_readonly.html
 }}
+
+Adding Menu
+-----------
+
+You can add a dropdown menu at the top of SpreadSheet. It allows saving space on the toolbar and leave just the most prominent buttons on it.
+
+<img src="spreadsheet/menu.png">
+
+To add a menu, make use of the **menu** property with the **true** value.
+
+~~~js
+webix.ui({
+	view:"spreadsheet",
+	data: math_data_simple,
+	menu: true
+});
+~~~
+
+{{sample 65_spreadsheet/01_basic/05_menu.html}}
 
 
 @spellcheck:api

@@ -19,6 +19,7 @@ Articles are of various levels of complexity and both a beginner and a master ca
                 <li>desktop/big_app_structure.md</li>
                 <li>desktop/markup_init.md</li>
                 <li>desktop/webix_jet.md</li>
+                <li>desktop/accessibility.md</li>
             </ul>
 		</td>
 		<td class='topic_description'>Describes different ways you can follow to design and build the user interface for your application.</td>

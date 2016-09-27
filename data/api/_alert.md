@@ -47,9 +47,9 @@ In the extended form, the method takes as a parameter an object with box paramet
 - **title** - (*string*) the text of the header
 - **text** - (*string*) the text of the window body
 - **ok** - (*string*) the text of the 'Ok' button
-- **cancel** - (*string*) the text of the 'Cancel' button
 - **type** - (*'alert-warning' or 'alert-error'*) the alert type: warning or error
-- **callback** - (function) contains a code that will be called when the user clicks on the button. As a parameter takes the *true/false* value - the alert result status
+- **callback** - (function) contains a code that will be called when the user clicks on the button. 
+As a parameter the function takes the *true/false* value - the alert result status
 
 
 ~~~js

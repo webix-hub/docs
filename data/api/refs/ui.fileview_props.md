@@ -6,7 +6,7 @@ Properties
 - api/link/ui.fileview_autoheight_config.md - enables autosizing to content
 - api/link/ui.fileview_borderless_config.md - used to hide the component borders
 - api/link/ui.fileview_click_config.md - sets an action happening on a button click
-- api/link/ui.fileview_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.fileview_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.fileview_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.fileview_data_config.md - JavaScript array containing data for the component
 - api/link/ui.fileview_datafeed_config.md - the URL that the component will use to reload data during binding
@@ -26,6 +26,7 @@ Properties
 - api/link/ui.fileview_height_config.md - sets the height of the component
 - api/link/ui.fileview_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.fileview_id_config.md - the component ID
+- api/ui.fileview_layout_config.md - 
 - api/link/ui.fileview_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.fileview_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.fileview_minheight_config.md - sets the minimal height for the view
@@ -48,7 +49,7 @@ Properties
 - api/link/ui.fileview_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.fileview_select_config.md - enables/disables item selection or multiselection in grouplist
 - api/link/ui.fileview_template_config.md - the component template
-- api/link/ui.fileview_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item.
+- api/link/ui.fileview_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.fileview_type_config.md - object that specifies items presentation
 - api/link/ui.fileview_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.fileview_width_config.md - sets the width of the component
@@ -81,6 +82,7 @@ Properties
 - api/link/ui.fileview_height_config.md
 - api/link/ui.fileview_hidden_config.md
 - api/link/ui.fileview_id_config.md
+- api/ui.fileview_layout_config.md
 - api/link/ui.fileview_maxheight_config.md
 - api/link/ui.fileview_maxwidth_config.md
 - api/link/ui.fileview_minheight_config.md

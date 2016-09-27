@@ -2,14 +2,17 @@ timepicker
 =============
 
 
-@short: enables clock for time selection
+@short: enables clock displaying for time selection
 	
 
 @type: boolean
+@default: false
 @example:
-
+webix.ui({
+	view:"calendar",
+    timepicker: true
+})
 
 @template:	api_config
-@descr: *False* by default
-
+@descr:
 

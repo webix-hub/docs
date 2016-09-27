@@ -6,12 +6,12 @@ enableItem
 	
 
 @params:
-- id		id		id of item which need to be enabled
+- id		id		id of the item that should be enabled
 
 
 @example:
 
-$$("somemenu").enabledItem("about");
+$$("somemenu").enableItem("about");
 
 @template:	api_method
 @descr:

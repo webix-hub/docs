@@ -10,7 +10,7 @@ Properties
 - api/link/ui.multitext_bottomlabel_config.md - sets a label under a control
 - api/link/ui.multitext_bottompadding_config.md - sets the bottom offset of the control input
 - api/link/ui.multitext_click_config.md - click action handler
-- api/link/ui.multitext_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.multitext_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.multitext_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.multitext_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.multitext_gravity_config.md - sets the view gravity (1 by default)
@@ -24,6 +24,7 @@ Properties
 - api/link/ui.multitext_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.multitext_inputpadding_config.md - padding of text in the input
 - api/link/ui.multitext_inputwidth_config.md - the width of the input area, or a button's text value area.
+- api/link/ui.multitext_invalid_config.md - 
 - api/link/ui.multitext_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.multitext_label_config.md - the text label of the control
 - api/link/ui.multitext_labelalign_config.md - the alignment of a label towards its container
@@ -42,8 +43,10 @@ Properties
 - api/link/ui.multitext_relatedview_config.md - id of view, that will be affected by relatedAction operation
 - api/link/ui.multitext_required_config.md - marks field as required
 - api/ui.multitext_separator_config.md - sets a delimiter for control's values
+- api/ui.multitext_subconfig_config.md - defines settings for extra text fields
 - api/link/ui.multitext_suggest_config.md - links suggest list to the input
 - api/link/ui.multitext_tabfocus_config.md - defines whether the control will be included in the tab navigation order
+- api/link/ui.multitext_text_config.md - 
 - api/link/ui.multitext_tooltip_config.md - tooltip for the input
 - api/link/ui.multitext_validate_config.md - adds validation to the field
 - api/link/ui.multitext_validateevent_config.md - on which event validation fires
@@ -74,6 +77,7 @@ Properties
 - api/link/ui.multitext_inputheight_config.md
 - api/link/ui.multitext_inputpadding_config.md
 - api/link/ui.multitext_inputwidth_config.md
+- api/link/ui.multitext_invalid_config.md
 - api/link/ui.multitext_invalidmessage_config.md
 - api/link/ui.multitext_label_config.md
 - api/link/ui.multitext_labelalign_config.md
@@ -92,8 +96,10 @@ Properties
 - api/link/ui.multitext_relatedview_config.md
 - api/link/ui.multitext_required_config.md
 - api/ui.multitext_separator_config.md
+- api/ui.multitext_subconfig_config.md
 - api/link/ui.multitext_suggest_config.md
 - api/link/ui.multitext_tabfocus_config.md
+- api/link/ui.multitext_text_config.md
 - api/link/ui.multitext_tooltip_config.md
 - api/link/ui.multitext_validate_config.md
 - api/link/ui.multitext_validateevent_config.md

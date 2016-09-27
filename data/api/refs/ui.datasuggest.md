@@ -50,7 +50,7 @@ webix.ui({
 - api/link/ui.datasuggest_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.datasuggest_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.datasuggest_enable.md - enables the calling view that was disabled by the 'disable' method
-- api/link/ui.datasuggest_getbody.md - gets the ui view of the window body
+- api/link/ui.datasuggest_getbody.md - gets the UI view of the window body
 - api/link/ui.datasuggest_getchildviews.md - returns child views of the calling component
 - api/link/ui.datasuggest_getformview.md - returns master form for the input
 - api/link/ui.datasuggest_gethead.md - gets the ui view of the window header
@@ -114,7 +114,7 @@ webix.ui({
 - api/link/ui.datasuggest_autofocus_config.md - sets focus on the window the moment it appears on the page
 - api/link/ui.datasuggest_body_config.md - the content of window body: template or view
 - api/link/ui.datasuggest_borderless_config.md - used to hide the component borders
-- api/link/ui.datasuggest_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.datasuggest_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.datasuggest_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.datasuggest_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.datasuggest_filter_config.md - custom filtering function
@@ -175,4 +175,3 @@ webix.ui({
 - api/refs/ui.datasuggest_events.md
 - api/refs/ui.datasuggest_others.md
 
-@edition:pro

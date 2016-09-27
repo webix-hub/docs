@@ -5,7 +5,7 @@ Properties
 - api/link/ui.filemanager_animate_config.md - defines or disables view change animation.
 - api/link/ui.filemanager_borderless_config.md - used to hide the component borders
 - api/link/ui.filemanager_cols_config.md - array of views objects arranged horizontally
-- api/link/ui.filemanager_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.filemanager_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.filemanager_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.filemanager_data_config.md - JavaScript array containing data for the component
 - api/link/ui.filemanager_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
@@ -19,7 +19,7 @@ Properties
 - api/link/ui.filemanager_hidden_config.md - defines whether the view will be hidden initially
 - api/ui.filemanager_icons_config.md - defines icons for File Manager
 - api/link/ui.filemanager_id_config.md - the component ID
-- api/link/ui.filemanager_isolate_config.md - masks IDs of all inner element
+- api/link/ui.filemanager_isolate_config.md - masks IDs of all inner elements
 - api/link/ui.filemanager_margin_config.md - defines the space around elements (applies the specified value to all elements)
 - api/link/ui.filemanager_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.filemanager_maxwidth_config.md - sets the maximum width for the view

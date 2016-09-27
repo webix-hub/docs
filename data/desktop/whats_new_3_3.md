@@ -7,8 +7,7 @@ Version 3.3
 
 - *header* and *headerImage* properties were renamed to *docHeader* and *headerImage* in [PDF export](desktop/export_pdf.md#customizingexporttopdf) configuration. 
 Additionally, the *header* property was introduced to [tune the appearance](desktop/export_pdf.md#stylingtheexporteddata) of an exported table.
-- the last argument of [webix.event](api/_event.md) helper was modified. Now it awaits a context object with *master*, *id* and *capture* properties while before it indicated an object to which *this*
-keyword refers (master).
+- the last argument of [webix.event](api/_event.md) helper was modified. Now it awaits a context object with *bind*, *id* and *capture* properties while before it indicated an object to which *this* keyword refers (bind).
 - [collectValues](api/ui.datatable_collectvalues.md) method of the DataTable and TreeTable doesn't return an empty option any more.
 
 Check the [Migration Guide](migration.html#webix3233) for more details. 

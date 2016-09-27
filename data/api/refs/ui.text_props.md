@@ -10,7 +10,7 @@ Properties
 - api/ui.text_bottomlabel_config.md - sets a label under a control
 - api/ui.text_bottompadding_config.md - sets the bottom offset of the control input
 - api/link/ui.text_click_config.md - click action handler
-- api/link/ui.text_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.text_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.text_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.text_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.text_gravity_config.md - sets the view gravity (1 by default)
@@ -23,6 +23,7 @@ Properties
 - api/link/ui.text_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/ui.text_inputpadding_config.md - padding of text in the input
 - api/link/ui.text_inputwidth_config.md - the width of the input area, or a button's text value area.
+- api/ui.text_invalid_config.md - 
 - api/ui.text_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.text_label_config.md - the text label of the control
 - api/ui.text_labelalign_config.md - the alignment of a label towards its container
@@ -43,6 +44,7 @@ Properties
 - api/ui.text_required_config.md - marks field as required
 - api/ui.text_suggest_config.md - links suggest list to the input
 - api/link/ui.text_tabfocus_config.md - defines whether the control will be included in the tab navigation order
+- api/ui.text_text_config.md - 
 - api/link/ui.text_tooltip_config.md - tooltip for the input
 - api/link/ui.text_type_config.md - the type of the control
 - api/ui.text_validate_config.md - adds validation to the field
@@ -73,6 +75,7 @@ Properties
 - api/link/ui.text_inputheight_config.md
 - api/ui.text_inputpadding_config.md
 - api/link/ui.text_inputwidth_config.md
+- api/ui.text_invalid_config.md
 - api/ui.text_invalidmessage_config.md
 - api/link/ui.text_label_config.md
 - api/ui.text_labelalign_config.md
@@ -93,6 +96,7 @@ Properties
 - api/ui.text_required_config.md
 - api/ui.text_suggest_config.md
 - api/link/ui.text_tabfocus_config.md
+- api/ui.text_text_config.md
 - api/link/ui.text_tooltip_config.md
 - api/link/ui.text_type_config.md
 - api/ui.text_validate_config.md

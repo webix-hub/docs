@@ -22,11 +22,9 @@ webix.ui({
 @template:	api_config
 @descr:
 
+The property is *true* by default. The following keyboard commands are enabled:
+
 <table class="common_table" cellspacing="0" cellpadding="5" border="0">
-	<caption class="caption">
-		<strong>Table 1 </strong>
-		Keyboard commands
-	</caption>
 	<thead>
 	<tr>
 		<th>

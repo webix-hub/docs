@@ -106,7 +106,7 @@ var slider = webix.ui({
 - api/link/ui.slider_bottomlabel_config.md - sets a label under a control
 - api/link/ui.slider_bottompadding_config.md - sets the bottom offset of the control input
 - api/link/ui.slider_click_config.md - click action handler
-- api/link/ui.slider_container_config.md - an html container (or its id) where the component needs initializing
+- api/link/ui.slider_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.slider_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.slider_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.slider_gravity_config.md - sets the view gravity (1 by default)
@@ -118,6 +118,7 @@ var slider = webix.ui({
 - api/link/ui.slider_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.slider_inputpadding_config.md - padding of text in the input
 - api/link/ui.slider_inputwidth_config.md - the width of the input area, or a button's text value area.
+- api/link/ui.slider_invalid_config.md - 
 - api/link/ui.slider_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.slider_label_config.md - the text label of the control
 - api/link/ui.slider_labelalign_config.md - the alignment of a label towards its container
@@ -140,6 +141,7 @@ var slider = webix.ui({
 - api/ui.slider_step_config.md - step of slider
 - api/link/ui.slider_suggest_config.md - links suggest list to the input
 - api/link/ui.slider_tabfocus_config.md - defines whether the control will be included in the tab navigation order
+- api/link/ui.slider_text_config.md - 
 - api/ui.slider_title_config.md - text over slider bar
 - api/link/ui.slider_tooltip_config.md - tooltip for the input
 - api/link/ui.slider_validate_config.md - adds validation to the field
