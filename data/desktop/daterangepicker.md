@@ -38,7 +38,23 @@ You can initialize a DataRangePicker in the following way:
 - **stringResult** (boolean) - sets the data type of value returned by **getValue()/get Values()** methods. If true, it returns date as string. By default the property is *false* and the method returns date object;
 - **format** (string) - sets a date format to display in the daterangepicker field. By default it is "%Y-%m-%d". 
 
+##Time Selector
 
+You can set a particular time for the start and end dates of the range by clicking the clock below the calendars' grids.
+Note that the time selector will appear when you will click on the necessary date in a calendar.
 
+<img src="desktop/daterangepicker_timepicker.png"/>
+
+To enable the time selector, you should set the **timepicker** property with the *true* value in the DateRangePicker configuration:
+
+~~~js
+{ 
+	view:"daterangepicker", 
+    name:"default", 
+    width:500, 
+    label:"Default",
+	timepicker:true
+}
+~~~
 
 @edition:pro

@@ -30,20 +30,14 @@ For example:
 
 ###Setting styles for custom formatting
 
-To specify styles for custom cell format, you should make use of the **.webix_cell** class.
-You can define all the standard font settings there:
+To specify styles for custom cell format, you should define **webix_ssheet_format_[color]** class.
+For example:
 
 ~~~css
 <style>
-	.webix_cell .green{
-		color:green;
-		font-weight:bold;
-	}
-	.webix_cell .red{
-		color:red;
-	}
-	.webix_cell .blue{
-		color:blue;
+	.webix_ssheet_format_green{
+    	color: green !important;
+    	font-weight: bold !important;
 	}
 </style>
 ~~~
