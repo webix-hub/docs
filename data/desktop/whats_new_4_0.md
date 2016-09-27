@@ -7,6 +7,7 @@ Breaking Changes
 -------------------
 
 - The mechanism of loading PDF files into the [PDFViewer](desktop/pdfviewer.md) component is modified. From version 4.0 PDF Viewer uses Webix data loader combined with "binary" [proxy](desktop/server_proxy.md), which allows using standard loading events.
+- Tab navigation over Webix application is switched on by default. It cannot be controlled by UIManager any more. 
 
 Check the [Migration Guide](migration.md#webix3440) for more details.
 
@@ -39,7 +40,8 @@ Updates
 - [DataDrivers](helpers/data_drivers.md#methodsofdatadriver): public access to the properties returned by .getInfo() method
 - Better control over data move (drag-n-drop): [externalData](api/datamove_externaldata_config.md) property function receives the original data as a third parameter
 - moveSelection() method for [Calendar](api/ui.calendar_moveselection.md) and [Colorboard](api/ui.colorboard_moveselection.md)
-- new methods in the webix.html helper module: [removeStyle()](api/html_removestyle.md) and [triggerEvent()](api/html_triggerevent.md).  
+- new methods in the webix.html helper module: [removeStyle()](api/html_removestyle.md) and [triggerEvent()](api/html_triggerevent.md)
+- for data widgets, Calendar and Colorboard [navigation](api/keysnavigation_navigation_config.md) settings is enabled by default
 
 Fixes
 ------------------

@@ -4,6 +4,8 @@ Migration to latest Webix version
 Webix 3.4 -> 4.0
 -----------------
 
+###Loading files into PDF Viewer
+
 The mechanism of loading PDF files into the [PDFViewer](desktop/pdfviewer.md) component is modified. From 4.0 PDF Viewer uses Webix data loader combined with "binary" [proxy](desktop/server_proxy.md), 
 which allows using standard loading events.
 
@@ -13,6 +15,17 @@ webix.ui({
     url:"binary->files/WebixDocs.pdf"
 });
 ~~~
+
+###Tab navigation
+
+Tab navigation over Webix application is switched on by default. It cannot be controlled by [UIManager](desktop/uimanager.md) any more. 
+
+Earlier, it was possible to switch on tab navigation by `webix.UIManager.tabControl = true;` codeline while any widget could be excluded from 
+tab order by setting `tabFocus` to false. From Webix 4.0 this functionality deprecates. 
+
+From 4.0 all widgets and their active areas are in the [tab order](desktop/uimanager.md#globaltabnavigation) and cannot be excluded from it. It was done with 
+[accessibility](desktop/accessibility.md) in mind. 
+
 
 Webix 3.3 -> 3.4
 -----------------
