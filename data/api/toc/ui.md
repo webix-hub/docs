@@ -494,7 +494,7 @@ table.webixtoc td{
 - api/refs/ui.fieldset.md
 - api/refs/ui.filemanager.md
 - api/refs/ui.form.md
-- api/refs/ui.googlemap.md
+- api/refs/ui.google-map.md
 - api/refs/ui.gridsuggest.md
 - api/refs/ui.grouplist.md
 - api/refs/ui.headerlayout.md
