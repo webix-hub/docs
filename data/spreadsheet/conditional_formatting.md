@@ -18,7 +18,7 @@ To specify a condition for a cell you need to set 5 parameters:
 - the CSS style that will be applied to the cell if its value complies with the condition (see the details below)
 
 
-{{sample 65_spreadsheet/01_basic/09_conditional.html}}
+{{sample 65_spreadsheet/01_basic/08_conditional_styles.html}}
 
 ##How to store CSS styles used in conditions
 

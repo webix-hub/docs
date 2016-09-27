@@ -61,8 +61,6 @@ var isVisible = $$("ssheet").isColumnVisible(2);
 The method returns *true*, if the column is visible and *false* if it's hidden.
 
 
-{{sample 65_spreadsheet/01_basic/08_columns_rows.html}}
-
 
 Working with Rows
 -----------------
@@ -124,5 +122,4 @@ var isVisible = $$("ssheet").isRowVisible(2);
 The method returns *true*, if the row is visible and *false* if it's hidden.
 
 
-{{sample 65_spreadsheet/01_basic/08_columns_rows.html}}
 

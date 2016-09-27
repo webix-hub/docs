@@ -137,7 +137,7 @@ $$("ss1").setCellEditor(1,8,{ editor:"richselect", options:["One", "Two", "Three
 $$("ss1").setCellEditor(2,8,{ editor:"richselect", options:"B3:B7" });
 ~~~
 
-{{sample 65_spreadsheet/01_basic/14_dropdowns.html}}
+{{sample 65_spreadsheet/02_api/07_dropdowns.html}}
 
 
 Filtering Cells Values 

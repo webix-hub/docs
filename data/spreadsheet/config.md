@@ -17,8 +17,6 @@ webix.ui({
 });
 ~~~
 
-{{sample 65_spreadsheet/01_basic/08_cell_resize.html}}
-
 
 Enabling formula editor
 ------------------------------
