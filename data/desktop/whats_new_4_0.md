@@ -14,16 +14,16 @@ Check the [Migration Guide](migration.md#webix3440) for more details.
 New Features
 --------------------
 
-- [SpreadSheet](desktop/spreadsheet) complex widget to replace the previous one
+- [SpreadSheet](desktop/spreadsheet.md) complex widget to replace the previous one
 - [Accessibility](desktop/accessibility.md): 
 	- High contrast "contrast" skin {{sample 16_skins/15_contrast.html }}
 	- Specific markup for screen reading software
 	- Full [keyboard navigation](desktop/uimanager.md#builtinkeyboardevents)
 - Responsive features: 
-	- Flex layouts
-    - "Responsive" properties and events for all widgets	 
-    - Advanced options for widget alignment
-- Angular 2 compatibility as part of [Angular JS integration](desktop/angular.md)
+	- [Flex layouts](desktop/responsive_layout.md#flexlayout)
+    - [Extra API for responsive layouts and inner widgets](desktop/responsive_layout.md#responsivelayoutsapi)	 
+    - [Advanced options for widget alignment](desktop/alignment.md)
+- [Angular 2 compatibility](desktop/angular.md#angular2compatibility) as part of [Angular JS integration](desktop/angular.md)
 - [DateRangePicker](desktop/daterangepicker.md) and related controls ([DateRange](desktop/daterange.md), [DateRangeFilter](datatable/filtering.md#daterange))
 - [GoogleMap](desktop/googlemap.md) as data component
 

@@ -112,7 +112,6 @@ and two buttons:
 
 <h3 id="undo">Undo/Redo block</h3>
 
-<img src="spreadsheet/undo_redo.png">
 
 It includes two buttons:
 
@@ -121,7 +120,6 @@ It includes two buttons:
 
 <h3 id="font">Font block</h3> 
 
-<img src="spreadsheet/font.png">
 
 This block contains a large group of buttons intended for handling font and cell borders' settings:
 
@@ -137,7 +135,6 @@ This block contains a large group of buttons intended for handling font and cell
 
 <h3 id="align">Align block</h3>
 
-<img src="spreadsheet/align.png">
 
 Besides managing Horizontal and Vertical cell alignment, this block also includes means of text wrapping and merging cells' content:
 
@@ -148,7 +145,6 @@ Besides managing Horizontal and Vertical cell alignment, this block also include
 
 <h3 id="number">Number block</h3> 
 
-<img src="spreadsheet/format.png">
 
 This block contains the *format* select, which sets the format of cell content. The available formats are:
 

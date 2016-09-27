@@ -55,6 +55,14 @@ And then apply it in the custom format code section as follows:
 
 There is a set of colors with predefined css styles: *green*, *red*, *blue*, *orange*, *black*, *violet* and *magenta*
 
+###Specifying significant digits, decimal and thousands separators
+
+- **0** (zero) - the digit placeholder to display insignificant zeros, if a number has fewer digits than there are zeros in the format.
+For example, to display 4 as 4.0, use the format 0.0
+- **#** - the digit placeholder to display only significant numbers 
+(not to display extra zeros when the number has fewer digits than there are # symbols in the format)
+- **.** (period) - the digit placeholder to display the decimal point in a number
+- **,** (comma) - the digit placeholder to display the thousands separator in a number
 
 ###Applying Custom Format
 

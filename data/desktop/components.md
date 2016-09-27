@@ -343,37 +343,36 @@ Note that any event can be attached to any widget by referring to its ID.
 		<li><a href="desktop/combo.md"><img src="api/toc/combo.png"/> Combo</a></li>
 		<li><a href="desktop/counter.md"><img src="api/toc/counter.png"/> Counter</a></li>             
         <li><a href="desktop/daterangepicker.md"><img src="api/toc/daterangepicker.png"/> DateRangePicker</a></li>   
-        <li><a href="desktop/daterangesuggest.md"><img src="api/toc/daterangepicker.png" style="padding-right:11px;"/>DateRangeSuggest</a></li>
+         <li><a href="desktop/datepicker.md"><img src="api/toc/datepicker.png"/> DatePicker</a></li>
 	</ul>
 </div>
 
 <div class="controls_group">
-	<ul>
-        <li><a href="desktop/datepicker.md"><img src="api/toc/datepicker.png"/> DatePicker</a></li>
+	<ul>      
         <li><a href="desktop/datasuggest.md"><img src="api/toc/datasuggest.png"/> DataSuggest</a></li>
     	<li><a href="desktop/icon.md"><img src="api/toc/icon.png"/> Icon</a></li>
     	<li><a href="desktop/fieldset.md"> <img src="api/toc/fieldset.png"/> Fieldset</a></li>
         <li><a href="desktop/gridsuggest.md"><img src="api/toc/gridsuggest.png"/> GridSuggest</a></li>
 		<li><a href="desktop/label.md"><img src="api/toc/label.png"/> Label</a></li>
-        <li><a href="desktop/multicombo.md"><img src="api/toc/multicombo.png"/> Multicombo</a></li>       
+        <li><a href="desktop/multicombo.md"><img src="api/toc/multicombo.png"/> Multicombo</a></li>
+        <li><a href="desktop/multiselect.md"> <img src="api/toc/multiselect.png"/> Multiselect</a></li>
 	</ul>
 </div>
 
 <div class="controls_group">
-	<ul>
-    	<li><a href="desktop/multiselect.md"> <img src="api/toc/multiselect.png"/> Multiselect</a></li>
+	<ul>    	
         <li><a href="desktop/multitext.md"> <img src="api/toc/multitext.png"/> Multitext</a></li>
     	<li><a href="desktop/radio.md"> <img src="api/toc/radio.png"/> Radio</a></li>
         <li><a href="desktop/rangeslider.md"> <img src="api/toc/rangeslider.png"/> RangeSlider</a></li>
 		<li><a href="desktop/richselect.md"><img src="api/toc/richselect.png"/> Richselect</a></li>
     	<li><a href="desktop/search.md"><img src="api/toc/search.png"/> Search</a></li>
-    	<li><a href="desktop/select.md"><img src="api/toc/select.png"/> Select</a></li>		   			
+    	<li><a href="desktop/select.md"><img src="api/toc/select.png"/> Select</a></li>	
+        <li><a href="desktop/segmented.md"><img src="api/toc/segmented.png"/>Segmented</a></li>
 	</ul>
 </div>
 
 <div class="controls_group">
-	<ul>
-    	<li><a href="desktop/segmented.md"><img src="api/toc/segmented.png"/>Segmented</a></li>
+	<ul>    	
         <li><a href="desktop/slider.md"><img src="api/toc/slider.png"/>Slider</a></li>	
         <li><a href="desktop/suggest.md"><img src="api/toc/suggest.png" style="padding-right:4px;"/> Suggest</a></li>
     	<li><a href="desktop/tabbar.md"><img src="api/toc/tabbar.png"/>Tabbar</a></li>

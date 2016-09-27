@@ -184,32 +184,21 @@ $$("ssheet").ranges.add("MYRANGE","B2:C2");
 - to get the range of cells included into the named range, use the *ranges.getCode()* notation:
 
 ~~~js
-$$("ssheet").ranges.getCode("MYRANGE"); // -> "B2:C2"
+var code = $$("ssheet").ranges.getCode("MYRANGE"); // -> "B2:C2"
 ~~~
 
-- to get values of all cells included into the named range, make use of the *ranges.getData()* method:
+- to get values of all cells included into the named range, make use of the *ranges.getData()* method. The method returns an array with data values of cells:
 
 ~~~js
-$$("ssheet").ranges.getData("MYRANGE"); 
+var data = $$("ssheet").ranges.getData("MYRANGE"); // -> ["100", "200", "300"]
 ~~~
 
-The method returns an array with data values of cells. For example:
+- to get all the existing named ranges, apply the *ranges.getRanges()* method. The method returns an array with objects, each of which presents a named range:
 
 ~~~js
-
+var ranges = $$("ssheet").ranges.getRanges(); // -> [{name:"K",range:"C3:D3"},...]
 ~~~
 
-- to get all the existing named ranges, apply the *ranges.getRanges()* method:
-
-~~~js
-$$("ssheet").ranges.getRanges(); 
-~~~
-
-The method returns an array with objects, each of which presents a named range. For example:
-
-~~~js
-[{name:"K",range:"C3:D3"},{name:"M",range:"C4:E4"}]
-~~~
 
 - to remove an existing named range, use the *ranges.remove()* method:
 

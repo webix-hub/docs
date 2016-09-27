@@ -19,7 +19,7 @@ $$("ssheet").hideHeaders(true);
 $$("ssheet").hideHeaders(false);
 ~~~
 
-{sample 65_spreadsheet/02_api/04_borders_and_gridlines.html}}
+{{sample 65_spreadsheet/02_api/04_borders_and_gridlines.html}}
 
 ###Hiding Gridlines
 

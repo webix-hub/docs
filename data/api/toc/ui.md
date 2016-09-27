@@ -376,8 +376,8 @@ table.webixtoc td{
     </tr>
     <tr>
     	<td> <img src="api/toc/googlemap.png"/> </td>
-        <td> api/refs/ui.googlemap.md </td>
-        <td>a google map-based widget</td>
+        <td> api/refs/ui.google-map.md </td>
+        <td>a datastore-based widget for rendering geographical data with Google Maps</td>
     </tr>
     <tr>
     	<td> <img src="api/toc/daterange.png"/> </td>
