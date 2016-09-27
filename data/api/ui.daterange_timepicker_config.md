@@ -1,8 +1,6 @@
 timepicker
 =============
 
-@todo:check
-
 @short: enables clock displaying for time selection
 	
 

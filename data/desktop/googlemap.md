@@ -90,7 +90,7 @@ All data objects will be displayed as markers or heatmap, depending on the speci
 There are two required properties that should be specified in the point's data object:
 
 - lat - the latitude coordinate
-- lng - the lingitude coordinate
+- lng - the longitude coordinate
 
 All other available properties can be found in the [Google API Reference](https://developers.google.com/maps/documentation/javascript/reference).
 

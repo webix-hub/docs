@@ -2,9 +2,6 @@ getValue
 =============
 
 
-@todo:
-	check 
-
 @short:
 	returns the current value of the DateRange
 
@@ -13,12 +10,11 @@ getValue
 
 @returns:
 
-- range			object		a Date object that represents the currently selected date range
+- range			object		range object with 'start' and 'end' properties that represent the currently selected date range
 
 
 @example:
 webix.ui({
-    container:"box",
     view:"daterange",
     id:"daterange1"
 });
@@ -31,8 +27,11 @@ $$("daterange1").getValue();
 // end: Wed Nov 02 2016 00:00:00 GMT+0300 (Russia Standard Time)}
 
 @template:	api_method
+@relatedapi:
+- api/ui.daterange_value_config.md
+- api/ui.daterange_setvalue.md
 @descr:
-The returned Date object contains two properties:
+The returned range object contains two properties:
 
 - start - {Date object} a Date object for the start date
 - end - {Date object} a Date object for the end date

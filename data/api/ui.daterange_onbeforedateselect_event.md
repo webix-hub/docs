@@ -1,21 +1,26 @@
 onBeforeDateSelect
 =============
 
-@todo:
-	check 
-
 @short:
-	fires when a user clicks on the end date of the range, but before the range is selected 
+	fires before a user selects date in the DateRange
 
 @params:
-- date		Date object		the selected date object 
+- range			object			range object with 'start' and 'end' properties
 
 @example: 
 	
-$$('daterange1').attachEvent("onBeforeDateSelect", function(date){
+$$('daterange1').attachEvent("onBeforeDateSelect", function(range){
     //... some code here ... 
 });
 
 @template:	api_event
-
+@relatedapi:
+- api/ui.daterange_onafterdateselect_event.md
+- api/ui.daterange_onchange_event.md
+	
 @descr:
+
+The range object contains two properties:
+
+- start - {Date object} a Date object for the start date
+- end - {Date object} a Date object for the end date

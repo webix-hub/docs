@@ -1,13 +1,13 @@
 ariaLabel
 =============
 
-@todo:
-	check 
 
 @short:
 	sets a screen readable label for Barcode
 
 @type: string
+@default:barcode
+
 @example:
 webix.ui({
 	view:"barcode",
@@ -16,5 +16,7 @@ webix.ui({
 
 @template:	api_config
 @descr:
+
+@related:desktop/accessibility.md
 
 

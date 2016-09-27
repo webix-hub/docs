@@ -1,11 +1,9 @@
 onDateClear
 =============
 
-@todo:
-	check 
 
 @short:
-	fires on clicking the [Clear]() button
+	fires on clicking the 'Clear' button
 
 @params:
 

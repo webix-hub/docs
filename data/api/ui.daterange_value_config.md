@@ -1,9 +1,6 @@
 value
 =============
 
-@todo:
-	check 
-
 
 @short: sets the initially selected date range
 	
@@ -20,6 +17,12 @@ webix.ui({
 
 
 @template:	api_config
+@relatedapi:
+- api/ui.daterange_setvalue.md
+- api/ui.daterange_getvalue.md
 @descr:
-The value of the parameter is an object with properties which define the start and end dates of the range.
+The value object contains two properties:
+
+- start - {Date object} a Date object for the start date
+- end - {Date object} a Date object for the end date
 

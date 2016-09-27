@@ -1,13 +1,12 @@
 ariaLabel
 =============
 
-@todo:
-	check 
 
 @short:
 	sets a screen readable label for Organogram
 
 @type: string
+@default:organogram
 @example:
 webix.ui({
 	view:"organogram",
@@ -17,5 +16,8 @@ webix.ui({
 
 @template:	api_config
 @descr:
+
+@related:desktop/accessibility.md
+
 
 

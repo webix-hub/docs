@@ -1,9 +1,6 @@
 calendarCount
 =============
 
-@todo:
-	check 
-
 
 @short:sets the number of calendars to be rendered in the DateRange view
 	
@@ -14,7 +11,6 @@ calendarCount
 
 webix.ui({
 	view:"daterange",
-    ...
 	calendarCount:4
 });	
 

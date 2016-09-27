@@ -1,15 +1,10 @@
 calendarHeight
 =============
 
-@todo:
-	check 
-
-
-@short: sets the height of calendar area in the DateRange view in pixels
+@short: sets the height of each calendar in the DateRange view in pixels
 	
 
 @type: number
-@default:250
 
 @example:
 webix.ui({
@@ -21,5 +16,7 @@ webix.ui({
 
 @template:	api_config
 @descr:
+
+The default value depends on the currently used skin. 
 
 

@@ -1,9 +1,6 @@
 getButton
 =============
-
-
-@todo:
-	check 
+ 
 
 @short: gets the button object of a DateRangePicker popup
 	
@@ -18,7 +15,7 @@ daterangepicker.getPopup().getButton();
 @template:	api_method
 
 @descr:
-DateRangeSuggest object can be easily accessed from the control:
+DateRangeSuggest object can be easily accessed from the DateRangePicker control:
 
 ~~~js
 daterangepicker.getPopup();

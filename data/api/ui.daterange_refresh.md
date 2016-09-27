@@ -2,23 +2,19 @@ refresh
 =============
 
 
-@todo:
-	check 
-
 @short:
-	redraws the DateRange
+	redraws the DateRange value
 
 @params:
 
 
 @example:
 webix.ui({
-    container:"box",
-    view:"daterange1",
+    view:"daterange",
     id:"daterange1"
 });
-//changes the visibility of date range
-$$('daterange1').define("hidden", "true");
+
+$$('daterange1').define("value", {start:new Date(), end:new Date(2018, 2, 5)});
 $$('daterange1').refresh();
 
 @template:	api_method

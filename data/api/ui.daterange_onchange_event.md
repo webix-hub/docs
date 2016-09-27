@@ -1,20 +1,26 @@
-onChange
+onAfterDateSelect
 =============
 
-@todo:
-	check 
-
 @short:
-	fires when a user changes month, year or time in selector 
+	fires after date range has been changed in the DateRange
 
 @params:
-- date			Date object			the selected range
+- range			object			range object with 'start' and 'end' properties
 
-@example:
-$$("daterange1").attachEvent("onChange", function(date){
+@example: 
+	
+$$('daterange1').attachEvent("onChange", function(range){
     //... some code here ... 
 });
 
 @template:	api_event
+@relatedapi:
+- api/ui.daterange_onbeforedateselect_event.md
+- api/ui.daterange_onafterdateselect_event.md
+	
 @descr:
 
+The range object contains two properties:
+
+- start - {Date object} a Date object for the start date
+- end - {Date object} a Date object for the end date
