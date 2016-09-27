@@ -2,9 +2,6 @@ hideRow
 =============
 
 
-@todo:
-	check 
-
 @short:
 	hides a specified row in the sheet
 

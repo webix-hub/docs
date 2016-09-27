@@ -3,7 +3,7 @@ GoogleMap
 
 ##API Reference
 
-- [Methods, properties and events](api/refs/ui.googlemap.md)
+- [Methods, properties and events](api/refs/ui.google-map.md)
 - [Samples](http://docs.webix.com/samples/34_googlemap/index.html)
 
 
@@ -45,14 +45,21 @@ The following properties define the initial position of the map:
 - **center** - (array) sets the center of the map. It's an array of two elements (latitude and longitude) with comma delimiter.
 - **layerType** - (string) the type of map layer
 
-Working with GoogleMap
+There are two types of layer you can use for the GoogleMap widget:
+
+- "marker" - allows setting markers for particular points
+
+{{sample 34_googlemap/02_markers.html}}
+
+- "heatmap" - presents values by means of colors
+
+{{sample 34_googlemap/05_heatmap.html}}
+
+
+Loading Data into GoogleMap
 ------------------------
 
-To make use of all the possibilities of the map, you should look up the [Google API Reference](https://developers.google.com/maps/documentation/javascript/reference).
-
 Webix GoogleMap is a datastore-based widget, so you can work with it as with any other data widget.
-
-###Loading data
 
 Each map point is a separate data object. You can store a set of map points in a dataset and use all [common ways of data loading](desktop/data_loading.md) to load
 data into a map.
@@ -75,6 +82,9 @@ webix.ui({
 });
 ~~~
 
+All data objects will be displayed as markers or heatmap, depending on the specified type of layer.
+
+
 **Obligatory properties**
 
 There are two required properties that should be specified in the point's data object:
@@ -82,37 +92,32 @@ There are two required properties that should be specified in the point's data o
 - lat - the latitude coordinate
 - lng - the lingitude coordinate
 
+All other available properties can be found in the [Google API Reference](https://developers.google.com/maps/documentation/javascript/reference).
 
-**Setting the layer type**
 
-There are two types of layer you can use for the GoogleMap widget:
+Getting the GoogleMap object
+----------------------------
 
-- "marker" - allows setting markers for particular points
+To get the map object, use the following notation: **$$("map").map**.
 
-{{sample 34_googlemap/02_markers.html}}
+Rendering data on a map
+---------------------
 
-- "heatMap" - presents values by means of colors
-
-{{sample 34_googlemap/05_heatmap.html}}
-
-To apply one of the layer types, use the *layerType* config:
+The **drawData()** method draws data on a map. 
 
 ~~~js
-webix.ui({
-	//provide your own Google API key
-	key:"AIzaSyAi0oVNVO-e603aUY8SILdD4v9bVBkmiTg",
-   	view:"google-map",
-    id:"map",
-	zoom:6,
-	center:[ 48.724, 8.215 ];
-    layerType:"marker"  /*!*/
-});
+$$("map").drawData();
 ~~~
 
-The *marker* type is set by default.
+Working with Markers
+----------------------
+
+###Getting marker object
+
+To get the marker object, use the *getItem()* method: **$$("map").getItem(id).$marker**
 
 
-**Controlling marker visibility**
+###Controlling marker visibility
 
 You can set the *hidden* property for a marker (data object), to hide and show it, when needed.
 
@@ -120,9 +125,73 @@ You can set the *hidden* property for a marker (data object), to hide and show i
 { id:1, lat:48.782,  lng:9.177,  hidden:true}
 ~~~
 
-Other properties are optional. You can find all the available properties in the [Google API Reference](https://developers.google.com/maps/documentation/javascript/reference).
+###Showing a marker
 
-**Specifying heatmap configuration**
+To show a marker, use the **showItem()** method. It takes the marker's id as a parameter:
+
+~~~js
+$$("map").showItem(1).$marker;
+~~~
+
+###Catching a click on a marker
+
+To catch a click on a marker, use the **onItemClick** event:
+
+~~~js
+$$("map").attachEvent("onItemClick", function(id, marker){
+	// your code
+});
+~~~
+
+The handler function takes two parameters:
+
+- id - (number) the marker id
+- marker - (object)	- the marker object
+
+###Detecting drag-n-drop actions
+
+There are two DnD-related events. They are available for markers that have enabled *draggable* property in their configuration:
+
+~~~js
+{ id:1, lat:48.782,  lng:9.177,  draggable:true}
+~~~
+
+1) **onAfterDrop** event fires after drag-n-drop of a marker is finished. The handler function takes two parameters:
+
+- id - (number) the marker id
+- item - (object) the data object
+
+~~~js
+$$("map").attachEvent("onAfterDrop", function(id, item){
+	// your code
+});
+~~~
+
+2) **onDrag** event fires when drag-n-drop of a marker has started. 
+
+~~~js
+$$("map").attachEvent("onDrag", function(id, item){
+	// your code
+});
+~~~ 
+
+The handler function takes two parameters:
+
+- id - (number) the marker id
+- item - (object) the data object
+
+
+{{sample 34_googlemap/04_markers_draggable.html}}
+
+Working with Heatmap
+---------------------
+
+###Getting heatmap object
+
+To refer to the heatmap object, use: **$$("map").heatmap**.
+
+
+###Specifying heatmap configuration
 
 You can configure the heatmap displaying with the help of the *heatmapConfig* property.
 It is an object that can contain various Google API properties for heatmap, e.g. opacity 
@@ -143,79 +212,8 @@ webix.ui({
 });
 ~~~
 
-###Getting GoogleMap objects
-
-You can get the objects of a map, a marker and of a heatmap to work with them further.
-
-- to get the map object, use the following notation: **$$("map").map**
-- to get the marker object, use the *getItem()* method: **$$("map").getItem(id).$marker**
-- to refer to the heatmap object, use: **$$("map").heatmap**
-
-Webix API for GoogleMap
-----------------------
-
-###Events
-
-- **onItemClick**
-
-fires when a marker is clicked. 
-
-~~~js
-$$("map").attachEvent("onItemClick", function(id, marker){
-	// your code
-});
-~~~
-
-The handler function takes two parameters:
-
-- id - (number) the marker id
-- marker - (object)	- the marker object
-
-There are two DnD-related events. They are available for markers that have enabled *draggable* property in their configuration:
-
-~~~js
-{ id:1, lat:48.782,  lng:9.177,  draggable:true}
-~~~
-
-- **onAfterDrop**
-
-fires after drag-n-drop of a marker is finished. The handler function takes two parameters:
-
-- id - (number) the marker id
-- item - (object) the data object
-
-~~~js
-$$("map").attachEvent("onAfterDrop", function(id, item){
-	// your code
-});
-~~~
+All other available properties can be found in the [Google API Reference](https://developers.google.com/maps/documentation/javascript/reference).
 
 
-- **onDrag**
 
-fires when drag-n-drop of a marker has started. 
 
-~~~js
-$$("map").attachEvent("onDrag", function(id, item){
-	// your code
-});
-~~~ 
-
-The handler function takes two parameters:
-
-- id - (number) the marker id
-- item - (object) the data object
-
-###Methods
-
-- **showItem** - shows a marker by id
-
-~~~js
-$$("map").showItem(1).$marker;
-~~~
-
-- **drawData** - draws data after each operation with marker. 
-
-~~~js
-$$("map").drawData();
-~~~

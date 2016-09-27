@@ -1,8 +1,6 @@
 freezeRows
 =============
 
-@todo:
-	check 
 
 @short:
 	fixes the specified amount of rows "on the fly", starting from the very top one

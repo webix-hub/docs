@@ -2,8 +2,6 @@ setFormat
 =============
 
 
-@todo:
-	check 
 
 @short:
 	sets a custom format for a cell

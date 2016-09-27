@@ -2,8 +2,6 @@ showSheet
 =============
 
 
-@todo:
-	check
 
 @short:
 	shows a sheet by name

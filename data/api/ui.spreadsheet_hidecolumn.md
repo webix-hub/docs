@@ -2,8 +2,6 @@ hideColumn
 =============
 
 
-@todo:
-	check 
 
 @short:
 	hides a specified column in the sheet

@@ -1,8 +1,6 @@
 deleteColumn
 =============
 
-@todo:
-	check 
 
 @short:
 	deletes a column by id

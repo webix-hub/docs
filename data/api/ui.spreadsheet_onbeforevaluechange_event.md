@@ -1,8 +1,6 @@
 onBeforeValueChange
 =============
 
-@todo:
-	check 
 
 @short:
 fires before the value of a cell is changed
@@ -11,12 +9,12 @@ fires before the value of a cell is changed
 
 - row			number		the row id
 - column		number		the column id
-- new_val		string		the new value		
-- old_val		string		the old value
+- newValue		string		the new value		
+- oldValue		string		the old value
 
 @example:
 
-$$("ssheet").attachEvent("onBeforeValueChange",function(row,column,new_val,old_val){
+$$("ssheet").attachEvent("onBeforeValueChange",function(row,column,newValue,oldValue){
 	// your code here
     return true;
 });

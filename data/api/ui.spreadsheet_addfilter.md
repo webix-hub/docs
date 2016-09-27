@@ -2,9 +2,6 @@ addFilter
 =============
 
 
-@todo:
-	check 
-
 @short:
 	adds a filter into a cell
 

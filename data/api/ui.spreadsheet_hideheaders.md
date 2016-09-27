@@ -2,9 +2,6 @@ hideHeaders
 =============
 
 
-@todo:
-	check 
-
 @short:
 	hides all headers of rows and columns on the sheet
 

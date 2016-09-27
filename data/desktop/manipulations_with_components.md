@@ -12,4 +12,5 @@ Configuring Components
 - desktop/resizing.md
 - desktop/scroll_control.md
 - desktop/localization.md
+- desktop/alignment.md
 }}

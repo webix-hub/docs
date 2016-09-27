@@ -2,8 +2,6 @@ setCellEditor
 =============
 
 
-@todo:
-	check 
 
 @short:
 	creates an editor in a cell

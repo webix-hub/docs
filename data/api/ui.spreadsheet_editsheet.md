@@ -2,15 +2,13 @@ editSheet
 =============
 
 
-@todo:
-	check
 
 @short:
 	selects the sheet name for editing
 
 @params:
 
-- name		string		the sheet name
+- name		string		a sheet name
 
 
 

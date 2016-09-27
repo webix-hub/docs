@@ -1,12 +1,10 @@
 conditionStyle
 =============
 
-@todo:
-	check
 
 
 @short:
-	specifies a set of styles applied to a cell, if its value corresponds to a condition
+	specifies a set of conditional styles
 
 @type: array 
 @example:

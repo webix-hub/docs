@@ -1,8 +1,6 @@
 onStyleSet
 =============
 
-@todo:
-	check
 
 @short:
 	fires when a new style is set for a cell

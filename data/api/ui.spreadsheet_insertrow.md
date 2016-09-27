@@ -2,9 +2,6 @@ insertRow
 =============
 
 
-@todo:
-	check 
-
 
 @short:
 	inserts an empty row above the specified one

@@ -2,9 +2,6 @@ getActiveSheet
 =============
 
 
-@todo:
-	check 
-
 @short:
 	returns the name of the currently active sheet
 

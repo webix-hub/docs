@@ -1,9 +1,7 @@
 getSelectedRange
 =============
 
-
-@todo:
-	check 
+ 
 
 @short:
 	returns the range of selected cells

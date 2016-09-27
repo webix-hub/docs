@@ -2,9 +2,6 @@ setRangeValue
 =============
 
 
-@todo:
-	check 
-
 @short:
 	sets a value for the range
 

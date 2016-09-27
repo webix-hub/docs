@@ -9,10 +9,9 @@ DateRange
 
 ##Overview
 
-DateRange is a UI-related widget based on desktop/calendar.md.It allows the user to include the DateRange picker and Time picker into an application. 
+DateRange is a UI-related widget based on desktop/calendar.md and inherited from [Layout](desktop/layout.md). 
 
-This interactive tool will be very helpful when it is necessary to select a date range while filling in a form.
-You can also pick the time by using the timepicker at the bottom of the widget.
+This interactive tool includes several calendars and allows selecting a date range. You can also pick the time by using the timepicker at the bottom of the widget.
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/daterange.png">
 
@@ -40,7 +39,7 @@ webix.ui({
 
 - calendarCount - (number) sets the amount of calendars to be displayed
 - icons - (boolean) specifies whether the ["Today" and "Clear"](api/ui.datepicker_icons_config.md) icons will be shown
-- timepicker - (boolean) sets a time selector below the calendars grids
+- timepicker - (boolean) sets a time selector below the calendars' grids
 - value - (object) initial range that should be selected in the DateRange
 
 
@@ -68,10 +67,12 @@ $$("daterange1").getValue();
 // end: Wed Nov 02 2016 00:00:00 GMT+0300 (Russia Standard Time)}
 ~~~
 
-Configuring calendars
+Configuring DateRange Calendars
 -----------------
 
-common for all calendars 
+You can set specific configuration for all calendars of the DateRange widget. You should use the **calendar** property for this purpose.
+
+It is an object that can contain the available [Calendar properties](api/refs/ui.calendar_props.md): 
 
 ~~~js
 webix.ui({
@@ -84,14 +85,12 @@ webix.ui({
 ~~~
 
 
-
 ##DateRangePicker 
 
 DateRange can be shown by user request, e.g. when a user wants to pick a daterange and time to fill the form. 
 In this case, you can make use of the desktop/daterangepicker.md control. 
 
-Thus, you won't have to initialize DateRange, as it will appear when you click the daterangepicker icon. 
-The daterangepicker will be shown with the current date selected. 
+Thus, you won't have to initialize DateRange, as it will appear when you click the DateRangePicker icon. 
 
 <img src="desktop/daterange_picker.png"/>
 
@@ -99,7 +98,7 @@ The daterangepicker will be shown with the current date selected.
 webix.ui({
 	view:"form", 
 	elements:[
-    	{view:"daterangepicker",  name: "default",  label: 'Default' } 
+    	{view:"daterangepicker", name: "default", label: 'Default'} 
 	]
 });
 ~~~

@@ -2,21 +2,17 @@ clearRange
 =============
 
 
-@todo:
-	check 
-
 @short:
 	clears the range
 
 @params:
-
-- rangeStr		string		the range of cells
-- type
+- rangeStr		string		the range of cells (optional)
+- type			object 		defines clearing options: "styles", "options" (optional)
 
 
 
 @example:
-$$("ssheet").clearRange(rangeStr,type);
+$$("ssheet").clearRange("B2:D2", {styles: true});
 
 @template:	api_method
 @descr:

@@ -2,8 +2,6 @@ isCellLocked
 =============
 
 
-@todo:
-	check 
 
 @short:
 	checks whether the cell under question is locked

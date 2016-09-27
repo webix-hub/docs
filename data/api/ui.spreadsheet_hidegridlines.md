@@ -2,14 +2,12 @@ hideGridlines
 =============
 
 
-@todo:
-	check 
 
 @short:
 	hides the grid lines of the sheet
 
 @params:
-- state		boolean			true - to hide grid lines, otherwise - false
+- state		boolean			true - to hide gridlines, otherwise - false
 
 
 @example:

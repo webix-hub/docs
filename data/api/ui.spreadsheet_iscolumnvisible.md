@@ -2,8 +2,6 @@ isColumnVisible
 =============
 
 
-@todo:
-	check 
 
 @short:
 	checks whether the specified column is visible

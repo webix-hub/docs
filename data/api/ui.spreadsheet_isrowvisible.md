@@ -2,8 +2,6 @@ isRowVisible
 =============
 
 
-@todo:
-	check 
 
 @short:
 	checks whether the specified row is visible

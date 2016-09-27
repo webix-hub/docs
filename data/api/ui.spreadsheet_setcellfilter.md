@@ -2,8 +2,6 @@ setCellFilter
 =============
 
 
-@todo:
-	check 
 
 @short:
 	creates a select filter

@@ -2,9 +2,6 @@ addSparkline
 =============
 
 
-@todo:
-	check 
-
 @short:
 adds a sparkline into a cell
 

@@ -2,8 +2,6 @@ removeSheet
 =============
 
 
-@todo:
-	check 
 
 @short:
 	removes a sheet by name

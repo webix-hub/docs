@@ -2,9 +2,6 @@ addSheet
 =============
 
 
-@todo:
-	check 
-
 @short:
 	adds a new sheet into a SpreadSheet
 
@@ -15,6 +12,9 @@ addSheet
 
 
 @example:
+// get content of an active sheet
+var content = $$("ssheet").serialize();
+// copy to a new sheet
 $$("ssheet").addSheet(content);
 
 @template:	api_method

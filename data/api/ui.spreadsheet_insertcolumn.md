@@ -2,15 +2,13 @@ insertColumn
 =============
 
 
-@todo:
-	check 
 
 @short:
 	inserts an empty column to the left of the specified one
 
 @params:
 
-- columnId			number		the id of the column before whicn a new column will be inserted
+- columnId			number		the id of the column before which a new column will be inserted
 
 
 

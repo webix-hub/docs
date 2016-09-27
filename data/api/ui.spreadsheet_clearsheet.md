@@ -2,9 +2,6 @@ clearSheet
 =============
 
 
-@todo:
-	check 
-
 @short:
 	clears the content of the currently active sheet
 

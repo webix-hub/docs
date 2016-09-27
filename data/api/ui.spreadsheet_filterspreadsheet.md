@@ -2,9 +2,6 @@ filterSpreadSheet
 =============
 
 
-@todo:
-	check 
-
 @short:
 	invokes SpreadSheet filtering by all existing filters
 

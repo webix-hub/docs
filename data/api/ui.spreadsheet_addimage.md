@@ -2,9 +2,6 @@ addImage
 =============
 
 
-@todo:
-	check 
-
 @short:
 adds an image into a cell	
 

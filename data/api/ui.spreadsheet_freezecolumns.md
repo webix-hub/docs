@@ -1,9 +1,6 @@
 freezeColumns
 =============
-
-
-@todo:
-	check 
+ 
 
 @short:
 	fixes the specified amount of columns "on the fly", starting from the very left one

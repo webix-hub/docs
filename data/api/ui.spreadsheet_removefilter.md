@@ -2,8 +2,6 @@ removeFilter
 =============
 
 
-@todo:
-	check 
 
 @short:
 	removes filters from the sheet

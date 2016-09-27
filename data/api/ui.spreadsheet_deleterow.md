@@ -1,8 +1,6 @@
 deleteRow
 =============
 
-@todo:
-	check 
 
 @short:
 	deletes a row by id
