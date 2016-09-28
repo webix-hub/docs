@@ -10,7 +10,7 @@ GoogleMap
 Overview
 ----------
 
-GoogleMap allows working with geographical data with the help of Webix and Google Map API. This widget is based on desktop/view.md and 
+GoogleMap widget allows working with geographical data with the help of Webix and Google Map API. This widget is based on desktop/view.md and 
 inherits API from api/refs/datastore.md.
 
 <img src="desktop/googlemap_widget.png">
@@ -59,7 +59,7 @@ There are two types of layer you can use for the GoogleMap widget:
 Loading Data into GoogleMap
 ------------------------
 
-Webix GoogleMap is a datastore-based widget, so you can work with it as with any other data widget.
+GoogleMap widget is datastore-based, so you can work with it as with any other data widget.
 
 Each map point is a separate data object. You can store a set of map points in a dataset and use all [common ways of data loading](desktop/data_loading.md) to load
 data into a map.

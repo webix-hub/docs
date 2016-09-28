@@ -4,19 +4,6 @@ General Configuration Settings
 The SpreadSheet component can be easily configured according to your needs. 
 You can enable work with math operations, cells resizing, specify the exact number of rows and columns in the spreadsheet.
 
-Resizing cells
--------------------
-
-To enable resizing of cell, you need to set the api/ui.spreadsheet_resizecell_config.md property with the true value in the Spreadsheet configuration:
-
-~~~js
-webix.ui({
-	view:"spreadsheet",
-	data: base_data,
-	resizeCell:true
-});
-~~~
-
 
 Enabling formula editor
 ------------------------------

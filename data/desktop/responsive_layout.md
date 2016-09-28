@@ -120,20 +120,6 @@ webix.ui({ view:"flexlayout", cols:[... ]});
 
 FlexLayout can be used as a top level view, which is perfect for mobile apps.
 
-{{sample 01_layout/14_flex_top.html}}
-
-or, it can be placed inside of a fixed layout to provide a dashboard-like view
-
-{{sample 01_layout/16_flex_dashboard.html}}
-
-###Limitations
-
-- This feature will work only in latest Google, Chrome, Safari, and in IE11+.
-
-- FlexLayout must always define columns, there is no support for rows-based FlexLayout.
-
-- When placing a FlexLayout inside of other Webix structures, you need to use scrollview around the FlexLayout
-
 ~~~js
 webix.ui({
 	margin:10, padding:0, type:"wide",
@@ -152,6 +138,36 @@ webix.ui({
 	]
 });
 ~~~
+
+{{sample 01_layout/14_flex_top.html}}
+
+or, it can be placed inside of a fixed layout to provide a dashboard-like view
+
+{{sample 01_layout/16_flex_dashboard.html}}
+
+###Limitations
+
+- This feature will work only in latest Google, Chrome, Safari, and in IE11+.
+
+- FlexLayout must always define columns, there is no support for rows-based FlexLayout.
+
+- When placing a FlexLayout inside of other Webix structures, you need to use scrollview around the FlexLayout
+
+~~~js
+webix.ui({
+ cols:[
+  { view:"scrollview", body: {
+   view:"flexlayout",
+   cols:[
+    ...
+   ]
+  }},
+  { }
+ ]
+});
+~~~
+
+{{sample 01_layout/16_flex_dashboard.html}}
 
 ###FlexDataLayout
 
