@@ -14,16 +14,17 @@ config       object         a configuration object, the same as for the pager co
 @example:
 
 var pagerB = pagerA.clone({
-				container:"paging_here_too",
-				size:10,
-				group:5
-			});
+	container:"paging_here_too",
+	size:10,
+	group:5
+});
             
 @template:	api_method
 
 @related:
 	desktop/extend.md
-
+@relatedsample:
+25_pager/05_twoareas.html
 	
 @descr:
 

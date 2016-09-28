@@ -25,6 +25,7 @@ obj2.colors // -> ['red','pink','white','yellow']
 
 
 @relatedapi:api/_clone.md, api/_extend.md
+@related: desktop/extend.md#copying
 @template:	api_method
 @descr:
 

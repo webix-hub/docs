@@ -25,6 +25,9 @@ obj2.colors // -> ['red'] Warning! It's a shallow copy
 
 
 @relatedapi: api/_copy.md, api/_extend.md
+@related:
+desktop/extend.md#copying
+
 @template:	api_method
 @descr:
 

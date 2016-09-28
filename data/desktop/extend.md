@@ -17,9 +17,9 @@ var barA = { view:"toolbar", width:500, paddingY:2, cols:[
 
 ####Shallow Copying
 
-Shallow copying is implemented via the **clone();** method. A clone of an object is an empty object with a prototype reference to the original one.It doesn't 
-go  deep during copying and clones the structure of the source component. All the changes you make in the source object are reflected  
-in the target object. 
+Shallow copying is implemented via the **clone();** method. A clone of an object is an empty object with a prototype reference to the original one.
+
+It doesn't go deep during copying and clones the structure of the source component. All the changes you make in the source object are reflected in the target object. 
 
 ~~~js
 var barB = webix.clone(barA);
@@ -29,23 +29,6 @@ barA.width = 400;
 barA.width --> 400
 barB.width --> 400
 ~~~
-
-####Deep Copying
-
-During deep copying a physical copy of a parent object is being made. The copy is fully independent, so, if later on you make changes in the source object, the properties of the 
-target object remain  unchanged. 
-However, the method doesn't work for structures with inner loops.
-
-~~~js
-var barB = copy(barA);
-
-barA.width = 400;
-
-barA.width --> 400
-barB.width --> 500 // initial value from the source object
-~~~
-
-The method is useful when you'd like to create two independent instances of one and the same object on the page.
 
 This is how a new [pager](desktop/paging.md) is created on the base of the *pagerA* one. 
 
@@ -58,6 +41,25 @@ $$("pagerA").clone({
 ~~~
 
 {{sample 25_pager/05_twoareas.html}}
+
+
+####Deep Copying
+
+During deep copying, which is implemented via the **copy();** method, a physical copy of a parent object is being made. 
+
+The copy is fully independent. So,if later on you make changes in the source object, the properties of the target object remain unchanged. 
+However, the method doesn't work for structures with inner loops.
+
+~~~js
+var barB = webix.copy(barA);
+
+barA.width = 400;
+
+barA.width --> 400
+barB.width --> 500 // initial value from the source object
+~~~
+
+The method is useful when you'd like to create two independent instances of one and the same object on the page.
 
 ##Inheritance
 

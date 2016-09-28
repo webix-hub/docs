@@ -80,11 +80,22 @@ webix.ui({
             label:"Delete",
             width:120
         },
+        editButton:{
+			id:"editButtonId",
+			view:"button",
+			label:"Edit",
+			width:80		
+		},
         markCheckbox:{
-        	view:"checkbox", ...
+        	view:"checkbox", 
+            ...
         }
     },
-    template: "#title#<div>{common.markCheckbox()}{common.deleteButton()}</div>"
+  template: "<div class='rank'>#rank#.</div>"+
+  			"<div class='title'>#title#<br>#year# year</div>"+
+  			"<div class='buttons'>{common.deleteButton()}</div>"+
+  			"<div class='buttons'>{common.editButton()}</div>"+
+			"<div class='checkbox'>{common.markCheckbox()}</div>"
 });
 ~~~
 
