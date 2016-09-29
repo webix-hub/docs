@@ -36,7 +36,7 @@ var spreadsheet = webix.ui({
 - api/ui.spreadsheet_addimage.md - adds an image into a cell
 - api/ui.spreadsheet_addsheet.md - adds a new sheet into a SpreadSheet
 - api/ui.spreadsheet_addsparkline.md - adds a sparkline into a cell
-- api/ui.spreadsheet_addstyle.md - 
+- api/ui.spreadsheet_addstyle.md - creates a new style
 - api/link/ui.spreadsheet_addview.md - add new view to layout-like component
 - api/link/ui.spreadsheet_adjust.md - adjusts the component to the size of the parent HTML container
 - api/ui.spreadsheet_alert.md - creates an alert box
@@ -113,7 +113,7 @@ var spreadsheet = webix.ui({
 - api/link/ui.spreadsheet_show.md - makes the component visible
 - api/link/ui.spreadsheet_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
 - api/ui.spreadsheet_showsheet.md - shows a sheet by name
-- api/ui.spreadsheet_sortrange.md - 
+- api/ui.spreadsheet_sortrange.md - sorts a range of cells
 - api/ui.spreadsheet_splitcell.md - splits the cells' span that was made by merging several cells
 - api/link/ui.spreadsheet_ui.md - allows creating new ui, the id of which will be locked in the parent id space
 - api/link/ui.spreadsheet_unbind.md - breaks "bind" link
@@ -152,7 +152,7 @@ var spreadsheet = webix.ui({
 - api/ui.spreadsheet_buttons_config.md - contains the names of buttons blocks with arrays of buttons' names
 - api/link/ui.spreadsheet_cols_config.md - array of views objects arranged horizontally
 - api/ui.spreadsheet_columncount_config.md - the number of columns in the SpreadSheet
-- api/ui.spreadsheet_conditionstyle_config.md - specifies a set of styles applied to a cell, if its value corresponds to a condition
+- api/ui.spreadsheet_conditionstyle_config.md - specifies a set of conditional styles
 - api/link/ui.spreadsheet_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.spreadsheet_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.spreadsheet_data_config.md - JavaScript array containing data for the component

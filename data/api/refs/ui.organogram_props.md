@@ -3,7 +3,7 @@ Properties
 
 {{api
 - api/link/ui.organogram_animate_config.md - defines or disables view change animation.
-- api/ui.organogram_arialabel_config.md - 
+- api/ui.organogram_arialabel_config.md - sets a screen readable label for Organogram
 - api/ui.organogram_autoheight_config.md - adjusts Organogram to the parent container size vertically
 - api/ui.organogram_autowidth_config.md - adjusts Organogram to the parent container size horizontally
 - api/link/ui.organogram_borderless_config.md - used to hide the component borders

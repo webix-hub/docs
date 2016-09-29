@@ -58,7 +58,7 @@ var daterange = webix.ui({
 - api/link/ui.daterange_isvisible.md - checks whether the view is visible
 - api/link/ui.daterange_mapevent.md - routes events from one object to another
 - api/link/ui.daterange_reconstruct.md - rebuilds the layout
-- api/ui.daterange_refresh.md - redraws the DateRange
+- api/ui.daterange_refresh.md - redraws the DateRange value
 - api/link/ui.daterange_removeview.md - removes view from layout-like component
 - api/link/ui.daterange_resize.md - adjusts the view to a new size
 - api/link/ui.daterange_resizechildren.md - resizes all children of the calling component
@@ -74,13 +74,13 @@ var daterange = webix.ui({
 
 
 {{api
-- api/ui.daterange_onafterdateselect_event.md - fires after a user has selected a date range
-- api/ui.daterange_onbeforedateselect_event.md - fires when a user clicks on the end date of the range, but before the range is selected
+- api/ui.daterange_onafterdateselect_event.md - fires after date range has been changed in the DateRange
+- api/ui.daterange_onbeforedateselect_event.md - fires before a user selects date in the DateRange
 - api/link/ui.daterange_onbindrequest_event.md - fires when the component is ready to receive data from the master component
-- api/ui.daterange_onchange_event.md - fires when a user changes month, year or time in selector
-- api/ui.daterange_ondateclear_event.md - fires on clicking the [Clear]() button
+- api/ui.daterange_onchange_event.md - 
+- api/ui.daterange_ondateclear_event.md - fires on clicking the 'Clear' button
 - api/link/ui.daterange_ondestruct_event.md - occurs when component destroyed
-- api/ui.daterange_ontodayset_event.md - fires on clicking the Today button
+- api/ui.daterange_ontodayset_event.md - fires on clicking the 'Today' button
 }}
 
 
@@ -91,7 +91,7 @@ var daterange = webix.ui({
 - api/link/ui.daterange_borderless_config.md - used to hide the component borders
 - api/ui.daterange_button_config.md - sets a button at the bottom of DateRange
 - api/ui.daterange_calendarcount_config.md - sets the number of calendars to be rendered in the DateRange view
-- api/ui.daterange_calendarheight_config.md - sets the height of calendar area in the DateRange view in pixels
+- api/ui.daterange_calendarheight_config.md - sets the height of each calendar in the DateRange view in pixels
 - api/link/ui.daterange_cols_config.md - array of views objects arranged horizontally
 - api/link/ui.daterange_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.daterange_css_config.md - the name of a css class that will be applied to the view container
@@ -99,7 +99,7 @@ var daterange = webix.ui({
 - api/link/ui.daterange_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.daterange_height_config.md - sets the height of the component
 - api/link/ui.daterange_hidden_config.md - defines whether the view will be hidden initially
-- api/ui.daterange_icons_config.md - sets an array of icons in the DateRange or hides them
+- api/ui.daterange_icons_config.md - sets visibility of 'Today/Clear' icons in the DateRange
 - api/link/ui.daterange_id_config.md - the component ID
 - api/link/ui.daterange_isolate_config.md - masks IDs of all inner elements
 - api/link/ui.daterange_margin_config.md - defines the space around elements (applies the specified value to all elements)

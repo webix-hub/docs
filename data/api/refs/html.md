@@ -30,10 +30,10 @@ html
 - api/html_preventevent.md - stops the event processing and cancels its default action (called in some event handler)
 - api/html_remove.md - removes an HTML element from DOM
 - api/html_removecss.md - removes a CSS class from a DOM node
-- api/html_removestyle.md - 
+- api/html_removestyle.md - removes a CSS rule from the page
 - api/html_setselectionrange.md - sets selection for a node
 - api/html_stopevent.md - stops processing of an event beyond the current target (called in some event handler)
-- api/html_triggerevent.md - 
+- api/html_triggerevent.md - creates and triggers native DOM event
 }}
 
 

@@ -5,19 +5,6 @@ ui.baselayout
 
 The component serves as the base class that defines properties, methods, and events common for all layout-based components. Not intended for direct use. If you need to create a layout, please use (ui.layout)[api/refs/ui.layout.md] or its descendants. 
 
-### Constructor
-
-~~~js
-	var baselayout = webix.ui({
-		view:"baselayout", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_baselayout({
-		...config options goes here..
-	});
-~~~
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>

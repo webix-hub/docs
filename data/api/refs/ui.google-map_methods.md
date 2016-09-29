@@ -25,7 +25,7 @@ Methods
 - api/link/ui.google-map_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.google-map_getitem.md - gets the object of the data item with the specified id
 - api/link/ui.google-map_getlastid.md - returns the id of the last item
-- api/ui.google-map_getmap.md - 
+- api/ui.google-map_getmap.md - returns a promise which is resolved after a map is rendered
 - api/link/ui.google-map_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.google-map_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.google-map_getparentview.md - returns the parent view of the component
@@ -41,7 +41,7 @@ Methods
 - api/link/ui.google-map_parse.md - loads data to the component from an inline data source
 - api/link/ui.google-map_refresh.md - repaints the whole view or a certain item
 - api/link/ui.google-map_remove.md - removes the specified item/items from datastore
-- api/ui.google-map_render.md - 
+- api/ui.google-map_render.md - renders a map
 - api/link/ui.google-map_resize.md - adjusts the view to a new size
 - api/link/ui.google-map_serialize.md - serializes data to a JSON object
 - api/link/ui.google-map_show.md - makes the component visible

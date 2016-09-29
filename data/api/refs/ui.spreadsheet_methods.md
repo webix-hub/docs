@@ -6,7 +6,7 @@ Methods
 - api/ui.spreadsheet_addimage.md - adds an image into a cell
 - api/ui.spreadsheet_addsheet.md - adds a new sheet into a SpreadSheet
 - api/ui.spreadsheet_addsparkline.md - adds a sparkline into a cell
-- api/ui.spreadsheet_addstyle.md - 
+- api/ui.spreadsheet_addstyle.md - creates a new style
 - api/link/ui.spreadsheet_addview.md - add new view to layout-like component
 - api/link/ui.spreadsheet_adjust.md - adjusts the component to the size of the parent HTML container
 - api/ui.spreadsheet_alert.md - creates an alert box
@@ -83,7 +83,7 @@ Methods
 - api/link/ui.spreadsheet_show.md - makes the component visible
 - api/link/ui.spreadsheet_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
 - api/ui.spreadsheet_showsheet.md - shows a sheet by name
-- api/ui.spreadsheet_sortrange.md - 
+- api/ui.spreadsheet_sortrange.md - sorts a range of cells
 - api/ui.spreadsheet_splitcell.md - splits the cells' span that was made by merging several cells
 - api/link/ui.spreadsheet_ui.md - allows creating new ui, the id of which will be locked in the parent id space
 - api/link/ui.spreadsheet_unbind.md - breaks "bind" link

@@ -442,7 +442,7 @@ table.webixtoc td{
 }}
 
 
-<div class='h2'>Other</div>
+<div class='h2'>Others</div>
 
 {{api
 - api/toc/ui_mixins.md - building blocks for existing and new components

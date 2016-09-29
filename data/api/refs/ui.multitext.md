@@ -122,7 +122,7 @@ var multitext = webix.ui({
 - api/link/ui.multitext_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.multitext_inputpadding_config.md - padding of text in the input
 - api/link/ui.multitext_inputwidth_config.md - the width of the input area, or a button's text value area.
-- api/link/ui.multitext_invalid_config.md - 
+- api/link/ui.multitext_invalid_config.md - specifies, whether the control is valid/invalid after validation
 - api/link/ui.multitext_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.multitext_label_config.md - the text label of the control
 - api/link/ui.multitext_labelalign_config.md - the alignment of a label towards its container
@@ -144,7 +144,6 @@ var multitext = webix.ui({
 - api/ui.multitext_subconfig_config.md - defines settings for extra text fields
 - api/link/ui.multitext_suggest_config.md - links suggest list to the input
 - api/link/ui.multitext_tabfocus_config.md - defines whether the control will be included in the tab navigation order
-- api/link/ui.multitext_text_config.md - 
 - api/link/ui.multitext_tooltip_config.md - tooltip for the input
 - api/link/ui.multitext_validate_config.md - adds validation to the field
 - api/link/ui.multitext_validateevent_config.md - on which event validation fires

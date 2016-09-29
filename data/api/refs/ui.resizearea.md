@@ -6,19 +6,7 @@ ui.resizearea
 
 Not purposed for direct initialization. Check desktop/resizearea.md article for more detailed description.
 
-### Constructor
 
-~~~js
-	var resizearea = webix.ui({
-		view:"resizearea", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_resizearea({
-		...config options goes here..
-	});
-~~~
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/settings.md">Settings</a></div>

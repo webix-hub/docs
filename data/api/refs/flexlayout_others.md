@@ -2,7 +2,7 @@ Others
 =======
 
 {{api
-- api/flexlayout_$getsize_other.md - 
+- api/flexlayout_$getsize_other.md - returns the current size of the component
 }}
 
 @index:

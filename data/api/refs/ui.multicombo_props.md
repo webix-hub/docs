@@ -23,7 +23,7 @@ Properties
 - api/link/ui.multicombo_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.multicombo_inputpadding_config.md - padding of text in the input
 - api/link/ui.multicombo_inputwidth_config.md - the width of the input area, or a button's text value area.
-- api/link/ui.multicombo_invalid_config.md - 
+- api/link/ui.multicombo_invalid_config.md - specifies, whether the control is valid/invalid after validation
 - api/link/ui.multicombo_invalidmessage_config.md - sets the text of a validation message
 - api/ui.multicombo_keeptext_config.md - defines whether the entered text should be kept in the input after an option is selected
 - api/link/ui.multicombo_label_config.md - the text label of the control

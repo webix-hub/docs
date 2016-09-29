@@ -23,7 +23,7 @@ Methods
 - api/link/ui.colorboard_isenabled.md - checks whether the view is enabled
 - api/link/ui.colorboard_isvisible.md - checks whether the view is visible
 - api/link/ui.colorboard_mapevent.md - routes events from one object to another
-- api/ui.colorboard_moveselection.md - 
+- api/ui.colorboard_moveselection.md - moves cell selection in the specified direction
 - api/ui.colorboard_refresh.md - repaints the component
 - api/ui.colorboard_render.md - renders the specified item or the whole component
 - api/link/ui.colorboard_resize.md - adjusts the view to a new size

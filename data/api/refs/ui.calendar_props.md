@@ -33,7 +33,7 @@ Properties
 - api/ui.calendar_minutestep_config.md - step of time selector
 - api/ui.calendar_monthselect_config.md - enables the ability to select month by clicking the "month" panel
 - api/link/ui.calendar_mouseeventdelay_config.md - the delay between a real mouse action and invoking the related events
-- api/ui.calendar_navigation_config.md - enables/disables month navigation in header - the possibility to change months (true)
+- api/ui.calendar_navigation_config.md - enables  navigation
 - api/link/ui.calendar_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.calendar_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
 - api/link/ui.calendar_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>

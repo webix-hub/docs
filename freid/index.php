@@ -37,8 +37,7 @@
 				"webix.ui.proto"		: true,
 				"webix.ui.vscroll"	: true,
 				"webix.ui.view"		: true,
-				"webix.ui.resizearea" : true,
-				"webix.ui.checksuggest" : true
+				"webix.ui.resizearea" : true				
 			};
 			Freid.analize();
 		});

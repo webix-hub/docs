@@ -61,7 +61,7 @@ webix.ui({
 - api/link/ui.daterangesuggest_getmastervalue.md - returns current value of master control
 - api/link/ui.daterangesuggest_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.daterangesuggest_getparentview.md - returns the parent view of the component
-- api/ui.daterangesuggest_getrange.md - 
+- api/ui.daterangesuggest_getrange.md - gets the daterange object of a DateRangePicker popup
 - api/link/ui.daterangesuggest_getsuggestion.md - returns id of top suggestion from the suggest list
 - api/link/ui.daterangesuggest_gettopparentview.md - returns top parent view
 - api/link/ui.daterangesuggest_getvalue.md - gets the ID of a selected item in the option list

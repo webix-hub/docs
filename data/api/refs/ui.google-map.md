@@ -54,7 +54,7 @@ var googlemap = webix.ui({
 - api/link/ui.google-map_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.google-map_getitem.md - gets the object of the data item with the specified id
 - api/link/ui.google-map_getlastid.md - returns the id of the last item
-- api/ui.google-map_getmap.md - 
+- api/ui.google-map_getmap.md - returns a promise which is resolved after a map is rendered
 - api/link/ui.google-map_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.google-map_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.google-map_getparentview.md - returns the parent view of the component
@@ -70,7 +70,7 @@ var googlemap = webix.ui({
 - api/link/ui.google-map_parse.md - loads data to the component from an inline data source
 - api/link/ui.google-map_refresh.md - repaints the whole view or a certain item
 - api/link/ui.google-map_remove.md - removes the specified item/items from datastore
-- api/ui.google-map_render.md - 
+- api/ui.google-map_render.md - renders a map
 - api/link/ui.google-map_resize.md - adjusts the view to a new size
 - api/link/ui.google-map_serialize.md - serializes data to a JSON object
 - api/link/ui.google-map_show.md - makes the component visible
@@ -119,7 +119,7 @@ var googlemap = webix.ui({
 {{api
 - api/link/ui.google-map_animate_config.md - defines or disables view change animation.
 - api/link/ui.google-map_borderless_config.md - used to hide the component borders
-- api/ui.google-map_center_config.md - 
+- api/ui.google-map_center_config.md - sets the center of the map
 - api/link/ui.google-map_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.google-map_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.google-map_data_config.md - JavaScript array containing data for the component
@@ -131,8 +131,8 @@ var googlemap = webix.ui({
 - api/link/ui.google-map_height_config.md - sets the height of the component
 - api/link/ui.google-map_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.google-map_id_config.md - the component ID
-- api/ui.google-map_layertype_config.md - 
-- api/ui.google-map_maptype_config.md - 
+- api/ui.google-map_layertype_config.md - sets the type of a map layer
+- api/ui.google-map_maptype_config.md - sets the Google map type
 - api/link/ui.google-map_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.google-map_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.google-map_minheight_config.md - sets the minimal height for the view
@@ -144,7 +144,7 @@ var googlemap = webix.ui({
 - api/link/ui.google-map_scheme_config.md - defines schemes for data processing
 - api/link/ui.google-map_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.google-map_width_config.md - sets the width of the component
-- api/ui.google-map_zoom_config.md - 
+- api/ui.google-map_zoom_config.md - defines the resolution of map objects displaying
 }}
 
 
@@ -157,7 +157,7 @@ var googlemap = webix.ui({
 {{api
 - api/link/ui.google-map_$getsize_other.md - returns the current size of the component
 - api/link/ui.google-map_$height_other.md - current height of the view
-- api/ui.google-map_$onload_other.md - 
+- api/ui.google-map_$onload_other.md - default action on data loading
 - api/link/ui.google-map_$scope_other.md - scope for resolving event and method names
 - api/link/ui.google-map_$setsize_other.md - sets the component size
 - api/link/ui.google-map_$skin_other.md - the method which will be called when skin is defined

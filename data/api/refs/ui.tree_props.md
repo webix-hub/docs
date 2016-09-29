@@ -19,7 +19,6 @@ Properties
 - api/link/ui.tree_height_config.md - sets the height of the component
 - api/link/ui.tree_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.tree_id_config.md - the component ID
-- api/ui.tree_layout_config.md - 
 - api/link/ui.tree_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.tree_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.tree_minheight_config.md - sets the minimal height for the view
@@ -47,7 +46,6 @@ Properties
 - api/link/ui.tree_type_config.md - object that specifies items presentation
 - api/link/ui.tree_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.tree_width_config.md - sets the width of the component
-- api/ui.tree_xcount_config.md - 
 }}
 
 @index:
@@ -68,7 +66,6 @@ Properties
 - api/link/ui.tree_height_config.md
 - api/link/ui.tree_hidden_config.md
 - api/link/ui.tree_id_config.md
-- api/ui.tree_layout_config.md
 - api/link/ui.tree_maxheight_config.md
 - api/link/ui.tree_maxwidth_config.md
 - api/link/ui.tree_minheight_config.md
@@ -96,5 +93,4 @@ Properties
 - api/link/ui.tree_type_config.md
 - api/link/ui.tree_url_config.md
 - api/link/ui.tree_width_config.md
-- api/ui.tree_xcount_config.md
 

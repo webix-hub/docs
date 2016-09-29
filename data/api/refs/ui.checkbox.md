@@ -135,7 +135,6 @@ var checkbox = webix.ui({
 - api/link/ui.checkbox_required_config.md - marks field as required
 - api/link/ui.checkbox_suggest_config.md - links suggest list to the input
 - api/link/ui.checkbox_tabfocus_config.md - defines whether the control will be included in the tab navigation order
-- api/link/ui.checkbox_text_config.md - 
 - api/link/ui.checkbox_tooltip_config.md - tooltip for the input
 - api/ui.checkbox_uncheckvalue_config.md - result of getValue for unchecked checkbox
 - api/link/ui.checkbox_validate_config.md - adds validation to the field

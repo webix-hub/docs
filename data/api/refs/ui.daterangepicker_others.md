@@ -2,7 +2,7 @@ Others
 =======
 
 {{api
-- api/ui.daterangepicker_$cssname_other.md - 
+- api/ui.daterangepicker_$cssname_other.md - name of the widget which css you want to inherit for a custom widget
 - api/link/ui.daterangepicker_$getsize_other.md - returns the current size of the component
 - api/link/ui.daterangepicker_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.daterangepicker_$height_other.md - current height of the view

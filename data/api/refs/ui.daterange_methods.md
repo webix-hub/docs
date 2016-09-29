@@ -26,7 +26,7 @@ Methods
 - api/link/ui.daterange_isvisible.md - checks whether the view is visible
 - api/link/ui.daterange_mapevent.md - routes events from one object to another
 - api/link/ui.daterange_reconstruct.md - rebuilds the layout
-- api/ui.daterange_refresh.md - redraws the DateRange
+- api/ui.daterange_refresh.md - redraws the DateRange value
 - api/link/ui.daterange_removeview.md - removes view from layout-like component
 - api/link/ui.daterange_resize.md - adjusts the view to a new size
 - api/link/ui.daterange_resizechildren.md - resizes all children of the calling component

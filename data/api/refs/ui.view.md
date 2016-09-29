@@ -5,19 +5,6 @@ ui.view
 
 The component serves as the base class that defines properties, methods, and events common for not layout-based UI components. Can be used as the placeholder in a layout.  Check [view](desktop/view.md) documentation for more detailed description.
 
-### Constructor
-
-~~~js
-	var view = webix.ui({
-		view:"view", 
-		container:"mydiv", 
-		...config options goes here..
-	})
-	//or, in case of jQuery
-	$("#mydiv").webix_view({
-		...config options goes here..
-	});
-~~~
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>

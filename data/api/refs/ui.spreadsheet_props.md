@@ -7,7 +7,7 @@ Properties
 - api/ui.spreadsheet_buttons_config.md - contains the names of buttons blocks with arrays of buttons' names
 - api/link/ui.spreadsheet_cols_config.md - array of views objects arranged horizontally
 - api/ui.spreadsheet_columncount_config.md - the number of columns in the SpreadSheet
-- api/ui.spreadsheet_conditionstyle_config.md - specifies a set of styles applied to a cell, if its value corresponds to a condition
+- api/ui.spreadsheet_conditionstyle_config.md - specifies a set of conditional styles
 - api/link/ui.spreadsheet_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.spreadsheet_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.spreadsheet_data_config.md - JavaScript array containing data for the component

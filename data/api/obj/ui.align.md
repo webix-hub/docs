@@ -1,4 +1,2 @@
 
-dummy stub
-
-{{todo replace with real description }}
+{{memo Implements flexible alignment of the widgets' content}}

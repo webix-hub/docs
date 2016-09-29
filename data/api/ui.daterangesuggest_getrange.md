@@ -1,4 +1,4 @@
-getButton
+getRange
 =============
  
 
@@ -9,7 +9,7 @@ getButton
 
 @example:
 
-daterangepicker.getPopup().geRange();
+daterangepicker.getPopup().getRange();
 
 
 @template:	api_method

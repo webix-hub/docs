@@ -23,7 +23,7 @@ Properties
 - api/link/ui.richselect_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/link/ui.richselect_inputpadding_config.md - padding of text in the input
 - api/link/ui.richselect_inputwidth_config.md - the width of the input area, or a button's text value area.
-- api/link/ui.richselect_invalid_config.md - 
+- api/link/ui.richselect_invalid_config.md - specifies, whether the control is valid/invalid after validation
 - api/link/ui.richselect_invalidmessage_config.md - sets the text of a validation message
 - api/link/ui.richselect_label_config.md - the text label of the control
 - api/link/ui.richselect_labelalign_config.md - the alignment of a label towards its container
@@ -45,7 +45,7 @@ Properties
 - api/link/ui.richselect_required_config.md - marks field as required
 - api/link/ui.richselect_suggest_config.md - links suggest list to the input
 - api/link/ui.richselect_tabfocus_config.md - defines whether the control will be included in the tab navigation order
-- api/link/ui.richselect_text_config.md - 
+- api/ui.richselect_text_config.md - 
 - api/link/ui.richselect_tooltip_config.md - tooltip for the input
 - api/link/ui.richselect_validate_config.md - adds validation to the field
 - api/link/ui.richselect_validateevent_config.md - on which event validation fires
@@ -97,7 +97,7 @@ Properties
 - api/link/ui.richselect_required_config.md
 - api/link/ui.richselect_suggest_config.md
 - api/link/ui.richselect_tabfocus_config.md
-- api/link/ui.richselect_text_config.md
+- api/ui.richselect_text_config.md
 - api/link/ui.richselect_tooltip_config.md
 - api/link/ui.richselect_validate_config.md
 - api/link/ui.richselect_validateevent_config.md

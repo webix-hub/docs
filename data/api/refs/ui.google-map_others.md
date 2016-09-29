@@ -4,7 +4,7 @@ Others
 {{api
 - api/link/ui.google-map_$getsize_other.md - returns the current size of the component
 - api/link/ui.google-map_$height_other.md - current height of the view
-- api/ui.google-map_$onload_other.md - 
+- api/ui.google-map_$onload_other.md - default action on data loading
 - api/link/ui.google-map_$scope_other.md - scope for resolving event and method names
 - api/link/ui.google-map_$setsize_other.md - sets the component size
 - api/link/ui.google-map_$skin_other.md - the method which will be called when skin is defined

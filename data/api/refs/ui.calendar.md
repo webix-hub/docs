@@ -53,7 +53,7 @@ var calendar = webix.ui({
 - api/link/ui.calendar_isvisible.md - checks whether the view is visible
 - api/ui.calendar_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.calendar_mapevent.md - routes events from one object to another
-- api/ui.calendar_moveselection.md - 
+- api/ui.calendar_moveselection.md - moves date selection in the specified direction
 - api/ui.calendar_refresh.md - repaints the component
 - api/ui.calendar_render.md - renders the specified item or the whole component
 - api/link/ui.calendar_resize.md - adjusts the view to a new size
@@ -140,7 +140,7 @@ var calendar = webix.ui({
 - api/ui.calendar_minutestep_config.md - step of time selector
 - api/ui.calendar_monthselect_config.md - enables the ability to select month by clicking the "month" panel
 - api/link/ui.calendar_mouseeventdelay_config.md - the delay between a real mouse action and invoking the related events
-- api/ui.calendar_navigation_config.md - enables/disables month navigation in header - the possibility to change months (true)
+- api/ui.calendar_navigation_config.md - enables  navigation
 - api/link/ui.calendar_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.calendar_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
 - api/link/ui.calendar_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
