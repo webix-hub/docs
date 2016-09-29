@@ -1,7 +1,7 @@
 Excel Viewer
 =============
 
-Excel Viewer is an extension tool intended for viewing Excel files.
+ExcelViewer is an extension tool intended for viewing Excel files.
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/excelviewer_front.png">
 
@@ -28,7 +28,7 @@ The configuration properties are:
 
 The default [datatype](desktop/data_types.md) for Excel Viewer is **excel**. It is strongly recommended not to change it manually to avoid parsing inconsistency.
 
-Excel viewer API
+Excel Viewer API
 -----------------
 
 

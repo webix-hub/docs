@@ -1,7 +1,7 @@
 PDF Viewer
 ==============
 
-PDF Viewer is a tool for displaying the content of PDF files on the screen.
+PDFViewer is a tool for displaying the content of PDF files on the screen.
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/pdfviewer_front.png">
 
@@ -51,7 +51,7 @@ Toolbar is supplied with the following fully functional controls:
 If you need, you can use the viewer and the toolbar separately, by using their public API methods.
 
 
-PDF viewer API reference
+PDF Viewer API reference
 ---------------------
 
 ###Methods

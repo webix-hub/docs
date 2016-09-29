@@ -1,5 +1,7 @@
-Angular JS Integration
+Angular JS Integration 
 ========================== 
+
+The Webix library provides integration with [Angular](https://angular.io/) JS framework. Since version 4.0 Webix is [compatible with Angular 2](desktop/angular.md#angular2compatibility).
 
 Webix-Angular App Structure
 ---------------------------

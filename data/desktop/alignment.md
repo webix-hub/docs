@@ -1,7 +1,7 @@
 Flexible Alignment of Widgets Content
 ===============================
 
-Webix provides a solution for aligning and centering widgets' content. You need just to wrap any view into the *body* container and define its alignment via the
+Webix provides a solution for aligning and centering widgets' content. You need just to wrap any view and define its alignment via the
 **align** property:
 
 ~~~js
@@ -17,8 +17,9 @@ Webix provides a solution for aligning and centering widgets' content. You need 
 
 The possible values for the align property are:
 
-- left, right, center - for the x-align
-- top, bottom, middle - for the y-align
-- absolute - for the absolute align
+- "left", "right", "center" - for the x-align
+- "top", "bottom", "middle" - for the y-align
+- "absolute" - for the absolute align
 
 You can apply several attributes at once.
+
