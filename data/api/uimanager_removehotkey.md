@@ -8,8 +8,8 @@ removeHotKey
 
 @params:
 - key         string          string with the key name
-* handler     function            the hot key handler
-* obj         object             if provided, the handler will fire only when focus is in the target view
+* handler     function        the hot key handler
+* obj         object          if provided, the handler will fire only when focus is in the target view
 
 	
 
@@ -27,4 +27,5 @@ webix.UIManager.removeHotKey("up", null, $$("button"));
 @template:	api_method
 @descr:
 
-
+@related:
+desktop/uimanager.md#attachingcustomhotkeys

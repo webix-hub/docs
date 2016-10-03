@@ -24,4 +24,5 @@ webix.UIManager.addHotKey("ctrl-up", my_function, myview);
 @template:	api_method
 @descr:
 
-
+@related:
+desktop/uimanager.md#attachingcustomhotkeys

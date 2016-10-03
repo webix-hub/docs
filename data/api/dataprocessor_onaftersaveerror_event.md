@@ -6,36 +6,39 @@ onAfterSaveError
 	
 
 @params:
-- id        id      id of updated item
-- status    object   update status
-- response	object		server side response parsed as json object
+- id        string      id of updated item
+- status    string   	update status
+- response	object		server side response parsed as JSON object
 - details	object		error details
 
 @example: 
 	
-dp.attachEvent("onBeforeSaveError", function(id){
+dp.attachEvent("onAfterSaveError", function(id, status, response, details){
     //...
 });
 
 @template:	api_event
 @descr:
 
+The structure of the *response* object:
 
-Structure of status
 ~~~js
 {
-   id:"id of item",
+   id:"id of the item",
    status:"update status",
    newid:"new id after operation"
 }
 ~~~
 
 
-Structure of details
+The structure of the *details* object:
+
 ~~~js
 {
    text:"full text of server side response",
    data:"webix ajax data related to the error",
-   loader:"xmlHttpRequest object related to the error"
+   loader: xhr // xmlHttpRequest object related to the error
 }
 ~~~
+
+@relatedapi:api/dataprocessor_onbeforesaveerror_event.md

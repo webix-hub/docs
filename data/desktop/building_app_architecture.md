@@ -4,7 +4,7 @@ Building App Architecture
 ##Basic principles
 
 Before using library components you need to draw the scheme of their arrangement and define the way they would be positioned towards each other. It can 
-be done with the help of four interface-building components, namely: 
+be done with the help of five interface-building components, namely: 
 
 - [Layout](desktop/layout.md)
 - [Multiview](desktop/multiview.md)

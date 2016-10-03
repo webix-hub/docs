@@ -118,6 +118,14 @@ The FlexLayout component will try to place all components in a single row, but i
 webix.ui({ view:"flexlayout", cols:[... ]});
 ~~~
 
+**Initial Flexlayout**
+
+<img src="desktop/initial_flex_layout.png">
+
+**After Window Resizing**
+
+<img src="desktop/resized_flex_layout.png">
+
 FlexLayout can be used as a top level view, which is perfect for mobile apps.
 
 ~~~js
@@ -141,7 +149,7 @@ webix.ui({
 
 {{sample 01_layout/14_flex_top.html}}
 
-or, it can be placed inside of a fixed layout to provide a dashboard-like view
+or, it can be placed inside of a fixed layout to provide a dashboard-like view.
 
 {{sample 01_layout/16_flex_dashboard.html}}
 
@@ -171,9 +179,13 @@ webix.ui({
 
 ###FlexDataLayout
 
-Webix PRO includes the "flexdatalayout" component which behaves as datalayout and renders each cell as an element of FlexLayout.
+{{note This widget is available in PRO version only}}
 
-In other words is a perfect solution for dashboard like apps.
+<img src="desktop/flexdatalayout.png">
+
+FlexDataLayout widget behaves as desktop/data_layout.md and renders each cell as an element of [FlexLayout](desktop/responsive_layout.md).
+
+In other words, it is a perfect solution for dashboard-like applications.
 
 ~~~js
 var subconfig = {
