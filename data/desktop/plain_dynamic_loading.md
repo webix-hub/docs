@@ -74,7 +74,7 @@ Sample of JSON response
 {
 	"data":[ 
     	{"id":1,"package":"acx100-source"},
-    	{"id":1,"package":"acx200-source"}
+    	{"id":2,"package":"acx200-source"}
     ],
     "pos":0,
     "total_count":999
