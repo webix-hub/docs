@@ -8,7 +8,7 @@ getSelectedId
 
 @returns:
 
-- id		string/number			the selected task's id
+- id		string,number			the selected task's id
 
 
 @example:

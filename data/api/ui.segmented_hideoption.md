@@ -5,7 +5,7 @@ hideOption
 	hides an option (segment) of the button  
 
 @params:
-- id			string/number		the option id
+- id			string,number		the option id
 
 
 @example:

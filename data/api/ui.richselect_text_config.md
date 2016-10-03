@@ -8,7 +8,7 @@ text
 @short:
 	
 
-@type: 
+@type:  string
 @example:
 
 

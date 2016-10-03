@@ -5,7 +5,7 @@ onAfterAdd
 	fires after adding item to datastore
 
 @params:
-- id		number/string		clientside ID of the new data item
+- id		number,string		clientside ID of the new data item
 - index		number				index, at which new item was added
 
 @example:

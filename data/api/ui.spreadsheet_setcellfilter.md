@@ -10,7 +10,7 @@ setCellFilter
 
 - rowId				number				the row id
 - columnId			number				the column id
-- options			string/array		a range of cells references the values of which will be filtered or an array of filter options
+- options			string,array		a range of cells references the values of which will be filtered or an array of filter options
 
 
 @example:

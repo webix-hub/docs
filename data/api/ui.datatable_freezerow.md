@@ -6,8 +6,8 @@ freezeRow
 
 @params:
 
-- id - (number/string) - the row id
-- state - (boolean) - true, to allow row moving to the "frozen" block
+- id		number,string	the row id
+- state		boolean			true, to allow row moving to the "frozen" block
 
 
 @example:

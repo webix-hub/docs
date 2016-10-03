@@ -4,7 +4,7 @@
 
 @params:
 
-- id		number/string		the id of the tab that was clicked
+- id		number,string		the id of the tab that was clicked
 
 @example:
 

@@ -6,7 +6,7 @@ onBeforeMarkCut
 	fires before an item has been marked for cutting
 
 @params:
-- ids		string/array		the ids of the items to cut
+- ids		string,array		the ids of the items to cut
 
 @returns:
 - result		boolean			returning false will prevent the cutting operation

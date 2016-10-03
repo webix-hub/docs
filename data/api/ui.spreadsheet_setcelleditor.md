@@ -26,7 +26,7 @@ $$("ss1").setCellEditor(2,8,{ editor:"richselect", options:"B3:B7" });
 The editorObject parameter can have the following properties:
 
 - type - (string) the editor type
-- options - (string/array) a range of cell references or an array of editor options
+- options - (string,array) a range of cell references or an array of editor options
 
 @relatedsample:
 65_spreadsheet/01_basic/14_dropdowns.html

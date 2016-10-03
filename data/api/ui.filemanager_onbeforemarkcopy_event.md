@@ -7,7 +7,7 @@ onBeforeMarkCopy
 
 @params:
 
-- ids		string/array		the ids of the items to copy
+- ids		string,array		the ids of the items to copy
 
 @returns:
 - result		boolean		returning false will prevent copying

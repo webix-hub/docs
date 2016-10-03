@@ -4,7 +4,7 @@
 
 @params:
 
-- id		number/string		the id of the tab
+- id		number,string		the id of the tab
 
 
 @example:

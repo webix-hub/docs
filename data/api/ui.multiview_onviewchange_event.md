@@ -7,8 +7,8 @@ onViewChange
 
 @params:
 
-- prevID		string/number		the id of the view that is switched from
-- nextID		string/number		the id of the view that is switched to
+- prevID		string,number		the id of the view that is switched from
+- nextID		string,number		the id of the view that is switched to
 
 @example: 
 	

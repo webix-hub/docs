@@ -6,7 +6,7 @@ onEditorChange
 
 @params:
 
-- id		string/number		the cell id
+- id		string,number		the cell id
 - value		string				the new value typed into the editor
 
 @example:

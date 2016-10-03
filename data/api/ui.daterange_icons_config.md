@@ -7,7 +7,7 @@ icons
 
 @type: 
 
-boolean/object
+boolean,object
 @default:false
 @example:
 

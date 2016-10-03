@@ -3,7 +3,7 @@ resizeColumn
 
 
 @short: enables/disables horizontal resizing of columns
-@type: boolean/object
+@type: boolean,object
 
 @example:
 webix.ui({

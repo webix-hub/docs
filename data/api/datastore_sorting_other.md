@@ -4,7 +4,7 @@ sorting
 @short:
 	
 
-@type:
+@type: obj
 
 @example:
 

@@ -19,9 +19,9 @@ dtable.mapSelection(function(value){
 @template:	api_method
 @descr:
 @callback:
--value    string|int    the cell value
--row_id    string|int    the row id
--column_id    string|int    the column id
+-value    string,int    the cell value
+-row_id    string,int    the row id
+-column_id    string,int    the column id
 -row_ind    number    the row index of a cell within the selected block
 -col_ind    number    the column index of a cell within the selected block
 

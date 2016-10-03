@@ -7,7 +7,7 @@ getOwnerList
 
 @params:
 
-- itemId		string/number			the item's id
+- itemId		string,number			the item's id
 
 @returns:
 

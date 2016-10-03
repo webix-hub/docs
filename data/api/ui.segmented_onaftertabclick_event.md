@@ -5,7 +5,7 @@ onAfterTabClick
 
 @params:
 
-- id		number/string		the id of the segment that was clicked
+- id		number,string		the id of the segment that was clicked
 
 @example:
 

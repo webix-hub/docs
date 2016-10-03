@@ -6,7 +6,7 @@ copyFile
 
 @params:
 
-- source		string/array		the copied items ids
+- source		string,array		the copied items ids
 - target		string				the id of the folder where the items are copied to
 
 

@@ -5,7 +5,7 @@ onBeforeTabClick
 
 @params:
 
-- id		number/string		the id of the segment
+- id		number,string		the id of the segment
 
 @example:
 

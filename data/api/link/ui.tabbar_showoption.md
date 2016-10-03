@@ -5,7 +5,7 @@
 
 @params:
 
-- id		string/number		the option id
+- id		string,number		the option id
 
 
 @example:

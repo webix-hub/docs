@@ -6,7 +6,7 @@ markCopy
 
 @params:
 
-- id		string/array			ids of files for copying
+- id		string,array			ids of files for copying
 
 @example:
 

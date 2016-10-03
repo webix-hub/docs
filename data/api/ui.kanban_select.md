@@ -7,7 +7,7 @@ select
 
 @params:
 
-- id			string/number		id of the task to select
+- id			string,number		id of the task to select
 
 
 @example:

@@ -5,7 +5,7 @@ tooltip
 @short: sets a popup message appearing on pointing a mouse cursor over the dedicated item 
 	
 
-@type: string/boolean
+@type: string,boolean
 @example:
 
 // specifiying a tooltip for a dataview

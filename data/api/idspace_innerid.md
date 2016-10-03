@@ -6,12 +6,12 @@ innerId
 	returns the inner ID of an item by its public (real) ID
 
 @params:
-- id		number/string		the public ID of an item
+- id		number,string		the public ID of an item
 
 
 @returns:
 
-- innerId     number/string    the inner ID of item
+- innerId     number,string    the inner ID of item
 	
 
 @example:
