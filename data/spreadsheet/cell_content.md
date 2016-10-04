@@ -214,7 +214,28 @@ $$("ssheet").addImage(2,3, "http://docs.webix.com/media/desktop/image.png");
 
 {{sample 65_spreadsheet/02_api/11_images.html}}
 
+Using Placeholders
+----------------------
 
+You can customize what data will be displayed in the SpreadSheet cells by using placeholders.
 
+A placeholder is an object with data properties which can be set as SpreadSheet values. To define a placeholder use the **setPlaceholder()** method:
 
+~~~js
+$$("ssheet").setPlaceholder({value:"France", expense:1366, income:842});
+~~~
 
+To specify a placeholder's property in a cell instead of a value, use the **=&#123;&#123;property&#125;&#125;** construction. 
+For example, for cells with the "expense" values you should specify placeholders as **"=&#123;&#123;expense&#125;&#125;"**.
+
+<img src="spreadsheet/setting_placeholder.png">
+
+If you specify a new placeholder for a SpreadSheet, values of all cells where properties of this placeholder are defined will be updated.
+
+~~~js
+$$("ssheet").setPlaceholder({value:"Poland", expense:684, income:781});
+~~~
+
+<img src="spreadsheet/updating_placeholder.png">
+
+{{sample 65_spreadsheet/02_api/16_placeholders.html}}
