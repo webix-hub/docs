@@ -19,5 +19,3 @@ $$("ssheet").freezeColumns(2);
 @descr:
 If the parameter isn't passed, the method unfreezes the frozen columns, if there are any
 
-@relatedsample:
-02_api/04_borders_headers.html

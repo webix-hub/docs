@@ -23,4 +23,4 @@ $$("ss1").setCellFilter(2,2, "B3:B7");
 @descr:
 
 @relatedsample: 
-01_basic/15_filters.html
+65_spreadsheet/02_api/09_filters.html
