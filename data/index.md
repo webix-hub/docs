@@ -36,6 +36,7 @@ Start
 - desktop/getting_started.md
 - desktop/compatibility.md
 - desktop/whats_new.md
+- desktop/complex_widgets.md
 - desktop/components.md
 - desktop/extensions.md
 - desktop/basic_tasks.md
