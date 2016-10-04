@@ -31,9 +31,9 @@ The full structure of SpreadSheet can be presented as:
     - <a href="spreadsheet/customization.md#edit">Edit block</a>:  
     	- Sort A to Z button
         - Sort Z to A button
-        - Creat filter button
+        - Create filter button
         - Named range button
-        - Condtitional format button
+        - Conditional format button
         - Lock/unlock cell button
         - Add link button
         - Create dropdown button
@@ -141,7 +141,7 @@ Besides managing Horizontal and Vertical cell alignment, this block also include
 - the "text-align" select allows specifying one of three modes of text alignment in a cell: left, right or center 
 - the "vertical-align" select defines the mode of vertical text alignment in a cell: top, middle or bottom
 - the "wrap" button lets wrap text in a cell
-- the "span" button allows merging the content of several cells and unmerging it as well
+- the "span" button allows merging the content of several cells and splitting it as well
 
 <h3 id="number">Number block</h3> 
 
@@ -162,7 +162,7 @@ The block includes a set of buttons for editing the cell's content:
 - "sort-asc" and "sort-desc" buttons are used for sorting in ascending and descending directions
 - "create-filter" button sets a filter in a cell
 - "add-range" button sets a named range of cells for using it further in math formulas
-- "conditional-format" button allows specifiying a particular style for a cell, depending on a certain condition
+- "conditional-format" button allows specifying a particular style for a cell, depending on a certain condition
 - "lock-cell" button blocks/allows editing of the cell's value
 - "add-link" button sets a link in a cell
 - "add-dropdown" button creates an editor with options in a cell
@@ -198,7 +198,7 @@ buttons: {
 }
 ~~~
 
-The button blocks' names correspond to the properties defined in the localization files that specify the language of its lables.
+The button blocks' names correspond to the properties defined in the localization files that specify the language of its labels.
 The default toolbar specified through the api/ui.spreadsheet_buttons_config.md configuration object has just one level.
 
 If you want to create a two-level toolbar with more buttons or to customize the "full" toolbar with the full set of buttons, 

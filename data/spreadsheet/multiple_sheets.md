@@ -56,7 +56,7 @@ The *sheets* config is the solution you need. As its value you need to specify a
 Each object has the following properties:
 
 - name - (string) the sheet name
-- content - (object) an object with the sheet's configuration/data
+- <span id="c">content</span> - (object) an object with the sheet's configuration/data
 	- data - (array) an array with data of the sheet. 
     Each element of the *data* array is set as an array that consists of three elements:
     	- rowId
@@ -98,13 +98,35 @@ webix.ui({
 });
 ~~~
 
+{{sample 65_spreadsheet/01_basic/07_multisheet.html}}
+
+
 Adding a new Sheet
 --------------------
 
-You can add a new sheet by using the api/ui.spreadsheet_addsheet.md method.
+You can add a new sheet by using the api/ui.spreadsheet_addsheet.md method. You should pass the sheet's <a href="#c">content</a> as a parameter:
 
 ~~~js
-$$("ssheet").addSheet();
+$$("ssheet").addSheet(content);
 ~~~
 
-{{sample 65_spreadsheet/01_basic/07_multisheet.html}}
+
+Copying Sheet
+--------------
+
+It is possible to copy the content of a sheet into a new sheet. You need to complete two steps:
+
+1) get content of the sheet you want to copy with the help of the serialize() method: 
+
+~~~js
+// getting content of the active sheet
+var content = $$("ssheet").serialize();
+~~~
+
+2) create a new sheet using the api/ui.spreadsheet_addsheet.md method and pass the received content as a parameter:
+
+~~~js
+// copy to a new sheet
+$$("ssheet").addSheet(content);
+~~~
+
