@@ -140,7 +140,6 @@ var slider = webix.ui({
 - api/link/ui.slider_required_config.md - marks field as required
 - api/ui.slider_step_config.md - step of slider
 - api/link/ui.slider_suggest_config.md - links suggest list to the input
-- api/link/ui.slider_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/ui.slider_title_config.md - text over slider bar
 - api/link/ui.slider_tooltip_config.md - tooltip for the input
 - api/link/ui.slider_validate_config.md - adds validation to the field

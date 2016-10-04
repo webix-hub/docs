@@ -48,7 +48,6 @@ Properties
 - api/link/ui.tabbar_relatedview_config.md - id of view, that will be affected by relatedAction operation
 - api/link/ui.tabbar_required_config.md - marks field as required
 - api/link/ui.tabbar_suggest_config.md - links suggest list to the input
-- api/link/ui.tabbar_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/ui.tabbar_tabmargin_config.md - space between tabs
 - api/ui.tabbar_tabminwidth_config.md - minimum width for responsive tabs
 - api/ui.tabbar_tabmorewidth_config.md - width of "more" button in tabbar
@@ -111,7 +110,6 @@ Properties
 - api/link/ui.tabbar_relatedview_config.md
 - api/link/ui.tabbar_required_config.md
 - api/link/ui.tabbar_suggest_config.md
-- api/link/ui.tabbar_tabfocus_config.md
 - api/ui.tabbar_tabmargin_config.md
 - api/ui.tabbar_tabminwidth_config.md
 - api/ui.tabbar_tabmorewidth_config.md

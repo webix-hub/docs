@@ -45,7 +45,6 @@ Properties
 - api/ui.multitext_separator_config.md - sets a delimiter for control's values
 - api/ui.multitext_subconfig_config.md - defines settings for extra text fields
 - api/link/ui.multitext_suggest_config.md - links suggest list to the input
-- api/link/ui.multitext_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/link/ui.multitext_tooltip_config.md - tooltip for the input
 - api/link/ui.multitext_validate_config.md - adds validation to the field
 - api/link/ui.multitext_validateevent_config.md - on which event validation fires
@@ -97,7 +96,6 @@ Properties
 - api/ui.multitext_separator_config.md
 - api/ui.multitext_subconfig_config.md
 - api/link/ui.multitext_suggest_config.md
-- api/link/ui.multitext_tabfocus_config.md
 - api/link/ui.multitext_tooltip_config.md
 - api/link/ui.multitext_validate_config.md
 - api/link/ui.multitext_validateevent_config.md

@@ -147,8 +147,6 @@ var multiselect = webix.ui({
 - api/link/ui.multiselect_required_config.md - marks field as required
 - api/ui.multiselect_separator_config.md - sets a delimiter for control's values
 - api/link/ui.multiselect_suggest_config.md - links suggest list to the input
-- api/link/ui.multiselect_tabfocus_config.md - defines whether the control will be included in the tab navigation order
-- api/link/ui.multiselect_text_config.md - 
 - api/link/ui.multiselect_tooltip_config.md - tooltip for the input
 - api/link/ui.multiselect_validate_config.md - adds validation to the field
 - api/link/ui.multiselect_validateevent_config.md - on which event validation fires

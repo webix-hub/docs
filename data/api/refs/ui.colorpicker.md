@@ -140,7 +140,6 @@ var colorpicker = webix.ui({
 - api/link/ui.colorpicker_required_config.md - marks field as required
 - api/link/ui.colorpicker_stringresult_config.md - if the parameter is set to true, the method getValue returns data as string (otherwise, as object)
 - api/link/ui.colorpicker_suggest_config.md - links suggest list to the input
-- api/link/ui.colorpicker_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/link/ui.colorpicker_timeicon_config.md - sets an icon for time in the datepicker
 - api/link/ui.colorpicker_timepicker_config.md - enables optional timepicker in the calendar
 - api/link/ui.colorpicker_tooltip_config.md - tooltip for the input
