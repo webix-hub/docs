@@ -217,7 +217,7 @@ $$("ssheet").addImage(2,3, "http://docs.webix.com/media/desktop/image.png");
 Using Placeholders
 ----------------------
 
-You can customize what data will be displayed in the SpreadSheet cells by using placeholders.
+You can specify what data will be displayed in the SpreadSheet cells by using placeholders.
 
 A placeholder is an object with data properties which can be set as SpreadSheet values. To define a placeholder use the **setPlaceholder()** method:
 
