@@ -44,8 +44,6 @@ Properties
 - api/link/ui.richselect_relatedview_config.md - id of view, that will be affected by relatedAction operation
 - api/link/ui.richselect_required_config.md - marks field as required
 - api/link/ui.richselect_suggest_config.md - links suggest list to the input
-- api/link/ui.richselect_tabfocus_config.md - defines whether the control will be included in the tab navigation order
-- api/ui.richselect_text_config.md - 
 - api/link/ui.richselect_tooltip_config.md - tooltip for the input
 - api/link/ui.richselect_validate_config.md - adds validation to the field
 - api/link/ui.richselect_validateevent_config.md - on which event validation fires
@@ -96,8 +94,6 @@ Properties
 - api/link/ui.richselect_relatedview_config.md
 - api/link/ui.richselect_required_config.md
 - api/link/ui.richselect_suggest_config.md
-- api/link/ui.richselect_tabfocus_config.md
-- api/ui.richselect_text_config.md
 - api/link/ui.richselect_tooltip_config.md
 - api/link/ui.richselect_validate_config.md
 - api/link/ui.richselect_validateevent_config.md

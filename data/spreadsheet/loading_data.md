@@ -365,7 +365,7 @@ var states = $$("ssheet").serialize({sheets: true});
 
 Math formulas are serialized together with all other data of a sheet. 
 
-If you want to disable serialization of math formulas, pass an object with the **math:false** config tp the *serialize()* method:
+If you want to disable serialization of math formulas, pass an object with the **math:false** config to the *serialize()* method:
 
 ~~~js
 var states = $$("ssheet").serialize({math: false});

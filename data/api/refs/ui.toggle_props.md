@@ -29,7 +29,6 @@ Properties
 - api/ui.toggle_onicon_config.md - an icon for a pressed toggle
 - api/ui.toggle_onlabel_config.md - a text label on the button in the pressed state
 - api/link/ui.toggle_popup_config.md - allows to attach pop-up menu to the button
-- api/link/ui.toggle_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/link/ui.toggle_tooltip_config.md - tooltip for the input
 - api/link/ui.toggle_type_config.md - the type of the control
 - api/link/ui.toggle_value_config.md - sets the initial value for a control
@@ -64,7 +63,6 @@ Properties
 - api/ui.toggle_onicon_config.md
 - api/ui.toggle_onlabel_config.md
 - api/link/ui.toggle_popup_config.md
-- api/link/ui.toggle_tabfocus_config.md
 - api/link/ui.toggle_tooltip_config.md
 - api/link/ui.toggle_type_config.md
 - api/link/ui.toggle_value_config.md

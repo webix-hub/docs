@@ -1,1 +1,0 @@
-@link: api/ui.richselect_text_config.md

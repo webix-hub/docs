@@ -19,4 +19,4 @@ $$("ssheet").showSheet("Tab 1");
 @template:	api_method
 @descr:
 
-@relatedsample: 02_api/08_multisheet.html
+@relatedsample: 65_spreadsheet/01_basic/07_multisheet.html

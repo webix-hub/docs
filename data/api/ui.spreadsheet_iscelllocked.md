@@ -22,5 +22,5 @@ var isLocked = $$("ssheet").isCellLocked(rowId, columnId);
 @descr:
 
 @relatedsample:
-02_api/07_lock_cell.html
+65_spreadsheet/02_api/15_lock_cell.html
 

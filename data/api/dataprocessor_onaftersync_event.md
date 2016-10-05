@@ -5,15 +5,15 @@ onAfterSync
 	
 
 @params:
-- obj		object		object with item ID and operation status
-- text		string		full text of server side response
-- data		object		ajax response object
-- loader	object		ajax loader object
+- statusObj		object		object with item ID and operation status
+- text			string		full text of server side response
+- data			object		AJAX response object
+- loader		object		AJAX loader object
 
 
 @example: 
 	
-dp.attachEvent("onAfterSync", function(id, text, data, loader){
+dp.attachEvent("onAfterSync", function(statusObj, text, data, loader){
     //... some code here ... 
 });
 

@@ -138,8 +138,6 @@ var combo = webix.ui({
 - api/link/ui.combo_relatedview_config.md - id of view, that will be affected by relatedAction operation
 - api/link/ui.combo_required_config.md - marks field as required
 - api/link/ui.combo_suggest_config.md - links suggest list to the input
-- api/link/ui.combo_tabfocus_config.md - defines whether the control will be included in the tab navigation order
-- api/link/ui.combo_text_config.md - 
 - api/link/ui.combo_tooltip_config.md - tooltip for the input
 - api/link/ui.combo_type_config.md - the type of the control
 - api/link/ui.combo_validate_config.md - adds validation to the field

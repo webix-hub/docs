@@ -19,5 +19,3 @@ $$("ssheet").freezeRows(3);
 @descr:
 If the parameter isn't passed, the method unfreezes the frozen rows, if there are any
 
-@relatedsample:
-02_api/04_borders_headers.html

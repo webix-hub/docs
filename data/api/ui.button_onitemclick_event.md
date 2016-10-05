@@ -4,8 +4,8 @@ onItemClick
 @short: fires after the control has been clicked
 
 @params:
-- id	string, number		control ID
-- e		event		event object
+- id		string/number		control ID
+- e			event				event object
 
 @example:
 

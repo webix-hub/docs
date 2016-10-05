@@ -144,7 +144,6 @@ var segmented = webix.ui({
 - api/link/ui.segmented_relatedview_config.md - id of view, that will be affected by relatedAction operation
 - api/link/ui.segmented_required_config.md - marks field as required
 - api/link/ui.segmented_suggest_config.md - links suggest list to the input
-- api/link/ui.segmented_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/link/ui.segmented_tooltip_config.md - tooltip for the input
 - api/link/ui.segmented_validate_config.md - adds validation to the field
 - api/link/ui.segmented_validateevent_config.md - on which event validation fires

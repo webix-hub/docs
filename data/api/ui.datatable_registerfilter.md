@@ -6,22 +6,39 @@ registerFilter
 	
 
 @params:
-- node		HTMLElement		the html node of the filter
-- config	object		the hash of settings
-- obj		object		the controller object
+- object			HTMLElement/object		node in case of HTML input or the control's object
+- config			object					the hash of settings
+- controller		object					the controller object
 
 
 @example:
+// registering HTML input as a filter
 grid.registerFilter(document.getElementById("myfilter"), 
-		{ columnId:"title" }, 
-		{
-			getValue:function(node){
-				return node.value;
-			},
-			setValue:function(node, value){
-				node.value = value;
-			}
+	{ columnId:"title" }, 
+	{
+		getValue:function(object){
+			return object.value;
+		},
+		setValue:function(object, value){
+			object.value = value;
 		}
+	}
+);
+
+// registering List as a filter 
+grid.registerFilter(
+  $$("myfilter"),	// is stored as 'list' parameter in 'getValue'
+  { columnId:"year" },	// a column to filter
+  {
+    getValue:function(list){
+      var selection = list.getSelectedId();
+      var item = list.getItem(selection)
+      var filterValue = item.filter;
+      return function(year){
+        return year > filterValue 
+      }
+    }
+  }
 );
 
 @template:	api_method

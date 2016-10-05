@@ -92,7 +92,7 @@ var dp = webix.dp.$$("mydp");
 
 ##Data Processing Operations
 
-DataProcessor interpretes client-side operations performed on each data item and defines the type of data action for it: 
+DataProcessor interprets client-side operations performed on each data item and defines the type of data action for it: 
 
 The default processing looks as follows: 
 
@@ -128,7 +128,7 @@ And other protocol with implicit Dataprocessor initializing for connector-based 
 
 The moment Dataprocessor returns data, script execution begins (if other is not stated):
 
-- If serverside integration is enabled with a [Server Side Connector](desktop/dataconnector.md), the connector automatically **generates database request** corresponding to action type to treat changed data;
+- If server side integration is enabled with a [Server Side Connector](desktop/dataconnector.md), the connector automatically **generates database request** corresponding to action type to treat changed data;
 - For [custom scripts](desktop/custom_serverside.md), you get **webix_operation** and other data via **POST** request and write corresponding queries for each type of operation.  
 
 ##DataProcessor for Drag-n-Drop and Data Moving
@@ -150,7 +150,7 @@ new webix.DataProcessor({
 
 DataProcessor events ([listed in API reference](api/refs/dataprocessor.md#events)) can be used for different purposes. For instance, the events can help you:
 
-1) **Modify data** before it's gone to server with the **onBeforeDataSend** event that takes the whole dataobject as parameter:
+1) **Modify data** before it's gone to server with the **api/dataprocessor_onbeforedatasend_event.md** event that takes the whole data object as parameter:
 
 ~~~js
 dp.attachEvent('onBeforeDataSend', function(obj){
@@ -158,32 +158,30 @@ dp.attachEvent('onBeforeDataSend', function(obj){
 });
 ~~~
 
-2) **Track successfull** and **unsuccessful serverside responses** separately with the help of **onAfterSync** and **onAfterSaveError** events respectively:
+2) **Track successful** and **unsuccessful server-side responses** separately
+with the help of **api/dataprocessor_onaftersync_event.md** and **api/dataprocessor_onaftersaveerror_event.md** events respectively:
 
 {{snippet
 Successful server response
 }}
 ~~~js
-dp.attachEvent('onAfterSync', function(id, text, data){
+dp.attachEvent('onAfterSync', function(statusObj, text, data, loader){
 	var response = data.xml(),
     hash = response.data;
-    //hash {type:'', tid: '', sid:''}      
+    //hash {status:"", id:"", newid:""}      
 });
 ~~~
 
-- **type** - type of **action** performed (*insert, update, delete*);
-- **sid** - item ID that was sent to server for update;
-- **tid** - item ID that returned from server after update. 
+- **status** - the status of operation ("success"/"error"/"invalid");
+- **id** - obligatory, item ID that was sent to the server for update;
+- **newid** - item ID returned from the server after update. 
 
-{{note
-**tid** and **sid** will only be different in case on **insert** operation. In this case, DataProcessor automatically changes client-side ID to the ID that was generated for the item on server. 
-}}
 
 {{snippet
 Unsuccessful server response
 }}
 ~~~js
-dp.attachEvent('onAfterSaveError', function(id, status, obj){
+dp.attachEvent('onAfterSaveError', function(id, status, response, details){
      var operation = this.getItemState(id).operation; //operation that was performed
 });
 ~~~
@@ -192,7 +190,7 @@ In case of an error during saving, response **status** will always be 'error' wh
 
 **Getting to a master component from DataProcessor**
 
-Inside DataProcessor event handlers you can reach the master component througn DataProcessor configuration objetc:
+Inside DataProcessor event handlers you can reach the master component through DataProcessor configuration object:
 
 ~~~js
 dp.attachEvent('onSomeEvent', function(id, status, obj){
@@ -204,9 +202,9 @@ dp.attachEvent('onSomeEvent', function(id, status, obj){
 
 As it was stated earlier, the **new ID** from response of **insert** request will automatically replace the temporary client-side ID. This is part of default DataProcessor behavior, and no specific actions are required. 
 
-Additionally, yuo can enable **automatic data update** for all fields taking part in **insert** and **update** operations. It requires the following additions to the code:
+Additionally, you can enable **automatic data update** for all fields taking part in **insert** and **update** operations. It requires the following additions to the code:
 
-- tune serverside response to return the whole data object (not only status or IDs); 
+- tune server-side response to return the whole data object (not only status or IDs); 
 - enable DataProcessor **autoupdate** functionality:
 
 {{snippet
@@ -221,7 +219,7 @@ new webix.DataProcessor({
 ~~~
 
 {{snippet
-Or when defining DataProcessor implicitely
+Or when defining DataProcessor implicitly
 }}
 ~~~js
 view:"datatable",
@@ -233,7 +231,7 @@ save:{
 
 {{sample 40_serverside/01_php_vanila/10_datatable_update.html}}
 
-It can be uselful for REST-full applications or when you need to fill in client-side fields which values can be calculated only on server side, etc.
+It can be useful for REST-full applications or when you need to fill in client-side fields which values can be calculated only on server side, etc.
 
 ##Changing Default Processing Logic
 
@@ -270,19 +268,19 @@ webix.dp($$("grid")).attachEvent("onbeforedelete", function(id, action){
 
 Now, when a record is removed from the component, a field **deleted** of this record is updated in the database table. The current date is set into it to track the moment when the record was removed on the client side. 
 
-Learn more about the possibilities of data manipulation on clent side in related articles:
+Learn more about the possibilities of data manipulation on the client side in related articles:
 
 - [Data Adding and Deletion](desktop/add_delete.md);
 - [Data Updating](desktop/update.md)
 - [Data Editing](desktop/edit.md)
 
-##Cancelling and Enabling Dataprocessor for Some Operation
+##Canceling and Enabling Dataprocessor for Some Operation
 
-**Cancelling DataProcessor**
+**Canceling DataProcessor**
 
 Not any client-side update is to be saved to server. To temporarily cancel DataProcessor you can:
 
-- either apply api/dataprocessor_ignore.md fucntion to the Dataprocessor object. 
+- either apply api/dataprocessor_ignore.md function to the Dataprocessor object. 
 
 ~~~js
 webix.dp("grid").ignore(function(){
@@ -356,7 +354,7 @@ webix.callEvent("onBeforeAjax",
 );
 ~~~
 
-Note that Webix [Ajax module](helpers/ajax_operations.md) features a **built-in functionality** for sending **headers** with serverside requests. The above solution is only for DataProcessor Ajax requests. 
+Note that Webix [Ajax module](helpers/ajax_operations.md) features a **built-in functionality** for sending **headers** with server side requests. The above solution is only for DataProcessor Ajax requests. 
 
 ###Related Article
 

@@ -12,7 +12,7 @@ Each time you create a component on the page, even a single one, **UIManager** m
 
 ###Focusing Methods
 
-Each Webix widget features two opposite methods - **focus()** and **blur()** - that allow settings/removing focus. 
+Each Webix widget features two opposite methods - **focus()** and **blur()** - that allow setting/removing focus. 
 
 ~~~js
 $$("toolbar").focus(); // the toolbar is focused
@@ -21,7 +21,7 @@ $$("toolbar").blur(); //the toolbar is no longer in focus
 $$("form").focus(); //the first focusable element in the form is focused
 ~~~
 
-When using the **focus()** method with either form of tollbar you can pass the **name** of the needed control. 
+When using the **focus()** method either with a form or with a toolbar, you can pass the **name** of the needed control. 
 In this case focus will be set to this control rather to the whole form/toolbar: 
 
 ~~~js
@@ -87,7 +87,7 @@ Hotkeys for navigation in data widgets like [datatable](datatable/index.md) and 
 
 Data widgets respond to arrow keys in the following way: 
 
-- "up/left" - the previos item is selected;
+- "up/left" - the previous item is selected;
 - "right/down" - the next item is selected;
 - "page up" - the item with the index "current index+10" is selected;
 - "page down" - the item with the index "current index-10" is selected;
@@ -102,8 +102,9 @@ Hierarchical data widgets - Tree, Treetable, Grouplist - have specific behavior 
 If no item is selected at the moment, the first visible item gets selection.
 
 [Editors](desktop/editing.md) of data widgets react on the following keys: 
-	- "esc" - to close without saving data changes;
-	- "enter" - to close with data changes saved.
+
+- "esc" - to close without saving data changes;
+- "enter" - to close with data changes saved.
     
 ####Comboboxes 
 
@@ -137,7 +138,7 @@ Carousel buttons are in the tab order. In addition, carousel icons respond to th
 
 ####Calendar 
 
-- "up/left" - the previos date is selected;
+- "up/left" - the previous date is selected;
 - "right/down" - the next date is selected;
 - "page up" - the same date in the previous month is selected;
 - "page down" - the same date in the next month is selected;
@@ -166,7 +167,8 @@ If no cell is selected at the moment, the first visible cell gets selection.
 
 ####Hotkeys for Controls
 
-For controls there exists a possibility to define a hotkey that will trigger it onClick event. The key name (e.g. 'enter' or 'space') is specified by **hotkey** property: 
+There exists a possibility for a control to define a hotkey that will trigger its onClick event. 
+The key name (e.g. 'enter' or 'space') is specified by the **hotkey** property: 
 
 ~~~js
 { view:"button", click: doOnClick, hotkey: "enter" }
@@ -174,7 +176,7 @@ For controls there exists a possibility to define a hotkey that will trigger it 
 
 {{sample 13_form/02_api/12_hotkey.html}}
 
-The *doOnClick* function will fire now either or pressing 'enter' or on clicking. 
+The *doOnClick* function will fire now either on pressing 'enter' or on clicking. 
 
 Key combinations joined by **+** or **-** sign are as well possible: 
 
@@ -182,7 +184,7 @@ Key combinations joined by **+** or **-** sign are as well possible:
 { view:"button", click: doOnClick, hotkey: "enter-shift" }
 ~~~
 
-Note that such functionality will work with simple controls like buttons and inputs, not with multiple-choice one. 
+Note that such functionality will work with simple controls like buttons and inputs, not with multiple-choice ones. 
 
 ####Defining Custom Hotkeys
 
@@ -196,7 +198,7 @@ webix.UIManager.addHotKey("Ctrl+V", function() {
 });
 ~~~
 
-At the same time, you can specify any instance of a **Webix component** that should react on this or that hot key by passing the its into the function as a third parameter. 
+At the same time, you can specify any instance of a **Webix component** that should react on this or that hot key by passing its ID into the function as a third parameter. 
 
 In case you want all the view instances react on the specified hot key, state the view name instead of ID: 
 
@@ -218,14 +220,33 @@ webix.UIManager.addHotKey("Ctrl+Space", function() {
 
 <h4 id="remove">Removing Hotkeys</h4>
 
-The [removeHotKey](api/uimanager_removehotkey.md) function is used to remove a hotkey. As a parameter it takes the key name: 
+The [removeHotKey](api/uimanager_removehotkey.md) function is used to remove a hotkey. It takes the key name as an obligatory parameter
 
 ~~~js
 //adding a hotkey
 webix.UIManager.addHotKey("Ctrl+Space", function() { ... }, 'list');
 
-//removing the hotkey
+//removing all hotkeys under the name
 webix.UIManager.removeHotKey("Ctrl+Space");
+~~~
+
+You can also specify the hotkey handler as the second parameter to remove only a particular hotkey:
+
+~~~js
+//removing the hotkey with the specified handler
+webix.UIManager.removeHotKey("up", my_function);
+~~~
+
+It's also possible to remove a hotkey from a specific view. For this, you need to specify the view ID as the third parameter.
+
+To remove the hot key from all the view instances, pass the view name instead of ID:
+
+~~~js
+//removes a hotkey from the view with the 'details' ID
+webix.UIManager.removeHotKey("up", null, $$("details"));
+
+//remove hot keys from all list instances on the page
+webix.UIManager.removeHotKey("up", null, 'list');
 ~~~
 
 ###Attaching Keyboard events 

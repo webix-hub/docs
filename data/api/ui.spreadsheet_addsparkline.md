@@ -26,4 +26,4 @@ the config object includes the following properties:
 - color	- (string)	the color of a sparkline either in a hex format or as a color name
 - negativeColor - (string) the color of a negative value for a Bar sparkline 
 
-@relatedsample: 01_basic/11_sparklines.html
+@relatedsample: 65_spreadsheet/02_api/10_sparklines.html

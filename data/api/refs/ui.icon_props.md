@@ -25,7 +25,6 @@ Properties
 - api/link/ui.icon_name_config.md - name of the control
 - api/link/ui.icon_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.icon_popup_config.md - allows to attach pop-up menu to the button
-- api/link/ui.icon_tabfocus_config.md - defines whether the control will be included in the tab navigation order
 - api/link/ui.icon_tooltip_config.md - tooltip for the input
 - api/link/ui.icon_value_config.md - sets the initial value for a control
 - api/link/ui.icon_width_config.md - sets the width of the component
@@ -55,7 +54,6 @@ Properties
 - api/link/ui.icon_name_config.md
 - api/link/ui.icon_on_config.md
 - api/link/ui.icon_popup_config.md
-- api/link/ui.icon_tabfocus_config.md
 - api/link/ui.icon_tooltip_config.md
 - api/link/ui.icon_value_config.md
 - api/link/ui.icon_width_config.md
