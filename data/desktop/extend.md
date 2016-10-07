@@ -125,17 +125,6 @@ existing methods with the same name.
 
 ####Early Binding
 
-If you want to put apart inherited and native methods of the same name, you should refer to **early binding**, where prototypes of two objects are merged. 
-
-{{snippet
-Movable Toolbar
-}}
-~~~js
-mytoolbar = webix.proto({webix.Movable},webix.ui.toolbar);
-var obj = new mytoolbar({ view:"toolbar",... });
-// outputs a movable toolbar
-~~~
-
 To extend component's existing functionality you can as well use **api/_protoui.md** method that creates the new view based on some of the existing ones.
 This is how it looks in case you want to make your list editable. 
 
