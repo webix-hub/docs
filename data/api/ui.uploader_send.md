@@ -6,7 +6,6 @@ send
 
 @params:
 - id	number, string, function	file ID or callback function
-- details	object	additional data
 
 
 @example:
@@ -34,22 +33,7 @@ $$("upl1").send();
 $$("upl1").send(id);
 ~~~
 
-Additionally, extra data can be send to server:
-
-~~~js
-//any file specified by ID
-$$("uploader").send(id, { param1:"value1", param2:"value2"});
-
-$$("uploader").send(function(res){
-		/*callback function*/
-    }, 
-    { param1:"value1", 
-      param2:"value2"
-    }
-);
-~~~
-
-In case of [autosend](api/ui.uploader_autosend_config.md) enabled, the additional data can be defined in the uploader configuration:
+Additionally, extra data can be defined in the uploader configuration:
 
 ~~~js
 webix.ui({ 
