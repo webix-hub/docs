@@ -33,7 +33,7 @@ $$("upl1").send();
 $$("upl1").send(id);
 ~~~
 
-Additionally, extra data can be defined in the uploader configuration:
+Additionally, extra data can be defined in the uploader configuration through the api/ui.uploader_formdata_config.md property:
 
 ~~~js
 webix.ui({ 

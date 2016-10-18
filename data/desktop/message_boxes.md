@@ -117,7 +117,7 @@ At the same time, callback can be set independent of the result, as a function w
 
 <img src="desktop/alert_box.png"/>
 
-The text of its only button is defined as value of **ok** parameter. Passing result into callback is optional. 
+The text of its only button is defined as the value of the **ok** parameter. Passing the result into callback is optional. 
 
 {{snippet
 Short form
@@ -221,6 +221,25 @@ var box = webix.confirm({...});
 webix.modalbox.hide(box);
 ~~~
 
+##Styling Message Boxes
+
+You can redefine the style of any message box through CSS. The name of a CSS class corresponding to a particular type of a message box is kept as
+**webix_[type]**. For example, you can change the style of the webix error message as follows:
+
+~~~js
+.webix_error{
+	background-color: red;     
+}
+~~~
+
+To apply the redefined style to the message box, specify its name in the box configuration using the **type** property:
+
+~~~js
+webix.message({
+    type:"error", 
+    text:"Form Data is Invalid"
+});
+~~~
 
 ##Modal Windows and Keyboard Interaction
 
@@ -231,14 +250,14 @@ By default modal boxes block keyboard events of the page. Users can use only the
 - **"space"** and **"enter"** for setting **true** value as modal box result;
 - **"escape"** for setting **false** value as modal box result.
 
-To disable above mentioned keys and enable standard keyboard events you should set **keyboard** property to false:
+To disable the above mentioned keys and enable standard keyboard events, you should set the **keyboard** property to *false*:
 
 ~~~js
 webix.message.keyboard = false; 
 webix.modalbox({...})
 ~~~
 
-From now on, user gets a possibility to use full keyboard, for instance, for typing values into inputs inside modal boxes. 
+From now on, the user gets a possibility to use full keyboard, for instance, for typing values into inputs inside modal boxes. 
 
 
 @complexity:2

@@ -15,13 +15,13 @@ var portlet = webix.ui({
   	rows:[
     	{ view:"portlet", body:{
 			template:"row 1"
-		. }},
+		}},
 		{ view:"portlet", body:{
 			template:"row 2"
-		. }},
+		}},
     	{ view:"portlet", body:{
 			template:"row 3"
-		. }}
+		}}
    	]
 });
 ~~~

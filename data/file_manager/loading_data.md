@@ -30,8 +30,7 @@ Data can be generated via any server-side script. In the data source you can use
 Requests to the server side
 -------------
 
-When some action is executed (upload, download, etc.) with files, File Manager sends a POST Ajax request to the corresponding server-side script specified in the "handlers" property 
-of FileManager configuration:
+When some action is executed (upload, download, etc.) with files, File Manager sends a POST Ajax request to the corresponding server-side script specified in the "handlers" property of FileManager configuration:
 
 ~~~js
 webix.ready(function(){
@@ -74,6 +73,109 @@ You can find several demos that implement PHP data in the File Manager package.
 {{sample
 64_file_manager/01_basic/04_operations.html
 }}
+
+Requests and responses for different operations
+--------------
+
+Requests and responses for various handlers (server scripts processing particular operations) may differ.
+
+###"copy", "move" operations
+
+**Request parameters** are:
+
+- action - the name of the action ("copy" or "move")
+- source - the list of file/folder ids
+- target - the id of the target folder
+
+~~~js
+action:"copy"
+source:"reports/sales01.doc,reports/sales02.doc"
+target:"sales"
+~~~
+
+The **response** is an array. Each element of this array is an object that includes the following properties:
+
+- id - the new id
+- value - the new name
+
+~~~js
+[
+	{"id":"sales\/sales01.doc","value":"sales01.doc"},
+    {"id":"sales\/sales02.doc","value":"sales02.doc"}
+]
+~~~
+
+###"remove" operation
+
+**Request parameters** are:
+
+- action - the name of the action ("remove")
+- source - the list of the files/folders' ids
+
+~~~js
+action:"copy"
+source:"reports/sales01.doc,reports/sales02.doc"
+~~~
+
+The **response** is any valid JSON, e.g.:
+
+~~~js
+["ok","ok"]
+~~~
+
+###"create" operation
+
+**Request parameters** are:
+
+- action - the name of the action ("create")
+- source - the name of a new folder
+- target - the id of the target folder
+
+~~~js
+action:	"create"
+value:	"newFolder"
+source: "newFolder"
+target: "documents/2016"
+~~~
+
+The **response** is a JSON object that includes the following properties:
+
+- id - the new folder id
+- value - the new folder name
+
+~~~js
+{
+	"id":"documents\/2016\/newFolder",
+    "value":"newFolder"
+}
+~~~
+
+###"rename" operation
+
+**Request parameters** are:
+
+- action - the name of the action ("rename")
+- source - the id of file/folder to rename
+- target - the new file/folder name
+
+~~~js
+action: "rename"
+source: "documents/2016/newFolder"
+target: "may"
+~~~
+
+The **response** is a JSON object that includes the following properties:
+
+- id - the new file/folder id
+- value - the new file/folder name
+
+~~~js
+{
+	"id":"documents\/2016\/may",
+    "value":"may"
+}
+~~~
+
 
 Dynamic loading
 -----------------

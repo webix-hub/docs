@@ -6,15 +6,21 @@ message
 	
 
 @params:
-- text	string	the text to show
+- content	string,object	the text to show or an object with the configuration of the message
 
 @example:
 webix.message("Some message");
 
+webix.message({
+	type:"error", 
+    text:"Form Data is Invalid"
+});
+
 @template:	api_method
 @descr:
 
-Supports many skins and configurations, check [jsMessage](https://github.com/dhtmlx/message) for more details.
+The possible properties of the content object are enumerated in the [Modal Message Boxes](desktop/message_boxes.md#modalmessageboxes) section.
+
 
 ###Hiding a message
 

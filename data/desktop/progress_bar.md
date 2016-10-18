@@ -11,13 +11,12 @@ Progress bar is set with **CSS means** for each file separately and is displayed
 
 ~~~js
 webix.type(webix.ui.list, {
-					name:"myUploader",
-					template: function(f, type){},
-                    status:function(f){},
-                    on_click:{},
-                    height: 35
-                    })
-                   
+	name:"myUploader",
+	template: function(f, type){},
+	status:function(f){},
+	on_click:{},
+	height: 35
+})                   
 ~~~
 
 
@@ -26,20 +25,23 @@ webix.type(webix.ui.list, {
 As a rule, displayed info contains the following data wrapped in the chosen CSS class (defined in the document head section).
 
 - **f.name** - name and extension of the file;
-- **cancel icon** (built-in icon set via CSS class *webix_remove_upload icon-cancel-circle webix_icon*). More About [Iconization](desktop/icon_types.md) here;
+- **cancel icon** (built-in icon set via CSS class *webix_remove_upload icon-cancel-circle webix_icon*). More about [Iconization](desktop/icon_types.md) here;
 - **f.status** - "transfer" or "server" with **f.percent** value for the latter;
 - **f.sizetext** - size of the file. 
 
 ~~~js
 template:function(f,type){
-			var html = "<div class='overall'><div class='name'>"+f.name+"</div>";
-			html += "<div class='remove_file'><span style='color:#AAA' class='webix_remove_upload icon-cancel-circle webix_icon'></span></div>";
-			html += "<div class='status'>";
-			html += "<div class='progress "+f.status+"' style='width:"+(f.status == 'transfer'||f.status=="server"?f.percent+"%": "0px")+"'></div>";
-			html += "<div class='message "+ f.status+"'>"+type.status(f)+"</div>";
-			html +=	 "</div>";
-			html += "<div class='size'>"+ f.sizetext+"</div></div>";
-			return html;
+	var html = "<div class='overall'><div class='name'>"+f.name+"</div>";
+	html += "<div class='remove_file'><span style='color:#AAA'"+
+    "class='webix_remove_upload icon-cancel-circle webix_icon'></span></div>";
+	html += "<div class='status'>";
+	html += "<div class='progress "+f.status+"'"+
+"style='width:"+(f.status == 'transfer'||f.status=="server"?f.percent+"%": "0px")+"'>"+
+	"</div>";
+	html += "<div class='message "+ f.status+"'>"+type.status(f)+"</div>";
+	html +=	 "</div>";
+	html += "<div class='size'>"+ f.sizetext+"</div></div>";
+	return html;
 }
 ~~~
 
@@ -49,13 +51,13 @@ Here you put a function that defines status message displayed in the progress ba
 
 ~~~js
 status:function(f){
-		var messages = {
-			server: "Done",
-			error: "Error",
-			client: "Ready",
-			transfer:  f.percent+"%"
-			};
-		return messages[f.status]
+	var messages = {
+		server: "Done",
+		error: "Error",
+		client: "Ready",
+		transfer:  f.percent+"%"
+	};
+	return messages[f.status]
 }
 ~~~
 
@@ -63,7 +65,7 @@ status:function(f){
 
 ~~~js
 on_click:{ "remove_file":function(ev, id){
-				$$(this.config.uploader).files.remove(id);}
+	$$(this.config.uploader).files.remove(id);}
 }
 ~~~
 

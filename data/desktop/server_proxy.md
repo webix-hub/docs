@@ -7,7 +7,7 @@ Built-in Proxy Objects
 
 There's a list of ready-to-use Webix proxy objects that can be used by adding prefixes to a loading script.
 
-- **offline** and **cache**  - for application [offline support](desktop/server_offline.md) of applications that use serverside data;
+- **offline** and **cache**  - for application [offline support](desktop/server_offline.md) of applications that use server-side data;
 - **local** - for saving component data into browser local storage and working with it. Described as part of [offline support](desktop/server_offline.md) article;
 - **connector**  - for saving data via [Server Side Connector](desktop/dataconnector.md);
 - **rest** - for working with server in [REST mode](desktop/server_rest.md);
@@ -20,7 +20,7 @@ There's a list of ready-to-use Webix proxy objects that can be used by adding pr
 
 
 
-Prefixes are used before the path to you serverside script:
+Prefixes are used before the path to you server-side script:
 
 ~~~js
 var list = {
@@ -59,7 +59,7 @@ var grid = {
 
 if (!static_proxy.getCache())
     static_proxy.setCache([
-        {"id":1,"title":"The Shaushenk Redemption ", 
+        {"id":1,"title":"The Shawshank Redemption ", 
             "year":"1998","votes":194865,"rating":"7.5","rank":1},
         {"id":2,"title":"The Godfather",
             "year":"1974","votes":511495,"rating":"9.2","rank":2}
@@ -110,7 +110,7 @@ Proxy objects
 
 ~~~js
 webix.proxy.myCustomName = {
-	$proxy:true
+	$proxy:true,
 	load:function(view, callback){
 		//your loading pattern
         ...
@@ -121,13 +121,8 @@ webix.proxy.myCustomName = {
         ...
 		webix.ajax().post(url, data, callback);
     },
-    saveAll:function(view, update, dp, callback){
-    	//your saving pattern 
-        ...
-        for (var i = 0; i < updates.length; i++) { ... }
-    },
     result:function(state, view, dp, text, data, loader){
-    	//your logic of serverside response processing
+    	//your logic of server-side response processing
         ...
         dp.processResult(state, data, details);
     },
@@ -142,22 +137,32 @@ Predefined methods that can be customized include:
 - **load**(view, callback) - is used for data loading and takes two parameters: 
 	- view - *object* - the component you work with;
     - callback - *function, object* - loading callback;
-- **save**(view, update, dp, callback) - is used for saving of single records and triggers when changes occur on client side. Takes four parameters: 
+- **save**(view, update, dp, callback) - is used for saving single records and is triggered when some changes occur on the client side. Takes four parameters: 
 	- view - *object* - the component you work with;
     - update - *array* - array of changed records, each of which contains data object, record id and operation name;
     - dp - *object* - DataProcessor object;
     - callback - *function, object* - saving callback;
-- **saveAll**(view, update, dp, callback) - is called after saving of a single record is complete to catch up for other changes occured in the component. Takes the same parameters as save();
-- **result**(state, view, dp, text, data, loader) - is called after data is saved and serverside response is received. Takes five parameters: 
+- **result**(state, view, dp, text, data, loader) - is called after data is saved and server-side response is received. Takes five parameters: 
 	- state - *object* - operation state;
     - view - *object* - the component you work with;
     - dp - *object* - DataProcessor object;
-    - text - *string* - serverside response text;
-    - data - *object* - raw data of serverside response; 
+    - text - *string* - server-side response text;
+    - data - *object* - raw data of server-side response; 
     - loader - *object* - XHR loader object.
 	
+    
+To save all changes occurred in the component, you can use the **saveAll**(view, update, dp, callback) method *instead* of **save**. 
+It takes the same parameters as the **save** method:
 
-To use a custom proxy, append its name as prefix to a loading or saving script (or both, is needed): 
+~~~js
+saveAll:function(view, update, dp, callback){
+	//your saving pattern 
+    ...
+    for (var i = 0; i < updates.length; i++) { ... }
+}
+~~~
+
+To use a custom proxy, append its name as prefix to a loading or saving script (or both, if needed): 
 
 ~~~js
 {
@@ -165,7 +170,7 @@ To use a custom proxy, append its name as prefix to a loading or saving script (
     url:"myCustomName->load.php", 
     save:"myCustomName->load.php"
 }
-//or, after component init
+//or, after component initialization
 $$("datatable1").load("myCustomName->load.php"); 
 ~~~
 
