@@ -93,7 +93,7 @@ webix.ui({
     type:"space",
     view:"portlet", header:"Drag me", body:{
         template:"Drag and drop portlets"
-    }}
+    }
 });
 ~~~
 
@@ -115,7 +115,7 @@ webix.ui({
 	type:"space",
 	view:"portlet", mode:"replace", body:{
 		template:"Drag and drop portlets"
-	}}
+	}
 });
 ~~~
 

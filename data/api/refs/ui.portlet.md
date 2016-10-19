@@ -15,13 +15,13 @@ var portlet = webix.ui({
   	rows:[
     	{ view:"portlet", body:{
 			template:"row 1"
-		}},
+		. }},
 		{ view:"portlet", body:{
 			template:"row 2"
-		}},
+		. }},
     	{ view:"portlet", body:{
 			template:"row 3"
-		}}
+		. }}
    	]
 });
 ~~~
@@ -104,6 +104,7 @@ var portlet = webix.ui({
 - api/link/ui.portlet_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.portlet_minheight_config.md - sets the minimal height for the view
 - api/link/ui.portlet_minwidth_config.md - sets the minimal width for the view
+- api/ui.portlet_mode_config.md - 
 - api/link/ui.portlet_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.portlet_padding_config.md - defines the space between the element borders and content (applies the specified value to all sides).
 - api/link/ui.portlet_paddingx_config.md - sets the right and left padding (applies the specified value to both sides)

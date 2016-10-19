@@ -52,6 +52,7 @@ dummy stub
 - api/link/ui.pdfbar_refresh.md - repaints the component
 - api/link/ui.pdfbar_removeview.md - removes view from layout-like component
 - api/link/ui.pdfbar_render.md - renders the specified item or the whole component
+- api/ui.pdfbar_reset.md - 
 - api/link/ui.pdfbar_resize.md - adjusts the view to a new size
 - api/link/ui.pdfbar_resizechildren.md - resizes all children of the calling component
 - api/link/ui.pdfbar_scrollto.md - scrolls the data container to a certain position
