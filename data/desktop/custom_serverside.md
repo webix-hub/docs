@@ -19,7 +19,7 @@ The following basic instructions will help you tune your scripts to return data 
 
 - [Data Loading](#load)
 - [Data Saving](#save)
-- [Tuning serverside response](#response)
+- [Tuning server-side response](#response)
 
 If you are unsure what to do in case you need to get data from a **different domain** with relations to your app's one, consult the our solution to [cross-domain data loading](desktop/crossdomain_loading.md).
 
@@ -53,7 +53,7 @@ For hierarchical data you need to have:
 - **relation_id** field in database table that for each record will store the ID of a record that will be **parent** for this one. For **root** record this parameter will be **0**;
 - (optionally) - **open** field for each record indicating whether this record will be initially opened (1) or not (0)  - if it has children, of course.
 
-Dataset is compiled with a function that contains SQL query with WHERE clause, which gets data from root record (parent = 0) down to all its children. JSON data for datatree should store chilren for an item in its **data** property:
+Dataset is compiled with a function that contains SQL query with WHERE clause, which gets data from root record (parent = 0) down to all its children. JSON data for datatree should store children for an item in its **data** property:
 
 ~~~php
 function get($id = 0) {
@@ -66,7 +66,7 @@ function get($id = 0) {
 	//convert data to json
 	$data = array();
 	while ($rec = $res->fetchArray(SQLITE3_ASSOC)) {
-		$rec["data"] = get($rec["id"]); //putting chilrden into item "data" property
+		$rec["data"] = get($rec["id"]); //putting children into item "data" property
 		$data[] = $rec;
 	}
 	//output json
@@ -95,7 +95,7 @@ $res = $db->query("SELECT * FROM films WHERE id={$id}");
 
 ##Data Saving {#save}
 
-In essence defining **save** initializes DataProcessor that gets data ready for sending to server and triggers script executing each time changes are made. Defaut DataProcessor logic can be [customized](desktop/dataprocessor.md).
+In essence defining **save** initializes DataProcessor that gets data ready for sending to server and triggers script executing each time changes are made. Default DataProcessor logic can be [customized](desktop/dataprocessor.md).
 
 Scripts gets changed data in body of POST request. For each inserted, updated and deleted record, all properties of its object are sent together with **webix_operation**
 
@@ -109,7 +109,7 @@ webix_operation	delete
 year	2012
 ~~~
 
-Additional item properies can be set as well by updating this item on client side:
+Additional item properties can be set as well by updating this item on client side:
 
 ~~~js
 var item = this.getItem(id);
@@ -121,7 +121,7 @@ The new property *old_rank* will be passed in POST like native item properties.
 
 {{sample 40_serverside/01_php_vanila/03_datatable_reordering.html}}
 
-You can easily get to these parameters to use them for making corresponding database quieries. 
+You can easily get to these parameters to use them for making corresponding database queries. 
 
 ~~~php
 $operation = $POST['webix_operation'];
@@ -171,13 +171,13 @@ webix.ajax().post("server/form_save.php", $$(""myform).getValues(), function(res
 });
 ~~~
 
-Form [getValues()](api/link/ui.form_getvalues.md) returns data from all fields as JSON object - just what is required for params sent via Ajax.
+Form [getValues()](api/link/ui.form_getvalues.md) returns data from all fields as JSON object - just what is required for parameters sent via Ajax.
 
 For tuning responses scroll down a little bit. For learning Webix  API for Ajax operations - go [there](helpers/ajax_operations.md).
 
 ##Tuning ServerSide Response {#response}
 
-For each query you should tune response, which can be either **plain text** or **JSON object** with necesary params:
+For each query you should tune response, which can be either **plain text** or **JSON object** with necessary parameters:
 
 ~~~php
 //plain text on failure

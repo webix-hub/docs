@@ -20,10 +20,6 @@ List items are grouped by title
 ~~~js
 webix.ui({
 	view:"unitlist", 
-    sort:{
-        by:"#title#",
-        dir: 'asc'
-    },
     uniteBy:function(obj){
         return obj.title.substr(0,1); 
     },
@@ -40,8 +36,7 @@ webix.ui({
 {{sample 05_list/11_unitlist.html }}
 
 - The **uniteBy** property groups data according to the specified criterion, the unit value (here it's the first letter to the data item title);
-- In addition it sets **unit headers** (unit values) and, additionally, sets [template](desktop/html_templates.md) for them;
-- **Sorting** is applied to unit headers as well as to data items within the units. 
+- In addition it sets **unit headers** (unit values) and, additionally, sets [template](desktop/html_templates.md) for them.
 
 {{snippet
 Unit header template

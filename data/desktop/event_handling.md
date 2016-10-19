@@ -211,7 +211,7 @@ grid.on_click.delbtn=function(e, id, trg){
 {{sample 15_datatable/14_events/02_click_css.html}}
 
 One of the columns features an HTML template with a button styled with *'delbtn'* CSS class. All  cells including the one with this button will react on default click behavior while when you 
-click on the button itself rather than on its cell area, the default behaviour will be overridden with the function attached to the 'delbtn' CSS class.
+click on the button itself rather than on its cell area, the default behavior will be overridden with the function attached to the 'delbtn' CSS class.
 
 2 . The **onClick** allows redefining current click behavior right in the component constructor.
 
@@ -299,7 +299,7 @@ The function returns false, selection is blocked
 $$("my_list").attachEvent("onBeforeSelect", function(){ return false; })
 ~~~
 
-You can also temporarily block all events assosiated with the component by using the **blockEvent()** method. To re-enable event triggering use 
+You can also temporarily block all events associated with the component by using the **blockEvent()** method. To re-enable event triggering use 
 the **unblockEvent()** method. 
 
 ~~~js
@@ -310,7 +310,7 @@ $$("component_id").unblockEvent();
 
 ##Delayed Events 
 
-The default value for response to events is 500ms. With such events as **onMouseMove** and **onMouseOut**, you can delay the server response for as much time (in milliseconds) as you need:
+The default value for response to events is 500 ms. With such events as **onMouseMove** and **onMouseOut**, you can delay the server response for as much time (in milliseconds) as you need:
 
 ~~~js
 webix.ui({
@@ -346,12 +346,12 @@ More information about key codes and hot keys is to be found in the [UI Manager]
 
 ##Global Webix Events
 
-Webix global events are not connected with any specific component and can be used to control general application issues (clicks, touch movements, serverside requests, etc). 
+Webix global events are not connected with any specific component and can be used to control general application issues (clicks, touch movements, server-side requests, etc). 
 Some of them repeat native DOM events.
 
 ###Events connected with Webix components functionality
 
-- **onDataTable**(config, obj) - fires the moment before a Webix [datatable](datatable/index.md) is renreded on the page;
+- **onDataTable**(config, obj) - fires the moment before a Webix [datatable](datatable/index.md) is rendered on the page;
 - **onEditEnd** - fires when a **popup data editor** (date, color, richselect) is closed in any of the components on the page. See desktop/editing.md article for details;
 - **onLiveValidation**(editor, result, obj, value) - fires when editing starts in the component with [live validation](api/ui.datatable_livevalidation_config.md) enabled;
 - **onSyncUnknown**(obj, source, filter) - fires when a component tries to [sync](desktop/nonui_objects.md) its data with a non-Webix collection;
@@ -378,7 +378,7 @@ Some of them repeat native DOM events.
 
 The details on Touch Events are given in [the related part of API reference](api/refs/ui.view_events.md)
 
-###Events connected with serverside requests from the page
+###Events connected with server-side requests from the page
 
 - **onBeforeAjax**(mode, url, data, request, headers, files, promise) - fires  when any Ajax request is issued. It can be developer request or automatic (when using [Data Connectors](desktop/dataconnector.md));
 - **onAjaxError**(request_obj) - fires when any Ajax request results in an error;
