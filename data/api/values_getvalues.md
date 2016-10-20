@@ -13,6 +13,7 @@ values	hash  returns hash of form values: data entered by user or initial data f
 @example:
 webix.ui({
 	view:"form",
+    id:"myform",
     elements:[
          //name is necessary for getting the control's value
     	 { view:"text", label:'Login', name:"login"},

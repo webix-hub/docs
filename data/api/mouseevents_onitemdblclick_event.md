@@ -6,8 +6,8 @@ onItemDblClick
 	fires when a component item was double-clicked
 
 @params:
-- id		string		the id of the clicked item
-* e  		Event		a native event object
+- id		object			the id of the clicked item
+* e  		Event			a native event object
 * node		HTMLElement		the target HTML element
 
 @example: 

@@ -8,7 +8,7 @@ getValue
 
 
 @returns:
-- value	string	the current value of the control
+- value		string		the current value of the control
 
 @example:
 webix.ui({
@@ -19,7 +19,7 @@ webix.ui({
     ]
 });
 
-$$('b1').getValue(); //returns "b1"
+$$('b1').getValue(); //returns "Edit"
 
 
 @template:	api_method
