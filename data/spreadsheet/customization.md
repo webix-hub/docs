@@ -94,10 +94,11 @@ spreadsheet.$$("bar");
 Toolbar buttons
 ---------------
 
-In this section we will consider the blocks of buttons, their names that you can use to refer to them and their purpose in detail.
+In this section we will consider the blocks of buttons, the names that you can use to refer to them and the purpose of each block in detail.
 
 <h3 id="file">File block</h3>
 
+<img src="spreadsheet/file_block.png">
 
 It includes the "sheet" select that allows working with sheet and contains three options:
 
@@ -112,6 +113,7 @@ and two buttons:
 
 <h3 id="undo">Undo/Redo block</h3>
 
+<img src="spreadsheet/undo_redo_block.png">
 
 It includes two buttons:
 
@@ -120,6 +122,7 @@ It includes two buttons:
 
 <h3 id="font">Font block</h3> 
 
+<img src="spreadsheet/font_block.png">
 
 This block contains a large group of buttons intended for handling font and cell borders' settings:
 
@@ -135,6 +138,7 @@ This block contains a large group of buttons intended for handling font and cell
 
 <h3 id="align">Align block</h3>
 
+<img src="spreadsheet/align_block.png">
 
 Besides managing Horizontal and Vertical cell alignment, this block also includes means of text wrapping and merging cells' content:
 
@@ -145,6 +149,7 @@ Besides managing Horizontal and Vertical cell alignment, this block also include
 
 <h3 id="number">Number block</h3> 
 
+<img src="spreadsheet/number_block.png">
 
 This block contains the *format* select, which sets the format of cell content. The available formats are:
 
@@ -156,6 +161,8 @@ This block contains the *format* select, which sets the format of cell content. 
 One more element of the block is the "custom-format" button which allows setting a custom format for a number in a cell.
 
 <h3 id="edit">Edit block</h3>
+
+<img src="spreadsheet/edit_block.png">
 
 The block includes a set of buttons for editing the cell's content:
 
@@ -170,10 +177,14 @@ The block includes a set of buttons for editing the cell's content:
 
 <h3 id="insert">Insert block</h3>
 
+<img src="spreadsheet/insert_block.png">
+
 - "add-image" button adds an image into a cell
 - "add-sparkline" button inserts a sparkline in a cell
 
 <h3 id="view">View block</h3>
+
+<img src="spreadsheet/view_block.png">
 
 - "row" button allows manipulating rows:insert/delete/hide/show them
 - "column" button lets manipulating columns:insert/delete/hide/show them

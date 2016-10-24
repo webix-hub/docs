@@ -13,7 +13,7 @@ webix.ui({
 });
 ~~~
 
-Then call the corresponding method: toPDF, toPNG or toExcel to export data from SpreadSheet into the file of the necessary format:
+Then call the corresponding method: api/_topdf.md, api/_topng.md or api/_toexcel.md to export data from SpreadSheet into the file of the necessary format:
 
 for Excel:
 
