@@ -112,7 +112,6 @@ var unitlist = webix.ui({
 - api/link/ui.unitlist_setpage.md - makes the specified page visible (assuming that the pager was defined )
 - api/link/ui.unitlist_show.md - makes the component visible
 - api/link/ui.unitlist_showitem.md - scrolls the component to make the specified item visible
-- api/link/ui.unitlist_sort.md - sorts datastore
 - api/link/ui.unitlist_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.unitlist_unbind.md - breaks "bind" link
 - api/link/ui.unitlist_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
@@ -131,6 +130,7 @@ var unitlist = webix.ui({
 - api/link/ui.unitlist_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.unitlist_onafterdelete_event.md - fires after item deleting
 - api/link/ui.unitlist_onafterdrop_event.md - fires after drag-n-drop was finished
+- api/link/ui.unitlist_onafterdroporder_event.md - called when dnd reordering is fully finished
 - api/link/ui.unitlist_onafterload_event.md - fires after data loading is complete
 - api/link/ui.unitlist_onafterrender_event.md - occurs immediately after the component has been rendered
 - api/link/ui.unitlist_onafterscroll_event.md - occurs when some webix view has been scrolled
@@ -142,6 +142,7 @@ var unitlist = webix.ui({
 - api/link/ui.unitlist_onbeforedrag_event.md - fires before the mouse button is pressed and the cursor is moved over a draggable item
 - api/link/ui.unitlist_onbeforedragin_event.md - fires before a dragged element is moved over the droppable area
 - api/link/ui.unitlist_onbeforedrop_event.md - fires before a dragged element is released over the droppable area
+- api/link/ui.unitlist_onbeforedroporder_event.md - called when dnd reordering has been made, but not applied yet
 - api/link/ui.unitlist_onbeforedropout_event.md - fires before a dragged element is released over the droppable area
 - api/link/ui.unitlist_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/link/ui.unitlist_onbeforerender_event.md - occurs immediately before the component has been rendered
@@ -189,7 +190,6 @@ var unitlist = webix.ui({
 - api/link/ui.unitlist_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.unitlist_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.unitlist_data_config.md - JavaScript array containing data for the component
-- api/link/ui.unitlist_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.unitlist_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.unitlist_datatype_config.md - the type of loaded data
 - api/link/ui.unitlist_disabled_config.md - indicates whether an item is enabled or not

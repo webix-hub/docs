@@ -160,6 +160,7 @@ webix.ui({
 
 
 {{api
+- api/link/ui.daterangesuggest_$enterkey_other.md - 
 - api/link/ui.daterangesuggest_$getsize_other.md - returns the current size of the component
 - api/link/ui.daterangesuggest_$height_other.md - current height of the view
 - api/link/ui.daterangesuggest_$scope_other.md - scope for resolving event and method names

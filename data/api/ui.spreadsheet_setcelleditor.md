@@ -1,8 +1,6 @@
 setCellEditor
 =============
 
-
-
 @short:
 	creates an editor in a cell
 
@@ -29,4 +27,10 @@ The editorObject parameter can have the following properties:
 - options - (string,array) a range of cell references or an array of editor options
 
 @relatedsample:
-65_spreadsheet/01_basic/14_dropdowns.html
+65_spreadsheet/02_api/07_dropdowns.html
+
+@related:
+spreadsheet/cell_content.md#addinganeditorintoacell
+
+@relatedapi:
+api/ui.spreadsheet_getcelleditor.md

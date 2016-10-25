@@ -156,6 +156,7 @@ webix.ui({
 
 
 {{api
+- api/ui.suggest_$enterkey_other.md - 
 - api/link/ui.suggest_$getsize_other.md - returns the current size of the component
 - api/link/ui.suggest_$height_other.md - current height of the view
 - api/link/ui.suggest_$scope_other.md - scope for resolving event and method names
