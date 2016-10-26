@@ -21,7 +21,14 @@ var isVisible = $$("ssheet").isRowVisible(1);
 @template:	api_method
 @descr:
 
-@relatedsample:
-65_spreadsheet/01_basic/08_columns_rows.html
+@related:
+spreadsheet/rows_columns.md#workingwithrows
+
+@relatedapi:
+api/ui.spreadsheet_deleterow.md
+api/ui.spreadsheet_getrow.md
+api/ui.spreadsheet_hiderow.md
+api/ui.spreadsheet_insertrow.md
+
 
 

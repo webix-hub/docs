@@ -21,4 +21,9 @@ webix.ui({
 @template:	api_config
 @descr:
 
+@relatedsample:
+65_spreadsheet/03_customization/02_subbar.html
 
+
+@related:
+spreadsheet/config.md#addingsubbar

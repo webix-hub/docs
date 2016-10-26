@@ -18,7 +18,7 @@ Columns can have different type of content (numbers, strings, dates) and each ty
 
 ###Sorting Modes for Different Data Types
 
-For this purpose, DataTable provides 4 sorting types to ensure correct sorting of columns:
+For this purpose, DataTable provides 5 sorting types to ensure correct sorting of columns:
 
 1. *int*;
 2. *date*;

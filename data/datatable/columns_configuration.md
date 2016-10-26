@@ -21,9 +21,9 @@ With the help of the [columns](api/ui.datatable_columns_config.md) parameter you
 - [set the text alignment in a column](#textalignment);
 - [set the format of data presentation](#dataformats);
 - [specify data of columns through math formulas](#mathincolumns);
-- [specify datasource for the column](#externaldatasourceforthecolumn);
+- [specify data source for the column](#externaldatasourceforthecolumn);
 - [define templates for data presentation](#templates);
-- [define individual css class for any column](#styling);
+- [define individual CSS class for any column](#styling);
 - [hide/show a column](#hidingshowingcolumns);
 - [hide/show columns in groups](#settinghiddenvisiblecolumnsingroups);
 - [add/delete columns dynamically](#addingdeletingcolumnsdynamically);
@@ -202,13 +202,14 @@ For more details, read the [Filtering](datatable/filtering.md) article.
 Built-in sorting
 ---------------------------
 You are allowed to sort data in columns. The way of sorting depends on the column sorting type. 
-There are 3 predefined sorting types:
+There are 4 predefined sorting types:
 
 - *int*
+- *date*
 - *string*
-- *string_strict* 
+- *string_strict* (case-sensitive string sorting)
 
-Last one is a case-sensitive string sorting  
+You can also set a [custom sorting type](datatable/sorting.md#addingcustomsortingtype).
 
 The sorting is specified by attribute **sort**.
 
@@ -285,20 +286,21 @@ columns:[
 
 For more details, read the [Using formulas](datatable/formulas.md) article.
 
-External Datasource for the Column
+External Data Source for the Column
 ------------------
 
-The **collection** property of the column allows syncing column data with that of a [dataCollection object](desktop/nonui_objects.md) or any data management [component](desktop/components.md). 
+The **collection** property of the column allows syncing column data with that of a [dataCollection object](desktop/nonui_objects.md) or any data management 
+[component](desktop/components.md#data_widgets). 
 
 ~~~js
 {	id:"order-1",
 	view:"datatable",
 	columns:[
 		{ id:"product", header:"Product", collection:"dash-pro" },
-		{ id:"quantity", header:"Quatity", 	... },
+		{ id:"quantity", header:"Quantity", 	... },
 		{ id:"price", header:"Unit price",  ... }
 	],
-	dataFeed:"data/orderproducts.php", //main datasource
+	dataFeed:"data/orderproducts.php", //main data source
 };
 ~~~
 
@@ -338,10 +340,10 @@ For more details, read the [Data templates](datatable/templates.md) article.
 
 Styling
 -------------
-Many aspects of column can be customized to achieve the desired look-and-feel. Column style can be adjusted in a css class and applied through attribute **css**.
+Many aspects of a column can be customized to achieve the desired look-and-feel. Column style can be adjusted in a CSS class and applied through the **css** attribute.
 
 {{snippet
-Applying a css class to a specific column
+Applying a CSS class to a specific column
 }}
 
 ~~~js

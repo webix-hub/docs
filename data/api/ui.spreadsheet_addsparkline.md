@@ -27,3 +27,6 @@ the config object includes the following properties:
 - negativeColor - (string) the color of a negative value for a Bar sparkline 
 
 @relatedsample: 65_spreadsheet/02_api/10_sparklines.html
+
+@related:
+spreadsheet/cell_content.md#addingsparklinesintoacell

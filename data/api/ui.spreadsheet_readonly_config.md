@@ -19,3 +19,8 @@ webix.ui({
 @descr:
 
 
+@related:
+spreadsheet/config.md#makingspreadsheetreadonly
+
+@relatedsample:
+65_spreadsheet/01_basic/04_readonly.html

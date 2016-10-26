@@ -19,7 +19,14 @@ isColumnVisible
 var isVisible = $$("ssheet").isColumnVisible(2);
 
 @template:	api_method
-@descr:
 
-@relatedsample:
-65_spreadsheet/01_basic/08_columns_rows.html
+@related:
+spreadsheet/rows_columns.md#workingwithcolumns
+
+@relatedapi:
+api/ui.spreadsheet_deletecolumn.md
+api/ui.spreadsheet_getcolumn.md
+api/ui.spreadsheet_hidecolumn.md
+api/ui.spreadsheet_insertcolumn.md
+
+

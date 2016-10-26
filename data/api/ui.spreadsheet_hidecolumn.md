@@ -19,4 +19,11 @@ $$("ssheet").hideColumn(2, true);
 @template:	api_method
 @descr:
 
+@related:
+spreadsheet/rows_columns.md#workingwithcolumns
 
+@relatedapi:
+api/ui.spreadsheet_deletecolumn.md
+api/ui.spreadsheet_getcolumn.md
+api/ui.spreadsheet_insertcolumn.md
+api/ui.spreadsheet_iscolumnvisible.md

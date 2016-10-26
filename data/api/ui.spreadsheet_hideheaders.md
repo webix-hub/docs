@@ -19,4 +19,4 @@ $$("ssheet").hideHeaders(state);
 @descr:
 
 @relatedsample:
-65_spreadsheet/02_api/04_borders_headers.html
+65_spreadsheet/02_api/04_borders_and_gridlines.html

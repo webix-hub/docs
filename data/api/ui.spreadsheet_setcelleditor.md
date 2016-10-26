@@ -1,8 +1,6 @@
 setCellEditor
 =============
 
-
-
 @short:
 	creates an editor in a cell
 
@@ -15,9 +13,9 @@ setCellEditor
 
 
 @example:
-$$("ss1").setCellEditor(1,8,{ editor:"richselect", options:["One", "Two", "Three"]});
+$$("ss1").setCellEditor(8,1,{ editor:"richselect", options:["One", "Two", "Three"]});
 // or
-$$("ss1").setCellEditor(2,8,{ editor:"richselect", options:"B3:B7" });
+$$("ss1").setCellEditor(8,2,{ editor:"richselect", options:"B3:B7" });
 
 
 @template:	api_method
@@ -29,4 +27,7 @@ The editorObject parameter can have the following properties:
 - options - (string,array) a range of cell references or an array of editor options
 
 @relatedsample:
-65_spreadsheet/01_basic/14_dropdowns.html
+65_spreadsheet/02_api/07_dropdowns.html
+
+@related:
+spreadsheet/cell_content.md#addinganeditorintoacell

@@ -18,3 +18,8 @@ $$("ssheet").addImage(rowId,columnId, url);
 @template:	api_method
 @descr:
 
+@relatedsample:
+65_spreadsheet/02_api/11_images.html
+
+@related:
+spreadsheet/cell_content.md#addingimageinacell

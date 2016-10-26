@@ -9,14 +9,16 @@ Formatting can be applied to a selected range of cells as well.
 
 <img src="spreadsheet/conditional_formatting_result.png">
 
-To specify a condition for a cell you need to set 5 parameters:
+Each condition for a cell formatting consists of 5 parameters:
 
 - the row id
 - the column id
 - the operator of comparison
 - the number to compare the cell value with
-- the CSS style that will be applied to the cell if its value complies with the condition (see the details below)
+- the [CSS style](spreadsheet/conditional_formatting.md#howtostorecssstylesusedinconditions) that will be applied to the cell if its value complies with the condition 
 
+The ways of specifying conditions for cells' formatting are described in the section 
+[Conditional Formatting API](spreadsheet/conditional_formatting.md#conditionalformattingapi).
 
 {{sample 65_spreadsheet/01_basic/08_conditional_styles.html}}
 
@@ -60,9 +62,9 @@ conditionStyle:[
 
 ##Conditional Formatting API
 
-You can set conditions for a cell value directly in a data source.
+You can set conditions for cells' formatting directly in a data source.
 
-For this purpose,use the *conditions* collection of the data object. You can specify a set of conditions in one array:
+For this purpose, use the *conditions* collection of the data object. You can specify a set of conditions in one array:
 
 ~~~js
 data.conditions = [
@@ -71,11 +73,13 @@ data.conditions = [
 ];
 ~~~
 
-Use the *conditions* collection to manage cells formatting:
+The *conditions* collection also allows you to manage cells formatting: 
+
+- add formatting to 
 
 ###Add formatting to a cell
 
-You can add formatting to cell by using the conditions.add() method. The method takes five parameters:
+You can add formatting to cell by using the **conditions.add()** method. The method takes five parameters:
 
 - rowId - (number) the row id
 - columnId - (number) the column id

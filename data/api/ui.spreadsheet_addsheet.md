@@ -20,3 +20,5 @@ $$("ssheet").addSheet(content);
 @template:	api_method
 @descr:
 
+@related:
+spreadsheet/multiple_sheets.md#addinganewsheet

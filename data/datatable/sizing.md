@@ -410,22 +410,6 @@ grid = new webix.ui({
 });
 ~~~
 
-The size of the scroll bars (vertical and horizontal at the same time) can be managed by parameter [scrollSize](api/ui_scrollsize_other.md) (by default, 18px).
-
-{{snippet
-Managing the size of the scroll bars
-}}
-
-~~~js
-grid = webix.ui({
-	view:"datatable",
-	...
-	scrollSize:20
-})
-~~~
-
-
-
 You can also force DataTable to be scrolled just by whole rows, i.e. you won't be able to scroll along the full length of rows. The related parameter you should enable is [scrollAlignY](api/ui.datatable_scrollaligny_config.md):
 
 {{snippet Scrolling DataTable by whole rows}}
