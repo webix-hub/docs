@@ -11,7 +11,6 @@ insertColumn
 - columnId			number		the id of the column before which a new column will be inserted
 
 
-
 @example:
 
 $$("ssheet").insertColumn(3);
@@ -20,4 +19,11 @@ $$("ssheet").insertColumn(3);
 @descr:
 If the column id isn't specified, a new column will be inserted before the selected one.
 
+@related:
+spreadsheet/rows_columns.md#workingwithcolumns
 
+@relatedapi:
+api/ui.spreadsheet_deletecolumn.md
+api/ui.spreadsheet_getcolumn.md
+api/ui.spreadsheet_hidecolumn.md
+api/ui.spreadsheet_iscolumnvisible.md

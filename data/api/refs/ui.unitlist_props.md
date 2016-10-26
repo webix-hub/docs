@@ -43,7 +43,6 @@ Properties
 - api/link/ui.unitlist_scroll_config.md - enables/disables the scroll bar
 - api/link/ui.unitlist_scrollspeed_config.md - the time during which the component is scrolled to the specified position (in milliseconds)
 - api/link/ui.unitlist_select_config.md - enables/disables item selection or multiselection in grouplist
-- api/ui.unitlist_sort_config.md - sets sorting rule(s) according which items will be sorted within units
 - api/link/ui.unitlist_template_config.md - the component template
 - api/link/ui.unitlist_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
 - api/link/ui.unitlist_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
@@ -97,7 +96,6 @@ Properties
 - api/link/ui.unitlist_scroll_config.md
 - api/link/ui.unitlist_scrollspeed_config.md
 - api/link/ui.unitlist_select_config.md
-- api/ui.unitlist_sort_config.md
 - api/link/ui.unitlist_template_config.md
 - api/link/ui.unitlist_templatecopy_config.md
 - api/link/ui.unitlist_tooltip_config.md

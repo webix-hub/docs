@@ -8,6 +8,7 @@ Suggest List
 - [Checksuggest API](api/refs/ui.checksuggest.md)
 - [Gridsuggest API](api/refs/ui.gridsuggest.md)
 - [Datasuggest API](api/refs/ui.datasuggest.md)
+- [DateRangeSuggest API](api/refs/ui.daterangesuggest.md)
 
 ##Overview
 
@@ -358,10 +359,11 @@ The functionality is available in **Webix Pro** edition only.
 
 Webix offers advanced suggest controls for width extra functionality and greater visual effect:
 
-- **Checksuggest** - a suggest control based on Webix [list](desktop/list.md). Features checkboxes that enable multiple choice;
-- **Multisuggest** - a suggest control based on Webix [list](desktop/list.md) with the ability to select **multiple items** at a time;
-- **Gridsuggest** - a suggest control based on Webix [datatable](datatable/index.md);
-- **Datasuggest** - a suggest control based on Webix [dataview](desktop/dataview.md).
+- **Checksuggest** - a suggest control based on Webix [List](desktop/list.md). Features checkboxes that enable multiple choice;
+- **Multisuggest** - a suggest control based on Webix [List](desktop/list.md) with the ability to select **multiple items** at a time;
+- **Gridsuggest** - a suggest control based on Webix [DataTable](datatable/index.md);
+- **Datasuggest** - a suggest control based on Webix [DataView](desktop/dataview.md);
+- **DateRangeSuggest** - a suggest control based on Webix [DateRangePicker](desktop/daterangepicker.md).
 
 ###Checksuggest
 
@@ -378,7 +380,7 @@ Checksuggest control is used in a number of **PRO** controls. You can find its i
 
 <img src="desktop/multiselect_multisuggest.png">
 
-Multisuggest control is used in a [multiselect component editor](desktop/editing.md#multiselect). 
+Multisuggest control is used in the [multiselect component editor](desktop/editing.md#multiselect). 
 
 If needed, it can substitute Checksuggest for the above-mentioned use cases. See desktop/advanced_combo.md for details.
 
@@ -398,6 +400,14 @@ Gridsuggest can be used with form controls as well as with component editors. Mo
 
 Datasuggest can be used with form controls as well as with component editors. More about its configuration can be found in the [related article](desktop/datasuggest.md).  
 
+###DateRangeSuggest
+
+<img src="desktop/daterange_picker.png"/>
+
+{{sample 60_pro/02_form/11_daterangepicker.html}}
+
+DateRangeSuggest control is used in the [DateRangePicker](desktop/daterangepicker.md) widget. More details are given in the 
+[related section](desktop/daterangepicker.md#customizingpopupofdaterangepicker).
 
 @index:
 - desktop/datasuggest.md

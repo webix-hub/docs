@@ -20,3 +20,6 @@ api/ui.spreadsheet_columncount_config.md
 
 @related:
 spreadsheet/config.md#settingthecountofrowsandcolumns
+
+@relatedsample:
+65_spreadsheet/02_api/01_subbar_and_reset.html

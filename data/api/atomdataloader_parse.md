@@ -20,8 +20,10 @@ webix.ui({
 	...
 });
 
-var str = "<data><item id='1'><title>The Lord of the Rings</title><year>2003</year></item>";
-str += "<item id='2'><title>Star Wars: Episode V</title><year>1980</year></item></data>";
+var str = "<data><item id='1'><title>The Lord of the Rings</title>"+
+"<year>2003</year></item>";
+str += "<item id='2'><title>Star Wars: Episode V</title>"+
+"<year>1980</year></item></data>";
 
 $$("data").parse(str,"xml");
 

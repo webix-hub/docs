@@ -17,3 +17,8 @@ webix.ui({
 @descr:
 
 
+@related:
+spreadsheet/math.md#formulaeditor
+
+@relatedsample:
+65_spreadsheet/03_customization/03_editor_bar.html

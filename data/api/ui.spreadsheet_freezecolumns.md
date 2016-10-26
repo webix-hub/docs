@@ -19,3 +19,8 @@ $$("ssheet").freezeColumns(2);
 @descr:
 If the parameter isn't passed, the method unfreezes the frozen columns, if there are any
 
+@related:
+spreadsheet/frozen_rows_columns.md#freezingcolumns
+
+@relatedapi:
+api/ui.spreadsheet_freezerows.md

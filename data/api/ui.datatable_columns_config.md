@@ -45,6 +45,11 @@ Each object in the array specifies a single column. An object can take the follo
             </ul>
             </td>
 		</tr>
+        <tr>
+			<td class="webixdoc_links0"><b>collection</b></td>
+			<td>(<i>string</i>) allows <a href="datatable/columns_configuration.md#externaldatasourceforthecolumn">specifying data source for the column</a>
+by syncing column data with that of a <a href="desktop/nonui_objects.md">dataCollection object</a> or any data management <a href="desktop/components.md#data_widgets">component</a>.</td>
+		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>css</b></td>
 			<td>(<i>string</i>) the name of a css class that will be applied to the column</td>
@@ -156,6 +161,7 @@ Each object in the array specifies a single column. An object can take the follo
 					<li><b>"date"</b></li>
 					<li><b>"string"</b></li>
 					<li><b>"string_strict" (case-sensitive 'string')</b></li>
+                    <li><b><a href="datatable/sorting.md#addingcustomsortingtype">custom sorting type</a></b></li>
 				</ul>
 			</td>
 		</tr>

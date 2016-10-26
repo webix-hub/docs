@@ -66,7 +66,7 @@ For example, to display 4 as 4.0, use the format 0.0
 
 ###Applying Custom Format
 
-For setting a custom number format for a cell value, use of the api/ui.spreadsheet_setformat.md method. It takes three parameters:
+For setting a custom number format for a cell value, make use of the api/ui.spreadsheet_setformat.md method. It takes three parameters:
 
 - rowId - (number) the row id
 - columnId - (number) the column id

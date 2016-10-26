@@ -24,3 +24,8 @@ var isLocked = $$("ssheet").isCellLocked(rowId, columnId);
 @relatedsample:
 65_spreadsheet/02_api/15_lock_cell.html
 
+@related:
+spreadsheet/cell_content.md#lockingunlockingcells
+
+@relatedapi:
+api/ui.spreadsheet_lockcell.md

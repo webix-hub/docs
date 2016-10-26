@@ -157,7 +157,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 65_spreadsheet/01_basic/07_formula.html}}
+{{sample 65_spreadsheet/03_customization/03_editor_bar.html}}
 
 
 Using Named Ranges in Formulas

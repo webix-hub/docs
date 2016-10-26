@@ -20,3 +20,8 @@ $$("ssheet").attachEvent("onCellChange", function(row, column, value){
 @template:	api_event
 @descr:
 
+@relatedsample:
+65_spreadsheet/02_api/05_events.html
+
+@related:
+spreadsheet/handling_events.md

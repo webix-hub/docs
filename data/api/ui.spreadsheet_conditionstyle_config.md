@@ -23,3 +23,8 @@ Each element of the array presents an object with two properties:
 - name - (string) the name of the condition style
 - css - (string) the name of the corresponding CSS style
 
+@related:
+spreadsheet/conditional_formatting.md#howtostorecssstylesusedinconditions
+
+@relatedsample:
+65_spreadsheet/01_basic/08_conditional_styles.html

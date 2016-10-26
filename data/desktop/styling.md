@@ -140,7 +140,7 @@ webix.ui({
 Or **redefine default CSS** for this document: 
 
 ~~~css
-.mywin .webix_win_head .webix_template{
+.mywin .webix_win_head>.webix_view>.webix_template{
 	background: #444; color:#AFA;
 }
 ~~~

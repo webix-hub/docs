@@ -18,3 +18,12 @@ $$("ssheet").lockCell(rowId, columnId, state);
 @template:	api_method
 @descr:
 If the cell isn't specified, the selected cell will be locked.
+
+@relatedsample:
+65_spreadsheet/02_api/15_lock_cell.html
+
+@related:
+spreadsheet/cell_content.md#lockingunlockingcells
+
+@relatedapi:
+api/ui.spreadsheet_iscelllocked.md

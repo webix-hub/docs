@@ -20,3 +20,11 @@ $$("ssheet").insertRow(rowId);
 @descr:
 If the row id isn't specified, a new row will be inserted above the selected one.
 
+@related:
+spreadsheet/rows_columns.md#workingwithrows
+
+@relatedapi:
+api/ui.spreadsheet_deleterow.md
+api/ui.spreadsheet_getrow.md
+api/ui.spreadsheet_hiderow.md
+api/ui.spreadsheet_isrowvisible.md

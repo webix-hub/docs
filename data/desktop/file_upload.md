@@ -31,8 +31,11 @@ webix.ui({
             datatype:"json"
    		}, 
    		{
-			view:"list",  id:"mylist", type:"uploader",
-			autoheight:true, borderless:true	
+			view:"list",  
+            id:"mylist", 
+            type:"uploader",
+			autoheight:true, 
+            borderless:true	
 		}
   	]
 });
@@ -93,7 +96,7 @@ Template uploader is really good for attaching files to some message.
 
 ##Manipulations with Files
 
-The properties of the uploaded files are stored in the uploader **files** Data Collection that features an array of file objects.
+The properties of the uploaded files are stored in the uploader **files** Data Collection that contains an object of file objects.
 
 To get to all files currently added to the uploader body, apply the following code: 
 
@@ -102,7 +105,7 @@ To get to all files currently added to the uploader body, apply the following co
 $$("upl1").files.data.pull;
 ~~~
 
-The line returns an array of data items (files). Each file item contains information about its size, type, status, etc.
+The line returns an object with uploaded data items (files). Each file item contains information about its size, type, status, etc.
 
  Each file object includes:
 

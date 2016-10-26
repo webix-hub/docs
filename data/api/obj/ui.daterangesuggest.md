@@ -28,4 +28,4 @@ webix.ui({
 ### Where to start
 
 - [Overview of the DateRangeSuggest Control](desktop/daterangepicker.md)
-- [Samples](http://docs.webix.com/samples/60_pro/02_form/09_daterangepicker.html)
+- [Samples](http://docs.webix.com/samples/60_pro/02_form/11_daterangepicker.html)

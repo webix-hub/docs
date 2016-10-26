@@ -20,3 +20,8 @@ var data = $$("ssheet").serialize();
 @template:	api_method
 @descr:
 
+@related:
+spreadsheet/loading_data.md#savingandloadingstates
+
+@relatedsample:
+65_spreadsheet/02_api/02_serialization.html

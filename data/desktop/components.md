@@ -49,7 +49,7 @@ you will surely find a proper widget for your needs in the Webix library.
 </div>
 
 
-<h2 style="clear:both;"/>Data Widgets</h2>
+<h2 id="data_widgets" style="clear:both;"/>Data Widgets</h2>
 
 Data widgets are used to present data of a specified type on the page. 
 Such widgets manage the space allocated for their data and provide functionality for its access and configuration. 

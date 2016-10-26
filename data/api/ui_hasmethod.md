@@ -2,15 +2,15 @@ hasMethod
 =============
 
 
-@short: check does view in question supports the method
+@short: checks whether the view in question supports the method
 	
 
 @params:
-name	string		name of view
-method_name		string		name of method
+- name				string		name of view
+- method_name		string		name of method
 
 @returns:
-result		boolean		is method supported or not
+result		boolean		true, if the method is supported, otherwise false
 
 @example:
 

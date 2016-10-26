@@ -18,3 +18,11 @@ $$("ssheet").hideRow(3, true);
 @template:	api_method
 @descr:
 
+@related:
+spreadsheet/rows_columns.md#workingwithrows
+
+@relatedapi:
+api/ui.spreadsheet_deleterow.md
+api/ui.spreadsheet_getrow.md
+api/ui.spreadsheet_insertrow.md
+api/ui.spreadsheet_isrowvisible.md

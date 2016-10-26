@@ -22,3 +22,6 @@ $$("ss1").setFormat(2,2,"[>1000]> 0.0;[>100]Check 0,000.0#;[=0]Nope");
 
 @relatedsample:
 65_spreadsheet/02_api/12_format.html
+
+@related:
+spreadsheet/cell_content.md#settingacustomnumberformat

@@ -4,14 +4,14 @@ editCell
 	
 
 @params:
-- row	string	the row id
-- col   string   the column id
+- row	id		the row id
+- col   id		the column id
 * preserve	boolean	the <i>true</i> value 'says' to keep the previous editor opened
 * show	boolean	the <i>true</i> value 'says' to scroll DataTable if the specified cell is out of the viewport
 
 
 @example:
-dtable.editColumn(1, "title", true, true);
+dtable.editCell(1, "title", true, true);
 
 @template:	api_method
 @descr:
