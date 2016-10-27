@@ -97,6 +97,7 @@ Is used by a [multiselect](api/refs/ui.multiselect.md) control already.
 - api/link/ui.checksuggest_buttontext_config.md - defines text for the 'Select' button
 - api/link/ui.checksuggest_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.checksuggest_css_config.md - the name of a css class that will be applied to the view container
+- api/link/ui.checksuggest_data_config.md - 
 - api/link/ui.checksuggest_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.checksuggest_filter_config.md - custom filtering function
 - api/link/ui.checksuggest_fitmaster_config.md - size suggest box to the master control
@@ -127,6 +128,7 @@ Is used by a [multiselect](api/refs/ui.multiselect.md) control already.
 - api/link/ui.checksuggest_tofront_config.md - places window above other windows on clicking it
 - api/link/ui.checksuggest_top_config.md - the top offset of a window
 - api/link/ui.checksuggest_type_config.md - defines type of suggest control
+- api/link/ui.checksuggest_url_config.md - 
 - api/link/ui.checksuggest_value_config.md - sets the initial value for a control
 - api/link/ui.checksuggest_width_config.md - sets the width of the component
 - api/link/ui.checksuggest_zindex_config.md - stack order of the component

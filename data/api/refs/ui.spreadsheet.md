@@ -61,7 +61,7 @@ var spreadsheet = webix.ui({
 - api/ui.spreadsheet_freezecolumns.md - fixes the specified amount of columns "on the fly", starting from the very left one
 - api/ui.spreadsheet_freezerows.md - fixes the specified amount of rows "on the fly", starting from the very top one
 - api/ui.spreadsheet_getactivesheet.md - returns the name of the currently active sheet
-- api/ui.spreadsheet_getcelleditor.md - 
+- api/ui.spreadsheet_getcelleditor.md - returns the editor set in a cell
 - api/ui.spreadsheet_getcellvalue.md - returns the value of the cell
 - api/link/ui.spreadsheet_getchildviews.md - returns child views of the calling component
 - api/ui.spreadsheet_getcolumn.md - returns the configuration object of the specified SpreadSheet column
@@ -100,7 +100,7 @@ var spreadsheet = webix.ui({
 - api/link/ui.spreadsheet_removeview.md - removes view from layout-like component
 - api/ui.spreadsheet_renamesheet.md - replaces the sheet name with the a new one
 - api/ui.spreadsheet_reset.md - resets the SpreadSheet settings to the initial state
-- api/ui.spreadsheet_resetundo.md - 
+- api/ui.spreadsheet_resetundo.md - resets the Undo history
 - api/link/ui.spreadsheet_resize.md - adjusts the view to a new size
 - api/link/ui.spreadsheet_resizechildren.md - resizes all children of the calling component
 - api/ui.spreadsheet_savecell.md - saves changes made in the cell
@@ -151,6 +151,7 @@ var spreadsheet = webix.ui({
 {{api
 - api/link/ui.spreadsheet_animate_config.md - defines or disables view change animation.
 - api/link/ui.spreadsheet_borderless_config.md - used to hide the component borders
+- api/ui.spreadsheet_bottombar_config.md - 
 - api/ui.spreadsheet_buttons_config.md - contains the names of buttons blocks with arrays of buttons' names
 - api/link/ui.spreadsheet_cols_config.md - array of views objects arranged horizontally
 - api/ui.spreadsheet_columncount_config.md - the number of columns in the SpreadSheet
@@ -170,6 +171,7 @@ var spreadsheet = webix.ui({
 - api/ui.spreadsheet_math_config.md - enables the math functionality in the spreadsheet
 - api/link/ui.spreadsheet_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.spreadsheet_maxwidth_config.md - sets the maximum width for the view
+- api/ui.spreadsheet_menu_config.md - 
 - api/link/ui.spreadsheet_minheight_config.md - sets the minimal height for the view
 - api/link/ui.spreadsheet_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.spreadsheet_on_config.md - allows attaching custom handlers to inner events of the component
@@ -183,6 +185,7 @@ var spreadsheet = webix.ui({
 - api/link/ui.spreadsheet_rows_config.md - array of views objects arranged vertically
 - api/ui.spreadsheet_sheettabwidth_config.md - sets the width of a sheet tab
 - api/ui.spreadsheet_subbar_config.md - adds a view between the toolbar and the datatable
+- api/ui.spreadsheet_toolbar_config.md - 
 - api/link/ui.spreadsheet_type_config.md - defines the layout borders
 - api/link/ui.spreadsheet_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.spreadsheet_visiblebatch_config.md - sets the batch that will be shown initially

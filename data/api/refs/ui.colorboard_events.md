@@ -11,7 +11,7 @@ Events
 - api/link/ui.colorboard_onfocus_event.md - fires when a view gets focus
 - api/link/ui.colorboard_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.colorboard_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
-- api/ui.colorboard_onselect_event.md - 
+- api/ui.colorboard_onselect_event.md - fires when a user selects a color
 - api/link/ui.colorboard_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.colorboard_onswipey_event.md - occurs on a vertical swipe movement
 - api/link/ui.colorboard_ontimedkeypress_event.md - fires after typing has been finished in the field

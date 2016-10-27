@@ -31,7 +31,7 @@ Methods
 - api/ui.spreadsheet_freezecolumns.md - fixes the specified amount of columns "on the fly", starting from the very left one
 - api/ui.spreadsheet_freezerows.md - fixes the specified amount of rows "on the fly", starting from the very top one
 - api/ui.spreadsheet_getactivesheet.md - returns the name of the currently active sheet
-- api/ui.spreadsheet_getcelleditor.md - 
+- api/ui.spreadsheet_getcelleditor.md - returns the editor set in a cell
 - api/ui.spreadsheet_getcellvalue.md - returns the value of the cell
 - api/link/ui.spreadsheet_getchildviews.md - returns child views of the calling component
 - api/ui.spreadsheet_getcolumn.md - returns the configuration object of the specified SpreadSheet column
@@ -70,7 +70,7 @@ Methods
 - api/link/ui.spreadsheet_removeview.md - removes view from layout-like component
 - api/ui.spreadsheet_renamesheet.md - replaces the sheet name with the a new one
 - api/ui.spreadsheet_reset.md - resets the SpreadSheet settings to the initial state
-- api/ui.spreadsheet_resetundo.md - 
+- api/ui.spreadsheet_resetundo.md - resets the Undo history
 - api/link/ui.spreadsheet_resize.md - adjusts the view to a new size
 - api/link/ui.spreadsheet_resizechildren.md - resizes all children of the calling component
 - api/ui.spreadsheet_savecell.md - saves changes made in the cell
