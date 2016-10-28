@@ -22,7 +22,7 @@ var googlemap = webix.ui({
 
 ### Where to start
 
-- [Overview of the Form Widget](desktop/googlemap.md)
+- [Overview of the GoogleMap Widget](desktop/googlemap.md)
 - [Samples](http://docs.webix.com/samples/34_googlemap/index.html)
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
