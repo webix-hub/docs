@@ -60,8 +60,7 @@ webix.ui({
   input: $$("text_search"),
   body: {
     dataFeed: function (text) {
-      this.clearAll();
-      this.load("data/search/" + text);
+		this.load("server/data.php?filter[value]="+text)
     }
   }
 });
