@@ -16,8 +16,8 @@ webix.ui({
           height: 36,
           borderless:true 
         },
-	...
-		]
+		...
+	]
 });
 	
 webix.ui({

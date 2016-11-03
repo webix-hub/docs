@@ -15,9 +15,9 @@ Ui-related text control is a one-line input field with a label.
 ##Initialization
 
 ~~~js
-{view:"text", value:'dummy@email.com', label:"Email", inputAlign:"right", 
+{view:"text", value:"dummy@email.com", label:"Email", inputAlign:"right", 
 	labelAlign:"right"},
-{view:"text", type:'password', value:'123pass', label:"Password", inputAlign:"right", 
+{view:"text", type:"password", value:"123pass", label:"Password", inputAlign:"right", 
 	labelAlign:"right"}
 ~~~
 

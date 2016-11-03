@@ -86,7 +86,7 @@ webix.ui({
 	]
 });
 
-<input type='text' id='country4' value='Sweden' />"}
+<input type="text" id="country4" value="Sweden" />
 ~~~
 
 2 . The **same-name property** of JS [text](desktop/text.md) input, [combo](desktop/combo.md) and [richselect](desktop/richselect.md):
@@ -109,7 +109,8 @@ webix.ui({
         	{id:2, value:"Two"} //options list
         ],
         ready: function(){
-        	$$("richselect_1").setValue(this.getFirstId()); //defines the initially visible option
+        	// defines the initially visible option
+        	$$("richselect_1").setValue(this.getFirstId()); 
         }
     }
 });

@@ -41,3 +41,5 @@ If you need to implement data export offline, you should complete the following 
 ~~~js
 webix.cdn = "/local_folder";
 ~~~
+
+Note that 

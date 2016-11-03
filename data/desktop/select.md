@@ -19,7 +19,7 @@ Select is a control that allows selection from several items. It is based on HTM
 {view:"select", label:"Branch", value:1, options:[
 	{id:1, value:"Master" }, // the initially selected value
 	{id:2, value:"Release" }
-  ], labelAlign:'right' 
+  ], labelAlign:"right" 
 }
 
 //short form 
@@ -40,20 +40,3 @@ Select is a control that allows selection from several items. It is based on HTM
 - **value** (string, number) 
 	- within **options** array it sets text values for select items;
  	- within Select constructor it defines the initially selected item of the control (**option ID** in case of a full form, **option text** in case of a long form);
-    
-**Select option**, a list record, may contain:
-
-- a short string, like "Apple";
-- **multi-line text** with html tags. In this case, parent (e.g. toolbar) height should be increased. 
-
-~~~js
-{ view:"toolbar", height:100,elements:[
-	{ view:"select", options:[
-		{id:1,value:"Some long multiline content<ul><li>item1</li><li>item 2</li></ul>"}, 
-		{id:2,value:"Papaya" }
-	]}
-]}
-~~~
-
-{{sample 02_toolbar/20_richselect.html}} 
-

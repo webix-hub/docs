@@ -19,16 +19,26 @@ time, you can edit the text field and the items will be filtered according to th
 
 ~~~js
 //short form
-{ view:"combo", id:'field_m', label: 'Combo', value:"One", 
-	options:["One", "Two", "Three"]}
+{ 
+	view:"combo", 
+    id:"field_m", 
+    label:"Combo", 
+    value:"One", 
+	options:["One", "Two", "Three"]
+}
 
 //full form
-{ view:"combo", id:'field_t', label: 'Combo', value:"1", 
+{ 	
+	view:"combo", 
+    id:"field_t", 
+    label:"Combo", 
+    value:"1", 
 	options:[	
-    {id:1, value:"One"}, 
-    {id:2, value:"Two"}, 
-    {id:3, value:"Three"}
-]}
+    	{id:1, value:"One"}, 
+    	{id:2, value:"Two"}, 
+    	{id:3, value:"Three"}
+	]
+}
 
 //server options
 { view:"combo", options:"server/data.json"}
@@ -80,8 +90,8 @@ In case of a full initialization form, the **getValue()** method for combo will 
 Use **getInputNode()** to get to input object and, hence, the text value.  
 
 ~~~js
-$$('field_t').getValue(); // ->returns 1
-$$('field_t').getInputNode().value // -> returns "One"
+$$("field_t").getValue(); // -> returns 1
+$$("field_t").getInputNode().value // -> returns "One"
 ~~~
 
 {{sample 80_docs/unit_items.html}}

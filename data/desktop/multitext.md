@@ -22,7 +22,7 @@ UI-related multitext is a dynamic control based on standard Webix [text](desktop
 { 
 	view:"multitext", 
     id:"multi", 
-    value:'dummy@email.com, mirror@email.com', 
+    value:"dummy@email.com", 
     label:"Email" 
 }
 ~~~
@@ -54,12 +54,14 @@ In order to add new fields in the correct way, you should place the Multitext vi
 
 ~~~js
 webix.ui({
-  view: 'form',
+  view:"form",
   elements: [
-    { rows:[
-  		{view:'multitext', name:'multitext1', label: 'Multitext'}
-    ]},
-    {view:'text', name:'newinput', label: 'Text Input', width:270},
+  	{
+    	rows:[
+  			{view:"multitext", name:"multitext1", label:"Multitext"}
+    	]
+    },
+    {view:"text",name:"newinput",label:"Text Input",width:270},
   ]
 });
 ~~~

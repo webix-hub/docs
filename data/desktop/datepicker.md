@@ -17,7 +17,12 @@ on clicking the control. It allows choosing a date and, optionally, time in the 
 
 ##Initialization
 ~~~js
-{view:"datepicker", date: new Date(2012, 6, 8), label: 'Select Date', timepicker:true} 
+{
+	view:"datepicker", 
+    date:new Date(2012,6,8), 
+    label:"Select Date", 
+    timepicker:true
+} 
 ~~~
 
 ####Main properties
@@ -49,9 +54,9 @@ Datepicker calendar can be shown in the month or year mode. To set one of these 
 webix.ui({
 	view:"toolbar", 
 	elements:[
-	    {view:"datepicker", align: "right",label: 'Select Date', type:"month"} 
-	]}
-);
+    	{view:"datepicker",align:"right",label:"Select Date",type:"month"}
+    ]
+});
 ~~~
 
 ###Year mode
@@ -62,9 +67,9 @@ webix.ui({
 webix.ui({
 	view:"toolbar", 
 	elements:[
-	    {view:"datepicker", align: "right",label: 'Select Date', type:"year"} 
-	]}
-);
+	    {view:"datepicker",align:"right",label:"Select Date",type:"year"} 
+	]
+});
 ~~~
 
 ##Time selector 
@@ -74,7 +79,7 @@ If you need to select time (hours and minutes) only, use the datepicker with *ty
 <img src="desktop/date_picker_time.png"/>
 
 ~~~js
-{ view:"datepicker", type:"time", stringResult:true }
+{ view:"datepicker",type:"time",stringResult:true }
 ~~~
 
 {{note
@@ -87,12 +92,16 @@ Dates are formatted according to the helpers/date_formatting_methods.md.
 To limit user ability to pick date and time periods, you should access calendar object that lies in the datepicker popup and apply the needed configuration to it: 
 
 ~~~js
-{view:"datepicker", suggest:{
-	type:"calendar", body:{
-    	minDate:new Date(),
-        maxDate:"2016-05-07"
+{
+	view:"datepicker", 
+    suggest:{
+		type:"calendar", 
+        body:{
+    		minDate:new Date(),
+        	maxDate:"2016-05-07"
+    	}
     }
-}} 
+} 
 ~~~
 
 More about [Disabling Dates in Calendar](desktop/calendar.md#disablingdatesandtimeslotsincalendar)

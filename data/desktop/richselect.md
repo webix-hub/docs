@@ -21,9 +21,13 @@ Another possibility to create a component with a similar functionality is [attac
 
 ~~~js
 //full form
-{view:"richselect",
-	id: "list2", label: 'richselect', 
-    value:1, yCount:"3", options:[ 
+{
+	view:"richselect",
+	id:"list2", 
+    label:"richselect", 
+    value:1, 
+    yCount:"3", 
+    options:[ 
 		{id:1, value:"One"}, // the initially selected item
 		{id:2, value:"Two"}, 
 		{id:3, value:"Three"}
@@ -84,9 +88,9 @@ In the **Webix Pro** edition the control can be extended to show either a **data
 In case of a full initialization form, the **getValue()** method for richselect will return ID of selected option rather than text. Use **getText()** method to get text value.  
 
 ~~~js
-$$('field_t').getValue(); // ->returns 1
+$$("field_t").getValue(); // ->returns 1
 
-$$('field_t').getText() // -> returns "One"
+$$("field_t").getText() // -> returns "One"
 ~~~
 
 @spellcheck:usingdatasuggestforformcontrols,usinggridsuggestforformcontrols 

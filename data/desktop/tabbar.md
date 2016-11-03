@@ -19,12 +19,17 @@ images and icons.
 
 ~~~js
 rows:[
-	{view:"tabbar", id:'tabbar', value: 'listView', multiview:true, options: [
-		{ value: 'List', id: 'listView'},
-    	{ value: 'Form', id: 'formView'},
-    	{ value: 'Empty', id: 'emptyView'}]
+	{
+    	view: "tabbar", 
+        id: "tabbar", 
+        value: "listView", 
+        multiview: true, options: [
+			{ value: "List", id: "listView"},
+    		{ value: "Form", id: "formView"},
+    		{ value: "Empty", id: "emptyView"}
+        ]
 	},
-	//and then goes multiview
+	//and then multiview goes
 	{cells:[...]}
 ]    
 ~~~

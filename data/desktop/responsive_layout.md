@@ -155,7 +155,7 @@ or, it can be placed inside of a fixed layout to provide a dashboard-like view.
 
 ###Limitations
 
-- This feature will work only in latest Google, Chrome, Safari, and in IE11+.
+- This feature will work only in the latest Chrome, Safari, Firefox versions and in IE11+.
 
 - FlexLayout must always define columns, there is no support for rows-based FlexLayout.
 
