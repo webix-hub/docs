@@ -12,16 +12,19 @@ getStyle
 
 @returns:
 
-- style		string		the style set for the cell
+- style		object		an object with styles set for the cell
 
 
 
 @example:
 
-var style = $$("ssheet").getStyle(row, column);
+var style = $$("ssheet").getStyle(3,2); 
+
 
 @template:	api_method
 @descr:
 
+
 @relatedapi:
 api/ui.spreadsheet_setstyle.md
+api/ui.spreadsheet_addstyle.md

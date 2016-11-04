@@ -44,6 +44,20 @@ If you need to implement data export offline, you should complete the following 
 webix.cdn = "/local_folder";
 ~~~
 
+Note that specifying the path to the local CDN repository has some peculiarities:
+
+1) in case you set the path relative to the current page, it should be specified as:
+
+~~~js
+webix.cdn = "../../../../local_folder"; 
+~~~
+
+2) the absolute path to the repository should be specified as follows:
+
+~~~js
+webix.cdn = "http://localhost/local_folder";
+~~~
+
 ####Changing Font for Exported File
 
 By default, Webix provides the *pt-sans.regular.ttf* font file for export. If it doesn't suit you, e.g. you need specific characters that are not included in the font, you can add another file to the 
