@@ -1,8 +1,8 @@
 Quick Start with Tree
 =========================================
 
-This is a tutorial that will walk you through creating a basic application containing Tree. 
-You will learn how to initialize Tree customize it and populate with data.
+This tutorial will walk you through creating a basic application containing Tree. 
+You will learn how to initialize a Tree, populate it with data and set the desired configuration.
 
 <img src="datatree/quick_start.png"/>
 
@@ -31,7 +31,8 @@ A basic html page with the included code files
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Quick start with Tree</title>
 	<script src="../codebase/webix.js" type="text/javascript" charset="utf-8"></script>
-	<link rel="stylesheet" href="../codebase/webix.css" type="text/css" charset="utf-8">
+	<link rel="stylesheet" href="../codebase/webix.css" type="text/css" 
+    	charset="utf-8">
 </head>
 <body>
 	<script>
@@ -41,63 +42,57 @@ A basic html page with the included code files
 </html>
 ~~~
 
-Placing Tree on a page
-------------------------------------
-
-On the next step, you should create a *div* container where you then place your tree. 
-
-~~~html
-<div id="box" style="width:400px;height:200px;"></div>
-~~~
-
 Object constructor
 ---------------------------------
-After you have prepared the site for the tree you can move to its initialization.<br>
+After you have included the necessary files, you can move to Tree initialization.<br>
 To create a new Tree object you need to use the next constructor:
 
 {{snippet
 Tree constructor
 }}
 ~~~js
-tree = new webix.ui({ view:"tree" })
+webix.ui({ 
+	view:"tree" 
+});
 ~~~
-<br>
-The only mandatory parameter you should specify inside the constructor:
 
-- [container](api/link/ui.tree_container_config.md) - the HTML container for Tree. We created it on the previous step. 
+In fact, it's enough to initialize a Tree. However, it's also possible to put a tree inside of an HTML container.
+
+Placing Tree on a page
+------------------------------------
+
+To set a tree in a particular position of a page, you can put it in a container.
+For that, you should create a *div* container. Let's create a container with the "box" id: 
+
+~~~html
+<div id="box" style="width:400px;height:200px;"></div>
+~~~
+
+After that you need to use the above mentioned Tree constructor and specify the created container via the corresponding [property](api/link/ui.tree_container_config.md):
 
 {{snippet
 Basic Tree configuration
 }}
 ~~~js
-tree = new webix.ui({
-		container:"box",
-		view:"tree",
+webix.ui({
+	container:"box",
+	view:"tree"
 });
 ~~~
 
-
-General settings
------------------------------------
-On the previous step, we have defined primary configuration for Tree. 
-For more available settings, read other articles in this documentation, such as:
-
-- datatree/node_templates.md - available templates for customizing data content;
-- datatree/selection.md - describes how to enable selection in the tree;
-- datatree/sorting.md and datatree/filtering.md - says about means for sorting and filtering.
-
-
 Loading data
 ------------
-There are different ways to load data into Tree (read about them in chapter datatree/loading_data.md ).<br> We will use the easiest of the ways and specify data directly in the constructor with the help of the
-api/link/ui.tree_data_config.md property:
+
+There are different ways to load data into Tree (read about them in chapter datatree/loading_data.md ).
+
+We will use the easiest of the ways and specify data directly in the constructor with the help of the api/link/ui.tree_data_config.md property:
 
 {{snippet
 Loading data into the tree
 }}
 ~~~js
-tree = new webix.ui({
-	container:"testA",
+webix.ui({
+	// container:"box",
 	view:"tree",
 	data: [
 		{id:"root", value:"Cars", open:true, data:[
@@ -121,6 +116,16 @@ Congratulations! Now you can run your app and it'll produce Tree shown at the ve
 	80_docs/quick_start_datatree.html
 }}
 
+
+General configuration settings
+-----------------------------------
+
+On the previous steps, we have defined a primary configuration for Tree. 
+For more available settings, read other articles in this documentation, such as:
+
+- datatree/node_templates.md - available templates for customizing data content;
+- datatree/selection.md - describes how to enable selection in the tree;
+- datatree/sorting.md and datatree/filtering.md - says about means for sorting and filtering.
 
 What's next
 ----------------------
