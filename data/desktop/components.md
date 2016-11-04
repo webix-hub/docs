@@ -1,8 +1,9 @@
 UI Widgets
 ==================
-The <a title="ui library" href="http://webix.com">Webix UI library</a> supplies over 70 fully customizable widgets 
+The <a title="ui library" href="http://webix.com">Webix UI library</a> supplies over 80 fully customizable widgets and controls
 to help you build interfaces of different kinds, nicely present data and work with it. 
-There are also multiple controls and specific features to make your applications good-looking and user-friendly.
+There are also helpful extensions, integrations with <br> third-party tools and specific features to make your applications 
+good-looking and user-friendly.
 
 All the widgets are objects made with the webix.ui() constructor where the type of the widget
 is set by the 'view' property (the declarative syntax is available as well).
