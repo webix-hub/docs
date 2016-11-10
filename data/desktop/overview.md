@@ -2,7 +2,7 @@ Overview
 ===========
 
 Webix is a cross-browser, cross-device JavaScript framework for building interactive web applications using JavaScript, CSS, HTML5 techniques.
-The library delivers over 70 fully customizable components, provides JQuery integration and can work with any server-side 
+The library delivers over 80 fully customizable components, provides JQuery integration and can work with any server-side 
 platform: PHP, .NET, Java, etc. Flexible layouts, unlimited extensibility, controllable look-and-feel, and intuitive API 
 allow creating apps of any difficulty that will work equally well on desktop, mobile and tablet devices.
 
