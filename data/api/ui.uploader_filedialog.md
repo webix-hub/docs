@@ -22,10 +22,13 @@ $$("uploadAPI").fileDialog({ rowid : id.row });
 
 @template:	api_method
 @descr:
+{{note
+Pay attention that the method isn't supported in IE8 and IE9.
+}}
 
 File upload **context** is an optional object with any properties that you would like to see within an uploaded item data. 
 
-For instance, context can be used in an api/ui.uploader_onfileupload_event.md event: 
+For instance, context can be used in the api/ui.uploader_onfileupload_event.md event: 
 
 ~~~js
 webix.ui({

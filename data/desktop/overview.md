@@ -11,7 +11,7 @@ Main features
 
 <dl>
 <dt><a href="desktop/components.md">1. Rich UI </a></dt>
-<dd>The library supplies over 70 fully customizable components such as form, tree, grid, list etc. </dd>
+<dd>The library supplies over 80 fully customizable components such as form, tree, grid, list etc. </dd>
 <br>
 <dt><a href="desktop/data_loading.md">2. Supported data formats: XML, JSON, JsArray, CSV</a></dt>
 <dd>Developers can use their favorite formats to specify data. All popular data formats are supported.</dd>
@@ -60,7 +60,7 @@ Main features
 </dd>
 <br>
 <dt><a href="desktop/third_party_integration.md">17. Integration with third party libraries </a></dt>
-<dd>Webix can be integrated with various third party libraries: Backbone.js library, Google, Nokia and Yandex maps, Mercury, NicEdit, Tinymce and Code Mirror text editors, etc.
+<dd>Webix can be integrated with various third party libraries: Backbone.js library, Google, Here and Yandex maps, Mercury, NicEdit, Tinymce and Code Mirror text editors, etc.
 </dd>
 <br>
 <dt><a href="datatree/copying.md">18. Copying to/from clipboard</a></dt>

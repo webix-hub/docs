@@ -1,7 +1,7 @@
 Material Design Skin
 ======================
 
-Skin works with Webix 2.3+. It is not inluded in the package and should be
+The skin works with Webix 2.3+. It is not included in the package and should be
 [downloaded from GitHub](https://github.com/webix-hub/material-design-skin).
 
 You can see live demo by [this link](http://webix.com/demos/material/admin-app/index.html#!/app/forms). 
@@ -20,7 +20,7 @@ How to use
 </head>
 <body>
 webix.ready(function(){
-    //some webix related UI here
+   //some webix related UI here
 });
 </body>
 </html>
@@ -35,7 +35,7 @@ An example of CSS classes usage is given by [this link](http://webix.com/demos/m
 ###Text and Background
 
 
-The following css classes are available for text:
+The following CSS classes are available for text:
 
 - text_primary
 - text_info
@@ -46,7 +46,7 @@ The following css classes are available for text:
 
 <img src="desktop/material_text_colors.png">
 
-The background css classes have similar names. Just replace *text_* with *bg_*:
+The background CSS classes have similar names. Just replace *text_* with *bg_*:
 
 <img src="desktop/material_background_colors.png">
 
@@ -78,7 +78,7 @@ The flat buttons look like this by default:
 
 <img src="desktop/material_flat_buttons.png">
 
-You can also combine flat and "raised" buttons by means of using several css rules:
+You can also combine flat and "raised" buttons by using several CSS rules:
 
 ~~~js
 webix.ui({
@@ -93,7 +93,7 @@ webix.ui({
 ###Icons
 
 
-There are 3 css icon classes:
+There are 3 CSS icon classes:
 
 - solid_icon
 - action_icon
