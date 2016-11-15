@@ -78,7 +78,6 @@ The **$update** function accepts 1 parameter - the data item object.
 
 And called:
 
-- for each data item, while initial data loading;
 - for updated items, while data reloading;
 - for the specified item, when the [update](api/datastore_updateitem.md) method is called.
 
