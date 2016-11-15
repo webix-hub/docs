@@ -103,7 +103,7 @@ webix.ui({
 
 Look for more item properties in the main [Uploader](desktop/file_upload.md) article.
 
-##Using ApiOly uploader for Drag-n-Drop
+##Using ApiOnly uploader for Drag-n-Drop
 
 Uploader initialization: 
 
