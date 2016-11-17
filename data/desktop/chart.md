@@ -20,7 +20,7 @@ Like all the data-presenting components it takes initial data in [various format
 The most important chart properties include **type**, **template** and **value** for data as well as criteria for data presenting (e.g. **step** of X axis in 
 a bar chart). Specify the chart ID if you are going to work with it later. 
 
-{{
+{{snippet
 Initialization of a Bar Chart
 }}
 ~~~js
@@ -53,6 +53,7 @@ To learn about all the chart properties, please refer to the [corresponding chap
 
 - [Chart Types](desktop/chart_types.md)
 - [Range Chart](desktop/range_chart.md)
+- [Dynamic Charts](desktop/dynamic_chart.md)
 - [Setting Chart Scales](desktop/chart_scales.md)
 - [Chart Series - Comparison Charts](desktop/chart_series.md)
 - [Setting Legend for a Chart](desktop/chart_legend.md)
@@ -75,6 +76,7 @@ To learn about all the chart properties, please refer to the [corresponding chap
 
 @index:
   - desktop/chart_types.md
+  - desktop/dynamic_chart.md
   - desktop/chart_scales.md
   - desktop/chart_series.md
   - desktop/chart_operations.md
