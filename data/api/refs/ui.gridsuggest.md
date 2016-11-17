@@ -119,6 +119,7 @@ webix.ui({
 - api/link/ui.gridsuggest_borderless_config.md - used to hide the component borders
 - api/link/ui.gridsuggest_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.gridsuggest_css_config.md - the name of a css class that will be applied to the view container
+- api/link/ui.gridsuggest_data_config.md - 
 - api/link/ui.gridsuggest_disabled_config.md - indicates whether an item is enabled or not
 - api/link/ui.gridsuggest_filter_config.md - custom filtering function
 - api/link/ui.gridsuggest_fitmaster_config.md - size suggest box to the master control
@@ -148,6 +149,7 @@ webix.ui({
 - api/link/ui.gridsuggest_tofront_config.md - places window above other windows on clicking it
 - api/link/ui.gridsuggest_top_config.md - the top offset of a window
 - api/link/ui.gridsuggest_type_config.md - defines type of suggest control
+- api/link/ui.gridsuggest_url_config.md - 
 - api/link/ui.gridsuggest_width_config.md - sets the width of the component
 - api/link/ui.gridsuggest_zindex_config.md - stack order of the component
 }}
@@ -160,6 +162,7 @@ webix.ui({
 
 
 {{api
+- api/link/ui.gridsuggest_$enterkey_other.md - 
 - api/link/ui.gridsuggest_$getsize_other.md - returns the current size of the component
 - api/link/ui.gridsuggest_$height_other.md - current height of the view
 - api/link/ui.gridsuggest_$scope_other.md - scope for resolving event and method names

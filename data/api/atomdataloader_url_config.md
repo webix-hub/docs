@@ -8,7 +8,7 @@ url
 @type: string
 @example:
 webix.ui({
-  datatype: "xml",
+  	datatype: "xml",
 	url: "data.xml"
 	...
 });

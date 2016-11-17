@@ -98,7 +98,14 @@ All other available properties can be found in the [Google API Reference](https:
 Getting the GoogleMap object
 ----------------------------
 
-To get the map object, use the following notation: **$$("map").map**.
+To get the map object, you can make use of the api/ui.google-map_getmap.md method. 
+It will return a promise which will be resolved when a map is rendered.
+
+~~~js
+$$("map").getMap().then(function(){
+    // some code
+});
+~~~
 
 Rendering data on a map
 ---------------------
@@ -114,7 +121,11 @@ Working with Markers
 
 ###Getting marker object
 
-To get the marker object, use the *getItem()* method: **$$("map").getItem(id).$marker**
+To get the marker object, use the **getItem()** method: 
+
+~~~js
+$$("map").getItem(id).$marker;
+~~~
 
 
 ###Controlling marker visibility
@@ -188,7 +199,16 @@ Working with Heatmap
 
 ###Getting heatmap object
 
-To refer to the heatmap object, use: **$$("map").heatmap**.
+Heatmap is constantly updated. You can get the actual heatmap object by using the **onHeatMapRender** event.
+It will fire when a heatmap will be rendered.
+
+~~~js
+$$("map").attachEvent("onHeatMapRender", function(heatmapObj){
+	// your code
+});
+~~~
+
+The handler function takes the heatmap object as a parameter.
 
 
 ###Specifying heatmap configuration

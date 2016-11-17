@@ -61,7 +61,7 @@ In the default mode, toolbar is shown with a limited set of buttons.
 
 <img src="spreadsheet/short_toolbar.png">
 
-To show all available buttons on the toolbar, you should specify the "full" mode, using the *toolbar* property:
+To show all available buttons on the toolbar, you should specify the "full" mode, using the api/ui.spreadsheet_toolbar_config.md property:
 
 ~~~js
 webix.ui({

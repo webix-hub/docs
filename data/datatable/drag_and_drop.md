@@ -316,8 +316,8 @@ The following events are generated during the d-n-d process:
 
 If the "order" mode is enabled, the api/link/ui.datatable_onbeforedrop_event.md and api/link/ui.datatable_onafterdrop_event.md events won't fire. In this case you need to use the corresponding events:
 
-- api/dragorder_onafterdroporder_event.md - called when drag-n-drop reordering is fully finished
-- api/dragorder_onbeforedroporder_event.md - called when drag-n-drop reordering has been made, but not applied yet
+- api/ui.datatable_onafterdroporder_event.md - called when drag-n-drop reordering is fully finished
+- api/ui.datatable_onbeforedroporder_event.md - called when drag-n-drop reordering has been made, but not applied yet
 
 In the default scenario there is no need to use any of the mentioned events, because DataTable will process all the operations on its own. But sometimes default behavior needs customizing - this is the time when the mentioned events can be used.
 

@@ -7,6 +7,7 @@ Methods
 - api/link/ui.pdfviewer_bind.md - binds components
 - api/link/ui.pdfviewer_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.pdfviewer_callevent.md - calls an inner event
+- api/ui.pdfviewer_clear.md - 
 - api/link/ui.pdfviewer_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.pdfviewer_destructor.md - destructs the calling object
 - api/link/ui.pdfviewer_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
@@ -43,6 +44,7 @@ Methods
 - api/link/ui.pdfviewer_bind.md
 - api/link/ui.pdfviewer_blockevent.md
 - api/link/ui.pdfviewer_callevent.md
+- api/ui.pdfviewer_clear.md
 - api/link/ui.pdfviewer_define.md
 - api/link/ui.pdfviewer_destructor.md
 - api/link/ui.pdfviewer_detachevent.md

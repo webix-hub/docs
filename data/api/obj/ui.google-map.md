@@ -19,5 +19,5 @@ var googlemap = webix.ui({
 
 ### Where to start
 
-- [Overview of the Form Widget](desktop/googlemap.md)
+- [Overview of the GoogleMap Widget](desktop/googlemap.md)
 - [Samples](http://docs.webix.com/samples/34_googlemap/index.html)

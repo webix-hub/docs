@@ -2,7 +2,7 @@ ui.daterangepicker
 =============
 
 
-{{memo A control that allows the user to select a date range}}
+{{memo A control that allows the user to select a date range. }}
 
 The control combines an editable text field with a set of drop-down calendars. It supports all date and time formats. 
 Besides the days of the month, it can display hour and minute selectors. 

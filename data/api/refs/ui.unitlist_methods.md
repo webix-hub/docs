@@ -73,7 +73,6 @@ Methods
 - api/link/ui.unitlist_setpage.md - makes the specified page visible (assuming that the pager was defined )
 - api/link/ui.unitlist_show.md - makes the component visible
 - api/link/ui.unitlist_showitem.md - scrolls the component to make the specified item visible
-- api/link/ui.unitlist_sort.md - sorts datastore
 - api/link/ui.unitlist_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.unitlist_unbind.md - breaks "bind" link
 - api/link/ui.unitlist_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
@@ -155,7 +154,6 @@ Methods
 - api/link/ui.unitlist_setpage.md
 - api/link/ui.unitlist_show.md
 - api/link/ui.unitlist_showitem.md
-- api/link/ui.unitlist_sort.md
 - api/link/ui.unitlist_sync.md
 - api/link/ui.unitlist_unbind.md
 - api/link/ui.unitlist_unblockevent.md

@@ -25,7 +25,7 @@ var colorboard = webix.ui({
 - [Samples](http://docs.webix.com/samples/24_colorpicker/index.html)
 
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
+<a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
 
 <div class='h2'>Methods</div>
@@ -52,7 +52,7 @@ var colorboard = webix.ui({
 - api/link/ui.colorboard_isenabled.md - checks whether the view is enabled
 - api/link/ui.colorboard_isvisible.md - checks whether the view is visible
 - api/link/ui.colorboard_mapevent.md - routes events from one object to another
-- api/ui.colorboard_moveselection.md - moves cell selection in the specified direction
+- api/link/ui.colorboard_moveselection.md - moves selection in the specified direction
 - api/ui.colorboard_refresh.md - repaints the component
 - api/ui.colorboard_render.md - renders the specified item or the whole component
 - api/link/ui.colorboard_resize.md - adjusts the view to a new size
@@ -76,6 +76,7 @@ var colorboard = webix.ui({
 - api/link/ui.colorboard_onfocus_event.md - fires when a view gets focus
 - api/link/ui.colorboard_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.colorboard_onlongtouch_event.md - fires on holding finger in some position for a certain period of time
+- api/ui.colorboard_onselect_event.md - fires when a user selects a color
 - api/link/ui.colorboard_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.colorboard_onswipey_event.md - occurs on a vertical swipe movement
 - api/link/ui.colorboard_ontimedkeypress_event.md - fires after typing has been finished in the field
@@ -105,7 +106,7 @@ var colorboard = webix.ui({
 - api/link/ui.colorboard_minheight_config.md - sets the minimal height for the view
 - api/ui.colorboard_minlightness_config.md - sets the start value of lightness for the default color palette
 - api/link/ui.colorboard_minwidth_config.md - sets the minimal width for the view
-- api/ui.colorboard_navigation_config.md - enables keyboard navigation
+- api/link/ui.colorboard_navigation_config.md - activates the selection keyboard navigation
 - api/link/ui.colorboard_on_config.md - allows attaching custom handlers to inner events of the component
 - api/ui.colorboard_palette_config.md - sets palette colors
 - api/ui.colorboard_rows_config.md - sets the number of rows in the palette

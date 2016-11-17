@@ -48,7 +48,7 @@ You can add several sheets into a SpreadSheet. You need to complete a couple of 
 1) enable a bottom bar
 
 You should add a bottom bar to place additional sheets on. For this,
-use the *bottombar* property with the *true* value.
+use the api/ui.spreadsheet_bottombar_config.md property with the *true* value.
 
 2) add the desired number of sheets with their configuration
 

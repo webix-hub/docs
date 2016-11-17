@@ -137,6 +137,28 @@ $$("ss1").setCellEditor(8,1,{ editor:"richselect", options:["One", "Two", "Three
 $$("ss1").setCellEditor(8,2,{ editor:"richselect", options:"B3:B7" });
 ~~~
 
+###Getting the cell editor
+
+You can get the editor set in a cell with the help of the api/ui.spreadsheet_getcelleditor.md method.
+
+The method takes the ids of cell's row and column as parameters.
+
+~~~js
+$$("ss1").getCellEditor(8,1); 
+~~~
+
+It will return an object with two properties:
+
+- editor - (string) the type of the editor
+- options - (string,array) a range of cell references or an array of editor options
+
+~~~js
+{editor:"richselect", options:["One","Two","Three"]}
+
+// or
+{editor:"richselect", options:"B3:B7"}
+~~~
+
 {{sample 65_spreadsheet/02_api/07_dropdowns.html}}
 
 
