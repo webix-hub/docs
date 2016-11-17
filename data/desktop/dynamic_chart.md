@@ -25,6 +25,7 @@ webix.ui({
     dynamic: true,
 	cellWidth: 50,
 	animateDuration:300  
+});
 ~~~
 
 There are three most important properties in the dynamic charts configuration:  

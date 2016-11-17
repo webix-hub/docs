@@ -151,7 +151,7 @@ var spreadsheet = webix.ui({
 {{api
 - api/link/ui.spreadsheet_animate_config.md - defines or disables view change animation.
 - api/link/ui.spreadsheet_borderless_config.md - used to hide the component borders
-- api/ui.spreadsheet_bottombar_config.md - 
+- api/ui.spreadsheet_bottombar_config.md - enables a bottombar for additional sheets
 - api/ui.spreadsheet_buttons_config.md - contains the names of buttons blocks with arrays of buttons' names
 - api/link/ui.spreadsheet_cols_config.md - array of views objects arranged horizontally
 - api/ui.spreadsheet_columncount_config.md - the number of columns in the SpreadSheet
@@ -171,7 +171,7 @@ var spreadsheet = webix.ui({
 - api/ui.spreadsheet_math_config.md - enables the math functionality in the spreadsheet
 - api/link/ui.spreadsheet_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.spreadsheet_maxwidth_config.md - sets the maximum width for the view
-- api/ui.spreadsheet_menu_config.md - 
+- api/ui.spreadsheet_menu_config.md - adds a dropdown menu at the top of SpreadSheet
 - api/link/ui.spreadsheet_minheight_config.md - sets the minimal height for the view
 - api/link/ui.spreadsheet_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.spreadsheet_on_config.md - allows attaching custom handlers to inner events of the component
@@ -185,7 +185,7 @@ var spreadsheet = webix.ui({
 - api/link/ui.spreadsheet_rows_config.md - array of views objects arranged vertically
 - api/ui.spreadsheet_sheettabwidth_config.md - sets the width of a sheet tab
 - api/ui.spreadsheet_subbar_config.md - adds a view between the toolbar and the datatable
-- api/ui.spreadsheet_toolbar_config.md - 
+- api/ui.spreadsheet_toolbar_config.md - enables the "full" toolbar mode (all available buttons are shown)
 - api/link/ui.spreadsheet_type_config.md - defines the layout borders
 - api/link/ui.spreadsheet_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.spreadsheet_visiblebatch_config.md - sets the batch that will be shown initially
