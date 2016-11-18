@@ -2,7 +2,7 @@
 
 RangeChart inherits from desktop/chart.md and gives the possibility to display in detail some data of a data component limited by frame. This component is useful for controlling and visualizing data of other data components.
 
-Check desktop/range_chart.md documentation for more details
+Check desktop/range_chart.md documentation for more details.
 
 ###Constructor 
 
@@ -23,4 +23,4 @@ var rangechart = webix.ui({
 ### Where to start
 
 - [Overview of the RangeChart Widget](desktop/range_chart.md)
-- [Samples](http://docs.webix.com/60_pro/12_rangechart/index.html)
+- [Samples](http://docs.webix.com/samples/60_pro/12_rangechart/index.html)

@@ -1,11 +1,27 @@
 ui.richtext 
 =============
 
+{{memo A rich text editor widget for entering and editing text. }}
 
-dummy stub
+Webix RichText is a widget that provides a WYSIWYG editing area for entering and formatting text.
 
-{{todo replace with real description. }}
+Check desktop/richtext.md documentation for more details.
 
+###Constructor 
+
+~~~js
+var richtext = webix.ui({
+    view: "richtext",
+    id:"richtext1",
+  	label:"Mytext",
+  	labelPosition:"top"
+});
+~~~
+
+### Where to start
+
+- [Overview of the RichText Widget](desktop/richtext.md)
+- [Samples](http://docs.webix.com/samples/13_form/01_controls/23_richtext.html)
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/idspace.md">IdSpace</a>, <a href="api/refs/ui.layout.md">ui.layout</a>, <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
@@ -24,14 +40,14 @@ dummy stub
 - api/link/ui.richtext_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.richtext_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.richtext_enable.md - enables the calling view that was disabled by the 'disable' method
-- api/ui.richtext_focus.md - 
+- api/ui.richtext_focus.md - sets focus to the richtext
 - api/link/ui.richtext_getchildviews.md - returns child views of the calling component
 - api/link/ui.richtext_getformview.md - returns master form for the input
-- api/ui.richtext_getinputnode.md - 
+- api/ui.richtext_getinputnode.md - gets the HTML element related to the component
 - api/link/ui.richtext_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.richtext_getparentview.md - returns the parent view of the component
 - api/link/ui.richtext_gettopparentview.md - returns top parent view
-- api/ui.richtext_getvalue.md - 
+- api/ui.richtext_getvalue.md - returns the current value of the richtext editor
 - api/link/ui.richtext_hasevent.md - checks whether the component has the specified event
 - api/link/ui.richtext_hide.md - hides the view
 - api/link/ui.richtext_index.md - returns the cell index in the layout collection
@@ -40,11 +56,11 @@ dummy stub
 - api/link/ui.richtext_isvisible.md - checks whether the view is visible
 - api/link/ui.richtext_mapevent.md - routes events from one object to another
 - api/link/ui.richtext_reconstruct.md - rebuilds the layout
-- api/ui.richtext_refresh.md - 
+- api/ui.richtext_refresh.md - repaints richtext editor
 - api/link/ui.richtext_removeview.md - removes view from layout-like component
 - api/link/ui.richtext_resize.md - adjusts the view to a new size
 - api/link/ui.richtext_resizechildren.md - resizes all children of the calling component
-- api/ui.richtext_setvalue.md - 
+- api/ui.richtext_setvalue.md - sets a new value for the richeditor control
 - api/link/ui.richtext_show.md - makes the component visible
 - api/link/ui.richtext_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
 - api/link/ui.richtext_ui.md - allows creating new ui, the id of which will be locked in the parent id space
@@ -58,7 +74,7 @@ dummy stub
 
 {{api
 - api/link/ui.richtext_onbindrequest_event.md - fires when the component is ready to receive data from the master component
-- api/ui.richtext_onchange_event.md - 
+- api/ui.richtext_onchange_event.md - fires when data in the input of the related form/toolbar is changed
 - api/link/ui.richtext_ondestruct_event.md - occurs when component destroyed
 }}
 
@@ -77,9 +93,9 @@ dummy stub
 - api/link/ui.richtext_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.richtext_id_config.md - the component ID
 - api/link/ui.richtext_isolate_config.md - masks IDs of all inner elements
-- api/ui.richtext_label_config.md - 
-- api/ui.richtext_labelposition_config.md - 
-- api/ui.richtext_labelwidth_config.md - 
+- api/ui.richtext_label_config.md - the text label of the rich text editor
+- api/ui.richtext_labelposition_config.md - positions label in relation to the control
+- api/ui.richtext_labelwidth_config.md - the width of the label
 - api/link/ui.richtext_margin_config.md - defines the space around elements (applies the specified value to all elements)
 - api/link/ui.richtext_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.richtext_maxwidth_config.md - sets the maximum width for the view
@@ -92,6 +108,7 @@ dummy stub
 - api/link/ui.richtext_responsive_config.md - enables responsive mode for horizontal layout
 - api/link/ui.richtext_rows_config.md - array of views objects arranged vertically
 - api/link/ui.richtext_type_config.md - defines the layout borders
+- api/ui.richtext_value_config.md - 
 - api/link/ui.richtext_visiblebatch_config.md - sets the batch that will be shown initially
 - api/link/ui.richtext_width_config.md - sets the width of the component
 }}

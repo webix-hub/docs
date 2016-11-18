@@ -13,9 +13,9 @@ Properties
 - api/link/ui.richtext_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.richtext_id_config.md - the component ID
 - api/link/ui.richtext_isolate_config.md - masks IDs of all inner elements
-- api/ui.richtext_label_config.md - 
-- api/ui.richtext_labelposition_config.md - 
-- api/ui.richtext_labelwidth_config.md - 
+- api/ui.richtext_label_config.md - the text label of the rich text editor
+- api/ui.richtext_labelposition_config.md - positions label in relation to the control
+- api/ui.richtext_labelwidth_config.md - the width of the label
 - api/link/ui.richtext_margin_config.md - defines the space around elements (applies the specified value to all elements)
 - api/link/ui.richtext_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.richtext_maxwidth_config.md - sets the maximum width for the view
@@ -28,6 +28,7 @@ Properties
 - api/link/ui.richtext_responsive_config.md - enables responsive mode for horizontal layout
 - api/link/ui.richtext_rows_config.md - array of views objects arranged vertically
 - api/link/ui.richtext_type_config.md - defines the layout borders
+- api/ui.richtext_value_config.md - 
 - api/link/ui.richtext_visiblebatch_config.md - sets the batch that will be shown initially
 - api/link/ui.richtext_width_config.md - sets the width of the component
 }}
@@ -59,6 +60,7 @@ Properties
 - api/link/ui.richtext_responsive_config.md
 - api/link/ui.richtext_rows_config.md
 - api/link/ui.richtext_type_config.md
+- api/ui.richtext_value_config.md
 - api/link/ui.richtext_visiblebatch_config.md
 - api/link/ui.richtext_width_config.md
 

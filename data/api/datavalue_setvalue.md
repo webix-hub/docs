@@ -1,8 +1,6 @@
 setValue
 =============
 
-
-
 @short:
 	sets a new value for the component
 

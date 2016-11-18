@@ -14,12 +14,12 @@ Methods
 - api/link/ui.gage_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.gage_getparentview.md - returns the parent view of the component
 - api/link/ui.gage_gettopparentview.md - returns top parent view
-- api/ui.gage_getvalue.md - 
+- api/ui.gage_getvalue.md - returns the gage value
 - api/link/ui.gage_hide.md - hides the view
 - api/link/ui.gage_isenabled.md - checks whether the view is enabled
 - api/link/ui.gage_isvisible.md - checks whether the view is visible
 - api/link/ui.gage_resize.md - adjusts the view to a new size
-- api/ui.gage_setvalue.md - 
+- api/ui.gage_setvalue.md - sets a value for the gage
 - api/link/ui.gage_show.md - makes the component visible
 - api/link/ui.gage_unbind.md - breaks "bind" link
 }}

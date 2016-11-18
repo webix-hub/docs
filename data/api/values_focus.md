@@ -1,8 +1,6 @@
 focus
 =============
 
-
-
 @short: sets focus into the necessary component
 	
 
@@ -16,15 +14,15 @@ focus
  
             ...
 function focus_form(item) {
-                if (!item)
-                    $$('htmlform1').focus();
-                else
-                    $$('htmlform1').focus(item);
-            }
+	if (!item)
+    	$$('htmlform1').focus();
+    else
+        $$('htmlform1').focus(item);
+}
 
 @template:	api_method
 @descr: 
-If applied with no parameter, the function sets focus on the whole component. 
+If applied without parameter, the function sets focus on the whole component. 
 
 @related:
 	desktop/uimanager.md

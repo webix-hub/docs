@@ -13,14 +13,14 @@ Methods
 - api/link/ui.richtext_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.richtext_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.richtext_enable.md - enables the calling view that was disabled by the 'disable' method
-- api/ui.richtext_focus.md - 
+- api/ui.richtext_focus.md - sets focus to the richtext
 - api/link/ui.richtext_getchildviews.md - returns child views of the calling component
 - api/link/ui.richtext_getformview.md - returns master form for the input
-- api/ui.richtext_getinputnode.md - 
+- api/ui.richtext_getinputnode.md - gets the HTML element related to the component
 - api/link/ui.richtext_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.richtext_getparentview.md - returns the parent view of the component
 - api/link/ui.richtext_gettopparentview.md - returns top parent view
-- api/ui.richtext_getvalue.md - 
+- api/ui.richtext_getvalue.md - returns the current value of the richtext editor
 - api/link/ui.richtext_hasevent.md - checks whether the component has the specified event
 - api/link/ui.richtext_hide.md - hides the view
 - api/link/ui.richtext_index.md - returns the cell index in the layout collection
@@ -29,11 +29,11 @@ Methods
 - api/link/ui.richtext_isvisible.md - checks whether the view is visible
 - api/link/ui.richtext_mapevent.md - routes events from one object to another
 - api/link/ui.richtext_reconstruct.md - rebuilds the layout
-- api/ui.richtext_refresh.md - 
+- api/ui.richtext_refresh.md - repaints richtext editor
 - api/link/ui.richtext_removeview.md - removes view from layout-like component
 - api/link/ui.richtext_resize.md - adjusts the view to a new size
 - api/link/ui.richtext_resizechildren.md - resizes all children of the calling component
-- api/ui.richtext_setvalue.md - 
+- api/ui.richtext_setvalue.md - sets a new value for the richeditor control
 - api/link/ui.richtext_show.md - makes the component visible
 - api/link/ui.richtext_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
 - api/link/ui.richtext_ui.md - allows creating new ui, the id of which will be locked in the parent id space

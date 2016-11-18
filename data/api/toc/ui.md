@@ -72,7 +72,7 @@ table.webixtoc td{
     <tr>
     	<td style="width:25px;">  <img src="api/toc/chart.png"/> </td>
         <td style="width:110px !important;">api/refs/ui.chart.md </td>
-        <td> a tool  for creating various charts</td>
+        <td> a tool for creating various charts</td>
     </tr>
     <tr>
     	<td> <img src="api/toc/datatable.png"/> </td>
@@ -82,7 +82,12 @@ table.webixtoc td{
     <tr>
     	<td> <img src="api/toc/dataview.png"/> </td>
         <td> api/refs/ui.dataview.md </td>
-        <td> a control for displaying data in a tabular format </td>
+        <td> a widget for displaying data in a tabular format </td>
+    </tr>
+    <tr>
+    	<td> <img src="api/toc/gage.png"/> </td>
+        <td> api/refs/ui.gage.md </td>
+        <td> a gage widget with a dial to visualize data updates</td>
     </tr>
     <tr>
     	<td> <img src="api/toc/grouplist.png"/> </td>
@@ -313,6 +318,11 @@ table.webixtoc td{
         <td>a non-editable combo box</td>
     </tr>
     <tr>
+    	<td> <img src="api/toc/richtext.png"/> </td>
+        <td> api/refs/ui.richtext.md </td>
+        <td>a rich text editor widget for entering and editing text</td>
+    </tr>
+    <tr>
     	<td> <img src="api/toc/search.png"/> </td>
         <td> api/refs/ui.search.md </td>
         <td> a text edit field with the search icon in front </td>
@@ -494,6 +504,7 @@ table.webixtoc td{
 - api/refs/ui.fieldset.md
 - api/refs/ui.filemanager.md
 - api/refs/ui.form.md
+- api/refs/ui.gage.md
 - api/refs/ui.google-map.md
 - api/refs/ui.gridsuggest.md
 - api/refs/ui.grouplist.md
@@ -522,6 +533,7 @@ table.webixtoc td{
 - api/refs/ui.rangeslider.md
 - api/refs/ui.resizer.md
 - api/refs/ui.richselect.md
+- api/refs/ui.richtext.md
 - api/refs/ui.scrollview.md
 - api/refs/ui.search.md
 - api/refs/ui.segmented.md

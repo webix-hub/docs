@@ -2,7 +2,7 @@ onChange
 =============
 
 
-@short: fires when data in the input or related form/toolbar is changed
+@short: fires when data in the input of related form/toolbar is changed
 	
 
 @params:

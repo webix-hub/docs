@@ -4,6 +4,8 @@
 GoogleMap widget allows working with geographical data using Webix and Google Map API. 
 This widget is based on View and inherits API from DataStore.
 
+Check desktop/googlemap.md documentation for more details.
+
 ### Constructor
 
 ~~~js

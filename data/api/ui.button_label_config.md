@@ -1,7 +1,6 @@
 label
 =============
 
-
 @short:
 	the text label of the control
 
@@ -14,8 +13,8 @@ webix.ui({
 		{ view:"text", label:"Email"},
 		{ view:"text", label:"Password"},
 		{ cols:[
-				{ view:"button", label:"Login" , type:"form" },
-				{ view:"button", label:"Cancel" }
+			{ view:"button", label:"Login" , type:"form" },
+			{ view:"button", label:"Cancel" }
 		]}
 	]
 });

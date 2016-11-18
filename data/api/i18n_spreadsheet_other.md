@@ -2,9 +2,9 @@ spreadsheet
 =============
 
 @short:
-	default locales for spreadsheet labels and tooltips
+	default locales for Spreadsheet labels and tooltips
 
-@type:
+@type:object
 
 @example:
 
@@ -38,7 +38,8 @@ webix.i18n.setLocale();
 @template:	api_config
 @descr:
 @related:
-- spreadsheet/localization.md
+spreadsheet/localization.md
+
 @relatedapi:
 	api/i18n_setlocale.md
 
