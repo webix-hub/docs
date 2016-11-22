@@ -13,7 +13,7 @@ once
 
 datatable.attachEvent("onItemClick", webix.once(function(id){
     webix.message(id); //Will be shown only for the first click;
-});
+}));
 
 
 @template:	api_method
