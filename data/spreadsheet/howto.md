@@ -48,8 +48,7 @@ webix.ui({
 ]
 ~~~
 
-{{sample 
-65_spreadsheet/03_customization/03_multisheet.html
-}}
+{{sample 65_spreadsheet/01_basic/07_multisheet.html}}
+
 
 @spellcheck:Tos

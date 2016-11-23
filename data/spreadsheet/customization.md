@@ -281,6 +281,6 @@ webix.ready(function(){
 ~~~
 
 {{sample
-65_spreadsheet/03_customization/05_context.html
+65_spreadsheet/03_customization/08_custom_menu.html
 }}
 

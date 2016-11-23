@@ -48,5 +48,5 @@ Excel file should be loaded with the help of **binary** [proxy](desktop/server_p
 	60_pro/10_viewers/02_excel_viewer.html
     60_pro/10_viewers/04_excel_proxy.html
     60_pro/10_viewers/03_excel_upload.html
-    65_spreadsheet/01_basic/05_excel.html
+   	65_spreadsheet/02_api/03_excel.html
     

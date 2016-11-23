@@ -68,6 +68,10 @@ If you need to return an error, the response should be as follows:
 {"action":"error", ...}
 ~~~
 
+###Response Types
+
+The following types of response are predefined: *update*, *insert*, *delete*, *invalid* and *error*.
+
 You can pass any data in a JSON response. Besides, the response can be received on the client side by means of the api/dataprocessor_onafterupdate_event.md event. 
 
 
