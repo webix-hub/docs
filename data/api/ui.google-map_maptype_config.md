@@ -20,3 +20,5 @@ webix.ui({
 @descr:
 There are four Google map types: "ROADMAP","SATELLITE","HYBRID","TERRAIN". Uppercase is a must.
 
+@relatedsample:
+34_googlemap/05_heatmap.html

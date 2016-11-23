@@ -20,3 +20,9 @@ webix.ui({
 @descr:
 
 There are "marker" (default) and "heatmap" types are available.
+
+@related:
+desktop/googlemap.md
+
+@relatedsample:
+34_googlemap/05_heatmap.html

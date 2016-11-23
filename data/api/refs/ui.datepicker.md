@@ -11,10 +11,10 @@ ui.datepicker
 ~~~js
 var datepicker = webix.ui({
  	view:"datepicker", 
-  	date:new Date(2012, 6, 8), 
-  	label:'Date', 
-  	timepicker:true,
-  	width:300
+  	value: new Date(2012, 6, 8), 
+  	label: "Date", 
+  	timepicker: true,
+  	width: 300
 });
 ~~~
 

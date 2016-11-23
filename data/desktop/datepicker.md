@@ -18,10 +18,10 @@ on clicking the control. It allows choosing a date and, optionally, time in the 
 ##Initialization
 ~~~js
 {
-	view:"datepicker", 
-    date:new Date(2012,6,8), 
-    label:"Select Date", 
-    timepicker:true
+	view: "datepicker", 
+    value: new Date(2012,6,8), 
+    label: "Select Date", 
+    timepicker: true
 } 
 ~~~
 
@@ -30,10 +30,9 @@ on clicking the control. It allows choosing a date and, optionally, time in the 
 - **label** (string) - text label of a control. It can be customized by:
 	- **labelAlign** (string) - label alignment towards its container. Possible values are "left" and "right".  In any way, it's placed left to the control; 
     - **labelWidth** (number) - width of the label container; 
-- **value** (string, obj) - initial value to display in the control input field;   
+- **value** (string, obj) - defines the initial value of the control;   
 - **placeholder** (string) - defines placeholder for datepicker input. The control should be initialized without an initial value;   
 - **timepicker** (boolean) - enables a clock for time selection (*false* by default);
-- **date** (function) - new Date() constructor to define the initial date of a calendar. If used without parameters, shows current date;
 - **stringResult** (boolean) - sets the data type of value returned by **getValue()/get Values()** methods. If true, it returns date as string. By default the property is *false* and the method returns date object;
 - **format** (string) - sets a date format to display in the datepicker field. By default it is "%Y-%m-%d". 
 - **type** (string) - (optional) sets the datepicker type: 

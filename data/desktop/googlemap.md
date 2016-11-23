@@ -38,11 +38,17 @@ webix.ui({
 
 **Main Properties**
 
-The following properties define the initial position of the map:
+The following properties define configuration of the GoogleMap widget: 
 
 - **id** - (string) defines the unique ID of the widget;
 - **zoom** - (number) defines the resolution of map objects displaying;
 - **center** - (array) sets the center of the map. It's an array of two elements (latitude and longitude) with comma delimiter.
+- **mapType** - (string) sets the Google map type.
+
+There are four Google map types: "ROADMAP","SATELLITE","HYBRID","TERRAIN". Uppercase is a must.
+
+{{sample 34_googlemap/05_heatmap.html}}
+
 - **layerType** - (string) the type of map layer
 
 There are two types of layer you can use for the GoogleMap widget:
@@ -199,7 +205,7 @@ Working with Heatmap
 
 ###Getting heatmap object
 
-Heatmap is constantly updated. You can get the actual heatmap object by using the **onHeatMapRender** event.
+Heatmap is constantly updated. You can get the actual heatmap object by using the api/ui.google-map_onheatmaprender_event.md event.
 It will fire when a heatmap will be rendered.
 
 ~~~js
@@ -213,7 +219,7 @@ The handler function takes the heatmap object as a parameter.
 
 ###Specifying heatmap configuration
 
-You can configure the heatmap displaying with the help of the *heatmapConfig* property.
+You can configure the heatmap displaying with the help of the api/ui.google-map_heatmapconfig_config.md property.
 It is an object that can contain various Google API properties for heatmap, e.g. opacity 
 
 ~~~js

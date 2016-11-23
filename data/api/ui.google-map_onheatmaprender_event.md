@@ -14,3 +14,5 @@ $$("map").attachEvent("onHeatMapRender", function(heatmapObj){
 @template:	api_event
 @descr:
 
+@related:
+desktop/googlemap.md#workingwithheatmap

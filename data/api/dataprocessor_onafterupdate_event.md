@@ -18,8 +18,6 @@ dp.attachEvent("onAfterUpdate", function(response, id, object){
 
 @template:	api_event
 
-	
-@descr:
 
 @descr:
 
@@ -28,7 +26,7 @@ dp.attachEvent("onAfterUpdate", function(response, id, object){
 - **id** - old ID (clientside);
 - **newid** - new ID (serverside);
 - **status** - status of the operation ("update");
-- **type** - operation type ("update");
+- **type** - operation type ("update"). The predefined types of response are *update*, *insert*, *delete*, *invalid* and *error*.  
 - **value** - saved data value.
 
 2 . The **id** parameter contains old (clientside) item ID.
