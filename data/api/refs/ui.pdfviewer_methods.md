@@ -7,12 +7,12 @@ Methods
 - api/link/ui.pdfviewer_bind.md - binds components
 - api/link/ui.pdfviewer_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.pdfviewer_callevent.md - calls an inner event
-- api/ui.pdfviewer_clear.md - 
+- api/ui.pdfviewer_clear.md - clears the content of PDF Viewer
 - api/link/ui.pdfviewer_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.pdfviewer_destructor.md - destructs the calling object
 - api/link/ui.pdfviewer_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.pdfviewer_disable.md - disables the calling view (makes it dimmed and unclickable)
-- api/ui.pdfviewer_download.md - 
+- api/ui.pdfviewer_download.md - downloads viewer contents as PDF file
 - api/link/ui.pdfviewer_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.pdfviewer_getchildviews.md - returns child views of the calling component
 - api/link/ui.pdfviewer_getformview.md - returns master form for the input
@@ -25,17 +25,17 @@ Methods
 - api/link/ui.pdfviewer_isvisible.md - checks whether the view is visible
 - api/link/ui.pdfviewer_load.md - loads data from an external data source.
 - api/link/ui.pdfviewer_mapevent.md - routes events from one object to another
-- api/ui.pdfviewer_nextpage.md - 
+- api/ui.pdfviewer_nextpage.md - renders the page that follows the viewed one
 - api/link/ui.pdfviewer_parse.md - loads data to the component from an inline data source
-- api/ui.pdfviewer_prevpage.md - 
-- api/ui.pdfviewer_renderpage.md - 
+- api/ui.pdfviewer_prevpage.md - renders the page that precedes the viewed one
+- api/ui.pdfviewer_renderpage.md - renders the specified page in the viewer
 - api/link/ui.pdfviewer_resize.md - adjusts the view to a new size
-- api/ui.pdfviewer_setscale.md - 
+- api/ui.pdfviewer_setscale.md - sets a new value for a zooming scale and renders current page with the new scale
 - api/link/ui.pdfviewer_show.md - makes the component visible
 - api/link/ui.pdfviewer_unbind.md - breaks "bind" link
 - api/link/ui.pdfviewer_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/ui.pdfviewer_zoomin.md - 
-- api/ui.pdfviewer_zoomout.md - 
+- api/ui.pdfviewer_zoomin.md - zooms the viewed page in
+- api/ui.pdfviewer_zoomout.md - zooms the viewed page out
 }}
 
 @index:

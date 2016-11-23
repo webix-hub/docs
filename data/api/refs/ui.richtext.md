@@ -108,7 +108,7 @@ var richtext = webix.ui({
 - api/link/ui.richtext_responsive_config.md - enables responsive mode for horizontal layout
 - api/link/ui.richtext_rows_config.md - array of views objects arranged vertically
 - api/link/ui.richtext_type_config.md - defines the layout borders
-- api/ui.richtext_value_config.md - 
+- api/ui.richtext_value_config.md - sets the initial value for the RichText control
 - api/link/ui.richtext_visiblebatch_config.md - sets the batch that will be shown initially
 - api/link/ui.richtext_width_config.md - sets the width of the component
 }}

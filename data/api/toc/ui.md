@@ -400,6 +400,11 @@ table.webixtoc td{
         <td>page navigation controls</td>
     </tr>
     <tr>
+    	<td> <img src="api/toc/pdfviewer.png"/> </td>
+        <td>api/refs/ui.pdfviewer.md </td>
+        <td>page navigation controls</td>
+    </tr>
+    <tr>
     	<td> <img src="api/toc/resizer.png"/> </td>
         <td> api/refs/ui.resizer.md </td>
         <td>a draggable border in layout </td>
@@ -524,6 +529,7 @@ table.webixtoc td{
 - api/refs/ui.multiview.md
 - api/refs/ui.organogram.md
 - api/refs/ui.pager.md
+- api/refs/ui.pdfviewer.md
 - api/refs/ui.pivot.md
 - api/refs/ui.popup.md
 - api/refs/ui.portlet.md

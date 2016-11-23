@@ -9,7 +9,7 @@ minRange
 @example:
 webix.ui({
     view: "gage",
-    id:"gage1",
+    id: "gage1",
     value: 60,
     minRange: 0,
     maxRange: 100

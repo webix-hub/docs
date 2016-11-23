@@ -3,7 +3,7 @@ label
 
 
 @short:
-	label of the gage wigdet
+	text label of the gage wigdet
 
 @type: string
 @example:

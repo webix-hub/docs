@@ -33,10 +33,10 @@ rows:[
 
 All controls fall into: 
 
-- **single-value** - those containing a string of a number;
+- **single-value** - those containing a string or a number;
 - **multiple-value** - those containing an array of values;
 
-In case of multiple controls **value** property defines the one initially chosen. 
+In case of multiple controls the **value** property defines the initially selected one. 
 
 **Value** of the control may be:
 

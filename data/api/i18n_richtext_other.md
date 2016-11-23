@@ -1,12 +1,8 @@
 richtext
 =============
 
-@todo:
-	check 
-
-
 @short:
-	default locales for labels on the font decoration buttons of RichText widget
+	default locales for labels of the font style buttons in the RichText control
 
 @type: object
 
@@ -22,4 +18,8 @@ webix.i18n.setLocale();
 @template:	api_config
 @descr:
 
+@related:
+desktop/localization.md
+desktop/richtext.md
 
+@relatedapi:api/i18n_setlocale.md

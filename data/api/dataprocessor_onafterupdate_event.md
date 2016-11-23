@@ -27,8 +27,6 @@ dp.attachEvent("onAfterUpdate", function(response, id, object){
 
 - **id** - old ID (clientside);
 - **newid** - new ID (serverside);
-- **sid** - old ID (clientside);
-- **tid** - new ID (serverside);
 - **status** - status of the operation ("update");
 - **type** - operation type ("update");
 - **value** - saved data value.

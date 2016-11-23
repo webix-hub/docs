@@ -103,6 +103,7 @@ var googlemap = webix.ui({
 - api/link/ui.google-map_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.google-map_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.google-map_onfocus_event.md - fires when a view gets focus
+- api/ui.google-map_onheatmaprender_event.md - fires when a heatmap is rendered
 - api/link/ui.google-map_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.google-map_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.google-map_onlongtouch_event.md - fires on holding finger in some position for a certain period of time

@@ -28,17 +28,20 @@ var gage = webix.ui({
 - [Samples](http://docs.webix.com/samples/60_pro/15_gage/index.html)
 
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
+<a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
 
 <div class='h2'>Methods</div>
 
 {{api
 - api/link/ui.gage_adjust.md - adjusts the component to the size of the parent HTML container
-- api/ui.gage_animate.md - 
+- api/link/ui.gage_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
 - api/link/ui.gage_bind.md - binds components
+- api/link/ui.gage_blockevent.md - temporarily blocks triggering of ALL events of the calling object
+- api/link/ui.gage_callevent.md - calls an inner event
 - api/link/ui.gage_define.md - redefines a single configuration property (or a hash of properties)
 - api/link/ui.gage_destructor.md - destructs the calling object
+- api/link/ui.gage_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.gage_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.gage_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/link/ui.gage_getchildviews.md - returns child views of the calling component
@@ -47,13 +50,16 @@ var gage = webix.ui({
 - api/link/ui.gage_getparentview.md - returns the parent view of the component
 - api/link/ui.gage_gettopparentview.md - returns top parent view
 - api/ui.gage_getvalue.md - returns the gage value
+- api/link/ui.gage_hasevent.md - checks whether the component has the specified event
 - api/link/ui.gage_hide.md - hides the view
 - api/link/ui.gage_isenabled.md - checks whether the view is enabled
 - api/link/ui.gage_isvisible.md - checks whether the view is visible
+- api/link/ui.gage_mapevent.md - routes events from one object to another
 - api/link/ui.gage_resize.md - adjusts the view to a new size
 - api/ui.gage_setvalue.md - sets a value for the gage
 - api/link/ui.gage_show.md - makes the component visible
 - api/link/ui.gage_unbind.md - breaks "bind" link
+- api/link/ui.gage_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 }}
 
 
@@ -82,7 +88,6 @@ var gage = webix.ui({
 
 {{api
 - api/link/ui.gage_animate_config.md - defines or disables view change animation.
-- api/ui.gage_animation_config.md - defines whether data visualization will be animated
 - api/link/ui.gage_borderless_config.md - used to hide the component borders
 - api/link/ui.gage_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.gage_css_config.md - the name of a css class that will be applied to the view container
@@ -91,15 +96,17 @@ var gage = webix.ui({
 - api/link/ui.gage_height_config.md - sets the height of the component
 - api/link/ui.gage_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.gage_id_config.md - the component ID
-- api/ui.gage_label_config.md - label of the gage wigdet
+- api/ui.gage_label_config.md - text label of the gage wigdet
 - api/link/ui.gage_maxheight_config.md - sets the maximum height for the view
 - api/ui.gage_maxrange_config.md - sets the maximum range value of the gage scale
 - api/link/ui.gage_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.gage_minheight_config.md - sets the minimal height for the view
 - api/ui.gage_minrange_config.md - sets the maximum range value of the gage scale
 - api/link/ui.gage_minwidth_config.md - sets the minimal width for the view
+- api/link/ui.gage_on_config.md - allows attaching custom handlers to inner events of the component
 - api/ui.gage_placeholder_config.md - specifies measurement units for the gage
 - api/ui.gage_scale_config.md - defines the size of the gage scale
+- api/ui.gage_smoothflow_config.md - enables smooth animation in the gage widget
 - api/ui.gage_stroke_config.md - defines the width of the gage scale
 - api/ui.gage_value_config.md - sets the initial value to be displayed on the gage scale
 - api/link/ui.gage_width_config.md - sets the width of the component
