@@ -114,12 +114,12 @@ webix.proxy.myCustomName = {
 	load:function(view, callback){
 		//your loading pattern
         ...
-		webix.ajax(this.source, callback, view);
+		webix.ajax(this.source, callback, view); 
 	},
 	save:function(view, update, dp, callback){
-    	//your saving pattern for single records
+    	//your saving pattern for single records        
         ...
-		webix.ajax().post(url, data, callback);
+		webix.ajax().post(url, update, callback);
     },
     result:function(state, view, dp, text, data, loader){
     	//your logic of server-side response processing
