@@ -58,6 +58,7 @@ dummy stub
 - api/link/ui.filetable_getchildviews.md - returns child views of the calling component
 - api/link/ui.filetable_getcolumnconfig.md - returns the configuration object of the specified column
 - api/link/ui.filetable_getcolumnindex.md - returns the index of the column with the specified id
+- api/link/ui.filetable_getcss.md - 
 - api/link/ui.filetable_geteditstate.md - returns info about active editor object
 - api/link/ui.filetable_geteditor.md - returns editor object
 - api/link/ui.filetable_geteditorvalue.md - returns the value of the active (currently open) editor
@@ -164,6 +165,7 @@ dummy stub
 - api/link/ui.filetable_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.filetable_onafterdelete_event.md - fires after item deleting
 - api/link/ui.filetable_onafterdrop_event.md - fires after drag-n-drop was finished
+- api/link/ui.filetable_onafterdroporder_event.md - called when dnd reordering is fully finished
 - api/link/ui.filetable_onaftereditstart_event.md - fires after edit operation was initiated, editor opened and ready for input
 - api/link/ui.filetable_onaftereditstop_event.md - fires after edit operation finished
 - api/link/ui.filetable_onafterfilter_event.md - occurs after datatable was filtered
@@ -188,6 +190,7 @@ dummy stub
 - api/link/ui.filetable_onbeforedrag_event.md - fires before the mouse button is pressed and the cursor is moved over a draggable item
 - api/link/ui.filetable_onbeforedragin_event.md - fires before a dragged element is moved over the droppable area
 - api/link/ui.filetable_onbeforedrop_event.md - fires before a dragged element is released over the droppable area
+- api/link/ui.filetable_onbeforedroporder_event.md - called when dnd reordering has been made, but not applied yet
 - api/link/ui.filetable_onbeforedropout_event.md - fires before a dragged element is released over the droppable area
 - api/link/ui.filetable_onbeforeeditstart_event.md - fires before edit operation is initiated
 - api/link/ui.filetable_onbeforeeditstop_event.md - fires before stop edit command is received

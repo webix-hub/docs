@@ -3,7 +3,7 @@ Drag-and-Drop between Different Components
 
 ## External Data Functionality
 
-During drad-n-drop operations between different components as well as different instances of a component it's vital to ensure that data items from the source component 
+During drag-n-drop operations between different components as well as different instances of a component it's vital to ensure that data items from the source component 
 receive adequate representation in the target one. 
 
 **externalData** property features a function responsible for dragging as value (in case you work with different components). 
@@ -57,7 +57,7 @@ function grid2tree(data, id){
 ~~~
 
 Here only *data.value* matters. The tree will take the dragged-and-dropped *data.value* value from the other tree, or the *data.title* 
-value from either fo the datatables. 
+value from either of the datatables. 
 
 {{sample 22_dnd/01_basic_dnd.html }}
 

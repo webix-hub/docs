@@ -80,7 +80,26 @@ webix.ui({
 
 {{sample 08_chart/07_area_chart/01_init.html }}
 
+
+##SplineArea Chart {#splinearea}
+
+<img src="desktop/spline_area_chart.png">
+
+{{snippet
+Initialization
+}}
+~~~js
+webix.ui({
+	view:"chart",
+	type:"splineArea", 
+	...
+})
+~~~
+
+{{sample 08_chart/07_area_chart/07_spline_area.html}}
+
 [Setting for Area Charts](desktop/area_charts.md)
+
 
 ##Radar Charts {#radar}
 

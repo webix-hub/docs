@@ -6,8 +6,8 @@ freezeRow
 
 @params:
 
-- id		number,string	the row id
-- state		boolean			true, to allow row moving to the "frozen" block
+- id		number,string	optional, the row id
+- state		boolean			optional, true - to move a row to the "frozen" block, false - to unfreeze a row
 
 
 @example:
@@ -16,6 +16,7 @@ $$("grid").freezeRow(id, true);
 
 @template:	api_method
 @descr:
+Note, if you don't pass any parameters to the method, all frozen rows will be unfrozen.
 
 @related:
 datatable/frozen_rows.md

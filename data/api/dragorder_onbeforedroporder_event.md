@@ -9,8 +9,8 @@ onBeforeDropOrder
 
 - itemId				id		the dragged item id		
 - targetInd				number				the index of the row, where the item was dropped (if target is the last position, i.e. an empty space, the index will be -1)
-- event					Event object		the native event object
-- details 				object				the object which contains the <b>parent</b> property - id of the branch where dragging is taking place
+- event					Event 		the native event object
+- details 				object		the object which contains the <b>parent</b> property - id of the branch where dragging is taking place
 
 	
 @example:

@@ -1,8 +1,5 @@
 focus
 =============
-
-
-
 @short:
 	sets focus to the control
 
@@ -13,7 +10,7 @@ webix.ui({
     value:"Save"
 });
  
-$$('b1').focus();
+$$("b1").focus();
 
 
 @template:	api_method

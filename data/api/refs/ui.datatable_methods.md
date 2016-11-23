@@ -48,6 +48,7 @@ Methods
 - api/link/ui.datatable_getchildviews.md - returns child views of the calling component
 - api/ui.datatable_getcolumnconfig.md - returns the configuration object of the specified column
 - api/ui.datatable_getcolumnindex.md - returns the index of the column with the specified id
+- api/ui.datatable_getcss.md - 
 - api/link/ui.datatable_geteditstate.md - returns info about active editor object
 - api/link/ui.datatable_geteditor.md - returns editor object
 - api/link/ui.datatable_geteditorvalue.md - returns the value of the active (currently open) editor
@@ -192,6 +193,7 @@ Methods
 - api/link/ui.datatable_getchildviews.md
 - api/ui.datatable_getcolumnconfig.md
 - api/ui.datatable_getcolumnindex.md
+- api/ui.datatable_getcss.md
 - api/link/ui.datatable_geteditstate.md
 - api/link/ui.datatable_geteditor.md
 - api/link/ui.datatable_geteditorvalue.md

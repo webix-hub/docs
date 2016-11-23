@@ -1,8 +1,6 @@
 getInputNode
 =============
 
-
-
 @short:
 	gets the HTML element related to the component
 
@@ -21,7 +19,8 @@ webix.ui({
     ]
 });
 
-$$("b1").getInputNode();//-> <input type="button" style="height:27px; width:149px" value="Login">
+$$("b1").getInputNode();
+//-> <input type="button" style="height:27px; width:149px" value="Login">
 
 @template:	api_method
 
@@ -30,8 +29,8 @@ $$("b1").getInputNode();//-> <input type="button" style="height:27px; width:149p
 
 @defined:	ui.button	
 @descr:
-
-Dimension you get equal to library defauls defined for a standard button. They can be as well set in JS object:
+Dimensions you get are equal to library defaults defined for a standard button. 
+They can be as well set in JS object:
 
 ~~~js
 { view:"button", id:"b1", value:"Login",  type:"form", width: 300, height: 50 }

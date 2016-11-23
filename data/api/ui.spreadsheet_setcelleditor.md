@@ -31,3 +31,6 @@ The editorObject parameter can have the following properties:
 
 @related:
 spreadsheet/cell_content.md#addinganeditorintoacell
+
+@relatedapi:
+api/ui.spreadsheet_getcelleditor.md

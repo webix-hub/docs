@@ -13,6 +13,7 @@ Events
 - api/link/ui.datatable_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.datatable_onafterdelete_event.md - fires after item deleting
 - api/link/ui.datatable_onafterdrop_event.md - fires after drag-n-drop was finished
+- api/ui.datatable_onafterdroporder_event.md - called when dnd reordering is fully finished
 - api/link/ui.datatable_onaftereditstart_event.md - fires after edit operation was initiated, editor opened and ready for input
 - api/link/ui.datatable_onaftereditstop_event.md - fires after edit operation finished
 - api/ui.datatable_onafterfilter_event.md - occurs after datatable was filtered
@@ -37,6 +38,7 @@ Events
 - api/link/ui.datatable_onbeforedrag_event.md - fires before the mouse button is pressed and the cursor is moved over a draggable item
 - api/link/ui.datatable_onbeforedragin_event.md - fires before a dragged element is moved over the droppable area
 - api/link/ui.datatable_onbeforedrop_event.md - fires before a dragged element is released over the droppable area
+- api/ui.datatable_onbeforedroporder_event.md - called when dnd reordering has been made, but not applied yet
 - api/link/ui.datatable_onbeforedropout_event.md - fires before a dragged element is released over the droppable area
 - api/link/ui.datatable_onbeforeeditstart_event.md - fires before edit operation is initiated
 - api/link/ui.datatable_onbeforeeditstop_event.md - fires before stop edit command is received
@@ -101,6 +103,7 @@ Events
 - api/link/ui.datatable_onaftercontextmenu_event.md
 - api/link/ui.datatable_onafterdelete_event.md
 - api/link/ui.datatable_onafterdrop_event.md
+- api/ui.datatable_onafterdroporder_event.md
 - api/link/ui.datatable_onaftereditstart_event.md
 - api/link/ui.datatable_onaftereditstop_event.md
 - api/ui.datatable_onafterfilter_event.md
@@ -125,6 +128,7 @@ Events
 - api/link/ui.datatable_onbeforedrag_event.md
 - api/link/ui.datatable_onbeforedragin_event.md
 - api/link/ui.datatable_onbeforedrop_event.md
+- api/ui.datatable_onbeforedroporder_event.md
 - api/link/ui.datatable_onbeforedropout_event.md
 - api/link/ui.datatable_onbeforeeditstart_event.md
 - api/link/ui.datatable_onbeforeeditstop_event.md

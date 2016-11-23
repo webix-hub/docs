@@ -2,7 +2,7 @@ Introduction to Events
 ========================
 Events are the core of any web application. Why? They help to interact with users and bring interactivity to the page.</br>
 When the user makes some action on the page, an event occurs. The developer uses this event to detect the action and run the appropriate script. </br>
-In one word, events events are a way to detect user actions and define how to react to them (which functions to run).
+In one word, events are a way to detect user actions and define how to react to them (which functions to run).
 
 
 ##Webix events model

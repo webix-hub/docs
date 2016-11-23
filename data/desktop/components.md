@@ -55,13 +55,7 @@ you will surely find a proper widget for your needs in the Webix library.
 Data widgets are used to present data of a specified type on the page. 
 Such widgets manage the space allocated for their data and provide functionality for its access and configuration. 
 
-<div class="components_group" style="padding-left:60px;">
-	<div>
-		<a href="desktop/chart.md">
-			<img src="desktop/icons/chart.png"/>
-			<br>Chart
-		</a>
-    </div>
+<div class="components_group" style="padding-left:50px;">
     <div>
 		<a href="datatable/index.md">
 			<img src="desktop/icons/datatable.png"/>
@@ -87,33 +81,15 @@ Such widgets manage the space allocated for their data and provide functionality
 		</a>
     </div>
     <div>
-		<a href="desktop/organogram.md">
-			<img src="desktop/icons/organogram.png"/>
-			<br>Organogram
-		</a>
-    </div>
-    <div>
 		<a href="desktop/property_sheet.md" style="clear:left;">
 			<img src="desktop/icons/propertysheet.png"/>
 			<br>Property Sheet
 		</a>
     </div>
     <div>
-		<a href="desktop/range_chart.md">
-			<img src="desktop/icons/rangechart.png"/>
-			<br>RangeChart
-		</a>
-    </div>
-    <div>
 		<a href="datatree/index.md">
 			<img src="desktop/icons/datatree.png"/>
 			<br>Tree
-		</a>
-    </div>
-     <div>
-		<a href="desktop/treemap.md">
-			<img src="desktop/icons/treemap.png"/>
-			<br>TreeMap
 		</a>
     </div>
     <div>
@@ -130,11 +106,48 @@ Such widgets manage the space allocated for their data and provide functionality
     </div>
 </div>
 
+<h2 id="data_widgets" style="clear:both;"/>Visualization Widgets</h2>
+
+Visualization widgets provide the possibility to display data in various forms. You can use them in your application to present data in a nice and clear way.
+
+<div class="components_group" style="padding-left:50px;">
+	<div>
+		<a href="desktop/chart.md">
+			<img src="desktop/icons/chart.png"/>
+			<br>Chart
+		</a>
+    </div>
+    <div>
+		<a href="desktop/gage.md">
+			<img src="desktop/icons/gage.png"/>
+			<br>Gage
+		</a>
+    </div>
+	<div>
+		<a href="desktop/range_chart.md">
+			<img src="desktop/icons/rangechart.png"/>
+			<br>RangeChart
+		</a>
+    </div>
+    <div>
+		<a href="desktop/organogram.md">
+			<img src="desktop/icons/organogram.png"/>
+			<br>Organogram
+		</a>
+    </div>
+    <div>
+		<a href="desktop/treemap.md">
+			<img src="desktop/icons/treemap.png"/>
+			<br>TreeMap
+		</a>
+    </div>
+</div>
+
 <h2 style="clear:both;"/>Layouts</h2>
 
 Layouts help you to organize your web page, define its overall look-and-feel. You can arrange the content in columns and rows, divide it into groups and control through navigation or animation.
  
-<div class="components_group" style="padding-left:60px;">
+<div class="components_group" style="padding-left:50px;">
 	<div>
 		<a href="desktop/accordion.md">
 			<img src="desktop/icons/accordion.png"/>
@@ -248,7 +261,7 @@ Context widgets let displaying spatial and temporal information on some user's a
 
 HTML-oriented widgets supply handy means for using habitual HTML elements in an application. There you can specify HTML templates, inline frames, forms etc.
 
-<div class="components_group" style="padding-left:60px;">
+<div class="components_group" style="padding-left:50px;">
 	<div>
 		<a href="desktop/htmlform.md">
 			<img src="desktop/icons/htmlform.png"/>
@@ -282,7 +295,7 @@ HTML-oriented widgets supply handy means for using habitual HTML elements in an 
 The widgets listed in this section will help you to complete the picture of your application,
 add special features that can't be achieved with the standard set of widgets presented above. 
 
-<div class="components_group" style="padding-left:60px;">
+<div class="components_group" style="padding-left:50px;">
 	<div>
 		<a href="desktop/barcode.md">
 			<img src="desktop/icons/barcode.png"/>
@@ -344,7 +357,7 @@ Note that any event can be attached to any widget by referring to its ID.
 		<li><a href="desktop/combo.md"><img src="api/toc/combo.png"/> Combo</a></li>
 		<li><a href="desktop/counter.md"><img src="api/toc/counter.png"/> Counter</a></li>             
         <li><a href="desktop/daterangepicker.md"><img src="api/toc/daterangepicker.png"/> DateRangePicker</a></li>   
-         <li><a href="desktop/datepicker.md"><img src="api/toc/datepicker.png"/> DatePicker</a></li>
+        <li><a href="desktop/datepicker.md"><img src="api/toc/datepicker.png"/> DatePicker</a></li>
 	</ul>
 </div>
 
@@ -365,15 +378,16 @@ Note that any event can be attached to any widget by referring to its ID.
         <li><a href="desktop/multitext.md"> <img src="api/toc/multitext.png"/> Multitext</a></li>
     	<li><a href="desktop/radio.md"> <img src="api/toc/radio.png"/> Radio</a></li>
         <li><a href="desktop/rangeslider.md"> <img src="api/toc/rangeslider.png"/> RangeSlider</a></li>
-		<li><a href="desktop/richselect.md"><img src="api/toc/richselect.png"/> Richselect</a></li>
+		<li><a href="desktop/richselect.md"><img src="api/toc/richselect.png"/> RichSelect</a></li>
+        <li><a href="desktop/richtext.md"><img src="api/toc/richtext.png"/> RichText</a></li>
     	<li><a href="desktop/search.md"><img src="api/toc/search.png"/> Search</a></li>
-    	<li><a href="desktop/select.md"><img src="api/toc/select.png"/> Select</a></li>	
-        <li><a href="desktop/segmented.md"><img src="api/toc/segmented.png"/>Segmented</a></li>
+    	<li><a href="desktop/select.md"><img src="api/toc/select.png"/> Select</a></li>	        
 	</ul>
 </div>
 
 <div class="controls_group">
 	<ul>    	
+    	<li><a href="desktop/segmented.md"><img src="api/toc/segmented.png"/>Segmented</a></li>
         <li><a href="desktop/slider.md"><img src="api/toc/slider.png"/>Slider</a></li>	
         <li><a href="desktop/suggest.md"><img src="api/toc/suggest.png" style="padding-right:4px;"/> Suggest</a></li>
     	<li><a href="desktop/tabbar.md"><img src="api/toc/tabbar.png"/>Tabbar</a></li>
@@ -416,6 +430,9 @@ div.controls_group{
 div.controls_group ul {
     list-style-type:none;
 }
+div.controls_group li {
+    line-height:2.5em;
+}
 div.controls_group img {
     vertical-align:middle;
     padding-right:7px;
@@ -439,6 +456,7 @@ div.controls_group img {
 - desktop/excelviewer.md
 - desktop/form.md
 - desktop/controls.md
+- desktop/gage.md
 - desktop/googlemap.md
 - desktop/grouplist.md
 - desktop/htmlform.md

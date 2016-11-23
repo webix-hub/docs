@@ -103,6 +103,7 @@ dummy stub
 - api/link/ui.path_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.path_onafterdelete_event.md - fires after item deleting
 - api/link/ui.path_onafterdrop_event.md - fires after drag-n-drop was finished
+- api/link/ui.path_onafterdroporder_event.md - called when dnd reordering is fully finished
 - api/link/ui.path_onafterload_event.md - fires after data loading is complete
 - api/link/ui.path_onafterrender_event.md - occurs immediately after the component has been rendered
 - api/link/ui.path_onafterscroll_event.md - occurs when some webix view has been scrolled
@@ -114,6 +115,7 @@ dummy stub
 - api/link/ui.path_onbeforedrag_event.md - fires before the mouse button is pressed and the cursor is moved over a draggable item
 - api/link/ui.path_onbeforedragin_event.md - fires before a dragged element is moved over the droppable area
 - api/link/ui.path_onbeforedrop_event.md - fires before a dragged element is released over the droppable area
+- api/link/ui.path_onbeforedroporder_event.md - called when dnd reordering has been made, but not applied yet
 - api/link/ui.path_onbeforedropout_event.md - fires before a dragged element is released over the droppable area
 - api/link/ui.path_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/link/ui.path_onbeforerender_event.md - occurs immediately before the component has been rendered

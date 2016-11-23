@@ -57,6 +57,6 @@ Here we create a **div** container for the DnD context item and define 8-px padd
 - [Defining Drag Area](desktop/dnd_drag_area.md) - learn how to set a dragging handle to a component item;
 - [Defining Drag Marker](desktop/dnd_drag_marker.md) - how to set a DnD message and mark by color the dropping area;
 - [DnD with Tree and TreeTable Components](desktop/dnd_hierarchy.md) - how to observe hierarchy during DnD;
-- [DnD Between Different Component](desktop/dnd_external_data.md) - how to use the **externalData** property while dragging an item from one component to another;
+- [DnD Between Different Components](desktop/dnd_external_data.md) - how to use the **externalData** property while dragging an item from one component to another;
 
 @complexity:3

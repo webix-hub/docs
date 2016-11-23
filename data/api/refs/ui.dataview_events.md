@@ -6,6 +6,7 @@ Events
 - api/link/ui.dataview_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.dataview_onafterdelete_event.md - fires after item deleting
 - api/link/ui.dataview_onafterdrop_event.md - fires after drag-n-drop was finished
+- api/ui.dataview_onafterdroporder_event.md - called when dnd reordering is fully finished
 - api/link/ui.dataview_onafterload_event.md - fires after data loading is complete
 - api/link/ui.dataview_onafterrender_event.md - occurs immediately after the component has been rendered
 - api/link/ui.dataview_onafterscroll_event.md - occurs when some webix view has been scrolled
@@ -17,6 +18,7 @@ Events
 - api/link/ui.dataview_onbeforedrag_event.md - fires before the mouse button is pressed and the cursor is moved over a draggable item
 - api/link/ui.dataview_onbeforedragin_event.md - fires before a dragged element is moved over the droppable area
 - api/link/ui.dataview_onbeforedrop_event.md - fires before a dragged element is released over the droppable area
+- api/ui.dataview_onbeforedroporder_event.md - called when dnd reordering has been made, but not applied yet
 - api/link/ui.dataview_onbeforedropout_event.md - fires before a dragged element is released over the droppable area
 - api/link/ui.dataview_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/link/ui.dataview_onbeforerender_event.md - occurs immediately before the component has been rendered
@@ -55,6 +57,7 @@ Events
 - api/link/ui.dataview_onaftercontextmenu_event.md
 - api/link/ui.dataview_onafterdelete_event.md
 - api/link/ui.dataview_onafterdrop_event.md
+- api/ui.dataview_onafterdroporder_event.md
 - api/link/ui.dataview_onafterload_event.md
 - api/link/ui.dataview_onafterrender_event.md
 - api/link/ui.dataview_onafterscroll_event.md
@@ -66,6 +69,7 @@ Events
 - api/link/ui.dataview_onbeforedrag_event.md
 - api/link/ui.dataview_onbeforedragin_event.md
 - api/link/ui.dataview_onbeforedrop_event.md
+- api/ui.dataview_onbeforedroporder_event.md
 - api/link/ui.dataview_onbeforedropout_event.md
 - api/link/ui.dataview_onbeforeload_event.md
 - api/link/ui.dataview_onbeforerender_event.md

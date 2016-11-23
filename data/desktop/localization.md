@@ -86,7 +86,8 @@ webix.i18n.locales["en-US"]={
   },
 
   controls:{
-    select:"Select"
+    select:"Select",
+    invalidMessage: "Invalid input value"
   },
   
   dataExport:{
@@ -126,7 +127,14 @@ webix.i18n.locales["en-US"]={
 		showChart:"Show chart",
 		hideChart:"Hide chart",
 		resizeChart:"Resize chart"
-    }
+    },
+    
+    richtext:{
+    	underline: "Underline",
+   	 	bold: "Bold",
+    	italic: "Italic"
+	}
+       
 };
 ~~~
 
@@ -190,7 +198,7 @@ Text labels used in the page numbering line in the footer of the [exported PDF d
 
 **PDF Viewer**
 
-Text labels for page switching and document  options in desktop/pdfviewer.md.
+Text labels for page switching and document options in desktop/pdfviewer.md.
 
 - *of* - text label of the "of" part used in the page selector
 - *automaticZoom* - text label of the zooming option for setting the document size automatically 
@@ -226,6 +234,14 @@ are used by screen reading software to announce the purpose of the element:
 - *showChart* - aria label for "show chart" button in the chart legend
 - *showChart* - aria label for "hide chart" button in the chart legend
 - *resizeChart* - aria label for rangechart sizing handle
+
+**RichText**
+
+Text labels for the font style buttons in the desktop/richtext.md control.
+
+- *underline* - text label of the "Underline" button
+- *bold* - text label of the "Bold" button
+- *italic* - text label of the "Italic" button
 
 ##Applying a Locale
 

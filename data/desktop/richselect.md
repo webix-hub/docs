@@ -1,4 +1,4 @@
-Richselect
+RichSelect
 ====================
 
 ##API Reference

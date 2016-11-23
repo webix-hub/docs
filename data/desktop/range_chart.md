@@ -5,7 +5,7 @@ API Reference
 ---------------
 
 - [Methods, parameters and events](api/refs/ui.rangechart.md)
-- [Samples](http://docs.webix.com/60_pro/12_rangechart/index.html)
+- [Samples](http://docs.webix.com/samples/60_pro/12_rangechart/index.html)
 
 
 Overview

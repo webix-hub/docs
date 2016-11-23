@@ -7,6 +7,8 @@ ui.google-map
 GoogleMap widget allows working with geographical data using Webix and Google Map API. 
 This widget is based on View and inherits API from DataStore.
 
+Check desktop/googlemap.md documentation for more details.
+
 ### Constructor
 
 ~~~js
@@ -22,7 +24,7 @@ var googlemap = webix.ui({
 
 ### Where to start
 
-- [Overview of the Form Widget](desktop/googlemap.md)
+- [Overview of the GoogleMap Widget](desktop/googlemap.md)
 - [Samples](http://docs.webix.com/samples/34_googlemap/index.html)
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
@@ -101,6 +103,7 @@ var googlemap = webix.ui({
 - api/link/ui.google-map_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.google-map_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.google-map_onfocus_event.md - fires when a view gets focus
+- api/ui.google-map_onheatmaprender_event.md - fires when a heatmap is rendered
 - api/link/ui.google-map_onkeypress_event.md - occurs when keyboard key is pressed for the control in focus
 - api/link/ui.google-map_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/link/ui.google-map_onlongtouch_event.md - fires on holding finger in some position for a certain period of time

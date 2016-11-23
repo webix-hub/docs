@@ -25,7 +25,8 @@ These controls can be used for entering text, selecting an option, date or color
 - [Multitext](desktop/multitext.md)
 - [Radio](desktop/radio.md)
 - [RangeSlider](desktop/rangeslider.md)
-- [Richselect](desktop/richselect.md)
+- [RichSelect](desktop/richselect.md)
+- [RichText](desktop/richtext.md)
 - [Search](desktop/search.md)
 - [Select](desktop/select.md)
 - [Segmented](desktop/segmented.md)
@@ -82,6 +83,7 @@ For further details check the desktop/controls_guide.md article.
   - desktop/radio.md
   - desktop/rangeslider.md
   - desktop/richselect.md
+  - desktop/richtext.md
   - desktop/search.md
   - desktop/select.md
   - desktop/segmented.md

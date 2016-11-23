@@ -23,7 +23,7 @@ var calendar = webix.ui({
 - [Samples](http://docs.webix.com/samples/09_calendar/index.html)
 
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
+<a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a></div>
 
 
 <div class='h2'>Methods</div>
@@ -53,7 +53,7 @@ var calendar = webix.ui({
 - api/link/ui.calendar_isvisible.md - checks whether the view is visible
 - api/ui.calendar_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.calendar_mapevent.md - routes events from one object to another
-- api/ui.calendar_moveselection.md - moves date selection in the specified direction
+- api/link/ui.calendar_moveselection.md - moves selection in the specified direction
 - api/ui.calendar_refresh.md - repaints the component
 - api/ui.calendar_render.md - renders the specified item or the whole component
 - api/link/ui.calendar_resize.md - adjusts the view to a new size
@@ -139,7 +139,7 @@ var calendar = webix.ui({
 - api/ui.calendar_minutestep_config.md - step of time selector
 - api/ui.calendar_monthselect_config.md - enables the ability to select month by clicking the "month" panel
 - api/link/ui.calendar_mouseeventdelay_config.md - the delay between a real mouse action and invoking the related events
-- api/ui.calendar_navigation_config.md - enables  navigation
+- api/link/ui.calendar_navigation_config.md - activates the selection keyboard navigation
 - api/link/ui.calendar_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.calendar_onclick_config.md - attaches a click behavior for component items with the specified CSS class.
 - api/link/ui.calendar_oncontext_config.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>

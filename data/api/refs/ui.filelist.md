@@ -110,6 +110,7 @@ dummy stub
 - api/link/ui.filelist_onaftercontextmenu_event.md - fires after the context menu was called in the item area
 - api/link/ui.filelist_onafterdelete_event.md - fires after item deleting
 - api/link/ui.filelist_onafterdrop_event.md - fires after drag-n-drop was finished
+- api/link/ui.filelist_onafterdroporder_event.md - called when dnd reordering is fully finished
 - api/link/ui.filelist_onaftereditstart_event.md - fires after edit operation was initiated, editor opened and ready for input
 - api/link/ui.filelist_onaftereditstop_event.md - fires after edit operation finished
 - api/link/ui.filelist_onafterload_event.md - fires after data loading is complete
@@ -123,6 +124,7 @@ dummy stub
 - api/link/ui.filelist_onbeforedrag_event.md - fires before the mouse button is pressed and the cursor is moved over a draggable item
 - api/link/ui.filelist_onbeforedragin_event.md - fires before a dragged element is moved over the droppable area
 - api/link/ui.filelist_onbeforedrop_event.md - fires before a dragged element is released over the droppable area
+- api/link/ui.filelist_onbeforedroporder_event.md - called when dnd reordering has been made, but not applied yet
 - api/link/ui.filelist_onbeforedropout_event.md - fires before a dragged element is released over the droppable area
 - api/link/ui.filelist_onbeforeeditstart_event.md - fires before edit operation is initiated
 - api/link/ui.filelist_onbeforeeditstop_event.md - fires before stop edit command is received

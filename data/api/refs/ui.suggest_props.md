@@ -9,6 +9,7 @@ Properties
 - api/link/ui.suggest_borderless_config.md - used to hide the component borders
 - api/link/ui.suggest_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.suggest_css_config.md - the name of a css class that will be applied to the view container
+- api/ui.suggest_data_config.md - JavaScript array containing data for the component
 - api/link/ui.suggest_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.suggest_filter_config.md - custom filtering function
 - api/ui.suggest_fitmaster_config.md - size suggest box to the master control
@@ -38,6 +39,7 @@ Properties
 - api/link/ui.suggest_tofront_config.md - places window above other windows on clicking it
 - api/link/ui.suggest_top_config.md - the top offset of a window
 - api/ui.suggest_type_config.md - defines type of suggest control
+- api/ui.suggest_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.suggest_width_config.md - sets the width of the component
 - api/link/ui.suggest_zindex_config.md - stack order of the component
 }}
@@ -50,6 +52,7 @@ Properties
 - api/link/ui.suggest_borderless_config.md
 - api/link/ui.suggest_container_config.md
 - api/link/ui.suggest_css_config.md
+- api/ui.suggest_data_config.md
 - api/link/ui.suggest_disabled_config.md
 - api/ui.suggest_filter_config.md
 - api/ui.suggest_fitmaster_config.md
@@ -79,6 +82,7 @@ Properties
 - api/link/ui.suggest_tofront_config.md
 - api/link/ui.suggest_top_config.md
 - api/ui.suggest_type_config.md
+- api/ui.suggest_url_config.md
 - api/link/ui.suggest_width_config.md
 - api/link/ui.suggest_zindex_config.md
 

@@ -39,7 +39,7 @@ Updates
 - MultiText allows customizing sub fields with [subConfig](api/ui.multitext_subconfig_config.md) property
 - [DataDrivers](helpers/data_drivers.md#methodsofdatadriver): public access to the properties returned by .getInfo() method
 - Better control over data move (drag-n-drop): [externalData](api/datamove_externaldata_config.md) property function receives the original data as a third parameter
-- moveSelection() method for [Calendar](api/ui.calendar_moveselection.md) and [Colorboard](api/ui.colorboard_moveselection.md)
+- moveSelection() method for [Calendar](api/link/ui.calendar_moveselection.md) and [Colorboard](api/link/ui.colorboard_moveselection.md)
 - new methods in the webix.html helper module: [removeStyle()](api/html_removestyle.md) and [triggerEvent()](api/html_triggerevent.md)
 - for data widgets, Calendar and Colorboard [navigation](api/keysnavigation_navigation_config.md) settings is enabled by default
 

@@ -47,6 +47,7 @@ Methods
 - api/link/ui.filetable_getchildviews.md - returns child views of the calling component
 - api/link/ui.filetable_getcolumnconfig.md - returns the configuration object of the specified column
 - api/link/ui.filetable_getcolumnindex.md - returns the index of the column with the specified id
+- api/link/ui.filetable_getcss.md - 
 - api/link/ui.filetable_geteditstate.md - returns info about active editor object
 - api/link/ui.filetable_geteditor.md - returns editor object
 - api/link/ui.filetable_geteditorvalue.md - returns the value of the active (currently open) editor
@@ -183,6 +184,7 @@ Methods
 - api/link/ui.filetable_getchildviews.md
 - api/link/ui.filetable_getcolumnconfig.md
 - api/link/ui.filetable_getcolumnindex.md
+- api/link/ui.filetable_getcss.md
 - api/link/ui.filetable_geteditstate.md
 - api/link/ui.filetable_geteditor.md
 - api/link/ui.filetable_geteditorvalue.md

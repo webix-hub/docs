@@ -1,8 +1,6 @@
 setValue
 =============
 
-
-
 @short:
 	sets a new value for the component
 
@@ -19,10 +17,10 @@ webix.ui({
     ]
 });
 ...
-$$('b1').setValue("Save");
-$$('b1').refresh();
-$$('b2').setValue("Cancel");
-$$('b2').refresh();
+$$("b1").setValue("Save");
+$$("b1").refresh();
+$$("b2").setValue("Cancel");
+$$("b2").refresh();
 
 @template:	api_method
 @relatedapi:

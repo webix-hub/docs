@@ -95,7 +95,7 @@ You can add a dropdown menu at the top of SpreadSheet. It allows saving space on
 
 <img src="spreadsheet/menu.png">
 
-To add a menu, make use of the **menu** property with the **true** value.
+To add a menu, make use of the api/ui.spreadsheet_menu_config.md property with the **true** value.
 
 ~~~js
 webix.ui({

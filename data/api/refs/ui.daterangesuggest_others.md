@@ -2,6 +2,7 @@ Others
 =======
 
 {{api
+- api/link/ui.daterangesuggest_$enterkey_other.md - the method that will be called when the Enter key is pressed
 - api/link/ui.daterangesuggest_$getsize_other.md - returns the current size of the component
 - api/link/ui.daterangesuggest_$height_other.md - current height of the view
 - api/link/ui.daterangesuggest_$scope_other.md - scope for resolving event and method names
@@ -14,6 +15,7 @@ Others
 }}
 
 @index:
+- api/link/ui.daterangesuggest_$enterkey_other.md
 - api/link/ui.daterangesuggest_$getsize_other.md
 - api/link/ui.daterangesuggest_$height_other.md
 - api/link/ui.daterangesuggest_$scope_other.md

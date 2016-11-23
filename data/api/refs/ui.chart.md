@@ -144,12 +144,14 @@ var chart = webix.ui({
 {{api
 - api/ui.chart_alpha_config.md - defines the opacity of chart items
 - api/link/ui.chart_animate_config.md - defines or disables view change animation.
+- api/ui.chart_animateduration_config.md - sets the time of rendering the area/line of one chart item in dynamic mode
 - api/ui.chart_arialabel_config.md - sets a screen readable label for Chart
 - api/ui.chart_barwidth_config.md - the width of bars
 - api/ui.chart_border_config.md - enables/disables the bar borders
 - api/ui.chart_bordercolor_config.md - sets the border color of each item in the graph
 - api/link/ui.chart_borderless_config.md - used to hide the component borders
 - api/ui.chart_cant_config.md - defines the slope angle of 3D pie
+- api/ui.chart_cellwidth_config.md - specifies the width of an item's cell for a chart in dynamic mode
 - api/ui.chart_color_config.md - defines items colors
 - api/link/ui.chart_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.chart_css_config.md - the name of a css class that will be applied to the view container
@@ -158,6 +160,7 @@ var chart = webix.ui({
 - api/link/ui.chart_datatype_config.md - the type of loaded data
 - api/ui.chart_disablelines_config.md - disapbles graph lines with radar chart
 - api/link/ui.chart_disabled_config.md - indicates whether an item is enabled or not
+- api/ui.chart_dynamic_config.md - enables the dynamic mode for a chart
 - api/ui.chart_eventradius_config.md - sets the radius (in pixels) of the virtual circle which events will fire for items within
 - api/ui.chart_fill_config.md - fills the chart area with the specified background color.
 - api/ui.chart_fixoverflow_config.md - chart max limit mode

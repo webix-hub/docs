@@ -19,7 +19,7 @@ webix.ui({
     ]
 });
 
-$$('b1').getValue(); //returns "Edit"
+$$("b1").getValue(); // returns "Edit"
 
 
 @template:	api_method

@@ -1,0 +1,25 @@
+dynamic
+=============
+
+@short:
+	enables the dynamic mode for a chart
+
+@type: boolean
+@example:
+webix.ui({
+    id: "chart",
+    view:"chart",
+    type:"line",
+    value:"#yValue#",
+    dynamic: true
+});
+
+
+@template:	api_config
+@descr:
+
+@related:
+desktop/dynamic_chart.md
+
+@relatedsample:
+08_chart/08_dynamic/08_dynamic_splinearea.html
