@@ -7,7 +7,7 @@ Events
 - api/link/ui.pivot_onafterload_event.md - fires after data loading is complete
 - api/link/ui.pivot_onaftersort_event.md - fires after sorting dataset
 - api/link/ui.pivot_onbeforeadd_event.md - fires before adding item to datastore
-- api/ui.pivot_onbeforeapply_event.md - 
+- api/ui.pivot_onbeforeapply_event.md - fires on the "Apply" button click
 - api/link/ui.pivot_onbeforedelete_event.md - fires before item deleting
 - api/link/ui.pivot_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/ui.pivot_onbeforerender_event.md - fires just before the pivot is rendered

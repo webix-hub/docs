@@ -86,7 +86,7 @@ var treetable = webix.ui({
 - api/link/ui.treetable_getchildviews.md - returns child views of the calling component
 - api/link/ui.treetable_getcolumnconfig.md - returns the configuration object of the specified column
 - api/link/ui.treetable_getcolumnindex.md - returns the index of the column with the specified id
-- api/link/ui.treetable_getcss.md - 
+- api/link/ui.treetable_getcss.md - returns the className of a cell
 - api/link/ui.treetable_geteditstate.md - returns info about active editor object
 - api/link/ui.treetable_geteditor.md - returns editor object
 - api/link/ui.treetable_geteditorvalue.md - returns the value of the active (currently open) editor

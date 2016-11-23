@@ -56,7 +56,7 @@ dummy stub
 - api/link/ui.excelviewer_getchildviews.md - returns child views of the calling component
 - api/link/ui.excelviewer_getcolumnconfig.md - returns the configuration object of the specified column
 - api/link/ui.excelviewer_getcolumnindex.md - returns the index of the column with the specified id
-- api/link/ui.excelviewer_getcss.md - 
+- api/link/ui.excelviewer_getcss.md - returns the className of a cell
 - api/link/ui.excelviewer_geteditstate.md - returns info about active editor object
 - api/link/ui.excelviewer_geteditor.md - returns editor object
 - api/link/ui.excelviewer_geteditorvalue.md - returns the value of the active (currently open) editor
