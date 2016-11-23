@@ -7,14 +7,14 @@ Start
 <div class='index-pc'></div>
 <div class='index-board'>
 
-<h2>Meet Webix 4.0!</h2>
+<h2>Meet Webix 4.1!</h2>
 <ul>
-	<li>Highly improved <a href="desktop/spreadsheet.md">SpreadSheet</a> complex widget</li>
-	<li><a href="desktop/accessibility.md">Accessibility</a>: styling, navigation, markup</li>
-    <li><a href="desktop/daterangepicker.md">DateRangePicker</a> and <a href="datatable/filtering.md#daterange">DateRangeFilter</a> controls</li>
+	<li><a href="desktop/chart_types.md#splineareachart">SplineArea</a> Chart type and <a href="desktop/dynamic_chart.md">Dynamic mode</a> for Charts</li>
+	<li>Colorful <a href="desktop/gage.md">Gage</a> widget for rendering data updates</li>
+    <li>Handy <a href="desktop/richtext.md">RichText</a> editing control</li>
 </ul>
 
-<p> and <a href="desktop/whats_new_4_0.md">many more...</a></p>
+<p> and <a href="desktop/whats_new_4_1.md">many more...</a></p>
 <a href='http://webix.com/download/' class='index-download' title='Download Webix'></a>
 </div>
 

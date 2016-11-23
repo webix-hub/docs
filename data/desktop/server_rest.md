@@ -23,7 +23,8 @@ For these needs **webix.proxy()** function receives *rest* prefix and path to yo
 var rest = webix.proxy("rest", "server/datatable_rest.php");
 ~~~
 
-**REST Load and Save Pattern**
+REST Load and Save Pattern
+-------------------
 
 - On loading GET request is executed and data in any of [supported data formats](desktop/data_types.md) is returned;
 - When [editing](desktop/edit.md) happens or [update()](desktop/update.md) method is called - PUT request is generated, item ID and other params are sent to the script. Item ID is shown in the address line; 
@@ -32,7 +33,8 @@ var rest = webix.proxy("rest", "server/datatable_rest.php");
 
 Save script treats adding, editing and deleting operations separately and should contain different code on the base of request method. 
 
-**Server-Side Response**
+Server-Side Response
+-----------------------
 
 Server-Side response is set the same as with [any custom script](desktop/custom_serverside.md#response).
 
@@ -45,6 +47,29 @@ save: {
     autoupdate:true
 }
 ~~~
+
+A short response in the JSON format:
+
+~~~js
+{"status":"ok"}
+//or
+{"tid":121}
+~~~
+
+A more complex example can look as:
+
+~~~js
+{"action":"update", "id":15, "newid":15}
+~~~
+
+If you need to return an error, the response should be as follows:
+
+~~~js
+{"action":"error", ...}
+~~~
+
+You can pass any data in a JSON response. Besides, the response can be received on the client side by means of the api/dataprocessor_onafterupdate_event.md event. 
+
 
 @complexity:2
 

@@ -19,12 +19,12 @@ A dynamic chart can be initialized as follows:
 ~~~js
 webix.ui({
 	id: "chart",
-	view:"chart",
-	type:"line",
-	value:"#yValue#",
+	view: "chart",
+	type: "line",
+	value: "#yValue#",
     dynamic: true,
 	cellWidth: 50,
-	animateDuration:300  
+	animateDuration: 300  
 });
 ~~~
 

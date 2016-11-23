@@ -6,11 +6,10 @@ Controls are the most important components for [event handling](desktop/event_ha
 
 ##List of Available Controls
 
-[Button](desktop/button.md), [Checkbox](desktop/checkbox.md), [Colorpicker](desktop/colorpicker.md), [Combo](desktop/combo.md), [Counter](desktop/counter.md),
-[Datepicker](desktop/datepicker.md), [Icon](desktop/icon.md), [Label](desktop/label.md), [Multicombo](desktop/multicombo.md), [Multiselect](desktop/multiselect.md), 
-[Multitext](desktop/multitext.md), [Radio](desktop/radio.md), [Richselect](desktop/richselect.md), [Range slider](desktop/rangeslider.md),
-[Search](desktop/search.md), [Select](desktop/select.md), [Segmented](desktop/segmented.md), [Suggest List](desktop/suggest.md), [Tabbar](desktop/tabbar.md), 
-[Text](desktop/text.md), [Textarea](desktop/textarea.md), [Toggle](desktop/toggle.md)
+desktop/button.md, desktop/checkbox.md, desktop/colorpicker.md, desktop/combo.md, desktop/counter.md, desktop/datepicker.md, desktop/daterangepicker.md,
+desktop/icon.md, desktop/label.md, desktop/multicombo.md, desktop/multiselect.md, desktop/multitext.md, desktop/radio.md, desktop/rangeslider.md
+desktop/richselect.md, desktop/richtext.md, desktop/search.md, desktop/select.md, desktop/segmented.md, desktop/slider.md, <br>
+desktop/suggest.md, desktop/tabbar.md, desktop/text.md, desktop/textarea.md, desktop/toggle.md.
 
 Form controls share a lot of features that work the same way with most of them or with very little difference. 
 
