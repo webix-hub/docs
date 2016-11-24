@@ -39,7 +39,10 @@ Check the [Migration Guide](migration.md#webix3132) for more details.
 - [drag](api/link/ui.list_drag_config.md) order for [x-lists](desktop/xlist.md)
 - binary [proxy](desktop/server_proxy.md) for reading files as ArrayBuffer
 - excel [data driver](desktop/data_types.md) (and datatype) for parsing the contents of Excel files. Used in [Excel viewer](desktop/excelviewer.md) and [Spreadsheet](desktop/spreadsheet.md)
-
+- [pivot] performance improvements
+- [kanban] custom layouts
+- [kanban] improved drag-n-drop
+- [mobile scheduler] improved performance
 
 ##Fixes
 

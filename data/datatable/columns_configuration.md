@@ -156,8 +156,9 @@ In the above code the "title" column is 4 times bigger than the "id" one, which 
 
 To adjust the width of a column to the related content size, you can use the **adjust** attribute. There are two options possible:
 
-- data - adjusts column width to the content of the widest item in it;
-- header - adjusts column width to its header content.
+- **data** - (the default one) adjusts column width to the content of the widest item in it;
+- **header** - adjusts column width to its header content;
+- **all** - combines the above mentioned modes and adjusts the column to the bigger value.
 
 ~~~js
 columns:[

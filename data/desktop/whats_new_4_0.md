@@ -14,7 +14,7 @@ Check the [Migration Guide](migration.md#webix3440) for more details.
 New Features
 --------------------
 
-- [SpreadSheet](desktop/spreadsheet.md) complex widget to replace the previous one (PRO edition)
+- [SpreadSheet](desktop/spreadsheet.md) complex widget to replace the previous one (PRO edition). See the [list of updates](desktop/whats_new_4_0.md#updates)
 - [Accessibility](desktop/accessibility.md): 
 	- High contrast "contrast" skin {{sample 16_skins/15_contrast.html }}
 	- Specific markup for screen reading software
@@ -42,6 +42,19 @@ Updates
 - moveSelection() method for [Calendar](api/link/ui.calendar_moveselection.md) and [Colorboard](api/link/ui.colorboard_moveselection.md)
 - new methods in the webix.html helper module: [removeStyle()](api/html_removestyle.md) and [triggerEvent()](api/html_triggerevent.md)
 - for data widgets, Calendar and Colorboard [navigation](api/keysnavigation_navigation_config.md) settings is enabled by default
+- [pivot] "not equal" filter operation ("<>")
+- [spreadsheet] multiple sheets per widgets
+- [spreadsheet] conditional formatting
+- [spreadsheet] custom number formats
+- [spreadsheet] ribbon-like toolbar
+- [spreadsheet] named ranges
+- [spreadsheet] images and charts in the spreadsheet
+- [spreadsheet] configurable context menu
+- [spreadsheet] configurable top level menu
+- [spreadsheet] split-columns and split-rows functionality
+- [spreadsheet] extended math operations
+- [spreadsheet] links in the spreadsheet
+
 
 Fixes
 ------------------
@@ -76,3 +89,9 @@ Fixes
 - values of activeContent
 - destruct activeContent views on master destruction
 - Uploader check icon 
+- [pivot] "count" calculation for folders
+- [pivot] header sorting
+- [filemanager] correction of borders for collapsed panel
+- [filemanager] refreshing cursor
+- [filemanager] search with "files" dyn loading
+- [filemanager] dynamic loading fix

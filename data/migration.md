@@ -1,6 +1,16 @@
 Migration to latest Webix version
 =================================
 
+Webix 4.0 -> 4.1
+-----------------
+
+There are important updates for the [Pivot](desktop/pivot.md) complex widget:
+
+- filter Date values are converted into timestamp <br>
+- The Multiselect filter used for filtering is now replaced with the Multicombo filter
+ 
+
+
 Webix 3.4 -> 4.0
 -----------------
 

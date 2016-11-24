@@ -22,7 +22,7 @@ Updates
 - Ability to set [a custom size for an area where "resize" is detected](datatable/sizing.md#resizing) 
 - The [color](datatable/sparklines.md#settingsparklinescolors) property for Sparklines, [negativeColor](datatable/sparklines.md#neg_color) option for Bar-sparkline
 - Ability to [create a custom sorting type](desktop/filter_sort.md#addingcustomsortingtype)
-
+- [pivot] api/ui.pivot_addoperation.md method
 
 Fixes
 -------

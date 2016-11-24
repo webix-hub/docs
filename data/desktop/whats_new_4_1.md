@@ -3,6 +3,16 @@ Version 4.1
 
 <span class="release_date">released on November 23, 2016</span>
 
+Breaking Changes
+------------------
+
+Changes in Webix [Pivot](desktop/pivot.md):
+
+- filter Date values are converted into timestamp 
+- Multiselect filter is replaced with the Multicombo filter (you need to check your locale files)
+
+Check the [Migration Guide](migration.md#webix4041) for more details.
+
 New Features
 --------------
 
@@ -20,6 +30,9 @@ Updates
 - $enterKey method for Suggest
 - a border for Datatable frozen rows
 - api/ui.pdfviewer_clear.md API for desktop/pdfviewer.md
+- [pivot] ability to [define custom Filters](pivot/filters.md#changingfieldforfiltering)
+- [pivot] ability to override structure (api/ui.pivot_onviewinit_event.md event)
+- [pivot] ability to process data on the server-side
 
 
 Fixes

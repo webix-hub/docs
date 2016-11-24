@@ -23,6 +23,8 @@ large quantities of data and the relationships between them.
                 <li>pivot_chart/data_loading.md</li>
                 <li>pivot_chart/configuration.md</li>
                 <li>pivot_chart/localization.md</li>
+                <li>pivot_chart/customization.md</li>
+                <li>pivot_chart/filters.md</li>
             </ul>
 		</td>
 		<td class='topic_description'>The guides will introduce Webix Pivot Chart to you. 
@@ -38,6 +40,8 @@ large quantities of data and the relationships between them.
 - pivot_chart/data_loading.md
 - pivot_chart/configuration.md
 - pivot_chart/localization.md
+- pivot_chart/customization.md
+- pivot_chart/filters.md
 
 
     

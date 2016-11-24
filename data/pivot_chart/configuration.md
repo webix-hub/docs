@@ -146,7 +146,7 @@ webix.ui({
 
 {{sample 61_pivot/02_chart/06_custom_titles.html}}
 
-Adding chart types 
+Adding Chart types 
 ----------------------------
 
 By default, Pivot Chart gives users a possibility to present data in 3 types of a chart: 'bar', 'line', 'radar'. If you need you can redefine the default types or add a new one. 
