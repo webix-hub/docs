@@ -1,7 +1,7 @@
-Number formatting methods
+Number Formatting Methods
 =================
 
-There are 2 predefined methods for number formatting:
+There are predefined methods for number formatting:
 
 ##Localization
 
@@ -44,10 +44,11 @@ Applying format within a component:
 ~~~js
 //datatable
 { header:"LongDate", width:170,  id:"votes", format:webix.Number.numToStr({
-					    groupDelimiter:"",
-    					groupSize:0,
-    					decimalDelimiter:",",
-    					decimalSize:5}) 
+	groupDelimiter:"",
+    groupSize:0,
+    decimalDelimiter:",",
+    decimalSize:5
+   }); 
 }
 
 //other components

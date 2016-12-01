@@ -1,10 +1,10 @@
-Date formatting methods
+Date Formatting Methods
 ====================
 
 Formatting and parsing
 ----------------------
 
-There 8 predefined methods for date formatting, which can be used to convert dates to strings and strings to dates
+There are several predefined methods for date formatting, which can be used to convert dates to strings and strings to dates
 
 {{snippet Convert dates to strings}}
 ~~~js

@@ -1,4 +1,4 @@
-Ui.resizearea.  Common tips
+UI.Resizearea. Common Tips
 ======================
 ###Limiting the area available for resizing
 By default, the area available for resizing is the whole viewport. To limit the area, 
