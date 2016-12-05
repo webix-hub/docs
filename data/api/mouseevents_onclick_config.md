@@ -39,24 +39,26 @@ webix.ui({
 ~~~js
 
 grid = new webix.ui({
-view:"datatable",
-columns:[
-		{ id:"rank",	header:"", css:"rank",  		width:50},
-		{ id:"title",	header:"Film title",width:200},
-		{ 	id:"", template:"<input class='delbtn' type='button' value='Delete'>",	
-			css:"padding_less",width:100 }],		
-on:{
-	"onItemClick":function(id, e, trg){ 
-		webix.message("Click on row: " + id.row+", column: " + id.column);}
-	} //default click behavior that is true for any datatable cell
-},
-// click behavior for the cell with a button styled with 'delbtn' class
-onClick:{ 
-	"delbtn":function(e, id, trg){
-		webix.message("Delete row: "+id); 
-		return false; //here it blocks default behavior
-	}
-});		
+  view:"datatable",
+  columns:[
+    { id:"rank",    header:"", css:"rank",          width:50},
+    { id:"title",   header:"Film title",width:200},
+    { template:"<input class='delbtn' type='button' value='Delete'>", width:100 }],        
+  on:{
+    //default click behavior that is true for any datatable cell
+    "onItemClick":function(id, e, trg){ 
+      webix.message("Click on row: " + id.row+", column: " + id.column)
+    }
+  }, 
+  // click behavior for the cell with a button styled with 'delbtn' class
+  onClick:{ 
+    "delbtn":function(e, id, trg){
+      webix.message("Delete row: "+id); 
+      return false; //here it blocks default behavior
+    }
+  },
+  data:grid_data
+});	
 
 ~~~
 
