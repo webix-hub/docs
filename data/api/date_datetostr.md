@@ -15,13 +15,14 @@ dateToStr
 
 @example:
 
-var myformat = webix.date.dataToStr("%m - %d");
+var myformat = webix.Date.dateToStr("%m - %d");
 var text = myformat(new Date());
 
 //or directly
-{view:"datepicker", 
- format: webix.Date.dateToStr("%d/%m/%y")
- }
+{
+	view:"datepicker",
+	format: webix.Date.dateToStr("%d/%m/%y")
+}
 
 @template:	api_method
 @defined:	Date	
