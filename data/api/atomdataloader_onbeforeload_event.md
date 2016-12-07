@@ -8,9 +8,13 @@ occurs immediately before data loading has been started
 
 
 @example: 
-mygrid.attachEvent("onAfterLoad", function(){
+mygrid.attachEvent("onBeforeLoad", function(){
     webix.message("Loading...");
-})
+    return true;
+});
+
+@returns:
+- result  boolean  returning <i>false</i> will prevent data loading
 
 @template:	api_event
 @relatedapi:
