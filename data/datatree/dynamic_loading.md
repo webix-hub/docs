@@ -104,7 +104,7 @@ Be sure the branch data sent by the server is an object with **parent** and **da
 
 ##Redefining onDataRequest Event
 
-Set the **api/treedataloader_ondatarequest_event.md** event handler to redefine the default dynamic loading behaviour and use any desired method to get the data from the server:
+Set the **api/treedataloader_ondatarequest_event.md** event handler to redefine the default dynamic loading behavior and use any desired method to get the data from the server:
 
 The [event](api/link/ui.tree_ondatarequest_event.md) fires when the user expands a node that has the **webix_kids** property set:
 
@@ -112,10 +112,10 @@ The [event](api/link/ui.tree_ondatarequest_event.md) fires when the user expands
 { id: "1", value: "Layout Branch", webix_kids: true }
 ~~~
 
-As it is stated above, this event triggers dynamic loading. In other words, if a component features a datasource (defined either by 
+As it is stated above, this event triggers dynamic loading. In other words, if a component features a data source (defined either by 
 [url](api/link/ui.tree_url_config.md) property or [load](api/link/ui.tree_load.md) method) a request is issued using this url. 
 
-Still, the **onDataRequest** event makes it possible to redefine the logic in favour of custom one.
+Still, the **onDataRequest** event makes it possible to redefine the logic in favor of custom one.
 
 Let's assume that we have initial data loaded in some of the ways:
 
@@ -134,7 +134,7 @@ webix.ui({
         return data = data.json();
       })
     );
-    // cancelling default behaviour
+    // canceling default behavior
     return false;
     }
   }
@@ -143,7 +143,7 @@ webix.ui({
 
 {{sample 17_datatree/16_dyn_loading/03_on_data_request.html}}
 
-Here you completely redefine the default event handling and cancel default dynamic loading behaviour. 
+Here you completely redefine the default event handling and cancel default dynamic loading behavior. 
 
 Be sure the branch data you get is returned with **parent** and **data** properties. For JSON the returned data looks like this:
 

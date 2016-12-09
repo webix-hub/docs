@@ -199,7 +199,7 @@ webix.ui({
 ~~~
 
 
-{{sample 61_pivot/05_table_customization/02_popup.html}}
+{{sample 61_pivot/05_customization/02_popup.html}}
 
 **Groups of fields**
 
@@ -229,7 +229,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 61_pivot/05_table_customization/03_fields_groups.html}}
+{{sample 61_pivot/05_customization/03_fields_groups.html}}
 
 
 

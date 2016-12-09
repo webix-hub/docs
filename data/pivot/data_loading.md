@@ -81,12 +81,12 @@ External Data Processing
 It is possible to configure Pivot Table in such a way that its data are processed by a custom server-side script.
 In this case Pivot loads data that were grouped on the server and provides the ability to customize Pivot configuration.
 
-To define such a processing, you need to enable the **externalDataProcessing** property in Pivot configuration. 
+To define such a processing, you need to enable the **externalProcessing** property in Pivot configuration. 
 
 ~~~js
 webix.ui({
-    view: “pivot”,
-    externalDataProcessing: true,
+    view: "pivot",
+    externalProcessing: true,
     ...
 });
 ~~~
@@ -152,3 +152,4 @@ Here is an example of a datasource for a Pivot with select filter for the "conti
 }
 ~~~
 
+{{sample 61_pivot/07_table_external/01_readonly.html}}

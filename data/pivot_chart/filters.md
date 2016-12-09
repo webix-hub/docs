@@ -34,7 +34,7 @@ To remove existing filters, use the *filters.remove()* method:
 $$("pivot").filters.remove("datepicker");
 ~~~
 
-{{sample 61_pivot/03_table_api/05_add_filter.html}}
+{{sample 61_pivot/06_filters/02_add_filter.html}}
 
 
 Changing Field for Filtering 
@@ -66,7 +66,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 61_pivot/03_table_api/05_add_filter.html}}
+{{sample 61_pivot/06_filters/03_datepicker.html}}
 
 Changing Parent of Pivot Filters
 -------------------------
@@ -91,4 +91,4 @@ webix.ui({
 });
 ~~~
 
-{{sample 61_pivot/05_table_customization/01_outer_filters.html}}
+{{sample 61_pivot/06_filters/01_outer_filters.html}}

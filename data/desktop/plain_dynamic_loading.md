@@ -15,7 +15,7 @@ Currently dynamic loading for linear data is implemented for the following compo
 
 To enable dynamic data loading you need to: 
 
-1 . Set the component datasource that will load initial data. It can be done either with the help of api/atomdataloader_url_config.md property or api/atomdataloader_load.md method;
+1 . Set the component data source that will load initial data. It can be done either with the help of api/atomdataloader_url_config.md property or api/atomdataloader_load.md method;
 
 ~~~js
 var dview = webix.ui({
@@ -47,9 +47,10 @@ webix.ui({
 - {{sample 15_datatable/16_dyn_loading/04_db_dyn_loadahead.html}}
 
 
-##Serverside Request
+##Server-side Request
 
-When scolling or pagination occurs, the component will automatically issue a request based on the datasourse, e.g. **"data/data_dyn.php?continue=true&count=100&start=130"** where: 
+When scrolling or pagination occurs, the component will automatically issue a request based on the data source, 
+e.g. **"data/data_dyn.php?continue=true&count=100&start=130"** where: 
 
 - **continue** -  flag that indicates that this request was formed automatically;
 - **count** - value of *datafetch* parameter;
@@ -59,9 +60,9 @@ When scolling or pagination occurs, the component will automatically issue a req
 Note that your server script should be able to handle these parameters.
 }}
 
-##Serverside Response
+##Server-side Response
 
-Serverside response should include the following information:
+Server-side response should include the following information:
 
 - **data**  - the array of data records; 
 - **pos** - position in the data component to add the loaded data to (*required during each dynamic loading call*);

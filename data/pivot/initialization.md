@@ -42,7 +42,7 @@ webix.ui({
 
 {{sample 61_pivot/01_init/01_inline_data.html}}
 
-##Properties
+**Main Properties**
 
 - **id** - *string, number* - component ID, should be unique within a page. In Webix, any component is referred to by its ID, **$$("id")**, to perform various operations with it;
 - **container** - *string* - ID of an HTML container Pivot will be put to (optional);
