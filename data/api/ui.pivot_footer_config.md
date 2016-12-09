@@ -21,3 +21,6 @@ pivot/configuration.md#sumcountersforcolumnsandrows
 
 @relatedapi:
 api/ui.pivot_totalcolumn_config.md
+
+@relatedsample:
+61_pivot/03_table_api/01_total_column.html

@@ -16,3 +16,6 @@ webix.ui({
 @descr:
 @related:
 pivot/configuration.md#renamingfields
+
+@relatedsample:
+61_pivot/01_init/06_custom_titles.html

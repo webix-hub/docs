@@ -101,7 +101,7 @@ webix.ui({
 - api/link/ui.multiview_height_config.md - sets the height of the component
 - api/link/ui.multiview_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.multiview_id_config.md - the component ID
-- api/ui.multiview_keepviews_config.md - specifies the mode in which multiview doesn't remove inactive views when the become hidden
+- api/ui.multiview_keepviews_config.md - specifies the mode in which multiview doesn't remove inactive views when they become hidden
 - api/link/ui.multiview_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.multiview_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.multiview_minheight_config.md - sets the minimal height for the view
