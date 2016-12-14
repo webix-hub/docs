@@ -35,8 +35,6 @@ As Webix is a client-side library, it doesn't depend on server backend, so you c
 For some platforms ( Java, .Net, PHP ) - ready to use solutions are available for data loading, saving, exporting. 
 
 
-@metadesc: 
-
-browser support, platform compatibility and server side technologies that work with Webix UI library
+@metadesc:browser support, platform compatibility and server side technologies that work with Webix UI library
 
 
