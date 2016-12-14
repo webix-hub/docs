@@ -41,9 +41,7 @@ Methods
 - api/link/treecollection_mapevent.md - routes events from one object to another
 - api/link/treecollection_move.md - moves the specified item to the new position
 - api/link/treecollection_movebottom.md - moves the specified item to the last position
-- api/link/treecollection_movedown.md - increases the item index and moves the item to the new position
 - api/link/treecollection_movetop.md - moves the specified item to the first position
-- api/link/treecollection_moveup.md - decreases the item index and moves the item to the new position
 - api/link/treecollection_parse.md - loads data to the component from an inline data source
 - api/link/treecollection_refresh.md - repaints the whole view or a certain item
 - api/link/treecollection_refreshcursor.md - force repainting of all bound components with current cursor value
@@ -101,9 +99,7 @@ Methods
 - api/link/treecollection_mapevent.md
 - api/link/treecollection_move.md
 - api/link/treecollection_movebottom.md
-- api/link/treecollection_movedown.md
 - api/link/treecollection_movetop.md
-- api/link/treecollection_moveup.md
 - api/link/treecollection_parse.md
 - api/link/treecollection_refresh.md
 - api/link/treecollection_refreshcursor.md

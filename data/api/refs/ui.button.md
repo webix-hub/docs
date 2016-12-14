@@ -97,7 +97,7 @@ var button = webix.ui({
 - api/ui.button_align_config.md - the alignment of the control within the parent container
 - api/link/ui.button_animate_config.md - defines or disables view change animation.
 - api/ui.button_autowidth_config.md - adjusts button to its text content
-- api/ui.button_badge_config.md - 
+- api/ui.button_badge_config.md - adds an orange circle that notifies about the number of new messages for an icon button
 - api/link/ui.button_borderless_config.md - used to hide the component borders
 - api/ui.button_click_config.md - click action handler
 - api/link/ui.button_container_config.md - an HTML container (or its id) where the component should be initialized
@@ -108,7 +108,7 @@ var button = webix.ui({
 - api/link/ui.button_hidden_config.md - defines whether the view will be hidden initially
 - api/ui.button_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/link/ui.button_id_config.md - the component ID
-- api/ui.button_image_config.md - 
+- api/ui.button_image_config.md - sets path to the desired image
 - api/ui.button_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/ui.button_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/ui.button_label_config.md - the text label of the control

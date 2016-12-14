@@ -349,6 +349,14 @@ More information about key codes and hot keys is to be found in the [UI Manager]
 Webix global events are not connected with any specific component and can be used to control general application issues (clicks, touch movements, server-side requests, etc). 
 Some of them repeat native DOM events.
 
+All such events are attached to **webix** object:
+
+~~~js
+webix.attachEvent("onRotate", function(mode){
+	..// logic
+});
+~~~
+
 ###Events connected with Webix components functionality
 
 - **onDataTable**(config, obj) - fires the moment before a Webix [datatable](datatable/index.md) is rendered on the page;
@@ -384,13 +392,6 @@ The details on Touch Events are given in [the related part of API reference](api
 - **onAjaxError**(request_obj) - fires when any Ajax request results in an error;
 - **onLoadError**(text, xml, xhttp, obj) - fires when an error has happened during [loading the data](desktop/data_loading.md) into a component. See desktop/loadingerror.md article for details.
 
-All such events are attached to **webix** object:
-
-~~~js
-webix.attachEvent("onRotate", function(mode){
-	..// logic
-});
-~~~
 
 ##Handling of Native DOM Events
 
