@@ -90,8 +90,9 @@ webix.ui({
 
 Rows
 ---------------------
-Generally, to apply some style to a specific row, you may use the **$change** key of the api/link/ui.datatable_scheme_config.md parameter. The key is a function that runs each time data is changed 
-in the table. As a parameter, the function takes the data item object.
+
+Generally, to apply some style to a specific row, you may use the **$change** key of the api/link/ui.datatable_scheme_config.md parameter. 
+The key is a function that runs each time data is changed in the table. As a parameter, the function takes the data item object.
 
 <img src="datatable/styling_a_row.png"></img>
 
@@ -122,10 +123,9 @@ webix.ui({
 </script>
 ~~~
 
-If you specify data directly inside the DataTable constructor, you have one more way to set the desired style for a row:
+If you specify data directly inside the DataTable constructor, you have one more way to set the desired style for a row.
 
-- set parameter **rowCss** to value **#css#**;
-- use **$css** attribute inside the [data](api/link/ui.datatable_data_config.md) parameter to set the desired style.
+You can use the **$css** attribute inside the [data](api/link/ui.datatable_data_config.md) parameter to set the desired style.
 
 {{note
 We don't recommend to dynamically change attributes with the **'$'** prefix (e.g. $css, $cellCss). Please, use the api/ui.datatable_addcellcss.md, api/ui.datatable_addrowcss.md methods instead.
@@ -145,21 +145,20 @@ Setting rows style directly in the dataset
 <script>
 grid = new webix.ui({
 	view:"datatable",
-	rowCss:"#css#",
 	columns:[
 		{ id:"title",	header:"Film title"},
 		{ id:"votes",	header:"Votes"}
 	],
 	data:[
 		{ id:1,
-        $css:"my_style",
-        title:"The Shawshank Redemption",
-        votes:678790
+        	$css:"my_style",
+        	title:"The Shawshank Redemption",
+        	votes:678790
         },
 		{ id:2,
-        $css:{ "text-align":"right" },
-        title:"The Godfather",
-        votes:511495,
+        	$css:{ "text-align":"right" },
+        	title:"The Godfather",
+        	votes:511495,
 		}
 	],
 ...
@@ -312,11 +311,11 @@ General styling of the header
 
 <script>
 grid = new webix.ui({
-		view:"datatable",
-		columns:[
-			{ id:"title",	header:{ text:"Film title", css:{ "background":"#AFA"}} },
-			{ id:"votes",	header:{ text:"Votes",      css:"my_style"} }
-		]
+	view:"datatable",
+	columns:[
+		{ id:"title",	header:{ text:"Film title", css:{ "background":"#AFA"}} },
+		{ id:"votes",	header:{ text:"Votes",      css:"my_style"} }
+	]
 ...
 })
 </script>
