@@ -8,7 +8,7 @@ Browser Support
 
 Webix-based applications work on PCs and laptops using the following browsers:
 
-- Internet Explorer;
+- Internet Explorer 8+;
 - Google Chrome;
 - Apple Safari;
 - Mozilla Firefox;
@@ -35,6 +35,6 @@ As Webix is a client-side library, it doesn't depend on server backend, so you c
 For some platforms ( Java, .Net, PHP ) - ready to use solutions are available for data loading, saving, exporting. 
 
 
-@metadesc:browser support, platform compatibility and server side technologies that work with Webix UI library
+@metadescr:browser support, platform compatibility and server side technologies that work with Webix UI library
 
 
