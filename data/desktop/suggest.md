@@ -160,7 +160,9 @@ As value of dataFeed property of the Suggest component
 webix.ui({
 	view: "suggest",
 	input: document.getElementById("country4"),
-	dataFeed:"server/data.php"
+    body:{ 
+        dataFeed:"server/data.php" 
+    }	
 });
 ~~~
 
