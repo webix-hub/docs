@@ -10,7 +10,7 @@ getMap
 
 @example:
 
-$$("map").getMap().then(function(){
+$$("map").getMap().then(function(mapObj){
 	// some code
 });
 

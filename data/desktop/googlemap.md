@@ -108,7 +108,7 @@ To get the map object, you can make use of the api/ui.google-map_getmap.md metho
 It will return a promise which will be resolved when a map is rendered.
 
 ~~~js
-$$("map").getMap().then(function(){
+$$("map").getMap().then(function(mapObj){
     // some code
 });
 ~~~
