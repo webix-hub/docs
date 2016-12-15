@@ -23,6 +23,7 @@ Webix is also intended for mobile use and fully supports the following devices:
 - iPad;
 - iPhone;
 - iPod;
+- Windows Phone;
 - Android-based devices. 
 
 As Webix is compatible with **PhoneGap**, you have access to mobile app stores, such as **Android Market** or **Apple App Store**, for distributing your applications.
