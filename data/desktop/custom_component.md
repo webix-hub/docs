@@ -41,7 +41,6 @@ Later on, the component is inserted into the app the same way you do with librar
 webix.ui({
 	view:"newComponent",
     ..config options..
-
 })
 ~~~
 
@@ -117,15 +116,15 @@ Solution: don't redefine the function or return &#91;1;-1;1;-1&#93;
 
 Solution: 
 
-a)for relative width return &#91;yourValue;-1;1;-1&#93; <br>
-b)for relative height return &#91;1;-1;yourValue;-1&#93;
+a) for relative width return &#91;yourValue;-1;1;-1&#93; <br>
+b) for relative height return &#91;1;-1;yourValue;-1&#93;
     
 **Sc.3** You want to set fixed width(height).
 
 Solution:
 
-a)for fixed width return &#91;1;yourValue;1;-1&#93; <br>
-b)for fixed height return &#91;1;-1;1;yourValue&#93;
+a) for fixed width return &#91;1;yourValue;1;-1&#93; <br>
+b) for fixed height return &#91;1;-1;1;yourValue&#93;
     
 - **$setSize** - defines behaviour and sizes of the specific elements of the component. You should use this method if your component has a complex structure. Called as soon as the size of the whole component is set (after **$getSize** method).
 
@@ -137,7 +136,8 @@ The appropriate logic must be specified in the method **$setSize**.
 
 ##A Custom Component
 
-Fully custom components inherit from view, as a rule, which is an empty container for library components. Basic modules are also included into your component to support app-user interaction. 
+Fully custom components inherit from view, as a rule, which is an empty container for library components. 
+Basic modules are also included into your component to support app-user interaction. 
 
 Let's see how we can create a multi-colored header for a three-column app. 
 
@@ -153,7 +153,8 @@ webix.protoUI({
 - **webix.MouseEvent** - a module that makes your component support mouse events such as *'onItemClick'*;
 - **webix.EventSystem** - to support event handling functionality, such as *attachEvent()* method;
 
-It's also possible to reuse the CSS class of some other view in order to apply it to your custom component. To do this, you need to use the **$cssName** property:
+It's also possible to reuse the CSS class of some other view in order to apply it to your custom component. 
+To do this, you need to use the **$cssName** property:
 
 ~~~js
 webix.protoUI({
@@ -163,6 +164,9 @@ webix.protoUI({
     $cssName:"text",
 }, webix.ui.text);
 ~~~
+
+{{note **Note** that unlike components, input controls (e.g. a button, a textarea, etc.) don't inherit CSS styles from the parent view.}}
+
 
 ##Adding Functionality to the Component: 
 
