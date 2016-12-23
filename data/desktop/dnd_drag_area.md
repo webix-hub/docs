@@ -2,7 +2,7 @@ Defining Drag Area
 =============
 
 {{note
-Predefined drag area is usedful when using drag-n-drop on **touch devices** as slide movements over drag area will be interpreted as dragging rather than scrolling.
+Predefined drag area is useful when using drag-n-drop on **touch devices** as slide movements over drag area will be interpreted as dragging rather than scrolling.
 }}
 
 <img src="datatable/limiting_draggable_area.png"/>

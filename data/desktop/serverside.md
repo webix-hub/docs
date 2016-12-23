@@ -2,7 +2,7 @@ Server-Side Integration
 =================
 
 Server-side integration is possible with Webix [data components](desktop/components.md), 
-client-side datastores (called [Data Collections](desktop/nonui_objects.md)) and [forms](desktop/form.md). 
+client-side data stores (called [Data Collections](desktop/nonui_objects.md)) and [forms](desktop/form.md). 
 It is enabled in several ways:
 
 - you can write your own **[custom scripts](desktop/custom_serverside.md)** in your favorite language to load data and save changes back;

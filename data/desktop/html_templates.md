@@ -7,7 +7,7 @@ After the data is loaded to the component it is stored in the `data` object and 
 Data Item Value
 -----------------
 
-All supported data types may contain **more than one value per item** e.g. each item of a filmset may contain not only a film's title but also its rank, production year, and number of votes. 
+All supported data types may contain **more than one value per item** e.g. each item of a film set may contain not only a film's title but also its rank, production year, and number of votes. 
 
 Still, different components have different possibilities and requirements:
 
@@ -103,7 +103,7 @@ columns: [
 {{sample 15_datatable/01_loading/01_inline_data.html}}
 
 {{note
-As far as you've noticed, only **JSON** and **XML** data can be displayed without refering to template, since only they can directly set **value.** 
+As far as you've noticed, only **JSON** and **XML** data can be displayed without referring to template, since only they can directly set **value.** 
 Moreover, this can be applied only to components with **single-value items**. 
 }}
 
@@ -161,7 +161,7 @@ In this case, only the `rank` and `title` values are copied.
 **Grouplist** has its own templating pattern. Look into the [related article](desktop/grouplist.md) for details.
 }}
 
-###The item in the intial dataset looks like this:
+###The item in the initial data set looks like this:
 
 ~~~js
 //JSON

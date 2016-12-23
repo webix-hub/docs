@@ -11,7 +11,7 @@ It converts a **JSON structure** passed into it as parameter to client-side layo
 webix.ui({ view:"", ... });
 ~~~
 
-Normally, you need one **webix.ui()** contructor for the whole application while any **window** or **popup** needs an extra one as windows lie above page layout.
+Normally, you need one **webix.ui()** constructor for the whole application while any **window** or **popup** needs an extra one as windows lie above page layout.
 
 ~~~js
 webix.ui({ view:"window", ... }).show();
@@ -61,7 +61,7 @@ var new_obj = webix.copy(source_obj)// full copy
 [API reference](api/_copy.md)
 
 ## webix.extend
-Adds method and properies of source object to the target object
+Adds method and properties of source object to the target object
 
 ~~~js
 var target_obj = new webix.ui.toolbar(config);

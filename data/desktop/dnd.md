@@ -19,11 +19,11 @@ The property has several values to define DnD mode:
 - drag:*"source"* - enables dragging items from the component without an ability to drop data from other components;
 - drag:*"target"* - enables dropping data to the component. It can take data from outside, but you cannot drag anything from it. 
 
-**Mutlidrag** mode (dragging of several items at a time is possible) is enabled by setting multi selection ability within the component.
+**Multidrag** mode (dragging of several items at a time is possible) is enabled by setting multi selection ability within the component.
 
 Multi Selection:
 
-- multiselect: true - selection of several items regardless of their heirarchy;
+- multiselect: true - selection of several items regardless of their hierarchy;
 - multiselect:"level" - selection of several items belonging to one and the same hierarchical level within the same tree branch. 
 
 {{snippet

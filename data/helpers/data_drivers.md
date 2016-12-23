@@ -111,7 +111,7 @@ html.tag = "LI";
 
 ###JSON
 
-You can redefine which object propery stores sub-items ( used for hierarchical dataset, like one for tree, treegrid, grouplist etc. )
+You can redefine which object property stores sub-items ( used for hierarchical dataset, like one for tree, treegrid, grouplist etc. )
 
 ~~~js
 webix.DataDriver.json.child = "data";
@@ -187,7 +187,7 @@ webix.DataDriver.driverName={ //driverName - the name of the type
 
 ~~~
 
-You can check the structure of existing dara drivers in Webix sourse code ([webix_debug.js](desktop/debug.md))
+You can check the structure of existing data drivers in Webix source code ([webix_debug.js](desktop/debug.md))
 
 For a start, we have some data that we want to use as a new data type.
 The first thing we need to make with this data - conversion into an intermediate object (an object that will be used as an input parameter in the other functions). 

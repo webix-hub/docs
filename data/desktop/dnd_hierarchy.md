@@ -36,7 +36,7 @@ on:{
 
 {{sample 15_datatable/31_treedrag/04_drop_as_child.html}}
 
-The posiition of a dropped item is set in the following way: the item becomes the first child if it is dropped over an opened tree branch; in other cases, e.g. the item is dropped over the leaves of a tree branch is takes
+The position of a dropped item is set in the following way: the item becomes the first child if it is dropped over an opened tree branch; in other cases, e.g. the item is dropped over the leaves of a tree branch is takes
 the next position relative to the child it is dropped over:
 
 
