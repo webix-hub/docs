@@ -1,4 +1,4 @@
-Colorpicker CSS 
+ColorPicker CSS 
 =============
 
 
@@ -18,11 +18,11 @@ Colorpicker CSS
 		<td class="col0 leftalign"><strong>.webix_inp_static</strong>  </td><td class="col1"> input area of the control </td>
 	</tr>
 	<tr class="row4">
-		<td class="col0 leftalign"><strong>.webix_point_top</strong>  </td><td class="col1"> a popup arrow that points to a control that initied its appearance </td>
+		<td class="col0 leftalign"><strong>.webix_point_top</strong>  </td><td class="col1"> a popup arrow that points to a control that initialized its appearance </td>
 	</tr>
 </table>
 
 To study the CSS map of the popup [colorboard](desktop/colorboard.md), please, refer to its [CSS Map](desktop/colorboard_css.md). 
 
-Read more about [Colorpicker](desktop/colorpicker.md)
+Read more about [ColorPicker](desktop/colorpicker.md)
 

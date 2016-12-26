@@ -103,7 +103,7 @@ $scope.showDetails = function(id, details){
 }
 ~~~
 
-###Handling of Mupliple Events per Component
+###Handling of Multiple Events per Component
 
 **Webix-event** directive allows attaching any number of events at a time:
 

@@ -15,7 +15,7 @@ WAI-ARIA Attributes
 There are special attributes used in the markup of Webix widgets that make it possible for screen readers to recognize and interpret them to the user, namely: 
 
 - Each widget features the corresponding **ARIA role**, like *textbox, spinbutton, grid, tree, tablist*, etc;
-- Widgets and their elements feature **aria-attributes** in the HTML for changable and static states, like *aria-readonly*, *aria-disabled*, *aria-checked*, *aria-selected*, etc;
+- Widgets and their elements feature **aria-attributes** in the HTML for changeable and static states, like *aria-readonly*, *aria-disabled*, *aria-checked*, *aria-selected*, etc;
 - Form controls and modal boxes are given screen-readable **aria-label** which coincides with user-defined *label* (*title*) if any. For canvas-based widgets (Chart, Barcode, Organogram) 
  aria-label is defined by the dedicated *ariaLabel* property or coincides with widget name. 
 
@@ -25,7 +25,7 @@ The details on the use of WAI-ARIA attributes on HTML5 elements are given in the
 
 Some widgets include clickable elements that does not allow setting labels by public API: buttons for Calendar, "+/-" icons for Counter, legend items for Chart, etc. 
 
-For such elements Webix adds default ARIA labels as part of the currect locale ("en-US" by default):
+For such elements Webix adds default ARIA labels as part of the current locale ("en-US" by default):
 
 ~~~js
 webix.i18n.locales["en-US"]={

@@ -133,7 +133,7 @@ If you want to drag-and-drop files with the apiOnly uploader, you should define 
  $$("uploadAPI").addDropZone($$("mylist").$view);
 ~~~
 
-Then, all the files dropped to the area will be added to uploader files and, if [autosend](api/ui.uploader_autosend_config.md) is not cancelled, will be sent to the server script.
+Then, all the files dropped to the area will be added to uploader files and, if [autosend](api/ui.uploader_autosend_config.md) is not canceled, will be sent to the server script.
 
 ###Displaying the files
 

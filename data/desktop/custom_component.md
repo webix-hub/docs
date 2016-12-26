@@ -126,12 +126,12 @@ Solution:
 a) for fixed width return &#91;1;yourValue;1;-1&#93; <br>
 b) for fixed height return &#91;1;-1;1;yourValue&#93;
     
-- **$setSize** - defines behaviour and sizes of the specific elements of the component. You should use this method if your component has a complex structure. Called as soon as the size of the whole component is set (after **$getSize** method).
+- **$setSize** - defines behavior and sizes of the specific elements of the component. You should use this method if your component has a complex structure. Called as soon as the size of the whole component is set (after **$getSize** method).
 
 Let's consider some existing component, for example, window. 
 It has a header and a body. Assume, you hide the header. 
 The body of the window will keep the previous size but instead of the header you'll see empty space. 
-To prevent this, you should specify a logic defining behaviour of the elements in such the situation. 
+To prevent this, you should specify a logic defining behavior of the elements in such the situation. 
 The appropriate logic must be specified in the method **$setSize**.
 
 ##A Custom Component
@@ -240,7 +240,7 @@ $setSize:function(x,y){
 on: {'onMouseOver': function(){...);}}
 ~~~
 
-As a result, we've got a multi-colored header template within a three-columnn design and 'elastic' sizing, which means that the app can adjust its size to the current window size. 
+As a result, we've got a multi-colored header template within a three-column design and 'elastic' sizing, which means that the app can adjust its size to the current window size. 
 
 {{sample 80_docs/new.html }}
 

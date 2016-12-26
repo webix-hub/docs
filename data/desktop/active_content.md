@@ -17,7 +17,7 @@ In the [list](desktop/list.md) above the task is solved in the following way:
 
 - each item has a template with HTML content in addition to list item data. 
 - the **onClick** event of a list component is redefined for *info* CSS class. Clicking on this area (*'Details' button*) invokes showing a message while clicking any list item outside the button invokes default 
-list behaviour for clicking (here item is selected); 
+list behavior for clicking (here item is selected); 
 
 {{snippet
 CSS for active element

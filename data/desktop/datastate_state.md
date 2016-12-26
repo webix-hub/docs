@@ -3,7 +3,7 @@ Saving and Restoring Component State
 
 UIManager helps save and restore only the outer view parameters while inner ones like selection and scrolling direction are saved within the [DataState](api__refs__datastate.html) module. 
 
-Webix components that use this module feature the saving and restoring functionaluty as well: 
+Webix components that use this module feature the saving and restoring functionality as well: 
 
 - [datatable](datatable/index.md);
 - [treetable](desktop/treetable.md);
@@ -93,7 +93,7 @@ if (state)
 
 ##Saving Tree State
 
-Webix [tree](datatree/index.md)  provides a possibility to store/restore the state of the tree to cookie, local or seccion storage.
+Webix [tree](datatree/index.md)  provides a possibility to store/restore the state of the tree to cookie, local or session storage.
 
 The tree state object will contain information about opened and selected nodes:
 

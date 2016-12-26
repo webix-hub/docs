@@ -2,7 +2,7 @@ Working with Backbone Routers
 ===========================
 
 Take that you have a [list](desktop/list.md) and a [template](desktop/template.md) and you want to show either one or another by clicking on their elements. 
-There you can have different patterns depending on how you init the components:
+There you can have different patterns depending on how you initialize the components:
 
 - [Backbone Router for pure Webix Views](#webix)
 - [BackBone Router for Backbone-integrated Views](#backbone)
@@ -41,7 +41,7 @@ var routes = new (Backbone.Router.extend({
 }));
 ~~~
 
-As you can see the router shows the necessary view based on current document URL. After switching to "details" template, the application receives a hashbang url *localhost/myapp.html#films/id* 
+As you can see the router shows the necessary view based on current document URL. After switching to "details" template, the application receives a hashbang URL *localhost/myapp.html#films/id* 
 to show in it the ID of a currently selected list item.
 
 To have the app working we need to add a few extra lines of code:
@@ -98,7 +98,7 @@ var routes = new (Backbone.Router.extend({
 		template.render(); //it renders the template into its "el"
 	},
 	index:function(){
-		layout.render(); //rendereing layout back
+		layout.render(); //rendering layout back
         //attaching select event after rendering 
 		$$("mylist").attachEvent("onAfterSelect", function(id){
 			routes.navigate("films/"+id, { trigger:true });
@@ -113,7 +113,7 @@ Instead of switching between views in Webix layout we are rendering different Ba
 Yet, the router should be triggered separately at once after the app has been initialized:
 
 ~~~js
-//init app
+//initializing app
 Backbone.history.start();
 ~~~
 

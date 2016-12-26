@@ -143,7 +143,7 @@ tabbar.attachEvent("onOptionRemove", function(id, value){
 });
 ~~~
 
-ID of the tab concides with ID of the view, normally. 
+ID of the tab coincides with ID of the view, normally. 
 
 If a closable tab is used within a **tabview**, the corresponding tab will be removed from the app automatically. 
 

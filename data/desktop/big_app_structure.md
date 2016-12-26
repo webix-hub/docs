@@ -68,7 +68,7 @@ Three-file application includes:
 	- standard **HTML markup** with head and body sections;
 	- **library scripts** included into the document head;
     - **webix.ready** function with **webix.ui** constructor in the script part of the document body;
-    - links to **ui** and **logic** javascript files (look below);
+    - links to **ui** and **logic** JavaScript files (see below);
     - links to CSS files and those storing inline JSON and XML data;
 - **app.js** file that contains all the components included into the **ui_scheme** variable(any name can be used); 
 - **logic.js** file with all the functions you need to build a fully interactive app. All of them are stored in the **logic** variable (again, the variable name is to your choice).
@@ -181,7 +181,7 @@ For custom functions attached either within component/control body or within ini
 logic.function_name //since they are placed into the "logic" var
 ~~~
 
-Outside the init block you should describe all the custom functions attached to application components either in the init block or within their bodies:
+Outside the initialization block you should describe all the custom functions attached to application components either in the init block or within their bodies:
 
 ~~~js
 delete_row: function(){

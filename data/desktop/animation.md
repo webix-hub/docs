@@ -58,7 +58,7 @@ $$("multi").config.animate.subtype = "vertical";
 
 ##Animating View Initialization
 
-The moment of webix View initilization can be animated as well. It works for views created dynamically in the existing Webix layout. 
+The moment of webix View initialization can be animated as well. It works for views created dynamically in the existing Webix layout. 
 
 To instantiate the component with animation, you should call **webix.ui.animate()** method instead of standard **webix.ui()**:
 

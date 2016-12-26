@@ -6,7 +6,7 @@ However, any custom tags will do provided that you **create a custom data format
 
 Parsing logic for each of the supported data types is stored in the **[webix.DataDriver](helpers/data_drivers.md)** object (webix.DataDriver.json, webix.DataDriver, xml, etc.). There you can change default tags in two ways:
 
-- change the logic of the existing data driver - [desrcibed here](helpers/data_drivers.md). All incoming data of the state type will be processed according to the new logic.
+- change the logic of the existing data driver - [described here](helpers/data_drivers.md). All incoming data of the state type will be processed according to the new logic.
 - copy the existing driver object and create a custom one on the base of it. The new processing logic will be applied only to data with the new data format you specify as **datatype.** Described below.
 
 Custom Tags for JSON

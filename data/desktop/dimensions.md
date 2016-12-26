@@ -100,7 +100,7 @@ Inline CSS
 </script>
 ~~~
 
-Auto sizing adjusts the component or its item to available space (parent container, if these's the one; otherwise, to the document body). If there're several components or several layout columns on the page, each of
+Auto sizing adjusts the component or its item to available space (parent container, if there is one; otherwise, to the document body). If there are several components or several layout columns on the page, each of
 which, they will equally distribute available space among them. 
 
 

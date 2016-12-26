@@ -1,7 +1,7 @@
 Cross-Domain Data Loading
 ==============================
 
-It's quite uncommun that your app may require data from domain different to the one it's hosted on. Take for instance that you app is hosted at *http://app.mydomain.com*, data is located at *http://data.mydomain.com* 
+It's quite uncommon that your app may require data from domain different to the one it's hosted on. Take for instance that you app is hosted at *http://app.mydomain.com*, data is located at *http://data.mydomain.com* 
 and the [data-loading](desktop/data_loading.md) script is called *"data.php"*.
 
 Standard loading will fail in this case as all browsers block all cross-domain operations for the sake of safety even if you try using a different port. 
@@ -41,7 +41,7 @@ This can be done in three ways:
 
 - You  configure the server’s settings;
 - You adjust the code of your app to output the header as a part of server response;
-- You use some thirdparty API with server already already set for CORS protocol.
+- You use some third-party API with server already already set for CORS protocol.
 
 More detailed information about CORS in the [Wiki article](https://developer.mozilla.org/en-US/docs/HTTP/Access_control_CORS).
 
@@ -64,7 +64,7 @@ webix.jsonp("http://data.mydomain.com/data.php", {}, function(data){
 });
 ~~~
 
-Note that in comparison to **Ajax**, **JSONP** always provides **structured data**, not a raw response text.Thta's why the server script must return encoded data:
+Note that in comparison to **Ajax**, **JSONP** always provides **structured data**, not a raw response text.That's why the server script must return encoded data:
 
 ~~~js
 //server-side pattern

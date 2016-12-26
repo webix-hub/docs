@@ -4,7 +4,7 @@ Settings for Bar Charts
 ##Data Presentation
 
 - **value** (template) - template from the dataset for data item to present graphically;
-- **data / url** (string/url) - the datasource;
+- **data / url** (string/url) - the data source;
 - **label** (template) - text label for each bar;
 
 Learn how to draw chart scales in the [dedicated chapter of the manual](desktop/chart_scales.md)
@@ -46,7 +46,7 @@ Read more about [Chart Coloring](desktop/chart_coloreffects.md)
 ##Bar Chart Series
 
 Series can be defined for all bar charts. Series with **bar** and **barH** chart differ from those of **stackedBar** and **stackedBarH.** With the former bars are placed by each other in groups, which is greater for comparison. 
-Moreover, the legend for them allows hiding and showing the dedicated chart by single mouseclick. 
+Moreover, the legend for them allows hiding and showing the dedicated chart by a single mouse click. 
 
 
 <table class="list" cellspacing="0" cellpadding="5" border="0">
