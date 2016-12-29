@@ -15,8 +15,8 @@ $$("cell").disable();
 
 When can it be useful?
 
-- For instance, you have a [dataview](desktop/dataview.md) and a [form](desktop/form.md) and want to disable a form until an item from the 
-dataview nearby is selected. 
+- For instance, you have a [DataView](desktop/dataview.md) and a [form](desktop/form.md) and want to disable a form until an item from the 
+DataView nearby is selected. 
 
 - Or you want to temporarily disable a component until server operation is performed (e.g. data saving) in order that users can't click buttons 
 and make selection. 

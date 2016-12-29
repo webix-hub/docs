@@ -73,7 +73,7 @@ To learn about Webix editing pattern, go to the [main article](desktop/edit.md).
 
 ###Text {#text}
 
-A base editor for text values of datatable and dataview cells, list rows. By default is enabled on clicking the needed item; 
+A base editor for text values of DataTable and DataView cells, list rows. By default it is enabled on clicking the needed item; 
 
 ~~~js
 { id:"title", header:"Film title", editor:"text",

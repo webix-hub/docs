@@ -63,7 +63,7 @@ webix.ui({
     width: 520, 		//	component's dimensions
     height: 270,
     type:{ 
-    	height: 90,		//	dimensions of each dataview item
+    	height: 90,		//	dimensions of each DataView item
         width: 250 
     }
     ...
@@ -78,7 +78,8 @@ During dynamic [resizing](desktop/resizing.md) or when the component is initiali
 
 - **minWidth** and **minHeight** (number) - on resizing the component cannot takes less space than specified. If more space is available, the component will take it. 
 
-- **maxWidth** and **maxHeight** (number) -on resizing the component cannot take more space than specified. At the same time, the component may take smaller width nd height values and take smaller space. 
+- **maxWidth** and **maxHeight** (number) -on resizing the component cannot take more space than specified. 
+At the same time, the component may take smaller width and height values and take smaller space. 
 
 ##Auto Sizing {#auto}
 
@@ -156,7 +157,7 @@ webix.ui({
     }
 });
 
-//dataview with variable item width and height
+// DataView with variable item width and height
 webix.ui({
 	view:"dataview",
     width:250,
@@ -167,10 +168,11 @@ webix.ui({
 });
 ~~~
 
-In addition, component width and height can be adjusted to the **predefined dimensions of HTML elements** of its items. For these needs, set **sizeToContent** property for a component:
+In addition, component width and height can be adjusted to the **predefined dimensions of HTML elements** of its items. 
+For these needs, set **sizeToContent** property for a component:
 
 {{snippet
-Dataview Item Sizing
+DataView Item Sizing
 }}
 ~~~js
 webix.ui({

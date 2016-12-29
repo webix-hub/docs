@@ -51,7 +51,7 @@ To define a drag area for [Webix Datatable](datatable/index.md) you should eithe
 view:"datatable",
 drag:true,
 columns:[
-	{ id:"title",	fillspace:true, header:"Film title" },
+	{ id:"title", fillspace:true, header:"Film title" },
 	{ id:"drag", header:"",	template:"<div class='webix_drag_handle'></div>", width:35}
 ]
 ~~~

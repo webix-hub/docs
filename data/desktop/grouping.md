@@ -18,9 +18,9 @@ Such components are subject to initial static grouping. Each group features a gr
 
 When they are fed with hierarchical data grouping is not necessary. Read more about [data types](desktop/data_types.md). 
 
-**Optinal grouping**
+**Optional grouping**
 
-Data can be groupped if you need to present data united by some criterion.
+Data can be grouped if you need to present data united by some criterion.
 
 - [chart](desktop/chart.md);
 - [datatable](datatable/index.md). 
@@ -33,7 +33,7 @@ In case of inline dataset:
 - the initial grouping for [list](desktop/list.md) makes it [grouplist](desktop/grouplist.md);
 - the initial grouping for [datatable](datatable/index.md) makes it [treetable](desktop/treetable.md). Still, datatable can be dynamically grouped. 
 
-However, they are separate components - **groulist** and **treetable** - and should be created with their own names. 
+However, they are separate components - **grouplist** and **treetable** - and should be created with their own names. 
 }}
 
 **Static/Initial grouping**
@@ -59,7 +59,7 @@ Grouping is defined by a function applied to the component.
 $$("mytree").group("year");
 ~~~
 
-To **cancel grouping**, make use of the opposide method. 
+To **cancel grouping**, make use of the opposite method. 
 
 ~~~js
 $$("mychart").ungroup();
@@ -68,7 +68,7 @@ $$("mychart").ungroup();
 Setting Grouping Pattern 
 -----------
 
-Syntax for **group()** method and **$group** object property is the same - you need to specify here the grouping critetion as:
+Syntax for **group()** method and **$group** object property is the same - you need to specify here the grouping criterion as:
 
 - **data item;**
 - **function;**
@@ -178,7 +178,7 @@ $group:{
 - **max** to pick the maximum  value of the property;
 - **min** to pick the minimum value of the property;
 - **count** to calculate the number of items in each group;
-- **string** to show property name as a string rather than its value. For *{year:1994}*, the word "year" witll be displayed in the component. 
+- **string** to show property name as a string rather than its value. For *{year:1994}*, the word "year" will be displayed in the component. 
 - **custom functor** for other math operations. 
 
 Learn more about [grouping functors](desktop/custom_functor.md). 
@@ -189,7 +189,7 @@ Templates for Groups and Items
 
 By default, component items display object **value** which is:
 
-- **value** property of the datasource;
+- **value** property of the data source;
 - value from the dataset defined by [template](desktop/html_templates.md);
 - value of an array element (if data comes in JSArray);
 
@@ -392,9 +392,9 @@ webix.ui({
 
 The first element in the map is a data item property while the second one is a **functor** applied to all the values of this property. 
 
-###Grouplist Specificity:
+###GroupList Specificity
 
-Grouplist features ites own properties: 
+GroupList features its own properties: 
 
 - **templateItem** - to set template for items in a group;
 - **templateGroup/templateBack** - to set template for group header. 

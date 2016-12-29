@@ -33,7 +33,7 @@ Still, different components have different possibilities and requirements:
 Such definition would suit single-value components. If a data item has other properties, their values won't be shown unless you define a template.
 
 - **data template** that performs two tasks
-	- main - defines which item property (-ies) should be treated as **value** to display;
+	- main - defines which item property(-ies) should be treated as **value** to display;
     - adds formatting to this value.
     
 Templates can be defined for any component you wish.  
@@ -158,7 +158,7 @@ templateCopy: "#rank#.#title#"
 In this case, only the `rank` and `title` values are copied. 
 
 {{note
-**Grouplist** has its own templating pattern. Look into the [related article](desktop/grouplist.md) for details.
+**GroupList** has its own templating pattern. Look into the [related article](desktop/grouplist.md) for details.
 }}
 
 ###The item in the initial data set looks like this:

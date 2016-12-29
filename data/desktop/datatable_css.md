@@ -1,4 +1,4 @@
-Datatable CSS 
+DataTable CSS 
 =======================
 
 <img src="image_maps/datatable_css.png"/>
@@ -6,7 +6,7 @@ Datatable CSS
 <table class="list" cellspacing="0" cellpadding="5" border="0">
 	<caption class="caption">
 		<strong>Table 1 </strong>
-		CSS image maps
+		CSS Image Maps
 	</caption>
 	<thead>
 	<tr>

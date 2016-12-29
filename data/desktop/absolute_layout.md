@@ -1,7 +1,7 @@
-Absolute Layout
+AbsoluteLayout
 =================
 
-The *abslayout* view presents a layout that allows specifying the exact location of elements inside it, without using usual rows/columns configuration.
+The AbsoluteLayout view presents a layout that allows specifying the exact location of elements inside it, without using usual rows/columns configuration.
 
 The child elements are placed into layout's cells and their sizes are set by hardcoded values. For each child view the exact top and left positions should be specified:
 

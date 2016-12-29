@@ -161,7 +161,7 @@ Such code can be easily turned into Webix [Htmlform](desktop/htmlform.md) compon
 </div>
 ~~~
 
-Note that inline **datasource** is marked by *data-view* attribute with *data* value. 
+Note that inline **data source** is marked by *data-view* attribute with *data* value. 
 
 {{sample 23_markup/01_html/01_init.html}} 
 

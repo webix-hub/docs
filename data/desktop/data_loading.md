@@ -12,7 +12,7 @@ After data has been pushed to component (loaded or parsed) it should be rendered
 
 ##Loading from External Resource
 
-To load data from an external file or database, you should specify the **path** to this file/or serverside script that fetches data: 
+To load data from an external file or database, you should specify the **path** to this file/or server-side script that fetches data: 
 
 1 . As value of the component **url** property. Data will be loaded right after component initialization. [Type](desktop/data_types.md) of incoming data should be specified (if it's not JSON) as well.
 
@@ -33,7 +33,7 @@ $$("mylist").load("data.xml");
 **Load** function has three parameters:
 
 - **path** to the necessary file or script;
-- [datatype](desktop/data_types.md) - in case of JSON data this param can be omitted;
+- [datatype](desktop/data_types.md) - in case of JSON data this parameter can be omitted;
 - **callback** function if needed. 
 
 ~~~js
@@ -79,27 +79,27 @@ url:{
 }
 ~~~
 
-Furthermore, if a serverside dataset is too big, [dynamic loading](desktop/dynamic_loading.md) allows to load limited quantity of data items first and then load new data only as you scroll or 
+Furthermore, if a server-side dataset is too big, [dynamic loading](desktop/dynamic_loading.md) allows to load limited quantity of data items first and then load new data only as you scroll or 
 [page](desktop/paging.md) through the component.
 
 {{note
-Note that there's a separate article dedicated to [Serverside Integration](desktop/serverside.md). There you'll also find customization patterns for loading from server.
+Note that there's a separate article dedicated to [Server-Side Integration](desktop/serverside.md). There you'll also find customization patterns for loading from server.
 }}
 
-###Setting an Alternative Datasource for a Bound Component
+###Setting an Alternative Data Source for a Bound Component
 
 With **bound components** you can enable data loading not from master component (as expected by default), but directly from server. 
 
 ~~~js
 {
 	view:"list"
-	url:"data/list.php" //the default datasource
+	url:"data/list.php" //the default data source
 },
 { 
     view:"form", 
     id:"form11",
     ...  
-    dataFeed: "data/form.php" //datasource for the form only 
+    dataFeed: "data/form.php" //data source for the form only 
 }
 
 // form takes data from selected record in list
@@ -181,7 +181,7 @@ Here the data in supported formats comes as it is (string or array).
 Firstly, it may be the value of data parameter.
 
 {{snippet
-JSON array within the Dataview object
+JSON array within the DataView object
 }}
 ~~~js
 webix.ui({

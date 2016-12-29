@@ -34,7 +34,7 @@ Here we **copy** each item (that is dragged) from the source object with the hel
 In case of [datatable](datatable/index.md), the whole rows can be dragged to other components as well as moved between datatable instances. 
 
 By default, the whole row is displayed while being dragged, which is not always convenient and pleasant to see. Sometimes, it would be enough to display the value of the main column during DnD. The same thing is also actual for
-[dataview](desktop/dataview.md) and [list](desktop/list.md) - the components that feature several [template](desktop/html_templates.md) values in each item. 
+[DataView](desktop/dataview.md) and [List](desktop/list.md) - the components that feature several [Template](desktop/html_templates.md) values in each item. 
 
 Here, the **onBeforeDrag** event is needed as the functionality should be enabled as soon as we hook on the necessary item. Also, as above, we take **source** and **from** properties from the DnD context object. 
 

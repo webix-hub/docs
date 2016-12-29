@@ -19,8 +19,8 @@ For instance, if you want to prevent DnD on a top level items as well in leaf it
 ~~~js
 on:{
 	onBeforeDragIn:function(config, id){
-		if (!id) return false;						//block dnd on top level
-		if (!this.getItem(id).$count) return false;	//block dnd in leaf items
+		if (!id) return false;						// block dnd on top level
+		if (!this.getItem(id).$count) return false;	// block dnd in leaf items
 }}
 ~~~
 
@@ -45,11 +45,11 @@ the next position relative to the child it is dropped over:
 on:{
 	onBeforeDrop:function(context){
 		if (this.getItem(context.target).$count && this.getItem(context.target).open){
-			//drop as first child if the item is dropped into an opened tree branch
+			// drop as first child if the item is dropped into an opened tree branch
 			context.parent = context.target;
 			context.index = 0;
         } else {
-			//in other cases, the dropped item takes the next next position 
+			// in other cases, the dropped item takes the next next position 
 			context.index++;
 		}
 	}

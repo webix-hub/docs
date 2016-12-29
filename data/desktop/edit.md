@@ -13,7 +13,7 @@ For these needs take the following steps during component initialization:
 
 - set the **editable** property to the true state;
 - define **editor** type. 
-- define **editAction** (single or double mouseclick, or keyboard action).  
+- define **editAction** (single or double mouse click, or keyboard action).  
 
 With **[datatable](datatable/index.md)** you should include the **editor** property into a column object. 
 

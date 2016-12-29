@@ -253,7 +253,7 @@ Since form elements comprise an array you can refer to each of them by its **num
 var form1 = [
 	{ view:"text", id:"log", label:'Login', name:"login"},
 	{ view:"text", id:"em" label:'Email', name:"email" },
-    { view:"button", id:"sub", name:"submit", value:"Sumbit"}
+    { view:"button", id:"sub", name:"submit", value:"Submit"}
 ];
 
 webix.ui({

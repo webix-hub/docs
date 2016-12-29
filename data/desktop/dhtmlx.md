@@ -1,7 +1,7 @@
 Integration with DHTMLX Components
 ===================================
 
-<a href="http://www.dhtmlx.com">DHTMLX</a> is a **component Javascript Library** for building enterprise-level Web apps with clean interface, fast performance, and rich user experience. Since DHTMLX is our friendly project, 
+<a href="http://www.dhtmlx.com">DHTMLX</a> is a **component JavaScript Library** for building enterprise-level Web apps with clean interface, fast performance, and rich user experience. Since DHTMLX is our friendly project, 
 Webix components resemble DHTMLX ones, so the views from both libraries can naturally co-exist in one and the same application. 
 
 {{note

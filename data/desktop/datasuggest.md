@@ -1,13 +1,13 @@
-Dataview Suggest
+DataView Suggest
 ========================
 
-Dataview suggest, or Datasuggest, is used to add extra functionality to Webix select controls, namely [richselect](desktop/richselect.md), [multiselect](desktop/multiselect.md), 
+DataView suggest, or DataSuggest, is used to add extra functionality to Webix select controls, namely [richselect](desktop/richselect.md), [multiselect](desktop/multiselect.md), 
 [combo](desktop/combo.md), [multicombo](desktop/multicombo.md) and similar [editors](desktop/editing.md#editortypes). It is based on Webix [suggest list](desktop/suggest.md).
 
-Datasuggest extension makes it possible to use Webix [dataview](desktop/dataview.md) in a dropdown menu which is great for inserting pictures
+DataSuggest extension makes it possible to use Webix [DataView](desktop/dataview.md) in a dropdown menu which is great for inserting pictures
 while by default Webix [list](desktop/list.md) is used. 
 
-##Using Datasuggest for Form Controls
+##Using DataSuggest for Form Controls
 
 The extension can be used to **redefine dropdown menu** of select controls.  
 
@@ -25,7 +25,7 @@ Default combo and richselect constructor looks as follows:
 }
 ~~~
 
-When extended with Datasuggest, the constructor allows setting Webix [Dataview](desktop/dataview.md) for a dropdown menu and defining its **configuration** right among the component's **options**.
+When extended with DataSuggest, the constructor allows setting Webix [DataView](desktop/dataview.md) for a dropdown menu and defining its **configuration** right among the component's **options**.
 
 ~~~js
 { view:"richselect", value:1, options:{
@@ -39,7 +39,7 @@ Possible configuration parameters:
 - **data** (array) - defines data for the options to choose from;
 - **template** (function) - sets a complex template for control input, for instance, the one with a picture. By default, the first data value after the ID field is shown;
 - **textValue** (string) - sets data value to display in the input (acts as a string template) and, in case of combo, data value subject to filtering;
-- **body** (object) - defines complex config for dataview. 
+- **body** (object) - defines complex config for DataView. 
 
 {{snippet
 Predefined Input Template
@@ -52,14 +52,14 @@ Predefined Input Template
 }}
 ~~~
 
-**Body** allows for setting the following parameters for a dropdown dataview: 
+**Body** allows for setting the following parameters for a dropdown DataView: 
 
-- **template** (string, function) - defines template for dataview items. By default, the first data value after the ID field is shown;;
-- **type** (obj) - sets dimensions for dataview cells as an object *{width:150, height:100}*;
-- **data** (array) - data for the options to choose from. If you use **body** property for Datasuggest configuration, data should be defined inside it. 
+- **template** (string, function) - defines template for DataView items. By default, the first data value after the ID field is shown;;
+- **type** (obj) - sets dimensions for DataView cells as an object *{width:150, height:100}*;
+- **data** (array) - data for the options to choose from. If you use **body** property for DataSuggest configuration, data should be defined inside it. 
 - **xCount** (number) - the number of items on the X scale;
 - **yCount** (number) - the number of items on the Y scale;
-- **autoheight** (boolean) - if *true*, set auto height for the dataview. *False* by default. 
+- **autoheight** (boolean) - if *true*, set auto height for the DataView. *False* by default. 
 
 {{snippet
 Item template, predefined item dimensions
@@ -79,9 +79,9 @@ Item template, predefined item dimensions
 }}
 ~~~
 
-##Using Datasuggest as Editor
+##Using DataSuggest as Editor
 
-Datasuggest can be used as a component editor as part of **combo** or **richselect** [editors](desktop/editing.md#editortypes). 
+DataSuggest can be used as a component editor as part of **combo** or **richselect** [editors](desktop/editing.md#editortypes). 
 
 <img src="desktop/datasuggest_editor.png"/>
 

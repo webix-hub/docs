@@ -25,7 +25,7 @@ webix.ui({
 
 {{sample 05_list/03_group_list.html }}
 
-##Working with Grouplist
+##Working with GroupList
 
 ####Rendering data in grouplist - template peculiarities. 
 
@@ -68,7 +68,7 @@ as well as **grouping pattern** yourself.
 {"id":3,"title":"The Godfather: Part II","year":"1974","rank":"3"}
 ~~~
 
-Grouplist templating differs from that of other data-containing components. There are three properties to observe hierarchy: 
+GroupList templating differs from that of other data-containing components. There are three properties to observe hierarchy: 
 
 - **templateItem** - defined data that will be presented in the normal data record (that is at the end of hierarchical ladder);
 - **templateGroup** - defines data that will be presented in group header in the collapsed state;
@@ -95,7 +95,7 @@ webix.ui({
 				return obj.year; //data is grouped by "year"
 		},
 		$sort:{ by:"value", dir:"desc" } //sorting by displayed values
-	},                               //"year" or "rank" depending on heirarchy level
+	},                               //"year" or "rank" depending on hierarchy level
    	...
 });
 ~~~
@@ -106,7 +106,7 @@ To learn more about [rendering data through templates](desktop/html_templates.md
 
 ####Getting Parent and Child Items
 
-Grouplist API features the [getOpenState()](api/ui.grouplist_getopenstate.md) method to **retrieve IDs** of the items from the **currently opened branches**, both parent items IDs and that of its children. 
+GroupList API features the [getOpenState()](api/ui.grouplist_getopenstate.md) method to **retrieve IDs** of the items from the **currently opened branches**, both parent items IDs and that of its children. 
 
 ~~~js
 var state = $$('grouplist1').getOpenState();
@@ -133,7 +133,8 @@ Hierarchical dataset state
 
 {{sample 80_docs/grouplist_openstate.html}}
 
-###Working with Grouplist
+###Working with GroupList
+
 - desktop/data_object.md
 - [Data Loading](desktop/data_loading.md). 
 - [Defining Data Template](desktop/html_templates.md).
@@ -142,12 +143,12 @@ Hierarchical dataset state
 - [Data Filtering and Sorting](desktop/filter_sort.md)
 - [Selection](desktop/selection.md)
 - [Paging](desktop/paging.md)
-- [Adding Active Elements to Grouplist Items](desktop/active_content.md)
+- [Adding Active Elements to GroupList Items](desktop/active_content.md)
 - desktop/export_png.md
 - desktop/data_components_export.md
 
 {{note
-Note that there's no built-in possibility to edit data with grouplist. You should create a prototype *editlist* object beforehand.
+Note that there's no built-in possibility to edit data with GroupList. You should create a prototype *editlist* object beforehand.
 }}
 
 
@@ -158,7 +159,7 @@ Note that there's no built-in possibility to edit data with grouplist. You shoul
 - [Resizing](desktop/resizing.md)
 - [Redefinition of the Components](desktop/redefinition.md)
 - [List](desktop/list.md)
-- [Unitlist](desktop/unitlist.md)
+- [UnitList](desktop/unitlist.md)
 - [X-list](desktop/xlist.md)
-- [Grouplist CSS Image Map](desktop/grouplist_css.md)
+- [GroupList CSS Image Map](desktop/grouplist_css.md)
 

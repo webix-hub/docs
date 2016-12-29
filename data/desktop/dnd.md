@@ -3,9 +3,7 @@ Drag-n-Drop within Webix Views
 
 ##Basics of DnD
 
-Here we speak about **simple drag and drop** of items within one and the same component as well as between different views and their instances. The information about how to make any app element draggable
-is to be found in the [dedicated article](helpers/dnd.md) of the documentation. 
-
+Here we speak about **simple drag and drop** of items within one and the same component as well as between different views and their instances. The information about how to make any app element draggable is to be found in the [dedicated article](helpers/dnd.md) of the documentation. 
 
 ###Drag-and-Drop Modes
 

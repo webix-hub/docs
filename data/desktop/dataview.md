@@ -8,14 +8,14 @@ DataView
 
 ##Overview
 
-Dataview displays objects with data according to a predefined template. It inherits from [view](desktop/view.md). 
+DataView displays objects with data according to a predefined template. It inherits from [view](desktop/view.md). 
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/dataview.png"/>
 
 
 ##Initialization
 
-Specify the component's ID if you are going to work with the dataview later. Optionally, you can place dataview into an HTML container.
+Specify the component's ID if you are going to work with the DataView later. Optionally, you can place DataView into an HTML container.
 
 ~~~js
 webix.ui({
@@ -31,9 +31,9 @@ webix.ui({
 
 {{sample 06_dataview/01_initialization/01_init.html }}
 
-**Data** property defines datasource for the view. Data can be loaded in one of [supported data types](desktop/data_types.md). 
+**Data** property defines data source for the view. Data can be loaded in one of [supported data types](desktop/data_types.md). 
 
-##Working with Dataview
+##Working with DataView
 
 - [Data Loading](desktop/data_loading.md)
 - [Defining Data Templates](desktop/html_templates.md)
@@ -41,12 +41,12 @@ webix.ui({
 - [Adding/Deleting Items](desktop/add_delete.md)
 - [Editing Data](desktop/edit.md)
 - [Paging](desktop/paging.md) 
-- [Adding Active Elements to Dataview Items](desktop/active_content.md)
+- [Adding Active Elements to DataView Items](desktop/active_content.md)
 - desktop/export_png.md
 - desktop/data_components_export.md
 
 {{note
-Note that there's a built-in possibility to edit data with dataview. You should create a prototype *dataview-edit* object beforehand.
+Note that there's a built-in possibility to edit data with DataView. You should create a prototype *dataview-edit* object beforehand.
 }}
 
 
@@ -57,5 +57,5 @@ Note that there's a built-in possibility to edit data with dataview. You should 
 - [Setting Dimensions for the Components](desktop/dimensions.md)
 - [Dynamic Resizing and Adjustment](desktop/resizing.md)
 - [Redefinition of the Components](desktop/redefinition.md)
-- [Dataview CSS Image Map](desktop/dataview_css.md)
+- [DataView CSS Image Map](desktop/dataview_css.md)
 

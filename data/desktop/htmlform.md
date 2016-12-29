@@ -1,4 +1,4 @@
-HTMLform
+HTMLForm
 ================
 
 ##API Reference
@@ -9,7 +9,7 @@ HTMLform
 ##Overview
 
 Though the Webix library has its own [Form](desktop/form.md) component, there exists a possibility to create a separate form made with the help of
-pure HTML. This is done within the special **HTMLform** component. 
+pure HTML. This is done within the special **HTMLForm** component. 
 
 <br>
 
@@ -25,7 +25,7 @@ There are three ways of embedding a form into the component:
 Content property may either point the **ID** of **DIV container** where the form lies or to **document.body** if it is included directly into your web page body. 
 
 {{snippet
-HTMLform, content
+HTMLForm, content
 }}
 ~~~html
 <div id="areaA">
@@ -98,7 +98,7 @@ In this case, standard rules of markup initialization are used and the **markup*
     - standard htmlform properties with 'data' prefix (*data-id, data-height*, etc.);
 - **XML**: There are special tags with 'x:' prefix: 
 	- **< x:ui >** to indicate a webix UI constructor 
-    - **< x:htmlform** > to indicate a component you want to init.
+    - **< x:htmlform** > to indicate a component you want to initialize.
 
 Form elements are created according to standard HTML.
 
@@ -151,7 +151,7 @@ webix.ui({
 ##Working with HTMLform
 
 - [Data Validation](desktop/data_validation.md)
-- [Form and Htmlform Treatment](desktop/form_tasks.md)
+- [Form and HTMLForm Treatment](desktop/form_tasks.md)
 - [File Uploading with Form](desktop/uploader_integration.md)
 - [Data Binding](desktop/data_binding.md)
 
