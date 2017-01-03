@@ -7,7 +7,7 @@ Message Box CSS
 
 <table class="inline">
 	<tr class="row0">
-		<th class="col0 centeralign">  css class  </th><th class="col1 centeralign">  Element  </th>
+		<th class="col0 centeralign">  CSS class  </th><th class="col1 centeralign">  Element  </th>
 	</tr>
 	<tr class="row1">
 		<td class="col0 leftalign"><strong>.webix_model_box</strong>  </td><td class="col1">the whole message box </td>

@@ -67,7 +67,7 @@ $(".calendar_here").webix_calendar();
 
 {{sample 31_jquery/02_calendar.html }}
 
-3 . An **HTML table** can be the **datasource** for the component initialized in the same container. Each column in the table is reflected as a template item for the component:
+3 . An **HTML table** can be a **data source** for the component initialized in the same container. Each column in the table is reflected as a template item for the component:
 
 {{snippet
 Table row with three columns

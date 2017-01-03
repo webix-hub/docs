@@ -7,7 +7,7 @@ can be omitted or replaced.
 ##Data Presentation
 
 - **value** (template) - the data item chosen for graphical representation; as a rule, its values are taken for text labels of the Y axis;
-- **data** / **url** (string/url) - datasource for the component;
+- **data** / **url** (string/url) - data source for the component;
 - **label** (string) - text labels for each point on the line;
 
 ####Setting titles for each axis:

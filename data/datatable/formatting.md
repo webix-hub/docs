@@ -1,6 +1,7 @@
 Number and Date Formatting
 ================================
-Number formatting
+
+Number Formatting
 ----------------
 To set the required format for number fields you should use attribute **format**. 
 
@@ -32,7 +33,8 @@ Method **numToStr()** allows you to set the following properties for fractional 
 - *decimalDelimiter* - a mark that will be used as the decimal delimiter;
 - *decimalSize* - the number of digits after the decimal mark.
 
-There are two default presets - numberFormat and priceFormat which provides number and price formatting according to the current locale
+There are two default presets - **numberFormat** and **priceFormat** which provide number and price formatting according to the current locale:
+
 ~~~js
 grid = new webix.ui({
 	view:"datatable",
@@ -44,8 +46,10 @@ grid = new webix.ui({
 
 
 For details on number formatting methods, see helpers/number_formatting_methods.md.
-Date formatting
+
+Date Formatting
 ---------------
+
 Dates in DataTable can be specified by both **DateTime** and **string** values.
 
 But formatting can be applied only to **DateTime** objects. Therefore, to format string values you should convert them to DateTime format at first.
@@ -104,7 +108,7 @@ webix.i18n.setLocale();
 
 For more details, see helpers/date_formatting_methods.md.
 
-Custom formatting
+Custom Formatting
 -----------------
 
 You can apply custom formatting to a column by presenting the **format** attribute as a function (function accepts raw value and returns the formatted one). 

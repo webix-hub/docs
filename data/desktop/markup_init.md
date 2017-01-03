@@ -21,7 +21,7 @@ At the same time, components can be initialized not only by literal notation, bu
 **Bonuses of markup initialization**
 
 - you needn't define [template](desktop/html_templates.md) to enable data rendering).Still, you should use property names in hash signs;
-- datasource can be defined in frames of unordered lists or HTML tables. 
+- data source can be defined in frames of unordered lists or HTML tables. 
 
 **License restrictions**
 
@@ -56,8 +56,8 @@ The main methods here are **init**(node, target) and **parse**(node) where argum
 
 Initializing and parsing serve different purposes: 
 
-- The **init()** method inits Webix object in HTML layout.
-- The **parse()** method inits the component in Webix layout. 
+- The **init()** method initializes Webix object in HTML layout.
+- The **parse()** method initializes the component in Webix layout. 
 
 The simplest initialization script looks as follows: 
 
@@ -68,7 +68,7 @@ webix.ready(function(){
 });
 ~~~
 
-**External-file** or **serverside data** is loaded to the page by **Ajax**. Here you should specify path to the file(script) and set initialization pattern in a callback. 
+**External-file** or **server-side data** is loaded to the page by **Ajax**. Here you should specify path to the file(script) and set initialization pattern in a callback. 
 
 In the code below, data comes from external XML file, the **node** is incoming data while the **target** is body of the current document. 
 

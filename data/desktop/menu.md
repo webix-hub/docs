@@ -8,7 +8,7 @@ Menu
 
 ##Overview
 
-UI-related pulldown **Menu** inherits from [list](desktop/list.md) and lets users select the necessary item from the list of grouped items (submenus). Each element of a submenu can start its own submenu. <br>
+UI-related pull-down **Menu** inherits from [list](desktop/list.md) and lets users select the necessary item from the list of grouped items (sub-menus). Each element of a submenu can start its own sub-menu. <br>
 A dynamic **Submenu** becomes visible only when you put a mouse pointer over the corresponding item of the main menu (on 'onMouseOver' event) and hides as soon as you remove mouse pointer ("onMouseOut"). 
 
 <br>
@@ -43,8 +43,8 @@ webix.ui({
 
 ####Submenu configuration may include: 
 
-- **subMenuPos** (string) - sets position of pulldown submenus that will appear on mouse over;
-- **submenuConfig** (object) - sets common configuration for all the submenus in this menu regardless of their nesting level;
+- **subMenuPos** (string) - sets position of pull-down sub-menus that will appear on mouse over;
+- **submenuConfig** (object) - sets common configuration for all the sub-menus in this menu regardless of their nesting level;
 - **layout** (string) - sets the arrangement of menu items: **x** (default) for a horizontal menu, **y** for a vertical one;
 - **$template** (string) - flag that indicates a separator between groups of menu items. Possible types are as follows: 
 	- **"Separator"** - a gray separating line; 
@@ -53,10 +53,10 @@ webix.ui({
 	- **subsign** (boolean) - sets an arrow for an item containing a submenu;
     - **height** and **width** (number) of each item;
 - **openAction** (string) - alters the way of submenu opening - **"click"**. If set, you should first click a menu item to enable submenu opening and hiding on "onMouseOver" and "onMouseOut" events.
-To hide submenus, you need to click somewhere outside the menu;
+To hide sub-menus, you need to click somewhere outside the menu;
 - **template** - (string, function) - rules of data presentation. See [Data templates](desktop/html_templates.md) article for details;
 - **data** (object) - the inline data desired format. See [Loading data](desktop/data_loading.md) article for details
-- **autowidth** - (boolean) adjusts the width of pulldown subitems according to the length of their text, false by default
+- **autowidth** - (boolean) adjusts the width of pull-down sub-items according to the length of their text, false by default
 
 {{sample 03_menu/11_menu_open_click.html}}
 
@@ -206,7 +206,7 @@ data:[
 ]
 ~~~
 
-This configuration overrides common configuration for submenus defined by **submenuConfig**. 
+This configuration overrides common configuration for sub-menus defined by **submenuConfig**. 
 
 {{sample 03_menu/12_submenu_config.html}}
 

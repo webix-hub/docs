@@ -38,7 +38,7 @@ Multicombo inherits from a standard [combo](desktop/combo.md) control and has th
 - **labelPosition** (string) - sets the position of the label in relation to the control container;
 - **value** (array/string) - defines the initially selected items of the control;
 - **separator** (string) - defines a delimiter for separating options in a multicombo, comma by default;
-- **options** or **suggest** (array, object) - defines a set of items to select from, or the datasource, or [advanced popup configuration](desktop/advanced_combo.md);
+- **options** or **suggest** (array, object) - defines a set of items to select from, or the data source, or [advanced popup configuration](desktop/advanced_combo.md);
 - **optionWidth** (number) - defines the width of a popup list. By default, it is adjusted to the control width;
 - **button** (boolean) - defines whether the "Select" button will be displayed in the options list;
 - **keepText** (boolean) - defines whether the entered text should be kept in the input after an option is selected.
