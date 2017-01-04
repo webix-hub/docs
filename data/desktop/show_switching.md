@@ -3,9 +3,9 @@ Common Functions to Switch Between Views
 
 When switching views with the help of API, you can refer either to the cells and view in them or to the [switching controls](desktop/tabbar_switching.md). 
 
-##Setting Value for the Tabbar/Segmented/Tabview
+##Setting Value for the Tabbar/Segmented/TabView
 
-Either of the controls as well as tabview have common initialization pattern where **tabs** are stored in the **options** array: 
+Either of the controls as well as TabView have common initialization pattern where **tabs** are stored in the **options** array: 
 
 ~~~js
 {view:"tabbar", id:"tabbar1", multiview:true, options: 
@@ -13,7 +13,7 @@ Either of the controls as well as tabview have common initialization pattern whe
 }
 ~~~
 
-Tabs are connected to the multiview cells, so if you set the value for button, the dedicated view will be opened: 
+Tabs are connected to the MultiView cells, so if you set the value for button, the dedicated view will be opened: 
 
 ~~~js
 $$("tabbar1").setValue("2"); //the 2nd tab with "Tab2" value will be set
@@ -25,7 +25,7 @@ $$("tabbar1").setValue("2"); //the 2nd tab with "Tab2" value will be set
 These functions are used to show the specified view: 
 
 - **show();** - makes the specified view visible. Is called from the needed view;
-- **back();** - switches to the view you've come from. Is called from the multiview object. 
+- **back();** - switches to the view you've come from. Is called from the MultiView object. 
 
 To enable switching between views you can:
 
@@ -33,7 +33,7 @@ To enable switching between views you can:
 - trigger the switching function on any event in the app. For instance, "onItemClick" event allows clicking any component (not necessarily a button) and make the specified view visible. 
 
 {{snippet
-Two-Cell Multiview
+Two-Cell MultiView
 }}
 ~~~js
 webix.ui({
@@ -61,9 +61,9 @@ function save(){
 
 {{sample 20_multiview/02_navigation.html }}
 
-##Nested Multiview
+##Nested MultiView
 
-If a cell is a multiview itself, i.e. contains several cells of its own, the switching function requires **true** argument to get to these lower-level views. 
+If a cell is a MultiView itself, i.e. contains several cells of its own, the switching function requires **true** argument to get to these lower-level views. 
 
 ~~~js
 rows:[
@@ -99,5 +99,5 @@ At the same time, if you switch between chart1 and chart2 that lie on the same l
 
 Related Articles
 
-- [Tabview Functionality](desktop/tabview.md)
+- [TabView Functionality](desktop/tabview.md)
 - [Controls to Switch Between View Cells](desktop/tabbar_switching.md)

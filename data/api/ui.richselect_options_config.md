@@ -9,22 +9,23 @@ options
 @example:
 webix.ui({
     view:"richselect",
-    value:1, //the initially selected one
+    value:1, // the initially selected one
     label: 'Fruit',
     options:[ 
-        { value:1, label:"Banana"}, 
-        { value:2, label:"Papai" }, 
-        { value:3, label:"Apple" }
+        { "id":1, "value":"Banana"}, 
+        { "id":2, "value":"Papaya"}, 
+        { "id":3, "value":"Apple"}
     ]
 }); 
 
 webix.ui({
 	view:"richselect",
-    options:["Banana", "Papai", "Apple"]
+    options:["Banana", "Papaya", "Apple"]
 });
 
 webix.ui({
-	view:"richselect", options:"server/options.php"
+	view:"richselect", 
+    options:"server/options.php"
 });
 
 @template:	api_config

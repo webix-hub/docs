@@ -15,10 +15,10 @@ var multiselect = webix.ui({
   	label:"Participant", 
   	labelWidth:100, 
   	options:[
-		{id:1, value:"Alex Brown"},
-		{id:2, value:"Dan Simons"},
-		{id:3, value:"Gron Alanski"},
-		{id:4, value:"Dan Alanski"}
+		{"id":1, "value":"Alex Brown"},
+		{"id":2, "value":"Dan Simons"},
+		{"id":3, "value":"Gron Alanski"},
+		{"id":4, "value":"Dan Alanski"}
 	],
   	value:"1,4" 
 });

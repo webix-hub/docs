@@ -3,7 +3,7 @@ options
 
 
 @short:
-	defines data items of the drop-down list
+	defines segments of the segmented button
 
 @type: object
 @example:
@@ -11,9 +11,9 @@ webix.ui({
 	view:"segmented", 
     value:"one", 
     options:[
-		{ id:"one", value:"One" },
-		{ id:"two", value:"Two"},
-		{ id:"three", value:"Three"}
+		{ "id":"one", "value":"One" },
+		{ "id":"two", "value":"Two"},
+		{ "id":"three", "value":"Three"}
 	]
 })
 
@@ -38,7 +38,7 @@ The objects in the array have **3 attributes**:
 - **value** - (*string*) the item label
 - **width** - (*number*) the item width
 
-Nore that the [getValue()](api/link/ui.segmented_getvalue.md) method returns the **ID** of selected option. 
+Note that the [getValue()](api/link/ui.segmented_getvalue.md) method returns the **ID** of selected option. 
 
 
 

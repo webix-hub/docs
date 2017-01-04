@@ -27,10 +27,10 @@ The items will be selected on mouse click.
 - To enable multiselection by clicking items (or tapping them on **touch** devices) you should additionally switch to **"touch"** variation of multiselection. 
 
 
-####Dataview, List and Tree Multiselection
+####DataView, List and Tree Multiselection
 
 {{snippet
-"Ctrl"+click mutliselection
+"Ctrl"+click multiselection
 }}
 ~~~js
 webix.ui({
@@ -41,7 +41,7 @@ webix.ui({
 ~~~
 
 {{snippet
-"Touch" mutliselection
+"Touch" multiselection
 }}
 ~~~js
 webix.ui({
@@ -56,19 +56,19 @@ webix.ui({
 
 
 {{snippet
-"Ctrl"+click mutliselection
+"Ctrl"+click multiselection
 }}
 ~~~js
 webix.ui({
 	view:"datatable",
     multiselect:true,
-    select:'cell', //multiple seelction of cells
+    select:'cell', //multiple selection of cells
     ...// config
 })
 ~~~
 
 {{snippet
-"Touch" mutliselection
+"Touch" multiselection
 }}
 ~~~js
 webix.ui({
@@ -114,11 +114,11 @@ You can select the first and the last item from the dataset without specifying t
 $$('datalist').select($$('datalist').getFirstId();) //selects the first data item in the list
 
 $$('dataview').select(4); //the cell containing item with ID = 4 will be selected
-$$('dataview').select([2,3,4]); the items with IDs equalling to 2, 3 and 4
+$$('dataview').select([2,3,4]); the items with IDs equal to 2, 3 and 4
 ~~~
 
-- **selectAll()** function equalls to select(); with no parameters and highlights all the items at once;
-- **unselect()** and **unselectAll()** - the functions work  similar to the above mentioned and deselect items according to the same principles;
+- **selectAll()** function equals to select(); with no parameters and highlights all the items at once;
+- **unselect()** and **unselectAll()** - the functions work  similar to the above mentioned and unselect items according to the same principles;
 - **isSelected(int)** - the function checks whether the item with this ID is selected. Returns *true* or *false*;
 - **getSelectedId()**  - the function doesn't take any parameters. It returns the ID of a selected item or an array of IDs in case of multiselect mode. 
 
@@ -148,7 +148,7 @@ webix.ui({
 webix.extend($$('dataview1'), webix.KeysNavigation);
 ~~~
 
-The code above adds navigation only to this instance of a Dataview, still it's possible to provide the functionality for all dataviews in the app.  
+The code above adds navigation only to this instance of a DataView, still it's possible to provide the functionality for all DataViews in the app.  
 For more details, refer to [Component Extending](desktop/extend.md#extendedfunctionality) article.
 
 @complexity:1

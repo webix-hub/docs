@@ -17,9 +17,9 @@ JS files for Sidebar menu isn't included into Webix lib package and should be ta
 [https://github.com/webix-hub/components](https://github.com/webix-hub/components) components.
 }}
 
-Sidebar menu can be collapsed into a navigation bar with only icons of the menu items visible. On hovering an icon, a popup with the related item is shown with its subitems.
+Sidebar menu can be collapsed into a navigation bar with only icons of the menu items visible. On hovering an icon, a popup with the related item is shown with its sub-items.
 
-On clicking a Sidebar menu item, either the related content is shown in the right part of the screen or selectable subitems are displayed.
+On clicking a Sidebar menu item, either the related content is shown in the right part of the screen or selectable sub-items are displayed.
 
 <br>
 
@@ -69,7 +69,7 @@ webix.ready(function(){
 
 Sidebar can load data from various sources in different formats. You can find more information in the datatree/loading_data.md article.
 
-The Sidebar data configuration contains the description of menu items, corresponding icons and subitems. It can look like this:
+The Sidebar data configuration contains the description of menu items, corresponding icons and sub-items. It can look like this:
 
 ~~~js
 var menu_data = [

@@ -44,7 +44,7 @@ webix.attachEvent("onBeforeAjax",
 );
 ~~~
 
-Note that Webix [Ajax module](helpers/ajax_operations.md) (described below) features a **built-in functionality** for sending **headers** with serverside requests. 
+Note that Webix [Ajax module](helpers/ajax_operations.md) (described below) features a **built-in functionality** for sending **headers** with server-side requests. 
 
 ##Loading with Webix Ajax Helper
 
@@ -57,7 +57,7 @@ webix.ajax("data/load.php",function (text,data){
 });
 ~~~
 
-Serverside script should return **inline data** in any of [supported data types](desktop/data_types.md) so that it can be [parsed](api/link/datarecord_parse.md) into the necessary component. 
+Server-side script should return **inline data** in any of [supported data types](desktop/data_types.md) so that it can be [parsed](api/link/datarecord_parse.md) into the necessary component. 
 
 Above snippet will set the new data for list. To add new data to the existing list data, define start position for parsing:
 
@@ -70,11 +70,11 @@ webix.ajax("data/load.php",function (text,data){
 });
 ~~~
 
-For setting the necessary **serverside response** manually, [see the dedicated article](desktop/custom_serverside.md#response).
+For setting the necessary **server-side response** manually, [see the dedicated article](desktop/custom_serverside.md#response).
 As to [Server Side Connector](desktop/dataconnector.md), they return data in JSON or XML format depending 
 on connector type. 
 
-Ajax loading allows **passing params to serverside script** as GET request:
+Ajax loading allows **passing parameters to server-side script** as GET request:
 
 ~~~js
 webix.ajax("server/load.php?id="+id, function(text, data){
@@ -90,7 +90,7 @@ Here you should consult:
 
 - Ready-to use proxy objects for [offline support](desktop/server_offline.md);
 - Proxy object for working in [REST mode](desktop/server_rest.md);
-- Guidlines about [proxy objects](desktop/server_proxy.md) and custom proxy objects in particular.
+- Guidelines about [proxy objects](desktop/server_proxy.md) and custom proxy objects in particular.
 
 @complexity:2
 

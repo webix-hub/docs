@@ -1,6 +1,8 @@
 UI.Resizearea. Common Tips
 ======================
+
 ###Limiting the area available for resizing
+
 By default, the area available for resizing is the whole viewport. To limit the area, 
 you should initialize the component in a container with **style='position:relative'**
 
@@ -11,12 +13,12 @@ you should initialize the component in a container with **style='position:relati
 
 ~~~js
 webix.event(document.getElementById("mydiv"),"mousedown",function(e){
-			var resizeStick = new webix.ui.resizearea({
-                    container:"mydiv",
-                    dir:"y",
-                    eventPos:e.pageY,
-                    start:e.pageY-webix.html.offset(webix.toNode("mydiv")).y
-			});
+	var resizeStick = new webix.ui.resizearea({
+        container:"mydiv",
+        dir:"y",
+        eventPos:e.pageY,
+       	start:e.pageY-webix.html.offset(webix.toNode("mydiv")).y
+	});
 })
 ~~~
 

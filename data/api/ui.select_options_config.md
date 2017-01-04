@@ -5,18 +5,17 @@ options
 	
 @type: array, string
 @example:
-//simple array
+// simple array
 { view:"select", label:"Version", options:["1.0", "1.5", "2.0"]}
 
-//id-value pairs
+// id-value pairs
 { view:"select", value: 2, label:"Branch", options:[
-	{ value:"Master", id:1 },
-	{ value:"Release", id:2 }
+	{ "id":1, "value":"Master" },
+	{ "id":2, "value":"Release" }
 ]},
 
-//serverside options
+// server-side options
 { view:"select", label:"Version", options:"server/options.php"}
-
 
 
 @template:	api_config
@@ -35,5 +34,5 @@ Options can be set as:
 - an associative array of objects with **id** and **value** properties;
 - a string with a path to a script that loads options from server. 
 
-The initially selected options is defined by api/ui.button_value_config.md property. 
+The initially selected options is defined by the api/ui.button_value_config.md property. 
 

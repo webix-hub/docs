@@ -106,7 +106,7 @@ When you work in local mode, your component deals with local storage objects onl
 
 Webix works with cache through its **webix.storage.local** interface. See the description of [caching logic](desktop/offline.md#app).
 
-In local mode, you should provide names of **localStorage objects** instead of urls:
+In local mode, you should provide names of **localStorage objects** instead of URLs:
 
 ~~~js
 {

@@ -10,7 +10,7 @@ Webix allows visualizing the application workflow by adding the following elemen
 Setting Progress Bar/Icon
 -------------------
 
-Progress bar and icon are provided by Webix **Progress Bar** module  that can be easily mixed into any componenet including [layouts](desktop/building_app_architecture.md). 
+Progress bar and icon are provided by Webix **Progress Bar** module  that can be easily mixed into any component including [layouts](desktop/building_app_architecture.md). 
 
 ~~~js
 webix.extend($$("view_id"), webix.ProgressBar);
@@ -29,8 +29,8 @@ if the configuration is not provided;
     - "bottom" - progress bar at the bottom of the view;
     - "icon" - progress icon at the center of the view;
 - **icon** (string) - icon name (only if *type:"icon"* is set). Icon names can be checked at [FontAwesome](http://fortawesome.github.io/Font-Awesome/icons/));
-- **delay** (number) - life time in miliseconds of the progress bar, after which it is hidden (if **hide** parameter is enabled);
-- **hide** (boolean) - specifies whether a progress bar/icon shold be hidden after its life time. 
+- **delay** (number) - life time in milliseconds of the progress bar, after which it is hidden (if **hide** parameter is enabled);
+- **hide** (boolean) - specifies whether a progress bar/icon should be hidden after its life time. 
 - **position** (number) - an optional parameter, true only for the progress bar. Specifies the position of a progress mark on a bar. Varies from 0 to 1. 
 
 ###Progress Bar for the Data Component
@@ -99,7 +99,7 @@ Setting Overlay Boxes to Components
 
 Overlay box is provided by Webix [OverlayBox](api/refs/overlaybox.md) module and allows creating placeholders for data components. 
 
-The module needs to be inluded into the component: 
+The module needs to be included into the component: 
 
 ~~~js
 webix.extend($$("list1"), webix.OverlayBox);
@@ -107,7 +107,7 @@ webix.extend($$("list1"), webix.OverlayBox);
 
 After that the following methods become accessible from the component:
 
-- **showOverlay**(text) - shows overlay box with the defined text or html;
+- **showOverlay**(text) - shows overlay box with the defined text or HTML;
 - **hideOverlay()** - hides the overlay box;
 
 A blue bar with **webix_loading_overlay** CSS class will be shown. To get rid of it, or set another loading image, redefine this class. 

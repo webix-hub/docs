@@ -3,7 +3,7 @@ Working with IndexedDB
 
 Webix offers a simple way for efficient work with [IndexedDB](https://developer.mozilla.org/en-US/docs/IndexedDB/Using_IndexedDB) in-browser storage. 
 
-Complying with Webix concept of [serverside proxy objects](desktop/server_proxy.md) IndexedDB support is implemented via **indexdb** proxy object that contains necessary logic for 
+Complying with Webix concept of [server-side proxy objects](desktop/server_proxy.md) IndexedDB support is implemented via **indexdb** proxy object that contains necessary logic for 
 creating databases as well as working with existing ones.
 
 Webix **indexdb** proxy object is used for: 
@@ -22,7 +22,7 @@ Webix **indexdb** proxy object is used for:
 
 To load data from an existing IndexedDB database, provide its name together with an objectstore name according to the following pattern: **indexdb->db_name/store_name**. 
 
-Both database and objectstore names are **must-have** paramaters:
+Both database and objectstore names are **must-have** parameters:
 
 ~~~js
 {
@@ -31,13 +31,13 @@ Both database and objectstore names are **must-have** paramaters:
     url:"indexdb->mydb/mycollection"
 }
 
-//or, for loading data after component init
+//or, for loading data after component initialization
 $$("datatable").load("indexdb->mydb/mycollection");
 ~~~
 
 {{sample 40_serverside/05_indexeddb/01_datatable_loading.html }}
 
-Component's [url](api/link/datacollection_url_config.md) property as well as [load](api/link/datacollection_load.md) method define datasource. 
+Component's [url](api/link/datacollection_url_config.md) property as well as [load](api/link/datacollection_load.md) method define data source. 
 In case of IndexedDB, they call **load** method of an **indexdb** proxy object and pass database and objectstore names into it.
 
 ###Saving Component Data to IndexedDB Database
@@ -56,7 +56,7 @@ To save changes performed over component data, you need to pass database and obj
 
 Component's [save](api/link/datacollection_save_config.md) property calls **save** method of an **indexdb** proxy object.
 
-###Creating IndexedDB Datatase and Populating it with Data 
+###Creating IndexedDB Database and Populating it with Data 
 
 The **indexdb** proxy allows using its methods directly. For instance, you can call **create** method with the following code:
 
@@ -66,9 +66,9 @@ webix.proxy.indexdb.create(dbname, collection_data, dbversion, callback);
 
 Where: 
 
-- **dbname** - name of a databases being created;
+- **dbname** - name of a database which is being created;
 - **collection_data** - JSON object that contains **collection names** as keys and **collection data** as values;
-- **dbversion** - version of the database being created. It you prefer not to bother about versons, pass *null*;
+- **dbversion** - version of the database being created. It you prefer not to bother about versions, pass *null*;
 - **callback** - callback function. 
 
 Here's an example of a function call, where *mydb* database with *mycollection* objectstore is created and data is loaded to the objectstore. 
@@ -76,7 +76,7 @@ Here's an example of a function call, where *mydb* database with *mycollection* 
 ~~~js
 webix.proxy.indexdb.create("mydb", {
 	mycollection:[
-		{"id":1,"title":"The Shaushenk Redemption ","year":"1998","votes":194865,
+		{"id":1,"title":"The Shawshank Redemption ","year":"1998","votes":194865,
         	"rating":"7.5","rank":1},
 		{"id":2,"title":"The Godfather","year":"1975","votes":511495,"rating":"9.2",
         	"rank":2},

@@ -7,7 +7,7 @@ Progress bar is set with **CSS means** for each file separately and is displayed
 
 {{sample 21_upload/06_progress_bar.html}}
 
-[Webix.type](desktop/type.md) defines the way component items look. Here you specify the **component** you make the type for, **name** of this type and item **property(ies)** you set.
+[Webix.type](desktop/type.md) defines the way component items look. Here you specify the **component** you make the type for, **name** of this type and item **property(-ies)** you set.
 
 ~~~js
 webix.type(webix.ui.list, {

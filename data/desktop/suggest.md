@@ -4,10 +4,10 @@ Suggest List
 ##API Reference 
 
 - [Suggest List API](api/refs/ui.suggest.md)
-- [Multisuggest API](api/refs/ui.multisuggest.md)
-- [Checksuggest API](api/refs/ui.checksuggest.md)
-- [Gridsuggest API](api/refs/ui.gridsuggest.md)
-- [Datasuggest API](api/refs/ui.datasuggest.md)
+- [MultisSuggest API](api/refs/ui.multisuggest.md)
+- [CheckSuggest API](api/refs/ui.checksuggest.md)
+- [GridSuggest API](api/refs/ui.gridsuggest.md)
+- [DataSuggest API](api/refs/ui.datasuggest.md)
 - [DateRangeSuggest API](api/refs/ui.daterangesuggest.md)
 
 ##Overview
@@ -59,7 +59,7 @@ You must obligatory choose some value from the list.
 - on client side;
 - on server side.
 
-Default **timeout** between key pressing and filtering equals to 1ms, still it can be modified by the dedicated property. 
+Default **timeout** between key pressing and filtering equals to 1 ms, still it can be modified by the dedicated property. 
 
 ~~~js
 {
@@ -170,7 +170,7 @@ webix.ui({
 As value of suggest property
 }}
 ~~~js
-{ view:"text", name:"country", label:"Contry", value:"Albania", suggest:"server/data.php"}
+{ view:"text", name:"country", label:"Country", value:"Albania", suggest:"server/data.php"}
 ~~~
 
 {{sample 13_form/01_controls/15_suggest_server.html }}
@@ -362,46 +362,46 @@ The functionality is available in **Webix Pro** edition only.
 
 Webix offers advanced suggest controls for width extra functionality and greater visual effect:
 
-- **Checksuggest** - a suggest control based on Webix [List](desktop/list.md). Features checkboxes that enable multiple choice;
-- **Multisuggest** - a suggest control based on Webix [List](desktop/list.md) with the ability to select **multiple items** at a time;
-- **Gridsuggest** - a suggest control based on Webix [DataTable](datatable/index.md);
-- **Datasuggest** - a suggest control based on Webix [DataView](desktop/dataview.md);
+- **CheckSuggest** - a suggest control based on Webix [List](desktop/list.md). Features checkboxes that enable multiple choice;
+- **MultiSuggest** - a suggest control based on Webix [List](desktop/list.md) with the ability to select **multiple items** at a time;
+- **GridSuggest** - a suggest control based on Webix [DataTable](datatable/index.md);
+- **DataSuggest** - a suggest control based on Webix [DataView](desktop/dataview.md);
 - **DateRangeSuggest** - a suggest control based on Webix [DateRangePicker](desktop/daterangepicker.md).
 
-###Checksuggest
+###CheckSuggest
 
 <img src="desktop/multiselect.png">
 
-Checksuggest control is used in a number of **PRO** controls. You can find its implementations in: 
+CheckSuggest control is used in a number of **PRO** controls. You can find its implementations in: 
 
 - [multiselect form control](desktop/multiselect.md);
 - [multicombo form control](desktop/multicombo.md);
 - [multiselect datatable filter](datatable/filtering.md#multiselect);
 - [multicombo datatable filter](datatable/filtering.md#multiselect);
  
-###Multisuggest
+###MultiSuggest
 
 <img src="desktop/multiselect_multisuggest.png">
 
-Multisuggest control is used in the [multiselect component editor](desktop/editing.md#multiselect). 
+MultiSuggest control is used in the [multiselect component editor](desktop/editing.md#multiselect). 
 
-If needed, it can substitute Checksuggest for the above-mentioned use cases. See desktop/advanced_combo.md for details.
+If needed, it can substitute CheckSuggest for the above-mentioned use cases. See desktop/advanced_combo.md for details.
 
-###Gridsuggest 
+###GridSuggest 
 
 <img src="desktop/gridsuggest.png"/>
 
 {{sample 32_thirdparty/13_gridselect.html}}
 
-Gridsuggest can be used with form controls as well as with component editors. More about its configuration can be found in the [related article](desktop/gridsuggest.md).  
+GridSuggest can be used with form controls as well as with component editors. More about its configuration can be found in the [related article](desktop/gridsuggest.md).  
 
-###Datasuggest 
+###DataSuggest 
 
 <img src="desktop/datasuggest.png"/>
 
 {{sample 32_thirdparty/14_dataselect.html}}
 
-Datasuggest can be used with form controls as well as with component editors. More about its configuration can be found in the [related article](desktop/datasuggest.md).  
+DataSuggest can be used with form controls as well as with component editors. More about its configuration can be found in the [related article](desktop/datasuggest.md).  
 
 ###DateRangeSuggest
 

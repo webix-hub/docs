@@ -9,9 +9,9 @@ The component can be used to build a multi-item menu for navigating between view
 var segmented = webix.ui({
 	view:"segmented", 
   	value:1, options:[
-    	{ id:"1", value:"Section A" }, 
-    	{ id:"2", value:"Section B" }, 
-    	{ id:"3", value:"Section C" }
+    	{ "id":"1", "value":"Section A" }, 
+        { "id":"2", "value":"Section B" }, 
+        { "id":"3", "value":"Section C" }
     ]
 });
 ~~~

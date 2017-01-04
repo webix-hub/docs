@@ -60,7 +60,7 @@ Main features
 </dd>
 <br>
 <dt><a href="desktop/third_party_integration.md">17. Integration with third party libraries </a></dt>
-<dd>Webix can be integrated with various third party libraries: Backbone.js library, Google, Here and Yandex maps, Mercury, NicEdit, Tinymce and Code Mirror text editors, etc.
+<dd>Webix can be integrated with various third party libraries: Backbone.js library, Google, Here and Yandex maps, Mercury, NicEdit, TinyMCE and Code Mirror text editors, etc.
 </dd>
 <br>
 <dt><a href="datatree/copying.md">18. Copying to/from clipboard</a></dt>

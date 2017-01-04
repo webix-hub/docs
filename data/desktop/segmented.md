@@ -8,7 +8,7 @@ Segmented Button
 
 ##Overview
 
-Segmented is an integral button with as many segments as you like. Can be used for switching between [multiview](desktop/multiview.md) cells.
+Segmented is an integral button with as many segments as you like. Can be used for switching between [MultiView](desktop/multiview.md) cells.
 
 <img src="desktop/segmented.png"/>
 
@@ -29,7 +29,7 @@ Segmented is an integral button with as many segments as you like. Can be used f
 
 ####Main properties
 
-- **multiview** (boolean) - connects the control to the multiview cells, enables switching between these cells;
+- **multiview** (boolean) - connects the control to the MultiView cells, enables switching between these cells;
 - **options** (array, object) - defines the buttons (segments) within the control. [Details](desktop/controls_guide.md#defininginitialvalues);
 - **value** (string, number) 
 	- within **options** array it sets titles for button segments;

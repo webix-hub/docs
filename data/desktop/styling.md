@@ -79,7 +79,7 @@ or by using [webix.html](api/refs/html.md) helper:
 webix.html.addCss( $$("datatable").getNode(), "mycss");
 ~~~
 
-The advantage of the api/html_addcss.md method is that it is supplied with the opposite one, the api/html_removecss.md that can be used to undefine the CSS class from the component: 
+The advantage of the api/html_addcss.md method is that it is supplied with the opposite one, the api/html_removecss.md that can be used to remove the CSS class from the component: 
 
 ~~~js
 webix.html.removeCss( $$("datatable").getNode(), "mycss");
@@ -87,8 +87,7 @@ webix.html.removeCss( $$("datatable").getNode(), "mycss");
 
 ##Styling inside Type Parameter
 
-When you set dimensions of component items, you use the **type** property that contains an object with an item's width and height. There you can as well put
-other parameters including template and css. 
+When you set dimensions of component items, you use the **type** property that contains an object with an item's width and height. There you can as well put other parameters including template and CSS. 
 
 ~~~js
 webix.ui ({
@@ -154,7 +153,7 @@ As far as you've noticed, **Webix default CSS classes** are marked by a **"webix
 
 ##Styling separate items in the component
 
-Instead of defining css class for the whole component you can define css class for single items. To do so you need to place $css property in the data object. This property can contain a name of css class or a hash of css rules.
+Instead of defining CSS class for the whole component you can define CSS class for single items. To do so you need to place $css property in the data object. This property can contain the name of the CSS class or a hash of CSS rules.
 
 {{snippet Setting item's style directly in the dataset}}
 ~~~
@@ -181,13 +180,13 @@ webix.ui({
 </script>
 ~~~
 
-If you want to change styles dynamically, after page loading you can use  the addCss and removeCss api.
+If you want to change styles dynamically, after page loading you can use  the addCss and removeCss API.
 
 ##Styling of a Specific Part of a Component (CSS maps)
 
-CSS maps help stylize a specific part of a component. You should refer to its CSS map, pick the css class to the needed part and define the style in the document head. 
+CSS maps help stylize a specific part of a component. You should refer to its CSS map, pick the CSS class to the needed part and define the style in the document head. 
 
-Style applies to the header of the unitlist:
+Below a style is applied to the header of the UnitList:
 
 <img src="desktop/unitlist.png"/>
 
