@@ -5,7 +5,7 @@ Different countries and regions have their own rules for writing dates, numbers,
 All these issues should be taken in account in case a target group for your application is wider than one country or region. 
 
 The set of rules for this or that country is called **locale** and includes methods for date, time, number, price and labels formatting. 
-Localization methods belong to the [i18n class](api/refs/i18n.md) and treat data according to he set format.
+Localization methods belong to the [i18n class](api/refs/i18n.md) and treat data according to the set format.
 
 By default **Date()** constructor outputs raw data. Unformatted, it looks barely readable. 
 
