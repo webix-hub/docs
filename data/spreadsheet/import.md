@@ -4,7 +4,13 @@ Excel File Import
 Loading data from Excel into SpreadSheet
 -------------------------
 
-You can easily import data from an Excel file into SpreadSheet. For this purpose, you can choose one of the ways below:
+You can easily import data from an Excel file into SpreadSheet. 
+
+{{note
+Pay attention that SpreadSheet allows importing data, formulas and spans from Excel, while styles and sizes of cells are not imported. 
+}}
+
+To load data from Excel into SpreadSheet, you can choose one of the ways below:
 
 1) specifying the necessary file in the SpreadSheet constructor with the help of the api/link/ui.spreadsheet_url_config.md parameter: 
 
