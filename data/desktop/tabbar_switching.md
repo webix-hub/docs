@@ -63,5 +63,5 @@ The **initially visible tab** is set by the tabbar/segmented value property that
 
 ###Related Articles
 
-- [Tabview Functionality](desktop/tabview.md)
+- [TabView Functionality](desktop/tabview.md)
 - [Functions to Control Switching](desktop/show_switching.md)

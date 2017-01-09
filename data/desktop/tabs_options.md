@@ -1,4 +1,4 @@
-Adding and Deleting Multiview Cells Dynamically
+Adding and Deleting MultiView Cells Dynamically
 =============
 
 Here two approaches are possible:
@@ -10,7 +10,7 @@ In other words you should **add** and **remove options** for tabbar (segmented b
 2 . If you are using **[tabview](desktop/tabview.md)** (integral component that consists of a built-in multiview and tabbar) - note that it features dedicated methods 
 to **add** and **remove views** together with the corresponding **tabs**. 
 
-##Using Tabbar and Multiview
+##Using Tabbar and MultiView
 
 Both [Tabbar](desktop/tabbar.md) and [Segmented Button](desktop/segmented.md) feature separate parts - tabs or segments - that are defined by **options** property.  
 Each of its options can be connected with a separate view or a separate click handler. 
@@ -35,9 +35,9 @@ Each of its options can be connected with a separate view or a separate click ha
 Tabs/segments can be added and deleted on the go with the help of the following methods: 
 
 - **[addOption()](api/ui.segmented_addoption.md)** - adds a new tab/segment according to the provided configuration; 
-- **[removeOption()](api/ui.segmented_removeoption.md)** - removes the tab/segment according ot the provided ID. 
+- **[removeOption()](api/ui.segmented_removeoption.md)** - removes the tab/segment according to the provided ID. 
 
-Multiview cells can be added and deleted dynamically by using: 
+MultiView cells can be added and deleted dynamically by using: 
 
 - **[addView()](api/link/ui.multiview_addview.md)** - adds view to layout (multiview is layout) according to the provided configuration;
 - **[removeView()](api/link/ui.multiview_removeview.md)** - removed layout cell by the given ID.
@@ -87,9 +87,9 @@ The logic of view adding and removal can be studied in detail in the
 desktop/dynamic_layout.md#addingremovingviewsdynamically.
 ~~~
 
-##Using Tabview
+##Using TabView
 
-[Tabview](desktop/tabview.md) is a hybrid of a [multiview](desktop/multiview.md) and [tabbar](desktop/tabbar.md).  
+[TabView](desktop/tabview.md) is a hybrid of a [multiview](desktop/multiview.md) and [tabbar](desktop/tabbar.md).  
 It features two methods that allow adding and removing cells together with corresponding tabs. 
 
 Each combination of a tab and a cell is configured as: 
@@ -109,7 +109,7 @@ $$("tabview1").addView({
 });
 ~~~
 
-The tabview cell can be removed by [removeView()](api/link/ui.tabview_addview.md) method that required an ID if this cell: 
+The TabView cell can be removed by [removeView()](api/link/ui.tabview_addview.md) method that required an ID if this cell: 
 
 ~~~js
 var id = $$("tabview1").getValue(); //id of active cell
@@ -120,7 +120,7 @@ $$("tabview1").removeView(id);
 
 ##Built-in Tab 'Close' Button
 
-Webix tabbar can be equipped with a 'Close' button: 
+Webix Tabbar can be equipped with a 'Close' button: 
 
 <img src="desktop/tabs_closable.png"/>
 

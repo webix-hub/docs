@@ -7,7 +7,7 @@ Webix library supports integration of popular text editors in the application wi
 
 - [Mercury](#mercury);
 - [NicEdit](#nicedit);
-- [Tinymce](#tinymce);
+- [TinyMCE](#tinymce);
 - [CodeMirror](#codemirror);
 - [CKEditor](#ckeditor).
 
@@ -79,7 +79,7 @@ Link to the library
 JS code
 }}
 ~~~js
-//path from which extra libraries are autoloaded
+// path from which extra libraries are autoloaded
 webix.codebase = "./";
 
 webix.ui({
@@ -94,8 +94,7 @@ webix.ui({
 
 You can download JS file for the TinyMCE Editor from [github](https://github.com/webix-hub/components).
 
-TinyMCE is a platform independent web based **Javascript HTML WYSIWYG** editor control. It has the ability to convert HTML TEXTAREA fields or other HTML 
-elements to editor instances.
+TinyMCE is a platform independent web based **JavaScript HTML WYSIWYG** editor control. It has the ability to convert HTML TEXTAREA fields or other HTML elements to editor instances.
 
 <a href="http://www.tinymce.com/">Learn more about TinyMCE text editor</a>
 
@@ -116,7 +115,7 @@ Link to the library
 JS code
 }}
 ~~~js
-//path from which extra libraries are autoloaded
+// path from which extra libraries are autoloaded
 webix.codebase = "./";
 
 webix.ui({
@@ -168,7 +167,7 @@ Link to the library
 JS code
 }}
 ~~~js
-//path from which extra libraries are autoloaded
+// path from which extra libraries are autoloaded
 webix.codebase = "./";
 
 webix.ui({
@@ -206,7 +205,7 @@ Link to the library
 JS code
 }}
 ~~~js
-//path from which extra libraries are autoloaded
+// path from which extra libraries are autoloaded
 webix.codebase = "./";
 
 webix.ui({

@@ -1,14 +1,13 @@
 Filtering in Tree
 ====================
+
 Tree allows you to filter nodes on the client side. 
 
-
-Filtering is Tree can be invoked by calling the filter method. The method can be called on some event or action, i.e. button click or page load.
-
+Filtering in Tree can be invoked by calling the *filter* method. The method can be called on some event or action, e.g. button click or page load.
 
 
 {{snippet
-Sorting Tree on button click
+Sorting Tree on a button click
 }}
 ~~~html
 <input type='button' onkeypress='tree.filter("#value#", this.value);'>
@@ -22,14 +21,15 @@ Sorting Tree on button click
 	17_datatree/04_api/03_filter.html
 }}
 
-Filtering modes
+Filtering Modes
 ------------------------------------
+
 The library provides special property **filterMode** to define how the tree items will be filtered. 
 
 The **filterMode** property is an object that can contain 3 attributes:
 
 - **showSubItems** - (*boolean*) defines whether the tree should display children of the filtered items (*true*) 
-(even if they don't match the filtering condition). The default value - *true*. 
+(even if they don't match the filtering condition). The default value is *true*. 
 - **openParents** - (*boolean*) - defines whether parents of the filtered items should be expanded (even if they don't match 
 the filtering condition) so that user can effortlessly see the result of filtering. *True* by default. 
 - **level**  - (*number*) sets the nesting level to filter items from (one-based numbering). 
@@ -49,13 +49,27 @@ webix.ui({
 {{sample
 	17_datatree/04_api/03_filter.html
 }}
-<br>
 
-<img src="datatree/filtering_modes(showSubItems).png" />
+For example, we have three trees presented in the image below. Let's apply different filtering modes for each of them.
 
-Custom filtering function
+<img src="datatree/filtering_modes.png">
+
+Thus, we will use the following settings for each tree:
+
+1) default - filtering on all levels, children are displayed <br>
+2) filtering on all levels, children aren't displayed (strict mode) <br>
+3) filtering items on the second levels only, children aren't displayed <br>
+
+Now, let's filter the tree by the *Skoda* item. The result is given in the image below:
+
+<img src="datatree/filtering_modes2.png">
+
+
+
+Custom Filtering Function
 ---------------------------------------
-For example, if you add an input and button to the page and want to filter Tree by clicking on it, you code may look like this:
+
+For example, if you add an input and a button to the page and want to filter Tree by clicking on it, your code may look like this:
 
 {{snippet
 Custom filtering function
@@ -68,7 +82,7 @@ Custom filtering function
         var text = node.previousSibling.value;
         if (!text) return tree.filter();
  
-        tree.filter(function(obj){  //tree is a Tree instance
+        tree.filter(function(obj){  // tree is a Tree instance
             return obj.year == text;
         })
     }

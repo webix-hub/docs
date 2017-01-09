@@ -9,7 +9,7 @@ TreeTable
 
 ##Overview
 
-Ui-related treetable inherits from [view](desktop/view.md). Being a hybrid between [DataTable](datatable/index.md) and [tree](datatree/index.md) it 
+UI-related TreeTable inherits from [view](desktop/view.md). Being a hybrid between [DataTable](datatable/index.md) and [tree](datatree/index.md) it 
 shares a number of their properties and methods. 
 
 
@@ -19,7 +19,7 @@ shares a number of their properties and methods.
 ##Initialization
 
 {{note
-Note that you need to set **{common.treetable()}** template for a column that should display the tree. Otherwise, you'll get standard datatable. 
+Note that you need to set **{common.treetable()}** template for a column that should display the tree. Otherwise, you'll get standard DataTable. 
 }}
 
 ~~~js
@@ -38,7 +38,7 @@ webix.ui({
 Tree table is populated with hierarchical data coming in <acronym title="Extensible Markup Language">XML</acronym> and <acronym title="JavaScript Object 
 Notation">JSON</acronym> [data formats](desktop/data_types.md). IDs of the columns must coincide with data keys from the initial dataset
 
-##Working with Treetable
+##Working with TreeTable
 
 Common tasks here include the following and coincide with those of the [datatable](datatable/index.md) and [tree](datatree/index.md): 
 
@@ -58,7 +58,7 @@ Common tasks here include the following and coincide with those of the [datatabl
 
 {{sample 15_datatable/30_treetable/08_edit.html }}
 
-5 . [Using Math in Treetable](datatable/formulas.md) - built-in logic for storing data as mathematical formulas as well as editing these formulas directly in treetable.
+5 . [Using Math in TreeTable](datatable/formulas.md) - built-in logic for storing data as mathematical formulas as well as editing these formulas directly in treetable.
 
 {{sample 15_datatable/08_math/01_basic.html}}
 
@@ -83,4 +83,4 @@ Common tasks here include the following and coincide with those of the [datatabl
 - [Sizing Components](desktop/dimensions.md)
 - [Resizing](desktop/resizing.md)
 - [Redefinition of the Components](desktop/redefinition.md)
-- [Treetable CSS Image Map](desktop/treetable_css.md)
+- [TreeTable CSS Image Map](desktop/treetable_css.md)

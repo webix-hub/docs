@@ -9,9 +9,9 @@ TabView
 
 ##Overview
 
-Tabview is a **hybrid** component that is made of a [multiview](desktop/multiview.md) and a [tabbar](desktop/tabbar.md).
+TabView is a **hybrid** component that is made of a [multiview](desktop/multiview.md) and a [tabbar](desktop/tabbar.md).
 
-Tabview allows for quick initialization of a multiview with a built-in ability to [switch between the views](desktop/tabbar_switching.md).
+TabView allows for quick initialization of a MultiView with a built-in ability to [switch between the views](desktop/tabbar_switching.md).
 
 It also features dedicated methods to add and remove views together with the corresponding tabs.
 
@@ -21,11 +21,10 @@ It also features dedicated methods to add and remove views together with the cor
 
 ##Initialization
 
-There's no need to create a multiview and switching buttons for it. Everything lies within one and the same **"tabview"** component with **cells** property that contains 
-collections of views.
+There's no need to create a MultiView and switching buttons for it. Everything lies within one and the same **"TabView"** component with **cells** property that contains collections of views.
 
 {{snippet
-Tabview
+TabView
 }}
 ~~~js
 webix.ui({
@@ -51,7 +50,7 @@ webix.ui({
 {{sample 02_toolbar/03_tabview.html}}
 
 
-Each tabview cell features:
+Each TabView cell features:
 
 - **header** - string with a heading for the cell, displayed as **tab title**;
 - **body** - configuration object for the **component** that is placed in this cell. 
@@ -60,9 +59,9 @@ Each tabview cell features:
 Note that switching between views is enabled automatically via a [tabbar](desktop/tabbar.md) control. For more customization, use a [multiview](desktop/multiview.md) component and choose the needed switching method. 
 }}
 
-##Working with Tabview
+##Working with TabvieTabVieww
 
-The hybrid nature of a tabview allows configuring each of its parts separately:
+The hybrid nature of a TabView allows configuring each of its parts separately:
 
 - through the same-name object properties in the initial configuration:
 
@@ -94,7 +93,7 @@ All the API methods, events and properties of a api/refs/ui.tabbar.md and api/re
 
 ###Enabling animation
 
-By default the switching of tabview tabs is not animated. Since animation is a [multiview](desktop/multiview.md) feature, it can be enabled within **multiview** configuration. 
+By default the switching of TabView tabs is not animated. Since animation is a [multiview](desktop/multiview.md) feature, it can be enabled within **multiview** configuration. 
 
 ~~~js
 view:"taview",
@@ -170,7 +169,7 @@ tabbar: {
 }
 ~~~
 
-More in detail in the dedicated [documentation article](desktop/responsive_tabbar.md).
+More details are given in the dedicated [documentation article](desktop/responsive_tabbar.md).
 
 ###Adjusting tab dimensions
 
