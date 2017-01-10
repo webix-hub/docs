@@ -8,7 +8,7 @@ UnitList
 
 ##Overview
 
-Unitlist presents data in groups derived from initial non-hierarchical dataset. Data items are sorted and then united by common values. 
+UnitList presents data in groups derived from initial non-hierarchical dataset. Data items are sorted and then united by common values. 
 
 <img style="display:block; margin-left:auto;margin-right:auto;"   src="desktop/unitlist.png"/>
 
@@ -45,15 +45,15 @@ Unit header template
 view:"unitlist",
 uniteBy:function(obj){
     return "<span style='background-color:"+obj.color+";'>"+
-    		obj.title.substr(0,1)+"</span>"; 
+    	obj.title.substr(0,1)+"</span>"; 
 }
 ~~~
 
-##Working with Unitlist
+##Working with UnitList
 
 **Working with Unit Values**
 
-Unitlist API makes it possible to get text values of unit headers (unit values) as well as get data items that comply with this or that unit criterion. 
+UnitList API makes it possible to get text values of unit headers (unit values) as well as get data items that comply with this or that unit criterion. 
 
 - **getUnits()** - returns JS array of unit values defined by the **uniteBy** property. The values are arranged in the alphabetical order, numbers first;
 - **getUnitList(id)** - returns the ID (or, more often, IDs) of data records united by "unit" criterion. 
@@ -79,7 +79,7 @@ If there are several data items that comply to the unit value criterion, they ar
 
 - [Data Loading](desktop/data_loading.md). 
 - [Defining Data Template](desktop/html_templates.md).
-- [Adding Active Elements to Unitlist Items](desktop/active_content.md)
+- [Adding Active Elements to UnitList Items](desktop/active_content.md)
 - [Adding/Deleting Items](desktop/add_delete.md).
 - [Editing Data](desktop/edit.md).
 - [Data Filtering and Sorting](desktop/filter_sort.md)
@@ -89,7 +89,7 @@ If there are several data items that comply to the unit value criterion, they ar
 - desktop/data_components_export.md
 
 {{note
-Note that there's no built-in possibility to edit data with unitlist. You should create a prototype **editlist** object beforehand.
+Note that there's no built-in possibility to edit data with UnitList. You should create a prototype **editlist** object beforehand.
 }}
 
 
@@ -99,6 +99,6 @@ Note that there's no built-in possibility to edit data with unitlist. You should
 - [Resizing](desktop/resizing.md)
 - [Changing Component Properties](desktop/redefinition.md)
 - [List](desktop/list.md)
-- [Grouplist](desktop/grouplist.md)
+- [GroupList](desktop/grouplist.md)
 - [X-list](desktop/xlist.md)
-- [Unitlist CSS Image Map](desktop/unitlist_css.md)
+- [UnitList CSS Image Map](desktop/unitlist_css.md)

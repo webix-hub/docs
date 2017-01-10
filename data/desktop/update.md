@@ -3,12 +3,12 @@ Data Updating
 
 Component items can be [edited](desktop/edit.md) within the component itself, within its rows and cells, provided that the component is switched to **editable** mode. 
 
-Data updating allows for editing info in dedicated **input fields** like [UI text](desktop/text.md). It works regardless of the component's editability state. 
+Data updating allows for editing info in dedicated **input fields** like [UI text](desktop/text.md). It works regardless of the component's EditAbility state. 
 
 ###Updating data for selected items can be implemented in two ways:
 
 - one by one - with the help of **updateItem()** function;
-- in groups - by pushing data from **bound** form / htmlform.  [Data Binding](desktop/data_binding.md)
+- in groups - by pushing data from the **bound** Form / HTMLForm.  [Data Binding](desktop/data_binding.md)
 
 ##UpdateItem() Function
 
@@ -48,7 +48,7 @@ function update_item() {
 
 ##Form / HTMLform binding 
 
-Data binding helps greately simplify the process and makes editing of several item values convenient. It ensures that a data component ([dataview](desktop/dataview.md), [list](desktop/list.md), etc.) 
+Data binding helps greatly simplify the process and makes editing of several item values convenient. It ensures that a data component ([dataview](desktop/dataview.md), [list](desktop/list.md), etc.) 
 transmits data to a [form](desktop/form.md) / [htmlform](desktop/htmlform.md) each time an item there is selected.  
 
 [More info](desktop/data_binding.md) on Data Binding
@@ -57,7 +57,7 @@ transmits data to a [form](desktop/form.md) / [htmlform](desktop/htmlform.md) ea
 $$('htmlform1').bind($$('listA'));
 ~~~
 
-The function above makes list a datasource for form, so when an item in the list is selected, the form is filled. Input names in the form must coincide with item 
+The function above makes list a data source for form, so when an item in the list is selected, the form is filled. Input names in the form must coincide with item 
 properties from teh initial dataset (those you include into #hash signs# within data [template](desktop/html_templates.md)) for the list. 
 
 <img src="desktop/form_binding.png" />

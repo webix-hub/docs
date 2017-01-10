@@ -27,7 +27,18 @@ Multicombo inherits from a standard [combo](desktop/combo.md) control and has th
 ##Initialization
 
 ~~~js
-{ view:"multicombo", label:"To", value:"2,3,4,13", suggest: "data/names.js"}
+var names = [
+	{"id":1,"value":"Ray M. Parra"},
+  	{"id":2,"value":"Sabrina N. Hermann"},
+  	{"id":3,"value":"Lane E. Dion"}
+];
+    
+webix.ui({
+  	view:"multicombo", 
+  	label:"To", 
+  	value:"2,3", 
+  	suggest: names // or e.g. suggest: "data/names.js"
+});
 ~~~
 
 {{sample 60_pro/02_form/06_multicombo.html}}
@@ -36,9 +47,9 @@ Multicombo inherits from a standard [combo](desktop/combo.md) control and has th
 
 - **label** (string) - specifies text label of a control;
 - **labelPosition** (string) - sets the position of the label in relation to the control container;
-- **value** (array/string) - defines the initially selected items of the control;
+- **value** (array|string) - defines the initially selected items of the control;
 - **separator** (string) - defines a delimiter for separating options in a multicombo, comma by default;
-- **options** or **suggest** (array, object) - defines a set of items to select from, or the data source, or [advanced popup configuration](desktop/advanced_combo.md);
+- **options** or **suggest** (array|object|string) - defines a set of items to select from, or the data source, or [advanced popup configuration](desktop/advanced_combo.md);
 - **optionWidth** (number) - defines the width of a popup list. By default, it is adjusted to the control width;
 - **button** (boolean) - defines whether the "Select" button will be displayed in the options list;
 - **keepText** (boolean) - defines whether the entered text should be kept in the input after an option is selected.
@@ -68,14 +79,20 @@ In some cases, multicombo can not be shown as a multi-line input and information
 To disable multiple tags, you need to set the api/ui.multicombo_tagmode_config.md property to *false*:
 
 ~~~js
-{   
-    view:"multicombo", 
+var names = [
+  	{"id":1,"value":"Ray M. Parra"},
+  	{"id":2,"value":"Sabrina N. Hermann"},
+  	{"id":3,"value":"Lane E. Dion"}
+];
+    
+webix.ui({
+	view:"multicombo", 
     label:"Name", 
-    labelPosition: "top",
-    value:"1,7,9,12",
-    tagMode: false
-    ...
-}
+   	labelPosition: "top",
+   	value:"2,3",
+  	tagMode: false,
+   	suggest:names
+});
 ~~~
 
 To specify a template for the common tag, you need to use the api/ui.multicombo_tagtemplate_config.md property.
@@ -92,16 +109,23 @@ tagTemplate: function(values){
 You can customize the template the way you like:
 
 ~~~js
-{   
-    view:"multicombo", 
+var names = [
+  	{"id":1,"value":"Ray M. Parra"},
+  	{"id":2,"value":"Sabrina N. Hermann"},
+  	{"id":3,"value":"Lane E. Dion"}
+];
+
+webix.ui({
+   view:"multicombo", 
     label:"Name", 
     labelPosition: "top",
-    value:"1,7,9,12",
-    tagMode: false
-    tagTemplate: function(values){
+    value:"2,3",
+    tagMode: false,
+    suggest:names,
+  	tagTemplate: function(values){
         return (values.length? values.length+" item(s) selected":"");
-    },
-}
+    }
+});
 ~~~
 
 {{sample

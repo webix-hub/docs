@@ -105,7 +105,7 @@ function playPause(){
 	//getting video object
 	var video = $$("video1").getVideo();
 
-	//palying video if it's paused
+	//playing video if it's paused
 	if (video.paused){
 		video.play();
 		$$("playButton").setValue("Pause")

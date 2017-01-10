@@ -14,7 +14,7 @@ In addition to the mentioned above, you can define any custom format (read how t
 
 There are two main ways of loading data in DataTable:
 
-1. To define datasource in the object constructor; 
+1. To define data source in the object constructor; 
 2. To use api/link/ui.datatable_parse.md or api/link/ui.datatable_load.md method.
 
 Both ways lead to one and the same result and don't have any specificity.

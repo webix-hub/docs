@@ -1,13 +1,11 @@
 Uploader CSS 
 =============
 
-
-
 <img src="image_maps/uploader_css.png"/>
 
 <table class="inline">
 	<tr class="row0">
-		<th class="col0 centeralign">  css class  </th><th class="col1 centeralign">  Element  </th>
+		<th class="col0 centeralign">  CSS class  </th><th class="col1 centeralign">  Element  </th>
 	</tr>
 	<tr class="row1">
 		<td class="col0 leftalign"><strong>.webix_remove_upload</strong>  </td><td class="col1"> the "remove item" area </td>
@@ -23,6 +21,6 @@ Uploader CSS
 	</tr>
 </table>
 
-Basically, uploader is comprised of other Webix components such as [button](desktop/buttons_css.md) and [list](desktop/list_css.md)/template. See their CSS maps for details. 
+Basically, Uploader is comprised of other Webix components such as [button](desktop/buttons_css.md) and [list](desktop/list_css.md)/template. See their CSS maps for details. 
 
 Read more about [Uploader](desktop/file_upload.md)

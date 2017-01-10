@@ -133,7 +133,8 @@ Normally, a dataset for suggest items contains an array of objects, each of whic
 
 ###Suggest list with client-side data
 
-On the client side the list with suggestions can be stored either of [supported formats](desktop/data_types.md). It may be put directly into **data** property (as shown above) or in a variable declared beforehand. 
+On the client side the list with suggestions can be stored in any of [supported formats](desktop/data_types.md). 
+It may be put directly into **data** property (as shown above) or in a variable declared beforehand. 
 
 {{snippet
 Suggest List with JSON data
@@ -144,17 +145,22 @@ var countries = [
 	{id:2, value: "Bhutan"}
 ];
   
-{ view:"text", label:"Country", value:"Belarus", suggest:countries}    
+{ 
+	view:"text", 
+    label:"Country", 
+    value:"Belarus", 
+    suggest:countries
+}    
 ~~~
 
 {{sample 13_form/01_controls/15_suggest_text.html }}
 
 ###Suggest list with server-side data
 
-At the same time, data can come from server side. All you need is to specify the script file that will get the data from the database. 
+At the same time, data can come from the server side. All you need is to specify the script file that will get the data from the database. 
 
 {{snippet
-As value of dataFeed property of the Suggest component
+As a value of the dataFeed property of the Suggest component
 }}
 ~~~js
 webix.ui({
@@ -167,10 +173,16 @@ webix.ui({
 ~~~
 
 {{snippet
-As value of suggest property
+As a value of the suggest property
 }}
 ~~~js
-{ view:"text", name:"country", label:"Country", value:"Albania", suggest:"server/data.php"}
+{ 
+	view:"text", 
+    name:"country", 
+    label:"Country", 
+    value:"Albania", 
+    suggest:"server/data.php"
+}
 ~~~
 
 {{sample 13_form/01_controls/15_suggest_server.html }}

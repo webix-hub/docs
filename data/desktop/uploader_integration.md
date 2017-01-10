@@ -1,8 +1,8 @@
 Uploader and Form Integration 
 =============
 
-The purpose of any form is to collect data from users. This library provides UI [Form](desktop/form.md) and [Htmlform](desktop/htmlform.md) components with lots of 
-[controls](desktop/controls.md) while the [uploader](desktop/file_upload.md) component helps get user files (text documents, pictures, etc.)
+The purpose of any form is to collect data from users. This library provides UI [Form](desktop/form.md) and [HtmlForm](desktop/htmlform.md) components with lots of 
+[controls](desktop/controls.md) while the [Uploader](desktop/file_upload.md) component helps get user files (text documents, pictures, etc.)
 
 <br>
 
@@ -44,10 +44,10 @@ While saving the form, follow the scheme:
 - save the form data via Ajax POST request;
 - (optionally) get response from a form-saving script and use its data. 
 
-**Files** are processed with a script defined as **upload** value of the uploader ([read more](desktop/uploader_serverside.md)) while form **data** is processed with the help of another one.
-You write both scripts on your favourite language to match your needs.
+**Files** are processed with a script defined as **upload** value of the Uploader ([read more](desktop/uploader_serverside.md)) while form **data** is processed with the help of another one.
+You write both scripts on your favorite language to match your needs.
 
-The Ajax request to send the form is defined as a callback to uploader **send()** method, so yo first get data from uploading script responce and can use it while saving form data.
+The AJAX request to send the form is defined as a callback to Uploader **send()** method, so yo first get data from uploading script response and can use it while saving form data.
 
 {{snippet
 Scheme of Form Saving
@@ -58,9 +58,9 @@ function save_form(){
     	//...callback
         
 		webix.ajax().post(
-			"php/saveform.php", //saving form
+			"php/saveform.php", // saving form
 			$$("myform").getValues(), 
-			function(text){  //responce
+			function(text){  // response
 				webix.message(text);
 			}
 		);

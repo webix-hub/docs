@@ -11,7 +11,7 @@ For understanding the basic concepts and getting the desired information in the 
 1. [Tutorial](datatable/quick_start.md) - gives essential notes you should know to create the first DataTable-based application.
 2. **Detailed guidelines** - the main chapter of the documentation covering the developer-oriented tasks in details.
   - [Configuration](datatable/configuration.md) - explains how to configure a table: to specify and size required columns, set headers(footers) for them, populate the table with data and etc.  
-  - [Look and Feel](datatable/look_and_feel.md) - tells you how to fine-tune the appearance of your table and data in it with the help of css classes, templates and special modes.
+  - [Look and Feel](datatable/look_and_feel.md) - tells you how to fine-tune the appearance of your table and data in it with the help of CSS classes, templates and special modes.
   - [Operations with data](datatable/operations_with_data.md) - covers techniques for performing general operations under data in DataTable, such as sorting, filtering, copy-pasting and selection.
   - [Operations with cells](datatable/get_set_data.md) - describes basic operations you surely will use while developing: getting/setting the value of a cell.
   - [Integration](datatable/integration.md) - says which libraries and how can be integrated with DataTable.

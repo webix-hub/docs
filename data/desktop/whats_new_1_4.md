@@ -2,7 +2,7 @@ Version 1.4
 ==============
 
 ### Advanced data selection controls
-- mutli-column select box {{sample 32_thirdparty/13_gridselect.html}}
+- multi-column select box {{sample 32_thirdparty/13_gridselect.html}}
 - rich content select box {{sample 32_thirdparty/14_dataselect.html}}
 
 ### New Server Integrations

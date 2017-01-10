@@ -25,7 +25,7 @@ The simplest header menu is set with the help of a datatable **headermenu** prop
 
 ##Extended Configuration
 
-Headermenu can be presented as a JSON object with configuration options for the menu list. The options duplicate [Webix list properties](api/refs/ui.list.md) and may include: 
+HeaderMenu can be presented as a JSON object with configuration options for the menu list. The options duplicate [Webix list properties](api/refs/ui.list.md) and may include: 
 
 - **width** (number) - width of the popup in pixels;
 - **height** (number) - height of the popup in pixels;
@@ -83,7 +83,7 @@ To exclude any column from the header menu, one should define a *headermenu* pro
 ~~~
 
 
-##Attaching Headermenu to Other Elements
+##Attaching HeaderMenu to Other Elements
 
 ###Extra "headermenu" column
 
