@@ -207,7 +207,7 @@ $$(id).refresh();
 
 ##HTML Containers {#html}
 
-You can set position, style and dimensions of the needed components with the help of javascript only (study [Layout](desktop/layout.md) and 
+You can set position, style and dimensions of the needed components with the help of JavaScript only (study [Layout](desktop/layout.md) and 
 [Sizing Components](desktop/dimensions.md) articles) or place the into html containers to take the task to CSS. To achieve this, make up an html-layout, set 
 ID to **div** elements and set this ID as the value of the component's container parameter. 
 

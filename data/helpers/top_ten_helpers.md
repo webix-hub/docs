@@ -122,7 +122,7 @@ var offset = webix.html.offset(ev.target)
 [API reference](api/html_offset.md)
 
 ## webix.html.addCss
-Two methods implementing css manipulations. **webix.html.addCss** lets to add css class to element, **webix.html.removeCss** - removes some defined css class.
+Two methods implementing CSS manipulations. **webix.html.addCss** lets to add CSS class to element, **webix.html.removeCss** - removes some defined CSS class.
   
 ~~~js
 webix.html.addCss(this._headbutton, "collapsed");

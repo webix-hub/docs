@@ -133,7 +133,7 @@ All data drivers share the following methods:
 //converts string to object
 var data = driver.toObject(data);
 
-//returns array of all records in datasource
+//returns array of all records in data source
 var records = driver.getRecords(data);
 
 //returns single data object

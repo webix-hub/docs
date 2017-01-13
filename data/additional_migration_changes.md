@@ -7,9 +7,9 @@ In this article you'll find the migration issues that are solved by including th
 Data Components
 -----------------
 
-(DataStore, Lists, Grid, Dataview, Chart)
+(DataStore, Lists, Grid, DataView, Chart)
 
-Some datastore methods and methods of views that based on DataStore (list,grid,dataview and others) were renamed:
+Some DataStore methods and methods of views that based on DataStore (List,Grid,DataView and others) were renamed:
 
 <table>
 <tr><td><b>Old usage</b></td><td><b>New usage</b></td></tr>
@@ -25,7 +25,7 @@ Some datastore methods and methods of views that based on DataStore (list,grid,d
 <tr><td>var id = list.getSelected();		</td><td>var id = list.getSelectedId();			</td></tr>
 </table>
 
-###Dataview
+###DataView
 
 Selection is not enabled by default
 
@@ -41,9 +41,9 @@ Selection is not enabled by default
 {view: "dataview", select: true,...}
 ~~~
 
-###Grouplist
+###GroupList
 
-In case of **json datasource** you should use the **item** property in it to define child collection (there was "data" before)
+In case of **JSON data source** you should use the **item** property in it to define child collection (there was "data" before)
 
 **Old usage**
 
@@ -80,7 +80,7 @@ DataProcessor
 ---------------
 
 If you are using connector on the server side, 
-you should start definition of the url property of DataProcessor with "connector->"
+you should start definition of the *url* property of DataProcessor with "connector->"
 
 **Old usage**
 
@@ -131,10 +131,10 @@ Library sets by default for this view: **top:300, left:100, width:300, height:20
 Library sets by default for this view: **top:0, left:0, autofit:true**
 
 
-Scrollview
+ScrollView
 ------------
 
-Use the "body" property instead of the "content" one to define the inner view of Scrollview
+Use the "body" property instead of the "content" one to define the inner view of ScrollView
 
 **Old usage**
 
@@ -157,7 +157,7 @@ Use the "body" property instead of the "content" one to define the inner view of
 Tabbar
 ----------
 
-The default type of tabbar was changed. You should set the type:"bottom" if you want to show a tabbar below a multiview
+The default type of tabbar was changed. You should set the type:"bottom" if you want to show a tabbar below a MultiView
 
 **Old usage**
 
@@ -171,7 +171,7 @@ The default type of tabbar was changed. You should set the type:"bottom" if you 
 { view:"tabbar", type: "bottom",...}
 ~~~
 
-Multiview
+MultiView
 ---------
 
 Use the getActiveId() method instead of the getActive() one to get the id of an active view
@@ -256,7 +256,7 @@ webix.alert({text:'Incorrect password!"})
 Controls
 -------------
 
-###Imagebutton
+###ImageButton
 
 Use the view "button" with the type "image"
 

@@ -84,7 +84,7 @@ When the header is presented as an object, it has the following properties:
 4. *content* - functional header content, [built-in filters](datatable/filtering.md#filtersintheheader) or [group definition](datatable/columns_configuration.md#groupingcolumns);
 5. *rotate* - if *true*, switches header to rotated state;
 6. *height* - defines a custom height for a header line;
-7. *css* - the name of a css class that will be applied to the column header.
+7. *css* - the name of a CSS class that will be applied to the column header.
 
 ###Colspan
 

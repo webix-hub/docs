@@ -69,16 +69,16 @@ var orgChart = new webix.ui({
 How to specify a custom style for items?
 ------------------------
 
-You can also redefine the default styles or apply your own css rules for chart items.
+You can also redefine the default styles or apply your own CSS rules for chart items.
 
 Use the **$css** property in item data to specify item style in one of the two ways:
 
 
-1. create new css rule in &#60;style&#62; block and apply it to the necessary items
-2. specify css style directly in the item definition 
+1. create a new CSS rule in &#60;style&#62; block and apply it to the necessary items
+2. specify CSS style directly in the item definition 
 
-To illustrate the described techniques, we will define the **.item_top** css rule and apply it to the item of the 1st level.
-For the item of the second level we'll set specific css properties directly in the data set.
+To illustrate the described techniques, we will define the **.item_top** CSS rule and apply it to the item of the 1st level.
+For the item of the second level we'll set specific CSS properties directly in the data set.
 
 Finally, we'll redefine the **.webix_selected** rule to change background color of selected items.
 

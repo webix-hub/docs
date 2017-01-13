@@ -1,5 +1,6 @@
 Drag-and-drop with Datatable
 ==============================
+
 The library supports drag-and-drop within a table or several tables on the page.
 
 Moving rows
@@ -38,9 +39,9 @@ Activating the 'order' mode for rows
 
 ~~~js
 webix.ui({
-		view:"datatable",
-		...
-        drag:'order'
+	view:"datatable",
+	...
+    drag:'order'
 });
 ~~~
 
@@ -213,7 +214,7 @@ var dtable = new webix.ui({
 dtable.data.addMark(2,"type", false,"b"); // adds a flag (type='b') to an item with id=2
 
 dtable.attachEvent("onBeforeDrop", function(context, ev){
-//if an item has flag type='b', denies dropping to the position of this item
+// if an item has flag type='b', denies dropping to the position of this item
 		if(dtable.data.getMark(context.target,"type")=='b') return false;
 		return true;
 });

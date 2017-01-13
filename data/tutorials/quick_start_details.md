@@ -195,7 +195,7 @@ Let's look at the above code in detail:
 should be specified if you are going to work with this component/item later as all functions are applied and events are attached to the component through its ID; 
 - the **gravity** parameter sets relative size proportions for the elements within the common parent container;
 - the **select** property enables item selection in the tree; 
-- the **data** parameter defines the datasource for the component;
+- the **data** parameter defines the data source for the component;
 
 We use JSON in the sample, so the items of the tree_data dataset look like this:
 

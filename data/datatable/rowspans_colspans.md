@@ -109,7 +109,7 @@ Span CSS
 	background: #fff;
 	white-space: normal;
 }
-<!--colouring-->
+<!--coloring-->
 .hrow{
 	background: #DFF;
 }

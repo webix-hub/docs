@@ -13,7 +13,7 @@ You can fine-tune the style of:
 
 A whole table
 ---------------------------
-To apply some style to a whole table you can use the [css](api/link/ui.datatable_css_config.md) parameter. As the value of the parameter you must specify the name of the appropriate css class.
+To apply some style to a whole table you can use the [css](api/link/ui.datatable_css_config.md) parameter. As the value of the parameter you must specify the name of the appropriate CSS class.
 
 <img src="datatable/styling_whole_table.png"></img>
 
@@ -56,8 +56,8 @@ For applying some style to a specific column, you should specify **css** attribu
 
 As the value of the attribute you can specify:
 
-- the name of the appropriate css class;
-- an object containing the css properties.
+- the name of the appropriate CSS class;
+- an object containing the CSS properties.
 
 <img src="datatable/styling_a_column.png"></img>
 
@@ -76,9 +76,9 @@ Styling of a single column
 webix.ui({
 	view:"datatable",		
 	columns:[
-    	// a separate css class
+    	// a separate CSS class
 		{ id:"title", header:"Film title", css:"my_style" },
-        // an object with css properties
+        // an object with CSS properties
 		{ id:"votes", header:"Votes",      css:{"text-align":"right"}}
     ],
 ...
