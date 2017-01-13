@@ -10,8 +10,8 @@ getFormView
 	
 
 @example:
-
-$$("mytext").getFormView().validate();
+// "mytext" is the ID of the input
+var masterForm = $$("mytext").getFormView().validate();
 
 
 @template:	api_method

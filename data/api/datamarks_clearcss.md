@@ -2,12 +2,12 @@ clearCss
 =============
 
 
-@short: removes css class from all items
+@short: removes CSS class from all items
 	
 
 @params:
-- css	string	name of css class to remove
-* silent 	boolean 	if true the component is not redrawn
+- css		string		name of the CSS class to remove
+* silent 	boolean 	optional, if <em>true</em>, the component is not redrawn
 
 
 @example:

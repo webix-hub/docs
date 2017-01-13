@@ -13,10 +13,10 @@ getItem
 -obj  object	the object of a data item
 
 @example:
-//'record' variable will contain an object of the related DataTable row, 
+// the 'record' variable will contain an object of the related DataTable row 
 var record = grid.getItem("rowId");
  
-//you can access data members directly
+// you can access data members directly
 var title = record.title;
 
 @related:

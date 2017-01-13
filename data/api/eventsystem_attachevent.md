@@ -2,12 +2,12 @@ attachEvent
 =============
 
 @short:
-	attaches the handler to an inner event of the component (allows behaviour customizations)
+	attaches the handler to an inner event of the component (allows behavior customizations)
 
 @params:
 - type		string			the event name, case-insensitive
 - functor	function		the function object or name
-* id		string		the event id
+* id		string			optional, the event id
 
 
 @returns:
@@ -44,7 +44,7 @@ be sure that the function is visible from the calling point.
 
 ~~~js
 function doTask(){ ... };
-dtable.attachEvent("onBeforeLoad", doTask); //uses the reference
+dtable.attachEvent("onBeforeLoad", doTask); // uses the reference
 dtable.attachEvent("onBeforeLoad", "doTask"); //will work as well, but not recommended
 ~~~
 
@@ -65,7 +65,7 @@ The value which is returned by an event can change behavior of component. Return
 ~~~js
 dtable.attachEvent("onBeforeSelect", function(id){
     if (id == 123)
-		return false; //blocks selection of a specific element
+		return false; // blocks selection of a specific element
 });
 ~~~
 

@@ -9,7 +9,7 @@ getChildViews
 - childs	array	an array of child views objects
 
 @example:
-webix.ui({ 
+var tree = webix.ui({ 
 	id:"mylayout",
     rows:[
     	{ view:"toolbar", type:"MainBar" },

@@ -6,7 +6,7 @@ checkAll
 	
 
 @params:
-* id        id        id of the branch
+* id        id        optional, id of the branch
 
 @example:
 
@@ -15,6 +15,5 @@ tree.checkAll();
 
 @template:	api_method
 @descr:
+If an id is provided, only the item in the target branch will be checked, otherwise all items in the tree will be checked.
 
-
-If id provided - only item in the target branch will be checked, else - all items in the tree

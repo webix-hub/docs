@@ -1,8 +1,6 @@
 adjust
 =============
 
- 
-
 @short:
 	adjusts the component to the size of the parent HTML container
 
@@ -34,7 +32,8 @@ you need to use the api/ui.baseview_resize.md method.
 ~~~js
 webix.ui({ view:"tree", id:"mytree", container:"mybox"});
 ...
-document.getElementById('mybox').style.width = "200px"; //after the container box is resized
-$$('mytree').adjust();                           //component needs adjusting to the new size
+// after the container box is resized
+document.getElementById('mybox').style.width = "200px"; 
+$$('mytree').adjust(); // component needs adjusting to the new size
 ~~~
 

@@ -7,9 +7,8 @@ bind
 
 @params:
 - target		object		an object that binds to the calling component
-* rule		function		sets the rule according which components will be bound
-* format		string		the format of bound data
-
+* rule			function	optional, sets the rule according which components will be bound
+* format		string		optional, the format of bound data
 
 
 
