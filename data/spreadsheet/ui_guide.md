@@ -12,7 +12,7 @@ The arrangement of buttons blocks in the toolbar is specified in the [*"buttons"
 
 The Toolbar's specificity is that it can include only one row of buttons. 
 However, there is also a way to customize the Toolbar so that it would have a multi-row structure. 
-In this case the [*"toolbar"* collection](spreadsheet/ui_guide.md#customizingthetoolbarcollection) shoud be used.
+In this case the [*"toolbar"* collection](spreadsheet/ui_guide.md#customizingthetoolbarcollection) should be used.
 
 Let's consider the structure of both the *buttons* collection and the *toolbar* one in detail.
 
@@ -79,7 +79,7 @@ webix.ui({
 
 For icon buttons in SpreadSheet we recommend to define the following settings in order to fit the general SpreadSheet appearance:
 
-- use the Button control with the “htmlbutton” type
+- use the Button control with the "htmlbutton" type
 - set the width equal to 40px
 - use *"webix_ssheet_button_icon"* as a part of the icon element classname
 - as a *background-image* use simple icons with transparent background and the #787878 color
@@ -237,11 +237,11 @@ Follow the tips below to set form controls inside of the popup properly:
 
 - use only the bottom border
 - set placeholders
-- apply *“webix_ssheet_suggest”* CSS and set padding to 0 for a suggest of a form control
-- use the *“ssheet-colorpicker”* view as a color selector 
+- apply *"webix_ssheet_suggest"* CSS and set padding to 0 for a suggest of a form control
+- use the *"ssheet-colorpicker"* view as a color selector 
 
 To apply correct borders for all controls in this popup, 
-you can use the *“ssheet-form-popup”* view instead of “popup” and the *“ssheet-form-suggest”* one for the control's suggests:
+you can use the *“ssheet-form-popup”* view instead of “popup” and the *"ssheet-form-suggest"* one for the control's suggests:
 
 ~~~js
 webix.ui({
@@ -267,9 +267,9 @@ webix.ui({
 ##Dialogs
 
 Form controls in a SpreadSheet dialog follow the same rules as popup controls do. 
-We recommend to use the *“ssheet-dialog”* view to create a dialog instead of the *window* one.
+We recommend to use the *"ssheet-dialog"* view to create a dialog instead of the *window* one.
 
-The *“ssheet-dialog”* view applies styling for the header and adds three buttons: the *Close* icon at the top and two buttons (*Cancel* and *Save*) at the bottom. 
+The *"ssheet-dialog"* view applies styling for the header and adds three buttons: the *Close* icon at the top and two buttons (*Cancel* and *Save*) at the bottom. 
 
 To define the title of the dialog, use the *head* property.
 
@@ -295,7 +295,7 @@ webix.ui({
 
 ###The Close icon settings
 
-The background of this icon is defined by the *“webix_ssheet_hide_icon”* css. 
+The background of this icon is defined by the *“webix_ssheet_hide_icon”* CSS. 
 
 ~~~css
 .webix_ssheet_hide_icon{
@@ -336,7 +336,7 @@ The dialog fires the following events on a button click: *onCancelClick* and *on
 ###DataTable 
 
 Besides form controls you can add any views into the dialog, e.g. a datatable.
-In this case we recommend you to choose the *“ssheet-dialog-table”* view to apply the appropriate styling.
+In this case we recommend you to choose the *"ssheet-dialog-table"* view to apply the appropriate styling.
 
 <img src="spreadsheet/datatable_dialog.png">
 
@@ -430,4 +430,4 @@ The key points of the custom toolbar are the following:
 The full code for all toolbar elements is given [in a separate article](all_toolbar_elements.md).
 
 @index: 
-- all_toolbar_elements.md
+- spreadsheet/all_toolbar_elements.md

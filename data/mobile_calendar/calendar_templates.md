@@ -18,11 +18,11 @@ Below you can find the list of all available templates and their default definit
 Available templates:
 
 - <a href="#day_event">scheduler.templates.day_event</a>  - specifies an event in the 'Day' view;
-- <a href="#day_event_style">scheduler.templates.day_event_style</a>  - specifies a css class for events in the 'Day' view;
+- <a href="#day_event_style">scheduler.templates.day_event_style</a>  - specifies a CSS class for events in the 'Day' view;
 - <a href="#multiday_event">scheduler.templates.multi_day_event</a> - the template for events in the multi-day list of the 'Day' view;
-- <a href="#multiday_event_style">scheduler.templates.multi_day_event_style</a> - specifies a css class for multi-day events in the "Day" view;
+- <a href="#multiday_event_style">scheduler.templates.multi_day_event_style</a> - specifies a CSS class for multi-day events in the "Day" view;
 - <a href="#week_title">scheduler.template.week_title</a>  - specifies the title of the 'Week' view;
-- <a href="#event_class">scheduler.templates.event_class</a>  - specifies an additional css class that will be applied to the events in the lists of the 'Day','Week' and 'Month' views;
+- <a href="#event_class">scheduler.templates.event_class</a>  - specifies an additional CSS class that will be applied to the events in the lists of the 'Day','Week' and 'Month' views;
 - <a href="#event_date">scheduler.templates.event_date</a>  - the content of day headers in the "Week" view;
 - <a href="#event_marker">scheduler.templates.event_marker</a>  - specifies a marker in the "Week" and "Month" views;
 - <a href="#event_time">scheduler.templates.event_time</a>  - the content of the time part of event items in the "Week" and "Month" views;
@@ -87,7 +87,7 @@ scheduler.templates.multi_day_event = function(obj,type){
 
 <h3 id="day_event_style"><b>scheduler.templates.day_event_style</b></h3>
 
-Specifies a css class for events in the 'Day' view.
+Specifies a CSS class for events in the 'Day' view.
 
 Parameters:
 
@@ -158,7 +158,7 @@ scheduler.templates.week_title = function(date){
 
 <h3 id="event_class"><b>scheduler.templates.event_class</b></h3>
 
-Specifies an additional css class that will be applied to events in the lists of the 'Week' and 'Month' views.
+Specifies an additional CSS class that will be applied to events in the lists of the 'Week' and 'Month' views.
 
 Parameters:
 

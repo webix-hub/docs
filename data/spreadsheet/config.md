@@ -47,7 +47,7 @@ Adding subbar
 
 To show some additional elements/views into Spreadsheet, you can use the api/ui.spreadsheet_subbar_config.md property. It allows adding views below the toolbar, but above the datatable.
 
-Inside of the subbar property you can define a view, e.g. toolbar, apply some css to it and specify the elements that will be shown in the view.
+Inside of the subbar property you can define a view, e.g. toolbar, apply some CSS to it and specify the elements that will be shown in the view.
 
 ~~~js
 webix.ui({

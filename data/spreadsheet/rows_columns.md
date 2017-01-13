@@ -1,4 +1,4 @@
-Manipulating Rows and Colums
+Manipulating Rows and Columns
 ==========================
 
 Working with Columns

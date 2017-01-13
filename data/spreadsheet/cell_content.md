@@ -53,7 +53,7 @@ And then apply it in the custom format code section as follows:
 "[>100][green]0.0"
 ~~~
 
-There is a set of colors with predefined css styles: *green*, *red*, *blue*, *orange*, *black*, *violet* and *magenta*
+There is a set of colors with predefined CSS styles: *green*, *red*, *blue*, *orange*, *black*, *violet* and *magenta*
 
 ###Specifying significant digits, decimal and thousands separators
 

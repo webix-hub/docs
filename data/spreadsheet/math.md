@@ -96,7 +96,7 @@ however, cells with the value zero are included.
 - **COUNT** -  counts the number of cells that contain numbers, and counts numbers within the list of arguments;
  - empty cells, logical values, text, or error values in the array or reference are not counted.
 - **COUNTA** - counts the number of cells that are not empty in a range, zero is excluded.
-- **COUNTBLANK** - сounts empty cells in a specified range of cells;
+- **COUNTBLANK** - counts empty cells in a specified range of cells;
  -  cells with zero values are not counted.
 - **MAX** - returns the largest value in a set of values;
  - empty cells, logical values, or text in the array or reference are ignored.

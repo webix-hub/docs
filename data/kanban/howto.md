@@ -63,7 +63,7 @@ How to define tags for tasks?
 
 There are 2 variants of specifying tags:
 
-1) by setting the **tags** property in the item data. For example, in your datasource it can be something as in:
+1) by setting the **tags** property in the item data. For example, in your data source it can be something as in:
 
 ~~~js
 webix.ui({
@@ -157,10 +157,10 @@ kanban.css
   border-left: 3px solid #27ae60;
 }
 ~~~
-You can redefine this css rule and set a new color for all tasks in your Kanban board.
+You can redefine this CSS rule and set a new color for all tasks in your Kanban board.
 
 However, if you need to set a new color for a separate item, you need to define the **color** property in the item's data. 
-So, there will be something like this in your datasource:
+So, there will be something like this in your data source:
 
 ~~~js
 webix.ui({
@@ -234,9 +234,9 @@ function onBeforeDragIn(dragContext,e,list){
 		var statusFrom = dragContext.from.config.status;
         //the status of the target column 
 		var statusTo = dragContext.to.config.status;
-        //assigning indices to statuses
+        //assigning indexes to statuses
 		var statusIndex = {"new":0,"work":1, "test": 2, "done":3};
-        //getting difference between the source and target columns' indices
+        //getting difference between the source and target columns' indexes
         //if it's more than 1, the item won't be moved
 		var diff = Math.abs(statusIndex[statusFrom] - statusIndex[statusTo]);
 		if(diff>1){

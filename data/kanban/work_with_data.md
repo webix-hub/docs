@@ -25,7 +25,7 @@ webix.ui({
 	]
 });     
  
-//'task' variable will contain an object of the related kanban record
+//'task' variable will contain an object of the related Kanban record
 var task = $$("myBoard").getItem("task1");
  
 //you can access data members directly

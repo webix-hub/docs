@@ -17,7 +17,7 @@ var pivot_dataset = [
 ]
 ~~~
 
-To load inline data during component init, make use of api/link/dataloader_data_config.md property:
+To load inline data during component initialization, make use of api/link/dataloader_data_config.md property:
 
 ~~~js
 webix.ui({
@@ -28,7 +28,7 @@ webix.ui({
 ~~~
 
 
-To load inline data after component init on some event, for instance, use the api/link/dataloader_parse.md function:
+To load inline data after component initialization on some event, for instance, use the api/link/dataloader_parse.md function:
 
 ~~~js
 $$("pivot").parse(pivot_dataset);
@@ -40,7 +40,7 @@ $$("pivot").parse(pivot_dataset);
 
 Either you get data from an external file or by a server-side script,use the following pattern:
 
-- If you load the data during component init, specify the path to this file/script as value of api/link/dataloader_url_config.md:
+- If you load the data during component initialization, specify the path to this file/script as value of api/link/dataloader_url_config.md:
 
 ~~~js
 {

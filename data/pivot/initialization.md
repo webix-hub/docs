@@ -15,7 +15,7 @@ Make sure you specify relative paths to these files:
   <link rel="stylesheet" href="codebase/pivot.css" type="text/css" charset="utf-8">
  </head>
  <body>
-   <div id = "testA"></div>  <!-- containter for Pivot -->
+   <div id = "testA"></div>  <!-- container for Pivot -->
  </body>
 </html>
 ~~~

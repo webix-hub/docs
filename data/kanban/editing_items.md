@@ -27,7 +27,7 @@ Editing via a Form
 [Form](desktop/form.md) and Kanban Board can be bound to each other to ensure select-based **synchronous changing** of their **data**,
 which allows editing data on the Board:
 
-- select a kanban item the data of which you want to show in Form (use api/collectionbind_setcursor.md method);
+- select a Kanban item the data of which you want to show in Form (use api/collectionbind_setcursor.md method);
 - form will be filled with the item's data that you can edit;
 - form [saving](desktop/binding_details.md#data_saving) will send changed data back to the component. 
 

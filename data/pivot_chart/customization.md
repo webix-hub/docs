@@ -72,7 +72,7 @@ webix.ui({
 ~~~
 
 
-<h3 id="innerview">Adding and modifing inner views of Pivot popup</h3>
+<h3 id="innerview">Adding and modifying inner views of Pivot popup</h3>
 
 You can customize a view configuration and add a new one into a layout with the help of the api/ui.pivot_onviewinit_event.md event of pivot's popup.
 
@@ -118,7 +118,7 @@ webix.ui({
 
 **Groups of fields**
 
-The "Fields" list can be splitted into multiple groups by replacing the “list" view with the “unitlist” one. 
+The "Fields" list can be split into multiple groups by replacing the “list" view with the "unitlist" one. 
 
 In the example below “balance”, “gdp” and “oil” will be placed into the “number” group, other fields - into the “text” group.
 

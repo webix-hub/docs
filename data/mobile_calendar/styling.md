@@ -172,11 +172,11 @@ $$("scheduler").parse([{id:"1", text:"Event 1", color:"#66ccff",...},...],"json"
 
 The default coloring rules can also be changed in the following templates:
 
-- <a href="mobile_calendar/calendar_templates.md#day_event_style">scheduler.templates.day_event_style</a> - returns css text that will be applied to the event container in the 'Day' view
+- <a href="mobile_calendar/calendar_templates.md#day_event_style">scheduler.templates.day_event_style</a> - returns CSS text that will be applied to the event container in the 'Day' view
 
-- <a href="mobile_calendar/calendar_templates.md#multiday_event_style">scheduler.templates.multi_day_event_style</a> -   returns css text that will be applied to multi-day event in the 'Day' view
+- <a href="mobile_calendar/calendar_templates.md#multiday_event_style">scheduler.templates.multi_day_event_style</a> -   returns CSS text that will be applied to multi-day event in the 'Day' view
 
-- <a href="mobile_calendar/calendar_templates.md#event_marker">scheduler.templates.event_marker</a> - returns css text that will be applied to markers in the 'Week' and 'Month' views
+- <a href="mobile_calendar/calendar_templates.md#event_marker">scheduler.templates.event_marker</a> - returns CSS text that will be applied to markers in the 'Week' and 'Month' views
 
 
 @spellcheck:webixtype

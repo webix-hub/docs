@@ -211,7 +211,7 @@ webix.ready(function(){
 		save: {
 			data:"server/data.php", // if data is changed
 			sizes:"server/sizes.php", // if cells' sizes are changed
-			spans:"server/spans.php", // if cells are merged or splitted
+			spans:"server/spans.php", // if cells are merged or split
 			styles:"server/styles.php" // if styles are changed or a new one created
 		}
 	});
@@ -293,7 +293,7 @@ SpreadSheet is a purely client-side widget, therefore you can implement any logi
 You can find several demos that implement PHP data in the SpreadSheet package.
 
 There are also packages for implementing [Node.js](https://github.com/webix-hub/spreadsheet-nodejs-demo) 
-and [.Net](https://github.com/webix-hub/spreadsheet-net-demo) data available on github.
+and [.Net](https://github.com/webix-hub/spreadsheet-net-demo) data available on Github.
 
 
 ##Saving and Loading States

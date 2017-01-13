@@ -23,8 +23,8 @@ Methods
 - <a href="#hideresults">hideSearchResults</a> - hides search results
 - <a href="#hidetree">hideTree</a> - hides the Tree panel
 - <a href="#levelup">levelUp</a> - selects the parent folder
-- <a href="#markcopy">markCopy</a> - preselectes files/folders for copy operation
-- <a href="#markcut">markCut</a> - preselectes files/folders for move operation
+- <a href="#markcopy">markCopy</a> - preselects files/folders for copy operation
+- <a href="#markcut">markCut</a> - preselects files/folders for move operation
 - <a href="#move">moveFile</a> - moves a selected file/folder
 - <a href="#paste">pasteFile</a> - pastes files/folders that were selected for copying or moving
 - <a href="#rename">renameFile</a> - renames a folder/file
@@ -292,7 +292,7 @@ fmanager.levelUp(id);
 ###<span id='markcopy'>markCopy</span> 
 
 
-preselectes files/folders for copy operation
+preselects files/folders for copy operation
 
 ~~~js
 fmanager.markCopy(id);
@@ -303,7 +303,7 @@ fmanager.markCopy(id);
 
 ###<span id='markcut'>markCut</span> 
 
-preselectes files/folders for move operation
+preselects files/folders for move operation
 
 ~~~js
 fmanager.markCut(id);

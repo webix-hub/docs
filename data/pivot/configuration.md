@@ -39,8 +39,8 @@ Operations are set within [Pivot structure object](pivot/initialization.md#struc
 view: "pivot",
 structure: {
 	values: [
-		{ name: "gdp", operation: "sum" }, //gdp values will be summed
-		{ name: "oil", operation: "max" } //max oil value will be shown
+		{ name: "gdp", operation: "sum" }, // GDP values will be summed up
+		{ name: "oil", operation: "max" } // max oil value will be shown
 	]
 }
 ~~~
@@ -103,7 +103,7 @@ grida.addOperation("avr", function(data) {
 {{sample 61_pivot/03_table_api/03_adding_operation.html}}
 
 
-Sum Сounters for Сolumns and Rows
+Sum Counters for Columns and Rows
 ----------------------------------
 
 To calculate the total sum for each row, **total column** can be set: 
