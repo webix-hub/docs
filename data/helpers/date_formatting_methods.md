@@ -40,9 +40,6 @@ var date = parser("2012.05");
 ~~~
 
 
-
-
-
 Supported format options
 ------------------------
 
@@ -61,15 +58,12 @@ Supported format options
 - %H - the hour based on the 24-hour clock with a leading zero ( 00 to 23 );
 - %G - the hour based on the 24-hour clock ( 0 to 23 );
 - %i - the minute as a number with a leading zero ( 00 to 59 );
-- %s - the second as a number without a leading zero ( 00 to 59 );
+- %s - the second as a number with a leading zero ( 00 to 59 );
 - %a - displays am (for times from midnight until noon) and pm (for times from noon until midnight);
 - %A - displays AM (for times from midnight until noon) and PM (for times from noon until midnight);
 - %c - displays date and time in the ISO 8601 date format (e.g. 2015-10-04T05:04:09)
 
 For instance, **"%d-%F-%Y,%D"** will display the date as 11-September-2012, Tue. 
-
-
-
 
 
 
