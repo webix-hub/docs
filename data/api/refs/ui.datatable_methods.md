@@ -108,6 +108,7 @@ Methods
 - api/ui.datatable_refreshcolumns.md - refreshes the structure of DataTable
 - api/ui.datatable_refreshfilter.md - rebuilds list of options in select filter
 - api/ui.datatable_refreshheadercontent.md - refreshes the header row of DataTable
+- api/ui.datatable_refreshselectarea.md - 
 - api/ui.datatable_registerfilter.md - registers a filter element
 - api/link/ui.datatable_remove.md - removes the specified item/items from datastore
 - api/ui.datatable_removecellcss.md - remove css class from the cell of datatable
@@ -253,6 +254,7 @@ Methods
 - api/ui.datatable_refreshcolumns.md
 - api/ui.datatable_refreshfilter.md
 - api/ui.datatable_refreshheadercontent.md
+- api/ui.datatable_refreshselectarea.md
 - api/ui.datatable_registerfilter.md
 - api/link/ui.datatable_remove.md
 - api/ui.datatable_removecellcss.md

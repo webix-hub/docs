@@ -2,7 +2,7 @@ templateSize
 =============
 
 @short:
-	specifies the file size
+	defines the template applied for the file size
 
 @type: function
 @example:

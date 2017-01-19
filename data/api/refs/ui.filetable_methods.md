@@ -105,6 +105,7 @@ Methods
 - api/link/ui.filetable_refreshcolumns.md - refreshes the structure of DataTable
 - api/link/ui.filetable_refreshfilter.md - rebuilds list of options in select filter
 - api/link/ui.filetable_refreshheadercontent.md - refreshes the header row of DataTable
+- api/link/ui.filetable_refreshselectarea.md - 
 - api/link/ui.filetable_registerfilter.md - registers a filter element
 - api/link/ui.filetable_remove.md - removes the specified item/items from datastore
 - api/link/ui.filetable_removecellcss.md - remove css class from the cell of datatable
@@ -242,6 +243,7 @@ Methods
 - api/link/ui.filetable_refreshcolumns.md
 - api/link/ui.filetable_refreshfilter.md
 - api/link/ui.filetable_refreshheadercontent.md
+- api/link/ui.filetable_refreshselectarea.md
 - api/link/ui.filetable_registerfilter.md
 - api/link/ui.filetable_remove.md
 - api/link/ui.filetable_removecellcss.md

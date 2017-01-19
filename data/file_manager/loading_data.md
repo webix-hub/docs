@@ -1,7 +1,7 @@
 Loading and Saving Data in File Manager
 =======================
 
-Data can be [loaded](desktop/data_loading.md) in different formats, including json (the default one) and xml. 
+Data can be [loaded](desktop/data_loading.md) in different formats, including JSON (the default one) and XML. 
 The data item should include at least 5 properties:
 
 - id - {string} the unique id of the item 

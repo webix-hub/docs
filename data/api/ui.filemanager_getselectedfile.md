@@ -9,7 +9,7 @@ getSelectedFile
 
 
 @returns:
-- selected		string,array		selected file (nested folder) name(s)
+- selected		string|array		selected file (nested folder) name(s)
 
 
 

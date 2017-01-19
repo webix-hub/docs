@@ -2,7 +2,7 @@ templateType
 =============
 
 @short:
-	specifies the type of a file
+	specifies the template applied for the type of a file
 
 @type: function
 @example:

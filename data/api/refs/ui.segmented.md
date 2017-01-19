@@ -108,7 +108,6 @@ var segmented = webix.ui({
 - api/link/ui.segmented_align_config.md - the alignment of the control within the parent container
 - api/link/ui.segmented_animate_config.md - defines or disables view change animation.
 - api/link/ui.segmented_attributes_config.md - sets a hash of HTML input attributes that will be parsed for the Webix input control
-- api/link/ui.segmented_autowidth_config.md - adjusts button to its text content
 - api/link/ui.segmented_borderless_config.md - used to hide the component borders
 - api/link/ui.segmented_bottomlabel_config.md - sets a label under a control
 - api/link/ui.segmented_bottompadding_config.md - sets the bottom offset of the control input

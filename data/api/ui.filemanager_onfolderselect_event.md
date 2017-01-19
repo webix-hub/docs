@@ -2,10 +2,10 @@ onFolderSelect
 =============
 
 @short:
-	fires when a folder is selected
+	fires when a folder is selected in the Tree view
 
 @params:
-- id		string		the folder id
+- id		string		the id of the selected folder
 
 @example:
 $$("files").attachEvent("onFolderSelect",function(id){
