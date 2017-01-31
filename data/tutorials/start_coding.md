@@ -233,25 +233,6 @@ ID to **div** elements and set this ID as the value of the component's container
 </body>
 ~~~
 
-##Coding Tips
-
-Components are removed from the application by simply wiping the code in the editor, but they can be as well destructed by API call with the removal of all HTML elements and event for the component. 
-
-~~~js
-$$('mydataview1').destructor();
-~~~
-
-In addition, you can check whether the component with the specified ID was created and exists in the app: 
-
-~~~js
-if(!$$("my_dataview").exists())// -> returns boolean value
-	var dataview = new webix.ui({
-    	view:"dataview",
-        id:"my_dataview",
-        ..config
-    });
-~~~
-
 ##Code Optimization {#optim}
 
 Sometimes it is recommended to take some parts of an app to separate variables and include them into the **webix.ui()** command. It makes it easy to track
