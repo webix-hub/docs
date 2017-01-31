@@ -47,7 +47,6 @@ Events
 - api/ui.filemanager_onbeforesearchrequest_event.md - 
 - api/ui.filemanager_onbeforeshowtree_event.md - fires before the tree is expanded
 - api/link/ui.filemanager_onbeforesort_event.md - fires before sorting dataset
-- api/ui.filemanager_onbeforeuploadfile_event.md - fires on the Upload action click
 - api/link/ui.filemanager_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/ui.filemanager_oncomponentinit_event.md - 
 - api/ui.filemanager_oncopyerror_event.md - 
@@ -116,7 +115,6 @@ Events
 - api/ui.filemanager_onbeforesearchrequest_event.md
 - api/ui.filemanager_onbeforeshowtree_event.md
 - api/link/ui.filemanager_onbeforesort_event.md
-- api/ui.filemanager_onbeforeuploadfile_event.md
 - api/link/ui.filemanager_onbindrequest_event.md
 - api/ui.filemanager_oncomponentinit_event.md
 - api/ui.filemanager_oncopyerror_event.md

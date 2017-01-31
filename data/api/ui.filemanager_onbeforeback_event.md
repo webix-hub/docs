@@ -9,9 +9,15 @@ onBeforeBack
 
 @params:
 
+@returns:
+
+- result		boolean			returning false will prevent the operation
+
+
 @example:
 $$("fmanager").attachEvent("onBeforeBack",function(){
     // your code
+    return true;
 });
 
 @template:	api_event

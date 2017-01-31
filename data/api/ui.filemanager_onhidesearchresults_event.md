@@ -2,7 +2,7 @@ onHideSearchResults
 =============
 
 @short:
-	fires when search results were hidden
+	fires when search results are hidden
 
 @params:
 
@@ -16,3 +16,7 @@ fmanager.attachEvent("onHideSearchResults", function(){
 
 @relatedapi:
 api/ui.filemanager_hidesearchresults.md
+api/ui.filemanager_onshowsearchresults_event.md
+
+@related:
+file_manager/loading_data.md#serversidesearchingforcontent

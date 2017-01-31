@@ -2,16 +2,16 @@ onHistoryChange
 =============
 
 @todo:
-	add parameters
+	check
 
 @short:
-	fires when the browser history changes (the currently selected folder is changed)
+	fires when path in the [Path view](file_manager/configuration.md#filemanagerlayout) changes
 
 @params:
 
 - path		string		the path to the currently selected folder
-- ids		array		an array of ids
-- cursor	object		cursor
+- ids		array		an array of folders' ids in a path
+- cursor	object		?
 
 @example:
 $$("fmanager").attachEvent("onHistoryChange",function(path, ids, cursor){
