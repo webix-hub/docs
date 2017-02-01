@@ -57,4 +57,4 @@ webix.ui({
 - **rows** - array of fields that will be used as pivot's rows and displayed in the treetable on the left;
 - **columns** - array of fields that will be used as pivot's columns and will be displayed above the datatable area;
 - **values** - array of fields that will be used as pivot's data (will be displayed in datatable cells);
-- **filters** - array of fields that will be used as filters and will be displayed above the datatable columns. 
+- **filters** - array of fields that will be used as filters and will be displayed above the datatable columns. Read about work with filters in [a separate article](pivot/filters.md).

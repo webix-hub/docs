@@ -92,3 +92,21 @@ webix.ui({
 ~~~
 
 {{sample 61_pivot/05_table_customization/01_outer_filters.html}}
+
+Setting Initial Filtering Value 
+------------------------------
+
+You can set the initial value that will be used for filtering pivot. For this, you need to use the *value* property of the *structure* object during the Pivot initialization:
+
+~~~js
+webix.ui({
+  id:"pivot",
+  view:"pivot",
+  structure: {
+    filters:[{name: "name", type: "text", value:"Argentina"}],
+    ...
+  }
+});
+~~~
+
+In the above example Pivot data will be initially filtered by the value "Argentina".
