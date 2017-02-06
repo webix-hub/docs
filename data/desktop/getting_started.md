@@ -1,7 +1,15 @@
 Getting Started
 ===================
 
-### Webix UI
+This chapter will introduce you to the basics of Webix library and help to start creating your own web apps. 
+
+You can find other helpful information in the following articles:
+
+- The desktop/overview.md chapter will give you the full picture of the library and present main Webix concepts and features. <br>
+- The desktop/compatibility.md chapter lists all supported browsers and platforms.<br>
+- The desktop/whats_new.md list and the [Migration](migration.md) guide will keep you informed about new functionality and latest updates.
+
+### Webix UI Tutorials
 
 <div style="position: relative;overflow: hidden; margin-top:20px;">
 	<div style="float: left;height: 155px;padding: 5px 10px 5px 10px;">
@@ -63,7 +71,7 @@ Getting Started
 
 
 
-### Webix DataTable
+### Webix DataTable Tutorial
 
 <div style="position: relative;overflow: hidden; margin-top:20px;">
 	<div style="float: left;height: 155px;padding: 5px 10px 5px 10px;">
@@ -79,7 +87,7 @@ Getting Started
 </div>
 
 
-###Webix Documentation
+###Webix Documentation Overview
 
 <div style="position: relative;overflow: hidden; margin-top:20px;">
 	<div style="float: left;height: 155px;padding: 5px 10px 5px 10px;">

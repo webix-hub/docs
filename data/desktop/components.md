@@ -8,6 +8,7 @@ good-looking and user-friendly.
 All the widgets are objects made with the webix.ui() constructor where the type of the widget
 is set by the 'view' property (the declarative syntax is available as well).
 
+If you feel puzzled about where to start, explore the desktop/getting_started.md article. To learn about main features and possibilities of the Webix library, read the desktop/overview.md.
 
 <h2 style="clear:both;"/>Complex Widgets</h2>
 
