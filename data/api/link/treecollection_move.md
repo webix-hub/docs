@@ -1,1 +1,1 @@
-@link: api/datastore_move.md
+@link:api/treedatamove_move.md

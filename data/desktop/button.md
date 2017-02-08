@@ -60,7 +60,7 @@ For further information about icons in Webix components read the desktop/icon_ty
 
 Image button features some specific configuration options: 
 
-- **image** (path) - path to the desired image;
+- **image** (string) - path to the desired image;
 - **label** (string) - text on a button by the image;
 - **type** (string) - defines the type of a button:
 	- *image* - a borderless image with a left-hand label (if any); 
@@ -117,7 +117,7 @@ Any button regardless of its *type* can be equipped with a badge with the help o
 - **popup** (string)- defines the ID of a popup window that will be shown on button click;
 - **click** (function) - defines a function that will be executed on clicking the button (another possibility is to attach an event to it using the button's ID);
 - **css** (string) - name of CSS class applied to a button;
-- **badge** (number/string) - adds an orange circle that notifies about the number of new message for an icon button;
+- **badge** (number/string) - adds an orange circle that notifies about the number of new messages for an icon button;
 - **autowidth** (boolean)  - sets the mode in which the button's width automatically adjusts to the button's content.
 
 ##Setting Autowidth for Buttons

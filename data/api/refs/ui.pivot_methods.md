@@ -24,6 +24,7 @@ Methods
 - api/link/ui.pivot_getchildviews.md - returns child views of the calling component
 - api/ui.pivot_getconfigwindow.md - returns the object of the window with pivot configuration
 - api/ui.pivot_getfields.md - returns an object with fields configurations
+- api/ui.pivot_getfilterview.md - 
 - api/link/ui.pivot_getfirstid.md - returns the ID of the first item
 - api/link/ui.pivot_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.pivot_getindexbyid.md - returns the index of the item with the specified id
@@ -86,6 +87,7 @@ Methods
 - api/link/ui.pivot_getchildviews.md
 - api/ui.pivot_getconfigwindow.md
 - api/ui.pivot_getfields.md
+- api/ui.pivot_getfilterview.md
 - api/link/ui.pivot_getfirstid.md
 - api/link/ui.pivot_getidbyindex.md
 - api/link/ui.pivot_getindexbyid.md

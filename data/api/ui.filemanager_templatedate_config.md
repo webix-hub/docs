@@ -2,7 +2,8 @@ templateDate
 =============
 
 @short:
-	specifies the format of folder/file's date of modification
+	defines a template applied for the format of folder/file's date of modification
+
 
 @type: function
 @example:

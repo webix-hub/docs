@@ -55,7 +55,6 @@ Apart from files, File Manager allows working with any kind of hierarchical data
 		    <ul id="design_sublist">
                 <li>file_manager/manipulating_items.md</li>
                 <li>file_manager/events.md</li>
-                <li>file_manager/api_reference.md</li>
                 <li>file_manager/howto.md</li>
             </ul>
 		</td>
@@ -73,5 +72,4 @@ Apart from files, File Manager allows working with any kind of hierarchical data
 - file_manager/localization.md
 - file_manager/manipulating_items.md
 - file_manager/events.md
-- file_manager/api_reference.md
 - file_manager/howto.md

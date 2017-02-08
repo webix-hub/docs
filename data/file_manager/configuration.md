@@ -452,7 +452,7 @@ By default, the "Table" mode is active.
 ~~~
 
 
-Actions menu
+Actions Menu
 ----------------
 
 The Actions menu displays actions that can be applied to selected files or folders. 

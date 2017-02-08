@@ -14,7 +14,7 @@ var config = pivot.getStructure();
 pivot.setStructure(config);
 ~~~
 
-Format of a **config** object is the same as "structure" parameter of the constructor:
+Format of the **config** object is the same as "structure" parameter of the constructor:
 
 ~~~js
 var config = {
@@ -79,15 +79,17 @@ values:[ name:"oil", operation:"abssum"]
 
 2) with the help of the api/ui.pivot_addoperation.md method 
 
-Besides adding an operation, it allows specifying the *leavesOnly* property.
-This property means that the operation function will take only values of leaves child rows (rows that do not have sub-rows).
 The method takes three parameters:
 
-- name - (string) the operation's name
-- function - (function)	the function which will be called for each cell in the column with this operation.
+- **name** - (string) the operation's name
+- **function** - (function)	the function which will be called for each cell in the column with this operation.
 It takes an array with values of child cells
-- options - (object) object with operation options. Currently, there's just one option - leavesOnly. 
-If it's set to *true*, the operation function will take values of child rows that do not contain sub-rows.
+- **options** - (object) object with operation options (*leavesOnly* or *ids*, see details below)
+    
+Besides adding an operation, the api/ui.pivot_addoperation.md method allows specifying two properties: 
+
+- *leavesOnly* - (boolean) if set to *true*, the operation function will take only values of child rows that don't contain sub-rows.
+- *ids* - (boolean) if set to *true*, the operation function will take ids of ungrouped data items as the 4th parameter.    
     
 ~~~js
 grida.addOperation("avr", function(data) {
@@ -100,13 +102,15 @@ grida.addOperation("avr", function(data) {
 }, {leavesOnly: true});
 ~~~
 
-{{sample 61_pivot/03_table_api/03_adding_operation.html}}
+{{sample 61_pivot/03_table_api/02_adding_operation.html}}
+
+{{sample 61_pivot/03_table_api/04_weighted_average.html}}
 
 
 Sum Counters for Columns and Rows
 ----------------------------------
 
-To calculate the total sum for each row, **total column** can be set: 
+To calculate the total sum for each row, **total column** can be set via the api/ui.pivot_totalcolumn_config.md property 
 
 ~~~js
 webix.ui({
@@ -116,7 +120,7 @@ webix.ui({
 });
 ~~~
 
-To calculate the total sum per column, **footer** can be defined: 
+To calculate the total sum per column, **footer** can be defined via the api/ui.pivot_footer_config.md property: 
 
 ~~~js
 webix.ui({
@@ -128,7 +132,7 @@ webix.ui({
 
 The "sumOnly" value of both properties forces the summing function to process only rows/columns that contain sums already. 
 
-{{sample 61_pivot/03_table_api/02_total_column.html}}
+{{sample 61_pivot/03_table_api/01_total_column.html}}
 
 Filters
 --------
@@ -160,7 +164,7 @@ By default, Pivot uses data item properties for column names. But if you have da
 [{ a1:100, a2:1.34 }, ...]
 ~~~
 
-In this case, you can use **fieldMap** property to set beautiful names for columns instead of *a1* and *a2*:
+In this case, you can use the api/ui.pivot_fieldmap_config.md property to set beautiful names for columns instead of *a1* and *a2*:
 
 ~~~js
 webix.ui({
@@ -175,7 +179,7 @@ webix.ui({
 Setting Readonly Mode
 ----------------------
 
-In order to disable changing of the Pivot configuration settings, you can specify the *readonly* config property with the "true" value:
+In order to disable changing of the Pivot configuration settings, you can specify the api/ui.pivot_readonly_config.md config property with the "true" value:
 
 ~~~js
 webix.ui({

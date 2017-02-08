@@ -2,7 +2,7 @@ templateCreate
 =============
 
 @short:
-	specifies properties for a newly created folder
+	defines the template for a newly created folder
 
 @type: function
 @example:

@@ -2,7 +2,7 @@ onBeforeBack
 =============
 
 
-@short: fires the moment back() fucntion is triggered
+@short: fires the moment the api/ui.multiview_back.md function is triggered
 	
 
 @example: 

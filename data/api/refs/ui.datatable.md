@@ -142,6 +142,7 @@ var datatable = webix.ui({
 - api/ui.datatable_refreshcolumns.md - refreshes the structure of DataTable
 - api/ui.datatable_refreshfilter.md - rebuilds list of options in select filter
 - api/ui.datatable_refreshheadercontent.md - refreshes the header row of DataTable
+- api/ui.datatable_refreshselectarea.md - 
 - api/ui.datatable_registerfilter.md - registers a filter element
 - api/link/ui.datatable_remove.md - removes the specified item/items from datastore
 - api/ui.datatable_removecellcss.md - remove css class from the cell of datatable
@@ -292,6 +293,7 @@ var datatable = webix.ui({
 - api/link/ui.datatable_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.datatable_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.datatable_data_config.md - JavaScript array containing data for the component
+- api/link/ui.datatable_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/ui.datatable_datafetch_config.md - defines the number of records that will be loaded into datatable during the next dynamic loading call
 - api/link/ui.datatable_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.datatable_datatype_config.md - the type of loaded data

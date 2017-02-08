@@ -31,3 +31,6 @@ The properties of the context object are:
 
 @relatedsample:
 64_file_manager/02_events/03_drag.html
+
+@relatedapi:
+api/ui.filemanager_onafterdrop_event.md

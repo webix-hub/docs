@@ -17,3 +17,7 @@ fmanager.showSearchResults(text);
 @template:	api_method
 @descr:
 
+
+@relatedapi:
+api/ui.filemanager_hidesearchresults.md
+

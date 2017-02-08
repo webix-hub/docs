@@ -3,7 +3,7 @@ templateName
 
 
 @short:
-	specifies how the folder/file's name will be displayed in File Manager
+	defines a template applied for the folder/file's name
 
 @type: function
 @example:

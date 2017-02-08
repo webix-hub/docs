@@ -1,4 +1,4 @@
-onBeforeUploadFile
+onBeforeFileUpload
 =============
 
 @short:
@@ -9,7 +9,7 @@ onBeforeUploadFile
 - targetId		string			the id of the folder where a new file will be uploaded
 
 @example:
-$$("fmanager").attachEvent("onBeforeUploadFile",function(targetId){
+$$("fmanager").attachEvent("onBeforeFileUpload",function(targetId){
     // your code
     return true;
 });
@@ -22,5 +22,7 @@ $$("fmanager").attachEvent("onBeforeUploadFile",function(targetId){
 @descr:
 
 @relatedapi:
-
 api/ui.filemanager_uploadfile.md
+
+@related:
+file_manager/configuration.md#actionsmenu

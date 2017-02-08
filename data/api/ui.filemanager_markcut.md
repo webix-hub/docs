@@ -2,11 +2,11 @@ markCut
 =============
 
 @short:
-	preselectes files/folders for move operation
+	preselectes files/folders for the Move operation
 
 @params:
 
-- id			string,array		ids of files for moving
+- id			string|array		ids of files for moving
 
 
 

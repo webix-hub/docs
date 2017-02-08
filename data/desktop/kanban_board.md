@@ -2,7 +2,7 @@ Kanban Board
 ==============
 
 API Reference
----------------
+----------------------------------
 
 - [Methods, properties and events](api/refs/ui.kanban.md)
 
@@ -54,6 +54,7 @@ Fully written in JavaScript and CSS this component can be integrated in any web 
                 <li>kanban/adding_items.md</li>
                 <li>kanban/work_with_data.md</li>
                 <li>kanban/editing_items.md</li>
+                <li>kanban/api_reference.md</li>
                 <li>kanban/events.md</li>
                 <li>kanban/howto.md</li>
             </ul>

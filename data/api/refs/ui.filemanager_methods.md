@@ -68,8 +68,8 @@ Methods
 - api/link/ui.filemanager_loadbranch.md - loads data to the specified branch, as direct children of the node with the id provided
 - api/link/ui.filemanager_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
 - api/link/ui.filemanager_mapevent.md - routes events from one object to another
-- api/ui.filemanager_markcopy.md - preselectes files/folders for copy operation
-- api/ui.filemanager_markcut.md - preselectes files/folders for move operation
+- api/ui.filemanager_markcopy.md - preselectes files/folders for the Copy operation
+- api/ui.filemanager_markcut.md - preselectes files/folders for the Move operation
 - api/link/ui.filemanager_move.md - moves the specified item to the new position
 - api/ui.filemanager_movefile.md - moves a selected file/folder
 - api/ui.filemanager_openfolders.md - opens folders in case of dynamic loading

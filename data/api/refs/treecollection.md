@@ -51,9 +51,7 @@ var store = new webix.TreeCollection({ url:"tree.php" });
 - api/link/treecollection_mapevent.md - routes events from one object to another
 - api/link/treecollection_move.md - moves the specified item to the new position
 - api/link/treecollection_movebottom.md - moves the specified item to the last position
-- api/link/treecollection_movedown.md - increases the item index and moves the item to the new position
 - api/link/treecollection_movetop.md - moves the specified item to the first position
-- api/link/treecollection_moveup.md - decreases the item index and moves the item to the new position
 - api/link/treecollection_parse.md - loads data to the component from an inline data source
 - api/link/treecollection_refresh.md - repaints the whole view or a certain item
 - api/link/treecollection_refreshcursor.md - force repainting of all bound components with current cursor value
@@ -101,7 +99,6 @@ var store = new webix.TreeCollection({ url:"tree.php" });
 
 {{api
 - api/link/treecollection_data_config.md - JavaScript array containing data for the component
-- api/link/treecollection_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/treecollection_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/treecollection_datatype_config.md - the type of loaded data
 - api/link/treecollection_defaultdata_config.md - the property stores data which is displayed in the child when no records are selected in the  master.

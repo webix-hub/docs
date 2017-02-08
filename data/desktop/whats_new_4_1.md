@@ -8,7 +8,7 @@ Breaking Changes
 
 Changes in Webix [Pivot](desktop/pivot.md):
 
-- filter Date values are converted into timestamp 
+- filter Date values are converted into timestamp {{sample 61_pivot/06_filters/03_datepicker.html}}
 - Multiselect filter is replaced with the Multicombo filter (you need to check your locale files)
 
 Check the [Migration Guide](migration.md#webix4041) for more details.
@@ -32,7 +32,7 @@ Updates
 - api/ui.pdfviewer_clear.md API for desktop/pdfviewer.md
 - [pivot] ability to [define custom Filters](pivot/filters.md#changingfieldforfiltering)
 - [pivot] ability to override structure (api/ui.pivot_onviewinit_event.md event)
-- [pivot] ability to process data on the server-side
+- [pivot] ability to process data on the server-side {{sample 61_pivot/07_table_external/01_readonly.html}}
 
 
 Fixes

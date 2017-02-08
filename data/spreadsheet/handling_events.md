@@ -27,7 +27,7 @@ webix.detachEvent(id); // unique id of the event handler
 List of supported events
 -------------------------
 
-You can find the full list of the supported events in the [API Reference](api/refs/ui.spreadsheet_events.md).
+You can find the full list of supported events in the SpreadSheet [API Reference](api/refs/ui.spreadsheet_events.md).
 
 {{sample
 65_spreadsheet/02_api/05_events.html
