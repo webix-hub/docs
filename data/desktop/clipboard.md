@@ -41,14 +41,14 @@ webix.extend($$("myview"),webix.CopyPaste);
 
 
 ##Custom 'copy' function
-To customize the way that the data will be stored in the clipboard (when the user presses CTRL+C) you should use the api/copypaste_templatecopy_config.md property. In that case, before transfering to the clipboard the copied data will be modified according to the specified template. 
+To customize the way that the data will be stored in the clipboard (when the user presses CTRL+C) you should use the api/copypaste_templatecopy_config.md property. In that case, before transferring to the clipboard the copied data will be modified according to the specified template. 
 
 {{note
 To use the the api/copypaste_templatecopy_config.md property you need to set the api/copypaste_clipboard_config.md property to a value 'custom'.
 }}
 
 </br>
-Let's take a simple example: you have a list that displays the names of your favourite films. Assume, in the clipboard besides the film title you want to store its year and rating. 
+Let's take a simple example: you have a list that displays the names of your favorite films. Assume, in the clipboard besides the film title you want to store its year and rating. 
 
 Then:
 

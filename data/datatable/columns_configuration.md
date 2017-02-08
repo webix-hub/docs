@@ -53,7 +53,7 @@ autoConfig:true
 
 In this case *columns* array is no longer needed. Datatable will analyze the dataset passed to it and build columns automatically. The columns will have **default values** (no sorting or filtering, width of 50px, etc.)
 
-Headers/footers
+Headers/Footers
 ------------------
 Enabled by parameters [header](api/ui.datatable_header_config.md), [footer](api/ui.datatable_footer_config.md) (by default, headers are enabled).
 
@@ -103,7 +103,7 @@ grid = new webix.ui({
 
 For more details, read the [Headers and footers](datatable/headers_footers.md) article.
 
-Widths of columns
+Widths of Columns
 ---------------------
 
 ###Setting the width of columns
@@ -177,7 +177,7 @@ Pay attention that the resulting column's width won't be less than minWidth, in 
 
 For more details, read the [Sizing and resizing](datatable/sizing.md) article.
 
-Built-in filters
+Built-in Filters
 ------------------
 The header or footer of a column can contain filter. The following types of filters are available:
 
@@ -200,7 +200,7 @@ columns:[
 
 For more details, read the [Filtering](datatable/filtering.md) article.
 
-Built-in sorting
+Built-in Sorting
 ---------------------------
 You are allowed to sort data in columns. The way of sorting depends on the column sorting type. 
 There are 4 predefined sorting types:
@@ -228,7 +228,7 @@ columns:[
 
 For more details, read the [Sorting](datatable/sorting.md) article.
 
-Text alignment
+Text Alignment
 ------------------------
 To set the text alignment in a column you should use attribute **css**:
 
@@ -253,9 +253,10 @@ columns:[
 
 Read more about using the **css** attribute in the [Styling](datatable/styling.md) article.
 
-Data formats
+Data Formats
 ------------------
-Formatting is applied to date and number values and defined for each column separately. To set some format for a column, use attribute **format**.
+
+Formatting is applied to date and number values and defined for each column separately. To set some format for a column, use the **format** attribute.
 
 {{snippet
 Setting the format for a specific column
@@ -264,15 +265,16 @@ Setting the format for a specific column
 ~~~js
 columns:[
 	//data will be formatted according to the current locale
-	{ id:"col2", format:function(value){ return webix.ui.numberFormat(value)};}
+	{ id:"col2", format:function(value){ return webix.i18n.numberFormat(value)};}
 ]
 ~~~
 {{sample 15_datatable/20_templates/05_dates.html }}
 
 For more details, read the [Number and date formatting](datatable/formatting.md) article.
 
-Math in columns
+Math in Columns
 ------------------
+
 You can write simple math formulas to specify values in column cells. Formulas can be set for a whole column or for a single cell.
 
 {{snippet
@@ -356,7 +358,7 @@ For more details, read the [Styling](datatable/styling.md) article.
 
 
 
-Hiding/showing columns
+Hiding/Showing Columns
 ------------------
 
 Initially, all the datatable columns are visible by default unless a specific **hidden** property is used in its configuration: 
@@ -380,7 +382,7 @@ Hiding a column
 grid.hideColumn("col2");
 ~~~
 
-Setting hidden/visible columns in groups
+Setting Hidden/Visible Columns in Groups
 ---------------
 
 Datatable API allows for setting the initially visible group of columns (**visibleBatch**) as well as show and hide any chosen column group defined by **batch** property: 
@@ -412,7 +414,7 @@ grida.showColumnBatch(3);
 
 {{sample 15_datatable/15_api/11_column_batches.html}}
 
-Adding/deleting columns dynamically
+Adding/Deleting Columns Dynamically
 -----------------------------
 
 Since datatable **columns** is an array of JSON objects, you can treat it like any JavaScript array. At any moment you can add elements (columns) to this array and delete elements from it - and
@@ -452,7 +454,7 @@ grid.refreshColumns();
 
 {{sample 15_datatable/09_columns/04_add_column.html}}
 
-Grouping columns
+Grouping Columns
 -----------------------------
 
 {{pronote

@@ -87,7 +87,7 @@ webix.ui({
 
 ##DateRangePicker 
 
-DateRange can be shown by user request, e.g. when a user wants to pick a daterange and time to fill the form. 
+DateRange can be shown by user request, e.g. when a user wants to pick a date range and time to fill the form. 
 In this case, you can make use of the desktop/daterangepicker.md control. 
 
 Thus, you won't have to initialize DateRange, as it will appear when you click the DateRangePicker icon. 

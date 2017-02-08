@@ -36,7 +36,7 @@ webix.ui({
 
 **Main Properties**
 
-- **value** - (number) the initial value of the Gage wigdet. It should be set within the range of the *minRange* and *maxRange* parameters' values or equal to one of them.
+- **value** - (number) the initial value of the Gage widget. It should be set within the range of the *minRange* and *maxRange* parameters' values or equal to one of them.
 - **minRange** - (number) the maximum range value of the Gage scale. 0 by default
 - **maxRange** - (number) the maximum range value of the Gage scale. 100 by default 
 - **label** - (string) the text label of a control

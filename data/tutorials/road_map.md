@@ -18,7 +18,7 @@ For understanding the basic concepts and getting the desired information in the 
 4. desktop/basic_tasks.md - the main chapter of the documentation covering developer-oriented tasks in details.
   - [App architecture](desktop/designing_user_interface.md) - answers general configuration questions: how to specify and size required component, 
 set headers(footers), manipulate visibility, handle events etc.  
-  - [UI features](desktop/styling_and_animation.md) - tells you how to fine-tune the appearance of your app and data in it with the help of css classes, templates, special helpers and modes.
+  - [UI features](desktop/styling_and_animation.md) - tells you how to fine-tune the appearance of your app and data in it with the help of CSS classes, templates, special helpers and modes.
   - [Data operations](desktop/item_operations.md) - covers techniques for performing general operations under data, such as sorting, filtering, copy-pasting and selection.
   - [Third Party Integration](desktop/third_party_integration.md) - says which third-party libraries and how can be integrated with Webix components.
 5. helpers/index.md - covers advanced techniques implemented by means of helper components. Mostly intended for expert developers to customize the existent functionality.

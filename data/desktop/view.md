@@ -1,5 +1,6 @@
 View
 =============
+
 View is a base class for all the ui-related components. It's a place where you put them before working. A pure view doesn't contain
 any information yet it may come with borders.
 

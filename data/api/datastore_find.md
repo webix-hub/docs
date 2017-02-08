@@ -5,7 +5,7 @@ find
 	
 
 @params:
-- criterion	function	match criteria
+- criterion	function	the criterion to match
 * first		boolean		if true, only the first found result is returned. False by default.
 
 @returns:
@@ -14,7 +14,7 @@ rows	array,object		array of found rows or a row object in case of "first".
 
 
 @example:
-//finds all rows which title match the given value
+// finds all rows which title match the given value
 table.find(function(obj){
 	return obj.title.toLowerCase().indexOf(value) != -1;
 });

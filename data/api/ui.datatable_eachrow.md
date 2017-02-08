@@ -9,8 +9,6 @@ eachRow
 * all			boolean    		if true, hidden rows are included into a loop
 
 
-
-
 @example:
 dtable.eachRow( 
 	function (row){ 

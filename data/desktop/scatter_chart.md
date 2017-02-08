@@ -5,7 +5,7 @@ Settings for Scatter Chart
 
 - **value** (template) - item template for Y axis;
 - **xValue** (template) - item template for xAxis;
-- **data /url** (url/string) - the datasource;
+- **data /url** (url/string) - the data source;
 - **item** - an object property that contains setting for each point in the graph:
     - **radius** (number) - radius on the point in the chart;
   	- **[eventRadius](api/ui.chart_eventradius_config.md)** (number) - radius of the virtual circle which events will fire for items within;

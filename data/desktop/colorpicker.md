@@ -1,4 +1,4 @@
-Colorpicker
+ColorPicker
 ======================
 
 ##API Reference

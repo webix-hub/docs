@@ -12,7 +12,7 @@ Functor is a method that is applied to an item property in order to define the w
 ]
 ~~~
 
-When data is grouped by year, we may want to learn total number of votes per year, or their maximim/minimal value, etc. It is **grouping functors** that are designed for this purpose. They are used
+When data is grouped by year, we may want to learn total number of votes per year, or their maximum/minimal value, etc. It is **grouping functors** that are designed for this purpose. They are used
 within **map** object of the [grouping function](desktop/grouping.md). 
 
 ~~~js
@@ -44,17 +44,17 @@ Such function takes two arguments:
 - **prop** - the property to process;
 - **data** - data object with items of this group.
 
-There's no functor to find out the average value for item ptoperties, so let's call it **median** and add it. 
+There's no functor to find out the average value for item properties, so let's call it **median** and add it. 
 
 ~~~js
 webix.GroupMethods.median = function(prop, data){
-				if (!data.length) return 0;
-				var summ = 0;
-				for (var i = data.length - 1; i >= 0; i--) {
-					summ += prop(data[i])*1;
-				};
-				return summ/data.length;
-			};
+	if (!data.length) return 0;
+		var summ = 0;
+	for (var i = data.length - 1; i >= 0; i--) {
+		summ += prop(data[i])*1;
+	};
+	return summ/data.length;
+};
 ~~~
 
 And apply the newly created functor referring to it by its name:
@@ -70,7 +70,7 @@ $group:{
 
 {{sample 15_datatable/32_grouping/04_custom_aggregation.html}}
 
-The functor can be as well defined **bypassing GroupMethods class** by setting a custom fucntion. 
+The functor can be as well defined **bypassing GroupMethods class** by setting a custom function. 
 
 ~~~js
 function getAverage(prop, data){
@@ -104,7 +104,8 @@ webix.ui({
 					return min + " - "+ (min+10) 
 				}]
 			}
-		}		
+		}
+	}		
 });	
 ~~~
 

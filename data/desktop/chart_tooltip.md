@@ -23,7 +23,7 @@ Items are usually small and users need to be very precise with cursor pointing. 
 
 ##Tooltip Values
 
-Tooltip values are defined on the base of datasource values. While the chart represents a numeric graphically, tooltip gives literal explanation of this value. 
+Tooltip values are defined on the base of data source values. While the chart represents a numeric graphically, tooltip gives literal explanation of this value. 
 
 Let's take the left chart from above. It shows sales amounts per each year. Years are displayed over a horizontal scale while sales amount defines the height of the point on the vertical scale. 
 

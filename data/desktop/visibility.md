@@ -61,7 +61,7 @@ Here radio options coincide with batch values from the code above:
 ~~~js
 	{ view:"radio", id:"rad", label: "select", click:"change_batch", options:[
 		"batch 1","batch 2", "batch 3"
-		] } //chanding radio buttons triggers the function execution
+		] } //changing radio buttons triggers the function execution
 ~~~
 ####3 . Write the function to show the controls with the chosen batch value. 
 

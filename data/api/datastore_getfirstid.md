@@ -9,8 +9,8 @@ getFirstId
 - id  id  the id of the first item
 
 @example:
-//"data" is the ID of dataview 
-$$('data').select($$('data').getFirstId());
+// "data" is the ID of dataview 
+var firstItemId = $$("data").select($$("data").getFirstId());
 
 @related: 
 	desktop/selection.md

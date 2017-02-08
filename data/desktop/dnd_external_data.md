@@ -26,10 +26,10 @@ The property function takes two parameters - **data** and **id:**
 When moved to the target component the item retains the ID it had in the source component unless the target already has an item with this ID.
 In this case, the ID will be set randomly while the initial ID will be stored in the function. 
 
-Take for instance, an app containing two trees, a dataview and datatable. The tree dataset includes items with **data.value** items while dataview and datatable 
+Take for instance, an app containing two trees, a DataView and DataTable. The tree dataset includes items with **data.value** items while DataView and datatable 
 have **data.title** and **data.rank**. To enable drag-n-drop within the whole group, you need two functions: 
 
-1 . The function that will populate dataview and datatable.
+1 . The function that will populate DataView and DataTable.
 
 ~~~js
 function tree2grid(data, id){
@@ -42,9 +42,9 @@ function tree2grid(data, id){
 
 Notice the "or" logic here: 
 
-- If you drag data from datatable to dataview and vice versa, native data and external data have the same parameters, so *data.title* value from the 
-datatable becomes *data.title* of the dataview. The same is true about *data.rank*. 
-- If you drag data from any of the trees to datatable and dataview, you need to redefine *data.title* parameter and take its value to the **data.value** of the
+- If you drag data from datatable to DataView and vice versa, native data and external data have the same parameters, so *data.title* value from the 
+datatable becomes *data.title* of the DataView. The same is true about *data.rank*. 
+- If you drag data from any of the trees to datatable and DataView, you need to redefine *data.title* parameter and take its value to the **data.value** of the
 tree. Then, since in the sample data for both trees has  no *data.rank* parameter, its value will be displayed as "-1". 
 
 2 .The function that will populate tree with dragged data. 
@@ -57,7 +57,7 @@ function grid2tree(data, id){
 ~~~
 
 Here only *data.value* matters. The tree will take the dragged-and-dropped *data.value* value from the other tree, or the *data.title* 
-value from either of the datatables. 
+value from either of the DataTables. 
 
 {{sample 22_dnd/01_basic_dnd.html }}
 

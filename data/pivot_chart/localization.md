@@ -29,7 +29,7 @@ webix.i18n.pivot = {
 };
 
 
-//and then init Pivot Chart and see you custom names
+//and then initialize Pivot Chart and see your custom names
 webix.ui({
 	view:"pivot",
     //...

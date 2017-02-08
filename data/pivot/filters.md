@@ -34,7 +34,7 @@ To remove existing filters, use the *filters.remove()* method:
 $$("pivot").filters.remove("datepicker");
 ~~~
 
-{{sample 61_pivot/06_filters/02_add_filter.html}}
+{{sample 61_pivot/03_table_api/05_add_filter.html}}
 
 
 Changing Field for Filtering 
@@ -42,9 +42,9 @@ Changing Field for Filtering
 
 Sometimes, we need to use different values for filtering. 
 For example, if you use a date filter that returns timestamp values and you want to display formatted date values in Pivot. 
-In such a case, you can put a pair of a formatted and a “timestamp” fields into the api/ui.pivot_filtermap_config.md collection of Pivot (PivotChart). 
+In such a case, you can put a pair of a formatted and a "timestamp" fields into the *filterMap* collection of Pivot (PivotChart). 
 
-A new data property can be added directly to datasource or with the help of [scheme $init](desktop/data_scheme.md#initkey). 
+A new data property can be added directly to data source or with the help of [scheme $init](desktop/data_scheme.md#initkey). 
 Properties of data items that begin with “$” are not added into the “Fields” list.
 
 
@@ -66,7 +66,7 @@ webix.ui({
 });
 ~~~
 
-{{sample 61_pivot/06_filters/03_datepicker.html}}
+{{sample 61_pivot/03_table_api/05_add_filter.html}}
 
 Changing Parent of Pivot Filters
 -------------------------
@@ -91,4 +91,22 @@ webix.ui({
 });
 ~~~
 
-{{sample 61_pivot/06_filters/01_outer_filters.html}}
+{{sample 61_pivot/05_table_customization/01_outer_filters.html}}
+
+Setting Initial Filtering Value 
+------------------------------
+
+You can set the initial value that will be used for filtering pivot. For this, you need to use the *value* property of the *structure* object during the Pivot initialization:
+
+~~~js
+webix.ui({
+  id:"pivot",
+  view:"pivot",
+  structure: {
+    filters:[{name: "name", type: "text", value:"Argentina"}],
+    ...
+  }
+});
+~~~
+
+In the above example Pivot data will be initially filtered by the value "Argentina".

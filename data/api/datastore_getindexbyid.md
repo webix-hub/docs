@@ -18,7 +18,7 @@ getIndexById
 @defined:	DataStore	
 @descr: 
 
-if id is not found then method returns -1
+If the id is not found, the method returns -1
 
 With tree-like structures, use the [getBranchIndex](api/link/ui.tree_getbranchindex.md) method. 
 

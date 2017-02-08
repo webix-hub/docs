@@ -207,7 +207,7 @@ $$(id).refresh();
 
 ##HTML Containers {#html}
 
-You can set position, style and dimensions of the needed components with the help of javascript only (study [Layout](desktop/layout.md) and 
+You can set position, style and dimensions of the needed components with the help of JavaScript only (study [Layout](desktop/layout.md) and 
 [Sizing Components](desktop/dimensions.md) articles) or place the into html containers to take the task to CSS. To achieve this, make up an html-layout, set 
 ID to **div** elements and set this ID as the value of the component's container parameter. 
 
@@ -231,25 +231,6 @@ ID to **div** elements and set this ID as the value of the component's container
 	});
 	</script>         
 </body>
-~~~
-
-##Coding Tips
-
-Components are removed from the application by simply wiping the code in the editor, but they can be as well destructed by API call with the removal of all HTML elements and event for the component. 
-
-~~~js
-$$('mydataview1').destructor();
-~~~
-
-In addition, you can check whether the component with the specified ID was created and exists in the app: 
-
-~~~js
-if(!$$("my_dataview").exists())// -> returns boolean value
-	var dataview = new webix.ui({
-    	view:"dataview",
-        id:"my_dataview",
-        ..config
-    });
 ~~~
 
 ##Code Optimization {#optim}

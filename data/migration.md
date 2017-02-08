@@ -1,4 +1,4 @@
-Migration to latest Webix version
+Migration to Latest Webix Version
 =================================
 
 Webix 4.0 -> 4.1
@@ -30,7 +30,7 @@ webix.ui({
 
 Tab navigation over Webix application is switched on by default. It cannot be controlled by [UIManager](desktop/uimanager.md) any more. 
 
-Earlier, it was possible to switch on tab navigation by `webix.UIManager.tabControl = true;` codeline while any widget could be excluded from 
+Earlier, it was possible to switch on tab navigation by `webix.UIManager.tabControl = true;` code line while any widget could be excluded from 
 tab order by setting `tabFocus` to false. From Webix 4.0 this functionality deprecates. 
 
 From 4.0 all widgets and their active areas are in the [tab order](desktop/uimanager.md#globaltabnavigation) and cannot be excluded from it. It was done with 
@@ -65,7 +65,7 @@ Earlier it indicated an object to which *this* keyword refers (master). Now it a
 The [collectValues](api/ui.datatable_collectvalues.md) method of the DataTable and TreeTable doesn't return an empty option any more.
 
 The method is used by select filters of the above mentioned components to collect the array of options for them. 
-Prior to 3.3 it returned the unique set of options plus an epmty option to clear the filter's value. 
+Prior to 3.3 it returned the unique set of options plus an empty option to clear the filter's value. 
 
 Now its result doesn't include an empty option while the filters add this option themselves. 
 
@@ -90,7 +90,7 @@ webix.toExcel($$("myDatatable"));
 The "excel" proxy was removed. 
 
 Instead, the "binary" [proxy](desktop/server_proxy.md) object is used to load files like Excel into data components and the "excel" [datatype](desktop/data_types.md) 
-is introduced for parsing Excel files. It is the default datatype for Excel Viewer. 
+is introduced for parsing Excel files. It is the default data type for Excel Viewer. 
 
 ~~~js
 webix.ui({
@@ -124,7 +124,7 @@ Starting from the version 3.0 strict JSON parsing rules are applied. It means th
 ###Export API
 Version 3.0 includes new export API. Old export functionality of datatable is deprecated and will be fully removed in version 3.2
 
-###Serverside response for Uploader
+###Server-side response for Uploader
 
 The expected format of JSON string returned by the uploading script has changed.
 Now the script should respond with "error" status to indicate that uploading ended with error:
@@ -161,7 +161,7 @@ webix.ui({
 })
 ~~~
 
-In webix 2.3 size of layout is a full size, that already includes padding and margin. The same code as above one will result in layout with 100px height. If you preffer the old behavior, you can move height settings in the inner view
+In webix 2.3 size of layout is a full size, that already includes padding and margin. The same code as above one will result in layout with 100px height. If you prefer the old behavior, you can move height settings in the inner view
 
 ~~~
 //in both Webix 2.2 and Webix 2.3 will result in 140px height 
@@ -189,7 +189,7 @@ ajax.header method was deprecated in favor of [ajax.headers](api/ajax_headers.md
 
 ### Sizing
 
-Starting from Webix 2.2, list, datataview and template view, width and height of container
+Starting from Webix 2.2, List, DataView and Template view, width and height of container
 will include the width of scrollbar. It means that the resulting view will take exactly 
 the same size that was defined for it (previously, it was the defined as:"size + size of scrollbar").
 
@@ -206,7 +206,7 @@ Webix 1.x -> 2.0
 DHTMLX Touch -> Webix 2.0
 --------------------------
 
-Please check [Migraton from DHTMLX Touch](migration_from_touch.md).
+Please check [Migration from DHTMLX Touch](migration_from_touch.md).
 
 @index:
 

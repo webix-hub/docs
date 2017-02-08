@@ -2,7 +2,7 @@ getTopRange
 =============
 
 
-@short:returns an array of the top tree nodes
+@short:returns an array of the top tree data items
 	
 
 

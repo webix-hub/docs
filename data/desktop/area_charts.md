@@ -2,7 +2,7 @@ Settings for Area Charts
 =============
 
 - **value** (template) - item template from the dataset;
-- **data / url**  - the datasource;
+- **data / url**  - the data source;
 - **color** (hex code, template) - color for the colored area;
 - **alpha** (a number between 0 and 1) - the transparency of the colored area.
 

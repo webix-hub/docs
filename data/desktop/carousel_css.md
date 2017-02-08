@@ -8,7 +8,7 @@ Carousel is a layout-building component that can house any of the data-presentin
 
 <table class="inline">
 	<tr class="row0">
-		<th class="col0 centeralign">  css class  </th><th class="col1 centeralign">  Element  </th>
+		<th class="col0 centeralign">  CSS class  </th><th class="col1 centeralign">  Element  </th>
 	</tr>
 	<tr class="row1">
 		<td class="col0 leftalign">.webix_carousel  </td><td class="col1">carousel object </td>

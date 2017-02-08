@@ -38,12 +38,12 @@ webix.ui({
     datatype:"xml"
 });
 
-//or, in case you load data after component init:
+//or, in case you load data after component initialization:
 
 $$("grid").load("server/data.php");
 ~~~
 
-- Datatype can be omitted in case of JSONDataConnector usage since it returns data in default JSON format;
+- Data type can be omitted in case of JSONDataConnector usage since it returns data in default JSON format;
 - In case of long datasets, make use of [dynamic loading](desktop/dynamic_loading.md) functionality;
 - If you are unsure what to do in case you need to get data from a **different domain** with relations to your app's one, consult the our solution to [cross-domain data loading](desktop/crossdomain_loading.md).
 
@@ -147,7 +147,7 @@ $data -> mix("wage", $last_value, array("empl_id" => "id"));
 
 Here the method works with a column/field name of the component, the value, you'd like to render there and ID correspondence between the tables. 
  
- - **filter** - filtering data on serverside. Takes column name and desired value as arguments
+ - **filter** - filtering data on the server side. Takes column name and desired value as arguments
  
 ~~~php
 $data -> filter("field_name = ''"); 
@@ -157,7 +157,7 @@ Here the data is filtered by a "field_name" field and shows all records where it
   
 
 {{note
-Connectos have big possibilities of customization, so consult their [documentation](#docu).
+Connectors have big possibilities of customization, so consult their [documentation](#docu).
 }}
 
 ##Saving Data with Connectors {#saving}
@@ -180,7 +180,8 @@ webix.ui({
 - As soon as you define you connector-based script as **save** script, DataProcessor is initialized to send changed data to this script. 
 
 [DataProcessor](desktop/dataprocessor.md) passes changed data from the component alongside with the operation (*update, insert, delete*) performed on it. 
-This operation corresponds to query type the connector will execute over the database table. If you neeed to customize this behavior  - go to [DataProcessor docs](desktop/dataprocessor.md).
+This operation corresponds to query type the connector will execute over the database table. If you need to customize this behavior, 
+go to [DataProcessor docs](desktop/dataprocessor.md).
 
 There are two protocols for data transfer with Server Side Connectors
 

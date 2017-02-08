@@ -71,7 +71,7 @@ The function defines the value of each unit. If it is equal to the 1st of Februa
 
 Value is the function that converts data items that come from a database into unit values. It allows comparing data items with chart units.
 
-The example below shows the case of date units and string values in datasource.
+The example below shows the case of date units and string values in data source.
 A string property is taken from the data item (obj.date) and turned to Date object formatted under the "day_number.month_number.full_year" pattern.
 
 ~~~js

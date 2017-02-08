@@ -40,7 +40,7 @@ Datatable is a peculiar component and has a number API peculiarities. That's why
 - [Datatable Sorting](datatable/sorting.md)
 
 {{note
-[Treetable](desktop/treetable.md) shares features of both [datatable](datatable/index.md) and datatree/index.md, that's it has similar fimilar sorting and filtering patterns. In addition,
+[Treetable](desktop/treetable.md) shares features of both [datatable](datatable/index.md) and datatree/index.md, that's it has similar familiar sorting and filtering patterns. In addition,
  it borrows **filterMode** property from the tree API (described further). 
 }}
 

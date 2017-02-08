@@ -28,7 +28,7 @@ Add, Delete and Update Event Handling
 -------------------------------------
 
 To handle CRUD operations you can set the onAfterAdd, onAfterDelete and onStoreUpdated event handlers
-for Scheduler datastore. You can get datastore by the "data" property of Scheduler. 
+for Scheduler data store. You can get data store by the "data" property of Scheduler. 
 
 ###onAfterAdd 
 

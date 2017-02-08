@@ -28,7 +28,7 @@ var marker = webix.html.create("div", {
 document.body.appendChild(marker);
 ~~~
 
-The library features a [set of functions for working with HTML](api__refs__html.html). One of them, **create()**, makes an HTML div container with Javascript means, assigns a CSS to it while the content of the new 
+The library features a [set of functions for working with HTML](api__refs__html.html). One of them, **create()**, makes an HTML div container with JavaScript means, assigns a CSS to it while the content of the new 
 HTML block is empty, which is signified by *&nbsp*. 
 
 After that, you should extend the already initialized component with the drag marker functionality. Here the **$dragMark** property comes to your help. Its value is a function that 
@@ -56,12 +56,12 @@ Comments:
 - the function takes **DnD context** ([described above](desktop/dnd.md)) and native DOM event as parameters;
 - initially the drag mark is not displayed and becomes visible only in the target area;
 - firstly, properties of a dragged element are found out; then they define properties of the drag marker;
-- **webix.html.offset** method gets the absolute top and left postioning of an HTML element specified as an argument;
+- **webix.html.offset** method gets the absolute top and left positioning of an HTML element specified as an argument;
 - **offsetWidth** DOM method returns width of an element, including borders and padding.
 
 ##Adding and Removing Marks
 
-**addCss()** and **removeCss()** methods can help you apply any style for your drag marker defined as a CSS class. They are also used within a **$dragMark** function, but here you heedn't create a separate HTML container 
+**addCss()** and **removeCss()** methods can help you apply any style for your drag marker defined as a CSS class. They are also used within a **$dragMark** function, but here you don't need to create a separate HTML container 
 for the marker. 
 
 ~~~js

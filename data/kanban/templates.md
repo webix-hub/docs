@@ -55,7 +55,7 @@ You can set the following properties in the type:
 - <a href="#icons">'icons'</a>  - the array of icons. The icons are taken from the [Font Awesome](http://fortawesome.github.io/Font-Awesome/) collection 
 - <a href="#template_icons">'templateIcons'</a> - template for icons representation (is applied in the 'templateFooter')
 - <a href="#template_tags">'templateTags'</a> - template for tags representation (is applied in the 'templateFooter')
-- 'tagDelimiter' - string that defines tags delimiter in datasource (',' by default)
+- 'tagDelimiter' - string that defines tags delimiter in data source (',' by default)
 - <a href="#template_avatar">'templateAvatar'</a> - template for an item's avatar ( the photo of an assignee or other data)
 - <a href="#template_noavatar">'templateNoAvatar'</a> - this template is applied if the 'templateAvatar' doesn't set HTML content for 
 the element that shows information about the assignee.

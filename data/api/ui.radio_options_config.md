@@ -10,8 +10,8 @@ webix.ui({
 	label:"Branch", 
 	value:1, 
     options:[
-    	{  id:1, value:"Master" }, //the initially selected item
-    	{  id:2, value:"Branch" }
+    	{"id":1, "value":"Master"}, // the initially selected item
+    	{"id":2, "value":"Branch"}
 	]
 });  
 

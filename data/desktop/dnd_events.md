@@ -25,7 +25,7 @@ Here we **copy** each item (that is dragged) from the source object with the hel
 
 - **context.source[i]** - the ID of the copied object;
 - **context.start** - the index of the copy;
-- **this** - the object that an item is copied to (since the fucntion is attached to **gridb**, **this** refers to it)
+- **this** - the object that an item is copied to (since the function is attached to **gridb**, **this** refers to it)
 - **webix.uid()** -the ID of the copy-item, here it's generated automatically with the [tool](helpers/top_ten_helpers.md#webixuid) for getting an unique (in frames of a session) ID. 
 
 
@@ -33,8 +33,8 @@ Here we **copy** each item (that is dragged) from the source object with the hel
 
 In case of [datatable](datatable/index.md), the whole rows can be dragged to other components as well as moved between datatable instances. 
 
-By default, the whole row is displayed while being dragged, which is not always convenient and pleasant to see. Sometimes, it would be enough to display the value of the main column during DnD. The same happends with
-[dataview](desktop/dataview.md) and [list](desktop/list.md), the components that feature several [template](desktop/html_templates.md) values in each item. 
+By default, the whole row is displayed while being dragged, which is not always convenient and pleasant to see. Sometimes, it would be enough to display the value of the main column during DnD. The same thing is also actual for
+[DataView](desktop/dataview.md) and [List](desktop/list.md) - the components that feature several [Template](desktop/html_templates.md) values in each item. 
 
 Here, the **onBeforeDrag** event is needed as the functionality should be enabled as soon as we hook on the necessary item. Also, as above, we take **source** and **from** properties from the DnD context object. 
 

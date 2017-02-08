@@ -141,7 +141,7 @@ Standard HTML is used for:
 </form>
 ~~~
 
-Such code can be easily turned into Webix [Htmlform](desktop/htmlform.md) component:
+Such code can be easily turned into Webix [HTMLForm](desktop/htmlform.md) component:
 
 ~~~html
 <form data-view="htmlform" data-id="formView">..
@@ -161,7 +161,7 @@ Such code can be easily turned into Webix [Htmlform](desktop/htmlform.md) compon
 </div>
 ~~~
 
-Note that inline **datasource** is marked by *data-view* attribute with *data* value. 
+Note that inline **data source** is marked by *data-view* attribute with *data* value. 
 
 {{sample 23_markup/01_html/01_init.html}} 
 
@@ -201,16 +201,16 @@ Note that pager properties are not prefixed with "data-".
 
 {{sample 23_markup/01_html/11_pager.html}}
 
-##Tabview and Accordion
+##TabView and Accordion
 
-Webix [tabview](desktop/tabview.md) and [accordion](desktop/accordion.md) are made of separate blocks, each of which featuring **header** with title and **body** with content inside.
+Webix [TabView](desktop/tabview.md) and [Accordion](desktop/accordion.md) are made of separate blocks, each of which featuring **header** with title and **body** with content inside.
 
 In markup you need to place each block into a separate DIV with the attributes: 
 
 - **data-view** with **"body"** value;
 - **data-header** with header text.
 
-####Tabview
+####TabView
 
 ~~~html
 <div data-view="tabview">
@@ -311,7 +311,7 @@ $$("win1").show();
 
 ####Menu and submenu peculiarities
 
-If [menu](desktop/menu.md) is initialized from markup it's vital to remember that its submenus should be as well initialized the same way as windows: 
+If [menu](desktop/menu.md) is initialized from markup it's vital to remember that its sub-menus should be as well initialized the same way as windows: 
 
 ~~~html
 <div data-view="submenu" data-id="submenu1">
@@ -322,7 +322,7 @@ If [menu](desktop/menu.md) is initialized from markup it's vital to remember tha
 </div>
 ~~~
 
-And then they should be included into the main menu (or other submenus) with the help of their **submenu** property (submenu ID should be specified):
+And then they should be included into the main menu (or other sub-menus) with the help of their **submenu** property (submenu ID should be specified):
 
 ~~~html
 <div data-view="menu" data-height="50">

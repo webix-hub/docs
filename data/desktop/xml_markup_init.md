@@ -74,7 +74,7 @@ Accordion features an array of **accordionitems**, each of which has a **header*
 
 **XML initialization**
 
-Remember that anything you init from XML, should be among **< x:ui >** tags!
+Remember that anything you initialize from XML, should be among **< x:ui >** tags!
 
 ~~~xml
 <x:accordion>
@@ -140,9 +140,9 @@ If placed in layout rows or cols, form can be initialized with standard HTML tag
 
 HTMLform has its own [initializing patterns](desktop/htmlform.md) including via webix markup class.
 
-##Tabview
+##TabView
 
-Tabview is a hybrid layout that features several view cells and dedicated tabs to switch between these cells. 
+TabView is a hybrid layout that features several view cells and dedicated tabs to switch between these cells. 
 
 **JS initialization**
 

@@ -19,7 +19,7 @@ webix.detachEvent(webix.debug_load_event);
 Global Error Events
 -----------------------------
 
-You can create your own global **loading error hander** that will catch serverside error responces regardless of the component:
+You can create your own global **loading error hander** that will catch server-side error responses regardless of the component:
 
 **onAjaxError**(request_obj) - fires when any Ajax request results in an error;
 **onLoadError**(text, xml, xhttp, obj) - fires when an error has happened during loading the data into any component on the page.

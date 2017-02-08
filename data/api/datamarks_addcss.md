@@ -6,13 +6,13 @@ addCss
 
 
 @params:	
-- id	string,number	ID of the neccessary item
-- css		string 		CSS class name
-* silent	boolean		if true the component is not redrawn
+- id		string,number		ID of the neccessary item
+- css		string 				CSS class name
+* silent	boolean				optional,if <em>true</em>,the component is not redrawn
 
 @example:
-//this points to a component object
-//context.target is a data item id in drag-n-drop context
+// this points to a component object
+// context.target is a data item id in drag-n-drop context
 this.addCss(context.target, "my_custom_mark");
 
 

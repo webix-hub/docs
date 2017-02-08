@@ -22,7 +22,7 @@ Each data item (event) should have a unique *id* property and the following obli
 XML formats
 --------------
 
-There are two possible xml data types:
+There are two possible XML data types:
 
 - "xml" - event items are described as &#60;item&#62; tags and properties as tag attributes
 
@@ -46,7 +46,7 @@ Here is an example of "xml" data source:
 
 - "scheduler" - event items are described as &#60;event&#62; tags and properties are used as nested tags inside of them
 
-You can use "scheduler" data type (xml datasource), if you are going to use Connector for data loading and saving.
+You can use "scheduler" data type (XML data source), if you are going to use Connector for data loading and saving.
 
 ~~~js
 $$("scheduler").load("events.php","scheduler");

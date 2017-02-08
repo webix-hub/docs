@@ -1,17 +1,17 @@
-Grouplist CSS 
+GroupList CSS 
 =============
 
 <img src="image_maps/grouplist_css.png"/>
 
 <table class="inline">
 	<tr class="row0">
-		<th class="col0 centeralign">  css class  </th><th class="col1 centeralign">  Element  </th>
+		<th class="col0 centeralign">  CSS class  </th><th class="col1 centeralign">  Element  </th>
 	</tr>
 	<tr class="row1">
-		<td class="col0 leftalign">.webix_grouplist  </td><td class="col1 leftalign">the whole grouplist  </td>
+		<td class="col0 leftalign">.webix_grouplist  </td><td class="col1 leftalign">the whole GroupList  </td>
 	</tr>
 	<tr class="row2">
-		<td class="col0 leftalign">.webix_list_item  </td><td class="col1 leftalign">an item in the grouplist  </td>
+		<td class="col0 leftalign">.webix_list_item  </td><td class="col1 leftalign">an item in the GroupList  </td>
 	</tr>
 	<tr class="row3">
 		<td class="col0 leftalign">.webix_list_group_back  </td><td class="col1"> the group header item in the selected state </td>
@@ -24,4 +24,4 @@ Grouplist CSS
 	</tr>
 </table>
 
-Read more about [Grouplist](desktop/grouplist.md)
+Read more about [GroupList](desktop/grouplist.md)

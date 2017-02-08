@@ -21,11 +21,11 @@ data-presenting components with it so that they all are fed with the same data.
 ~~~js
 var data = new webix.DataCollection({ 
 	template:"#rank#. #title# - #year#",
-	data:big_film_set //the datasource
+	data:big_film_set // the data source
 });
 ~~~
 
-Now let's init the list and sync it with out invisible DataCollection
+Now let's initialize the list and synchronize it with our invisible DataCollection:
 
 ~~~js
 webix.ui({
@@ -46,12 +46,12 @@ However, data will not fill the form unless we refer to cursor concept.
 ##Cursor Concept
 
 Cursor position is the ID of an item that the cursor is set on. Cursor should be set in case several components are bound to/synced with one and the same source, e.g. one and the same DataCollection, in order 
-to avoid conflicts between different component referring to one and the same datasource and making changes upon it. 
+to avoid conflicts between different component referring to one and the same data source and making changes upon it. 
 
 The invisible **dataCollection** is a master component for both the form and data-containing components synced with it. But since it's invisible, data cannot be operated on.
 The issue is solved by using any component to set cursor to an item from dataCollection each time this item is selected in the chosen component.
 
-For instance, you'd like a list to be "volonteer" to get to dataCollection during form filling. 
+For instance, you'd like a list to be "volunteer" to get to dataCollection during form filling. 
 
 ~~~js
 $$('list').attachEvent("onAfterSelect", function(id){  data.setCursor(id); }); 
@@ -98,12 +98,12 @@ list.sync(store);
 DataProcessor and server-side integration work the same way with all components yet in case of [datatable](datatable/index.md) extra functionality appears. 
 
 DataConnector allows rendering data from one table into a component (**render_table** method) or displaying data from several tables using custom SQL-query (**render_sql** method). More info about this in the
-[Serverside Integration](desktop/serverside.md) article.  
+[Server-side Integration](desktop/serverside.md) article.  
 
 **Working with Database Tables: ID-to-Text Transformation**
 
 Tables in the database are often connected by ID while on client-side, within the component, we require that text values should be shown. The solution hides in loading data from the needed tables into 
-**different dataCollections** and refer to **datatable colummn configuration** to render the database data. 
+**different dataCollections** and refer to **datatable column configuration** to render the database data. 
 
 First, create several **dataCollections**  and load data from connected database tables. 
 
@@ -113,7 +113,7 @@ Table Rendering
 ~~~js
 var employee = new webix.DataCollection({
 	url:"data/employees.php",
-	save:"connector->data/employees.php" //dataprocessor, short init form
+	save:"connector->data/employees.php" // dataprocessor, short init form
 });
 
 var customers = new webix.DataCollection({
@@ -151,9 +151,9 @@ Then create a datatable and sync it with either fo these collections.
 $$("dash-ord-active").sync(orders);
 ~~~
 
-This will be the main datasource for the component. As far as in the **"orders" table contains just IDs** of dedicated customers and orders, they **should be transformed into text** while rendering to datatable .
+This will be the main data source for the component. As far as in the **"orders" table contains just IDs** of dedicated customers and orders, they **should be transformed into text** while rendering to datatable .
 
-For these needs there's a **collection** property in datatable column API to point to a datasource different from that of the whole component. 
+For these needs there's a **collection** property in datatable column API to point to a data source different from that of the whole component. 
 
 ~~~js
 { view:"datatable", id:"dash-ord-active", 
@@ -170,6 +170,6 @@ For these needs there's a **collection** property in datatable column API to poi
 
 ~~~
 
-Two columns for the datatble are fed directly from **employee** and **customers** collection where they get text values instead of ID-s. 
+Two columns for the datatable are fed directly from **employee** and **customers** collection where they get text values instead of ID-s. 
 
 Datatable column configuration is described in [related datatable documentation](datatable/columns_configuration.md). 

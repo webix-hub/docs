@@ -32,7 +32,7 @@ The connector should be set as data **url** for a component.
   datatype: "xml"
 }
 ~~~
-Data Connector enables only **server->client interaction**, it's the component's datasource. Used alone, it doesn't push client-side changes back to the database, which is the responsibility of **DataProcessor**. 
+Data Connector enables only **server->client interaction**, it's the component's data source. Used alone, it doesn't push client-side changes back to the database, which is the responsibility of **DataProcessor**. 
 
 ##DataProcessor Initialization
 
@@ -47,7 +47,7 @@ var dp = new webix.DataProcessor({
 });
 ~~~
 
-Very often DataProcessor gets the same **url** that is specified as component datasource. At the same time, it can be your own piece of code if you want your own custom logic. 
+Very often DataProcessor gets the same **url** that is specified as component data source. At the same time, it can be your own piece of code if you want your own custom logic. 
 
 DataProcessor will automatically "translate" all your actions to the server: when you add a record to the list, the new record will appear in the database table, etc. 
 
@@ -56,7 +56,7 @@ DataProcessor will automatically "translate" all your actions to the server: whe
 At last, let's make a step up and **simplify form update**. On previous step we used an *"onAfterSelect"* event to transmit list data into the form and a complicated *"update_row"* function to push edited data back to list. 
 It was for the sake of learning. 
 
-At the same time, Webix library has powerful [Binding API](desktop/data_binding.md) to enable data synchronization between components. **Bind()** function is used to make one component a datasource for another one on selection basis.
+At the same time, Webix library has powerful [Binding API](desktop/data_binding.md) to enable data synchronization between components. **Bind()** function is used to make one component a data source for another one on selection basis.
 
 The **update();** function is no longer needed as well since from now on we apply **save();** method to the form to push changes back to the list and the database. 
 

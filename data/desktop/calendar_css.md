@@ -16,7 +16,7 @@ Calendar CSS
 		<th colspan="2" class="col0 centeralign"><strong>Calendar CSS</strong> </th>
 	</tr>
     <tr class="row02">
-		<th class="col0 centeralign">  css class  </th><th class="col1 centeralign">  element  </th>
+		<th class="col0 centeralign">  CSS class  </th><th class="col1 centeralign">  element  </th>
 	</tr>
 	<tr class="row1">
 		<td class="col0 leftalign"><strong>.webix_cal_month</strong>  </td><td class="col1"> the 'month' section of the calendar </td>

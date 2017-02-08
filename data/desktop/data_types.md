@@ -3,11 +3,10 @@ Supported Data Types
 
 The majority of data-presenting components take data in <acronym title="Extensible Markup Language">XML</acronym>, 
 <acronym title="JavaScript Object Notation">JSON</acronym>, JSArray and <acronym title="Comma-Separated Values">CSV</acronym> formats. Still, three of 
-them, namely [grouplist](desktop/grouplist.md), [treetable](desktop/treetable.md) and datatree/index.md support only XML and JSON datatypes since only they can show hierachy which is a key feature of these 
-components. 
+them, namely [GroupList](desktop/grouplist.md), [TreeTable](desktop/treetable.md) and datatree/index.md support only XML and JSON data types since only they can show hierarchy which is a key feature of these components. 
 
 - **Data sources** and **loading methods** are described in [Data Loading](desktop/data_loading.md) section.
-- **Data Drivers** that with processing lofic for each format are descriped in [Data Drivers](helpers/data_drivers.md);
+- **Data Drivers** that with processing logic for each format are described in [Data Drivers](helpers/data_drivers.md);
 - **Customization of Data Types** by changing default Driver behavior - [Customizing Data Types](desktop/custom_data_types.md).  
 
 All in all, Webix supports the following data types: 
@@ -97,19 +96,19 @@ Derek, New-York, 23
 Samuel, Oregon, 32
 ~~~
 
-By default line anf field **delimiters** are "\n"(new line) and ","(comma) respectively. 
+By default line and field **delimiters** are "\n"(new line) and ","(comma) respectively. 
 
 To change the logic of CSV parsing for the application components, look up the [related article](desktop/custom_data_types.md#customizingcsvparsinglogic).
 
 ###Excel
 
-Excel datatype presents a set of parsing rules for Excel files loaded as binary data: 
+Excel data type presents a set of parsing rules for Excel files loaded as binary data: 
 
 ~~~js
 { view:"list", url:"binary->files/data.xlsx", datatype:"excel"}
 ~~~
 
-Excel data will be parsed into a simple JS array (as with "jsarray" datatype).
+Excel data will be parsed into a simple JS array (as with "jsarray" data type).
 
 ~~~js
 [

@@ -2,7 +2,7 @@ Changing View Visibility
 =====================
 
 {{note
-From the very beginning it should be said that **Webix views can't be hidden** and **shown back** with Angular **ngShow** and **ngHide** directives that can still be used to manupulate visibility of pure HTML elements.
+From the very beginning it should be said that **Webix views can't be hidden** and **shown back** with Angular **ngShow** and **ngHide** directives that can still be used to manipulate visibility of pure HTML elements.
 }}
 
 Let's remind us what are **Webix views**. They are created with the help of **webix.ui()** constructor that is called by **webix-ui** directive. 

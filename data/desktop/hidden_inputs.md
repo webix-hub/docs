@@ -4,7 +4,7 @@ Hidden Input Fields
 Hidden input fields are often included into the form to **set default values** into them, the values that are not visible to users yet required for required to be sent to server 
 They are used for saving state in multi-page forms, collecting cookies or just storing data apart from the filled in.
 
-Within HTML developers make use of the hidden property on the INPUT tag, yet the library offers to omit the unnesessary actions and manipulate just with data. 
+Within HTML developers make use of the hidden property on the INPUT tag, yet the library offers to omit the unnecessary actions and manipulate just with data. 
 
 {{note
 In fact, you needn't create any hidden text fields. Because all you need is their **values**.
@@ -24,7 +24,7 @@ webix.ui({
 
 These are visible input fields for users to fill in. 
 
-Then, set values for invisible inputs without initializing them. They are automtically created with your values set: 
+Then, set values for invisible inputs without initializing them. They are automatically created with your values set: 
 
 ~~~js
 $$('my_form').setValues(

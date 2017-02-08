@@ -50,13 +50,14 @@ webix.ui({
 - **multiple** (boolean) - *true* by default. Set to *false*, it enables removing the previously added file and replacing it with a new one so that you can upload only one file at a time;
 - **autosend** (boolean) - *true* by default. Set to *false*, it cancels on-the-go file processing. The files are added to the uploader body only. They can be sent to server by calling the 
 [send()](api/ui.uploader_send.md) method later on;
-- **datatype** (string) - [type](desktop/data_types.md) of serverside response. Optional, *json* by default.
+- **datatype** (string) - [type](desktop/data_types.md) of server-side response. Optional, *json* by default.
 
 Read more about **[uploader configuration](desktop/configuring_uploader.md)** and **[server script](desktop/uploader_serverside.md)**. 
 
 ##Uploader Display Modes
 
-The library offers Webix [list](desktop/list.md) as default component to show properties of uploaded files. You can as well init any Webix component for these needs provided that you specify an appropriate **template** for it.
+The library offers Webix [list](desktop/list.md) as default component to show properties of uploaded files. 
+You can as well initialize any Webix component for these needs provided that you specify an appropriate **template** for it.
 
 ###List Uploader
 
@@ -117,8 +118,8 @@ The line returns an object with uploaded data items (files). Each file item cont
 - **status** - upload status that changes during uploading:
 	- *"client"* - file is added to the uploader body on client-side, the uploading hasn't been started yet or was aborted by user;
     - *"transfer"* - file uploading is in progress;
-    - *"server"* - file has benn successfully uploaded;
-    - *"error"* - an error occured during uploading.
+    - *"server"* - file has been successfully uploaded;
+    - *"error"* - an error occurred during uploading.
 - **item(*id*).context** - the object uploader is connected with.  
 
 {{note
@@ -184,7 +185,7 @@ webix.ui({
 
 ###Treating File Items in a Cycle
 
-Cancelling uploading of several files at once:
+Canceling uploading of several files at once:
 
 ~~~js
 function cancel(){

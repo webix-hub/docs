@@ -13,7 +13,7 @@ In addition there are [global](http://docs.webix.com/desktop__event_handling.htm
 Touch events are controlled by [Webix Touch module](api/refs/touch.md) where configuration for different aspects of touch behavior such as 
 **touch speed**, **touch** and **scroll** delay can be changed.
 
-Also the module allows for **disabling Webix touch events** in favour of native ones in either of the two ways:
+Also the module allows for **disabling Webix touch events** in favor of native ones in either of the two ways:
 
  - [total disabling of Webix touch support](api/touch_disable.md) - neither global events nor component-specific events fire;
  - [limiting Webix touch support](api/touch_limit.md) - only in-component events work, global ones are disabled.

@@ -118,11 +118,11 @@ webix.ui({
 The **type** function takes item object as parameter, so all its properties are accessible in it. 
 
 {{note
-[Datatable](datatable/index.md) and [treetable](desktop/treetable.md) already feature some common elements out of the box. 
+[DataTable](datatable/index.md) and [TreeTable](desktop/treetable.md) already feature some common elements out of the box. 
 }}
 
-- [Datatable built-in type templates](datatable/templates.md#builtintemplates);
-- [Treetable biult-in type templates](datatree/node_templates.md#predefinedtemplates).
+- [DataTable built-in type templates](datatable/templates.md#builtintemplates);
+- [TreeTable built-in type templates](datatree/node_templates.md#predefinedtemplates).
 
 ##Redefining default template elements
 

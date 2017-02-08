@@ -3,7 +3,7 @@ Data Binding and Syncing
 
 When you have multiple related views (components) on the page you can **bind** them together or **sync** their data in order that any changes in one of the views would 
 trigger changes in the bound/synced ones. The main component is called a **master** one while the bound one is a **slave**. Master view
-appears to be the datasource for the slave one. 
+appears to be the data source for the slave one. 
 
 There are 2 main ways to link data:
 
@@ -17,7 +17,7 @@ In both cases, based on configuration
 
 ####Binding and Syncing - Difference
 
-When you **bind** data to any component it means that when you **select** an item from one component, this item will be the datasource for another component.
+When you **bind** data to any component it means that when you **select** an item from one component, this item will be the data source for another component.
 Most typically, binding is used with some data-presenting component and a [form](desktop/form.md) / [htmlform](desktop/htmlform.md). 
 
 When you **sync** data, it means that the whole visible data from one component is at once **copied** to the other. 
@@ -98,7 +98,7 @@ same change in the slave one.
 There can be more than one slave component. In this case, all slaves change simultaneously on master component change. 
 
 {{note
-Note that this functionality works with components datastores, that's why **data** property is used everywhere.
+Note that this functionality works with components data stores, that's why **data** property is used everywhere.
 }}
 
 ####Full Syncing: 
@@ -133,7 +133,7 @@ $$('dview2').data.unsync();
 
 ##Simultaneous Operations within Synced Components
 
-In case of two and more component synced to one datasource (either a visible component or [non-visible dataCollection](desktop/nonui_objects.md)), it seems nice to **synchronize user operations** as well. 
+In case of two and more component synced to one data source (either a visible component or [non-visible dataCollection](desktop/nonui_objects.md)), it seems nice to **synchronize user operations** as well. 
 
 For instance, if an item is selected in one of components, the same item should be selected in the synced one. This is easily done using API. 
 

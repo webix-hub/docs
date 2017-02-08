@@ -15,17 +15,17 @@ Select is a control that allows selection from several items. It is based on HTM
 ##Initialization
 
 ~~~js
-//full form
+// full form
 {view:"select", label:"Branch", value:1, options:[
 	{id:1, value:"Master" }, // the initially selected value
 	{id:2, value:"Release" }
   ], labelAlign:"right" 
 }
 
-//short form 
+// short form 
 { view:"select", options:["Master", "Release"]}
 
-//serversive options
+// server-side options
 { view:"select", options:"server/data.json"}
 ~~~
 

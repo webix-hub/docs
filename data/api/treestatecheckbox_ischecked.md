@@ -8,10 +8,10 @@ isChecked
 - id 	id 		ID of the node in question
 
 @returns:
-- true 	boolean 	*true* if the node is checked; *false* if not	
+- true 		boolean 	true, if the node is checked, false otherwise	
 
 @example:
-tree.isChecked('part1');
+var isChecked = tree.isChecked('part1');
 
 @template:	api_method
 @related:

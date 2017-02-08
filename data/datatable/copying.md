@@ -1,5 +1,6 @@
 Copy-Pasting DataTable Data
 ==========================
+
 To enable the possibility to copy/paste DataTable data by the CTRL+C/CTRL+V keyboard shortcuts you should 
 use parameter api/link/ui.datatable_clipboard_config.md.
 
@@ -17,9 +18,9 @@ Setting the desired behavior of copying
 
 ~~~js
 grid = new webix.ui({
-		view:"datatable",
-		...
-		clipboard:"selection",
+	view:"datatable",
+	...
+	clipboard:"selection",
 });
 ~~~
 {{sample 15_datatable/06_clipboard/05_two_grids.html }}

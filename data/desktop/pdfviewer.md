@@ -44,8 +44,8 @@ Configuration parameters are:
 	 - **id** - (string) the id of the PDF toolbar;
 - viewer:
 	- **id** (string) - the id of the viewer;
-	- **toolbar** (string) - the id of the related pdf toolbar;
-	- **url** (string) - the url of the pdf file to browse in the viewer prefixed by "binary" keyword that refers to the [loading proxy](desktop/server_proxy.md).
+	- **toolbar** (string) - the id of the related PDF toolbar;
+	- **url** (string) - the URL of the PDF file to browse in the viewer prefixed by "binary" keyword that refers to the [loading proxy](desktop/server_proxy.md).
     
 PDFbar structure   
 ----------------

@@ -6,12 +6,16 @@
 @example:
 webix.ui({
 	view:"tabbar", 
-    id:'tabbar', 
-    value: 'listView', // the initially selected tab
+    id:"tabbar", 
+    value:"listView", // the initially selected tab
     multiview:true, 
     options: [
-    	{ value: 'List', id: 'listView'},
-        { value: 'Form', id: 'formView'},
-        { value: 'Empty', id: 'emptyView'}
+    	{"id":"listView", "value":"List"},
+        {"id":"formView", "value":"Form"},
+        {"id":"emptyView", "value":"Empty"}
     ]
 });
+
+@relatedsample:
+
+13_form/01_controls/08_tabbar.html

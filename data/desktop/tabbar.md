@@ -115,7 +115,7 @@ Icons are defined through additional HTML provided within the tab **value**:
 
 {{sample 20_multiview/05_tabbar_with_icons.html}}
 
-More about different types of defining icons in Webix you can learn in the desktop/icon_types.md article.
+You can learn more about different types of defining icons in Webix in the desktop/icon_types.md article.
 
 ##Advanced Tabbar Usage
 

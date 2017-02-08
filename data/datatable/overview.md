@@ -33,12 +33,12 @@ Main features
 <dd>Each column in DataTable is configured individually: width, height, color etc.</dd>
 <br>
 <dt><a href="datatable/headers_footers.md">8. Complex headers and footers</a></dt>
-<dd>The header(footer) can be presented as a single or multi line (the number of sublevels is unlimited) and contain almost any content: text, an image, an html input, a link, a built-in filter, colspans, rowspans.</dd>
+<dd>The header(footer) can be presented as a single or multi line (the number of sub-levels is unlimited) and contain almost any content: text, an image, an html input, a link, a built-in filter, colspans, rowspans.</dd>
 <br>
 <dt><a href="datatable/selection.md">9. Different selection modes</a></dt>
 <dd>You can set 7 different modes specifying how data will be selected by:  cell, row, column, multi cell, multi row, multi column, block.</dd>
 <br>
-<dt><a href="datatable/styling.md">10. Styling with standard css</a></dt>
+<dt><a href="datatable/styling.md">10. Styling with standard CSS</a></dt>
 <dd>You can use CSS in conjunction with DataTable content to achieve the desired look-and-feel. CSS can be applied to the whole table or to a specific column, row, cell.</dd>
 <br>
 <dt><a href="datatable/sizing.md#resizing">11. Resizable columns and rows </a></dt>

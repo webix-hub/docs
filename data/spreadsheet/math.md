@@ -1,7 +1,7 @@
 Math Operations in SpreadSheet
 ==============================
 
-SpreadSheet allows working with simple mathematical operations as well as with formulas. 
+SpreadSheet allows working with simple mathematical operators and with built-in functions as well as combining them in more complex formulas.
 The component calculates them and displays the result in the related cells.
 
 To start working with data as mathematical expressions, you should set the api/ui.spreadsheet_math_config.md parameter to *true*. By default, it's disabled.
@@ -52,7 +52,7 @@ The syntax of mathematical expressions is the same as that of Excel.
 - basic mathematical operators, which are: +, -, /, *
 - numbers
 - cell references
-- Excel-like functions
+- [Excel-like functions](spreadsheet/math.md#builtinfunctions)
 
 ~~~js
 "data": [
@@ -82,20 +82,21 @@ There are two variants of recording a function, depending on which you can get d
 ]
 ~~~
 
-Formulas
+Built-in Functions
 ---------
 
-SpreadSheet can work with the Excel formulas. Below you'll find the full list of formulas with detailed descriptions.
+SpreadSheet can work with the Excel functions. Below you'll find the full list of functions with detailed descriptions.
 
 - **SUM** - adds values; 
  - empty cells, logical values like TRUE, or text are ignored.
 - **AVERAGE** - returns the average (arithmetic mean) of the arguments;
  - if a range or a cell reference argument contains text, logical values, or empty cells, those values are ignored; 
 however, cells with the value zero are included.
+- **CONCATENATE** - joins values from a range of cells into a string.
 - **COUNT** -  counts the number of cells that contain numbers, and counts numbers within the list of arguments;
  - empty cells, logical values, text, or error values in the array or reference are not counted.
 - **COUNTA** - counts the number of cells that are not empty in a range, zero is excluded.
-- **COUNTBLANK** - сounts empty cells in a specified range of cells;
+- **COUNTBLANK** - counts empty cells in a specified range of cells;
  -  cells with zero values are not counted.
 - **MAX** - returns the largest value in a set of values;
  - empty cells, logical values, or text in the array or reference are ignored.
@@ -141,8 +142,8 @@ Formula Editor
 
 Spreadsheet possesses an advanced formula editor. Its main features are:
 
-- providing the list of possible formulas on entering the first letter of the formula name in the input; 
-- entering formula operands either by selecting a range of cells or by typing the cell reference.
+- providing the list of possible functions on entering the first letter of the function name in the input; 
+- entering formula operands either by selecting a range of cells or by typing in the cell reference.
 
 
 <img src="spreadsheet/formula_editor.png">

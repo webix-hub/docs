@@ -6,14 +6,14 @@ getChecked
 
 
 @returns:
--items	array	an array of ids 	
+- items		array		an array of ids 	
 
 @example:
-tree = new webix.ui({
-        view:"tree",
-        ...
-})
-tree.getChecked();
+var tree = webix.ui({
+	view:"tree",
+  	...
+});
+var checked = tree.getChecked();
 
 @template:	api_method
 @related:

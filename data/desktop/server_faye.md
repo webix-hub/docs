@@ -1,4 +1,4 @@
-Websockets (Faye)
+WebSockets (Faye)
 =================
 
 Faye [proxy object](desktop/server_proxy.md) is used to ensure **live data update** on all the clients currently using the application with this feature. 
@@ -15,11 +15,11 @@ Proxy object is defined within the component constructor with the help of [url](
 	url: "faye->/data", 
     save: "faye->/data"
 }
-//or, to load data after component init
+//or, to load data after component initialization
 $$("chat").load("faye->/data");
 ~~~
 
-- **Url** property, as well as [load](api/link/datacollection_load.md) method is used to define datasource for the component. Here it includes **proxy name** (faye) and **storage name** on your faye server (any);
+- **Url** property, as well as [load](api/link/datacollection_load.md) method is used to define data source for the component. Here it includes **proxy name** (Faye) and **storage name** on your Faye server (any);
 - **Save** property enables data saving to the chosen storage. On page refresh up-to-date data is loaded into the component.
 
 Storage name must contain **slash** at the beginning.

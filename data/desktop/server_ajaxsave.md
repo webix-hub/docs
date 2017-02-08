@@ -34,7 +34,7 @@ webix.ajax().post("data/load.php?id=1&action=update", {prop1:value1, prop2:value
 });
 ~~~
 
-There you'll have in serverside script:
+There you'll have in server-side script:
 
 ~~~php
 $id = $_GET['id'];

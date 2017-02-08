@@ -42,8 +42,8 @@ Files are send later when [send()](api/ui.uploader_send.md) function is called f
 
 The benefit of manual sending are as follows: 
 
-- you can **vizualize** the **response of uploading script** on client side;
-- you can enable **consecutive saving** of **uploader** and **form** data if a form contains extra field exept for uploader. 
+- you can **visualize** the **response of uploading script** on client side;
+- you can enable **consecutive saving** of **uploader** and **form** data if a form contains extra field except for uploader. 
 
 ##Defining additional data to send
 

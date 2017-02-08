@@ -7,11 +7,11 @@ getFirstChildId
 - id 	id 		the parent (branch) id
 
 @returns:
--id		string 	returns the id of the first child of the specified branch. If there are not any, returns <i>null</i>
+- id		string 		the id of the first child of the specified branch. If there aren't any, returns <i>null</i>
 
 @example:
-tree.data.getFirstChildId(tree.getSelectedId()); 
-	//returns the ID of the first child of selected item
+var firstChild = tree.data.getFirstChildId(tree.getSelectedId()); 
+// returns the ID of the first child of selected item
     
 @template:	api_method
 @related:

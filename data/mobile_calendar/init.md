@@ -66,7 +66,7 @@ scheduler.config.multi_day = true;
 scheduler.config.multi_day_limit = 4;
 ~~~
 
-- **scheduler.config.server_utc** - (boolean) enables converting server-side dates from utc to a local time zone (and backward) while sending data to the server (false by default)
+- **scheduler.config.server_utc** - (boolean) enables converting server-side dates from UTC to a local time zone (and backward) while sending data to the server (false by default)
 
 ~~~js
 scheduler.config.server_utc = true;

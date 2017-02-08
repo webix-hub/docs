@@ -2,11 +2,10 @@ close
 =============
 
 
-
 @short: closes the branch with the specified id
 	
 @params:
--id	id	the node id
+- id		id		the node id
 
 @example:
 tree = new webix.ui({

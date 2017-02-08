@@ -1,7 +1,7 @@
 Backbone Views
 ===============
 
-{{note This feature is fully optional, you can safely init Webix in any HTML container, so normal Backbone views will work fine enough.  }}
+{{note This feature is fully optional, you can safely initialize Webix in any HTML container, so normal Backbone views will work fine enough.  }}
 
 
 ### Creating View
@@ -34,7 +34,7 @@ myview.render();
 
 ###Isolating Views
 
-It's a good practive to **isolate** backbone views that are comprised of several Webix views so that you can use same IDs in another Backbone view on the page:
+It's a good practice to **isolate** backbone views that are comprised of several Webix views so that you can use same IDs in another Backbone view on the page:
 
 ~~~js
 var ui_config={

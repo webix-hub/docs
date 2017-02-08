@@ -1,11 +1,11 @@
-Unitlist CSS
+UnitList CSS
 =============
 
 <img src="image_maps/unitlist_css.png"/>
 
 <table class="inline">
 	<tr class="row0">
-		<th class="col0 centeralign">  css class  </th><th class="col1 centeralign">  Element  </th>
+		<th class="col0 centeralign">  CSS class  </th><th class="col1 centeralign">  Element  </th>
 	</tr>
 	<tr class="row1">
 		<td class="col0 leftalign"><strong>.webix_list_item</strong>  </td><td class="col1"> an item of the list </td>
@@ -16,4 +16,4 @@ Unitlist CSS
 </table>
 
 
-Read more about [Unitlist](desktop/unitlist.md)
+Read more about [UnitList](desktop/unitlist.md)

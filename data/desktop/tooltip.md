@@ -9,7 +9,7 @@ resemble onMouseOver/onMouseOut events? Still, event handling is quite [another 
 
 <img src="desktop/tooltip.png"/>
 
-Here, you don't need any specific code to make it work. You should just include a tooltip into the necessary component and specify the info to be shown inside a tooltip area. 
+Here, you don't need any specific code to make it work. You should just include a Tooltip into the necessary component and specify the info to be shown inside the Tooltip area. 
 
 Tooltip may include text as well as items from the dataset. 
 
@@ -26,7 +26,7 @@ webix.ui({
 
 {{sample 06_dataview/02_templates/06_tooltip.html }}
 
-By default, tooltip is placed on the same level with the mouse pointer, 20 px to the right from it. 
+By default, Tooltip is placed on the same level with the mouse pointer, 20 px to the right from it. 
 
 To change this pattern, specify the coordinates relative to the mouse pointer as values of **dx** and **dy** properties. 
 
@@ -41,14 +41,14 @@ tooltip:{
 
 There is also the desktop/tooltip_component.md view for which you can specify custom positioning.
 
-##Datatable Tooltip
+##DataTable Tooltip
 
-Datatable tooltip is defined in quite another way. Several steps are possible: 
+DataTable Tooltip is defined in quite another way. Several steps are possible: 
 
-- Setting **tooltip:true** for the whole component. It enables tooltip functionality for the grid and shows tooltip for each column showing the row value that stands as ID for this column.
+- Setting **tooltip:true** for the whole component. It enables Tooltip functionality for the grid and shows Tooltip for each column showing the row value that stands as ID for this column.
 
 {{snippet
-General datatable tooltip
+General DataTable Tooltip
 }}
 ~~~js
 webix.ui({
@@ -63,10 +63,10 @@ webix.ui({
         {id:2, name:"Tom", age:27}
     ]
 });
-//the tooltip for the first column of the first row is "Ann"
+// the tooltip for the first column of the first row is "Ann"
 ~~~
 
-- **Customizing** tooltip data for each column. Tooltip should be switched on for the whole grid:
+- **Customizing** Tooltip data for each column. Tooltip should be switched on for the whole grid:
 
 ~~~js
 webix.ui({
@@ -81,10 +81,10 @@ webix.ui({
         {id:2, name:"Tom", age:27}
     ]
 });
-//tooltip for the first column of the first row is "My name is Ann. I'm 25."
+// tooltip for the first column of the first row is "My name is Ann. I'm 25."
 ~~~
 
-- Setting tooltip for datatable **header**. Tooltip should be switched on for the whole grid:
+- Setting Tooltip for DataTable **header**. Tooltip should be switched on for the whole grid:
 
 ~~~js
 webix.ui({
@@ -95,13 +95,13 @@ webix.ui({
         {id:"age", header:"Age"}
     ]
 });
-//tooltip for the Name column is "My tooltip text"
+// Tooltip for the Name column is "My tooltip text"
 ~~~
 
 
-### Advanced tooltip configuration
+### Advanced Tooltip configuration
 
-Instead of defining tooltip for each column separately, you can define tooltip once for all columns
+Instead of defining Tooltip for each column separately, you can define Tooltip once for all columns
 
 
 ~~~
@@ -109,7 +109,7 @@ webix.ui({
     view:"datatable",
     tooltip:function(obj, common){
         //obj - row object
-        //common.column - configuraton of related column
+        //common.column - configuration of related column
 
         return "<i>"+obj[common.column.id]+"</i>";
     },

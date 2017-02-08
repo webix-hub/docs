@@ -8,7 +8,7 @@ Settings for Radar Chart
 ###Data Presentation
 
 - **value** (template) - item template from the dataset;
-- **data / url** - datasource;
+- **data / url** - data source;
 - **item** - object property that contains settings for radar points. If you don't want to set point, omit this setting.
     - **borderColor** (hex code) - border color of the point;
     - **radius** (number) - radius on the point in the chart;

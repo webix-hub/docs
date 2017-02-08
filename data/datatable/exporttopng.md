@@ -5,7 +5,7 @@ To export data from datatable or treetable into a PNG file, you need to call the
 The method takes the following parameters:
 
 - **id** - (string) the id of the exported view
-- **name** - (string) optional, the name of the created png file
+- **name** - (string) optional, the name of the created PNG file
 
 For example, if you want to export a datatable to a PNG file, you need to initialize a datatable:
 

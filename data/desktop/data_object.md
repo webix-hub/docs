@@ -3,8 +3,8 @@ Data Object Operations
  
 Every UI component features inner storage for [loaded](desktop/data_loading.md) data:
 
-- [DataStore](api/refs/datastore.md) - non-hierarchical (inline) store  for [list](desktop/list.md), [dataview](desktop/dataview.md), [datatable](datatable/index.md), [chart](desktop/chart.md);
-- [Treestore](api/refs/treestore.md) - hierarchical store for [tree](datatree/index.md), [treetable](desktop/treetable.md) and [grouplist](desktop/grouplist.md) provided that they are loaded with **hierarchical** XML or JSON. 
+- [DataStore](api/refs/datastore.md) - non-hierarchical (inline) store  for [List](desktop/list.md), [DataView](desktop/dataview.md), [DataTable](datatable/index.md), [Chart](desktop/chart.md);
+- [TreeStore](api/refs/treestore.md) - hierarchical store for [Tree](datatree/index.md), [TreeTable](desktop/treetable.md) and [GroupList](desktop/grouplist.md) provided that they are loaded with **hierarchical** XML or JSON. 
 
 Both of the stores feature common methods, properties and events to work with data items on client side while TreeStore offers extended API for treating data items observing hierarchy. 
 
@@ -238,7 +238,7 @@ Manipulations with items in the data set
 	</tr>
     <tr>
 		<td style="text-align:left;"><a href="api/treestore_eachsubitem.md">data.eachSubItem(id)</a></td>
-		<td>returns the hash of all subitems (regardless of level) of the specified item in the hierarchical dataset</td>
+		<td>returns the hash of all sub-items (regardless of level) of the specified item in the hierarchical dataset</td>
 	</tr>
     <tr>
 		<td style="text-align:left;"><a href="api/treestore_eachopen.md">data.eachOpen()</a></td>

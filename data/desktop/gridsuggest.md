@@ -1,4 +1,4 @@
-Grid Suggest
+GridSuggest
 ========================
 
 {{pronote
@@ -8,11 +8,11 @@ The functionality is a feature of **Webix Pro** edition.
 The extension is based on Webix [suggest list](desktop/suggest.md). It redefines the **default dropdown menu** for desktop/richselect.md, desktop/multiselect.md,
 desktop/combo.md, desktop/multicombo.md controls as well as similar [editors](desktop/editing.md#editortypes).
 
-Gridsuggest extension makes it possible to use Webix [datatable](datatable/index.md) in a dropdown menu while by default Webix [list](desktop/list.md) is used. 
+GridSuggest extension makes it possible to use Webix [datatable](datatable/index.md) in a dropdown menu while by default Webix [list](desktop/list.md) is used. 
 
-##Using Gridsuggest for Form Controls
+##Using GridSuggest for Form Controls
 
-Gridsuggest can be used with select controls.
+GridSuggest can be used with select controls.
 
 <img src="desktop/gridsuggest.png"/>
 
@@ -28,7 +28,7 @@ By default combo and richselect are initialized with the following constructor:
 }
 ~~~
 
-With gridsuggest extension you get the possibility to define view used for a dropdown menu as well as set its configuration, both for combo and richselect.
+With GridSuggest extension you get the possibility to define view used for a dropdown menu as well as set its configuration, both for combo and richselect.
 
 ~~~js
 { view:"richselect", value:1, options:{
@@ -97,9 +97,9 @@ Preset Columns
 }}
 ~~~
 
-##Using Gridsuggest as Editor
+##Using GridSuggest as Editor
 
-Gridsuggest can be used as a component editor as part of **combo** or **richselect** [editor](desktop/editing.md#editortypes). 
+GridSuggest can be used as a component editor as part of **combo** or **richselect** [editor](desktop/editing.md#editortypes). 
 
 <img src="desktop/gridsuggest_editor.png">
 
@@ -140,7 +140,7 @@ Then, this popup should be attached to the column in question with the help of i
 
 ##Enabling scrolling
 
-In order to enable scrolling functionality in a gridsuggest extension, you should make 2 steps:
+In order to enable scrolling functionality in a GridSuggest extension, you should make 2 steps:
 
 1. Set the scroll property to true
 2. Disable the autoheight parameter

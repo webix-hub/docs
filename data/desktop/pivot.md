@@ -15,7 +15,7 @@ API Reference
 Overview
 ----------
 
-**Webix Pivot** is a fully client-side Javascript datatable with **extended filtering capabilities** to allow for **well-organized visual reports** made over large and complex datasets at a high speed.
+**Webix Pivot** is a fully client-side JavaScript datatable with **extended filtering capabilities** to allow for **well-organized visual reports** made over large and complex datasets at a high speed.
 With Pivot you can easily compare, filter and sort data within one table as well as change the analysis pattern on the flow. 
 
 <br>

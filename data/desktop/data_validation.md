@@ -1,9 +1,9 @@
 Data Validation
 =============
 
-All the data from input fields must be validated before being sent to server. Data validation is implemented with [dataprocessor](desktop/dataprocessor.md), 
-[htmlform](desktop/htmlform.md) and [form](desktop/form.md) as well as with all the data management componens ([datatable](datatable/index.md), [dataview](desktop/dataview.md), [tree](datatree/index.md), 
-[treetable](desktop/treetable.md), [list](desktop/list.md)). 
+All the data from input fields must be validated before being sent to server. Data validation is implemented with [DataProcessor](desktop/dataprocessor.md), 
+[HTMLForm](desktop/htmlform.md) and [Form](desktop/form.md) as well as with all the data management components ([DataTable](datatable/index.md), [DataView](desktop/dataview.md),
+[Tree](datatree/index.md), [TreeTable](desktop/treetable.md), [List](desktop/list.md)). 
 
 Data validation is activated: 
 
@@ -12,7 +12,7 @@ Data validation is activated:
     - on any **inner event** (*onChange* for form, *onAfterEditStop* for data component);
 - With the **DataProcessor** object data is validated each time you save it to server. If validation fails, data isn't sent to server;
 - With **data components** data is validated each time changes are made - [editing](desktop/edit.md), [adding](desktop/add_delete.md) and [updating](desktop/update.md) (the moment *add()* and *update()* methods are called);
-- By means of on-the-go [HTML5 validation](#html5) that works for form and htmlform.
+- By means of on-the-go [HTML5 validation](#html5) that works for Form and HTMLForm.
 
 {{note
 While the first three are features of this library and work in conjunction with [validation rules](#rules), the latter is a built-in HTML5 feature. 
@@ -22,7 +22,7 @@ While the first three are features of this library and work in conjunction with 
 
 Data validation can be triggered on any event of any form element and validate any number of controls as well as the whole form:
 
-Normally, form and htmlform, data validation is bound to a **submit** [button](desktop/button.md) with the help of **click** [event handler](desktop/event_handling.md):
+Normally, form and HTMLForm, data validation is bound to a **submit** [button](desktop/button.md) with the help of **click** [event handler](desktop/event_handling.md):
 
 ~~~js
 { view:"button", value: "Submit", click:function(){
@@ -424,8 +424,8 @@ webix.ui({
 	view:"form",
 	rules:{
 		$obj:function(){
-			var data = this.getValues(); //!getting data object
-			if (!webix.rules.isEmail( data.email ))  //ckecking email
+			var data = this.getValues(); // !getting data object
+			if (!webix.rules.isEmail( data.email ))  // checking email
             	return false;
 		if (data.name == "") //checking name
         	return false;
@@ -449,7 +449,7 @@ By default hidden and disabled fields are not validated.
 If you want to include them into a validation process, you need to provide validation mode: 
 
 ~~~js
-//hidden fileds will be validated
+//hidden fields will be validated
 $$("$form1").validate({hidden:true});
 
 //both hidden and disabled fields will be validated
@@ -546,15 +546,15 @@ More information about text editors you can find in the [dedicated article](desk
 
 ##HTML5 Data Validation {#html5}
 
-Here we speak about clientside, in-browser data validation powered by HTML5 means. 
+Here we speak about client side, in-browser data validation powered by HTML5 means. 
 
 In HTML5 layout input tags come in a plenty of types and feature a number of attributes that define validation pattern. 
 
-Input types conside with a **type** property of the view **text** while other input attributes are listed within the **attributes** object property: 
+Input types coincide with the **type** property of the view **text** while other input attributes are listed within the **attributes** object property: 
 
 <table>
     <tr class="row0">
-        <th class="col0 centeralign">  HTML  </th><th class="col1 centeralign">  Javascript  </th>
+        <th class="col0 centeralign">  HTML  </th><th class="col1 centeralign">  JavaScript  </th>
     </tr>
     <tr class="row1">
         <td class="col0 leftalign">  

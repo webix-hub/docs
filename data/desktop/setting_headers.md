@@ -18,7 +18,7 @@ Depending on the context, header is defined in two ways:
 
 This way of header initialization is used within layout rows and columns. Here header is just one of [template](desktop/template.md) types. 
 
-If you want to make a header for, say, dataview, make two rows and place header in the first row while the dataview should be in the second one.  
+If you want to make a header for, say, DataView, make two rows and place header in the first row while the DataView should be in the second one.  
 
 {{snippet
 Type:"header"
@@ -57,7 +57,7 @@ During header initialization the **view:template** line is optional.
 Still, some components have built-in means of header building. 
 
 - [Accordion Items](desktop/accordionitem.md)
-- [Tabview Tabs](desktop/tabview.md)
+- [TabView Tabs](desktop/tabview.md)
 - [Property Sheet](desktop/property_sheet.md)
 
 **Accordion item** is divided into **body** and **header**
@@ -66,7 +66,7 @@ Still, some components have built-in means of header building.
 { view:"accordionitem", header:"Pane ", body:"text' }
 ~~~
 
-Headers of **tabview tabs** are defined as header properties of tabview **cells**:
+Headers of **TabView tabs** are defined as header properties of TabView **cells**:
 
 ~~~js
 { view:"tabview", 

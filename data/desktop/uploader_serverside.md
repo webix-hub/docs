@@ -16,7 +16,7 @@ The custom script you write yourself on your favorite language, not just PHP. Re
 
 Below **PHP solution** is explained: 
 
-Uploader is based on an HTML input, type "file", so files passed to the script will be stored in **$_FILES** array under the uploader **"name"** The properties of an uploaded file can be gotten right here:
+Uploader is based on an HTML input, type "file", so files passed to the script will be stored in **$_FILES** array under the Uploader **"name"** The properties of an uploaded file can be gotten right here:
 
 ~~~php
 $file = $_FILES['uploader']; //getting a file object
@@ -33,7 +33,7 @@ $filename = $destination."/".preg_replace("|[\\\/]|", "", $file["name"]); //set 
 move_uploaded_file($file["tmp_name"], $filename); //move files
 ~~~
 
-##Tuning Serverside Response
+##Tuning Server-side Response
 
 You must also tune the **script response** to notify you about the result of file uploading, otherwise you won't be able to get notification about upload success or failure.
 
@@ -49,7 +49,7 @@ if ( /* conditions */ ){
 
 Why it's done so? Each file object features **status** that changes during uploading: 
 
-- **client** - when the file was just added to uploader and uploading hasn't started yet. Or when uploading was aborted by user;
+- **client** - when the file was just added to Uploader and uploading hasn't started yet. Or when uploading was aborted by user;
 - **transfer** - during uploading until script response;
 - **server** - uploading finished, set when script response is "{status:'server'}";
 - **error** - an error has occurred during uploading, set when script response is {'status':'error'}. 

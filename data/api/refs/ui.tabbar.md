@@ -10,17 +10,14 @@ Items of the component combine icons with text labels. The component can be used
 ### Constructor
 
 ~~~js
-webix.ui({ 
-	rows:[
-    	{view:"tabbar", id:'tabbar', value:'formView', multiview:true, options: [
-      		{ value: 'Form', id: 'formView'},
-      		{ value: 'Empty', id: 'emptyView'}
-    	]},
-    	{
-		  cells:[
-      		 {id:"formView",template:"Form Content"},
-        	 {id:"emptyView", template:"Some content"}
-      	]}
+var tabbar = webix.ui({
+    view:"tabbar", 
+    id:"tabbar", 
+    value:"listView", // the initially selected tab
+    options: [
+        {"id":"listView", "value":"List"},
+        {"id":"formView", "value":"Form"},
+        {"id":"emptyView", "value":"Empty"}
     ]
 });
 ~~~

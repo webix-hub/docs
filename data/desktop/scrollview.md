@@ -8,15 +8,14 @@ ScrollView
 
 ##Overview
 
-Scrollview inherits from [view](desktop/view.md) and makes any of the nested components scrollable, either in horizontal or in vertical mode. It is handy in case of long 
-homogenous data items, like text templates.
+ScrollView inherits from [view](desktop/view.md) and makes any of the nested components scrollable, either in horizontal or in vertical mode. It is handy in case of long homogeneous data items, like text templates.
 
 <img style="display:block; margin-left:auto;margin-right:auto;"  src="desktop/scrollview.png"/>
 
 
 ##Initialization
 
-It's reasonable to use the scrollview just as a scrolling container while text into is stored in HTML.
+It's reasonable to use the ScrollView just as a scrolling container while text into is stored in HTML.
 
 ~~~html
 <div id="mybox1">Some very long article-1</div>
@@ -25,7 +24,7 @@ It's reasonable to use the scrollview just as a scrolling container while text i
 ...
 ~~~
 
-Then you can put these 'long articles' into the scrollview and form a very long list where you can scroll to any article you wish: 
+Then you can put these 'long articles' into the ScrollView and form a very long list where you can scroll to any article you wish: 
 HTML content is nested into UI component with the help of a dedicated [data template](desktop/html_templates.md):
 
 ~~~js
@@ -43,14 +42,14 @@ webix.ui{(
 ~~~
 {{sample 04_template/10_scrollview.html }}
 
-Scrollview features a **body** object property where items (text templates, components) are stored in either **rows** or **cols** array for vertical or horizontal item arrangement respectively. 
+ScrollView features a **body** object property where items (text templates, components) are stored in either **rows** or **cols** array for vertical or horizontal item arrangement respectively. 
 
-##Working with Scrollview
+##Working with ScrollView
 
-Within scrollview as well as within any component with a scrollbar you can: 
+Within ScrollView as well as within any component with a scrollbar you can: 
 
 - scroll to a definite position of the component;
-- define your position - how far you have scrolled away from the top and left border of the scrollview;
+- define your position - how far you have scrolled away from the top and left border of the ScrollView;
 - enable and disable scrolling and specify scrolling directions. 
 
 Read more about **scroll control** in the [corresponding article](desktop/scroll_control.md) of the documentation. 
@@ -64,6 +63,6 @@ Read more about **scroll control** in the [corresponding article](desktop/scroll
 - [Sizing Components](desktop/dimensions.md)
 - [Resizing](desktop/resizing.md)
 - [Layout](desktop/layout.md)
-- [Multiview](desktop/multiview.md)
+- [MultiView](desktop/multiview.md)
 - [Carousel](desktop/carousel.md)
 - [Accordion](desktop/accordion.md)

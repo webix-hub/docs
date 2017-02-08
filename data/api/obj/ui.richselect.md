@@ -10,9 +10,9 @@ var richselect = webix.ui({
     view:"richselect",
    	label:"Choose", 
     value:1, options:[ 
-        {id:1, value:"One"}, 
-        {id:2, value:"Two"}, 
-        {id:3, value:"Three"}
+        { "id":1, "value":"Banana"}, 
+        { "id":2, "value":"Papaya"}, 
+        { "id":3, "value":"Apple"}
     ]
 });
 ~~~

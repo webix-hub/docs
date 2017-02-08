@@ -1,6 +1,6 @@
 UI Complex Widgets
 ===========================
-The Webix library includes ready-made JavaScript widgets intended for solving tasks in different fields. These wigdets possess an extended configuration and can be customized to fit your personal needs. They will help you with a variety of tasks: to create an interactive data report, optimize a workflow, add and manage events, handle hierarchical data or make calculations in a powerful spreadsheet.
+The Webix library includes ready-made JavaScript widgets intended for solving tasks in different fields. These widgets possess an extended configuration and can be customized to fit your personal needs. They will help you with a variety of tasks: to create an interactive data report, optimize a workflow, add and manage events, handle hierarchical data or make calculations in a powerful spreadsheet.
 
 <br>
 

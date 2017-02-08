@@ -9,7 +9,7 @@ Toolbar
 
 ##Overview
 
-Ui-related toolbar inherits from [layout](desktop/layout.md). It is the place to nest all the possible controls including buttons, 
+UI-related Toolbar inherits from [layout](desktop/layout.md). It is the place to nest all the possible controls including buttons, 
 labels, icons, checkboxes, combos, etc. For the full list of controls please refer to the library's [Controls Guide](desktop/controls.md). 
 
 <img style="display:block; margin-left:auto;margin-right:auto;"  src="desktop/toolbar.png" />
@@ -53,7 +53,7 @@ There exists a possibility to specify [common configuration](desktop/common_conf
 
 {{sample 02_toolbar/07_toolbar_image_button.html }}
 
-Differently-sized buttons can be included into the toolbar with the help of a custom function:
+Differently-sized buttons can be included into the Toolbar with the help of a custom function:
 
 ~~~js
 webix.ui({
@@ -77,7 +77,7 @@ More info about how to [manipulate button groups](desktop/button_groups.md).
 
 ###Icon Buttons
 
-Icons can be nested into all the library components within a toolbar. Icon buttons look definitely stylish.
+Icons can be nested into all the library components within a Toolbar. Icon buttons look definitely stylish.
 
 <img src="desktop/toolbar_icons.png"/>
 
@@ -89,5 +89,5 @@ Learn more about icon types in the [dedicated chapter of the manual](desktop/ico
 ##Related Articles
 
 - [Controls](desktop/controls.md)
-- [Tabview Functionality](desktop/tabview.md)
+- [TabView Functionality](desktop/tabview.md)
 - [Toolbar CSS Image Map](desktop/toolbar_css.md)

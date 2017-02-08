@@ -16,7 +16,7 @@ Dates are loaded to components according to common [data loading rules](desktop/
 Either in the database or in data files dates can be stored in two ways: as **DateTime** objects or as **strings**. 
 
 - DateTime objects should be formatted for adequate presentation. Otherwise, the output will be like "*Tue Nov 30 2010 00:00:00 GMT+0200*";
-- Strings can be either shown in the way thay are stored or converted to objects and then formatted.
+- Strings can be either shown in the way they are stored or converted to objects and then formatted.
 
 {{note
 Only DateTime objects defined with the **new Date();** method are subject to formatting since it presupposes "to-string" conversion. Strings should be converted beforehand. 
@@ -46,7 +46,7 @@ webix.ui({
 
 2 . **Custom** (using **webix.Date** object functions). 
 
-Applicable to all data management conponents including datatable. 
+Applicable to all data management components including datatable. 
 
 Here we create the necessary conversion pattern and then define it as [scheme](api/link/ui.list_scheme_config.md) for the loaded data. 
 
@@ -72,12 +72,12 @@ Now we've got DateTime objects ready to formatting.
 
 ###Defining Formatting Methods
 
-There're two objects in the library that handle dates - **[webix.Date](api/refs/date.md)** and **[webix.i18n](api/refs/i18n.md)**. Both of them contain date 
+There are two objects in the library that handle dates - **[webix.Date](api/refs/date.md)** and **[webix.i18n](api/refs/i18n.md)**. Both of them contain date 
 formatting and processing logic while the later is responsible for date (as well as number and price) localization.
 
 ####**webix.i18n**
 
-Localization means **locales implementation** where locale is a collection of formatting methods and patterns for a certain area. They are defined separately and  later applied to the necessady data. 
+Localization means **locales implementation** where locale is a collection of formatting methods and patterns for a certain area. They are defined separately and  later applied to the necessary data. 
 By default, if you format dates with the **i18n** object, all the dates and numbers will be formatted according to North American region rules. 
  
 **Date** and **Number localization** are described in the [related article](desktop/localization.md). 
@@ -90,7 +90,7 @@ The Date object allows for formatting dates regardless of locales with the help 
 { header:"m/d/Y", sort:"date", id:"start", format:webix.Date.dateToStr("%m/%d/%y")}
 ~~~
 
-The datatable column here shows the stored date in a "month number/day number/two-digit yeat" format. 
+The datatable column here shows the stored date in a "month number/day number/two-digit year" format. 
 
 Possible format specifiers are listed in the [related article](helpers/date_formatting_methods.md). 
 
@@ -114,7 +114,7 @@ webix.ui({
 Formatting Other Component's Data
 }}
 ~~~js
-//format is specified by locale 
+// format is specified by locale 
 webix.ui({
 	view:"list", 
 	template:function(obj){ 
@@ -122,7 +122,7 @@ webix.ui({
                 } 
 })
                 
-//format is specified separately       
+// format is specified separately       
 var myformat = webix.Date.dateToStr("%m/%d/%y");
 
 webix.ui({
@@ -172,7 +172,7 @@ Sorting can be applied in two directions: **"asc"** (ascending) and **"desc"** (
 
 1 . **Built-in Sorting. Datatable Only.**
 
-Datatable features dedicated **sort** property for its cloumns. 
+Datatable features dedicated **sort** property for its columns. 
 
 2 . **Custom Sorting.** Applicable to all components. 
 

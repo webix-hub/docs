@@ -6,14 +6,14 @@ because they are comprised of the following components:
 
 - Webix [text](desktop/text.md)  input that can be either editable (for combos) or non-editable (for selects);
 - Webix [list](desktop/list.md) from which templating and loading rules, item sizes and look-and-feel are taken;
-- Webix [popup](desktop/popup.md) from which popup size and behaviour are taken. 
+- Webix [popup](desktop/popup.md) from which popup size and behavior are taken. 
 
 The combination of list and popup is called **suggest list** (described in detail [separately](desktop/suggest.md)). Here we will have a look at extra configuration possibilities 
 of suggest-based controls.
 
 ##Advanced Configuration
 
-Normally, we define select options as array or datasource: 
+Normally, we define select options as array or data source: 
 
 {{snippet
 Short notation
@@ -49,7 +49,7 @@ As you can see, **options** attribute can be used as object that houses [suggest
 
 ##Changing Option Template
 
-Option data may contain any properies instead of (in addition to) default *id-value* pairs (still, **id** attribute is mandatory). 
+Option data may contain any properties instead of (in addition to) default *id-value* pairs (still, **id** attribute is mandatory). 
 
 ~~~js
 { view:"combo",  value:2, options:{
@@ -108,7 +108,7 @@ view:"combo", value:1, options:{
 
 Filtering is applied only in case the suggest list is combined with editable inputs - [combo](desktop/combo.md) and [multicombo](desktop/multicombo.md).
 
-##Serverside Options
+##Server-Side Options
 
 The easiest way to load options from server is to set a link to the necessary script right in the **options** attribute: 
 
@@ -120,7 +120,7 @@ For extra customization, see below how to define options dynamically.
 
 ##Getting Popup and List objects
 
-The controls feature special Api to work with their parts:
+The controls feature special API to work with their parts:
 
 ~~~js
 var popup = richselect.getPopup(); //popup object

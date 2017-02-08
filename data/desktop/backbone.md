@@ -1,8 +1,8 @@
 Backbone Integration 
 ============
 
-**Backbone.js** is a lightweight Javascript framework that allows for adding structure to client-side code in the MVC pattern. Backbone works in conjunction with its hard-weight dependency, **Underscore.js**, 
-the utility library that provides a lot of the functional programming support and contains a number of functions as well as specialized helpers for function binding, javascript templating,and so on. 
+**Backbone.js** is a lightweight JavaScript framework that allows for adding structure to client-side code in the MVC pattern. Backbone works in conjunction with its hard-weight dependency, **Underscore.js**, 
+the utility library that provides a lot of the functional programming support and contains a number of functions as well as specialized helpers for function binding, JavaScript templating, and so on. 
 
 Backbone is based on the **MVC principle** that translates as Model, View and Controller classes where:
 
@@ -21,7 +21,7 @@ To get the profound knowledge of the framework, go to the <a href="http://www.ba
 Webix and Backbone can be cross-integrated on multiple levels:
 
 - Webix components can load data from backbone collection, check desktop/backbone_collections.md for more details;
-- Webix components can be wraped in a Backbone Views, check desktop/backbone_views.md for more details;
+- Webix components can be wrapped in a Backbone View, check desktop/backbone_views.md for more details;
 - visibility of Webix Components can be controlled by Backbone router, check desktop/backbone_routers.md for more details.
 
 ## Example of usage

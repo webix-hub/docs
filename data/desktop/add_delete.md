@@ -63,7 +63,7 @@ function addData() {
 ##Deletion of Selected Items
 
 Since only [selected](desktop/selection.md) items can be deleted, set the select parameter to true (**select: true**) during the initialization of the component. 
-Before removal let's check whether an item is selected with the help of the simpliest *if-else* statement. 
+Before removal let's check whether an item is selected with the help of the simplest *if-else* statement. 
 
 ###Deletion of one item
 

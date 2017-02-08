@@ -47,6 +47,6 @@ Note that there's no built-in possibility to edit data with list. You should cre
 - [Resizing](desktop/resizing.md)
 - [Redefinition of the Components](desktop/redefinition.md)
 - [List](desktop/list.md)
-- [Unitlist](desktop/unitlist.md)
-- [Grouplist](desktop/grouplist.md)
+- [UnitList](desktop/unitlist.md)
+- [GroupList](desktop/grouplist.md)
 - [X-List CSS Image Map](desktop/xlist_css.md)

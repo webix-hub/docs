@@ -28,7 +28,7 @@ webix.ui({
 ~~~
 
 
-To load inline data after component init on some event, for instance, use the api/link/dataloader_parse.md function:
+To load inline data after component initialization on some event, for instance, use the api/link/dataloader_parse.md function:
 
 ~~~js
 $$("pivot").parse(pivot_dataset);
@@ -81,11 +81,11 @@ External Data Processing
 It is possible to configure Pivot Table in such a way that its data are processed by a custom server-side script.
 In this case Pivot loads data that were grouped on the server and provides the ability to customize Pivot configuration.
 
-To define such a processing, you need to enable the **externalProcessing** property in Pivot configuration. 
+To define such a processing, you need to enable the **externalProcessing** property in the Pivot configuration. 
 
 ~~~js
 webix.ui({
-    view: "pivot",
+    view: “pivot”,
     externalProcessing: true,
     ...
 });
@@ -96,7 +96,7 @@ The loaded data source should be a JSON that contains the following properties:
 
 - **data** - an object that includes “columns” and “data” configuration. 
 	- *columns* - property is an array of columns properties. It should correspond to the columns definition of desktop/treetable.md
-	- *data* - a JSON datasource for TreeTable
+	- *data* - a JSON data source for TreeTable
 - **structure** - an object with the initial [Pivot structure](pivot/structure.md)
 - **fields** - an array of all pivot fields. It is necessary for the configuration popup to show all the fields there
 - **options** - (optional) JSON object with options for select filters.
@@ -110,7 +110,7 @@ There are some rules for the Pivot columns headers:
 - other headers (that display categories) should contain the “name” property with the text to display 
       
 
-Here is an example of a datasource for a Pivot with select filter for the "continent" field:
+Here is an example of a data source for a Pivot with select filter for the "continent" field:
 
 ~~~js
 {
@@ -152,4 +152,3 @@ Here is an example of a datasource for a Pivot with select filter for the "conti
 }
 ~~~
 
-{{sample 61_pivot/07_table_external/01_readonly.html}}

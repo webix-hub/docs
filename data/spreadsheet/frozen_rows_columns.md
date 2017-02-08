@@ -18,11 +18,11 @@ If the parameter isn't passed, the method will unfreeze the frozen columns, if t
 
 ##Freezing Rows
 
-There is also a possiblity to freeze rows, to make some of them remain at the very top of the sheet.
+There is also a possibility to freeze rows, to make some of them remain at the very top of the sheet.
 
 <img src="spreadsheet/frozen_row.png">
 
-To freeze rows, apply the api/ui.spreadsheet_freezerows.md method. As a parameter you sholud pass the number or rows that should be frozen,starting from 0.
+To freeze rows, apply the api/ui.spreadsheet_freezerows.md method. As a parameter you should pass the number or rows that should be frozen,starting from 0.
 
 ~~~js
 $$("ssheet").freezeRows(3);

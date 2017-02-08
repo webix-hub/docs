@@ -59,7 +59,7 @@ Configuration settings
 There are main configuration parameters that you can set to configure the TreeMap in the needed way:
 
 
-- **template** - (function) defines html content displayed in rectangles
+- **template** - (function) defines HTML content displayed in rectangles
 
 ~~~js
 webix.ui({
@@ -231,7 +231,7 @@ The isBranch() method checks whether an item is a branch. And the eachLeaf() met
 
 Thus, we get the average number of comments in a branch and can use this number in the template of the value parameter. 
 
-The defined getCss() method should be set as the cssClass property to apply css styling to rectangles:
+The defined getCss() method should be set as the cssClass property to apply CSS styling to rectangles:
 
 
 ~~~js
@@ -266,7 +266,7 @@ Handling Events
 Since TreeMap component inherits its API from api/refs/treestore.md, it supports the handling of almost the same events. 
 You can check the full list of events in the [API reference](api/refs/ui.treemap_events.md).
 
-TreeMap supports various events that can be used to provide a custom behavior for treemap.
+TreeMap supports various events that can be used to provide a custom behavior for TreeMap.
 
 There are 2 ways you can add a handler to the event:
 
@@ -318,7 +318,7 @@ webix.ui({
 
 ###Cancelable Events 
 
-All events with the subword '**onBefore**' can be canceled.<br>
+All events with the sub-word '**onBefore**' can be canceled.<br>
 To cancel some event you should return **false** within the appropriate event handler.
 
 {{snippet
@@ -335,7 +335,7 @@ var myEvent = $$("treemap").attachEvent("onBeforeSelect", function (id) {
 
 
 Inside the event handler you can refer to the holder component through the keyword **this**. </br>
-Besides, most event handlers get incoming argument(s), like the **id** of a data item (see [treemap events](api/refs/ui.treemap_events.md) to know exactly what arguments are passed inside event handler). 
+Besides, most event handlers get incoming argument(s), like the **id** of a data item (see [TreeMap events](api/refs/ui.treemap_events.md) to know exactly what arguments are passed inside event handler). 
 
 By the way, using the **id** of a data item you can access this item itself and all its properties. For example:
 
@@ -355,7 +355,7 @@ $$("treemap").attachEvent("onAfterSelect",function(id){
 Setting header
 ----------------
 
-You can specify the displaying of branches' titles in the header of the treemap. The titles are set using the api/ui.treemap_headertemplate_config.md property in the component's configuration:
+You can specify the displaying of branches' titles in the header of the TreeMap. The titles are set using the api/ui.treemap_headertemplate_config.md property in the component's configuration:
 
 ~~~js
 webix.ui({

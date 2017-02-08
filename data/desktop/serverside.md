@@ -2,7 +2,7 @@ Server-Side Integration
 =================
 
 Server-side integration is possible with Webix [data components](desktop/components.md), 
-client-side datastores (called [Data Collections](desktop/nonui_objects.md)) and [forms](desktop/form.md). 
+client-side data stores (called [Data Collections](desktop/nonui_objects.md)) and [forms](desktop/form.md). 
 It is enabled in several ways:
 
 - you can write your own **[custom scripts](desktop/custom_serverside.md)** in your favorite language to load data and save changes back;
@@ -21,7 +21,7 @@ webix.ui({
 });
 ~~~
 
-Or, to load data after component init, apply **load()** method to it: 
+Or, to load data after component initialization, apply **load()** method to it: 
 
 ~~~js
 $$("dtable").load("myscript.php", "xml");
@@ -32,7 +32,7 @@ $$("dtable").load("myscript.php", "xml");
 - Server script you state as **url** parameter or pass into **load()** function executes GET request and returns data from server in either of the [possible data formats](desktop/data_types.md);
 - You should specify **datatype** parameter if incoming data is not JSON (the default datatype);
 - In case of long datasets [dynamic loading](desktop/dynamic_loading.md) functionality will be helpful;
-- Default loading pattern can be [customized](desktop/server_customload.md) - specific loading modes, ajax helper for passing params into load script.
+- Default loading pattern can be [customized](desktop/server_customload.md) - specific loading modes, ajax helper for passing parameters into load script.
 
 More info about custom scripts is in the [dedicated article](desktop/custom_serverside.md).
 
@@ -112,7 +112,7 @@ Form data is either
 
 - you can make use of a **[Server Side Connector](desktop/dataconnector.md)**. The necessary information is given in the [corresponding article](desktop/dataconnector.md).
 - you can apply [Webix Remote](desktop/webix_remote.md)
-- you can use [Websockets (Faye proxy object)](desktop/server_faye.md)
+- you can use [WebSockets (Faye proxy object)](desktop/server_faye.md)
 
 
 ###Further Reading

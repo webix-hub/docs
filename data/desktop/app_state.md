@@ -7,7 +7,7 @@ There exist different ways to save the state of the application and its componen
 
 2) Webix DataState module makes it possible to save  state of any **separate component**. [Get details](desktop/datastate_state.md). 
 
-3) Webix Histoty API makes it possible to track the **latest opened tab** in multiview applications. [Get details](desktop/history_track.md). 
+3) Webix History API makes it possible to track the **latest opened tab** in multiview applications. [Get details](desktop/history_track.md). 
 
 {{pronote
 The first and the second methods are available in **Webix Pro** edition only. 

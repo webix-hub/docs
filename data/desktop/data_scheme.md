@@ -6,7 +6,7 @@ Data scheme defines schemes for data processing, the default actions for loaded,
 Object scheme is defined as in the **scheme** property. Generally, it allows you to set a default scheme for data records of DataStore. So, 
 in cases when you add an empty record to DataStore, the record will be populated with the values set by the scheme.
 
-Any changes you apply through data scheme are directly applied to datastore items.
+Any changes you apply through data scheme are directly applied to data store items.
 ~~~js
 var list1 = webix.ui({
     view:"list",
@@ -227,7 +227,7 @@ The **$group** function is called:
 
 - for each data item, while initial data loading
 
-The function doesn't run when you programatically call the [group](api/group_group.md) method. 
+The function doesn't run when you programmatically call the [group](api/group_group.md) method. 
 
 ####Usage example
 
@@ -275,7 +275,7 @@ The $sort function is called:
 
 - for each data item, while initial data loading.
 
-The function doesn't run when you programatically call the [sort](api/datastore_sort.md) method.
+The function doesn't run when you programmatically call the [sort](api/datastore_sort.md) method.
 
 ####Usage example
 

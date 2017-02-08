@@ -20,7 +20,7 @@ films.fetch(); //getting collection data
 
 Each data component has [sync](api/link/dataloader_sync.md) method that can be used to load data from a Backbone Collection. 
 
-There can be several methods to add data from a Backbone collection to a Webix view.  It depends on how you init the view. 
+There can be several methods to add data from a Backbone collection to a Webix view.  It depends on how you initialize the view. 
 
 {{snippet
 By direct rendering into the needed node
@@ -66,7 +66,7 @@ Also, any changes, done by list API ([adding](api/link/ui.list_add.md), [deletin
 
 ### Data Saving
 
-Nevetheless, changes in the component don't trigger saving to the Backbone Collection on their own. You need to use additional Webix events that are handled to enable data saving:
+Nevertheless, changes in the component don't trigger saving to the Backbone Collection on their own. You need to use additional Webix events that are handled to enable data saving:
 
 - **webix:add** & **webix:change** - fire when a new item is added or an item is updated in the view (here:list);
 - **webix:remove** - fires when a record is removed from the view. 

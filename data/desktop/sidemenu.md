@@ -1,4 +1,4 @@
-Sidemenu
+SideMenu
 ==========
 
 ##API Reference
@@ -9,7 +9,7 @@ Sidemenu
 
 ##Overview
 
-The **Sidemenu** widget inherits from desktop/window.md and can be bound to any side of the screen (top, bottom, right, left). You can place any other view or even a complex layout inside of Sidemenu.
+The **SideMenu** widget inherits from desktop/window.md and can be bound to any side of the screen (top, bottom, right, left). You can place any other view or even a complex layout inside of SideMenu.
 
 <br>
 
@@ -21,8 +21,8 @@ The **Sidemenu** widget inherits from desktop/window.md and can be bound to any 
 Initialization
 ----------------
 
-To initialize Sidemenu, you need to define all the necessary parameters in the webix.ui() constructor. Don't forget to set the necessary width/height values and specify 
-the desired position of the Sidemenu (the details are given below):
+To initialize SideMenu, you need to define all the necessary parameters in the webix.ui() constructor. Don't forget to set the necessary width/height values and specify 
+the desired position of the SideMenu (the details are given below):
 
 ~~~js
 webix.ui({
@@ -51,13 +51,13 @@ webix.ui({
 }}
 
 
-Sidemenu sizing and positioning
+SideMenu sizing and positioning
 ----------------------------
 
-You can specify the necessary width and height of Sidemenu, depending on its position. Sidemenu can appear from the top, bottom, left or right sides of the screen.
+You can specify the necessary width and height of SideMenu, depending on its position. SideMenu can appear from the top, bottom, left or right sides of the screen.
 
-If you use the "left" or "right" Sidemenu position, you can specify the *width* dimension. In the case of "top" or "bottom" Sidemenu, the *height* dimension can be set. 
-The dimension which is not set directly (*height* for the left/right Sidemenu and *width* for the top/bottom Sidemenu) will be automatically adjusted to the size of the screen.
+If you use the "left" or "right" SideMenu position, you can specify the *width* dimension. In the case of "top" or "bottom" SideMenu, the *height* dimension can be set. 
+The dimension which is not set directly (*height* for the left/right SideMenu and *width* for the top/bottom SideMenu) will be automatically adjusted to the size of the screen.
 
 For example:
 
@@ -79,15 +79,15 @@ webix.ui({
 Customizing size and position
 -----------------------
 
-You can customize the size and position of Sidemenu in the necessary way. It's done with the help of the *state* function that takes as a parameter an object
-containing the position and size values that will be set as Sidemenu properties: 
+You can customize the size and position of SideMenu in the necessary way. It's done with the help of the *state* function that takes as a parameter an object
+containing the position and size values that will be set as SideMenu properties: 
 
 - top ;
 - left;
 - width;
 - height.
 
-For example, if there's a toolbar in an application and left Sidemenu should be shown below it,
+For example, if there's a toolbar in an application and left SideMenu should be shown below it,
 you need to increase the "top" property of the state object by the toolbar height and decrease the "height" one by the same value:
 
 ~~~js
@@ -112,10 +112,10 @@ webix.ui({
 
 
 
-Hiding/showing Sidemenu 
+Hiding/showing SideMenu 
 -----------------------
 
-You can hide and show Sidemenu by clicking a button. For this purpose, the api/link/ui.sidemenu_hide.md and api/link/ui.sidemenu_show.md methods should be used.
+You can hide and show SideMenu by clicking a button. For this purpose, the api/link/ui.sidemenu_hide.md and api/link/ui.sidemenu_show.md methods should be used.
 
 
 ~~~js

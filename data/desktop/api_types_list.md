@@ -13,8 +13,8 @@ Next data types are used through API reference
 - hash		-	js object, used as hash
 - id			-	string or number, which is used as ID
 - object		-	js object
-- view		-	view configuraton
-- function	-	javascript function
+- view		-	view configuration
+- function	-	JavaScript function
 
 
 "object" is used for data items, different components or helpers objects

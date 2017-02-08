@@ -49,8 +49,7 @@ webix.ui({
 
 ##Server-side Request
 
-When scrolling or pagination occurs, the component will automatically issue a request based on the data source, 
-e.g. **"data/data_dyn.php?continue=true&count=100&start=130"** where: 
+When scrolling or pagination occurs, the component will automatically issue a request based on the data source, e.g. **"data/data_dyn.php?continue=true&count=100&start=130"** where: 
 
 - **continue** -  flag that indicates that this request was formed automatically;
 - **count** - value of *datafetch* parameter;
@@ -82,18 +81,18 @@ Sample of JSON response
 }
 ~~~
 
-##Dynamic Loading by Api
+##Dynamic Loading by API
 
 The **api/dataloader_loadnext.md** method can be used to send a request that loads the specified number of records and parses them into the component. The arguments are:
 
 - **count** - the number of records that will be loaded on function execution; 
 - **start** - the start position to insert the loaded data to;
 - **callback** - function to be executed after the response comes ( or *null* if you don't need the one);
-- **url** - the loading url (if it wasn't specified in the component constructor);
+- **url** - the loading URL (if it wasn't specified in the component constructor);
 - **now** - boolean to ignore *datathrottle* and start loading data immediately on *loadNext()* execution. 
 
 {{snippet
-Using url set in the component constructor
+Using URL set in the component constructor
 }}
 ~~~js
 grida = webix.ui({
@@ -106,7 +105,7 @@ grida.loadNext(10, 0);
 {{sample 15_datatable/16_dyn_loading/06_load_next_replace.html}}
 
 {{snippet
-Using given url
+Using given URL
 }}
 ~~~
 gridb.loadNext(50,900,function(){

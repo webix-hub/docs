@@ -68,7 +68,7 @@ view:"pivot-chart",
 id:"pivot",
 structure:{
 	values:[
-		{name:"gdp",operation:"sum",color:"#eed236"},//gdp values will be summed
+		{name:"gdp",operation:"sum",color:"#eed236"},//GDP values will be summed
 		{name:"oil",operation:"max",color:"#36abee"}//max oil value will be shown
     ]
 }

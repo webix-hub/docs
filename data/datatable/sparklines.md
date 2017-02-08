@@ -9,7 +9,7 @@ Each data value is specified as a point in the sparkline. Depending on the value
 {{note Pay attention that in Internet Explorer Sparklines functionality is available in versions 9+.}}
 
 Sparklines are set in the datatable through the **{common.sparklines()}** template. The column's id coincides with the property in the data set that contains data values. 
-The sparklines chart is built on the basis of these values:
+The Sparklines chart is built on the basis of these values:
 
 ~~~js
 webix.ui({

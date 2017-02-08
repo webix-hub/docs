@@ -65,7 +65,7 @@ There are two types of layer you can use for the GoogleMap widget:
 Loading Data into GoogleMap
 ------------------------
 
-GoogleMap widget is datastore-based, so you can work with it as with any other data widget.
+GoogleMap widget is DataStore-based, so you can work with it as with any other data widget.
 
 Each map point is a separate data object. You can store a set of map points in a dataset and use all [common ways of data loading](desktop/data_loading.md) to load
 data into a map.
@@ -108,7 +108,7 @@ To get the map object, you can make use of the api/ui.google-map_getmap.md metho
 It will return a promise which will be resolved when a map is rendered.
 
 ~~~js
-$$("map").getMap().then(function(){
+$$("map").getMap().then(function(mapObj){
     // some code
 });
 ~~~

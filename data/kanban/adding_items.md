@@ -22,7 +22,7 @@ $$("myBoard").add({
 });
 ~~~
 
-An added item should contain the 'status' property in order to be added in one of kanban lists. 
+An added item should contain the 'status' property in order to be added in one of Kanban lists. 
 
 {{sample
 63_kanban/03_data_operations/01_add.html

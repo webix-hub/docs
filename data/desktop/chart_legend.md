@@ -33,7 +33,7 @@ See the full list of **legend parameters** in [API Reference](api/ui.chart_legen
 
 ##Default Legend
 
-Built-in means allow defining a default legend. For these needs, you should specify what element from the initial datasource will be in the legend area. Default legend is great for [pie](desktop/chart_types.md#pie) and 
+Built-in means allow defining a default legend. For these needs, you should specify what element from the initial data source will be in the legend area. Default legend is great for [pie](desktop/chart_types.md#pie) and 
 [bar](desktop/chart_types.md#bar) charts with multicolored bars and pie pieces. 
 
 Then, the legend takes a color value from the dataset:

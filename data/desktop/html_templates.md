@@ -7,7 +7,7 @@ After the data is loaded to the component it is stored in the `data` object and 
 Data Item Value
 -----------------
 
-All supported data types may contain **more than one value per item** e.g. each item of a filmset may contain not only a film's title but also its rank, production year, and number of votes. 
+All supported data types may contain **more than one value per item** e.g. each item of a film set may contain not only a film's title but also its rank, production year, and number of votes. 
 
 Still, different components have different possibilities and requirements:
 
@@ -33,7 +33,7 @@ Still, different components have different possibilities and requirements:
 Such definition would suit single-value components. If a data item has other properties, their values won't be shown unless you define a template.
 
 - **data template** that performs two tasks
-	- main - defines which item property (-ies) should be treated as **value** to display;
+	- main - defines which item property(-ies) should be treated as **value** to display;
     - adds formatting to this value.
     
 Templates can be defined for any component you wish.  
@@ -103,7 +103,7 @@ columns: [
 {{sample 15_datatable/01_loading/01_inline_data.html}}
 
 {{note
-As far as you've noticed, only **JSON** and **XML** data can be displayed without refering to template, since only they can directly set **value.** 
+As far as you've noticed, only **JSON** and **XML** data can be displayed without referring to template, since only they can directly set **value.** 
 Moreover, this can be applied only to components with **single-value items**. 
 }}
 
@@ -158,10 +158,10 @@ templateCopy: "#rank#.#title#"
 In this case, only the `rank` and `title` values are copied. 
 
 {{note
-**Grouplist** has its own templating pattern. Look into the [related article](desktop/grouplist.md) for details.
+**GroupList** has its own templating pattern. Look into the [related article](desktop/grouplist.md) for details.
 }}
 
-###The item in the intial dataset looks like this:
+###The item in the initial data set looks like this:
 
 ~~~js
 //JSON

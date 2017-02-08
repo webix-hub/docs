@@ -1,5 +1,6 @@
 Checkbox and Radio in DataTable
 ===================================================
+
 DataTable allows you to add any HTML elements inside of it (using the **template** attribute of the api/ui.datatable_columns_config.md parameter).<br>
 Besides, the library provides ready-to-use solutions for popular checkbox and radio controls to save your time.
 
@@ -29,8 +30,8 @@ Creating a checkbox column
 }}
 ~~~js
 columns:[
-		{ id:"ch1", header:"", template:"{common.checkbox()}"}
-        ...
+	{ id:"ch1", header:"", template:"{common.checkbox()}"}
+    ...
 ]
 ~~~
 {{sample 15_datatable/04_editing/07_checkbox.html }}
@@ -48,8 +49,8 @@ Creating a radio column
 }}
 ~~~js
 columns:[
-		{ id:"ch1", header:"", template:"{common.radio()}"}
-        ...
+	{ id:"ch1", header:"", template:"{common.radio()}"}
+    ...
 ]
 ~~~
 
@@ -76,8 +77,8 @@ The function will accept 3 parameters and be called for each data item:
 - **common** - (*object*) the predefined checkbox template
 - **value** - (*boolean*) the value of the checkbox. *true*, if the box is checked. Otherwise, *false*. Initially, the parameter is *null* and take the boolean value just when you check the checkbox.
 
-**Please, pay your attention at a very important thing - the 'webix_table_checkbox' css class**.<br> This very class forces a standard DIV to behave as a checkbox. Therefore, defining a look of your checkbox don't forget to 
-apply the 'webix_table_checkbox' css class to it.
+**Please, pay your attention at a very important thing - the 'webix_table_checkbox' CSS class**.<br> This very class forces a standard DIV to behave as a checkbox. Therefore, defining a look of your checkbox don't forget to 
+apply the 'webix_table_checkbox' CSS class to it.
 
 
 {{snippet
@@ -114,8 +115,8 @@ Setting custom template for the column
 }}
 ~~~js
 columns:[
-		{ id:"ch1",		header:"",	template:custom_checkbox}
-        ...
+	{ id:"ch1",	header:"",template:custom_checkbox}
+    ...
 ]
 ~~~
 
@@ -131,7 +132,7 @@ webix.ui({
 	view:"datatable",
     ...
 	columns:[
-		{ id:"ch1",		header:"",	template:custom_checkbox},
+		{ id:"ch1",	header:"",template:custom_checkbox},
         ...
 	],
 	checkboxRefresh:true
@@ -163,8 +164,8 @@ The function will take 3 parameters and be called for each data item:
 - **common** - (*object*) the predefined radio template
 - **value** - (*boolean*) the value of the radio. *true*, if the radio is checked. Otherwise, *false*. Initially, the parameter is *null* and take the boolean value just when you check the radio.
 
-**Please, pay your attention to a very important thing - the 'webix_table_radio' css class**.<br> This very class forces a standard DIV to behave as a radio. Therefore, defining a look of your radio don't forget to 
-apply the 'webix_table_radio' css class to it.
+**Please, pay your attention to a very important thing - the 'webix_table_radio' CSS class**.<br> This very class forces a standard DIV to behave as a radio. Therefore, defining a look of your radio don't forget to 
+apply the 'webix_table_radio' CSS class to it.
 
 
 {{snippet

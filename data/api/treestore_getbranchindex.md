@@ -5,13 +5,14 @@ getBranchIndex
 	
 
 @params:
-- id     id		tree node ID;
-* parent		id    ID of the parent node.
+- id     		id		tree node ID
+* parent		id    	optional, ID of the parent node
+
 @returns:
 - index   number	 	index of related tree node	
 
 @example:
-tree = new webix.ui({
+var tree = webix.ui({
     view:"tree",
     data: [
         { id:"branch1", value:"The Shawshank Redemption", data:[
@@ -21,8 +22,8 @@ tree = new webix.ui({
     ]
 });
  
-var index  = tree.getBranchIndex('1.1'); // -> 0
-var index1 = tree.getBranchIndex('1.2'); // -> 1
+var index  = tree.getBranchIndex("1.1"); // -> 0
+var index1 = tree.getBranchIndex("1.2"); // -> 1
 
 @template:	api_method
 @related:

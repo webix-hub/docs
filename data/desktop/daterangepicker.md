@@ -32,16 +32,16 @@ You can initialize a DataRangePicker in the following way:
 	- **labelAlign** (string) - label alignment towards its container. Possible values are "left" and "right".  In any way, it's placed left to the control; 
     - **labelWidth** (number) - width of the label container; 
 - **value** (object) - initial value to display in the control input field;   
-- **placeholder** (string) - defines placeholder for daterangepicker input. The control should be initialized without an initial value;   
+- **placeholder** (string) - defines placeholder for DateRangePicker input. The control should be initialized without an initial value;   
 - **timepicker** (boolean) - enables a clock for time selection (*false* by default);
 - **stringResult** (boolean) - sets the data type of value returned by **getValue()/get Values()** methods. 
 If true, it returns date as string. By default the property is *false* and the method returns an object which contains 
 two date objects for the *start* and *end* dates of the range, correspondingly;
-- **format** (string) - sets a date format to display in the daterangepicker field. By default it is "%Y-%m-%d". 
+- **format** (string) - sets a date format to display in the DateRangePicker field. By default it is "%Y-%m-%d". 
 
 ##Customizing Popup of DateRangePicker
 
-You can customize the DateRangePicker popup by using the *suggest* property which links suggest daterange with the input.
+You can customize the DateRangePicker popup by using the *suggest* property which links suggest date range with the input.
 
 It is an object where you should place the DateRangeSuggest view and the *body* object with the desired DateRange properties: 
 

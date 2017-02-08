@@ -253,7 +253,7 @@ webix.ui({
  
 ..//function redefining removal into updating
 
-webix.dp($$("grid")).attachEvent("onbeforedelete", function(id, action){
+webix.dp($$("grid")).attachEvent("onBeforeDelete", function(id, action){
 		action.operation = "update";
 		action.data.deleted = webix.i18n.parseFormatStr(new Date());
 });
@@ -347,7 +347,7 @@ dp = new webix.DataProcessor({
 There exists no possibility to send headers with DataProcessor requests as they are executed in background. However, you can catch Webix **onBeforeAjax** request to modify ANY Ajax request issued from the page: 
 
 ~~~js
-webix.callEvent("onBeforeAjax", 
+webix.attachEvent("onBeforeAjax", 
 	function(mode, url, data, request, headers, files, promise){
  		headers["Content-type"]= "application/json";
 	}

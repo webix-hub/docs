@@ -1,7 +1,7 @@
 Working with Bound Components
 =============
 
-Binding makes selected record of one component a datasource for another. The basic binding tie is established between two components using their IDs of variables they are stored in (if any). 
+Binding makes selected record of one component a data source for another. The basic binding tie is established between two components using their IDs of variables they are stored in (if any). 
 
 ~~~js
 $$("myform").bind(list); 
@@ -9,7 +9,7 @@ $$("myform").bind(list);
 
 It has already been [described](desktop/data_binding.md).
 
-Here different aspects of bata binding are examined. 
+Here different aspects of data binding are examined. 
 
 ##Binding Rules
 
@@ -51,12 +51,12 @@ Slave datatable displays only records with movie property equal to master record
 }}
 ~~~js
 gridb.bind(grida, function(slave, master){
-		if (!master) return false; //cancelling bind applying
+		if (!master) return false; //canceling bind applying
 	return master.id == slave.movie;
 });
 ~~~
 
-Here binding is cancelled in case no data is sent from master (i.e. no record is selected in master). 
+Here binding is canceled in case no data is sent from master (i.e. no record is selected in master). 
 
 {{sample 15_datatable/15_api/02_link_grid.html}} 
 
@@ -90,7 +90,7 @@ Input JSON of such a tree is as follows:
 
 {{sample 17_datatree/04_api/08_bind.html}}
 
-- **$data** - the object of a selected item (without children) is pushed to a slave component. Here you should pass the **format** of subdata presentation to specify data items necessary for the slave. 
+- **$data** - the object of a selected item (without children) is pushed to a slave component. Here you should pass the **format** of sub-data presentation to specify data items necessary for the slave. 
 
 ###Format of bound data presentation
 
@@ -123,7 +123,7 @@ $$("grid2").bind( $$("tree"), "$data", function(obj, source){
 });
 ~~~
 
-Here we get item chilren with the help of a **getBranch()** method, combine them with data set by **records** key and
+Here we get item children with the help of a **getBranch()** method, combine them with data set by **records** key and
 [import](api/datastore_importdata.md) the resulting array into slave datatable. 
 
 {{sample 17_datatree/04_api/09_subdata.html}}
@@ -211,7 +211,7 @@ As a rule, slave component doesn't communicate directly from server-side.
 It receives data from the master view it is bound with and the changed data is sent first to the master 
 that handles communication with the server. 
 
-However, there exists a possibility to get serverside data for the slave based on master selection - 
+However, there exists a possibility to get server-side data for the slave based on master selection - 
 [dataFeed functionality](api/atomdataloader_datafeed_config.md). 
 
 ~~~js
@@ -225,7 +225,7 @@ webix.ui({
 $$("myform").bind($$("mydatatable"));
 ~~~
 
-Datafeed defines URL that will be used by slave control to sent serverside request the moment selection in the master component changes. 
+Data feed defines URL that will be used by slave control to sent server-side request the moment selection in the master component changes. 
 
 The functionality works the same for form and collections (data components) yet the URL parameters differ: 
 

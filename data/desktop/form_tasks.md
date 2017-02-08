@@ -29,8 +29,8 @@ function set_form(){
 
 There's a second parameter for the function that is responsible for **further form updates**. 
 
-By defaul, it is **false,** which means that if you apply this function with a value just for one field, 
-it will override the previously set values and they will be lost in nowhere. set to **true**, it allows for updating exisiting values with new ones. 
+By default, it is **false,** which means that if you apply this function with a value just for one field, 
+it will override the previously set values and they will be lost in nowhere. set to **true**, it allows for updating existing values with new ones. 
 
 ~~~js
 $$('my_form').setValues({ field_b:"Paris" }); //the value for filed_a is lost!
@@ -139,7 +139,7 @@ Check the [API reference for this method](api/values_setdirty.md);
 
 ###**bind()**
 
-Binds the form to other component. In the snippet below list becomes a datasource for the form as well as helps save data from the form into the component. 
+Binds the form to other component. In the snippet below list becomes a data source for the form as well as helps save data from the form into the component. 
 
 [More info](desktop/data_binding.md) on Data Binding
 

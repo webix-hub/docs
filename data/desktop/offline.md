@@ -11,9 +11,9 @@ Accordingly, **webix.storage** module contains three objects:
 
 The objects share three methods:
 
-- **put**(*name, data, [domain, expires]*) - the last two params concern only cookie storage. The method allows putting data to browser cache under the stated name. Data is passed as JSON object;
+- **put**(*name, data, [domain, expires]*) - the last two parameters concern only cookie storage. The method allows putting data to browser cache under the stated name. Data is passed as JSON object;
 - **get**(*name*) -  the method derived stored data from local cache for further usage. Data comes in JSON format;
-- **remove**(*name, [domain]*) - the last param concern only cookie storage. The method removes data saved under the stated name from local cache.  
+- **remove**(*name, [domain]*) - the last parameter concerns only cookie storage. The method removes data saved under the stated name from local cache.  
 
 ##Working with Local Storage
 
@@ -27,7 +27,7 @@ function save_state(){
 }
 ~~~
 
-If data you'd like to save is plain Javascript object, apply Webix [serialize()](api/datastore_serialize.md) method to it. 
+If data you'd like to save is plain JavaScript object, apply Webix [serialize()](api/datastore_serialize.md) method to it. 
 
 To retrieve data from local storage, use **get()** method pointing to the name under which you've save this or that data. 
 
@@ -47,7 +47,7 @@ To save and track state of a multiview-based app, follow [other instructions](de
 
 ##Using Local Storage for Offline Support of ServerSide Applications {#app}
 
-Local storage interface can be used for **storing serverside data** in case of disconnect, which ensures that local changes won't be lost even after page refresh.
+Local storage interface can be used for **storing server-side data** in case of disconnect, which ensures that local changes won't be lost even after page refresh.
 
 Local storage functionality is set by adding a prefix of desired mode - **cache** or **offline** to you load and save scripts.
 
@@ -60,7 +60,7 @@ webix.ui({
 });
 ~~~
 
-In either of these modes, serverside data is loaded to a component, and is additionally cached to your machine( **webix.local.put()** function is executed in background). 
+In either of these modes, server-side data is loaded to a component, and is additionally cached to your machine( **webix.local.put()** function is executed in background). 
 
 What happens next depends on the chosen mode:
 
@@ -68,7 +68,7 @@ What happens next depends on the chosen mode:
 
 - The component will always try to get up-to-date data data from server. If server is unavailable, data is reloaded from cache (*webix.local.get()* function is executed behind the scene). That's why you can refresh page as
 many times as you wish;
-- Data changes you make while online are pushed to server and to cache. So cache will always contain the latest copy of serverside data;
+- Data changes you make while online are pushed to server and to cache. So cache will always contain the latest copy of server-side data;
 - Data changes you make while offline, are pushed to cache only and should be sent to server manually.
 
 **Cache** mode: 

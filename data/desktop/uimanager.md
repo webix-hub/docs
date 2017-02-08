@@ -16,7 +16,7 @@ Each Webix widget features two opposite methods - **focus()** and **blur()** - t
 
 ~~~js
 $$("toolbar").focus(); // the toolbar is focused
-$$("toolbar").blur(); //the toolbar is no longer in focus
+$$("toolbar").blur(); // the toolbar is no longer in focus
 
 $$("form").focus(); //the first focusable element in the form is focused
 ~~~
@@ -51,11 +51,11 @@ Every Webix component features a pair of focusing events **onFocus** and **onBlu
 
 ~~~js
 $$("datatable1").attachEvent("onFocus", function(current_view, prev_view){
-	//current_view is the datatable in question
+	//current_view is the DataTable in question
 });
 
 $$("datatable1").attachEvent("onBlur", function(prev_view){
-	//prev_view is the datatable in question
+	//prev_view is the DataTable in question
 });
 ~~~
 

@@ -33,6 +33,6 @@ $$("myBoard").eachList(function(list,status){
 
 parameters:
 
-- function - a function that will be called for each kanban list, takes two arguments:  
+- function - a function that will be called for each Kanban list, takes two arguments:  
  - list - KanbanList object
  - status - the list's status

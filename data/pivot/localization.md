@@ -22,7 +22,7 @@ webix.i18n.pivot = {
 	windowMessage: "[move fields into required sector]"
 };
 
-//and then init Pivot and see you custom names
+// and then initialize Pivot and see your custom names
 webix.ui({
 	view:"pivot",
 	//...

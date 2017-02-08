@@ -47,7 +47,7 @@ Each definition of a rowspan or colspan includes:
 - **width** - how many columns should the span include. Default value is 1;
 - **height** - how many rows should the span include. Default value is 1;
 - **value** (optional) - value that the span area should display. If the value of the start cell is required, omit this field or pass an empty value ("", null);
-- **css** (optional) - css class that should be applied to the span area. 
+- **css** (optional) - CSS class that should be applied to the span area. 
 
 Besides setting an array of rowspans and colspans directly in the datatable configuration, you can use the api/ui.datatable_addspan.md method to add spans into the datatable. 
 It takes the same parameters that were described above, e.g.:
@@ -67,7 +67,7 @@ The method takes 2 parameters:
 - id - (string/number) row id that starts a colspan/rowspan
 - column - (string)	column id that starts a colspan/rowspan
 
-Don't forget to call the api/link/ui.datatable_refresh.md method after api/ui.datatable_addspan.md or api/ui.datatable_removespan.md in order to rerender the datatable
+Don't forget to call the api/link/ui.datatable_refresh.md method after api/ui.datatable_addspan.md or api/ui.datatable_removespan.md in order to re-render the datatable
 with the applied changes:
 
 ~~~js
@@ -109,7 +109,7 @@ Span CSS
 	background: #fff;
 	white-space: normal;
 }
-<!--colouring-->
+<!--coloring-->
 .hrow{
 	background: #DFF;
 }
