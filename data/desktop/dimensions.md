@@ -129,9 +129,9 @@ Some components also feature the **autowidth** property.
 
 ###3.Item Content Autosizing
 
-To adjust item's width to its contents you should use **adjusting** or **auto height** depending on the component.
+Adjusting dimensions of component items to their contents depends on the component.
 
-**Datatable column width** is adjusted to its contents:
+**Datatable column width** can be adjusted to its contents as:
 
 {{snippet
 Datatable Column Sizing
@@ -145,10 +145,32 @@ columns:[
 
 {{sample 15_datatable/09_columns/01_size_by_content.html }}
 
-**Auto height** is set within component **type** that defines properties of an item (not the whole component). Each item is adjusted to its content, which may result in **variable dimensions** of items:
+**Datatable row height** can be automatically adjusted to the cell contents of the chosen column: 
 
+{{snippet
+Datatable Row Autoheight
+}}
 ~~~js
-//list with variable item height
+webix.ui({
+	view:"datatable", columns:[...], 
+	fixedRowHeight:false,  rowLineHeight:25,
+	on:{
+		"onresize":webix.once(function(){ 
+			this.adjustRowHeight("title", true); 
+		})
+	}
+});
+~~~
+
+{{sample 15_datatable/07_resize/10_row_auto_height.html}}
+
+
+**Auto height for List items** can be set by the "auto" setting within its **type** property which deals with the dimensions of each item: 
+
+{{snippet
+List with Variable Item Height
+}}
+~~~js
 webix.ui({
 	view:"list",
     width:250,
@@ -156,20 +178,29 @@ webix.ui({
     	height:"auto"
     }
 });
+~~~
 
-// DataView with variable item width and height
+**Dataview items** can also be autosized by the type settings, but their height and width adjust to available space rather than content:  
+
+{{snippet
+Dataview with autosized items
+}}
+~~~js
 webix.ui({
 	view:"dataview",
     width:250,
     type:{
     	height:"auto", 
         width:"auto"
-    }
+    },
+    xCount:2, yCount:4
 });
 ~~~
 
-In addition, component width and height can be adjusted to the **predefined dimensions of HTML elements** of its items. 
-For these needs, set **sizeToContent** property for a component:
+{{sample 06_dataview/01_initialization/04_content_sizing.html}}
+
+In addition, width and height of Dataview items can be adjusted to the **predefined dimensions of HTML elements** in their template. 
+For these needs, set **sizeToContent** property to true:
 
 {{snippet
 DataView Item Sizing
