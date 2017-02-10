@@ -46,14 +46,14 @@ var treetable = webix.ui({
 - api/link/ui.treetable_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.treetable_adjustcolumn.md - adjusts a column to the width of the content
 - api/link/ui.treetable_adjustrowheight.md - autodetect height of rows in datatable
-- api/link/ui.treetable_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.treetable_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.treetable_bind.md - binds components
 - api/link/ui.treetable_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.treetable_callevent.md - calls an inner event
 - api/link/ui.treetable_checkall.md - check all items in tree
 - api/link/ui.treetable_checkitem.md - checks the checkbox it the tree item
 - api/link/ui.treetable_clearall.md - removes all items from the component
-- api/link/ui.treetable_clearcss.md - removes css class from all items
+- api/link/ui.treetable_clearcss.md - removes CSS class from all items
 - api/link/ui.treetable_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.treetable_close.md - closes the branch with the specified id
 - api/link/ui.treetable_closeall.md - closes all branches in the tree
@@ -124,6 +124,7 @@ var treetable = webix.ui({
 - api/link/ui.treetable_hide.md - hides the view
 - api/link/ui.treetable_hidecolumn.md - hides the specified column
 - api/link/ui.treetable_hideoverlay.md - hides previously defined overlay
+- api/link/ui.treetable_ignoreundo.md - 
 - api/link/ui.treetable_isbranch.md - checks whether the node has any children
 - api/link/ui.treetable_isbranchopen.md - checks whether the specified branch is open or closed
 - api/link/ui.treetable_ischecked.md - checks whether the specified node is checked
@@ -156,6 +157,7 @@ var treetable = webix.ui({
 - api/link/ui.treetable_removecellcss.md - remove css class from the cell of datatable
 - api/link/ui.treetable_removecss.md - removes CSS class from a component item
 - api/link/ui.treetable_removerowcss.md - remove css class from the row
+- api/link/ui.treetable_removeundo.md - 
 - api/link/ui.treetable_render.md - renders the specified item or the whole component
 - api/link/ui.treetable_resize.md - adjusts the view to a new size
 - api/link/ui.treetable_scrollto.md - scrolls the view to the defined position
@@ -177,8 +179,9 @@ var treetable = webix.ui({
 - api/link/ui.treetable_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.treetable_uncheckall.md - uncheck all items in the tree
 - api/link/ui.treetable_uncheckitem.md - unchecks the checkbox in the tree item
+- api/link/ui.treetable_undo.md - 
 - api/link/ui.treetable_ungroup.md - ungroups data
-- api/link/ui.treetable_updateitem.md - sets properties of the data item
+- api/link/ui.treetable_updateitem.md - updates the data item with new properties
 - api/link/ui.treetable_validate.md - validates one record or all dataset against validation rules
 - api/link/ui.treetable_validateeditor.md - validates data in currently active editor
 }}
@@ -369,6 +372,7 @@ var treetable = webix.ui({
 - api/link/ui.treetable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.treetable_topsplit_config.md - defines the number of rows that will be "frozen" at the top of datatable
 - api/link/ui.treetable_type_config.md - used for configuring presentation of items
+- api/link/ui.treetable_undo_config.md - 
 - api/link/ui.treetable_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.treetable_width_config.md - sets the width of the component
 - api/link/ui.treetable_ycount_config.md - defines height of datatable in rows

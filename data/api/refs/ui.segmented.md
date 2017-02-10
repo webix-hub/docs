@@ -13,8 +13,8 @@ var segmented = webix.ui({
 	view:"segmented", 
   	value:1, options:[
     	{ "id":"1", "value":"Section A" }, 
-    	{ "id":"2", "value":"Section B" }, 
-    	{ "id":"3", "value":"Section C" }
+        { "id":"2", "value":"Section B" }, 
+        { "id":"3", "value":"Section C" }
     ]
 });
 ~~~
@@ -34,7 +34,7 @@ var segmented = webix.ui({
 {{api
 - api/ui.segmented_addoption.md - add a new option (segment) to the button
 - api/link/ui.segmented_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.segmented_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.segmented_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.segmented_bind.md - binds components
 - api/link/ui.segmented_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.segmented_blur.md - removes the focus from the control
@@ -137,7 +137,7 @@ var segmented = webix.ui({
 - api/link/ui.segmented_name_config.md - name of the control
 - api/link/ui.segmented_on_config.md - allows attaching custom handlers to inner events of the component
 - api/ui.segmented_optionwidth_config.md - sets the width of each view's option
-- api/ui.segmented_options_config.md - defines data items of the drop-down list
+- api/ui.segmented_options_config.md - defines segments of the segmented button
 - api/link/ui.segmented_popup_config.md - allows to attach pop-up menu to the button
 - api/link/ui.segmented_relatedaction_config.md - action to call when value of cell changes
 - api/link/ui.segmented_relatedview_config.md - id of view, that will be affected by relatedAction operation

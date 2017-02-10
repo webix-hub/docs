@@ -35,7 +35,7 @@ var carousel = webix.ui({
 {{api
 - api/link/ui.carousel_adjust.md - adjusts the component to the size of the parent HTML container
 - api/ui.carousel_adjustscroll.md - adjusts scrolling direction to screen mode (vertical or horizontal)
-- api/link/ui.carousel_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.carousel_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.carousel_bind.md - binds components
 - api/link/ui.carousel_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.carousel_callevent.md - calls an inner event

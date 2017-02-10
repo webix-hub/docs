@@ -11,12 +11,12 @@ Methods
 - api/link/ui.filetable_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.filetable_adjustcolumn.md - adjusts a column to the width of the content
 - api/link/ui.filetable_adjustrowheight.md - autodetect height of rows in datatable
-- api/link/ui.filetable_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.filetable_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.filetable_bind.md - binds components
 - api/link/ui.filetable_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.filetable_callevent.md - calls an inner event
 - api/link/ui.filetable_clearall.md - removes all items from the component
-- api/link/ui.filetable_clearcss.md - removes css class from all items
+- api/link/ui.filetable_clearcss.md - removes CSS class from all items
 - api/link/ui.filetable_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.filetable_closesub.md - closes subrow or subview for an item with the given id
 - api/link/ui.filetable_collectvalues.md - returns an array of unique values of the specified column
@@ -83,6 +83,7 @@ Methods
 - api/link/ui.filetable_hide.md - hides the view
 - api/link/ui.filetable_hidecolumn.md - hides the specified column
 - api/link/ui.filetable_hideoverlay.md - hides previously defined overlay
+- api/link/ui.filetable_ignoreundo.md - 
 - api/link/ui.filetable_iscolumnvisible.md - returns true if column is visible
 - api/link/ui.filetable_isenabled.md - checks whether the view is enabled
 - api/link/ui.filetable_isvisible.md - checks whether the view is visible
@@ -113,6 +114,7 @@ Methods
 - api/link/ui.filetable_removerowcss.md - remove css class from the row
 - api/link/ui.filetable_removeselectarea.md - removes a select area
 - api/link/ui.filetable_removespan.md - removes a rowspan/colspan from the datatable
+- api/link/ui.filetable_removeundo.md - 
 - api/link/ui.filetable_render.md - renders the specified item or the whole component
 - api/link/ui.filetable_resize.md - adjusts the view to a new size
 - api/link/ui.filetable_resizesubview.md - adjusts the row's size to the size of a subview
@@ -133,8 +135,9 @@ Methods
 - api/link/ui.filetable_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.filetable_unbind.md - breaks "bind" link
 - api/link/ui.filetable_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
+- api/link/ui.filetable_undo.md - 
 - api/link/ui.filetable_ungroup.md - ungroups data
-- api/link/ui.filetable_updateitem.md - sets properties of the data item
+- api/link/ui.filetable_updateitem.md - updates the data item with new properties
 - api/link/ui.filetable_validate.md - validates one record or all dataset against validation rules
 - api/link/ui.filetable_validateeditor.md - validates data in currently active editor
 }}
@@ -221,6 +224,7 @@ Methods
 - api/link/ui.filetable_hide.md
 - api/link/ui.filetable_hidecolumn.md
 - api/link/ui.filetable_hideoverlay.md
+- api/link/ui.filetable_ignoreundo.md
 - api/link/ui.filetable_iscolumnvisible.md
 - api/link/ui.filetable_isenabled.md
 - api/link/ui.filetable_isvisible.md
@@ -251,6 +255,7 @@ Methods
 - api/link/ui.filetable_removerowcss.md
 - api/link/ui.filetable_removeselectarea.md
 - api/link/ui.filetable_removespan.md
+- api/link/ui.filetable_removeundo.md
 - api/link/ui.filetable_render.md
 - api/link/ui.filetable_resize.md
 - api/link/ui.filetable_resizesubview.md
@@ -271,6 +276,7 @@ Methods
 - api/link/ui.filetable_sync.md
 - api/link/ui.filetable_unbind.md
 - api/link/ui.filetable_unblockevent.md
+- api/link/ui.filetable_undo.md
 - api/link/ui.filetable_ungroup.md
 - api/link/ui.filetable_updateitem.md
 - api/link/ui.filetable_validate.md

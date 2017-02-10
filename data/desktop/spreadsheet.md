@@ -1,6 +1,11 @@
 SpreadSheet
 =============
 
+What's New
+-----------
+
+Check recently added features, latest updates and bugfixes in the spreadsheet/whats_new.md list.
+
 API Reference
 ---------------
 
@@ -19,8 +24,9 @@ Webix SpreadSheet is a component intended for creating tables and performing var
 Webix SpreadSheet represents a web-tool for making tables online and keeping all the data locally. Thus, all the information in your reports and accounts will be kept secure and always at hand.
 The ready-made document can be exported into an Excel file, and you can import an Excel document into SpreadSheet as well.
 
-The component includes all the necessary functionality for handy work with data presented in the tabular form. You can edit and format the content of cells, resize cells,
-apply diverse styles, fonts and borders' types, align text and merge cells in rows and columns. Mathematical functions are also included. The component can be localized according to the rules
+The component includes all the necessary functionality for handy work with data presented in the tabular form. 
+You can edit and format the content of cells, resize cells, apply diverse styles, fonts and borders' types, align text and merge cells in rows 
+and columns. Mathematical functions are also included. The component can be localized according to the rules
 of various languages.
 
 <br>
@@ -67,6 +73,7 @@ of various languages.
             	<li>spreadsheet/cell_content.md</li> 
             	<li>spreadsheet/conditional_formatting.md</li>
             	<li>spreadsheet/math.md</li>
+                <li>spreadsheet/functions.md</li>
                 <li>spreadsheet/multiple_sheets.md</li>
                 <li>spreadsheet/rows_columns.md</li>                
             </ul>
@@ -102,6 +109,7 @@ of various languages.
 
 
 @index:
+- spreadsheet/whats_new.md
 - spreadsheet/spreadsheet_init.md
 - spreadsheet/loading_data.md
 - spreadsheet/localization.md
@@ -112,6 +120,7 @@ of various languages.
 - spreadsheet/cell_content.md
 - spreadsheet/conditional_formatting.md
 - spreadsheet/math.md
+- spreadsheet/functions.md
 - spreadsheet/multiple_sheets.md
 - spreadsheet/rows_columns.md
 - spreadsheet/export.md

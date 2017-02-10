@@ -16,13 +16,13 @@ dummy stub
 - api/link/ui.filemenu_add.md - adds an item to the store
 - api/link/ui.filemenu_addcss.md - applied CSS class to a component item
 - api/link/ui.filemenu_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.filemenu_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.filemenu_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.filemenu_attachto.md - attaches a context menu to a Webix component
 - api/link/ui.filemenu_bind.md - binds components
 - api/link/ui.filemenu_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.filemenu_callevent.md - calls an inner event
 - api/link/ui.filemenu_clearall.md - removes all items from the component
-- api/link/ui.filemenu_clearcss.md - removes css class from all items
+- api/link/ui.filemenu_clearcss.md - removes CSS class from all items
 - api/link/ui.filemenu_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.filemenu_close.md - removes a window
 - api/link/ui.filemenu_copy.md - copies an item to the same or another object
@@ -68,6 +68,7 @@ dummy stub
 - api/link/ui.filemenu_hasevent.md - checks whether the component has the specified event
 - api/link/ui.filemenu_hide.md - hides the view
 - api/link/ui.filemenu_hideitem.md - hides menu item
+- api/link/ui.filemenu_ignoreundo.md - 
 - api/link/ui.filemenu_isenabled.md - checks whether the view is enabled
 - api/link/ui.filemenu_isselected.md - checks whether the specified item is selected or not
 - api/link/ui.filemenu_isvisible.md - checks whether the view is visible
@@ -85,6 +86,7 @@ dummy stub
 - api/link/ui.filemenu_refresh.md - repaints the whole view or a certain item
 - api/link/ui.filemenu_remove.md - removes the specified item/items from datastore
 - api/link/ui.filemenu_removecss.md - removes CSS class from a component item
+- api/link/ui.filemenu_removeundo.md - 
 - api/link/ui.filemenu_render.md - renders the specified item or the whole component
 - api/link/ui.filemenu_resize.md - adjusts the view to a new size
 - api/link/ui.filemenu_resizechildren.md - resizes all children of the calling component
@@ -102,9 +104,10 @@ dummy stub
 - api/link/ui.filemenu_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.filemenu_unbind.md - breaks "bind" link
 - api/link/ui.filemenu_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
+- api/link/ui.filemenu_undo.md - 
 - api/link/ui.filemenu_unselect.md - removes selection from the specified item
 - api/link/ui.filemenu_unselectall.md - removes selection from all items
-- api/link/ui.filemenu_updateitem.md - sets properties of the data item
+- api/link/ui.filemenu_updateitem.md - updates the data item with new properties
 - api/link/ui.filemenu_validate.md - validates one record or all dataset against validation rules
 }}
 
@@ -238,6 +241,7 @@ dummy stub
 - api/link/ui.filemenu_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.filemenu_top_config.md - the top offset of a window
 - api/link/ui.filemenu_type_config.md - object that specifies items presentation
+- api/link/ui.filemenu_undo_config.md - 
 - api/link/ui.filemenu_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.filemenu_width_config.md - sets the width of the component
 - api/link/ui.filemenu_xcount_config.md - defines width of view in items

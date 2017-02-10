@@ -29,7 +29,7 @@ var label = webix.ui({
 
 {{api
 - api/link/ui.label_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.label_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.label_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.label_bind.md - binds components
 - api/link/ui.label_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.label_blur.md - removes the focus from the control

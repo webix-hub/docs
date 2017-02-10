@@ -5,13 +5,13 @@ Methods
 - api/link/ui.contextmenu_add.md - adds an item to the store
 - api/link/ui.contextmenu_addcss.md - applied CSS class to a component item
 - api/link/ui.contextmenu_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.contextmenu_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.contextmenu_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.contextmenu_attachto.md - attaches a context menu to a Webix component
 - api/link/ui.contextmenu_bind.md - binds components
 - api/link/ui.contextmenu_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.contextmenu_callevent.md - calls an inner event
 - api/link/ui.contextmenu_clearall.md - removes all items from the component
-- api/link/ui.contextmenu_clearcss.md - removes css class from all items
+- api/link/ui.contextmenu_clearcss.md - removes CSS class from all items
 - api/link/ui.contextmenu_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.contextmenu_close.md - removes a window
 - api/link/ui.contextmenu_copy.md - copies an item to the same or another object
@@ -57,6 +57,7 @@ Methods
 - api/link/ui.contextmenu_hasevent.md - checks whether the component has the specified event
 - api/link/ui.contextmenu_hide.md - hides the view
 - api/link/ui.contextmenu_hideitem.md - hides menu item
+- api/link/ui.contextmenu_ignoreundo.md - 
 - api/link/ui.contextmenu_isenabled.md - checks whether the view is enabled
 - api/link/ui.contextmenu_isselected.md - checks whether the specified item is selected or not
 - api/link/ui.contextmenu_isvisible.md - checks whether the view is visible
@@ -74,6 +75,7 @@ Methods
 - api/link/ui.contextmenu_refresh.md - repaints the whole view or a certain item
 - api/link/ui.contextmenu_remove.md - removes the specified item/items from datastore
 - api/link/ui.contextmenu_removecss.md - removes CSS class from a component item
+- api/link/ui.contextmenu_removeundo.md - 
 - api/link/ui.contextmenu_render.md - renders the specified item or the whole component
 - api/link/ui.contextmenu_resize.md - adjusts the view to a new size
 - api/link/ui.contextmenu_resizechildren.md - resizes all children of the calling component
@@ -91,9 +93,10 @@ Methods
 - api/link/ui.contextmenu_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.contextmenu_unbind.md - breaks "bind" link
 - api/link/ui.contextmenu_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
+- api/link/ui.contextmenu_undo.md - 
 - api/link/ui.contextmenu_unselect.md - removes selection from the specified item
 - api/link/ui.contextmenu_unselectall.md - removes selection from all items
-- api/link/ui.contextmenu_updateitem.md - sets properties of the data item
+- api/link/ui.contextmenu_updateitem.md - updates the data item with new properties
 - api/link/ui.contextmenu_validate.md - validates one record or all dataset against validation rules
 }}
 
@@ -153,6 +156,7 @@ Methods
 - api/link/ui.contextmenu_hasevent.md
 - api/link/ui.contextmenu_hide.md
 - api/link/ui.contextmenu_hideitem.md
+- api/link/ui.contextmenu_ignoreundo.md
 - api/link/ui.contextmenu_isenabled.md
 - api/link/ui.contextmenu_isselected.md
 - api/link/ui.contextmenu_isvisible.md
@@ -170,6 +174,7 @@ Methods
 - api/link/ui.contextmenu_refresh.md
 - api/link/ui.contextmenu_remove.md
 - api/link/ui.contextmenu_removecss.md
+- api/link/ui.contextmenu_removeundo.md
 - api/link/ui.contextmenu_render.md
 - api/link/ui.contextmenu_resize.md
 - api/link/ui.contextmenu_resizechildren.md
@@ -187,6 +192,7 @@ Methods
 - api/link/ui.contextmenu_sync.md
 - api/link/ui.contextmenu_unbind.md
 - api/link/ui.contextmenu_unblockevent.md
+- api/link/ui.contextmenu_undo.md
 - api/link/ui.contextmenu_unselect.md
 - api/link/ui.contextmenu_unselectall.md
 - api/link/ui.contextmenu_updateitem.md

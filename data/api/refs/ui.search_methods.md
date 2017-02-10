@@ -3,7 +3,7 @@ Methods
 
 {{api
 - api/link/ui.search_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.search_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.search_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.search_bind.md - binds components
 - api/link/ui.search_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.search_blur.md - removes the focus from the control

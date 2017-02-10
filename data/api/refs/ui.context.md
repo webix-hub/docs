@@ -39,7 +39,7 @@ var context = webix.ui({
 
 {{api
 - api/link/ui.context_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.context_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.context_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.context_attachto.md - attaches a context menu to a Webix component
 - api/link/ui.context_bind.md - binds components
 - api/link/ui.context_blockevent.md - temporarily blocks triggering of ALL events of the calling object

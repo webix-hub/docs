@@ -4,7 +4,7 @@ Methods
 {{api
 - api/link/ui.form_addview.md - add new view to layout-like component
 - api/link/ui.form_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.form_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.form_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.form_bind.md - binds components
 - api/link/ui.form_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.form_callevent.md - calls an inner event

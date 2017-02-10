@@ -5,12 +5,12 @@ Methods
 - api/link/ui.unitlist_add.md - adds an item to the store
 - api/link/ui.unitlist_addcss.md - applied CSS class to a component item
 - api/link/ui.unitlist_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.unitlist_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.unitlist_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.unitlist_bind.md - binds components
 - api/link/ui.unitlist_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.unitlist_callevent.md - calls an inner event
 - api/link/ui.unitlist_clearall.md - removes all items from the component
-- api/link/ui.unitlist_clearcss.md - removes css class from all items
+- api/link/ui.unitlist_clearcss.md - removes CSS class from all items
 - api/link/ui.unitlist_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.unitlist_copy.md - copies an item to the same or another object
 - api/link/ui.unitlist_count.md - returns the number of currently visible items
@@ -47,6 +47,7 @@ Methods
 - api/link/ui.unitlist_hascss.md - checks if item has specific css class
 - api/link/ui.unitlist_hasevent.md - checks whether the component has the specified event
 - api/link/ui.unitlist_hide.md - hides the view
+- api/link/ui.unitlist_ignoreundo.md - 
 - api/link/ui.unitlist_isenabled.md - checks whether the view is enabled
 - api/link/ui.unitlist_isselected.md - checks whether the specified item is selected or not
 - api/link/ui.unitlist_isvisible.md - checks whether the view is visible
@@ -64,6 +65,7 @@ Methods
 - api/link/ui.unitlist_refresh.md - repaints the whole view or a certain item
 - api/link/ui.unitlist_remove.md - removes the specified item/items from datastore
 - api/link/ui.unitlist_removecss.md - removes CSS class from a component item
+- api/link/ui.unitlist_removeundo.md - 
 - api/link/ui.unitlist_render.md - renders the specified item or the whole component
 - api/link/ui.unitlist_resize.md - adjusts the view to a new size
 - api/link/ui.unitlist_scrollto.md - scrolls the data container to a certain position
@@ -76,9 +78,10 @@ Methods
 - api/link/ui.unitlist_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.unitlist_unbind.md - breaks "bind" link
 - api/link/ui.unitlist_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
+- api/link/ui.unitlist_undo.md - 
 - api/link/ui.unitlist_unselect.md - removes selection from the specified item
 - api/link/ui.unitlist_unselectall.md - removes selection from all items
-- api/link/ui.unitlist_updateitem.md - sets properties of the data item
+- api/link/ui.unitlist_updateitem.md - updates the data item with new properties
 - api/link/ui.unitlist_validate.md - validates one record or all dataset against validation rules
 }}
 
@@ -128,6 +131,7 @@ Methods
 - api/link/ui.unitlist_hascss.md
 - api/link/ui.unitlist_hasevent.md
 - api/link/ui.unitlist_hide.md
+- api/link/ui.unitlist_ignoreundo.md
 - api/link/ui.unitlist_isenabled.md
 - api/link/ui.unitlist_isselected.md
 - api/link/ui.unitlist_isvisible.md
@@ -145,6 +149,7 @@ Methods
 - api/link/ui.unitlist_refresh.md
 - api/link/ui.unitlist_remove.md
 - api/link/ui.unitlist_removecss.md
+- api/link/ui.unitlist_removeundo.md
 - api/link/ui.unitlist_render.md
 - api/link/ui.unitlist_resize.md
 - api/link/ui.unitlist_scrollto.md
@@ -157,6 +162,7 @@ Methods
 - api/link/ui.unitlist_sync.md
 - api/link/ui.unitlist_unbind.md
 - api/link/ui.unitlist_unblockevent.md
+- api/link/ui.unitlist_undo.md
 - api/link/ui.unitlist_unselect.md
 - api/link/ui.unitlist_unselectall.md
 - api/link/ui.unitlist_updateitem.md

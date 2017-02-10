@@ -5,12 +5,12 @@ Methods
 - api/link/ui.grouplist_add.md - adds an item to the store
 - api/link/ui.grouplist_addcss.md - applied CSS class to a component item
 - api/link/ui.grouplist_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.grouplist_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.grouplist_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.grouplist_bind.md - binds components
 - api/link/ui.grouplist_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.grouplist_callevent.md - calls an inner event
 - api/link/ui.grouplist_clearall.md - removes all items from the component
-- api/link/ui.grouplist_clearcss.md - removes css class from all items
+- api/link/ui.grouplist_clearcss.md - removes CSS class from all items
 - api/link/ui.grouplist_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.grouplist_copy.md - copies an item to the same or another object
 - api/link/ui.grouplist_count.md - returns the number of currently visible items
@@ -47,6 +47,7 @@ Methods
 - api/link/ui.grouplist_hascss.md - checks if item has specific css class
 - api/link/ui.grouplist_hasevent.md - checks whether the component has the specified event
 - api/link/ui.grouplist_hide.md - hides the view
+- api/link/ui.grouplist_ignoreundo.md - 
 - api/link/ui.grouplist_isenabled.md - checks whether the view is enabled
 - api/link/ui.grouplist_isselected.md - checks whether the specified item is selected or not
 - api/link/ui.grouplist_isvisible.md - checks whether the view is visible
@@ -64,6 +65,7 @@ Methods
 - api/link/ui.grouplist_refresh.md - repaints the whole view or a certain item
 - api/link/ui.grouplist_remove.md - removes the specified item/items from datastore
 - api/link/ui.grouplist_removecss.md - removes CSS class from a component item
+- api/link/ui.grouplist_removeundo.md - 
 - api/link/ui.grouplist_render.md - renders the specified item or the whole component
 - api/link/ui.grouplist_resize.md - adjusts the view to a new size
 - api/link/ui.grouplist_scrollto.md - scrolls the data container to a certain position
@@ -77,10 +79,11 @@ Methods
 - api/link/ui.grouplist_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.grouplist_unbind.md - breaks "bind" link
 - api/link/ui.grouplist_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
+- api/link/ui.grouplist_undo.md - 
 - api/link/ui.grouplist_ungroup.md - ungroups data
 - api/link/ui.grouplist_unselect.md - removes selection from the specified item
 - api/link/ui.grouplist_unselectall.md - removes selection from all items
-- api/link/ui.grouplist_updateitem.md - sets properties of the data item
+- api/link/ui.grouplist_updateitem.md - updates the data item with new properties
 - api/link/ui.grouplist_validate.md - validates one record or all dataset against validation rules
 }}
 
@@ -130,6 +133,7 @@ Methods
 - api/link/ui.grouplist_hascss.md
 - api/link/ui.grouplist_hasevent.md
 - api/link/ui.grouplist_hide.md
+- api/link/ui.grouplist_ignoreundo.md
 - api/link/ui.grouplist_isenabled.md
 - api/link/ui.grouplist_isselected.md
 - api/link/ui.grouplist_isvisible.md
@@ -147,6 +151,7 @@ Methods
 - api/link/ui.grouplist_refresh.md
 - api/link/ui.grouplist_remove.md
 - api/link/ui.grouplist_removecss.md
+- api/link/ui.grouplist_removeundo.md
 - api/link/ui.grouplist_render.md
 - api/link/ui.grouplist_resize.md
 - api/link/ui.grouplist_scrollto.md
@@ -160,6 +165,7 @@ Methods
 - api/link/ui.grouplist_sync.md
 - api/link/ui.grouplist_unbind.md
 - api/link/ui.grouplist_unblockevent.md
+- api/link/ui.grouplist_undo.md
 - api/link/ui.grouplist_ungroup.md
 - api/link/ui.grouplist_unselect.md
 - api/link/ui.grouplist_unselectall.md

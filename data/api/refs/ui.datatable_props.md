@@ -85,6 +85,7 @@ Properties
 - api/link/ui.datatable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/ui.datatable_topsplit_config.md - defines the number of rows that will be "frozen" at the top of datatable
 - api/ui.datatable_type_config.md - used for configuring presentation of items
+- api/link/ui.datatable_undo_config.md - 
 - api/link/ui.datatable_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.datatable_width_config.md - sets the width of the component
 - api/ui.datatable_ycount_config.md - defines height of datatable in rows
@@ -174,6 +175,7 @@ Properties
 - api/link/ui.datatable_tooltip_config.md
 - api/ui.datatable_topsplit_config.md
 - api/ui.datatable_type_config.md
+- api/link/ui.datatable_undo_config.md
 - api/link/ui.datatable_url_config.md
 - api/link/ui.datatable_width_config.md
 - api/ui.datatable_ycount_config.md

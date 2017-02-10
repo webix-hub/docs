@@ -66,6 +66,7 @@ Properties
 - api/link/ui.filemenu_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.filemenu_top_config.md - the top offset of a window
 - api/link/ui.filemenu_type_config.md - object that specifies items presentation
+- api/link/ui.filemenu_undo_config.md - 
 - api/link/ui.filemenu_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.filemenu_width_config.md - sets the width of the component
 - api/link/ui.filemenu_xcount_config.md - defines width of view in items
@@ -138,6 +139,7 @@ Properties
 - api/link/ui.filemenu_tooltip_config.md
 - api/link/ui.filemenu_top_config.md
 - api/link/ui.filemenu_type_config.md
+- api/link/ui.filemenu_undo_config.md
 - api/link/ui.filemenu_url_config.md
 - api/link/ui.filemenu_width_config.md
 - api/link/ui.filemenu_xcount_config.md

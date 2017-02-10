@@ -5,12 +5,12 @@ Methods
 - api/link/ui.menu_add.md - adds an item to the store
 - api/link/ui.menu_addcss.md - applied CSS class to a component item
 - api/link/ui.menu_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.menu_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.menu_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.menu_bind.md - binds components
 - api/link/ui.menu_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.menu_callevent.md - calls an inner event
 - api/link/ui.menu_clearall.md - removes all items from the component
-- api/link/ui.menu_clearcss.md - removes css class from all items
+- api/link/ui.menu_clearcss.md - removes CSS class from all items
 - api/link/ui.menu_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.menu_copy.md - copies an item to the same or another object
 - api/link/ui.menu_count.md - returns the number of currently visible items
@@ -52,6 +52,7 @@ Methods
 - api/link/ui.menu_hasevent.md - checks whether the component has the specified event
 - api/link/ui.menu_hide.md - hides the view
 - api/ui.menu_hideitem.md - hides menu item
+- api/link/ui.menu_ignoreundo.md - 
 - api/link/ui.menu_isenabled.md - checks whether the view is enabled
 - api/link/ui.menu_isselected.md - checks whether the specified item is selected or not
 - api/link/ui.menu_isvisible.md - checks whether the view is visible
@@ -69,6 +70,7 @@ Methods
 - api/link/ui.menu_refresh.md - repaints the whole view or a certain item
 - api/link/ui.menu_remove.md - removes the specified item/items from datastore
 - api/link/ui.menu_removecss.md - removes CSS class from a component item
+- api/link/ui.menu_removeundo.md - 
 - api/link/ui.menu_render.md - renders the specified item or the whole component
 - api/link/ui.menu_resize.md - adjusts the view to a new size
 - api/link/ui.menu_scrollto.md - scrolls the data container to a certain position
@@ -83,9 +85,10 @@ Methods
 - api/link/ui.menu_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.menu_unbind.md - breaks "bind" link
 - api/link/ui.menu_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
+- api/link/ui.menu_undo.md - 
 - api/link/ui.menu_unselect.md - removes selection from the specified item
 - api/link/ui.menu_unselectall.md - removes selection from all items
-- api/link/ui.menu_updateitem.md - sets properties of the data item
+- api/link/ui.menu_updateitem.md - updates the data item with new properties
 - api/link/ui.menu_validate.md - validates one record or all dataset against validation rules
 }}
 
@@ -140,6 +143,7 @@ Methods
 - api/link/ui.menu_hasevent.md
 - api/link/ui.menu_hide.md
 - api/ui.menu_hideitem.md
+- api/link/ui.menu_ignoreundo.md
 - api/link/ui.menu_isenabled.md
 - api/link/ui.menu_isselected.md
 - api/link/ui.menu_isvisible.md
@@ -157,6 +161,7 @@ Methods
 - api/link/ui.menu_refresh.md
 - api/link/ui.menu_remove.md
 - api/link/ui.menu_removecss.md
+- api/link/ui.menu_removeundo.md
 - api/link/ui.menu_render.md
 - api/link/ui.menu_resize.md
 - api/link/ui.menu_scrollto.md
@@ -171,6 +176,7 @@ Methods
 - api/link/ui.menu_sync.md
 - api/link/ui.menu_unbind.md
 - api/link/ui.menu_unblockevent.md
+- api/link/ui.menu_undo.md
 - api/link/ui.menu_unselect.md
 - api/link/ui.menu_unselectall.md
 - api/link/ui.menu_updateitem.md

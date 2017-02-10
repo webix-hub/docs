@@ -16,6 +16,7 @@ Properties
 - api/link/datacollection_rules_config.md - set of validation rules for the component
 - api/link/datacollection_save_config.md - defines URLs for data saving
 - api/link/datacollection_scheme_config.md - defines schemes for data processing
+- api/link/datacollection_undo_config.md - 
 - api/link/datacollection_url_config.md - the URL which the component will use to load data after its initialization
 }}
 
@@ -34,5 +35,6 @@ Properties
 - api/link/datacollection_rules_config.md
 - api/link/datacollection_save_config.md
 - api/link/datacollection_scheme_config.md
+- api/link/datacollection_undo_config.md
 - api/link/datacollection_url_config.md
 

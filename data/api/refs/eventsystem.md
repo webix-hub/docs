@@ -10,7 +10,7 @@ EventSystem
 <div class='h2'>Methods</div>
 
 {{api
-- api/eventsystem_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/eventsystem_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/eventsystem_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/eventsystem_callevent.md - calls an inner event
 - api/eventsystem_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)

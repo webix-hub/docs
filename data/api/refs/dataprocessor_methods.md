@@ -2,7 +2,7 @@ Methods
 =======
 
 {{api
-- api/link/dataprocessor_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/dataprocessor_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/dataprocessor_attachprogress.md - assigns handler for data saving actions
 - api/link/dataprocessor_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/dataprocessor_callevent.md - calls an inner event

@@ -15,15 +15,18 @@ Methods
 - api/link/dataloader_getlastid.md - returns the id of the last item
 - api/link/dataloader_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/dataloader_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
+- api/link/dataloader_ignoreundo.md - 
 - api/link/dataloader_load.md - loads data from an external data source.
 - api/dataloader_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
 - api/link/dataloader_parse.md - loads data to the component from an inline data source
 - api/link/dataloader_refresh.md - repaints the whole view or a certain item
 - api/link/dataloader_remove.md - removes the specified item/items from datastore
+- api/link/dataloader_removeundo.md - 
 - api/link/dataloader_serialize.md - serializes data to a JSON object
 - api/link/dataloader_sort.md - sorts datastore
 - api/link/dataloader_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
-- api/link/dataloader_updateitem.md - sets properties of the data item
+- api/link/dataloader_undo.md - 
+- api/link/dataloader_updateitem.md - updates the data item with new properties
 }}
 
 @index:
@@ -40,14 +43,17 @@ Methods
 - api/link/dataloader_getlastid.md
 - api/link/dataloader_getnextid.md
 - api/link/dataloader_getprevid.md
+- api/link/dataloader_ignoreundo.md
 - api/link/dataloader_load.md
 - api/dataloader_loadnext.md
 - api/link/dataloader_parse.md
 - api/link/dataloader_refresh.md
 - api/link/dataloader_remove.md
+- api/link/dataloader_removeundo.md
 - api/link/dataloader_serialize.md
 - api/link/dataloader_sort.md
 - api/link/dataloader_sync.md
+- api/link/dataloader_undo.md
 - api/link/dataloader_updateitem.md
 
 

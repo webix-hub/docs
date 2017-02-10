@@ -4,7 +4,7 @@ Methods
 {{api
 - api/ui.segmented_addoption.md - add a new option (segment) to the button
 - api/link/ui.segmented_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.segmented_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.segmented_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.segmented_bind.md - binds components
 - api/link/ui.segmented_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.segmented_blur.md - removes the focus from the control

@@ -11,7 +11,7 @@ DataStore
 {{api
 - api/datastore_add.md - adds an item to the store
 - api/datastore_addmark.md - allows setting custom flag for a data item.
-- api/link/datastore_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/datastore_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/datastore_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/datastore_callevent.md - calls an inner event
 - api/datastore_changeid.md - changes the id of a data item
@@ -51,7 +51,7 @@ DataStore
 - api/datastore_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/datastore_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/datastore_unsync.md - breaks "sync" link
-- api/datastore_updateitem.md - sets properties of the data item
+- api/datastore_updateitem.md - updates the data item with new properties
 }}
 
 

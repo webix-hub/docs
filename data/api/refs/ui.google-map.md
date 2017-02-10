@@ -35,7 +35,7 @@ var googlemap = webix.ui({
 {{api
 - api/link/ui.google-map_add.md - adds an item to the store
 - api/link/ui.google-map_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.google-map_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.google-map_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.google-map_bind.md - binds components
 - api/link/ui.google-map_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.google-map_callevent.md - calls an inner event
@@ -64,6 +64,7 @@ var googlemap = webix.ui({
 - api/link/ui.google-map_gettopparentview.md - returns top parent view
 - api/link/ui.google-map_hasevent.md - checks whether the component has the specified event
 - api/link/ui.google-map_hide.md - hides the view
+- api/link/ui.google-map_ignoreundo.md - 
 - api/link/ui.google-map_isenabled.md - checks whether the view is enabled
 - api/link/ui.google-map_isvisible.md - checks whether the view is visible
 - api/link/ui.google-map_load.md - loads data from an external data source.
@@ -72,6 +73,7 @@ var googlemap = webix.ui({
 - api/link/ui.google-map_parse.md - loads data to the component from an inline data source
 - api/link/ui.google-map_refresh.md - repaints the whole view or a certain item
 - api/link/ui.google-map_remove.md - removes the specified item/items from datastore
+- api/link/ui.google-map_removeundo.md - 
 - api/ui.google-map_render.md - renders a map
 - api/link/ui.google-map_resize.md - adjusts the view to a new size
 - api/link/ui.google-map_serialize.md - serializes data to a JSON object
@@ -80,7 +82,8 @@ var googlemap = webix.ui({
 - api/link/ui.google-map_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.google-map_unbind.md - breaks "bind" link
 - api/link/ui.google-map_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/ui.google-map_updateitem.md - sets properties of the data item
+- api/link/ui.google-map_undo.md - 
+- api/link/ui.google-map_updateitem.md - updates the data item with new properties
 }}
 
 
@@ -146,6 +149,7 @@ var googlemap = webix.ui({
 - api/link/ui.google-map_removemissed_config.md - defines how to treat items in case of reloading
 - api/link/ui.google-map_save_config.md - defines URLs for data saving
 - api/link/ui.google-map_scheme_config.md - defines schemes for data processing
+- api/link/ui.google-map_undo_config.md - 
 - api/link/ui.google-map_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.google-map_width_config.md - sets the width of the component
 - api/ui.google-map_zoom_config.md - defines the resolution of map objects displaying

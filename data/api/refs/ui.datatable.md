@@ -45,12 +45,12 @@ var datatable = webix.ui({
 - api/link/ui.datatable_adjust.md - adjusts the component to the size of the parent HTML container
 - api/ui.datatable_adjustcolumn.md - adjusts a column to the width of the content
 - api/ui.datatable_adjustrowheight.md - autodetect height of rows in datatable
-- api/link/ui.datatable_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.datatable_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.datatable_bind.md - binds components
 - api/link/ui.datatable_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.datatable_callevent.md - calls an inner event
 - api/link/ui.datatable_clearall.md - removes all items from the component
-- api/link/ui.datatable_clearcss.md - removes css class from all items
+- api/link/ui.datatable_clearcss.md - removes CSS class from all items
 - api/ui.datatable_clearselection.md - clears selection
 - api/link/ui.datatable_clearvalidation.md - removes all validation marks from the component
 - api/ui.datatable_closesub.md - closes subrow or subview for an item with the given id
@@ -118,6 +118,7 @@ var datatable = webix.ui({
 - api/link/ui.datatable_hide.md - hides the view
 - api/ui.datatable_hidecolumn.md - hides the specified column
 - api/ui.datatable_hideoverlay.md - hides previously defined overlay
+- api/link/ui.datatable_ignoreundo.md - 
 - api/ui.datatable_iscolumnvisible.md - returns true if column is visible
 - api/link/ui.datatable_isenabled.md - checks whether the view is enabled
 - api/ui.datatable_isselected.md - returns true if related record is selected
@@ -150,6 +151,7 @@ var datatable = webix.ui({
 - api/ui.datatable_removerowcss.md - remove css class from the row
 - api/ui.datatable_removeselectarea.md - removes a select area
 - api/ui.datatable_removespan.md - removes a rowspan/colspan from the datatable
+- api/link/ui.datatable_removeundo.md - 
 - api/ui.datatable_render.md - renders the specified item or the whole component
 - api/link/ui.datatable_resize.md - adjusts the view to a new size
 - api/ui.datatable_resizesubview.md - adjusts the row's size to the size of a subview
@@ -173,10 +175,11 @@ var datatable = webix.ui({
 - api/link/ui.datatable_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.datatable_unbind.md - breaks "bind" link
 - api/link/ui.datatable_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
+- api/link/ui.datatable_undo.md - 
 - api/link/ui.datatable_ungroup.md - ungroups data
 - api/ui.datatable_unselect.md - cancels selection of the specified element
 - api/ui.datatable_unselectall.md - unselects all selected cells in a datatble
-- api/link/ui.datatable_updateitem.md - sets properties of the data item
+- api/link/ui.datatable_updateitem.md - updates the data item with new properties
 - api/link/ui.datatable_validate.md - validates one record or all dataset against validation rules
 - api/link/ui.datatable_validateeditor.md - validates data in currently active editor
 }}
@@ -362,6 +365,7 @@ var datatable = webix.ui({
 - api/link/ui.datatable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/ui.datatable_topsplit_config.md - defines the number of rows that will be "frozen" at the top of datatable
 - api/ui.datatable_type_config.md - used for configuring presentation of items
+- api/link/ui.datatable_undo_config.md - 
 - api/link/ui.datatable_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.datatable_width_config.md - sets the width of the component
 - api/ui.datatable_ycount_config.md - defines height of datatable in rows

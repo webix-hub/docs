@@ -34,7 +34,7 @@ var uploader = webix.ui({
 - api/ui.uploader_adddropzone.md - adds uploader drop zone to any HTML element of the page
 - api/ui.uploader_addfile.md - adds files to the uploader using browser fileApi
 - api/link/ui.uploader_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.uploader_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.uploader_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.uploader_bind.md - binds components
 - api/link/ui.uploader_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.uploader_blur.md - removes the focus from the control
@@ -114,6 +114,7 @@ var uploader = webix.ui({
 - api/link/ui.uploader_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.uploader_css_config.md - the name of a css class that will be applied to the view container
 - api/ui.uploader_datatype_config.md - the type of serverside response
+- api/ui.uploader_directory_config.md - 
 - api/link/ui.uploader_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.uploader_formdata_config.md - extra data that will be sent to server side along with the file uploading
 - api/link/ui.uploader_gravity_config.md - sets the view gravity (1 by default)

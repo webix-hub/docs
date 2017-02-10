@@ -6,7 +6,7 @@ Methods
 - api/ui.pivot_addoperation.md - adds a custom data operation
 - api/link/ui.pivot_addview.md - add new view to layout-like component
 - api/link/ui.pivot_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.pivot_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.pivot_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.pivot_bind.md - binds components
 - api/link/ui.pivot_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.pivot_callevent.md - calls an inner event
@@ -38,6 +38,7 @@ Methods
 - api/link/ui.pivot_gettopparentview.md - returns top parent view
 - api/link/ui.pivot_hasevent.md - checks whether the component has the specified event
 - api/link/ui.pivot_hide.md - hides the view
+- api/link/ui.pivot_ignoreundo.md - 
 - api/link/ui.pivot_index.md - returns the cell index in the layout collection
 - api/link/ui.pivot_innerid.md - returns the inner ID of an item by its public (real) ID
 - api/link/ui.pivot_isenabled.md - checks whether the view is enabled
@@ -48,6 +49,7 @@ Methods
 - api/link/ui.pivot_reconstruct.md - rebuilds the layout
 - api/link/ui.pivot_refresh.md - repaints the whole view or a certain item
 - api/link/ui.pivot_remove.md - removes the specified item/items from datastore
+- api/link/ui.pivot_removeundo.md - 
 - api/link/ui.pivot_removeview.md - removes view from layout-like component
 - api/ui.pivot_render.md - renders a pivot on the page
 - api/link/ui.pivot_resize.md - adjusts the view to a new size
@@ -61,7 +63,8 @@ Methods
 - api/link/ui.pivot_ui.md - allows creating new ui, the id of which will be locked in the parent id space
 - api/link/ui.pivot_unbind.md - breaks "bind" link
 - api/link/ui.pivot_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/ui.pivot_updateitem.md - sets properties of the data item
+- api/link/ui.pivot_undo.md - 
+- api/link/ui.pivot_updateitem.md - updates the data item with new properties
 }}
 
 @index:
@@ -101,6 +104,7 @@ Methods
 - api/link/ui.pivot_gettopparentview.md
 - api/link/ui.pivot_hasevent.md
 - api/link/ui.pivot_hide.md
+- api/link/ui.pivot_ignoreundo.md
 - api/link/ui.pivot_index.md
 - api/link/ui.pivot_innerid.md
 - api/link/ui.pivot_isenabled.md
@@ -111,6 +115,7 @@ Methods
 - api/link/ui.pivot_reconstruct.md
 - api/link/ui.pivot_refresh.md
 - api/link/ui.pivot_remove.md
+- api/link/ui.pivot_removeundo.md
 - api/link/ui.pivot_removeview.md
 - api/ui.pivot_render.md
 - api/link/ui.pivot_resize.md
@@ -124,6 +129,7 @@ Methods
 - api/link/ui.pivot_ui.md
 - api/link/ui.pivot_unbind.md
 - api/link/ui.pivot_unblockevent.md
+- api/link/ui.pivot_undo.md
 - api/link/ui.pivot_updateitem.md
 
 

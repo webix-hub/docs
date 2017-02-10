@@ -32,7 +32,7 @@ webix.ui({
 
 {{api
 - api/link/ui.tooltip_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.tooltip_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.tooltip_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.tooltip_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.tooltip_callevent.md - calls an inner event
 - api/link/ui.tooltip_customize.md - redefines the 'type' property

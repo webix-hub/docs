@@ -4,7 +4,7 @@ Methods
 {{api
 - api/link/treecollection_add.md - adds an item to the store
 - api/link/treecollection_addbind.md - adds one more bound target
-- api/link/treecollection_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/treecollection_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/treecollection_bind.md - binds components
 - api/link/treecollection_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/treecollection_callevent.md - calls an inner event
@@ -33,6 +33,7 @@ Methods
 - api/link/treecollection_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
 - api/link/treecollection_getprevsiblingid.md - returns the id of the previous sibling of the specified node
 - api/link/treecollection_hasevent.md - checks whether the component has the specified event
+- api/link/treecollection_ignoreundo.md - 
 - api/link/treecollection_isbranch.md - checks whether the node has any children
 - api/link/treecollection_isvisible.md - returns true if current view is visible
 - api/link/treecollection_load.md - loads data from an external data source.
@@ -47,6 +48,7 @@ Methods
 - api/link/treecollection_refreshcursor.md - force repainting of all bound components with current cursor value
 - api/link/treecollection_remove.md - removes the specified item/items from datastore
 - api/link/treecollection_removebind.md - disables data binding
+- api/link/treecollection_removeundo.md - 
 - api/link/treecollection_savebatch.md - makes simultaneous saving several components
 - api/link/treecollection_serialize.md - serializes data to a JSON object
 - api/link/treecollection_setbinddata.md - moves data from master to child
@@ -55,7 +57,8 @@ Methods
 - api/link/treecollection_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/treecollection_unbind.md - breaks "bind" link
 - api/link/treecollection_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/treecollection_updateitem.md - sets properties of the data item
+- api/link/treecollection_undo.md - 
+- api/link/treecollection_updateitem.md - updates the data item with new properties
 - api/link/treecollection_validate.md - validates one record or all dataset against validation rules
 }}
 
@@ -91,6 +94,7 @@ Methods
 - api/link/treecollection_getprevid.md
 - api/link/treecollection_getprevsiblingid.md
 - api/link/treecollection_hasevent.md
+- api/link/treecollection_ignoreundo.md
 - api/link/treecollection_isbranch.md
 - api/link/treecollection_isvisible.md
 - api/link/treecollection_load.md
@@ -105,6 +109,7 @@ Methods
 - api/link/treecollection_refreshcursor.md
 - api/link/treecollection_remove.md
 - api/link/treecollection_removebind.md
+- api/link/treecollection_removeundo.md
 - api/link/treecollection_savebatch.md
 - api/link/treecollection_serialize.md
 - api/link/treecollection_setbinddata.md
@@ -113,6 +118,7 @@ Methods
 - api/link/treecollection_sync.md
 - api/link/treecollection_unbind.md
 - api/link/treecollection_unblockevent.md
+- api/link/treecollection_undo.md
 - api/link/treecollection_updateitem.md
 - api/link/treecollection_validate.md
 

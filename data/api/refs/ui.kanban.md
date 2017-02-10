@@ -42,7 +42,7 @@ var kanban = webix.ui({
 - api/link/ui.kanban_add.md - adds an item to the store
 - api/link/ui.kanban_addview.md - add new view to layout-like component
 - api/link/ui.kanban_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.kanban_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.kanban_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.kanban_bind.md - binds components
 - api/link/ui.kanban_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.kanban_callevent.md - calls an inner event
@@ -73,6 +73,7 @@ var kanban = webix.ui({
 - api/link/ui.kanban_gettopparentview.md - returns top parent view
 - api/link/ui.kanban_hasevent.md - checks whether the component has the specified event
 - api/link/ui.kanban_hide.md - hides the view
+- api/link/ui.kanban_ignoreundo.md - 
 - api/link/ui.kanban_index.md - returns the cell index in the layout collection
 - api/link/ui.kanban_isenabled.md - checks whether the view is enabled
 - api/link/ui.kanban_isvisible.md - checks whether the view is visible
@@ -83,18 +84,21 @@ var kanban = webix.ui({
 - api/link/ui.kanban_reconstruct.md - rebuilds the layout
 - api/link/ui.kanban_refresh.md - repaints the whole view or a certain item
 - api/link/ui.kanban_remove.md - removes the specified item/items from datastore
+- api/link/ui.kanban_removeundo.md - 
 - api/link/ui.kanban_removeview.md - removes view from layout-like component
 - api/link/ui.kanban_resize.md - adjusts the view to a new size
 - api/link/ui.kanban_resizechildren.md - resizes all children of the calling component
 - api/ui.kanban_select.md - selects the specified task
 - api/link/ui.kanban_serialize.md - serializes data to a JSON object
+- api/ui.kanban_setindex.md - 
 - api/link/ui.kanban_show.md - makes the component visible
 - api/link/ui.kanban_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
 - api/link/ui.kanban_sort.md - sorts datastore
 - api/link/ui.kanban_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.kanban_unbind.md - breaks "bind" link
 - api/link/ui.kanban_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/ui.kanban_updateitem.md - sets properties of the data item
+- api/link/ui.kanban_undo.md - 
+- api/link/ui.kanban_updateitem.md - updates the data item with new properties
 }}
 
 
@@ -108,28 +112,28 @@ var kanban = webix.ui({
 - api/link/ui.kanban_onafterexpand_event.md - fires after an item expands in the accordion
 - api/link/ui.kanban_onafterload_event.md - fires after data loading is complete
 - api/link/ui.kanban_onaftersort_event.md - fires after sorting dataset
-- api/ui.kanban_onafterstatuschange_event.md - 
-- api/ui.kanban_onavatarclick_event.md - 
+- api/ui.kanban_onafterstatuschange_event.md - fires after an item has been dropped into the list with a different status
+- api/ui.kanban_onavatarclick_event.md - fires on clicking an avatar in the item
 - api/link/ui.kanban_onbeforeadd_event.md - fires before adding item to datastore
 - api/link/ui.kanban_onbeforedelete_event.md - fires before item deleting
 - api/link/ui.kanban_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/link/ui.kanban_onbeforesort_event.md - fires before sorting dataset
-- api/ui.kanban_onbeforestatuschange_event.md - 
+- api/ui.kanban_onbeforestatuschange_event.md - fires before an item is going to be dropped into the list with different status
 - api/link/ui.kanban_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.kanban_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.kanban_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.kanban_ondestruct_event.md - occurs when component destroyed
-- api/ui.kanban_onlistaftercontextmenu_event.md - 
-- api/ui.kanban_onlistafterdrop_event.md - 
-- api/ui.kanban_onlistafterselect_event.md - 
-- api/ui.kanban_onlistbeforecontextmenu_event.md - 
-- api/ui.kanban_onlistbeforedrag_event.md - 
-- api/ui.kanban_onlistbeforedragin_event.md - 
-- api/ui.kanban_onlistbeforedrop_event.md - 
-- api/ui.kanban_onlistbeforeselect_event.md - 
-- api/ui.kanban_onlisticonclick_event.md - 
-- api/ui.kanban_onlistitemclick_event.md - 
-- api/ui.kanban_onlistitemdblclick_event.md - 
+- api/ui.kanban_onlistaftercontextmenu_event.md - fires after the context menu was called in the item area
+- api/ui.kanban_onlistafterdrop_event.md - fires after drag-n-drop has finished
+- api/ui.kanban_onlistafterselect_event.md - fires after an item has been selected
+- api/ui.kanban_onlistbeforecontextmenu_event.md - fires on an item right click, before the native context menu is displayed
+- api/ui.kanban_onlistbeforedrag_event.md - fires before the mouse button is pressed and the cursor is moved over a draggable item
+- api/ui.kanban_onlistbeforedragin_event.md - fires before a dragged element is moved over the droppable list
+- api/ui.kanban_onlistbeforedrop_event.md - fires before a dragged element is released over the droppable list
+- api/ui.kanban_onlistbeforeselect_event.md - fires before an item selection started
+- api/ui.kanban_onlisticonclick_event.md - fires on clicking any icon in the list item
+- api/ui.kanban_onlistitemclick_event.md - fires on an item click
+- api/ui.kanban_onlistitemdblclick_event.md - fires when an item has been double-clicked
 - api/link/ui.kanban_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 }}
 
@@ -172,6 +176,7 @@ var kanban = webix.ui({
 - api/link/ui.kanban_save_config.md - defines URLs for data saving
 - api/link/ui.kanban_scheme_config.md - defines schemes for data processing
 - api/link/ui.kanban_type_config.md - defines the layout borders
+- api/link/ui.kanban_undo_config.md - 
 - api/link/ui.kanban_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.kanban_visiblebatch_config.md - sets the batch that will be shown initially
 - api/link/ui.kanban_width_config.md - sets the width of the component

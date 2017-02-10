@@ -5,7 +5,7 @@ Methods
 - api/link/ui.kanban_add.md - adds an item to the store
 - api/link/ui.kanban_addview.md - add new view to layout-like component
 - api/link/ui.kanban_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.kanban_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.kanban_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.kanban_bind.md - binds components
 - api/link/ui.kanban_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.kanban_callevent.md - calls an inner event
@@ -36,6 +36,7 @@ Methods
 - api/link/ui.kanban_gettopparentview.md - returns top parent view
 - api/link/ui.kanban_hasevent.md - checks whether the component has the specified event
 - api/link/ui.kanban_hide.md - hides the view
+- api/link/ui.kanban_ignoreundo.md - 
 - api/link/ui.kanban_index.md - returns the cell index in the layout collection
 - api/link/ui.kanban_isenabled.md - checks whether the view is enabled
 - api/link/ui.kanban_isvisible.md - checks whether the view is visible
@@ -46,18 +47,21 @@ Methods
 - api/link/ui.kanban_reconstruct.md - rebuilds the layout
 - api/link/ui.kanban_refresh.md - repaints the whole view or a certain item
 - api/link/ui.kanban_remove.md - removes the specified item/items from datastore
+- api/link/ui.kanban_removeundo.md - 
 - api/link/ui.kanban_removeview.md - removes view from layout-like component
 - api/link/ui.kanban_resize.md - adjusts the view to a new size
 - api/link/ui.kanban_resizechildren.md - resizes all children of the calling component
 - api/ui.kanban_select.md - selects the specified task
 - api/link/ui.kanban_serialize.md - serializes data to a JSON object
+- api/ui.kanban_setindex.md - 
 - api/link/ui.kanban_show.md - makes the component visible
 - api/link/ui.kanban_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
 - api/link/ui.kanban_sort.md - sorts datastore
 - api/link/ui.kanban_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.kanban_unbind.md - breaks "bind" link
 - api/link/ui.kanban_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/ui.kanban_updateitem.md - sets properties of the data item
+- api/link/ui.kanban_undo.md - 
+- api/link/ui.kanban_updateitem.md - updates the data item with new properties
 }}
 
 @index:
@@ -95,6 +99,7 @@ Methods
 - api/link/ui.kanban_gettopparentview.md
 - api/link/ui.kanban_hasevent.md
 - api/link/ui.kanban_hide.md
+- api/link/ui.kanban_ignoreundo.md
 - api/link/ui.kanban_index.md
 - api/link/ui.kanban_isenabled.md
 - api/link/ui.kanban_isvisible.md
@@ -105,17 +110,20 @@ Methods
 - api/link/ui.kanban_reconstruct.md
 - api/link/ui.kanban_refresh.md
 - api/link/ui.kanban_remove.md
+- api/link/ui.kanban_removeundo.md
 - api/link/ui.kanban_removeview.md
 - api/link/ui.kanban_resize.md
 - api/link/ui.kanban_resizechildren.md
 - api/ui.kanban_select.md
 - api/link/ui.kanban_serialize.md
+- api/ui.kanban_setindex.md
 - api/link/ui.kanban_show.md
 - api/link/ui.kanban_showbatch.md
 - api/link/ui.kanban_sort.md
 - api/link/ui.kanban_sync.md
 - api/link/ui.kanban_unbind.md
 - api/link/ui.kanban_unblockevent.md
+- api/link/ui.kanban_undo.md
 - api/link/ui.kanban_updateitem.md
 
 

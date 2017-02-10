@@ -16,12 +16,12 @@ dummy stub
 - api/link/ui.path_add.md - adds an item to the store
 - api/link/ui.path_addcss.md - applied CSS class to a component item
 - api/link/ui.path_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.path_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.path_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.path_bind.md - binds components
 - api/link/ui.path_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.path_callevent.md - calls an inner event
 - api/link/ui.path_clearall.md - removes all items from the component
-- api/link/ui.path_clearcss.md - removes css class from all items
+- api/link/ui.path_clearcss.md - removes CSS class from all items
 - api/link/ui.path_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.path_copy.md - copies an item to the same or another object
 - api/link/ui.path_count.md - returns the number of currently visible items
@@ -57,6 +57,7 @@ dummy stub
 - api/link/ui.path_hascss.md - checks if item has specific css class
 - api/link/ui.path_hasevent.md - checks whether the component has the specified event
 - api/link/ui.path_hide.md - hides the view
+- api/link/ui.path_ignoreundo.md - 
 - api/link/ui.path_isenabled.md - checks whether the view is enabled
 - api/link/ui.path_isselected.md - checks whether the specified item is selected or not
 - api/link/ui.path_isvisible.md - checks whether the view is visible
@@ -74,6 +75,7 @@ dummy stub
 - api/link/ui.path_refresh.md - repaints the whole view or a certain item
 - api/link/ui.path_remove.md - removes the specified item/items from datastore
 - api/link/ui.path_removecss.md - removes CSS class from a component item
+- api/link/ui.path_removeundo.md - 
 - api/link/ui.path_render.md - renders the specified item or the whole component
 - api/link/ui.path_resize.md - adjusts the view to a new size
 - api/link/ui.path_scrollto.md - scrolls the data container to a certain position
@@ -88,9 +90,10 @@ dummy stub
 - api/link/ui.path_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.path_unbind.md - breaks "bind" link
 - api/link/ui.path_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
+- api/link/ui.path_undo.md - 
 - api/link/ui.path_unselect.md - removes selection from the specified item
 - api/link/ui.path_unselectall.md - removes selection from all items
-- api/link/ui.path_updateitem.md - sets properties of the data item
+- api/link/ui.path_updateitem.md - updates the data item with new properties
 - api/link/ui.path_validate.md - validates one record or all dataset against validation rules
 }}
 
@@ -201,6 +204,7 @@ dummy stub
 - api/link/ui.path_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
 - api/link/ui.path_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.path_type_config.md - object that specifies items presentation
+- api/link/ui.path_undo_config.md - 
 - api/link/ui.path_url_config.md - the URL which the component will use to load data after its initialization
 - api/ui.path_value_config.md - 
 - api/link/ui.path_width_config.md - sets the width of the component

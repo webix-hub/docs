@@ -27,7 +27,7 @@ Properties
 - api/link/ui.filemanager_minwidth_config.md - sets the minimal width for the view
 - api/ui.filemanager_mode_config.md - defines the id of the initially selected mode ("table" by default)
 - api/ui.filemanager_modes_config.md - specifies an array of modes in the File view
-- api/ui.filemanager_nofilecache_config.md - 
+- api/ui.filemanager_nofilecache_config.md - defines whether files' caching is enabled
 - api/link/ui.filemanager_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.filemanager_padding_config.md - defines the space between the element borders and content (applies the specified value to all sides).
 - api/link/ui.filemanager_paddingx_config.md - sets the right and left padding (applies the specified value to both sides)
@@ -47,6 +47,7 @@ Properties
 - api/ui.filemanager_templatesize_config.md - defines the template applied for the file size
 - api/ui.filemanager_templatetype_config.md - specifies the template applied for the type of a file
 - api/link/ui.filemanager_type_config.md - defines the layout borders
+- api/link/ui.filemanager_undo_config.md - 
 - api/ui.filemanager_uploadprogress_config.md - defines an object with configuration of progress bar that appears during the upload
 - api/link/ui.filemanager_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.filemanager_visiblebatch_config.md - sets the batch that will be shown initially
@@ -99,6 +100,7 @@ Properties
 - api/ui.filemanager_templatesize_config.md
 - api/ui.filemanager_templatetype_config.md
 - api/link/ui.filemanager_type_config.md
+- api/link/ui.filemanager_undo_config.md
 - api/ui.filemanager_uploadprogress_config.md
 - api/link/ui.filemanager_url_config.md
 - api/link/ui.filemanager_visiblebatch_config.md

@@ -9,6 +9,7 @@ Others
 - api/link/ui.filetree_$dragout_other.md - method called when item moved out of possible drop landing during dnd
 - api/link/ui.filetree_$drop_other.md - method called when item dragged and dropped on valid target
 - api/link/ui.filetree_$dropallow_other.md - can be redefined, if you need custom drop rules
+- api/link/ui.filetree_$fixeditor_other.md - 
 - api/link/ui.filetree_$getsize_other.md - returns the current size of the component
 - api/link/ui.filetree_$height_other.md - current height of the view
 - api/link/ui.filetree_$scope_other.md - scope for resolving event and method names
@@ -34,6 +35,7 @@ Others
 - api/link/ui.filetree_$dragout_other.md
 - api/link/ui.filetree_$drop_other.md
 - api/link/ui.filetree_$dropallow_other.md
+- api/link/ui.filetree_$fixeditor_other.md
 - api/link/ui.filetree_$getsize_other.md
 - api/link/ui.filetree_$height_other.md
 - api/link/ui.filetree_$scope_other.md

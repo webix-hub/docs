@@ -3,7 +3,7 @@ Methods
 
 {{api
 - api/link/ui.text_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.text_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.text_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.text_bind.md - binds components
 - api/link/ui.text_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.text_blur.md - removes the focus from the control

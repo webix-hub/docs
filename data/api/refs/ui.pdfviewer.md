@@ -31,7 +31,7 @@ var pdfviewer = webix.ui({
 
 {{api
 - api/link/ui.pdfviewer_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.pdfviewer_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.pdfviewer_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.pdfviewer_bind.md - binds components
 - api/link/ui.pdfviewer_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.pdfviewer_callevent.md - calls an inner event

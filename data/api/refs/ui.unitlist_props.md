@@ -47,6 +47,7 @@ Properties
 - api/link/ui.unitlist_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
 - api/link/ui.unitlist_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.unitlist_type_config.md - object that specifies items presentation
+- api/link/ui.unitlist_undo_config.md - 
 - api/ui.unitlist_uniteby_config.md - sets the template according which items will be grouped in units.
 - api/link/ui.unitlist_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.unitlist_width_config.md - sets the width of the component
@@ -100,6 +101,7 @@ Properties
 - api/link/ui.unitlist_templatecopy_config.md
 - api/link/ui.unitlist_tooltip_config.md
 - api/link/ui.unitlist_type_config.md
+- api/link/ui.unitlist_undo_config.md
 - api/ui.unitlist_uniteby_config.md
 - api/link/ui.unitlist_url_config.md
 - api/link/ui.unitlist_width_config.md

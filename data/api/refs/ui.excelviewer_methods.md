@@ -10,12 +10,12 @@ Methods
 - api/link/ui.excelviewer_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.excelviewer_adjustcolumn.md - adjusts a column to the width of the content
 - api/link/ui.excelviewer_adjustrowheight.md - autodetect height of rows in datatable
-- api/link/ui.excelviewer_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.excelviewer_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.excelviewer_bind.md - binds components
 - api/link/ui.excelviewer_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.excelviewer_callevent.md - calls an inner event
 - api/link/ui.excelviewer_clearall.md - removes all items from the component
-- api/link/ui.excelviewer_clearcss.md - removes css class from all items
+- api/link/ui.excelviewer_clearcss.md - removes CSS class from all items
 - api/link/ui.excelviewer_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.excelviewer_closesub.md - closes subrow or subview for an item with the given id
 - api/link/ui.excelviewer_collectvalues.md - returns an array of unique values of the specified column
@@ -80,6 +80,7 @@ Methods
 - api/link/ui.excelviewer_hide.md - hides the view
 - api/link/ui.excelviewer_hidecolumn.md - hides the specified column
 - api/link/ui.excelviewer_hideoverlay.md - hides previously defined overlay
+- api/link/ui.excelviewer_ignoreundo.md - 
 - api/link/ui.excelviewer_iscolumnvisible.md - returns true if column is visible
 - api/link/ui.excelviewer_isenabled.md - checks whether the view is enabled
 - api/link/ui.excelviewer_isvisible.md - checks whether the view is visible
@@ -108,6 +109,7 @@ Methods
 - api/link/ui.excelviewer_removecss.md - removes CSS class from a component item
 - api/link/ui.excelviewer_removerowcss.md - remove css class from the row
 - api/link/ui.excelviewer_removespan.md - removes a rowspan/colspan from the datatable
+- api/link/ui.excelviewer_removeundo.md - 
 - api/link/ui.excelviewer_render.md - renders the specified item or the whole component
 - api/link/ui.excelviewer_resize.md - adjusts the view to a new size
 - api/link/ui.excelviewer_resizesubview.md - adjusts the row's size to the size of a subview
@@ -129,8 +131,9 @@ Methods
 - api/link/ui.excelviewer_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.excelviewer_unbind.md - breaks "bind" link
 - api/link/ui.excelviewer_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
+- api/link/ui.excelviewer_undo.md - 
 - api/link/ui.excelviewer_ungroup.md - ungroups data
-- api/link/ui.excelviewer_updateitem.md - sets properties of the data item
+- api/link/ui.excelviewer_updateitem.md - updates the data item with new properties
 - api/link/ui.excelviewer_validate.md - validates one record or all dataset against validation rules
 - api/link/ui.excelviewer_validateeditor.md - validates data in currently active editor
 }}
@@ -214,6 +217,7 @@ Methods
 - api/link/ui.excelviewer_hide.md
 - api/link/ui.excelviewer_hidecolumn.md
 - api/link/ui.excelviewer_hideoverlay.md
+- api/link/ui.excelviewer_ignoreundo.md
 - api/link/ui.excelviewer_iscolumnvisible.md
 - api/link/ui.excelviewer_isenabled.md
 - api/link/ui.excelviewer_isvisible.md
@@ -242,6 +246,7 @@ Methods
 - api/link/ui.excelviewer_removecss.md
 - api/link/ui.excelviewer_removerowcss.md
 - api/link/ui.excelviewer_removespan.md
+- api/link/ui.excelviewer_removeundo.md
 - api/link/ui.excelviewer_render.md
 - api/link/ui.excelviewer_resize.md
 - api/link/ui.excelviewer_resizesubview.md
@@ -263,6 +268,7 @@ Methods
 - api/link/ui.excelviewer_sync.md
 - api/link/ui.excelviewer_unbind.md
 - api/link/ui.excelviewer_unblockevent.md
+- api/link/ui.excelviewer_undo.md
 - api/link/ui.excelviewer_ungroup.md
 - api/link/ui.excelviewer_updateitem.md
 - api/link/ui.excelviewer_validate.md

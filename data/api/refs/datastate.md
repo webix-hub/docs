@@ -15,9 +15,18 @@ DataState
 }}
 
 
+<div class='h2'>Properties</div>
+
+{{api
+- api/datastate_leftsplit_config.md - 
+- api/datastate_rightsplit_config.md - 
+}}
+
+
 
 
 
 @index:
 - api/refs/datastate_methods.md
+- api/refs/datastate_props.md
 

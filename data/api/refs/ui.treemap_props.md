@@ -50,6 +50,7 @@ Properties
 - api/link/ui.treemap_threestate_config.md - enable three-state checkboxes
 - api/link/ui.treemap_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.treemap_type_config.md - object that specifies items presentation
+- api/link/ui.treemap_undo_config.md - 
 - api/link/ui.treemap_url_config.md - the URL which the component will use to load data after its initialization
 - api/ui.treemap_value_config.md - a template that specifies the area of an item rectangle
 - api/link/ui.treemap_width_config.md - sets the width of the component
@@ -104,6 +105,7 @@ Properties
 - api/link/ui.treemap_threestate_config.md
 - api/link/ui.treemap_tooltip_config.md
 - api/link/ui.treemap_type_config.md
+- api/link/ui.treemap_undo_config.md
 - api/link/ui.treemap_url_config.md
 - api/ui.treemap_value_config.md
 - api/link/ui.treemap_width_config.md

@@ -42,6 +42,7 @@ Properties
 - api/link/ui.organogram_threestate_config.md - enable three-state checkboxes
 - api/link/ui.organogram_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.organogram_type_config.md - object that specifies items presentation
+- api/link/ui.organogram_undo_config.md - 
 - api/link/ui.organogram_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.organogram_width_config.md - sets the width of the component
 }}
@@ -87,6 +88,7 @@ Properties
 - api/link/ui.organogram_threestate_config.md
 - api/link/ui.organogram_tooltip_config.md
 - api/link/ui.organogram_type_config.md
+- api/link/ui.organogram_undo_config.md
 - api/link/ui.organogram_url_config.md
 - api/link/ui.organogram_width_config.md
 

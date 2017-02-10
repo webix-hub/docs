@@ -40,13 +40,14 @@ var spreadsheet = webix.ui({
 - api/link/ui.spreadsheet_addview.md - add new view to layout-like component
 - api/link/ui.spreadsheet_adjust.md - adjusts the component to the size of the parent HTML container
 - api/ui.spreadsheet_alert.md - creates an alert box
-- api/link/ui.spreadsheet_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.spreadsheet_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.spreadsheet_bind.md - binds components
 - api/link/ui.spreadsheet_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.spreadsheet_callevent.md - calls an inner event
-- api/ui.spreadsheet_clearrange.md - clears the range
+- api/ui.spreadsheet_clearrange.md - clears either selected or specified range of cells
 - api/ui.spreadsheet_clearsheet.md - clears the content of the currently active sheet
 - api/ui.spreadsheet_combinecells.md - merges several adjacent cells
+- api/ui.spreadsheet_compactstyles.md - 
 - api/ui.spreadsheet_confirm.md - creates a confirm box
 - api/link/ui.spreadsheet_define.md - redefines a single configuration property (or a hash of properties)
 - api/ui.spreadsheet_deletecolumn.md - deletes a column by id
@@ -92,9 +93,11 @@ var spreadsheet = webix.ui({
 - api/ui.spreadsheet_lockcell.md - forbids editing a cell
 - api/link/ui.spreadsheet_mapevent.md - routes events from one object to another
 - api/link/ui.spreadsheet_parse.md - loads data to the component from an inline data source
+- api/ui.spreadsheet_recalculate.md - 
 - api/link/ui.spreadsheet_reconstruct.md - rebuilds the layout
 - api/ui.spreadsheet_redo.md - remakes the action that was reverted by the undo action
 - api/ui.spreadsheet_refresh.md - repaints spreadsheet
+- api/ui.spreadsheet_registermathmethod.md - 
 - api/ui.spreadsheet_removefilter.md - removes filters from the sheet
 - api/ui.spreadsheet_removesheet.md - removes a sheet by name
 - api/link/ui.spreadsheet_removeview.md - removes view from layout-like component
@@ -141,6 +144,7 @@ var spreadsheet = webix.ui({
 - api/ui.spreadsheet_ondataserialize_event.md - fires when serialization of data is started
 - api/link/ui.spreadsheet_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.spreadsheet_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
+- api/ui.spreadsheet_onmathrefresh_event.md - 
 - api/ui.spreadsheet_onreset_event.md - fires when the settings of SpreadSheet are reset to the initial state
 - api/ui.spreadsheet_onstyleset_event.md - fires when a new style is set for a cell
 }}

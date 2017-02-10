@@ -3,7 +3,7 @@ Methods
 
 {{api
 - api/link/ui.colorpicker_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.colorpicker_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.colorpicker_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.colorpicker_bind.md - binds components
 - api/link/ui.colorpicker_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.colorpicker_blur.md - removes the focus from the control

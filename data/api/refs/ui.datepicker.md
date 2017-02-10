@@ -32,7 +32,7 @@ var datepicker = webix.ui({
 
 {{api
 - api/link/ui.datepicker_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.datepicker_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.datepicker_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.datepicker_bind.md - binds components
 - api/link/ui.datepicker_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.datepicker_blur.md - removes the focus from the control

@@ -15,7 +15,7 @@ dummy stub
 {{api
 - api/link/ui.abslayout_addview.md - add new view to layout-like component
 - api/link/ui.abslayout_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.abslayout_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.abslayout_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.abslayout_bind.md - binds components
 - api/link/ui.abslayout_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.abslayout_callevent.md - calls an inner event
