@@ -49,7 +49,6 @@ Properties
 - api/link/ui.path_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
 - api/link/ui.path_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.path_type_config.md - object that specifies items presentation
-- api/link/ui.path_undo_config.md - 
 - api/link/ui.path_url_config.md - the URL which the component will use to load data after its initialization
 - api/ui.path_value_config.md - 
 - api/link/ui.path_width_config.md - sets the width of the component
@@ -105,7 +104,6 @@ Properties
 - api/link/ui.path_templatecopy_config.md
 - api/link/ui.path_tooltip_config.md
 - api/link/ui.path_type_config.md
-- api/link/ui.path_undo_config.md
 - api/link/ui.path_url_config.md
 - api/ui.path_value_config.md
 - api/link/ui.path_width_config.md

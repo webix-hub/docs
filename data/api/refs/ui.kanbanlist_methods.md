@@ -45,7 +45,6 @@ Methods
 - api/link/ui.kanbanlist_hascss.md - checks if item has specific css class
 - api/link/ui.kanbanlist_hasevent.md - checks whether the component has the specified event
 - api/link/ui.kanbanlist_hide.md - hides the view
-- api/link/ui.kanbanlist_ignoreundo.md - 
 - api/link/ui.kanbanlist_isenabled.md - checks whether the view is enabled
 - api/link/ui.kanbanlist_isselected.md - checks whether the specified item is selected or not
 - api/link/ui.kanbanlist_isvisible.md - checks whether the view is visible
@@ -63,7 +62,6 @@ Methods
 - api/link/ui.kanbanlist_refresh.md - repaints the whole view or a certain item
 - api/link/ui.kanbanlist_remove.md - removes the specified item/items from datastore
 - api/link/ui.kanbanlist_removecss.md - removes CSS class from a component item
-- api/link/ui.kanbanlist_removeundo.md - 
 - api/link/ui.kanbanlist_render.md - renders the specified item or the whole component
 - api/link/ui.kanbanlist_resize.md - adjusts the view to a new size
 - api/link/ui.kanbanlist_scrollto.md - scrolls the data container to a certain position
@@ -77,7 +75,6 @@ Methods
 - api/link/ui.kanbanlist_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.kanbanlist_unbind.md - breaks "bind" link
 - api/link/ui.kanbanlist_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/ui.kanbanlist_undo.md - 
 - api/link/ui.kanbanlist_unselect.md - removes selection from the specified item
 - api/link/ui.kanbanlist_unselectall.md - removes selection from all items
 - api/link/ui.kanbanlist_updateitem.md - updates the data item with new properties
@@ -128,7 +125,6 @@ Methods
 - api/link/ui.kanbanlist_hascss.md
 - api/link/ui.kanbanlist_hasevent.md
 - api/link/ui.kanbanlist_hide.md
-- api/link/ui.kanbanlist_ignoreundo.md
 - api/link/ui.kanbanlist_isenabled.md
 - api/link/ui.kanbanlist_isselected.md
 - api/link/ui.kanbanlist_isvisible.md
@@ -146,7 +142,6 @@ Methods
 - api/link/ui.kanbanlist_refresh.md
 - api/link/ui.kanbanlist_remove.md
 - api/link/ui.kanbanlist_removecss.md
-- api/link/ui.kanbanlist_removeundo.md
 - api/link/ui.kanbanlist_render.md
 - api/link/ui.kanbanlist_resize.md
 - api/link/ui.kanbanlist_scrollto.md
@@ -160,7 +155,6 @@ Methods
 - api/link/ui.kanbanlist_sync.md
 - api/link/ui.kanbanlist_unbind.md
 - api/link/ui.kanbanlist_unblockevent.md
-- api/link/ui.kanbanlist_undo.md
 - api/link/ui.kanbanlist_unselect.md
 - api/link/ui.kanbanlist_unselectall.md
 - api/link/ui.kanbanlist_updateitem.md

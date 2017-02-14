@@ -16,7 +16,6 @@ Properties
 - api/link/treecollection_rules_config.md - set of validation rules for the component
 - api/link/treecollection_save_config.md - defines URLs for data saving
 - api/link/treecollection_scheme_config.md - defines schemes for data processing
-- api/link/treecollection_undo_config.md - 
 - api/link/treecollection_url_config.md - the URL which the component will use to load data after its initialization
 }}
 
@@ -35,6 +34,5 @@ Properties
 - api/link/treecollection_rules_config.md
 - api/link/treecollection_save_config.md
 - api/link/treecollection_scheme_config.md
-- api/link/treecollection_undo_config.md
 - api/link/treecollection_url_config.md
 

@@ -71,7 +71,6 @@ var rangechart = webix.ui({
 - api/link/ui.rangechart_hasevent.md - checks whether the component has the specified event
 - api/link/ui.rangechart_hide.md - hides the view
 - api/link/ui.rangechart_hideseries.md - hides the chosen graph in the chart with several graphs
-- api/link/ui.rangechart_ignoreundo.md - 
 - api/link/ui.rangechart_isenabled.md - checks whether the view is enabled
 - api/link/ui.rangechart_isvisible.md - checks whether the view is visible
 - api/link/ui.rangechart_load.md - loads data from an external data source.
@@ -82,7 +81,6 @@ var rangechart = webix.ui({
 - api/link/ui.rangechart_refresh.md - repaints the whole view or a certain item
 - api/link/ui.rangechart_remove.md - removes the specified item/items from datastore
 - api/link/ui.rangechart_removeallseries.md - removes all series from the chart
-- api/link/ui.rangechart_removeundo.md - 
 - api/link/ui.rangechart_render.md - renders the specified item or the whole component
 - api/link/ui.rangechart_resize.md - adjusts the view to a new size
 - api/link/ui.rangechart_serialize.md - serializes data to a JSON object
@@ -93,7 +91,6 @@ var rangechart = webix.ui({
 - api/link/ui.rangechart_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.rangechart_unbind.md - breaks "bind" link
 - api/link/ui.rangechart_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/ui.rangechart_undo.md - 
 - api/link/ui.rangechart_ungroup.md - ungroups data
 - api/link/ui.rangechart_updateitem.md - updates the data item with new properties
 }}
@@ -202,7 +199,6 @@ var rangechart = webix.ui({
 - api/link/ui.rangechart_shadow_config.md - enables/disables the pie shadow
 - api/link/ui.rangechart_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.rangechart_type_config.md - sets the chart type
-- api/link/ui.rangechart_undo_config.md - 
 - api/link/ui.rangechart_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.rangechart_value_config.md - defines values for the vertical axis
 - api/link/ui.rangechart_width_config.md - sets the width of the component

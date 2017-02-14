@@ -76,7 +76,6 @@ var pivot = webix.ui({
 - api/link/ui.pivot_gettopparentview.md - returns top parent view
 - api/link/ui.pivot_hasevent.md - checks whether the component has the specified event
 - api/link/ui.pivot_hide.md - hides the view
-- api/link/ui.pivot_ignoreundo.md - 
 - api/link/ui.pivot_index.md - returns the cell index in the layout collection
 - api/link/ui.pivot_innerid.md - returns the inner ID of an item by its public (real) ID
 - api/link/ui.pivot_isenabled.md - checks whether the view is enabled
@@ -87,7 +86,6 @@ var pivot = webix.ui({
 - api/link/ui.pivot_reconstruct.md - rebuilds the layout
 - api/link/ui.pivot_refresh.md - repaints the whole view or a certain item
 - api/link/ui.pivot_remove.md - removes the specified item/items from datastore
-- api/link/ui.pivot_removeundo.md - 
 - api/link/ui.pivot_removeview.md - removes view from layout-like component
 - api/ui.pivot_render.md - renders a pivot on the page
 - api/link/ui.pivot_resize.md - adjusts the view to a new size
@@ -101,7 +99,6 @@ var pivot = webix.ui({
 - api/link/ui.pivot_ui.md - allows creating new ui, the id of which will be locked in the parent id space
 - api/link/ui.pivot_unbind.md - breaks "bind" link
 - api/link/ui.pivot_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/ui.pivot_undo.md - 
 - api/link/ui.pivot_updateitem.md - updates the data item with new properties
 }}
 
@@ -181,7 +178,6 @@ var pivot = webix.ui({
 - api/ui.pivot_structure_config.md - defines initial display and analysis pattern
 - api/ui.pivot_totalcolumn_config.md - calculates the total sum for each row
 - api/link/ui.pivot_type_config.md - defines the layout borders
-- api/link/ui.pivot_undo_config.md - 
 - api/link/ui.pivot_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.pivot_visiblebatch_config.md - sets the batch that will be shown initially
 - api/link/ui.pivot_width_config.md - sets the width of the component

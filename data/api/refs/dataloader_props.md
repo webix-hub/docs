@@ -10,7 +10,6 @@ Properties
 - api/dataloader_removemissed_config.md - defines how to treat items in case of reloading
 - api/dataloader_save_config.md - defines URLs for data saving
 - api/dataloader_scheme_config.md - defines schemes for data processing
-- api/link/dataloader_undo_config.md - 
 - api/link/dataloader_url_config.md - the URL which the component will use to load data after its initialization
 }}
 
@@ -23,6 +22,5 @@ Properties
 - api/dataloader_removemissed_config.md
 - api/dataloader_save_config.md
 - api/dataloader_scheme_config.md
-- api/link/dataloader_undo_config.md
 - api/link/dataloader_url_config.md
 

@@ -52,7 +52,6 @@ Properties
 - api/link/ui.filetree_threestate_config.md - defines three-state checkboxes for the tree
 - api/link/ui.filetree_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.filetree_type_config.md - object that specifies items presentation
-- api/link/ui.filetree_undo_config.md - 
 - api/link/ui.filetree_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.filetree_width_config.md - sets the width of the component
 - api/ui.filetree_xcount_config.md - 
@@ -109,7 +108,6 @@ Properties
 - api/link/ui.filetree_threestate_config.md
 - api/link/ui.filetree_tooltip_config.md
 - api/link/ui.filetree_type_config.md
-- api/link/ui.filetree_undo_config.md
 - api/link/ui.filetree_url_config.md
 - api/link/ui.filetree_width_config.md
 - api/ui.filetree_xcount_config.md

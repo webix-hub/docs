@@ -84,7 +84,6 @@ Methods
 - api/link/ui.datatable_hide.md - hides the view
 - api/ui.datatable_hidecolumn.md - hides the specified column
 - api/ui.datatable_hideoverlay.md - hides previously defined overlay
-- api/link/ui.datatable_ignoreundo.md - 
 - api/ui.datatable_iscolumnvisible.md - returns true if column is visible
 - api/link/ui.datatable_isenabled.md - checks whether the view is enabled
 - api/ui.datatable_isselected.md - returns true if related record is selected
@@ -117,7 +116,6 @@ Methods
 - api/ui.datatable_removerowcss.md - remove css class from the row
 - api/ui.datatable_removeselectarea.md - removes a select area
 - api/ui.datatable_removespan.md - removes a rowspan/colspan from the datatable
-- api/link/ui.datatable_removeundo.md - 
 - api/ui.datatable_render.md - renders the specified item or the whole component
 - api/link/ui.datatable_resize.md - adjusts the view to a new size
 - api/ui.datatable_resizesubview.md - adjusts the row's size to the size of a subview
@@ -141,7 +139,6 @@ Methods
 - api/link/ui.datatable_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.datatable_unbind.md - breaks "bind" link
 - api/link/ui.datatable_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/ui.datatable_undo.md - 
 - api/link/ui.datatable_ungroup.md - ungroups data
 - api/ui.datatable_unselect.md - cancels selection of the specified element
 - api/ui.datatable_unselectall.md - unselects all selected cells in a datatble
@@ -233,7 +230,6 @@ Methods
 - api/link/ui.datatable_hide.md
 - api/ui.datatable_hidecolumn.md
 - api/ui.datatable_hideoverlay.md
-- api/link/ui.datatable_ignoreundo.md
 - api/ui.datatable_iscolumnvisible.md
 - api/link/ui.datatable_isenabled.md
 - api/ui.datatable_isselected.md
@@ -266,7 +262,6 @@ Methods
 - api/ui.datatable_removerowcss.md
 - api/ui.datatable_removeselectarea.md
 - api/ui.datatable_removespan.md
-- api/link/ui.datatable_removeundo.md
 - api/ui.datatable_render.md
 - api/link/ui.datatable_resize.md
 - api/ui.datatable_resizesubview.md
@@ -290,7 +285,6 @@ Methods
 - api/link/ui.datatable_sync.md
 - api/link/ui.datatable_unbind.md
 - api/link/ui.datatable_unblockevent.md
-- api/link/ui.datatable_undo.md
 - api/link/ui.datatable_ungroup.md
 - api/ui.datatable_unselect.md
 - api/ui.datatable_unselectall.md

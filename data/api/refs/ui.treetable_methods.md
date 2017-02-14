@@ -87,7 +87,6 @@ Methods
 - api/link/ui.treetable_hide.md - hides the view
 - api/link/ui.treetable_hidecolumn.md - hides the specified column
 - api/link/ui.treetable_hideoverlay.md - hides previously defined overlay
-- api/link/ui.treetable_ignoreundo.md - 
 - api/link/ui.treetable_isbranch.md - checks whether the node has any children
 - api/link/ui.treetable_isbranchopen.md - checks whether the specified branch is open or closed
 - api/link/ui.treetable_ischecked.md - checks whether the specified node is checked
@@ -120,7 +119,6 @@ Methods
 - api/link/ui.treetable_removecellcss.md - remove css class from the cell of datatable
 - api/link/ui.treetable_removecss.md - removes CSS class from a component item
 - api/link/ui.treetable_removerowcss.md - remove css class from the row
-- api/link/ui.treetable_removeundo.md - 
 - api/link/ui.treetable_render.md - renders the specified item or the whole component
 - api/link/ui.treetable_resize.md - adjusts the view to a new size
 - api/link/ui.treetable_scrollto.md - scrolls the view to the defined position
@@ -142,7 +140,6 @@ Methods
 - api/link/ui.treetable_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.treetable_uncheckall.md - uncheck all items in the tree
 - api/link/ui.treetable_uncheckitem.md - unchecks the checkbox in the tree item
-- api/link/ui.treetable_undo.md - 
 - api/link/ui.treetable_ungroup.md - ungroups data
 - api/link/ui.treetable_updateitem.md - updates the data item with new properties
 - api/link/ui.treetable_validate.md - validates one record or all dataset against validation rules
@@ -235,7 +232,6 @@ Methods
 - api/link/ui.treetable_hide.md
 - api/link/ui.treetable_hidecolumn.md
 - api/link/ui.treetable_hideoverlay.md
-- api/link/ui.treetable_ignoreundo.md
 - api/link/ui.treetable_isbranch.md
 - api/link/ui.treetable_isbranchopen.md
 - api/link/ui.treetable_ischecked.md
@@ -268,7 +264,6 @@ Methods
 - api/link/ui.treetable_removecellcss.md
 - api/link/ui.treetable_removecss.md
 - api/link/ui.treetable_removerowcss.md
-- api/link/ui.treetable_removeundo.md
 - api/link/ui.treetable_render.md
 - api/link/ui.treetable_resize.md
 - api/link/ui.treetable_scrollto.md
@@ -290,7 +285,6 @@ Methods
 - api/link/ui.treetable_unblockevent.md
 - api/link/ui.treetable_uncheckall.md
 - api/link/ui.treetable_uncheckitem.md
-- api/link/ui.treetable_undo.md
 - api/link/ui.treetable_ungroup.md
 - api/link/ui.treetable_updateitem.md
 - api/link/ui.treetable_validate.md

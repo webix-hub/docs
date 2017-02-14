@@ -73,7 +73,6 @@ var kanban = webix.ui({
 - api/link/ui.kanban_gettopparentview.md - returns top parent view
 - api/link/ui.kanban_hasevent.md - checks whether the component has the specified event
 - api/link/ui.kanban_hide.md - hides the view
-- api/link/ui.kanban_ignoreundo.md - 
 - api/link/ui.kanban_index.md - returns the cell index in the layout collection
 - api/link/ui.kanban_isenabled.md - checks whether the view is enabled
 - api/link/ui.kanban_isvisible.md - checks whether the view is visible
@@ -84,7 +83,6 @@ var kanban = webix.ui({
 - api/link/ui.kanban_reconstruct.md - rebuilds the layout
 - api/link/ui.kanban_refresh.md - repaints the whole view or a certain item
 - api/link/ui.kanban_remove.md - removes the specified item/items from datastore
-- api/link/ui.kanban_removeundo.md - 
 - api/link/ui.kanban_removeview.md - removes view from layout-like component
 - api/link/ui.kanban_resize.md - adjusts the view to a new size
 - api/link/ui.kanban_resizechildren.md - resizes all children of the calling component
@@ -97,7 +95,6 @@ var kanban = webix.ui({
 - api/link/ui.kanban_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.kanban_unbind.md - breaks "bind" link
 - api/link/ui.kanban_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/ui.kanban_undo.md - 
 - api/link/ui.kanban_updateitem.md - updates the data item with new properties
 }}
 
@@ -176,7 +173,6 @@ var kanban = webix.ui({
 - api/link/ui.kanban_save_config.md - defines URLs for data saving
 - api/link/ui.kanban_scheme_config.md - defines schemes for data processing
 - api/link/ui.kanban_type_config.md - defines the layout borders
-- api/link/ui.kanban_undo_config.md - 
 - api/link/ui.kanban_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.kanban_visiblebatch_config.md - sets the batch that will be shown initially
 - api/link/ui.kanban_width_config.md - sets the width of the component

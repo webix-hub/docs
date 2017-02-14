@@ -83,7 +83,6 @@ var menu = webix.ui({
 - api/link/ui.menu_hasevent.md - checks whether the component has the specified event
 - api/link/ui.menu_hide.md - hides the view
 - api/ui.menu_hideitem.md - hides menu item
-- api/link/ui.menu_ignoreundo.md - 
 - api/link/ui.menu_isenabled.md - checks whether the view is enabled
 - api/link/ui.menu_isselected.md - checks whether the specified item is selected or not
 - api/link/ui.menu_isvisible.md - checks whether the view is visible
@@ -101,7 +100,6 @@ var menu = webix.ui({
 - api/link/ui.menu_refresh.md - repaints the whole view or a certain item
 - api/link/ui.menu_remove.md - removes the specified item/items from datastore
 - api/link/ui.menu_removecss.md - removes CSS class from a component item
-- api/link/ui.menu_removeundo.md - 
 - api/link/ui.menu_render.md - renders the specified item or the whole component
 - api/link/ui.menu_resize.md - adjusts the view to a new size
 - api/link/ui.menu_scrollto.md - scrolls the data container to a certain position
@@ -116,7 +114,6 @@ var menu = webix.ui({
 - api/link/ui.menu_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.menu_unbind.md - breaks "bind" link
 - api/link/ui.menu_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/ui.menu_undo.md - 
 - api/link/ui.menu_unselect.md - removes selection from the specified item
 - api/link/ui.menu_unselectall.md - removes selection from all items
 - api/link/ui.menu_updateitem.md - updates the data item with new properties
@@ -233,7 +230,6 @@ var menu = webix.ui({
 - api/link/ui.menu_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
 - api/link/ui.menu_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.menu_type_config.md - object that specifies items presentation
-- api/link/ui.menu_undo_config.md - 
 - api/link/ui.menu_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.menu_width_config.md - sets the width of the component
 - api/link/ui.menu_xcount_config.md - defines width of view in items

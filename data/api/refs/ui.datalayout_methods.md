@@ -33,7 +33,6 @@ Methods
 - api/link/ui.datalayout_gettopparentview.md - returns top parent view
 - api/link/ui.datalayout_hasevent.md - checks whether the component has the specified event
 - api/link/ui.datalayout_hide.md - hides the view
-- api/link/ui.datalayout_ignoreundo.md - 
 - api/link/ui.datalayout_index.md - returns the cell index in the layout collection
 - api/link/ui.datalayout_isenabled.md - checks whether the view is enabled
 - api/link/ui.datalayout_isvisible.md - checks whether the view is visible
@@ -44,7 +43,6 @@ Methods
 - api/link/ui.datalayout_reconstruct.md - rebuilds the layout
 - api/link/ui.datalayout_refresh.md - repaints the whole view or a certain item
 - api/link/ui.datalayout_remove.md - removes the specified item/items from datastore
-- api/link/ui.datalayout_removeundo.md - 
 - api/link/ui.datalayout_removeview.md - removes view from layout-like component
 - api/ui.datalayout_render.md - renders the datalayout content
 - api/link/ui.datalayout_resize.md - adjusts the view to a new size
@@ -56,7 +54,6 @@ Methods
 - api/link/ui.datalayout_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.datalayout_unbind.md - breaks "bind" link
 - api/link/ui.datalayout_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/ui.datalayout_undo.md - 
 - api/link/ui.datalayout_updateitem.md - updates the data item with new properties
 }}
 
@@ -92,7 +89,6 @@ Methods
 - api/link/ui.datalayout_gettopparentview.md
 - api/link/ui.datalayout_hasevent.md
 - api/link/ui.datalayout_hide.md
-- api/link/ui.datalayout_ignoreundo.md
 - api/link/ui.datalayout_index.md
 - api/link/ui.datalayout_isenabled.md
 - api/link/ui.datalayout_isvisible.md
@@ -103,7 +99,6 @@ Methods
 - api/link/ui.datalayout_reconstruct.md
 - api/link/ui.datalayout_refresh.md
 - api/link/ui.datalayout_remove.md
-- api/link/ui.datalayout_removeundo.md
 - api/link/ui.datalayout_removeview.md
 - api/ui.datalayout_render.md
 - api/link/ui.datalayout_resize.md
@@ -115,7 +110,6 @@ Methods
 - api/link/ui.datalayout_sync.md
 - api/link/ui.datalayout_unbind.md
 - api/link/ui.datalayout_unblockevent.md
-- api/link/ui.datalayout_undo.md
 - api/link/ui.datalayout_updateitem.md
 
 

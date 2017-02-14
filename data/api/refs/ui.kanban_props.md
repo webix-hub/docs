@@ -37,7 +37,6 @@ Properties
 - api/link/ui.kanban_save_config.md - defines URLs for data saving
 - api/link/ui.kanban_scheme_config.md - defines schemes for data processing
 - api/link/ui.kanban_type_config.md - defines the layout borders
-- api/link/ui.kanban_undo_config.md - 
 - api/link/ui.kanban_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.kanban_visiblebatch_config.md - sets the batch that will be shown initially
 - api/link/ui.kanban_width_config.md - sets the width of the component
@@ -79,7 +78,6 @@ Properties
 - api/link/ui.kanban_save_config.md
 - api/link/ui.kanban_scheme_config.md
 - api/link/ui.kanban_type_config.md
-- api/link/ui.kanban_undo_config.md
 - api/link/ui.kanban_url_config.md
 - api/link/ui.kanban_visiblebatch_config.md
 - api/link/ui.kanban_width_config.md

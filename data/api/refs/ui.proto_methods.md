@@ -40,7 +40,6 @@ Methods
 - api/link/ui.proto_hascss.md - checks if item has specific css class
 - api/link/ui.proto_hasevent.md - checks whether the component has the specified event
 - api/link/ui.proto_hide.md - hides the view
-- api/link/ui.proto_ignoreundo.md - 
 - api/link/ui.proto_isenabled.md - checks whether the view is enabled
 - api/link/ui.proto_isvisible.md - checks whether the view is visible
 - api/link/ui.proto_load.md - loads data from an external data source.
@@ -51,7 +50,6 @@ Methods
 - api/link/ui.proto_refresh.md - repaints the whole view or a certain item
 - api/link/ui.proto_remove.md - removes the specified item/items from datastore
 - api/link/ui.proto_removecss.md - removes CSS class from a component item
-- api/link/ui.proto_removeundo.md - 
 - api/link/ui.proto_render.md - renders the specified item or the whole component
 - api/link/ui.proto_resize.md - adjusts the view to a new size
 - api/link/ui.proto_serialize.md - serializes data to a JSON object
@@ -62,7 +60,6 @@ Methods
 - api/link/ui.proto_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.proto_unbind.md - breaks "bind" link
 - api/link/ui.proto_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/ui.proto_undo.md - 
 - api/link/ui.proto_updateitem.md - updates the data item with new properties
 - api/link/ui.proto_validate.md - validates one record or all dataset against validation rules
 }}
@@ -106,7 +103,6 @@ Methods
 - api/link/ui.proto_hascss.md
 - api/link/ui.proto_hasevent.md
 - api/link/ui.proto_hide.md
-- api/link/ui.proto_ignoreundo.md
 - api/link/ui.proto_isenabled.md
 - api/link/ui.proto_isvisible.md
 - api/link/ui.proto_load.md
@@ -117,7 +113,6 @@ Methods
 - api/link/ui.proto_refresh.md
 - api/link/ui.proto_remove.md
 - api/link/ui.proto_removecss.md
-- api/link/ui.proto_removeundo.md
 - api/link/ui.proto_render.md
 - api/link/ui.proto_resize.md
 - api/link/ui.proto_serialize.md
@@ -128,7 +123,6 @@ Methods
 - api/link/ui.proto_sync.md
 - api/link/ui.proto_unbind.md
 - api/link/ui.proto_unblockevent.md
-- api/link/ui.proto_undo.md
 - api/link/ui.proto_updateitem.md
 - api/link/ui.proto_validate.md
 

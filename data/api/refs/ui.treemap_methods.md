@@ -53,7 +53,6 @@ Methods
 - api/link/ui.treemap_hascss.md - checks if item has specific css class
 - api/link/ui.treemap_hasevent.md - checks whether the component has the specified event
 - api/link/ui.treemap_hide.md - hides the view
-- api/link/ui.treemap_ignoreundo.md - 
 - api/link/ui.treemap_isbranch.md - checks whether the node has any children
 - api/link/ui.treemap_isbranchopen.md - checks whether the specified branch is open or closed
 - api/link/ui.treemap_isenabled.md - checks whether the view is enabled
@@ -71,7 +70,6 @@ Methods
 - api/link/ui.treemap_refresh.md - repaints the whole view or a certain item
 - api/link/ui.treemap_remove.md - removes the specified item/items from datastore
 - api/link/ui.treemap_removecss.md - removes CSS class from a component item
-- api/link/ui.treemap_removeundo.md - 
 - api/link/ui.treemap_render.md - renders the specified item or the whole component
 - api/link/ui.treemap_resize.md - adjusts the view to a new size
 - api/link/ui.treemap_scrollto.md - scrolls the data container to a certain position
@@ -87,7 +85,6 @@ Methods
 - api/link/ui.treemap_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.treemap_unbind.md - breaks "bind" link
 - api/link/ui.treemap_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/ui.treemap_undo.md - 
 - api/link/ui.treemap_ungroup.md - ungroups data
 - api/link/ui.treemap_unselect.md - removes selection from the specified item
 - api/link/ui.treemap_unselectall.md - removes selection from all items
@@ -147,7 +144,6 @@ Methods
 - api/link/ui.treemap_hascss.md
 - api/link/ui.treemap_hasevent.md
 - api/link/ui.treemap_hide.md
-- api/link/ui.treemap_ignoreundo.md
 - api/link/ui.treemap_isbranch.md
 - api/link/ui.treemap_isbranchopen.md
 - api/link/ui.treemap_isenabled.md
@@ -165,7 +161,6 @@ Methods
 - api/link/ui.treemap_refresh.md
 - api/link/ui.treemap_remove.md
 - api/link/ui.treemap_removecss.md
-- api/link/ui.treemap_removeundo.md
 - api/link/ui.treemap_render.md
 - api/link/ui.treemap_resize.md
 - api/link/ui.treemap_scrollto.md
@@ -181,7 +176,6 @@ Methods
 - api/link/ui.treemap_sync.md
 - api/link/ui.treemap_unbind.md
 - api/link/ui.treemap_unblockevent.md
-- api/link/ui.treemap_undo.md
 - api/link/ui.treemap_ungroup.md
 - api/link/ui.treemap_unselect.md
 - api/link/ui.treemap_unselectall.md

@@ -28,7 +28,6 @@ Properties
 - api/link/ui.google-map_removemissed_config.md - defines how to treat items in case of reloading
 - api/link/ui.google-map_save_config.md - defines URLs for data saving
 - api/link/ui.google-map_scheme_config.md - defines schemes for data processing
-- api/link/ui.google-map_undo_config.md - 
 - api/link/ui.google-map_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.google-map_width_config.md - sets the width of the component
 - api/ui.google-map_zoom_config.md - defines the resolution of map objects displaying
@@ -61,7 +60,6 @@ Properties
 - api/link/ui.google-map_removemissed_config.md
 - api/link/ui.google-map_save_config.md
 - api/link/ui.google-map_scheme_config.md
-- api/link/ui.google-map_undo_config.md
 - api/link/ui.google-map_url_config.md
 - api/link/ui.google-map_width_config.md
 - api/ui.google-map_zoom_config.md

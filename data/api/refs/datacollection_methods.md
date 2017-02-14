@@ -28,7 +28,6 @@ Methods
 - api/link/datacollection_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/datacollection_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
 - api/link/datacollection_hasevent.md - checks whether the component has the specified event
-- api/link/datacollection_ignoreundo.md - 
 - api/datacollection_isvisible.md - returns true if current view is visible
 - api/link/datacollection_load.md - loads data from an external data source.
 - api/link/datacollection_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
@@ -43,7 +42,6 @@ Methods
 - api/link/datacollection_refreshcursor.md - force repainting of all bound components with current cursor value
 - api/link/datacollection_remove.md - removes the specified item/items from datastore
 - api/link/datacollection_removebind.md - disables data binding
-- api/link/datacollection_removeundo.md - 
 - api/link/datacollection_savebatch.md - makes simultaneous saving several components
 - api/link/datacollection_serialize.md - serializes data to a JSON object
 - api/link/datacollection_setbinddata.md - moves data from master to child
@@ -52,7 +50,6 @@ Methods
 - api/link/datacollection_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/datacollection_unbind.md - breaks "bind" link
 - api/link/datacollection_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/datacollection_undo.md - 
 - api/link/datacollection_updateitem.md - updates the data item with new properties
 - api/link/datacollection_validate.md - validates one record or all dataset against validation rules
 }}
@@ -84,7 +81,6 @@ Methods
 - api/link/datacollection_getnextid.md
 - api/link/datacollection_getprevid.md
 - api/link/datacollection_hasevent.md
-- api/link/datacollection_ignoreundo.md
 - api/datacollection_isvisible.md
 - api/link/datacollection_load.md
 - api/link/datacollection_loadnext.md
@@ -99,7 +95,6 @@ Methods
 - api/link/datacollection_refreshcursor.md
 - api/link/datacollection_remove.md
 - api/link/datacollection_removebind.md
-- api/link/datacollection_removeundo.md
 - api/link/datacollection_savebatch.md
 - api/link/datacollection_serialize.md
 - api/link/datacollection_setbinddata.md
@@ -108,7 +103,6 @@ Methods
 - api/link/datacollection_sync.md
 - api/link/datacollection_unbind.md
 - api/link/datacollection_unblockevent.md
-- api/link/datacollection_undo.md
 - api/link/datacollection_updateitem.md
 - api/link/datacollection_validate.md
 

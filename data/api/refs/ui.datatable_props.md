@@ -42,7 +42,7 @@ Properties
 - api/link/ui.datatable_hidden_config.md - defines whether the view will be hidden initially
 - api/ui.datatable_hover_config.md - css class for a row-hover in the datatable
 - api/link/ui.datatable_id_config.md - the component ID
-- api/ui.datatable_leftsplit_config.md - the number of the fixed columns from the left side of the table (actual for the <a href="datatable/frozen_columns.md">split mode</a> )
+- api/link/ui.datatable_leftsplit_config.md - 
 - api/ui.datatable_livevalidation_config.md - validation during cell editing
 - api/ui.datatable_loadahead_config.md - sets the number of items that will be loaded on each scroll movement relative to the last item in the scrolling direction
 - api/link/ui.datatable_map_config.md - defines data mapping
@@ -67,7 +67,7 @@ Properties
 - api/link/ui.datatable_removemissed_config.md - defines how to treat items in case of reloading
 - api/ui.datatable_resizecolumn_config.md - enables/disables horizontal resizing of columns
 - api/ui.datatable_resizerow_config.md - enables/disables vertical resizing of rows
-- api/ui.datatable_rightsplit_config.md - sets the number of the fixed columns from the right side of the table (actual for the <a href="datatable/frozen_columns.md">split mode</a> )
+- api/link/ui.datatable_rightsplit_config.md - 
 - api/ui.datatable_rowheight_config.md - sets the default height for rows
 - api/ui.datatable_rowlineheight_config.md - default line height for grid's row
 - api/link/ui.datatable_rules_config.md - set of validation rules for the component
@@ -85,7 +85,6 @@ Properties
 - api/link/ui.datatable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/ui.datatable_topsplit_config.md - defines the number of rows that will be "frozen" at the top of datatable
 - api/ui.datatable_type_config.md - used for configuring presentation of items
-- api/link/ui.datatable_undo_config.md - 
 - api/link/ui.datatable_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.datatable_width_config.md - sets the width of the component
 - api/ui.datatable_ycount_config.md - defines height of datatable in rows
@@ -132,7 +131,7 @@ Properties
 - api/link/ui.datatable_hidden_config.md
 - api/ui.datatable_hover_config.md
 - api/link/ui.datatable_id_config.md
-- api/ui.datatable_leftsplit_config.md
+- api/link/ui.datatable_leftsplit_config.md
 - api/ui.datatable_livevalidation_config.md
 - api/ui.datatable_loadahead_config.md
 - api/link/ui.datatable_map_config.md
@@ -157,7 +156,7 @@ Properties
 - api/link/ui.datatable_removemissed_config.md
 - api/ui.datatable_resizecolumn_config.md
 - api/ui.datatable_resizerow_config.md
-- api/ui.datatable_rightsplit_config.md
+- api/link/ui.datatable_rightsplit_config.md
 - api/ui.datatable_rowheight_config.md
 - api/ui.datatable_rowlineheight_config.md
 - api/link/ui.datatable_rules_config.md
@@ -175,7 +174,6 @@ Properties
 - api/link/ui.datatable_tooltip_config.md
 - api/ui.datatable_topsplit_config.md
 - api/ui.datatable_type_config.md
-- api/link/ui.datatable_undo_config.md
 - api/link/ui.datatable_url_config.md
 - api/link/ui.datatable_width_config.md
 - api/ui.datatable_ycount_config.md

@@ -74,7 +74,6 @@ var chart = webix.ui({
 - api/link/ui.chart_hasevent.md - checks whether the component has the specified event
 - api/link/ui.chart_hide.md - hides the view
 - api/ui.chart_hideseries.md - hides the chosen graph in the chart with several graphs
-- api/link/ui.chart_ignoreundo.md - 
 - api/link/ui.chart_isenabled.md - checks whether the view is enabled
 - api/link/ui.chart_isvisible.md - checks whether the view is visible
 - api/link/ui.chart_load.md - loads data from an external data source.
@@ -85,7 +84,6 @@ var chart = webix.ui({
 - api/link/ui.chart_refresh.md - repaints the whole view or a certain item
 - api/link/ui.chart_remove.md - removes the specified item/items from datastore
 - api/ui.chart_removeallseries.md - removes all series from the chart
-- api/link/ui.chart_removeundo.md - 
 - api/ui.chart_render.md - renders the specified item or the whole component
 - api/link/ui.chart_resize.md - adjusts the view to a new size
 - api/link/ui.chart_serialize.md - serializes data to a JSON object
@@ -95,7 +93,6 @@ var chart = webix.ui({
 - api/link/ui.chart_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.chart_unbind.md - breaks "bind" link
 - api/link/ui.chart_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/ui.chart_undo.md - 
 - api/link/ui.chart_ungroup.md - ungroups data
 - api/link/ui.chart_updateitem.md - updates the data item with new properties
 }}
@@ -204,7 +201,6 @@ var chart = webix.ui({
 - api/ui.chart_shadow_config.md - enables/disables the pie shadow
 - api/link/ui.chart_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/ui.chart_type_config.md - sets the chart type
-- api/link/ui.chart_undo_config.md - 
 - api/link/ui.chart_url_config.md - the URL which the component will use to load data after its initialization
 - api/ui.chart_value_config.md - defines values for the vertical axis
 - api/link/ui.chart_width_config.md - sets the width of the component

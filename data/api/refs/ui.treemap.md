@@ -94,7 +94,6 @@ var treemap = webix.ui({
 - api/link/ui.treemap_hascss.md - checks if item has specific css class
 - api/link/ui.treemap_hasevent.md - checks whether the component has the specified event
 - api/link/ui.treemap_hide.md - hides the view
-- api/link/ui.treemap_ignoreundo.md - 
 - api/link/ui.treemap_isbranch.md - checks whether the node has any children
 - api/link/ui.treemap_isbranchopen.md - checks whether the specified branch is open or closed
 - api/link/ui.treemap_isenabled.md - checks whether the view is enabled
@@ -112,7 +111,6 @@ var treemap = webix.ui({
 - api/link/ui.treemap_refresh.md - repaints the whole view or a certain item
 - api/link/ui.treemap_remove.md - removes the specified item/items from datastore
 - api/link/ui.treemap_removecss.md - removes CSS class from a component item
-- api/link/ui.treemap_removeundo.md - 
 - api/link/ui.treemap_render.md - renders the specified item or the whole component
 - api/link/ui.treemap_resize.md - adjusts the view to a new size
 - api/link/ui.treemap_scrollto.md - scrolls the data container to a certain position
@@ -128,7 +126,6 @@ var treemap = webix.ui({
 - api/link/ui.treemap_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.treemap_unbind.md - breaks "bind" link
 - api/link/ui.treemap_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/ui.treemap_undo.md - 
 - api/link/ui.treemap_ungroup.md - ungroups data
 - api/link/ui.treemap_unselect.md - removes selection from the specified item
 - api/link/ui.treemap_unselectall.md - removes selection from all items
@@ -242,7 +239,6 @@ var treemap = webix.ui({
 - api/link/ui.treemap_threestate_config.md - enable three-state checkboxes
 - api/link/ui.treemap_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.treemap_type_config.md - object that specifies items presentation
-- api/link/ui.treemap_undo_config.md - 
 - api/link/ui.treemap_url_config.md - the URL which the component will use to load data after its initialization
 - api/ui.treemap_value_config.md - a template that specifies the area of an item rectangle
 - api/link/ui.treemap_width_config.md - sets the width of the component

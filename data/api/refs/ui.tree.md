@@ -94,7 +94,6 @@ var tree = webix.ui({
 - api/link/ui.tree_hascss.md - checks if item has specific css class
 - api/link/ui.tree_hasevent.md - checks whether the component has the specified event
 - api/link/ui.tree_hide.md - hides the view
-- api/link/ui.tree_ignoreundo.md - 
 - api/link/ui.tree_isbranch.md - checks whether the node has any children
 - api/link/ui.tree_isbranchopen.md - checks whether the specified branch is open or closed
 - api/link/ui.tree_ischecked.md - checks whether the specified node is checked
@@ -114,7 +113,6 @@ var tree = webix.ui({
 - api/link/ui.tree_refresh.md - repaints the whole view or a certain item
 - api/link/ui.tree_remove.md - removes the specified item/items from datastore
 - api/link/ui.tree_removecss.md - removes CSS class from a component item
-- api/link/ui.tree_removeundo.md - 
 - api/link/ui.tree_render.md - renders the specified item or the whole component
 - api/link/ui.tree_resize.md - adjusts the view to a new size
 - api/link/ui.tree_scrollto.md - scrolls the data container to a certain position
@@ -130,7 +128,6 @@ var tree = webix.ui({
 - api/link/ui.tree_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.tree_uncheckall.md - uncheck all items in the tree
 - api/link/ui.tree_uncheckitem.md - unchecks the checkbox in the tree item
-- api/link/ui.tree_undo.md - 
 - api/link/ui.tree_ungroup.md - ungroups data
 - api/link/ui.tree_unselect.md - removes selection from the specified item
 - api/link/ui.tree_unselectall.md - removes selection from all items
@@ -246,7 +243,6 @@ var tree = webix.ui({
 - api/link/ui.tree_threestate_config.md - defines three-state checkboxes for the tree
 - api/link/ui.tree_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.tree_type_config.md - object that specifies items presentation
-- api/link/ui.tree_undo_config.md - 
 - api/link/ui.tree_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.tree_width_config.md - sets the width of the component
 }}

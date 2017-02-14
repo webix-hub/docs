@@ -86,7 +86,6 @@ var unitlist = webix.ui({
 - api/link/ui.unitlist_hascss.md - checks if item has specific css class
 - api/link/ui.unitlist_hasevent.md - checks whether the component has the specified event
 - api/link/ui.unitlist_hide.md - hides the view
-- api/link/ui.unitlist_ignoreundo.md - 
 - api/link/ui.unitlist_isenabled.md - checks whether the view is enabled
 - api/link/ui.unitlist_isselected.md - checks whether the specified item is selected or not
 - api/link/ui.unitlist_isvisible.md - checks whether the view is visible
@@ -104,7 +103,6 @@ var unitlist = webix.ui({
 - api/link/ui.unitlist_refresh.md - repaints the whole view or a certain item
 - api/link/ui.unitlist_remove.md - removes the specified item/items from datastore
 - api/link/ui.unitlist_removecss.md - removes CSS class from a component item
-- api/link/ui.unitlist_removeundo.md - 
 - api/link/ui.unitlist_render.md - renders the specified item or the whole component
 - api/link/ui.unitlist_resize.md - adjusts the view to a new size
 - api/link/ui.unitlist_scrollto.md - scrolls the data container to a certain position
@@ -117,7 +115,6 @@ var unitlist = webix.ui({
 - api/link/ui.unitlist_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.unitlist_unbind.md - breaks "bind" link
 - api/link/ui.unitlist_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/ui.unitlist_undo.md - 
 - api/link/ui.unitlist_unselect.md - removes selection from the specified item
 - api/link/ui.unitlist_unselectall.md - removes selection from all items
 - api/link/ui.unitlist_updateitem.md - updates the data item with new properties
@@ -229,7 +226,6 @@ var unitlist = webix.ui({
 - api/link/ui.unitlist_templatecopy_config.md - sets the template according to which data will be copied to the clipboard
 - api/link/ui.unitlist_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.unitlist_type_config.md - object that specifies items presentation
-- api/link/ui.unitlist_undo_config.md - 
 - api/ui.unitlist_uniteby_config.md - sets the template according which items will be grouped in units.
 - api/link/ui.unitlist_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.unitlist_width_config.md - sets the width of the component

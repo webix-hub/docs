@@ -33,7 +33,6 @@ Methods
 - api/link/ui.flexdatalayout_gettopparentview.md - returns top parent view
 - api/link/ui.flexdatalayout_hasevent.md - checks whether the component has the specified event
 - api/link/ui.flexdatalayout_hide.md - hides the view
-- api/link/ui.flexdatalayout_ignoreundo.md - 
 - api/link/ui.flexdatalayout_index.md - returns the cell index in the layout collection
 - api/link/ui.flexdatalayout_isenabled.md - checks whether the view is enabled
 - api/link/ui.flexdatalayout_isvisible.md - checks whether the view is visible
@@ -44,7 +43,6 @@ Methods
 - api/link/ui.flexdatalayout_reconstruct.md - rebuilds the layout
 - api/link/ui.flexdatalayout_refresh.md - repaints the whole view or a certain item
 - api/link/ui.flexdatalayout_remove.md - removes the specified item/items from datastore
-- api/link/ui.flexdatalayout_removeundo.md - 
 - api/link/ui.flexdatalayout_removeview.md - removes view from layout-like component
 - api/link/ui.flexdatalayout_render.md - renders the datalayout content
 - api/link/ui.flexdatalayout_resize.md - adjusts the view to a new size
@@ -56,7 +54,6 @@ Methods
 - api/link/ui.flexdatalayout_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.flexdatalayout_unbind.md - breaks "bind" link
 - api/link/ui.flexdatalayout_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/ui.flexdatalayout_undo.md - 
 - api/link/ui.flexdatalayout_updateitem.md - updates the data item with new properties
 }}
 
@@ -92,7 +89,6 @@ Methods
 - api/link/ui.flexdatalayout_gettopparentview.md
 - api/link/ui.flexdatalayout_hasevent.md
 - api/link/ui.flexdatalayout_hide.md
-- api/link/ui.flexdatalayout_ignoreundo.md
 - api/link/ui.flexdatalayout_index.md
 - api/link/ui.flexdatalayout_isenabled.md
 - api/link/ui.flexdatalayout_isvisible.md
@@ -103,7 +99,6 @@ Methods
 - api/link/ui.flexdatalayout_reconstruct.md
 - api/link/ui.flexdatalayout_refresh.md
 - api/link/ui.flexdatalayout_remove.md
-- api/link/ui.flexdatalayout_removeundo.md
 - api/link/ui.flexdatalayout_removeview.md
 - api/link/ui.flexdatalayout_render.md
 - api/link/ui.flexdatalayout_resize.md
@@ -115,7 +110,6 @@ Methods
 - api/link/ui.flexdatalayout_sync.md
 - api/link/ui.flexdatalayout_unbind.md
 - api/link/ui.flexdatalayout_unblockevent.md
-- api/link/ui.flexdatalayout_undo.md
 - api/link/ui.flexdatalayout_updateitem.md
 
 

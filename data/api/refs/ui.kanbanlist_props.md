@@ -47,7 +47,6 @@ Properties
 - api/link/ui.kanbanlist_template_config.md - the component template
 - api/link/ui.kanbanlist_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.kanbanlist_type_config.md - object that specifies items presentation
-- api/link/ui.kanbanlist_undo_config.md - 
 - api/link/ui.kanbanlist_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.kanbanlist_width_config.md - sets the width of the component
 - api/link/ui.kanbanlist_xcount_config.md - adjusts the view width to display the defined number of items in a row
@@ -100,7 +99,6 @@ Properties
 - api/link/ui.kanbanlist_template_config.md
 - api/link/ui.kanbanlist_tooltip_config.md
 - api/link/ui.kanbanlist_type_config.md
-- api/link/ui.kanbanlist_undo_config.md
 - api/link/ui.kanbanlist_url_config.md
 - api/link/ui.kanbanlist_width_config.md
 - api/link/ui.kanbanlist_xcount_config.md

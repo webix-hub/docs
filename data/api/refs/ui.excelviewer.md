@@ -91,7 +91,6 @@ dummy stub
 - api/link/ui.excelviewer_hide.md - hides the view
 - api/link/ui.excelviewer_hidecolumn.md - hides the specified column
 - api/link/ui.excelviewer_hideoverlay.md - hides previously defined overlay
-- api/link/ui.excelviewer_ignoreundo.md - 
 - api/link/ui.excelviewer_iscolumnvisible.md - returns true if column is visible
 - api/link/ui.excelviewer_isenabled.md - checks whether the view is enabled
 - api/link/ui.excelviewer_isvisible.md - checks whether the view is visible
@@ -120,7 +119,6 @@ dummy stub
 - api/link/ui.excelviewer_removecss.md - removes CSS class from a component item
 - api/link/ui.excelviewer_removerowcss.md - remove css class from the row
 - api/link/ui.excelviewer_removespan.md - removes a rowspan/colspan from the datatable
-- api/link/ui.excelviewer_removeundo.md - 
 - api/link/ui.excelviewer_render.md - renders the specified item or the whole component
 - api/link/ui.excelviewer_resize.md - adjusts the view to a new size
 - api/link/ui.excelviewer_resizesubview.md - adjusts the row's size to the size of a subview
@@ -142,7 +140,6 @@ dummy stub
 - api/link/ui.excelviewer_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.excelviewer_unbind.md - breaks "bind" link
 - api/link/ui.excelviewer_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/ui.excelviewer_undo.md - 
 - api/link/ui.excelviewer_ungroup.md - ungroups data
 - api/link/ui.excelviewer_updateitem.md - updates the data item with new properties
 - api/link/ui.excelviewer_validate.md - validates one record or all dataset against validation rules
@@ -288,7 +285,7 @@ dummy stub
 - api/link/ui.excelviewer_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.excelviewer_hover_config.md - css class for a row-hover in the datatable
 - api/link/ui.excelviewer_id_config.md - the component ID
-- api/link/ui.excelviewer_leftsplit_config.md - the number of the fixed columns from the left side of the table (actual for the <a href="datatable/frozen_columns.md">split mode</a> )
+- api/link/ui.excelviewer_leftsplit_config.md - 
 - api/link/ui.excelviewer_livevalidation_config.md - validation during cell editing
 - api/link/ui.excelviewer_loadahead_config.md - sets the number of items that will be loaded on each scroll movement relative to the last item in the scrolling direction
 - api/link/ui.excelviewer_map_config.md - defines data mapping
@@ -313,7 +310,7 @@ dummy stub
 - api/link/ui.excelviewer_removemissed_config.md - defines how to treat items in case of reloading
 - api/link/ui.excelviewer_resizecolumn_config.md - enables/disables horizontal resizing of columns
 - api/link/ui.excelviewer_resizerow_config.md - enables/disables vertical resizing of rows
-- api/link/ui.excelviewer_rightsplit_config.md - sets the number of the fixed columns from the right side of the table (actual for the <a href="datatable/frozen_columns.md">split mode</a> )
+- api/link/ui.excelviewer_rightsplit_config.md - 
 - api/link/ui.excelviewer_rowheight_config.md - sets the default height for rows
 - api/link/ui.excelviewer_rowlineheight_config.md - default line height for grid's row
 - api/link/ui.excelviewer_rules_config.md - set of validation rules for the component
@@ -332,7 +329,6 @@ dummy stub
 - api/link/ui.excelviewer_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.excelviewer_topsplit_config.md - defines the number of rows that will be "frozen" at the top of datatable
 - api/link/ui.excelviewer_type_config.md - used for configuring presentation of items
-- api/link/ui.excelviewer_undo_config.md - 
 - api/link/ui.excelviewer_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.excelviewer_width_config.md - sets the width of the component
 - api/link/ui.excelviewer_ycount_config.md - defines height of datatable in rows

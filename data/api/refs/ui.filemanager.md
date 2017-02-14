@@ -86,7 +86,6 @@ $$("files").load("files.php");
 - api/link/ui.filemanager_hideprogress.md - hides a progress bar/icon
 - api/ui.filemanager_hidesearchresults.md - hides search results
 - api/ui.filemanager_hidetree.md - hides the Tree panel
-- api/link/ui.filemanager_ignoreundo.md - 
 - api/link/ui.filemanager_index.md - returns the cell index in the layout collection
 - api/link/ui.filemanager_innerid.md - returns the inner ID of an item by its public (real) ID
 - api/link/ui.filemanager_isbranch.md - checks whether the node has any children
@@ -107,7 +106,6 @@ $$("files").load("files.php");
 - api/link/ui.filemanager_reconstruct.md - rebuilds the layout
 - api/link/ui.filemanager_refresh.md - repaints the whole view or a certain item
 - api/link/ui.filemanager_remove.md - removes the specified item/items from datastore
-- api/link/ui.filemanager_removeundo.md - 
 - api/link/ui.filemanager_removeview.md - removes view from layout-like component
 - api/ui.filemanager_renamefile.md - renames a folder/a file
 - api/link/ui.filemanager_resize.md - adjusts the view to a new size
@@ -124,7 +122,6 @@ $$("files").load("files.php");
 - api/link/ui.filemanager_ui.md - allows creating new ui, the id of which will be locked in the parent id space
 - api/link/ui.filemanager_unbind.md - breaks "bind" link
 - api/link/ui.filemanager_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/ui.filemanager_undo.md - 
 - api/link/ui.filemanager_updateitem.md - updates the data item with new properties
 - api/ui.filemanager_uploadfile.md - opens the file upload dialog
 }}
@@ -251,7 +248,6 @@ $$("files").load("files.php");
 - api/ui.filemanager_templatesize_config.md - defines the template applied for the file size
 - api/ui.filemanager_templatetype_config.md - specifies the template applied for the type of a file
 - api/link/ui.filemanager_type_config.md - defines the layout borders
-- api/link/ui.filemanager_undo_config.md - 
 - api/ui.filemanager_uploadprogress_config.md - defines an object with configuration of progress bar that appears during the upload
 - api/link/ui.filemanager_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.filemanager_visiblebatch_config.md - sets the batch that will be shown initially

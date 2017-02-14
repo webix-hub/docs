@@ -76,7 +76,6 @@ dummy stub
 - api/link/ui.filetree_hascss.md - checks if item has specific css class
 - api/link/ui.filetree_hasevent.md - checks whether the component has the specified event
 - api/link/ui.filetree_hide.md - hides the view
-- api/link/ui.filetree_ignoreundo.md - 
 - api/link/ui.filetree_isbranch.md - checks whether the node has any children
 - api/link/ui.filetree_isbranchopen.md - checks whether the specified branch is open or closed
 - api/link/ui.filetree_ischecked.md - checks whether the specified node is checked
@@ -96,7 +95,6 @@ dummy stub
 - api/link/ui.filetree_refresh.md - repaints the whole view or a certain item
 - api/link/ui.filetree_remove.md - removes the specified item/items from datastore
 - api/link/ui.filetree_removecss.md - removes CSS class from a component item
-- api/link/ui.filetree_removeundo.md - 
 - api/link/ui.filetree_render.md - renders the specified item or the whole component
 - api/link/ui.filetree_resize.md - adjusts the view to a new size
 - api/link/ui.filetree_scrollto.md - scrolls the data container to a certain position
@@ -113,7 +111,6 @@ dummy stub
 - api/link/ui.filetree_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.filetree_uncheckall.md - uncheck all items in the tree
 - api/link/ui.filetree_uncheckitem.md - unchecks the checkbox in the tree item
-- api/link/ui.filetree_undo.md - 
 - api/link/ui.filetree_ungroup.md - ungroups data
 - api/link/ui.filetree_unselect.md - removes selection from the specified item
 - api/link/ui.filetree_unselectall.md - removes selection from all items
@@ -243,7 +240,6 @@ dummy stub
 - api/link/ui.filetree_threestate_config.md - defines three-state checkboxes for the tree
 - api/link/ui.filetree_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.filetree_type_config.md - object that specifies items presentation
-- api/link/ui.filetree_undo_config.md - 
 - api/link/ui.filetree_url_config.md - the URL which the component will use to load data after its initialization
 - api/link/ui.filetree_width_config.md - sets the width of the component
 - api/ui.filetree_xcount_config.md - 
