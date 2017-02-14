@@ -1,6 +1,52 @@
 Migration to Latest Webix Version
 =================================
 
+Webix 4.1 -> 4.2
+-----------------
+
+The logic of getChart(), getEditor(), getMap(), getScheduler() methods of the third-party components is modified:
+
+- when a method is called without parameters as *.getSome()*, it returns an object (a map, an editor or a chart)
+
+~~~js
+var editor = codemirror.getEditor();
+~~~
+
+- when a mthod is called with *true* parameter as *.getSome(true)*, it returns a promise to wait until an object is ready 
+
+~~~js
+codemirror.getEditor(true).then(function(editor){ /* logic */ });
+~~~
+
+Below you will find the list of methods-related components:
+
+###.getMap()
+
+- googlemap (in components and main package)
+- nokiamap 
+- openmap
+- yandexmap
+
+###.getEditor()
+
+- ace
+- nicedit
+- ckeditor
+- codemirror
+- tinymce
+
+###.getChart()
+
+- raphael
+- fusion
+- sigma
+
+###.getScheduler()
+
+- scheduler
+
+The code details are given at [GitHub](https://github.com/webix-hub/components/tree/get-editors-and-maps).
+
 Webix 4.0 -> 4.1
 -----------------
 
@@ -9,7 +55,6 @@ There are important updates for the [Pivot](desktop/pivot.md) complex widget:
 - filter Date values are converted into timestamp <br>
 - The Multiselect filter used for filtering is now replaced with the Multicombo filter
  
-
 
 Webix 3.4 -> 4.0
 -----------------

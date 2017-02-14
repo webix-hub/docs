@@ -64,7 +64,7 @@ webix.cdn = "http://localhost/local_folder";
 Customizing Export to Excel
 -------------------------
 
-The toExcel() method returns all data specified in the dataset of a component, or in the **columns** parameter of a datatable view. 
+The api/_toexcel.md method returns all data specified in the dataset of a component, or in the **columns** parameter of the DataTable view. 
 The data is exported into an Excel document with "Data" name and "Data" sheet name. 
 
 However, you may need to get some particular data, or customize file and sheet names. 

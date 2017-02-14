@@ -7,26 +7,34 @@ See also spreadsheet/whats_new.md
 
 Latest update 31/01/2017 19:30
 
+Breaking Changes
+------------------
+
+Changes in the logic of *getChart()*, *getEditor()*, *getMap()*, *getScheduler()* methods of the [third-party components](desktop/extensions.md). 
+
+Check the [Migration Guide](migration.md#webix4042) for more details.
+
 New Features
 ------------
 
-- export to CSV (export.js, 06_export_csv.html)
+- [export to CSV](desktop/export_csv.md) 
 - plainOutput option for data export (export.js)
-- color options for Gage control 
-- directory upload (uploader.js, 11_directory_upload.html) Аня 
-- example of an adaptive view (demo 01_layout/18_adaptive_view) added
-- Pager events (onBefore/AfterPage Change) (pager.js)
-- refreshSelectArea() in DataTable (package.json, datatable_areaselect.js)
-- [spreadsheet] cross-sheet math
-- [spreadsheet] string math methods
-- [spreadsheet] ability to define custom math methods
+- [color options for Gage control](desktop/gage.md#settingcustomcolors) 
+- [ability of the Uploader widget to upload folders with files](desktop/configuring_uploader.md#uploadingfolders)  
+- example of an adaptive view added {{sample 01_layout/18_adaptive_view.html}}
+- new Pager events (onBeforePageChange/onAfterPageChange) 
+- refreshSelectArea() in DataTable 
+- [spreadsheet] [cross-sheet math](spreadsheet/math.md#crossreferencesinmultiplesheets)
+- [spreadsheet] [string math methods](spreadsheet/functions.md#string_functions)
+- [spreadsheet] [ability to define custom math methods](spreadsheet/functions.md#creatingacustomfunction)
+
 
 Updates
 ----------
 
 - using FormData with webix.ajax (load.js)
 - $init is called during $group processing (package.json, group.js)
-- areaselect refresh events (during shift+click or shift+keynav) (onBefore/AfterAreaUpdate - datatable) (datatable_areaselect.js)
+- areaselect refresh events (during shift+click or shift+keynav) (onBeforeAreaUpdate/onAfterAreaUpdate - datatable) (datatable_areaselect.js)
 - server daterangefilter (datastore, datatable_filter_plus)
 - Calendar aria labels and navigation (calendar.js, view.js)
 - form.save for bind-form can accept data object (bind.js)
@@ -66,14 +74,14 @@ Fixes
 - deselect Tabbar option in "more list" when tab from main part is selected (tabs.js)
 - using show(true) for view inside of window (view, package.json)
 - regression with spacer and align property  (view, package.json)
-- start fix Accordion with resizer (Аня) (accordion.js)
-- localization: empty objects and strings overwrite default locale values (Оля Л.)
+- start fix Accordion with resizer (accordion.js)
+- localization: empty objects and strings overwrite default locale values 
 
-- UI Button and Text - added variable border width and used it in webix (Сергей Куницкий) (config(s).js, inputs.js)
-- UI Slider - fix calculate right (Сергей Куницкий) (slider.js)
-- UI Window - removed $skin function and added new variable to defaults (Сергей Куницкий) (window.js)
-- removed pre-sets (Сергей Куницкий) (inputs.js, slider.js, window.js)
-- added some variables in Webix skins and used them in UI (Сергей Куницкий)(config(s).js, inputs.js, slider.js, window.js, compression.js)
+- UI Button and Text - added variable border width and used it in webix (config(s).js, inputs.js)
+- UI Slider - fix calculate right  (slider.js)
+- UI Window - removed $skin function and added new variable to defaults (window.js)
+- removed pre-sets  (inputs.js, slider.js, window.js)
+- added some variables in Webix skins and used them in UI (config(s).js, inputs.js, slider.js, window.js, compression.js)
 
 - regression in webix.copy (webix.js)
 - webix.copy should not process regular expressions (e.g. in input patterns) (webix.js)
