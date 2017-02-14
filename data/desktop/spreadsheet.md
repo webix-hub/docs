@@ -21,7 +21,9 @@ API Reference
 
 Webix SpreadSheet is a component intended for creating tables and performing various operations with their data and appearance.
 
-Webix SpreadSheet represents a web-tool for making tables online and keeping all the data locally. Thus, all the information in your reports and accounts will be kept secure and always at hand.
+Webix SpreadSheet represents a web tool for making tables online and keeping all the data locally. 
+Thus, all the information in your reports and accounts will be kept secure and always at hand.
+
 The ready-made document can be exported into an Excel file, and you can import an Excel document into SpreadSheet as well.
 
 The component includes all the necessary functionality for handy work with data presented in the tabular form. 
@@ -73,7 +75,6 @@ of various languages.
             	<li>spreadsheet/cell_content.md</li> 
             	<li>spreadsheet/conditional_formatting.md</li>
             	<li>spreadsheet/math.md</li>
-                <li>spreadsheet/functions.md</li>
                 <li>spreadsheet/multiple_sheets.md</li>
                 <li>spreadsheet/rows_columns.md</li>                
             </ul>
@@ -120,7 +121,6 @@ of various languages.
 - spreadsheet/cell_content.md
 - spreadsheet/conditional_formatting.md
 - spreadsheet/math.md
-- spreadsheet/functions.md
 - spreadsheet/multiple_sheets.md
 - spreadsheet/rows_columns.md
 - spreadsheet/export.md

@@ -6,18 +6,21 @@ SpreadSheet What's New
 New Features
 -------------
 
-- ability to define custom math methods
-- cross-sheet math
-- string math methods
-- header highlighting on cell selection
-- shift+key navigation
+- [ability to define custom math methods](spreadsheet/functions.md#creatingacustomfunction)
+- [cross-sheet math](spreadsheet/math.md#crossreferencesinmultiplesheets)
+- [string math methods](spreadsheet/functions.md#string_functions)
+- visual improvement - highlighting row and column's headers on cell selection
+- Shift+key navigation for area selection
 
 Updates
 -----------
 
-- .recalculate api
+- [.recalculate API](api/ui.spreadsheet_recalculate.md)
 - autocorrection of formulas (to upper case, etc)
-- compactStyles() (link) method to remove unused styles from sheet styles ([demo](65_spreadsheet/samples/02_api/18_clear_styles.html))
+- api/ui.spreadsheet_compactstyles.md method to remove unused styles from sheet styles 
+
+{{sample 65_spreadsheet/02_api/18_clear_styles.html}}
+
 - onBefore/AfterSheetShow (links) events instead of onSheetShow
 
 Fixes

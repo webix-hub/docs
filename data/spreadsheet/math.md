@@ -1,58 +1,26 @@
-Operations in SpreadSheet
+Formulas in SpreadSheet
 ==============================
 
-SpreadSheet allows working with simple mathematical operators and with built-in functions as well as combining them in more complex formulas.
-The component calculates them and displays the result in the related cells.
+SpreadSheet allows performing operations with simple cell content (numbers, strings) and operators (arithmetic, comparison, etc.) as well as 
+with [built-in functions](spreadsheet/functions.md) and [custom functions](spreadsheet/functions.md#creatingacustomfunction).
+It is also possible to combine regular operands and functions in more complex formulas.
+The component processes them and displays the result in the related cells.
 
-To start working with data as mathematical expressions, you should set the api/ui.spreadsheet_math_config.md parameter to *true*. By default, it's disabled.
-SpreadSheet supports native Excel math.
-
-~~~js
-var math_data = {
-  "styles": [
-    [ "wss1", ";;right;;;;;;;;;;;;;" ],
-    ...
-  ],
-  "sizes": [
-    [ 3, 2, 37 ]
-    ...
-  ],
-  "data": [
-    [ 3, 2, "=SUM(B3:E3)", "wss1" ]
- 	...
-  ],
-  "spans": [
-    [ 3, 2, 4, 1 ]
-    ...
-  ]
-};
-
-webix.ready(function(){
-	webix.ui({ 
-    	view:"spreadsheet",
-    	math: true,
-    	data:math_data	
-	});
-});
-~~~
-
-{{sample
-65_spreadsheet/01_basic/03_math.html
-}}
-
-
-Syntax
+Formula Syntax
 ---------
-The syntax of mathematical expressions is the same as that of Excel. 
+
+The syntax of a formula is the same as in Excel. 
 
 1. Formula must start from the '=' sign.
-2. The names of formulas and cell references must be written in capital letters. 
+2. The names of functions and cell references must be written in capital letters. 
 3. The following elements can be used within formulas:
 
 - basic mathematical operators, which are: +, -, /, *
+- comparison operators: <, >, <=, >=, <>, =
+- the *&* operator for [string concatenation](spreadsheet/math.md#stringconcatenation)
 - numbers
 - cell references
-- [Excel-like functions](spreadsheet/math.md#builtinfunctions)
+- [Excel-like functions](spreadsheet/functions.md#builtinfunctions)
 
 ~~~js
 "data": [
@@ -64,7 +32,9 @@ The syntax of mathematical expressions is the same as that of Excel.
  ]
 ~~~
 
-There are two variants of recording a function, depending on which you can get different results:
+- [custom functions](spreadsheet/functions.md#creatingacustomfunction)
+
+4 . There are two variants of recording a formula, depending on which you can get different results:
 
 - if you want to apply a formula only to two certain cells, you need to specify comma-separated references to these cells, e.g.:
 
@@ -82,29 +52,15 @@ There are two variants of recording a function, depending on which you can get d
 ]
 ~~~
 
+String Concatenation
+--------------------
 
-Formula Editor
-----------------
+You can contatenate string content of cells. There are two possible ways for this:
 
-Spreadsheet possesses an advanced formula editor. Its main features are:
+1 . use two text strings or references to the necessary cells and the *&* operand, as follows: "nice"&"trip" or A1&B2
+2 . apply the CONCATENATE() function, like this: =CONCATENATE("nice","trip" or A1,B2). It's also possible to connect strings from a range of cells 
+to produce one continuous text: =CONCATENATE(C2:D4)
 
-- providing the list of possible functions on entering the first letter of the function name in the input; 
-- entering formula operands either by selecting a range of cells or by typing in the cell reference.
-
-
-<img src="spreadsheet/formula_editor.png">
-
-It's easy to enable the formula editor, just set the api/ui.spreadsheet_liveeditor_config.md property to true in the spreadsheet configuration:
-
-~~~js
-webix.ui({
-    view: "spreadsheet",
-    data: base_data,
-    liveEditor: true
-});
-~~~
-
-{{sample 65_spreadsheet/03_customization/03_editor_bar.html}}
 
 
 Using Named Ranges in Formulas
@@ -155,5 +111,53 @@ $$("ssheet").ranges.remove("MYRANGE");
 
 
 {{sample 65_spreadsheet/02_api/13_named_ranges.html}}
+
+
+Cross-references in Multiple Sheets
+-------------------
+
+You have a possibility to link data of several sheets and use these cross references in formulas to process them together.
+
+The rules of creating a reference to an external sheet are quite simple:
+
+- *Sheet_Name!Cell_Name* - to refer to a cell of other sheet, e.g. =Countries!A4
+- *Sheet_Name!Cells_Range* - to refer to a range of cells from other sheet, e.g. =SUM(Countries!B2:B3)
+- *Sheet_Name!Named_Range* - to refer to a named range from other sheet, e.g. =SUM(Countries!DATA) 
+
+There are other examples of how you can use cross references in multi sheets:
+
+- reference formula results from a different sheet, e.g. =Data!B8*D13 (where B8, D13 are cells from the "Data" sheet)
+- fill a chart from a different sheet, e.g. =SPARKLINE(Countries!DATA,"splineArea","#6666FF") (where "DATA" is a named range from the "Countries" sheet)
+- fill a dropdown with a range data from a different sheet, e.g. by setting the range in the "Add dropdown" dialog as follows: Countries!NAMES (where "NAMES" is a named range
+from the "Countries" sheet)
+
+{{sample 65_spreadsheet/01_basic/09_multisheet_math.html}}
+
+Formula Editor
+----------------
+
+Spreadsheet possesses an advanced formula editor. Its main features are:
+
+- providing the list of possible functions on entering the first letter of the function name in the input; 
+- entering formula operands either by selecting a range of cells or by typing in the cell reference.
+
+
+<img src="spreadsheet/formula_editor.png">
+
+It's easy to enable the formula editor, just set the api/ui.spreadsheet_liveeditor_config.md property to true in the spreadsheet configuration:
+
+~~~js
+webix.ui({
+    view: "spreadsheet",
+    data: base_data,
+    liveEditor: true
+});
+~~~
+
+{{sample 65_spreadsheet/03_customization/03_editor_bar.html}}
+
+@index: 
+
+- spreadsheet/functions.md
 
 @spellcheck:counts
