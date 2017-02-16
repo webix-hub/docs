@@ -4,46 +4,36 @@ Migration to Latest Webix Version
 Webix 4.1 -> 4.2
 -----------------
 
-The logic of getChart(), getEditor(), getMap(), getScheduler() methods of the third-party components is modified:
+The possibility of getting a third-party component's object has radically changed.
 
-- when a method is called without parameters as *.getSome()*, it returns an object (a map, an editor or a chart)
+Earlier you could either address to the object as follows:
 
 ~~~js
-var editor = codemirror.getEditor();
+var editor = codemirror.editor; 
+var map = googlemap.map;
 ~~~
 
-- when a mthod is called with *true* parameter as *.getSome(true)*, it returns a promise to wait until an object is ready 
+or use the corresponding **getSome()** method of the component:
+
+~~~js
+var editor = codemirror.getEditor(); 
+var map = googlemap.getMap(); 
+~~~
+
+From version 4.2 you must use the **getSome()** method as the only option.
+
+If you need to return a promise of object instead, you should pass the **true** parameter to the component's method:
 
 ~~~js
 codemirror.getEditor(true).then(function(editor){ /* logic */ });
 ~~~
 
-Below you will find the list of methods-related components:
+The list of methods-related components is the following: 
 
-###.getMap()
-
-- googlemap (in components and main package)
-- nokiamap 
-- openmap
-- yandexmap
-
-###.getEditor()
-
-- ace
-- nicedit
-- ckeditor
-- codemirror
-- tinymce
-
-###.getChart()
-
-- raphael
-- fusion
-- sigma
-
-###.getScheduler()
-
-- scheduler
+- **.getMap()** (Google Maps (in components and main package), Yandex Maps, Here Maps, OpenStreet Maps)
+- **.getEditor()** (Ace Editor,  NicEdit, CKEditor,  Code Mirror, TinyMCE)
+- **.getChart()** (RaphaelJS, FusionCharts, SigmaJS)
+- **.getScheduler()** (DHTMLX Scheduler)
 
 The code details are given at [GitHub](https://github.com/webix-hub/components/tree/get-editors-and-maps).
 

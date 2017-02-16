@@ -10,18 +10,15 @@ New Features
 - [cross-sheet math](spreadsheet/math.md#crossreferencesinmultiplesheets)
 - [string math methods](spreadsheet/functions.md#string_functions)
 - visual improvement - highlighting row and column's headers on cell selection
-- Shift+key navigation for area selection
+- Shift+Arrow keys navigation for area selection
 
 Updates
 -----------
 
 - [.recalculate API](api/ui.spreadsheet_recalculate.md)
-- autocorrection of formulas (to upper case, etc)
 - api/ui.spreadsheet_compactstyles.md method to remove unused styles from sheet styles 
-
-{{sample 65_spreadsheet/02_api/18_clear_styles.html}}
-
 - onBefore/AfterSheetShow (links) events instead of onSheetShow
+- autocorrection of formulas (e.g. to upper case, etc.)
 
 Fixes
 ------

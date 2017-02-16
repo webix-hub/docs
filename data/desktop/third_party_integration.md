@@ -1,10 +1,11 @@
-Third party integration
+Third party Шntegration
 =======================
 
 {{index
 - desktop/jquery.md
 - desktop/angular.md
 - desktop/backbone.md
+- desktop/vue.md
 - desktop/dhtmlx.md
 - desktop/custom_integration.md
 }}

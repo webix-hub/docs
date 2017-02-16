@@ -5,39 +5,49 @@ Version 4.2
 
 See also spreadsheet/whats_new.md
 
-Latest update 31/01/2017 19:30
 
 Breaking Changes
 ------------------
 
-Changes in the logic of *getChart()*, *getEditor()*, *getMap()*, *getScheduler()* methods of the [third-party components](desktop/extensions.md). 
+Access to [third-party components'](desktop/extensions.md) objects (charts, maps, scheduler) has changed. 
+Now the only way to receive the component's object is to call the related **getSome()** method.
+
+It is also possible to return a promise of the object by passing *true* parameter to the **getSome()** method of the necessary component.
 
 Check the [Migration Guide](migration.md#webix4042) for more details.
 
 New Features
 ------------
 
-- [export to CSV](desktop/export_csv.md) 
-- plainOutput option for data export (export.js)
-- [color options for Gage control](desktop/gage.md#settingcustomcolors) 
+- [Vue.js integration](desktop/vue.md)
+- updated functionality of [SpreadSheet](spreadsheet/whats_new.md#newfeatures): enhanced math, visual improvements and key navigation
+- possibility of running Pivot with web workers (improved UX and performance)
 - [ability of the Uploader widget to upload folders with files](desktop/configuring_uploader.md#uploadingfolders)  
-- example of an adaptive view added {{sample 01_layout/18_adaptive_view.html}}
-- new Pager events (onBeforePageChange/onAfterPageChange) 
-- refreshSelectArea() in DataTable 
-- [spreadsheet] [cross-sheet math](spreadsheet/math.md#crossreferencesinmultiplesheets)
-- [spreadsheet] [string math methods](spreadsheet/functions.md#string_functions)
-- [spreadsheet] [ability to define custom math methods](spreadsheet/functions.md#creatingacustomfunction)
+- [export to CSV](desktop/export_csv.md) 
+- possibility to run Webix and complex widgets via NPM both for GPL and PRO editions
 
 
 Updates
 ----------
 
+- integration with [DHTMLX v5.0 components](https://github.com/webix-hub/components/tree/master/dhtmlx) in addition to DHTMLX v3.6 integration.
+- [color options for Gage control](desktop/gage.md#settingcustomcolors) 
+- new Pager events (api/ui.pager_onbeforepagechange_event.md / api/ui.pager_onafterpagechange_event.md) -новые ли они?
+- refreshSelectArea() in DataTable 
+- plainOutput option for data export (export.js)
 - using FormData with webix.ajax (load.js)
 - $init is called during $group processing (package.json, group.js)
-- areaselect refresh events (during shift+click or shift+keynav) (onBeforeAreaUpdate/onAfterAreaUpdate - datatable) (datatable_areaselect.js)
+- areaselect for datatable with shift+keynav 
 - server daterangefilter (datastore, datatable_filter_plus)
 - Calendar aria labels and navigation (calendar.js, view.js)
-- form.save for bind-form can accept data object (bind.js)
+- form.save for bind-form can accept data object (bind.js) <br><br>
+- related to Skins migration:
+	- UI Button and Text - added variable border width and used it in webix (config(s).js, inputs.js)
+	- UI Slider - fix calculate right  (slider.js)
+	- UI Window - removed $skin function and added new variable to defaults (window.js)
+	- removed pre-sets  (inputs.js, slider.js, window.js)
+	- added some variables in Webix skins and used them in UI (config(s).js, inputs.js, slider.js, window.js, compression.js)
+
 
 Fixes
 -------
@@ -76,13 +86,6 @@ Fixes
 - regression with spacer and align property  (view, package.json)
 - start fix Accordion with resizer (accordion.js)
 - localization: empty objects and strings overwrite default locale values 
-
-- UI Button and Text - added variable border width and used it in webix (config(s).js, inputs.js)
-- UI Slider - fix calculate right  (slider.js)
-- UI Window - removed $skin function and added new variable to defaults (window.js)
-- removed pre-sets  (inputs.js, slider.js, window.js)
-- added some variables in Webix skins and used them in UI (config(s).js, inputs.js, slider.js, window.js, compression.js)
-
 - regression in webix.copy (webix.js)
 - webix.copy should not process regular expressions (e.g. in input patterns) (webix.js)
 - DataView: define max elements dimensions for Firefox, IE and Safari (virtual_render.js, webix.js)
@@ -96,3 +99,4 @@ Fixes
 - block mouse event handler for already destroyed views (mouse.js)
 - align:absolute ignores right and bottom positions (flex.js)
 
+@todo: check latest update 

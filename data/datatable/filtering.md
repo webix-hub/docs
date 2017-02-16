@@ -268,7 +268,10 @@ grid = new webix.ui({
    view:"datatable",
    ...
    columns:[
-	 { id:"title", header:["Film title",{content:"textFilter",compare:startCompare}]},
+	 { 	
+     	id:"title", 
+     	header:["Film title",{content:"textFilter",compare:startCompare}]
+     },
 	 ...
    ]
 });	
