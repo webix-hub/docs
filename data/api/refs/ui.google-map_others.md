@@ -12,6 +12,7 @@ Others
 - api/link/ui.google-map_$width_other.md - current width of the view
 - api/link/ui.google-map_config_other.md - all options from initial component configuration
 - api/link/ui.google-map_name_other.md - indicates the name of the component (a read-only property)
+- api/link/ui.google-map_waitdata_other.md - 
 }}
 
 @index:
@@ -25,5 +26,6 @@ Others
 - api/link/ui.google-map_$width_other.md
 - api/link/ui.google-map_config_other.md
 - api/link/ui.google-map_name_other.md
+- api/link/ui.google-map_waitdata_other.md
 
 

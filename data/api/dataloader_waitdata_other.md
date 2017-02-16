@@ -14,7 +14,7 @@ var grid = webix.ui({
 });
 
 grid.waitData.then(function(){
-    //when we have data - do some actions
+    // when we have data, do some actions
 });
 
 @related:

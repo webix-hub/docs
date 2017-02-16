@@ -69,8 +69,17 @@ DataLoader
 
 
 
+<div class='h2'>Other</div>
+
+
+{{api
+- api/dataloader_waitdata_other.md - 
+}}
+
+
 @index:
 - api/refs/dataloader_methods.md
 - api/refs/dataloader_props.md
 - api/refs/dataloader_events.md
+- api/refs/dataloader_others.md
 

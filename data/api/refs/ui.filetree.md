@@ -276,6 +276,7 @@ dummy stub
 - api/link/ui.filetree_on_mouse_move_other.md - attaches a mouse move behavior for component items with the specified CSS class
 - api/link/ui.filetree_type_other.md - set of properties and helpers for item rendering
 - api/link/ui.filetree_types_other.md - collection of possible types
+- api/link/ui.filetree_waitdata_other.md - 
 }}
 
 

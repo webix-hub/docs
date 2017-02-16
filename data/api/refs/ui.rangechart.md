@@ -233,6 +233,7 @@ var rangechart = webix.ui({
 - api/link/ui.rangechart_on_dblclick_other.md - attaches a dblclick behavior for component items with the specified CSS class
 - api/link/ui.rangechart_on_mouse_move_other.md - attaches a mouse move behavior for component items with the specified CSS class
 - api/link/ui.rangechart_presets_other.md - collection of styling presets
+- api/link/ui.rangechart_waitdata_other.md - 
 }}
 
 

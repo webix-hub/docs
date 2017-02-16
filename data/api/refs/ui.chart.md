@@ -235,6 +235,7 @@ var chart = webix.ui({
 - api/link/ui.chart_on_dblclick_other.md - attaches a dblclick behavior for component items with the specified CSS class
 - api/link/ui.chart_on_mouse_move_other.md - attaches a mouse move behavior for component items with the specified CSS class
 - api/ui.chart_presets_other.md - collection of styling presets
+- api/link/ui.chart_waitdata_other.md - 
 }}
 
 

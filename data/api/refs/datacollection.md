@@ -120,6 +120,7 @@ var store = new webix.DataCollection({ url:"data.php" });
 {{api
 - api/link/datacollection_config_other.md - all options from initial component configuration
 - api/link/datacollection_name_other.md - indicates the name of the component (a read-only property)
+- api/link/datacollection_waitdata_other.md - 
 }}
 
 

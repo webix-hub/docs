@@ -24,6 +24,7 @@ Others
 - api/link/ui.menu_on_mouse_move_other.md - attaches a mouse move behavior for component items with the specified CSS class
 - api/link/ui.menu_type_other.md - set of properties and helpers for item rendering
 - api/link/ui.menu_types_other.md - collection of possible types
+- api/link/ui.menu_waitdata_other.md - 
 }}
 
 @index:
@@ -49,5 +50,6 @@ Others
 - api/link/ui.menu_on_mouse_move_other.md
 - api/link/ui.menu_type_other.md
 - api/link/ui.menu_types_other.md
+- api/link/ui.menu_waitdata_other.md
 
 
