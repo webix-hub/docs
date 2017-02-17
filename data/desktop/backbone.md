@@ -4,7 +4,7 @@ Backbone Integration
 **Backbone.js** is a lightweight JavaScript framework that allows for adding structure to client-side code in the MVC pattern. Backbone works in conjunction with its hard-weight dependency, **Underscore.js**, 
 the utility library that provides a lot of the functional programming support and contains a number of functions as well as specialized helpers for function binding, JavaScript templating, and so on. 
 
-Backbone is based on the **MVC principle** that translates as Model, View and Controller classes where:
+Backbone is based on the **MVC principle** that stands for Model, View and Controller classes.
 
 ### Bonuses of Backbone usage: 
 
