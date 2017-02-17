@@ -91,17 +91,22 @@ To add a new function, use the api/ui.spreadsheet_registermathmethod.md method. 
 
 - the name of the function. It should be defined in uppercase
 - the function handler. It takes all the necessary parameters and contains the function's logic
+The handler can contain:
+	- a single value (a reference to a cell)
+	- an array of values (a reference to a range of cells)
 
-For example, let's create a function "MYFUNC". It should be added to the functions' list as follows:
+For example, let's create a function "FIRST" that will return the value of the first cell in a range.
+So, we should add our function to the list as follows:
 
 ~~~js
-$$("ss1").registerMathMethod("MYFUNC", function(value){
-    // function's logic
+$$("ss").registerMathMethod("FIRST", function(range){
+	return range[0];
 });
 ~~~
 
-In the above example we have passed one parameter to the handler - "value". It will be a reference to a cell.
-It is also possible to pass a range of cell references as an arrayof values or any other parameters.
+In the above example we have passed one parameter to the handler - "range". It will be a reference to a range of cells.
+The "FIRST" function will address to the specified range and return the value of the first cell.
 
+You can add any other custom function in this way.
 
 {{sample 65_spreadsheet/01_basic/03_math.html}}
