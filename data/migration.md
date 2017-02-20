@@ -1,12 +1,19 @@
 Migration to Latest Webix Version
 =================================
 
+{{todo
+Check link to heremap when it is in master
+}}
+
 Webix 4.1 -> 4.2
 -----------------
 
-The possibility of getting a third-party component's object has radically changed.
+###Getting integrated object of third-party components
 
-Earlier you could either address to the object as follows:
+The possibility of getting an integrated object of [third-party components](https://github.com/webix-hub/components) like GoogleMap, CodeMirror editor, Sigma chart
+has radically changed.
+
+Earlier you could either access the editor or map as follows:
 
 ~~~js
 var editor = codemirror.editor; 
@@ -22,20 +29,30 @@ var map = googlemap.getMap();
 
 From version 4.2 you must use the **getSome()** method as the only option.
 
-If you need to return a promise of object instead, you should pass the **true** parameter to the component's method:
+Also, if you need to access the map, chart or scheduler immediately after it has been loaded and initialized, you 
+can pass the **true** parameter to the method:
 
 ~~~js
 codemirror.getEditor(true).then(function(editor){ /* logic */ });
 ~~~
 
-The list of methods-related components is the following: 
+The list of the affected components is the following:
 
-- **.getMap()** (Google Maps (in components and main package), Yandex Maps, Here Maps, OpenStreet Maps)
+- **.getMap()** (Google Maps (in [components](https://github.com/webix-hub/components) and main package), Yandex Maps, Here Maps, OpenStreet Maps)
 - **.getEditor()** (Ace Editor,  NicEdit, CKEditor,  Code Mirror, TinyMCE)
-- **.getChart()** (RaphaelJS, FusionCharts, SigmaJS)
+- **.getChart()** (RaphaelJS, FusionCharts, SigmaJS, JustGage)
 - **.getScheduler()** (DHTMLX Scheduler)
+- **.getStage()** (Konva)
 
-The code details are given at [GitHub](https://github.com/webix-hub/components/tree/get-editors-and-maps).
+###NokiaMap renames to HereMap
+
+One of the [third-party components](desktop/extensions.md) has changed its name. Now we have an updated HereMap instead of the NokiaMap. 
+
+~~~js
+webix.ui({ view:"here-map", id:"map" });
+~~~
+
+The code for the updated component is located by the [link](https://github.com/webix-hub/components/tree/master/heremap).
 
 Webix 4.0 -> 4.1
 -----------------

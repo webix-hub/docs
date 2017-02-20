@@ -1,4 +1,4 @@
-Third party Integration
+Third Party Integration
 =======================
 
 {{index
