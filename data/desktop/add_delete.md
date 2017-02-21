@@ -16,12 +16,12 @@ Basic syntax here looks as follows:
 
 ~~~js
 $$("myview").add({
-         id:"item_id",  //adding  an item with two properties
-         property:"some_value"
-})
-$$("myview").remove("item_id"); //to delete a single item
+	id:"item_id",  // adding  an item with two properties
+    property:"some_value"
+});
+$$("myview").remove("item_id"); // to delete a single item
 
-$$("myview").remove(["idA","idB","idC","idD"]); //to delete multiple items
+$$("myview").remove(["idA","idB","idC","idD"]); // to delete multiple items
 
 ~~~
 
@@ -30,7 +30,7 @@ $$("myview").remove(["idA","idB","idC","idD"]); //to delete multiple items
 To add an item which is a string entered by user in a [form](desktop/form.md), you need to derive this string from the input area and then add data to the desired 
 component. Again, specify everything by their ID. It's a common rule for all methods and event handlers. 
 
-[Form](desktop/form.md) and [HtmlForm](desktop/htmlform.md) components have different code for input fields - look for the library's [text](desktop/text.md) control and standard html input respectively. 
+[Form](desktop/form.md) and [HtmlForm](desktop/htmlform.md) components have different code for input fields - look for the library's [text](desktop/text.md) control and standard HTML input respectively. 
 It means that different methods are used to get data from them: 
 
 {{snippet
@@ -42,7 +42,7 @@ function addData(){
 		user:$$('form1').getValues().user, 
 		email:$$('form1').getValues().email,
 	}, 0);
-} //'user' and 'mail' are ID-s of dedicated text fields
+} // 'user' and 'mail' are ID-s of dedicated text fields
 ~~~
 
 {{snippet
@@ -55,8 +55,7 @@ function addData() {
 		title: document.getElementById("title").value, //data users enter into an input field 
 		year: document.getElementById("year").value 
 	},0)
-}
-    
+}    
 ~~~
 
 
@@ -70,12 +69,13 @@ Before removal let's check whether an item is selected with the help of the simp
 ~~~js
 function removeData(){ 
     if(!$$("data").getSelectedId()){
-    webix.message("No item is selected!");
-    return; //'data' is an ID of the needed component
-}
-$$("data").remove($$("data").getSelectedId());
-}}
+    	webix.message("No item is selected!");
+    	return; //'data' is an ID of the needed component
+	}
+	$$("data").remove($$("data").getSelectedId());
+}};
 ~~~
+
 {{sample 06_dataview/04_manipulations/01_adding.html }}
 
 ###Deletion of several items
