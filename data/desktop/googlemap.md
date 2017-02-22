@@ -105,7 +105,12 @@ Getting the GoogleMap object
 ----------------------------
 
 To get the map object, you can make use of the api/ui.google-map_getmap.md method. 
-It will return a promise which will be resolved when a map is rendered.
+
+~~~js
+var mapObj = $$("map").getMap();
+~~~
+
+The method can take the *waitMap* parameter. If passed, the method returns a promise which will be resolved when the map is rendered.
 
 ~~~js
 $$("map").getMap().then(function(mapObj){
@@ -205,8 +210,14 @@ Working with Heatmap
 
 ###Getting heatmap object
 
+To get the heatmap object, you can make use of the *getHeatmap* method.
+
+~~~js
+var heatmapObj = $$("map").getHeatmap();
+~~~
+
 Heatmap is constantly updated. You can get the actual heatmap object by using the api/ui.google-map_onheatmaprender_event.md event.
-It will fire when a heatmap will be rendered.
+It will fire when a heatmap will be (re-)rendered.
 
 ~~~js
 $$("map").attachEvent("onHeatMapRender", function(heatmapObj){

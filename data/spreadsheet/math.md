@@ -55,10 +55,14 @@ The syntax of a formula is the same as in Excel.
 String Concatenation
 --------------------
 
-You can contatenate string content of cells. There are two possible ways for this:
+You can contatenate string content of cells. There are three possible ways for this:
 
-1 . use two text strings or references to the necessary cells and the *&* operand, as follows: "nice"&"trip" or A1&B2
-2 . apply the CONCATENATE() function, like this: =CONCATENATE("nice","trip" or A1,B2). It's also possible to connect strings from a range of cells 
+1 . use two text strings or references to the necessary cells and the **&** operator as: "=nice"&"trip" or =A1&B2
+
+2 . use two text strings or references to the necessary cells and the **+** operator as: ="nice"+"trip" or =A1+B2. 
+The "+" operator will sum numeric values and concatenate the values if summing is not possible (e.g. ="nice"+12). 
+
+3 . apply the CONCATENATE() function, like this: =CONCATENATE("nice","trip" or A1,B2). It's also possible to connect strings from a range of cells 
 to produce one continuous text: =CONCATENATE(C2:D4)
 
 
@@ -124,11 +128,11 @@ The rules of creating a reference to an external sheet are quite simple:
 - *Sheet_Name!Cells_Range* - to refer to a range of cells from other sheet, e.g. =SUM(Countries!B2:B3)
 - *Sheet_Name!Named_Range* - to refer to a named range from other sheet, e.g. =SUM(Countries!DATA) 
 
-There are other examples of how you can use cross references in multi sheets:
+Here are some use cases that demonstrate how you can use cross references in multi sheets:
 
-- reference formula results from a different sheet, e.g. =Data!B8*D13 (where B8, D13 are cells from the "Data" sheet)
-- fill a chart from a different sheet, e.g. =SPARKLINE(Countries!DATA,"splineArea","#6666FF") (where "DATA" is a named range from the "Countries" sheet)
-- fill a dropdown with a range data from a different sheet, e.g. by setting the range in the "Add dropdown" dialog as follows: Countries!NAMES (where "NAMES" is a named range
+- provide reference to a cell from a different sheet, e.g. =Data!B8*D13 (where B8 is a cell from the "Data" sheet)
+- fill a chart with data from a different sheet, e.g. =SPARKLINE(Countries!DATA,"splineArea","#6666FF") (where "DATA" is a named range from the "Countries" sheet)
+- fill a dropdown with a data range from a different sheet, e.g. by referecning the range in the "Add dropdown" dialog as: Countries!NAMES (where "NAMES" is a named range
 from the "Countries" sheet)
 
 {{sample 65_spreadsheet/01_basic/09_multisheet_math.html}}

@@ -10,9 +10,19 @@ format
 
 @type: 
 @example:
+view:"pivot", format: function(value){
+	return (value&& value!="0"?parseFloat(value).toFixed(1):value);
+}
 
 
 @template:	api_config
 @descr:
 
+Default:
+
+~~~js
+format: function(value){
+	return (value&& value!="0"?parseFloat(value).toFixed(3):value);
+}
+~~~
 

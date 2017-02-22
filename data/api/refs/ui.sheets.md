@@ -254,7 +254,7 @@ dummy stub
 - api/link/ui.sheets_on_mouse_move_other.md - attaches a mouse move behavior for component items with the specified CSS class
 - api/link/ui.sheets_type_other.md - set of properties and helpers for item rendering
 - api/link/ui.sheets_types_other.md - collection of possible types
-- api/link/ui.sheets_waitdata_other.md - 
+- api/link/ui.sheets_waitdata_other.md - eventual result of an asynchronous operation ('promise' object) for the loaded data
 }}
 
 

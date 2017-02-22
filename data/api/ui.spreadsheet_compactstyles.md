@@ -1,10 +1,6 @@
 compactStyles
 =============
 
-
-@todo:
-	check 
-
 @short:
 	removes unused styles for the current sheet
     

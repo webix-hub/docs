@@ -47,7 +47,6 @@ Events
 - api/ui.filemanager_onbeforesearchrequest_event.md - fires before a search request is sent to the server-side script (see details [here](file_manager/loading_data.md#serversidesearchingforcontent))
 - api/ui.filemanager_onbeforeshowtree_event.md - fires before the tree is expanded
 - api/link/ui.filemanager_onbeforesort_event.md - fires before sorting dataset
-- api/ui.filemanager_onbeforeuploadfile_event.md - 
 - api/link/ui.filemanager_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/ui.filemanager_oncomponentinit_event.md - fires when File Manager is initialized
 - api/ui.filemanager_oncopyerror_event.md - fires if an error occurred during a file/folder copying
@@ -116,7 +115,6 @@ Events
 - api/ui.filemanager_onbeforesearchrequest_event.md
 - api/ui.filemanager_onbeforeshowtree_event.md
 - api/link/ui.filemanager_onbeforesort_event.md
-- api/ui.filemanager_onbeforeuploadfile_event.md
 - api/link/ui.filemanager_onbindrequest_event.md
 - api/ui.filemanager_oncomponentinit_event.md
 - api/ui.filemanager_oncopyerror_event.md

@@ -116,7 +116,7 @@ dummy stub
 - api/link/ui.filetable_refreshcolumns.md - refreshes the structure of DataTable
 - api/link/ui.filetable_refreshfilter.md - rebuilds list of options in select filter
 - api/link/ui.filetable_refreshheadercontent.md - refreshes the header row of DataTable
-- api/link/ui.filetable_refreshselectarea.md - 
+- api/link/ui.filetable_refreshselectarea.md - refreshes the selected area in the DataTable
 - api/link/ui.filetable_registerfilter.md - registers a filter element
 - api/link/ui.filetable_remove.md - removes the specified item/items from datastore
 - api/link/ui.filetable_removecellcss.md - remove css class from the cell of datatable
@@ -288,7 +288,7 @@ dummy stub
 - api/link/ui.filetable_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.filetable_hover_config.md - css class for a row-hover in the datatable
 - api/link/ui.filetable_id_config.md - the component ID
-- api/link/ui.filetable_leftsplit_config.md - 
+- api/link/ui.filetable_leftsplit_config.md - the number of the fixed columns from the left side of the table (actual for the <a href="datatable/frozen_columns.md">split mode</a> )
 - api/link/ui.filetable_livevalidation_config.md - validation during cell editing
 - api/link/ui.filetable_loadahead_config.md - sets the number of items that will be loaded on each scroll movement relative to the last item in the scrolling direction
 - api/link/ui.filetable_map_config.md - defines data mapping
@@ -313,7 +313,7 @@ dummy stub
 - api/link/ui.filetable_removemissed_config.md - defines how to treat items in case of reloading
 - api/link/ui.filetable_resizecolumn_config.md - enables/disables horizontal resizing of columns
 - api/link/ui.filetable_resizerow_config.md - enables/disables vertical resizing of rows
-- api/link/ui.filetable_rightsplit_config.md - 
+- api/link/ui.filetable_rightsplit_config.md - sets the number of the fixed columns from the right side of the table (actual for the <a href="datatable/frozen_columns.md">split mode</a> )
 - api/link/ui.filetable_rowheight_config.md - sets the default height for rows
 - api/link/ui.filetable_rowlineheight_config.md - default line height for grid's row
 - api/link/ui.filetable_rules_config.md - set of validation rules for the component
@@ -365,7 +365,7 @@ dummy stub
 - api/link/ui.filetable_on_context_other.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.filetable_on_dblclick_other.md - attaches a dblclick behavior for component items with the specified CSS class
 - api/link/ui.filetable_on_mouse_move_other.md - attaches a mouse move behavior for component items with the specified CSS class
-- api/link/ui.filetable_waitdata_other.md - 
+- api/link/ui.filetable_waitdata_other.md - eventual result of an asynchronous operation ('promise' object) for the loaded data
 }}
 
 

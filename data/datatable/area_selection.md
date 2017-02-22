@@ -29,6 +29,15 @@ To enable area selection in DataTable, you should specify the api/ui.datatable_a
 
 {{note Area selection will work only with other selection types disabled. So, the *select* property shouldn't be set.}}
 
+
+###Refreshing Area Selection
+
+In order to refresh selected area, you can use the api/ui.datatable_refreshselectarea.md method.
+
+~~~js
+$$("dtable").refreshSelectArea();
+~~~
+
 {{sample
 60_pro/01_datatable/06_api/14_area_selection.html
 }}

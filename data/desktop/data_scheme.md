@@ -3,7 +3,7 @@ Defining Data Scheme
 
 Data scheme defines schemes for data processing, the default actions for loaded, updated, serialized as well as grouped and sorted. 
 
-Object scheme is defined as in the **scheme** property. Generally, it allows you to set a default scheme for data records of DataStore. So, 
+The scheme object is defined as in the **scheme** property. Generally, it allows you to set a default scheme for data records of DataStore. So, 
 in cases when you add an empty record to DataStore, the record will be populated with the values set by the scheme.
 
 Any changes you apply through data scheme are directly applied to data store items.
@@ -25,7 +25,7 @@ list1.add({}); //adds { name:"Unknown", age:16} record
 
 In addition, there are 6 special keys you can use within the property:
 
-- **$init** - runs when data is initially being loaded to the component + while reloading data for new DataStore items + when the [add](api/datastore_add.md) method is called;
+- **$init** - runs when data is initially being loaded to the component + while reloading data for new DataStore items + when the [add](api/datastore_add.md) method is called+while processing the *$group* object;
 - **$update** - runs for existing items while reloading data (for new items **$init** runs) + when the [update](api/datastore_updateitem.md) method is called;
 - **$save** - runs when saving to server is triggered in any of the ways;
 - **$change** - runs each time data in the table is changed (i.e. loaded,added,updated,deleted). Note, the key runs when either the **$init** or the **$update** key runs; 
@@ -45,7 +45,8 @@ And called:
 
 - for each data item, while initial data loading;
 - for newly-added items, while data reloading;
-- for the specified item, when the [add](api/datastore_add.md) method is called.
+- for the specified item, when the [add](api/datastore_add.md) method is called;
+- while processing the *$group* object.
 
 ####Usage example
 
@@ -215,7 +216,7 @@ The **$group** function accepts 1 parameter - so-called group object that has 2 
 - **map** – an object that defines properties of the items in the group;
 
 Properties are specified by an array. The first element of this array is a template with a property from original data, the second one – the functor that will be 
-applied to all values of the property (set by the first element) in the group.Grouping provides the following functors:
+applied to all values of the property (set by the first element) in the group. Grouping provides the following functors:
 
 - **sum** – gets the sum of the values;
 - **max** – gets the maximum value in the group;
@@ -225,7 +226,7 @@ It's possible to define custom functor. Read on the topic in the related article
 
 The **$group** function is called:
 
-- for each data item, while initial data loading
+- for each data item during initial data loading
 
 The function doesn't run when you programmatically call the [group](api/group_group.md) method. 
 

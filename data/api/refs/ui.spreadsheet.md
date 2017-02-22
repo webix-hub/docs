@@ -174,7 +174,6 @@ var spreadsheet = webix.ui({
 - api/link/ui.spreadsheet_isolate_config.md - masks IDs of all inner elements
 - api/ui.spreadsheet_liveeditor_config.md - enables the formula editor in spreadsheet
 - api/link/ui.spreadsheet_margin_config.md - defines the space around elements (applies the specified value to all elements)
-- api/ui.spreadsheet_math_config.md - enables the math functionality in the spreadsheet
 - api/link/ui.spreadsheet_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.spreadsheet_maxwidth_config.md - sets the maximum width for the view
 - api/ui.spreadsheet_menu_config.md - adds a dropdown menu at the top of SpreadSheet

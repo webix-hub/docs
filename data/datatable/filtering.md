@@ -11,15 +11,17 @@ You can define a built-in filter in the header or footer of a column. Webix offe
 - in a standard free version:
 	- **[textFilter](#text)**;
 	- **[serverFilter](#server)** (text-based);
-    - **serverSelectFilter** (select-based);
 	- **[selectFilter](#select)**;
+    - **[serverSelectFilter](#serverselect)** (select-based);
 	- **[numberFilter](#number)**;
     - **[dateFilter](#date)**;
 - additionally, in the Webix Pro edition:    
 	- **[richSelectFilter](#richselect)**;
     - **[multiSelectFilter](#multiselect)**;
+    - **[serverMultiSelectFilter](#servermultiselect)** (multiselect-based);
 	- **[datepickerFilter](#datepicker)**;
-    - **[daterangeFilter](#daterange)**.
+    - **[daterangeFilter](#daterange)**;
+    - **[serverDateRangeFilter](#serverdaterange)** (daterange-based).
     
 All of them are described in detail below.     
 
@@ -81,6 +83,22 @@ Retrieves values that contain mask defined through a dropdown list of possible v
 
 {{sample 15_datatable/03_filtering/01_builtin.html}}
 
+###ServerSelect Filter {#serverselect}
+
+A select filter that works with backend. Retrieves values defined through a dropdown list of possible values and sends a request to server to return filtered dataset. 
+
+~~~js
+{ id:"title",header:["Film title", {content:"serverSelectFilter"}] }
+~~~
+
+Request parameters include: 
+
+- *count* - the number of data records to return. Its value depends on [dynamic loading](desktop/dynamic_loading.md) parameters, if any;
+- *start* - ID of the data record to start from (0 - beginning). Its value depends on [dynamic loading](desktop/dynamic_loading.md) parameters, if any;
+- *filter[column_name]* - name of the column (in brackets) for which filtering is performed. Its value is a text value you've selected in the filter input. 
+
+If **server-side sorting** is enabled, data is both filtered and sorted on server. 
+
 ###Number filter {#number}
 
 <img src="datatable/numeric_filter.png"/>
@@ -94,10 +112,11 @@ Text filter used for number columns. Retrieves values which contain mask defined
 - '>=' - greater or equal.
 		
 ~~~js
-{ id:"year", header:[ "Released",{content:"numberFilter"}] }
+{ id:"year", header:["Released",{content:"numberFilter"}] }
 ~~~
 
 {{sample 15_datatable/03_filtering/09_numeric.html}}
+
 
 ###Date filter {#date}
 
@@ -134,7 +153,7 @@ Available in **Webix Pro** edition only.
 Retrieves values that contain mask defined through a popup list of possible values. Based on Webix [richselect](desktop/richselect.md) control.
 
 ~~~js
-{ id:"year", header:["Released", { content:"richSelectFilter" }] }
+{ id:"year", header:["Released", { content:"richSelectFilter" }]}
 ~~~
 
 {{sample 60_pro/01_datatable/03_filters/06_filter_multiselect.html}}
@@ -151,10 +170,31 @@ Retrieves values that contain mask defined through a popup list of possible valu
 Based on Webix [multiselect](desktop/multiselect.md) control.
 
 ~~~js
-{ id:"year",header:["Released", { content:"multiSelectFilter" }]
+{ id:"year",header:["Released", { content:"multiSelectFilter" }]}
 ~~~
 
 {{sample 60_pro/01_datatable/03_filters/06_filter_multiselect.html}}
+
+###ServerMultiSelect Filter {#servermultiselect}
+
+{{pronote
+Available in **Webix Pro** edition only.
+}}
+
+Retrieves values that contain mask defined through a popup list of possible values while **multiple values** can be selected at once. 
+Sends a request to server to return filtered dataset.
+
+~~~js
+{ id:"year",header:["Released", { content:"serverMultiSelectFilter" }]}
+~~~
+
+Request parameters include: 
+
+- *count* - the number of data records to return. Its value depends on [dynamic loading](desktop/dynamic_loading.md) parameters, if any;
+- *start* - ID of the data record to start from (0 - beginning). Its value depends on [dynamic loading](desktop/dynamic_loading.md) parameters, if any;
+- *filter[column_name]* - name of the column (in brackets) for which filtering is performed. Its value is a text value you've selected in the filter input. 
+
+If **server-side sorting** is enabled, data is both filtered and sorted on server. 
 
 ###Datepicker Filter {#datepicker}
 
@@ -189,6 +229,29 @@ Retrieves values that contain mask defined through the range defined in the popu
 ~~~
 
 {{sample 60_pro/01_datatable/03_filters/04_filter_daterange.html}}
+
+
+###ServerDateRange Filter {#serverdaterange}
+
+{{pronote
+Available in **Webix Pro** edition only.
+}}
+
+A daterange filter that works with backend. Retrieves values defined through the range set in the popup calendar and sends a request to server to return filtered dataset. 
+
+~~~js
+{ id:"title", header:["Film title", {content:"serverDateRangeFilter"}],
+	format:webix.i18n.dateFormatStr, width:200}}
+~~~
+
+Request parameters include: 
+
+- *count* - the number of data records to return. Its value depends on [dynamic loading](desktop/dynamic_loading.md) parameters, if any;
+- *start* - ID of the data record to start from (0 - beginning). Its value depends on [dynamic loading](desktop/dynamic_loading.md) parameters, if any;
+- *filter[column_name]* - name of the column (in brackets) for which filtering is performed. Its value is a JSON string formed out of the value you have entered 
+in the daterange picker.
+
+If **server-side sorting** is enabled, data is both filtered and sorted on server. 
 
 ##Filtering Logic
 

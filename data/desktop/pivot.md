@@ -1,6 +1,10 @@
 Pivot Table
 ===========
 
+What's New
+-----------
+
+Check recently added features, latest updates and bugfixes in the pivot/whats_new.md list.
 
 API Reference
 -----------------
@@ -30,13 +34,14 @@ With Pivot you can easily compare, filter and sort data within one table as well
 	<tr>
 		<td id="design" class='topics'>
 		    <ul id="design_sublist">
+            	<li>pivot/whats_new.md</li>
                 <li>pivot/structure.md</li>
                 <li>pivot/initialization.md</li>
                 <li>pivot/data_loading.md</li>
                 <li>pivot/configuration.md</li>
                 <li>pivot/localization.md</li>
                 <li>pivot/customization.md</li>
-                <li>pivot/filters.md</li>
+                <li>pivot/filters.md</li>                
             </ul>
 		</td>
 		<td class='topic_description'>The guides will introduce Webix Pivot to you. 
@@ -48,6 +53,7 @@ With Pivot you can easily compare, filter and sort data within one table as well
 </table>
 
 @index:
+- pivot/whats_new.md
 - pivot/structure.md
 - pivot/initialization.md
 - pivot/data_loading.md
@@ -55,6 +61,7 @@ With Pivot you can easily compare, filter and sort data within one table as well
 - pivot/localization.md
 - pivot/customization.md
 - pivot/filters.md
+
 
 
 

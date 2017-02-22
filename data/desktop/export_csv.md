@@ -48,6 +48,14 @@ webix.toCSV($$("table"), {
 });
 ~~~
 
+- **stripping HTML tags** from the cells: 
+
+~~~js
+webix.toCSV($$("mylist"), {
+     filterHTML:true
+});
+~~~
+
 - setting **columns** you'd like to see in the export file:
 
 ~~~js
@@ -59,16 +67,69 @@ webix.toCSV($$("mylist"), {
 });
 ~~~
 
-- defining custom **header** parameter for data in the specified column: 
+- defining custom **header** or **template** parameter for data in the specified column: 
 
 ~~~js
-webix.toExcel($$("mylist"), {
+webix.toCSV($$("mylist"), {
 	columns:{
-		"title":{header: "Title"},
+		"title":{header: "Title", template: webix.template("#id#.#name#")},
         "year":{header: "Year"}
 	}
 });
 ~~~
+
+The column will be rendered with the stated additional properties, which may differ from the component's parameters.
+
+- **not rendering "hyphens" before child nodes** in tree-like structures by using the *plainOutput* option with the *true* value
+
+~~~js
+webix.toCSV($$("mytreetable"), {
+	columns:{
+		plainOutput:true
+	}
+});
+~~~
+
+- **rendering a template** set in the widget's dataset via setting the *rawValues* option to *false*
+
+~~~js
+webix.ui({
+  rows:[
+    { 
+      view:"datatable", 
+      data:grid_data, 
+      columns:[{id:"title", fillspace:true, template:"Film #title#"}]
+    }
+  ]
+});
+
+webix.toCSV($$("$datatable1"),{
+	columns:{
+		rawValues:false
+	}
+});
+~~~
+
+- **including extra fields** into export by forming them right within the export function:
+
+~~~js
+webix.toCSV($$("mylist"), { 
+	columns:{ 
+		Custom1:{
+			template:function(obj){
+				return "Year " + obj.year;
+			},
+			header:"Year"
+		},
+        //other columns
+		title:true
+	}
+});
+~~~
+
+"Custom1" (any name can be used) receives data from the **year** field even if it is not seen in this component but is presented in its dataset.
+The field is rendered with **template** and **header** that will be the header of the corresponding column in the resulting table.
+
 
 - setting the desired columns' delimiter using **webix.csv.delimiter.cols** 
 

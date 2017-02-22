@@ -27,12 +27,15 @@ New Features
 ------------
 
 - [Vue.js integration](desktop/vue.md)
-- updated functionality of [SpreadSheet](spreadsheet/whats_new.md#newfeatures): enhanced math, visual improvements and key navigation
-- possibility of running Pivot with web workers (improved UX and performance)
+- updated functionality of [SpreadSheet](spreadsheet/whats_new.md#newfeatures) (PRO version): 
+	- enhanced math
+    - visual improvements 
+    - key navigation 
+- possibility to run Pivot with web workers (improved UX and performance) (PRO version)
+- [possibility to run Webix and complex widgets via NPM](tutorials/start_coding.md#package_managers) 
+- [serverDateRangeFilter](datatable/filtering.md#serverdaterange) added for DataTable filtering (PRO version)
 - [ability of the Uploader widget to upload folders with files](desktop/configuring_uploader.md#uploadingfolders)  
 - [export to CSV](desktop/export_csv.md) 
-- server daterangefilter (datastore, datatable_filter_plus)
-- possibility to run Webix and complex widgets via NPM both for GPL and PRO editions
 
 
 Updates
@@ -41,21 +44,15 @@ Updates
 - integration with [DHTMLX v5.0 components](https://github.com/webix-hub/components/tree/master/dhtmlx) in addition to DHTMLX v3.6 integration.
 - [color options for Gage control](desktop/gage.md#settingcustomcolors) 
 - new Pager events (api/ui.pager_onbeforepagechange_event.md / api/ui.pager_onafterpagechange_event.md) -новые ли они?
-- refreshSelectArea() in DataTable 
-- plainOutput option for data export (export.js)
-- using FormData with webix.ajax (load.js)
-- $init is called during $group processing (package.json, group.js)
+- [refreshSelectArea()](api/ui.datatable_refreshselectarea.md) in DataTable 
+- plainOutput option for data export 
+- [using FormData with webix.ajax](helpers/ajax_operations.md) 
+- [$init is called during $group processing](desktop/data_scheme.md) 
 - areaselect for datatable with shift+keynav 
 - Enhanced accessibility of Calendar component: 
 	- date-related ARIA labels
     - possibility to [provide custom ARIA labels for day cells](api/ui.calendar_daytemplate_config.md)
-- form.save for bind-form can accept data object (bind.js) <br><br>
-- related to Skins migration:
-	- UI Button and Text - added variable border width and used it in webix (config(s).js, inputs.js)
-	- UI Slider - fix calculate right  (slider.js)
-	- UI Window - removed $skin function and added new variable to defaults (window.js)
-	- removed pre-sets  (inputs.js, slider.js, window.js)
-	- added some variables in Webix skins and used them in UI (config(s).js, inputs.js, slider.js, window.js, compression.js)
+- [saving extra data with bound form](desktop/binding_details.md#savingextradatawiththeboundform)
 
 
 Fixes

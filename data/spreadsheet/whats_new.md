@@ -15,7 +15,7 @@ New Features
 Updates
 -----------
 
-- [.recalculate API](api/ui.spreadsheet_recalculate.md)
+- [recalculate](api/ui.spreadsheet_recalculate.md) method
 - api/ui.spreadsheet_compactstyles.md method to remove unused styles from sheet styles 
 - onBefore/AfterSheetShow (links) events instead of onSheetShow
 - autocorrection of formulas (e.g. to upper case, etc.)

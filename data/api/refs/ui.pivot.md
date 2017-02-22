@@ -62,7 +62,7 @@ var pivot = webix.ui({
 - api/link/ui.pivot_getchildviews.md - returns child views of the calling component
 - api/ui.pivot_getconfigwindow.md - returns the object of the window with pivot configuration
 - api/ui.pivot_getfields.md - returns an object with fields configurations
-- api/ui.pivot_getfilterview.md - 
+- api/ui.pivot_getfilterview.md - returns an object with filters configuration
 - api/link/ui.pivot_getfirstid.md - returns the ID of the first item
 - api/link/ui.pivot_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.pivot_getindexbyid.md - returns the index of the item with the specified id
@@ -203,7 +203,7 @@ var pivot = webix.ui({
 - api/link/ui.pivot_config_other.md - all options from initial component configuration
 - api/link/ui.pivot_name_other.md - indicates the name of the component (a read-only property)
 - api/ui.pivot_operations_other.md - gets an object with possible mathematical operations in Pivot
-- api/link/ui.pivot_waitdata_other.md - 
+- api/link/ui.pivot_waitdata_other.md - eventual result of an asynchronous operation ('promise' object) for the loaded data
 }}
 
 

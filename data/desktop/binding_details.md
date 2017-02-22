@@ -257,5 +257,16 @@ $$("mydatatable").saveBatch(function(){
 });
 ~~~
 
+Saving Extra Data with the Bound Form
+------------------------------------
 
+It is possible to save some extra data together with the changes made in the form to the bound component. 
 
+For this you need to get values of all form elements and specify the name of the field that contains an extra value. Then pass form values to the *form.save()* method:
+
+~~~js
+var values = form.getValues();
+values.myfield = "My value";
+
+form.save(values);
+~~~

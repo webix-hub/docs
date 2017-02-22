@@ -144,7 +144,7 @@ dummy stub
 - api/link/ui.flexdatalayout_$width_other.md - current width of the view
 - api/link/ui.flexdatalayout_config_other.md - all options from initial component configuration
 - api/link/ui.flexdatalayout_name_other.md - indicates the name of the component (a read-only property)
-- api/link/ui.flexdatalayout_waitdata_other.md - 
+- api/link/ui.flexdatalayout_waitdata_other.md - eventual result of an asynchronous operation ('promise' object) for the loaded data
 }}
 
 

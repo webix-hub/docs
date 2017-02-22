@@ -142,7 +142,7 @@ var datatable = webix.ui({
 - api/ui.datatable_refreshcolumns.md - refreshes the structure of DataTable
 - api/ui.datatable_refreshfilter.md - rebuilds list of options in select filter
 - api/ui.datatable_refreshheadercontent.md - refreshes the header row of DataTable
-- api/ui.datatable_refreshselectarea.md - 
+- api/ui.datatable_refreshselectarea.md - refreshes the selected area in the DataTable
 - api/ui.datatable_registerfilter.md - registers a filter element
 - api/link/ui.datatable_remove.md - removes the specified item/items from datastore
 - api/ui.datatable_removecellcss.md - remove css class from the cell of datatable
@@ -319,7 +319,7 @@ var datatable = webix.ui({
 - api/link/ui.datatable_hidden_config.md - defines whether the view will be hidden initially
 - api/ui.datatable_hover_config.md - css class for a row-hover in the datatable
 - api/link/ui.datatable_id_config.md - the component ID
-- api/link/ui.datatable_leftsplit_config.md - 
+- api/ui.datatable_leftsplit_config.md - the number of the fixed columns from the left side of the table (actual for the <a href="datatable/frozen_columns.md">split mode</a> )
 - api/ui.datatable_livevalidation_config.md - validation during cell editing
 - api/ui.datatable_loadahead_config.md - sets the number of items that will be loaded on each scroll movement relative to the last item in the scrolling direction
 - api/link/ui.datatable_map_config.md - defines data mapping
@@ -344,7 +344,7 @@ var datatable = webix.ui({
 - api/link/ui.datatable_removemissed_config.md - defines how to treat items in case of reloading
 - api/ui.datatable_resizecolumn_config.md - enables/disables horizontal resizing of columns
 - api/ui.datatable_resizerow_config.md - enables/disables vertical resizing of rows
-- api/link/ui.datatable_rightsplit_config.md - 
+- api/ui.datatable_rightsplit_config.md - sets the number of the fixed columns from the right side of the table (actual for the <a href="datatable/frozen_columns.md">split mode</a> )
 - api/ui.datatable_rowheight_config.md - sets the default height for rows
 - api/ui.datatable_rowlineheight_config.md - default line height for grid's row
 - api/link/ui.datatable_rules_config.md - set of validation rules for the component
@@ -396,7 +396,7 @@ var datatable = webix.ui({
 - api/link/ui.datatable_on_context_other.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.datatable_on_dblclick_other.md - attaches a dblclick behavior for component items with the specified CSS class
 - api/link/ui.datatable_on_mouse_move_other.md - attaches a mouse move behavior for component items with the specified CSS class
-- api/link/ui.datatable_waitdata_other.md - 
+- api/link/ui.datatable_waitdata_other.md - eventual result of an asynchronous operation ('promise' object) for the loaded data
 }}
 
 

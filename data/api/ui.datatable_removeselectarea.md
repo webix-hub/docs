@@ -15,7 +15,7 @@ $$("dtable").removeSelectArea();
 
 @template:	api_method
 @descr:
-if the area_name parameter isn't passed, the method removes the last unnamed select area
+if the *area_name* parameter isn't passed, the method removes the last unnamed selected area.
 
 @relatedapi:
 - api/ui.datatable_addselectarea.md
@@ -26,5 +26,7 @@ if the area_name parameter isn't passed, the method removes the last unnamed sel
 
 @related:
 datatable/area_selection.md
+
+@relatedsample: 60_pro/01_datatable/06_api/14_area_selection.html
 
 @edition:pro

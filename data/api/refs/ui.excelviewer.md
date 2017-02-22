@@ -285,7 +285,7 @@ dummy stub
 - api/link/ui.excelviewer_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.excelviewer_hover_config.md - css class for a row-hover in the datatable
 - api/link/ui.excelviewer_id_config.md - the component ID
-- api/link/ui.excelviewer_leftsplit_config.md - 
+- api/link/ui.excelviewer_leftsplit_config.md - the number of the fixed columns from the left side of the table (actual for the <a href="datatable/frozen_columns.md">split mode</a> )
 - api/link/ui.excelviewer_livevalidation_config.md - validation during cell editing
 - api/link/ui.excelviewer_loadahead_config.md - sets the number of items that will be loaded on each scroll movement relative to the last item in the scrolling direction
 - api/link/ui.excelviewer_map_config.md - defines data mapping
@@ -310,7 +310,7 @@ dummy stub
 - api/link/ui.excelviewer_removemissed_config.md - defines how to treat items in case of reloading
 - api/link/ui.excelviewer_resizecolumn_config.md - enables/disables horizontal resizing of columns
 - api/link/ui.excelviewer_resizerow_config.md - enables/disables vertical resizing of rows
-- api/link/ui.excelviewer_rightsplit_config.md - 
+- api/link/ui.excelviewer_rightsplit_config.md - sets the number of the fixed columns from the right side of the table (actual for the <a href="datatable/frozen_columns.md">split mode</a> )
 - api/link/ui.excelviewer_rowheight_config.md - sets the default height for rows
 - api/link/ui.excelviewer_rowlineheight_config.md - default line height for grid's row
 - api/link/ui.excelviewer_rules_config.md - set of validation rules for the component
@@ -364,7 +364,7 @@ dummy stub
 - api/link/ui.excelviewer_on_context_other.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.excelviewer_on_dblclick_other.md - attaches a dblclick behavior for component items with the specified CSS class
 - api/link/ui.excelviewer_on_mouse_move_other.md - attaches a mouse move behavior for component items with the specified CSS class
-- api/link/ui.excelviewer_waitdata_other.md - 
+- api/link/ui.excelviewer_waitdata_other.md - eventual result of an asynchronous operation ('promise' object) for the loaded data
 }}
 
 

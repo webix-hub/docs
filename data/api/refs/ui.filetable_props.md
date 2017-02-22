@@ -42,7 +42,7 @@ Properties
 - api/link/ui.filetable_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.filetable_hover_config.md - css class for a row-hover in the datatable
 - api/link/ui.filetable_id_config.md - the component ID
-- api/link/ui.filetable_leftsplit_config.md - 
+- api/link/ui.filetable_leftsplit_config.md - the number of the fixed columns from the left side of the table (actual for the <a href="datatable/frozen_columns.md">split mode</a> )
 - api/link/ui.filetable_livevalidation_config.md - validation during cell editing
 - api/link/ui.filetable_loadahead_config.md - sets the number of items that will be loaded on each scroll movement relative to the last item in the scrolling direction
 - api/link/ui.filetable_map_config.md - defines data mapping
@@ -67,7 +67,7 @@ Properties
 - api/link/ui.filetable_removemissed_config.md - defines how to treat items in case of reloading
 - api/link/ui.filetable_resizecolumn_config.md - enables/disables horizontal resizing of columns
 - api/link/ui.filetable_resizerow_config.md - enables/disables vertical resizing of rows
-- api/link/ui.filetable_rightsplit_config.md - 
+- api/link/ui.filetable_rightsplit_config.md - sets the number of the fixed columns from the right side of the table (actual for the <a href="datatable/frozen_columns.md">split mode</a> )
 - api/link/ui.filetable_rowheight_config.md - sets the default height for rows
 - api/link/ui.filetable_rowlineheight_config.md - default line height for grid's row
 - api/link/ui.filetable_rules_config.md - set of validation rules for the component

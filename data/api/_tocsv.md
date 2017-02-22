@@ -1,10 +1,6 @@
 toCSV
 =============
 
-
-@todo:
-	check 
-
 @short:
 	exports data of a data component to a CSV document
 
