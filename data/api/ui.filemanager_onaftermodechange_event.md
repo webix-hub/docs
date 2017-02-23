@@ -1,11 +1,8 @@
 onAfterModeChange
 =============
 
-@todo:
-	check 
-
 @short:
-	fires after the mode of viewing files has been changed on clicking [the Modes button](file_manager/configuration.md#modes)
+	fires after the mode of viewing files has been changed on clicking the <a href="file_manager/configuration.md#modes">Modes button</a>
 
 @params:
 

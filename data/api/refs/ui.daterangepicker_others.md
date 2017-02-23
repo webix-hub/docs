@@ -2,10 +2,12 @@ Others
 =======
 
 {{api
+- api/link/ui.daterangepicker_$comparevalue_other.md - compares the old value of the control with the one that is going to be set
 - api/ui.daterangepicker_$cssname_other.md - name of the widget which css you want to inherit for a custom widget
 - api/link/ui.daterangepicker_$getsize_other.md - returns the current size of the component
 - api/link/ui.daterangepicker_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.daterangepicker_$height_other.md - current height of the view
+- api/link/ui.daterangepicker_$preparevalue_other.md - adjusts the value that is going to be set to the format expected by the control
 - api/link/ui.daterangepicker_$render_other.md - code called after rending control
 - api/link/ui.daterangepicker_$rendericon_other.md - renders icon for the control
 - api/link/ui.daterangepicker_$renderinput_other.md - called each time when component need to paint control's input
@@ -23,10 +25,12 @@ Others
 }}
 
 @index:
+- api/link/ui.daterangepicker_$comparevalue_other.md
 - api/ui.daterangepicker_$cssname_other.md
 - api/link/ui.daterangepicker_$getsize_other.md
 - api/link/ui.daterangepicker_$getvalue_other.md
 - api/link/ui.daterangepicker_$height_other.md
+- api/link/ui.daterangepicker_$preparevalue_other.md
 - api/link/ui.daterangepicker_$render_other.md
 - api/link/ui.daterangepicker_$rendericon_other.md
 - api/link/ui.daterangepicker_$renderinput_other.md

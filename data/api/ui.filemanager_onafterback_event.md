@@ -1,11 +1,8 @@
 onAfterBack
 =============
 
-@todo:
-	check 
-
 @short:
-	fires after the Back button has been clicked
+	fires after the Filemanager "back" button has been clicked
 
 @params:
 

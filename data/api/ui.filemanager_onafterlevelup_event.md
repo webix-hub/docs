@@ -1,11 +1,9 @@
 onAfterLevelUp
 =============
 
-@todo:
-	check 
 
 @short:
-	fires after the [LevelUp](file_manager/configuration.md#levelup) button has been clicked (selection has been moved to the parent folder)
+	fires after the <a href="file_manager/configuration.md#levelup">LevelUp</a> button has been clicked (selection moves to the parent folder)
 
 @params:
 

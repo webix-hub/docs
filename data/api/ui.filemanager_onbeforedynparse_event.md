@@ -1,9 +1,6 @@
 onBeforeDynParse
 =============
 
-@todo:
-	check 
-
 @short:
 	fires before the data loaded from the server-side script will be parsed into the widget
 
@@ -26,10 +23,7 @@ $$("fmanager").attachEvent("onBeforeDynParse",function(folder, data, mode){
 @template:	api_event
 @descr:
 
-The *folder* object includes 2 properties:
-
-- *action* - (string) the name of the dynamic loading mode
-- *source* - (string) the id of the folder that requests for data
+The *folder* object contains all the properties of the related folder.
 
 The *data* parameter is a hash that includes two "key:value" pairs:
 

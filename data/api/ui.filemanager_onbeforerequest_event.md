@@ -1,15 +1,13 @@
 onBeforeRequest
 =============
 
-@todo:
-	check 
 
 @short:
-	fires before any request is sent to the server-side script
+	fires before any request is sent to the server side
 
 @params:
 
-- url		string		the URL of the server-side script
+- url		string		the path to the server-side script
 - folder 	object		the object of the folder to load data into (see details)
 
 @returns:

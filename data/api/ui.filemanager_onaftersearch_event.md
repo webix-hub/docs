@@ -1,14 +1,12 @@
 onAfterSearch
 =============
 
-@todo:
-	check 
     
 @short:
-	fires after search is finished
+	fires after filtering via the "search" input is finished
 
 @params:
-- text		string		the searched text
+- text		string		text in the "search" field
 
 @example:
 $$("fmanager").attachEvent("onAfterSearch",function(text){

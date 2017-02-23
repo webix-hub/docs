@@ -1,9 +1,6 @@
 Migration to Latest Webix Version
 =================================
 
-{{todo
-Check link to heremap when it is in master
-}}
 
 Webix 4.1 -> 4.2
 -----------------

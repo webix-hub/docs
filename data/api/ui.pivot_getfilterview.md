@@ -2,18 +2,14 @@ getFilterView
 =============
 
 
-@todo:
-	check
-
 @short:
-	returns an object with filters configuration
+	returns the object of the toolbar with filters
 
 @params:
 
 @returns: 
 
-- fields		object			an object with fields configurations
-
+- filters		object			the filters object
 
 
 @example:

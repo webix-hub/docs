@@ -149,9 +149,11 @@ var text = webix.ui({
 
 
 {{api
+- api/link/ui.text_$comparevalue_other.md - compares the old value of the control with the one that is going to be set
 - api/link/ui.text_$getsize_other.md - returns the current size of the component
 - api/link/ui.text_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.text_$height_other.md - current height of the view
+- api/link/ui.text_$preparevalue_other.md - adjusts the value that is going to be set to the format expected by the control
 - api/ui.text_$render_other.md - code called after rending control
 - api/ui.text_$rendericon_other.md - renders icon for the control
 - api/link/ui.text_$renderinput_other.md - called each time when component need to paint control's input

@@ -12,7 +12,7 @@ Properties
 - api/link/ui.uploader_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.uploader_css_config.md - the name of a css class that will be applied to the view container
 - api/ui.uploader_datatype_config.md - the type of serverside response
-- api/ui.uploader_directory_config.md - 
+- api/ui.uploader_directory_config.md - allows uploading a folder with files
 - api/link/ui.uploader_disabled_config.md - indicates whether an item is enabled or not
 - api/ui.uploader_formdata_config.md - extra data that will be sent to server side along with the file uploading
 - api/link/ui.uploader_gravity_config.md - sets the view gravity (1 by default)

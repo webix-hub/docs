@@ -1,11 +1,8 @@
 onBeforeBack
 =============
 
-@todo:
-	check 
-
 @short:
-	fires before the Back button has been clicked
+	fires before the Filemanager "back" button has been clicked
 
 @params:
 

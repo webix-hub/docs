@@ -1,11 +1,8 @@
 onBeforeMenu
 =============
 
-@todo:
-	check 
-
 @short:
-	fires before the Actions menu is opened on clicking [the Menu button](file_manager/configuration.md#menubutton)
+	fires before the Actions menu is opened on clicking the <a href="file_manager/configuration.md#menubutton">Menu button</a>
 
 @params:
 

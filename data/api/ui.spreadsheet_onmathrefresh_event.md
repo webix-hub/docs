@@ -1,11 +1,8 @@
 onMathRefresh
 =============
 
-@todo:
-	check 
-
 @short:
-	fires when recalculation of formulas in the sheet is called
+	fires when recalculation of formulas in the sheet is complete
 
 @params:
 

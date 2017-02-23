@@ -1,11 +1,9 @@
 onBeforeSearchRequest
 =============
 
-@todo:
-	check 
 
 @short:
-	fires before a search request is sent to the server-side script (see details [here](file_manager/loading_data.md#serversidesearchingforcontent))
+	fires before a search request is sent to the server-side (see details <a href="file_manager/loading_data.md#serversidesearchingforcontent">here</a>)
 
 @params:
 - id			string		the id of the folder to search in

@@ -2,9 +2,6 @@ refreshSelectArea
 =============
 
 
-@todo:
-	check 
-
 @short:
 	refreshes the selected area in the DataTable
 

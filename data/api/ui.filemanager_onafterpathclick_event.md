@@ -1,11 +1,8 @@
 onAfterPathClick
 =============
 
-@todo:
-	check
-
 @short:
-	fires after the folders' path has been clicked
+	fires after the path item has been clicked
 
 @params:
 - id 		string		the id of the clicked folder

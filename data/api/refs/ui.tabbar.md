@@ -178,9 +178,11 @@ var tabbar = webix.ui({
 
 
 {{api
+- api/link/ui.tabbar_$comparevalue_other.md - compares the old value of the control with the one that is going to be set
 - api/link/ui.tabbar_$getsize_other.md - returns the current size of the component
 - api/link/ui.tabbar_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.tabbar_$height_other.md - current height of the view
+- api/link/ui.tabbar_$preparevalue_other.md - adjusts the value that is going to be set to the format expected by the control
 - api/link/ui.tabbar_$render_other.md - code called after rending control
 - api/link/ui.tabbar_$rendericon_other.md - renders icon for the control
 - api/link/ui.tabbar_$renderinput_other.md - called each time when component need to paint control's input

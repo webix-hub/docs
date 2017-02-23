@@ -116,6 +116,37 @@ webix.toExcel($$("mylist"), {
 
 The column will be rendered with the stated additional properties, which may differ from the component's parameters. 
 
+- **not rendering "hyphens" before child nodes** in tree-like structures by using the *plainOutput* option with the *true* value
+
+~~~js
+webix.toExcel($$("mytreetable"), {
+	columns:{
+		plainOutput:true
+	}
+});
+~~~
+
+- **rendering a template** set in the widget's dataset via setting the *rawValues* option to *false*
+
+~~~js
+webix.ui({
+  rows:[
+    { 
+      view:"datatable", 
+      data:grid_data, 
+      columns:[{id:"title", fillspace:true, template:"Film #title#"}]
+    }
+  ]
+});
+
+webix.toExcel($$("$datatable1"),{
+	columns:{
+		rawValues:false
+	}
+});
+~~~
+
+
 - **including extra fields** into export by forming them right within the export function:
 
 ~~~

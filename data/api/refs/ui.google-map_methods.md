@@ -25,7 +25,7 @@ Methods
 - api/link/ui.google-map_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.google-map_getitem.md - gets the object of the data item with the specified id
 - api/link/ui.google-map_getlastid.md - returns the id of the last item
-- api/ui.google-map_getmap.md - returns a promise which is resolved after a map is rendered
+- api/ui.google-map_getmap.md - returns a GoogleMap map object
 - api/link/ui.google-map_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.google-map_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.google-map_getparentview.md - returns the parent view of the component

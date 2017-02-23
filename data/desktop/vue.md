@@ -4,57 +4,64 @@ Vue JS Integration
 Overview
 ----------
 
-Webix provides the possibility of integration with [VueJS](https://vuejs.org/) framework. You can follow one of the two approaches:
-using a Webix widget in a Vue application or using a Vue template in a Webix-based application.
+Webix provides the possibility of integration with [VueJS](https://vuejs.org/) framework. There are two good use-cases, when such kind of integration will be useful:
 
-You can also create a custom component by wrapping a Webix widget into a Vue template.
-There is a set of ready-made Vue+Webix Form controls for those who want to try using them in their Vue apps at once. 
+- you have a Vue-based app, where you want to place one or a few complex widgets (datatable, chart, spreadsheet, etc.)
+- you have a Webix-based app, where you want to add a reactive Vue component
 
 We advise you against using Vue.js as an MVC framework for developing a Webix-based applications, since there are obvious
-pitfalls. Webix widgets won't adjust their sizes properly during layout resizing. In general, such implementation requires too much overhead for not so many benefits.
+pitfalls. Webix widgets won't adjust size to Vue layouts and such approach adds too much overhead for not so many benefits.
 
-We highly recommend you to use the [Webix Jet](https://webix.gitbooks.io/webix-jet/content/chapter1.html) framework for building 
+Instead, we highly recommend you to use the [Webix Jet](https://webix.gitbooks.io/webix-jet/content/chapter1.html) framework for building 
 web apps with Webix, as it is native for the library and will help you to manage the development stages in the most natural way. 
-Thus, you will avoid facing possible difficulties and using excessive code.
+
+To achieve Vue+Webix integration we provide the following tools:
+
+- [webix-ui component for Vue based apps](#vue_app)
+- [view:"vue" for Webix based apps](#webix_app)
+- [set of ready-made Vue+Webix Form controls](#customcontrols)
+
+If it's not enough, you can create a [custom component by wrapping a Webix widget](#customui) into a Vue component. 
 
 
 Included Files
 -----------------
 
 First, you should pay attention that the discussed integration isn't included into Webix library. To start using it in your project, 
-you need to take the necessary sources from [GitHub](https://github.com/webix-hub/webix-vue).
+you need to take the necessary sources from [GitHub](https://github.com/webix-hub/webix-vue). Besides, they are available from CDN.
 
-Then you need to include the link to the Vue source file in the head of your HTML page. We will use the minified JS file for our examples:
+You need to include the link to the Vue source file in the head of your HTML page. We will use the minified JS file for our examples:
 
 ~~~html
 <script type="text/javascript" 
 	src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
 ~~~
 
-After that include the JS and CSS file of Webix, for example from CDN:
+Then include Webix JS and CSS files, for example from CDN:
 
 ~~~html
 <script type="text/javascript" src="//cdn.webix.com/edge/webix.js"></script>
 <link rel="stylesheet" type="text/css" href="//cdn.webix.com/edge/webix.css">
 ~~~
 
-In order to use specific integration functions, you also need to include the following source files:
+In order to use specific integration features, you also need to include the following source files:
 
 ~~~html
 <!--for using a Webix widget in a Vue app-->
-<script type="text/javascript" src="../sources/webix-ui.js"></script>
+<script type="text/javascript" src="//cdn.webix.com/libs/vue/webix-ui.js"></script>
 <!--for using a Vue component in a Webix app-->
-<script type="text/javascript" src="../sources/vue-view.js"></script>
+<script type="text/javascript" src="//cdn.webix.com/libs/vue/vue-view.js"></script>
 <!--for using ready Vue+Webix controls-->
-<script type="text/javascript" src="../sources/webix-controls.js"></script>
+<script type="text/javascript" 
+	src="//cdn.webix.com/libs/vue/webix-controls.js"></script>
 ~~~
 
 
-Vue Application with Webix Widgets {#vue_app}
+Creating Vue Application with a Webix Widget {#vue_app}
 -----------------------------------
 
 If you are going to implement a large-scale application with Vue.js, it may require hard work with various data.
-In this case powerful Webix data widgets will help you to deal with this task. 
+In this case powerful Webix data widgets will help you to deal with data. 
 
 ###Initializing Webix view in a Vue app
 
@@ -63,9 +70,9 @@ To begin with, don't forget to include the necessary [source file](desktop/vue.m
 Next, to add a Webix widget into a Vue-based app, you need to complete the steps below:
 
 - create a new Vue instance
-- use the tag  *< webix-ui >* inside of the Vue template to define a Webix widget
-- specify an object with a Webix UI configuration inside of the *data* object of the Vue instance 
-- set the name of this object in the *v-bind* directive to bind the "config" attribute to the data object that contains the UI configuration
+- use the tag *< webix-ui >* inside of the Vue template to define a Webix widget
+- specify an object with the Webix UI configuration inside of the *data* object of the Vue instance 
+- bind the "config" attribute of *< webix-ui >* to the data object that contains the UI configuration via the *v-bind* directive
 
 Let's consider an example. We have a layout with two columns. The first column contains a Calendar view and the second one - a List view with data.
 The layout config is described in the *"ui"* object. So, we will bind this object to the *config* attribute of the < webix-ui > element located in the Vue template: 
@@ -100,7 +107,7 @@ The result is presented in the image below:
 
 ###Data binding
 
-It's possible to bind data between a Webix widget and a Vue template. For this, you just need to use common Vue technique:
+It's possible to bind data of a Webix widget and a Vue template. For this, you just need to use common Vue technique:
 the *v-bind* directive.
 
 In the example below we will add a Webix DataTable widget into
@@ -114,7 +121,7 @@ new Vue({
 			<h3>2. One way data binding,
 				<button v-on:click="data=[]">Clean</button>
 			</h3>
-			<webix-ui :config='ui' v-bind='data'/>
+			<webix-ui :config='ui' v-bind:value='data'/>
 		</div>
 	`,
 	data:{
@@ -145,15 +152,19 @@ and on the Clean button click:
 
 <img src="desktop/data_binding2.png">
 
-
 **Related sample**: [One-way Data Binding](https://webix-hub.github.io/webix-vue/samples/01_webix_ui.html)
 
+
+#### Implementation details
+
+The way, how component will try to parse incoming value depends on component.
+The top level widget of webix-ui block will try to call .parse/.setValues/.setValue method if such method presenst. Additionally, for all webix widgets in the block "onValue" event will be triggered, so you can define a custom value handler ( check the sample below )  
 
 ###Two-way data binding
 
 You can also implement two-way data binding. It means that
 if you change something in a Vue component, the corresponding changes will be invoked in the bound Webix widget and vice versa.
-The regular *v-model* Vue directive will help us.
+The regular *v-model* Vue directive can be used for this task.
 
 For example, we can create a Vue template with an input element and add a *< webix-ui >* element that will render a Webix Layout with a Slider inside. 
 If a value will be changed in an input or in a slider, it will be modified in the other component correspondingly. 
@@ -191,34 +202,31 @@ new Vue({
 });
 ~~~
 
+The result is presented in the image below:
+
 <img src="desktop/two_way_data_binding.png">
 
-By using the *v-model* directive we've bound the "result" data attribute both to the input and for the slider elements.   
+We've bound the "result" data attribute both to the input and the slider elements. 
 
-What happens when the value of the "result" attribute is changed in one of the components:
+When the *v-model* bound value is modified, the *onValue* event fires in the Webix view.
+When the value of the Slider view is changed, its native event *onChange* fires and informs Vue about value change.
 
-- When a new value is entered into the input, the following actions happen for the slider:
-
-1) the "onChange" event fires. It's handler takes the new value from the input
-
-2) the "onValue" event fires. It takes the new value and sets it for the slider
-
-- When a slider handler is dragged to a new position, a new value is set in the input.
+The declaration *this.$scope* inside of the onChange event handler points to the < webix-ui > element, i.e. on a Webix view as a Vue component. 
 
 **Related sample**: [Two-way Data Binding](https://webix-hub.github.io/webix-vue/samples/01_webix_ui.html)
 
 
-Webix Application with Vue Templates {#webix_app}
+Creating Webix Application with a Vue Template {#webix_app}
 -------------------------
 
-You can make use of Vue reactive templates inside of a Webix-based application. It allows updating data in an application dynamically.
+You can make use of a Vue reactive template inside of a Webix-based application. There is a *view:"vue"* widget added specially for this purpose.
+It presents a Vue template that can be used as a native Webix widget.
 
-There is a *view:"vue"* widget added specially for this purpose. It presents a Vue template that can be used as a native Webix widget.
 The only thing you need to do to use it in your app is to [include the corresponding JS file](desktop/vue.md#includedfiles).
 
 Let's consider the following example. We have a Webix Layout with a List view and want to display an item data in a template depending on the selected List item.
 
-The "dynamic" part of the layout can be implemented by the Vue view: 
+The code sample below shows how a Webix List and a Vue template can be bound:
 
 ~~~js
 var list = {
@@ -259,35 +267,31 @@ $$("preview").bind("list");
 
 This is how it works:
 
-- the *data* object stores the value and the size related to this value
-- the *v-if* directive inside the *template* object decides what data to display, when a value comes to the template. 
-The incoming value and the corresponding size are inserted into the template and updated each time a new list item is clicked
-- the *watch* property monitors what list item is selected and shows the corresponding "size" value  
+- the *data* object receives the value taken from the selected item of List
+- the *watch* property monitors when size changed inside of Vue component and updates data in the list
 
-The result can be used in an application like this:
+The result can be used in an application as follows:
 
 <img src="desktop/view_vue.png">
 
 **Related sample:** [view:"vue" in a Webix App](https://webix-hub.github.io/webix-vue/samples/06_vue_template.html)
 
 
-Creating Custom Vue Component {#customui}
+Creating a Custom Vue+Webix Component {#customui}
 -------------------------
 
-You can create a custom Vue component that will contain a necessary Webix widget inside. This case is rather useful when the same UI is reused 
-throughout an application. It also will help you to keep all the used data together.
+You can create a custom component by wrapping a Webix widget in a Vue component and use it as a native Vue template. 
+This case is rather useful when the same UI is reused throughout an application and will help you to keep all the used data together.
 
 For example, we have an input and a slider. We want them to update their values simultaneously.
 
 <img src="desktop/vue_webix_custom_ui.png">
 
-Let's see how we can wrap a Webix Slider widget into a Vue component and use it as a native Vue template.
-
 Before starting to work, don't forget to include the necessary [source file](desktop/vue.md#includedfiles).
 
-To create a custom Vue component with a Webix control inside, you need to complete several steps:
+After that you need to complete several steps below:
 
-1) register a new Vue component using **Vue.component(tagName,options)** declaration
+1) register a new Vue component using usual *Vue.component(tagName,options)* declaration
 
 You can find the details on registration of new components in the [Vue.js documentation](https://vuejs.org/v2/guide/components.html#Using-Components).
 
@@ -316,6 +320,7 @@ The full code of a component registration will look like this:
 ~~~js
 Vue.component("my-slider", {
   props: ['value'],
+  //always an empty div
   template:"<div></div>",
   watch:{
   	// updates component when the bound value changes
@@ -349,15 +354,13 @@ Vue.component("my-slider", {
 });
 ~~~
 
-The *mounted()* function will create a new instance of a Webix Slider. 
-Inside of it we have also attached the handler of the *onChange* event
-that will fire when a value in the bound component (an input in our case) is changed.
+The *mounted()* function will create a new instance of a Webix Slider.
 
 The *destroyed()* function will destroy the Webix Slider instance when it will be no longer needed.
 
 3) use the registered component in the Vue instance's template as a custom element
 
-Now we should create a new Vue instance:
+For this we should create a new Vue instance:
 
 ~~~js
 new Vue({
@@ -374,9 +377,9 @@ new Vue({
 });
 ~~~
 
-Into the Vue template we put a Webix-based slider that we've created above. 
+We put a Webix-based slider created above into the Vue template. 
  
-We bound the "progress" data attribute both to the slider and the input elements. Thus, when its value changes, both controls will update their values
+Also we bound the "progress" data attribute both to the slider and the input elements. Thus, when its value changes, both controls will update their values
 correspondingly.
 
 **Related sample:** [Vue+Webix Custom UI](https://webix-hub.github.io/webix-vue/samples/04_custom_ui.html)
@@ -384,15 +387,26 @@ correspondingly.
 Ready-made Webix Form Controls {#customcontrols}
 --------------------------------
 
-If you feel lazy enough to create a custom Vue component and wrap a Webix widget into it, we have prepared a set of ready Vue-wrapped Webix Form Controls.
+If you feel lazy enough to wrap a Webix widget into a Vue template by yourself, we have prepared a set of ready Vue-wrapped Webix Form Controls.
+The available controls are enumerated in the list below:
 
-To use integrated Form controls in a Vue app, you need to include the above-mentioned source file *webix-controls.js*. It contains all the necessary logic. 
+- < webix-text >
+- < webix-datepicker >
+- < webix-colorpicker >
+- < webix-slider >
+- < webix-select >
+- < webix-richselect >
+- < webix-combo >
+- < webix-multicombo >
+- < webix-radio >
+- < webix-segmented	>
+- < webix-tabbar >
+- < webix-textarea >
+- < webix-checkbox >
 
-~~~html
-<script type="text/javascript" src="../sources/webix-controls.js"></script>
-~~~
+To use integrated Form controls in a Vue app, you need to include the [above-mentioned source file](desktop/vue.md#includedfiles) - <br> *webix-controls.js*.
 
-After that you can use any of the wrapped Webix Form Controls in a Vue template as in the code below:
+After that you can use any of the Vue-wrapped Webix Form Controls in a Vue application as in the code below:
 
 ~~~js
 new Vue({
@@ -422,8 +436,21 @@ It will provide the following result:
 
 <img src="desktop/ready_form_controls.png">
 
+The "options" collection for multiple-value controls is set through the *v-bind* directive (e.g.:options='options'), as follows:
 
-- the "options" collection for multiple-value controls is set through the *v-bind* directive (e.g.:options='options')
+~~~js
+new Vue({
+	el: "#demo1",
+	template:`
+		<div>
+			<webix-select  	label='Select' 	:options='options' v-model.string='cval' />						
+		</div>`,
+	data:{
+		options:["One", "Two", "Three"],
+		cval:"Two"
+	}
+});
+~~~
 
 
 **Related sample:** [Vue+Webix Form Controls](https://webix-hub.github.io/webix-vue/samples/03_form_controls.html)

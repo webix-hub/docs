@@ -20,6 +20,7 @@ Properties
 - api/link/ui.organogram_height_config.md - sets the height of the component
 - api/link/ui.organogram_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.organogram_id_config.md - the component ID
+- api/link/ui.organogram_item_config.md - alias to api/renderstack_item_config.md property
 - api/link/ui.organogram_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.organogram_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.organogram_minheight_config.md - sets the minimal height for the view
@@ -65,6 +66,7 @@ Properties
 - api/link/ui.organogram_height_config.md
 - api/link/ui.organogram_hidden_config.md
 - api/link/ui.organogram_id_config.md
+- api/link/ui.organogram_item_config.md
 - api/link/ui.organogram_maxheight_config.md
 - api/link/ui.organogram_maxwidth_config.md
 - api/link/ui.organogram_minheight_config.md

@@ -1,8 +1,7 @@
 onCopyError
 =============
 
-@todo:
-	complete
+
 @short:
 	fires if an error occurred during a file/folder copying
 
@@ -15,4 +14,7 @@ $$("fmanager").attachEvent("onCopyError",function(){
 
 @template:	api_event
 @descr:
+
+@relatedapi:
+	api/ui.filemanager_onmoveerror_event.md
 

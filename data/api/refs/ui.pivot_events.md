@@ -16,10 +16,13 @@ Events
 - api/link/ui.pivot_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.pivot_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.pivot_ondestruct_event.md - occurs when component destroyed
+- api/ui.pivot_onfiltercreate_event.md - fires each time a filter is created
 - api/ui.pivot_onheaderinit_event.md - fires when pivot header is initialized
 - api/link/ui.pivot_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/ui.pivot_onpopup_event.md - fires after a configuration window for Pivot is created
 - api/ui.pivot_onviewinit_event.md - fires before inner view initialization
+- api/ui.pivot_onwebworkerend_event.md - fires when web worker has finished the task
+- api/ui.pivot_onwebworkerstart_event.md - fires when web worker starts working
 }}
 
 @index:
@@ -37,9 +40,12 @@ Events
 - api/link/ui.pivot_ondatarequest_event.md
 - api/link/ui.pivot_ondataupdate_event.md
 - api/link/ui.pivot_ondestruct_event.md
+- api/ui.pivot_onfiltercreate_event.md
 - api/ui.pivot_onheaderinit_event.md
 - api/link/ui.pivot_onloaderror_event.md
 - api/ui.pivot_onpopup_event.md
 - api/ui.pivot_onviewinit_event.md
+- api/ui.pivot_onwebworkerend_event.md
+- api/ui.pivot_onwebworkerstart_event.md
 
 

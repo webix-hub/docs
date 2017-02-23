@@ -1,12 +1,9 @@
 noFileCache
 =============
 
-@todo:
-	check 
-
 
 @short:
-	defines whether files' caching is enabled
+	defines whether caching is enabled
 
 @type: boolean
 @example:
@@ -22,5 +19,7 @@ webix.ui({
 
 @template:	api_config
 @descr:
+
+By default, file data is cached
 
 

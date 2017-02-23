@@ -41,7 +41,8 @@ With Pivot you can easily compare, filter and sort data within one table as well
                 <li>pivot/configuration.md</li>
                 <li>pivot/localization.md</li>
                 <li>pivot/customization.md</li>
-                <li>pivot/filters.md</li>                
+                <li>pivot/filters.md</li> 
+                <li>pivot/webworkers.md</li> 
             </ul>
 		</td>
 		<td class='topic_description'>The guides will introduce Webix Pivot to you. 
@@ -61,6 +62,7 @@ With Pivot you can easily compare, filter and sort data within one table as well
 - pivot/localization.md
 - pivot/customization.md
 - pivot/filters.md
+- pivot/webworkers.md
 
 
 

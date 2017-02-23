@@ -1,11 +1,9 @@
 onBeforeLevelUp
 =============
 
-@todo:
-	check 
 
 @short:
-	fires before the [LevelUp](file_manager/configuration.md#levelup) button is clicked (before selection is moved to the parent folder)
+	fires before the <a href="file_manager/configuration.md#levelup">LevelUp</a> button is clicked (before selection moves to the parent folder)
 
 @params:
 

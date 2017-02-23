@@ -1,9 +1,6 @@
 onComponentInit
 =============
 
-@todo:
-	check
-
 @short:
 	fires when File Manager is initialized
 

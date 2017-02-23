@@ -3,7 +3,7 @@ Version 4.2
 
 <span class="release_date">released on February 23, 2017</span>
 
-See also spreadsheet/whats_new.md
+See also spreadsheet/whats_new.md and pivot/whats_new.md
 
 
 Breaking Changes
@@ -17,21 +17,17 @@ or scheduler is loaded and ready to use.
 
 - One of the [third-party components](desktop/extensions.md) has changed its name. Now we have an updated HereMap instead of the NokiaMap. 
 
-- Breaking change for the [Skin Builder](http://webix.com/skin-builder/) users. New properties are added into the *config.js* files of skins.
-Please check [the list of new properties](desktop/skins.md#skinjsfileconfig) and add the missing ones to your custom skin js 
-file generated with Skin Builder to avoid possible breakdowns.
-
 Check the [Migration Guide](migration.md#webix4042) for more details.
 
 New Features
 ------------
 
 - [Vue.js integration](desktop/vue.md)
-- updated functionality of [SpreadSheet](spreadsheet/whats_new.md#newfeatures) (PRO version): 
+- [updated functionality of SpreadSheet](spreadsheet/whats_new.md#newfeatures) (PRO version): 
 	- enhanced math
     - visual improvements 
     - key navigation 
-- possibility to run Pivot with web workers (improved UX and performance) (PRO version)
+- [possibility to run Pivot with web workers](pivot/webworkers.md) (PRO version)
 - [possibility to run Webix and complex widgets via NPM](tutorials/start_coding.md#package_managers) 
 - [serverDateRangeFilter](datatable/filtering.md#serverdaterange) added for DataTable filtering (PRO version)
 - [ability of the Uploader widget to upload folders with files](desktop/configuring_uploader.md#uploadingfolders)  
@@ -43,21 +39,50 @@ Updates
 
 - integration with [DHTMLX v5.0 components](https://github.com/webix-hub/components/tree/master/dhtmlx) in addition to DHTMLX v3.6 integration.
 - [color options for Gage control](desktop/gage.md#settingcustomcolors) 
-- new Pager events (api/ui.pager_onbeforepagechange_event.md / api/ui.pager_onafterpagechange_event.md) -новые ли они?
+- Pager events (api/ui.pager_onbeforepagechange_event.md / api/ui.pager_onafterpagechange_event.md) 
 - [refreshSelectArea()](api/ui.datatable_refreshselectarea.md) in DataTable 
 - plainOutput option for data export 
 - [using FormData with webix.ajax](helpers/ajax_operations.md) 
 - [$init is called during $group processing](desktop/data_scheme.md) 
 - areaselect for datatable with shift+keynav 
-- Enhanced accessibility of Calendar component: 
+- enhanced accessibility of Calendar component: 
 	- date-related ARIA labels
     - possibility to [provide custom ARIA labels for day cells](api/ui.calendar_daytemplate_config.md)
 - [saving extra data with bound form](desktop/binding_details.md#savingextradatawiththeboundform)
+- webix.jsonp returns promise
+- enhanced accessibility for Mobile Scheduler
 
 
 Fixes
 -------
 
+- Datatable header autosize calculation
+- text autosize calculation
+- regression in property updating
+- call master.refreshFilter on options update only if possible
+- show initial tab for tabview
+- let datatable cells preserve fixed height in subview mode
+- spline chart and zero values
+- sizing of layout after inner size changes
+- richSelectFilter API in hidden column in IE
+- template and tree can have incorrect x-scroll after resize
+- addOption for segmented and tabbar should refresh the control
+- height calculation for vertical radio with top label and radio with new lines
+- debug version: warn that donut is not supported by Rangechart
+- Here-map sample to replace Nokia-map
+- suggest should not select list items during navigation - it is handled by moveSelection
+- clipboard regression due to accessibility
+- tooltip $view links to a non-existent element
+- paint branch if a child checkbox is checked
+- aria label for html content in editor
+- rendering frame for initially hidden chart
+- don't draw labels for not rendered bars (0 value)
+- mind container borders when adjusting
+- scrolling of grouped rows, subrows and subviews with prerender in datatable
+- $setValue doesn't change value of input, blurring sets value
+- add escaped headers/footer to export scheme, required for pdf
+- clear loading markers and xhr on destruction
+- dragleave event fires for all child nodes of drop zone
 - Uploader's hover can interfere with file drag-n-drop 
 - Uploader recognizes any status code below 400 as successfull
 - better handling of key navigation during multiple and area selection in DataTable
@@ -100,5 +125,3 @@ Fixes
 - cleanup logic to pdfviewer for better memory usage
 - block mouse event handler for already destroyed views
 - align:absolute ignores right and bottom positions
-
-@todo: check latest update 

@@ -1,10 +1,6 @@
 Maps Integration
 ========
 
-{{todo
-check link to heremap when sample is in master
-}}
-
 {{note JS files for these components aren't included in the lib package and should be taken from [https://github.com/webix-hub/components](https://github.com/webix-hub/components). }}
 
 Webix library allows to embed geographical maps into the app with the help of its own components. Four maps are supported: 

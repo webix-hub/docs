@@ -199,6 +199,7 @@ dummy stub
 - api/link/ui.filemenu_height_config.md - sets the height of the component
 - api/link/ui.filemenu_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.filemenu_id_config.md - the component ID
+- api/link/ui.filemenu_item_config.md - alias to api/renderstack_item_config.md property
 - api/link/ui.filemenu_layout_config.md - defines x or y orientation of layout
 - api/link/ui.filemenu_left_config.md - the left offset of the window
 - api/link/ui.filemenu_master_config.md - the area for which context object in initialized

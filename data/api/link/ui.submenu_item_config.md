@@ -1,0 +1,1 @@
+@link: api/renderstack_item_config.md

@@ -1,11 +1,8 @@
 onDynLoadError
 =============
-
-@todo:
-	check 
     
 @short:
-	fires if a request to the server-side script returns an error 
+	fires if a request to the server-side script returns an error during dynamic loading
 
 @params:
 

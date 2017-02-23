@@ -10,7 +10,7 @@ Properties
 - api/link/ui.filetable_blockselect_config.md - enables/disables block selection
 - api/link/ui.filetable_borderless_config.md - used to hide the component borders
 - api/link/ui.filetable_checkboxrefresh_config.md - controls behavior of checkbox editors in grid
-- api/link/ui.filetable_clipboard_config.md - enables/disables clipboard support
+- api/link/ui.filetable_clipboard_config.md - 
 - api/link/ui.filetable_columnwidth_config.md - defines the default width for columns (in pixels)
 - api/link/ui.filetable_columns_config.md - configures columns of the table
 - api/link/ui.filetable_container_config.md - an HTML container (or its id) where the component should be initialized

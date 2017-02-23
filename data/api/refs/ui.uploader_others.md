@@ -2,11 +2,13 @@ Others
 =======
 
 {{api
+- api/link/ui.uploader_$comparevalue_other.md - compares the old value of the control with the one that is going to be set
 - api/ui.uploader_$cssname_other.md - name which will be used as part of css class
 - api/link/ui.uploader_$getsize_other.md - returns the current size of the component
 - api/link/ui.uploader_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.uploader_$height_other.md - current height of the view
 - api/ui.uploader_$onuploadcomplete_other.md - completes uploading for flash uploader
+- api/link/ui.uploader_$preparevalue_other.md - adjusts the value that is going to be set to the format expected by the control
 - api/link/ui.uploader_$renderinput_other.md - called each time when component need to paint control's input
 - api/link/ui.uploader_$scope_other.md - scope for resolving event and method names
 - api/link/ui.uploader_$setsize_other.md - sets the component size
@@ -22,11 +24,13 @@ Others
 }}
 
 @index:
+- api/link/ui.uploader_$comparevalue_other.md
 - api/ui.uploader_$cssname_other.md
 - api/link/ui.uploader_$getsize_other.md
 - api/link/ui.uploader_$getvalue_other.md
 - api/link/ui.uploader_$height_other.md
 - api/ui.uploader_$onuploadcomplete_other.md
+- api/link/ui.uploader_$preparevalue_other.md
 - api/link/ui.uploader_$renderinput_other.md
 - api/link/ui.uploader_$scope_other.md
 - api/link/ui.uploader_$setsize_other.md

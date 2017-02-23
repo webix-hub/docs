@@ -1,18 +1,16 @@
 onPathLevel
 =============
 
-@todo:
-	check 
 
-@short:?
+@short: fires when a folder name is added to the path
 	
 
 @params:
 
-- pId		string		the parent item id
+- id		string		id of the folder in the path
 
 @example:
-$$("fmanager").attachEvent("onPathLevel",function(pId){
+$$("fmanager").attachEvent("onPathLevel",function(id){
     // your code
 });
 

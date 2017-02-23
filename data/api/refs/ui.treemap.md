@@ -212,6 +212,7 @@ var treemap = webix.ui({
 - api/link/ui.treemap_height_config.md - sets the height of the component
 - api/link/ui.treemap_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.treemap_id_config.md - the component ID
+- api/link/ui.treemap_item_config.md - alias to api/renderstack_item_config.md property
 - api/link/ui.treemap_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.treemap_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.treemap_minheight_config.md - sets the minimal height for the view

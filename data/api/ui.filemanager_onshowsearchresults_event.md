@@ -1,9 +1,6 @@
 onShowSearchResults
 =============
 
-@todo:
-	check 
-
 @short:
 	fires when search results are displayed
 

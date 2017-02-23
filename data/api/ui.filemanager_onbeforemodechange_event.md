@@ -1,11 +1,8 @@
 onBeforeModeChange
 =============
 
-@todo:
-	check 
-
 @short:
-	fires before the mode of viewing files is changed on clicking [the Modes button](file_manager/configuration.md#modes)
+	fires before the mode of viewing files is changed on clicking the <a href="file_manager/configuration.md#modes">Modes button</a>
 	
 
 @params:

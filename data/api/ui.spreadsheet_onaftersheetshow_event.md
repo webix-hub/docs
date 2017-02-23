@@ -1,15 +1,13 @@
 onAfterSheetShow
 =============
 
-@todo:
-	check 
 
 @short:
 	fires after a sheet has opened
 
 @params:
 
-- name		string		the sheets name
+- name		string		the sheet's name
 
 @example:
 $$("ssheet").attachEvent("onAfterSheetShow", function(name){
@@ -19,3 +17,5 @@ $$("ssheet").attachEvent("onAfterSheetShow", function(name){
 @template:	api_event
 @descr:
 
+@relatedapi:
+api/ui.spreadsheet_onbeforesheetshow_event.md

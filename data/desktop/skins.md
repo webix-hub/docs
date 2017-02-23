@@ -26,7 +26,7 @@ All CSS files for skins reside in the **codebase/skins** folder of the package.
 Skin JS File Config
 --------------------------
 
-Below you will find the full configuration file for the Flat skin. It contains all the properties you can configure:
+Below you will find the full *skin.js* file for the Flat skin:
 
 ~~~js
 webix.skin.flat = {

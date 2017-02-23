@@ -2,9 +2,6 @@ registerMathMethod
 =============
 
 
-@todo:
-	check 
-
 @short:
 	adds a custom function that will be used in formulas
 

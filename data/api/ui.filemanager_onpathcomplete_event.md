@@ -1,15 +1,13 @@
 onPathComplete
 =============
 
-@todo:
-	complete
 
 @short:
-	fires when a path to a folder is complete
+	fires when a path to a folder is completely shown in the related control
 
 @params:
 
-- id 	string		the folder id
+- id 	string		id of the folder in  question
 
 @example:
 $$("fmanager").attachEvent("onPathComplete",function(id){

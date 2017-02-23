@@ -15,6 +15,7 @@ Properties
 - api/link/ui.proto_height_config.md - sets the height of the component
 - api/link/ui.proto_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.proto_id_config.md - the component ID
+- api/link/ui.proto_item_config.md - alias to api/renderstack_item_config.md property
 - api/link/ui.proto_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.proto_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.proto_minheight_config.md - sets the minimal height for the view
@@ -47,6 +48,7 @@ Properties
 - api/link/ui.proto_height_config.md
 - api/link/ui.proto_hidden_config.md
 - api/link/ui.proto_id_config.md
+- api/link/ui.proto_item_config.md
 - api/link/ui.proto_maxheight_config.md
 - api/link/ui.proto_maxwidth_config.md
 - api/link/ui.proto_minheight_config.md

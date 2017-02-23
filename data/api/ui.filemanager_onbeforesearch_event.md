@@ -1,15 +1,12 @@
 onBeforeSearch
 =============
 
-@todo:
-	check 
-
 @short:
-	fires before search is started
+	fires before filtering via the "search" input starts
 
 @params:
 
-- text			string			the searched text
+- text			string			text in the "search" input
 
 @returns:
 
