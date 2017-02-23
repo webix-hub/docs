@@ -10,7 +10,7 @@ However, you can also customize actions by means of redefining the corresponding
 Copying folders/files
 ----------
 
-To copy a folder/file, use the <a href="file_manager/api_reference.md#copy">copyFile()</a> method: 
+To copy a folder/file, use the api/ui.filemanager_copyfile.md method: 
 
 ~~~js
 fmanager.copyFile(source,target);
@@ -21,7 +21,7 @@ fmanager.copyFile(source,target);
 Moving folders/files
 ---------------
 
-To move a folder/file, use the <a href="file_manager/api_reference.md#move">moveFile()</a> method:
+To move a folder/file, use the api/ui.filemanager_movefile.md method:
 
 ~~~js
 fmanager.moveFile(source,target);
@@ -32,7 +32,7 @@ fmanager.moveFile(source,target);
 Deleting folders/files
 ------------------------
 
-To delete a folder/file, use the <a href="file_manager/api_reference.md#delete">deleteFile()</a> method:
+To delete a folder/file, use the api/ui.filemanager_deletefile.md method:
 
 ~~~js
 fmanager.deleteFile(ids);
@@ -43,7 +43,7 @@ fmanager.deleteFile(ids);
 Renaming folders/files
 ----------------
 
-To rename a folder/file, use the <a href="file_manager/api_reference.md#rename">renameFile()</a> method:
+To rename a folder/file, use the api/ui.filemanager_renamefile.md method:
 
 ~~~js
 fmanager.renameFile("file1","newFile.txt");
@@ -54,7 +54,7 @@ fmanager.renameFile("file1","newFile.txt");
 Creating a new folder
 ---------------
 
-To create a folder, use the <a href="file_manager/api_reference.md#create">createFolder()</a> method. You need to pass an id of the folder 
+To create a folder, use the api/ui.filemanager_createfolder.md method. You need to pass an id of the folder 
 where you want to create a new folder and templateCreate will apply other properties automatically:
 
 ~~~js
@@ -66,7 +66,7 @@ fmanager.createFolder("folder1");
 Downloading files
 ---------------------
 
-To download a file, you need to call the <a href="file_manager/api_reference.md#download">download()</a> method and pass the file id to it: 
+To download a file, you need to call the api/ui.filemanager_download.md method and pass the file id to it: 
 
 ~~~js
 fmanager.download("myfile");
@@ -76,7 +76,7 @@ fmanager.download("myfile");
 Uploading files
 ----------------
 
-To open a file upload dialog, use the <a href="file_manager/api_reference.md#upload">uploadFile()</a> method:
+To open a file upload dialog, use the api/ui.filemanager_uploadfile.md method:
 
 ~~~js
 fmanager.uploadFile("myfolder");

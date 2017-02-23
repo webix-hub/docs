@@ -427,7 +427,7 @@ The key points of the custom toolbar are the following:
 
 ###Full Code for Toolbar elements
 
-The full code for all toolbar elements is given [in a separate article](all_toolbar_elements.md).
+The full code for all toolbar elements is given [in a separate article](spreadsheet/all_toolbar_elements.md).
 
 @index: 
 - spreadsheet/all_toolbar_elements.md
