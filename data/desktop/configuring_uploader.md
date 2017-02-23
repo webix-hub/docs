@@ -47,7 +47,10 @@ The benefit of manual sending are as follows:
 
 ##Defining additional data to send
 
-The Uploader control allows defining **extra data** to send to server together with the file data using the api/ui.uploader_formdata_config.md parameter:
+###Form data
+
+The Uploader control allows defining **extra data** to send to server together with the file data in the body of POST request.
+For these needs, the api/ui.uploader_formdata_config.md parameter is used. 
 
 ~~~js
 webix.ui({ 
@@ -60,6 +63,52 @@ webix.ui({
 });
 ~~~
 
+The above configuration allows sending the same parameters with each file that is uploaded with this Uploader control.
+
+If you need to send specific extra parameters for each file, you can add the **formData** property to the needed file items before the related files are sent 
+(e.g. when *autosend* is switched off): 
+
+
+~~~js
+webix.ui({		
+  view:"form", rows: [
+    { 
+      view: "uploader", id:"upl1",
+      autosend:false,
+      formData:{
+        //add common parameters
+        param1:value1
+      } 
+    },
+    ...
+    { view: "button", label: "Save files", click: function() {
+      $$("upl1").files.data.each(function(obj){
+        //add file specific additional parameters
+        obj.formData = { param2:value2};
+        //send the file
+        $$("upl1").send(id);
+      });
+      //or send them all after the loop
+      $$("upl1").send();
+    }}
+  ]
+});
+~~~
+
+##Url data
+
+The Uploader control allows defining **extra data** to send to server together with the file data in the query string of POST request.
+For these needs, the api/ui.uploader_urldata_config.md parameter is used. 
+
+~~~js
+webix.ui({ 
+	view:"uploader",
+	urlData:{
+    	param1:value1
+    },
+    ...
+});
+~~~
 
 ##Uploading particular file types
 
