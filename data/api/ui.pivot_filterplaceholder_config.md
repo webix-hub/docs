@@ -8,7 +8,7 @@ filterPlaceholder
 @short:
 	
 
-@type: 
+@type: object
 @example:
 
 

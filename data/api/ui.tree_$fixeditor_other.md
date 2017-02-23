@@ -8,7 +8,7 @@ $fixEditor
 @short:
 	
 
-@type:
+@type: function
 
 @example:
 

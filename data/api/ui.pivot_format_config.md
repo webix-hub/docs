@@ -8,7 +8,7 @@ format
 @short:
 	
 
-@type: 
+@type: function
 @example:
 view:"pivot", format: function(value){
 	return (value&& value!="0"?parseFloat(value).toFixed(1):value);

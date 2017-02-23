@@ -6,7 +6,7 @@ markCut
 
 @params:
 
-- id			string|array		ids of files for moving
+- id			string, array		ids of files for moving
 
 
 

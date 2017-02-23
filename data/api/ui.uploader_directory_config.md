@@ -8,7 +8,7 @@ directory
 @short:
 	
 
-@type: 
+@type: boolean
 @example:
 
 

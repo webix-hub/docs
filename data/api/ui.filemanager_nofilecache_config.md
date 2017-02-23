@@ -8,7 +8,7 @@ noFileCache
 @short:
 	defines whether files' caching is enabled
 
-@type: 
+@type: boolean
 @example:
 webix.ui({
 	view:"filemanager",
