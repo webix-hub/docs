@@ -4,7 +4,7 @@ $numPages
 @short:
 	total number of pages in the document
 
-@type:
+@type: number
 
 @example:
 $$("pdfviewer").$numPages;

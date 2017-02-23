@@ -4,7 +4,7 @@ $enterKey
 @short:
 	the method that will be called when the Enter key is pressed
 
-@type:
+@type: function
 
 @example:
 

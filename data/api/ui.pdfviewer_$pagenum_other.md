@@ -4,7 +4,7 @@ $pageNum
 @short:
 	the number of a currently visible page
 
-@type:
+@type: number
 
 @example:
 $$("pdfviewer").$pageNum;

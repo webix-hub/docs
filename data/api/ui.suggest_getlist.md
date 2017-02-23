@@ -7,7 +7,7 @@ getList
 	
 
 @returns:
-- view     WebixView     inner data control
+- view     WebixListView     inner data control
 	
 
 @example:
