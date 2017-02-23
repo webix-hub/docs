@@ -6,7 +6,7 @@ Methods
 - api/ui.pivot_addoperation.md - adds a custom data operation
 - api/link/ui.pivot_addview.md - add new view to layout-like component
 - api/link/ui.pivot_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.pivot_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.pivot_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.pivot_bind.md - binds components
 - api/link/ui.pivot_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.pivot_callevent.md - calls an inner event
@@ -24,6 +24,7 @@ Methods
 - api/link/ui.pivot_getchildviews.md - returns child views of the calling component
 - api/ui.pivot_getconfigwindow.md - returns the object of the window with pivot configuration
 - api/ui.pivot_getfields.md - returns an object with fields configurations
+- api/ui.pivot_getfilterview.md - returns the object of the toolbar with filters
 - api/link/ui.pivot_getfirstid.md - returns the ID of the first item
 - api/link/ui.pivot_getidbyindex.md - returns the id of the item with the specified index
 - api/link/ui.pivot_getindexbyid.md - returns the index of the item with the specified id
@@ -60,7 +61,7 @@ Methods
 - api/link/ui.pivot_ui.md - allows creating new ui, the id of which will be locked in the parent id space
 - api/link/ui.pivot_unbind.md - breaks "bind" link
 - api/link/ui.pivot_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/ui.pivot_updateitem.md - sets properties of the data item
+- api/link/ui.pivot_updateitem.md - updates the data item with new properties
 }}
 
 @index:
@@ -86,6 +87,7 @@ Methods
 - api/link/ui.pivot_getchildviews.md
 - api/ui.pivot_getconfigwindow.md
 - api/ui.pivot_getfields.md
+- api/ui.pivot_getfilterview.md
 - api/link/ui.pivot_getfirstid.md
 - api/link/ui.pivot_getidbyindex.md
 - api/link/ui.pivot_getindexbyid.md

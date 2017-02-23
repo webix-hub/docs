@@ -44,14 +44,14 @@ var tree = webix.ui({
 - api/link/ui.tree_add.md - adds an item to the store
 - api/link/ui.tree_addcss.md - applied CSS class to a component item
 - api/link/ui.tree_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.tree_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.tree_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.tree_bind.md - binds components
 - api/link/ui.tree_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.tree_callevent.md - calls an inner event
 - api/link/ui.tree_checkall.md - check all items in tree
 - api/link/ui.tree_checkitem.md - checks the checkbox it the tree item
 - api/link/ui.tree_clearall.md - removes all items from the component
-- api/link/ui.tree_clearcss.md - removes css class from all items
+- api/link/ui.tree_clearcss.md - removes CSS class from all items
 - api/link/ui.tree_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.tree_close.md - closes the branch with the specified id
 - api/link/ui.tree_closeall.md - closes all branches in the tree
@@ -131,7 +131,7 @@ var tree = webix.ui({
 - api/link/ui.tree_ungroup.md - ungroups data
 - api/link/ui.tree_unselect.md - removes selection from the specified item
 - api/link/ui.tree_unselectall.md - removes selection from all items
-- api/link/ui.tree_updateitem.md - sets properties of the data item
+- api/link/ui.tree_updateitem.md - updates the data item with new properties
 - api/link/ui.tree_validate.md - validates one record or all dataset against validation rules
 }}
 
@@ -218,6 +218,7 @@ var tree = webix.ui({
 - api/link/ui.tree_height_config.md - sets the height of the component
 - api/link/ui.tree_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.tree_id_config.md - the component ID
+- api/link/ui.tree_item_config.md - alias to api/renderstack_item_config.md property
 - api/link/ui.tree_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.tree_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.tree_minheight_config.md - sets the minimal height for the view
@@ -262,6 +263,7 @@ var tree = webix.ui({
 - api/link/ui.tree_$dragout_other.md - method called when item moved out of possible drop landing during dnd
 - api/link/ui.tree_$drop_other.md - method called when item dragged and dropped on valid target
 - api/link/ui.tree_$dropallow_other.md - can be redefined, if you need custom drop rules
+- api/ui.tree_$fixeditor_other.md - 
 - api/link/ui.tree_$getsize_other.md - returns the current size of the component
 - api/link/ui.tree_$height_other.md - current height of the view
 - api/link/ui.tree_$scope_other.md - scope for resolving event and method names
@@ -277,6 +279,7 @@ var tree = webix.ui({
 - api/link/ui.tree_on_mouse_move_other.md - attaches a mouse move behavior for component items with the specified CSS class
 - api/link/ui.tree_type_other.md - set of properties and helpers for item rendering
 - api/link/ui.tree_types_other.md - collection of possible types
+- api/link/ui.tree_waitdata_other.md - eventual result of an asynchronous operation ('promise' object) for the loaded data
 }}
 
 

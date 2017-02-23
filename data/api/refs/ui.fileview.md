@@ -16,12 +16,12 @@ dummy stub
 - api/link/ui.fileview_add.md - adds an item to the store
 - api/link/ui.fileview_addcss.md - applied CSS class to a component item
 - api/link/ui.fileview_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.fileview_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.fileview_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.fileview_bind.md - binds components
 - api/link/ui.fileview_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.fileview_callevent.md - calls an inner event
 - api/link/ui.fileview_clearall.md - removes all items from the component
-- api/link/ui.fileview_clearcss.md - removes css class from all items
+- api/link/ui.fileview_clearcss.md - removes CSS class from all items
 - api/link/ui.fileview_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.fileview_copy.md - copies an item to the same or another object
 - api/link/ui.fileview_count.md - returns the number of currently visible items
@@ -95,7 +95,7 @@ dummy stub
 - api/link/ui.fileview_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.fileview_unselect.md - removes selection from the specified item
 - api/link/ui.fileview_unselectall.md - removes selection from all items
-- api/link/ui.fileview_updateitem.md - sets properties of the data item
+- api/link/ui.fileview_updateitem.md - updates the data item with new properties
 - api/link/ui.fileview_validate.md - validates one record or all dataset against validation rules
 - api/link/ui.fileview_validateeditor.md - validates data in currently active editor
 }}
@@ -168,6 +168,7 @@ dummy stub
 - api/link/ui.fileview_autoheight_config.md - enables autosizing to content
 - api/link/ui.fileview_borderless_config.md - used to hide the component borders
 - api/link/ui.fileview_click_config.md - sets an action happening on a button click
+- api/link/ui.fileview_clipboard_config.md - 
 - api/link/ui.fileview_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.fileview_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.fileview_data_config.md - JavaScript array containing data for the component
@@ -188,6 +189,7 @@ dummy stub
 - api/link/ui.fileview_height_config.md - sets the height of the component
 - api/link/ui.fileview_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.fileview_id_config.md - the component ID
+- api/link/ui.fileview_item_config.md - alias to api/renderstack_item_config.md property
 - api/ui.fileview_layout_config.md - 
 - api/link/ui.fileview_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.fileview_maxwidth_config.md - sets the maximum width for the view

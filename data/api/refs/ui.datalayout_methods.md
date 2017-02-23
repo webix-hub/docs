@@ -5,7 +5,7 @@ Methods
 - api/link/ui.datalayout_add.md - adds an item to the store
 - api/link/ui.datalayout_addview.md - add new view to layout-like component
 - api/link/ui.datalayout_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.datalayout_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.datalayout_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.datalayout_bind.md - binds components
 - api/link/ui.datalayout_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.datalayout_callevent.md - calls an inner event
@@ -54,7 +54,7 @@ Methods
 - api/link/ui.datalayout_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.datalayout_unbind.md - breaks "bind" link
 - api/link/ui.datalayout_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/ui.datalayout_updateitem.md - sets properties of the data item
+- api/link/ui.datalayout_updateitem.md - updates the data item with new properties
 }}
 
 @index:

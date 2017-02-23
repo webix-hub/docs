@@ -29,7 +29,7 @@ DataLoader
 - api/link/dataloader_serialize.md - serializes data to a JSON object
 - api/link/dataloader_sort.md - sorts datastore
 - api/link/dataloader_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
-- api/link/dataloader_updateitem.md - sets properties of the data item
+- api/link/dataloader_updateitem.md - updates the data item with new properties
 }}
 
 
@@ -69,8 +69,17 @@ DataLoader
 
 
 
+<div class='h2'>Other</div>
+
+
+{{api
+- api/dataloader_waitdata_other.md - eventual result of an asynchronous operation ('promise' object) for the loaded data
+}}
+
+
 @index:
 - api/refs/dataloader_methods.md
 - api/refs/dataloader_props.md
 - api/refs/dataloader_events.md
+- api/refs/dataloader_others.md
 

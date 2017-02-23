@@ -22,12 +22,12 @@ dummy stub
 - api/link/ui.filetable_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.filetable_adjustcolumn.md - adjusts a column to the width of the content
 - api/link/ui.filetable_adjustrowheight.md - autodetect height of rows in datatable
-- api/link/ui.filetable_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.filetable_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.filetable_bind.md - binds components
 - api/link/ui.filetable_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.filetable_callevent.md - calls an inner event
 - api/link/ui.filetable_clearall.md - removes all items from the component
-- api/link/ui.filetable_clearcss.md - removes css class from all items
+- api/link/ui.filetable_clearcss.md - removes CSS class from all items
 - api/link/ui.filetable_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.filetable_closesub.md - closes subrow or subview for an item with the given id
 - api/link/ui.filetable_collectvalues.md - returns an array of unique values of the specified column
@@ -116,6 +116,7 @@ dummy stub
 - api/link/ui.filetable_refreshcolumns.md - refreshes the structure of DataTable
 - api/link/ui.filetable_refreshfilter.md - rebuilds list of options in select filter
 - api/link/ui.filetable_refreshheadercontent.md - refreshes the header row of DataTable
+- api/link/ui.filetable_refreshselectarea.md - refreshes the selected area in the DataTable
 - api/link/ui.filetable_registerfilter.md - registers a filter element
 - api/link/ui.filetable_remove.md - removes the specified item/items from datastore
 - api/link/ui.filetable_removecellcss.md - remove css class from the cell of datatable
@@ -144,7 +145,7 @@ dummy stub
 - api/link/ui.filetable_unbind.md - breaks "bind" link
 - api/link/ui.filetable_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.filetable_ungroup.md - ungroups data
-- api/link/ui.filetable_updateitem.md - sets properties of the data item
+- api/link/ui.filetable_updateitem.md - updates the data item with new properties
 - api/link/ui.filetable_validate.md - validates one record or all dataset against validation rules
 - api/link/ui.filetable_validateeditor.md - validates data in currently active editor
 }}
@@ -255,7 +256,7 @@ dummy stub
 - api/link/ui.filetable_blockselect_config.md - enables/disables block selection
 - api/link/ui.filetable_borderless_config.md - used to hide the component borders
 - api/link/ui.filetable_checkboxrefresh_config.md - controls behavior of checkbox editors in grid
-- api/link/ui.filetable_clipboard_config.md - enables/disables clipboard support
+- api/link/ui.filetable_clipboard_config.md - 
 - api/link/ui.filetable_columnwidth_config.md - defines the default width for columns (in pixels)
 - api/link/ui.filetable_columns_config.md - configures columns of the table
 - api/link/ui.filetable_container_config.md - an HTML container (or its id) where the component should be initialized

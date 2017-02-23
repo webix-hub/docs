@@ -20,12 +20,12 @@ var areas = $$("dtable").getAllSelectAreas();
 @descr:
 Each returned object of the select area contains the following parameters:
 
-- start	- (object) the id object of the left top cell, contains two parameters: the row id and the column id
-- end - (object) the id object of the right cell, contains two parameters: the row id and the column id
-- preserve - (boolean)	defines, if the previous select area should be saved, false by default
-- area_name - (string)	optional, the name used to address to an area to change or to delete it
-- css - (string) optional, the css style for an area
-- handle - (boolean) optional, defines, whether selection will be resized with or without a handle
+- *start*	- (object) the id object of the left top cell, contains two parameters: the row id and the column id
+- *end* - (object) the id object of the right cell, contains two parameters: the row id and the column id
+- *preserve* - (boolean)	defines, if the previous select area should be saved, false by default
+- *area_name* - (string)	optional, the name used to address to an area to change or to delete it
+- *css* - (string) optional, the css style for an area
+- *handle* - (boolean) optional, defines, whether selection will be resized with or without a handle
 
 @relatedapi:
 - api/ui.datatable_addselectarea.md
@@ -34,5 +34,7 @@ Each returned object of the select area contains the following parameters:
 
 @related:
 datatable/area_selection.md
+
+@relatedsample: 60_pro/01_datatable/06_api/14_area_selection.html
 
 @edition:pro

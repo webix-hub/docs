@@ -11,7 +11,7 @@ onBeforeCreateFolder
 
 @returns:
 
-- result		bool		returning false will prevent folder creation
+- result		boolean		returning false will prevent folder creation
 
 @example:
 $$("fmanager").attachEvent("onBeforeCreateFolder",function(id){

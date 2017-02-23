@@ -37,7 +37,7 @@ var tabbar = webix.ui({
 {{api
 - api/link/ui.tabbar_addoption.md - add a new option (segment) to the button
 - api/link/ui.tabbar_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.tabbar_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.tabbar_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.tabbar_bind.md - binds components
 - api/link/ui.tabbar_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.tabbar_blur.md - removes the focus from the control
@@ -146,7 +146,7 @@ var tabbar = webix.ui({
 - api/link/ui.tabbar_name_config.md - name of the control
 - api/link/ui.tabbar_on_config.md - allows attaching custom handlers to inner events of the component
 - api/link/ui.tabbar_optionwidth_config.md - sets the width of each view's option
-- api/link/ui.tabbar_options_config.md - defines data items of the drop-down list
+- api/link/ui.tabbar_options_config.md - defines segments of the segmented button
 - api/link/ui.tabbar_placeholder_config.md - placeholder text for the input area
 - api/link/ui.tabbar_popup_config.md - allows to attach pop-up menu to the button
 - api/ui.tabbar_popuptemplate_config.md - template for items in popup for responsive tabbar
@@ -178,9 +178,11 @@ var tabbar = webix.ui({
 
 
 {{api
+- api/link/ui.tabbar_$comparevalue_other.md - compares the old value of the control with the one that is going to be set
 - api/link/ui.tabbar_$getsize_other.md - returns the current size of the component
 - api/link/ui.tabbar_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.tabbar_$height_other.md - current height of the view
+- api/link/ui.tabbar_$preparevalue_other.md - adjusts the value that is going to be set to the format expected by the control
 - api/link/ui.tabbar_$render_other.md - code called after rending control
 - api/link/ui.tabbar_$rendericon_other.md - renders icon for the control
 - api/link/ui.tabbar_$renderinput_other.md - called each time when component need to paint control's input

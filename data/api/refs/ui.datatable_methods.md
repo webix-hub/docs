@@ -11,12 +11,12 @@ Methods
 - api/link/ui.datatable_adjust.md - adjusts the component to the size of the parent HTML container
 - api/ui.datatable_adjustcolumn.md - adjusts a column to the width of the content
 - api/ui.datatable_adjustrowheight.md - autodetect height of rows in datatable
-- api/link/ui.datatable_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.datatable_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.datatable_bind.md - binds components
 - api/link/ui.datatable_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.datatable_callevent.md - calls an inner event
 - api/link/ui.datatable_clearall.md - removes all items from the component
-- api/link/ui.datatable_clearcss.md - removes css class from all items
+- api/link/ui.datatable_clearcss.md - removes CSS class from all items
 - api/ui.datatable_clearselection.md - clears selection
 - api/link/ui.datatable_clearvalidation.md - removes all validation marks from the component
 - api/ui.datatable_closesub.md - closes subrow or subview for an item with the given id
@@ -108,6 +108,7 @@ Methods
 - api/ui.datatable_refreshcolumns.md - refreshes the structure of DataTable
 - api/ui.datatable_refreshfilter.md - rebuilds list of options in select filter
 - api/ui.datatable_refreshheadercontent.md - refreshes the header row of DataTable
+- api/ui.datatable_refreshselectarea.md - refreshes the selected area in the DataTable
 - api/ui.datatable_registerfilter.md - registers a filter element
 - api/link/ui.datatable_remove.md - removes the specified item/items from datastore
 - api/ui.datatable_removecellcss.md - remove css class from the cell of datatable
@@ -141,7 +142,7 @@ Methods
 - api/link/ui.datatable_ungroup.md - ungroups data
 - api/ui.datatable_unselect.md - cancels selection of the specified element
 - api/ui.datatable_unselectall.md - unselects all selected cells in a datatble
-- api/link/ui.datatable_updateitem.md - sets properties of the data item
+- api/link/ui.datatable_updateitem.md - updates the data item with new properties
 - api/link/ui.datatable_validate.md - validates one record or all dataset against validation rules
 - api/link/ui.datatable_validateeditor.md - validates data in currently active editor
 }}
@@ -253,6 +254,7 @@ Methods
 - api/ui.datatable_refreshcolumns.md
 - api/ui.datatable_refreshfilter.md
 - api/ui.datatable_refreshheadercontent.md
+- api/ui.datatable_refreshselectarea.md
 - api/ui.datatable_registerfilter.md
 - api/link/ui.datatable_remove.md
 - api/ui.datatable_removecellcss.md

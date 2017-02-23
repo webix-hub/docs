@@ -32,7 +32,7 @@ var button = webix.ui({
 
 {{api
 - api/link/ui.button_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.button_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.button_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.button_bind.md - binds components
 - api/link/ui.button_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/ui.button_blur.md - removes the focus from the control
@@ -97,6 +97,7 @@ var button = webix.ui({
 - api/ui.button_align_config.md - the alignment of the control within the parent container
 - api/link/ui.button_animate_config.md - defines or disables view change animation.
 - api/ui.button_autowidth_config.md - adjusts button to its text content
+- api/ui.button_badge_config.md - adds an orange circle that notifies about the number of new messages for an icon button
 - api/link/ui.button_borderless_config.md - used to hide the component borders
 - api/ui.button_click_config.md - click action handler
 - api/link/ui.button_container_config.md - an HTML container (or its id) where the component should be initialized
@@ -107,6 +108,7 @@ var button = webix.ui({
 - api/link/ui.button_hidden_config.md - defines whether the view will be hidden initially
 - api/ui.button_hotkey_config.md - sets a hotkey that triggers button clicking
 - api/link/ui.button_id_config.md - the component ID
+- api/ui.button_image_config.md - sets path to the desired image
 - api/ui.button_inputheight_config.md - the height of the input area, or a button's text value area.
 - api/ui.button_inputwidth_config.md - the width of the input area, or a button's text value area.
 - api/ui.button_label_config.md - the text label of the control
@@ -133,9 +135,11 @@ var button = webix.ui({
 
 
 {{api
+- api/ui.button_$comparevalue_other.md - compares the old value of the control with the one that is going to be set
 - api/link/ui.button_$getsize_other.md - returns the current size of the component
 - api/ui.button_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.button_$height_other.md - current height of the view
+- api/ui.button_$preparevalue_other.md - adjusts the value that is going to be set to the format expected by the control
 - api/ui.button_$renderinput_other.md - called each time when component need to paint control's input
 - api/link/ui.button_$scope_other.md - scope for resolving event and method names
 - api/link/ui.button_$setsize_other.md - sets the component size

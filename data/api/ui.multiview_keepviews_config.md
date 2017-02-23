@@ -2,7 +2,7 @@ keepViews
 =============
 
 @short:
-	specifies the mode in which multiview doesn't remove inactive views when the become hidden
+	specifies the mode in which multiview doesn't remove inactive views when they become hidden
 
 @type: boolean
 @example:

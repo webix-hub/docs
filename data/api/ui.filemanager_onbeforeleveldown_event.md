@@ -16,6 +16,7 @@ onBeforeLevelDown
 @example:
 fmanager.attachEvent("onBeforeLevelDown", function(){
 	// some code
+    return true;
 });
 
 @template:	api_event

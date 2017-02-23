@@ -23,7 +23,7 @@ Methods
 - api/link/dataloader_serialize.md - serializes data to a JSON object
 - api/link/dataloader_sort.md - sorts datastore
 - api/link/dataloader_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
-- api/link/dataloader_updateitem.md - sets properties of the data item
+- api/link/dataloader_updateitem.md - updates the data item with new properties
 }}
 
 @index:

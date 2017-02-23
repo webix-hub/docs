@@ -17,7 +17,7 @@ Methods
 - api/treestore_getnextsiblingid.md - returns the id of the next sibling of the specified node
 - api/treestore_getparentid.md - get the ID of the parent node of the specified item
 - api/treestore_getprevsiblingid.md - returns the id of the previous sibling of the specified node
-- api/treestore_gettoprange.md - returns an array of the top tree nodes
+- api/treestore_gettoprange.md - returns an array of the top tree data items
 - api/treestore_isbranch.md - checks whether the node has any children
 - api/treestore_provideapi.md - assigns methods (and events) of DataStore to an object
 - api/treestore_remove.md - removes the specified item/items from datastore

@@ -192,6 +192,7 @@ Articles are of various levels of complexity and both a beginner and a master ca
                     <li>desktop/jquery.md</li>
                     <li>desktop/backbone.md</li>
                     <li>desktop/angular.md</li>
+                    <li>desktop/vue.md</li>
                     <li><a href="desktop/custom_integration.md">How Integrate any Third-party Tool Using a Custom Component</a></li>
             </ul>
         </td>

@@ -2,10 +2,12 @@ Others
 =======
 
 {{api
+- api/link/ui.rangeslider_$comparevalue_other.md - compares the old value of the control with the one that is going to be set
 - api/ui.rangeslider_$cssname_other.md - name which will be used as part of css class
 - api/link/ui.rangeslider_$getsize_other.md - returns the current size of the component
 - api/link/ui.rangeslider_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.rangeslider_$height_other.md - current height of the view
+- api/link/ui.rangeslider_$preparevalue_other.md - adjusts the value that is going to be set to the format expected by the control
 - api/link/ui.rangeslider_$render_other.md - code called after rending control
 - api/link/ui.rangeslider_$rendericon_other.md - renders icon for the control
 - api/link/ui.rangeslider_$renderinput_other.md - called each time when component need to paint control's input
@@ -24,10 +26,12 @@ Others
 }}
 
 @index:
+- api/link/ui.rangeslider_$comparevalue_other.md
 - api/ui.rangeslider_$cssname_other.md
 - api/link/ui.rangeslider_$getsize_other.md
 - api/link/ui.rangeslider_$getvalue_other.md
 - api/link/ui.rangeslider_$height_other.md
+- api/link/ui.rangeslider_$preparevalue_other.md
 - api/link/ui.rangeslider_$render_other.md
 - api/link/ui.rangeslider_$rendericon_other.md
 - api/link/ui.rangeslider_$renderinput_other.md

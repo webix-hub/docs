@@ -14,7 +14,7 @@ var store = new webix.DataCollection({ url:"data.php" });
 {{api
 - api/link/datacollection_add.md - adds an item to the store
 - api/link/datacollection_addbind.md - adds one more bound target
-- api/link/datacollection_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/datacollection_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/datacollection_bind.md - binds components
 - api/link/datacollection_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/datacollection_callevent.md - calls an inner event
@@ -60,7 +60,7 @@ var store = new webix.DataCollection({ url:"data.php" });
 - api/link/datacollection_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/datacollection_unbind.md - breaks "bind" link
 - api/link/datacollection_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/datacollection_updateitem.md - sets properties of the data item
+- api/link/datacollection_updateitem.md - updates the data item with new properties
 - api/link/datacollection_validate.md - validates one record or all dataset against validation rules
 }}
 
@@ -120,6 +120,7 @@ var store = new webix.DataCollection({ url:"data.php" });
 {{api
 - api/link/datacollection_config_other.md - all options from initial component configuration
 - api/link/datacollection_name_other.md - indicates the name of the component (a read-only property)
+- api/link/datacollection_waitdata_other.md - eventual result of an asynchronous operation ('promise' object) for the loaded data
 }}
 
 

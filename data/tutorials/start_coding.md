@@ -61,16 +61,16 @@ you can include the necessary number of version into the links to the code files
 <script src="http://cdn.webix.com/2.2/webix.js" type="text/javascript"></script>
 ~~~
 
-This variant is suitable only to the Webix version distributed under GPL.
+This variant is suitable only for the Webix version distributed under GPL.
 
 
-**2) Including Webix files via Package Managers**
+<h4 id="package_managers"><b>2) Including Webix files via Package Managers</b></h4>
 
 Webix lib can be installed via special dependency management tools. 
 For now, Webix library is integrated with: 
 
-- **NuGet** package manager for the Microsoft development platform; 
-- **Bower** package manager for the web.
+- **NuGet** package manager for the Microsoft development platform
+- **Bower** package manager for the web
 
 Installing Webix requires by means of these tools requires executing just a line of code inside them (you don't need to download anything):
 
@@ -91,7 +91,20 @@ Bower
 bower install webix
 ~~~
 
-This variant is also suitable only to the Webix version distributed under GPL.
+These two variants are suitable only for the Webix version distributed under GPL.
+
+- **NPM** package manager for JavaScript
+
+{{snippet
+NPM
+}}
+~~~js
+npm install webix
+~~~
+
+You can use this way to install both GPL and PRO Webix versions. 
+
+If you have commercial Webix license, you need to enter [Webix Client area](https://webix.com/clients/#!/login) -> Users, to get npm access.
 
 
 **3) Including Webix Files from Downloaded Package**

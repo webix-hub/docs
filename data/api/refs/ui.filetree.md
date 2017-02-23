@@ -16,14 +16,14 @@ dummy stub
 - api/link/ui.filetree_add.md - adds an item to the store
 - api/link/ui.filetree_addcss.md - applied CSS class to a component item
 - api/link/ui.filetree_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.filetree_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.filetree_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.filetree_bind.md - binds components
 - api/link/ui.filetree_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.filetree_callevent.md - calls an inner event
 - api/link/ui.filetree_checkall.md - check all items in tree
 - api/link/ui.filetree_checkitem.md - checks the checkbox it the tree item
 - api/link/ui.filetree_clearall.md - removes all items from the component
-- api/link/ui.filetree_clearcss.md - removes css class from all items
+- api/link/ui.filetree_clearcss.md - removes CSS class from all items
 - api/link/ui.filetree_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.filetree_close.md - closes the branch with the specified id
 - api/link/ui.filetree_closeall.md - closes all branches in the tree
@@ -114,7 +114,7 @@ dummy stub
 - api/link/ui.filetree_ungroup.md - ungroups data
 - api/link/ui.filetree_unselect.md - removes selection from the specified item
 - api/link/ui.filetree_unselectall.md - removes selection from all items
-- api/link/ui.filetree_updateitem.md - sets properties of the data item
+- api/link/ui.filetree_updateitem.md - updates the data item with new properties
 - api/link/ui.filetree_validate.md - validates one record or all dataset against validation rules
 - api/link/ui.filetree_validateeditor.md - validates data in currently active editor
 }}
@@ -213,6 +213,7 @@ dummy stub
 - api/link/ui.filetree_height_config.md - sets the height of the component
 - api/link/ui.filetree_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.filetree_id_config.md - the component ID
+- api/link/ui.filetree_item_config.md - alias to api/renderstack_item_config.md property
 - api/ui.filetree_layout_config.md - 
 - api/link/ui.filetree_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.filetree_maxwidth_config.md - sets the maximum width for the view
@@ -260,6 +261,7 @@ dummy stub
 - api/link/ui.filetree_$dragout_other.md - method called when item moved out of possible drop landing during dnd
 - api/link/ui.filetree_$drop_other.md - method called when item dragged and dropped on valid target
 - api/link/ui.filetree_$dropallow_other.md - can be redefined, if you need custom drop rules
+- api/link/ui.filetree_$fixeditor_other.md - 
 - api/link/ui.filetree_$getsize_other.md - returns the current size of the component
 - api/link/ui.filetree_$height_other.md - current height of the view
 - api/link/ui.filetree_$scope_other.md - scope for resolving event and method names
@@ -275,6 +277,7 @@ dummy stub
 - api/link/ui.filetree_on_mouse_move_other.md - attaches a mouse move behavior for component items with the specified CSS class
 - api/link/ui.filetree_type_other.md - set of properties and helpers for item rendering
 - api/link/ui.filetree_types_other.md - collection of possible types
+- api/link/ui.filetree_waitdata_other.md - eventual result of an asynchronous operation ('promise' object) for the loaded data
 }}
 
 

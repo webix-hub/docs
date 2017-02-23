@@ -121,7 +121,7 @@ webix.ui({
 	cols:[{
 		view:"form", rows: [
 			{ 
-				view: "uploader", value: 'Upload Images', 
+				view: "uploader", value: "Upload Images", 
                 name:"files", accept:"image/png, image/gif, image/jpeg",
                 link:"mylist",  upload:"php/upload.php" 
 			}
@@ -137,6 +137,31 @@ The full list of common media types is given [here](http://en.wikipedia.org/wiki
 {{sample
 21_upload/10_accept.html
 }}
+
+##Uploading folders
+
+You can configure Uploader to upload a whole directory with all the files it contains. 
+This functionality is enabled by setting the **directory** property to the *true* value. 
+
+{{note Note that upload of folders isn't supported by IE and Safari browsers.}}
+
+
+~~~js
+webix.ui({
+	view:"form", rows: [
+		{ 
+			view: "uploader", value: "Upload", 
+			name:"files",
+			directory: true,
+			autosend: true,
+			link:"mylist",  upload:"php/upload.php" 
+		}
+        ...			
+	]
+});
+~~~
+
+{{sample 21_upload/11_directory_upload.html}}
 
 ##Related Articles
 

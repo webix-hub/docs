@@ -4,7 +4,7 @@ Methods
 {{api
 - api/link/treecollection_add.md - adds an item to the store
 - api/link/treecollection_addbind.md - adds one more bound target
-- api/link/treecollection_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/treecollection_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/treecollection_bind.md - binds components
 - api/link/treecollection_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/treecollection_callevent.md - calls an inner event
@@ -41,9 +41,7 @@ Methods
 - api/link/treecollection_mapevent.md - routes events from one object to another
 - api/link/treecollection_move.md - moves the specified item to the new position
 - api/link/treecollection_movebottom.md - moves the specified item to the last position
-- api/link/treecollection_movedown.md - increases the item index and moves the item to the new position
 - api/link/treecollection_movetop.md - moves the specified item to the first position
-- api/link/treecollection_moveup.md - decreases the item index and moves the item to the new position
 - api/link/treecollection_parse.md - loads data to the component from an inline data source
 - api/link/treecollection_refresh.md - repaints the whole view or a certain item
 - api/link/treecollection_refreshcursor.md - force repainting of all bound components with current cursor value
@@ -57,7 +55,7 @@ Methods
 - api/link/treecollection_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/treecollection_unbind.md - breaks "bind" link
 - api/link/treecollection_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/treecollection_updateitem.md - sets properties of the data item
+- api/link/treecollection_updateitem.md - updates the data item with new properties
 - api/link/treecollection_validate.md - validates one record or all dataset against validation rules
 }}
 
@@ -101,9 +99,7 @@ Methods
 - api/link/treecollection_mapevent.md
 - api/link/treecollection_move.md
 - api/link/treecollection_movebottom.md
-- api/link/treecollection_movedown.md
 - api/link/treecollection_movetop.md
-- api/link/treecollection_moveup.md
 - api/link/treecollection_parse.md
 - api/link/treecollection_refresh.md
 - api/link/treecollection_refreshcursor.md

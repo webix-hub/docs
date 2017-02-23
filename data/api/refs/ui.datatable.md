@@ -45,12 +45,12 @@ var datatable = webix.ui({
 - api/link/ui.datatable_adjust.md - adjusts the component to the size of the parent HTML container
 - api/ui.datatable_adjustcolumn.md - adjusts a column to the width of the content
 - api/ui.datatable_adjustrowheight.md - autodetect height of rows in datatable
-- api/link/ui.datatable_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.datatable_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.datatable_bind.md - binds components
 - api/link/ui.datatable_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.datatable_callevent.md - calls an inner event
 - api/link/ui.datatable_clearall.md - removes all items from the component
-- api/link/ui.datatable_clearcss.md - removes css class from all items
+- api/link/ui.datatable_clearcss.md - removes CSS class from all items
 - api/ui.datatable_clearselection.md - clears selection
 - api/link/ui.datatable_clearvalidation.md - removes all validation marks from the component
 - api/ui.datatable_closesub.md - closes subrow or subview for an item with the given id
@@ -142,6 +142,7 @@ var datatable = webix.ui({
 - api/ui.datatable_refreshcolumns.md - refreshes the structure of DataTable
 - api/ui.datatable_refreshfilter.md - rebuilds list of options in select filter
 - api/ui.datatable_refreshheadercontent.md - refreshes the header row of DataTable
+- api/ui.datatable_refreshselectarea.md - refreshes the selected area in the DataTable
 - api/ui.datatable_registerfilter.md - registers a filter element
 - api/link/ui.datatable_remove.md - removes the specified item/items from datastore
 - api/ui.datatable_removecellcss.md - remove css class from the cell of datatable
@@ -175,7 +176,7 @@ var datatable = webix.ui({
 - api/link/ui.datatable_ungroup.md - ungroups data
 - api/ui.datatable_unselect.md - cancels selection of the specified element
 - api/ui.datatable_unselectall.md - unselects all selected cells in a datatble
-- api/link/ui.datatable_updateitem.md - sets properties of the data item
+- api/link/ui.datatable_updateitem.md - updates the data item with new properties
 - api/link/ui.datatable_validate.md - validates one record or all dataset against validation rules
 - api/link/ui.datatable_validateeditor.md - validates data in currently active editor
 }}
@@ -286,12 +287,13 @@ var datatable = webix.ui({
 - api/ui.datatable_blockselect_config.md - enables/disables block selection
 - api/link/ui.datatable_borderless_config.md - used to hide the component borders
 - api/ui.datatable_checkboxrefresh_config.md - controls behavior of checkbox editors in grid
-- api/link/ui.datatable_clipboard_config.md - enables/disables clipboard support
+- api/link/ui.datatable_clipboard_config.md - 
 - api/ui.datatable_columnwidth_config.md - defines the default width for columns (in pixels)
 - api/ui.datatable_columns_config.md - configures columns of the table
 - api/link/ui.datatable_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.datatable_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.datatable_data_config.md - JavaScript array containing data for the component
+- api/link/ui.datatable_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/ui.datatable_datafetch_config.md - defines the number of records that will be loaded into datatable during the next dynamic loading call
 - api/link/ui.datatable_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.datatable_datatype_config.md - the type of loaded data
@@ -394,7 +396,7 @@ var datatable = webix.ui({
 - api/link/ui.datatable_on_context_other.md - a property used to define custom context-click (right click) handlers for elements in the DataTable cells<br>
 - api/link/ui.datatable_on_dblclick_other.md - attaches a dblclick behavior for component items with the specified CSS class
 - api/link/ui.datatable_on_mouse_move_other.md - attaches a mouse move behavior for component items with the specified CSS class
-- api/ui.datatable_waitdata_other.md - eventual result of an asynchronous operation ('promise' object) for the loaded data
+- api/link/ui.datatable_waitdata_other.md - eventual result of an asynchronous operation ('promise' object) for the loaded data
 }}
 
 

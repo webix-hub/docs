@@ -18,12 +18,12 @@ The class defines properties, methods, and events related to loading and renderi
 - api/link/ui.proto_add.md - adds an item to the store
 - api/link/ui.proto_addcss.md - applied CSS class to a component item
 - api/link/ui.proto_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.proto_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.proto_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.proto_bind.md - binds components
 - api/link/ui.proto_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.proto_callevent.md - calls an inner event
 - api/link/ui.proto_clearall.md - removes all items from the component
-- api/link/ui.proto_clearcss.md - removes css class from all items
+- api/link/ui.proto_clearcss.md - removes CSS class from all items
 - api/link/ui.proto_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.proto_count.md - returns the number of currently visible items
 - api/link/ui.proto_customize.md - redefines the "type" property
@@ -73,7 +73,7 @@ The class defines properties, methods, and events related to loading and renderi
 - api/link/ui.proto_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.proto_unbind.md - breaks "bind" link
 - api/link/ui.proto_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/ui.proto_updateitem.md - sets properties of the data item
+- api/link/ui.proto_updateitem.md - updates the data item with new properties
 - api/link/ui.proto_validate.md - validates one record or all dataset against validation rules
 }}
 
@@ -131,6 +131,7 @@ The class defines properties, methods, and events related to loading and renderi
 - api/link/ui.proto_height_config.md - sets the height of the component
 - api/link/ui.proto_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.proto_id_config.md - the component ID
+- api/link/ui.proto_item_config.md - alias to api/renderstack_item_config.md property
 - api/link/ui.proto_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.proto_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.proto_minheight_config.md - sets the minimal height for the view
@@ -168,6 +169,7 @@ The class defines properties, methods, and events related to loading and renderi
 - api/link/ui.proto_name_other.md - indicates the name of the component (a read-only property)
 - api/link/ui.proto_type_other.md - set of properties and helpers for item rendering
 - api/link/ui.proto_types_other.md - collection of possible types
+- api/link/ui.proto_waitdata_other.md - eventual result of an asynchronous operation ('promise' object) for the loaded data
 }}
 
 

@@ -5,13 +5,13 @@ Methods
 - api/link/ui.contextmenu_add.md - adds an item to the store
 - api/link/ui.contextmenu_addcss.md - applied CSS class to a component item
 - api/link/ui.contextmenu_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.contextmenu_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.contextmenu_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.contextmenu_attachto.md - attaches a context menu to a Webix component
 - api/link/ui.contextmenu_bind.md - binds components
 - api/link/ui.contextmenu_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.contextmenu_callevent.md - calls an inner event
 - api/link/ui.contextmenu_clearall.md - removes all items from the component
-- api/link/ui.contextmenu_clearcss.md - removes css class from all items
+- api/link/ui.contextmenu_clearcss.md - removes CSS class from all items
 - api/link/ui.contextmenu_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.contextmenu_close.md - removes a window
 - api/link/ui.contextmenu_copy.md - copies an item to the same or another object
@@ -93,7 +93,7 @@ Methods
 - api/link/ui.contextmenu_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.contextmenu_unselect.md - removes selection from the specified item
 - api/link/ui.contextmenu_unselectall.md - removes selection from all items
-- api/link/ui.contextmenu_updateitem.md - sets properties of the data item
+- api/link/ui.contextmenu_updateitem.md - updates the data item with new properties
 - api/link/ui.contextmenu_validate.md - validates one record or all dataset against validation rules
 }}
 

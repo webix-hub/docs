@@ -30,15 +30,13 @@ The extensions are taken from [https://github.com/webix-hub/components](https://
 
 - For **Here Map**
 
-<img src="desktop/nokiamap.png"/>
+<img src="desktop/heremap.png"/>
 
 ~~~html
-<script type="text/javascript" src="./nokiamap.js"></script>
-<script src="http://js.api.here.com/se/2.5.3/jsl.js" type="text/javascript" 
-	charset="utf-8"></script>
+<script type="text/javascript" src="./heremap.js"></script>
 ~~~
 
-{{sample 32_thirdparty/10_nokia_map.html}}
+{{sample 32_thirdparty/10_here_map.html}}
 
 - For **OpenStreet Map**
 
@@ -47,6 +45,8 @@ The extensions are taken from [https://github.com/webix-hub/components](https://
 ~~~html
 <script type="text/javascript" src="./openmap.js"></script>
 ~~~
+
+
 
 {{sample 32_thirdparty/12_open_map.html }}
 
@@ -66,7 +66,7 @@ The extensions are taken from [https://github.com/webix-hub/components](https://
 // <div id="mydiv"></div>
 webix.ui({
 	container:"mydiv",
-    ..//map config
+    //map config
 });
 ~~~ 
 
@@ -76,7 +76,7 @@ Additionally, you can put the map into Webix [Window](desktop/window.md):
 webix.ui({ 
 	view:"window", id:"mapwin",
 	body:{ ... }, //map config
-	head:{....}, //place for toolbar 
+	head:{ ... }, //place for toolbar 
 	top:50, left:50, 
     width:600, height:500 // dimensions and positioning of the window
 }).show();
@@ -90,7 +90,7 @@ Map Initialization
 }}
 ~~~js
 { 
-	view:"yandex-map", // or "nokia-map", "google-map", "open-map" 
+	view:"yandex-map", // or "here-map", "google-map", "open-map" 
 	id:"map",
 	zoom:6,
 	center:[ 48.724, 8.215 ]
@@ -109,7 +109,11 @@ Map's properties define the initial position of the map:
 
 ###Working with Maps
 
-To make online maps interactive you should refer to the API reference each of the services provides. 
+To make online maps interactive you should refer to the API reference each of the services provides. To access the map object you need to use the **getMap()** method: 
+
+~~~js
+var map = $$("map").getMap();
+~~~
 
 For instance, the [GoogleMap API](https://developers.google.com/maps/documentation/javascript/) for javascript-based applications offers a rich collection of map options, 
 controls, overlays, services, layers, etc. that you can use while working with a **google-map** integrated into our library. 
@@ -119,7 +123,7 @@ For instance, to show the necessary map piece on request, you can use the follow
 ~~~js
 function show_position(lat, lng, zoom) {
 	var myLatlng = new google.maps.LatLng(lat, lng);
-	$$('map').map.setOptions({
+	$$("map").getMap().setOptions({
 		zoom: zoom,
 		center: myLatlng,
 		mapTypeId: google.maps.MapTypeId.ROADMAP

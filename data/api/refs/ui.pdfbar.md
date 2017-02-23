@@ -15,7 +15,7 @@ dummy stub
 {{api
 - api/link/ui.pdfbar_addview.md - add new view to layout-like component
 - api/link/ui.pdfbar_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.pdfbar_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.pdfbar_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.pdfbar_bind.md - binds components
 - api/link/ui.pdfbar_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.pdfbar_callevent.md - calls an inner event

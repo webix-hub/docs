@@ -5,8 +5,9 @@ Integration with DHTMLX Components
 Webix components resemble DHTMLX ones, so the views from both libraries can naturally co-exist in one and the same application. 
 
 {{note
-JS file that contains the integration code can be taken from [Github](https://github.com/webix-hub/components) while the needed components should be
-downloaded from [DHTMLX site](http://www.dhtmlx.com).
+JS file that contains the integration code can be taken from [Github](https://github.com/webix-hub/components/tree/master/dhtmlx). There you can find separate integrations for DHTMLX v3.6 or lower and DHTMLX v5.
+
+At the same time, the needed DHTMLX components should be downloaded from [DHTMLX site](http://www.dhtmlx.com).
 }}
 
 **DHTMLX** is comprised of **various components** each of which can be downloaded separately to minimize the total weight of dependent scripts in the application. 
@@ -63,6 +64,6 @@ dhxLayout.cells("c").attachWebix({
 });
 ~~~
 
-Related Sample: [Integration with DHTMLX Layout](http://webix-hub.github.io/components/dhtmlx/sample.html)
+**Related Sample**: [Integration with DHTMLX Layout](http://webix-hub.github.io/components/dhtmlx/dhtmlx_v5/sample.html)
 
 You can find all methods of DHTMLX Layout in the [DHTMLX documentation](http://docs.dhtmlx.com/).

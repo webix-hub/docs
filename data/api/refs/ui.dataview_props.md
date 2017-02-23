@@ -6,6 +6,7 @@ Properties
 - api/ui.dataview_autoheight_config.md - enables autosizing to content
 - api/link/ui.dataview_borderless_config.md - used to hide the component borders
 - api/link/ui.dataview_click_config.md - sets an action happening on a button click
+- api/link/ui.dataview_clipboard_config.md - 
 - api/link/ui.dataview_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.dataview_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.dataview_data_config.md - JavaScript array containing data for the component
@@ -21,6 +22,7 @@ Properties
 - api/link/ui.dataview_height_config.md - sets the height of the component
 - api/link/ui.dataview_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.dataview_id_config.md - the component ID
+- api/link/ui.dataview_item_config.md - alias to api/renderstack_item_config.md property
 - api/link/ui.dataview_loadahead_config.md - how the number of records that need to be loaded in addition to mandatory ones during each dynamic loading request
 - api/link/ui.dataview_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.dataview_maxwidth_config.md - sets the maximum width for the view
@@ -57,6 +59,7 @@ Properties
 - api/ui.dataview_autoheight_config.md
 - api/link/ui.dataview_borderless_config.md
 - api/link/ui.dataview_click_config.md
+- api/link/ui.dataview_clipboard_config.md
 - api/link/ui.dataview_container_config.md
 - api/link/ui.dataview_css_config.md
 - api/link/ui.dataview_data_config.md
@@ -72,6 +75,7 @@ Properties
 - api/link/ui.dataview_height_config.md
 - api/link/ui.dataview_hidden_config.md
 - api/link/ui.dataview_id_config.md
+- api/link/ui.dataview_item_config.md
 - api/link/ui.dataview_loadahead_config.md
 - api/link/ui.dataview_maxheight_config.md
 - api/link/ui.dataview_maxwidth_config.md

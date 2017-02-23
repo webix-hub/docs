@@ -13,6 +13,7 @@ Others
 - api/link/ui.pivot_config_other.md - all options from initial component configuration
 - api/link/ui.pivot_name_other.md - indicates the name of the component (a read-only property)
 - api/ui.pivot_operations_other.md - gets an object with possible mathematical operations in Pivot
+- api/link/ui.pivot_waitdata_other.md - eventual result of an asynchronous operation ('promise' object) for the loaded data
 }}
 
 @index:
@@ -27,5 +28,6 @@ Others
 - api/link/ui.pivot_config_other.md
 - api/link/ui.pivot_name_other.md
 - api/ui.pivot_operations_other.md
+- api/link/ui.pivot_waitdata_other.md
 
 

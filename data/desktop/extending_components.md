@@ -1,4 +1,4 @@
-Extending components
+Extending Сomponents
 ====================
 
 {{index

@@ -5,12 +5,12 @@ Methods
 - api/link/ui.organogram_add.md - adds an item to the store
 - api/link/ui.organogram_addcss.md - applied CSS class to a component item
 - api/link/ui.organogram_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.organogram_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.organogram_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.organogram_bind.md - binds components
 - api/link/ui.organogram_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.organogram_callevent.md - calls an inner event
 - api/link/ui.organogram_clearall.md - removes all items from the component
-- api/link/ui.organogram_clearcss.md - removes css class from all items
+- api/link/ui.organogram_clearcss.md - removes CSS class from all items
 - api/link/ui.organogram_close.md - closes the branch with the specified id
 - api/link/ui.organogram_closeall.md - closes all branches in the tree
 - api/link/ui.organogram_count.md - returns the number of currently visible items
@@ -82,7 +82,7 @@ Methods
 - api/link/ui.organogram_ungroup.md - ungroups data
 - api/link/ui.organogram_unselect.md - removes selection from the specified item
 - api/link/ui.organogram_unselectall.md - removes selection from all items
-- api/link/ui.organogram_updateitem.md - sets properties of the data item
+- api/link/ui.organogram_updateitem.md - updates the data item with new properties
 }}
 
 @index:

@@ -1,7 +1,7 @@
-Loading and Saving Data in Kanban Board
+Loading/Saving Data in Kanban Board
 ========================
 
-Data can be [loaded](desktop/data_loading.md) from different sources. However, Kanban stores data items as json objects:
+Data can be [loaded](desktop/data_loading.md) from different sources. However, Kanban Board stores data items as JSON objects:
 
 ~~~js
 {

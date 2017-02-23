@@ -3,7 +3,7 @@ Methods
 
 {{api
 - api/link/ui.pager_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.pager_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.pager_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.pager_bind.md - binds components
 - api/link/ui.pager_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.pager_callevent.md - calls an inner event

@@ -34,7 +34,7 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
 		</td>
 		<td class='topic_description' style="text-align: center; padding:20px;"><a href="desktop/chart_integration.md"><img src="desktop/chart_extension.png"></a></td>
 	</tr>
-     <tr>
+    <tr>
 		<td id="design" class='topics' style="vertical-align:text-top;">
 		    <h4 id='ui' style="margin-bottom:4px;">
 		        <a href="desktop/text_editors.md">Text Editor</a>
@@ -42,6 +42,15 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
 		    An integration extension that allows you to add 3rd-party editors to the app: <i>Mercury, TinyMCE, Code Mirror, NicEdit, CKEditor</i>.
 		</td>
 		<td class='topic_description' style="text-align: center; padding:20px;"><a href="desktop/text_editors.md"><img src="desktop/editor_extension.png"></a></td>
+	</tr>
+    <tr>
+		<td id="design" class='topics' style="vertical-align:text-top;">
+		    <h4 id='ui' style="margin-bottom:4px;">
+		        <a href="desktop/graphic_tools.md">Graphic Tools</a>
+		    </h4>
+		    An integration extension that allows you to add 3rd-party graphic tools to the app: <i>Konva, Paper</i>.
+		</td>
+		<td class='topic_description' style="text-align: center; padding:20px;"><a href="desktop/text_editors.md"><img src="desktop/graphic_extension.png"></a></td>
 	</tr>
     <tr>
 		<td id="design" class='topics' style="vertical-align:text-top;">
@@ -60,6 +69,7 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
 - desktop/text_editors.md
 - desktop/chart_integration.md
 - desktop/maps.md
+- desktop/graphic_tools.md
 - desktop/scheduler.md
 
 

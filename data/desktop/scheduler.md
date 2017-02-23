@@ -94,5 +94,6 @@ Related sample: <a href="http://webix-hub.github.io/components/gantt/sample.html
 - [Text Editor Integration](desktop/text_editors.md)
 - [Chart Integration](desktop/chart_integration.md)
 - [Integration with Geographical Maps](desktop/maps.md)
+- desktop/graphic_tools.md
 
 @complexity:2

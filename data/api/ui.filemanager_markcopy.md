@@ -2,7 +2,7 @@ markCopy
 =============
 
 @short:
-	preselectes files/folders for copy operation
+	preselectes files/folders for the Copy operation
 
 @params:
 

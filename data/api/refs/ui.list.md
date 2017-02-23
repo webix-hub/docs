@@ -37,12 +37,12 @@ var list = webix.ui({
 - api/link/ui.list_add.md - adds an item to the store
 - api/link/ui.list_addcss.md - applied CSS class to a component item
 - api/link/ui.list_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.list_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.list_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.list_bind.md - binds components
 - api/link/ui.list_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.list_callevent.md - calls an inner event
 - api/link/ui.list_clearall.md - removes all items from the component
-- api/link/ui.list_clearcss.md - removes css class from all items
+- api/link/ui.list_clearcss.md - removes CSS class from all items
 - api/link/ui.list_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.list_copy.md - copies an item to the same or another object
 - api/link/ui.list_count.md - returns the number of currently visible items
@@ -109,7 +109,7 @@ var list = webix.ui({
 - api/link/ui.list_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.list_unselect.md - removes selection from the specified item
 - api/link/ui.list_unselectall.md - removes selection from all items
-- api/link/ui.list_updateitem.md - sets properties of the data item
+- api/link/ui.list_updateitem.md - updates the data item with new properties
 - api/link/ui.list_validate.md - validates one record or all dataset against validation rules
 }}
 
@@ -193,6 +193,7 @@ var list = webix.ui({
 - api/link/ui.list_height_config.md - sets the height of the component
 - api/link/ui.list_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.list_id_config.md - the component ID
+- api/link/ui.list_item_config.md - alias to api/renderstack_item_config.md property
 - api/ui.list_layout_config.md - defines x or y orientation of layout
 - api/link/ui.list_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.list_maxwidth_config.md - sets the maximum width for the view
@@ -255,6 +256,7 @@ var list = webix.ui({
 - api/link/ui.list_on_mouse_move_other.md - attaches a mouse move behavior for component items with the specified CSS class
 - api/link/ui.list_type_other.md - set of properties and helpers for item rendering
 - api/link/ui.list_types_other.md - collection of possible types
+- api/link/ui.list_waitdata_other.md - eventual result of an asynchronous operation ('promise' object) for the loaded data
 }}
 
 

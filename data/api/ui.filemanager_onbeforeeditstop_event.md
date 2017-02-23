@@ -28,3 +28,6 @@ $$("fmanager").attachEvent("onBeforeEditStop",function(id,state,editor,view){
 
 @relatedsample:
 64_file_manager/02_events/04_rename.html
+
+@relatedapi:
+api/ui.filemanager_onaftereditstop_event.md

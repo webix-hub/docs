@@ -5,6 +5,7 @@ Text Editor Integration
 
 Webix library supports integration of popular text editors in the application with the help of its own components. For now, the following text editors can be included: 
 
+- [Ace](#ace);
 - [Mercury](#mercury);
 - [NicEdit](#nicedit);
 - [TinyMCE](#tinymce);
@@ -17,6 +18,43 @@ To embed any of the editors into your web page, you should link not only to Webi
 you to the chosen editor as well load extra required files for it. 
 
 Note that in documentation samples files are linked in another way, but in your apps you should follow the patterns described below.
+
+
+##Ace Text Editor {#ace}
+
+You can download JS file for the Ace Editor from [github](https://github.com/webix-hub/components).
+
+Ace is an embeddable code editor written in JavaScript. It matches the features and performance of native editors and can be easily embedded in any web page and JS application.
+
+<a href="https://ace.c9.io/#nav=about">Learn more about Ace text editor</a>
+
+<img src="desktop/ace_editor.png"/>
+
+**Related sample**: <a href="http://webix-hub.github.io/components/ace/sample.html">Ace Editor</a>
+
+
+####Component Initialization: 
+
+{{snippet
+Link to the library
+}}
+~~~html
+<script type="text/javascript" src="./ace.js"></script>
+~~~
+{{snippet
+JS code
+}}
+~~~js
+//path from which extra libraries are autoloaded
+webix.codebase = "./";
+
+webix.ui({
+	id: "editor",
+ 	view: "ace-editor",
+	value: "..." // code string
+});
+~~~
+
 
 ##Mercury Text Editor {#mercury}
 

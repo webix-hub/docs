@@ -5,7 +5,7 @@ Methods
 - api/link/ui.kanban_add.md - adds an item to the store
 - api/link/ui.kanban_addview.md - add new view to layout-like component
 - api/link/ui.kanban_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.kanban_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.kanban_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.kanban_bind.md - binds components
 - api/link/ui.kanban_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.kanban_callevent.md - calls an inner event
@@ -51,13 +51,14 @@ Methods
 - api/link/ui.kanban_resizechildren.md - resizes all children of the calling component
 - api/ui.kanban_select.md - selects the specified task
 - api/link/ui.kanban_serialize.md - serializes data to a JSON object
+- api/ui.kanban_setindex.md - 
 - api/link/ui.kanban_show.md - makes the component visible
 - api/link/ui.kanban_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
 - api/link/ui.kanban_sort.md - sorts datastore
 - api/link/ui.kanban_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.kanban_unbind.md - breaks "bind" link
 - api/link/ui.kanban_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/ui.kanban_updateitem.md - sets properties of the data item
+- api/link/ui.kanban_updateitem.md - updates the data item with new properties
 }}
 
 @index:
@@ -110,6 +111,7 @@ Methods
 - api/link/ui.kanban_resizechildren.md
 - api/ui.kanban_select.md
 - api/link/ui.kanban_serialize.md
+- api/ui.kanban_setindex.md
 - api/link/ui.kanban_show.md
 - api/link/ui.kanban_showbatch.md
 - api/link/ui.kanban_sort.md

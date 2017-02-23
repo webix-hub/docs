@@ -6,7 +6,7 @@ registerFilter
 	
 
 @params:
-- object			HTMLElement/object		node in case of HTML input or the control's object
+- object			HTMLElement, object		node in case of HTML input or the control's object
 - config			object					the hash of settings
 - controller		object					the controller object
 

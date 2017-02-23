@@ -9,14 +9,14 @@ Methods
 - api/link/ui.treetable_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.treetable_adjustcolumn.md - adjusts a column to the width of the content
 - api/link/ui.treetable_adjustrowheight.md - autodetect height of rows in datatable
-- api/link/ui.treetable_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.treetable_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.treetable_bind.md - binds components
 - api/link/ui.treetable_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.treetable_callevent.md - calls an inner event
 - api/link/ui.treetable_checkall.md - check all items in tree
 - api/link/ui.treetable_checkitem.md - checks the checkbox it the tree item
 - api/link/ui.treetable_clearall.md - removes all items from the component
-- api/link/ui.treetable_clearcss.md - removes css class from all items
+- api/link/ui.treetable_clearcss.md - removes CSS class from all items
 - api/link/ui.treetable_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.treetable_close.md - closes the branch with the specified id
 - api/link/ui.treetable_closeall.md - closes all branches in the tree
@@ -141,7 +141,7 @@ Methods
 - api/link/ui.treetable_uncheckall.md - uncheck all items in the tree
 - api/link/ui.treetable_uncheckitem.md - unchecks the checkbox in the tree item
 - api/link/ui.treetable_ungroup.md - ungroups data
-- api/link/ui.treetable_updateitem.md - sets properties of the data item
+- api/link/ui.treetable_updateitem.md - updates the data item with new properties
 - api/link/ui.treetable_validate.md - validates one record or all dataset against validation rules
 - api/link/ui.treetable_validateeditor.md - validates data in currently active editor
 }}

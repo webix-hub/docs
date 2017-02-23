@@ -5,14 +5,14 @@ Methods
 - api/link/ui.tree_add.md - adds an item to the store
 - api/link/ui.tree_addcss.md - applied CSS class to a component item
 - api/link/ui.tree_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.tree_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.tree_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.tree_bind.md - binds components
 - api/link/ui.tree_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.tree_callevent.md - calls an inner event
 - api/link/ui.tree_checkall.md - check all items in tree
 - api/link/ui.tree_checkitem.md - checks the checkbox it the tree item
 - api/link/ui.tree_clearall.md - removes all items from the component
-- api/link/ui.tree_clearcss.md - removes css class from all items
+- api/link/ui.tree_clearcss.md - removes CSS class from all items
 - api/link/ui.tree_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.tree_close.md - closes the branch with the specified id
 - api/link/ui.tree_closeall.md - closes all branches in the tree
@@ -92,7 +92,7 @@ Methods
 - api/link/ui.tree_ungroup.md - ungroups data
 - api/link/ui.tree_unselect.md - removes selection from the specified item
 - api/link/ui.tree_unselectall.md - removes selection from all items
-- api/link/ui.tree_updateitem.md - sets properties of the data item
+- api/link/ui.tree_updateitem.md - updates the data item with new properties
 - api/link/ui.tree_validate.md - validates one record or all dataset against validation rules
 }}
 

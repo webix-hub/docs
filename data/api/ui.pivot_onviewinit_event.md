@@ -31,7 +31,7 @@ webix.ui({
 The event is also called for Pivot Table on "filters" view initialization and for views of pivot's configuration popup.
 
 @relatedsample:
-61_pivot/05_table_customization/01_outer_filters.html
+61_pivot/06_filters/01_outer_filters.html
 
 @related:
 pivot/customization.md#innerview

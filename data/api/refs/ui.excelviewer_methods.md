@@ -10,12 +10,12 @@ Methods
 - api/link/ui.excelviewer_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.excelviewer_adjustcolumn.md - adjusts a column to the width of the content
 - api/link/ui.excelviewer_adjustrowheight.md - autodetect height of rows in datatable
-- api/link/ui.excelviewer_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.excelviewer_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.excelviewer_bind.md - binds components
 - api/link/ui.excelviewer_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.excelviewer_callevent.md - calls an inner event
 - api/link/ui.excelviewer_clearall.md - removes all items from the component
-- api/link/ui.excelviewer_clearcss.md - removes css class from all items
+- api/link/ui.excelviewer_clearcss.md - removes CSS class from all items
 - api/link/ui.excelviewer_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.excelviewer_closesub.md - closes subrow or subview for an item with the given id
 - api/link/ui.excelviewer_collectvalues.md - returns an array of unique values of the specified column
@@ -130,7 +130,7 @@ Methods
 - api/link/ui.excelviewer_unbind.md - breaks "bind" link
 - api/link/ui.excelviewer_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.excelviewer_ungroup.md - ungroups data
-- api/link/ui.excelviewer_updateitem.md - sets properties of the data item
+- api/link/ui.excelviewer_updateitem.md - updates the data item with new properties
 - api/link/ui.excelviewer_validate.md - validates one record or all dataset against validation rules
 - api/link/ui.excelviewer_validateeditor.md - validates data in currently active editor
 }}

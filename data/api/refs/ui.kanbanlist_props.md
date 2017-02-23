@@ -6,6 +6,7 @@ Properties
 - api/link/ui.kanbanlist_autoheight_config.md - enables autosizing to content
 - api/link/ui.kanbanlist_borderless_config.md - used to hide the component borders
 - api/link/ui.kanbanlist_click_config.md - sets an action happening on a button click
+- api/link/ui.kanbanlist_clipboard_config.md - 
 - api/link/ui.kanbanlist_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.kanbanlist_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.kanbanlist_data_config.md - JavaScript array containing data for the component
@@ -21,6 +22,7 @@ Properties
 - api/link/ui.kanbanlist_height_config.md - sets the height of the component
 - api/link/ui.kanbanlist_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.kanbanlist_id_config.md - the component ID
+- api/link/ui.kanbanlist_item_config.md - alias to api/renderstack_item_config.md property
 - api/ui.kanbanlist_layout_config.md - 
 - api/link/ui.kanbanlist_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.kanbanlist_maxwidth_config.md - sets the maximum width for the view
@@ -58,6 +60,7 @@ Properties
 - api/link/ui.kanbanlist_autoheight_config.md
 - api/link/ui.kanbanlist_borderless_config.md
 - api/link/ui.kanbanlist_click_config.md
+- api/link/ui.kanbanlist_clipboard_config.md
 - api/link/ui.kanbanlist_container_config.md
 - api/link/ui.kanbanlist_css_config.md
 - api/link/ui.kanbanlist_data_config.md
@@ -73,6 +76,7 @@ Properties
 - api/link/ui.kanbanlist_height_config.md
 - api/link/ui.kanbanlist_hidden_config.md
 - api/link/ui.kanbanlist_id_config.md
+- api/link/ui.kanbanlist_item_config.md
 - api/ui.kanbanlist_layout_config.md
 - api/link/ui.kanbanlist_maxheight_config.md
 - api/link/ui.kanbanlist_maxwidth_config.md

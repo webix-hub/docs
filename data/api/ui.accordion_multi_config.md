@@ -25,8 +25,8 @@ webix.ui({
 
 Possible value here are:
 
-- **true** (default) - all panels can be expanded as well as collapsed at a time;
-- **false** - only one panel can be (and must be) visible at a time;
+- **true**  - all panels can be expanded as well as collapsed at a time;
+- **false** (default) - only one panel can be (and must be) visible at a time;
 - **"mixed"** - all panels can be expanded at a time, but you cannot close them all. One pane remains visible. 
 
 

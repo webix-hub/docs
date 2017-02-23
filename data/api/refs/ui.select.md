@@ -13,8 +13,8 @@ var select = webix.ui({
 	view:"select", 
   	label:"Branch", 
   	value:1, options:[
-    	{"id":1, "value":"Master"},
-    	{"id":2, "value":"Release"}
+    	{ "id":1, "value":"Master" },
+    	{ "id":2, "value":"Release" }
   	]
 });
 ~~~
@@ -33,7 +33,7 @@ var select = webix.ui({
 
 {{api
 - api/link/ui.select_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.select_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.select_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.select_bind.md - binds components
 - api/link/ui.select_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.select_blur.md - removes the focus from the control
@@ -151,9 +151,11 @@ var select = webix.ui({
 
 
 {{api
+- api/link/ui.select_$comparevalue_other.md - compares the old value of the control with the one that is going to be set
 - api/link/ui.select_$getsize_other.md - returns the current size of the component
 - api/link/ui.select_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.select_$height_other.md - current height of the view
+- api/link/ui.select_$preparevalue_other.md - adjusts the value that is going to be set to the format expected by the control
 - api/link/ui.select_$render_other.md - code called after rending control
 - api/link/ui.select_$rendericon_other.md - renders icon for the control
 - api/link/ui.select_$renderinput_other.md - called each time when component need to paint control's input

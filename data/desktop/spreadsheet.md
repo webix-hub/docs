@@ -1,6 +1,11 @@
 SpreadSheet
 =============
 
+What's New
+-----------
+
+Check recently added features, latest updates and bugfixes in the spreadsheet/whats_new.md list.
+
 API Reference
 ---------------
 
@@ -16,11 +21,14 @@ API Reference
 
 Webix SpreadSheet is a component intended for creating tables and performing various operations with their data and appearance.
 
-Webix SpreadSheet represents a web-tool for making tables online and keeping all the data locally. Thus, all the information in your reports and accounts will be kept secure and always at hand.
+Webix SpreadSheet represents a web tool for making tables online and keeping all the data locally. 
+Thus, all the information in your reports and accounts will be kept secure and always at hand.
+
 The ready-made document can be exported into an Excel file, and you can import an Excel document into SpreadSheet as well.
 
-The component includes all the necessary functionality for handy work with data presented in the tabular form. You can edit and format the content of cells, resize cells,
-apply diverse styles, fonts and borders' types, align text and merge cells in rows and columns. Mathematical functions are also included. The component can be localized according to the rules
+The component includes all the necessary functionality for handy work with data presented in the tabular form. 
+You can edit and format the content of cells, resize cells, apply diverse styles, fonts and borders' types, align text and merge cells in rows 
+and columns. Mathematical functions are also included. The component can be localized according to the rules
 of various languages.
 
 <br>
@@ -102,6 +110,7 @@ of various languages.
 
 
 @index:
+- spreadsheet/whats_new.md
 - spreadsheet/spreadsheet_init.md
 - spreadsheet/loading_data.md
 - spreadsheet/localization.md

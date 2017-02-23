@@ -9,6 +9,7 @@ Except for built-in [charts](desktop/chart.md), Webix offers a possibility to in
 - <a href="http://justgage.com/">JustGage Javascript Plugin</a>
 - <a href="http://raphaeljs.com/">Raphael JavaScript Library</a>
 - <a href="http://sigmajs.org/">SigmaJS Library</a>
+- <a href="http://www.fusioncharts.com/">FusionCharts Library</a>
 
 Note that third-party scripts are included to documentation samples in another way, but you should follow the linking pattern described below. 
 
@@ -52,7 +53,7 @@ JustGage JS is a handy JavaScript plugin for generating and animating nice gauge
 
 <img src="desktop/justgage.png">
 
-Related Sample: <a href="http://webix-hub.github.io/components/justgage/sample.html">JustGage Chart</a>
+**Related Sample:** <a href="http://webix-hub.github.io/components/justgage/sample.html">JustGage Chart</a>
 
 ####Component Initialization
 
@@ -162,6 +163,39 @@ In our [Github package](https://github.com/webix-hub/components/tree/master/sigm
 and include into the **sigma-chart** Webix component in the way described above. 
 
 In addition, the support for GEXF data is provided by default.
+
+FusionCharts
+--------------
+
+FusionCharts is a JavaScript library that provides a wide range of charting solutions for web and mobile applications.
+
+<img src="desktop/fusioncharts.png">
+
+**Related Sample:** <a link="http://webix-hub.github.io/components/fusion/sample.html">FusionChart</a>
+
+####Component Initialization
+
+Firstly, you should include Sigma JS files from the package into your document in addition to Webix files:
+
+~~~html
+<script type="text/javascript" src="./fusion.js"></script>
+~~~
+
+And then initialize the view:
+
+~~~js
+//path from which extra libraries are autoloaded
+webix.codebase = "./";
+
+webix.ui({
+	view:"fusion-chart", 
+	config: {
+     // chart config
+    }
+});
+~~~
+
+- **config** - specifies the chart configuration. The available configuration parameters can be found on the FusionCharts site.
 
 @complexity:2
 

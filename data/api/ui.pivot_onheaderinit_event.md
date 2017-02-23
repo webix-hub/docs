@@ -9,7 +9,7 @@ onHeaderInit
 - header		array		an array containing the header structure
 
 @example:
-$$("pivot").attachEvent("onHeaderInit", function(){
+$$("pivot").attachEvent("onHeaderInit", function(header){
 	// some code here
 });
 

@@ -1,4 +1,4 @@
-Customizing Kanban Structure
+Customizing Kanban Board Structure
 ===================
 
 Kanban Board has a [layout](desktop/layout.md) structure. It means that it consists of rows and columns that can be combined in different ways.

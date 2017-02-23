@@ -4,7 +4,7 @@ $onLoad
 @short:
 	default action on data loading
 
-@type:
+@type: function
 
 @example:
 

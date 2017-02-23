@@ -29,7 +29,7 @@ var combo = webix.ui({
 
 {{api
 - api/link/ui.combo_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.combo_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.combo_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.combo_bind.md - binds components
 - api/link/ui.combo_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.combo_blur.md - removes the focus from the control
@@ -107,6 +107,7 @@ var combo = webix.ui({
 - api/link/ui.combo_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.combo_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.combo_disabled_config.md - indicates whether an item is enabled or not
+- api/ui.combo_editable_config.md - 
 - api/link/ui.combo_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.combo_height_config.md - sets the height of the component
 - api/link/ui.combo_hidden_config.md - defines whether the view will be hidden initially
@@ -154,9 +155,11 @@ var combo = webix.ui({
 
 
 {{api
+- api/link/ui.combo_$comparevalue_other.md - compares the old value of the control with the one that is going to be set
 - api/link/ui.combo_$getsize_other.md - returns the current size of the component
 - api/link/ui.combo_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.combo_$height_other.md - current height of the view
+- api/link/ui.combo_$preparevalue_other.md - adjusts the value that is going to be set to the format expected by the control
 - api/link/ui.combo_$render_other.md - code called after rending control
 - api/link/ui.combo_$rendericon_other.md - renders icon for the control
 - api/link/ui.combo_$renderinput_other.md - called each time when component need to paint control's input

@@ -40,8 +40,18 @@ webix.ajax().get("some.php",{ action:"info", id:123 });
 webix.ajax().get("some.php",{ action:"info", id:{ row:123, column:"title" }});
 ~~~
 
+In case of object notation, the library will escape values automatically except for FormData case. 
 
-In case of object notation, the library will escape values automatically. 
+- by using FormData:
+
+~~~js
+var formData = new FormData();
+
+formData.append("action", "info");
+formData.append("id", "123");
+
+webix.ajax().post("some.php", formData);
+~~~
 
 
 ### Post mode
@@ -60,6 +70,7 @@ webix.ajax().post("some.php","action=info&id=123");
 webix.ajax().post("some.php", { action:"info", id:123}); 
 webix.ajax().post("some.php", { action:"info", id:{ row:123, column:"title" }}); 
 ~~~
+
 
 {{note
 Note that when passing extra parameters into the server script by a separate string/object, you should specify the type of a request (GET or POST).

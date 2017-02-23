@@ -5,7 +5,7 @@ Methods
 - api/link/ui.filemanager_add.md - adds an item to the store
 - api/link/ui.filemanager_addview.md - add new view to layout-like component
 - api/link/ui.filemanager_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.filemanager_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.filemanager_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.filemanager_bind.md - binds components
 - api/link/ui.filemanager_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.filemanager_callevent.md - calls an inner event
@@ -68,8 +68,8 @@ Methods
 - api/link/ui.filemanager_loadbranch.md - loads data to the specified branch, as direct children of the node with the id provided
 - api/link/ui.filemanager_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
 - api/link/ui.filemanager_mapevent.md - routes events from one object to another
-- api/ui.filemanager_markcopy.md - preselectes files/folders for copy operation
-- api/ui.filemanager_markcut.md - preselectes files/folders for move operation
+- api/ui.filemanager_markcopy.md - preselectes files/folders for the Copy operation
+- api/ui.filemanager_markcut.md - preselectes files/folders for the Move operation
 - api/link/ui.filemanager_move.md - moves the specified item to the new position
 - api/ui.filemanager_movefile.md - moves a selected file/folder
 - api/ui.filemanager_openfolders.md - opens folders in case of dynamic loading
@@ -94,7 +94,7 @@ Methods
 - api/link/ui.filemanager_ui.md - allows creating new ui, the id of which will be locked in the parent id space
 - api/link/ui.filemanager_unbind.md - breaks "bind" link
 - api/link/ui.filemanager_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/ui.filemanager_updateitem.md - sets properties of the data item
+- api/link/ui.filemanager_updateitem.md - updates the data item with new properties
 - api/ui.filemanager_uploadfile.md - opens the file upload dialog
 }}
 

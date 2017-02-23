@@ -24,3 +24,4 @@ webix.toPDF($$("myChart"));
 @relatedapi:
 	api/_topng.md
 	api/_toexcel.md
+    api/_tocsv.md

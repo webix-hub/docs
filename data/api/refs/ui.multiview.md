@@ -40,7 +40,7 @@ webix.ui({
 {{api
 - api/link/ui.multiview_addview.md - add new view to layout-like component
 - api/link/ui.multiview_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.multiview_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.multiview_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/ui.multiview_back.md - switches multiview to previously active view
 - api/link/ui.multiview_bind.md - binds components
 - api/link/ui.multiview_blockevent.md - temporarily blocks triggering of ALL events of the calling object
@@ -79,7 +79,7 @@ webix.ui({
 
 
 {{api
-- api/ui.multiview_onbeforeback_event.md - fires the moment back() fucntion is triggered
+- api/ui.multiview_onbeforeback_event.md - fires the moment the api/ui.multiview_back.md function is triggered
 - api/link/ui.multiview_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.multiview_ondestruct_event.md - occurs when component destroyed
 - api/ui.multiview_onviewchange_event.md - fires when the views are switched in the component (regardless of the switching method)
@@ -101,7 +101,7 @@ webix.ui({
 - api/link/ui.multiview_height_config.md - sets the height of the component
 - api/link/ui.multiview_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.multiview_id_config.md - the component ID
-- api/ui.multiview_keepviews_config.md - specifies the mode in which multiview doesn't remove inactive views when the become hidden
+- api/ui.multiview_keepviews_config.md - specifies the mode in which multiview doesn't remove inactive views when they become hidden
 - api/link/ui.multiview_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.multiview_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.multiview_minheight_config.md - sets the minimal height for the view

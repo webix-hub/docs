@@ -6,8 +6,8 @@ getSearchData
 
 @params:
 
-- id		string			the id of the folder where the text is searched
-- text		string			the searched text
+- id		string		the id of the folder where the text is searched
+- text		string		the searched text
 
 @returns:
 - result		array		an array of items

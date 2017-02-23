@@ -5,7 +5,7 @@ Methods
 - api/link/ui.rangechart_add.md - adds an item to the store
 - api/link/ui.rangechart_addseries.md - adds an additional graph to the chart
 - api/link/ui.rangechart_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.rangechart_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.rangechart_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.rangechart_bind.md - binds components
 - api/link/ui.rangechart_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.rangechart_callevent.md - calls an inner event
@@ -59,7 +59,7 @@ Methods
 - api/link/ui.rangechart_unbind.md - breaks "bind" link
 - api/link/ui.rangechart_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.rangechart_ungroup.md - ungroups data
-- api/link/ui.rangechart_updateitem.md - sets properties of the data item
+- api/link/ui.rangechart_updateitem.md - updates the data item with new properties
 }}
 
 @index:

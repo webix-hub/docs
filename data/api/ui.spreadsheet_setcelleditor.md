@@ -21,7 +21,7 @@ $$("ss1").setCellEditor(8,2,{ editor:"richselect", options:"B3:B7" });
 @template:	api_method
 @descr:
 
-The editorObject parameter can have the following properties:
+The *editorObject* parameter can have the following properties:
 
 - type - (string) the editor type
 - options - (string,array) a range of cell references or an array of editor options

@@ -4,7 +4,7 @@ Methods
 {{api
 - api/link/ui.google-map_add.md - adds an item to the store
 - api/link/ui.google-map_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.google-map_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.google-map_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.google-map_bind.md - binds components
 - api/link/ui.google-map_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.google-map_callevent.md - calls an inner event
@@ -25,7 +25,7 @@ Methods
 - api/link/ui.google-map_getindexbyid.md - returns the index of the item with the specified id
 - api/link/ui.google-map_getitem.md - gets the object of the data item with the specified id
 - api/link/ui.google-map_getlastid.md - returns the id of the last item
-- api/ui.google-map_getmap.md - returns a promise which is resolved after a map is rendered
+- api/ui.google-map_getmap.md - returns a GoogleMap map object
 - api/link/ui.google-map_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/ui.google-map_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.google-map_getparentview.md - returns the parent view of the component
@@ -49,7 +49,7 @@ Methods
 - api/link/ui.google-map_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.google-map_unbind.md - breaks "bind" link
 - api/link/ui.google-map_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
-- api/link/ui.google-map_updateitem.md - sets properties of the data item
+- api/link/ui.google-map_updateitem.md - updates the data item with new properties
 }}
 
 @index:

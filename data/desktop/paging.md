@@ -50,7 +50,8 @@ webix.ui({
 			view:"pager", id:"pagerA",
 			size:50,
 			group:5
-		}]
+		}
+    ]
 })      
 ~~~
 
@@ -113,7 +114,6 @@ With a component pager you need to get the pager object with the **getPager()** 
 Cloning a component pager
 }}
 ~~~js
-
 grida.getPager().clone({
 	container:"paging_here_too",
 	size:10,
@@ -163,7 +163,7 @@ function next_page(){
 
 {{sample 25_pager/02_apionly.html}}
 
-**Select()** function can take the **index** of the desired pager (zero-based numbering,) or its **order* ("next", "prev", "first", "last"). 
+The **select()** function can take the **index** of the desired pager (zero-based numbering,) or its **order** ("next", "prev", "first", "last"). 
 
 ##Custom Templates for Paging
 

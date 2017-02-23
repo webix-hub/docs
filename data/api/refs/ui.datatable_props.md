@@ -10,12 +10,13 @@ Properties
 - api/ui.datatable_blockselect_config.md - enables/disables block selection
 - api/link/ui.datatable_borderless_config.md - used to hide the component borders
 - api/ui.datatable_checkboxrefresh_config.md - controls behavior of checkbox editors in grid
-- api/link/ui.datatable_clipboard_config.md - enables/disables clipboard support
+- api/link/ui.datatable_clipboard_config.md - 
 - api/ui.datatable_columnwidth_config.md - defines the default width for columns (in pixels)
 - api/ui.datatable_columns_config.md - configures columns of the table
 - api/link/ui.datatable_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.datatable_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.datatable_data_config.md - JavaScript array containing data for the component
+- api/link/ui.datatable_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/ui.datatable_datafetch_config.md - defines the number of records that will be loaded into datatable during the next dynamic loading call
 - api/link/ui.datatable_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.datatable_datatype_config.md - the type of loaded data
@@ -104,6 +105,7 @@ Properties
 - api/link/ui.datatable_container_config.md
 - api/link/ui.datatable_css_config.md
 - api/link/ui.datatable_data_config.md
+- api/link/ui.datatable_datafeed_config.md
 - api/ui.datatable_datafetch_config.md
 - api/link/ui.datatable_datathrottle_config.md
 - api/link/ui.datatable_datatype_config.md

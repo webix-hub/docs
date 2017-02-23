@@ -43,12 +43,12 @@ var organogram = new webix.ui({
 - api/link/ui.organogram_add.md - adds an item to the store
 - api/link/ui.organogram_addcss.md - applied CSS class to a component item
 - api/link/ui.organogram_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.organogram_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.organogram_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.organogram_bind.md - binds components
 - api/link/ui.organogram_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.organogram_callevent.md - calls an inner event
 - api/link/ui.organogram_clearall.md - removes all items from the component
-- api/link/ui.organogram_clearcss.md - removes css class from all items
+- api/link/ui.organogram_clearcss.md - removes CSS class from all items
 - api/link/ui.organogram_close.md - closes the branch with the specified id
 - api/link/ui.organogram_closeall.md - closes all branches in the tree
 - api/link/ui.organogram_count.md - returns the number of currently visible items
@@ -120,7 +120,7 @@ var organogram = new webix.ui({
 - api/link/ui.organogram_ungroup.md - ungroups data
 - api/link/ui.organogram_unselect.md - removes selection from the specified item
 - api/link/ui.organogram_unselectall.md - removes selection from all items
-- api/link/ui.organogram_updateitem.md - sets properties of the data item
+- api/link/ui.organogram_updateitem.md - updates the data item with new properties
 }}
 
 
@@ -195,6 +195,7 @@ var organogram = new webix.ui({
 - api/link/ui.organogram_height_config.md - sets the height of the component
 - api/link/ui.organogram_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.organogram_id_config.md - the component ID
+- api/link/ui.organogram_item_config.md - alias to api/renderstack_item_config.md property
 - api/link/ui.organogram_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.organogram_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.organogram_minheight_config.md - sets the minimal height for the view
@@ -244,6 +245,7 @@ var organogram = new webix.ui({
 - api/link/ui.organogram_on_mouse_move_other.md - attaches a mouse move behavior for component items with the specified CSS class
 - api/link/ui.organogram_type_other.md - set of properties and helpers for item rendering
 - api/link/ui.organogram_types_other.md - collection of possible types
+- api/link/ui.organogram_waitdata_other.md - eventual result of an asynchronous operation ('promise' object) for the loaded data
 }}
 
 

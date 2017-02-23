@@ -4,7 +4,7 @@ Methods
 {{api
 - api/link/ui.portlet_addview.md - add new view to layout-like component
 - api/link/ui.portlet_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.portlet_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.portlet_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.portlet_bind.md - binds components
 - api/link/ui.portlet_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.portlet_callevent.md - calls an inner event

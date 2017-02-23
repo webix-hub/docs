@@ -13,7 +13,7 @@ FlexLayout places all components in a single row, but if space is not enough, a 
 {{api
 - api/link/ui.flexlayout_addview.md - add new view to layout-like component
 - api/link/ui.flexlayout_adjust.md - adjusts the component to the size of the parent HTML container
-- api/link/ui.flexlayout_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.flexlayout_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.flexlayout_bind.md - binds components
 - api/link/ui.flexlayout_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.flexlayout_callevent.md - calls an inner event

@@ -13,7 +13,7 @@ The component renders plain scrolls without content.
 
 {{api
 - api/ui.vscroll_activearea.md - assigns active mouse wheel zone
-- api/link/ui.vscroll_attachevent.md - attaches the handler to an inner event of the component (allows behaviour customizations)
+- api/link/ui.vscroll_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.vscroll_blockevent.md - temporarily blocks triggering of ALL events of the calling object
 - api/link/ui.vscroll_callevent.md - calls an inner event
 - api/link/ui.vscroll_define.md - redefines a single configuration property (or a hash of properties)

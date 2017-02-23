@@ -17,3 +17,10 @@ fmanager.setPath(id);
 @template:	api_method
 @descr:
 
+@relatedapi:
+
+api/ui.filemanager_onpathcomplete_event.md
+api/ui.filemanager_onpathlevel_event.md
+
+@related:
+file_manager/configuration.md#path

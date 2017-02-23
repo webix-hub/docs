@@ -1,8 +1,8 @@
 Introduction to Webix
 ======================
 
-Including library
----
+Including Library
+----------------
  
 1 . Create a simple HTML page. Specify **HTML5** doctype for it.
 
@@ -37,9 +37,11 @@ into the links to the code files:
 <script src="http://cdn.webix.com/2.2/webix.js" type="text/javascript"></script> 
 ~~~
 
-#### Use Bower/NuGet
+This variant is suitable only for the Webix version distributed under GPL.
 
-Install local Webix files via **NuGet** or **Bower** package managers by a single command. You don't need to download anything.
+#### Use Bower/NuGet/NPM
+
+Install local Webix files via **NuGet**, **Bower** or **NPM** package managers by a single command. You don't need to download anything.
 
 {{snippet
 NuGet
@@ -57,6 +59,19 @@ Bower
 ~~~js
 bower install webix
 ~~~
+
+These two variants are suitable only for the Webix version distributed under GPL.
+
+{{snippet
+NPM
+}}
+~~~js
+npm install webix
+~~~
+
+You can use this way to install both GPL and PRO Webix versions. 
+
+If you have commercial Webix license, you need to enter [Webix Client area](https://webix.com/clients/#!/login) -> Users, to get npm access.
 
 #### Download Webix package
 
