@@ -15,7 +15,7 @@ Check the [Migration Guide](migration.md#webix3132) for more details.
 
 ##New Features
 
-- [Spreadsheet](desktop/spreadsheet.md) widget (PRO edition)
+- [Spreadsheet](desktop/spreadsheet.md) complex widget 
 - [RangeChart](desktop/range_chart.md) widget (PRO edition)
 - [undo](desktop/undo.md) functionality for all data components
 - [export to PDF](desktop/export_pdf.md) for all data components

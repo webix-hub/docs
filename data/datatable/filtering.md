@@ -394,7 +394,10 @@ Filtering by multiple criteria (by specifying an additional filtering rule)
 grid = new webix.ui({
 	view:"datatable",
 	columns:[
-	  { id:"rank",	header:["#",{content:"textFilter",compare:oneForAll,colspan:3}]},
+	  { 
+      	id:"rank",	
+      	header:["#",{content:"textFilter",compare:oneForAll,colspan:3}]
+      },
 	  { id:"title",	header:["Film title",""]},
 	  { id:"year",	header:["Release year",""]}
 	],
@@ -454,7 +457,8 @@ For example, if you add an input and button to the page and want to filter DataT
 Implementing a custom filter
 }}
 ~~~js
-<input type="text"><input type="button" value='filter' onclick='filterText(this);'>
+<input type="text"><input type="button" value='filter' 
+	onclick='filterText(this);'>
 
 <script>
 	function filterText(node){

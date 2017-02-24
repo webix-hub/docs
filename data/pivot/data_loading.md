@@ -85,7 +85,7 @@ To define such a processing, you need to enable the **externalProcessing** prope
 
 ~~~js
 webix.ui({
-    view: “pivot”,
+    view: "pivot",
     externalProcessing: true,
     ...
 });

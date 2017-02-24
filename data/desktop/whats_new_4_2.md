@@ -3,7 +3,7 @@ Version 4.2
 
 <span class="release_date">released on February 23, 2017</span>
 
-See also spreadsheet/whats_new.md and pivot/whats_new.md
+See also What's New of [SpreadSheet](spreadsheet/whats_new.md) and [Pivot](pivot/whats_new.md) complex widgets.
 
 
 Breaking Changes
@@ -23,11 +23,11 @@ New Features
 ------------
 
 - [Vue.js integration](desktop/vue.md)
-- [updated functionality of SpreadSheet](spreadsheet/whats_new.md#newfeatures) (PRO version): 
+- [updated functionality of SpreadSheet](spreadsheet/whats_new.md#newfeatures): 
 	- enhanced math
     - visual improvements 
     - key navigation 
-- [possibility to run Pivot with web workers](pivot/webworkers.md) (PRO version)
+- [possibility to run Pivot with web workers](pivot/webworkers.md) 
 - [possibility to run Webix and complex widgets via NPM](tutorials/start_coding.md#package_managers) 
 - [serverDateRangeFilter](datatable/filtering.md#serverdaterange) added for DataTable filtering (PRO version)
 - [ability of the Uploader widget to upload folders with files](desktop/configuring_uploader.md#uploadingfolders)  
