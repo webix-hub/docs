@@ -15,7 +15,13 @@ Ui-related textarea control is a multi-line input field with a label.
 ##Initialization
 
 ~~~js
-{ view:"textarea", label:"Note", labelAlign:"right", height:200, value: "type here" }
+{ 
+	view: "textarea", 
+    label: "Note", 
+    labelAlign: "right", 
+    height: 200, 
+    value: "type here" 
+}
 ~~~
 
 {{sample 13_form/01_controls/03_textarea.html }}

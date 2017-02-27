@@ -2,10 +2,11 @@ disabled
 =============
 
 
-@short: indicates whether an item is enabled or not
+@short: indicates whether an item is enabled 
 	
 
 @type:  boolean
+@default:false
 @example:
 
 webix.ui({
@@ -16,11 +17,11 @@ webix.ui({
 @template:	api_config
 @descr:
 
-By dafaults all items are enabled, i.e. the value is *false*.
+By default, all items are enabled, i.e. the value is *false*.
 
-A disabled item looses  focus and will not react on mouse events. 
+A disabled item loses focus and will not react on mouse events. 
 
-Same state can be forced through Webix API:
+The same state can be forced through Webix API:
 
 ~~~js
 $$("button1").disable();
