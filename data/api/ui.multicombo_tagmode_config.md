@@ -5,6 +5,7 @@ tagMode
 	
 
 @type: boolean
+@default:true
 @example:
 
 { view:"multicombo", tagMode:false}
@@ -20,6 +21,6 @@ tagMode
 With tagMode enabled the control shows the titles of all the chosen items in the input field. 
 Otherwise, it shows only their count, e.g. 'Two item(s)', which can be configured by api/ui.multicombo_tagtemplate_config.md.
 
-<i>True</i> by default.
+
 
 

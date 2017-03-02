@@ -4,7 +4,7 @@ Pivot Table
 What's New
 -----------
 
-Check recently added features, latest updates and bugfixes in the pivot/whats_new.md list.
+Check pivot/whats_new.md list to keep up with latest updates.
 
 API Reference
 -----------------

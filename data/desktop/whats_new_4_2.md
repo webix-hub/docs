@@ -84,7 +84,7 @@ Fixes
 - clear loading markers and xhr on destruction
 - dragleave event fires for all child nodes of drop zone
 - Uploader's hover can interfere with file drag-n-drop 
-- Uploader recognizes any status code below 400 as successfull
+- Uploader recognizes any status code below 400 as successful
 - better handling of key navigation during multiple and area selection in DataTable
 - set and move selection during key navigation only for views with data
 - area selection fails on filtering
@@ -117,11 +117,11 @@ Fixes
 - webix.copy should not process regular expressions (e.g. in input patterns)
 - DataView: define maximum elements dimensions for Firefox, IE and Safari 
 - editor in the Tree adjusts to node
-- wrong navigation direction in daterange with adjacent December and January months
+- wrong navigation direction in DateRange with adjacent December and January months
 - Gage height and font-size
 - Gage styles fix for IE
 - RichText overflow fix
 - don't include x-axis title into modifications with dynamic chart
-- cleanup logic to pdfviewer for better memory usage
+- cleanup logic to PDFViewer for better memory usage
 - block mouse event handler for already destroyed views
 - align:absolute ignores right and bottom positions

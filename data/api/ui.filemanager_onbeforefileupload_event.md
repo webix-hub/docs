@@ -1,28 +1,26 @@
 onBeforeFileUpload
 =============
 
+@todo:check
+
 @short:
-	fires on the Upload action click
+	fires the uploader has started to upload a file
 
 @params:
 
-- targetId		string			the id of the folder where a new file will be uploaded
+- file_config		object			an object with the file configuration
 
 @example:
-$$("fmanager").attachEvent("onBeforeFileUpload",function(targetId){
+$$("fmanager").attachEvent("onBeforeFileUpload",function(file_config){
     // your code
     return true;
 });
 
 @returns:
 
-- result		boolean			returning false will prevent opening the upload file dialog
+- result		boolean			returning false will prevent file uploading
 
 @template:	api_event
 @descr:
 
-@relatedapi:
-api/ui.filemanager_uploadfile.md
 
-@related:
-file_manager/configuration.md#actionsmenu

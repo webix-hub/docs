@@ -1,12 +1,14 @@
- DataTable Filtering
+DataTable Filtering
 ===================
-The library provides ability to <a href="http://webix.com/widget/datatable/" title="filter in datatable widget">filter data</a> on client-side by one or several criteria using for this built-in or custom-created filters.
+
+The library provides ability to <a href="http://webix.com/widget/datatable/" title="filter in datatable widget">filter data</a> 
+on the client side by one criterion or several criteria using built-in or custom filters.
 
 
 Filters in the header
 --------------------------
 
-You can define a built-in filter in the header or footer of a column. Webix offers ten filter types:
+You can define a built-in filter in the header or footer of a column. Webix offers various filter types:
 
 - in a standard free version:
 	- **[textFilter](#text)**;
@@ -19,11 +21,18 @@ You can define a built-in filter in the header or footer of a column. Webix offe
 	- **[richSelectFilter](#richselect)**;
     - **[multiSelectFilter](#multiselect)**;
     - **[serverMultiSelectFilter](#servermultiselect)** (multiselect-based);
+    - **[multiComboFilter](#multicombo)**;
+    - **[serverMultiComboFilter](#servermulticombo)** (multicombo-based);
 	- **[datepickerFilter](#datepicker)**;
     - **[daterangeFilter](#daterange)**;
     - **[serverDateRangeFilter](#serverdaterange)** (daterange-based).
     
 All of them are described in detail below.     
+
+Setting and Configuring Filter
+----------------------------
+
+###Setting a filter
 
 Built-in filter is set by property **content** of the **header/footer** attribute. Note, to add a filter to the header(footer), the header(footer) must be specified as array.
 
@@ -37,6 +46,25 @@ columns:[
 If you need to create a **custom filter** (or something) for header content, or you need to **redefine** the behavior of an already existing filter, 
 go [here](datatable/headers_footers.md#customheaderandfootercontent) for the instructions. 
 }}
+
+<h3 id="configfilters">Configuring filters</h3>
+
+{{note This functionality is available for Pro filters only.}}
+
+You can configure the input that is used in the table's header for filtering - richselect, datepicker, etc. For this purpose, you need to use the *inputConfig* property.
+
+For example, you can enable the *tagMode* feature for the **multiComboFilter** as follows:
+
+~~~js
+{ 
+	id:"year", 
+    header:["Released", { content:"multiComboFilter", inputConfig:{tagMode:true} }]
+} 
+~~~
+
+
+Filters Description
+---------------------
 
 ###Text filter {#text}
 
@@ -195,6 +223,55 @@ Request parameters include:
 - *filter[column_name]* - name of the column (in brackets) for which filtering is performed. Its value is a text value you've selected in the filter input. 
 
 If **server-side sorting** is enabled, data is both filtered and sorted on server. 
+
+
+###Multicombo Filter {#multicombo}
+
+{{pronote
+Available in **Webix Pro** edition only.
+}}
+
+<img src="desktop/multicombo_filter.png"/>
+
+Retrieves values that contain mask defined through a popup list of possible values while **multiple values** can be selected at once. 
+Based on Webix [multicombo](desktop/multicombo.md) control.
+
+~~~js
+{ id:"year", header:["Released", { content:"multiComboFilter" }]  } 
+~~~
+
+By default, the api/ui.multicombo_tagmode_config.md configuration property for this filter is disabled, i.e. the control shows only the number of the selected options.
+
+You can enable the *tagMode* for the filter inside of the [inputConfig](datatable/filtering.md#configfilters) property of the header configuration:
+
+~~~js
+{ 	
+	id:"year", 
+	header:["Released", { content:"multiComboFilter", inputConfig:{tagMode:true} }]
+} 
+~~~
+
+###ServerMultiCombo Filter {#servermulticombo}
+
+{{pronote
+Available in **Webix Pro** edition only.
+}}
+
+Retrieves values that contain mask defined through a popup list of possible values while **multiple values** can be selected at once. 
+Sends a request to server to return filtered dataset.
+
+~~~js
+{ id:"year",header:["Released", { content:"serverMultiComboFilter" }]}
+~~~
+
+Request parameters include: 
+
+- *count* - the number of data records to return. Its value depends on [dynamic loading](desktop/dynamic_loading.md) parameters, if any;
+- *start* - ID of the data record to start from (0 - beginning). Its value depends on [dynamic loading](desktop/dynamic_loading.md) parameters, if any;
+- *filter[column_name]* - name of the column (in brackets) for which filtering is performed. Its value is a text value you've selected in the filter input. 
+
+If **server-side sorting** is enabled, data is both filtered and sorted on server. 
+
 
 ###Datepicker Filter {#datepicker}
 

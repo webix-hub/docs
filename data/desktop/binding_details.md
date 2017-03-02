@@ -236,7 +236,8 @@ where **obj** is selected data item in the master component.
 
 ##Saving Data of Multiple Bound Forms
 
-When a form is bound to a component, data from the selected item is transmitted to the form as well as any changes you make within the form are saved automatically to the selected item. 
+When a form is bound to a component, data from the selected item is transmitted to the form as
+well as any changes you make within the form are saved automatically to the selected item. 
 
 It happens on calling the **save();** method
 
@@ -244,17 +245,30 @@ It happens on calling the **save();** method
 $$("myform").save();
 ~~~
 
-But if you have **two forms** bound to one and the one component and you save each of the forms separately, 
-the data from the previously saved one is lost. The solution is the [saveBatch()](api/bindsource_savebatch.md)
-method that makes simultaneous saving of several forms. 
+But if you have **two forms** bound to one and the same component and you save each of the forms separately, 
+the data from the previously saved one is lost. 
 
-It is called from the master component rather than from either of the slave forms. 
+There two possible solutions:
+
+1) To use the [saveBatch()](api/bindsource_savebatch.md) method that makes simultaneous saving of several forms
+together with the api/link/ui.form_getdirtyvalues.md method that prevents data overwriting. 
+
+The api/bindsource_savebatch.md method is called from the master component rather than from either of the slave forms. 
+The api/link/ui.form_getdirtyvalues.md method returns only the fields that were changed in the form.
 
 ~~~js
-$$("mydatatable").saveBatch(function(){
-     $$("myform1").save();
-     $$("myform2").save();
+$$("datatable1").saveBatch(function(){
+   $$("form1").save();
+   $$("form2").save( $$("form2").getDirtyValues() );
 });
+~~~
+
+2) To save data in both forms without using saveBatch() with the help of the following technique:
+
+~~~js
+var v1 = $$("form1").getValues();
+var v2 = $$("form2").getDirtyValues();
+$$("form1").save( webix.extend(v1, v2, true) ); // combine values from both forms
 ~~~
 
 Saving Extra Data with the Bound Form

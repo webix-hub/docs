@@ -158,7 +158,7 @@ and on the Clean button click:
 #### Implementation details
 
 The way, how component will try to parse incoming value depends on component.
-The top level widget of webix-ui block will try to call .parse/.setValues/.setValue method if such method presenst. Additionally, for all webix widgets in the block "onValue" event will be triggered, so you can define a custom value handler ( check the sample below )  
+The top level widget of webix-ui block will try to call .parse/.setValues/.setValue method if such method presents. Additionally, for all webix widgets in the block "onValue" event will be triggered, so you can define a custom value handler ( check the sample below )  
 
 ###Two-way data binding
 
