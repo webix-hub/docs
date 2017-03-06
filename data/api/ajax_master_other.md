@@ -1,7 +1,7 @@
 master
 =============
 
-@short: return a master component for the ajax request
+@short: returns a master component for the AJAX request
 	
 
 @type: object
