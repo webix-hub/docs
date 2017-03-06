@@ -1,10 +1,8 @@
 onBeforeFileUpload
 =============
 
-@todo:check
-
 @short:
-	fires the uploader has started to upload a file
+	fires before the uploader has started to upload a file
 
 @params:
 

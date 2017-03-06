@@ -6,13 +6,13 @@ getMap
 
 @params:
 
+@returns:
 
+- map		object		a GoogleMap map object
 
 @example:
-
-~~~js
 var mapObj = $$("map").getMap();
-~~~
+
 
 @template:	api_method
 @descr:
