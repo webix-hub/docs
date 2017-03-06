@@ -102,7 +102,7 @@ var button = webix.ui({
 - api/ui.button_click_config.md - click action handler
 - api/link/ui.button_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.button_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.button_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.button_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.button_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.button_height_config.md - sets the height of the component
 - api/link/ui.button_hidden_config.md - defines whether the view will be hidden initially

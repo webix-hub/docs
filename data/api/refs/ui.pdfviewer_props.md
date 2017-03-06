@@ -9,7 +9,7 @@ Properties
 - api/link/ui.pdfviewer_data_config.md - JavaScript array containing data for the component
 - api/link/ui.pdfviewer_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.pdfviewer_datatype_config.md - the type of loaded data
-- api/link/ui.pdfviewer_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.pdfviewer_disabled_config.md - indicates whether an item is enabled
 - api/ui.pdfviewer_downloadname_config.md - sets the name of the downloaded file without the .pdf extension
 - api/link/ui.pdfviewer_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.pdfviewer_height_config.md - sets the height of the component

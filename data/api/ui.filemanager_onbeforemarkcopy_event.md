@@ -7,7 +7,7 @@ onBeforeMarkCopy
 
 @params:
 
-- ids		string,array		the ids of the items to copy
+- ids		string|array		the ids of the items to copy
 
 @returns:
 - result		boolean		returning false will prevent copying
@@ -25,6 +25,7 @@ $$("files").attachEvent("onBeforeMarkCopy", function(ids){
 @descr:
 
 @relatedapi:
+api/ui.filemanager_onaftermarkcopy_event.md
 api/ui.filemanager_markcopy.md
 
 @relatedsample:

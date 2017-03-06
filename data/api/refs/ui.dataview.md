@@ -187,7 +187,7 @@ var dataview = webix.ui({
 - api/link/ui.dataview_datafetch_config.md - defines the number of records that will be loaded during each dynamic loading request
 - api/link/ui.dataview_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.dataview_datatype_config.md - the type of loaded data
-- api/link/ui.dataview_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.dataview_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.dataview_drag_config.md - enables or disables drag-and-drop
 - api/link/ui.dataview_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.dataview_externaldata_config.md - allows defining custom 'move' logic for the component.

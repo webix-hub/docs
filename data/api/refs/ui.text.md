@@ -102,7 +102,7 @@ var text = webix.ui({
 - api/link/ui.text_click_config.md - click action handler
 - api/link/ui.text_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.text_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.text_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.text_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.text_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.text_height_config.md - sets the height of the component
 - api/link/ui.text_hidden_config.md - defines whether the view will be hidden initially

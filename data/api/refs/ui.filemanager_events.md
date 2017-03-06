@@ -4,21 +4,28 @@ Events
 {{api
 - api/link/ui.filemanager_onafteradd_event.md - fires after adding item to datastore
 - api/ui.filemanager_onafterback_event.md - fires after the Filemanager "back" button has been clicked
+- api/ui.filemanager_onaftercreatefolder_event.md - 
 - api/link/ui.filemanager_onafterdelete_event.md - fires after item deleting
+- api/ui.filemanager_onafterdeletefile_event.md - 
 - api/ui.filemanager_onafterdrop_event.md - fires after drag-n-drop has been finished
 - api/ui.filemanager_onafterdynparse_event.md - fires after the data loaded from the server-side script has been parsed into the widget
+- api/ui.filemanager_onaftereditfile_event.md - 
 - api/ui.filemanager_onaftereditstop_event.md - fires after the editor is closed
 - api/ui.filemanager_onafterhidetree_event.md - fires after the tree has been hidden
 - api/ui.filemanager_onafterleveldown_event.md - fires after selection has been moved to the child folder
 - api/ui.filemanager_onafterlevelup_event.md - fires after the <a href="file_manager/configuration.md#levelup">LevelUp</a> button has been clicked (selection moves to the parent folder)
 - api/link/ui.filemanager_onafterload_event.md - fires after data loading is complete
+- api/ui.filemanager_onaftermarkcopy_event.md - 
+- api/ui.filemanager_onaftermarkcut_event.md - 
 - api/ui.filemanager_onaftermenu_event.md - fires after the Actions menu is opened on clicking the <a href="file_manager/configuration.md#menubutton">Menu button</a>
 - api/ui.filemanager_onaftermodechange_event.md - fires after the mode of viewing files has been changed on clicking the <a href="file_manager/configuration.md#modes">Modes button</a>
+- api/ui.filemanager_onafterpastefile_event.md - 
 - api/ui.filemanager_onafterpathclick_event.md - fires after the path item has been clicked
 - api/ui.filemanager_onafterrun_event.md - fires after a selected file has been downloaded
 - api/ui.filemanager_onaftersearch_event.md - fires after filtering via the "search" input is finished
 - api/ui.filemanager_onaftershowtree_event.md - fires after the tree has been shown
 - api/link/ui.filemanager_onaftersort_event.md - fires after sorting dataset
+- api/ui.filemanager_onafteruploadfile_event.md - 
 - api/link/ui.filemanager_onbeforeadd_event.md - fires before adding item to datastore
 - api/ui.filemanager_onbeforeback_event.md - fires before the Filemanager "back" button has been clicked
 - api/ui.filemanager_onbeforecreatefolder_event.md - fires before a new folder has been created
@@ -31,7 +38,7 @@ Events
 - api/ui.filemanager_onbeforedynparse_event.md - fires before the data loaded from the server-side script will be parsed into the widget
 - api/ui.filemanager_onbeforeeditfile_event.md - fires when the Rename action is chosen in the popup menu
 - api/ui.filemanager_onbeforeeditstop_event.md - fires before editing is finished
-- api/ui.filemanager_onbeforefileupload_event.md - fires on the Upload action click
+- api/ui.filemanager_onbeforefileupload_event.md - fires the uploader has started to upload a file
 - api/ui.filemanager_onbeforehidetree_event.md - fires before the tree is hidden
 - api/ui.filemanager_onbeforeleveldown_event.md - fires before selection is moved to the child folder
 - api/ui.filemanager_onbeforelevelup_event.md - fires before the <a href="file_manager/configuration.md#levelup">LevelUp</a> button is clicked (before selection moves to the parent folder)
@@ -47,6 +54,7 @@ Events
 - api/ui.filemanager_onbeforesearchrequest_event.md - fires before a search request is sent to the server-side (see details <a href="file_manager/loading_data.md#serversidesearchingforcontent">here</a>)
 - api/ui.filemanager_onbeforeshowtree_event.md - fires before the tree is expanded
 - api/link/ui.filemanager_onbeforesort_event.md - fires before sorting dataset
+- api/ui.filemanager_onbeforeuploadfile_event.md - 
 - api/link/ui.filemanager_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/ui.filemanager_oncomponentinit_event.md - fires when File Manager is initialized
 - api/ui.filemanager_oncopyerror_event.md - fires if an error occurred during a file/folder copying
@@ -72,21 +80,28 @@ Events
 @index:
 - api/link/ui.filemanager_onafteradd_event.md
 - api/ui.filemanager_onafterback_event.md
+- api/ui.filemanager_onaftercreatefolder_event.md
 - api/link/ui.filemanager_onafterdelete_event.md
+- api/ui.filemanager_onafterdeletefile_event.md
 - api/ui.filemanager_onafterdrop_event.md
 - api/ui.filemanager_onafterdynparse_event.md
+- api/ui.filemanager_onaftereditfile_event.md
 - api/ui.filemanager_onaftereditstop_event.md
 - api/ui.filemanager_onafterhidetree_event.md
 - api/ui.filemanager_onafterleveldown_event.md
 - api/ui.filemanager_onafterlevelup_event.md
 - api/link/ui.filemanager_onafterload_event.md
+- api/ui.filemanager_onaftermarkcopy_event.md
+- api/ui.filemanager_onaftermarkcut_event.md
 - api/ui.filemanager_onaftermenu_event.md
 - api/ui.filemanager_onaftermodechange_event.md
+- api/ui.filemanager_onafterpastefile_event.md
 - api/ui.filemanager_onafterpathclick_event.md
 - api/ui.filemanager_onafterrun_event.md
 - api/ui.filemanager_onaftersearch_event.md
 - api/ui.filemanager_onaftershowtree_event.md
 - api/link/ui.filemanager_onaftersort_event.md
+- api/ui.filemanager_onafteruploadfile_event.md
 - api/link/ui.filemanager_onbeforeadd_event.md
 - api/ui.filemanager_onbeforeback_event.md
 - api/ui.filemanager_onbeforecreatefolder_event.md
@@ -115,6 +130,7 @@ Events
 - api/ui.filemanager_onbeforesearchrequest_event.md
 - api/ui.filemanager_onbeforeshowtree_event.md
 - api/link/ui.filemanager_onbeforesort_event.md
+- api/ui.filemanager_onbeforeuploadfile_event.md
 - api/link/ui.filemanager_onbindrequest_event.md
 - api/ui.filemanager_oncomponentinit_event.md
 - api/ui.filemanager_oncopyerror_event.md

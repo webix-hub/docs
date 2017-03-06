@@ -107,7 +107,7 @@ var radio = webix.ui({
 - api/link/ui.radio_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.radio_css_config.md - the name of a css class that will be applied to the view container
 - api/ui.radio_customradio_config.md - enables/disables custom radio button for some skins
-- api/link/ui.radio_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.radio_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.radio_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.radio_height_config.md - sets the height of the component
 - api/link/ui.radio_hidden_config.md - defines whether the view will be hidden initially
@@ -127,6 +127,7 @@ var radio = webix.ui({
 - api/link/ui.radio_minheight_config.md - sets the minimal height for the view
 - api/link/ui.radio_minwidth_config.md - sets the minimal width for the view
 - api/link/ui.radio_name_config.md - name of the control
+- api/ui.radio_newline_config.md - 
 - api/link/ui.radio_on_config.md - allows attaching custom handlers to inner events of the component
 - api/ui.radio_optionheight_config.md - height of radio-option item
 - api/ui.radio_options_config.md - defines options for a set of radiobuttons

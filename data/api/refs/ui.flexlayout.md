@@ -61,7 +61,7 @@ FlexLayout places all components in a single row, but if space is not enough, a 
 - api/link/ui.flexlayout_cols_config.md - array of views objects arranged horizontally
 - api/link/ui.flexlayout_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.flexlayout_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.flexlayout_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.flexlayout_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.flexlayout_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.flexlayout_height_config.md - sets the height of the component
 - api/link/ui.flexlayout_hidden_config.md - defines whether the view will be hidden initially

@@ -7,7 +7,7 @@ Properties
 - api/ui.colorboard_cols_config.md - sets the number of columns in the palette
 - api/link/ui.colorboard_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.colorboard_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.colorboard_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.colorboard_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.colorboard_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.colorboard_height_config.md - sets the height of the component
 - api/link/ui.colorboard_hidden_config.md - defines whether the view will be hidden initially

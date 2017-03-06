@@ -166,7 +166,7 @@ var spreadsheet = webix.ui({
 - api/link/ui.spreadsheet_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.spreadsheet_data_config.md - JavaScript array containing data for the component
 - api/link/ui.spreadsheet_datatype_config.md - the type of loaded data
-- api/link/ui.spreadsheet_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.spreadsheet_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.spreadsheet_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.spreadsheet_height_config.md - sets the height of the component
 - api/link/ui.spreadsheet_hidden_config.md - defines whether the view will be hidden initially

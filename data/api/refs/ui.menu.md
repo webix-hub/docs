@@ -193,7 +193,7 @@ var menu = webix.ui({
 - api/link/ui.menu_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.menu_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.menu_datatype_config.md - the type of loaded data
-- api/link/ui.menu_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.menu_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.menu_drag_config.md - enables or disables drag-and-drop
 - api/link/ui.menu_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.menu_externaldata_config.md - allows defining custom 'move' logic for the component.
