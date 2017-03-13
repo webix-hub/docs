@@ -114,7 +114,12 @@ It is also very easy to apply built-in validation messages for form fields.
 All you need to do is to specify the *invalidMessage* property and set the necessary text of the message:
 
 ~~~js
-{ view:"text", label:'Username', name:"login", invalidMessage: "Login can not be empty" },
+{ 
+	view:"text", 
+    label:"Username", 
+    name:"login", 
+    invalidMessage:"Login can not be empty" 
+}
 ~~~
 
 Validation messages require some space under form fields. You should specify the *bottomPadding* property 
@@ -568,11 +573,16 @@ Input types coincide with the **type** property of the view **text** while other
         </td>
         <td class="col1 leftalign"> 
 ~~~js
-{ view:"text", type:"text", attributes:{
-	maxlength:25,
-	required:"true",
-	title:"First name is required!"
-}, value:'', label:"First Name"}
+{ 	
+	view:"text", 
+    type:"text", attributes:{
+		maxlength:25,
+		required:"true",
+		title:"First name is required!"
+	}, 
+	value:'', 
+    label:"First Name"
+}
 ~~~
         </td>
     </tr>
