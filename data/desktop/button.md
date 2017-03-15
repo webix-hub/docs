@@ -21,7 +21,7 @@ Button
 *Type* property of a button defines the way is looks like: 
 
 - base (**no type**) - default button;
-- **'form'** - a button for a form (darker than standard);
+- **'form'** - a button for a form (green);
 - **'danger'** - a red button to attract user attention;
 - **'prev'** - a button with left arrow;
 - **'next'** - a button with right arrow;
