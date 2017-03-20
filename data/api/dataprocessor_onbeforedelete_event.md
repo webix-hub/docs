@@ -1,14 +1,13 @@
 onBeforeDelete
 =============
 
-@short: fires before sending data for item insertion
+@short: fires before sending data for item deletion
 
 @params:
 - id		id		old id of related item
 - details	object	object which holds state of data saving
 
-@example: 
-	
+@example: 	
 dp.attachEvent("onBeforeDelete", function(id, details){
     //... some code here ... 
 });
@@ -20,10 +19,10 @@ dp.attachEvent("onBeforeDelete", function(id, details){
 
 @descr:
 
-1 . The **id** parameter contains old (clientside) item ID.
+1 . The **id** parameter contains old (client-side) item ID.
 
 2 . The **details** parameter contains data saving details, namely: 
 
 - **data** - data item object;
-- **id** - old (clientside) ID;
+- **id** - old (client-side) ID;
 - **operation** - the type of operation ("delete").
