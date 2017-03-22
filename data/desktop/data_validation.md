@@ -240,8 +240,18 @@ Or, you can attach a rule right in the **input constructor** as value of its **v
 
 ~~~js
 view:"form", elements:[
-	{ view:"text", label:'Is a Number', validate:webix.rules.isNumber, name:"text2" },
-    { view:"text", label:'Is an Email', validate:webix.rules.isEmail, name:"text3" }
+	{ 
+    	view:"text", 
+        label:'Is a Number', 
+        validate:webix.rules.isNumber, 
+        name:"text2" 
+    },
+    { 
+    	view:"text", 
+        label:'Is an Email', 
+        validate:webix.rules.isEmail, 
+        name:"text3" 
+    }
 ],
 elementsConfig:{
 	labelAlign:"right",
@@ -557,38 +567,32 @@ In HTML5 layout input tags come in a plenty of types and feature a number of att
 
 Input types coincide with the **type** property of the view **text** while other input attributes are listed within the **attributes** object property: 
 
-<table>
-    <tr class="row0">
-        <th class="col0 centeralign">  HTML  </th><th class="col1 centeralign">  JavaScript  </th>
-    </tr>
-    <tr class="row1">
-        <td class="col0 leftalign">  
+- **HTML**
+
 ~~~html
 <input type="text" id="text1" 
-	title="First name is required!" 
-    maxlength="25"
-    placeholder="Your name" required>
+  	title="First name is required!" 
+  	maxlength="25"
+  	placeholder="Your name" required>
 <label for="text1">First name</label>
 ~~~
-        </td>
-        <td class="col1 leftalign"> 
+     
+- **JavaScript**
+
 ~~~js
 { 	
-	view:"text", 
-    type:"text", attributes:{
-		maxlength:25,
-		required:"true",
-		title:"First name is required!"
-	}, 
-	value:'', 
-    label:"First Name"
+  	view:"text", 
+  	type:"text", attributes:{
+   		maxlength:25,
+   		required:"true",
+   		title:"First name is required!"
+  	}, 
+  	value:'', 
+  	label:"First Name"
 }
 ~~~
-        </td>
-    </tr>
-</table>
-
-Here validation is defined by **required** attribute.
+     
+Here validation is defined by the **required** attribute.
 
 The validation process starts as soon as you type the first character into the field. When the necessary pattern is observed, a red highlighting disappears. Furthermore, if you try submitting the form, a validation  error
 message appears for each field that has been incorrectly filled: 
