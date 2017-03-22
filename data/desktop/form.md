@@ -25,7 +25,8 @@ UI-related form inherits from [view](desktop/view.md). It resembles [layout](des
 - **columns** - an array of horizontally arranged controls and control groups;
 - **rows** -  an array of vertically arranged controls and control groups.
 
-{{note Please pay attention that in order to interact with controls (set/get values, validate them), you should specify the **name property** for each control.}}
+{{note Please pay attention that in order to interact with controls ([set](api/link/ui.form_setvalues.md)/[get](api/link/ui.form_getvalues.md) values, 
+[validate](api/link/ui.form_validate.md) them), you should specify the **name property** for each control.}}
 
 {{snippet
 Login form
@@ -52,7 +53,7 @@ webix.ui({
 There exists a possibility to specify [common configuration](desktop/common_config.md) for all controls included in this or that form.
 }}
 
-##Settings Initial Values
+##Setting Initial Values
 
 Initial form values can be set in different ways: 
 
@@ -74,7 +75,7 @@ However, this way is not effective while working with the whole form.
 
 **Using setValues API**
 
-To set form values in a scope, you can use its [setValues()](api/link/ui.form_setvalues.md) method. It takes an object with values as first (and mandatory) parameter: 
+To set form values in a scope, you can use its api/link/ui.form_setvalues.md method. It takes an object with values as first (and mandatory) parameter: 
 
 ~~~js
 $$("$form1").setValues({
@@ -304,7 +305,7 @@ var form2 = [
 	{ view:"text", type:'..', value:'..', label:".."},
 ]
 
-form2[i].readonly = true; // where "i" takes the number value of the element starting from 0.
+form2[i].readonly = true; // "i" takes the number value of the element starting from 0
 form2[i].disabled = true; 
 ~~~
 

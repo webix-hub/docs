@@ -37,11 +37,14 @@ $$("$form1").validate();
 @relatedsample:
 	13_form/04_validation/01_basic.html
 @descr:
+{{note
+Note that the **name** property is required for controls, as it allows accessing the field through the form for validation.
+}}
 
 Form is validated according to the rules you ought to define for the necessary form fields. See the [corresponding
 chapter](api/refs/rules.md) of the API reference. 
 
-###Customising validation logic
+###Customizing validation logic
 
 By default values of the hidden and disabled fields are not checked. 
 If you want to include them into validation process, you need to provide a validation mode: 
@@ -51,7 +54,7 @@ If you want to include them into validation process, you need to provide a valid
 $$("$form1").validate({hidden:true});
 
 //both hidden and disabled fields will be validated
-$$("$form1").validate({hidden:true , disabled:true});
+$$("$form1").validate({hidden:true, disabled:true});
 ~~~
 
 Note that if the form is hidden itself, hidden and visible fields are not separated. 

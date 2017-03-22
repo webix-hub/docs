@@ -5,17 +5,17 @@ getValues
 @short: derives input values from the form
 
 @params:
-* details	object, function	additional parameters (described below)
+* details			object|function			additional parameters (described below)
 	
 @returns: 
-values	hash  returns hash of form values: data entered by user or initial data from the value property. 
+values		hash  		returns a hash of form values: data entered by user or initial data from the "value" property
 	
 @example:
 webix.ui({
 	view:"form",
     id:"myform",
     elements:[
-         //name is necessary for getting the control's value
+         // name is necessary for getting the control's value
     	 { view:"text", label:'Login', name:"login"},
     	 { view:"text", label:'Email', name:"email" },
     	 { view:"button", value:"Sumbit"}
@@ -32,11 +32,15 @@ function get_form() {
     api/values_complexdata_config.md
 @related: 
 	desktop/form_tasks.md
+    desktop/form.md#retrievingformvalues
 @relatedsample:
 	13_form/02_api/09_hidden_inputs.html
 
 @template:	api_method
 @descr:
+{{note
+Please note that controls must have the **name** property specified to get their values.
+}}
 
 ###Additonal parameters 
 
@@ -83,7 +87,6 @@ webix.ui({
         {view:"button", click:"get_title"}
     ]
 })
-
 
 function get_title() {
 	var title = $$('myform').getValues().title;
