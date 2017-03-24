@@ -3,6 +3,8 @@ Pivot What's New
 
 ###Version 4.2
 
+<span class="release_date">released on February 23, 2017</span>
+
 New Features
 -------------
 
