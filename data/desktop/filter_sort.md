@@ -183,6 +183,7 @@ There are several types that define the way of sorting depending on the type of 
 - date;
 - string;
 - string_strict (case-sensitive 'string');
+- [text](datatable/sorting.md#visible_text) (visible text including template);
 - [custom sorting type](desktop/filter_sort.md#addingcustomsortingtype).
 
 Two ways of sorting are available for data components:
