@@ -45,6 +45,7 @@ This event can be used to change the default data loading logic:
 tree.attachEvent("onDataRequest", function (id, callback, url) {
   this.parse(
     webix.ajax().get("data/data_dyn_json.php?parent=" + id).then(function (data) {
+      //{ parent: id, data:[ ... ]}
       return data.json();
     })
   );
@@ -52,3 +53,9 @@ tree.attachEvent("onDataRequest", function (id, callback, url) {
   return false;
 });
 ~~~
+
+You need to return the following data object in the handler function for the correct processing: 
+
+- **parent** -  id of the related tree branch 
+- **data** - array of data records
+
