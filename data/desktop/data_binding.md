@@ -20,7 +20,7 @@ In both cases, based on configuration
 When you **bind** data to any component it means that when you **select** an item from one component, this item will be the data source for another component.
 Most typically, binding is used with some data-presenting component and a [form](desktop/form.md) / [htmlform](desktop/htmlform.md). 
 
-When you **sync** data, it means that the whole visible data from one component is at once **copied** to the other. 
+When you **sync** data, it means that all changes in the datastore of one component (such as filtering, sorting. etc.) are **reflected** in the other component at once. 
 
 ##Data Binding
 

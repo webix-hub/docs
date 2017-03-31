@@ -221,27 +221,28 @@ $$(id).refresh();
 ##HTML Containers {#html}
 
 You can set position, style and dimensions of the needed components with the help of JavaScript only (study [Layout](desktop/layout.md) and 
-[Sizing Components](desktop/dimensions.md) articles) or place the into html containers to take the task to CSS. To achieve this, make up an html-layout, set 
-ID to **div** elements and set this ID as the value of the component's container parameter. 
+[Sizing Components](desktop/dimensions.md) articles) or place them into HTML containers to take the task to CSS. 
+
+To achieve this, make up an HTML-layout, set ID to **div** elements and set this ID as the value of the component's container parameter. 
 
 ~~~js
 <body>
 	<div id="dataA" style="width:500px;height:150px;"></div>
 	<div id="dataB" style="width:500px;height:300px;"></div>
 	<script>
-	webix.ui({
-		view:"dataview",
-    	id:"mydataview1",
-		container:"dataA",
-    	...
-	});
+		webix.ui({
+			view:"dataview",
+    		id:"mydataview1",
+			container:"dataA",
+    		...
+		});
 
-	webix.ui({
-		view:"dataview",
-    	id:"mydataview2",
-		container:"dataB",
-    	...
-	});
+		webix.ui({
+			view:"dataview",
+    		id:"mydataview2",
+			container:"dataB",
+    		...
+		});
 	</script>         
 </body>
 ~~~
