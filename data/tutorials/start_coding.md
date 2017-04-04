@@ -15,7 +15,7 @@ choosing components and designing the app to foresee the result and finish it al
 ##Setting the goal {#setgoal}
 
 
-At this stage your should determine the app's functionality and evaluate the means of achieving this goal. You should clearly see the purpose 
+At this stage you should determine the app's functionality and evaluate the means of achieving this goal. You should clearly see the purpose 
 of your future app and try to imagine all possible features it may need to meet the requirements. 
 
 
