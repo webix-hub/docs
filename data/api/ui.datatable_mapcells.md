@@ -25,4 +25,10 @@ grid.mapCells(1, "title", 3, 2, function(value, row_id, column_id, row_ind, col_
 
 @template:	api_method
 @descr: 
+Parameters of the callback function are:
 
+- *value*  - (string|number) the cell value
+- *row_id* - (string|number) the row id
+- *column_id* - (string|number) the column id
+- *row_ind*  -  (number) the row index of a cell within the selected block
+- *col_ind*  -  (number) the column index of a cell within the selected block
