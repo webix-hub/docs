@@ -1,7 +1,7 @@
 Localization
 ===============
 
-By default, all names and titles in Pivot are defined in English, but you can set any other language by specifying a custom locale for the page. 
+By default, all names and titles in Pivot are defined in English, but you can set any other language by specifying a custom locale for the page.
 
 ~~~js
 webix.i18n.pivot = {
@@ -18,8 +18,10 @@ webix.i18n.pivot = {
 	sum: "sum",
 	text: "text",
 	values: "Values",
-    windowTitle: "Pivot Configuration",
-	windowMessage: "[move fields into required sector]"
+  windowTitle: "Pivot Configuration",
+	windowMessage: "[move fields into required sector]",
+	apply: "Apply",
+	cancel: "Cancel"
 };
 
 // and then initialize Pivot and see your custom names
