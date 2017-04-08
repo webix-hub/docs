@@ -126,7 +126,7 @@ The class defines properties, methods, and events related to loading and renderi
 - api/link/ui.proto_data_config.md - JavaScript array containing data for the component
 - api/link/ui.proto_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.proto_datatype_config.md - the type of loaded data
-- api/link/ui.proto_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.proto_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.proto_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.proto_height_config.md - sets the height of the component
 - api/link/ui.proto_hidden_config.md - defines whether the view will be hidden initially

@@ -12,7 +12,7 @@ Properties
 - api/link/ui.colorpicker_click_config.md - click action handler
 - api/link/ui.colorpicker_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.colorpicker_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.colorpicker_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.colorpicker_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.colorpicker_editable_config.md - allows entering characters in datepicker input, false by default
 - api/link/ui.colorpicker_format_config.md - sets date format in the control
 - api/link/ui.colorpicker_gravity_config.md - sets the view gravity (1 by default)

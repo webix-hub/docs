@@ -1,0 +1,1 @@
+@link: api/ui.gage_maxrange_config.md

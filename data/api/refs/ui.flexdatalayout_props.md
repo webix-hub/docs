@@ -11,7 +11,7 @@ Properties
 - api/link/ui.flexdatalayout_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.flexdatalayout_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.flexdatalayout_datatype_config.md - the type of loaded data
-- api/link/ui.flexdatalayout_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.flexdatalayout_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.flexdatalayout_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.flexdatalayout_height_config.md - sets the height of the component
 - api/link/ui.flexdatalayout_hidden_config.md - defines whether the view will be hidden initially

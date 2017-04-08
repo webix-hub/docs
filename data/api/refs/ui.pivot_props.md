@@ -10,7 +10,7 @@ Properties
 - api/link/ui.pivot_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.pivot_data_config.md - JavaScript array containing data for the component
 - api/link/ui.pivot_datatype_config.md - the type of loaded data
-- api/link/ui.pivot_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.pivot_disabled_config.md - indicates whether an item is enabled
 - api/ui.pivot_externalprocessing_config.md - enables external data processing in Pivot
 - api/ui.pivot_fieldmap_config.md - defines custom labels for fields
 - api/ui.pivot_filterlabelalign_config.md - sets the horizontal alignment of the filters' labels in Pivot Chart

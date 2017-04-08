@@ -120,7 +120,7 @@ webix.ui({
 - api/link/ui.daterangesuggest_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.daterangesuggest_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.daterangesuggest_data_config.md - JavaScript array containing data for the component
-- api/link/ui.daterangesuggest_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.daterangesuggest_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.daterangesuggest_filter_config.md - custom filtering function
 - api/link/ui.daterangesuggest_fitmaster_config.md - size suggest box to the master control
 - api/link/ui.daterangesuggest_gravity_config.md - sets the view gravity (1 by default)

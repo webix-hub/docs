@@ -1,0 +1,1 @@
+@link: api/settings_config_other.md

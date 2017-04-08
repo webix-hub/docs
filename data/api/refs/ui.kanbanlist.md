@@ -163,7 +163,7 @@ dummy stub
 - api/link/ui.kanbanlist_datafetch_config.md - defines the number of records that will be loaded during each dynamic loading request
 - api/link/ui.kanbanlist_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.kanbanlist_datatype_config.md - the type of loaded data
-- api/link/ui.kanbanlist_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.kanbanlist_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.kanbanlist_drag_config.md - enables or disables drag-and-drop
 - api/link/ui.kanbanlist_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.kanbanlist_externaldata_config.md - allows defining custom 'move' logic for the component.

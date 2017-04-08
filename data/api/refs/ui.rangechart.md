@@ -156,7 +156,7 @@ var rangechart = webix.ui({
 - api/link/ui.rangechart_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.rangechart_datatype_config.md - the type of loaded data
 - api/link/ui.rangechart_disablelines_config.md - disapbles graph lines with radar chart
-- api/link/ui.rangechart_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.rangechart_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.rangechart_eventradius_config.md - sets the radius (in pixels) of the virtual circle which events will fire for items within
 - api/link/ui.rangechart_fill_config.md - fills the chart area with the specified background color.
 - api/link/ui.rangechart_fixoverflow_config.md - chart max limit mode

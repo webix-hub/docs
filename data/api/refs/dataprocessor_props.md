@@ -3,6 +3,7 @@ Properties
 
 {{api
 - api/dataprocessor_autoupdate_config.md - enables automatic data updating on server while any changes on client-side are done
+- api/dataprocessor_complexdata_config.md - 
 - api/dataprocessor_escape_config.md - custom escaping function
 - api/link/dataprocessor_id_config.md - the component ID
 - api/dataprocessor_master_config.md - the linked data source. It can be both some independent data source and one of components operated on data (e.g. grid)
@@ -19,6 +20,7 @@ Properties
 
 @index:
 - api/dataprocessor_autoupdate_config.md
+- api/dataprocessor_complexdata_config.md
 - api/dataprocessor_escape_config.md
 - api/link/dataprocessor_id_config.md
 - api/dataprocessor_master_config.md

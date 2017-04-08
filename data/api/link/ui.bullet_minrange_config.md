@@ -1,0 +1,1 @@
+@link: api/ui.gage_minrange_config.md

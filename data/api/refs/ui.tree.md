@@ -210,7 +210,7 @@ var tree = webix.ui({
 - api/link/ui.tree_data_config.md - JavaScript array containing data for the component
 - api/link/ui.tree_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.tree_datatype_config.md - the type of loaded data
-- api/link/ui.tree_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.tree_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.tree_drag_config.md - enables or disables drag-and-drop
 - api/link/ui.tree_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.tree_filtermode_config.md - defines the pattern for tree item filtering
@@ -263,7 +263,7 @@ var tree = webix.ui({
 - api/link/ui.tree_$dragout_other.md - method called when item moved out of possible drop landing during dnd
 - api/link/ui.tree_$drop_other.md - method called when item dragged and dropped on valid target
 - api/link/ui.tree_$dropallow_other.md - can be redefined, if you need custom drop rules
-- api/ui.tree_$fixeditor_other.md - 
+- api/ui.tree_$fixeditor_other.md - applies editor adjusting logic to tree
 - api/link/ui.tree_$getsize_other.md - returns the current size of the component
 - api/link/ui.tree_$height_other.md - current height of the view
 - api/link/ui.tree_$scope_other.md - scope for resolving event and method names

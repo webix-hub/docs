@@ -14,7 +14,7 @@ Properties
 - api/link/ui.fileview_datafetch_config.md - defines the number of records that will be loaded during each dynamic loading request
 - api/link/ui.fileview_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.fileview_datatype_config.md - the type of loaded data
-- api/link/ui.fileview_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.fileview_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.fileview_drag_config.md - enables or disables drag-and-drop
 - api/link/ui.fileview_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.fileview_editvalue_config.md - defines which data item is editable (in case of several data item in the cell/line)

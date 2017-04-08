@@ -51,7 +51,7 @@ Methods
 - api/link/ui.kanban_resizechildren.md - resizes all children of the calling component
 - api/ui.kanban_select.md - selects the specified task
 - api/link/ui.kanban_serialize.md - serializes data to a JSON object
-- api/ui.kanban_setindex.md - 
+- api/ui.kanban_setindex.md - sets a new index for an item
 - api/link/ui.kanban_show.md - makes the component visible
 - api/link/ui.kanban_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
 - api/link/ui.kanban_sort.md - sorts datastore

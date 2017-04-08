@@ -94,8 +94,8 @@ var toolbar = webix.ui({
 - api/link/ui.toolbar_onchange_event.md - fires when data in the input of related form/toolbar is changed
 - api/link/ui.toolbar_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.toolbar_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
-- api/link/ui.toolbar_onvalidationerror_event.md - fires when the form fails to pass validation
-- api/link/ui.toolbar_onvalidationsuccess_event.md - fires after the form has passed validation successfully
+- api/link/ui.toolbar_onvalidationerror_event.md - fires when a form input fails to pass validation
+- api/link/ui.toolbar_onvalidationsuccess_event.md - fires after a form input has passed validation successfully
 - api/link/ui.toolbar_onvalues_event.md - fires after values have been set within toolbar or form
 }}
 
@@ -112,7 +112,7 @@ var toolbar = webix.ui({
 - api/link/ui.toolbar_data_config.md - JavaScript array containing data for the component
 - api/link/ui.toolbar_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.toolbar_datatype_config.md - the type of loaded data
-- api/link/ui.toolbar_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.toolbar_disabled_config.md - indicates whether an item is enabled
 - api/ui.toolbar_elements_config.md - collection of subviews
 - api/ui.toolbar_elementsconfig_config.md - settings, which will be applied to all nested inputs
 - api/link/ui.toolbar_gravity_config.md - sets the view gravity (1 by default)

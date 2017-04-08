@@ -116,7 +116,7 @@ webix.ui({
 - api/link/ui.suggest_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.suggest_css_config.md - the name of a css class that will be applied to the view container
 - api/ui.suggest_data_config.md - JavaScript array containing data for the component
-- api/link/ui.suggest_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.suggest_disabled_config.md - indicates whether an item is enabled
 - api/ui.suggest_filter_config.md - custom filtering function
 - api/ui.suggest_fitmaster_config.md - size suggest box to the master control
 - api/link/ui.suggest_gravity_config.md - sets the view gravity (1 by default)

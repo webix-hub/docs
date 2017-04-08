@@ -47,7 +47,7 @@ Methods
 - api/link/treecollection_refreshcursor.md - force repainting of all bound components with current cursor value
 - api/link/treecollection_remove.md - removes the specified item/items from datastore
 - api/link/treecollection_removebind.md - disables data binding
-- api/link/treecollection_savebatch.md - makes simultaneous saving several components
+- api/link/treecollection_savebatch.md - makes simultaneous saving of several components
 - api/link/treecollection_serialize.md - serializes data to a JSON object
 - api/link/treecollection_setbinddata.md - moves data from master to child
 - api/link/treecollection_setcursor.md - sets the position of the cursor

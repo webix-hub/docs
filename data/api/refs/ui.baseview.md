@@ -49,7 +49,7 @@ The component serves as the base class that defines properties, methods, and eve
 - api/ui.baseview_borderless_config.md - used to hide the component borders
 - api/ui.baseview_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/ui.baseview_css_config.md - the name of a css class that will be applied to the view container
-- api/ui.baseview_disabled_config.md - indicates whether an item is enabled or not
+- api/ui.baseview_disabled_config.md - indicates whether an item is enabled
 - api/ui.baseview_gravity_config.md - sets the view gravity (1 by default)
 - api/ui.baseview_height_config.md - sets the height of the component
 - api/ui.baseview_hidden_config.md - defines whether the view will be hidden initially

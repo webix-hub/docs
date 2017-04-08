@@ -108,7 +108,7 @@ var accordionitem = webix.ui({
 - api/ui.accordionitem_collapsed_config.md - displays the cell collapsed initially
 - api/link/ui.accordionitem_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.accordionitem_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.accordionitem_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.accordionitem_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.accordionitem_gravity_config.md - sets the view gravity (1 by default)
 - api/ui.accordionitem_header_config.md - sets the label of the header in the expanded state
 - api/ui.accordionitem_headeralt_config.md - sets the label of the header in the collapsed state
