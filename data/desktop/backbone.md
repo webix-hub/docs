@@ -30,14 +30,14 @@ To integrate Backbone framework into your webpage your should include links to i
 are stored on your machine. The important point - library need to be included BEFORE webix.js: 
 
 ~~~html
-<head>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-  <script type="text/javascript" src="./common/underscore.js"></script>
-  <script type="text/javascript" src="./common/backbone.js"></script>
+<script type="text/javascript" 
+	src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="./common/underscore.js"></script>
+<script type="text/javascript" src="./common/backbone.js"></script>
 
-  <link rel="stylesheet" href="../../codebase/webix.css" type="text/css" media="screen" charset="utf-8">
-  <script src="../../codebase/webix.js" type="text/javascript" charset="utf-8"></script>
-</head>
+<link rel="stylesheet" href="../../codebase/webix.css" type="text/css" 
+	media="screen" charset="utf-8">
+<script src="../../codebase/webix.js" type="text/javascript" charset="utf-8"></script>
 ~~~
 
 
@@ -75,7 +75,7 @@ var view  = new WebixView({
 }).render();
 ~~~
 
-{{sample 30_backbone/01_view.html}}
+**Related sample:** [View](https://webix-hub.github.io/webix-backbone/samples/01_view.html)
 
 In the code above Webix [layout](desktop/layout.md) with 3 rows and columns in the second row is created. It is rendered to a div block with *"app1_here"* class. As a rule, views should be **manually rendered** 
 with a dedicated function. 
@@ -117,7 +117,7 @@ films.fetch();
 $$("mylist").sync(films);
 ~~~
 
-{{sample 30_backbone/03_load_collection.html }}
+**Related sample:** [Loading data from Collection](https://webix-hub.github.io/webix-backbone/samples/03_load_collection.html)
 
 The code above renders [list](desktop/list.md) view and fills it with data from FilmList Collection that is comprised of FirmRecord Models.
 

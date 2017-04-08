@@ -10,7 +10,7 @@ integrated applications.
 <button ng-click="changeLine('line')">Show Line Chart</button>
 ~~~
 
-{{sample 33_angular/03_chart.html }}
+**Related sample:** [Webix-Angular:Chart](https://webix-hub.github.io/webix-angular/samples/03_chart.html)
 
 At the same time, Webix library offers a set component-specific events such as **onItemClick**, **onSelectChange**, **onAfterTabClick**, etc that cannot be handled by Angular means. 
 
@@ -56,7 +56,7 @@ app.controller("webixTestController", function($scope){
 });
 ~~~
 
-{{sample 33_angular/04_events.html }}
+**Related sample:** [Webix-Angular:Events](https://webix-hub.github.io/webix-angular/samples/04_events.html)
 
 Note that the function called by *webix-event* directive is limited to have only **two parameters**:
 
@@ -130,6 +130,6 @@ app.controller("webixTestController", function($scope){
 
 Study the sample to see how it works:
 
-{{sample 33_angular/04_events.html}}
+**Related sample:** [Webix-Angular:Events](https://webix-hub.github.io/webix-angular/samples/04_events.html)
 
 
