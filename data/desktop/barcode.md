@@ -52,7 +52,6 @@ Next, you should create a div container to place your barcode into.
 ~~~
 
 
-
 Now you can initialize the component.
 To create a new Barcode object, you need to use the next constructor:
 

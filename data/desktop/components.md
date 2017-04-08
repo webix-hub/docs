@@ -1,5 +1,6 @@
 UI Widgets
 ==================
+
 The <a title="ui library" href="http://webix.com">Webix UI library</a> supplies over 80 fully customizable widgets and controls
 to help you build interfaces of different kinds, nicely present data and work with it. 
 There are also helpful extensions, integrations with <br> third-party tools and specific features to make your applications 
@@ -69,6 +70,12 @@ Such widgets manage the space allocated for their data and provide functionality
 			<br>DataView
 		</a>
     </div>
+     <div>
+		<a href="desktop/double_list.md">
+			<img src="desktop/icons/double_list.png"/>
+			<br>DoubleList
+		</a>
+    </div>
     <div>
 		<a href="desktop/grouplist.md">
 			<img src="desktop/icons/grouplist.png"/>
@@ -113,6 +120,12 @@ Visualization widgets provide the possibility to display data in various forms. 
 
 <div class="components_group" style="padding-left:50px;">
 	<div>
+		<a href="desktop/bullet_graph.md">
+			<img src="desktop/icons/bulletgraph.png"/>
+			<br>BulletGraph
+		</a>
+    </div>
+	<div>
 		<a href="desktop/chart.md">
 			<img src="desktop/icons/chart.png"/>
 			<br>Chart
@@ -124,16 +137,16 @@ Visualization widgets provide the possibility to display data in various forms. 
 			<br>Gage
 		</a>
     </div>
-	<div>
-		<a href="desktop/range_chart.md">
-			<img src="desktop/icons/rangechart.png"/>
-			<br>RangeChart
-		</a>
-    </div>
     <div>
 		<a href="desktop/organogram.md">
 			<img src="desktop/icons/organogram.png"/>
 			<br>Organogram
+		</a>
+    </div>
+    <div>
+		<a href="desktop/range_chart.md">
+			<img src="desktop/icons/rangechart.png"/>
+			<br>RangeChart
 		</a>
     </div>
     <div>
@@ -276,15 +289,15 @@ HTML-oriented widgets supply handy means for using habitual HTML elements in an 
 		</a>
     </div>
     <div>
-		<a href="desktop/video.md">
-			<img src="desktop/icons/video.png"/>
-			<br>Video
-		</a>
-    </div>
-    <div>
 		<a href="desktop/template.md">
 			<img src="desktop/icons/template.png"/>
 			<br>Template
+		</a>
+    </div>
+    <div>
+		<a href="desktop/video.md">
+			<img src="desktop/icons/video.png"/>
+			<br>Video
 		</a>
     </div>
 </div>
@@ -445,6 +458,7 @@ div.controls_group img {
 @index:
 - desktop/accordion.md
 - desktop/barcode.md
+- desktop/bullet_graph.md
 - desktop/calendar.md
 - desktop/carousel.md
 - desktop/chart.md
@@ -454,6 +468,7 @@ div.controls_group img {
 - datatable/index.md
 - desktop/dataview.md
 - desktop/daterange.md
+- desktop/double_list.md
 - desktop/excelviewer.md
 - desktop/form.md
 - desktop/controls.md
