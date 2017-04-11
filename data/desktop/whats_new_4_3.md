@@ -23,7 +23,7 @@ Updates
 -------
 
 - ability to define columns as plain array in export options
-- ability to set and get milliseconds while parsing dates with webix.Date helper
+- ability to set and get milliseconds while [parsing dates](helpers/date_formatting_methods.md) with webix.Date helper
 - 'shift+enter' support for popup editor to enter multiline text
 - ability to use custom map source for Googlemap
 - autoheight for Datatable header lines
