@@ -16,7 +16,7 @@ New Features
 - [Bullet Graph](desktop/bullet_graph.md) as a combination of a chart(gage?) and a progress bar (PRO edition)
 - Form Input control that allows rendering form components in the common style
 - Webix+React integration demo
-- webix.stringify helper
+- [webix.stringify](api/_stringify.md) helper
 
 
 Updates
