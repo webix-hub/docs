@@ -15,7 +15,7 @@ webix.ui({
 	view:"bullet", 
 	value:40, 
 	barWidth:25, 
-    height: 45
+    height:45
 });
 
 

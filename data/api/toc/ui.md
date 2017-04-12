@@ -90,6 +90,11 @@ table.webixtoc td{
         <td> a widget for displaying data in a tabular format </td>
     </tr>
     <tr>
+    	<td> <img src="api/toc/doublelist.png"/> </td>
+        <td> api/refs/ui.dbllist.md </td>
+        <td> a double list that provides rich selection possibilities</td>
+    </tr>
+    <tr>
     	<td> <img src="api/toc/gage.png"/> </td>
         <td> api/refs/ui.gage.md </td>
         <td> a gage widget with a dial to visualize data updates</td>
@@ -512,6 +517,7 @@ table.webixtoc td{
 - api/refs/ui.daterangepicker.md
 - api/refs/ui.daterangesuggest.md
 - api/refs/ui.datepicker.md
+- api/refs/ui.dbllist.md
 - api/refs/ui.fieldset.md
 - api/refs/ui.filemanager.md
 - api/refs/ui.form.md

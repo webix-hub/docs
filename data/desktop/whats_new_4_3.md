@@ -12,8 +12,8 @@ Integration adapters are extracted to separate repositories
 New Features
 ---------------
 
-- DoubleList widget with customizable buttons
-- [Bullet Graph](desktop/bullet_graph.md) as a combination of a chart(gage?) and a progress bar (PRO edition)
+- [Double List](desktop/double_list.md) widget with customizable buttons
+- [Bullet Graph](desktop/bullet_graph.md) as a compact version of Gage to show more information in a limited space (PRO edition)
 - Form Input control that allows rendering form components in the common style
 - Webix+React integration demo
 - [webix.stringify](api/_stringify.md) helper

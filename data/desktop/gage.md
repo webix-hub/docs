@@ -41,7 +41,7 @@ webix.ui({
 - **value** - (number) the initial value of the Gage widget. It should be set within the range of the *minRange* and *maxRange* parameters' values or equal to one of them.
 - **minRange** - (number) the maximum range value of the Gage scale. 0 by default
 - **maxRange** - (number) the maximum range value of the Gage scale. 100 by default 
-- **label** - (string) the text label of a control
+- **label** - (string) the text label of the control
 - **placeholder** - (string) the text placeholder for the measurement unit of the Gage widget
 - **smoothFlow** - (boolean) defines whether the change of values in the Gage will flow with smooth animation. *True* by default
 - **stroke** (number) - defines the width of the gage scale

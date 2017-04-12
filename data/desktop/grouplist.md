@@ -158,8 +158,9 @@ Note that there's no built-in possibility to edit data with GroupList. You shoul
 - [Sizing Components](desktop/dimensions.md)
 - [Resizing](desktop/resizing.md)
 - [Redefinition of the Components](desktop/redefinition.md)
+- [GroupList CSS Image Map](desktop/grouplist_css.md)
 - [List](desktop/list.md)
 - [UnitList](desktop/unitlist.md)
-- [X-list](desktop/xlist.md)
-- [GroupList CSS Image Map](desktop/grouplist_css.md)
+- [X-List](desktop/xlist.md)
+- [Double List](desktop/double_list.md)
 

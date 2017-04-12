@@ -8,7 +8,7 @@ Bullet Graph
 
 ##Overview
 
-The BulletGraph widget presents a combination of a Gage and a progress bar. It is intended for comparing a dynamically changed value displayed by a moving horizontal bar 
+The Bullet Graph widget presents a more compact version of the Gage widget. It is intended for comparing a dynamically changed value displayed by a moving horizontal bar 
 to a static value (target) set as a vertical line and relate both to qualitative ranges of performance (e.g. poor, satisfactory, and good). 
 
 <br>
@@ -74,10 +74,26 @@ webix.ui({
 60_pro/16_bulletgraph/01_init.html
 }}
 
+**Main properties**
 
+- **value** - (number) the initial value of Bullet Graph. It should be set within the range of the *minRange* and *maxRange* parameters' values or equal to one of them.
+- **minRange** - (number) the maximum range value of the Bullet Graph scale
+- **maxRange** - (number) the maximum range value of the Bullet Graph scale
+- **bands** - (array) the set of value and color values for ranges of performance used in the widget. The default set is as follows:
+~~~js
+bands:[
+	{ value:100, color:"#5be5d6"},
+	{ value:80, color:"#fff07e" },
+	{ value:60, color:"#fd8b8c" } 
+]
+~~~
+- **label** - (string) the text label of the widget
+- **placeholder** - (string) additional description for the widget's label or value
+- **marker** - (number|false) defines whether the marker of the target value will be rendered on the scale, *false* by default
+- **stroke** (number) - the width of the bullet graph bar. The default value is 8.
+- **scale** (object) - defines the size of the bullet graph scale. The default value is *scale:{step:10}*
 
-
-
+The full list of available configuration properties is given in the [Bullet Graph API](api/refs/ui.bullet.md).
 
 
 
