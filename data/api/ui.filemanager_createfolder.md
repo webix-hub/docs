@@ -19,3 +19,9 @@ fmanager.createFolder(targetId);
 
 @relatedapi:
 api/ui.filemanager_onbeforecreatefolder_event.md
+api/ui.filemanager_onaftercreatefolder_event.md
+
+
+@related:
+file_manager/manipulating_items.md
+<a href="file_manager/configuration.md#actionsmenu">Actions Menu</a>

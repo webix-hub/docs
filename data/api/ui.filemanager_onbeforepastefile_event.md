@@ -21,8 +21,9 @@ $$("fmanager").attachEvent("onBeforePasteFile", function(id){
 @descr:
 
 @relatedapi:
+api/ui.filemanager_onafterpastefile_event.md
 api/ui.filemanager_pastefile.md
 
-@relatedsample:
 
+@relatedsample:
 64_file_manager/02_events/05_copy.html

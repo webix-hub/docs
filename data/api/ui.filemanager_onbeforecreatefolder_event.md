@@ -25,3 +25,5 @@ $$("fmanager").attachEvent("onBeforeCreateFolder",function(id){
 
 @relatedapi:
 api/ui.filemanager_createfolder.md
+api/ui.filemanager_onaftercreatefolder_event.md
+

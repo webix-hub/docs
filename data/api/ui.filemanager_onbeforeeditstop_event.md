@@ -31,3 +31,7 @@ $$("fmanager").attachEvent("onBeforeEditStop",function(id,state,editor,view){
 
 @relatedapi:
 api/ui.filemanager_onaftereditstop_event.md
+api/ui.filemanager_onbeforeeditfile_event.md
+api/ui.filemanager_onaftereditfile_event.md
+api/ui.filemanager_editfile.md
+

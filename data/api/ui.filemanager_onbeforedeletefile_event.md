@@ -23,4 +23,6 @@ $$("fmanager").attachEvent("onBeforeDeleteFile",function(id){
 
 @relatedapi:
 api/ui.filemanager_deletefile.md
+api/ui.filemanager_onafterdeletefile_event.md
+
 

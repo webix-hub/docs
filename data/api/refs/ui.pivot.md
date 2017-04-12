@@ -125,7 +125,7 @@ var pivot = webix.ui({
 - api/ui.pivot_onfilterchange_event.md - 
 - api/ui.pivot_onfiltercreate_event.md - fires each time a filter is created
 - api/ui.pivot_onheaderinit_event.md - fires when pivot header is initialized
-- api/ui.pivot_onitemclick_event.md - 
+- api/ui.pivot_onitemclick_event.md - fires when an item is clicked
 - api/link/ui.pivot_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/ui.pivot_onpopup_event.md - fires after a configuration window for Pivot is created
 - api/ui.pivot_onviewinit_event.md - fires before inner view initialization
