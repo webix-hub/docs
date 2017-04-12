@@ -97,8 +97,8 @@ var form = webix.ui({
 - api/link/ui.form_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.form_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/ui.form_onsubmit_event.md - fires when enter key is pressed for a focused control in the form
-- api/link/ui.form_onvalidationerror_event.md - fires when the form fails to pass validation
-- api/link/ui.form_onvalidationsuccess_event.md - fires after the form has passed validation successfully
+- api/link/ui.form_onvalidationerror_event.md - fires when a form input fails to pass validation
+- api/link/ui.form_onvalidationsuccess_event.md - fires after a form input has passed validation successfully
 - api/link/ui.form_onvalues_event.md - fires after values have been set within toolbar or form
 }}
 

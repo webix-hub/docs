@@ -30,7 +30,7 @@ To render view somewhere on the page you should call:
 myview.render();
 ~~~
 
-{{sample 30_backbone/01_view.html}}
+**Related sample:** [View](https://webix-hub.github.io/webix-backbone/samples/01_view.html)
 
 ###Isolating Views
 
@@ -67,7 +67,7 @@ $(".app1_here").webix_list({
 });
 ~~~
 
-{{sample 30_backbone/03_load_collection.html }}
+**Related sample:** [Loading data from Collection](https://webix-hub.github.io/webix-backbone/samples/03_load_collection.html)
 
 ### Predefined methods of view
 
@@ -122,7 +122,7 @@ var v2 = new cView();
 - **getChild** method is used here to get layout child with "left" ID;
 - **setContent(content)** method of Webix view is used here to attach Backbone View to template.
 
-{{sample 30_backbone/02_nested_views.html }}
+**Related sample:** [Nested Views](https://webix-hub.github.io/webix-backbone/samples/02_nested_views.html)
 
 ### Nesting Webix view into another Webix view
 
@@ -144,7 +144,7 @@ var v3 = new WebixView({
 	v3.render();
 ~~~
 
-{{sample 30_backbone/02_nested_views.html }}
+**Related sample:** [Nested Views](https://webix-hub.github.io/webix-backbone/samples/02_nested_views.html)
 
 The place where a UI component need to be attached is defined through "el". New view (*v3*) will replace the child of *v1* view. 
 
@@ -192,7 +192,7 @@ MyView = WebixView.extend({
 });
 ~~~
 
-{{sample 30_backbone/05_views_models.html }}
+**Related sample:** [Views and Models](https://webix-hub.github.io/webix-backbone/samples/05_views_models.html)
 
 Webix event handling pattern is described in the corresponding [documentation article](desktop/event_handling.md). 
 

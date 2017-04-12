@@ -33,7 +33,7 @@ var list = $(".app1_here").webix_list({
 list.sync(films);
 ~~~
 
-{{sample 30_backbone/03_load_collection.html }}
+**Related sample:** [Loading data from Collection](https://webix-hub.github.io/webix-backbone/samples/03_load_collection.html)
 
 {{snippet
 By creating a Backbone view that houses this component
@@ -58,7 +58,7 @@ new MyView({
 }).render();
 ~~~
 
-{{sample 30_backbone/05_views_models.html }}
+**Related sample:** [Views and Models](https://webix-hub.github.io/webix-backbone/samples/05_views_models.html)
 
 
 After executing the [sync](api/link/dataloader_sync.md) command any changes to the *"films"* collection will be reflected in the [list](desktop/list.md).
@@ -81,12 +81,13 @@ films.on("webix:remove", function(model){
 });
 ~~~
 
-{{sample 30_backbone/04_save_collection.html }}
+**Related sample:** [Saving data from collection](https://webix-hub.github.io/webix-backbone/samples/04_save_collection.html)
 
 
 ### Loading data in Form
 
-Not all Webix components can work with Backbone Collections directly. Components that represent only one model can't use sync API, so instead of it you can use [parse](api/link/dataloader_parse.md) method to load data to them:
+Not all Webix components can work with Backbone Collections directly. Components that represent only one model can't use sync API, so instead of it you can use
+[parse](api/link/dataloader_parse.md) method to load data to them:
 
 ~~~js
 $$("form").parse( films.first().toJSON());
@@ -125,5 +126,5 @@ This is how these functions are triggered in the app:
 <input type="button" value="Delete first" onclick='films.deleteFirst()'>
 ~~~
 
-{{sample 30_backbone/04_save_collection.html }}
+**Related sample:** [Saving data from collection](https://webix-hub.github.io/webix-backbone/samples/04_save_collection.html)
 

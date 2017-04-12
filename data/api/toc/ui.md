@@ -70,6 +70,11 @@ table.webixtoc td{
 <table class='webixtoc'>
 	<tbody>
     <tr>
+    	<td style="width:25px;">  <img src="api/toc/bulletgraph.png"/> </td>
+        <td style="width:110px !important;">api/refs/ui.bullet.md </td>
+        <td> a compact chart variation for displaying value comparison</td>
+    </tr>
+    <tr>
     	<td style="width:25px;">  <img src="api/toc/chart.png"/> </td>
         <td style="width:110px !important;">api/refs/ui.chart.md </td>
         <td> a tool for creating various charts</td>
@@ -83,6 +88,11 @@ table.webixtoc td{
     	<td> <img src="api/toc/dataview.png"/> </td>
         <td> api/refs/ui.dataview.md </td>
         <td> a widget for displaying data in a tabular format </td>
+    </tr>
+    <tr>
+    	<td> <img src="api/toc/doublelist.png"/> </td>
+        <td> api/refs/ui.dbllist.md </td>
+        <td> a double list that provides rich selection possibilities</td>
     </tr>
     <tr>
     	<td> <img src="api/toc/gage.png"/> </td>
@@ -487,6 +497,7 @@ table.webixtoc td{
 - api/refs/ui.accordion.md
 - api/refs/ui.accordionitem.md
 - api/refs/ui.barcode.md
+- api/refs/ui.bullet.md
 - api/refs/ui.button.md
 - api/refs/ui.calendar.md
 - api/refs/ui.carousel.md
@@ -506,6 +517,7 @@ table.webixtoc td{
 - api/refs/ui.daterangepicker.md
 - api/refs/ui.daterangesuggest.md
 - api/refs/ui.datepicker.md
+- api/refs/ui.dbllist.md
 - api/refs/ui.fieldset.md
 - api/refs/ui.filemanager.md
 - api/refs/ui.form.md

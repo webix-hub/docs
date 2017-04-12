@@ -248,7 +248,8 @@ You can provide a behavior when the user could drag items only by the certain sp
 To achieve such a behavior, just follow this plan:
 
 - Specify an element you want an item to be dragged by. 
-- Set this element as the target object for the api/dragitem_onbeforedrop_event.md event (the target object is an object on which the event will occur).
+- Set this element as the target object for the api/dragitem_onbeforedrag_event.md event 
+(to check, whether the clicked item corresponds to the drag handle you have specified).
 
 ~~~css
 .webix_drag_handle{
@@ -259,7 +260,6 @@ To achieve such a behavior, just follow this plan:
 
 
 ~~~js
-
 var dtable = new webix.ui({
     view:"datatable",
     //...

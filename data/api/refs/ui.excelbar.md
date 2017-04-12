@@ -80,8 +80,8 @@ dummy stub
 - api/link/ui.excelbar_onchange_event.md - fires when data in the input of related form/toolbar is changed
 - api/link/ui.excelbar_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.excelbar_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
-- api/link/ui.excelbar_onvalidationerror_event.md - fires when the form fails to pass validation
-- api/link/ui.excelbar_onvalidationsuccess_event.md - fires after the form has passed validation successfully
+- api/link/ui.excelbar_onvalidationerror_event.md - fires when a form input fails to pass validation
+- api/link/ui.excelbar_onvalidationsuccess_event.md - fires after a form input has passed validation successfully
 - api/link/ui.excelbar_onvalues_event.md - fires after values have been set within toolbar or form
 }}
 

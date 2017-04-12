@@ -45,8 +45,10 @@ var app = angular.module('webixApp', [ "webix" ]);
 
 app.controller("webixTestController", function($scope){
   $scope.records = [
-  	{ id:1, title:"The Shawshank Redemption", year:1994, votes:678790, rating:9.2, rank:1},
-	{ id:2, title:"The Godfather", year:1972, votes:511495, rating:9.2, rank:2},
+  	{ id:1, title:"The Shawshank Redemption", 
+    	year:1994, votes:678790, rating:9.2, rank:1},
+	{ id:2, title:"The Godfather", year:1972, 
+    	votes:511495, rating:9.2, rank:2},
 	...
   ];
   
@@ -60,11 +62,11 @@ app.controller("webixTestController", function($scope){
   };
 ~~~
 
-{{sample 33_angular/02_grid.html}}
+**Related sample:** [Webix-Angular:Grid](https://webix-hub.github.io/webix-angular/samples/02_grid.html)
 
 As you might have already noticed in the code above, all data manipulations with datatable data are done by **changing scope dataset**. In HTML, the **addRecords()** function is called by an **ng-click** directive:
 
-~~~js
+~~~html
 <body ng-controller="webixTestController"> <!--Angular controller-->
   <div webix-ui view="datatable" webix-data="records" select="row"> <!--Webix App-->
   	...<!--datatable config-->
@@ -78,11 +80,12 @@ Datatable data will be updated the moment **$scope.records** is changed, which i
 
 To comply with Angular concept, **any function** you use with this or that component **should be stored in the app's controller**, even if it is the **component's own method**.
 
-~~~js
+~~~html
 <body ng-controller="webixTestController">
 
 	<div style="width:500px; height:200px;">
-  	<div webix-ui view="chart" id="mychart" webix-data="lines" type="bar" value="#sales#" borderless="true"></div>
+  	<div webix-ui view="chart" id="mychart" webix-data="lines" 
+    	type="bar" value="#sales#" borderless="true"></div>
 	</div>
 
 	<button ng-click="changeLine('line')">Show Line Chart</button>
@@ -109,7 +112,7 @@ Controller Code
   };
 ~~~
 
-{{sample 33_angular/03_chart.html }}
+**Related sample:** [Webix-Angular:Chart](https://webix-hub.github.io/webix-angular/samples/03_chart.html)
 
 
 

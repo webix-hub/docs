@@ -24,7 +24,8 @@ For this purpose, DataTable provides 5 sorting types to ensure correct sorting o
 2. *date*;
 3. *string*;
 4. *string_strict* (case-sensitive 'string');
-5. [custom sorting type](datatable/sorting.md#addingcustomsortingtype).
+5. [*text*](datatable/sorting.md#visible_text) (visible text including template);
+6. [custom sorting type](datatable/sorting.md#addingcustomsortingtype).
 
 To enable sorting and assign the appropriate sorting type to a column, you should specify the **sort** attribute among the 
 [column's parameters](api/ui.datatable_columns_config.md) and set it to some of types.
@@ -64,7 +65,7 @@ In the sample column  below option IDs are sorted, yet option values are display
 ~~~
 
 
-###Sorting by visible text
+<h3 id="visible_text">Sorting by visible text</h3>
 
 Sorting by visible text is enabled with the help of the **"text"** sorting mode that switches on **string** comparison for the values actually displayed in datatable columns. 
 

@@ -2,7 +2,7 @@ onValidationError
 =============
 
 
-@short: fires when the form fails to pass validation
+@short: fires when a form input fails to pass validation
 	
 
 @params:
@@ -10,10 +10,10 @@ onValidationError
 - obj	object	data object 
 
 @example: 
-	
-view:"form",    
-on:{
-	onValidationError:function(key, obj){
+webix.ui({
+	view:"form",    
+	on:{
+		onValidationError:function(key, obj){
 		var text;
 
 		if (key == "login")
@@ -23,7 +23,7 @@ on:{
 
 		webix.message({ type:"error", text:text });
 	}
-}
+});
 
 @template:	api_event
 

@@ -44,7 +44,7 @@ The lib can execute **get** and **post** requests in sync and async mode. For mo
 
 
 {{api
-- api/ajax_master_other.md - return a master component for the ajax request
+- api/ajax_master_other.md - returns a master component for the AJAX request
 }}
 
 

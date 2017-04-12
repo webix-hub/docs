@@ -18,11 +18,15 @@ radio buttons alongside with submit/cancel buttons depending on the situation. F
 <br>
 
 ##Initialization
-Ui-related form inherits from [view](desktop/view.md). It resembles [layout](desktop/layout.md) very much as it is divided into columns and rows where controls are put. 
+
+UI-related form inherits from [view](desktop/view.md). It resembles [layout](desktop/layout.md) very much as it is divided into columns and rows where controls are put. 
 
 - **elements** - the form's specific property, an array of vertically arranged controls and control groups;
 - **columns** - an array of horizontally arranged controls and control groups;
 - **rows** -  an array of vertically arranged controls and control groups.
+
+{{note Please pay attention that in order to interact with controls ([set](api/link/ui.form_setvalues.md)/[get](api/link/ui.form_getvalues.md) values, 
+[validate](api/link/ui.form_validate.md) them), you should specify the **name property** for each control.}}
 
 {{snippet
 Login form
@@ -33,22 +37,23 @@ webix.ui({
     id:"log_form",
   	width:300,
 	elements:[
-		{ view:"text", label:"Email"},
-		{ view:"text", type:"password", label:"Password"},
+		{ view:"text", label:"Email", name:"email"},
+		{ view:"text", type:"password", label:"Password", name:"password"},
 		{ margin:5, cols:[
-			{ view:"button", value:"Login" , type:"form" },
-			{ view:"button", value:"Cancel" }
+			{ view:"button", value:"Login" , type:"form"},
+			{ view:"button", value:"Cancel"}
 		]}
 		]
 	});
 ~~~
 {{sample 13_form/02_api/01_basic.html }}
 
+
 {{note
 There exists a possibility to specify [common configuration](desktop/common_config.md) for all controls included in this or that form.
 }}
 
-##Settings Initial Values
+##Setting Initial Values
 
 Initial form values can be set in different ways: 
 
@@ -70,7 +75,7 @@ However, this way is not effective while working with the whole form.
 
 **Using setValues API**
 
- To set form values in a scope, you can use its [setValues()](api/link/ui.form_setvalues.md) method. It takes an object with values as first (and mandatory) parameter: 
+To set form values in a scope, you can use its api/link/ui.form_setvalues.md method. It takes an object with values as first (and mandatory) parameter: 
 
 ~~~js
 $$("$form1").setValues({
@@ -266,7 +271,7 @@ var login = form1[0].login;// returns current input value;
 var button = form1[2].submit; //returns "Submit";
 ~~~
 
-Or, you can apply **getValue()** method directly to the needed control:
+Or, you can apply the **getValue()** method directly to the needed control:
 
 ~~~js
 $$("log").getValue();
@@ -280,13 +285,13 @@ To get to the necessary value, you should specify the **name** of the needed con
 ~~~js
 var values = $$("my_form").getValues(); //returns { login:"", email:"", submit:"" }
 
-values.login; //returns current value of the text input field 
+values.login; // returns current value of the text input field 
 ~~~
 
 Additionally, you can get only **changed** and **unchanged** form values with the following methods respectively:
 
 - api/link/ui.form_getdirtyvalues.md - returns a hash of changed values;
-- api/link/ui.form_getcleanvalues.md - return hash of unchanged values.
+- api/link/ui.form_getcleanvalues.md - returns a hash of unchanged values.
 
 
 ##Disabling Form Elements
@@ -300,7 +305,7 @@ var form2 = [
 	{ view:"text", type:'..', value:'..', label:".."},
 ]
 
-form2[i].readonly = true; // where "i" takes the number value of the element starting from 0.
+form2[i].readonly = true; // "i" takes the number value of the element starting from 0
 form2[i].disabled = true; 
 ~~~
 

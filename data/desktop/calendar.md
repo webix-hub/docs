@@ -26,8 +26,7 @@ webix.ui({
     id:"my_calendar",
 	date:new Date(2012,3,16),
 	weekHeader:true,
-	events:webix.Date.isHoliday, 
-    calendarDateFormat: "%Y-%m-%d",
+	events:webix.Date.isHoliday,
     width:300,
 	height:250
 });

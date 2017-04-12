@@ -36,6 +36,7 @@ Methods
 - api/_require.md - includes and caches a Javascript module
 - api/_send.md - sends an HTTP request to the server (emulates submitting a form)
 - api/_single.md - implements the singleton pattern
+- api/_stringify.md - 
 - api/_template.md - converts string to templating function
 - api/_toarray.md - extends the passed array with the methods of the api/refs/powerarray.md library
 - api/_tocsv.md - exports data of a data component to a CSV document
@@ -86,6 +87,7 @@ Methods
 - api/_require.md
 - api/_send.md
 - api/_single.md
+- api/_stringify.md
 - api/_template.md
 - api/_toarray.md
 - api/_tocsv.md

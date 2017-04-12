@@ -2,6 +2,7 @@ Properties
 ==========
 
 {{api
+- api/ui.fieldset_$cssname_config.md - 
 - api/link/ui.fieldset_animate_config.md - defines or disables view change animation.
 - api/ui.fieldset_body_config.md - config for sub-view of fieldset
 - api/link/ui.fieldset_borderless_config.md - used to hide the component borders
@@ -17,10 +18,13 @@ Properties
 - api/link/ui.fieldset_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.fieldset_minheight_config.md - sets the minimal height for the view
 - api/link/ui.fieldset_minwidth_config.md - sets the minimal width for the view
+- api/ui.fieldset_paddingx_config.md - 
+- api/ui.fieldset_paddingy_config.md - 
 - api/link/ui.fieldset_width_config.md - sets the width of the component
 }}
 
 @index:
+- api/ui.fieldset_$cssname_config.md
 - api/link/ui.fieldset_animate_config.md
 - api/ui.fieldset_body_config.md
 - api/link/ui.fieldset_borderless_config.md
@@ -36,5 +40,7 @@ Properties
 - api/link/ui.fieldset_maxwidth_config.md
 - api/link/ui.fieldset_minheight_config.md
 - api/link/ui.fieldset_minwidth_config.md
+- api/ui.fieldset_paddingx_config.md
+- api/ui.fieldset_paddingy_config.md
 - api/link/ui.fieldset_width_config.md
 

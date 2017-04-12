@@ -4,7 +4,7 @@ setValues
 @short: sets values into the inputs of a form/toolbar/property sheet control
 	
 @params: 
-- values		object		hash of property - value pairs
+- values		object		hash of "property:value" pairs
 * update		boolean		if true, updates the form with new values while existing values remain. False by default
 
 @example:
@@ -29,6 +29,7 @@ function set_form(){
     api/values_complexdata_config.md
 @related: 
 	desktop/form_tasks.md
+    
 @relatedsample:
 	13_form/02_api/09_hidden_inputs.html
     13_form/02_api/14_complex_values.html
@@ -36,8 +37,9 @@ function set_form(){
 @template:	api_method
 @descr:
 
-The methods allows for setting several values at time. Pass the 
-**IDs** of the necessary elements and their values into the function. 
+The method allows setting several values at a time. 
+Pass the **IDs** of the necessary elements and their values into the function.  
+
 
 ##Complex Data
 

@@ -2,15 +2,19 @@ onValidationSuccess
 =============
 
 
-@short: fires after the form has passed validation successfully
+@short: fires after a form input has passed validation successfully
 	
 
 @params:
 
+- key	string	data key that is being validated
+- obj	object	data object 
+
+
 @example: 
 	
-dp.attachEvent("onValidationSuccess", function(){
-    //... some code here ... 
+$$("form1").attachEvent("onValidationSuccess", function(key,object){
+    webix.message("The value entered into the" + key + "input is correct")
 });
 
 @template:	api_event
