@@ -6,24 +6,25 @@ mapSelection
 	
 
 @params:
-- callback  function  the callback function
+- callback  	function  	the callback function
 
 
 @example:
-//uppercase selected cells
-dtable.mapSelection(function(value){
+// uppercase selected cells
+dtable.mapSelection(function(value, row_id, column_id, row_ind, col_ind){
     return value.toString().toUpperCase(); 
 });
 
 
 @template:	api_method
 @descr:
-@callback:
--value    string,int    the cell value
--row_id    string,int    the row id
--column_id    string,int    the column id
--row_ind    number    the row index of a cell within the selected block
--col_ind    number    the column index of a cell within the selected block
+Parameters of the callback function are:
+
+- *value*  - (string|number) the cell value
+- *row_id* - (string|number) the row id
+- *column_id* - (string|number) the column id
+- *row_ind*  -  (number) the row index of a cell within the selected block
+- *col_ind*  -  (number) the column index of a cell within the selected block
 
 @related:
 	datatable/get_set_data.md#gettingvaluesofcellsrange

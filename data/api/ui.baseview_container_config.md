@@ -24,5 +24,4 @@ webix.ui ({
 	tutorials/start_coding.md
     desktop/view.md
 @descr:
-
-
+The container to initialize a component in should exist in the DOM before initialization

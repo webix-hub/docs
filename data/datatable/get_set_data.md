@@ -49,6 +49,7 @@ Methods [refresh()](api/link/ui.datatable_refresh.md) and [update()](api/link/ui
 
 Getting values of cells range 
 ----------------------
+
 When you work with a block of cells you can use 2 'special' methods allowing you to get values of several cells and perform some action on them:
 
 - [mapCells](api/ui.datatable_mapcells.md) - gets the current values of the specified cells (called for each specified cell by turn).
@@ -59,20 +60,20 @@ Reversing text in the specified cells range
 ~~~js
 grid.mapCells(start_row,start_col,numRows,numCols,
 function(value, row_id, column_id, row_ind, col_ind){
-		return value.toString().split("").reverse().join("");
+	return value.toString().split("").reverse().join("");
 });
 ~~~
 {{sample 15_datatable/15_api/01_map_cell.html }}
 
 
-- [mapSelection](api/ui.datatable_mapselection.md) - gets the current values of the selected cells ( called for each selected cell by turn).
+- [mapSelection](api/ui.datatable_mapselection.md) - gets the current values of the selected cells (called for each selected cell by turn).
 
 {{snippet
 Reversing text in all selected cells
 }}
 ~~~js
-grid.mapSelection(function(value){
-		return value.toString().split("").reverse().join("");
+grid.mapSelection(function(value, row_id, column_id, row_ind, col_ind){
+	return value.toString().split("").reverse().join("");
 });
 ~~~
 {{sample 15_datatable/05_selection/07_map_selection.html }}
