@@ -22,16 +22,17 @@ New Features
 Updates
 -------
 
-- ability to define columns as plain array in export options
+- ability to [define columns as plain array in export options](desktop/export_pdf.md#settingstrictorderofcolumnsrendering) **(check, multiply for all export docs)**
 - ability to set and get milliseconds while [parsing dates](helpers/date_formatting_methods.md) with webix.Date helper
-- 'shift+enter' support for popup editor to enter multiline text
-- ability to use custom map source for Googlemap
-- autoheight for Datatable header lines
-- ability to use built-in validation rules in forms with complexData
+- ['shift+enter' support for popup editor](desktop/editing.md#popup) to enter multiline text
+- ability to use [custom map source for Googlemap](desktop/googlemap.md#usingcustommapsource)
+- [autoheight for Datatable header lines](datatable/headers_footers.md#autoheightforheaderandfooter)
+- ability to use built-in validation rules in [forms with complexData](desktop/form.md#settinginitialvalues)
 
 Fixes
 ------
 
+- regression in handling multiple loading calls at once
 - tooltip position near view borders
 - context menu position near view borders
 - adjusting Datatable column width to rotated headers

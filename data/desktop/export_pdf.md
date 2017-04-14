@@ -208,6 +208,39 @@ webix.toPDF($$("mylist"), {
 
 {{sample 15_datatable/10_export/07_pdf_config.html}}
 
+
+Setting strict order of columns rendering 
+------------------------------------
+
+The default columns configuration doesn't ensure that the order of columns you've specified for export will be kept, since columns' rendering
+is processed inside a loop. In the example given below the Votes column can be place before the Title one:
+
+~~~js
+webix.toPDF($$("mydatatable"), {
+	columns:{
+    	"title":{header: "Title", width: 200},
+       	"year":	true,
+      	"votes":{header: "Votes", width: 100}
+    }
+});
+~~~
+
+To solve this issue and save the strict order of columns in the resulting file, you can specify the columns as an array:
+
+~~~js
+webix.toPDF($$("mydatatable"), {
+	columns:[
+    	{ id:"title", header:"Film title", width:250},
+    	{ id:"year"},
+    	{ id:"votes", header:"Votes", width:100}
+	]
+});
+~~~
+
+Note that the same as in the first case, it is enough to specify the column's id (see the "year" column), all other column's properties will be taken from the 
+columns' parameter set in the datatable configuration.
+
+
 Styling the exported data
 -----------------------
 

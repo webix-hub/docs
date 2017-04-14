@@ -252,5 +252,22 @@ webix.ui({
 All other available properties can be found in the [Google API Reference](https://developers.google.com/maps/documentation/javascript/reference).
 
 
+Using Custom Map Source
+------------------------
 
+The default Google Map configuration contains the path to the map source as *//maps.google.com/maps/api/js*. 
+The protocol that will be used depends on the protocol that you specify for your app. 
 
+In case you want to set your own protocol for the map url, you can make use of the **src** parameter:
+
+~~~js
+webix.ui({
+  //provide your own Google API key
+  key:"AIzaSyAi0oVNVO-e603aUY8SILdD4v9bVBkmiTg",
+  src:"https://maps.google.com/maps/api/js",
+  view:"google-map",
+  id:"map",
+  zoom:6,
+  center:[ 48.724, 8.215 ] 
+});
+~~~

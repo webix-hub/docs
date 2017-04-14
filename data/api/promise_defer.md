@@ -1,7 +1,7 @@
 defer
 =============
 
-@short: create a new instance of a deferred object (a `promise`)
+@short: creates a new instance of a deferred object (a `promise`)
 	
     
 @returns:

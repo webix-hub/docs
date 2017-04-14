@@ -240,7 +240,7 @@ var tpl="<span style='background:#value#; border-radius:4px;'>&nbsp</span> #valu
 In its essence it is a [datepicker](desktop/datepicker.md) that initializes a [calendar](desktop/calendar.md) to pick the necessary date. 
 
 ~~~js
-{ map:"(date)#enddate#",	editor:"date",	header:"End date", 	width:120},
+{ map:"(date)#enddate#", editor:"date",	header:"End date", 	width:120},
 ~~~
 
 {{sample 15_datatable/04_editing/10_dates.html}}
@@ -252,12 +252,15 @@ A popup window with body contents depending on data you edit.
 - **textarea** - a multi-row input for editing long texts. The popup features *width: 250* and *height:50* by default. 
 
 ~~~js
-{ id:"title",	header:"Film title", editor:"popup"}
+{ id:"title", header:"Film title", editor:"popup"}
 ~~~
 
 {{sample 15_datatable/04_editing/12_text_popup.html}}
 
 - **colorboard** and **calendar** -  come in popup windows by default and are set as **date** and **color** editor types.
+
+Besides the standard for editors "Enter" hot key used for entering text, the Popup editor supports the "Shift+Enter" hot key functionality.
+It is used for making a new paragraph in a multiline text (moving a part of text to a new line).
 
 ###$Popup 
 

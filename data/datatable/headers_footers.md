@@ -286,13 +286,15 @@ columns:[
 
 {{sample 60_pro/01_datatable/06_api/11_rotate_header.html}}
 
+
 ##Custom Height for Header and Footer
 
-To set a custom height, present footer line as an object and use the **height** property:
+To set a custom height, present the header or footer line as an object and use the **height** property:
 
 ~~~js
 columns:[
-	{ 	id:"title",	
+	{ 	
+    	id:"title",	
     	header:{ text:"Film title", height:25 },
         footer:{ text:"80px footer", height:80}
     }
@@ -300,6 +302,45 @@ columns:[
 ~~~
 
 {{sample 15_datatable/12_header_footer/12_lineheight.html}}
+
+
+##Autoheight for Header and Footer
+
+It's also possible to enable autoheight for the header and the footer of DataTable. Thus the height of the header/footer will be adjusted to show 
+its content.
+
+For this, you need to set a header or a footer as an object and use the **autoheight** property with the *true* value:
+
+~~~js
+columns:[
+	{ 	
+		id:"title",
+		header:{
+			text:"A multiline header for a film title column..",
+			autoheight:true
+		},
+		footer: { 
+			text:"A multiline footer for a film title column..", 
+			autoheight:true 
+		}, 
+	}
+]
+~~~
+
+{{sample 15_datatable/12_header_footer/13_autoheight.html}}
+
+This functionality is also avalable for rotated header/footer lines:
+
+~~~js
+columns:[
+	{ id:"title"},
+	{ id:"year",  header:{ text:"Released", autoheight:true, rotate:true }},
+	{ id:"votes", header:{ text:"Votes", rotate:true}}
+]
+~~~
+
+{{sample 60_pro/01_datatable/06_api/10_header_rotate_autoheight.html}}
+
 
 Custom Header and Footer Content
 --------------------------------------------

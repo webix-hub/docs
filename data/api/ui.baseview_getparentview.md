@@ -15,7 +15,7 @@ webix.ui({
   ]
 });
 
-var layout = $$('myview').getParentView();
+var layout = $$("myview").getParentView();
 
 
 @relatedapi:
