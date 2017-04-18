@@ -27,8 +27,10 @@ If it's not enough, you can create a [custom component by wrapping a Webix widge
 Included Files
 -----------------
 
-First, you should pay attention that the discussed integration isn't included into Webix library. To start using it in your project, 
+{{note
+Pay attention that the discussed integration isn't included into Webix library. To start using it in your project, 
 you need to take the necessary sources from [GitHub](https://github.com/webix-hub/webix-vue). Besides, they are available from CDN.
+}}
 
 You need to include the link to the Vue source file in the head of your HTML page. We will use the minified JS file for our examples:
 

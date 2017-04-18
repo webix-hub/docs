@@ -3,6 +3,10 @@ Angular JS Integration
 
 The Webix library provides integration with [Angular](https://angular.io/) JS framework. Since version 4.0 Webix is [compatible with Angular 2](desktop/angular.md#angular2compatibility).
 
+
+{{note The sources for integration of Webix with AngularJS are not included into the Webix library package. You can take them from the
+[GitHub](https://github.com/webix-hub/webix-angular) repository}}
+
 Webix-Angular App Structure
 ---------------------------
 
@@ -57,7 +61,7 @@ Bound to Angular JS, Webix offers a special **webix-ui** directive that bootstra
 
 Two patterns are equal in functionality yet differ in the way this functionality is implemented. 
 
-##Initializing from from HTML markup {#html}
+##Initializing from HTML markup {#html}
 
 This method resembles Webix [HTML Initialization technique](desktop/html_markup_init.md) but has its own peculiarities:
 
@@ -282,7 +286,7 @@ app.controller("webixTestController", function($scope){
 };
 ~~~
 
-Inside the fucntion invoked by **webix-ready** directive, Webix-Angular integrated app complies to standard Webix [event handling pattern](desktop/event_handling.md).
+Inside the function invoked by **webix-ready** directive, Webix-Angular integrated app complies to standard Webix [event handling pattern](desktop/event_handling.md).
 
 Angular 2 Compatibility
 -----------------------
