@@ -100,7 +100,7 @@ webix.toExcel($$("table"), {
 - setting **columns** you'd like to see in the export file. There are two ways to set the custom columns for export:
 
 You can provide an associative array (hash) with column ids as keys. Their values can be either *boolean* for default 
-paramaters (taken from component configuration) or *object* for custom parameters:
+parameters (taken from component configuration) or *object* for custom parameters:
 
 ~~~js
 webix.toPDF($$("table"), {
