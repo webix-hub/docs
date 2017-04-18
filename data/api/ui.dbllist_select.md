@@ -10,7 +10,7 @@ select
 
 @params:
 
-- id			string|array		the id(ids) of the items to move 
+- id			string|array		the id (ids) of the items to move 
 - mode			boolean				true - to move items to the right list, false - to return items to the left list
 
 

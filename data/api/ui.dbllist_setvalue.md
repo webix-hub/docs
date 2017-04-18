@@ -10,7 +10,7 @@ setValue
 
 @params:
 
-- ids		string|array		the  id(ids) of the items to move
+- ids		string|array		the  id (ids) of the items to move
 
 
 

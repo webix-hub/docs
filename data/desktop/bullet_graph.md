@@ -4,12 +4,12 @@ Bullet Graph
 ##API Reference
 
 - [Methods, properties and events](api/refs/ui.bullet.md)
-- [Samples](http://docs.webix.com/samples/60_pro/08_barcode/index.html)
+- [Samples](http://docs.webix.com/samples/60_pro/16_bulletgraph/01_init.html)
 
 ##Overview
 
-The Bullet Graph widget presents a more compact version of the Gage widget. It is intended for comparing a dynamically changed value displayed by a moving horizontal bar 
-to a static value (target) set as a vertical line and relate both to qualitative ranges of performance (e.g. poor, satisfactory, and good). 
+The Bullet Graph widget presents a more compact version of the desktop/gage.md widget. It is intended for comparing a dynamically changed value displayed by 
+a moving horizontal bar to a static value (target) set as a vertical line and relate both to qualitative ranges of performance (e.g. poor, satisfactory, and good). 
 
 <br>
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/bulletgraph_front.png">
