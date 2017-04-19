@@ -17,7 +17,7 @@ var text = set.getBody();
 
 
 @returns:
-- view	object	webiv ui object, which is placed inside fieldset
+- view		object		Webix UI object placed into the fieldset
 	
 
 

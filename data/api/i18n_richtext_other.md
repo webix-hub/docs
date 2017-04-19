@@ -7,7 +7,7 @@ richtext
 @type: object
 
 @example:
-webix.i18n.richtext = {
+webix.i18n.richtext:{
     underline: "Underline",
     bold: "Bold",
     italic: "Italic"

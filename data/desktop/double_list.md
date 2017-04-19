@@ -21,27 +21,31 @@ drag-n-drop them to the other one using the corresponding buttons between the li
 ~~~js
 webix.ui({
  	view:"dbllist", 
-    value:"1,2",
-    data:[
-        {id:"1", value:"Guest"},
-        {id:"2", value:"Member"},
-        {id:"3", value:"Moderator"}
+    list:{ autoheight: true },
+    labelLeft:"Available screens",
+    labelRight:"Selected",
+	data:[
+        {id:"1", value:"Contacts"},
+        {id:"2", value:"Products"},
+        {id:"3", value:"Reports"},
+        {id:"4", value:"Customers"},
+        {id:"5", value:"Deals"}
     ]
 });
 ~~~
 
-{{sample 05_list/18_dbllist.html}}
+{{sample 13_form/01_controls/25_dbllist.html}}
 
 
 **Main Configuration Properties**
 
-- **value** - (string|array) sets the ids of items initially moved to the list of selected items
 - **labelLeft** - (string) sets a label for the left list
 - **labelLeft** - (string) sets a label for the right list
 - **labelBottomLeft** - (string) sets a label for the left list at the bottom
 - **labelBottomRight** - (string) sets a label for the right list at the bottom
 - **list** - sets the configuration of lists in the Double List widget. The lists' config is inherited from Webix desktop/list.md
 - **buttons** - (string|boolean) sets a custom template for buttons or hides them. Details are given [below](desktop/double_list.md#customizingbuttons)
+- **value** - (string|array) sets the ids of items initially moved to the list of selected items
 
 
 ##Customizing Buttons

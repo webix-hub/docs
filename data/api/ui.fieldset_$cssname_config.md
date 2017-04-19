@@ -10,7 +10,7 @@ $cssName
 
 webix.protoUI({
 	name:"myfieldset",
-    $cssName:"button",
+    $cssName:"fieldset",
     //other properties and methods
 }, webix.ui.view);
 

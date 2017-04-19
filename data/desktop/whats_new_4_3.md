@@ -6,7 +6,9 @@ Version 4.3
 Breaking Changes
 -----------------
 
-Integration adapters are extracted to separate repositories
+Integration adapters for [Angular](https://github.com/webix-hub/webix-angular), [Backbone](https://github.com/webix-hub/webix-backbone)
+and [JQuery](https://github.com/webix-hub/webix-jquery) are extracted from *webix.js* to separate repositories on GitHub. 
+Check the [Migration Guide](migration.md#webix4243) for more details.
 
 
 New Features
@@ -14,15 +16,15 @@ New Features
 
 - [Double List](desktop/double_list.md) widget with customizable buttons
 - [Bullet Graph](desktop/bullet_graph.md) as a compact version of Gage to show more information in a limited space (PRO edition)
-- Form Input control that allows rendering form components in the common style
-- Webix+React integration demo
+- [Form Input](desktop/forminput.md) control that allows rendering form components in the common style
+- [Webix+React Integration](desktop/react.md)
 - [webix.stringify](api/_stringify.md) helper
 
 
 Updates
 -------
 
-- ability to [define columns as plain array in export options](desktop/export_pdf.md#settingstrictorderofcolumnsrendering) **(check, multiply for all export docs)**
+- ability to [define columns as plain array in export options](desktop/data_components_export.md) 
 - ability to set and get milliseconds while [parsing dates](helpers/date_formatting_methods.md) with webix.Date helper
 - ['shift+enter' support for popup editor](desktop/editing.md#popup) to enter multiline text
 - ability to use [custom map source for Googlemap](desktop/googlemap.md#usingcustommapsource)

@@ -90,11 +90,6 @@ table.webixtoc td{
         <td> a widget for displaying data in a tabular format </td>
     </tr>
     <tr>
-    	<td> <img src="api/toc/doublelist.png"/> </td>
-        <td> api/refs/ui.dbllist.md </td>
-        <td> a double list that provides rich selection possibilities</td>
-    </tr>
-    <tr>
     	<td> <img src="api/toc/gage.png"/> </td>
         <td> api/refs/ui.gage.md </td>
         <td> a gage widget with a dial to visualize data updates</td>
@@ -239,7 +234,7 @@ table.webixtoc td{
 
 
 
-<div class='h2'>Form Controls</div>
+<div class='h2'>UI Controls</div>
 <table class='webixtoc'>
 	<tbody>
     <tr>
@@ -283,9 +278,19 @@ table.webixtoc td{
         <td>a control that allows the user to select a date</td>
     </tr>
     <tr>
+    	<td> <img src="api/toc/doublelist.png"/> </td>
+        <td> api/refs/ui.dbllist.md </td>
+        <td> a double list that provides rich selection possibilities</td>
+    </tr>
+    <tr>
     	<td> <img src="api/toc/fieldset.png"/> </td>
         <td> api/refs/ui.fieldset.md </td>
         <td> a wrapper which renders an HTML fieldset </td>
+    </tr>
+    <tr>
+    	<td> <img src="api/toc/forminput.png"/> </td>
+        <td> api/refs/ui.forminput.md </td>
+        <td> a wrapper which allows rendering widgets as form controls </td>
     </tr>
     <tr>
     	<td> <img src="api/toc/icon.png"/> </td>
@@ -521,6 +526,7 @@ table.webixtoc td{
 - api/refs/ui.fieldset.md
 - api/refs/ui.filemanager.md
 - api/refs/ui.form.md
+- api/refs/ui.forminput.md
 - api/refs/ui.gage.md
 - api/refs/ui.google-map.md
 - api/refs/ui.gridsuggest.md

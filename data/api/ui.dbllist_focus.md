@@ -1,10 +1,7 @@
 focus
 =============
 
-@todo:
-	check 
-
-@short
+@short:
 sets focus to the widget
 
 @example:
