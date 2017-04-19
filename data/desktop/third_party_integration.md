@@ -1,4 +1,4 @@
-Third Party Integration
+Integration with Other Frameworks
 =======================
 
 {{index
@@ -7,7 +7,7 @@ Third Party Integration
 - desktop/backbone.md
 - desktop/vue.md
 - desktop/dhtmlx.md
-- desktop/custom_integration.md
+- desktop/react.md
 }}
                
 Check out desktop/extensions.md as well.

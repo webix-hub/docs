@@ -3,7 +3,7 @@ DIY - Custom Integration Pattern
 
 Webix offers a number of ready-made solutions that integrate it with other JavaScript libraries and frameworks. 
 
-- integration with structural frameworks [BackBoneJS](desktop/backbone.md) and [Angular JS](desktop/angular.md);
+- integration with [various frameworks](desktop/third_party_integration.md);
 - integration with popular [text editors](desktop/text_editors.md);
 - integration with [charts](desktop/chart_integration.md) and [planning tools](desktop/scheduler.md).
 
