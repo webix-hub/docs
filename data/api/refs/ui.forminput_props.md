@@ -19,9 +19,7 @@ Properties
 - api/link/ui.forminput_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.forminput_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.forminput_minheight_config.md - sets the minimal height for the view
-- api/link/ui.forminput_minwidth_config.md - sets the minimal width for the view
-- api/link/ui.forminput_paddingx_config.md - 
-- api/link/ui.forminput_paddingy_config.md - 
+- api/link/ui.forminput_minwidth_config.md - sets the minimal width for the view 
 - api/ui.forminput_value_config.md - 
 - api/link/ui.forminput_width_config.md - sets the width of the component
 }}
@@ -45,8 +43,6 @@ Properties
 - api/link/ui.forminput_maxwidth_config.md
 - api/link/ui.forminput_minheight_config.md
 - api/link/ui.forminput_minwidth_config.md
-- api/link/ui.forminput_paddingx_config.md
-- api/link/ui.forminput_paddingy_config.md
 - api/ui.forminput_value_config.md
 - api/link/ui.forminput_width_config.md
 

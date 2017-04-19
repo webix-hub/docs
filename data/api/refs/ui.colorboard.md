@@ -92,7 +92,6 @@ var colorboard = webix.ui({
 {{api
 - api/link/ui.colorboard_animate_config.md - defines or disables view change animation.
 - api/link/ui.colorboard_borderless_config.md - used to hide the component borders
-- api/link/ui.colorboard_clipboard_config.md - 
 - api/ui.colorboard_cols_config.md - sets the number of columns in the palette
 - api/link/ui.colorboard_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.colorboard_css_config.md - the name of a css class that will be applied to the view container
