@@ -25,4 +25,4 @@ webix.ui({
 desktop/double_list.md
 
 @relatedsample:
-13_form/01_controls/25_dbllist_buttons.html
+13_form/01_controls/25_dbllist.html

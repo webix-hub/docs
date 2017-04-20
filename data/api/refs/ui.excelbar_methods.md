@@ -2,7 +2,7 @@ Methods
 =======
 
 {{api
-- api/link/ui.excelbar_addview.md - add new view to layout-like component
+- api/link/ui.excelbar_addview.md - adds a new view to a layout-like component
 - api/link/ui.excelbar_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.excelbar_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.excelbar_bind.md - binds components
@@ -42,7 +42,7 @@ Methods
 - api/link/ui.excelbar_removeview.md - removes view from layout-like component
 - api/link/ui.excelbar_render.md - renders the specified item or the whole component
 - api/link/ui.excelbar_resize.md - adjusts the view to a new size
-- api/link/ui.excelbar_resizechildren.md - resizes all children of the calling component
+- api/link/ui.excelbar_resizechildren.md - resizes all children of the called component
 - api/link/ui.excelbar_scrollto.md - scrolls the data container to a certain position
 - api/link/ui.excelbar_setdirty.md - marks the form as the one with changed values and vice versa
 - api/ui.excelbar_setsheets.md - 

@@ -5,7 +5,7 @@ Others
 - api/link/ui.dbllist_$$_other.md - locates sub-item by id
 - api/link/ui.dbllist_$getsize_other.md - returns the current size of the component
 - api/link/ui.dbllist_$height_other.md - current height of the view
-- api/ui.dbllist_$onload_other.md - 
+- api/ui.dbllist_$onload_other.md - default action on data loading
 - api/link/ui.dbllist_$setsize_other.md - sets the component size
 - api/link/ui.dbllist_$skin_other.md - the method which will be called when skin is defined
 - api/link/ui.dbllist_$view_other.md - reference to top html element of the view

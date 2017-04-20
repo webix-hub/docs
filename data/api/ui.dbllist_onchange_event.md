@@ -2,16 +2,16 @@ onChange
 =============
 
 
-@short: fires when an item has been moved from one list to the other by a double-click on it or a click on the button 
+@short: fires on changes in the DoubleList
 	
 
 @example: 
 $$("dbl1").attachEvent("onChange", function(){
-    webix.message("The item was moved");
+    // your code here
 });
 	
 @relatedsample:
-05_list/18_dbllist.html	
+13_form/01_controls/25_dbllist.html	
     
 @related: 
 	desktop/double_list.md

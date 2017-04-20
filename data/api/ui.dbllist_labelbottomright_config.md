@@ -33,4 +33,4 @@ api/ui.dbllist_labelright_config.md
 desktop/double_list.md
 
 @relatedsample:
-05_list/18_dbllist.html
+13_form/01_controls/25_dbllist.html

@@ -36,5 +36,5 @@ desktop/bullet_graph.md
 @relatedsample:
 60_pro/16_bulletgraph/01_init.html
 
-@todo:check
+
 

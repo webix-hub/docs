@@ -8,20 +8,20 @@ Methods
 - api/link/ui.forminput_destructor.md - destructs the calling object
 - api/link/ui.forminput_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.forminput_enable.md - enables the calling view that was disabled by the 'disable' method
-- api/ui.forminput_focus.md - 
+- api/ui.forminput_focus.md - sets focus to the control
 - api/link/ui.forminput_getbody.md - returns sub-view of fieldset
 - api/link/ui.forminput_getchildviews.md - returns child views of the calling component
 - api/link/ui.forminput_getformview.md - returns master form for the input
 - api/link/ui.forminput_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.forminput_getparentview.md - returns the parent view of the component
 - api/link/ui.forminput_gettopparentview.md - returns top parent view
-- api/ui.forminput_getvalue.md - 
+- api/ui.forminput_getvalue.md - returns the current value of the control
 - api/link/ui.forminput_hide.md - hides the view
 - api/link/ui.forminput_isenabled.md - checks whether the view is enabled
 - api/link/ui.forminput_isvisible.md - checks whether the view is visible
 - api/link/ui.forminput_resize.md - adjusts the view to a new size
-- api/link/ui.forminput_resizechildren.md - 
-- api/ui.forminput_setvalue.md - 
+- api/link/ui.forminput_resizechildren.md - resizes all children of the called component
+- api/ui.forminput_setvalue.md - sets a new value for the control
 - api/link/ui.forminput_show.md - makes the component visible
 - api/link/ui.forminput_unbind.md - breaks "bind" link
 }}

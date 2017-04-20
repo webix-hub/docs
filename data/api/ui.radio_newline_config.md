@@ -1,9 +1,6 @@
 newline
 =============
 
-@todo:
-	check 
-
 @short:
 	allows moving an option to a new line
 

@@ -1,22 +1,15 @@
 getValue
 =============
 
-
-@todo:
-	check
-
 @short:
-	returns the value(s) selected in the Double List (values moved to the right list) 
+	returns the ids of the selected items (items of the right list) 
 
 
 @returns:
 
-- value		string		the selected value(s)
-
+- value		string		the list of selected items' ids
 
 @params:
-
-
 
 @example:
 webix.ui({
@@ -32,7 +25,7 @@ webix.ui({
     ]
 });
 
-$$("dbl1").getValue(); // returns "1,2"
+var values = $$("dbl1").getValue(); // returns "1,2"
 
 @template:	api_method
 @descr:
@@ -45,4 +38,4 @@ $$("dbl1").getValue(); // returns "1,2"
 desktop/double_list.md
 
 @relatedsample:
-05_list/18_dbllist.html
+13_form/01_controls/25_dbllist.html

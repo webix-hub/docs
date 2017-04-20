@@ -31,7 +31,7 @@ $$("files").load("files.php");
 
 {{api
 - api/link/ui.filemanager_add.md - adds an item to the store
-- api/link/ui.filemanager_addview.md - add new view to layout-like component
+- api/link/ui.filemanager_addview.md - adds a new view to a layout-like component
 - api/link/ui.filemanager_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.filemanager_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.filemanager_bind.md - binds components
@@ -109,7 +109,7 @@ $$("files").load("files.php");
 - api/link/ui.filemanager_removeview.md - removes view from layout-like component
 - api/ui.filemanager_renamefile.md - renames a folder/a file
 - api/link/ui.filemanager_resize.md - adjusts the view to a new size
-- api/link/ui.filemanager_resizechildren.md - resizes all children of the calling component
+- api/link/ui.filemanager_resizechildren.md - resizes all children of the called component
 - api/link/ui.filemanager_serialize.md - serializes data to a JSON object
 - api/ui.filemanager_setpath.md - selects a certain folder and sets path values for it
 - api/link/ui.filemanager_show.md - makes the component visible

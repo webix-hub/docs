@@ -1,12 +1,8 @@
 value
 =============
 
-@todo:
-	check
-
-
 @short:
-	sets the ids of items initially moved to the list of selected items
+	sets the ids of items that should be initially selected (moved to the right list)
 
 @type: string|array
 @example:
@@ -31,4 +27,4 @@ webix.ui({
 desktop/double_list.md
 
 @relatedsample:
-05_list/18_dbllist.html
+13_form/01_controls/25_dbllist.html

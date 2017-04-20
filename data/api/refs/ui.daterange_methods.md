@@ -2,7 +2,7 @@ Methods
 =======
 
 {{api
-- api/link/ui.daterange_addview.md - add new view to layout-like component
+- api/link/ui.daterange_addview.md - adds a new view to a layout-like component
 - api/link/ui.daterange_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.daterange_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.daterange_bind.md - binds components
@@ -29,7 +29,7 @@ Methods
 - api/ui.daterange_refresh.md - redraws the DateRange value
 - api/link/ui.daterange_removeview.md - removes view from layout-like component
 - api/link/ui.daterange_resize.md - adjusts the view to a new size
-- api/link/ui.daterange_resizechildren.md - resizes all children of the calling component
+- api/link/ui.daterange_resizechildren.md - resizes all children of the called component
 - api/ui.daterange_setvalue.md - sets a new date range
 - api/link/ui.daterange_show.md - makes the component visible
 - api/link/ui.daterange_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name

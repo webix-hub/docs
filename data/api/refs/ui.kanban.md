@@ -40,7 +40,7 @@ var kanban = webix.ui({
 
 {{api
 - api/link/ui.kanban_add.md - adds an item to the store
-- api/link/ui.kanban_addview.md - add new view to layout-like component
+- api/link/ui.kanban_addview.md - adds a new view to a layout-like component
 - api/link/ui.kanban_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.kanban_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.kanban_bind.md - binds components
@@ -85,7 +85,7 @@ var kanban = webix.ui({
 - api/link/ui.kanban_remove.md - removes the specified item/items from datastore
 - api/link/ui.kanban_removeview.md - removes view from layout-like component
 - api/link/ui.kanban_resize.md - adjusts the view to a new size
-- api/link/ui.kanban_resizechildren.md - resizes all children of the calling component
+- api/link/ui.kanban_resizechildren.md - resizes all children of the called component
 - api/ui.kanban_select.md - selects the specified task
 - api/link/ui.kanban_serialize.md - serializes data to a JSON object
 - api/ui.kanban_setindex.md - sets a new index for an item

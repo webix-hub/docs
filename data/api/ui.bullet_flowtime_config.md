@@ -1,20 +1,16 @@
 flowTime
 =============
 
-@todo:
-	check
-
-
 @short:
 defines the animation speed in milliseconds
 	
-@default:500
+@default:3000
 @type:number
 @example:
 webix.ui({
     view:"bullet", 
     value:40, 
-    flowTime:400
+    flowTime:4000
 });
 
 @template:	api_config

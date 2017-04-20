@@ -1,12 +1,7 @@
 color
 =============
 
-@todo:
-	check 
-
-
-@short:
-	sets the color of the bar that shows the value to compare
+@short:	sets the color of the bar that shows the value to compare with
 
 @default: "#394646"
 @type: string

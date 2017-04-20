@@ -1,12 +1,11 @@
 marker
 =============
 
-@todo:
-	check
 
 @short:
-	defines whether the marker of the target value will be rendered on the scale
+	defines the position of the marker of the target value 
 
+@default:false
 @type:number|boolean
 @example:
 webix.ui({
@@ -20,6 +19,8 @@ webix.ui({
 
 @template:	api_config
 @descr:
+
+
 
 @related:
 desktop/bullet_graph.md

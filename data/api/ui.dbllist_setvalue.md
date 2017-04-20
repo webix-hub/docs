@@ -2,20 +2,16 @@ setValue
 =============
 
 
-@todo:
-	check 
-
 @short:
-	defines the item(s) that should be moved to the list of selected items
+	specifies the item(s) that should be selected
 
 @params:
 
-- ids		string|array		the  id (ids) of the items to move
+- ids		string|array		the  id (ids) of the items to select
 
 
 
 @example:
-
 webix.ui({
     view:"dbllist", 
     id:"dbl1",
@@ -44,4 +40,4 @@ $$("dbl1").setValue("1,3");
 desktop/double_list.md
 
 @relatedsample:
-05_list/18_dbllist.html
+13_form/01_controls/25_dbllist.html

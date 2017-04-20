@@ -89,14 +89,24 @@ bands:[
 ~~~
 - **label** - (string) the text label of the widget
 - **placeholder** - (string) additional description for the widget's label or value
-- **marker** - (number|false) defines whether the marker of the target value will be rendered on the scale, *false* by default
-- **stroke** (number) - the width of the bullet graph bar. The default value is 8.
+- **marker** - (number|false) defines the position of the marker of the target value, *false* by default
+- **stroke** (number) - the width of the bullet graph bar. The default value is 8
 - **scale** (object) - defines the size of the bullet graph scale. The default value is *scale:{step:10}*
 
 The full list of available configuration properties is given in the [Bullet Graph API](api/refs/ui.bullet.md).
 
+Adjusting Animation Speed
+---------------------
 
+You can easily change the default animation speed which is *3000 ms*. For this purpose you need to use the property api/ui.bullet_flowtime_config.md:
 
+~~~js
+webix.ui({
+    view:"bullet", 
+    value:40, 
+    flowTime:4000
+});
+~~~
 
 
 

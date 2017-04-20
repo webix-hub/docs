@@ -6,8 +6,8 @@ Integration with Other Frameworks
 - desktop/angular.md
 - desktop/backbone.md
 - desktop/vue.md
-- desktop/dhtmlx.md
 - desktop/react.md
+- desktop/dhtmlx.md
 }}
                
 Check out desktop/extensions.md as well.

@@ -2,23 +2,20 @@ select
 =============
 
 
-@todo:
-	check 
-
 @short:
-	moves the specified items to the list of selected items or returns them back 
+	selects the specified items (moves them to the right list) or unselects them 
 
 @params:
 
-- id			string|array		the id (ids) of the items to move 
-- mode			boolean				true - to move items to the right list, false - to return items to the left list
+- id			string|array		the id (ids) of the items to select 
+- mode			boolean				true - to select items, false - to unselect them
 
 
 @example:
-// moves items with ids 3,4 to the right list
+// selects items with ids 3,4 
 $$("dbl1").select([3,4],true);
-// moves items with ids 3,4 back to the left list
-$$("dbl1").select([3,4],true);
+// unselects items with ids 3,4 
+$$("dbl1").select([3,4],false);
 
 @template:	api_method
 @descr:
@@ -28,4 +25,4 @@ $$("dbl1").select([3,4],true);
 desktop/double_list.md
 
 @relatedsample:
-05_list/18_dbllist.html
+13_form/01_controls/25_dbllist.html

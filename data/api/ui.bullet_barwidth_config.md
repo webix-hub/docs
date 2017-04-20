@@ -1,12 +1,8 @@
 barWidth
 =============
 
-@todo:
-	check 
-
-
 @short:
-	specifies the width of the bar that displays the value to compare 
+	specifies the width of the bar that displays the value to compare with
 
 @default:40
 @type: number

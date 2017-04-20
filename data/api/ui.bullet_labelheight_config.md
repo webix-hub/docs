@@ -1,13 +1,9 @@
 labelHeight
 =============
 
-@todo:
-	check, add default 
-
 @short:
 	sets the height of the label for the vertical layout
 
-@default:
 @type:number 
 @example:
 webix.ui({

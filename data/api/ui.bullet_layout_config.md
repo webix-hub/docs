@@ -1,10 +1,6 @@
 layout
 =============
 
-@todo:
-	check 
-
-
 @short:
 	sets the layout type of rendering the Bullet Graph - horizontal ("x") or vertical ("y")
 

@@ -42,7 +42,7 @@ var pivot = webix.ui({
 {{api
 - api/link/ui.pivot_add.md - adds an item to the store
 - api/ui.pivot_addoperation.md - adds a custom data operation
-- api/link/ui.pivot_addview.md - add new view to layout-like component
+- api/link/ui.pivot_addview.md - adds a new view to a layout-like component
 - api/link/ui.pivot_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.pivot_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.pivot_bind.md - binds components
@@ -89,7 +89,7 @@ var pivot = webix.ui({
 - api/link/ui.pivot_removeview.md - removes view from layout-like component
 - api/ui.pivot_render.md - renders a pivot on the page
 - api/link/ui.pivot_resize.md - adjusts the view to a new size
-- api/link/ui.pivot_resizechildren.md - resizes all children of the calling component
+- api/link/ui.pivot_resizechildren.md - resizes all children of the called component
 - api/link/ui.pivot_serialize.md - serializes data to a JSON object
 - api/ui.pivot_setstructure.md - sets the pivot structure
 - api/link/ui.pivot_show.md - makes the component visible
@@ -113,7 +113,7 @@ var pivot = webix.ui({
 - api/link/ui.pivot_onaftersort_event.md - fires after sorting dataset
 - api/link/ui.pivot_onbeforeadd_event.md - fires before adding item to datastore
 - api/ui.pivot_onbeforeapply_event.md - fires on the "Apply" button click
-- api/ui.pivot_onbeforecancel_event.md - 
+- api/ui.pivot_onbeforecancel_event.md - fires when the "Cancel" button is clicked in the filters popup
 - api/link/ui.pivot_onbeforedelete_event.md - fires before item deleting
 - api/link/ui.pivot_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/ui.pivot_onbeforerender_event.md - fires just before the pivot is rendered
@@ -122,7 +122,7 @@ var pivot = webix.ui({
 - api/link/ui.pivot_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.pivot_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.pivot_ondestruct_event.md - occurs when component destroyed
-- api/ui.pivot_onfilterchange_event.md - 
+- api/ui.pivot_onfilterchange_event.md - fires when values are changed in filter fields on toolbar
 - api/ui.pivot_onfiltercreate_event.md - fires each time a filter is created
 - api/ui.pivot_onheaderinit_event.md - fires when pivot header is initialized
 - api/ui.pivot_onitemclick_event.md - fires when an item is clicked

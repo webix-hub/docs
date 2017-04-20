@@ -1,10 +1,6 @@
 labelWidth
 =============
 
-@todo:
-	check 
-
-
 @short:
 	sets the width of the label for the horizontal layout
 

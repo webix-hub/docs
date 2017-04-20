@@ -1,11 +1,9 @@
 bands
 =============
 
-@todo:
-	check 
 
 @short:
-	sets an array of custom bands' values and colors for Bullet Graph 
+	sets an array of custom bands' (ranges of performance) values and colors for Bullet Graph 
 
 @type: array
 @example:

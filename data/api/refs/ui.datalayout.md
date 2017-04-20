@@ -14,7 +14,7 @@ dummy stub
 
 {{api
 - api/link/ui.datalayout_add.md - adds an item to the store
-- api/link/ui.datalayout_addview.md - add new view to layout-like component
+- api/link/ui.datalayout_addview.md - adds a new view to a layout-like component
 - api/link/ui.datalayout_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.datalayout_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.datalayout_bind.md - binds components
@@ -57,7 +57,7 @@ dummy stub
 - api/link/ui.datalayout_removeview.md - removes view from layout-like component
 - api/ui.datalayout_render.md - renders the datalayout content
 - api/link/ui.datalayout_resize.md - adjusts the view to a new size
-- api/link/ui.datalayout_resizechildren.md - resizes all children of the calling component
+- api/link/ui.datalayout_resizechildren.md - resizes all children of the called component
 - api/link/ui.datalayout_serialize.md - serializes data to a JSON object
 - api/link/ui.datalayout_show.md - makes the component visible
 - api/link/ui.datalayout_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name

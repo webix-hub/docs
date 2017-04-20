@@ -17,22 +17,22 @@ Double List CSS
 		<td class="col0 leftalign"><strong>.webix_list_item</strong> </td><td class="col1 leftalign">an item in the list </td>
 	</tr>
     <tr class="row4">
-		<td class="col0 leftalign"><strong>.webix_list_item.webix_selected</strong></td><td class="col1"> a selected item of the list </td>
+		<td class="col0 leftalign"><strong>.webix_list_item.webix_selected</strong></td><td class="col1"> a selected (highlighted) item of the list </td>
 	</tr>
 	<tr class="row5">
-		<td class="col0 leftalign"><strong>.dbllist_button</strong> </td><td class="col1"> the button of the DoubleList for moving items between lists</td>
+		<td class="col0 leftalign"><strong>.dbllist_button</strong> </td><td class="col1"> the button of the DoubleList for selecting/unselecting items</td>
 	</tr>
 	<tr class="row6">
-		<td class="col0 leftalign"><strong>.webix_icon.fa-angle-double-left </strong></td><td class="col1">the icon of the button for moving all items to the left list </td>
+		<td class="col0 leftalign"><strong>.webix_icon.fa-angle-double-left </strong></td><td class="col1">the icon of the button for unselecting all items</td>
 	</tr>
     <tr class="row7">
-		<td class="col0 leftalign"><strong>.webix_icon.fa-angle-double-right</strong> </td><td class="col1">the icon of the button for moving all items to the right list </td>
+		<td class="col0 leftalign"><strong>.webix_icon.fa-angle-double-right</strong> </td><td class="col1">the icon of the button for selecting all items</td>
 	</tr>
 	<tr class="row8">
-		<td class="col0 leftalign"><strong>.webix_icon.fa-angle-left</strong> </td><td class="col1">the icon of the button for moving a selected item to the left list </td>
+		<td class="col0 leftalign"><strong>.webix_icon.fa-angle-left</strong> </td><td class="col1">the icon of the button for unselecting one item</td>
 	</tr>
     <tr class="row9">
-		<td class="col0 leftalign"><strong>.webix_icon.fa-angle-right</strong> </td><td class="col1">the icon of the button for moving a selected item to the right list </td>
+		<td class="col0 leftalign"><strong>.webix_icon.fa-angle-right</strong> </td><td class="col1">the icon of the button for selecting one item </td>
 	</tr>
 </table>
 

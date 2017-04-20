@@ -1,10 +1,38 @@
 ui.forminput 
 =============
 
+{{memo A wrapper that transforms a widget into a form input. }}
 
-dummy stub
+The control allows placing other control or a widget into an area with a label and making it look and behave as a default form input. Check [FormInput](desktop/forminput.md) documentation for a more detailed description.
 
-{{todo replace with real description. }}
+### Constructor
+
+~~~js
+// a widget to be transformed into a form input
+var list1 = { 
+    view:"dbllist", 
+    data:[
+        {id:"1", value:"Guest"},
+        {id:"2", value:"Member"},
+        {id:"3", value:"Moderator"}
+    ]
+};
+
+// form input initialization
+var forminput = webix.ui({
+ 	view:"forminput", 
+    name:"access", 
+    body:list1, 
+    labelWidth: 140,
+    labelAlign:"right", 
+    label:"Access levels" 
+});
+~~~
+
+### Where to start
+
+- [Overview of the FormInput Control](desktop/forminput.md)
+- [Samples](http://docs.webix.com/samples/13_form/01_controls/25_dbllist.html)
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.fieldset.md">ui.fieldset</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
@@ -19,20 +47,20 @@ dummy stub
 - api/link/ui.forminput_destructor.md - destructs the calling object
 - api/link/ui.forminput_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.forminput_enable.md - enables the calling view that was disabled by the 'disable' method
-- api/ui.forminput_focus.md - 
+- api/ui.forminput_focus.md - sets focus to the control
 - api/link/ui.forminput_getbody.md - returns sub-view of fieldset
 - api/link/ui.forminput_getchildviews.md - returns child views of the calling component
 - api/link/ui.forminput_getformview.md - returns master form for the input
 - api/link/ui.forminput_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.forminput_getparentview.md - returns the parent view of the component
 - api/link/ui.forminput_gettopparentview.md - returns top parent view
-- api/ui.forminput_getvalue.md - 
+- api/ui.forminput_getvalue.md - returns the current value of the control
 - api/link/ui.forminput_hide.md - hides the view
 - api/link/ui.forminput_isenabled.md - checks whether the view is enabled
 - api/link/ui.forminput_isvisible.md - checks whether the view is visible
 - api/link/ui.forminput_resize.md - adjusts the view to a new size
-- api/link/ui.forminput_resizechildren.md - 
-- api/ui.forminput_setvalue.md - 
+- api/link/ui.forminput_resizechildren.md - resizes all children of the called component
+- api/ui.forminput_setvalue.md - sets a new value for the control
 - api/link/ui.forminput_show.md - makes the component visible
 - api/link/ui.forminput_unbind.md - breaks "bind" link
 }}
@@ -62,7 +90,7 @@ dummy stub
 <div class='h2'>Properties</div>
 
 {{api
-- api/link/ui.forminput_$cssname_config.md - 
+- api/link/ui.forminput_$cssname_config.md - name of the widget the CSS of which you want to inherit for a custom widget
 - api/link/ui.forminput_animate_config.md - defines or disables view change animation.
 - api/link/ui.forminput_body_config.md - config for sub-view of fieldset
 - api/link/ui.forminput_borderless_config.md - used to hide the component borders
@@ -74,13 +102,13 @@ dummy stub
 - api/link/ui.forminput_hidden_config.md - defines whether the view will be hidden initially
 - api/link/ui.forminput_id_config.md - the component ID
 - api/link/ui.forminput_label_config.md - legend of fieldset
-- api/ui.forminput_labelalign_config.md - 
-- api/ui.forminput_labelwidth_config.md - 
+- api/ui.forminput_labelalign_config.md - the alignment of a label towards its container
+- api/ui.forminput_labelwidth_config.md - the width of the label
 - api/link/ui.forminput_maxheight_config.md - sets the maximum height for the view
 - api/link/ui.forminput_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.forminput_minheight_config.md - sets the minimal height for the view
-- api/link/ui.forminput_minwidth_config.md - sets the minimal width for the view 
-- api/ui.forminput_value_config.md - 
+- api/link/ui.forminput_minwidth_config.md - sets the minimal width for the view
+- api/ui.forminput_value_config.md - sets the initial value for the control wrapped into FormInput
 - api/link/ui.forminput_width_config.md - sets the width of the component
 }}
 

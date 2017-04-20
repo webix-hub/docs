@@ -13,7 +13,7 @@ dummy stub
 <div class='h2'>Methods</div>
 
 {{api
-- api/link/ui.pdfbar_addview.md - add new view to layout-like component
+- api/link/ui.pdfbar_addview.md - adds a new view to a layout-like component
 - api/link/ui.pdfbar_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.pdfbar_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.pdfbar_bind.md - binds components
@@ -54,7 +54,7 @@ dummy stub
 - api/link/ui.pdfbar_render.md - renders the specified item or the whole component
 - api/ui.pdfbar_reset.md - 
 - api/link/ui.pdfbar_resize.md - adjusts the view to a new size
-- api/link/ui.pdfbar_resizechildren.md - resizes all children of the calling component
+- api/link/ui.pdfbar_resizechildren.md - resizes all children of the called component
 - api/link/ui.pdfbar_scrollto.md - scrolls the data container to a certain position
 - api/link/ui.pdfbar_setdirty.md - marks the form as the one with changed values and vice versa
 - api/ui.pdfbar_setmasterpage.md - 

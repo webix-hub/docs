@@ -14,7 +14,7 @@ Check the [Migration Guide](migration.md#webix4243) for more details.
 New Features
 ---------------
 
-- [Double List](desktop/double_list.md) widget with customizable buttons
+- [Double List](desktop/double_list.md) control with extended selection possibilities and customizable buttons
 - [Bullet Graph](desktop/bullet_graph.md) as a compact version of Gage to show more information in a limited space (PRO edition)
 - [Form Input](desktop/forminput.md) control that allows rendering form components in the common style
 - [Webix+React Integration](desktop/react.md)

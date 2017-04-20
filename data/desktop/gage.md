@@ -140,5 +140,34 @@ webix.ajax(url).then(function(data){
 });
 ~~~
 
+Adjusting Animation Speed
+------------------------
+
+If you need to change the speed of animation, you can do this via CSS by addressing the following classes:
+
+- **.webix_gage_gradient_point_animated** - it is the arrow pointer that shows changing data values. You should configure its property *transition* 
+
+~~~css
+.webix_gage_gradient_point_animated {
+    transition: transform 1.3s linear;
+}
+~~~
+
+- **.webix_gage_animated** - the colored line. You need to adjust its properties *transition* and *animation*.
+
+~~~css
+.webix_gage_animated {
+    animation: gage_dash 1.3s linear forwards;
+    transition: stroke 1.3s linear, stroke-dasharray 1.3s linear;
+}
+~~~
+
+~~~css
+@keyframes gage_dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+~~~
 
 @edition:pro

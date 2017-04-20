@@ -294,7 +294,7 @@ var treetable = webix.ui({
 - api/link/ui.treetable_blockselect_config.md - enables/disables block selection
 - api/link/ui.treetable_borderless_config.md - used to hide the component borders
 - api/link/ui.treetable_checkboxrefresh_config.md - controls behavior of checkbox editors in grid
-- api/link/ui.treetable_clipboard_config.md - 
+- api/link/ui.treetable_clipboard_config.md - enables/disables clipboard support
 - api/link/ui.treetable_columnwidth_config.md - defines the default width for columns (in pixels)
 - api/link/ui.treetable_columns_config.md - configures columns of the table
 - api/link/ui.treetable_container_config.md - an HTML container (or its id) where the component should be initialized

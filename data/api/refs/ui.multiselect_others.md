@@ -3,7 +3,7 @@ Others
 
 {{api
 - api/link/ui.multiselect_$comparevalue_other.md - compares the old value of the control with the one that is going to be set
-- api/ui.multiselect_$cssname_other.md - name which will be used as part of css class
+- api/ui.multiselect_$cssname_other.md - name of the widget the CSS of which you want to inherit for a custom widget
 - api/link/ui.multiselect_$getsize_other.md - returns the current size of the component
 - api/link/ui.multiselect_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.multiselect_$height_other.md - current height of the view
