@@ -13,13 +13,14 @@ onBeforeDeleteFile
 
    
 @example:
-$$("fmanager").attachEvent("onBeforeDeleteFile",function(id){
+$$("fmanager").attachEvent("onBeforeDeleteFile", function(id){
     // your code
-    return true;
 });
 
 @template:	api_event
 @descr:
+
+Returning false within the handler function will prevent the execution of the further logic and the file/folder will not be deleted.
 
 @relatedapi:
 api/ui.filemanager_deletefile.md

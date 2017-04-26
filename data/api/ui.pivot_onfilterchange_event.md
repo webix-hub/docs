@@ -1,11 +1,8 @@
 onFilterChange
 =============
-
-@todo:
-	check 
     
 @short:
-	fires when values are changed in filter fields on toolbar
+	fires when value is changed in a filter field on the toolbar
 
 @params:
 
@@ -13,7 +10,7 @@ onFilterChange
 - value 	string		the filter value
 
 @example:
-$$("pivot1").attachEvent("onFilterChange", function("continent", "Europe"){
+$$("pivot1").attachEvent("onFilterChange", function(name, value){
 	// your code
 });
 

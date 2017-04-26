@@ -1,17 +1,14 @@
 onAfterDeleteFile
 =============
 
-@todo:check description
-
-
 @short:
-	fires after a file/folder has been deleted and file manager is rerendered
+	fires after a file/folder has been deleted
 
 @params:	
   
 
 @example:
-$$("fmanager").attachEvent("onAfterDeleteFile",function(){
+$$("fmanager").attachEvent("onAfterDeleteFile", function(){
     // your code
 });
 

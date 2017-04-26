@@ -1,15 +1,14 @@
 onItemClick
 =============
 
-@todo:
-	check 
-
 @short:
-	fires when an item is clicked
+	fires when a data item is clicked
 
 @params:
 
-- itemId		string|number			the item id
+- id		string|number|object			the item id
+- e			Event		a native event object	
+- node		HTMLElement		the target HTML element
 
 @example:
 $$("mypivot").attachEvent("onItemClick", function(id){
@@ -29,4 +28,13 @@ webix.ui({
 
 @template:	api_event
 @descr:
+
+Item id depends on Pivot type. 
+
+For Pivot Datatable it is an object with the following properties: 
+
+- row	(string|number)  data item id
+- column  (string)  column id
+
+For Pivot Chart id is a string or number that points to a data item id.
 

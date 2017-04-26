@@ -6,6 +6,7 @@ Events
 - api/link/ui.pivot_onafterdelete_event.md - fires after item deleting
 - api/link/ui.pivot_onafterload_event.md - fires after data loading is complete
 - api/link/ui.pivot_onaftersort_event.md - fires after sorting dataset
+- api/ui.pivot_onapply_event.md - fires when the action has been applied by clicking the "Apply" button 
 - api/link/ui.pivot_onbeforeadd_event.md - fires before adding item to datastore
 - api/ui.pivot_onbeforeapply_event.md - fires on the "Apply" button click
 - api/ui.pivot_onbeforecancel_event.md - fires when the "Cancel" button is clicked in the filters popup
@@ -13,6 +14,7 @@ Events
 - api/link/ui.pivot_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/ui.pivot_onbeforerender_event.md - fires just before the pivot is rendered
 - api/link/ui.pivot_onbeforesort_event.md - fires before sorting dataset
+- api/ui.pivot_oncancel_event.md - fires when the action has been cancelled by clicking the "Cancel" button in the filters popup
 - api/link/ui.pivot_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/link/ui.pivot_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.pivot_ondataupdate_event.md - fires when data item is in update process
@@ -33,6 +35,8 @@ Events
 - api/link/ui.pivot_onafterdelete_event.md
 - api/link/ui.pivot_onafterload_event.md
 - api/link/ui.pivot_onaftersort_event.md
+- api/ui.pivot_onapply_event.md
+- api/ui.pivot_oncancel_event.md
 - api/link/ui.pivot_onbeforeadd_event.md
 - api/ui.pivot_onbeforeapply_event.md
 - api/ui.pivot_onbeforecancel_event.md

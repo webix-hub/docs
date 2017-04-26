@@ -1,11 +1,8 @@
 onAfterEditFile
 =============
 
-@todo:
-	check description
-
 @short:
-	fires after the Rename action is chosen in the popup menu and focus is set in the input for editing
+	fires after the Rename action is chosen in the popup menu and the editor is opened for the related item
 
 @params:
 

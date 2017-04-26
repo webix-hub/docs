@@ -1,9 +1,6 @@
 onAfterPasteFile
 =============
 
-@todo:
-	check 
-
 @short:
 	fires a file has been pasted
 
