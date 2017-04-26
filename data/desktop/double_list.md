@@ -4,7 +4,7 @@ DoubleList
 ##API Reference
 
 - [Methods, parameters and events](api/refs/ui.dbllist.md)
-- [Samples](http://docs.webix.com/samples/05_list/18_dbllist.html)
+- [Samples](http://docs.webix.com/samples/13_form/01_controls/25_dbllist.html)
 
 
 ##Overview

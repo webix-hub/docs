@@ -13,12 +13,14 @@ In this article you will know how:
 
 Styling a whole tree
 ------------------------
+
 To apply some style to a whole tree you can use the api/link/ui.tree_css_config.md parameter. 
 
 <img src="datatree/styling_whole_tree.png"/>
-~~~html
+
+~~~js
 <style>
-    .my_style  {
+	.my_style  {
         font-style: italic;
         color:blue;
     }
@@ -36,6 +38,7 @@ To apply some style to a whole tree you can use the api/link/ui.tree_css_config.
 
 Styling specific nodes
 --------------------------
+
 Generally, to style a specific item you can use the **css** attribute inside the data source.
 
 <img src="datatree/styling_specific_items.png"/>
@@ -48,7 +51,7 @@ Generally, to style a specific item you can use the **css** attribute inside the
 </style>
  
 <script>
-grid = new webix.ui({
+webix.ui({
 	view:"tree",
     data: [
        {id:"root", value:"Films data", open:true, data:[
@@ -70,6 +73,7 @@ grid = new webix.ui({
 
 Adding lines
 ------------------
+
 To add lines to tree nodes, set the api/link/ui.tree_type_config.md parameter to the '*lineTree*' value.
 
 <img src="datatree/styling_tree_lines.png"/>
@@ -78,7 +82,7 @@ To add lines to tree nodes, set the api/link/ui.tree_type_config.md parameter to
 	Adding lines to tree nodes
 }}
 ~~~js
-tree = new webix.ui({
+webix.ui({
 	view:"tree",
     ...
 	type:"lineTree"
@@ -94,6 +98,7 @@ tree = new webix.ui({
 
 Templates
 -------------------------------------
+
 One of ways to fine-tune the style of the tree is define some template for it.
 
 <img src="datatree/styling_templates.png"/>
@@ -151,7 +156,7 @@ The simplest way to change folder and file icons for all tree nodes is to **rede
 
 To set icons to **desired tree nodes**, you should store their titles in the data source: 
 
-If icon titles are stored under an **icon** property in the dataset, they are applied  as **webix_icon_{{icon_name}}** CSS class:
+If icon titles are stored under an **icon** property in the dataset, they are applied as **webix_icon_{icon_name}** CSS class:
 
 ~~~js
 var data_with_icon = [
@@ -175,7 +180,7 @@ The root item gets **webix_icon_home** CSS class. All you have to do is to set t
 
 {{sample 17_datatree/03_styles/03_icons.html}}
 
-If icon titles are stored under an **image** property in the dataset, they are applied within a [node template](datatree/node_templates.md): 
+If icon titles are stored under the **image** property in the dataset, they are applied within a [node template](datatree/node_templates.md): 
 
 ~~~js
 var data_with_icon = [
