@@ -186,18 +186,23 @@ grid.markSorting("title", "asc");
 ##Adding Custom Sorting Type
 
 You can define your own sorting type via the **sorting.as** property of the **webix.DataStore.prototype** object.
-You need to specify a function, that will describe a new type of sorting as follows:
+
+You need to specify a function that describes a new type of sorting as follows:
 
 ~~~js
-webix.DataStore.prototype.sorting.as.sort_type = 
-function(a,b){ return a.param > b.param ? 1 : -1 }
+webix.DataStore.prototype.sorting.as.sort_type = function(a,b){ 
+	return a > b ? 1 : -1; 
+}
 ~~~
+
+where *a, b* are cell values from the related column.  
 
 For example, let's set a new type "bylength" to sort data by the text length:
 
 ~~~js
-webix.DataStore.prototype.sorting.as.bylength = 
-function(a,b){ return a.length > b.length ? 1 : -1 }
+webix.DataStore.prototype.sorting.as.bylength = function(a,b){ 
+	return a.length > b.length ? 1 : -1;
+}
 ~~~
 
 To apply a custom sorting type to a column, you need to set its name as the value of the **sort** property for the corresponding column:
