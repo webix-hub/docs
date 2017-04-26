@@ -3,6 +3,13 @@ Version 4.3
 
 <span class="release_date">released on April 26, 2017</span>
 
+See also What's New of complex widgets:
+
+- [SpreadSheet](spreadsheet/whats_new.md)
+- [Pivot](pivot/whats_new.md) 
+- [File Manager](file_manager/whats_new.md) 
+
+
 Breaking Changes
 -----------------
 
@@ -30,10 +37,27 @@ Updates
 - ability to use [custom map source for Googlemap](desktop/googlemap.md#usingcustommapsource)
 - [autoheight for Datatable header lines](datatable/headers_footers.md#autoheightforheaderandfooter)
 - ability to use built-in validation rules in [forms with complexData](desktop/form.md#settinginitialvalues)
+- ability to [add custom icons into the Daterange widget](desktop/daterange.md#todayandclearicons)
+- Webix debug version warns about non-numeric sizes for widgets
+- visual update of the cursor for Datatable resizing (n-resize and e-resize cursor properties are replaced with row-resize and col-resize correspondingly)
+- FontAwesome updated to version 4.7
 
 Fixes
 ------
 
+- invalid message for several inputs in a row does not show 
+- .clear call for Form with Uploader
+- calling sync second time in Datastore results in an error 
+- global event handler leak in Tooltip
+- focus processing for ActiveContent elements 
+- key navigation: shift+tab doesn't open previous editor 
+- regression in object coping for sync operations in Datastore
+- using add in dynamic loading callback of tree-like views
+- removeView in isolated Layout
+- block selection in Datatable doesn't work on any page but first 
+- IE9 compatibility for Ajax requests
+- regression in hidden layout sizing
+- incorrect onBlur behaviour with select controls
 - regression in handling multiple loading calls at once
 - tooltip position near view borders
 - context menu position near view borders

@@ -135,11 +135,12 @@ $$("files").load("files.php");
 - api/ui.filemanager_onafterback_event.md - fires after the Filemanager "back" button has been clicked
 - api/ui.filemanager_onaftercreatefolder_event.md - fires after a new folder has been created
 - api/link/ui.filemanager_onafterdelete_event.md - fires after item deleting
-- api/ui.filemanager_onafterdeletefile_event.md - fires after a file/folder has been deleted and file manager is rerendered
+- api/ui.filemanager_onafterdeletefile_event.md - fires after a file/folder has been deleted
 - api/ui.filemanager_onafterdrop_event.md - fires after drag-n-drop has been finished
 - api/ui.filemanager_onafterdynparse_event.md - fires after the data loaded from the server-side script has been parsed into the widget
-- api/ui.filemanager_onaftereditfile_event.md - fires after the Rename action is chosen in the popup menu and focus is set in the input for editing
+- api/ui.filemanager_onaftereditfile_event.md - fires after the Rename action is chosen in the popup menu and the editor is opened for the related item
 - api/ui.filemanager_onaftereditstop_event.md - fires after the editor is closed
+- api/ui.filemanager_onafterfileupload_event.md - fires after a file has been uploaded successfully and the response from server has come
 - api/ui.filemanager_onafterhidetree_event.md - fires after the tree has been hidden
 - api/ui.filemanager_onafterleveldown_event.md - fires after selection has been moved to the child folder
 - api/ui.filemanager_onafterlevelup_event.md - fires after the <a href="file_manager/configuration.md#levelup">LevelUp</a> button has been clicked (selection moves to the parent folder)
@@ -154,7 +155,7 @@ $$("files").load("files.php");
 - api/ui.filemanager_onaftersearch_event.md - fires after filtering via the "search" input is finished
 - api/ui.filemanager_onaftershowtree_event.md - fires after the tree has been shown
 - api/link/ui.filemanager_onaftersort_event.md - fires after sorting dataset
-- api/ui.filemanager_onafteruploadfile_event.md - fires after the file dialog has opened and the file has been loaded
+- api/ui.filemanager_onafteruploaddialog_event.md - fires after the file dialog has opened
 - api/link/ui.filemanager_onbeforeadd_event.md - fires before adding item to datastore
 - api/ui.filemanager_onbeforeback_event.md - fires before the Filemanager "back" button has been clicked
 - api/ui.filemanager_onbeforecreatefolder_event.md - fires before a new folder has been created
@@ -183,7 +184,7 @@ $$("files").load("files.php");
 - api/ui.filemanager_onbeforesearchrequest_event.md - fires before a search request is sent to the server-side (see details <a href="file_manager/loading_data.md#serversidesearchingforcontent">here</a>)
 - api/ui.filemanager_onbeforeshowtree_event.md - fires before the tree is expanded
 - api/link/ui.filemanager_onbeforesort_event.md - fires before sorting dataset
-- api/ui.filemanager_onbeforeuploadfile_event.md - fires on the Upload action click, before the file dialog has opened
+- api/ui.filemanager_onbeforeuploaddialog_event.md - fires on the Upload action click, before the file dialog has opened
 - api/link/ui.filemanager_onbindrequest_event.md - fires when the component is ready to receive data from the master component
 - api/ui.filemanager_oncomponentinit_event.md - fires when File Manager is initialized
 - api/ui.filemanager_oncopyerror_event.md - fires if an error occurred during a file/folder copying

@@ -13,6 +13,7 @@ boolean, object
 webix.ui({
     view:"calendar",
 	icons: [
+    	//default "today" icon
    		{
         	template: function(){
             	return "<span class='webix_cal_icon_today webix_cal_icon'>"
@@ -26,6 +27,7 @@ webix.ui({
             	}
         	}
     	},
+        //default "clear" icon
     	{
         	template: function(){
             	return "<span class='webix_cal_icon_clear webix_cal_icon'>"
@@ -76,3 +78,7 @@ webix.ui({
 	]
 });
 ~~~
+
+
+@relatedsample:
+09_calendar/10_icons.html

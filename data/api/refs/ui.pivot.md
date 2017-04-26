@@ -111,6 +111,7 @@ var pivot = webix.ui({
 - api/link/ui.pivot_onafterdelete_event.md - fires after item deleting
 - api/link/ui.pivot_onafterload_event.md - fires after data loading is complete
 - api/link/ui.pivot_onaftersort_event.md - fires after sorting dataset
+- api/ui.pivot_onapply_event.md - fires when the action has been applied by clicking the "Apply" button
 - api/link/ui.pivot_onbeforeadd_event.md - fires before adding item to datastore
 - api/ui.pivot_onbeforeapply_event.md - fires on the "Apply" button click
 - api/ui.pivot_onbeforecancel_event.md - fires when the "Cancel" button is clicked in the filters popup
@@ -119,13 +120,14 @@ var pivot = webix.ui({
 - api/ui.pivot_onbeforerender_event.md - fires just before the pivot is rendered
 - api/link/ui.pivot_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.pivot_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/ui.pivot_oncancel_event.md - fires when the action has been cancelled by clicking the "Cancel" button in the filters popup
 - api/link/ui.pivot_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.pivot_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.pivot_ondestruct_event.md - occurs when component destroyed
-- api/ui.pivot_onfilterchange_event.md - fires when values are changed in filter fields on toolbar
+- api/ui.pivot_onfilterchange_event.md - fires when value is changed in a filter field on the toolbar
 - api/ui.pivot_onfiltercreate_event.md - fires each time a filter is created
 - api/ui.pivot_onheaderinit_event.md - fires when pivot header is initialized
-- api/ui.pivot_onitemclick_event.md - fires when an item is clicked
+- api/ui.pivot_onitemclick_event.md - fires when a data item is clicked
 - api/link/ui.pivot_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/ui.pivot_onpopup_event.md - fires after a configuration window for Pivot is created
 - api/ui.pivot_onviewinit_event.md - fires before inner view initialization
@@ -172,6 +174,7 @@ var pivot = webix.ui({
 - api/link/ui.pivot_padding_config.md - defines the space between the element borders and content (applies the specified value to all sides).
 - api/link/ui.pivot_paddingx_config.md - sets the right and left padding (applies the specified value to both sides)
 - api/link/ui.pivot_paddingy_config.md - sets the top and bottom padding (applies the specified value to both sides)
+- api/ui.pivot_ping_config.md - 
 - api/ui.pivot_popup_config.md - an object with the properties of the configuration popup
 - api/ui.pivot_profile_config.md - enables profiling (for development stage)
 - api/ui.pivot_readonly_config.md - disables the possibility to change pivot configuration settings
@@ -181,6 +184,7 @@ var pivot = webix.ui({
 - api/link/ui.pivot_responsive_config.md - enables responsive mode for horizontal layout
 - api/link/ui.pivot_rows_config.md - array of views objects arranged vertically
 - api/link/ui.pivot_scheme_config.md - defines schemes for data processing
+- api/ui.pivot_stablerowid_config.md - 
 - api/ui.pivot_structure_config.md - defines initial display and analysis pattern
 - api/ui.pivot_totalcolumn_config.md - calculates the total sum for each row
 - api/link/ui.pivot_type_config.md - defines the layout borders

@@ -1,8 +1,8 @@
 Pivot Table
 ===========
 
-What's New
------------
+<div class="h2">What's New</div>
+
 
 Check pivot/whats_new.md list to keep up with latest updates.
 

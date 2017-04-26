@@ -1,8 +1,5 @@
-onBeforeUploadFile
+onBeforeUploadDialog
 =============
-
-@todo:
-	check 
 
 @short:
 	fires on the Upload action click, before the file dialog has opened
@@ -12,7 +9,7 @@ onBeforeUploadFile
 - targetId		string			the id of the folder where a new file will be uploaded
 
 @example:
-$$("fmanager").attachEvent("onBeforeUploadFile",function(targetId){
+$$("fmanager").attachEvent("onBeforeUploadDialog",function(targetId){
     // your code
     return true;
 });
@@ -25,7 +22,7 @@ $$("fmanager").attachEvent("onBeforeUploadFile",function(targetId){
 @descr:
 
 @relatedapi:
-api/ui.filemanager_onafteruploadfile_event.md
-api/ui.filemanager_onbeforefileupload_event.md
+api/ui.filemanager_onafteruploaddialog_event.md
 api/ui.filemanager_uploadfile.md
+
 

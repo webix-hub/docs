@@ -37,10 +37,10 @@ webix.ui({
 
 **Main properties**
 
-- calendarCount - (number) sets the amount of calendars to be displayed
-- icons - (boolean) specifies whether the ["Today" and "Clear"](api/ui.datepicker_icons_config.md) icons will be shown
-- timepicker - (boolean) sets a time selector below the calendars' grids
-- value - (object) initial range that should be selected in the DateRange
+- **calendarCount** - (*number*) sets the amount of calendars to be displayed
+- **icons** - (*boolean|object*) specifies whether the ["Today" and "Clear"](api/ui.daterange_icons_config.md) icons will be shown or redefines their configuration
+- **timepicker** - (*boolean*) sets a time selector below the calendars' grids
+- **value** - (*object*) initial range that should be selected in the DateRange
 
 
 Working with DateRange
@@ -85,7 +85,8 @@ webix.ui({
 ~~~
 
 
-##DateRangePicker 
+DateRangePicker 
+----------------
 
 DateRange can be shown by user request, e.g. when a user wants to pick a date range and time to fill the form. 
 In this case, you can make use of the desktop/daterangepicker.md control. 
@@ -104,5 +105,101 @@ webix.ui({
 ~~~
 
 {{sample 60_pro/02_form/11_daterangepicker.html}}
+
+
+
+"Today" and "Clear" Icons
+----------------------
+
+You can add and customize the DateRange icons with the help of the api/ui.daterange_icons_config.md parameter. The default icons are "Today" and "Clear".
+
+The Today icon allows selecting the current date. The Clear icon removes date selection.
+
+<img src="desktop/daterange_default_icons.png"/>
+
+These icons are optional and specified in the **icons** array. The code below renders a daterange with "Today" and "Clear" icons:
+
+
+~~~js
+webix.ui({
+	view:"daterange",
+	icons:true
+});	
+~~~  
+
+To hide the icons, you should set the **icons** property to **false**.
+
+
+###Default Icons Config
+
+The default icons configuration is specified as follows:
+
+~~~js
+webix.ui({
+    view:"daterange",
+    icons:[
+        //default "today" icon
+        {
+            template:function(){
+             return "<span class='webix_cal_icon_today webix_cal_icon'>"
+                +webix.i18n.calendar.today
+                +"</span>"
+            },
+            on_click:{
+                "webix_cal_icon_today":function(){
+                    this.addToRange(new Date());
+                    this.callEvent("onTodaySet",[this.getValue()]);
+                }
+            }
+        },
+        //default "clear" icon
+        {
+            template:function(){
+            return "<span class='webix_cal_icon_clear webix_cal_icon'>"
+                +webix.i18n.calendar.clear
+                +"</span>"
+            },
+            on_click:{
+                "webix_cal_icon_clear":function(){
+                    this.setValue("");
+                    this.callEvent("onDateClear", []);
+                }
+            }
+        }
+    ]   
+});
+~~~
+
+###Adding a Custom Icon
+
+You can also redefine the default icons or add custom ones. For example, let's add the "Custom week" icon as shown below:
+
+<img src="desktop/daterange_custom_icon.png"/>
+
+To add a custom icon, you need to specify it in the *icons* array. For our icon, the code can be as follows:
+
+~~~js
+webix.ui({
+  view:"daterange",
+  icons:[
+   {
+	template:function(){
+		return "<span class='webix_cal_icon_week webix_cal_icon'>Current week</span>"
+	},
+	on_click:{
+		"webix_cal_icon_week":function(){
+			this.setValue({
+				start:new Date(),
+				end:webix.Date.add(new Date(), 1, "week")
+			});
+		  }
+	   }
+    }
+  ]
+});
+~~~
+
+{{sample 60_pro/14_daterange/02_daterange_icons.html}}
+
 
 @edition:pro

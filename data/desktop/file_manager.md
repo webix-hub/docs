@@ -1,6 +1,11 @@
 File Manager
 ==============
 
+
+<div class="h2">What's New</div>
+
+Check file_manager/whats_new.md list to keep up with latest updates.
+
 API Reference
 --------------
 
@@ -65,6 +70,7 @@ Apart from files, File Manager allows working with any kind of hierarchical data
 
 @index:
 
+- file_manager/whats_new.md
 - file_manager/fmanager_init.md
 - file_manager/loading_data.md
 - file_manager/templates.md

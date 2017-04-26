@@ -17,9 +17,9 @@ fmanager.uploadFile(target);
 @descr:
 
 @relatedapi:
-api/ui.filemanager_onbeforeuploadfile_event.md
-api/ui.filemanager_onafteruploadfile_event.md
-api/ui.filemanager_onbeforefileupload_event.md
+api/ui.filemanager_onbeforeuploaddialog_event.md
+api/ui.filemanager_onafteruploaddialog_event.md
+
 
 @related:
 <a href="file_manager/configuration.md#actionsmenu">Actions Menu</a>

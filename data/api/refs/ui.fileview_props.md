@@ -6,7 +6,7 @@ Properties
 - api/link/ui.fileview_autoheight_config.md - enables autosizing to content
 - api/link/ui.fileview_borderless_config.md - used to hide the component borders
 - api/link/ui.fileview_click_config.md - sets an action happening on a button click
-- api/link/ui.fileview_clipboard_config.md - 
+- api/ui.fileview_clipboard_config.md - 
 - api/link/ui.fileview_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.fileview_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.fileview_data_config.md - JavaScript array containing data for the component
@@ -64,7 +64,7 @@ Properties
 - api/link/ui.fileview_autoheight_config.md
 - api/link/ui.fileview_borderless_config.md
 - api/link/ui.fileview_click_config.md
-- api/link/ui.fileview_clipboard_config.md
+- api/ui.fileview_clipboard_config.md
 - api/link/ui.fileview_container_config.md
 - api/link/ui.fileview_css_config.md
 - api/link/ui.fileview_data_config.md
