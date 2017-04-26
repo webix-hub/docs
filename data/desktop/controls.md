@@ -1,4 +1,4 @@
-Form Controls
+UI Controls
 =============
 
 Webix delivers a variety of controls that can be placed in the form. 
@@ -18,6 +18,7 @@ These controls can be used for entering text, selecting an option, date or color
 - [DatePicker](desktop/datepicker.md)
 - [DateRangePicker](desktop/daterangepicker.md)
 - [Fieldset](desktop/fieldset.md)
+- [FormInput](desktop/forminput.md)
 - [Icon](desktop/icon.md)
 - [Label](desktop/label.md)
 - [Multicombo](desktop/multicombo.md)
@@ -75,6 +76,7 @@ For further details check the desktop/controls_guide.md article.
   - desktop/datepicker.md
   - desktop/daterangepicker.md
   - desktop/fieldset.md
+  - desktop/forminput.md
   - desktop/icon.md
   - desktop/label.md
   - desktop/multicombo.md

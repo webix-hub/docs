@@ -44,6 +44,9 @@ Or, to create a control group within a **form**:
 
 ####Main Properties
 
-- **body** (object) - fieldset body object that contains **rows** or **cols** array with controls;
-- **label** (string) - text label of the control group, integrated into border.
+- **body** - (*object*) fieldset body object that contains **rows** or **cols** array with controls
+- **label** - (*string*) text label of the control group, integrated into border
+- **borderless** - (*boolean*) used to hide the component borders, *true* by default
+- **paddingX** - (*number*) sets the right and left padding (applies the specified value to both sides), 18 by default
+- **paddingY** - (*number*) sets the top and bottom padding (applies the specified value to both sides), 30 by default
 

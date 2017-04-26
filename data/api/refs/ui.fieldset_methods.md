@@ -18,6 +18,7 @@ Methods
 - api/link/ui.fieldset_isenabled.md - checks whether the view is enabled
 - api/link/ui.fieldset_isvisible.md - checks whether the view is visible
 - api/link/ui.fieldset_resize.md - adjusts the view to a new size
+- api/ui.fieldset_resizechildren.md - resizes all children of the called component
 - api/link/ui.fieldset_show.md - makes the component visible
 - api/link/ui.fieldset_unbind.md - breaks "bind" link
 }}
@@ -39,6 +40,7 @@ Methods
 - api/link/ui.fieldset_isenabled.md
 - api/link/ui.fieldset_isvisible.md
 - api/link/ui.fieldset_resize.md
+- api/ui.fieldset_resizechildren.md
 - api/link/ui.fieldset_show.md
 - api/link/ui.fieldset_unbind.md
 

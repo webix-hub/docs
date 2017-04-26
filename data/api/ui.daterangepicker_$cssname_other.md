@@ -2,7 +2,7 @@ $cssName
 =============
 
 
-@short: name of the widget which css you want to inherit for a custom widget
+@short: name of the widget the CSS of which you want to inherit for a custom widget
 	
 
 @type:string
@@ -10,12 +10,12 @@ $cssName
 @example:
 
 webix.protoUI({
-	name:"mybutton",
-    $cssName:"button",
+	name:"mydaterangepicker",
+    $cssName:"datepicker",
     //other properties and methods
-}, webix.ui.button);
+}, webix.ui.datepicker);
 
-webix.ui({ view:"mybutton"});
+webix.ui({ view:"mydaterangepicker"});
 
 @related:
 - desktop/extending_components.md

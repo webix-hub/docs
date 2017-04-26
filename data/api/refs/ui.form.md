@@ -33,7 +33,7 @@ var form = webix.ui({
 <div class='h2'>Methods</div>
 
 {{api
-- api/link/ui.form_addview.md - add new view to layout-like component
+- api/link/ui.form_addview.md - adds a new view to a layout-like component
 - api/link/ui.form_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.form_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.form_bind.md - binds components
@@ -71,7 +71,7 @@ var form = webix.ui({
 - api/link/ui.form_removeview.md - removes view from layout-like component
 - api/link/ui.form_render.md - renders the specified item or the whole component
 - api/link/ui.form_resize.md - adjusts the view to a new size
-- api/link/ui.form_resizechildren.md - resizes all children of the calling component
+- api/link/ui.form_resizechildren.md - resizes all children of the called component
 - api/link/ui.form_scrollto.md - scrolls the data container to a certain position
 - api/link/ui.form_setdirty.md - marks the form as the one with changed values and vice versa
 - api/link/ui.form_setvalues.md - sets values into the inputs of a form/toolbar/property sheet control
@@ -97,8 +97,8 @@ var form = webix.ui({
 - api/link/ui.form_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.form_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/ui.form_onsubmit_event.md - fires when enter key is pressed for a focused control in the form
-- api/link/ui.form_onvalidationerror_event.md - fires when the form fails to pass validation
-- api/link/ui.form_onvalidationsuccess_event.md - fires after the form has passed validation successfully
+- api/link/ui.form_onvalidationerror_event.md - fires when a form input fails to pass validation
+- api/link/ui.form_onvalidationsuccess_event.md - fires after a form input has passed validation successfully
 - api/link/ui.form_onvalues_event.md - fires after values have been set within toolbar or form
 }}
 
@@ -116,7 +116,7 @@ var form = webix.ui({
 - api/link/ui.form_data_config.md - JavaScript array containing data for the component
 - api/link/ui.form_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.form_datatype_config.md - the type of loaded data
-- api/link/ui.form_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.form_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.form_elements_config.md - collection of subviews
 - api/link/ui.form_elementsconfig_config.md - settings, which will be applied to all nested inputs
 - api/link/ui.form_gravity_config.md - sets the view gravity (1 by default)

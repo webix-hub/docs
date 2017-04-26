@@ -19,4 +19,8 @@ fmanager.pasteFile(id);
 @descr:
 
 @relatedapi:
+api/ui.filemanager_onafterpastefile_event.md
 api/ui.filemanager_onbeforepastefile_event.md
+
+@related:
+<a href="file_manager/configuration.md#actionsmenu">Actions Menu</a>

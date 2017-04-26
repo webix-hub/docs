@@ -3,8 +3,8 @@ X-List
 
 ##Overview
 
-UI-related x-list inherits from [list](desktop/list.md) and differs from it in the way of data presenting: while all lists arrange items vertically, 
-x-list offers the horizontal pattern.
+UI-related X-List inherits from [List](desktop/list.md) and differs from it in the way of data presenting: while all lists arrange items vertically, 
+X-List offers the horizontal pattern.
 
 <img src="desktop/xlist.png"/>
 
@@ -46,7 +46,8 @@ Note that there's no built-in possibility to edit data with list. You should cre
 - [Sizing Components](desktop/dimensions.md)
 - [Resizing](desktop/resizing.md)
 - [Redefinition of the Components](desktop/redefinition.md)
+- [X-List CSS Image Map](desktop/xlist_css.md)
 - [List](desktop/list.md)
 - [UnitList](desktop/unitlist.md)
 - [GroupList](desktop/grouplist.md)
-- [X-List CSS Image Map](desktop/xlist_css.md)
+- [Double List](desktop/double_list.md)

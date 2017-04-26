@@ -14,7 +14,7 @@ Properties
 - api/link/ui.organogram_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.organogram_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.organogram_datatype_config.md - the type of loaded data
-- api/link/ui.organogram_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.organogram_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.organogram_filtermode_config.md - defines the pattern for tree item filtering
 - api/link/ui.organogram_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.organogram_height_config.md - sets the height of the component

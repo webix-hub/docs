@@ -189,7 +189,7 @@ dummy stub
 - api/link/ui.filemenu_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.filemenu_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.filemenu_datatype_config.md - the type of loaded data
-- api/link/ui.filemenu_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.filemenu_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.filemenu_drag_config.md - enables or disables drag-and-drop
 - api/link/ui.filemenu_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.filemenu_externaldata_config.md - allows defining custom 'move' logic for the component.

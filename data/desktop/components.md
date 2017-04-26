@@ -1,5 +1,6 @@
 UI Widgets
 ==================
+
 The <a title="ui library" href="http://webix.com">Webix UI library</a> supplies over 80 fully customizable widgets and controls
 to help you build interfaces of different kinds, nicely present data and work with it. 
 There are also helpful extensions, integrations with <br> third-party tools and specific features to make your applications 
@@ -113,6 +114,12 @@ Visualization widgets provide the possibility to display data in various forms. 
 
 <div class="components_group" style="padding-left:50px;">
 	<div>
+		<a href="desktop/bullet_graph.md">
+			<img src="desktop/icons/bulletgraph.png"/>
+			<br>BulletGraph
+		</a>
+    </div>
+	<div>
 		<a href="desktop/chart.md">
 			<img src="desktop/icons/chart.png"/>
 			<br>Chart
@@ -124,16 +131,16 @@ Visualization widgets provide the possibility to display data in various forms. 
 			<br>Gage
 		</a>
     </div>
-	<div>
-		<a href="desktop/range_chart.md">
-			<img src="desktop/icons/rangechart.png"/>
-			<br>RangeChart
-		</a>
-    </div>
     <div>
 		<a href="desktop/organogram.md">
 			<img src="desktop/icons/organogram.png"/>
 			<br>Organogram
+		</a>
+    </div>
+    <div>
+		<a href="desktop/range_chart.md">
+			<img src="desktop/icons/rangechart.png"/>
+			<br>RangeChart
 		</a>
     </div>
     <div>
@@ -276,15 +283,15 @@ HTML-oriented widgets supply handy means for using habitual HTML elements in an 
 		</a>
     </div>
     <div>
-		<a href="desktop/video.md">
-			<img src="desktop/icons/video.png"/>
-			<br>Video
-		</a>
-    </div>
-    <div>
 		<a href="desktop/template.md">
 			<img src="desktop/icons/template.png"/>
 			<br>Template
+		</a>
+    </div>
+    <div>
+		<a href="desktop/video.md">
+			<img src="desktop/icons/video.png"/>
+			<br>Video
 		</a>
     </div>
 </div>
@@ -359,14 +366,16 @@ Note that any event can be attached to any widget by referring to its ID.
 		<li><a href="desktop/counter.md"><img src="api/toc/counter.png"/> Counter</a></li>             
         <li><a href="desktop/daterangepicker.md"><img src="api/toc/daterangepicker.png"/> DateRangePicker</a></li>   
         <li><a href="desktop/datepicker.md"><img src="api/toc/datepicker.png"/> DatePicker</a></li>
+        <li><a href="desktop/datasuggest.md"><img src="api/toc/datasuggest.png"/> DataSuggest</a></li>
 	</ul>
 </div>
 
 <div class="controls_group">
-	<ul>      
-        <li><a href="desktop/datasuggest.md"><img src="api/toc/datasuggest.png"/> DataSuggest</a></li>
+	<ul>
+    	<li><a href="desktop/double_list.md"><img src="api/toc/doublelist.png"/>DoubleList</a></li>
     	<li><a href="desktop/icon.md"><img src="api/toc/icon.png"/> Icon</a></li>
     	<li><a href="desktop/fieldset.md"> <img src="api/toc/fieldset.png"/> Fieldset</a></li>
+        <li><a href="desktop/forminput.md"> <img src="api/toc/forminput.png"/> FormInput</a></li>
         <li><a href="desktop/gridsuggest.md"><img src="api/toc/gridsuggest.png"/> GridSuggest</a></li>
 		<li><a href="desktop/label.md"><img src="api/toc/label.png"/> Label</a></li>
         <li><a href="desktop/multicombo.md"><img src="api/toc/multicombo.png"/> Multicombo</a></li>
@@ -375,21 +384,21 @@ Note that any event can be attached to any widget by referring to its ID.
 </div>
 
 <div class="controls_group">
-	<ul>    	
-        <li><a href="desktop/multitext.md"> <img src="api/toc/multitext.png"/> Multitext</a></li>
+	<ul>
+    	<li><a href="desktop/multitext.md"> <img src="api/toc/multitext.png"/> Multitext</a></li>
     	<li><a href="desktop/radio.md"> <img src="api/toc/radio.png"/> Radio</a></li>
         <li><a href="desktop/rangeslider.md"> <img src="api/toc/rangeslider.png"/> RangeSlider</a></li>
 		<li><a href="desktop/richselect.md"><img src="api/toc/richselect.png"/> RichSelect</a></li>
         <li><a href="desktop/richtext.md"><img src="api/toc/richtext.png"/> RichText</a></li>
     	<li><a href="desktop/search.md"><img src="api/toc/search.png"/> Search</a></li>
-    	<li><a href="desktop/select.md"><img src="api/toc/select.png"/> Select</a></li>	        
+    	<li><a href="desktop/select.md"><img src="api/toc/select.png"/> Select</a></li>	
+        <li><a href="desktop/segmented.md"><img src="api/toc/segmented.png"/>Segmented</a></li>
 	</ul>
 </div>
 
 <div class="controls_group">
-	<ul>    	
-    	<li><a href="desktop/segmented.md"><img src="api/toc/segmented.png"/>Segmented</a></li>
-        <li><a href="desktop/slider.md"><img src="api/toc/slider.png"/>Slider</a></li>	
+	<ul>
+    	<li><a href="desktop/slider.md"><img src="api/toc/slider.png"/>Slider</a></li>	
         <li><a href="desktop/suggest.md"><img src="api/toc/suggest.png" style="padding-right:4px;"/> Suggest</a></li>
     	<li><a href="desktop/tabbar.md"><img src="api/toc/tabbar.png"/>Tabbar</a></li>
 		<li><a href="desktop/text.md"><img src="api/toc/text.png"/>Text</a></li>	
@@ -443,20 +452,23 @@ div.controls_group img {
 
 
 @index:
+- datatable/index.md
+- datatree/index.md
 - desktop/accordion.md
 - desktop/barcode.md
+- desktop/bullet_graph.md
 - desktop/calendar.md
 - desktop/carousel.md
 - desktop/chart.md
 - desktop/colorboard.md
 - desktop/context.md
 - desktop/contextmenu.md
-- datatable/index.md
+- desktop/controls.md
 - desktop/dataview.md
 - desktop/daterange.md
+- desktop/double_list.md
 - desktop/excelviewer.md
 - desktop/form.md
-- desktop/controls.md
 - desktop/gage.md
 - desktop/googlemap.md
 - desktop/grouplist.md
@@ -479,7 +491,6 @@ div.controls_group img {
 - desktop/toolbar.md
 - desktop/tooltip_component.md
 - desktop/treemap.md
-- datatree/index.md
 - desktop/treetable.md
 - desktop/unitlist.md
 - desktop/uploader.md

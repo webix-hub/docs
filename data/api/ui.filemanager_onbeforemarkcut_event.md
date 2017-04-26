@@ -24,4 +24,5 @@ $$("files").attachEvent("onBeforeMarkCut", function(ids){
 64_file_manager/02_events/05_copy.html
 
 @relatedapi:
+api/ui.filemanager_onaftermarkcut_event.md
 api/ui.filemanager_markcut.md

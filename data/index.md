@@ -7,14 +7,14 @@ Start
 <div class='index-pc'></div>
 <div class='index-board'>
 
-<h2>Meet Webix 4.2!</h2>
+<h2>Meet Webix 4.3!</h2>
 <ul>
-	<li>Productive <a href="desktop/vue.md"> integration with Vue.js</a></li>
-	<li>Improved <a href="spreadsheet/whats_new.md#newfeatures">SpreadSheet</a>  math, navigation and look</li>
-    <li>Enhanced <a href="desktop/pivot.md">Pivot</a> performance with Web Workers</li>
+	<li>Informative <a href="desktop/bullet_graph.md">Bullet Graph</a></li>
+	<li>Extended selection possibilities with <a href="desktop/double_list.md">Double List</a></li>
+    <li>Nice <a href="desktop/forminput.md">Form Input</a> control for perfect forms appearance</li>
 </ul>
 
-<p> and <a href="desktop/whats_new_4_2.md">many more...</a></p>
+<p> and <a href="desktop/whats_new_4_3.md">many more...</a></p>
 <a href='http://webix.com/download/' class='index-download' title='Download Webix'></a>
 </div>
 

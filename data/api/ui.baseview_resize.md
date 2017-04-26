@@ -8,8 +8,8 @@ resize
 
 @example:
 dtable = new webix.ui({
-        view:"datatable",
-        ...
+	view:"datatable",
+    ...
 })
  
 dtable.define("width", 700);

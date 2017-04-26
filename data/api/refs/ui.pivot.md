@@ -42,7 +42,7 @@ var pivot = webix.ui({
 {{api
 - api/link/ui.pivot_add.md - adds an item to the store
 - api/ui.pivot_addoperation.md - adds a custom data operation
-- api/link/ui.pivot_addview.md - add new view to layout-like component
+- api/link/ui.pivot_addview.md - adds a new view to a layout-like component
 - api/link/ui.pivot_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.pivot_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.pivot_bind.md - binds components
@@ -89,7 +89,7 @@ var pivot = webix.ui({
 - api/link/ui.pivot_removeview.md - removes view from layout-like component
 - api/ui.pivot_render.md - renders a pivot on the page
 - api/link/ui.pivot_resize.md - adjusts the view to a new size
-- api/link/ui.pivot_resizechildren.md - resizes all children of the calling component
+- api/link/ui.pivot_resizechildren.md - resizes all children of the called component
 - api/link/ui.pivot_serialize.md - serializes data to a JSON object
 - api/ui.pivot_setstructure.md - sets the pivot structure
 - api/link/ui.pivot_show.md - makes the component visible
@@ -111,18 +111,23 @@ var pivot = webix.ui({
 - api/link/ui.pivot_onafterdelete_event.md - fires after item deleting
 - api/link/ui.pivot_onafterload_event.md - fires after data loading is complete
 - api/link/ui.pivot_onaftersort_event.md - fires after sorting dataset
+- api/ui.pivot_onapply_event.md - fires when the action has been applied by clicking the "Apply" button
 - api/link/ui.pivot_onbeforeadd_event.md - fires before adding item to datastore
 - api/ui.pivot_onbeforeapply_event.md - fires on the "Apply" button click
+- api/ui.pivot_onbeforecancel_event.md - fires when the "Cancel" button is clicked in the filters popup
 - api/link/ui.pivot_onbeforedelete_event.md - fires before item deleting
 - api/link/ui.pivot_onbeforeload_event.md - occurs immediately before data loading has been started
 - api/ui.pivot_onbeforerender_event.md - fires just before the pivot is rendered
 - api/link/ui.pivot_onbeforesort_event.md - fires before sorting dataset
 - api/link/ui.pivot_onbindrequest_event.md - fires when the component is ready to receive data from the master component
+- api/ui.pivot_oncancel_event.md - fires when the action has been cancelled by clicking the "Cancel" button in the filters popup
 - api/link/ui.pivot_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.pivot_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.pivot_ondestruct_event.md - occurs when component destroyed
+- api/ui.pivot_onfilterchange_event.md - fires when value is changed in a filter field on the toolbar
 - api/ui.pivot_onfiltercreate_event.md - fires each time a filter is created
 - api/ui.pivot_onheaderinit_event.md - fires when pivot header is initialized
+- api/ui.pivot_onitemclick_event.md - fires when a data item is clicked
 - api/link/ui.pivot_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
 - api/ui.pivot_onpopup_event.md - fires after a configuration window for Pivot is created
 - api/ui.pivot_onviewinit_event.md - fires before inner view initialization
@@ -142,7 +147,7 @@ var pivot = webix.ui({
 - api/link/ui.pivot_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.pivot_data_config.md - JavaScript array containing data for the component
 - api/link/ui.pivot_datatype_config.md - the type of loaded data
-- api/link/ui.pivot_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.pivot_disabled_config.md - indicates whether an item is enabled
 - api/ui.pivot_externalprocessing_config.md - enables external data processing in Pivot
 - api/ui.pivot_fieldmap_config.md - defines custom labels for fields
 - api/ui.pivot_filterlabelalign_config.md - sets the horizontal alignment of the filters' labels in Pivot Chart
@@ -169,6 +174,7 @@ var pivot = webix.ui({
 - api/link/ui.pivot_padding_config.md - defines the space between the element borders and content (applies the specified value to all sides).
 - api/link/ui.pivot_paddingx_config.md - sets the right and left padding (applies the specified value to both sides)
 - api/link/ui.pivot_paddingy_config.md - sets the top and bottom padding (applies the specified value to both sides)
+- api/ui.pivot_ping_config.md - 
 - api/ui.pivot_popup_config.md - an object with the properties of the configuration popup
 - api/ui.pivot_profile_config.md - enables profiling (for development stage)
 - api/ui.pivot_readonly_config.md - disables the possibility to change pivot configuration settings
@@ -178,6 +184,7 @@ var pivot = webix.ui({
 - api/link/ui.pivot_responsive_config.md - enables responsive mode for horizontal layout
 - api/link/ui.pivot_rows_config.md - array of views objects arranged vertically
 - api/link/ui.pivot_scheme_config.md - defines schemes for data processing
+- api/ui.pivot_stablerowid_config.md - 
 - api/ui.pivot_structure_config.md - defines initial display and analysis pattern
 - api/ui.pivot_totalcolumn_config.md - calculates the total sum for each row
 - api/link/ui.pivot_type_config.md - defines the layout borders

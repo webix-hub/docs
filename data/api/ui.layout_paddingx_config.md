@@ -1,21 +1,18 @@
 paddingX
 =============
 
-
 @short:sets the right and left padding (applies the specified value to both sides) 
 	
-
 @type: number
 @example:
 webix.ui({
-		container:"box",
-		view:"toolbar",
-        paddingX:20,
-		cols:[
-			{ view:"button", value:"Load" },
-			{ view:"button", value:"Save" },
-            { view:"button", value:"Delete" }
-		]
+	view:"toolbar",
+    paddingX:20,
+	cols:[
+		{ view:"button", value:"Load" },
+		{ view:"button", value:"Save" },
+        { view:"button", value:"Delete" }
+	]
 });
  
 

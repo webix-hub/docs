@@ -3,23 +3,23 @@ addView
 
 
 @short:
-	add new view to layout-like component
+	adds a new view to a layout-like component
 
 @params:
 
-- view		object		configuration of new view
-* index		number			index, at which new view will be added
+- view		object		the configuration of the new view
+* index		number		the index a new view will be added at
 
 @returns:
-- view		WebixView		new view object
+- id		string|number		the id of the new view 
 
 @example:
 webix.ui({
 	id:"mylayout",
     rows:[...]
 });
-//adds template as third cell to some existing layout
-$$("smylayout").addView({ template:"New one" }, 2);
+// adds template as a third cell to some existing layout
+$$("mylayout").addView({ template:"New one" }, 2);
 
 @template:	api_method
 @relatedapi:
@@ -32,6 +32,6 @@ $$("smylayout").addView({ template:"New one" }, 2);
 
 @descr:
 
-The method works for layout rows and cols, multiview cells, accordion and carousel panels,  toolbar and form controls.
+The method works for layout rows and cols, multiview cells, accordion and carousel panels, toolbar and form controls.
 
 

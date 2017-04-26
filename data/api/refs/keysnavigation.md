@@ -16,7 +16,6 @@ KeysNavigation
 <div class='h2'>Properties</div>
 
 {{api
-- api/keysnavigation_clipboard_config.md - 
 - api/keysnavigation_navigation_config.md - activates the selection keyboard navigation
 }}
 

@@ -111,7 +111,7 @@ var daterangepicker = webix.ui({
 - api/link/ui.daterangepicker_click_config.md - click action handler
 - api/link/ui.daterangepicker_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.daterangepicker_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.daterangepicker_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.daterangepicker_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.daterangepicker_editable_config.md - allows entering characters in datepicker input, false by default
 - api/link/ui.daterangepicker_format_config.md - sets date format in the control
 - api/link/ui.daterangepicker_gravity_config.md - sets the view gravity (1 by default)
@@ -165,7 +165,7 @@ var daterangepicker = webix.ui({
 
 {{api
 - api/link/ui.daterangepicker_$comparevalue_other.md - compares the old value of the control with the one that is going to be set
-- api/ui.daterangepicker_$cssname_other.md - name of the widget which css you want to inherit for a custom widget
+- api/ui.daterangepicker_$cssname_other.md - name of the widget the CSS of which you want to inherit for a custom widget
 - api/link/ui.daterangepicker_$getsize_other.md - returns the current size of the component
 - api/link/ui.daterangepicker_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.daterangepicker_$height_other.md - current height of the view

@@ -38,11 +38,12 @@ webix.ui({
 
 Here is a calendar with basic parameters. 
 
-- **weekHeader** (boolean) - if *true* shows weekday above;
-- **events** (CSS class or specific cases) - e.g. **webix.Date.isHoliday** highlights days off;
-- **date** (string, object) - specifies the start date in the "year, month, day" format with months starting from 0. In case of an empty new Date(); you'll be shown current date;
-- **dayTemplate** (function) - specifies a function that [sets a template](api/ui.calendar_daytemplate_config.md) for each day cell. By default the date is displayed without any styling;
-- **icons** (boolean) - specifies whether to show ["Today" and "Clear"](api/ui.datepicker_icons_config.md) icons.
+- **weekHeader** (*boolean*) - if *true* shows weekday above;
+- **events** (*CSS class or specific cases*) - e.g. **webix.Date.isHoliday** highlights days off;
+- **date** (*string|object*) - specifies the start date in the "year, month, day" format with months starting from 0. In case of an empty new Date(); 
+you'll be shown the current date;
+- **dayTemplate** (*function*) - specifies a function that [sets a template](api/ui.calendar_daytemplate_config.md) for each day cell. By default the date is displayed without any styling;
+- **icons** (*boolean*) - specifies whether to show ["Today" and "Clear"](api/ui.calendar_icons_config.md) icons and allows redefining their configuration.
 
 To see the full list of Calendar properties please refer to the [corresponding chapter of the documentation](api/refs/ui.calendar_props.md).
 
@@ -300,13 +301,15 @@ webix.ui({
 
 CSS class applied to disabled time slots (**.webix_minutes .webix_cal_day_disabled**) can be redefined.
 
-##Today and Clear Buttons
+##"Today" and "Clear" Icons
 
-The Today button allows selecting the current date. The Clear button removes date selection.
+You can add and customize the Calendar icons with the help of the api/ui.calendar_icons_config.md parameter. The default icons are "Today" and "Clear".
+
+The Today icon allows selecting the current date. The Clear icon removes date selection.
 
 <img src="desktop/calendar_today_clear.png"/>
 
-These buttons are optional and specified in the **icons** array. The code below renders a calendar with a timepicker and Today and Clear buttons:
+These icons are optional and specified in the **icons** array. The code below renders a calendar with a timepicker and Today and Clear icons:
 
 
 ~~~js
@@ -317,7 +320,68 @@ webix.ui({
 });
 ~~~  
 
-To hide the buttons, you should set the **icons** property to **false**.
+To hide the icons, you should set the **icons** property to **false**.
+
+
+###Default Icons Config
+
+The default icons configuration is specified as follows:
+
+~~~js
+webix.ui({
+    view:"calendar",
+    icons: [
+    	//default "today" icon
+        {
+            template: function(){
+                return "<span class='webix_cal_icon_today webix_cal_icon'>"
+                    +webix.i18n.calendar.today
+                    +"</span>";
+            },
+            on_click:{
+                "webix_cal_icon_today": function(){
+                    this.setValue(new Date());
+                    this.callEvent("onTodaySet",[this.getSelectedDate()]);
+                }
+            }
+        },
+        //default "clear" icon
+        {
+            template: function(){
+                return "<span class='webix_cal_icon_clear webix_cal_icon'>"
+                    +webix.i18n.calendar.clear
+                        +"</span>";
+            },
+            on_click:{
+                "webix_cal_icon_clear": function(){
+                    this.setValue("");
+                    this.callEvent("onDateClear",[this.getSelectedDate()]);
+                }       
+            }
+        }
+    ]
+});
+~~~
+
+###Redefining Icons
+
+As an object the *icons* parameter redefines icons:
+
+~~~js
+webix.ui({
+    view: "calendar",
+    icons: [
+        template: function(){
+            return "<span class='my_button'>My Button</span>";
+        },
+        on_click:{
+            "my_button": function(){
+                alert("Button is clicked")
+            }
+        }
+    ]
+});
+~~~
 
 {{sample
 09_calendar/10_icons.html

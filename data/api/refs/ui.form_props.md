@@ -12,7 +12,7 @@ Properties
 - api/link/ui.form_data_config.md - JavaScript array containing data for the component
 - api/link/ui.form_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.form_datatype_config.md - the type of loaded data
-- api/link/ui.form_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.form_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.form_elements_config.md - collection of subviews
 - api/link/ui.form_elementsconfig_config.md - settings, which will be applied to all nested inputs
 - api/link/ui.form_gravity_config.md - sets the view gravity (1 by default)

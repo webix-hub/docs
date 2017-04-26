@@ -54,8 +54,8 @@ fmanager.renameFile("file1","newFile.txt");
 Creating a new folder
 ---------------
 
-To create a folder, use the api/ui.filemanager_createfolder.md method. You need to pass an id of the folder 
-where you want to create a new folder and templateCreate will apply other properties automatically:
+To create a folder, use the api/ui.filemanager_createfolder.md method. You need to pass the id of the folder 
+where you want to create a new folder and api/ui.filemanager_templatecreate_config.md will apply other properties automatically:
 
 ~~~js
 fmanager.createFolder("folder1");

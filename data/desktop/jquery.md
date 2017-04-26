@@ -28,7 +28,7 @@ $("#listA").webix_list({
 });
 ~~~
 
-{{sample 31_jquery/01_list.html }}
+**Related sample:** [JQuery List](https://webix-hub.github.io/webix-jquery/samples/01_list.html)
 
 ## Working with Components 
 
@@ -65,7 +65,7 @@ Two calendars will be displayed
 $(".calendar_here").webix_calendar();
 ~~~
 
-{{sample 31_jquery/02_calendar.html }}
+**Related sample:** [JQuery Calendar](https://webix-hub.github.io/webix-jquery/samples/02_calendar.html)
 
 3 . An **HTML table** can be a **data source** for the component initialized in the same container. Each column in the table is reflected as a template item for the component:
 
@@ -92,6 +92,6 @@ List template to grab the data from the table
 }
 ~~~
 
-{{sample 31_jquery/03_from_table.html}}
+**Related sample:** [JQuery List from HTML table](https://webix-hub.github.io/webix-jquery/samples/03_from_table.html)
 
 @complexity:2

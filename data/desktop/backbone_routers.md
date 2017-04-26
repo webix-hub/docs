@@ -53,7 +53,7 @@ $$("mylist").attachEvent("onAfterSelect", function(id){  //navigation rule
 Backbone.history.start(); //router starts memorizing its steps
 ~~~
 
-{{sample 30_backbone/06_routes_webix.html}}
+**Related sample:** [Routes.The Webix way](https://webix-hub.github.io/webix-backbone/samples/06_routes_webix.html)
 
 These lines define the **navigation rule** after selecting an item in the list and **starts the router**.  Template, in its turn, uses an existing router and makes a **step back** on button click (look at its code above).
 
@@ -106,7 +106,8 @@ var routes = new (Backbone.Router.extend({
 	}
 }));
 ~~~
-{{sample 30_backbone/07_routes_views.html}}
+
+**Related sample:** [Routes.The Backbone way](https://webix-hub.github.io/webix-backbone/samples/07_routes_views.html)
 
 Instead of switching between views in Webix layout we are rendering different Backbone Views into one and the same element depending on current state. Still, the resulting behavior is the same. 
 
@@ -172,4 +173,4 @@ var routes = new (Backbone.Router.extend({
 
 The code above locates the necessary cell in the layout and renders the needed view into the target cell. 
 
-{{sample 30_backbone/08_routes_layout.html}}
+**Related sample:** [Routes.Changing the Webix Layout](https://webix-hub.github.io/webix-backbone/samples/08_routes_layout.html)

@@ -118,7 +118,7 @@ webix.ui({
 - api/link/ui.multisuggest_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.multisuggest_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.multisuggest_data_config.md - JavaScript array containing data for the component
-- api/link/ui.multisuggest_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.multisuggest_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.multisuggest_filter_config.md - custom filtering function
 - api/link/ui.multisuggest_fitmaster_config.md - size suggest box to the master control
 - api/link/ui.multisuggest_gravity_config.md - sets the view gravity (1 by default)

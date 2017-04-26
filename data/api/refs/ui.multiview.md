@@ -38,7 +38,7 @@ webix.ui({
 <div class='h2'>Methods</div>
 
 {{api
-- api/link/ui.multiview_addview.md - add new view to layout-like component
+- api/link/ui.multiview_addview.md - adds a new view to a layout-like component
 - api/link/ui.multiview_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.multiview_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/ui.multiview_back.md - switches multiview to previously active view
@@ -66,7 +66,7 @@ webix.ui({
 - api/link/ui.multiview_reconstruct.md - rebuilds the layout
 - api/link/ui.multiview_removeview.md - removes view from layout-like component
 - api/link/ui.multiview_resize.md - adjusts the view to a new size
-- api/link/ui.multiview_resizechildren.md - resizes all children of the calling component
+- api/link/ui.multiview_resizechildren.md - resizes all children of the called component
 - api/ui.multiview_setvalue.md - defines which view need to be shown in the multiview
 - api/link/ui.multiview_show.md - makes the component visible
 - api/link/ui.multiview_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
@@ -95,7 +95,7 @@ webix.ui({
 - api/link/ui.multiview_cols_config.md - array of views objects arranged horizontally
 - api/link/ui.multiview_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.multiview_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.multiview_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.multiview_disabled_config.md - indicates whether an item is enabled
 - api/ui.multiview_fitbiggest_config.md - sizing mode of multiview
 - api/link/ui.multiview_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.multiview_height_config.md - sets the height of the component

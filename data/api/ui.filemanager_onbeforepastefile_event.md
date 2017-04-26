@@ -8,21 +8,20 @@ onBeforePasteFile
 
 - id			string			the id of the target folder
 
-@returns:
-- result		boolean			returning false will prevent pasting
-
 @example:
 $$("fmanager").attachEvent("onBeforePasteFile", function(id){
     // your code
-    return true;
 });
 
 @template:	api_event
 @descr:
 
+Returning false within the handler function will prevent the execution of the further logic and file will not be pasted.
+
 @relatedapi:
+api/ui.filemanager_onafterpastefile_event.md
 api/ui.filemanager_pastefile.md
 
-@relatedsample:
 
+@relatedsample:
 64_file_manager/02_events/05_copy.html

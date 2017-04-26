@@ -14,7 +14,7 @@ Webix Sidebar is a datatree/index.md-based component which is used for creating 
 
 {{note
 JS files for Sidebar menu isn't included into Webix lib package and should be taken from 
-[https://github.com/webix-hub/components](https://github.com/webix-hub/components) components.
+[https://github.com/webix-hub/components](https://github.com/webix-hub/components).
 }}
 
 Sidebar menu can be collapsed into a navigation bar with only icons of the menu items visible. On hovering an icon, a popup with the related item is shown with its sub-items.

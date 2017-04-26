@@ -13,7 +13,7 @@ dummy stub
 <div class='h2'>Methods</div>
 
 {{api
-- api/link/ui.pdfbar_addview.md - add new view to layout-like component
+- api/link/ui.pdfbar_addview.md - adds a new view to a layout-like component
 - api/link/ui.pdfbar_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.pdfbar_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.pdfbar_bind.md - binds components
@@ -54,7 +54,7 @@ dummy stub
 - api/link/ui.pdfbar_render.md - renders the specified item or the whole component
 - api/ui.pdfbar_reset.md - 
 - api/link/ui.pdfbar_resize.md - adjusts the view to a new size
-- api/link/ui.pdfbar_resizechildren.md - resizes all children of the calling component
+- api/link/ui.pdfbar_resizechildren.md - resizes all children of the called component
 - api/link/ui.pdfbar_scrollto.md - scrolls the data container to a certain position
 - api/link/ui.pdfbar_setdirty.md - marks the form as the one with changed values and vice versa
 - api/ui.pdfbar_setmasterpage.md - 
@@ -86,8 +86,8 @@ dummy stub
 - api/link/ui.pdfbar_onchange_event.md - fires when data in the input of related form/toolbar is changed
 - api/link/ui.pdfbar_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.pdfbar_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
-- api/link/ui.pdfbar_onvalidationerror_event.md - fires when the form fails to pass validation
-- api/link/ui.pdfbar_onvalidationsuccess_event.md - fires after the form has passed validation successfully
+- api/link/ui.pdfbar_onvalidationerror_event.md - fires when a form input fails to pass validation
+- api/link/ui.pdfbar_onvalidationsuccess_event.md - fires after a form input has passed validation successfully
 - api/link/ui.pdfbar_onvalues_event.md - fires after values have been set within toolbar or form
 }}
 
@@ -104,7 +104,7 @@ dummy stub
 - api/link/ui.pdfbar_data_config.md - JavaScript array containing data for the component
 - api/link/ui.pdfbar_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.pdfbar_datatype_config.md - the type of loaded data
-- api/link/ui.pdfbar_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.pdfbar_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.pdfbar_elements_config.md - collection of subviews
 - api/link/ui.pdfbar_elementsconfig_config.md - settings, which will be applied to all nested inputs
 - api/link/ui.pdfbar_gravity_config.md - sets the view gravity (1 by default)

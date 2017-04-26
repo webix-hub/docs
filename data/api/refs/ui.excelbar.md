@@ -13,7 +13,7 @@ dummy stub
 <div class='h2'>Methods</div>
 
 {{api
-- api/link/ui.excelbar_addview.md - add new view to layout-like component
+- api/link/ui.excelbar_addview.md - adds a new view to a layout-like component
 - api/link/ui.excelbar_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.excelbar_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.excelbar_bind.md - binds components
@@ -53,7 +53,7 @@ dummy stub
 - api/link/ui.excelbar_removeview.md - removes view from layout-like component
 - api/link/ui.excelbar_render.md - renders the specified item or the whole component
 - api/link/ui.excelbar_resize.md - adjusts the view to a new size
-- api/link/ui.excelbar_resizechildren.md - resizes all children of the calling component
+- api/link/ui.excelbar_resizechildren.md - resizes all children of the called component
 - api/link/ui.excelbar_scrollto.md - scrolls the data container to a certain position
 - api/link/ui.excelbar_setdirty.md - marks the form as the one with changed values and vice versa
 - api/ui.excelbar_setsheets.md - 
@@ -80,8 +80,8 @@ dummy stub
 - api/link/ui.excelbar_onchange_event.md - fires when data in the input of related form/toolbar is changed
 - api/link/ui.excelbar_ondestruct_event.md - occurs when component destroyed
 - api/link/ui.excelbar_onloaderror_event.md - fires when an error occurs during data loading ( invalid server side response )
-- api/link/ui.excelbar_onvalidationerror_event.md - fires when the form fails to pass validation
-- api/link/ui.excelbar_onvalidationsuccess_event.md - fires after the form has passed validation successfully
+- api/link/ui.excelbar_onvalidationerror_event.md - fires when a form input fails to pass validation
+- api/link/ui.excelbar_onvalidationsuccess_event.md - fires after a form input has passed validation successfully
 - api/link/ui.excelbar_onvalues_event.md - fires after values have been set within toolbar or form
 }}
 
@@ -98,7 +98,7 @@ dummy stub
 - api/link/ui.excelbar_data_config.md - JavaScript array containing data for the component
 - api/link/ui.excelbar_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.excelbar_datatype_config.md - the type of loaded data
-- api/link/ui.excelbar_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.excelbar_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.excelbar_elements_config.md - collection of subviews
 - api/link/ui.excelbar_elementsconfig_config.md - settings, which will be applied to all nested inputs
 - api/link/ui.excelbar_gravity_config.md - sets the view gravity (1 by default)

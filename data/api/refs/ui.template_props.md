@@ -11,7 +11,7 @@ Properties
 - api/link/ui.template_data_config.md - JavaScript array containing data for the component
 - api/link/ui.template_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.template_datatype_config.md - the type of loaded data
-- api/link/ui.template_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.template_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.template_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.template_height_config.md - sets the height of the component
 - api/link/ui.template_hidden_config.md - defines whether the view will be hidden initially

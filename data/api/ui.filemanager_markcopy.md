@@ -17,3 +17,8 @@ fmanager.markCopy(id);
 
 @relatedapi:
 api/ui.filemanager_onbeforemarkcopy_event.md
+api/ui.filemanager_onaftermarkcopy_event.md
+
+@related:
+
+<a href="file_manager/configuration.md#actionsmenu">Actions Menu</a>
