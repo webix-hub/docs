@@ -1,27 +1,36 @@
 strict
 =============
 
-@short: enables strict mode for webix library. 
+@short: a read-only boolean flag indicating whether a strict mode is enabled for Webix library
 	
 
 @type:boolean
 
 @example:
 
-webix.env.strict = true;
+if(webix.env.strict)
+   //your code
 
 @template:	api_config
-@descr:
 
-*False* by  default. 
+@default: false
+@descr:
 
 In Strict mode Webix doesn't use "eval".
 
-Should be enabled if **Content Security Policy** is switched on for the application or if the application runs in a **"strict" mode** 
-The flag should be enabled **before** Webix files are included into the page. 
+Strict mode can be enabled by defining a "webix_strict" global variable **before** Webix files are included into the page: 
+
+~~~html
+<script>
+    window.webix_strict = true;
+</script>
+<script src="../webix.js" type="text/javascript"></script>
+<link rel="stylesheet" href="../webix.css" type="text/css"> 
+~~~
+
 
 {{note
-Note that [datatable math](datatable/formulas.md) won't work with the **webix.env.strict** enabled.
+Note that [datatable math](datatable/formulas.md) won't work with the strict mode enabled.
 }}
 
 
