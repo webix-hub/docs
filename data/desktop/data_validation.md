@@ -302,8 +302,8 @@ webix.ui({
 	],
 	rules:{
 		login: webix.rules.isNotEmpty,
-		email: webix.rules.isNumber,
-		phone: webix.rules.isEmail,
+		email: webix.rules.isEmail,
+		password: webix.rules.isNumber,
         accept: webix.rules.isChecked
 	}
 });

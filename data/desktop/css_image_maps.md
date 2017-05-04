@@ -15,7 +15,8 @@ CSS Image Maps
             <li>desktop/chart_css.md</li>
             <li>desktop/colorboard_css.md</li>
             <li>desktop/datatable_css.md</li>
-            <li>desktop/dataview_css.md</li>      
+            <li>desktop/dataview_css.md</li>  
+            <li>desktop/doublelist_css.md</li>    
             <li>desktop/grouplist_css.md</li>
             <li>desktop/layout_css.md</li>
             <li>desktop/list_css.md</li>
@@ -65,6 +66,7 @@ CSS Image Maps
 - desktop/datatable_css.md
 - desktop/datatree_css.md
 - desktop/dataview_css.md
+- desktop/doublelist_css.md
 - desktop/grouplist_css.md
 - desktop/layout_css.md
 - desktop/list_css.md

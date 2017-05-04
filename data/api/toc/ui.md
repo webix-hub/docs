@@ -70,6 +70,11 @@ table.webixtoc td{
 <table class='webixtoc'>
 	<tbody>
     <tr>
+    	<td style="width:25px;">  <img src="api/toc/bulletgraph.png"/> </td>
+        <td style="width:110px !important;">api/refs/ui.bullet.md </td>
+        <td> a compact chart variation for displaying value comparison</td>
+    </tr>
+    <tr>
     	<td style="width:25px;">  <img src="api/toc/chart.png"/> </td>
         <td style="width:110px !important;">api/refs/ui.chart.md </td>
         <td> a tool for creating various charts</td>
@@ -229,7 +234,7 @@ table.webixtoc td{
 
 
 
-<div class='h2'>Form Controls</div>
+<div class='h2'>UI Controls</div>
 <table class='webixtoc'>
 	<tbody>
     <tr>
@@ -273,9 +278,19 @@ table.webixtoc td{
         <td>a control that allows the user to select a date</td>
     </tr>
     <tr>
+    	<td> <img src="api/toc/doublelist.png"/> </td>
+        <td> api/refs/ui.dbllist.md </td>
+        <td> a double list that provides rich selection possibilities</td>
+    </tr>
+    <tr>
     	<td> <img src="api/toc/fieldset.png"/> </td>
         <td> api/refs/ui.fieldset.md </td>
         <td> a wrapper which renders an HTML fieldset </td>
+    </tr>
+    <tr>
+    	<td> <img src="api/toc/forminput.png"/> </td>
+        <td> api/refs/ui.forminput.md </td>
+        <td> a wrapper which allows rendering widgets as form controls </td>
     </tr>
     <tr>
     	<td> <img src="api/toc/icon.png"/> </td>
@@ -487,6 +502,7 @@ table.webixtoc td{
 - api/refs/ui.accordion.md
 - api/refs/ui.accordionitem.md
 - api/refs/ui.barcode.md
+- api/refs/ui.bullet.md
 - api/refs/ui.button.md
 - api/refs/ui.calendar.md
 - api/refs/ui.carousel.md
@@ -506,9 +522,11 @@ table.webixtoc td{
 - api/refs/ui.daterangepicker.md
 - api/refs/ui.daterangesuggest.md
 - api/refs/ui.datepicker.md
+- api/refs/ui.dbllist.md
 - api/refs/ui.fieldset.md
 - api/refs/ui.filemanager.md
 - api/refs/ui.form.md
+- api/refs/ui.forminput.md
 - api/refs/ui.gage.md
 - api/refs/ui.google-map.md
 - api/refs/ui.gridsuggest.md

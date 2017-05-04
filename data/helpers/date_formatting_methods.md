@@ -59,6 +59,7 @@ Supported format options
 - %G - the hour based on the 24-hour clock ( 0 to 23 );
 - %i - the minute as a number with a leading zero ( 00 to 59 );
 - %s - the second as a number with a leading zero ( 00 to 59 );
+- %S - the milliseconds as a number with a leading zero (000 to 999);
 - %a - displays am (for times from midnight until noon) and pm (for times from noon until midnight);
 - %A - displays AM (for times from midnight until noon) and PM (for times from noon until midnight);
 - %c - displays date and time in the ISO 8601 date format (e.g. 2015-10-04T05:04:09)

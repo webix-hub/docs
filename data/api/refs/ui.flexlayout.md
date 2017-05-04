@@ -11,7 +11,7 @@ FlexLayout places all components in a single row, but if space is not enough, a 
 <div class='h2'>Methods</div>
 
 {{api
-- api/link/ui.flexlayout_addview.md - add new view to layout-like component
+- api/link/ui.flexlayout_addview.md - adds a new view to a layout-like component
 - api/link/ui.flexlayout_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.flexlayout_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.flexlayout_bind.md - binds components
@@ -36,7 +36,7 @@ FlexLayout places all components in a single row, but if space is not enough, a 
 - api/link/ui.flexlayout_reconstruct.md - rebuilds the layout
 - api/link/ui.flexlayout_removeview.md - removes view from layout-like component
 - api/link/ui.flexlayout_resize.md - adjusts the view to a new size
-- api/link/ui.flexlayout_resizechildren.md - resizes all children of the calling component
+- api/link/ui.flexlayout_resizechildren.md - resizes all children of the called component
 - api/link/ui.flexlayout_show.md - makes the component visible
 - api/link/ui.flexlayout_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
 - api/link/ui.flexlayout_unbind.md - breaks "bind" link
@@ -61,7 +61,7 @@ FlexLayout places all components in a single row, but if space is not enough, a 
 - api/link/ui.flexlayout_cols_config.md - array of views objects arranged horizontally
 - api/link/ui.flexlayout_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.flexlayout_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.flexlayout_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.flexlayout_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.flexlayout_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.flexlayout_height_config.md - sets the height of the component
 - api/link/ui.flexlayout_hidden_config.md - defines whether the view will be hidden initially

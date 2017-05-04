@@ -8,7 +8,7 @@ Properties
 - api/link/ui.pager_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/ui.pager_count_config.md - the total number of records that the pager will process
 - api/link/ui.pager_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.pager_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.pager_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.pager_gravity_config.md - sets the view gravity (1 by default)
 - api/ui.pager_group_config.md - the number of visible pages in the pager
 - api/link/ui.pager_height_config.md - sets the height of the component

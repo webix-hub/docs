@@ -42,7 +42,7 @@ Methods
 - api/link/datacollection_refreshcursor.md - force repainting of all bound components with current cursor value
 - api/link/datacollection_remove.md - removes the specified item/items from datastore
 - api/link/datacollection_removebind.md - disables data binding
-- api/link/datacollection_savebatch.md - makes simultaneous saving several components
+- api/link/datacollection_savebatch.md - makes simultaneous saving of several components
 - api/link/datacollection_serialize.md - serializes data to a JSON object
 - api/link/datacollection_setbinddata.md - moves data from master to child
 - api/link/datacollection_setcursor.md - sets the position of the cursor

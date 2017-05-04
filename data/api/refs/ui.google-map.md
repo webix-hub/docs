@@ -129,7 +129,7 @@ var googlemap = webix.ui({
 - api/link/ui.google-map_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.google-map_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.google-map_datatype_config.md - the type of loaded data
-- api/link/ui.google-map_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.google-map_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.google-map_gravity_config.md - sets the view gravity (1 by default)
 - api/ui.google-map_heatmapconfig_config.md - defines the heatmap configuration, contains various Google API properties
 - api/link/ui.google-map_height_config.md - sets the height of the component

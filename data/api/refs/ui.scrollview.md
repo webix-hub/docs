@@ -59,7 +59,7 @@ var scrollview = webix.ui({
 - api/link/ui.scrollview_isvisible.md - checks whether the view is visible
 - api/link/ui.scrollview_mapevent.md - routes events from one object to another
 - api/link/ui.scrollview_resize.md - adjusts the view to a new size
-- api/ui.scrollview_resizechildren.md - resizes all children of the calling component
+- api/ui.scrollview_resizechildren.md - resizes all children of the called component
 - api/link/ui.scrollview_scrollto.md - scrolls the data container to a certain position
 - api/link/ui.scrollview_show.md - makes the component visible
 - api/ui.scrollview_showview.md - places focus on the necessary scrollview item
@@ -97,7 +97,7 @@ var scrollview = webix.ui({
 - api/link/ui.scrollview_borderless_config.md - used to hide the component borders
 - api/link/ui.scrollview_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.scrollview_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.scrollview_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.scrollview_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.scrollview_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.scrollview_height_config.md - sets the height of the component
 - api/link/ui.scrollview_hidden_config.md - defines whether the view will be hidden initially

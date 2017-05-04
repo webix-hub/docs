@@ -1,6 +1,15 @@
 Migration to Latest Webix Version
 =================================
 
+Webix 4.2 -> 4.3
+-----------------
+
+[Angular](https://github.com/webix-hub/webix-angular), [Backbone](https://github.com/webix-hub/webix-backbone) and [JQuery](https://github.com/webix-hub/webix-jquery) 
+integration adapters are no longer included into the main source of the Webix library.
+They are now kept separately on GitHub as all other [integration solutions](https://github.com/search?q=topic%3Awebix-integration+org%3Awebix-hub&type=Repositories). 
+
+Read more about the possibilities of integrating Webix with third-party frameworks in the [related section of documentation](desktop/third_party_integration.md).
+
 
 Webix 4.1 -> 4.2
 -----------------

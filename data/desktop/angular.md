@@ -3,6 +3,10 @@ Angular JS Integration
 
 The Webix library provides integration with [Angular](https://angular.io/) JS framework. Since version 4.0 Webix is [compatible with Angular 2](desktop/angular.md#angular2compatibility).
 
+
+{{note The sources for integration of Webix with AngularJS are not included into the Webix library package. You can take them from the
+[GitHub](https://github.com/webix-hub/webix-angular) repository}}
+
 Webix-Angular App Structure
 ---------------------------
 
@@ -44,18 +48,20 @@ However, since app logic is typically complex, it's a good practice to store con
 Bound to Angular JS, Webix offers a special **webix-ui** directive that bootstraps an application. Here two methods are possible:
 
 - [initializing from HTML markup](#html) - the directive is used without an argument, the application is initialized via HTML:
+
 ~~~html
 <div webix-ui type="space"> <!-- app html --> </div>
 ~~~
 
 - [initializing from a JS configuration object](#config) - the directive is used with the app's config object as an argument, no additional markup is used. Config object is stored in the app's controller:
+
 ~~~html
 <div webix-ui="config" webix-ready="doSome(root)" style="width:450px; height:300px;">
 ~~~
 
 Two patterns are equal in functionality yet differ in the way this functionality is implemented. 
 
-##Initializing from from HTML markup {#html}
+##Initializing from HTML markup {#html}
 
 This method resembles Webix [HTML Initialization technique](desktop/html_markup_init.md) but has its own peculiarities:
 
@@ -95,7 +101,7 @@ This method resembles Webix [HTML Initialization technique](desktop/html_markup_
 </body>
 ~~~
 
-{{sample 33_angular/01_layout.html}}
+**Related sample:** [Webix-Angular:Layouts](https://webix-hub.github.io/webix-angular/samples/01_layout.html)
 
 The input and header template are bound together by **ng-model** directive. 
 
@@ -117,7 +123,7 @@ Webix [datatable](datatable/index.md) is a complex component for working with la
 </div>
 ~~~	
 
-{{sample 33_angular/02_grid.html }}
+**Related sample:** [Webix-Angular:Grid](https://webix-hub.github.io/webix-angular/samples/02_grid.html)
 
 Note that any HTML outside "webix-ui" block is parsed as standard markup while a div with **webix-ui** attribute constructs Webix app. 
 
@@ -133,7 +139,7 @@ Webix [chart](desktop/chart.md) is a handy data visualization tool. The chart be
 </div>
 ~~~
 
-{{sample 33_angular/03_chart.html }}
+**Related sample:** [Webix-Angular:Chart](https://webix-hub.github.io/webix-angular/samples/03_chart.html)
 
 Note that any HTML outside "webix-ui" block is parsed as standard markup while a div with **webix-ui** attribute starts Webix app. 
 
@@ -184,13 +190,13 @@ where *series* is a property of scope *chart* variable that contains an object w
 }
 ~~~
 
-{{sample 33_angular/07_ng_repeat.html}}
+**Related sample:** [Webix-Angular:Using ng-repeat](https://webix-hub.github.io/webix-angular/samples/07_ng_repeat.html)
 
 ###Rendering Complex Layouts
 
 Webix-Angular integration allows for complex application design with different inter-related Webix components in it. 
 
-For more details, study the dedicated sample {{sample 33_angular/08_complex.html}}
+For more details, study **the dedicated sample:** [Webix-Angular:Complex Initialization](https://webix-hub.github.io/webix-angular/samples/08_complex.html)
 
 ###Further Reading
 
@@ -240,7 +246,7 @@ app.controller("webixTestController", function($scope){
 
 <img src="desktop/angular_config_app.png"/>
 
-{{sample 33_angular/06_controller.html}}
+**Related sample:** [Webix-Angular:Initializing from Config](https://webix-hub.github.io/webix-angular/samples/06_controller.html)
 
 - Components used in the sample are [list](desktop/list.md), [template](desktop/template.md), [layout](desktop/layout.md), [resizer line](desktop/layout.md#resizer).
 - **Top parent view** of the config object (here: two-row layout) should have an **isolate** property to **avoid ID mess** in a situation when there're same IDs in another config object on the page. 
@@ -280,7 +286,7 @@ app.controller("webixTestController", function($scope){
 };
 ~~~
 
-Inside the fucntion invoked by **webix-ready** directive, Webix-Angular integrated app complies to standard Webix [event handling pattern](desktop/event_handling.md).
+Inside the function invoked by **webix-ready** directive, Webix-Angular integrated app complies to standard Webix [event handling pattern](desktop/event_handling.md).
 
 Angular 2 Compatibility
 -----------------------

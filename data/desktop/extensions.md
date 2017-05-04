@@ -1,7 +1,10 @@
 UI Extensions
 ===========================
-Except for the main line of <a href="http://webix.com/widgets/" title="ui widgets">UI components</a>, the library provides a number of helpful extensions to simplify your development. 
+
+Except for the main line of <a href="http://webix.com/widgets/" title="ui widgets">UI components</a>, the library provides a number of helpful integration extensions to simplify your development. 
 Most of the extensions are task-oriented and intended to accomplish a certain purpose. They are already quite configurable and need only initializing on the page to start serving.
+
+If you want to implement a custom integration for your project, check the article desktop/custom_integration.md.
 
 <br>
 
@@ -71,5 +74,6 @@ Most of the extensions are task-oriented and intended to accomplish a certain pu
 - desktop/maps.md
 - desktop/graphic_tools.md
 - desktop/scheduler.md
+- desktop/custom_integration.md
 
 

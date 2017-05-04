@@ -40,7 +40,7 @@ var kanban = webix.ui({
 
 {{api
 - api/link/ui.kanban_add.md - adds an item to the store
-- api/link/ui.kanban_addview.md - add new view to layout-like component
+- api/link/ui.kanban_addview.md - adds a new view to a layout-like component
 - api/link/ui.kanban_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.kanban_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.kanban_bind.md - binds components
@@ -85,10 +85,10 @@ var kanban = webix.ui({
 - api/link/ui.kanban_remove.md - removes the specified item/items from datastore
 - api/link/ui.kanban_removeview.md - removes view from layout-like component
 - api/link/ui.kanban_resize.md - adjusts the view to a new size
-- api/link/ui.kanban_resizechildren.md - resizes all children of the calling component
+- api/link/ui.kanban_resizechildren.md - resizes all children of the called component
 - api/ui.kanban_select.md - selects the specified task
 - api/link/ui.kanban_serialize.md - serializes data to a JSON object
-- api/ui.kanban_setindex.md - 
+- api/ui.kanban_setindex.md - sets a new index for an item
 - api/link/ui.kanban_show.md - makes the component visible
 - api/link/ui.kanban_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
 - api/link/ui.kanban_sort.md - sorts datastore
@@ -148,7 +148,7 @@ var kanban = webix.ui({
 - api/link/ui.kanban_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.kanban_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.kanban_datatype_config.md - the type of loaded data
-- api/link/ui.kanban_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.kanban_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.kanban_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.kanban_height_config.md - sets the height of the component
 - api/link/ui.kanban_hidden_config.md - defines whether the view will be hidden initially

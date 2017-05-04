@@ -3,8 +3,10 @@ Version 4.2
 
 <span class="release_date">released on February 23, 2017</span>
 
-See also What's New of [SpreadSheet](spreadsheet/whats_new.md) and [Pivot](pivot/whats_new.md) complex widgets.
+See also What's New of complex widgets:
 
+- [SpreadSheet](spreadsheet/whats_new.md)
+- [Pivot](pivot/whats_new.md) 
 
 Breaking Changes
 ------------------

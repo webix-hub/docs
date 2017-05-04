@@ -8,9 +8,11 @@ List
 
 ##Overview
 
-List is a ui-related component that inherits from [view](desktop/view.md) and presents listed data items. The webix library offers three
-variations of list apart from the standard one - [grouplist](desktop/grouplist.md), [x-list](desktop/xlist.md) and 
-[unitlist](desktop/unitlist.md). <br>
+Webix List is a UI-related component that inherits from [view](desktop/view.md) and presents listed data items. The Webix library offers three
+variations of list apart from the standard one - [GroupList](desktop/grouplist.md), [X-List](desktop/xlist.md) and 
+[UnitList](desktop/unitlist.md). <br>
+
+There's also the desktop/double_list.md widget that allows you to move data items between two lists via the related buttons.
 
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/list.png"/>
@@ -54,6 +56,11 @@ Note that there's no built-in possibility to edit data with List. You should cre
 - [Dynamic Resizing and Adjustment](desktop/resizing.md)
 - [Redefinition of the Components](desktop/redefinition.md)
 - [List CSS Image Map](desktop/list_css.md)
+- [UnitList](desktop/unitlist.md)
+- [X-List](desktop/xlist.md)
+- [GroupList](desktop/grouplist.md)
+- [Double List](desktop/double_list.md)
+
 
 @index:
 - desktop/xlist.md

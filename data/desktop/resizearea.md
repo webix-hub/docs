@@ -8,7 +8,8 @@ you should initialize the component in a container with **style='position:relati
 
 
 ~~~html
-<div id='mydiv' style='position:relative;width:600px; height:300px;border:1px solid;'></div>
+<div id='mydiv' style='position:relative;width:600px; height:300px;border:1px solid;'>
+</div>
 ~~~
 
 ~~~js
@@ -59,7 +60,7 @@ While moving a **resizearea** object, 3 DIVs are created:
 
 <table class="list" cellspacing="0" cellpadding="5" border="0">
 	<caption class="caption">
-		<strong>Table 1 </strong>
+		<strong>Table 2 </strong>
 		Horizontal resizing
 	</caption>
 	<thead>

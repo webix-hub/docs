@@ -107,7 +107,7 @@ var rangeslider = webix.ui({
 - api/link/ui.rangeslider_click_config.md - click action handler
 - api/link/ui.rangeslider_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.rangeslider_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.rangeslider_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.rangeslider_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.rangeslider_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.rangeslider_height_config.md - sets the height of the component
 - api/link/ui.rangeslider_hidden_config.md - defines whether the view will be hidden initially
@@ -155,7 +155,7 @@ var rangeslider = webix.ui({
 
 {{api
 - api/link/ui.rangeslider_$comparevalue_other.md - compares the old value of the control with the one that is going to be set
-- api/ui.rangeslider_$cssname_other.md - name which will be used as part of css class
+- api/ui.rangeslider_$cssname_other.md - name of the widget the CSS of which you want to inherit for a custom widget
 - api/link/ui.rangeslider_$getsize_other.md - returns the current size of the component
 - api/link/ui.rangeslider_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.rangeslider_$height_other.md - current height of the view

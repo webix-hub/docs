@@ -120,7 +120,7 @@ var calendar = webix.ui({
 - api/link/ui.calendar_css_config.md - the name of a css class that will be applied to the view container
 - api/ui.calendar_date_config.md - specifies the year and month that will be shown in the calendar after initialization
 - api/ui.calendar_daytemplate_config.md - defines a template for a calendar day cell
-- api/link/ui.calendar_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.calendar_disabled_config.md - indicates whether an item is enabled
 - api/ui.calendar_events_config.md - sets an additional css class that will be applied to days
 - api/link/ui.calendar_gravity_config.md - sets the view gravity (1 by default)
 - api/ui.calendar_headerheight_config.md - total height of the area not taken by calendar body

@@ -8,14 +8,13 @@ paddingY
 @type: number
 @example:
 webix.ui({
-		container:"box",
-		view:"toolbar", 
-        paddingY:10,
-		cols:[
-			{ view:"button", value:"Load" },
-			{ view:"button", value:"Save" },
-            { view:"button", value:"Delete" }
-		]
+	view:"toolbar", 
+    paddingY:10,
+	cols:[
+		{ view:"button", value:"Load" },
+		{ view:"button", value:"Save" },
+        { view:"button", value:"Delete" }
+	]
 });
 
 @template:	api_config

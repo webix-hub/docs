@@ -200,7 +200,7 @@ dummy stub
 - api/link/ui.filetree_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.filetree_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.filetree_datatype_config.md - the type of loaded data
-- api/link/ui.filetree_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.filetree_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.filetree_drag_config.md - enables or disables drag-and-drop
 - api/link/ui.filetree_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.filetree_editvalue_config.md - defines which data item is editable (in case of several data item in the cell/line)
@@ -261,7 +261,7 @@ dummy stub
 - api/link/ui.filetree_$dragout_other.md - method called when item moved out of possible drop landing during dnd
 - api/link/ui.filetree_$drop_other.md - method called when item dragged and dropped on valid target
 - api/link/ui.filetree_$dropallow_other.md - can be redefined, if you need custom drop rules
-- api/link/ui.filetree_$fixeditor_other.md - 
+- api/link/ui.filetree_$fixeditor_other.md - applies editor adjusting logic to tree
 - api/link/ui.filetree_$getsize_other.md - returns the current size of the component
 - api/link/ui.filetree_$height_other.md - current height of the view
 - api/link/ui.filetree_$scope_other.md - scope for resolving event and method names

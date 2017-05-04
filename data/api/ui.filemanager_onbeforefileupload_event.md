@@ -22,3 +22,6 @@ $$("fmanager").attachEvent("onBeforeFileUpload",function(file_config){
 @descr:
 
 
+@relatedapi:
+api/ui.filemanager_onafterfileupload_event.md
+api/ui.filemanager_uploadfile.md

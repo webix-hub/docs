@@ -113,7 +113,7 @@ var multiselect = webix.ui({
 - api/link/ui.multiselect_click_config.md - click action handler
 - api/link/ui.multiselect_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.multiselect_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.multiselect_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.multiselect_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.multiselect_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.multiselect_height_config.md - sets the height of the component
 - api/link/ui.multiselect_hidden_config.md - defines whether the view will be hidden initially
@@ -163,7 +163,7 @@ var multiselect = webix.ui({
 
 {{api
 - api/link/ui.multiselect_$comparevalue_other.md - compares the old value of the control with the one that is going to be set
-- api/ui.multiselect_$cssname_other.md - name which will be used as part of css class
+- api/ui.multiselect_$cssname_other.md - name of the widget the CSS of which you want to inherit for a custom widget
 - api/link/ui.multiselect_$getsize_other.md - returns the current size of the component
 - api/link/ui.multiselect_$getvalue_other.md - called each time when component need to get value from related html input
 - api/link/ui.multiselect_$height_other.md - current height of the view

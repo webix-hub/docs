@@ -37,7 +37,7 @@ var spreadsheet = webix.ui({
 - api/ui.spreadsheet_addsheet.md - adds a new sheet into a SpreadSheet
 - api/ui.spreadsheet_addsparkline.md - adds a sparkline into a cell
 - api/ui.spreadsheet_addstyle.md - creates a new style
-- api/link/ui.spreadsheet_addview.md - add new view to layout-like component
+- api/link/ui.spreadsheet_addview.md - adds a new view to a layout-like component
 - api/link/ui.spreadsheet_adjust.md - adjusts the component to the size of the parent HTML container
 - api/ui.spreadsheet_alert.md - creates an alert box
 - api/link/ui.spreadsheet_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
@@ -105,7 +105,7 @@ var spreadsheet = webix.ui({
 - api/ui.spreadsheet_reset.md - resets the SpreadSheet settings to the initial state
 - api/ui.spreadsheet_resetundo.md - resets the Undo history
 - api/link/ui.spreadsheet_resize.md - adjusts the view to a new size
-- api/link/ui.spreadsheet_resizechildren.md - resizes all children of the calling component
+- api/link/ui.spreadsheet_resizechildren.md - resizes all children of the called component
 - api/ui.spreadsheet_savecell.md - saves changes made in the cell
 - api/ui.spreadsheet_serialize.md - serializes SpreadSheet data to a JSON object
 - api/ui.spreadsheet_setcelleditor.md - creates an editor in a cell
@@ -166,7 +166,7 @@ var spreadsheet = webix.ui({
 - api/link/ui.spreadsheet_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.spreadsheet_data_config.md - JavaScript array containing data for the component
 - api/link/ui.spreadsheet_datatype_config.md - the type of loaded data
-- api/link/ui.spreadsheet_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.spreadsheet_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.spreadsheet_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.spreadsheet_height_config.md - sets the height of the component
 - api/link/ui.spreadsheet_hidden_config.md - defines whether the view will be hidden initially

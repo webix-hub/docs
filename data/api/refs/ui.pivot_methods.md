@@ -4,7 +4,7 @@ Methods
 {{api
 - api/link/ui.pivot_add.md - adds an item to the store
 - api/ui.pivot_addoperation.md - adds a custom data operation
-- api/link/ui.pivot_addview.md - add new view to layout-like component
+- api/link/ui.pivot_addview.md - adds a new view to a layout-like component
 - api/link/ui.pivot_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.pivot_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.pivot_bind.md - binds components
@@ -51,7 +51,7 @@ Methods
 - api/link/ui.pivot_removeview.md - removes view from layout-like component
 - api/ui.pivot_render.md - renders a pivot on the page
 - api/link/ui.pivot_resize.md - adjusts the view to a new size
-- api/link/ui.pivot_resizechildren.md - resizes all children of the calling component
+- api/link/ui.pivot_resizechildren.md - resizes all children of the called component
 - api/link/ui.pivot_serialize.md - serializes data to a JSON object
 - api/ui.pivot_setstructure.md - sets the pivot structure
 - api/link/ui.pivot_show.md - makes the component visible

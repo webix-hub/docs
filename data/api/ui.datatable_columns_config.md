@@ -36,15 +36,16 @@ Each object in the array specifies a single column. An object can take the follo
 	<tbody>
     	<tr>
 			<td class="webixdoc_links0"><b>adjust</b></td>
-			<td>(<i>boolean, string</i>) adjusts the width of the column to fit the related content size.<br>
+			<td>(<i>boolean|string</i>) adjusts the width of the column to fit the related content size.<br>
             The following values are possible: 
             <ul>
             <li><b>"data"</b> - adjusts column width to the content of the widest item in it</li>
 			<li><b>"header"</b> - adjusts column width to its header content</li>
 			<li><b>true</b> - searches for the widest item among data and header(s) and adjusts column width to its content</li>
             </ul>
+            {{note Pay attention that the resulting column's width won't be less than <strong>minWidth</strong>, in case this parameter is set for the column.}}
             </td>
-		</tr>
+		</tr>       
         <tr>
 			<td class="webixdoc_links0"><b>collection</b></td>
 			<td>(<i>string</i>) allows <a href="datatable/columns_configuration.md#externaldatasourceforthecolumn">specifying data source for the column</a>
@@ -91,7 +92,7 @@ by syncing column data with that of a <a href="desktop/nonui_objects.md">dataCol
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>fillspace</b> </td>
-			<td>(<i>boolean, number</i>) forces the column to widen for filling the unused table space.<br><br>            	In case of numeric values other than 1 the columns will distribute the available space proportionally according to the numbers.  
+			<td>(<i>boolean|number</i>) forces the column to widen for filling the unused table space.<br><br>            	In case of numeric values other than 1 the columns will distribute the available space proportionally according to the numbers.  
             </td>
 		</tr>
 		<tr>
@@ -101,7 +102,7 @@ by syncing column data with that of a <a href="desktop/nonui_objects.md">dataCol
         <tr>
 			<td class="webixdoc_links0" style="vertical-align: top;"> <b>footer</b></td>
 			<td style="vertical-align: top;">
-				(<i>string, array</i>) specifies the footer of the column. As an array, the footer can contain both string and object values.
+				(<i>string|array</i>) specifies the footer of the column. As an array, the footer can contain both string and object values.
 				<br> <br> Object values can have the following attributes:
 				<ul>
 					<li><b>text</b> -  <i>(string)</i> the text label of the column footer</li>
@@ -111,13 +112,14 @@ by syncing column data with that of a <a href="desktop/nonui_objects.md">dataCol
                     <li><b>css</b> -  <i>(string)</i> the name of a css class that will be applied to the column footer</li>
                     <li><b>rotate</b> -  <i>(boolean)</i> if set to true, switches the footer to the rotated state</li>
                     <li><b>height</b> -  <i>(number)</i> defines a custom height for the footer line</li>
+                    <li><b>autoheight</b> - <i>(boolean)</i> adjusts the height of the footer to show its content</li>
 				</ul>
 			</td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0" style="vertical-align: top;"> <b>header</b></td>
 			<td style="vertical-align: top;">
-				(<i>string, array</i>) specifies the header of the column. As an array, the header can contain both string and object values.
+				(<i>string|array</i>) specifies the header of the column. As an array, the header can contain both string and object values.
 				<br> <br> Object values can have the following attributes:
 				<ul>
 					<li><b>text</b> -  <i>(string)</i> the text label of the column</li>
@@ -127,6 +129,7 @@ by syncing column data with that of a <a href="desktop/nonui_objects.md">dataCol
                     <li><b>css</b> -  <i>(string)</i> the name of a css class that will be applied to the column header</li>
                     <li><b>rotate</b> -  <i>(boolean)</i> if set to true, switches the header to the rotated state</li>
                     <li><b>height</b> -  <i>(number)</i> defines a custom height for the header line</li>
+                    <li><b>autoheight</b> - <i>(boolean)</i> adjusts the height of the header to show its content</li>
 				</ul>
 			</td>
 		</tr>
@@ -143,17 +146,23 @@ by syncing column data with that of a <a href="desktop/nonui_objects.md">dataCol
         <tr>
         	<td class="webixdoc_links0" style="vertical-align: top;"> <b>liveEdit</b></td>
             <td style="vertical-align: top;">
-            	(<i>bool</i>) sets on-the-go updating for the same data property used in different columns and edited in one of them
+            	(<i>boolean</i>) sets on-the-go updating for the same data property used in different columns and edited in one of them
 			</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>math</b></td>
 			<td>(<i>string</i>) the math formula that applies to all cells of the column</td>
 		</tr>
+        <tr>
+			<td class="webixdoc_links0"><b>minWidth</b></td>
+			<td>(<i>number</i>) defines minimal width for the column. If there's more space initially or after resizing, 
+            	column width will be increased, but it can never be less than the minWidth value
+            </td>
+		</tr>
 		<tr>
-			<td class="webixdoc_links0" style="vertical-align: top;"><b>sort</b> </td>
+			<td class="webixdoc_links0" style="vertical-align: top;"><b>sort</b></td>
 			<td style="vertical-align: top;">
-				(<i>string, function</i>) enables sorting for the column (triggered by a single click on the header) and assigns one of predefined sorting types or the name of a sorting function.
+				(<i>string|function</i>) enables sorting for the column (triggered by a single click on the header) and assigns one of predefined sorting types or the name of a sorting function.
 				<br><br>
 				As a string the attribute can take only one of a predefined set of values.<br> The predefined values are:
 				<ul>
@@ -167,7 +176,7 @@ by syncing column data with that of a <a href="desktop/nonui_objects.md">dataCol
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>template</b></td>
-			<td>(<i>string, function</i>) the data template</td>
+			<td>(<i>string|function</i>) the data template</td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>width</b></td>

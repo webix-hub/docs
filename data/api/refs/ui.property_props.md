@@ -10,7 +10,7 @@ Properties
 - api/link/ui.property_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.property_data_config.md - JavaScript array containing data for the component
 - api/link/ui.property_datatype_config.md - the type of loaded data
-- api/link/ui.property_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.property_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.property_editvalue_config.md - defines which data item is editable (in case of several data item in the cell/line)
 - api/link/ui.property_editable_config.md - allows/denies editing in the view
 - api/link/ui.property_editaction_config.md - defines the action on which editors will be opened

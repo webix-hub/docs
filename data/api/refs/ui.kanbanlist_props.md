@@ -6,7 +6,7 @@ Properties
 - api/link/ui.kanbanlist_autoheight_config.md - enables autosizing to content
 - api/link/ui.kanbanlist_borderless_config.md - used to hide the component borders
 - api/link/ui.kanbanlist_click_config.md - sets an action happening on a button click
-- api/link/ui.kanbanlist_clipboard_config.md - 
+- api/ui.kanbanlist_clipboard_config.md - 
 - api/link/ui.kanbanlist_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.kanbanlist_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.kanbanlist_data_config.md - JavaScript array containing data for the component
@@ -14,7 +14,7 @@ Properties
 - api/link/ui.kanbanlist_datafetch_config.md - defines the number of records that will be loaded during each dynamic loading request
 - api/link/ui.kanbanlist_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.kanbanlist_datatype_config.md - the type of loaded data
-- api/link/ui.kanbanlist_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.kanbanlist_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.kanbanlist_drag_config.md - enables or disables drag-and-drop
 - api/link/ui.kanbanlist_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.kanbanlist_externaldata_config.md - allows defining custom 'move' logic for the component.
@@ -60,7 +60,7 @@ Properties
 - api/link/ui.kanbanlist_autoheight_config.md
 - api/link/ui.kanbanlist_borderless_config.md
 - api/link/ui.kanbanlist_click_config.md
-- api/link/ui.kanbanlist_clipboard_config.md
+- api/ui.kanbanlist_clipboard_config.md
 - api/link/ui.kanbanlist_container_config.md
 - api/link/ui.kanbanlist_css_config.md
 - api/link/ui.kanbanlist_data_config.md

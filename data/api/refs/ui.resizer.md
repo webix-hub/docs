@@ -33,7 +33,7 @@ webix.ui({
 
 
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
+<a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
 
 
 <div class='h2'>Methods</div>
@@ -93,7 +93,7 @@ webix.ui({
 - api/link/ui.resizer_borderless_config.md - used to hide the component borders
 - api/link/ui.resizer_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.resizer_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.resizer_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.resizer_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.resizer_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.resizer_height_config.md - sets the height of the component
 - api/link/ui.resizer_hidden_config.md - defines whether the view will be hidden initially

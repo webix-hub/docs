@@ -18,3 +18,5 @@ fmanager.copyFile(source,target);
 @template:	api_method
 @descr:
 
+@related:
+file_manager/manipulating_items.md

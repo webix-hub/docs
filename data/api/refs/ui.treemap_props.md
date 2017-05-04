@@ -14,7 +14,7 @@ Properties
 - api/link/ui.treemap_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.treemap_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.treemap_datatype_config.md - the type of loaded data
-- api/link/ui.treemap_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.treemap_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.treemap_filtermode_config.md - defines the pattern for tree item filtering
 - api/link/ui.treemap_gravity_config.md - sets the view gravity (1 by default)
 - api/ui.treemap_header_config.md - defines whether the header of Treemap will be shown or hidden

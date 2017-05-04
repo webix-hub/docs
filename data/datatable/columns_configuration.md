@@ -4,7 +4,7 @@ Columns Configuration
 Columns configuration is specified by parameter [columns](api/ui.datatable_columns_config.md) and all settings are managed on its level.
 
 ~~~js
-grid = new webix.ui({
+webix.ui({
 	view:"datatable",
     columns:[{...}, {...}],
     ...
@@ -154,11 +154,11 @@ In the above code the "title" column is 4 times bigger than the "id" one, which 
 
 ###Adjusting column to its content
 
-To adjust the width of a column to the related content size, you can use the **adjust** attribute. There are two options possible:
+To adjust the width of a column to the related content size, you can use the **adjust** attribute. There are three possible options:
 
 - **data** - (the default one) adjusts column width to the content of the widest item in it;
 - **header** - adjusts column width to its header content;
-- **all** - combines the above mentioned modes and adjusts the column to the bigger value.
+- **true** - searches for the widest item among data and header(s) and adjusts column width to its content.
 
 ~~~js
 columns:[

@@ -192,7 +192,7 @@ var unitlist = webix.ui({
 - api/link/ui.unitlist_data_config.md - JavaScript array containing data for the component
 - api/link/ui.unitlist_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.unitlist_datatype_config.md - the type of loaded data
-- api/link/ui.unitlist_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.unitlist_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.unitlist_drag_config.md - enables or disables drag-and-drop
 - api/link/ui.unitlist_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.unitlist_externaldata_config.md - allows defining custom 'move' logic for the component.

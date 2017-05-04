@@ -178,7 +178,7 @@ dummy stub
 - api/link/ui.sheets_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.sheets_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.sheets_datatype_config.md - the type of loaded data
-- api/link/ui.sheets_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.sheets_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.sheets_drag_config.md - enables or disables drag-and-drop
 - api/link/ui.sheets_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.sheets_editvalue_config.md - defines which data item is editable (in case of several data item in the cell/line)

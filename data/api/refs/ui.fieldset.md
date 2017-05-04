@@ -4,7 +4,7 @@ ui.fieldset
 
 {{memo A wrapper which renders an HTML fieldset. }}
 
-The control presents a standard fieldset that combines several sense-connected UI elements inside itself. Check [fieldset](desktop/fieldset.md) documentation for more detailed description.
+The control presents a standard fieldset that combines several sense-connected UI elements inside itself. Check [Fieldset](desktop/fieldset.md) documentation for a more detailed description.
 
 ### Constructor
 
@@ -50,6 +50,7 @@ var fieldset = webix.ui({
 - api/link/ui.fieldset_isenabled.md - checks whether the view is enabled
 - api/link/ui.fieldset_isvisible.md - checks whether the view is visible
 - api/link/ui.fieldset_resize.md - adjusts the view to a new size
+- api/ui.fieldset_resizechildren.md - resizes all children of the called component
 - api/link/ui.fieldset_show.md - makes the component visible
 - api/link/ui.fieldset_unbind.md - breaks "bind" link
 }}
@@ -79,12 +80,13 @@ var fieldset = webix.ui({
 <div class='h2'>Properties</div>
 
 {{api
+- api/ui.fieldset_$cssname_config.md - name of the widget the CSS of which you want to inherit for a custom widget
 - api/link/ui.fieldset_animate_config.md - defines or disables view change animation.
 - api/ui.fieldset_body_config.md - config for sub-view of fieldset
 - api/link/ui.fieldset_borderless_config.md - used to hide the component borders
 - api/link/ui.fieldset_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.fieldset_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.fieldset_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.fieldset_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.fieldset_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.fieldset_height_config.md - sets the height of the component
 - api/link/ui.fieldset_hidden_config.md - defines whether the view will be hidden initially
@@ -94,6 +96,8 @@ var fieldset = webix.ui({
 - api/link/ui.fieldset_maxwidth_config.md - sets the maximum width for the view
 - api/link/ui.fieldset_minheight_config.md - sets the minimal height for the view
 - api/link/ui.fieldset_minwidth_config.md - sets the minimal width for the view
+- api/ui.fieldset_paddingx_config.md - sets the right and left padding (applies the specified value to both sides)
+- api/ui.fieldset_paddingy_config.md - sets the top and bottom padding (applies the specified value to both sides)
 - api/link/ui.fieldset_width_config.md - sets the width of the component
 }}
 

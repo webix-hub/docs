@@ -11,7 +11,7 @@ Properties
 - api/link/ui.tree_data_config.md - JavaScript array containing data for the component
 - api/link/ui.tree_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.tree_datatype_config.md - the type of loaded data
-- api/link/ui.tree_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.tree_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.tree_drag_config.md - enables or disables drag-and-drop
 - api/link/ui.tree_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.tree_filtermode_config.md - defines the pattern for tree item filtering

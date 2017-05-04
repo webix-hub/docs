@@ -159,7 +159,7 @@ var chart = webix.ui({
 - api/link/ui.chart_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.chart_datatype_config.md - the type of loaded data
 - api/ui.chart_disablelines_config.md - disapbles graph lines with radar chart
-- api/link/ui.chart_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.chart_disabled_config.md - indicates whether an item is enabled
 - api/ui.chart_dynamic_config.md - enables the dynamic mode for a chart
 - api/ui.chart_eventradius_config.md - sets the radius (in pixels) of the virtual circle which events will fire for items within
 - api/ui.chart_fill_config.md - fills the chart area with the specified background color.

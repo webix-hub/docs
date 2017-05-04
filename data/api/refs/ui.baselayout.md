@@ -13,7 +13,7 @@ The component serves as the base class that defines properties, methods, and eve
 <div class='h2'>Methods</div>
 
 {{api
-- api/ui.baselayout_addview.md - add new view to layout-like component
+- api/ui.baselayout_addview.md - adds a new view to a layout-like component
 - api/link/ui.baselayout_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.baselayout_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.baselayout_bind.md - binds components
@@ -38,7 +38,7 @@ The component serves as the base class that defines properties, methods, and eve
 - api/ui.baselayout_reconstruct.md - rebuilds the layout
 - api/ui.baselayout_removeview.md - removes view from layout-like component
 - api/link/ui.baselayout_resize.md - adjusts the view to a new size
-- api/ui.baselayout_resizechildren.md - resizes all children of the calling component
+- api/ui.baselayout_resizechildren.md - resizes all children of the called component
 - api/link/ui.baselayout_show.md - makes the component visible
 - api/ui.baselayout_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
 - api/link/ui.baselayout_unbind.md - breaks "bind" link
@@ -63,7 +63,7 @@ The component serves as the base class that defines properties, methods, and eve
 - api/ui.baselayout_cols_config.md - array of views objects arranged horizontally
 - api/link/ui.baselayout_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.baselayout_css_config.md - the name of a css class that will be applied to the view container
-- api/link/ui.baselayout_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.baselayout_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.baselayout_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.baselayout_height_config.md - sets the height of the component
 - api/link/ui.baselayout_hidden_config.md - defines whether the view will be hidden initially

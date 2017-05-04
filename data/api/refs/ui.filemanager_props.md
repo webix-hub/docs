@@ -10,7 +10,7 @@ Properties
 - api/link/ui.filemanager_data_config.md - JavaScript array containing data for the component
 - api/link/ui.filemanager_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.filemanager_datatype_config.md - the type of loaded data
-- api/link/ui.filemanager_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.filemanager_disabled_config.md - indicates whether an item is enabled
 - api/ui.filemanager_disabledhistory_config.md - disables the tracking history ("false" by default)
 - api/link/ui.filemanager_filtermode_config.md - defines the pattern for tree item filtering
 - api/link/ui.filemanager_gravity_config.md - sets the view gravity (1 by default)

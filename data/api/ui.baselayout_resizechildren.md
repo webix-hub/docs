@@ -3,7 +3,7 @@ resizeChildren
 
 
 @short:
-	resizes all children of the calling component
+	resizes all children of the called component
 
 @example:
 $$('mylayout').resizeChildren();

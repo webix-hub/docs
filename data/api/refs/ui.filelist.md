@@ -178,7 +178,7 @@ dummy stub
 - api/link/ui.filelist_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.filelist_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.filelist_datatype_config.md - the type of loaded data
-- api/link/ui.filelist_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.filelist_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.filelist_drag_config.md - enables or disables drag-and-drop
 - api/link/ui.filelist_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.filelist_editvalue_config.md - defines which data item is editable (in case of several data item in the cell/line)

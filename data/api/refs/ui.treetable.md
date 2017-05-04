@@ -294,7 +294,7 @@ var treetable = webix.ui({
 - api/link/ui.treetable_blockselect_config.md - enables/disables block selection
 - api/link/ui.treetable_borderless_config.md - used to hide the component borders
 - api/link/ui.treetable_checkboxrefresh_config.md - controls behavior of checkbox editors in grid
-- api/link/ui.treetable_clipboard_config.md - 
+- api/link/ui.treetable_clipboard_config.md - enables/disables clipboard support
 - api/link/ui.treetable_columnwidth_config.md - defines the default width for columns (in pixels)
 - api/link/ui.treetable_columns_config.md - configures columns of the table
 - api/link/ui.treetable_container_config.md - an HTML container (or its id) where the component should be initialized
@@ -304,7 +304,7 @@ var treetable = webix.ui({
 - api/link/ui.treetable_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.treetable_datatype_config.md - the type of loaded data
 - api/link/ui.treetable_delimiter_config.md - sets CSV delimiters for clipboard operations
-- api/link/ui.treetable_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.treetable_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.treetable_drag_config.md - enables or disables drag-and-drop
 - api/link/ui.treetable_dragcolumn_config.md - enables drag-and-drop support for columns
 - api/link/ui.treetable_dragscroll_config.md - enables autoscroll of component during drag-n-drop

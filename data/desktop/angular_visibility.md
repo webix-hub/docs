@@ -34,5 +34,5 @@ The **webix-show** directive declares a variable which value (boolean) can be af
 <button ng-click="showLeft=false">Hide Left</button>
 ~~~
 
-{{sample 33_angular/05_show.html}}
+**Related sample:** [Webix-Angular:Visibility](https://webix-hub.github.io/webix-angular/samples/05_show.html)
 

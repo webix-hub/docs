@@ -35,7 +35,7 @@ var value = node.value; // ->"The Shawshank Redemption"
 - **<i>id</i>** - (*string*) the item id
 - **<i>value</i>** - (*string*) the item value
 - **<i>$level</i>** - (*number*) the level of nesting (one-based numbering)
-- **<i>parent</i>** - (*string*) the id of the item's parent
+- **<i>$parent</i>** - (*string*) the id of the item's parent
 - **<i>$count</i>** - (*number*) the number of children
 - **<i>open</i>** - (*boolean*) defines whether the node is collapsed or expanded (just for parent nodes)
 

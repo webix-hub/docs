@@ -29,5 +29,12 @@ webix.ui({
 @template:	api_event
 @descr:
 
+Returning *false* within the handler will prevent the execution of further logic and the action will not be applied.
+
 @related:
 pivot/customization.md#changingpivotstructure
+
+
+@relatedapi:
+- api/ui.pivot_onapply_event.md
+- api/ui.pivot_onbeforecancel_event.md

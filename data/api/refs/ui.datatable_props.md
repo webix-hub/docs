@@ -10,7 +10,7 @@ Properties
 - api/ui.datatable_blockselect_config.md - enables/disables block selection
 - api/link/ui.datatable_borderless_config.md - used to hide the component borders
 - api/ui.datatable_checkboxrefresh_config.md - controls behavior of checkbox editors in grid
-- api/link/ui.datatable_clipboard_config.md - 
+- api/link/ui.datatable_clipboard_config.md - enables/disables clipboard support
 - api/ui.datatable_columnwidth_config.md - defines the default width for columns (in pixels)
 - api/ui.datatable_columns_config.md - configures columns of the table
 - api/link/ui.datatable_container_config.md - an HTML container (or its id) where the component should be initialized
@@ -21,7 +21,7 @@ Properties
 - api/link/ui.datatable_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.datatable_datatype_config.md - the type of loaded data
 - api/link/ui.datatable_delimiter_config.md - sets CSV delimiters for clipboard operations
-- api/link/ui.datatable_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.datatable_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.datatable_drag_config.md - enables or disables drag-and-drop
 - api/ui.datatable_dragcolumn_config.md - enables drag-and-drop support for columns
 - api/link/ui.datatable_dragscroll_config.md - enables autoscroll of component during drag-n-drop

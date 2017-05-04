@@ -168,7 +168,7 @@ dummy stub
 - api/link/ui.fileview_autoheight_config.md - enables autosizing to content
 - api/link/ui.fileview_borderless_config.md - used to hide the component borders
 - api/link/ui.fileview_click_config.md - sets an action happening on a button click
-- api/link/ui.fileview_clipboard_config.md - 
+- api/ui.fileview_clipboard_config.md - 
 - api/link/ui.fileview_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.fileview_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.fileview_data_config.md - JavaScript array containing data for the component
@@ -176,7 +176,7 @@ dummy stub
 - api/link/ui.fileview_datafetch_config.md - defines the number of records that will be loaded during each dynamic loading request
 - api/link/ui.fileview_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.fileview_datatype_config.md - the type of loaded data
-- api/link/ui.fileview_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.fileview_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.fileview_drag_config.md - enables or disables drag-and-drop
 - api/link/ui.fileview_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.fileview_editvalue_config.md - defines which data item is editable (in case of several data item in the cell/line)

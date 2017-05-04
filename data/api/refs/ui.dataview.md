@@ -179,15 +179,13 @@ var dataview = webix.ui({
 - api/ui.dataview_autoheight_config.md - enables autosizing to content
 - api/link/ui.dataview_borderless_config.md - used to hide the component borders
 - api/link/ui.dataview_click_config.md - sets an action happening on a button click
-- api/link/ui.dataview_clipboard_config.md - 
 - api/link/ui.dataview_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.dataview_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.dataview_data_config.md - JavaScript array containing data for the component
-- api/link/ui.dataview_datafeed_config.md - the URL that the component will use to reload data during binding
 - api/link/ui.dataview_datafetch_config.md - defines the number of records that will be loaded during each dynamic loading request
 - api/link/ui.dataview_datathrottle_config.md - sets the polling interval (the time period between the completion of a network request and the next request for data)
 - api/link/ui.dataview_datatype_config.md - the type of loaded data
-- api/link/ui.dataview_disabled_config.md - indicates whether an item is enabled or not
+- api/link/ui.dataview_disabled_config.md - indicates whether an item is enabled
 - api/link/ui.dataview_drag_config.md - enables or disables drag-and-drop
 - api/link/ui.dataview_dragscroll_config.md - enables autoscroll of component during drag-n-drop
 - api/link/ui.dataview_externaldata_config.md - allows defining custom 'move' logic for the component.

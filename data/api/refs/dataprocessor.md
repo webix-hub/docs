@@ -48,15 +48,15 @@ DataProcessor
 - api/dataprocessor_onafterupdate_event.md - fires after successful data insertion
 - api/link/dataprocessor_onaftervalidation_event.md - fires after data has been validated
 - api/dataprocessor_onbeforedatasend_event.md - called before sending data to server side
-- api/dataprocessor_onbeforedelete_event.md - fires before sending data for item insertion
+- api/dataprocessor_onbeforedelete_event.md - fires before sending data for item deletion
 - api/dataprocessor_onbeforeinsert_event.md - fires before sending data for item insertion
 - api/dataprocessor_onbeforesaveerror_event.md - fires for data saving errors
 - api/dataprocessor_onbeforesync_event.md - called when server side response received, but not processed yet
 - api/dataprocessor_onbeforeupdate_event.md - fires before sending data for item insertion
 - api/link/dataprocessor_onbeforevalidate_event.md - called before running validation
 - api/dataprocessor_onloaderror_event.md - occurs when server side response is invalid and can't be procesed
-- api/link/dataprocessor_onvalidationerror_event.md - fires when the form fails to pass validation
-- api/link/dataprocessor_onvalidationsuccess_event.md - fires after the form has passed validation successfully
+- api/link/dataprocessor_onvalidationerror_event.md - fires when a form input fails to pass validation
+- api/link/dataprocessor_onvalidationsuccess_event.md - fires after a form input has passed validation successfully
 }}
 
 
