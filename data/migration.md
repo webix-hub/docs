@@ -16,21 +16,21 @@ Webix 4.1 -> 4.2
 
 ###Getting integrated object of third-party components
 
-The possibility of getting an integrated object of [third-party components](https://github.com/webix-hub/components) like GoogleMap, CodeMirror editor, Sigma chart
-has radically changed.
+The possibility of getting an integrated object of [third-party components](https://github.com/webix-hub/components) like Yandex Maps, CodeMirror editor, Sigma chart
+and [GoogleMap](desktop/googlemap.md) (in the main package) has radically changed.
 
 Earlier you could either access the editor or map as follows:
 
 ~~~js
 var editor = codemirror.editor; 
-var map = googlemap.map;
+var map = yandexmap.map;
 ~~~
 
 or use the corresponding **getSome()** method of the component:
 
 ~~~js
 var editor = codemirror.getEditor(); 
-var map = googlemap.getMap(); 
+var map = yandexmap.getMap(); 
 ~~~
 
 From version 4.2 you must use the **getSome()** method as the only option.
@@ -44,13 +44,13 @@ codemirror.getEditor(true).then(function(editor){ /* logic */ });
 
 The list of the affected components is the following:
 
-- **.getMap()** (Google Maps (in [components](https://github.com/webix-hub/components) and main package), Yandex Maps, Here Maps, OpenStreet Maps)
+- **.getMap()** (Yandex Maps, Here Maps, OpenStreet Maps, desktop/googlemap.md widget (in the main package)
 - **.getEditor()** (Ace Editor,  NicEdit, CKEditor,  Code Mirror, TinyMCE)
 - **.getChart()** (RaphaelJS, FusionCharts, SigmaJS, JustGage)
 - **.getScheduler()** (DHTMLX Scheduler)
 - **.getStage()** (Konva)
 
-###NokiaMap renames to HereMap
+###NokiaMap is renamed to HereMap
 
 One of the [third-party components](desktop/extensions.md) has changed its name. Now we have an updated HereMap instead of the NokiaMap. 
 
