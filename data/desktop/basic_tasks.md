@@ -181,24 +181,33 @@ Articles are of various levels of complexity and both a beginner and a master ca
     <tr>
         <td id="thirdparty" class='topics'>
             <h4>
-                Third Party Integration
+                Integration with Other Frameworks
+            </h4>
+            <ul id="thirdparty_sublist">                   
+                    <li>desktop/jquery.md</li>
+                    <li>desktop/backbone.md</li>
+                    <li>desktop/angular.md</li>
+                    <li>desktop/vue.md</li>
+                    <li>desktop/dhtmlx.md</li>                   
+            </ul>
+        </td>
+        <td class='topic_description'>Says which third-party frameworks and how can be integrated with Webix components.</td>
+    </tr>
+    <tr>
+        <td id="thirdparty" class='topics'>
+            <h4>
+                Third-Party Integration
             </h4>
             <ul id="thirdparty_sublist">
                     <li>desktop/text_editors.md</li>
                     <li>desktop/scheduler.md</li>
                     <li>desktop/chart_integration.md</li>
                     <li>desktop/maps.md</li>
-                    <li>desktop/dhtmlx.md</li>
-                    <li>desktop/jquery.md</li>
-                    <li>desktop/backbone.md</li>
-                    <li>desktop/angular.md</li>
-                    <li>desktop/vue.md</li>
                     <li><a href="desktop/custom_integration.md">How Integrate any Third-party Tool Using a Custom Component</a></li>
             </ul>
         </td>
-        <td class='topic_description'>Says which third-party libraries and how can be integrated with Webix components.</td>
+        <td class='topic_description'>Describes implemented integrations with third-party libraries and the way of making custom integration.</td>
     </tr>
-
     <tr>
         <td id="thirdparty" class='topics'>
             <h4>
