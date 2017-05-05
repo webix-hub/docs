@@ -1,6 +1,11 @@
 DataView Suggest
 ========================
 
+{{pronote
+The functionality is a feature of **Webix Pro** edition.
+}}
+
+
 DataView suggest, or DataSuggest, is used to add extra functionality to Webix select controls, namely [richselect](desktop/richselect.md), [multiselect](desktop/multiselect.md), 
 [combo](desktop/combo.md), [multicombo](desktop/multicombo.md) and similar [editors](desktop/editing.md#editortypes). It is based on Webix [suggest list](desktop/suggest.md).
 

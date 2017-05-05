@@ -41,7 +41,7 @@ var value = node.value; // ->"The Shawshank Redemption"
 
 For example, variable **node** from the code  snippet above looks as in:
 
-~~~html
+~~~js
 node = {
   	$count: 2,
 	$level: 1,
