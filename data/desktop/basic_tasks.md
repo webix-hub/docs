@@ -183,10 +183,15 @@ Articles are of various levels of complexity and both a beginner and a master ca
             <h4>
                 Integration with Other Frameworks
             </h4>
-            <ul id="thirdparty_sublist">                   
-                    <li>desktop/jquery.md</li>
+            <ul id="thirdparty_sublist">  
+            		<li>desktop/angular.md</li>
+                    <li>desktop/angular2.md</li>
                     <li>desktop/backbone.md</li>
-                    <li>desktop/angular.md</li>
+                    <li>desktop/firebase.md</li>
+                    <li>desktop/jquery.md</li>
+                   	<li>desktop/meteor.md</li>
+                   	<li>desktop/react.md</li>
+                    <li>desktop/typescript.md</li>
                     <li>desktop/vue.md</li>
                     <li>desktop/dhtmlx.md</li>                   
             </ul>
@@ -206,7 +211,7 @@ Articles are of various levels of complexity and both a beginner and a master ca
                     <li><a href="desktop/custom_integration.md">How Integrate any Third-party Tool Using a Custom Component</a></li>
             </ul>
         </td>
-        <td class='topic_description'>Describes implemented integrations with third-party libraries and the way of making custom integration.</td>
+        <td class='topic_description'>Describes solutions for integration with third-party libraries and the way of implementing custom integration.</td>
     </tr>
     <tr>
         <td id="thirdparty" class='topics'>
