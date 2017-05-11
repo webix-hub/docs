@@ -22,11 +22,11 @@ radio buttons alongside with submit/cancel buttons depending on the situation. F
 UI-related form inherits from [view](desktop/view.md). It resembles [layout](desktop/layout.md) very much as it is divided into columns and rows where controls are put. 
 
 - **elements** - the form's specific property, an array of vertically arranged controls and control groups;
-- **columns** - an array of horizontally arranged controls and control groups;
-- **rows** -  an array of vertically arranged controls and control groups.
+- **cols** - an array of horizontally arranged controls and control groups;
+- **rows** -  (alias to *elements*) an array of vertically arranged controls and control groups.
 
 {{note Please pay attention that in order to interact with controls ([set](api/link/ui.form_setvalues.md)/[get](api/link/ui.form_getvalues.md) values, 
-[validate](api/link/ui.form_validate.md) them), you should specify the **name property** for each control.}}
+[validate](api/link/ui.form_validate.md) them), you should specify the **name** property for each needed control.}}
 
 {{snippet
 Login form
@@ -43,8 +43,8 @@ webix.ui({
 			{ view:"button", value:"Login" , type:"form"},
 			{ view:"button", value:"Cancel"}
 		]}
-		]
-	});
+	]
+});
 ~~~
 {{sample 13_form/02_api/01_basic.html }}
 
@@ -133,8 +133,8 @@ var data = {id:1, fname:"Ann", lname:"Brown"};
 
 webix.ui({
 	view:"form", id:"myform", elements:[
-		{view:"text", name:"fname"},
-    	{view:"text", name:"lname"}
+		{ view:"text", name:"fname"},
+    	{ view:"text", name:"lname"}
 	],
     data:data
 });    
@@ -159,13 +159,12 @@ Form **elements** can be divided into columns and rows with any level of complex
 { view:"form", elements:[
 	{cols:[
     	{ rows:[
-        	{view:"text"},
-            {view:"datepicker"}
+        	{ view:"text"},
+            { view:"datepicker"}
         ]},
-        {view:"checkbox"},
-        {view:"button"}
-    ]},
-    
+        { view:"checkbox"},
+        { view:"button"}
+    ]}
 ]}
 ~~~
 
@@ -182,13 +181,13 @@ Form elements are placed into different **row arrays** where the first row is a 
 {view:"form", elements: [
 	{ rows:[ 
 		{ template:"Alpha fields", type:"section"},
-		{ view:"text", label:"Alpha 1", value:'' },
-        { view:"text", label:"Alpha 2", value:'' }]
-    },
+		{ view:"text", label:"Alpha 1", value:"" },
+        { view:"text", label:"Alpha 2", value:"" }
+    ]},
 	{ rows:[ 
 		{ template:"Beta fields", type:"section"},
-		{ view:"text", label:"Beta 1", value:'' }]
-    }
+		{ view:"text", label:"Beta 1", value:"" }
+    ]}
 ]} 
 ~~~
 
@@ -210,9 +209,9 @@ Webix Fieldset features text **label** and **body** where **rows** or **cols** a
 	{ view:"fieldset", label:"Field Set 1", body:{
 		 rows:[
           	{ view:"text", label:"Login"},
-			{ view:"text", label:"Email"}]
-         }
-    }
+			{ view:"text", label:"Email"}
+         ]
+	}}
 ]}
 ~~~
 
@@ -234,14 +233,20 @@ The switching controls are placed directly into the array of form **elements**.
 
 ~~~js
 {view:"form", elements:[
-	{view:"tabview",
-		tabs:["A","B","C"],
+	{ view:"tabview",
+		tabbar:{ 
+        	options:["A","B"]
+        },
 		cells:[
-			{ view:"text", name:"value1", label:"value1" },
-			{ view:"text", name:"value2", label:"value2" } 
+        	{ id:"A", rows:[
+				{ view:"text", name:"value1", label:"value1" },{}
+            ]},
+            { id:"B", rows:[
+				{ view:"text", name:"value2", label:"value2" }, {}
+            ]}
         ]
-    }]
-}
+    }
+]}
                
 ~~~
 
@@ -252,13 +257,13 @@ The switching controls are placed directly into the array of form **elements**.
 
 ####Getting value of a single element
 
-Since form elements comprise an array you can refer to each of them by its **number** starting from 0 and get/set the value of any item. 
+Since form elements comprise an associative array you can refer to each of them by the **name** property of any item. 
 
 ~~~js
 var form1 = [
-	{ view:"text", id:"log", label:'Login', name:"login"},
-	{ view:"text", id:"em" label:'Email', name:"email" },
-    { view:"button", id:"sub", name:"submit", value:"Submit"}
+	{ view:"text", label:"Login", name:"login"},
+	{ view:"text",  label:"Email", name:"email"},
+    { view:"button",  name:"submit", value:"Submit"}
 ];
 
 webix.ui({
@@ -266,26 +271,29 @@ webix.ui({
     id:"my_form", 
     elements: form1
 });
-		
-var login = form1[0].login;// returns current input value;
-var button = form1[2].submit; //returns "Submit";
+
+//accessing "login" field object	
+var login = $$("my_form").elements.login;
+
+//getting value of "login" field
+var loginValue = $$("my_form").elements.login.getValue(); 
 ~~~
 
 Or, you can apply the **getValue()** method directly to the needed control:
 
 ~~~js
-$$("log").getValue();
+var loginValue = $$("log").getValue();
 ~~~
 
 **Getting values of all form elements**
 
-To get an associative array of all elements (*name:value* pairs) you can use api/link/ui.form_getvalues.md method.
+To get an associative array of all elements' values (*name:value* pairs) you can use api/link/ui.form_getvalues.md method.
 To get to the necessary value, you should specify the **name** of the needed control. 
 
 ~~~js
 var values = $$("my_form").getValues(); //returns { login:"", email:"", submit:"" }
 
-values.login; // returns current value of the text input field 
+values.login; // returns current value of "login" field
 ~~~
 
 Additionally, you can get only **changed** and **unchanged** form values with the following methods respectively:
@@ -299,14 +307,13 @@ Additionally, you can get only **changed** and **unchanged** form values with th
 Any form element can be **disabled** or switched to the **readonly** mode. 
 
 ~~~js
-var form2 = [
-	{ view:"header" }
-	{ view:"text", value:'..', label:".."},
-	{ view:"text", type:'..', value:'..', label:".."},
-]
-
-form2[i].readonly = true; // "i" takes the number value of the element starting from 0
-form2[i].disabled = true; 
+webix.ui({
+	view:"form",
+    elements:[
+		{ view:"text", readonly:true},
+		{ view:"text", disabled:true }
+	]
+});
 ~~~
 
 {{sample 13_form/02_api/02_attributes.html }}
@@ -325,19 +332,23 @@ The old value comes as **oldv** parameter while the new one is referred to as **
 ~~~js
 $$("form1").elements["login"].attachEvent("onChange", function(newv, oldv){
 	webix.message("Value changed from: "+oldv+" to: "+newv);
-}
+});
 ~~~
 
 {{sample 13_form/02_api/07_onchange_event.html }}
 
 ##Getting Parent Form for the Input
 
-The easiest way to get to a parent form from any of its elements is to call the api/link/ui.view_getformview.md:
+The easiest way to get to the parent form from any of its elements is to call the api/link/ui.view_getformview.md:
 
-~~~js
-{view:"text", on:{"onChange":function(){
-	var form = this.getFormView();
-}}}
+{{snippet Validating form on input changing }}
+{ view:"text", on:{
+	onChange:function(){
+		var form = this.getFormView();
+        form.validate();
+        
+	}
+}}
 ~~~
 
 ##Sending Form Data
