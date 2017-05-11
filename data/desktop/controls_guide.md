@@ -20,7 +20,7 @@ Control constructor includes its name and properties defining its look-and-feel 
 Some properties duplicate HTML attributes, some are typically Webix control properties. In addition, you can set necessary HTML attributes to your control within **attributes** object property. 
 
 ~~~js
-{view:"text", width:200, click:"", attributes:{ maxlength:10 }...}
+{ view:"text", width:200,  attributes:{ maxlength:10 }, click: function(){ ... }}
 ~~~
 
 ##Defining Text Label 
@@ -47,8 +47,8 @@ Any control can be set **disabled** and **readonly** with the help of dedicated 
 
 ~~~js
 elements:[
-	{view:"text", readonly:true},
-	{view:"datepicker", disabled:true}
+	{ view:"text", readonly:true},
+	{ view:"datepicker", disabled:true}
 ]    
 ~~~
 
@@ -87,8 +87,8 @@ smaller than an **width**, a part of the control will disappear;
 ~~~js
 //text2 is 3 times bigger than text1
 rows:[
-	{view:"text",	name:"text1", gravity:1},
- 	{view:"text", name:"text2", gravity:3}
+	{ view:"text", name:"text1", gravity:1},
+ 	{ view:"text", name:"text2", gravity:3}
 ]    
 ~~~
  
@@ -108,35 +108,36 @@ Two major possibilities here include:
 With the **click** property. It equals to the "onItemClick" event. 
 
 ~~~js
-{view:"button", click:"$$('my_form').save()" }
+{view:"button", click:function(){
+	$$("my_form").validate();
+}}
 ~~~
 
 With the **on** property that allows attaching custom handlers to specified inner events of the control:
 
 ~~~js
 //clicking
-{view:"button", on:{
-	'onItemClick': function(){...}
-    }
-}
+{ view:"button", on:{
+	onItemClick: function(){...}
+}}
     
 //state changing
-{view:"text",  on:{'onChange': function(){... }
-	}
-}
+{view:"text",  on:{
+	onChange: function(){...}
+}}
 ~~~
 
 2 . The same using the **attachEvent()** method.
 
 ~~~js
 //clicking
-$$("my_button").attachEvent("onItemClick", function(){.... });
+$$("my_button").attachEvent("onItemClick", function(){... });
 
 //state changing 
-$$("my_text").attachEvent("onChange", function(){.....});
+$$("my_text").attachEvent("onChange", function(){...});
 ~~~
 
-The implementation of an **onChange(**) function is described in the [Form documentation](desktop/form.md).
+The implementation of an **onChange(**) handler is described in the [Form documentation](desktop/form.md).
 
 ##Automatic Showing and Enabling of Related Form Fields {#related}
 
@@ -154,8 +155,8 @@ Enabling a form field by changes in another
 }}
 ~~~js
 elements:[
-	{view:"text", id:"master", relatedView:"slave", relatedAction:"enable"},
-    {view:"text", id:"slave", disabled:true}
+	{ view:"text", id:"master", relatedView:"slave", relatedAction:"enable"},
+    { view:"text", id:"slave", disabled:true}
 ]
 ~~~
 
@@ -202,8 +203,9 @@ These values are set within **options** property either as an array or as a coll
 Array of options for Combo box
 }}
 ~~~js
-{ view:"combo", id:'field_m', label: 'Combo', value:"One", yCount:"3", 
-    options:["One", "Two", "Three"]}
+{ view:"combo", id:"field_m", label: "Combo", value:"One", yCount:"3", 
+    options:["One", "Two", "Three"]
+}
 ~~~
 
 The initial value is specified by the **value** property and corresponds to any value from the predefined ones: 
@@ -212,24 +214,11 @@ The initial value is specified by the **value** property and corresponds to any 
 Collection of objects
 }}
 ~~~js
- { view:"radio", label:"Branch", value:1,options:[
+{ view:"radio", label:"Branch", value:1, options:[
      { value:"Master",  id:1 }, 
-     { value:"Branch",  id:2 }]
-}                
-                
+     { value:"Branch",  id:2 }
+]}             
 ~~~
-
-Th initial value can be set  as a **text** value of any option:
-
-~~~js
- { view:"radio", label:"Branch", text:"Master",options:[
-     { value:"Master",  id:1 }, 
-     { value:"Branch",  id:2 }]
-}                
-                
-~~~
-
-If both **text** and **value** properties are defined, the **text** one will be ignored. 
 
 {{sample 13_form/01_controls/04_radio.html }}
 
@@ -239,13 +228,13 @@ Such controls as [select](desktop/select.md), [combo](desktop/combo.md), [multic
 can get values from the server side. The script that returns the needed data, can be defined directly in the **options** property: 
 
 ~~~js
-view:"combo", options:"server/data.json"
+{ view:"combo", options:"server/data.json"}
 ~~~
 
 {{sample 13_form/01_controls/11_combo_advanced.html}}
 
 
-Note that **the getValue()** method will return the **ID** of the currently selected tab/segment/option. 
+Note that the **getValue()** method will return the **id** of the currently selected tab/segment/option. 
 
 ##Setting Values Dynamically
 
@@ -256,9 +245,9 @@ Find the latter in the related [article](desktop/form_tasks.md).
 Both methods take the needed value (or object with 'ID-value' pair(s)) as parameter and are called from the necessary control or the form where the controls are nested: 
 
 ~~~js
-$$('text1').setValue('Anna'); //for a single text field with "text1" ID
+$$("text1").setValue("Anna"); //for a single text field with "text1" ID
 
-$$('form1').setValues({ //value for 2 text field in the form
+$$("form1").setValues({ //for several text fields in the form
 	text1:"Anna",  
     text2:"Brown"
 });
@@ -270,7 +259,8 @@ Values of two-state controls ([checkbox](desktop/checkbox.md) and [radio](deskto
 - **toggle()** - to change the initial value (the [toggle](desktop/toggle.md) button as well takes this method);
 
 ~~~js
-$$("mycheckbox").toggle(); //-> if checked - becomes unchecked and vice versa
+//check the control if it is unchecked and vice versa
+$$("mycheckbox").toggle(); 
 ~~~
 
 ##Getting Values 
@@ -288,7 +278,7 @@ In case you want to get the value of a separate control, call the **getValue** m
 	{ id:2, value:"Release" } 
 ]}
  
-var value = $$("my_sel").getValue(); //- > returns 1
+var value = $$("my_sel").getValue(); // returns 1
 ~~~
 
 In case controls are embedded into a form, we call the **getValues()** method from this form while specifying **name** or **ID** of the dedicated control.
@@ -297,7 +287,7 @@ In case controls are embedded into a form, we call the **getValues()** method fr
 webix.ui({
 	view:"form", elements:[
     	{view:"text", id:"title", value:""},
-        ...//other controls
+        //other controls
     ]
 })
 
@@ -320,7 +310,7 @@ In case the **getValue()** method returns object (e.g. date object) and you'd li
 webix.ui({
 	view:"datepicker",
     stringResult:true, // false by default
-    ..config
+    //other properties
 });
 ~~~
 
