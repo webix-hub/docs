@@ -5,7 +5,7 @@ getValues
 @short: derives input values from the form
 
 @params:
-* details			object|function			additional parameters (described below)
+* details			object,function			additional parameters (described below)
 	
 @returns: 
 values		hash  		returns a hash of form values: data entered by user or initial data from the "value" property
