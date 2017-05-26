@@ -21,8 +21,8 @@ To begin with, create a new HTML file and include the related Webix code files i
 
 Required code files are:
 
-- webix.css
-- webix.js
+- *webix.css*
+- *webix.js*
 
 {{snippet
 A basic html page with the included code files
@@ -52,8 +52,7 @@ Next, you should create a div container to place your barcode into.
 ~~~
 
 
-Now you can initialize the component.
-To create a new Barcode object, you need to use the next constructor:
+Now you can initialize the widget.To create a new Barcode object, you need to use the following constructor:
 
 {{snippet
 Barcode constructor
@@ -62,7 +61,7 @@ Barcode constructor
 barcode = new webix.ui({view:"barcode"});
 ~~~
 
-If you want to place the component into the container, you should specify the container property inside of the view constructor:
+If you want to place the component into the container, you should specify the *container* property inside of the view constructor:
 
 
 {{snippet
@@ -79,7 +78,7 @@ barcode = new webix.ui({
 60_pro/08_barcode/01_basic.html
 }}
 
-Configuration settings
+Configuration Settings
 -----------------------
 
 You can set the following properties to configure Barcode:
@@ -251,10 +250,10 @@ Custom Types
 
 If you need create a custom barcode, you can add the necessary type to the existing Barcode view. 
 
-Each barcode type should contain a function that returns a sequence of “0” and “1” chars based on the incoming text value. 
+Each barcode type should contain a function that returns a sequence of "0" and "1" chars based on the incoming text value. 
 This 0-and-1 character combination will be used for bar rendering. 
 
-The Library will render black bars for “1” chars and leave gaps for the “0” ones.
+The Library will render black bars for “1” chars and leave gaps for the "0" ones.
 
 To add a new type you need to use the **webix.type** method that takes two parameters: 
  
@@ -269,9 +268,9 @@ webix.type( webix.ui.barcode, {
 
 Type configuration of Barcode must contain 3 properties:
 
- - name - {string} the name of the code
- - encode - {function} the function that returns sequence of “1”and “0” chars for black-and-white bar rendering
- - template - {function} the function that returns text for barcode
+- **name** - (*string*) the name of the code
+- **encode** - (*function*) the function that returns sequence of "1" and "0" chars for black-and-white bar rendering
+- **template** - (*function*) the function that returns text for barcode
 
 Let's consider an example of the "code39" barcode configuration:
 
@@ -301,6 +300,7 @@ encodings:[
 ~~~
 
 4) define the **encode** method that will apply 0-1 sequences from *encodings* array to incoming text value
+
 ~~~js
 encode: function(value){
 	var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-. $/+%*";
@@ -326,7 +326,6 @@ encode: function(value){
 So, the whole "code39" type definition will be as in:
 
 ~~~js
-
 webix.type(webix.ui.barcode, {
     // name
 	name: "code39",
@@ -363,8 +362,7 @@ webix.type(webix.ui.barcode, {
     template: function(value){
         return ("*" + value + "*").toUpperCase();
     }
- });
- 
+ }); 
 ~~~
 
 Here is an example of the "code39" usage:

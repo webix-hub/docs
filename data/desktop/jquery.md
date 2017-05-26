@@ -16,7 +16,7 @@ Working with JQuery, you can create all the components from the webix UI library
 
 ##Component initialization:
 ~~~js
-$(#div ID/ .CSS selector').webix_component({config});
+$('#div ID/ .CSS selector').webix_component({config});
 ~~~
 
 Let it  be list:

@@ -81,11 +81,11 @@ webix.ui({
 - **maxRange** - (number) the maximum range value of the Bullet Graph scale
 - **bands** - (array) the set of value and color values for ranges of performance used in the widget. The default set is as follows:
 ~~~js
-bands:[
-	{ value:100, color:"#5be5d6"},
-	{ value:80, color:"#fff07e" },
-	{ value:60, color:"#fd8b8c" } 
-]
+	bands:[
+		{ value:100, color:"#5be5d6"},
+		{ value:80, color:"#fff07e" },
+		{ value:60, color:"#fd8b8c" } 
+	]	
 ~~~
 - **label** - (string) the text label of the widget
 - **placeholder** - (string) additional description for the widget's label or value
