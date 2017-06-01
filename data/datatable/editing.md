@@ -218,7 +218,7 @@ Apart from row and column editing, datatable API offers the possibilities to
 - close the editor without saving changes - **editCancel()** method;
 - close the editor while saving changes - **editStop()** method.
 
-Editing via a Bind Form
+Editing via a Bound Form
 ----------------------------------
 
 Webix components including datatable can be bound to another component to ensure **synchronous changing** of their **data**. For instance, a simple function can be used to bind a form to a grid, 

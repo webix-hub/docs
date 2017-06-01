@@ -1,7 +1,7 @@
 DataLoader 
 =============
 
-{{memo Loads and processes data into a component.. }}
+{{memo Loads data into a component and processes it }}
 
 
 
@@ -22,7 +22,7 @@ DataLoader
 - api/link/dataloader_getnextid.md - returns the ID of an item which is positioned the specified step after the specified item
 - api/link/dataloader_getprevid.md - returns the ID of an item which is positioned the specified step before the specified item
 - api/link/dataloader_load.md - loads data from an external data source.
-- api/dataloader_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
+- api/dataloader_loadnext.md - sends a request to load the specified number of records to the end of the client-side dataset or to the specified position
 - api/link/dataloader_parse.md - loads data to the component from an inline data source
 - api/link/dataloader_refresh.md - repaints the whole view or a certain item
 - api/link/dataloader_remove.md - removes the specified item/items from datastore

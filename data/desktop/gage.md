@@ -1,6 +1,10 @@
 Gage
 =====
 
+{{pronote
+The widget is available in the **Webix Pro** edition.
+}}
+
 API Reference
 ---------------
 
