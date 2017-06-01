@@ -48,6 +48,10 @@ php index.php reindex
 php -d memory_limit=512M index.php export_html
 cd export && zip -qr ../webix.docs.html.zip ./ && cd ..
 
+php -d memory_limit=512M index.php sphinx
+cd search && zip -qr ../webix.docs.xml.zip ./ && cd ..
+
 #store generated docs
 aws --quiet s3 cp ./webix.docs.html.zip s3://webix-packages/docs/docs_${LATEST}.html.zip
+aws --quiet s3 cp ./webix.docs.xml.zip s3://webix-packages/docs/docs_${LATEST}.xml.zip
 aws --quiet s3 cp ./latest.txt s3://webix-packages/docs/latest.txt
