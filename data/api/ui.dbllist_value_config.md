@@ -4,7 +4,7 @@ value
 @short:
 	sets the ids of items that should be initially selected (moved to the right list)
 
-@type: string|array
+@type: string,array
 @example:
 webix.ui({
     view:"dbllist", 

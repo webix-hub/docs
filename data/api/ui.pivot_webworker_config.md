@@ -5,7 +5,7 @@ webWorker
 @short:
 	sets the path to the web worker source file
 
-@type: 
+@type: string
 @example:
 webix.ui({
 	view:"pivot",

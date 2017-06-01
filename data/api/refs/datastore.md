@@ -1,7 +1,7 @@
 DataStore 
 =============
 
-{{memo Core of all operations for data-collection based components. }}
+{{memo Core of all operations for data collection-based components }}
 
 
 

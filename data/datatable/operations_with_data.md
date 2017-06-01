@@ -1,4 +1,4 @@
-Operations with data
+Operations with Data
 ====================
 
 {{index

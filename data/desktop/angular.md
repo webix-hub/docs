@@ -1,7 +1,7 @@
 Angular JS Integration 
 ========================== 
 
-The Webix library provides integration with [Angular](https://angular.io/) JS framework. Since version 4.0 Webix is [compatible with Angular 2](desktop/angular.md#angular2compatibility).
+The Webix library provides integration with [Angular](https://angular.io/) JS framework. 
 
 
 {{note The sources for integration of Webix with AngularJS are not included into the Webix library package. You can take them from the
@@ -288,10 +288,6 @@ app.controller("webixTestController", function($scope){
 
 Inside the function invoked by **webix-ready** directive, Webix-Angular integrated app complies to standard Webix [event handling pattern](desktop/event_handling.md).
 
-Angular 2 Compatibility
------------------------
-
-You can use Webix together with Angular 2. You will find a demo and a related tutorial [on GitHub](https://github.com/webix-hub/angular2-demo).
 
 @index:
 	- desktop/angular_controllers.md

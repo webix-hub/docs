@@ -16,7 +16,7 @@ grid.attachEvent("onBeforeEditStop", function(state, editor){ return false; });
 grid.attachEvent("onEditorChange", function(id, value){
 	this.getItem(id.row)[id.column] = value;
 	this.refresh(id.row);
-});;
+});
 
 @template:	api_event
 @defined:	EditAbility

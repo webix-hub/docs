@@ -1,6 +1,10 @@
 Excel Viewer
 =============
 
+{{pronote
+The widget is available in the **Webix Pro** edition.
+}}
+
 ExcelViewer is an extension tool intended for viewing Excel files.
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/excelviewer_front.png">
@@ -80,7 +84,7 @@ parameters:
 $$("viewer").showSheet("Data");
 ~~~
 
-Excel toolbar and its API
+Excel Toolbar and its API
 ----------------
 
 It's possible to show a toolbar with tabs that correspond to the Excel sheets.
@@ -148,7 +152,7 @@ $$("toolbar").setValue(value);
 ~~~
 
 
-##Loading data to Excel Viewer
+##Loading Data to Excel Viewer
 
 There are three possible ways of loading data to Excel viewer:
 
@@ -161,6 +165,8 @@ There are three possible ways of loading data to Excel viewer:
 }
 ~~~
 
+{{sample 60_pro/10_viewers/02_excel_viewer.html }}
+
 - calling the **load** method with the file name as a parameter
 
 ~~~js
@@ -169,9 +175,7 @@ There are three possible ways of loading data to Excel viewer:
 $$("excel").load("binary->files/data.xlsx", "excel");
 ~~~
 
-{{sample 60_pro/10_viewers/02_excel_viewer.html }}
-
-**Binary** [proxy](desktop/server_proxy.md) is used for loading the file, which allows to get its contents as ArrayBuffer.
+**Binary** [proxy](desktop/server_proxy.md) is used for loading the file, which allows getting its contents as ArrayBuffer.
 The datatype is "excel".
 
 - parsing uploaded file data with the help of **parse** method
@@ -190,7 +194,7 @@ The datatype is "excel".
 
 {{sample 60_pro/10_viewers/03_excel_upload.html }}
 
-##Customizing the loaded data
+##Customizing Loaded Data
 
 You can customize the presentation of the loaded data, such as displaying headers and controlling the number of the loaded rows.
 

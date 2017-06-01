@@ -1,10 +1,15 @@
 Vue JS Integration
 =====================
 
+Webix provides the possibility of integration with [Vue JS](https://vuejs.org/) framework. 
+
+{{note The sources for integration of Webix with Vue JS are not included into the Webix library package. 
+You can take them from [the GitHub repository](https://github.com/webix-hub/webix-vue)}}
+
 Overview
 ----------
 
-Webix provides the possibility of integration with [VueJS](https://vuejs.org/) framework. There are two good use-cases, when such kind of integration will be useful:
+There are two good use-cases, when such kind of integration will be useful:
 
 - you have a Vue-based app, where you want to place one or a few complex widgets (datatable, chart, spreadsheet, etc.)
 - you have a Webix-based app, where you want to add a reactive Vue component

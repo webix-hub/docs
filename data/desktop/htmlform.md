@@ -29,16 +29,16 @@ HTMLForm, content
 }}
 ~~~html
 <div id="areaA">
-		<input type="text" name="title" value="" placeholder="Book title" /><br/>
-		<input type="text" name="author" value="" placeholder="Author" /><br/>
+	<input type="text" name="title" value="" placeholder="Book title" /><br/>
+	<input type="text" name="author" value="" placeholder="Author" /><br/>
 </div>
 <script type="text/javascript">
 webix.ui({
 	view:"htmlform",
-	content: "areaA" //coincides with ID of a *div* container 
-    //or
-    content: document.body // in case the form isn't included into any DIV
-    ...
+    //coincides with id of a *div* container 
+	content: "areaA",
+    //or, in case the form isn't included into any div
+    content: document.body
 });
 </script>
 ~~~
@@ -54,14 +54,14 @@ HTMLform, template
 }}
 ~~~js
 <div id="tpl">
-			<input type="text" name="title" value="" placeholder="Book title" /><br/>
-			<input type="text" name="author" value="" placeholder="Author" /><br/>
+	<input type="text" name="title" value="" placeholder="Book title" /><br/>
+	<input type="text" name="author" value="" placeholder="Author" /><br/>
 </div>
 <script type="text/javascript">
 webix.ui({
 	view:"htmlform",
-	template: "html->tpl" //coincides with ID of a *div* container
-        ...
+	template: "html->tpl", //coincides with id of a *div* container
+    ...
 });
 </script>
 ~~~
@@ -69,7 +69,7 @@ webix.ui({
 {{sample 11_htmlform/02_htmlform_layout.html }}
  
  
-- or it points to **external html-file** with a form:
+- or it points to **external HTML file** with form markup:
 
 {{snippet
 HTMLform, HTTP

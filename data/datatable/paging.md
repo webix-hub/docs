@@ -20,7 +20,7 @@ grid = new webix.ui({
 	view:"datatable",
 	...
 	pager:{
-		container:"paging_here",// the container where the pager controls will be placed into
+		container:"paging_here", // the container to place the pager controls into
 		size:100, // the number of records per a page
 		group:5   // the number of pages in the pager
 	}
@@ -30,6 +30,7 @@ grid = new webix.ui({
 
 Pager controls
 ---------------------
+
 If you set the [pager](api/link/ui.datatable_pager_config.md) parameter, DataTable automatically adds controls for page navigation.  You can customize those controls by specifying a certain template for them.
 
 <img src="datatable/paging_templates.png"></img>
@@ -61,8 +62,6 @@ grid = new webix.ui({
 });
 ~~~
 {{sample 15_datatable/19_paging/05_templates.html }}
-
-
 
 Generally, using the mentioned values, you can set the following combinations for DataTable:
 
@@ -122,6 +121,7 @@ The first combination is set by default. Other available ones can be achieved wi
 
 Customizing pager labels
 --------------------------
+
 You can set some text instead of arrows for the Next, Previous, First and Last buttons.
 
 <img src="datatable/paging_localization.png"></img>
@@ -131,10 +131,10 @@ You can set some text instead of arrows for the Next, Previous, First and Last b
 }}
 ~~~js
 webix.locale.pager = {
-	first: "First",// the first button
-    last: "Last",// the last button
-    next: "Next",// the next button
-    prev: "Prev"// the previous button
+	first: "First", // the first button
+    last: "Last", // the last button
+    next: "Next", // the next button
+    prev: "Prev"  // the previous button
 };
 
 grid = new webix.ui({

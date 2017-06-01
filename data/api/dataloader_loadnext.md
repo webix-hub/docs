@@ -1,7 +1,7 @@
 loadNext
 =============
 
-@short:	sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
+@short:	sends a request to load the specified number of records to the end of the client-side dataset or to the specified position
 
 @params:
 - count		number		the number of records fetch 

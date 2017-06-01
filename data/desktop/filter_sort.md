@@ -180,7 +180,7 @@ Sorting is enabled by the **sort()** function that takes data item, sorting dire
 There are several types that define the way of sorting depending on the type of data:
 
 - int;
-- date;
+- [date](datatable/sorting.md#dates);
 - string;
 - string_strict (case-sensitive 'string');
 - [text](datatable/sorting.md#visible_text) (visible text including template);

@@ -38,28 +38,17 @@ webix.ui({
 
 **Main Properties**
 
+- **key** - your application's API key
+
 The following properties define configuration of the GoogleMap widget: 
 
 - **id** - (string) defines the unique ID of the widget;
 - **zoom** - (number) defines the resolution of map objects displaying;
 - **center** - (array) sets the center of the map. It's an array of two elements (latitude and longitude) with comma delimiter.
-- **mapType** - (string) sets the Google map type.
-
-There are four Google map types: "ROADMAP","SATELLITE","HYBRID","TERRAIN". Uppercase is a must.
-
-{{sample 34_googlemap/05_heatmap.html}}
-
-- **layerType** - (string) the type of map layer
-
-There are two types of layer you can use for the GoogleMap widget:
-
-- "marker" - allows setting markers for particular points
-
-{{sample 34_googlemap/02_markers.html}}
-
-- "heatmap" - presents values by means of colors
-
-{{sample 34_googlemap/05_heatmap.html}}
+- **mapType** - (string) sets the Google map type. There are four Google map types: "ROADMAP","SATELLITE","HYBRID","TERRAIN". Uppercase is a must.
+- **layerType** - (string) the type of map layer. There are two types of layer you can use for the GoogleMap widget:
+	- "marker" - allows setting markers for particular points {{sample 34_googlemap/02_markers.html}}
+    - "heatmap" - presents values by means of colors {{sample 34_googlemap/05_heatmap.html}}
 
 
 Loading Data into GoogleMap

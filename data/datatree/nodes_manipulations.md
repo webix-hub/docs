@@ -3,10 +3,14 @@ Tree Nodes Manipulations
 
 Adding nodes
 ----------------------------
-Generally, to add a node (parent or child) you should use the add method. 
-At what position the element will be added depends on parameters you pass to the method.
 
-Method add accepts 3 parameters:
+Generally, to add a node (parent or child) you should use the api/link/ui.tree_add.md method. 
+The position an element will be added at depends on the parameters you pass to the method.
+
+{{note In case you need to add several nodes into the Tree, it's better to use the api/link/ui.tree_parse.md method}}
+
+
+The *add* method accepts 3 parameters:
 
 - **obj** - the item object
 - **pos** - the position that the new item should have after being inserted into the tree (zero-based numbering). <br> Note, 
@@ -15,7 +19,7 @@ Method add accepts 3 parameters:
 - **parent** - (optional) the parent node id. If it's not specified, the item will be added to the root of the tree
 
 {{note
-Note, you can use the getBranchIndex() method to get the position of a node by its id (read [more](datatree/getting_value.md#gettingthenodeindex)).
+Note, you can use the api/link/ui.tree_getbranchindex.md method to get the position of a node by its id (read [more](datatree/getting_value.md#gettingthenodeindex)).
 }}
 
 <table class="list">
@@ -38,7 +42,7 @@ Note, you can use the getBranchIndex() method to get the position of a node by i
         <td>Root node</td>
         <td>
 ~~~js
-tree = new webix.ui({ view:"tree",... });
+tree = webix.ui({ view:"tree",... });
             
 tree.add({ value:"New item"}, 0);
 ~~~
@@ -50,7 +54,7 @@ tree.add({ value:"New item"}, 0);
         <td>Child node (first child)</td>
 		<td> 
 ~~~js
-tree=new webix.ui({view:'tree',..});
+tree = webix.ui({view:'tree',..});
     
 var parentId= tree.getSelectedId();
 tree.add( {value:"New item"}, 0, parentId);
@@ -63,7 +67,7 @@ tree.add( {value:"New item"}, 0, parentId);
         <td>Child node (second child)</td>
 		<td>
 ~~~js
-tree=new webix.ui({view:'tree',..});
+tree = webix.ui({view:'tree',..});
 
 var parentId = tree.getSelectedId();
 var pos = tree.getBranchIndex("node2"); //'node2' is the 'Skoda' item's id
@@ -81,13 +85,14 @@ tree.add( {value:"New item"}, pos, parentId);
 
 Deleting nodes
 ----------------------------
-To delete a node (parent or child) you should use the remove method and specify the id of the required node there:
+
+To delete a node (parent or child) you should use the api/link/ui.tree_remove.md method and specify the id of the required node there:
 
 {{snippet
 Deleting the currently selected node
 }}
 ~~~js
-tree = new webix.ui({ view:"tree",... });
+tree = webix.ui({ view:"tree",... });
 
 var nodeId = tree.getSelectedId();
 tree.remove(nodeId);
@@ -95,13 +100,14 @@ tree.remove(nodeId);
 
 Selecting nodes
 ------------------------
+
 To select a specific node you should call the api/link/ui.tree_select.md method:
 
 {{snippet
 	Selecting a node
 }}
 ~~~js
-tree = new webix.ui({ view:"tree",... });
+tree = webix.ui({ view:"tree",... });
 
 tree.select("node2");// 'node2' is the item id
 ~~~
@@ -176,7 +182,7 @@ Tree provides several methods to manage 'open'/'close' state of a node. They are
 Checking whether the currently selected branch is opened
 }}
 ~~~js
-tree = new webix.ui({ view:"tree",... });
+tree = webix.ui({ view:"tree",... });
 
 var nodeId = tree.getSelectedId();
 tree.isBranchOpen(nodeId);
@@ -185,7 +191,8 @@ tree.isBranchOpen(nodeId);
 
 Filtering nodes
 --------------------
-To filter the tree nodes you should call the filter method:
+
+To filter the tree nodes you should call the api/link/ui.tree_filter.md method:
 
 {{snippet
 	Filtering the tree
@@ -204,7 +211,8 @@ Read more on the topic in article datatree/filtering.md.
 
 Sorting nodes
 --------------------
-To filter the tree nodes you should call the sort method:
+
+To filter the tree nodes you should call the api/link/ui.tree_sort.md method:
 
 {{snippet
 	Ascending sort in the tree
@@ -223,10 +231,11 @@ Read more on the topic in article datatree/sorting.md.
 
 Updating the tree
 ---------------------------------
-To update the tree you may call one of 2 appropriate methods:
 
-- update
-- refresh
+To update the tree you may call one of the 2 appropriate methods:
+
+- api/link/ui.tree_updateitem.md
+- api/link/ui.tree_refresh.md
 
 *Methods lead to one and the same result and don't have any specificity.*
 
