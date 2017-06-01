@@ -18,6 +18,6 @@ borderColor
 @relatedapi: 
 	api/ui.chart_border_config.md
 
-@descr: color is set in a hexadecimal format. By default, borders and colored greay (#636363). 
+@descr: color is set in the hexadecimal format. By default, the borders' color is gray (#636363). 
 
 

@@ -1,6 +1,10 @@
 PDF Viewer
 ==============
 
+{{pronote
+The widget is available in the **Webix Pro** edition.
+}}
+
 API Reference
 --------------
 
@@ -47,7 +51,7 @@ Configuration parameters are:
 	- **toolbar** (string) - the id of the related PDF toolbar;
 	- **url** (string) - the URL of the PDF file to browse in the viewer prefixed by "binary" keyword that refers to the [loading proxy](desktop/server_proxy.md).
     
-PDFbar structure   
+PDFbar Structure   
 ----------------
     
 Toolbar is supplied with the following fully functional controls: 
@@ -62,7 +66,7 @@ Toolbar is supplied with the following fully functional controls:
 If you need, you can use the viewer and the toolbar separately, by using their public API methods.
 
 
-PDF toolbar API reference
+PDF Toolbar API Reference
 -------------------
 
 
@@ -77,7 +81,7 @@ Possible values are "prev", "next" or page number.
 ~~~js
 $$("toolbar").setMasterPage("prev");
 // or
-$$("toolbar").setmasterPage(3);
+$$("toolbar").setMasterPage(3);
 ~~~
 
 ####setMasterScale()
@@ -156,6 +160,57 @@ applies downloading to the viewer to get its contents as PDF file
 ~~~js
 $$("toolbar").download();
 ~~~
+
+##Loading Data to PDF Viewer
+
+There are three possible ways of loading data to PDF viewer:
+
+- specifying the needed file directly in the viewer constructor by using the **url** parameter:
+
+~~~js
+{
+	view:"pdfviewer", 
+    url:"binary->files/data.pdf"
+}
+~~~
+
+{{sample 60_pro/10_viewers/01_pdf.html}}
+
+- calling the **load** method with the file name as a parameter
+
+~~~js
+{ view:"pdfviewer", id:"pdf"},
+...
+$$("pdf").load("binary->files/data.pdf");
+~~~
+
+{{sample 60_pro/10_viewers/06_pdf_load.html}}
+
+
+**Binary** [proxy](desktop/server_proxy.md) is used for loading the file, which allows getting its contents as ArrayBuffer.
+
+
+- parsing uploaded file data with the help of the **parse** method
+
+~~~js
+{
+	view:"uploader", 
+	width:200, 
+	height:45, 
+	type:"form", 
+	value:"Choose a PDF file to upload", 
+	accept:"application/pdf", 
+	on:{
+		onBeforeFileAdd:function(upload){
+			$$("pdf").parse(upload.file);
+				return false;
+		}
+	}
+}
+~~~
+
+{{sample 60_pro/10_viewers/05_pdf_upload.html }}
+
 
 
 @edition:pro
