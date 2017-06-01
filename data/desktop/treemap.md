@@ -1,11 +1,14 @@
 TreeMap
 ============
 
+{{pronote
+The widget is available in the **Webix Pro** edition.
+}}
+
 ##API Reference
 
 - [Methods, properties and events](api__refs__ui.treemap.html)
 - [Samples](http://docs.webix.com/samples/60_pro/11_treemap/index.html)
-
 
 
 ##Overview
