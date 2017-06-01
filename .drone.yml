@@ -12,6 +12,7 @@ pipeline:
     commands:
       - ln -s /madoka ../madoka
       - ./build.sh
+      - curl http://webix.com:2280/h00ks/webix-docs-release?token=${HOOK_TOKEN}
     when:
       branch: master
 
