@@ -99,9 +99,6 @@ webix.ready(function(){
 });
 ~~~
 
-{{sample
-63_kanban/05_php/01_loading_saving.html
-}}
 
 More information about Kanban data loading you can find in [DataStore](api/refs/datastore.md) docs.
 
