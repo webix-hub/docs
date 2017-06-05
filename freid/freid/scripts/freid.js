@@ -40,6 +40,14 @@ var Freid = {
 				container:temp
 			});
 		},
+		"webix.ui.treetable":function(){
+			var temp = webix.html.create("DIV");
+			return webix.ui({
+				view:"treetable",
+				select:"row",
+				container:temp
+			});
+		},
 		"webix.ui.dataview":function(){
 			webix.extend(webix.ui.dataview, webix.VirtualRenderStack, true);
 			var temp = webix.html.create("DIV");
