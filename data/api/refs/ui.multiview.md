@@ -64,7 +64,7 @@ webix.ui({
 - api/link/ui.multiview_isvisible.md - checks whether the view is visible
 - api/link/ui.multiview_mapevent.md - routes events from one object to another
 - api/link/ui.multiview_reconstruct.md - rebuilds the layout
-- api/link/ui.multiview_removeview.md - removes view from layout-like component
+- api/link/ui.multiview_removeview.md - removes the specified view of a layout-like component
 - api/link/ui.multiview_resize.md - adjusts the view to a new size
 - api/link/ui.multiview_resizechildren.md - resizes all children of the called component
 - api/ui.multiview_setvalue.md - defines which view need to be shown in the multiview

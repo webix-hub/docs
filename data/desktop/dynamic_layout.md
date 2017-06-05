@@ -81,13 +81,14 @@ Rebuilding Application Layout
 
 Here we look at advanced possibilities of [webix.ui()](api/_ui.md) method. 
 
-Besides its main purpose - instantiation of Webix component, it method can also be used for changing layout provided that additional parameters are passed to it. 
+Besides its main purpose, instantiation of Webix component, this method can also be used for changing layout, provided that additional parameters are passed to it. 
 
 All in all, its parameters include:
 
-- **configuration object** - (object, array) - a JSON object with the application configuration of any level of complexity;
-- **parent element** - (id or object) - Webix component that acts as a parent to an object you are going to initialize (first parameter);
-- **replacement object** -(id, index or object)- Webix component in a parent object that will be replaced by an object you are going to initialize (first parameter).
+- **configuration object** - (*object, array*) - a JSON object with the application configuration of any level of complexity;
+- **parent element** - (*id* or *object*) - Webix component that acts as a parent to the object you are going to initialize (the one you pass as the first parameter);
+- **replacement object** -(*id*, *index* or *object*) - Webix component in the parent object that will be replaced by the object you are going to initialize 
+(the one you pass as the first parameter).
 
 Thus *webix.ui()* constructor can be used to:
 
@@ -95,11 +96,11 @@ Thus *webix.ui()* constructor can be used to:
 
 ~~~js
 webix.ui({
-	view:"form", id:'myform', elements:[...]
+	view:"form", id:"myform", elements:[...]
 });
 
 //redraw form with new elements
-webix.ui([..new elements..], $$('myform'));
+webix.ui([..new elements..], $$("myform"));
 ~~~
 
 {{sample 01_layout/13_reconfiguration.html}}
@@ -108,15 +109,15 @@ webix.ui([..new elements..], $$('myform'));
 
 ~~~js
 webix.ui({
-	id:'mylayout',
+	id:"mylayout",
 	rows:[
-    	{view:'toolbar', ...},
-    	{view:'datatable', id:'mydatatable' ...},
+    	{view:"toolbar", ...},
+    	{view:"datatable", id:"mydatatable" ...},
     ]
 });
 
 //replace datatable
-webix.ui({..new config..}, $$('mylayout'), $$('mydatatable'));
+webix.ui({..new config..}, $$("mylayout"), $$("mydatatable"));
 ~~~
 
 In the above example we redefine the "mydatatable" view with some new config. The "mylayout" view is the parent of the new configuration.
@@ -130,11 +131,11 @@ We can also pass two arguments by omitting the parent container. The result will
 Reloading layout from the server
 ---------------------------------
 
-To load a new configuration from the server - you can use the following technique:
+To load a new configuration from the server, you can use the following technique:
 
 ~~~js
 webix.ajax("config.json", function(text){
-    webix.ui(webix.DataDriver.json.toObject(text), $$('mylayout'), $$('mydatatable'));
+    webix.ui(webix.DataDriver.json.toObject(text), $$("mylayout"), $$("mydatatable"));
 });
 ~~~
 

@@ -18,6 +18,7 @@ Methods
 - api/link/ui.checksuggest_getchildviews.md - returns child views of the calling component
 - api/link/ui.checksuggest_getformview.md - returns master form for the input
 - api/link/ui.checksuggest_gethead.md - gets the ui view of the window header
+- api/link/ui.checksuggest_getitemid.md - 
 - api/link/ui.checksuggest_getitemtext.md - returns rendered text of suggest's item
 - api/link/ui.checksuggest_getlist.md - returns inner data control from suggest
 - api/link/ui.checksuggest_getmastervalue.md - returns current value of master control
@@ -59,6 +60,7 @@ Methods
 - api/link/ui.checksuggest_getchildviews.md
 - api/link/ui.checksuggest_getformview.md
 - api/link/ui.checksuggest_gethead.md
+- api/link/ui.checksuggest_getitemid.md
 - api/link/ui.checksuggest_getitemtext.md
 - api/link/ui.checksuggest_getlist.md
 - api/link/ui.checksuggest_getmastervalue.md

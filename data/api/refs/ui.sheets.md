@@ -68,7 +68,7 @@ dummy stub
 - api/link/ui.sheets_isselected.md - checks whether the specified item is selected or not
 - api/link/ui.sheets_isvisible.md - checks whether the view is visible
 - api/link/ui.sheets_load.md - loads data from an external data source.
-- api/link/ui.sheets_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
+- api/link/ui.sheets_loadnext.md - sends a request to load the specified number of records to the end of the client-side dataset or to the specified position
 - api/link/ui.sheets_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.sheets_mapevent.md - routes events from one object to another
 - api/link/ui.sheets_move.md - moves the specified item to the new position
@@ -97,7 +97,7 @@ dummy stub
 - api/link/ui.sheets_unselect.md - removes selection from the specified item
 - api/link/ui.sheets_unselectall.md - removes selection from all items
 - api/link/ui.sheets_updateitem.md - updates the data item with new properties
-- api/link/ui.sheets_validate.md - validates one record or all dataset against validation rules
+- api/link/ui.sheets_validate.md - validates one record or all dataset against the validation rules
 - api/link/ui.sheets_validateeditor.md - validates data in currently active editor
 }}
 

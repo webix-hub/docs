@@ -66,7 +66,7 @@ Methods
 - api/ui.filemanager_levelup.md - selects the parent folder
 - api/link/ui.filemanager_load.md - loads data from an external data source.
 - api/link/ui.filemanager_loadbranch.md - loads data to the specified branch, as direct children of the node with the id provided
-- api/link/ui.filemanager_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
+- api/link/ui.filemanager_loadnext.md - sends a request to load the specified number of records to the end of the client-side dataset or to the specified position
 - api/link/ui.filemanager_mapevent.md - routes events from one object to another
 - api/ui.filemanager_markcopy.md - preselectes files/folders for the Copy operation
 - api/ui.filemanager_markcut.md - preselectes files/folders for the Move operation
@@ -78,7 +78,7 @@ Methods
 - api/link/ui.filemanager_reconstruct.md - rebuilds the layout
 - api/link/ui.filemanager_refresh.md - repaints the whole view or a certain item
 - api/link/ui.filemanager_remove.md - removes the specified item/items from datastore
-- api/link/ui.filemanager_removeview.md - removes view from layout-like component
+- api/link/ui.filemanager_removeview.md - removes the specified view of a layout-like component
 - api/ui.filemanager_renamefile.md - renames a folder/a file
 - api/link/ui.filemanager_resize.md - adjusts the view to a new size
 - api/link/ui.filemanager_resizechildren.md - resizes all children of the called component

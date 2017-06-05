@@ -25,7 +25,7 @@ Methods
 - api/link/ui.baselayout_isvisible.md - checks whether the view is visible
 - api/link/ui.baselayout_mapevent.md - routes events from one object to another
 - api/ui.baselayout_reconstruct.md - rebuilds the layout
-- api/ui.baselayout_removeview.md - removes view from layout-like component
+- api/ui.baselayout_removeview.md - removes the specified view of a layout-like component
 - api/link/ui.baselayout_resize.md - adjusts the view to a new size
 - api/ui.baselayout_resizechildren.md - resizes all children of the called component
 - api/link/ui.baselayout_show.md - makes the component visible

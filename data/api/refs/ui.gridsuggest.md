@@ -57,6 +57,7 @@ webix.ui({
 - api/link/ui.gridsuggest_getchildviews.md - returns child views of the calling component
 - api/link/ui.gridsuggest_getformview.md - returns master form for the input
 - api/link/ui.gridsuggest_gethead.md - gets the ui view of the window header
+- api/link/ui.gridsuggest_getitemid.md - 
 - api/link/ui.gridsuggest_getitemtext.md - returns rendered text of suggest's item
 - api/link/ui.gridsuggest_getlist.md - returns inner data control from suggest
 - api/link/ui.gridsuggest_getmastervalue.md - returns current value of master control

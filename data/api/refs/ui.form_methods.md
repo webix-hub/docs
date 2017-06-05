@@ -37,7 +37,7 @@ Methods
 - api/link/ui.form_parse.md - loads data to the component from an inline data source
 - api/link/ui.form_reconstruct.md - rebuilds the layout
 - api/link/ui.form_refresh.md - repaints the component
-- api/link/ui.form_removeview.md - removes view from layout-like component
+- api/link/ui.form_removeview.md - removes the specified view of a layout-like component
 - api/link/ui.form_render.md - renders the specified item or the whole component
 - api/link/ui.form_resize.md - adjusts the view to a new size
 - api/link/ui.form_resizechildren.md - resizes all children of the called component

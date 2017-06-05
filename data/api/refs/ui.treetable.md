@@ -132,7 +132,7 @@ var treetable = webix.ui({
 - api/link/ui.treetable_isvisible.md - checks whether the view is visible
 - api/link/ui.treetable_load.md - loads data from an external data source.
 - api/link/ui.treetable_loadbranch.md - loads data to the specified branch, as direct children of the node with the id provided
-- api/link/ui.treetable_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
+- api/link/ui.treetable_loadnext.md - sends a request to load the specified number of records to the end of the client-side dataset or to the specified position
 - api/link/ui.treetable_locate.md - converts an HTML node or event object to in-table position
 - api/link/ui.treetable_mapcells.md - applies the callback to a range of cells
 - api/link/ui.treetable_mapevent.md - routes events from one object to another
@@ -179,7 +179,7 @@ var treetable = webix.ui({
 - api/link/ui.treetable_uncheckitem.md - unchecks the checkbox in the tree item
 - api/link/ui.treetable_ungroup.md - ungroups data
 - api/link/ui.treetable_updateitem.md - updates the data item with new properties
-- api/link/ui.treetable_validate.md - validates one record or all dataset against validation rules
+- api/link/ui.treetable_validate.md - validates one record or all dataset against the validation rules
 - api/link/ui.treetable_validateeditor.md - validates data in currently active editor
 }}
 
@@ -365,6 +365,7 @@ var treetable = webix.ui({
 - api/link/ui.treetable_subrowheight_config.md - automatically adjusts the subrow's height to the size of the text
 - api/link/ui.treetable_subrow_config.md - sets a subrow template
 - api/link/ui.treetable_subview_config.md - adds a subview configuration into datatable
+- api/link/ui.treetable_templatecopy_config.md - 
 - api/link/ui.treetable_threestate_config.md - defines three-state checkboxes for the tree
 - api/link/ui.treetable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.treetable_topsplit_config.md - defines the number of rows that will be "frozen" at the top of datatable

@@ -18,6 +18,7 @@ Methods
 - api/link/ui.daterangesuggest_getchildviews.md - returns child views of the calling component
 - api/link/ui.daterangesuggest_getformview.md - returns master form for the input
 - api/link/ui.daterangesuggest_gethead.md - gets the ui view of the window header
+- api/link/ui.daterangesuggest_getitemid.md - 
 - api/link/ui.daterangesuggest_getitemtext.md - returns rendered text of suggest's item
 - api/link/ui.daterangesuggest_getlist.md - returns inner data control from suggest
 - api/link/ui.daterangesuggest_getmastervalue.md - returns current value of master control
@@ -60,6 +61,7 @@ Methods
 - api/link/ui.daterangesuggest_getchildviews.md
 - api/link/ui.daterangesuggest_getformview.md
 - api/link/ui.daterangesuggest_gethead.md
+- api/link/ui.daterangesuggest_getitemid.md
 - api/link/ui.daterangesuggest_getitemtext.md
 - api/link/ui.daterangesuggest_getlist.md
 - api/link/ui.daterangesuggest_getmastervalue.md

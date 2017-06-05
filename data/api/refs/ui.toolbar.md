@@ -66,7 +66,7 @@ var toolbar = webix.ui({
 - api/link/ui.toolbar_parse.md - loads data to the component from an inline data source
 - api/link/ui.toolbar_reconstruct.md - rebuilds the layout
 - api/ui.toolbar_refresh.md - repaints the component
-- api/link/ui.toolbar_removeview.md - removes view from layout-like component
+- api/link/ui.toolbar_removeview.md - removes the specified view of a layout-like component
 - api/ui.toolbar_render.md - renders the specified item or the whole component
 - api/link/ui.toolbar_resize.md - adjusts the view to a new size
 - api/link/ui.toolbar_resizechildren.md - resizes all children of the called component

@@ -20,6 +20,12 @@ $$("mydatatable").openSub(id);
     60_pro/01_datatable/07_sub/03_sub_api.html
 
 @template:	api_method
-@descr:
+@seodescr:
+
+- See more information about Webix [javascript framework](https://webix.com) and [javascript table widget](https://webix.com/widget/datatable/) there.
 
 @edition:pro
+
+@metadescr: Learn how to work with the JavaScript DataTable widget. This page describes the principle of the openSub method working. 
+@doctitle: 
+The documentation page for the openSub method of DataTable.
