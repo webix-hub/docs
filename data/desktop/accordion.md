@@ -89,5 +89,12 @@ to set the necessary mode.
 - [Carousel](desktop/carousel.md)
 - [Accordion CSS Image Map](desktop/accordion_css.md)
 
+@seodescr:
+
+- See more information about Webix [js framework](https://webix.com) and [Accordion widget](https://webix.com/widget/accordion/) widget there.
+
+@metadescr: Learn the basics of the Accordion widget usage. The page describes the initialization process, layout creation and main properties.
+@doctitle: Accordion UI widget documentation: overview and usage.
+
 @index: 
   - desktop/accordionitem.md

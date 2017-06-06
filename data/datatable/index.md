@@ -107,6 +107,13 @@ still being  very fast handling  thousands of records.<a href="datatable/overvie
 </table>
 
 
+@seodescr:
+
+- See more information about Webix [UI library](https://webix.com) and [javascript table library](https://webix.com/widget/datatable/) there.
+
+@metadescr: This documentation page describes the process of the DataTable widget initialization, operations with displayed data, appearance configuration, exporting features, etc.
+@doctitle: DataTable UI widget documentation: configuration, data export, etc.
+
 @index:
 
 - datatable/overview.md

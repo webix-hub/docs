@@ -140,5 +140,12 @@ webix.ui({
 
 {{sample 60_pro/01_datatable/01_colspans/02_colspans_big.html }}
 
+@seodescr:
+
+- See more information about Webix [mvc library](https://webix.com) and [DataTree](https://webix.com/widget/treetable/) widget there.
+
+@metadescr: Learn how to group columns and rows of the DataTable widget and add styling to rowspan and colspan. The page contains detailed guides and samples. 
+@doctitle: How DataTable rowspan and colspan features work.
+
 @edition:pro
 

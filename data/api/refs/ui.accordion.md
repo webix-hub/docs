@@ -131,6 +131,13 @@ var accordion = webix.ui({
 }}
 
 
+@seodescr:
+
+- See more information about [js frameworks](https://webix.com) and [accordion widget](https://webix.com/widget/accordion/) there.
+
+@metadescr: This page describes methods, events and properties that you can use while working with the Accordion UI widget to configure its behavior and appearance.
+@doctitle: Accordion UI widget API reference: methods, events, properties etc.
+
 @index:
 - api/refs/ui.accordion_methods.md
 - api/refs/ui.accordion_props.md

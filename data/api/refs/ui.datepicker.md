@@ -181,6 +181,12 @@ var datepicker = webix.ui({
 - api/link/ui.datepicker_touchable_other.md - flag, which force touch reaction on touch screen devices
 }}
 
+@seodescr:
+
+- See more information about [html5 frameworks](https://webix.com) there.
+
+@metadescr: Learn more about the DatePicker widget configuration that allows users picking a particular date in the form. The page describes all methods, properties and events.
+@doctitle: The DatePicker widget API reference: methods, properties, events, etc.
 
 @index:
 - api/refs/ui.datepicker_methods.md

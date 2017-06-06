@@ -338,6 +338,13 @@ In such cases you can add an exclamation mark `!` after the opening `#`:
 },
 ~~~
 
+@seodescr:
+
+- See more information about Webix [MVC library](https://webix.com) and [Data Table (Grids) widget](https://webix.com/widget/datatable/) there.
+
+@metadescr: Learn how you can manipulate the data representation within the Webix widgets. 
+@doctitle: Data templates documentation page.
+
 @index:
   - desktop/tooltip.md
   - desktop/type.md

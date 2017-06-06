@@ -85,3 +85,10 @@ Values are not displayed right in the chart, but shown with the help of the [too
 It is rather helpful when a big number of units should be displayed in the chart.
 
 {{sample 08_chart/06_bar_chart/13_custom_axis.html }}
+
+@seodescr:
+
+- See more information about [easy javascript framework](https://webix.com) and [Chart widget](https://webix.com/widget/charts/) there.
+
+@metadescr: Learn more about Webix chart widget configuration. This documentation page describes the process of a custom X-axis creation: setting units, templates usage, etc.
+@doctitle: Chart widget configuration: examples of creating a custom X-axis.

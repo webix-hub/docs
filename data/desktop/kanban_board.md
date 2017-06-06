@@ -7,10 +7,9 @@ API Reference
 - [Methods, properties and events](api/refs/ui.kanban.md)
 
 
-<div class="h2">External resources</div>
+@seodescr:
 
-
-- You can [download Kanban Board](http://webix.com/kanban/download.html) from [http://webix.com/kanban/](http://webix.com/kanban/)
+- You can [download Kanban Board](https://webix.com/kanban/) from Webix [Web UI framework](https://webix.com)
 - There are online samples at [docs.webix.com/samples](http://docs.webix.com/samples/63_kanban/index.html)
 
 
@@ -63,6 +62,9 @@ Fully written in JavaScript and CSS this component can be integrated in any web 
 	</tr>
 	</tbody>
 </table>
+
+@metadescr: Learn how you can create an interactive JavaScript Kanban Board, save and load data into it, edit its items, etc.
+@doctitle: Kanban Board UI widget documentation: overview and how-to guides.
 
 @index:
 

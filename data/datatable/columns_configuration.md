@@ -526,3 +526,9 @@ grida = new webix.ui({
 
 To learn more on this topic, please visit the [Datatable Rowspans and Colspans](datatable/rowspans_colspans.md) article.
 
+@seodescr:
+
+- See more information about Webix [ui library](https://webix.com) and [Datagrid](https://webix.com/widget/datatable/) widget there.
+
+@metadescr: Learn how you can configure columns of the DataTable widget: add or delete columns dynamically, group columns, use styles, etc.
+@doctitle: DataTable widget columns configuration guide.

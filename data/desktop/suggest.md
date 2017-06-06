@@ -424,6 +424,13 @@ DataSuggest can be used with form controls as well as with component editors. Mo
 DateRangeSuggest control is used in the [DateRangePicker](desktop/daterangepicker.md) widget. More details are given in the 
 [related section](desktop/daterangepicker.md#customizingpopupofdaterangepicker).
 
+@seodescr:
+
+- See more information about Webix [javascript framework](https://webix.com) there.
+
+@metadescr: The Suggest List control allows displaying a drop-down list of available options when user starts typing text in a form input field. 
+@doctitle: The Suggest List control documentation: initialization and usage.
+
 @index:
 - desktop/datasuggest.md
 - desktop/gridsuggest.md

@@ -30,4 +30,10 @@ $$('carousel1').scrollTo(100,0);
 @defined:	ui.carousel	
 @descr:
 
+@seodescr:
+
+- See more information about Webix [javascript website framework](https://webix.com) and [Data Table widget](https://webix.com/widget/datatable/) there.
+
+@metadescr: This documentation page describes how you can control the scrolling process while using the JavaScript Carousel widget using the scrollTo method.
+@doctitle: The documentation page for the scrollTo method of Carousel. 
 

@@ -139,6 +139,13 @@ webix.ui({
 
 [Settings for Scatter Chart](desktop/scatter_chart.md)
 
+@seodescr:
+
+- See more information about Webix [ui library](https://webix.com) and [JavaScript Charts](https://webix.com/widget/charts/) widget there.
+
+@metadescr: Webix provides you with different types of JavaScript charts. This page contains overviews and examples of available chart types along with demos.
+@doctitle: Webix chart types documentation: overview and usage.
+
 @index:
   - desktop/pie_charts.md
   - desktop/bar_charts.md

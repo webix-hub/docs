@@ -213,7 +213,12 @@ webix.ui({
 
 {{sample 15_datatable/04_editing/08_custom_checkbox.html }}
 
+@seodescr:
 
+- See more information about Webix [html5 library](https://webix.com) and [JavaScript Data Grid](https://webix.com/widget/datatable/) widget there.
+
+@metadescr: Learn how you can customize the DataTable widget by using custom checkbox and radio controls. The page contains detailed step-by-step guides and demos.
+@doctitle: Using custom radio and checkbox controls within the DataTable.
 
 
 

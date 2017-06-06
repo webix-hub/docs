@@ -7,10 +7,10 @@ large quantities of data and the relationships between them.
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="pivot/pivot_chart_front.png">
 
-## External resources
+@seodescr:
 
-- You can [download Webix Pivot Chart](http://webix.com/pivot/download.html) from [http://webix.com/pivot/chart.html](http://webix.com/pivot/chart.html)
-- There are online samples at [docs.webix.com/samples](http://docs.webix.com/samples/61_pivot/index.html)
+- See more information about Webix [html5 framework](https://webix.com) and [pivot chart](https://webix.com/pivot/chart.html) there.
+- There are online samples at [docs.webix.com/samples](https://docs.webix.com/samples/61_pivot/index.html)
 
 <div class="h2">Guides</div>
 
@@ -34,6 +34,11 @@ large quantities of data and the relationships between them.
 	</tr>
 	</tbody>
 </table>
+
+
+
+@metadescr: Learn how to use the JavaScript Pivot Chart for visualizing large quantities of data for further analyzing. This page contains detailed guides, code examples and demos.
+@doctitle: The Pivot Chart widget documentation: overview and guides.
 
 @index:
 - pivot_chart/structure.md

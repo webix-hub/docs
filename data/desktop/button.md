@@ -134,5 +134,12 @@ It's possible to adjust the width of a button to the size of its content, using 
 13_form/01_controls/10_buttons_autowidth.html
 }}
 
+@seodescr:
+
+- See more information about Webix [best ui framework](https://webix.com) there.
+
+@metadescr: Learn how to use different types of buttons: icon button, image button, HTML button, button with badges. The page contains code examples, samples and main properties.
+@doctitle: The button control documentation: overview, how-tos and samples.
+
 @index:
 	  - desktop/button_groups.md

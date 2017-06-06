@@ -1,9 +1,9 @@
 Mobile Scheduler
 ===================
 
-<div class="h2">External resources</div>
+@seodescr:
 
-- You can [download Mobile Scheduler](http://webix.com/scheduler/download.html) from [http://webix.com/scheduler/](http://webix.com/scheduler/)
+- You can [download Mobile Scheduler](https://webix.com/scheduler/) from Webix [UI library](https://webix.com)
 - There are online samples at [docs.webix.com/samples](http://docs.webix.com/samples/62_scheduler/index.html)
 
 Overview
@@ -53,6 +53,8 @@ Webix Scheduler was developed to be used in mobile web apps that run in Webkit-b
 	</tbody>
 </table>
 
+@metadescr: Learn how to use Webix Mobile Scheduler on mobile platforms: iOS, Android, Blackberry and Windows Phone. Check the docs to get detailed step-by-step guides and samples.
+@doctitle: The Mobile Scheduler widget docs: overview and guides.
 
 @index:
 - mobile_calendar/init.md

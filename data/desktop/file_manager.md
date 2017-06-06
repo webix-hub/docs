@@ -12,11 +12,10 @@ API Reference
 - [Methods, properties and events](api/refs/ui.filemanager.md)
 
 
-<div class="h2">External resources</div>
+@seodescr:
 
-
-- You can [download File Manager](http://webix.com/filemanager/download.html) from [http://webix.com/filemanager/](http://webix.com/filemanager/)
-- There are online samples at [docs.webix.com/samples](http://docs.webix.com/samples/64_file_manager/index.html)
+- You can [download File Manager](https://webix.com/filemanager/) there and try Webix [ui library](https://webix.com)
+- There are online samples at [docs.webix.com/samples](https://docs.webix.com/samples/64_file_manager/index.html)
 
 
 Overview
@@ -67,6 +66,10 @@ Apart from files, File Manager allows working with any kind of hierarchical data
 	</tr>
 	</tbody>
 </table>
+
+
+@metadescr: Learn more about ready-made HTML5 File Manager component for working with hierarchical data in web apps with detailed guides, demos, API and general how-tos. 
+@doctitle: File Manager UI widget documentation: overview, initialization, etc.
 
 @index:
 

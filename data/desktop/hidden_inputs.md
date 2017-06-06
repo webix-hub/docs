@@ -47,3 +47,10 @@ Let's paste them to a textarea to see that it works:
 
 
 {{sample 13_form/02_api/09_hidden_inputs.html}} 
+
+@seodescr:
+
+- See more information about Webix [javascript framework](https://webix.com) and [js forms](https://webix.com/widget/form/) widget there.
+
+@metadescr: Learn how to use hidden input fields of your web form for exchanging data with a server without disturbing a user.
+@doctitle: Hidden input form fields usage guide.

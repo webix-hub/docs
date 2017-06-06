@@ -386,3 +386,10 @@ webix.promise.all([a,b,c]).then(function(results){
 ~~~
 
 @complexity:2
+
+@seodescr:
+
+- See more information about Webix [html5 library](https://webix.com) there.
+
+@metadescr: Learn how to implement AJAX features in your Webix apps: sending data (GET and POST requests, JSON sending, etc), incoming data parsing, getting binary data, etc.
+@doctitle: AJAX usage: POST requests, JSON sending, incoming data parsing, etc.

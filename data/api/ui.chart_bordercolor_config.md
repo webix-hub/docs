@@ -20,4 +20,9 @@ borderColor
 
 @descr: color is set in a hexadecimal format. By default, borders and colored greay (#636363). 
 
+@seodescr:
 
+- See more information about Webix [javascript dashboard framework](https://webix.com) there.
+
+@metadescr: Learn more about using the chart widget in your apps. The borderColor property allows setting the border color of the chart items.
+@doctitle: The documentation page for the borderColor property of Chart.

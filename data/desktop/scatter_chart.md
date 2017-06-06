@@ -37,3 +37,10 @@ Chart series allow presenting different graphs within one and the same chart. Th
 See the common rules of **series definition** [here](desktop/chart_series.md). 
 
 With chart series, [legend](desktop/chart_legend.md) should be used to distinguish between graph values. At the same time, legend markers become clickable and allow to show and hide dedicated graphs. 
+
+@seodescr:
+
+- See more information about Webix [javascript component library](https://webix.com) and [js chart](https://webix.com/widget/charts/) widget there.
+
+@metadescr: Learn about different types of Webix charts. This page describes features of the Scatter chart, such as style presets and the possibility to use series of charts.
+@doctitle: The Scatter chart documentation page: style presets, chart series.

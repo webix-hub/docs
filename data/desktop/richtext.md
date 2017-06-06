@@ -35,3 +35,10 @@ webix.ui({
 	- **labelWidth** (number) - sets the width of the label container. 80 by default;
 	- **labelPosition** (string) - defines the label position relative to the input field. There are two possible values: "left" (the default one) and "top".
 - **value** (string) - the initial value for the RichText field.
+
+@seodescr:
+
+- See more information about Webix [html5 framework](https://webix.com) there.
+
+@metadescr: Learn the basics of the RichText widget usage. Use it to create neat and lightweight online WYSIWYG text editors with minimal effort.
+@doctitle: The RichText control documentation: overview and initialization.

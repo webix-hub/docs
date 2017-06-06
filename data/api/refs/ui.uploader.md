@@ -173,7 +173,15 @@ var uploader = webix.ui({
 }}
 
 
+@seodescr:
+
+- See more information about Webix [UI Framework](https://webix.com) and [javascript file uploader](https://webix.com/widget/uploader/) there.
+
+@metadescr: This page describes methods, events and properties that you can use while working with the Uploader UI widget to configure its behavior and appearance.
+@doctitle: Uploader UI widget API reference: methods, events, properties etc.
+
 @index:
+
 - api/refs/ui.uploader_methods.md
 - api/refs/ui.uploader_props.md
 - api/refs/ui.uploader_events.md

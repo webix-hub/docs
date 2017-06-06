@@ -34,3 +34,9 @@ webix.jsonp("http://some.com/some.php", {
 
 [http://en.wikipedia.org/wiki/JSONP](http://en.wikipedia.org/wiki/JSONP)
 
+@seodescr:
+
+- See more information about Webix [best ui framework](https://webix.com) there.
+
+@metadescr: Learn how to implement the JSONP call in your app using the jsonp method.
+@doctitle: The documentation page for the jsonp helper method.

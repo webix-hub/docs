@@ -1,11 +1,11 @@
 Sidebar
 ==========
 
-External resources
--------------------
+@seodescr:
 
+- See more information about [javascript framework](https://webix.com) and [js sidebar widget](https://webix.com/widget/sidebar/) there.
 - This component isn't included into the library package and should be taken from [https://github.com/webix-hub/components](https://github.com/webix-hub/components)
-- There is an online sample at [docs.webix.com/samples](http://docs.webix.com/samples/28_sidemenu/01_sidebar.html)
+- There is an online sample at [docs.webix.com/samples](https://docs.webix.com/samples/28_sidemenu/01_sidebar.html)
 
 Overview
 ----------
@@ -342,4 +342,5 @@ webix.ui({
 });
 ~~~
 
-
+@metadescr: This documentation page describes the initialization and using of the sidebar menu that allows getting access to frequently used application functions and saving space.
+@doctitle: The sidebar menu widget documentation: overview and basics of usage.

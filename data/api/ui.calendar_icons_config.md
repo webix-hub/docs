@@ -79,6 +79,12 @@ webix.ui({
 });
 ~~~
 
+@seodescr:
+
+- See more information about Webix [ui library](https://webix.com) and [javascript calendar](https://webix.com/widget/calendar/) there.
 
 @relatedsample:
 09_calendar/10_icons.html
+
+@metadescr: This documentation page describes how you can add the 'Today' and 'Clear icons to the Calendar widget. They allow selecting the current date and clear the selection.
+@doctitle: Calendar icons API reference: example of usage and main properties.

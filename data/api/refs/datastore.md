@@ -101,6 +101,13 @@ DataStore
 }}
 
 
+@seodescr:
+
+- See more information about [html5 framework](https://webix.com) and [data table](https://webix.com/widget/datatable/) there.
+
+@metadescr: This page describes methods, events and properties that you can use while working with the data-collection based Webix components.
+@doctitle: API reference for the DataStore mixin: methods, events, properties.
+
 @index:
 - api/refs/datastore_methods.md
 - api/refs/datastore_props.md

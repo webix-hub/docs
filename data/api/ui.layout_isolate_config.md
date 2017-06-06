@@ -40,3 +40,10 @@ var list2 = $$("col2").$$("mylist");
 
 @related:
 desktop/building_app_architecture.md#isolatingidsinsidelayouts
+
+@seodescr:
+
+- See more information about Webix [ui framework](https://webix.com) and [Layout](https://webix.com/widget/layout/) widget there.
+
+@metadescr: Learn how you can use the isolate property for reusing the components ID's.
+@doctitle: The documentation page for the isolate property of Layout.

@@ -153,6 +153,12 @@ var button = webix.ui({
 - api/ui.button_touchable_other.md - flag, which force touch reaction on touch screen devices
 }}
 
+@seodescr:
+
+- See more information about Webix [html5 framework](https://webix.com) there.
+
+@metadescr: This page contains all available methods, properties and events that you can use to configure the Button control.
+@doctitle: The Button control API reference: methods, properties, etc.
 
 @index:
 - api/refs/ui.button_methods.md

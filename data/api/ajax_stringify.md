@@ -34,3 +34,10 @@ If you just need a method for object serialization, you may use JSON.stringify d
 ~~~
 var str = JSON.stringify({ some: "a" });
 ~~~
+
+@seodescr:
+
+- See more information about Webix [ui library](https://webix.com) there.
+
+@metadescr: Learn how you can use AJAX features in your Webix apps. This page describes how the stringify method can be used for converting data object into a string.
+@doctitle: The documentation page for the ajax stringify method.

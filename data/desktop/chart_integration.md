@@ -197,6 +197,13 @@ webix.ui({
 
 - **config** - specifies the chart configuration. The available configuration parameters can be found on the FusionCharts site.
 
+@seodescr:
+
+- See more information about Webix [ui framework](https://webix.com) and [javascript chart library](https://webix.com/widget/charts/) there.
+
+@metadescr: Learn how to use third-party charts in your Webix apps. The list of options includes JustGage Plugin, D3.js, Raphael, SigmaJS and FusionCharts JavaScript libraries.
+@doctitle: Third-party charts integration guide.
+
 @complexity:2
 
 @spellcheck: GEXF, Rapha, euml

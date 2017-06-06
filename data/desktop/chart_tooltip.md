@@ -73,3 +73,10 @@ Such tooltips are especially convenient for [Scatter](desktop/chart_types.md#sca
 <img src="desktop/scatter_tooltip.png" />
 
 {{sample 08_chart/10_scatter_chart/02_templates.html }}
+
+@seodescr:
+
+- See more information about Webix [javascript framework](https://webix.com) and [download Chart](https://webix.com/widget/charts/) widget there.
+
+@metadescr: Learn the principles of configuring the JavaScript chart widget. This page describes the templates usage for defining the chart tooltip value. 
+@doctitle: Chart tooltip documentation: how to define the tooltip value.

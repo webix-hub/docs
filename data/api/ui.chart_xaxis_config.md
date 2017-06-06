@@ -125,3 +125,10 @@ lines:function(obj){
        return (obj.year%2?true:false) // hides lines for odd years
 }
 ~~~
+
+@seodescr:
+
+- See more information about Webix [ui library](https://webix.com) and [javascript charts](https://webix.com/widget/charts/) widget there.
+
+@metadescr: Learn more about the Chart widget configuration. This page describes the xAxis property that can be used to configure the X-axis of the chart.
+@doctitle: The documentation page for the xAxis property of Chart.

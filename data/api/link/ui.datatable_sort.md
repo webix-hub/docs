@@ -83,3 +83,10 @@ The third parameter of the **sort** method may be string which represents the da
 - "date" - sorts as dates
 - "string" - sorts as strings
 - "string_strict" - sorts as strings, case-sensitive
+
+@seodescr:
+
+- See more information about Webix [JavaScript framework](https://webix.com) and [Datagrid](https://webix.com/widget/datatable/) widget there.
+
+@metadescr: Learn how you can use the sort method for sorting the rows of the DataTable widget. 
+@doctitle: The sort method documentation page: sorting DataTable rows.

@@ -10,9 +10,9 @@ API Reference
 
 - [Methods, properties and events](api/refs/ui.spreadsheet.md)
 
-<div class="h2">External resources</div>
+@seodescr:
 
-- You can [download Webix SpreadSheet](http://webix.com/spreadsheet/download.html) from [http://webix.com/spreadsheet/](http://webix.com/spreadsheet/)
+- You can download [javascript Spreadsheet](https://webix.com/spreadsheet/) there and try Webix [UI library](https://webix.com)
 - There are online samples at [docs.webix.com/samples](http://docs.webix.com/samples/65_spreadsheet/index.html)
 
 <div class="h2">Overview</div>
@@ -108,7 +108,11 @@ of various languages.
 </table>
 
 
+@metadescr: Learn how to create the SpreadSheet widget on a page, initialize it with data and customize its appearance for creating an online Excel-like app.
+@doctitle: SpreadSheet UI widget documentation: usage, data import/export, etc.
+
 @index:
+
 - spreadsheet/whats_new.md
 - spreadsheet/spreadsheet_init.md
 - spreadsheet/loading_data.md
@@ -126,4 +130,3 @@ of various languages.
 - spreadsheet/import.md
 - spreadsheet/handling_events.md
 - spreadsheet/howto.md
-

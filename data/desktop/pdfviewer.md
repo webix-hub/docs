@@ -212,6 +212,12 @@ $$("pdf").load("binary->files/data.pdf");
 {{sample 60_pro/10_viewers/05_pdf_upload.html }}
 
 
+@seodescr:
+
+- See more information about [popular javascript frameworks](https://webix.com) there.
+
+@metadescr: Learn how to use the PDF Viewer widget for displaying the content of a PDF file on the page. 
+@doctitle: The PDF Viewer widget documentation: overview and usage.
 
 @edition:pro
 

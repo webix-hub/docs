@@ -54,3 +54,10 @@ You can find the name of any icon on the [Font Awesome site](http://fortawesome.
 
 
 Read more about [Buttons](desktop/button.md).
+
+@seodescr:
+
+- See more information about Webix [javascript framework](https://webix.com) there.
+
+@metadescr: Learn more about customizing the components styles. This page describes what CSS classes the Button control uses.
+@doctitle: The documentation page for Button CSS image map.

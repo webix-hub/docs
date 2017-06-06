@@ -138,5 +138,10 @@ Webix [datatable](datatable/index.md) features [prebuilt overlay support](datata
 
 - [Component Copying and Extending](desktop/extend.md). 
 
+@seodescr:
 
+- See more information about Webix [javascript framework](https://webix.com) there.
+
+@metadescr: Learn how to inform a user that your app is still working during the data loading process with the help of progress bar, progress icon or overlay message boxes.
+@doctitle: Visualizing the app workflow: progress bar, progress image, etc.
 

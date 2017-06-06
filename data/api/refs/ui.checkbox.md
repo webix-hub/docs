@@ -171,6 +171,12 @@ var checkbox = webix.ui({
 - api/link/ui.checkbox_touchable_other.md - flag, which force touch reaction on touch screen devices
 }}
 
+@seodescr:
+
+- See more information about Webix [javascript dashboard framework](https://webix.com) there.
+
+@metadescr: Learn more about customization of the Checkbox control that allows users to choose multiple items from a number of options.
+@doctitle: API reference for the Checkbox control: methods, parameters, etc.
 
 @index:
 - api/refs/ui.checkbox_methods.md

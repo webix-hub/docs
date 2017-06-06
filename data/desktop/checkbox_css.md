@@ -20,3 +20,10 @@ Checkbox CSS
 </table>
 
 Read more about [Checkbox](desktop/checkbox.md)
+
+@seodescr:
+
+- See more information about Webix [ui widget library](https://webix.com) there.
+
+@metadescr: Learn more about the way of configuring checkboxes using CSS classes.
+@doctitle: The documentation page for Checkbox CSS image map. 

@@ -117,6 +117,12 @@ var video = webix.ui({
 - api/link/ui.video_name_other.md - indicates the name of the component (a read-only property)
 }}
 
+@seodescr:
+
+- See more information about Webix [UI component library](https://webix.com) there.
+
+@metadescr: ui.view is a pure view with borders but without any content inside it that is used as a base class for not layout-based UI components. 
+@doctitle: API reference for the ui.view mixin: methods, properties, etc.
 
 @index:
 - api/refs/ui.video_methods.md

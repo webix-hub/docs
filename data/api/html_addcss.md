@@ -21,3 +21,10 @@ webix.html.addCss( $$("dt").getNode(), "mycss");
 @relatedapi:
 	api/html_addstyle.md
 	api/html_removecss.md
+
+@seodescr:
+
+- See more information about Webix [UI library](https://webix.com) there.
+
+@metadescr: Learn how you can use the addCss method for adding a css class to a DOM node.
+@doctitle: The documentation page for the addCss html helper method.

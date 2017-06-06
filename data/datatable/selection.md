@@ -203,5 +203,13 @@ Related events
 	</tbody>
 </table>
 
+
+@seodescr:
+
+- See more information about Webix [javascript framework](https://webix.com) and [datatables.js](https://webix.com/widget/datatable/) there.
+
+@metadescr: Learn how to implement different DataTable select modes: cell, row, column, multi cell, multi row, multi column, block selection, area selection.
+@doctitle: How to work with DataTable select modes.
+
 @keyword:
 	start

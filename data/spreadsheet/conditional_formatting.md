@@ -128,7 +128,12 @@ $$("ssheet").conditions.clear();
 
 {{sample 65_spreadsheet/02_api/14_conditional.html}}
 
+@seodescr:
 
+- See more information about Webix [javascript web framework](https://webix.com) and [Spreadsheet library](https://webix.com/spreadsheet/) there.
+
+@metadescr: This page describes how you can use conditional formatting for changing the appearance of a particular SpreadSheet cell according to its value using the CSS styles.
+@doctitle: Conditional formatting of the SpreadSheet widget cells using CSS.
 
 
 

@@ -11,10 +11,10 @@ API Reference
 
 - [Methods, properties and events](api/refs/ui.pivot.md)
 
-<div class="h2">External resources</div>
+@seodescr:
 
-- You can [download Webix Pivot](http://webix.com/pivot/download.html) from [http://webix.com/pivot/](http://webix.com/pivot/)
-- There are online samples at [docs.webix.com/samples](http://docs.webix.com/samples/61_pivot/index.html)
+- You can download Webix [UI library](https://webix.com) and [javascript pivot table](https://webix.com/pivot/)
+- There are online samples at [docs.webix.com/samples](https://docs.webix.com/samples/61_pivot/index.html)
 
 Overview
 ----------
@@ -52,6 +52,9 @@ With Pivot you can easily compare, filter and sort data within one table as well
 	</tr>
 	</tbody>
 </table>
+
+@metadescr: Learn how to use the JavaScript Pivot widget for creating complex tables with filtering and sorting support. This page contains a bunch of detailed step-by-step guides.
+@doctitle: Pivot Table UI widget documentation: overview and step-by-step guides.
 
 @index:
 - pivot/whats_new.md

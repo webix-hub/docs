@@ -78,3 +78,9 @@ Types coincide with those of a standard [button](desktop/button.md). Check their
 
 {{sample 13_form/01_controls/14_toggle_images.html}}
 
+@seodescr:
+
+- See more information about Webix [widget library](https://webix.com) there.
+
+@metadescr: This page describes how you can create a two-state toggle button on a page. Learn what toggle button types are available and what main properties you can use. 
+@doctitle: The Toggle Button documentation: overview and usage.

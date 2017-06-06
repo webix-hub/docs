@@ -37,4 +37,9 @@ Value of the control may be:
 - selected option of [select](desktop/select.md), [richselect](desktop/richselect.md) and [combo](desktop/combo.md);
 - string with selected options of a [multiselect](desktop/multiselect.md) and [multicombo](desktop/multicombo.md) control.
 
+@seodescr:
 
+- See more information about Webix [widget library](https://webix.com) there.
+
+@metadescr: Learn how you can use the setValue method to set a new value for the Webix component.
+@doctitle: The documentation page for the setValue method of the DataValue mixin.

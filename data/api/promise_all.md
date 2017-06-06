@@ -26,3 +26,9 @@ webix.promise.all([ a,b,c ]).then(function(results){
 
 The function is executed when callbacks have been received from all of the requests for which 'promise' objects have been passed into the function. 
 
+@seodescr:
+
+- See more information about Webix [web development library](https://webix.com) there.
+
+@metadescr: Learn how to use the all method for resolving all promises in the result array.
+@doctitle: API reference for the all method that you can use to resolve promises.
