@@ -44,7 +44,7 @@ webix.ready(function(){
 });
 ~~~
 
-- define a global *webix_skin* variable **before** including *webix.js* into the app: 
+- or you can also define a global *webix_skin* variable **before** including *webix.js* into the app: 
 
 ~~~html
 <script>webix_skin = "clouds";</script>
