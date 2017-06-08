@@ -1,7 +1,7 @@
-Setting Borders to the Components
+Setting Borders for Components
 ==========
 
-Webix allows setting **borders**, **margin** and **padding** to the components and layout blocks. They should be specified within layout blocks and components 
+Webix allows setting **borders**, **margin** and **padding** for components and layout blocks. They should be specified within layout blocks and components 
 to which you wish to apply the settings. 
 
 Within the [form](desktop/form.md) component borders are set in the same way. 
@@ -15,7 +15,7 @@ Borders can be applied to:
 - any **UI component**;
 - **part of UI component** (window or accordion body, head). 
 
-Border type is set by the **type** parameter. 
+Border type is set by the **api/ui.layout_type_config.md** parameter. 
 
 ~~~js
 webix.ui({  
@@ -27,11 +27,17 @@ webix.ui({
 });
 ~~~
 
+The following border types are available:
+
 <img src="desktop/border_type.png"/>
 
-By default rows and columns feature thin borders, which can as well be set manually as **type: 'line'**. To completely rid of borders you should either set a **'clean'** type or add **borderless**:*true* parameter.
+Besides the above mentioned border types, there is also the **type:"form"** type, which specifies that layout cells are rendered without borders and with padding around all of them.
 
-Note that the chosen border, or borderless state is applied only the the layout block it's defined for it's children still feature the default border. You should set a border for them manually:
+By default rows and columns feature thin borders, which can as well be set manually as **type:"line"**. 
+To completely get rid of borders, you should either set the **"clean"** type or add **borderless**:*true* parameter.
+
+Note that the chosen border as well as borderless state is applied only to the layout block it's defined for, 
+while its children still feature the default border. You should set a border for them manually:
 
 ~~~js
 webix.ui({
@@ -44,12 +50,12 @@ webix.ui({
 });
 ~~~
 
-Here layout rows feature **space** border while a template that lies in one of these rows is **borderless**.
+Here layout rows feature the **space** border, while a template that lies in one of these rows is **borderless**.
 
 ###Margin and Padding
 
-**Margin** specifies space from the view to the left inner border of its parent container (set "margin-left" property) while **padding** sets the offset from the component contents to 
-its borders.
+**Margin** specifies the space from the view to the left inner border of its parent container (sets the "margin-left" property) 
+while **padding** sets the offset from the component contents to its borders.
 
 ~~~js
 webix.ui({
