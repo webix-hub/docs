@@ -13,7 +13,7 @@ HtmlMap
 - api/htmlmap_addpoly.md - renders html map tag
 - api/htmlmap_addrect.md - renders html map tag
 - api/htmlmap_addsector.md - renders html map tag
-- api/htmlmap_hide.md - 
+- api/htmlmap_hide.md - hides html map tag
 - api/htmlmap_render.md - renders html map tag
 }}
 

@@ -1,0 +1,1 @@
+@link: api/tablepaste_onpaste_event.md

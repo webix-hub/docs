@@ -54,8 +54,8 @@ webix.ui({
 - api/link/ui.datasuggest_getchildviews.md - returns child views of the calling component
 - api/link/ui.datasuggest_getformview.md - returns master form for the input
 - api/link/ui.datasuggest_gethead.md - gets the ui view of the window header
-- api/link/ui.datasuggest_getitemid.md - 
-- api/link/ui.datasuggest_getitemtext.md - returns rendered text of suggest's item
+- api/link/ui.datasuggest_getitemid.md - returns the id of the suggest's item
+- api/link/ui.datasuggest_getitemtext.md - returns the rendered text of the suggest's item
 - api/link/ui.datasuggest_getlist.md - returns inner data control from suggest
 - api/link/ui.datasuggest_getmastervalue.md - returns current value of master control
 - api/link/ui.datasuggest_getnode.md - returns the main HTML container for the calling object

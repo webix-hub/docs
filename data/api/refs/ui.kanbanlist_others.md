@@ -2,6 +2,7 @@ Others
 =======
 
 {{api
+- api/link/ui.kanbanlist_$customprint_other.md - generates custom HTML to print instead of the widget's HTML and invokes printing
 - api/link/ui.kanbanlist_$drag_other.md - method called when drag operation initiated
 - api/ui.kanbanlist_$dragcreate_other.md - 
 - api/ui.kanbanlist_$dragdestroy_other.md - 
@@ -32,6 +33,7 @@ Others
 }}
 
 @index:
+- api/link/ui.kanbanlist_$customprint_other.md
 - api/link/ui.kanbanlist_$drag_other.md
 - api/ui.kanbanlist_$dragcreate_other.md
 - api/ui.kanbanlist_$dragdestroy_other.md

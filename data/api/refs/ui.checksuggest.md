@@ -33,8 +33,8 @@ Is used by a [multiselect](api/refs/ui.multiselect.md) control already.
 - api/link/ui.checksuggest_getchildviews.md - returns child views of the calling component
 - api/link/ui.checksuggest_getformview.md - returns master form for the input
 - api/link/ui.checksuggest_gethead.md - gets the ui view of the window header
-- api/link/ui.checksuggest_getitemid.md - 
-- api/link/ui.checksuggest_getitemtext.md - returns rendered text of suggest's item
+- api/link/ui.checksuggest_getitemid.md - returns the id of the suggest's item
+- api/link/ui.checksuggest_getitemtext.md - returns the rendered text of the suggest's item
 - api/link/ui.checksuggest_getlist.md - returns inner data control from suggest
 - api/link/ui.checksuggest_getmastervalue.md - returns current value of master control
 - api/link/ui.checksuggest_getnode.md - returns the main HTML container for the calling object

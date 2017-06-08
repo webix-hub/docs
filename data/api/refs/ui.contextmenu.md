@@ -40,7 +40,7 @@ var contextmenu = webix.ui({
 - [Overview of the ContextMenu Widget](desktop/contextmenu.md)
 - [Samples](http://docs.webix.com/samples/03_menu/index.html)
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/contexthelper.md">ContextHelper</a>, <a href="api/refs/ui.submenu.md">ui.submenu</a>, <a href="api/refs/ui.menu.md">ui.menu</a>, <a href="api/refs/ui.list.md">ui.list</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/selectionmodel.md">SelectionModel</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/ui.proto.md">ui.proto</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/copypaste.md">CopyPaste</a>, <a href="api/refs/ui.popup.md">ui.popup</a>, <a href="api/refs/ui.window.md">ui.window</a>, <a href="api/refs/movable.md">Movable</a>, <a href="api/refs/modality.md">Modality</a></div>
+<a href="api/refs/contexthelper.md">ContextHelper</a>, <a href="api/refs/ui.submenu.md">ui.submenu</a>, <a href="api/refs/ui.menu.md">ui.menu</a>, <a href="api/refs/ui.list.md">ui.list</a>, <a href="api/refs/customprint.md">CustomPrint</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/selectionmodel.md">SelectionModel</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/ui.proto.md">ui.proto</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/copypaste.md">CopyPaste</a>, <a href="api/refs/ui.popup.md">ui.popup</a>, <a href="api/refs/ui.window.md">ui.window</a>, <a href="api/refs/movable.md">Movable</a>, <a href="api/refs/modality.md">Modality</a></div>
 
 
 <div class='h2'>Methods</div>
@@ -187,7 +187,7 @@ var contextmenu = webix.ui({
 - api/link/ui.contextmenu_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.contextmenu_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.contextmenu_onmouseout_event.md - fires when the mouse was moved out from the specified item
-- api/link/ui.contextmenu_onpaste_event.md - fires when the user presses CTRL+V keys combination
+- api/link/ui.contextmenu_onpaste_event.md - fires when the <a href="api/copypaste_clipboard_config.md">clipboard</a> is enabled and the user presses CTRL+V keys combination
 - api/link/ui.contextmenu_onselectchange_event.md - fires after selection state was changed
 - api/link/ui.contextmenu_onshow_event.md - fires when window is shown
 - api/link/ui.contextmenu_onswipex_event.md - occurs on a horizontal swipe movement
@@ -287,6 +287,7 @@ var contextmenu = webix.ui({
 
 
 {{api
+- api/link/ui.contextmenu_$customprint_other.md - generates custom HTML to print instead of the widget's HTML and invokes printing
 - api/link/ui.contextmenu_$drag_other.md - method called when drag operation initiated
 - api/link/ui.contextmenu_$draghtml_other.md - defines how dragged item will look
 - api/link/ui.contextmenu_$dragin_other.md - method called when item moved on possible drop landing during dnd

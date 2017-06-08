@@ -6,13 +6,13 @@ addSector
 	
 
 @params:
-- id		id		id which will be assigned to related html section
-- aplha0	number		starting angle
-- aplha1	number		ending angle
-- x			number		x position of center
-- y 		number		y position of center
-- R			number		radius
-- ky		number		y-scaling factor
+- id			id				id which will be assigned to related html section
+- aplha0		number			starting angle
+- aplha1		number			ending angle
+- x				number			x position of center
+- y 			number			y position of center
+- R				number			radius
+- ky			number			y-scaling factor
 
 @example:
 

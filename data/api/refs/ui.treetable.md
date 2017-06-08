@@ -33,7 +33,7 @@ var treetable = webix.ui({
 - [Overview of the Treetable Widget](desktop/treetable.md)
 - [Samples](http://docs.webix.com/samples/15_datatable/30_treetable/index.html)
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/treeapi.md">TreeAPI</a>, <a href="api/refs/treestatecheckbox.md">TreeStateCheckbox</a>, <a href="api/refs/treedataloader.md">TreeDataLoader</a>, <a href="api/refs/treestore.md">TreeStore</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/ui.datatable.md">ui.datatable</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/group.md">Group</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/mapcollection.md">MapCollection</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/tablepaste.md">TablePaste</a>, <a href="api/refs/datastate.md">DataState</a>, <a href="api/refs/editability.md">EditAbility</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a></div>
+<a href="api/refs/treeapi.md">TreeAPI</a>, <a href="api/refs/treestatecheckbox.md">TreeStateCheckbox</a>, <a href="api/refs/treedataloader.md">TreeDataLoader</a>, <a href="api/refs/treestore.md">TreeStore</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/ui.datatable.md">ui.datatable</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/group.md">Group</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/mapcollection.md">MapCollection</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/tablepaste.md">TablePaste</a>, <a href="api/refs/datastate.md">DataState</a>, <a href="api/refs/editability.md">EditAbility</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/customprint.md">CustomPrint</a></div>
 
 
 <div class='h2'>Methods</div>
@@ -260,6 +260,7 @@ var treetable = webix.ui({
 - api/link/ui.treetable_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.treetable_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.treetable_onmouseout_event.md - fires when the mouse was moved out from the specified item
+- api/link/ui.treetable_onpaste_event.md - fires when the <a href="api/tablepaste_clipboard_config.md">clipboard</a> is enabled and the user presses CTRL+V keys combination
 - api/link/ui.treetable_onresize_event.md - fires when the width or height of DataTable was changed
 - api/link/ui.treetable_onrowresize_event.md - fires when height of row was changed
 - api/link/ui.treetable_onscrollx_event.md - fires when the user scrolls the table left or right
@@ -365,7 +366,7 @@ var treetable = webix.ui({
 - api/link/ui.treetable_subrowheight_config.md - automatically adjusts the subrow's height to the size of the text
 - api/link/ui.treetable_subrow_config.md - sets a subrow template
 - api/link/ui.treetable_subview_config.md - adds a subview configuration into datatable
-- api/link/ui.treetable_templatecopy_config.md - 
+- api/link/ui.treetable_templatecopy_config.md - sets the template according to which data will be copied to clipboard from each currently selected cell
 - api/link/ui.treetable_threestate_config.md - defines three-state checkboxes for the tree
 - api/link/ui.treetable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.treetable_topsplit_config.md - defines the number of rows that will be "frozen" at the top of datatable
@@ -383,6 +384,7 @@ var treetable = webix.ui({
 
 
 {{api
+- api/link/ui.treetable_$customprint_other.md - generates custom HTML to print instead of the widget's HTML and invokes printing
 - api/link/ui.treetable_$drag_other.md - method called when drag operation initiated
 - api/link/ui.treetable_$draghtml_other.md - defines how dragged item will look
 - api/link/ui.treetable_$dragin_other.md - method called when item moved on possible drop landing during dnd
@@ -395,6 +397,7 @@ var treetable = webix.ui({
 - api/link/ui.treetable_$scope_other.md - scope for resolving event and method names
 - api/link/ui.treetable_$setsize_other.md - sets the component size
 - api/link/ui.treetable_$skin_other.md - the method which will be called when skin is defined
+- api/link/ui.treetable_$touch_other.md - 
 - api/link/ui.treetable_$view_other.md - reference to top html element of the view
 - api/link/ui.treetable_$width_other.md - current width of the view
 - api/link/ui.treetable_config_other.md - all options from initial component configuration

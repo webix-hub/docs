@@ -1,10 +1,6 @@
 accept
 =============
 
-@todo:
-	check 
-
-
 @short:
 	specifies particular file types that will be accepted for uploading
 
