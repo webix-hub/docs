@@ -60,6 +60,7 @@ var forminput = webix.ui({
 - api/link/ui.forminput_isvisible.md - checks whether the view is visible
 - api/link/ui.forminput_resize.md - adjusts the view to a new size
 - api/link/ui.forminput_resizechildren.md - resizes all children of the called component
+- api/ui.forminput_setbottomtext.md - adds custom text at the bottom of the FormInput control
 - api/ui.forminput_setvalue.md - sets a new value for the control
 - api/link/ui.forminput_show.md - makes the component visible
 - api/link/ui.forminput_unbind.md - breaks "bind" link

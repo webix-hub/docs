@@ -7,7 +7,7 @@ select
 
 @params:
 
-- id			string|array		the id (ids) of the items to select 
+- id			string,array		the id (ids) of the items to select 
 - mode			boolean				true - to select items, false - to unselect them
 
 

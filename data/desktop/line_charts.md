@@ -1,8 +1,9 @@
-Setting for Line Charts
+Settings for Line Charts
 =============
 
-Here various properties of line charts are listed. The properties construct the chart object. Some of the properties contain an object as value. Data-presenting properties are compulsory while a number of styling options 
-can be omitted or replaced. 
+Here various properties of line charts are listed. The properties construct the chart object. 
+Some of the properties contain an object as value. Data-presenting properties are compulsory while a number of styling options can be omitted or replaced. 
+
 
 ##Data Presentation
 

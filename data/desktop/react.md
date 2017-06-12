@@ -24,7 +24,9 @@ How to Start
 [Grab the demo from Github](https://github.com/webix-hub/react-demo) if you haven't done this yet. 
 Thus you will get an example of integration usage.
 
-Run `npm install` and `npm start` after that. Open `http://localhost:3000` to view the demo in the browser.
+Run `npm install` and `npm start` after that. <br>
+
+Open `http://localhost:3000` to view the demo in the browser.
 
 The page will be reloading while you are editing form fields.
 

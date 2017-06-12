@@ -1,13 +1,15 @@
-Keyboard navigation
+Keyboard Navigation
 ====================================
+
 We can single out 2 types of navigation in DataTable:
 
 1. [Navigating the selection](#selectionnavigation)
 2. [Navigating the active editor](#activeeditornavigation)
 
-When one of the types is available, the other is blocked, i.e. when you open some cell editor you won't navigate the selection any more but can navigate the active editor within cells available for editing. Once 
-no editors is open, you can again navigate the selected cell (row, column).
+When one of the types is available, the other is blocked, i.e. when you open some cell editor you won't navigate the selection any more but can navigate the active editor 
+within cells available for editing. 
 
+Once no editors is open, you can again navigate the selected cell (row, column).
 
 Selection navigation
 --------------------------------

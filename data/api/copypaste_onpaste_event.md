@@ -2,7 +2,8 @@ onPaste
 =============
 
 
-@short:fires when the user presses CTRL+V keys combination
+@short:
+ fires when the <a href="api/copypaste_clipboard_config.md">clipboard</a> is enabled and the user presses CTRL+V keys combination
 	
 
 @params:
@@ -11,7 +12,7 @@ onPaste
 @example: 
 
 tree.attachEvent("onPaste", function(text) {
-		webix.message("Node is pasted: " + text);
+	webix.message("Node is pasted: " + text);
 });
 
 @template:	api_event

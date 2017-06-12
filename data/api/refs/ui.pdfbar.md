@@ -50,7 +50,7 @@ dummy stub
 - api/link/ui.pdfbar_parse.md - loads data to the component from an inline data source
 - api/link/ui.pdfbar_reconstruct.md - rebuilds the layout
 - api/link/ui.pdfbar_refresh.md - repaints the component
-- api/link/ui.pdfbar_removeview.md - removes view from layout-like component
+- api/link/ui.pdfbar_removeview.md - removes the specified view of a layout-like component
 - api/link/ui.pdfbar_render.md - renders the specified item or the whole component
 - api/ui.pdfbar_reset.md - 
 - api/link/ui.pdfbar_resize.md - adjusts the view to a new size

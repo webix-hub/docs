@@ -37,13 +37,13 @@ Methods
 - api/link/ui.flexdatalayout_isenabled.md - checks whether the view is enabled
 - api/link/ui.flexdatalayout_isvisible.md - checks whether the view is visible
 - api/link/ui.flexdatalayout_load.md - loads data from an external data source.
-- api/link/ui.flexdatalayout_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
+- api/link/ui.flexdatalayout_loadnext.md - sends a request to load the specified number of records to the end of the client-side dataset or to the specified position
 - api/link/ui.flexdatalayout_mapevent.md - routes events from one object to another
 - api/link/ui.flexdatalayout_parse.md - loads data to the component from an inline data source
 - api/link/ui.flexdatalayout_reconstruct.md - rebuilds the layout
 - api/link/ui.flexdatalayout_refresh.md - repaints the whole view or a certain item
 - api/link/ui.flexdatalayout_remove.md - removes the specified item/items from datastore
-- api/link/ui.flexdatalayout_removeview.md - removes view from layout-like component
+- api/link/ui.flexdatalayout_removeview.md - removes the specified view of a layout-like component
 - api/link/ui.flexdatalayout_render.md - renders the datalayout content
 - api/link/ui.flexdatalayout_resize.md - adjusts the view to a new size
 - api/link/ui.flexdatalayout_resizechildren.md - resizes all children of the called component

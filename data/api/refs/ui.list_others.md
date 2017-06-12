@@ -2,6 +2,7 @@ Others
 =======
 
 {{api
+- api/link/ui.list_$customprint_other.md - generates custom HTML to print instead of the widget's HTML and invokes printing
 - api/link/ui.list_$drag_other.md - method called when drag operation initiated
 - api/link/ui.list_$draghtml_other.md - defines how dragged item will look
 - api/link/ui.list_$dragin_other.md - method called when item moved on possible drop landing during dnd
@@ -28,6 +29,7 @@ Others
 }}
 
 @index:
+- api/link/ui.list_$customprint_other.md
 - api/link/ui.list_$drag_other.md
 - api/link/ui.list_$draghtml_other.md
 - api/link/ui.list_$dragin_other.md

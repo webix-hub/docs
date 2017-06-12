@@ -4,41 +4,45 @@ validate
 
 @short:
 
-validates one record or all dataset against validation rules
+validates one record or all dataset against the validation rules
 	
 
 @params:
-* id	string		id of record to validate
+* id	string		the id of the record to validate
 
 @returns:
-- is_valid	boolean	true if record is valid
+- is_valid		boolean			true, if the record is valid
 
 @example:
 
 mygrid = webix.ui({
-    view:"list",
-    ...
-    rules:{
-    	"text":webix.rules.isNotEmpty
-    }
+	view:"datatable",
+	columns:[
+		{id:"rank", header:"", width:50, editor:"text"},				
+		{id:"title", header:"Film title",  width:200, editor:"text"},        
+		{id:"votes", header:"Votes", width:100,	editor:"text"}
+	],
+	rules:{
+		"rank":positiveNumber,
+		"votes":positiveNumber
+	}
 });
 
 /*validate all records*/
 var result = mygrid.validate();
 
 /*validate first record*/
-var result = mygrid.validate( mygrid.getFirstId() );
-
+var result = mygrid.validate(mygrid.getFirstId());
 
 
 @template:	api_method
 @descr:
 
-If id was not provided - component will validate all records. 
+If the id was not provided, the component will validate all records. 
 
-Methods uses config.rules for validation
+The method uses [config.rules](api/link/ui.datatable_rules_config.md) for validation.
 
-Invalid rows has "webix_invalid" marker on them 
+Invalid rows are displayed with the "webix_invalid" marker.  
 
 @relatedsample: 
 	05_list/06_validation.html

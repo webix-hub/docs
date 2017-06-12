@@ -34,7 +34,7 @@ var daterange = webix.ui({
 <div class='h2'>Methods</div>
 
 {{api
-- api/ui.daterange_addtorange.md - 
+- api/ui.daterange_addtorange.md - adds a date into the existing range
 - api/link/ui.daterange_addview.md - adds a new view to a layout-like component
 - api/link/ui.daterange_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.daterange_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
@@ -60,7 +60,7 @@ var daterange = webix.ui({
 - api/link/ui.daterange_mapevent.md - routes events from one object to another
 - api/link/ui.daterange_reconstruct.md - rebuilds the layout
 - api/ui.daterange_refresh.md - redraws the DateRange value
-- api/link/ui.daterange_removeview.md - removes view from layout-like component
+- api/link/ui.daterange_removeview.md - removes the specified view of a layout-like component
 - api/link/ui.daterange_resize.md - adjusts the view to a new size
 - api/link/ui.daterange_resizechildren.md - resizes all children of the called component
 - api/ui.daterange_setvalue.md - sets a new date range

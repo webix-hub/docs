@@ -36,7 +36,7 @@ dummy stub
 - api/link/ui.abslayout_isvisible.md - checks whether the view is visible
 - api/link/ui.abslayout_mapevent.md - routes events from one object to another
 - api/link/ui.abslayout_reconstruct.md - rebuilds the layout
-- api/link/ui.abslayout_removeview.md - removes view from layout-like component
+- api/link/ui.abslayout_removeview.md - removes the specified view of a layout-like component
 - api/link/ui.abslayout_resize.md - adjusts the view to a new size
 - api/link/ui.abslayout_resizechildren.md - resizes all children of the called component
 - api/link/ui.abslayout_show.md - makes the component visible

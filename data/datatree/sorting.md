@@ -27,7 +27,8 @@ Sorting Tree on button click
 
 Custom sorting functions
 -----------------------------
-If you want to apply a custom sorting behavior, you should define the related logic in a function and  invoke this function in the api/link/ui.tree_sort.md method.
+
+If you want to apply a custom sorting behavior, you should define the related logic in a function and invoke this function in the api/link/ui.tree_sort.md method.
 
 This function is called for each pair of adjacent values and return 1,-1 or 0:
 
@@ -41,7 +42,7 @@ Let's assume you have a tree like this:
 <img src="datatree/custom_sorting.png"/>
 
 
-And want to sort only car makers and keep the children as they are. As the default sorting affects all nodes you need to provide a custom logic. It may look as in:
+And want to sort only car makers and keep the children as they are. As the default sorting affects all nodes, you need to provide a custom logic. It may look as in:
 
 {{snippet
 Sorting the tree by one level
@@ -65,7 +66,7 @@ function sortMakers(a,b){
 </script>
 ~~~
 
-Note, Tree sorts data by levels starting from the latest nesting level, i.e. at first car models of each maker are sorted, then car makers themselves.  
+Note, Tree sorts data by levels starting from the latest nesting level, i.e. at first car models of each maker are sorted then car makers themselves.  
 
 {{sample
 	17_datatree/04_api/05_sort_custom.html

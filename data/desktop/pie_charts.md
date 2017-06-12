@@ -2,8 +2,7 @@ Settings for Pie Charts
 =============
 
 
-
-###Data Presentation
+##Data Presentation
 
 Template items are taken from the dataset defined for the component.
 
@@ -17,7 +16,7 @@ data=[{sales:"20", month:"Jan", color: "#ee3639"}]
 - **pieInnerText** ('#sales#') - text (numeric) values displayed on each 'pie' piece;
 - **color** ('#color#') - the color of each piece. Can be set in the dataset. If not mentioned, default colors will be displayed.
 
-###Styling and Positioning
+##Styling and Positioning
 
 These settings just add style to your chart and can be easily omitted:
 

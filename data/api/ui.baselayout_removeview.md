@@ -3,11 +3,11 @@ removeView
 
 
 @short:
-	removes view from layout-like component
+	removes the specified view of a layout-like component
 	
 
 @params:
-- id		id		id of child view, which need to be removed
+- id		id,object		the id or object of the child view which needs to be removed
 
 
 @example:

@@ -1,4 +1,4 @@
-Getting/setting the cell value
+Getting/Setting Cell Value
 ===============================
 
 API of DataTable allows you to retrieve existing values of cells or set new ones.

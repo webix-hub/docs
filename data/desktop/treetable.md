@@ -9,7 +9,7 @@ TreeTable
 
 ##Overview
 
-UI-related TreeTable inherits from [view](desktop/view.md). Being a hybrid between [DataTable](datatable/index.md) and [tree](datatree/index.md) it 
+UI-related TreeTable inherits from [view](desktop/view.md). Being a hybrid between [DataTable](datatable/index.md) and [Tree](datatree/index.md), it 
 shares a number of their properties and methods. 
 
 
@@ -26,9 +26,21 @@ Note that you need to set **{common.treetable()}** template for a column that sh
 webix.ui({
 	view:"treetable",
 	columns:[
-		{ id:"id",	header:"", width:50},
-		{ id:"value", header:"Film title", template:"{common.treetable()} #value#"},
-		{ id:"chapter",	header:"Mode",	width:200}
+		{ 
+        	id:"id",	
+            header:"", 
+            width:50
+        },
+		{ 
+        	id:"value",
+            header:"Film title", 
+            template:"{common.treetable()} #value#"
+        },
+		{ 
+        	id:"chapter",	
+            header:"Mode",	
+            width:200
+        }
 	],
     data: "..." //dataset, variable or path
 })
@@ -42,19 +54,19 @@ Notation">JSON</acronym> [data formats](desktop/data_types.md). IDs of the colum
 
 Common tasks here include the following and coincide with those of the [datatable](datatable/index.md) and [tree](datatree/index.md): 
 
-1 . [Data Loading](desktop/data_loading.md) including [Dynamic Loading](datatree/dynamic_loading.md) of large datasets in portions by scrolling and branches opening;
+1 . [Data Loading](desktop/data_loading.md) including [Dynamic Loading](datatree/dynamic_loading.md) of large datasets in portions by scrolling and branches opening.
 
 {{sample 15_datatable/30_treetable/02_dyn_loading.html}}
 
-2 . [Filtering](datatable/filtering.md) - built-in and custom filtering in various [filter modes](api/ui.datatable_filtermode_config.md);
+2 . [Filtering](datatable/filtering.md) - built-in and custom filtering in various [filter modes](api/ui.datatable_filtermode_config.md).
 
 {{sample 15_datatable/30_treetable/04_filter.html }}
 
-3 . [Selection](datatable/selection.md) by cells, row and columns in multiselect and blockselect modes;
+3 . [Selection](datatable/selection.md) by cells, row and columns in multiselect and blockselect modes.
 
 {{sample 15_datatable/30_treetable/06_selection.html }}
 
-4 . [Item Editing](desktop/edit.md) by click or dblclick or any custom action;
+4 . [Item Editing](desktop/edit.md) by click or dblclick or any custom action.
 
 {{sample 15_datatable/30_treetable/08_edit.html }}
 
@@ -62,11 +74,11 @@ Common tasks here include the following and coincide with those of the [datatabl
 
 {{sample 15_datatable/08_math/01_basic.html}}
 
-6 . [Data Grouping](desktop/grouping.md) - built-in logic for presenting hierarchical data in a tree-like manner;
+6 . [Data Grouping](desktop/grouping.md) - built-in logic for presenting hierarchical data in a tree-like manner.
 
 {{sample 15_datatable/32_grouping/03_aggregation.html}}
 
-7 . [Data Export to Excel and PNG](datatable/export.md)
+7 . [Data Export to Excel, PDF and PNG](datatable/export.md)
 
 {{sample 15_datatable/10_export/01_excel.html }}
 

@@ -18,10 +18,10 @@ Columns can have different type of content (numbers, strings, dates) and each ty
 
 ###Sorting Modes for Different Data Types
 
-For this purpose, DataTable provides 5 sorting types to ensure correct sorting of columns:
+For this purpose, DataTable provides several sorting types to ensure correct sorting of columns:
 
 1. *int*;
-2. *date*;
+2. [*date*](datatable/sorting.md#dates);
 3. *string*;
 4. *string_strict* (case-sensitive 'string');
 5. [*text*](datatable/sorting.md#visible_text) (visible text including template);
@@ -81,6 +81,62 @@ columns:[
 ~~~
 
 {{sample 15_datatable/02_sorting/04_by_text.html}}
+
+<h3 id="dates">Sorting by dates</h3>
+
+Sorting by dates is enabled by setting the **"date"** sorting mode.
+
+~~~js
+webix.ui({
+	view:"datatable",
+	columns:[
+	  {
+      	header:"Y-m-d", 
+        sort:"date", 
+        id:"start", 
+        format:webix.Date.dateToStr("%Y-%m-%d")
+      },
+	  {
+      	header:"m/d/Y", 
+        sort:"date", 
+        id:"start", 
+        format:webix.Date.dateToStr("%m/%d/%y")
+      },
+	],
+	data:[
+		{ text:"Joint 2", start:new Date(2011,1,14) },
+		{ text:"Finish", start:new Date(2012,11,12) }
+	]
+});
+~~~
+
+{{sample 15_datatable/20_templates/05_dates.html}}
+
+Though dates are presented as strings, they are **sorted as date objects**. 
+So in case dates are stored as strings you need to convert them to DateTime objects before sorting. For this, you can either map string values:
+
+~~~js
+{ 
+   "map":"(date)#createdDate#",  "id": "createdDate",  
+   "sort": "date",  "header": "Date Added", "editor": "date"
+}
+~~~
+
+or provide the related parser to fill the datatable with the correct object dates:
+
+~~~js
+view:"datatable",
+scheme:{
+  $init:function(obj){
+       obj.createdDate = /*parse string into date*/
+   }
+}
+~~~
+
+{{sample 15_datatable/20_templates/06_dates_string.html}}
+
+The detailed information on string-to-date conversion is given in the article desktop/working_with_dates.md#loadingandformatting.
+
 
 ###Triggering Server-side Sorting on the Client Side
 

@@ -4,7 +4,7 @@ Suggest List
 ##API Reference 
 
 - [Suggest List API](api/refs/ui.suggest.md)
-- [MultisSuggest API](api/refs/ui.multisuggest.md)
+- [MultiSuggest API](api/refs/ui.multisuggest.md)
 - [CheckSuggest API](api/refs/ui.checksuggest.md)
 - [GridSuggest API](api/refs/ui.gridsuggest.md)
 - [DataSuggest API](api/refs/ui.datasuggest.md)

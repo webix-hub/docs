@@ -24,7 +24,7 @@ Only DateTime objects defined with the **new Date();** method are subject to for
 
 ###Pre-Formatting: String-to-Object Conversion
 
-There exist two methods of date-to-string conversion:
+There exist two methods of string-to-date conversion:
 
 1 . **Built-in (map property).** [Datatable](datatable/index.md) Only. 
 
@@ -166,7 +166,7 @@ When working with **server-side**, initialize a [dataProcessor](desktop/dataproc
 ##Sorting {#sort}
 
 Though dates are presented as strings, they are **sorted as date objects**. 
-So before sorting don't forget to convert strings to DateTime objects in case they are stored as strings (see above). 
+So before sorting don't forget to convert dates to DateTime objects in case they are stored as strings ([see above](#load)). 
 
 Sorting can be applied in two directions: **"asc"** (ascending) and **"desc"** (descending). 
 
@@ -190,7 +190,6 @@ HTML Button Triggers Sorting
 ~~~
 
 {{sample 80_docs/dates.html }} 
-
 
 ##Dates Inputting in Forms {#form}
 

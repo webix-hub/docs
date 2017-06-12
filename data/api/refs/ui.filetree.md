@@ -84,7 +84,7 @@ dummy stub
 - api/link/ui.filetree_isvisible.md - checks whether the view is visible
 - api/link/ui.filetree_load.md - loads data from an external data source.
 - api/link/ui.filetree_loadbranch.md - loads data to the specified branch, as direct children of the node with the id provided
-- api/link/ui.filetree_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
+- api/link/ui.filetree_loadnext.md - sends a request to load the specified number of records to the end of the client-side dataset or to the specified position
 - api/link/ui.filetree_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.filetree_mapevent.md - routes events from one object to another
 - api/link/ui.filetree_move.md - moves the specified item to the new position
@@ -115,7 +115,7 @@ dummy stub
 - api/link/ui.filetree_unselect.md - removes selection from the specified item
 - api/link/ui.filetree_unselectall.md - removes selection from all items
 - api/link/ui.filetree_updateitem.md - updates the data item with new properties
-- api/link/ui.filetree_validate.md - validates one record or all dataset against validation rules
+- api/link/ui.filetree_validate.md - validates one record or all dataset against the validation rules
 - api/link/ui.filetree_validateeditor.md - validates data in currently active editor
 }}
 
@@ -173,7 +173,7 @@ dummy stub
 - api/link/ui.filetree_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.filetree_onmouseout_event.md - fires when the mouse was moved out from the specified item
 - api/link/ui.filetree_onpartialrender_event.md - called when part of tree is repainted
-- api/link/ui.filetree_onpaste_event.md - fires when the user presses CTRL+V keys combination
+- api/link/ui.filetree_onpaste_event.md - fires when the <a href="api/copypaste_clipboard_config.md">clipboard</a> is enabled and the user presses CTRL+V keys combination
 - api/link/ui.filetree_onselectchange_event.md - fires after selection state was changed
 - api/link/ui.filetree_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.filetree_onswipey_event.md - occurs on a vertical swipe movement

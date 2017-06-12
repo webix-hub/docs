@@ -7,10 +7,11 @@ Carousel
 - [Samples](http://docs.webix.com/samples/26_carousel/index.html)
 
 
-
 ##Overview
 
-Ui-related <a href="http://webix.com/widget/multiview-scrollview-carousel/" title="javascript webix slider">carousel</a> is designed to present Webix components in one view with the ability to switch between them by clicking on the dedicated buttons or sliding (on touch devices).
+UI-related <a href="http://webix.com/widget/multiview-scrollview-carousel/" title="javascript webix slider">carousel</a> is designed to present Webix components 
+in one view with the ability to switch between them by clicking on the dedicated buttons or sliding (on touch devices).
+
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/carousel.png"/>
 
@@ -67,7 +68,7 @@ cols:[...],
 navigation:{
 	type: "side",
     items:false,
-    //buttons:false
+    // buttons:false
 }
 ~~~
 
@@ -85,16 +86,18 @@ In [layout](desktop/layout.md) carousel and the component used for navigation ar
 
 ~~~js
 rows:[
-	{view: "carousel",
-     id:"carousel",
-	 cols: []
+	{
+    	view: "carousel",
+     	id:"carousel",
+	 	cols: []
     },
-	{view: "dataview",
-	 id: "imageList",
-	 yCount: 1, //one row
-	 select: true, //item selection enabled
-	 scroll: false, //non-scrollable
-	 data: [...]
+	{
+    	view: "dataview",
+	 	id: "imageList",
+	 	yCount: 1, // one row
+	 	select: true, // item selection enabled
+	 	scroll: false, // non-scrollable
+	 	data: [...]
     }
 ]
 ~~~
@@ -107,7 +110,7 @@ $$("imageList").attachEvent("onItemClick",function(id){
 	$$(id).show();
 });
 
-//when carousel item is shown, its thumbnail in dataview is selected
+// when carousel item is shown, its thumbnail in dataview is selected
 $$("carousel").attachEvent("onShow",function(id){
 	$$("imageList").select(id);
 });
@@ -127,6 +130,55 @@ webix.ui({
 ~~~
 
 However, in case of significantly slower scrolling speed smoothness may degrade.
+ 
+##Changing Carousel Views Dynamically 
+ 
+You can add new cells to Carousel, remove existing ones and reconfigure the widget's structure by using common layout techniques.
+
+###Adding views to Carousel
+
+In order to add a new view into Carousel, you can use the api/ui.carousel_addview.md method. For this, you need to specify the view object and position to insert it at:
+
+~~~js
+webix.ui({
+    id:"mycarousel",
+    cols:[...]
+});
+// adds template as a third cell to some existing carousel
+$$("mycarousel").addView({ template:"New one" }, 2);
+~~~
+ 
+###Removing views from Carousel
+
+To remove a view from Carousel, you can make use of the api/ui.carousel_removeview.md method and pass the view id to it:
+
+~~~js
+webix.ui({
+    id:"mycarousel"
+    cols:[
+      { id:"mytemplate1" },
+      { id:"mytemplate2" },
+      { id:"mytemplate3" }
+   ]
+})
+...
+$$("mycarousel").removeView("mytemplate2");
+~~~
+
+###Rebuilding the Carousel structure
+
+You can reconfigure the Carousel widget by passing an array of new children views to it. For this purpose you need to apply the [webix.ui()](api/_ui.md) constructor with
+the required parameters. They are described in detail in the article desktop/dynamic_layout.md#rebuildingapplicationlayout.
+
+~~~js
+webix.ui({
+    view:"carousel", id:"mycarousel", elements:[...]
+});
+ 
+// redraw carousel with new elements
+webix.ui([..new elements..], $$("mycarousel"));
+~~~
+
  
 ##Working with Carousel
 
@@ -162,6 +214,7 @@ $$("carousel").adjustScroll();
 ~~~js
 $$("carousel").getActiveIndex();
 ~~~
+
 
 
 ##Related Articles

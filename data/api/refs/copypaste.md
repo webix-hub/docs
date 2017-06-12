@@ -12,7 +12,7 @@ CopyPaste
 
 
 {{api
-- api/copypaste_onpaste_event.md - fires when the user presses CTRL+V keys combination
+- api/copypaste_onpaste_event.md - fires when the <a href="api/copypaste_clipboard_config.md">clipboard</a> is enabled and the user presses CTRL+V keys combination
 }}
 
 

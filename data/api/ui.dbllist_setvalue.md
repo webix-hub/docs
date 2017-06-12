@@ -7,7 +7,7 @@ setValue
 
 @params:
 
-- ids		string|array		the  id (ids) of the items to select
+- ids		string,array		the  id (ids) of the items to select
 
 
 

@@ -1,6 +1,10 @@
 Portlet
 ==========
 
+{{pronote
+The widget is available in the **Webix Pro** edition.
+}}
+
 ##API Reference
 
 - [Methods, properties and events](api/refs/ui.portlet.md)

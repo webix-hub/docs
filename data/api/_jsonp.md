@@ -5,10 +5,10 @@ jsonp
 	
 
 @params:
-- url    string    server side feed
-* params    object    hash of parameters which will be included in jsonp url
-* callback    function    callback method
-* master    object    value of "this" in callback
+- url    		string    	server-side feed
+* params    	object    	hash of parameters which will be included in jsonp url
+* callback   	function    callback method
+* master    	object    	value of "this" in callback
 
 @callback:
 - data    object   value returned by server

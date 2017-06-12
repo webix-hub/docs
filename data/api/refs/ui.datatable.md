@@ -30,7 +30,7 @@ var datatable = webix.ui({
 - [Samples](http://docs.webix.com/samples/15_datatable/index.html)
 
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/group.md">Group</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/mapcollection.md">MapCollection</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/tablepaste.md">TablePaste</a>, <a href="api/refs/datastate.md">DataState</a>, <a href="api/refs/editability.md">EditAbility</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a></div>
+<a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/group.md">Group</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/mapcollection.md">MapCollection</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/tablepaste.md">TablePaste</a>, <a href="api/refs/datastate.md">DataState</a>, <a href="api/refs/editability.md">EditAbility</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/customprint.md">CustomPrint</a></div>
 
 
 <div class='h2'>Methods</div>
@@ -123,7 +123,7 @@ var datatable = webix.ui({
 - api/ui.datatable_isselected.md - returns true if related record is selected
 - api/link/ui.datatable_isvisible.md - checks whether the view is visible
 - api/link/ui.datatable_load.md - loads data from an external data source.
-- api/link/ui.datatable_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
+- api/link/ui.datatable_loadnext.md - sends a request to load the specified number of records to the end of the client-side dataset or to the specified position
 - api/ui.datatable_locate.md - converts an HTML node or event object to in-table position
 - api/ui.datatable_mapcells.md - applies the callback to a range of cells
 - api/link/ui.datatable_mapevent.md - routes events from one object to another
@@ -177,7 +177,7 @@ var datatable = webix.ui({
 - api/ui.datatable_unselect.md - cancels selection of the specified element
 - api/ui.datatable_unselectall.md - unselects all selected cells in a datatble
 - api/link/ui.datatable_updateitem.md - updates the data item with new properties
-- api/link/ui.datatable_validate.md - validates one record or all dataset against validation rules
+- api/link/ui.datatable_validate.md - validates one record or all dataset against the validation rules
 - api/link/ui.datatable_validateeditor.md - validates data in currently active editor
 }}
 
@@ -253,6 +253,7 @@ var datatable = webix.ui({
 - api/link/ui.datatable_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.datatable_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.datatable_onmouseout_event.md - fires when the mouse was moved out from the specified item
+- api/link/ui.datatable_onpaste_event.md - fires when the <a href="api/tablepaste_clipboard_config.md">clipboard</a> is enabled and the user presses CTRL+V keys combination
 - api/ui.datatable_onresize_event.md - fires when the width or height of DataTable was changed
 - api/ui.datatable_onrowresize_event.md - fires when height of row was changed
 - api/ui.datatable_onscrollx_event.md - fires when the user scrolls the table left or right
@@ -359,6 +360,7 @@ var datatable = webix.ui({
 - api/ui.datatable_subrowheight_config.md - automatically adjusts the subrow's height to the size of the text
 - api/ui.datatable_subrow_config.md - sets a subrow template
 - api/ui.datatable_subview_config.md - adds a subview configuration into datatable
+- api/link/ui.datatable_templatecopy_config.md - sets the template according to which data will be copied to clipboard from each currently selected cell
 - api/link/ui.datatable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/ui.datatable_topsplit_config.md - defines the number of rows that will be "frozen" at the top of datatable
 - api/ui.datatable_type_config.md - used for configuring presentation of items
@@ -375,6 +377,7 @@ var datatable = webix.ui({
 
 
 {{api
+- api/link/ui.datatable_$customprint_other.md - generates custom HTML to print instead of the widget's HTML and invokes printing
 - api/link/ui.datatable_$drag_other.md - method called when drag operation initiated
 - api/link/ui.datatable_$draghtml_other.md - defines how dragged item will look
 - api/link/ui.datatable_$dragin_other.md - method called when item moved on possible drop landing during dnd
@@ -387,6 +390,7 @@ var datatable = webix.ui({
 - api/link/ui.datatable_$scope_other.md - scope for resolving event and method names
 - api/link/ui.datatable_$setsize_other.md - sets the component size
 - api/link/ui.datatable_$skin_other.md - the method which will be called when skin is defined
+- api/ui.datatable_$touch_other.md - 
 - api/link/ui.datatable_$view_other.md - reference to top html element of the view
 - api/link/ui.datatable_$width_other.md - current width of the view
 - api/link/ui.datatable_config_other.md - all options from initial component configuration
