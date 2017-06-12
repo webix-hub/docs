@@ -8,7 +8,7 @@ Combo
 
 ##Overview
 
-Ui-related combo is a text-like field with a popup window that appears as you click the field. A popup displays options for users to select. At the same
+UI-related combo is a text-like field with a popup window that appears as you click the field. A popup displays options for users to select. At the same
 time, you can edit the text field and the items will be filtered according to the input values. 
 
 <img src="desktop/combo.png"/>

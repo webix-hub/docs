@@ -35,11 +35,13 @@ $$("mylist").load("data.xml", "xml");
 The **load** method can be used with up to three parameters:
 
 - By default, the data type is set to *'json'*:
+
 ~~~js
 $$("component_id").load("some/path/data.json");
 ~~~
 
 - You can also pass a callback function:
+
 ~~~js
 $$('component_id').load("some/path/data.json", function(text, data, http_request){
   // do something with data.json()
@@ -47,8 +49,9 @@ $$('component_id').load("some/path/data.json", function(text, data, http_request
 ~~~
 
 - If you need to specify both the data type and the callback:
+
 ~~~js
-$$("component_id").load("some/path/data.xml", "xml", function(text, data, http_request){
+$$("component_id").load("some/path/data.xml","xml",function(text, data, http_request){
   // do something with the data object
 });
 //or
@@ -63,6 +66,7 @@ $$("component_id").load("some/path/data.xml", "xml", {
 ~~~
 
 ###Callback 
+
 By default, the loading is asynchronous, so you will need to use the callback to trigger some action after loading is finished.
 
 The callback function takes 3 parameters:

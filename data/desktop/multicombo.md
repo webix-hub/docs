@@ -22,7 +22,7 @@ Multicombo inherits from a standard [combo](desktop/combo.md) control and has th
 - Each option is equipped with a checkbox;
 - Each time you enter symbols in the input field the list of options is filtered;
 - To select an option, check it or click the corresponding list item. A selected option will be added to the input;
-- To remove an option from selection, click either the "cross" sign or use the "backspace" key in the input filed or uncheck the option in the list. 
+- To remove an option from selection, click either the "cross" sign or use the "backspace" key in the input field or uncheck the option in the list. 
 
 ##Initialization
 
