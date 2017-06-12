@@ -7,14 +7,14 @@ Start
 <div class='index-pc'></div>
 <div class='index-board'>
 
-<h2>Meet Webix 4.3!</h2>
+<h2>Meet Webix 4.4!</h2>
 <ul>
-	<li>Informative <a href="desktop/bullet_graph.md">Bullet Graph</a></li>
-	<li>Extended selection possibilities with <a href="desktop/double_list.md">Double List</a></li>
-    <li>Nice <a href="desktop/forminput.md">Form Input</a> control for perfect forms appearance</li>
+	<li><a href="">Query Builder</a> widget</li>
+	<li>Smart printing of widgets with <a href="">webix.print()</a> method</li>
+    <li></li>
 </ul>
 
-<p> and <a href="desktop/whats_new_4_3.md">many more...</a></p>
+<p> and <a href="desktop/whats_new_4_4.md">many more...</a></p>
 <a href='http://webix.com/download/' class='index-download' title='Download Webix'></a>
 </div>
 
