@@ -2,11 +2,11 @@ render
 =============
 
 
-@short: renders html map tag
+@short: renders HTML map element
 	
 
 @params:
-- html		HTMLElement		html element in which map need to be rendered
+- html		HTMLElement		HTML element in which map need to be rendered
 
 @example:
 

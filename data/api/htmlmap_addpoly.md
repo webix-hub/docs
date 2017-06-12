@@ -2,12 +2,13 @@ addPoly
 =============
 
 
-@short: renders html map tag
+@short: renders HTML area element with "poly" shape
 	
 
 @params:
-- id		id		id which will be assigned to related html section
+- id		id		id which will be assigned to related HTML section
 - points	array		array of points
+* userdata	string		extra data string (used by chart series) 
 
 @example:
 
