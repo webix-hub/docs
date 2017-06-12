@@ -54,6 +54,7 @@ var treetable = webix.ui({
 - api/link/ui.treetable_checkitem.md - checks the checkbox it the tree item
 - api/link/ui.treetable_clearall.md - removes all items from the component
 - api/link/ui.treetable_clearcss.md - removes CSS class from all items
+- api/link/ui.treetable_clearselection.md - clears selection
 - api/link/ui.treetable_clearvalidation.md - removes all validation marks from the component
 - api/link/ui.treetable_close.md - closes the branch with the specified id
 - api/link/ui.treetable_closeall.md - closes all branches in the tree
@@ -129,6 +130,7 @@ var treetable = webix.ui({
 - api/link/ui.treetable_ischecked.md - checks whether the specified node is checked
 - api/link/ui.treetable_iscolumnvisible.md - returns true if column is visible
 - api/link/ui.treetable_isenabled.md - checks whether the view is enabled
+- api/link/ui.treetable_isselected.md - returns true if related record is selected
 - api/link/ui.treetable_isvisible.md - checks whether the view is visible
 - api/link/ui.treetable_load.md - loads data from an external data source.
 - api/link/ui.treetable_loadbranch.md - loads data to the specified branch, as direct children of the node with the id provided
@@ -136,6 +138,7 @@ var treetable = webix.ui({
 - api/link/ui.treetable_locate.md - converts an HTML node or event object to in-table position
 - api/link/ui.treetable_mapcells.md - applies the callback to a range of cells
 - api/link/ui.treetable_mapevent.md - routes events from one object to another
+- api/link/ui.treetable_mapselection.md - executes some custom method for all cells in the currently selected block
 - api/link/ui.treetable_marksorting.md - marks the sorted column with a dedicated sign (asc/desc) in the header
 - api/link/ui.treetable_move.md - moves the specified item to a new position
 - api/link/ui.treetable_movebottom.md - moves the specified item to the last position
@@ -159,6 +162,9 @@ var treetable = webix.ui({
 - api/link/ui.treetable_render.md - renders the specified item or the whole component
 - api/link/ui.treetable_resize.md - adjusts the view to a new size
 - api/link/ui.treetable_scrollto.md - scrolls the view to the defined position
+- api/link/ui.treetable_select.md - selects the specified element
+- api/link/ui.treetable_selectall.md - selects all cells in the DataTable
+- api/link/ui.treetable_selectrange.md - selects the specified range of elements
 - api/link/ui.treetable_serialize.md - serializes data to a JSON object
 - api/link/ui.treetable_setcolumnwidth.md - sets the width of the specified column
 - api/link/ui.treetable_setpage.md - makes the specified page visible (assuming that the pager was defined )
@@ -178,6 +184,8 @@ var treetable = webix.ui({
 - api/link/ui.treetable_uncheckall.md - uncheck all items in the tree
 - api/link/ui.treetable_uncheckitem.md - unchecks the checkbox in the tree item
 - api/link/ui.treetable_ungroup.md - ungroups data
+- api/link/ui.treetable_unselect.md - cancels selection of the specified element
+- api/link/ui.treetable_unselectall.md - unselects all selected cells in a datatble
 - api/link/ui.treetable_updateitem.md - updates the data item with new properties
 - api/link/ui.treetable_validate.md - validates one record or all dataset against the validation rules
 - api/link/ui.treetable_validateeditor.md - validates data in currently active editor

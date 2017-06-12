@@ -60,6 +60,15 @@ The Webix library includes ready-made JavaScript widgets intended for solving ta
 		</td>
 		<td class='topic_description' style="text-align: center; padding:20px;"><img src="desktop/spreadsheet.png"></td>
 	</tr>
+    <tr>
+		<td id="design" class='topics' style="vertical-align:text-top;">
+		    <h4 id='ui' style="margin-bottom:4px;">
+		        <a href="desktop/query_builder.md">Query Builder</a>
+		    </h4>
+		    A component that allows creating complex filters.
+		</td>
+		<td class='topic_description' style="text-align: center; padding:20px;"><img src="desktop/query_builder.png"></td>
+	</tr>
   </tbody>
 </table>
 
@@ -70,6 +79,7 @@ The Webix library includes ready-made JavaScript widgets intended for solving ta
 - desktop/kanban_board.md
 - desktop/file_manager.md
 - desktop/spreadsheet.md
+- desktop/query_builder.md
 
 
 

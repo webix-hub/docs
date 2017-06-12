@@ -2,19 +2,30 @@ reject
 =============
 
 
-@todo:
-	check description and add example
-
 @short:
-	rejects a promise 
+	creates and  rejects a promise 
 
 @params:
-- reason		object			the reason why the promise is rejected
+- reason		any		the reason why the promise is rejected
+
+@returns:
+- obj	object		rejected promise	
 
 
 @example:
 
-webix.promise.reject(reason).then(function(result){});
+webix.promise.reject("Incorrect value").then(
+	function(success){ /*not called*/ }, 
+    function(){ 
+		console.log(error); //"Incorrect value"
+	}
+);
+
+webix.promise.reject("Incorrect value").fail(function(error){
+   console.log(error); //"Incorrect value"
+});
+
+
 
 @template:	api_method
 @descr:
