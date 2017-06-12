@@ -2,15 +2,6 @@ CustomPrint
 =============
 
 
-dummy stub
-
-{{todo replace with real description. }}
-
-
-
-
-
-
 <div class='h2'>Other</div>
 
 

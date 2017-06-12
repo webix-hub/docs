@@ -26,7 +26,8 @@ Updates
 - getRaw method for cookie storage
 - addView() and removeView() methods for Carousel
 - webix.history.track can be disabled
-- Datatable's adjustRowHeight() method without the 'columnId' parameter adjusts the row to the highest cell
+- Datatable's adjustRowHeight() can adjust the row to the highest cell if column id is not specified
+-  ability to create rejected and resolved promises with webix.promise interface
 
 
 Fixes
