@@ -50,7 +50,7 @@ dummy stub
 - api/link/ui.excelbar_parse.md - loads data to the component from an inline data source
 - api/link/ui.excelbar_reconstruct.md - rebuilds the layout
 - api/link/ui.excelbar_refresh.md - repaints the component
-- api/link/ui.excelbar_removeview.md - removes view from layout-like component
+- api/link/ui.excelbar_removeview.md - removes the specified view of a layout-like component
 - api/link/ui.excelbar_render.md - renders the specified item or the whole component
 - api/link/ui.excelbar_resize.md - adjusts the view to a new size
 - api/link/ui.excelbar_resizechildren.md - resizes all children of the called component

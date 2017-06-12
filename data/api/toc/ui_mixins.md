@@ -15,6 +15,7 @@ Mixins
 - api/refs/collectionbind.md -  binding rules for collections of objects
 - api/refs/contexthelper.md -  Allows viewing subviews by right mouse click
 - api/refs/copypaste.md -  provides support for copy-paste operations (integration with clipboard) 
+- api/refs/customprint.md - 
 - api/refs/customscroll.md -  Renders custom scrollbars to Webix views 
 - api/refs/datacollection.md -  View-less component that stores a collection of non-hierarchical data 
 - api/refs/datadriver.md -  data parsing for different format
@@ -104,6 +105,7 @@ Mixins
 - api/refs/collectionbind.md
 - api/refs/contexthelper.md
 - api/refs/copypaste.md
+- api/refs/customprint.md
 - api/refs/customscroll.md
 - api/refs/datacollection.md
 - api/refs/datadriver.md

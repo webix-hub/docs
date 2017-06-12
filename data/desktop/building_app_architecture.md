@@ -184,12 +184,13 @@ More about [Multiview](desktop/multiview.md) and [Tabview](desktop/tabview.md).
 ##Isolating IDs inside Layouts
 
 {{note
-Basic  rules of ID assignment can are described [here](desktop/view.md#viewid).
+Basic rules of ID assignment are described [here](desktop/view.md#viewid).
 }}
 
-The features is true to all the layout types described above. It allows for **using the same IDs** for components lying in different layout sections while preserving the ability to **access the needed component** without ambiguity. 
+This feature is true for all the layout types described above. 
+It allows of **using the same IDs** for components lying in different layout sections while preserving the ability to **access the needed component** without ambiguity. 
 
-Layout section should be equipped with an [isolate](api/ui.layout_isolate_config.md) property:
+Layout section should be equipped with the [isolate](api/ui.layout_isolate_config.md) property:
 
 ~~~js
 webix.ui({
@@ -204,7 +205,7 @@ webix.ui({
 });
 ~~~
 
-The [list](desktop/list.md) view is used twice in the "app" but in different layout columns with **isolate** functionality switched on. 
+The [list](desktop/list.md) view is used twice in the "app" but in different columns of the layout with **isolate** functionality switched on. 
 
 To address such lists separately, use the ID of its parent layout section:
 
@@ -212,7 +213,7 @@ To address such lists separately, use the ID of its parent layout section:
 var list1 = $$("col1").$$("mylist");
 var list2 = $$("col2").$$("mylist");
 
-//Otherwise, you'll get the last view 
+// Otherwise, you'll get the last view 
 var list2 = $$("mylist");
 ~~~
 

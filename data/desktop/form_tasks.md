@@ -13,30 +13,33 @@ Form elements (text fields, radios and checkboxes) are referred by either their 
 webix.ui({
 	rows:[
     	{ view:"form", id:"myform", elements:[
-			{ view:"text", name:'field_a', label: 'from', value: "Madrid"},
-			{ view:"text", name:'field_b', label: 'to', value: "Milan"}
+			{ view:"text", name:"field_a", label: "from", value: "Madrid"},
+			{ view:"text", name:"field_b", label: "to", value: "Milan"}
         ]},
-		{ view:"button", label: 'Fill form', click:"set_form" }]
+		{ view:"button", label: 'Fill form', click:"set_form" }
+    ]
 });
  
 function set_form(){
-	$$('myform').setValues({
+	$$("myform").setValues({
 		field_a: "London",
 		field_b: "New York"
 	});
 };
 ~~~
 
-There's a second parameter for the function that is responsible for **further form updates**. 
+There's a second parameter for the function that is responsible for form update. 
 
 By default, it is **false,** which means that if you apply this function with a value just for one field, 
-it will override the previously set values and they will be lost in nowhere. set to **true**, it allows for updating existing values with new ones. 
+it will override the previously set values and they will be lost in nowhere. Set to **true**, it allows updating existing values with new ones. 
 
 ~~~js
-$$('my_form').setValues({ field_b:"Paris" }); //the value for filed_a is lost!
+//the value for field_a is lost!
+$$("myform").setValues({ field_b:"Paris" }); 
 
-$$('my_form').setValues({ field_b:"Paris" }, true); 
-// the form is updated with the specified value
+//the form is updated with the specified value, the value for field_a is preserved
+$$("myform").setValues({ field_b:"Paris" }, true); 
+
 ~~~
 
 Check also the [API reference for this method](api/values_setvalues.md).
@@ -46,9 +49,7 @@ Check also the [API reference for this method](api/values_setvalues.md).
 Loads values from a data file. Here you should pass the path to a data file as well as data format into the function. 
 
 ~~~js
-function load_form() {
-	$$('myform').load("./data/book.xml", "xml");
-}
+$$("myform").load("./data/book.xml", "xml");
 ~~~
 
 ###**getValues()** 
@@ -59,16 +60,14 @@ Gets all the form values including those of hidden and disabled fields. In the s
 webix.ui({
 	view:"form",
     elements:[
-    	//form fields should have names for getting their values
-    	{view:"text", name:"login"},
-        {view:"text", name:"email"},
+    	//form fields must have names for getting their values
+    	{ view:"text", name:"login"},
+        { view:"text", name:"email"}
     ]
-})
+});
 
-function get_form() {
-	var values = $$('myform').getValues();
-	console.log(values);
-}
+var values = $$("myform").getValues();
+console.log(values);
 ~~~
 
 You can also specify whether to include values of disabled and hidden fields into the result: 
@@ -84,29 +83,28 @@ Check also the [API reference for this method](api/values_getvalues.md).
 Clears all the form fields. 
 
 ~~~js
-function clear_form() {
-	$$('myform').clear();
-}
+$$("myform").clear();
 ~~~
 
 ###**focus()** 
 
-Sets the focus into the desired field. If used without arguments sets focus into the component it's called from. In case the item's ID is passed into the function, the corresponding item gets focus. 
+Sets the focus into the desired field. If used without arguments, the focus is set into the first focusable element.
+In case the element's name is passed into the function, the corresponding element gets focus.
 
 ~~~js
-<input type="button" value="Focus author" onclick="focus_form('author');" /> //htmlform
-<input type="button" value="Focus genre" onclick="focus_form('genre');" />
-            
-...
-function focus_form(item) {
-	if (!item)
-		$$('htmlform1').focus();
-	else
-		$$('htmlform1').focus(item);
-}
-~~~
+webix.ui({
+	view:"form", id:"myform",
+    elements:[
+    	{ view:"text", name:"login"},
+        { view:"text", name:"email"}
+    ]
+});
 
-{{sample 11_htmlform/01_htmlform_body.html }}
+//sets focus into the first field (here it is "login")
+$$("myform").focus();
+//sets focus into the "email" field
+$$("myform").focus("email");
+~~~
 
 ###**isDirty()**
 
@@ -114,7 +112,7 @@ Checks whether changes within form were made. The method is called before valida
 
 ~~~js
 function save_form(){
- 	var form = $$('form1');
+ 	var form = $$("form1");
     if(form.isDirty()){
     	if(!form.validate())
         	return false;
@@ -127,47 +125,74 @@ function save_form(){
 
 Check the [API reference for this method](api/values_isdirty.md).
 
+{{Note, that the **save()** method is available only for a form which is [bound to a data component](desktop/data_binding.md#databinding).}}
+
 ###**setDirty()**
 
-Marks the form as 'edited'. 
+Marks the form as "edited". 
 
 ~~~js
-$$('form1').setDirty();
+$$("form1").setDirty();
 ~~~
 
 Check the [API reference for this method](api/values_setdirty.md);  
 
 ###**bind()**
 
-Binds the form to other component. In the snippet below list becomes a data source for the form as well as helps save data from the form into the component. 
+Binds the form to other component. In the snippet below list becomes a data source for the form as well as saves changed form data. 
 
 [More info](desktop/data_binding.md) on Data Binding
 
 ~~~js
-<div>
-	<input type="number" name="rank" />
-	<input type="text" name="title" />
-	<input type="date" name="year" />
-</div>
-<script type="text/javascript">
 webix.ui({
-	view:"list", 
-	template:"#rank#. #title# Year:#year#"})
+	view:"form",
+    id: "form1",
+	elements:[
+     	{ view:"text", name:"rank"},
+        { view:"text", name:"title"}
+    ]
+});
 
-$$('htmlform1').bind($$('list1'));
-//on clicking any list item the form is filled with the same values
-</script>
+webix.ui({
+     view:"list",
+     id: "list1",
+     template:"#rank#. #title#",
+	 select:true,
+	 data:small_film_set
+});
+
+$$("form1").bind($$("list1"));
 ~~~
-{{sample 11_htmlform/05_htmlform_binding.html }}
+{{sample 13_form/02_api/10_binding.html }}
+
+Now, the following actions are possible: 
+
+- on clicking any list item the form is filled with the same values according to the coinciding data keys and field names;
+- the form receives the save() method, which pushes that changed data back to list.
+
 
 ###**validate()**  
 
-Checks where the input data complies with the defined rules for the form. 
+Checks whether the input data complies with the defined rules for the form. The form's **rules** property object contains 
+validation functions for form fields according to their names:
+
+~~~js
+webix.ui({
+	view:"form",
+    id:"myform",
+    elements:[
+    	{ view:"text", name:"rank"},
+        { view:"text", name:"title"}
+    ],
+    rules:{
+    	rank:webix.rules.isNumber,
+        title:webix.rules.isNotEmpty
+    }
+});
+
+$$("myform").validate();
+~~~
 
 More info on [data validation](desktop/data_validation.md).
-
-{{note
-Don't forget to specify the ID of a [form](desktop/form.md) / [htmlform](desktop/htmlform.md) to enable this functionality since the ID is used to call these functions.
-}}
 
 @complexity:2

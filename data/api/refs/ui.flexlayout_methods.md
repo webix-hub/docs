@@ -25,7 +25,7 @@ Methods
 - api/link/ui.flexlayout_isvisible.md - checks whether the view is visible
 - api/link/ui.flexlayout_mapevent.md - routes events from one object to another
 - api/link/ui.flexlayout_reconstruct.md - rebuilds the layout
-- api/link/ui.flexlayout_removeview.md - removes view from layout-like component
+- api/link/ui.flexlayout_removeview.md - removes the specified view of a layout-like component
 - api/link/ui.flexlayout_resize.md - adjusts the view to a new size
 - api/link/ui.flexlayout_resizechildren.md - resizes all children of the called component
 - api/link/ui.flexlayout_show.md - makes the component visible

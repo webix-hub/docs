@@ -3,6 +3,9 @@ JQuery Integration
 
 The Webix library works in tandem with JQuery libraries as well, which is an obvious bonus for those who are used to working with JQuery. 
 
+{{note The sources for integration of Webix with JQuery are not included into the Webix library package. 
+You can take them from [the GitHub repository](https://github.com/webix-hub/webix-jquery)}}
+
 JQuery is included by a link specified in your document's head section 
 
 ~~~html
@@ -13,7 +16,7 @@ Working with JQuery, you can create all the components from the webix UI library
 
 ##Component initialization:
 ~~~js
-$(#div ID/ .CSS selector').webix_component({config});
+$('#div ID/ .CSS selector').webix_component({config});
 ~~~
 
 Let it  be list:

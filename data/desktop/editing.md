@@ -412,8 +412,8 @@ columns:[
 
 ##Advanced configuration of select editors
 
-Webix select controls, **combo**, **richselect** and **multiselect**, are [highly customizable](desktop/advanced_combo.md), which means that the same-name editors  
-can be customized too. The following things can be changed: 
+Webix select controls, **combo**, **richselect** and **multiselect**, are [highly customizable](desktop/advanced_combo.md), 
+which means that the same-name editors  can be customized too. The following things can be changed: 
 
 - template of list items;
 - template of the input field (combo editor only);
@@ -422,7 +422,7 @@ can be customized too. The following things can be changed:
 - the number of list items in the popup;
 - functions can be attached to a list.
 
-Two column attributes are mandatory  - **options** or **collection** to interpret options into text and **suggest** to define the configuration of related popup list: 
+Two column attributes are mandatory - **options** or **collection** to interpret options into text and **suggest** to define the configuration of related popup list: 
 
 ~~~js
 { id:"year", editor:"combo", options:years, suggest:{
@@ -557,12 +557,13 @@ For instance you have a datatable column with e-mails. Input type **email** from
 In this case you extend the existing **text editor** and change render pattern in it: 
 
 ~~~js
-	webix.editors.myeditor = webix.extend({
-			render:function(){
-			return webix.html.create("div", {
-				"class":"webix_dt_editor"
-			}, "<input type='email'>");
-		}}, webix.editors.text);
+webix.editors.myeditor = webix.extend({
+	render:function(){
+		return webix.html.create("div", {
+			"class":"webix_dt_editor"
+		}, "<input type='email'>");
+	}
+}, webix.editors.text);
 ~~~
 
 {{sample 80_docs/custom_ed.html}}

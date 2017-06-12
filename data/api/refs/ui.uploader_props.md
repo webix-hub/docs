@@ -2,6 +2,7 @@ Properties
 ==========
 
 {{api
+- api/ui.uploader_accept_config.md - specifies particular file types that will be accepted for uploading
 - api/link/ui.uploader_align_config.md - the alignment of the control within the parent container
 - api/link/ui.uploader_animate_config.md - defines or disables view change animation.
 - api/ui.uploader_apionly_config.md - sets the uploader to "invisible" mode. *False* by default.
@@ -42,6 +43,7 @@ Properties
 }}
 
 @index:
+- api/ui.uploader_accept_config.md
 - api/link/ui.uploader_align_config.md
 - api/link/ui.uploader_animate_config.md
 - api/ui.uploader_apionly_config.md

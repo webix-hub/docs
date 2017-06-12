@@ -89,7 +89,7 @@ Methods
 - api/ui.datatable_isselected.md - returns true if related record is selected
 - api/link/ui.datatable_isvisible.md - checks whether the view is visible
 - api/link/ui.datatable_load.md - loads data from an external data source.
-- api/link/ui.datatable_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
+- api/link/ui.datatable_loadnext.md - sends a request to load the specified number of records to the end of the client-side dataset or to the specified position
 - api/ui.datatable_locate.md - converts an HTML node or event object to in-table position
 - api/ui.datatable_mapcells.md - applies the callback to a range of cells
 - api/link/ui.datatable_mapevent.md - routes events from one object to another
@@ -143,7 +143,7 @@ Methods
 - api/ui.datatable_unselect.md - cancels selection of the specified element
 - api/ui.datatable_unselectall.md - unselects all selected cells in a datatble
 - api/link/ui.datatable_updateitem.md - updates the data item with new properties
-- api/link/ui.datatable_validate.md - validates one record or all dataset against validation rules
+- api/link/ui.datatable_validate.md - validates one record or all dataset against the validation rules
 - api/link/ui.datatable_validateeditor.md - validates data in currently active editor
 }}
 

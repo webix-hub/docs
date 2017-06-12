@@ -1,9 +1,11 @@
 Checkboxes in Tree
 ==================================
+
 In this chapter we will talk about checkboxes in tree nodes: how to add, customize them or provide the 3-state behavior.
 
 Adding checkboxes to nodes
 -----------------------------
+
 Tree provides a predefined template for check boxes, which is - *{common.checkbox()}* <br> (read more about templates in chapter datatree/node_templates.md). 
 
 <img src="datatree/standard_checkbox.png"/>
@@ -14,7 +16,7 @@ So, to add checkboxes to tree nodes you should specify the api/link/ui.tree_temp
 	Adding checkboxes to tree nodes
 }}
 ~~~js
-tree = new webix.ui({
+webix.ui({
 	view:"tree",
 	template:"{common.icon()} {common.checkbox()} {common.folder()} #value#"
     ...
@@ -28,7 +30,8 @@ tree = new webix.ui({
 
 3-state checkboxes
 ---------------------
-In addition to standard 2-state behavior supports 3-state checkboxes.
+
+In addition to the standard 2-state behavior, Webix Tree supports 3-state checkboxes.
 
 <table class="list">
 	<caption class="caption">

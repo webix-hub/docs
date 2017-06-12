@@ -1,0 +1,23 @@
+workspace:
+  base: /build
+  path: export-docs
+
+pipeline:
+  build: 
+    image: registry.webix.io/madoka-build-env
+    pull: true
+    environment:
+      - "AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}"
+      - "AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}" 
+    commands:
+      - ln -s /madoka ../madoka
+      - ./build.sh
+      - curl http://webix.com:2280/h00ks/webix-docs-release?token=${HOOK_TOKEN}
+    when:
+      branch: master
+
+  notify:
+    image: plugins/slack
+    webhook: ${SLACK_BUILDS_HOOK}
+    when:
+      branch: master

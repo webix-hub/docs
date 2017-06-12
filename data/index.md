@@ -10,7 +10,7 @@ Start
 <h2>Meet Webix 4.4!</h2>
 <ul>
 	<li><a href="">Query Builder</a> widget</li>
-	<li>Smart printing of widgets with <a href="">webix.print()</a> method</li>
+	<li>Smart <a href="">webix.print()</a> method</li>
     <li></li>
 </ul>
 

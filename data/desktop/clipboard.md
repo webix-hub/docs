@@ -1,5 +1,6 @@
-Working with the clipboard
+Working with the Clipboard
 ========================
+
 Webix provides support for the clipboard operations in all data-containing components. For this purpose, the library supplies the api/refs/copypaste.md mixin. 
 
 By default, the support is disabled. To enable it, set the api/copypaste_clipboard_config.md property to *true* :
@@ -38,17 +39,19 @@ webix.extend($$("myview"),webix.CopyPaste);
 ~~~
 
 
-
-
 ##Custom 'copy' function
-To customize the way that the data will be stored in the clipboard (when the user presses CTRL+C) you should use the api/copypaste_templatecopy_config.md property. In that case, before transferring to the clipboard the copied data will be modified according to the specified template. 
+
+To customize the way that the data will be stored in the clipboard (when the user presses CTRL+C) 
+you should use the api/copypaste_templatecopy_config.md property. In that case, before
+transferring to the clipboard the copied data will be modified according to the specified template. 
 
 {{note
-To use the the api/copypaste_templatecopy_config.md property you need to set the api/copypaste_clipboard_config.md property to a value 'custom'.
+To use the api/copypaste_templatecopy_config.md property, you need to set the api/copypaste_clipboard_config.md property to the "custom" value.
 }}
 
 </br>
-Let's take a simple example: you have a list that displays the names of your favorite films. Assume, in the clipboard besides the film title you want to store its year and rating. 
+Let's take a simple example: you have a list that displays the names of your favorite films. 
+Assume that besides the film title you want to store its year and rating in the clipboard. 
 
 Then:
 
@@ -81,8 +84,11 @@ webix.ui({
 {{sample
 	05_list/09_copypaste.html
 }}
+
+
 ##Custom 'paste' function
-To customize the way that the data will be retrieved from the clipboard to a Webix component you should use the api/copypaste_onpaste_event.md event.
+
+To customize the way that the data will be retrieved from the clipboard to a Webix component, you should use the api/copypaste_onpaste_event.md event.
 
 The event fires when the user presses Ctrl+V keys combination and as a parameter, the handler function takes the text stored in the clipboard.
 
@@ -131,7 +137,7 @@ $$("mylist").attachEvent("onPaste", function(text) {
 
 ~~~js
 tree.attachEvent("onPaste", function(text) {
-        webix.message("Node is pasted: " + text);
+	webix.message("Node is pasted: " + text);
 });
 ~~~
 

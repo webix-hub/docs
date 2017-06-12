@@ -17,7 +17,8 @@ Methods
 - api/link/ui.gridsuggest_getchildviews.md - returns child views of the calling component
 - api/link/ui.gridsuggest_getformview.md - returns master form for the input
 - api/link/ui.gridsuggest_gethead.md - gets the ui view of the window header
-- api/link/ui.gridsuggest_getitemtext.md - returns rendered text of suggest's item
+- api/link/ui.gridsuggest_getitemid.md - returns the id of the suggest's item
+- api/link/ui.gridsuggest_getitemtext.md - returns the rendered text of the suggest's item
 - api/link/ui.gridsuggest_getlist.md - returns inner data control from suggest
 - api/link/ui.gridsuggest_getmastervalue.md - returns current value of master control
 - api/link/ui.gridsuggest_getnode.md - returns the main HTML container for the calling object
@@ -57,6 +58,7 @@ Methods
 - api/link/ui.gridsuggest_getchildviews.md
 - api/link/ui.gridsuggest_getformview.md
 - api/link/ui.gridsuggest_gethead.md
+- api/link/ui.gridsuggest_getitemid.md
 - api/link/ui.gridsuggest_getitemtext.md
 - api/link/ui.gridsuggest_getlist.md
 - api/link/ui.gridsuggest_getmastervalue.md

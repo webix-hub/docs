@@ -10,11 +10,11 @@
     
 @descr:
 
-If id was not provided - component will validate all records. 
+If the id was not provided, the component will validate all records. 
 
-Methods uses config.rules for validation
+The method uses [config.rules](api/link/ui.datatable_rules_config.md) for validation.
 
-Invalid rows has "webix_invalid" marker on them 
+Invalid rows are displayed with the "webix_invalid" marker.  
 
 @relatedsample:
 	15_datatable/25_validation/01_existing_data.html  

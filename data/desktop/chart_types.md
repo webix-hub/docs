@@ -1,7 +1,7 @@
 Chart Types
 ===============
 
-Here we speak about various chart types at your disposal. Basically, you should set the **type** property of the chart constructor to the 
+Here we speak about various Webix chart types that you have at your disposal. Basically, you should set the **type** property of the chart constructor to the 
 necessary value to switch to the corresponding chart type. 
 
 ##Pie, 3D Pie Chart and Donut Charts {#pie}

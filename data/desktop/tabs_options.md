@@ -40,7 +40,7 @@ Tabs/segments can be added and deleted on the go with the help of the following 
 MultiView cells can be added and deleted dynamically by using: 
 
 - **[addView()](api/link/ui.multiview_addview.md)** - adds view to layout (multiview is layout) according to the provided configuration;
-- **[removeView()](api/link/ui.multiview_removeview.md)** - removed layout cell by the given ID.
+- **[removeView()](api/link/ui.multiview_removeview.md)** - removes layout cell. Takes the child view object or its id as an argument.
  
 {{snippet
 Adding

@@ -179,7 +179,8 @@ list.load("server/data.json");
 Options list can be synchronized with either other component data or [Datacollection](desktop/nonui_objects.md) data: 
 
 ~~~js
-$$("my_richselect").getPopup().getList().sync($$("list1")); //pushes this data into richselect popup 
+// pushes the specified data into richselect popup 
+$$("my_richselect").getPopup().getList().sync($$("list1")); 
 ~~~
 
 {{sample 80_docs/getpopup.html }}

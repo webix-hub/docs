@@ -8,6 +8,7 @@
 - selection
 - repeat
 - false
+- custom
 
 @example:
 webix.ui({
@@ -21,9 +22,10 @@ webix.ui({
 @relatedsample:
 	15_datatable/06_clipboard/01_cell_selection.html
 	15_datatable/06_clipboard/05_two_grids.html
+    15_datatable/06_clipboard/09_paste_custom.html
 
 @related:
 	datatable/copying.md
 
 @descr:
-
+If clipboard is defined as *"custom"*, you need to specify [onPaste](api/copypaste_onpaste_event.md) behavior attached to the same-name event. 

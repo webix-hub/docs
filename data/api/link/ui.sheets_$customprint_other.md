@@ -1,0 +1,1 @@
+@link: api/customprint_$customprint_other.md

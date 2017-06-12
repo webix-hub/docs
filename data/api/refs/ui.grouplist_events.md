@@ -40,7 +40,7 @@ Events
 - api/link/ui.grouplist_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.grouplist_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.grouplist_onmouseout_event.md - fires when the mouse was moved out from the specified item
-- api/link/ui.grouplist_onpaste_event.md - fires when the user presses CTRL+V keys combination
+- api/link/ui.grouplist_onpaste_event.md - fires when the <a href="api/copypaste_clipboard_config.md">clipboard</a> is enabled and the user presses CTRL+V keys combination
 - api/link/ui.grouplist_onselectchange_event.md - fires after selection state was changed
 - api/link/ui.grouplist_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.grouplist_onswipey_event.md - occurs on a vertical swipe movement

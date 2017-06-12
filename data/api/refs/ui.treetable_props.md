@@ -81,6 +81,7 @@ Properties
 - api/link/ui.treetable_subrowheight_config.md - automatically adjusts the subrow's height to the size of the text
 - api/link/ui.treetable_subrow_config.md - sets a subrow template
 - api/link/ui.treetable_subview_config.md - adds a subview configuration into datatable
+- api/link/ui.treetable_templatecopy_config.md - sets the template according to which data will be copied to clipboard from each currently selected cell
 - api/link/ui.treetable_threestate_config.md - defines three-state checkboxes for the tree
 - api/link/ui.treetable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.treetable_topsplit_config.md - defines the number of rows that will be "frozen" at the top of datatable
@@ -170,6 +171,7 @@ Properties
 - api/link/ui.treetable_subrowheight_config.md
 - api/link/ui.treetable_subrow_config.md
 - api/link/ui.treetable_subview_config.md
+- api/link/ui.treetable_templatecopy_config.md
 - api/link/ui.treetable_threestate_config.md
 - api/link/ui.treetable_tooltip_config.md
 - api/link/ui.treetable_topsplit_config.md

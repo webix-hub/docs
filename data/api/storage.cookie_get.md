@@ -10,7 +10,7 @@ get
 - name		string		the data key
 
 @returns:
-data		object	a data item from the storage associated with the key or <i>null</i>
+data		object			a data item from the storage associated with the key or <i>null</i>
 
 
 @example:

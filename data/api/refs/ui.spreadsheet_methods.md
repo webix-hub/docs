@@ -70,7 +70,7 @@ Methods
 - api/ui.spreadsheet_registermathmethod.md - adds a custom function that will be used in formulas
 - api/ui.spreadsheet_removefilter.md - removes filters from the sheet
 - api/ui.spreadsheet_removesheet.md - removes a sheet by name
-- api/link/ui.spreadsheet_removeview.md - removes view from layout-like component
+- api/link/ui.spreadsheet_removeview.md - removes the specified view of a layout-like component
 - api/ui.spreadsheet_renamesheet.md - replaces the sheet name with the a new one
 - api/ui.spreadsheet_reset.md - resets the SpreadSheet settings to the initial state
 - api/ui.spreadsheet_resetundo.md - resets the Undo history

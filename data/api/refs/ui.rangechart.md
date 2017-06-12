@@ -74,7 +74,7 @@ var rangechart = webix.ui({
 - api/link/ui.rangechart_isenabled.md - checks whether the view is enabled
 - api/link/ui.rangechart_isvisible.md - checks whether the view is visible
 - api/link/ui.rangechart_load.md - loads data from an external data source.
-- api/link/ui.rangechart_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
+- api/link/ui.rangechart_loadnext.md - sends a request to load the specified number of records to the end of the client-side dataset or to the specified position
 - api/link/ui.rangechart_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.rangechart_mapevent.md - routes events from one object to another
 - api/link/ui.rangechart_parse.md - loads data to the component from an inline data source
