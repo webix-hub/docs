@@ -8,8 +8,8 @@ because they are comprised of the following components:
 - Webix [list](desktop/list.md) from which templating and loading rules, item sizes and look-and-feel are taken;
 - Webix [popup](desktop/popup.md) from which popup size and behavior are taken. 
 
-The combination of list and popup is called **suggest list** (described in detail [separately](desktop/suggest.md)). Here we will have a look at extra configuration possibilities 
-of suggest-based controls.
+The combination of list and popup is called **suggest list** (described in detail [separately](desktop/suggest.md)).
+Here we will have a look at extra configuration possibilities of suggest-based controls.
 
 ##Advanced Configuration
 
@@ -76,7 +76,7 @@ Options data may as well contain **multi-line text** with html tags. In this cas
 ~~~js
 { view:"richselect",
   options:[
-	{ id:1, value:"Here can be some long multi line content <ul><li>item1 <li> item 2</ul>"}, 
+	{ id:1, value:"Some long multi line content <ul><li>item1 <li> item 2</ul>"}, 
 	{ id:2, value:"Papaya"  }
 ]}
 ~~~

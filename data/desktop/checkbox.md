@@ -9,9 +9,11 @@ Checkbox
 
 ##Overview
 
-Checkbox allows for a choice between two possible variants.
+Checkbox allows a user to make a choice between two opposite states for an option - enabled and disabled.
 
 <img src="desktop/checkbox.png"/>
+
+In the above image the "First Age" option is enabled and the "Second age" option is disabled.
 
 {{sample 13_form/01_controls/06_checkbox.html }}
 
