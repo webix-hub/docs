@@ -92,9 +92,13 @@ Possible values for the second parameter of the **sort** method is string which 
 
 ### Sorting types
 
-The third parameter of the **sort** method may be string which represents the data type: 
+The third parameter of the **sort** method is a string which represents the desired sorting mode: 
 
-- "int" - sorts as integer values
-- "date" - sorts as dates
-- "string" - sorts as strings
-- "string_strict" - sorts as strings, case-sensitive
+- int - compares numeric values;
+- [date](datatable/sorting.md#dates) - compares dates;
+- string - compares string values;
+- string_strict- case-sensitive "string";
+- [text](datatable/sorting.md#visible_text)- compares visible item text (including template);
+- server- issues a server side request for a sorted dataset;
+- raw - basic sorter with simple comparison (a>b and vice versa);
+- or, you can set a [custom sorting type](desktop/filter_sort.md#addingcustomsortingtype).

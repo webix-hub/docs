@@ -149,16 +149,6 @@ webix.toExcel($$("mylist"), {
 
 The column will be rendered with the stated additional properties, which may differ from the component's parameters. 
 
-- **not rendering "hyphens" before child nodes** in tree-like structures by using the *plainOutput* option with the *true* value
-
-~~~js
-webix.toExcel($$("mytreetable"), {
-	columns:{
-		plainOutput:true
-	}
-});
-~~~
-
 - **rendering a template** set in the widget's dataset via setting the *rawValues* option to *false*
 
 ~~~js
@@ -198,7 +188,48 @@ webix.toExcel($$("mylist"), {
 });
 ~~~
 
+{{sample 19_api/06_export_excel.html}}
+
+
 "Custom1" (any name can be used) receives data from the **year** field even if it is not seen in this component but is presented in its dataset.
 The field is rendered with **width** and **template** as well as **header** that will be the header of the corresponding column in the resulting table. 
 
-{{sample 19_api/06_export_excel.html}}
+
+###Customizing Export to Excel for Hierarchical Components
+
+
+In addition to standard export options, the API allows cusomizing the output data of hierarchical components ([Tree](datatree/index.md) and
+[Treetable](desktop/treetable.md)) in the following way:
+
+- **not rendering "hyphens" before child nodes** in tree-like structures by using the *plainOutput* option with the *true* value
+
+~~~js
+webix.toExcel($$("mytreetable"), {
+	columns:{
+		plainOutput:true
+	}
+});
+~~~
+
+- **rendering separate columns for data on different hierarchy levels**, thus rendering data in a table: 
+
+~~~js
+webix.toExcel($$("mytreetable"), {
+	flatTree:{
+		id:"value",
+		columns:[
+			{ header:"Title" },
+			{ header:"Section" },
+			{ header:"Subsection" }
+		]
+	}
+});
+~~~
+
+The **flatTree** property object includes the following options: 
+
+- id (*string*) -  data property which will be rendered in columns
+- columns (*array*) - array with columns to which the above data property will be distributed according to the hierarchy level
+- fill (*boolean*) - optional. If true, allows filling child records with parent data for each child node
+
+{{sample 15_datatable/30_treetable/12_export.html}}

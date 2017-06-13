@@ -32,6 +32,9 @@ The template function takes the following parameters:
 - row - the row id
 - col - the column id
 
+@relatedsample: 
+	15_datatable/06_clipboard/10_template_copy.html
+
 @related:
 	desktop/clipboard.md
     datatable/copying.md#customcopying

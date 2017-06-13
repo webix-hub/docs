@@ -390,7 +390,8 @@ webix.event(window, "resize", function(){ grid.adjust(); })
 To dynamically adjust column width or row height to the size of their content, you can use the corresponding methods: 
 
 - [**adjustColumn(id)**](api/ui.datatable_adjustcolumn.md) - adjusts the width of a chosen column specified by its ID;
-- [**adjustRowHeight(id)**](api/ui.datatable_adjustrowheight.md) - adjusts the height of a chosen row specified by its ID. The method can slow down the application. 
+- [**adjustRowHeight(id)**](api/ui.datatable_adjustrowheight.md) - adjusts the height of all rows based on cell content of a particular column or all columns.
+The method can slow down the application. 
 
 
 Scrolling

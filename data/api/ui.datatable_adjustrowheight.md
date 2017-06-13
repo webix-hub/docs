@@ -2,29 +2,37 @@ adjustRowHeight
 =============
 
 
-@short: autodetect height of rows in datatable
+@short: adjusts row height to cell content
 	
 
 @params:
-- columnId		string		id of column
-- silent        boolean     apply method without repainting
+* columnId		string		column id
+* silent        boolean     apply method without repainting
 
 @example:
 
+//adjusts height of each row to "title" cells
 dtable.adjustRowHeight("title");
+
+//adjusts height of each row to the highest cell in it
+dtable.adjustRowHeight();
 
 
 @template:	api_method
 @descr:
 
+You need to set [fixedRowHeight](api/ui.datatable_fixedrowheight_config.md) to *false* for your datatable, otherwise the method will not have any visible result.
 
-Height detected only based on the value of one column, defined by the columnId parameter.
 
-If you want to apply auto-sizing just after data loading you can use code like next
+Row height is adjusted to:
+
+- the height of the cell in a column, which is defined by the *columnId* parameter;
+- the height of the "biggest" cell in a row, if *columnId* is not provided.
+
+If you want to apply auto-sizing just after data loading you can use the following code:
 
 ~~~js
-grid = new webix.ui({
-	container:"testA",
+webix.ui({
 	view:"datatable",
 	columns:[
 		{ id:"rank",	width:40,	header:"", css:"rank"},
@@ -32,7 +40,7 @@ grid = new webix.ui({
 		{ id:"year",	width:160,	header:"Released"   },
 		{ id:"votes",	width:120,	header:"Votes"  	}
 	], 
-	fixedRowHeight:false,  rowLineHeight:25, rowHeight:25,	
+	fixedRowHeight:false,
 	on:{
 		"onresize":webix.once(function(){ 
 			this.adjustRowHeight("title", true); 
@@ -40,8 +48,6 @@ grid = new webix.ui({
 	}
 });
 ~~~
-
-You must have fixedRowHeight set to false, or call of adjustRowHeight will not have a visible result.
 
 {{note This method will slowdown a component a lot. }}
 

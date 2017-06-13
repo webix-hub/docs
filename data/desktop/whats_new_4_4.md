@@ -3,6 +3,10 @@ Version 4.4
 
 <span class="release_date">released on June 27, 2017</span>
 
+{{todo
+log revision 12.06
+}}
+
 Breaking Changes
 ---------
 To avoid ambiguity, Google-map  has been completely removed from the [Components repository](https://github.com/webix-hub/components), 
@@ -11,24 +15,25 @@ but its [advanced version](https://docs.webix.com/desktop__googlemap.html) stays
 New Features 
 ---------
 
-- Query Builder widget
-- webix.print() API to adjust any Webix view for printing
-- export of hierarchical structures to Excel and CSV
-- serverMultiComboFilter
+- webix.print() API for smart printing of widgets
+- Query Builder widget for data source configuration and filtering
+- [serverMultiComboFilter](datatable/filtering.md#servermulticombo) for Datatable
 
 Updates
 ---------
 
 - ability to define disabled items in menu from json
-- templateCopy for Datatable and Treetable
-- scale and origin options for Datatable sparklines
-- autodecting options sorting logic for filter in Datatable
-- getRaw method for cookie storage
-- addView() and removeView() methods for Carousel
-- webix.history.track can be disabled
-- Datatable's adjustRowHeight() can adjust the row to the highest cell if column id is not specified
--  ability to create rejected and resolved promises with webix.promise interface
-
+- [templateCopy](api/link/ui.datatable_templatecopy_config.md) for Datatable and Treetable
+- [scale and origin options](datatable/sparklines.md#customizingsparklines) for Datatable "line" and "bar" sparklines
+- autodection of sorting mode for options based on their data in [Datatable filters](datatable/filtering.md)
+- ["raw" sorting](desktop/filter_sort.md#sorting) mode
+- [getRaw](api/storage.cookie_getraw.md) method for cookie storage
+- [addView()](api/ui.carousel_addview.md) and [removeView()](api/ui.carousel_addview.md) methods for Carousel
+- [webix.history.track](desktop/history_track.md#disablinghistorytracking) can be disabled
+- Datatable's [adjustRowHeight()](api/ui.datatable_adjustrowheight.md) can adjust the row to the highest cell if column id is not specified
+- ability to create [rejected](api__promise_reject.html) and [resolved](api/promise_resolve.md) promises with webix.promise interface
+- advanced settings for exporting hierarchical components to [Excel](desktop__data_components_export.html#customizingexporttoexcel) 
+and [CSV](desktop/export_csv.md#customizingexporttocsv)
 
 Fixes
 ---------

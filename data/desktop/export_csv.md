@@ -172,3 +172,41 @@ webix.csv.delimiter.cols = ",";
 ~~~
 
 {{sample 19_api/09_export_csv.html}}
+
+###Customizing Export to CSV for Hierarchical Components
+
+In addition to standard export options, the API allows cusomizing the output data of hierarchical components ([Tree](datatree/index.md) and
+[Treetable](desktop/treetable.md)) in the following way:
+
+- **not rendering "hyphens" before child nodes** in tree-like structures by using the *plainOutput* option with the *true* value
+
+~~~js
+webix.toCSV($$("mytreetable"), {
+	columns:{
+		plainOutput:true
+	}
+});
+~~~
+
+- **rendering separate columns for data on different hierarchy levels**, thus rendering data in a table: 
+
+~~~js
+webix.toCSV($$("mytreetable"), {
+	flatTree:{
+		id:"value",
+		columns:[
+			{ header:"Title" },
+			{ header:"Section" },
+			{ header:"Subsection" }
+		]
+	}
+});
+~~~
+
+The **flatTree** property object includes the following options: 
+
+- id (*string*) -  data property which will be rendered in columns
+- columns (*array*) - array with columns to which the above data property will be distributed according to the hierarchy level
+- fill (*boolean*) - optional. If true, allows filling child records with parent data for each child node
+
+{{sample 15_datatable/30_treetable/12_export.html}}
