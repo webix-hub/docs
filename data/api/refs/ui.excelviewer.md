@@ -2,10 +2,27 @@ ui.excelviewer
 =============
 
 
-dummy stub
+{{memo A tool for displaying the content of Excel files on the screen. }}
 
-{{todo replace with real description. }}
+Webix Excel Viewer is a handy tool for viewing Excel files. It consists of a toolbar that contains tabs with the sheets names and the viewer itself.
 
+Check desktop/excelviewer.md documentation for a more detailed information.
+
+### Constructor
+
+~~~js
+var excelviewer = webix.ui({
+    view:"excelviewer", 
+    toolbar:"toolbar", 
+    excelHeader:true, 
+    url:"binary->files/data.xlsx"
+}).
+~~~
+
+### Where to start
+
+- [Overview of the Excel Viewer Widget](desktop/excelviewer.md)
+- [Samples](http://docs.webix.com/samples/60_pro/10_viewers/)
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.datatable.md">ui.datatable</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/group.md">Group</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/mapcollection.md">MapCollection</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/tablepaste.md">TablePaste</a>, <a href="api/refs/datastate.md">DataState</a>, <a href="api/refs/editability.md">EditAbility</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/customprint.md">CustomPrint</a></div>
 
@@ -135,7 +152,7 @@ dummy stub
 - api/link/ui.excelviewer_showitem.md - 'scrolls' the table to make the specified row visible
 - api/link/ui.excelviewer_showitembyindex.md - 'scrolls' the table to make the specified row visible
 - api/link/ui.excelviewer_showoverlay.md - shows the overlay message over the body of DataTable
-- api/ui.excelviewer_showsheet.md - 
+- api/ui.excelviewer_showsheet.md - switches to the specified sheet
 - api/link/ui.excelviewer_sort.md - sorts datastore
 - api/link/ui.excelviewer_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.excelviewer_unbind.md - breaks "bind" link
@@ -202,7 +219,6 @@ dummy stub
 - api/link/ui.excelviewer_oncheck_event.md - fires when a checkbox is checked or unchecked in the datatable item
 - api/link/ui.excelviewer_oncollectvalues_event.md - fires after datatable has collected options
 - api/link/ui.excelviewer_oncolumnresize_event.md - fires when width of column was changed
-- api/ui.excelviewer_oncolumnresizeaction_event.md - 
 - api/link/ui.excelviewer_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.excelviewer_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.excelviewer_ondestruct_event.md - occurs when component destroyed
@@ -272,7 +288,7 @@ dummy stub
 - api/link/ui.excelviewer_editvalue_config.md - defines which data item is editable (in case of several data item in the cell/line)
 - api/link/ui.excelviewer_editable_config.md - allows/denies editing in the view
 - api/link/ui.excelviewer_editaction_config.md - defines the action on which editors will be opened
-- api/ui.excelviewer_excelheader_config.md - 
+- api/ui.excelviewer_excelheader_config.md - sets the first row of the Excel table as a column header
 - api/link/ui.excelviewer_externaldata_config.md - allows defining custom 'move' logic for the component.
 - api/link/ui.excelviewer_filtermode_config.md - defines filtering rules in tree-like components
 - api/link/ui.excelviewer_fixedrowheight_config.md - defines whether the height should be fixed for all rows or can vary
@@ -280,7 +296,7 @@ dummy stub
 - api/link/ui.excelviewer_form_config.md - linked form
 - api/link/ui.excelviewer_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.excelviewer_header_config.md - enables/disables the header in DataTable (enabled, by default)
-- api/link/ui.excelviewer_headerrowheight_config.md - sets the heigth of the header row
+- api/link/ui.excelviewer_headerrowheight_config.md - sets the height of the header row
 - api/link/ui.excelviewer_headermenu_config.md - adds a headermenu to control column visibility
 - api/link/ui.excelviewer_height_config.md - sets the height of the component
 - api/link/ui.excelviewer_hidden_config.md - defines whether the view will be hidden initially
@@ -327,7 +343,7 @@ dummy stub
 - api/link/ui.excelviewer_subrow_config.md - sets a subrow template
 - api/link/ui.excelviewer_subview_config.md - adds a subview configuration into datatable
 - api/link/ui.excelviewer_templatecopy_config.md - sets the template according to which data will be copied to clipboard from each currently selected cell
-- api/ui.excelviewer_toolbar_config.md - 
+- api/ui.excelviewer_toolbar_config.md - sets the id of the related excel toolbar, if it is used
 - api/link/ui.excelviewer_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.excelviewer_topsplit_config.md - defines the number of rows that will be "frozen" at the top of datatable
 - api/link/ui.excelviewer_type_config.md - used for configuring presentation of items
@@ -354,7 +370,6 @@ dummy stub
 - api/link/ui.excelviewer_$dropallow_other.md - can be redefined, if you need custom drop rules
 - api/link/ui.excelviewer_$getsize_other.md - returns the current size of the component
 - api/link/ui.excelviewer_$height_other.md - current height of the view
-- api/ui.excelviewer_$onload_other.md - 
 - api/link/ui.excelviewer_$scope_other.md - scope for resolving event and method names
 - api/link/ui.excelviewer_$setsize_other.md - sets the component size
 - api/link/ui.excelviewer_$skin_other.md - the method which will be called when skin is defined

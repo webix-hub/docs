@@ -1,1 +1,1 @@
-@link: api/ui.datatable_onpaste_event.md
+@link: api/tablepaste_onpaste_event.md

@@ -53,7 +53,6 @@ Events
 - api/link/ui.excelviewer_oncheck_event.md - fires when a checkbox is checked or unchecked in the datatable item
 - api/link/ui.excelviewer_oncollectvalues_event.md - fires after datatable has collected options
 - api/link/ui.excelviewer_oncolumnresize_event.md - fires when width of column was changed
-- api/ui.excelviewer_oncolumnresizeaction_event.md - 
 - api/link/ui.excelviewer_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.excelviewer_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.excelviewer_ondestruct_event.md - occurs when component destroyed
@@ -145,7 +144,6 @@ Events
 - api/link/ui.excelviewer_oncheck_event.md
 - api/link/ui.excelviewer_oncollectvalues_event.md
 - api/link/ui.excelviewer_oncolumnresize_event.md
-- api/ui.excelviewer_oncolumnresizeaction_event.md
 - api/link/ui.excelviewer_ondatarequest_event.md
 - api/link/ui.excelviewer_ondataupdate_event.md
 - api/link/ui.excelviewer_ondestruct_event.md

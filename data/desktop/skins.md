@@ -23,10 +23,13 @@ Each skin requires including its specific CSS file.
 All CSS files for skins reside in the **codebase/skins** folder of the package.
 }}
 
+The Webix library provides a handy tool [Skin Builder](https://webix.com/skin-builder/) that allows you to choose some of default skins for your interface and
+apply your designer skills to create a custom skin.
+
 Using Skins
 -------------
 
-In order to apply the selected skin correctly, you take two steps:
+In order to apply the selected skin correctly, you should take two steps:
 
 1 . Include the .css file of the necessary skin into the document's head:
 
@@ -51,10 +54,13 @@ webix.ready(function(){
 <script src="../../codebase/webix.js" type="text/javascript" charset="utf-8"></script>
 ~~~
 
-Skin JS File Config
+Customizing Skins
 --------------------------
 
-Below you will find the full *skin.js* file for the Flat skin:
+There is a possibility to adjust the sizes of UI elements globally by changing skin JS settings.
+
+The default settings for each skin are stored in the `webix.skin.{skin_name}` object and include a number of options, which you can freely redefine.
+For instance, the default "flat" skin comes with the following options: 
 
 ~~~js
 webix.skin.flat = {
@@ -104,6 +110,21 @@ webix.skin.flat = {
 
 	optionHeight: 32
 };
+~~~
+
+You can also make changes in the currently used skin by accessing its settings via the `$active` keyword. 
+The example below shows how you can change the height of all inputs in your application:
+
+~~~js
+webix.skin.$active.inputHeight = 50;
+
+webix.ui({
+  rows:[
+    { view:"text", label:"Text"},
+    { view:"combo", label:"Combo" },
+    { view:"datepicker", label:"Date" },
+  ]
+});
 ~~~
 
 Air 

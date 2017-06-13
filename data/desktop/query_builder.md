@@ -1,16 +1,32 @@
 Query Builder
 ==============
 
+{{pronote
+The widget is available in the **Webix Pro** edition.
+}}
+
+
 API Reference
 ---------------
 
 - [Methods, properties and events](api/refs/ui.querybuilder.md)
 
-<div class="h2">External resources</div>
+External resources
+-------------------
 
-- You can [download Webix SpreadSheet](http://webix.com/spreadsheet/download.html) from [http://webix.com/spreadsheet/](http://webix.com/spreadsheet/)
-- There are online samples at [docs.webix.com/samples](http://docs.webix.com/samples/65_spreadsheet/index.html)
+- {{note The sources of this component are located in a separate folder of the library package - **/querybuilder**}}
+- There are an online samples at [docs.webix.com/samples](http://docs.webix.com/samples/)
 
-<div class="h2">Overview</div>
+Overview
+----------
 
 Control to create complex filters, can be used standalone or with Grid | Pivot
+
+
+
+
+
+
+
+
+@edition:pro

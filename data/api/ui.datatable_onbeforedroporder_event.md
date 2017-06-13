@@ -12,3 +12,4 @@ $$("dtable1").attachEvent("onBeforeDropOrder",function(itemId,tInd,event,details
     // some code 
     return true;
 });
+

@@ -4,18 +4,13 @@ Sidebar
 External resources
 -------------------
 
-- This component isn't included into the library package and should be taken from [https://github.com/webix-hub/components](https://github.com/webix-hub/components)
+- {{note This component isn't included into the library package and should be taken from [https://github.com/webix-hub/components](https://github.com/webix-hub/components)}}
 - There is an online sample at [docs.webix.com/samples](http://docs.webix.com/samples/28_sidemenu/01_sidebar.html)
 
 Overview
 ----------
 
 Webix Sidebar is a datatree/index.md-based component which is used for creating menus with hierarchical structure. 
-
-{{note
-JS files for Sidebar menu isn't included into Webix lib package and should be taken from 
-[https://github.com/webix-hub/components](https://github.com/webix-hub/components).
-}}
 
 Sidebar menu can be collapsed into a navigation bar with only icons of the menu items visible. On hovering an icon, a popup with the related item is shown with its sub-items.
 

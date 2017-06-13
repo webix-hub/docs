@@ -124,7 +124,7 @@ Methods
 - api/link/ui.excelviewer_showitem.md - 'scrolls' the table to make the specified row visible
 - api/link/ui.excelviewer_showitembyindex.md - 'scrolls' the table to make the specified row visible
 - api/link/ui.excelviewer_showoverlay.md - shows the overlay message over the body of DataTable
-- api/ui.excelviewer_showsheet.md - 
+- api/ui.excelviewer_showsheet.md - switches to the specified sheet
 - api/link/ui.excelviewer_sort.md - sorts datastore
 - api/link/ui.excelviewer_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.excelviewer_unbind.md - breaks "bind" link

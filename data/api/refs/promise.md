@@ -30,7 +30,7 @@ my_promise.then(function(realdata){
 - api/promise_defer.md - creates a new instance of a deferred object (a `promise`)
 - api/promise_fcall.md - calls a function and resolves as a promise
 - api/promise_nfcall.md - calls a node-style function (eg. expects callback as function(err, callback))
-- api/promise_reject.md - creates a rejected a promise
+- api/promise_reject.md - creates and  rejects a promise
 - api/promise_resolve.md - creates and resolves a promise with the specified value
 }}
 

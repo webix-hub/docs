@@ -36,7 +36,7 @@ Properties
 - api/link/ui.filetable_form_config.md - linked form
 - api/link/ui.filetable_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.filetable_header_config.md - enables/disables the header in DataTable (enabled, by default)
-- api/link/ui.filetable_headerrowheight_config.md - sets the heigth of the header row
+- api/link/ui.filetable_headerrowheight_config.md - sets the height of the header row
 - api/link/ui.filetable_headermenu_config.md - adds a headermenu to control column visibility
 - api/link/ui.filetable_height_config.md - sets the height of the component
 - api/link/ui.filetable_hidden_config.md - defines whether the view will be hidden initially

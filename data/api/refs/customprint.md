@@ -2,6 +2,12 @@ CustomPrint
 =============
 
 
+Creates custom HTML during printing for widgets that are not fully rendered in the workflow
+
+
+
+
+
 <div class='h2'>Other</div>
 
 
