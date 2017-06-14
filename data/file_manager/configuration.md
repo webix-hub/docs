@@ -530,8 +530,11 @@ The properties of actions are the following:
 - batch - {string} group that menu item belongs to. Possible value are:
 	- *"item"* - the item will be seen only for data items not empty space;
     - *"root"* - the item will be seen for the root item only;
-    - if batch is not set, the item will be shown for empty space and all items other than root
+    - *"folder"* - the item will be shown for folders only;
+    - *"file"* - the item will be shown for files only;
+    - *"empty"* - the item will be shown for empty space and all items other than root
 - value - {string} the action title 
+- $template  - {string}  -optional, the $template:"Separator" settings draws a separating line 
 
 You can reload data using the following approach:
 
@@ -547,6 +550,28 @@ The api/link/ui.proto_add.md method allows adding a new action to menu:
 ~~~js
 actions.add({id: "myAction", icon: "file", value: "My Action"});
 ~~~
+
+For instance, you can add the initial "download" option when Filemanager is ready:
+
+~~~js
+view:"filemanager",
+ready:function(){
+	this.getMenu().add({
+		id: "download",
+		icon: "webix_icon fa-download",
+		value: "Download",
+		batch: "file"
+}, 0);
+~~~
+
+{{sample 64_file_manager/03_customization/09_menu_options.html}}
+
+On clicking any menu item, Filemanager method defined by `action.method` or `action.id` is called. 
+
+In the snippet above, Filemanager api/ui.filemanager_download.md is called. If there isn't any method in Filemanager to match id or method of your custom item, 
+you will need to add it to the component prototype. 
+
+
 
 It is possible to set a click handler for the added action using api/mouseevents_onitemclick_event.md event handler:
 

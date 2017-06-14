@@ -1,10 +1,6 @@
 printPPI
 =============
 
-@todo:
-	check 
-
-
 @short:
 	sets  default pixel per inch (ppi) ratio for printing
 
@@ -16,5 +12,7 @@ webix.env.printPPI = 96;
 
 @template:	api_config
 @descr:
+
+The option is used to define the default PPI used during [webix.print()](api/_print.md) call. 
 
 

@@ -34,6 +34,7 @@ Updates
 - ability to create [rejected](api__promise_reject.html) and [resolved](api/promise_resolve.md) promises with webix.promise interface
 - advanced settings for exporting hierarchical components to [Excel](desktop__data_components_export.html#customizingexporttoexcel) 
 and [CSV](desktop/export_csv.md#customizingexporttocsv)
+- extended touch auto detection and enhancements for Datatable and Treetable on touch devices
 
 Fixes
 ---------

@@ -5,11 +5,11 @@ print
 @todo:
 	check and complete
 @short:
-	prints a view or its part according to the specified settings
+	prints a view according to the specified settings
 
 @params:
 
-- view 				object,id		the object or id of the view to print
+- view 				object, id		the object or id of the view to print
 - options			object			a set of printing options, see the list below 
 
 
@@ -28,23 +28,23 @@ webix.print($$("datatable1"), {mode:"landscape"});
 
 <h3>Common printing options</h3> (for all widgets)
 
-- **paper** - (*string*) "a3", "a4" (default), "letter"
-- **mode** - (*string*) "portrait" (default), "landscape"
+- **paper** - (*string*) paper size. Possible values are "a3", "a4" (default), "letter"
+- **mode** - (*string*) orientation. Possible values are "portrait" (default), "landscape"
 - **margin**  -  margin for printed pages, can be of two types: 
-	- *number*,
-	- *object* with any of the properties: *top*, *right*, *bottom*, *left* containing number
+	- *number* to set the same margin from all sides
+	- *object* with any of the properties: *top*, *right*, *bottom*, *left* containing number to set margins separately
 - **docHeader** - (*string*) document header on the first page before the printed view (independent of the browser print header)
 - **docFooter** - (*string*) document footer on the last page after the printed view (independent of the browser print header)
 
-There are also additional properties that vary depending on the type of the component.
+There are also additional properties that vary depending on the component.
 
 <h3>For data components</h3>
  
-- **scroll** - (*boolean*) false (default), true
+- **scroll** - (*boolean*) if *true*, prints only a visible part of a scrolled component. False by default.
  
 <h3>For datatable, dataview, spreadsheet, X-list</h3> 
  
-- **fit** - (*string*) "page" (default), "data" 
+- **fit** - (*string*) adjusts printed component either to page width ("page", default), or to the component width ("data"). 
  
 <h3>For datatable and spreadsheet</h3>
  
@@ -61,10 +61,10 @@ There are also additional properties that vary depending on the type of the comp
  
 - **footer** - (*boolean*) renders footer for datatable, if exists. True by default
  
-<h3>For spreadsheet</h3>
+<h3>For spreadsheet only</h3>
  
 - **data** - (*string*) defines which data to print 
 	- "all" - all data from all sheets
 	- "current" - all data from the current sheet (default)
 	- "selection" - selected data from current sheet
-- **sheetnames** - (*boolean*) renders name of sheets for each datatable. True by default.
+- **sheetnames** - (*boolean*) renders name of sheets for each table. True by default.

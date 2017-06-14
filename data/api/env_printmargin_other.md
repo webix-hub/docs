@@ -1,12 +1,8 @@
 printMargin
 =============
 
-@todo:
-	check 
-
-
 @short:
-	sets the margin for printed pages
+	sets the margin for printed pages in pixels
 
 @type:number
 
