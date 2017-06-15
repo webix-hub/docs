@@ -17,3 +17,6 @@ UnitList CSS
 
 
 Read more about [UnitList](desktop/unitlist.md)
+
+@seolinktop: [javascript dashboard framework](https://webix.com)
+@seolink: [list ui](https://webix.com/widget/list/)

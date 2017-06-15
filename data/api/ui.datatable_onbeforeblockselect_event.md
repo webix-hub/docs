@@ -22,3 +22,6 @@ $$("dt").attachEvent("onBeforeBlockSelect", function(start, end, isFinal){
 return false to block selection
 
 it possible to modify start and end object to modify result of blockselection
+
+@seolinktop: [web development library](https://webix.com)
+@seolink: [html5 datatable](https://webix.com/widget/datatable/)

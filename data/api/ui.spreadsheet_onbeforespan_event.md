@@ -21,3 +21,7 @@ $$("ssheet").attachEvent("onBeforeSpan", function(row, column, size){
 @template:	api_event
 @descr:
 return false to block cell's merging
+
+
+@seolinktop: [javascript dashboard framework](https://webix.com)
+@seolink: [web spreadsheet](https://webix.com/spreadsheet/)

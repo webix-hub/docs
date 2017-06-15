@@ -9,3 +9,6 @@ $$('pivot').add({
   other:123
 }, 0);
 ~~~
+
+@seolinktop: [mvc library](https://webix.com)
+@seolink: [javascript pivot](https://webix.com/pivot/)

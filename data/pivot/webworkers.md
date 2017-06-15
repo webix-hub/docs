@@ -43,3 +43,6 @@ webix.ui({
 ###An error "An object could not be cloned" occurs 
 
 This error may occur if besides static parameters config also contains JS functions which can't be passed to worker.
+
+@seolinktop: [javascript framework](https://webix.com)
+@seolink: [pivot table web](https://webix.com/pivot/)

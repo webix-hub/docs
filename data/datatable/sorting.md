@@ -287,3 +287,6 @@ $$("datatable1").sort({
 
 @keyword:
 	sort
+
+@seolinktop: [mvc library](https://webix.com)
+@seolink: [javascript datagrid](https://webix.com/widget/datatable/)

@@ -86,3 +86,7 @@ Let's consider what we do in the code above:
 *"data->onStoreUpdated"*  is equal to *$$('mytable').data.attachEvent('onStoreUpdated', function(){...})*
 3. The api/datastore_onstoreload_event.md event fires after data is changed in the data store.
 4. The api/datastore_each.md method allows us to iterate through the collection of data items.
+
+
+@seolinktop: [javascript ui framework](https://webix.com)
+@seolink: [datatable html](https://webix.com/widget/datatable/)

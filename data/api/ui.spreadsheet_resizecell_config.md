@@ -19,3 +19,7 @@ webix.ui({
 @descr:
 
 
+
+
+@seolinktop: [mvc library](https://webix.com)
+@seolink: [javascript spreadsheet library](https://webix.com/spreadsheet/)

@@ -86,3 +86,7 @@ Properties
 - api/link/ui.spreadsheet_visiblebatch_config.md
 - api/link/ui.spreadsheet_width_config.md
 
+
+
+@seolinktop: [html5 framework](https://webix.com)
+@seolink: [web spreadsheet](https://webix.com/spreadsheet/)

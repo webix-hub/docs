@@ -180,3 +180,7 @@ Properties
 - api/link/ui.excelviewer_width_config.md
 - api/link/ui.excelviewer_ycount_config.md
 
+
+
+@seolinktop: [javascript dashboard framework](https://webix.com)
+@seolink: [javascript excel reader](https://webix.com/widget/excel_viewer/)

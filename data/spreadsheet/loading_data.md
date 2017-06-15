@@ -375,3 +375,6 @@ var states = $$("ssheet").serialize({math: false});
 
 
 @spellcheck:nodejs
+
+@seolinktop: [js framework](https://webix.com)
+@seolink: [javascript spreadsheet library](https://webix.com/spreadsheet/)

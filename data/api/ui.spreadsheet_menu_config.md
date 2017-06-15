@@ -22,3 +22,6 @@ spreadsheet/config.md#addingmenu
 
 @relatedsample:
 65_spreadsheet/01_basic/05_menu.html
+
+@seolinktop: [html5 library](https://webix.com)
+@seolink: [spreadsheet javascript library](https://webix.com/spreadsheet/)

@@ -213,3 +213,6 @@ Related events
 
 @keyword:
 	start
+
+@seolinktop: [web development library](https://webix.com)
+@seolink: [javascript datatables](https://webix.com/widget/datatable/)

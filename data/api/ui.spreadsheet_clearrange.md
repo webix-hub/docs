@@ -20,3 +20,6 @@ The *type* object can have two attributes:
 
 - *values* - (boolean) true by default, to clear cell values
 - *styles* - (boolean) true by default, to clear cell styles
+
+@seolinktop: [ui widget library](https://webix.com)
+@seolink: [spreadsheet javascript library](https://webix.com/spreadsheet/)

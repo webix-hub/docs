@@ -66,3 +66,6 @@ var lineChart =  new WebixChart({
 <br>
 
 <img src="api/eventRadius_property_02.png"/>
+
+@seolinktop: [html5 framework](https://webix.com)
+@seolink: [javascript charting](https://webix.com/widget/charts/)

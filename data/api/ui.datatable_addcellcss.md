@@ -28,3 +28,6 @@ $$("mytable").addCellCss(152, "years", "css_class_name");
 	datatable/styling.md
     
     
+
+@seolinktop: [javascript framework](https://webix.com)
+@seolink: [javascript datatable](https://webix.com/widget/datatable/)

@@ -27,3 +27,7 @@ api/ui.spreadsheet_deletecolumn.md
 api/ui.spreadsheet_getcolumn.md
 api/ui.spreadsheet_hidecolumn.md
 api/ui.spreadsheet_iscolumnvisible.md
+
+
+@seolinktop: [popular javascript framework](https://webix.com)
+@seolink: [javascript spreadsheet library](https://webix.com/spreadsheet/)

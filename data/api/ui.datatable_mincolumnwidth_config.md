@@ -22,3 +22,6 @@ webix.ui({
 @descr:
 
 By default, the parameter is 20px.
+
+@seolinktop: [open source html5 framework](https://webix.com)
+@seolink: [datatable js](https://webix.com/widget/datatable/)

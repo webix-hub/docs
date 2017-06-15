@@ -52,3 +52,6 @@ webix.ui({
 
 
 @spellcheck:Tos
+
+@seolinktop: [javascript ui components library](https://webix.com)
+@seolink: [web spreadsheet](https://webix.com/spreadsheet/)

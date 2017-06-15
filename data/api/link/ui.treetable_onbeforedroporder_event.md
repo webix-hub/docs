@@ -12,3 +12,6 @@ $$("dtable1").attachEvent("onBeforeDropOrder",function(itemId,tInd,event,details
     // some code 
     return true;
 });
+
+@seolinktop: [javascript ui framework](https://webix.com)
+@seolink: [tree table](https://webix.com/widget/treetable/)

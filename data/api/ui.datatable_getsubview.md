@@ -19,3 +19,7 @@ $$("mydatatable").getSubView(id);
 @template:	api_method
 @descr:
 
+
+
+@seolinktop: [web control library](https://webix.com)
+@seolink: [datatable js](https://webix.com/widget/datatable/)

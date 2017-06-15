@@ -24,3 +24,7 @@ var accordion = webix.ui({
 
 - [Overview of Accordion Widget](desktop/accordion.md)
 - [Samples](http://docs.webix.com/samples/01_layout/index.html)
+
+
+@seolinktop: [html5 framework](https://webix.com)
+@seolink: [javascript accordion](https://webix.com/widget/accordion/)

@@ -21,3 +21,7 @@ webix.ui({
 - linear		sets a linear scale		
 
 
+
+
+@seolinktop: [easy javascript framework](https://webix.com)
+@seolink: [chart widget](https://webix.com/widget/charts/)

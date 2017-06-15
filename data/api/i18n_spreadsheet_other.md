@@ -43,3 +43,7 @@ spreadsheet/localization.md
 @relatedapi:
 	api/i18n_setlocale.md
 
+
+
+@seolinktop: [js framework](https://webix.com)
+@seolink: [spreadsheet javascript library](https://webix.com/spreadsheet/)

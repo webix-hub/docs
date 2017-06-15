@@ -114,3 +114,7 @@ In the above example we have passed one parameter to the handler, the cell range
 The "FIRST" function returns the value of the first cell.
 
 {{sample 65_spreadsheet/01_basic/03_math.html}}
+
+
+@seolinktop: [popular javascript framework](https://webix.com)
+@seolink: [javascript spreadsheet library](https://webix.com/spreadsheet/)

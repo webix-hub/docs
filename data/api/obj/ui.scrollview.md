@@ -26,3 +26,6 @@ var scrollview = webix.ui({
 
 - [Overview of the Scrollview Widget](desktop/scrollview.md)
 - [Samples](http://docs.webix.com/samples/04_template/index.html)
+
+@seolinktop: [popular javascript framework](https://webix.com)
+@seolink: [javascript window scroll](https://webix.com/widget/scrollview/)

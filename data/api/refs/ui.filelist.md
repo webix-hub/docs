@@ -264,3 +264,7 @@ dummy stub
 - api/refs/ui.filelist_events.md
 - api/refs/ui.filelist_others.md
 
+
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [list ui](https://webix.com/widget/list/)

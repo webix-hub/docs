@@ -59,3 +59,7 @@ Note that there's a built-in possibility to edit data with DataView. You should 
 - [Redefinition of the Components](desktop/redefinition.md)
 - [DataView CSS Image Map](desktop/dataview_css.md)
 
+
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [dataview ui](https://webix.com/widget/dataview/)

@@ -223,3 +223,7 @@ var spreadsheet = webix.ui({
 - api/refs/ui.spreadsheet_events.md
 - api/refs/ui.spreadsheet_others.md
 
+
+
+@seolinktop: [mvc library](https://webix.com)
+@seolink: [javascript spreadshee](https://webix.com/spreadsheet/)

@@ -31,3 +31,7 @@ webix.ui({
 - If your layout object has a **cells** property, it automatically becomes a multiview, so you don't have to specify the view type.
 - Switching between cells is implemented with specialized buttons ([tabbar](desktop/tabbar.md) and [segmented](desktop/segmented.md)), [tabview](desktop/tabview.md) or 
 dedicated functions. 
+
+
+@seolinktop: [javascript component library](https://webix.com)
+@seolink: [multi view](https://webix.com/widget/multiview/)

@@ -12,3 +12,6 @@ Operations with Data
 - datatable/editing.md
 - datatable/controls.md
 }}
+
+@seolinktop: [js framework](https://webix.com)
+@seolink: [javascript data table](https://webix.com/widget/datatable/)

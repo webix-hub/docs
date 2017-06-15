@@ -175,3 +175,7 @@ $$("carousel").getActiveIndex();
 - [Multiview](desktop/multiview.md)
 - [Scrollview](desktop/scrollview.md)
 - [Carousel CSS Image Map](desktop/carousel_css.md)
+
+
+@seolinktop: [mvc library](https://webix.com)
+@seolink: [javascript image slideshow](https://webix.com/widget/carousel/)

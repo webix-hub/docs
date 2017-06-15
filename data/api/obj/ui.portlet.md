@@ -27,3 +27,6 @@ var portlet = webix.ui({
 
 - [Overview of the Portlet Widget](desktop/portlet.md)
 - [Samples](http://docs.webix.com/samples/60_pro/09_portlet/index.html)
+
+@seolinktop: [ui library](https://webix.com)
+@seolink: [javascript drag and drop library](https://webix.com/widget/portlet/)

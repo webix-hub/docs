@@ -41,3 +41,6 @@ The method is used to present multiple graphs on a chart. It's an analog to the 
 
 
 If you add to the chart graphs of the same type, you can omit the **type** attribute.
+
+@seolinktop: [html5 framework](https://webix.com)
+@seolink: [javascript charting](https://webix.com/widget/charts/)

@@ -17,3 +17,7 @@ $$("ssheet").attachEvent("onStyleSet",function(name, value){
 @template:	api_event
 @descr:
 
+
+
+@seolinktop: [popular javascript framework](https://webix.com)
+@seolink: [web based spreadsheet](https://webix.com/spreadsheet/)

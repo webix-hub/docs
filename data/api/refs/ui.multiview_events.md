@@ -15,3 +15,7 @@ Events
 - api/ui.multiview_onviewchange_event.md
 
 
+
+
+@seolinktop: [html5 ui library](https://webix.com)
+@seolink: [multiview control](https://webix.com/widget/multiview/)

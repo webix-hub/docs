@@ -23,3 +23,6 @@ $$("mydatatable").closeSub(id);
 @descr:
 
 @edition:pro
+
+@seolinktop: [lightweight js framework](https://webix.com)
+@seolink: [html5 datatable](https://webix.com/widget/datatable/)

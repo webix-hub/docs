@@ -27,3 +27,6 @@ The property is applicable only to **line**, **bar** charts
 }}
 
 As a string, the property can have value *'auto'*. Actually, it's the default value of the property.
+
+@seolinktop: [html5 ui library](https://webix.com)
+@seolink: [javascript graph visualization](https://webix.com/widget/charts/)

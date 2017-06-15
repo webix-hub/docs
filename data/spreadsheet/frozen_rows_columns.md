@@ -29,3 +29,6 @@ $$("ssheet").freezeRows(3);
 ~~~
 
 Without parameters the method unfreezes the frozen rows, if there are any.
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [javascript spreadshee](https://webix.com/spreadsheet/)

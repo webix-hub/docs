@@ -39,3 +39,6 @@ The property is used to present multiple graphs on a chart. Graphs are specified
 
 
 If you add to the chart graphs of the same type, you can omit the **type** attribute.
+
+@seolinktop: [widget library](https://webix.com)
+@seolink: [javascript graph library](https://webix.com/widget/charts/)

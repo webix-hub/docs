@@ -31,3 +31,7 @@ desktop/portlet.md#modesofmovingportlets
 @relatedsample:
 60_pro/09_portlet/01_portlet_replace.html
 60_pro/09_portlet/05_one_direction.html
+
+
+@seolinktop: [javascript website framework](https://webix.com)
+@seolink: [javascript drag and drop library](https://webix.com/widget/portlet/)

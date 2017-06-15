@@ -22,3 +22,7 @@ The func parameter takes two arguments:
 
 - list - (object) KanbanList object
 - status - (string) the list's status
+
+
+@seolinktop: [javascript website framework](https://webix.com)
+@seolink: [javascript list](https://webix.com/widget/list/)

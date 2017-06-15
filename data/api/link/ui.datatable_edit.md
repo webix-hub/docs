@@ -30,3 +30,7 @@ webix.ui({
 @related: 
 	datatable/editing.md
     desktop/edit.md
+
+
+@seolinktop: [javascript dashboard framework](https://webix.com)
+@seolink: [download datatable](https://webix.com/widget/datatable/)

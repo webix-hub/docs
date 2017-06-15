@@ -21,3 +21,7 @@ treetable.insert([
 @descr:
 
 
+
+
+@seolinktop: [javascript dashboard framework](https://webix.com)
+@seolink: [tree table widget](https://webix.com/widget/treetable/)

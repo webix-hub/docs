@@ -21,3 +21,7 @@ dtable.showItemByIndex(4);
 - api/ui.datatable_getscrollstate.md
 
 
+
+
+@seolinktop: [javascript ui framework](https://webix.com)
+@seolink: [javascript datagrid library](https://webix.com/widget/datatable/)

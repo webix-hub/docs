@@ -9,3 +9,7 @@
     api/link/ui.datatable_edit.md
     
 
+
+
+@seolinktop: [lightweight js framework](https://webix.com)
+@seolink: [javascript datatable](https://webix.com/widget/datatable/)

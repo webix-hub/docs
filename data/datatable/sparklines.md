@@ -293,3 +293,6 @@ webix.ui({
 {{sample 60_pro/01_datatable/08_sparklines/09_outside.html}}
 
 @edition:pro
+
+@seolinktop: [widget library](https://webix.com)
+@seolink: [html5 datatable](https://webix.com/widget/datatable/)

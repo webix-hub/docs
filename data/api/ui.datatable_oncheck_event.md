@@ -30,3 +30,7 @@ Checkbox state is **0** or **1** by default, if other is not stated by the **che
 {id:"ch", template:"{common.checkbox()}", checkValue:"On", uncheckValue:"Off"}
 ~~~
 
+
+
+@seolinktop: [web control library](https://webix.com)
+@seolink: [javascript datagrid](https://webix.com/widget/datatable/)

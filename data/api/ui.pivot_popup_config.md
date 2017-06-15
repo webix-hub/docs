@@ -20,3 +20,7 @@ webix.ui({
 @related:
 pivot/customization.md#popupcustomization
 
+
+
+@seolinktop: [popular javascript framework](https://webix.com)
+@seolink: [javascript pivot table](https://webix.com/pivot/)

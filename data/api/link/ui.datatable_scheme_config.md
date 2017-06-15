@@ -16,3 +16,7 @@ dtable.add();//will add {name:"Default name", age:16} record
 
 @relatedsample:
 	15_datatable/20_templates/06_dates_string.html
+
+
+@seolinktop: [js framework](https://webix.com)
+@seolink: [javascript data table](https://webix.com/widget/datatable/)

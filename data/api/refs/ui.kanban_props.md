@@ -82,3 +82,7 @@ Properties
 - api/link/ui.kanban_visiblebatch_config.md
 - api/link/ui.kanban_width_config.md
 
+
+
+@seolinktop: [web development library](https://webix.com)
+@seolink: [kanban board tool](https://webix.com/kanban/)

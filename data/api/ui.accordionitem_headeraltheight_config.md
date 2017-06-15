@@ -37,3 +37,7 @@ webix.ui({
 @descr:
 
 
+
+
+@seolinktop: [html5 ui library](https://webix.com)
+@seolink: [javascript accordion](https://webix.com/widget/accordion/)

@@ -186,3 +186,7 @@ by syncing column data with that of a <a href="desktop/nonui_objects.md">dataCol
 </table>
 
 
+
+
+@seolinktop: [ui library](https://webix.com)
+@seolink: [datatable html](https://webix.com/widget/datatable/)

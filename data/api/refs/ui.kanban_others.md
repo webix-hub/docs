@@ -25,3 +25,7 @@ Others
 - api/link/ui.kanban_waitdata_other.md
 
 
+
+
+@seolinktop: [html5 framework](https://webix.com)
+@seolink: [javascript kanban board](https://webix.com/kanban/)

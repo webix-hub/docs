@@ -28,3 +28,6 @@ $$("ss1").setCellFilter(2,2, "B3:B7");
 
 @related:
 spreadsheet/cell_content.md#filteringcellsvalues
+
+@seolinktop: [javascript web framework](https://webix.com)
+@seolink: [web based spreadsheet](https://webix.com/spreadsheet/)

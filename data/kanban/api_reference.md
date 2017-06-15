@@ -36,3 +36,7 @@ parameters:
 - function - a function that will be called for each Kanban list, takes two arguments:  
  - list - KanbanList object
  - status - the list's status
+
+
+@seolinktop: [mvc library](https://webix.com)
+@seolink: [kanban board](https://webix.com/kanban/)

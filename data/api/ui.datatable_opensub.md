@@ -32,3 +32,6 @@ $$("mydatatable").openSub(id);
 @descr:
 
 @edition:pro
+
+@seolinktop: [ui widget library](https://webix.com)
+@seolink: [javascript datatable](https://webix.com/widget/datatable/)

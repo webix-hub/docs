@@ -44,3 +44,6 @@ control.uncheck();
 //get master checkbox state
 var state = control.isChecked();
 ~~~
+
+@seolinktop: [javascript website framework](https://webix.com)
+@seolink: [datagrid javascript](https://webix.com/widget/datatable/)

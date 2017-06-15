@@ -19,3 +19,7 @@ var filters = $$("pivot").getFilterView();
 @template:	api_method
 @descr:
 
+
+
+@seolinktop: [javascript dashboard framework](https://webix.com)
+@seolink: [pivot table web](https://webix.com/pivot/)

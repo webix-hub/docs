@@ -45,3 +45,7 @@ var config = {
 
 @relatedapi:
 - api/ui.pivot_setstructure.md
+
+
+@seolinktop: [ui component library](https://webix.com)
+@seolink: [javascript pivot grid](https://webix.com/pivot/)

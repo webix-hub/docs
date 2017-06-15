@@ -53,3 +53,7 @@ Others
 - api/link/ui.dataview_waitdata_other.md
 
 
+
+
+@seolinktop: [javascript ui library](https://webix.com)
+@seolink: [data view html5](https://webix.com/widget/dataview/)

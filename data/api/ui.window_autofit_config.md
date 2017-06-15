@@ -12,3 +12,7 @@ autofit
 
 *True* by default. 
 
+
+
+@seolinktop: [ui widget library](https://webix.com)
+@seolink: [javascript window](https://webix.com/widget/window/)

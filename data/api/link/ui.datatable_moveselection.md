@@ -16,3 +16,6 @@ modes)
     api/ui.datatable_clearselection.md
 @related:
 	datatable/selection.md
+
+@seolinktop: [html5 ui library](https://webix.com)
+@seolink: [datagrid javascript](https://webix.com/widget/datatable/)

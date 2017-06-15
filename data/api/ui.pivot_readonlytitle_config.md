@@ -24,3 +24,6 @@ pivot/configuration.md#settingreadonlymode
 
 @relatedsample:
 61_pivot/01_init/10_readonly.html
+
+@seolinktop: [ui component library](https://webix.com)
+@seolink: [javascript pivot table](https://webix.com/pivot/)

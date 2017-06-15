@@ -22,3 +22,7 @@ $$('list').attachEvent('onAfterContextMenu', function(id, e, node){
 @template:	api_event
 @descr:
 
+
+
+@seolinktop: [javascript framework](https://webix.com)
+@seolink: [html5 context menu](https://webix.com/widget/contextmenu/)

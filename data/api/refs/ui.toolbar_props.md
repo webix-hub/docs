@@ -76,3 +76,7 @@ Properties
 - api/link/ui.toolbar_visiblebatch_config.md
 - api/link/ui.toolbar_width_config.md
 
+
+
+@seolinktop: [widget library](https://webix.com)
+@seolink: [toolbar js](https://webix.com/widget/toolbar/)

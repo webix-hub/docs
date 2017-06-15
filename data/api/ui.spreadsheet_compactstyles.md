@@ -16,3 +16,6 @@ $$("ss1").compactStyles();
 
 @relatedsample:
 65_spreadsheet/02_api/18_clear_styles.html
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [spreadsheet javascript library](https://webix.com/spreadsheet/)

@@ -14,3 +14,6 @@ webix.ui({
 		{ header:"col 2", body:"content 2", width:250}
 	]
 });
+
+@seolinktop: [js frameworks](https://webix.com)
+@seolink: [javascript accordion menu](https://webix.com/widget/accordion/)

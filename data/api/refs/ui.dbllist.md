@@ -157,3 +157,7 @@ var double_list = webix.ui({
 - api/refs/ui.dbllist_events.md
 - api/refs/ui.dbllist_others.md
 
+
+
+@seolinktop: [mvc library](https://webix.com)
+@seolink: [javascript library list](https://webix.com/widget/list/)

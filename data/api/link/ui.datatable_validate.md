@@ -20,3 +20,7 @@ Invalid rows are displayed with the "webix_invalid" marker.
 	15_datatable/25_validation/01_existing_data.html  
 	15_datatable/25_validation/02_complex_rule.html 
 	15_datatable/25_validation/06_per_cell_marks.html
+
+
+@seolinktop: [js framework](https://webix.com)
+@seolink: [javascript data table](https://webix.com/widget/datatable/)

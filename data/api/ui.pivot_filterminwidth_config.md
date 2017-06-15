@@ -16,3 +16,7 @@ webix.ui({
 @descr:
 The default value is 150.
 
+
+
+@seolinktop: [javascript ui components library](https://webix.com)
+@seolink: [javascript pivot grid](https://webix.com/pivot/)

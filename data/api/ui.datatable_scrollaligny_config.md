@@ -29,3 +29,7 @@ webix.ui({
 @descr:
 
 By default, the parameter is enabled.
+
+
+@seolinktop: [js framework](https://webix.com)
+@seolink: [datagrid javascript](https://webix.com/widget/datatable/)

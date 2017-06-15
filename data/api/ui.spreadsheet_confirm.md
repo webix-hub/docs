@@ -26,3 +26,7 @@ $$("ssheet").confirm({
 
 
 
+
+
+@seolinktop: [javascript dashboard framework](https://webix.com)
+@seolink: [spreadsheet](https://webix.com/spreadsheet/)

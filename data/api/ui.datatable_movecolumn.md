@@ -23,3 +23,7 @@ $$("mytable").moveColumn("year", 0);
     api/ui.datatable_showcolumn.md
 @related:
 	datatable/columns_configuration.md
+
+
+@seolinktop: [html5 ui library](https://webix.com)
+@seolink: [datagrid in html5](https://webix.com/widget/datatable/)

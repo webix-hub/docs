@@ -99,3 +99,6 @@ Indonesia, 237 556 363, 2010
 
 @keyword:
 	data, format, type
+
+@seolinktop: [ui library](https://webix.com)
+@seolink: [data table](https://webix.com/widget/datatable/)

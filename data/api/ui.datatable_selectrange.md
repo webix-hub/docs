@@ -52,3 +52,7 @@ dtable.selectRange(column_id, end_column_id);
 
 - column_id -  (<i>string/int</i>) the id of the first selected column in the selection range
 - end_column_id -  (<i>string/int</i>) the id of the last selected column in the selection range
+
+
+@seolinktop: [popular javascript framework](https://webix.com)
+@seolink: [datagrid in html5](https://webix.com/widget/datatable/)

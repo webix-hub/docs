@@ -25,3 +25,7 @@ webix.ui({
 @descr:
 
 
+
+
+@seolinktop: [best ui framework](https://webix.com)
+@seolink: [javascript image slider](https://webix.com/widget/carousel/)

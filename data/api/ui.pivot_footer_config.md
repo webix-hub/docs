@@ -24,3 +24,6 @@ api/ui.pivot_totalcolumn_config.md
 
 @relatedsample:
 61_pivot/03_table_api/01_total_column.html
+
+@seolinktop: [javascript dashboard framework](https://webix.com)
+@seolink: [pivot table web](https://webix.com/pivot/)

@@ -21,3 +21,7 @@ autoheight
 With autoheight enabled, the component takes the minimal spase enough for displaying its contents. 
 
 
+
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [form control](https://webix.com/widget/form/)

@@ -11,3 +11,7 @@ dtable.editStop();
 	api/link/ui.datatable_editcancel.md
 
 
+
+
+@seolinktop: [js framework](https://webix.com)
+@seolink: [javascript data table](https://webix.com/widget/datatable/)

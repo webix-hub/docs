@@ -36,3 +36,6 @@ The event is also called for Pivot Table on "filters" view initialization and fo
 @related:
 pivot/customization.md#innerview
 pivot/filters.md#changingparentofpivotfilters
+
+@seolinktop: [javascript ui library](https://webix.com)
+@seolink: [javascript pivot](https://webix.com/pivot/)

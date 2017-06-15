@@ -14,3 +14,7 @@ colormap
 
 When bar colors not defined, chart will take one of possible coloring strategies and will use it for bar coloring. 
 Default one is "RAINBOW"
+
+
+@seolinktop: [js framework](https://webix.com)
+@seolink: [chart widget](https://webix.com/widget/charts/)

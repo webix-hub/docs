@@ -17,3 +17,6 @@ HTML element of a cell with these row and column IDs:
 ~~~js
 $$("mydatatable").getItemNode({ row: 2, column:"title"});
 ~~~
+
+@seolinktop: [web control library](https://webix.com)
+@seolink: [datagrid in html5](https://webix.com/widget/datatable/)

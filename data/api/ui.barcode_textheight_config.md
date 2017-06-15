@@ -16,3 +16,7 @@ webix.ui({
 @descr:
 
 
+
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [barcode widget](https://webix.com/widget/barcode/)

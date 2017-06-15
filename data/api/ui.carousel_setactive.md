@@ -31,3 +31,7 @@ $$('carousel1').setActive("cell2");
 @descr:
 
 
+
+
+@seolinktop: [widget library](https://webix.com)
+@seolink: [javascript image slideshow](https://webix.com/widget/carousel/)

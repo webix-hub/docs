@@ -25,3 +25,7 @@ var datatable = webix.ui({
 
 - [Overview of the DataTable Widget](datatable/index.md)
 - [Samples](http://docs.webix.com/samples/15_datatable/index.html)
+
+
+@seolinktop: [javascript web framework](https://webix.com)
+@seolink: [datagrid in html5](https://webix.com/widget/datatable/)

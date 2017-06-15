@@ -25,3 +25,6 @@ desktop/dynamic_chart.md
 
 @relatedsample:
 08_chart/08_dynamic/08_dynamic_splinearea.html
+
+@seolinktop: [javascript dashboard framework](https://webix.com)
+@seolink: [javascript charts](https://webix.com/widget/charts/)

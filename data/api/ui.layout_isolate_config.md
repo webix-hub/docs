@@ -47,3 +47,6 @@ desktop/building_app_architecture.md#isolatingidsinsidelayouts
 
 @metadescr: Learn how you can use the isolate property for reusing the components ID's.
 @doctitle: The documentation page for the isolate property of Layout.
+
+@seolinktop: [ui component library](https://webix.com)
+@seolink: [javascript layout](https://webix.com/widget/layout/)

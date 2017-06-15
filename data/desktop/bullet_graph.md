@@ -115,3 +115,6 @@ webix.ui({
 
 
 @edition:pro
+
+@seolinktop: [web development library](https://webix.com)
+@seolink: [javascript bullet chart](https://webix.com/widget/bullet_chart/)

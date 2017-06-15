@@ -100,3 +100,7 @@ webix.ui({
 08_chart/04_pie_chart/04_donut.html
 }}
 
+
+
+@seolinktop: [best ui framework](https://webix.com)
+@seolink: [chart library](https://webix.com/widget/charts/)

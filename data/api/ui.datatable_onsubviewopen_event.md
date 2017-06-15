@@ -32,3 +32,7 @@ ID of the cell is an object with the following properties:
 
 @edition:pro
 
+
+
+@seolinktop: [ui component library](https://webix.com)
+@seolink: [javascript data grid](https://webix.com/widget/datatable/)

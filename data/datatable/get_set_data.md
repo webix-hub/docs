@@ -79,3 +79,7 @@ grid.mapSelection(function(value, row_id, column_id, row_ind, col_ind){
 {{sample 15_datatable/05_selection/07_map_selection.html }}
 
 For more on the mentioned and other related methods, see [API Reference](api/refs/ui.datatable.md).
+
+
+@seolinktop: [js frameworks](https://webix.com)
+@seolink: [javascript datatable](https://webix.com/widget/datatable/)

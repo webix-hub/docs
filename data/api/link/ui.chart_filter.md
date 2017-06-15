@@ -6,3 +6,6 @@
     
 @related: 
 	desktop/chart_operations.md#filterdata
+
+@seolinktop: [ui widget library](https://webix.com)
+@seolink: [javascript charting](https://webix.com/widget/charts/)

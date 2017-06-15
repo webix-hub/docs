@@ -90,3 +90,7 @@ To activate locale:
 
 {{sample 15_datatable/20_templates/08_locales.html }}
 
+
+
+@seolinktop: [html5 ui library](https://webix.com)
+@seolink: [web datagrid](https://webix.com/widget/datatable/)

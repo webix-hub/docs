@@ -26,3 +26,7 @@ $$('carousel1').showNext();
 @descr:
 
 
+
+
+@seolinktop: [web development library](https://webix.com)
+@seolink: [javascript image slider](https://webix.com/widget/carousel/)

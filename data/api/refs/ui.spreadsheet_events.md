@@ -43,3 +43,7 @@ Events
 - api/ui.spreadsheet_onstyleset_event.md
 
 
+
+
+@seolinktop: [widget library](https://webix.com)
+@seolink: [javascript spreadshee](https://webix.com/spreadsheet/)

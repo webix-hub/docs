@@ -24,3 +24,6 @@ $$("ssheet").attachEvent("onAfterSelect", function(id){
 
 @related:
 spreadsheet/handling_events.md
+
+@seolinktop: [javascript ui framework](https://webix.com)
+@seolink: [spreadsheet javascript library](https://webix.com/spreadsheet/)

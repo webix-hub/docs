@@ -64,3 +64,7 @@ Properties
 - api/link/ui.google-map_width_config.md
 - api/ui.google-map_zoom_config.md
 
+
+
+@seolinktop: [popular javascript framework](https://webix.com)
+@seolink: [google maps javascript api](https://webix.com/widget/maps/)

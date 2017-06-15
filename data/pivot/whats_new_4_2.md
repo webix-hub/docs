@@ -24,3 +24,6 @@ Fixes
 - filters bug with values
 - order of operations in header
 - default filter in visual dialog when "select" filter was disabled
+
+@seolinktop: [ui component library](https://webix.com)
+@seolink: [javascript pivot table](https://webix.com/pivot/)

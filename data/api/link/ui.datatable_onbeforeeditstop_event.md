@@ -7,3 +7,6 @@
     api/link/ui.datatable_onbeforeeditstart_event.md
 @related:
 	datatable/editing.md
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [javascript datatables](https://webix.com/widget/datatable/)

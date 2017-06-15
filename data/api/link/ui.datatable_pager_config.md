@@ -14,3 +14,6 @@
 	15_datatable/19_paging/02_db_data.html
 	15_datatable/19_paging/04_many_pagers.html
 	15_datatable/19_paging/07_localization.html
+
+@seolinktop: [ui library](https://webix.com)
+@seolink: [javascript datagrid](https://webix.com/widget/datatable/)

@@ -110,3 +110,6 @@ webix.ui({
 ~~~
 
 In the above example Pivot data will be initially filtered by the value "Argentina".
+
+@seolinktop: [js frameworks](https://webix.com)
+@seolink: [javascript pivot grid](https://webix.com/pivot/)

@@ -25,3 +25,6 @@ webix.toPNG($$("myDataTable"));
 ~~~
 
 {{sample 15_datatable/10_export/02_png.html}}
+
+@seolinktop: [web control library](https://webix.com)
+@seolink: [javascript datatables](https://webix.com/widget/datatable/)

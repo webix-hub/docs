@@ -26,3 +26,7 @@ desktop/localization.md
 desktop/pdfviewer.md
 
 @relatedapi:api/i18n_setlocale.md
+
+
+@seolinktop: [javascript dashboard framework](https://webix.com)
+@seolink: [javascript pdf viewer](https://webix.com/widget/html5_pdf_viewer/)

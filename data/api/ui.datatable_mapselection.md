@@ -32,3 +32,7 @@ Parameters of the callback function are:
 	api/ui.datatable_mapcells.md
 @relatedsample:
 	15_datatable/05_selection/07_map_selection.html
+
+
+@seolinktop: [javascript website framework](https://webix.com)
+@seolink: [javascript datatable](https://webix.com/widget/datatable/)

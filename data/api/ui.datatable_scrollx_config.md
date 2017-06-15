@@ -33,3 +33,7 @@ webix.ui({
 By default, horizontal scrolling is enabled. It will be disabled automatically, if you set the api/ui.datatable_autowidth_config.md parameter to <i>true</i>.
 
 
+
+
+@seolinktop: [mvc library](https://webix.com)
+@seolink: [datatable js](https://webix.com/widget/datatable/)

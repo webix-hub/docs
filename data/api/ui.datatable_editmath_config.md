@@ -18,3 +18,7 @@ webix.ui({
 @template:	api_config
 @descr:
 
+
+
+@seolinktop: [best ui framework](https://webix.com)
+@seolink: [javascript data grid](https://webix.com/widget/datatable/)

@@ -30,3 +30,7 @@ var accordionitem = webix.ui({
 - [Overview of Accordionitem](desktop/accordionitem.md)
 - [Samples](http://docs.webix.com/samples/80_docs/accordionitem.html)
 
+
+
+@seolinktop: [html5 framework](https://webix.com)
+@seolink: [accordion tabs](https://webix.com/widget/accordion/)

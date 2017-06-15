@@ -26,3 +26,7 @@ $$("mymenu").attachEvent("onItemClick", function(id){
 @template:	api_method
 @descr:
 
+
+
+@seolinktop: [mvc library](https://webix.com)
+@seolink: [javascript menu library](https://webix.com/widget/menu/)

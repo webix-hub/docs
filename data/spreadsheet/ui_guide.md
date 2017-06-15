@@ -431,3 +431,6 @@ The full code for all toolbar elements is given [in a separate article](spreadsh
 
 @index: 
 - spreadsheet/all_toolbar_elements.md
+
+@seolinktop: [easy javascript framework](https://webix.com)
+@seolink: [web spreadsheet](https://webix.com/spreadsheet/)

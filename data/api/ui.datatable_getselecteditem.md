@@ -23,3 +23,7 @@ var item = grid.getSelectedItem();
 
 In case of multiple item selection the method will return array of selected items anyway. 
 If array mode (<i>"as_array"</i>) is switched on, even one item will be put put into an array.
+
+
+@seolinktop: [mvc library](https://webix.com)
+@seolink: [web datagrid](https://webix.com/widget/datatable/)

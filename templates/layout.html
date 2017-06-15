@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="assets/docs.css?v=$$starttime">
+		<link rel="stylesheet" type="text/css" href="assets/theme.css?v=$$starttime">
+		<link rel="search" type="application/opensearchdescription+xml" title="$$doctitle" href="assets/opensearch.xml">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="initial-scale = 1.0" />
+		<meta name="description" content="$$metadescr" />
+		<link href="./assets/favicon.ico" rel="shortcut icon" />
+		<!--[if lte IE 9]>
+			<link rel="stylesheet" type="text/css" href="assets/ie.css" />
+		<![endif]-->
+		$$!header.html
+		<title>$$pagename $$pageprefix $$doctitle</title>
+	</head>
+<body class="page_$$pageclass">
+	$$analytic
+	<a name="top"></a>
+	
+	<div class='headerBox'>
+	<div class="header">
+		<div class='content'>
+			<a href='$$logo_http' class='top_logo'></a>
+			<div class='top_menu'>
+				<a href="$$samples_http$$samples_index">Samples</a>
+				<a href="$$forum_http">Forum</a>
+				<a href="$$support_http">Support</a>
+			</div>
+			<span><a href='$$docs_http' style="color:white">Documentation</a></span>
+		</div>
+	</div>
+	</div>
+
+	<div class="body">
+		<div class="content">
+		<div class="navigation">
+			<div id="doc_navigation">
+			<div class="search">
+				<form method="get" action="search.php">
+					<input type="text" accesskey="f" name="query" placeholder="Search the docs..." value="" autocomplete="off">
+						<button type="submit"><img src="assets/common/search_icon.png"/></button>
+				</form>
+			</div>
+			$$toc
+			</div>
+		</div>	  
+	  
+		<div class='doc' id='doc_content'>
+			$$todo
+			$$rendertime
+			$$data
+			<a href='#top' class='top_link'>Back to top</a>
+			$$discuss
+			$$seo
+		</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class='content'>
+			$$!footer.html
+		</div>
+	</div>
+	<script src="assets/autocomplete.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		AutoComplete_init("");
+		Scroll_init();
+	</script>	
+</body>
+</html>

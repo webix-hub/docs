@@ -138,3 +138,7 @@ var gage = webix.ui({
 - api/refs/ui.gage_events.md
 - api/refs/ui.gage_others.md
 
+
+
+@seolinktop: [open source html5 framework](https://webix.com)
+@seolink: [gauge js](https://webix.com/widget/gage/)

@@ -36,3 +36,7 @@ var year = this.getFilter("year").value;
 	datatable/filtering.md
 @relatedsample:
 	15_datatable/03_filtering/03_or.html
+
+
+@seolinktop: [ui library](https://webix.com)
+@seolink: [datatable html](https://webix.com/widget/datatable/)

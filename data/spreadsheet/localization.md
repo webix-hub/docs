@@ -204,3 +204,7 @@ webix.i18n.setLocale('ru-RU');
 }}
 
 @spellcheck:api
+
+
+@seolinktop: [html5 framework](https://webix.com)
+@seolink: [web spreadsheet](https://webix.com/spreadsheet/)

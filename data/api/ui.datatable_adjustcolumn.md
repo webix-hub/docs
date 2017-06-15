@@ -32,3 +32,7 @@ Adjustment modes:
 - **all** - combines the above mentioned modes and adjusts the column to the bigger value. 
 
 
+
+
+@seolinktop: [ui component library](https://webix.com)
+@seolink: [datagrid in html5](https://webix.com/widget/datatable/)

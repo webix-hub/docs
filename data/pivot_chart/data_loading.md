@@ -72,3 +72,6 @@ $$("pivot").toPDF();
 $$("pivot").toExcel();
 $$("pivot").toPNG();
 ~~~
+
+@seolinktop: [javascript dashboard framework](https://webix.com)
+@seolink: [javascript pivot grid](https://webix.com/pivot/)

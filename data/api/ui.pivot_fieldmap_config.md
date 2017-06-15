@@ -19,3 +19,6 @@ pivot/configuration.md#renamingfields
 
 @relatedsample:
 61_pivot/01_init/06_custom_titles.html
+
+@seolinktop: [javascript component library](https://webix.com)
+@seolink: [javascript pivot table](https://webix.com/pivot/)

@@ -196,3 +196,6 @@ webix.ui({
 
 @metadescr: Learn how you can use the ContextMenu widget in your Webix apps to provide users with fast access to the frequently used functions. 
 @doctitle: The ContextMenu UI widget documentation: overview and configuration.
+
+@seolinktop: [js framework](https://webix.com)
+@seolink: [context menu javascript](https://webix.com/widget/contextmenu/)

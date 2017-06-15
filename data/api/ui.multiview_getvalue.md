@@ -16,3 +16,7 @@ var id = $$("mview").getValue();
 @descr:
 
 
+
+
+@seolinktop: [popular javascript framework](https://webix.com)
+@seolink: [multiview control](https://webix.com/widget/multiview/)

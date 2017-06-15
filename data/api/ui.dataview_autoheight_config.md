@@ -16,3 +16,7 @@ webix.ui({
 @descr:
 
 
+
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [data view html5](https://webix.com/widget/dataview/)

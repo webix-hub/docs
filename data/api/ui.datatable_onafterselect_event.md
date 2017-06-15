@@ -39,3 +39,7 @@ In each case, the ID of the newly selected item be passed to the event.
 
 To get the IDs of currently selected items, you can use a combination of api/ui.datatable_onselectchange_event.md
 and the api/ui.datatable_selectrange.md method.
+
+
+@seolinktop: [widget library](https://webix.com)
+@seolink: [datatable](https://webix.com/widget/datatable/)

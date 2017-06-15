@@ -30,3 +30,7 @@ List of Supported Events
 
 You can find the full list of supported events in the File Manager [API Reference](api/refs/ui.filemanager_events.md).
 
+
+
+@seolinktop: [javascript framework](https://webix.com)
+@seolink: [javascript file explorer](https://webix.com/filemanager/)

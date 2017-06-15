@@ -29,3 +29,7 @@ webix.ui({
 @descr:
 
 
+
+
+@seolinktop: [open source html5 framework](https://webix.com)
+@seolink: [javascript accordion](https://webix.com/widget/accordion/)

@@ -21,3 +21,6 @@ api/ui.pdfviewer_prevpage.md
 
 @relatedsample:
 60_pro/10_viewers/01_pdf.html
+
+@seolinktop: [lightweight js framework](https://webix.com)
+@seolink: [pdf js viewer](https://webix.com/widget/html5_pdf_viewer/)

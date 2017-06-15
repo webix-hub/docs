@@ -18,3 +18,7 @@ $$("ssheet").setRangeValue(range, value);
 @template:	api_method
 @descr:
 
+
+
+@seolinktop: [ui component library](https://webix.com)
+@seolink: [spreadsheet](https://webix.com/spreadsheet/)

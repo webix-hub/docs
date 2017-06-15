@@ -28,3 +28,7 @@ List of Supported Events
 -------------------------
 
 You can find the full list of supported events in the Kanban Board [API Reference](api/refs/ui.kanban_events.md).
+
+
+@seolinktop: [javascript framework](https://webix.com)
+@seolink: [kanban board tool](https://webix.com/kanban/)

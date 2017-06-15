@@ -255,3 +255,7 @@ var organogram = new webix.ui({
 - api/refs/ui.organogram_events.md
 - api/refs/ui.organogram_others.md
 
+
+
+@seolinktop: [html5 library](https://webix.com)
+@seolink: [javascript organization chart](https://webix.com/widget/organogram/)

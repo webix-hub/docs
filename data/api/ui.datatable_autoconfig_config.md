@@ -21,3 +21,7 @@ Configuration of columns will be based on data ( columns will be created for eac
 Headers of columns are based on property names in dataset  
 
 
+
+
+@seolinktop: [web control library](https://webix.com)
+@seolink: [datagrid in html5](https://webix.com/widget/datatable/)

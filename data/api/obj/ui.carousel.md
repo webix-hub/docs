@@ -22,3 +22,7 @@ var carousel = webix.ui({
 
 - [Overview of the Carousel Widget](desktop/carousel.md)
 - [Samples](http://docs.webix.com/samples/26_carousel/index.html)
+
+
+@seolinktop: [web development library](https://webix.com)
+@seolink: [slideshow javascript](https://webix.com/widget/carousel/)

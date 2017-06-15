@@ -34,3 +34,7 @@ Possible values for the property are:
 
 
 
+
+
+@seolinktop: [widget library](https://webix.com)
+@seolink: [object list javascript](https://webix.com/widget/list/)

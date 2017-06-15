@@ -19,3 +19,7 @@ eachOtherList
 @template:	api_method
 @descr:
 
+
+
+@seolinktop: [javascript dashboard framework](https://webix.com)
+@seolink: [list ui](https://webix.com/widget/list/)

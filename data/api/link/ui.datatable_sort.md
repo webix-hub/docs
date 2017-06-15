@@ -90,3 +90,6 @@ The third parameter of the **sort** method may be string which represents the da
 
 @metadescr: Learn how you can use the sort method for sorting the rows of the DataTable widget. 
 @doctitle: The sort method documentation page: sorting DataTable rows.
+
+@seolinktop: [ui library](https://webix.com)
+@seolink: [javascript data grid](https://webix.com/widget/datatable/)

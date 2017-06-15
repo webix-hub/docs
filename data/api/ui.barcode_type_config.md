@@ -21,3 +21,7 @@ barcode.define("type", "upcA");
 @descr:
  there are 3 built-in types: "ean8", "ean13" and "upcA" ("ean13" is the default one)
 
+
+
+@seolinktop: [html5 library](https://webix.com)
+@seolink: [javascript barcode](https://webix.com/widget/barcode/)

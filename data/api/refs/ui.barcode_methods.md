@@ -47,3 +47,7 @@ Methods
 - api/link/ui.barcode_unbind.md
 
 
+
+
+@seolinktop: [javascript web framework](https://webix.com)
+@seolink: [barcode widget](https://webix.com/widget/barcode/)

@@ -16,3 +16,7 @@ webix.ui ({
 
 @relatedsample:
 	15_datatable/11_sizing/04_fixed_size.html
+
+
+@seolinktop: [web control library](https://webix.com)
+@seolink: [web datagrid](https://webix.com/widget/datatable/)

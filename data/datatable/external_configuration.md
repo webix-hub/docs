@@ -151,3 +151,6 @@ The specified **data-config.json** file should have the following structure:
 }
 ~~~
 {{sample 15_datatable/01_loading/10_custom_configuration_format.html }}
+
+@seolinktop: [javascript ui framework](https://webix.com)
+@seolink: [ui datagrid](https://webix.com/widget/datatable/)

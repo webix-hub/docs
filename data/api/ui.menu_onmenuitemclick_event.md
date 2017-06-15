@@ -26,3 +26,6 @@ menu.attachEvent("onMenuItemClick", function(id, e, node){
 @descr:
 
 Unlike the api/link/ui.menu_onitemclick_event.md, this event fires for all menu item regardless of their nesting level. 
+
+@seolinktop: [javascript dashboard framework](https://webix.com)
+@seolink: [javascript menu library](https://webix.com/widget/menu/)

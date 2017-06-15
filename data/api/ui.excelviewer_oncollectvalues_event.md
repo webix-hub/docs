@@ -15,3 +15,7 @@ onCollectValues
 @template:	api_event
 @descr:
 
+
+
+@seolinktop: [widget library](https://webix.com)
+@seolink: [js xlsx](https://webix.com/widget/excel_viewer/)

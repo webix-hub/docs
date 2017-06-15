@@ -26,3 +26,6 @@ api/ui.kanban_onlistafterselect_event.md
 
 @relatedsample:
 63_kanban/02_events/04_item_click.html
+
+@seolinktop: [js frameworks](https://webix.com)
+@seolink: [object list javascript](https://webix.com/widget/list/)

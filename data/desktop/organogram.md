@@ -78,3 +78,6 @@ The component items can include various HTML-elements, e.g. photos, and can be s
 
 
 @edition:pro
+
+@seolinktop: [javascript website framework](https://webix.com)
+@seolink: [organogram javascript](https://webix.com/widget/organogram/)

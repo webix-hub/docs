@@ -19,3 +19,7 @@ parse
 @template:	api_method
 @descr:
 
+
+
+@seolinktop: [html5 framework](https://webix.com)
+@seolink: [pdf viewer library](https://webix.com/widget/html5_pdf_viewer/)

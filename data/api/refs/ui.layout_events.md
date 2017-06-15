@@ -11,3 +11,7 @@ Events
 - api/link/ui.layout_ondestruct_event.md
 
 
+
+
+@seolinktop: [widget library](https://webix.com)
+@seolink: [javascript grid layout](https://webix.com/widget/layout/)

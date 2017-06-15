@@ -306,3 +306,6 @@ Read more on the topic in article datatable/external_configuration.md.
 @index:
 - datatable/supported_data_types.md
 - datatable/data_mapping.md
+
+@seolinktop: [web control library](https://webix.com)
+@seolink: [datagrid javascript](https://webix.com/widget/datatable/)

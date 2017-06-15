@@ -64,3 +64,7 @@ webix.cdn = "../../../../local_folder";
 ~~~js
 webix.cdn = "http://localhost/local_folder";
 ~~~
+
+
+@seolinktop: [javascript ui framework](https://webix.com)
+@seolink: [web based spreadsheet](https://webix.com/spreadsheet/)

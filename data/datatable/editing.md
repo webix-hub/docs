@@ -254,3 +254,7 @@ By default, the Tab(Tab+Shift) key(s) allows navigating within editors defined i
 {{sample 15_datatable/04_editing/28_scroll.html }}
 
 {{sample 15_datatable/04_editing/03_multiple_editors.html }}
+
+
+@seolinktop: [html5 library](https://webix.com)
+@seolink: [datatable html](https://webix.com/widget/datatable/)

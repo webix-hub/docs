@@ -3,3 +3,6 @@
 @relatedsample:
 	60_pro/01_datatable/05_state/01_basic.html
     60_pro/01_datatable/05_state/02_filtering.html
+
+@seolinktop: [javascript component library](https://webix.com)
+@seolink: [datatable](https://webix.com/widget/datatable/)

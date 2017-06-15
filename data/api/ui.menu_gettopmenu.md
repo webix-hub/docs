@@ -16,3 +16,6 @@ var top = $$("somemenu").getTopMenu();
 @descr:
 
 Can be used to access top menu object from the sub-menu
+
+@seolinktop: [best ui framework](https://webix.com)
+@seolink: [javascript menu](https://webix.com/widget/menu/)

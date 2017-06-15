@@ -25,3 +25,7 @@ grid.waitData.then(function(){
 The ultimate advantage of [Promise objects](http://promisesaplus.com/) is that they allow treating the result of asynchronous operations without callbacks.
 
 
+
+
+@seolinktop: [javascript ui library](https://webix.com)
+@seolink: [dataview ui](https://webix.com/widget/dataview/)

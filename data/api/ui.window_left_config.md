@@ -30,3 +30,7 @@ webix.ui({
 @descr:
 
 If you set **position** and **left** or **top** at the same time - **left** and **top** parameters will be ignored.
+
+
+@seolinktop: [javascript ui library](https://webix.com)
+@seolink: [javascript window](https://webix.com/widget/window/)

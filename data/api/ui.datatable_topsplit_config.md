@@ -19,3 +19,6 @@ webix.ui({
 datatable/frozen_rows.md
 
 @edition: pro
+
+@seolinktop: [ui library](https://webix.com)
+@seolink: [javascript datatable](https://webix.com/widget/datatable/)

@@ -22,3 +22,6 @@ $$("myBoard").attachEvent("onListAfterContextMenu", function(itemId,ev,node,list
 
 @relatedapi:
 api/ui.kanban_onlistbeforecontextmenu_event.md
+
+@seolinktop: [javascript web framework](https://webix.com)
+@seolink: [object list javascript](https://webix.com/widget/list/)

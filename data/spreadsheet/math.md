@@ -165,3 +165,6 @@ webix.ui({
 - spreadsheet/functions.md
 
 @spellcheck:counts
+
+@seolinktop: [javascript ui components library](https://webix.com)
+@seolink: [javascript spreadsheet library](https://webix.com/spreadsheet/)

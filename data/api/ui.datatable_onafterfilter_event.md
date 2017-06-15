@@ -21,3 +21,7 @@ dtable.attachEvent("onAfterFilter", function(){
 @descr:
 
 
+
+
+@seolinktop: [javascript dashboard framework](https://webix.com)
+@seolink: [javascript data grid](https://webix.com/widget/datatable/)

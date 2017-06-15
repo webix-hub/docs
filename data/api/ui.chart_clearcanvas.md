@@ -20,3 +20,7 @@ mychart.clearCanvas();
 @defined:	Canvas	
 @descr:
 
+
+
+@seolinktop: [ui component library](https://webix.com)
+@seolink: [chart javascript](https://webix.com/widget/charts/)

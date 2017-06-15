@@ -269,3 +269,7 @@ Methods
 - api/link/ui.excelviewer_validateeditor.md
 
 
+
+
+@seolinktop: [javascript component library](https://webix.com)
+@seolink: [js xlsx](https://webix.com/widget/excel_viewer/)

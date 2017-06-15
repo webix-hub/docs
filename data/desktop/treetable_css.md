@@ -49,3 +49,6 @@ TreeTable combines features of the [Tree](desktop/datatree_css.md) and [DataTabl
 </table>
 
 Read more about [TreeTable](desktop/treetable.md)
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [tree table widget](https://webix.com/widget/treetable/)

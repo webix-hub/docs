@@ -160,3 +160,7 @@ var accordionitem = webix.ui({
 - api/refs/ui.accordionitem_events.md
 - api/refs/ui.accordionitem_others.md
 
+
+
+@seolinktop: [javascript ui components library](https://webix.com)
+@seolink: [accordion menu](https://webix.com/widget/accordion/)

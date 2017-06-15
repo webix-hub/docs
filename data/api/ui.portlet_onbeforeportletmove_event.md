@@ -23,3 +23,6 @@ Pay attention that the event is attached globally - webix.attachEvent( ).
 
 @relatedapi:
 - api/ui.portlet_onafterportletmove_event.md
+
+@seolinktop: [html5 framework](https://webix.com)
+@seolink: [javascript portlet](https://webix.com/widget/portlet/)

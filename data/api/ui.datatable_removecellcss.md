@@ -25,3 +25,6 @@ $$("mytable").removeCellCss(152, "year", "some_style");
     
 @related:
 	datatable/styling.md
+
+@seolinktop: [ui widget library](https://webix.com)
+@seolink: [web datagrid](https://webix.com/widget/datatable/)

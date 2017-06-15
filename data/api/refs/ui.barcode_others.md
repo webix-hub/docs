@@ -27,3 +27,7 @@ Others
 - api/ui.barcode_types_other.md
 
 
+
+
+@seolinktop: [javascript dashboard framework](https://webix.com)
+@seolink: [javascript barcode generator](https://webix.com/widget/barcode/)

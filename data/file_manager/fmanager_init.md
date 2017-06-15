@@ -41,3 +41,6 @@ webix.ready(function(){
 {{sample
 64_file_manager/01_basic/01_init.html
 }}
+
+@seolinktop: [js frameworks](https://webix.com)
+@seolink: [html5 file manager](https://webix.com/filemanager/)

@@ -26,3 +26,6 @@ api/ui.spreadsheet_deleterow.md
 api/ui.spreadsheet_getrow.md
 api/ui.spreadsheet_insertrow.md
 api/ui.spreadsheet_isrowvisible.md
+
+@seolinktop: [javascript component library](https://webix.com)
+@seolink: [spreadsheet javascript library](https://webix.com/spreadsheet/)

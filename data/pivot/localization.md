@@ -32,3 +32,6 @@ webix.ui({
 ~~~
 
 {{sample 61_pivot/01_init/05_locale.html}}
+
+@seolinktop: [ui component library](https://webix.com)
+@seolink: [javascript pivot](https://webix.com/pivot/)

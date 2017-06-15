@@ -22,3 +22,7 @@ Returning *false* within the handler will prevent the execution of further logic
 - api/ui.pivot_oncancel_event.md
 - api/ui.pivot_onbeforeapply_event.md
 
+
+
+@seolinktop: [open source html5 framework](https://webix.com)
+@seolink: [javascript pivot table](https://webix.com/pivot/)

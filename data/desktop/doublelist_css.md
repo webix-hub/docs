@@ -37,3 +37,6 @@ Double List CSS
 </table>
 
 Read more about [DoubleList](desktop/double_list.md).
+
+@seolinktop: [javascript ui framework](https://webix.com)
+@seolink: [javascript library list](https://webix.com/widget/list/)

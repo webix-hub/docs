@@ -101,3 +101,7 @@ webix.toExcel(datatable, {
 
 "Custom1" (any name can be used) receives data from the **year** field even if it is not seen in this datatable but is presented in its dataset.
 The field is rendered with **width**, **template** and **header** that will be the header of the corresponding column in the export table. 
+
+
+@seolinktop: [best ui framework](https://webix.com)
+@seolink: [ui datagrid](https://webix.com/widget/datatable/)

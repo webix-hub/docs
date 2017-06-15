@@ -15,3 +15,7 @@ webix.ui({
 @descr:
 
 
+
+
+@seolinktop: [web control library](https://webix.com)
+@seolink: [pivot table web](https://webix.com/pivot/)

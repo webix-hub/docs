@@ -21,3 +21,6 @@ The event is cancellable. If a handler returns *false*, the column will not be s
 @relatedapi:
 - api/ui.datatable_onaftercolumnshow_event.md
 - api/ui.datatable_showcolumn.md
+
+@seolinktop: [javascript dashboard framework](https://webix.com)
+@seolink: [web datagrid](https://webix.com/widget/datatable/)

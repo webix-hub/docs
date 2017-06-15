@@ -20,3 +20,7 @@ $$("datatable").attachEvent("onEditorChange",function(id, value){
 @relatedsample:
 
 15_datatable/04_editing/09_inline_editors.html
+
+
+@seolinktop: [javascript ui components library](https://webix.com)
+@seolink: [datagrid javascript](https://webix.com/widget/datatable/)

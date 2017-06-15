@@ -31,3 +31,7 @@ webix.ui({
 
 
 
+
+
+@seolinktop: [javascript framework](https://webix.com)
+@seolink: [javascript image slideshow](https://webix.com/widget/carousel/)

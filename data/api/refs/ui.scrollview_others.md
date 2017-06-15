@@ -25,3 +25,7 @@ Others
 - api/link/ui.scrollview_name_other.md
 
 
+
+
+@seolinktop: [widget library](https://webix.com)
+@seolink: [scrollview](https://webix.com/widget/scrollview/)

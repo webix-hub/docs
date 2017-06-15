@@ -28,3 +28,7 @@ The image below shows how the script above applies the <i>paddingY</i> property.
 
 <img src="api/paddingY_image.png"> </img>
 
+
+
+@seolinktop: [html5 framework](https://webix.com)
+@seolink: [ui layout](https://webix.com/widget/layout/)

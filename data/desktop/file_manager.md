@@ -82,3 +82,6 @@ Apart from files, File Manager allows working with any kind of hierarchical data
 - file_manager/manipulating_items.md
 - file_manager/events.md
 - file_manager/howto.md
+
+@seolinktop: [html5 ui library](https://webix.com)
+@seolink: [javascript file manager](https://webix.com/filemanager/)

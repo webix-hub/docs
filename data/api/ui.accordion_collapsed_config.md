@@ -24,3 +24,7 @@ webix.ui({
 @descr:
 
 
+
+
+@seolinktop: [easy javascript framework](https://webix.com)
+@seolink: [accordion tabs](https://webix.com/widget/accordion/)

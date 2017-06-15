@@ -45,3 +45,7 @@ Events
 - api/link/ui.window_onviewresize_event.md
 
 
+
+
+@seolinktop: [javascript framework](https://webix.com)
+@seolink: [js window](https://webix.com/widget/window/)

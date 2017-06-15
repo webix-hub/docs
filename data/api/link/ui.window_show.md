@@ -62,3 +62,7 @@ view constructor to the *true* value.
 
 With standard views (not windows) you can use an alternative to the api/ui.baseview_hide.md, 
 api/ui.baseview_show.md api, namely the api/refs/ui.multiview.md functionality to switch between views.
+
+
+@seolinktop: [popular javascript framework](https://webix.com)
+@seolink: [js window](https://webix.com/widget/window/)

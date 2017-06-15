@@ -23,3 +23,7 @@ grid.attachEvent("onAfterRender", function(){
 
 In case of DataTable, data is a datastore object of the component
 
+
+
+@seolinktop: [widget library](https://webix.com)
+@seolink: [javascript datagrid library](https://webix.com/widget/datatable/)

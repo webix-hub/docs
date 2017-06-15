@@ -26,3 +26,6 @@ desktop/gage.md
 
 @relatedapi: 
 api/ui.gage_minrange_config.md
+
+@seolinktop: [javascript framework](https://webix.com)
+@seolink: [gage widget](https://webix.com/widget/gage/)

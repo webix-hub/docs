@@ -29,3 +29,7 @@ Possible values for the property are:
 	06_dataview/01_initialization/03_fixed_sizing.html
 
 
+
+
+@seolinktop: [html5 library](https://webix.com)
+@seolink: [dataview](https://webix.com/widget/dataview/)

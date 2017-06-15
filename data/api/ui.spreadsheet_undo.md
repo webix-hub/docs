@@ -20,3 +20,7 @@ api/ui.spreadsheet_redo.md
 
 @related:
 desktop/undo.md
+
+
+@seolinktop: [javascript ui framework](https://webix.com)
+@seolink: [javascript spreadshee](https://webix.com/spreadsheet/)

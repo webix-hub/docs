@@ -27,3 +27,7 @@ dtable.clearSelection();
 	api/ui.datatable_unselect.md
     api/ui.datatable_getselectedid.md
 
+
+
+@seolinktop: [javascript web framework](https://webix.com)
+@seolink: [html5 datatable](https://webix.com/widget/datatable/)

@@ -18,3 +18,7 @@ dtable.attachEvent("onStructureLoad", function(){
 @descr:
 
 
+
+
+@seolinktop: [web development library](https://webix.com)
+@seolink: [html5 datatable](https://webix.com/widget/datatable/)

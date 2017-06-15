@@ -10,3 +10,6 @@
 @relatedsample:
 	15_datatable/14_events/01_log_all_events.html
 	15_datatable/11_sizing/03_resize_win.html
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [javascript datatable](https://webix.com/widget/datatable/)

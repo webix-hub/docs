@@ -26,3 +26,7 @@ alert(state.y); //position of y-scroll
 	datatable/sizing.md#scrolling
 @template:	api_method
 @descr:
+
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [datatable](https://webix.com/widget/datatable/)

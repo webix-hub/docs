@@ -17,3 +17,7 @@ $$("ssheet").renameSheet(name,newName);
 @template:	api_method
 @descr:
 
+
+
+@seolinktop: [javascript website framework](https://webix.com)
+@seolink: [web based spreadsheet](https://webix.com/spreadsheet/)

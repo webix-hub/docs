@@ -103,3 +103,6 @@ webix.ready(function(){
 More information about Kanban data loading you can find in [DataStore](api/refs/datastore.md) docs.
 
 @spellcheck: kanban
+
+@seolinktop: [javascript ui framework](https://webix.com)
+@seolink: [kanban board tool](https://webix.com/kanban/)

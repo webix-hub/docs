@@ -24,3 +24,6 @@ buttons: {
 
 @related:
 spreadsheet/customization.md#customizingtoolbarsbuttons
+
+@seolinktop: [javascript ui framework](https://webix.com)
+@seolink: [web spreadsheet](https://webix.com/spreadsheet/)

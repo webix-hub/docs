@@ -58,3 +58,7 @@ Properties
 - api/link/ui.accordionitem_onmousemove_config.md
 - api/link/ui.accordionitem_width_config.md
 
+
+
+@seolinktop: [web development library](https://webix.com)
+@seolink: [accordion tabs](https://webix.com/widget/accordion/)

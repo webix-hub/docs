@@ -25,3 +25,7 @@ Others
 - api/link/ui.window_name_other.md
 
 
+
+
+@seolinktop: [web development library](https://webix.com)
+@seolink: [javascript window](https://webix.com/widget/window/)

@@ -26,3 +26,7 @@ webix.ui({
 The tooltip's content will be defined by the *tooltip* property from the column configuration.
 If a column doesn't have the tooltip property, the column's content will be shown in the tooltip.
 
+
+
+@seolinktop: [html5 ui library](https://webix.com)
+@seolink: [javascript datagrid library](https://webix.com/widget/datatable/)

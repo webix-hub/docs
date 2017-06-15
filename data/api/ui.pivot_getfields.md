@@ -19,3 +19,7 @@ var fields = $$("pivot").getFields();
 @template:	api_method
 @descr:
 
+
+
+@seolinktop: [html5 framework](https://webix.com)
+@seolink: [javascript pivot grid](https://webix.com/pivot/)

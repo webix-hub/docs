@@ -27,3 +27,6 @@ spreadsheet/cell_content.md#lockingunlockingcells
 
 @relatedapi:
 api/ui.spreadsheet_iscelllocked.md
+
+@seolinktop: [html5 framework](https://webix.com)
+@seolink: [web spreadsheet](https://webix.com/spreadsheet/)

@@ -33,3 +33,7 @@ Others
 - api/link/ui.accordionitem_on_mouse_move_other.md
 
 
+
+
+@seolinktop: [js frameworks](https://webix.com)
+@seolink: [accordion menu](https://webix.com/widget/accordion/)

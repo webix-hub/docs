@@ -74,3 +74,6 @@ grid = new webix.ui({
 
 @keyword:
 	format, template
+
+@seolinktop: [widget library](https://webix.com)
+@seolink: [datatable html](https://webix.com/widget/datatable/)

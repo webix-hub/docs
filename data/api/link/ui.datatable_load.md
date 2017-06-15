@@ -8,3 +8,7 @@
     api/link/ui.datatable_parse.md
 
 
+
+
+@seolinktop: [mvc library](https://webix.com)
+@seolink: [javascript datatables](https://webix.com/widget/datatable/)

@@ -14,3 +14,7 @@ dtable.editNext();
    	api/link/ui.datatable_edit.md
     api/link/ui.datatable_editstop.md
     api/link/ui.datatable_focusEditor.md
+
+
+@seolinktop: [javascript component library](https://webix.com)
+@seolink: [ui datagrid](https://webix.com/widget/datatable/)

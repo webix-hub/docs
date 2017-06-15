@@ -27,3 +27,7 @@ webix.ui({
 @descr:
 The default value is *true*.
 
+
+
+@seolinktop: [javascript dashboard framework](https://webix.com)
+@seolink: [javascript graphing library](https://webix.com/widget/charts/)

@@ -17,3 +17,7 @@ $$("carousel1").adjustScroll();
 @descr:
 
 
+
+
+@seolinktop: [ui widget library](https://webix.com)
+@seolink: [javascript image slideshow](https://webix.com/widget/carousel/)

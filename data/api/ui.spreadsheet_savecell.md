@@ -17,3 +17,7 @@ $$("ssheet").saveCell(row, column);
 @template:	api_method
 @descr:
 
+
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [spreadsheet](https://webix.com/spreadsheet/)

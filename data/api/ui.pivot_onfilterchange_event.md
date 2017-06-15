@@ -17,3 +17,7 @@ $$("pivot1").attachEvent("onFilterChange", function(name, value){
 @template:	api_event
 @descr:
 
+
+
+@seolinktop: [html5 framework](https://webix.com)
+@seolink: [javascript pivot table](https://webix.com/pivot/)

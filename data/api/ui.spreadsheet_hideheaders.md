@@ -20,3 +20,7 @@ $$("ssheet").hideHeaders(state);
 
 @relatedsample:
 65_spreadsheet/02_api/04_borders_and_gridlines.html
+
+
+@seolinktop: [widget library](https://webix.com)
+@seolink: [spreadsheet](https://webix.com/spreadsheet/)

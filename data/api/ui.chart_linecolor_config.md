@@ -25,3 +25,6 @@ The property is applicable only to **pie** charts
 }}
 
 The default value of the property is "#ffffff".
+
+@seolinktop: [easy javascript framework](https://webix.com)
+@seolink: [javascript graph library](https://webix.com/widget/charts/)

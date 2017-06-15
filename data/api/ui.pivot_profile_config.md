@@ -15,3 +15,7 @@ webix.ui({
 @descr:
 
 
+
+
+@seolinktop: [ui widget library](https://webix.com)
+@seolink: [javascript pivot grid](https://webix.com/pivot/)

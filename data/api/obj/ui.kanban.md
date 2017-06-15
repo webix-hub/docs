@@ -29,3 +29,6 @@ var kanban = webix.ui({
 
 - [Overview of the Kanban Board Widget](desktop/kanban_board.md)
 - [Samples](http://docs.webix.com/samples/63_kanban/index.html)
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [kanban board tool](https://webix.com/kanban/)

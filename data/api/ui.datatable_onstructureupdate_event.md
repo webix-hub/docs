@@ -16,3 +16,7 @@ mydata.attachEvent("onStructureUpdate", function(){
 @template:	api_event
 @descr:
 
+
+
+@seolinktop: [javascript web framework](https://webix.com)
+@seolink: [datagrid javascript](https://webix.com/widget/datatable/)

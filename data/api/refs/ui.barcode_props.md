@@ -48,3 +48,7 @@ Properties
 - api/ui.barcode_value_config.md
 - api/link/ui.barcode_width_config.md
 
+
+
+@seolinktop: [easy javascript framework](https://webix.com)
+@seolink: [javascript barcode generator](https://webix.com/widget/barcode/)

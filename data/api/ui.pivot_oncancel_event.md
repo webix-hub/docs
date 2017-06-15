@@ -19,3 +19,6 @@ $$("pivot1").attachEvent("onCancel",function(structure){
 @relatedapi:
 - api/ui.pivot_onapply_event.md
 - api/ui.pivot_onbeforecancel_event.md
+
+@seolinktop: [best ui framework](https://webix.com)
+@seolink: [javascript pivot](https://webix.com/pivot/)

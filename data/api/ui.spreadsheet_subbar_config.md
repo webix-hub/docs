@@ -27,3 +27,6 @@ webix.ui({
 
 @related:
 spreadsheet/config.md#addingsubbar
+
+@seolinktop: [open source html5 framework](https://webix.com)
+@seolink: [spreadsheet javascript library](https://webix.com/spreadsheet/)

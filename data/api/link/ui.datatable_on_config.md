@@ -19,3 +19,7 @@ webix.ui({
 @relatedsample:
 	15_datatable/14_events/02_click_css.html
 	15_datatable/05_selection/08_block_selection.html
+
+
+@seolinktop: [widget library](https://webix.com)
+@seolink: [html5 datatable](https://webix.com/widget/datatable/)

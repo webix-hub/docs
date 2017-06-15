@@ -78,3 +78,7 @@ Properties
 - api/link/ui.dbllist_visiblebatch_config.md
 - api/link/ui.dbllist_width_config.md
 
+
+
+@seolinktop: [javascript dashboard framework](https://webix.com)
+@seolink: [lists in javascript](https://webix.com/widget/list/)

@@ -23,3 +23,6 @@ The function's parameters:
 - list - (object) a kanban list 
 
 The function returns true, if the item is added into the list and false otherwise.
+
+@seolinktop: [ui library](https://webix.com)
+@seolink: [list ui](https://webix.com/widget/list/)

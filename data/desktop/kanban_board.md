@@ -78,3 +78,6 @@ Fully written in JavaScript and CSS this component can be integrated in any web 
 - kanban/api_reference.md
 - kanban/events.md
 - kanban/howto.md
+
+@seolinktop: [ui widget library](https://webix.com)
+@seolink: [javascript kanban](https://webix.com/kanban/)

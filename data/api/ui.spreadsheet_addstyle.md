@@ -54,3 +54,6 @@ Pay attention that for cell **borders** it's possible to specify just the *borde
 @relatedapi:
 api/ui.spreadsheet_setstyle.md
 api/ui.spreadsheet_getstyle.md
+
+@seolinktop: [mvc library](https://webix.com)
+@seolink: [web spreadsheet](https://webix.com/spreadsheet/)

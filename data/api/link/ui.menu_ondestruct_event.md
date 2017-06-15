@@ -1,1 +1,4 @@
 @link: api/destruction_ondestruct_event.md
+
+@seolinktop: [javascript web framework](https://webix.com)
+@seolink: [javascript menu](https://webix.com/widget/menu/)

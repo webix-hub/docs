@@ -27,3 +27,6 @@ While data of the hidden column still can be accessed, api calls against it will
 	datatable/columns_configuration.md#hidingshowingcolumns
 
 	
+
+@seolinktop: [javascript website framework](https://webix.com)
+@seolink: [datatable js](https://webix.com/widget/datatable/)

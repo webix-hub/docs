@@ -78,3 +78,7 @@ Properties
 - api/link/ui.form_visiblebatch_config.md
 - api/link/ui.form_width_config.md
 
+
+
+@seolinktop: [ui widget library](https://webix.com)
+@seolink: [form control](https://webix.com/widget/form/)

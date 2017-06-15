@@ -23,3 +23,7 @@ api/ui.pivot_onwebworkerend_event.md
 
 @related:
 pivot/webworkers.md
+
+
+@seolinktop: [javascript ui framework](https://webix.com)
+@seolink: [javascript pivot table](https://webix.com/pivot/)

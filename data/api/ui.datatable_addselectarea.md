@@ -31,3 +31,6 @@ datatable/area_selection.md
 @relatedsample: 60_pro/01_datatable/06_api/14_area_selection.html
 
 @edition:pro
+
+@seolinktop: [html5 ui library](https://webix.com)
+@seolink: [javascript data table](https://webix.com/widget/datatable/)

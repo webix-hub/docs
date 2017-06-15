@@ -27,3 +27,6 @@ Fixes
 
 - regression in file uploading
 - perform actions on the same level if context menu opens over empty area
+
+@seolinktop: [javascript ui library](https://webix.com)
+@seolink: [javascript file manager](https://webix.com/filemanager/)

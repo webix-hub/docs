@@ -23,3 +23,6 @@ It returns not ALL rows, and not actual count of loaded rows - but how many rows
 	api/datastore_count.md
 @related:
 	desktop/data_object.md
+
+@seolinktop: [javascript ui framework](https://webix.com)
+@seolink: [datatable html](https://webix.com/widget/datatable/)

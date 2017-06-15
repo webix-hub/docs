@@ -29,3 +29,7 @@ var pivot = webix.ui({
 - [Overview of the Pivot Widget](desktop/pivot.md)
 - [Samples](http://docs.webix.com/samples/61_pivot/index.html)
 
+
+
+@seolinktop: [html5 framework](https://webix.com)
+@seolink: [pivot table web](https://webix.com/pivot/)

@@ -20,3 +20,7 @@ Fixes
 - selection not removed during Pivot refresh
 - destructor of Pivot doesn't remove the popup
 - ignore undefined columns and rows
+
+
+@seolinktop: [lightweight js framework](https://webix.com)
+@seolink: [pivot table web](https://webix.com/pivot/)

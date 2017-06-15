@@ -374,3 +374,7 @@ dummy stub
 - api/refs/ui.excelviewer_events.md
 - api/refs/ui.excelviewer_others.md
 
+
+
+@seolinktop: [html5 ui library](https://webix.com)
+@seolink: [javascript excel reader](https://webix.com/widget/excel_viewer/)

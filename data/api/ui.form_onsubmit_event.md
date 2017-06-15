@@ -18,3 +18,6 @@ form.attachEvent("onSubmit", function(view, ev){
     desktop/htmlform.md
 
 @descr:
+
+@seolinktop: [javascript website framework](https://webix.com)
+@seolink: [form control](https://webix.com/widget/form/)

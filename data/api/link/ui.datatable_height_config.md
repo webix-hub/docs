@@ -11,3 +11,6 @@
 
 @relatedsample:
 	15_datatable/11_sizing/04_fixed_size.html
+
+@seolinktop: [widget library](https://webix.com)
+@seolink: [javascript data grid](https://webix.com/widget/datatable/)

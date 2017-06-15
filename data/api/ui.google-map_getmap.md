@@ -25,3 +25,7 @@ $$("map").getMap(true).then(function(mapObj){
 });
 ~~~
 
+
+
+@seolinktop: [ui component library](https://webix.com)
+@seolink: [google maps javascript](https://webix.com/widget/maps/)

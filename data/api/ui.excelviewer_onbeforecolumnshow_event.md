@@ -15,3 +15,7 @@ onBeforeColumnShow
 @template:	api_event
 @descr:
 
+
+
+@seolinktop: [web development library](https://webix.com)
+@seolink: [javascript excel reader](https://webix.com/widget/excel_viewer/)

@@ -21,3 +21,7 @@ $$('my_window').setPosition(100, 100);
 @descr:
 
 
+
+
+@seolinktop: [best ui framework](https://webix.com)
+@seolink: [javascript window open](https://webix.com/widget/window/)

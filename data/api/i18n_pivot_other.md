@@ -34,3 +34,6 @@ webix.i18n.pivot = {
     
 @related:
 	desktop/localization.md
+
+@seolinktop: [open source html5 framework](https://webix.com)
+@seolink: [javascript pivot table](https://webix.com/pivot/)

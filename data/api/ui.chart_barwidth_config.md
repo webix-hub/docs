@@ -25,3 +25,7 @@ webix.ui({
 @descr:
 The default value is 30.
 
+
+
+@seolinktop: [javascript ui components library](https://webix.com)
+@seolink: [chart widget](https://webix.com/widget/charts/)

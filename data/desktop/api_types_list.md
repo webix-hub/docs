@@ -26,3 +26,6 @@ Next data types are used through API reference
 - id,element		-	id of html element, or element itself
 - string,function	- 	string defined mode, or custom function
 - string,view		-	text content or sub-view configuration
+
+@seolinktop: [js framework](https://webix.com)
+@seolink: [lists in javascript](https://webix.com/widget/list/)

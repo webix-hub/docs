@@ -64,3 +64,7 @@ Note that there's no built-in possibility to edit data with List. You should cre
 
 @index:
 - desktop/xlist.md
+
+
+@seolinktop: [js framework](https://webix.com)
+@seolink: [javascript list](https://webix.com/widget/list/)

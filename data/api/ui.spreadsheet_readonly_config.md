@@ -24,3 +24,6 @@ spreadsheet/config.md#makingspreadsheetreadonly
 
 @relatedsample:
 65_spreadsheet/01_basic/04_readonly.html
+
+@seolinktop: [best ui framework](https://webix.com)
+@seolink: [javascript spreadsheet library](https://webix.com/spreadsheet/)

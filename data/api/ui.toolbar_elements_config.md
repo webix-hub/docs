@@ -19,3 +19,7 @@ webix.ui({
 @template:	api_config
 @descr:
 
+
+
+@seolinktop: [javascript website framework](https://webix.com)
+@seolink: [javascript toolbar](https://webix.com/widget/toolbar/)

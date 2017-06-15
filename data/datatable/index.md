@@ -129,3 +129,7 @@ still being  very fast handling  thousands of records.<a href="datatable/overvie
 - datatable/export.md
 - datatable/events_handling.md
 
+
+
+@seolinktop: [ui library](https://webix.com)
+@seolink: [javascript datagrid](https://webix.com/widget/datatable/)

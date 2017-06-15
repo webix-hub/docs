@@ -19,3 +19,7 @@ $$("table").attachEvent("onRowResize", function(id){
 @descr:
 
 
+
+
+@seolinktop: [html5 framework](https://webix.com)
+@seolink: [javascript datagrid](https://webix.com/widget/datatable/)

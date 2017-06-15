@@ -18,3 +18,7 @@ disableLines
 @descr: *False* by default. Set to *true* it leaves only points on the radar map while the joining line is missing. 
 
 
+
+
+@seolinktop: [mvc library](https://webix.com)
+@seolink: [chart widget](https://webix.com/widget/charts/)

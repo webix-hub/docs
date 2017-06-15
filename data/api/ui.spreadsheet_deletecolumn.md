@@ -27,3 +27,7 @@ api/ui.spreadsheet_insertcolumn.md
 api/ui.spreadsheet_iscolumnvisible.md
 
 
+
+
+@seolinktop: [web development library](https://webix.com)
+@seolink: [web spreadsheet](https://webix.com/spreadsheet/)

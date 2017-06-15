@@ -75,3 +75,7 @@ Methods
 - api/link/ui.multiview_unblockevent.md
 
 
+
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [multi view](https://webix.com/widget/multiview/)

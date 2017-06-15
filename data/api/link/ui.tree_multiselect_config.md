@@ -20,3 +20,6 @@ Possible values are:
 @relatedsample:
 
 17_datatree/04_api/04_multi_select.html
+
+@seolinktop: [lightweight js framework](https://webix.com)
+@seolink: [javascript tree](https://webix.com/widget/tree/)

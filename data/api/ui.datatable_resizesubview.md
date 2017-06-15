@@ -18,3 +18,7 @@ $$("mydatatable").resizeSubView(id);
 @template:	api_method
 @descr:
 
+
+
+@seolinktop: [javascript ui components library](https://webix.com)
+@seolink: [datagrid javascript](https://webix.com/widget/datatable/)

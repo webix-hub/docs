@@ -14,3 +14,6 @@ tree = new webix.ui({
 
 @related:
 	datatree/dnd_support.md
+
+@seolinktop: [ui widget library](https://webix.com)
+@seolink: [javascript tree visualization](https://webix.com/widget/tree/)

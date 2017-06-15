@@ -19,3 +19,7 @@ dtable.showCell(15,"title");
 @descr:
 
 @relatedapi:api/ui.datatable_showitembyindex.md,api/ui.datatable_showitem.md
+
+
+@seolinktop: [javascript ui components library](https://webix.com)
+@seolink: [datagrid javascript](https://webix.com/widget/datatable/)

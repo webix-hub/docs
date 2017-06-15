@@ -19,3 +19,6 @@ $$("datatable1").attachEvent("onAfterColumnHide", function(id){
 @relatedapi:
 api/ui.datatable_hidecolumn.md
 api/ui.datatable_onbeforecolumnhide_event.md
+
+@seolinktop: [open source html5 framework](https://webix.com)
+@seolink: [javascript datatable](https://webix.com/widget/datatable/)

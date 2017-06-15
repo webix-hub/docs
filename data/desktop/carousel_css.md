@@ -22,3 +22,6 @@ Carousel is a layout-building component that can house any of the data-presentin
 </table>
 
 Read more about [Carousel](desktop/carousel.md)  
+
+@seolinktop: [popular javascript framework](https://webix.com)
+@seolink: [javascript carousel](https://webix.com/widget/carousel/)

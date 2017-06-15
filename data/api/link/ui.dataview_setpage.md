@@ -2,3 +2,6 @@
 
 @relatedsample:
 	06_dataview/19_paging/01_static_paging.html
+
+@seolinktop: [javascript dashboard framework](https://webix.com)
+@seolink: [dataview](https://webix.com/widget/dataview/)

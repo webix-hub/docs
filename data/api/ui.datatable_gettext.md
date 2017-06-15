@@ -26,3 +26,7 @@ var val = $$("mytable").getText(12, "price");
 
 
 
+
+
+@seolinktop: [popular javascript framework](https://webix.com)
+@seolink: [datatable html](https://webix.com/widget/datatable/)

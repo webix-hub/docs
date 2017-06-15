@@ -44,3 +44,7 @@ spreadsheet/cell_content.md#addinganeditorintoacell
 @relatedapi:
 api/ui.spreadsheet_setcelleditor.md
 
+
+
+@seolinktop: [ui component library](https://webix.com)
+@seolink: [javascript spreadshee](https://webix.com/spreadsheet/)

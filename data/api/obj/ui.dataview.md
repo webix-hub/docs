@@ -27,3 +27,7 @@ var dataview = webix.ui({
 
 - [Overview of the Dataview Widget](desktop/dataview.md)
 - [Samples](http://docs.webix.com/samples/06_dataview/index.html)
+
+
+@seolinktop: [javascript component library](https://webix.com)
+@seolink: [data view html5](https://webix.com/widget/dataview/)

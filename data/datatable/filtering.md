@@ -606,3 +606,6 @@ webix.ui({
 }}
 
 @spellcheck: yyyy, builtin, api
+
+@seolinktop: [javascript framework](https://webix.com)
+@seolink: [download datatable](https://webix.com/widget/datatable/)

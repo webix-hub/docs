@@ -43,3 +43,6 @@ with the following properties to form the hierarchy:
 - **$level** - (*number*) the level of nesting (one-based numbering);
 - **parent** - (*string*) the id of thr item's parent;
 - **$count** - (*number*) the number of childs
+
+@seolinktop: [ui widget library](https://webix.com)
+@seolink: [tree table widget](https://webix.com/widget/treetable/)

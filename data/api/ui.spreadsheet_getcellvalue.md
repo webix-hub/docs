@@ -23,3 +23,6 @@ var value = $$("ssheet").getCellValue(2, 3);
 
 @relatedapi:
 api/ui.spreadsheet_setcellvalue.md
+
+@seolinktop: [open source html5 framework](https://webix.com)
+@seolink: [javascript spreadshee](https://webix.com/spreadsheet/)

@@ -103,3 +103,7 @@ Events
 - api/link/ui.kanbanlist_onviewresize_event.md
 
 
+
+
+@seolinktop: [html5 library](https://webix.com)
+@seolink: [list in javascript](https://webix.com/widget/list/)

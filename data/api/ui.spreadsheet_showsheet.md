@@ -20,3 +20,7 @@ $$("ssheet").showSheet("Tab 1");
 @descr:
 
 @relatedsample: 65_spreadsheet/01_basic/07_multisheet.html
+
+
+@seolinktop: [html5 ui library](https://webix.com)
+@seolink: [javascript spreadsheet library](https://webix.com/spreadsheet/)

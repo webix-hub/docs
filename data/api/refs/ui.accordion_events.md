@@ -15,3 +15,7 @@ Events
 - api/link/ui.accordion_ondestruct_event.md
 
 
+
+
+@seolinktop: [ui library](https://webix.com)
+@seolink: [accordion menu](https://webix.com/widget/accordion/)

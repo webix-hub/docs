@@ -175,3 +175,6 @@ If you need to change the speed of animation, you can do this via CSS by address
 ~~~
 
 @edition:pro
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [javascript gage](https://webix.com/widget/gage/)

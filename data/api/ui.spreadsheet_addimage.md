@@ -23,3 +23,6 @@ $$("ssheet").addImage(rowId,columnId, url);
 
 @related:
 spreadsheet/cell_content.md#addingimageinacell
+
+@seolinktop: [javascript framework](https://webix.com)
+@seolink: [javascript spreadsheet library](https://webix.com/spreadsheet/)

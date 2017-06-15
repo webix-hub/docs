@@ -240,3 +240,7 @@ More possible configuration properties are described in the [corresponding docum
 {{sample 15_datatable/10_export/08_pdf_style.html}}
 
 @spellcheck: headeropts,imageimg,rkusa,pdfjs,tableopts
+
+
+@seolinktop: [javascript dashboard framework](https://webix.com)
+@seolink: [javascript datagrid](https://webix.com/widget/datatable/)

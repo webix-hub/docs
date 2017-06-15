@@ -29,3 +29,7 @@ var id = datatable.columnId(0);
 	datatable/columns_configuration.md
 
 
+
+
+@seolinktop: [mvc library](https://webix.com)
+@seolink: [data table](https://webix.com/widget/datatable/)

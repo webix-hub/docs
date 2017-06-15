@@ -23,3 +23,6 @@ webix.ui({
 
 By default, the parameter is 26px.  
 Affects while row resizing only. If you need to set the default row height you need to use the api/ui.datatable_rowheight_config.md parameter.
+
+@seolinktop: [javascript dashboard framework](https://webix.com)
+@seolink: [datatable](https://webix.com/widget/datatable/)

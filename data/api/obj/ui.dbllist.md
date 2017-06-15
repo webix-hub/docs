@@ -24,3 +24,7 @@ var double_list = webix.ui({
 
 - [Overview of the Double List Widget](desktop/double_list.md)
 - [Samples](http://docs.webix.com/samples/05_list/18_dbllist.html)
+
+
+@seolinktop: [widget library](https://webix.com)
+@seolink: [object list javascript](https://webix.com/widget/list/)

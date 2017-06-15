@@ -26,3 +26,7 @@ The property is applicable only to **line**, **scatter**, **area** charts
 }}
 
 
+
+
+@seolinktop: [widget library](https://webix.com)
+@seolink: [javascript graph visualization](https://webix.com/widget/charts/)

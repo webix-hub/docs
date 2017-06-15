@@ -28,3 +28,6 @@ spreadsheet/conditional_formatting.md#howtostorecssstylesusedinconditions
 
 @relatedsample:
 65_spreadsheet/01_basic/08_conditional_styles.html
+
+@seolinktop: [javascript web framework](https://webix.com)
+@seolink: [spreadsheet javascript library](https://webix.com/spreadsheet/)

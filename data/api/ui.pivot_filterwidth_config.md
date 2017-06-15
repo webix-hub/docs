@@ -18,3 +18,7 @@ The default value is 300.
 @related:
 desktop/pivotchart.md#initialization
 
+
+
+@seolinktop: [javascript ui library](https://webix.com)
+@seolink: [pivot table web](https://webix.com/pivot/)

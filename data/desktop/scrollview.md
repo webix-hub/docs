@@ -66,3 +66,7 @@ Read more about **scroll control** in the [corresponding article](desktop/scroll
 - [MultiView](desktop/multiview.md)
 - [Carousel](desktop/carousel.md)
 - [Accordion](desktop/accordion.md)
+
+
+@seolinktop: [ui library](https://webix.com)
+@seolink: [scroll layout](https://webix.com/widget/scrollview/)

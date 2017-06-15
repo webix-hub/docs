@@ -32,3 +32,6 @@ webix.ready(function(){
 {{sample
 65_spreadsheet/01_basic/01_init.html
 }}
+
+@seolinktop: [widget library](https://webix.com)
+@seolink: [javascript spreadsheet library](https://webix.com/spreadsheet/)

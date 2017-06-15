@@ -76,3 +76,7 @@ The available attributes of the property are:
 </tbody>
 </table>
 
+
+
+@seolinktop: [javascript ui library](https://webix.com)
+@seolink: [chart widget](https://webix.com/widget/charts/)

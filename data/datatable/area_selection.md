@@ -136,3 +136,6 @@ The parameters of area objects are described <a href="#details">above</a>.
 }}
 
 @edition:pro
+
+@seolinktop: [html5 ui library](https://webix.com)
+@seolink: [datatable js](https://webix.com/widget/datatable/)

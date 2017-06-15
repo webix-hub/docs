@@ -42,3 +42,7 @@ Properties
 - api/link/ui.scrollview_scrollspeed_config.md
 - api/link/ui.scrollview_width_config.md
 
+
+
+@seolinktop: [ui library](https://webix.com)
+@seolink: [scrollview](https://webix.com/widget/scrollview/)

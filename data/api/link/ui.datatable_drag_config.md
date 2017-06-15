@@ -11,3 +11,6 @@ webix.ui({
 	datatable/drag_and_drop.md
 @relatedapi:
 	api/ui.datatable_dragcolumn_config.md
+
+@seolinktop: [popular javascript framework](https://webix.com)
+@seolink: [data table](https://webix.com/widget/datatable/)

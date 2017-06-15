@@ -57,3 +57,6 @@ It's can be characterized as follows:
 @keyword: 
 	copy,paste,ctrl, clipboard
     
+
+@seolinktop: [js frameworks](https://webix.com)
+@seolink: [javascript data table](https://webix.com/widget/datatable/)

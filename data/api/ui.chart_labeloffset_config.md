@@ -24,3 +24,7 @@ webix.ui({
 @descr:
 The default value of the property is 20.
 
+
+
+@seolinktop: [javascript framework](https://webix.com)
+@seolink: [javascript graph library](https://webix.com/widget/charts/)

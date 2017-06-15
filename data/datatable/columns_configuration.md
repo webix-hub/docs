@@ -532,3 +532,6 @@ To learn more on this topic, please visit the [Datatable Rowspans and Colspans](
 
 @metadescr: Learn how you can configure columns of the DataTable widget: add or delete columns dynamically, group columns, use styles, etc.
 @doctitle: DataTable widget columns configuration guide.
+
+@seolinktop: [html5 ui library](https://webix.com)
+@seolink: [datagrid javascript](https://webix.com/widget/datatable/)

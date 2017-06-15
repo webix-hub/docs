@@ -266,3 +266,7 @@ var list = webix.ui({
 - api/refs/ui.list_events.md
 - api/refs/ui.list_others.md
 
+
+
+@seolinktop: [html5 library](https://webix.com)
+@seolink: [javascript library list](https://webix.com/widget/list/)

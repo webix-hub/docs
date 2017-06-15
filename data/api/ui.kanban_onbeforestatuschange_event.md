@@ -30,3 +30,6 @@ $$("myBoard").attachEvent("onBeforeStatusChange", function(itemId,newStatus)){
 
 @relatedapi:
 api/ui.kanban_onafterstatuschange_event.md
+
+@seolinktop: [html5 framework](https://webix.com)
+@seolink: [kanban board tool](https://webix.com/kanban/)

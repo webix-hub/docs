@@ -27,3 +27,7 @@ webix.ui({
 @descr:
 
 
+
+
+@seolinktop: [javascript website framework](https://webix.com)
+@seolink: [scrollview](https://webix.com/widget/scrollview/)

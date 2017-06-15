@@ -178,3 +178,7 @@ Properties
 - api/link/ui.datatable_width_config.md
 - api/ui.datatable_ycount_config.md
 
+
+
+@seolinktop: [ui widget library](https://webix.com)
+@seolink: [data table](https://webix.com/widget/datatable/)

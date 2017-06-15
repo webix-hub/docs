@@ -25,3 +25,7 @@ webix.ui({
 	datatable/headers_footers.md
 
 @descr:
+
+
+@seolinktop: [javascript ui framework](https://webix.com)
+@seolink: [javascript datatables](https://webix.com/widget/datatable/)

@@ -12,3 +12,6 @@ Attributes of the **type** object:
 - **width** -  (*number*) the width of the items list.
 
 <i>As a function,  **templateItem**, **templateGroup** and **templateBack** takes a data item object.</i>
+
+@seolinktop: [javascript ui library](https://webix.com)
+@seolink: [list in javascript](https://webix.com/widget/list/)

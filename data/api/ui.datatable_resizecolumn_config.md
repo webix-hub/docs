@@ -38,3 +38,7 @@ By default, the parameter is disabled.
 
 When enabled, the method doesn't actually resize the datatable. After page refresh, size returns to the initial one (provided that you haven't saved the table's state).
 
+
+
+@seolinktop: [best ui framework](https://webix.com)
+@seolink: [javascript datagrid](https://webix.com/widget/datatable/)

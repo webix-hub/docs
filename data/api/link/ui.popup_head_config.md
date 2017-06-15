@@ -14,3 +14,6 @@
 {{note
 Not used in the current version of the library. 
 }}
+
+@seolinktop: [javascript framework](https://webix.com)
+@seolink: [javascript popup](https://webix.com/widget/popup/)

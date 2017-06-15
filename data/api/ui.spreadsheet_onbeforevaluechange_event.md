@@ -22,3 +22,7 @@ $$("ssheet").attachEvent("onBeforeValueChange",function(row,column,newValue,oldV
 @template:	api_event
 @descr:
 
+
+
+@seolinktop: [mvc library](https://webix.com)
+@seolink: [spreadsheet javascript library](https://webix.com/spreadsheet/)

@@ -191,3 +191,7 @@ Methods
 - api/ui.spreadsheet_undo.md
 
 
+
+
+@seolinktop: [widget library](https://webix.com)
+@seolink: [web based spreadsheet](https://webix.com/spreadsheet/)

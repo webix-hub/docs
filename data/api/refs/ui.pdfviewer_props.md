@@ -50,3 +50,7 @@ Properties
 - api/link/ui.pdfviewer_url_config.md
 - api/link/ui.pdfviewer_width_config.md
 
+
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [javascript pdf viewer](https://webix.com/widget/html5_pdf_viewer/)

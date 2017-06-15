@@ -39,3 +39,6 @@ pivot/configuration.md#definingoperationsondata
 @relatedsample:
 61_pivot/03_table_api/02_adding_operation.html
 61_pivot/03_table_api/04_weighted_average.html
+
+@seolinktop: [javascript component library](https://webix.com)
+@seolink: [javascript pivot](https://webix.com/pivot/)

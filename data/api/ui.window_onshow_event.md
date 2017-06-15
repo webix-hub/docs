@@ -25,3 +25,7 @@ some.attachEvent("onShow", function(){
 @descr:
 
 
+
+
+@seolinktop: [javascript ui framework](https://webix.com)
+@seolink: [javascript window open](https://webix.com/widget/window/)

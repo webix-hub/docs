@@ -307,3 +307,7 @@ Applied if the 'templateAvatar' doesn't set html content for the element that sh
 {{sample
 63_kanban/01_basic/04_templates.html
 }}
+
+
+@seolinktop: [mvc library](https://webix.com)
+@seolink: [javascript kanban](https://webix.com/kanban/)

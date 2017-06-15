@@ -68,3 +68,7 @@ Properties
 - api/link/ui.window_width_config.md
 - api/link/ui.window_zindex_config.md
 
+
+
+@seolinktop: [javascript ui framework](https://webix.com)
+@seolink: [javascript window](https://webix.com/widget/window/)

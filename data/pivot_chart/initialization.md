@@ -65,3 +65,6 @@ webix.ui({
 - **groupBy** - the name of the field that will be used to group values by.
 
 @spellcheck: ee, fc, eed
+
+@seolinktop: [html5 library](https://webix.com)
+@seolink: [javascript pivot grid](https://webix.com/pivot/)

@@ -26,3 +26,6 @@ $$("pdf").parse({data:base64data});
 
 @relatedsample:
 60_pro/10_viewers/05_pdf_upload.html
+
+@seolinktop: [js frameworks](https://webix.com)
+@seolink: [pdf js viewer](https://webix.com/widget/html5_pdf_viewer/)

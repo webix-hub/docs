@@ -127,3 +127,7 @@ Methods
 - api/link/ui.pivot_updateitem.md
 
 
+
+
+@seolinktop: [ui component library](https://webix.com)
+@seolink: [javascript pivot table](https://webix.com/pivot/)

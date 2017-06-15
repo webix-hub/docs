@@ -63,3 +63,7 @@ Webix Pivot uses two filters:
 If there is no operator, a filter will use text match for filtering;
 - **select** - filtering is performed by options that are automatically gathered from the dataset (all unique values of this property). 
 For instance, if you choose *Continents*, all unique continent names from the dataset become options.
+
+
+@seolinktop: [easy javascript framework](https://webix.com)
+@seolink: [pivot table web](https://webix.com/pivot/)

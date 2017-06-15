@@ -33,3 +33,7 @@ webix.ui({
 
 The value defaults to **50**. 
 
+
+
+@seolinktop: [open source html5 framework](https://webix.com)
+@seolink: [javascript datatables](https://webix.com/widget/datatable/)

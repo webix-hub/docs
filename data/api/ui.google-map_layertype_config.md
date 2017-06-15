@@ -26,3 +26,7 @@ desktop/googlemap.md
 
 @relatedsample:
 34_googlemap/05_heatmap.html
+
+
+@seolinktop: [javascript component library](https://webix.com)
+@seolink: [google maps javascript api](https://webix.com/widget/maps/)

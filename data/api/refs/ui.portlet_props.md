@@ -62,3 +62,7 @@ Properties
 - api/link/ui.portlet_visiblebatch_config.md
 - api/link/ui.portlet_width_config.md
 
+
+
+@seolinktop: [lightweight js framework](https://webix.com)
+@seolink: [javascript portlet](https://webix.com/widget/portlet/)

@@ -47,3 +47,7 @@ Events
 - api/link/ui.pdfviewer_onviewresize_event.md
 
 
+
+
+@seolinktop: [js frameworks](https://webix.com)
+@seolink: [pdf js viewer](https://webix.com/widget/html5_pdf_viewer/)

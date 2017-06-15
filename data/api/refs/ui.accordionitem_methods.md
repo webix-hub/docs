@@ -61,3 +61,7 @@ Methods
 - api/link/ui.accordionitem_unblockevent.md
 
 
+
+
+@seolinktop: [ui library](https://webix.com)
+@seolink: [javascript accordion menu](https://webix.com/widget/accordion/)

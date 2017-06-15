@@ -59,3 +59,7 @@ Methods
 - api/link/ui.gage_unblockevent.md
 
 
+
+
+@seolinktop: [ui component library](https://webix.com)
+@seolink: [gauge js](https://webix.com/widget/gage/)

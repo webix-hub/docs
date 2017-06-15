@@ -6,3 +6,7 @@
 @related: 
 	datatable/events_handling.md
     desktop/event_handling.md
+
+
+@seolinktop: [js frameworks](https://webix.com)
+@seolink: [datagrid javascript](https://webix.com/widget/datatable/)

@@ -29,3 +29,6 @@ spreadsheet/cell_content.md#lockingunlockingcells
 
 @relatedapi:
 api/ui.spreadsheet_lockcell.md
+
+@seolinktop: [ui component library](https://webix.com)
+@seolink: [spreadsheet javascript library](https://webix.com/spreadsheet/)

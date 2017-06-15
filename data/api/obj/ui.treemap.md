@@ -33,3 +33,6 @@ var treemap = webix.ui({
 
 - [Overview of the Treemap Widget](desktop/treemap.md)
 - [Samples](http://docs.webix.com/samples/60_pro/11_treemap/index.html)
+
+@seolinktop: [javascript ui framework](https://webix.com)
+@seolink: [treemap visualization](https://webix.com/widget/treemap/)

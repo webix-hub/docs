@@ -22,3 +22,7 @@ webix.ui({
 The property is applicable only to **pie3D** charts
 }}
 
+
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [chart widget](https://webix.com/widget/charts/)

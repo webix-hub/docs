@@ -164,3 +164,7 @@ Note that there's no built-in possibility to edit data with GroupList. You shoul
 - [X-List](desktop/xlist.md)
 - [Double List](desktop/double_list.md)
 
+
+
+@seolinktop: [javascript framework](https://webix.com)
+@seolink: [list in javascript](https://webix.com/widget/list/)

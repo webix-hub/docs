@@ -200,3 +200,6 @@ webix.ui({
 ~~~
 
 {{sample  61_pivot/02_chart/07_readonly.html}}
+
+@seolinktop: [mvc library](https://webix.com)
+@seolink: [javascript pivot grid](https://webix.com/pivot/)

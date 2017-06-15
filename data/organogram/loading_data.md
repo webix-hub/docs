@@ -124,3 +124,7 @@ As the Organogram component is based on the TreeStore, you can also load data fr
 For the details, read the article datatree/loading_data.md#loadingfromadatabase.
 
 @edition:pro
+
+
+@seolinktop: [javascript ui library](https://webix.com)
+@seolink: [organizational chart maker](https://webix.com/widget/organogram/)

@@ -216,3 +216,6 @@ As you can see, **common.checkbox()** and **common.radio()** functions take four
 @index:
 - datatable/templates_syntax.md
 - datatable/sparklines.md
+
+@seolinktop: [best ui framework](https://webix.com)
+@seolink: [datatable](https://webix.com/widget/datatable/)

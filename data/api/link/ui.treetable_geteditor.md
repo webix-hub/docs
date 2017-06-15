@@ -39,3 +39,6 @@ some.getEditor().setValue( new_value );
 //set focus
 some.getEditor().focus();
 ~~~
+
+@seolinktop: [lightweight js framework](https://webix.com)
+@seolink: [javascript tree grid](https://webix.com/widget/treetable/)

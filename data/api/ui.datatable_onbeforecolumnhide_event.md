@@ -22,3 +22,7 @@ The event is cancellable. If a handler returns *false*, the column will not be h
 api/ui.datatable_onaftercolumnhide_event.md
 api/ui.datatable_hidecolumn.md
 
+
+
+@seolinktop: [popular javascript framework](https://webix.com)
+@seolink: [data table](https://webix.com/widget/datatable/)

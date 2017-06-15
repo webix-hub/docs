@@ -25,3 +25,7 @@ Others
 - api/link/ui.carousel_name_other.md
 
 
+
+
+@seolinktop: [js frameworks](https://webix.com)
+@seolink: [javascript carousel](https://webix.com/widget/carousel/)

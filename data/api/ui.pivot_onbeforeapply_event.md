@@ -38,3 +38,7 @@ pivot/customization.md#changingpivotstructure
 @relatedapi:
 - api/ui.pivot_onapply_event.md
 - api/ui.pivot_onbeforecancel_event.md
+
+
+@seolinktop: [widget library](https://webix.com)
+@seolink: [pivot table web](https://webix.com/pivot/)

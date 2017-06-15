@@ -29,3 +29,6 @@ Index represents the order of columns in the table structure.
 Zero-based numbering, i.e. the index of the first column == 0.
 
 	
+
+@seolinktop: [easy javascript framework](https://webix.com)
+@seolink: [web datagrid](https://webix.com/widget/datatable/)

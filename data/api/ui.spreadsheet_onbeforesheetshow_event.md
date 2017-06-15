@@ -22,3 +22,6 @@ Returning *false* in the handler function will block the operation.
 
 @relatedapi:
 api/ui.spreadsheet_onaftersheetshow_event.md
+
+@seolinktop: [best ui framework](https://webix.com)
+@seolink: [javascript spreadshee](https://webix.com/spreadsheet/)

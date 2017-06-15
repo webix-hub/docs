@@ -44,3 +44,7 @@ The parameter is used within the component's **data** that is presented as an ob
 @edition:pro    
 
 
+
+
+@seolinktop: [html5 framework](https://webix.com)
+@seolink: [javascript datatable](https://webix.com/widget/datatable/)

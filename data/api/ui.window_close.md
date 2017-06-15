@@ -21,3 +21,7 @@ close
 @descr: Removes the window from the app with no possibility to show it back. To hide the window, use the corresponding method.  
 
 
+
+
+@seolinktop: [html5 ui library](https://webix.com)
+@seolink: [javascript open new window](https://webix.com/widget/window/)

@@ -35,3 +35,7 @@ Events
 - api/link/ui.barcode_onviewresize_event.md
 
 
+
+
+@seolinktop: [javascript website framework](https://webix.com)
+@seolink: [javascript barcode](https://webix.com/widget/barcode/)

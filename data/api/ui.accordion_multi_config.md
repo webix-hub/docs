@@ -30,3 +30,7 @@ Possible value here are:
 - **"mixed"** - all panels can be expanded at a time, but you cannot close them all. One pane remains visible. 
 
 
+
+
+@seolinktop: [ui library](https://webix.com)
+@seolink: [javascript accordion](https://webix.com/widget/accordion/)

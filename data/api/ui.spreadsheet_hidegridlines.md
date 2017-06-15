@@ -19,3 +19,7 @@ $$("ssheet").hideGridlines(state);
 @relatedsample:
 65_spreadsheet/02_api/04_borders_and_gridlines.html
 
+
+
+@seolinktop: [ui widget library](https://webix.com)
+@seolink: [web based spreadsheet](https://webix.com/spreadsheet/)

@@ -34,3 +34,6 @@ The properties of the *context* object are:
 
 @relatedsample:
 63_kanban/02_events/03_drag_n_drop_events.html
+
+@seolinktop: [easy javascript framework](https://webix.com)
+@seolink: [javascript list](https://webix.com/widget/list/)

@@ -28,3 +28,7 @@ webix.ui({
 If a Datatable features 10 rows, the resulting height will be <i>datatable.config.rowHeight</i>*10 plus borders.
 
 
+
+
+@seolinktop: [javascript website framework](https://webix.com)
+@seolink: [javascript data table](https://webix.com/widget/datatable/)

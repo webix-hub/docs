@@ -181,3 +181,7 @@ Events
 - api/link/ui.datatable_onviewresize_event.md
 
 
+
+
+@seolinktop: [javascript framework](https://webix.com)
+@seolink: [datagrid in html5](https://webix.com/widget/datatable/)

@@ -29,3 +29,7 @@ webix.ui({
 The property is applicable only to **pie** charts
 }}
 
+
+
+@seolinktop: [javascript component library](https://webix.com)
+@seolink: [javascript graphing library](https://webix.com/widget/charts/)

@@ -10,3 +10,6 @@ webix.ui({
     width: -1
 });
 ~~~
+
+@seolinktop: [best ui framework](https://webix.com)
+@seolink: [javascript barcode generator](https://webix.com/widget/barcode/)

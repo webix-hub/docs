@@ -50,3 +50,7 @@ dtable.select(row_id, column_id, preserve);
 - column_id -  (<i>string/int</i>) the column id
 - preserve -  (<i>bool</i>)   sets whether the previous selection should be saved
 
+
+
+@seolinktop: [javascript framework](https://webix.com)
+@seolink: [javascript data table](https://webix.com/widget/datatable/)

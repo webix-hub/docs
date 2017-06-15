@@ -109,3 +109,6 @@ webix.i18n.setLocale('ru-RU');
 {{sample
 64_file_manager/03_customization/07_localization.html
 }}
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [javascript file explorer](https://webix.com/filemanager/)

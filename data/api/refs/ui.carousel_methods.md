@@ -73,3 +73,7 @@ Methods
 - api/link/ui.carousel_unblockevent.md
 
 
+
+
+@seolinktop: [js framework](https://webix.com)
+@seolink: [carousel slider](https://webix.com/widget/carousel/)

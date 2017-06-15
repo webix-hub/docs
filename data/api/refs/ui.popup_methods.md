@@ -65,3 +65,7 @@ Methods
 - api/link/ui.popup_unblockevent.md
 
 
+
+
+@seolinktop: [mvc library](https://webix.com)
+@seolink: [pop up library](https://webix.com/widget/popup/)

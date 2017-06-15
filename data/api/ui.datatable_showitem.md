@@ -20,3 +20,6 @@ dtable.showItem(123)
 - api/ui.datatable_showitembyindex.md
 - api/ui.datatable_scrollto.md
 - api/ui.datatable_getscrollstate.md
+
+@seolinktop: [web development library](https://webix.com)
+@seolink: [datagrid javascript](https://webix.com/widget/datatable/)

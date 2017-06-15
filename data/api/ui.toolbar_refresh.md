@@ -30,3 +30,7 @@ $$("b1").refresh(); // value:"Edit" -> value:"Save"
 @descr:
 
 
+
+
+@seolinktop: [widget library](https://webix.com)
+@seolink: [toolbar js](https://webix.com/widget/toolbar/)

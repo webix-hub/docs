@@ -38,3 +38,7 @@ webix.ui({
 	datatable/editing.md
     desktop/edit.md
 
+
+
+@seolinktop: [ui library](https://webix.com)
+@seolink: [web datagrid](https://webix.com/widget/datatable/)

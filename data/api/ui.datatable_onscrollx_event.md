@@ -21,3 +21,6 @@ dtable.attachEvent("onScrollX", function(){
     api/ui.datatable_onscrolly_event.md
 @related:
 	datatable/sizing.md#scrolling
+
+@seolinktop: [popular javascript framework](https://webix.com)
+@seolink: [datagrid in html5](https://webix.com/widget/datatable/)

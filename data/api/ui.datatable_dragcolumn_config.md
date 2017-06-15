@@ -36,3 +36,6 @@ As a string the parameter can take only one value:
  
 With such a value set, items can't be dragged out of the calling object boundaries.
 Also, while dragging an item the remaining items are automatically rearranged so that when you drop the item to the final destination the remaining items won't need to do any rearrangements.
+
+@seolinktop: [popular javascript framework](https://webix.com)
+@seolink: [javascript data table](https://webix.com/widget/datatable/)

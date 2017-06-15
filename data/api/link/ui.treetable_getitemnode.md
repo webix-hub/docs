@@ -17,3 +17,6 @@ HTML element of a cell with these row and column IDs:
 ~~~js
 $$("mydatatable").getItemNode({ row: 2, column:"title"});
 ~~~
+
+@seolinktop: [javascript framework](https://webix.com)
+@seolink: [tree grid ui](https://webix.com/widget/treetable/)

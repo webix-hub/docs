@@ -25,3 +25,6 @@ $$("ss1").setFormat(2,2,"[>1000]> 0.0;[>100]Check 0,000.0#;[=0]Nope");
 
 @related:
 spreadsheet/cell_content.md#settingacustomnumberformat
+
+@seolinktop: [web development library](https://webix.com)
+@seolink: [javascript spreadshee](https://webix.com/spreadsheet/)

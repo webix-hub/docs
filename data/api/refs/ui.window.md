@@ -153,3 +153,7 @@ var window = webix.ui({
 - api/refs/ui.window_events.md
 - api/refs/ui.window_others.md
 
+
+
+@seolinktop: [javascript web framework](https://webix.com)
+@seolink: [js window](https://webix.com/widget/window/)

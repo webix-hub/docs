@@ -19,3 +19,6 @@ The default value is "right". In any case, the label is always placed to the lef
 @related:
 
 desktop/pivotchart.md#initialization
+
+@seolinktop: [web development library](https://webix.com)
+@seolink: [javascript pivot](https://webix.com/pivot/)

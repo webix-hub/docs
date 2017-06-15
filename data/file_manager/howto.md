@@ -194,3 +194,6 @@ webix.ready(function(){
 }}
 
 @spellcheck: Tos
+
+@seolinktop: [html5 library](https://webix.com)
+@seolink: [html5 file manager](https://webix.com/filemanager/)

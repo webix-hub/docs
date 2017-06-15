@@ -25,3 +25,6 @@ spreadsheet/loading_data.md#savingandloadingstates
 
 @relatedsample:
 65_spreadsheet/02_api/02_serialization.html
+
+@seolinktop: [html5 ui library](https://webix.com)
+@seolink: [spreadsheet javascript library](https://webix.com/spreadsheet/)

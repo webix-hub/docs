@@ -57,3 +57,7 @@ $("table").webix_datatable();
 
 
 
+
+
+@seolinktop: [open source html5 framework](https://webix.com)
+@seolink: [datatable](https://webix.com/widget/datatable/)

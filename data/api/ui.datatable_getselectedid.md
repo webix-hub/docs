@@ -52,3 +52,7 @@ If the "asString" parameter was set, the result value depends on the selection m
     api/ui.datatable_unselect.md
     api/ui.datatable_clearselection.md
 
+
+
+@seolinktop: [ui component library](https://webix.com)
+@seolink: [javascript datagrid library](https://webix.com/widget/datatable/)

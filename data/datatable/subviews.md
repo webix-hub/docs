@@ -192,3 +192,6 @@ webix.ui({
 {{sample 60_pro/01_datatable/07_sub/07_sub_form.html}}
 
 @edition:pro
+
+@seolinktop: [mvc library](https://webix.com)
+@seolink: [datatable html](https://webix.com/widget/datatable/)

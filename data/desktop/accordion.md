@@ -98,3 +98,6 @@ to set the necessary mode.
 
 @index: 
   - desktop/accordionitem.md
+
+@seolinktop: [javascript ui framework](https://webix.com)
+@seolink: [accordion tabs](https://webix.com/widget/accordion/)

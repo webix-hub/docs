@@ -17,3 +17,7 @@ var class = $$('myaccordion').config.panelClass;
 @descr:
 The default value is "accordionitem".
 
+
+
+@seolinktop: [html5 library](https://webix.com)
+@seolink: [accordion js](https://webix.com/widget/accordion/)

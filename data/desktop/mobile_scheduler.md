@@ -80,3 +80,7 @@ Webix Scheduler was developed to be used in mobile web apps that run in Webkit-b
 
 
 
+
+
+@seolinktop: [ui component library](https://webix.com)
+@seolink: [html5 scheduler](https://webix.com/scheduler/)

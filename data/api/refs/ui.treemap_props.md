@@ -110,3 +110,7 @@ Properties
 - api/ui.treemap_value_config.md
 - api/link/ui.treemap_width_config.md
 
+
+
+@seolinktop: [easy javascript framework](https://webix.com)
+@seolink: [treemap visualization](https://webix.com/widget/treemap/)

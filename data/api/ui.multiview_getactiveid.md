@@ -19,3 +19,7 @@ $$("views").getActiveId();
 @descr:
 
 
+
+
+@seolinktop: [widget library](https://webix.com)
+@seolink: [multi view](https://webix.com/widget/multiview/)

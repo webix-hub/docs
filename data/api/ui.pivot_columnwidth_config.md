@@ -17,3 +17,7 @@ webix.ui({
 @descr:
 The default value is 150.
 
+
+
+@seolinktop: [web control library](https://webix.com)
+@seolink: [pivot table web](https://webix.com/pivot/)

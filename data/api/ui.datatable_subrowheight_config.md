@@ -23,3 +23,6 @@ webix.ui({
 	60_pro/01_datatable/07_sub/02_sub_autoheight.html
 
 @edition:pro
+
+@seolinktop: [javascript framework](https://webix.com)
+@seolink: [ui datagrid](https://webix.com/widget/datatable/)

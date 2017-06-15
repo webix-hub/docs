@@ -31,3 +31,7 @@ webix.ui({
 	desktop/borders.md
 @relatedsample:
 	01_layout/05_header_complex.html
+
+
+@seolinktop: [javascript ui framework](https://webix.com)
+@seolink: [ui layout](https://webix.com/widget/layout/)

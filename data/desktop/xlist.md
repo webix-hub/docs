@@ -51,3 +51,6 @@ Note that there's no built-in possibility to edit data with list. You should cre
 - [UnitList](desktop/unitlist.md)
 - [GroupList](desktop/grouplist.md)
 - [Double List](desktop/double_list.md)
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [javascript list](https://webix.com/widget/list/)

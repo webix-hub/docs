@@ -413,3 +413,6 @@ var datatable = webix.ui({
 - api/refs/ui.datatable_props.md
 - api/refs/ui.datatable_events.md
 - api/refs/ui.datatable_others.md
+
+@seolinktop: [popular javascript framework](https://webix.com)
+@seolink: [javascript datagrid library](https://webix.com/widget/datatable/)

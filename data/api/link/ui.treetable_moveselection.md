@@ -16,3 +16,6 @@ modes)
     api/ui.datatable_clearselection.md
 @related:
 	datatable/selection.md
+
+@seolinktop: [popular javascript framework](https://webix.com)
+@seolink: [tree table](https://webix.com/widget/treetable/)

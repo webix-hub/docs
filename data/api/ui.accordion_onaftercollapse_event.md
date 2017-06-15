@@ -21,3 +21,6 @@ some.attachEvent("onAfterCollapse", function(id){
 	api/ui.accordion_onafterexpand_event.md
 	
 @descr:
+
+@seolinktop: [javascript ui components library](https://webix.com)
+@seolink: [accordion ui](https://webix.com/widget/accordion/)

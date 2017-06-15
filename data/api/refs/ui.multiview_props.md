@@ -50,3 +50,7 @@ Properties
 - api/link/ui.multiview_visiblebatch_config.md
 - api/link/ui.multiview_width_config.md
 
+
+
+@seolinktop: [mvc library](https://webix.com)
+@seolink: [multiview](https://webix.com/widget/multiview/)

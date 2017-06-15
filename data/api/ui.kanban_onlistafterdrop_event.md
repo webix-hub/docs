@@ -32,3 +32,6 @@ The properties of the *context* object are:
 
 @relatedapi:
 api/ui.kanban_onlistbeforedrop_event.md
+
+@seolinktop: [javascript ui components library](https://webix.com)
+@seolink: [javascript list](https://webix.com/widget/list/)

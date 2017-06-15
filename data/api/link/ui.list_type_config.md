@@ -6,3 +6,6 @@ Attributes of the **type** object:
 - **height** - (*number*) the height of an item in the component.
 - **template** - (*function, string*) an html template that will define item presentation in the component.
 - **width** - (*number*) the width of the items list.
+
+@seolinktop: [web development library](https://webix.com)
+@seolink: [javascript library list](https://webix.com/widget/list/)

@@ -114,3 +114,7 @@ Properties
 - api/link/ui.grouplist_xcount_config.md
 - api/link/ui.grouplist_ycount_config.md
 
+
+
+@seolinktop: [javascript framework](https://webix.com)
+@seolink: [object list javascript](https://webix.com/widget/list/)

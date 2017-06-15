@@ -19,3 +19,7 @@ $$("pdf").clear();
 
 @related:
 desktop/pdfviewer.md
+
+
+@seolinktop: [web control library](https://webix.com)
+@seolink: [javascript pdf viewer](https://webix.com/widget/html5_pdf_viewer/)

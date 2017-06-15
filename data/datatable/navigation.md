@@ -125,3 +125,6 @@ dtable = new webix.ui({
 You can read more about editing and active editor navigation in article datatable/editing.md.
 
 {{sample 15_datatable/04_editing/02_tab_support.html }}
+
+@seolinktop: [javascript ui library](https://webix.com)
+@seolink: [datagrid in html5](https://webix.com/widget/datatable/)

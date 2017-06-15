@@ -1,1 +1,4 @@
 @link: api/eventsystem_hasevent.md
+
+@seolinktop: [easy javascript framework](https://webix.com)
+@seolink: [ui draggable](https://webix.com/widget/portlet/)

@@ -23,3 +23,6 @@ var googlemap = webix.ui({
 
 - [Overview of the GoogleMap Widget](desktop/googlemap.md)
 - [Samples](http://docs.webix.com/samples/34_googlemap/index.html)
+
+@seolinktop: [easy javascript framework](https://webix.com)
+@seolink: [JavaScript Map](https://webix.com/widget/maps/)

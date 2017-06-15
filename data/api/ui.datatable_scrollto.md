@@ -28,3 +28,7 @@ In case of dynamic loading: if the view is scrolled to the position at which the
 	desktop/scroll_control.md
 	datatable/sizing.md#scrolling
 
+
+
+@seolinktop: [web development library](https://webix.com)
+@seolink: [javascript datatables](https://webix.com/widget/datatable/)

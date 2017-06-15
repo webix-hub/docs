@@ -18,3 +18,6 @@ $$('dtable').attachEvent("onAfterAreaRemove", function(area_name){
 @relatedapi:
 	api/ui.datatable_onbeforearearemove_event.md
 	api/ui.datatable_removeselectarea.md
+
+@seolinktop: [html5 framework](https://webix.com)
+@seolink: [data table](https://webix.com/widget/datatable/)

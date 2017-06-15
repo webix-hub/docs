@@ -13,3 +13,7 @@ webix.ui({ view:"window", resize:true });
 @descr:
 
 Resize mode provides users with a possibility to resize the window in browser.
+
+
+@seolinktop: [javascript component library](https://webix.com)
+@seolink: [js window](https://webix.com/widget/window/)

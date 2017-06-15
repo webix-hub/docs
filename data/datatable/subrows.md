@@ -115,3 +115,6 @@ $$("myDatatable").closeSub(id);
 ~~~
 
 @edition: pro
+
+@seolinktop: [javascript ui framework](https://webix.com)
+@seolink: [javascript datagrid](https://webix.com/widget/datatable/)

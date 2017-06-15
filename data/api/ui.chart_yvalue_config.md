@@ -29,3 +29,7 @@ The method is analog to the api/ui.chart_value_config.md property.
 {{note
 The property is applicable only to **scatter** charts
 }}
+
+
+@seolinktop: [javascript website framework](https://webix.com)
+@seolink: [chart library](https://webix.com/widget/charts/)

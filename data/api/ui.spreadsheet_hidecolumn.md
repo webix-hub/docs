@@ -27,3 +27,7 @@ api/ui.spreadsheet_deletecolumn.md
 api/ui.spreadsheet_getcolumn.md
 api/ui.spreadsheet_insertcolumn.md
 api/ui.spreadsheet_iscolumnvisible.md
+
+
+@seolinktop: [javascript ui components library](https://webix.com)
+@seolink: [web spreadsheet](https://webix.com/spreadsheet/)

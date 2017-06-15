@@ -32,3 +32,7 @@ webix.ui({
     desktop/accordionitem.md
 @descr:
 The *false* value will hide the header.
+
+
+@seolinktop: [popular javascript framework](https://webix.com)
+@seolink: [accordion tabs](https://webix.com/widget/accordion/)

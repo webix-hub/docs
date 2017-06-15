@@ -35,3 +35,7 @@ Events
 - api/link/ui.scrollview_onviewresize_event.md
 
 
+
+
+@seolinktop: [widget library](https://webix.com)
+@seolink: [scroll container](https://webix.com/widget/scrollview/)

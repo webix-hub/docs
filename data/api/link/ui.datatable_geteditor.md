@@ -39,3 +39,6 @@ some.getEditor().setValue( new_value );
 //set focus
 some.getEditor().focus();
 ~~~
+
+@seolinktop: [html5 ui library](https://webix.com)
+@seolink: [datatable js](https://webix.com/widget/datatable/)

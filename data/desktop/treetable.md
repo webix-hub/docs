@@ -103,3 +103,6 @@ Common tasks here include the following and coincide with those of the [datatabl
 
 @metadescr: Learn the basics of usage of the tree table JavaScript widget that allows displaying hierarchical data within the data table. 
 @doctitle: TreeTable UI widget documentation: overview, initialization, etc.
+
+@seolinktop: [html5 library](https://webix.com)
+@seolink: [javascript tree grid](https://webix.com/widget/treetable/)

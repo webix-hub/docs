@@ -32,3 +32,7 @@ webix.ui({
 @template:	api_config
 @defined:	ui.accordionitem	
 @descr:
+
+
+@seolinktop: [lightweight js framework](https://webix.com)
+@seolink: [accordion menu](https://webix.com/widget/accordion/)

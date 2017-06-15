@@ -81,3 +81,7 @@ To prevent it and make all values available for analysis, you can use the logari
 
 
 <img src="pivot/pivot_chart_logarithmic.png">
+
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [javascript pivot table](https://webix.com/pivot/)

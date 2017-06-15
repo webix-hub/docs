@@ -37,3 +37,6 @@ webix.ui({
 ~~~
 
 {{sample 61_pivot/02_chart/05_locale.html}}
+
+@seolinktop: [lightweight js framework](https://webix.com)
+@seolink: [javascript pivot grid](https://webix.com/pivot/)

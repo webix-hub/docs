@@ -28,3 +28,6 @@ $$('item1').expand();
 	api/ui.accordionitem_collapse.md
 @related: 
 	desktop/accordionitem.md
+
+@seolinktop: [javascript dashboard framework](https://webix.com)
+@seolink: [accordion tabs](https://webix.com/widget/accordion/)

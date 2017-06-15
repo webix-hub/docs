@@ -20,3 +20,7 @@ For understanding the basic concepts and getting the desired information in the 
 3. [Events handling](datatable/events_handling.md) - says how to use events: to attach and detach, which events can be handled and how.
 4. [API Reference](api/refs/ui.datatable.md) - provides reference information you need for coding: all the available methods, parameters and events of the library. 
 
+
+
+@seolinktop: [javascript ui framework](https://webix.com)
+@seolink: [datatable](https://webix.com/widget/datatable/)

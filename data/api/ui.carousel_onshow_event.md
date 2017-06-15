@@ -28,3 +28,7 @@ carousel.attachEvent("onShow", function(id){
 
 
 
+
+
+@seolinktop: [html5 library](https://webix.com)
+@seolink: [javascript image slideshow](https://webix.com/widget/carousel/)

@@ -18,3 +18,6 @@ $$("pivot").attachEvent("onPopup", function(popup){
 
 @related:
 pivot/customization.md#popupcustomization
+
+@seolinktop: [javascript framework](https://webix.com)
+@seolink: [javascript pivot](https://webix.com/pivot/)

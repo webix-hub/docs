@@ -17,3 +17,7 @@ The default value is 100.
 
 @related:
 desktop/pivotchart.md#initialization
+
+
+@seolinktop: [javascript dashboard framework](https://webix.com)
+@seolink: [javascript pivot](https://webix.com/pivot/)

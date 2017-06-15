@@ -55,3 +55,6 @@ webix.ready(function(){
 }}
 
 @spellcheck: kanban
+
+@seolinktop: [mvc library](https://webix.com)
+@seolink: [kanban board tool](https://webix.com/kanban/)

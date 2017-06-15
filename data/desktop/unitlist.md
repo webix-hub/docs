@@ -102,3 +102,6 @@ Note that there's no built-in possibility to edit data with UnitList. You should
 - [GroupList](desktop/grouplist.md)
 - [X-list](desktop/xlist.md)
 - [UnitList CSS Image Map](desktop/unitlist_css.md)
+
+@seolinktop: [javascript ui components library](https://webix.com)
+@seolink: [javascript list](https://webix.com/widget/list/)

@@ -144,3 +144,7 @@ var accordion = webix.ui({
 - api/refs/ui.accordion_events.md
 - api/refs/ui.accordion_others.md
 
+
+
+@seolinktop: [best ui framework](https://webix.com)
+@seolink: [accordion ui](https://webix.com/widget/accordion/)

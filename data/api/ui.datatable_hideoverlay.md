@@ -20,3 +20,7 @@ on: {onAfterLoad:function(){
 	15_datatable/01_loading/05_load_message.html 
 @related:
 	datatable/loading_data.md#loadingscreen
+
+
+@seolinktop: [js frameworks](https://webix.com)
+@seolink: [datagrid in html5](https://webix.com/widget/datatable/)

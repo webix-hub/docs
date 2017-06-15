@@ -17,3 +17,7 @@ $$("pivot").attachEvent("onHeaderInit", function(header){
 @template:	api_event
 @descr:
 
+
+
+@seolinktop: [popular javascript framework](https://webix.com)
+@seolink: [javascript pivot grid](https://webix.com/pivot/)

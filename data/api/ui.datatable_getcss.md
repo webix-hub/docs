@@ -18,3 +18,7 @@ $$("table").getCss(2,"title"); // -> "webix_cell webix_cell_select"
 @template:	api_method
 @descr:
 
+
+
+@seolinktop: [javascript ui framework](https://webix.com)
+@seolink: [datagrid javascript](https://webix.com/widget/datatable/)

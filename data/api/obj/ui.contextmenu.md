@@ -36,3 +36,6 @@ var contextmenu = webix.ui({
 
 - [Overview of the ContextMenu Widget](desktop/contextmenu.md)
 - [Samples](http://docs.webix.com/samples/03_menu/index.html)
+
+@seolinktop: [widget library](https://webix.com)
+@seolink: [javascript context menu](https://webix.com/widget/contextmenu/)

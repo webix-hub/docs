@@ -19,3 +19,7 @@ var cells = $$("ssheet").getSelectedId();
 @template:	api_method
 @descr:
 
+
+
+@seolinktop: [ui widget library](https://webix.com)
+@seolink: [javascript spreadshee](https://webix.com/spreadsheet/)

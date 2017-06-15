@@ -22,3 +22,7 @@ var window = webix.ui({
 
 - [Overview of the Window Widget](desktop/window.md)
 - [Samples](http://docs.webix.com/samples/10_window/index.html)
+
+
+@seolinktop: [lightweight js framework](https://webix.com)
+@seolink: [javascript new window](https://webix.com/widget/window/)

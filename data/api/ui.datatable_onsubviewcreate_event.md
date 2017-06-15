@@ -23,3 +23,6 @@ datatable/subviews.md
     60_pro/01_datatable/07_sub/07_sub_form.html
     
 @edition:pro
+
+@seolinktop: [html5 library](https://webix.com)
+@seolink: [web datagrid](https://webix.com/widget/datatable/)

@@ -27,3 +27,7 @@ webix.ui({
 @related:
 desktop/double_list.md
 
+
+
+@seolinktop: [html5 framework](https://webix.com)
+@seolink: [object list javascript](https://webix.com/widget/list/)

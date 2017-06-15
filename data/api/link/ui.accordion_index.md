@@ -9,3 +9,6 @@
 
 @example:
 $$("myAcc").index($$('cell1'))
+
+@seolinktop: [javascript dashboard framework](https://webix.com)
+@seolink: [accordion ui](https://webix.com/widget/accordion/)

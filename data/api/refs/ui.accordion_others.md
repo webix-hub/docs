@@ -23,3 +23,7 @@ Others
 - api/link/ui.accordion_name_other.md
 
 
+
+
+@seolinktop: [html5 framework](https://webix.com)
+@seolink: [accordion menu](https://webix.com/widget/accordion/)

@@ -25,3 +25,6 @@ $$("ssheet").attachEvent("onCellChange", function(row, column, value){
 
 @related:
 spreadsheet/handling_events.md
+
+@seolinktop: [ui widget library](https://webix.com)
+@seolink: [spreadsheet](https://webix.com/spreadsheet/)

@@ -26,3 +26,7 @@ api/ui.spreadsheet_hiderow.md
 api/ui.spreadsheet_insertrow.md
 api/ui.spreadsheet_isrowvisible.md
 
+
+
+@seolinktop: [javascript website framework](https://webix.com)
+@seolink: [spreadsheet javascript library](https://webix.com/spreadsheet/)

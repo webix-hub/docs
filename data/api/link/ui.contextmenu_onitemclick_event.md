@@ -12,3 +12,6 @@ The event scope is limited to menu level. It can be attached  either to a top-le
 or to any submenu, but not for the whole menu. 
 
 At the same time, the api/link/ui.contextmenu_onmenuitemclick_event.md can catch item clicks on any level.
+
+@seolinktop: [web development library](https://webix.com)
+@seolink: [javascript context menu](https://webix.com/widget/contextmenu/)

@@ -30,3 +30,7 @@ webix.ui({
   api/ui.datatable_select_config.md
   api/ui.datatable_blockselect_config.md
   
+
+
+@seolinktop: [javascript ui framework](https://webix.com)
+@seolink: [javascript datagrid](https://webix.com/widget/datatable/)

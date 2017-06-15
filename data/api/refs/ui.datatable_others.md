@@ -51,3 +51,7 @@ Others
 - api/link/ui.datatable_waitdata_other.md
 
 
+
+
+@seolinktop: [html5 framework](https://webix.com)
+@seolink: [datatable](https://webix.com/widget/datatable/)

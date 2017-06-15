@@ -23,3 +23,6 @@ webix.ui({
 
 
 If enabled, validation will run during text typing in editor
+
+@seolinktop: [html5 framework](https://webix.com)
+@seolink: [html5 datatable](https://webix.com/widget/datatable/)

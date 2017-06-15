@@ -25,3 +25,6 @@ $$('carousel1').showPrev();
 	20_multiview/06_carousel.html
 @related:
 	desktop/carousel.md
+
+@seolinktop: [easy javascript framework](https://webix.com)
+@seolink: [slideshow javascript](https://webix.com/widget/carousel/)

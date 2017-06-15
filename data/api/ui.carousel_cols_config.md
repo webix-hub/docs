@@ -26,3 +26,7 @@ webix.ui({
 @descr:
 
 
+
+
+@seolinktop: [javascript website framework](https://webix.com)
+@seolink: [carousel script](https://webix.com/widget/carousel/)

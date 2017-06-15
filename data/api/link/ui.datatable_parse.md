@@ -9,3 +9,6 @@
     api/link/ui.datatable_load.md
 
  
+
+@seolinktop: [js framework](https://webix.com)
+@seolink: [javascript datatables](https://webix.com/widget/datatable/)

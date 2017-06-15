@@ -33,3 +33,7 @@ on:{
 Good for "Loading" and "No data" notifications. 
 
 Can be styled with the help of the **webix_datatable_overlay** css class
+
+
+@seolinktop: [javascript dashboard framework](https://webix.com)
+@seolink: [datatable](https://webix.com/widget/datatable/)

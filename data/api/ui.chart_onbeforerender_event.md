@@ -22,3 +22,7 @@ some.attachEvent("onBeforeRender", function(){
 @descr:
 Returning *false* from the event handler will block further processing.
 
+
+
+@seolinktop: [web control library](https://webix.com)
+@seolink: [javascript graph library](https://webix.com/widget/charts/)

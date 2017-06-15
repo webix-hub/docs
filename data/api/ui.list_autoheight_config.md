@@ -20,3 +20,7 @@ webix.ui({
 @descr:
 
 
+
+
+@seolinktop: [javascript framework](https://webix.com)
+@seolink: [object list javascript](https://webix.com/widget/list/)

@@ -23,3 +23,6 @@ spreadsheet/config.md#settingthecountofrowsandcolumns
 
 @relatedsample:
 65_spreadsheet/02_api/01_subbar_and_reset.html
+
+@seolinktop: [javascript website framework](https://webix.com)
+@seolink: [spreadsheet javascript library](https://webix.com/spreadsheet/)

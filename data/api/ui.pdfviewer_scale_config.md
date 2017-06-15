@@ -28,3 +28,6 @@ String values will be automatically calculated into numeric values.
 
 - integer number: 1 is equal to 100%
 - float number: 0.5 is equal to 50%
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [javascript pdf viewer](https://webix.com/widget/html5_pdf_viewer/)

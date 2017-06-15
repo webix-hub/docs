@@ -29,3 +29,6 @@ Accordion CSS
 </table>
 
 Read more about [Accordion](desktop/accordion.md)
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [accordion tabs](https://webix.com/widget/accordion/)

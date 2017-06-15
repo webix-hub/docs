@@ -20,3 +20,7 @@ var datas = $$("mylist").getUnitList("A");
 @descr:
 
 
+
+
+@seolinktop: [widget library](https://webix.com)
+@seolink: [list in javascript](https://webix.com/widget/list/)

@@ -30,3 +30,7 @@ api/ui.spreadsheet_hidecolumn.md
 api/ui.spreadsheet_insertcolumn.md
 
 
+
+
+@seolinktop: [lightweight js framework](https://webix.com)
+@seolink: [spreadsheet](https://webix.com/spreadsheet/)

@@ -9,3 +9,6 @@ webix.ui({
 	view:"datatable",
 	...
 })
+
+@seolinktop: [web development library](https://webix.com)
+@seolink: [datatable](https://webix.com/widget/datatable/)

@@ -24,3 +24,6 @@ webix.ui({
 
 
 If set to true, then after checkbox state changing, row will be repainted. 
+
+@seolinktop: [web development library](https://webix.com)
+@seolink: [html5 datatable](https://webix.com/widget/datatable/)

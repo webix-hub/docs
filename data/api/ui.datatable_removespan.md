@@ -21,3 +21,6 @@ grid.refresh();
 @descr:
 
 @edition:  pro
+
+@seolinktop: [web control library](https://webix.com)
+@seolink: [javascript data table](https://webix.com/widget/datatable/)

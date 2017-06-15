@@ -21,3 +21,7 @@ var spreadsheet = webix.ui({
 
 - [Overview of the SpreadSheet Widget](desktop/spreadsheet.md)
 - [Samples](http://docs.webix.com/samples/65_spreadsheet/index.html)
+
+
+@seolinktop: [popular javascript framework](https://webix.com)
+@seolink: [spreadsheet](https://webix.com/spreadsheet/)

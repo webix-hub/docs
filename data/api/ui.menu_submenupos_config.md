@@ -24,3 +24,7 @@ webix.ui({
 - bottom (default)
 - right
 - left
+
+
+@seolinktop: [javascript dashboard framework](https://webix.com)
+@seolink: [javascript menu](https://webix.com/widget/menu/)

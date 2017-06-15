@@ -28,3 +28,7 @@ var style = $$("ssheet").getStyle(3,2);
 @relatedapi:
 api/ui.spreadsheet_setstyle.md
 api/ui.spreadsheet_addstyle.md
+
+
+@seolinktop: [js framework](https://webix.com)
+@seolink: [web based spreadsheet](https://webix.com/spreadsheet/)

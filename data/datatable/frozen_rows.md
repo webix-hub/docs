@@ -89,3 +89,6 @@ You can also change the style of rows selection in the following way:
 {{sample 60_pro/01_datatable/09_frozen_rows/03_api.html}}
 
 @edition:pro
+
+@seolinktop: [lightweight js framework](https://webix.com)
+@seolink: [download datatable](https://webix.com/widget/datatable/)

@@ -22,3 +22,7 @@ The event can be blocked. Return false to block area removal.
 - api/ui.datatable_onafterarearemove_event.md
 - api/ui.datatable_removeselectarea.md
 
+
+
+@seolinktop: [javascript ui components library](https://webix.com)
+@seolink: [datatable js](https://webix.com/widget/datatable/)

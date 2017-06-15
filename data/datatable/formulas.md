@@ -190,3 +190,6 @@ When this property is omitted, you can still open the editor for the calculated 
 
 @keyword:
 	formula, math, calculate, counter
+
+@seolinktop: [lightweight js framework](https://webix.com)
+@seolink: [datatable js](https://webix.com/widget/datatable/)

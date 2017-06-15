@@ -21,3 +21,6 @@ spreadsheet/customization.md#toolbar
 
 @relatedsample:
 65_spreadsheet/01_basic/02_all_buttons.html
+
+@seolinktop: [javascript dashboard framework](https://webix.com)
+@seolink: [web based spreadsheet](https://webix.com/spreadsheet/)

@@ -25,3 +25,7 @@ webix.ui({
 @descr:
 
 
+
+
+@seolinktop: [popular javascript framework](https://webix.com)
+@seolink: [html5 datatable](https://webix.com/widget/datatable/)

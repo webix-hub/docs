@@ -24,3 +24,7 @@ grid.attachEvent("onHeaderClick", function(id){
 @descr:
 
 
+
+
+@seolinktop: [javascript ui framework](https://webix.com)
+@seolink: [javascript datatable](https://webix.com/widget/datatable/)

@@ -22,3 +22,6 @@ There are four Google map types: "ROADMAP","SATELLITE","HYBRID","TERRAIN". Upper
 
 @relatedsample:
 34_googlemap/05_heatmap.html
+
+@seolinktop: [lightweight js framework](https://webix.com)
+@seolink: [JavaScript Map](https://webix.com/widget/maps/)

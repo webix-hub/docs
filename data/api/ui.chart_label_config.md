@@ -30,3 +30,7 @@ Generally, charts show labels above data items. <br>
 
 
 
+
+
+@seolinktop: [easy javascript framework](https://webix.com)
+@seolink: [javascript charting](https://webix.com/widget/charts/)

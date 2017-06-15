@@ -49,3 +49,6 @@ You must have fixedRowHeight set to false, or call of adjustRowHeight will not h
 	15_datatable/07_resize/10_row_auto_height.html
 @related:
 	datatable/sizing.md
+
+@seolinktop: [ui library](https://webix.com)
+@seolink: [download datatable](https://webix.com/widget/datatable/)

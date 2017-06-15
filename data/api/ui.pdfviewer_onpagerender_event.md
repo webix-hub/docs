@@ -15,3 +15,7 @@ $$("pdfviewer").attachEvent("onPageRender", function(pageNum){ ... });
 @template:	api_event
 @descr:
 
+
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [javascript pdf viewer](https://webix.com/widget/html5_pdf_viewer/)

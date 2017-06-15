@@ -185,3 +185,7 @@ var googlemap = webix.ui({
 - api/refs/ui.google-map_events.md
 - api/refs/ui.google-map_others.md
 
+
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [google maps javascript](https://webix.com/widget/maps/)

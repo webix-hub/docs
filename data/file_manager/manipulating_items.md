@@ -83,3 +83,7 @@ fmanager.uploadFile("myfolder");
 ~~~
 
 
+
+
+@seolinktop: [javascript component library](https://webix.com)
+@seolink: [javascript file explorer](https://webix.com/filemanager/)

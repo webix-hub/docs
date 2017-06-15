@@ -25,3 +25,7 @@ This options defines not the data of submenu but its sizing, styling, templates,
 
 In case of context menu - settings will be applied to a top level menu as well. 
 
+
+
+@seolinktop: [ui widget library](https://webix.com)
+@seolink: [javascript menu library](https://webix.com/widget/menu/)

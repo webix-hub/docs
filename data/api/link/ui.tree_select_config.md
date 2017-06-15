@@ -21,3 +21,7 @@ api/link/ui.tree_multiselect_config.md
 @descr:
 By default, selection in Tree is disabled.
 
+
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [html treeview](https://webix.com/widget/tree/)

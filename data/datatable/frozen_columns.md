@@ -47,3 +47,6 @@ You can read more about this feature in the [corresponding article](datatable/fr
 
 @keyword:
 	frozen, split, separate, attach, fixed
+
+@seolinktop: [web control library](https://webix.com)
+@seolink: [datatable html](https://webix.com/widget/datatable/)

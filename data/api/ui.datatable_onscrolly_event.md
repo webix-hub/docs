@@ -21,3 +21,6 @@ dtable.attachEvent("onScrollY", function(){
     
 @related:
 	datatable/sizing.md#scrolling
+
+@seolinktop: [open source html5 framework](https://webix.com)
+@seolink: [javascript datagrid library](https://webix.com/widget/datatable/)

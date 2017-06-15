@@ -114,3 +114,7 @@ Properties
 - api/link/ui.pivot_width_config.md
 - api/ui.pivot_yscalewidth_config.md
 
+
+
+@seolinktop: [lightweight js framework](https://webix.com)
+@seolink: [pivot table web](https://webix.com/pivot/)

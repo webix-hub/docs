@@ -26,3 +26,7 @@ webix.ui({
 @relatedsample:
 
 61_pivot/01_init/06_custom_titles.html
+
+
+@seolinktop: [javascript website framework](https://webix.com)
+@seolink: [javascript pivot grid](https://webix.com/pivot/)

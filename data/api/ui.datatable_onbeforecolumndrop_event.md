@@ -29,3 +29,6 @@ $$("datatable1").attachEvent("onBeforeColumnDrop", function(sourceId, targetId, 
 @descr:
 
 The event is blockable. Returning false will prevent column dropping.
+
+@seolinktop: [javascript ui framework](https://webix.com)
+@seolink: [datatable html](https://webix.com/widget/datatable/)

@@ -26,3 +26,7 @@ The parameter can take value from 0.0 (fully transparent) to 1.0 (fully opaque).
 The default value - 1.
 
 
+
+
+@seolinktop: [open source html5 framework](https://webix.com)
+@seolink: [javascript graphing library](https://webix.com/widget/charts/)

@@ -27,3 +27,7 @@ pivot/customization.md#changingpivotstructure
 @relatedapi:
 - api/ui.pivot_oncancel_event.md
 - api/ui.pivot_onbeforeapply_event.md
+
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [pivot table web](https://webix.com/pivot/)

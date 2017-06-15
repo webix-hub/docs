@@ -27,3 +27,7 @@ webix.ui({
 @related:
 pivot/initialization.md
 
+
+
+@seolinktop: [ui widget library](https://webix.com)
+@seolink: [javascript pivot grid](https://webix.com/pivot/)

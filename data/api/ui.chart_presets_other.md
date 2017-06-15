@@ -20,3 +20,7 @@ webix.ui.chart.presets["mystyle"] = {
 @descr:
 
 
+
+
+@seolinktop: [javascript website framework](https://webix.com)
+@seolink: [chart library](https://webix.com/widget/charts/)

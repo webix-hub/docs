@@ -18,3 +18,7 @@ $$("myportlet").markDropArea(target, mode);
 @template:	api_method
 @descr:
 
+
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [javascript portlet](https://webix.com/widget/portlet/)

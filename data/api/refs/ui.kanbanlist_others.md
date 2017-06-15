@@ -61,3 +61,7 @@ Others
 - api/link/ui.kanbanlist_waitdata_other.md
 
 
+
+
+@seolinktop: [javascript web framework](https://webix.com)
+@seolink: [object list javascript](https://webix.com/widget/list/)

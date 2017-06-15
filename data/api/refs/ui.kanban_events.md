@@ -65,3 +65,7 @@ Events
 - api/link/ui.kanban_onloaderror_event.md
 
 
+
+
+@seolinktop: [web control library](https://webix.com)
+@seolink: [kanban board tool](https://webix.com/kanban/)

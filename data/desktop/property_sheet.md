@@ -215,3 +215,6 @@ prop.registerType("popup-ra",{
 - [Property Sheet CSS Image Map](desktop/property_css.md)
 
 @spellcheck:api
+
+@seolinktop: [ui library](https://webix.com)
+@seolink: [property list editor](https://webix.com/widget/propertysheet/)

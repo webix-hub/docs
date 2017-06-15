@@ -18,3 +18,6 @@ dtable.adjust();
 @relatedsample:
 	15_datatable/11_sizing/02_resize_node.html
 	15_datatable/11_sizing/03_resize_win.html
+
+@seolinktop: [javascript ui framework](https://webix.com)
+@seolink: [javascript datagrid](https://webix.com/widget/datatable/)

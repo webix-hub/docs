@@ -9,3 +9,6 @@ webix.ui({
 		{ header:"col 2", body:"content 2", width:250}
 	]
 });
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [accordion menu](https://webix.com/widget/accordion/)

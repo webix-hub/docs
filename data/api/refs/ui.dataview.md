@@ -265,3 +265,7 @@ var dataview = webix.ui({
 - api/refs/ui.dataview_events.md
 - api/refs/ui.dataview_others.md
 
+
+
+@seolinktop: [javascript ui framework](https://webix.com)
+@seolink: [data view html5](https://webix.com/widget/dataview/)

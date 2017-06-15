@@ -413,3 +413,7 @@ var treetable = webix.ui({
 - api/refs/ui.treetable_events.md
 - api/refs/ui.treetable_others.md
 
+
+
+@seolinktop: [mvc library](https://webix.com)
+@seolink: [javascript tree table](https://webix.com/widget/treetable/)

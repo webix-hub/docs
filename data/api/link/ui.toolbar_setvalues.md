@@ -22,3 +22,7 @@ function set_toolbar(){
 
 The method allows setting several values at a time. 
 Data **names** of these values must coincide with values of the [name](api/link/ui.text_name_config.md) parameters of the corresponding toolbar elements. 
+
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [toolbar](https://webix.com/widget/toolbar/)

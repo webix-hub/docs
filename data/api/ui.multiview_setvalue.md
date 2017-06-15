@@ -25,3 +25,7 @@ Command is equal to view.show
     $$("some_view").show();
 ~~~
 
+
+
+@seolinktop: [javascript framework](https://webix.com)
+@seolink: [multi view](https://webix.com/widget/multiview/)

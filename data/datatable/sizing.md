@@ -421,3 +421,7 @@ grid = new webix.ui({
 ~~~
 
 {{sample 15_datatable/09_columns/03_scrolls.html }}
+
+
+@seolinktop: [javascript framework](https://webix.com)
+@seolink: [web datagrid](https://webix.com/widget/datatable/)

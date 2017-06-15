@@ -23,3 +23,7 @@ webix.ui({
 @descr:
 
 
+
+
+@seolinktop: [lightweight js framework](https://webix.com)
+@seolink: [toolbar](https://webix.com/widget/toolbar/)

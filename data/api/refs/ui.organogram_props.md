@@ -92,3 +92,7 @@ Properties
 - api/link/ui.organogram_url_config.md
 - api/link/ui.organogram_width_config.md
 
+
+
+@seolinktop: [best ui framework](https://webix.com)
+@seolink: [organizational chart](https://webix.com/widget/organogram/)

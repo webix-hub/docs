@@ -8,3 +8,7 @@ Attributes of the **type** object:
 - **template** - (*function, string*) an html template that will define item presentation in the component.
 - **width** - (*number*) the width of the items list.
 
+
+
+@seolinktop: [web control library](https://webix.com)
+@seolink: [javascript dataview](https://webix.com/widget/dataview/)

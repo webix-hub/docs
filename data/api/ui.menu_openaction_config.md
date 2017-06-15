@@ -22,3 +22,7 @@ If the parameter is set, you should first click menu item to enable submenu open
 
 To hide submenus, you need to click somewhere outside the menu.
 
+
+
+@seolinktop: [lightweight js framework](https://webix.com)
+@seolink: [javascript menu](https://webix.com/widget/menu/)

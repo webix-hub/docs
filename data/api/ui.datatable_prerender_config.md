@@ -29,3 +29,7 @@ webix.ui({
 * The parameter doesn't give advantages for non-touch devices (slower than with a standard data loading).  
 * On touch devices it allows you to get a bit more smooth scrolling (anyway, it's not usable with big datasets)
 * **Not related** to dynamical loading. 
+
+
+@seolinktop: [js frameworks](https://webix.com)
+@seolink: [datatable html](https://webix.com/widget/datatable/)

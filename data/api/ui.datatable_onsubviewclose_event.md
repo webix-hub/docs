@@ -31,3 +31,6 @@ ID of the cell is an object with the following properties:
 - **column** - ID of the related column.
 
 @edition:pro
+
+@seolinktop: [html5 framework](https://webix.com)
+@seolink: [web datagrid](https://webix.com/widget/datatable/)

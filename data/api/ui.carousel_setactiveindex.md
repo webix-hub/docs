@@ -30,3 +30,7 @@ $$('carousel1').setActiveIndex(0);
 	desktop/carousel.md
 @descr:
 
+
+
+@seolinktop: [javascript component library](https://webix.com)
+@seolink: [javascript image slideshow](https://webix.com/widget/carousel/)

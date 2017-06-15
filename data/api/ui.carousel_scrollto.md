@@ -37,3 +37,7 @@ $$('carousel1').scrollTo(100,0);
 @metadescr: This documentation page describes how you can control the scrolling process while using the JavaScript Carousel widget using the scrollTo method.
 @doctitle: The documentation page for the scrollTo method of Carousel. 
 
+
+
+@seolinktop: [mvc library](https://webix.com)
+@seolink: [carousel slider](https://webix.com/widget/carousel/)

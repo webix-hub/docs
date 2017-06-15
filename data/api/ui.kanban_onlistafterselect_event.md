@@ -22,3 +22,6 @@ $$("myBoard").attachEvent("onListAfterSelect", function(itemId,list)){
 
 @relatedapi:
 api/ui.kanban_onlistbeforeselect_event.md
+
+@seolinktop: [js frameworks](https://webix.com)
+@seolink: [list ui](https://webix.com/widget/list/)

@@ -12,3 +12,6 @@ webix.ui({
 
 @related:
 	datatable/styling.md
+
+@seolinktop: [mvc library](https://webix.com)
+@seolink: [html5 datatable](https://webix.com/widget/datatable/)

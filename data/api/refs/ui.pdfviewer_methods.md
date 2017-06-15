@@ -75,3 +75,7 @@ Methods
 - api/ui.pdfviewer_zoomout.md
 
 
+
+
+@seolinktop: [ui widget library](https://webix.com)
+@seolink: [javascript pdf viewer](https://webix.com/widget/html5_pdf_viewer/)

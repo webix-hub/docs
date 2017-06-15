@@ -150,3 +150,7 @@ var pdfviewer = webix.ui({
 - api/refs/ui.pdfviewer_events.md
 - api/refs/ui.pdfviewer_others.md
 
+
+
+@seolinktop: [popular javascript framework](https://webix.com)
+@seolink: [pdf viewer library](https://webix.com/widget/html5_pdf_viewer/)

@@ -46,3 +46,7 @@ webix.ui({
 Default window position is a top left corner of the viewport. 
 
 
+
+
+@seolinktop: [html5 library](https://webix.com)
+@seolink: [javascript window](https://webix.com/widget/window/)

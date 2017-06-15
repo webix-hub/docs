@@ -26,3 +26,7 @@ desktop/gage.md
 
 @relatedapi: 
 api/ui.gage_maxrange_config.md
+
+
+@seolinktop: [javascript ui components library](https://webix.com)
+@seolink: [gauge js](https://webix.com/widget/gage/)

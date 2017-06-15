@@ -25,3 +25,7 @@ Pay attention that the event is attached globally - webix.attachEvent( ).
 @relatedapi:
 - api/ui.portlet_onbeforeportletmove_event.md
 
+
+
+@seolinktop: [js framework](https://webix.com)
+@seolink: [javascript drag and drop library](https://webix.com/widget/portlet/)

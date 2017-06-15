@@ -16,3 +16,6 @@ $$("map").attachEvent("onHeatMapRender", function(heatmapObj){
 
 @related:
 desktop/googlemap.md#workingwithheatmap
+
+@seolinktop: [lightweight js framework](https://webix.com)
+@seolink: [JavaScript Map](https://webix.com/widget/maps/)

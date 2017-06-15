@@ -9,3 +9,7 @@ Fixes
 - serialization should mind the first column (headers off/on)
 - cells updating after row or column deleting
 - styling hotkeys trigger styling without active cell selection
+
+
+@seolinktop: [javascript dashboard framework](https://webix.com)
+@seolink: [spreadsheet javascript library](https://webix.com/spreadsheet/)

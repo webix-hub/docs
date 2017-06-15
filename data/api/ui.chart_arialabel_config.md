@@ -18,3 +18,7 @@ webix.ui({
 @related:desktop/accessibility.md
 
 
+
+
+@seolinktop: [open source html5 framework](https://webix.com)
+@seolink: [javascript chart library](https://webix.com/widget/charts/)

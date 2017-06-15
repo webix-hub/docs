@@ -23,3 +23,7 @@ webix.ui({
 	60_pro/01_datatable/07_sub/01_sub_rows.html
 	
 @edition:pro
+
+
+@seolinktop: [html5 library](https://webix.com)
+@seolink: [datagrid in html5](https://webix.com/widget/datatable/)

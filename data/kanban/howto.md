@@ -294,3 +294,7 @@ Here is an example of setting a new background color for an item with the 'criti
 
 @spellcheck: Tos
 
+
+
+@seolinktop: [html5 framework](https://webix.com)
+@seolink: [buy kanban board](https://webix.com/kanban/)

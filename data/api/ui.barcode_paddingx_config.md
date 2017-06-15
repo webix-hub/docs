@@ -17,3 +17,7 @@ webix.ui({
 @descr:
 
 
+
+
+@seolinktop: [javascript ui library](https://webix.com)
+@seolink: [javascript barcode generator](https://webix.com/widget/barcode/)

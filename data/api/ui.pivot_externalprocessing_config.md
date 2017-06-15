@@ -21,3 +21,6 @@ pivot/data_loading.md#externaldataprocessing
 
 @relatedsample:
 61_pivot/07_table_external/01_readonly.html
+
+@seolinktop: [javascript web framework](https://webix.com)
+@seolink: [javascript pivot](https://webix.com/pivot/)

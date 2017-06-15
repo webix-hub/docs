@@ -27,3 +27,6 @@ The properties of the area object are:
 @relatedapi:
 api/ui.datatable_onbeforeareaadd_event.md
 api/ui.datatable_onafterarearemove_event.md
+
+@seolinktop: [best ui framework](https://webix.com)
+@seolink: [javascript data table](https://webix.com/widget/datatable/)

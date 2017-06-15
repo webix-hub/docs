@@ -23,3 +23,7 @@ webix.ui({
 
 @descr:
 
+
+
+@seolinktop: [mvc library](https://webix.com)
+@seolink: [javascript organization chart](https://webix.com/widget/organogram/)

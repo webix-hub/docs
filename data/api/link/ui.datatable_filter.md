@@ -39,3 +39,7 @@ list.filter(function(obj){
     08_chart/08_dynamic/04_filtering.html
     15_datatable/03_filtering/05_custom.html
     05_list/10_filtering.html
+
+
+@seolinktop: [javascript dashboard framework](https://webix.com)
+@seolink: [datatable](https://webix.com/widget/datatable/)

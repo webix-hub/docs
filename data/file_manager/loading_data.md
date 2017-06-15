@@ -424,3 +424,6 @@ An example of response can be as follows:
 ~~~
 
 @spellcheck: myfile
+
+@seolinktop: [js frameworks](https://webix.com)
+@seolink: [web file manager](https://webix.com/filemanager/)

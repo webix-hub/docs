@@ -25,3 +25,7 @@ webix.ui({
 The property is applicable only to **scatter** charts
 }}
 
+
+
+@seolinktop: [lightweight js framework](https://webix.com)
+@seolink: [javascript graph library](https://webix.com/widget/charts/)

@@ -27,3 +27,6 @@ $$("myBoard").attachEvent("onListIconClick", function(iconId, itemId,ev,node,lis
 
 @relatedsample:
 63_kanban/02_events/01_icon_onclick.html
+
+@seolinktop: [ui widget library](https://webix.com)
+@seolink: [javascript library list](https://webix.com/widget/list/)

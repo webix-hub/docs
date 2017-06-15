@@ -33,3 +33,7 @@ dtable.attachEvent("onBeforeFilter", function(id, value, config){
 @descr:
 
 
+
+
+@seolinktop: [javascript web framework](https://webix.com)
+@seolink: [javascript datagrid](https://webix.com/widget/datatable/)

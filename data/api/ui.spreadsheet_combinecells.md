@@ -24,3 +24,7 @@ The range object includes three properties:
 - x - (number) the number of cells that will be merged horizontally
 - y - (number) the number of cells that will be merged vertically
 
+
+
+@seolinktop: [ui component library](https://webix.com)
+@seolink: [javascript spreadshee](https://webix.com/spreadsheet/)

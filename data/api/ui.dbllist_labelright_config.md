@@ -33,3 +33,7 @@ desktop/double_list.md
 
 @relatedsample:
 13_form/01_controls/25_dbllist.html
+
+
+@seolinktop: [widget library](https://webix.com)
+@seolink: [javascript list](https://webix.com/widget/list/)

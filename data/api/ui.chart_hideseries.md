@@ -20,3 +20,7 @@ hideSeries
 The method allows for programmatical hiding of the dedicated series. At the same time, series can be shown and hidden by clicking the 
 corresponding icon in the chart legend. Like here: {{sample 08_chart/06_bar_chart/06_series.html }}
 
+
+
+@seolinktop: [javascript web framework](https://webix.com)
+@seolink: [chart widget](https://webix.com/widget/charts/)

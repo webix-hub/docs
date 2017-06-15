@@ -20,3 +20,6 @@ $$("datatable1").attachEvent("onAfterColumnShow", function(id){
 
 api/ui.datatable_onbeforecolumnshow_event.md
 api/ui.datatable_showcolumn.md
+
+@seolinktop: [open source html5 framework](https://webix.com)
+@seolink: [data table](https://webix.com/widget/datatable/)

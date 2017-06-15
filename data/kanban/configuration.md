@@ -248,3 +248,6 @@ You can use any names of data properties within the complex **status** of a Kanb
 But it is advised to have a *status* name among them and use a *status* property in item data. It ensures correct work of a Kanban board when moving the task into another Kanban list with a simple status.
 
 @spellcheck: nd
+
+@seolinktop: [javascript component library](https://webix.com)
+@seolink: [buy kanban board](https://webix.com/kanban/)

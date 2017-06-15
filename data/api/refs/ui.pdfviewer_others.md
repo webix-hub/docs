@@ -31,3 +31,7 @@ Others
 - api/link/ui.pdfviewer_name_other.md
 
 
+
+
+@seolinktop: [web control library](https://webix.com)
+@seolink: [pdf library](https://webix.com/widget/html5_pdf_viewer/)

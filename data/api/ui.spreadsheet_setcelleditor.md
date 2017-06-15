@@ -34,3 +34,6 @@ spreadsheet/cell_content.md#addinganeditorintoacell
 
 @relatedapi:
 api/ui.spreadsheet_getcelleditor.md
+
+@seolinktop: [popular javascript framework](https://webix.com)
+@seolink: [javascript spreadshee](https://webix.com/spreadsheet/)

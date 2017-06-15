@@ -22,3 +22,7 @@ $$("ssheet").addSheet(content);
 
 @related:
 spreadsheet/multiple_sheets.md#addinganewsheet
+
+
+@seolinktop: [ui library](https://webix.com)
+@seolink: [web based spreadsheet](https://webix.com/spreadsheet/)

@@ -248,3 +248,7 @@ dummy stub
 - api/refs/ui.kanbanlist_events.md
 - api/refs/ui.kanbanlist_others.md
 
+
+
+@seolinktop: [javascript dashboard framework](https://webix.com)
+@seolink: [javascript library list](https://webix.com/widget/list/)

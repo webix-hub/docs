@@ -19,3 +19,6 @@ $$("ssheet").attachEvent("onAfterSheetShow", function(name){
 
 @relatedapi:
 api/ui.spreadsheet_onbeforesheetshow_event.md
+
+@seolinktop: [ui library](https://webix.com)
+@seolink: [javascript spreadshee](https://webix.com/spreadsheet/)

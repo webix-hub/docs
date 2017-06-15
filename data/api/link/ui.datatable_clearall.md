@@ -13,3 +13,7 @@ dtable.clearAll();
 
 @relatedapi:
 	api/link/ui.datatable_remove.md
+
+
+@seolinktop: [javascript web framework](https://webix.com)
+@seolink: [data table](https://webix.com/widget/datatable/)

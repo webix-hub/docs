@@ -19,3 +19,7 @@ webix.ui({
 @descr:
 As a parameter the property function takes the item object.
 
+
+
+@seolinktop: [widget library](https://webix.com)
+@seolink: [object list javascript](https://webix.com/widget/list/)

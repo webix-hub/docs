@@ -27,3 +27,7 @@ $$("dbl1").focus();
 	desktop/uimanager.md
    	desktop/double_list.md
 @descr:
+
+
+@seolinktop: [javascript ui framework](https://webix.com)
+@seolink: [javascript library list](https://webix.com/widget/list/)

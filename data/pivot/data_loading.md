@@ -152,3 +152,7 @@ Here is an example of a data source for a Pivot with select filter for the "cont
 }
 ~~~
 
+
+
+@seolinktop: [ui library](https://webix.com)
+@seolink: [javascript pivot](https://webix.com/pivot/)

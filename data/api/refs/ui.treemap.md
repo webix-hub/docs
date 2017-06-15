@@ -278,3 +278,7 @@ var treemap = webix.ui({
 - api/refs/ui.treemap_events.md
 - api/refs/ui.treemap_others.md
 
+
+
+@seolinktop: [open source html5 framework](https://webix.com)
+@seolink: [tree map](https://webix.com/widget/treemap/)

@@ -59,3 +59,7 @@ If the items of your accordion are arranged in cols, their headers are collapsed
 }}
 
 
+
+
+@seolinktop: [js frameworks](https://webix.com)
+@seolink: [accordion js](https://webix.com/widget/accordion/)

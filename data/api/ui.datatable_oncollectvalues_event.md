@@ -21,3 +21,6 @@ datatable.attachEvent("onCollectValues", function(id, data){
 
 @relatedsample:
 15_datatable/03_filtering/13_options_customizing.html
+
+@seolinktop: [javascript ui components library](https://webix.com)
+@seolink: [datatable html](https://webix.com/widget/datatable/)

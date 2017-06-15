@@ -81,3 +81,7 @@ With Pivot you can easily compare, filter and sort data within one table as well
 
 
 
+
+
+@seolinktop: [html5 framework](https://webix.com)
+@seolink: [pivot table web](https://webix.com/pivot/)

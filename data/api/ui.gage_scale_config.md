@@ -26,3 +26,7 @@ desktop/gage.md
 @relatedsample:
 60_pro/15_gage/01_init.html
 
+
+
+@seolinktop: [mvc library](https://webix.com)
+@seolink: [gage widget](https://webix.com/widget/gage/)

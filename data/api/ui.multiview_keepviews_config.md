@@ -22,3 +22,7 @@ desktop/multiview.md#keepviews
 @descr:
 the mode is actual when dealing with iframe content, e.g. WYSIWYG editors (CKEditor)
 
+
+
+@seolinktop: [best ui framework](https://webix.com)
+@seolink: [multi view](https://webix.com/widget/multiview/)

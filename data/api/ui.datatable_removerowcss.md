@@ -27,3 +27,6 @@ Works as short alias for removeMark command
 
 @related:
 	datatable/styling.md
+
+@seolinktop: [html5 library](https://webix.com)
+@seolink: [data table](https://webix.com/widget/datatable/)

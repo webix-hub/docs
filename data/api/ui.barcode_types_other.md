@@ -18,3 +18,7 @@ types
 Each type is a set of rendering helpers and templates.
 Barcode can have multiple types, but only one can be active per component instance.
 
+
+
+@seolinktop: [ui component library](https://webix.com)
+@seolink: [javascript barcode](https://webix.com/widget/barcode/)

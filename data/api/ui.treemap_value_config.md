@@ -17,3 +17,7 @@ webix.ui({
 @descr:
 
 
+
+
+@seolinktop: [javascript dashboard framework](https://webix.com)
+@seolink: [treemap visualization](https://webix.com/widget/treemap/)

@@ -20,3 +20,7 @@ dtable.attachEvent("onResize", function(width, height){
 @descr:
 
 
+
+
+@seolinktop: [javascript ui library](https://webix.com)
+@seolink: [data table](https://webix.com/widget/datatable/)

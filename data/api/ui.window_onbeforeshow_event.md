@@ -26,3 +26,6 @@ api/link/ui.window_show.md
 @descr:
  The event takes all parameters passed to api/link/ui.window_show.md method.
  Return false to block popup displaying.
+
+@seolinktop: [open source html5 framework](https://webix.com)
+@seolink: [javascript open new window](https://webix.com/widget/window/)

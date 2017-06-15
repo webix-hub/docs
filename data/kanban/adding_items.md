@@ -62,3 +62,7 @@ More information about adding and removing items you can find [here](desktop/add
 {{sample
 63_kanban/03_data_operations/01_add.html
 }}
+
+
+@seolinktop: [javascript website framework](https://webix.com)
+@seolink: [kanban board tool](https://webix.com/kanban/)

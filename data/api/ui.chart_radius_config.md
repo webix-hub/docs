@@ -29,3 +29,7 @@ The property is applicable to **bar** charts.
 {{note
 When used within [item](api/ui.chart_item_config.md) object of **scatter**, **radar** and **line** charts, the property defines radius of the point on the map.
 }}
+
+
+@seolinktop: [html5 library](https://webix.com)
+@seolink: [javascript graphing library](https://webix.com/widget/charts/)

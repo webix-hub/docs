@@ -20,3 +20,7 @@ $$("ssheet").alert({
 
 @template:	api_method
 @descr:
+
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [web spreadsheet](https://webix.com/spreadsheet/)

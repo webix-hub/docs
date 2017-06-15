@@ -9,3 +9,7 @@
 @example:
 dtable.getState()
 
+
+
+@seolinktop: [html5 ui library](https://webix.com)
+@seolink: [javascript datagrid library](https://webix.com/widget/datatable/)

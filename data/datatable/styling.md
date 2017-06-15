@@ -357,3 +357,6 @@ The list of CSS classes with their descriptions is given below:
 
 @keyword:
 	css, styling, style
+
+@seolinktop: [javascript ui components library](https://webix.com)
+@seolink: [ui datagrid](https://webix.com/widget/datatable/)

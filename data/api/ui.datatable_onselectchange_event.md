@@ -33,3 +33,7 @@ webix.ui({
 @descr:
 
 The event doesn't provide any details about changes; it just informs that it has occurred.
+
+
+@seolinktop: [best ui framework](https://webix.com)
+@seolink: [datatable](https://webix.com/widget/datatable/)

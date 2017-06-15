@@ -26,3 +26,7 @@ new webix.ui({
 
 @related:
 	datatable/loading_data.md#dynamicloading
+
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [javascript datatable](https://webix.com/widget/datatable/)

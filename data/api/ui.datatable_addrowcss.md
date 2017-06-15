@@ -27,3 +27,7 @@ Works as a short alias for the addMark command
     
 @related:
 	datatable/styling.md
+
+
+@seolinktop: [javascript component library](https://webix.com)
+@seolink: [datagrid javascript](https://webix.com/widget/datatable/)

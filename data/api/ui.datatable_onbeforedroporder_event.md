@@ -12,3 +12,6 @@ $$("dtable1").attachEvent("onBeforeDropOrder",function(itemId,tInd,event,details
     // some code 
     return true;
 });
+
+@seolinktop: [ui widget library](https://webix.com)
+@seolink: [html5 datatable](https://webix.com/widget/datatable/)

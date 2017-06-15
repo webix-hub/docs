@@ -126,3 +126,7 @@ var barcode = webix.ui({
 - api/refs/ui.barcode_events.md
 - api/refs/ui.barcode_others.md
 
+
+
+@seolinktop: [lightweight js framework](https://webix.com)
+@seolink: [javascript barcode](https://webix.com/widget/barcode/)

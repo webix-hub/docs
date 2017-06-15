@@ -22,3 +22,6 @@ $$("myBoard").attachEvent("onListAfterDrop", function(itemId,newStatus)){
 
 @relatedapi:
 api/ui.kanban_onbeforestatuschange_event.md
+
+@seolinktop: [ui library](https://webix.com)
+@seolink: [buy kanban board](https://webix.com/kanban/)

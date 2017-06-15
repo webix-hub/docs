@@ -24,3 +24,6 @@ $$("myBoard").attachEvent("onListItemDblClick", function(itemId,ev,node,list)){
 
 @relatedapi:
 api/ui.kanban_onlistitemclick_event.md
+
+@seolinktop: [popular javascript framework](https://webix.com)
+@seolink: [object list javascript](https://webix.com/widget/list/)

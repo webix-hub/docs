@@ -26,3 +26,7 @@ The image below shows how the script above applies the <i>paddingX</i> property.
 
 <br>
 <img src="api/paddingX_image.png"> </img>
+
+
+@seolinktop: [javascript framework](https://webix.com)
+@seolink: [ui layout](https://webix.com/widget/layout/)

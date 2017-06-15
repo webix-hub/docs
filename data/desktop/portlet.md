@@ -191,3 +191,6 @@ webix.ui({
 @edition:pro
 
 @spellcheck: portlet, portlet's, portlets
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [ui draggable](https://webix.com/widget/portlet/)

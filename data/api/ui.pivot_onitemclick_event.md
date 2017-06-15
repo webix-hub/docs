@@ -38,3 +38,7 @@ For Pivot Datatable it is an object with the following properties:
 
 For Pivot Chart id is a string or number that points to a data item id.
 
+
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [pivot table web](https://webix.com/pivot/)

@@ -29,3 +29,7 @@ $$("views").back();
 @descr:
 
 
+
+
+@seolinktop: [html5 library](https://webix.com)
+@seolink: [multi view](https://webix.com/widget/multiview/)

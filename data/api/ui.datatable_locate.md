@@ -35,3 +35,7 @@ The result object contains:
 - pos.rind - the row index
 - pos.cind - the column index
 
+
+
+@seolinktop: [ui library](https://webix.com)
+@seolink: [datatable](https://webix.com/widget/datatable/)

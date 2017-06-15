@@ -261,3 +261,6 @@ $$("ssheet").setPlaceholder({value:"Poland", expense:684, income:781});
 <img src="spreadsheet/updating_placeholder.png">
 
 {{sample 65_spreadsheet/02_api/16_placeholders.html}}
+
+@seolinktop: [web control library](https://webix.com)
+@seolink: [spreadsheet javascript library](https://webix.com/spreadsheet/)

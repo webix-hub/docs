@@ -147,3 +147,7 @@ webix.ui({
 {{sample 61_pivot/05_customization/03_fields_groups.html}}
 
 
+
+
+@seolinktop: [html5 framework](https://webix.com)
+@seolink: [pivot table web](https://webix.com/pivot/)

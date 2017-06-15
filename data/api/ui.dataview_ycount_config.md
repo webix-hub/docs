@@ -28,3 +28,7 @@ Possible values for the property are:
 	api/ui.dataview_xcount_config.md
 @relatedsample:
 	06_dataview/01_initialization/03_fixed_sizing.html
+
+
+@seolinktop: [mvc library](https://webix.com)
+@seolink: [dataview download](https://webix.com/widget/dataview/)

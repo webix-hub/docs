@@ -25,3 +25,7 @@ webix.ui({
 The parameter can take value from 0 to 1.<br>
 The default value is 0.5 .
 
+
+
+@seolinktop: [javascript website framework](https://webix.com)
+@seolink: [chart widget](https://webix.com/widget/charts/)

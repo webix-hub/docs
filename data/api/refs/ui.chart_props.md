@@ -142,3 +142,7 @@ Properties
 - api/ui.chart_yaxis_config.md
 - api/ui.chart_yvalue_config.md
 
+
+
+@seolinktop: [popular javascript framework](https://webix.com)
+@seolink: [javascript charts](https://webix.com/widget/charts/)

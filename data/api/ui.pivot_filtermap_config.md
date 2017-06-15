@@ -22,3 +22,6 @@ pivot/filters.md#changingfieldforfiltering
 
 @relatedsample:
 61_pivot/06_filters/03_datepicker.html
+
+@seolinktop: [javascript component library](https://webix.com)
+@seolink: [javascript pivot](https://webix.com/pivot/)

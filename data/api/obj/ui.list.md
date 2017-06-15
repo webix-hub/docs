@@ -24,3 +24,6 @@ var list = webix.ui({
 
 - [Overview of the List Widget](desktop/list.md)
 - [Samples](http://docs.webix.com/samples/05_list/index.html)
+
+@seolinktop: [easy javascript framework](https://webix.com)
+@seolink: [lists in javascript](https://webix.com/widget/list/)

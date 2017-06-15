@@ -21,3 +21,7 @@ barcode.setValue("453456789015");
 @template:	api_method
 @descr:
 
+
+
+@seolinktop: [ui widget library](https://webix.com)
+@seolink: [javascript barcode generator](https://webix.com/widget/barcode/)

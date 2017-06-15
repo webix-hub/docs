@@ -6,3 +6,6 @@
 dtable.editCancel()
 
 @relatedapi:api/link/ui.datatable_editstop.md
+
+@seolinktop: [html5 ui library](https://webix.com)
+@seolink: [ui datagrid](https://webix.com/widget/datatable/)

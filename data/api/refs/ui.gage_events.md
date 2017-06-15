@@ -35,3 +35,7 @@ Events
 - api/link/ui.gage_onviewresize_event.md
 
 
+
+
+@seolinktop: [javascript web framework](https://webix.com)
+@seolink: [javascript gage](https://webix.com/widget/gage/)

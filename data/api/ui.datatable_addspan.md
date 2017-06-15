@@ -54,3 +54,6 @@ grid.addSpan([
 - span **css** is optional. By default, colspans and rowspans don't feature any special styling. 
 
 @edition:pro
+
+@seolinktop: [javascript dashboard framework](https://webix.com)
+@seolink: [javascript data table](https://webix.com/widget/datatable/)

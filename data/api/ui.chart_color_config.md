@@ -26,3 +26,7 @@ webix.ui({
 @descr:
 
 
+
+
+@seolinktop: [js frameworks](https://webix.com)
+@seolink: [javascript charting](https://webix.com/widget/charts/)

@@ -66,3 +66,7 @@ Properties
 - api/link/ui.popup_width_config.md
 - api/link/ui.popup_zindex_config.md
 
+
+
+@seolinktop: [js framework](https://webix.com)
+@seolink: [javascript popup window](https://webix.com/widget/popup/)

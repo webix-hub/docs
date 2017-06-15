@@ -15,3 +15,7 @@ webix.ui({
 @descr:
 
 
+
+
+@seolinktop: [html5 library](https://webix.com)
+@seolink: [tree map](https://webix.com/widget/treemap/)

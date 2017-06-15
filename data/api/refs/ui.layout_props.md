@@ -56,3 +56,7 @@ Properties
 - api/link/ui.layout_visiblebatch_config.md
 - api/link/ui.layout_width_config.md
 
+
+
+@seolinktop: [popular javascript framework](https://webix.com)
+@seolink: [javascript grid layout](https://webix.com/widget/layout/)

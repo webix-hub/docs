@@ -32,3 +32,7 @@ The event is blockable. Returning false will prevent column dragging.
 
 
 
+
+
+@seolinktop: [html5 library](https://webix.com)
+@seolink: [html5 datatable](https://webix.com/widget/datatable/)

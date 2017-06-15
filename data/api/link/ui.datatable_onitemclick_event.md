@@ -24,3 +24,6 @@ The **id** parameter has the following structure:
 ~~~
 
 It can be passed into a api/link/ui.datatable_getitem.md method anyhway. 
+
+@seolinktop: [js frameworks](https://webix.com)
+@seolink: [javascript datatables](https://webix.com/widget/datatable/)

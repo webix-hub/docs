@@ -18,3 +18,7 @@ webix.ui({
 @template:	api_config
 @descr:
 An array of two elements (latitude and longitude) with comma delimiter.
+
+
+@seolinktop: [js frameworks](https://webix.com)
+@seolink: [javascript google maps](https://webix.com/widget/maps/)

@@ -30,3 +30,7 @@ $$("a1").refresh(); // header:'col1' -> header:'new header'
 @descr:
 
 
+
+
+@seolinktop: [ui component library](https://webix.com)
+@seolink: [javascript accordion](https://webix.com/widget/accordion/)

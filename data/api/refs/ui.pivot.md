@@ -224,3 +224,7 @@ var pivot = webix.ui({
 - api/refs/ui.pivot_events.md
 - api/refs/ui.pivot_others.md
 
+
+
+@seolinktop: [easy javascript framework](https://webix.com)
+@seolink: [javascript pivot table](https://webix.com/pivot/)

@@ -79,3 +79,6 @@ DataTable CSS
 </table>
 
 Read more about [Datatable](datatable/index.md) component.
+
+@seolinktop: [ui component library](https://webix.com)
+@seolink: [javascript data table](https://webix.com/widget/datatable/)

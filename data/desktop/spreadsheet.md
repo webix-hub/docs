@@ -130,3 +130,6 @@ of various languages.
 - spreadsheet/import.md
 - spreadsheet/handling_events.md
 - spreadsheet/howto.md
+
+@seolinktop: [web control library](https://webix.com)
+@seolink: [javascript spreadsheet library](https://webix.com/spreadsheet/)

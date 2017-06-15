@@ -25,3 +25,6 @@ The property is applicable only to **radar** charts.
 }}
 
 <img src="api/fill_property.png"/>
+
+@seolinktop: [javascript website framework](https://webix.com)
+@seolink: [javascript charts](https://webix.com/widget/charts/)

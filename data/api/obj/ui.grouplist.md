@@ -25,3 +25,6 @@ var grouplist = webix.ui({
 
 - [Overview of the Grouplist Widget](desktop/grouplist.md)
 - [Samples](http://docs.webix.com/samples/05_list/index.html)
+
+@seolinktop: [html5 ui library](https://webix.com)
+@seolink: [list ui](https://webix.com/widget/list/)

@@ -70,3 +70,6 @@ Fixes
 - undo for hidden columns and rows
 - unnecessary focus on dialog closing
 - update cell when live editor value changes
+
+@seolinktop: [ui widget library](https://webix.com)
+@seolink: [spreadsheet](https://webix.com/spreadsheet/)

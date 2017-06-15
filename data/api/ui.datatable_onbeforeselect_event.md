@@ -32,3 +32,7 @@ some.attachEvent("onBeforeSelect", function (data, preserve){
     api/ui.datatable_clearselection.md
 
 @descr:
+
+
+@seolinktop: [open source html5 framework](https://webix.com)
+@seolink: [html5 datatable](https://webix.com/widget/datatable/)

@@ -15,3 +15,7 @@ onColumnResizeAction
 @template:	api_event
 @descr:
 
+
+
+@seolinktop: [javascript framework](https://webix.com)
+@seolink: [javascript excel library](https://webix.com/widget/excel_viewer/)

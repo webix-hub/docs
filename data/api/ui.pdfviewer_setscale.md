@@ -17,3 +17,6 @@ setScale
 @descr:
 
 For legal values check the api/ui.pdfviewer_scale_config.md property.
+
+@seolinktop: [ui component library](https://webix.com)
+@seolink: [pdf viewer library](https://webix.com/widget/html5_pdf_viewer/)

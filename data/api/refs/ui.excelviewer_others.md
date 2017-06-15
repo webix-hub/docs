@@ -53,3 +53,7 @@ Others
 - api/link/ui.excelviewer_waitdata_other.md
 
 
+
+
+@seolinktop: [javascript framework](https://webix.com)
+@seolink: [excel javascript library](https://webix.com/widget/excel_viewer/)

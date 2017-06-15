@@ -26,3 +26,7 @@ $$("datatable1").attachEvent("onBeforeColumnDropOrder", function(sourceId, event
 
 The event is blockable. Returning false will prevent column dropping in case the order mode is enabled.
 
+
+
+@seolinktop: [best ui framework](https://webix.com)
+@seolink: [web datagrid](https://webix.com/widget/datatable/)

@@ -21,3 +21,7 @@ $$("ssheet").setCellValue(row, column, value);
 @relatedapi:
 api/ui.spreadsheet_getcellvalue.md
 
+
+
+@seolinktop: [javascript ui library](https://webix.com)
+@seolink: [spreadsheet](https://webix.com/spreadsheet/)

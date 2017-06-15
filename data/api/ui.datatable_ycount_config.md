@@ -28,3 +28,7 @@ Possible values for the property are:
 {{sample 10_window/05_popup_menu.html}}
 
 
+
+
+@seolinktop: [javascript framework](https://webix.com)
+@seolink: [javascript data table](https://webix.com/widget/datatable/)

@@ -30,3 +30,6 @@ spreadsheet/functions.md#creatingacustomfunction
 
 @relatedsample:
 65_spreadsheet/01_basic/03_math.html
+
+@seolinktop: [ui component library](https://webix.com)
+@seolink: [spreadsheet](https://webix.com/spreadsheet/)

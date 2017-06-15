@@ -23,3 +23,7 @@ barcode.getValue(); //returns "123456789012"
 @template:	api_method
 @descr:
 
+
+
+@seolinktop: [best ui framework](https://webix.com)
+@seolink: [barcode widget](https://webix.com/widget/barcode/)

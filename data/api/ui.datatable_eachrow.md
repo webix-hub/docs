@@ -23,3 +23,7 @@ dtable.eachRow(
 - If the table loads data dynamically - just already parsed rows will be iterated.
 - If you apply filtering to the table, all rows will be iterated, doesn't matter they meet filtering criteria or not.
 
+
+
+@seolinktop: [mvc library](https://webix.com)
+@seolink: [html5 datatable](https://webix.com/widget/datatable/)

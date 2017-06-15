@@ -18,3 +18,7 @@ $$("ssheet").attachEvent("onDataSerialize", function(data){
 @template:	api_event
 @descr:
 
+
+
+@seolinktop: [web control library](https://webix.com)
+@seolink: [web based spreadsheet](https://webix.com/spreadsheet/)

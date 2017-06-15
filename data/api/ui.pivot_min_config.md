@@ -18,3 +18,6 @@ pivot/initialization.md#properties
 
 @relatedapi:
 api/ui.pivot_max_config.md
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [javascript pivot grid](https://webix.com/pivot/)

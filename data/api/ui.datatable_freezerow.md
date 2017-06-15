@@ -22,3 +22,6 @@ Note, if you don't pass any parameters to the method, all frozen rows will be un
 datatable/frozen_rows.md
 
 @edition:pro
+
+@seolinktop: [open source html5 framework](https://webix.com)
+@seolink: [javascript datatables](https://webix.com/widget/datatable/)

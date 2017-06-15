@@ -19,3 +19,6 @@ api/ui.spreadsheet_recalculate.md
 
 @relatedsample:
 65_spreadsheet/01_basic/09_multisheet_math.html
+
+@seolinktop: [html5 library](https://webix.com)
+@seolink: [spreadsheet javascript library](https://webix.com/spreadsheet/)

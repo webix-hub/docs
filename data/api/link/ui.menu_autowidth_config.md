@@ -25,3 +25,6 @@ webix.ui({
 desktop/menu.md#autowidth
 @relatedsample:
 03_menu/17_submenu_autowidth.html
+
+@seolinktop: [open source html5 framework](https://webix.com)
+@seolink: [javascript menu](https://webix.com/widget/menu/)

@@ -18,3 +18,7 @@ webix.ui({
 @descr:
 
 
+
+
+@seolinktop: [popular javascript framework](https://webix.com)
+@seolink: [TreeMap](https://webix.com/widget/treemap/)

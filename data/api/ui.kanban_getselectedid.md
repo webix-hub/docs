@@ -20,3 +20,6 @@ var selected = $$("myBoard").getSelectedId();
 
 @relatedapi:
 api/ui.kanban_select.md
+
+@seolinktop: [javascript web framework](https://webix.com)
+@seolink: [javascript kanban board](https://webix.com/kanban/)

@@ -144,3 +144,7 @@ var scrollview = webix.ui({
 - api/refs/ui.scrollview_events.md
 - api/refs/ui.scrollview_others.md
 
+
+
+@seolinktop: [widget library](https://webix.com)
+@seolink: [scroll container](https://webix.com/widget/scrollview/)

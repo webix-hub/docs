@@ -12,3 +12,7 @@ webix.ui({
 @relatedsample:
 	03_menu/01_menubar.html
 
+
+
+@seolinktop: [mvc library](https://webix.com)
+@seolink: [javascript menu library](https://webix.com/widget/menu/)

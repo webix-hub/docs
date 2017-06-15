@@ -140,3 +140,7 @@ $$("ssheet").conditions.clear();
 
 
 
+
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [spreadsheet javascript library](https://webix.com/spreadsheet/)

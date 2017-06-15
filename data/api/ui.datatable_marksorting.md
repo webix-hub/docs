@@ -37,3 +37,6 @@ The method can be called with no parameter to remove all sotring signs from the 
 	api/link/ui.datatable_sort.md
 @related:
 	datatable/sorting.md
+
+@seolinktop: [web development library](https://webix.com)
+@seolink: [javascript datatable](https://webix.com/widget/datatable/)

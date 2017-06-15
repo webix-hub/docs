@@ -18,3 +18,7 @@ $$('dtable').attachEvent("onAreaDrag", function(start, end, ev){
 @template:	api_event
 @descr:
 
+
+
+@seolinktop: [javascript ui components library](https://webix.com)
+@seolink: [javascript datagrid](https://webix.com/widget/datatable/)

@@ -22,3 +22,6 @@ refreshHeaderContent
 @related:
 	datatable/sizing.md
     datatable/columns_configuration.md
+
+@seolinktop: [open source html5 framework](https://webix.com)
+@seolink: [javascript datatable](https://webix.com/widget/datatable/)

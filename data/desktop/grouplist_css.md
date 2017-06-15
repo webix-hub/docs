@@ -25,3 +25,6 @@ GroupList CSS
 </table>
 
 Read more about [GroupList](desktop/grouplist.md)
+
+@seolinktop: [javascript ui components library](https://webix.com)
+@seolink: [lists in javascript](https://webix.com/widget/list/)

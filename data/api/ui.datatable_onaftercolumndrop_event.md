@@ -37,3 +37,7 @@ $$("datatable1").attachEvent("onAfterColumnDrop", function(sourceId, targetId, e
 
 
 
+
+
+@seolinktop: [javascript ui components library](https://webix.com)
+@seolink: [datatable js](https://webix.com/widget/datatable/)

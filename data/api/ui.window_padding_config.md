@@ -31,3 +31,7 @@ The available attributes of the property are:
 - **left** - (*number*) the left padding
 - **right** - (*number*) the right padding
 
+
+
+@seolinktop: [lightweight js framework](https://webix.com)
+@seolink: [javascript new window](https://webix.com/widget/window/)

@@ -30,3 +30,7 @@ var unitlist = webix.ui({
 
 - [Overview of the Unitlist Widget](desktop/unitlist.md)
 - [Samples](http://docs.webix.com/samples/05_list/index.html)
+
+
+@seolinktop: [javascript framework](https://webix.com)
+@seolink: [object list javascript](https://webix.com/widget/list/)

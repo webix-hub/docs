@@ -284,3 +284,7 @@ webix.ready(function(){
 65_spreadsheet/03_customization/08_custom_menu.html
 }}
 
+
+
+@seolinktop: [ui widget library](https://webix.com)
+@seolink: [spreadsheet javascript library](https://webix.com/spreadsheet/)

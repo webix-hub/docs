@@ -37,3 +37,7 @@ Events
 - api/link/ui.carousel_onviewresize_event.md
 
 
+
+
+@seolinktop: [best ui framework](https://webix.com)
+@seolink: [javascript carousel](https://webix.com/widget/carousel/)

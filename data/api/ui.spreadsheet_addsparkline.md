@@ -30,3 +30,6 @@ the config object includes the following properties:
 
 @related:
 spreadsheet/cell_content.md#addingsparklinesintoacell
+
+@seolinktop: [ui library](https://webix.com)
+@seolink: [javascript spreadshee](https://webix.com/spreadsheet/)

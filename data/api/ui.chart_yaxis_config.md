@@ -146,3 +146,6 @@ bg: function(yIndex, xIndex){
 	return yIndex%2?"#e9eef9":"#f3f7ff";
 }
 ~~~
+
+@seolinktop: [lightweight js framework](https://webix.com)
+@seolink: [javascript graph visualization](https://webix.com/widget/charts/)

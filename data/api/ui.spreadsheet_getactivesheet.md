@@ -19,3 +19,7 @@ var activeSheet = $$("ssheet").getActiveSheet();
 @template:	api_method
 @descr:
 
+
+
+@seolinktop: [lightweight js framework](https://webix.com)
+@seolink: [javascript spreadshee](https://webix.com/spreadsheet/)

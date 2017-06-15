@@ -1,1 +1,4 @@
 @link: api/validatecollection_onvalidationerror_event.md
+
+@seolinktop: [html5 framework](https://webix.com)
+@seolink: [lists in javascript](https://webix.com/widget/list/)

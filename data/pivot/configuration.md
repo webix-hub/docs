@@ -236,3 +236,6 @@ structure:{
 ~~~
 
 {{sample 61_pivot/01_init/08_sorted_header.html}}
+
+@seolinktop: [javascript dashboard framework](https://webix.com)
+@seolink: [pivot table web](https://webix.com/pivot/)

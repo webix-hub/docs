@@ -39,3 +39,6 @@ desktop/double_list.md
 
 @relatedsample:
 13_form/01_controls/25_dbllist.html
+
+@seolinktop: [js frameworks](https://webix.com)
+@seolink: [lists in javascript](https://webix.com/widget/list/)

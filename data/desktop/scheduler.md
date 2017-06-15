@@ -97,3 +97,6 @@ Related sample: <a href="http://webix-hub.github.io/components/gantt/sample.html
 - desktop/graphic_tools.md
 
 @complexity:2
+
+@seolinktop: [html5 framework](https://webix.com)
+@seolink: [javascript event scheduler](https://webix.com/scheduler/)

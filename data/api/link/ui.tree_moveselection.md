@@ -18,3 +18,6 @@ The predefined values are:
     api/link/ui.tree_unselect.md
 @related:
 	datatree/selection.md
+
+@seolinktop: [js frameworks](https://webix.com)
+@seolink: [javascript tree](https://webix.com/widget/tree/)

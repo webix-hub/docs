@@ -16,3 +16,7 @@ var result = mylist.validate();
 
 /*validate first record*/
 var result = mylist.validate(mylist.getFirstId());
+
+
+@seolinktop: [js framework](https://webix.com)
+@seolink: [list ui](https://webix.com/widget/list/)

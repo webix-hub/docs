@@ -22,3 +22,6 @@ spreadsheet/math.md#formulaeditor
 
 @relatedsample:
 65_spreadsheet/03_customization/03_editor_bar.html
+
+@seolinktop: [javascript ui components library](https://webix.com)
+@seolink: [spreadsheet javascript library](https://webix.com/spreadsheet/)

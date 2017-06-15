@@ -28,3 +28,6 @@ webix.ui({
 	api/ui.datatable_subrow_config.md
 
 @edition:pro
+
+@seolinktop: [easy javascript framework](https://webix.com)
+@seolink: [datatable html](https://webix.com/widget/datatable/)

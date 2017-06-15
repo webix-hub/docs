@@ -204,3 +204,7 @@ var kanban = webix.ui({
 - api/refs/ui.kanban_events.md
 - api/refs/ui.kanban_others.md
 
+
+
+@seolinktop: [lightweight js framework](https://webix.com)
+@seolink: [kanban board tool](https://webix.com/kanban/)

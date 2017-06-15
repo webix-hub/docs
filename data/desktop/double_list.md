@@ -213,3 +213,7 @@ $$("$dbllist1").$$("left").disable();
 - [UnitList](desktop/unitlist.md)
 - [X-List](desktop/xlist.md)
 - [GroupList](desktop/grouplist.md)
+
+
+@seolinktop: [javascript component library](https://webix.com)
+@seolink: [javascript list](https://webix.com/widget/list/)

@@ -19,3 +19,7 @@ var config = $$("ssheet").getColumn(id);
 @template:	api_method
 @descr:
 
+
+
+@seolinktop: [js framework](https://webix.com)
+@seolink: [spreadsheet javascript library](https://webix.com/spreadsheet/)

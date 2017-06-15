@@ -18,3 +18,6 @@ X-List CSS
 </table>
 
 Read more about [XList](desktop/xlist.md)
+
+@seolinktop: [javascript ui library](https://webix.com)
+@seolink: [lists in javascript](https://webix.com/widget/list/)

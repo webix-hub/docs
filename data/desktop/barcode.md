@@ -390,3 +390,6 @@ The result of applying the "code39" type is given in the picture below:
 
 
 @edition:pro
+
+@seolinktop: [html5 ui library](https://webix.com)
+@seolink: [barcode widget](https://webix.com/widget/barcode/)

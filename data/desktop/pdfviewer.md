@@ -222,3 +222,6 @@ $$("pdf").load("binary->files/data.pdf");
 @edition:pro
 
 @spellcheck:pdf, PDFbar
+
+@seolinktop: [javascript component library](https://webix.com)
+@seolink: [pdf viewer library](https://webix.com/widget/html5_pdf_viewer/)

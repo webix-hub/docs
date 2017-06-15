@@ -34,3 +34,6 @@ Enabled by default
 @related:
 	desktop/scroll_control.md
 	datatable/sizing.md#scrolling
+
+@seolinktop: [easy javascript framework](https://webix.com)
+@seolink: [javascript datatable](https://webix.com/widget/datatable/)

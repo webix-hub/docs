@@ -25,3 +25,7 @@ desktop/gage.md
 60_pro/15_gage/01_init.html
 
 
+
+
+@seolinktop: [html5 ui library](https://webix.com)
+@seolink: [JavaScript Gauge ](https://webix.com/widget/gage/)

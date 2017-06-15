@@ -22,3 +22,6 @@ $$("pivot").attachEvent("onBeforeRender", function(config){
 
 @related:
 pivot/customization.md#prerendercustomization
+
+@seolinktop: [ui component library](https://webix.com)
+@seolink: [javascript pivot grid](https://webix.com/pivot/)

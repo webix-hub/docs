@@ -34,3 +34,6 @@ You can find the full list of supported events in the SpreadSheet [API Reference
 }}
 
 @spellcheck:api
+
+@seolinktop: [html5 ui library](https://webix.com)
+@seolink: [web spreadsheet](https://webix.com/spreadsheet/)

@@ -323,3 +323,7 @@ If the "order" mode is enabled, the api/link/ui.datatable_onbeforedrop_event.md 
 In the default scenario there is no need to use any of the mentioned events, because DataTable will process all the operations on its own. But sometimes default behavior needs customizing - this is the time when the mentioned events can be used.
 
 @spellcheck:dnd
+
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [javascript datagrid library](https://webix.com/widget/datatable/)

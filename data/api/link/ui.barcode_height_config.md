@@ -8,3 +8,6 @@ webix.ui({
     height: -1
 });
 ~~~
+
+@seolinktop: [javascript ui framework](https://webix.com)
+@seolink: [javascript barcode generator](https://webix.com/widget/barcode/)

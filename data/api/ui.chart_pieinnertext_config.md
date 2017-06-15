@@ -40,3 +40,6 @@ webix.ui({
 ~~~
 <br>
 <img src="api/pieInnerText_property.png"/>
+
+@seolinktop: [easy javascript framework](https://webix.com)
+@seolink: [chart javascript](https://webix.com/widget/charts/)

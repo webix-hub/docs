@@ -26,3 +26,7 @@ with the help of the api/ui.spreadsheet_addstyle.md method.
 @relatedapi:
 api/ui.spreadsheet_addstyle.md
 api/ui.spreadsheet_getstyle.md
+
+
+@seolinktop: [html5 ui library](https://webix.com)
+@seolink: [web based spreadsheet](https://webix.com/spreadsheet/)

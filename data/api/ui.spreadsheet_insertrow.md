@@ -28,3 +28,7 @@ api/ui.spreadsheet_deleterow.md
 api/ui.spreadsheet_getrow.md
 api/ui.spreadsheet_hiderow.md
 api/ui.spreadsheet_isrowvisible.md
+
+
+@seolinktop: [javascript ui library](https://webix.com)
+@seolink: [web spreadsheet](https://webix.com/spreadsheet/)

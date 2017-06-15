@@ -20,3 +20,7 @@ pivot/initialization.md#properties
 
 @relatedapi:
 api/ui.pivot_min_config.md
+
+
+@seolinktop: [lightweight js framework](https://webix.com)
+@seolink: [pivot table web](https://webix.com/pivot/)

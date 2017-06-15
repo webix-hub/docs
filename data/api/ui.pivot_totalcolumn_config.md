@@ -25,3 +25,6 @@ pivot/configuration.md#sumcountersforcolumnsandrows
 
 @relatedsample:
 61_pivot/03_table_api/01_total_column.html
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [javascript pivot table](https://webix.com/pivot/)

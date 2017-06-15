@@ -18,3 +18,6 @@ dtable.selectAll();
 
 @relatedapi:
 - api/ui.datatable_unselectall.md
+
+@seolinktop: [javascript website framework](https://webix.com)
+@seolink: [datagrid in html5](https://webix.com/widget/datatable/)

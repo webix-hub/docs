@@ -52,3 +52,7 @@ function saveData(){
 
 
 You can [study data binding separately](desktop/data_binding.md).
+
+
+@seolinktop: [js frameworks](https://webix.com)
+@seolink: [buy kanban board](https://webix.com/kanban/)

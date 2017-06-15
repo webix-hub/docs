@@ -18,3 +18,7 @@ showSeries
 @descr: Works with already defined series and allows for manipulating their visibility. The method works for series that was previously hidden by **hideSeries()** method.  
 
 
+
+
+@seolinktop: [javascript web framework](https://webix.com)
+@seolink: [chart javascript](https://webix.com/widget/charts/)

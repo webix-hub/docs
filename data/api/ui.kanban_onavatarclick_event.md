@@ -25,3 +25,7 @@ $$("myBoard").attachEvent("onAvatarClick", function(itemId,ev,node,list)){
 
 @relatedsample:
 63_kanban/02_events/02_avatar_onclick.html
+
+
+@seolinktop: [web control library](https://webix.com)
+@seolink: [kanban board](https://webix.com/kanban/)

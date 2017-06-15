@@ -18,3 +18,7 @@ var barcode = webix.ui({
 
 - [Overview of the Barcode Widget](desktop/barcode.md)
 - [Samples](http://docs.webix.com/samples/60_pro/08_barcode/index.html)
+
+
+@seolinktop: [html5 framework](https://webix.com)
+@seolink: [javascript barcode generator](https://webix.com/widget/barcode/)

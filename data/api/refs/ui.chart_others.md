@@ -39,3 +39,7 @@ Others
 - api/link/ui.chart_waitdata_other.md
 
 
+
+
+@seolinktop: [ui component library](https://webix.com)
+@seolink: [javascript charts](https://webix.com/widget/charts/)

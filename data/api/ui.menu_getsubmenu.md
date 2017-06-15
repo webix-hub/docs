@@ -31,3 +31,7 @@ $$("mymenu").attachEvent("onItemClick", function(id){
     	webix.message("Click: " + submenu.getItem(id).value);
 });
 ~~~
+
+
+@seolinktop: [mvc library](https://webix.com)
+@seolink: [javascript menu library](https://webix.com/widget/menu/)

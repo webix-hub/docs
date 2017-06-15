@@ -46,3 +46,7 @@ Properties
 - api/ui.carousel_type_config.md
 - api/link/ui.carousel_width_config.md
 
+
+
+@seolinktop: [html5 library](https://webix.com)
+@seolink: [carousel slider](https://webix.com/widget/carousel/)

@@ -23,3 +23,6 @@ If you are using cell-based selection, you can use the next syntax
 ~~~js
 var check = grid.isSelected(row_id, cell_id);
 ~~~
+
+@seolinktop: [open source html5 framework](https://webix.com)
+@seolink: [javascript datagrid library](https://webix.com/widget/datatable/)

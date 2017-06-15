@@ -22,3 +22,7 @@ $$("ssheet").sortRange("B2:B4", "desc");
 @template:	api_method
 @descr:
 
+
+
+@seolinktop: [lightweight js framework](https://webix.com)
+@seolink: [web based spreadsheet](https://webix.com/spreadsheet/)

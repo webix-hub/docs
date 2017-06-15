@@ -37,3 +37,6 @@ webix.ui({
 By default, the parameter is disabled. 
 
 When enabled, the method doesn't actually resize the datatable. After page refresh, size returns to the initial one (provided that you haven't saved the table's state).
+
+@seolinktop: [js framework](https://webix.com)
+@seolink: [download datatable](https://webix.com/widget/datatable/)

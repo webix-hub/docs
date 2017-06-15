@@ -25,3 +25,7 @@ webix.ui({
 
 @related:
 desktop/googlemap.md#workingwithheatmap
+
+
+@seolinktop: [javascript ui components library](https://webix.com)
+@seolink: [JavaScript Map](https://webix.com/widget/maps/)

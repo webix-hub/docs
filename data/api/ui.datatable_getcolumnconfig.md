@@ -50,3 +50,6 @@ calling <code>getColumnConfig("title")</code> will return the object as in:
 {{note
 Note that the method works for **hidden** column as well.
 }}
+
+@seolinktop: [js framework](https://webix.com)
+@seolink: [datatable html](https://webix.com/widget/datatable/)

@@ -148,3 +148,7 @@ $$("myBoard").filter(function(task){
 {{sample
 63_kanban/03_data_operations/02_filter.html
 }}
+
+
+@seolinktop: [javascript ui library](https://webix.com)
+@seolink: [kanban board](https://webix.com/kanban/)

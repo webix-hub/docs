@@ -7,3 +7,7 @@
 	api/link/ui.form_validate.md
 @relatedsample:
 	13_form/04_validation/06_validation_rules.html
+
+
+@seolinktop: [mvc library](https://webix.com)
+@seolink: [javascript form](https://webix.com/widget/form/)

@@ -142,3 +142,7 @@ var carousel = webix.ui({
 - api/refs/ui.carousel_events.md
 - api/refs/ui.carousel_others.md
 
+
+
+@seolinktop: [javascript website framework](https://webix.com)
+@seolink: [javascript carousel](https://webix.com/widget/carousel/)

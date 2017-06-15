@@ -11,3 +11,7 @@ var record = dtable.getItem("rowId");
 //you can access data members directly
 var title = record.title;
 
+
+
+@seolinktop: [ui component library](https://webix.com)
+@seolink: [javascript datagrid library](https://webix.com/widget/datatable/)

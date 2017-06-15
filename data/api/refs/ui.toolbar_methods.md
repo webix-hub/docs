@@ -101,3 +101,7 @@ Methods
 - api/link/ui.toolbar_validate.md
 
 
+
+
+@seolinktop: [ui component library](https://webix.com)
+@seolink: [toolbar js](https://webix.com/widget/toolbar/)

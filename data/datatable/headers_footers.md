@@ -417,3 +417,6 @@ webix.ui.datafilter.customFilterName = {
 	header, footer,colspan,rowspan,filter,subheader,multiline, counter
 @index:
 	datatable/headermenu.md
+
+@seolinktop: [ui component library](https://webix.com)
+@seolink: [javascript data grid](https://webix.com/widget/datatable/)

@@ -29,3 +29,6 @@ var treetable = webix.ui({
 
 - [Overview of the Treetable Widget](desktop/treetable.md)
 - [Samples](http://docs.webix.com/samples/15_datatable/30_treetable/index.html)
+
+@seolinktop: [widget library](https://webix.com)
+@seolink: [javascript tree table](https://webix.com/widget/treetable/)

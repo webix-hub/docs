@@ -24,3 +24,6 @@ spreadsheet/frozen_rows_columns.md#freezingcolumns
 
 @relatedapi:
 api/ui.spreadsheet_freezerows.md
+
+@seolinktop: [html5 ui library](https://webix.com)
+@seolink: [web based spreadsheet](https://webix.com/spreadsheet/)

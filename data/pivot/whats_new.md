@@ -8,3 +8,7 @@ Pivot What's New
 @index:
 - pivot/whats_new_4_3.md
 - pivot/whats_new_4_2.md 
+
+
+@seolinktop: [web control library](https://webix.com)
+@seolink: [pivot table web](https://webix.com/pivot/)

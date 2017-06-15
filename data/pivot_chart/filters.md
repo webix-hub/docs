@@ -92,3 +92,7 @@ webix.ui({
 ~~~
 
 {{sample 61_pivot/06_filters/01_outer_filters.html}}
+
+
+@seolinktop: [web ui framework](https://webix.com)
+@seolink: [javascript pivot grid](https://webix.com/pivot/)

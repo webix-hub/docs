@@ -20,3 +20,7 @@ $$("datatable").getHeaderNode("title");
 @descr:
 
 
+
+
+@seolinktop: [javascript web framework](https://webix.com)
+@seolink: [web datagrid](https://webix.com/widget/datatable/)

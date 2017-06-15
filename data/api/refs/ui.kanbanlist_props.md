@@ -108,3 +108,7 @@ Properties
 - api/link/ui.kanbanlist_xcount_config.md
 - api/link/ui.kanbanlist_ycount_config.md
 
+
+
+@seolinktop: [javascript component library](https://webix.com)
+@seolink: [list ui](https://webix.com/widget/list/)

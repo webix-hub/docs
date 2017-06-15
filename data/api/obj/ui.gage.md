@@ -23,3 +23,7 @@ var gage = webix.ui({
 
 - [Overview of the Gage Widget](desktop/gage.md)
 - [Samples](http://docs.webix.com/samples/60_pro/15_gage/index.html)
+
+
+@seolinktop: [javascript ui framework](https://webix.com)
+@seolink: [javascript gage](https://webix.com/widget/gage/)

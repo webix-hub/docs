@@ -62,3 +62,7 @@ Properties
 - api/link/ui.accordion_visiblebatch_config.md
 - api/link/ui.accordion_width_config.md
 
+
+
+@seolinktop: [javascript framework](https://webix.com)
+@seolink: [accordion ui](https://webix.com/widget/accordion/)
