@@ -342,6 +342,7 @@ $$("form1").elements["login"].attachEvent("onChange", function(newv, oldv){
 The easiest way to get to the parent form from any of its elements is to call the api/link/ui.view_getformview.md:
 
 {{snippet Validating form on input changing }}
+~~~js
 { view:"text", on:{
 	onChange:function(){
 		var form = this.getFormView();

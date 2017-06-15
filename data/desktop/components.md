@@ -1,4 +1,4 @@
-UI Widgets
+UI Widgets 
 ==================
 
 The <a title="ui library" href="http://webix.com">Webix UI library</a> supplies over 80 fully customizable widgets and controls
@@ -6,14 +6,15 @@ to help you build interfaces of different kinds, nicely present data and work wi
 There are also helpful extensions, integrations with <br> third-party tools and specific features to make your applications 
 good-looking and user-friendly.
 
-All the widgets are objects made with the webix.ui() constructor where the type of the widget
+All the widgets are objects made with the [webix.ui()](api/_ui.md) constructor where the type of the widget
 is set by the 'view' property (the declarative syntax is available as well).
 
-If you feel puzzled about where to start, explore the desktop/getting_started.md article. To learn about main features and possibilities of the Webix library, read the desktop/overview.md.
+If you feel puzzled about where to start, explore the desktop/getting_started.md article. 
+To learn about main features and possibilities of the Webix library, read the desktop/overview.md.
 
 <h2 style="clear:both;"/>Complex Widgets</h2>
 
-A set of ready-made JavaScript widgets is provided to solve tasks in different fields. 
+A set of [ready-made JavaScript widgets](desktop/complex_widgets.md) is provided to solve tasks in different fields. 
 Whether you need to create an interactive data report, optimize a workflow, add and manage events,
 handle hierarchical data or make calculations in a powerful spreadsheet, 
 you will surely find a proper widget for your needs in the Webix library.
@@ -355,7 +356,7 @@ add special features that can't be achieved with the standard set of widgets pre
 </div>
 
 <h2 style="clear:both;">Controls</h2>
-Controls are mainly responsible for handling events since they enable user-app interaction by triggering functions attached to them. 
+[Controls](desktop/controls.md) are mainly responsible for handling events since they enable user-app interaction by triggering functions attached to them. 
 Note that any event can be attached to any widget by referring to its ID.  
 <div class="controls_group" >
 	<ul>
@@ -408,10 +409,9 @@ Note that any event can be attached to any widget by referring to its ID.
 </div>
 
 <h2 style="clear:both;">UI Extensions</h2>
-UI extensions are helpful widgets that are mostly task-oriented and intended to accomplish a certain purpose. 
+[Extensions](desktop/extensions.md) are helpful widgets that are mostly task-oriented and intended to accomplish a certain purpose. 
 They are already quite configurable and need only to be initialized on the page to start serving.
 
-<br>
 To see a complete list of extension widgets and find out details on their use, please, go to the chapter - desktop/extensions.md.
 
 
@@ -463,7 +463,6 @@ div.controls_group img {
 - desktop/colorboard.md
 - desktop/context.md
 - desktop/contextmenu.md
-- desktop/controls.md
 - desktop/dataview.md
 - desktop/daterange.md
 - desktop/double_list.md

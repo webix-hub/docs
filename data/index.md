@@ -38,6 +38,7 @@ Start
 - desktop/whats_new.md
 - desktop/complex_widgets.md
 - desktop/components.md
+- desktop/controls.md
 - desktop/extensions.md
 - desktop/basic_tasks.md
 - api/toc/ui.md

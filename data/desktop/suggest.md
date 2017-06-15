@@ -372,7 +372,7 @@ Since we speak here about **relative** position, the property to set it has the 
 The functionality is available in **Webix Pro** edition only.
 }}
 
-Webix offers advanced suggest controls for width extra functionality and greater visual effect:
+Webix offers advanced suggest controls for extra functionality and greater visual effect:
 
 - **CheckSuggest** - a suggest control based on Webix [List](desktop/list.md). Features checkboxes that enable multiple choice;
 - **MultiSuggest** - a suggest control based on Webix [List](desktop/list.md) with the ability to select **multiple items** at a time;

@@ -18,7 +18,7 @@ Multiselect inherits from a standard [richselect](desktop/richselect.md) and has
 
 - Each option is equipped with a checkbox (can be configured, see below);
 - To select an option, check it or click the corresponding list item. A selected option will be added to the input;
-- To remove an option from selection, click either the "cross" sign or use the "backspace" key in the input filed or uncheck it in the list.
+- To remove an option from selection, uncheck it in the list.
 
 ##Initialization
 
