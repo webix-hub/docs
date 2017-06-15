@@ -10,9 +10,9 @@ API Reference
 
 - [Methods, properties and events](api/refs/ui.spreadsheet.md)
 
-@seodescr:
+<div class="h2">External resources</div>
 
-- You can download [javascript Spreadsheet](https://webix.com/spreadsheet/) there and try Webix [UI library](https://webix.com)
+- You can [download javascript Spreadsheet](https://webix.com/spreadsheet/)
 - There are online samples at [docs.webix.com/samples](http://docs.webix.com/samples/65_spreadsheet/index.html)
 
 <div class="h2">Overview</div>

@@ -20,10 +20,6 @@ Events
 - api/link/ui.iframe_onviewresize_event.md - view size was changed by resizer
 }}
 
-@seodescr:
-
-- See more information about Webix [js framework](https://webix.com) there.
-
 @metadescr: Learn more about the IFrame widget configuration. This page contains the whole list of events that can be used with this component.
 @doctitle: The IFrame events documentation page.
 

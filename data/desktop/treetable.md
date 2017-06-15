@@ -97,10 +97,6 @@ Common tasks here include the following and coincide with those of the [datatabl
 - [Redefinition of the Components](desktop/redefinition.md)
 - [TreeTable CSS Image Map](desktop/treetable_css.md)
 
-@seodescr:
-
-- See more information about Webix [ui library](https://webix.com) and [javascript tree table](https://webix.com/widget/treetable/) there.
-
 @metadescr: Learn the basics of usage of the tree table JavaScript widget that allows displaying hierarchical data within the data table. 
 @doctitle: TreeTable UI widget documentation: overview, initialization, etc.
 

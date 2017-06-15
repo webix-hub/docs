@@ -173,10 +173,6 @@ var select = webix.ui({
 }}
 
 
-@seodescr:
-
-- See more information about Webix [UI library](https://webix.com) there.
-
 @metadescr: This page describes methods, events and properties that you can use while working with the UI Select control to configure its behavior and appearance.
 @doctitle: The UI Select control API reference: methods, events, properties etc.
 

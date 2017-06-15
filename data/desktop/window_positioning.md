@@ -104,9 +104,5 @@ webix.ui({
 });
 ~~~
 
-@seodescr:
-
-- See more information about Webix [UI library](https://webix.com) and [Popup widget](https://webix.com/widget/popup/) there.
-
 @metadescr: Learn more about Webix chart widget configuration. This documentation page describes the process of a custom X-axis creation: setting units, templates usage, etc.
 @doctitle: Chart widget configuration: examples of creating a custom X-axis.

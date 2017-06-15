@@ -175,9 +175,5 @@ The code above locates the necessary cell in the layout and renders the needed v
 
 **Related sample:** [Routes.Changing the Webix Layout](https://webix-hub.github.io/webix-backbone/samples/08_routes_layout.html)
 
-@seodescr:
-
-- See more information about Webix [ui library](https://webix.com) there.
-
 @metadescr: This documentation page describes the use of the Backbone router for pure Webix widgets, Backbone-integrated views and the possibility to update layout sections.
 @doctitle: Backbone integration documentation page: working with Backbone routers

@@ -217,10 +217,6 @@ It goes without saying that a long list of custom **styles** is taken out into a
 
 Images for the application as well as custom icons (except for [built-in ones](desktop/icon_types.md)) are stored in a separate folder, as a rule, in the same directory as the index file or somewhere nearby. 
 
-@seodescr:
-
-- See more information about Webix [javascript framework](https://webix.com) there.
-
 @metadescr: This page describes different approaches to big application structuring: the Webix-Jet micro-framework usage, principles of separation of app's logic and design, etc.
 @doctitle: The ways of structuring big web applications.
 

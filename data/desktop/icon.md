@@ -30,9 +30,5 @@ Icons in Webix can:
 
 Read more about icons within Webix views in the [dedicated chapter of the documentation](desktop/icon_types.md).
 
-@seodescr:
-
-- See more information about Webix [ui library](https://webix.com) there.
-
 @metadescr: Learn how to increase the usability of your app using the clickable icon control with neat view. The page describes the initialization process and main properties.
 @doctitle: The Icon control documentation: overview and initialization. 

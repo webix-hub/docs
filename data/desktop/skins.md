@@ -279,10 +279,6 @@ Applying the 'Web' skin to the app
 
 <img style="margin: 20px auto 20px auto;display: block;box-shadow: #D8D8D8 0px 0px 7px 1px;" src="desktop/skins/web_skin.png"/>
 
-@seodescr:
-
-- See more information about [open source html5 framework](https://webix.com) there.
-
 @metadescr: Learn how you can change the styling of your Webix app by using one of 13 available CSS skins. The page contains examples of skins usage along with the samples.
 @doctitle: Styling documentation page: using CSS skins to define the app look.
 

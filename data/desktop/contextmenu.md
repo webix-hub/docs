@@ -190,10 +190,6 @@ webix.ui({
 - [Event Handling](desktop/event_handling.md)
 - [Context](desktop/context.md)
 
-@seodescr:
-
-- See more information about Webix [web development library](https://webix.com) there.
-
 @metadescr: Learn how you can use the ContextMenu widget in your Webix apps to provide users with fast access to the frequently used functions. 
 @doctitle: The ContextMenu UI widget documentation: overview and configuration.
 

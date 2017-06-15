@@ -170,10 +170,6 @@ var text = webix.ui({
 - api/link/ui.text_touchable_other.md - flag, which force touch reaction on touch screen devices
 }}
 
-@seodescr:
-
-- See more information about Webix [javascript framework](https://webix.com) there.
-
 @metadescr: Learn how you can configure the TextArea control intended for creating multi-line input fields for web forms. This page contains all methods, properties and events.
 @doctitle: API reference for the TextArea control: methods, properties, etc.
 

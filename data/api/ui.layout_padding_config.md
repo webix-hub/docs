@@ -19,10 +19,6 @@ webix.ui({
 });
 
 
-@seodescr:
-
-- See more information about Webix [ui library](https://webix.com) and [javascript layout](https://webix.com/widget/layout/) there.
-
 @metadescr: Learn how to configure the JavaScript Layout widget. This documentation page contains detailed description of how the padding property works.
 @doctitle: The documentation page for the padding property of Layout.
 

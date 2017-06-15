@@ -242,10 +242,6 @@ $$("upl1").attachEvent("onUploadComplete", function(){
 - [Api Reference - Uploader Methods, Properties and Events](api/refs/ui.uploader.md)
 - [Uploader CSS Image Map](desktop/uploader_css.md)
 
-@seodescr:
-
-- See more information about Webix [javascript framework](https://webix.com) and [File Uploader](https://webix.com/widget/uploader/) widget there.
-
 @metadescr: Learn how to allow users uploading files to a server with the file uploader. The page contains detailed guides describing the initialization and configuration process.
 @doctitle: Creating the file uploader widget on a page.
 

@@ -259,10 +259,6 @@ webix.modalbox({...})
 
 From now on, the user gets a possibility to use full keyboard, for instance, for typing values into inputs inside modal boxes. 
 
-@seodescr:
-
-- See more information about Webix [best UI framework](https://webix.com) there.
-
 @metadescr: Learn how you can communicate with users using message boxes of two types: common info message boxes and modal message boxes that interrupt the app's workflow.
 @doctitle: Message Boxes documentation page: using modal and info message boxes.
 

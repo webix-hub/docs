@@ -216,10 +216,6 @@ The string value of the *url* property *binary->files/data.xlsx@Data[1-10]"* inc
 
 {{sample 60_pro/10_viewers/04_excel_proxy.html}}
 
-@seodescr:
-
-- See more information about Webix [javascript framework](https://webix.com) there.
-
 @metadescr: Provide your users with the possibility to view Excel files with the Excel Viewer widget. This page describes widget initialization, main features and methods.
 @doctitle: Excel Viewer UI widget documentation: API and usage.
 

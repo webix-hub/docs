@@ -1,9 +1,9 @@
 Mobile Scheduler
 ===================
 
-@seodescr:
+<div class="h2">External resources</div>
 
-- You can [download Mobile Scheduler](https://webix.com/scheduler/) from Webix [UI library](https://webix.com)
+- You can [download Mobile Scheduler](https://webix.com/scheduler/)
 - There are online samples at [docs.webix.com/samples](http://docs.webix.com/samples/62_scheduler/index.html)
 
 Overview

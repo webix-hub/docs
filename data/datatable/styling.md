@@ -348,10 +348,6 @@ The list of CSS classes with their descriptions is given below:
 - **.webix_column .webix_first** - the first column of the table
 - **.webix_column .webix_cell** - a cell of the column 
 
-@seodescr:
-
-- See more information about Webix [javascript framework](https://webix.com) and [Data Table widget](https://webix.com/widget/datatable/) there.
-
 @metadescr: Learn how to change the appearance of DataTable. You can apply CSS styles to the header, rows, columns or the whole table. The page contains code examples and samples.
 @doctitle: Styling Webix DataTable elements: header, cells, rows, etc.
 

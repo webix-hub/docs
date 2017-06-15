@@ -232,10 +232,6 @@ Here **.bt1** and  **bt2** are class names for two different buttons while **inp
 Default [FontAwesome icons](http://fortawesome.github.io/Font-Awesome/icons/) that are used for various controls can be changed to custom ones, which is described in detail in 
 a [separate documentation article](desktop/icon_types.md).
 
-@seodescr:
-
-- See more information about Webix [html5 ui library](https://webix.com) there.
-
 @metadescr: Learn how you can create your own unique style for your Webix apps by changing fonts, colors, etc. Create dynamic styles, use predefined CSS classes and other features.
 @doctitle: Component styling documentation page: changing font, color, etc.
 

@@ -79,10 +79,6 @@ webix.ui({
 });
 ~~~
 
-@seodescr:
-
-- See more information about Webix [ui library](https://webix.com) and [javascript calendar](https://webix.com/widget/calendar/) there.
-
 @relatedsample:
 09_calendar/10_icons.html
 

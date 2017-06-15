@@ -7,9 +7,9 @@ API Reference
 - [Methods, properties and events](api/refs/ui.kanban.md)
 
 
-@seodescr:
+<div class="h2">External resources</div>
 
-- You can [download Kanban Board](https://webix.com/kanban/) from Webix [Web UI framework](https://webix.com)
+- You can [download Kanban Board](https://webix.com/kanban/)
 - There are online samples at [docs.webix.com/samples](http://docs.webix.com/samples/63_kanban/index.html)
 
 

@@ -73,9 +73,5 @@ var box = webix.confirm({...});
 webix.modalbox.hide(box);
 ~~~
 
-@seodescr:
-
-- See more information about [js frameworks](https://webix.com) there.
-
 @metadescr: Learn how to use the confirm method to create a confirm box.
 @doctitle: The documentation page for the confirm helper method.

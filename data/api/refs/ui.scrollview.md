@@ -131,10 +131,6 @@ var scrollview = webix.ui({
 - api/link/ui.scrollview_name_other.md - indicates the name of the component (a read-only property)
 }}
 
-@seodescr:
-
-- See more information about [js frameworks](https://webix.com) and [ui scrollview](https://webix.com/widget/scrollview/) widget there.
-
 @metadescr: Learn more about the ScrollView widget that you can use for displaying large amounts of text data with a scrollbar.
 @doctitle: The ScrollView widget API reference: properties, methods, etc.
 

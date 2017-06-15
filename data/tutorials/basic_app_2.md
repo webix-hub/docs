@@ -161,10 +161,6 @@ Go to the previous page - [Creating a Basic  App](tutorials/basic_app.md)
 
 Go further to [Server-Side Integration](tutorials/basic_app_3.md)
 
-@seodescr:
-
-- See more information about Webix [ui library](https://webix.com) there.
-
 @metadescr: Learn how to set IDs for app's elements and attach events to them, how to implement adding, deleting and updating of items and how to use the confirmation window.
 @doctitle: How interaction between app elements works. 
 

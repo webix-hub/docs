@@ -400,10 +400,6 @@ var datatable = webix.ui({
 }}
 
 
-@seodescr:
-
-- See more information about Webix [JavaScript UI library](https://webix.com) and [JS DataTable](https://webix.com/widget/datatable/) there.
-
 @metadescr: This page describes methods, events and properties that you can use while working with the datatable UI widget to configure filtering, sorting and other features.
 @doctitle: DataTable UI widget API reference: methods, events, properties etc.
 

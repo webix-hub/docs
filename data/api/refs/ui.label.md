@@ -147,10 +147,6 @@ var label = webix.ui({
 - api/link/ui.label_touchable_other.md - flag, which force touch reaction on touch screen devices
 }}
 
-@seodescr:
-
-- See more information about Webix [ui library](https://webix.com) there.
-
 @metadescr: Learn more about creating text labels with the Label control. The page describes all properties, methods and events.
 @doctitle: The label control API reference: methods, properties, events, etc.
 

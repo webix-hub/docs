@@ -77,9 +77,5 @@ The event fires on clicking any tab, takes its ID as a parameter and sets the so
 - [Event Handling](desktop/event_handling.md)
 - [Multiview](desktop/multiview.md)
 
-@seodescr:
-
-- See more information about Webix [javascript ui framework](https://webix.com) there.
-
 @metadescr: Learn how to use the IFrame widget, initialize it on the page, load data into it, switch between different IFrames, etc.
 @doctitle: IFrame UI widget documentation: initialization and basic usage.

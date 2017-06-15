@@ -11,9 +11,9 @@ API Reference
 
 - [Methods, properties and events](api/refs/ui.pivot.md)
 
-@seodescr:
+<div class="h2">External resources</div>
 
-- You can download Webix [UI library](https://webix.com) and [javascript pivot table](https://webix.com/pivot/)
+- You can [download Pivot Widget](https://webix.com/pivot)
 - There are online samples at [docs.webix.com/samples](https://docs.webix.com/samples/61_pivot/index.html)
 
 Overview

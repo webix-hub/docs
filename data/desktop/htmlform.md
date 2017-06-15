@@ -195,9 +195,5 @@ Data binding concept is described in a [separate documentation article](desktop/
 - [UI-related Form](desktop/form.md)
 - [Initializing from HTML and XML](desktop/markup_init.md)
 
-@seodescr:
-
-- See more information about [javascript framework](https://webix.com) and [javascript form](https://webix.com/widget/form/) there.
-
 @metadescr: Learn how to use an HTML form as a part of the Webix applications. The documentation page contains info on form initialization, data validation and sending, etc.
 @doctitle: HTMLForm UI widget documentation: overview and basics of usage.

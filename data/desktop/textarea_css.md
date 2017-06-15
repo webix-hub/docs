@@ -21,9 +21,5 @@ Textarea CSS
 
 Read more about [Textarea](desktop/textarea.md)
 
-@seodescr:
-
-- See more information about [ui frameworks](https://webix.com) there.
-
 @metadescr: Learn more about customizing the components styles. This page describes what CSS classes the TextArea control uses.
 @doctitle: The documentation page for TextArea CSS image map.

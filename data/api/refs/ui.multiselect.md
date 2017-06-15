@@ -184,10 +184,6 @@ var multiselect = webix.ui({
 - api/link/ui.multiselect_touchable_other.md - flag, which force touch reaction on touch screen devices
 }}
 
-@seodescr:
-
-- See more information about Webix [web control library](https://webix.com) there.
-
 @metadescr: The MultiSelect control allows selecting multiple items from a drop-down list of options. Check what methods, properties and events you can use to configure it.
 @doctitle: The MultiSelect control API reference: methods, properties, etc.
 

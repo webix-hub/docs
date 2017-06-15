@@ -247,9 +247,5 @@ var tree2 = webix.ui({
 
 More about type implementation for data components can be found in the [Type implementation](desktop/type.md) article. 
 
-@seodescr:
-
-- See more information about Webix [javascript ui framework](https://webix.com) and [JS Tree](https://webix.com/widget/tree/) widget there.
-
 @metadescr: Learn how you can customize data presented in the nodes of the Tree widget using templates. 
 @doctitle: The Tree widget node templates usage guide.

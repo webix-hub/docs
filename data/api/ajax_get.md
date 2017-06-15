@@ -43,9 +43,5 @@ More information on Webix and Promiz.js usage can be found at:
 - desktop/data_loading.md#promiseapiindataloading
 - helpers/ajax_operations.md#promiseapiforajaxrequests
 
-@seodescr:
-
-- See more information about Webix [ui library](https://webix.com) there.
-
 @metadescr: Learn how to use AJAX features in your Webix apps. This page describes the get method that allows sending GET AJAX request to the server.
 @doctitle: The documentation page for the ajax get method.

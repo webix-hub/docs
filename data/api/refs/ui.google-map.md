@@ -172,10 +172,6 @@ var googlemap = webix.ui({
 - api/link/ui.google-map_waitdata_other.md - eventual result of an asynchronous operation ('promise' object) for the loaded data
 }}
 
-@seodescr:
-
-- See more information about Webix [widget library](https://webix.com) and [google maps widget](https://webix.com/widget/maps/) widget there.
-
 @metadescr: This documentation page contains descriptions of each method, property and event that you can use while working with the Google map ui widget.
 @doctitle: The Google map UI widget API reference: methods, properties, etc.
 

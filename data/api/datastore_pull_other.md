@@ -47,9 +47,5 @@ $$("myList").data.pull;
 //-> { {id:"1", name:"Emma", age:62},{id:"2", name:"Emily", age:43} }
 ~~~
 
-@seodescr:
-
-- See more information about Webix [js framework](https://webix.com) there.
-
 @metadescr: Learn more about working with data in Webix applications. This page describes the pull property usage for getting hash of a particular widget data items.
 @doctitle: The DataStore mixin pull property usage for working with data.

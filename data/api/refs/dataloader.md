@@ -77,10 +77,6 @@ DataLoader
 }}
 
 
-@seodescr:
-
-- See more information about Webix [js framework](https://webix.com) and [uploader widget](https://webix.com/widget/uploader/) there.
-
 @metadescr: This page describes methods, events and properties of the data loader mixin that controls loading and processing the data within a component.
 @doctitle: API reference for the DataLoader mixin: methods, events, properties.
 

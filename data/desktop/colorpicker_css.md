@@ -26,10 +26,6 @@ To study the CSS map of the popup [colorboard](desktop/colorboard.md), please, r
 
 Read more about [ColorPicker](desktop/colorpicker.md)
 
-@seodescr:
-
-- See more information about Webix [widget library](https://webix.com) there.
-
 @metadescr: Learn more about customizing the components styles. This page describes what CSS classes the ColorPicker widget uses.
 @doctitle: The documentation page for ColorPicker CSS image map.
 

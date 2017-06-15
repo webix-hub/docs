@@ -12,9 +12,9 @@ API Reference
 - [Methods, properties and events](api/refs/ui.filemanager.md)
 
 
-@seodescr:
+<div class="h2">External resources</div>
 
-- You can [download File Manager](https://webix.com/filemanager/) there and try Webix [ui library](https://webix.com)
+- You can [download File Manager](https://webix.com/filemanager/)
 - There are online samples at [docs.webix.com/samples](https://docs.webix.com/samples/64_file_manager/index.html)
 
 

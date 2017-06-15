@@ -279,10 +279,6 @@ $$("editor").getEditor();
 $$("editor").focus();
 ~~~
 
-@seodescr:
-
-- See more information about Webix [web control library](https://webix.com) there.
-
 @metadescr: This documentation page describes how you can use popular text editors in your app. The list of options includes Ace, Mercury, NicEdit, TinyMCE, CodeMirror and CKEditor.
 @doctitle: Text editors integration.
 

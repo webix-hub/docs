@@ -380,10 +380,6 @@ Now if we click on the "Health Economics" sub-branch of the "Healthcare" categor
 60_pro/11_treemap/05_header.html
 }}
 
-@seodescr:
-
-- See more information about Webix [javascript framework](https://webix.com) and [js tree map](https://webix.com/widget/treemap/) widget there.
-
 @metadescr: Learn how you can display hierarchical data in a compact way with the TreeMap widget: initialization, template usage, styling, etc. The page contains how-tos and demos.
 @doctitle: The TreeMap UI widget documentation: overview, template usage, etc.
 

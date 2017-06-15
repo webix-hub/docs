@@ -397,9 +397,5 @@ webix.ui({
 - [Date and Number Localization](desktop/localization.md)
 - [Calendar CSS Image Map](desktop/calendar_css.md)
 
-@seodescr:
-
-- See more information about Webix [ui component library](https://webix.com) and [Calendar UI](https://webix.com/widget/calendar/) widget there.
-
 @metadescr: This page describes how you can use the Calendar widget to allow users pick a particular date and time while filling a web form. 
 @doctitle: Calendar UI widget documentation: overview and usage.
