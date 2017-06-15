@@ -179,3 +179,5 @@ $$("carousel").getActiveIndex();
 
 @seolinktop: [mvc library](https://webix.com)
 @seolink: [javascript image slideshow](https://webix.com/widget/carousel/)
+
+@metadescr:  Ui related carousel is designed to present Webix components in one view with the ability to switch between them by clicking on the dedicated buttons or sliding on touch

@@ -60,3 +60,6 @@ $$("segmented").showOption("viewId");
 
 [Adding and Deleting Segments (Options) on the Go](desktop/tabs_options.md)
 
+
+
+@metadescr:  Segmented is an integral button with as many segments as you like. Can be used for switching between MultiView desktop multiview cells. Initialization js view segmented

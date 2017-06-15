@@ -194,3 +194,5 @@ webix.ui({
 
 @seolinktop: [web ui framework](https://webix.com)
 @seolink: [ui draggable](https://webix.com/widget/portlet/)
+
+@metadescr:  Portlet is a layout component that allows placing other widgets inside of it. You can easily drag this or that portlet anywhere you want on the page. Thus, it s possible

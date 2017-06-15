@@ -28,3 +28,6 @@ ColorPicker
 	- **labelAlign** (string) - label alignment towards its container. Possible values are "left" and "right".  In any way, it's placed left to the control; 
     - **labelWidth** (number) - width of the label container;   
 - **value** (hex code) - the initial value of the picker that is changed by picking any color from the colorboard.
+
+
+@metadescr:  Colorpicker allows for selecting a color from the dedicated colorboard desktop colorboard that is initialized on clicking its input field. Initialization js view colorpicker

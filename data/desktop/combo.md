@@ -102,3 +102,6 @@ $$("field_t").getInputNode().value // -> returns "One"
 - [text](desktop/text.md) coupled with [suggest list](desktop/suggest.md). Identical to combo in look, but while combo requires selection from a popup list, suggest offers values that can be either chosen or ignored. 
 
 @spellcheck: usingdatasuggestforformcontrols, usinggridsuggestforformcontrols 
+
+
+@metadescr:  UI related combo is a text like field with a popup window that appears as you click the field. A popup displays options for users to select. At the same time, you can edit

@@ -70,3 +70,5 @@ Read more about **scroll control** in the [corresponding article](desktop/scroll
 
 @seolinktop: [ui library](https://webix.com)
 @seolink: [scroll layout](https://webix.com/widget/scrollview/)
+
+@metadescr:  ScrollView inherits from view desktop view and makes any of the nested components scrollable, either in horizontal or in vertical mode. It is handy in case of long homogeneous

@@ -92,3 +92,6 @@ webix.ui({
 - [Changing Visibility of Components](desktop/visibility.md)
 - [Popup CSS Image Map](desktop/popup_css.md)
 
+
+
+@metadescr:  Popup is a variant of a ui related window desktop window . Unlike it, the popup disappears as you click somewhere outside it. Popup is be used to alert some info as well

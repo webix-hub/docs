@@ -198,3 +198,6 @@ resort to [borderless](desktop/borders.md) layout design.
 {{sample 80_docs/template_types.html}}
 
 @spellcheck:accordionitems
+
+
+@metadescr:  Ui related template looks like a non editable area for rendering plain text or a single data record. Its content is set with the help of the same name template parameter.

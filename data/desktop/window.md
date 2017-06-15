@@ -117,3 +117,6 @@ When a modal window is initialized, the app area turns gray to indicate that it 
 @index:
 
 - desktop/window_positioning.md
+
+
+@metadescr:  Window is a ui related component that looks like a standard on screen window. It inherits from view desktop view but differs from other components in its character. It lies

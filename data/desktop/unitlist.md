@@ -105,3 +105,5 @@ Note that there's no built-in possibility to edit data with UnitList. You should
 
 @seolinktop: [javascript ui components library](https://webix.com)
 @seolink: [javascript list](https://webix.com/widget/list/)
+
+@metadescr:  UnitList presents data in groups derived from initial non hierarchical dataset. Data items are sorted and then united by common values. Initialization snippet List items

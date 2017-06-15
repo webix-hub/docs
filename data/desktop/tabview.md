@@ -207,3 +207,6 @@ The functionality is described in detail in the desktop/tabs_options.md article.
 - desktop/show_switching.md
 - desktop/tabbar_switching.md
 - desktop/tabs_options.md
+
+
+@metadescr:  TabView is a hybrid component that is made of a multiview desktop multiview and a tabbar desktop tabbar . TabView allows for quick initialization of a MultiView with a built

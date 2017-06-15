@@ -139,3 +139,5 @@ Learn how to "memorize" the currently opened tab in the [related article](deskto
   - desktop/tabbar_switching.md
   - desktop/show_switching.md
   
+
+@metadescr:  Multiview helps you efficiently use space on the page by placing different views into one and the same area. Only one view is visible at a time. The others are accessible

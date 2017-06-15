@@ -134,3 +134,5 @@ webix.ui({
 
 
 @edition:pro
+
+@metadescr:  Multicombo is an editable control that allows for choosing several options at a time from a dedicated popup list, Checksuggest api refs ui.checksuggest . Multicombo inherits

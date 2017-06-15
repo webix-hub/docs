@@ -38,3 +38,6 @@ webix.ui({
 
 
 
+
+
+@metadescr:  Uploader is a component that allows users to upload files. It allows browsing directories on your machine to choose the necessary file s and send them to server. Uploader

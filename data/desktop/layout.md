@@ -199,3 +199,6 @@ webix.ui({
 
 - desktop/absolute_layout.md
 - desktop/data_layout.md
+
+
+@metadescr:  Layout is a concept element that doesn t contain anything in itself yet determines the way meaningful components are arranged. It divides the page into rows and columns

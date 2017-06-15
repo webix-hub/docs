@@ -420,3 +420,6 @@ data:[
 - [Event Handling](desktop/event_handling.md)
 - [ContextMenu](desktop/contextmenu.md)
 - [Menu CSS Image Map](desktop/menu_css.md)
+
+
+@metadescr:  UI related pull down Menu inherits from list desktop list and lets users select the necessary item from the list of grouped items sub menus . Each element of a submenu can

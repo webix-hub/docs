@@ -57,3 +57,5 @@ Related Articles
 @index:
 
 - desktop/formatted_text_inputs.md
+
+@metadescr:  Ui related text control is a one line input field with a label. Initialization js view text , value dummy email.com , label Email , inputAlign right , labelAlign right ,

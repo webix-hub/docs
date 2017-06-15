@@ -40,3 +40,5 @@ Select is a control that allows selection from several items. It is based on HTM
 - **value** (string, number) 
 	- within **options** array it sets text values for select items;
  	- within Select constructor it defines the initially selected item of the control (**option ID** in case of a full form, **option text** in case of a long form);
+
+@metadescr:  Select is a control that allows selection from several items. It is based on HTML tag and looks like a dropdown list. Initialization js full form view select , label Branch

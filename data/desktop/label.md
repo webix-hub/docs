@@ -33,3 +33,6 @@ Label control can be used to render any user HTML or icons (as well as built-in 
 { view:"label", label:"<span class='webix_icon fa-user'></span> My Label" }
 ~~~
 
+
+
+@metadescr:  Ui related label is a non scrollable placeholder for plain text. Like other components, it features specific label property that sets text value. Initialization js view

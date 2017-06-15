@@ -82,3 +82,5 @@ To learn about all the chart properties, please refer to the [corresponding chap
   - desktop/chart_operations.md
   - desktop/chart_legend.md
   - desktop/chart_tooltip.md
+
+@metadescr:  Chart is a ui related component that inherits from view and helps present data in different graphic figures like colored columns, pie pieces or lines. Like all the data

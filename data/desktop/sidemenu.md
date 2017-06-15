@@ -150,3 +150,5 @@ In the above code we've defined the icon button that has the "bars" type from th
 If the menu is initially hidden, it will be shown on the icon's click. If it's shown, it will be hidden.
 
 @spellcheck:sidemenu
+
+@metadescr:  The SideMenu widget inherits from desktop window and can be bound to any side of the screen top, bottom, right, left . You can place any other view or even a complex layout

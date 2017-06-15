@@ -206,3 +206,5 @@ webix.ui({
 
 
 @edition:pro
+
+@metadescr:  DateRange is a UI related widget based on desktop calendar and inherited from Layout desktop layout . This interactive tool includes several calendars and allows selecting

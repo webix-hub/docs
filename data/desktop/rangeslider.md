@@ -34,3 +34,6 @@ The colored space between the markers defines the values included into the range
 - **name** (string) - name of the control used to get its value in the form;
 - **title** (template, function) - text label over the slider marker 
 
+
+
+@metadescr:  Range Slider is an advanced slider desktop slider control that allows selecting a specific range of values with two markers. The colored space between the markers defines

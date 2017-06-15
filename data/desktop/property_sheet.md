@@ -218,3 +218,5 @@ prop.registerType("popup-ra",{
 
 @seolinktop: [ui library](https://webix.com)
 @seolink: [property list editor](https://webix.com/widget/propertysheet/)
+
+@metadescr:  Property sheet is a list of properties. Ui related property sheet inherits from view desktop view . Initialization js view property , id sets , width 300, elements label

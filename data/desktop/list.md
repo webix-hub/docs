@@ -68,3 +68,5 @@ Note that there's no built-in possibility to edit data with List. You should cre
 
 @seolinktop: [js framework](https://webix.com)
 @seolink: [javascript list](https://webix.com/widget/list/)
+
+@metadescr:  Webix List is a UI related component that inherits from view desktop view and presents listed data items. The Webix library offers three variations of list apart from the

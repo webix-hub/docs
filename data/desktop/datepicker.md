@@ -106,3 +106,5 @@ To limit user ability to pick date and time periods, you should access calendar 
 More about [Disabling Dates in Calendar](desktop/calendar.md#disablingdatesandtimeslotsincalendar)
 
 More about [Advanced Popup Configuration in Popup Selectors](desktop/advanced_combo.md)
+
+@metadescr:  Datepicker is used in a combination with ui related calendar desktop calendar that is initialized on clicking the control. It allows choosing a date and, optionally, time

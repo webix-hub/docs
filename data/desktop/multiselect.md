@@ -106,3 +106,6 @@ multiselect.getPopup().getList();
 @edition:pro
 
 @spellcheck:multisuggest
+
+
+@metadescr:  UI related Multiselect is a non editable select control that allows for selecting multiple options at a time while displaying them in the dedicated input field. Multiselect

@@ -96,3 +96,6 @@ Multitext features an extended API for **setting** and **getting** its **values*
 - [setValueHere](api/ui.multitext_setvaluehere.md) and [getValueHere](api/ui.multitext_getvaluehere.md) methods for for working with the value of the first (basic) field. 
 
 @edition:pro
+
+
+@metadescr:  UI related multitext is a dynamic control based on standard Webix text desktop text input. It offers the possibility to add and delete additional fields on the go. Initialization

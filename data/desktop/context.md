@@ -85,3 +85,6 @@ Content will get elements that are inside the container.
 
 - [Contextmenu](desktop/contextmenu.md)
 - [Popup](desktop/popup.md)
+
+
+@metadescr:  Ui related context points to an element that will be shown on the page on right mouse click. The context looks like a popup window desktop popup where you can place any

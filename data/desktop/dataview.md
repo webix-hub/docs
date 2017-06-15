@@ -63,3 +63,5 @@ Note that there's a built-in possibility to edit data with DataView. You should 
 
 @seolinktop: [web ui framework](https://webix.com)
 @seolink: [dataview ui](https://webix.com/widget/dataview/)
+
+@metadescr:  DataView displays objects with data according to a predefined template. It inherits from view desktop view . Initialization Specify the component s ID if you are going to

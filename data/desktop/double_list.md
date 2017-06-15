@@ -217,3 +217,5 @@ $$("$dbllist1").$$("left").disable();
 
 @seolinktop: [javascript component library](https://webix.com)
 @seolink: [javascript list](https://webix.com/widget/list/)
+
+@metadescr:  DoubleList widget is based on Layout desktop layout and includes features peculiar to the desktop list widget and the desktop select control. It presents data items in two

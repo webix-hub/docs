@@ -38,3 +38,5 @@ Ui-related textarea control is a multi-line input field with a label.
 - **attributes** (object) - hash of properties. See [text](desktop/text.md) description for details. 
 
  
+
+@metadescr:  Ui related textarea control is a multi line input field with a label. Initialization js view textarea , label Note , labelAlign right , height 200, value type here sample

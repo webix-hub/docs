@@ -400,3 +400,6 @@ Data binding concept is described in a [separate documentation article](desktop/
 - [Creating Message Boxes](desktop/message_boxes.md)
 
 @spellcheck: newv, oldv, api, fieldsets
+
+
+@metadescr:  Any form is a means of getting some information from users. It contains input fields and select components like checkboxes, radio buttons alongside with submit cancel buttons

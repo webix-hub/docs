@@ -84,3 +84,6 @@ Make use of slider events to set changing title for a drag marker:
 The new title is set with the help of **define()** method while current value of derived with **getValue()**.  Read more about 
 [Changing Properties of Components](desktop/redefinition.md). 
 
+
+
+@metadescr:  Slider is designed for setting a numeric value from a predefined range of values. It s done by dragging a marker to the left and to the right over the value line. Negative

@@ -97,3 +97,5 @@ $$("field_t").getText() // -> returns "One"
 ~~~
 
 @spellcheck:usingdatasuggestforformcontrols,usinggridsuggestforformcontrols 
+
+@metadescr:  UI related richselect is a non editable combo box desktop combo . Visually, the richselect control consists of a text input desktop text and popup window desktop popup that

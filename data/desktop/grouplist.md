@@ -168,3 +168,5 @@ Note that there's no built-in possibility to edit data with GroupList. You shoul
 
 @seolinktop: [javascript framework](https://webix.com)
 @seolink: [list in javascript](https://webix.com/widget/list/)
+
+@metadescr:  Ui related grouplist inherits from list and allows presenting data in groups. Data grouping is hierarchical , which means that any group item can start its own group. Hence,

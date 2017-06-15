@@ -44,3 +44,6 @@ Webix checkbox control is based on standard HTML checkbox  yet some skins use a 
 { view:"checkbox", customCheckbox:false} 
 ~~~
 
+
+
+@metadescr:  Checkbox allows a user to make a choice between two opposite states for an option enabled and disabled. In the above image the First Age option is enabled and the Second

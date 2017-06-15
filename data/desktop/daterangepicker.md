@@ -84,3 +84,5 @@ To enable the time selector, you should set the **timepicker** property with the
 ~~~
 
 @edition:pro
+
+@metadescr:  DateRangePicker is used in a combination with a UI related desktop daterange that is initialized on clicking the control. It allows choosing a date range and, optionally,

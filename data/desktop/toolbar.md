@@ -91,3 +91,5 @@ Learn more about icon types in the [dedicated chapter of the manual](desktop/ico
 - [Controls](desktop/controls.md)
 - [TabView Functionality](desktop/tabview.md)
 - [Toolbar CSS Image Map](desktop/toolbar_css.md)
+
+@metadescr:  UI related Toolbar inherits from layout desktop layout . It is the place to nest all the possible controls including buttons, labels, icons, checkboxes, combos, etc. For

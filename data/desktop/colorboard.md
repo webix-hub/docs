@@ -108,3 +108,5 @@ function doLog(val, control, ev){
 
 - [Making Templates](desktop/html_templates.md)
 - [Component Styling](desktop/styling.md)
+
+@metadescr:  UI related colorboard is a tool to get the hex code of a color that you are going to use for styling desktop styling . By default, colors are presented in a rainbow like

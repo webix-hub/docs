@@ -118,3 +118,5 @@ webix.ui({
 
 @seolinktop: [web development library](https://webix.com)
 @seolink: [javascript bullet chart](https://webix.com/widget/bullet_chart/)
+
+@metadescr:  The Bullet Graph widget presents a more compact version of the desktop gage widget. It is intended for comparing a dynamically changed value displayed by a moving horizontal

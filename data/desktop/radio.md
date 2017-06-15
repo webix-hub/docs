@@ -43,3 +43,6 @@ Webix radio control is based on standard HTML radio  yet some skins use a Font A
 ~~~js
 {view:"radio", customRadio:false} 
 ~~~
+
+
+@metadescr:  Ui related radio is a block of several items with the possibility to check only one of them at a time. Initialization js view radio , label Branch , value 1, options id

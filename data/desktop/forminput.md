@@ -92,3 +92,5 @@ webix.ui({
 <img src="desktop/custom_forminput.png"/>
 
 {{sample 13_form/01_controls/24_forminput.html}}
+
+@metadescr:  FormInput is a wrapping control intended for using Webix wigdets as Form controls. It inherits from desktop fieldset . This control renders a section with a label to place

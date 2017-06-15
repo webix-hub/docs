@@ -126,3 +126,5 @@ You can learn more about different types of defining icons in Webix in the deskt
 
 @index: 
 	  - desktop/responsive_tabbar.md
+
+@metadescr:  UI related tabbar is an integral button that allows for changing between views in a multiview desktop multiview layout. Its tabs can be nested with images and icons. Initialization

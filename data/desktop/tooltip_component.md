@@ -77,3 +77,5 @@ As for the **y** coordinate, its value is calculated as *dy+y*, but the resultin
 since the default value of *dy* is 0.
 
 @spellcheck: dx,dy
+
+@metadescr:  Tooltip presents a static text that is rendered in the absolutely positioned container. It appears on hovering the mouse pointer over an item and may contain a hint or some

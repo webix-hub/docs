@@ -54,3 +54,5 @@ Note that there's no built-in possibility to edit data with list. You should cre
 
 @seolinktop: [web ui framework](https://webix.com)
 @seolink: [javascript list](https://webix.com/widget/list/)
+
+@metadescr:  UI related X List inherits from List desktop list and differs from it in the way of data presenting while all lists arrange items vertically, X List offers the horizontal

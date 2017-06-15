@@ -38,3 +38,6 @@ Negative values are possible.
 Note that if you set **min** and **max** parameters, the initial control value should be within the range. 
 }}
 
+
+
+@metadescr:  Counter is a spin box that helps select a number by either entering the value in the input field or clicking and buttons to reach the necessary value. Negative values are

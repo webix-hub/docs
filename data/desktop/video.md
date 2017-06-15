@@ -123,3 +123,6 @@ Alongside with playing and pausing the video, we change **button text value** wi
 
 @spellcheck:WebM, Ogg
 
+
+
+@metadescr:  Webix video is a UI component designed for embedding video files into the application. It is based on HTML5 video tag to provide support for most popular video formats MP4

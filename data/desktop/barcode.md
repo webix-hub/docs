@@ -393,3 +393,5 @@ The result of applying the "code39" type is given in the picture below:
 
 @seolinktop: [html5 ui library](https://webix.com)
 @seolink: [barcode widget](https://webix.com/widget/barcode/)
+
+@metadescr:  The Barcode widget represents text values in a machine readable format by varying the widths and spacing of parallel lines. The widget uses Canvas for lines rendering. Basic
