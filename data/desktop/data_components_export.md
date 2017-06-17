@@ -195,10 +195,10 @@ webix.toExcel($$("mylist"), {
 The field is rendered with **width** and **template** as well as **header** that will be the header of the corresponding column in the resulting table. 
 
 
-###Customizing Export to Excel for Hierarchical Components
+Customizing Export for Hierarchical Components
+-----------------------------
 
-
-In addition to standard export options, the API allows cusomizing the output data of hierarchical components ([Tree](datatree/index.md) and
+In addition to standard export options, the API allows customizing the output data of hierarchical components ([Tree](datatree/index.md) and
 [Treetable](desktop/treetable.md)) in the following way:
 
 - **not rendering "hyphens" before child nodes** in tree-like structures by using the *plainOutput* option with the *true* value
@@ -228,8 +228,8 @@ webix.toExcel($$("mytreetable"), {
 
 The **flatTree** property object includes the following options: 
 
-- id (*string*) -  data property which will be rendered in columns
-- columns (*array*) - array with columns to which the above data property will be distributed according to the hierarchy level
-- fill (*boolean*) - optional. If true, allows filling child records with parent data for each child node
+- **id** (*string*) -  data property which will be rendered in columns
+- **columns** (*array*) - array with columns to which the above data property will be distributed according to the hierarchy level
+- **fill** (*boolean*) - optional. If true, allows filling child records with parent data for each child node
 
 {{sample 15_datatable/30_treetable/12_export.html}}

@@ -175,7 +175,7 @@ webix.csv.delimiter.cols = ",";
 
 ###Customizing Export to CSV for Hierarchical Components
 
-In addition to standard export options, the API allows cusomizing the output data of hierarchical components ([Tree](datatree/index.md) and
+In addition to standard export options, the API allows customizing the output data of hierarchical components ([Tree](datatree/index.md) and
 [Treetable](desktop/treetable.md)) in the following way:
 
 - **not rendering "hyphens" before child nodes** in tree-like structures by using the *plainOutput* option with the *true* value

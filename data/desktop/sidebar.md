@@ -4,7 +4,7 @@ Sidebar
 External resources
 -------------------
 
-- {{note This component isn't included into the library package and should be taken from [https://github.com/webix-hub/components](https://github.com/webix-hub/components)}}
+{{note This component isn't included into the library package and should be taken from [https://github.com/webix-hub/components](https://github.com/webix-hub/components)}}
 - There is an online sample at [docs.webix.com/samples](http://docs.webix.com/samples/28_sidemenu/01_sidebar.html)
 
 Overview

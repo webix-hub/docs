@@ -17,7 +17,7 @@ If you want to implement a custom integration for your project, check the articl
 		    </h4>
 		    A component that helps you to create a hierarchical collapsible menu with a vertical navigation bar.
 		</td>
-		<td class='topic_description' style="text-align: center; padding:20px;"><img src="desktop/sidebar.png"></td>
+		<td class='topic_description' style="text-align: center; padding:20px;"><a href="desktop/sidebar.md"><img src="desktop/sidebar.png"></a></td>
 	</tr>   
 	<tr>
 		<td id="design" class='topics' style="vertical-align:text-top;">

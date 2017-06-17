@@ -7,17 +7,18 @@ It's possible to localize the following properties:
 
 - labels on the instruments panel
 - tooltips for instruments
+- names of the menu items
 
-Labels and tooltips of SpreadSheet instruments' are stored in the **webix.i18n.spreadsheet** object:
+The labels of SpreadSheet buttons, menu items and tooltips are stored in the **webix.i18n.spreadsheet** object:
 
 ~~~js
 webix.i18n.spreadsheet = {
-    labels:{
+    "labels":{
         // formats
-        common: "Common",
-        currency: "Currency",
-        number: "Number",
-        percent: "Percent",
+        "common": "Common",
+        "currency": "Currency",
+        "number": "Number",
+        "percent": "Percent",
         // titles
         "undo-redo": "Undo/Redo",
         "font": "Font",
@@ -76,7 +77,7 @@ webix.i18n.spreadsheet = {
 		"range-remove-confirm": "There is no undo, are you sure?",
 		"sheet-remove-confirm": "There is no undo, are you sure?"
     },
-    tooltips: {
+    "tooltips": {
         "color": "Font color",
         "background": "Background color",
         "font-family": "Font family",
@@ -117,7 +118,7 @@ webix.i18n.spreadsheet = {
         "clear-data": "Clear data",
         "clear-styles": "Clear styles"
     },
-    menus:{
+    "menus":{
 		"remove-sheet": "Remove sheet",
 		"rename-sheet": "Rename sheet",
 		"file": "File",
@@ -161,7 +162,6 @@ webix.i18n.spreadsheet = {
 		"lock-cell": "Lock cell"
 	}
 };
-
 ~~~
 
 To apply a custom locale, you can follow one of the two ways: 
@@ -179,7 +179,7 @@ To apply a custom locale, you can follow one of the two ways:
 - define 'spreadsheet' labels and tooltips in the **webix.i18n.locales[localeName]** object:
 
 ~~~js
-webix.i18n.locales['ru-RU'].spreadsheet = {
+webix.i18n.locales["ru-RU"].spreadsheet = {
     "labels":{
        "common": "Общий",
 	   "currency": "Валюта",
@@ -196,7 +196,7 @@ webix.i18n.locales['ru-RU'].spreadsheet = {
 - apply the created locale with the help of the api/i18n_setlocale.md method:
 
 ~~~js
-webix.i18n.setLocale('ru-RU');
+webix.i18n.setLocale("ru-RU");
 ~~~
 
 {{sample

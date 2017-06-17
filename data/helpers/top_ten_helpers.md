@@ -3,9 +3,9 @@ Top 10 Helpers You Should Know About
 
 ## webix.ui
 
-This method is used mainly to **instantiate Webix component** of any complexity level, either it is a control or the complete application layout. 
+This method is used mainly to **instantiate Webix component** of any complexity level, whether it is a control or a complete application layout. 
 
-It converts a **JSON structure** passed into it as parameter to client-side layout objects - this is what Webix is used for:) 
+It converts a **JSON structure** passed into it as a parameter to client-side layout objects - this is what Webix is used for:) 
 
 ~~~js
 webix.ui({ view:"", ... });
@@ -53,40 +53,49 @@ t(); //will alert "master"
 
 
 ## webix.copy
-This method allows you to make a full (independent) copy of object
+
+This method allows you to make a full (independent) copy of an object:
 
 ~~~js
 var new_obj = webix.copy(source_obj)// full copy
 ~~~
+
 [API reference](api/_copy.md)
 
+
 ## webix.extend
-Adds method and properties of source object to the target object
+
+Adds methods and properties of the source object to the target object:
 
 ~~~js
 var target_obj = new webix.ui.toolbar(config);
 webix.extend(target_obj, webix.Movable);
 ~~~
 
-Also, it can be used as one more method to get an object copy. In such case, you must specify an **empty object**  as second  parameter.
+Also, it can be used as one more method to get an object copy. In such a case, you must specify an **empty object**  as the second parameter.
+
 ~~~js
 var new_obj = webix.extend({},source_obj) //object based copy
 ~~~
+
 [API reference](api/_extend.md)
 
 ## webix.exec
 
-Next helper allows to execute code string at runtime.
+This helper allows executing code string at runtime.
   
 ~~~js
 webix.exec(" var t = 2; ");
 ~~~
-It is have advantage over eval - variables defined in code will be defined in global scope, the same as in case of normal js code. 
+
+It has an advantage over eval: variables defined in code will be defined in the global scope, the same as in case of a normal js code. 
 
 [API reference](api/_exec.md)
 
 ## webix.delay
-Delay routine. If you need to delay some code from executing at runtime you are at the right place. **webix.delay** waits for the specified number of milliseconds and then executes the specified code.
+
+Delays routine. If you need to delay some code from executing at runtime you are at the right place. 
+**webix.delay** waits for the specified number of milliseconds and then executes the specified code.
 
 ~~~js
 webix.delay(webix.animate, webix,[node,animation],10)
@@ -95,7 +104,8 @@ webix.delay(webix.animate, webix,[node,animation],10)
 [API reference](api/_delay.md)
 
 ## webix.uid
-A tool for getting an unique id. ( id is unique per session, not globally unique )
+
+A tool for getting a unique id (id is unique per session, not globally unique).
 
 ~~~js
 var name = webix.uid();
@@ -104,25 +114,30 @@ var name = webix.uid();
 [API reference](api/_uid.md)
 
 ## webix.event
-**webix.event** is used to attach event handler and **webix.eventRemove** - to remove it. 
+
+**webix.event** is used to attach event handlers and **webix.eventRemove** - to remove them. 
   
 ~~~js
 var display_handler = webix.event(document.body,'click',function(e){})
 ...
 webix.removeEvent(display_handler);
 ~~~
+
 [API reference](api/_event.md)
 
 ## webix.html.offset
-With the help of this method you can get the position of any html element.
+
+With the help of this method you can get the position of any HTML element.
 
 ~~~js
 var offset = webix.html.offset(ev.target)
 ~~~
+
 [API reference](api/html_offset.md)
 
 ## webix.html.addCss
-Two methods implementing CSS manipulations. **webix.html.addCss** lets to add CSS class to element, **webix.html.removeCss** - removes some defined CSS class.
+
+Two methods implementing CSS manipulations. **webix.html.addCss** allows adding a CSS class to an element, **webix.html.removeCss** - removes some defined CSS class.
   
 ~~~js
 webix.html.addCss(this._headbutton, "collapsed");
@@ -133,7 +148,7 @@ webix.html.removeCss(this._headbutton, "collapsed");
 
 
 {{note
-All Webix helpers are listed in the related  of [API Reference section](api/refs/common_helpers.md). 
+All Webix helpers are listed in the related [API Reference section](api/refs/common_helpers.md). 
 }}
 
 @complexity:2

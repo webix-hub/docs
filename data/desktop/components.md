@@ -349,7 +349,7 @@ add special features that can't be achieved with the standard set of widgets pre
     </div>
     <div>
 		<a href="desktop/query_builder.md">
-			<img src="desktop/icons/query_builder.png"/>
+			<img src="desktop/icons/querybuilder.png"/>
 			<br>Query Builder
 		</a>
     </div>

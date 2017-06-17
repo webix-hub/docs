@@ -47,6 +47,32 @@ webix.toExcel($$("myPivot"));
 webix.toPNG($$("myPivot"));
 ~~~
 
+###Customizing data export to Excel
+
+In addition to standard export options, the Pivot API allows customizing the output data and
+**render separate columns for data on different hierarchy levels**, thus rendering data in a table: 
+
+~~~js
+webix.toExcel($$("myPivot"),{
+	flatTree:{
+		id:"value",
+		columns:[
+			{ header:"Form" },
+			{ header:"Country" },
+		]
+	}
+});       
+~~~
+
+The **flatTree** property object includes the following options: 
+
+- **id** (*string*) -  data property which will be rendered in columns
+- **columns** (*array*) - array with columns to which the above data property will be distributed according to the hierarchy level
+- **fill** (*boolean*) - optional. If true, allows filling child records with parent data for each child node
+
+{{sample 61_pivot/03_table_api/05_export.html}}
+
+
 Data Loading
 --------------
 
@@ -94,7 +120,7 @@ webix.ui({
 The loaded data source should be a JSON that contains the following properties:
 
 
-- **data** - an object that includes “columns” and “data” configuration. 
+- **data** - an object that includes "columns" and "data" configuration. 
 	- *columns* - property is an array of columns properties. It should correspond to the columns definition of desktop/treetable.md
 	- *data* - a JSON data source for TreeTable
 - **structure** - an object with the initial [Pivot structure](pivot/structure.md)
@@ -104,10 +130,10 @@ The loaded data source should be a JSON that contains the following properties:
 
 There are some rules for the Pivot columns headers:
 
-- bottom headers (the headers that display formatted value names: e.g “oil (min)”) should contain two properties:
-	- **operation** - the name of operation ("min", “sum”,...)
+- bottom headers (the headers that display formatted value names: e.g "oil (min)") should contain two properties:
+	- **operation** - the name of operation ("min", "sum",...)
 	- **name** - the name of the calculated field
-- other headers (that display categories) should contain the “name” property with the text to display 
+- other headers (that display categories) should contain the "name" property with the text to display 
       
 
 Here is an example of a data source for a Pivot with select filter for the "continent" field:
