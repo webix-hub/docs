@@ -9,9 +9,9 @@ Start
 
 <h2>Meet Webix 4.4!</h2>
 <ul>
-	<li><a href="">Query Builder</a> widget</li>
-	<li>Smart <a href="">webix.print()</a> method</li>
-    <li></li>
+	<li>Smart <a href="">Print API</a> for printing a view or UI section </li>
+    <li>Handy <a href="desktop/query_builder.md">Query Builder</a> widget to make complex filters</li>
+    <li>Server-side samples for PHP, Node.js and .Net</li>
 </ul>
 
 <p> and <a href="desktop/whats_new_4_4.md">many more...</a></p>

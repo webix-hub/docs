@@ -425,7 +425,7 @@ table.webixtoc td{
         <td>a tool for viewing PDF files</td>
     </tr>
      <tr>
-    	<td> <img src="api/toc/query_builder.png"/> </td>
+    	<td> <img src="api/toc/querybuilder.png"/> </td>
         <td>api/refs/ui.querybuilder.md </td>
         <td>a widget for building complex filters</td>
     </tr>

@@ -15,7 +15,7 @@ Others
 - api/link/ui.filetable_$scope_other.md - scope for resolving event and method names
 - api/link/ui.filetable_$setsize_other.md - sets the component size
 - api/link/ui.filetable_$skin_other.md - the method which will be called when skin is defined
-- api/link/ui.filetable_$touch_other.md - 
+- api/link/ui.filetable_$touch_other.md - adjusts datatable for correct behaviour on touch devices
 - api/link/ui.filetable_$view_other.md - reference to top html element of the view
 - api/link/ui.filetable_$width_other.md - current width of the view
 - api/link/ui.filetable_config_other.md - all options from initial component configuration

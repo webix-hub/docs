@@ -13,14 +13,15 @@ Methods
 - api/link/ui.querybuilder_detachevent.md - detaches a handler from an event (which was attached before by the attachEvent method)
 - api/link/ui.querybuilder_disable.md - disables the calling view (makes it dimmed and unclickable)
 - api/link/ui.querybuilder_enable.md - enables the calling view that was disabled by the 'disable' method
-- api/ui.querybuilder_focus.md - 
+- api/ui.querybuilder_focus.md - sets focus to the active (blue-colored) state of the toggle button of QueryBuilder
 - api/link/ui.querybuilder_getchildviews.md - returns child views of the calling component
-- api/ui.querybuilder_getfilterhelper.md - 
+- api/ui.querybuilder_getfilterhelper.md - returns the function that filters data based on the specified filters
+- api/ui.querybuilder_getfilters.md - 
 - api/link/ui.querybuilder_getformview.md - returns master form for the input
 - api/link/ui.querybuilder_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.querybuilder_getparentview.md - returns the parent view of the component
 - api/link/ui.querybuilder_gettopparentview.md - returns top parent view
-- api/ui.querybuilder_getvalue.md - 
+- api/ui.querybuilder_getvalue.md - returns the value set for Query Builder (an array of rules and fields for filtering)
 - api/link/ui.querybuilder_hasevent.md - checks whether the component has the specified event
 - api/link/ui.querybuilder_hide.md - hides the view
 - api/link/ui.querybuilder_index.md - returns the cell index in the layout collection
@@ -31,7 +32,8 @@ Methods
 - api/link/ui.querybuilder_removeview.md - removes the specified view of a layout-like component
 - api/link/ui.querybuilder_resize.md - adjusts the view to a new size
 - api/link/ui.querybuilder_resizechildren.md - resizes all children of the called component
-- api/ui.querybuilder_setvalue.md - 
+- api/ui.querybuilder_setfilters.md - 
+- api/ui.querybuilder_setvalue.md - sets a value for Query Builder as an array of rules and fields for filtering. Please, see the details
 - api/link/ui.querybuilder_show.md - makes the component visible
 - api/link/ui.querybuilder_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
 - api/link/ui.querybuilder_unbind.md - breaks "bind" link
@@ -53,6 +55,7 @@ Methods
 - api/ui.querybuilder_focus.md
 - api/link/ui.querybuilder_getchildviews.md
 - api/ui.querybuilder_getfilterhelper.md
+- api/ui.querybuilder_getfilters.md
 - api/link/ui.querybuilder_getformview.md
 - api/link/ui.querybuilder_getnode.md
 - api/link/ui.querybuilder_getparentview.md
@@ -68,6 +71,7 @@ Methods
 - api/link/ui.querybuilder_removeview.md
 - api/link/ui.querybuilder_resize.md
 - api/link/ui.querybuilder_resizechildren.md
+- api/ui.querybuilder_setfilters.md
 - api/ui.querybuilder_setvalue.md
 - api/link/ui.querybuilder_show.md
 - api/link/ui.querybuilder_showbatch.md

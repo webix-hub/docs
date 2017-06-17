@@ -9,7 +9,7 @@ Methods
 - api/link/ui.excelviewer_addspan.md - adds colspan or rowspan to the datatable
 - api/link/ui.excelviewer_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.excelviewer_adjustcolumn.md - adjusts a column to the width of the content
-- api/link/ui.excelviewer_adjustrowheight.md - autodetect height of rows in datatable
+- api/link/ui.excelviewer_adjustrowheight.md - adjusts row height to cell content
 - api/link/ui.excelviewer_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.excelviewer_bind.md - binds components
 - api/link/ui.excelviewer_blockevent.md - temporarily blocks triggering of ALL events of the calling object

@@ -8,7 +8,7 @@ Properties
 - api/link/ui.querybuilder_container_config.md - an HTML container (or its id) where the component should be initialized
 - api/link/ui.querybuilder_css_config.md - the name of a css class that will be applied to the view container
 - api/link/ui.querybuilder_disabled_config.md - indicates whether an item is enabled
-- api/ui.querybuilder_fields_config.md - 
+- api/ui.querybuilder_fields_config.md - sets an array of fields that will be used for filtering dataset
 - api/link/ui.querybuilder_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.querybuilder_height_config.md - sets the height of the component
 - api/link/ui.querybuilder_hidden_config.md - defines whether the view will be hidden initially

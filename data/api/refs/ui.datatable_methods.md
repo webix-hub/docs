@@ -10,7 +10,7 @@ Methods
 - api/ui.datatable_addspan.md - adds colspan or rowspan to the datatable
 - api/link/ui.datatable_adjust.md - adjusts the component to the size of the parent HTML container
 - api/ui.datatable_adjustcolumn.md - adjusts a column to the width of the content
-- api/ui.datatable_adjustrowheight.md - autodetect height of rows in datatable
+- api/ui.datatable_adjustrowheight.md - adjusts row height to cell content
 - api/link/ui.datatable_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.datatable_bind.md - binds components
 - api/link/ui.datatable_blockevent.md - temporarily blocks triggering of ALL events of the calling object

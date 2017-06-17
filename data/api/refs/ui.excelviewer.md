@@ -37,7 +37,7 @@ var excelviewer = webix.ui({
 - api/link/ui.excelviewer_addspan.md - adds colspan or rowspan to the datatable
 - api/link/ui.excelviewer_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.excelviewer_adjustcolumn.md - adjusts a column to the width of the content
-- api/link/ui.excelviewer_adjustrowheight.md - autodetect height of rows in datatable
+- api/link/ui.excelviewer_adjustrowheight.md - adjusts row height to cell content
 - api/link/ui.excelviewer_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.excelviewer_bind.md - binds components
 - api/link/ui.excelviewer_blockevent.md - temporarily blocks triggering of ALL events of the calling object
@@ -373,7 +373,7 @@ var excelviewer = webix.ui({
 - api/link/ui.excelviewer_$scope_other.md - scope for resolving event and method names
 - api/link/ui.excelviewer_$setsize_other.md - sets the component size
 - api/link/ui.excelviewer_$skin_other.md - the method which will be called when skin is defined
-- api/link/ui.excelviewer_$touch_other.md - 
+- api/link/ui.excelviewer_$touch_other.md - adjusts datatable for correct behaviour on touch devices
 - api/link/ui.excelviewer_$view_other.md - reference to top html element of the view
 - api/link/ui.excelviewer_$width_other.md - current width of the view
 - api/link/ui.excelviewer_config_other.md - all options from initial component configuration

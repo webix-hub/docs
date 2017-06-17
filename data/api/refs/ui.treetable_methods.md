@@ -8,7 +8,7 @@ Methods
 - api/link/ui.treetable_addrowcss.md - adds a css class to the row
 - api/link/ui.treetable_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.treetable_adjustcolumn.md - adjusts a column to the width of the content
-- api/link/ui.treetable_adjustrowheight.md - autodetect height of rows in datatable
+- api/link/ui.treetable_adjustrowheight.md - adjusts row height to cell content
 - api/link/ui.treetable_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.treetable_bind.md - binds components
 - api/link/ui.treetable_blockevent.md - temporarily blocks triggering of ALL events of the calling object

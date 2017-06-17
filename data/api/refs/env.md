@@ -30,7 +30,7 @@ env
 - api/env_mobile_other.md - a read-only boolean indicating whether a mobile device is used
 - api/env_mouse_other.md - set of mouse-specific properties
 - api/env_pointerevents_other.md - indicates whether CSS pointer-events property is supported in the current browser
-- api/env_printmargin_other.md - sets the margin for printed pages
+- api/env_printmargin_other.md - sets the margin for printed pages in pixels
 - api/env_printppi_other.md - sets  default pixel per inch (ppi) ratio for printing
 - api/env_strict_other.md - a read-only boolean flag indicating whether a strict mode is enabled for Webix library
 - api/env_svg_other.md - a read-only boolean indicating whether the current browser supports SVG
