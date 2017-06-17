@@ -61,6 +61,7 @@ of various languages.
                 <li>spreadsheet/customization.md</li>   
                 <li>spreadsheet/frozen_rows_columns.md</li> 
                 <li>spreadsheet/ui_guide.md</li>
+                <li>spreadsheet/printing.md</li>     
             </ul>
 		</td>
 		<td class='topic_description'>Tells about the possibilities of customizing the SpreadSheet appearance.</td>
@@ -75,7 +76,7 @@ of various languages.
             	<li>spreadsheet/conditional_formatting.md</li>
             	<li>spreadsheet/math.md</li>
                 <li>spreadsheet/multiple_sheets.md</li>
-                <li>spreadsheet/rows_columns.md</li>                
+                <li>spreadsheet/rows_columns.md</li>      
             </ul>
 		</td>
 		<td class='topic_description'>Describes possible operations with SpreadSheet and its elements.</td>
@@ -117,6 +118,7 @@ of various languages.
 - spreadsheet/customization.md
 - spreadsheet/frozen_rows_columns.md
 - spreadsheet/ui_guide.md
+- spreadsheet/printing.md
 - spreadsheet/cell_content.md
 - spreadsheet/conditional_formatting.md
 - spreadsheet/math.md

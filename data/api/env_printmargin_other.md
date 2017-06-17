@@ -1,6 +1,8 @@
 printMargin
 =============
 
+@todo: check links
+
 @short:
 	sets the margin for printed pages in pixels
 
@@ -18,7 +20,12 @@ The default ppi value is 96, so the margin value is 96*0.75=72.
 
 Margins can also be set via the api/_print.md options. The priority is given to margins set via options. 
 
+@related:
+desktop/printing.md#configuringprintingenvironment
 
+@relatedapi:
+api/_print.md 
+api/env_printppi_other.md
 
 
 

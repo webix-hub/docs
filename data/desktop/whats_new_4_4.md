@@ -4,19 +4,20 @@ Version 4.4
 <span class="release_date">released on June 27, 2017</span>
 
 {{todo
-log revision 12.06
+log revision 17.06
 }}
 
 Breaking Changes
 ---------
+
 To avoid ambiguity, Google-map  has been completely removed from the [Components repository](https://github.com/webix-hub/components), 
 but its [advanced version](https://docs.webix.com/desktop__googlemap.html) stays in package and is available in both GPL and PRO editions.  
 
 New Features 
 ---------
 
-- webix.print() API for smart printing of widgets
-- Query Builder widget for data source configuration and filtering
+- [webix.print() API](desktop/printing.md) for smart printing of widgets
+- [Query Builder](desktop/query_builder.md) widget for data source configuration and filtering
 - Samples on interaction with the server side for PHP, Node.js and .Net platforms
 - [serverMultiComboFilter](datatable/filtering.md#servermulticombo) for Datatable
 
@@ -40,6 +41,11 @@ and [CSV](desktop/export_csv.md#customizingexporttocsv)
 Fixes
 ---------
 
+- webix.extend ignores false values
+- active content destruction from click handler
+- preventing extra click events in Uploader
+- selecting not loaded yet records in the Datatable
+- regression in dynamic loading during scrolling
 - Datatable onBefore/AfterUnSelect events fire only for CTRL+click unselecting
 - Datatable colspan in footer and columnGroup in header result in crash on collapsing
 - Multicombo getText returns empty data

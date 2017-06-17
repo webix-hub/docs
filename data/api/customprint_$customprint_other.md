@@ -1,6 +1,8 @@
 $customPrint
 =============
 
+@todo: check
+
 @short:
 	generates custom HTML to print instead of the widget's HTML and invokes printing 
 
@@ -19,11 +21,11 @@ var html = $$("$datatable1").$customPrint({
 
 The method takes the following parameters:
 
-- **options** - (*object*) print options to be applied. The full list is given [in the related article]()
+- **options** - (*object*) print options to be applied. The full list is given [in the related article](desktop/printing.md#printingoptions)
 - **htmlOnly** - (*boolean*) if true, returns custom HTML and doesn't invoke printing. *False* by default
 
 
-Now Datatable, Dataview, X List and Spreadsheet components use this method. We don't recommended to call it directly,
-but with its help you can provide custom logic for printing your custom components, if needed. 
+Now Datatable, Dataview, X-List and Spreadsheet components use this method. 
+We don't recommended to call it directly, but you can provide custom logic for printing your custom components with its help, if needed. 
 
 

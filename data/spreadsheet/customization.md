@@ -10,6 +10,7 @@ The full structure of SpreadSheet can be presented as:
     	- Sheets select
         - Import from Excel
         - Export to Excel
+        - Print
 	- <a href="spreadsheet/customization.md#undo">Undo/Redo block</a>
     	- Undo button
         - Redo button
@@ -106,10 +107,12 @@ It includes the "sheet" select that allows working with sheet and contains three
 - "copy-sheet" - for copying the sheet's content into a new sheet
 - "remove-sheet" - for removing a sheet
 
-and two buttons:
+and three buttons:
 
 - "excel-import" button allows importing data from Excel
 - "excel-export" button lets export data into Excel
+- "print" - for printing a sheet data
+
 
 <h3 id="undo">Undo/Redo block</h3>
 
