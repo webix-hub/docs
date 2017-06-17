@@ -17,15 +17,16 @@ New Features
 
 - webix.print() API for smart printing of widgets
 - Query Builder widget for data source configuration and filtering
+- Samples on interaction with the server side for PHP, Node.js and .Net platforms
 - [serverMultiComboFilter](datatable/filtering.md#servermulticombo) for Datatable
 
 Updates
 ---------
 
-- ability to define disabled items in menu from json
+- ability to define disabled items in menu from JSON
 - [templateCopy](api/link/ui.datatable_templatecopy_config.md) for Datatable and Treetable
 - [scale and origin options](datatable/sparklines.md#customizingsparklines) for Datatable "line" and "bar" sparklines
-- autodection of sorting mode for options based on their data in [Datatable filters](datatable/filtering.md)
+- auto-detection of the sorting mode for options based on their data in [Datatable filters](datatable/filtering.md)
 - ["raw" sorting](desktop/filter_sort.md#sorting) mode
 - [getRaw](api/storage.cookie_getraw.md) method for cookie storage
 - [addView()](api/ui.carousel_addview.md) and [removeView()](api/ui.carousel_addview.md) methods for Carousel
@@ -34,7 +35,7 @@ Updates
 - ability to create [rejected](api__promise_reject.html) and [resolved](api/promise_resolve.md) promises with webix.promise interface
 - advanced settings for exporting hierarchical components to [Excel](desktop__data_components_export.html#customizingexporttoexcel) 
 and [CSV](desktop/export_csv.md#customizingexporttocsv)
-- extended touch auto detection and enhancements for Datatable and Treetable on touch devices
+- extended touch auto-detection and enhancements for Datatable and Treetable on touch devices
 
 Fixes
 ---------
@@ -65,8 +66,8 @@ Fixes
 - loading subviews using Webix Jet menu on touch devices
 - incorrect auto-loading calls for datatable with custom row height
 - dynamic loading may ignore second call for the same data range
-- add tag when separtor is  entered in Multicombo input
-- deteling tags on Backspace in Multicombo 
+- add tag when separator is entered in Multicombo input
+- deleting tags on Backspace in Multicombo 
 - keepText property lets the data stay in input with newValues enabled in Multicombo
 - hide columns in a fully x-scrolled Datatable
 - i18n translation for Calendar and Richtext
@@ -74,13 +75,13 @@ Fixes
 - returning false from onBeforeLoad doesn't prevent loading data
 - encoding fix in CSV export
 - text controls should display numeric 0 value
-- regression in biult-in editors on touch devices
+- regression in built-in editors on touch devices
 - Datatable subrows  cause row rendering issue during scrolling
 - readonly Combo: keydown invokes a suggest popup
 - incorrect escape template in strict mode
 - overflow CSS for modal Window
 - Datatable shift+key multiselection fails in case of string row ids
-- text of header menu items for groupped columns in Datatable
+- text of header menu items for grouped columns in Datatable
 - bar-sparklines with origin lesser than values
 - correct scroll after column size changing in Datatable
 - remove space prefix for CSV export of hierarchical components
