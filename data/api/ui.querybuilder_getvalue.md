@@ -17,10 +17,35 @@ getValue
 
 
 @example:
-var value = $("querybuilder1").getValue();
+var value = $$("querybuilder1").getValue();
 
 @template:	api_method
 @descr:
+The returned array with rules and fields looks as in:
+
+~~~js
+[
+	{
+		glue:"and",
+		rules:[
+			{ key:"fname", value:"Alex", rule:"equal" },
+			{ 
+				glue:"or",
+				rules:[
+					{ key:"age", value:90, rule:"less" },
+					{ key:"age", value:10, rule:"greater" }
+				]
+			}
+		]
+	},
+    [
+		{ id:"fname", 	value:"First Name", type:"string" },
+		{ id:"lname", 	value:"Last Name",  type:"string" },
+		{ id:"age",    	value:"Age", 		type:"number" },
+		{ id:"bdate",  	value:"Birth Date", type:"date" }
+	]
+]
+~~~
 
 @relatedsample:
 

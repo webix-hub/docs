@@ -34,7 +34,6 @@ With Pivot you can easily compare, filter and sort data within one table as well
 	<tr>
 		<td id="design" class='topics'>
 		    <ul id="design_sublist">
-            	<li>pivot/whats_new.md</li>
                 <li>pivot/structure.md</li>
                 <li>pivot/initialization.md</li>
                 <li>pivot/data_loading.md</li>

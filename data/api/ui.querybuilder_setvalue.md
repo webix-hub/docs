@@ -11,40 +11,44 @@ setValue
 @params:
 
 - rules			object			a set of rules for filtering
-- fields		array			an array of fields for filtering 
+- fields		array			an array of fields for filtering (to redefine the initially set fields)
 
 
 @example:
 $$("querybuilder1").setValue(
-	[{
-		"glue": "or",
-    	"rules": [
+	[
+    	// rules
+      {
+		glue: "or",
+    	rules: [
         	{
-            	"key": "fname",
-            	"value": "Alex",
-            	"rule": "equal"
+            	key: "fname",
+            	value: "Alex",
+            	rule: "equal"
         	},
         	{
-            	"glue": "and",
-            	"rules": [
+            	glue: "and",
+            	rules: [
                 	{
-                    	"key": "age",
-                    	"value": 90,
-                    	"rule": "less"
+                    	key: "age",
+                    	value: 90,
+                    	rule: "less"
                 	},
                 	{
-                    	"key": "age",
-                    	"value": 10,
-                    	"rule": "greater"
+                    	key: "age",
+                    	value: 10,
+                    	rule: "greater"
                 	}
             	]
         	}
-    	]
-	}, 	[
-     		{ "id":"fname", "value":"First Name", "type":"string" },
-     		{ "id":"lname", "value":"Last Name", "type":"string" }
+    	  ]
+	   }, 
+       	// fields
+       [
+     		{ id:"fname", value:"First Name", type:"string" },
+     		{ id:"lname", value:"Last Name", type:"string" }
      
-   		]
+   	   ]
 	]
 );
 
@@ -59,14 +63,14 @@ Besides setting both rules and fields, you can also specify either only the **ru
 // setting only the rules object
 $$("querybuilder").setValue(
 	[{
-		"glue":"and",
-		"rules":[
-			{ "key":"fname", "value":"Alex", "rule":"equal" },
+		glue:"and",
+		rules:[
+			{ key:"fname", value:"Alex", rule:"equal" },
 			{ 
-				"glue":"or",
-				"rules":[
-					{ "key":"age", "value":90, "rule":"less" },
-					{ "key":"age","value":10, "rule":"greater" }
+				glue:"or",
+				rules:[
+					{ key:"age", value:90, rule:"less" },
+					{ key:"age", value:10, rule:"greater" }
 				]
 			}
 		]
@@ -77,11 +81,12 @@ $$("querybuilder").setValue(
 or only the **fields** array:
 
 ~~~js
+// setting only the fields array
 $$("querybuilder").setValue(
 	[ 
 		[
-			{ "id":"fname", "value":"First Name", "type":"string" },
-			{ "id":"lname", "value":"Last Name", "type":"string" }
+			{ id:"fname", value:"First Name", type:"string" },
+			{ id:"lname", value:"Last Name", type:"string" }
 					
 		]
 	]

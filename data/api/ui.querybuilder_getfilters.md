@@ -22,23 +22,27 @@ var filters = $$("querybuilder").getFilters();
 
 @template:	api_method
 @descr:
-A filter object looks like this:
+A returned array with filters looks like this:
 
 ~~~js
-{
- 	id: string;
- 	name: string;
- 	fn: (a: any, b: any, c: any) => boolean;
- 	type: string;
-}
+[{
+	"fn":function (a, b)
+	id:"less or equal"
+	name:"less or equal"
+	type:"number"
+}]
 ~~~
 
 and has the following properties:
 
-- id - (string) the filter id
-- name - (string) the filter name (will be rendered in the list of options for filtering)
-- function - (function) the filtering function
-- type - (string) the type of data the filter will be applied to
+- **id** - (*string*) the filter id
+- **name** - (*string*) the filter name (will be rendered in the list of options for filtering)
+- **function** - (*function*) the filtering function
+- **type** - (*string*) the type of data the filter will be applied to. Can have the following values:
+	- *number*
+    - *string*
+    - *any*
+	
 
 
 @relatedapi:

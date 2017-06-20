@@ -3,7 +3,7 @@ Smart Printing of Widgets
 
 With Webix you have a nice possibility to print widgets or parts of interfaces with the help of compact and elegant API.
 
-{{note Please note that for correct work **webix.css** file must be included for all media or at least contain *media:print*. No media will also do (see below)}}
+{{note Please ensure that **webix.css** file is included for all media or at least contains *media:print*. No media will also do (see below)}}
 
 ~~~html
 <link rel="stylesheet" href="../../codebase/webix.css" type="text/css" charset="utf-8">
@@ -87,6 +87,8 @@ webix.print($$("mytable"), {mode:"landscape"});
 	- "current" - all data from the current sheet (default)
 	- "selection" - selected data from the current sheet
 - **sheetnames** - (*boolean*) renders name of sheets for each table. True by default.
+
+SpreadSheet is equipped with the printing user interface out of the box. Read more about it in the related [SpreadSheet documentation](spreadsheet/printing.md).
  
 Configuring Printing Environment
 ------------------------------

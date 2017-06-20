@@ -1,10 +1,10 @@
 Creating Kanban Board on a Page
 ================================
 
-In order to start using Kanban Board you need to initialize it on the page. 
+In order to start using Kanban Board, you need to initialize it on a page. 
 It requires 2 simple steps:
 
-1. Include the necessary JS and CSS files into HTML file.
+1. Include the necessary JS and CSS files into an HTML file.
 2. Call the object constructor.
 
 Included files

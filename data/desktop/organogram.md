@@ -24,6 +24,9 @@ The component items can include various HTML-elements, e.g. photos, and can be s
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/org_front.png"/>
 
+Guides
+----------
+
 <table  style='border-left:none !important;' cellspacing="0" cellpadding="5" border="0">
 	<tbody>
 	<tr>

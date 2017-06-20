@@ -20,40 +20,51 @@ External resources
 Overview
 ----------
 
-Query Builder is handy widget for building complex filters. It can be used standalone or in tandem with data widgets that have filtering abilities, e.g. Grid and Pivot,
-to make filtering more profound and resultative (specific).
+Query Builder is a handy widget for building advanced filters of any complexity level. It can be used standalone or in tandem with data widgets that have filtering abilities, 
+e.g. Grid and Pivot, to execute profound filtering of large datasets.
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/querybuilder_front.png">
 
-Initialization
-------------------
+Guides
+----------
 
-To initialize Query Builder on the page, you need to specify its configuration as follows:
+<table  style='border-left:none !important;' cellspacing="0" cellpadding="5" border="0">
+	<tbody>
+	<tr>
+		<td  class='topics'>
+		    <h4 id='ui'>
+		        Creating Query Builder
+		    </h4>
+		    <ul id="design_sublist">
+            	<li>querybuilder/initialization.md</li>
+            	<li>querybuilder/localization.md</li>
+            </ul>
+		</td>
+		<td class='topic_description'>Teaches you how to create Query Builder on the page and set necessary localization settings.</td>
+	</tr>
+	<tr>
+		<td class='topics'>
+		    <h4>
+		        Working with Query Builder
+		    </h4>
+		    <ul id="manipulations_sublist">
+				<li>querybuilder/setting_value.md</li>
+                <li>querybuilder/filters.md</li>
+                <li>querybuilder/usage.md</li>
+            </ul>
+        </td>
+		<td class='topic_description'>Dwells on setting and getting Query Builder value, manipulations with filters and ways of using the widget with data components.</td>
+	</tr>
+	</tbody>
+</table>
 
-~~~js
-webix.ui({
-	view: "querybuilder",
-	id: "querybuilder",
-	fields: [
-		{ id:"fname", 	value:"First Name", type:"string" },
-		{ id:"lname", 	value:"Last Name",  type:"string" },
-		{ id:"age",  	value:"Age", 		type:"number" },
-		{ id:"bdate",  	value:"Birth Date", type:"date" }
-	]
-})
-~~~
 
-The main configuration property is **fields**. It is an array of field objects that will be used for filtering the dataset.
-
-Each field object has three properties (all are strings):
-
-- *id* - the field id
-- *value* - the field value
-- *type* - the type of the field
-
-{{sample}}
-
-
+@index:
+- querybuilder/initialization.md
+- querybuilder/localization.md
+- querybuilder/setting_value.md
+- querybuilder/filters.md
+- querybuilder/usage.md
 
 
 @edition:pro
