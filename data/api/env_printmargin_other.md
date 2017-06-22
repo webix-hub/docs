@@ -1,8 +1,6 @@
 printMargin
 =============
 
-@todo: check links
-
 @short:
 	sets the margin for printed pages in pixels
 

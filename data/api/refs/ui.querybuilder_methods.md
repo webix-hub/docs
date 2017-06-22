@@ -15,8 +15,8 @@ Methods
 - api/link/ui.querybuilder_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/ui.querybuilder_focus.md - sets focus to the active (blue-colored) state of the toggle button of QueryBuilder
 - api/link/ui.querybuilder_getchildviews.md - returns child views of the calling component
-- api/ui.querybuilder_getfilterhelper.md - returns the function that filters data based on the specified filters
-- api/ui.querybuilder_getfilters.md - 
+- api/ui.querybuilder_getfilterhelper.md - returns the function that implies the filtering logic
+- api/ui.querybuilder_getfilters.md - returns all available filter objects
 - api/link/ui.querybuilder_getformview.md - returns master form for the input
 - api/link/ui.querybuilder_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.querybuilder_getparentview.md - returns the parent view of the component
@@ -32,7 +32,7 @@ Methods
 - api/link/ui.querybuilder_removeview.md - removes the specified view of a layout-like component
 - api/link/ui.querybuilder_resize.md - adjusts the view to a new size
 - api/link/ui.querybuilder_resizechildren.md - resizes all children of the called component
-- api/ui.querybuilder_setfilters.md - 
+- api/ui.querybuilder_setfilters.md - sets an array of filtering objects
 - api/ui.querybuilder_setvalue.md - sets a value for Query Builder as an array of rules and fields for filtering. Please, see the details
 - api/link/ui.querybuilder_show.md - makes the component visible
 - api/link/ui.querybuilder_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name

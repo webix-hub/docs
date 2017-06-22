@@ -1,8 +1,6 @@
 printPPI
 =============
 
-@todo: check links
-
 @short:
 	sets  default pixel per inch (ppi) ratio for printing
 

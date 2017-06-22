@@ -8,7 +8,7 @@ Text
 
 ##Overview
 
-Ui-related text control is a one-line input field with a label.
+UI-related text control is a one-line input field with a label.
 
 <img src="desktop/text.png"/>
 

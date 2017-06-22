@@ -1,9 +1,5 @@
 focus
 =============
-
-
-@todo:
-	check 
     
 @short:
 	sets focus to the active (blue-colored) state of the toggle button of QueryBuilder

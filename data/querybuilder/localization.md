@@ -1,7 +1,7 @@
 Localizing Query Builder
 ==========================
 
-You can localize File Manager according to the peculiarities of a certain language.
+You can localize Query Builder according to the peculiarities of a certain language.
 
 It is possible to localize labels and the names of used filters, they are stored in the **webix.i18n.querybuilder** object:
 
@@ -62,3 +62,5 @@ webix.i18n.locales['ru-RU'].querybuilder = {
 ~~~js
 webix.i18n.setLocale('ru-RU');
 ~~~
+
+@edition:pro

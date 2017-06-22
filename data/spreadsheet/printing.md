@@ -52,7 +52,7 @@ The **Layout** section allows setting the layout configuration:
 Localizing Before Print Dialog
 ----------------------------
 
-You can fully localize labels in the dialog via the i18n object. See the printing-related labels below:
+You can fully localize labels in the dialog via the **webix.i18n.spreadsheet** object. See the printing-related labels below:
 
 ~~~js
 webix.i18n.spreadsheet = { 
@@ -82,5 +82,5 @@ webix.i18n.spreadsheet = {
 } 
 ~~~
 
-Read more on SpreadSheet localiztion in the [related article](spreadsheet/localization.md).
+Read more on SpreadSheet localization in the [related article](spreadsheet/localization.md).
 

@@ -1,8 +1,6 @@
 $customPrint
 =============
 
-@todo: check
-
 @short:
 	generates custom HTML to print instead of the widget's HTML and invokes printing 
 

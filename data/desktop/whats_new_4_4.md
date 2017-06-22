@@ -66,7 +66,7 @@ Fixes
 - check for readonly options in plain HTML input as suggest master
 - Datatable activeContent: calling locate() returns null
 - grouped columns In Datatable: expanding also triggers sorting in the first column
- -Double List and Form Input can display validation messages
+- Form Input can display validation messages
 - locate dragged item over empty area
 - drag-n-drop fails when mouse leaves document body
 - loading subviews using Webix Jet menu on touch devices

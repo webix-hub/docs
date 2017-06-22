@@ -1,12 +1,15 @@
 Setting/Getting Query Builder Value
 ========================================
 
+{{todo check the links to sample }}
+
+
 ##Setting Value
 
 In order to set a value for Query Builder, you can use the api/ui.querybuilder_setvalue.md method. This method allows setting rules and fields for filtering, as well as
 define the logic of the rules' usage.
 
-You need to pass two parameters to the api/ui.querybuilder_setvalue.md method:
+You need to pass an array with two elements to the api/ui.querybuilder_setvalue.md method:
 
 - **rules** - (*object*) a set of rules for filtering. The *rules* object consists of the **glue** property and an array of rules.<br>
 Each rule array is preceded by the **glue** property that defines the logic of using rules in the group:<br> 
@@ -58,6 +61,47 @@ $$("querybuilder1").setValue(
 );
 ~~~
 
+###Setting rules and fields separately
+
+There are two more ways of setting the value for Query Builder. 
+Besides setting both rules and fields, you can also specify either only the **rules** object:
+
+~~~js
+// setting only the rules object
+$$("querybuilder").setValue(
+	[{
+		glue:"and",
+		rules:[
+			{ key:"fname", value:"Alex", rule:"equal" },
+			{ 
+				glue:"or",
+				rules:[
+					{ key:"age", value:90, rule:"less" },
+					{ key:"age", value:10, rule:"greater" }
+				]
+			}
+		]
+	}]
+);
+~~~
+
+or only the **fields** array:
+
+~~~js
+// setting only the fields array
+$$("querybuilder").setValue(
+	[ 
+		[
+			{ id:"fname", value:"First Name", type:"string" },
+			{ id:"lname", value:"Last Name", type:"string" }
+					
+		]
+	]
+);
+~~~
+
+{{sample 66_querybuilder/01_initialization/01_init.html}}
+
 ##Getting Value
 
 You can get the value of the Query Builder via the api/ui.querybuilder_getvalue.md method.
@@ -93,3 +137,7 @@ The method returns the array of rules and fields used for filtering. For example
     ]
 ]
 ~~~
+
+{{sample 66_querybuilder/01_initialization/01_init.html}}
+
+@edition:pro

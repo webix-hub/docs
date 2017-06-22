@@ -2,7 +2,7 @@ CustomPrint
 =============
 
 
-Creates custom HTML during printing for widgets that are not fully rendered in the workflow
+{{memo Creates custom HTML during printing for widgets that are not fully rendered in the workflow. }}
 
 
 

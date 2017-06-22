@@ -1,18 +1,12 @@
 setFilters
 =============
 
-
-@todo:
-	check 
-
 @short:
-	sets an array of filtering objects 
+	sets an array of filter objects 
 
 @params:
 
-- filters		array			an array with filters objects
-
-
+- filters		array			an array with filter objects
 
 @example:
 $$("querybuilder").setFilters([
@@ -43,7 +37,10 @@ Each filter object should have the following properties:
     - *string*
     - *any*
 
-See the full list of available filters in the related section of the Query Builder documenatation.
+See the full list of available filters in the [related article of the Query Builder documentation](querybuilder/list_of_filters.md).
 
 @relatedapi:
 api/ui.querybuilder_getfilters.md
+
+@related:
+querybuilder/filters.md

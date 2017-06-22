@@ -15,7 +15,7 @@ External resources
 -------------------
 
 {{note The sources of this component are located in a separate folder of the library package - **/querybuilder**}}
-- There are  online samples at [docs.webix.com/samples](http://docs.webix.com/samples/66_querybuilder/)
+- There are  online samples at [docs.webix.com/samples](http://docs.webix.com/samples/66_querybuilder/index.html)
 
 Overview
 ----------
@@ -50,6 +50,7 @@ Guides
 		    <ul id="manipulations_sublist">
 				<li>querybuilder/setting_value.md</li>
                 <li>querybuilder/filters.md</li>
+                <li>querybuilder/filter_logic.md</li>
                 <li>querybuilder/usage.md</li>
             </ul>
         </td>
@@ -64,9 +65,10 @@ Guides
 - querybuilder/localization.md
 - querybuilder/setting_value.md
 - querybuilder/filters.md
+- querybuilder/filter_logic.md
 - querybuilder/usage.md
 
 
 @edition:pro
 
-{{@todo: check the folder name in the package and links to samples}}
+{{@todo: check the folder name in the package and the link to samples}}

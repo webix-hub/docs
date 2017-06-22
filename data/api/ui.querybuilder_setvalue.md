@@ -1,12 +1,10 @@
 setValue
 =============
 
-
-@todo:
-	check 
+@todo: check the link to sample
 
 @short:
-	sets a value for Query Builder as an array of rules and fields for filtering. Please, see the details
+	sets a value for Query Builder as an array of rules and fields for filtering
 
 @params:
 
@@ -100,3 +98,6 @@ $$("querybuilder").setValue(
 
 @relatedapi:
 api/ui.querybuilder_getvalue.md
+
+@related:
+querybuilder/setting_value.md#settingvalue

@@ -1,12 +1,8 @@
 querybuilder
 =============
 
-@todo:
-	complete
-
-
 @short:
-	default locales for Query Buidler labels and rules
+	default locales for Query Builder labels and rules
 
 @type:object
 
@@ -45,6 +41,7 @@ webix.i18n.setLocale();
 
 @related:
 	desktop/localization.md
+    querybuilder/localization.md
 
 @relatedapi:
 	api/i18n_setlocale.md

@@ -2,9 +2,36 @@ ui.querybuilder
 =============
 
 
-dummy stub
+{{memo A handy tool for creating complex filters. }}
 
-{{todo replace with real description. }}
+{{todo check link to samples. }}
+
+Webix Query Builder widget inherits from desktop/layout.md and allows setting extended rules for data filtering, grouping several
+rules and define the logic of rules' usage. 
+You can use it as a standalone solution or combine with data widgets, such as DataTable and Pivot. Query Builder can also be used
+as a built-in filter of DataTable.
+
+Check desktop/query_builder.md documentation for more details.
+
+###Constructor 
+
+~~~js
+var querybuilder = webix.ui({
+    view:"querybuilder", 
+    id: "querybuilder",
+    fields: [
+        { id:"fname",   value:"First Name", type:"string" },
+        { id:"lname",   value:"Last Name",  type:"string" },
+        { id:"age",     value:"Age",        type:"number" },
+        { id:"bdate",   value:"Birth Date", type:"date" }
+    ]
+});
+~~~
+
+### Where to start
+
+- [Overview of the Query Builder Widget](desktop/query_builder.md)
+- [Samples](http://docs.webix.com/samples/66_querybuilder/index.html) 
 
 <div class='webixdoc_parents'><span>Based on: </span>
 <a href="api/refs/ui.layout.md">ui.layout</a>, <a href="api/refs/ui.baselayout.md">ui.baselayout</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a></div>
@@ -26,8 +53,8 @@ dummy stub
 - api/link/ui.querybuilder_enable.md - enables the calling view that was disabled by the 'disable' method
 - api/ui.querybuilder_focus.md - sets focus to the active (blue-colored) state of the toggle button of QueryBuilder
 - api/link/ui.querybuilder_getchildviews.md - returns child views of the calling component
-- api/ui.querybuilder_getfilterhelper.md - returns the function that filters data based on the specified filters
-- api/ui.querybuilder_getfilters.md - 
+- api/ui.querybuilder_getfilterhelper.md - returns the function that implies the filtering logic
+- api/ui.querybuilder_getfilters.md - returns all available filter objects
 - api/link/ui.querybuilder_getformview.md - returns master form for the input
 - api/link/ui.querybuilder_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.querybuilder_getparentview.md - returns the parent view of the component
@@ -43,7 +70,7 @@ dummy stub
 - api/link/ui.querybuilder_removeview.md - removes the specified view of a layout-like component
 - api/link/ui.querybuilder_resize.md - adjusts the view to a new size
 - api/link/ui.querybuilder_resizechildren.md - resizes all children of the called component
-- api/ui.querybuilder_setfilters.md - 
+- api/ui.querybuilder_setfilters.md - sets an array of filtering objects
 - api/ui.querybuilder_setvalue.md - sets a value for Query Builder as an array of rules and fields for filtering. Please, see the details
 - api/link/ui.querybuilder_show.md - makes the component visible
 - api/link/ui.querybuilder_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name

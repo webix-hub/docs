@@ -1,9 +1,7 @@
 getValue
 =============
 
-
-@todo:
-	check 
+@todo: check the link to sample
 
 @short:
 	returns the value set for Query Builder (an array of rules and fields for filtering)
@@ -47,9 +45,12 @@ The returned array with rules and fields looks as in:
 ]
 ~~~
 
-@relatedsample:
-
-66_querybuilder/01_initialization/01_init.html
 
 @relatedapi:
 api/ui.querybuilder_setvalue.md
+
+@related:
+querybuilder/setting_value.md#gettingvalue
+
+@relatedsample:
+66_querybuilder/01_initialization/01_init.html

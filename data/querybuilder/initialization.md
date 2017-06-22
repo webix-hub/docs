@@ -46,4 +46,8 @@ Each field object has three properties:
 - **value** - (*string*) the field value
 - **type** - (*string*) the type of the field. Can have the following values: *string*, *number*, *date*. 
 
-{{sample}}
+{{sample 66_querybuilder/01_initialization/01_init.html}}
+
+@todo: check link to the sample
+
+@edition:pro

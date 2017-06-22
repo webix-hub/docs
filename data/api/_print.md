@@ -1,9 +1,6 @@
 print
 =============
 
-
-@todo:
-	check and complete
 @short:
 	prints a view according to the specified settings
 

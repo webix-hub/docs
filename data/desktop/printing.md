@@ -1,7 +1,7 @@
 Smart Printing of Widgets
 =========================
 
-With Webix you have a nice possibility to print widgets or parts of interfaces with the help of compact and elegant API.
+With Webix you have a nice possibility to print widgets or parts of interfaces with the help of [compact and elegant API](api/_print.md).
 
 {{note Please ensure that **webix.css** file is included for all media or at least contains *media:print*. No media will also do (see below)}}
 
@@ -95,8 +95,8 @@ Configuring Printing Environment
 
 It is possible to specify the desired paper margins for printing by taking into account the rules described below.
 
-We assume that the default **ppi** (pixel per inch) ratio is equal to 96 and the default paper margins take 75% of ppi. 
-If you need to define other values for margins, you can change the corresponding *env* variables:  
+We assume that the default [**ppi**](api/env_printppi_other.md) (pixel per inch) ratio is equal to 96 and the default
+[paper margins](api/env_printmargin_other.md) take 75% of ppi. If you need to define other values for margins, you can change the corresponding *env* variables:  
 
 ~~~js
 webix.env.printPPI = 96;
