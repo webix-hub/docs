@@ -6,7 +6,7 @@ Version 4.4
 Updates
 --------
 
-The ability [to add custom items](file_manager/configuration.md#actionsmenu) into menu 
+The ability [to add custom items](file_manager/configuration.md#custom_item) into the Actions menu. 
 
 Fixes
 --------

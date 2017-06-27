@@ -3,28 +3,25 @@ Version 4.4
 
 <span class="release_date">released on June 27, 2017</span>
 
-{{todo
-log revision 17.06
-}}
-
 Breaking Changes
 ---------
 
 To avoid ambiguity, Google-map  has been completely removed from the [Components repository](https://github.com/webix-hub/components), 
-but its [advanced version](https://docs.webix.com/desktop__googlemap.html) stays in package and is available in both GPL and PRO editions.  
+but its [advanced version](desktop/googlemap.md) stays in package and is available in both GPL and PRO editions.  
 
 New Features 
 ---------
 
 - [webix.print() API](desktop/printing.md) for smart printing of widgets
 - [Query Builder](desktop/query_builder.md) widget for data source configuration and filtering
-- Samples on interaction with the server side for PHP, Node.js and .Net platforms
+- [Samples on interaction with the server side](desktop/serverside.md#examplesofintegrationwithserversideplatforms) for PHP, Node.js and .Net platforms
 - [serverMultiComboFilter](datatable/filtering.md#servermulticombo) for Datatable
 
 Updates
 ---------
 
-- ability to define disabled items in menu from JSON
+- ability to [use relative elements in abslayout](desktop/absolute_layout.md#usingrelativeelementsinabsolutelayout)
+- ability to [define disabled items in menu from JSON](desktop/menu.md#disable_item)
 - [templateCopy](api/link/ui.datatable_templatecopy_config.md) for Datatable and Treetable
 - [scale and origin options](datatable/sparklines.md#customizingsparklines) for Datatable "line" and "bar" sparklines
 - auto-detection of the sorting mode for options based on their data in [Datatable filters](datatable/filtering.md)
@@ -33,14 +30,18 @@ Updates
 - [addView()](api/ui.carousel_addview.md) and [removeView()](api/ui.carousel_addview.md) methods for Carousel
 - [webix.history.track](desktop/history_track.md#disablinghistorytracking) can be disabled
 - Datatable's [adjustRowHeight()](api/ui.datatable_adjustrowheight.md) can adjust the row to the highest cell if column id is not specified
-- ability to create [rejected](api__promise_reject.html) and [resolved](api/promise_resolve.md) promises with webix.promise interface
-- advanced settings for exporting hierarchical components to [Excel](desktop__data_components_export.html#customizingexporttoexcel) 
+- ability to create [rejected](api/promise_reject.md) and [resolved](api/promise_resolve.md) promises with webix.promise interface
+- advanced settings for exporting hierarchical components to [Excel](desktop/data_components_export.md#customizingexporttoexcel) 
 and [CSV](desktop/export_csv.md#customizingexporttocsv)
 - extended touch auto-detection and enhancements for Datatable and Treetable on touch devices
 
 Fixes
 ---------
 
+- changeId for top items in the Tree sometimes doesn't work
+- parsing date from %c format
+- using setColumnWidths against a hidden column in DataTable
+- %c options in date conversion break for dates with timezone info
 - webix.extend ignores false values
 - active content destruction from click handler
 - preventing extra click events in Uploader

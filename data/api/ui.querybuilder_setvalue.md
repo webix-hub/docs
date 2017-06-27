@@ -1,8 +1,6 @@
 setValue
 =============
 
-@todo: check the link to sample
-
 @short:
 	sets a value for Query Builder as an array of rules and fields for filtering
 

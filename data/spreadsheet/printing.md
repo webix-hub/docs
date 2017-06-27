@@ -2,6 +2,7 @@ SpreadSheet Printing Interface
 ======================
 
 You can print the results of your work in the Webix SpreadSheet. This functionality is provided out of the box. 
+Read about the Print API and printing options in the [related guide](desktop/printing.md).
 
 There are two ways to activate printing:
 
@@ -38,7 +39,7 @@ The **General Settings** section allows you to specify the following settings:
 	- *Skip empty rows* - skip empty rows within the datatable (disabled by default)
 	- *Hide margins*  -   hide margins for printed pages (set them to 0)
     
-The **Paper Size** section lets you define the desired size paper size for printing: "letter", "a4" (default) or "a3".
+The **Paper Size** section lets you define the desired paper size for printing: "letter", "a4" (default) or "a3".
 
 The **Layout** section allows setting the layout configuration:
 

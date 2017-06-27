@@ -1,9 +1,6 @@
 Setting/Getting Query Builder Value
 ========================================
 
-{{todo check the links to sample }}
-
-
 ##Setting Value
 
 In order to set a value for Query Builder, you can use the api/ui.querybuilder_setvalue.md method. This method allows setting rules and fields for filtering, as well as
@@ -137,6 +134,8 @@ The method returns the array of rules and fields used for filtering. For example
     ]
 ]
 ~~~
+
+After you get the value set for the widget, you can convert it into the data format which you need for working with the server side.
 
 {{sample 66_querybuilder/01_initialization/01_init.html}}
 

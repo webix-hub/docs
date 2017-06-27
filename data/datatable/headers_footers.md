@@ -465,9 +465,7 @@ webix.ui({
   columns:[
     { 
       id:"title", 
-      header:[{
-        content:"customFilterName"
-      }], 
+      header:[{content:"customFilterName"}], 
       fillspace:1
     },
     { 
@@ -479,6 +477,9 @@ webix.ui({
   data:grid_data
 });
 ~~~
+
+In the above example we have added two filters into the datatable header: a custom filter and a standard text filter.
+Data will be refiltered each time the value in any of the filters changes.
 
 @test: test
 @keyword:

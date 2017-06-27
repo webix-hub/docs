@@ -9,9 +9,9 @@ Start
 
 <h2>Meet Webix 4.4!</h2>
 <ul>
-	<li>Cool <a href="">Print API</a> for smart printing of views/UI sections</li>
+	<li>Cool <a href="desktop/printing.md">Print API</a> for smart printing of views/UI sections</li>
     <li>Handy <a href="desktop/query_builder.md">Query Builder</a> widget to make complex filters</li>
-    <li>Server-side samples for PHP, Node.js and .Net</li>
+    <li><a href="desktop/serverside.md#examplesofintegrationwithserversideplatforms">Server-side samples</a> for PHP, Node.js and .Net</li>
 </ul>
 
 <p> and <a href="desktop/whats_new_4_4.md">many more...</a></p>

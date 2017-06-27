@@ -48,6 +48,5 @@ Each field object has three properties:
 
 {{sample 66_querybuilder/01_initialization/01_init.html}}
 
-@todo: check link to the sample
 
 @edition:pro

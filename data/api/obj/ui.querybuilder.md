@@ -1,10 +1,10 @@
 
 {{memo a handy tool for creating complex filters}}
 
-{{todo check link to samples}}
-
 Webix Query Builder widget inherits from [Layout](desktop/layout.md) and allows setting extended rules for data filtering, grouping several
 rules and define the logic of rules' usage. 
+
+You can use it as a standalone solution or combine with data widgets, such as DataTable and Pivot. Query Builder can also be used as a built-in filter for DataTable.
 
 Check desktop/query_builder.md documentation for more details.
 

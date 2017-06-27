@@ -1,8 +1,6 @@
 Working with Filters
 ======================
 
-{{todo check the link to sample}}
-
 Filters in Query Builder are presented by objects that contain functions which implement filtering logic. 
 
 ##Setting Filters

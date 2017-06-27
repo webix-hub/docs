@@ -73,7 +73,7 @@ grid = new webix.ui({
 
 *This command will cancel the predefined behavior for the paste operation.*
 
-- Specify custom logic in the api/ui.datatable_onpaste_event.md event handler.
+- Specify custom logic in the api/link/ui.datatable_onpaste_event.md event handler.
 
 ~~~js
 //the code does nothing but alerts messages
@@ -82,7 +82,7 @@ grid.attachEvent("onPaste", function(text) {
 });
 ~~~
 
-*DataTable invokes the api/ui.datatable_onpaste_event.md event when the user presses CTRL+V keys combination.*
+*DataTable invokes the api/link/ui.datatable_onpaste_event.md event when the user presses CTRL+V keys combination.*
 
 
 {{sample 15_datatable/06_clipboard/09_paste_custom.html}}

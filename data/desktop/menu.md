@@ -318,10 +318,10 @@ As a result, only "unchecked" menu items are shown.
 
 {{sample 03_menu/10_hide_item.html}}
 
-###Disabling
+<h3 id="disable_item">Disabling</h3>
 
 To disable menu item, you should apply special **disableItem()** and **enableItem()** functions to menu passing ID of the necessary item into them. 
-The methods can be triggered by changing state of a checkbox which ID equals to the ID of the corresponding menu item. 
+The methods can be triggered by changing the state of a checkbox the ID of which equals the ID of the corresponding menu item. 
 
 ~~~js
 $$("tree1").attachEvent("onItemCheck",function(id,state){
@@ -329,6 +329,26 @@ $$("tree1").attachEvent("onItemCheck",function(id,state){
 		$$("top_menu").disableItem(id);
 	else
 		$$("top_menu").enableItem(id);
+});
+~~~
+
+<h4 id="disableitemfromjson">Disabling a menu item from JSON</h4>
+
+You can also specify an item as disabled in the menu data configuration. For this purpose you should set the **disabled:true** attribute in the related item object:
+
+~~~js
+webix.ui({
+	view:"menu",
+	data:[
+		{ id:"1",value:"Translate...", submenu:[
+			{id: "1.1", value:"English"},
+			{ id: "1.2", value:"Slavic...", submenu:[
+				{id: "1.2.1", value:"Belarusian"},
+				{id: "1.2.2", value:"Russian", disabled:true },
+				{id: "1.2.3", value:"Ukrainian"}
+			]}			
+		]}
+	]
 });
 ~~~
 

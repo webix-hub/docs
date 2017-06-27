@@ -524,17 +524,17 @@ By default, the Actions menu contains the following data array:
 
 The properties of actions are the following:
 
-- id - {string} the id of an action
-- method - {string} the name of the method that is used to implement the action
-- icon - {string} an icon from the Font Awesome collection used for the action
-- batch - {string} group that menu item belongs to. Possible value are:
+- **id** - {string} the id of an action
+- **method** - {string} the name of the method that is used to implement the action
+- **icon** - {string} an icon from the Font Awesome collection used for the action
+- **batch** - {string} group that menu item belongs to. Possible value are:
 	- *"item"* - the item will be seen only for data items not empty space;
     - *"root"* - the item will be seen for the root item only;
     - *"folder"* - the item will be shown for folders only;
     - *"file"* - the item will be shown for files only;
     - *"empty"* - the item will be shown for empty space and all items other than root
-- value - {string} the action title 
-- $template  - {string}  -optional, the $template:"Separator" settings draws a separating line 
+- **value** - {string} the action title 
+- **$template**  - {string} optional, the $template:"Separator" settings draws a separating line 
 
 You can reload data using the following approach:
 
@@ -544,6 +544,8 @@ actions.clearAll();
 var newData = [{id: "copy", ...},...];
 actions.parse(newData); 
 ~~~
+
+<h3 id="custom_item">Adding a new action to the menu</h3>
 
 The api/link/ui.proto_add.md method allows adding a new action to menu:
 
@@ -568,10 +570,10 @@ ready:function(){
 
 On clicking any menu item, Filemanager method defined by `action.method` or `action.id` is called. 
 
-In the snippet above, Filemanager api/ui.filemanager_download.md is called. If there isn't any method in Filemanager to match id or method of your custom item, 
+In the above snippet, Filemanager api/ui.filemanager_download.md is called. If there isn't any method in Filemanager to match id or method of your custom item, 
 you will need to add it to the component prototype. 
 
-
+**Setting a click handler for the new action**
 
 It is possible to set a click handler for the added action using api/mouseevents_onitemclick_event.md event handler:
 
@@ -583,13 +585,17 @@ actions.attachEvent("onItemClick", function(id){
 });
 ~~~
 
+###Removing an action
+
 To remove an existing action, you can call the api/link/ui.proto_remove.md method for it:
 
 ~~~js
 actions.remove("upload");
 ~~~
 
-It is possible to customize the Actions menu with the help of **menuFilter** function that can filter menu items before showing a menu on the page.
+###Customizing the Actions menu
+
+It is possible to customize the Actions menu with the help of the **menuFilter** function that can filter menu items before showing a menu on the page.
 
 ~~~js
 view:"filemanager",
@@ -606,7 +612,6 @@ menuFilter:function(obj){
     return true;  
 }
 ~~~
-
 
 The function should return *true* to show the item, *false* to hide it.
 

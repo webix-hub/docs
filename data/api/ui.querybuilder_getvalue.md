@@ -1,7 +1,6 @@
 getValue
 =============
 
-@todo: check the link to sample
 
 @short:
 	returns the value set for Query Builder (an array of rules and fields for filtering)

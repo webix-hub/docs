@@ -1,8 +1,6 @@
 getFilterHelper
 =============
 
-@todo: check the link to sample
-
 @short:
 	returns the function that implies the filtering logic 
 

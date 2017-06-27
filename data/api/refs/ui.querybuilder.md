@@ -4,12 +4,10 @@ ui.querybuilder
 
 {{memo A handy tool for creating complex filters. }}
 
-{{todo check link to samples. }}
-
-Webix Query Builder widget inherits from desktop/layout.md and allows setting extended rules for data filtering, grouping several
+Webix Query Builder widget inherits from [Layout](desktop/layout.md) and allows setting extended rules for data filtering, grouping several
 rules and define the logic of rules' usage. 
-You can use it as a standalone solution or combine with data widgets, such as DataTable and Pivot. Query Builder can also be used
-as a built-in filter of DataTable.
+
+You can use it as a standalone solution or combine with data widgets, such as DataTable and Pivot. Query Builder can also be used as a built-in filter for DataTable.
 
 Check desktop/query_builder.md documentation for more details.
 
@@ -54,7 +52,7 @@ var querybuilder = webix.ui({
 - api/ui.querybuilder_focus.md - sets focus to the active (blue-colored) state of the toggle button of QueryBuilder
 - api/link/ui.querybuilder_getchildviews.md - returns child views of the calling component
 - api/ui.querybuilder_getfilterhelper.md - returns the function that implies the filtering logic
-- api/ui.querybuilder_getfilters.md - returns all available filter objects
+- api/ui.querybuilder_getfilters.md - returns an array of all available filter objects
 - api/link/ui.querybuilder_getformview.md - returns master form for the input
 - api/link/ui.querybuilder_getnode.md - returns the main HTML container for the calling object
 - api/link/ui.querybuilder_getparentview.md - returns the parent view of the component
@@ -70,8 +68,8 @@ var querybuilder = webix.ui({
 - api/link/ui.querybuilder_removeview.md - removes the specified view of a layout-like component
 - api/link/ui.querybuilder_resize.md - adjusts the view to a new size
 - api/link/ui.querybuilder_resizechildren.md - resizes all children of the called component
-- api/ui.querybuilder_setfilters.md - sets an array of filtering objects
-- api/ui.querybuilder_setvalue.md - sets a value for Query Builder as an array of rules and fields for filtering. Please, see the details
+- api/ui.querybuilder_setfilters.md - sets an array of filter objects
+- api/ui.querybuilder_setvalue.md - sets a value for Query Builder as an array of rules and fields for filtering
 - api/link/ui.querybuilder_show.md - makes the component visible
 - api/link/ui.querybuilder_showbatch.md - makes visible those elements which parameter 'batch' is set to the specified name
 - api/link/ui.querybuilder_unbind.md - breaks "bind" link

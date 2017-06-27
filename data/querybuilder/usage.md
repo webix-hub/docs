@@ -204,6 +204,4 @@ and restored when it's necessary. Read more about saving of DataTable state in t
 {{sample 66_querybuilder/01_initialization/03_datatable.html}}
 
 
-@todo: check links to the samples
-
 @edition:pro

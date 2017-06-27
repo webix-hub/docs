@@ -1,9 +1,6 @@
 fields
 =============
 
-@todo:
-	check 
-
 
 @short:
 	sets an array of fields that will be used for filtering dataset
@@ -24,4 +21,9 @@ webix.ui({
 @template:	api_config
 @descr:
 
+@related:
+querybuilder/initialization.md
+
+@relatedsample:
+66_querybuilder/01_initialization/01_init.html
 

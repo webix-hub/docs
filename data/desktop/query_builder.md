@@ -14,14 +14,14 @@ API Reference
 External resources
 -------------------
 
-{{note The sources of this component are located in a separate folder of the library package - **/querybuilder**}}
-- There are  online samples at [docs.webix.com/samples](http://docs.webix.com/samples/66_querybuilder/index.html)
+{{note The sources of this component are located in a separate folder of the library package - <br>**/querybuilder/**}}
+- There are  online samples at [docs.webix.com/samples](http://docs.webix.com/samples/66_query-builder/index.html)
 
 Overview
 ----------
 
 Query Builder is a handy widget for building advanced filters of any complexity level. It can be used standalone or in tandem with data widgets that have filtering abilities, 
-e.g. Grid and Pivot, to execute profound filtering of large datasets.
+e.g. Grid and Pivot, to execute profound filtering of large datasets. The widget is also helpful for configuring data source while working with server side.
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/querybuilder_front.png">
 
@@ -71,4 +71,3 @@ Guides
 
 @edition:pro
 
-{{@todo: check the folder name in the package and the link to samples}}
