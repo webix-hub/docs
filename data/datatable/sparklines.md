@@ -50,7 +50,7 @@ There are six types of Sparklines representation available:
 - <a href="#splinearea">SplineArea</a>
 - <a href="#pie">Pie</a>
 
-To create a template function for a sparkline with the type different from the default one, use the *webix.Sparklines.getTemplate("type_name")* method.
+To create a template function for a sparkline with the type different from the default one, use the **webix.Sparklines.getTemplate("type_name")** method.
 
 <h3 id="line">Line Sparklines</h3>
 
@@ -182,8 +182,75 @@ webix.ui({
 
 {{sample 60_pro/01_datatable/08_sparklines/07_tooltips.html}}
 
-Setting Sparklines Colors
+
+Customizing Sparklines
 -----------------
+
+You can customize sparklines by providing custom options in their configuration: 
+
+~~~js
+webix.Sparklines.getTemplate({
+ 	type:"bar", // sparkline type
+    paddingY:0, // other settings
+    origin:300
+});
+~~~
+
+{{sample 60_pro/01_datatable/08_sparklines/10_settings.html}} 
+
+The set of available options depends on the sparkline type in use: 
+
+**Line sparkline settings**
+
+- *paddingX* - left and right padding
+- *paddingY* - top and bottom paddings
+- *radius* - point radius
+- *eventRadius* - radius of a clickable area around the point
+- *minHeight* - minimal height
+- *css* - custom CSS class for the sparkline
+- *origin* - scale origin
+- *scale* - maximum scale value 
+- *color* - line color
+
+**Bar sparkline settings** 
+
+- *paddingX* - left and right padding
+- *paddingY*- top and bottom paddings
+- *width* - bar width
+- *margin* - bar margin
+- *minHeight* - minimal height
+- *origin* - scale origin
+- *itemCss* - bar css
+- *scale* - maximum scale value 
+- *color* - bar color
+- *negativeColor* - color of the bars below the X scale
+
+**Area sparkline settings**
+
+- *paddingX* - left and right padding
+- *paddingY* - top and bottom paddings
+- *radius* - point radius
+- *eventRadius* - radius of a clickable area around the point
+- *minHeight* - minimal height
+- *css* - custom CSS class for the sparkline
+- *color* - line color
+
+**Pie sparkline settings**
+
+- *paddingY* - top and bottom paddings
+- *css* - custom CSS class for the sparkline
+- *color* - pie color
+
+**Spline sparkline settings**
+
+- *paddingX* - left and right padding
+- *paddingY* - top and bottom paddings
+- *radius* - point radius
+- *eventRadius* - radius of a clickable area around the point
+- *minHeight* - minimal height
+- *css* - custom CSS class for the sparkline
+
+###Setting Sparklines Colors
 
 There are two variants of configuring sparklines colors using the *color* property:
 

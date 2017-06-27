@@ -23,10 +23,44 @@ Each skin requires including its specific CSS file.
 All CSS files for skins reside in the **codebase/skins** folder of the package.
 }}
 
-Skin JS File Config
+The Webix library provides a handy tool [Skin Builder](https://webix.com/skin-builder/) that allows you to choose some of default skins for your interface and
+apply your designer skills to create a custom skin.
+
+Using Skins
+-------------
+
+In order to apply the selected skin correctly, you should take two steps:
+
+1 . Include the .css file of the necessary skin into the document's head:
+
+~~~html
+<link href="../codebase/skins/clouds.css" rel="stylesheet" type="text/css">
+~~~
+
+2 . Choose either of the two ways given below:
+
+- the simplest and recommended way is to initialize the app within the [webix.ready() function](tutorials/quick_start_details.md#uiinitialization):
+
+~~~js
+webix.ready(function(){
+   webix.ui({..});
+});
+~~~
+
+- or you can also define a global *webix_skin* variable **before** including *webix.js* into the app: 
+
+~~~html
+<script>webix_skin = "clouds";</script>
+<script src="../../codebase/webix.js" type="text/javascript" charset="utf-8"></script>
+~~~
+
+Customizing Skins
 --------------------------
 
-Below you will find the full *skin.js* file for the Flat skin:
+There is a possibility to adjust the sizes of UI elements globally by changing skin JS settings.
+
+The default settings for each skin are stored in the `webix.skin.{skin_name}` object and include a number of options, which you can freely redefine.
+For instance, the default "flat" skin comes with the following options: 
 
 ~~~js
 webix.skin.flat = {
@@ -78,6 +112,21 @@ webix.skin.flat = {
 };
 ~~~
 
+You can also make changes in the currently used skin by accessing its settings via the `$active` keyword. 
+The example below shows how you can change the height of all inputs in your application:
+
+~~~js
+webix.skin.$active.inputHeight = 50;
+
+webix.ui({
+  rows:[
+    { view:"text", label:"Text"},
+    { view:"combo", label:"Combo" },
+    { view:"datepicker", label:"Date" },
+  ]
+});
+~~~
+
 Air 
 ------------------------
 To apply the **Air** skin, include the *air.css* file:
@@ -85,7 +134,7 @@ To apply the **Air** skin, include the *air.css* file:
 {{snippet
 Applying the 'Air' skin to the app
 }}
-~~~js
+~~~html
 <script src="../codebase/webix.js"></script>   
 <link href="../codebase/air.css" rel="stylesheet" type="text/css"> 
 ~~~
@@ -100,7 +149,7 @@ To apply the **AirCompact** skin, include the *aircompact.css* file:
 {{snippet
 Applying the 'AirCompact' skin to the app
 }}
-~~~js
+~~~html
 <script src="../codebase/webix.js"></script>   
 <link href="../codebase/skins/aircompact.css" rel="stylesheet" type="text/css"> 
 ~~~
@@ -114,7 +163,7 @@ To apply the **Clouds** skin, include the *clouds.css* file:
 {{snippet
 Applying the 'Clouds' skin to the app
 }}
-~~~js
+~~~html
 <script src="../codebase/webix.js"></script>   
 <link href="../codebase/skins/clouds.css" rel="stylesheet" type="text/css"> 
 ~~~
@@ -129,7 +178,7 @@ To apply the **Compact** skin, include the *compact.css* file:
 {{snippet
 Applying the 'Compact' skin to the app
 }}
-~~~js
+~~~html
 <script src="../codebase/webix.js"></script>   
 <link href="../codebase/skins/compact.css" rel="stylesheet" type="text/css"> 
 ~~~
@@ -144,7 +193,7 @@ To apply the **Contrast** skin, include the *contrast.css* file:
 {{snippet
 Applying the 'Contrast' skin to the app
 }}
-~~~js
+~~~html
 <script src="../codebase/webix.js"></script>   
 <link href="../codebase/contrast.css" rel="stylesheet" type="text/css"> 
 ~~~
@@ -160,7 +209,7 @@ To apply the **Flat** skin, include the default CSS file:
 {{snippet
 Applying the 'Flat' skin to the app
 }}
-~~~js
+~~~html
 <script src="../codebase/webix.js"></script>   
 <link href="../codebase/skins/webix.css" rel="stylesheet" type="text/css"> 
 ~~~
@@ -175,7 +224,7 @@ To apply the **Glamour** skin, include the *glamour.css* file:
 {{snippet
 Applying the 'Glamour' skin to the app
 }}
-~~~js
+~~~html
 <script src="../codebase/webix.js"></script>   
 <link href="../codebase/skins/glamour.css" rel="stylesheet" type="text/css"> 
 ~~~
@@ -190,7 +239,7 @@ To apply the **Light** skin, include the *light.css* file:
 {{snippet
 Applying the 'Light' skin to the app
 }}
-~~~js
+~~~html
 <script src="../codebase/webix.js"></script>   
 <link href="../codebase/skins/light.css" rel="stylesheet" type="text/css"> 
 ~~~
@@ -202,6 +251,7 @@ Applying the 'Light' skin to the app
 
 Material Design
 -----------------
+
 To apply the **Material Design** skin:
 
 - download it from a separate repository at [github.com](https://github.com/webix-hub/material-design-skin)  
@@ -211,7 +261,7 @@ To apply the **Material Design** skin:
 {{snippet
 Applying the 'Material Design' skin to the app
 }}
-~~~js
+~~~html
 <script src="../codebase/webix.js"></script>   
 <link href=".../codebase/skins/material.css" rel="stylesheet" type="text/css">
 ~~~
@@ -224,12 +274,13 @@ You can read a more [detailed article](desktop/material_design.md) about the usa
 
 Metro
 ------------------------------------
+
 To apply the **Metro** skin, include the *metro.css* file:
 
 {{snippet
 Applying the 'Metro' skin to the app
 }}
-~~~js
+~~~html
 <script src="../codebase/webix.js"></script>   
 <link href="../codebase/skins/metro.css" rel="stylesheet" type="text/css"> 
 ~~~
@@ -243,7 +294,7 @@ To apply the **Terrace** skin, include the *terrace.css* file:
 {{snippet
 Applying the 'Terrace' skin to the app
 }}
-~~~js
+~~~html
 <script src="../codebase/webix.js"></script>   
 <link href="../codebase/skins/terrace.css" rel="stylesheet" type="text/css"> 
 ~~~
@@ -257,7 +308,7 @@ To apply the **Touch** skin, include the *touch.css* file:
 {{snippet
 Applying the 'Touch' skin to the app
 }}
-~~~js
+~~~html
 <script src="../codebase/webix.js"></script>   
 <link href="../codebase/touch.css" rel="stylesheet" type="text/css"> 
 ~~~
@@ -272,7 +323,7 @@ To apply the **Web** skin, include the *web.css* file:
 {{snippet
 Applying the 'Web' skin to the app
 }}
-~~~js
+~~~html
 <script src="../codebase/webix.js"></script>   
 <link href="../codebase/skins/web.css" rel="stylesheet" type="text/css"> 
 ~~~

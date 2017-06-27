@@ -1,8 +1,7 @@
 headerRowHeight
 =============
 
-
-@short: sets the heigth of the header row
+@short: sets the height of the header row
 @type:  number
 
 @example:

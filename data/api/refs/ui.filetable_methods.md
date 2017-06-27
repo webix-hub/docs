@@ -10,7 +10,7 @@ Methods
 - api/link/ui.filetable_addspan.md - adds colspan or rowspan to the datatable
 - api/link/ui.filetable_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.filetable_adjustcolumn.md - adjusts a column to the width of the content
-- api/link/ui.filetable_adjustrowheight.md - autodetect height of rows in datatable
+- api/link/ui.filetable_adjustrowheight.md - adjusts row height to cell content
 - api/link/ui.filetable_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.filetable_bind.md - binds components
 - api/link/ui.filetable_blockevent.md - temporarily blocks triggering of ALL events of the calling object
@@ -87,7 +87,7 @@ Methods
 - api/link/ui.filetable_isenabled.md - checks whether the view is enabled
 - api/link/ui.filetable_isvisible.md - checks whether the view is visible
 - api/link/ui.filetable_load.md - loads data from an external data source.
-- api/link/ui.filetable_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
+- api/link/ui.filetable_loadnext.md - sends a request to load the specified number of records to the end of the client-side dataset or to the specified position
 - api/link/ui.filetable_locate.md - converts an HTML node or event object to in-table position
 - api/link/ui.filetable_mapcells.md - applies the callback to a range of cells
 - api/link/ui.filetable_mapevent.md - routes events from one object to another
@@ -135,7 +135,7 @@ Methods
 - api/link/ui.filetable_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.filetable_ungroup.md - ungroups data
 - api/link/ui.filetable_updateitem.md - updates the data item with new properties
-- api/link/ui.filetable_validate.md - validates one record or all dataset against validation rules
+- api/link/ui.filetable_validate.md - validates one record or all dataset against the validation rules
 - api/link/ui.filetable_validateeditor.md - validates data in currently active editor
 }}
 

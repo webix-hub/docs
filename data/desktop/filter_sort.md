@@ -179,12 +179,14 @@ Sorting is enabled by the **sort()** function that takes data item, sorting dire
 
 There are several types that define the way of sorting depending on the type of data:
 
-- int;
-- [date](datatable/sorting.md#dates);
-- string;
-- string_strict (case-sensitive 'string');
-- [text](datatable/sorting.md#visible_text) (visible text including template);
-- [custom sorting type](desktop/filter_sort.md#addingcustomsortingtype).
+- int - compares numeric values;
+- [date](datatable/sorting.md#dates) - compares dates;
+- string - compares string values;
+- string_strict- case-sensitive "string";
+- [text](datatable/sorting.md#visible_text)- compares visible item text (including template);
+- server- issues a server side request for a sorted dataset;
+- raw - basic sorter with simple comparison (a>b and vice versa);
+- or, you can set a [custom sorting type](desktop/filter_sort.md#addingcustomsortingtype).
 
 Two ways of sorting are available for data components:
 

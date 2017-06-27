@@ -1,6 +1,9 @@
 Headers and Footers
 ===================
-Headers and footers in DataTable are enabled by the [header](api/ui.datatable_header_config.md), [footer](api/ui.datatable_footer_config.md) parameters and configured by attributes **header**, **footer** in the [columns](api/ui.datatable_columns_config.md) parameter.
+
+Headers and footers in DataTable are enabled by the [header](api/ui.datatable_header_config.md) and 
+[footer](api/ui.datatable_footer_config.md) parameters and configured by the attributes **header** and **footer** 
+in the [columns](api/ui.datatable_columns_config.md) parameter.
 
 Header can be presented as:
 
@@ -51,7 +54,7 @@ columns:[
 
 Multiline header
 -------------------
-You should use 'array' definition to split header into several subheaders (each value of the array specifies a single subheader).
+You should use 'array' definition to split header into several sub-headers (each value of the array specifies a single sub-header).
 
 <img src='datatable/multiline_header.png'/>
 
@@ -68,13 +71,13 @@ columns:[
 ]
 ~~~
 
-Note, you can specify different number of subheaders for different columns (number of subheaders is equal to number of values in array).
+Note, you can specify different number of sub-headers for different columns (number of sub-headers is equal to number of values in array).
 
 {{sample 15_datatable/12_header_footer/03_multiline.html }}
 
 Complex header containing colspans (rowspans), built-in filters
 -------------------------------------------------------------
-To specify colspan(rowspan) in the header or put filter into it, you should specify the header as an object or array of objects.
+To specify colspan (rowspan) in the header or put filter into it, you should specify the header as an object or array of objects.
 
 When the header is presented as an object, it has the following properties:
 
@@ -98,7 +101,7 @@ Using colspans
 
 ~~~js
 columns:[
-	{ id:"title", header:["Film title", {text:"Subheader", colspan:3}]},
+	{ id:"title", header:["Film title", {text:"Sub-header", colspan:3}]},
 	{ id:"year",  header:["Year", ""]},
 	{ id:"votes", header:["Votes", ""]}
 ]
@@ -345,9 +348,9 @@ columns:[
 Custom Header and Footer Content
 --------------------------------------------
 
-All content elements that can be integrated to the datatable header or footer are stored in a **webix.ui.datafilter** object and feature the same configuration pattern. 
+All content elements that can be integrated into the datatable header or footer are stored in a **webix.ui.datafilter** object and feature the same configuration pattern. 
 
-There are two mandatory methods **refresh()** that provides logic and **render()** that draws an element. Their parameters include: 
+There are two mandatory methods: **refresh()** that provides logic and **render()** that draws an element. Their parameters include: 
 
 - **master** - component object (here: datatable);
 - **column** - related column object;
@@ -379,20 +382,16 @@ webix.ui.datafilter.avgColumn = webix.extend({
 
 ###Creating Custom Content Element
 
-A custom content element can be created totally from the scratch.
+A custom content element can be created totally from scratch.
  
 It must possess the following mandatory **methods** (declare them even if you don't need any specific performance from them): 
 
-- **getValue** - gets the current value of an element;
+- **getValue()** - gets the current value of an element;
 - **setValue()** - sets the value to an element;
 - **render()** - paints an element;
 - **refresh()** - defines dynamic performance of an element. 
 
 And you may define as many methods as you need.
-
-A content element can feature the following **properties**: 
-
-- **trackCells** (boolean) -  indicates whether an element should be refreshed each time component data changes ( if *true*, *refresh()* method of a content element will be called automatically). 
 
 ~~~js
 webix.ui.datafilter.customFilterName = {
@@ -410,11 +409,81 @@ webix.ui.datafilter.customFilterName = {
 };
 ~~~
 
+A content element can feature the following **properties**: 
+
+- **trackCells** (boolean) -  indicates whether an element should be refreshed each time component data changes 
+(if *true*, the *refresh()* method of a content element will be called automatically). 
+
 {{sample 15_datatable/12_header_footer/11_custom_content.html }}
+
+
+<h3 id="customheaderfilter">Adding Custom Built-in Filter into the Header</h3>
+
+You can embed a filter into the header of the datatable as a custom content element.
+
+To add a custom filter into the header, you need to implement the following steps:
+
+- set a new filter into the [**datafilter object**](datatable/headers_footers.md#customheaderandfootercontent) to integrate it with the header and add an input for it
+- set the **getValue()** method that will return the value of the input
+- use the [**refresh()** method](datatable/headers_footers.md#customheaderandfootercontent) to provide the filtering logic in dynamics. 
+Inside of the method you need to register the added filter and attach a handler that will trigger the [filterbyAll()](datatable/filtering.md#filteringlogic) method
+- apply the [**render()**](datatable/headers_footers.md#customheaderandfootercontent) method to draw the newly created filter
+
+
+~~~js
+webix.ui.datafilter.customFilterName = {
+  getInputNode:function(node){ 
+    return node.firstChild ? node.firstChild.firstChild : { value:"" }; 
+  },
+  setValue:function(node, value){
+    this.getInputNode(node).value = value.toString();
+  },
+  // returns filtering parameter
+  getValue:function(node){ 
+    return this.getInputNode(node).value;
+  },
+  refresh: function(master, node, columnObj){
+    // declare a built-in datatable filter
+    master.registerFilter(node, columnObj, this);
+    // event which will trigger filtering
+    node.querySelector("input").onkeyup = function(){
+      master.filterByAll()
+    }  
+  },
+  render:function(master, column){
+    var html = "<input type='text' style='width:100%' id='cb1'>";
+    return html;
+  }
+};
+~~~
+
+- specify your filter as a value of [the **content** property of the **header attribute**](datatable/filtering.md#settingandconfiguringfilter) 
+
+~~~js
+webix.ui({ 
+  view:"datatable", 
+  columns:[
+    { 
+      id:"title", 
+      header:[{content:"customFilterName"}], 
+      fillspace:1
+    },
+    { 
+      id:"year", 
+      header:[{content:"textFilter"}], 
+      fillspace:1
+    }
+  ],
+  data:grid_data
+});
+~~~
+
+In the above example we have added two filters into the datatable header: a custom filter and a standard text filter.
+Data will be refiltered each time the value in any of the filters changes.
 
 @test: test
 @keyword:
-	header, footer,colspan,rowspan,filter,subheader,multiline, counter
+	header, footer,colspan,rowspan,filter,sub-header,multiline, counter
 @index:
 	datatable/headermenu.md
 

@@ -31,7 +31,7 @@ The Webix library includes ready-made JavaScript widgets intended for solving ta
 		    </h4>
 		    An integration extension that allows you to add the mobile version of the scheduler to the app.
 		</td>
-		<td class='topic_description' style="text-align: center; padding:20px;"><img src="desktop/mob_calendar.png"></td>
+		<td class='topic_description' style="text-align: center; padding:20px;"><a href="desktop/mobile_scheduler.md"><img src="desktop/mob_calendar.png"></a></td>
 	</tr>
     <tr>
 		<td id="design" class='topics' style="vertical-align:text-top;">
@@ -40,7 +40,7 @@ The Webix library includes ready-made JavaScript widgets intended for solving ta
 		    </h4>
 		    A component that helps you to visualize and optimize your workflow.
 		</td>
-		<td class='topic_description' style="text-align: center; padding:20px;"><img src="desktop/kanban_board.png"></td>
+		<td class='topic_description' style="text-align: center; padding:20px;"><a href="desktop/kanban_board.md"><img src="desktop/kanban_board.png"></a></td>
 	</tr>
     <tr>
 		<td id="design" class='topics' style="vertical-align:text-top;">
@@ -49,7 +49,7 @@ The Webix library includes ready-made JavaScript widgets intended for solving ta
 		    </h4>
 		    A component that helps you to navigate folders and files in a handy way.
 		</td>
-		<td class='topic_description' style="text-align: center; padding:20px;"><img src="desktop/file_manager.png"></td>
+		<td class='topic_description' style="text-align: center; padding:20px;"><a href="desktop/file_manager.md"><img src="desktop/file_manager.png"></a></td>
 	</tr>
     <tr>
 		<td id="design" class='topics' style="vertical-align:text-top;">
@@ -58,7 +58,7 @@ The Webix library includes ready-made JavaScript widgets intended for solving ta
 		    </h4>
 		    A component that allows creating various customizable tables that keep data locally.
 		</td>
-		<td class='topic_description' style="text-align: center; padding:20px;"><img src="desktop/spreadsheet.png"></td>
+		<td class='topic_description' style="text-align: center; padding:20px;"><a href="desktop/spreadsheet.md"><img src="desktop/spreadsheet.png"></a></td>
 	</tr>
   </tbody>
 </table>

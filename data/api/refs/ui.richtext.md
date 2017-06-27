@@ -57,7 +57,7 @@ var richtext = webix.ui({
 - api/link/ui.richtext_mapevent.md - routes events from one object to another
 - api/link/ui.richtext_reconstruct.md - rebuilds the layout
 - api/ui.richtext_refresh.md - repaints richtext editor
-- api/link/ui.richtext_removeview.md - removes view from layout-like component
+- api/link/ui.richtext_removeview.md - removes the specified view of a layout-like component
 - api/link/ui.richtext_resize.md - adjusts the view to a new size
 - api/link/ui.richtext_resizechildren.md - resizes all children of the called component
 - api/ui.richtext_setvalue.md - sets a new value for the richeditor control

@@ -53,7 +53,6 @@ Events
 - api/link/ui.excelviewer_oncheck_event.md - fires when a checkbox is checked or unchecked in the datatable item
 - api/link/ui.excelviewer_oncollectvalues_event.md - fires after datatable has collected options
 - api/link/ui.excelviewer_oncolumnresize_event.md - fires when width of column was changed
-- api/ui.excelviewer_oncolumnresizeaction_event.md - 
 - api/link/ui.excelviewer_ondatarequest_event.md - fires when data from the server is requested for linear data structures (List, DataTable, DataView etc.) to implement dynamic data loading
 - api/link/ui.excelviewer_ondataupdate_event.md - fires when data item is in update process
 - api/link/ui.excelviewer_ondestruct_event.md - occurs when component destroyed
@@ -70,6 +69,7 @@ Events
 - api/link/ui.excelviewer_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.excelviewer_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.excelviewer_onmouseout_event.md - fires when the mouse was moved out from the specified item
+- api/link/ui.excelviewer_onpaste_event.md - fires when the <a href="api/tablepaste_clipboard_config.md">clipboard</a> is enabled and the user presses CTRL+V keys combination
 - api/link/ui.excelviewer_onresize_event.md - fires when the width or height of DataTable was changed
 - api/link/ui.excelviewer_onrowresize_event.md - fires when height of row was changed
 - api/link/ui.excelviewer_onscrollx_event.md - fires when the user scrolls the table left or right
@@ -144,7 +144,6 @@ Events
 - api/link/ui.excelviewer_oncheck_event.md
 - api/link/ui.excelviewer_oncollectvalues_event.md
 - api/link/ui.excelviewer_oncolumnresize_event.md
-- api/ui.excelviewer_oncolumnresizeaction_event.md
 - api/link/ui.excelviewer_ondatarequest_event.md
 - api/link/ui.excelviewer_ondataupdate_event.md
 - api/link/ui.excelviewer_ondestruct_event.md
@@ -161,6 +160,7 @@ Events
 - api/link/ui.excelviewer_onmousemove_event.md
 - api/link/ui.excelviewer_onmousemoving_event.md
 - api/link/ui.excelviewer_onmouseout_event.md
+- api/link/ui.excelviewer_onpaste_event.md
 - api/link/ui.excelviewer_onresize_event.md
 - api/link/ui.excelviewer_onrowresize_event.md
 - api/link/ui.excelviewer_onscrollx_event.md

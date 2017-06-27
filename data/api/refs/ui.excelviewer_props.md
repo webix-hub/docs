@@ -28,7 +28,7 @@ Properties
 - api/link/ui.excelviewer_editvalue_config.md - defines which data item is editable (in case of several data item in the cell/line)
 - api/link/ui.excelviewer_editable_config.md - allows/denies editing in the view
 - api/link/ui.excelviewer_editaction_config.md - defines the action on which editors will be opened
-- api/ui.excelviewer_excelheader_config.md - 
+- api/ui.excelviewer_excelheader_config.md - sets the first row of the Excel table as a column header
 - api/link/ui.excelviewer_externaldata_config.md - allows defining custom 'move' logic for the component.
 - api/link/ui.excelviewer_filtermode_config.md - defines filtering rules in tree-like components
 - api/link/ui.excelviewer_fixedrowheight_config.md - defines whether the height should be fixed for all rows or can vary
@@ -36,7 +36,7 @@ Properties
 - api/link/ui.excelviewer_form_config.md - linked form
 - api/link/ui.excelviewer_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.excelviewer_header_config.md - enables/disables the header in DataTable (enabled, by default)
-- api/link/ui.excelviewer_headerrowheight_config.md - sets the heigth of the header row
+- api/link/ui.excelviewer_headerrowheight_config.md - sets the height of the header row
 - api/link/ui.excelviewer_headermenu_config.md - adds a headermenu to control column visibility
 - api/link/ui.excelviewer_height_config.md - sets the height of the component
 - api/link/ui.excelviewer_hidden_config.md - defines whether the view will be hidden initially
@@ -82,7 +82,8 @@ Properties
 - api/link/ui.excelviewer_subrowheight_config.md - automatically adjusts the subrow's height to the size of the text
 - api/link/ui.excelviewer_subrow_config.md - sets a subrow template
 - api/link/ui.excelviewer_subview_config.md - adds a subview configuration into datatable
-- api/ui.excelviewer_toolbar_config.md - 
+- api/link/ui.excelviewer_templatecopy_config.md - sets the template according to which data will be copied to clipboard from each currently selected cell
+- api/ui.excelviewer_toolbar_config.md - sets the id of the related excel toolbar, if it is used
 - api/link/ui.excelviewer_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.excelviewer_topsplit_config.md - defines the number of rows that will be "frozen" at the top of datatable
 - api/link/ui.excelviewer_type_config.md - used for configuring presentation of items
@@ -172,6 +173,7 @@ Properties
 - api/link/ui.excelviewer_subrowheight_config.md
 - api/link/ui.excelviewer_subrow_config.md
 - api/link/ui.excelviewer_subview_config.md
+- api/link/ui.excelviewer_templatecopy_config.md
 - api/ui.excelviewer_toolbar_config.md
 - api/link/ui.excelviewer_tooltip_config.md
 - api/link/ui.excelviewer_topsplit_config.md

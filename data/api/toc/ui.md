@@ -400,6 +400,11 @@ table.webixtoc td{
         <td>a color palette</td>
     </tr>
     <tr>
+    	<td> <img src="api/toc/excelviewer.png"/> </td>
+        <td>api/refs/ui.excelviewer.md </td>
+        <td>a tool for viewing Excel files</td>
+    </tr>
+    <tr>
     	<td> <img src="api/toc/googlemap.png"/> </td>
         <td> api/refs/ui.google-map.md </td>
         <td>a datastore-based widget for rendering geographical data with Google Maps</td>
@@ -417,7 +422,12 @@ table.webixtoc td{
     <tr>
     	<td> <img src="api/toc/pdfviewer.png"/> </td>
         <td>api/refs/ui.pdfviewer.md </td>
-        <td>page navigation controls</td>
+        <td>a tool for viewing PDF files</td>
+    </tr>
+     <tr>
+    	<td> <img src="api/toc/querybuilder.png"/> </td>
+        <td>api/refs/ui.querybuilder.md </td>
+        <td>a widget for building complex filters</td>
     </tr>
     <tr>
     	<td> <img src="api/toc/resizer.png"/> </td>
@@ -523,6 +533,7 @@ table.webixtoc td{
 - api/refs/ui.daterangesuggest.md
 - api/refs/ui.datepicker.md
 - api/refs/ui.dbllist.md
+- api/refs/ui.excelviewer.md
 - api/refs/ui.fieldset.md
 - api/refs/ui.filemanager.md
 - api/refs/ui.form.md
@@ -552,6 +563,7 @@ table.webixtoc td{
 - api/refs/ui.popup.md
 - api/refs/ui.portlet.md
 - api/refs/ui.property.md
+- api/refs/ui.querybuilder.md
 - api/refs/ui.radio.md
 - api/refs/ui.rangechart.md
 - api/refs/ui.rangeslider.md

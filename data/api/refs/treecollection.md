@@ -47,7 +47,7 @@ var store = new webix.TreeCollection({ url:"tree.php" });
 - api/link/treecollection_isvisible.md - returns true if current view is visible
 - api/link/treecollection_load.md - loads data from an external data source.
 - api/link/treecollection_loadbranch.md - loads data to the specified branch, as direct children of the node with the id provided
-- api/link/treecollection_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
+- api/link/treecollection_loadnext.md - sends a request to load the specified number of records to the end of the client-side dataset or to the specified position
 - api/link/treecollection_mapevent.md - routes events from one object to another
 - api/link/treecollection_move.md - moves the specified item to the new position
 - api/link/treecollection_movebottom.md - moves the specified item to the last position
@@ -66,7 +66,7 @@ var store = new webix.TreeCollection({ url:"tree.php" });
 - api/link/treecollection_unbind.md - breaks "bind" link
 - api/link/treecollection_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/treecollection_updateitem.md - updates the data item with new properties
-- api/link/treecollection_validate.md - validates one record or all dataset against validation rules
+- api/link/treecollection_validate.md - validates one record or all dataset against the validation rules
 }}
 
 

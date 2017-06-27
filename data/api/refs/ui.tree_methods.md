@@ -63,7 +63,7 @@ Methods
 - api/link/ui.tree_isvisible.md - checks whether the view is visible
 - api/link/ui.tree_load.md - loads data from an external data source.
 - api/link/ui.tree_loadbranch.md - loads data to the specified branch, as direct children of the node with the id provided
-- api/link/ui.tree_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
+- api/link/ui.tree_loadnext.md - sends a request to load the specified number of records to the end of the client-side dataset or to the specified position
 - api/link/ui.tree_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.tree_mapevent.md - routes events from one object to another
 - api/link/ui.tree_move.md - moves the specified item to the new position
@@ -93,7 +93,7 @@ Methods
 - api/link/ui.tree_unselect.md - removes selection from the specified item
 - api/link/ui.tree_unselectall.md - removes selection from all items
 - api/link/ui.tree_updateitem.md - updates the data item with new properties
-- api/link/ui.tree_validate.md - validates one record or all dataset against validation rules
+- api/link/ui.tree_validate.md - validates one record or all dataset against the validation rules
 }}
 
 @index:

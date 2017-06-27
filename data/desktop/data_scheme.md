@@ -199,7 +199,7 @@ var mylist = webix.ui({
  
 var items = mylist.data.serialize(); 
 // serialize() is the method of the DataStore component
-// that's we use the api/atomdataloader_data_config.md property to access it
+// that's why we use the api/atomdataloader_data_config.md property to access it
 ~~~
 
 {{note

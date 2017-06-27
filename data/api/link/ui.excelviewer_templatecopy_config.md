@@ -1,0 +1,1 @@
+@link: api/tablepaste_templatecopy_config.md

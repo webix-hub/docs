@@ -5,6 +5,15 @@ Excel Viewer
 The widget is available in the **Webix Pro** edition.
 }}
 
+API Reference
+--------------
+
+- [Methods, properties and events](api/refs/ui.excelviewer.md)
+- [Samples](http://docs.webix.com/samples/60_pro/10_viewers/)
+
+Overview
+-----------
+
 ExcelViewer is an extension tool intended for viewing Excel files.
 
 <img style="display:block; margin-left:auto;margin-right:auto;" src="desktop/excelviewer_front.png">

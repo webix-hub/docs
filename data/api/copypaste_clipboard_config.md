@@ -27,6 +27,6 @@ tree = new webix.ui({
 @template:	api_config
 @descr:
 
-If cliboard is defined as *"custom"*, you need to specify [onPaste](api/copypaste_onpaste_event.md) behavior attached to the same-name event. 
+If clipboard is defined as *"custom"*, you need to specify [onPaste](api/copypaste_onpaste_event.md) behavior attached to the same-name event. 
 
 

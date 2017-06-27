@@ -25,8 +25,6 @@ $$("mydatatable").openSub(id);
 
 
 @template:	api_method
-@descr:
-
 @edition:pro
 
 @seolinktop: [ui widget library](https://webix.com)

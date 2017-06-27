@@ -19,17 +19,18 @@ By default, colors are presented in a rainbow-like manner. The detalization leve
 
 ##Initialization
 
-Colorboard is used in conjunction with a [colorpicker](desktop/colorpicker.md) control. In such a case, you needn't to initialize a colorboard since it will appear as soon as you click a control. 
+Colorboard is used in conjunction with the desktop/colorpicker.md control. 
+In such a case, you needn't initialize a colorboard, since it will appear as soon as you click the control. 
 
 When used separately, colorboard is initialized in the following way:
 
 ~~~js
 webix.ui({
-		view:"colorboard",
-		cols	:30,
-		rows	:30,
-		width	:400,
-		height	:400
+	view: "colorboard",
+	cols: 30,
+	rows: 30,
+	width: 400,
+	height: 400
 });
 ~~~
 {{sample 24_colorpicker/01_initialization.html }}
@@ -99,8 +100,8 @@ In addition, color values can be logged once **val**, **control** and **ev** par
 
 ~~~js
 function doLog(val, control, ev){
-		webix.message(this.config.id + " - " + val);
-	}
+	webix.message(this.config.id + " - " + val);
+}
 ~~~
 
 

@@ -37,7 +37,7 @@ Properties
 - api/link/ui.pivot_padding_config.md - defines the space between the element borders and content (applies the specified value to all sides).
 - api/link/ui.pivot_paddingx_config.md - sets the right and left padding (applies the specified value to both sides)
 - api/link/ui.pivot_paddingy_config.md - sets the top and bottom padding (applies the specified value to both sides)
-- api/ui.pivot_ping_config.md - 
+- api/ui.pivot_ping_config.md - aborts long processes
 - api/ui.pivot_popup_config.md - an object with the properties of the configuration popup
 - api/ui.pivot_profile_config.md - enables profiling (for development stage)
 - api/ui.pivot_readonly_config.md - disables the possibility to change pivot configuration settings
@@ -47,7 +47,7 @@ Properties
 - api/link/ui.pivot_responsive_config.md - enables responsive mode for horizontal layout
 - api/link/ui.pivot_rows_config.md - array of views objects arranged vertically
 - api/link/ui.pivot_scheme_config.md - defines schemes for data processing
-- api/ui.pivot_stablerowid_config.md - 
+- api/ui.pivot_stablerowid_config.md - enables the mode in which rows and columns' ids are saved based on the specified grouping rule
 - api/ui.pivot_structure_config.md - defines initial display and analysis pattern
 - api/ui.pivot_totalcolumn_config.md - calculates the total sum for each row
 - api/link/ui.pivot_type_config.md - defines the layout borders

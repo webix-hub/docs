@@ -36,6 +36,7 @@ common helpers
 - api/_message.md - shows a message box
 - api/_modalbox.md - creates a modal box
 - api/_once.md - allows to call code only once
+- api/_print.md - prints a view according to the specified settings
 - api/_proto.md - merges the contents of several objects together into the first object
 - api/_protoui.md - merges the contents of several objects together into the first object and creates from it a new view
 - api/_proxy.md - creates proxy object

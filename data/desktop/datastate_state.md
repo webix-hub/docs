@@ -1,7 +1,8 @@
 Saving and Restoring Component State
 ===========================
 
-UIManager helps save and restore only the outer view parameters while inner ones like selection and scrolling direction are saved within the [DataState](api__refs__datastate.html) module. 
+UIManager helps save and restore only the outer view parameters while inner ones like selection and scrolling direction are saved within the 
+[DataState](api/refs/datastate.md) module. 
 
 Webix components that use this module feature the saving and restoring functionality as well: 
 
@@ -11,9 +12,9 @@ Webix components that use this module feature the saving and restoring functiona
 
 ##Saving Datatable State
 
-Webix [datatable](datatable/index.md)  provides a possibility to store/restore the state of the tree to cookie, local or session storage.
+Webix [datatable](datatable/index.md) provides a possibility to store/restore the state of the grid to cookie, local or session storage.
 
-The state object will contain information about current datatable state:
+The state object will contain information about the current datatable state:
 
 - properties (keys) of each data item;
 - column sizes;
@@ -33,7 +34,7 @@ The state object will contain information about current datatable state:
 }    
 ~~~
 
-- To save the current tree state to the local storage you should call the api/link/ui.datatable_getstate.md method as in:
+- To save the current datatable state to the local storage you should call the api/link/ui.datatable_getstate.md method as in:
 
 ~~~js
 var state = grid.getState();
@@ -52,9 +53,9 @@ if (state)
 
 ##Saving Treetable State
 
-Webix [treetable](desktop/treetable.md)  provides a possibility to store/restore the state of the tree to cookie, local or session storage.
+Webix [treetable](desktop/treetable.md) provides a possibility to store/restore the state of the treetable to cookie, local or session storage.
 
-The state object will contain information about current treetable state:
+The state object will contain information about the current treetable state:
 
 - IDs of currently hidden data items;
 - properties (keys) of each data item;
@@ -74,7 +75,7 @@ The state object will contain information about current treetable state:
 }    
 ~~~
 
-- To save the current tree state to the local storage you should call the api/link/ui.treetable_getstate.md method as in:
+- To save the current treetable state to the local storage you should call the api/link/ui.treetable_getstate.md method as in:
 
 ~~~js
 var state = grid.getState();
@@ -93,7 +94,7 @@ if (state)
 
 ##Saving Tree State
 
-Webix [tree](datatree/index.md)  provides a possibility to store/restore the state of the tree to cookie, local or session storage.
+Webix [tree](datatree/index.md) provides a possibility to store/restore the state of the tree to cookie, local or session storage.
 
 The tree state object will contain information about opened and selected nodes:
 

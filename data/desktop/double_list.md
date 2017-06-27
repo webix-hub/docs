@@ -207,6 +207,45 @@ You can apply the [List API](api/refs/ui.list.md) to separate lists of the Doubl
 $$("$dbllist1").$$("left").disable();
 ~~~
 
+##Adding DoubleList into Form 
+
+The DoubleList widget can be added into a form with the help of the desktop/forminput.md control.
+
+You need to create an instance of doublelist and put it into the body of the forminput control. 
+
+~~~js
+// creating a doublelist view
+var list1 = { 
+    view:"dbllist", 
+    data:[
+        {id:"1", value:"Guest"},
+        {id:"2", value:"Member"},
+        {id:"3", value:"Moderator"}     
+    ]
+};
+
+// adding the doublelist view into the forminput
+webix.ui({
+    view:"form", id:"form1",
+   	rows:[
+        { view:"text", label:"User Name", labelAlign:"right", labelWidth: 140 },
+        { view:"forminput", name:"access", body:list1, labelWidth: 140,
+          labelAlign:"right", label:"Access levels" }               
+    ]
+});
+~~~
+
+In order to set a value for the doublelist, you should use the api/link/ui.form_setvalues.md method of the Form and refer to the forminput by its name:
+
+~~~js
+// setting value for the doublelist
+$$("form1").setValues({
+    access:"1,2"              
+});
+~~~
+
+{{sample 13_form/01_controls/25_dbllist.html}}
+
 ##Related Articles
 
 - [DoubleList CSS Image Map](desktop/doublelist_css.md)

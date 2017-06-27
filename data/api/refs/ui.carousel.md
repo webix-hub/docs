@@ -33,6 +33,7 @@ var carousel = webix.ui({
 <div class='h2'>Methods</div>
 
 {{api
+- api/ui.carousel_addview.md - adds a new view to a carousel
 - api/link/ui.carousel_adjust.md - adjusts the component to the size of the parent HTML container
 - api/ui.carousel_adjustscroll.md - adjusts scrolling direction to screen mode (vertical or horizontal)
 - api/link/ui.carousel_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
@@ -57,6 +58,7 @@ var carousel = webix.ui({
 - api/link/ui.carousel_isenabled.md - checks whether the view is enabled
 - api/link/ui.carousel_isvisible.md - checks whether the view is visible
 - api/link/ui.carousel_mapevent.md - routes events from one object to another
+- api/ui.carousel_removeview.md - removes the specified view of a carousel
 - api/link/ui.carousel_resize.md - adjusts the view to a new size
 - api/ui.carousel_scrollto.md - scrolls the carousel and scrollview container to a certain position
 - api/ui.carousel_setactive.md - selects the item with the specified id

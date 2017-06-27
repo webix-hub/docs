@@ -45,7 +45,7 @@ Events
 - api/link/ui.filelist_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.filelist_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.filelist_onmouseout_event.md - fires when the mouse was moved out from the specified item
-- api/link/ui.filelist_onpaste_event.md - fires when the user presses CTRL+V keys combination
+- api/link/ui.filelist_onpaste_event.md - fires when the <a href="api/copypaste_clipboard_config.md">clipboard</a> is enabled and the user presses CTRL+V keys combination
 - api/link/ui.filelist_onselectchange_event.md - fires after selection state was changed
 - api/link/ui.filelist_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.filelist_onswipey_event.md - occurs on a vertical swipe movement

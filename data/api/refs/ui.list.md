@@ -28,7 +28,7 @@ var list = webix.ui({
 - [Overview of the List Widget](desktop/list.md)
 - [Samples](http://docs.webix.com/samples/05_list/index.html)
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/selectionmodel.md">SelectionModel</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/ui.proto.md">ui.proto</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/copypaste.md">CopyPaste</a></div>
+<a href="api/refs/customprint.md">CustomPrint</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/selectionmodel.md">SelectionModel</a>, <a href="api/refs/scrollable.md">Scrollable</a>, <a href="api/refs/ui.proto.md">ui.proto</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/renderstack.md">RenderStack</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/copypaste.md">CopyPaste</a></div>
 
 
 <div class='h2'>Methods</div>
@@ -81,7 +81,7 @@ var list = webix.ui({
 - api/link/ui.list_isselected.md - checks whether the specified item is selected or not
 - api/link/ui.list_isvisible.md - checks whether the view is visible
 - api/link/ui.list_load.md - loads data from an external data source.
-- api/link/ui.list_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
+- api/link/ui.list_loadnext.md - sends a request to load the specified number of records to the end of the client-side dataset or to the specified position
 - api/link/ui.list_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.list_mapevent.md - routes events from one object to another
 - api/link/ui.list_move.md - moves the specified item to the new position
@@ -110,7 +110,7 @@ var list = webix.ui({
 - api/link/ui.list_unselect.md - removes selection from the specified item
 - api/link/ui.list_unselectall.md - removes selection from all items
 - api/link/ui.list_updateitem.md - updates the data item with new properties
-- api/link/ui.list_validate.md - validates one record or all dataset against validation rules
+- api/link/ui.list_validate.md - validates one record or all dataset against the validation rules
 }}
 
 
@@ -156,7 +156,7 @@ var list = webix.ui({
 - api/link/ui.list_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.list_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.list_onmouseout_event.md - fires when the mouse was moved out from the specified item
-- api/link/ui.list_onpaste_event.md - fires when the user presses CTRL+V keys combination
+- api/link/ui.list_onpaste_event.md - fires when the <a href="api/copypaste_clipboard_config.md">clipboard</a> is enabled and the user presses CTRL+V keys combination
 - api/link/ui.list_onselectchange_event.md - fires after selection state was changed
 - api/link/ui.list_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.list_onswipey_event.md - occurs on a vertical swipe movement
@@ -234,6 +234,7 @@ var list = webix.ui({
 
 
 {{api
+- api/link/ui.list_$customprint_other.md - generates custom HTML to print instead of the widget's HTML and invokes printing
 - api/link/ui.list_$drag_other.md - method called when drag operation initiated
 - api/link/ui.list_$draghtml_other.md - defines how dragged item will look
 - api/link/ui.list_$dragin_other.md - method called when item moved on possible drop landing during dnd

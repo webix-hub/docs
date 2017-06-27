@@ -57,7 +57,7 @@ Methods
 - api/link/ui.organogram_isvisible.md - checks whether the view is visible
 - api/link/ui.organogram_load.md - loads data from an external data source.
 - api/link/ui.organogram_loadbranch.md - loads data to the specified branch, as direct children of the node with the id provided
-- api/link/ui.organogram_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
+- api/link/ui.organogram_loadnext.md - sends a request to load the specified number of records to the end of the client-side dataset or to the specified position
 - api/link/ui.organogram_locate.md - gets the id of an item from the specified HTML event
 - api/link/ui.organogram_mapevent.md - routes events from one object to another
 - api/link/ui.organogram_open.md - opens the branch with the specified id

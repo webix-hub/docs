@@ -74,6 +74,7 @@ Events
 - api/link/ui.treetable_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.treetable_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.treetable_onmouseout_event.md - fires when the mouse was moved out from the specified item
+- api/link/ui.treetable_onpaste_event.md - fires when the <a href="api/tablepaste_clipboard_config.md">clipboard</a> is enabled and the user presses CTRL+V keys combination
 - api/link/ui.treetable_onresize_event.md - fires when the width or height of DataTable was changed
 - api/link/ui.treetable_onrowresize_event.md - fires when height of row was changed
 - api/link/ui.treetable_onscrollx_event.md - fires when the user scrolls the table left or right
@@ -169,6 +170,7 @@ Events
 - api/link/ui.treetable_onmousemove_event.md
 - api/link/ui.treetable_onmousemoving_event.md
 - api/link/ui.treetable_onmouseout_event.md
+- api/link/ui.treetable_onpaste_event.md
 - api/link/ui.treetable_onresize_event.md
 - api/link/ui.treetable_onrowresize_event.md
 - api/link/ui.treetable_onscrollx_event.md

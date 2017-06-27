@@ -34,7 +34,8 @@ Setting and Configuring Filter
 
 ###Setting a filter
 
-Built-in filter is set by property **content** of the **header/footer** attribute. Note, to add a filter to the header(footer), the header(footer) must be specified as array.
+A built-in filter is set by the **content** property of the **header/footer** attribute. 
+Note, to add a filter to the header (footer), the header (footer) must be specified as an array.
 
 ~~~js
 columns:[
@@ -348,7 +349,8 @@ all criteria at once.
 
 <img src='datatable/filtering_or_logic.png'/>
 
-In case you want to apply OR logic (to display records that meet at least one of criteria) you should redefine the [filterByAll()](api/ui.datatable_filterbyall.md) method. For example, it can look like this:
+In case you want to apply OR logic (to display records that meet at least one of criteria) you should redefine the
+[filterByAll()](api/ui.datatable_filterbyall.md) method. For example, it can look like this:
 
 {{snippet
 Implementing OR logic for filters
@@ -385,7 +387,8 @@ grid.filterByAll=function(){
 ##Custom filtering rules
 
 A filter is a set of filtering rules applied to specific content. When you specify a filter you have the possibility to set additional filtering rules for it. 
-To set additional filtering rule for the filter you must create a custom function implementing those rule and set property **compare** of the **header**(**footer**) attribute to this function.
+To set additional filtering rule for the filter you must create a custom function implementing those rule and
+set the **compare** property of the **header**(**footer**) attribute to this function.
 
 Custom function specified as a filtering rule takes 2 parameters:
 
@@ -524,11 +527,11 @@ grid.registerFilter(document.getElementById("myfilter"),
 
 {{sample 15_datatable/03_filtering/06_custom_built.html}}
 
-###Custom Filtering with filter() method
+###Custom Filtering with the filter() method
 
-In addition, the library gives you method [filter()](api/link/ui.datatable_filter.md) to provide fully custom filtering. 
+In addition, the library gives you the method [filter()](api/link/ui.datatable_filter.md) to provide fully custom filtering. 
 
-For example, if you add an input and button to the page and want to filter DataTable by clicking on it, you code may look like this:
+For example, if you add an input and a button to the page and want to filter DataTable by clicking on it, your code may look like this:
 
 {{snippet
 Implementing a custom filter

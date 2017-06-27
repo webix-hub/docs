@@ -36,7 +36,7 @@ Properties
 - api/link/ui.datatable_form_config.md - linked form
 - api/link/ui.datatable_gravity_config.md - sets the view gravity (1 by default)
 - api/ui.datatable_header_config.md - enables/disables the header in DataTable (enabled, by default)
-- api/ui.datatable_headerrowheight_config.md - sets the heigth of the header row
+- api/ui.datatable_headerrowheight_config.md - sets the height of the header row
 - api/ui.datatable_headermenu_config.md - adds a headermenu to control column visibility
 - api/link/ui.datatable_height_config.md - sets the height of the component
 - api/link/ui.datatable_hidden_config.md - defines whether the view will be hidden initially
@@ -82,6 +82,7 @@ Properties
 - api/ui.datatable_subrowheight_config.md - automatically adjusts the subrow's height to the size of the text
 - api/ui.datatable_subrow_config.md - sets a subrow template
 - api/ui.datatable_subview_config.md - adds a subview configuration into datatable
+- api/link/ui.datatable_templatecopy_config.md - sets the template according to which data will be copied to clipboard from each currently selected cell
 - api/link/ui.datatable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/ui.datatable_topsplit_config.md - defines the number of rows that will be "frozen" at the top of datatable
 - api/ui.datatable_type_config.md - used for configuring presentation of items
@@ -171,6 +172,7 @@ Properties
 - api/ui.datatable_subrowheight_config.md
 - api/ui.datatable_subrow_config.md
 - api/ui.datatable_subview_config.md
+- api/link/ui.datatable_templatecopy_config.md
 - api/link/ui.datatable_tooltip_config.md
 - api/ui.datatable_topsplit_config.md
 - api/ui.datatable_type_config.md

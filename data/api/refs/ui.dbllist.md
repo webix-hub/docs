@@ -63,7 +63,7 @@ var double_list = webix.ui({
 - api/link/ui.dbllist_mapevent.md - routes events from one object to another
 - api/link/ui.dbllist_parse.md - loads data to the component from an inline data source
 - api/link/ui.dbllist_reconstruct.md - rebuilds the layout
-- api/link/ui.dbllist_removeview.md - removes view from layout-like component
+- api/link/ui.dbllist_removeview.md - removes the specified view of a layout-like component
 - api/link/ui.dbllist_resize.md - adjusts the view to a new size
 - api/link/ui.dbllist_resizechildren.md - resizes all children of the called component
 - api/ui.dbllist_select.md - selects the specified items (moves them to the right list) or unselects them

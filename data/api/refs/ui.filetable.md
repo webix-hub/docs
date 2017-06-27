@@ -7,7 +7,7 @@ dummy stub
 {{todo replace with real description. }}
 
 <div class='webixdoc_parents'><span>Based on: </span>
-<a href="api/refs/ui.datatable.md">ui.datatable</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/group.md">Group</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/mapcollection.md">MapCollection</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/tablepaste.md">TablePaste</a>, <a href="api/refs/datastate.md">DataState</a>, <a href="api/refs/editability.md">EditAbility</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a></div>
+<a href="api/refs/ui.datatable.md">ui.datatable</a>, <a href="api/refs/autotooltip.md">AutoTooltip</a>, <a href="api/refs/group.md">Group</a>, <a href="api/refs/datamarks.md">DataMarks</a>, <a href="api/refs/dataloader.md">DataLoader</a>, <a href="api/refs/datastore.md">DataStore</a>, <a href="api/refs/atomdataloader.md">AtomDataLoader</a>, <a href="api/refs/mouseevents.md">MouseEvents</a>, <a href="api/refs/mapcollection.md">MapCollection</a>, <a href="api/refs/ui.view.md">ui.view</a>, <a href="api/refs/ui.baseview.md">ui.baseview</a>, <a href="api/refs/settings.md">Settings</a>, <a href="api/refs/destruction.md">Destruction</a>, <a href="api/refs/basebind.md">BaseBind</a>, <a href="api/refs/uiextension.md">UIExtension</a>, <a href="api/refs/eventsystem.md">EventSystem</a>, <a href="api/refs/pagingability.md">PagingAbility</a>, <a href="api/refs/tablepaste.md">TablePaste</a>, <a href="api/refs/datastate.md">DataState</a>, <a href="api/refs/editability.md">EditAbility</a>, <a href="api/refs/keysnavigation.md">KeysNavigation</a>, <a href="api/refs/datamove.md">DataMove</a>, <a href="api/refs/dragitem.md">DragItem</a>, <a href="api/refs/validatecollection.md">ValidateCollection</a>, <a href="api/refs/customprint.md">CustomPrint</a></div>
 
 
 <div class='h2'>Methods</div>
@@ -21,7 +21,7 @@ dummy stub
 - api/link/ui.filetable_addspan.md - adds colspan or rowspan to the datatable
 - api/link/ui.filetable_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.filetable_adjustcolumn.md - adjusts a column to the width of the content
-- api/link/ui.filetable_adjustrowheight.md - autodetect height of rows in datatable
+- api/link/ui.filetable_adjustrowheight.md - adjusts row height to cell content
 - api/link/ui.filetable_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.filetable_bind.md - binds components
 - api/link/ui.filetable_blockevent.md - temporarily blocks triggering of ALL events of the calling object
@@ -98,7 +98,7 @@ dummy stub
 - api/link/ui.filetable_isenabled.md - checks whether the view is enabled
 - api/link/ui.filetable_isvisible.md - checks whether the view is visible
 - api/link/ui.filetable_load.md - loads data from an external data source.
-- api/link/ui.filetable_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
+- api/link/ui.filetable_loadnext.md - sends a request to load the specified number of records to the end of the client-side dataset or to the specified position
 - api/link/ui.filetable_locate.md - converts an HTML node or event object to in-table position
 - api/link/ui.filetable_mapcells.md - applies the callback to a range of cells
 - api/link/ui.filetable_mapevent.md - routes events from one object to another
@@ -146,7 +146,7 @@ dummy stub
 - api/link/ui.filetable_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.filetable_ungroup.md - ungroups data
 - api/link/ui.filetable_updateitem.md - updates the data item with new properties
-- api/link/ui.filetable_validate.md - validates one record or all dataset against validation rules
+- api/link/ui.filetable_validate.md - validates one record or all dataset against the validation rules
 - api/link/ui.filetable_validateeditor.md - validates data in currently active editor
 }}
 
@@ -222,6 +222,7 @@ dummy stub
 - api/link/ui.filetable_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.filetable_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.filetable_onmouseout_event.md - fires when the mouse was moved out from the specified item
+- api/link/ui.filetable_onpaste_event.md - fires when the <a href="api/tablepaste_clipboard_config.md">clipboard</a> is enabled and the user presses CTRL+V keys combination
 - api/link/ui.filetable_onresize_event.md - fires when the width or height of DataTable was changed
 - api/link/ui.filetable_onrowresize_event.md - fires when height of row was changed
 - api/link/ui.filetable_onscrollx_event.md - fires when the user scrolls the table left or right
@@ -282,7 +283,7 @@ dummy stub
 - api/link/ui.filetable_form_config.md - linked form
 - api/link/ui.filetable_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.filetable_header_config.md - enables/disables the header in DataTable (enabled, by default)
-- api/link/ui.filetable_headerrowheight_config.md - sets the heigth of the header row
+- api/link/ui.filetable_headerrowheight_config.md - sets the height of the header row
 - api/link/ui.filetable_headermenu_config.md - adds a headermenu to control column visibility
 - api/link/ui.filetable_height_config.md - sets the height of the component
 - api/link/ui.filetable_hidden_config.md - defines whether the view will be hidden initially
@@ -328,6 +329,7 @@ dummy stub
 - api/link/ui.filetable_subrowheight_config.md - automatically adjusts the subrow's height to the size of the text
 - api/link/ui.filetable_subrow_config.md - sets a subrow template
 - api/link/ui.filetable_subview_config.md - adds a subview configuration into datatable
+- api/link/ui.filetable_templatecopy_config.md - sets the template according to which data will be copied to clipboard from each currently selected cell
 - api/link/ui.filetable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.filetable_topsplit_config.md - defines the number of rows that will be "frozen" at the top of datatable
 - api/link/ui.filetable_type_config.md - used for configuring presentation of items
@@ -344,6 +346,7 @@ dummy stub
 
 
 {{api
+- api/link/ui.filetable_$customprint_other.md - generates custom HTML to print instead of the widget's HTML and invokes printing
 - api/link/ui.filetable_$drag_other.md - method called when drag operation initiated
 - api/link/ui.filetable_$draghtml_other.md - defines how dragged item will look
 - api/link/ui.filetable_$dragin_other.md - method called when item moved on possible drop landing during dnd
@@ -356,6 +359,7 @@ dummy stub
 - api/link/ui.filetable_$scope_other.md - scope for resolving event and method names
 - api/link/ui.filetable_$setsize_other.md - sets the component size
 - api/link/ui.filetable_$skin_other.md - the method which will be called when skin is defined
+- api/link/ui.filetable_$touch_other.md - adjusts datatable for correct behaviour on touch devices
 - api/link/ui.filetable_$view_other.md - reference to top html element of the view
 - api/link/ui.filetable_$width_other.md - current width of the view
 - api/link/ui.filetable_config_other.md - all options from initial component configuration

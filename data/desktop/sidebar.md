@@ -1,21 +1,16 @@
 Sidebar
 ==========
 
-<div class="h2">External resources</div>
+External resources
+-------------------
 
-- See more information about [JS Sidebar Widget](https://webix.com/widget/sidebar/) there.
-- This component isn't included into the library package and should be taken from [https://github.com/webix-hub/components](https://github.com/webix-hub/components)
-- There is an online sample at [docs.webix.com/samples](https://docs.webix.com/samples/28_sidemenu/01_sidebar.html)
+{{note This component isn't included into the library package and should be taken from [https://github.com/webix-hub/components](https://github.com/webix-hub/components)}}
+- There is an online sample at [docs.webix.com/samples](http://docs.webix.com/samples/28_sidemenu/01_sidebar.html)
 
 Overview
 ----------
 
 Webix Sidebar is a datatree/index.md-based component which is used for creating menus with hierarchical structure. 
-
-{{note
-JS files for Sidebar menu isn't included into Webix lib package and should be taken from 
-[https://github.com/webix-hub/components](https://github.com/webix-hub/components).
-}}
 
 Sidebar menu can be collapsed into a navigation bar with only icons of the menu items visible. On hovering an icon, a popup with the related item is shown with its sub-items.
 
@@ -342,9 +337,4 @@ webix.ui({
 });
 ~~~
 
-@metadescr: This documentation page describes the initialization and using of the sidebar menu that allows getting access to frequently used application functions and saving space.
-@doctitle: The sidebar menu widget documentation: overview and basics of usage.
 
-
-@seolinktop: [js frameworks](https://webix.com)
-@seolink: [sidebar menu](https://webix.com/widget/sidebar/)

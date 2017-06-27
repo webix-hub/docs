@@ -48,7 +48,7 @@ Methods
 - api/link/ui.pivot_reconstruct.md - rebuilds the layout
 - api/link/ui.pivot_refresh.md - repaints the whole view or a certain item
 - api/link/ui.pivot_remove.md - removes the specified item/items from datastore
-- api/link/ui.pivot_removeview.md - removes view from layout-like component
+- api/link/ui.pivot_removeview.md - removes the specified view of a layout-like component
 - api/ui.pivot_render.md - renders a pivot on the page
 - api/link/ui.pivot_resize.md - adjusts the view to a new size
 - api/link/ui.pivot_resizechildren.md - resizes all children of the called component

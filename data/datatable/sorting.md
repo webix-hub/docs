@@ -20,12 +20,14 @@ Columns can have different type of content (numbers, strings, dates) and each ty
 
 For this purpose, DataTable provides several sorting types to ensure correct sorting of columns:
 
-1. *int*;
-2. [*date*](datatable/sorting.md#dates);
-3. *string*;
-4. *string_strict* (case-sensitive 'string');
-5. [*text*](datatable/sorting.md#visible_text) (visible text including template);
-6. [custom sorting type](datatable/sorting.md#addingcustomsortingtype).
+- int - compares numeric values;
+- [date](datatable/sorting.md#dates) - compares dates;
+- string - compares string values;
+- string_strict- case-sensitive "string";
+- [text](datatable/sorting.md#visible_text)- compares visible item text (including template);
+- server- issues a server side request for a sorted dataset;
+- raw - basic sorter with simple comparison (a>b and vice versa);
+- or, you can set a [custom sorting type](desktop/filter_sort.md#addingcustomsortingtype).
 
 To enable sorting and assign the appropriate sorting type to a column, you should specify the **sort** attribute among the 
 [column's parameters](api/ui.datatable_columns_config.md) and set it to some of types.

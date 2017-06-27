@@ -11,8 +11,10 @@ Make sure you specify relative paths to these files:
   <script src="codebase/webix.js" type="text/javascript"></script>
   <script src="codebase/pivot.js" type="text/javascript"></script>
   <!-- css files -->
-  <link rel="stylesheet" href="codebase/webix.css" type="text/css" charset="utf-8">
-  <link rel="stylesheet" href="codebase/pivot.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="codebase/webix.css" 
+  	type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="codebase/pivot.css" 
+  	type="text/css" charset="utf-8">
  </head>
  <body>
    <div id = "testA"></div>  <!-- container for Pivot -->

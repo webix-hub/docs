@@ -1,7 +1,7 @@
 DataLoader 
 =============
 
-{{memo Loads data into a component and processes it }}
+{{memo Loads and processes data into a component.. }}
 
 
 

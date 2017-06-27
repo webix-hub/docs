@@ -348,6 +348,12 @@ add special features that can't be achieved with the standard set of widgets pre
 		</a>
     </div>
     <div>
+		<a href="desktop/query_builder.md">
+			<img src="desktop/icons/querybuilder.png"/>
+			<br>Query Builder
+		</a>
+    </div>
+    <div>
 		<a href="desktop/uploader.md">
 			<img src="desktop/icons/uploader.png"/>
 			<br>Uploader
@@ -482,6 +488,7 @@ div.controls_group img {
 - desktop/popup.md
 - desktop/portlet.md
 - desktop/property_sheet.md
+- desktop/query_builder.md
 - desktop/range_chart.md
 - desktop/scrollview.md
 - desktop/sidemenu.md

@@ -35,7 +35,7 @@ Properties
 - api/link/ui.treetable_form_config.md - linked form
 - api/link/ui.treetable_gravity_config.md - sets the view gravity (1 by default)
 - api/link/ui.treetable_header_config.md - enables/disables the header in DataTable (enabled, by default)
-- api/link/ui.treetable_headerrowheight_config.md - sets the heigth of the header row
+- api/link/ui.treetable_headerrowheight_config.md - sets the height of the header row
 - api/link/ui.treetable_headermenu_config.md - adds a headermenu to control column visibility
 - api/link/ui.treetable_height_config.md - sets the height of the component
 - api/link/ui.treetable_hidden_config.md - defines whether the view will be hidden initially
@@ -81,6 +81,7 @@ Properties
 - api/link/ui.treetable_subrowheight_config.md - automatically adjusts the subrow's height to the size of the text
 - api/link/ui.treetable_subrow_config.md - sets a subrow template
 - api/link/ui.treetable_subview_config.md - adds a subview configuration into datatable
+- api/link/ui.treetable_templatecopy_config.md - sets the template according to which data will be copied to clipboard from each currently selected cell
 - api/link/ui.treetable_threestate_config.md - defines three-state checkboxes for the tree
 - api/link/ui.treetable_tooltip_config.md - sets a popup message appearing on pointing a mouse cursor over the dedicated item
 - api/link/ui.treetable_topsplit_config.md - defines the number of rows that will be "frozen" at the top of datatable
@@ -170,6 +171,7 @@ Properties
 - api/link/ui.treetable_subrowheight_config.md
 - api/link/ui.treetable_subrow_config.md
 - api/link/ui.treetable_subview_config.md
+- api/link/ui.treetable_templatecopy_config.md
 - api/link/ui.treetable_threestate_config.md
 - api/link/ui.treetable_tooltip_config.md
 - api/link/ui.treetable_topsplit_config.md

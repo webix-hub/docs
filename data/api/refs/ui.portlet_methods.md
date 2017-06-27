@@ -27,7 +27,7 @@ Methods
 - api/ui.portlet_markdroparea.md - renders marker on the area where a portlet can be dropped during drag-n-drop
 - api/ui.portlet_moveportlet.md - moves portlet to the marked area
 - api/link/ui.portlet_reconstruct.md - rebuilds the layout
-- api/link/ui.portlet_removeview.md - removes view from layout-like component
+- api/link/ui.portlet_removeview.md - removes the specified view of a layout-like component
 - api/link/ui.portlet_resize.md - adjusts the view to a new size
 - api/link/ui.portlet_resizechildren.md - resizes all children of the called component
 - api/link/ui.portlet_show.md - makes the component visible

@@ -40,7 +40,7 @@ Events
 - api/link/ui.path_onmousemove_event.md - fires when the mouse was moved over the specified component
 - api/link/ui.path_onmousemoving_event.md - fires when the mouse was moved over the component
 - api/link/ui.path_onmouseout_event.md - fires when the mouse was moved out from the specified item
-- api/link/ui.path_onpaste_event.md - fires when the user presses CTRL+V keys combination
+- api/link/ui.path_onpaste_event.md - fires when the <a href="api/copypaste_clipboard_config.md">clipboard</a> is enabled and the user presses CTRL+V keys combination
 - api/link/ui.path_onselectchange_event.md - fires after selection state was changed
 - api/link/ui.path_onswipex_event.md - occurs on a horizontal swipe movement
 - api/link/ui.path_onswipey_event.md - occurs on a vertical swipe movement

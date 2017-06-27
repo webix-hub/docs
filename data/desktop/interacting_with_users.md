@@ -11,5 +11,6 @@ Interacting with Users
 - desktop/event_handling.md
 - desktop/uimanager.md
 - desktop/active_content.md
+- desktop/printing.md
 }}
 

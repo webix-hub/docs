@@ -81,8 +81,9 @@ Make use of slider events to set changing title for a drag marker:
 
 {{sample 13_form/05_extras/05_slider_title.html}}
 
-The new title is set with the help of **define()** method while current value of derived with **getValue()**.  Read more about 
-[Changing Properties of Components](desktop/redefinition.md). 
+The new title is set with the help of the **define()** method while the current value is derived with the **getValue()** one.
+
+Read more about [Changing Properties of Components](desktop/redefinition.md). 
 
 
 

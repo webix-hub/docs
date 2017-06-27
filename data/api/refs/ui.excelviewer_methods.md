@@ -9,7 +9,7 @@ Methods
 - api/link/ui.excelviewer_addspan.md - adds colspan or rowspan to the datatable
 - api/link/ui.excelviewer_adjust.md - adjusts the component to the size of the parent HTML container
 - api/link/ui.excelviewer_adjustcolumn.md - adjusts a column to the width of the content
-- api/link/ui.excelviewer_adjustrowheight.md - autodetect height of rows in datatable
+- api/link/ui.excelviewer_adjustrowheight.md - adjusts row height to cell content
 - api/link/ui.excelviewer_attachevent.md - attaches the handler to an inner event of the component (allows behavior customizations)
 - api/link/ui.excelviewer_bind.md - binds components
 - api/link/ui.excelviewer_blockevent.md - temporarily blocks triggering of ALL events of the calling object
@@ -84,7 +84,7 @@ Methods
 - api/link/ui.excelviewer_isenabled.md - checks whether the view is enabled
 - api/link/ui.excelviewer_isvisible.md - checks whether the view is visible
 - api/link/ui.excelviewer_load.md - loads data from an external data source.
-- api/link/ui.excelviewer_loadnext.md - sends a request to load the specified number of records to the end of the clientside dataset or to the specified position
+- api/link/ui.excelviewer_loadnext.md - sends a request to load the specified number of records to the end of the client-side dataset or to the specified position
 - api/link/ui.excelviewer_locate.md - converts an HTML node or event object to in-table position
 - api/link/ui.excelviewer_mapcells.md - applies the callback to a range of cells
 - api/link/ui.excelviewer_mapevent.md - routes events from one object to another
@@ -124,14 +124,14 @@ Methods
 - api/link/ui.excelviewer_showitem.md - 'scrolls' the table to make the specified row visible
 - api/link/ui.excelviewer_showitembyindex.md - 'scrolls' the table to make the specified row visible
 - api/link/ui.excelviewer_showoverlay.md - shows the overlay message over the body of DataTable
-- api/ui.excelviewer_showsheet.md - 
+- api/ui.excelviewer_showsheet.md - switches to the specified sheet
 - api/link/ui.excelviewer_sort.md - sorts datastore
 - api/link/ui.excelviewer_sync.md - allows syncing two copies of data (all or just a part of it) from one DataCollection to another
 - api/link/ui.excelviewer_unbind.md - breaks "bind" link
 - api/link/ui.excelviewer_unblockevent.md - cancels blocking events that was enabled by the 'blockEvent' command
 - api/link/ui.excelviewer_ungroup.md - ungroups data
 - api/link/ui.excelviewer_updateitem.md - updates the data item with new properties
-- api/link/ui.excelviewer_validate.md - validates one record or all dataset against validation rules
+- api/link/ui.excelviewer_validate.md - validates one record or all dataset against the validation rules
 - api/link/ui.excelviewer_validateeditor.md - validates data in currently active editor
 }}
 

@@ -149,6 +149,7 @@ Articles are of various levels of complexity and both a beginner and a master ca
  					<li>desktop/event_handling.md</li>
                     <li><a href="desktop/uimanager.md">Keyboard Events and App Navigation</a></li>
                     <li><a href="desktop/active_content.md">Adding Active Elements to Components</a></li>
+                    <li><a href="desktop/printing.md">Smart Printing of Widgets</a></li>
             </ul>
         </td>
         <td class='topic_description'>Describes various ways you can communicate with users: events, message boxes, forms and their controls.</td>

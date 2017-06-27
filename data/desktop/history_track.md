@@ -62,7 +62,7 @@ Compare ID-s from the snippet above and hashbang URL-s for each of the tabs on t
 
 Now, each time, you refresh the page, the url will be formed according to the info stored in the state object and the latest opened tab will be shown. 
 
-###Pushing New State to History
+##Pushing New State to History
 
 In addition, there exists a possibility to add a new state to history with the dedicated **push()** method. Its arguments are: 
 
@@ -86,5 +86,25 @@ var details = {
 ~~~
 
 However, this will cause the URL bar to display *http://current_url.html#!/detailView*, but won't cause the browser to look for *detailView* anchor or even check whether it exists. It just adds this info to window history object.
+
+##Disabling history tracking
+
+You can disable current history tracking process by calling the method again in some moment of the application flow: 
+
+~~~js
+webix.history.track("tabbar");
+..
+//disables history tracking for tabbar
+webix.history.track();
+~~~
+
+In addition, you can set another view as a history tracking master: 
+
+~~~js
+webix.history.track("tabbar1");
+..
+//disables history tracking for tabbar1 and starts tracking tabbar2
+webix.history.track("tabbar2");
+~~~
 
 @complexity:2

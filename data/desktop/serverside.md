@@ -9,6 +9,15 @@ It is enabled in several ways:
 - you can use server-side [REST API](desktop/server_rest.md) (MVC.Net, Ruby on Rails, PHP Yii **MVC frameworks** coupled with your scripts or connectors);
 - you can choose one of [additional ways](desktop/serverside.md#otherwaysofintegratingwithserver).
 
+##Examples of Integration with Server-side Platforms
+
+There are several packages of samples intended for illustrating the ways of using Webix with different server-side platforms:
+
+- [Webix and PHP samples](https://github.com/webix-hub/webix-php-lumen-demo)
+- [Webix and Node.js samples](https://github.com/webix-hub/webix-nodejs-demo)
+- [Webix and .Net samples](https://github.com/webix-hub/webix-netmvc-demo)
+
+
 ##Data Loading
 
 Basic client-side code that enables [loading data](desktop/data_loading.md) to a component during its initialization is as follows: 
@@ -107,6 +116,8 @@ Form data is either
 
 - pushed to the component it is [bound](desktop/data_binding.md) with;
 - or (more typically) is sent to server by [Webix Ajax request](desktop/server_ajaxsave.md).
+
+
 
 ##Other Ways of Integrating with Server 
 
