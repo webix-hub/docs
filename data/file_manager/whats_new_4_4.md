@@ -1,7 +1,7 @@
 Version 4.4
 ==============
 
-<span class="release_date">released on April 26, 2017</span>
+<span class="release_date">released on June 27, 2017</span>
 
 Updates
 --------
