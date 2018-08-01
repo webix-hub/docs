@@ -5,13 +5,15 @@ url
 @short:
 	the URL which the component will use to load data after its initialization
 
-@type: string
+@type: string | api/_proxy.md
 @example:
 webix.ui({
   	datatype: "xml",
 	url: "data.xml"
 	...
 });
+
+@descr: The URL can be a string pointing to an actual URL, a string starting with a "connector->", or a api/_proxy.md object. See for example [how to load data into a DataTable from a GraphQL proxy object](https://snippet.webix.com/om5pqfnl).
 
 @relatedapi:
 	api/atomdataloader_load.md
