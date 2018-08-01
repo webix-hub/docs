@@ -5,11 +5,9 @@ DataTable supports paging over the items in the data source. You enable and conf
 
 <img src="datatable/paging.png"></img>
 
-Paging doesn't depend on the way you load data into DataTable: static or dynamic, external data file or database table.
-Datatable can display direction controls (that provide forward and backward navigation) as well as numeric controls that allow a user to move to a specific page.
+Paging doesn't depend on the way you load data into DataTable: static or dynamic, external data file or database table. In the most common case of data being dynamically loaded from a URL, Webix will make requests to that URL with [extra query parameters](desktop__plain_dynamic_loading.html) specifying which records to load.
 
-
-Generally, you should just specify parameter [pager](api/link/ui.datatable_pager_config.md) with the required attributes.
+Datatable can display direction controls (that provide forward and backward navigation) as well as numeric controls that allow the user to move to a specific page. Generally, you should just specify parameter [pager](api/link/ui.datatable_pager_config.md) with the required attributes.
 
 {{snippet
   Basic pager configuration
